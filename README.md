@@ -1,5 +1,6 @@
 # plantuml-stdlib
 Contains official Standard Library for PlantUML
+See http://plantuml.com/stdlib for more information.
 
 This Standard Library is included in official release of PlantUML.
 Following the C convention for "C standard library" (see https://en.wikipedia.org/wiki/C_standard_library )
@@ -32,22 +33,22 @@ This example renders the following image:
 ![Example](http://www.plantuml.com/plantuml/png/SoWkIImgAStDuLBCp4lEAKr9LR19B2_MJyxFpStFiqCJ3Ix9BqfCJzLtp4sioiyBDeOp22fCAatEJYs1KdPSN8w-Zb7-Vi766iN6yPbv9Qb5UOavcYYY1K1tvQKMwIY5fUQbv1Uf5oi46ojfSY6fLx3HLK0ev780gWDw1000 "Example")
 
 
-## Devicons and Font Awesome library
+## Tupadr3 library
 
-These two library consists respectively of Devicons and Font Awesome libraries of icons.
+This library contains several libraries of icons (including Devicons and Font Awesome )
 
-Use it by including the file that contains the sprite, eg: `!include <font-awesome/align_center>`.
+Use it by including the file that contains the sprite, eg: `!include <tupadr3/font-awesome/align_center>`.
 When imported, you can use the sprite as normally you would, using `<$sprite_name>`.
 
-You may also include the `common.puml` file, eg: `!include <font-awesome/common>`, which contains helper macros defined.
+You may also include the `common.puml` file, eg: `!include <tupadr3/common>`, which contains helper macros defined.
 With the `common.puml` imported, you can use the `NAME_OF_SPRITE(parameters...)` macro.
 
 Example of usage:
 ```
 @startuml
-!include <font-awesome/common>
-!include <font-awesome/server>
-!include <font-awesome/database>
+!include <tupadr3/common>
+!include <tupadr3/font-awesome/server>
+!include <tupadr3/font-awesome/database>
 
 title Styling example
 
@@ -69,7 +70,7 @@ web4 <--> db1
 ```
 
 This example renders the following image:
-![Example](http://www.plantuml.com/plantuml/png/TP5VIyCm5CNVyodkyC49hMNjdcIKTTZ9OC9eTU2JfCjr2wH9QMwj-_OcpZdxi9V0oU-SS_DdRectrDMAtS96SKslpskm99IiG9iUfDwfJg25rSxeS6aqGTcqaj2Ee4I40r5Z7w9eB-dGLVSxKqVKDLoqITJuEjSSIX_zSD7GdgACZNvxOVQpptkqfiR8nMkZqslOOlk9xLKiEF6AMqmP8qaAeQIZadeF-CNhHY5Zo-ozp8jjNenxh2Q1N-xWvgb5r4CMUnOxzePAcNu84myJ1nUgmo6QUZJzovsQlUKnUyaMMPcFXPkxNctpu7pQe3-uDt6HmXovEbV-yyT1kScAIy1RKJ3ccc0MXYau2sF-BcSvyIeUg6IWfXV5vgY5__zl "Example")
+![Example](http://www.plantuml.com/plantuml/png/XOvHIyCm58NVyolkyC49hMNjdcICTTZ9OC9eTU2JfCjr2wH9QMwj-_ScpbagWY-1mtU-axkmn1jgAyMkOQkufkV73LWIIfQWJGTIxrKhqC9wRtIuCfgWg1j9Q4TG8CAHgBPtKNIGT6pBsxsf8cfhBfeagjsSNmwbLz-S6jgpojZeUnTcbxOpAwFdVv0latTeJOMHnUOTctzhWXClkSKvOoH98HHqKb8V03zuLIjaR9M-5bc-o_9nX-KayCyDN3qqY7h8OizYnrvGATCDOU9Xuk1IjJX4Ku-cFzvvsLVkqwTqcHRPMBX_D-jT5bok3RgZ97HARavS-SbV_JWejcdU2xwAWZ6t1BCmd8EhCDPX7oS-nOEK3DAqJmlKegtK9m00 "Example")
 
 ## Google Material Icons
 
@@ -124,7 +125,7 @@ This example renders the following image:
 ## Sources
 
 * **aws**: made by https://github.com/milo-minderbinder/AWS-PlantUML
-* **devicons** and **font-awesome**: made by https://github.com/tupadr3/plantuml-icon-font-sprites
+* **tupadr3**: made by https://github.com/tupadr3/plantuml-icon-font-sprites
 * **Material Icons**: from https://github.com/Templarian/MaterialDesign
 
 You can create Pull Request to update or add some library here if you find it relevant.
