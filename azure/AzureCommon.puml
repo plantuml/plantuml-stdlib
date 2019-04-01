@@ -1,4 +1,4 @@
-' Azure-PlantUML, version 1.0.0
+' Azure-PlantUML, version 2.1.0
 ' https://github.com/RicardoNiepel/Azure-PlantUML
 
 ' Colors
@@ -38,18 +38,15 @@ skinparam rectangle<<e_stereo>> {
 ' Layout
 ' ##################################
 
-!definelong LAYOUT_WITH_LEGEND
-hide <<person>> stereotype
-hide <<container>> stereotype
-hide <<system>> stereotype
-legend right
-|=              |= Type |
-|<PERSON_BG_COLOR>      | person |
-|<AZURE_BG_COLOR>       | Azure service container |
-|<CONTAINER_BG_COLOR>   | other container |
-|<SYSTEM_BG_COLOR>      | external system |
-endlegend
+!definelong LAYOUT_AS_SKETCH
+skinparam backgroundColor #EEEBDC
+skinparam handwritten true
+skinparam defaultFontName "Comic Sans MS"
+center footer <font color=red>Warning:</font> Created for discussion, needs to be validated
 !enddefinelong
+
+!define LAYOUT_TOP_DOWN top to bottom direction
+!define LAYOUT_LEFT_RIGHT left to right direction
 
 ' Elements
 ' ##################################
