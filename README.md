@@ -32,6 +32,47 @@ This example renders the following image:
 
 ![Example](http://www.plantuml.com/plantuml/png/SoWkIImgAStDuLBCp4lEAKr9LR19B2_MJyxFpStFiqCJ3Ix9BqfCJzLtp4sioiyBDeOp22fCAatEJYs1KdPSN8w-Zb7-Vi766iN6yPbv9Qb5UOavcYYY1K1tvQKMwIY5fUQbv1Uf5oi46ojfSY6fLx3HLK0ev780gWDw1000 "Example")
 
+## Azure library
+
+The Azure library consists of Microsoft Azure icons.
+
+Use it by including the file that contains the sprite, eg: `!include <azure/Analytics/AzureEventHub.puml>`.
+When imported, you can use the sprite as normally you would, using `<$sprite_name>`.
+
+You may also include the `AzureCommon.puml` file, eg: `!include <azure/AzureCommon.puml>`, which contains helper macros defined.
+With the `azure/AzureCommon.puml` imported, you can use the `NAME_OF_SPRITE(parameters...)` macro.
+
+Example of usage:
+```
+@startuml
+
+!include azure/AzureCommon.puml
+!include azure/Analytics/AzureEventHub.puml
+!include azure/Analytics/AzureStreamAnalytics.puml
+!include azure/Databases/AzureCosmosDb.puml
+
+left to right direction
+
+agent "Device Simulator" as devices #fff
+
+AzureEventHub(fareDataEventHub, "Fare Data", "PK: Medallion HackLicense VendorId; 3 TUs")
+AzureEventHub(tripDataEventHub, "Trip Data", "PK: Medallion HackLicense VendorId; 3 TUs")
+AzureStreamAnalytics(streamAnalytics, "Stream Processing", "6 SUs")
+AzureCosmosDb(outputCosmosDb, "Output Database", "1,000 RUs")
+
+devices --> fareDataEventHub
+devices --> tripDataEventHub
+fareDataEventHub --> streamAnalytics
+tripDataEventHub --> streamAnalytics
+streamAnalytics --> outputCosmosDb
+
+@enduml
+```
+
+This example renders the following image:
+
+![Example](http://www.plantuml.com/plantuml/proxy?idx=0&src=https%3A%2F%2Fraw.githubusercontent.com%2FRicardoNiepel%2FAzure-PlantUML%2Fmaster%2Fsamples%2FBasic%2520usage%2520-%2520Stream%2520processing%2520with%2520Azure%2520Stream%2520Analytics.puml "Example")
+
 
 ## Tupadr3 library
 
