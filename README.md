@@ -73,6 +73,34 @@ This example renders the following image:
 
 ![Example](http://www.plantuml.com/plantuml/proxy?idx=0&src=https%3A%2F%2Fraw.githubusercontent.com%2FRicardoNiepel%2FAzure-PlantUML%2Fmaster%2Fsamples%2FBasic%2520usage%2520-%2520Stream%2520processing%2520with%2520Azure%2520Stream%2520Analytics.puml "Example")
 
+## Elastic library
+
+The Elastic library consists of [Elastic](https://www.elastic.co) icons.
+It is similar in use to the AWS and Azure libraries (it used the same tool to create them).
+
+Use it by including the file that contains the sprite, eg: `!include <elastic/elastic_search/elastic_search.puml>`.
+When imported, you can use the sprite as normally you would, using `<$sprite_name>`.
+
+You may also include the `common.puml` file, eg: `!include <elastic/common>`, which contains helper macros defined.
+With the `common.puml` imported, you can use the `NAME_OF_SPRITE(parameters...)` macro.
+
+Example of usage:
+```
+@startuml
+    !include <elastic/common>
+    !include <elastic/elastic_search/elastic_search>
+    !include <elastic/logstash/logstash>
+    !include <elastic/kibana/kibana>
+
+    ELASTIC_SEARCH(ElasticSearch, "Search and Analyze",database)
+    LOGSTASH(Logstash, "Parse and Transform",node)
+    KIBANA(Kibana, "Visualize",agent) 
+    
+    Logstash -right-> ElasticSearch: Transformed Data
+    ElasticSearch -right-> Kibana: Data to View
+
+@enduml
+```
 
 ## Tupadr3 library
 
@@ -168,5 +196,6 @@ This example renders the following image:
 * **aws**: made by https://github.com/milo-minderbinder/AWS-PlantUML
 * **tupadr3**: made by https://github.com/tupadr3/plantuml-icon-font-sprites
 * **Material Icons**: from https://github.com/Templarian/MaterialDesign
+* **Elastic Icons**: from https://github.com/Crashedmind/PlantUML-Elastic-icons
 
 You can create Pull Request to update or add some library here if you find it relevant.
