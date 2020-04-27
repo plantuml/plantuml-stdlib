@@ -1,4 +1,4 @@
-sprite $elastic_search [100x100/16] {
+sprite $elasticsearch [100x100/16] {
 0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
 0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
 0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
@@ -101,13 +101,3 @@ sprite $elastic_search [100x100/16] {
 0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
 }
 
-
-
-
-'!define ELASTIC_SEARCH(alias) PUML_ENTITY(agent,00BFB3,elastic_search,alias,elastic search)
-!define ELASTIC_SEARCH(alias) PUML_ENTITY(agent,00BFB3,elastic_search,alias,elastic search)
-
-'!definelong ELASTIC_SEARCH(alias,label,e_type="agent",e_color="00BFB3",e_stereo="elastic search",e_sprite="elastic_search")
-!definelong ELASTIC_SEARCH(alias,label,e_type="agent",e_color="00BFB3",e_stereo="elastic search",e_sprite="elastic_search")
-PUML_ENTITY(e_type,e_color,e_sprite,label,alias,e_stereo)
-!enddefinelong
