@@ -46,10 +46,10 @@ Example of usage:
 ```
 @startuml
 
-!include azure/AzureCommon.puml
-!include azure/Analytics/AzureEventHub.puml
-!include azure/Analytics/AzureStreamAnalytics.puml
-!include azure/Databases/AzureCosmosDb.puml
+!include <azure/AzureCommon.puml>
+!include <azure/Analytics/AzureEventHub.puml>
+!include <azure/Analytics/AzureStreamAnalytics.puml>
+!include <azure/Databases/AzureCosmosDb.puml>
 
 left to right direction
 
