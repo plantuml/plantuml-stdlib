@@ -1,0 +1,183 @@
+' Defines a class with more granular rendering segments that allow you to group
+' together and position the result of multiple rendering callbacks.
+!include <classy/types/descriptive-renderer>
+
+$class(ElementRenderer)
+  $classImplements(DescriptiveRenderer)
+  $classVar(rendererCallbackElement, Callback)
+  $classVar(rendererCallbackElementContent, Callback)
+  $classVar(rendererCallbackOutside, Callback)
+  $classVar(rendererCallbackPostElement, Callback)
+  $classVar(rendererCallbackPreElement, Callback)
+
+  ' Constructor that sets the renderer callback for the parent renderer.
+  !function ElementRenderer($this)
+    !$callback = $new('Callback')
+    $call($callback, 'setContext', $this)
+    $call($callback, 'setMethod', 'ElementRenderer__output')
+    $call($this, 'setRendererCallback', $callback)
+    !return $this
+  !endfunction
+
+  ' This is our renderer callback. In it, we define where our provided callbacks
+  ' will render within the output.
+  '
+  ' First, we output a together statement and begin a grouping for rendering
+  ' segments that will be inside of the together segment.
+  '
+  ' Next, we render the "Pre Content" callback. Anything rendered will be the
+  ' first thing within the together block.
+  '
+  ' Afterwards, we render an element and then treat it as a containing element
+  ' which means that it will render other things inside of its boundary.
+  '
+  ' Then, we render the "Element Content" which are the items that are to be
+  ' rendered within the boundary of the rendered element.
+  '
+  ' Following that, we render the "Post Content" callback. Anything rendered
+  ' will be the last thing within the together block.
+  '
+  ' Finally, we render the "Outside Content" callback. Anything rendered will be
+  ' outside of the together block entirely.
+  !procedure ElementRenderer__output($this, $alias)
+    together {
+      ElementRenderer__renderPreContent($this, $alias)
+
+      ElementRenderer__renderElement($this, $alias) {
+        ElementRenderer__renderElementContent($this, $alias)
+      }
+
+      ElementRenderer__renderPostContent($this, $alias)
+    }
+
+    ElementRenderer__renderOutsideContent($this, $alias)
+  !endprocedure
+
+  !procedure ElementRenderer__renderElement($this, $alias)
+    !$callback = $call($this, 'getElementRendererCallback')
+
+    !if '' == $callback
+      $fail('ElementRenderer::renderElement must be implemented.')
+    !endif
+
+    !$context = $call($callback, 'getContext')
+    !$method = $call($callback, 'getMethod')
+    $preInvoke($method, $context, array($new('array'), $alias))
+    %invoke_procedure($method, $context, $alias)
+    $postInvoke()
+  !endprocedure
+
+  !procedure ElementRenderer__renderElementContent($this, $alias)
+    !$callback = $call($this, 'getElementContentRendererCallback')
+
+    !if '' != $callback
+      !$context = $call($callback, 'getContext')
+      !$method = $call($callback, 'getMethod')
+      $preInvoke($method, $context, array($new('array'), $alias))
+      %invoke_procedure($method, $context, $alias)
+      $postInvoke()
+    !endif
+  !endprocedure
+
+  !procedure ElementRenderer__renderOutsideContent($this, $alias)
+    !$callback = $call($this, 'getOutsideRendererCallback')
+
+    !if '' != $callback
+      !$context = $call($callback, 'getContext')
+      !$method = $call($callback, 'getMethod')
+      $preInvoke($method, $context, array($new('array'), $alias))
+      %invoke_procedure($method, $context, $alias)
+      $postInvoke()
+    !endif
+  !endprocedure
+
+  !procedure ElementRenderer__renderPostContent($this, $alias)
+    !$callback = $call($this, 'getPostElementRendererCallback')
+
+    !if '' != $callback
+      !$context = $call($callback, 'getContext')
+      !$method = $call($callback, 'getMethod')
+      $preInvoke($method, $context, array($new('array'), $alias))
+      %invoke_procedure($method, $context, $alias)
+      $postInvoke()
+    !endif
+  !endprocedure
+
+  !procedure ElementRenderer__renderPreContent($this, $alias)
+    !$callback = $call($this, 'getPreElementRendererCallback')
+
+    !if '' != $callback
+      !$context = $call($callback, 'getContext')
+      !$method = $call($callback, 'getMethod')
+      $preInvoke($method, $context, array($new('array'), $alias))
+      %invoke_procedure($method, $context, $alias)
+      $postInvoke()
+    !endif
+  !endprocedure
+
+  $classMethod(getElementRendererCallback)
+    !function ElementRenderer__getElementRendererCallback($this)
+      !return $getInstanceVar($this, 'rendererCallbackElement')
+    !endfunction
+  $endclassMethod(getElementRendererCallback)
+
+  $classMethod(getElementContentRendererCallback)
+    !function ElementRenderer__getElementContentRendererCallback($this)
+      !return $getInstanceVar($this, 'rendererCallbackElementContent')
+    !endfunction
+  $endclassMethod(getElementContentRendererCallback)
+
+  $classMethod(getOutsideRendererCallback)
+    !function ElementRenderer__getOutsideRendererCallback($this)
+      !return $getInstanceVar($this, 'rendererCallbackOutside')
+    !endfunction
+  $endclassMethod(getOutsideRendererCallback)
+
+  $classMethod(getPostElementRendererCallback)
+    !function ElementRenderer__getPostElementRendererCallback($this)
+      !return $getInstanceVar($this, 'rendererCallbackPostElement')
+    !endfunction
+  $endclassMethod(getPostElementRendererCallback)
+
+  $classMethod(getPreElementRendererCallback)
+    !function ElementRenderer__getPreElementRendererCallback($this)
+      !return $getInstanceVar($this, 'rendererCallbackPreElement')
+    !endfunction
+  $endclassMethod(getPreElementRendererCallback)
+
+  $classMethod(setElementRendererCallback)
+    !function ElementRenderer__setElementRendererCallback($this, $args)
+      $setInstanceVar($this, 'rendererCallbackElement', $call($args, 'each'))
+      !return $this
+    !endfunction
+  $endclassMethod(setElementRendererCallback)
+
+  $classMethod(setElementContentRendererCallback)
+    !function ElementRenderer__setElementContentRendererCallback($this, $args)
+      $setInstanceVar($this, 'rendererCallbackElementContent', $call($args, 'each'))
+      !return $this
+    !endfunction
+  $endclassMethod(setElementContentRendererCallback)
+
+  $classMethod(setOutsideRendererCallback)
+    !function ElementRenderer__setOutsideRendererCallback($this, $args)
+      $setInstanceVar($this, 'rendererCallbackOutside', $call($args, 'each'))
+      !return $this
+    !endfunction
+  $endclassMethod(setOutsideRendererCallback)
+
+  $classMethod(setPostElementRendererCallback)
+    !function ElementRenderer__setPostElementRendererCallback($this, $args)
+      $setInstanceVar($this, 'rendererCallbackPostElement', $call($args, 'each'))
+      !return $this
+    !endfunction
+  $endclassMethod(setPostElementRendererCallback)
+
+  $classMethod(setPreElementRendererCallback)
+    !function ElementRenderer__setPreElementRendererCallback($this, $args)
+      $setInstanceVar($this, 'rendererCallbackPreElement', $call($args, 'each'))
+      !return $this
+    !endfunction
+  $endclassMethod(setPreElementRendererCallback)
+$endclass(ElementRenderer)
+

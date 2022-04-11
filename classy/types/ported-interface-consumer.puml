@@ -1,0 +1,49 @@
+' Defines a class that marries together the concepts of interface consumption
+' with the concept of ported interfaces.
+!include <classy/types/interface-consumer>
+!include <classy/types/map>
+!include <classy/types/port>
+!include <classy/types/ported-interface>
+
+$class(PortedInterfaceConsumer)
+  $classImplements(InterfaceConsumer)
+  $classImplements(PortedInterface, 'piParent')
+
+  !function PortedInterfaceConsumer($this)
+    !$parent = $getInstanceVar($this, 'parent')
+    InterfaceConsumer($parent)
+
+    !$piParent = $getInstanceVar($this, 'piParent')
+    PortedInterface($piParent)
+
+    !return $this
+  !endfunction
+
+  ' Override of the parent consumes method to decorate it with our port.
+  $classMethod(consumes)
+    !function PortedInterfaceConsumer__consumes($this, $args)
+      !$interface = $call($args, 'each')
+
+      !if 1 == $call($args, 'size')
+        !$port = $call($this, 'getPort')
+      !else
+        !$port = $call($args, 'each')
+        !$ports = $call($this, 'getPorts')
+        !$exists = $call($ports, 'contains', $port)
+
+        !if %not($exists)
+          $call($ports, 'push', $port)
+        !endif
+      !endif
+
+      !$map = $call($this, 'getMap')
+      $call($map, 'add', array($new('array'), $interface, $port))
+
+      !$parent = $getInstanceVar($this, 'parent')
+      $call($parent, 'consumes', $interface)
+
+      !return $this
+    !endfunction
+  $endclassMethod(consumes)
+$endclass(PortedInterfaceConsumer)
+

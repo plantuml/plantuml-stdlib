@@ -1,0 +1,53 @@
+' Defines a class with functionality for rendering a component. This allows a
+' guarantee that each class instance can be separately rendered without conflict
+' within the same diagram.
+'
+' This class uses the Strategy pattern and implementers inject a callback that
+' performs the actual rendering process empowered by this functionality.
+!include <classy/types/callback>
+
+$class(Renderer)
+  $classVar(callback, Callback)
+
+  ' This method draws the object within the diagram and returns the alias to the
+  ' rendered output so that it can be used as a handle for drawing links or
+  ' doing other standard Plant UML things.
+  $classMethod(render)
+    !function Renderer__render($this)
+      !$alias = %substr($this, 1) + '_rendering'
+
+      !if %false() == %variable_exists($alias)
+        %set_variable_value($alias, %true())
+      !else
+        !return $alias
+      !endif
+
+      !$callback = $getInstanceVar($this, 'callback')
+
+      !if '' == $callback
+        !return $alias
+      !endif
+
+      !$method = $call($callback, 'getMethod')
+      !$context = $call($callback, 'getContext')
+
+      !if '' != $method && '' != $context
+        $preInvoke($method, $context, array($new('array'), $alias))
+        %invoke_procedure($method, $context, $alias)
+        $postInvoke()
+      !endif
+
+      !return $alias
+    !endfunction
+  $endclassMethod(render)
+
+  ' This method sets the callback that will be used to actually render the
+  ' content to the diagram.
+  $classMethod(setRendererCallback)
+    !function Renderer__setRendererCallback($this, $args)
+      $setInstanceVar($this, 'callback', $call($args, 'each'))
+      !return $this
+    !endfunction
+  $endclassMethod(setRendererCallback)
+$endclass(Renderer)
+

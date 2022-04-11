@@ -1,0 +1,34 @@
+' Defines a class for the functionality of providing a name and description.
+!include <classy/core>
+
+$class(Descriptor)
+  $classVar(description, string)
+  $classVar(name, string)
+
+  $classMethod(getDescription)
+    !function Descriptor__getDescription($this)
+      !return $getInstanceVar($this, 'description')
+    !endfunction
+  $endclassMethod(getDescription)
+
+  $classMethod(getName)
+    !function Descriptor__getName($this)
+      !return $getInstanceVar($this, 'name')
+    !endfunction
+  $endclassMethod(getName)
+
+  $classMethod(setDescription)
+    !function Descriptor__setDescription($this, $args)
+      $setInstanceVar($this, 'description', $call($args, 'pop'))
+      !return $this
+    !endfunction
+  $endclassMethod(setDescription)
+
+  $classMethod(setName)
+    !function Descriptor__setName($this, $args)
+      $setInstanceVar($this, 'name', $call($args, 'pop'))
+      !return $this
+    !endfunction
+  $endclassMethod(setName)
+$endclass(Descriptor)
+

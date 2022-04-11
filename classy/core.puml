@@ -1,0 +1,210 @@
+' This is the primary Classy include as it includes the rest of the necessary
+' framework.
+!include <classy/plumbing/class-instancing>
+
+' Define some symbols to allow for debugging.
+!$DEBUG = %false()
+!$DEBUG_INDENT = 0
+
+' This is the function that is used to call a specified method on the given
+' class instance.
+!unquoted function $call($instance, $method, $arg='', $oneArgArrayVal=%false(), $void=%false())
+  $startDebug($instance, $method, $arg, $oneArgArrayVal, $void)
+
+  !$class = $getClassFromInstancePointer($instance, 'while performing call')
+
+  !if %not($classHasMethod($method, $class))
+    !$result = $delegatedCall($instance, $method, $arg, $oneArgArrayVal, $void, $class)
+
+    $endDebug($result)
+
+    !return $result
+  !endif
+
+  ' Hack for calls to array as arrays power our call functionality.
+  !if 'array' == $class
+    !if '' == $arg
+      !$result = %call_user_func('array__' + $method, $instance)
+    !else
+      !$result = %call_user_func('array__' + $method, $instance, $arg)
+    !endif
+
+    !if ($void)
+      !$result = ''
+    !endif
+
+    $endDebug($result)
+
+    !return $result
+  !endif
+
+  !if ('' != $arg)
+    !$callArgs = $arg
+  
+    !if ($oneArgArrayVal || 'array' != $determineType($arg))
+      !$callArgs = $new('array')
+      $call($callArgs, 'push', $arg, $void=%true())
+    !endif
+    
+    !$result = %call_user_func($class + '__' + $method, $instance, $callArgs)
+  !else
+    !$result = %call_user_func($class + '__' + $method, $instance)
+  !endif
+
+  !if ($void)
+    !$result = ''
+  !endif
+
+  $endDebug($result)
+
+  !return $result
+!endfunction
+
+' Turn debugging mode off.
+!unquoted procedure $debugOff()
+  !$DEBUG = %false()
+!endprocedure
+
+' Turn debugging mode on which will log information about what classy is doing.
+!unquoted procedure $debugOn()
+  !$DEBUG = %true()
+!endprocedure
+
+' Function to call a method of the given name defined in an ancestor.
+!unquoted function $delegatedCall($instance, $method, $args, $oav, $void, $class)
+  !$loopSize = $getClassParentCount($class)
+  !$loop = $loopSize
+
+  !while 0 != $loop
+    !$loop = $loop - 1
+    !$i = $loopSize - $loop
+
+    !$parent = $getClassParentByIndex($i, $class)
+
+    !if $classHasMethod($method, $parent)
+      !$prop = $getClassParentPropertyByIndex($i, $class)
+      !$parentInstance = $getInstanceVar($instance, $prop)
+      !return $call($parentInstance, $method, $args, $oav, $void)
+    !endif
+  !endwhile
+
+  !$loop = $loopSize
+
+  !while 0 != $loop
+    !$loop = $loop - 1
+    !$i = $loopSize - $loop
+
+    !$parent = $getClassParentByIndex($i, $class)
+
+    !if '' != $getClassForDelegatedCall($parent, $method)
+      !$prop = $getClassParentPropertyByIndex($i, $class)
+      !$parentInstance = $getInstanceVar($instance, $prop)
+      !return $delegatedCall($parentInstance, $method, $args, $oav, $void, $parent)
+    !endif
+  !endwhile
+
+  $fail('Calling method that does not exist: ' + $class + '::' + $method)
+!endfunction
+
+' Function to determine the name of the class (possibly an ancestor) that holds
+' the actual method implementation to perform.
+!unquoted function $getClassForDelegatedCall($class, $method)
+  !if $classHasMethod($method, $class)
+    !return $class
+  !endif
+
+  !$loopSize = $getClassParentCount($class)
+  !$loop = $loopSize
+
+  !while 0 != $loop
+    !$loop = $loop - 1
+    !$i = $loopSize - $loop
+
+    !$parent = $getClassParentByIndex($i, $class)
+
+    !if $classHasMethod($method, $parent)
+      !return $parent
+    !endif
+  !endwhile
+
+  !$loop = $loopSize
+
+  !while 0 != $loop
+    !$loop = $loop - 1
+    !$i = $loopSize - $loop
+
+    !$parent = $getClassParentByIndex($i, $class)
+    !$recursed = $getClassForDelegatedCall($parent, $method)
+
+    !if '' != $recursed
+      !return $recursed
+    !endif
+  !endwhile
+
+  !return ''
+!endfunction
+
+' Function that will end a debugging block and reduce the debug indent level.
+!procedure $endDebug($return)
+  !if $DEBUG
+    !$DEBUG_INDENT = $DEBUG_INDENT - 1
+    $writeDebugLine('<-- ' + $return)
+  !endif
+!endprocedure
+
+' Companion function to preInvoke to indicate that the debug scope should be
+' decremented.
+!procedure $postInvoke()
+  $endDebug('')
+!endprocedure
+
+' Function that can be used when using invoke_procedure to show what arguments
+' your code is passing within the debug log.
+!procedure $preInvoke($method, $context, $args='')
+  !$argString = ''
+  !$size = $call($args, 'size')
+  !$i = 0
+
+  !while $i < $size
+    !if $i > 0
+      !$argString = $argString + ', '
+    !endif
+
+    !$argString = $argString + $call($args, 'get', $i)
+    !$i = $i + 1
+  !endwhile
+
+  $startDebug($context, $method, $argString, %false(), %false())
+!endprocedure
+
+' Function to show the beginning of a debug block and increment the indent
+' level for the debug log.
+!procedure $startDebug($instance, $method, $arg, $oneArgArrayVal, $void)
+  !if $DEBUG
+    $writeDebugLine($instance + '::' + $method + '(' + $arg + ')')
+
+    !if $oneArgArrayVal
+      $writeDebugLine('with arg array being treated as a single parameter')
+    !endif
+
+    !if $void
+      $writeDebugLine('with return value being discarded')
+    !endif
+
+    !$DEBUG_INDENT = $DEBUG_INDENT + 1
+  !endif
+!endprocedure
+
+' Writes a line of debug information to the debug log.
+!procedure $writeDebugLine($msg)
+  !$indent = ''
+  !$i = 0
+
+  !while $i < $DEBUG_INDENT
+    !$indent = $indent + '|'
+    !$i = $i + 1
+  !endwhile
+
+  !log [DEBUG]$indent $msg
+!endprocedure
+

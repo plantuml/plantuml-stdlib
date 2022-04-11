@@ -1,0 +1,296 @@
+' This file defines functions that allow the instantiation of defined classes.
+' In order to accomplish this, we use specifically named global variables that
+' are very unlikely to be utilized for any other purpose.
+' 
+' We depend upon the ability to define classes, perform type checking, and on a
+' low-level type implementation for arrays.
+!include <classy/plumbing/class-definition>
+!include <classy/plumbing/types/array>
+
+' A global constant value that helps us ensure that the variable is one managed
+' by this library. If we get a collision with an existing variable, it is likely
+' that someone is doing it intentionally in which case, we hope they know what
+' they are doing.
+!global $CLASSINS = '$__instance__'
+
+' Function to return the current count of instances of the given class.
+!unquoted function $getClassInstCount($class)
+  !$counter = $nameClassCounter($class)
+  !$instance = 0
+
+  !if (%variable_exists($counter))
+    !$instance = %get_variable_value($counter)
+  !endif
+
+  !return $instance
+!endfunction
+
+' Function to obtain the name of a Parent class based upon the index of its
+' declaration wihthin the - optionally provided - child class.
+' If a class is not provided, we assume the call is performed within the context
+' of a class definition and utilize that class.
+'
+' Example, the first defined parent of a class would be index 0, the second one
+' would be index 1, etc.
+!unquoted function $getClassParentByIndex($index, $class='')
+  !if ('' == $class)
+    !$class = $CLASSCONTEXT
+  !endif
+
+  !return %get_variable_value($nameClassParent($index, $class) + '_class')
+!endfunction
+
+' Function to obtain the property name of the parent class.
+'
+' We allow multiple inheritance but each parent class is effectively decorated
+' and stored in a specifically named class instance property. We also allow the
+' name of the property to be specified at definition so this method allows us to
+' use the property without knowing its name.
+!unquoted function $getClassParentPropertyByIndex($index, $class='')
+  !if ('' == $class)
+    !$class = $CLASSCONTEXT
+  !endif
+
+  !return %get_variable_value($nameClassParent($index, $class) + '_property')
+!endfunction
+
+' Function to obtain the default value that was provided at time of class
+' property definition.
+!unquoted function $getClassVarDefaultByIndex($index, $class='')
+  !if ('' == $class)
+    !$class = $CLASSCONTEXT
+  !endif
+
+  !return %get_variable_value($nameClassVar($index, $class) + '_default')
+!endfunction
+
+' Function to get the name of a class property based upon the order of its
+' definition within the class. This is similar to the method for getting the
+' Parent Class name. See that function for more information.
+!unquoted function $getClassVarNameByIndex($index, $class='')
+  !if ('' == $class)
+    !$class = $CLASSCONTEXT
+  !endif
+
+  !return %get_variable_value($nameClassVar($index, $class) + '_name')
+!endfunction
+
+' Function to retrieve the given property value of the given class instance.
+!unquoted function $getInstanceVar($inst, $name)
+  !return %get_variable_value($nameClassInstVar($inst, $name))
+!endfunction
+
+' Function to increase the number of class instances of the given class.
+!unquoted function $incrementClassInstanceCount($class)
+  !$instance = $getClassInstCount($class) + 1
+  %set_variable_value($nameClassCounter($class), $instance)
+  !return $instance
+!endfunction
+
+' Function to get the global variable name of the class counter for a given
+' class.
+!unquoted function $nameClassCounter($ref)
+  !return $CLASSINS + $ref
+!endfunction
+
+' Function to get the global variable name of a class instance.
+!unquoted function $nameClassInst($ref, $inst)
+  !return $CLASSINS + $inst + $CLASS + $ref
+!endfunction
+
+' Function to get the global variable name of a property of a given instance.
+!unquoted function $nameClassInstVar($inst, $name)
+  !return $inst + $CLASSVAR + $name
+!endfunction
+
+' Function that actually instantiates a new class object.
+!unquoted function $new($ref, $args='', $skipConstructor=%false())
+  !if (%false() == $classFinished($ref))
+    !$fail('Cannot instantiate incomplete class: ' + $ref)
+  !endif
+
+  !$instance = $incrementClassInstanceCount($ref)
+  !$instancePtr = $nameClassInst($ref, $instance)
+
+  !$loopSize = $getClassParentCount($ref)
+  !$loop = $loopSize
+
+  !while 0 != $loop
+    !$loop = $loop - 1
+    !$i = $loopSize - $loop
+
+    !$parent = $getClassParentByIndex($i, $ref)
+    !$prop = $getClassParentPropertyByIndex($i, $ref)
+    $setInstanceVar($instancePtr, $prop, $new($parent, $skipConstructor=%true()))
+  !endwhile
+
+  !$loopSize = $getClassVarCount($ref)
+  !$loop = $loopSize
+
+  !while 0 != $loop
+    !$loop = $loop - 1
+    !$i = $loopSize - $loop
+
+    !$defaultVal = $getClassVarDefaultByIndex($i, $ref)
+
+    !if ('' != $defaultVal)
+      !$var = $getClassVarNameByIndex($i, $ref)
+      $setInstanceVar($instancePtr, $var, $defaultVal)
+    !endif
+  !endwhile
+
+  !if %false() == $skipConstructor && %function_exists($ref)
+    !if 'array' == $ref && '' != $args
+      !$args = ''
+    !endif
+
+    !if '' != $args
+      !$callArgs = $args
+
+      !if 'array' != $determineType($args)
+        !$callArgs = $new('array')
+        !$result = array__push($callArgs, $args)
+      !endif
+
+      %call_user_func($ref, $instancePtr, $callArgs)
+    !else
+      %call_user_func($ref, $instancePtr)
+    !endif
+  !endif
+
+  !return $instancePtr
+!endfunction
+
+' Function to set the value of a given property of a given class instance.
+!unquoted function $setInstanceVar($inst, $name, $val)
+  $assertType($getVarTypeFromInstance($inst, $name), $val)
+  %set_variable_value($nameClassInstVar($inst, $name), $val)
+
+  ' There were issues with set not working randomly. Adding a return helped.
+  !return ''
+!endfunction
+
+' Function that allows asserting that the type of a provided test value matches
+' the given expectation. This respects type inheritance as well.
+!unquoted procedure $assertType($expected, $actual)
+  !if (%not($isDerivedFrom($determineType($actual), $expected)))
+    !$error = 'Unexpected type encountered.'
+    !$expectation = 'Expected ' + $expected + ' but was ' + $type
+    $fail($error + ' ' + $expectation)
+  !endif
+!endprocedure
+
+' Function that determines the type of a provided value and returns it as a
+' string. This includes 3 built in types of string, int, and bool.
+!unquoted function $determineType($val)
+  !$converted = %string($val)
+
+  !if (0 == %strpos($converted, $CLASSINS))
+    !return $getClassFromInstancePointer($val, 'while determining type')
+  !endif
+
+  !$char = %substr($converted, 0, 1)
+
+  !if (%not($isDigit($char)))
+    !return 'string'
+  !endif
+
+  !if (1 != %strlen($converted)) || ('0' != $char && '1' != $char)
+    !return 'int'
+  !else
+    !return 'bool'
+  !endif
+!endfunction
+
+' Function that determines the name of the class from a given instance pointer.
+' Optionally, a message can be provided for additional help when an error is
+' reached.
+!unquoted function $getClassFromInstancePointer($ptr, $context='')
+  !$converted = %string($ptr)
+  !$pos = %strpos($converted, $CLASS)
+
+  !if ('-1' == $pos)
+    !$error = 'Attempting to find class from invalid instance pointer'
+    $fail($error + ' ' + $context + '.')
+  !endif
+
+  !return %substr($converted, $pos + %strlen($CLASS))
+!endfunction
+
+' Function to determine the type of a given property of the provided class
+' instance.
+!unquoted function $getVarTypeFromInstance($inst, $var)
+  !local $classVarRef = %get_variable_value($nameClassVarRef($var, $getClassFromInstancePointer($inst, 'while determining type of class var')))
+
+  !return %get_variable_value($classVarRef + '_type')
+!endfunction
+
+' Function to determine if the specified class is derived from a specified
+' ancestor class.
+!unquoted function $isDerivedFrom($class, $ancestorClass)
+  !if $class == $ancestorClass
+    !return %true()
+  !endif
+
+  !$loopSize = $getClassParentCount($class)
+
+  !if 0 != $loopSize
+    !$loop = $loopSize
+
+    !while 0 != $loop
+      !$loop = $loop - 1
+      !$i = $loopSize - $loop
+
+      !if $ancestorClass == $getClassParentByIndex($i, $class)
+        !return %true()
+      !endif
+    !endwhile
+
+    !$loop = $loopSize
+
+    !while 0 != $loop
+      !$loop = $loop - 1
+      !$i = $loopSize - $loop
+
+      !$parentClass = $getClassParentByIndex($i, $class)
+
+      !if %true() == $isDerivedFrom($parentClass, $ancestorClass)
+        !return %true()
+      !endif
+    !endwhile
+  !endif
+
+  !return %false()
+!endfunction
+
+' Function to determine if the given value is a sequence of digits.
+!unquoted function $isDigit ($val)
+  !$converted = %string($val)
+  !$len = %strlen($converted)
+  !$loop = $len
+  !$return = %true()
+
+  !while 0 != $loop
+    !$loop = $loop - 1
+    !$i = $len - $loop - 1
+    !$c = %substr($converted, $i, 1)
+    !$notInFirstSet = %false()
+    !$notInSecondSet = %false()
+    
+    !if '0' != $c && '1' != $c && '2' != $c && '3' != $c && '4' != $c
+      !$notInFirstSet = %true()
+    !endif
+
+    !if %true() == $notInFirstSet && '5' != $c && '6' != $c && '7' != $c
+      !$notInSecondSet = %true()
+    !endif
+
+    !if %true() == $notInSecondSet && '8' != $c && '9' != $c
+      !$return = %false()
+      !$loop = 0
+    !endif
+  !endwhile
+
+  !return $return
+!endfunction
+

@@ -1,0 +1,9 @@
+' Declares a class that simply couples a Descriptor to a Renderer.
+!include <classy/types/descriptor>
+!include <classy/types/renderer>
+
+$class(DescriptiveRenderer)
+  $classImplements(Descriptor)
+  $classImplements(Renderer, 'renderer')
+$endclass(DescriptiveRenderer)
+

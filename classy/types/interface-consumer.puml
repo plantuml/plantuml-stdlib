@@ -1,0 +1,31 @@
+' Defines a class to provide the functionality of consuming the Interface class.
+!include <classy/core>
+
+$class(InterfaceConsumer)
+  $classVar(consumedInterfaces, array)
+
+  ' This method specifies an Interface that is to be consumed.
+  $classMethod(consumes)
+    !function InterfaceConsumer__consumes($this, $args)
+      !$target = $call($args, 'pop')
+      !$interfaces = $call($this, 'getConsumedInterfaces')
+
+      !if '' == $interfaces
+        !$interfaces = $new('array')
+        $setInstanceVar($this, 'consumedInterfaces', $interfaces)
+      !endif
+
+      $call($interfaces, 'push', $target)
+
+      !return $this
+    !endfunction
+  $endclassMethod(consumes)
+
+  ' This method returns the array of Interfaces that are consumed.
+  $classMethod(getConsumedInterfaces)
+    !function InterfaceConsumer__getConsumedInterfaces($this)
+      !return $getInstanceVar($this, 'consumedInterfaces')
+    !endfunction
+  $endclassMethod(getConsumedInterfaces)
+$endclass(InterfaceConsumer)
+

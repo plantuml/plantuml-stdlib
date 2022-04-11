@@ -1,0 +1,357 @@
+' This file is the backbone of classy. These functions allow you to declare
+' class structures.
+'
+' These definitions are recorded by using specially patterend global variables.
+' The variables are named so that conflicts with legitimate diagram variables
+' should be almost impossible unless someone is doing it on purpose.
+!include <classy/plumbing/low-level-error-system>
+
+' Define the global variable naming patterns.
+!global $CLASS = '__class__'
+!global $CLASSDEF = '__class-definition__'
+!global $CLASSMETHOD = '__mtd__'
+!global $CLASSMETHODCOUNTER = '__mtd-count__'
+!global $CLASSPARENT = '__parent__'
+!global $CLASSPARENTCOUNTER = '__parent-count__'
+!global $CLASSVAR = '__var__'
+!global $CLASSVARCOUNTER = '__var-count__'
+
+' Define a global variable that contains the name of a class in which we are
+' contextually bound. This allows less verbose syntax for many functions when
+' in the context of a class definition.
+!global $CLASSCONTEXT = ''
+
+' Function to indicate that the definition of a class with a given name has
+' begun.
+!unquoted procedure $class($name)
+  !if (%true() == $classDefined($name))
+    !$fail('Class already defined.')
+  !endif
+
+  !if (%not('' == $CLASSCONTEXT))
+    !$p1 = 'Cannot begin new class definition of: ' + $name + '. '
+    !$fail($p1 + 'First, close existing one: ' + $CLASSCONTEXT)
+  !endif
+
+  %set_variable_value($nameClass($name), %false())
+  !$CLASSCONTEXT = $name
+
+  !if 'object' != $name && 'bool' != $name && 'callable' != $name && 'int' != $name && 'string' != $name
+    $classImplements('callable', '__callable_indicator')
+  !endif
+!endprocedure
+
+' Function that checks whether or not the given class name has been defined.
+!unquoted function $classDefined($name)
+  !return %true() == %variable_exists($nameClass($name))
+!endfunction
+
+' Function that checks whether the given class name has been defined and that
+' the class has been apropriately closed by a call to $endClass.
+!unquoted function $classFinished($name)
+  !$1 = %true() == $classDefined($name)
+  !return $1 && (%true() == %get_variable_value($nameClass($name)))
+!endfunction
+
+' Function that checks to see if a given method is defined within an optionally
+' provided class. If the class name is not provided, we will use the name of the
+' current class context.
+!unquoted function $classHasMethod($method, $class='')
+  !if ('' == $class)
+    !$class = $CLASSCONTEXT
+  !endif
+
+  !$index = $nameClassMethodRef($method, $class)
+  !$val = %get_variable_value($index)
+
+  !if '' != $val
+    !return %true()
+  !endif
+
+  !return %false()
+!endfunction
+
+' Function to declare an ancestral relationship to another class. Optionally,
+' a name for the property that contains the parent instance can be provided. If
+' a name is not provided then the name will be "parent" by default. This means
+' that it is required to provide a property name for at least one parent class
+' if you are inheriting from multiple.
+!unquoted procedure $classImplements($parentClass, $propName='parent')
+  !if ($classParentDefined($parentClass))
+    $fail('Cannot define same parent twice: ' + $parentClass)
+  !endif
+
+  $classVar($propName, $parentClass)
+
+  !$index = $incrementClassParentIndex()
+
+  !$rawName = $nameClassParent($index)
+  %set_variable_value($nameClassParentRef($parentClass), $rawName)
+  %set_variable_value($rawName + '_class', $parentClass)
+  %set_variable_value($rawName + '_property', $propName)
+!endprocedure
+
+' Function to indicate that a class method definition has begun.
+!unquoted procedure $classMethod($name)
+  !if ($classMethodDefined($name))
+    $fail('Cannot redefine method: ' + $name)
+  !endif
+
+  !$index = $incrementClassMethodIndex()
+
+  !$rawName = $nameClassMethod($index)
+  %set_variable_value($nameClassMethodRef($name), $rawName)
+  %set_variable_value($rawName + '_name', $name)
+!endprocedure
+
+' Function to determine if the method is defined for the optionally provided
+' class. If the class is not provided, we assume the class from context.
+!unquoted function $classMethodDefined($name, $class='')
+  !if ('' == $class)
+    !$class = $CLASSCONTEXT
+  !endif
+
+  !return %variable_exists($nameClassMethodRef($name, $class))
+!endfunction
+
+' Function to determine if the optionally given class has defined the given
+' parent class name as an ancestor. If not provided, the class will be
+' determined by context.
+!unquoted function $classParentDefined($name, $class='')
+  !if ('' == $class)
+    !$class = $CLASSCONTEXT
+  !endif
+
+  !return %variable_exists($nameClassParentRef($name, $class))
+!endfunction
+
+' Function to define a class property of a given type and name. A default value
+' for the property may optionally be provided.
+!unquoted procedure $classVar($name, $type, $default='')
+  !if ($classVarDefined($name))
+    $fail('Cannot redefine variable: ' + $name)
+  !endif
+
+  !if (%not($classDefined($type)))
+    $fail('Cannot define variable of unknown type: ' + $type)
+  !endif
+
+  !$index = $incrementClassVarIndex()
+
+  !$rawName = $nameClassVar($index)
+  %set_variable_value($nameClassVarRef($name), $rawName)
+  %set_variable_value($rawName + '_default', $default)
+  %set_variable_value($rawName + '_name', $name)
+  %set_variable_value($rawName + '_type', $type)
+!endprocedure
+
+' Function to determine if the provided class property has been defined.
+!unquoted function $classVarDefined($name, $class='')
+  !if ('' == $class)
+    !$class = $CLASSCONTEXT
+  !endif
+
+  !return %variable_exists($nameClassVarRef($name, $class))
+!endfunction
+
+' Function to indicate that the class definition has ended and exit the class
+' definition context.
+!unquoted procedure $endclass($name)
+  %set_variable_value($nameClass($name), %true())
+  !$CLASSCONTEXT = ''
+!endprocedure
+
+' Function to indicate that the class method definition has ended.
+!unquoted procedure $endclassMethod($name)
+  ' Do nothing here. This will eventually power context for argument validation.
+!endprocedure
+
+' Function to get a count of the number of methods defined for an optionally
+' provided class. If not provided, the class is assumed from context.
+!unquoted function $getClassMethodCount($class='')
+  !if ('' == $class)
+    !$class = $CLASSCONTEXT
+  !endif
+
+  !$counter = $nameClassMethodCounter($class)
+  !$instance = 0
+
+  !if (%variable_exists($counter))
+    !$instance = %get_variable_value($counter)
+  !endif
+
+  !return $instance
+!endfunction
+
+' Function to get the count of parents for an optionally provided class. If not
+' provided, the class will be assumed from context.
+!unquoted function $getClassParentCount($class='')
+  !if ('' == $class)
+    !$class = $CLASSCONTEXT
+  !endif
+
+  !$counter = $nameClassParentCounter($class)
+  !$instance = 0
+
+  !if (%variable_exists($counter))
+    !$instance = %get_variable_value($counter)
+  !endif
+
+  !return $instance
+!endfunction
+
+' Function to get the number of properties defined for an optionally provided
+' class. If not provided, the class will be assumed from context.
+!unquoted function $getClassVarCount($class='')
+  !if ('' == $class)
+    !$class = $CLASSCONTEXT
+  !endif
+
+  !$counter = $nameClassVarCounter($class)
+  !$instance = 0
+
+  !if (%variable_exists($counter))
+    !$instance = %get_variable_value($counter)
+  !endif
+
+  !return $instance
+!endfunction
+
+' Function to increase the count of defined class methods for an optionally
+' provided class. If not provided, the class will be assumed from context.
+!unquoted function $incrementClassMethodIndex($class='')
+  !if ('' == $class)
+    !$class = $CLASSCONTEXT
+  !endif
+
+  !$count = $getClassMethodCount() + 1
+  %set_variable_value($nameClassMethodCounter($class), $count)
+  !return $count
+!endfunction
+
+' Function to increase the count of defined class parents for an optionally
+' provided class. If not provided, the class will be assumed from context.
+!unquoted function $incrementClassParentIndex($class='')
+  !if ('' == $class)
+    !$class = $CLASSCONTEXT
+  !endif
+
+  !$count = $getClassParentCount() + 1
+  %set_variable_value($nameClassParentCounter($class), $count)
+  !return $count
+!endfunction
+
+' function to increase the count of defined class properties for an optionally
+' provided class. If not provided, the class will be assumed from context.
+!unquoted function $incrementClassVarIndex($class='')
+  !if ('' == $class)
+    !$class = $CLASSCONTEXT
+  !endif
+
+  !$count = $getClassVarCount() + 1
+  %set_variable_value($nameClassVarCounter($class), $count)
+  !return $count
+!endfunction
+
+' Function to expand a class name to the global variable name.
+!unquoted function $nameClass($name)
+  !return $CLASSDEF + $name
+!endfunction
+
+' Function to determine the name for a method so that it will not conflict with
+' other methods defined in the optionally provided class. If not provided, the
+' class will be assumed from context.
+!unquoted function $nameClassMethod($count, $class='')
+  !if ('' == $class)
+    !$class = $CLASSCONTEXT
+  !endif
+
+  !return $nameClass($class) + $CLASSMETHOD + $count
+!endfunction
+
+' Function to determine the name of the counter for class methods for an
+' optionally provided class. If not provided, the class will be assumed from
+' context.
+!unquoted function $nameClassMethodCounter($class='')
+  !if ('' == $class)
+    !$class = $CLASSCONTEXT
+  !endif
+
+  !return $nameClass($class) + $CLASSMETHODCOUNTER
+!endfunction
+
+' Function to expand the given method name for an optionally provided class to
+' the one used in the global variable. If not provided, the class will be
+' assumed from context.
+!unquoted function $nameClassMethodRef($name, $class='')
+  !if ('' == $class)
+    !$class = $CLASSCONTEXT
+  !endif
+
+  !return $nameClass($class) + $CLASSMETHOD + $name
+!endfunction
+
+' Function to expand the given parent definition so that it will not conflict
+' with other parents defined for the optionally provided class. If not provided,
+' the name of the class will be assumed from context.
+!unquoted function $nameClassParent($count, $class='')
+  !if ('' == $class)
+    !$class = $CLASSCONTEXT
+  !endif
+
+  !return $nameClass($class) + $CLASSPARENT + $count
+!endfunction
+
+' Function to name the counter of parents for an optionally provided class. If
+' not provided, the class will be assumed from context.
+!unquoted function $nameClassParentCounter($class='')
+  !if ('' == $class)
+    !$class = $CLASSCONTEXT
+  !endif
+
+  !return $nameClass($class) + $CLASSPARENTCOUNTER
+!endfunction
+
+' Function to name a parent of an optionally provided class in a way that does
+' not require the index so that the "real" variable name can be retrieved. If
+' not provided, the class will be assumed from context.
+!unquoted function $nameClassParentRef($name, $class='')
+  !if ('' == $class)
+    !$class = $CLASSCONTEXT
+  !endif
+
+  !return $nameClass($class) + $CLASSPARENT + $name
+!endfunction
+
+' Function to name a property for an optionally provided class in a way that is
+' guaranteed to not conflict with others. If not provided, the class will be
+' assumed from context.
+!unquoted function $nameClassVar($count, $class='')
+  !if ('' == $class)
+    !$class = $CLASSCONTEXT
+  !endif
+
+  !return $nameClass($class) + $CLASSVAR + $count
+!endfunction
+
+' Function to name the counter of defined properties of an optionally provided
+' class. If not provided, the class will be assumed from context.
+!unquoted function $nameClassVarCounter($class='')
+  !if ('' == $class)
+    !$class = $CLASSCONTEXT
+  !endif
+
+  !return $nameClass($class) + $CLASSVARCOUNTER
+!endfunction
+
+' Function to name a property of an optionally provided class in a way that does
+' not require the index so that the "real" variable name can be retrieved. If
+' not provided, the class will be assumed from context.
+!unquoted function $nameClassVarRef($name, $class='')
+  !if ('' == $class)
+    !$class = $CLASSCONTEXT
+  !endif
+
+  !return $nameClass($class) + $CLASSVAR + $name
+!endfunction
+

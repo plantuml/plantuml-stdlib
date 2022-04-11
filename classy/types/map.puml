@@ -1,0 +1,89 @@
+' Defines a class that uses multiple key/value pairs to create a map.
+!include <classy/types/key-value-pair>
+
+$class(Map)
+  $classVar(pairs, array)
+
+  ' The method retrieves the value associated with the given key and returns an
+  ' empty string if not found.
+  !function Map__get_safe($this, $target)
+    !$pairs = $getInstanceVar($this, 'pairs')
+
+    !if '' == $pairs
+      !return ''
+    !endif
+
+    !local $current = $call($pairs, 'each')
+
+    !while %false() != $current
+      !if $target == $call($current, 'getKey')
+        $call($pairs, 'reset')
+        !return $call($current, 'getValue')
+      !endif
+
+      !$current = $call($pairs, 'each')
+    !endwhile
+
+    !return ''
+  !endfunction
+
+  ' This method adds the provided key and value as a pair into the map.
+  $classMethod(add)
+    !function Map__add($this, $args)
+      !$key = $call($args, 'each')
+      !$val = $call($args, 'each')
+
+      !$pairs = $getInstanceVar($this, 'pairs')
+
+      !if '' == $pairs
+        !$pairs = $new('array')
+        $setInstanceVar($this, 'pairs', $pairs)
+      !endif
+
+      !if 0 < $call($pairs, 'size')
+        !$result = Map__get_safe($this, $key)
+
+        !if '' != $result
+          $fail('Attempting to add key that already exists: ' + $key)
+        !endif
+      !endif
+
+      !$pair = $new('KeyValuePair')
+      $call($pair, 'setKey', $key)
+      $call($pair, 'setValue', array($new('array'), $val))
+
+      $call($pairs, 'push', $pair)
+      !return $this
+    !endfunction
+  $endclassMethod(add)
+
+  ' The method retrieves the value associated with the given key or errors.
+  $classMethod(get)
+    !function Map__get($this, $args)
+      !$target = $call($args, 'pop')
+      !$result = Map__get_safe($this, $target)
+
+      !if '' == $result
+        $fail('Map does not contain key: ' + $target)
+      !endif
+
+      !return $result
+    !endfunction
+  $endclassMethod(get)
+
+  ' This method indicates whether a given key is set in the map.
+  $classMethod(has)
+    !function Map__has($this, $args)
+      !$result = Map__get_safe($this, $call($args, 'pop'))
+
+      !if '' == $result
+        !$result = %false()
+      !else
+        !$result = %true()
+      !endif
+
+      !return $result
+    !endfunction
+  $endclassMethod(has)
+$endclass(Map)
+

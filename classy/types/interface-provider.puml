@@ -1,0 +1,62 @@
+' Defines a class to provide the functionality of providing the Interface class.
+!include <classy/types/interface>
+
+$class(InterfaceProvider)
+  $classVar(interfaces, array)
+
+  ' This method returns the specified named Interface or errors.
+  $classMethod(getInterface)
+    !function InterfaceProvider__getInterface($this, $args)
+      !$target = $call($args, 'pop')
+      !$interfaces = $getInstanceVar($this, 'interfaces')
+
+      !if '' == $interfaces
+        $fail('Attempting to get interface when no interfaces are set.')
+      !endif
+
+      !$break = %false()
+      !$interface = $call($interfaces, 'each')
+
+      !while %not($break) && %false() != $interface
+        !if ($target == $call($interface, 'getName'))
+          !$break = %true()
+        !endif
+
+        !if (%not($break))
+          !$interface = $call($interfaces, 'each')
+        !endif
+      !endwhile
+
+      !if %not($interface)
+        $fail('Interface not found: ' + $target)
+      !endif
+
+      $call($interfaces, 'reset')
+
+      !return $interface
+    !endfunction
+  $endclassMethod(getInterface)
+
+  ' This method returns the entire array of provided Interfaces.
+  $classMethod(getInterfaces)
+    !function InterfaceProvider__getInterfaces($this)
+      !return $getInstanceVar($this, 'interfaces')
+    !endfunction
+  $endclassMethod(getInterfaces)
+
+  ' This method allows specifing that this object provides the given Interface.
+  $classMethod(provideInterface)
+    !function InterfaceProvider__provideInterface($this, $args)
+      !$interfaces = $getInstanceVar($this, 'interfaces')
+
+      !if '' == $interfaces
+        !$interfaces = $new('array')
+        $setInstanceVar($this, 'interfaces', $interfaces)
+      !endif
+
+      $call($interfaces, 'push', $call($args, 'pop'))
+      !return $this
+    !endfunction
+  $endclassMethod(provideInterface)
+$endclass(InterfaceProvider)
+

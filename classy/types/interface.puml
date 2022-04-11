@@ -1,0 +1,38 @@
+' Defines a class that wraps an Interface diagram component.
+!include <classy/types/descriptive-renderer>
+
+$class(Interface)
+  $classImplements(DescriptiveRenderer)
+
+  ' Constructor method that sets the renderer callback.
+  !function Interface($this)
+    !$callback = $new('Callback')
+    $call($callback, 'setContext', $this)
+    $call($callback, 'setMethod', 'Interface__output')
+    $call($this, 'setRendererCallback', $callback)
+    !return $this
+  !endfunction
+
+  ' This method is the Renderer callback that actually renders the Interface.
+  ' It is not intended to be directly called, instead you should probably use
+  ' the "render" method from the parent class.
+  !procedure Interface__output($this, $alias)
+    !$desc = $call($this, 'getDescription')
+    !$name = $call($this, 'getName')
+
+    !if '' == $name
+      $fail('Attempting to render Interface without a name.')
+    !endif
+
+    !if '' == $desc
+      !$desc = $name
+    !endif
+
+    !if '' == $alias
+      !$alias = $name
+    !endif
+
+    interface "$desc" as $alias
+  !endprocedure
+$endclass(Interface)
+
