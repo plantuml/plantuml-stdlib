@@ -123,6 +123,44 @@ Example of usage:
 This example renders the following image:
 ![Example](http://www.plantuml.com/plantuml/png/SoWkIImgAStDuNBAJrBGjLDmpCbCJbMmKl18pSd9LmZFByf9KKINCyfBKSXDBIvEJ4zLKEHoICrB0He00000)
 
+## Classy C4 library
+
+The Classy C4 library combines the Classy and C4 libraries by defining Classy
+classes that wrap the C4 macros.
+
+Example of usage:
+```
+@startuml
+
+    !include <classy-c4/container>
+    !include <classy-c4/person>
+    !include <classy-c4/system>
+
+    !$system = $new(System)
+    $call($system, 'setName', 'Label', $void=%true())
+    $call($system, 'setDescription', 'Optional Description', $void=%true())
+
+    !$person = $new(Person)
+    $call($person, 'setName', 'Label', $void=%true())
+    $call($person, 'setDescription', 'Optional Description', $void=%true())
+
+    !$container = $new(Container)
+    $call($container, 'setName', 'Label', $void=%true())
+    $call($container, 'setDescription', 'Optional Description', $void=%true())
+    $call($container, 'setTechnology', 'Technology', $void=%true())
+
+    !$personAlias = $call($person, 'render')
+    !$containerAlias = $call($container, 'render')
+    $call($system, 'render', $void=%true())
+
+    Rel($personAlias, $containerAlias, "Label", "Optional Technology")
+
+@enduml
+```
+
+This example renders the following image:
+![Example](http://www.plantuml.com/plantuml/png/ZOvFIyGm4CNl-HIrfowupMLFdbQgjnKN_vnbcWxRm6GICXDalxtPWaKHnTDxCypxpTkBGjOIg1bsR_U40Ld5N7bsL2PiPjKaDzPcUEzFNkSo5i7i8YkozYu6cmZuaj-AJkH7E-osnylgzU5W0uXYjfKyr0HunjodUclC4RD4xj8Yj-H1hfls02DIMyrZKXyPgBb3STalKxinAwHpd-v7z0NTp97YwVm7wFaiYg6JHVxxtJmXVI-yjlWTyQNEnkoHfnBe0m00)
+
 ## Elastic library
 
 The Elastic library consists of [Elastic](https://www.elastic.co) icons.
@@ -248,6 +286,7 @@ This example renders the following image:
 
 * **aws**: made by https://github.com/milo-minderbinder/AWS-PlantUML
 * **classy**: made by https://github.com/james-gadrow-kr/classy-plantuml
+* **classy-c4**: made by https://github.com/james-gadrow-kr/classy-c4
 * **tupadr3**: made by https://github.com/tupadr3/plantuml-icon-font-sprites
 * **Material Icons**: from https://github.com/Templarian/MaterialDesign
 * **Elastic Icons**: from https://github.com/Crashedmind/PlantUML-Elastic-icons

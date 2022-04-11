@@ -1,0 +1,46 @@
+' Defines a class that wraps the C4 Component function.
+!include <C4/C4_Component>
+!include <classy/types/element-renderer>
+!include <classy/types/technical-descriptor>
+!include <classy-c4/externalizable-element>
+
+$class(Component)
+  $classImplements(ElementRenderer)
+  $classImplements(ExternalizableElement, 'externalizer')
+  $classImplements(TechnicalDescriptor, 'tech')
+
+  ' Constructor that first calls our parent Element Renderer constructor then
+  ' sets an Element Renderer callback.
+  !function Component($this)
+    !$parent = $getInstanceVar($this, 'parent')
+    ElementRenderer($parent)
+
+    !$cbElement = $new('Callback')
+    $call($cbElement, 'setContext', $this)
+    $call($cbElement, 'setMethod', 'Component__renderElement')
+
+    $call($this, 'setElementRendererCallback', $cbElement)
+
+    !return $this
+  !endfunction
+
+  ' This method is an Element Renderer callback. We determine the relevant name,
+  ' technology, and description values to submit to the C4 Component function as
+  ' well as if we should render it standard or as an external Component.
+  !procedure Component__renderElement($this, $alias)
+    !$name = $call($this, 'getName')
+    !$desc = $call($this, 'getDescription')
+    !$tech = $call($this, 'getTechnology')
+
+    !if '' == $tech
+      !$tech = 'N/A'
+    !endif
+
+    !if $call($this, 'isExternal')
+      Component_Ext($alias, $name, $tech, $desc)
+    !else
+      Component($alias, $name, $tech, $desc)
+    !endif
+  !endprocedure
+$endclass(Component)
+

@@ -1,0 +1,39 @@
+' Defines a class that wraps the C4 Person function.
+!include <C4/C4_Context>
+!include <classy/types/element-renderer>
+!include <classy-c4/externalizable-element>
+
+$class(Person)
+  $classImplements(ElementRenderer)
+  $classImplements(ExternalizableElement, 'externalizer')
+
+  ' Constructor that first calls our parent Element Renderer constructor then
+  ' sets an Element Renderer callback.
+  !function Person($this)
+    !$parent = $getInstanceVar($this, 'parent')
+    ElementRenderer($parent)
+
+    !$cbElement = $new('Callback')
+    $call($cbElement, 'setContext', $this)
+    $call($cbElement, 'setMethod', 'Person__renderElement')
+
+    $call($this, 'setElementRendererCallback', $cbElement)
+
+    !return $this
+  !endfunction
+
+  ' This method is an Element Renderer callback. We determine the relevant name
+  ' and description values to submit to the C4 Person function as well as if we
+  ' should render it standard or as an external Person.
+  !procedure Person__renderElement($this, $alias)
+    !$name = $call($this, 'getName')
+    !$desc = $call($this, 'getDescription')
+
+    !if $call($this, 'isExternal')
+      Person_Ext($alias, $name, $desc)
+    !else
+      Person($alias, $name, $desc)
+    !endif
+  !endprocedure
+$endclass(Person)
+

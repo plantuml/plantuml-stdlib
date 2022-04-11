@@ -1,0 +1,68 @@
+!include <classy/types/ported-interface-provider>
+!include <classy-c4/container>
+
+$class(ProviderContainer)
+  $classImplements(Container)
+  $classImplements(PortedInterfaceProvider, 'provider')
+
+  !function ProviderContainer($this)
+    !$parent = $getInstanceVar($this, 'parent')
+    Container($parent)
+
+    !$provider = $getInstanceVar($this, 'provider')
+    PortedInterfaceProvider($provider)
+
+    !$cbElementContent = $new('Callback')
+    !$cbPreElement = $new('Callback')
+
+    $call($cbElementContent, 'setContext', $this)
+    $call($cbPreElement, 'setContext', $this)
+
+    $call($cbElementContent, 'setMethod', 'ProviderContainer__renderPorts')
+    $call($cbPreElement, 'setMethod', 'ProviderContainer__renderInterfaces')
+
+    $call($this, 'setElementContentRendererCallback', $cbElementContent)
+    $call($this, 'setPreElementRendererCallback', $cbPreElement)
+
+    !return $this
+  !endfunction
+
+  !procedure ProviderContainer__renderInterfaces($this, $alias)
+    !$interfaces = $call($this, 'getInterfaces')
+
+    !if '' != $interfaces
+      !$interface = $call($interfaces, 'each')
+
+      !while %false() != $interface
+        $call($interface, 'render', $void=%true())
+        !$interface = $call($interfaces, 'each')
+      !endwhile
+    !endif
+  !endprocedure
+
+  !procedure ProviderContainer__renderPorts($this, $alias)
+    !$ports = $call($this, 'getPorts')
+    !$port = $call($ports, 'each')
+
+    !while %false() != $port
+      $call($port, 'render', $void=%true())
+      !$port = $call($ports, 'each')
+    !endwhile
+
+    !$interfaces = $call($this, 'getInterfaces')
+
+    !if '' != $interfaces
+      !$interface = $call($interfaces, 'each')
+      !$map = $call($this, 'getMap')
+
+      !while %false() != $interface
+        !$port = $call($map, 'get', $interface)
+        !$portAlias = $call($port, 'render')
+        !$interfaceAlias = $call($interface, 'render')
+        $interfaceAlias -- $portAlias
+        !$interface = $call($interfaces, 'each')
+      !endwhile
+    !endif
+  !endprocedure
+$endclass(ProviderContainer)
+

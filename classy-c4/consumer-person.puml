@@ -1,0 +1,71 @@
+' Defines a class that decorates the C4 Person class so that it adds the concept
+' that a Person consumes provided interfaces (ie: user interfaces).
+!include <C4/C4_Context>
+!include <classy/types/interface-consumer>
+!include <classy/types/port>
+!include <classy-c4/person>
+
+$class(ConsumerPerson)
+  $classImplements(Person)
+  $classImplements(InterfaceConsumer, 'consumer')
+  $classVar(port, Port)
+
+  ' Constructor that first calls our parent constructor then sets an Element
+  ' Content Renderer callback and an Outside Renderer callback.
+  !function ConsumerPerson($this)
+    !$parent = $getInstanceVar($this, 'parent')
+    Person($parent)
+
+    !$port = $new('Port')
+    $call($port, 'setName', 'use')
+    $setInstanceVar($this, 'port', $port)
+
+    !$cbElementContent = $new('Callback')
+    !$cbOutside = $new('Callback')
+
+    $call($cbElementContent, 'setContext', $this)
+    $call($cbOutside, 'setContext', $this)
+
+    $call($cbElementContent, 'setMethod', 'ConsumerPerson__renderElementContent')
+    $call($cbOutside, 'setMethod', 'ConsumerPerson__renderOutsideContent')
+
+    $call($this, 'setElementContentRendererCallback', $cbElementContent)
+    $call($this, 'setOutsideRendererCallback', $cbOutside)
+
+    !return $this
+  !endfunction
+
+  ' This method is an Element Content Renderer callback. This is where we render
+  ' the port for our Person.
+  !procedure ConsumerPerson__renderElementContent($this, $alias)
+    !$port = $getInstanceVar($this, 'port')
+    $call($port, 'render', $void=%true())
+  !endprocedure
+
+  ' This method is an Outside Renderer callback. This is where we render the
+  ' interfaces that we consume and our connection to those interfaces.
+  !procedure ConsumerPerson__renderOutsideContent($this, $alias)
+    !$interfaces = $call($this, 'getConsumedInterfaces')
+
+    !if '' != $interfaces
+      !$interface = $call($interfaces, 'each')
+
+      !$port = $getInstanceVar($this, 'port')
+      !$portAlias = $call($port, 'render')
+
+      !while %false() != $interface
+        !$current = $call($interface, 'render')
+        $current )-- $portAlias
+        !$interface = $call($interfaces, 'each')
+      !endwhile
+    !endif
+  !endprocedure
+
+  ' Retrieves the sole Port used by a Person.
+  $classMethod(getPort)
+    !function ConsumerPerson__getPort($this, $args='')
+      !return $getInstanceVar($this, 'port')
+    !endfunction
+  $endclassMethod(getPort)
+$endclass(ConsumerPerson)
+

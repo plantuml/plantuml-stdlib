@@ -1,0 +1,53 @@
+' Defines a class that wraps the C4 Container function.
+!include <C4/C4_Container>
+!include <classy/types/element-renderer>
+!include <classy/types/technical-descriptor>
+!include <classy-c4/externalizable-element>
+!include <classy-c4/focusable-element>
+
+$class(Container)
+  $classImplements(ElementRenderer)
+  $classImplements(ExternalizableElement, 'externalizer')
+  $classImplements(FocusableElement, 'focuser')
+  $classImplements(TechnicalDescriptor, 'tech')
+
+  ' Constructor that first calls our parent Element Renderer constructor then
+  ' sets an Element Renderer callback.
+  !function Container($this)
+    !$parent = $getInstanceVar($this, 'parent')
+    ElementRenderer($parent)
+
+    !$cbElement = $new('Callback')
+    $call($cbElement, 'setContext', $this)
+    $call($cbElement, 'setMethod', 'Container__renderElement')
+
+    $call($this, 'setElementRendererCallback', $cbElement)
+
+    !return $this
+  !endfunction
+
+  ' This method is an Element Renderer callback. We determine the relevant name,
+  ' technology, and description values to submit to the C4 Container function as
+  ' well as determine if we should render it standard, as a boundary, or as an
+  ' external Container.
+  !procedure Container__renderElement($this, $alias)
+    !$name = $call($this, 'getName')
+    !$desc = $call($this, 'getDescription')
+    !$tech = $call($this, 'getTechnology')
+
+    !if '' == $tech
+      !$tech = 'N/A'
+    !endif
+
+    !if $call($this, 'isExternal')
+      Container_Ext($alias, $name, $tech, $desc)
+    !else
+      !if $call($this, 'isFocus')
+        Container_Boundary($alias, $name)
+      !else
+        Container($alias, $name, $tech, $desc)
+      !endif
+    !endif
+  !endprocedure
+$endclass(Container)
+
