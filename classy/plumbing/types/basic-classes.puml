@@ -1,0 +1,25 @@
+' File to define class inheritance for integral types.
+
+' The most basic class type. All classes are objects.
+$class(object)
+$endclass(object)
+
+' A callable is an object that can be called using $call.
+$class(callable)
+  $classImplements(object)
+$endclass(callable)
+
+' The following three built in types we are simply defining for purpose of type
+' declaration.
+$class(string)
+  $classImplements(object)
+$endclass(string)
+
+$class(int)
+  $classImplements(string)
+$endclass(int)
+
+$class(bool)
+  $classImplements(int)
+$endclass(bool)
+

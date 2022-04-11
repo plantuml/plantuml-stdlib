@@ -1,0 +1,34 @@
+' Defines a class that associates a key with a value.
+!include <classy/core>
+
+$class(KeyValuePair)
+  $classVar(key, object)
+  $classVar(val, object)
+
+  $classMethod(getKey)
+    !function KeyValuePair__getKey($this)
+      !return $getInstanceVar($this, 'key')
+    !endfunction
+  $endclassMethod(getKey)
+
+  $classMethod(getValue)
+    !function KeyValuePair__getValue($this)
+      !return $getInstanceVar($this, 'val')
+    !endfunction
+  $endclassMethod(getValue)
+
+  $classMethod(setKey)
+    !function KeyValuePair__setKey($this, $args)
+      $setInstanceVar($this, 'key', $call($args, 'pop'))
+      !return $this
+    !endfunction
+  $endclassMethod(setKey)
+
+  $classMethod(setValue)
+    !function KeyValuePair__setValue($this, $args)
+      $setInstanceVar($this, 'val', $call($args, 'pop'))
+      !return $this
+    !endfunction
+  $endclassMethod(setValue)
+$endclass(KeyValuePair)
+

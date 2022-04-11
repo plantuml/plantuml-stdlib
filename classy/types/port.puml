@@ -1,0 +1,34 @@
+' Defines a class for providing a named Port. This renders as a simple square
+' and is intended to be used to show "holes" in a black box system where the
+' inputs and outputs enter or leave that system.
+!include <classy/types/descriptive-renderer>
+
+$class(Port)
+  $classImplements(DescriptiveRenderer)
+
+  ' Constructur that sets the renderer callback.
+  !function Port($this)
+    !$callback = $new('Callback')
+    $call($callback, 'setContext', $this)
+    $call($callback, 'setMethod', 'Port__output')
+    $call($this, 'setRendererCallback', $callback)
+    !return $this
+  !endfunction
+
+  ' The renderer callback that actually draws the box. This is not intended to
+  ' be called directly. Instead, call the "render" method from the parent class.
+  !procedure Port__output($this, $alias)
+    skinparam rectangle<<$alias>> {
+      backgroundColor Transparent
+      borderColor Black
+      borderThickness 1
+      fontColor Transparent
+      fontSize 0
+    }
+
+    hide <<$alias>> stereotype
+    skinparam shadowing<<$alias>> false
+    rectangle $alias <<$alias>>
+  !endprocedure
+$endclass(Port)
+

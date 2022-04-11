@@ -1,0 +1,21 @@
+' Defines a class that decorates the Descriptor class to add in a technology
+' property as well.
+!include <classy/core>
+
+$class(TechnicalDescriptor)
+  $classVar(tech, string)
+
+  $classMethod(getTechnology)
+    !function TechnicalDescriptor__getTechnology($this)
+      !return $getInstanceVar($this, 'tech')
+    !endfunction
+  $endclassMethod(getTechnology)
+
+  $classMethod(setTechnology)
+    !function TechnicalDescriptor__setTechnology($this, $args)
+      $setInstanceVar($this, 'tech', $call($args, 'pop'))
+      !return $this
+    !endfunction
+  $endclassMethod(setTechnology)
+$endclass(TechnicalDescriptor)
+

@@ -1,0 +1,143 @@
+!include <classy/types/map>
+!include <classy/types/ported-interface-consumer>
+!include <classy-c4/system>
+
+$class(ConsumerSystem)
+  $classImplements(System)
+  $classImplements(PortedInterfaceConsumer, 'consumer')
+  $classVar(containerRendererCallback, Callback)
+  $classVar(portContainerInterfaceMap, Map)
+
+  !function ConsumerSystem($this)
+    !$parent = $getInstanceVar($this, 'parent')
+    System($parent)
+
+    !$consumer = $getInstanceVar($this, 'consumer')
+    PortedInterfaceConsumer($consumer)
+
+    $setInstanceVar($this, 'portContainerInterfaceMap', $new('Map'))
+
+    !$cbElementContent = $new('Callback')
+    !$cbOutside = $new('Callback')
+
+    $call($cbElementContent, 'setContext', $this)
+    $call($cbOutside, 'setContext', $this)
+
+    $call($cbElementContent, 'setMethod', 'ConsumerSystem__renderPorts')
+    $call($cbOutside, 'setMethod', 'ConsumerSystem__renderInterfaces')
+
+    $call($this, 'setElementContentRendererCallback', $cbElementContent)
+    $call($this, 'setOutsideRendererCallback', $cbOutside)
+
+    !return $this
+  !endfunction
+
+  !procedure ConsumerSystem__renderContainers($this, $alias)
+    !$callback = $call($this, 'getContainerRendererCallback')
+
+    !if '' != $callback
+      !$context = $call($callback, 'getContext')
+      !$method = $call($callback, 'getMethod')
+
+      together {
+        $preInvoke($method, $context, array($new('array'), $alias))
+        %invoke_procedure($method, $context, $alias)
+        $postInvoke()
+      }
+
+      !$ports = $call($this, 'getPorts')
+      !$port = $call($ports, 'each')
+      !$map = $getInstanceVar($this, 'portContainerInterfaceMap')
+
+      !while %false() != $port
+        !$present = $call($map, 'has', $port)
+
+        !if $present
+          !$interfaces = $call($map, 'get', $port)
+          !$interface = $call($interfaces, 'each')
+          !$portAlias = $call($port, 'render')
+
+          !while %false() != $interface
+            !$current = $call($interface, 'render')
+            $current -- $portAlias
+            !$interface = $call($interfaces, 'each')
+          !endwhile
+        !endif
+
+        !$port = $call($ports, 'each')
+      !endwhile
+    !endif
+  !endprocedure
+
+  !procedure ConsumerSystem__renderInterfaces($this, $alias)
+    !$interfaces = $call($this, 'getConsumedInterfaces')
+
+    !if '' != $interfaces
+      !$interface = $call($interfaces, 'each')
+      !$consumer = $getInstanceVar($this, 'consumer')
+      !$map = $call($consumer, 'getMap')
+
+      !while %false() != $interface
+        !$port = $call($map, 'get', $interface)
+        !$portAlias = $call($port, 'render')
+        !$interfaceAlias = $call($interface, 'render')
+        $interfaceAlias )-- $portAlias
+        !$interface = $call($interfaces, 'each')
+      !endwhile
+    !endif
+  !endprocedure
+
+  !procedure ConsumerSystem__renderPorts($this, $alias)
+    !if $call($this, 'isFocus')
+      ConsumerSystem__renderContainers($this, $alias)
+    !endif
+
+    !$ports = $call($this, 'getPorts')
+    !$port = $call($ports, 'each')
+
+    !while %false() != $port
+      $call($port, 'render', $void=%true())
+      !$port = $call($ports, 'each')
+    !endwhile
+  !endprocedure
+
+  $classMethod(consumesExternalInterfaces)
+    !function ConsumerSystem__consumesExternalInterfaces($this, $args)
+      !$interface = $call($args, 'each')
+
+      !if 1 == $call($args, 'size')
+        !$port = $call($this, 'getPort')
+      !else
+        !$port = $call($args, 'each')
+      !endif
+
+      !$map = $getInstanceVar($this, 'portContainerInterfaceMap')
+
+      !if %not($call($map, 'has', $port))
+        $call($map, 'add', array($new('array'), $port, $new('array')))
+      !endif
+
+      !$interfaces = $call($map, 'get', $port)
+
+      !if %not($call($interfaces, 'contains', $interface))
+        $call($interfaces, 'push', $interface)
+      !endif
+
+      !return $this
+    !endfunction
+  $endclassMethod(consumesExternalInterfaces)
+
+  $classMethod(getContainerRendererCallback)
+    !function ConsumerSystem__getContainerRendererCallback($this)
+      !return $getInstanceVar($this, 'containerRendererCallback')
+    !endfunction
+  $endclassMethod(getContainerRendererCallback)
+
+  $classMethod(setContainerRendererCallback)
+    !function ConsumerSystem__setContainerRendererCallback($this, $args)
+      $setInstanceVar($this, 'containerRendererCallback', $call($args, 'pop'))
+      !return $this
+    !endfunction
+  $endclassMethod(setContainerRendererCallback)
+$endclass(ConsumerSystem)
+

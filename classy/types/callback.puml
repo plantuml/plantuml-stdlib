@@ -1,0 +1,40 @@
+' Defines a class that pairs a callable object with a method to be called upon
+' that object. This is useful when you need to implement something using many
+' OO patterns such as Observer or Strategy.
+!include <classy/core>
+
+$class(Callback)
+  $classVar(context, callable)
+  $classVar(method, string)
+
+  ' This method returns the instance that will supply the method.
+  $classMethod(getContext)
+    !function Callback__getContext($this)
+      !return $getInstanceVar($this, 'context')
+    !endfunction
+  $endclassMethod(getContext)
+
+  ' This method returns the instance method that is to be called.
+  $classMethod(getMethod)
+    !function Callback__getMethod($this)
+      !return $getInstanceVar($this, 'method')
+    !endfunction
+  $endclassMethod(getMethod)
+
+  ' This method sets the instance that will supply the method.
+  $classMethod(setContext)
+    !function Callback__setContext($this, $args)
+      $setInstanceVar($this, 'context', $call($args, 'each'))
+      !return $this
+    !endfunction
+  $endclassMethod(setContext)
+
+  ' This method sets the method that is to be called.
+  $classMethod(setMethod)
+    !function Callback__setMethod($this, $args)
+      $setInstanceVar($this, 'method', $call($args, 'each'))
+      !return $this
+    !endfunction
+  $endclassMethod(setMethod)
+$endclass(Callback)
+

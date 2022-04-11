@@ -1,0 +1,47 @@
+' Defines a class that marries together the concepts of providing an interface
+' with the concept of ported interfaces.
+!include <classy/types/interface-provider>
+!include <classy/types/ported-interface>
+
+$class(PortedInterfaceProvider)
+  $classImplements(InterfaceProvider)
+  $classImplements(PortedInterface, 'piParent')
+
+  !function PortedInterfaceProvider($this)
+    !$parent = $getInstanceVar($this, 'parent')
+    InterfaceProvider($parent)
+
+    !$piParent = $getInstanceVar($this, 'piParent')
+    PortedInterface($piParent)
+
+    !return $this
+  !endfunction
+
+  ' Override of the parent provideInterface method to decorate it with our port.
+  $classMethod(provideInterface)
+    !function PortedInterfaceProvider__provideInterface($this, $args)
+      !$interface = $call($args, 'each')
+
+      !if 1 == $call($args, 'size')
+        !$port = $call($this, 'getPort')
+      !else
+        !$port = $call($args, 'each')
+        !$ports = $call($this, 'getPorts')
+        !$exists = $call($ports, 'contains', $port)
+
+        !if %not($exists)
+          $call($ports, 'push', $port)
+        !endif
+      !endif
+
+      !$map = $call($this, 'getMap')
+      $call($map, 'add', array($new('array'), $interface, $port))
+
+      !$parent = $getInstanceVar($this, 'parent')
+      $call($parent, 'provideInterface', $interface)
+
+      !return $this
+    !endfunction
+  $endclassMethod(provideInterface)
+$endclass(PortedInterfaceProvider)
+

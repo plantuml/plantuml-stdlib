@@ -1,0 +1,45 @@
+' Defines a class that wraps the C4 System function.
+!include <C4/C4_Context>
+!include <classy/types/element-renderer>
+!include <classy-c4/externalizable-element>
+!include <classy-c4/focusable-element>
+
+$class(System)
+  $classImplements(ElementRenderer)
+  $classImplements(ExternalizableElement, 'externalizer')
+  $classImplements(FocusableElement, 'focuser')
+
+  ' Constructor that first calls our parent Element Renderer constructor then 
+  ' sets and Element Renderer callback.
+  !function System($this)
+    !$parent = $getInstanceVar($this, 'parent')
+    ElementRenderer($parent)
+
+    !$cbElement = $new('Callback')
+    $call($cbElement, 'setContext', $this)
+    $call($cbElement, 'setMethod', 'System__renderElement')
+
+    $call($this, 'setElementRendererCallback', $cbElement)
+
+    !return $this
+  !endfunction
+
+  ' This method is an Element Renderer callback. We determine the relevant name
+  ' and description values to submit to the C4 system function as well as if we
+  ' should render it standard, as a boundary, or as an external System.
+  !procedure System__renderElement($this, $alias)
+    !$name = $call($this, 'getName')
+    !$desc = $call($this, 'getDescription')
+
+    !if $call($this, 'isExternal')
+      System_Ext($alias, $name, $desc)
+    !else
+      !if $call($this, 'isFocus')
+        System_Boundary($alias, $name)
+      !else
+        System($alias, $name, $desc)
+      !endif
+    !endif
+  !endprocedure
+$endclass(System)
+

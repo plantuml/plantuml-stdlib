@@ -1,0 +1,68 @@
+' Defines a class that marries together the concepts of interfaces with the
+' concept of ports. This is stored using a map instance to indicate to which
+' port the interface is tied.
+!include <classy/types/interface-consumer>
+!include <classy/types/map>
+!include <classy/types/port>
+
+$class(PortedInterface)
+  $classVar(interfacePortMap, Map)
+  $classVar(ports, array)
+
+  ' Constructor that creates a default port that will be used if left
+  ' unspecified in calls.
+  !function PortedInterface($this)
+    !$port = $new('Port')
+    $call($port, 'setName', 'default')
+    $setInstanceVar($this, 'ports', array($new('array'), $port))
+    $setInstanceVar($this, 'interfacePortMap', $new('Map'))
+    !return $this
+  !endfunction
+
+  ' Returns the interface to port map.
+  $classMethod(getMap)
+    !function PortedInterface__getMap($this)
+      !return $getInstanceVar($this, 'interfacePortMap')
+    !endfunction
+  $endclassMethod(getMap)
+
+  ' Returns the named port or errors.
+  $classMethod(getPort)
+    !function PortedInterface__getPort($this, $args='')
+      !$ports = $call($this, 'getPorts')
+
+      !if '' == $args
+        !return $call($ports, 'get', 0)
+      !endif
+
+      !$port = $call($ports, 'each')
+      !$target = $call($args, 'pop')
+      !$found = %false()
+
+      !while %not($found) && %false() != $port
+        !if $target == $call($port, 'getName')
+          !$found = %true()
+          $call($ports, 'reset')
+        !endif
+
+        !if %not($found)
+          !$port = $call($ports, 'each')
+        !endif
+      !endwhile
+
+      !if %not($found)
+        $fail('Specified port not found: ' + $target)
+      !endif
+
+      !return $port
+    !endfunction
+  $endclassMethod(getPort)
+
+  ' Returns the array of all defined ports.
+  $classMethod(getPorts)
+    !function PortedInterface__getPorts($this)
+      !return $getInstanceVar($this, 'ports')
+    !endfunction
+  $endclassMethod(getPorts)
+$endclass(PortedInterface)
+

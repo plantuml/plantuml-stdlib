@@ -1,0 +1,126 @@
+!include <classy/types/map>
+!include <classy/types/ported-interface-consumer>
+!include <classy/types/ported-interface-provider>
+!include <classy-c4/component>
+
+$class(BidirectionalComponent)
+  $classImplements(Component)
+  $classImplements(PortedInterfaceConsumer, 'consumer')
+  $classImplements(PortedInterfaceProvider, 'provider')
+
+  !function BidirectionalComponent($this)
+    !$parent = $getInstanceVar($this, 'parent')
+    Component($parent)
+
+    !$consumer = $getInstanceVar($this, 'consumer')
+    PortedInterfaceConsumer($consumer)
+
+    !$provider = $getInstanceVar($this, 'provider')
+    PortedInterfaceProvider($provider)
+
+    !$cbElementContent = $new('Callback')
+    !$cbOutside = $new('Callback')
+    !$cbPreElement = $new('Callback')
+
+    $call($cbElementContent, 'setContext', $this)
+    $call($cbOutside, 'setContext', $this)
+    $call($cbPreElement, 'setContext', $this)
+
+    $call($cbElementContent, 'setMethod', 'BidirectionalComponent__renderContent')
+    $call($cbOutside, 'setMethod', 'BidirectionalComponent__renderConsumed')
+    $call($cbPreElement, 'setMethod', 'BidirectionalComponent__renderProvided')
+
+    $call($this, 'setElementContentRendererCallback', $cbElementContent)
+    $call($this, 'setOutsideRendererCallback', $cbOutside)
+    $call($this, 'setPreElementRendererCallback', $cbPreElement)
+
+    !return $this
+  !endfunction
+
+  !procedure BidirectionalComponent__connectProvidedInterfaces($this)
+    !$interfaces = $call($this, 'getInterfaces')
+
+    !if '' != $interfaces
+      !$interface = $call($interfaces, 'each')
+      !$provider = $getInstanceVar($this, 'provider')
+      !$map = $call($provider, 'getMap')
+
+      !while %false() != $interface
+        !$port = $call($map, 'get', $interface)
+        !$portAlias = $call($port, 'render')
+        !$interfaceAlias = $call($interface, 'render')
+        $interfaceAlias -- $portAlias
+        !$interface = $call($interfaces, 'each')
+      !endwhile
+    !endif
+  !endprocedure
+
+  !procedure BidirectionalComponent__renderConsumed($this, $alias)
+    !$interfaces = $call($this, 'getConsumedInterfaces')
+
+    !if '' != $interfaces
+      !$interface = $call($interfaces, 'each')
+      !$consumer = $getInstanceVar($this, 'consumer')
+      !$map = $call($consumer, 'getMap')
+
+      !while %false() != $interface
+        !$port = $call($map, 'get', $interface)
+        !$portAlias = $call($port, 'render')
+        !$interfaceAlias = $call($interface, 'render')
+        $interfaceAlias )-- $portAlias
+        !$interface = $call($interfaces, 'each')
+      !endwhile
+    !endif
+  !endprocedure
+
+  !procedure BidirectionalComponent__renderContent($this, $alias)
+    !$provider = $getInstanceVar($this, 'provider')
+    !$ports = $call($provider, 'getPorts')
+    BidirectionalComponent__renderPorts($ports)
+
+    !$consumer = $getInstanceVar($this, 'consumer')
+    !$ports = $call($consumer, 'getPorts')
+    BidirectionalComponent__renderPorts($ports)
+
+    BidirectionalComponent__connectProvidedInterfaces($this)
+  !endprocedure
+
+  !procedure BidirectionalComponent__renderPorts($ports)
+    !if '' != $ports
+      !$port = $call($ports, 'each')
+
+      !while %false() != $port
+        $call($port, 'render', $void=%true())
+        !$port = $call($ports, 'each')
+      !endwhile
+    !endif
+  !endprocedure
+
+  !procedure BidirectionalComponent__renderProvided($this, $alias)
+    !$interfaces = $call($this, 'getInterfaces')
+
+    !if '' != $interfaces
+      !$interface = $call($interfaces, 'each')
+
+      !while %false() != $interface
+        $call($interface, 'render', $void=%true())
+        !$interface = $call($interfaces, 'each')
+      !endwhile
+    !endif
+  !endprocedure
+
+  $classMethod(getInPort)
+    !function BidirectionalComponent__getInPort($this, $args='')
+      !$provider = $getInstanceVar($this, 'provider')
+      !return $call($provider, 'getPort', $args)
+    !endfunction
+  $endclassMethod(getInPort)
+
+  $classMethod(getOutPort)
+    !function BidirectionalComponent__getOutPort($this, $args='')
+      !$consumer = $getInstanceVar($this, 'consumer')
+      !return $call($consumer, 'getPort', $args)
+    !endfunction
+  $endclassMethod(getOutPort)
+$endclass(BidirectionalComponent)
+

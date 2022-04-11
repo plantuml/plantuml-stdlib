@@ -73,6 +73,94 @@ This example renders the following image:
 
 ![Example](http://www.plantuml.com/plantuml/proxy?idx=0&src=https%3A%2F%2Fraw.githubusercontent.com%2FRicardoNiepel%2FAzure-PlantUML%2Fmaster%2Fsamples%2FBasic%2520usage%2520-%2520Stream%2520processing%2520with%2520Azure%2520Stream%2520Analytics.puml "Example")
 
+## Classy library
+
+The Classy library allows for using an Object Oriented approach to diagramming
+in PlantUML.
+
+That is to say that it allows you to define and instantiate your own classes as
+well as allow you to call methods defined on those classes. You can also inherit
+from one or more classes where desired.
+
+Use it by including the file that contains the Classy class that you want to use
+within your diagram. Alternatively, if you want to define your own type, you can
+just include the `core.puml` file, eg: `!include <classy/core>`, which contains
+all of the necessary functions.
+
+Example of usage:
+```
+@startuml
+
+    !include <classy/core>
+
+    $class(HelloWorld)
+      $classVar(msg, string, "Hello World!")
+
+      $classMethod(getMessage)
+        !function HelloWorld__getMessage($this)
+          !return $getInstanceVar($this, 'msg')
+        !endfunction
+      $endclassMethod(getMessage)
+
+      $classMethod(setMessage)
+        !function HelloWorld__setMessage($this, $args)
+          $setInstanceVar($this, 'msg', $call($args, 'each'))
+          !return $this
+        !endfunction
+      $endclassMethod(setMessage)
+    $endclass(HelloWorld)
+
+    !$hello = $new(HelloWorld)
+    Alice -> Bob : $call($hello, 'getMessage')
+
+    $call($hello, 'setMessage', array($new(array), '2nd message!'), $void=%true())
+
+    Alice -> Bob : $call($hello, 'getMessage')
+
+@enduml
+```
+
+This example renders the following image:
+![Example](http://www.plantuml.com/plantuml/png/SoWkIImgAStDuNBAJrBGjLDmpCbCJbMmKl18pSd9LmZFByf9KKINCyfBKSXDBIvEJ4zLKEHoICrB0He00000)
+
+## Classy C4 library
+
+The Classy C4 library combines the Classy and C4 libraries by defining Classy
+classes that wrap the C4 macros.
+
+Example of usage:
+```
+@startuml
+
+    !include <classy-c4/container>
+    !include <classy-c4/person>
+    !include <classy-c4/system>
+
+    !$system = $new(System)
+    $call($system, 'setName', 'Label', $void=%true())
+    $call($system, 'setDescription', 'Optional Description', $void=%true())
+
+    !$person = $new(Person)
+    $call($person, 'setName', 'Label', $void=%true())
+    $call($person, 'setDescription', 'Optional Description', $void=%true())
+
+    !$container = $new(Container)
+    $call($container, 'setName', 'Label', $void=%true())
+    $call($container, 'setDescription', 'Optional Description', $void=%true())
+    $call($container, 'setTechnology', 'Technology', $void=%true())
+
+    !$personAlias = $call($person, 'render')
+    !$containerAlias = $call($container, 'render')
+    $call($system, 'render', $void=%true())
+
+    Rel($personAlias, $containerAlias, "Label", "Optional Technology")
+
+@enduml
+```
+
+This example renders the following image:
+![Example](http://www.plantuml.com/plantuml/png/ZOvFIyGm4CNl-HIrfowupMLFdbQgjnKN_vnbcWxRm6GICXDalxtPWaKHnTDxCypxpTkBGjOIg1bsR_U40Ld5N7bsL2PiPjKaDzPcUEzFNkSo5i7i8YkozYu6cmZuaj-AJkH7E-osnylgzU5W0uXYjfKyr0HunjodUclC4RD4xj8Yj-H1hfls02DIMyrZKXyPgBb3STalKxinAwHpd-v7z0NTp97YwVm7wFaiYg6JHVxxtJmXVI-yjlWTyQNEnkoHfnBe0m00)
+
 ## Elastic library
 
 The Elastic library consists of [Elastic](https://www.elastic.co) icons.
@@ -197,6 +285,8 @@ This example renders the following image:
 ## Sources
 
 * **aws**: made by https://github.com/milo-minderbinder/AWS-PlantUML
+* **classy**: made by https://github.com/james-gadrow-kr/classy-plantuml
+* **classy-c4**: made by https://github.com/james-gadrow-kr/classy-c4
 * **tupadr3**: made by https://github.com/tupadr3/plantuml-icon-font-sprites
 * **Material Icons**: from https://github.com/Templarian/MaterialDesign
 * **Elastic Icons**: from https://github.com/Crashedmind/PlantUML-Elastic-icons
