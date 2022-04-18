@@ -257,6 +257,34 @@ MA_FOLDER_MOVE(Red, 1, dir, rectangle, "A label")
 This example renders the following image:
 ![Example](http://www.plantuml.com/plantuml/png/PSn12i8m40NGVK_nsqqL0k9U2eNMbRLGYjiIawa69faGKz7RUm3V0LxfWk7D4avUPqfEyy68znAQeiOiS3vAoiXFmYicbmchOy9NDdJZjPuHY2oo8B8s18sOQ7MViYZ_urNOKbgylAafYg5TpkEbwwTb66_zRYAhS5ImBYaaCbc71vD2rOBrdRZQ_m00 "Example")
 
+## Domain Story library
+
+This library provides a set of macros to easily describe and document a domain story which was developed in
+a [Domain Storytelling](http://www.domainstorytelling.org) workshop.
+
+For more usage instructions see [DomainStory-PlantUML](https://github.com/johthor/DomainStory-PlantUML).
+
+Example of usage:
+
+```
+@startuml
+!include <DomainStory/domainStory>
+
+Boundary(System) {
+    Person(Alice)
+    Conversation(weather)
+    Person(Bob)
+}
+
+activity(1, Alice, talks about the, weather, with, Bob)
+@enduml
+```
+
+This example renders the following image:
+
+![Example](http://www.plantuml.com/plantuml/png/JSx1IWGn30RWUv-YtcPWdEBLqxfwL5XOV81C9zXg9rdQlxiCuhlR7GGtf_0bVyYkW3BgainT59_gp3O0f_BeNARB-14HwbGBPwy25enU5_Uf0K6pUz65eXoXURq_91AylxswAxdvVpAUhjVDNglCbDVkk1RmqjjlOriTE1ULxYb5p_qcpohdXeJO_CA4mBc_tTthr9iVOyWZdYFMxc6mMtwmeFHLB4rQOH4Q_ELR4n46kqLtB7DxwHS0
+ "Example")
+
 ## Notes
 
 When mixing sprites macros with other elements you may get a syntax error if, for example, trying to add a rectangle along with classes.
@@ -290,5 +318,6 @@ This example renders the following image:
 * **tupadr3**: made by https://github.com/tupadr3/plantuml-icon-font-sprites
 * **Material Icons**: from https://github.com/Templarian/MaterialDesign
 * **Elastic Icons**: from https://github.com/Crashedmind/PlantUML-Elastic-icons
+* **Domain Story**: from https://github.com/johthor/DomainStory-PlantUML
 
 You can create Pull Request to update or add some library here if you find it relevant.
