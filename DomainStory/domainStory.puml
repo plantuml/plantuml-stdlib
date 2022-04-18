@@ -1,0 +1,332 @@
+' Default Styling
+' ##################################
+
+!$textColor ?= "#0b0c10"
+
+!$actorStyle ?= "default"
+!$actorScale ?= 1
+!$actorColor ?= "#1f2833"
+
+!$objectStyle ?= "default"
+!$objectScale ?= 0.8
+!$objectColor ?= "#1f2833"
+
+!$boundaryColor ?= "#1f2833"
+
+!$activityColor ?= "#c5c6c7"
+
+!$stepColor ?= "#66fcf1"
+!$stepFontSize ?= 16
+!$stepFontColor ?= $textColor
+
+!$noteColor ?= "#c5c6c7"
+!$noteBorder ?= "#1f2833"
+
+hide stereotypes
+skinparam Shadowing false
+skinparam DefaultTextAlignment center
+skinparam Padding 5
+
+' agent nodes are used for the actors
+skinparam agent {
+    FontColor $textColor
+    BackgroundColor none
+    BorderColor none
+}
+
+' card nodes are used for the work objects
+skinparam card {
+    FontColor $textColor
+    BackgroundColor none
+    BorderColor none
+}
+
+skinparam rectangle<<boundary>> {
+    FontColor $textColor
+    BackgroundColor none
+    BorderColor $boundaryColor
+    BorderStyle dashed
+    RoundCorner 15
+}
+
+skinparam Arrow {
+    FontColor $textColor
+    Color $activityColor
+}
+
+skinparam note {
+    FontColor $textColor
+    BackgroundColor $noteColor
+    BorderColor $noteBorder
+}
+
+' Layout
+' ##################################
+
+left to right direction
+
+' in journeys with multiple stories the default top to down direction
+' usually gives better results
+
+' Actors
+' ##################################
+!unquoted procedure Actor($kind, $sprite, $name, $label = "", $color = "", $scale = "", $note = "")
+    !if $label == ""
+        !$label = $name
+    !endif
+    !if $color == ""
+        !$color = $actorColor
+    !endif
+    !if $scale == ""
+        !$scale = $actorScale
+    !endif
+    agent "<color:$color><$sprite{scale=$scale}></color>\r $label" as $name <<$kind>>
+
+    $addNote($name, $note)
+!endprocedure
+
+!if %not(%variable_exists("$personSprite"))
+    !if $actorStyle == "default"
+        !include <material/account_outline>
+        !global $personSprite = "$ma_account_outline"
+    !else
+        !include <material/account>
+        !global $personSprite = "$ma_account"
+    !endif
+!endif
+
+!unquoted procedure Person($name, $label = "", $color = "", $scale = "", $note = "")
+    Actor("Person", "$personSprite", $name, $label, $color, $scale, $note)
+!endprocedure
+
+!if %not(%variable_exists("$groupSprite"))
+    !if $actorStyle == "default"
+        !include <material/account_multiple_outline>
+        !global $groupSprite = "$ma_account_multiple_outline"
+    !else
+        !include <material/account_multiple>
+        !global $groupSprite = "$ma_account_multiple"
+    !endif
+!endif
+
+!unquoted procedure Group($name, $label = "", $color = "", $scale = "", $note = "")
+    Actor("Group", "$groupSprite", $name, $label, $color, $scale, $note)
+!endprocedure
+
+!include <material/laptop>
+!unquoted procedure System($name, $label = "", $color = "", $scale = "", $note = "")
+    Actor("System", "$ma_laptop", $name, $label, $color, $scale, $note)
+!endprocedure
+
+' Work objects
+' ##################################
+!unquoted procedure Object($kind, $sprite, $name, $label = "", $color = "", $scale = "", $note = "")
+    !if $label == ""
+        !$label = $name
+    !endif
+    !if $color == ""
+        !$color = $objectColor
+    !endif
+    !if $scale == ""
+        !$scale = $objectScale
+    !endif
+    card "<color:$color><$sprite{scale=$scale}></color>\r $label" as $name <<$kind>>
+
+    $addNote($name, $note)
+!endprocedure
+
+!if %not(%variable_exists("$documentSprite"))
+    !if $objectStyle == "default"
+        !include <material/file_document>
+        !global $documentSprite = "$ma_file_document"
+    !else
+        !include <material/document>
+        !global $documentSprite = "$ma_document"
+    !endif
+!endif
+
+!unquoted procedure Document($name, $label = "", $color = "", $scale = "", $note = "")
+    Object("Document", "$documentSprite", $name, $label, $color, $scale, $note)
+!endprocedure
+
+!if %not(%variable_exists("$folderSprite"))
+    !if $objectStyle == "default"
+        !include <material/folder_outline>
+        !global $folderSprite = "$ma_folder_outline"
+    !else
+        !include <material/folder>
+        !global $folderSprite = "$ma_folder"
+    !endif
+!endif
+
+!unquoted procedure Folder($name, $label = "", $color = "", $scale = "", $note = "")
+    Object("Folder", "$folderSprite", $name, $label, $color, $scale, $note)
+!endprocedure
+
+!include <material/phone>
+!unquoted procedure Call($name, $label = "", $color = "", $scale = "", $note = "")
+    Object("Call", "$ma_phone", $name, $label, $color, $scale, $note)
+!endprocedure
+
+!if %not(%variable_exists("$emailSprite"))
+    !if $objectStyle == "default"
+        !include <material/at>
+        !global $emailSprite = "$ma_at"
+    !else
+        !include <material/email>
+        !global $emailSprite = "$ma_email"
+    !endif
+!endif
+
+!unquoted procedure Email($name, $label = "", $color = "", $scale = "", $note = "")
+    Object("Email", "$emailSprite", $name, $label, $color, $scale, $note)
+!endprocedure
+
+!if %not(%variable_exists("$conversationSprite"))
+    !if $objectStyle == "default"
+        !include <material/message_outline>
+        !global $conversationSprite = "$ma_message_outline"
+    !else
+        !include <material/message>
+        !global $conversationSprite = "$ma_message"
+    !endif
+!endif
+
+!unquoted procedure Conversation($name, $label = "", $color = "", $scale = "", $note = "")
+    Object("Conversation", "$conversationSprite", $name, $label, $color, $scale, $note)
+!endprocedure
+
+!if %not(%variable_exists("$infoSprite"))
+    !if $objectStyle == "default"
+        !include <material/information_outline>
+        !global $infoSprite = "$ma_information_outline"
+    !else
+        !include <material/information>
+        !global $infoSprite = "$ma_information"
+    !endif
+!endif
+
+!unquoted procedure Info($name, $label = "", $color = "", $scale = "", $note = "")
+    Object("Info", "$infoSprite", $name, $label, $color, $scale, $note)
+!endprocedure
+
+' Boundaries
+' ##################################
+!unquoted procedure Boundary($name, $label = "")
+    !if $label == ""
+        !$label = $name
+    !endif
+    rectangle "==$label" <<Boundary>> as $name
+!endprocedure
+
+' Activities
+' ##################################
+
+!global $stepCounter = 0
+!global $objectCounter = 0
+
+!unquoted procedure activity($step, $subject, $predicate, $object, $post = "", $target = "", $objectArr = "", $targetArr = "", $color = "", $scale = "", $note = "")
+    ' ensure object exists / create one dynamically
+    !$object = $ensureObjectExists($object, $color, $scale)
+
+    ' handle forward or backward activity
+    !if $objectArr == "" && $targetArr == ""
+        !$bwPosition = %strpos($step, "<")
+        !if $bwPosition > 0
+            !$step = %substr($step, 0, $bwPosition)
+            !$objectArr = "<--"
+            !$targetArr = "<--"
+        !endif
+    !endif
+
+    !if $objectArr == ""
+        !$objectArr = "-->"
+    !endif
+
+    !if $targetArr == ""
+        !$targetArr = $objectArr
+    !endif
+
+    ' create connecting arrows
+    $arrow($subject, $object, $objectArr) : $stepLabel($step) $predicate
+
+    !if $post != "" && $post != "_"
+        !if $target != "" && $target != "_"
+            $arrow($object, $target, $targetArr) : $post
+        !else
+            $arrow($object, $post, $targetArr)
+        !endif
+    !endif
+
+    $addNote($object, $note)
+!endprocedure
+
+' Helper
+' ##################################
+
+!procedure $addNote($target, $note)
+    !if $note != ""
+        !$noteDir = %substr($note, 0, 1)
+        !if $noteDir == "v"
+            note bottom of $target : %substr($note, 1)
+        !elseif $noteDir == "<"
+            note left of $target : %substr($note, 1)
+        !elseif $noteDir == "^"
+            note top of $target : %substr($note, 1)
+        !elseif $noteDir == ">"
+            note right of $target : %substr($note, 1)
+        !else
+            note right of $target : $note
+        !endif
+    !endif
+!endprocedure
+
+!function $ensureObjectExists($object, $color = "", $scale = "")
+    !$objectName = $object
+    !$objectSeparator = %strpos($object, ":")
+    !if $objectSeparator > 0
+        !$objectCounter = %intval($objectCounter) + 1
+        !$objectKind = %substr($object, 0, $objectSeparator)
+        !$objectLabel = %substr($object, $objectSeparator + 1)
+        !$objectName = $objectKind + $objectCounter
+        %invoke_procedure($objectKind, $objectName, $objectLabel, $color, $scale)
+    !endif
+    !return $objectName
+!endfunction
+
+!function $arrow($from, $to, $spec)
+    !if %substr($spec, 0, 1) == "<"
+        !return $to + " " + $spec + " " + $from
+    !else
+        !return $from + " " + $spec + " " + $to
+    !endif
+!endfunction
+
+!function $computeStep($step)
+    !if $step == "_"
+        !$stepCounter = $stepCounter + 1
+        !return $stepCounter
+    !elseif $step == "|"
+        !return $stepCounter
+    !elseif %substr($step, 0, 1) == "="
+        !$stepCounter = %intval(%substr($step, 1))
+        !return $stepCounter
+    !else
+        !return $step
+    !endif
+!endfunction
+
+!function $stepLabel($step)
+    !$stepNum = $computeStep($step)
+    !$result = "(" + $stepNum + ")"
+    !if ($stepColor != "")
+        !$result = "<back:" + $stepColor + ">" + $result + "</back>"
+    !endif
+    !if ($stepFontColor != "")
+        !$result = "<color:" + $stepFontColor + ">" + $result + "</color>"
+    !endif
+    !if ($stepFontSize != "")
+        !$result = "<size:" + $stepFontSize + ">" + $result + "</size>"
+    !endif
+    !return $result
+!endfunction
