@@ -5,6 +5,14 @@ See http://plantuml.com/stdlib for more information.
 This Standard Library is included in official release of PlantUML.
 Following the C convention for "C standard library" (see https://en.wikipedia.org/wiki/C_standard_library )
 
+## AWS Icons
+
+PlantUML images, sprites, macros, and other includes for Amazon Web Services (AWS) services and resources. Used to create PlantUML diagrams with AWS components. All elements are generated from the official [AWS Architecture Icons](https://aws.amazon.com/architecture/icons/) and when combined with [PlantUML](http://plantuml.com/) and the [C4 model](https://c4model.com/), are a great way to communicate your design, deployment, and topology as code.
+
+Besides usage as custom sprites on PlantUML components, different types of diagrams can quickly and easily be created with the icons.
+
+More info on [awslabs github account](https://github.com/awslabs/aws-icons-for-plantuml).
+
 ## AWS library
 
 The AWS library consists of Amazon AWS icons, it provides icons of two different sizes.
