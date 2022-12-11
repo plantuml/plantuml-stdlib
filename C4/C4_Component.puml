@@ -22,17 +22,17 @@ UpdateElementStyle("component", $COMPONENT_BG_COLOR, $COMPONENT_FONT_COLOR, $COM
 UpdateElementStyle("external_component", $EXTERNAL_COMPONENT_BG_COLOR, $COMPONENT_FONT_COLOR, $EXTERNAL_COMPONENT_BORDER_COLOR)
 
 ' shortcuts with default colors
-!unquoted procedure AddComponentTag($tagStereo, $bgColor=$COMPONENT_BG_COLOR, $fontColor=$COMPONENT_FONT_COLOR, $borderColor=$COMPONENT_BORDER_COLOR, $shadowing="", $shape="", $sprite="", $techn="", $legendText="", $legendSprite="")
-  AddElementTag($tagStereo, $bgColor, $fontColor, $borderColor, $shadowing, $shape, $sprite, $techn, $legendText, $legendSprite)
+!unquoted procedure AddComponentTag($tagStereo, $bgColor="", $fontColor="", $borderColor="", $shadowing="", $shape="", $sprite="", $techn="", $legendText="", $legendSprite="")
+  $addElementTagInclReuse("component", $tagStereo, $bgColor, $fontColor, $borderColor, $shadowing, $shape, $sprite, $techn, $legendText, $legendSprite)
 !endprocedure
-!unquoted procedure AddExternalComponentTag($tagStereo, $bgColor=$EXTERNAL_COMPONENT_BG_COLOR, $fontColor=$COMPONENT_FONT_COLOR, $borderColor=$EXTERNAL_COMPONENT_BORDER_COLOR, $shadowing="", $shape="", $sprite="", $techn="", $legendText="", $legendSprite="")
-  AddElementTag($tagStereo, $bgColor, $fontColor, $borderColor, $shadowing, $shape, $sprite, $techn, $legendText, $legendSprite)
+!unquoted procedure AddExternalComponentTag($tagStereo, $bgColor="", $fontColor="", $borderColor="", $shadowing="", $shape="", $sprite="", $techn="", $legendText="", $legendSprite="")
+  $addElementTagInclReuse("external_component", $tagStereo, $bgColor, $fontColor, $borderColor, $shadowing, $shape, $sprite, $techn, $legendText, $legendSprite)
 !endprocedure
 
 ' Layout
 ' ##################################
 
-SetDefaultLegendEntries("person\nsystem\ncontainer\ncomponent\nexternal_person\nexternal_system\nexternal_container\nexternal_component")
+SetDefaultLegendEntries("person\nsystem\ncontainer\ncomponent\nexternal_person\nexternal_system\nexternal_container\nexternal_component\nenterprise_boundary\nsystem_boundary\ncontainer_boundary\nboundary")
 
 !procedure LAYOUT_WITH_LEGEND()
 hide stereotype
@@ -53,18 +53,18 @@ endlegend
 ' ##################################
 
 !function $getComponent($label, $techn, $descr, $sprite)
-!if ($descr == "") && ($sprite == "")
-!return '=='+$label+'\n//<size:'+$TECHN_FONT_SIZE+'>['+$techn+']</size>//'
-!endif
-!if ($descr == "") && ($sprite != "")
-!return $getSprite($sprite)+'\n=='+$label+'\n//<size:'+$TECHN_FONT_SIZE+'>['+$techn+']</size>//'
-!endif
-!if ($descr != "") && ($sprite == "")
-!return '=='+$label+'\n//<size:'+$TECHN_FONT_SIZE+'>['+$techn+']</size>//\n\n '+$descr
-!endif
-!if ($descr != "") && ($sprite != "")
-!return $getSprite($sprite)+'\n=='+$label+'\n//<size:'+$TECHN_FONT_SIZE+'>['+$techn+']</size>//\n\n '+$descr
-!endif
+  !$component = ""
+  !if ($sprite != "")
+    !$component = $component + $getSprite($sprite) + '\n'
+  !endif
+  !$component = $component + '== ' + $breakLabel($label)
+  !if ($techn != "")
+    !$component = $component + '\n//<size:' + $TECHN_FONT_SIZE + '>[' + $breakTechn($techn, '-1') + ']</size>//'
+  !endif
+  !if ($descr != "")
+    !$component = $component + '\n\n' + $descr
+  !endif
+  !return $component
 !endfunction
 
 !unquoted procedure Component($alias, $label, $techn="", $descr="", $sprite="", $tags="", $link="")
