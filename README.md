@@ -53,11 +53,10 @@ With the `azure/AzureCommon.puml` imported, you can use the `NAME_OF_SPRITE(para
 Example of usage:
 ```
 @startuml
-
-!include <azure/AzureCommon.puml>
-!include <azure/Analytics/AzureEventHub.puml>
-!include <azure/Analytics/AzureStreamAnalytics.puml>
-!include <azure/Databases/AzureCosmosDb.puml>
+!include <azure/AzureCommon>
+!include <azure/Analytics/AzureEventHub>
+!include <azure/Analytics/AzureStreamAnalyticsJob>
+!include <azure/Databases/AzureCosmosDb>
 
 left to right direction
 
@@ -65,7 +64,7 @@ agent "Device Simulator" as devices #fff
 
 AzureEventHub(fareDataEventHub, "Fare Data", "PK: Medallion HackLicense VendorId; 3 TUs")
 AzureEventHub(tripDataEventHub, "Trip Data", "PK: Medallion HackLicense VendorId; 3 TUs")
-AzureStreamAnalytics(streamAnalytics, "Stream Processing", "6 SUs")
+AzureStreamAnalyticsJob(streamAnalytics, "Stream Processing", "6 SUs")
 AzureCosmosDb(outputCosmosDb, "Output Database", "1,000 RUs")
 
 devices --> fareDataEventHub
