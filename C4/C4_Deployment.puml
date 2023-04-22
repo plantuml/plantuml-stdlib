@@ -3,12 +3,19 @@
 ' Colors
 ' ##################################
 
-!global $NODE_FONT_COLOR = "#000000"
-!global $NODE_BG_COLOR = "#FFFFFF"
-!global $NODE_BORDER_COLOR = "#A2A2A2"
+!$NODE_FONT_COLOR ?= "#000000"
+!$NODE_BG_COLOR ?= "#FFFFFF"
+!$NODE_BORDER_COLOR ?= "#A2A2A2"
 
 ' Styling
 ' ##################################
+
+' PlantUML supports no automatic line breaks of "PlantUML containers" (C4 Deployment_Node is a "PlantUML container")
+' therefore (Deployment_)Node() implements an automatic line break based on spaces (like in all other objects).
+' If a $type contains \n then these are used (and no automatic space based line breaks are done)
+' $NODE_TYPE_MAX_CHAR_WIDTH defines the automatic line break position
+!$NODE_TYPE_MAX_CHAR_WIDTH ?= 35
+!$NODE_DESCR_MAX_CHAR_WIDTH ?= 32
 
 UpdateElementStyle("node", $bgColor=$NODE_BG_COLOR, $fontColor=$NODE_FONT_COLOR, $borderColor=$NODE_BORDER_COLOR)
 skinparam rectangle<<node>> {
@@ -16,9 +23,10 @@ skinparam rectangle<<node>> {
 }
 
 ' shortcuts with default colors
-' node specific: $type reuses $techn definition of $tags
-!unquoted procedure AddNodeTag($tagStereo, $bgColor="", $fontColor="", $borderColor="", $shadowing="", $shape="", $sprite="", $techn="", $legendText="", $legendSprite="")
-  $addElementTagInclReuse("node", $tagStereo, $bgColor, $fontColor, $borderColor, $shadowing, $shape, $sprite, $techn, $legendText, $legendSprite)
+' node specific: $techn is only used in old scripts, new scripts uses $type ($techn has to remain, it could be called via named argument)
+!unquoted procedure AddNodeTag($tagStereo, $bgColor="", $fontColor="", $borderColor="", $shadowing="", $shape="", $sprite="", $type="", $legendText="", $legendSprite="", $techn="")
+  !$type=$type+$techn
+  $addElementTagInclReuse("node", $tagStereo, $bgColor, $fontColor, $borderColor, $shadowing, $shape, $sprite, $type, $legendText, $legendSprite)
 !endprocedure
 
 ' Layout
@@ -29,13 +37,6 @@ SetDefaultLegendEntries("person\nsystem\ncontainer\nexternal_person\nexternal_sy
 
 ' Line breaks
 ' ##################################
-
-' PlantUML supports no automatic line breaks of "PlantUML containers" (C4 Deployment_Node is a "PlantUML container")
-' therefore (Deployment_)Node() implements an automatic line break based on spaces (like in all other objects).
-' If a $type contains \n then these are used (and no automatic space based line breaks are done)
-' $NODE_TYPE_MAX_CHAR_WIDTH defines the automatic line break position
-!global $NODE_TYPE_MAX_CHAR_WIDTH = 35
-!global $NODE_DESCR_MAX_CHAR_WIDTH = 32
 
 ' $breakTechn() in C4 supports //...//; $breakNode() in C4_Deployment supports no //....//
 !unquoted function $breakNode($text, $widthStr)
