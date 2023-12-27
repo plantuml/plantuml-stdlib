@@ -168,6 +168,89 @@ Example of usage:
 This example renders the following image:
 ![Example](http://www.plantuml.com/plantuml/png/ZOvFIyGm4CNl-HIrfowupMLFdbQgjnKN_vnbcWxRm6GICXDalxtPWaKHnTDxCypxpTkBGjOIg1bsR_U40Ld5N7bsL2PiPjKaDzPcUEzFNkSo5i7i8YkozYu6cmZuaj-AJkH7E-osnylgzU5W0uXYjfKyr0HunjodUclC4RD4xj8Yj-H1hfls02DIMyrZKXyPgBb3STalKxinAwHpd-v7z0NTp97YwVm7wFaiYg6JHVxxtJmXVI-yjlWTyQNEnkoHfnBe0m00)
 
+## Edgy Enterprise Design
+Edgy is an Open Source tool for collaborative Enterprise Design. The library is an adaption of the EDGY Tools for PlantUML usage.
+
+The Sprites are based on the [Enterprise Design with EDGY](https://www.enterprise.design/). They'll be rendered as SVG sprites, so you need a quite actual PlantUML distribution.
+
+Use it by including the file that contains the sprite, eg: `!include <edgy/edgy>`.
+The library is not complete yet, but it's a good start.
+
+In general, the procedures for elements and facets do have the form of
+```
+$elementorfacet("label", alias, lighterColor)
+```
+* ```"label"``` is the name of the element or facet. It is mandatory.
+* ```alias``` is used for linking elements and facets. It is optional.
+* ```lighterColor``` is used as a boolean value (!) to use a lighter color for the element or facet. It is optional.
+  * Facets are drawn with lighter colors than Elements as default.
+  * ```0``` is false. Any other value is true.  Or use ```%true()``` and ```%false()``` (see [Boolean expression in Preprocessing](https://plantuml.com/de/preprocessing#55eb000153a81c72)).
+
+### Facets
+Facets do have the edgy facet name followed with ```Facet``` as tail, to distinguish them from elements.
+The following facets are implemented: ```$baseFacet```,```$identityFacet```,```$brandFacet```,```$experienceFacet```,```$productFacet```,```$architectureFacet```,```$organisationFacet```
+
+### Elements
+Elements do have the edgy element name.
+The following elements are implemented:
+Base: ```$people```,```$outcome```,```$activity```,```$object```
+Identity: ```$purpose```,```$story```,```$content```
+Brand: ```$brand```
+Experience: ```$task```,```$channel```,```$journey```
+Product: ```$product```
+Architecture: ```$capability```,```$asset```,```$process```
+Organisation: ```$organisation```
+
+Elements can be nested into facets:
+```
+$architectureFacet("Architecture") {
+  $capability("Capability")
+}
+```
+
+However, it is also possible to nest elements if needed:
+```
+$capability("Customer Interaction") {
+	$capability("Passenger Services", pass, 1) {
+		$capability("Passenger Information", info)
+	}
+}
+```
+
+### Links
+Links do have the form of 
+```
+$link(fromAlias, toAlias, "label")
+```
+* ```fromAlias``` is the starting element or facet. It is mandatory.
+* ```toAlias``` is the target element or facet. It is mandatory.
+* ```"label""``` is a label written on the connection. This is optional.
+
+There are only three sort of links:
+* ```$link``` is a unidirectional link between elements or facets.
+* ```$flow``` is a directed flow between elements or facets.
+* ```$tree``` is a hierarchical representation of elements as a tree relationship.
+
+Generally, all links do have the possibility to give the rendere a hint in which direction the link should be drawn. This is done by adding ```Up```, ```Down```, ```Left```, ```Right``` as a tail to the link name (e.g. ```$linkUp```, ```$linkDown```, ```$linkLeft```, ```$linkRight```).
+
+### Concrete example of usage:
+```
+@startuml
+!include <edgy/edgy>
+
+$identityFacet("This is the Identity facet", identity) {
+	$content(" This is the Content element", content)
+	$purpose("This is the Purpose element", purpose)
+	$story("This is the Story element", story)
+}
+
+$link(content, purpose)
+$link(content, story)
+$link(purpose, story)
+
+@enduml
+```
+
 ## Elastic library
 
 The Elastic library consists of [Elastic](https://www.elastic.co) icons.
