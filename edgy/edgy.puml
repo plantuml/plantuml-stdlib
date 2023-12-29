@@ -168,14 +168,6 @@ sprite $bProductLogo <svg viewBox="0 0 32 32">
 	rectangle "$label" $sprite <<$stereotype>> $id $filling
 !endprocedure
 
-!procedure $facetBuilder($name,$fillcolor,$alias,$label)
-	!if ($alias=="")
-		rectangle "==$label" <<$b##$name##Logo>> <<%lower($name)>> $fillcolor
-	!else
-		rectangle "==$label" <<$b##$name##Logo>> <<%lower($name)>> as $alias $fillcolor
-	!endif
-!endprocedure
-
 ' base elements
 !procedure $baseFacet($label, $alias="", $islight=1)
 	$elementBuilder("Base", $label, $alias,  $islight, $BASE, $BASE_LIGHT, 1, 1)
