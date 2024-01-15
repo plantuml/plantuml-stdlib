@@ -174,6 +174,11 @@ Edgy is an Open Source tool for collaborative Enterprise Design. The library is 
 The Sprites are based on the [Enterprise Design with EDGY](https://www.enterprise.design/). They'll be rendered as SVG sprites, so you need a quite actual PlantUML distribution.
 
 Use it by including the file that contains the sprite, eg: `!include <edgy/edgy>`.
+There are two visual sets:
+* `!include <edgy/edgy>` is the visualization according to the open source set of edgy.
+* `!include <edgy/edgy2>` is the one which describes with stereotypes what kind of element it is. If you have color blinded people, this one could be the better one.
+All procedures are compatible between both sets. So you can begin with one and switch to the other just to have a look which of the one fits visually the best.
+
 The library is not complete yet, but it's a good start.
 
 In general, the procedures for elements and facets do have the form of
