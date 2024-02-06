@@ -216,14 +216,14 @@ $architectureFacet("Architecture") {
 However, it is also possible to nest elements if needed:
 ```
 $capability("Customer Interaction") {
-	$capability("Passenger Services", pass, 1) {
-		$capability("Passenger Information", info)
-	}
+    $capability("Passenger Services", pass, 1) {
+        $capability("Passenger Information", info)
+    }
 }
 ```
 
 ### Links
-Links do have the form of 
+Links do have the form of
 ```
 $link(fromAlias, toAlias, "label")
 ```
@@ -244,9 +244,9 @@ Generally, all links do have the possibility to give the rendere a hint in which
 !include <edgy/edgy>
 
 $identityFacet("This is the Identity facet", identity) {
-	$content(" This is the Content element", content)
-	$purpose("This is the Purpose element", purpose)
-	$story("This is the Story element", story)
+    $content(" This is the Content element", content)
+    $purpose("This is the Purpose element", purpose)
+    $story("This is the Story element", story)
 }
 
 $link(content, purpose)
@@ -255,6 +255,36 @@ $link(purpose, story)
 
 @enduml
 ```
+
+## EIP-PlantUML
+
+EIP-PlantUML provides [Enterprise Integrations Patterns](https://www.enterpriseintegrationpatterns.com/) elements to [PlantUML](http://plantuml.com/) to provide easy support of designing EIP architectures for both, up-front design as well as development-time automated documentation generation.
+Example of usage:
+```
+@startuml
+    !include <eip/EIP-PlantUML>
+    !theme mars
+    skinparam linetype ortho
+    left to right direction
+    folder "RabbitMQ" #line.dashed {
+        Message(msg0, Message)
+        Message(msg1, Message)
+        Message(msg2, Message)
+        MsgChannel(ch0, inQueue)
+        MsgChannel(ch1, outQueue)
+        MsgChannel(ch2, outQueue)
+        MessageRouter(rt0, Router)
+    }
+    Send(msg0, ch0)
+    Send(ch0, rt0)
+    Send(rt0, msg1)
+    Send(rt0, msg2)
+    Send(msg1, ch1)
+    Send(msg2, ch2)
+@enduml
+```
+This example renders the following image:
+![Example](https://cdn-0.plantuml.com/plantuml/png/VP3FIiD04CRlFiMsNbgmYURegI0U10DjnGVOPAVPnVqJPcOH4T_TtOrY2x5p29dVzsM-cMo99N9qzcfXV6-Z0g6PHxglQvJlrM1OnouIO1yyW-Ug3wuUhVJvcmsnigQh7vzscrrch-rpxQJnjJB4PxWQSuP8jM0D3eIJIAMdD-D7YT89QppmnmWY8EjGH0j75Xm4ca6pK0QXPnDyqOx1Aa2nFCYkCzpkb-8wJwYK90rAV6PJgHQ8v00hHyFjpM-tdfFlBilDd4p3WvRUWrtrEeqtVXyX_cT80I7o9KSpwvXI3qa1N26ddEbzidoLvmjuzNDZscJznyfUoAUeZCW7px3cX4t_9ErzpfhCac-R-kZiDm00)
 
 ## Elastic library
 
@@ -277,8 +307,8 @@ Example of usage:
 
     ELASTICSEARCH(ElasticSearch, "Search and Analyze",database)
     LOGSTASH(Logstash, "Parse and Transform",node)
-    KIBANA(Kibana, "Visualize",agent) 
-    
+    KIBANA(Kibana, "Visualize",agent)
+
     Logstash -right-> ElasticSearch: Transformed Data
     ElasticSearch -right-> Kibana: Data to View
 
