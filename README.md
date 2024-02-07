@@ -26,13 +26,13 @@ With the `common.puml` imported, you can use the `NAME_OF_SPRITE(parameters...)`
 Example of usage:
 ```
 @startuml
-!include <aws/common>
-!include <aws/Storage/AmazonS3/AmazonS3>
-!include <aws/Storage/AmazonS3/bucket/bucket>
+    !include <aws/common>
+    !include <aws/Storage/AmazonS3/AmazonS3>
+    !include <aws/Storage/AmazonS3/bucket/bucket>
 
-AMAZONS3(s3_internal)
-AMAZONS3(s3_partner,"Vendor's S3")
-s3_internal <- s3_partner
+    AMAZONS3(s3_internal)
+    AMAZONS3(s3_partner,"Vendor's S3")
+    s3_internal <- s3_partner
 @enduml
 ```
 
@@ -53,26 +53,25 @@ With the `azure/AzureCommon.puml` imported, you can use the `NAME_OF_SPRITE(para
 Example of usage:
 ```
 @startuml
-!include <azure/AzureCommon>
-!include <azure/Analytics/AzureEventHub>
-!include <azure/Analytics/AzureStreamAnalyticsJob>
-!include <azure/Databases/AzureCosmosDb>
+    !include <azure/AzureCommon>
+    !include <azure/Analytics/AzureEventHub>
+    !include <azure/Analytics/AzureStreamAnalyticsJob>
+    !include <azure/Databases/AzureCosmosDb>
 
-left to right direction
+    left to right direction
 
-agent "Device Simulator" as devices #fff
+    agent "Device Simulator" as devices #fff
 
-AzureEventHub(fareDataEventHub, "Fare Data", "PK: Medallion HackLicense VendorId; 3 TUs")
-AzureEventHub(tripDataEventHub, "Trip Data", "PK: Medallion HackLicense VendorId; 3 TUs")
-AzureStreamAnalyticsJob(streamAnalytics, "Stream Processing", "6 SUs")
-AzureCosmosDb(outputCosmosDb, "Output Database", "1,000 RUs")
+    AzureEventHub(fareDataEventHub, "Fare Data", "PK: Medallion HackLicense VendorId; 3 TUs")
+    AzureEventHub(tripDataEventHub, "Trip Data", "PK: Medallion HackLicense VendorId; 3 TUs")
+    AzureStreamAnalyticsJob(streamAnalytics, "Stream Processing", "6 SUs")
+    AzureCosmosDb(outputCosmosDb, "Output Database", "1,000 RUs")
 
-devices --> fareDataEventHub
-devices --> tripDataEventHub
-fareDataEventHub --> streamAnalytics
-tripDataEventHub --> streamAnalytics
-streamAnalytics --> outputCosmosDb
-
+    devices --> fareDataEventHub
+    devices --> tripDataEventHub
+    fareDataEventHub --> streamAnalytics
+    tripDataEventHub --> streamAnalytics
+    streamAnalytics --> outputCosmosDb
 @enduml
 ```
 
@@ -101,28 +100,27 @@ Example of usage:
     !include <classy/core>
 
     $class(HelloWorld)
-      $classVar(msg, string, "Hello World!")
+        $classVar(msg, string, "Hello World!")
 
-      $classMethod(getMessage)
-        !function HelloWorld__getMessage($this)
-          !return $getInstanceVar($this, 'msg')
-        !endfunction
-      $endclassMethod(getMessage)
+        $classMethod(getMessage)
+            !function HelloWorld__getMessage($this)
+                !return $getInstanceVar($this, 'msg')
+            !endfunction
+        $endclassMethod(getMessage)
 
-      $classMethod(setMessage)
-        !function HelloWorld__setMessage($this, $args)
-          $setInstanceVar($this, 'msg', $call($args, 'each'))
-          !return $this
-        !endfunction
-      $endclassMethod(setMessage)
-    $endclass(HelloWorld)
+        $classMethod(setMessage)
+            !function HelloWorld__setMessage($this, $args)
+                $setInstanceVar($this, 'msg', $call($args, 'each'))
+                !return $this
+            !endfunction
+        $endclassMethod(setMessage)
+        $endclass(HelloWorld)
 
-    !$hello = $new(HelloWorld)
-    Alice -> Bob : $call($hello, 'getMessage')
+        !$hello = $new(HelloWorld)
+        Alice -> Bob : $call($hello, 'getMessage')
 
-    $call($hello, 'setMessage', array($new(array), '2nd message!'), $void=%true())
-
-    Alice -> Bob : $call($hello, 'getMessage')
+        $call($hello, 'setMessage', array($new(array), '2nd message!'), $void=%true())
+        Alice -> Bob : $call($hello, 'getMessage')
 
 @enduml
 ```
@@ -241,18 +239,17 @@ Generally, all links do have the possibility to give the rendere a hint in which
 ### Concrete example of usage:
 ```
 @startuml
-!include <edgy/edgy>
+    !include <edgy/edgy>
 
-$identityFacet("This is the Identity facet", identity) {
-    $content(" This is the Content element", content)
-    $purpose("This is the Purpose element", purpose)
-    $story("This is the Story element", story)
-}
+    $identityFacet("This is the Identity facet", identity) {
+        $content(" This is the Content element", content)
+        $purpose("This is the Purpose element", purpose)
+        $story("This is the Story element", story)
+    }
 
-$link(content, purpose)
-$link(content, story)
-$link(purpose, story)
-
+    $link(content, purpose)
+    $link(content, story)
+    $link(purpose, story)
 @enduml
 ```
 
@@ -318,18 +315,40 @@ Example of usage:
 This example renders the following image:
 ![Example](http://www.plantuml.com/plantuml/png/TOxFQiCm38VlUGejfnHITYyZrEl2MXgsCOVUrLXBpFm7R8UnFVrI9oNa41yi6N-VVjhxW2xqMYKmd0Tf6jKBWYTIw8Di7XkhjJN5okzKFQ5hkkLhJL6szG5zTszMmMzvHODJAP98bHNZzUd0I_PvE6RbIFAObqCwDe1603EeVlyepGK6lAAdJVIhzrTUCtxCgYbyi3xGUOfIxT3uB-jqcXih9kLyUcPlB3l7DGRy8dsFIjvcOqicR21YyRfFXQsJRHUs1InMtCq99E050qPhmSpgcBYB70GB5qa_IR8d8tgj_W40)
 
+## GCP
+
+```
+@startuml
+    !include <gcp/GCPCommon>
+    !include <gcp/Compute/Cloud_Functions>
+    !include <gcp/Networking/Cloud_Firewall_Rules>
+    !include <gcp/Compute/Compute_Engine>
+    !include <gcp/Storage/Cloud_Storage>
+
+    Cloud_Functions(Cloud_FunctionsStart, "Start Server", "Cloud Functions")
+    Cloud_Functions(Cloud_FunctionsStop, "Stop Server", "Cloud Functions")
+    Cloud_Functions(Cloud_FunctionAdd, "Add a Friend", "Cloud Functions")
+    Compute_Engine(Compute_Engine, "MineCraft Server", "Compute Engine")
+    Cloud_Storage(Cloud_Storage, "MineCraft Backups", "Cloud Storage")
+    Cloud_Firewall_Rules(Cloud_Firewall_Rules_Starter,"Minecraft Backups", "Cloud Firewall Rules")
+    Cloud_Firewall_Rules(Cloud_Firewall_Rules_Friend,"Minecraft Backups", "Cloud Firewall Rules")
+@enduml
+```
+This example renders the following image:
+![Example](http://cdn-0.plantuml.com/plantuml/png/lP9FJm8n4CNlV8hAQKs0tZsX6_4YXaWyR-fsN1hwPpETojTttBgQ4X9335wOFFBUxz4Nbf4KKd9sScLyQvC6iIFguusKg0wBpj0klQO8s0PFu6dH1YThL747sXclvSOgJo_hnxbXHvm_r1lfL2H0gKqaoReEpWM_w2zNmWrz8f2r3Katg-HRCkoxPEKJq27WtlXkR3K81sLjyvmin7zvRRxDlU-CXqisRYcWwiPzlrGkd4oEHg-Ez9OKqanCXoksWE-0KzQ3JNpRfjU_WqBFkS_p1yojrfpYJw742WruVPfIZbkLaXDhFhpWM_6aR1BPn91YhwfG1U9EjVlKnvzVaaqZulZFLPtwiXa61fmDtFOqTuo88N8MFezr7dt9YUJi1m00)
+
 ## K8S
 
 These are the PlantUML sprites, macros and stereotypes for creating PlantUML diagrams with the Kubernetes components. The official Kubernetes Icons Set (where this work is based) can be found here
 This repo is heavily influenced by the awesome work from Ricardo Niepel on Azure-PlantUML
 Example of usage:
 ```
-@startuml kubernetes
-    !include k8s/kubernetes_Common>
-    !include k8s/kubernetes_Context>
-    !include k8s/kubernetes_Simplified>
-    !include k8s/OSS/KubernetesSvc>
-    !include k8s/OSS/KubernetesPod>
+@startuml
+    !include <k8s/kubernetes_Common>
+    !include <k8s/kubernetes_Context>
+    !include <k8s/kubernetes_Simplified>
+    !include <k8s/OSS/KubernetesSvc>
+    !include <k8s/OSS/KubernetesPod>
     footer Kubernetes Plant-UML
     scale max 1024 width
     skinparam {
@@ -369,26 +388,24 @@ With the `common.puml` imported, you can use the `NAME_OF_SPRITE(parameters...)`
 Example of usage:
 ```
 @startuml
-!include <tupadr3/common>
-!include <tupadr3/font-awesome/server>
-!include <tupadr3/font-awesome/database>
+    !include <tupadr3/common>
+    !include <tupadr3/font-awesome/server>
+    !include <tupadr3/font-awesome/database>
 
-title Styling example
+    title Styling example
 
-FA_SERVER(web1,web1) #Green
-FA_SERVER(web2,web2) #Yellow
-FA_SERVER(web3,web3) #Blue
-FA_SERVER(web4,web4) #YellowGreen
+    FA_SERVER(web1,web1) #Green
+    FA_SERVER(web2,web2) #Yellow
+    FA_SERVER(web3,web3) #Blue
+    FA_SERVER(web4,web4) #YellowGreen
+    FA_DATABASE(db1,LIVE,database,white) #RoyalBlue
+    FA_DATABASE(db2,SPARE,database) #Red
 
-FA_DATABASE(db1,LIVE,database,white) #RoyalBlue
-FA_DATABASE(db2,SPARE,database) #Red
-
-db1 <--> db2
-
-web1 <--> db1
-web2 <--> db1
-web3 <--> db1
-web4 <--> db1
+    db1 <--> db2
+    web1 <--> db1
+    web2 <--> db1
+    web3 <--> db1
+    web4 <--> db1
 @enduml
 ```
 
@@ -409,11 +426,11 @@ With the `common.puml` imported, you can use the `MA_NAME_OF_SPRITE(parameters..
 Example of usage:
 ```
 @startuml
-!include <material/common>
-' To import the sprite file you DON'T need to place a prefix!
-!include <material/folder_move>
+    !include <material/common>
+    ' To import the sprite file you DON'T need to place a prefix!
+    !include <material/folder_move>
 
-MA_FOLDER_MOVE(Red, 1, dir, rectangle, "A label")
+    MA_FOLDER_MOVE(Red, 1, dir, rectangle, "A label")
 @enduml
 ```
 
@@ -431,15 +448,14 @@ Example of usage:
 
 ```
 @startuml
-!include <DomainStory/domainStory>
+    !include <DomainStory/domainStory>
 
-Boundary(System) {
-    Person(Alice)
-    Conversation(weather)
-    Person(Bob)
-}
-
-activity(1, Alice, talks about the, weather, with, Bob)
+    Boundary(System) {
+        Person(Alice)
+        Conversation(weather)
+        Person(Bob)
+    }
+    activity(1, Alice, talks about the, weather, with, Bob)
 @enduml
 ```
 
@@ -456,16 +472,16 @@ In those cases, add `{` and `}` after the macro to create the empty rectangle.
 Example of usage:
 ```
 @startuml
-!include <material/common>
-' To import the sprite file you DON'T need to place a prefix!
-!include <material/folder_move>
+    !include <material/common>
+    ' To import the sprite file you DON'T need to place a prefix!
+    !include <material/folder_move>
 
-MA_FOLDER_MOVE(Red, 1, dir, rectangle, "A label") {
-}
+    MA_FOLDER_MOVE(Red, 1, dir, rectangle, "A label") {
+    }
 
-class foo {
-    bar
-}
+    class foo {
+        bar
+    }
 @enduml
 ```
 
