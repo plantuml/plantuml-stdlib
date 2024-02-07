@@ -318,6 +318,44 @@ Example of usage:
 This example renders the following image:
 ![Example](http://www.plantuml.com/plantuml/png/TOxFQiCm38VlUGejfnHITYyZrEl2MXgsCOVUrLXBpFm7R8UnFVrI9oNa41yi6N-VVjhxW2xqMYKmd0Tf6jKBWYTIw8Di7XkhjJN5okzKFQ5hkkLhJL6szG5zTszMmMzvHODJAP98bHNZzUd0I_PvE6RbIFAObqCwDe1603EeVlyepGK6lAAdJVIhzrTUCtxCgYbyi3xGUOfIxT3uB-jqcXih9kLyUcPlB3l7DGRy8dsFIjvcOqicR21YyRfFXQsJRHUs1InMtCq99E050qPhmSpgcBYB70GB5qa_IR8d8tgj_W40)
 
+## K8S
+
+These are the PlantUML sprites, macros and stereotypes for creating PlantUML diagrams with the Kubernetes components. The official Kubernetes Icons Set (where this work is based) can be found here
+This repo is heavily influenced by the awesome work from Ricardo Niepel on Azure-PlantUML
+Example of usage:
+```
+@startuml kubernetes
+    !include k8s/kubernetes_Common>
+    !include k8s/kubernetes_Context>
+    !include k8s/kubernetes_Simplified>
+    !include k8s/OSS/KubernetesSvc>
+    !include k8s/OSS/KubernetesPod>
+    footer Kubernetes Plant-UML
+    scale max 1024 width
+    skinparam {
+        nodesep 10
+        ranksep 10
+    }
+    actor "User" as userAlias
+    left to right direction
+    Cluster_Boundary(cluster, "Kubernetes Cluster") {
+        Namespace_Boundary(ns, "Web") {
+            KubernetesSvc(svc, "service", "")
+            KubernetesPod(pod1, "web-pod1", "")
+            KubernetesPod(pod2, "web-pod2", "")
+        }
+    }
+    Rel(userAlias,svc,"get HTTP/1.1 index.html", "1")
+    Rel(svc,pod1,"load Balances to Pods", "2")
+    Rel(svc,pod2,"load Balances to Pods", "2")
+    Rel_U(pod1, svc, "serves content", "3")
+    Rel(svc, userAlias, "return content to", "4")
+@enduml
+```
+This example renders the following image:
+![Example](http://cdn-0.plantuml.com/plantuml/png/ZPDFYzim4CNl-HIpFcLX4zVk7afFszrBeNyQcWqzXeaqYKNqnqYZ9ANiTw_aDR6RKXeTZ9ZtUyFe3Nu8Z9wZqPCRILjb2VRl0ZJCRNXVbXwFyvtY9cvY82-SPR8y5ywKKc10LkK-RiXROWgpXKRBgo-VIuE1oPTI1Pv0EZVA2XqbHQzpzv5d_UICSNRUvW7-Yrgc4r_5BfLfjTegal_6losNvQUpPNaGrw8BD-gwTOx9mw12Ze5dAOTE3m8rWS4JL6_gUpWgoSshi5UsHOy6VasWFzP92jGcz5poQFUZqaltHS7EGx4Av0l007av7xJ2qAcQjWpimAjTmo2L9y7AsKvxqZ7lPlteefNeVqx5Q-4EYj4JUggu7Sts5Gs55WKDNXkIxGTj1gu_VyGw3GUHk43-e0GLwLhSNj93ijFMoIenHzhCylKQlXxu-e9_cGpVxwIdvwJkybJ5ZXW-FZylocfUWRAIJlE6ZSvDgkBsxCfiDrUX7KfuH8rMKCWXfn52nkk_yVewVBtgtppabDZ-NylisulMmxgJw8cZjpsUrvuTzydnG5P6ety3)
+
+
 ## Tupadr3 library
 
 This library contains several libraries of icons (including Devicons and Font Awesome )
