@@ -1,0 +1,27 @@
+@startuml 
+
+!include Common.puml
+
+!include Networking/all.puml
+!include GCPSimplified.puml
+
+Cloud_Armor(Cloud_Armor, "Label", "Technology")
+Cloud_CDN(Cloud_CDN, "Label", "Technology")
+Cloud_DNS(Cloud_DNS, "Label", "Technology")
+Cloud_External_IP_Addresses(Cloud_External_IP_Addresses, "Label", "Technology")
+Cloud_Firewall_Rules(Cloud_Firewall_Rules, "Label", "Technology")
+Cloud_Load_Balancing(Cloud_Load_Balancing, "Label", "Technology")
+Cloud_NAT(Cloud_NAT, "Label", "Technology")
+Cloud_Network(Cloud_Network, "Label", "Technology")
+Cloud_Router(Cloud_Router, "Label", "Technology")
+Cloud_Routes(Cloud_Routes, "Label", "Technology")
+Cloud_VPN(Cloud_VPN, "Label", "Technology")
+Dedicated_Interconnect(Dedicated_Interconnect, "Label", "Technology")
+Networking(Networking, "Label", "Technology")
+Partner_Interconnect(Partner_Interconnect, "Label", "Technology")
+Premium_Network_Tier(Premium_Network_Tier, "Label", "Technology")
+Standard_Network_Tier(Standard_Network_Tier, "Label", "Technology")
+Traffic_Director(Traffic_Director, "Label", "Technology")
+Virtual_Private_Cloud(Virtual_Private_Cloud, "Label", "Technology")
+
+@enduml
