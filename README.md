@@ -344,11 +344,10 @@ This repo is heavily influenced by the awesome work from Ricardo Niepel on Azure
 Example of usage:
 ```
 @startuml
-    !include <k8s/kubernetes_Common>
-    !include <k8s/kubernetes_Context>
-    !include <k8s/kubernetes_Simplified>
-    !include <k8s/OSS/KubernetesSvc>
-    !include <k8s/OSS/KubernetesPod>
+    !include <k8s/Common>
+    !include <k8s/Context>
+    !include <k8s/Simplified>
+    !include <k8s/OSS/all>
     footer Kubernetes Plant-UML
     scale max 1024 width
     skinparam {
