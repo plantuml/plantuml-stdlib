@@ -80,6 +80,36 @@ This example renders the following image:
 
 ![Example](http://www.plantuml.com/plantuml/proxy?idx=0&src=https%3A%2F%2Fraw.githubusercontent.com%2FRicardoNiepel%2FAzure-PlantUML%2Fmaster%2Fsamples%2FBasic%2520usage%2520-%2520Stream%2520processing%2520with%2520Azure%2520Stream%2520Analytics.puml "Example")
 
+## C4 library (C4-PlantUML)
+
+The C4 library enables a simple way of describing and communicate software architectures with an intuitive language.
+
+It is the PlantUML integrated version of [C4-PlantUML](https://github.com/plantuml-stdlib/C4-PlantUML) and has the big advantage that it can be used without additional external includes.
+(E.g. container diagrams can be drawn with `!include <C4/C4_Container>` and no `!include https://raw.githubusercontent.com/plantuml-stdlib/C4-PlantUML/master/C4_Container.puml` is required.)
+
+Example of usage:
+
+```plantuml
+@startuml
+!include <C4/C4_Container>
+
+Person(admin, "Administrator")
+System_Boundary(c1, "Sample System") {
+    Container(web_app, "Web Application", "C#, ASP.NET Core 2.1 MVC", "Allows users to compare multiple Twitter timelines")
+}
+System(twitter, "Twitter")
+
+Rel(admin, web_app, "Uses", "HTTPS")
+Rel(web_app, twitter, "Gets tweets from", "HTTPS")
+
+SHOW_LEGEND()
+@enduml
+```
+
+This example renders the following image:
+
+[![Example](https://www.plantuml.com/plantuml/png/JOzVIyCm5CNVyockzQM3CPdiKMIrbkr1Px7LFPQilK8WVq9oGndYT_UMpSsyN9BpE-UUh2F9GCbeSQDihzE0y52kxifLLpfBKbaCZqBK6AApkHoCidF8YccgI46I2zbCDCT8QBedb-mWmp7lbmmrqdYDSDAo6NmBu7D9pKSyTD9x9lTuWC9xhNf9ojcCdyhREHHDlTXLBLi2mlrY2Q-VvQGLMhinGefS2iX1xuoNZ9YaIKqhsr4HOG1I1ZNlYbpnvrmofvF8EMUCHV6E-kzprreVaPqyjsrRDqnDq4MzncoG8bzn6b_1cVyMqMpVzjrBjQbsp_bChD4EoUXV)](https://www.plantuml.com/plantuml/uml/JOzVIyCm5CNVyockzQM3CPdiKMIrbkr1Px7LFPQilK8WVq9oGndYT_UMpSsyN9BpE-UUh2F9GCbeSQDihzE0y52kxifLLpfBKbaCZqBK6AApkHoCidF8YccgI46I2zbCDCT8QBedb-mWmp7lbmmrqdYDSDAo6NmBu7D9pKSyTD9x9lTuWC9xhNf9ojcCdyhREHHDlTXLBLi2mlrY2Q-VvQGLMhinGefS2iX1xuoNZ9YaIKqhsr4HOG1I1ZNlYbpnvrmofvF8EMUCHV6E-kzprreVaPqyjsrRDqnDq4MzncoG8bzn6b_1cVyMqMpVzjrBjQbsp_bChD4EoUXV)
+
 ## Classy library
 
 The Classy library allows for using an Object Oriented approach to diagramming
