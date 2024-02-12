@@ -1,0 +1,7 @@
+@startuml
+  !include <azure/AzureCommon>
+  !include <azure/AzureC4Integration>
+  !foreach $item in %splitstr('Networking~DevOps~Security~Databases~Storage~Web~Management~InternetOfThings~Analytics~Compute~Identity~Integration', '~')
+    !include <azure/$item/all.puml>
+  !endfor
+@enduml
