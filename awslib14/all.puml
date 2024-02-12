@@ -1,0 +1,6 @@
+@startuml
+  !include <awslib/AWSCommon>
+  !foreach $item in %splitstr('General~SecurityIdentityCompliance~NetworkingContentDelivery~DeveloperTools~Database~Storage~ApplicationIntegration~Compute~Groups~MediaServices~MachineLearning', '~')
+    !include <awslib/$item/all.puml>
+  !endfor
+@enduml
