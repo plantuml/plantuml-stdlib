@@ -446,7 +446,7 @@ This example renders the following image:
 
 This library consists of a free Material style icons from Google and other artists.
 
-Use it by including the file that contains the sprite, eg: `!include <material/ma_folder_move>`.
+Use it by including the file that contains the sprite, eg: `!include <material/folder_move>`.
 When imported, you can use the sprite as normally you would, using `<$ma_sprite_name>`.
 Notice that this library requires an `ma_` preffix on sprites names, this is to avoid clash of names if multiple sprites have the same name on different libraries.
 
