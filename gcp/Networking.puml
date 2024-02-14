@@ -1,27 +1,27 @@
 @startuml 
 
-!include Common.puml
+!include <gcp/GCPCommon.puml>
 
-!include Networking/all.puml
-!include GCPSimplified.puml
+!include <gcp/Networking/all.puml>
+!include <gcp/GCPSimplified.puml>
 
-Cloud_Armor(Cloud_Armor, "Label", "Technology")
-Cloud_CDN(Cloud_CDN, "Label", "Technology")
-Cloud_DNS(Cloud_DNS, "Label", "Technology")
-Cloud_External_IP_Addresses(Cloud_External_IP_Addresses, "Label", "Technology")
-Cloud_Firewall_Rules(Cloud_Firewall_Rules, "Label", "Technology")
-Cloud_Load_Balancing(Cloud_Load_Balancing, "Label", "Technology")
-Cloud_NAT(Cloud_NAT, "Label", "Technology")
-Cloud_Network(Cloud_Network, "Label", "Technology")
-Cloud_Router(Cloud_Router, "Label", "Technology")
-Cloud_Routes(Cloud_Routes, "Label", "Technology")
-Cloud_VPN(Cloud_VPN, "Label", "Technology")
-Dedicated_Interconnect(Dedicated_Interconnect, "Label", "Technology")
-Networking(Networking, "Label", "Technology")
-Partner_Interconnect(Partner_Interconnect, "Label", "Technology")
-Premium_Network_Tier(Premium_Network_Tier, "Label", "Technology")
-Standard_Network_Tier(Standard_Network_Tier, "Label", "Technology")
-Traffic_Director(Traffic_Director, "Label", "Technology")
-Virtual_Private_Cloud(Virtual_Private_Cloud, "Label", "Technology")
+Cloud_Armor(Cloud_Armor, "Cloud_Armor", "Technology")
+Cloud_CDN(Cloud_CDN, "Cloud_CDN", "Technology")
+Cloud_DNS(Cloud_DNS, "Cloud_DNS", "Technology")
+Cloud_External_IP_Addresses(Cloud_External_IP_Addresses, "Cloud_External_IP_Addresses", "Technology")
+Cloud_Firewall_Rules(Cloud_Firewall_Rules, "Cloud_Firewall_Rules", "Technology")
+Cloud_Load_Balancing(Cloud_Load_Balancing, "Cloud_Load_Balancing", "Technology")
+Cloud_NAT(Cloud_NAT, "Cloud_NAT", "Technology")
+Cloud_Network(Cloud_Network, "Cloud_Network", "Technology")
+Cloud_Router(Cloud_Router, "Cloud_Router", "Technology")
+Cloud_Routes(Cloud_Routes, "Cloud_Routes", "Technology")
+Cloud_VPN(Cloud_VPN, "Cloud_VPN", "Technology")
+Dedicated_Interconnect(Dedicated_Interconnect, "Dedicated_Interconnect", "Technology")
+'Networking(Networking, "Label", "Technology")
+Partner_Interconnect(Partner_Interconnect, "Partner_Interconnect", "Technology")
+Premium_Network_Tier(Premium_Network_Tier, "Premium_Network_Tier", "Technology")
+Standard_Network_Tier(Standard_Network_Tier, "Standard_Network_Tier", "Technology")
+Traffic_Director(Traffic_Director, "Traffic_Director", "Technology")
+Virtual_Private_Cloud(Virtual_Private_Cloud, "Virtual_Private_Cloud", "Technology")
 
 @enduml
