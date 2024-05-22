@@ -1,9 +1,14 @@
+' Begin duplicate inclusion protection header.
+!if %true() != $CLASSY_C4_CONTAINER_PUML
+!$CLASSY_C4_CONTAINER_PUML = %true()
+' End duplicate inclusion protection header.
+
 ' Defines a class that wraps the C4 Container function.
 !include <C4/C4_Container>
 !include <classy/types/element-renderer>
 !include <classy/types/technical-descriptor>
-!include <classy-c4/externalizable-element>
-!include <classy-c4/focusable-element>
+!include externalizable-element.puml
+!include focusable-element.puml
 
 $class(Container)
   $classImplements(ElementRenderer)
@@ -51,3 +56,5 @@ $class(Container)
   !endprocedure
 $endclass(Container)
 
+' Terminate duplicate inclusion enclosure.
+!endif

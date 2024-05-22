@@ -1,5 +1,10 @@
+' Begin duplicate inclusion protection header.
+!if %true() != $CLASSY_TYPES_DESCRIPTOR_PUML
+!$CLASSY_TYPES_DESCRIPTOR_PUML = %true()
+' End duplicate inclusion protection header.
+
 ' Defines a class for the functionality of providing a name and description.
-!include <classy/core>
+!include ../core.puml
 
 $class(Descriptor)
   $classVar(description, string)
@@ -32,3 +37,5 @@ $class(Descriptor)
   $endclassMethod(setName)
 $endclass(Descriptor)
 
+' Terminate duplicate inclusion enclosure.
+!endif

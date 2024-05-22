@@ -1,7 +1,12 @@
+' Begin duplicate inclusion protection header.
+!if %true() != $CLASSY_TYPES_PORT_PUML
+!$CLASSY_TYPES_PORT_PUML = %true()
+' End duplicate inclusion protection header.
+
 ' Defines a class for providing a named Port. This renders as a simple square
 ' and is intended to be used to show "holes" in a black box system where the
 ' inputs and outputs enter or leave that system.
-!include <classy/types/descriptive-renderer>
+!include descriptive-renderer.puml
 
 $class(Port)
   $classImplements(DescriptiveRenderer)
@@ -32,3 +37,5 @@ $class(Port)
   !endprocedure
 $endclass(Port)
 
+' Terminate duplicate inclusion enclosure.
+!endif

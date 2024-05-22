@@ -1,5 +1,10 @@
+' Begin duplicate inclusion protection header.
+!if %true() != $CLASSY_TYPES_KEY_VALUE_PAIR_PUML
+!$CLASSY_TYPES_KEY_VALUE_PAIR_PUML = %true()
+' End duplicate inclusion protection header.
+
 ' Defines a class that associates a key with a value.
-!include <classy/core>
+!include ../core.puml
 
 $class(KeyValuePair)
   $classVar(key, object)
@@ -32,3 +37,5 @@ $class(KeyValuePair)
   $endclassMethod(setValue)
 $endclass(KeyValuePair)
 
+' Terminate duplicate inclusion enclosure.
+!endif

@@ -1,5 +1,10 @@
+' Begin duplicate inclusion protection header.
+!if %true() != $CLASSY_TYPES_MAP_PUML
+!$CLASSY_TYPES_MAP_PUML = %true()
+' End duplicate inclusion protection header.
+
 ' Defines a class that uses multiple key/value pairs to create a map.
-!include <classy/types/key-value-pair>
+!include key-value-pair.puml
 
 $class(Map)
   $classVar(pairs, array)
@@ -87,3 +92,5 @@ $class(Map)
   $endclassMethod(has)
 $endclass(Map)
 
+' Terminate duplicate inclusion enclosure.
+!endif

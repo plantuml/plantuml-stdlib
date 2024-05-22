@@ -4,7 +4,7 @@
 ' These definitions are recorded by using specially patterend global variables.
 ' The variables are named so that conflicts with legitimate diagram variables
 ' should be almost impossible unless someone is doing it on purpose.
-!include <classy/plumbing/low-level-error-system>
+!include low-level-error-system.puml
 
 ' Define the global variable naming patterns.
 !global $CLASS = '__class__'
@@ -25,7 +25,7 @@
 ' begun.
 !unquoted procedure $class($name)
   !if (%true() == $classDefined($name))
-    !$fail('Class already defined.')
+    !$fail('Class already defined: ' + $name)
   !endif
 
   !if (%not('' == $CLASSCONTEXT))

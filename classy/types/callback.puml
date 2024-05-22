@@ -1,7 +1,12 @@
+' Begin duplicate inclusion protection header.
+!if %true() != $CLASSY_TYPES_CALLBACK_PUML
+!$CLASSY_TYPES_CALLBACK_PUML = %true()
+' End duplicate inclusion protection header.
+
 ' Defines a class that pairs a callable object with a method to be called upon
 ' that object. This is useful when you need to implement something using many
 ' OO patterns such as Observer or Strategy.
-!include <classy/core>
+!include ../core.puml
 
 $class(Callback)
   $classVar(context, callable)
@@ -38,3 +43,5 @@ $class(Callback)
   $endclassMethod(setMethod)
 $endclass(Callback)
 
+' Terminate duplicate inclusion enclosure.
+!endif

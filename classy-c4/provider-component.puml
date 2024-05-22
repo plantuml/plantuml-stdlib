@@ -1,5 +1,10 @@
+' Begin duplicate inclusion protection header.
+!if %true() != $CLASSY_C4_PROVIDER_COMPONENT_PUML
+!$CLASSY_C4_PROVIDER_COMPONENT_PUML = %true()
+' End duplicate inclusion protection header.
+
+!include component.puml
 !include <classy/types/ported-interface-provider>
-!include <classy-c4/component>
 
 $class(ProviderComponent)
   $classImplements(Component)
@@ -66,3 +71,5 @@ $class(ProviderComponent)
   !endprocedure
 $endclass(ProviderComponent)
 
+' Terminate duplicate inclusion enclosure.
+!endif

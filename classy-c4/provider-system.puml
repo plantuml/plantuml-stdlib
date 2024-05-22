@@ -1,6 +1,11 @@
+' Begin duplicate inclusion protection header.
+!if %true() != $CLASSY_C4_PROVIDER_SYSTEM_PUML
+!$CLASSY_C4_PROVIDER_SYSTEM_PUML = %true()
+' End duplicate inclusion protection header.
+
+!include system.puml
 !include <classy/types/map>
 !include <classy/types/ported-interface-provider>
-!include <classy-c4/system>
 
 $class(ProviderSystem)
   $classImplements(System)
@@ -151,3 +156,5 @@ $class(ProviderSystem)
   $endclassMethod(setContainerRendererCallback)
 $endclass(ProviderSystem)
 
+' Terminate duplicate inclusion enclosure.
+!endif

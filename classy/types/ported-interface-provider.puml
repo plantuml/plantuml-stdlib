@@ -1,7 +1,12 @@
+' Begin duplicate inclusion protection header.
+!if %true() != $CLASSY_TYPES_PORTED_INTERFACE_PROVIDER_PUML
+!$CLASSY_TYPES_PORTED_INTERFACE_PROVIDER_PUML = %true()
+' End duplicate inclusion protection header.
+
 ' Defines a class that marries together the concepts of providing an interface
 ' with the concept of ported interfaces.
-!include <classy/types/interface-provider>
-!include <classy/types/ported-interface>
+!include interface-provider.puml
+!include ported-interface.puml
 
 $class(PortedInterfaceProvider)
   $classImplements(InterfaceProvider)
@@ -45,3 +50,5 @@ $class(PortedInterfaceProvider)
   $endclassMethod(provideInterface)
 $endclass(PortedInterfaceProvider)
 
+' Terminate duplicate inclusion enclosure.
+!endif

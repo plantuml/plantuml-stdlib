@@ -1,7 +1,12 @@
+' Begin duplicate inclusion protection header.
+!if %true() != $CLASSY_C4_BIDIRECTIONAL_COMPONENT_PUML
+!$CLASSY_C4_BIDIRECTIONAL_COMPONENT_PUML = %true()
+' End duplicate inclusion protection header.
+
+!include component.puml
 !include <classy/types/map>
 !include <classy/types/ported-interface-consumer>
 !include <classy/types/ported-interface-provider>
-!include <classy-c4/component>
 
 $class(BidirectionalComponent)
   $classImplements(Component)
@@ -124,3 +129,5 @@ $class(BidirectionalComponent)
   $endclassMethod(getOutPort)
 $endclass(BidirectionalComponent)
 
+' Terminate duplicate inclusion enclosure.
+!endif
