@@ -4,8 +4,8 @@
 ' End duplicate inclusion protection header.
 
 ' Declares a class that simply couples a Descriptor to a Renderer.
-!include descriptor.puml
-!include renderer.puml
+!include <classy/types/descriptor>
+!include <classy/types/renderer>
 
 $class(DescriptiveRenderer)
   $classImplements(Descriptor)

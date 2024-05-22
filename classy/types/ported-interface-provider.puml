@@ -5,8 +5,8 @@
 
 ' Defines a class that marries together the concepts of providing an interface
 ' with the concept of ported interfaces.
-!include interface-provider.puml
-!include ported-interface.puml
+!include <classy/types/interface-provider>
+!include <classy/types/ported-interface>
 
 $class(PortedInterfaceProvider)
   $classImplements(InterfaceProvider)

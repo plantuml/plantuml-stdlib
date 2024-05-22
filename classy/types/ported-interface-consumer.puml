@@ -5,10 +5,10 @@
 
 ' Defines a class that marries together the concepts of interface consumption
 ' with the concept of ported interfaces.
-!include interface-consumer.puml
-!include map.puml
-!include port.puml
-!include ported-interface.puml
+!include <classy/types/interface-consumer>
+!include <classy/types/map>
+!include <classy/types/port>
+!include <classy/types/ported-interface>
 
 $class(PortedInterfaceConsumer)
   $classImplements(InterfaceConsumer)

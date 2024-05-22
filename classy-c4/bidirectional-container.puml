@@ -3,10 +3,10 @@
 !$CLASSY_C4_BIDIRECTIONAL_CONTAINER_PUML = %true()
 ' End duplicate inclusion protection header.
 
-!include container.puml
 !include <classy/types/map>
 !include <classy/types/ported-interface-consumer>
 !include <classy/types/ported-interface-provider>
+!include <classy-c4/container>
 
 $class(BidirectionalContainer)
   $classImplements(Container)

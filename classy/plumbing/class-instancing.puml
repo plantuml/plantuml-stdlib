@@ -4,8 +4,8 @@
 ' 
 ' We depend upon the ability to define classes, perform type checking, and on a
 ' low-level type implementation for arrays.
-!include class-definition.puml
-!include types/array.puml
+!include <classy/plumbing/class-definition>
+!include <classy/plumbing/types/array>
 
 ' A global constant value that helps us ensure that the variable is one managed
 ' by this library. If we get a collision with an existing variable, it is likely

@@ -9,7 +9,7 @@
 '
 ' This class uses the Strategy pattern and implementers inject a callback that
 ' performs the actual rendering process empowered by this functionality.
-!include callback.puml
+!include <classy/types/callback>
 
 $class(Renderer)
   $classVar(callback, Callback)

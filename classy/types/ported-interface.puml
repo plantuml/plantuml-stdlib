@@ -6,9 +6,9 @@
 ' Defines a class that marries together the concepts of interfaces with the
 ' concept of ports. This is stored using a map instance to indicate to which
 ' port the interface is tied.
-!include interface-consumer.puml
-!include map.puml
-!include port.puml
+!include <classy/types/interface-consumer>
+!include <classy/types/map>
+!include <classy/types/port>
 
 $class(PortedInterface)
   $classVar(interfacePortMap, Map)
