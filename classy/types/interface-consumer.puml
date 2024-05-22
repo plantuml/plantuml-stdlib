@@ -1,3 +1,8 @@
+' Begin duplicate inclusion protection header.
+!if %true() != $CLASSY_TYPES_INTERFACE_CONSUMER_PUML
+!$CLASSY_TYPES_INTERFACE_CONSUMER_PUML = %true()
+' End duplicate inclusion protection header.
+
 ' Defines a class to provide the functionality of consuming the Interface class.
 !include <classy/core>
 
@@ -29,3 +34,5 @@ $class(InterfaceConsumer)
   $endclassMethod(getConsumedInterfaces)
 $endclass(InterfaceConsumer)
 
+' Terminate duplicate inclusion enclosure.
+!endif

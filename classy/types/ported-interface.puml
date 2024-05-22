@@ -1,3 +1,8 @@
+' Begin duplicate inclusion protection header.
+!if %true() != $CLASSY_TYPES_PORTED_INTERFACE_PUML
+!$CLASSY_TYPES_PORTED_INTERFACE_PUML = %true()
+' End duplicate inclusion protection header.
+
 ' Defines a class that marries together the concepts of interfaces with the
 ' concept of ports. This is stored using a map instance to indicate to which
 ' port the interface is tied.
@@ -66,3 +71,5 @@ $class(PortedInterface)
   $endclassMethod(getPorts)
 $endclass(PortedInterface)
 
+' Terminate duplicate inclusion enclosure.
+!endif

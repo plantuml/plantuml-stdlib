@@ -1,3 +1,8 @@
+' Begin duplicate inclusion protection header.
+!if %true() != $CLASSY_C4_COMPONENT_PUML
+!$CLASSY_C4_COMPONENT_PUML = %true()
+' End duplicate inclusion protection header.
+
 ' Defines a class that wraps the C4 Component function.
 !include <C4/C4_Component>
 !include <classy/types/element-renderer>
@@ -44,3 +49,5 @@ $class(Component)
   !endprocedure
 $endclass(Component)
 
+' Terminate duplicate inclusion enclosure.
+!endif

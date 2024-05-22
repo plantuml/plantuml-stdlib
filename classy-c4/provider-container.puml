@@ -1,3 +1,8 @@
+' Begin duplicate inclusion protection header.
+!if %true() != $CLASSY_C4_PROVIDER_CONTAINER_PUML
+!$CLASSY_C4_PROVIDER_CONTAINER_PUML = %true()
+' End duplicate inclusion protection header.
+
 !include <classy/types/ported-interface-provider>
 !include <classy-c4/container>
 
@@ -66,3 +71,5 @@ $class(ProviderContainer)
   !endprocedure
 $endclass(ProviderContainer)
 
+' Terminate duplicate inclusion enclosure.
+!endif

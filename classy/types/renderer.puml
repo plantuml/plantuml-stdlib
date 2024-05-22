@@ -1,3 +1,8 @@
+' Begin duplicate inclusion protection header.
+!if %true() != $CLASSY_TYPES_RENDERER_PUML
+!$CLASSY_TYPES_RENDERER_PUML = %true()
+' End duplicate inclusion protection header.
+
 ' Defines a class with functionality for rendering a component. This allows a
 ' guarantee that each class instance can be separately rendered without conflict
 ' within the same diagram.
@@ -51,3 +56,5 @@ $class(Renderer)
   $endclassMethod(setRendererCallback)
 $endclass(Renderer)
 
+' Terminate duplicate inclusion enclosure.
+!endif

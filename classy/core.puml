@@ -1,3 +1,8 @@
+' Begin duplicate inclusion protection header.
+!if %true() != $CLASSY_CORE_PUML
+!$CLASSY_CORE_PUML = %true()
+' End duplicate inclusion protection header.
+
 ' This is the primary Classy include as it includes the rest of the necessary
 ' framework.
 !include <classy/plumbing/class-instancing>
@@ -208,3 +213,5 @@
   !log [DEBUG]$indent $msg
 !endprocedure
 
+' Terminate duplicate inclusion enslosure.
+!endif

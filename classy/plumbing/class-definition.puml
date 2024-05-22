@@ -25,7 +25,7 @@
 ' begun.
 !unquoted procedure $class($name)
   !if (%true() == $classDefined($name))
-    !$fail('Class already defined.')
+    !$fail('Class already defined: ' + $name)
   !endif
 
   !if (%not('' == $CLASSCONTEXT))

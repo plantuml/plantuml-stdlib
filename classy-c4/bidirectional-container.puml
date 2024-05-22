@@ -1,3 +1,8 @@
+' Begin duplicate inclusion protection header.
+!if %true() != $CLASSY_C4_BIDIRECTIONAL_CONTAINER_PUML
+!$CLASSY_C4_BIDIRECTIONAL_CONTAINER_PUML = %true()
+' End duplicate inclusion protection header.
+
 !include <classy/types/map>
 !include <classy/types/ported-interface-consumer>
 !include <classy/types/ported-interface-provider>
@@ -247,3 +252,5 @@ $class(BidirectionalContainer)
   $endclassMethod(getComponentRendererCallback)
 $endclass(BidirectionalContainer)
 
+' Terminate duplicate inclusion enclosure.
+!endif
