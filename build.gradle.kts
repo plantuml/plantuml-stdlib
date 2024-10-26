@@ -14,13 +14,11 @@ dependencies {
     testRuntimeOnly("org.junit.jupiter:junit-jupiter-engine:5.7.1")
     implementation("com.beust:jcommander:1.81")
     implementation("org.fusesource.jansi:jansi:2.4.0")
-    implementation("com.google.code.gson:gson:2.8.8") 
-    implementation("org.apache.commons:commons-text:1.9")
-       
+    implementation("net.sourceforge.plantuml:plantuml:1.2024.5")
 }
 
 application {
-    mainClass.set("com.pdiff.Main")
+    mainClass.set("com.plantuml.stdlibencoder.Main")
 }
 
 tasks.test {
