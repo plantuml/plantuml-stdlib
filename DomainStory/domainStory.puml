@@ -1,5 +1,19 @@
+' DomainStory-PlantUML, version 0.3.1
+' https://github.com/johthor/DomainStory-PlantUML
+
+' Version
+' ##################################
+!function DomainStoryVersion()
+    ' This is method is directly copied from C4-PlantUML and only slightly adjusted
+    ' 2 spaces are used as a unique marker, that the release script makes the correct version update
+    !global $DomainStoryVersion  =  "0.3.1"
+    !return $DomainStoryVersion
+!end function
+
 ' Default Styling
 ' ##################################
+
+!$storyLayout ?= "left-to-right"
 
 !$textColor ?= "#0b0c10"
 
@@ -63,10 +77,14 @@ skinparam note {
 ' Layout
 ' ##################################
 
-left to right direction
-
-' in journeys with multiple stories the default top to down direction
+' in journeys with multiple stories the default top-to-bottom direction
 ' usually gives better results
+
+!if $storyLayout == "left-to-right"
+    left to right direction
+!else
+    top to bottom direction
+!endif
 
 ' Actors
 ' ##################################
@@ -212,9 +230,13 @@ left to right direction
 
 ' Boundaries
 ' ##################################
-!unquoted procedure Boundary($name, $label = "")
+!unquoted procedure Boundary($name, $label = "", $note = "")
     !if $label == ""
         !$label = $name
+    !endif
+    !if $note != ""
+        rectangle $name
+        $addBoundaryNote($name, $note)
     !endif
     rectangle "==$label" <<Boundary>> as $name
 !endprocedure
@@ -226,16 +248,40 @@ left to right direction
 !global $objectCounter = 0
 
 !unquoted procedure activity($step, $subject, $predicate, $object, $post = "", $target = "", $objectArr = "", $targetArr = "", $color = "", $scale = "", $note = "")
-    ' ensure object exists / create one dynamically
-    !$object = $ensureObjectExists($object, $color, $scale)
-
-    ' handle forward or backward activity
+    ' activity direction
     !if $objectArr == "" && $targetArr == ""
-        !$bwPosition = %strpos($step, "<")
-        !if $bwPosition > 0
-            !$step = %substr($step, 0, $bwPosition)
-            !$objectArr = "<--"
-            !$targetArr = "<--"
+        !$vPosition = %strpos($step, "v")
+        !$ltPosition = %strpos($step, "<")
+        !$caretPosition = %strpos($step, "^")
+        !$gtPosition = %strpos($step, ">")
+        !if $gtPosition > -1
+            !$step = %substr($step, 0, $gtPosition)
+            !if $storyLayout == "left-to-right"
+                !$objectArr = "-->"
+            !else
+                !$objectArr = "->"
+            !endif
+        !elseif $ltPosition > -1
+            !$step = %substr($step, 0, $ltPosition)
+            !if $storyLayout == "left-to-right"
+                !$objectArr = "<--"
+            !else
+                !$objectArr = "<-"
+            !endif
+        !elseif $vPosition > -1
+            !$step = %substr($step, 0, $vPosition)
+            !if $storyLayout == "left-to-right"
+                !$objectArr = "->"
+            !else
+                !$objectArr = "-->"
+            !endif
+        !elseif $caretPosition > -1
+            !$step = %substr($step, 0, $caretPosition)
+            !if $storyLayout == "left-to-right"
+                !$objectArr = "<-"
+            !else
+                !$objectArr = "<--"
+            !endif
         !endif
     !endif
 
@@ -247,8 +293,16 @@ left to right direction
         !$targetArr = $objectArr
     !endif
 
+    ' ensure the object exists / create one dynamically
+    !$object = $ensureObjectExists($object, $color, $scale)
+
     ' create connecting arrows
     $arrow($subject, $object, $objectArr) : $stepLabel($step) $predicate
+
+    ' Handle possible second arrow between object and target
+
+    ' ensure the target exists / create one dynamically
+    !$target = $ensureObjectExists($target, $color, $scale)
 
     !if $post != "" && $post != "_"
         !if $target != "" && $target != "_"
@@ -276,7 +330,36 @@ left to right direction
         !elseif $noteDir == ">"
             note right of $target : %substr($note, 1)
         !else
-            note right of $target : $note
+            !if $storyLayout == "left-to-right"
+                note right of $target : $note
+            !else
+                note bottom of $target : $note
+            !endif
+        !endif
+    !endif
+!endprocedure
+
+!procedure $addBoundaryNote($boundary, $note)
+    !if $note != ""
+        !$noteDir = %substr($note, 0, 1)
+        !if $noteDir == "v"
+            !if $storyLayout == "left-to-right"
+                note top of $boundary : %substr($note, 1)
+            !else
+                note bottom of $boundary : %substr($note, 1)
+            !endif
+        !elseif $noteDir == "<"
+            note left of $boundary : %substr($note, 1)
+        !elseif $noteDir == "^"
+            !if $storyLayout == "left-to-right"
+                note bottom of $boundary : %substr($note, 1)
+            !else
+                note top of $boundary : %substr($note, 1)
+            !endif
+        !elseif $noteDir == ">"
+            note right of $boundary : %substr($note, 1)
+        !else
+            note right of $boundary : $note
         !endif
     !endif
 !endprocedure
@@ -284,7 +367,7 @@ left to right direction
 !function $ensureObjectExists($object, $color = "", $scale = "")
     !$objectName = $object
     !$objectSeparator = %strpos($object, ":")
-    !if $objectSeparator > 0
+    !if $objectSeparator > -1
         !$objectCounter = %intval($objectCounter) + 1
         !$objectKind = %substr($object, 0, $objectSeparator)
         !$objectLabel = %substr($object, $objectSeparator + 1)
@@ -308,6 +391,8 @@ left to right direction
         !return $stepCounter
     !elseif $step == "|"
         !return $stepCounter
+    !elseif $step == "."
+        !return ""
     !elseif %substr($step, 0, 1) == "="
         !$stepCounter = %intval(%substr($step, 1))
         !return $stepCounter
@@ -317,16 +402,21 @@ left to right direction
 !endfunction
 
 !function $stepLabel($step)
+    !$result = ""
     !$stepNum = $computeStep($step)
-    !$result = "(" + $stepNum + ")"
-    !if ($stepColor != "")
-        !$result = "<back:" + $stepColor + ">" + $result + "</back>"
+
+    !if $stepNum != ""
+        !$result = "(" + $stepNum + ")"
+        !if ($stepColor != "")
+            !$result = "<back:" + $stepColor + ">" + $result + "</back>"
+        !endif
+        !if ($stepFontColor != "")
+            !$result = "<color:" + $stepFontColor + ">" + $result + "</color>"
+        !endif
+        !if ($stepFontSize != "")
+            !$result = "<size:" + $stepFontSize + ">" + $result + "</size>"
+        !endif
     !endif
-    !if ($stepFontColor != "")
-        !$result = "<color:" + $stepFontColor + ">" + $result + "</color>"
-    !endif
-    !if ($stepFontSize != "")
-        !$result = "<size:" + $stepFontSize + ">" + $result + "</size>"
-    !endif
+
     !return $result
 !endfunction

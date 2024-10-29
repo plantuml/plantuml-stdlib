@@ -2,7 +2,7 @@
 
 ## Adding a new library
 
-1. Fork this repository on github and then git clone it to your local machine.
+1. Fork this repository on GitHub and then git clone it to your local machine.
 1. Add a new folder containing your library files.
 1. Add a file inside your library's folder called INFO that contains:
 ```
