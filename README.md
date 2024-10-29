@@ -479,7 +479,7 @@ This example renders the following image:
 
 ![Example](http://www.plantuml.com/plantuml/png/PSn12i8m40NGVK_nsqqL0k9U2eNMbRLGYjiIawa69faGKz7RUm3V0LxfWk7D4avUPqfEyy68znAQeiOiS3vAoiXFmYicbmchOy9NDdJZjPuHY2oo8B8s18sOQ7MViYZ_urNOKbgylAafYg5TpkEbwwTb66_zRYAhS5ImBYaaCbc71vD2rOBrdRZQ_m00 "Example")
 
-## Domain Story library [DomainStory]
+## Domain Story library (DomainStory-PlantUML) [DomainStory]
 
 This library provides a set of macros to easily describe and document a domain story which was developed in
 a [Domain Storytelling](http://www.domainstorytelling.org) workshop.
