@@ -16,42 +16,38 @@ import java.util.Map;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
-import javax.imageio.ImageIO;
-
 import net.sourceforge.plantuml.klimt.creole.atom.AtomImg;
 import net.sourceforge.plantuml.security.SImageIO;
 import net.sourceforge.plantuml.utils.Base64Coder;
 
-public class Out6 {
+public class SpritesStreams {
 
-	final private Pattern p = Pattern.compile(AtomImg.DATA_IMAGE_PNG_BASE64 + "([0-9a-zA-Z+/]+[=]*)");
+	final private Pattern PATTERN_BASE64 = Pattern.compile(AtomImg.DATA_IMAGE_PNG_BASE64 + "([0-9a-zA-Z+/]+[=]*)");
 
-	private final DataOutputStream sprs;
+	private final DataOutputStream spritesOutputStream;
 
 	private final Map<Integer, Integer> colorAndIndex = new HashMap<>();
 	private final List<Integer> colors = new ArrayList<>();
 	private final ByteArrayOutputStream pngData = new ByteArrayOutputStream();
 
-	private final File pathRaw;
-	private final String name;
+	private final File colorSpritesFile;
 
-	public Out6(String name, File pathRaw) throws FileNotFoundException {
-		this.pathRaw = pathRaw;
-		this.sprs = new DataOutputStream(new FileOutputStream(new File(pathRaw, name + "-def.repx")));
-		this.name = name;
+	public SpritesStreams(File rawFolder, String name) throws FileNotFoundException {
+		this.colorSpritesFile = new File(rawFolder, name + "-ghi.repx");
+		final File monochromSpritesFile = new File(rawFolder, name + "-def.repx");
+		this.spritesOutputStream = new DataOutputStream(new FileOutputStream(monochromSpritesFile));
 	}
 
-	public final DataOutputStream sprs() {
-		return sprs;
+	public final DataOutputStream spritesOutputStream() {
+		return spritesOutputStream;
 	}
 
 	public void close() throws IOException {
-		sprs.close();
+		spritesOutputStream.close();
 		if (colors.size() > 0) {
 			if (colors.size() != colorAndIndex.size())
 				throw new IllegalStateException();
-			final OutputStream fos = new BufferedOutputStream(
-					new FileOutputStream(new File(pathRaw, name + "-ghi.repx")));
+			final OutputStream fos = new BufferedOutputStream(new FileOutputStream(colorSpritesFile));
 			exportColorTable(fos);
 			pngData.close();
 			fos.write(pngData.toByteArray());
@@ -59,10 +55,8 @@ public class Out6 {
 		}
 	}
 
-	int cpt = 0;
-
 	public void dataImagePngBase64(String s) throws IOException {
-		final Matcher m = p.matcher(s);
+		final Matcher m = PATTERN_BASE64.matcher(s);
 		if (m.find() == false)
 			throw new IllegalArgumentException();
 		final String data = m.group(1);

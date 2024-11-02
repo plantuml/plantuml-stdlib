@@ -5,32 +5,28 @@ import java.io.IOException;
 public class Main {
 
 	public static void main(String[] args) throws IOException {
-		int diff = 45;
-		if (args.length > 0)
-			diff = Integer.parseInt(args[0]);
-
-		StdlibBuilder6.HOME.delete();
-		new Xuml6MakeRepAndRepx("archimate", diff);
-		new Xuml6MakeRepAndRepx("awslib10", diff);
-		new Xuml6MakeRepAndRepx("awslib14", diff);
-		new Xuml6MakeRepAndRepx("awslib", diff);
-		new Xuml6MakeRepAndRepx("aws", diff);
-		new Xuml6MakeRepAndRepx("azure", diff);
-		new Xuml6MakeRepAndRepx("C4", diff);
-		new Xuml6MakeRepAndRepx("classy", diff);
-		new Xuml6MakeRepAndRepx("classy-c4", diff);
-		new Xuml6MakeRepAndRepx("cloudinsight", diff);
-		new Xuml6MakeRepAndRepx("cloudogu", diff);
-		new Xuml6MakeRepAndRepx("DomainStory", diff);
-		new Xuml6MakeRepAndRepx("elastic", diff);
-		new Xuml6MakeRepAndRepx("edgy", diff);
-		new Xuml6MakeRepAndRepx("kubernetes", diff);
-		new Xuml6MakeRepAndRepx("logos", diff);
-		new Xuml6MakeRepAndRepx("material", diff);
-		new Xuml6MakeRepAndRepx("office", diff);
-		new Xuml6MakeRepAndRepx("osa", diff);
-		new Xuml6MakeRepAndRepx("osa2", diff);
-		new Xuml6MakeRepAndRepx("tupadr3", diff);
+		StdlibBuilder6.deleteHomeRepx();
+		new StdlibBuilder6("archimate").buildNow();
+		new StdlibBuilder6("awslib10").buildNow();
+		new StdlibBuilder6("awslib14").buildNow();
+		new StdlibBuilder6("awslib").buildNow();
+		new StdlibBuilder6("aws").buildNow();
+		new StdlibBuilder6("azure").buildNow();
+		new StdlibBuilder6("C4").buildNow();
+		new StdlibBuilder6("classy").buildNow();
+		new StdlibBuilder6("classy-c4").buildNow();
+		new StdlibBuilder6("cloudinsight").buildNow();
+		new StdlibBuilder6("cloudogu").buildNow();
+		new StdlibBuilder6("DomainStory").buildNow();
+		new StdlibBuilder6("elastic").buildNow();
+		new StdlibBuilder6("edgy").buildNow();
+		new StdlibBuilder6("kubernetes").buildNow();
+		new StdlibBuilder6("logos").buildNow();
+		new StdlibBuilder6("material").buildNow();
+		new StdlibBuilder6("office").buildNow();
+		new StdlibBuilder6("osa").buildNow();
+		new StdlibBuilder6("osa2").buildNow();
+		new StdlibBuilder6("tupadr3").buildNow();
 	}
 
 

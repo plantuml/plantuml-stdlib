@@ -1,7 +1,6 @@
 package com.plantuml.stdlibencoder;
 
 import java.io.BufferedReader;
-import java.io.ByteArrayOutputStream;
 import java.io.DataOutputStream;
 import java.io.File;
 import java.io.FileInputStream;
@@ -14,28 +13,27 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
-import java.util.zip.GZIPOutputStream;
 
-import javax.imageio.ImageIO;
-
-import net.sourceforge.plantuml.code.CompressionHuffman;
-import net.sourceforge.plantuml.klimt.color.ColorMapper;
-import net.sourceforge.plantuml.klimt.color.HColors;
 import net.sourceforge.plantuml.klimt.creole.atom.AtomImg;
-import net.sourceforge.plantuml.klimt.shape.UImage;
 import net.sourceforge.plantuml.klimt.sprite.SpriteGrayLevel;
 import net.sourceforge.plantuml.klimt.sprite.SpriteMonochrome;
 
 public class StdlibBuilder6 {
 
-	public static final File HOME = new File(pathRaw(), "home.repx");
+	private static final File HOME_REPX = new File(rawFolder(), "home.repx");
 	private static final String SEPARATOR = "\uF8FF";
-	private final File dir;
-	private final int diff;
 
-	public StdlibBuilder6(File dir, int diff) throws IOException {
-		this.dir = dir;
-		this.diff = diff;
+	public static void deleteHomeRepx() {
+		HOME_REPX.delete();
+	}
+
+	private final File dir;
+
+	public StdlibBuilder6(String name) {
+		this.dir = new File(name);
+	}
+
+	public void buildNow() throws IOException {
 		System.err.println("in " + dir);
 
 		File info = new File(dir, "INFO");
@@ -44,27 +42,27 @@ public class StdlibBuilder6 {
 		if (infoString.contains("LINK=")) {
 			System.err.println("Link!");
 			final DataOutputStream texts = new DataOutputStream(
-					new FileOutputStream(new File(pathRaw(), dir.getName() + "-abc.repx")));
+					new FileOutputStream(new File(rawFolder(), dir.getName() + "-abc.repx")));
 			texts.writeUTF(infoString);
 			texts.writeUTF(SEPARATOR);
 			texts.close();
 		} else {
 			final DataOutputStream texts = new DataOutputStream(
-					new FileOutputStream(new File(pathRaw(), dir.getName() + "-abc.repx")));
+					new FileOutputStream(new File(rawFolder(), dir.getName() + "-abc.repx")));
 			texts.writeUTF(infoString);
-			final Out6 out = new Out6(dir.getName(), pathRaw());
+			final SpritesStreams out = new SpritesStreams(rawFolder(), dir.getName());
 			processDir(dir, texts, out);
 			texts.writeUTF(SEPARATOR);
 			texts.close();
 			out.close();
 		}
 
-		final PrintWriter pw = new PrintWriter(new FileOutputStream(HOME, true));
+		final PrintWriter pw = new PrintWriter(new FileOutputStream(HOME_REPX, true));
 		pw.println(dir.getName());
 		pw.close();
 	}
 
-	public static File pathRaw() {
+	private static File rawFolder() {
 		final File result = new File("raw");
 		result.mkdirs();
 		return result;
@@ -82,7 +80,7 @@ public class StdlibBuilder6 {
 		return sb.toString();
 	}
 
-	private void processDir(File dir, DataOutputStream texts, Out6 path) throws IOException {
+	private void processDir(File dir, DataOutputStream texts, SpritesStreams path) throws IOException {
 		// System.err.println("dir=" + dir.getAbsolutePath());
 		for (File f : dir.listFiles())
 			if (f.isFile() && f.getName().endsWith(".puml"))
@@ -94,19 +92,14 @@ public class StdlibBuilder6 {
 
 	}
 
-	private void append(File f, DataOutputStream texts, Out6 out) throws IOException {
+	private void append(File f, DataOutputStream texts, SpritesStreams out) throws IOException {
 		// String name = f.getAbsolutePath();
 		final String name = getShortName(f);
 		texts.writeUTF(name);
 		copyToStream(f, texts, out);
 	}
 
-	// static int saved = 0;
-	// static int CPT = 0;
-
-	final private Pattern p = Pattern.compile(AtomImg.DATA_IMAGE_PNG_BASE64 + "([0-9a-zA-Z+/]+[=]*)");
-
-	private void copyToStream(File src, DataOutputStream dos, Out6 out) throws IOException {
+	private void copyToStream(File src, DataOutputStream dos, SpritesStreams out) throws IOException {
 		final BufferedReader br = new BufferedReader(new FileReader(src));
 		String s;
 		// final File dir = new File("spp");
@@ -136,10 +129,10 @@ public class StdlibBuilder6 {
 
 						final int width = Integer.parseInt(m.group(1));
 						final int height = Integer.parseInt(m.group(2));
-						manageSpriteCompressed(width, height, out.sprs(), br);
+						manageSpriteCompressed(width, height, out.spritesOutputStream(), br);
 					} else if (s.contains("/16]")) {
 						dos.writeUTF(s);
-						manageSpriteNormal(out.sprs(), br);
+						manageSpriteNormal(out.spritesOutputStream(), br);
 					} else {
 						throw new IllegalArgumentException(s);
 					}
@@ -190,17 +183,6 @@ public class StdlibBuilder6 {
 		}
 	}
 
-
-
-	private int priceHuffman(SpriteMonochrome sprite) throws IOException {
-		final CompressionHuffman comp = new CompressionHuffman();
-		final ByteArrayOutputStream baos = new ByteArrayOutputStream();
-		sprite.exportSprite1(baos);
-		baos.close();
-		return comp.compress(baos.toByteArray()).length;
-	}
-
-
 	private boolean isSpriteLine(String s) {
 		return s.trim().startsWith("sprite") && s.trim().endsWith("{");
 	}
@@ -212,10 +194,6 @@ public class StdlibBuilder6 {
 			throw new IllegalStateException();
 
 		return name.substring(dirName.length() + 1).replace('\\', '/').replace(".puml", "");
-	}
-
-	public final File getDir() {
-		return dir;
 	}
 
 }
