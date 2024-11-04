@@ -20,34 +20,34 @@ import net.sourceforge.plantuml.klimt.creole.atom.AtomImg;
 import net.sourceforge.plantuml.security.SImageIO;
 import net.sourceforge.plantuml.utils.Base64Coder;
 
-public class SpritesStreams {
+public class ColorImagesStream {
 
+	/**
+	 * Pattern to match Base64 encoded PNG images in a data URI format.
+	 */
 	final private Pattern PATTERN_BASE64 = Pattern.compile(AtomImg.DATA_IMAGE_PNG_BASE64 + "([0-9a-zA-Z+/]+[=]*)");
 
-	private final DataOutputStream spritesOutputStream;
-
+	/**
+	 * Map that holds the association between color values and their respective
+	 * index.
+	 */
 	private final Map<Integer, Integer> colorAndIndex = new HashMap<>();
+
 	private final List<Integer> colors = new ArrayList<>();
+
 	private final ByteArrayOutputStream pngData = new ByteArrayOutputStream();
 
-	private final File colorSpritesFile;
+	private final File colorImagesFile;
 
-	public SpritesStreams(File rawFolder, String name) throws FileNotFoundException {
-		this.colorSpritesFile = new File(rawFolder, name + "-ghi.repx");
-		final File monochromSpritesFile = new File(rawFolder, name + "-def.repx");
-		this.spritesOutputStream = new DataOutputStream(new FileOutputStream(monochromSpritesFile));
-	}
-
-	public final DataOutputStream spritesOutputStream() {
-		return spritesOutputStream;
+	public ColorImagesStream(File colorImagesFile) throws FileNotFoundException {
+		this.colorImagesFile = colorImagesFile;
 	}
 
 	public void close() throws IOException {
-		spritesOutputStream.close();
 		if (colors.size() > 0) {
 			if (colors.size() != colorAndIndex.size())
-				throw new IllegalStateException();
-			final OutputStream fos = new BufferedOutputStream(new FileOutputStream(colorSpritesFile));
+				throw new IllegalStateException("Color count mismatch");
+			final OutputStream fos = new BufferedOutputStream(new FileOutputStream(colorImagesFile));
 			exportColorTable(fos);
 			pngData.close();
 			fos.write(pngData.toByteArray());
@@ -55,10 +55,11 @@ public class SpritesStreams {
 		}
 	}
 
-	public void dataImagePngBase64(String s) throws IOException {
+	public void exportDataImagePngBase64(String s) throws IOException {
 		final Matcher m = PATTERN_BASE64.matcher(s);
 		if (m.find() == false)
-			throw new IllegalArgumentException();
+			throw new IllegalArgumentException("Invalid Base64 PNG data");
+
 		final String data = m.group(1);
 
 		final byte bytes[] = Base64Coder.decode(data);
@@ -67,7 +68,9 @@ public class SpritesStreams {
 		final int height = img.getHeight();
 		pngData.write(width);
 		pngData.write(height);
-		// System.err.println("img=" + (cpt++));
+
+		// Ok, here we store the image information without any compression
+		// (Except that we use a 16 bit colors index)
 
 		for (int y = 0; y < height; y += 1) {
 			for (int x = 0; x < width; x += 1) {
@@ -84,10 +87,10 @@ public class SpritesStreams {
 					idx = colorAndIndex.get(rgb);
 					colors.add(rgb);
 					if (idx > 0xFFFF)
-						throw new IllegalStateException();
+						throw new IllegalStateException("Too many colors!");
 				}
 				if (colors.get(idx) != rgb)
-					throw new IllegalStateException();
+					throw new AssertionError();
 
 				pngData.write((idx.intValue() >> 8) & 0xFF);
 				pngData.write(idx.intValue() & 0xFF);
@@ -96,6 +99,12 @@ public class SpritesStreams {
 
 	}
 
+	/**
+	 * Exports the color table to the provided output stream.
+	 *
+	 * @param os The output stream to which the color table will be written.
+	 * @throws IOException If an error occurs during writing.
+	 */
 	private void exportColorTable(OutputStream os) throws IOException, FileNotFoundException {
 		os.write((colors.size() >> 8) & 0xFF);
 		os.write(colors.size() & 0xFF);
@@ -112,11 +121,24 @@ public class SpritesStreams {
 		}
 	}
 
+	/**
+	 * Compresses the color component value to optimize storage by reducing
+	 * redundancy in the data.
+	 * 
+	 * This form of compression helps to save space while maintaining a balance
+	 * between precision and data integrity. Changing the LSB has minimal impact on
+	 * the color, which means that colors are almost visually identical to their
+	 * original values. Additionally, this method ensures that extreme colors like
+	 * pure white (RGB 255, 255, 255) and pure black (RGB 0, 0, 0) are preserved
+	 * accurately.
+	 *
+	 * @param value The original color component value.
+	 * @return The compressed value.
+	 */
 	private int smartCompress(int red) {
 		if ((red & 0x80) != 0)
 			return (red | 0x01) & 0xFF;
 		return red & 0xFE;
-		// return red & (0b1111_1111);
 	}
 
 }
