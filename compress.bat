@@ -24,8 +24,14 @@ brotli --in raw\domainstory-abc.repx --out output\domainstory-abx.repx --quality
 brotli --in raw\domainstory-def.repx --out output\domainstory-dex.repx --quality 11 --verbose --force
 brotli --in raw\edgy-abc.repx --out output\edgy-abx.repx --quality 11 --verbose --force
 brotli --in raw\edgy-def.repx --out output\edgy-dex.repx --quality 11 --verbose --force
+brotli --in raw\eip-abc.repx --out output\eip-abx.repx --quality 11 --verbose --force
+brotli --in raw\eip-def.repx --out output\eip-dex.repx --quality 11 --verbose --force
 brotli --in raw\elastic-abc.repx --out output\elastic-abx.repx --quality 11 --verbose --force
 brotli --in raw\elastic-def.repx --out output\elastic-dex.repx --quality 11 --verbose --force
+brotli --in raw\gcp-abc.repx --out output\gcp-abx.repx --quality 11 --verbose --force
+brotli --in raw\gcp-def.repx --out output\gcp-dex.repx --quality 11 --verbose --force
+brotli --in raw\k8s-abc.repx --out output\k8s-abx.repx --quality 11 --verbose --force
+brotli --in raw\k8s-def.repx --out output\k8s-dex.repx --quality 11 --verbose --force
 brotli --in raw\kubernetes-abc.repx --out output\kubernetes-abx.repx --quality 11 --verbose --force
 brotli --in raw\kubernetes-def.repx --out output\kubernetes-dex.repx --quality 11 --verbose --force
 brotli --in raw\logos-abc.repx --out output\logos-abx.repx --quality 11 --verbose --force
