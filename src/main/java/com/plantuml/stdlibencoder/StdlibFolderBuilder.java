@@ -67,9 +67,9 @@ public class StdlibFolderBuilder {
 	 *             processed.
 	 */
 	public StdlibFolderBuilder(String name) throws IOException {
-		this.dir = new File(name);
+		this.dir = new File("stdlib", name);
 		System.err.println("in " + dir);
-		File rawFolder = rawFolder();
+		final File rawFolder = rawFolder();
 
 		final File spritesFile = new File(rawFolder, name + "-def.repx");
 		final File textFile = new File(rawFolder, name + "-abc.repx");
@@ -119,7 +119,7 @@ public class StdlibFolderBuilder {
 	 */
 	private String readInfo(FileInputStream is) throws IOException {
 		final BufferedReader br = new BufferedReader(new InputStreamReader(is));
-		StringBuilder sb = new StringBuilder();
+		final StringBuilder sb = new StringBuilder();
 		String s;
 		while ((s = br.readLine()) != null) {
 			sb.append(s);
