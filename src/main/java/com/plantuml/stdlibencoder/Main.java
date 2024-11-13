@@ -1,35 +1,36 @@
 package com.plantuml.stdlibencoder;
 
 import java.io.IOException;
+import java.nio.file.Files;
+import java.nio.file.Path;
+import java.nio.file.Paths;
+import java.util.concurrent.ExecutorService;
+import java.util.concurrent.Executors;
+import java.util.stream.Stream;
 
 public class Main {
 
 	public static void main(String[] args) throws IOException {
 		StdlibFolderBuilder.deleteHomeRepx();
-		new StdlibFolderBuilder("archimate");
-		new StdlibFolderBuilder("aws");
-		new StdlibFolderBuilder("awslib");
-		new StdlibFolderBuilder("awslib10");
-		new StdlibFolderBuilder("awslib14");
-		new StdlibFolderBuilder("azure");
-		new StdlibFolderBuilder("C4");
-		new StdlibFolderBuilder("classy");
-		new StdlibFolderBuilder("classy-c4");
-		new StdlibFolderBuilder("cloudinsight");
-		new StdlibFolderBuilder("cloudogu");
-		new StdlibFolderBuilder("DomainStory");
-		new StdlibFolderBuilder("edgy");
-		new StdlibFolderBuilder("eip");
-		new StdlibFolderBuilder("elastic");
-		new StdlibFolderBuilder("gcp");
-		new StdlibFolderBuilder("k8s");
-		new StdlibFolderBuilder("kubernetes");
-		new StdlibFolderBuilder("logos");
-		new StdlibFolderBuilder("material");
-		new StdlibFolderBuilder("office");
-		new StdlibFolderBuilder("osa");
-		new StdlibFolderBuilder("osa2");
-		new StdlibFolderBuilder("tupadr3");
+
+		// Path to the "stdlib" directory
+		final Path stdlibPath = Paths.get("stdlib");
+
+		// Create a fixed thread pool to manage parallel tasks
+		final ExecutorService executor = Executors.newFixedThreadPool(Runtime.getRuntime().availableProcessors());
+
+		try (Stream<Path> paths = Files.list(stdlibPath)) { //
+			paths.filter(Files::isDirectory) //
+					.forEach(dir -> executor.submit(() -> {
+						try {
+							new StdlibFolderBuilder(dir.getFileName().toString());
+						} catch (IOException e) {
+							e.printStackTrace();
+						}
+					}));
+		} finally {
+			executor.shutdown(); // Initiates an orderly shutdown of the thread pool
+		}
 	}
 
 }
