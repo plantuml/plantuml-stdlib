@@ -25,9 +25,9 @@ foreach my $d (@dirs) {
     $n =~ s|^stdlib/||;
     my $m = lc($n);
     my $m_ucf = ucfirst($n);
-    $s .= "name: $m\ndisplay_name: $m_ucf\nauthor: \n";
+    $s .= "name: $m\ndisplay_name: $m_ucf\ndescription: \nauthor: \n";
     foreach (@infos) {
-        if (/VERSION=(.*)/) {$s .= "version: $1\n"}
+        if (/VERSION=(.*)/) {$s .= "version: $1\nrelease: \nlicense: \n"}
         if (/SOURCE=(.*)/)  {$s .= "source: $1\n"}
         if (/LINK=(.*)/)    {$s .= "link: $1\n"}
     }
