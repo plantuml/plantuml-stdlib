@@ -6,7 +6,6 @@ import java.io.File;
 import java.io.FileOutputStream;
 import java.io.FileReader;
 import java.io.IOException;
-import java.io.PrintWriter;
 import java.nio.file.Files;
 import java.util.ArrayList;
 import java.util.List;
@@ -29,21 +28,9 @@ import net.sourceforge.plantuml.klimt.sprite.SpriteMonochrome;
 public class StdlibFolderBuilder {
 
 	/**
-	 * File representing the home repository for included data.
-	 */
-	private static final File HOME_REPX = new File(rawFolder(), "home.repx");
-
-	/**
 	 * Separator used to delineate sections within the sprite data files.
 	 */
 	private static final String SEPARATOR = "\uF8FF";
-
-	/**
-	 * Deletes the home sprite repository file.
-	 */
-	public static void deleteHomeRepx() {
-		HOME_REPX.delete();
-	}
 
 	/**
 	 * Directory containing the files to be processed.
@@ -92,10 +79,6 @@ public class StdlibFolderBuilder {
 			colorImagesOutputStream.close();
 			spritesOutputStream.close();
 		}
-
-		final PrintWriter pw = new PrintWriter(new FileOutputStream(HOME_REPX, true));
-		pw.println(dir.getName());
-		pw.close();
 	}
 
 	/**
