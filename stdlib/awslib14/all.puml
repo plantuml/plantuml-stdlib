@@ -1,9 +1,7 @@
 @startuml
     !include <awslib/AWSCommon>
     !$awslib = %load_json('all.json')
-    !foreach $group in %get_json_keys($awslib)
-        !foreach $item in $awslib[$group]
-            !include <awslib/$group/$item>
-        !endfor
+    !foreach $item in $awslib
+        !include <awslib/$item/all>
     !endfor
 @enduml
