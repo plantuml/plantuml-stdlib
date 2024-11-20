@@ -2,9 +2,7 @@
     !include <azure/AzureCommon>
     !include <azure/AzureC4Integration>
     !$azure = %load_json('all.json')
-    !foreach $group in %get_json_keys($azure)
-        !foreach $item in $azure[$group]
-            !include <azure/$group/$item>
-        !endfor
+    !foreach $item in $azure
+        !include <azure/$item/all>
     !endfor
 @enduml
