@@ -1,7 +1,10 @@
 @startuml
-  !include <azure/AzureCommon>
-  !include <azure/AzureC4Integration>
-  !foreach $item in %splitstr('Networking~DevOps~Security~Databases~Storage~Web~Management~InternetOfThings~Analytics~Compute~Identity~Integration', '~')
-    !include <azure/$item/all.puml>
-  !endfor
+    !include <azure/AzureCommon>
+    !include <azure/AzureC4Integration>
+    !$azure = %load_json('all.json')
+    !foreach $group in %get_json_keys($azure)
+        !foreach $item in $azure[$group]
+            !include <azure/$group/$item>
+        !endfor
+    !endfor
 @enduml
