@@ -1,6 +1,9 @@
 @startuml
-  !include <awslib/AWSCommon>
-  !foreach $item in %splitstr('General~SecurityIdentityCompliance~NetworkingContentDelivery~DeveloperTools~Database~Storage~ApplicationIntegration~Compute~Groups~MediaServices~MachineLearning', '~')
-    !include <awslib/$item/all.puml>
-  !endfor
+    !include <awslib/AWSCommon>
+    !$awslib = %load_json('all.json')
+    !foreach $group in %get_json_keys($awslib)
+        !foreach $item in $awslib[$group]
+            !include <awslib/$group/$item>
+        !endfor
+    !endfor
 @enduml
