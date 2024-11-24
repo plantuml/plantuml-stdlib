@@ -1,0 +1,10 @@
+@startuml
+!include <DomainStory/domainStory>
+
+Boundary(System) {
+    Person(Alice)
+    Conversation(weather)
+    Person(Bob)
+}
+activity(1, Alice, talks about the, weather, with, Bob)
+@enduml
