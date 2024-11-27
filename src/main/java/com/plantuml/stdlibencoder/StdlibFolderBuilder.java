@@ -57,9 +57,9 @@ public class StdlibFolderBuilder {
 		System.err.println("in " + dir);
 		final File rawFolder = rawFolder();
 
-		final File spritesFile = new File(rawFolder, name + "-def.repx");
-		final File textFile = new File(rawFolder, name + "-abc.repx");
-		final File colorImagesFile = new File(rawFolder, name + "-ghi.repx");
+		final File spritesFile = new File(rawFolder, name.toLowerCase() + "-def.repx");
+		final File textFile = new File(rawFolder, name.toLowerCase() + "-abc.repx");
+		final File colorImagesFile = new File(rawFolder, name.toLowerCase() + "-ghi.repx");
 
 		final String infoString = readInfo(new File(dir, "README.md"));
 		System.err.println("infoString:" + infoString.replace('\n', ' '));
