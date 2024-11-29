@@ -40,7 +40,7 @@ public class Main {
 		}
 
 		System.err.println("names=" + names);
-		final Path filePath = Paths.get("raw", "home.repx");
+		final Path filePath = Paths.get("output", "home.repx");
 		Files.writeString(filePath, String.join("\n", names));
 	}
 
