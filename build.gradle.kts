@@ -1,7 +1,6 @@
 plugins {
     id("java")
     id("application")
-    id("com.github.johnrengelman.shadow") version "7.1.2"
     id("eclipse")
 }
 
@@ -12,8 +11,6 @@ repositories {
 dependencies {
     testImplementation("org.junit.jupiter:junit-jupiter-api:5.7.1")
     testRuntimeOnly("org.junit.jupiter:junit-jupiter-engine:5.7.1")
-    implementation("com.beust:jcommander:1.81")
-    implementation("org.fusesource.jansi:jansi:2.4.0")
     implementation("net.sourceforge.plantuml:plantuml:1.2024.5")
 }
 
