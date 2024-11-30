@@ -64,7 +64,7 @@ public class StdlibFolderBuilder {
 		this.texts = new DataOutputStream(new FileOutputStream(textFile));
 		texts.writeUTF(infoString);
 
-		if (infoString.contains("link:")) {
+		if (infoString.contains("link=")) {
 			texts.writeUTF(SEPARATOR);
 			texts.close();
 		} else {
