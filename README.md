@@ -385,7 +385,6 @@ Example of usage:
 ```plantuml
 @startuml
     !include <k8s/Common>
-    !include <k8s/Context>
     !include <k8s/Simplified>
     !include <k8s/OSS/all>
     footer Kubernetes Plant-UML
