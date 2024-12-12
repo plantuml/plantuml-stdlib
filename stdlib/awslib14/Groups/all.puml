@@ -52,10 +52,10 @@ xTJ50GCm34DH6U9e_uNBp7NAzRj_NG9yebAYSuG3VImV6N0e1EZvdB383WIKX34WJ74kUaOm3SOHrLUV
 !endfunction
 
 AWSGroupColoring(AutoScalingGroupGroup, #FFFFFF, #D86613, dashed)
-!define AutoScalingGroupGroup(g_alias, g_label="\nAuto Scaling group") AWSGroupEntity(g_alias, g_label, #D86613, AutoScalingGroup, AutoScalingGroupGroup)
+!define AutoScalingGroupGroup(g_alias, g_label="%n()Auto Scaling group") AWSGroupEntity(g_alias, g_label, #D86613, AutoScalingGroup, AutoScalingGroupGroup)
 
 AWSGroupColoring(AvailabilityZoneGroup, #FFFFFF, #5B9CD5, dashed)
-!define AvailabilityZoneGroup(g_alias, g_label="\n  Availability Zone") AWSGroupEntity(g_alias, g_label, #5B9CD5, AvailabilityZoneGroup)
+!define AvailabilityZoneGroup(g_alias, g_label="%n()  Availability Zone") AWSGroupEntity(g_alias, g_label, #5B9CD5, AvailabilityZoneGroup)
 
 sprite $CorporateDataCenter [64x64/16z] {
 xPN50O0m3003RMp_WN5trzm7FQGnFG73O6n0wtreGUlza2iGSBtlwds-pKUtptVmRr_uwlXP_0bJshx355waGuwlVO6SS8cFW9oYAL9kKe9WcSywp7L-4VVM
@@ -96,10 +96,10 @@ AWSGroupColoring(ElasticBeanstalkContainerGroup, #FFFFFF, #D86613, plain)
 !define ElasticBeanstalkContainerGroup(g_alias, g_label="Elastic Beanstalk container") AWSGroupEntity(g_alias, g_label, #D86613, ElasticBeanstalkContainer, ElasticBeanstalkContainerGroup)
 
 AWSGroupColoring(GenericGroup, #FFFFFF, #5A6B86, dashed)
-!define GenericGroup(g_alias, g_label="\n  Generic group") AWSGroupEntity(g_alias, g_label, #5A6B86, GenericGroup)
+!define GenericGroup(g_alias, g_label="%n()  Generic group") AWSGroupEntity(g_alias, g_label, #5A6B86, GenericGroup)
 
 AWSGroupColoring(GenericAltGroup, #EFF0F3, #Transparent, plain)
-!define GenericAltGroup(g_alias, g_label="\n  Generic group") AWSGroupEntity(g_alias, g_label, #000000, GenericAltGroup)
+!define GenericAltGroup(g_alias, g_label="%n()  Generic group") AWSGroupEntity(g_alias, g_label, #000000, GenericAltGroup)
 
 sprite $GenericBlue [64x64/16z] xS4n4G0000AXtVw1xV47B0y0000u
 
@@ -231,7 +231,7 @@ AWSGroupColoring(RegionGroup, #FFFFFF, #5B9CD5, dotted)
 !define RegionGroup(g_alias, g_label="Region") AWSGroupEntity(g_alias, g_label, #5B9CD5, Region, RegionGroup)
 
 AWSGroupColoring(SecurityGroupGroup, #FFFFFF, #DF3312, plain)
-!define SecurityGroupGroup(g_alias, g_label="\n  Security group") AWSGroupEntity(g_alias, g_label, #DF3312, SecurityGroupGroup)
+!define SecurityGroupGroup(g_alias, g_label="%n()  Security group") AWSGroupEntity(g_alias, g_label, #DF3312, SecurityGroupGroup)
 
 sprite $ServerContents [64x64/16z] xPP30i0m4033nVy_t7DjpzoAP0q_5W2f8yYoyp6C41UUZpf8N7n-vFsVpeSEQy_d3klEu__SuThuuN_jSBN_QuVzzdEUyvpdFEVtxu_xzzVz-_D-01e
 

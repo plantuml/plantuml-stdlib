@@ -111,7 +111,7 @@ rectangle C4VersionDetailsArea <<legendArea>> [
 !$MAX_MESSAGE_SIZE ?= 150
 ' PlantUML supports no DETERMINISTIC/automatic line breaks of "PlantUML line" (C4 Relationships)
 ' therefore Rel...() implements an automatic line break based on spaces (like in all other objects).
-' If a $type contains \n then these are used (and no automatic space based line breaks are done)
+' If a $type contains %n() then these are used (and no automatic space based line breaks are done)
 ' $REL_TECHN_MAX_CHAR_WIDTH defines the automatic line break position
 !$REL_TECHN_MAX_CHAR_WIDTH ?= 35
 !$REL_DESCR_MAX_CHAR_WIDTH ?= 32
@@ -764,7 +764,7 @@ $elementSkin
       !$tagDetails = $tagDetails + ")</size>"
     !endif 
   !else
-    !$brPos = %strpos($legendText, "\n")
+    !$brPos = %strpos($legendText, "%n()")
     !if ($brPos > 0)
       !$tagEntry = $tagEntry + %substr($legendText, 0, $brPos) + " "
       !$details = %substr($legendText, $brPos + 2)
@@ -842,7 +842,7 @@ $elementSkin
       !$tagDetails = $tagDetails + ")</size>"
     !endif 
   !else
-    !$brPos = %strpos($legendText, "\n")
+    !$brPos = %strpos($legendText, "%n()")
     !if ($brPos > 0)
       !$tagEntry = $tagEntry + " " + %substr($legendText, 0, $brPos) + " "
       !$details = %substr($legendText, $brPos + 2)
@@ -870,7 +870,7 @@ $elementSkin
 '' and the & combined tags will be not removed
 '  !if (%strpos($tagStereo, "&") < 0)
   !$dummyAlreadyVariables = $setTagLegendVariables($tagStereo, $bgColor, $fontColor, $borderColor, $shadowing, $shape, $legendText, $legendSprite, $borderStyle, $borderThickness)
-  !$tagCustomLegend = $tagCustomLegend + $tagStereo + "\n"
+  !$tagCustomLegend = $tagCustomLegend + $tagStereo + "%n()"
   !$tagMask = $tagLegendMask( $bgColor, $fontColor, $borderColor, $shadowing, $shape, $sprite, $borderStyle, $borderThickness)
 %set_variable_value("$" + $tagStereo + "LegendMask", $tagMask)
 '  !endif
@@ -885,16 +885,16 @@ $elementSkin
 '' & combined workaround tags are not removed too (and in unlikely cases the color itself could be changed)
 '  !if (%strpos($tagStereo, "&") < 0)
      !$dummyAlreadyVariables = $setTagRelLegendVariables($tagStereo, $textColor, $lineColor, $lineStyle, $legendText, $legendSprite, $lineThickness)
-     !$tagCustomLegend = $tagCustomLegend + $tagStereo + "_Line\n"
+     !$tagCustomLegend = $tagCustomLegend + $tagStereo + "_Line%n()"
 '  !endif
 !endprocedure
 
 !procedure $showActiveLegendEntries($allDefined)
-  !$brPos = %strpos($allDefined, "\n")
+  !$brPos = %strpos($allDefined, "%n()")
   !while ($brPos >= 0)
     !$tagStereo = %substr($allDefined, 0, $brPos)
     !$allDefined = %substr($allDefined, $brPos+2)
-    !$brPos = %strpos($allDefined, "\n")
+    !$brPos = %strpos($allDefined, "%n()")
     !if (%variable_exists("$" + $tagStereo + "Legend"))
       ' </size> is part of legendDetails
       !$part1 = %get_variable_value("$" + $tagStereo + "LegendEntry")
@@ -1037,7 +1037,7 @@ $elementSkin
   !$LEGEND_TITLE_TEXT = $newTitle
 !endprocedure
 
-' tags/stereotypes have to be delimited with \n
+' tags/stereotypes have to be delimited with %n()
 !unquoted procedure SetDefaultLegendEntries($tagStereoEntries)
   !$tagDefaultLegend = $tagStereoEntries
 !endprocedure
@@ -1059,13 +1059,13 @@ $elementSkin
 !unquoted function $breakText($text, $usedNewLine, $widthStr="-1")
 !$width = %intval($widthStr)
 !$multiLine = ""
-!if (%strpos($text, "\n") >= 0)
-  !while (%strpos($text, "\n") >= 0)
-    !$brPos = %strpos($text, "\n")
+!if (%strpos($text, "%n()") >= 0)
+  !while (%strpos($text, "%n()") >= 0)
+    !$brPos = %strpos($text, "%n()")
     !if ($brPos > 0)
       !$multiLine = $multiLine + %substr($text, 0, $brPos) + $usedNewLine
     !else
-      ' <U+00A0> non breaking change that newLine breaks with formats can be used with \n\n 
+      ' <U+00A0> non breaking change that newLine breaks with formats can be used with %n()%n() 
       !$multiLine = $multiLine + "<U+00A0>" + $usedNewLine
     !endif
     !$text = %substr($text, $brPos+2)
@@ -1101,19 +1101,19 @@ $elementSkin
 !endfunction
 
 !unquoted function $breakLabel($text)
-!$usedNewLine = "\n== "
+!$usedNewLine = "%n()== "
 !$multiLine = $breakText($text, $usedNewLine)
 !return $multiLine
 !endfunction
 
 !unquoted function $breakDescr($text, $widthStr)
-  !$usedNewLine = "\n"
+  !$usedNewLine = "%n()"
   !return $breakText($text, $usedNewLine, $widthStr)
 !endfunction
 
 ' $breakTechn() supports //...//; $breakNode() in C4_Deployment supports no //....//
 !unquoted function $breakTechn($text, $widthStr)
-  !$usedNewLine = '</size>//\n//<size:'+$TECHN_FONT_SIZE+'>'
+  !$usedNewLine = '</size>//%n()//<size:'+$TECHN_FONT_SIZE+'>'
   !return $breakText($text, $usedNewLine, $widthStr)
 !endfunction
 
@@ -1125,7 +1125,7 @@ $elementSkin
   !if ($sprite != "")
     !$element = $element + $getSprite($sprite)
     !if ($label != "")
-      !$element = $element + '\n'
+      !$element = $element + '%n()'
     !endif
   !endif
   !if ($label != "")
@@ -1134,10 +1134,10 @@ $elementSkin
     !$element = $element + '<size:0>.</size>'
   !endif
   !if ($techn != "")
-    !$element = $element + '\n//<size:' + $TECHN_FONT_SIZE + '>[' + $breakTechn($techn, '-1') + ']</size>//'
+    !$element = $element + '%n()//<size:' + $TECHN_FONT_SIZE + '>[' + $breakTechn($techn, '-1') + ']</size>//'
   !endif
   !if ($descr != "")
-    !$element = $element + '\n\n' + $descr
+    !$element = $element + '%n()%n()' + $descr
   !endif
   !return $element
 !endfunction
@@ -1185,10 +1185,10 @@ $elementSkin
 !unquoted function AddProperty($col1, $col2 = "", $col3 = "", $col4 = "")
   !if ($propTable == "")
     !if ($propTableCaption != "")
-      !$propTable = $propTableCaption + "\n"
+      !$propTable = $propTableCaption + "%n()"
     !endif
   !else
-    !$propTable = $propTable + "\n"
+    !$propTable = $propTable + "%n()"
   !endif
   !$propTable = $propTable + "| " + $col1 + " |"
   !if ($col2 != "")
@@ -1203,7 +1203,7 @@ $elementSkin
   !return ""
 !endfunction
 
-!unquoted function $getProps($alignedNL = "\n")
+!unquoted function $getProps($alignedNL = "%n()")
   !if ($propTable != "")
     !$retTable = $alignedNL + $propTable
     !$propTable = ""
@@ -1213,11 +1213,11 @@ $elementSkin
 !endfunction
 
 !unquoted function $getProps_L()
-  !return $getProps("\l")
+  !return $getProps("%left_align()")
 !endfunction
 
 !unquoted function $getProps_R()
-  !return $getProps("\r")
+  !return $getProps("%right_align()")
 !endfunction
 
 SetPropertyHeader("Property","Value")
@@ -1450,10 +1450,10 @@ $getLegendArea($alias, $hideStereotype, $details)
   !endif
   !$line = $line + $breakLabel($label)
   !if ($type != "")
-    !$line = $line + '\n<size:' + $TECHN_FONT_SIZE + '>[' + $type + ']</size>'
+    !$line = $line + '%n()<size:' + $TECHN_FONT_SIZE + '>[' + $type + ']</size>'
   !endif
   !if ($descr != "")
-    !$line = $line + '\n\n' + $breakDescr($descr, $BOUNDARY_DESCR_MAX_CHAR_WIDTH)
+    !$line = $line + '%n()%n()' + $breakDescr($descr, $BOUNDARY_DESCR_MAX_CHAR_WIDTH)
   !endif
   !return $line
 !endfunction
@@ -1541,12 +1541,12 @@ UpdateBoundaryStyle("", $bgColor=$BOUNDARY_BG_COLOR, $fontColor=$BOUNDARY_COLOR,
     !endif
   !endif
   !if ($link != "")
-    !$usedNewLine = ']]**\n**[[' + $link + ' '
+    !$usedNewLine = ']]**%n()**[[' + $link + ' '
     ' if sprite and label is empty than the link url is shown (otherwise link cannot be activated at all)
     !$rel = $rel + $breakText($label, $usedNewLine) + ']]**'
   !else
     !if ($label != "")
-      !$usedNewLine = '**\n**'
+      !$usedNewLine = '**%n()**'
       !$rel = $rel + '**' + $breakText($label, $usedNewLine) + '**'
     !else
       !$rel = $rel + '<size:0>.</size>'
@@ -1554,11 +1554,11 @@ UpdateBoundaryStyle("", $bgColor=$BOUNDARY_BG_COLOR, $fontColor=$BOUNDARY_COLOR,
   !endif
   !if ($techn != "")
     ' line break is not deterministic, calculate it
-    !$rel = $rel + '\n//<size:' + $TECHN_FONT_SIZE + '>[' + $breakTechn($techn, $REL_TECHN_MAX_CHAR_WIDTH) + ']</size>//'
+    !$rel = $rel + '%n()//<size:' + $TECHN_FONT_SIZE + '>[' + $breakTechn($techn, $REL_TECHN_MAX_CHAR_WIDTH) + ']</size>//'
   !endif
   !if ($descr != "")
     ' line break is not deterministic, calculate it
-    !$rel = $rel + '\n\n' + $breakDescr($descr, $REL_DESCR_MAX_CHAR_WIDTH)
+    !$rel = $rel + '%n()%n()' + $breakDescr($descr, $REL_DESCR_MAX_CHAR_WIDTH)
   !endif
   !$prop = $getProps()
   !if ($prop != "")

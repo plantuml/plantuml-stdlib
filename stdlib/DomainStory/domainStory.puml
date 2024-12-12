@@ -387,9 +387,9 @@ $declareStyleProperty("", BackgroundColor, Step, modeAdjustedColor("#66fcf1"), $
     ' output below
     !if $iconName
         !if $color
-            $shape "<$iconName{scale=$scale,color=$color}>\r##$label" as $name $computeStereotypes($kind, $tag) $computeColorName($background)
+            $shape "<$iconName{scale=$scale,color=$color}>%right_align()$label" as $name $computeStereotypes($kind, $tag) $computeColorName($background)
         !else
-            $shape "<$iconName{scale=$scale}>\r##$label" as $name $computeStereotypes($kind, $tag) $computeColorName($background)
+            $shape "<$iconName{scale=$scale}>%right_align()$label" as $name $computeStereotypes($kind, $tag) $computeColorName($background)
         !endif
     !else
         $shape $label as $name $computeStereotypes($kind, $tag) $computeColorName($background)
@@ -470,9 +470,9 @@ $extendStyleDeclarations("Actor", "System", "laptop")
     ' output below
     !if $iconName
         !if $color
-            $shape "<$iconName{scale=$scale,color=$color}>\r##$label" as $name $computeStereotypes($kind, $tag) $computeColorName($background)
+            $shape "<$iconName{scale=$scale,color=$color}>%right_align()$label" as $name $computeStereotypes($kind, $tag) $computeColorName($background)
         !else
-            $shape "<$iconName{scale=$scale}>\r##$label" as $name $computeStereotypes($kind, $tag) $computeColorName($background)
+            $shape "<$iconName{scale=$scale}>%right_align()$label" as $name $computeStereotypes($kind, $tag) $computeColorName($background)
         !endif
     !else
         $shape $label as $name $computeStereotypes($kind, $tag) $computeColorName($background)

@@ -542,56 +542,56 @@ skinparam defaultTextAlignment center
     Link: https://www.enterpriseintegrationpatterns.com/patterns/messaging/Message.html
 '/
 !define Message(_alias) rectangle "<$message>" as _alias <<message>> 
-!define Message(_alias, _label) rectangle "<$message>\r _label" as _alias <<message>> 
+!define Message(_alias, _label) rectangle "<$message>%right_align() _label" as _alias <<message>> 
 
 
 /'  EIP Pattern: Command Message
     Link: https://www.enterpriseintegrationpatterns.com/patterns/messaging/CommandMessage.html 
 '/
 !define CommandMessage(_alias) rectangle "<$command_message>" as _alias <<command message>> 
-!define CommandMessage(_alias, _label) rectangle "<$command_message>\r _label" as _alias <<command message>> 
+!define CommandMessage(_alias, _label) rectangle "<$command_message>%right_align() _label" as _alias <<command message>> 
 
 /'  EIP Pattern: Document Message
     Link: https://www.enterpriseintegrationpatterns.com/patterns/messaging/DocumentMessage.html 
 '/
 !define DocumentMessage(_alias) rectangle "<$document_message>" as _alias <<document message>> 
-!define DocumentMessage(_alias, _label) rectangle "<$document_message>\r _label" as _alias <<document message>> 
+!define DocumentMessage(_alias, _label) rectangle "<$document_message>%right_align() _label" as _alias <<document message>> 
 
 /'  EIP Pattern: Event Message
     Link: https://www.enterpriseintegrationpatterns.com/patterns/messaging/EventMessage.html
 '/
 !define EventMessage(_alias) rectangle "<$event_message>" as _alias <<event message>> 
-!define EventMessage(_alias, _label) rectangle "<$event_message>\r _label" as _alias <<event message>> 
+!define EventMessage(_alias, _label) rectangle "<$event_message>%right_align() _label" as _alias <<event message>> 
 
 /'  EIP Pattern: Request-Reply
     Link: https://www.enterpriseintegrationpatterns.com/patterns/messaging/RequestReply.html
 '/
 !define RequestReply(_alias) rectangle "<$request_reply>" as _alias <<request-reply>> 
-!define RequestReply(_alias, _label) rectangle "<$request_reply>\r _label" as _alias <<request-reply>> 
+!define RequestReply(_alias, _label) rectangle "<$request_reply>%right_align() _label" as _alias <<request-reply>> 
 
 /'  EIP Pattern: Return Address
     Link: https://www.enterpriseintegrationpatterns.com/patterns/messaging/ReturnAddress.html
 '/
 !define ReturnAddress(_alias) rectangle "<$return_address>" as _alias <<return address>> 
-!define ReturnAddress(_alias, _label) rectangle "<$return_address>\r _label" as _alias <<return address>> 
+!define ReturnAddress(_alias, _label) rectangle "<$return_address>%right_align() _label" as _alias <<return address>> 
 
 /'  EIP Pattern: Correlation Identifier
     Link https://www.enterpriseintegrationpatterns.com/patterns/messaging/CorrelationIdentifier.html
 '/
 !define CorrelationIdentifier(_alias) rectangle "<$correlation_identifier>" as _alias <<correlation identifier>> 
-!define CorrelationIdentifier(_alias, _label) rectangle "<$correlation_identifier>\r _label" as _alias <<correlation identifier>> 
+!define CorrelationIdentifier(_alias, _label) rectangle "<$correlation_identifier>%right_align() _label" as _alias <<correlation identifier>> 
 
 /'  EIP Pattern: Message Sequence
     Link: https://www.enterpriseintegrationpatterns.com/patterns/messaging/MessageSequence.html
 '/
 !define MessageSequence(_alias) rectangle "<$message_sequence>" as _alias <<message sequence>> 
-!define MessageSequence(_alias, _label) rectangle "<$message_sequence>\r _label" as _alias <<message sequence>> 
+!define MessageSequence(_alias, _label) rectangle "<$message_sequence>%right_align() _label" as _alias <<message sequence>> 
 
 /' EIP Pattern: Message Expiration 
    Link https://www.enterpriseintegrationpatterns.com/patterns/messaging/MessageExpiration.html
 '/
 !define MessageExpiration(_alias) rectangle "<$message_expiration>" as _alias <<message expiration>> 
-!define MessageExpiration(_alias, _label) rectangle "<$message_expiration>\r _label" as _alias <<message expiration>> 
+!define MessageExpiration(_alias, _label) rectangle "<$message_expiration>%right_align() _label" as _alias <<message expiration>> 
 
 /'  EIP Pattern: Format Indicator
     Link: https://www.enterpriseintegrationpatterns.com/patterns/messaging/FormatIndicator.html
@@ -611,20 +611,20 @@ skinparam defaultTextAlignment center
     Link: https://www.enterpriseintegrationpatterns.com/patterns/messaging/MessageRouter.html
 '/
 !define MessageRouter(_alias) rectangle "<$message_router>" as _alias <<message router>> 
-!define MessageRouter(_alias, _label) rectangle "<$message_router>\r _label" as _alias <<message router>> 
+!define MessageRouter(_alias, _label) rectangle "<$message_router>%right_align() _label" as _alias <<message router>> 
 
 /'  EIP Pattern: Contend-based Router
     Link: https://www.enterpriseintegrationpatterns.com/patterns/messaging/ContentBasedRouter.html
     TODO: This should be done in a function, with more flexibility
 '/
 !define ContentBasedRouter(_alias) rectangle "<$content_based_router>" as _alias <<content-based router>> 
-!define ContentBasedRouter(_alias, _label) rectangle "<$content_based_router>\r _label" as _alias <<content-based router>> 
+!define ContentBasedRouter(_alias, _label) rectangle "<$content_based_router>%right_align() _label" as _alias <<content-based router>> 
 
 /'  EIP Pattern: Message Filter
     Link: https://www.enterpriseintegrationpatterns.com/patterns/messaging/Filter.html
 '/
 !define MessageFilter(_alias) rectangle "<$message_filter>" as _alias <<message filter>> 
-!define MessageFilter(_alias, _label) rectangle "<$message_filter>\r _label" as _alias <<message filter>> 
+!define MessageFilter(_alias, _label) rectangle "<$message_filter>%right_align() _label" as _alias <<message filter>> 
 
 /'  EIP Pattern: Dynamic Router
     Link: https://www.enterpriseintegrationpatterns.com/patterns/messaging/DynamicRouter.html
@@ -632,13 +632,13 @@ skinparam defaultTextAlignment center
 
 ' Does require a dynamic rulebase to be linked autoamtically
 !definelong DynamicRouter(_alias, _rulebase) 
-rectangle "<$message_router>\r" as _alias <<dynamic message router>> 
+rectangle "<$message_router>%right_align()" as _alias <<dynamic message router>> 
 _alias -- _rulebase
 !enddefinelong
 
 ' Does require a dynamic rulebase to be linked autoamtically
 !definelong DynamicRouter(_alias, _label, _rulebase) 
-rectangle "<$message_router>\r _label" as _alias <<dynamic message router>>
+rectangle "<$message_router>%right_align() _label" as _alias <<dynamic message router>>
 _alias -- _rulebase
 !enddefinelong
 
@@ -646,35 +646,35 @@ _alias -- _rulebase
     Link: https://www.enterpriseintegrationpatterns.com/patterns/messaging/RecipientList.html
 '/
 !define RecipientList(_alias) rectangle "<$recipient_list>" as _alias <<recipient list>> 
-!define RecipientList(_alias, _label) rectangle "<$recipient_list>\r _label" as _alias <<recipient list>> 
+!define RecipientList(_alias, _label) rectangle "<$recipient_list>%right_align() _label" as _alias <<recipient list>> 
 
 
 /'  EIP Pattern: Splitter
     Link: https://www.enterpriseintegrationpatterns.com/patterns/messaging/Sequencer.html
 '/
 !define Splitter(_alias) rectangle "<$splitter>" as _alias <<splitter>> 
-!define Splitter(_alias, _label) rectangle "<$splitter>\r _label" as _alias <<splitter>> 
+!define Splitter(_alias, _label) rectangle "<$splitter>%right_align() _label" as _alias <<splitter>> 
 
 
 /'  EIP Pattern: Aggregator
     Link: https://www.enterpriseintegrationpatterns.com/patterns/messaging/Aggregator.html
 '/
 !define Aggregator(_alias) rectangle "<$aggregator>" as _alias <<aggregator>>
-!define Aggregator(_alias, _label) rectangle "<$aggregator>\r _label" as _alias <<aggregator>>
+!define Aggregator(_alias, _label) rectangle "<$aggregator>%right_align() _label" as _alias <<aggregator>>
 
 
 /'  EIP Pattern: Resequencer
     Link: https://www.enterpriseintegrationpatterns.com/patterns/messaging/Resequencer.html
 '/
 !define Resequencer(_alias) rectangle "<$resequencer>" as _alias <<resequencer>>
-!define Resequencer(_alias, _label) rectangle "<$resequencer>\r _label" as _alias <<resequencer>>
+!define Resequencer(_alias, _label) rectangle "<$resequencer>%right_align() _label" as _alias <<resequencer>>
 
 
 /'  EIP Pattern: Composed Msg. Processor
     Link: https://www.enterpriseintegrationpatterns.com/patterns/messaging/Resequencer.html
 '/
 !define ComposedMessageProcessor(_alias) rectangle "<$composed_message_processor>" as _alias <<composed msg processor>>
-!define ComposedMessageProcessor(_alias, _label) rectangle "<$composed_message_processor>\r _label" as _alias <<composed msg processor>>
+!define ComposedMessageProcessor(_alias, _label) rectangle "<$composed_message_processor>%right_align() _label" as _alias <<composed msg processor>>
 
 /'  EIP Pattern: Scatter-Gather
     Link: https://www.enterpriseintegrationpatterns.com/patterns/messaging/BroadcastAggregate.html
@@ -685,14 +685,14 @@ _alias -- _rulebase
     Link: https://www.enterpriseintegrationpatterns.com/patterns/messaging/RoutingTable.html
 '/
 !define RoutingSlip(_alias) rectangle "<$routing_slip>" as _alias <<routing slip>>
-!define RoutingSlip(_alias, _label) rectangle "<$routing_slip>\r _label" as _alias <<routing slip>>
+!define RoutingSlip(_alias, _label) rectangle "<$routing_slip>%right_align() _label" as _alias <<routing slip>>
 
 
 /'  EIP Pattern: Process Manager 
     Link: https://www.enterpriseintegrationpatterns.com/patterns/messaging/ProcessManager.html
 '/
 !define ProcessManager(_alias) rectangle "<$process_manager>" as _alias <<process manager>>
-!define ProcessManager(_alias, _label) rectangle "<$process_manager>\r _label" as _alias <<process manager>>
+!define ProcessManager(_alias, _label) rectangle "<$process_manager>%right_align() _label" as _alias <<process manager>>
 
 
 /'  EIP Pattern: Message Broker
@@ -709,28 +709,28 @@ _alias -- _rulebase
     Link: https://www.enterpriseintegrationpatterns.com/patterns/messaging/MessageTranslator.html
 '/
 !define MessageTranslator(_alias) rectangle "<$message_translator>" as _alias <<message translator>>
-!define MessageTranslator(_alias, _label) rectangle "<$message_translator>\r _label" as _alias <<message translator>>
+!define MessageTranslator(_alias, _label) rectangle "<$message_translator>%right_align() _label" as _alias <<message translator>>
 
 /'  EIP Pattern: Envelope Wrapper
     Link: https://www.enterpriseintegrationpatterns.com/patterns/messaging/EnvelopeWrapper.html
 '/
 !define Wrapper(_alias) rectangle "<$wrapper>" as _alias <<wrapper>>
-!define Wrapper(_alias, _label) rectangle "<$wrapper>\r _label" as _alias <<wrapper>>
+!define Wrapper(_alias, _label) rectangle "<$wrapper>%right_align() _label" as _alias <<wrapper>>
 !define Unwrapper(_alias) rectangle "<$unwrapper>" as _alias <<unwrapper>>
-!define Unwrapper(_alias, _label) rectangle "<$unwrapper>\r _label" as _alias <<unwrapper>>
+!define Unwrapper(_alias, _label) rectangle "<$unwrapper>%right_align() _label" as _alias <<unwrapper>>
 
 /'  EIP Pattern: Data Enricher
     Link: https://www.enterpriseintegrationpatterns.com/patterns/messaging/DataEnricher.html
 '/
 ' Does require a external data source to be linked autoamtically
 !definelong DataEnricher(_alias, _datasource) 
-rectangle "<$data_enricher>\r" as _alias <<data enricher>> 
+rectangle "<$data_enricher>%right_align()" as _alias <<data enricher>> 
 _alias -- _datasource
 !enddefinelong
 
 ' Does require a external data source to be linked autoamtically
 !definelong DataEnricher(_alias, _label, _datasource) 
-rectangle "<$data_enricher>\r _label" as _alias <<data enricher>>
+rectangle "<$data_enricher>%right_align() _label" as _alias <<data enricher>>
 _alias -- _datasource
 !enddefinelong
 
@@ -738,7 +738,7 @@ _alias -- _datasource
     Link: https://www.enterpriseintegrationpatterns.com/patterns/messaging/ContentFilter.html
 '/
 !define ContentFilter(_alias) rectangle "<$content_filter>" as _alias <<content filter>>
-!define ContentFilter(_alias, _label) rectangle "<$content_filter>\r _label" as _alias <<content filter>>
+!define ContentFilter(_alias, _label) rectangle "<$content_filter>%right_align() _label" as _alias <<content filter>>
 
 /'  EIP Pattern: Claim Check
     Link: https://www.enterpriseintegrationpatterns.com/patterns/messaging/ClaimCheck.html
@@ -749,7 +749,7 @@ _alias -- _datasource
     Link: https://www.enterpriseintegrationpatterns.com/patterns/messaging/Normalizer.html
 '/
 !define Normalizer(_alias) rectangle "<$normalizer>" as _alias <<normalizer>> 
-!define Normalizer(_alias, _label) rectangle "<$normalizer>\r _label" as _alias <<normalizer>> 
+!define Normalizer(_alias, _label) rectangle "<$normalizer>%right_align() _label" as _alias <<normalizer>> 
 
 /'  EIP Pattern: Canonical Data Model 
     Link: https://www.enterpriseintegrationpatterns.com/patterns/messaging/CanonicalDataModel.html
@@ -764,39 +764,39 @@ _alias -- _datasource
     Link: https://www.enterpriseintegrationpatterns.com/patterns/messaging/MessageEndpoint.html
 '/  
 !define MessageEndpoint(_alias) rectangle "<$message_endpoint>" as _alias <<message endpoint>> 
-!define MessageEndpoint(_alias, _label) rectangle "<$message_endpoint>\r _label" as _alias <<message endpoint>> 
+!define MessageEndpoint(_alias, _label) rectangle "<$message_endpoint>%right_align() _label" as _alias <<message endpoint>> 
 
 /'  EIP Pattern: Messaging Gateway 
     Link: https://www.enterpriseintegrationpatterns.com/patterns/messaging/MessagingGateway.html
 '/
 !define MessagingGateway(_alias) rectangle "<$messaging_gateway>" as _alias <<messaging gateway>> 
-!define MessagingGateway(_alias, _label) rectangle "<$messaging_gateway>\r _label" as _alias <<messaging gateway>> 
+!define MessagingGateway(_alias, _label) rectangle "<$messaging_gateway>%right_align() _label" as _alias <<messaging gateway>> 
 
 /'  EIP Pattern: Messaging Mapper
     Link: https://www.enterpriseintegrationpatterns.com/patterns/messaging/MessagingMapper.html
 '/
 !define MessagingMapper(_alias) rectangle "<$messaging_mapper>" as _alias <<messaging mapper>> 
-!define MessagingMapper(_alias, _label) rectangle "<$messaging_mapper>\r _label" as _alias <<messaging mapper>> 
+!define MessagingMapper(_alias, _label) rectangle "<$messaging_mapper>%right_align() _label" as _alias <<messaging mapper>> 
 
 /'  EIP Pattern: Transactional client
     Link: https://www.enterpriseintegrationpatterns.com/patterns/messaging/TransactionalClient.html
 '/
 !define TransactionalProducer(_alias) rectangle "<$transactional_producer>" as _alias <<transactional producer>> 
-!define TransactionalProducer(_alias, _label) rectangle "<$transactional_producer>\r _label" as _alias <<transactional producer>> 
+!define TransactionalProducer(_alias, _label) rectangle "<$transactional_producer>%right_align() _label" as _alias <<transactional producer>> 
 !define TransactionalConsumer(_alias) rectangle "<$transactional_consumer>" as _alias <<transactional consumer>> 
-!define TransactionalConsumer(_alias, _label) rectangle "<$transactional_consumer>\r _label" as _alias <<transactional consumer>> 
+!define TransactionalConsumer(_alias, _label) rectangle "<$transactional_consumer>%right_align() _label" as _alias <<transactional consumer>> 
 
 /'  EIP Pattern: Polling Consumer
     Link: https://www.enterpriseintegrationpatterns.com/patterns/messaging/PollingConsumer.html
 '/
 !define PollingConsumer(_alias) rectangle "<$polling_consumer>" as _alias <<polling consumer>> 
-!define PollingConsumer(_alias, _label) rectangle "<$polling_consumer>\r _label" as _alias <<polling consumer>> 
+!define PollingConsumer(_alias, _label) rectangle "<$polling_consumer>%right_align() _label" as _alias <<polling consumer>> 
 
 /'  EIP Pattern: Event-Driven Consumer 
     Link: https://www.enterpriseintegrationpatterns.com/patterns/messaging/EventDrivenConsumer.html
 '/
 !define EventDrivenConsumer(_alias) rectangle "<$eventdriven_consumer>" as _alias <<event-driven consumer>> 
-!define EventDrivenConsumer(_alias, _label) rectangle "<$eventdriven_consumer>\r _label" as _alias <<event-driven consumer>> 
+!define EventDrivenConsumer(_alias, _label) rectangle "<$eventdriven_consumer>%right_align() _label" as _alias <<event-driven consumer>> 
 
 /'  EIP Pattern: Competing Consumers
     Link: https://www.enterpriseintegrationpatterns.com/patterns/messaging/CompetingConsumers.html
@@ -807,21 +807,21 @@ _alias -- _datasource
     Link: https://www.enterpriseintegrationpatterns.com/patterns/messaging/MessageDispatcher.html
 '/
 !define MessageDispatcher(_alias) rectangle "<$message_dispatcher>" as _alias <<message dispatcher>> 
-!define MessageDispatcher(_alias, _label) rectangle "<$message_dispatcher>\r _label" as _alias <<message dispatcher>> 
+!define MessageDispatcher(_alias, _label) rectangle "<$message_dispatcher>%right_align() _label" as _alias <<message dispatcher>> 
 
 /'  EIP Pattern: Selective Consumer
     Link: https://www.enterpriseintegrationpatterns.com/patterns/messaging/MessageSelector.html
 '/
 !define SelectiveConsumer(_alias) rectangle "<$selective_consumer>" as _alias <<selective consumer>> 
-!define SelectiveConsumer(_alias, _label) rectangle "<$selective_consumer>\r _label" as _alias <<selective consumer>> 
+!define SelectiveConsumer(_alias, _label) rectangle "<$selective_consumer>%right_align() _label" as _alias <<selective consumer>> 
 
 /'  EIP Pattern: Durable Consumer
     Link: https://www.enterpriseintegrationpatterns.com/patterns/messaging/DurableSubscription.html
 '/
 !define DurableSubscriber(_alias) rectangle "<$durable_subscriber>" as _alias <<durable subscriber>> 
-!define DurableSubscriber(_alias, _label) rectangle "<$durable_subscriber>\r _label" as _alias <<durable subscriber>> 
+!define DurableSubscriber(_alias, _label) rectangle "<$durable_subscriber>%right_align() _label" as _alias <<durable subscriber>> 
 !define NonDurableSubscriber(_alias) rectangle "<$nondurable_subscriber>" as _alias <<non-durable subscriber>> 
-!define NonDurableSubscriber(_alias, _label) rectangle "<$nondurable_subscriber>\r _label" as _alias <<non-durable subscriber>> 
+!define NonDurableSubscriber(_alias, _label) rectangle "<$nondurable_subscriber>%right_align() _label" as _alias <<non-durable subscriber>> 
 
 /'  EIP Pattern: Idempotent Receiver
     Link: https://www.enterpriseintegrationpatterns.com/patterns/messaging/IdempotentReceiver.html
@@ -832,7 +832,7 @@ _alias -- _datasource
     Link: https://www.enterpriseintegrationpatterns.com/patterns/messaging/
 '/
 !define ServiceActivator(_alias) rectangle "<$service_activator>" as _alias <<service activator>> 
-!define ServiceActivator(_alias, _label) rectangle "<$service_activator>\r _label" as _alias <<service activator>> 
+!define ServiceActivator(_alias, _label) rectangle "<$service_activator>%right_align() _label" as _alias <<service activator>> 
 
 /'  ########################################################
     ################## Messaging Channels  ################# 
@@ -842,37 +842,37 @@ _alias -- _datasource
     Link: https://www.enterpriseintegrationpatterns.com/patterns/messaging/MessageChannel.html
 '/
 !define MsgChannel(_alias) rectangle "<$queue>" as _alias <<message channel>> 
-!define MsgChannel(_alias, _label) rectangle "<$queue>\r _label" as _alias <<message channel>> 
+!define MsgChannel(_alias, _label) rectangle "<$queue>%right_align() _label" as _alias <<message channel>> 
 
 /'  EIP Pattern: Point-to-Point Channel 
     Link: https://www.enterpriseintegrationpatterns.com/patterns/messaging/PointToPointChannel.html
 '/
 !define P2PChannel(_alias) rectangle "<$queue>" as _alias <<point-to-point channel>> 
-!define P2PChannel(_alias, _label) rectangle "<$queue>\r _label" as _alias <<point-to-point channel>> 
+!define P2PChannel(_alias, _label) rectangle "<$queue>%right_align() _label" as _alias <<point-to-point channel>> 
 
 /'  EIP Pattern: Publish-Subscribe Channel 
     Link: https://www.enterpriseintegrationpatterns.com/patterns/messaging/PublishSubscribeChannel.html
 '/
 !define PubSubChannel(_alias) rectangle "<$queue>" as _alias <<publish-subscribe channel>> 
-!define PubSubChannel(_alias, _label) rectangle "<$queue>\r _label" as _alias <<publish-subscribe channel>> 
+!define PubSubChannel(_alias, _label) rectangle "<$queue>%right_align() _label" as _alias <<publish-subscribe channel>> 
 
 /'  EIP Pattern: Datatype Channel
     Link: https://www.enterpriseintegrationpatterns.com/patterns/messaging/DatatypeChannel.html
 '/
 !define DatatypeChannel(_alias) rectangle "<$datatype_channel>" as _alias <<datatype channel>> 
-!define DatatypeChannel(_alias, _label) rectangle "<$datatype_channel>\r _label" as _alias <<datatype channel>> 
+!define DatatypeChannel(_alias, _label) rectangle "<$datatype_channel>%right_align() _label" as _alias <<datatype channel>> 
 
 /'  EIP Pattern: Invalid Message Channel 
     Link: https://www.enterpriseintegrationpatterns.com/patterns/messaging/InvalidMessageChannel.html
 '/
 !define InvalidMsgChannel(_alias) rectangle "<$invalid_message_channel>" as _alias <<invalid message channel>> 
-!define InvalidMsgChannel(_alias, _label) rectangle "<$invalid_message_channel>\r _label" as _alias <<invalid message channel>> 
+!define InvalidMsgChannel(_alias, _label) rectangle "<$invalid_message_channel>%right_align() _label" as _alias <<invalid message channel>> 
 
 /'  EIP Pattern: Dead Letter Channel 
     Link: https://www.enterpriseintegrationpatterns.com/patterns/messaging/DeadLetterChannel.html
 '/
 !define DeadLetterChannel(_alias) rectangle "<$dead_letter_queue>" as _alias <<dead letter channel>> 
-!define DeadLetterChannel(_alias, _label) rectangle "<$dead_letter_queue>\r _label" as _alias <<dead letter channel>> 
+!define DeadLetterChannel(_alias, _label) rectangle "<$dead_letter_queue>%right_align() _label" as _alias <<dead letter channel>> 
 
 /'  EIP Pattern: Guaranteed Delivery
     Link: https://www.enterpriseintegrationpatterns.com/patterns/messaging/GuaranteedMessaging.html
@@ -883,21 +883,21 @@ _alias -- _datasource
     Link: https://www.Leftenterpriseintegrationpatterns.com/patterns/messaging/ChannelAdapter.html
 '/
 !define ChannelAdapterLeft(_alias) rectangle "<$channel_adapter_left>" as _alias <<channel adapter left>> 
-!define ChannelAdapterLeft(_alias, _label) rectangle "<$channel_adapter_left>\r _label" as _alias <<channel adapter left>> 
+!define ChannelAdapterLeft(_alias, _label) rectangle "<$channel_adapter_left>%right_align() _label" as _alias <<channel adapter left>> 
 !define ChannelAdapterRight(_alias) rectangle "<$channel_adapter_right>" as _alias <<channel adapter right>> 
-!define ChannelAdapterRight(_alias, _label) rectangle "<$channel_adapter_right>\r _label" as _alias <<channel adapter right>> 
+!define ChannelAdapterRight(_alias, _label) rectangle "<$channel_adapter_right>%right_align() _label" as _alias <<channel adapter right>> 
 
 /'  EIP Pattern: Messaging Bridge
     Link: https://www.enterpriseintegrationpatterns.com/patterns/messaging/MessagingBridge.html
 '/
 !define MsgBridge(_alias) rectangle "<$bridge>" as _alias <<messaging bridge>> 
-!define MsgBridge(_alias, _label) rectangle "<$bridge>\r _label" as _alias <<messaging bridge>> 
+!define MsgBridge(_alias, _label) rectangle "<$bridge>%right_align() _label" as _alias <<messaging bridge>> 
 
 /'  EIP Pattern: Message Bus 
     Link: https://www.enterpriseintegrationpatterns.com/patterns/messaging/MessageBus.html
 '/
 !define MsgBus(_alias) rectangle "<$message_bus>" as _alias <<message bus>> 
-!define MsgBus(_alias, _label) rectangle "<$message_bus>\r _label" as _alias <<message bus>> 
+!define MsgBus(_alias, _label) rectangle "<$message_bus>%right_align() _label" as _alias <<message bus>> 
 
 
 /'  ########################################################
@@ -920,14 +920,14 @@ Hide <<control bus>> stereotype
     Link: https://www.enterpriseintegrationpatterns.com/patterns/messaging/Detour.html
 '/
 !define Detour(_alias) rectangle "<$detour>" as _alias <<detour>> 
-!define Detour(_alias, _label) rectangle "<$detour>\r _label" as _alias <<detour>> 
+!define Detour(_alias, _label) rectangle "<$detour>%right_align() _label" as _alias <<detour>> 
 
 
 /'  EIP Pattern: Wire Tap
     Link: https://www.enterpriseintegrationpatterns.com/patterns/messaging/WireTap.html
 '/
 !define WireTap(_alias) rectangle "<$wire_tap>" as _alias <<wire tap>> 
-!define WireTap(_alias, _label) rectangle "<$wire_tap>\r _label" as _alias <<wire tap>> 
+!define WireTap(_alias, _label) rectangle "<$wire_tap>%right_align() _label" as _alias <<wire tap>> 
 
 /'  EIP Pattern: Message History
     Link: https://www.enterpriseintegrationpatterns.com/patterns/messaging/MessageHistory.html
@@ -938,19 +938,19 @@ Hide <<control bus>> stereotype
     Link: https://www.enterpriseintegrationpatterns.com/patterns/messaging/MessageStore.html
 '/
 !define MessageStore(_alias) rectangle "<$message_store>" as _alias <<message store>> 
-!define MessageStore(_alias, _label) rectangle "<$message_store>\r _label" as _alias <<message store>> 
+!define MessageStore(_alias, _label) rectangle "<$message_store>%right_align() _label" as _alias <<message store>> 
 
 /'  EIP Patern: Smart Proxy 
     Link: https://www.enterpriseintegrationpatterns.com/patterns/messaging/SmartProxy.html
 '/
 !define SmartProxy(_alias) rectangle "<$smart_proxy>" as _alias <<smart proxy>> 
-!define SmartProxy(_alias, _label) rectangle "<$smart_proxy>\r _label" as _alias <<smart proxy>> 
+!define SmartProxy(_alias, _label) rectangle "<$smart_proxy>%right_align() _label" as _alias <<smart proxy>> 
 
 /'  EIP Pattern: Test Message 
     Link: https://www.enterpriseintegrationpatterns.com/patterns/messaging/TestMessage.html 
 '/
 !define TestMessage(_alias) rectangle "<$test_message>" as _alias <<test message>> 
-!define TestMessage(_alias, _label) rectangle "<$test_message>\r _label" as _alias <<test message>> 
+!define TestMessage(_alias, _label) rectangle "<$test_message>%right_align() _label" as _alias <<test message>> 
 
 
 /'  EIP Pattern: Channel Purger
@@ -958,7 +958,7 @@ Hide <<control bus>> stereotype
 '/
  
 !define ChannelPurger(_alias) rectangle "<$channel_purger>" as _alias <<channel purger>> 
-!define ChannelPurger(_alias, _label) rectangle "<$channel_purger>\r _label" as _alias <<channel purger>> 
+!define ChannelPurger(_alias, _label) rectangle "<$channel_purger>%right_align() _label" as _alias <<channel purger>> 
 
 /'  ########################################################
     ######################################################## 

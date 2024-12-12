@@ -139,7 +139,7 @@ skinparam interface<<router>> {
     BackgroundColor #FEEDE2
 	BorderColor #F58536
 }
-skinparam interface<<NetworkingContentDelivery\nAmazonVPC router>> {
+skinparam interface<<NetworkingContentDelivery%n()AmazonVPC router>> {
     BackgroundColor #FEEDE2
 	BorderColor #F58536
 }
@@ -151,8 +151,8 @@ skinparam interface<<NetworkingContentDelivery\nAmazonVPC router>> {
 PUML_ENTITY(e_type,e_color,e_sprite,label,alias,e_stereo)
 !enddefinelong
 
-!define NETWORKINGCONTENTDELIVERY_AMAZONVPC_ROUTER(alias) PUML_ENTITY(interface,#F58536,NetworkingContentDelivery_AmazonVPC_router,alias,NetworkingContentDelivery\nAmazonVPC router)
+!define NETWORKINGCONTENTDELIVERY_AMAZONVPC_ROUTER(alias) PUML_ENTITY(interface,#F58536,NetworkingContentDelivery_AmazonVPC_router,alias,NetworkingContentDelivery%n()AmazonVPC router)
 
-!definelong NETWORKINGCONTENTDELIVERY_AMAZONVPC_ROUTER(alias,label,e_type="interface",e_color="#F58536",e_stereo="NetworkingContentDelivery\\nAmazonVPC router",e_sprite="NetworkingContentDelivery_AmazonVPC_router")
+!definelong NETWORKINGCONTENTDELIVERY_AMAZONVPC_ROUTER(alias,label,e_type="interface",e_color="#F58536",e_stereo="NetworkingContentDelivery%n()AmazonVPC router",e_sprite="NetworkingContentDelivery_AmazonVPC_router")
 PUML_ENTITY(e_type,e_color,e_sprite,label,alias,e_stereo)
 !enddefinelong

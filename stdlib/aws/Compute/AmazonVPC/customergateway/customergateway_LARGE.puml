@@ -645,7 +645,7 @@ skinparam interface<<**customergateway**>> {
     BackgroundColor #FEEDE2
 	BorderColor #F58536
 }
-skinparam interface<<**Compute AmazonVPC**\n**customergateway**>> {
+skinparam interface<<**Compute AmazonVPC**%n()**customergateway**>> {
     BackgroundColor #FEEDE2
 	BorderColor #F58536
 }
@@ -657,8 +657,8 @@ skinparam interface<<**Compute AmazonVPC**\n**customergateway**>> {
 PUML_ENTITY(e_type,e_color,e_sprite,label,alias,e_stereo)
 !enddefinelong
 
-!define COMPUTE_AMAZONVPC_CUSTOMERGATEWAY_LARGE(alias) PUML_ENTITY(interface,#F58536,Compute_AmazonVPC_customergateway_LARGE,alias,**Compute AmazonVPC**\n**customergateway**)
+!define COMPUTE_AMAZONVPC_CUSTOMERGATEWAY_LARGE(alias) PUML_ENTITY(interface,#F58536,Compute_AmazonVPC_customergateway_LARGE,alias,**Compute AmazonVPC**%n()**customergateway**)
 
-!definelong COMPUTE_AMAZONVPC_CUSTOMERGATEWAY_LARGE(alias,label,e_type="interface",e_color="#F58536",e_stereo="**Compute AmazonVPC**\\n**customergateway**",e_sprite="Compute_AmazonVPC_customergateway_LARGE")
+!definelong COMPUTE_AMAZONVPC_CUSTOMERGATEWAY_LARGE(alias,label,e_type="interface",e_color="#F58536",e_stereo="**Compute AmazonVPC**%n()**customergateway**",e_sprite="Compute_AmazonVPC_customergateway_LARGE")
 PUML_ENTITY(e_type,e_color,e_sprite,label,alias,e_stereo)
 !enddefinelong

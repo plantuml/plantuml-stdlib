@@ -41,11 +41,11 @@ skinparam rectangle<<e_stereo>> {
 ' ##################################
 
 !definelong KubernetesEntity(e_alias, e_label, e_techn, e_color, e_sprite, e_stereo)
-rectangle "==e_label\n<color:e_color><$e_sprite></color>\n//<size:TECHN_FONT_SIZE>[e_techn]</size>//" <<e_stereo>> as e_alias
+rectangle "==e_label%n()<color:e_color><$e_sprite></color>%n()//<size:TECHN_FONT_SIZE>[e_techn]</size>//" <<e_stereo>> as e_alias
 !enddefinelong
 
 !definelong KubernetesEntity(e_alias, e_label, e_techn, e_descr, e_color, e_sprite, e_stereo)
-rectangle "==e_label\n<color:e_color><$e_sprite></color>\n//<size:TECHN_FONT_SIZE>[e_techn]</size>//\n\n e_descr" <<e_stereo>> as e_alias
+rectangle "==e_label%n()<color:e_color><$e_sprite></color>%n()//<size:TECHN_FONT_SIZE>[e_techn]</size>//%n()%n() e_descr" <<e_stereo>> as e_alias
 !enddefinelong
 
 !include <C4/C4>
@@ -106,23 +106,23 @@ skinparam rectangle<<service>> {
 
 ' cluster
 !define Cluster(e_alias, e_label) rectangle "==e_label" <<cluster>> as e_alias
-!define Cluster(e_alias, e_label, e_type) rectangle "==e_label\n<size:TECHN_FONT_SIZE>[e_type]</size>" <<cluster>> as e_alias
+!define Cluster(e_alias, e_label, e_type) rectangle "==e_label%n()<size:TECHN_FONT_SIZE>[e_type]</size>" <<cluster>> as e_alias
 
 ' namespace
 !define Namespace(e_alias, e_label) rectangle "==e_label" <<namespace>> as e_alias
-!define Namespace(e_alias, e_label, e_type) rectangle "==e_label\n<size:TECHN_FONT_SIZE>[e_type]</size>" <<namespace>> as e_alias
+!define Namespace(e_alias, e_label, e_type) rectangle "==e_label%n()<size:TECHN_FONT_SIZE>[e_type]</size>" <<namespace>> as e_alias
 
 ' node
 !define Node(e_alias, e_label) rectangle "==e_label" <<node>> as e_alias
-!define Node(e_alias, e_label, e_type) rectangle "==e_label\n<size:TECHN_FONT_SIZE>[e_type]</size>" <<node>> as e_alias
+!define Node(e_alias, e_label, e_type) rectangle "==e_label%n()<size:TECHN_FONT_SIZE>[e_type]</size>" <<node>> as e_alias
 
 ' pod
 !define Pod(e_alias, e_label) rectangle "==e_label" <<pod>> as e_alias
-!define Pod(e_alias, e_label, e_type) rectangle "==e_label\n<size:TECHN_FONT_SIZE>[e_type]</size>" <<pod>> as e_alias
+!define Pod(e_alias, e_label, e_type) rectangle "==e_label%n()<size:TECHN_FONT_SIZE>[e_type]</size>" <<pod>> as e_alias
 
 ' service
 !define Service(e_alias, e_label) rectangle "==e_label" <<service>> as e_alias
-!define Service(e_alias, e_label, e_type) rectangle "==e_label\n<size:TECHN_FONT_SIZE>[e_type]</size>" <<service>> as e_alias
+!define Service(e_alias, e_label, e_type) rectangle "==e_label%n()<size:TECHN_FONT_SIZE>[e_type]</size>" <<service>> as e_alias
 
 ' Kubernetes Elements
 !define Cluster_Boundary(e_alias, e_label) Cluster(e_alias, e_label)

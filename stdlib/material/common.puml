@@ -57,4 +57,4 @@ Creates an aliased labeled entity with a sprite and stereotype
 
 ........................................
 '/
-!define SPRITE_ENT_L(e_alias, e_stereo, e_label, e_sprite, e_color = "Black", e_scale = "1", e_type = "rectangle") e_type "<color:e_color><$e_sprite{scale=e_scale}></color>\r e_label" as e_alias <<e_stereo>>
+!define SPRITE_ENT_L(e_alias, e_stereo, e_label, e_sprite, e_color = "Black", e_scale = "1", e_type = "rectangle") e_type "<color:e_color><$e_sprite{scale=e_scale}></color>%right_align() e_label" as e_alias <<e_stereo>>

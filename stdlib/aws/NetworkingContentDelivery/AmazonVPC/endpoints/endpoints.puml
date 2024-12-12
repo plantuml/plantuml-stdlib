@@ -139,7 +139,7 @@ skinparam interface<<endpoints>> {
     BackgroundColor #FEEDE2
 	BorderColor #F58536
 }
-skinparam interface<<NetworkingContentDelivery\nAmazonVPC endpoints>> {
+skinparam interface<<NetworkingContentDelivery%n()AmazonVPC endpoints>> {
     BackgroundColor #FEEDE2
 	BorderColor #F58536
 }
@@ -151,8 +151,8 @@ skinparam interface<<NetworkingContentDelivery\nAmazonVPC endpoints>> {
 PUML_ENTITY(e_type,e_color,e_sprite,label,alias,e_stereo)
 !enddefinelong
 
-!define NETWORKINGCONTENTDELIVERY_AMAZONVPC_ENDPOINTS(alias) PUML_ENTITY(interface,#F58536,NetworkingContentDelivery_AmazonVPC_endpoints,alias,NetworkingContentDelivery\nAmazonVPC endpoints)
+!define NETWORKINGCONTENTDELIVERY_AMAZONVPC_ENDPOINTS(alias) PUML_ENTITY(interface,#F58536,NetworkingContentDelivery_AmazonVPC_endpoints,alias,NetworkingContentDelivery%n()AmazonVPC endpoints)
 
-!definelong NETWORKINGCONTENTDELIVERY_AMAZONVPC_ENDPOINTS(alias,label,e_type="interface",e_color="#F58536",e_stereo="NetworkingContentDelivery\\nAmazonVPC endpoints",e_sprite="NetworkingContentDelivery_AmazonVPC_endpoints")
+!definelong NETWORKINGCONTENTDELIVERY_AMAZONVPC_ENDPOINTS(alias,label,e_type="interface",e_color="#F58536",e_stereo="NetworkingContentDelivery%n()AmazonVPC endpoints",e_sprite="NetworkingContentDelivery_AmazonVPC_endpoints")
 PUML_ENTITY(e_type,e_color,e_sprite,label,alias,e_stereo)
 !enddefinelong

@@ -8,9 +8,9 @@ title Cloudinsight sprites example
 
 skinparam monochrome true
 
-rectangle "<$tomcat>\nwebapp" as webapp
+rectangle "<$tomcat>%n()webapp" as webapp
 queue "<$kafka>" as kafka
-rectangle "<$java>\ndaemon" as daemon
+rectangle "<$java>%n()daemon" as daemon
 database "<$cassandra>" as cassandra
 
 webapp -> kafka

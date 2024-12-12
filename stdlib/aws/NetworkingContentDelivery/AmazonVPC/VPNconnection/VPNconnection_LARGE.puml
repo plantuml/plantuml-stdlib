@@ -427,7 +427,7 @@ skinparam interface<<**VPNconnection**>> {
     BackgroundColor #FEEDE2
 	BorderColor #F58536
 }
-skinparam interface<<**NetworkingContentDelivery**\n**AmazonVPC VPNconnection**>> {
+skinparam interface<<**NetworkingContentDelivery**%n()**AmazonVPC VPNconnection**>> {
     BackgroundColor #FEEDE2
 	BorderColor #F58536
 }
@@ -439,8 +439,8 @@ skinparam interface<<**NetworkingContentDelivery**\n**AmazonVPC VPNconnection**>
 PUML_ENTITY(e_type,e_color,e_sprite,label,alias,e_stereo)
 !enddefinelong
 
-!define NETWORKINGCONTENTDELIVERY_AMAZONVPC_VPNCONNECTION_LARGE(alias) PUML_ENTITY(interface,#F58536,NetworkingContentDelivery_AmazonVPC_VPNconnection_LARGE,alias,**NetworkingContentDelivery**\n**AmazonVPC VPNconnection**)
+!define NETWORKINGCONTENTDELIVERY_AMAZONVPC_VPNCONNECTION_LARGE(alias) PUML_ENTITY(interface,#F58536,NetworkingContentDelivery_AmazonVPC_VPNconnection_LARGE,alias,**NetworkingContentDelivery**%n()**AmazonVPC VPNconnection**)
 
-!definelong NETWORKINGCONTENTDELIVERY_AMAZONVPC_VPNCONNECTION_LARGE(alias,label,e_type="interface",e_color="#F58536",e_stereo="**NetworkingContentDelivery**\\n**AmazonVPC VPNconnection**",e_sprite="NetworkingContentDelivery_AmazonVPC_VPNconnection_LARGE")
+!definelong NETWORKINGCONTENTDELIVERY_AMAZONVPC_VPNCONNECTION_LARGE(alias,label,e_type="interface",e_color="#F58536",e_stereo="**NetworkingContentDelivery**%n()**AmazonVPC VPNconnection**",e_sprite="NetworkingContentDelivery_AmazonVPC_VPNconnection_LARGE")
 PUML_ENTITY(e_type,e_color,e_sprite,label,alias,e_stereo)
 !enddefinelong

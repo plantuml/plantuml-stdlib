@@ -126,18 +126,18 @@ sequenceDiagram {
 ' ##################################
 
 ' all elements have to be displayed as participant
-' participants requires ` %newline()` instead of `\n`
+' participants requires ` %newline()` instead of `%n()`
 
 !unquoted function $breakWithNewline($text, $lineEnd, $lineStart, $widthStr="-1")
 !$width = %intval($widthStr)
 !$multiLine = ""
-!if (%strpos($text, "\n") >= 0)
-  !while (%strpos($text, "\n") >= 0)
-    !$brPos = %strpos($text, "\n")
+!if (%strpos($text, "%n()") >= 0)
+  !while (%strpos($text, "%n()") >= 0)
+    !$brPos = %strpos($text, "%n()")
     !if ($brPos > 0)
       !$multiLine = $multiLine + %substr($text, 0, $brPos) + $lineEnd + %newline() + $lineStart
     !else
-      ' <U+00A0> non breaking change that newLine breaks with formats can be used with \n\n 
+      ' <U+00A0> non breaking change that newLine breaks with formats can be used with %n()%n() 
       !$multiLine = $multiLine + "<U+00A0>" + $lineEnd + %newline() + $lineStart
     !endif
     !$text = %substr($text, $brPos+2)
@@ -329,17 +329,17 @@ $calcDescr
   !$labelSprite = $getSprite($smallVersionSprite($sprite, $BOUNDARY_IMAGE_SIZE_FACTOR)) + ' '
 !endif
 !if ($link != "")
-  !$usedNewLine = ']]\n== [[' + $link + ' '
+  !$usedNewLine = ']]%n()== [[' + $link + ' '
   !$labelType = '== [[' + $link + ' ' + $labelSprite + $breakText($label, $usedNewLine) + ']]'
 !else
-  !$usedNewLine = '\n== '
+  !$usedNewLine = '%n()== '
   !$labelType = $labelSprite + $breakText($label, $usedNewLine)
 !endif
 !if (type != "")
-    !$labelType = $labelType + '\n<size:' + $TECHN_FONT_SIZE + '>[' + $type + ']</size>'
+    !$labelType = $labelType + '%n()<size:' + $TECHN_FONT_SIZE + '>[' + $type + ']</size>'
 !endif
 !if ($display_element_description == %true() && $descr != "")
-    !$labelType = $labelType + '\n\n' + $breakDescr($descr, $BOUNDARY_DESCR_MAX_CHAR_WIDTH)
+    !$labelType = $labelType + '%n()%n()' + $breakDescr($descr, $BOUNDARY_DESCR_MAX_CHAR_WIDTH)
 !endif
 box "$labelType" $toStereos("boundary", $boundaryTags)
 !endprocedure

@@ -103,12 +103,12 @@ skinparam usecase {
 ' Boundaries
 ' ##################################
 !define Boundary(e_alias, e_label) rectangle "==e_label" <<boundary>> as e_alias
-!define Boundary(e_alias, e_label, e_type) rectangle "==e_label\n<size:TECHN_FONT_SIZE>[e_type]</size>" <<boundary>> as e_alias
+!define Boundary(e_alias, e_label, e_type) rectangle "==e_label%n()<size:TECHN_FONT_SIZE>[e_type]</size>" <<boundary>> as e_alias
 
 ' Elements
 ' ##################################
 'Strategy Elements
-!define Strategy_Resource(e_alias, e_label) archimate #STRATEGY "....\n e_label" <<strategy-resource>> as e_alias
+!define Strategy_Resource(e_alias, e_label) archimate #STRATEGY "....%n() e_label" <<strategy-resource>> as e_alias
 !define Strategy_Capability(e_alias, e_label) archimate #STRATEGY "e_label" <<strategy-capability>> as e_alias
 !define Strategy_CourseOfAction(e_alias, e_label) archimate #STRATEGY "e_label" <<strategy-course-of-action>> as e_alias
 !define Strategy_ValueStream(e_alias, e_label) archimate #STRATEGY "e_label" <<strategy-value-stream>> as e_alias
@@ -123,9 +123,9 @@ skinparam usecase {
 !define Business_Interaction(e_alias, e_label) archimate #BUSINESS "e_label" <<business-interaction>> as e_alias
 !define Business_Event(e_alias, e_label) archimate #BUSINESS "e_label" <<business-event>> as e_alias
 !define Business_Service(e_alias, e_label) archimate #BUSINESS "e_label" <<business-service>> as e_alias
-!define Business_Object(e_alias, e_label) archimate #BUSINESS "----\n e_label" <<business-object>> as e_alias
-!define Business_Contract(e_alias, e_label) archimate #BUSINESS "----\n e_label\n----" <<business-contract>> as e_alias
-!define Business_Representation(e_alias, e_label) archimate #BUSINESS "----\n e_label" <<business-representation>> as e_alias
+!define Business_Object(e_alias, e_label) archimate #BUSINESS "----%n() e_label" <<business-object>> as e_alias
+!define Business_Contract(e_alias, e_label) archimate #BUSINESS "----%n() e_label%n()----" <<business-contract>> as e_alias
+!define Business_Representation(e_alias, e_label) archimate #BUSINESS "----%n() e_label" <<business-representation>> as e_alias
 !define Business_Product(e_alias, e_label) archimate #BUSINESS "e_label" <<business-product>> as e_alias
 !define Business_Location(e_alias, e_label) archimate #BUSINESS "e_label" <<business-location>> as e_alias
 
@@ -138,7 +138,7 @@ skinparam usecase {
 !define Application_Process(e_alias, e_label) archimate #APPLICATION "e_label" <<application-process>> as e_alias
 !define Application_Event(e_alias, e_label) archimate #APPLICATION "e_label" <<application-event>> as e_alias
 !define Application_Service(e_alias, e_label) archimate #APPLICATION "e_label" <<application-service>> as e_alias
-!define Application_DataObject(e_alias, e_label) archimate #APPLICATION "----\n e_label" <<application-data-object>> as e_alias
+!define Application_DataObject(e_alias, e_label) archimate #APPLICATION "----%n() e_label" <<application-data-object>> as e_alias
 
 'Technology Elements
 !define Technology_Node(e_alias, e_label) node #TECHNOLOGY "e_label" <<$archimate/technology-node>> as e_alias
@@ -153,13 +153,13 @@ skinparam usecase {
 !define Technology_Interaction(e_alias, e_label) archimate #TECHNOLOGY "e_label" <<technology-interaction>> as e_alias
 !define Technology_Event(e_alias, e_label) archimate #TECHNOLOGY "e_label" <<technology-event>> as e_alias
 !define Technology_Service(e_alias, e_label) archimate #TECHNOLOGY "e_label" <<technology-infra-service>> as e_alias
-!define Technology_Artifact(e_alias, e_label) archimate #TECHNOLOGY "----\n e_label" <<technology-artifact>> as e_alias
+!define Technology_Artifact(e_alias, e_label) archimate #TECHNOLOGY "----%n() e_label" <<technology-artifact>> as e_alias
 
 'Physical Elements
 !define Physical_Equipment(e_alias, e_label) node #PHYSICAL "e_label" <<$archimate/physical-equipment>> as e_alias
 !define Physical_Facility(e_alias, e_label) node #PHYSICAL "e_label" <<$archimate/physical-facility>> as e_alias
 !define Physical_DistributionNetwork(e_alias, e_label) archimate #PHYSICAL "e_label" <<physical-distribution-network>> as e_alias
-!define Physical_Material(e_alias, e_label) archimate #PHYSICAL "----\n e_label" <<physical-material>> as e_alias
+!define Physical_Material(e_alias, e_label) archimate #PHYSICAL "----%n() e_label" <<physical-material>> as e_alias
 
 'Motivation Elements
 !define Motivation_Stakeholder(e_alias, e_label) archimate #MOTIVATION "e_label" <<motivation-stakeholder>> as e_alias
@@ -175,10 +175,10 @@ skinparam usecase {
 
 'Implementation Elements
 !define Implementation_WorkPackage(e_alias, e_label) archimate #IMPLEMENTATION "e_label" <<implementation-workpackage>> as e_alias
-!define Implementation_Deliverable(e_alias, e_label) archimate #IMPLEMENTATION "----\n e_label" <<implementation-deliverable>> as e_alias
+!define Implementation_Deliverable(e_alias, e_label) archimate #IMPLEMENTATION "----%n() e_label" <<implementation-deliverable>> as e_alias
 !define Implementation_Event(e_alias, e_label) archimate #IMPLEMENTATION "e_label" <<implementation-event>> as e_alias
 !define Implementation_Plateau(e_alias, e_label) node #PHYSICAL "e_label" <<$archimate/implementation-plateau>> as e_alias
-!define Implementation_Gap(e_alias, e_label) archimate #PHYSICAL "----\n e_label" <<implementation-gap>> as e_alias
+!define Implementation_Gap(e_alias, e_label) archimate #PHYSICAL "----%n() e_label" <<implementation-gap>> as e_alias
 
 'Other Elements
 !define Other_Location(e_alias, e_label) archimate #ffb973 "e_label" <<location>> as e_alias

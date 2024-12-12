@@ -10,4 +10,4 @@ xTJ50GCm34DH6U9e_uNBp7NAzRj_NG9yebAYSuG3VImV6N0e1EZvdB383WIKX34WJ74kUaOm3SOHrLUV
 !endfunction
 
 AWSGroupColoring(AutoScalingGroupGroup, #FFFFFF, #D86613, dashed)
-!define AutoScalingGroupGroup(g_alias, g_label="\nAuto Scaling group") AWSGroupEntity(g_alias, g_label, #D86613, AutoScalingGroup, AutoScalingGroupGroup)
+!define AutoScalingGroupGroup(g_alias, g_label="%n()Auto Scaling group") AWSGroupEntity(g_alias, g_label, #D86613, AutoScalingGroup, AutoScalingGroupGroup)

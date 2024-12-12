@@ -137,7 +137,7 @@ skinparam interface<<elasticnetworkinterface>> {
     BackgroundColor #FEEDE2
 	BorderColor #F58536
 }
-skinparam interface<<Compute AmazonVPC\nelasticnetworkinterface>> {
+skinparam interface<<Compute AmazonVPC%n()elasticnetworkinterface>> {
     BackgroundColor #FEEDE2
 	BorderColor #F58536
 }
@@ -149,8 +149,8 @@ skinparam interface<<Compute AmazonVPC\nelasticnetworkinterface>> {
 PUML_ENTITY(e_type,e_color,e_sprite,label,alias,e_stereo)
 !enddefinelong
 
-!define COMPUTE_AMAZONVPC_ELASTICNETWORKINTERFACE(alias) PUML_ENTITY(interface,#F58536,Compute_AmazonVPC_elasticnetworkinterface,alias,Compute AmazonVPC\nelasticnetworkinterface)
+!define COMPUTE_AMAZONVPC_ELASTICNETWORKINTERFACE(alias) PUML_ENTITY(interface,#F58536,Compute_AmazonVPC_elasticnetworkinterface,alias,Compute AmazonVPC%n()elasticnetworkinterface)
 
-!definelong COMPUTE_AMAZONVPC_ELASTICNETWORKINTERFACE(alias,label,e_type="interface",e_color="#F58536",e_stereo="Compute AmazonVPC\\nelasticnetworkinterface",e_sprite="Compute_AmazonVPC_elasticnetworkinterface")
+!definelong COMPUTE_AMAZONVPC_ELASTICNETWORKINTERFACE(alias,label,e_type="interface",e_color="#F58536",e_stereo="Compute AmazonVPC%n()elasticnetworkinterface",e_sprite="Compute_AmazonVPC_elasticnetworkinterface")
 PUML_ENTITY(e_type,e_color,e_sprite,label,alias,e_stereo)
 !enddefinelong

@@ -93,7 +93,7 @@ skinparam interface<<VPNconnection>> {
     BackgroundColor #FEEDE2
 	BorderColor #F58536
 }
-skinparam interface<<Compute AmazonVPC\nVPNconnection>> {
+skinparam interface<<Compute AmazonVPC%n()VPNconnection>> {
     BackgroundColor #FEEDE2
 	BorderColor #F58536
 }
@@ -105,8 +105,8 @@ skinparam interface<<Compute AmazonVPC\nVPNconnection>> {
 PUML_ENTITY(e_type,e_color,e_sprite,label,alias,e_stereo)
 !enddefinelong
 
-!define COMPUTE_AMAZONVPC_VPNCONNECTION(alias) PUML_ENTITY(interface,#F58536,Compute_AmazonVPC_VPNconnection,alias,Compute AmazonVPC\nVPNconnection)
+!define COMPUTE_AMAZONVPC_VPNCONNECTION(alias) PUML_ENTITY(interface,#F58536,Compute_AmazonVPC_VPNconnection,alias,Compute AmazonVPC%n()VPNconnection)
 
-!definelong COMPUTE_AMAZONVPC_VPNCONNECTION(alias,label,e_type="interface",e_color="#F58536",e_stereo="Compute AmazonVPC\\nVPNconnection",e_sprite="Compute_AmazonVPC_VPNconnection")
+!definelong COMPUTE_AMAZONVPC_VPNCONNECTION(alias,label,e_type="interface",e_color="#F58536",e_stereo="Compute AmazonVPC%n()VPNconnection",e_sprite="Compute_AmazonVPC_VPNconnection")
 PUML_ENTITY(e_type,e_color,e_sprite,label,alias,e_stereo)
 !enddefinelong

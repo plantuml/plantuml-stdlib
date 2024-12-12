@@ -139,7 +139,7 @@ skinparam interface<<VPNgateway>> {
     BackgroundColor #FEEDE2
 	BorderColor #F58536
 }
-skinparam interface<<NetworkingContentDelivery\nAmazonVPC VPNgateway>> {
+skinparam interface<<NetworkingContentDelivery%n()AmazonVPC VPNgateway>> {
     BackgroundColor #FEEDE2
 	BorderColor #F58536
 }
@@ -151,8 +151,8 @@ skinparam interface<<NetworkingContentDelivery\nAmazonVPC VPNgateway>> {
 PUML_ENTITY(e_type,e_color,e_sprite,label,alias,e_stereo)
 !enddefinelong
 
-!define NETWORKINGCONTENTDELIVERY_AMAZONVPC_VPNGATEWAY(alias) PUML_ENTITY(interface,#F58536,NetworkingContentDelivery_AmazonVPC_VPNgateway,alias,NetworkingContentDelivery\nAmazonVPC VPNgateway)
+!define NETWORKINGCONTENTDELIVERY_AMAZONVPC_VPNGATEWAY(alias) PUML_ENTITY(interface,#F58536,NetworkingContentDelivery_AmazonVPC_VPNgateway,alias,NetworkingContentDelivery%n()AmazonVPC VPNgateway)
 
-!definelong NETWORKINGCONTENTDELIVERY_AMAZONVPC_VPNGATEWAY(alias,label,e_type="interface",e_color="#F58536",e_stereo="NetworkingContentDelivery\\nAmazonVPC VPNgateway",e_sprite="NetworkingContentDelivery_AmazonVPC_VPNgateway")
+!definelong NETWORKINGCONTENTDELIVERY_AMAZONVPC_VPNGATEWAY(alias,label,e_type="interface",e_color="#F58536",e_stereo="NetworkingContentDelivery%n()AmazonVPC VPNgateway",e_sprite="NetworkingContentDelivery_AmazonVPC_VPNgateway")
 PUML_ENTITY(e_type,e_color,e_sprite,label,alias,e_stereo)
 !enddefinelong

@@ -94,30 +94,30 @@ center footer <font color=red>Warning:</font> Created for discussion, needs to b
 !endfunction
 
 !definelong AWSEntity(e_alias, e_label, e_techn, e_color, e_sprite, e_stereo)
-rectangle "==e_label\n$AWSImg(e_sprite)\n//<size:TECHN_FONT_SIZE>[e_techn]</size>//" <<e_stereo>> as e_alias
+rectangle "==e_label%n()$AWSImg(e_sprite)%n()//<size:TECHN_FONT_SIZE>[e_techn]</size>//" <<e_stereo>> as e_alias
 !enddefinelong
 
 !definelong AWSEntity(e_alias, e_label, e_techn, e_descr, e_color, e_sprite, e_stereo)
-rectangle "==e_label\n$AWSImg(e_sprite)\n//<size:TECHN_FONT_SIZE>[e_techn]</size>//\n\n e_descr" <<e_stereo>> as e_alias
+rectangle "==e_label%n()$AWSImg(e_sprite)%n()//<size:TECHN_FONT_SIZE>[e_techn]</size>//%n()%n() e_descr" <<e_stereo>> as e_alias
 !enddefinelong
 
 !definelong AWSParticipant(p_alias, p_label, p_techn, p_color, p_sprite, p_stereo)
-participant "p_label\n$AWSImg(p_sprite)\n<size:TECHN_FONT_SIZE>[p_techn]</size>" as p_alias <<p_stereo>>
+participant "p_label%n()$AWSImg(p_sprite)%n()<size:TECHN_FONT_SIZE>[p_techn]</size>" as p_alias <<p_stereo>>
 !enddefinelong
 
 !definelong AWSParticipant(p_alias, p_label, p_techn, p_descr, p_color, p_sprite, p_stereo)
-participant "p_label\n$AWSImg(p_sprite)\n<size:TECHN_FONT_SIZE>[p_techn]</size>\n\n p_descr" as p_alias <<p_stereo>>
+participant "p_label%n()$AWSImg(p_sprite)%n()<size:TECHN_FONT_SIZE>[p_techn]</size>%n()%n() p_descr" as p_alias <<p_stereo>>
 !enddefinelong
 
-' wraps each line (seperated by \n) of a multi-line label with color
+' wraps each line (seperated by %n()) of a multi-line label with color
 !function $colorlabel($label, $color="black")
 !$buffer = ""
 !$tmp = $label
-!$i = %strpos($tmp, "\n")
+!$i = %strpos($tmp, "%n()")
 !while $i >= 0
-  !$buffer = $buffer + %substr($tmp, 0, $i) + "</color>\n<color:" + $color + ">"
+  !$buffer = $buffer + %substr($tmp, 0, $i) + "</color>%n()<color:" + $color + ">"
   !$tmp = %substr($tmp, $i + 2)
-  !$i = %strpos($tmp, "\n")
+  !$i = %strpos($tmp, "%n()")
 !endwhile
 !return "<color:" + $color + ">" + $buffer + $tmp + "</color>"
 !endfunction
