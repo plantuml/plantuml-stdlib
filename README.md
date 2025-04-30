@@ -478,6 +478,32 @@ This example renders the following image:
 
 ![Example](http://www.plantuml.com/plantuml/png/PSn12i8m40NGVK_nsqqL0k9U2eNMbRLGYjiIawa69faGKz7RUm3V0LxfWk7D4avUPqfEyy68znAQeiOiS3vAoiXFmYicbmchOy9NDdJZjPuHY2oo8B8s18sOQ7MViYZ_urNOKbgylAafYg5TpkEbwwTb66_zRYAhS5ImBYaaCbc71vD2rOBrdRZQ_m00 "Example")
 
+## Bootstrap Icons [bootstrap]
+
+This library consists of a free Bootstrap Icons style icons from Bootstrap. See the entire collection or search via a filter at https://icons.getbootstrap.com/ .
+
+Use it by including the file that contains the sprite, eg: `!include <bootstrap/folder_move>`.
+When imported, you can use the sprite as normally you would, using `<$ma_sprite_name>`.
+Notice that this library requires an `ma_` preffix on sprites names, this is to avoid clash of names if multiple sprites have the same name on different libraries.
+
+You may also include the `common.puml` file, eg: `!include <bootstrap/common>`, which contains helper macros defined.
+With the `common.puml` imported, you can use the `MA_NAME_OF_SPRITE(parameters...)` macro, note again the use of the prefix `MA_`.
+
+Example of usage:
+```plantuml
+@startuml
+    !include <bootstrap/common>
+    ' To import the sprite file you DON'T need to place a prefix!
+    !include <bootstrap/folder_move>
+
+    MA_FOLDER_MOVE(Red, 1, dir, rectangle, "A label")
+@enduml
+```
+
+This example renders the following image:
+
+![Example](http://www.plantuml.com/plantuml/png/TODO "Example")
+
 ## Domain Story library (DomainStory-PlantUML) [DomainStory]
 
 This library provides a set of macros to easily describe and document a domain story which was developed in
@@ -538,6 +564,7 @@ This example renders the following image:
 * **classy-c4**: made by https://github.com/james-gadrow-kr/classy-c4
 * **tupadr3**: made by https://github.com/tupadr3/plantuml-icon-font-sprites
 * **Material Icons**: from https://github.com/Templarian/MaterialDesign
+* **Bootstrap Icons**" from https://github.com/twbs/icons
 * **Elastic Icons**: from https://github.com/Crashedmind/PlantUML-Elastic-icons
 * **Domain Story**: from https://github.com/johthor/DomainStory-PlantUML
 
