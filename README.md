@@ -482,21 +482,23 @@ This example renders the following image:
 
 This library consists of a free Bootstrap Icons style icons from Bootstrap. See the entire collection or search via a filter at https://icons.getbootstrap.com/ .
 
-Use it by including the file that contains the sprite, eg: `!include <bootstrap/folder_move>`.
-When imported, you can use the sprite as normally you would, using `<$ma_sprite_name>`.
-Notice that this library requires an `ma_` preffix on sprites names, this is to avoid clash of names if multiple sprites have the same name on different libraries.
-
-You may also include the `common.puml` file, eg: `!include <bootstrap/common>`, which contains helper macros defined.
-With the `common.puml` imported, you can use the `MA_NAME_OF_SPRITE(parameters...)` macro, note again the use of the prefix `MA_`.
+Use it by including the file that contains all the sprites: `!include <bootstrap/bootstrap>`.
+When imported, you can use the sprite as normally you would, using `<$bi_sprite_name>`.
+Notice that this library requires an `bi_` preffix on sprites names, this is to avoid clash of names if multiple sprites have the same name on different libraries. `bi` stands for Bootstrap Icon and this name is also used in the Bootstrap framework.
 
 Example of usage:
 ```plantuml
 @startuml
-    !include <bootstrap/common>
-    ' To import the sprite file you DON'T need to place a prefix!
-    !include <bootstrap/folder_move>
+skinparam UsecaseBackgroundColor white
+!include <bootstrap/bootstrap>
 
-    MA_FOLDER_MOVE(Red, 1, dir, rectangle, "A label")
+usecase a as "<$bi-globe>\nbi-globe"
+usecase b as "<$bi-globe,scale=2.5>"
+usecase c as "<$bi-globe{scale=2.5}>" #line:red
+
+usecase d as "<$bi-bootstrap-fill>"
+usecase e as "<$bi-bootstrap-fill{scale=2.5,color=blue}>"
+usecase f as "<$bi-bootstrap-fill,scale=2.5,color=#00f>"
 @enduml
 ```
 
