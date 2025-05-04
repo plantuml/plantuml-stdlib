@@ -17,6 +17,6 @@ file *png | grep ' x 703'
 # These files probably need to be excluded in 2_convert.sh
 
 # Also view the results with an image viewer.
-# TODO What to do with extra large renderings sucha as arrow-clockwise, arrow-counterclockwise, power, search
+# TODO What to do with extra large renderings such as arrow-clockwise, arrow-counterclockwise, power, search
 # TODO What to do withh different rendering for pairs such as compass, compass-fill
 

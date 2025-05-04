@@ -17,4 +17,5 @@ unzip -q v$VERSION.zip
 rm -f v$VERSION.zip
 mv icons-$VERSION/docs/content/icons .
 rm -rf icons-$VERSION
-
+cd _scripts_
+./count_categories.py

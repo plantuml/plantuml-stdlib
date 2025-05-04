@@ -19,7 +19,8 @@ cd ../..
 perl -w script/generateOutput.pl $NAMEVERSION
 perl -w script/generateOutput.pl $NAME
 cp -f output/home.repx ../plantuml/src/main/resources/stdlib/
-cp -f output/$NAME*.repx ../plantuml/src/main/resources/stdlib/
+cp -f output/$NAME-*.repx ../plantuml/src/main/resources/stdlib/
+cp -f output/$NAMEVERSION-*.repx ../plantuml/src/main/resources/stdlib/
 cd ../plantuml
 ./gradlew jar
   
