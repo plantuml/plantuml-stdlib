@@ -13,7 +13,12 @@ cd individuals
 JAR=$(ls ../../../../plantuml/build/libs/*.jar | tail -1)
 # TODO This option is useful https://github.com/plantuml/plantuml/issues/2176
 java -jar $JAR -r .
-file *png | grep ' x 703'
+file *.png | awk -F', ' '/PNG image data/ {
+    split($2, dims, " x ");
+    w = dims[1] + 0;
+    h = dims[2] + 0;
+    if (w > 100 || h > 100) print $0
+}'
 # These files probably need to be excluded in 2_convert.sh
 
 # Also view the results with an image viewer.
