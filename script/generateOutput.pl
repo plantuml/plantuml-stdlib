@@ -9,19 +9,33 @@ use strict;
 use warnings;
 use feature qw(say);
 
+# Optional filter: $ARGV[0]
+my $filter = $ARGV[0];
+
 # Input dir: 
 my @raw_files = glob("raw/*");
 
 say("::group::Generate `x.repx` using brotli");
-foreach (@raw_files) {
-    my $o = $_;
-    $o =~ s/raw/output/;
-    if (/abc.repx$/) {$o =~ s/abc.repx$/abx.repx/}
-    if (/def.repx$/) {$o =~ s/def.repx$/dex.repx/}
-    if (/ghi.repx$/) {$o =~ s/ghi.repx$/ghx.repx/}    
 
-    say($_ . " --> " . $o);
-    my $output = qx/brotli -q 11 -vf -o $o $_/;
+foreach my $infile (@raw_files) {
+    # If we have a filter, skip if no match before -abc.repx or -def.repx
+    if (defined $filter) {
+        next unless (
+            $infile =~ m{raw/([^/]+)-abc\.repx$} && $1 eq $filter
+         or $infile =~ m{raw/([^/]+)-def\.repx$} && $1 eq $filter
+        );
+    }
+
+    # Output filename logic:
+    my $outfile = $infile;
+    $outfile =~ s/raw/output/;
+    $outfile =~ s/abc\.repx$/abx.repx/;
+    $outfile =~ s/def\.repx$/dex.repx/;
+    $outfile =~ s/ghi\.repx$/ghx.repx/;
+
+    say("$infile --> $outfile");
+    my $output = qx/brotli -q 11 -vf -o $outfile $infile/;
     say($output);
 }
+
 say("::endgroup::");
