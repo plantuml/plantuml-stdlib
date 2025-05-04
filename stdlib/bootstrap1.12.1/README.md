@@ -10,4 +10,4 @@ source: https://github.com/twbs/icons
 origin: 
 ---
 
-Information about the `bootstrap1.12.1` Standard Library. The sprites are one include file. See https://icons.getbootstrap.com/ for all icons names and prefix them with `bi_` to use them.
+Information about the `bootstrap1.12.1` Standard Library. The sprites are in one include file. See https://icons.getbootstrap.com/ for all icons names and prefix them with `bi-` to use them.

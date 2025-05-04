@@ -1,0 +1,14 @@
+@startuml
+!include <material7.4.47/material>
+
+usecase a as "<$mdi-web>"
+usecase b as "<$mdi-web,scale=2.5>"
+usecase c as "<$mdi-web{scale=2.5}>" #line:red
+
+usecase d as "<$mdi-material-design>"
+' TODO The following two lines will not work properly until this is fixed:
+' https://github.com/plantuml/plantuml/issues/2174#issuecomment-2848519961
+usecase e as "<$mdi-material-design{scale=2.5,color=blue}>"
+usecase f as "<$mdi-material-design,scale=2.5,color=#00f>"
+
+@enduml@enduml
