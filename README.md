@@ -1,9 +1,13 @@
-# plantuml-stdlib
+# `plantuml-stdlib`
 Contains official Standard Library for PlantUML.
 _See http://plantuml.com/stdlib for more information._
 
 This Standard Library is included in official release of PlantUML.
 Following the C convention for "C standard library" _(see https://en.wikipedia.org/wiki/C_standard_library)_
+
+# List of current `stdlib` include on PlantUML
+
+[![](https://img.plantuml.biz/plantuml/svg/SoWkIImgAStDuUKgBad9oKpYvN98pKi12W00)](https://editor.plantuml.com/uml/SoWkIImgAStDuUKgBad9oKpYvN98pKi12W00)
 
 ## Amazon Web Services
 
@@ -84,6 +88,34 @@ Example of usage:
 This example renders the following image:
 
 ![Example](http://www.plantuml.com/plantuml/proxy?idx=0&src=https%3A%2F%2Fraw.githubusercontent.com%2FRicardoNiepel%2FAzure-PlantUML%2Fmaster%2Fsamples%2FBasic%2520usage%2520-%2520Stream%2520processing%2520with%2520Azure%2520Stream%2520Analytics.puml "Example")
+
+## Bootstrap Icons [bootstrap]
+
+This library consists of a free Bootstrap Icons style icons from Bootstrap. See the entire collection or search via a filter on the [Bootstrap Icons website](https://icons.getbootstrap.com/#search).
+
+Use it by including the file that contains all the sprites: `!include <bootstrap/bootstrap>`.
+When imported, you can use the sprite as normally you would, using `<$bi_sprite_name>`.
+Notice that this library requires an `bi_` preffix on sprites names, this is to avoid clash of names if multiple sprites have the same name on different libraries. `bi` stands for Bootstrap Icon and this name is also used in the Bootstrap framework.
+
+Example of usage:
+```plantuml
+@startuml
+skinparam UsecaseBackgroundColor white
+!include <bootstrap/bootstrap>
+
+usecase a as "<$bi-globe>\nbi-globe"
+usecase b as "<$bi-globe,scale=2.5>"
+usecase c as "<$bi-globe{scale=2.5}>" #line:red
+
+usecase d as "<$bi-bootstrap-fill>"
+usecase e as "<$bi-bootstrap-fill{scale=2.5,color=blue}>"
+usecase f as "<$bi-bootstrap-fill,scale=2.5,color=#00f>"
+@enduml
+```
+
+This example renders the following image:
+
+[![bootstrap Example](https://img.plantuml.biz/plantuml/svg/TP3B2i8m44NtXVn3h2vR5S6Ds53q6zovcIHJ3HsJaWSkn7zN4TjIS7SNvyoTcJf4y37TY6MXDRO33pT-2gWWu05KU_4kMNrqv3o_Nqr4bisCLPGqyhrqBeReeLlrIR2CPUdhS-0GUBvVI5DUo4aKP_kB-K392LK41OJLPhaL8qfDg4TFFKNEvsGixZpgSRqUb7w_iZ54uxdu3neA2lKvlvAKy3bMctzgCLNdwtNpCMkq-lth5m00 "bootstrap Example")](https://editor.plantuml.com/uml/TP3B2i8m44NtXVn3h2vR5S6Ds53q6zovcIHJ3HsJaWSkn7zN4TjIS7SNvyoTcJf4y37TY6MXDRO33pT-2gWWu05KU_4kMNrqv3o_Nqr4bisCLPGqyhrqBeReeLlrIR2CPUdhS-0GUBvVI5DUo4aKP_kB-K392LK41OJLPhaL8qfDg4TFFKNEvsGixZpgSRqUb7w_iZ54uxdu3neA2lKvlvAKy3bMctzgCLNdwtNpCMkq-lth5m00)
 
 ## C4 library (C4-PlantUML) [C4]
 
@@ -204,6 +236,33 @@ Example of usage:
 This example renders the following image:
 
 ![Example](http://www.plantuml.com/plantuml/png/ZOvFIyGm4CNl-HIrfowupMLFdbQgjnKN_vnbcWxRm6GICXDalxtPWaKHnTDxCypxpTkBGjOIg1bsR_U40Ld5N7bsL2PiPjKaDzPcUEzFNkSo5i7i8YkozYu6cmZuaj-AJkH7E-osnylgzU5W0uXYjfKyr0HunjodUclC4RD4xj8Yj-H1hfls02DIMyrZKXyPgBb3STalKxinAwHpd-v7z0NTp97YwVm7wFaiYg6JHVxxtJmXVI-yjlWTyQNEnkoHfnBe0m00)
+
+## Domain Story library (DomainStory-PlantUML) [DomainStory]
+
+This library provides a set of macros to easily describe and document a domain story which was developed in
+a [Domain Storytelling](http://www.domainstorytelling.org) workshop.
+
+For more usage instructions see [DomainStory-PlantUML](https://github.com/johthor/DomainStory-PlantUML).
+
+Example of usage:
+
+```plantuml
+@startuml
+    !include <DomainStory/domainStory>
+
+    Boundary(System) {
+        Person(Alice)
+        Conversation(weather)
+        Person(Bob)
+    }
+    activity(1, Alice, talks about the, weather, with, Bob)
+@enduml
+```
+
+This example renders the following image:
+
+![Example](http://www.plantuml.com/plantuml/png/JSx1IWGn30RWUv-YtcPWdEBLqxfwL5XOV81C9zXg9rdQlxiCuhlR7GGtf_0bVyYkW3BgainT59_gp3O0f_BeNARB-14HwbGBPwy25enU5_Uf0K6pUz65eXoXURq_91AylxswAxdvVpAUhjVDNglCbDVkk1RmqjjlOriTE1ULxYb5p_qcpohdXeJO_CA4mBc_tTthr9iVOyWZdYFMxc6mMtwmeFHLB4rQOH4Q_ELR4n46kqLtB7DxwHS0
+ "Example")
 
 ## Edgy Enterprise Design [edgy]
 Edgy is an Open Source tool for collaborative Enterprise Design. The library is an adaption of the EDGY Tools for PlantUML usage.
@@ -414,6 +473,57 @@ This example renders the following image:
 ![Example](http://cdn-0.plantuml.com/plantuml/png/ZPDFYzim4CNl-HIpFcLX4zVk7afFszrBeNyQcWqzXeaqYKNqnqYZ9ANiTw_aDR6RKXeTZ9ZtUyFe3Nu8Z9wZqPCRILjb2VRl0ZJCRNXVbXwFyvtY9cvY82-SPR8y5ywKKc10LkK-RiXROWgpXKRBgo-VIuE1oPTI1Pv0EZVA2XqbHQzpzv5d_UICSNRUvW7-Yrgc4r_5BfLfjTegal_6losNvQUpPNaGrw8BD-gwTOx9mw12Ze5dAOTE3m8rWS4JL6_gUpWgoSshi5UsHOy6VasWFzP92jGcz5poQFUZqaltHS7EGx4Av0l007av7xJ2qAcQjWpimAjTmo2L9y7AsKvxqZ7lPlteefNeVqx5Q-4EYj4JUggu7Sts5Gs55WKDNXkIxGTj1gu_VyGw3GUHk43-e0GLwLhSNj93ijFMoIenHzhCylKQlXxu-e9_cGpVxwIdvwJkybJ5ZXW-FZylocfUWRAIJlE6ZSvDgkBsxCfiDrUX7KfuH8rMKCWXfn52nkk_yVewVBtgtppabDZ-NylisulMmxgJw8cZjpsUrvuTzydnG5P6ety3)
 
 
+## Google Material Icons [material]
+
+This library consists of a free Material style icons from Google and other artists.
+
+Use it by including the file that contains the sprite, eg: `!include <material/folder_move>`.
+When imported, you can use the sprite as normally you would, using `<$ma_sprite_name>`.
+Notice that this library requires an `ma_` preffix on sprites names, this is to avoid clash of names if multiple sprites have the same name on different libraries.
+
+You may also include the `common.puml` file, eg: `!include <material/common>`, which contains helper macros defined.
+With the `common.puml` imported, you can use the `MA_NAME_OF_SPRITE(parameters...)` macro, note again the use of the prefix `MA_`.
+
+Example of usage:
+```plantuml
+@startuml
+    !include <material/common>
+    ' To import the sprite file you DON'T need to place a prefix!
+    !include <material/folder_move>
+
+    MA_FOLDER_MOVE(Red, 1, dir, rectangle, "A label")
+@enduml
+```
+
+This example renders the following image:
+
+![Example](http://www.plantuml.com/plantuml/png/PSn12i8m40NGVK_nsqqL0k9U2eNMbRLGYjiIawa69faGKz7RUm3V0LxfWk7D4avUPqfEyy68znAQeiOiS3vAoiXFmYicbmchOy9NDdJZjPuHY2oo8B8s18sOQ7MViYZ_urNOKbgylAafYg5TpkEbwwTb66_zRYAhS5ImBYaaCbc71vD2rOBrdRZQ_m00 "Example")
+
+### Notes
+
+When mixing sprites macros with other elements you may get a syntax error if, for example, trying to add a rectangle along with classes.
+In those cases, add `{` and `}` after the macro to create the empty rectangle.
+
+Example of usage:
+```plantuml
+@startuml
+    !include <material/common>
+    ' To import the sprite file you DON'T need to place a prefix!
+    !include <material/folder_move>
+
+    MA_FOLDER_MOVE(Red, 1, dir, rectangle, "A label") {
+    }
+
+    class foo {
+        bar
+    }
+@enduml
+```
+
+This example renders the following image:
+
+![Example](http://www.plantuml.com/plantuml/png/ROz1Yi9044NtVOgl6sSW8Eu7KT1PJGm4SHlAxeesL7U5IaUKOUu-EO1_zzxYmT-DXQnCITmYPYzJO7mbAcoHPEqr9SrRjy9P4TEWLb3kZ76mM1Xz5CPB9noQq-gCp1nG58EGPn06upu-5-_2lKfWwv8-UEjSlU--cv_3iUtgvdByQ3bKs5G8qIeO-qBv9bnXkOVGbMNvYL_tvvmN6aVqgZDYtfLirZlEORxp3m00 "Example")
+
 ## Tupadr3 library [tupadr3]
 
 This library contains several libraries of icons (including Devicons and Font Awesome )
@@ -452,113 +562,6 @@ This example renders the following image:
 
 ![Example](http://www.plantuml.com/plantuml/png/XOvHIyCm58NVyolkyC49hMNjdcICTTZ9OC9eTU2JfCjr2wH9QMwj-_ScpbagWY-1mtU-axkmn1jgAyMkOQkufkV73LWIIfQWJGTIxrKhqC9wRtIuCfgWg1j9Q4TG8CAHgBPtKNIGT6pBsxsf8cfhBfeagjsSNmwbLz-S6jgpojZeUnTcbxOpAwFdVv0latTeJOMHnUOTctzhWXClkSKvOoH98HHqKb8V03zuLIjaR9M-5bc-o_9nX-KayCyDN3qqY7h8OizYnrvGATCDOU9Xuk1IjJX4Ku-cFzvvsLVkqwTqcHRPMBX_D-jT5bok3RgZ97HARavS-SbV_JWejcdU2xwAWZ6t1BCmd8EhCDPX7oS-nOEK3DAqJmlKegtK9m00 "Example")
 
-## Google Material Icons [material]
-
-This library consists of a free Material style icons from Google and other artists.
-
-Use it by including the file that contains the sprite, eg: `!include <material/folder_move>`.
-When imported, you can use the sprite as normally you would, using `<$ma_sprite_name>`.
-Notice that this library requires an `ma_` preffix on sprites names, this is to avoid clash of names if multiple sprites have the same name on different libraries.
-
-You may also include the `common.puml` file, eg: `!include <material/common>`, which contains helper macros defined.
-With the `common.puml` imported, you can use the `MA_NAME_OF_SPRITE(parameters...)` macro, note again the use of the prefix `MA_`.
-
-Example of usage:
-```plantuml
-@startuml
-    !include <material/common>
-    ' To import the sprite file you DON'T need to place a prefix!
-    !include <material/folder_move>
-
-    MA_FOLDER_MOVE(Red, 1, dir, rectangle, "A label")
-@enduml
-```
-
-This example renders the following image:
-
-![Example](http://www.plantuml.com/plantuml/png/PSn12i8m40NGVK_nsqqL0k9U2eNMbRLGYjiIawa69faGKz7RUm3V0LxfWk7D4avUPqfEyy68znAQeiOiS3vAoiXFmYicbmchOy9NDdJZjPuHY2oo8B8s18sOQ7MViYZ_urNOKbgylAafYg5TpkEbwwTb66_zRYAhS5ImBYaaCbc71vD2rOBrdRZQ_m00 "Example")
-
-## Bootstrap Icons [bootstrap]
-
-This library consists of a free Bootstrap Icons style icons from Bootstrap. See the entire collection or search via a filter at https://icons.getbootstrap.com/ .
-
-Use it by including the file that contains all the sprites: `!include <bootstrap/bootstrap>`.
-When imported, you can use the sprite as normally you would, using `<$bi_sprite_name>`.
-Notice that this library requires an `bi_` preffix on sprites names, this is to avoid clash of names if multiple sprites have the same name on different libraries. `bi` stands for Bootstrap Icon and this name is also used in the Bootstrap framework.
-
-Example of usage:
-```plantuml
-@startuml
-skinparam UsecaseBackgroundColor white
-!include <bootstrap/bootstrap>
-
-usecase a as "<$bi-globe>\nbi-globe"
-usecase b as "<$bi-globe,scale=2.5>"
-usecase c as "<$bi-globe{scale=2.5}>" #line:red
-
-usecase d as "<$bi-bootstrap-fill>"
-usecase e as "<$bi-bootstrap-fill{scale=2.5,color=blue}>"
-usecase f as "<$bi-bootstrap-fill,scale=2.5,color=#00f>"
-@enduml
-```
-
-This example renders the following image:
-
-![Example](http://www.plantuml.com/plantuml/png/TODO "Example")
-
-## Domain Story library (DomainStory-PlantUML) [DomainStory]
-
-This library provides a set of macros to easily describe and document a domain story which was developed in
-a [Domain Storytelling](http://www.domainstorytelling.org) workshop.
-
-For more usage instructions see [DomainStory-PlantUML](https://github.com/johthor/DomainStory-PlantUML).
-
-Example of usage:
-
-```plantuml
-@startuml
-    !include <DomainStory/domainStory>
-
-    Boundary(System) {
-        Person(Alice)
-        Conversation(weather)
-        Person(Bob)
-    }
-    activity(1, Alice, talks about the, weather, with, Bob)
-@enduml
-```
-
-This example renders the following image:
-
-![Example](http://www.plantuml.com/plantuml/png/JSx1IWGn30RWUv-YtcPWdEBLqxfwL5XOV81C9zXg9rdQlxiCuhlR7GGtf_0bVyYkW3BgainT59_gp3O0f_BeNARB-14HwbGBPwy25enU5_Uf0K6pUz65eXoXURq_91AylxswAxdvVpAUhjVDNglCbDVkk1RmqjjlOriTE1ULxYb5p_qcpohdXeJO_CA4mBc_tTthr9iVOyWZdYFMxc6mMtwmeFHLB4rQOH4Q_ELR4n46kqLtB7DxwHS0
- "Example")
-
-## Notes
-
-When mixing sprites macros with other elements you may get a syntax error if, for example, trying to add a rectangle along with classes.
-In those cases, add `{` and `}` after the macro to create the empty rectangle.
-
-Example of usage:
-```plantuml
-@startuml
-    !include <material/common>
-    ' To import the sprite file you DON'T need to place a prefix!
-    !include <material/folder_move>
-
-    MA_FOLDER_MOVE(Red, 1, dir, rectangle, "A label") {
-    }
-
-    class foo {
-        bar
-    }
-@enduml
-```
-
-This example renders the following image:
-
-![Example](http://www.plantuml.com/plantuml/png/ROz1Yi9044NtVOgl6sSW8Eu7KT1PJGm4SHlAxeesL7U5IaUKOUu-EO1_zzxYmT-DXQnCITmYPYzJO7mbAcoHPEqr9SrRjy9P4TEWLb3kZ76mM1Xz5CPB9noQq-gCp1nG58EGPn06upu-5-_2lKfWwv8-UEjSlU--cv_3iUtgvdByQ3bKs5G8qIeO-qBv9bnXkOVGbMNvYL_tvvmN6aVqgZDYtfLirZlEORxp3m00 "Example")
-
-
 ## Sources
 
 * **aws**: made by https://github.com/milo-minderbinder/AWS-PlantUML
@@ -566,7 +569,7 @@ This example renders the following image:
 * **classy-c4**: made by https://github.com/james-gadrow-kr/classy-c4
 * **tupadr3**: made by https://github.com/tupadr3/plantuml-icon-font-sprites
 * **Material Icons**: from https://github.com/Templarian/MaterialDesign
-* **Bootstrap Icons**" from https://github.com/twbs/icons
+* **Bootstrap Icons**: from https://github.com/twbs/icons
 * **Elastic Icons**: from https://github.com/Crashedmind/PlantUML-Elastic-icons
 * **Domain Story**: from https://github.com/johthor/DomainStory-PlantUML
 

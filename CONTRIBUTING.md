@@ -3,13 +3,26 @@
 ## Adding a new library
 
 1. Fork this repository on GitHub and then git clone it to your local machine.
-1. Add a new folder containing your library files.
-1. Add a file inside your library's folder called INFO that contains:
+1. Add a new folder containing your library files on the `stdlib` folder.
+1. Create this corresponding tree structure: <br>
+[![Tree structure](https://img.plantuml.biz/plantuml/svg/RK_B2i8m4BmN-W-n53pP_a0D5UpHYrUHaZOH0dcnkm4BVhonhL3Gqp2pmyniYoI07jeepBDT2SUY3aOuYjOSaAJHGxr2C_1cyX5O8Y1WsYDpmYfUv5a9TQ-UmeQKqd-CAwb2YlavQsuq4WRGj7NW23hGOcXy8EsTC6nHRtXd4HKZpqPGWjGh1fc0RGVnEIUrNxlJ-T9LLdw5lxlNwbOvER__1W00)](https://editor.plantuml.com/uml/RK_B2i8m4BmN-W-n53pP_a0D5UpHYrUHaZOH0dcnkm4BVhonhL3Gqp2pmyniYoI07jeepBDT2SUY3aOuYjOSaAJHGxr2C_1cyX5O8Y1WsYDpmYfUv5a9TQ-UmeQKqd-CAwb2YlavQsuq4WRGj7NW23hGOcXy8EsTC6nHRtXd4HKZpqPGWjGh1fc0RGVnEIUrNxlJ-T9LLdw5lxlNwbOvER__1W00)
+1. Add a file inside your library's folder called `README.md` that contains an YAML header:
+```md
+---
+name: <your library's name>
+display_name: 
+description: 
+author: 
+version: <your library's version>
+release: 
+license: 
+source: <[URL to your library's separate git repo where it is maintained]>
+origin: <URL to the icon/stdlib origin website>
+---
+
+Information about the `<your library's name>` Standard Library.
 ```
-VERSION=[your library's version]
-SOURCE=[URL to your library's separate git repo where it is maintained]
-```
-1. Make changes to the README.md file to add your Library and describe it.
+1. Make changes to the root [`README.md`](./README.md) file to add your Library, describe it and add example.
 1. Commit your work and push it up to your fork repository
 1. Submit a Pull Request from your fork repository back to the main repository
 
@@ -23,7 +36,7 @@ The entire process is described [on the official website](https://plantuml.com/s
 
 Dependencies: `imagemagic`, `plantuml`
 
-```
+```sh
 #!/bin/bash
 
 IMAGES_DIR=/path/to/images
