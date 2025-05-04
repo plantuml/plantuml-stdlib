@@ -22,5 +22,10 @@ cp -f output/home.repx ../plantuml/src/main/resources/stdlib/
 cp -f output/$NAME-*.repx ../plantuml/src/main/resources/stdlib/
 cp -f output/$NAMEVERSION-*.repx ../plantuml/src/main/resources/stdlib/
 cd ../plantuml
+# If you need to upgrade plantuml, do in its directory
+#     git restore
+#     git clean -fd
+#     git pull -r
+# and run this script again.
 ./gradlew jar
-  
+

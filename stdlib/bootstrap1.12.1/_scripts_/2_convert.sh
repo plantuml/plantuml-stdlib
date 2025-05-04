@@ -17,19 +17,19 @@ for i in *.svg; do
     ICON=$(basename $i .svg)
     # TODO Remove the following if-then once this SVG parsing issue is fiexed:
     # https://github.com/plantuml/plantuml-stdlib/pull/133#issuecomment-2847700969
-    if [ "$ICON" = "filetype-cs" ] \
-    || [ "$ICON" = "filetype-css" ] \
-    || [ "$ICON" = "filetype-m4p" ] \
-    || [ "$ICON" = "filetype-pptx" ] \
-    || [ "$ICON" = "filetype-py" ] \
-    || [ "$ICON" = "filetype-sass" ] \
-    || [ "$ICON" = "filetype-scss" ] \
-    || [ "$ICON" = "filetype-" ] \
-    || [ "$ICON" = "filetype-" ] \
-    || [ "$ICON" = "filetype-" ] \
-    || [ "$ICON" = "filetype-" ]; then
-        continue;
-    fi
+#    if [ "$ICON" = "filetype-cs" ] \
+#    || [ "$ICON" = "filetype-css" ] \
+#    || [ "$ICON" = "filetype-m4p" ] \
+#    || [ "$ICON" = "filetype-pptx" ] \
+#    || [ "$ICON" = "filetype-py" ] \
+#    || [ "$ICON" = "filetype-sass" ] \
+#    || [ "$ICON" = "filetype-scss" ] \
+#    || [ "$ICON" = "filetype-" ] \
+#    || [ "$ICON" = "filetype-" ] \
+#    || [ "$ICON" = "filetype-" ] \
+#    || [ "$ICON" = "filetype-" ]; then
+#        continue;
+#    fi
     echo -n 'sprite bi-'$ICON' ' >> ../$NAME.puml
     cat $i \
     | sed -e 's/ xmlns="http:\/\/www\.w3\.org\/2000\/svg"//' \
