@@ -480,7 +480,7 @@ This example renders the following image:
 
 ## Bootstrap Icons [bootstrap]
 
-This library consists of a free Bootstrap Icons style icons from Bootstrap. See the entire collection or search via a filter at https://icons.getbootstrap.com/ .
+This library consists of a free Bootstrap Icons style icons from Bootstrap. See the entire collection or search via a filter on the [Bootstrap Icons website](https://icons.getbootstrap.com/#search).
 
 Use it by including the file that contains all the sprites: `!include <bootstrap/bootstrap>`.
 When imported, you can use the sprite as normally you would, using `<$bi_sprite_name>`.
@@ -504,7 +504,7 @@ usecase f as "<$bi-bootstrap-fill,scale=2.5,color=#00f>"
 
 This example renders the following image:
 
-![Example](http://www.plantuml.com/plantuml/png/TODO "Example")
+[![bootstrap Example](https://img.plantuml.biz/plantuml/svg/TP3B2i8m44NtXVn3h2vR5S6Ds53q6zovcIHJ3HsJaWSkn7zN4TjIS7SNvyoTcJf4y37TY6MXDRO33pT-2gWWu05KU_4kMNrqv3o_Nqr4bisCLPGqyhrqBeReeLlrIR2CPUdhS-0GUBvVI5DUo4aKP_kB-K392LK41OJLPhaL8qfDg4TFFKNEvsGixZpgSRqUb7w_iZ54uxdu3neA2lKvlvAKy3bMctzgCLNdwtNpCMkq-lth5m00 "bootstrap Example")](https://editor.plantuml.com/uml/TP3B2i8m44NtXVn3h2vR5S6Ds53q6zovcIHJ3HsJaWSkn7zN4TjIS7SNvyoTcJf4y37TY6MXDRO33pT-2gWWu05KU_4kMNrqv3o_Nqr4bisCLPGqyhrqBeReeLlrIR2CPUdhS-0GUBvVI5DUo4aKP_kB-K392LK41OJLPhaL8qfDg4TFFKNEvsGixZpgSRqUb7w_iZ54uxdu3neA2lKvlvAKy3bMctzgCLNdwtNpCMkq-lth5m00)
 
 ## Domain Story library (DomainStory-PlantUML) [DomainStory]
 
@@ -566,7 +566,7 @@ This example renders the following image:
 * **classy-c4**: made by https://github.com/james-gadrow-kr/classy-c4
 * **tupadr3**: made by https://github.com/tupadr3/plantuml-icon-font-sprites
 * **Material Icons**: from https://github.com/Templarian/MaterialDesign
-* **Bootstrap Icons**" from https://github.com/twbs/icons
+* **Bootstrap Icons**: from https://github.com/twbs/icons
 * **Elastic Icons**: from https://github.com/Crashedmind/PlantUML-Elastic-icons
 * **Domain Story**: from https://github.com/johthor/DomainStory-PlantUML
 
