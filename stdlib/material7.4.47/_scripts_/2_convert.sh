@@ -29,7 +29,7 @@ for i in *.svg; do
     cat << EOF > ../individuals/$ICON.puml
 @startuml
 !include <$NAMEVERSION/$NAME>
-usecase a as "<\$mdi-$ICON,scale=2.5>"
+usecase a as "<\$mdi-$ICON,scale=2>"
 @enduml
 EOF
 done
