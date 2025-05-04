@@ -478,6 +478,34 @@ This example renders the following image:
 
 ![Example](http://www.plantuml.com/plantuml/png/PSn12i8m40NGVK_nsqqL0k9U2eNMbRLGYjiIawa69faGKz7RUm3V0LxfWk7D4avUPqfEyy68znAQeiOiS3vAoiXFmYicbmchOy9NDdJZjPuHY2oo8B8s18sOQ7MViYZ_urNOKbgylAafYg5TpkEbwwTb66_zRYAhS5ImBYaaCbc71vD2rOBrdRZQ_m00 "Example")
 
+## Bootstrap Icons [bootstrap]
+
+This library consists of a free Bootstrap Icons style icons from Bootstrap. See the entire collection or search via a filter at https://icons.getbootstrap.com/ .
+
+Use it by including the file that contains all the sprites: `!include <bootstrap/bootstrap>`.
+When imported, you can use the sprite as normally you would, using `<$bi_sprite_name>`.
+Notice that this library requires an `bi_` preffix on sprites names, this is to avoid clash of names if multiple sprites have the same name on different libraries. `bi` stands for Bootstrap Icon and this name is also used in the Bootstrap framework.
+
+Example of usage:
+```plantuml
+@startuml
+skinparam UsecaseBackgroundColor white
+!include <bootstrap/bootstrap>
+
+usecase a as "<$bi-globe>\nbi-globe"
+usecase b as "<$bi-globe,scale=2.5>"
+usecase c as "<$bi-globe{scale=2.5}>" #line:red
+
+usecase d as "<$bi-bootstrap-fill>"
+usecase e as "<$bi-bootstrap-fill{scale=2.5,color=blue}>"
+usecase f as "<$bi-bootstrap-fill,scale=2.5,color=#00f>"
+@enduml
+```
+
+This example renders the following image:
+
+![Example](http://www.plantuml.com/plantuml/png/TODO "Example")
+
 ## Domain Story library (DomainStory-PlantUML) [DomainStory]
 
 This library provides a set of macros to easily describe and document a domain story which was developed in
@@ -538,6 +566,7 @@ This example renders the following image:
 * **classy-c4**: made by https://github.com/james-gadrow-kr/classy-c4
 * **tupadr3**: made by https://github.com/tupadr3/plantuml-icon-font-sprites
 * **Material Icons**: from https://github.com/Templarian/MaterialDesign
+* **Bootstrap Icons**" from https://github.com/twbs/icons
 * **Elastic Icons**: from https://github.com/Crashedmind/PlantUML-Elastic-icons
 * **Domain Story**: from https://github.com/johthor/DomainStory-PlantUML
 
