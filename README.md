@@ -94,8 +94,8 @@ This example renders the following image:
 This library consists of a free Bootstrap Icons style icons from Bootstrap. See the entire collection or search via a filter on the [Bootstrap Icons website](https://icons.getbootstrap.com/#search).
 
 Use it by including the file that contains all the sprites: `!include <bootstrap/bootstrap>`.
-When imported, you can use the sprite as normally you would, using `<$bi_sprite_name>`.
-Notice that this library requires an `bi_` preffix on sprites names, this is to avoid clash of names if multiple sprites have the same name on different libraries. `bi` stands for Bootstrap Icon and this name is also used in the Bootstrap framework.
+When imported, you can use the sprite as normally you would, using `<$bi-sprite-name>`.
+Notice that this library requires an `bi-` preffix on sprites names, this is to avoid clash of names if multiple sprites have the same name on different libraries. `bi` stands for Bootstrap Icon and this name is also used in the Bootstrap framework.
 
 Example of usage:
 ```plantuml

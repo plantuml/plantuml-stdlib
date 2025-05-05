@@ -2,11 +2,12 @@
 set -e
 
 cd ..
+VERSION=$(pwd | sed -n 's/.*\([0-9]\+\.[0-9]\+\.[0-9]\+\).*/\1/p')
+BASE=https://github.com/twbs/icons
 if [ -d svg ] || [ -d icons ]; then
     exit 0
 fi
-VERSION=$(grep ^version README.md|awk '{print $2}')
-BASE=https://github.com/twbs/icons
+
 wget -q $BASE/releases/download/v$VERSION/bootstrap-icons-$VERSION.zip
 unzip -q bootstrap-icons-$VERSION.zip
 rm -f bootstrap-icons-$VERSION.zip

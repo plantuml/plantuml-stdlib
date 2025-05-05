@@ -10,4 +10,4 @@ link: bootstrap1.12.1
 origin: 
 ---
 
-This is a link to lastest `bootstrap1.12.1` Standard Library. The sprites are one include file. See https://icons.getbootstrap.com/ for all icons names and prefix them with `bi_` to use them.
+This is a link to lastest `bootstrap1.12.1` Standard Library. The sprites are in one include file. See https://icons.getbootstrap.com/ for all icons names and prefix them with `bi-` to use them.

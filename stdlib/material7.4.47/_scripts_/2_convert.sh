@@ -15,10 +15,10 @@ cd svg
 CONVERTED=0
 for i in *.svg; do
     ICON=$(basename $i .svg)
-    echo -n 'sprite bi-'$ICON' ' >> ../$NAME.puml
+    echo -n 'sprite mdi-'$ICON' ' >> ../$NAME.puml
     cat $i \
     | sed -e 's/ xmlns="http:\/\/www\.w3\.org\/2000\/svg"//' \
-    | sed -e 's/ fill=".*>/>/' \
+    | sed -e 's/ id=".* 24 24"></ width="24" height="24"></' \
     >> ../$NAME.puml
     echo >> ../$NAME.puml
     echo >> ../$NAME.puml
@@ -29,7 +29,7 @@ for i in *.svg; do
     cat << EOF > ../individuals/$ICON.puml
 @startuml
 !include <$NAMEVERSION/$NAME>
-usecase a as "<\$bi-$ICON,scale=2.5>"
+usecase a as "<\$mdi-$ICON,scale=2>"
 @enduml
 EOF
 done
