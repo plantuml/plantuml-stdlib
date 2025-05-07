@@ -1,7 +1,7 @@
 ---
 name: material
-display_name: material
-description: Material
+display_name: Material
+description: Material Design Icon
 author: 
 version: 7.4.47
 license: 
