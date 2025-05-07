@@ -1,13 +1,13 @@
 ---
 name: material
 display_name: Material
-description: 
+description: Material Design Icon
 author: 
-version: 0.0.1
-release: 
+version: 7.4.47
 license: 
-source: https://github.com/Templarian/MaterialDesign
+source: 
+link: material7.4.47
 origin: 
 ---
 
-Information about the `material` Standard Library.
+This is a link to lastest `material` Standard Library.

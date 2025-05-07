@@ -1,7 +1,7 @@
 ---
-name: material7
+name: material7.4.47
 display_name: Material
-description: 
+description: SVG Material Design Icon
 author: Austin Andrews
 version: 7.4.47
 release: 
