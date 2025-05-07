@@ -1,5 +1,5 @@
 ---
-name: material7
+name: material7.4.47
 display_name: Material
 description: 
 author: Austin Andrews
