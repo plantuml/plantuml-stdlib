@@ -1,5 +1,5 @@
 ---
-name: material
+name: material0.0.1
 display_name: Material
 description: 
 author: 
@@ -10,4 +10,4 @@ source: https://github.com/Templarian/MaterialDesign
 origin: 
 ---
 
-Information about the `material` Standard Library.
+Information about the `material0.0.1` Standard Library.
