@@ -1,13 +1,13 @@
 ---
-name: material0.0.1
+name: material2.1.19
 display_name: Material
-description: 
+description: PNG Material Design Icon
 author: 
-version: 0.0.1
+version: 2.1.19
 release: 
 license: 
 source: https://github.com/Templarian/MaterialDesign
 origin: 
 ---
 
-Information about the `material0.0.1` Standard Library.
+Information about the `material2.1.19` Standard Library.
