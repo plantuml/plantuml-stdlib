@@ -9,11 +9,21 @@
 '     !ENABLE_ALL_PLANT_ELEMENTS = 1
 '   or with additional command line argument -DENABLE_ALL_PLANT_ELEMENTS=1
 
+' C4-PlantUML v2.12 fixed a missing rotation bug in Lay_* calls in combination with LAYOUT_LANDSCAPE() call
+' (details see https://github.com/plantuml-stdlib/C4-PlantUML/issues/376)
+' If older diagrams should remain unchanged the bugfix can be deactivated with following statement
+'     !NO_LAY_ROTATE = 1
+' or with follwing additional command line argument 
+'     -DNO_LAY_ROTATE=1
+' like
+'    java -jar plantuml.jar -DNO_LAY_ROTATE=1 ...
+!global NO_LAY_ROTATE ?= 0
+
 'Version
 ' ##################################
 !function C4Version()
   ' 2 spaces and ' are used as unique marker, that the release scripts makes the correct version update
-  !$c4Version  =  "2.11.0"
+  !$c4Version  =  "2.12.0"
   !return $c4Version
 !end function
 
@@ -252,6 +262,19 @@ skinparam package {
     BackgroundColor $BOUNDARY_BG_COLOR
 }
 
+' PlantUML compatibility utilities
+' ##################################
+
+' PlantUML v1.2025.1beta6 introduced a new %breakline() function.
+' This should be used instead of the old %newline(), if a command ends.
+' (%newline() should be only used in multiline labels,...)
+!function $bl()
+  !if (%function_exists("%breakline"))
+    !return %breakline()
+  !endif
+  !return %newline()
+!endfunction
+
 ' Legend and Tags
 ' ##################################
 !global $tagDefaultLegend = ""
@@ -401,42 +424,42 @@ skinparam package {
 !endfunction
 
 !function $elementTagSkinparams($element, $tagStereo, $bgColor, $fontColor, $borderColor, $shadowing, $shape, $borderStyle, $borderThickness)
-  !$elementSkin = "skinparam " + $element + "<<" + $tagStereo + ">> {" + %newline()
+  !$elementSkin = "skinparam " + $element + "<<" + $tagStereo + ">> {" + $bl()
   !if ($fontColor != "")
     !if (%strpos($tagStereo, "boundary") < 0)
-      !$elementSkin = $elementSkin + "    StereotypeFontColor " + $fontColor + %newline()
+      !$elementSkin = $elementSkin + "    StereotypeFontColor " + $fontColor + $bl()
     !endif
-    !$elementSkin = $elementSkin + "    FontColor " + $fontColor + %newline()
+    !$elementSkin = $elementSkin + "    FontColor " + $fontColor + $bl()
   !endif
   !if ($bgColor != "")
-    !$elementSkin = $elementSkin + "    BackgroundColor " + $bgColor + %newline()
+    !$elementSkin = $elementSkin + "    BackgroundColor " + $bgColor + $bl()
   !endif
   !if ($borderColor != "")
-    !$elementSkin = $elementSkin + "    BorderColor " + $borderColor+ %newline()
+    !$elementSkin = $elementSkin + "    BorderColor " + $borderColor+ $bl()
   !endif
   !if ($shadowing == "true")
-    !$elementSkin = $elementSkin + "    Shadowing<<" + $tagStereo + ">> " + "true" + %newline()
+    !$elementSkin = $elementSkin + "    Shadowing<<" + $tagStereo + ">> " + "true" + $bl()
   !endif
   !if ($shadowing == "false")
-    !$elementSkin = $elementSkin + "    Shadowing<<" + $tagStereo + ">> " + "false" + %newline()
+    !$elementSkin = $elementSkin + "    Shadowing<<" + $tagStereo + ">> " + "false" + $bl()
   !endif
   ' only rectangle supports shape(d corners), define both skinparam that overlays are working
   !if ($shape != "" && $element == "rectangle")
     !if ($shape == $ROUNDED_BOX)
-      !$elementSkin = $elementSkin + "    RoundCorner " + $ROUNDED_BOX_SIZE+ %newline()
-      !$elementSkin = $elementSkin + "    DiagonalCorner " + "0" + %newline()
+      !$elementSkin = $elementSkin + "    RoundCorner " + $ROUNDED_BOX_SIZE+ $bl()
+      !$elementSkin = $elementSkin + "    DiagonalCorner " + "0" + $bl()
     !elseif ($shape == $EIGHT_SIDED)
-      !$elementSkin = $elementSkin + "    RoundCorner " + "0" + %newline()
-      !$elementSkin = $elementSkin + "    DiagonalCorner " + $EIGHT_SIDED_SIZE+ %newline()
+      !$elementSkin = $elementSkin + "    RoundCorner " + "0" + $bl()
+      !$elementSkin = $elementSkin + "    DiagonalCorner " + $EIGHT_SIDED_SIZE+ $bl()
     !endif
   !endif
   !if ($borderStyle != "")
-    !$elementSkin = $elementSkin + "    BorderStyle " + $borderStyle + %newline()
+    !$elementSkin = $elementSkin + "    BorderStyle " + $borderStyle + $bl()
   !endif
   !if ($borderThickness != "")
-    !$elementSkin = $elementSkin + "    BorderThickness " + $borderThickness + %newline()
+    !$elementSkin = $elementSkin + "    BorderThickness " + $borderThickness + $bl()
   !endif
-  !$elementSkin = $elementSkin + "}" + %newline()
+  !$elementSkin = $elementSkin + "}" + $bl()
   !return $elementSkin
 !endfunction
 
@@ -453,8 +476,8 @@ skinparam package {
   !$tagSkin = $tagSkin + $elementTagSkinparams("participant", $tagStereo, $bgColor, $fontColor, $borderColor, $shadowing, "", $borderStyle, $borderThickness)
   !$tagSkin = $tagSkin + $elementTagSkinparams("sequencebox", $tagStereo, $bgColor, $fontColor, $borderColor, $shadowing, "", $borderStyle, $borderThickness)
   !if (%strpos($tagStereo, "boundary") >= 0 && $bgColor != "")
-    !$tagSkin = $tagSkin + "skinparam package<<" + $tagStereo + ">>StereotypeFontColor " + $bgColor + %newline()
-    !$tagSkin = $tagSkin + "skinparam rectangle<<" + $tagStereo + ">>StereotypeFontColor " + $bgColor + %newline()
+    !$tagSkin = $tagSkin + "skinparam package<<" + $tagStereo + ">>StereotypeFontColor " + $bgColor + $bl()
+    !$tagSkin = $tagSkin + "skinparam rectangle<<" + $tagStereo + ">>StereotypeFontColor " + $bgColor + $bl()
   !endif
   !if %variable_exists("ENABLE_ALL_PLANT_ELEMENTS")
     !$tagSkin = $tagSkin + $elementTagSkinparams("agent", $tagStereo, $bgColor, $fontColor, $borderColor, $shadowing, "", $borderStyle, $borderThickness)
@@ -479,18 +502,18 @@ skinparam package {
     ' label uses wrong font color? (should be $bgColor too)
     !$tagSkin = $tagSkin + $elementTagSkinparams("label", $tagStereo, $bgColor, $bgColor, $borderColor, $shadowing, "", $borderStyle, $borderThickness)
 ' label colors cannot be set via skinparam use additional style
-    !$tagSkin = $tagSkin + "<style>" + %newline()
+    !$tagSkin = $tagSkin + "<style>" + $bl()
     ' componentDiagram {
-    !$tagSkin = $tagSkin + "  label {" + %newline()
-    !$tagSkin = $tagSkin + "    ." + $tagStereo + " {" + %newline()
-    !$tagSkin = $tagSkin + "      StereotypeFontColor " + $bgColor + %newline()
-    !$tagSkin = $tagSkin + "      Fontcolor " + $bgColor + %newline()
-    !$tagSkin = $tagSkin + "      BackgroundColor " + $bgColor + %newline()
-    !$tagSkin = $tagSkin + "      BorderColor " + $borderColor + %newline()
-    !$tagSkin = $tagSkin + "    }" + %newline()
-    !$tagSkin = $tagSkin + "  }" + %newline()
+    !$tagSkin = $tagSkin + "  label {" + $bl()
+    !$tagSkin = $tagSkin + "    ." + $tagStereo + " {" + $bl()
+    !$tagSkin = $tagSkin + "      StereotypeFontColor " + $bgColor + $bl()
+    !$tagSkin = $tagSkin + "      Fontcolor " + $bgColor + $bl()
+    !$tagSkin = $tagSkin + "      BackgroundColor " + $bgColor + $bl()
+    !$tagSkin = $tagSkin + "      BorderColor " + $borderColor + $bl()
+    !$tagSkin = $tagSkin + "    }" + $bl()
+    !$tagSkin = $tagSkin + "  }" + $bl()
     ' }
-    !$tagSkin = $tagSkin + "</style>" + %newline()
+    !$tagSkin = $tagSkin + "</style>" + $bl()
   !endif
 $tagSkin
 !endprocedure
@@ -504,7 +527,7 @@ $tagSkin
 !endfunction
 
 !unquoted procedure $defineRelSkinparams($tagStereo, $textColor, $lineColor, $lineStyle, $lineThickness)
-  !$elementSkin = "skinparam arrow<<" + $tagStereo + ">> {" + %newline()
+  !$elementSkin = "skinparam arrow<<" + $tagStereo + ">> {" + $bl()
   !if ($lineColor != "") || ($textColor != "") || ($lineStyle != "")
     !$elementSkin = $elementSkin + "    Color "
     !if ($lineColor != "")
@@ -516,12 +539,12 @@ $tagSkin
     !if ($lineStyle != "")
       !$elementSkin = $elementSkin + ";line." + $lineStyle
     !endif
-    !$elementSkin = $elementSkin + %newline()
+    !$elementSkin = $elementSkin + $bl()
   !endif
   !if ($lineThickness != "")
-    !$elementSkin = $elementSkin + "    thickness " + $lineThickness + %newline()
+    !$elementSkin = $elementSkin + "    thickness " + $lineThickness + $bl()
   !endif
-  !$elementSkin = $elementSkin + "}" + %newline()
+  !$elementSkin = $elementSkin + "}" + $bl()
 $elementSkin
 !endprocedure
 
@@ -1026,10 +1049,10 @@ UpdateElementStyle($elementName, $bgColor, $fontColor, $borderColor, $shadowing)
 
 ' update the style of default relation, it has to set both properties (combined statement not working)
 !unquoted procedure UpdateRelStyle($textColor, $lineColor)
-  !$elementSkin = "skinparam arrow {" + %newline()
-  !$elementSkin = $elementSkin + "    Color " + $lineColor + %newline()
-  !$elementSkin = $elementSkin + "    FontColor " + $textColor + %newline()
-  !$elementSkin = $elementSkin + "}" + %newline()
+  !$elementSkin = "skinparam arrow {" + $bl()
+  !$elementSkin = $elementSkin + "    Color " + $lineColor + $bl()
+  !$elementSkin = $elementSkin + "    FontColor " + $textColor + $bl()
+  !$elementSkin = $elementSkin + "}" + $bl()
 $elementSkin
 !endprocedure
 
@@ -1161,28 +1184,107 @@ $elementSkin
 !global $propTableCaption = ""
 !global $propColCaption = "="
 
+!global $isFirstProp = 1
+!global $firstPropCol = 1
+!global $lastPropCol = 1
+
+!function $fillMissing($col, $colNext)
+  !if ($col == "" && $colNext != "")
+    !return " "
+  !endif
+  !return $col 
+!endfunction
+
+!function $updatePropColumns($colIdx)
+  !if ($isFirstProp == 1 && $colIdx > $firstPropCol)
+    !$firstPropCol = $colIdx
+  !endif    
+  !if ($isFirstProp == 0 && $colIdx > $lastPropCol)
+    !$lastPropCol = $colIdx
+  !endif    
+  !return "" 
+!endfunction
+
+' add missing header columns, if a following row has more columns
+' (fixed in PlantUML v1.2025.1beta9; only required in older versions)
+!function $fixHeaderColumns()
+  ' the number of displayed columns considers only the first row
+  ' if another row has more columns the first has to be filled with missing columns 
+  !if ($lastPropCol > $firstPropCol)
+    !$delta = $lastPropCol - $firstPropCol
+    !$delta = $delta * 2
+    !$fix = %substr(" | | | |", 0, $delta)
+
+    ' basically the line break \n should be the split
+    ' but \n is not encoded (anymore?) therefore split only via
+    ' \ and remove the last obsolete  \ (changed order with add 
+    ' \ at the beginning is not working). 
+    ' "\n" would split \ and n ==> n would be an unwanted line break 
+    !$lines = %splitstr($propTable, "\")
+    ' !$lines = %splitstr_regex($propTable, "(?=[\x000A])")
+    !$first = 1
+    !$newTab = ""
+    !foreach $item in $lines
+      !if ($first == 1)
+        !$item = $item + $fix
+        !$first = 0
+      !endif
+      !$newTab = $newTab + $item + "\"
+    !endfor
+    
+    !$fixLen = %strlen($newTab) - 1
+    !$newTab = %substr($newTab, 0, $fixLen)
+
+    !$propTable = $newTab
+  !endif    
+
+  !$isFirstProp = 1
+  !$firstPropCol = 1
+  !$lastPropCol = 1
+
+  !return "" 
+!endfunction
+
 !unquoted function SetPropertyHeader($col1Name, $col2Name = "", $col3Name = "", $col4Name = "")
+  !$col3Name = $fillMissing($col3Name, $col4Name)
+  !$col2Name = $fillMissing($col2Name, $col3Name)
+  !$col1Name = $fillMissing($col1Name, $col2Name)
+
   !$propColCaption = ""
   !$propTableCaption = "|= " + $col1Name + " |"
   !if ($col2Name != "")
     !$propTableCaption = $propTableCaption + "= " + $col2Name + " |"
+    $updatePropColumns(2)
   !endif
   !if ($col3Name != "")
     !$propTableCaption = $propTableCaption + "= " + $col3Name + " |"
+    $updatePropColumns(3)
   !endif
   !if ($col4Name != "")
     !$propTableCaption = $propTableCaption + "= " + $col4Name + " |"
+    $updatePropColumns(4)
   !endif
+
+  !$isFirstProp = 0
   !return ""
 !endfunction
 
 !unquoted function WithoutPropertyHeader()
   !$propTableCaption = ""
   !$propColCaption = "="
+
+  !$isFirstProp = 1
+  !$firstPropCol = 1
+  !$lastPropCol = 1
+
   !return ""
 !endfunction
 
 !unquoted function AddProperty($col1, $col2 = "", $col3 = "", $col4 = "")
+  !$col3 = $fillMissing($col3, $col4)
+  !$col2 = $fillMissing($col2, $col3)
+  !$col1 = $fillMissing($col1, $col2)
+
   !if ($propTable == "")
     !if ($propTableCaption != "")
       !$propTable = $propTableCaption + "\n"
@@ -1190,20 +1292,28 @@ $elementSkin
   !else
     !$propTable = $propTable + "\n"
   !endif
+
   !$propTable = $propTable + "| " + $col1 + " |"
   !if ($col2 != "")
     !$propTable = $propTable + $propColCaption + " " + $col2 + " |"
+    $updatePropColumns(2)
   !endif
   !if ($col3 != "")
     !$propTable = $propTable + " " + $col3 + " |"
+    $updatePropColumns(3)
   !endif
   !if ($col4 != "")
     !$propTable = $propTable + " " + $col4 + " |"
+    $updatePropColumns(4)
   !endif
+
+  !$isFirstProp = 0
   !return ""
 !endfunction
 
 !unquoted function $getProps($alignedNL = "\n")
+  $fixHeaderColumns()
+
   !if ($propTable != "")
     !$retTable = $alignedNL + $propTable
     !$propTable = ""
@@ -1662,32 +1772,64 @@ $getRel($right("<<-","->>"), $from, $to, $label, $techn, $descr, $sprite, $tags,
   !return '-[hidden]' + %substr('------------', 0, %intval($distance) + 1)
 !endfunction
 
+!function $l_down($start,$end)
+  !if (NO_LAY_ROTATE == 0)
+    !return $down($start,$end)
+  !else
+    !return $start+"DOWN"+$end
+  !endif
+!endfunction
+
+!function $l_up($start,$end)
+  !if (NO_LAY_ROTATE == 0)
+    !return $up($start,$end)
+  !else
+    !return $start+"UP"+$end
+  !endif
+!endfunction
+
+!function $l_left($start,$end)
+  !if (NO_LAY_ROTATE == 0)
+    !return $left($start,$end)
+  !else
+    !return $start+"LEFT"+$end
+  !endif
+!endfunction
+
+!function $l_right($start,$end)
+  !if (NO_LAY_ROTATE == 0)
+    !return $right($start,$end)
+  !else
+    !return $start+"RIGHT"+$end
+  !endif
+!endfunction
+
 !unquoted procedure Lay_D($from, $to)
-$from -[hidden]D- $to
+$from $l_down("-[hidden]","-") $to
 !endprocedure
 !unquoted procedure Lay_Down($from, $to)
-$from -[hidden]D- $to
+$from $l_down("-[hidden]","-") $to
 !endprocedure
 
 !unquoted procedure Lay_U($from, $to)
-$from -[hidden]U- $to
+$from $l_up("-[hidden]","-") $to
 !endprocedure
 !unquoted procedure Lay_Up($from, $to)
-$from -[hidden]U- $to
+$from $l_up("-[hidden]","-") $to
 !endprocedure
 
 !unquoted procedure Lay_R($from, $to)
-$from -[hidden]R- $to
+$from $l_right("-[hidden]","-") $to
 !endprocedure
 !unquoted procedure Lay_Right($from, $to)
-$from -[hidden]R- $to
+$from $l_right("-[hidden]","-") $to
 !endprocedure
 
 !unquoted procedure Lay_L($from, $to)
-$from -[hidden]L- $to
+$from $l_left("-[hidden]","-") $to
 !endprocedure
 !unquoted procedure Lay_Left($from, $to)
-$from -[hidden]L- $to
+$from $l_left("-[hidden]","-") $to
 !endprocedure
 
 ' PlantUML bug: lines which does "not match" with the orientation/direction of the diagram
