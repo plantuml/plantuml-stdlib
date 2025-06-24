@@ -10,4 +10,4 @@ link: material2.1.19
 origin: 
 ---
 
-This is a link to the oldest `material`  Standard Library _(for backward compatibility)_.
+This is a link to the lastest version `v2` of `material` Standard Library _(with bitmap sprite)_.
