@@ -195,7 +195,7 @@
     !$variableName = $decideVariableName($kind, "", "IconName")
     !if $icon
         !if %not(%variable_exists($variableName))
-            !include <material/$icon>
+            !include <material2.1.19/$icon>
             %set_variable_value($variableName, "$ma_" + $icon)
         !endif
     !else
