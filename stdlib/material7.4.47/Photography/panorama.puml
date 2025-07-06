@@ -1,0 +1,8 @@
+sprite mdi-panorama <svg width="48" height="48"><g transform="scale(2)"><path d="M8.5,12.5L11,15.5L14.5,11L19,17H5M23,18V6A2,2 0 0,0 21,4H3A2,2 0 0,0 1,6V18A2,2 0 0,0 3,20H21A2,2 0 0,0 23,18Z" /></g></svg>
+
+!define MA_PANORAMA(_color)                                 SPRITE_PUT(ma_panorama, _color)
+!define MA_PANORAMA(_color, _scale)                         SPRITE_PUT(ma_panorama, _color, _scale)
+!define MA_PANORAMA(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA PANORAMA, ma_panorama, _color, _scale)
+!define MA_PANORAMA(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA PANORAMA, ma_panorama, _color, _scale, _shape)
+!define MA_PANORAMA(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA PANORAMA, _label, ma_panorama, _color, _scale, _shape)
+skinparam folderBackgroundColor<<MA PANORAMA>> White

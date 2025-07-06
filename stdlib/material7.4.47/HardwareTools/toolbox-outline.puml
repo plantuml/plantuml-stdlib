@@ -1,0 +1,8 @@
+sprite mdi-toolbox-outline <svg width="48" height="48"><g transform="scale(2)"><path d="M20 8H17V6C17 4.9 16.1 4 15 4H9C7.9 4 7 4.9 7 6V8H4C2.9 8 2 8.9 2 10V20H22V10C22 8.9 21.1 8 20 8M9 6H15V8H9V6M20 18H4V15H6V16H8V15H16V16H18V15H20V18M18 13V12H16V13H8V12H6V13H4V10H20V13H18Z" /></g></svg>
+
+!define MA_TOOLBOX_OUTLINE(_color)                                 SPRITE_PUT(ma_toolbox_outline, _color)
+!define MA_TOOLBOX_OUTLINE(_color, _scale)                         SPRITE_PUT(ma_toolbox_outline, _color, _scale)
+!define MA_TOOLBOX_OUTLINE(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA TOOLBOX OUTLINE, ma_toolbox_outline, _color, _scale)
+!define MA_TOOLBOX_OUTLINE(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA TOOLBOX OUTLINE, ma_toolbox_outline, _color, _scale, _shape)
+!define MA_TOOLBOX_OUTLINE(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA TOOLBOX OUTLINE, _label, ma_toolbox_outline, _color, _scale, _shape)
+skinparam folderBackgroundColor<<MA TOOLBOX OUTLINE>> White

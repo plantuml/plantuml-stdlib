@@ -1,0 +1,8 @@
+sprite mdi-tape-measure <svg width="48" height="48"><g transform="scale(2)"><path d="M9,5A7,7 0 0,1 16,12H17V15H16V19H9A7,7 0 0,1 2,12A7,7 0 0,1 9,5M9,8A4,4 0 0,0 5,12A4,4 0 0,0 9,16A4,4 0 0,0 13,12A4,4 0 0,0 9,8M17,17H22V19L22,21H20V19H17V17Z" /></g></svg>
+
+!define MA_TAPE_MEASURE(_color)                                 SPRITE_PUT(ma_tape_measure, _color)
+!define MA_TAPE_MEASURE(_color, _scale)                         SPRITE_PUT(ma_tape_measure, _color, _scale)
+!define MA_TAPE_MEASURE(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA TAPE MEASURE, ma_tape_measure, _color, _scale)
+!define MA_TAPE_MEASURE(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA TAPE MEASURE, ma_tape_measure, _color, _scale, _shape)
+!define MA_TAPE_MEASURE(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA TAPE MEASURE, _label, ma_tape_measure, _color, _scale, _shape)
+skinparam folderBackgroundColor<<MA TAPE MEASURE>> White

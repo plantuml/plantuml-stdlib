@@ -1,0 +1,8 @@
+sprite mdi-vector-point-select <svg width="48" height="48"><g transform="scale(2)"><path d="M12,20L7,22L12,11L17,22L12,20M8,2H16V5H22V7H16V10H8V7H2V5H8V2M10,4V8H14V4H10Z" /></g></svg>
+
+!define MA_VECTOR_POINT_SELECT(_color)                                 SPRITE_PUT(ma_vector_point_select, _color)
+!define MA_VECTOR_POINT_SELECT(_color, _scale)                         SPRITE_PUT(ma_vector_point_select, _color, _scale)
+!define MA_VECTOR_POINT_SELECT(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA VECTOR POINT SELECT, ma_vector_point_select, _color, _scale)
+!define MA_VECTOR_POINT_SELECT(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA VECTOR POINT SELECT, ma_vector_point_select, _color, _scale, _shape)
+!define MA_VECTOR_POINT_SELECT(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA VECTOR POINT SELECT, _label, ma_vector_point_select, _color, _scale, _shape)
+skinparam folderBackgroundColor<<MA VECTOR POINT SELECT>> White

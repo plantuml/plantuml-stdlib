@@ -1,0 +1,8 @@
+sprite mdi-note <svg width="48" height="48"><g transform="scale(2)"><path d="M14,10V4.5L19.5,10M5,3C3.89,3 3,3.89 3,5V19A2,2 0 0,0 5,21H19A2,2 0 0,0 21,19V9L15,3H5Z" /></g></svg>
+
+!define MA_NOTE(_color)                                 SPRITE_PUT(ma_note, _color)
+!define MA_NOTE(_color, _scale)                         SPRITE_PUT(ma_note, _color, _scale)
+!define MA_NOTE(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA NOTE, ma_note, _color, _scale)
+!define MA_NOTE(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA NOTE, ma_note, _color, _scale, _shape)
+!define MA_NOTE(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA NOTE, _label, ma_note, _color, _scale, _shape)
+skinparam folderBackgroundColor<<MA NOTE>> White

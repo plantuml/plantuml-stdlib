@@ -1,0 +1,8 @@
+sprite mdi-train-car-box-full <svg width="48" height="48"><g transform="scale(2)"><path d="M1 7V17H2C2 18.11 2.9 19 4 19S6 18.11 6 17H18C18 18.11 18.9 19 20 19S22 18.11 22 17H23V7H1M16 16H14V11H10V16H8V9H16V16Z" /></g></svg>
+
+!define MA_TRAIN_CAR_BOX_FULL(_color)                                 SPRITE_PUT(ma_train_car_box_full, _color)
+!define MA_TRAIN_CAR_BOX_FULL(_color, _scale)                         SPRITE_PUT(ma_train_car_box_full, _color, _scale)
+!define MA_TRAIN_CAR_BOX_FULL(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA TRAIN CAR BOX FULL, ma_train_car_box_full, _color, _scale)
+!define MA_TRAIN_CAR_BOX_FULL(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA TRAIN CAR BOX FULL, ma_train_car_box_full, _color, _scale, _shape)
+!define MA_TRAIN_CAR_BOX_FULL(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA TRAIN CAR BOX FULL, _label, ma_train_car_box_full, _color, _scale, _shape)
+skinparam folderBackgroundColor<<MA TRAIN CAR BOX FULL>> White

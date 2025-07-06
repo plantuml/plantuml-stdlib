@@ -1,0 +1,8 @@
+sprite mdi-polaroid <svg width="48" height="48"><g transform="scale(2)"><path d="M6,3H18A2,2 0 0,1 20,5V19A2,2 0 0,1 18,21H6A2,2 0 0,1 4,19V5A2,2 0 0,1 6,3M6,5V17H18V5H6Z" /></g></svg>
+
+!define MA_POLAROID(_color)                                 SPRITE_PUT(ma_polaroid, _color)
+!define MA_POLAROID(_color, _scale)                         SPRITE_PUT(ma_polaroid, _color, _scale)
+!define MA_POLAROID(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA POLAROID, ma_polaroid, _color, _scale)
+!define MA_POLAROID(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA POLAROID, ma_polaroid, _color, _scale, _shape)
+!define MA_POLAROID(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA POLAROID, _label, ma_polaroid, _color, _scale, _shape)
+skinparam folderBackgroundColor<<MA POLAROID>> White

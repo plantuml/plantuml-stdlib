@@ -1,0 +1,8 @@
+sprite mdi-keyboard-f12 <svg width="48" height="48"><g transform="scale(2)"><path d="M2 7H8V9H4V11H7V13H4V17H2V7M16 7H20C21.11 7 22 7.9 22 9V11C22 12.11 21.11 13 20 13H18V15H22V17H16V13C16 11.9 16.9 11 18 11H20V9H16V7M10 7H14V17H12V9H10V7Z" /></g></svg>
+
+!define MA_KEYBOARD_F12(_color)                                 SPRITE_PUT(ma_keyboard_f12, _color)
+!define MA_KEYBOARD_F12(_color, _scale)                         SPRITE_PUT(ma_keyboard_f12, _color, _scale)
+!define MA_KEYBOARD_F12(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA KEYBOARD F12, ma_keyboard_f12, _color, _scale)
+!define MA_KEYBOARD_F12(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA KEYBOARD F12, ma_keyboard_f12, _color, _scale, _shape)
+!define MA_KEYBOARD_F12(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA KEYBOARD F12, _label, ma_keyboard_f12, _color, _scale, _shape)
+skinparam folderBackgroundColor<<MA KEYBOARD F12>> White

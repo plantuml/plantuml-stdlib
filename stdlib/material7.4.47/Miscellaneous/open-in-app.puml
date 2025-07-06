@@ -1,0 +1,8 @@
+sprite mdi-open-in-app <svg width="48" height="48"><g transform="scale(2)"><path d="M12,10L8,14H11V20H13V14H16M19,4H5C3.89,4 3,4.9 3,6V18A2,2 0 0,0 5,20H9V18H5V8H19V18H15V20H19A2,2 0 0,0 21,18V6A2,2 0 0,0 19,4Z" /></g></svg>
+
+!define MA_OPEN_IN_APP(_color)                                 SPRITE_PUT(ma_open_in_app, _color)
+!define MA_OPEN_IN_APP(_color, _scale)                         SPRITE_PUT(ma_open_in_app, _color, _scale)
+!define MA_OPEN_IN_APP(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA OPEN IN APP, ma_open_in_app, _color, _scale)
+!define MA_OPEN_IN_APP(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA OPEN IN APP, ma_open_in_app, _color, _scale, _shape)
+!define MA_OPEN_IN_APP(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA OPEN IN APP, _label, ma_open_in_app, _color, _scale, _shape)
+skinparam folderBackgroundColor<<MA OPEN IN APP>> White

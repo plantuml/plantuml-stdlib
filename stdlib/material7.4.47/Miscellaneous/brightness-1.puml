@@ -1,0 +1,8 @@
+sprite mdi-brightness-1 <svg width="48" height="48"><g transform="scale(2)"><path d="M12,2A10,10 0 0,1 22,12A10,10 0 0,1 12,22A10,10 0 0,1 2,12A10,10 0 0,1 12,2Z" /></g></svg>
+
+!define MA_BRIGHTNESS_1(_color)                                 SPRITE_PUT(ma_brightness_1, _color)
+!define MA_BRIGHTNESS_1(_color, _scale)                         SPRITE_PUT(ma_brightness_1, _color, _scale)
+!define MA_BRIGHTNESS_1(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA BRIGHTNESS 1, ma_brightness_1, _color, _scale)
+!define MA_BRIGHTNESS_1(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA BRIGHTNESS 1, ma_brightness_1, _color, _scale, _shape)
+!define MA_BRIGHTNESS_1(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA BRIGHTNESS 1, _label, ma_brightness_1, _color, _scale, _shape)
+skinparam folderBackgroundColor<<MA BRIGHTNESS 1>> White

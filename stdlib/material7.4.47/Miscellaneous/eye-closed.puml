@@ -1,0 +1,8 @@
+sprite mdi-eye-closed <svg width="48" height="48"><g transform="scale(2)"><path d="M12 17.5C8.2 17.5 4.8 15.4 3.2 12H1C2.7 16.4 7 19.5 12 19.5S21.3 16.4 23 12H20.8C19.2 15.4 15.8 17.5 12 17.5Z" /></g></svg>
+
+!define MA_EYE_CLOSED(_color)                                 SPRITE_PUT(ma_eye_closed, _color)
+!define MA_EYE_CLOSED(_color, _scale)                         SPRITE_PUT(ma_eye_closed, _color, _scale)
+!define MA_EYE_CLOSED(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA EYE CLOSED, ma_eye_closed, _color, _scale)
+!define MA_EYE_CLOSED(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA EYE CLOSED, ma_eye_closed, _color, _scale, _shape)
+!define MA_EYE_CLOSED(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA EYE CLOSED, _label, ma_eye_closed, _color, _scale, _shape)
+skinparam folderBackgroundColor<<MA EYE CLOSED>> White

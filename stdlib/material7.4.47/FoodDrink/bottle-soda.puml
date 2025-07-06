@@ -1,0 +1,8 @@
+sprite mdi-bottle-soda <svg width="48" height="48"><g transform="scale(2)"><path d="M15 11V20A2 2 0 0 1 13 22H11A2 2 0 0 1 9 20V11A2 2 0 0 1 9.6 9.58C11.1 7.89 11 4 11 4H10V2H14V4H13S12.9 7.89 14.4 9.58A2 2 0 0 1 15 11Z" /></g></svg>
+
+!define MA_BOTTLE_SODA(_color)                                 SPRITE_PUT(ma_bottle_soda, _color)
+!define MA_BOTTLE_SODA(_color, _scale)                         SPRITE_PUT(ma_bottle_soda, _color, _scale)
+!define MA_BOTTLE_SODA(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA BOTTLE SODA, ma_bottle_soda, _color, _scale)
+!define MA_BOTTLE_SODA(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA BOTTLE SODA, ma_bottle_soda, _color, _scale, _shape)
+!define MA_BOTTLE_SODA(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA BOTTLE SODA, _label, ma_bottle_soda, _color, _scale, _shape)
+skinparam folderBackgroundColor<<MA BOTTLE SODA>> White

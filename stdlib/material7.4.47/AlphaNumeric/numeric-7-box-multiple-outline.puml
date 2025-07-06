@@ -1,0 +1,8 @@
+sprite mdi-numeric-7-box-multiple-outline <svg width="48" height="48"><g transform="scale(2)"><path d="M13,15L17,7V5H11V7H15L11,15M21,17H7V3H21M21,1H7A2,2 0 0,0 5,3V17A2,2 0 0,0 7,19H21A2,2 0 0,0 23,17V3A2,2 0 0,0 21,1M3,5H1V21A2,2 0 0,0 3,23H19V21H3V5Z" /></g></svg>
+
+!define MA_NUMERIC_7_BOX_MULTIPLE_OUTLINE(_color)                                 SPRITE_PUT(ma_numeric_7_box_multiple_outline, _color)
+!define MA_NUMERIC_7_BOX_MULTIPLE_OUTLINE(_color, _scale)                         SPRITE_PUT(ma_numeric_7_box_multiple_outline, _color, _scale)
+!define MA_NUMERIC_7_BOX_MULTIPLE_OUTLINE(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA NUMERIC 7 BOX MULTIPLE OUTLINE, ma_numeric_7_box_multiple_outline, _color, _scale)
+!define MA_NUMERIC_7_BOX_MULTIPLE_OUTLINE(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA NUMERIC 7 BOX MULTIPLE OUTLINE, ma_numeric_7_box_multiple_outline, _color, _scale, _shape)
+!define MA_NUMERIC_7_BOX_MULTIPLE_OUTLINE(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA NUMERIC 7 BOX MULTIPLE OUTLINE, _label, ma_numeric_7_box_multiple_outline, _color, _scale, _shape)
+skinparam folderBackgroundColor<<MA NUMERIC 7 BOX MULTIPLE OUTLINE>> White

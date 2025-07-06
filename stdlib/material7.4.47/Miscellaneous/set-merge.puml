@@ -1,0 +1,8 @@
+sprite mdi-set-merge <svg width="48" height="48"><g transform="scale(2)"><path d="M2 7V9H7V7H2M12 9V11H9V13H12V15L15 12L12 9M17 9V15H22V9H17M2 11V13H7V11H2M2 15V17H7V15H2Z" /></g></svg>
+
+!define MA_SET_MERGE(_color)                                 SPRITE_PUT(ma_set_merge, _color)
+!define MA_SET_MERGE(_color, _scale)                         SPRITE_PUT(ma_set_merge, _color, _scale)
+!define MA_SET_MERGE(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA SET MERGE, ma_set_merge, _color, _scale)
+!define MA_SET_MERGE(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA SET MERGE, ma_set_merge, _color, _scale, _shape)
+!define MA_SET_MERGE(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA SET MERGE, _label, ma_set_merge, _color, _scale, _shape)
+skinparam folderBackgroundColor<<MA SET MERGE>> White

@@ -1,0 +1,8 @@
+sprite mdi-folder-off-outline <svg width="48" height="48"><g transform="scale(2)"><path d="M2.39 1.73L1.11 3L2.64 4.53C2.25 4.9 2 5.42 2 6V18C2 19.11 2.9 20 4 20H18.11L20.84 22.73L22.11 21.46L2.39 1.73M4 18V8H6.11L16.11 18H4M11.2 8L7.2 4H10L12 6H20C21.1 6 22 6.89 22 8V18C22 18.24 21.96 18.47 21.88 18.68L20 16.8V8H11.2Z" /></g></svg>
+
+!define MA_FOLDER_OFF_OUTLINE(_color)                                 SPRITE_PUT(ma_folder_off_outline, _color)
+!define MA_FOLDER_OFF_OUTLINE(_color, _scale)                         SPRITE_PUT(ma_folder_off_outline, _color, _scale)
+!define MA_FOLDER_OFF_OUTLINE(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA FOLDER OFF OUTLINE, ma_folder_off_outline, _color, _scale)
+!define MA_FOLDER_OFF_OUTLINE(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA FOLDER OFF OUTLINE, ma_folder_off_outline, _color, _scale, _shape)
+!define MA_FOLDER_OFF_OUTLINE(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA FOLDER OFF OUTLINE, _label, ma_folder_off_outline, _color, _scale, _shape)
+skinparam folderBackgroundColor<<MA FOLDER OFF OUTLINE>> White

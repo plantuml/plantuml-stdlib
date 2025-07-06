@@ -1,0 +1,8 @@
+sprite mdi-printer-settings <svg width="48" height="48"><g transform="scale(2)"><path d="M18,2V6H6V2H18M19,11A1,1 0 0,0 20,10A1,1 0 0,0 19,9A1,1 0 0,0 18,10A1,1 0 0,0 19,11M16,18V13H8V18H16M19,7A3,3 0 0,1 22,10V16H18V20H6V16H2V10A3,3 0 0,1 5,7H19M15,24V22H17V24H15M11,24V22H13V24H11M7,24V22H9V24H7Z" /></g></svg>
+
+!define MA_PRINTER_SETTINGS(_color)                                 SPRITE_PUT(ma_printer_settings, _color)
+!define MA_PRINTER_SETTINGS(_color, _scale)                         SPRITE_PUT(ma_printer_settings, _color, _scale)
+!define MA_PRINTER_SETTINGS(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA PRINTER SETTINGS, ma_printer_settings, _color, _scale)
+!define MA_PRINTER_SETTINGS(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA PRINTER SETTINGS, ma_printer_settings, _color, _scale, _shape)
+!define MA_PRINTER_SETTINGS(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA PRINTER SETTINGS, _label, ma_printer_settings, _color, _scale, _shape)
+skinparam folderBackgroundColor<<MA PRINTER SETTINGS>> White

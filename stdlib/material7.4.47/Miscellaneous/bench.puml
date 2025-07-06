@@ -1,0 +1,8 @@
+sprite mdi-bench <svg width="48" height="48"><g transform="scale(2)"><path d="M23 13H1V15H3V19H5V15H19V19H21V15H23V13Z" /></g></svg>
+
+!define MA_BENCH(_color)                                 SPRITE_PUT(ma_bench, _color)
+!define MA_BENCH(_color, _scale)                         SPRITE_PUT(ma_bench, _color, _scale)
+!define MA_BENCH(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA BENCH, ma_bench, _color, _scale)
+!define MA_BENCH(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA BENCH, ma_bench, _color, _scale, _shape)
+!define MA_BENCH(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA BENCH, _label, ma_bench, _color, _scale, _shape)
+skinparam folderBackgroundColor<<MA BENCH>> White

@@ -1,0 +1,8 @@
+sprite mdi-view-stream <svg width="48" height="48"><g transform="scale(2)"><path d="M4,5V11H21V5M4,18H21V12H4V18Z" /></g></svg>
+
+!define MA_VIEW_STREAM(_color)                                 SPRITE_PUT(ma_view_stream, _color)
+!define MA_VIEW_STREAM(_color, _scale)                         SPRITE_PUT(ma_view_stream, _color, _scale)
+!define MA_VIEW_STREAM(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA VIEW STREAM, ma_view_stream, _color, _scale)
+!define MA_VIEW_STREAM(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA VIEW STREAM, ma_view_stream, _color, _scale, _shape)
+!define MA_VIEW_STREAM(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA VIEW STREAM, _label, ma_view_stream, _color, _scale, _shape)
+skinparam folderBackgroundColor<<MA VIEW STREAM>> White

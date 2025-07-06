@@ -1,0 +1,8 @@
+sprite mdi-toy-brick-marker <svg width="48" height="48"><g transform="scale(2)"><path d="M19 6V5A2 2 0 0 0 17 3H15A2 2 0 0 0 13 5V6H11V5A2 2 0 0 0 9 3H7A2 2 0 0 0 5 5V6H3V20H14.54A9.55 9.55 0 0 1 13 15.5A5.58 5.58 0 0 1 18.5 10A5.3 5.3 0 0 1 21 10.63V6M18.5 12A3.54 3.54 0 0 0 15 15.5C15 18.1 18.5 22 18.5 22S22 18.1 22 15.5A3.54 3.54 0 0 0 18.5 12M18.5 16.8A1.2 1.2 0 1 1 18.5 14.4A1.29 1.29 0 0 1 19.7 15.6A1.15 1.15 0 0 1 18.5 16.8Z" /></g></svg>
+
+!define MA_TOY_BRICK_MARKER(_color)                                 SPRITE_PUT(ma_toy_brick_marker, _color)
+!define MA_TOY_BRICK_MARKER(_color, _scale)                         SPRITE_PUT(ma_toy_brick_marker, _color, _scale)
+!define MA_TOY_BRICK_MARKER(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA TOY BRICK MARKER, ma_toy_brick_marker, _color, _scale)
+!define MA_TOY_BRICK_MARKER(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA TOY BRICK MARKER, ma_toy_brick_marker, _color, _scale, _shape)
+!define MA_TOY_BRICK_MARKER(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA TOY BRICK MARKER, _label, ma_toy_brick_marker, _color, _scale, _shape)
+skinparam folderBackgroundColor<<MA TOY BRICK MARKER>> White

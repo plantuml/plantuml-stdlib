@@ -1,0 +1,8 @@
+sprite mdi-dots-horizontal <svg width="48" height="48"><g transform="scale(2)"><path d="M16,12A2,2 0 0,1 18,10A2,2 0 0,1 20,12A2,2 0 0,1 18,14A2,2 0 0,1 16,12M10,12A2,2 0 0,1 12,10A2,2 0 0,1 14,12A2,2 0 0,1 12,14A2,2 0 0,1 10,12M4,12A2,2 0 0,1 6,10A2,2 0 0,1 8,12A2,2 0 0,1 6,14A2,2 0 0,1 4,12Z" /></g></svg>
+
+!define MA_DOTS_HORIZONTAL(_color)                                 SPRITE_PUT(ma_dots_horizontal, _color)
+!define MA_DOTS_HORIZONTAL(_color, _scale)                         SPRITE_PUT(ma_dots_horizontal, _color, _scale)
+!define MA_DOTS_HORIZONTAL(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA DOTS HORIZONTAL, ma_dots_horizontal, _color, _scale)
+!define MA_DOTS_HORIZONTAL(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA DOTS HORIZONTAL, ma_dots_horizontal, _color, _scale, _shape)
+!define MA_DOTS_HORIZONTAL(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA DOTS HORIZONTAL, _label, ma_dots_horizontal, _color, _scale, _shape)
+skinparam folderBackgroundColor<<MA DOTS HORIZONTAL>> White

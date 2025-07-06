@@ -1,0 +1,8 @@
+sprite mdi-send-check <svg width="48" height="48"><g transform="scale(2)"><path d="M2 3V10L17 12L2 14V21L23 12M22 15.5L18.5 19L16.5 17L15 18.5L18.5 22L23.5 17Z" /></g></svg>
+
+!define MA_SEND_CHECK(_color)                                 SPRITE_PUT(ma_send_check, _color)
+!define MA_SEND_CHECK(_color, _scale)                         SPRITE_PUT(ma_send_check, _color, _scale)
+!define MA_SEND_CHECK(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA SEND CHECK, ma_send_check, _color, _scale)
+!define MA_SEND_CHECK(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA SEND CHECK, ma_send_check, _color, _scale, _shape)
+!define MA_SEND_CHECK(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA SEND CHECK, _label, ma_send_check, _color, _scale, _shape)
+skinparam folderBackgroundColor<<MA SEND CHECK>> White

@@ -1,0 +1,8 @@
+sprite mdi-home-plus-outline <svg width="48" height="48"><g transform="scale(2)"><path d="M17 14H19V17H22V19H19V22H17V19H14V17H17V14M5 20V12H2L12 3L22 12H17V10.19L12 5.69L7 10.19V18H12C12 18.7 12.12 19.37 12.34 20H5Z" /></g></svg>
+
+!define MA_HOME_PLUS_OUTLINE(_color)                                 SPRITE_PUT(ma_home_plus_outline, _color)
+!define MA_HOME_PLUS_OUTLINE(_color, _scale)                         SPRITE_PUT(ma_home_plus_outline, _color, _scale)
+!define MA_HOME_PLUS_OUTLINE(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA HOME PLUS OUTLINE, ma_home_plus_outline, _color, _scale)
+!define MA_HOME_PLUS_OUTLINE(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA HOME PLUS OUTLINE, ma_home_plus_outline, _color, _scale, _shape)
+!define MA_HOME_PLUS_OUTLINE(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA HOME PLUS OUTLINE, _label, ma_home_plus_outline, _color, _scale, _shape)
+skinparam folderBackgroundColor<<MA HOME PLUS OUTLINE>> White

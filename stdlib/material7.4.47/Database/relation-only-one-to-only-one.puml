@@ -1,0 +1,8 @@
+sprite mdi-relation-only-one-to-only-one <svg width="48" height="48"><g transform="scale(2)"><path d="M22 15V17H21V19H19V17H18V19H16V17H11V9H8V11H6V9H5V11H3V9H2V7H3V5H5V7H6V5H8V7H13V15H16V13H18V15H19V13H21V15Z" /></g></svg>
+
+!define MA_RELATION_ONLY_ONE_TO_ONLY_ONE(_color)                                 SPRITE_PUT(ma_relation_only_one_to_only_one, _color)
+!define MA_RELATION_ONLY_ONE_TO_ONLY_ONE(_color, _scale)                         SPRITE_PUT(ma_relation_only_one_to_only_one, _color, _scale)
+!define MA_RELATION_ONLY_ONE_TO_ONLY_ONE(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA RELATION ONLY ONE TO ONLY ONE, ma_relation_only_one_to_only_one, _color, _scale)
+!define MA_RELATION_ONLY_ONE_TO_ONLY_ONE(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA RELATION ONLY ONE TO ONLY ONE, ma_relation_only_one_to_only_one, _color, _scale, _shape)
+!define MA_RELATION_ONLY_ONE_TO_ONLY_ONE(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA RELATION ONLY ONE TO ONLY ONE, _label, ma_relation_only_one_to_only_one, _color, _scale, _shape)
+skinparam folderBackgroundColor<<MA RELATION ONLY ONE TO ONLY ONE>> White

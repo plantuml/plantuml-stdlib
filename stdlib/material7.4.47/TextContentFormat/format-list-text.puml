@@ -1,0 +1,8 @@
+sprite mdi-format-list-text <svg width="48" height="48"><g transform="scale(2)"><path d="M2 14H8V20H2M16 8H10V10H16M2 10H8V4H2M10 4V6H22V4M10 20H16V18H10M10 16H22V14H10" /></g></svg>
+
+!define MA_FORMAT_LIST_TEXT(_color)                                 SPRITE_PUT(ma_format_list_text, _color)
+!define MA_FORMAT_LIST_TEXT(_color, _scale)                         SPRITE_PUT(ma_format_list_text, _color, _scale)
+!define MA_FORMAT_LIST_TEXT(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA FORMAT LIST TEXT, ma_format_list_text, _color, _scale)
+!define MA_FORMAT_LIST_TEXT(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA FORMAT LIST TEXT, ma_format_list_text, _color, _scale, _shape)
+!define MA_FORMAT_LIST_TEXT(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA FORMAT LIST TEXT, _label, ma_format_list_text, _color, _scale, _shape)
+skinparam folderBackgroundColor<<MA FORMAT LIST TEXT>> White

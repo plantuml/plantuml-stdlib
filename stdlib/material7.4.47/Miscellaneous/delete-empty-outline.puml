@@ -1,0 +1,8 @@
+sprite mdi-delete-empty-outline <svg width="48" height="48"><g transform="scale(2)"><path d="M20.37,8.91L19.37,10.64L7.24,3.64L8.24,1.91L11.28,3.66L12.64,3.29L16.97,5.79L17.34,7.16L20.37,8.91M6,19V7H11.07L18,11V19A2,2 0 0,1 16,21H8A2,2 0 0,1 6,19M8,19H16V12.2L10.46,9H8V19Z" /></g></svg>
+
+!define MA_DELETE_EMPTY_OUTLINE(_color)                                 SPRITE_PUT(ma_delete_empty_outline, _color)
+!define MA_DELETE_EMPTY_OUTLINE(_color, _scale)                         SPRITE_PUT(ma_delete_empty_outline, _color, _scale)
+!define MA_DELETE_EMPTY_OUTLINE(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA DELETE EMPTY OUTLINE, ma_delete_empty_outline, _color, _scale)
+!define MA_DELETE_EMPTY_OUTLINE(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA DELETE EMPTY OUTLINE, ma_delete_empty_outline, _color, _scale, _shape)
+!define MA_DELETE_EMPTY_OUTLINE(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA DELETE EMPTY OUTLINE, _label, ma_delete_empty_outline, _color, _scale, _shape)
+skinparam folderBackgroundColor<<MA DELETE EMPTY OUTLINE>> White

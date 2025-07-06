@@ -1,0 +1,8 @@
+sprite mdi-treasure-chest <svg width="48" height="48"><g transform="scale(2)"><path d="M5,4H19A3,3 0 0,1 22,7V11H15V10H9V11H2V7A3,3 0 0,1 5,4M11,11H13V13H11V11M2,12H9V13L11,15H13L15,13V12H22V20H2V12Z" /></g></svg>
+
+!define MA_TREASURE_CHEST(_color)                                 SPRITE_PUT(ma_treasure_chest, _color)
+!define MA_TREASURE_CHEST(_color, _scale)                         SPRITE_PUT(ma_treasure_chest, _color, _scale)
+!define MA_TREASURE_CHEST(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA TREASURE CHEST, ma_treasure_chest, _color, _scale)
+!define MA_TREASURE_CHEST(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA TREASURE CHEST, ma_treasure_chest, _color, _scale, _shape)
+!define MA_TREASURE_CHEST(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA TREASURE CHEST, _label, ma_treasure_chest, _color, _scale, _shape)
+skinparam folderBackgroundColor<<MA TREASURE CHEST>> White

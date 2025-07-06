@@ -1,0 +1,8 @@
+sprite mdi-format-underline <svg width="48" height="48"><g transform="scale(2)"><path d="M5,21H19V19H5V21M12,17A6,6 0 0,0 18,11V3H15.5V11A3.5,3.5 0 0,1 12,14.5A3.5,3.5 0 0,1 8.5,11V3H6V11A6,6 0 0,0 12,17Z" /></g></svg>
+
+!define MA_FORMAT_UNDERLINE(_color)                                 SPRITE_PUT(ma_format_underline, _color)
+!define MA_FORMAT_UNDERLINE(_color, _scale)                         SPRITE_PUT(ma_format_underline, _color, _scale)
+!define MA_FORMAT_UNDERLINE(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA FORMAT UNDERLINE, ma_format_underline, _color, _scale)
+!define MA_FORMAT_UNDERLINE(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA FORMAT UNDERLINE, ma_format_underline, _color, _scale, _shape)
+!define MA_FORMAT_UNDERLINE(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA FORMAT UNDERLINE, _label, ma_format_underline, _color, _scale, _shape)
+skinparam folderBackgroundColor<<MA FORMAT UNDERLINE>> White

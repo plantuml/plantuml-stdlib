@@ -1,0 +1,8 @@
+sprite mdi-set-split <svg width="48" height="48"><g transform="scale(2)"><path d="M17 7V9H22V7H17M2 9V15H7V9H2M12 9V11H9V13H12V15L15 12L12 9M17 11V13H22V11H17M17 15V17H22V15H17Z" /></g></svg>
+
+!define MA_SET_SPLIT(_color)                                 SPRITE_PUT(ma_set_split, _color)
+!define MA_SET_SPLIT(_color, _scale)                         SPRITE_PUT(ma_set_split, _color, _scale)
+!define MA_SET_SPLIT(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA SET SPLIT, ma_set_split, _color, _scale)
+!define MA_SET_SPLIT(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA SET SPLIT, ma_set_split, _color, _scale, _shape)
+!define MA_SET_SPLIT(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA SET SPLIT, _label, ma_set_split, _color, _scale, _shape)
+skinparam folderBackgroundColor<<MA SET SPLIT>> White

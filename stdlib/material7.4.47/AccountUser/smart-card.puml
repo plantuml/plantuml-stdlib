@@ -1,0 +1,8 @@
+sprite mdi-smart-card <svg width="48" height="48"><g transform="scale(2)"><path d="M2 3H22A2.07 2.07 0 0 1 24 5V19A2.07 2.07 0 0 1 22 21H2A2.07 2.07 0 0 1 0 19V5A2.07 2.07 0 0 1 2 3M8 13.91C6 13.91 2 15 2 17V18H14V17C14 15 10 13.91 8 13.91M8 6A3 3 0 1 0 11 9A3 3 0 0 0 8 6M17 10V13H21V10H17" /></g></svg>
+
+!define MA_SMART_CARD(_color)                                 SPRITE_PUT(ma_smart_card, _color)
+!define MA_SMART_CARD(_color, _scale)                         SPRITE_PUT(ma_smart_card, _color, _scale)
+!define MA_SMART_CARD(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA SMART CARD, ma_smart_card, _color, _scale)
+!define MA_SMART_CARD(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA SMART CARD, ma_smart_card, _color, _scale, _shape)
+!define MA_SMART_CARD(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA SMART CARD, _label, ma_smart_card, _color, _scale, _shape)
+skinparam folderBackgroundColor<<MA SMART CARD>> White

@@ -1,0 +1,8 @@
+sprite mdi-play-protected-content <svg width="48" height="48"><g transform="scale(2)"><path d="M2,5V18H11V16H4V7H17V11H19V5H2M9,9V14L12.5,11.5L9,9M21.04,11.67L16.09,16.62L13.96,14.5L12.55,15.91L16.09,19.45L22.45,13.09L21.04,11.67Z" /></g></svg>
+
+!define MA_PLAY_PROTECTED_CONTENT(_color)                                 SPRITE_PUT(ma_play_protected_content, _color)
+!define MA_PLAY_PROTECTED_CONTENT(_color, _scale)                         SPRITE_PUT(ma_play_protected_content, _color, _scale)
+!define MA_PLAY_PROTECTED_CONTENT(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA PLAY PROTECTED CONTENT, ma_play_protected_content, _color, _scale)
+!define MA_PLAY_PROTECTED_CONTENT(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA PLAY PROTECTED CONTENT, ma_play_protected_content, _color, _scale, _shape)
+!define MA_PLAY_PROTECTED_CONTENT(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA PLAY PROTECTED CONTENT, _label, ma_play_protected_content, _color, _scale, _shape)
+skinparam folderBackgroundColor<<MA PLAY PROTECTED CONTENT>> White

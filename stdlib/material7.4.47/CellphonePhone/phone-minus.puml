@@ -1,0 +1,8 @@
+sprite mdi-phone-minus <svg width="48" height="48"><g transform="scale(2)"><path d="M4,3A1,1 0 0,0 3,4A17,17 0 0,0 20,21A1,1 0 0,0 21,20V16.5A1,1 0 0,0 20,15.5C18.76,15.5 17.55,15.3 16.43,14.93C16.08,14.82 15.69,14.9 15.41,15.18L13.21,17.38C10.38,15.94 8.07,13.62 6.62,10.79L8.82,8.58C9.1,8.31 9.18,7.92 9.07,7.57C8.7,6.45 8.5,5.24 8.5,4A1,1 0 0,0 7.5,3M13,6V8H21V6" /></g></svg>
+
+!define MA_PHONE_MINUS(_color)                                 SPRITE_PUT(ma_phone_minus, _color)
+!define MA_PHONE_MINUS(_color, _scale)                         SPRITE_PUT(ma_phone_minus, _color, _scale)
+!define MA_PHONE_MINUS(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA PHONE MINUS, ma_phone_minus, _color, _scale)
+!define MA_PHONE_MINUS(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA PHONE MINUS, ma_phone_minus, _color, _scale, _shape)
+!define MA_PHONE_MINUS(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA PHONE MINUS, _label, ma_phone_minus, _color, _scale, _shape)
+skinparam folderBackgroundColor<<MA PHONE MINUS>> White

@@ -1,0 +1,8 @@
+sprite mdi-volume-equal <svg width="48" height="48"><g transform="scale(2)"><path d="M3 9H7L12 4V20L7 15H3V9M14 13H22V15H14M14 9H22V11H14Z" /></g></svg>
+
+!define MA_VOLUME_EQUAL(_color)                                 SPRITE_PUT(ma_volume_equal, _color)
+!define MA_VOLUME_EQUAL(_color, _scale)                         SPRITE_PUT(ma_volume_equal, _color, _scale)
+!define MA_VOLUME_EQUAL(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA VOLUME EQUAL, ma_volume_equal, _color, _scale)
+!define MA_VOLUME_EQUAL(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA VOLUME EQUAL, ma_volume_equal, _color, _scale, _shape)
+!define MA_VOLUME_EQUAL(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA VOLUME EQUAL, _label, ma_volume_equal, _color, _scale, _shape)
+skinparam folderBackgroundColor<<MA VOLUME EQUAL>> White

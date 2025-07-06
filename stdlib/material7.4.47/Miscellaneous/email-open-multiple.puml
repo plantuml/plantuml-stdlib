@@ -1,0 +1,8 @@
+sprite mdi-email-open-multiple <svg width="48" height="48"><g transform="scale(2)"><path d="M6,8L14,13L22,8V8L14,3L6,8V8M24,8V18A2,2 0 0,1 22,20H6A2,2 0 0,1 4,18V8C4,7.27 4.39,6.64 4.97,6.29L14,0.64L23.03,6.29C23.61,6.64 24,7.27 24,8M2,8V22H20V24H2A2,2 0 0,1 0,22V8H2Z" /></g></svg>
+
+!define MA_EMAIL_OPEN_MULTIPLE(_color)                                 SPRITE_PUT(ma_email_open_multiple, _color)
+!define MA_EMAIL_OPEN_MULTIPLE(_color, _scale)                         SPRITE_PUT(ma_email_open_multiple, _color, _scale)
+!define MA_EMAIL_OPEN_MULTIPLE(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA EMAIL OPEN MULTIPLE, ma_email_open_multiple, _color, _scale)
+!define MA_EMAIL_OPEN_MULTIPLE(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA EMAIL OPEN MULTIPLE, ma_email_open_multiple, _color, _scale, _shape)
+!define MA_EMAIL_OPEN_MULTIPLE(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA EMAIL OPEN MULTIPLE, _label, ma_email_open_multiple, _color, _scale, _shape)
+skinparam folderBackgroundColor<<MA EMAIL OPEN MULTIPLE>> White

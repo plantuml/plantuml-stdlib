@@ -1,0 +1,8 @@
+sprite mdi-compare-vertical <svg width="48" height="48"><g transform="scale(2)"><path d="M14 15V22H16V15H19L15 11L11 15H14M13 9H10V2H8V9H5L9 13L13 9Z" /></g></svg>
+
+!define MA_COMPARE_VERTICAL(_color)                                 SPRITE_PUT(ma_compare_vertical, _color)
+!define MA_COMPARE_VERTICAL(_color, _scale)                         SPRITE_PUT(ma_compare_vertical, _color, _scale)
+!define MA_COMPARE_VERTICAL(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA COMPARE VERTICAL, ma_compare_vertical, _color, _scale)
+!define MA_COMPARE_VERTICAL(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA COMPARE VERTICAL, ma_compare_vertical, _color, _scale, _shape)
+!define MA_COMPARE_VERTICAL(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA COMPARE VERTICAL, _label, ma_compare_vertical, _color, _scale, _shape)
+skinparam folderBackgroundColor<<MA COMPARE VERTICAL>> White

@@ -1,0 +1,8 @@
+sprite mdi-navigation-outline <svg width="48" height="48"><g transform="scale(2)"><path d="M12 7.3L16.3 17.7L12.8 16.2L12 15.8L11.2 16.2L7.7 17.7L12 7.3M12 2L4.5 20.3L5.2 21L12 18L18.8 21L19.5 20.3L12 2Z" /></g></svg>
+
+!define MA_NAVIGATION_OUTLINE(_color)                                 SPRITE_PUT(ma_navigation_outline, _color)
+!define MA_NAVIGATION_OUTLINE(_color, _scale)                         SPRITE_PUT(ma_navigation_outline, _color, _scale)
+!define MA_NAVIGATION_OUTLINE(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA NAVIGATION OUTLINE, ma_navigation_outline, _color, _scale)
+!define MA_NAVIGATION_OUTLINE(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA NAVIGATION OUTLINE, ma_navigation_outline, _color, _scale, _shape)
+!define MA_NAVIGATION_OUTLINE(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA NAVIGATION OUTLINE, _label, ma_navigation_outline, _color, _scale, _shape)
+skinparam folderBackgroundColor<<MA NAVIGATION OUTLINE>> White

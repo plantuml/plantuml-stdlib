@@ -1,0 +1,8 @@
+sprite mdi-google-glass <svg width="48" height="48"><g transform="scale(2)"><path d="M20 2H4C2.9 2 2 2.9 2 4V20C2 21.1 2.9 22 4 22H20C21.1 22 22 21.1 22 20V4C22 2.9 21.1 2 20 2M16.75 18H15.25V8.9L6.72 18H4.66L15.45 6.5C15.66 6.26 16 6.19 16.27 6.3C16.56 6.42 16.75 6.69 16.75 7V18Z" /></g></svg>
+
+!define MA_GOOGLE_GLASS(_color)                                 SPRITE_PUT(ma_google_glass, _color)
+!define MA_GOOGLE_GLASS(_color, _scale)                         SPRITE_PUT(ma_google_glass, _color, _scale)
+!define MA_GOOGLE_GLASS(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA GOOGLE GLASS, ma_google_glass, _color, _scale)
+!define MA_GOOGLE_GLASS(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA GOOGLE GLASS, ma_google_glass, _color, _scale, _shape)
+!define MA_GOOGLE_GLASS(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA GOOGLE GLASS, _label, ma_google_glass, _color, _scale, _shape)
+skinparam folderBackgroundColor<<MA GOOGLE GLASS>> White

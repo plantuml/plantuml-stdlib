@@ -1,0 +1,8 @@
+sprite mdi-menu-up-outline <svg width="48" height="48"><g transform="scale(2)"><path d="M18,16V14.5L12,8.5L6,14.5V16H18M12,11.33L14.67,14H9.33L12,11.33Z" /></g></svg>
+
+!define MA_MENU_UP_OUTLINE(_color)                                 SPRITE_PUT(ma_menu_up_outline, _color)
+!define MA_MENU_UP_OUTLINE(_color, _scale)                         SPRITE_PUT(ma_menu_up_outline, _color, _scale)
+!define MA_MENU_UP_OUTLINE(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA MENU UP OUTLINE, ma_menu_up_outline, _color, _scale)
+!define MA_MENU_UP_OUTLINE(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA MENU UP OUTLINE, ma_menu_up_outline, _color, _scale, _shape)
+!define MA_MENU_UP_OUTLINE(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA MENU UP OUTLINE, _label, ma_menu_up_outline, _color, _scale, _shape)
+skinparam folderBackgroundColor<<MA MENU UP OUTLINE>> White

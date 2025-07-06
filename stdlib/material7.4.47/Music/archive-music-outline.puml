@@ -1,0 +1,8 @@
+sprite mdi-archive-music-outline <svg width="48" height="48"><g transform="scale(2)"><path d="M21 3H3V9H21V3M19 7H5V5H19V7M18 11V10H20V11H18M14.5 11C14.78 11 15 11.22 15 11.5V13H9V11.5C9 11.22 9.22 11 9.5 11H14.5M13.26 19C13.09 19.47 13 19.97 13 20.5C13 20.67 13 20.84 13.03 21H4V10H6V19H13.26M22 13V15H20V20.5C20 21.88 18.88 23 17.5 23S15 21.88 15 20.5 16.12 18 17.5 18C17.86 18 18.19 18.07 18.5 18.21V13H22Z" /></g></svg>
+
+!define MA_ARCHIVE_MUSIC_OUTLINE(_color)                                 SPRITE_PUT(ma_archive_music_outline, _color)
+!define MA_ARCHIVE_MUSIC_OUTLINE(_color, _scale)                         SPRITE_PUT(ma_archive_music_outline, _color, _scale)
+!define MA_ARCHIVE_MUSIC_OUTLINE(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA ARCHIVE MUSIC OUTLINE, ma_archive_music_outline, _color, _scale)
+!define MA_ARCHIVE_MUSIC_OUTLINE(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA ARCHIVE MUSIC OUTLINE, ma_archive_music_outline, _color, _scale, _shape)
+!define MA_ARCHIVE_MUSIC_OUTLINE(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA ARCHIVE MUSIC OUTLINE, _label, ma_archive_music_outline, _color, _scale, _shape)
+skinparam folderBackgroundColor<<MA ARCHIVE MUSIC OUTLINE>> White

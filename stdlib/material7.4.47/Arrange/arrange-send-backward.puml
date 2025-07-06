@@ -1,0 +1,8 @@
+sprite mdi-arrange-send-backward <svg width="48" height="48"><g transform="scale(2)"><path d="M2,2H16V16H2V2M22,8V22H8V18H18V8H22M4,4V14H14V4H4Z" /></g></svg>
+
+!define MA_ARRANGE_SEND_BACKWARD(_color)                                 SPRITE_PUT(ma_arrange_send_backward, _color)
+!define MA_ARRANGE_SEND_BACKWARD(_color, _scale)                         SPRITE_PUT(ma_arrange_send_backward, _color, _scale)
+!define MA_ARRANGE_SEND_BACKWARD(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA ARRANGE SEND BACKWARD, ma_arrange_send_backward, _color, _scale)
+!define MA_ARRANGE_SEND_BACKWARD(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA ARRANGE SEND BACKWARD, ma_arrange_send_backward, _color, _scale, _shape)
+!define MA_ARRANGE_SEND_BACKWARD(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA ARRANGE SEND BACKWARD, _label, ma_arrange_send_backward, _color, _scale, _shape)
+skinparam folderBackgroundColor<<MA ARRANGE SEND BACKWARD>> White

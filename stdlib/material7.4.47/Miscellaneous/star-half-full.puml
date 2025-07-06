@@ -1,0 +1,8 @@
+sprite mdi-star-half-full <svg width="48" height="48"><g transform="scale(2)"><path d="M12,15.4V6.1L13.71,10.13L18.09,10.5L14.77,13.39L15.76,17.67M22,9.24L14.81,8.63L12,2L9.19,8.63L2,9.24L7.45,13.97L5.82,21L12,17.27L18.18,21L16.54,13.97L22,9.24Z" /></g></svg>
+
+!define MA_STAR_HALF_FULL(_color)                                 SPRITE_PUT(ma_star_half_full, _color)
+!define MA_STAR_HALF_FULL(_color, _scale)                         SPRITE_PUT(ma_star_half_full, _color, _scale)
+!define MA_STAR_HALF_FULL(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA STAR HALF FULL, ma_star_half_full, _color, _scale)
+!define MA_STAR_HALF_FULL(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA STAR HALF FULL, ma_star_half_full, _color, _scale, _shape)
+!define MA_STAR_HALF_FULL(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA STAR HALF FULL, _label, ma_star_half_full, _color, _scale, _shape)
+skinparam folderBackgroundColor<<MA STAR HALF FULL>> White

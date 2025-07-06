@@ -1,0 +1,8 @@
+sprite mdi-briefcase-arrow-left-right <svg width="48" height="48"><g transform="scale(2)"><path d="M10 2H14C15.11 2 16 2.9 16 4V6H20C21.11 6 22 6.9 22 8V13.53C20.94 12.58 19.54 12 18 12C14.69 12 12 14.69 12 18C12 19.09 12.29 20.12 12.8 21H4C2.89 21 2 20.1 2 19V8C2 6.89 2.89 6 4 6H8V4C8 2.89 8.89 2 10 2M14 6V4H10V6H14M19 18.5V17H15V15H19V13.5L22 16L19 18.5M17 19H21V21H17V22.5L14 20L17 17.5V19Z" /></g></svg>
+
+!define MA_BRIEFCASE_ARROW_LEFT_RIGHT(_color)                                 SPRITE_PUT(ma_briefcase_arrow_left_right, _color)
+!define MA_BRIEFCASE_ARROW_LEFT_RIGHT(_color, _scale)                         SPRITE_PUT(ma_briefcase_arrow_left_right, _color, _scale)
+!define MA_BRIEFCASE_ARROW_LEFT_RIGHT(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA BRIEFCASE ARROW LEFT RIGHT, ma_briefcase_arrow_left_right, _color, _scale)
+!define MA_BRIEFCASE_ARROW_LEFT_RIGHT(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA BRIEFCASE ARROW LEFT RIGHT, ma_briefcase_arrow_left_right, _color, _scale, _shape)
+!define MA_BRIEFCASE_ARROW_LEFT_RIGHT(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA BRIEFCASE ARROW LEFT RIGHT, _label, ma_briefcase_arrow_left_right, _color, _scale, _shape)
+skinparam folderBackgroundColor<<MA BRIEFCASE ARROW LEFT RIGHT>> White

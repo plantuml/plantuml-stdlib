@@ -1,0 +1,8 @@
+sprite mdi-file-swap-outline <svg width="48" height="48"><g transform="scale(2)"><path d="M17 15L14 12V14H10V12L7 15L10 18V16H14V18M14 2H6A2 2 0 0 0 4 4V20A2 2 0 0 0 6 22H18A2 2 0 0 0 20 20V8L14 2M18 20H6V4H13V9H18Z" /></g></svg>
+
+!define MA_FILE_SWAP_OUTLINE(_color)                                 SPRITE_PUT(ma_file_swap_outline, _color)
+!define MA_FILE_SWAP_OUTLINE(_color, _scale)                         SPRITE_PUT(ma_file_swap_outline, _color, _scale)
+!define MA_FILE_SWAP_OUTLINE(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA FILE SWAP OUTLINE, ma_file_swap_outline, _color, _scale)
+!define MA_FILE_SWAP_OUTLINE(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA FILE SWAP OUTLINE, ma_file_swap_outline, _color, _scale, _shape)
+!define MA_FILE_SWAP_OUTLINE(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA FILE SWAP OUTLINE, _label, ma_file_swap_outline, _color, _scale, _shape)
+skinparam folderBackgroundColor<<MA FILE SWAP OUTLINE>> White

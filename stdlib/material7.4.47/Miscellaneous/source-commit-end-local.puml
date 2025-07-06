@@ -1,0 +1,8 @@
+sprite mdi-source-commit-end-local <svg width="48" height="48"><g transform="scale(2)"><path d="M12,7A5,5 0 0,1 17,12A5,5 0 0,1 12,17A5,5 0 0,1 7,12A5,5 0 0,1 12,7M12,9A3,3 0 0,0 9,12A3,3 0 0,0 12,15A3,3 0 0,0 15,12A3,3 0 0,0 12,9M11,5V3H13V5H11Z" /></g></svg>
+
+!define MA_SOURCE_COMMIT_END_LOCAL(_color)                                 SPRITE_PUT(ma_source_commit_end_local, _color)
+!define MA_SOURCE_COMMIT_END_LOCAL(_color, _scale)                         SPRITE_PUT(ma_source_commit_end_local, _color, _scale)
+!define MA_SOURCE_COMMIT_END_LOCAL(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA SOURCE COMMIT END LOCAL, ma_source_commit_end_local, _color, _scale)
+!define MA_SOURCE_COMMIT_END_LOCAL(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA SOURCE COMMIT END LOCAL, ma_source_commit_end_local, _color, _scale, _shape)
+!define MA_SOURCE_COMMIT_END_LOCAL(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA SOURCE COMMIT END LOCAL, _label, ma_source_commit_end_local, _color, _scale, _shape)
+skinparam folderBackgroundColor<<MA SOURCE COMMIT END LOCAL>> White

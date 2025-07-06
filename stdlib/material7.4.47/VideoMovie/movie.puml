@@ -1,0 +1,8 @@
+sprite mdi-movie <svg width="48" height="48"><g transform="scale(2)"><path d="M18,4L20,8H17L15,4H13L15,8H12L10,4H8L10,8H7L5,4H4A2,2 0 0,0 2,6V18A2,2 0 0,0 4,20H20A2,2 0 0,0 22,18V4H18Z" /></g></svg>
+
+!define MA_MOVIE(_color)                                 SPRITE_PUT(ma_movie, _color)
+!define MA_MOVIE(_color, _scale)                         SPRITE_PUT(ma_movie, _color, _scale)
+!define MA_MOVIE(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA MOVIE, ma_movie, _color, _scale)
+!define MA_MOVIE(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA MOVIE, ma_movie, _color, _scale, _shape)
+!define MA_MOVIE(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA MOVIE, _label, ma_movie, _color, _scale, _shape)
+skinparam folderBackgroundColor<<MA MOVIE>> White

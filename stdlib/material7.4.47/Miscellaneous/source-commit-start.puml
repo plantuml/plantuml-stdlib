@@ -1,0 +1,8 @@
+sprite mdi-source-commit-start <svg width="48" height="48"><g transform="scale(2)"><path d="M12,7A5,5 0 0,1 17,12C17,14.42 15.28,16.44 13,16.9V21H11V16.9C8.72,16.44 7,14.42 7,12A5,5 0 0,1 12,7M12,9A3,3 0 0,0 9,12A3,3 0 0,0 12,15A3,3 0 0,0 15,12A3,3 0 0,0 12,9Z" /></g></svg>
+
+!define MA_SOURCE_COMMIT_START(_color)                                 SPRITE_PUT(ma_source_commit_start, _color)
+!define MA_SOURCE_COMMIT_START(_color, _scale)                         SPRITE_PUT(ma_source_commit_start, _color, _scale)
+!define MA_SOURCE_COMMIT_START(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA SOURCE COMMIT START, ma_source_commit_start, _color, _scale)
+!define MA_SOURCE_COMMIT_START(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA SOURCE COMMIT START, ma_source_commit_start, _color, _scale, _shape)
+!define MA_SOURCE_COMMIT_START(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA SOURCE COMMIT START, _label, ma_source_commit_start, _color, _scale, _shape)
+skinparam folderBackgroundColor<<MA SOURCE COMMIT START>> White

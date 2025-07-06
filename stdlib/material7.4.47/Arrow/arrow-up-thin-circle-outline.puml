@@ -1,0 +1,8 @@
+sprite mdi-arrow-up-thin-circle-outline <svg width="48" height="48"><g transform="scale(2)"><path d="M12 3.97C7.59 3.97 3.97 7.59 3.97 12C3.97 16.41 7.59 20.03 12 20.03C16.41 20.03 20.03 16.41 20.03 12C20.03 7.59 16.41 3.97 12 3.97M12 2C17.54 2 22 6.46 22 12C22 17.54 17.54 22 12 22C6.46 22 2 17.54 2 12C2 6.46 6.46 2 12 2M13 10.46H16L12 6.5L8 10.46H11V17.5H13" /></g></svg>
+
+!define MA_ARROW_UP_THIN_CIRCLE_OUTLINE(_color)                                 SPRITE_PUT(ma_arrow_up_thin_circle_outline, _color)
+!define MA_ARROW_UP_THIN_CIRCLE_OUTLINE(_color, _scale)                         SPRITE_PUT(ma_arrow_up_thin_circle_outline, _color, _scale)
+!define MA_ARROW_UP_THIN_CIRCLE_OUTLINE(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA ARROW UP THIN CIRCLE OUTLINE, ma_arrow_up_thin_circle_outline, _color, _scale)
+!define MA_ARROW_UP_THIN_CIRCLE_OUTLINE(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA ARROW UP THIN CIRCLE OUTLINE, ma_arrow_up_thin_circle_outline, _color, _scale, _shape)
+!define MA_ARROW_UP_THIN_CIRCLE_OUTLINE(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA ARROW UP THIN CIRCLE OUTLINE, _label, ma_arrow_up_thin_circle_outline, _color, _scale, _shape)
+skinparam folderBackgroundColor<<MA ARROW UP THIN CIRCLE OUTLINE>> White

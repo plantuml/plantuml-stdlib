@@ -1,0 +1,8 @@
+sprite mdi-seat-legroom-normal <svg width="48" height="48"><g transform="scale(2)"><path d="M5,12V3H3V12A5,5 0 0,0 8,17H14V15H8A3,3 0 0,1 5,12M20.5,18H19V11A2,2 0 0,0 17,9H12V3H6V11A3,3 0 0,0 9,14H16V21H20.5A1.5,1.5 0 0,0 22,19.5A1.5,1.5 0 0,0 20.5,18Z" /></g></svg>
+
+!define MA_SEAT_LEGROOM_NORMAL(_color)                                 SPRITE_PUT(ma_seat_legroom_normal, _color)
+!define MA_SEAT_LEGROOM_NORMAL(_color, _scale)                         SPRITE_PUT(ma_seat_legroom_normal, _color, _scale)
+!define MA_SEAT_LEGROOM_NORMAL(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA SEAT LEGROOM NORMAL, ma_seat_legroom_normal, _color, _scale)
+!define MA_SEAT_LEGROOM_NORMAL(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA SEAT LEGROOM NORMAL, ma_seat_legroom_normal, _color, _scale, _shape)
+!define MA_SEAT_LEGROOM_NORMAL(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA SEAT LEGROOM NORMAL, _label, ma_seat_legroom_normal, _color, _scale, _shape)
+skinparam folderBackgroundColor<<MA SEAT LEGROOM NORMAL>> White

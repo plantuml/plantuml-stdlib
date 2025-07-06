@@ -1,0 +1,8 @@
+sprite mdi-mailbox-open-up <svg width="48" height="48"><g transform="scale(2)"><path d="M8,4A5,5 0 0,0 3,9V18H1V20H21A2,2 0 0,0 23,18V9A5,5 0 0,0 18,4H8M8,6A3,3 0 0,1 11,9V18H5V9A3,3 0 0,1 8,6M13,13V7H17V9H15V13H13Z" /></g></svg>
+
+!define MA_MAILBOX_OPEN_UP(_color)                                 SPRITE_PUT(ma_mailbox_open_up, _color)
+!define MA_MAILBOX_OPEN_UP(_color, _scale)                         SPRITE_PUT(ma_mailbox_open_up, _color, _scale)
+!define MA_MAILBOX_OPEN_UP(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA MAILBOX OPEN UP, ma_mailbox_open_up, _color, _scale)
+!define MA_MAILBOX_OPEN_UP(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA MAILBOX OPEN UP, ma_mailbox_open_up, _color, _scale, _shape)
+!define MA_MAILBOX_OPEN_UP(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA MAILBOX OPEN UP, _label, ma_mailbox_open_up, _color, _scale, _shape)
+skinparam folderBackgroundColor<<MA MAILBOX OPEN UP>> White

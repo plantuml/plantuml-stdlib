@@ -1,0 +1,8 @@
+sprite mdi-bottle-soda-classic <svg width="48" height="48"><g transform="scale(2)"><path d="M15 13.77A3 3 0 0 0 15 18.23V20A2 2 0 0 1 13 22H11A2 2 0 0 1 9 20V18.23A3 3 0 0 0 9 13.77V9A12.28 12.28 0 0 0 10.91 4H10V2H14V4H13.09A12.28 12.28 0 0 0 15 9Z" /></g></svg>
+
+!define MA_BOTTLE_SODA_CLASSIC(_color)                                 SPRITE_PUT(ma_bottle_soda_classic, _color)
+!define MA_BOTTLE_SODA_CLASSIC(_color, _scale)                         SPRITE_PUT(ma_bottle_soda_classic, _color, _scale)
+!define MA_BOTTLE_SODA_CLASSIC(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA BOTTLE SODA CLASSIC, ma_bottle_soda_classic, _color, _scale)
+!define MA_BOTTLE_SODA_CLASSIC(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA BOTTLE SODA CLASSIC, ma_bottle_soda_classic, _color, _scale, _shape)
+!define MA_BOTTLE_SODA_CLASSIC(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA BOTTLE SODA CLASSIC, _label, ma_bottle_soda_classic, _color, _scale, _shape)
+skinparam folderBackgroundColor<<MA BOTTLE SODA CLASSIC>> White

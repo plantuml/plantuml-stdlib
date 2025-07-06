@@ -1,0 +1,8 @@
+sprite mdi-image-broken-variant <svg width="48" height="48"><g transform="scale(2)"><path d="M21,5V11.59L18,8.58L14,12.59L10,8.59L6,12.59L3,9.58V5A2,2 0 0,1 5,3H19A2,2 0 0,1 21,5M18,11.42L21,14.43V19A2,2 0 0,1 19,21H5A2,2 0 0,1 3,19V12.42L6,15.41L10,11.41L14,15.41" /></g></svg>
+
+!define MA_IMAGE_BROKEN_VARIANT(_color)                                 SPRITE_PUT(ma_image_broken_variant, _color)
+!define MA_IMAGE_BROKEN_VARIANT(_color, _scale)                         SPRITE_PUT(ma_image_broken_variant, _color, _scale)
+!define MA_IMAGE_BROKEN_VARIANT(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA IMAGE BROKEN VARIANT, ma_image_broken_variant, _color, _scale)
+!define MA_IMAGE_BROKEN_VARIANT(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA IMAGE BROKEN VARIANT, ma_image_broken_variant, _color, _scale, _shape)
+!define MA_IMAGE_BROKEN_VARIANT(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA IMAGE BROKEN VARIANT, _label, ma_image_broken_variant, _color, _scale, _shape)
+skinparam folderBackgroundColor<<MA IMAGE BROKEN VARIANT>> White

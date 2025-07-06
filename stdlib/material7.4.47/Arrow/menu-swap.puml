@@ -1,0 +1,8 @@
+sprite mdi-menu-swap <svg width="48" height="48"><g transform="scale(2)"><path d="M12,6L7,11H17L12,6M7,13L12,18L17,13H7Z" /></g></svg>
+
+!define MA_MENU_SWAP(_color)                                 SPRITE_PUT(ma_menu_swap, _color)
+!define MA_MENU_SWAP(_color, _scale)                         SPRITE_PUT(ma_menu_swap, _color, _scale)
+!define MA_MENU_SWAP(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA MENU SWAP, ma_menu_swap, _color, _scale)
+!define MA_MENU_SWAP(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA MENU SWAP, ma_menu_swap, _color, _scale, _shape)
+!define MA_MENU_SWAP(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA MENU SWAP, _label, ma_menu_swap, _color, _scale, _shape)
+skinparam folderBackgroundColor<<MA MENU SWAP>> White

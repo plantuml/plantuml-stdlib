@@ -1,0 +1,8 @@
+sprite mdi-movie-play <svg width="48" height="48"><g transform="scale(2)"><path d="M22 4V13.81C21.12 13.3 20.1 13 19 13C15.69 13 13 15.69 13 19C13 19.34 13.04 19.67 13.09 20H4C2.9 20 2 19.11 2 18V6C2 4.89 2.9 4 4 4H5L7 8H10L8 4H10L12 8H15L13 4H15L17 8H20L18 4H22M17 22L22 19L17 16V22Z" /></g></svg>
+
+!define MA_MOVIE_PLAY(_color)                                 SPRITE_PUT(ma_movie_play, _color)
+!define MA_MOVIE_PLAY(_color, _scale)                         SPRITE_PUT(ma_movie_play, _color, _scale)
+!define MA_MOVIE_PLAY(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA MOVIE PLAY, ma_movie_play, _color, _scale)
+!define MA_MOVIE_PLAY(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA MOVIE PLAY, ma_movie_play, _color, _scale, _shape)
+!define MA_MOVIE_PLAY(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA MOVIE PLAY, _label, ma_movie_play, _color, _scale, _shape)
+skinparam folderBackgroundColor<<MA MOVIE PLAY>> White

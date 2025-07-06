@@ -1,0 +1,8 @@
+sprite mdi-application-settings <svg width="48" height="48"><g transform="scale(2)"><path d="M21 0H3C1.9 0 1 .9 1 2V18C1 19.1 1.9 20 3 20H21C22.1 20 23 19.1 23 18V2C23 .9 22.1 0 21 0M21 5H3V2H21V5M7 22H9V24H7V22M11 22H13V24H11V22M15 22H17V24H15V22" /></g></svg>
+
+!define MA_APPLICATION_SETTINGS(_color)                                 SPRITE_PUT(ma_application_settings, _color)
+!define MA_APPLICATION_SETTINGS(_color, _scale)                         SPRITE_PUT(ma_application_settings, _color, _scale)
+!define MA_APPLICATION_SETTINGS(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA APPLICATION SETTINGS, ma_application_settings, _color, _scale)
+!define MA_APPLICATION_SETTINGS(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA APPLICATION SETTINGS, ma_application_settings, _color, _scale, _shape)
+!define MA_APPLICATION_SETTINGS(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA APPLICATION SETTINGS, _label, ma_application_settings, _color, _scale, _shape)
+skinparam folderBackgroundColor<<MA APPLICATION SETTINGS>> White

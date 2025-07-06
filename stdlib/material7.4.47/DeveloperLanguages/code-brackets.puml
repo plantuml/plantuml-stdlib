@@ -1,0 +1,8 @@
+sprite mdi-code-brackets <svg width="48" height="48"><g transform="scale(2)"><path d="M15,4V6H18V18H15V20H20V4M4,4V20H9V18H6V6H9V4H4Z" /></g></svg>
+
+!define MA_CODE_BRACKETS(_color)                                 SPRITE_PUT(ma_code_brackets, _color)
+!define MA_CODE_BRACKETS(_color, _scale)                         SPRITE_PUT(ma_code_brackets, _color, _scale)
+!define MA_CODE_BRACKETS(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA CODE BRACKETS, ma_code_brackets, _color, _scale)
+!define MA_CODE_BRACKETS(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA CODE BRACKETS, ma_code_brackets, _color, _scale, _shape)
+!define MA_CODE_BRACKETS(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA CODE BRACKETS, _label, ma_code_brackets, _color, _scale, _shape)
+skinparam folderBackgroundColor<<MA CODE BRACKETS>> White

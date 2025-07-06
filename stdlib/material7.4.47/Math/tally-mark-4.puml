@@ -1,0 +1,8 @@
+sprite mdi-tally-mark-4 <svg width="48" height="48"><g transform="scale(2)"><path d="M7 19H5V5H7V19M11 5H9V19H11V5M15 5H13V19H15V5M19 5H17V19H19V5Z" /></g></svg>
+
+!define MA_TALLY_MARK_4(_color)                                 SPRITE_PUT(ma_tally_mark_4, _color)
+!define MA_TALLY_MARK_4(_color, _scale)                         SPRITE_PUT(ma_tally_mark_4, _color, _scale)
+!define MA_TALLY_MARK_4(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA TALLY MARK 4, ma_tally_mark_4, _color, _scale)
+!define MA_TALLY_MARK_4(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA TALLY MARK 4, ma_tally_mark_4, _color, _scale, _shape)
+!define MA_TALLY_MARK_4(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA TALLY MARK 4, _label, ma_tally_mark_4, _color, _scale, _shape)
+skinparam folderBackgroundColor<<MA TALLY MARK 4>> White

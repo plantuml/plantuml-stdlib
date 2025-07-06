@@ -1,0 +1,8 @@
+sprite mdi-format-quote-close <svg width="48" height="48"><g transform="scale(2)"><path d="M14,17H17L19,13V7H13V13H16M6,17H9L11,13V7H5V13H8L6,17Z" /></g></svg>
+
+!define MA_FORMAT_QUOTE_CLOSE(_color)                                 SPRITE_PUT(ma_format_quote_close, _color)
+!define MA_FORMAT_QUOTE_CLOSE(_color, _scale)                         SPRITE_PUT(ma_format_quote_close, _color, _scale)
+!define MA_FORMAT_QUOTE_CLOSE(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA FORMAT QUOTE CLOSE, ma_format_quote_close, _color, _scale)
+!define MA_FORMAT_QUOTE_CLOSE(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA FORMAT QUOTE CLOSE, ma_format_quote_close, _color, _scale, _shape)
+!define MA_FORMAT_QUOTE_CLOSE(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA FORMAT QUOTE CLOSE, _label, ma_format_quote_close, _color, _scale, _shape)
+skinparam folderBackgroundColor<<MA FORMAT QUOTE CLOSE>> White

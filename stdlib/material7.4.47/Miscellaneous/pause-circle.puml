@@ -1,0 +1,8 @@
+sprite mdi-pause-circle <svg width="48" height="48"><g transform="scale(2)"><path d="M15,16H13V8H15M11,16H9V8H11M12,2A10,10 0 0,0 2,12A10,10 0 0,0 12,22A10,10 0 0,0 22,12A10,10 0 0,0 12,2Z" /></g></svg>
+
+!define MA_PAUSE_CIRCLE(_color)                                 SPRITE_PUT(ma_pause_circle, _color)
+!define MA_PAUSE_CIRCLE(_color, _scale)                         SPRITE_PUT(ma_pause_circle, _color, _scale)
+!define MA_PAUSE_CIRCLE(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA PAUSE CIRCLE, ma_pause_circle, _color, _scale)
+!define MA_PAUSE_CIRCLE(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA PAUSE CIRCLE, ma_pause_circle, _color, _scale, _shape)
+!define MA_PAUSE_CIRCLE(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA PAUSE CIRCLE, _label, ma_pause_circle, _color, _scale, _shape)
+skinparam folderBackgroundColor<<MA PAUSE CIRCLE>> White

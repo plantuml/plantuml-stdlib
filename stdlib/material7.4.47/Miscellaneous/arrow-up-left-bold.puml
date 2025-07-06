@@ -1,0 +1,8 @@
+sprite mdi-arrow-up-left-bold <svg width="48" height="48"><g transform="scale(2)"><path d="M13.5 21C9.36 21 6 17.64 6 13.5V11H2L8 4L14 11H10V13.5C10 15.43 11.57 17 13.5 17H21V21H13.5Z" /></g></svg>
+
+!define MA_ARROW_UP_LEFT_BOLD(_color)                                 SPRITE_PUT(ma_arrow_up_left_bold, _color)
+!define MA_ARROW_UP_LEFT_BOLD(_color, _scale)                         SPRITE_PUT(ma_arrow_up_left_bold, _color, _scale)
+!define MA_ARROW_UP_LEFT_BOLD(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA ARROW UP LEFT BOLD, ma_arrow_up_left_bold, _color, _scale)
+!define MA_ARROW_UP_LEFT_BOLD(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA ARROW UP LEFT BOLD, ma_arrow_up_left_bold, _color, _scale, _shape)
+!define MA_ARROW_UP_LEFT_BOLD(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA ARROW UP LEFT BOLD, _label, ma_arrow_up_left_bold, _color, _scale, _shape)
+skinparam folderBackgroundColor<<MA ARROW UP LEFT BOLD>> White

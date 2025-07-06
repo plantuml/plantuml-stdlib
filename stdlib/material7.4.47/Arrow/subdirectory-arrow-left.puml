@@ -1,0 +1,8 @@
+sprite mdi-subdirectory-arrow-left <svg width="48" height="48"><g transform="scale(2)"><path d="M11,9L12.42,10.42L8.83,14H18V4H20V16H8.83L12.42,19.58L11,21L5,15L11,9Z" /></g></svg>
+
+!define MA_SUBDIRECTORY_ARROW_LEFT(_color)                                 SPRITE_PUT(ma_subdirectory_arrow_left, _color)
+!define MA_SUBDIRECTORY_ARROW_LEFT(_color, _scale)                         SPRITE_PUT(ma_subdirectory_arrow_left, _color, _scale)
+!define MA_SUBDIRECTORY_ARROW_LEFT(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA SUBDIRECTORY ARROW LEFT, ma_subdirectory_arrow_left, _color, _scale)
+!define MA_SUBDIRECTORY_ARROW_LEFT(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA SUBDIRECTORY ARROW LEFT, ma_subdirectory_arrow_left, _color, _scale, _shape)
+!define MA_SUBDIRECTORY_ARROW_LEFT(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA SUBDIRECTORY ARROW LEFT, _label, ma_subdirectory_arrow_left, _color, _scale, _shape)
+skinparam folderBackgroundColor<<MA SUBDIRECTORY ARROW LEFT>> White

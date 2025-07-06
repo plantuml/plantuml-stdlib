@@ -1,0 +1,8 @@
+sprite mdi-checkbox-blank-badge <svg width="48" height="48"><g transform="scale(2)"><path d="M23 4.5C23 6.43 21.43 8 19.5 8S16 6.43 16 4.5 17.57 1 19.5 1 23 2.57 23 4.5M19.5 10C16.47 10 14 7.53 14 4.5C14 4 14.08 3.5 14.21 3H5C3.89 3 3 3.89 3 5V19C3 20.11 3.9 21 5 21H19C20.11 21 21 20.11 21 19V9.79C20.5 9.92 20 10 19.5 10Z" /></g></svg>
+
+!define MA_CHECKBOX_BLANK_BADGE(_color)                                 SPRITE_PUT(ma_checkbox_blank_badge, _color)
+!define MA_CHECKBOX_BLANK_BADGE(_color, _scale)                         SPRITE_PUT(ma_checkbox_blank_badge, _color, _scale)
+!define MA_CHECKBOX_BLANK_BADGE(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA CHECKBOX BLANK BADGE, ma_checkbox_blank_badge, _color, _scale)
+!define MA_CHECKBOX_BLANK_BADGE(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA CHECKBOX BLANK BADGE, ma_checkbox_blank_badge, _color, _scale, _shape)
+!define MA_CHECKBOX_BLANK_BADGE(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA CHECKBOX BLANK BADGE, _label, ma_checkbox_blank_badge, _color, _scale, _shape)
+skinparam folderBackgroundColor<<MA CHECKBOX BLANK BADGE>> White

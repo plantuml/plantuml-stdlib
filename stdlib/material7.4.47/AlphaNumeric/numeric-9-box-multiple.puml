@@ -1,0 +1,8 @@
+sprite mdi-numeric-9-box-multiple <svg width="48" height="48"><g transform="scale(2)"><path d="M15,9H13V7H15V9M3,5V21H19V23H3A2,2 0 0,1 1,21V5H3M15,5H13A2,2 0 0,0 11,7V9C11,10.11 11.9,11 13,11H15V13H11V15H15A2,2 0 0,0 17,13V7C17,5.89 16.1,5 15,5M21,1A2,2 0 0,1 23,3V17A2,2 0 0,1 21,19H7A2,2 0 0,1 5,17V3A2,2 0 0,1 7,1H21Z" /></g></svg>
+
+!define MA_NUMERIC_9_BOX_MULTIPLE(_color)                                 SPRITE_PUT(ma_numeric_9_box_multiple, _color)
+!define MA_NUMERIC_9_BOX_MULTIPLE(_color, _scale)                         SPRITE_PUT(ma_numeric_9_box_multiple, _color, _scale)
+!define MA_NUMERIC_9_BOX_MULTIPLE(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA NUMERIC 9 BOX MULTIPLE, ma_numeric_9_box_multiple, _color, _scale)
+!define MA_NUMERIC_9_BOX_MULTIPLE(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA NUMERIC 9 BOX MULTIPLE, ma_numeric_9_box_multiple, _color, _scale, _shape)
+!define MA_NUMERIC_9_BOX_MULTIPLE(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA NUMERIC 9 BOX MULTIPLE, _label, ma_numeric_9_box_multiple, _color, _scale, _shape)
+skinparam folderBackgroundColor<<MA NUMERIC 9 BOX MULTIPLE>> White

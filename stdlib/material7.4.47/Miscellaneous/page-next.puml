@@ -1,0 +1,8 @@
+sprite mdi-page-next <svg width="48" height="48"><g transform="scale(2)"><path d="M20,3H5A2,2 0 0,0 3,5V11H7V9L11,12L7,15V13H3V19A2,2 0 0,0 5,21H20A2,2 0 0,0 22,19V5A2,2 0 0,0 20,3M17,17H13V15H17V17M20,13H13V11H20V13M20,9H13V7H20V9M3,13H0V11H3V13Z" /></g></svg>
+
+!define MA_PAGE_NEXT(_color)                                 SPRITE_PUT(ma_page_next, _color)
+!define MA_PAGE_NEXT(_color, _scale)                         SPRITE_PUT(ma_page_next, _color, _scale)
+!define MA_PAGE_NEXT(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA PAGE NEXT, ma_page_next, _color, _scale)
+!define MA_PAGE_NEXT(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA PAGE NEXT, ma_page_next, _color, _scale, _shape)
+!define MA_PAGE_NEXT(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA PAGE NEXT, _label, ma_page_next, _color, _scale, _shape)
+skinparam folderBackgroundColor<<MA PAGE NEXT>> White

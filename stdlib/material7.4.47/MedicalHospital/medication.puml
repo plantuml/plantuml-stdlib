@@ -1,0 +1,8 @@
+sprite mdi-medication <svg width="48" height="48"><g transform="scale(2)"><path d="M6 3H18V5H6V3M17 6H7C5.9 6 5 6.9 5 8V19C5 20.1 5.9 21 7 21H17C18.1 21 19 20.1 19 19V8C19 6.9 18.1 6 17 6M16 15H13.5V17.5H10.5V15H8V12H10.5V9.5H13.5V12H16V15Z" /></g></svg>
+
+!define MA_MEDICATION(_color)                                 SPRITE_PUT(ma_medication, _color)
+!define MA_MEDICATION(_color, _scale)                         SPRITE_PUT(ma_medication, _color, _scale)
+!define MA_MEDICATION(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA MEDICATION, ma_medication, _color, _scale)
+!define MA_MEDICATION(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA MEDICATION, ma_medication, _color, _scale, _shape)
+!define MA_MEDICATION(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA MEDICATION, _label, ma_medication, _color, _scale, _shape)
+skinparam folderBackgroundColor<<MA MEDICATION>> White

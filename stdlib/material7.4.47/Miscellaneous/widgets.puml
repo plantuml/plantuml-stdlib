@@ -1,0 +1,8 @@
+sprite mdi-widgets <svg width="48" height="48"><g transform="scale(2)"><path d="M3,3H11V7.34L16.66,1.69L22.31,7.34L16.66,13H21V21H13V13H16.66L11,7.34V11H3V3M3,13H11V21H3V13Z" /></g></svg>
+
+!define MA_WIDGETS(_color)                                 SPRITE_PUT(ma_widgets, _color)
+!define MA_WIDGETS(_color, _scale)                         SPRITE_PUT(ma_widgets, _color, _scale)
+!define MA_WIDGETS(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA WIDGETS, ma_widgets, _color, _scale)
+!define MA_WIDGETS(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA WIDGETS, ma_widgets, _color, _scale, _shape)
+!define MA_WIDGETS(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA WIDGETS, _label, ma_widgets, _color, _scale, _shape)
+skinparam folderBackgroundColor<<MA WIDGETS>> White

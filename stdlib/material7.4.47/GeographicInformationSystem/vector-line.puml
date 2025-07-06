@@ -1,0 +1,8 @@
+sprite mdi-vector-line <svg width="48" height="48"><g transform="scale(2)"><path d="M15,3V7.59L7.59,15H3V21H9V16.42L16.42,9H21V3M17,5H19V7H17M5,17H7V19H5" /></g></svg>
+
+!define MA_VECTOR_LINE(_color)                                 SPRITE_PUT(ma_vector_line, _color)
+!define MA_VECTOR_LINE(_color, _scale)                         SPRITE_PUT(ma_vector_line, _color, _scale)
+!define MA_VECTOR_LINE(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA VECTOR LINE, ma_vector_line, _color, _scale)
+!define MA_VECTOR_LINE(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA VECTOR LINE, ma_vector_line, _color, _scale, _shape)
+!define MA_VECTOR_LINE(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA VECTOR LINE, _label, ma_vector_line, _color, _scale, _shape)
+skinparam folderBackgroundColor<<MA VECTOR LINE>> White

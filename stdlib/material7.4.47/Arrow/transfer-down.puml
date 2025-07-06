@@ -1,0 +1,8 @@
+sprite mdi-transfer-down <svg width="48" height="48"><g transform="scale(2)"><path d="M16,3V5H8V3H16M16,7V9H8V7H16M16,11V13H8V11H16M5,15H19L12,22L5,15Z" /></g></svg>
+
+!define MA_TRANSFER_DOWN(_color)                                 SPRITE_PUT(ma_transfer_down, _color)
+!define MA_TRANSFER_DOWN(_color, _scale)                         SPRITE_PUT(ma_transfer_down, _color, _scale)
+!define MA_TRANSFER_DOWN(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA TRANSFER DOWN, ma_transfer_down, _color, _scale)
+!define MA_TRANSFER_DOWN(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA TRANSFER DOWN, ma_transfer_down, _color, _scale, _shape)
+!define MA_TRANSFER_DOWN(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA TRANSFER DOWN, _label, ma_transfer_down, _color, _scale, _shape)
+skinparam folderBackgroundColor<<MA TRANSFER DOWN>> White

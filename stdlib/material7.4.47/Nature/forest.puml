@@ -1,0 +1,8 @@
+sprite mdi-forest <svg width="48" height="48"><g transform="scale(2)"><path d="M16 12L9 2L2 12H3.86L0 18H7V22H11V18H18L14.14 12H16M20.14 12H22L15 2L12.61 5.41L17.92 13H15.97L19.19 18H24L20.14 12M13 19H17V22H13V19Z" /></g></svg>
+
+!define MA_FOREST(_color)                                 SPRITE_PUT(ma_forest, _color)
+!define MA_FOREST(_color, _scale)                         SPRITE_PUT(ma_forest, _color, _scale)
+!define MA_FOREST(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA FOREST, ma_forest, _color, _scale)
+!define MA_FOREST(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA FOREST, ma_forest, _color, _scale, _shape)
+!define MA_FOREST(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA FOREST, _label, ma_forest, _color, _scale, _shape)
+skinparam folderBackgroundColor<<MA FOREST>> White

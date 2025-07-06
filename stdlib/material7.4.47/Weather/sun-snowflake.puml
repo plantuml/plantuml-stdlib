@@ -1,0 +1,8 @@
+sprite mdi-sun-snowflake <svg width="48" height="48"><g transform="scale(2)"><path d="M12 .69L8.69 4H4V8.69L.69 12L4 15.31V20H8.69L12 23.31L13 22.31V17.83L16.24 21.07L17.66 19.66L13 15V13H15L19.66 17.66L21.07 16.24L17.83 13H22V11H17.83L21.07 7.76L19.66 6.34L15 11H13V9L17.66 4.34L16.24 2.93L13 6.17V1.69M11 6.09V8.13C9.24 8.59 8 10.18 8 12C8 13.82 9.24 15.41 11 15.87V17.91C8.12 17.42 6 14.93 6 12C6 9.07 8.11 6.57 11 6.09Z" /></g></svg>
+
+!define MA_SUN_SNOWFLAKE(_color)                                 SPRITE_PUT(ma_sun_snowflake, _color)
+!define MA_SUN_SNOWFLAKE(_color, _scale)                         SPRITE_PUT(ma_sun_snowflake, _color, _scale)
+!define MA_SUN_SNOWFLAKE(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA SUN SNOWFLAKE, ma_sun_snowflake, _color, _scale)
+!define MA_SUN_SNOWFLAKE(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA SUN SNOWFLAKE, ma_sun_snowflake, _color, _scale, _shape)
+!define MA_SUN_SNOWFLAKE(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA SUN SNOWFLAKE, _label, ma_sun_snowflake, _color, _scale, _shape)
+skinparam folderBackgroundColor<<MA SUN SNOWFLAKE>> White

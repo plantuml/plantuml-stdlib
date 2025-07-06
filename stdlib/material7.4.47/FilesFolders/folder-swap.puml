@@ -1,0 +1,8 @@
+sprite mdi-folder-swap <svg width="48" height="48"><g transform="scale(2)"><path d="M20 6H12L10 4H4A2 2 0 0 0 2 6V18A2 2 0 0 0 4 20H20A2 2 0 0 0 22 18V8A2 2 0 0 0 20 6M15 16V14H9V16L6 13L9 10V12H15V10L18 13Z" /></g></svg>
+
+!define MA_FOLDER_SWAP(_color)                                 SPRITE_PUT(ma_folder_swap, _color)
+!define MA_FOLDER_SWAP(_color, _scale)                         SPRITE_PUT(ma_folder_swap, _color, _scale)
+!define MA_FOLDER_SWAP(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA FOLDER SWAP, ma_folder_swap, _color, _scale)
+!define MA_FOLDER_SWAP(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA FOLDER SWAP, ma_folder_swap, _color, _scale, _shape)
+!define MA_FOLDER_SWAP(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA FOLDER SWAP, _label, ma_folder_swap, _color, _scale, _shape)
+skinparam folderBackgroundColor<<MA FOLDER SWAP>> White

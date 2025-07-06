@@ -1,0 +1,8 @@
+sprite mdi-flash-alert <svg width="48" height="48"><g transform="scale(2)"><path d="M5,2V13H8V22L15,10H11L15,2M17,15H19V17H17V15M17,7H19V13H17V7Z" /></g></svg>
+
+!define MA_FLASH_ALERT(_color)                                 SPRITE_PUT(ma_flash_alert, _color)
+!define MA_FLASH_ALERT(_color, _scale)                         SPRITE_PUT(ma_flash_alert, _color, _scale)
+!define MA_FLASH_ALERT(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA FLASH ALERT, ma_flash_alert, _color, _scale)
+!define MA_FLASH_ALERT(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA FLASH ALERT, ma_flash_alert, _color, _scale, _shape)
+!define MA_FLASH_ALERT(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA FLASH ALERT, _label, ma_flash_alert, _color, _scale, _shape)
+skinparam folderBackgroundColor<<MA FLASH ALERT>> White

@@ -1,0 +1,8 @@
+sprite mdi-middleware <svg width="48" height="48"><g transform="scale(2)"><path d="M23 12L19 8V11H14.82C14.4 9.84 13.3 9 12 9S9.6 9.84 9.18 11H5L2 8V16L5 13H9.18C9.6 14.16 10.7 15 12 15S14.4 14.16 14.82 13H19V16L23 12Z" /></g></svg>
+
+!define MA_MIDDLEWARE(_color)                                 SPRITE_PUT(ma_middleware, _color)
+!define MA_MIDDLEWARE(_color, _scale)                         SPRITE_PUT(ma_middleware, _color, _scale)
+!define MA_MIDDLEWARE(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA MIDDLEWARE, ma_middleware, _color, _scale)
+!define MA_MIDDLEWARE(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA MIDDLEWARE, ma_middleware, _color, _scale, _shape)
+!define MA_MIDDLEWARE(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA MIDDLEWARE, _label, ma_middleware, _color, _scale, _shape)
+skinparam folderBackgroundColor<<MA MIDDLEWARE>> White

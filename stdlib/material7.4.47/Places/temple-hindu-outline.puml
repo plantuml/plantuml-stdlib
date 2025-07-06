@@ -1,0 +1,8 @@
+sprite mdi-temple-hindu-outline <svg width="48" height="48"><g transform="scale(2)"><path d="M20 11V13H18L15 3V1H13V3H11V1H9V3.1L6 13H4V11H2V22H11V17H13V22H22V11H20M15.3 11H8.7L9.3 9H14.7L15.3 11M14.1 7H9.9L10.5 5H13.5L14.1 7M20 20H15V15H9V20H4V15H7.5L8.1 13H15.9L16.5 15H20V20Z" /></g></svg>
+
+!define MA_TEMPLE_HINDU_OUTLINE(_color)                                 SPRITE_PUT(ma_temple_hindu_outline, _color)
+!define MA_TEMPLE_HINDU_OUTLINE(_color, _scale)                         SPRITE_PUT(ma_temple_hindu_outline, _color, _scale)
+!define MA_TEMPLE_HINDU_OUTLINE(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA TEMPLE HINDU OUTLINE, ma_temple_hindu_outline, _color, _scale)
+!define MA_TEMPLE_HINDU_OUTLINE(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA TEMPLE HINDU OUTLINE, ma_temple_hindu_outline, _color, _scale, _shape)
+!define MA_TEMPLE_HINDU_OUTLINE(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA TEMPLE HINDU OUTLINE, _label, ma_temple_hindu_outline, _color, _scale, _shape)
+skinparam folderBackgroundColor<<MA TEMPLE HINDU OUTLINE>> White

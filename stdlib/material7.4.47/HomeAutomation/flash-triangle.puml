@@ -1,0 +1,8 @@
+sprite mdi-flash-triangle <svg width="48" height="48"><g transform="scale(2)"><path d="M12 2L1 21H23L12 2M10 15V10H14L12.5 13.5H14.5L11.5 19V15H10Z" /></g></svg>
+
+!define MA_FLASH_TRIANGLE(_color)                                 SPRITE_PUT(ma_flash_triangle, _color)
+!define MA_FLASH_TRIANGLE(_color, _scale)                         SPRITE_PUT(ma_flash_triangle, _color, _scale)
+!define MA_FLASH_TRIANGLE(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA FLASH TRIANGLE, ma_flash_triangle, _color, _scale)
+!define MA_FLASH_TRIANGLE(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA FLASH TRIANGLE, ma_flash_triangle, _color, _scale, _shape)
+!define MA_FLASH_TRIANGLE(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA FLASH TRIANGLE, _label, ma_flash_triangle, _color, _scale, _shape)
+skinparam folderBackgroundColor<<MA FLASH TRIANGLE>> White

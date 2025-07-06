@@ -1,0 +1,8 @@
+sprite mdi-invoice-multiple <svg width="48" height="48"><g transform="scale(2)"><path d="M17 2H2V17H4V4H17V2M21 22L18.5 20.32L16 22L13.5 20.32L11 22L8.5 20.32L6 22V6H21V22Z" /></g></svg>
+
+!define MA_INVOICE_MULTIPLE(_color)                                 SPRITE_PUT(ma_invoice_multiple, _color)
+!define MA_INVOICE_MULTIPLE(_color, _scale)                         SPRITE_PUT(ma_invoice_multiple, _color, _scale)
+!define MA_INVOICE_MULTIPLE(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA INVOICE MULTIPLE, ma_invoice_multiple, _color, _scale)
+!define MA_INVOICE_MULTIPLE(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA INVOICE MULTIPLE, ma_invoice_multiple, _color, _scale, _shape)
+!define MA_INVOICE_MULTIPLE(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA INVOICE MULTIPLE, _label, ma_invoice_multiple, _color, _scale, _shape)
+skinparam folderBackgroundColor<<MA INVOICE MULTIPLE>> White

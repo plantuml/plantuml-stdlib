@@ -1,0 +1,8 @@
+sprite mdi-numeric-6-circle <svg width="48" height="48"><g transform="scale(2)"><path d="M11,7A2,2 0 0,0 9,9V15A2,2 0 0,0 11,17H13A2,2 0 0,0 15,15V13A2,2 0 0,0 13,11H11V9H15V7H11M11,13H13V15H11V13M12,2A10,10 0 0,1 22,12A10,10 0 0,1 12,22A10,10 0 0,1 2,12A10,10 0 0,1 12,2Z" /></g></svg>
+
+!define MA_NUMERIC_6_CIRCLE(_color)                                 SPRITE_PUT(ma_numeric_6_circle, _color)
+!define MA_NUMERIC_6_CIRCLE(_color, _scale)                         SPRITE_PUT(ma_numeric_6_circle, _color, _scale)
+!define MA_NUMERIC_6_CIRCLE(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA NUMERIC 6 CIRCLE, ma_numeric_6_circle, _color, _scale)
+!define MA_NUMERIC_6_CIRCLE(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA NUMERIC 6 CIRCLE, ma_numeric_6_circle, _color, _scale, _shape)
+!define MA_NUMERIC_6_CIRCLE(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA NUMERIC 6 CIRCLE, _label, ma_numeric_6_circle, _color, _scale, _shape)
+skinparam folderBackgroundColor<<MA NUMERIC 6 CIRCLE>> White

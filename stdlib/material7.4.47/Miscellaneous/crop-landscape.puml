@@ -1,0 +1,8 @@
+sprite mdi-crop-landscape <svg width="48" height="48"><g transform="scale(2)"><path d="M19,17H5V7H19M19,5H5A2,2 0 0,0 3,7V17A2,2 0 0,0 5,19H19A2,2 0 0,0 21,17V7C21,5.89 20.1,5 19,5Z" /></g></svg>
+
+!define MA_CROP_LANDSCAPE(_color)                                 SPRITE_PUT(ma_crop_landscape, _color)
+!define MA_CROP_LANDSCAPE(_color, _scale)                         SPRITE_PUT(ma_crop_landscape, _color, _scale)
+!define MA_CROP_LANDSCAPE(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA CROP LANDSCAPE, ma_crop_landscape, _color, _scale)
+!define MA_CROP_LANDSCAPE(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA CROP LANDSCAPE, ma_crop_landscape, _color, _scale, _shape)
+!define MA_CROP_LANDSCAPE(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA CROP LANDSCAPE, _label, ma_crop_landscape, _color, _scale, _shape)
+skinparam folderBackgroundColor<<MA CROP LANDSCAPE>> White

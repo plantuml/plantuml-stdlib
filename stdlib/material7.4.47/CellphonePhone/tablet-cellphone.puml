@@ -1,0 +1,8 @@
+sprite mdi-tablet-cellphone <svg width="48" height="48"><g transform="scale(2)"><path d="M3,4H20A2,2 0 0,1 22,6V8H18V6H5V18H14V20H3A2,2 0 0,1 1,18V6A2,2 0 0,1 3,4M17,10H23A1,1 0 0,1 24,11V21A1,1 0 0,1 23,22H17A1,1 0 0,1 16,21V11A1,1 0 0,1 17,10M18,12V19H22V12H18Z" /></g></svg>
+
+!define MA_TABLET_CELLPHONE(_color)                                 SPRITE_PUT(ma_tablet_cellphone, _color)
+!define MA_TABLET_CELLPHONE(_color, _scale)                         SPRITE_PUT(ma_tablet_cellphone, _color, _scale)
+!define MA_TABLET_CELLPHONE(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA TABLET CELLPHONE, ma_tablet_cellphone, _color, _scale)
+!define MA_TABLET_CELLPHONE(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA TABLET CELLPHONE, ma_tablet_cellphone, _color, _scale, _shape)
+!define MA_TABLET_CELLPHONE(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA TABLET CELLPHONE, _label, ma_tablet_cellphone, _color, _scale, _shape)
+skinparam folderBackgroundColor<<MA TABLET CELLPHONE>> White

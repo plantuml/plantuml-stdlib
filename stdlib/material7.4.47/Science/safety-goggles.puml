@@ -1,0 +1,8 @@
+sprite mdi-safety-goggles <svg width="48" height="48"><g transform="scale(2)"><path d="M18,9C19.11,9 20,9.89 20,11V14C20,15.11 19.11,16 18,16H15.77L14.53,14.77C13.78,14 12.77,13.6 11.7,13.6C10.63,13.6 9.63,14 8.87,14.77L7.64,16H6C4.89,16 4,15.11 4,14V11C4,9.89 4.89,9 6,9H18M18,7H6A4,4 0 0,0 2,11H2L1,11V14H2V14A4,4 0 0,0 6,18H8.5C8.54,17.94 8.59,17.88 10.29,16.18C10.68,15.79 11.19,15.6 11.7,15.6C12.22,15.6 12.73,15.79 13.12,16.18L14.91,18H18A4,4 0 0,0 22,14H22L23,14V11H22V11A4,4 0 0,0 18,7Z" /></g></svg>
+
+!define MA_SAFETY_GOGGLES(_color)                                 SPRITE_PUT(ma_safety_goggles, _color)
+!define MA_SAFETY_GOGGLES(_color, _scale)                         SPRITE_PUT(ma_safety_goggles, _color, _scale)
+!define MA_SAFETY_GOGGLES(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA SAFETY GOGGLES, ma_safety_goggles, _color, _scale)
+!define MA_SAFETY_GOGGLES(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA SAFETY GOGGLES, ma_safety_goggles, _color, _scale, _shape)
+!define MA_SAFETY_GOGGLES(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA SAFETY GOGGLES, _label, ma_safety_goggles, _color, _scale, _shape)
+skinparam folderBackgroundColor<<MA SAFETY GOGGLES>> White

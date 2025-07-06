@@ -1,0 +1,8 @@
+sprite mdi-arrow-up-drop-circle <svg width="48" height="48"><g transform="scale(2)"><path d="M12,22A10,10 0 0,1 2,12A10,10 0 0,1 12,2A10,10 0 0,1 22,12A10,10 0 0,1 12,22M17,14L12,9L7,14H17Z" /></g></svg>
+
+!define MA_ARROW_UP_DROP_CIRCLE(_color)                                 SPRITE_PUT(ma_arrow_up_drop_circle, _color)
+!define MA_ARROW_UP_DROP_CIRCLE(_color, _scale)                         SPRITE_PUT(ma_arrow_up_drop_circle, _color, _scale)
+!define MA_ARROW_UP_DROP_CIRCLE(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA ARROW UP DROP CIRCLE, ma_arrow_up_drop_circle, _color, _scale)
+!define MA_ARROW_UP_DROP_CIRCLE(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA ARROW UP DROP CIRCLE, ma_arrow_up_drop_circle, _color, _scale, _shape)
+!define MA_ARROW_UP_DROP_CIRCLE(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA ARROW UP DROP CIRCLE, _label, ma_arrow_up_drop_circle, _color, _scale, _shape)
+skinparam folderBackgroundColor<<MA ARROW UP DROP CIRCLE>> White

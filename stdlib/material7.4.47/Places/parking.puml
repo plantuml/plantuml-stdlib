@@ -1,0 +1,8 @@
+sprite mdi-parking <svg width="48" height="48"><g transform="scale(2)"><path d="M13.2,11H10V7H13.2A2,2 0 0,1 15.2,9A2,2 0 0,1 13.2,11M13,3H6V21H10V15H13A6,6 0 0,0 19,9C19,5.68 16.31,3 13,3Z" /></g></svg>
+
+!define MA_PARKING(_color)                                 SPRITE_PUT(ma_parking, _color)
+!define MA_PARKING(_color, _scale)                         SPRITE_PUT(ma_parking, _color, _scale)
+!define MA_PARKING(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA PARKING, ma_parking, _color, _scale)
+!define MA_PARKING(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA PARKING, ma_parking, _color, _scale, _shape)
+!define MA_PARKING(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA PARKING, _label, ma_parking, _color, _scale, _shape)
+skinparam folderBackgroundColor<<MA PARKING>> White

@@ -1,0 +1,8 @@
+sprite mdi-micro-sd <svg width="48" height="48"><g transform="scale(2)"><path d="M8,2A2,2 0 0,0 6,4V11L4,13V20A2,2 0 0,0 6,22H18A2,2 0 0,0 20,20V4A2,2 0 0,0 18,2H8M9,4H11V8H9V4M12,4H14V8H12V4M15,4H17V8H15V4Z" /></g></svg>
+
+!define MA_MICRO_SD(_color)                                 SPRITE_PUT(ma_micro_sd, _color)
+!define MA_MICRO_SD(_color, _scale)                         SPRITE_PUT(ma_micro_sd, _color, _scale)
+!define MA_MICRO_SD(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA MICRO SD, ma_micro_sd, _color, _scale)
+!define MA_MICRO_SD(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA MICRO SD, ma_micro_sd, _color, _scale, _shape)
+!define MA_MICRO_SD(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA MICRO SD, _label, ma_micro_sd, _color, _scale, _shape)
+skinparam folderBackgroundColor<<MA MICRO SD>> White

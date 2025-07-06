@@ -1,0 +1,8 @@
+sprite mdi-view-headline <svg width="48" height="48"><g transform="scale(2)"><path d="M4,5V7H21V5M4,11H21V9H4M4,19H21V17H4M4,15H21V13H4V15Z" /></g></svg>
+
+!define MA_VIEW_HEADLINE(_color)                                 SPRITE_PUT(ma_view_headline, _color)
+!define MA_VIEW_HEADLINE(_color, _scale)                         SPRITE_PUT(ma_view_headline, _color, _scale)
+!define MA_VIEW_HEADLINE(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA VIEW HEADLINE, ma_view_headline, _color, _scale)
+!define MA_VIEW_HEADLINE(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA VIEW HEADLINE, ma_view_headline, _color, _scale, _shape)
+!define MA_VIEW_HEADLINE(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA VIEW HEADLINE, _label, ma_view_headline, _color, _scale, _shape)
+skinparam folderBackgroundColor<<MA VIEW HEADLINE>> White

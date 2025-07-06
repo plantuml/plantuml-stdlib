@@ -1,0 +1,8 @@
+sprite mdi-shuffle-disabled <svg width="48" height="48"><g transform="scale(2)"><path d="M16,4.5V7H5V9H16V11.5L19.5,8M16,12.5V15H5V17H16V19.5L19.5,16" /></g></svg>
+
+!define MA_SHUFFLE_DISABLED(_color)                                 SPRITE_PUT(ma_shuffle_disabled, _color)
+!define MA_SHUFFLE_DISABLED(_color, _scale)                         SPRITE_PUT(ma_shuffle_disabled, _color, _scale)
+!define MA_SHUFFLE_DISABLED(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA SHUFFLE DISABLED, ma_shuffle_disabled, _color, _scale)
+!define MA_SHUFFLE_DISABLED(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA SHUFFLE DISABLED, ma_shuffle_disabled, _color, _scale, _shape)
+!define MA_SHUFFLE_DISABLED(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA SHUFFLE DISABLED, _label, ma_shuffle_disabled, _color, _scale, _shape)
+skinparam folderBackgroundColor<<MA SHUFFLE DISABLED>> White

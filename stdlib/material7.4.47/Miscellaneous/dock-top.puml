@@ -1,0 +1,8 @@
+sprite mdi-dock-top <svg width="48" height="48"><g transform="scale(2)"><path d="M4 20H20C21.11 20 22 19.11 22 18V6C22 4.89 21.11 4 20 4H4C2.9 4 2 4.89 2 6V18C2 19.11 2.9 20 4 20M4 11H20V18H4V11Z" /></g></svg>
+
+!define MA_DOCK_TOP(_color)                                 SPRITE_PUT(ma_dock_top, _color)
+!define MA_DOCK_TOP(_color, _scale)                         SPRITE_PUT(ma_dock_top, _color, _scale)
+!define MA_DOCK_TOP(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA DOCK TOP, ma_dock_top, _color, _scale)
+!define MA_DOCK_TOP(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA DOCK TOP, ma_dock_top, _color, _scale, _shape)
+!define MA_DOCK_TOP(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA DOCK TOP, _label, ma_dock_top, _color, _scale, _shape)
+skinparam folderBackgroundColor<<MA DOCK TOP>> White

@@ -1,0 +1,8 @@
+sprite mdi-table-column-plus-after <svg width="48" height="48"><g transform="scale(2)"><path d="M11,2A2,2 0 0,1 13,4V20A2,2 0 0,1 11,22H2V2H11M4,10V14H11V10H4M4,16V20H11V16H4M4,4V8H11V4H4M15,11H18V8H20V11H23V13H20V16H18V13H15V11Z" /></g></svg>
+
+!define MA_TABLE_COLUMN_PLUS_AFTER(_color)                                 SPRITE_PUT(ma_table_column_plus_after, _color)
+!define MA_TABLE_COLUMN_PLUS_AFTER(_color, _scale)                         SPRITE_PUT(ma_table_column_plus_after, _color, _scale)
+!define MA_TABLE_COLUMN_PLUS_AFTER(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA TABLE COLUMN PLUS AFTER, ma_table_column_plus_after, _color, _scale)
+!define MA_TABLE_COLUMN_PLUS_AFTER(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA TABLE COLUMN PLUS AFTER, ma_table_column_plus_after, _color, _scale, _shape)
+!define MA_TABLE_COLUMN_PLUS_AFTER(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA TABLE COLUMN PLUS AFTER, _label, ma_table_column_plus_after, _color, _scale, _shape)
+skinparam folderBackgroundColor<<MA TABLE COLUMN PLUS AFTER>> White

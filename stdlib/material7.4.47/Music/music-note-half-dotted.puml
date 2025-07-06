@@ -1,0 +1,8 @@
+sprite mdi-music-note-half-dotted <svg width="48" height="48"><g transform="scale(2)"><path d="M14 3H12V13.56A3.96 3.96 0 0 0 10 13A4 4 0 1 0 14 17V3M10 19A2 2 0 1 1 12 17A2 2 0 0 1 10 19M16.5 20A1.5 1.5 0 1 1 18 18.5A1.5 1.5 0 0 1 16.5 20Z" /></g></svg>
+
+!define MA_MUSIC_NOTE_HALF_DOTTED(_color)                                 SPRITE_PUT(ma_music_note_half_dotted, _color)
+!define MA_MUSIC_NOTE_HALF_DOTTED(_color, _scale)                         SPRITE_PUT(ma_music_note_half_dotted, _color, _scale)
+!define MA_MUSIC_NOTE_HALF_DOTTED(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA MUSIC NOTE HALF DOTTED, ma_music_note_half_dotted, _color, _scale)
+!define MA_MUSIC_NOTE_HALF_DOTTED(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA MUSIC NOTE HALF DOTTED, ma_music_note_half_dotted, _color, _scale, _shape)
+!define MA_MUSIC_NOTE_HALF_DOTTED(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA MUSIC NOTE HALF DOTTED, _label, ma_music_note_half_dotted, _color, _scale, _shape)
+skinparam folderBackgroundColor<<MA MUSIC NOTE HALF DOTTED>> White

@@ -1,0 +1,8 @@
+sprite mdi-image-filter-hdr-outline <svg width="48" height="48"><g transform="scale(2)"><path d="M23 18H1L8.25 8.33L10.25 11L14 6L23 18M11.5 12.67L14 16L19 16L14 9.33L11.5 12.67M5 16L11.5 16L8.25 11.67L5 16Z" /></g></svg>
+
+!define MA_IMAGE_FILTER_HDR_OUTLINE(_color)                                 SPRITE_PUT(ma_image_filter_hdr_outline, _color)
+!define MA_IMAGE_FILTER_HDR_OUTLINE(_color, _scale)                         SPRITE_PUT(ma_image_filter_hdr_outline, _color, _scale)
+!define MA_IMAGE_FILTER_HDR_OUTLINE(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA IMAGE FILTER HDR OUTLINE, ma_image_filter_hdr_outline, _color, _scale)
+!define MA_IMAGE_FILTER_HDR_OUTLINE(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA IMAGE FILTER HDR OUTLINE, ma_image_filter_hdr_outline, _color, _scale, _shape)
+!define MA_IMAGE_FILTER_HDR_OUTLINE(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA IMAGE FILTER HDR OUTLINE, _label, ma_image_filter_hdr_outline, _color, _scale, _shape)
+skinparam folderBackgroundColor<<MA IMAGE FILTER HDR OUTLINE>> White

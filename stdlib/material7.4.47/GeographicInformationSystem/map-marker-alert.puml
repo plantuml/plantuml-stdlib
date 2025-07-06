@@ -1,0 +1,8 @@
+sprite mdi-map-marker-alert <svg width="48" height="48"><g transform="scale(2)"><path d="M12 2C15.9 2 19 5.1 19 9C19 14.2 12 22 12 22S5 14.2 5 9C5 5.1 8.1 2 12 2M11 6V12H13V6H11M11 14V16H13V14H11Z" /></g></svg>
+
+!define MA_MAP_MARKER_ALERT(_color)                                 SPRITE_PUT(ma_map_marker_alert, _color)
+!define MA_MAP_MARKER_ALERT(_color, _scale)                         SPRITE_PUT(ma_map_marker_alert, _color, _scale)
+!define MA_MAP_MARKER_ALERT(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA MAP MARKER ALERT, ma_map_marker_alert, _color, _scale)
+!define MA_MAP_MARKER_ALERT(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA MAP MARKER ALERT, ma_map_marker_alert, _color, _scale, _shape)
+!define MA_MAP_MARKER_ALERT(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA MAP MARKER ALERT, _label, ma_map_marker_alert, _color, _scale, _shape)
+skinparam folderBackgroundColor<<MA MAP MARKER ALERT>> White

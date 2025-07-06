@@ -1,0 +1,8 @@
+sprite mdi-image-filter-hdr <svg width="48" height="48"><g transform="scale(2)"><path d="M14,6L10.25,11L13.1,14.8L11.5,16C9.81,13.75 7,10 7,10L1,18H23L14,6Z" /></g></svg>
+
+!define MA_IMAGE_FILTER_HDR(_color)                                 SPRITE_PUT(ma_image_filter_hdr, _color)
+!define MA_IMAGE_FILTER_HDR(_color, _scale)                         SPRITE_PUT(ma_image_filter_hdr, _color, _scale)
+!define MA_IMAGE_FILTER_HDR(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA IMAGE FILTER HDR, ma_image_filter_hdr, _color, _scale)
+!define MA_IMAGE_FILTER_HDR(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA IMAGE FILTER HDR, ma_image_filter_hdr, _color, _scale, _shape)
+!define MA_IMAGE_FILTER_HDR(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA IMAGE FILTER HDR, _label, ma_image_filter_hdr, _color, _scale, _shape)
+skinparam folderBackgroundColor<<MA IMAGE FILTER HDR>> White

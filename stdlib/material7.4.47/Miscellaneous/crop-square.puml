@@ -1,0 +1,8 @@
+sprite mdi-crop-square <svg width="48" height="48"><g transform="scale(2)"><path d="M18,18H6V6H18M18,4H6A2,2 0 0,0 4,6V18A2,2 0 0,0 6,20H18A2,2 0 0,0 20,18V6C20,4.89 19.1,4 18,4Z" /></g></svg>
+
+!define MA_CROP_SQUARE(_color)                                 SPRITE_PUT(ma_crop_square, _color)
+!define MA_CROP_SQUARE(_color, _scale)                         SPRITE_PUT(ma_crop_square, _color, _scale)
+!define MA_CROP_SQUARE(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA CROP SQUARE, ma_crop_square, _color, _scale)
+!define MA_CROP_SQUARE(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA CROP SQUARE, ma_crop_square, _color, _scale, _shape)
+!define MA_CROP_SQUARE(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA CROP SQUARE, _label, ma_crop_square, _color, _scale, _shape)
+skinparam folderBackgroundColor<<MA CROP SQUARE>> White

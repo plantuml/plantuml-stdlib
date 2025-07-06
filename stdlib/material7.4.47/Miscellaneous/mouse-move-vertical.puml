@@ -1,0 +1,8 @@
+sprite mdi-mouse-move-vertical <svg width="48" height="48"><g transform="scale(2)"><path d="M20 6H23L19 2L15 6H18V18H15L19 22L23 18H20V6M9 3.09C11.83 3.57 14 6.04 14 9H9V3.09M14 11V15C14 18.3 11.3 21 8 21S2 18.3 2 15V11H14M7 9H2C2 6.04 4.17 3.57 7 3.09V9Z" /></g></svg>
+
+!define MA_MOUSE_MOVE_VERTICAL(_color)                                 SPRITE_PUT(ma_mouse_move_vertical, _color)
+!define MA_MOUSE_MOVE_VERTICAL(_color, _scale)                         SPRITE_PUT(ma_mouse_move_vertical, _color, _scale)
+!define MA_MOUSE_MOVE_VERTICAL(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA MOUSE MOVE VERTICAL, ma_mouse_move_vertical, _color, _scale)
+!define MA_MOUSE_MOVE_VERTICAL(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA MOUSE MOVE VERTICAL, ma_mouse_move_vertical, _color, _scale, _shape)
+!define MA_MOUSE_MOVE_VERTICAL(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA MOUSE MOVE VERTICAL, _label, ma_mouse_move_vertical, _color, _scale, _shape)
+skinparam folderBackgroundColor<<MA MOUSE MOVE VERTICAL>> White

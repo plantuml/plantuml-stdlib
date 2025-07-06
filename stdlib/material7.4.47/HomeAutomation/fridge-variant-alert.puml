@@ -1,0 +1,8 @@
+sprite mdi-fridge-variant-alert <svg width="48" height="48"><g transform="scale(2)"><path d="M17 4V19C17 20.11 16.11 21 15 21V22H13V21H10.5V2H15C16.11 2 17 2.9 17 4M5 2H9.5V21H7V22H5V21C3.9 21 3 20.11 3 19V4C3 2.9 3.9 2 5 2M8 10H5V14H8V10M19 7V13H21V7H19M19 17H21V15H19V17Z" /></g></svg>
+
+!define MA_FRIDGE_VARIANT_ALERT(_color)                                 SPRITE_PUT(ma_fridge_variant_alert, _color)
+!define MA_FRIDGE_VARIANT_ALERT(_color, _scale)                         SPRITE_PUT(ma_fridge_variant_alert, _color, _scale)
+!define MA_FRIDGE_VARIANT_ALERT(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA FRIDGE VARIANT ALERT, ma_fridge_variant_alert, _color, _scale)
+!define MA_FRIDGE_VARIANT_ALERT(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA FRIDGE VARIANT ALERT, ma_fridge_variant_alert, _color, _scale, _shape)
+!define MA_FRIDGE_VARIANT_ALERT(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA FRIDGE VARIANT ALERT, _label, ma_fridge_variant_alert, _color, _scale, _shape)
+skinparam folderBackgroundColor<<MA FRIDGE VARIANT ALERT>> White

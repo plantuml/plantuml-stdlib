@@ -1,0 +1,8 @@
+sprite mdi-cards-playing-heart <svg width="48" height="48"><g transform="scale(2)"><path d="M17 2H7C5.9 2 5 2.9 5 4V20C5 21.1 5.9 22 7 22H17C18.1 22 19 21.1 19 20V4C19 2.9 18.1 2 17 2M12.6 15.8L12 16.3L11.4 15.8C9.4 13.9 8 12.7 8 11.2C8 10 9 9 10.2 9C10.9 9 11.6 9.3 12 9.8C12.4 9.3 13.1 9 13.8 9C15 9 16 9.9 16 11.2C16 12.7 14.6 13.9 12.6 15.8Z" /></g></svg>
+
+!define MA_CARDS_PLAYING_HEART(_color)                                 SPRITE_PUT(ma_cards_playing_heart, _color)
+!define MA_CARDS_PLAYING_HEART(_color, _scale)                         SPRITE_PUT(ma_cards_playing_heart, _color, _scale)
+!define MA_CARDS_PLAYING_HEART(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA CARDS PLAYING HEART, ma_cards_playing_heart, _color, _scale)
+!define MA_CARDS_PLAYING_HEART(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA CARDS PLAYING HEART, ma_cards_playing_heart, _color, _scale, _shape)
+!define MA_CARDS_PLAYING_HEART(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA CARDS PLAYING HEART, _label, ma_cards_playing_heart, _color, _scale, _shape)
+skinparam folderBackgroundColor<<MA CARDS PLAYING HEART>> White

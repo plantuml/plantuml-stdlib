@@ -1,0 +1,8 @@
+sprite mdi-message-reply <svg width="48" height="48"><g transform="scale(2)"><path d="M22,4C22,2.89 21.1,2 20,2H4A2,2 0 0,0 2,4V16A2,2 0 0,0 4,18H18L22,22V4Z" /></g></svg>
+
+!define MA_MESSAGE_REPLY(_color)                                 SPRITE_PUT(ma_message_reply, _color)
+!define MA_MESSAGE_REPLY(_color, _scale)                         SPRITE_PUT(ma_message_reply, _color, _scale)
+!define MA_MESSAGE_REPLY(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA MESSAGE REPLY, ma_message_reply, _color, _scale)
+!define MA_MESSAGE_REPLY(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA MESSAGE REPLY, ma_message_reply, _color, _scale, _shape)
+!define MA_MESSAGE_REPLY(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA MESSAGE REPLY, _label, ma_message_reply, _color, _scale, _shape)
+skinparam folderBackgroundColor<<MA MESSAGE REPLY>> White

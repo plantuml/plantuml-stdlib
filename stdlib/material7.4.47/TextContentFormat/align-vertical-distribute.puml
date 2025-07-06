@@ -1,0 +1,8 @@
+sprite mdi-align-vertical-distribute <svg width="48" height="48"><g transform="scale(2)"><path d="M22 2V4H2V2H22M7 10.5V13.5H17V10.5H7M2 20V22H22V20H2Z" /></g></svg>
+
+!define MA_ALIGN_VERTICAL_DISTRIBUTE(_color)                                 SPRITE_PUT(ma_align_vertical_distribute, _color)
+!define MA_ALIGN_VERTICAL_DISTRIBUTE(_color, _scale)                         SPRITE_PUT(ma_align_vertical_distribute, _color, _scale)
+!define MA_ALIGN_VERTICAL_DISTRIBUTE(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA ALIGN VERTICAL DISTRIBUTE, ma_align_vertical_distribute, _color, _scale)
+!define MA_ALIGN_VERTICAL_DISTRIBUTE(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA ALIGN VERTICAL DISTRIBUTE, ma_align_vertical_distribute, _color, _scale, _shape)
+!define MA_ALIGN_VERTICAL_DISTRIBUTE(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA ALIGN VERTICAL DISTRIBUTE, _label, ma_align_vertical_distribute, _color, _scale, _shape)
+skinparam folderBackgroundColor<<MA ALIGN VERTICAL DISTRIBUTE>> White

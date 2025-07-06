@@ -1,0 +1,8 @@
+sprite mdi-format-title <svg width="48" height="48"><g transform="scale(2)"><path d="M5,4V7H10.5V19H13.5V7H19V4H5Z" /></g></svg>
+
+!define MA_FORMAT_TITLE(_color)                                 SPRITE_PUT(ma_format_title, _color)
+!define MA_FORMAT_TITLE(_color, _scale)                         SPRITE_PUT(ma_format_title, _color, _scale)
+!define MA_FORMAT_TITLE(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA FORMAT TITLE, ma_format_title, _color, _scale)
+!define MA_FORMAT_TITLE(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA FORMAT TITLE, ma_format_title, _color, _scale, _shape)
+!define MA_FORMAT_TITLE(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA FORMAT TITLE, _label, ma_format_title, _color, _scale, _shape)
+skinparam folderBackgroundColor<<MA FORMAT TITLE>> White

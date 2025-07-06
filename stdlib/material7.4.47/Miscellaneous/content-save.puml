@@ -1,0 +1,8 @@
+sprite mdi-content-save <svg width="48" height="48"><g transform="scale(2)"><path d="M15,9H5V5H15M12,19A3,3 0 0,1 9,16A3,3 0 0,1 12,13A3,3 0 0,1 15,16A3,3 0 0,1 12,19M17,3H5C3.89,3 3,3.9 3,5V19A2,2 0 0,0 5,21H19A2,2 0 0,0 21,19V7L17,3Z" /></g></svg>
+
+!define MA_CONTENT_SAVE(_color)                                 SPRITE_PUT(ma_content_save, _color)
+!define MA_CONTENT_SAVE(_color, _scale)                         SPRITE_PUT(ma_content_save, _color, _scale)
+!define MA_CONTENT_SAVE(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA CONTENT SAVE, ma_content_save, _color, _scale)
+!define MA_CONTENT_SAVE(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA CONTENT SAVE, ma_content_save, _color, _scale, _shape)
+!define MA_CONTENT_SAVE(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA CONTENT SAVE, _label, ma_content_save, _color, _scale, _shape)
+skinparam folderBackgroundColor<<MA CONTENT SAVE>> White

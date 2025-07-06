@@ -1,0 +1,8 @@
+sprite mdi-contain-start <svg width="48" height="48"><g transform="scale(2)"><path d="M2,3H8V5H4V19H8V21H2V3M7,17V15H9V17H7M11,17V15H13V17H11M15,17V15H17V17H15Z" /></g></svg>
+
+!define MA_CONTAIN_START(_color)                                 SPRITE_PUT(ma_contain_start, _color)
+!define MA_CONTAIN_START(_color, _scale)                         SPRITE_PUT(ma_contain_start, _color, _scale)
+!define MA_CONTAIN_START(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA CONTAIN START, ma_contain_start, _color, _scale)
+!define MA_CONTAIN_START(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA CONTAIN START, ma_contain_start, _color, _scale, _shape)
+!define MA_CONTAIN_START(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA CONTAIN START, _label, ma_contain_start, _color, _scale, _shape)
+skinparam folderBackgroundColor<<MA CONTAIN START>> White

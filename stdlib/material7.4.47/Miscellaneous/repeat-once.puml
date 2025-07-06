@@ -1,0 +1,8 @@
+sprite mdi-repeat-once <svg width="48" height="48"><g transform="scale(2)"><path d="M13,15V9H12L10,10V11H11.5V15M17,17H7V14L3,18L7,22V19H19V13H17M7,7H17V10L21,6L17,2V5H5V11H7V7Z" /></g></svg>
+
+!define MA_REPEAT_ONCE(_color)                                 SPRITE_PUT(ma_repeat_once, _color)
+!define MA_REPEAT_ONCE(_color, _scale)                         SPRITE_PUT(ma_repeat_once, _color, _scale)
+!define MA_REPEAT_ONCE(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA REPEAT ONCE, ma_repeat_once, _color, _scale)
+!define MA_REPEAT_ONCE(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA REPEAT ONCE, ma_repeat_once, _color, _scale, _shape)
+!define MA_REPEAT_ONCE(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA REPEAT ONCE, _label, ma_repeat_once, _color, _scale, _shape)
+skinparam folderBackgroundColor<<MA REPEAT ONCE>> White

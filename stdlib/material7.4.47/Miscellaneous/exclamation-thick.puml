@@ -1,0 +1,8 @@
+sprite mdi-exclamation-thick <svg width="48" height="48"><g transform="scale(2)"><path d="M10 3H14V14H10V3M10 21V17H14V21H10Z" /></g></svg>
+
+!define MA_EXCLAMATION_THICK(_color)                                 SPRITE_PUT(ma_exclamation_thick, _color)
+!define MA_EXCLAMATION_THICK(_color, _scale)                         SPRITE_PUT(ma_exclamation_thick, _color, _scale)
+!define MA_EXCLAMATION_THICK(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA EXCLAMATION THICK, ma_exclamation_thick, _color, _scale)
+!define MA_EXCLAMATION_THICK(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA EXCLAMATION THICK, ma_exclamation_thick, _color, _scale, _shape)
+!define MA_EXCLAMATION_THICK(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA EXCLAMATION THICK, _label, ma_exclamation_thick, _color, _scale, _shape)
+skinparam folderBackgroundColor<<MA EXCLAMATION THICK>> White

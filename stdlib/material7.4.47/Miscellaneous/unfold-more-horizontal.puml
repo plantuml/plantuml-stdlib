@@ -1,0 +1,8 @@
+sprite mdi-unfold-more-horizontal <svg width="48" height="48"><g transform="scale(2)"><path d="M12,18.17L8.83,15L7.42,16.41L12,21L16.59,16.41L15.17,15M12,5.83L15.17,9L16.58,7.59L12,3L7.41,7.59L8.83,9L12,5.83Z" /></g></svg>
+
+!define MA_UNFOLD_MORE_HORIZONTAL(_color)                                 SPRITE_PUT(ma_unfold_more_horizontal, _color)
+!define MA_UNFOLD_MORE_HORIZONTAL(_color, _scale)                         SPRITE_PUT(ma_unfold_more_horizontal, _color, _scale)
+!define MA_UNFOLD_MORE_HORIZONTAL(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA UNFOLD MORE HORIZONTAL, ma_unfold_more_horizontal, _color, _scale)
+!define MA_UNFOLD_MORE_HORIZONTAL(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA UNFOLD MORE HORIZONTAL, ma_unfold_more_horizontal, _color, _scale, _shape)
+!define MA_UNFOLD_MORE_HORIZONTAL(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA UNFOLD MORE HORIZONTAL, _label, ma_unfold_more_horizontal, _color, _scale, _shape)
+skinparam folderBackgroundColor<<MA UNFOLD MORE HORIZONTAL>> White

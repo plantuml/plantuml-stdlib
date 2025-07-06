@@ -1,0 +1,8 @@
+sprite mdi-floor-plan <svg width="48" height="48"><g transform="scale(2)"><path d="M10,5V10H9V5H5V13H9V12H10V17H9V14H5V19H12V17H13V19H19V17H21V21H3V3H21V15H19V10H13V15H12V9H19V5H10Z" /></g></svg>
+
+!define MA_FLOOR_PLAN(_color)                                 SPRITE_PUT(ma_floor_plan, _color)
+!define MA_FLOOR_PLAN(_color, _scale)                         SPRITE_PUT(ma_floor_plan, _color, _scale)
+!define MA_FLOOR_PLAN(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA FLOOR PLAN, ma_floor_plan, _color, _scale)
+!define MA_FLOOR_PLAN(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA FLOOR PLAN, ma_floor_plan, _color, _scale, _shape)
+!define MA_FLOOR_PLAN(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA FLOOR PLAN, _label, ma_floor_plan, _color, _scale, _shape)
+skinparam folderBackgroundColor<<MA FLOOR PLAN>> White

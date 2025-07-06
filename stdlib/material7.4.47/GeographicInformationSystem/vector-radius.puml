@@ -1,0 +1,8 @@
+sprite mdi-vector-radius <svg width="48" height="48"><g transform="scale(2)"><path d="M2,4H4V2H10V4A10,10 0 0,1 20,14H22V20H20V22H18V20H16V14H18A8,8 0 0,0 10,6V8H4V6H2V4M18,16V18H20V16H18M6,4V6H8V4H6Z" /></g></svg>
+
+!define MA_VECTOR_RADIUS(_color)                                 SPRITE_PUT(ma_vector_radius, _color)
+!define MA_VECTOR_RADIUS(_color, _scale)                         SPRITE_PUT(ma_vector_radius, _color, _scale)
+!define MA_VECTOR_RADIUS(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA VECTOR RADIUS, ma_vector_radius, _color, _scale)
+!define MA_VECTOR_RADIUS(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA VECTOR RADIUS, ma_vector_radius, _color, _scale, _shape)
+!define MA_VECTOR_RADIUS(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA VECTOR RADIUS, _label, ma_vector_radius, _color, _scale, _shape)
+skinparam folderBackgroundColor<<MA VECTOR RADIUS>> White

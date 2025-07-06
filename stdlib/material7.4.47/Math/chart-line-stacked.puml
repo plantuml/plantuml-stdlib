@@ -1,0 +1,8 @@
+sprite mdi-chart-line-stacked <svg width="48" height="48"><g transform="scale(2)"><path d="M17.45,15.18L22,6.81V19L22,21H2V3H4V15.54L4,19H4.31L6,19H6.57L10.96,11.44L17.45,15.18M22,3L21.97,3.45L17,11L10,6L6,12V3H22Z" /></g></svg>
+
+!define MA_CHART_LINE_STACKED(_color)                                 SPRITE_PUT(ma_chart_line_stacked, _color)
+!define MA_CHART_LINE_STACKED(_color, _scale)                         SPRITE_PUT(ma_chart_line_stacked, _color, _scale)
+!define MA_CHART_LINE_STACKED(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA CHART LINE STACKED, ma_chart_line_stacked, _color, _scale)
+!define MA_CHART_LINE_STACKED(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA CHART LINE STACKED, ma_chart_line_stacked, _color, _scale, _shape)
+!define MA_CHART_LINE_STACKED(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA CHART LINE STACKED, _label, ma_chart_line_stacked, _color, _scale, _shape)
+skinparam folderBackgroundColor<<MA CHART LINE STACKED>> White

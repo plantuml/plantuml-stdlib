@@ -1,0 +1,8 @@
+sprite mdi-format-text-wrapping-wrap <svg width="48" height="48"><g transform="scale(2)"><path d="M7,21H5V3H7V21M19,3H17V21H19V3M13,8H9V10H12.97C13.14,10 14,10.16 14,12C14,13.84 13.14,14 13,14H11V12L8,15L11,18V16H13C14.04,16 16,15.16 16,12C16,8.84 14.04,8 13,8Z" /></g></svg>
+
+!define MA_FORMAT_TEXT_WRAPPING_WRAP(_color)                                 SPRITE_PUT(ma_format_text_wrapping_wrap, _color)
+!define MA_FORMAT_TEXT_WRAPPING_WRAP(_color, _scale)                         SPRITE_PUT(ma_format_text_wrapping_wrap, _color, _scale)
+!define MA_FORMAT_TEXT_WRAPPING_WRAP(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA FORMAT TEXT WRAPPING WRAP, ma_format_text_wrapping_wrap, _color, _scale)
+!define MA_FORMAT_TEXT_WRAPPING_WRAP(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA FORMAT TEXT WRAPPING WRAP, ma_format_text_wrapping_wrap, _color, _scale, _shape)
+!define MA_FORMAT_TEXT_WRAPPING_WRAP(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA FORMAT TEXT WRAPPING WRAP, _label, ma_format_text_wrapping_wrap, _color, _scale, _shape)
+skinparam folderBackgroundColor<<MA FORMAT TEXT WRAPPING WRAP>> White

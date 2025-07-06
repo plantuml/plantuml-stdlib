@@ -1,0 +1,8 @@
+sprite mdi-glass-cocktail <svg width="48" height="48"><g transform="scale(2)"><path d="M7.5,7L5.5,5H18.5L16.5,7M11,13V19H6V21H18V19H13V13L21,5V3H3V5L11,13Z" /></g></svg>
+
+!define MA_GLASS_COCKTAIL(_color)                                 SPRITE_PUT(ma_glass_cocktail, _color)
+!define MA_GLASS_COCKTAIL(_color, _scale)                         SPRITE_PUT(ma_glass_cocktail, _color, _scale)
+!define MA_GLASS_COCKTAIL(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA GLASS COCKTAIL, ma_glass_cocktail, _color, _scale)
+!define MA_GLASS_COCKTAIL(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA GLASS COCKTAIL, ma_glass_cocktail, _color, _scale, _shape)
+!define MA_GLASS_COCKTAIL(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA GLASS COCKTAIL, _label, ma_glass_cocktail, _color, _scale, _shape)
+skinparam folderBackgroundColor<<MA GLASS COCKTAIL>> White

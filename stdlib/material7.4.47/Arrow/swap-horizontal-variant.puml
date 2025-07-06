@@ -1,0 +1,8 @@
+sprite mdi-swap-horizontal-variant <svg width="48" height="48"><g transform="scale(2)"><path d="M4,6L8,10V7H16A2,2 0 0,1 18,9A2,2 0 0,1 16,11H8A4,4 0 0,0 4,15A4,4 0 0,0 8,19H16V22L20,18L16,14V17H8A2,2 0 0,1 6,15A2,2 0 0,1 8,13H16A4,4 0 0,0 20,9A4,4 0 0,0 16,5H8V2L4,6Z" /></g></svg>
+
+!define MA_SWAP_HORIZONTAL_VARIANT(_color)                                 SPRITE_PUT(ma_swap_horizontal_variant, _color)
+!define MA_SWAP_HORIZONTAL_VARIANT(_color, _scale)                         SPRITE_PUT(ma_swap_horizontal_variant, _color, _scale)
+!define MA_SWAP_HORIZONTAL_VARIANT(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA SWAP HORIZONTAL VARIANT, ma_swap_horizontal_variant, _color, _scale)
+!define MA_SWAP_HORIZONTAL_VARIANT(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA SWAP HORIZONTAL VARIANT, ma_swap_horizontal_variant, _color, _scale, _shape)
+!define MA_SWAP_HORIZONTAL_VARIANT(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA SWAP HORIZONTAL VARIANT, _label, ma_swap_horizontal_variant, _color, _scale, _shape)
+skinparam folderBackgroundColor<<MA SWAP HORIZONTAL VARIANT>> White

@@ -1,0 +1,8 @@
+sprite mdi-sack <svg width="48" height="48"><g transform="scale(2)"><path d="M16,9C20,11 21,18 21,18C21,18 22,22 16,22C10,22 8,22 8,22C2,22 3,18 3,18C3,18 4,11 8,9M14,4L12,2L10,4L6,2L8,7H16L18,2L14,4Z" /></g></svg>
+
+!define MA_SACK(_color)                                 SPRITE_PUT(ma_sack, _color)
+!define MA_SACK(_color, _scale)                         SPRITE_PUT(ma_sack, _color, _scale)
+!define MA_SACK(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA SACK, ma_sack, _color, _scale)
+!define MA_SACK(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA SACK, ma_sack, _color, _scale, _shape)
+!define MA_SACK(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA SACK, _label, ma_sack, _color, _scale, _shape)
+skinparam folderBackgroundColor<<MA SACK>> White

@@ -1,0 +1,8 @@
+sprite mdi-patio-heater <svg width="48" height="48"><g transform="scale(2)"><path d="M15 22H9V21H15V22M19 4L15 2H9L5 4H19M8 5L8.4 6H15.6L16 5H8M10 10H11V15C10.4 15 10 15.4 10 16V20H14V16C14 15.4 13.6 15 13 15V10H14L14.4 9H9.6L10 10M9.2 8H14.8L15.2 7H8.8L9.2 8Z" /></g></svg>
+
+!define MA_PATIO_HEATER(_color)                                 SPRITE_PUT(ma_patio_heater, _color)
+!define MA_PATIO_HEATER(_color, _scale)                         SPRITE_PUT(ma_patio_heater, _color, _scale)
+!define MA_PATIO_HEATER(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA PATIO HEATER, ma_patio_heater, _color, _scale)
+!define MA_PATIO_HEATER(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA PATIO HEATER, ma_patio_heater, _color, _scale, _shape)
+!define MA_PATIO_HEATER(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA PATIO HEATER, _label, ma_patio_heater, _color, _scale, _shape)
+skinparam folderBackgroundColor<<MA PATIO HEATER>> White

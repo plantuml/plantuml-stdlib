@@ -1,0 +1,8 @@
+sprite mdi-table-pivot <svg width="48" height="48"><g transform="scale(2)"><path d="M22 15H20V18C20 19.11 19.11 20 18 20H15V22L12 19L15 16V18H18V15H16L19 12L22 15M22 4V8C22 9.1 21.1 10 20 10H10V20C10 21.1 9.1 22 8 22H4C2.9 22 2 21.1 2 20V4C2 2.9 2.9 2 4 2H20C21.1 2 22 2.9 22 4M4 8H8V4H4V8M4 10V14H8V10H4M8 20V16H4V20L8 20M14 8V4H10V8H14M20 4L20 4H16V8H20L20 4Z" /></g></svg>
+
+!define MA_TABLE_PIVOT(_color)                                 SPRITE_PUT(ma_table_pivot, _color)
+!define MA_TABLE_PIVOT(_color, _scale)                         SPRITE_PUT(ma_table_pivot, _color, _scale)
+!define MA_TABLE_PIVOT(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA TABLE PIVOT, ma_table_pivot, _color, _scale)
+!define MA_TABLE_PIVOT(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA TABLE PIVOT, ma_table_pivot, _color, _scale, _shape)
+!define MA_TABLE_PIVOT(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA TABLE PIVOT, _label, ma_table_pivot, _color, _scale, _shape)
+skinparam folderBackgroundColor<<MA TABLE PIVOT>> White

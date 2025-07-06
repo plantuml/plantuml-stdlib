@@ -1,0 +1,8 @@
+sprite mdi-close-octagon <svg width="48" height="48"><g transform="scale(2)"><path d="M8.27,3L3,8.27V15.73L8.27,21H15.73L21,15.73V8.27L15.73,3M8.41,7L12,10.59L15.59,7L17,8.41L13.41,12L17,15.59L15.59,17L12,13.41L8.41,17L7,15.59L10.59,12L7,8.41" /></g></svg>
+
+!define MA_CLOSE_OCTAGON(_color)                                 SPRITE_PUT(ma_close_octagon, _color)
+!define MA_CLOSE_OCTAGON(_color, _scale)                         SPRITE_PUT(ma_close_octagon, _color, _scale)
+!define MA_CLOSE_OCTAGON(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA CLOSE OCTAGON, ma_close_octagon, _color, _scale)
+!define MA_CLOSE_OCTAGON(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA CLOSE OCTAGON, ma_close_octagon, _color, _scale, _shape)
+!define MA_CLOSE_OCTAGON(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA CLOSE OCTAGON, _label, ma_close_octagon, _color, _scale, _shape)
+skinparam folderBackgroundColor<<MA CLOSE OCTAGON>> White

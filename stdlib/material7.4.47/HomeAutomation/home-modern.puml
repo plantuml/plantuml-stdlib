@@ -1,0 +1,8 @@
+sprite mdi-home-modern <svg width="48" height="48"><g transform="scale(2)"><path d="M6,21V8A2,2 0 0,1 8,6L16,3V6A2,2 0 0,1 18,8V21H12V16H8V21H6M14,19H16V16H14V19M8,13H10V9H8V13M12,13H16V9H12V13Z" /></g></svg>
+
+!define MA_HOME_MODERN(_color)                                 SPRITE_PUT(ma_home_modern, _color)
+!define MA_HOME_MODERN(_color, _scale)                         SPRITE_PUT(ma_home_modern, _color, _scale)
+!define MA_HOME_MODERN(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA HOME MODERN, ma_home_modern, _color, _scale)
+!define MA_HOME_MODERN(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA HOME MODERN, ma_home_modern, _color, _scale, _shape)
+!define MA_HOME_MODERN(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA HOME MODERN, _label, ma_home_modern, _color, _scale, _shape)
+skinparam folderBackgroundColor<<MA HOME MODERN>> White

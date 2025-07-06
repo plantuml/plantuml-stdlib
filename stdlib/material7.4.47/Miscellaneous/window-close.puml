@@ -1,0 +1,8 @@
+sprite mdi-window-close <svg width="48" height="48"><g transform="scale(2)"><path d="M13.46,12L19,17.54V19H17.54L12,13.46L6.46,19H5V17.54L10.54,12L5,6.46V5H6.46L12,10.54L17.54,5H19V6.46L13.46,12Z" /></g></svg>
+
+!define MA_WINDOW_CLOSE(_color)                                 SPRITE_PUT(ma_window_close, _color)
+!define MA_WINDOW_CLOSE(_color, _scale)                         SPRITE_PUT(ma_window_close, _color, _scale)
+!define MA_WINDOW_CLOSE(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA WINDOW CLOSE, ma_window_close, _color, _scale)
+!define MA_WINDOW_CLOSE(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA WINDOW CLOSE, ma_window_close, _color, _scale, _shape)
+!define MA_WINDOW_CLOSE(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA WINDOW CLOSE, _label, ma_window_close, _color, _scale, _shape)
+skinparam folderBackgroundColor<<MA WINDOW CLOSE>> White

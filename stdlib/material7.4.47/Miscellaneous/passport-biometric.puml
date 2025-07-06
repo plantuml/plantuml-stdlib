@@ -1,0 +1,8 @@
+sprite mdi-passport-biometric <svg width="48" height="48"><g transform="scale(2)"><path d="M4,4A2,2 0 0,0 2,6V11H8.13C8.59,9.24 10.18,8 12,8C13.82,8 15.41,9.24 15.87,11H22V6A2,2 0 0,0 20,4H4M12,10A2,2 0 0,0 10,12A2,2 0 0,0 12,14A2,2 0 0,0 14,12A2,2 0 0,0 12,10M2,13V18A2,2 0 0,0 4,20H20A2,2 0 0,0 22,18V13H15.87C15.41,14.76 13.82,16 12,16C10.18,16 8.59,14.76 8.13,13H2Z" /></g></svg>
+
+!define MA_PASSPORT_BIOMETRIC(_color)                                 SPRITE_PUT(ma_passport_biometric, _color)
+!define MA_PASSPORT_BIOMETRIC(_color, _scale)                         SPRITE_PUT(ma_passport_biometric, _color, _scale)
+!define MA_PASSPORT_BIOMETRIC(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA PASSPORT BIOMETRIC, ma_passport_biometric, _color, _scale)
+!define MA_PASSPORT_BIOMETRIC(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA PASSPORT BIOMETRIC, ma_passport_biometric, _color, _scale, _shape)
+!define MA_PASSPORT_BIOMETRIC(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA PASSPORT BIOMETRIC, _label, ma_passport_biometric, _color, _scale, _shape)
+skinparam folderBackgroundColor<<MA PASSPORT BIOMETRIC>> White

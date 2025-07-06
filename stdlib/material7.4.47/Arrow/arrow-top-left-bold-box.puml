@@ -1,0 +1,8 @@
+sprite mdi-arrow-top-left-bold-box <svg width="48" height="48"><g transform="scale(2)"><path d="M5 3H19C20.1 3 21 3.9 21 5V19C21 20.1 20.1 21 19 21H5C3.9 21 3 20.1 3 19V5C3 3.9 3.9 3 5 3M8.2 8V15.1L10.3 13L14.1 16.9L17 14L13.2 10.1L15.3 8H8.2Z" /></g></svg>
+
+!define MA_ARROW_TOP_LEFT_BOLD_BOX(_color)                                 SPRITE_PUT(ma_arrow_top_left_bold_box, _color)
+!define MA_ARROW_TOP_LEFT_BOLD_BOX(_color, _scale)                         SPRITE_PUT(ma_arrow_top_left_bold_box, _color, _scale)
+!define MA_ARROW_TOP_LEFT_BOLD_BOX(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA ARROW TOP LEFT BOLD BOX, ma_arrow_top_left_bold_box, _color, _scale)
+!define MA_ARROW_TOP_LEFT_BOLD_BOX(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA ARROW TOP LEFT BOLD BOX, ma_arrow_top_left_bold_box, _color, _scale, _shape)
+!define MA_ARROW_TOP_LEFT_BOLD_BOX(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA ARROW TOP LEFT BOLD BOX, _label, ma_arrow_top_left_bold_box, _color, _scale, _shape)
+skinparam folderBackgroundColor<<MA ARROW TOP LEFT BOLD BOX>> White

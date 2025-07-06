@@ -1,0 +1,8 @@
+sprite mdi-home-analytics <svg width="48" height="48"><g transform="scale(2)"><path d="M12,3L2,12H5V20H19V12H22M9,18H7V12H9M13,18H11V10H13M17,18H15V14H17" /></g></svg>
+
+!define MA_HOME_ANALYTICS(_color)                                 SPRITE_PUT(ma_home_analytics, _color)
+!define MA_HOME_ANALYTICS(_color, _scale)                         SPRITE_PUT(ma_home_analytics, _color, _scale)
+!define MA_HOME_ANALYTICS(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA HOME ANALYTICS, ma_home_analytics, _color, _scale)
+!define MA_HOME_ANALYTICS(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA HOME ANALYTICS, ma_home_analytics, _color, _scale, _shape)
+!define MA_HOME_ANALYTICS(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA HOME ANALYTICS, _label, ma_home_analytics, _color, _scale, _shape)
+skinparam folderBackgroundColor<<MA HOME ANALYTICS>> White

@@ -1,0 +1,8 @@
+sprite mdi-hospital <svg width="48" height="48"><g transform="scale(2)"><path d="M18 14H14V18H10V14H6V10H10V6H14V10H18" /></g></svg>
+
+!define MA_HOSPITAL(_color)                                 SPRITE_PUT(ma_hospital, _color)
+!define MA_HOSPITAL(_color, _scale)                         SPRITE_PUT(ma_hospital, _color, _scale)
+!define MA_HOSPITAL(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA HOSPITAL, ma_hospital, _color, _scale)
+!define MA_HOSPITAL(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA HOSPITAL, ma_hospital, _color, _scale, _shape)
+!define MA_HOSPITAL(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA HOSPITAL, _label, ma_hospital, _color, _scale, _shape)
+skinparam folderBackgroundColor<<MA HOSPITAL>> White

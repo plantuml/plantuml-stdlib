@@ -1,0 +1,8 @@
+sprite mdi-music-accidental-natural <svg width="48" height="48"><g transform="scale(2)"><path d="M10 8.75V3.5H8V17.5L14 15.25V20.5H16V6.5L10 8.75M14 13.25L10 14.75V10.75L14 9.25V13.25Z" /></g></svg>
+
+!define MA_MUSIC_ACCIDENTAL_NATURAL(_color)                                 SPRITE_PUT(ma_music_accidental_natural, _color)
+!define MA_MUSIC_ACCIDENTAL_NATURAL(_color, _scale)                         SPRITE_PUT(ma_music_accidental_natural, _color, _scale)
+!define MA_MUSIC_ACCIDENTAL_NATURAL(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA MUSIC ACCIDENTAL NATURAL, ma_music_accidental_natural, _color, _scale)
+!define MA_MUSIC_ACCIDENTAL_NATURAL(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA MUSIC ACCIDENTAL NATURAL, ma_music_accidental_natural, _color, _scale, _shape)
+!define MA_MUSIC_ACCIDENTAL_NATURAL(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA MUSIC ACCIDENTAL NATURAL, _label, ma_music_accidental_natural, _color, _scale, _shape)
+skinparam folderBackgroundColor<<MA MUSIC ACCIDENTAL NATURAL>> White

@@ -1,0 +1,8 @@
+sprite mdi-chart-waterfall <svg width="48" height="48"><g transform="scale(2)"><path d="M2 2H4V20H22V22H2V2M17 2H20V18H17V2M6 11H9V18H6V11M13 3H16V7H13V3M10 8H13V12H10V8Z" /></g></svg>
+
+!define MA_CHART_WATERFALL(_color)                                 SPRITE_PUT(ma_chart_waterfall, _color)
+!define MA_CHART_WATERFALL(_color, _scale)                         SPRITE_PUT(ma_chart_waterfall, _color, _scale)
+!define MA_CHART_WATERFALL(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA CHART WATERFALL, ma_chart_waterfall, _color, _scale)
+!define MA_CHART_WATERFALL(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA CHART WATERFALL, ma_chart_waterfall, _color, _scale, _shape)
+!define MA_CHART_WATERFALL(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA CHART WATERFALL, _label, ma_chart_waterfall, _color, _scale, _shape)
+skinparam folderBackgroundColor<<MA CHART WATERFALL>> White

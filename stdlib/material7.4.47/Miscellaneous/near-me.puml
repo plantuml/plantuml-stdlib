@@ -1,0 +1,8 @@
+sprite mdi-near-me <svg width="48" height="48"><g transform="scale(2)"><path d="M21,3L3,10.53V11.5L9.84,14.16L12.5,21H13.46L21,3Z" /></g></svg>
+
+!define MA_NEAR_ME(_color)                                 SPRITE_PUT(ma_near_me, _color)
+!define MA_NEAR_ME(_color, _scale)                         SPRITE_PUT(ma_near_me, _color, _scale)
+!define MA_NEAR_ME(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA NEAR ME, ma_near_me, _color, _scale)
+!define MA_NEAR_ME(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA NEAR ME, ma_near_me, _color, _scale, _shape)
+!define MA_NEAR_ME(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA NEAR ME, _label, ma_near_me, _color, _scale, _shape)
+skinparam folderBackgroundColor<<MA NEAR ME>> White

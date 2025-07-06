@@ -1,0 +1,8 @@
+sprite mdi-network-strength-4-alert <svg width="48" height="48"><g transform="scale(2)"><path d="M19 17H21V11H19M19 21H21V19H19M1 21H17V9H21V1" /></g></svg>
+
+!define MA_NETWORK_STRENGTH_4_ALERT(_color)                                 SPRITE_PUT(ma_network_strength_4_alert, _color)
+!define MA_NETWORK_STRENGTH_4_ALERT(_color, _scale)                         SPRITE_PUT(ma_network_strength_4_alert, _color, _scale)
+!define MA_NETWORK_STRENGTH_4_ALERT(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA NETWORK STRENGTH 4 ALERT, ma_network_strength_4_alert, _color, _scale)
+!define MA_NETWORK_STRENGTH_4_ALERT(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA NETWORK STRENGTH 4 ALERT, ma_network_strength_4_alert, _color, _scale, _shape)
+!define MA_NETWORK_STRENGTH_4_ALERT(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA NETWORK STRENGTH 4 ALERT, _label, ma_network_strength_4_alert, _color, _scale, _shape)
+skinparam folderBackgroundColor<<MA NETWORK STRENGTH 4 ALERT>> White

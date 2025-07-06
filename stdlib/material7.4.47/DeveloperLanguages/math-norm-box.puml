@@ -1,0 +1,8 @@
+sprite mdi-math-norm-box <svg width="48" height="48"><g transform="scale(2)"><path d="M19 3H5C3.9 3 3 3.9 3 5V19C3 20.1 3.9 21 5 21H19C20.1 21 21 20.1 21 19V5C21 3.9 20.1 3 19 3M10 18H8V6H10V18M16 18H14V6H16V18Z" /></g></svg>
+
+!define MA_MATH_NORM_BOX(_color)                                 SPRITE_PUT(ma_math_norm_box, _color)
+!define MA_MATH_NORM_BOX(_color, _scale)                         SPRITE_PUT(ma_math_norm_box, _color, _scale)
+!define MA_MATH_NORM_BOX(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA MATH NORM BOX, ma_math_norm_box, _color, _scale)
+!define MA_MATH_NORM_BOX(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA MATH NORM BOX, ma_math_norm_box, _color, _scale, _shape)
+!define MA_MATH_NORM_BOX(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA MATH NORM BOX, _label, ma_math_norm_box, _color, _scale, _shape)
+skinparam folderBackgroundColor<<MA MATH NORM BOX>> White

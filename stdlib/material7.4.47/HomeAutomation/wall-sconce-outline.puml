@@ -1,0 +1,8 @@
+sprite mdi-wall-sconce-outline <svg width="48" height="48"><g transform="scale(2)"><path d="M13.7 6L15.92 11H10.08L12.3 6H13.7M15 4H11L7 13H19L15 4M4 14V22H6V19H14V14H12V17H6V14H4Z" /></g></svg>
+
+!define MA_WALL_SCONCE_OUTLINE(_color)                                 SPRITE_PUT(ma_wall_sconce_outline, _color)
+!define MA_WALL_SCONCE_OUTLINE(_color, _scale)                         SPRITE_PUT(ma_wall_sconce_outline, _color, _scale)
+!define MA_WALL_SCONCE_OUTLINE(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA WALL SCONCE OUTLINE, ma_wall_sconce_outline, _color, _scale)
+!define MA_WALL_SCONCE_OUTLINE(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA WALL SCONCE OUTLINE, ma_wall_sconce_outline, _color, _scale, _shape)
+!define MA_WALL_SCONCE_OUTLINE(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA WALL SCONCE OUTLINE, _label, ma_wall_sconce_outline, _color, _scale, _shape)
+skinparam folderBackgroundColor<<MA WALL SCONCE OUTLINE>> White

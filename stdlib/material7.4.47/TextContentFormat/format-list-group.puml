@@ -1,0 +1,8 @@
+sprite mdi-format-list-group <svg width="48" height="48"><g transform="scale(2)"><path d="M5 5V19H7V21H3V3H7V5H5M20 7H7V9H20V7M20 11H7V13H20V11M20 15H7V17H20V15Z" /></g></svg>
+
+!define MA_FORMAT_LIST_GROUP(_color)                                 SPRITE_PUT(ma_format_list_group, _color)
+!define MA_FORMAT_LIST_GROUP(_color, _scale)                         SPRITE_PUT(ma_format_list_group, _color, _scale)
+!define MA_FORMAT_LIST_GROUP(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA FORMAT LIST GROUP, ma_format_list_group, _color, _scale)
+!define MA_FORMAT_LIST_GROUP(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA FORMAT LIST GROUP, ma_format_list_group, _color, _scale, _shape)
+!define MA_FORMAT_LIST_GROUP(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA FORMAT LIST GROUP, _label, ma_format_list_group, _color, _scale, _shape)
+skinparam folderBackgroundColor<<MA FORMAT LIST GROUP>> White

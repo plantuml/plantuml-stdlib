@@ -1,0 +1,8 @@
+sprite mdi-numeric-2 <svg width="48" height="48"><g transform="scale(2)"><path d="M9,7V9H13V11H11A2,2 0 0,0 9,13V17H11L15,17V15H11V13H13A2,2 0 0,0 15,11V9A2,2 0 0,0 13,7H9Z" /></g></svg>
+
+!define MA_NUMERIC_2(_color)                                 SPRITE_PUT(ma_numeric_2, _color)
+!define MA_NUMERIC_2(_color, _scale)                         SPRITE_PUT(ma_numeric_2, _color, _scale)
+!define MA_NUMERIC_2(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA NUMERIC 2, ma_numeric_2, _color, _scale)
+!define MA_NUMERIC_2(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA NUMERIC 2, ma_numeric_2, _color, _scale, _shape)
+!define MA_NUMERIC_2(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA NUMERIC 2, _label, ma_numeric_2, _color, _scale, _shape)
+skinparam folderBackgroundColor<<MA NUMERIC 2>> White

@@ -1,0 +1,8 @@
+sprite mdi-cursor-text <svg width="48" height="48"><g transform="scale(2)"><path d="M13,19A1,1 0 0,0 14,20H16V22H13.5C12.95,22 12,21.55 12,21C12,21.55 11.05,22 10.5,22H8V20H10A1,1 0 0,0 11,19V5A1,1 0 0,0 10,4H8V2H10.5C11.05,2 12,2.45 12,3C12,2.45 12.95,2 13.5,2H16V4H14A1,1 0 0,0 13,5V19Z" /></g></svg>
+
+!define MA_CURSOR_TEXT(_color)                                 SPRITE_PUT(ma_cursor_text, _color)
+!define MA_CURSOR_TEXT(_color, _scale)                         SPRITE_PUT(ma_cursor_text, _color, _scale)
+!define MA_CURSOR_TEXT(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA CURSOR TEXT, ma_cursor_text, _color, _scale)
+!define MA_CURSOR_TEXT(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA CURSOR TEXT, ma_cursor_text, _color, _scale, _shape)
+!define MA_CURSOR_TEXT(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA CURSOR TEXT, _label, ma_cursor_text, _color, _scale, _shape)
+skinparam folderBackgroundColor<<MA CURSOR TEXT>> White

@@ -1,0 +1,8 @@
+sprite mdi-video-check <svg width="48" height="48"><g transform="scale(2)"><path d="M17 10.5V7C17 6.45 16.55 6 16 6H4C3.45 6 3 6.45 3 7V17C3 17.55 3.45 18 4 18H16C16.55 18 17 17.55 17 17V13.5L21 17.5V6.5L17 10.5M8.93 15L6 11.8L7.24 10.56L8.93 12.26L12.76 8.43L14 9.93L8.93 15Z" /></g></svg>
+
+!define MA_VIDEO_CHECK(_color)                                 SPRITE_PUT(ma_video_check, _color)
+!define MA_VIDEO_CHECK(_color, _scale)                         SPRITE_PUT(ma_video_check, _color, _scale)
+!define MA_VIDEO_CHECK(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA VIDEO CHECK, ma_video_check, _color, _scale)
+!define MA_VIDEO_CHECK(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA VIDEO CHECK, ma_video_check, _color, _scale, _shape)
+!define MA_VIDEO_CHECK(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA VIDEO CHECK, _label, ma_video_check, _color, _scale, _shape)
+skinparam folderBackgroundColor<<MA VIDEO CHECK>> White

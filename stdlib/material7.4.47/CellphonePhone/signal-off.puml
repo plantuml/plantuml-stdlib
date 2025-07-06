@@ -1,0 +1,8 @@
+sprite mdi-signal-off <svg width="48" height="48"><g transform="scale(2)"><path d="M18,3V16.18L21,19.18V3H18M4.28,5L3,6.27L10.73,14H8V21H11V14.27L13,16.27V21H16V19.27L19.73,23L21,21.72L4.28,5M13,9V11.18L16,14.18V9H13M3,18V21H6V18H3Z" /></g></svg>
+
+!define MA_SIGNAL_OFF(_color)                                 SPRITE_PUT(ma_signal_off, _color)
+!define MA_SIGNAL_OFF(_color, _scale)                         SPRITE_PUT(ma_signal_off, _color, _scale)
+!define MA_SIGNAL_OFF(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA SIGNAL OFF, ma_signal_off, _color, _scale)
+!define MA_SIGNAL_OFF(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA SIGNAL OFF, ma_signal_off, _color, _scale, _shape)
+!define MA_SIGNAL_OFF(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA SIGNAL OFF, _label, ma_signal_off, _color, _scale, _shape)
+skinparam folderBackgroundColor<<MA SIGNAL OFF>> White

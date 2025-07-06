@@ -1,0 +1,8 @@
+sprite mdi-axis-x-arrow <svg width="48" height="48"><g transform="scale(2)"><path d="M1.5,20.5L3,15.03L4.46,17.6L11,13.82V3H13V13.82L22.39,19.25L21.39,21L12,15.56L5.46,19.33L7,21.96L1.5,20.5Z" /></g></svg>
+
+!define MA_AXIS_X_ARROW(_color)                                 SPRITE_PUT(ma_axis_x_arrow, _color)
+!define MA_AXIS_X_ARROW(_color, _scale)                         SPRITE_PUT(ma_axis_x_arrow, _color, _scale)
+!define MA_AXIS_X_ARROW(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA AXIS X ARROW, ma_axis_x_arrow, _color, _scale)
+!define MA_AXIS_X_ARROW(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA AXIS X ARROW, ma_axis_x_arrow, _color, _scale, _shape)
+!define MA_AXIS_X_ARROW(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA AXIS X ARROW, _label, ma_axis_x_arrow, _color, _scale, _shape)
+skinparam folderBackgroundColor<<MA AXIS X ARROW>> White

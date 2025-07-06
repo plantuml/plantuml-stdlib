@@ -1,0 +1,8 @@
+sprite mdi-moon-waning-gibbous <svg width="48" height="48"><g transform="scale(2)"><path d="M18 12C18 7.5 16.08 3.26 12 2A10 10 0 0 0 12 22C16.08 20.74 18 16.5 18 12Z" /></g></svg>
+
+!define MA_MOON_WANING_GIBBOUS(_color)                                 SPRITE_PUT(ma_moon_waning_gibbous, _color)
+!define MA_MOON_WANING_GIBBOUS(_color, _scale)                         SPRITE_PUT(ma_moon_waning_gibbous, _color, _scale)
+!define MA_MOON_WANING_GIBBOUS(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA MOON WANING GIBBOUS, ma_moon_waning_gibbous, _color, _scale)
+!define MA_MOON_WANING_GIBBOUS(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA MOON WANING GIBBOUS, ma_moon_waning_gibbous, _color, _scale, _shape)
+!define MA_MOON_WANING_GIBBOUS(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA MOON WANING GIBBOUS, _label, ma_moon_waning_gibbous, _color, _scale, _shape)
+skinparam folderBackgroundColor<<MA MOON WANING GIBBOUS>> White

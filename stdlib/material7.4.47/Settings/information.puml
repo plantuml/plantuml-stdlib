@@ -1,0 +1,8 @@
+sprite mdi-information <svg width="48" height="48"><g transform="scale(2)"><path d="M13,9H11V7H13M13,17H11V11H13M12,2A10,10 0 0,0 2,12A10,10 0 0,0 12,22A10,10 0 0,0 22,12A10,10 0 0,0 12,2Z" /></g></svg>
+
+!define MA_INFORMATION(_color)                                 SPRITE_PUT(ma_information, _color)
+!define MA_INFORMATION(_color, _scale)                         SPRITE_PUT(ma_information, _color, _scale)
+!define MA_INFORMATION(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA INFORMATION, ma_information, _color, _scale)
+!define MA_INFORMATION(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA INFORMATION, ma_information, _color, _scale, _shape)
+!define MA_INFORMATION(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA INFORMATION, _label, ma_information, _color, _scale, _shape)
+skinparam folderBackgroundColor<<MA INFORMATION>> White

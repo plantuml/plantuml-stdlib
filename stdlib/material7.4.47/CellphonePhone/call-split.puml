@@ -1,0 +1,8 @@
+sprite mdi-call-split <svg width="48" height="48"><g transform="scale(2)"><path d="M14,4L16.29,6.29L13.41,9.17L14.83,10.59L17.71,7.71L20,10V4M10,4H4V10L6.29,7.71L11,12.41V20H13V11.59L7.71,6.29" /></g></svg>
+
+!define MA_CALL_SPLIT(_color)                                 SPRITE_PUT(ma_call_split, _color)
+!define MA_CALL_SPLIT(_color, _scale)                         SPRITE_PUT(ma_call_split, _color, _scale)
+!define MA_CALL_SPLIT(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA CALL SPLIT, ma_call_split, _color, _scale)
+!define MA_CALL_SPLIT(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA CALL SPLIT, ma_call_split, _color, _scale, _shape)
+!define MA_CALL_SPLIT(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA CALL SPLIT, _label, ma_call_split, _color, _scale, _shape)
+skinparam folderBackgroundColor<<MA CALL SPLIT>> White

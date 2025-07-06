@@ -1,0 +1,8 @@
+sprite mdi-archive-arrow-down-outline <svg width="48" height="48"><g transform="scale(2)"><path d="M20 21H4V10H6V19H18V10H20V21M3 3H21V9H3V3M5 5V7H19V5M10.5 11V14H8L12 18L16 14H13.5V11" /></g></svg>
+
+!define MA_ARCHIVE_ARROW_DOWN_OUTLINE(_color)                                 SPRITE_PUT(ma_archive_arrow_down_outline, _color)
+!define MA_ARCHIVE_ARROW_DOWN_OUTLINE(_color, _scale)                         SPRITE_PUT(ma_archive_arrow_down_outline, _color, _scale)
+!define MA_ARCHIVE_ARROW_DOWN_OUTLINE(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA ARCHIVE ARROW DOWN OUTLINE, ma_archive_arrow_down_outline, _color, _scale)
+!define MA_ARCHIVE_ARROW_DOWN_OUTLINE(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA ARCHIVE ARROW DOWN OUTLINE, ma_archive_arrow_down_outline, _color, _scale, _shape)
+!define MA_ARCHIVE_ARROW_DOWN_OUTLINE(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA ARCHIVE ARROW DOWN OUTLINE, _label, ma_archive_arrow_down_outline, _color, _scale, _shape)
+skinparam folderBackgroundColor<<MA ARCHIVE ARROW DOWN OUTLINE>> White

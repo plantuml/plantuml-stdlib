@@ -1,0 +1,8 @@
+sprite mdi-message-text-outline <svg width="48" height="48"><g transform="scale(2)"><path d="M20,2A2,2 0 0,1 22,4V16A2,2 0 0,1 20,18H6L2,22V4C2,2.89 2.9,2 4,2H20M4,4V17.17L5.17,16H20V4H4M6,7H18V9H6V7M6,11H15V13H6V11Z" /></g></svg>
+
+!define MA_MESSAGE_TEXT_OUTLINE(_color)                                 SPRITE_PUT(ma_message_text_outline, _color)
+!define MA_MESSAGE_TEXT_OUTLINE(_color, _scale)                         SPRITE_PUT(ma_message_text_outline, _color, _scale)
+!define MA_MESSAGE_TEXT_OUTLINE(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA MESSAGE TEXT OUTLINE, ma_message_text_outline, _color, _scale)
+!define MA_MESSAGE_TEXT_OUTLINE(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA MESSAGE TEXT OUTLINE, ma_message_text_outline, _color, _scale, _shape)
+!define MA_MESSAGE_TEXT_OUTLINE(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA MESSAGE TEXT OUTLINE, _label, ma_message_text_outline, _color, _scale, _shape)
+skinparam folderBackgroundColor<<MA MESSAGE TEXT OUTLINE>> White

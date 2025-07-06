@@ -1,0 +1,8 @@
+sprite mdi-equalizer-outline <svg width="48" height="48"><g transform="scale(2)"><path d="M15,21H9V3H15V21M11,19H13V5H11V19M8,21H2V11H8V21M4,19H6V13H4V19M22,21H16V8H22V21M18,19H20V10H18V19Z" /></g></svg>
+
+!define MA_EQUALIZER_OUTLINE(_color)                                 SPRITE_PUT(ma_equalizer_outline, _color)
+!define MA_EQUALIZER_OUTLINE(_color, _scale)                         SPRITE_PUT(ma_equalizer_outline, _color, _scale)
+!define MA_EQUALIZER_OUTLINE(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA EQUALIZER OUTLINE, ma_equalizer_outline, _color, _scale)
+!define MA_EQUALIZER_OUTLINE(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA EQUALIZER OUTLINE, ma_equalizer_outline, _color, _scale, _shape)
+!define MA_EQUALIZER_OUTLINE(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA EQUALIZER OUTLINE, _label, ma_equalizer_outline, _color, _scale, _shape)
+skinparam folderBackgroundColor<<MA EQUALIZER OUTLINE>> White

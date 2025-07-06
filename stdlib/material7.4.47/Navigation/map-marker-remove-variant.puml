@@ -1,0 +1,8 @@
+sprite mdi-map-marker-remove-variant <svg width="48" height="48"><g transform="scale(2)"><path d="M12,2C8.14,2 5,5.14 5,9C5,14.25 12,22 12,22C12,22 19,14.25 19,9C19,5.14 15.86,2 12,2M9.59,5.17L12,7.58L14.41,5.17L15.83,6.58L13.41,9L15.83,11.41L14.41,12.83L12,10.41L9.59,12.83L8.17,11.41L10.59,9L8.17,6.58" /></g></svg>
+
+!define MA_MAP_MARKER_REMOVE_VARIANT(_color)                                 SPRITE_PUT(ma_map_marker_remove_variant, _color)
+!define MA_MAP_MARKER_REMOVE_VARIANT(_color, _scale)                         SPRITE_PUT(ma_map_marker_remove_variant, _color, _scale)
+!define MA_MAP_MARKER_REMOVE_VARIANT(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA MAP MARKER REMOVE VARIANT, ma_map_marker_remove_variant, _color, _scale)
+!define MA_MAP_MARKER_REMOVE_VARIANT(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA MAP MARKER REMOVE VARIANT, ma_map_marker_remove_variant, _color, _scale, _shape)
+!define MA_MAP_MARKER_REMOVE_VARIANT(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA MAP MARKER REMOVE VARIANT, _label, ma_map_marker_remove_variant, _color, _scale, _shape)
+skinparam folderBackgroundColor<<MA MAP MARKER REMOVE VARIANT>> White

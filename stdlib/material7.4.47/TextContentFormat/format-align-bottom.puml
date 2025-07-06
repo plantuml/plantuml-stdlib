@@ -1,0 +1,8 @@
+sprite mdi-format-align-bottom <svg width="48" height="48"><g transform="scale(2)"><path d="M13,9L15.5,6.5L16.92,7.92L12,12.84L7.08,7.92L8.5,6.5L11,9V3H13V9M3,15H21V17H3V15M3,19H13V21H3V19Z" /></g></svg>
+
+!define MA_FORMAT_ALIGN_BOTTOM(_color)                                 SPRITE_PUT(ma_format_align_bottom, _color)
+!define MA_FORMAT_ALIGN_BOTTOM(_color, _scale)                         SPRITE_PUT(ma_format_align_bottom, _color, _scale)
+!define MA_FORMAT_ALIGN_BOTTOM(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA FORMAT ALIGN BOTTOM, ma_format_align_bottom, _color, _scale)
+!define MA_FORMAT_ALIGN_BOTTOM(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA FORMAT ALIGN BOTTOM, ma_format_align_bottom, _color, _scale, _shape)
+!define MA_FORMAT_ALIGN_BOTTOM(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA FORMAT ALIGN BOTTOM, _label, ma_format_align_bottom, _color, _scale, _shape)
+skinparam folderBackgroundColor<<MA FORMAT ALIGN BOTTOM>> White

@@ -1,0 +1,8 @@
+sprite mdi-music-note-eighth <svg width="48" height="48"><g transform="scale(2)"><path d="M12 3V13.55C11.41 13.21 10.73 13 10 13C7.79 13 6 14.79 6 17S7.79 21 10 21 14 19.21 14 17V7H18V3H12Z" /></g></svg>
+
+!define MA_MUSIC_NOTE_EIGHTH(_color)                                 SPRITE_PUT(ma_music_note_eighth, _color)
+!define MA_MUSIC_NOTE_EIGHTH(_color, _scale)                         SPRITE_PUT(ma_music_note_eighth, _color, _scale)
+!define MA_MUSIC_NOTE_EIGHTH(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA MUSIC NOTE EIGHTH, ma_music_note_eighth, _color, _scale)
+!define MA_MUSIC_NOTE_EIGHTH(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA MUSIC NOTE EIGHTH, ma_music_note_eighth, _color, _scale, _shape)
+!define MA_MUSIC_NOTE_EIGHTH(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA MUSIC NOTE EIGHTH, _label, ma_music_note_eighth, _color, _scale, _shape)
+skinparam folderBackgroundColor<<MA MUSIC NOTE EIGHTH>> White

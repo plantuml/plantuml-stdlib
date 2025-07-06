@@ -1,0 +1,8 @@
+sprite mdi-cross <svg width="48" height="48"><g transform="scale(2)"><path d="M10.5,2H13.5V8H19V11H13.5V22H10.5V11H5V8H10.5V2Z" /></g></svg>
+
+!define MA_CROSS(_color)                                 SPRITE_PUT(ma_cross, _color)
+!define MA_CROSS(_color, _scale)                         SPRITE_PUT(ma_cross, _color, _scale)
+!define MA_CROSS(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA CROSS, ma_cross, _color, _scale)
+!define MA_CROSS(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA CROSS, ma_cross, _color, _scale, _shape)
+!define MA_CROSS(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA CROSS, _label, ma_cross, _color, _scale, _shape)
+skinparam folderBackgroundColor<<MA CROSS>> White

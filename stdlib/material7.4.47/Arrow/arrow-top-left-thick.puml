@@ -1,0 +1,8 @@
+sprite mdi-arrow-top-left-thick <svg width="48" height="48"><g transform="scale(2)"><path d="M9.12,11.94V16.89H5.69V5.69H16.89V9.12H11.94L18.31,15.5L15.5,18.31L9.12,11.94Z" /></g></svg>
+
+!define MA_ARROW_TOP_LEFT_THICK(_color)                                 SPRITE_PUT(ma_arrow_top_left_thick, _color)
+!define MA_ARROW_TOP_LEFT_THICK(_color, _scale)                         SPRITE_PUT(ma_arrow_top_left_thick, _color, _scale)
+!define MA_ARROW_TOP_LEFT_THICK(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA ARROW TOP LEFT THICK, ma_arrow_top_left_thick, _color, _scale)
+!define MA_ARROW_TOP_LEFT_THICK(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA ARROW TOP LEFT THICK, ma_arrow_top_left_thick, _color, _scale, _shape)
+!define MA_ARROW_TOP_LEFT_THICK(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA ARROW TOP LEFT THICK, _label, ma_arrow_top_left_thick, _color, _scale, _shape)
+skinparam folderBackgroundColor<<MA ARROW TOP LEFT THICK>> White

@@ -1,0 +1,8 @@
+sprite mdi-volume-vibrate <svg width="48" height="48"><g transform="scale(2)"><path d="M4 9V15H8L13 20V4L8 9H4M16.55 2.47L15.5 3.53L17.93 6L15 9L17.93 12L15 15L17.93 18L15.5 20.47L16.55 21.53L20 18L17.07 15L20 12L17.07 9L20 6L16.55 2.47Z" /></g></svg>
+
+!define MA_VOLUME_VIBRATE(_color)                                 SPRITE_PUT(ma_volume_vibrate, _color)
+!define MA_VOLUME_VIBRATE(_color, _scale)                         SPRITE_PUT(ma_volume_vibrate, _color, _scale)
+!define MA_VOLUME_VIBRATE(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA VOLUME VIBRATE, ma_volume_vibrate, _color, _scale)
+!define MA_VOLUME_VIBRATE(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA VOLUME VIBRATE, ma_volume_vibrate, _color, _scale, _shape)
+!define MA_VOLUME_VIBRATE(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA VOLUME VIBRATE, _label, ma_volume_vibrate, _color, _scale, _shape)
+skinparam folderBackgroundColor<<MA VOLUME VIBRATE>> White

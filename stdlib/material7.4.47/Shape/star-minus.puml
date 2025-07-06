@@ -1,0 +1,8 @@
+sprite mdi-star-minus <svg width="48" height="48"><g transform="scale(2)"><path d="M5.8 21L7.4 14L2 9.2L9.2 8.6L12 2L14.8 8.6L22 9.2L18.8 12H18C14.9 12 12.4 14.3 12 17.3L5.8 21M14 17V19H22V17H14Z" /></g></svg>
+
+!define MA_STAR_MINUS(_color)                                 SPRITE_PUT(ma_star_minus, _color)
+!define MA_STAR_MINUS(_color, _scale)                         SPRITE_PUT(ma_star_minus, _color, _scale)
+!define MA_STAR_MINUS(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA STAR MINUS, ma_star_minus, _color, _scale)
+!define MA_STAR_MINUS(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA STAR MINUS, ma_star_minus, _color, _scale, _shape)
+!define MA_STAR_MINUS(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA STAR MINUS, _label, ma_star_minus, _color, _scale, _shape)
+skinparam folderBackgroundColor<<MA STAR MINUS>> White

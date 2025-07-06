@@ -1,0 +1,8 @@
+sprite mdi-trophy-variant <svg width="48" height="48"><g transform="scale(2)"><path d="M17 4V2H7V4H2V11C2 12.1 2.9 13 4 13H7.1C7.5 14.96 9.04 16.5 11 16.9V19.08C8 19.54 8 22 8 22H16C16 22 16 19.54 13 19.08V16.9C14.96 16.5 16.5 14.96 16.9 13H20C21.1 13 22 12.1 22 11V4H17M4 11V6H7V11L4 11M20 11L17 11V6H20L20 11Z" /></g></svg>
+
+!define MA_TROPHY_VARIANT(_color)                                 SPRITE_PUT(ma_trophy_variant, _color)
+!define MA_TROPHY_VARIANT(_color, _scale)                         SPRITE_PUT(ma_trophy_variant, _color, _scale)
+!define MA_TROPHY_VARIANT(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA TROPHY VARIANT, ma_trophy_variant, _color, _scale)
+!define MA_TROPHY_VARIANT(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA TROPHY VARIANT, ma_trophy_variant, _color, _scale, _shape)
+!define MA_TROPHY_VARIANT(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA TROPHY VARIANT, _label, ma_trophy_variant, _color, _scale, _shape)
+skinparam folderBackgroundColor<<MA TROPHY VARIANT>> White

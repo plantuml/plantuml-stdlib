@@ -1,0 +1,8 @@
+sprite mdi-surround-sound-7-1 <svg width="48" height="48"><g transform="scale(2)"><path d="M14 17H12V15H14V17M20 7V17H18V9H16V7H20M4 17L8 9H4V7H10V9L6 17" /></g></svg>
+
+!define MA_SURROUND_SOUND_7_1(_color)                                 SPRITE_PUT(ma_surround_sound_7_1, _color)
+!define MA_SURROUND_SOUND_7_1(_color, _scale)                         SPRITE_PUT(ma_surround_sound_7_1, _color, _scale)
+!define MA_SURROUND_SOUND_7_1(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA SURROUND SOUND 7 1, ma_surround_sound_7_1, _color, _scale)
+!define MA_SURROUND_SOUND_7_1(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA SURROUND SOUND 7 1, ma_surround_sound_7_1, _color, _scale, _shape)
+!define MA_SURROUND_SOUND_7_1(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA SURROUND SOUND 7 1, _label, ma_surround_sound_7_1, _color, _scale, _shape)
+skinparam folderBackgroundColor<<MA SURROUND SOUND 7 1>> White

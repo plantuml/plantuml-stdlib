@@ -1,0 +1,8 @@
+sprite mdi-anvil <svg width="48" height="48"><g transform="scale(2)"><path d="M9,5V10C13.03,12.47 8.44,14.97 6,16V19H21V16C14.59,13.27 17.47,9 22,8V5H9M2,6C2.81,8.13 4.42,9.5 7,10V6H2Z" /></g></svg>
+
+!define MA_ANVIL(_color)                                 SPRITE_PUT(ma_anvil, _color)
+!define MA_ANVIL(_color, _scale)                         SPRITE_PUT(ma_anvil, _color, _scale)
+!define MA_ANVIL(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA ANVIL, ma_anvil, _color, _scale)
+!define MA_ANVIL(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA ANVIL, ma_anvil, _color, _scale, _shape)
+!define MA_ANVIL(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA ANVIL, _label, ma_anvil, _color, _scale, _shape)
+skinparam folderBackgroundColor<<MA ANVIL>> White

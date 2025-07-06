@@ -1,0 +1,8 @@
+sprite mdi-arrow-collapse-up <svg width="48" height="48"><g transform="scale(2)"><path d="M4.08,11.92L12,4L19.92,11.92L18.5,13.33L13,7.83V22H11V7.83L5.5,13.33L4.08,11.92M12,4H22V2H2V4H12Z" /></g></svg>
+
+!define MA_ARROW_COLLAPSE_UP(_color)                                 SPRITE_PUT(ma_arrow_collapse_up, _color)
+!define MA_ARROW_COLLAPSE_UP(_color, _scale)                         SPRITE_PUT(ma_arrow_collapse_up, _color, _scale)
+!define MA_ARROW_COLLAPSE_UP(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA ARROW COLLAPSE UP, ma_arrow_collapse_up, _color, _scale)
+!define MA_ARROW_COLLAPSE_UP(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA ARROW COLLAPSE UP, ma_arrow_collapse_up, _color, _scale, _shape)
+!define MA_ARROW_COLLAPSE_UP(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA ARROW COLLAPSE UP, _label, ma_arrow_collapse_up, _color, _scale, _shape)
+skinparam folderBackgroundColor<<MA ARROW COLLAPSE UP>> White

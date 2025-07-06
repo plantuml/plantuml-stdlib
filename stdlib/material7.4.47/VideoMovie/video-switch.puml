@@ -1,0 +1,8 @@
+sprite mdi-video-switch <svg width="48" height="48"><g transform="scale(2)"><path d="M13,15.5V13H7V15.5L3.5,12L7,8.5V11H13V8.5L16.5,12M18,9.5V6A1,1 0 0,0 17,5H3A1,1 0 0,0 2,6V18A1,1 0 0,0 3,19H17A1,1 0 0,0 18,18V14.5L22,18.5V5.5L18,9.5Z" /></g></svg>
+
+!define MA_VIDEO_SWITCH(_color)                                 SPRITE_PUT(ma_video_switch, _color)
+!define MA_VIDEO_SWITCH(_color, _scale)                         SPRITE_PUT(ma_video_switch, _color, _scale)
+!define MA_VIDEO_SWITCH(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA VIDEO SWITCH, ma_video_switch, _color, _scale)
+!define MA_VIDEO_SWITCH(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA VIDEO SWITCH, ma_video_switch, _color, _scale, _shape)
+!define MA_VIDEO_SWITCH(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA VIDEO SWITCH, _label, ma_video_switch, _color, _scale, _shape)
+skinparam folderBackgroundColor<<MA VIDEO SWITCH>> White

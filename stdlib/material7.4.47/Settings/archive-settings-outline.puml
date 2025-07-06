@@ -1,0 +1,8 @@
+sprite mdi-archive-settings-outline <svg width="48" height="48"><g transform="scale(2)"><path d="M3 2V8H21V2H3M19 6H5V4H19V6M18 9H20V20H4V9H6V18H18V9M15 10.5V12H9V10.5C9 10.22 9.22 10 9.5 10H14.5C14.78 10 15 10.22 15 10.5M7 22H9V24H7V22M11 22H13V24H11V22M15 22H17V24H15V22Z" /></g></svg>
+
+!define MA_ARCHIVE_SETTINGS_OUTLINE(_color)                                 SPRITE_PUT(ma_archive_settings_outline, _color)
+!define MA_ARCHIVE_SETTINGS_OUTLINE(_color, _scale)                         SPRITE_PUT(ma_archive_settings_outline, _color, _scale)
+!define MA_ARCHIVE_SETTINGS_OUTLINE(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA ARCHIVE SETTINGS OUTLINE, ma_archive_settings_outline, _color, _scale)
+!define MA_ARCHIVE_SETTINGS_OUTLINE(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA ARCHIVE SETTINGS OUTLINE, ma_archive_settings_outline, _color, _scale, _shape)
+!define MA_ARCHIVE_SETTINGS_OUTLINE(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA ARCHIVE SETTINGS OUTLINE, _label, ma_archive_settings_outline, _color, _scale, _shape)
+skinparam folderBackgroundColor<<MA ARCHIVE SETTINGS OUTLINE>> White

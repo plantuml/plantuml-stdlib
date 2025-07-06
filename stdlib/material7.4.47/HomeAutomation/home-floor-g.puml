@@ -1,0 +1,8 @@
+sprite mdi-home-floor-g <svg width="48" height="48"><g transform="scale(2)"><path d="M12,3L2,12H5V20H19V12H22L12,3M11,8H15V10H11V16H13V12H15V16C15,17.11 14.1,18 13,18H11A2,2 0 0,1 9,16V10C9,8.89 9.9,8 11,8Z" /></g></svg>
+
+!define MA_HOME_FLOOR_G(_color)                                 SPRITE_PUT(ma_home_floor_g, _color)
+!define MA_HOME_FLOOR_G(_color, _scale)                         SPRITE_PUT(ma_home_floor_g, _color, _scale)
+!define MA_HOME_FLOOR_G(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA HOME FLOOR G, ma_home_floor_g, _color, _scale)
+!define MA_HOME_FLOOR_G(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA HOME FLOOR G, ma_home_floor_g, _color, _scale, _shape)
+!define MA_HOME_FLOOR_G(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA HOME FLOOR G, _label, ma_home_floor_g, _color, _scale, _shape)
+skinparam folderBackgroundColor<<MA HOME FLOOR G>> White

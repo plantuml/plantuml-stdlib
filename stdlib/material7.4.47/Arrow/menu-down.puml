@@ -1,0 +1,8 @@
+sprite mdi-menu-down <svg width="48" height="48"><g transform="scale(2)"><path d="M7,10L12,15L17,10H7Z" /></g></svg>
+
+!define MA_MENU_DOWN(_color)                                 SPRITE_PUT(ma_menu_down, _color)
+!define MA_MENU_DOWN(_color, _scale)                         SPRITE_PUT(ma_menu_down, _color, _scale)
+!define MA_MENU_DOWN(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA MENU DOWN, ma_menu_down, _color, _scale)
+!define MA_MENU_DOWN(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA MENU DOWN, ma_menu_down, _color, _scale, _shape)
+!define MA_MENU_DOWN(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA MENU DOWN, _label, ma_menu_down, _color, _scale, _shape)
+skinparam folderBackgroundColor<<MA MENU DOWN>> White

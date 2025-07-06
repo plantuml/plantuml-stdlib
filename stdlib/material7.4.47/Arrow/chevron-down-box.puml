@@ -1,0 +1,8 @@
+sprite mdi-chevron-down-box <svg width="48" height="48"><g transform="scale(2)"><path d="M19,3H5A2,2 0 0,0 3,5V19C3,20.11 3.9,21 5,21H19C20.11,21 21,20.11 21,19V5A2,2 0 0,0 19,3M12,15.71L6,9.71L7.41,8.29L12,12.88L16.59,8.29L18,9.71L12,15.71Z" /></g></svg>
+
+!define MA_CHEVRON_DOWN_BOX(_color)                                 SPRITE_PUT(ma_chevron_down_box, _color)
+!define MA_CHEVRON_DOWN_BOX(_color, _scale)                         SPRITE_PUT(ma_chevron_down_box, _color, _scale)
+!define MA_CHEVRON_DOWN_BOX(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA CHEVRON DOWN BOX, ma_chevron_down_box, _color, _scale)
+!define MA_CHEVRON_DOWN_BOX(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA CHEVRON DOWN BOX, ma_chevron_down_box, _color, _scale, _shape)
+!define MA_CHEVRON_DOWN_BOX(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA CHEVRON DOWN BOX, _label, ma_chevron_down_box, _color, _scale, _shape)
+skinparam folderBackgroundColor<<MA CHEVRON DOWN BOX>> White

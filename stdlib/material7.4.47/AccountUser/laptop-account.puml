@@ -1,0 +1,8 @@
+sprite mdi-laptop-account <svg width="48" height="48"><g transform="scale(2)"><path d="M20 4C21.1 4 22 4.89 22 6V16C22 17.11 21.11 18 20 18H24V20H0V18H4C2.9 18 2 17.11 2 16V6C2 4.89 2.89 4 4 4H20M20 6H4V16H20V6M12 12C14.21 12 16 12.9 16 14V15H8V14C8 12.9 9.79 12 12 12M12 7C13.11 7 14 7.9 14 9S13.11 11 12 11 10 10.11 10 9 10.9 7 12 7Z" /></g></svg>
+
+!define MA_LAPTOP_ACCOUNT(_color)                                 SPRITE_PUT(ma_laptop_account, _color)
+!define MA_LAPTOP_ACCOUNT(_color, _scale)                         SPRITE_PUT(ma_laptop_account, _color, _scale)
+!define MA_LAPTOP_ACCOUNT(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA LAPTOP ACCOUNT, ma_laptop_account, _color, _scale)
+!define MA_LAPTOP_ACCOUNT(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA LAPTOP ACCOUNT, ma_laptop_account, _color, _scale, _shape)
+!define MA_LAPTOP_ACCOUNT(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA LAPTOP ACCOUNT, _label, ma_laptop_account, _color, _scale, _shape)
+skinparam folderBackgroundColor<<MA LAPTOP ACCOUNT>> White

@@ -1,0 +1,8 @@
+sprite mdi-emby <svg width="48" height="48"><g transform="scale(2)"><path d="M11,2L6,7L7,8L2,13L7,18L8,17L13,22L18,17L17,16L22,11L17,6L16,7L11,2M10,8.5L16,12L10,15.5V8.5Z" /></g></svg>
+
+!define MA_EMBY(_color)                                 SPRITE_PUT(ma_emby, _color)
+!define MA_EMBY(_color, _scale)                         SPRITE_PUT(ma_emby, _color, _scale)
+!define MA_EMBY(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA EMBY, ma_emby, _color, _scale)
+!define MA_EMBY(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA EMBY, ma_emby, _color, _scale, _shape)
+!define MA_EMBY(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA EMBY, _label, ma_emby, _color, _scale, _shape)
+skinparam folderBackgroundColor<<MA EMBY>> White

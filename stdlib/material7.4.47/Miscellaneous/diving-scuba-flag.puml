@@ -1,0 +1,8 @@
+sprite mdi-diving-scuba-flag <svg width="48" height="48"><g transform="scale(2)"><path d="M2,6L19,20H2V6M5,4L22,18V4H5Z" /></g></svg>
+
+!define MA_DIVING_SCUBA_FLAG(_color)                                 SPRITE_PUT(ma_diving_scuba_flag, _color)
+!define MA_DIVING_SCUBA_FLAG(_color, _scale)                         SPRITE_PUT(ma_diving_scuba_flag, _color, _scale)
+!define MA_DIVING_SCUBA_FLAG(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA DIVING SCUBA FLAG, ma_diving_scuba_flag, _color, _scale)
+!define MA_DIVING_SCUBA_FLAG(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA DIVING SCUBA FLAG, ma_diving_scuba_flag, _color, _scale, _shape)
+!define MA_DIVING_SCUBA_FLAG(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA DIVING SCUBA FLAG, _label, ma_diving_scuba_flag, _color, _scale, _shape)
+skinparam folderBackgroundColor<<MA DIVING SCUBA FLAG>> White

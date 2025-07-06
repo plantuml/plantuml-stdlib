@@ -1,0 +1,8 @@
+sprite mdi-traffic-cone <svg width="48" height="48"><g transform="scale(2)"><path d="M17 15L18 19H21V22H3V19H6L7 15H17M15 8L16 12H8L9 8H15M13 1L14 5H10L11 1H13Z" /></g></svg>
+
+!define MA_TRAFFIC_CONE(_color)                                 SPRITE_PUT(ma_traffic_cone, _color)
+!define MA_TRAFFIC_CONE(_color, _scale)                         SPRITE_PUT(ma_traffic_cone, _color, _scale)
+!define MA_TRAFFIC_CONE(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA TRAFFIC CONE, ma_traffic_cone, _color, _scale)
+!define MA_TRAFFIC_CONE(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA TRAFFIC CONE, ma_traffic_cone, _color, _scale, _shape)
+!define MA_TRAFFIC_CONE(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA TRAFFIC CONE, _label, ma_traffic_cone, _color, _scale, _shape)
+skinparam folderBackgroundColor<<MA TRAFFIC CONE>> White

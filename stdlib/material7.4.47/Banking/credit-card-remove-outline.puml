@@ -1,0 +1,8 @@
+sprite mdi-credit-card-remove-outline <svg width="48" height="48"><g transform="scale(2)"><path d="M13 19C13 18.66 13.04 18.33 13.09 18H3V12H19V13C19.7 13 20.37 13.13 21 13.35V6C21 4.89 20.11 4 19 4H3C1.89 4 1 4.89 1 6V18C1 19.1 1.89 20 3 20H13.09C13.04 19.67 13 19.34 13 19M3 6H19V8H3V6M22.54 16.88L20.41 19L22.54 21.12L21.12 22.54L19 20.41L16.88 22.54L15.47 21.12L17.59 19L15.47 16.88L16.88 15.47L19 17.59L21.12 15.46L22.54 16.88Z" /></g></svg>
+
+!define MA_CREDIT_CARD_REMOVE_OUTLINE(_color)                                 SPRITE_PUT(ma_credit_card_remove_outline, _color)
+!define MA_CREDIT_CARD_REMOVE_OUTLINE(_color, _scale)                         SPRITE_PUT(ma_credit_card_remove_outline, _color, _scale)
+!define MA_CREDIT_CARD_REMOVE_OUTLINE(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA CREDIT CARD REMOVE OUTLINE, ma_credit_card_remove_outline, _color, _scale)
+!define MA_CREDIT_CARD_REMOVE_OUTLINE(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA CREDIT CARD REMOVE OUTLINE, ma_credit_card_remove_outline, _color, _scale, _shape)
+!define MA_CREDIT_CARD_REMOVE_OUTLINE(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA CREDIT CARD REMOVE OUTLINE, _label, ma_credit_card_remove_outline, _color, _scale, _shape)
+skinparam folderBackgroundColor<<MA CREDIT CARD REMOVE OUTLINE>> White

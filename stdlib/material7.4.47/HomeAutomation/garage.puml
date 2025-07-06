@@ -1,0 +1,8 @@
+sprite mdi-garage <svg width="48" height="48"><g transform="scale(2)"><path d="M19,20H17V11H7V20H5V9L12,5L19,9V20M8,12H16V14H8V12M8,15H16V17H8V15M16,18V20H8V18H16Z" /></g></svg>
+
+!define MA_GARAGE(_color)                                 SPRITE_PUT(ma_garage, _color)
+!define MA_GARAGE(_color, _scale)                         SPRITE_PUT(ma_garage, _color, _scale)
+!define MA_GARAGE(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA GARAGE, ma_garage, _color, _scale)
+!define MA_GARAGE(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA GARAGE, ma_garage, _color, _scale, _shape)
+!define MA_GARAGE(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA GARAGE, _label, ma_garage, _color, _scale, _shape)
+skinparam folderBackgroundColor<<MA GARAGE>> White

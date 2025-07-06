@@ -1,0 +1,8 @@
+sprite mdi-calendar-today <svg width="48" height="48"><g transform="scale(2)"><path d="M7,10H12V15H7M19,19H5V8H19M19,3H18V1H16V3H8V1H6V3H5C3.89,3 3,3.9 3,5V19A2,2 0 0,0 5,21H19A2,2 0 0,0 21,19V5A2,2 0 0,0 19,3Z" /></g></svg>
+
+!define MA_CALENDAR_TODAY(_color)                                 SPRITE_PUT(ma_calendar_today, _color)
+!define MA_CALENDAR_TODAY(_color, _scale)                         SPRITE_PUT(ma_calendar_today, _color, _scale)
+!define MA_CALENDAR_TODAY(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA CALENDAR TODAY, ma_calendar_today, _color, _scale)
+!define MA_CALENDAR_TODAY(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA CALENDAR TODAY, ma_calendar_today, _color, _scale, _shape)
+!define MA_CALENDAR_TODAY(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA CALENDAR TODAY, _label, ma_calendar_today, _color, _scale, _shape)
+skinparam folderBackgroundColor<<MA CALENDAR TODAY>> White

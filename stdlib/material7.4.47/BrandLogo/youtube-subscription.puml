@@ -1,0 +1,8 @@
+sprite mdi-youtube-subscription <svg width="48" height="48"><g transform="scale(2)"><path d="M20,8H4V6H20V8M18,2H6V4H18V2M22,12V20A2,2 0 0,1 20,22H4A2,2 0 0,1 2,20V12A2,2 0 0,1 4,10H20A2,2 0 0,1 22,12M16,16L10,12.73V19.26L16,16Z" /></g></svg>
+
+!define MA_YOUTUBE_SUBSCRIPTION(_color)                                 SPRITE_PUT(ma_youtube_subscription, _color)
+!define MA_YOUTUBE_SUBSCRIPTION(_color, _scale)                         SPRITE_PUT(ma_youtube_subscription, _color, _scale)
+!define MA_YOUTUBE_SUBSCRIPTION(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA YOUTUBE SUBSCRIPTION, ma_youtube_subscription, _color, _scale)
+!define MA_YOUTUBE_SUBSCRIPTION(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA YOUTUBE SUBSCRIPTION, ma_youtube_subscription, _color, _scale, _shape)
+!define MA_YOUTUBE_SUBSCRIPTION(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA YOUTUBE SUBSCRIPTION, _label, ma_youtube_subscription, _color, _scale, _shape)
+skinparam folderBackgroundColor<<MA YOUTUBE SUBSCRIPTION>> White

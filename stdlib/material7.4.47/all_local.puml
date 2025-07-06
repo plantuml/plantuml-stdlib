@@ -1,0 +1,7 @@
+@startuml
+    !include "./common.puml"
+    !$lib = %load_json('all.json')
+    !foreach $item in $lib
+        !include "./$item/all.puml"
+    !endfor
+@enduml

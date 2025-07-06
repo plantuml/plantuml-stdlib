@@ -1,0 +1,8 @@
+sprite mdi-flower-poppy <svg width="48" height="48"><g transform="scale(2)"><path d="M18.5,12A3.5,3.5 0 0,0 22,8.5A6.5,6.5 0 0,0 15.5,2A3.5,3.5 0 0,0 12,5.5A3.5,3.5 0 0,0 8.5,2A6.5,6.5 0 0,0 2,8.5A3.5,3.5 0 0,0 5.5,12A3.5,3.5 0 0,0 2,15.5A6.5,6.5 0 0,0 8.5,22A3.5,3.5 0 0,0 12,18.5A3.5,3.5 0 0,0 15.5,22A6.5,6.5 0 0,0 22,15.5A3.5,3.5 0 0,0 18.5,12M12,16A4,4 0 0,1 8,12A4,4 0 0,1 12,8A4,4 0 0,1 16,12A4,4 0 0,1 12,16M14.5,12A2.5,2.5 0 0,1 12,14.5A2.5,2.5 0 0,1 9.5,12A2.5,2.5 0 0,1 12,9.5A2.5,2.5 0 0,1 14.5,12Z" /></g></svg>
+
+!define MA_FLOWER_POPPY(_color)                                 SPRITE_PUT(ma_flower_poppy, _color)
+!define MA_FLOWER_POPPY(_color, _scale)                         SPRITE_PUT(ma_flower_poppy, _color, _scale)
+!define MA_FLOWER_POPPY(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA FLOWER POPPY, ma_flower_poppy, _color, _scale)
+!define MA_FLOWER_POPPY(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA FLOWER POPPY, ma_flower_poppy, _color, _scale, _shape)
+!define MA_FLOWER_POPPY(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA FLOWER POPPY, _label, ma_flower_poppy, _color, _scale, _shape)
+skinparam folderBackgroundColor<<MA FLOWER POPPY>> White

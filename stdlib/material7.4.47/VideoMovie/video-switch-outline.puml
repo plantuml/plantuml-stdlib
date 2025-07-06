@@ -1,0 +1,8 @@
+sprite mdi-video-switch-outline <svg width="48" height="48"><g transform="scale(2)"><path d="M8 13H12V15L15 12L12 9V11H8V9L5 12L8 15V13M18 9.5V6C18 5.4 17.5 5 17 5H3C2.5 5 2 5.4 2 6V18C2 18.5 2.5 19 3 19H17C17.5 19 18 18.5 18 18V14.5L22 18.5V5.5L18 9.5M16 17H4V7H16V17Z" /></g></svg>
+
+!define MA_VIDEO_SWITCH_OUTLINE(_color)                                 SPRITE_PUT(ma_video_switch_outline, _color)
+!define MA_VIDEO_SWITCH_OUTLINE(_color, _scale)                         SPRITE_PUT(ma_video_switch_outline, _color, _scale)
+!define MA_VIDEO_SWITCH_OUTLINE(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA VIDEO SWITCH OUTLINE, ma_video_switch_outline, _color, _scale)
+!define MA_VIDEO_SWITCH_OUTLINE(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA VIDEO SWITCH OUTLINE, ma_video_switch_outline, _color, _scale, _shape)
+!define MA_VIDEO_SWITCH_OUTLINE(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA VIDEO SWITCH OUTLINE, _label, ma_video_switch_outline, _color, _scale, _shape)
+skinparam folderBackgroundColor<<MA VIDEO SWITCH OUTLINE>> White

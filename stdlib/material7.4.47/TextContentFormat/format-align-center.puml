@@ -1,0 +1,8 @@
+sprite mdi-format-align-center <svg width="48" height="48"><g transform="scale(2)"><path d="M3,3H21V5H3V3M7,7H17V9H7V7M3,11H21V13H3V11M7,15H17V17H7V15M3,19H21V21H3V19Z" /></g></svg>
+
+!define MA_FORMAT_ALIGN_CENTER(_color)                                 SPRITE_PUT(ma_format_align_center, _color)
+!define MA_FORMAT_ALIGN_CENTER(_color, _scale)                         SPRITE_PUT(ma_format_align_center, _color, _scale)
+!define MA_FORMAT_ALIGN_CENTER(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA FORMAT ALIGN CENTER, ma_format_align_center, _color, _scale)
+!define MA_FORMAT_ALIGN_CENTER(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA FORMAT ALIGN CENTER, ma_format_align_center, _color, _scale, _shape)
+!define MA_FORMAT_ALIGN_CENTER(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA FORMAT ALIGN CENTER, _label, ma_format_align_center, _color, _scale, _shape)
+skinparam folderBackgroundColor<<MA FORMAT ALIGN CENTER>> White

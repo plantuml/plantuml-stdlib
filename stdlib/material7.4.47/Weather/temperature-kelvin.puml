@@ -1,0 +1,8 @@
+sprite mdi-temperature-kelvin <svg width="48" height="48"><g transform="scale(2)"><path d="M7,5H10V11L15,5H19L13.88,10.78L19,20H15.38L11.76,13.17L10,15.15V20H7V5Z" /></g></svg>
+
+!define MA_TEMPERATURE_KELVIN(_color)                                 SPRITE_PUT(ma_temperature_kelvin, _color)
+!define MA_TEMPERATURE_KELVIN(_color, _scale)                         SPRITE_PUT(ma_temperature_kelvin, _color, _scale)
+!define MA_TEMPERATURE_KELVIN(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA TEMPERATURE KELVIN, ma_temperature_kelvin, _color, _scale)
+!define MA_TEMPERATURE_KELVIN(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA TEMPERATURE KELVIN, ma_temperature_kelvin, _color, _scale, _shape)
+!define MA_TEMPERATURE_KELVIN(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA TEMPERATURE KELVIN, _label, ma_temperature_kelvin, _color, _scale, _shape)
+skinparam folderBackgroundColor<<MA TEMPERATURE KELVIN>> White

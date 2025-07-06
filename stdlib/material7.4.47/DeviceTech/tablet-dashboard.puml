@@ -1,0 +1,8 @@
+sprite mdi-tablet-dashboard <svg width="48" height="48"><g transform="scale(2)"><path d="M19,18H5V6H19M21,4H3C1.89,4 1,4.89 1,6V18A2,2 0 0,0 3,20H21A2,2 0 0,0 23,18V6C23,4.89 22.1,4 21,4M7,8H13V13H7V8M14,8H17V10H14V8M17,11V16H14V11H17M7,14H13V16H7V14Z" /></g></svg>
+
+!define MA_TABLET_DASHBOARD(_color)                                 SPRITE_PUT(ma_tablet_dashboard, _color)
+!define MA_TABLET_DASHBOARD(_color, _scale)                         SPRITE_PUT(ma_tablet_dashboard, _color, _scale)
+!define MA_TABLET_DASHBOARD(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA TABLET DASHBOARD, ma_tablet_dashboard, _color, _scale)
+!define MA_TABLET_DASHBOARD(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA TABLET DASHBOARD, ma_tablet_dashboard, _color, _scale, _shape)
+!define MA_TABLET_DASHBOARD(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA TABLET DASHBOARD, _label, ma_tablet_dashboard, _color, _scale, _shape)
+skinparam folderBackgroundColor<<MA TABLET DASHBOARD>> White

@@ -1,0 +1,8 @@
+sprite mdi-diameter <svg width="48" height="48"><g transform="scale(2)"><path d="M12,2A10,10 0 0,0 2,12A10,10 0 0,0 12,22A10,10 0 0,0 22,12A10,10 0 0,0 12,2M17,15V13H7V15L4,12L7,9V11H17V9L20,12L17,15Z" /></g></svg>
+
+!define MA_DIAMETER(_color)                                 SPRITE_PUT(ma_diameter, _color)
+!define MA_DIAMETER(_color, _scale)                         SPRITE_PUT(ma_diameter, _color, _scale)
+!define MA_DIAMETER(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA DIAMETER, ma_diameter, _color, _scale)
+!define MA_DIAMETER(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA DIAMETER, ma_diameter, _color, _scale, _shape)
+!define MA_DIAMETER(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA DIAMETER, _label, ma_diameter, _color, _scale, _shape)
+skinparam folderBackgroundColor<<MA DIAMETER>> White

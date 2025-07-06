@@ -1,0 +1,8 @@
+sprite mdi-pot <svg width="48" height="48"><g transform="scale(2)"><path d="M19 19C19 20.1 18.1 21 17 21H7C5.9 21 5 20.1 5 19V12H3V10H21V12H19V19Z" /></g></svg>
+
+!define MA_POT(_color)                                 SPRITE_PUT(ma_pot, _color)
+!define MA_POT(_color, _scale)                         SPRITE_PUT(ma_pot, _color, _scale)
+!define MA_POT(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA POT, ma_pot, _color, _scale)
+!define MA_POT(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA POT, ma_pot, _color, _scale, _shape)
+!define MA_POT(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA POT, _label, ma_pot, _color, _scale, _shape)
+skinparam folderBackgroundColor<<MA POT>> White

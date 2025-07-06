@@ -1,0 +1,8 @@
+sprite mdi-keyboard-return <svg width="48" height="48"><g transform="scale(2)"><path d="M19,7V11H5.83L9.41,7.41L8,6L2,12L8,18L9.41,16.58L5.83,13H21V7H19Z" /></g></svg>
+
+!define MA_KEYBOARD_RETURN(_color)                                 SPRITE_PUT(ma_keyboard_return, _color)
+!define MA_KEYBOARD_RETURN(_color, _scale)                         SPRITE_PUT(ma_keyboard_return, _color, _scale)
+!define MA_KEYBOARD_RETURN(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA KEYBOARD RETURN, ma_keyboard_return, _color, _scale)
+!define MA_KEYBOARD_RETURN(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA KEYBOARD RETURN, ma_keyboard_return, _color, _scale, _shape)
+!define MA_KEYBOARD_RETURN(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA KEYBOARD RETURN, _label, ma_keyboard_return, _color, _scale, _shape)
+skinparam folderBackgroundColor<<MA KEYBOARD RETURN>> White

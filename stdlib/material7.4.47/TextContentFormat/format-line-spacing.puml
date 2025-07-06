@@ -1,0 +1,8 @@
+sprite mdi-format-line-spacing <svg width="48" height="48"><g transform="scale(2)"><path d="M10,13H22V11H10M10,19H22V17H10M10,7H22V5H10M6,7H8.5L5,3.5L1.5,7H4V17H1.5L5,20.5L8.5,17H6V7Z" /></g></svg>
+
+!define MA_FORMAT_LINE_SPACING(_color)                                 SPRITE_PUT(ma_format_line_spacing, _color)
+!define MA_FORMAT_LINE_SPACING(_color, _scale)                         SPRITE_PUT(ma_format_line_spacing, _color, _scale)
+!define MA_FORMAT_LINE_SPACING(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA FORMAT LINE SPACING, ma_format_line_spacing, _color, _scale)
+!define MA_FORMAT_LINE_SPACING(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA FORMAT LINE SPACING, ma_format_line_spacing, _color, _scale, _shape)
+!define MA_FORMAT_LINE_SPACING(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA FORMAT LINE SPACING, _label, ma_format_line_spacing, _color, _scale, _shape)
+skinparam folderBackgroundColor<<MA FORMAT LINE SPACING>> White

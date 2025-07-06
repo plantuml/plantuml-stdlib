@@ -1,0 +1,8 @@
+sprite mdi-check <svg width="48" height="48"><g transform="scale(2)"><path d="M21,7L9,19L3.5,13.5L4.91,12.09L9,16.17L19.59,5.59L21,7Z" /></g></svg>
+
+!define MA_CHECK(_color)                                 SPRITE_PUT(ma_check, _color)
+!define MA_CHECK(_color, _scale)                         SPRITE_PUT(ma_check, _color, _scale)
+!define MA_CHECK(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA CHECK, ma_check, _color, _scale)
+!define MA_CHECK(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA CHECK, ma_check, _color, _scale, _shape)
+!define MA_CHECK(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA CHECK, _label, ma_check, _color, _scale, _shape)
+skinparam folderBackgroundColor<<MA CHECK>> White

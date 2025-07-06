@@ -1,0 +1,8 @@
+sprite mdi-mustache <svg width="48" height="48"><g transform="scale(2)"><path d="M21 12C19 12 18 9 15 9S12 11 12 11 12 9 9 9 5 12 3 12C2 12 1 11 1 11S2 16 6 16C11 16 12 13 12 13S13 16 18 16C22 16 23 11 23 11S22 12 21 12Z" /></g></svg>
+
+!define MA_MUSTACHE(_color)                                 SPRITE_PUT(ma_mustache, _color)
+!define MA_MUSTACHE(_color, _scale)                         SPRITE_PUT(ma_mustache, _color, _scale)
+!define MA_MUSTACHE(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA MUSTACHE, ma_mustache, _color, _scale)
+!define MA_MUSTACHE(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA MUSTACHE, ma_mustache, _color, _scale, _shape)
+!define MA_MUSTACHE(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA MUSTACHE, _label, ma_mustache, _color, _scale, _shape)
+skinparam folderBackgroundColor<<MA MUSTACHE>> White

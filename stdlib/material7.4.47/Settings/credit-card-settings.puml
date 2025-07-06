@@ -1,0 +1,8 @@
+sprite mdi-credit-card-settings <svg width="48" height="48"><g transform="scale(2)"><path d="M20 4H4A2 2 0 0 0 2 6V18A2 2 0 0 0 4 20H20A2 2 0 0 0 22 18V6A2 2 0 0 0 20 4M20 11H4V8H20M7 22H9V24H7V22M11 22H13V24H11V22M15 22H17V24H15Z" /></g></svg>
+
+!define MA_CREDIT_CARD_SETTINGS(_color)                                 SPRITE_PUT(ma_credit_card_settings, _color)
+!define MA_CREDIT_CARD_SETTINGS(_color, _scale)                         SPRITE_PUT(ma_credit_card_settings, _color, _scale)
+!define MA_CREDIT_CARD_SETTINGS(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA CREDIT CARD SETTINGS, ma_credit_card_settings, _color, _scale)
+!define MA_CREDIT_CARD_SETTINGS(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA CREDIT CARD SETTINGS, ma_credit_card_settings, _color, _scale, _shape)
+!define MA_CREDIT_CARD_SETTINGS(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA CREDIT CARD SETTINGS, _label, ma_credit_card_settings, _color, _scale, _shape)
+skinparam folderBackgroundColor<<MA CREDIT CARD SETTINGS>> White

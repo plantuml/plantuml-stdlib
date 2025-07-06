@@ -1,0 +1,8 @@
+sprite mdi-cash-multiple <svg width="48" height="48"><g transform="scale(2)"><path d="M5,6H23V18H5V6M14,9A3,3 0 0,1 17,12A3,3 0 0,1 14,15A3,3 0 0,1 11,12A3,3 0 0,1 14,9M9,8A2,2 0 0,1 7,10V14A2,2 0 0,1 9,16H19A2,2 0 0,1 21,14V10A2,2 0 0,1 19,8H9M1,10H3V20H19V22H1V10Z" /></g></svg>
+
+!define MA_CASH_MULTIPLE(_color)                                 SPRITE_PUT(ma_cash_multiple, _color)
+!define MA_CASH_MULTIPLE(_color, _scale)                         SPRITE_PUT(ma_cash_multiple, _color, _scale)
+!define MA_CASH_MULTIPLE(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA CASH MULTIPLE, ma_cash_multiple, _color, _scale)
+!define MA_CASH_MULTIPLE(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA CASH MULTIPLE, ma_cash_multiple, _color, _scale, _shape)
+!define MA_CASH_MULTIPLE(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA CASH MULTIPLE, _label, ma_cash_multiple, _color, _scale, _shape)
+skinparam folderBackgroundColor<<MA CASH MULTIPLE>> White

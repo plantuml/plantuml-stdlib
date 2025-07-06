@@ -1,0 +1,8 @@
+sprite mdi-format-italic <svg width="48" height="48"><g transform="scale(2)"><path d="M10,4V7H12.21L8.79,15H6V18H14V15H11.79L15.21,7H18V4H10Z" /></g></svg>
+
+!define MA_FORMAT_ITALIC(_color)                                 SPRITE_PUT(ma_format_italic, _color)
+!define MA_FORMAT_ITALIC(_color, _scale)                         SPRITE_PUT(ma_format_italic, _color, _scale)
+!define MA_FORMAT_ITALIC(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA FORMAT ITALIC, ma_format_italic, _color, _scale)
+!define MA_FORMAT_ITALIC(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA FORMAT ITALIC, ma_format_italic, _color, _scale, _shape)
+!define MA_FORMAT_ITALIC(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA FORMAT ITALIC, _label, ma_format_italic, _color, _scale, _shape)
+skinparam folderBackgroundColor<<MA FORMAT ITALIC>> White

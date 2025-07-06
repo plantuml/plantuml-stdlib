@@ -1,0 +1,8 @@
+sprite mdi-tab <svg width="48" height="48"><g transform="scale(2)"><path d="M21,3H3A2,2 0 0,0 1,5V19A2,2 0 0,0 3,21H21A2,2 0 0,0 23,19V5A2,2 0 0,0 21,3M21,19H3V5H13V9H21V19Z" /></g></svg>
+
+!define MA_TAB(_color)                                 SPRITE_PUT(ma_tab, _color)
+!define MA_TAB(_color, _scale)                         SPRITE_PUT(ma_tab, _color, _scale)
+!define MA_TAB(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA TAB, ma_tab, _color, _scale)
+!define MA_TAB(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA TAB, ma_tab, _color, _scale, _shape)
+!define MA_TAB(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA TAB, _label, ma_tab, _color, _scale, _shape)
+skinparam folderBackgroundColor<<MA TAB>> White

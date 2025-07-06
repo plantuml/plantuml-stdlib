@@ -1,0 +1,8 @@
+sprite mdi-square-off <svg width="48" height="48"><g transform="scale(2)"><path d="M20.84 22.73L19.11 21H3V4.89L1.11 3L2.39 1.73L22.11 21.46L20.84 22.73M21 3H6.2L21 17.8V3Z" /></g></svg>
+
+!define MA_SQUARE_OFF(_color)                                 SPRITE_PUT(ma_square_off, _color)
+!define MA_SQUARE_OFF(_color, _scale)                         SPRITE_PUT(ma_square_off, _color, _scale)
+!define MA_SQUARE_OFF(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA SQUARE OFF, ma_square_off, _color, _scale)
+!define MA_SQUARE_OFF(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA SQUARE OFF, ma_square_off, _color, _scale, _shape)
+!define MA_SQUARE_OFF(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA SQUARE OFF, _label, ma_square_off, _color, _scale, _shape)
+skinparam folderBackgroundColor<<MA SQUARE OFF>> White

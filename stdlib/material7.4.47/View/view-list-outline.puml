@@ -1,0 +1,8 @@
+sprite mdi-view-list-outline <svg width="48" height="48"><g transform="scale(2)"><path d="M3 5V19H20V5H3M7 7V9H5V7H7M5 13V11H7V13H5M5 15H7V17H5V15M18 17H9V15H18V17M18 13H9V11H18V13M18 9H9V7H18V9Z" /></g></svg>
+
+!define MA_VIEW_LIST_OUTLINE(_color)                                 SPRITE_PUT(ma_view_list_outline, _color)
+!define MA_VIEW_LIST_OUTLINE(_color, _scale)                         SPRITE_PUT(ma_view_list_outline, _color, _scale)
+!define MA_VIEW_LIST_OUTLINE(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA VIEW LIST OUTLINE, ma_view_list_outline, _color, _scale)
+!define MA_VIEW_LIST_OUTLINE(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA VIEW LIST OUTLINE, ma_view_list_outline, _color, _scale, _shape)
+!define MA_VIEW_LIST_OUTLINE(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA VIEW LIST OUTLINE, _label, ma_view_list_outline, _color, _scale, _shape)
+skinparam folderBackgroundColor<<MA VIEW LIST OUTLINE>> White

@@ -1,0 +1,8 @@
+sprite mdi-arrow-left-right-bold-outline <svg width="48" height="48"><g transform="scale(2)"><path d="M14,16V22L24,12L14,2V8H10V2L0,12L10,22V16H14M8,14V17L3,12L8,7V10H16V7L21,12L16,17V14H8Z" /></g></svg>
+
+!define MA_ARROW_LEFT_RIGHT_BOLD_OUTLINE(_color)                                 SPRITE_PUT(ma_arrow_left_right_bold_outline, _color)
+!define MA_ARROW_LEFT_RIGHT_BOLD_OUTLINE(_color, _scale)                         SPRITE_PUT(ma_arrow_left_right_bold_outline, _color, _scale)
+!define MA_ARROW_LEFT_RIGHT_BOLD_OUTLINE(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA ARROW LEFT RIGHT BOLD OUTLINE, ma_arrow_left_right_bold_outline, _color, _scale)
+!define MA_ARROW_LEFT_RIGHT_BOLD_OUTLINE(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA ARROW LEFT RIGHT BOLD OUTLINE, ma_arrow_left_right_bold_outline, _color, _scale, _shape)
+!define MA_ARROW_LEFT_RIGHT_BOLD_OUTLINE(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA ARROW LEFT RIGHT BOLD OUTLINE, _label, ma_arrow_left_right_bold_outline, _color, _scale, _shape)
+skinparam folderBackgroundColor<<MA ARROW LEFT RIGHT BOLD OUTLINE>> White

@@ -1,0 +1,8 @@
+sprite mdi-contain-end <svg width="48" height="48"><g transform="scale(2)"><path d="M7,17V15H9V17H7M11,17V15H13V17H11M15,17V15H17V17H15M22,3V21H16V19H20V5H16V3H22Z" /></g></svg>
+
+!define MA_CONTAIN_END(_color)                                 SPRITE_PUT(ma_contain_end, _color)
+!define MA_CONTAIN_END(_color, _scale)                         SPRITE_PUT(ma_contain_end, _color, _scale)
+!define MA_CONTAIN_END(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA CONTAIN END, ma_contain_end, _color, _scale)
+!define MA_CONTAIN_END(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA CONTAIN END, ma_contain_end, _color, _scale, _shape)
+!define MA_CONTAIN_END(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA CONTAIN END, _label, ma_contain_end, _color, _scale, _shape)
+skinparam folderBackgroundColor<<MA CONTAIN END>> White

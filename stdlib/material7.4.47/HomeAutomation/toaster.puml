@@ -1,0 +1,8 @@
+sprite mdi-toaster <svg width="48" height="48"><g transform="scale(2)"><path d="M21 11A2 2 0 0 0 19 9H5A2 2 0 0 0 3 11H2V13H3V20H21V13H22V11M17 15A2 2 0 1 1 19 13A2 2 0 0 1 17 15M18 8H6C6.33 5.75 8.88 4 12 4S17.63 5.75 18 8Z" /></g></svg>
+
+!define MA_TOASTER(_color)                                 SPRITE_PUT(ma_toaster, _color)
+!define MA_TOASTER(_color, _scale)                         SPRITE_PUT(ma_toaster, _color, _scale)
+!define MA_TOASTER(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA TOASTER, ma_toaster, _color, _scale)
+!define MA_TOASTER(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA TOASTER, ma_toaster, _color, _scale, _shape)
+!define MA_TOASTER(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA TOASTER, _label, ma_toaster, _color, _scale, _shape)
+skinparam folderBackgroundColor<<MA TOASTER>> White

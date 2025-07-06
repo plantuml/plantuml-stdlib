@@ -1,0 +1,8 @@
+sprite mdi-bookshelf <svg width="48" height="48"><g transform="scale(2)"><path d="M9 3V18H12V3H9M12 5L16 18L19 17L15 4L12 5M5 5V18H8V5H5M3 19V21H21V19H3Z" /></g></svg>
+
+!define MA_BOOKSHELF(_color)                                 SPRITE_PUT(ma_bookshelf, _color)
+!define MA_BOOKSHELF(_color, _scale)                         SPRITE_PUT(ma_bookshelf, _color, _scale)
+!define MA_BOOKSHELF(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA BOOKSHELF, ma_bookshelf, _color, _scale)
+!define MA_BOOKSHELF(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA BOOKSHELF, ma_bookshelf, _color, _scale, _shape)
+!define MA_BOOKSHELF(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA BOOKSHELF, _label, ma_bookshelf, _color, _scale, _shape)
+skinparam folderBackgroundColor<<MA BOOKSHELF>> White

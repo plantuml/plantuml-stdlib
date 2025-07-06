@@ -1,0 +1,8 @@
+sprite mdi-arrow-expand-vertical <svg width="48" height="48"><g transform="scale(2)"><path d="M13,9V15H16L12,19L8,15H11V9H8L12,5L16,9H13M4,2H20V4H4V2M4,20H20V22H4V20Z" /></g></svg>
+
+!define MA_ARROW_EXPAND_VERTICAL(_color)                                 SPRITE_PUT(ma_arrow_expand_vertical, _color)
+!define MA_ARROW_EXPAND_VERTICAL(_color, _scale)                         SPRITE_PUT(ma_arrow_expand_vertical, _color, _scale)
+!define MA_ARROW_EXPAND_VERTICAL(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA ARROW EXPAND VERTICAL, ma_arrow_expand_vertical, _color, _scale)
+!define MA_ARROW_EXPAND_VERTICAL(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA ARROW EXPAND VERTICAL, ma_arrow_expand_vertical, _color, _scale, _shape)
+!define MA_ARROW_EXPAND_VERTICAL(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA ARROW EXPAND VERTICAL, _label, ma_arrow_expand_vertical, _color, _scale, _shape)
+skinparam folderBackgroundColor<<MA ARROW EXPAND VERTICAL>> White

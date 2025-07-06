@@ -1,0 +1,8 @@
+sprite mdi-email-open-outline <svg width="48" height="48"><g transform="scale(2)"><path d="M21.03 6.29L12 .64L2.97 6.29C2.39 6.64 2 7.27 2 8V18C2 19.1 2.9 20 4 20H20C21.1 20 22 19.1 22 18V8C22 7.27 21.61 6.64 21.03 6.29M20 18H4V10L12 15L20 10V18M12 13L4 8L12 3L20 8L12 13Z" /></g></svg>
+
+!define MA_EMAIL_OPEN_OUTLINE(_color)                                 SPRITE_PUT(ma_email_open_outline, _color)
+!define MA_EMAIL_OPEN_OUTLINE(_color, _scale)                         SPRITE_PUT(ma_email_open_outline, _color, _scale)
+!define MA_EMAIL_OPEN_OUTLINE(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA EMAIL OPEN OUTLINE, ma_email_open_outline, _color, _scale)
+!define MA_EMAIL_OPEN_OUTLINE(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA EMAIL OPEN OUTLINE, ma_email_open_outline, _color, _scale, _shape)
+!define MA_EMAIL_OPEN_OUTLINE(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA EMAIL OPEN OUTLINE, _label, ma_email_open_outline, _color, _scale, _shape)
+skinparam folderBackgroundColor<<MA EMAIL OPEN OUTLINE>> White

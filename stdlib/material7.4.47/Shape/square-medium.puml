@@ -1,0 +1,8 @@
+sprite mdi-square-medium <svg width="48" height="48"><g transform="scale(2)"><path d="M16,8H8V16H16V8Z" /></g></svg>
+
+!define MA_SQUARE_MEDIUM(_color)                                 SPRITE_PUT(ma_square_medium, _color)
+!define MA_SQUARE_MEDIUM(_color, _scale)                         SPRITE_PUT(ma_square_medium, _color, _scale)
+!define MA_SQUARE_MEDIUM(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA SQUARE MEDIUM, ma_square_medium, _color, _scale)
+!define MA_SQUARE_MEDIUM(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA SQUARE MEDIUM, ma_square_medium, _color, _scale, _shape)
+!define MA_SQUARE_MEDIUM(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA SQUARE MEDIUM, _label, ma_square_medium, _color, _scale, _shape)
+skinparam folderBackgroundColor<<MA SQUARE MEDIUM>> White

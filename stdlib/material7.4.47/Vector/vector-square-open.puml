@@ -1,0 +1,8 @@
+sprite mdi-vector-square-open <svg width="48" height="48"><g transform="scale(2)"><path d="M4 4H6V6H4V4M6 20H4V18H6V20M18 8V16H16V18H8V16H6V8H8V2H2V8H4V16H2V22H8V20H16V22H22V16H20V8H22V2H16V8H18M20 20H18V18H20V20M18 6V4H20V6H18Z" /></g></svg>
+
+!define MA_VECTOR_SQUARE_OPEN(_color)                                 SPRITE_PUT(ma_vector_square_open, _color)
+!define MA_VECTOR_SQUARE_OPEN(_color, _scale)                         SPRITE_PUT(ma_vector_square_open, _color, _scale)
+!define MA_VECTOR_SQUARE_OPEN(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA VECTOR SQUARE OPEN, ma_vector_square_open, _color, _scale)
+!define MA_VECTOR_SQUARE_OPEN(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA VECTOR SQUARE OPEN, ma_vector_square_open, _color, _scale, _shape)
+!define MA_VECTOR_SQUARE_OPEN(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA VECTOR SQUARE OPEN, _label, ma_vector_square_open, _color, _scale, _shape)
+skinparam folderBackgroundColor<<MA VECTOR SQUARE OPEN>> White

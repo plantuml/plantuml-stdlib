@@ -1,0 +1,8 @@
+sprite mdi-apple-keyboard-option <svg width="48" height="48"><g transform="scale(2)"><path d="M3,4H9.11L16.15,18H21V20H14.88L7.84,6H3V4M14,4H21V6H14V4Z" /></g></svg>
+
+!define MA_APPLE_KEYBOARD_OPTION(_color)                                 SPRITE_PUT(ma_apple_keyboard_option, _color)
+!define MA_APPLE_KEYBOARD_OPTION(_color, _scale)                         SPRITE_PUT(ma_apple_keyboard_option, _color, _scale)
+!define MA_APPLE_KEYBOARD_OPTION(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA APPLE KEYBOARD OPTION, ma_apple_keyboard_option, _color, _scale)
+!define MA_APPLE_KEYBOARD_OPTION(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA APPLE KEYBOARD OPTION, ma_apple_keyboard_option, _color, _scale, _shape)
+!define MA_APPLE_KEYBOARD_OPTION(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA APPLE KEYBOARD OPTION, _label, ma_apple_keyboard_option, _color, _scale, _shape)
+skinparam folderBackgroundColor<<MA APPLE KEYBOARD OPTION>> White

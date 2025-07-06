@@ -1,0 +1,8 @@
+sprite mdi-oar <svg width="48" height="48"><g transform="scale(2)"><path d="M20.23,15.21C18.77,13.75 14.97,10.2 12.77,11.27L4.5,3L3,4.5L11.28,12.79C10.3,15 13.88,18.62 15.35,20.08C17.11,21.84 18.26,20.92 19.61,19.57C21.1,18.08 21.61,16.61 20.23,15.21Z" /></g></svg>
+
+!define MA_OAR(_color)                                 SPRITE_PUT(ma_oar, _color)
+!define MA_OAR(_color, _scale)                         SPRITE_PUT(ma_oar, _color, _scale)
+!define MA_OAR(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA OAR, ma_oar, _color, _scale)
+!define MA_OAR(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA OAR, ma_oar, _color, _scale, _shape)
+!define MA_OAR(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA OAR, _label, ma_oar, _color, _scale, _shape)
+skinparam folderBackgroundColor<<MA OAR>> White

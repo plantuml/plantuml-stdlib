@@ -1,0 +1,8 @@
+sprite mdi-undo-variant <svg width="48" height="48"><g transform="scale(2)"><path d="M13.5,7A6.5,6.5 0 0,1 20,13.5A6.5,6.5 0 0,1 13.5,20H10V18H13.5C16,18 18,16 18,13.5C18,11 16,9 13.5,9H7.83L10.91,12.09L9.5,13.5L4,8L9.5,2.5L10.92,3.91L7.83,7H13.5M6,18H8V20H6V18Z" /></g></svg>
+
+!define MA_UNDO_VARIANT(_color)                                 SPRITE_PUT(ma_undo_variant, _color)
+!define MA_UNDO_VARIANT(_color, _scale)                         SPRITE_PUT(ma_undo_variant, _color, _scale)
+!define MA_UNDO_VARIANT(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA UNDO VARIANT, ma_undo_variant, _color, _scale)
+!define MA_UNDO_VARIANT(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA UNDO VARIANT, ma_undo_variant, _color, _scale, _shape)
+!define MA_UNDO_VARIANT(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA UNDO VARIANT, _label, ma_undo_variant, _color, _scale, _shape)
+skinparam folderBackgroundColor<<MA UNDO VARIANT>> White

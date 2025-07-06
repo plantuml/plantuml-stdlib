@@ -1,0 +1,8 @@
+sprite mdi-code-tags <svg width="48" height="48"><g transform="scale(2)"><path d="M14.6,16.6L19.2,12L14.6,7.4L16,6L22,12L16,18L14.6,16.6M9.4,16.6L4.8,12L9.4,7.4L8,6L2,12L8,18L9.4,16.6Z" /></g></svg>
+
+!define MA_CODE_TAGS(_color)                                 SPRITE_PUT(ma_code_tags, _color)
+!define MA_CODE_TAGS(_color, _scale)                         SPRITE_PUT(ma_code_tags, _color, _scale)
+!define MA_CODE_TAGS(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA CODE TAGS, ma_code_tags, _color, _scale)
+!define MA_CODE_TAGS(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA CODE TAGS, ma_code_tags, _color, _scale, _shape)
+!define MA_CODE_TAGS(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA CODE TAGS, _label, ma_code_tags, _color, _scale, _shape)
+skinparam folderBackgroundColor<<MA CODE TAGS>> White

@@ -1,0 +1,8 @@
+sprite mdi-widgets-outline <svg width="48" height="48"><g transform="scale(2)"><path d="M16.7 4.5L19.5 7.3L16.7 10.1L13.9 7.3L16.7 4.5M9 5V9H5V5H9M19 15V19H15V15H19M16.7 1.7L11 7.3L16.7 13H13V21H21V13H16.7L22.3 7.3L16.7 1.7M11 3H3V11H11V3M9 15V19H5V15H9M11 13H3V21H11V13Z" /></g></svg>
+
+!define MA_WIDGETS_OUTLINE(_color)                                 SPRITE_PUT(ma_widgets_outline, _color)
+!define MA_WIDGETS_OUTLINE(_color, _scale)                         SPRITE_PUT(ma_widgets_outline, _color, _scale)
+!define MA_WIDGETS_OUTLINE(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA WIDGETS OUTLINE, ma_widgets_outline, _color, _scale)
+!define MA_WIDGETS_OUTLINE(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA WIDGETS OUTLINE, ma_widgets_outline, _color, _scale, _shape)
+!define MA_WIDGETS_OUTLINE(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA WIDGETS OUTLINE, _label, ma_widgets_outline, _color, _scale, _shape)
+skinparam folderBackgroundColor<<MA WIDGETS OUTLINE>> White

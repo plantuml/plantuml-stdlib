@@ -1,0 +1,8 @@
+sprite mdi-align-vertical-top <svg width="48" height="48"><g transform="scale(2)"><path d="M22 2V4H2V2H22M7 22H10V6H7V22M14 16H17V6H14V16Z" /></g></svg>
+
+!define MA_ALIGN_VERTICAL_TOP(_color)                                 SPRITE_PUT(ma_align_vertical_top, _color)
+!define MA_ALIGN_VERTICAL_TOP(_color, _scale)                         SPRITE_PUT(ma_align_vertical_top, _color, _scale)
+!define MA_ALIGN_VERTICAL_TOP(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA ALIGN VERTICAL TOP, ma_align_vertical_top, _color, _scale)
+!define MA_ALIGN_VERTICAL_TOP(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA ALIGN VERTICAL TOP, ma_align_vertical_top, _color, _scale, _shape)
+!define MA_ALIGN_VERTICAL_TOP(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA ALIGN VERTICAL TOP, _label, ma_align_vertical_top, _color, _scale, _shape)
+skinparam folderBackgroundColor<<MA ALIGN VERTICAL TOP>> White

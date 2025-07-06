@@ -1,0 +1,8 @@
+sprite mdi-format-pilcrow-arrow-left <svg width="48" height="48"><g transform="scale(2)"><path d="M8,17V14L4,18L8,22V19H20V17M10,10V15H12V4H14V15H16V4H18V2H10A4,4 0 0,0 6,6A4,4 0 0,0 10,10Z" /></g></svg>
+
+!define MA_FORMAT_PILCROW_ARROW_LEFT(_color)                                 SPRITE_PUT(ma_format_pilcrow_arrow_left, _color)
+!define MA_FORMAT_PILCROW_ARROW_LEFT(_color, _scale)                         SPRITE_PUT(ma_format_pilcrow_arrow_left, _color, _scale)
+!define MA_FORMAT_PILCROW_ARROW_LEFT(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA FORMAT PILCROW ARROW LEFT, ma_format_pilcrow_arrow_left, _color, _scale)
+!define MA_FORMAT_PILCROW_ARROW_LEFT(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA FORMAT PILCROW ARROW LEFT, ma_format_pilcrow_arrow_left, _color, _scale, _shape)
+!define MA_FORMAT_PILCROW_ARROW_LEFT(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA FORMAT PILCROW ARROW LEFT, _label, ma_format_pilcrow_arrow_left, _color, _scale, _shape)
+skinparam folderBackgroundColor<<MA FORMAT PILCROW ARROW LEFT>> White

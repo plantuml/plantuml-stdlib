@@ -1,0 +1,8 @@
+sprite mdi-backburger <svg width="48" height="48"><g transform="scale(2)"><path d="M5,13L9,17L7.6,18.42L1.18,12L7.6,5.58L9,7L5,11H21V13H5M21,6V8H11V6H21M21,16V18H11V16H21Z" /></g></svg>
+
+!define MA_BACKBURGER(_color)                                 SPRITE_PUT(ma_backburger, _color)
+!define MA_BACKBURGER(_color, _scale)                         SPRITE_PUT(ma_backburger, _color, _scale)
+!define MA_BACKBURGER(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA BACKBURGER, ma_backburger, _color, _scale)
+!define MA_BACKBURGER(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA BACKBURGER, ma_backburger, _color, _scale, _shape)
+!define MA_BACKBURGER(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA BACKBURGER, _label, ma_backburger, _color, _scale, _shape)
+skinparam folderBackgroundColor<<MA BACKBURGER>> White

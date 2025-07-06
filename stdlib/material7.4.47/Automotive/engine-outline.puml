@@ -1,0 +1,8 @@
+sprite mdi-engine-outline <svg width="48" height="48"><g transform="scale(2)"><path d="M8,10H16V18H11L9,16H7V11M7,4V6H10V8H7L5,10V13H3V10H1V18H3V15H5V18H8L10,20H18V16H20V19H23V9H20V12H18V8H12V6H15V4H7Z" /></g></svg>
+
+!define MA_ENGINE_OUTLINE(_color)                                 SPRITE_PUT(ma_engine_outline, _color)
+!define MA_ENGINE_OUTLINE(_color, _scale)                         SPRITE_PUT(ma_engine_outline, _color, _scale)
+!define MA_ENGINE_OUTLINE(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA ENGINE OUTLINE, ma_engine_outline, _color, _scale)
+!define MA_ENGINE_OUTLINE(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA ENGINE OUTLINE, ma_engine_outline, _color, _scale, _shape)
+!define MA_ENGINE_OUTLINE(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA ENGINE OUTLINE, _label, ma_engine_outline, _color, _scale, _shape)
+skinparam folderBackgroundColor<<MA ENGINE OUTLINE>> White

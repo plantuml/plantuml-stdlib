@@ -1,0 +1,8 @@
+sprite mdi-knife-military <svg width="48" height="48"><g transform="scale(2)"><path d="M22,2L17.39,3.75L10.46,10.68L14,14.22L20.92,7.29C22.43,5.78 22,2 22,2M8.33,10L6.92,11.39L8.33,12.8L2.68,18.46L6.21,22L11.87,16.34L13.28,17.76L14.7,16.34L8.33,10Z" /></g></svg>
+
+!define MA_KNIFE_MILITARY(_color)                                 SPRITE_PUT(ma_knife_military, _color)
+!define MA_KNIFE_MILITARY(_color, _scale)                         SPRITE_PUT(ma_knife_military, _color, _scale)
+!define MA_KNIFE_MILITARY(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA KNIFE MILITARY, ma_knife_military, _color, _scale)
+!define MA_KNIFE_MILITARY(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA KNIFE MILITARY, ma_knife_military, _color, _scale, _shape)
+!define MA_KNIFE_MILITARY(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA KNIFE MILITARY, _label, ma_knife_military, _color, _scale, _shape)
+skinparam folderBackgroundColor<<MA KNIFE MILITARY>> White

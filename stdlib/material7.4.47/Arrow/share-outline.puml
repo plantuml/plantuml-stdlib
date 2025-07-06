@@ -1,0 +1,8 @@
+sprite mdi-share-outline <svg width="48" height="48"><g transform="scale(2)"><path d="M14,5V9C7,10 4,15 3,20C5.5,16.5 9,14.9 14,14.9V19L21,12L14,5M16,9.83L18.17,12L16,14.17V12.9H14C11.93,12.9 10.07,13.28 8.34,13.85C9.74,12.46 11.54,11.37 14.28,11L16,10.73V9.83Z" /></g></svg>
+
+!define MA_SHARE_OUTLINE(_color)                                 SPRITE_PUT(ma_share_outline, _color)
+!define MA_SHARE_OUTLINE(_color, _scale)                         SPRITE_PUT(ma_share_outline, _color, _scale)
+!define MA_SHARE_OUTLINE(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA SHARE OUTLINE, ma_share_outline, _color, _scale)
+!define MA_SHARE_OUTLINE(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA SHARE OUTLINE, ma_share_outline, _color, _scale, _shape)
+!define MA_SHARE_OUTLINE(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA SHARE OUTLINE, _label, ma_share_outline, _color, _scale, _shape)
+skinparam folderBackgroundColor<<MA SHARE OUTLINE>> White

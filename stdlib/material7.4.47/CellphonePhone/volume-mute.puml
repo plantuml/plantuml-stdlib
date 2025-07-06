@@ -1,0 +1,8 @@
+sprite mdi-volume-mute <svg width="48" height="48"><g transform="scale(2)"><path d="M3,9H7L12,4V20L7,15H3V9M16.59,12L14,9.41L15.41,8L18,10.59L20.59,8L22,9.41L19.41,12L22,14.59L20.59,16L18,13.41L15.41,16L14,14.59L16.59,12Z" /></g></svg>
+
+!define MA_VOLUME_MUTE(_color)                                 SPRITE_PUT(ma_volume_mute, _color)
+!define MA_VOLUME_MUTE(_color, _scale)                         SPRITE_PUT(ma_volume_mute, _color, _scale)
+!define MA_VOLUME_MUTE(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA VOLUME MUTE, ma_volume_mute, _color, _scale)
+!define MA_VOLUME_MUTE(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA VOLUME MUTE, ma_volume_mute, _color, _scale, _shape)
+!define MA_VOLUME_MUTE(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA VOLUME MUTE, _label, ma_volume_mute, _color, _scale, _shape)
+skinparam folderBackgroundColor<<MA VOLUME MUTE>> White

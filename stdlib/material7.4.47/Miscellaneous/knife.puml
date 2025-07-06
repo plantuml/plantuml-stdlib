@@ -1,0 +1,8 @@
+sprite mdi-knife <svg width="48" height="48"><g transform="scale(2)"><path d="M20.62,2C23.97,7.61 12.47,20.15 12.47,20.15L9.6,17.28L4.91,22L2.77,19.86L20.62,2Z" /></g></svg>
+
+!define MA_KNIFE(_color)                                 SPRITE_PUT(ma_knife, _color)
+!define MA_KNIFE(_color, _scale)                         SPRITE_PUT(ma_knife, _color, _scale)
+!define MA_KNIFE(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA KNIFE, ma_knife, _color, _scale)
+!define MA_KNIFE(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA KNIFE, ma_knife, _color, _scale, _shape)
+!define MA_KNIFE(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA KNIFE, _label, ma_knife, _color, _scale, _shape)
+skinparam folderBackgroundColor<<MA KNIFE>> White

@@ -1,0 +1,8 @@
+sprite mdi-chart-multiple <svg width="48" height="48"><g transform="scale(2)"><path d="M22 16V18H6V2H8V13.57L13.71 4.57L16.87 6.68L19.29 4.26L20.71 5.68L17.13 9.29L14.29 7.4L8.82 16M4 20V4H2V22H22V20Z" /></g></svg>
+
+!define MA_CHART_MULTIPLE(_color)                                 SPRITE_PUT(ma_chart_multiple, _color)
+!define MA_CHART_MULTIPLE(_color, _scale)                         SPRITE_PUT(ma_chart_multiple, _color, _scale)
+!define MA_CHART_MULTIPLE(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA CHART MULTIPLE, ma_chart_multiple, _color, _scale)
+!define MA_CHART_MULTIPLE(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA CHART MULTIPLE, ma_chart_multiple, _color, _scale, _shape)
+!define MA_CHART_MULTIPLE(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA CHART MULTIPLE, _label, ma_chart_multiple, _color, _scale, _shape)
+skinparam folderBackgroundColor<<MA CHART MULTIPLE>> White

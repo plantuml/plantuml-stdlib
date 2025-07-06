@@ -1,0 +1,8 @@
+sprite mdi-file-document-multiple <svg width="48" height="48"><g transform="scale(2)"><path d="M4 4V22H20V24H4C2.9 24 2 23.1 2 22V4H4M15 7H20.5L15 1.5V7M8 0H16L22 6V18C22 19.11 21.11 20 20 20H8C6.89 20 6 19.1 6 18V2C6 .89 6.89 0 8 0M17 16V14H8V16H17M20 12V10H8V12H20Z" /></g></svg>
+
+!define MA_FILE_DOCUMENT_MULTIPLE(_color)                                 SPRITE_PUT(ma_file_document_multiple, _color)
+!define MA_FILE_DOCUMENT_MULTIPLE(_color, _scale)                         SPRITE_PUT(ma_file_document_multiple, _color, _scale)
+!define MA_FILE_DOCUMENT_MULTIPLE(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA FILE DOCUMENT MULTIPLE, ma_file_document_multiple, _color, _scale)
+!define MA_FILE_DOCUMENT_MULTIPLE(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA FILE DOCUMENT MULTIPLE, ma_file_document_multiple, _color, _scale, _shape)
+!define MA_FILE_DOCUMENT_MULTIPLE(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA FILE DOCUMENT MULTIPLE, _label, ma_file_document_multiple, _color, _scale, _shape)
+skinparam folderBackgroundColor<<MA FILE DOCUMENT MULTIPLE>> White

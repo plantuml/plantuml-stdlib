@@ -1,0 +1,8 @@
+sprite mdi-desktop-tower <svg width="48" height="48"><g transform="scale(2)"><path d="M8,2H16A2,2 0 0,1 18,4V20A2,2 0 0,1 16,22H8A2,2 0 0,1 6,20V4A2,2 0 0,1 8,2M8,4V6H16V4H8M16,8H8V10H16V8M16,18H14V20H16V18Z" /></g></svg>
+
+!define MA_DESKTOP_TOWER(_color)                                 SPRITE_PUT(ma_desktop_tower, _color)
+!define MA_DESKTOP_TOWER(_color, _scale)                         SPRITE_PUT(ma_desktop_tower, _color, _scale)
+!define MA_DESKTOP_TOWER(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA DESKTOP TOWER, ma_desktop_tower, _color, _scale)
+!define MA_DESKTOP_TOWER(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA DESKTOP TOWER, ma_desktop_tower, _color, _scale, _shape)
+!define MA_DESKTOP_TOWER(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA DESKTOP TOWER, _label, ma_desktop_tower, _color, _scale, _shape)
+skinparam folderBackgroundColor<<MA DESKTOP TOWER>> White

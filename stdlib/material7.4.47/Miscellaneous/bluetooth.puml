@@ -1,0 +1,8 @@
+sprite mdi-bluetooth <svg width="48" height="48"><g transform="scale(2)"><path d="M14.88,16.29L13,18.17V14.41M13,5.83L14.88,7.71L13,9.58M17.71,7.71L12,2H11V9.58L6.41,5L5,6.41L10.59,12L5,17.58L6.41,19L11,14.41V22H12L17.71,16.29L13.41,12L17.71,7.71Z" /></g></svg>
+
+!define MA_BLUETOOTH(_color)                                 SPRITE_PUT(ma_bluetooth, _color)
+!define MA_BLUETOOTH(_color, _scale)                         SPRITE_PUT(ma_bluetooth, _color, _scale)
+!define MA_BLUETOOTH(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA BLUETOOTH, ma_bluetooth, _color, _scale)
+!define MA_BLUETOOTH(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA BLUETOOTH, ma_bluetooth, _color, _scale, _shape)
+!define MA_BLUETOOTH(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA BLUETOOTH, _label, ma_bluetooth, _color, _scale, _shape)
+skinparam folderBackgroundColor<<MA BLUETOOTH>> White

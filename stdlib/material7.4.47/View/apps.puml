@@ -1,0 +1,8 @@
+sprite mdi-apps <svg width="48" height="48"><g transform="scale(2)"><path d="M16,20H20V16H16M16,14H20V10H16M10,8H14V4H10M16,8H20V4H16M10,14H14V10H10M4,14H8V10H4M4,20H8V16H4M10,20H14V16H10M4,8H8V4H4V8Z" /></g></svg>
+
+!define MA_APPS(_color)                                 SPRITE_PUT(ma_apps, _color)
+!define MA_APPS(_color, _scale)                         SPRITE_PUT(ma_apps, _color, _scale)
+!define MA_APPS(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA APPS, ma_apps, _color, _scale)
+!define MA_APPS(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA APPS, ma_apps, _color, _scale, _shape)
+!define MA_APPS(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA APPS, _label, ma_apps, _color, _scale, _shape)
+skinparam folderBackgroundColor<<MA APPS>> White

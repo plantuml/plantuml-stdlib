@@ -1,0 +1,8 @@
+sprite mdi-file-cabinet <svg width="48" height="48"><g transform="scale(2)"><path d="M14,8H10V6H14V8M20,4V20C20,21.11 19.11,22 18,22H6C4.89,22 4,21.11 4,20V4A2,2 0 0,1 6,2H18C19.11,2 20,2.9 20,4M18,13H6V20H18V13M18,4H6V11H18V4M14,15H10V17H14V15Z" /></g></svg>
+
+!define MA_FILE_CABINET(_color)                                 SPRITE_PUT(ma_file_cabinet, _color)
+!define MA_FILE_CABINET(_color, _scale)                         SPRITE_PUT(ma_file_cabinet, _color, _scale)
+!define MA_FILE_CABINET(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA FILE CABINET, ma_file_cabinet, _color, _scale)
+!define MA_FILE_CABINET(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA FILE CABINET, ma_file_cabinet, _color, _scale, _shape)
+!define MA_FILE_CABINET(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA FILE CABINET, _label, ma_file_cabinet, _color, _scale, _shape)
+skinparam folderBackgroundColor<<MA FILE CABINET>> White

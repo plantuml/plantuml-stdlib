@@ -1,0 +1,8 @@
+sprite mdi-replay <svg width="48" height="48"><g transform="scale(2)"><path d="M12,5V1L7,6L12,11V7A6,6 0 0,1 18,13A6,6 0 0,1 12,19A6,6 0 0,1 6,13H4A8,8 0 0,0 12,21A8,8 0 0,0 20,13A8,8 0 0,0 12,5Z" /></g></svg>
+
+!define MA_REPLAY(_color)                                 SPRITE_PUT(ma_replay, _color)
+!define MA_REPLAY(_color, _scale)                         SPRITE_PUT(ma_replay, _color, _scale)
+!define MA_REPLAY(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA REPLAY, ma_replay, _color, _scale)
+!define MA_REPLAY(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA REPLAY, ma_replay, _color, _scale, _shape)
+!define MA_REPLAY(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA REPLAY, _label, ma_replay, _color, _scale, _shape)
+skinparam folderBackgroundColor<<MA REPLAY>> White

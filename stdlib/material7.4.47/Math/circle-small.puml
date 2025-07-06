@@ -1,0 +1,8 @@
+sprite mdi-circle-small <svg width="48" height="48"><g transform="scale(2)"><path d="M12,10A2,2 0 0,0 10,12C10,13.11 10.9,14 12,14C13.11,14 14,13.11 14,12A2,2 0 0,0 12,10Z" /></g></svg>
+
+!define MA_CIRCLE_SMALL(_color)                                 SPRITE_PUT(ma_circle_small, _color)
+!define MA_CIRCLE_SMALL(_color, _scale)                         SPRITE_PUT(ma_circle_small, _color, _scale)
+!define MA_CIRCLE_SMALL(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA CIRCLE SMALL, ma_circle_small, _color, _scale)
+!define MA_CIRCLE_SMALL(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA CIRCLE SMALL, ma_circle_small, _color, _scale, _shape)
+!define MA_CIRCLE_SMALL(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA CIRCLE SMALL, _label, ma_circle_small, _color, _scale, _shape)
+skinparam folderBackgroundColor<<MA CIRCLE SMALL>> White

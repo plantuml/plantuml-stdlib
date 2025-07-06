@@ -1,0 +1,8 @@
+sprite mdi-lightning-bolt-circle <svg width="48" height="48"><g transform="scale(2)"><path d="M11.5,20L16.36,10.27H13V4L8,13.73H11.5V20M12,2C14.75,2 17.1,3 19.05,4.95C21,6.9 22,9.25 22,12C22,14.75 21,17.1 19.05,19.05C17.1,21 14.75,22 12,22C9.25,22 6.9,21 4.95,19.05C3,17.1 2,14.75 2,12C2,9.25 3,6.9 4.95,4.95C6.9,3 9.25,2 12,2Z" /></g></svg>
+
+!define MA_LIGHTNING_BOLT_CIRCLE(_color)                                 SPRITE_PUT(ma_lightning_bolt_circle, _color)
+!define MA_LIGHTNING_BOLT_CIRCLE(_color, _scale)                         SPRITE_PUT(ma_lightning_bolt_circle, _color, _scale)
+!define MA_LIGHTNING_BOLT_CIRCLE(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA LIGHTNING BOLT CIRCLE, ma_lightning_bolt_circle, _color, _scale)
+!define MA_LIGHTNING_BOLT_CIRCLE(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA LIGHTNING BOLT CIRCLE, ma_lightning_bolt_circle, _color, _scale, _shape)
+!define MA_LIGHTNING_BOLT_CIRCLE(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA LIGHTNING BOLT CIRCLE, _label, ma_lightning_bolt_circle, _color, _scale, _shape)
+skinparam folderBackgroundColor<<MA LIGHTNING BOLT CIRCLE>> White

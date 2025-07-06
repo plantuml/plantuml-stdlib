@@ -1,0 +1,8 @@
+sprite mdi-transfer-right <svg width="48" height="48"><g transform="scale(2)"><path d="M3,8H5V16H3V8M7,8H9V16H7V8M11,8H13V16H11V8M15,19.25V4.75L22.25,12L15,19.25Z" /></g></svg>
+
+!define MA_TRANSFER_RIGHT(_color)                                 SPRITE_PUT(ma_transfer_right, _color)
+!define MA_TRANSFER_RIGHT(_color, _scale)                         SPRITE_PUT(ma_transfer_right, _color, _scale)
+!define MA_TRANSFER_RIGHT(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA TRANSFER RIGHT, ma_transfer_right, _color, _scale)
+!define MA_TRANSFER_RIGHT(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA TRANSFER RIGHT, ma_transfer_right, _color, _scale, _shape)
+!define MA_TRANSFER_RIGHT(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA TRANSFER RIGHT, _label, ma_transfer_right, _color, _scale, _shape)
+skinparam folderBackgroundColor<<MA TRANSFER RIGHT>> White

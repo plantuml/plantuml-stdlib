@@ -1,0 +1,8 @@
+sprite mdi-train-car-hopper <svg width="48" height="48"><g transform="scale(2)"><path d="M1 8V17H2C2 18.11 2.9 19 4 19S6 18.11 6 17H18C18 18.11 18.9 19 20 19S22 18.11 22 17H23V8H1M13 15V11H11V15H8V11H6V15H3V10H21V15H18V11H16V15H13Z" /></g></svg>
+
+!define MA_TRAIN_CAR_HOPPER(_color)                                 SPRITE_PUT(ma_train_car_hopper, _color)
+!define MA_TRAIN_CAR_HOPPER(_color, _scale)                         SPRITE_PUT(ma_train_car_hopper, _color, _scale)
+!define MA_TRAIN_CAR_HOPPER(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA TRAIN CAR HOPPER, ma_train_car_hopper, _color, _scale)
+!define MA_TRAIN_CAR_HOPPER(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA TRAIN CAR HOPPER, ma_train_car_hopper, _color, _scale, _shape)
+!define MA_TRAIN_CAR_HOPPER(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA TRAIN CAR HOPPER, _label, ma_train_car_hopper, _color, _scale, _shape)
+skinparam folderBackgroundColor<<MA TRAIN CAR HOPPER>> White

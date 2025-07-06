@@ -1,0 +1,8 @@
+sprite mdi-ip-network <svg width="48" height="48"><g transform="scale(2)"><path d="M15,9H13V7H15V9M22,20V22H15A1,1 0 0,1 14,23H10A1,1 0 0,1 9,22H2V20H9A1,1 0 0,1 10,19H11V17H7A2,2 0 0,1 5,15V5A2,2 0 0,1 7,3H17A2,2 0 0,1 19,5V15A2,2 0 0,1 17,17H13V19H14A1,1 0 0,1 15,20H22M9,5H7V15H9V5M11,15H13V11H15A2,2 0 0,0 17,9V7A2,2 0 0,0 15,5H11V15Z" /></g></svg>
+
+!define MA_IP_NETWORK(_color)                                 SPRITE_PUT(ma_ip_network, _color)
+!define MA_IP_NETWORK(_color, _scale)                         SPRITE_PUT(ma_ip_network, _color, _scale)
+!define MA_IP_NETWORK(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA IP NETWORK, ma_ip_network, _color, _scale)
+!define MA_IP_NETWORK(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA IP NETWORK, ma_ip_network, _color, _scale, _shape)
+!define MA_IP_NETWORK(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA IP NETWORK, _label, ma_ip_network, _color, _scale, _shape)
+skinparam folderBackgroundColor<<MA IP NETWORK>> White

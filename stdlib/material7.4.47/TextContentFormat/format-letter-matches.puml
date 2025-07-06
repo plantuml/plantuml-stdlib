@@ -1,0 +1,8 @@
+sprite mdi-format-letter-matches <svg width="48" height="48"><g transform="scale(2)"><path d="M11.14 4L6.43 16H8.36L9.32 13.43H14.67L15.64 16H17.57L12.86 4M12 6.29L14.03 11.71H9.96M20 14V18H4V15H2V20H22V14Z" /></g></svg>
+
+!define MA_FORMAT_LETTER_MATCHES(_color)                                 SPRITE_PUT(ma_format_letter_matches, _color)
+!define MA_FORMAT_LETTER_MATCHES(_color, _scale)                         SPRITE_PUT(ma_format_letter_matches, _color, _scale)
+!define MA_FORMAT_LETTER_MATCHES(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA FORMAT LETTER MATCHES, ma_format_letter_matches, _color, _scale)
+!define MA_FORMAT_LETTER_MATCHES(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA FORMAT LETTER MATCHES, ma_format_letter_matches, _color, _scale, _shape)
+!define MA_FORMAT_LETTER_MATCHES(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA FORMAT LETTER MATCHES, _label, ma_format_letter_matches, _color, _scale, _shape)
+skinparam folderBackgroundColor<<MA FORMAT LETTER MATCHES>> White

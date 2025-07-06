@@ -1,0 +1,8 @@
+sprite mdi-chevron-double-down <svg width="48" height="48"><g transform="scale(2)"><path d="M16.59,5.59L18,7L12,13L6,7L7.41,5.59L12,10.17L16.59,5.59M16.59,11.59L18,13L12,19L6,13L7.41,11.59L12,16.17L16.59,11.59Z" /></g></svg>
+
+!define MA_CHEVRON_DOUBLE_DOWN(_color)                                 SPRITE_PUT(ma_chevron_double_down, _color)
+!define MA_CHEVRON_DOUBLE_DOWN(_color, _scale)                         SPRITE_PUT(ma_chevron_double_down, _color, _scale)
+!define MA_CHEVRON_DOUBLE_DOWN(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA CHEVRON DOUBLE DOWN, ma_chevron_double_down, _color, _scale)
+!define MA_CHEVRON_DOUBLE_DOWN(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA CHEVRON DOUBLE DOWN, ma_chevron_double_down, _color, _scale, _shape)
+!define MA_CHEVRON_DOUBLE_DOWN(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA CHEVRON DOUBLE DOWN, _label, ma_chevron_double_down, _color, _scale, _shape)
+skinparam folderBackgroundColor<<MA CHEVRON DOUBLE DOWN>> White

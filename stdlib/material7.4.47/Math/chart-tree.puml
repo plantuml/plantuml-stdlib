@@ -1,0 +1,8 @@
+sprite mdi-chart-tree <svg width="48" height="48"><g transform="scale(2)"><path d="M14,6H22V22H14V6M2,4H22V2H2V4M2,8H12V6H2V8M9,22H12V10H9V22M2,22H7V10H2V22Z" /></g></svg>
+
+!define MA_CHART_TREE(_color)                                 SPRITE_PUT(ma_chart_tree, _color)
+!define MA_CHART_TREE(_color, _scale)                         SPRITE_PUT(ma_chart_tree, _color, _scale)
+!define MA_CHART_TREE(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA CHART TREE, ma_chart_tree, _color, _scale)
+!define MA_CHART_TREE(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA CHART TREE, ma_chart_tree, _color, _scale, _shape)
+!define MA_CHART_TREE(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA CHART TREE, _label, ma_chart_tree, _color, _scale, _shape)
+skinparam folderBackgroundColor<<MA CHART TREE>> White

@@ -1,0 +1,8 @@
+sprite mdi-calendar-multiple <svg width="48" height="48"><g transform="scale(2)"><path d="M21,17V8H7V17H21M21,3A2,2 0 0,1 23,5V17A2,2 0 0,1 21,19H7C5.89,19 5,18.1 5,17V5A2,2 0 0,1 7,3H8V1H10V3H18V1H20V3H21M3,21H17V23H3C1.89,23 1,22.1 1,21V9H3V21M19,15H15V11H19V15Z" /></g></svg>
+
+!define MA_CALENDAR_MULTIPLE(_color)                                 SPRITE_PUT(ma_calendar_multiple, _color)
+!define MA_CALENDAR_MULTIPLE(_color, _scale)                         SPRITE_PUT(ma_calendar_multiple, _color, _scale)
+!define MA_CALENDAR_MULTIPLE(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA CALENDAR MULTIPLE, ma_calendar_multiple, _color, _scale)
+!define MA_CALENDAR_MULTIPLE(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA CALENDAR MULTIPLE, ma_calendar_multiple, _color, _scale, _shape)
+!define MA_CALENDAR_MULTIPLE(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA CALENDAR MULTIPLE, _label, ma_calendar_multiple, _color, _scale, _shape)
+skinparam folderBackgroundColor<<MA CALENDAR MULTIPLE>> White

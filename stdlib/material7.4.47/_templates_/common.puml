@@ -1,0 +1,60 @@
+/'
+    Provides macros too easily add sprites in different manners
+'/
+
+
+/'
+........................................
+
+Adds a sprite with color and scale
+
+3 parameters
+
+    e_sprite  The sprite to add  Ex: my_sprite
+    e_color   The sprite color   Ex: Red
+    e_scale   The sprite scale   Ex: 0.5
+
+........................................
+'/
+!define SPRITE_PUT(e_sprite, e_color = "Black", e_scale = "1") <color:e_color><$e_sprite{scale=e_scale}></color>
+
+
+
+/'
+........................................
+
+Creates an aliased entity with a sprite and stereotype
+
+6 parameters
+
+    e_alias   The entity alias       Ex: my_alias
+    e_stereo  The entity stereotype  Ex: my_stereotype 
+    e_sprite  The sprite to add      Ex: my_sprite
+    e_color   The sprite color       Ex: Red
+    e_scale   The sprite scale       Ex: 0.5
+    e_type    The entity type        Ex: component
+
+........................................
+'/
+!define SPRITE_ENT(e_alias, e_stereo, e_sprite, e_color = "Black", e_scale = "1", e_type = "rectangle") e_type "<color:e_color><$e_sprite{scale=e_scale}></color>" as e_alias <<e_stereo>>
+
+
+
+/'
+........................................
+
+Creates an aliased labeled entity with a sprite and stereotype
+
+7 parameters
+
+    e_alias   The entity alias       Ex: my_alias
+    e_stereo  The entity stereotype  Ex: my_stereotype 
+    e_label   The sprite label       Ex: my_label
+    e_sprite  The sprite to add      Ex: my_sprite
+    e_color   The sprite color       Ex: Red
+    e_scale   The sprite scale       Ex: 0.5
+    e_type    The entity type        Ex: component
+
+........................................
+'/
+!define SPRITE_ENT_L(e_alias, e_stereo, e_label, e_sprite, e_color = "Black", e_scale = "1", e_type = "rectangle") e_type "<color:e_color><$e_sprite{scale=e_scale}></color>\r e_label" as e_alias <<e_stereo>>

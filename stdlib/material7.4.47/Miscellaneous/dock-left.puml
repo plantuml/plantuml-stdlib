@@ -1,0 +1,8 @@
+sprite mdi-dock-left <svg width="48" height="48"><g transform="scale(2)"><path d="M20 4H4A2 2 0 0 0 2 6V18A2 2 0 0 0 4 20H20A2 2 0 0 0 22 18V6A2 2 0 0 0 20 4M20 18H9V6H20Z" /></g></svg>
+
+!define MA_DOCK_LEFT(_color)                                 SPRITE_PUT(ma_dock_left, _color)
+!define MA_DOCK_LEFT(_color, _scale)                         SPRITE_PUT(ma_dock_left, _color, _scale)
+!define MA_DOCK_LEFT(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA DOCK LEFT, ma_dock_left, _color, _scale)
+!define MA_DOCK_LEFT(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA DOCK LEFT, ma_dock_left, _color, _scale, _shape)
+!define MA_DOCK_LEFT(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA DOCK LEFT, _label, ma_dock_left, _color, _scale, _shape)
+skinparam folderBackgroundColor<<MA DOCK LEFT>> White

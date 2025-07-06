@@ -1,0 +1,8 @@
+sprite mdi-plus-thick <svg width="48" height="48"><g transform="scale(2)"><path d="M20 14H14V20H10V14H4V10H10V4H14V10H20V14Z" /></g></svg>
+
+!define MA_PLUS_THICK(_color)                                 SPRITE_PUT(ma_plus_thick, _color)
+!define MA_PLUS_THICK(_color, _scale)                         SPRITE_PUT(ma_plus_thick, _color, _scale)
+!define MA_PLUS_THICK(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA PLUS THICK, ma_plus_thick, _color, _scale)
+!define MA_PLUS_THICK(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA PLUS THICK, ma_plus_thick, _color, _scale, _shape)
+!define MA_PLUS_THICK(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA PLUS THICK, _label, ma_plus_thick, _color, _scale, _shape)
+skinparam folderBackgroundColor<<MA PLUS THICK>> White

@@ -1,0 +1,8 @@
+sprite mdi-circle-medium <svg width="48" height="48"><g transform="scale(2)"><path d="M12,8A4,4 0 0,0 8,12A4,4 0 0,0 12,16A4,4 0 0,0 16,12A4,4 0 0,0 12,8Z" /></g></svg>
+
+!define MA_CIRCLE_MEDIUM(_color)                                 SPRITE_PUT(ma_circle_medium, _color)
+!define MA_CIRCLE_MEDIUM(_color, _scale)                         SPRITE_PUT(ma_circle_medium, _color, _scale)
+!define MA_CIRCLE_MEDIUM(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA CIRCLE MEDIUM, ma_circle_medium, _color, _scale)
+!define MA_CIRCLE_MEDIUM(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA CIRCLE MEDIUM, ma_circle_medium, _color, _scale, _shape)
+!define MA_CIRCLE_MEDIUM(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA CIRCLE MEDIUM, _label, ma_circle_medium, _color, _scale, _shape)
+skinparam folderBackgroundColor<<MA CIRCLE MEDIUM>> White

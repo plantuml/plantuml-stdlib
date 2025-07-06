@@ -1,0 +1,8 @@
+sprite mdi-checkbox-outline <svg width="48" height="48"><g transform="scale(2)"><path d="M19,3H5A2,2 0 0,0 3,5V19A2,2 0 0,0 5,21H19A2,2 0 0,0 21,19V5A2,2 0 0,0 19,3M19,5V19H5V5H19M10,17L6,13L7.41,11.58L10,14.17L16.59,7.58L18,9" /></g></svg>
+
+!define MA_CHECKBOX_OUTLINE(_color)                                 SPRITE_PUT(ma_checkbox_outline, _color)
+!define MA_CHECKBOX_OUTLINE(_color, _scale)                         SPRITE_PUT(ma_checkbox_outline, _color, _scale)
+!define MA_CHECKBOX_OUTLINE(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA CHECKBOX OUTLINE, ma_checkbox_outline, _color, _scale)
+!define MA_CHECKBOX_OUTLINE(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA CHECKBOX OUTLINE, ma_checkbox_outline, _color, _scale, _shape)
+!define MA_CHECKBOX_OUTLINE(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA CHECKBOX OUTLINE, _label, ma_checkbox_outline, _color, _scale, _shape)
+skinparam folderBackgroundColor<<MA CHECKBOX OUTLINE>> White

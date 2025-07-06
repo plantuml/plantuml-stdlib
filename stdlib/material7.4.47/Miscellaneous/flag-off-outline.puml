@@ -1,0 +1,8 @@
+sprite mdi-flag-off-outline <svg width="48" height="48"><g transform="scale(2)"><path d="M22.11 21.46L2.39 1.73L1.11 3L5 6.89V21H7V14H12.11L12.72 14.61L13 16H14.11L20.84 22.73L22.11 21.46M7 12V8.89L10.11 12H7M9.2 6L7.2 4H14L14.4 6H20V16H19.2L17.2 14H18V8H12.76L12.36 6H9.2Z" /></g></svg>
+
+!define MA_FLAG_OFF_OUTLINE(_color)                                 SPRITE_PUT(ma_flag_off_outline, _color)
+!define MA_FLAG_OFF_OUTLINE(_color, _scale)                         SPRITE_PUT(ma_flag_off_outline, _color, _scale)
+!define MA_FLAG_OFF_OUTLINE(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA FLAG OFF OUTLINE, ma_flag_off_outline, _color, _scale)
+!define MA_FLAG_OFF_OUTLINE(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA FLAG OFF OUTLINE, ma_flag_off_outline, _color, _scale, _shape)
+!define MA_FLAG_OFF_OUTLINE(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA FLAG OFF OUTLINE, _label, ma_flag_off_outline, _color, _scale, _shape)
+skinparam folderBackgroundColor<<MA FLAG OFF OUTLINE>> White

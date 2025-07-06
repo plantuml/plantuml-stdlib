@@ -1,0 +1,8 @@
+sprite mdi-stairs <svg width="48" height="48"><g transform="scale(2)"><path d="M15,5V9H11V13H7V17H3V20H10V16H14V12H18V8H22V5H15Z" /></g></svg>
+
+!define MA_STAIRS(_color)                                 SPRITE_PUT(ma_stairs, _color)
+!define MA_STAIRS(_color, _scale)                         SPRITE_PUT(ma_stairs, _color, _scale)
+!define MA_STAIRS(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA STAIRS, ma_stairs, _color, _scale)
+!define MA_STAIRS(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA STAIRS, ma_stairs, _color, _scale, _shape)
+!define MA_STAIRS(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA STAIRS, _label, ma_stairs, _color, _scale, _shape)
+skinparam folderBackgroundColor<<MA STAIRS>> White

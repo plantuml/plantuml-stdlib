@@ -1,0 +1,8 @@
+sprite mdi-chip <svg width="48" height="48"><g transform="scale(2)"><path d="M6,4H18V5H21V7H18V9H21V11H18V13H21V15H18V17H21V19H18V20H6V19H3V17H6V15H3V13H6V11H3V9H6V7H3V5H6V4M11,15V18H12V15H11M13,15V18H14V15H13M15,15V18H16V15H15Z" /></g></svg>
+
+!define MA_CHIP(_color)                                 SPRITE_PUT(ma_chip, _color)
+!define MA_CHIP(_color, _scale)                         SPRITE_PUT(ma_chip, _color, _scale)
+!define MA_CHIP(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA CHIP, ma_chip, _color, _scale)
+!define MA_CHIP(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA CHIP, ma_chip, _color, _scale, _shape)
+!define MA_CHIP(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA CHIP, _label, ma_chip, _color, _scale, _shape)
+skinparam folderBackgroundColor<<MA CHIP>> White

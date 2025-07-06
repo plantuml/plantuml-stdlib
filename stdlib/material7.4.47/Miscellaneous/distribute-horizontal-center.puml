@@ -1,0 +1,8 @@
+sprite mdi-distribute-horizontal-center <svg width="48" height="48"><g transform="scale(2)"><path d="M8 2V5H10V19H8V22H6V19H4V5H6V2H8M16 2V7H14V17H16V22H18V17H20V7H18V2H16Z" /></g></svg>
+
+!define MA_DISTRIBUTE_HORIZONTAL_CENTER(_color)                                 SPRITE_PUT(ma_distribute_horizontal_center, _color)
+!define MA_DISTRIBUTE_HORIZONTAL_CENTER(_color, _scale)                         SPRITE_PUT(ma_distribute_horizontal_center, _color, _scale)
+!define MA_DISTRIBUTE_HORIZONTAL_CENTER(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA DISTRIBUTE HORIZONTAL CENTER, ma_distribute_horizontal_center, _color, _scale)
+!define MA_DISTRIBUTE_HORIZONTAL_CENTER(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA DISTRIBUTE HORIZONTAL CENTER, ma_distribute_horizontal_center, _color, _scale, _shape)
+!define MA_DISTRIBUTE_HORIZONTAL_CENTER(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA DISTRIBUTE HORIZONTAL CENTER, _label, ma_distribute_horizontal_center, _color, _scale, _shape)
+skinparam folderBackgroundColor<<MA DISTRIBUTE HORIZONTAL CENTER>> White

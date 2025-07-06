@@ -1,0 +1,8 @@
+sprite mdi-credit-card-scan <svg width="48" height="48"><g transform="scale(2)"><path d="M18 6H6A2 2 0 0 0 4 8V16A2 2 0 0 0 6 18H18A2 2 0 0 0 20 16V8A2 2 0 0 0 18 6M18 12H6V9H18M2 4H6V2H2A2 2 0 0 0 0 4V8H2V4M22 2H18V4H22V8H24V4A2 2 0 0 0 22 2M2 16H0V20A2 2 0 0 0 2 22H6V20H2V16M22 20H18V22H22A2 2 0 0 0 24 20V16H22V20" /></g></svg>
+
+!define MA_CREDIT_CARD_SCAN(_color)                                 SPRITE_PUT(ma_credit_card_scan, _color)
+!define MA_CREDIT_CARD_SCAN(_color, _scale)                         SPRITE_PUT(ma_credit_card_scan, _color, _scale)
+!define MA_CREDIT_CARD_SCAN(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA CREDIT CARD SCAN, ma_credit_card_scan, _color, _scale)
+!define MA_CREDIT_CARD_SCAN(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA CREDIT CARD SCAN, ma_credit_card_scan, _color, _scale, _shape)
+!define MA_CREDIT_CARD_SCAN(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA CREDIT CARD SCAN, _label, ma_credit_card_scan, _color, _scale, _shape)
+skinparam folderBackgroundColor<<MA CREDIT CARD SCAN>> White

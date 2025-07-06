@@ -1,0 +1,8 @@
+sprite mdi-collage <svg width="48" height="48"><g transform="scale(2)"><path d="M5,3C3.89,3 3,3.89 3,5V19C3,20.11 3.89,21 5,21H11V3M13,3V11H21V5C21,3.89 20.11,3 19,3M13,13V21H19C20.11,21 21,20.11 21,19V13" /></g></svg>
+
+!define MA_COLLAGE(_color)                                 SPRITE_PUT(ma_collage, _color)
+!define MA_COLLAGE(_color, _scale)                         SPRITE_PUT(ma_collage, _color, _scale)
+!define MA_COLLAGE(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA COLLAGE, ma_collage, _color, _scale)
+!define MA_COLLAGE(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA COLLAGE, ma_collage, _color, _scale, _shape)
+!define MA_COLLAGE(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA COLLAGE, _label, ma_collage, _color, _scale, _shape)
+skinparam folderBackgroundColor<<MA COLLAGE>> White

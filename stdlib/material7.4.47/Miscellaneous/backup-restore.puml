@@ -1,0 +1,8 @@
+sprite mdi-backup-restore <svg width="48" height="48"><g transform="scale(2)"><path d="M12,3A9,9 0 0,0 3,12H0L4,16L8,12H5A7,7 0 0,1 12,5A7,7 0 0,1 19,12A7,7 0 0,1 12,19C10.5,19 9.09,18.5 7.94,17.7L6.5,19.14C8.04,20.3 9.94,21 12,21A9,9 0 0,0 21,12A9,9 0 0,0 12,3M14,12A2,2 0 0,0 12,10A2,2 0 0,0 10,12A2,2 0 0,0 12,14A2,2 0 0,0 14,12Z" /></g></svg>
+
+!define MA_BACKUP_RESTORE(_color)                                 SPRITE_PUT(ma_backup_restore, _color)
+!define MA_BACKUP_RESTORE(_color, _scale)                         SPRITE_PUT(ma_backup_restore, _color, _scale)
+!define MA_BACKUP_RESTORE(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA BACKUP RESTORE, ma_backup_restore, _color, _scale)
+!define MA_BACKUP_RESTORE(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA BACKUP RESTORE, ma_backup_restore, _color, _scale, _shape)
+!define MA_BACKUP_RESTORE(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA BACKUP RESTORE, _label, ma_backup_restore, _color, _scale, _shape)
+skinparam folderBackgroundColor<<MA BACKUP RESTORE>> White

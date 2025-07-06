@@ -1,0 +1,8 @@
+sprite mdi-filmstrip <svg width="48" height="48"><g transform="scale(2)"><path d="M18,9H16V7H18M18,13H16V11H18M18,17H16V15H18M8,9H6V7H8M8,13H6V11H8M8,17H6V15H8M18,3V5H16V3H8V5H6V3H4V21H6V19H8V21H16V19H18V21H20V3H18Z" /></g></svg>
+
+!define MA_FILMSTRIP(_color)                                 SPRITE_PUT(ma_filmstrip, _color)
+!define MA_FILMSTRIP(_color, _scale)                         SPRITE_PUT(ma_filmstrip, _color, _scale)
+!define MA_FILMSTRIP(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA FILMSTRIP, ma_filmstrip, _color, _scale)
+!define MA_FILMSTRIP(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA FILMSTRIP, ma_filmstrip, _color, _scale, _shape)
+!define MA_FILMSTRIP(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA FILMSTRIP, _label, ma_filmstrip, _color, _scale, _shape)
+skinparam folderBackgroundColor<<MA FILMSTRIP>> White

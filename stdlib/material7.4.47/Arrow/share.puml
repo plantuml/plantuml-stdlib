@@ -1,0 +1,8 @@
+sprite mdi-share <svg width="48" height="48"><g transform="scale(2)"><path d="M21,12L14,5V9C7,10 4,15 3,20C5.5,16.5 9,14.9 14,14.9V19L21,12Z" /></g></svg>
+
+!define MA_SHARE(_color)                                 SPRITE_PUT(ma_share, _color)
+!define MA_SHARE(_color, _scale)                         SPRITE_PUT(ma_share, _color, _scale)
+!define MA_SHARE(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA SHARE, ma_share, _color, _scale)
+!define MA_SHARE(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA SHARE, ma_share, _color, _scale, _shape)
+!define MA_SHARE(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA SHARE, _label, ma_share, _color, _scale, _shape)
+skinparam folderBackgroundColor<<MA SHARE>> White

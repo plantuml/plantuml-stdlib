@@ -1,0 +1,8 @@
+sprite mdi-battery-low <svg width="48" height="48"><g transform="scale(2)"><path d="M16 20H8V6H16M16.67 4H15V2H9V4H7.33C6.6 4 6 4.6 6 5.33V20.67C6 21.4 6.6 22 7.33 22H16.67C17.41 22 18 21.41 18 20.67V5.33C18 4.6 17.4 4 16.67 4M15 16H9V19H15V16" /></g></svg>
+
+!define MA_BATTERY_LOW(_color)                                 SPRITE_PUT(ma_battery_low, _color)
+!define MA_BATTERY_LOW(_color, _scale)                         SPRITE_PUT(ma_battery_low, _color, _scale)
+!define MA_BATTERY_LOW(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA BATTERY LOW, ma_battery_low, _color, _scale)
+!define MA_BATTERY_LOW(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA BATTERY LOW, ma_battery_low, _color, _scale, _shape)
+!define MA_BATTERY_LOW(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA BATTERY LOW, _label, ma_battery_low, _color, _scale, _shape)
+skinparam folderBackgroundColor<<MA BATTERY LOW>> White

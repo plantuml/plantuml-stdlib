@@ -1,0 +1,8 @@
+sprite mdi-fuse <svg width="48" height="48"><g transform="scale(2)"><path d="M8,7V17H15V7H8M11.16,16V12.87H9.41L11.91,8V11.14H13.59L11.16,16M16,2V6H7V2A1,1 0 0,1 8,1H15A1,1 0 0,1 16,2M16,18V22A1,1 0 0,1 15,23H8A1,1 0 0,1 7,22V18H16Z" /></g></svg>
+
+!define MA_FUSE(_color)                                 SPRITE_PUT(ma_fuse, _color)
+!define MA_FUSE(_color, _scale)                         SPRITE_PUT(ma_fuse, _color, _scale)
+!define MA_FUSE(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA FUSE, ma_fuse, _color, _scale)
+!define MA_FUSE(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA FUSE, ma_fuse, _color, _scale, _shape)
+!define MA_FUSE(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA FUSE, _label, ma_fuse, _color, _scale, _shape)
+skinparam folderBackgroundColor<<MA FUSE>> White

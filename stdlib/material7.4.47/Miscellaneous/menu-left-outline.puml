@@ -1,0 +1,8 @@
+sprite mdi-menu-left-outline <svg width="48" height="48"><g transform="scale(2)"><path d="M15,18H13.5L7.5,12L13.5,6H15V18M10.33,12L13,14.67V9.33L10.33,12Z" /></g></svg>
+
+!define MA_MENU_LEFT_OUTLINE(_color)                                 SPRITE_PUT(ma_menu_left_outline, _color)
+!define MA_MENU_LEFT_OUTLINE(_color, _scale)                         SPRITE_PUT(ma_menu_left_outline, _color, _scale)
+!define MA_MENU_LEFT_OUTLINE(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA MENU LEFT OUTLINE, ma_menu_left_outline, _color, _scale)
+!define MA_MENU_LEFT_OUTLINE(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA MENU LEFT OUTLINE, ma_menu_left_outline, _color, _scale, _shape)
+!define MA_MENU_LEFT_OUTLINE(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA MENU LEFT OUTLINE, _label, ma_menu_left_outline, _color, _scale, _shape)
+skinparam folderBackgroundColor<<MA MENU LEFT OUTLINE>> White

@@ -1,0 +1,8 @@
+sprite mdi-alpha-a-circle-outline <svg width="48" height="48"><g transform="scale(2)"><path d="M11,7H13A2,2 0 0,1 15,9V17H13V13H11V17H9V9A2,2 0 0,1 11,7M11,9V11H13V9H11M12,20A8,8 0 0,0 20,12A8,8 0 0,0 12,4A8,8 0 0,0 4,12A8,8 0 0,0 12,20M12,2A10,10 0 0,1 22,12A10,10 0 0,1 12,22A10,10 0 0,1 2,12A10,10 0 0,1 12,2Z" /></g></svg>
+
+!define MA_ALPHA_A_CIRCLE_OUTLINE(_color)                                 SPRITE_PUT(ma_alpha_a_circle_outline, _color)
+!define MA_ALPHA_A_CIRCLE_OUTLINE(_color, _scale)                         SPRITE_PUT(ma_alpha_a_circle_outline, _color, _scale)
+!define MA_ALPHA_A_CIRCLE_OUTLINE(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA ALPHA A CIRCLE OUTLINE, ma_alpha_a_circle_outline, _color, _scale)
+!define MA_ALPHA_A_CIRCLE_OUTLINE(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA ALPHA A CIRCLE OUTLINE, ma_alpha_a_circle_outline, _color, _scale, _shape)
+!define MA_ALPHA_A_CIRCLE_OUTLINE(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA ALPHA A CIRCLE OUTLINE, _label, ma_alpha_a_circle_outline, _color, _scale, _shape)
+skinparam folderBackgroundColor<<MA ALPHA A CIRCLE OUTLINE>> White
