@@ -62,7 +62,7 @@ jq -r 'keys[]' categorized.json | while read -r category; do
             echo "    Copied: ${icon}.puml"
 
             cat "categorized/$category/${icon}.puml" >> "categorized/$category/all.puml"
-            echo > "categorized/$category/all.puml"
+            echo >> "categorized/$category/all.puml"
         else
             echo "    Warning: ${icon}.puml not found in converted folder"
         fi
