@@ -1,8 +1,8 @@
 sprite mdi-minecraft <svg width="48" height="48"><g transform="scale(2)"><path d="M4,2H20A2,2 0 0,1 22,4V20A2,2 0 0,1 20,22H4A2,2 0 0,1 2,20V4A2,2 0 0,1 4,2M6,6V10H10V12H8V18H10V16H14V18H16V12H14V10H18V6H14V10H10V6H6Z" /></g></svg>
 
-!define MA_MINECRAFT(_color)                                 SPRITE_PUT(ma_minecraft, _color)
-!define MA_MINECRAFT(_color, _scale)                         SPRITE_PUT(ma_minecraft, _color, _scale)
-!define MA_MINECRAFT(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA MINECRAFT, ma_minecraft, _color, _scale)
-!define MA_MINECRAFT(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA MINECRAFT, ma_minecraft, _color, _scale, _shape)
-!define MA_MINECRAFT(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA MINECRAFT, _label, ma_minecraft, _color, _scale, _shape)
+!define MA_MINECRAFT(_color)                                 SPRITE_PUT(mdi-minecraft, _color)
+!define MA_MINECRAFT(_color, _scale)                         SPRITE_PUT(mdi-minecraft, _color, _scale)
+!define MA_MINECRAFT(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA MINECRAFT, mdi-minecraft, _color, _scale)
+!define MA_MINECRAFT(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA MINECRAFT, mdi-minecraft, _color, _scale, _shape)
+!define MA_MINECRAFT(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA MINECRAFT, _label, mdi-minecraft, _color, _scale, _shape)
 skinparam folderBackgroundColor<<MA MINECRAFT>> White

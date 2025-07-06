@@ -1,8 +1,8 @@
 sprite mdi-checkbox-blank-circle <svg width="48" height="48"><g transform="scale(2)"><path d="M12,2A10,10 0 0,0 2,12A10,10 0 0,0 12,22A10,10 0 0,0 22,12A10,10 0 0,0 12,2Z" /></g></svg>
 
-!define MA_CHECKBOX_BLANK_CIRCLE(_color)                                 SPRITE_PUT(ma_checkbox_blank_circle, _color)
-!define MA_CHECKBOX_BLANK_CIRCLE(_color, _scale)                         SPRITE_PUT(ma_checkbox_blank_circle, _color, _scale)
-!define MA_CHECKBOX_BLANK_CIRCLE(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA CHECKBOX BLANK CIRCLE, ma_checkbox_blank_circle, _color, _scale)
-!define MA_CHECKBOX_BLANK_CIRCLE(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA CHECKBOX BLANK CIRCLE, ma_checkbox_blank_circle, _color, _scale, _shape)
-!define MA_CHECKBOX_BLANK_CIRCLE(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA CHECKBOX BLANK CIRCLE, _label, ma_checkbox_blank_circle, _color, _scale, _shape)
+!define MA_CHECKBOX_BLANK_CIRCLE(_color)                                 SPRITE_PUT(mdi-checkbox-blank-circle, _color)
+!define MA_CHECKBOX_BLANK_CIRCLE(_color, _scale)                         SPRITE_PUT(mdi-checkbox-blank-circle, _color, _scale)
+!define MA_CHECKBOX_BLANK_CIRCLE(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA CHECKBOX BLANK CIRCLE, mdi-checkbox-blank-circle, _color, _scale)
+!define MA_CHECKBOX_BLANK_CIRCLE(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA CHECKBOX BLANK CIRCLE, mdi-checkbox-blank-circle, _color, _scale, _shape)
+!define MA_CHECKBOX_BLANK_CIRCLE(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA CHECKBOX BLANK CIRCLE, _label, mdi-checkbox-blank-circle, _color, _scale, _shape)
 skinparam folderBackgroundColor<<MA CHECKBOX BLANK CIRCLE>> White

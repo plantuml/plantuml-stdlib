@@ -1,8 +1,8 @@
 sprite mdi-rotate-right-variant <svg width="48" height="48"><g transform="scale(2)"><path d="M10,4V1L14,5L10,9V6A6,6 0 0,0 4,12L4.08,13H2.06L2,12A8,8 0 0,1 10,4M17,2H20A2,2 0 0,1 22,4V20A2,2 0 0,1 20,22H17A2,2 0 0,1 15,20V4A2,2 0 0,1 17,2M4,15H13V22H4A2,2 0 0,1 2,20V17A2,2 0 0,1 4,15Z" /></g></svg>
 
-!define MA_ROTATE_RIGHT_VARIANT(_color)                                 SPRITE_PUT(ma_rotate_right_variant, _color)
-!define MA_ROTATE_RIGHT_VARIANT(_color, _scale)                         SPRITE_PUT(ma_rotate_right_variant, _color, _scale)
-!define MA_ROTATE_RIGHT_VARIANT(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA ROTATE RIGHT VARIANT, ma_rotate_right_variant, _color, _scale)
-!define MA_ROTATE_RIGHT_VARIANT(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA ROTATE RIGHT VARIANT, ma_rotate_right_variant, _color, _scale, _shape)
-!define MA_ROTATE_RIGHT_VARIANT(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA ROTATE RIGHT VARIANT, _label, ma_rotate_right_variant, _color, _scale, _shape)
+!define MA_ROTATE_RIGHT_VARIANT(_color)                                 SPRITE_PUT(mdi-rotate-right-variant, _color)
+!define MA_ROTATE_RIGHT_VARIANT(_color, _scale)                         SPRITE_PUT(mdi-rotate-right-variant, _color, _scale)
+!define MA_ROTATE_RIGHT_VARIANT(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA ROTATE RIGHT VARIANT, mdi-rotate-right-variant, _color, _scale)
+!define MA_ROTATE_RIGHT_VARIANT(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA ROTATE RIGHT VARIANT, mdi-rotate-right-variant, _color, _scale, _shape)
+!define MA_ROTATE_RIGHT_VARIANT(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA ROTATE RIGHT VARIANT, _label, mdi-rotate-right-variant, _color, _scale, _shape)
 skinparam folderBackgroundColor<<MA ROTATE RIGHT VARIANT>> White

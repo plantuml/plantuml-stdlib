@@ -1,8 +1,8 @@
 sprite mdi-file-swap <svg width="48" height="48"><g transform="scale(2)"><path d="M14 2H6A2 2 0 0 0 4 4V20A2 2 0 0 0 6 22H18A2 2 0 0 0 20 20V8M14 18V16H10V18L7 15L10 12V14H14V12L17 15M13 9V3.5L18.5 9Z" /></g></svg>
 
-!define MA_FILE_SWAP(_color)                                 SPRITE_PUT(ma_file_swap, _color)
-!define MA_FILE_SWAP(_color, _scale)                         SPRITE_PUT(ma_file_swap, _color, _scale)
-!define MA_FILE_SWAP(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA FILE SWAP, ma_file_swap, _color, _scale)
-!define MA_FILE_SWAP(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA FILE SWAP, ma_file_swap, _color, _scale, _shape)
-!define MA_FILE_SWAP(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA FILE SWAP, _label, ma_file_swap, _color, _scale, _shape)
+!define MA_FILE_SWAP(_color)                                 SPRITE_PUT(mdi-file-swap, _color)
+!define MA_FILE_SWAP(_color, _scale)                         SPRITE_PUT(mdi-file-swap, _color, _scale)
+!define MA_FILE_SWAP(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA FILE SWAP, mdi-file-swap, _color, _scale)
+!define MA_FILE_SWAP(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA FILE SWAP, mdi-file-swap, _color, _scale, _shape)
+!define MA_FILE_SWAP(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA FILE SWAP, _label, mdi-file-swap, _color, _scale, _shape)
 skinparam folderBackgroundColor<<MA FILE SWAP>> White

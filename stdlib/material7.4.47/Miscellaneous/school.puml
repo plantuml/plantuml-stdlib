@@ -1,8 +1,8 @@
 sprite mdi-school <svg width="48" height="48"><g transform="scale(2)"><path d="M12,3L1,9L12,15L21,10.09V17H23V9M5,13.18V17.18L12,21L19,17.18V13.18L12,17L5,13.18Z" /></g></svg>
 
-!define MA_SCHOOL(_color)                                 SPRITE_PUT(ma_school, _color)
-!define MA_SCHOOL(_color, _scale)                         SPRITE_PUT(ma_school, _color, _scale)
-!define MA_SCHOOL(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA SCHOOL, ma_school, _color, _scale)
-!define MA_SCHOOL(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA SCHOOL, ma_school, _color, _scale, _shape)
-!define MA_SCHOOL(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA SCHOOL, _label, ma_school, _color, _scale, _shape)
+!define MA_SCHOOL(_color)                                 SPRITE_PUT(mdi-school, _color)
+!define MA_SCHOOL(_color, _scale)                         SPRITE_PUT(mdi-school, _color, _scale)
+!define MA_SCHOOL(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA SCHOOL, mdi-school, _color, _scale)
+!define MA_SCHOOL(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA SCHOOL, mdi-school, _color, _scale, _shape)
+!define MA_SCHOOL(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA SCHOOL, _label, mdi-school, _color, _scale, _shape)
 skinparam folderBackgroundColor<<MA SCHOOL>> White

@@ -1,8 +1,8 @@
 sprite mdi-ideogram-cjk <svg width="48" height="48"><g transform="scale(2)"><path d="M11 4V6H4V10H6V8H18V10H20V6H13V4M8 10V12H13.59L11.59 14H4V16H11V18H10V20H13V16H20V14H14.21L16 12.21V10Z" /></g></svg>
 
-!define MA_IDEOGRAM_CJK(_color)                                 SPRITE_PUT(ma_ideogram_cjk, _color)
-!define MA_IDEOGRAM_CJK(_color, _scale)                         SPRITE_PUT(ma_ideogram_cjk, _color, _scale)
-!define MA_IDEOGRAM_CJK(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA IDEOGRAM CJK, ma_ideogram_cjk, _color, _scale)
-!define MA_IDEOGRAM_CJK(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA IDEOGRAM CJK, ma_ideogram_cjk, _color, _scale, _shape)
-!define MA_IDEOGRAM_CJK(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA IDEOGRAM CJK, _label, ma_ideogram_cjk, _color, _scale, _shape)
+!define MA_IDEOGRAM_CJK(_color)                                 SPRITE_PUT(mdi-ideogram-cjk, _color)
+!define MA_IDEOGRAM_CJK(_color, _scale)                         SPRITE_PUT(mdi-ideogram-cjk, _color, _scale)
+!define MA_IDEOGRAM_CJK(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA IDEOGRAM CJK, mdi-ideogram-cjk, _color, _scale)
+!define MA_IDEOGRAM_CJK(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA IDEOGRAM CJK, mdi-ideogram-cjk, _color, _scale, _shape)
+!define MA_IDEOGRAM_CJK(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA IDEOGRAM CJK, _label, mdi-ideogram-cjk, _color, _scale, _shape)
 skinparam folderBackgroundColor<<MA IDEOGRAM CJK>> White

@@ -1,8 +1,8 @@
 sprite mdi-bank-remove <svg width="48" height="48"><g transform="scale(2)"><path d="M14.46,15.88L15.88,14.46L18,16.59L20.12,14.46L21.54,15.88L19.41,18L21.54,20.12L20.12,21.54L18,19.41L15.88,21.54L14.46,20.12L16.59,18L14.46,15.88M11.5,1L21,6V8H2V6L11.5,1M16,10H19V12.08L18,12C17.3,12 16.63,12.12 16,12.34V10M2,22V19H12.08C12.27,20.14 12.79,21.17 13.53,22H2M10,10H13V14.68C12.54,15.37 12.22,16.15 12.08,17H10V10M4,10H7V17H4V10Z" /></g></svg>
 
-!define MA_BANK_REMOVE(_color)                                 SPRITE_PUT(ma_bank_remove, _color)
-!define MA_BANK_REMOVE(_color, _scale)                         SPRITE_PUT(ma_bank_remove, _color, _scale)
-!define MA_BANK_REMOVE(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA BANK REMOVE, ma_bank_remove, _color, _scale)
-!define MA_BANK_REMOVE(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA BANK REMOVE, ma_bank_remove, _color, _scale, _shape)
-!define MA_BANK_REMOVE(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA BANK REMOVE, _label, ma_bank_remove, _color, _scale, _shape)
+!define MA_BANK_REMOVE(_color)                                 SPRITE_PUT(mdi-bank-remove, _color)
+!define MA_BANK_REMOVE(_color, _scale)                         SPRITE_PUT(mdi-bank-remove, _color, _scale)
+!define MA_BANK_REMOVE(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA BANK REMOVE, mdi-bank-remove, _color, _scale)
+!define MA_BANK_REMOVE(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA BANK REMOVE, mdi-bank-remove, _color, _scale, _shape)
+!define MA_BANK_REMOVE(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA BANK REMOVE, _label, mdi-bank-remove, _color, _scale, _shape)
 skinparam folderBackgroundColor<<MA BANK REMOVE>> White

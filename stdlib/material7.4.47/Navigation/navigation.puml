@@ -1,8 +1,8 @@
 sprite mdi-navigation <svg width="48" height="48"><g transform="scale(2)"><path d="M12,2L4.5,20.29L5.21,21L12,18L18.79,21L19.5,20.29L12,2Z" /></g></svg>
 
-!define MA_NAVIGATION(_color)                                 SPRITE_PUT(ma_navigation, _color)
-!define MA_NAVIGATION(_color, _scale)                         SPRITE_PUT(ma_navigation, _color, _scale)
-!define MA_NAVIGATION(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA NAVIGATION, ma_navigation, _color, _scale)
-!define MA_NAVIGATION(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA NAVIGATION, ma_navigation, _color, _scale, _shape)
-!define MA_NAVIGATION(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA NAVIGATION, _label, ma_navigation, _color, _scale, _shape)
+!define MA_NAVIGATION(_color)                                 SPRITE_PUT(mdi-navigation, _color)
+!define MA_NAVIGATION(_color, _scale)                         SPRITE_PUT(mdi-navigation, _color, _scale)
+!define MA_NAVIGATION(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA NAVIGATION, mdi-navigation, _color, _scale)
+!define MA_NAVIGATION(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA NAVIGATION, mdi-navigation, _color, _scale, _shape)
+!define MA_NAVIGATION(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA NAVIGATION, _label, mdi-navigation, _color, _scale, _shape)
 skinparam folderBackgroundColor<<MA NAVIGATION>> White

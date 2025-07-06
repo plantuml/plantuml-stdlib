@@ -1,8 +1,8 @@
 sprite mdi-format-list-bulleted-type <svg width="48" height="48"><g transform="scale(2)"><path d="M5,9.5L7.5,14H2.5L5,9.5M3,4H7V8H3V4M5,20A2,2 0 0,0 7,18A2,2 0 0,0 5,16A2,2 0 0,0 3,18A2,2 0 0,0 5,20M9,5V7H21V5H9M9,19H21V17H9V19M9,13H21V11H9V13Z" /></g></svg>
 
-!define MA_FORMAT_LIST_BULLETED_TYPE(_color)                                 SPRITE_PUT(ma_format_list_bulleted_type, _color)
-!define MA_FORMAT_LIST_BULLETED_TYPE(_color, _scale)                         SPRITE_PUT(ma_format_list_bulleted_type, _color, _scale)
-!define MA_FORMAT_LIST_BULLETED_TYPE(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA FORMAT LIST BULLETED TYPE, ma_format_list_bulleted_type, _color, _scale)
-!define MA_FORMAT_LIST_BULLETED_TYPE(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA FORMAT LIST BULLETED TYPE, ma_format_list_bulleted_type, _color, _scale, _shape)
-!define MA_FORMAT_LIST_BULLETED_TYPE(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA FORMAT LIST BULLETED TYPE, _label, ma_format_list_bulleted_type, _color, _scale, _shape)
+!define MA_FORMAT_LIST_BULLETED_TYPE(_color)                                 SPRITE_PUT(mdi-format-list-bulleted-type, _color)
+!define MA_FORMAT_LIST_BULLETED_TYPE(_color, _scale)                         SPRITE_PUT(mdi-format-list-bulleted-type, _color, _scale)
+!define MA_FORMAT_LIST_BULLETED_TYPE(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA FORMAT LIST BULLETED TYPE, mdi-format-list-bulleted-type, _color, _scale)
+!define MA_FORMAT_LIST_BULLETED_TYPE(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA FORMAT LIST BULLETED TYPE, mdi-format-list-bulleted-type, _color, _scale, _shape)
+!define MA_FORMAT_LIST_BULLETED_TYPE(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA FORMAT LIST BULLETED TYPE, _label, mdi-format-list-bulleted-type, _color, _scale, _shape)
 skinparam folderBackgroundColor<<MA FORMAT LIST BULLETED TYPE>> White

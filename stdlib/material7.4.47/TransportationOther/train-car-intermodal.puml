@@ -1,8 +1,8 @@
 sprite mdi-train-car-intermodal <svg width="48" height="48"><g transform="scale(2)"><path d="M21 15V11H3V15H1V17H2C2 18.11 2.9 19 4 19S6 18.11 6 17H18C18 18.11 18.9 19 20 19S22 18.11 22 17H23V15H21M16 14H8V13H16V14M21 5H3V10H21V5M16 8H8V7H16V8Z" /></g></svg>
 
-!define MA_TRAIN_CAR_INTERMODAL(_color)                                 SPRITE_PUT(ma_train_car_intermodal, _color)
-!define MA_TRAIN_CAR_INTERMODAL(_color, _scale)                         SPRITE_PUT(ma_train_car_intermodal, _color, _scale)
-!define MA_TRAIN_CAR_INTERMODAL(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA TRAIN CAR INTERMODAL, ma_train_car_intermodal, _color, _scale)
-!define MA_TRAIN_CAR_INTERMODAL(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA TRAIN CAR INTERMODAL, ma_train_car_intermodal, _color, _scale, _shape)
-!define MA_TRAIN_CAR_INTERMODAL(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA TRAIN CAR INTERMODAL, _label, ma_train_car_intermodal, _color, _scale, _shape)
+!define MA_TRAIN_CAR_INTERMODAL(_color)                                 SPRITE_PUT(mdi-train-car-intermodal, _color)
+!define MA_TRAIN_CAR_INTERMODAL(_color, _scale)                         SPRITE_PUT(mdi-train-car-intermodal, _color, _scale)
+!define MA_TRAIN_CAR_INTERMODAL(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA TRAIN CAR INTERMODAL, mdi-train-car-intermodal, _color, _scale)
+!define MA_TRAIN_CAR_INTERMODAL(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA TRAIN CAR INTERMODAL, mdi-train-car-intermodal, _color, _scale, _shape)
+!define MA_TRAIN_CAR_INTERMODAL(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA TRAIN CAR INTERMODAL, _label, mdi-train-car-intermodal, _color, _scale, _shape)
 skinparam folderBackgroundColor<<MA TRAIN CAR INTERMODAL>> White

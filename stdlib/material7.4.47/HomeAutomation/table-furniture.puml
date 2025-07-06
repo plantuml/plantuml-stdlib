@@ -1,8 +1,8 @@
 sprite mdi-table-furniture <svg width="48" height="48"><g transform="scale(2)"><path d="M2 7H22V10H20L21 19H18.5L17.94 14H6.06L5.5 19H3L4 10H2V7M17.5 10H6.5L6.29 12H17.71L17.5 10Z" /></g></svg>
 
-!define MA_TABLE_FURNITURE(_color)                                 SPRITE_PUT(ma_table_furniture, _color)
-!define MA_TABLE_FURNITURE(_color, _scale)                         SPRITE_PUT(ma_table_furniture, _color, _scale)
-!define MA_TABLE_FURNITURE(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA TABLE FURNITURE, ma_table_furniture, _color, _scale)
-!define MA_TABLE_FURNITURE(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA TABLE FURNITURE, ma_table_furniture, _color, _scale, _shape)
-!define MA_TABLE_FURNITURE(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA TABLE FURNITURE, _label, ma_table_furniture, _color, _scale, _shape)
+!define MA_TABLE_FURNITURE(_color)                                 SPRITE_PUT(mdi-table-furniture, _color)
+!define MA_TABLE_FURNITURE(_color, _scale)                         SPRITE_PUT(mdi-table-furniture, _color, _scale)
+!define MA_TABLE_FURNITURE(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA TABLE FURNITURE, mdi-table-furniture, _color, _scale)
+!define MA_TABLE_FURNITURE(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA TABLE FURNITURE, mdi-table-furniture, _color, _scale, _shape)
+!define MA_TABLE_FURNITURE(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA TABLE FURNITURE, _label, mdi-table-furniture, _color, _scale, _shape)
 skinparam folderBackgroundColor<<MA TABLE FURNITURE>> White

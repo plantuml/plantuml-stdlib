@@ -1,8 +1,8 @@
 sprite mdi-crop <svg width="48" height="48"><g transform="scale(2)"><path d="M7,17V1H5V5H1V7H5V17A2,2 0 0,0 7,19H17V23H19V19H23V17M17,15H19V7C19,5.89 18.1,5 17,5H9V7H17V15Z" /></g></svg>
 
-!define MA_CROP(_color)                                 SPRITE_PUT(ma_crop, _color)
-!define MA_CROP(_color, _scale)                         SPRITE_PUT(ma_crop, _color, _scale)
-!define MA_CROP(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA CROP, ma_crop, _color, _scale)
-!define MA_CROP(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA CROP, ma_crop, _color, _scale, _shape)
-!define MA_CROP(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA CROP, _label, ma_crop, _color, _scale, _shape)
+!define MA_CROP(_color)                                 SPRITE_PUT(mdi-crop, _color)
+!define MA_CROP(_color, _scale)                         SPRITE_PUT(mdi-crop, _color, _scale)
+!define MA_CROP(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA CROP, mdi-crop, _color, _scale)
+!define MA_CROP(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA CROP, mdi-crop, _color, _scale, _shape)
+!define MA_CROP(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA CROP, _label, mdi-crop, _color, _scale, _shape)
 skinparam folderBackgroundColor<<MA CROP>> White

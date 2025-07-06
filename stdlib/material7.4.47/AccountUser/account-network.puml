@@ -1,8 +1,8 @@
 sprite mdi-account-network <svg width="48" height="48"><g transform="scale(2)"><path d="M13,17V19H14A1,1 0 0,1 15,20H22V22H15A1,1 0 0,1 14,23H10A1,1 0 0,1 9,22H2V20H9A1,1 0 0,1 10,19H11V17H5V15.5C5,13.57 8.13,12 12,12C15.87,12 19,13.57 19,15.5V17H13M12,3A3.5,3.5 0 0,1 15.5,6.5A3.5,3.5 0 0,1 12,10A3.5,3.5 0 0,1 8.5,6.5A3.5,3.5 0 0,1 12,3Z" /></g></svg>
 
-!define MA_ACCOUNT_NETWORK(_color)                                 SPRITE_PUT(ma_account_network, _color)
-!define MA_ACCOUNT_NETWORK(_color, _scale)                         SPRITE_PUT(ma_account_network, _color, _scale)
-!define MA_ACCOUNT_NETWORK(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA ACCOUNT NETWORK, ma_account_network, _color, _scale)
-!define MA_ACCOUNT_NETWORK(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA ACCOUNT NETWORK, ma_account_network, _color, _scale, _shape)
-!define MA_ACCOUNT_NETWORK(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA ACCOUNT NETWORK, _label, ma_account_network, _color, _scale, _shape)
+!define MA_ACCOUNT_NETWORK(_color)                                 SPRITE_PUT(mdi-account-network, _color)
+!define MA_ACCOUNT_NETWORK(_color, _scale)                         SPRITE_PUT(mdi-account-network, _color, _scale)
+!define MA_ACCOUNT_NETWORK(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA ACCOUNT NETWORK, mdi-account-network, _color, _scale)
+!define MA_ACCOUNT_NETWORK(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA ACCOUNT NETWORK, mdi-account-network, _color, _scale, _shape)
+!define MA_ACCOUNT_NETWORK(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA ACCOUNT NETWORK, _label, mdi-account-network, _color, _scale, _shape)
 skinparam folderBackgroundColor<<MA ACCOUNT NETWORK>> White

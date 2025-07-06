@@ -1,8 +1,8 @@
 sprite mdi-code-block-brackets <svg width="48" height="48"><g transform="scale(2)"><path d="M2 3V13H6V11H4V5H6V3H2M12 11H10V13H14V3H10V5H12V11M22 6V18C22 19.11 21.11 20 20 20H4C2.9 20 2 19.11 2 18V15H4V18H20V6H17.03V4H20C21.11 4 22 4.89 22 6Z" /></g></svg>
 
-!define MA_CODE_BLOCK_BRACKETS(_color)                                 SPRITE_PUT(ma_code_block_brackets, _color)
-!define MA_CODE_BLOCK_BRACKETS(_color, _scale)                         SPRITE_PUT(ma_code_block_brackets, _color, _scale)
-!define MA_CODE_BLOCK_BRACKETS(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA CODE BLOCK BRACKETS, ma_code_block_brackets, _color, _scale)
-!define MA_CODE_BLOCK_BRACKETS(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA CODE BLOCK BRACKETS, ma_code_block_brackets, _color, _scale, _shape)
-!define MA_CODE_BLOCK_BRACKETS(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA CODE BLOCK BRACKETS, _label, ma_code_block_brackets, _color, _scale, _shape)
+!define MA_CODE_BLOCK_BRACKETS(_color)                                 SPRITE_PUT(mdi-code-block-brackets, _color)
+!define MA_CODE_BLOCK_BRACKETS(_color, _scale)                         SPRITE_PUT(mdi-code-block-brackets, _color, _scale)
+!define MA_CODE_BLOCK_BRACKETS(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA CODE BLOCK BRACKETS, mdi-code-block-brackets, _color, _scale)
+!define MA_CODE_BLOCK_BRACKETS(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA CODE BLOCK BRACKETS, mdi-code-block-brackets, _color, _scale, _shape)
+!define MA_CODE_BLOCK_BRACKETS(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA CODE BLOCK BRACKETS, _label, mdi-code-block-brackets, _color, _scale, _shape)
 skinparam folderBackgroundColor<<MA CODE BLOCK BRACKETS>> White

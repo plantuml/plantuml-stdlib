@@ -1,8 +1,8 @@
 sprite mdi-sd <svg width="48" height="48"><g transform="scale(2)"><path d="M18,8H16V4H18M15,8H13V4H15M12,8H10V4H12M18,2H10L4,8V20A2,2 0 0,0 6,22H18A2,2 0 0,0 20,20V4A2,2 0 0,0 18,2Z" /></g></svg>
 
-!define MA_SD(_color)                                 SPRITE_PUT(ma_sd, _color)
-!define MA_SD(_color, _scale)                         SPRITE_PUT(ma_sd, _color, _scale)
-!define MA_SD(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA SD, ma_sd, _color, _scale)
-!define MA_SD(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA SD, ma_sd, _color, _scale, _shape)
-!define MA_SD(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA SD, _label, ma_sd, _color, _scale, _shape)
+!define MA_SD(_color)                                 SPRITE_PUT(mdi-sd, _color)
+!define MA_SD(_color, _scale)                         SPRITE_PUT(mdi-sd, _color, _scale)
+!define MA_SD(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA SD, mdi-sd, _color, _scale)
+!define MA_SD(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA SD, mdi-sd, _color, _scale, _shape)
+!define MA_SD(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA SD, _label, mdi-sd, _color, _scale, _shape)
 skinparam folderBackgroundColor<<MA SD>> White

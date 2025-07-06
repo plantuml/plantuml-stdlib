@@ -1,8 +1,8 @@
 sprite mdi-label-multiple <svg width="48" height="48"><g transform="scale(2)"><path d="M4 19H13L11 21H4C3.5 21 2.97 20.79 2.59 20.41C2.21 20.03 2 19.5 2 19V9H4V19M17.63 5.84C17.27 5.33 16.67 5 16 5H8C6.9 5 6 5.9 6 7V15C6 16.1 6.9 17 8 17H16C16.67 17 17.27 16.66 17.63 16.15L22 11L17.63 5.84Z" /></g></svg>
 
-!define MA_LABEL_MULTIPLE(_color)                                 SPRITE_PUT(ma_label_multiple, _color)
-!define MA_LABEL_MULTIPLE(_color, _scale)                         SPRITE_PUT(ma_label_multiple, _color, _scale)
-!define MA_LABEL_MULTIPLE(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA LABEL MULTIPLE, ma_label_multiple, _color, _scale)
-!define MA_LABEL_MULTIPLE(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA LABEL MULTIPLE, ma_label_multiple, _color, _scale, _shape)
-!define MA_LABEL_MULTIPLE(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA LABEL MULTIPLE, _label, ma_label_multiple, _color, _scale, _shape)
+!define MA_LABEL_MULTIPLE(_color)                                 SPRITE_PUT(mdi-label-multiple, _color)
+!define MA_LABEL_MULTIPLE(_color, _scale)                         SPRITE_PUT(mdi-label-multiple, _color, _scale)
+!define MA_LABEL_MULTIPLE(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA LABEL MULTIPLE, mdi-label-multiple, _color, _scale)
+!define MA_LABEL_MULTIPLE(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA LABEL MULTIPLE, mdi-label-multiple, _color, _scale, _shape)
+!define MA_LABEL_MULTIPLE(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA LABEL MULTIPLE, _label, mdi-label-multiple, _color, _scale, _shape)
 skinparam folderBackgroundColor<<MA LABEL MULTIPLE>> White

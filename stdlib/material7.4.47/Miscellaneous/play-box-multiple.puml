@@ -1,8 +1,8 @@
 sprite mdi-play-box-multiple <svg width="48" height="48"><g transform="scale(2)"><path d="M4,6H2V20A2,2 0 0,0 4,22H18V20H4V6M20,2H8A2,2 0 0,0 6,4V16A2,2 0 0,0 8,18H20A2,2 0 0,0 22,16V4A2,2 0 0,0 20,2M12,14.5V5.5L18,10L12,14.5Z" /></g></svg>
 
-!define MA_PLAY_BOX_MULTIPLE(_color)                                 SPRITE_PUT(ma_play_box_multiple, _color)
-!define MA_PLAY_BOX_MULTIPLE(_color, _scale)                         SPRITE_PUT(ma_play_box_multiple, _color, _scale)
-!define MA_PLAY_BOX_MULTIPLE(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA PLAY BOX MULTIPLE, ma_play_box_multiple, _color, _scale)
-!define MA_PLAY_BOX_MULTIPLE(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA PLAY BOX MULTIPLE, ma_play_box_multiple, _color, _scale, _shape)
-!define MA_PLAY_BOX_MULTIPLE(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA PLAY BOX MULTIPLE, _label, ma_play_box_multiple, _color, _scale, _shape)
+!define MA_PLAY_BOX_MULTIPLE(_color)                                 SPRITE_PUT(mdi-play-box-multiple, _color)
+!define MA_PLAY_BOX_MULTIPLE(_color, _scale)                         SPRITE_PUT(mdi-play-box-multiple, _color, _scale)
+!define MA_PLAY_BOX_MULTIPLE(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA PLAY BOX MULTIPLE, mdi-play-box-multiple, _color, _scale)
+!define MA_PLAY_BOX_MULTIPLE(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA PLAY BOX MULTIPLE, mdi-play-box-multiple, _color, _scale, _shape)
+!define MA_PLAY_BOX_MULTIPLE(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA PLAY BOX MULTIPLE, _label, mdi-play-box-multiple, _color, _scale, _shape)
 skinparam folderBackgroundColor<<MA PLAY BOX MULTIPLE>> White

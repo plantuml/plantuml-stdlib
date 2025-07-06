@@ -1,8 +1,8 @@
 sprite mdi-vector-union <svg width="48" height="48"><g transform="scale(2)"><path d="M3,1C1.89,1 1,1.89 1,3V14C1,15.11 1.89,16 3,16H7V20C7,21.11 7.89,22 9,22H20C21.11,22 22,21.11 22,20V9C22,7.89 21.11,7 20,7H16V3C16,1.89 15.11,1 14,1H3M3,3H14V9H20V20H9V14H3V3Z" /></g></svg>
 
-!define MA_VECTOR_UNION(_color)                                 SPRITE_PUT(ma_vector_union, _color)
-!define MA_VECTOR_UNION(_color, _scale)                         SPRITE_PUT(ma_vector_union, _color, _scale)
-!define MA_VECTOR_UNION(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA VECTOR UNION, ma_vector_union, _color, _scale)
-!define MA_VECTOR_UNION(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA VECTOR UNION, ma_vector_union, _color, _scale, _shape)
-!define MA_VECTOR_UNION(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA VECTOR UNION, _label, ma_vector_union, _color, _scale, _shape)
+!define MA_VECTOR_UNION(_color)                                 SPRITE_PUT(mdi-vector-union, _color)
+!define MA_VECTOR_UNION(_color, _scale)                         SPRITE_PUT(mdi-vector-union, _color, _scale)
+!define MA_VECTOR_UNION(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA VECTOR UNION, mdi-vector-union, _color, _scale)
+!define MA_VECTOR_UNION(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA VECTOR UNION, mdi-vector-union, _color, _scale, _shape)
+!define MA_VECTOR_UNION(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA VECTOR UNION, _label, mdi-vector-union, _color, _scale, _shape)
 skinparam folderBackgroundColor<<MA VECTOR UNION>> White

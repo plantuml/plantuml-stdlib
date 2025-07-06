@@ -1,8 +1,8 @@
 sprite mdi-flashlight-off <svg width="48" height="48"><g transform="scale(2)"><path d="M2,5.27L3.28,4L20,20.72L18.73,22L15,18.27V22H9V12.27L2,5.27M18,5L15,10H11.82L6.82,5H18M18,4H6V2H18V4M15,11V13.18L12.82,11H15Z" /></g></svg>
 
-!define MA_FLASHLIGHT_OFF(_color)                                 SPRITE_PUT(ma_flashlight_off, _color)
-!define MA_FLASHLIGHT_OFF(_color, _scale)                         SPRITE_PUT(ma_flashlight_off, _color, _scale)
-!define MA_FLASHLIGHT_OFF(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA FLASHLIGHT OFF, ma_flashlight_off, _color, _scale)
-!define MA_FLASHLIGHT_OFF(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA FLASHLIGHT OFF, ma_flashlight_off, _color, _scale, _shape)
-!define MA_FLASHLIGHT_OFF(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA FLASHLIGHT OFF, _label, ma_flashlight_off, _color, _scale, _shape)
+!define MA_FLASHLIGHT_OFF(_color)                                 SPRITE_PUT(mdi-flashlight-off, _color)
+!define MA_FLASHLIGHT_OFF(_color, _scale)                         SPRITE_PUT(mdi-flashlight-off, _color, _scale)
+!define MA_FLASHLIGHT_OFF(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA FLASHLIGHT OFF, mdi-flashlight-off, _color, _scale)
+!define MA_FLASHLIGHT_OFF(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA FLASHLIGHT OFF, mdi-flashlight-off, _color, _scale, _shape)
+!define MA_FLASHLIGHT_OFF(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA FLASHLIGHT OFF, _label, mdi-flashlight-off, _color, _scale, _shape)
 skinparam folderBackgroundColor<<MA FLASHLIGHT OFF>> White

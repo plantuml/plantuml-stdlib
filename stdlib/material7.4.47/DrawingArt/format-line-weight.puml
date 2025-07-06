@@ -1,8 +1,8 @@
 sprite mdi-format-line-weight <svg width="48" height="48"><g transform="scale(2)"><path d="M3,17H21V15H3V17M3,20H21V19H3V20M3,13H21V10H3V13M3,4V8H21V4H3Z" /></g></svg>
 
-!define MA_FORMAT_LINE_WEIGHT(_color)                                 SPRITE_PUT(ma_format_line_weight, _color)
-!define MA_FORMAT_LINE_WEIGHT(_color, _scale)                         SPRITE_PUT(ma_format_line_weight, _color, _scale)
-!define MA_FORMAT_LINE_WEIGHT(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA FORMAT LINE WEIGHT, ma_format_line_weight, _color, _scale)
-!define MA_FORMAT_LINE_WEIGHT(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA FORMAT LINE WEIGHT, ma_format_line_weight, _color, _scale, _shape)
-!define MA_FORMAT_LINE_WEIGHT(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA FORMAT LINE WEIGHT, _label, ma_format_line_weight, _color, _scale, _shape)
+!define MA_FORMAT_LINE_WEIGHT(_color)                                 SPRITE_PUT(mdi-format-line-weight, _color)
+!define MA_FORMAT_LINE_WEIGHT(_color, _scale)                         SPRITE_PUT(mdi-format-line-weight, _color, _scale)
+!define MA_FORMAT_LINE_WEIGHT(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA FORMAT LINE WEIGHT, mdi-format-line-weight, _color, _scale)
+!define MA_FORMAT_LINE_WEIGHT(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA FORMAT LINE WEIGHT, mdi-format-line-weight, _color, _scale, _shape)
+!define MA_FORMAT_LINE_WEIGHT(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA FORMAT LINE WEIGHT, _label, mdi-format-line-weight, _color, _scale, _shape)
 skinparam folderBackgroundColor<<MA FORMAT LINE WEIGHT>> White

@@ -1,8 +1,8 @@
 sprite mdi-chart-sankey-variant <svg width="48" height="48"><g transform="scale(2)"><path d="M20 4V6H4V4H2V12H4V10C8.16 10 9.92 12.11 11.77 14.34S15.65 19 20 19V21H22V15H20V17C16.59 17 15.07 15.17 13.31 13.06C11.34 10.69 9.1 8 4 8H20V10H22V4Z" /></g></svg>
 
-!define MA_CHART_SANKEY_VARIANT(_color)                                 SPRITE_PUT(ma_chart_sankey_variant, _color)
-!define MA_CHART_SANKEY_VARIANT(_color, _scale)                         SPRITE_PUT(ma_chart_sankey_variant, _color, _scale)
-!define MA_CHART_SANKEY_VARIANT(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA CHART SANKEY VARIANT, ma_chart_sankey_variant, _color, _scale)
-!define MA_CHART_SANKEY_VARIANT(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA CHART SANKEY VARIANT, ma_chart_sankey_variant, _color, _scale, _shape)
-!define MA_CHART_SANKEY_VARIANT(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA CHART SANKEY VARIANT, _label, ma_chart_sankey_variant, _color, _scale, _shape)
+!define MA_CHART_SANKEY_VARIANT(_color)                                 SPRITE_PUT(mdi-chart-sankey-variant, _color)
+!define MA_CHART_SANKEY_VARIANT(_color, _scale)                         SPRITE_PUT(mdi-chart-sankey-variant, _color, _scale)
+!define MA_CHART_SANKEY_VARIANT(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA CHART SANKEY VARIANT, mdi-chart-sankey-variant, _color, _scale)
+!define MA_CHART_SANKEY_VARIANT(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA CHART SANKEY VARIANT, mdi-chart-sankey-variant, _color, _scale, _shape)
+!define MA_CHART_SANKEY_VARIANT(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA CHART SANKEY VARIANT, _label, mdi-chart-sankey-variant, _color, _scale, _shape)
 skinparam folderBackgroundColor<<MA CHART SANKEY VARIANT>> White

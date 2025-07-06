@@ -1,8 +1,8 @@
 sprite mdi-chevron-double-right <svg width="48" height="48"><g transform="scale(2)"><path d="M5.59,7.41L7,6L13,12L7,18L5.59,16.59L10.17,12L5.59,7.41M11.59,7.41L13,6L19,12L13,18L11.59,16.59L16.17,12L11.59,7.41Z" /></g></svg>
 
-!define MA_CHEVRON_DOUBLE_RIGHT(_color)                                 SPRITE_PUT(ma_chevron_double_right, _color)
-!define MA_CHEVRON_DOUBLE_RIGHT(_color, _scale)                         SPRITE_PUT(ma_chevron_double_right, _color, _scale)
-!define MA_CHEVRON_DOUBLE_RIGHT(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA CHEVRON DOUBLE RIGHT, ma_chevron_double_right, _color, _scale)
-!define MA_CHEVRON_DOUBLE_RIGHT(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA CHEVRON DOUBLE RIGHT, ma_chevron_double_right, _color, _scale, _shape)
-!define MA_CHEVRON_DOUBLE_RIGHT(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA CHEVRON DOUBLE RIGHT, _label, ma_chevron_double_right, _color, _scale, _shape)
+!define MA_CHEVRON_DOUBLE_RIGHT(_color)                                 SPRITE_PUT(mdi-chevron-double-right, _color)
+!define MA_CHEVRON_DOUBLE_RIGHT(_color, _scale)                         SPRITE_PUT(mdi-chevron-double-right, _color, _scale)
+!define MA_CHEVRON_DOUBLE_RIGHT(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA CHEVRON DOUBLE RIGHT, mdi-chevron-double-right, _color, _scale)
+!define MA_CHEVRON_DOUBLE_RIGHT(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA CHEVRON DOUBLE RIGHT, mdi-chevron-double-right, _color, _scale, _shape)
+!define MA_CHEVRON_DOUBLE_RIGHT(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA CHEVRON DOUBLE RIGHT, _label, mdi-chevron-double-right, _color, _scale, _shape)
 skinparam folderBackgroundColor<<MA CHEVRON DOUBLE RIGHT>> White

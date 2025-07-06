@@ -1,8 +1,8 @@
 sprite mdi-image-filter-center-focus <svg width="48" height="48"><g transform="scale(2)"><path d="M12,9A3,3 0 0,0 9,12A3,3 0 0,0 12,15A3,3 0 0,0 15,12A3,3 0 0,0 12,9M19,19H15V21H19A2,2 0 0,0 21,19V15H19M19,3H15V5H19V9H21V5A2,2 0 0,0 19,3M5,5H9V3H5A2,2 0 0,0 3,5V9H5M5,15H3V19A2,2 0 0,0 5,21H9V19H5V15Z" /></g></svg>
 
-!define MA_IMAGE_FILTER_CENTER_FOCUS(_color)                                 SPRITE_PUT(ma_image_filter_center_focus, _color)
-!define MA_IMAGE_FILTER_CENTER_FOCUS(_color, _scale)                         SPRITE_PUT(ma_image_filter_center_focus, _color, _scale)
-!define MA_IMAGE_FILTER_CENTER_FOCUS(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA IMAGE FILTER CENTER FOCUS, ma_image_filter_center_focus, _color, _scale)
-!define MA_IMAGE_FILTER_CENTER_FOCUS(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA IMAGE FILTER CENTER FOCUS, ma_image_filter_center_focus, _color, _scale, _shape)
-!define MA_IMAGE_FILTER_CENTER_FOCUS(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA IMAGE FILTER CENTER FOCUS, _label, ma_image_filter_center_focus, _color, _scale, _shape)
+!define MA_IMAGE_FILTER_CENTER_FOCUS(_color)                                 SPRITE_PUT(mdi-image-filter-center-focus, _color)
+!define MA_IMAGE_FILTER_CENTER_FOCUS(_color, _scale)                         SPRITE_PUT(mdi-image-filter-center-focus, _color, _scale)
+!define MA_IMAGE_FILTER_CENTER_FOCUS(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA IMAGE FILTER CENTER FOCUS, mdi-image-filter-center-focus, _color, _scale)
+!define MA_IMAGE_FILTER_CENTER_FOCUS(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA IMAGE FILTER CENTER FOCUS, mdi-image-filter-center-focus, _color, _scale, _shape)
+!define MA_IMAGE_FILTER_CENTER_FOCUS(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA IMAGE FILTER CENTER FOCUS, _label, mdi-image-filter-center-focus, _color, _scale, _shape)
 skinparam folderBackgroundColor<<MA IMAGE FILTER CENTER FOCUS>> White

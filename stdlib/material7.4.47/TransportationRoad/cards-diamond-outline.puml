@@ -1,8 +1,8 @@
 sprite mdi-cards-diamond-outline <svg width="48" height="48"><g transform="scale(2)"><path d="M12 2L5 12L12 22L19 12M7.44 12L12 5.5L16.56 12L12 18.5" /></g></svg>
 
-!define MA_CARDS_DIAMOND_OUTLINE(_color)                                 SPRITE_PUT(ma_cards_diamond_outline, _color)
-!define MA_CARDS_DIAMOND_OUTLINE(_color, _scale)                         SPRITE_PUT(ma_cards_diamond_outline, _color, _scale)
-!define MA_CARDS_DIAMOND_OUTLINE(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA CARDS DIAMOND OUTLINE, ma_cards_diamond_outline, _color, _scale)
-!define MA_CARDS_DIAMOND_OUTLINE(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA CARDS DIAMOND OUTLINE, ma_cards_diamond_outline, _color, _scale, _shape)
-!define MA_CARDS_DIAMOND_OUTLINE(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA CARDS DIAMOND OUTLINE, _label, ma_cards_diamond_outline, _color, _scale, _shape)
+!define MA_CARDS_DIAMOND_OUTLINE(_color)                                 SPRITE_PUT(mdi-cards-diamond-outline, _color)
+!define MA_CARDS_DIAMOND_OUTLINE(_color, _scale)                         SPRITE_PUT(mdi-cards-diamond-outline, _color, _scale)
+!define MA_CARDS_DIAMOND_OUTLINE(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA CARDS DIAMOND OUTLINE, mdi-cards-diamond-outline, _color, _scale)
+!define MA_CARDS_DIAMOND_OUTLINE(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA CARDS DIAMOND OUTLINE, mdi-cards-diamond-outline, _color, _scale, _shape)
+!define MA_CARDS_DIAMOND_OUTLINE(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA CARDS DIAMOND OUTLINE, _label, mdi-cards-diamond-outline, _color, _scale, _shape)
 skinparam folderBackgroundColor<<MA CARDS DIAMOND OUTLINE>> White

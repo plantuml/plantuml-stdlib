@@ -1,8 +1,8 @@
 sprite mdi-format-float-left <svg width="48" height="48"><g transform="scale(2)"><path d="M3,7H9V13H3V7M3,3H21V5H3V3M21,7V9H11V7H21M21,11V13H11V11H21M3,15H17V17H3V15M3,19H21V21H3V19Z" /></g></svg>
 
-!define MA_FORMAT_FLOAT_LEFT(_color)                                 SPRITE_PUT(ma_format_float_left, _color)
-!define MA_FORMAT_FLOAT_LEFT(_color, _scale)                         SPRITE_PUT(ma_format_float_left, _color, _scale)
-!define MA_FORMAT_FLOAT_LEFT(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA FORMAT FLOAT LEFT, ma_format_float_left, _color, _scale)
-!define MA_FORMAT_FLOAT_LEFT(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA FORMAT FLOAT LEFT, ma_format_float_left, _color, _scale, _shape)
-!define MA_FORMAT_FLOAT_LEFT(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA FORMAT FLOAT LEFT, _label, ma_format_float_left, _color, _scale, _shape)
+!define MA_FORMAT_FLOAT_LEFT(_color)                                 SPRITE_PUT(mdi-format-float-left, _color)
+!define MA_FORMAT_FLOAT_LEFT(_color, _scale)                         SPRITE_PUT(mdi-format-float-left, _color, _scale)
+!define MA_FORMAT_FLOAT_LEFT(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA FORMAT FLOAT LEFT, mdi-format-float-left, _color, _scale)
+!define MA_FORMAT_FLOAT_LEFT(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA FORMAT FLOAT LEFT, mdi-format-float-left, _color, _scale, _shape)
+!define MA_FORMAT_FLOAT_LEFT(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA FORMAT FLOAT LEFT, _label, mdi-format-float-left, _color, _scale, _shape)
 skinparam folderBackgroundColor<<MA FORMAT FLOAT LEFT>> White

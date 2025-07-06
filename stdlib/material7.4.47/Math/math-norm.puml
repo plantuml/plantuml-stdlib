@@ -1,8 +1,8 @@
 sprite mdi-math-norm <svg width="48" height="48"><g transform="scale(2)"><path d="M14 21V3H16V21H14M8 21V3H10V21H8Z" /></g></svg>
 
-!define MA_MATH_NORM(_color)                                 SPRITE_PUT(ma_math_norm, _color)
-!define MA_MATH_NORM(_color, _scale)                         SPRITE_PUT(ma_math_norm, _color, _scale)
-!define MA_MATH_NORM(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA MATH NORM, ma_math_norm, _color, _scale)
-!define MA_MATH_NORM(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA MATH NORM, ma_math_norm, _color, _scale, _shape)
-!define MA_MATH_NORM(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA MATH NORM, _label, ma_math_norm, _color, _scale, _shape)
+!define MA_MATH_NORM(_color)                                 SPRITE_PUT(mdi-math-norm, _color)
+!define MA_MATH_NORM(_color, _scale)                         SPRITE_PUT(mdi-math-norm, _color, _scale)
+!define MA_MATH_NORM(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA MATH NORM, mdi-math-norm, _color, _scale)
+!define MA_MATH_NORM(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA MATH NORM, mdi-math-norm, _color, _scale, _shape)
+!define MA_MATH_NORM(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA MATH NORM, _label, mdi-math-norm, _color, _scale, _shape)
 skinparam folderBackgroundColor<<MA MATH NORM>> White

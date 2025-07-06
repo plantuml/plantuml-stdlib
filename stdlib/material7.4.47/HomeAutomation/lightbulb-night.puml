@@ -1,8 +1,8 @@
 sprite mdi-lightbulb-night <svg width="48" height="48"><g transform="scale(2)"><path d="M6 21C6 21.55 6.45 22 7 22H11C11.55 22 12 21.55 12 21V20H6V21M13 16.32V17C13 17.55 12.55 18 12 18H6C5.45 18 5 17.55 5 17V14.74C3.19 13.47 2 11.38 2 9C2 5.13 5.13 2 9 2C10.65 2 12.16 2.57 13.35 3.5C10.8 4.57 9 7.07 9 10C9 12.79 10.64 15.19 13 16.32M20.92 9.94L19.5 9.03L18.1 10L18.5 8.35L17.17 7.32L18.85 7.21L19.41 5.6L20.04 7.18L21.72 7.22L20.42 8.3L20.92 9.94M19.39 13C17.5 15.27 14.03 15.19 12.22 12.95C10 10.13 11.56 6 15 5.34C15.34 5.29 15.64 5.63 15.5 5.97C15.05 7.25 15.12 8.71 15.85 9.97C16.58 11.24 17.79 12.03 19.12 12.25C19.47 12.3 19.62 12.74 19.39 13Z" /></g></svg>
 
-!define MA_LIGHTBULB_NIGHT(_color)                                 SPRITE_PUT(ma_lightbulb_night, _color)
-!define MA_LIGHTBULB_NIGHT(_color, _scale)                         SPRITE_PUT(ma_lightbulb_night, _color, _scale)
-!define MA_LIGHTBULB_NIGHT(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA LIGHTBULB NIGHT, ma_lightbulb_night, _color, _scale)
-!define MA_LIGHTBULB_NIGHT(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA LIGHTBULB NIGHT, ma_lightbulb_night, _color, _scale, _shape)
-!define MA_LIGHTBULB_NIGHT(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA LIGHTBULB NIGHT, _label, ma_lightbulb_night, _color, _scale, _shape)
+!define MA_LIGHTBULB_NIGHT(_color)                                 SPRITE_PUT(mdi-lightbulb-night, _color)
+!define MA_LIGHTBULB_NIGHT(_color, _scale)                         SPRITE_PUT(mdi-lightbulb-night, _color, _scale)
+!define MA_LIGHTBULB_NIGHT(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA LIGHTBULB NIGHT, mdi-lightbulb-night, _color, _scale)
+!define MA_LIGHTBULB_NIGHT(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA LIGHTBULB NIGHT, mdi-lightbulb-night, _color, _scale, _shape)
+!define MA_LIGHTBULB_NIGHT(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA LIGHTBULB NIGHT, _label, mdi-lightbulb-night, _color, _scale, _shape)
 skinparam folderBackgroundColor<<MA LIGHTBULB NIGHT>> White

@@ -1,8 +1,8 @@
 sprite mdi-invoice-remove-outline <svg width="48" height="48"><g transform="scale(2)"><path d="M19 13C19.7 13 20.37 13.12 21 13.34V3H3V22L6 20L9 22L12 20L13.3 20.86C13.1 20.28 13 19.65 13 19C13 18.76 13 18.5 13.04 18.29L12 17.6L9 19.6L6 17.6L5 18.26V5H19V13M19 17.6L16.9 15.5L15.5 16.9L17.6 19L15.5 21.1L16.9 22.5L19 20.4L21.1 22.5L22.5 21.1L20.4 19L22.5 16.9L21.1 15.5L19 17.6Z" /></g></svg>
 
-!define MA_INVOICE_REMOVE_OUTLINE(_color)                                 SPRITE_PUT(ma_invoice_remove_outline, _color)
-!define MA_INVOICE_REMOVE_OUTLINE(_color, _scale)                         SPRITE_PUT(ma_invoice_remove_outline, _color, _scale)
-!define MA_INVOICE_REMOVE_OUTLINE(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA INVOICE REMOVE OUTLINE, ma_invoice_remove_outline, _color, _scale)
-!define MA_INVOICE_REMOVE_OUTLINE(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA INVOICE REMOVE OUTLINE, ma_invoice_remove_outline, _color, _scale, _shape)
-!define MA_INVOICE_REMOVE_OUTLINE(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA INVOICE REMOVE OUTLINE, _label, ma_invoice_remove_outline, _color, _scale, _shape)
+!define MA_INVOICE_REMOVE_OUTLINE(_color)                                 SPRITE_PUT(mdi-invoice-remove-outline, _color)
+!define MA_INVOICE_REMOVE_OUTLINE(_color, _scale)                         SPRITE_PUT(mdi-invoice-remove-outline, _color, _scale)
+!define MA_INVOICE_REMOVE_OUTLINE(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA INVOICE REMOVE OUTLINE, mdi-invoice-remove-outline, _color, _scale)
+!define MA_INVOICE_REMOVE_OUTLINE(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA INVOICE REMOVE OUTLINE, mdi-invoice-remove-outline, _color, _scale, _shape)
+!define MA_INVOICE_REMOVE_OUTLINE(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA INVOICE REMOVE OUTLINE, _label, mdi-invoice-remove-outline, _color, _scale, _shape)
 skinparam folderBackgroundColor<<MA INVOICE REMOVE OUTLINE>> White

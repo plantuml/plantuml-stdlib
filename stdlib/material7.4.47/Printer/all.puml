@@ -1,1 +1,550 @@
 
+sprite mdi-cloud-print <svg width="48" height="48"><g transform="scale(2)"><path d="M21.86 10.5C21.1 9.63 20.15 9.13 19 9C19 7.05 18.32 5.4 16.96 4.04C15.6 2.68 13.95 2 12 2C10.42 2 9 2.5 7.75 3.43S5.67 5.62 5.25 7.15C4 7.43 2.96 8.08 2.17 9.1S1 11.28 1 12.58C1 14.09 1.54 15.38 2.61 16.43C3.57 17.36 4.7 17.85 6 17.95V22H18V18H18.5C19.75 18 20.81 17.56 21.69 16.69C22.56 15.81 23 14.75 23 13.5C23 12.35 22.62 11.35 21.86 10.5M16 20H8V13H16V20M15 15H9V14H15V15M15 17H9V16H15V17M15 19H9V18H15V19Z" /></g></svg>
+
+!define MA_CLOUD_PRINT(_color)                                 SPRITE_PUT(mdi-cloud-print, _color)
+!define MA_CLOUD_PRINT(_color, _scale)                         SPRITE_PUT(mdi-cloud-print, _color, _scale)
+!define MA_CLOUD_PRINT(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA CLOUD PRINT, mdi-cloud-print, _color, _scale)
+!define MA_CLOUD_PRINT(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA CLOUD PRINT, mdi-cloud-print, _color, _scale, _shape)
+!define MA_CLOUD_PRINT(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA CLOUD PRINT, _label, mdi-cloud-print, _color, _scale, _shape)
+skinparam folderBackgroundColor<<MA CLOUD PRINT>> White
+
+sprite mdi-cloud-print-outline <svg width="48" height="48"><g transform="scale(2)"><path d="M15 15H9V14H15V15M15 16H9V17H15V16M15 18H9V19H15V18M23 13.5C23 14.75 22.56 15.81 21.69 16.69C20.81 17.56 19.75 18 18.5 18H18V22H6V17.95C4.7 17.85 3.57 17.36 2.61 16.43C1.54 15.38 1 14.09 1 12.58C1 11.28 1.39 10.12 2.17 9.1S4 7.43 5.25 7.15C5.67 5.62 6.5 4.38 7.75 3.43S10.42 2 12 2C13.95 2 15.6 2.68 16.96 4.04C18.32 5.4 19 7.05 19 9C20.15 9.13 21.1 9.63 21.86 10.5C22.62 11.35 23 12.35 23 13.5M6 15.95V11H17V9C17 7.62 16.5 6.44 15.54 5.46C14.56 4.5 13.38 4 12 4S9.44 4.5 8.46 5.46C7.5 6.44 7 7.62 7 9H6.5C5.53 9 4.71 9.34 4.03 10.03C3.34 10.71 3 11.53 3 12.5S3.34 14.29 4.03 15C4.59 15.54 5.25 15.85 6 15.95M16 13H8V20H16V13M21 13.5C21 12.8 20.76 12.21 20.27 11.73S19.2 11 18.5 11H18V16H18.5C19.2 16 19.79 15.76 20.27 15.28S21 14.2 21 13.5Z" /></g></svg>
+
+!define MA_CLOUD_PRINT_OUTLINE(_color)                                 SPRITE_PUT(mdi-cloud-print-outline, _color)
+!define MA_CLOUD_PRINT_OUTLINE(_color, _scale)                         SPRITE_PUT(mdi-cloud-print-outline, _color, _scale)
+!define MA_CLOUD_PRINT_OUTLINE(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA CLOUD PRINT OUTLINE, mdi-cloud-print-outline, _color, _scale)
+!define MA_CLOUD_PRINT_OUTLINE(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA CLOUD PRINT OUTLINE, mdi-cloud-print-outline, _color, _scale, _shape)
+!define MA_CLOUD_PRINT_OUTLINE(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA CLOUD PRINT OUTLINE, _label, mdi-cloud-print-outline, _color, _scale, _shape)
+skinparam folderBackgroundColor<<MA CLOUD PRINT OUTLINE>> White
+
+sprite mdi-fax <svg width="48" height="48"><g transform="scale(2)"><path d="M19 9H18V4H8V20H22V12C22 10.34 20.66 9 19 9M10 6H16V9H10V6M14 17H10V12H14V17M16 17C15.45 17 15 16.55 15 16C15 15.45 15.45 15 16 15C16.55 15 17 15.45 17 16C17 16.55 16.55 17 16 17M16 14C15.45 14 15 13.55 15 13S15.45 12 16 12C16.55 12 17 12.45 17 13S16.55 14 16 14M19 17C18.45 17 18 16.55 18 16C18 15.45 18.45 15 19 15S20 15.45 20 16C20 16.55 19.55 17 19 17M19 14C18.45 14 18 13.55 18 13S18.45 12 19 12 20 12.45 20 13 19.55 14 19 14M4.5 8C3.12 8 2 9.12 2 10.5V18.5C2 19.88 3.12 21 4.5 21S7 19.88 7 18.5V10.5C7 9.12 5.88 8 4.5 8Z" /></g></svg>
+
+!define MA_FAX(_color)                                 SPRITE_PUT(mdi-fax, _color)
+!define MA_FAX(_color, _scale)                         SPRITE_PUT(mdi-fax, _color, _scale)
+!define MA_FAX(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA FAX, mdi-fax, _color, _scale)
+!define MA_FAX(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA FAX, mdi-fax, _color, _scale, _shape)
+!define MA_FAX(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA FAX, _label, mdi-fax, _color, _scale, _shape)
+skinparam folderBackgroundColor<<MA FAX>> White
+
+sprite mdi-paper-roll <svg width="48" height="48"><g transform="scale(2)"><path d="M9 3C5.69 3 3.14 5.69 3 9V21H12V13.46C13.1 14.45 14.5 15 16 15C19.31 15 22 12.31 22 9C22 5.69 19.31 3 16 3H9M16 5C18.21 5 20 6.79 20 9C20 11.21 18.21 13 16 13C13.79 13 12 11.21 12 9C12 6.79 13.79 5 16 5M16 7.25C15.03 7.25 14.25 8.03 14.25 9C14.25 9.97 15.03 10.75 16 10.75C16.97 10.75 17.75 9.97 17.75 9C17.75 8.03 16.97 7.25 16 7.25M4 12H5V13H4V12M6 12H7V13H6V12M8 12H9V13H8V12M10 12H11V13H10V12Z" /></g></svg>
+
+!define MA_PAPER_ROLL(_color)                                 SPRITE_PUT(mdi-paper-roll, _color)
+!define MA_PAPER_ROLL(_color, _scale)                         SPRITE_PUT(mdi-paper-roll, _color, _scale)
+!define MA_PAPER_ROLL(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA PAPER ROLL, mdi-paper-roll, _color, _scale)
+!define MA_PAPER_ROLL(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA PAPER ROLL, mdi-paper-roll, _color, _scale, _shape)
+!define MA_PAPER_ROLL(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA PAPER ROLL, _label, mdi-paper-roll, _color, _scale, _shape)
+skinparam folderBackgroundColor<<MA PAPER ROLL>> White
+
+sprite mdi-paper-roll-outline <svg width="48" height="48"><g transform="scale(2)"><path d="M9 3C5.69 3 3.14 5.69 3 9V21H12V13.46C13.1 14.45 14.5 15 16 15C19.31 15 22 12.31 22 9C22 5.69 19.31 3 16 3H9M9 5H11.54C10.55 6.1 10 7.5 10 9V12H9V13H10V19H5V13H6V12H5V9C5 6.79 6.79 5 9 5M16 5C18.21 5 20 6.79 20 9C20 11.21 18.21 13 16 13C13.79 13 12 11.21 12 9C12 6.79 13.79 5 16 5M16 7.25C15.03 7.25 14.25 8.03 14.25 9C14.25 9.97 15.03 10.75 16 10.75C16.97 10.75 17.75 9.97 17.75 9C17.75 8.03 16.97 7.25 16 7.25M7 12V13H8V12H7Z" /></g></svg>
+
+!define MA_PAPER_ROLL_OUTLINE(_color)                                 SPRITE_PUT(mdi-paper-roll-outline, _color)
+!define MA_PAPER_ROLL_OUTLINE(_color, _scale)                         SPRITE_PUT(mdi-paper-roll-outline, _color, _scale)
+!define MA_PAPER_ROLL_OUTLINE(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA PAPER ROLL OUTLINE, mdi-paper-roll-outline, _color, _scale)
+!define MA_PAPER_ROLL_OUTLINE(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA PAPER ROLL OUTLINE, mdi-paper-roll-outline, _color, _scale, _shape)
+!define MA_PAPER_ROLL_OUTLINE(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA PAPER ROLL OUTLINE, _label, mdi-paper-roll-outline, _color, _scale, _shape)
+skinparam folderBackgroundColor<<MA PAPER ROLL OUTLINE>> White
+
+sprite mdi-printer <svg width="48" height="48"><g transform="scale(2)"><path d="M18,3H6V7H18M19,12A1,1 0 0,1 18,11A1,1 0 0,1 19,10A1,1 0 0,1 20,11A1,1 0 0,1 19,12M16,19H8V14H16M19,8H5A3,3 0 0,0 2,11V17H6V21H18V17H22V11A3,3 0 0,0 19,8Z" /></g></svg>
+
+!define MA_PRINTER(_color)                                 SPRITE_PUT(mdi-printer, _color)
+!define MA_PRINTER(_color, _scale)                         SPRITE_PUT(mdi-printer, _color, _scale)
+!define MA_PRINTER(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA PRINTER, mdi-printer, _color, _scale)
+!define MA_PRINTER(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA PRINTER, mdi-printer, _color, _scale, _shape)
+!define MA_PRINTER(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA PRINTER, _label, mdi-printer, _color, _scale, _shape)
+skinparam folderBackgroundColor<<MA PRINTER>> White
+
+sprite mdi-printer-3d <svg width="48" height="48"><g transform="scale(2)"><path d="M19,6A1,1 0 0,0 20,5A1,1 0 0,0 19,4A1,1 0 0,0 18,5A1,1 0 0,0 19,6M19,2A3,3 0 0,1 22,5V11H18V7H6V11H2V5A3,3 0 0,1 5,2H19M18,18.25C18,18.63 17.79,18.96 17.47,19.13L12.57,21.82C12.4,21.94 12.21,22 12,22C11.79,22 11.59,21.94 11.43,21.82L6.53,19.13C6.21,18.96 6,18.63 6,18.25V13C6,12.62 6.21,12.29 6.53,12.12L11.43,9.68C11.59,9.56 11.79,9.5 12,9.5C12.21,9.5 12.4,9.56 12.57,9.68L17.47,12.12C17.79,12.29 18,12.62 18,13V18.25M12,11.65L9.04,13L12,14.6L14.96,13L12,11.65M8,17.66L11,19.29V16.33L8,14.71V17.66M16,17.66V14.71L13,16.33V19.29L16,17.66Z" /></g></svg>
+
+!define MA_PRINTER_3D(_color)                                 SPRITE_PUT(mdi-printer-3d, _color)
+!define MA_PRINTER_3D(_color, _scale)                         SPRITE_PUT(mdi-printer-3d, _color, _scale)
+!define MA_PRINTER_3D(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA PRINTER 3D, mdi-printer-3d, _color, _scale)
+!define MA_PRINTER_3D(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA PRINTER 3D, mdi-printer-3d, _color, _scale, _shape)
+!define MA_PRINTER_3D(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA PRINTER 3D, _label, mdi-printer-3d, _color, _scale, _shape)
+skinparam folderBackgroundColor<<MA PRINTER 3D>> White
+
+sprite mdi-printer-3d-nozzle <svg width="48" height="48"><g transform="scale(2)"><path d="M7,2H17V8H19V13H16.5L13,17H11L7.5,13H5V8H7V2M10,22H2V20H10A1,1 0 0,0 11,19V18H13V19A3,3 0 0,1 10,22Z" /></g></svg>
+
+!define MA_PRINTER_3D_NOZZLE(_color)                                 SPRITE_PUT(mdi-printer-3d-nozzle, _color)
+!define MA_PRINTER_3D_NOZZLE(_color, _scale)                         SPRITE_PUT(mdi-printer-3d-nozzle, _color, _scale)
+!define MA_PRINTER_3D_NOZZLE(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA PRINTER 3D NOZZLE, mdi-printer-3d-nozzle, _color, _scale)
+!define MA_PRINTER_3D_NOZZLE(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA PRINTER 3D NOZZLE, mdi-printer-3d-nozzle, _color, _scale, _shape)
+!define MA_PRINTER_3D_NOZZLE(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA PRINTER 3D NOZZLE, _label, mdi-printer-3d-nozzle, _color, _scale, _shape)
+skinparam folderBackgroundColor<<MA PRINTER 3D NOZZLE>> White
+
+sprite mdi-printer-3d-nozzle-alert <svg width="48" height="48"><g transform="scale(2)"><path d="M7 2H17V8H19V13H16.5L13 17H11L7.5 13H5V8H7V2M10 22H2V20H10C10.6 20 11 19.5 11 19V18H13V19C13 20.7 11.7 22 10 22M21 13V7H23V13H21M21 17V15H23V17H21Z" /></g></svg>
+
+!define MA_PRINTER_3D_NOZZLE_ALERT(_color)                                 SPRITE_PUT(mdi-printer-3d-nozzle-alert, _color)
+!define MA_PRINTER_3D_NOZZLE_ALERT(_color, _scale)                         SPRITE_PUT(mdi-printer-3d-nozzle-alert, _color, _scale)
+!define MA_PRINTER_3D_NOZZLE_ALERT(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA PRINTER 3D NOZZLE ALERT, mdi-printer-3d-nozzle-alert, _color, _scale)
+!define MA_PRINTER_3D_NOZZLE_ALERT(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA PRINTER 3D NOZZLE ALERT, mdi-printer-3d-nozzle-alert, _color, _scale, _shape)
+!define MA_PRINTER_3D_NOZZLE_ALERT(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA PRINTER 3D NOZZLE ALERT, _label, mdi-printer-3d-nozzle-alert, _color, _scale, _shape)
+skinparam folderBackgroundColor<<MA PRINTER 3D NOZZLE ALERT>> White
+
+sprite mdi-printer-3d-nozzle-alert-outline <svg width="48" height="48"><g transform="scale(2)"><path d="M7 2H17V7H19V13H16.5L13 17H11L7.5 13H5V7H7V2M10 22H2V20H10C10.6 20 11 19.5 11 19V18H13V19C13 20.7 11.7 22 10 22M7 9V11H8.5L12 15L15.5 11H17V9H15V4H9V9H7M21 13V7H23V13H21M21 17V15H23V17H21Z" /></g></svg>
+
+!define MA_PRINTER_3D_NOZZLE_ALERT_OUTLINE(_color)                                 SPRITE_PUT(mdi-printer-3d-nozzle-alert-outline, _color)
+!define MA_PRINTER_3D_NOZZLE_ALERT_OUTLINE(_color, _scale)                         SPRITE_PUT(mdi-printer-3d-nozzle-alert-outline, _color, _scale)
+!define MA_PRINTER_3D_NOZZLE_ALERT_OUTLINE(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA PRINTER 3D NOZZLE ALERT OUTLINE, mdi-printer-3d-nozzle-alert-outline, _color, _scale)
+!define MA_PRINTER_3D_NOZZLE_ALERT_OUTLINE(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA PRINTER 3D NOZZLE ALERT OUTLINE, mdi-printer-3d-nozzle-alert-outline, _color, _scale, _shape)
+!define MA_PRINTER_3D_NOZZLE_ALERT_OUTLINE(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA PRINTER 3D NOZZLE ALERT OUTLINE, _label, mdi-printer-3d-nozzle-alert-outline, _color, _scale, _shape)
+skinparam folderBackgroundColor<<MA PRINTER 3D NOZZLE ALERT OUTLINE>> White
+
+sprite mdi-printer-3d-nozzle-heat <svg width="48" height="48"><g transform="scale(2)"><path d="M4 2H14V7H16V13H13.5L10 17H8L4.5 13H2V7H4V2M23 14.5L21.6 16.7L23 18.9L21 22L19.2 21.1L20.7 18.9L19.2 16.7L21.2 13.6L23 14.5M18.7 14.5L17.2 16.7L18.7 18.9L16.7 22L14.9 21.1L16.3 18.9L14.9 16.7L16.9 13.6L18.7 14.5" /></g></svg>
+
+!define MA_PRINTER_3D_NOZZLE_HEAT(_color)                                 SPRITE_PUT(mdi-printer-3d-nozzle-heat, _color)
+!define MA_PRINTER_3D_NOZZLE_HEAT(_color, _scale)                         SPRITE_PUT(mdi-printer-3d-nozzle-heat, _color, _scale)
+!define MA_PRINTER_3D_NOZZLE_HEAT(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA PRINTER 3D NOZZLE HEAT, mdi-printer-3d-nozzle-heat, _color, _scale)
+!define MA_PRINTER_3D_NOZZLE_HEAT(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA PRINTER 3D NOZZLE HEAT, mdi-printer-3d-nozzle-heat, _color, _scale, _shape)
+!define MA_PRINTER_3D_NOZZLE_HEAT(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA PRINTER 3D NOZZLE HEAT, _label, mdi-printer-3d-nozzle-heat, _color, _scale, _shape)
+skinparam folderBackgroundColor<<MA PRINTER 3D NOZZLE HEAT>> White
+
+sprite mdi-printer-3d-nozzle-heat-outline <svg width="48" height="48"><g transform="scale(2)"><path d="M23 14.5L21.6 16.7L23 18.9L21 22L19.2 21.1L20.7 18.9L19.2 16.7L21.2 13.6L23 14.5M18.7 14.5L17.2 16.7L18.7 18.9L16.7 22L14.9 21.1L16.3 18.9L14.9 16.7L16.9 13.6L18.7 14.5M4 2H14V7H16V13H13.5L10 17H8L4.5 13H2V7H4V2M4 9V11H5.5L9 15L12.5 11H14V9H12V4H6V9H4Z" /></g></svg>
+
+!define MA_PRINTER_3D_NOZZLE_HEAT_OUTLINE(_color)                                 SPRITE_PUT(mdi-printer-3d-nozzle-heat-outline, _color)
+!define MA_PRINTER_3D_NOZZLE_HEAT_OUTLINE(_color, _scale)                         SPRITE_PUT(mdi-printer-3d-nozzle-heat-outline, _color, _scale)
+!define MA_PRINTER_3D_NOZZLE_HEAT_OUTLINE(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA PRINTER 3D NOZZLE HEAT OUTLINE, mdi-printer-3d-nozzle-heat-outline, _color, _scale)
+!define MA_PRINTER_3D_NOZZLE_HEAT_OUTLINE(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA PRINTER 3D NOZZLE HEAT OUTLINE, mdi-printer-3d-nozzle-heat-outline, _color, _scale, _shape)
+!define MA_PRINTER_3D_NOZZLE_HEAT_OUTLINE(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA PRINTER 3D NOZZLE HEAT OUTLINE, _label, mdi-printer-3d-nozzle-heat-outline, _color, _scale, _shape)
+skinparam folderBackgroundColor<<MA PRINTER 3D NOZZLE HEAT OUTLINE>> White
+
+sprite mdi-printer-3d-nozzle-off <svg width="48" height="48"><g transform="scale(2)"><path d="M20.8 22.7L14 15.9L13 17H11L7.5 13H5V8H6.1L1.1 3L2.4 1.7L22.1 21.4L20.8 22.7M11 19C11 19.6 10.6 20 10 20H2V22H10C11.7 22 13 20.7 13 19V18H11V19M19 13V8H17V2H7V3.8L16.2 13H19Z" /></g></svg>
+
+!define MA_PRINTER_3D_NOZZLE_OFF(_color)                                 SPRITE_PUT(mdi-printer-3d-nozzle-off, _color)
+!define MA_PRINTER_3D_NOZZLE_OFF(_color, _scale)                         SPRITE_PUT(mdi-printer-3d-nozzle-off, _color, _scale)
+!define MA_PRINTER_3D_NOZZLE_OFF(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA PRINTER 3D NOZZLE OFF, mdi-printer-3d-nozzle-off, _color, _scale)
+!define MA_PRINTER_3D_NOZZLE_OFF(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA PRINTER 3D NOZZLE OFF, mdi-printer-3d-nozzle-off, _color, _scale, _shape)
+!define MA_PRINTER_3D_NOZZLE_OFF(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA PRINTER 3D NOZZLE OFF, _label, mdi-printer-3d-nozzle-off, _color, _scale, _shape)
+skinparam folderBackgroundColor<<MA PRINTER 3D NOZZLE OFF>> White
+
+sprite mdi-printer-3d-nozzle-off-outline <svg width="48" height="48"><g transform="scale(2)"><path d="M22.1 21.5L2.4 1.7L1.1 3L5.1 7H5V13H7.5L11 17H13L14 15.9L20.9 22.8L22.1 21.5M12 15L8.5 11H7V9H7.1L12.5 14.4L12 15M11 18H13V19C13 20.7 11.7 22 10 22H2V20H10C10.6 20 11 19.6 11 19V18M9 5.8L7 3.8V2H17V7H19V13H16.2L14.9 11.7L15.5 11H17V9H15V4H9V5.8Z" /></g></svg>
+
+!define MA_PRINTER_3D_NOZZLE_OFF_OUTLINE(_color)                                 SPRITE_PUT(mdi-printer-3d-nozzle-off-outline, _color)
+!define MA_PRINTER_3D_NOZZLE_OFF_OUTLINE(_color, _scale)                         SPRITE_PUT(mdi-printer-3d-nozzle-off-outline, _color, _scale)
+!define MA_PRINTER_3D_NOZZLE_OFF_OUTLINE(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA PRINTER 3D NOZZLE OFF OUTLINE, mdi-printer-3d-nozzle-off-outline, _color, _scale)
+!define MA_PRINTER_3D_NOZZLE_OFF_OUTLINE(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA PRINTER 3D NOZZLE OFF OUTLINE, mdi-printer-3d-nozzle-off-outline, _color, _scale, _shape)
+!define MA_PRINTER_3D_NOZZLE_OFF_OUTLINE(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA PRINTER 3D NOZZLE OFF OUTLINE, _label, mdi-printer-3d-nozzle-off-outline, _color, _scale, _shape)
+skinparam folderBackgroundColor<<MA PRINTER 3D NOZZLE OFF OUTLINE>> White
+
+sprite mdi-printer-3d-nozzle-outline <svg width="48" height="48"><g transform="scale(2)"><path d="M7,2H17V7H19V13H16.5L13,17H11L7.5,13H5V7H7V2M10,22H2V20H10A1,1 0 0,0 11,19V18H13V19A3,3 0 0,1 10,22M7,9V11H8.5L12,15L15.5,11H17V9H15V4H9V9H7Z" /></g></svg>
+
+!define MA_PRINTER_3D_NOZZLE_OUTLINE(_color)                                 SPRITE_PUT(mdi-printer-3d-nozzle-outline, _color)
+!define MA_PRINTER_3D_NOZZLE_OUTLINE(_color, _scale)                         SPRITE_PUT(mdi-printer-3d-nozzle-outline, _color, _scale)
+!define MA_PRINTER_3D_NOZZLE_OUTLINE(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA PRINTER 3D NOZZLE OUTLINE, mdi-printer-3d-nozzle-outline, _color, _scale)
+!define MA_PRINTER_3D_NOZZLE_OUTLINE(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA PRINTER 3D NOZZLE OUTLINE, mdi-printer-3d-nozzle-outline, _color, _scale, _shape)
+!define MA_PRINTER_3D_NOZZLE_OUTLINE(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA PRINTER 3D NOZZLE OUTLINE, _label, mdi-printer-3d-nozzle-outline, _color, _scale, _shape)
+skinparam folderBackgroundColor<<MA PRINTER 3D NOZZLE OUTLINE>> White
+
+sprite mdi-printer-3d-off <svg width="48" height="48"><g transform="scale(2)"><path d="M2.3 2L1 3.3L2.1 4.4C2 4.6 2 4.8 2 5V11H6V8.3L8.7 11L6.5 12.1C6.2 12.3 6 12.6 6 13V18.2C6 18.6 6.2 18.9 6.5 19.1L11.4 21.8C11.6 21.9 11.8 22 12 22S12.4 21.9 12.6 21.8L17.1 19.3L20.8 23L22.1 21.7L2.3 2M4.9 2H4.8L9.8 7H18V11H22V5C22 3.3 20.7 2 19 2H4.9C5 2 5 2 4.9 2M19 4C19.6 4 20 4.4 20 5S19.6 6 19 6 18 5.6 18 5 18.4 4 19 4M12.4 9.6L18 15.2V13C18 12.6 17.8 12.3 17.5 12.1L12.6 9.7C12.5 9.7 12.5 9.6 12.4 9.6M10.2 12.5L12.2 14.5L12 14.6L9 13L10.2 12.5M8 14.7L11 16.3V19.3L8 17.7V14.7M13.7 16L15.6 17.9L13 19.3V16.3L13.7 16Z" /></g></svg>
+
+!define MA_PRINTER_3D_OFF(_color)                                 SPRITE_PUT(mdi-printer-3d-off, _color)
+!define MA_PRINTER_3D_OFF(_color, _scale)                         SPRITE_PUT(mdi-printer-3d-off, _color, _scale)
+!define MA_PRINTER_3D_OFF(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA PRINTER 3D OFF, mdi-printer-3d-off, _color, _scale)
+!define MA_PRINTER_3D_OFF(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA PRINTER 3D OFF, mdi-printer-3d-off, _color, _scale, _shape)
+!define MA_PRINTER_3D_OFF(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA PRINTER 3D OFF, _label, mdi-printer-3d-off, _color, _scale, _shape)
+skinparam folderBackgroundColor<<MA PRINTER 3D OFF>> White
+
+sprite mdi-printer-alert <svg width="48" height="48"><g transform="scale(2)"><path d="M16 3H4V7H16M17 12C16.4 12 16 11.6 16 11S16.4 10 17 10 18 10.4 18 11 17.6 12 17 12M14 19H6V14H14M17 8H3C1.3 8 0 9.3 0 11V17H4V21H16V17H20V11C20 9.3 18.7 8 17 8M24 13H22V7H24V13M24 17H22V15H24V17Z" /></g></svg>
+
+!define MA_PRINTER_ALERT(_color)                                 SPRITE_PUT(mdi-printer-alert, _color)
+!define MA_PRINTER_ALERT(_color, _scale)                         SPRITE_PUT(mdi-printer-alert, _color, _scale)
+!define MA_PRINTER_ALERT(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA PRINTER ALERT, mdi-printer-alert, _color, _scale)
+!define MA_PRINTER_ALERT(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA PRINTER ALERT, mdi-printer-alert, _color, _scale, _shape)
+!define MA_PRINTER_ALERT(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA PRINTER ALERT, _label, mdi-printer-alert, _color, _scale, _shape)
+skinparam folderBackgroundColor<<MA PRINTER ALERT>> White
+
+sprite mdi-printer-check <svg width="48" height="48"><g transform="scale(2)"><path d="M18 7H6V3H18V7M6 21V17H2V11C2 9.34 3.34 8 5 8H19C20.66 8 22 9.34 22 11V13.81C21.12 13.3 20.1 13 19 13C17.77 13 16.64 13.37 15.69 14H8V19H13C13 19.7 13.13 20.37 13.35 21H6M18 11C18 11.55 18.45 12 19 12S20 11.55 20 11 19.55 10 19 10 18 10.45 18 11M23.5 17L22 15.5L18.5 19L16.5 17L15 18.5L18.5 22L23.5 17" /></g></svg>
+
+!define MA_PRINTER_CHECK(_color)                                 SPRITE_PUT(mdi-printer-check, _color)
+!define MA_PRINTER_CHECK(_color, _scale)                         SPRITE_PUT(mdi-printer-check, _color, _scale)
+!define MA_PRINTER_CHECK(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA PRINTER CHECK, mdi-printer-check, _color, _scale)
+!define MA_PRINTER_CHECK(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA PRINTER CHECK, mdi-printer-check, _color, _scale, _shape)
+!define MA_PRINTER_CHECK(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA PRINTER CHECK, _label, mdi-printer-check, _color, _scale, _shape)
+skinparam folderBackgroundColor<<MA PRINTER CHECK>> White
+
+sprite mdi-printer-eye <svg width="48" height="48"><g transform="scale(2)"><path d="M9.8 21C9.6 20.6 9.3 20.2 9.2 19.7L8.8 19H8V14H13C14.2 13.4 15.6 13 17 13C18.9 13 20.6 13.6 22 14.6V11C22 9.3 20.7 8 19 8H5C3.3 8 2 9.3 2 11V17H6V21H9.8M19 10C19.6 10 20 10.4 20 11S19.6 12 19 12 18 11.6 18 11 18.4 10 19 10M18 7H6V3H18V7M17 18C17.6 18 18 18.4 18 19S17.6 20 17 20 16 19.6 16 19 16.4 18 17 18M17 15C14.3 15 11.9 16.7 11 19C11.9 21.3 14.3 23 17 23S22.1 21.3 23 19C22.1 16.7 19.7 15 17 15M17 21.5C15.6 21.5 14.5 20.4 14.5 19S15.6 16.5 17 16.5 19.5 17.6 19.5 19 18.4 21.5 17 21.5Z" /></g></svg>
+
+!define MA_PRINTER_EYE(_color)                                 SPRITE_PUT(mdi-printer-eye, _color)
+!define MA_PRINTER_EYE(_color, _scale)                         SPRITE_PUT(mdi-printer-eye, _color, _scale)
+!define MA_PRINTER_EYE(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA PRINTER EYE, mdi-printer-eye, _color, _scale)
+!define MA_PRINTER_EYE(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA PRINTER EYE, mdi-printer-eye, _color, _scale, _shape)
+!define MA_PRINTER_EYE(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA PRINTER EYE, _label, mdi-printer-eye, _color, _scale, _shape)
+skinparam folderBackgroundColor<<MA PRINTER EYE>> White
+
+sprite mdi-printer-off <svg width="48" height="48"><g transform="scale(2)"><path d="M6,3V4.18L8.82,7H18V3H6M2.28,3L1,4.27L4.75,8C3.19,8.15 2,9.44 2,11V17H6V21H17.73L19.73,23L21,21.72L2.28,3M9.82,8L18.82,17H22V11A3,3 0 0,0 19,8H9.82M19,10A1,1 0 0,1 20,11A1,1 0 0,1 19,12A1,1 0 0,1 18,11A1,1 0 0,1 19,10M8,14H10.73L15.73,19H8V14Z" /></g></svg>
+
+!define MA_PRINTER_OFF(_color)                                 SPRITE_PUT(mdi-printer-off, _color)
+!define MA_PRINTER_OFF(_color, _scale)                         SPRITE_PUT(mdi-printer-off, _color, _scale)
+!define MA_PRINTER_OFF(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA PRINTER OFF, mdi-printer-off, _color, _scale)
+!define MA_PRINTER_OFF(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA PRINTER OFF, mdi-printer-off, _color, _scale, _shape)
+!define MA_PRINTER_OFF(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA PRINTER OFF, _label, mdi-printer-off, _color, _scale, _shape)
+skinparam folderBackgroundColor<<MA PRINTER OFF>> White
+
+sprite mdi-printer-off-outline <svg width="48" height="48"><g transform="scale(2)"><path d="M1.41 1.6L22.36 22.55L20.95 23.96L18 21H6V17H2V11C2 9.34 3.34 8 5 8L0 3L1.41 1.6M6 15V13H10L7 10H5C4.45 10 4 10.45 4 11V15H6M8 19H16L12 15H8V19M8 5V5.36L6 3.36V3H18V8H19C20.66 8 22 9.34 22 11V17H19.66L15.66 13H18V15L20 15V11C20 10.45 19.55 10 19 10H12.66L10.66 8H16V5H8M19 11.5C19 12.06 18.55 12.5 18 12.5C17.45 12.5 17 12.06 17 11.5C17 10.96 17.45 10.5 18 10.5C18.55 10.5 19 10.96 19 11.5Z" /></g></svg>
+
+!define MA_PRINTER_OFF_OUTLINE(_color)                                 SPRITE_PUT(mdi-printer-off-outline, _color)
+!define MA_PRINTER_OFF_OUTLINE(_color, _scale)                         SPRITE_PUT(mdi-printer-off-outline, _color, _scale)
+!define MA_PRINTER_OFF_OUTLINE(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA PRINTER OFF OUTLINE, mdi-printer-off-outline, _color, _scale)
+!define MA_PRINTER_OFF_OUTLINE(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA PRINTER OFF OUTLINE, mdi-printer-off-outline, _color, _scale, _shape)
+!define MA_PRINTER_OFF_OUTLINE(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA PRINTER OFF OUTLINE, _label, mdi-printer-off-outline, _color, _scale, _shape)
+skinparam folderBackgroundColor<<MA PRINTER OFF OUTLINE>> White
+
+sprite mdi-printer-outline <svg width="48" height="48"><g transform="scale(2)"><path d="M19 8C20.66 8 22 9.34 22 11V17H18V21H6V17H2V11C2 9.34 3.34 8 5 8H6V3H18V8H19M8 5V8H16V5H8M16 19V15H8V19H16M18 15H20V11C20 10.45 19.55 10 19 10H5C4.45 10 4 10.45 4 11V15H6V13H18V15M19 11.5C19 12.05 18.55 12.5 18 12.5C17.45 12.5 17 12.05 17 11.5C17 10.95 17.45 10.5 18 10.5C18.55 10.5 19 10.95 19 11.5Z" /></g></svg>
+
+!define MA_PRINTER_OUTLINE(_color)                                 SPRITE_PUT(mdi-printer-outline, _color)
+!define MA_PRINTER_OUTLINE(_color, _scale)                         SPRITE_PUT(mdi-printer-outline, _color, _scale)
+!define MA_PRINTER_OUTLINE(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA PRINTER OUTLINE, mdi-printer-outline, _color, _scale)
+!define MA_PRINTER_OUTLINE(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA PRINTER OUTLINE, mdi-printer-outline, _color, _scale, _shape)
+!define MA_PRINTER_OUTLINE(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA PRINTER OUTLINE, _label, mdi-printer-outline, _color, _scale, _shape)
+skinparam folderBackgroundColor<<MA PRINTER OUTLINE>> White
+
+sprite mdi-printer-pos <svg width="48" height="48"><g transform="scale(2)"><path d="M18 10H6A2 2 0 0 0 4 12V19H20V12A2 2 0 0 0 18 10M18 14H14V12H18M17 9H7V4H17Z" /></g></svg>
+
+!define MA_PRINTER_POS(_color)                                 SPRITE_PUT(mdi-printer-pos, _color)
+!define MA_PRINTER_POS(_color, _scale)                         SPRITE_PUT(mdi-printer-pos, _color, _scale)
+!define MA_PRINTER_POS(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA PRINTER POS, mdi-printer-pos, _color, _scale)
+!define MA_PRINTER_POS(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA PRINTER POS, mdi-printer-pos, _color, _scale, _shape)
+!define MA_PRINTER_POS(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA PRINTER POS, _label, mdi-printer-pos, _color, _scale, _shape)
+skinparam folderBackgroundColor<<MA PRINTER POS>> White
+
+sprite mdi-printer-pos-alert <svg width="48" height="48"><g transform="scale(2)"><path d="M16 10H4C2.9 10 2 10.9 2 12V19H18V12C18 10.9 17.11 10 16 10M16 14H12V12H16V14M15 9H5V4H15V9M22 7V13H20V7H22M20 15H22V17H20V15Z" /></g></svg>
+
+!define MA_PRINTER_POS_ALERT(_color)                                 SPRITE_PUT(mdi-printer-pos-alert, _color)
+!define MA_PRINTER_POS_ALERT(_color, _scale)                         SPRITE_PUT(mdi-printer-pos-alert, _color, _scale)
+!define MA_PRINTER_POS_ALERT(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA PRINTER POS ALERT, mdi-printer-pos-alert, _color, _scale)
+!define MA_PRINTER_POS_ALERT(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA PRINTER POS ALERT, mdi-printer-pos-alert, _color, _scale, _shape)
+!define MA_PRINTER_POS_ALERT(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA PRINTER POS ALERT, _label, mdi-printer-pos-alert, _color, _scale, _shape)
+skinparam folderBackgroundColor<<MA PRINTER POS ALERT>> White
+
+sprite mdi-printer-pos-alert-outline <svg width="48" height="48"><g transform="scale(2)"><path d="M15 15H11V13H15V15M18 12V19H2V12C2 10.9 2.9 10 4 10H5V4H15V10H16C17.11 10 18 10.9 18 12M7 10H13V6H7V10M16 12H4V17H16V12M20 17H22V15H20V17M20 7V13H22V7H20Z" /></g></svg>
+
+!define MA_PRINTER_POS_ALERT_OUTLINE(_color)                                 SPRITE_PUT(mdi-printer-pos-alert-outline, _color)
+!define MA_PRINTER_POS_ALERT_OUTLINE(_color, _scale)                         SPRITE_PUT(mdi-printer-pos-alert-outline, _color, _scale)
+!define MA_PRINTER_POS_ALERT_OUTLINE(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA PRINTER POS ALERT OUTLINE, mdi-printer-pos-alert-outline, _color, _scale)
+!define MA_PRINTER_POS_ALERT_OUTLINE(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA PRINTER POS ALERT OUTLINE, mdi-printer-pos-alert-outline, _color, _scale, _shape)
+!define MA_PRINTER_POS_ALERT_OUTLINE(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA PRINTER POS ALERT OUTLINE, _label, mdi-printer-pos-alert-outline, _color, _scale, _shape)
+skinparam folderBackgroundColor<<MA PRINTER POS ALERT OUTLINE>> White
+
+sprite mdi-printer-pos-cancel <svg width="48" height="48"><g transform="scale(2)"><path d="M17 9H7V4H17V9M12 18.5C12 18.67 12 18.83 12.03 19H4V12C4 10.9 4.89 10 6 10H18C19.11 10 20 10.9 20 12V12.18C19.5 12.07 19 12 18.5 12C14.91 12 12 14.91 12 18.5M10 12H6V14H10V12M23 18.5C23 21 21 23 18.5 23S14 21 14 18.5 16 14 18.5 14 23 16 23 18.5M20 21.08L15.92 17C15.65 17.42 15.5 17.94 15.5 18.5C15.5 20.16 16.84 21.5 18.5 21.5C19.06 21.5 19.58 21.35 20 21.08M21.5 18.5C21.5 16.84 20.16 15.5 18.5 15.5C17.94 15.5 17.42 15.65 17 15.92L21.08 20C21.35 19.58 21.5 19.06 21.5 18.5Z" /></g></svg>
+
+!define MA_PRINTER_POS_CANCEL(_color)                                 SPRITE_PUT(mdi-printer-pos-cancel, _color)
+!define MA_PRINTER_POS_CANCEL(_color, _scale)                         SPRITE_PUT(mdi-printer-pos-cancel, _color, _scale)
+!define MA_PRINTER_POS_CANCEL(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA PRINTER POS CANCEL, mdi-printer-pos-cancel, _color, _scale)
+!define MA_PRINTER_POS_CANCEL(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA PRINTER POS CANCEL, mdi-printer-pos-cancel, _color, _scale, _shape)
+!define MA_PRINTER_POS_CANCEL(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA PRINTER POS CANCEL, _label, mdi-printer-pos-cancel, _color, _scale, _shape)
+skinparam folderBackgroundColor<<MA PRINTER POS CANCEL>> White
+
+sprite mdi-printer-pos-cancel-outline <svg width="48" height="48"><g transform="scale(2)"><path d="M18.5 14C16 14 14 16 14 18.5S16 23 18.5 23 23 21 23 18.5 21 14 18.5 14M18.5 21.5C16.84 21.5 15.5 20.16 15.5 18.5C15.5 17.94 15.65 17.42 15.92 17L20 21.08C19.58 21.35 19.06 21.5 18.5 21.5M21.08 20L17 15.92C17.42 15.65 17.94 15.5 18.5 15.5C20.16 15.5 21.5 16.84 21.5 18.5C21.5 19.06 21.35 19.58 21.08 20M7 15V13H11V15H7M6 17V12H20C20 10.9 19.11 10 18 10H17V4H7V10H6C4.89 10 4 10.9 4 12V19H12.03C12 18.83 12 18.67 12 18.5C12 18 12.07 17.5 12.18 17H6M9 6H15V10H9V6Z" /></g></svg>
+
+!define MA_PRINTER_POS_CANCEL_OUTLINE(_color)                                 SPRITE_PUT(mdi-printer-pos-cancel-outline, _color)
+!define MA_PRINTER_POS_CANCEL_OUTLINE(_color, _scale)                         SPRITE_PUT(mdi-printer-pos-cancel-outline, _color, _scale)
+!define MA_PRINTER_POS_CANCEL_OUTLINE(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA PRINTER POS CANCEL OUTLINE, mdi-printer-pos-cancel-outline, _color, _scale)
+!define MA_PRINTER_POS_CANCEL_OUTLINE(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA PRINTER POS CANCEL OUTLINE, mdi-printer-pos-cancel-outline, _color, _scale, _shape)
+!define MA_PRINTER_POS_CANCEL_OUTLINE(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA PRINTER POS CANCEL OUTLINE, _label, mdi-printer-pos-cancel-outline, _color, _scale, _shape)
+skinparam folderBackgroundColor<<MA PRINTER POS CANCEL OUTLINE>> White
+
+sprite mdi-printer-pos-check <svg width="48" height="48"><g transform="scale(2)"><path d="M17 9H7V4H17V9M19 13C15.69 13 13 15.69 13 19H4V12C4 10.9 4.89 10 6 10H18C19.11 10 20 10.9 20 12V13.09C19.67 13.04 19.34 13 19 13M10 12H6V14H10V12M21.34 15.84L17.75 19.43L16.16 17.84L15 19L17.75 22L22.5 17.25L21.34 15.84Z" /></g></svg>
+
+!define MA_PRINTER_POS_CHECK(_color)                                 SPRITE_PUT(mdi-printer-pos-check, _color)
+!define MA_PRINTER_POS_CHECK(_color, _scale)                         SPRITE_PUT(mdi-printer-pos-check, _color, _scale)
+!define MA_PRINTER_POS_CHECK(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA PRINTER POS CHECK, mdi-printer-pos-check, _color, _scale)
+!define MA_PRINTER_POS_CHECK(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA PRINTER POS CHECK, mdi-printer-pos-check, _color, _scale, _shape)
+!define MA_PRINTER_POS_CHECK(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA PRINTER POS CHECK, _label, mdi-printer-pos-check, _color, _scale, _shape)
+skinparam folderBackgroundColor<<MA PRINTER POS CHECK>> White
+
+sprite mdi-printer-pos-check-outline <svg width="48" height="48"><g transform="scale(2)"><path d="M7 15V13H11V15H7M6 17H13.35C13.13 17.63 13 18.3 13 19H4V12C4 10.9 4.89 10 6 10H7V4H17V10H18C19.11 10 20 10.9 20 12V13.09C19.67 13.04 19.34 13 19 13C18.66 13 18.33 13.04 18 13.09V12H6V17M9 10H15V6H9V10M21.34 15.84L17.75 19.43L16.16 17.84L15 19L17.75 22L22.5 17.25L21.34 15.84Z" /></g></svg>
+
+!define MA_PRINTER_POS_CHECK_OUTLINE(_color)                                 SPRITE_PUT(mdi-printer-pos-check-outline, _color)
+!define MA_PRINTER_POS_CHECK_OUTLINE(_color, _scale)                         SPRITE_PUT(mdi-printer-pos-check-outline, _color, _scale)
+!define MA_PRINTER_POS_CHECK_OUTLINE(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA PRINTER POS CHECK OUTLINE, mdi-printer-pos-check-outline, _color, _scale)
+!define MA_PRINTER_POS_CHECK_OUTLINE(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA PRINTER POS CHECK OUTLINE, mdi-printer-pos-check-outline, _color, _scale, _shape)
+!define MA_PRINTER_POS_CHECK_OUTLINE(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA PRINTER POS CHECK OUTLINE, _label, mdi-printer-pos-check-outline, _color, _scale, _shape)
+skinparam folderBackgroundColor<<MA PRINTER POS CHECK OUTLINE>> White
+
+sprite mdi-printer-pos-cog <svg width="48" height="48"><g transform="scale(2)"><path d="M17 9H7V4H17V9M19 12C15.13 12 12 15.13 12 19H4V12C4 10.9 4.89 10 6 10H18C19.11 10 20 10.9 20 12V12.08C19.67 12.03 19.34 12 19 12M10 12H6V14H10V12M23.8 20.4C23.9 20.4 23.9 20.5 23.8 20.6L22.8 22.3C22.7 22.4 22.6 22.4 22.5 22.4L21.3 22C21 22.2 20.8 22.3 20.5 22.5L20.3 23.8C20.3 23.9 20.2 24 20.1 24H18.1C18 24 17.9 23.9 17.8 23.8L17.6 22.5C17.3 22.4 17 22.2 16.8 22L15.6 22.5C15.5 22.5 15.4 22.5 15.3 22.4L14.3 20.7C14.2 20.6 14.3 20.5 14.4 20.4L15.5 19.6V18.6L14.4 17.8C14.3 17.7 14.3 17.6 14.3 17.5L15.3 15.8C15.4 15.7 15.5 15.7 15.6 15.7L16.8 16.2C17.1 16 17.3 15.9 17.6 15.7L17.8 14.4C17.8 14.3 17.9 14.2 18.1 14.2H20.1C20.2 14.2 20.3 14.3 20.3 14.4L20.5 15.7C20.8 15.8 21.1 16 21.4 16.2L22.6 15.7C22.7 15.7 22.9 15.7 22.9 15.8L23.9 17.5C24 17.6 23.9 17.7 23.8 17.8L22.7 18.6V19.6L23.8 20.4M20.5 19C20.5 18.2 19.8 17.5 19 17.5S17.5 18.2 17.5 19 18.2 20.5 19 20.5 20.5 19.8 20.5 19Z" /></g></svg>
+
+!define MA_PRINTER_POS_COG(_color)                                 SPRITE_PUT(mdi-printer-pos-cog, _color)
+!define MA_PRINTER_POS_COG(_color, _scale)                         SPRITE_PUT(mdi-printer-pos-cog, _color, _scale)
+!define MA_PRINTER_POS_COG(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA PRINTER POS COG, mdi-printer-pos-cog, _color, _scale)
+!define MA_PRINTER_POS_COG(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA PRINTER POS COG, mdi-printer-pos-cog, _color, _scale, _shape)
+!define MA_PRINTER_POS_COG(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA PRINTER POS COG, _label, mdi-printer-pos-cog, _color, _scale, _shape)
+skinparam folderBackgroundColor<<MA PRINTER POS COG>> White
+
+sprite mdi-printer-pos-cog-outline <svg width="48" height="48"><g transform="scale(2)"><path d="M22.7 19.6V18.6L23.8 17.8C23.9 17.7 24 17.6 23.9 17.5L22.9 15.8C22.9 15.7 22.7 15.7 22.6 15.7L21.4 16.2C21.1 16 20.8 15.8 20.5 15.7L20.3 14.4C20.3 14.3 20.2 14.2 20.1 14.2H18.1C17.9 14.2 17.8 14.3 17.8 14.4L17.6 15.7C17.3 15.9 17.1 16 16.8 16.2L15.6 15.7C15.5 15.7 15.4 15.7 15.3 15.8L14.3 17.5C14.3 17.6 14.3 17.7 14.4 17.8L15.5 18.6V19.6L14.4 20.4C14.3 20.5 14.2 20.6 14.3 20.7L15.3 22.4C15.4 22.5 15.5 22.5 15.6 22.5L16.8 22C17 22.2 17.3 22.4 17.6 22.5L17.8 23.8C17.9 23.9 18 24 18.1 24H20.1C20.2 24 20.3 23.9 20.3 23.8L20.5 22.5C20.8 22.3 21 22.2 21.3 22L22.5 22.4C22.6 22.4 22.7 22.4 22.8 22.3L23.8 20.6C23.9 20.5 23.9 20.4 23.8 20.4L22.7 19.6M19 20.5C18.2 20.5 17.5 19.8 17.5 19S18.2 17.5 19 17.5 20.5 18.2 20.5 19 19.8 20.5 19 20.5M7 15V13H11V15H7M6 12H20C20 10.9 19.11 10 18 10H17V4H7V10H6C4.89 10 4 10.9 4 12V19H12C12 18.31 12.11 17.63 12.29 17H6V12M9 6H15V10H9V6Z" /></g></svg>
+
+!define MA_PRINTER_POS_COG_OUTLINE(_color)                                 SPRITE_PUT(mdi-printer-pos-cog-outline, _color)
+!define MA_PRINTER_POS_COG_OUTLINE(_color, _scale)                         SPRITE_PUT(mdi-printer-pos-cog-outline, _color, _scale)
+!define MA_PRINTER_POS_COG_OUTLINE(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA PRINTER POS COG OUTLINE, mdi-printer-pos-cog-outline, _color, _scale)
+!define MA_PRINTER_POS_COG_OUTLINE(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA PRINTER POS COG OUTLINE, mdi-printer-pos-cog-outline, _color, _scale, _shape)
+!define MA_PRINTER_POS_COG_OUTLINE(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA PRINTER POS COG OUTLINE, _label, mdi-printer-pos-cog-outline, _color, _scale, _shape)
+skinparam folderBackgroundColor<<MA PRINTER POS COG OUTLINE>> White
+
+sprite mdi-printer-pos-edit <svg width="48" height="48"><g transform="scale(2)"><path d="M17 9H7V4H17V9M19.39 10.74L11.13 19H4V12C4 10.9 4.89 10 6 10H18C18.59 10 19.11 10.26 19.5 10.67C19.45 10.69 19.42 10.71 19.39 10.74M10 12H6V14H10V12M13 19.96V22H15.04L21.17 15.88L19.13 13.83L13 19.96M22.85 13.47L21.53 12.15C21.33 11.95 21 11.95 20.81 12.15L19.83 13.13L21.87 15.17L22.85 14.19C23.05 14 23.05 13.67 22.85 13.47Z" /></g></svg>
+
+!define MA_PRINTER_POS_EDIT(_color)                                 SPRITE_PUT(mdi-printer-pos-edit, _color)
+!define MA_PRINTER_POS_EDIT(_color, _scale)                         SPRITE_PUT(mdi-printer-pos-edit, _color, _scale)
+!define MA_PRINTER_POS_EDIT(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA PRINTER POS EDIT, mdi-printer-pos-edit, _color, _scale)
+!define MA_PRINTER_POS_EDIT(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA PRINTER POS EDIT, mdi-printer-pos-edit, _color, _scale, _shape)
+!define MA_PRINTER_POS_EDIT(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA PRINTER POS EDIT, _label, mdi-printer-pos-edit, _color, _scale, _shape)
+skinparam folderBackgroundColor<<MA PRINTER POS EDIT>> White
+
+sprite mdi-printer-pos-edit-outline <svg width="48" height="48"><g transform="scale(2)"><path d="M6 17V12H18.13L19.39 10.74C19.42 10.71 19.45 10.69 19.5 10.67C19.11 10.26 18.59 10 18 10H17V4H7V10H6C4.89 10 4 10.9 4 12V19H11.13L13.13 17H6M9 6H15V10H9V6M7 15V13H11V15H7M22.85 14.19L21.87 15.17L19.83 13.13L20.81 12.15C21 11.95 21.33 11.95 21.53 12.15L22.85 13.47C23.05 13.67 23.05 14 22.85 14.19M19.13 13.83L21.17 15.87L15.04 22H13V19.96L19.13 13.83Z" /></g></svg>
+
+!define MA_PRINTER_POS_EDIT_OUTLINE(_color)                                 SPRITE_PUT(mdi-printer-pos-edit-outline, _color)
+!define MA_PRINTER_POS_EDIT_OUTLINE(_color, _scale)                         SPRITE_PUT(mdi-printer-pos-edit-outline, _color, _scale)
+!define MA_PRINTER_POS_EDIT_OUTLINE(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA PRINTER POS EDIT OUTLINE, mdi-printer-pos-edit-outline, _color, _scale)
+!define MA_PRINTER_POS_EDIT_OUTLINE(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA PRINTER POS EDIT OUTLINE, mdi-printer-pos-edit-outline, _color, _scale, _shape)
+!define MA_PRINTER_POS_EDIT_OUTLINE(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA PRINTER POS EDIT OUTLINE, _label, mdi-printer-pos-edit-outline, _color, _scale, _shape)
+skinparam folderBackgroundColor<<MA PRINTER POS EDIT OUTLINE>> White
+
+sprite mdi-printer-pos-minus <svg width="48" height="48"><g transform="scale(2)"><path d="M17 9H7V4H17V9M19 13C15.69 13 13 15.69 13 19H4V12C4 10.9 4.89 10 6 10H18C19.11 10 20 10.9 20 12V13.09C19.67 13.04 19.34 13 19 13M10 12H6V14H10V12M15 18V20H23V18H15Z" /></g></svg>
+
+!define MA_PRINTER_POS_MINUS(_color)                                 SPRITE_PUT(mdi-printer-pos-minus, _color)
+!define MA_PRINTER_POS_MINUS(_color, _scale)                         SPRITE_PUT(mdi-printer-pos-minus, _color, _scale)
+!define MA_PRINTER_POS_MINUS(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA PRINTER POS MINUS, mdi-printer-pos-minus, _color, _scale)
+!define MA_PRINTER_POS_MINUS(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA PRINTER POS MINUS, mdi-printer-pos-minus, _color, _scale, _shape)
+!define MA_PRINTER_POS_MINUS(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA PRINTER POS MINUS, _label, mdi-printer-pos-minus, _color, _scale, _shape)
+skinparam folderBackgroundColor<<MA PRINTER POS MINUS>> White
+
+sprite mdi-printer-pos-minus-outline <svg width="48" height="48"><g transform="scale(2)"><path d="M6 12H18V13.09C18.33 13.04 18.66 13 19 13C19.34 13 19.67 13.04 20 13.09V12C20 10.9 19.11 10 18 10H17V4H7V10H6C4.89 10 4 10.9 4 12V19H13C13 18.3 13.13 17.63 13.35 17H6V12M9 6H15V10H9V6M7 15V13H11V15H7M23 18V20H15V18H23Z" /></g></svg>
+
+!define MA_PRINTER_POS_MINUS_OUTLINE(_color)                                 SPRITE_PUT(mdi-printer-pos-minus-outline, _color)
+!define MA_PRINTER_POS_MINUS_OUTLINE(_color, _scale)                         SPRITE_PUT(mdi-printer-pos-minus-outline, _color, _scale)
+!define MA_PRINTER_POS_MINUS_OUTLINE(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA PRINTER POS MINUS OUTLINE, mdi-printer-pos-minus-outline, _color, _scale)
+!define MA_PRINTER_POS_MINUS_OUTLINE(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA PRINTER POS MINUS OUTLINE, mdi-printer-pos-minus-outline, _color, _scale, _shape)
+!define MA_PRINTER_POS_MINUS_OUTLINE(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA PRINTER POS MINUS OUTLINE, _label, mdi-printer-pos-minus-outline, _color, _scale, _shape)
+skinparam folderBackgroundColor<<MA PRINTER POS MINUS OUTLINE>> White
+
+sprite mdi-printer-pos-network <svg width="48" height="48"><g transform="scale(2)"><path d="M17 7H7V2H17V7M22 20V22H15C15 22.55 14.55 23 14 23H10C9.45 23 9 22.55 9 22H2V20H9C9 19.45 9.45 19 10 19H11V17H4V10C4 8.9 4.89 8 6 8H18C19.11 8 20 8.9 20 10V17H13V19H14C14.55 19 15 19.45 15 20H22M18 10H14V12H18V10Z" /></g></svg>
+
+!define MA_PRINTER_POS_NETWORK(_color)                                 SPRITE_PUT(mdi-printer-pos-network, _color)
+!define MA_PRINTER_POS_NETWORK(_color, _scale)                         SPRITE_PUT(mdi-printer-pos-network, _color, _scale)
+!define MA_PRINTER_POS_NETWORK(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA PRINTER POS NETWORK, mdi-printer-pos-network, _color, _scale)
+!define MA_PRINTER_POS_NETWORK(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA PRINTER POS NETWORK, mdi-printer-pos-network, _color, _scale, _shape)
+!define MA_PRINTER_POS_NETWORK(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA PRINTER POS NETWORK, _label, mdi-printer-pos-network, _color, _scale, _shape)
+skinparam folderBackgroundColor<<MA PRINTER POS NETWORK>> White
+
+sprite mdi-printer-pos-network-outline <svg width="48" height="48"><g transform="scale(2)"><path d="M13 11H17V13H13V11M22 20V22H15C15 22.55 14.55 23 14 23H10C9.45 23 9 22.55 9 22H2V20H9C9 19.45 9.45 19 10 19H11V17H4V10C4 8.9 4.89 8 6 8H7V2H17V8H18C19.11 8 20 8.9 20 10V17H13V19H14C14.55 19 15 19.45 15 20H22M9 8H15V4H9V8M18 15V10H6V15H18Z" /></g></svg>
+
+!define MA_PRINTER_POS_NETWORK_OUTLINE(_color)                                 SPRITE_PUT(mdi-printer-pos-network-outline, _color)
+!define MA_PRINTER_POS_NETWORK_OUTLINE(_color, _scale)                         SPRITE_PUT(mdi-printer-pos-network-outline, _color, _scale)
+!define MA_PRINTER_POS_NETWORK_OUTLINE(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA PRINTER POS NETWORK OUTLINE, mdi-printer-pos-network-outline, _color, _scale)
+!define MA_PRINTER_POS_NETWORK_OUTLINE(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA PRINTER POS NETWORK OUTLINE, mdi-printer-pos-network-outline, _color, _scale, _shape)
+!define MA_PRINTER_POS_NETWORK_OUTLINE(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA PRINTER POS NETWORK OUTLINE, _label, mdi-printer-pos-network-outline, _color, _scale, _shape)
+skinparam folderBackgroundColor<<MA PRINTER POS NETWORK OUTLINE>> White
+
+sprite mdi-printer-pos-off <svg width="48" height="48"><g transform="scale(2)"><path d="M12.2 9L7.2 4H17V9H12.2M20 16.8V12C20 10.9 19.11 10 18 10H13.2L20 16.8M22.11 21.46L20.84 22.73L17.11 19H4V12C4 10.9 4.89 10 6 10H8.11L1.11 3L2.39 1.73L22.11 21.46M10 12H6V14H10V12Z" /></g></svg>
+
+!define MA_PRINTER_POS_OFF(_color)                                 SPRITE_PUT(mdi-printer-pos-off, _color)
+!define MA_PRINTER_POS_OFF(_color, _scale)                         SPRITE_PUT(mdi-printer-pos-off, _color, _scale)
+!define MA_PRINTER_POS_OFF(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA PRINTER POS OFF, mdi-printer-pos-off, _color, _scale)
+!define MA_PRINTER_POS_OFF(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA PRINTER POS OFF, mdi-printer-pos-off, _color, _scale, _shape)
+!define MA_PRINTER_POS_OFF(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA PRINTER POS OFF, _label, mdi-printer-pos-off, _color, _scale, _shape)
+skinparam folderBackgroundColor<<MA PRINTER POS OFF>> White
+
+sprite mdi-printer-pos-off-outline <svg width="48" height="48"><g transform="scale(2)"><path d="M2.39 1.73L1.11 3L7 8.89V10H6C4.89 10 4 10.9 4 12V19H17.11L20.84 22.73L22.11 21.46L2.39 1.73M6 17V12H10.11L15.11 17H6M9.2 6L7.2 4H17V10H18C19.11 10 20 10.9 20 12V16.8L18 14.8V12H15.2L13.2 10H15V6H9.2M7 13H11V15H7V13Z" /></g></svg>
+
+!define MA_PRINTER_POS_OFF_OUTLINE(_color)                                 SPRITE_PUT(mdi-printer-pos-off-outline, _color)
+!define MA_PRINTER_POS_OFF_OUTLINE(_color, _scale)                         SPRITE_PUT(mdi-printer-pos-off-outline, _color, _scale)
+!define MA_PRINTER_POS_OFF_OUTLINE(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA PRINTER POS OFF OUTLINE, mdi-printer-pos-off-outline, _color, _scale)
+!define MA_PRINTER_POS_OFF_OUTLINE(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA PRINTER POS OFF OUTLINE, mdi-printer-pos-off-outline, _color, _scale, _shape)
+!define MA_PRINTER_POS_OFF_OUTLINE(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA PRINTER POS OFF OUTLINE, _label, mdi-printer-pos-off-outline, _color, _scale, _shape)
+skinparam folderBackgroundColor<<MA PRINTER POS OFF OUTLINE>> White
+
+sprite mdi-printer-pos-outline <svg width="48" height="48"><g transform="scale(2)"><path d="M18 10H17V4H7V10H6C4.89 10 4 10.9 4 12V19H20V12C20 10.9 19.11 10 18 10M9 6H15V10H9V6M18 17H6V12H18V17M17 15H13V13H17V15Z" /></g></svg>
+
+!define MA_PRINTER_POS_OUTLINE(_color)                                 SPRITE_PUT(mdi-printer-pos-outline, _color)
+!define MA_PRINTER_POS_OUTLINE(_color, _scale)                         SPRITE_PUT(mdi-printer-pos-outline, _color, _scale)
+!define MA_PRINTER_POS_OUTLINE(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA PRINTER POS OUTLINE, mdi-printer-pos-outline, _color, _scale)
+!define MA_PRINTER_POS_OUTLINE(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA PRINTER POS OUTLINE, mdi-printer-pos-outline, _color, _scale, _shape)
+!define MA_PRINTER_POS_OUTLINE(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA PRINTER POS OUTLINE, _label, mdi-printer-pos-outline, _color, _scale, _shape)
+skinparam folderBackgroundColor<<MA PRINTER POS OUTLINE>> White
+
+sprite mdi-printer-pos-pause <svg width="48" height="48"><g transform="scale(2)"><path d="M17 9H7V4H17V9M20 13.09C19.67 13.04 19.34 13 19 13C15.69 13 13 15.69 13 19H4V12C4 10.9 4.89 10 6 10H18C19.11 10 20 10.9 20 12V13.09M10 12H6V14H10V12M16 22H18V16H16V22M20 16V22H22V16H20Z" /></g></svg>
+
+!define MA_PRINTER_POS_PAUSE(_color)                                 SPRITE_PUT(mdi-printer-pos-pause, _color)
+!define MA_PRINTER_POS_PAUSE(_color, _scale)                         SPRITE_PUT(mdi-printer-pos-pause, _color, _scale)
+!define MA_PRINTER_POS_PAUSE(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA PRINTER POS PAUSE, mdi-printer-pos-pause, _color, _scale)
+!define MA_PRINTER_POS_PAUSE(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA PRINTER POS PAUSE, mdi-printer-pos-pause, _color, _scale, _shape)
+!define MA_PRINTER_POS_PAUSE(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA PRINTER POS PAUSE, _label, mdi-printer-pos-pause, _color, _scale, _shape)
+skinparam folderBackgroundColor<<MA PRINTER POS PAUSE>> White
+
+sprite mdi-printer-pos-pause-outline <svg width="48" height="48"><g transform="scale(2)"><path d="M20 12C20 10.9 19.11 10 18 10H17V4H7V10H6C4.89 10 4 10.9 4 12V19H13C13 18.3 13.13 17.63 13.35 17H6V12H18V13.09C18.33 13.04 18.66 13 19 13C19.34 13 19.67 13.04 20 13.09V12M15 10H9V6H15V10M7 15V13H11V15H7M16 16H18V22H16V16M22 16V22H20V16H22Z" /></g></svg>
+
+!define MA_PRINTER_POS_PAUSE_OUTLINE(_color)                                 SPRITE_PUT(mdi-printer-pos-pause-outline, _color)
+!define MA_PRINTER_POS_PAUSE_OUTLINE(_color, _scale)                         SPRITE_PUT(mdi-printer-pos-pause-outline, _color, _scale)
+!define MA_PRINTER_POS_PAUSE_OUTLINE(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA PRINTER POS PAUSE OUTLINE, mdi-printer-pos-pause-outline, _color, _scale)
+!define MA_PRINTER_POS_PAUSE_OUTLINE(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA PRINTER POS PAUSE OUTLINE, mdi-printer-pos-pause-outline, _color, _scale, _shape)
+!define MA_PRINTER_POS_PAUSE_OUTLINE(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA PRINTER POS PAUSE OUTLINE, _label, mdi-printer-pos-pause-outline, _color, _scale, _shape)
+skinparam folderBackgroundColor<<MA PRINTER POS PAUSE OUTLINE>> White
+
+sprite mdi-printer-pos-play <svg width="48" height="48"><g transform="scale(2)"><path d="M20 13.09V12C20 10.9 19.11 10 18 10H6C4.89 10 4 10.9 4 12V19H13C13 15.69 15.69 13 19 13C19.34 13 19.67 13.04 20 13.09M10 14H6V12H10V14M17 9H7V4H17V9M22 19L17 22V16L22 19Z" /></g></svg>
+
+!define MA_PRINTER_POS_PLAY(_color)                                 SPRITE_PUT(mdi-printer-pos-play, _color)
+!define MA_PRINTER_POS_PLAY(_color, _scale)                         SPRITE_PUT(mdi-printer-pos-play, _color, _scale)
+!define MA_PRINTER_POS_PLAY(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA PRINTER POS PLAY, mdi-printer-pos-play, _color, _scale)
+!define MA_PRINTER_POS_PLAY(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA PRINTER POS PLAY, mdi-printer-pos-play, _color, _scale, _shape)
+!define MA_PRINTER_POS_PLAY(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA PRINTER POS PLAY, _label, mdi-printer-pos-play, _color, _scale, _shape)
+skinparam folderBackgroundColor<<MA PRINTER POS PLAY>> White
+
+sprite mdi-printer-pos-play-outline <svg width="48" height="48"><g transform="scale(2)"><path d="M7 15V13H11V15H7M6 17H13.35C13.13 17.63 13 18.3 13 19H4V12C4 10.9 4.89 10 6 10H7V4H17V10H18C19.11 10 20 10.9 20 12V13.09C19.67 13.04 19.34 13 19 13C18.66 13 18.33 13.04 18 13.09V12H6V17M9 10H15V6H9V10M17 16V22L22 19L17 16Z" /></g></svg>
+
+!define MA_PRINTER_POS_PLAY_OUTLINE(_color)                                 SPRITE_PUT(mdi-printer-pos-play-outline, _color)
+!define MA_PRINTER_POS_PLAY_OUTLINE(_color, _scale)                         SPRITE_PUT(mdi-printer-pos-play-outline, _color, _scale)
+!define MA_PRINTER_POS_PLAY_OUTLINE(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA PRINTER POS PLAY OUTLINE, mdi-printer-pos-play-outline, _color, _scale)
+!define MA_PRINTER_POS_PLAY_OUTLINE(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA PRINTER POS PLAY OUTLINE, mdi-printer-pos-play-outline, _color, _scale, _shape)
+!define MA_PRINTER_POS_PLAY_OUTLINE(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA PRINTER POS PLAY OUTLINE, _label, mdi-printer-pos-play-outline, _color, _scale, _shape)
+skinparam folderBackgroundColor<<MA PRINTER POS PLAY OUTLINE>> White
+
+sprite mdi-printer-pos-plus <svg width="48" height="48"><g transform="scale(2)"><path d="M17 9H7V4H17V9M19 13C15.69 13 13 15.69 13 19H4V12C4 10.9 4.89 10 6 10H18C19.11 10 20 10.9 20 12V13.09C19.67 13.04 19.34 13 19 13M10 12H6V14H10V12M20 18V15H18V18H15V20H18V23H20V20H23V18H20Z" /></g></svg>
+
+!define MA_PRINTER_POS_PLUS(_color)                                 SPRITE_PUT(mdi-printer-pos-plus, _color)
+!define MA_PRINTER_POS_PLUS(_color, _scale)                         SPRITE_PUT(mdi-printer-pos-plus, _color, _scale)
+!define MA_PRINTER_POS_PLUS(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA PRINTER POS PLUS, mdi-printer-pos-plus, _color, _scale)
+!define MA_PRINTER_POS_PLUS(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA PRINTER POS PLUS, mdi-printer-pos-plus, _color, _scale, _shape)
+!define MA_PRINTER_POS_PLUS(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA PRINTER POS PLUS, _label, mdi-printer-pos-plus, _color, _scale, _shape)
+skinparam folderBackgroundColor<<MA PRINTER POS PLUS>> White
+
+sprite mdi-printer-pos-plus-outline <svg width="48" height="48"><g transform="scale(2)"><path d="M6 12H18V13.09C18.33 13.04 18.66 13 19 13C19.34 13 19.67 13.04 20 13.09V12C20 10.9 19.11 10 18 10H17V4H7V10H6C4.89 10 4 10.9 4 12V19H13C13 18.3 13.13 17.63 13.35 17H6V12M9 6H15V10H9V6M7 15V13H11V15H7M23 18V20H20V23H18V20H15V18H18V15H20V18H23Z" /></g></svg>
+
+!define MA_PRINTER_POS_PLUS_OUTLINE(_color)                                 SPRITE_PUT(mdi-printer-pos-plus-outline, _color)
+!define MA_PRINTER_POS_PLUS_OUTLINE(_color, _scale)                         SPRITE_PUT(mdi-printer-pos-plus-outline, _color, _scale)
+!define MA_PRINTER_POS_PLUS_OUTLINE(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA PRINTER POS PLUS OUTLINE, mdi-printer-pos-plus-outline, _color, _scale)
+!define MA_PRINTER_POS_PLUS_OUTLINE(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA PRINTER POS PLUS OUTLINE, mdi-printer-pos-plus-outline, _color, _scale, _shape)
+!define MA_PRINTER_POS_PLUS_OUTLINE(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA PRINTER POS PLUS OUTLINE, _label, mdi-printer-pos-plus-outline, _color, _scale, _shape)
+skinparam folderBackgroundColor<<MA PRINTER POS PLUS OUTLINE>> White
+
+sprite mdi-printer-pos-refresh <svg width="48" height="48"><g transform="scale(2)"><path d="M17 9H7V4H17V9M12 18.5C12 18.67 12 18.83 12.03 19H4V12C4 10.9 4.89 10 6 10H18C19.11 10 20 10.9 20 12V12.18C19.5 12.07 19 12 18.5 12C14.91 12 12 14.91 12 18.5M10 12H6V14H10V12M22 18.5V14.5L20.83 15.67C20.11 14.95 19.11 14.5 18 14.5C15.79 14.5 14 16.29 14 18.5S15.79 22.5 18 22.5C19.68 22.5 21.12 21.47 21.71 20H20C19.54 20.61 18.82 21 18 21C16.62 21 15.5 19.88 15.5 18.5S16.62 16 18 16C18.69 16 19.32 16.28 19.77 16.73L18 18.5H22Z" /></g></svg>
+
+!define MA_PRINTER_POS_REFRESH(_color)                                 SPRITE_PUT(mdi-printer-pos-refresh, _color)
+!define MA_PRINTER_POS_REFRESH(_color, _scale)                         SPRITE_PUT(mdi-printer-pos-refresh, _color, _scale)
+!define MA_PRINTER_POS_REFRESH(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA PRINTER POS REFRESH, mdi-printer-pos-refresh, _color, _scale)
+!define MA_PRINTER_POS_REFRESH(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA PRINTER POS REFRESH, mdi-printer-pos-refresh, _color, _scale, _shape)
+!define MA_PRINTER_POS_REFRESH(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA PRINTER POS REFRESH, _label, mdi-printer-pos-refresh, _color, _scale, _shape)
+skinparam folderBackgroundColor<<MA PRINTER POS REFRESH>> White
+
+sprite mdi-printer-pos-refresh-outline <svg width="48" height="48"><g transform="scale(2)"><path d="M7 15V13H11V15H7M22 18.5V14.5L20.83 15.67C20.11 14.95 19.11 14.5 18 14.5C15.79 14.5 14 16.29 14 18.5S15.79 22.5 18 22.5C19.68 22.5 21.12 21.47 21.71 20H20C19.54 20.61 18.82 21 18 21C16.62 21 15.5 19.88 15.5 18.5S16.62 16 18 16C18.69 16 19.32 16.28 19.77 16.73L18 18.5H22M12.18 17C12.07 17.5 12 18 12 18.5C12 18.67 12 18.83 12.03 19H4V12C4 10.9 4.89 10 6 10H7V4H17V10H18C19.11 10 20 10.9 20 12H6V17H12.18M9 10H15V6H9V10Z" /></g></svg>
+
+!define MA_PRINTER_POS_REFRESH_OUTLINE(_color)                                 SPRITE_PUT(mdi-printer-pos-refresh-outline, _color)
+!define MA_PRINTER_POS_REFRESH_OUTLINE(_color, _scale)                         SPRITE_PUT(mdi-printer-pos-refresh-outline, _color, _scale)
+!define MA_PRINTER_POS_REFRESH_OUTLINE(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA PRINTER POS REFRESH OUTLINE, mdi-printer-pos-refresh-outline, _color, _scale)
+!define MA_PRINTER_POS_REFRESH_OUTLINE(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA PRINTER POS REFRESH OUTLINE, mdi-printer-pos-refresh-outline, _color, _scale, _shape)
+!define MA_PRINTER_POS_REFRESH_OUTLINE(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA PRINTER POS REFRESH OUTLINE, _label, mdi-printer-pos-refresh-outline, _color, _scale, _shape)
+skinparam folderBackgroundColor<<MA PRINTER POS REFRESH OUTLINE>> White
+
+sprite mdi-printer-pos-remove <svg width="48" height="48"><g transform="scale(2)"><path d="M17 9H7V4H17V9M19 13C15.69 13 13 15.69 13 19H4V12C4 10.9 4.89 10 6 10H18C19.11 10 20 10.9 20 12V13.09C19.67 13.04 19.34 13 19 13M10 12H6V14H10V12M22.54 16.88L21.12 15.47L19 17.59L16.88 15.47L15.47 16.88L17.59 19L15.47 21.12L16.88 22.54L19 20.41L21.12 22.54L22.54 21.12L20.41 19L22.54 16.88Z" /></g></svg>
+
+!define MA_PRINTER_POS_REMOVE(_color)                                 SPRITE_PUT(mdi-printer-pos-remove, _color)
+!define MA_PRINTER_POS_REMOVE(_color, _scale)                         SPRITE_PUT(mdi-printer-pos-remove, _color, _scale)
+!define MA_PRINTER_POS_REMOVE(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA PRINTER POS REMOVE, mdi-printer-pos-remove, _color, _scale)
+!define MA_PRINTER_POS_REMOVE(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA PRINTER POS REMOVE, mdi-printer-pos-remove, _color, _scale, _shape)
+!define MA_PRINTER_POS_REMOVE(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA PRINTER POS REMOVE, _label, mdi-printer-pos-remove, _color, _scale, _shape)
+skinparam folderBackgroundColor<<MA PRINTER POS REMOVE>> White
+
+sprite mdi-printer-pos-remove-outline <svg width="48" height="48"><g transform="scale(2)"><path d="M7 15V13H11V15H7M6 17H13.35C13.13 17.63 13 18.3 13 19H4V12C4 10.9 4.89 10 6 10H7V4H17V10H18C19.11 10 20 10.9 20 12V13.09C19.67 13.04 19.34 13 19 13C18.66 13 18.33 13.04 18 13.09V12H6V17M9 10H15V6H9V10M22.54 16.88L21.12 15.47L19 17.59L16.88 15.47L15.47 16.88L17.59 19L15.47 21.12L16.88 22.54L19 20.41L21.12 22.54L22.54 21.12L20.41 19L22.54 16.88Z" /></g></svg>
+
+!define MA_PRINTER_POS_REMOVE_OUTLINE(_color)                                 SPRITE_PUT(mdi-printer-pos-remove-outline, _color)
+!define MA_PRINTER_POS_REMOVE_OUTLINE(_color, _scale)                         SPRITE_PUT(mdi-printer-pos-remove-outline, _color, _scale)
+!define MA_PRINTER_POS_REMOVE_OUTLINE(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA PRINTER POS REMOVE OUTLINE, mdi-printer-pos-remove-outline, _color, _scale)
+!define MA_PRINTER_POS_REMOVE_OUTLINE(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA PRINTER POS REMOVE OUTLINE, mdi-printer-pos-remove-outline, _color, _scale, _shape)
+!define MA_PRINTER_POS_REMOVE_OUTLINE(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA PRINTER POS REMOVE OUTLINE, _label, mdi-printer-pos-remove-outline, _color, _scale, _shape)
+skinparam folderBackgroundColor<<MA PRINTER POS REMOVE OUTLINE>> White
+
+sprite mdi-printer-pos-star <svg width="48" height="48"><g transform="scale(2)"><path d="M17 9H7V4H17V9M19 13C15.69 13 13 15.69 13 19H4V12C4 10.9 4.89 10 6 10H18C19.11 10 20 10.9 20 12V13.09C19.67 13.04 19.34 13 19 13M10 12H6V14H10V12M23 17.89L20.11 17.64L19 15L17.87 17.64L15 17.89L17.18 19.77L16.5 22.58L19 21.09L21.45 22.58L20.8 19.77L23 17.89Z" /></g></svg>
+
+!define MA_PRINTER_POS_STAR(_color)                                 SPRITE_PUT(mdi-printer-pos-star, _color)
+!define MA_PRINTER_POS_STAR(_color, _scale)                         SPRITE_PUT(mdi-printer-pos-star, _color, _scale)
+!define MA_PRINTER_POS_STAR(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA PRINTER POS STAR, mdi-printer-pos-star, _color, _scale)
+!define MA_PRINTER_POS_STAR(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA PRINTER POS STAR, mdi-printer-pos-star, _color, _scale, _shape)
+!define MA_PRINTER_POS_STAR(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA PRINTER POS STAR, _label, mdi-printer-pos-star, _color, _scale, _shape)
+skinparam folderBackgroundColor<<MA PRINTER POS STAR>> White
+
+sprite mdi-printer-pos-star-outline <svg width="48" height="48"><g transform="scale(2)"><path d="M6 12H18V13.09C18.33 13.04 18.66 13 19 13C19.34 13 19.67 13.04 20 13.09V12C20 10.9 19.11 10 18 10H17V4H7V10H6C4.89 10 4 10.9 4 12V19H13C13 18.3 13.13 17.63 13.35 17H6V12M9 6H15V10H9V6M7 15V13H11V15H7M20.8 19.77L21.45 22.58L19 21.09L16.5 22.58L17.18 19.77L15 17.89L17.87 17.64L19 15L20.11 17.64L23 17.89L20.8 19.77Z" /></g></svg>
+
+!define MA_PRINTER_POS_STAR_OUTLINE(_color)                                 SPRITE_PUT(mdi-printer-pos-star-outline, _color)
+!define MA_PRINTER_POS_STAR_OUTLINE(_color, _scale)                         SPRITE_PUT(mdi-printer-pos-star-outline, _color, _scale)
+!define MA_PRINTER_POS_STAR_OUTLINE(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA PRINTER POS STAR OUTLINE, mdi-printer-pos-star-outline, _color, _scale)
+!define MA_PRINTER_POS_STAR_OUTLINE(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA PRINTER POS STAR OUTLINE, mdi-printer-pos-star-outline, _color, _scale, _shape)
+!define MA_PRINTER_POS_STAR_OUTLINE(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA PRINTER POS STAR OUTLINE, _label, mdi-printer-pos-star-outline, _color, _scale, _shape)
+skinparam folderBackgroundColor<<MA PRINTER POS STAR OUTLINE>> White
+
+sprite mdi-printer-pos-stop <svg width="48" height="48"><g transform="scale(2)"><path d="M17 9H7V4H17V9M19 13C15.69 13 13 15.69 13 19H4V12C4 10.9 4.89 10 6 10H18C19.11 10 20 10.9 20 12V13.09C19.67 13.04 19.34 13 19 13M10 12H6V14H10V12M16 16V22H22V16H16Z" /></g></svg>
+
+!define MA_PRINTER_POS_STOP(_color)                                 SPRITE_PUT(mdi-printer-pos-stop, _color)
+!define MA_PRINTER_POS_STOP(_color, _scale)                         SPRITE_PUT(mdi-printer-pos-stop, _color, _scale)
+!define MA_PRINTER_POS_STOP(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA PRINTER POS STOP, mdi-printer-pos-stop, _color, _scale)
+!define MA_PRINTER_POS_STOP(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA PRINTER POS STOP, mdi-printer-pos-stop, _color, _scale, _shape)
+!define MA_PRINTER_POS_STOP(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA PRINTER POS STOP, _label, mdi-printer-pos-stop, _color, _scale, _shape)
+skinparam folderBackgroundColor<<MA PRINTER POS STOP>> White
+
+sprite mdi-printer-pos-stop-outline <svg width="48" height="48"><g transform="scale(2)"><path d="M6 12H18V13.09C18.33 13.04 18.66 13 19 13C19.34 13 19.67 13.04 20 13.09V12C20 10.9 19.11 10 18 10H17V4H7V10H6C4.89 10 4 10.9 4 12V19H13C13 18.3 13.13 17.63 13.35 17H6V12M9 6H15V10H9V6M7 15V13H11V15H7M22 16V22H16V16H22Z" /></g></svg>
+
+!define MA_PRINTER_POS_STOP_OUTLINE(_color)                                 SPRITE_PUT(mdi-printer-pos-stop-outline, _color)
+!define MA_PRINTER_POS_STOP_OUTLINE(_color, _scale)                         SPRITE_PUT(mdi-printer-pos-stop-outline, _color, _scale)
+!define MA_PRINTER_POS_STOP_OUTLINE(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA PRINTER POS STOP OUTLINE, mdi-printer-pos-stop-outline, _color, _scale)
+!define MA_PRINTER_POS_STOP_OUTLINE(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA PRINTER POS STOP OUTLINE, mdi-printer-pos-stop-outline, _color, _scale, _shape)
+!define MA_PRINTER_POS_STOP_OUTLINE(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA PRINTER POS STOP OUTLINE, _label, mdi-printer-pos-stop-outline, _color, _scale, _shape)
+skinparam folderBackgroundColor<<MA PRINTER POS STOP OUTLINE>> White
+
+sprite mdi-printer-pos-sync <svg width="48" height="48"><g transform="scale(2)"><path d="M17 9H7V4H17V9M13 17.5C13 18 13.07 18.5 13.18 19H4V12C4 10.9 4.89 10 6 10H18C18.74 10 19.38 10.41 19.73 11C19.65 11 19.58 11 19.5 11C15.91 11 13 13.91 13 17.5M10 12H6V14H10V12M19 20C17.62 20 16.5 18.88 16.5 17.5C16.5 17.1 16.59 16.72 16.76 16.38L15.67 15.29C15.25 15.92 15 16.68 15 17.5C15 19.71 16.79 21.5 19 21.5V23L21.25 20.75L19 18.5V20M19 13.5V12L16.75 14.25L19 16.5V15C20.38 15 21.5 16.12 21.5 17.5C21.5 17.9 21.41 18.28 21.24 18.62L22.33 19.71C22.75 19.08 23 18.32 23 17.5C23 15.29 21.21 13.5 19 13.5Z" /></g></svg>
+
+!define MA_PRINTER_POS_SYNC(_color)                                 SPRITE_PUT(mdi-printer-pos-sync, _color)
+!define MA_PRINTER_POS_SYNC(_color, _scale)                         SPRITE_PUT(mdi-printer-pos-sync, _color, _scale)
+!define MA_PRINTER_POS_SYNC(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA PRINTER POS SYNC, mdi-printer-pos-sync, _color, _scale)
+!define MA_PRINTER_POS_SYNC(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA PRINTER POS SYNC, mdi-printer-pos-sync, _color, _scale, _shape)
+!define MA_PRINTER_POS_SYNC(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA PRINTER POS SYNC, _label, mdi-printer-pos-sync, _color, _scale, _shape)
+skinparam folderBackgroundColor<<MA PRINTER POS SYNC>> White
+
+sprite mdi-printer-pos-sync-outline <svg width="48" height="48"><g transform="scale(2)"><path d="M7 15V13H11V15H7M13 17.5C13 18 13.07 18.5 13.18 19H4V12C4 10.9 4.89 10 6 10H7V4H17V10H18C18.74 10 19.38 10.41 19.73 11C19.65 11 19.58 11 19.5 11C18.23 11 17.05 11.37 16.05 12H6V17H13.03C13 17.17 13 17.33 13 17.5M9 10H15V6H9V10M19 13.5V12L16.75 14.25L19 16.5V15C20.38 15 21.5 16.12 21.5 17.5C21.5 17.9 21.41 18.28 21.24 18.62L22.33 19.71C22.75 19.08 23 18.32 23 17.5C23 15.29 21.21 13.5 19 13.5M19 20C17.62 20 16.5 18.88 16.5 17.5C16.5 17.1 16.59 16.72 16.76 16.38L15.67 15.29C15.25 15.92 15 16.68 15 17.5C15 19.71 16.79 21.5 19 21.5V23L21.25 20.75L19 18.5V20Z" /></g></svg>
+
+!define MA_PRINTER_POS_SYNC_OUTLINE(_color)                                 SPRITE_PUT(mdi-printer-pos-sync-outline, _color)
+!define MA_PRINTER_POS_SYNC_OUTLINE(_color, _scale)                         SPRITE_PUT(mdi-printer-pos-sync-outline, _color, _scale)
+!define MA_PRINTER_POS_SYNC_OUTLINE(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA PRINTER POS SYNC OUTLINE, mdi-printer-pos-sync-outline, _color, _scale)
+!define MA_PRINTER_POS_SYNC_OUTLINE(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA PRINTER POS SYNC OUTLINE, mdi-printer-pos-sync-outline, _color, _scale, _shape)
+!define MA_PRINTER_POS_SYNC_OUTLINE(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA PRINTER POS SYNC OUTLINE, _label, mdi-printer-pos-sync-outline, _color, _scale, _shape)
+skinparam folderBackgroundColor<<MA PRINTER POS SYNC OUTLINE>> White
+
+sprite mdi-printer-pos-wrench <svg width="48" height="48"><g transform="scale(2)"><path d="M17 9H7V4H17V9M11 16C11 17.13 11.39 18.16 12 19H4V12C4 10.9 4.89 10 6 10H18C19.11 10 20 10.9 20 12V13.03C19.09 11.8 17.64 11 16 11C13.24 11 11 13.24 11 16M10 12H6V14H10V12M22.87 21.19L18.76 17.08C19.17 16.04 18.94 14.82 18.08 13.97C17.18 13.06 15.83 12.88 14.74 13.38L16.68 15.32L15.33 16.68L13.34 14.73C12.8 15.82 13.05 17.17 13.93 18.08C14.79 18.94 16 19.16 17.05 18.76L21.16 22.86C21.34 23.05 21.61 23.05 21.79 22.86L22.83 21.83C23.05 21.65 23.05 21.33 22.87 21.19Z" /></g></svg>
+
+!define MA_PRINTER_POS_WRENCH(_color)                                 SPRITE_PUT(mdi-printer-pos-wrench, _color)
+!define MA_PRINTER_POS_WRENCH(_color, _scale)                         SPRITE_PUT(mdi-printer-pos-wrench, _color, _scale)
+!define MA_PRINTER_POS_WRENCH(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA PRINTER POS WRENCH, mdi-printer-pos-wrench, _color, _scale)
+!define MA_PRINTER_POS_WRENCH(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA PRINTER POS WRENCH, mdi-printer-pos-wrench, _color, _scale, _shape)
+!define MA_PRINTER_POS_WRENCH(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA PRINTER POS WRENCH, _label, mdi-printer-pos-wrench, _color, _scale, _shape)
+skinparam folderBackgroundColor<<MA PRINTER POS WRENCH>> White
+
+sprite mdi-printer-pos-wrench-outline <svg width="48" height="48"><g transform="scale(2)"><path d="M7 15V13H11V15H7M13.03 12H6V17H11.1C11.25 17.74 11.58 18.42 12 19H4V12C4 10.9 4.89 10 6 10H7V4H17V10H18C19.11 10 20 10.9 20 12V13.03C19.09 11.8 17.64 11 16 11C14.88 11 13.86 11.38 13.03 12M9 10H15V6H9V10M22.87 21.19L18.76 17.08C19.17 16.04 18.94 14.82 18.08 13.97C17.18 13.06 15.83 12.88 14.74 13.38L16.68 15.32L15.33 16.68L13.34 14.73C12.8 15.82 13.05 17.17 13.93 18.08C14.79 18.94 16 19.16 17.05 18.76L21.16 22.86C21.34 23.05 21.61 23.05 21.79 22.86L22.83 21.83C23.05 21.65 23.05 21.33 22.87 21.19Z" /></g></svg>
+
+!define MA_PRINTER_POS_WRENCH_OUTLINE(_color)                                 SPRITE_PUT(mdi-printer-pos-wrench-outline, _color)
+!define MA_PRINTER_POS_WRENCH_OUTLINE(_color, _scale)                         SPRITE_PUT(mdi-printer-pos-wrench-outline, _color, _scale)
+!define MA_PRINTER_POS_WRENCH_OUTLINE(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA PRINTER POS WRENCH OUTLINE, mdi-printer-pos-wrench-outline, _color, _scale)
+!define MA_PRINTER_POS_WRENCH_OUTLINE(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA PRINTER POS WRENCH OUTLINE, mdi-printer-pos-wrench-outline, _color, _scale, _shape)
+!define MA_PRINTER_POS_WRENCH_OUTLINE(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA PRINTER POS WRENCH OUTLINE, _label, mdi-printer-pos-wrench-outline, _color, _scale, _shape)
+skinparam folderBackgroundColor<<MA PRINTER POS WRENCH OUTLINE>> White
+
+sprite mdi-printer-search <svg width="48" height="48"><g transform="scale(2)"><path d="M20.3 18.9C20.7 18.2 21 17.4 21 16.5C21 14 19 12 16.5 12S12 14 12 16.5 14 21 16.5 21C17.4 21 18.2 20.8 18.9 20.3L22 23.4L23.4 22L20.3 18.9M16.5 19C15.1 19 14 17.9 14 16.5S15.1 14 16.5 14 19 15.1 19 16.5 17.9 19 16.5 19M18 7H6V3H18V7M6 21V17H2V11C2 9.3 3.3 8 5 8H19C20.7 8 22 9.3 22 11V13C20.8 11.2 18.8 10 16.5 10C13.8 10 11.5 11.7 10.5 14H8V19H10.5C10.8 19.7 11.3 20.4 11.8 21H6Z" /></g></svg>
+
+!define MA_PRINTER_SEARCH(_color)                                 SPRITE_PUT(mdi-printer-search, _color)
+!define MA_PRINTER_SEARCH(_color, _scale)                         SPRITE_PUT(mdi-printer-search, _color, _scale)
+!define MA_PRINTER_SEARCH(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA PRINTER SEARCH, mdi-printer-search, _color, _scale)
+!define MA_PRINTER_SEARCH(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA PRINTER SEARCH, mdi-printer-search, _color, _scale, _shape)
+!define MA_PRINTER_SEARCH(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA PRINTER SEARCH, _label, mdi-printer-search, _color, _scale, _shape)
+skinparam folderBackgroundColor<<MA PRINTER SEARCH>> White
+
+sprite mdi-printer-settings <svg width="48" height="48"><g transform="scale(2)"><path d="M18,2V6H6V2H18M19,11A1,1 0 0,0 20,10A1,1 0 0,0 19,9A1,1 0 0,0 18,10A1,1 0 0,0 19,11M16,18V13H8V18H16M19,7A3,3 0 0,1 22,10V16H18V20H6V16H2V10A3,3 0 0,1 5,7H19M15,24V22H17V24H15M11,24V22H13V24H11M7,24V22H9V24H7Z" /></g></svg>
+
+!define MA_PRINTER_SETTINGS(_color)                                 SPRITE_PUT(mdi-printer-settings, _color)
+!define MA_PRINTER_SETTINGS(_color, _scale)                         SPRITE_PUT(mdi-printer-settings, _color, _scale)
+!define MA_PRINTER_SETTINGS(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA PRINTER SETTINGS, mdi-printer-settings, _color, _scale)
+!define MA_PRINTER_SETTINGS(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA PRINTER SETTINGS, mdi-printer-settings, _color, _scale, _shape)
+!define MA_PRINTER_SETTINGS(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA PRINTER SETTINGS, _label, mdi-printer-settings, _color, _scale, _shape)
+skinparam folderBackgroundColor<<MA PRINTER SETTINGS>> White
+
+sprite mdi-printer-wireless <svg width="48" height="48"><g transform="scale(2)"><path d="M4.93,3.92L6.34,5.33C9.46,2.2 14.53,2.2 17.66,5.33L19.07,3.92C15.17,0 8.84,0 4.93,3.92M7.76,6.75L9.17,8.16C10.73,6.6 13.26,6.6 14.83,8.16L16.24,6.75C13.9,4.41 10.1,4.41 7.76,6.75M19,14A1,1 0 0,1 18,13A1,1 0 0,1 19,12A1,1 0 0,1 20,13A1,1 0 0,1 19,14M16,20H8V15H16V20M19,10H5A3,3 0 0,0 2,13V18H6V22H18V18H22V13A3,3 0 0,0 19,10Z" /></g></svg>
+
+!define MA_PRINTER_WIRELESS(_color)                                 SPRITE_PUT(mdi-printer-wireless, _color)
+!define MA_PRINTER_WIRELESS(_color, _scale)                         SPRITE_PUT(mdi-printer-wireless, _color, _scale)
+!define MA_PRINTER_WIRELESS(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA PRINTER WIRELESS, mdi-printer-wireless, _color, _scale)
+!define MA_PRINTER_WIRELESS(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA PRINTER WIRELESS, mdi-printer-wireless, _color, _scale, _shape)
+!define MA_PRINTER_WIRELESS(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA PRINTER WIRELESS, _label, mdi-printer-wireless, _color, _scale, _shape)
+skinparam folderBackgroundColor<<MA PRINTER WIRELESS>> White
+

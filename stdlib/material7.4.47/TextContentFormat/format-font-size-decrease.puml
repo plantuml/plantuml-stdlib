@@ -1,8 +1,8 @@
 sprite mdi-format-font-size-decrease <svg width="48" height="48"><g transform="scale(2)"><path d="M5.12,14L7.5,7.67L9.87,14M6.5,5L1,19H3.25L4.37,16H10.62L11.75,19H14L8.5,5H6.5M18,17L23,11.93L21.59,10.5L19,13.1V7H17V13.1L14.41,10.5L13,11.93L18,17Z" /></g></svg>
 
-!define MA_FORMAT_FONT_SIZE_DECREASE(_color)                                 SPRITE_PUT(ma_format_font_size_decrease, _color)
-!define MA_FORMAT_FONT_SIZE_DECREASE(_color, _scale)                         SPRITE_PUT(ma_format_font_size_decrease, _color, _scale)
-!define MA_FORMAT_FONT_SIZE_DECREASE(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA FORMAT FONT SIZE DECREASE, ma_format_font_size_decrease, _color, _scale)
-!define MA_FORMAT_FONT_SIZE_DECREASE(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA FORMAT FONT SIZE DECREASE, ma_format_font_size_decrease, _color, _scale, _shape)
-!define MA_FORMAT_FONT_SIZE_DECREASE(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA FORMAT FONT SIZE DECREASE, _label, ma_format_font_size_decrease, _color, _scale, _shape)
+!define MA_FORMAT_FONT_SIZE_DECREASE(_color)                                 SPRITE_PUT(mdi-format-font-size-decrease, _color)
+!define MA_FORMAT_FONT_SIZE_DECREASE(_color, _scale)                         SPRITE_PUT(mdi-format-font-size-decrease, _color, _scale)
+!define MA_FORMAT_FONT_SIZE_DECREASE(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA FORMAT FONT SIZE DECREASE, mdi-format-font-size-decrease, _color, _scale)
+!define MA_FORMAT_FONT_SIZE_DECREASE(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA FORMAT FONT SIZE DECREASE, mdi-format-font-size-decrease, _color, _scale, _shape)
+!define MA_FORMAT_FONT_SIZE_DECREASE(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA FORMAT FONT SIZE DECREASE, _label, mdi-format-font-size-decrease, _color, _scale, _shape)
 skinparam folderBackgroundColor<<MA FORMAT FONT SIZE DECREASE>> White

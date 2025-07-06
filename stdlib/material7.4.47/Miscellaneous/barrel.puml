@@ -1,8 +1,8 @@
 sprite mdi-barrel <svg width="48" height="48"><g transform="scale(2)"><path d="M20 13C20.55 13 21 12.55 21 12S20.55 11 20 11H19V5H20C20.55 5 21 4.55 21 4S20.55 3 20 3H4C3.45 3 3 3.45 3 4S3.45 5 4 5H5V11H4C3.45 11 3 11.45 3 12S3.45 13 4 13H5V19H4C3.45 19 3 19.45 3 20S3.45 21 4 21H20C20.55 21 21 20.55 21 20S20.55 19 20 19H19V13H20M12 16C10.34 16 9 14.68 9 13.05C9 11.75 9.5 11.38 12 8.5C14.47 11.36 15 11.74 15 13.05C15 14.68 13.66 16 12 16Z" /></g></svg>
 
-!define MA_BARREL(_color)                                 SPRITE_PUT(ma_barrel, _color)
-!define MA_BARREL(_color, _scale)                         SPRITE_PUT(ma_barrel, _color, _scale)
-!define MA_BARREL(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA BARREL, ma_barrel, _color, _scale)
-!define MA_BARREL(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA BARREL, ma_barrel, _color, _scale, _shape)
-!define MA_BARREL(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA BARREL, _label, ma_barrel, _color, _scale, _shape)
+!define MA_BARREL(_color)                                 SPRITE_PUT(mdi-barrel, _color)
+!define MA_BARREL(_color, _scale)                         SPRITE_PUT(mdi-barrel, _color, _scale)
+!define MA_BARREL(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA BARREL, mdi-barrel, _color, _scale)
+!define MA_BARREL(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA BARREL, mdi-barrel, _color, _scale, _shape)
+!define MA_BARREL(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA BARREL, _label, mdi-barrel, _color, _scale, _shape)
 skinparam folderBackgroundColor<<MA BARREL>> White

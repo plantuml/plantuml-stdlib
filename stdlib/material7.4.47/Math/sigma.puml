@@ -1,8 +1,8 @@
 sprite mdi-sigma <svg width="48" height="48"><g transform="scale(2)"><path d="M18,6H8.83L14.83,12L8.83,18H18V20H6V18L12,12L6,6V4H18V6Z" /></g></svg>
 
-!define MA_SIGMA(_color)                                 SPRITE_PUT(ma_sigma, _color)
-!define MA_SIGMA(_color, _scale)                         SPRITE_PUT(ma_sigma, _color, _scale)
-!define MA_SIGMA(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA SIGMA, ma_sigma, _color, _scale)
-!define MA_SIGMA(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA SIGMA, ma_sigma, _color, _scale, _shape)
-!define MA_SIGMA(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA SIGMA, _label, ma_sigma, _color, _scale, _shape)
+!define MA_SIGMA(_color)                                 SPRITE_PUT(mdi-sigma, _color)
+!define MA_SIGMA(_color, _scale)                         SPRITE_PUT(mdi-sigma, _color, _scale)
+!define MA_SIGMA(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA SIGMA, mdi-sigma, _color, _scale)
+!define MA_SIGMA(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA SIGMA, mdi-sigma, _color, _scale, _shape)
+!define MA_SIGMA(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA SIGMA, _label, mdi-sigma, _color, _scale, _shape)
 skinparam folderBackgroundColor<<MA SIGMA>> White

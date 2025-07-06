@@ -1,8 +1,8 @@
 sprite mdi-bookmark-remove-outline <svg width="48" height="48"><g transform="scale(2)"><path d="M7 3C5.9 3 5 3.9 5 5V21L12 18L19 21V5C19 3.89 18.1 3 17 3H7M7 5H17V18L12 15.82L7 18V5M9.88 7.47L8.47 8.88L10.59 11L8.47 13.12L9.88 14.54L12 12.42L14.12 14.53L15.54 13.12L13.42 11L15.53 8.88L14.12 7.47L12 9.59L9.88 7.47Z" /></g></svg>
 
-!define MA_BOOKMARK_REMOVE_OUTLINE(_color)                                 SPRITE_PUT(ma_bookmark_remove_outline, _color)
-!define MA_BOOKMARK_REMOVE_OUTLINE(_color, _scale)                         SPRITE_PUT(ma_bookmark_remove_outline, _color, _scale)
-!define MA_BOOKMARK_REMOVE_OUTLINE(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA BOOKMARK REMOVE OUTLINE, ma_bookmark_remove_outline, _color, _scale)
-!define MA_BOOKMARK_REMOVE_OUTLINE(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA BOOKMARK REMOVE OUTLINE, ma_bookmark_remove_outline, _color, _scale, _shape)
-!define MA_BOOKMARK_REMOVE_OUTLINE(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA BOOKMARK REMOVE OUTLINE, _label, ma_bookmark_remove_outline, _color, _scale, _shape)
+!define MA_BOOKMARK_REMOVE_OUTLINE(_color)                                 SPRITE_PUT(mdi-bookmark-remove-outline, _color)
+!define MA_BOOKMARK_REMOVE_OUTLINE(_color, _scale)                         SPRITE_PUT(mdi-bookmark-remove-outline, _color, _scale)
+!define MA_BOOKMARK_REMOVE_OUTLINE(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA BOOKMARK REMOVE OUTLINE, mdi-bookmark-remove-outline, _color, _scale)
+!define MA_BOOKMARK_REMOVE_OUTLINE(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA BOOKMARK REMOVE OUTLINE, mdi-bookmark-remove-outline, _color, _scale, _shape)
+!define MA_BOOKMARK_REMOVE_OUTLINE(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA BOOKMARK REMOVE OUTLINE, _label, mdi-bookmark-remove-outline, _color, _scale, _shape)
 skinparam folderBackgroundColor<<MA BOOKMARK REMOVE OUTLINE>> White

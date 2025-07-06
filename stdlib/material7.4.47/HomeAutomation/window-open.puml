@@ -1,8 +1,8 @@
 sprite mdi-window-open <svg width="48" height="48"><g transform="scale(2)"><path d="M6,8H10V6H14V8H18V4H6V8M18,10H6V15H18V10M6,20H18V17H6V20M6,2H18A2,2 0 0,1 20,4V20A2,2 0 0,1 18,22H6A2,2 0 0,1 4,20V4A2,2 0 0,1 6,2Z" /></g></svg>
 
-!define MA_WINDOW_OPEN(_color)                                 SPRITE_PUT(ma_window_open, _color)
-!define MA_WINDOW_OPEN(_color, _scale)                         SPRITE_PUT(ma_window_open, _color, _scale)
-!define MA_WINDOW_OPEN(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA WINDOW OPEN, ma_window_open, _color, _scale)
-!define MA_WINDOW_OPEN(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA WINDOW OPEN, ma_window_open, _color, _scale, _shape)
-!define MA_WINDOW_OPEN(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA WINDOW OPEN, _label, ma_window_open, _color, _scale, _shape)
+!define MA_WINDOW_OPEN(_color)                                 SPRITE_PUT(mdi-window-open, _color)
+!define MA_WINDOW_OPEN(_color, _scale)                         SPRITE_PUT(mdi-window-open, _color, _scale)
+!define MA_WINDOW_OPEN(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA WINDOW OPEN, mdi-window-open, _color, _scale)
+!define MA_WINDOW_OPEN(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA WINDOW OPEN, mdi-window-open, _color, _scale, _shape)
+!define MA_WINDOW_OPEN(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA WINDOW OPEN, _label, mdi-window-open, _color, _scale, _shape)
 skinparam folderBackgroundColor<<MA WINDOW OPEN>> White

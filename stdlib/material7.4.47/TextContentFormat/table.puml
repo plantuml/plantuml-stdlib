@@ -1,8 +1,8 @@
 sprite mdi-table <svg width="48" height="48"><g transform="scale(2)"><path d="M5,4H19A2,2 0 0,1 21,6V18A2,2 0 0,1 19,20H5A2,2 0 0,1 3,18V6A2,2 0 0,1 5,4M5,8V12H11V8H5M13,8V12H19V8H13M5,14V18H11V14H5M13,14V18H19V14H13Z" /></g></svg>
 
-!define MA_TABLE(_color)                                 SPRITE_PUT(ma_table, _color)
-!define MA_TABLE(_color, _scale)                         SPRITE_PUT(ma_table, _color, _scale)
-!define MA_TABLE(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA TABLE, ma_table, _color, _scale)
-!define MA_TABLE(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA TABLE, ma_table, _color, _scale, _shape)
-!define MA_TABLE(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA TABLE, _label, ma_table, _color, _scale, _shape)
+!define MA_TABLE(_color)                                 SPRITE_PUT(mdi-table, _color)
+!define MA_TABLE(_color, _scale)                         SPRITE_PUT(mdi-table, _color, _scale)
+!define MA_TABLE(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA TABLE, mdi-table, _color, _scale)
+!define MA_TABLE(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA TABLE, mdi-table, _color, _scale, _shape)
+!define MA_TABLE(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA TABLE, _label, mdi-table, _color, _scale, _shape)
 skinparam folderBackgroundColor<<MA TABLE>> White

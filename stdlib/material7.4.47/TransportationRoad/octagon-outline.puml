@@ -1,8 +1,8 @@
 sprite mdi-octagon-outline <svg width="48" height="48"><g transform="scale(2)"><path d="M8.27,3L3,8.27V15.73L8.27,21H15.73C17.5,19.24 21,15.73 21,15.73V8.27L15.73,3M9.1,5H14.9L19,9.1V14.9L14.9,19H9.1L5,14.9V9.1" /></g></svg>
 
-!define MA_OCTAGON_OUTLINE(_color)                                 SPRITE_PUT(ma_octagon_outline, _color)
-!define MA_OCTAGON_OUTLINE(_color, _scale)                         SPRITE_PUT(ma_octagon_outline, _color, _scale)
-!define MA_OCTAGON_OUTLINE(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA OCTAGON OUTLINE, ma_octagon_outline, _color, _scale)
-!define MA_OCTAGON_OUTLINE(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA OCTAGON OUTLINE, ma_octagon_outline, _color, _scale, _shape)
-!define MA_OCTAGON_OUTLINE(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA OCTAGON OUTLINE, _label, ma_octagon_outline, _color, _scale, _shape)
+!define MA_OCTAGON_OUTLINE(_color)                                 SPRITE_PUT(mdi-octagon-outline, _color)
+!define MA_OCTAGON_OUTLINE(_color, _scale)                         SPRITE_PUT(mdi-octagon-outline, _color, _scale)
+!define MA_OCTAGON_OUTLINE(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA OCTAGON OUTLINE, mdi-octagon-outline, _color, _scale)
+!define MA_OCTAGON_OUTLINE(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA OCTAGON OUTLINE, mdi-octagon-outline, _color, _scale, _shape)
+!define MA_OCTAGON_OUTLINE(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA OCTAGON OUTLINE, _label, mdi-octagon-outline, _color, _scale, _shape)
 skinparam folderBackgroundColor<<MA OCTAGON OUTLINE>> White

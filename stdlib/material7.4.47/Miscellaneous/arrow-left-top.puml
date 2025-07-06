@@ -1,8 +1,8 @@
 sprite mdi-arrow-left-top <svg width="48" height="48"><g transform="scale(2)"><path d="M20 13.5V20H18V13.5C18 11 16 9 13.5 9H7.83L10.91 12.09L9.5 13.5L4 8L9.5 2.5L10.92 3.91L7.83 7H13.5C17.09 7 20 9.91 20 13.5Z" /></g></svg>
 
-!define MA_ARROW_LEFT_TOP(_color)                                 SPRITE_PUT(ma_arrow_left_top, _color)
-!define MA_ARROW_LEFT_TOP(_color, _scale)                         SPRITE_PUT(ma_arrow_left_top, _color, _scale)
-!define MA_ARROW_LEFT_TOP(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA ARROW LEFT TOP, ma_arrow_left_top, _color, _scale)
-!define MA_ARROW_LEFT_TOP(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA ARROW LEFT TOP, ma_arrow_left_top, _color, _scale, _shape)
-!define MA_ARROW_LEFT_TOP(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA ARROW LEFT TOP, _label, ma_arrow_left_top, _color, _scale, _shape)
+!define MA_ARROW_LEFT_TOP(_color)                                 SPRITE_PUT(mdi-arrow-left-top, _color)
+!define MA_ARROW_LEFT_TOP(_color, _scale)                         SPRITE_PUT(mdi-arrow-left-top, _color, _scale)
+!define MA_ARROW_LEFT_TOP(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA ARROW LEFT TOP, mdi-arrow-left-top, _color, _scale)
+!define MA_ARROW_LEFT_TOP(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA ARROW LEFT TOP, mdi-arrow-left-top, _color, _scale, _shape)
+!define MA_ARROW_LEFT_TOP(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA ARROW LEFT TOP, _label, mdi-arrow-left-top, _color, _scale, _shape)
 skinparam folderBackgroundColor<<MA ARROW LEFT TOP>> White

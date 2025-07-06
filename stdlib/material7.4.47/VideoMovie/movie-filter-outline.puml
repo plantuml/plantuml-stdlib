@@ -1,8 +1,8 @@
 sprite mdi-movie-filter-outline <svg width="48" height="48"><g transform="scale(2)"><path d="M10 11L9.06 13.06L7 14L9.06 14.94L10 17L10.94 14.94L13 14L10.94 13.06M18 4L20 8H17L15 4H13L15 8H12L10 4H8L10 8H7L5 4H4C2.91 4 2 4.9 2 6L2 18C2 19.1 2.91 20 4 20H20C21.11 20 22 19.1 22 18V4H18M20 18H4V6.47L5.77 10H16L15.37 11.37L14 12L15.37 12.63L16 14L16.63 12.63L18 12L16.63 11.37L16 10H20V18Z" /></g></svg>
 
-!define MA_MOVIE_FILTER_OUTLINE(_color)                                 SPRITE_PUT(ma_movie_filter_outline, _color)
-!define MA_MOVIE_FILTER_OUTLINE(_color, _scale)                         SPRITE_PUT(ma_movie_filter_outline, _color, _scale)
-!define MA_MOVIE_FILTER_OUTLINE(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA MOVIE FILTER OUTLINE, ma_movie_filter_outline, _color, _scale)
-!define MA_MOVIE_FILTER_OUTLINE(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA MOVIE FILTER OUTLINE, ma_movie_filter_outline, _color, _scale, _shape)
-!define MA_MOVIE_FILTER_OUTLINE(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA MOVIE FILTER OUTLINE, _label, ma_movie_filter_outline, _color, _scale, _shape)
+!define MA_MOVIE_FILTER_OUTLINE(_color)                                 SPRITE_PUT(mdi-movie-filter-outline, _color)
+!define MA_MOVIE_FILTER_OUTLINE(_color, _scale)                         SPRITE_PUT(mdi-movie-filter-outline, _color, _scale)
+!define MA_MOVIE_FILTER_OUTLINE(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA MOVIE FILTER OUTLINE, mdi-movie-filter-outline, _color, _scale)
+!define MA_MOVIE_FILTER_OUTLINE(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA MOVIE FILTER OUTLINE, mdi-movie-filter-outline, _color, _scale, _shape)
+!define MA_MOVIE_FILTER_OUTLINE(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA MOVIE FILTER OUTLINE, _label, mdi-movie-filter-outline, _color, _scale, _shape)
 skinparam folderBackgroundColor<<MA MOVIE FILTER OUTLINE>> White

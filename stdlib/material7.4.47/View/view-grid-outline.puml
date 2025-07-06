@@ -1,8 +1,8 @@
 sprite mdi-view-grid-outline <svg width="48" height="48"><g transform="scale(2)"><path d="M3 11H11V3H3M5 5H9V9H5M13 21H21V13H13M15 15H19V19H15M3 21H11V13H3M5 15H9V19H5M13 3V11H21V3M19 9H15V5H19Z" /></g></svg>
 
-!define MA_VIEW_GRID_OUTLINE(_color)                                 SPRITE_PUT(ma_view_grid_outline, _color)
-!define MA_VIEW_GRID_OUTLINE(_color, _scale)                         SPRITE_PUT(ma_view_grid_outline, _color, _scale)
-!define MA_VIEW_GRID_OUTLINE(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA VIEW GRID OUTLINE, ma_view_grid_outline, _color, _scale)
-!define MA_VIEW_GRID_OUTLINE(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA VIEW GRID OUTLINE, ma_view_grid_outline, _color, _scale, _shape)
-!define MA_VIEW_GRID_OUTLINE(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA VIEW GRID OUTLINE, _label, ma_view_grid_outline, _color, _scale, _shape)
+!define MA_VIEW_GRID_OUTLINE(_color)                                 SPRITE_PUT(mdi-view-grid-outline, _color)
+!define MA_VIEW_GRID_OUTLINE(_color, _scale)                         SPRITE_PUT(mdi-view-grid-outline, _color, _scale)
+!define MA_VIEW_GRID_OUTLINE(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA VIEW GRID OUTLINE, mdi-view-grid-outline, _color, _scale)
+!define MA_VIEW_GRID_OUTLINE(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA VIEW GRID OUTLINE, mdi-view-grid-outline, _color, _scale, _shape)
+!define MA_VIEW_GRID_OUTLINE(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA VIEW GRID OUTLINE, _label, mdi-view-grid-outline, _color, _scale, _shape)
 skinparam folderBackgroundColor<<MA VIEW GRID OUTLINE>> White

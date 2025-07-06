@@ -1,8 +1,8 @@
 sprite mdi-table-picnic <svg width="48" height="48"><g transform="scale(2)"><path d="M4 6H20V9H18L18.22 11H23V13H18.44L19 18H16.5L15.94 13H8.06L7.5 18H5L5.56 13H1V11H5.78L6 9H4M15.5 9H8.5L8.29 11H15.71Z" /></g></svg>
 
-!define MA_TABLE_PICNIC(_color)                                 SPRITE_PUT(ma_table_picnic, _color)
-!define MA_TABLE_PICNIC(_color, _scale)                         SPRITE_PUT(ma_table_picnic, _color, _scale)
-!define MA_TABLE_PICNIC(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA TABLE PICNIC, ma_table_picnic, _color, _scale)
-!define MA_TABLE_PICNIC(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA TABLE PICNIC, ma_table_picnic, _color, _scale, _shape)
-!define MA_TABLE_PICNIC(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA TABLE PICNIC, _label, ma_table_picnic, _color, _scale, _shape)
+!define MA_TABLE_PICNIC(_color)                                 SPRITE_PUT(mdi-table-picnic, _color)
+!define MA_TABLE_PICNIC(_color, _scale)                         SPRITE_PUT(mdi-table-picnic, _color, _scale)
+!define MA_TABLE_PICNIC(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA TABLE PICNIC, mdi-table-picnic, _color, _scale)
+!define MA_TABLE_PICNIC(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA TABLE PICNIC, mdi-table-picnic, _color, _scale, _shape)
+!define MA_TABLE_PICNIC(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA TABLE PICNIC, _label, mdi-table-picnic, _color, _scale, _shape)
 skinparam folderBackgroundColor<<MA TABLE PICNIC>> White

@@ -1,8 +1,8 @@
 sprite mdi-rename-outline <svg width="48" height="48"><g transform="scale(2)"><path d="M15 16L11 20H21V16H15M12.06 7.19L3 16.25V20H6.75L15.81 10.94L12.06 7.19M5.92 18H5V17.08L12.06 10L13 10.94L5.92 18M18.71 8.04C19.1 7.65 19.1 7 18.71 6.63L16.37 4.29C16.17 4.09 15.92 4 15.66 4C15.41 4 15.15 4.1 14.96 4.29L13.13 6.12L16.88 9.87L18.71 8.04Z" /></g></svg>
 
-!define MA_RENAME_OUTLINE(_color)                                 SPRITE_PUT(ma_rename_outline, _color)
-!define MA_RENAME_OUTLINE(_color, _scale)                         SPRITE_PUT(ma_rename_outline, _color, _scale)
-!define MA_RENAME_OUTLINE(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA RENAME OUTLINE, ma_rename_outline, _color, _scale)
-!define MA_RENAME_OUTLINE(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA RENAME OUTLINE, ma_rename_outline, _color, _scale, _shape)
-!define MA_RENAME_OUTLINE(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA RENAME OUTLINE, _label, ma_rename_outline, _color, _scale, _shape)
+!define MA_RENAME_OUTLINE(_color)                                 SPRITE_PUT(mdi-rename-outline, _color)
+!define MA_RENAME_OUTLINE(_color, _scale)                         SPRITE_PUT(mdi-rename-outline, _color, _scale)
+!define MA_RENAME_OUTLINE(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA RENAME OUTLINE, mdi-rename-outline, _color, _scale)
+!define MA_RENAME_OUTLINE(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA RENAME OUTLINE, mdi-rename-outline, _color, _scale, _shape)
+!define MA_RENAME_OUTLINE(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA RENAME OUTLINE, _label, mdi-rename-outline, _color, _scale, _shape)
 skinparam folderBackgroundColor<<MA RENAME OUTLINE>> White

@@ -1,8 +1,8 @@
 sprite mdi-vector-point <svg width="48" height="48"><g transform="scale(2)"><path d="M9 9V15H15V9H9M11 11H13V13H11V11Z" /></g></svg>
 
-!define MA_VECTOR_POINT(_color)                                 SPRITE_PUT(ma_vector_point, _color)
-!define MA_VECTOR_POINT(_color, _scale)                         SPRITE_PUT(ma_vector_point, _color, _scale)
-!define MA_VECTOR_POINT(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA VECTOR POINT, ma_vector_point, _color, _scale)
-!define MA_VECTOR_POINT(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA VECTOR POINT, ma_vector_point, _color, _scale, _shape)
-!define MA_VECTOR_POINT(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA VECTOR POINT, _label, ma_vector_point, _color, _scale, _shape)
+!define MA_VECTOR_POINT(_color)                                 SPRITE_PUT(mdi-vector-point, _color)
+!define MA_VECTOR_POINT(_color, _scale)                         SPRITE_PUT(mdi-vector-point, _color, _scale)
+!define MA_VECTOR_POINT(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA VECTOR POINT, mdi-vector-point, _color, _scale)
+!define MA_VECTOR_POINT(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA VECTOR POINT, mdi-vector-point, _color, _scale, _shape)
+!define MA_VECTOR_POINT(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA VECTOR POINT, _label, mdi-vector-point, _color, _scale, _shape)
 skinparam folderBackgroundColor<<MA VECTOR POINT>> White

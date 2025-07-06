@@ -1,8 +1,8 @@
 sprite mdi-scale-bathroom <svg width="48" height="48"><g transform="scale(2)"><path d="M5,2H19A2,2 0 0,1 21,4V20A2,2 0 0,1 19,22H5A2,2 0 0,1 3,20V4A2,2 0 0,1 5,2M12,4A4,4 0 0,0 8,8H11.26L10.85,5.23L12.9,8H16A4,4 0 0,0 12,4M5,10V20H19V10H5Z" /></g></svg>
 
-!define MA_SCALE_BATHROOM(_color)                                 SPRITE_PUT(ma_scale_bathroom, _color)
-!define MA_SCALE_BATHROOM(_color, _scale)                         SPRITE_PUT(ma_scale_bathroom, _color, _scale)
-!define MA_SCALE_BATHROOM(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA SCALE BATHROOM, ma_scale_bathroom, _color, _scale)
-!define MA_SCALE_BATHROOM(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA SCALE BATHROOM, ma_scale_bathroom, _color, _scale, _shape)
-!define MA_SCALE_BATHROOM(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA SCALE BATHROOM, _label, ma_scale_bathroom, _color, _scale, _shape)
+!define MA_SCALE_BATHROOM(_color)                                 SPRITE_PUT(mdi-scale-bathroom, _color)
+!define MA_SCALE_BATHROOM(_color, _scale)                         SPRITE_PUT(mdi-scale-bathroom, _color, _scale)
+!define MA_SCALE_BATHROOM(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA SCALE BATHROOM, mdi-scale-bathroom, _color, _scale)
+!define MA_SCALE_BATHROOM(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA SCALE BATHROOM, mdi-scale-bathroom, _color, _scale, _shape)
+!define MA_SCALE_BATHROOM(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA SCALE BATHROOM, _label, mdi-scale-bathroom, _color, _scale, _shape)
 skinparam folderBackgroundColor<<MA SCALE BATHROOM>> White

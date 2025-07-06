@@ -1,8 +1,8 @@
 sprite mdi-bullet <svg width="48" height="48"><g transform="scale(2)"><path d="M14,22H10V21H14V22M13,10V7H11V10L10,11.5V20H14V11.5L13,10M12,2C12,2 11,3 11,5V6H13V5C13,5 13,3 12,2Z" /></g></svg>
 
-!define MA_BULLET(_color)                                 SPRITE_PUT(ma_bullet, _color)
-!define MA_BULLET(_color, _scale)                         SPRITE_PUT(ma_bullet, _color, _scale)
-!define MA_BULLET(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA BULLET, ma_bullet, _color, _scale)
-!define MA_BULLET(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA BULLET, ma_bullet, _color, _scale, _shape)
-!define MA_BULLET(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA BULLET, _label, ma_bullet, _color, _scale, _shape)
+!define MA_BULLET(_color)                                 SPRITE_PUT(mdi-bullet, _color)
+!define MA_BULLET(_color, _scale)                         SPRITE_PUT(mdi-bullet, _color, _scale)
+!define MA_BULLET(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA BULLET, mdi-bullet, _color, _scale)
+!define MA_BULLET(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA BULLET, mdi-bullet, _color, _scale, _shape)
+!define MA_BULLET(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA BULLET, _label, mdi-bullet, _color, _scale, _shape)
 skinparam folderBackgroundColor<<MA BULLET>> White

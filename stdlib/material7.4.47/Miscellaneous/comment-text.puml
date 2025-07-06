@@ -1,8 +1,8 @@
 sprite mdi-comment-text <svg width="48" height="48"><g transform="scale(2)"><path d="M9,22A1,1 0 0,1 8,21V18H4A2,2 0 0,1 2,16V4C2,2.89 2.9,2 4,2H20A2,2 0 0,1 22,4V16A2,2 0 0,1 20,18H13.9L10.2,21.71C10,21.9 9.75,22 9.5,22V22H9M5,5V7H19V5H5M5,9V11H13V9H5M5,13V15H15V13H5Z" /></g></svg>
 
-!define MA_COMMENT_TEXT(_color)                                 SPRITE_PUT(ma_comment_text, _color)
-!define MA_COMMENT_TEXT(_color, _scale)                         SPRITE_PUT(ma_comment_text, _color, _scale)
-!define MA_COMMENT_TEXT(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA COMMENT TEXT, ma_comment_text, _color, _scale)
-!define MA_COMMENT_TEXT(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA COMMENT TEXT, ma_comment_text, _color, _scale, _shape)
-!define MA_COMMENT_TEXT(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA COMMENT TEXT, _label, ma_comment_text, _color, _scale, _shape)
+!define MA_COMMENT_TEXT(_color)                                 SPRITE_PUT(mdi-comment-text, _color)
+!define MA_COMMENT_TEXT(_color, _scale)                         SPRITE_PUT(mdi-comment-text, _color, _scale)
+!define MA_COMMENT_TEXT(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA COMMENT TEXT, mdi-comment-text, _color, _scale)
+!define MA_COMMENT_TEXT(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA COMMENT TEXT, mdi-comment-text, _color, _scale, _shape)
+!define MA_COMMENT_TEXT(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA COMMENT TEXT, _label, mdi-comment-text, _color, _scale, _shape)
 skinparam folderBackgroundColor<<MA COMMENT TEXT>> White

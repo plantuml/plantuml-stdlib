@@ -1,8 +1,8 @@
 sprite mdi-file-arrow-left-right-outline <svg width="48" height="48"><g transform="scale(2)"><path d="M13.09 20C13.21 20.72 13.46 21.39 13.81 22H6C4.89 22 4 21.11 4 20V4C4 2.9 4.89 2 6 2H14L20 8V13.09C19.67 13.04 19.34 13 19 13C18.66 13 18.33 13.04 18 13.09V9H13V4H6V20H13.09M23 17L20 14.5V16H16V18H20V19.5L23 17M18 18.5L15 21L18 23.5V22H22V20H18V18.5Z" /></g></svg>
 
-!define MA_FILE_ARROW_LEFT_RIGHT_OUTLINE(_color)                                 SPRITE_PUT(ma_file_arrow_left_right_outline, _color)
-!define MA_FILE_ARROW_LEFT_RIGHT_OUTLINE(_color, _scale)                         SPRITE_PUT(ma_file_arrow_left_right_outline, _color, _scale)
-!define MA_FILE_ARROW_LEFT_RIGHT_OUTLINE(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA FILE ARROW LEFT RIGHT OUTLINE, ma_file_arrow_left_right_outline, _color, _scale)
-!define MA_FILE_ARROW_LEFT_RIGHT_OUTLINE(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA FILE ARROW LEFT RIGHT OUTLINE, ma_file_arrow_left_right_outline, _color, _scale, _shape)
-!define MA_FILE_ARROW_LEFT_RIGHT_OUTLINE(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA FILE ARROW LEFT RIGHT OUTLINE, _label, ma_file_arrow_left_right_outline, _color, _scale, _shape)
+!define MA_FILE_ARROW_LEFT_RIGHT_OUTLINE(_color)                                 SPRITE_PUT(mdi-file-arrow-left-right-outline, _color)
+!define MA_FILE_ARROW_LEFT_RIGHT_OUTLINE(_color, _scale)                         SPRITE_PUT(mdi-file-arrow-left-right-outline, _color, _scale)
+!define MA_FILE_ARROW_LEFT_RIGHT_OUTLINE(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA FILE ARROW LEFT RIGHT OUTLINE, mdi-file-arrow-left-right-outline, _color, _scale)
+!define MA_FILE_ARROW_LEFT_RIGHT_OUTLINE(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA FILE ARROW LEFT RIGHT OUTLINE, mdi-file-arrow-left-right-outline, _color, _scale, _shape)
+!define MA_FILE_ARROW_LEFT_RIGHT_OUTLINE(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA FILE ARROW LEFT RIGHT OUTLINE, _label, mdi-file-arrow-left-right-outline, _color, _scale, _shape)
 skinparam folderBackgroundColor<<MA FILE ARROW LEFT RIGHT OUTLINE>> White

@@ -1,8 +1,8 @@
 sprite mdi-television-pause <svg width="48" height="48"><g transform="scale(2)"><path d="M3 3C1.89 3 1 3.89 1 5V17C1 18.1 1.9 19 3 19H8V21H16V19H21C22.1 19 23 18.1 23 17V5C23 3.89 22.1 3 21 3M3 5H21V17H3M9 8V14H11V8M13 8V14H15V8" /></g></svg>
 
-!define MA_TELEVISION_PAUSE(_color)                                 SPRITE_PUT(ma_television_pause, _color)
-!define MA_TELEVISION_PAUSE(_color, _scale)                         SPRITE_PUT(ma_television_pause, _color, _scale)
-!define MA_TELEVISION_PAUSE(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA TELEVISION PAUSE, ma_television_pause, _color, _scale)
-!define MA_TELEVISION_PAUSE(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA TELEVISION PAUSE, ma_television_pause, _color, _scale, _shape)
-!define MA_TELEVISION_PAUSE(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA TELEVISION PAUSE, _label, ma_television_pause, _color, _scale, _shape)
+!define MA_TELEVISION_PAUSE(_color)                                 SPRITE_PUT(mdi-television-pause, _color)
+!define MA_TELEVISION_PAUSE(_color, _scale)                         SPRITE_PUT(mdi-television-pause, _color, _scale)
+!define MA_TELEVISION_PAUSE(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA TELEVISION PAUSE, mdi-television-pause, _color, _scale)
+!define MA_TELEVISION_PAUSE(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA TELEVISION PAUSE, mdi-television-pause, _color, _scale, _shape)
+!define MA_TELEVISION_PAUSE(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA TELEVISION PAUSE, _label, mdi-television-pause, _color, _scale, _shape)
 skinparam folderBackgroundColor<<MA TELEVISION PAUSE>> White

@@ -1,8 +1,8 @@
 sprite mdi-bookmark-minus <svg width="48" height="48"><g transform="scale(2)"><path d="M17,3H7A2,2 0 0,0 5,5V21L12,18L19,21V5A2,2 0 0,0 17,3M15,11H9V9H15V11Z" /></g></svg>
 
-!define MA_BOOKMARK_MINUS(_color)                                 SPRITE_PUT(ma_bookmark_minus, _color)
-!define MA_BOOKMARK_MINUS(_color, _scale)                         SPRITE_PUT(ma_bookmark_minus, _color, _scale)
-!define MA_BOOKMARK_MINUS(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA BOOKMARK MINUS, ma_bookmark_minus, _color, _scale)
-!define MA_BOOKMARK_MINUS(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA BOOKMARK MINUS, ma_bookmark_minus, _color, _scale, _shape)
-!define MA_BOOKMARK_MINUS(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA BOOKMARK MINUS, _label, ma_bookmark_minus, _color, _scale, _shape)
+!define MA_BOOKMARK_MINUS(_color)                                 SPRITE_PUT(mdi-bookmark-minus, _color)
+!define MA_BOOKMARK_MINUS(_color, _scale)                         SPRITE_PUT(mdi-bookmark-minus, _color, _scale)
+!define MA_BOOKMARK_MINUS(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA BOOKMARK MINUS, mdi-bookmark-minus, _color, _scale)
+!define MA_BOOKMARK_MINUS(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA BOOKMARK MINUS, mdi-bookmark-minus, _color, _scale, _shape)
+!define MA_BOOKMARK_MINUS(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA BOOKMARK MINUS, _label, mdi-bookmark-minus, _color, _scale, _shape)
 skinparam folderBackgroundColor<<MA BOOKMARK MINUS>> White

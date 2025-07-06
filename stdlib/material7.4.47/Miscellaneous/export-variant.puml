@@ -1,8 +1,8 @@
 sprite mdi-export-variant <svg width="48" height="48"><g transform="scale(2)"><path d="M12,1L8,5H11V14H13V5H16M18,23H6C4.89,23 4,22.1 4,21V9A2,2 0 0,1 6,7H9V9H6V21H18V9H15V7H18A2,2 0 0,1 20,9V21A2,2 0 0,1 18,23Z" /></g></svg>
 
-!define MA_EXPORT_VARIANT(_color)                                 SPRITE_PUT(ma_export_variant, _color)
-!define MA_EXPORT_VARIANT(_color, _scale)                         SPRITE_PUT(ma_export_variant, _color, _scale)
-!define MA_EXPORT_VARIANT(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA EXPORT VARIANT, ma_export_variant, _color, _scale)
-!define MA_EXPORT_VARIANT(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA EXPORT VARIANT, ma_export_variant, _color, _scale, _shape)
-!define MA_EXPORT_VARIANT(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA EXPORT VARIANT, _label, ma_export_variant, _color, _scale, _shape)
+!define MA_EXPORT_VARIANT(_color)                                 SPRITE_PUT(mdi-export-variant, _color)
+!define MA_EXPORT_VARIANT(_color, _scale)                         SPRITE_PUT(mdi-export-variant, _color, _scale)
+!define MA_EXPORT_VARIANT(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA EXPORT VARIANT, mdi-export-variant, _color, _scale)
+!define MA_EXPORT_VARIANT(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA EXPORT VARIANT, mdi-export-variant, _color, _scale, _shape)
+!define MA_EXPORT_VARIANT(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA EXPORT VARIANT, _label, mdi-export-variant, _color, _scale, _shape)
 skinparam folderBackgroundColor<<MA EXPORT VARIANT>> White

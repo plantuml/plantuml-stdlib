@@ -1,8 +1,8 @@
 sprite mdi-assistant <svg width="48" height="48"><g transform="scale(2)"><path d="M19,2H5A2,2 0 0,0 3,4V18A2,2 0 0,0 5,20H9L12,23L15,20H19A2,2 0 0,0 21,18V4A2,2 0 0,0 19,2M13.88,12.88L12,17L10.12,12.88L6,11L10.12,9.12L12,5L13.88,9.12L18,11" /></g></svg>
 
-!define MA_ASSISTANT(_color)                                 SPRITE_PUT(ma_assistant, _color)
-!define MA_ASSISTANT(_color, _scale)                         SPRITE_PUT(ma_assistant, _color, _scale)
-!define MA_ASSISTANT(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA ASSISTANT, ma_assistant, _color, _scale)
-!define MA_ASSISTANT(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA ASSISTANT, ma_assistant, _color, _scale, _shape)
-!define MA_ASSISTANT(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA ASSISTANT, _label, ma_assistant, _color, _scale, _shape)
+!define MA_ASSISTANT(_color)                                 SPRITE_PUT(mdi-assistant, _color)
+!define MA_ASSISTANT(_color, _scale)                         SPRITE_PUT(mdi-assistant, _color, _scale)
+!define MA_ASSISTANT(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA ASSISTANT, mdi-assistant, _color, _scale)
+!define MA_ASSISTANT(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA ASSISTANT, mdi-assistant, _color, _scale, _shape)
+!define MA_ASSISTANT(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA ASSISTANT, _label, mdi-assistant, _color, _scale, _shape)
 skinparam folderBackgroundColor<<MA ASSISTANT>> White

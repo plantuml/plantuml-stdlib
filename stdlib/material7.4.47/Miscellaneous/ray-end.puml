@@ -1,8 +1,8 @@
 sprite mdi-ray-end <svg width="48" height="48"><g transform="scale(2)"><path d="M20,9C18.69,9 17.58,9.83 17.17,11H2V13H17.17C17.58,14.17 18.69,15 20,15A3,3 0 0,0 23,12A3,3 0 0,0 20,9Z" /></g></svg>
 
-!define MA_RAY_END(_color)                                 SPRITE_PUT(ma_ray_end, _color)
-!define MA_RAY_END(_color, _scale)                         SPRITE_PUT(ma_ray_end, _color, _scale)
-!define MA_RAY_END(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA RAY END, ma_ray_end, _color, _scale)
-!define MA_RAY_END(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA RAY END, ma_ray_end, _color, _scale, _shape)
-!define MA_RAY_END(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA RAY END, _label, ma_ray_end, _color, _scale, _shape)
+!define MA_RAY_END(_color)                                 SPRITE_PUT(mdi-ray-end, _color)
+!define MA_RAY_END(_color, _scale)                         SPRITE_PUT(mdi-ray-end, _color, _scale)
+!define MA_RAY_END(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA RAY END, mdi-ray-end, _color, _scale)
+!define MA_RAY_END(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA RAY END, mdi-ray-end, _color, _scale, _shape)
+!define MA_RAY_END(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA RAY END, _label, mdi-ray-end, _color, _scale, _shape)
 skinparam folderBackgroundColor<<MA RAY END>> White

@@ -1,8 +1,8 @@
 sprite mdi-format-horizontal-align-left <svg width="48" height="48"><g transform="scale(2)"><path d="M11,16V13H21V11H11V8L7,12L11,16M3,20H5V4H3V20Z" /></g></svg>
 
-!define MA_FORMAT_HORIZONTAL_ALIGN_LEFT(_color)                                 SPRITE_PUT(ma_format_horizontal_align_left, _color)
-!define MA_FORMAT_HORIZONTAL_ALIGN_LEFT(_color, _scale)                         SPRITE_PUT(ma_format_horizontal_align_left, _color, _scale)
-!define MA_FORMAT_HORIZONTAL_ALIGN_LEFT(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA FORMAT HORIZONTAL ALIGN LEFT, ma_format_horizontal_align_left, _color, _scale)
-!define MA_FORMAT_HORIZONTAL_ALIGN_LEFT(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA FORMAT HORIZONTAL ALIGN LEFT, ma_format_horizontal_align_left, _color, _scale, _shape)
-!define MA_FORMAT_HORIZONTAL_ALIGN_LEFT(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA FORMAT HORIZONTAL ALIGN LEFT, _label, ma_format_horizontal_align_left, _color, _scale, _shape)
+!define MA_FORMAT_HORIZONTAL_ALIGN_LEFT(_color)                                 SPRITE_PUT(mdi-format-horizontal-align-left, _color)
+!define MA_FORMAT_HORIZONTAL_ALIGN_LEFT(_color, _scale)                         SPRITE_PUT(mdi-format-horizontal-align-left, _color, _scale)
+!define MA_FORMAT_HORIZONTAL_ALIGN_LEFT(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA FORMAT HORIZONTAL ALIGN LEFT, mdi-format-horizontal-align-left, _color, _scale)
+!define MA_FORMAT_HORIZONTAL_ALIGN_LEFT(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA FORMAT HORIZONTAL ALIGN LEFT, mdi-format-horizontal-align-left, _color, _scale, _shape)
+!define MA_FORMAT_HORIZONTAL_ALIGN_LEFT(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA FORMAT HORIZONTAL ALIGN LEFT, _label, mdi-format-horizontal-align-left, _color, _scale, _shape)
 skinparam folderBackgroundColor<<MA FORMAT HORIZONTAL ALIGN LEFT>> White

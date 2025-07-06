@@ -1,8 +1,8 @@
 sprite mdi-eject-outline <svg width="48" height="48"><g transform="scale(2)"><path d="M5,17H19V19H5V17M12,5L5.33,15H18.67L12,5M12,8.6L14.93,13H9.07L12,8.6Z" /></g></svg>
 
-!define MA_EJECT_OUTLINE(_color)                                 SPRITE_PUT(ma_eject_outline, _color)
-!define MA_EJECT_OUTLINE(_color, _scale)                         SPRITE_PUT(ma_eject_outline, _color, _scale)
-!define MA_EJECT_OUTLINE(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA EJECT OUTLINE, ma_eject_outline, _color, _scale)
-!define MA_EJECT_OUTLINE(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA EJECT OUTLINE, ma_eject_outline, _color, _scale, _shape)
-!define MA_EJECT_OUTLINE(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA EJECT OUTLINE, _label, ma_eject_outline, _color, _scale, _shape)
+!define MA_EJECT_OUTLINE(_color)                                 SPRITE_PUT(mdi-eject-outline, _color)
+!define MA_EJECT_OUTLINE(_color, _scale)                         SPRITE_PUT(mdi-eject-outline, _color, _scale)
+!define MA_EJECT_OUTLINE(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA EJECT OUTLINE, mdi-eject-outline, _color, _scale)
+!define MA_EJECT_OUTLINE(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA EJECT OUTLINE, mdi-eject-outline, _color, _scale, _shape)
+!define MA_EJECT_OUTLINE(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA EJECT OUTLINE, _label, mdi-eject-outline, _color, _scale, _shape)
 skinparam folderBackgroundColor<<MA EJECT OUTLINE>> White

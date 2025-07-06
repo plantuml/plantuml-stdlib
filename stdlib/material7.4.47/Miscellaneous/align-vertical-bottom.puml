@@ -1,8 +1,8 @@
 sprite mdi-align-vertical-bottom <svg width="48" height="48"><g transform="scale(2)"><path d="M22 22H2V20H22V22M10 2H7V18H10V2M17 8H14V18H17V8Z" /></g></svg>
 
-!define MA_ALIGN_VERTICAL_BOTTOM(_color)                                 SPRITE_PUT(ma_align_vertical_bottom, _color)
-!define MA_ALIGN_VERTICAL_BOTTOM(_color, _scale)                         SPRITE_PUT(ma_align_vertical_bottom, _color, _scale)
-!define MA_ALIGN_VERTICAL_BOTTOM(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA ALIGN VERTICAL BOTTOM, ma_align_vertical_bottom, _color, _scale)
-!define MA_ALIGN_VERTICAL_BOTTOM(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA ALIGN VERTICAL BOTTOM, ma_align_vertical_bottom, _color, _scale, _shape)
-!define MA_ALIGN_VERTICAL_BOTTOM(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA ALIGN VERTICAL BOTTOM, _label, ma_align_vertical_bottom, _color, _scale, _shape)
+!define MA_ALIGN_VERTICAL_BOTTOM(_color)                                 SPRITE_PUT(mdi-align-vertical-bottom, _color)
+!define MA_ALIGN_VERTICAL_BOTTOM(_color, _scale)                         SPRITE_PUT(mdi-align-vertical-bottom, _color, _scale)
+!define MA_ALIGN_VERTICAL_BOTTOM(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA ALIGN VERTICAL BOTTOM, mdi-align-vertical-bottom, _color, _scale)
+!define MA_ALIGN_VERTICAL_BOTTOM(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA ALIGN VERTICAL BOTTOM, mdi-align-vertical-bottom, _color, _scale, _shape)
+!define MA_ALIGN_VERTICAL_BOTTOM(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA ALIGN VERTICAL BOTTOM, _label, mdi-align-vertical-bottom, _color, _scale, _shape)
 skinparam folderBackgroundColor<<MA ALIGN VERTICAL BOTTOM>> White

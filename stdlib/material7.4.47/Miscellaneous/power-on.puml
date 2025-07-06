@@ -1,8 +1,8 @@
 sprite mdi-power-on <svg width="48" height="48"><g transform="scale(2)"><path d="M11,3H13V21H11V3Z" /></g></svg>
 
-!define MA_POWER_ON(_color)                                 SPRITE_PUT(ma_power_on, _color)
-!define MA_POWER_ON(_color, _scale)                         SPRITE_PUT(ma_power_on, _color, _scale)
-!define MA_POWER_ON(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA POWER ON, ma_power_on, _color, _scale)
-!define MA_POWER_ON(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA POWER ON, ma_power_on, _color, _scale, _shape)
-!define MA_POWER_ON(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA POWER ON, _label, ma_power_on, _color, _scale, _shape)
+!define MA_POWER_ON(_color)                                 SPRITE_PUT(mdi-power-on, _color)
+!define MA_POWER_ON(_color, _scale)                         SPRITE_PUT(mdi-power-on, _color, _scale)
+!define MA_POWER_ON(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA POWER ON, mdi-power-on, _color, _scale)
+!define MA_POWER_ON(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA POWER ON, mdi-power-on, _color, _scale, _shape)
+!define MA_POWER_ON(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA POWER ON, _label, mdi-power-on, _color, _scale, _shape)
 skinparam folderBackgroundColor<<MA POWER ON>> White

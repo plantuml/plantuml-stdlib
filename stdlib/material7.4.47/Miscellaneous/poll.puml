@@ -1,8 +1,8 @@
 sprite mdi-poll <svg width="48" height="48"><g transform="scale(2)"><path d="M3,22V8H7V22H3M10,22V2H14V22H10M17,22V14H21V22H17Z" /></g></svg>
 
-!define MA_POLL(_color)                                 SPRITE_PUT(ma_poll, _color)
-!define MA_POLL(_color, _scale)                         SPRITE_PUT(ma_poll, _color, _scale)
-!define MA_POLL(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA POLL, ma_poll, _color, _scale)
-!define MA_POLL(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA POLL, ma_poll, _color, _scale, _shape)
-!define MA_POLL(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA POLL, _label, ma_poll, _color, _scale, _shape)
+!define MA_POLL(_color)                                 SPRITE_PUT(mdi-poll, _color)
+!define MA_POLL(_color, _scale)                         SPRITE_PUT(mdi-poll, _color, _scale)
+!define MA_POLL(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA POLL, mdi-poll, _color, _scale)
+!define MA_POLL(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA POLL, mdi-poll, _color, _scale, _shape)
+!define MA_POLL(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA POLL, _label, mdi-poll, _color, _scale, _shape)
 skinparam folderBackgroundColor<<MA POLL>> White

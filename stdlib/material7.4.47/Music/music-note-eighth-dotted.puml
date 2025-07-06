@@ -1,8 +1,8 @@
 sprite mdi-music-note-eighth-dotted <svg width="48" height="48"><g transform="scale(2)"><path d="M12 3V13.55A4 4 0 1 0 14 17V7H18V3M16.5 20A1.5 1.5 0 1 1 18 18.5A1.5 1.5 0 0 1 16.5 20Z" /></g></svg>
 
-!define MA_MUSIC_NOTE_EIGHTH_DOTTED(_color)                                 SPRITE_PUT(ma_music_note_eighth_dotted, _color)
-!define MA_MUSIC_NOTE_EIGHTH_DOTTED(_color, _scale)                         SPRITE_PUT(ma_music_note_eighth_dotted, _color, _scale)
-!define MA_MUSIC_NOTE_EIGHTH_DOTTED(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA MUSIC NOTE EIGHTH DOTTED, ma_music_note_eighth_dotted, _color, _scale)
-!define MA_MUSIC_NOTE_EIGHTH_DOTTED(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA MUSIC NOTE EIGHTH DOTTED, ma_music_note_eighth_dotted, _color, _scale, _shape)
-!define MA_MUSIC_NOTE_EIGHTH_DOTTED(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA MUSIC NOTE EIGHTH DOTTED, _label, ma_music_note_eighth_dotted, _color, _scale, _shape)
+!define MA_MUSIC_NOTE_EIGHTH_DOTTED(_color)                                 SPRITE_PUT(mdi-music-note-eighth-dotted, _color)
+!define MA_MUSIC_NOTE_EIGHTH_DOTTED(_color, _scale)                         SPRITE_PUT(mdi-music-note-eighth-dotted, _color, _scale)
+!define MA_MUSIC_NOTE_EIGHTH_DOTTED(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA MUSIC NOTE EIGHTH DOTTED, mdi-music-note-eighth-dotted, _color, _scale)
+!define MA_MUSIC_NOTE_EIGHTH_DOTTED(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA MUSIC NOTE EIGHTH DOTTED, mdi-music-note-eighth-dotted, _color, _scale, _shape)
+!define MA_MUSIC_NOTE_EIGHTH_DOTTED(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA MUSIC NOTE EIGHTH DOTTED, _label, mdi-music-note-eighth-dotted, _color, _scale, _shape)
 skinparam folderBackgroundColor<<MA MUSIC NOTE EIGHTH DOTTED>> White

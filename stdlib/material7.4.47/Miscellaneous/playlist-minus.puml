@@ -1,8 +1,8 @@
 sprite mdi-playlist-minus <svg width="48" height="48"><g transform="scale(2)"><path d="M3 16H10V14H3M12 14V16H22V14M14 6H3V8H14M14 10H3V12H14V10Z" /></g></svg>
 
-!define MA_PLAYLIST_MINUS(_color)                                 SPRITE_PUT(ma_playlist_minus, _color)
-!define MA_PLAYLIST_MINUS(_color, _scale)                         SPRITE_PUT(ma_playlist_minus, _color, _scale)
-!define MA_PLAYLIST_MINUS(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA PLAYLIST MINUS, ma_playlist_minus, _color, _scale)
-!define MA_PLAYLIST_MINUS(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA PLAYLIST MINUS, ma_playlist_minus, _color, _scale, _shape)
-!define MA_PLAYLIST_MINUS(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA PLAYLIST MINUS, _label, ma_playlist_minus, _color, _scale, _shape)
+!define MA_PLAYLIST_MINUS(_color)                                 SPRITE_PUT(mdi-playlist-minus, _color)
+!define MA_PLAYLIST_MINUS(_color, _scale)                         SPRITE_PUT(mdi-playlist-minus, _color, _scale)
+!define MA_PLAYLIST_MINUS(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA PLAYLIST MINUS, mdi-playlist-minus, _color, _scale)
+!define MA_PLAYLIST_MINUS(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA PLAYLIST MINUS, mdi-playlist-minus, _color, _scale, _shape)
+!define MA_PLAYLIST_MINUS(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA PLAYLIST MINUS, _label, mdi-playlist-minus, _color, _scale, _shape)
 skinparam folderBackgroundColor<<MA PLAYLIST MINUS>> White

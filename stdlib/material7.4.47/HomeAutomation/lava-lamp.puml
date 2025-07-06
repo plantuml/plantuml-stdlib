@@ -1,8 +1,8 @@
 sprite mdi-lava-lamp <svg width="48" height="48"><g transform="scale(2)"><path d="M10,3L8,16H16L14,3H10M11.5,5.75A0.75,0.75 0 0,1 12.25,6.5A0.75,0.75 0 0,1 11.5,7.25A0.75,0.75 0 0,1 10.75,6.5A0.75,0.75 0 0,1 11.5,5.75M12.5,8.5A1,1 0 0,1 13.5,9.5A1,1 0 0,1 12.5,10.5A1,1 0 0,1 11.5,9.5A1,1 0 0,1 12.5,8.5M11.5,12A1.5,1.5 0 0,1 13,13.5A1.5,1.5 0 0,1 11.5,15A1.5,1.5 0 0,1 10,13.5A1.5,1.5 0 0,1 11.5,12M8,17L10,19L8,21H16L14,19L16,17H8Z" /></g></svg>
 
-!define MA_LAVA_LAMP(_color)                                 SPRITE_PUT(ma_lava_lamp, _color)
-!define MA_LAVA_LAMP(_color, _scale)                         SPRITE_PUT(ma_lava_lamp, _color, _scale)
-!define MA_LAVA_LAMP(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA LAVA LAMP, ma_lava_lamp, _color, _scale)
-!define MA_LAVA_LAMP(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA LAVA LAMP, ma_lava_lamp, _color, _scale, _shape)
-!define MA_LAVA_LAMP(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA LAVA LAMP, _label, ma_lava_lamp, _color, _scale, _shape)
+!define MA_LAVA_LAMP(_color)                                 SPRITE_PUT(mdi-lava-lamp, _color)
+!define MA_LAVA_LAMP(_color, _scale)                         SPRITE_PUT(mdi-lava-lamp, _color, _scale)
+!define MA_LAVA_LAMP(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA LAVA LAMP, mdi-lava-lamp, _color, _scale)
+!define MA_LAVA_LAMP(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA LAVA LAMP, mdi-lava-lamp, _color, _scale, _shape)
+!define MA_LAVA_LAMP(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA LAVA LAMP, _label, mdi-lava-lamp, _color, _scale, _shape)
 skinparam folderBackgroundColor<<MA LAVA LAMP>> White

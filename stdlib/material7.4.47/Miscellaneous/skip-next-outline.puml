@@ -1,8 +1,8 @@
 sprite mdi-skip-next-outline <svg width="48" height="48"><g transform="scale(2)"><path d="M6,18L14.5,12L6,6M8,9.86L11.03,12L8,14.14M16,6H18V18H16" /></g></svg>
 
-!define MA_SKIP_NEXT_OUTLINE(_color)                                 SPRITE_PUT(ma_skip_next_outline, _color)
-!define MA_SKIP_NEXT_OUTLINE(_color, _scale)                         SPRITE_PUT(ma_skip_next_outline, _color, _scale)
-!define MA_SKIP_NEXT_OUTLINE(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA SKIP NEXT OUTLINE, ma_skip_next_outline, _color, _scale)
-!define MA_SKIP_NEXT_OUTLINE(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA SKIP NEXT OUTLINE, ma_skip_next_outline, _color, _scale, _shape)
-!define MA_SKIP_NEXT_OUTLINE(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA SKIP NEXT OUTLINE, _label, ma_skip_next_outline, _color, _scale, _shape)
+!define MA_SKIP_NEXT_OUTLINE(_color)                                 SPRITE_PUT(mdi-skip-next-outline, _color)
+!define MA_SKIP_NEXT_OUTLINE(_color, _scale)                         SPRITE_PUT(mdi-skip-next-outline, _color, _scale)
+!define MA_SKIP_NEXT_OUTLINE(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA SKIP NEXT OUTLINE, mdi-skip-next-outline, _color, _scale)
+!define MA_SKIP_NEXT_OUTLINE(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA SKIP NEXT OUTLINE, mdi-skip-next-outline, _color, _scale, _shape)
+!define MA_SKIP_NEXT_OUTLINE(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA SKIP NEXT OUTLINE, _label, mdi-skip-next-outline, _color, _scale, _shape)
 skinparam folderBackgroundColor<<MA SKIP NEXT OUTLINE>> White

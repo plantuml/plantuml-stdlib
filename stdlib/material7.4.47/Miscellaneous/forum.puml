@@ -1,8 +1,8 @@
 sprite mdi-forum <svg width="48" height="48"><g transform="scale(2)"><path d="M17,12V3A1,1 0 0,0 16,2H3A1,1 0 0,0 2,3V17L6,13H16A1,1 0 0,0 17,12M21,6H19V15H6V17A1,1 0 0,0 7,18H18L22,22V7A1,1 0 0,0 21,6Z" /></g></svg>
 
-!define MA_FORUM(_color)                                 SPRITE_PUT(ma_forum, _color)
-!define MA_FORUM(_color, _scale)                         SPRITE_PUT(ma_forum, _color, _scale)
-!define MA_FORUM(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA FORUM, ma_forum, _color, _scale)
-!define MA_FORUM(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA FORUM, ma_forum, _color, _scale, _shape)
-!define MA_FORUM(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA FORUM, _label, ma_forum, _color, _scale, _shape)
+!define MA_FORUM(_color)                                 SPRITE_PUT(mdi-forum, _color)
+!define MA_FORUM(_color, _scale)                         SPRITE_PUT(mdi-forum, _color, _scale)
+!define MA_FORUM(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA FORUM, mdi-forum, _color, _scale)
+!define MA_FORUM(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA FORUM, mdi-forum, _color, _scale, _shape)
+!define MA_FORUM(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA FORUM, _label, mdi-forum, _color, _scale, _shape)
 skinparam folderBackgroundColor<<MA FORUM>> White

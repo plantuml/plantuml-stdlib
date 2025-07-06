@@ -1,8 +1,8 @@
 sprite mdi-image-filter-none <svg width="48" height="48"><g transform="scale(2)"><path d="M21,17H7V3H21M21,1H7A2,2 0 0,0 5,3V17A2,2 0 0,0 7,19H21A2,2 0 0,0 23,17V3A2,2 0 0,0 21,1M3,5H1V21A2,2 0 0,0 3,23H19V21H3V5Z" /></g></svg>
 
-!define MA_IMAGE_FILTER_NONE(_color)                                 SPRITE_PUT(ma_image_filter_none, _color)
-!define MA_IMAGE_FILTER_NONE(_color, _scale)                         SPRITE_PUT(ma_image_filter_none, _color, _scale)
-!define MA_IMAGE_FILTER_NONE(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA IMAGE FILTER NONE, ma_image_filter_none, _color, _scale)
-!define MA_IMAGE_FILTER_NONE(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA IMAGE FILTER NONE, ma_image_filter_none, _color, _scale, _shape)
-!define MA_IMAGE_FILTER_NONE(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA IMAGE FILTER NONE, _label, ma_image_filter_none, _color, _scale, _shape)
+!define MA_IMAGE_FILTER_NONE(_color)                                 SPRITE_PUT(mdi-image-filter-none, _color)
+!define MA_IMAGE_FILTER_NONE(_color, _scale)                         SPRITE_PUT(mdi-image-filter-none, _color, _scale)
+!define MA_IMAGE_FILTER_NONE(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA IMAGE FILTER NONE, mdi-image-filter-none, _color, _scale)
+!define MA_IMAGE_FILTER_NONE(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA IMAGE FILTER NONE, mdi-image-filter-none, _color, _scale, _shape)
+!define MA_IMAGE_FILTER_NONE(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA IMAGE FILTER NONE, _label, mdi-image-filter-none, _color, _scale, _shape)
 skinparam folderBackgroundColor<<MA IMAGE FILTER NONE>> White

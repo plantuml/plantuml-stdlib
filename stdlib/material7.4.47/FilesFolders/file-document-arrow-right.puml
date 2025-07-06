@@ -1,8 +1,8 @@
 sprite mdi-file-document-arrow-right <svg width="48" height="48"><g transform="scale(2)"><path d="M23 19L20 16V18H16V20H20V22L23 19M13 19C13 18.7 13 18.3 13.1 18H6V16H13.8C14.3 15.2 14.9 14.5 15.7 14H6V12H18V13.1C18.3 13 18.7 13 19 13S19.7 13 20 13.1V8L14 2H6C4.9 2 4 2.9 4 4V20C4 21.1 4.9 22 6 22H13.8C13.3 21.1 13 20.1 13 19M13 3.5L18.5 9H13V3.5Z" /></g></svg>
 
-!define MA_FILE_DOCUMENT_ARROW_RIGHT(_color)                                 SPRITE_PUT(ma_file_document_arrow_right, _color)
-!define MA_FILE_DOCUMENT_ARROW_RIGHT(_color, _scale)                         SPRITE_PUT(ma_file_document_arrow_right, _color, _scale)
-!define MA_FILE_DOCUMENT_ARROW_RIGHT(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA FILE DOCUMENT ARROW RIGHT, ma_file_document_arrow_right, _color, _scale)
-!define MA_FILE_DOCUMENT_ARROW_RIGHT(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA FILE DOCUMENT ARROW RIGHT, ma_file_document_arrow_right, _color, _scale, _shape)
-!define MA_FILE_DOCUMENT_ARROW_RIGHT(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA FILE DOCUMENT ARROW RIGHT, _label, ma_file_document_arrow_right, _color, _scale, _shape)
+!define MA_FILE_DOCUMENT_ARROW_RIGHT(_color)                                 SPRITE_PUT(mdi-file-document-arrow-right, _color)
+!define MA_FILE_DOCUMENT_ARROW_RIGHT(_color, _scale)                         SPRITE_PUT(mdi-file-document-arrow-right, _color, _scale)
+!define MA_FILE_DOCUMENT_ARROW_RIGHT(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA FILE DOCUMENT ARROW RIGHT, mdi-file-document-arrow-right, _color, _scale)
+!define MA_FILE_DOCUMENT_ARROW_RIGHT(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA FILE DOCUMENT ARROW RIGHT, mdi-file-document-arrow-right, _color, _scale, _shape)
+!define MA_FILE_DOCUMENT_ARROW_RIGHT(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA FILE DOCUMENT ARROW RIGHT, _label, mdi-file-document-arrow-right, _color, _scale, _shape)
 skinparam folderBackgroundColor<<MA FILE DOCUMENT ARROW RIGHT>> White

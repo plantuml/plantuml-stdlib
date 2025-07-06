@@ -1,8 +1,8 @@
 sprite mdi-folder-star <svg width="48" height="48"><g transform="scale(2)"><path d="M20,6H12L10,4H4A2,2 0 0,0 2,6V18A2,2 0 0,0 4,20H20A2,2 0 0,0 22,18V8A2,2 0 0,0 20,6M17.94,17L15,15.28L12.06,17L12.84,13.67L10.25,11.43L13.66,11.14L15,8L16.34,11.14L19.75,11.43L17.16,13.67L17.94,17Z" /></g></svg>
 
-!define MA_FOLDER_STAR(_color)                                 SPRITE_PUT(ma_folder_star, _color)
-!define MA_FOLDER_STAR(_color, _scale)                         SPRITE_PUT(ma_folder_star, _color, _scale)
-!define MA_FOLDER_STAR(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA FOLDER STAR, ma_folder_star, _color, _scale)
-!define MA_FOLDER_STAR(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA FOLDER STAR, ma_folder_star, _color, _scale, _shape)
-!define MA_FOLDER_STAR(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA FOLDER STAR, _label, ma_folder_star, _color, _scale, _shape)
+!define MA_FOLDER_STAR(_color)                                 SPRITE_PUT(mdi-folder-star, _color)
+!define MA_FOLDER_STAR(_color, _scale)                         SPRITE_PUT(mdi-folder-star, _color, _scale)
+!define MA_FOLDER_STAR(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA FOLDER STAR, mdi-folder-star, _color, _scale)
+!define MA_FOLDER_STAR(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA FOLDER STAR, mdi-folder-star, _color, _scale, _shape)
+!define MA_FOLDER_STAR(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA FOLDER STAR, _label, mdi-folder-star, _color, _scale, _shape)
 skinparam folderBackgroundColor<<MA FOLDER STAR>> White

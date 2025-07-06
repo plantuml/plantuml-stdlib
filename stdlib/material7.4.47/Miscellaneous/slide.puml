@@ -1,8 +1,8 @@
 sprite mdi-slide <svg width="48" height="48"><g transform="scale(2)"><path d="M14.83 15.45C14.47 14.9 14.18 14.39 13.91 13.92C12.74 11.91 11.79 10.55 9 10.13V5.5C9 3.57 7.43 2 5.5 2S2 3.57 2 5.5V22H4V20H7V22H9V12.16C10.76 12.5 11.29 13.39 12.17 14.92C12.46 15.43 12.78 15.97 13.17 16.56C15.41 19.92 17.67 22 22 22V20C18.53 20 16.8 18.4 14.83 15.45M5.5 4C6.33 4 7 4.67 7 5.5V10H4V5.5C4 4.67 4.67 4 5.5 4M4 18V16H7V18H4M7 14H4V12H7V14Z" /></g></svg>
 
-!define MA_SLIDE(_color)                                 SPRITE_PUT(ma_slide, _color)
-!define MA_SLIDE(_color, _scale)                         SPRITE_PUT(ma_slide, _color, _scale)
-!define MA_SLIDE(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA SLIDE, ma_slide, _color, _scale)
-!define MA_SLIDE(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA SLIDE, ma_slide, _color, _scale, _shape)
-!define MA_SLIDE(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA SLIDE, _label, ma_slide, _color, _scale, _shape)
+!define MA_SLIDE(_color)                                 SPRITE_PUT(mdi-slide, _color)
+!define MA_SLIDE(_color, _scale)                         SPRITE_PUT(mdi-slide, _color, _scale)
+!define MA_SLIDE(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA SLIDE, mdi-slide, _color, _scale)
+!define MA_SLIDE(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA SLIDE, mdi-slide, _color, _scale, _shape)
+!define MA_SLIDE(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA SLIDE, _label, mdi-slide, _color, _scale, _shape)
 skinparam folderBackgroundColor<<MA SLIDE>> White

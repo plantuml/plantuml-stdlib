@@ -1,8 +1,8 @@
 sprite mdi-clipboard-text-search-outline <svg width="48" height="48"><g transform="scale(2)"><path d="M17 9H16.5 17M7 15H10C10.08 14.32 10.23 13.64 10.5 13H7V15M11.9 10.9C13.17 9.64 14.84 9 16.5 9H7V11H11.82C11.85 10.97 11.87 10.94 11.9 10.9M11.9 20.1C12.26 20.45 12.65 20.74 13.06 21H5C3.9 21 3 20.11 3 19V5C3 3.9 3.9 3 5 3H9.18C9.5 2.16 10.14 1.5 11 1.2C12.53 .64 14.25 1.44 14.82 3H19C20.11 3 21 3.9 21 5V10.82C20.4 10.24 19.72 9.8 19 9.5V5H17V7H7V5H5V19H11.03C11.27 19.39 11.57 19.76 11.9 20.1M11 4C11 4.55 11.45 5 12 5S13 4.55 13 4 12.55 3 12 3 11 3.45 11 4M23.39 21L22 22.39L18.88 19.32C18.19 19.75 17.37 20 16.5 20C14 20 12 18 12 15.5S14 11 16.5 11 21 13 21 15.5C21 16.38 20.75 17.21 20.31 17.9L23.39 21M19 15.5C19 14.12 17.88 13 16.5 13S14 14.12 14 15.5 15.12 18 16.5 18 19 16.88 19 15.5Z" /></g></svg>
 
-!define MA_CLIPBOARD_TEXT_SEARCH_OUTLINE(_color)                                 SPRITE_PUT(ma_clipboard_text_search_outline, _color)
-!define MA_CLIPBOARD_TEXT_SEARCH_OUTLINE(_color, _scale)                         SPRITE_PUT(ma_clipboard_text_search_outline, _color, _scale)
-!define MA_CLIPBOARD_TEXT_SEARCH_OUTLINE(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA CLIPBOARD TEXT SEARCH OUTLINE, ma_clipboard_text_search_outline, _color, _scale)
-!define MA_CLIPBOARD_TEXT_SEARCH_OUTLINE(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA CLIPBOARD TEXT SEARCH OUTLINE, ma_clipboard_text_search_outline, _color, _scale, _shape)
-!define MA_CLIPBOARD_TEXT_SEARCH_OUTLINE(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA CLIPBOARD TEXT SEARCH OUTLINE, _label, ma_clipboard_text_search_outline, _color, _scale, _shape)
+!define MA_CLIPBOARD_TEXT_SEARCH_OUTLINE(_color)                                 SPRITE_PUT(mdi-clipboard-text-search-outline, _color)
+!define MA_CLIPBOARD_TEXT_SEARCH_OUTLINE(_color, _scale)                         SPRITE_PUT(mdi-clipboard-text-search-outline, _color, _scale)
+!define MA_CLIPBOARD_TEXT_SEARCH_OUTLINE(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA CLIPBOARD TEXT SEARCH OUTLINE, mdi-clipboard-text-search-outline, _color, _scale)
+!define MA_CLIPBOARD_TEXT_SEARCH_OUTLINE(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA CLIPBOARD TEXT SEARCH OUTLINE, mdi-clipboard-text-search-outline, _color, _scale, _shape)
+!define MA_CLIPBOARD_TEXT_SEARCH_OUTLINE(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA CLIPBOARD TEXT SEARCH OUTLINE, _label, mdi-clipboard-text-search-outline, _color, _scale, _shape)
 skinparam folderBackgroundColor<<MA CLIPBOARD TEXT SEARCH OUTLINE>> White

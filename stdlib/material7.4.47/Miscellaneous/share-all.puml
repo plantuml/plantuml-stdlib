@@ -1,8 +1,8 @@
 sprite mdi-share-all <svg width="48" height="48"><g transform="scale(2)"><path d="M11 9V5L18 12L11 19V14.9C6 14.9 2.5 16.5 0 20C1 15 4 10 11 9M17 8V5L24 12L17 19V16L21 12L17 8Z" /></g></svg>
 
-!define MA_SHARE_ALL(_color)                                 SPRITE_PUT(ma_share_all, _color)
-!define MA_SHARE_ALL(_color, _scale)                         SPRITE_PUT(ma_share_all, _color, _scale)
-!define MA_SHARE_ALL(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA SHARE ALL, ma_share_all, _color, _scale)
-!define MA_SHARE_ALL(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA SHARE ALL, ma_share_all, _color, _scale, _shape)
-!define MA_SHARE_ALL(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA SHARE ALL, _label, ma_share_all, _color, _scale, _shape)
+!define MA_SHARE_ALL(_color)                                 SPRITE_PUT(mdi-share-all, _color)
+!define MA_SHARE_ALL(_color, _scale)                         SPRITE_PUT(mdi-share-all, _color, _scale)
+!define MA_SHARE_ALL(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA SHARE ALL, mdi-share-all, _color, _scale)
+!define MA_SHARE_ALL(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA SHARE ALL, mdi-share-all, _color, _scale, _shape)
+!define MA_SHARE_ALL(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA SHARE ALL, _label, mdi-share-all, _color, _scale, _shape)
 skinparam folderBackgroundColor<<MA SHARE ALL>> White

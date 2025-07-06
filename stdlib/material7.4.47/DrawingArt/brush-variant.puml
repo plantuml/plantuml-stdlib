@@ -1,8 +1,8 @@
 sprite mdi-brush-variant <svg width="48" height="48"><g transform="scale(2)"><path d="M8 3C5.79 3 4 4.79 4 7V14C4 15.1 4.9 16 6 16H9V20C9 21.1 9.9 22 11 22H13C14.1 22 15 21.1 15 20V16H18C19.1 16 20 15.1 20 14V3H8M8 5H12V7H14V5H15V9H17V5H18V10H6V7C6 5.9 6.9 5 8 5M6 14V12H18V14H6Z" /></g></svg>
 
-!define MA_BRUSH_VARIANT(_color)                                 SPRITE_PUT(ma_brush_variant, _color)
-!define MA_BRUSH_VARIANT(_color, _scale)                         SPRITE_PUT(ma_brush_variant, _color, _scale)
-!define MA_BRUSH_VARIANT(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA BRUSH VARIANT, ma_brush_variant, _color, _scale)
-!define MA_BRUSH_VARIANT(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA BRUSH VARIANT, ma_brush_variant, _color, _scale, _shape)
-!define MA_BRUSH_VARIANT(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA BRUSH VARIANT, _label, ma_brush_variant, _color, _scale, _shape)
+!define MA_BRUSH_VARIANT(_color)                                 SPRITE_PUT(mdi-brush-variant, _color)
+!define MA_BRUSH_VARIANT(_color, _scale)                         SPRITE_PUT(mdi-brush-variant, _color, _scale)
+!define MA_BRUSH_VARIANT(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA BRUSH VARIANT, mdi-brush-variant, _color, _scale)
+!define MA_BRUSH_VARIANT(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA BRUSH VARIANT, mdi-brush-variant, _color, _scale, _shape)
+!define MA_BRUSH_VARIANT(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA BRUSH VARIANT, _label, mdi-brush-variant, _color, _scale, _shape)
 skinparam folderBackgroundColor<<MA BRUSH VARIANT>> White

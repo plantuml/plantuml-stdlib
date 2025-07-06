@@ -1,8 +1,8 @@
 sprite mdi-tab-minus <svg width="48" height="48"><g transform="scale(2)"><path d="M3,3A2,2 0 0,0 1,5V19A2,2 0 0,0 3,21H21A2,2 0 0,0 23,19V5A2,2 0 0,0 21,3H3M3,5H13V9H21V19H3V5M7,13V15H15V13H7Z" /></g></svg>
 
-!define MA_TAB_MINUS(_color)                                 SPRITE_PUT(ma_tab_minus, _color)
-!define MA_TAB_MINUS(_color, _scale)                         SPRITE_PUT(ma_tab_minus, _color, _scale)
-!define MA_TAB_MINUS(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA TAB MINUS, ma_tab_minus, _color, _scale)
-!define MA_TAB_MINUS(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA TAB MINUS, ma_tab_minus, _color, _scale, _shape)
-!define MA_TAB_MINUS(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA TAB MINUS, _label, ma_tab_minus, _color, _scale, _shape)
+!define MA_TAB_MINUS(_color)                                 SPRITE_PUT(mdi-tab-minus, _color)
+!define MA_TAB_MINUS(_color, _scale)                         SPRITE_PUT(mdi-tab-minus, _color, _scale)
+!define MA_TAB_MINUS(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA TAB MINUS, mdi-tab-minus, _color, _scale)
+!define MA_TAB_MINUS(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA TAB MINUS, mdi-tab-minus, _color, _scale, _shape)
+!define MA_TAB_MINUS(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA TAB MINUS, _label, mdi-tab-minus, _color, _scale, _shape)
 skinparam folderBackgroundColor<<MA TAB MINUS>> White

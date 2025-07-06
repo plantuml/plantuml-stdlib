@@ -1,8 +1,8 @@
 sprite mdi-microsoft-xbox-controller-menu <svg width="48" height="48"><g transform="scale(2)"><path d="M12,2A10,10 0 0,0 2,12A10,10 0 0,0 12,22A10,10 0 0,0 22,12A10,10 0 0,0 12,2M6,7H18V9H6V7M6,11H18V13H6V11M6,15H18V17H6V15Z" /></g></svg>
 
-!define MA_MICROSOFT_XBOX_CONTROLLER_MENU(_color)                                 SPRITE_PUT(ma_microsoft_xbox_controller_menu, _color)
-!define MA_MICROSOFT_XBOX_CONTROLLER_MENU(_color, _scale)                         SPRITE_PUT(ma_microsoft_xbox_controller_menu, _color, _scale)
-!define MA_MICROSOFT_XBOX_CONTROLLER_MENU(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA MICROSOFT XBOX CONTROLLER MENU, ma_microsoft_xbox_controller_menu, _color, _scale)
-!define MA_MICROSOFT_XBOX_CONTROLLER_MENU(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA MICROSOFT XBOX CONTROLLER MENU, ma_microsoft_xbox_controller_menu, _color, _scale, _shape)
-!define MA_MICROSOFT_XBOX_CONTROLLER_MENU(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA MICROSOFT XBOX CONTROLLER MENU, _label, ma_microsoft_xbox_controller_menu, _color, _scale, _shape)
+!define MA_MICROSOFT_XBOX_CONTROLLER_MENU(_color)                                 SPRITE_PUT(mdi-microsoft-xbox-controller-menu, _color)
+!define MA_MICROSOFT_XBOX_CONTROLLER_MENU(_color, _scale)                         SPRITE_PUT(mdi-microsoft-xbox-controller-menu, _color, _scale)
+!define MA_MICROSOFT_XBOX_CONTROLLER_MENU(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA MICROSOFT XBOX CONTROLLER MENU, mdi-microsoft-xbox-controller-menu, _color, _scale)
+!define MA_MICROSOFT_XBOX_CONTROLLER_MENU(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA MICROSOFT XBOX CONTROLLER MENU, mdi-microsoft-xbox-controller-menu, _color, _scale, _shape)
+!define MA_MICROSOFT_XBOX_CONTROLLER_MENU(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA MICROSOFT XBOX CONTROLLER MENU, _label, mdi-microsoft-xbox-controller-menu, _color, _scale, _shape)
 skinparam folderBackgroundColor<<MA MICROSOFT XBOX CONTROLLER MENU>> White

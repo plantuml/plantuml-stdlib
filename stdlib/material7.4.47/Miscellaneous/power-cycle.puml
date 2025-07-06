@@ -1,8 +1,8 @@
 sprite mdi-power-cycle <svg width="48" height="48"><g transform="scale(2)"><path d="M12,3A9,9 0 0,0 3,12A9,9 0 0,0 12,21A9,9 0 0,0 21,12A9,9 0 0,0 12,3M12,19A7,7 0 0,1 5,12A7,7 0 0,1 12,5A7,7 0 0,1 19,12A7,7 0 0,1 12,19M13,17H11V7H13V17Z" /></g></svg>
 
-!define MA_POWER_CYCLE(_color)                                 SPRITE_PUT(ma_power_cycle, _color)
-!define MA_POWER_CYCLE(_color, _scale)                         SPRITE_PUT(ma_power_cycle, _color, _scale)
-!define MA_POWER_CYCLE(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA POWER CYCLE, ma_power_cycle, _color, _scale)
-!define MA_POWER_CYCLE(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA POWER CYCLE, ma_power_cycle, _color, _scale, _shape)
-!define MA_POWER_CYCLE(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA POWER CYCLE, _label, ma_power_cycle, _color, _scale, _shape)
+!define MA_POWER_CYCLE(_color)                                 SPRITE_PUT(mdi-power-cycle, _color)
+!define MA_POWER_CYCLE(_color, _scale)                         SPRITE_PUT(mdi-power-cycle, _color, _scale)
+!define MA_POWER_CYCLE(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA POWER CYCLE, mdi-power-cycle, _color, _scale)
+!define MA_POWER_CYCLE(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA POWER CYCLE, mdi-power-cycle, _color, _scale, _shape)
+!define MA_POWER_CYCLE(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA POWER CYCLE, _label, mdi-power-cycle, _color, _scale, _shape)
 skinparam folderBackgroundColor<<MA POWER CYCLE>> White

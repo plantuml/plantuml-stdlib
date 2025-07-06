@@ -1,8 +1,8 @@
 sprite mdi-fraction-one-half <svg width="48" height="48"><g transform="scale(2)"><path d="M5.79 21.61L4.21 20.39L18.21 2.39L19.79 3.61L5.79 21.61M4 2V4H6V12H8V2H4M15 12V14H19V16H17C15.9 16 15 16.9 15 18V22H21V20H17V18H19C20.11 18 21 17.11 21 16V14C21 12.9 20.11 12 19 12H15Z" /></g></svg>
 
-!define MA_FRACTION_ONE_HALF(_color)                                 SPRITE_PUT(ma_fraction_one_half, _color)
-!define MA_FRACTION_ONE_HALF(_color, _scale)                         SPRITE_PUT(ma_fraction_one_half, _color, _scale)
-!define MA_FRACTION_ONE_HALF(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA FRACTION ONE HALF, ma_fraction_one_half, _color, _scale)
-!define MA_FRACTION_ONE_HALF(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA FRACTION ONE HALF, ma_fraction_one_half, _color, _scale, _shape)
-!define MA_FRACTION_ONE_HALF(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA FRACTION ONE HALF, _label, ma_fraction_one_half, _color, _scale, _shape)
+!define MA_FRACTION_ONE_HALF(_color)                                 SPRITE_PUT(mdi-fraction-one-half, _color)
+!define MA_FRACTION_ONE_HALF(_color, _scale)                         SPRITE_PUT(mdi-fraction-one-half, _color, _scale)
+!define MA_FRACTION_ONE_HALF(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA FRACTION ONE HALF, mdi-fraction-one-half, _color, _scale)
+!define MA_FRACTION_ONE_HALF(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA FRACTION ONE HALF, mdi-fraction-one-half, _color, _scale, _shape)
+!define MA_FRACTION_ONE_HALF(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA FRACTION ONE HALF, _label, mdi-fraction-one-half, _color, _scale, _shape)
 skinparam folderBackgroundColor<<MA FRACTION ONE HALF>> White

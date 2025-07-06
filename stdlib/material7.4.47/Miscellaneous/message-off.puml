@@ -1,8 +1,8 @@
 sprite mdi-message-off <svg width="48" height="48"><g transform="scale(2)"><path d="M20.95 17.75L5.2 2H20C21.1 2 22 2.89 22 4V16C22 16.76 21.57 17.41 20.95 17.75M2.39 1.73L1.11 3L2 3.9C2 3.93 2 3.97 2 4V22L6 18H16.11L20.84 22.73L22.11 21.46L2.39 1.73Z" /></g></svg>
 
-!define MA_MESSAGE_OFF(_color)                                 SPRITE_PUT(ma_message_off, _color)
-!define MA_MESSAGE_OFF(_color, _scale)                         SPRITE_PUT(ma_message_off, _color, _scale)
-!define MA_MESSAGE_OFF(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA MESSAGE OFF, ma_message_off, _color, _scale)
-!define MA_MESSAGE_OFF(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA MESSAGE OFF, ma_message_off, _color, _scale, _shape)
-!define MA_MESSAGE_OFF(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA MESSAGE OFF, _label, ma_message_off, _color, _scale, _shape)
+!define MA_MESSAGE_OFF(_color)                                 SPRITE_PUT(mdi-message-off, _color)
+!define MA_MESSAGE_OFF(_color, _scale)                         SPRITE_PUT(mdi-message-off, _color, _scale)
+!define MA_MESSAGE_OFF(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA MESSAGE OFF, mdi-message-off, _color, _scale)
+!define MA_MESSAGE_OFF(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA MESSAGE OFF, mdi-message-off, _color, _scale, _shape)
+!define MA_MESSAGE_OFF(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA MESSAGE OFF, _label, mdi-message-off, _color, _scale, _shape)
 skinparam folderBackgroundColor<<MA MESSAGE OFF>> White

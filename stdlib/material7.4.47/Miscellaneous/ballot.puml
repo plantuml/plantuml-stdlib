@@ -1,8 +1,8 @@
 sprite mdi-ballot <svg width="48" height="48"><g transform="scale(2)"><path d="M13,9.5H18V7.5H13V9.5M13,16.5H18V14.5H13V16.5M19,21H5A2,2 0 0,1 3,19V5A2,2 0 0,1 5,3H19A2,2 0 0,1 21,5V19A2,2 0 0,1 19,21M6,11H11V6H6V11M7,7H10V10H7V7M6,18H11V13H6V18M7,14H10V17H7V14Z" /></g></svg>
 
-!define MA_BALLOT(_color)                                 SPRITE_PUT(ma_ballot, _color)
-!define MA_BALLOT(_color, _scale)                         SPRITE_PUT(ma_ballot, _color, _scale)
-!define MA_BALLOT(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA BALLOT, ma_ballot, _color, _scale)
-!define MA_BALLOT(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA BALLOT, ma_ballot, _color, _scale, _shape)
-!define MA_BALLOT(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA BALLOT, _label, ma_ballot, _color, _scale, _shape)
+!define MA_BALLOT(_color)                                 SPRITE_PUT(mdi-ballot, _color)
+!define MA_BALLOT(_color, _scale)                         SPRITE_PUT(mdi-ballot, _color, _scale)
+!define MA_BALLOT(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA BALLOT, mdi-ballot, _color, _scale)
+!define MA_BALLOT(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA BALLOT, mdi-ballot, _color, _scale, _shape)
+!define MA_BALLOT(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA BALLOT, _label, mdi-ballot, _color, _scale, _shape)
 skinparam folderBackgroundColor<<MA BALLOT>> White

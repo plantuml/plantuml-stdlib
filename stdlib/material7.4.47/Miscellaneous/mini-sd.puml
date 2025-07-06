@@ -1,8 +1,8 @@
 sprite mdi-mini-sd <svg width="48" height="48"><g transform="scale(2)"><path d="M6,4A2,2 0 0,0 4,6V18A2,2 0 0,0 6,20H18A2,2 0 0,0 20,18V12L18,10V6A2,2 0 0,0 16,4H6M7,6H9V10H7V6M10,6H12V10H10V6M13,6H15V10H13V6Z" /></g></svg>
 
-!define MA_MINI_SD(_color)                                 SPRITE_PUT(ma_mini_sd, _color)
-!define MA_MINI_SD(_color, _scale)                         SPRITE_PUT(ma_mini_sd, _color, _scale)
-!define MA_MINI_SD(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA MINI SD, ma_mini_sd, _color, _scale)
-!define MA_MINI_SD(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA MINI SD, ma_mini_sd, _color, _scale, _shape)
-!define MA_MINI_SD(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA MINI SD, _label, ma_mini_sd, _color, _scale, _shape)
+!define MA_MINI_SD(_color)                                 SPRITE_PUT(mdi-mini-sd, _color)
+!define MA_MINI_SD(_color, _scale)                         SPRITE_PUT(mdi-mini-sd, _color, _scale)
+!define MA_MINI_SD(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA MINI SD, mdi-mini-sd, _color, _scale)
+!define MA_MINI_SD(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA MINI SD, mdi-mini-sd, _color, _scale, _shape)
+!define MA_MINI_SD(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA MINI SD, _label, mdi-mini-sd, _color, _scale, _shape)
 skinparam folderBackgroundColor<<MA MINI SD>> White

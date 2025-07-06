@@ -1,8 +1,8 @@
 sprite mdi-cup-water <svg width="48" height="48"><g transform="scale(2)"><path d="M18.32,8H5.67L5.23,4H18.77M12,19A3,3 0 0,1 9,16C9,14 12,10.6 12,10.6C12,10.6 15,14 15,16A3,3 0 0,1 12,19M3,2L5,20.23C5.13,21.23 5.97,22 7,22H17C18,22 18.87,21.23 19,20.23L21,2H3Z" /></g></svg>
 
-!define MA_CUP_WATER(_color)                                 SPRITE_PUT(ma_cup_water, _color)
-!define MA_CUP_WATER(_color, _scale)                         SPRITE_PUT(ma_cup_water, _color, _scale)
-!define MA_CUP_WATER(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA CUP WATER, ma_cup_water, _color, _scale)
-!define MA_CUP_WATER(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA CUP WATER, ma_cup_water, _color, _scale, _shape)
-!define MA_CUP_WATER(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA CUP WATER, _label, ma_cup_water, _color, _scale, _shape)
+!define MA_CUP_WATER(_color)                                 SPRITE_PUT(mdi-cup-water, _color)
+!define MA_CUP_WATER(_color, _scale)                         SPRITE_PUT(mdi-cup-water, _color, _scale)
+!define MA_CUP_WATER(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA CUP WATER, mdi-cup-water, _color, _scale)
+!define MA_CUP_WATER(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA CUP WATER, mdi-cup-water, _color, _scale, _shape)
+!define MA_CUP_WATER(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA CUP WATER, _label, mdi-cup-water, _color, _scale, _shape)
 skinparam folderBackgroundColor<<MA CUP WATER>> White

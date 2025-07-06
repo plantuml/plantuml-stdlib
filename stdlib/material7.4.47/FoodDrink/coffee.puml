@@ -1,8 +1,8 @@
 sprite mdi-coffee <svg width="48" height="48"><g transform="scale(2)"><path d="M2,21H20V19H2M20,8H18V5H20M20,3H4V13A4,4 0 0,0 8,17H14A4,4 0 0,0 18,13V10H20A2,2 0 0,0 22,8V5C22,3.89 21.1,3 20,3Z" /></g></svg>
 
-!define MA_COFFEE(_color)                                 SPRITE_PUT(ma_coffee, _color)
-!define MA_COFFEE(_color, _scale)                         SPRITE_PUT(ma_coffee, _color, _scale)
-!define MA_COFFEE(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA COFFEE, ma_coffee, _color, _scale)
-!define MA_COFFEE(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA COFFEE, ma_coffee, _color, _scale, _shape)
-!define MA_COFFEE(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA COFFEE, _label, ma_coffee, _color, _scale, _shape)
+!define MA_COFFEE(_color)                                 SPRITE_PUT(mdi-coffee, _color)
+!define MA_COFFEE(_color, _scale)                         SPRITE_PUT(mdi-coffee, _color, _scale)
+!define MA_COFFEE(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA COFFEE, mdi-coffee, _color, _scale)
+!define MA_COFFEE(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA COFFEE, mdi-coffee, _color, _scale, _shape)
+!define MA_COFFEE(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA COFFEE, _label, mdi-coffee, _color, _scale, _shape)
 skinparam folderBackgroundColor<<MA COFFEE>> White

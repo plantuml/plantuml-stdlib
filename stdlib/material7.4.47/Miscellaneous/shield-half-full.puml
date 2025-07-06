@@ -1,8 +1,8 @@
 sprite mdi-shield-half-full <svg width="48" height="48"><g transform="scale(2)"><path d="M21,11C21,16.55 17.16,21.74 12,23C6.84,21.74 3,16.55 3,11V5L12,1L21,5V11M12,21C15.75,20 19,15.54 19,11.22V6.3L12,3.18V21Z" /></g></svg>
 
-!define MA_SHIELD_HALF_FULL(_color)                                 SPRITE_PUT(ma_shield_half_full, _color)
-!define MA_SHIELD_HALF_FULL(_color, _scale)                         SPRITE_PUT(ma_shield_half_full, _color, _scale)
-!define MA_SHIELD_HALF_FULL(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA SHIELD HALF FULL, ma_shield_half_full, _color, _scale)
-!define MA_SHIELD_HALF_FULL(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA SHIELD HALF FULL, ma_shield_half_full, _color, _scale, _shape)
-!define MA_SHIELD_HALF_FULL(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA SHIELD HALF FULL, _label, ma_shield_half_full, _color, _scale, _shape)
+!define MA_SHIELD_HALF_FULL(_color)                                 SPRITE_PUT(mdi-shield-half-full, _color)
+!define MA_SHIELD_HALF_FULL(_color, _scale)                         SPRITE_PUT(mdi-shield-half-full, _color, _scale)
+!define MA_SHIELD_HALF_FULL(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA SHIELD HALF FULL, mdi-shield-half-full, _color, _scale)
+!define MA_SHIELD_HALF_FULL(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA SHIELD HALF FULL, mdi-shield-half-full, _color, _scale, _shape)
+!define MA_SHIELD_HALF_FULL(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA SHIELD HALF FULL, _label, mdi-shield-half-full, _color, _scale, _shape)
 skinparam folderBackgroundColor<<MA SHIELD HALF FULL>> White

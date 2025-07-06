@@ -1,8 +1,8 @@
 sprite mdi-invoice-text-edit <svg width="48" height="48"><g transform="scale(2)"><path d="M9.86 21.43L9 22L6 20L3 22V3H21V10.2C20.1 9.82 19 10 18.24 10.75L9.86 19.13V21.43M17 7H7V9H17V7M15 11H7V13H15V11M11.86 19.96V22H13.9L20.03 15.87L18 13.83L11.86 19.96M21.71 13.47L20.39 12.15C20.37 12.13 20.34 12.1 20.31 12.09C20.12 11.96 19.86 11.97 19.69 12.13L19.67 12.15L18.69 13.13L20.73 15.17L21.71 14.19C21.91 14 21.91 13.67 21.71 13.47Z" /></g></svg>
 
-!define MA_INVOICE_TEXT_EDIT(_color)                                 SPRITE_PUT(ma_invoice_text_edit, _color)
-!define MA_INVOICE_TEXT_EDIT(_color, _scale)                         SPRITE_PUT(ma_invoice_text_edit, _color, _scale)
-!define MA_INVOICE_TEXT_EDIT(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA INVOICE TEXT EDIT, ma_invoice_text_edit, _color, _scale)
-!define MA_INVOICE_TEXT_EDIT(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA INVOICE TEXT EDIT, ma_invoice_text_edit, _color, _scale, _shape)
-!define MA_INVOICE_TEXT_EDIT(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA INVOICE TEXT EDIT, _label, ma_invoice_text_edit, _color, _scale, _shape)
+!define MA_INVOICE_TEXT_EDIT(_color)                                 SPRITE_PUT(mdi-invoice-text-edit, _color)
+!define MA_INVOICE_TEXT_EDIT(_color, _scale)                         SPRITE_PUT(mdi-invoice-text-edit, _color, _scale)
+!define MA_INVOICE_TEXT_EDIT(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA INVOICE TEXT EDIT, mdi-invoice-text-edit, _color, _scale)
+!define MA_INVOICE_TEXT_EDIT(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA INVOICE TEXT EDIT, mdi-invoice-text-edit, _color, _scale, _shape)
+!define MA_INVOICE_TEXT_EDIT(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA INVOICE TEXT EDIT, _label, mdi-invoice-text-edit, _color, _scale, _shape)
 skinparam folderBackgroundColor<<MA INVOICE TEXT EDIT>> White

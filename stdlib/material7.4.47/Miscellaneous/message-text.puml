@@ -1,8 +1,8 @@
 sprite mdi-message-text <svg width="48" height="48"><g transform="scale(2)"><path d="M20,2H4A2,2 0 0,0 2,4V22L6,18H20A2,2 0 0,0 22,16V4A2,2 0 0,0 20,2M6,9H18V11H6M14,14H6V12H14M18,8H6V6H18" /></g></svg>
 
-!define MA_MESSAGE_TEXT(_color)                                 SPRITE_PUT(ma_message_text, _color)
-!define MA_MESSAGE_TEXT(_color, _scale)                         SPRITE_PUT(ma_message_text, _color, _scale)
-!define MA_MESSAGE_TEXT(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA MESSAGE TEXT, ma_message_text, _color, _scale)
-!define MA_MESSAGE_TEXT(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA MESSAGE TEXT, ma_message_text, _color, _scale, _shape)
-!define MA_MESSAGE_TEXT(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA MESSAGE TEXT, _label, ma_message_text, _color, _scale, _shape)
+!define MA_MESSAGE_TEXT(_color)                                 SPRITE_PUT(mdi-message-text, _color)
+!define MA_MESSAGE_TEXT(_color, _scale)                         SPRITE_PUT(mdi-message-text, _color, _scale)
+!define MA_MESSAGE_TEXT(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA MESSAGE TEXT, mdi-message-text, _color, _scale)
+!define MA_MESSAGE_TEXT(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA MESSAGE TEXT, mdi-message-text, _color, _scale, _shape)
+!define MA_MESSAGE_TEXT(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA MESSAGE TEXT, _label, mdi-message-text, _color, _scale, _shape)
 skinparam folderBackgroundColor<<MA MESSAGE TEXT>> White

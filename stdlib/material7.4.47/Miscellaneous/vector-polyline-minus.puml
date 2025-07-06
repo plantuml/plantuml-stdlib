@@ -1,8 +1,8 @@
 sprite mdi-vector-polyline-minus <svg width="48" height="48"><g transform="scale(2)"><path d="M2 3V9H4.95L6.95 15H6V21H12V16.41L17.41 11H22V5H16V9.57L10.59 15H9.06L7.06 9H8V3H2M4 5H6V7H4V5M18 7H20V9H18V7M8 17H10V19H8V17M15 18V20H23V18H15Z" /></g></svg>
 
-!define MA_VECTOR_POLYLINE_MINUS(_color)                                 SPRITE_PUT(ma_vector_polyline_minus, _color)
-!define MA_VECTOR_POLYLINE_MINUS(_color, _scale)                         SPRITE_PUT(ma_vector_polyline_minus, _color, _scale)
-!define MA_VECTOR_POLYLINE_MINUS(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA VECTOR POLYLINE MINUS, ma_vector_polyline_minus, _color, _scale)
-!define MA_VECTOR_POLYLINE_MINUS(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA VECTOR POLYLINE MINUS, ma_vector_polyline_minus, _color, _scale, _shape)
-!define MA_VECTOR_POLYLINE_MINUS(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA VECTOR POLYLINE MINUS, _label, ma_vector_polyline_minus, _color, _scale, _shape)
+!define MA_VECTOR_POLYLINE_MINUS(_color)                                 SPRITE_PUT(mdi-vector-polyline-minus, _color)
+!define MA_VECTOR_POLYLINE_MINUS(_color, _scale)                         SPRITE_PUT(mdi-vector-polyline-minus, _color, _scale)
+!define MA_VECTOR_POLYLINE_MINUS(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA VECTOR POLYLINE MINUS, mdi-vector-polyline-minus, _color, _scale)
+!define MA_VECTOR_POLYLINE_MINUS(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA VECTOR POLYLINE MINUS, mdi-vector-polyline-minus, _color, _scale, _shape)
+!define MA_VECTOR_POLYLINE_MINUS(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA VECTOR POLYLINE MINUS, _label, mdi-vector-polyline-minus, _color, _scale, _shape)
 skinparam folderBackgroundColor<<MA VECTOR POLYLINE MINUS>> White

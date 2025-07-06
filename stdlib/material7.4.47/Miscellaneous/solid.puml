@@ -1,8 +1,8 @@
 sprite mdi-solid <svg width="48" height="48"><g transform="scale(2)"><path d="M0,0H24V24H0" /></g></svg>
 
-!define MA_SOLID(_color)                                 SPRITE_PUT(ma_solid, _color)
-!define MA_SOLID(_color, _scale)                         SPRITE_PUT(ma_solid, _color, _scale)
-!define MA_SOLID(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA SOLID, ma_solid, _color, _scale)
-!define MA_SOLID(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA SOLID, ma_solid, _color, _scale, _shape)
-!define MA_SOLID(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA SOLID, _label, ma_solid, _color, _scale, _shape)
+!define MA_SOLID(_color)                                 SPRITE_PUT(mdi-solid, _color)
+!define MA_SOLID(_color, _scale)                         SPRITE_PUT(mdi-solid, _color, _scale)
+!define MA_SOLID(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA SOLID, mdi-solid, _color, _scale)
+!define MA_SOLID(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA SOLID, mdi-solid, _color, _scale, _shape)
+!define MA_SOLID(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA SOLID, _label, mdi-solid, _color, _scale, _shape)
 skinparam folderBackgroundColor<<MA SOLID>> White

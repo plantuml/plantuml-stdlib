@@ -1,8 +1,8 @@
 sprite mdi-arrow-expand-down <svg width="48" height="48"><g transform="scale(2)"><path d="M22,4V2H2V4H11V18.17L5.5,12.67L4.08,14.08L12,22L19.92,14.08L18.5,12.67L13,18.17V4H22Z" /></g></svg>
 
-!define MA_ARROW_EXPAND_DOWN(_color)                                 SPRITE_PUT(ma_arrow_expand_down, _color)
-!define MA_ARROW_EXPAND_DOWN(_color, _scale)                         SPRITE_PUT(ma_arrow_expand_down, _color, _scale)
-!define MA_ARROW_EXPAND_DOWN(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA ARROW EXPAND DOWN, ma_arrow_expand_down, _color, _scale)
-!define MA_ARROW_EXPAND_DOWN(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA ARROW EXPAND DOWN, ma_arrow_expand_down, _color, _scale, _shape)
-!define MA_ARROW_EXPAND_DOWN(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA ARROW EXPAND DOWN, _label, ma_arrow_expand_down, _color, _scale, _shape)
+!define MA_ARROW_EXPAND_DOWN(_color)                                 SPRITE_PUT(mdi-arrow-expand-down, _color)
+!define MA_ARROW_EXPAND_DOWN(_color, _scale)                         SPRITE_PUT(mdi-arrow-expand-down, _color, _scale)
+!define MA_ARROW_EXPAND_DOWN(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA ARROW EXPAND DOWN, mdi-arrow-expand-down, _color, _scale)
+!define MA_ARROW_EXPAND_DOWN(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA ARROW EXPAND DOWN, mdi-arrow-expand-down, _color, _scale, _shape)
+!define MA_ARROW_EXPAND_DOWN(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA ARROW EXPAND DOWN, _label, mdi-arrow-expand-down, _color, _scale, _shape)
 skinparam folderBackgroundColor<<MA ARROW EXPAND DOWN>> White

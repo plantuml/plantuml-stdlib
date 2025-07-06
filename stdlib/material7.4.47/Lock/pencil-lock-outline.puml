@@ -1,8 +1,8 @@
 sprite mdi-pencil-lock-outline <svg width="48" height="48"><g transform="scale(2)"><path d="M16.1,9L17,9.9L7.9,19H7V18.1L16.1,9M19.7,3C19.5,3 19.2,3.1 19,3.3L17.2,5.1L20.9,8.9L22.7,7C23.1,6.6 23.1,6 22.7,5.6L20.4,3.3C20.2,3.1 19.9,3 19.7,3M16.1,6.2L5,17.2V21H8.8L19.8,9.9L16.1,6.2M8,5V4.5C8,3.1 6.9,2 5.5,2C4.1,2 3,3.1 3,4.5V5C2.4,5 2,5.4 2,6V10C2,10.6 2.4,11 3,11H8C8.6,11 9,10.6 9,10V6C9,5.4 8.6,5 8,5M7,5H4V4.5C4,3.7 4.7,3 5.5,3C6.3,3 7,3.7 7,4.5V5Z" /></g></svg>
 
-!define MA_PENCIL_LOCK_OUTLINE(_color)                                 SPRITE_PUT(ma_pencil_lock_outline, _color)
-!define MA_PENCIL_LOCK_OUTLINE(_color, _scale)                         SPRITE_PUT(ma_pencil_lock_outline, _color, _scale)
-!define MA_PENCIL_LOCK_OUTLINE(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA PENCIL LOCK OUTLINE, ma_pencil_lock_outline, _color, _scale)
-!define MA_PENCIL_LOCK_OUTLINE(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA PENCIL LOCK OUTLINE, ma_pencil_lock_outline, _color, _scale, _shape)
-!define MA_PENCIL_LOCK_OUTLINE(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA PENCIL LOCK OUTLINE, _label, ma_pencil_lock_outline, _color, _scale, _shape)
+!define MA_PENCIL_LOCK_OUTLINE(_color)                                 SPRITE_PUT(mdi-pencil-lock-outline, _color)
+!define MA_PENCIL_LOCK_OUTLINE(_color, _scale)                         SPRITE_PUT(mdi-pencil-lock-outline, _color, _scale)
+!define MA_PENCIL_LOCK_OUTLINE(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA PENCIL LOCK OUTLINE, mdi-pencil-lock-outline, _color, _scale)
+!define MA_PENCIL_LOCK_OUTLINE(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA PENCIL LOCK OUTLINE, mdi-pencil-lock-outline, _color, _scale, _shape)
+!define MA_PENCIL_LOCK_OUTLINE(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA PENCIL LOCK OUTLINE, _label, mdi-pencil-lock-outline, _color, _scale, _shape)
 skinparam folderBackgroundColor<<MA PENCIL LOCK OUTLINE>> White

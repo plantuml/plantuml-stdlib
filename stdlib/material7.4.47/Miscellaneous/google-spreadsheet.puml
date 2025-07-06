@@ -1,8 +1,8 @@
 sprite mdi-google-spreadsheet <svg width="48" height="48"><g transform="scale(2)"><path d="M19,11V9H11V5H9V9H5V11H9V19H11V11H19M19,3C19.5,3 20,3.2 20.39,3.61C20.8,4 21,4.5 21,5V19C21,19.5 20.8,20 20.39,20.39C20,20.8 19.5,21 19,21H5C4.5,21 4,20.8 3.61,20.39C3.2,20 3,19.5 3,19V5C3,4.5 3.2,4 3.61,3.61C4,3.2 4.5,3 5,3H19Z" /></g></svg>
 
-!define MA_GOOGLE_SPREADSHEET(_color)                                 SPRITE_PUT(ma_google_spreadsheet, _color)
-!define MA_GOOGLE_SPREADSHEET(_color, _scale)                         SPRITE_PUT(ma_google_spreadsheet, _color, _scale)
-!define MA_GOOGLE_SPREADSHEET(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA GOOGLE SPREADSHEET, ma_google_spreadsheet, _color, _scale)
-!define MA_GOOGLE_SPREADSHEET(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA GOOGLE SPREADSHEET, ma_google_spreadsheet, _color, _scale, _shape)
-!define MA_GOOGLE_SPREADSHEET(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA GOOGLE SPREADSHEET, _label, ma_google_spreadsheet, _color, _scale, _shape)
+!define MA_GOOGLE_SPREADSHEET(_color)                                 SPRITE_PUT(mdi-google-spreadsheet, _color)
+!define MA_GOOGLE_SPREADSHEET(_color, _scale)                         SPRITE_PUT(mdi-google-spreadsheet, _color, _scale)
+!define MA_GOOGLE_SPREADSHEET(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA GOOGLE SPREADSHEET, mdi-google-spreadsheet, _color, _scale)
+!define MA_GOOGLE_SPREADSHEET(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA GOOGLE SPREADSHEET, mdi-google-spreadsheet, _color, _scale, _shape)
+!define MA_GOOGLE_SPREADSHEET(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA GOOGLE SPREADSHEET, _label, mdi-google-spreadsheet, _color, _scale, _shape)
 skinparam folderBackgroundColor<<MA GOOGLE SPREADSHEET>> White

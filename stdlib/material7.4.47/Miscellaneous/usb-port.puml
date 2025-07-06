@@ -1,8 +1,8 @@
 sprite mdi-usb-port <svg width="48" height="48"><g transform="scale(2)"><path d="M8 2C6.9 2 6 2.9 6 4V12H5V16L9 20V22H15V20L19 16V12H18V4C18 2.9 17.11 2 16 2M8 4H16V12H8M9 7V9H11V7M13 7V9H15V7Z" /></g></svg>
 
-!define MA_USB_PORT(_color)                                 SPRITE_PUT(ma_usb_port, _color)
-!define MA_USB_PORT(_color, _scale)                         SPRITE_PUT(ma_usb_port, _color, _scale)
-!define MA_USB_PORT(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA USB PORT, ma_usb_port, _color, _scale)
-!define MA_USB_PORT(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA USB PORT, ma_usb_port, _color, _scale, _shape)
-!define MA_USB_PORT(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA USB PORT, _label, ma_usb_port, _color, _scale, _shape)
+!define MA_USB_PORT(_color)                                 SPRITE_PUT(mdi-usb-port, _color)
+!define MA_USB_PORT(_color, _scale)                         SPRITE_PUT(mdi-usb-port, _color, _scale)
+!define MA_USB_PORT(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA USB PORT, mdi-usb-port, _color, _scale)
+!define MA_USB_PORT(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA USB PORT, mdi-usb-port, _color, _scale, _shape)
+!define MA_USB_PORT(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA USB PORT, _label, mdi-usb-port, _color, _scale, _shape)
 skinparam folderBackgroundColor<<MA USB PORT>> White

@@ -1,8 +1,8 @@
 sprite mdi-angle-right <svg width="48" height="48"><g transform="scale(2)"><path d="M5,4H7V11H13V17H20V19H5V4M7,17H11V13H7V17Z" /></g></svg>
 
-!define MA_ANGLE_RIGHT(_color)                                 SPRITE_PUT(ma_angle_right, _color)
-!define MA_ANGLE_RIGHT(_color, _scale)                         SPRITE_PUT(ma_angle_right, _color, _scale)
-!define MA_ANGLE_RIGHT(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA ANGLE RIGHT, ma_angle_right, _color, _scale)
-!define MA_ANGLE_RIGHT(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA ANGLE RIGHT, ma_angle_right, _color, _scale, _shape)
-!define MA_ANGLE_RIGHT(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA ANGLE RIGHT, _label, ma_angle_right, _color, _scale, _shape)
+!define MA_ANGLE_RIGHT(_color)                                 SPRITE_PUT(mdi-angle-right, _color)
+!define MA_ANGLE_RIGHT(_color, _scale)                         SPRITE_PUT(mdi-angle-right, _color, _scale)
+!define MA_ANGLE_RIGHT(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA ANGLE RIGHT, mdi-angle-right, _color, _scale)
+!define MA_ANGLE_RIGHT(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA ANGLE RIGHT, mdi-angle-right, _color, _scale, _shape)
+!define MA_ANGLE_RIGHT(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA ANGLE RIGHT, _label, mdi-angle-right, _color, _scale, _shape)
 skinparam folderBackgroundColor<<MA ANGLE RIGHT>> White

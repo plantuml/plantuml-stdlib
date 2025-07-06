@@ -1,8 +1,8 @@
 sprite mdi-signal-hspa-plus <svg width="48" height="48"><g transform="scale(2)"><path d="M19,8V11H22V14H19V17H16V14H13V11H16V8H19M5,10.5H8V4.5H11V19.5H8V13.5H5V19.5H2V4.5H5V10.5Z" /></g></svg>
 
-!define MA_SIGNAL_HSPA_PLUS(_color)                                 SPRITE_PUT(ma_signal_hspa_plus, _color)
-!define MA_SIGNAL_HSPA_PLUS(_color, _scale)                         SPRITE_PUT(ma_signal_hspa_plus, _color, _scale)
-!define MA_SIGNAL_HSPA_PLUS(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA SIGNAL HSPA PLUS, ma_signal_hspa_plus, _color, _scale)
-!define MA_SIGNAL_HSPA_PLUS(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA SIGNAL HSPA PLUS, ma_signal_hspa_plus, _color, _scale, _shape)
-!define MA_SIGNAL_HSPA_PLUS(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA SIGNAL HSPA PLUS, _label, ma_signal_hspa_plus, _color, _scale, _shape)
+!define MA_SIGNAL_HSPA_PLUS(_color)                                 SPRITE_PUT(mdi-signal-hspa-plus, _color)
+!define MA_SIGNAL_HSPA_PLUS(_color, _scale)                         SPRITE_PUT(mdi-signal-hspa-plus, _color, _scale)
+!define MA_SIGNAL_HSPA_PLUS(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA SIGNAL HSPA PLUS, mdi-signal-hspa-plus, _color, _scale)
+!define MA_SIGNAL_HSPA_PLUS(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA SIGNAL HSPA PLUS, mdi-signal-hspa-plus, _color, _scale, _shape)
+!define MA_SIGNAL_HSPA_PLUS(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA SIGNAL HSPA PLUS, _label, mdi-signal-hspa-plus, _color, _scale, _shape)
 skinparam folderBackgroundColor<<MA SIGNAL HSPA PLUS>> White

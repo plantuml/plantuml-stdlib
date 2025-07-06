@@ -1,8 +1,8 @@
 sprite mdi-book-variant <svg width="48" height="48"><g transform="scale(2)"><path d="M6,4H11V12L8.5,10.5L6,12M18,2H6A2,2 0 0,0 4,4V20A2,2 0 0,0 6,22H18A2,2 0 0,0 20,20V4A2,2 0 0,0 18,2Z" /></g></svg>
 
-!define MA_BOOK_VARIANT(_color)                                 SPRITE_PUT(ma_book_variant, _color)
-!define MA_BOOK_VARIANT(_color, _scale)                         SPRITE_PUT(ma_book_variant, _color, _scale)
-!define MA_BOOK_VARIANT(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA BOOK VARIANT, ma_book_variant, _color, _scale)
-!define MA_BOOK_VARIANT(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA BOOK VARIANT, ma_book_variant, _color, _scale, _shape)
-!define MA_BOOK_VARIANT(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA BOOK VARIANT, _label, ma_book_variant, _color, _scale, _shape)
+!define MA_BOOK_VARIANT(_color)                                 SPRITE_PUT(mdi-book-variant, _color)
+!define MA_BOOK_VARIANT(_color, _scale)                         SPRITE_PUT(mdi-book-variant, _color, _scale)
+!define MA_BOOK_VARIANT(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA BOOK VARIANT, mdi-book-variant, _color, _scale)
+!define MA_BOOK_VARIANT(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA BOOK VARIANT, mdi-book-variant, _color, _scale, _shape)
+!define MA_BOOK_VARIANT(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA BOOK VARIANT, _label, mdi-book-variant, _color, _scale, _shape)
 skinparam folderBackgroundColor<<MA BOOK VARIANT>> White

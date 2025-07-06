@@ -1,8 +1,8 @@
 sprite mdi-fit-to-page <svg width="48" height="48"><g transform="scale(2)"><path d="M20,2H4C2.89,2 2,2.89 2,4V20C2,21.11 2.89,22 4,22H20C21.11,22 22,21.11 22,20V4C22,2.89 21.11,2 20,2M12,4L15,7H13V9H11V7H9M7,15L4,12L7,9V11H9V13H7M12,20L9,17H11V15H13V17H15M17,15V13H15V11H17V9L20,12" /></g></svg>
 
-!define MA_FIT_TO_PAGE(_color)                                 SPRITE_PUT(ma_fit_to_page, _color)
-!define MA_FIT_TO_PAGE(_color, _scale)                         SPRITE_PUT(ma_fit_to_page, _color, _scale)
-!define MA_FIT_TO_PAGE(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA FIT TO PAGE, ma_fit_to_page, _color, _scale)
-!define MA_FIT_TO_PAGE(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA FIT TO PAGE, ma_fit_to_page, _color, _scale, _shape)
-!define MA_FIT_TO_PAGE(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA FIT TO PAGE, _label, ma_fit_to_page, _color, _scale, _shape)
+!define MA_FIT_TO_PAGE(_color)                                 SPRITE_PUT(mdi-fit-to-page, _color)
+!define MA_FIT_TO_PAGE(_color, _scale)                         SPRITE_PUT(mdi-fit-to-page, _color, _scale)
+!define MA_FIT_TO_PAGE(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA FIT TO PAGE, mdi-fit-to-page, _color, _scale)
+!define MA_FIT_TO_PAGE(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA FIT TO PAGE, mdi-fit-to-page, _color, _scale, _shape)
+!define MA_FIT_TO_PAGE(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA FIT TO PAGE, _label, mdi-fit-to-page, _color, _scale, _shape)
 skinparam folderBackgroundColor<<MA FIT TO PAGE>> White

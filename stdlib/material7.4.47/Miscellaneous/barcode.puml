@@ -1,8 +1,8 @@
 sprite mdi-barcode <svg width="48" height="48"><g transform="scale(2)"><path d="M2,6H4V18H2V6M5,6H6V18H5V6M7,6H10V18H7V6M11,6H12V18H11V6M14,6H16V18H14V6M17,6H20V18H17V6M21,6H22V18H21V6Z" /></g></svg>
 
-!define MA_BARCODE(_color)                                 SPRITE_PUT(ma_barcode, _color)
-!define MA_BARCODE(_color, _scale)                         SPRITE_PUT(ma_barcode, _color, _scale)
-!define MA_BARCODE(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA BARCODE, ma_barcode, _color, _scale)
-!define MA_BARCODE(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA BARCODE, ma_barcode, _color, _scale, _shape)
-!define MA_BARCODE(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA BARCODE, _label, ma_barcode, _color, _scale, _shape)
+!define MA_BARCODE(_color)                                 SPRITE_PUT(mdi-barcode, _color)
+!define MA_BARCODE(_color, _scale)                         SPRITE_PUT(mdi-barcode, _color, _scale)
+!define MA_BARCODE(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA BARCODE, mdi-barcode, _color, _scale)
+!define MA_BARCODE(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA BARCODE, mdi-barcode, _color, _scale, _shape)
+!define MA_BARCODE(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA BARCODE, _label, mdi-barcode, _color, _scale, _shape)
 skinparam folderBackgroundColor<<MA BARCODE>> White

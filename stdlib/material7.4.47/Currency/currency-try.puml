@@ -1,8 +1,8 @@
 sprite mdi-currency-try <svg width="48" height="48"><g transform="scale(2)"><path d="M9 8.76V3H11V7.5L15 5V7.36L11 9.87L11 12.22L15 9.72V12.08L11 14.59V19C13.76 19 16 16.76 16 14H18C18 17.87 14.87 21 11 21H9V15.84L6 17.72V15.36L9 13.5V11.12L6 13V10.64L9 8.76Z" /></g></svg>
 
-!define MA_CURRENCY_TRY(_color)                                 SPRITE_PUT(ma_currency_try, _color)
-!define MA_CURRENCY_TRY(_color, _scale)                         SPRITE_PUT(ma_currency_try, _color, _scale)
-!define MA_CURRENCY_TRY(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA CURRENCY TRY, ma_currency_try, _color, _scale)
-!define MA_CURRENCY_TRY(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA CURRENCY TRY, ma_currency_try, _color, _scale, _shape)
-!define MA_CURRENCY_TRY(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA CURRENCY TRY, _label, ma_currency_try, _color, _scale, _shape)
+!define MA_CURRENCY_TRY(_color)                                 SPRITE_PUT(mdi-currency-try, _color)
+!define MA_CURRENCY_TRY(_color, _scale)                         SPRITE_PUT(mdi-currency-try, _color, _scale)
+!define MA_CURRENCY_TRY(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA CURRENCY TRY, mdi-currency-try, _color, _scale)
+!define MA_CURRENCY_TRY(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA CURRENCY TRY, mdi-currency-try, _color, _scale, _shape)
+!define MA_CURRENCY_TRY(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA CURRENCY TRY, _label, mdi-currency-try, _color, _scale, _shape)
 skinparam folderBackgroundColor<<MA CURRENCY TRY>> White

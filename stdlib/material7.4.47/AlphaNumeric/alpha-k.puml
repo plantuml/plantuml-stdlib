@@ -1,8 +1,8 @@
 sprite mdi-alpha-k <svg width="48" height="48"><g transform="scale(2)"><path d="M9,7V17H11V13.67L13,17H15L12,12L15,7H13L11,10.33V7H9Z" /></g></svg>
 
-!define MA_ALPHA_K(_color)                                 SPRITE_PUT(ma_alpha_k, _color)
-!define MA_ALPHA_K(_color, _scale)                         SPRITE_PUT(ma_alpha_k, _color, _scale)
-!define MA_ALPHA_K(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA ALPHA K, ma_alpha_k, _color, _scale)
-!define MA_ALPHA_K(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA ALPHA K, ma_alpha_k, _color, _scale, _shape)
-!define MA_ALPHA_K(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA ALPHA K, _label, ma_alpha_k, _color, _scale, _shape)
+!define MA_ALPHA_K(_color)                                 SPRITE_PUT(mdi-alpha-k, _color)
+!define MA_ALPHA_K(_color, _scale)                         SPRITE_PUT(mdi-alpha-k, _color, _scale)
+!define MA_ALPHA_K(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA ALPHA K, mdi-alpha-k, _color, _scale)
+!define MA_ALPHA_K(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA ALPHA K, mdi-alpha-k, _color, _scale, _shape)
+!define MA_ALPHA_K(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA ALPHA K, _label, mdi-alpha-k, _color, _scale, _shape)
 skinparam folderBackgroundColor<<MA ALPHA K>> White

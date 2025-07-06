@@ -1,8 +1,8 @@
 sprite mdi-ceiling-light <svg width="48" height="48"><g transform="scale(2)"><path d="M8,9H11V4H13V9H16L20,17H4L8,9M14,18A2,2 0 0,1 12,20A2,2 0 0,1 10,18H14Z" /></g></svg>
 
-!define MA_CEILING_LIGHT(_color)                                 SPRITE_PUT(ma_ceiling_light, _color)
-!define MA_CEILING_LIGHT(_color, _scale)                         SPRITE_PUT(ma_ceiling_light, _color, _scale)
-!define MA_CEILING_LIGHT(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA CEILING LIGHT, ma_ceiling_light, _color, _scale)
-!define MA_CEILING_LIGHT(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA CEILING LIGHT, ma_ceiling_light, _color, _scale, _shape)
-!define MA_CEILING_LIGHT(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA CEILING LIGHT, _label, ma_ceiling_light, _color, _scale, _shape)
+!define MA_CEILING_LIGHT(_color)                                 SPRITE_PUT(mdi-ceiling-light, _color)
+!define MA_CEILING_LIGHT(_color, _scale)                         SPRITE_PUT(mdi-ceiling-light, _color, _scale)
+!define MA_CEILING_LIGHT(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA CEILING LIGHT, mdi-ceiling-light, _color, _scale)
+!define MA_CEILING_LIGHT(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA CEILING LIGHT, mdi-ceiling-light, _color, _scale, _shape)
+!define MA_CEILING_LIGHT(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA CEILING LIGHT, _label, mdi-ceiling-light, _color, _scale, _shape)
 skinparam folderBackgroundColor<<MA CEILING LIGHT>> White

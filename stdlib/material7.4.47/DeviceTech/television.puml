@@ -1,8 +1,8 @@
 sprite mdi-television <svg width="48" height="48"><g transform="scale(2)"><path d="M21,17H3V5H21M21,3H3A2,2 0 0,0 1,5V17A2,2 0 0,0 3,19H8V21H16V19H21A2,2 0 0,0 23,17V5A2,2 0 0,0 21,3Z" /></g></svg>
 
-!define MA_TELEVISION(_color)                                 SPRITE_PUT(ma_television, _color)
-!define MA_TELEVISION(_color, _scale)                         SPRITE_PUT(ma_television, _color, _scale)
-!define MA_TELEVISION(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA TELEVISION, ma_television, _color, _scale)
-!define MA_TELEVISION(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA TELEVISION, ma_television, _color, _scale, _shape)
-!define MA_TELEVISION(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA TELEVISION, _label, ma_television, _color, _scale, _shape)
+!define MA_TELEVISION(_color)                                 SPRITE_PUT(mdi-television, _color)
+!define MA_TELEVISION(_color, _scale)                         SPRITE_PUT(mdi-television, _color, _scale)
+!define MA_TELEVISION(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA TELEVISION, mdi-television, _color, _scale)
+!define MA_TELEVISION(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA TELEVISION, mdi-television, _color, _scale, _shape)
+!define MA_TELEVISION(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA TELEVISION, _label, mdi-television, _color, _scale, _shape)
 skinparam folderBackgroundColor<<MA TELEVISION>> White

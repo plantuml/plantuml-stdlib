@@ -1,8 +1,8 @@
 sprite mdi-sword <svg width="48" height="48"><g transform="scale(2)"><path d="M6.92,5H5L14,14L15,13.06M19.96,19.12L19.12,19.96C18.73,20.35 18.1,20.35 17.71,19.96L14.59,16.84L11.91,19.5L10.5,18.09L11.92,16.67L3,7.75V3H7.75L16.67,11.92L18.09,10.5L19.5,11.91L16.83,14.58L19.95,17.7C20.35,18.1 20.35,18.73 19.96,19.12Z" /></g></svg>
 
-!define MA_SWORD(_color)                                 SPRITE_PUT(ma_sword, _color)
-!define MA_SWORD(_color, _scale)                         SPRITE_PUT(ma_sword, _color, _scale)
-!define MA_SWORD(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA SWORD, ma_sword, _color, _scale)
-!define MA_SWORD(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA SWORD, ma_sword, _color, _scale, _shape)
-!define MA_SWORD(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA SWORD, _label, ma_sword, _color, _scale, _shape)
+!define MA_SWORD(_color)                                 SPRITE_PUT(mdi-sword, _color)
+!define MA_SWORD(_color, _scale)                         SPRITE_PUT(mdi-sword, _color, _scale)
+!define MA_SWORD(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA SWORD, mdi-sword, _color, _scale)
+!define MA_SWORD(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA SWORD, mdi-sword, _color, _scale, _shape)
+!define MA_SWORD(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA SWORD, _label, mdi-sword, _color, _scale, _shape)
 skinparam folderBackgroundColor<<MA SWORD>> White

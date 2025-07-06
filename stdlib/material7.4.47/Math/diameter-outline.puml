@@ -1,8 +1,8 @@
 sprite mdi-diameter-outline <svg width="48" height="48"><g transform="scale(2)"><path d="M12,2A10,10 0 0,0 2,12A10,10 0 0,0 12,22A10,10 0 0,0 22,12A10,10 0 0,0 12,2M12,20A8,8 0 0,1 4,12A8,8 0 0,1 12,4A8,8 0 0,1 20,12A8,8 0 0,1 12,20M16,15V13H8V15L5,12L8,9V11H16V9L19,12L16,15Z" /></g></svg>
 
-!define MA_DIAMETER_OUTLINE(_color)                                 SPRITE_PUT(ma_diameter_outline, _color)
-!define MA_DIAMETER_OUTLINE(_color, _scale)                         SPRITE_PUT(ma_diameter_outline, _color, _scale)
-!define MA_DIAMETER_OUTLINE(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA DIAMETER OUTLINE, ma_diameter_outline, _color, _scale)
-!define MA_DIAMETER_OUTLINE(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA DIAMETER OUTLINE, ma_diameter_outline, _color, _scale, _shape)
-!define MA_DIAMETER_OUTLINE(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA DIAMETER OUTLINE, _label, ma_diameter_outline, _color, _scale, _shape)
+!define MA_DIAMETER_OUTLINE(_color)                                 SPRITE_PUT(mdi-diameter-outline, _color)
+!define MA_DIAMETER_OUTLINE(_color, _scale)                         SPRITE_PUT(mdi-diameter-outline, _color, _scale)
+!define MA_DIAMETER_OUTLINE(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA DIAMETER OUTLINE, mdi-diameter-outline, _color, _scale)
+!define MA_DIAMETER_OUTLINE(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA DIAMETER OUTLINE, mdi-diameter-outline, _color, _scale, _shape)
+!define MA_DIAMETER_OUTLINE(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA DIAMETER OUTLINE, _label, mdi-diameter-outline, _color, _scale, _shape)
 skinparam folderBackgroundColor<<MA DIAMETER OUTLINE>> White

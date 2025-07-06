@@ -1,8 +1,8 @@
 sprite mdi-invoice-list <svg width="48" height="48"><g transform="scale(2)"><path d="M3 22V3H21V22L18 20L15 22L12 20L9 22L6 20L3 22M17 9V7H15V9H17M13 9V7H7V9H13M13 11H7V13H13V11M15 13H17V11H15V13Z" /></g></svg>
 
-!define MA_INVOICE_LIST(_color)                                 SPRITE_PUT(ma_invoice_list, _color)
-!define MA_INVOICE_LIST(_color, _scale)                         SPRITE_PUT(ma_invoice_list, _color, _scale)
-!define MA_INVOICE_LIST(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA INVOICE LIST, ma_invoice_list, _color, _scale)
-!define MA_INVOICE_LIST(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA INVOICE LIST, ma_invoice_list, _color, _scale, _shape)
-!define MA_INVOICE_LIST(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA INVOICE LIST, _label, ma_invoice_list, _color, _scale, _shape)
+!define MA_INVOICE_LIST(_color)                                 SPRITE_PUT(mdi-invoice-list, _color)
+!define MA_INVOICE_LIST(_color, _scale)                         SPRITE_PUT(mdi-invoice-list, _color, _scale)
+!define MA_INVOICE_LIST(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA INVOICE LIST, mdi-invoice-list, _color, _scale)
+!define MA_INVOICE_LIST(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA INVOICE LIST, mdi-invoice-list, _color, _scale, _shape)
+!define MA_INVOICE_LIST(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA INVOICE LIST, _label, mdi-invoice-list, _color, _scale, _shape)
 skinparam folderBackgroundColor<<MA INVOICE LIST>> White

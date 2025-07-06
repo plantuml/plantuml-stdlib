@@ -1,8 +1,8 @@
 sprite mdi-elevation-decline <svg width="48" height="48"><g transform="scale(2)"><path d="M21,21H3V11.25L9.45,15L13.22,12.8L21,17.29V21M3,8.94V6.75L9.45,10.5L13.22,8.3L21,12.79V15L13.22,10.5L9.45,12.67L3,8.94Z" /></g></svg>
 
-!define MA_ELEVATION_DECLINE(_color)                                 SPRITE_PUT(ma_elevation_decline, _color)
-!define MA_ELEVATION_DECLINE(_color, _scale)                         SPRITE_PUT(ma_elevation_decline, _color, _scale)
-!define MA_ELEVATION_DECLINE(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA ELEVATION DECLINE, ma_elevation_decline, _color, _scale)
-!define MA_ELEVATION_DECLINE(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA ELEVATION DECLINE, ma_elevation_decline, _color, _scale, _shape)
-!define MA_ELEVATION_DECLINE(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA ELEVATION DECLINE, _label, ma_elevation_decline, _color, _scale, _shape)
+!define MA_ELEVATION_DECLINE(_color)                                 SPRITE_PUT(mdi-elevation-decline, _color)
+!define MA_ELEVATION_DECLINE(_color, _scale)                         SPRITE_PUT(mdi-elevation-decline, _color, _scale)
+!define MA_ELEVATION_DECLINE(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA ELEVATION DECLINE, mdi-elevation-decline, _color, _scale)
+!define MA_ELEVATION_DECLINE(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA ELEVATION DECLINE, mdi-elevation-decline, _color, _scale, _shape)
+!define MA_ELEVATION_DECLINE(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA ELEVATION DECLINE, _label, mdi-elevation-decline, _color, _scale, _shape)
 skinparam folderBackgroundColor<<MA ELEVATION DECLINE>> White

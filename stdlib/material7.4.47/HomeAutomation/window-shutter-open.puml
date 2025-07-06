@@ -1,8 +1,8 @@
 sprite mdi-window-shutter-open <svg width="48" height="48"><g transform="scale(2)"><path d="M3 4H21V8H19V20H17V8H7V20H5V8H3V4M8 9H16V11H8V9Z" /></g></svg>
 
-!define MA_WINDOW_SHUTTER_OPEN(_color)                                 SPRITE_PUT(ma_window_shutter_open, _color)
-!define MA_WINDOW_SHUTTER_OPEN(_color, _scale)                         SPRITE_PUT(ma_window_shutter_open, _color, _scale)
-!define MA_WINDOW_SHUTTER_OPEN(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA WINDOW SHUTTER OPEN, ma_window_shutter_open, _color, _scale)
-!define MA_WINDOW_SHUTTER_OPEN(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA WINDOW SHUTTER OPEN, ma_window_shutter_open, _color, _scale, _shape)
-!define MA_WINDOW_SHUTTER_OPEN(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA WINDOW SHUTTER OPEN, _label, ma_window_shutter_open, _color, _scale, _shape)
+!define MA_WINDOW_SHUTTER_OPEN(_color)                                 SPRITE_PUT(mdi-window-shutter-open, _color)
+!define MA_WINDOW_SHUTTER_OPEN(_color, _scale)                         SPRITE_PUT(mdi-window-shutter-open, _color, _scale)
+!define MA_WINDOW_SHUTTER_OPEN(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA WINDOW SHUTTER OPEN, mdi-window-shutter-open, _color, _scale)
+!define MA_WINDOW_SHUTTER_OPEN(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA WINDOW SHUTTER OPEN, mdi-window-shutter-open, _color, _scale, _shape)
+!define MA_WINDOW_SHUTTER_OPEN(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA WINDOW SHUTTER OPEN, _label, mdi-window-shutter-open, _color, _scale, _shape)
 skinparam folderBackgroundColor<<MA WINDOW SHUTTER OPEN>> White

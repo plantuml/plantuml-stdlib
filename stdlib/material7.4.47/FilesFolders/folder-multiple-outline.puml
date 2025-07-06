@@ -1,8 +1,8 @@
 sprite mdi-folder-multiple-outline <svg width="48" height="48"><g transform="scale(2)"><path d="M22,4A2,2 0 0,1 24,6V16A2,2 0 0,1 22,18H6A2,2 0 0,1 4,16V4A2,2 0 0,1 6,2H12L14,4H22M2,6V20H20V22H2A2,2 0 0,1 0,20V11H0V6H2M6,6V16H22V6H6Z" /></g></svg>
 
-!define MA_FOLDER_MULTIPLE_OUTLINE(_color)                                 SPRITE_PUT(ma_folder_multiple_outline, _color)
-!define MA_FOLDER_MULTIPLE_OUTLINE(_color, _scale)                         SPRITE_PUT(ma_folder_multiple_outline, _color, _scale)
-!define MA_FOLDER_MULTIPLE_OUTLINE(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA FOLDER MULTIPLE OUTLINE, ma_folder_multiple_outline, _color, _scale)
-!define MA_FOLDER_MULTIPLE_OUTLINE(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA FOLDER MULTIPLE OUTLINE, ma_folder_multiple_outline, _color, _scale, _shape)
-!define MA_FOLDER_MULTIPLE_OUTLINE(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA FOLDER MULTIPLE OUTLINE, _label, ma_folder_multiple_outline, _color, _scale, _shape)
+!define MA_FOLDER_MULTIPLE_OUTLINE(_color)                                 SPRITE_PUT(mdi-folder-multiple-outline, _color)
+!define MA_FOLDER_MULTIPLE_OUTLINE(_color, _scale)                         SPRITE_PUT(mdi-folder-multiple-outline, _color, _scale)
+!define MA_FOLDER_MULTIPLE_OUTLINE(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA FOLDER MULTIPLE OUTLINE, mdi-folder-multiple-outline, _color, _scale)
+!define MA_FOLDER_MULTIPLE_OUTLINE(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA FOLDER MULTIPLE OUTLINE, mdi-folder-multiple-outline, _color, _scale, _shape)
+!define MA_FOLDER_MULTIPLE_OUTLINE(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA FOLDER MULTIPLE OUTLINE, _label, mdi-folder-multiple-outline, _color, _scale, _shape)
 skinparam folderBackgroundColor<<MA FOLDER MULTIPLE OUTLINE>> White

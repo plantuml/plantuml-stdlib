@@ -1,8 +1,8 @@
 sprite mdi-network-strength-outline <svg width="48" height="48"><g transform="scale(2)"><path d="M1,21H21V1M19,5.83V19H6" /></g></svg>
 
-!define MA_NETWORK_STRENGTH_OUTLINE(_color)                                 SPRITE_PUT(ma_network_strength_outline, _color)
-!define MA_NETWORK_STRENGTH_OUTLINE(_color, _scale)                         SPRITE_PUT(ma_network_strength_outline, _color, _scale)
-!define MA_NETWORK_STRENGTH_OUTLINE(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA NETWORK STRENGTH OUTLINE, ma_network_strength_outline, _color, _scale)
-!define MA_NETWORK_STRENGTH_OUTLINE(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA NETWORK STRENGTH OUTLINE, ma_network_strength_outline, _color, _scale, _shape)
-!define MA_NETWORK_STRENGTH_OUTLINE(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA NETWORK STRENGTH OUTLINE, _label, ma_network_strength_outline, _color, _scale, _shape)
+!define MA_NETWORK_STRENGTH_OUTLINE(_color)                                 SPRITE_PUT(mdi-network-strength-outline, _color)
+!define MA_NETWORK_STRENGTH_OUTLINE(_color, _scale)                         SPRITE_PUT(mdi-network-strength-outline, _color, _scale)
+!define MA_NETWORK_STRENGTH_OUTLINE(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA NETWORK STRENGTH OUTLINE, mdi-network-strength-outline, _color, _scale)
+!define MA_NETWORK_STRENGTH_OUTLINE(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA NETWORK STRENGTH OUTLINE, mdi-network-strength-outline, _color, _scale, _shape)
+!define MA_NETWORK_STRENGTH_OUTLINE(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA NETWORK STRENGTH OUTLINE, _label, mdi-network-strength-outline, _color, _scale, _shape)
 skinparam folderBackgroundColor<<MA NETWORK STRENGTH OUTLINE>> White

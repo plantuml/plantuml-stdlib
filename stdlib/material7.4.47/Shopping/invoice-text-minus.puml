@@ -1,8 +1,8 @@
 sprite mdi-invoice-text-minus <svg width="48" height="48"><g transform="scale(2)"><path d="M3 3V22L6 20L9 22L12 20L13.3 20.86C13.1 20.28 13 19.65 13 19C13 15.69 15.69 13 19 13C19.7 13 20.37 13.12 21 13.34V3H3M17 7V9H7V7H17M15 11V13H7V11H15M15 18V20H23V18H15Z" /></g></svg>
 
-!define MA_INVOICE_TEXT_MINUS(_color)                                 SPRITE_PUT(ma_invoice_text_minus, _color)
-!define MA_INVOICE_TEXT_MINUS(_color, _scale)                         SPRITE_PUT(ma_invoice_text_minus, _color, _scale)
-!define MA_INVOICE_TEXT_MINUS(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA INVOICE TEXT MINUS, ma_invoice_text_minus, _color, _scale)
-!define MA_INVOICE_TEXT_MINUS(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA INVOICE TEXT MINUS, ma_invoice_text_minus, _color, _scale, _shape)
-!define MA_INVOICE_TEXT_MINUS(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA INVOICE TEXT MINUS, _label, ma_invoice_text_minus, _color, _scale, _shape)
+!define MA_INVOICE_TEXT_MINUS(_color)                                 SPRITE_PUT(mdi-invoice-text-minus, _color)
+!define MA_INVOICE_TEXT_MINUS(_color, _scale)                         SPRITE_PUT(mdi-invoice-text-minus, _color, _scale)
+!define MA_INVOICE_TEXT_MINUS(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA INVOICE TEXT MINUS, mdi-invoice-text-minus, _color, _scale)
+!define MA_INVOICE_TEXT_MINUS(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA INVOICE TEXT MINUS, mdi-invoice-text-minus, _color, _scale, _shape)
+!define MA_INVOICE_TEXT_MINUS(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA INVOICE TEXT MINUS, _label, mdi-invoice-text-minus, _color, _scale, _shape)
 skinparam folderBackgroundColor<<MA INVOICE TEXT MINUS>> White

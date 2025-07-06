@@ -1,8 +1,8 @@
 sprite mdi-black-mesa <svg width="48" height="48"><g transform="scale(2)"><path d="M12,2A10,10 0 0,1 22,12A10,10 0 0,1 12,22A10,10 0 0,1 2,12A10,10 0 0,1 12,2M12,4A8,8 0 0,0 4,12C4,14.39 5.05,16.53 6.71,18H9V12H17L19.15,15.59C19.69,14.5 20,13.29 20,12A8,8 0 0,0 12,4Z" /></g></svg>
 
-!define MA_BLACK_MESA(_color)                                 SPRITE_PUT(ma_black_mesa, _color)
-!define MA_BLACK_MESA(_color, _scale)                         SPRITE_PUT(ma_black_mesa, _color, _scale)
-!define MA_BLACK_MESA(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA BLACK MESA, ma_black_mesa, _color, _scale)
-!define MA_BLACK_MESA(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA BLACK MESA, ma_black_mesa, _color, _scale, _shape)
-!define MA_BLACK_MESA(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA BLACK MESA, _label, ma_black_mesa, _color, _scale, _shape)
+!define MA_BLACK_MESA(_color)                                 SPRITE_PUT(mdi-black-mesa, _color)
+!define MA_BLACK_MESA(_color, _scale)                         SPRITE_PUT(mdi-black-mesa, _color, _scale)
+!define MA_BLACK_MESA(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA BLACK MESA, mdi-black-mesa, _color, _scale)
+!define MA_BLACK_MESA(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA BLACK MESA, mdi-black-mesa, _color, _scale, _shape)
+!define MA_BLACK_MESA(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA BLACK MESA, _label, mdi-black-mesa, _color, _scale, _shape)
 skinparam folderBackgroundColor<<MA BLACK MESA>> White

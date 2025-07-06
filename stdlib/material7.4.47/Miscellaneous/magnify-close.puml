@@ -1,8 +1,8 @@
 sprite mdi-magnify-close <svg width="48" height="48"><g transform="scale(2)"><path d="M9,2A7,7 0 0,1 16,9C16,10.5 15.5,12 14.61,13.19L15.41,14H16L22,20L20,22L14,16V15.41L13.19,14.61C12,15.5 10.5,16 9,16A7,7 0 0,1 2,9A7,7 0 0,1 9,2M11.12,5.46L9,7.59L6.88,5.46L5.46,6.88L7.59,9L5.46,11.12L6.88,12.54L9,10.41L11.12,12.54L12.54,11.12L10.41,9L12.54,6.88L11.12,5.46Z" /></g></svg>
 
-!define MA_MAGNIFY_CLOSE(_color)                                 SPRITE_PUT(ma_magnify_close, _color)
-!define MA_MAGNIFY_CLOSE(_color, _scale)                         SPRITE_PUT(ma_magnify_close, _color, _scale)
-!define MA_MAGNIFY_CLOSE(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA MAGNIFY CLOSE, ma_magnify_close, _color, _scale)
-!define MA_MAGNIFY_CLOSE(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA MAGNIFY CLOSE, ma_magnify_close, _color, _scale, _shape)
-!define MA_MAGNIFY_CLOSE(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA MAGNIFY CLOSE, _label, ma_magnify_close, _color, _scale, _shape)
+!define MA_MAGNIFY_CLOSE(_color)                                 SPRITE_PUT(mdi-magnify-close, _color)
+!define MA_MAGNIFY_CLOSE(_color, _scale)                         SPRITE_PUT(mdi-magnify-close, _color, _scale)
+!define MA_MAGNIFY_CLOSE(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA MAGNIFY CLOSE, mdi-magnify-close, _color, _scale)
+!define MA_MAGNIFY_CLOSE(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA MAGNIFY CLOSE, mdi-magnify-close, _color, _scale, _shape)
+!define MA_MAGNIFY_CLOSE(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA MAGNIFY CLOSE, _label, mdi-magnify-close, _color, _scale, _shape)
 skinparam folderBackgroundColor<<MA MAGNIFY CLOSE>> White

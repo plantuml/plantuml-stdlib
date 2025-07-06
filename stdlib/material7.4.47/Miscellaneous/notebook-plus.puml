@@ -1,8 +1,8 @@
 sprite mdi-notebook-plus <svg width="48" height="48"><g transform="scale(2)"><path d="M3 7V5H5V4C5 2.9 5.9 2 7 2H13V9L15.5 7.5L18 9V2H19C20 2 21 3 21 4V13.8C20.1 13.3 19.1 13 18 13C14.7 13 12 15.7 12 19C12 20.1 12.3 21.1 12.8 22H7C5.9 22 5 21 5 20V19H3V17H5V13H3V11H5V7H3M5 5V7H7V5H5M5 19H7V17H5V19M5 13H7V11H5V13M17 15V18H14V20H17V23H19V20H22V18H19V15H17Z" /></g></svg>
 
-!define MA_NOTEBOOK_PLUS(_color)                                 SPRITE_PUT(ma_notebook_plus, _color)
-!define MA_NOTEBOOK_PLUS(_color, _scale)                         SPRITE_PUT(ma_notebook_plus, _color, _scale)
-!define MA_NOTEBOOK_PLUS(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA NOTEBOOK PLUS, ma_notebook_plus, _color, _scale)
-!define MA_NOTEBOOK_PLUS(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA NOTEBOOK PLUS, ma_notebook_plus, _color, _scale, _shape)
-!define MA_NOTEBOOK_PLUS(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA NOTEBOOK PLUS, _label, ma_notebook_plus, _color, _scale, _shape)
+!define MA_NOTEBOOK_PLUS(_color)                                 SPRITE_PUT(mdi-notebook-plus, _color)
+!define MA_NOTEBOOK_PLUS(_color, _scale)                         SPRITE_PUT(mdi-notebook-plus, _color, _scale)
+!define MA_NOTEBOOK_PLUS(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA NOTEBOOK PLUS, mdi-notebook-plus, _color, _scale)
+!define MA_NOTEBOOK_PLUS(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA NOTEBOOK PLUS, mdi-notebook-plus, _color, _scale, _shape)
+!define MA_NOTEBOOK_PLUS(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA NOTEBOOK PLUS, _label, mdi-notebook-plus, _color, _scale, _shape)
 skinparam folderBackgroundColor<<MA NOTEBOOK PLUS>> White

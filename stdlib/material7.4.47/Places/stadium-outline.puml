@@ -1,8 +1,8 @@
 sprite mdi-stadium-outline <svg width="48" height="48"><g transform="scale(2)"><path d="M7 5L3 7V3L7 5M18 3V7L22 5L18 3M11 2V6L15 4L11 2M13 18H11V22C5.9 21.9 2 20.6 2 19V10C2 8.3 6.5 7 12 7S22 8.3 22 10V19C22 20.6 18 21.9 13 22V18M5 10C6.4 10.5 8.8 11 12 11S17.6 10.5 19 10C19 9.8 16.2 9 12 9S5 9.9 5 10M20 11.8C18.2 12.5 15.3 13 12 13S5.8 12.5 4 11.8V18.6C4.6 19 6.4 19.6 9 19.9V16H15V19.9C17.6 19.6 19.4 19 20 18.6V11.8Z" /></g></svg>
 
-!define MA_STADIUM_OUTLINE(_color)                                 SPRITE_PUT(ma_stadium_outline, _color)
-!define MA_STADIUM_OUTLINE(_color, _scale)                         SPRITE_PUT(ma_stadium_outline, _color, _scale)
-!define MA_STADIUM_OUTLINE(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA STADIUM OUTLINE, ma_stadium_outline, _color, _scale)
-!define MA_STADIUM_OUTLINE(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA STADIUM OUTLINE, ma_stadium_outline, _color, _scale, _shape)
-!define MA_STADIUM_OUTLINE(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA STADIUM OUTLINE, _label, ma_stadium_outline, _color, _scale, _shape)
+!define MA_STADIUM_OUTLINE(_color)                                 SPRITE_PUT(mdi-stadium-outline, _color)
+!define MA_STADIUM_OUTLINE(_color, _scale)                         SPRITE_PUT(mdi-stadium-outline, _color, _scale)
+!define MA_STADIUM_OUTLINE(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA STADIUM OUTLINE, mdi-stadium-outline, _color, _scale)
+!define MA_STADIUM_OUTLINE(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA STADIUM OUTLINE, mdi-stadium-outline, _color, _scale, _shape)
+!define MA_STADIUM_OUTLINE(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA STADIUM OUTLINE, _label, mdi-stadium-outline, _color, _scale, _shape)
 skinparam folderBackgroundColor<<MA STADIUM OUTLINE>> White

@@ -1,8 +1,8 @@
 sprite mdi-table-chair <svg width="48" height="48"><g transform="scale(2)"><path d="M12 22H6A2 2 0 0 1 8 20V8H2V5H16V8H10V20A2 2 0 0 1 12 22M22 2V22H20V15H15V22H13V14A2 2 0 0 1 15 12H20V2Z" /></g></svg>
 
-!define MA_TABLE_CHAIR(_color)                                 SPRITE_PUT(ma_table_chair, _color)
-!define MA_TABLE_CHAIR(_color, _scale)                         SPRITE_PUT(ma_table_chair, _color, _scale)
-!define MA_TABLE_CHAIR(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA TABLE CHAIR, ma_table_chair, _color, _scale)
-!define MA_TABLE_CHAIR(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA TABLE CHAIR, ma_table_chair, _color, _scale, _shape)
-!define MA_TABLE_CHAIR(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA TABLE CHAIR, _label, ma_table_chair, _color, _scale, _shape)
+!define MA_TABLE_CHAIR(_color)                                 SPRITE_PUT(mdi-table-chair, _color)
+!define MA_TABLE_CHAIR(_color, _scale)                         SPRITE_PUT(mdi-table-chair, _color, _scale)
+!define MA_TABLE_CHAIR(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA TABLE CHAIR, mdi-table-chair, _color, _scale)
+!define MA_TABLE_CHAIR(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA TABLE CHAIR, mdi-table-chair, _color, _scale, _shape)
+!define MA_TABLE_CHAIR(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA TABLE CHAIR, _label, mdi-table-chair, _color, _scale, _shape)
 skinparam folderBackgroundColor<<MA TABLE CHAIR>> White

@@ -1,8 +1,8 @@
 sprite mdi-toggle-switch <svg width="48" height="48"><g transform="scale(2)"><path d="M17,7H7A5,5 0 0,0 2,12A5,5 0 0,0 7,17H17A5,5 0 0,0 22,12A5,5 0 0,0 17,7M17,15A3,3 0 0,1 14,12A3,3 0 0,1 17,9A3,3 0 0,1 20,12A3,3 0 0,1 17,15Z" /></g></svg>
 
-!define MA_TOGGLE_SWITCH(_color)                                 SPRITE_PUT(ma_toggle_switch, _color)
-!define MA_TOGGLE_SWITCH(_color, _scale)                         SPRITE_PUT(ma_toggle_switch, _color, _scale)
-!define MA_TOGGLE_SWITCH(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA TOGGLE SWITCH, ma_toggle_switch, _color, _scale)
-!define MA_TOGGLE_SWITCH(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA TOGGLE SWITCH, ma_toggle_switch, _color, _scale, _shape)
-!define MA_TOGGLE_SWITCH(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA TOGGLE SWITCH, _label, ma_toggle_switch, _color, _scale, _shape)
+!define MA_TOGGLE_SWITCH(_color)                                 SPRITE_PUT(mdi-toggle-switch, _color)
+!define MA_TOGGLE_SWITCH(_color, _scale)                         SPRITE_PUT(mdi-toggle-switch, _color, _scale)
+!define MA_TOGGLE_SWITCH(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA TOGGLE SWITCH, mdi-toggle-switch, _color, _scale)
+!define MA_TOGGLE_SWITCH(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA TOGGLE SWITCH, mdi-toggle-switch, _color, _scale, _shape)
+!define MA_TOGGLE_SWITCH(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA TOGGLE SWITCH, _label, mdi-toggle-switch, _color, _scale, _shape)
 skinparam folderBackgroundColor<<MA TOGGLE SWITCH>> White

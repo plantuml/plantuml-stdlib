@@ -1,8 +1,8 @@
 sprite mdi-email-off-outline <svg width="48" height="48"><g transform="scale(2)"><path d="M22.1 21.5L2.4 1.7L1.1 3L2.6 4.5C2.3 4.9 2 5.4 2 6V18C2 19.1 2.9 20 4 20H18.1L20.8 22.7L22.1 21.5M4 18V8L9.6 11.5L16.1 18H4M9.2 6L7.2 4H20C21.1 4 22 4.9 22 6V18C22 18.2 22 18.5 21.9 18.7L20 16.8V8L14.6 11.4L13.4 10.2L20 6H9.2Z" /></g></svg>
 
-!define MA_EMAIL_OFF_OUTLINE(_color)                                 SPRITE_PUT(ma_email_off_outline, _color)
-!define MA_EMAIL_OFF_OUTLINE(_color, _scale)                         SPRITE_PUT(ma_email_off_outline, _color, _scale)
-!define MA_EMAIL_OFF_OUTLINE(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA EMAIL OFF OUTLINE, ma_email_off_outline, _color, _scale)
-!define MA_EMAIL_OFF_OUTLINE(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA EMAIL OFF OUTLINE, ma_email_off_outline, _color, _scale, _shape)
-!define MA_EMAIL_OFF_OUTLINE(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA EMAIL OFF OUTLINE, _label, ma_email_off_outline, _color, _scale, _shape)
+!define MA_EMAIL_OFF_OUTLINE(_color)                                 SPRITE_PUT(mdi-email-off-outline, _color)
+!define MA_EMAIL_OFF_OUTLINE(_color, _scale)                         SPRITE_PUT(mdi-email-off-outline, _color, _scale)
+!define MA_EMAIL_OFF_OUTLINE(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA EMAIL OFF OUTLINE, mdi-email-off-outline, _color, _scale)
+!define MA_EMAIL_OFF_OUTLINE(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA EMAIL OFF OUTLINE, mdi-email-off-outline, _color, _scale, _shape)
+!define MA_EMAIL_OFF_OUTLINE(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA EMAIL OFF OUTLINE, _label, mdi-email-off-outline, _color, _scale, _shape)
 skinparam folderBackgroundColor<<MA EMAIL OFF OUTLINE>> White

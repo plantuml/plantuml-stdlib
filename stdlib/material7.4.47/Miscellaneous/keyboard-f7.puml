@@ -1,8 +1,8 @@
 sprite mdi-keyboard-f7 <svg width="48" height="48"><g transform="scale(2)"><path d="M5 7H11V9H7V11H10V13H7V17H5V7M15 17H13L17 9H13V7H19V9L15 17Z" /></g></svg>
 
-!define MA_KEYBOARD_F7(_color)                                 SPRITE_PUT(ma_keyboard_f7, _color)
-!define MA_KEYBOARD_F7(_color, _scale)                         SPRITE_PUT(ma_keyboard_f7, _color, _scale)
-!define MA_KEYBOARD_F7(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA KEYBOARD F7, ma_keyboard_f7, _color, _scale)
-!define MA_KEYBOARD_F7(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA KEYBOARD F7, ma_keyboard_f7, _color, _scale, _shape)
-!define MA_KEYBOARD_F7(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA KEYBOARD F7, _label, ma_keyboard_f7, _color, _scale, _shape)
+!define MA_KEYBOARD_F7(_color)                                 SPRITE_PUT(mdi-keyboard-f7, _color)
+!define MA_KEYBOARD_F7(_color, _scale)                         SPRITE_PUT(mdi-keyboard-f7, _color, _scale)
+!define MA_KEYBOARD_F7(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA KEYBOARD F7, mdi-keyboard-f7, _color, _scale)
+!define MA_KEYBOARD_F7(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA KEYBOARD F7, mdi-keyboard-f7, _color, _scale, _shape)
+!define MA_KEYBOARD_F7(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA KEYBOARD F7, _label, mdi-keyboard-f7, _color, _scale, _shape)
 skinparam folderBackgroundColor<<MA KEYBOARD F7>> White

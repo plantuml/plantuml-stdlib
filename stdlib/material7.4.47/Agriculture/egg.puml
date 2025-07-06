@@ -1,8 +1,8 @@
 sprite mdi-egg <svg width="48" height="48"><g transform="scale(2)"><path d="M19.5,14.5A7.5,7.5 0 0,1 12,22A7.5,7.5 0 0,1 4.5,14.5C4.5,10.36 7.86,2 12,2C16.14,2 19.5,10.36 19.5,14.5Z" /></g></svg>
 
-!define MA_EGG(_color)                                 SPRITE_PUT(ma_egg, _color)
-!define MA_EGG(_color, _scale)                         SPRITE_PUT(ma_egg, _color, _scale)
-!define MA_EGG(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA EGG, ma_egg, _color, _scale)
-!define MA_EGG(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA EGG, ma_egg, _color, _scale, _shape)
-!define MA_EGG(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA EGG, _label, ma_egg, _color, _scale, _shape)
+!define MA_EGG(_color)                                 SPRITE_PUT(mdi-egg, _color)
+!define MA_EGG(_color, _scale)                         SPRITE_PUT(mdi-egg, _color, _scale)
+!define MA_EGG(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA EGG, mdi-egg, _color, _scale)
+!define MA_EGG(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA EGG, mdi-egg, _color, _scale, _shape)
+!define MA_EGG(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA EGG, _label, mdi-egg, _color, _scale, _shape)
 skinparam folderBackgroundColor<<MA EGG>> White

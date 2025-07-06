@@ -1,8 +1,8 @@
 sprite mdi-ceiling-light-outline <svg width="48" height="48"><g transform="scale(2)"><path d="M14.76 11L16.76 15H7.24L9.24 11H14.76M13 4H11V9H8L4 17H20L16 9H13V4M14 18H10C10 19.11 10.9 20 12 20S14 19.11 14 18Z" /></g></svg>
 
-!define MA_CEILING_LIGHT_OUTLINE(_color)                                 SPRITE_PUT(ma_ceiling_light_outline, _color)
-!define MA_CEILING_LIGHT_OUTLINE(_color, _scale)                         SPRITE_PUT(ma_ceiling_light_outline, _color, _scale)
-!define MA_CEILING_LIGHT_OUTLINE(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA CEILING LIGHT OUTLINE, ma_ceiling_light_outline, _color, _scale)
-!define MA_CEILING_LIGHT_OUTLINE(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA CEILING LIGHT OUTLINE, ma_ceiling_light_outline, _color, _scale, _shape)
-!define MA_CEILING_LIGHT_OUTLINE(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA CEILING LIGHT OUTLINE, _label, ma_ceiling_light_outline, _color, _scale, _shape)
+!define MA_CEILING_LIGHT_OUTLINE(_color)                                 SPRITE_PUT(mdi-ceiling-light-outline, _color)
+!define MA_CEILING_LIGHT_OUTLINE(_color, _scale)                         SPRITE_PUT(mdi-ceiling-light-outline, _color, _scale)
+!define MA_CEILING_LIGHT_OUTLINE(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA CEILING LIGHT OUTLINE, mdi-ceiling-light-outline, _color, _scale)
+!define MA_CEILING_LIGHT_OUTLINE(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA CEILING LIGHT OUTLINE, mdi-ceiling-light-outline, _color, _scale, _shape)
+!define MA_CEILING_LIGHT_OUTLINE(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA CEILING LIGHT OUTLINE, _label, mdi-ceiling-light-outline, _color, _scale, _shape)
 skinparam folderBackgroundColor<<MA CEILING LIGHT OUTLINE>> White

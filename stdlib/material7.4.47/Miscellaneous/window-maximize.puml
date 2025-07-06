@@ -1,8 +1,8 @@
 sprite mdi-window-maximize <svg width="48" height="48"><g transform="scale(2)"><path d="M4,4H20V20H4V4M6,8V18H18V8H6Z" /></g></svg>
 
-!define MA_WINDOW_MAXIMIZE(_color)                                 SPRITE_PUT(ma_window_maximize, _color)
-!define MA_WINDOW_MAXIMIZE(_color, _scale)                         SPRITE_PUT(ma_window_maximize, _color, _scale)
-!define MA_WINDOW_MAXIMIZE(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA WINDOW MAXIMIZE, ma_window_maximize, _color, _scale)
-!define MA_WINDOW_MAXIMIZE(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA WINDOW MAXIMIZE, ma_window_maximize, _color, _scale, _shape)
-!define MA_WINDOW_MAXIMIZE(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA WINDOW MAXIMIZE, _label, ma_window_maximize, _color, _scale, _shape)
+!define MA_WINDOW_MAXIMIZE(_color)                                 SPRITE_PUT(mdi-window-maximize, _color)
+!define MA_WINDOW_MAXIMIZE(_color, _scale)                         SPRITE_PUT(mdi-window-maximize, _color, _scale)
+!define MA_WINDOW_MAXIMIZE(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA WINDOW MAXIMIZE, mdi-window-maximize, _color, _scale)
+!define MA_WINDOW_MAXIMIZE(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA WINDOW MAXIMIZE, mdi-window-maximize, _color, _scale, _shape)
+!define MA_WINDOW_MAXIMIZE(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA WINDOW MAXIMIZE, _label, mdi-window-maximize, _color, _scale, _shape)
 skinparam folderBackgroundColor<<MA WINDOW MAXIMIZE>> White

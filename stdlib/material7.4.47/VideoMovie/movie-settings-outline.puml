@@ -1,8 +1,8 @@
 sprite mdi-movie-settings-outline <svg width="48" height="48"><g transform="scale(2)"><path d="M18 4L20 8H17L15 4H13L15 8H12L10 4H8L10 8H7L5 4H4C2.9 4 2 4.89 2 6V18C2 19.11 2.9 20 4 20H20C21.11 20 22 19.11 22 18V4H18M20 18H4V6.47L5.76 10H20V18M11 22H13V24H11V22M7 22H9V24H7V22M15 22H17V24H15V22Z" /></g></svg>
 
-!define MA_MOVIE_SETTINGS_OUTLINE(_color)                                 SPRITE_PUT(ma_movie_settings_outline, _color)
-!define MA_MOVIE_SETTINGS_OUTLINE(_color, _scale)                         SPRITE_PUT(ma_movie_settings_outline, _color, _scale)
-!define MA_MOVIE_SETTINGS_OUTLINE(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA MOVIE SETTINGS OUTLINE, ma_movie_settings_outline, _color, _scale)
-!define MA_MOVIE_SETTINGS_OUTLINE(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA MOVIE SETTINGS OUTLINE, ma_movie_settings_outline, _color, _scale, _shape)
-!define MA_MOVIE_SETTINGS_OUTLINE(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA MOVIE SETTINGS OUTLINE, _label, ma_movie_settings_outline, _color, _scale, _shape)
+!define MA_MOVIE_SETTINGS_OUTLINE(_color)                                 SPRITE_PUT(mdi-movie-settings-outline, _color)
+!define MA_MOVIE_SETTINGS_OUTLINE(_color, _scale)                         SPRITE_PUT(mdi-movie-settings-outline, _color, _scale)
+!define MA_MOVIE_SETTINGS_OUTLINE(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA MOVIE SETTINGS OUTLINE, mdi-movie-settings-outline, _color, _scale)
+!define MA_MOVIE_SETTINGS_OUTLINE(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA MOVIE SETTINGS OUTLINE, mdi-movie-settings-outline, _color, _scale, _shape)
+!define MA_MOVIE_SETTINGS_OUTLINE(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA MOVIE SETTINGS OUTLINE, _label, mdi-movie-settings-outline, _color, _scale, _shape)
 skinparam folderBackgroundColor<<MA MOVIE SETTINGS OUTLINE>> White

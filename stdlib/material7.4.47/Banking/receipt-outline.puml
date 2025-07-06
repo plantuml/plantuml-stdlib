@@ -1,8 +1,8 @@
 sprite mdi-receipt-outline <svg width="48" height="48"><g transform="scale(2)"><path d="M19.5 3.5L18 2L16.5 3.5L15 2L13.5 3.5L12 2L10.5 3.5L9 2L7.5 3.5L6 2L4.5 3.5L3 2V22L4.5 20.5L6 22L7.5 20.5L9 22L10.5 20.5L12 22L13.5 20.5L15 22L16.5 20.5L18 22L19.5 20.5L21 22V2L19.5 3.5M19 19H5V5H19V19Z" /></g></svg>
 
-!define MA_RECEIPT_OUTLINE(_color)                                 SPRITE_PUT(ma_receipt_outline, _color)
-!define MA_RECEIPT_OUTLINE(_color, _scale)                         SPRITE_PUT(ma_receipt_outline, _color, _scale)
-!define MA_RECEIPT_OUTLINE(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA RECEIPT OUTLINE, ma_receipt_outline, _color, _scale)
-!define MA_RECEIPT_OUTLINE(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA RECEIPT OUTLINE, ma_receipt_outline, _color, _scale, _shape)
-!define MA_RECEIPT_OUTLINE(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA RECEIPT OUTLINE, _label, ma_receipt_outline, _color, _scale, _shape)
+!define MA_RECEIPT_OUTLINE(_color)                                 SPRITE_PUT(mdi-receipt-outline, _color)
+!define MA_RECEIPT_OUTLINE(_color, _scale)                         SPRITE_PUT(mdi-receipt-outline, _color, _scale)
+!define MA_RECEIPT_OUTLINE(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA RECEIPT OUTLINE, mdi-receipt-outline, _color, _scale)
+!define MA_RECEIPT_OUTLINE(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA RECEIPT OUTLINE, mdi-receipt-outline, _color, _scale, _shape)
+!define MA_RECEIPT_OUTLINE(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA RECEIPT OUTLINE, _label, mdi-receipt-outline, _color, _scale, _shape)
 skinparam folderBackgroundColor<<MA RECEIPT OUTLINE>> White

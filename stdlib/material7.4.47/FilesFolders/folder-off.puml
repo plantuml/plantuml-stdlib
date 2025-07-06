@@ -1,8 +1,8 @@
 sprite mdi-folder-off <svg width="48" height="48"><g transform="scale(2)"><path d="M22.11 21.46L20.84 22.73L18.11 20H4C2.9 20 2 19.11 2 18V6C2 5.42 2.25 4.9 2.64 4.53L1.11 3L2.39 1.73L22.11 21.46M22 18V8C22 6.89 21.1 6 20 6H12L10 4H7.2L21.88 18.68C21.96 18.47 22 18.24 22 18Z" /></g></svg>
 
-!define MA_FOLDER_OFF(_color)                                 SPRITE_PUT(ma_folder_off, _color)
-!define MA_FOLDER_OFF(_color, _scale)                         SPRITE_PUT(ma_folder_off, _color, _scale)
-!define MA_FOLDER_OFF(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA FOLDER OFF, ma_folder_off, _color, _scale)
-!define MA_FOLDER_OFF(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA FOLDER OFF, ma_folder_off, _color, _scale, _shape)
-!define MA_FOLDER_OFF(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA FOLDER OFF, _label, ma_folder_off, _color, _scale, _shape)
+!define MA_FOLDER_OFF(_color)                                 SPRITE_PUT(mdi-folder-off, _color)
+!define MA_FOLDER_OFF(_color, _scale)                         SPRITE_PUT(mdi-folder-off, _color, _scale)
+!define MA_FOLDER_OFF(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA FOLDER OFF, mdi-folder-off, _color, _scale)
+!define MA_FOLDER_OFF(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA FOLDER OFF, mdi-folder-off, _color, _scale, _shape)
+!define MA_FOLDER_OFF(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA FOLDER OFF, _label, mdi-folder-off, _color, _scale, _shape)
 skinparam folderBackgroundColor<<MA FOLDER OFF>> White

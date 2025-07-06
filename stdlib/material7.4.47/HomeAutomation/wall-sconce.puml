@@ -1,8 +1,8 @@
 sprite mdi-wall-sconce <svg width="48" height="48"><g transform="scale(2)"><path d="M11,4L7,13H19L15,4H11M4,14V22H6V19H14V14H12V17H6V14H4Z" /></g></svg>
 
-!define MA_WALL_SCONCE(_color)                                 SPRITE_PUT(ma_wall_sconce, _color)
-!define MA_WALL_SCONCE(_color, _scale)                         SPRITE_PUT(ma_wall_sconce, _color, _scale)
-!define MA_WALL_SCONCE(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA WALL SCONCE, ma_wall_sconce, _color, _scale)
-!define MA_WALL_SCONCE(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA WALL SCONCE, ma_wall_sconce, _color, _scale, _shape)
-!define MA_WALL_SCONCE(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA WALL SCONCE, _label, ma_wall_sconce, _color, _scale, _shape)
+!define MA_WALL_SCONCE(_color)                                 SPRITE_PUT(mdi-wall-sconce, _color)
+!define MA_WALL_SCONCE(_color, _scale)                         SPRITE_PUT(mdi-wall-sconce, _color, _scale)
+!define MA_WALL_SCONCE(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA WALL SCONCE, mdi-wall-sconce, _color, _scale)
+!define MA_WALL_SCONCE(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA WALL SCONCE, mdi-wall-sconce, _color, _scale, _shape)
+!define MA_WALL_SCONCE(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA WALL SCONCE, _label, mdi-wall-sconce, _color, _scale, _shape)
 skinparam folderBackgroundColor<<MA WALL SCONCE>> White

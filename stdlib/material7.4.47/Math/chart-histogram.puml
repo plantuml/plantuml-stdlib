@@ -1,8 +1,8 @@
 sprite mdi-chart-histogram <svg width="48" height="48"><g transform="scale(2)"><path d="M3,3H5V13H9V7H13V11H17V15H21V21H3V3Z" /></g></svg>
 
-!define MA_CHART_HISTOGRAM(_color)                                 SPRITE_PUT(ma_chart_histogram, _color)
-!define MA_CHART_HISTOGRAM(_color, _scale)                         SPRITE_PUT(ma_chart_histogram, _color, _scale)
-!define MA_CHART_HISTOGRAM(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA CHART HISTOGRAM, ma_chart_histogram, _color, _scale)
-!define MA_CHART_HISTOGRAM(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA CHART HISTOGRAM, ma_chart_histogram, _color, _scale, _shape)
-!define MA_CHART_HISTOGRAM(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA CHART HISTOGRAM, _label, ma_chart_histogram, _color, _scale, _shape)
+!define MA_CHART_HISTOGRAM(_color)                                 SPRITE_PUT(mdi-chart-histogram, _color)
+!define MA_CHART_HISTOGRAM(_color, _scale)                         SPRITE_PUT(mdi-chart-histogram, _color, _scale)
+!define MA_CHART_HISTOGRAM(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA CHART HISTOGRAM, mdi-chart-histogram, _color, _scale)
+!define MA_CHART_HISTOGRAM(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA CHART HISTOGRAM, mdi-chart-histogram, _color, _scale, _shape)
+!define MA_CHART_HISTOGRAM(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA CHART HISTOGRAM, _label, mdi-chart-histogram, _color, _scale, _shape)
 skinparam folderBackgroundColor<<MA CHART HISTOGRAM>> White

@@ -1,8 +1,8 @@
 sprite mdi-rectangle <svg width="48" height="48"><g transform="scale(2)"><path d="M4,6V19H20V6H4Z" /></g></svg>
 
-!define MA_RECTANGLE(_color)                                 SPRITE_PUT(ma_rectangle, _color)
-!define MA_RECTANGLE(_color, _scale)                         SPRITE_PUT(ma_rectangle, _color, _scale)
-!define MA_RECTANGLE(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA RECTANGLE, ma_rectangle, _color, _scale)
-!define MA_RECTANGLE(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA RECTANGLE, ma_rectangle, _color, _scale, _shape)
-!define MA_RECTANGLE(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA RECTANGLE, _label, ma_rectangle, _color, _scale, _shape)
+!define MA_RECTANGLE(_color)                                 SPRITE_PUT(mdi-rectangle, _color)
+!define MA_RECTANGLE(_color, _scale)                         SPRITE_PUT(mdi-rectangle, _color, _scale)
+!define MA_RECTANGLE(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA RECTANGLE, mdi-rectangle, _color, _scale)
+!define MA_RECTANGLE(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA RECTANGLE, mdi-rectangle, _color, _scale, _shape)
+!define MA_RECTANGLE(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA RECTANGLE, _label, mdi-rectangle, _color, _scale, _shape)
 skinparam folderBackgroundColor<<MA RECTANGLE>> White

@@ -1,8 +1,8 @@
 sprite mdi-arrow-right-bold-circle <svg width="48" height="48"><g transform="scale(2)"><path d="M2,12A10,10 0 0,1 12,2A10,10 0 0,1 22,12A10,10 0 0,1 12,22A10,10 0 0,1 2,12M17,12L12,7V10H8V14H12V17L17,12Z" /></g></svg>
 
-!define MA_ARROW_RIGHT_BOLD_CIRCLE(_color)                                 SPRITE_PUT(ma_arrow_right_bold_circle, _color)
-!define MA_ARROW_RIGHT_BOLD_CIRCLE(_color, _scale)                         SPRITE_PUT(ma_arrow_right_bold_circle, _color, _scale)
-!define MA_ARROW_RIGHT_BOLD_CIRCLE(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA ARROW RIGHT BOLD CIRCLE, ma_arrow_right_bold_circle, _color, _scale)
-!define MA_ARROW_RIGHT_BOLD_CIRCLE(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA ARROW RIGHT BOLD CIRCLE, ma_arrow_right_bold_circle, _color, _scale, _shape)
-!define MA_ARROW_RIGHT_BOLD_CIRCLE(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA ARROW RIGHT BOLD CIRCLE, _label, ma_arrow_right_bold_circle, _color, _scale, _shape)
+!define MA_ARROW_RIGHT_BOLD_CIRCLE(_color)                                 SPRITE_PUT(mdi-arrow-right-bold-circle, _color)
+!define MA_ARROW_RIGHT_BOLD_CIRCLE(_color, _scale)                         SPRITE_PUT(mdi-arrow-right-bold-circle, _color, _scale)
+!define MA_ARROW_RIGHT_BOLD_CIRCLE(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA ARROW RIGHT BOLD CIRCLE, mdi-arrow-right-bold-circle, _color, _scale)
+!define MA_ARROW_RIGHT_BOLD_CIRCLE(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA ARROW RIGHT BOLD CIRCLE, mdi-arrow-right-bold-circle, _color, _scale, _shape)
+!define MA_ARROW_RIGHT_BOLD_CIRCLE(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA ARROW RIGHT BOLD CIRCLE, _label, mdi-arrow-right-bold-circle, _color, _scale, _shape)
 skinparam folderBackgroundColor<<MA ARROW RIGHT BOLD CIRCLE>> White

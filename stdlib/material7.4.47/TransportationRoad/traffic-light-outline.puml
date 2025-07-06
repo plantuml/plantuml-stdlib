@@ -1,8 +1,8 @@
 sprite mdi-traffic-light-outline <svg width="48" height="48"><g transform="scale(2)"><path d="M20 10H17V8.86C18.72 8.41 20 6.86 20 5H17V4C17 3.45 16.55 3 16 3H8C7.45 3 7 3.45 7 4V5H4C4 6.86 5.28 8.41 7 8.86V10H4C4 11.86 5.28 13.41 7 13.86V15H4C4 16.86 5.28 18.41 7 18.86V20C7 20.55 7.45 21 8 21H16C16.55 21 17 20.55 17 20V18.86C18.72 18.41 20 16.86 20 15H17V13.86C18.72 13.41 20 11.86 20 10M15 19H9V5H15V19M12 18C12.83 18 13.5 17.33 13.5 16.5S12.83 15 12 15 10.5 15.67 10.5 16.5 11.17 18 12 18M12 13.5C12.83 13.5 13.5 12.83 13.5 12S12.83 10.5 12 10.5 10.5 11.17 10.5 12 11.17 13.5 12 13.5M12 9C12.83 9 13.5 8.33 13.5 7.5S12.83 6 12 6 10.5 6.67 10.5 7.5 11.17 9 12 9Z" /></g></svg>
 
-!define MA_TRAFFIC_LIGHT_OUTLINE(_color)                                 SPRITE_PUT(ma_traffic_light_outline, _color)
-!define MA_TRAFFIC_LIGHT_OUTLINE(_color, _scale)                         SPRITE_PUT(ma_traffic_light_outline, _color, _scale)
-!define MA_TRAFFIC_LIGHT_OUTLINE(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA TRAFFIC LIGHT OUTLINE, ma_traffic_light_outline, _color, _scale)
-!define MA_TRAFFIC_LIGHT_OUTLINE(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA TRAFFIC LIGHT OUTLINE, ma_traffic_light_outline, _color, _scale, _shape)
-!define MA_TRAFFIC_LIGHT_OUTLINE(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA TRAFFIC LIGHT OUTLINE, _label, ma_traffic_light_outline, _color, _scale, _shape)
+!define MA_TRAFFIC_LIGHT_OUTLINE(_color)                                 SPRITE_PUT(mdi-traffic-light-outline, _color)
+!define MA_TRAFFIC_LIGHT_OUTLINE(_color, _scale)                         SPRITE_PUT(mdi-traffic-light-outline, _color, _scale)
+!define MA_TRAFFIC_LIGHT_OUTLINE(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA TRAFFIC LIGHT OUTLINE, mdi-traffic-light-outline, _color, _scale)
+!define MA_TRAFFIC_LIGHT_OUTLINE(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA TRAFFIC LIGHT OUTLINE, mdi-traffic-light-outline, _color, _scale, _shape)
+!define MA_TRAFFIC_LIGHT_OUTLINE(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA TRAFFIC LIGHT OUTLINE, _label, mdi-traffic-light-outline, _color, _scale, _shape)
 skinparam folderBackgroundColor<<MA TRAFFIC LIGHT OUTLINE>> White

@@ -1,8 +1,8 @@
 sprite mdi-file-upload-outline <svg width="48" height="48"><g transform="scale(2)"><path d="M14,2L20,8V20A2,2 0 0,1 18,22H6A2,2 0 0,1 4,20V4A2,2 0 0,1 6,2H14M18,20V9H13V4H6V20H18M12,12L16,16H13.5V19H10.5V16H8L12,12Z" /></g></svg>
 
-!define MA_FILE_UPLOAD_OUTLINE(_color)                                 SPRITE_PUT(ma_file_upload_outline, _color)
-!define MA_FILE_UPLOAD_OUTLINE(_color, _scale)                         SPRITE_PUT(ma_file_upload_outline, _color, _scale)
-!define MA_FILE_UPLOAD_OUTLINE(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA FILE UPLOAD OUTLINE, ma_file_upload_outline, _color, _scale)
-!define MA_FILE_UPLOAD_OUTLINE(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA FILE UPLOAD OUTLINE, ma_file_upload_outline, _color, _scale, _shape)
-!define MA_FILE_UPLOAD_OUTLINE(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA FILE UPLOAD OUTLINE, _label, ma_file_upload_outline, _color, _scale, _shape)
+!define MA_FILE_UPLOAD_OUTLINE(_color)                                 SPRITE_PUT(mdi-file-upload-outline, _color)
+!define MA_FILE_UPLOAD_OUTLINE(_color, _scale)                         SPRITE_PUT(mdi-file-upload-outline, _color, _scale)
+!define MA_FILE_UPLOAD_OUTLINE(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA FILE UPLOAD OUTLINE, mdi-file-upload-outline, _color, _scale)
+!define MA_FILE_UPLOAD_OUTLINE(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA FILE UPLOAD OUTLINE, mdi-file-upload-outline, _color, _scale, _shape)
+!define MA_FILE_UPLOAD_OUTLINE(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA FILE UPLOAD OUTLINE, _label, mdi-file-upload-outline, _color, _scale, _shape)
 skinparam folderBackgroundColor<<MA FILE UPLOAD OUTLINE>> White

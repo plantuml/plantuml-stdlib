@@ -1,8 +1,8 @@
 sprite mdi-message-minus <svg width="48" height="48"><g transform="scale(2)"><path d="M20 2C21.11 2 22 2.9 22 4V16C22 17.11 21.11 18 20 18H6L2 22V4C2 2.89 2.9 2 4 2H20M8 9V11H16V9H8Z" /></g></svg>
 
-!define MA_MESSAGE_MINUS(_color)                                 SPRITE_PUT(ma_message_minus, _color)
-!define MA_MESSAGE_MINUS(_color, _scale)                         SPRITE_PUT(ma_message_minus, _color, _scale)
-!define MA_MESSAGE_MINUS(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA MESSAGE MINUS, ma_message_minus, _color, _scale)
-!define MA_MESSAGE_MINUS(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA MESSAGE MINUS, ma_message_minus, _color, _scale, _shape)
-!define MA_MESSAGE_MINUS(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA MESSAGE MINUS, _label, ma_message_minus, _color, _scale, _shape)
+!define MA_MESSAGE_MINUS(_color)                                 SPRITE_PUT(mdi-message-minus, _color)
+!define MA_MESSAGE_MINUS(_color, _scale)                         SPRITE_PUT(mdi-message-minus, _color, _scale)
+!define MA_MESSAGE_MINUS(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA MESSAGE MINUS, mdi-message-minus, _color, _scale)
+!define MA_MESSAGE_MINUS(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA MESSAGE MINUS, mdi-message-minus, _color, _scale, _shape)
+!define MA_MESSAGE_MINUS(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA MESSAGE MINUS, _label, mdi-message-minus, _color, _scale, _shape)
 skinparam folderBackgroundColor<<MA MESSAGE MINUS>> White

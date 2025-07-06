@@ -1,8 +1,8 @@
 sprite mdi-step-backward <svg width="48" height="48"><g transform="scale(2)"><path d="M19,5V19H16V5M14,5V19L3,12" /></g></svg>
 
-!define MA_STEP_BACKWARD(_color)                                 SPRITE_PUT(ma_step_backward, _color)
-!define MA_STEP_BACKWARD(_color, _scale)                         SPRITE_PUT(ma_step_backward, _color, _scale)
-!define MA_STEP_BACKWARD(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA STEP BACKWARD, ma_step_backward, _color, _scale)
-!define MA_STEP_BACKWARD(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA STEP BACKWARD, ma_step_backward, _color, _scale, _shape)
-!define MA_STEP_BACKWARD(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA STEP BACKWARD, _label, ma_step_backward, _color, _scale, _shape)
+!define MA_STEP_BACKWARD(_color)                                 SPRITE_PUT(mdi-step-backward, _color)
+!define MA_STEP_BACKWARD(_color, _scale)                         SPRITE_PUT(mdi-step-backward, _color, _scale)
+!define MA_STEP_BACKWARD(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA STEP BACKWARD, mdi-step-backward, _color, _scale)
+!define MA_STEP_BACKWARD(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA STEP BACKWARD, mdi-step-backward, _color, _scale, _shape)
+!define MA_STEP_BACKWARD(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA STEP BACKWARD, _label, mdi-step-backward, _color, _scale, _shape)
 skinparam folderBackgroundColor<<MA STEP BACKWARD>> White

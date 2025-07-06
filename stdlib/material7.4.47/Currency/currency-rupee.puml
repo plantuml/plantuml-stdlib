@@ -1,8 +1,8 @@
 sprite mdi-currency-rupee <svg width="48" height="48"><g transform="scale(2)"><path d="M13.66 7C13.1 5.82 11.9 5 10.5 5H6V3H18V5H14.74C15.22 5.58 15.58 6.26 15.79 7H18V9H16C15.73 11.8 13.37 14 10.5 14H9.77L16.5 21H13.73L7 14V12H10.5C12.26 12 13.72 10.7 13.96 9H6V7H13.66Z" /></g></svg>
 
-!define MA_CURRENCY_RUPEE(_color)                                 SPRITE_PUT(ma_currency_rupee, _color)
-!define MA_CURRENCY_RUPEE(_color, _scale)                         SPRITE_PUT(ma_currency_rupee, _color, _scale)
-!define MA_CURRENCY_RUPEE(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA CURRENCY RUPEE, ma_currency_rupee, _color, _scale)
-!define MA_CURRENCY_RUPEE(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA CURRENCY RUPEE, ma_currency_rupee, _color, _scale, _shape)
-!define MA_CURRENCY_RUPEE(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA CURRENCY RUPEE, _label, ma_currency_rupee, _color, _scale, _shape)
+!define MA_CURRENCY_RUPEE(_color)                                 SPRITE_PUT(mdi-currency-rupee, _color)
+!define MA_CURRENCY_RUPEE(_color, _scale)                         SPRITE_PUT(mdi-currency-rupee, _color, _scale)
+!define MA_CURRENCY_RUPEE(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA CURRENCY RUPEE, mdi-currency-rupee, _color, _scale)
+!define MA_CURRENCY_RUPEE(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA CURRENCY RUPEE, mdi-currency-rupee, _color, _scale, _shape)
+!define MA_CURRENCY_RUPEE(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA CURRENCY RUPEE, _label, mdi-currency-rupee, _color, _scale, _shape)
 skinparam folderBackgroundColor<<MA CURRENCY RUPEE>> White

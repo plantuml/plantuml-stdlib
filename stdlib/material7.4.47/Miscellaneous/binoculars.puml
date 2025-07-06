@@ -1,8 +1,8 @@
 sprite mdi-binoculars <svg width="48" height="48"><g transform="scale(2)"><path d="M11,6H13V13H11V6M9,20A1,1 0 0,1 8,21H5A1,1 0 0,1 4,20V15L6,6H10V13A1,1 0 0,1 9,14V20M10,5H7V3H10V5M15,20V14A1,1 0 0,1 14,13V6H18L20,15V20A1,1 0 0,1 19,21H16A1,1 0 0,1 15,20M14,5V3H17V5H14Z" /></g></svg>
 
-!define MA_BINOCULARS(_color)                                 SPRITE_PUT(ma_binoculars, _color)
-!define MA_BINOCULARS(_color, _scale)                         SPRITE_PUT(ma_binoculars, _color, _scale)
-!define MA_BINOCULARS(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA BINOCULARS, ma_binoculars, _color, _scale)
-!define MA_BINOCULARS(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA BINOCULARS, ma_binoculars, _color, _scale, _shape)
-!define MA_BINOCULARS(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA BINOCULARS, _label, ma_binoculars, _color, _scale, _shape)
+!define MA_BINOCULARS(_color)                                 SPRITE_PUT(mdi-binoculars, _color)
+!define MA_BINOCULARS(_color, _scale)                         SPRITE_PUT(mdi-binoculars, _color, _scale)
+!define MA_BINOCULARS(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA BINOCULARS, mdi-binoculars, _color, _scale)
+!define MA_BINOCULARS(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA BINOCULARS, mdi-binoculars, _color, _scale, _shape)
+!define MA_BINOCULARS(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA BINOCULARS, _label, mdi-binoculars, _color, _scale, _shape)
 skinparam folderBackgroundColor<<MA BINOCULARS>> White

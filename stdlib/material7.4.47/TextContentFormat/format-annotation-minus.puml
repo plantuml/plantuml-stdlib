@@ -1,8 +1,8 @@
 sprite mdi-format-annotation-minus <svg width="48" height="48"><g transform="scale(2)"><path d="M10.5,7H8.5L3,21H5.2L6.3,18H12.5L13.6,21H16L10.5,7M7.1,16L9.5,9.7L11.9,16H7.1M22,7H14V5H22V7Z" /></g></svg>
 
-!define MA_FORMAT_ANNOTATION_MINUS(_color)                                 SPRITE_PUT(ma_format_annotation_minus, _color)
-!define MA_FORMAT_ANNOTATION_MINUS(_color, _scale)                         SPRITE_PUT(ma_format_annotation_minus, _color, _scale)
-!define MA_FORMAT_ANNOTATION_MINUS(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA FORMAT ANNOTATION MINUS, ma_format_annotation_minus, _color, _scale)
-!define MA_FORMAT_ANNOTATION_MINUS(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA FORMAT ANNOTATION MINUS, ma_format_annotation_minus, _color, _scale, _shape)
-!define MA_FORMAT_ANNOTATION_MINUS(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA FORMAT ANNOTATION MINUS, _label, ma_format_annotation_minus, _color, _scale, _shape)
+!define MA_FORMAT_ANNOTATION_MINUS(_color)                                 SPRITE_PUT(mdi-format-annotation-minus, _color)
+!define MA_FORMAT_ANNOTATION_MINUS(_color, _scale)                         SPRITE_PUT(mdi-format-annotation-minus, _color, _scale)
+!define MA_FORMAT_ANNOTATION_MINUS(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA FORMAT ANNOTATION MINUS, mdi-format-annotation-minus, _color, _scale)
+!define MA_FORMAT_ANNOTATION_MINUS(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA FORMAT ANNOTATION MINUS, mdi-format-annotation-minus, _color, _scale, _shape)
+!define MA_FORMAT_ANNOTATION_MINUS(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA FORMAT ANNOTATION MINUS, _label, mdi-format-annotation-minus, _color, _scale, _shape)
 skinparam folderBackgroundColor<<MA FORMAT ANNOTATION MINUS>> White

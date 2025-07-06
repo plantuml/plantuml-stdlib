@@ -1,8 +1,8 @@
 sprite mdi-format-align-justify <svg width="48" height="48"><g transform="scale(2)"><path d="M3,3H21V5H3V3M3,7H21V9H3V7M3,11H21V13H3V11M3,15H21V17H3V15M3,19H21V21H3V19Z" /></g></svg>
 
-!define MA_FORMAT_ALIGN_JUSTIFY(_color)                                 SPRITE_PUT(ma_format_align_justify, _color)
-!define MA_FORMAT_ALIGN_JUSTIFY(_color, _scale)                         SPRITE_PUT(ma_format_align_justify, _color, _scale)
-!define MA_FORMAT_ALIGN_JUSTIFY(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA FORMAT ALIGN JUSTIFY, ma_format_align_justify, _color, _scale)
-!define MA_FORMAT_ALIGN_JUSTIFY(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA FORMAT ALIGN JUSTIFY, ma_format_align_justify, _color, _scale, _shape)
-!define MA_FORMAT_ALIGN_JUSTIFY(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA FORMAT ALIGN JUSTIFY, _label, ma_format_align_justify, _color, _scale, _shape)
+!define MA_FORMAT_ALIGN_JUSTIFY(_color)                                 SPRITE_PUT(mdi-format-align-justify, _color)
+!define MA_FORMAT_ALIGN_JUSTIFY(_color, _scale)                         SPRITE_PUT(mdi-format-align-justify, _color, _scale)
+!define MA_FORMAT_ALIGN_JUSTIFY(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA FORMAT ALIGN JUSTIFY, mdi-format-align-justify, _color, _scale)
+!define MA_FORMAT_ALIGN_JUSTIFY(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA FORMAT ALIGN JUSTIFY, mdi-format-align-justify, _color, _scale, _shape)
+!define MA_FORMAT_ALIGN_JUSTIFY(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA FORMAT ALIGN JUSTIFY, _label, mdi-format-align-justify, _color, _scale, _shape)
 skinparam folderBackgroundColor<<MA FORMAT ALIGN JUSTIFY>> White

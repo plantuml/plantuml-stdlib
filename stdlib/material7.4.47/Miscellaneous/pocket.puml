@@ -1,8 +1,8 @@
 sprite mdi-pocket <svg width="48" height="48"><g transform="scale(2)"><path d="M4 3H20V17.63L12 22.25L4 17.63V3M18 9H6V16.5L12 19.94L18 16.5V9M18 5H6V7H18V5Z" /></g></svg>
 
-!define MA_POCKET(_color)                                 SPRITE_PUT(ma_pocket, _color)
-!define MA_POCKET(_color, _scale)                         SPRITE_PUT(ma_pocket, _color, _scale)
-!define MA_POCKET(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA POCKET, ma_pocket, _color, _scale)
-!define MA_POCKET(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA POCKET, ma_pocket, _color, _scale, _shape)
-!define MA_POCKET(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA POCKET, _label, ma_pocket, _color, _scale, _shape)
+!define MA_POCKET(_color)                                 SPRITE_PUT(mdi-pocket, _color)
+!define MA_POCKET(_color, _scale)                         SPRITE_PUT(mdi-pocket, _color, _scale)
+!define MA_POCKET(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA POCKET, mdi-pocket, _color, _scale)
+!define MA_POCKET(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA POCKET, mdi-pocket, _color, _scale, _shape)
+!define MA_POCKET(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA POCKET, _label, mdi-pocket, _color, _scale, _shape)
 skinparam folderBackgroundColor<<MA POCKET>> White

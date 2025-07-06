@@ -1,8 +1,8 @@
 sprite mdi-truck-trailer <svg width="48" height="48"><g transform="scale(2)"><path d="M22,15V17H10A3,3 0 0,1 7,20A3,3 0 0,1 4,17H2V6A2,2 0 0,1 4,4H17A2,2 0 0,1 19,6V15H22M7,16A1,1 0 0,0 6,17A1,1 0 0,0 7,18A1,1 0 0,0 8,17A1,1 0 0,0 7,16Z" /></g></svg>
 
-!define MA_TRUCK_TRAILER(_color)                                 SPRITE_PUT(ma_truck_trailer, _color)
-!define MA_TRUCK_TRAILER(_color, _scale)                         SPRITE_PUT(ma_truck_trailer, _color, _scale)
-!define MA_TRUCK_TRAILER(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA TRUCK TRAILER, ma_truck_trailer, _color, _scale)
-!define MA_TRUCK_TRAILER(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA TRUCK TRAILER, ma_truck_trailer, _color, _scale, _shape)
-!define MA_TRUCK_TRAILER(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA TRUCK TRAILER, _label, ma_truck_trailer, _color, _scale, _shape)
+!define MA_TRUCK_TRAILER(_color)                                 SPRITE_PUT(mdi-truck-trailer, _color)
+!define MA_TRUCK_TRAILER(_color, _scale)                         SPRITE_PUT(mdi-truck-trailer, _color, _scale)
+!define MA_TRUCK_TRAILER(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA TRUCK TRAILER, mdi-truck-trailer, _color, _scale)
+!define MA_TRUCK_TRAILER(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA TRUCK TRAILER, mdi-truck-trailer, _color, _scale, _shape)
+!define MA_TRUCK_TRAILER(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA TRUCK TRAILER, _label, mdi-truck-trailer, _color, _scale, _shape)
 skinparam folderBackgroundColor<<MA TRUCK TRAILER>> White

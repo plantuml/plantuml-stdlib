@@ -1,8 +1,8 @@
 sprite mdi-solar-power <svg width="48" height="48"><g transform="scale(2)"><path d="M11.45,2V5.55L15,3.77L11.45,2M10.45,8L8,10.46L11.75,11.71L10.45,8M2,11.45L3.77,15L5.55,11.45H2M10,2H2V10C2.57,10.17 3.17,10.25 3.77,10.25C7.35,10.26 10.26,7.35 10.27,3.75C10.26,3.16 10.17,2.57 10,2M17,22V16H14L19,7V13H22L17,22Z" /></g></svg>
 
-!define MA_SOLAR_POWER(_color)                                 SPRITE_PUT(ma_solar_power, _color)
-!define MA_SOLAR_POWER(_color, _scale)                         SPRITE_PUT(ma_solar_power, _color, _scale)
-!define MA_SOLAR_POWER(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA SOLAR POWER, ma_solar_power, _color, _scale)
-!define MA_SOLAR_POWER(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA SOLAR POWER, ma_solar_power, _color, _scale, _shape)
-!define MA_SOLAR_POWER(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA SOLAR POWER, _label, ma_solar_power, _color, _scale, _shape)
+!define MA_SOLAR_POWER(_color)                                 SPRITE_PUT(mdi-solar-power, _color)
+!define MA_SOLAR_POWER(_color, _scale)                         SPRITE_PUT(mdi-solar-power, _color, _scale)
+!define MA_SOLAR_POWER(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA SOLAR POWER, mdi-solar-power, _color, _scale)
+!define MA_SOLAR_POWER(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA SOLAR POWER, mdi-solar-power, _color, _scale, _shape)
+!define MA_SOLAR_POWER(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA SOLAR POWER, _label, mdi-solar-power, _color, _scale, _shape)
 skinparam folderBackgroundColor<<MA SOLAR POWER>> White

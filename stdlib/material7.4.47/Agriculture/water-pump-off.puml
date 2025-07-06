@@ -1,8 +1,8 @@
 sprite mdi-water-pump-off <svg width="48" height="48"><g transform="scale(2)"><path d="M5.7 2.5A2 2 0 0 1 7 2H9A2 2 0 0 1 11 4V5H19A2 2 0 0 1 21 7V11A1 1 0 0 1 21 13H17A1 1 0 0 1 17 11V9H12.2M20.84 22.73L22.11 21.46L11 10.34L2.39 1.73L1.11 3L3.65 5.54A2 2 0 0 0 5 9V18H4A2 2 0 0 0 2 20V22H14V20A2 2 0 0 0 12 18H11V12.89Z" /></g></svg>
 
-!define MA_WATER_PUMP_OFF(_color)                                 SPRITE_PUT(ma_water_pump_off, _color)
-!define MA_WATER_PUMP_OFF(_color, _scale)                         SPRITE_PUT(ma_water_pump_off, _color, _scale)
-!define MA_WATER_PUMP_OFF(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA WATER PUMP OFF, ma_water_pump_off, _color, _scale)
-!define MA_WATER_PUMP_OFF(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA WATER PUMP OFF, ma_water_pump_off, _color, _scale, _shape)
-!define MA_WATER_PUMP_OFF(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA WATER PUMP OFF, _label, ma_water_pump_off, _color, _scale, _shape)
+!define MA_WATER_PUMP_OFF(_color)                                 SPRITE_PUT(mdi-water-pump-off, _color)
+!define MA_WATER_PUMP_OFF(_color, _scale)                         SPRITE_PUT(mdi-water-pump-off, _color, _scale)
+!define MA_WATER_PUMP_OFF(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA WATER PUMP OFF, mdi-water-pump-off, _color, _scale)
+!define MA_WATER_PUMP_OFF(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA WATER PUMP OFF, mdi-water-pump-off, _color, _scale, _shape)
+!define MA_WATER_PUMP_OFF(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA WATER PUMP OFF, _label, mdi-water-pump-off, _color, _scale, _shape)
 skinparam folderBackgroundColor<<MA WATER PUMP OFF>> White

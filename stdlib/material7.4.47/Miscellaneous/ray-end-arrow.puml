@@ -1,8 +1,8 @@
 sprite mdi-ray-end-arrow <svg width="48" height="48"><g transform="scale(2)"><path d="M1,12L5,16V13H17.17C17.58,14.17 18.69,15 20,15A3,3 0 0,0 23,12A3,3 0 0,0 20,9C18.69,9 17.58,9.83 17.17,11H5V8L1,12Z" /></g></svg>
 
-!define MA_RAY_END_ARROW(_color)                                 SPRITE_PUT(ma_ray_end_arrow, _color)
-!define MA_RAY_END_ARROW(_color, _scale)                         SPRITE_PUT(ma_ray_end_arrow, _color, _scale)
-!define MA_RAY_END_ARROW(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA RAY END ARROW, ma_ray_end_arrow, _color, _scale)
-!define MA_RAY_END_ARROW(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA RAY END ARROW, ma_ray_end_arrow, _color, _scale, _shape)
-!define MA_RAY_END_ARROW(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA RAY END ARROW, _label, ma_ray_end_arrow, _color, _scale, _shape)
+!define MA_RAY_END_ARROW(_color)                                 SPRITE_PUT(mdi-ray-end-arrow, _color)
+!define MA_RAY_END_ARROW(_color, _scale)                         SPRITE_PUT(mdi-ray-end-arrow, _color, _scale)
+!define MA_RAY_END_ARROW(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA RAY END ARROW, mdi-ray-end-arrow, _color, _scale)
+!define MA_RAY_END_ARROW(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA RAY END ARROW, mdi-ray-end-arrow, _color, _scale, _shape)
+!define MA_RAY_END_ARROW(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA RAY END ARROW, _label, mdi-ray-end-arrow, _color, _scale, _shape)
 skinparam folderBackgroundColor<<MA RAY END ARROW>> White

@@ -1,8 +1,8 @@
 sprite mdi-toothbrush <svg width="48" height="48"><g transform="scale(2)"><path d="M12.91 6.43L15.03 8.55L16.09 7.5L15.03 6.43L17.86 3.6L18.92 4.66L20 3.6L17.86 1.5M3 20.57L4.43 22L14.5 11.9L16.63 11.19L21.4 6.43C22.18 5.65 22.18 4.38 21.4 3.6L15.55 9.44L13.43 10.15Z" /></g></svg>
 
-!define MA_TOOTHBRUSH(_color)                                 SPRITE_PUT(ma_toothbrush, _color)
-!define MA_TOOTHBRUSH(_color, _scale)                         SPRITE_PUT(ma_toothbrush, _color, _scale)
-!define MA_TOOTHBRUSH(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA TOOTHBRUSH, ma_toothbrush, _color, _scale)
-!define MA_TOOTHBRUSH(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA TOOTHBRUSH, ma_toothbrush, _color, _scale, _shape)
-!define MA_TOOTHBRUSH(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA TOOTHBRUSH, _label, ma_toothbrush, _color, _scale, _shape)
+!define MA_TOOTHBRUSH(_color)                                 SPRITE_PUT(mdi-toothbrush, _color)
+!define MA_TOOTHBRUSH(_color, _scale)                         SPRITE_PUT(mdi-toothbrush, _color, _scale)
+!define MA_TOOTHBRUSH(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA TOOTHBRUSH, mdi-toothbrush, _color, _scale)
+!define MA_TOOTHBRUSH(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA TOOTHBRUSH, mdi-toothbrush, _color, _scale, _shape)
+!define MA_TOOTHBRUSH(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA TOOTHBRUSH, _label, mdi-toothbrush, _color, _scale, _shape)
 skinparam folderBackgroundColor<<MA TOOTHBRUSH>> White

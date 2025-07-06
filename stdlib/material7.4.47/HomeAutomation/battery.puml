@@ -1,8 +1,8 @@
 sprite mdi-battery <svg width="48" height="48"><g transform="scale(2)"><path d="M16.67,4H15V2H9V4H7.33A1.33,1.33 0 0,0 6,5.33V20.67C6,21.4 6.6,22 7.33,22H16.67A1.33,1.33 0 0,0 18,20.67V5.33C18,4.6 17.4,4 16.67,4Z" /></g></svg>
 
-!define MA_BATTERY(_color)                                 SPRITE_PUT(ma_battery, _color)
-!define MA_BATTERY(_color, _scale)                         SPRITE_PUT(ma_battery, _color, _scale)
-!define MA_BATTERY(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA BATTERY, ma_battery, _color, _scale)
-!define MA_BATTERY(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA BATTERY, ma_battery, _color, _scale, _shape)
-!define MA_BATTERY(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA BATTERY, _label, ma_battery, _color, _scale, _shape)
+!define MA_BATTERY(_color)                                 SPRITE_PUT(mdi-battery, _color)
+!define MA_BATTERY(_color, _scale)                         SPRITE_PUT(mdi-battery, _color, _scale)
+!define MA_BATTERY(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA BATTERY, mdi-battery, _color, _scale)
+!define MA_BATTERY(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA BATTERY, mdi-battery, _color, _scale, _shape)
+!define MA_BATTERY(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA BATTERY, _label, mdi-battery, _color, _scale, _shape)
 skinparam folderBackgroundColor<<MA BATTERY>> White

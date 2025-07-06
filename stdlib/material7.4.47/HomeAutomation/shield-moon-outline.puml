@@ -1,8 +1,8 @@
 sprite mdi-shield-moon-outline <svg width="48" height="48"><g transform="scale(2)"><path d="M21 11C21 16.55 17.16 21.74 12 23C6.84 21.74 3 16.55 3 11V5L12 1L21 5V11M12 21C15.75 20 19 15.54 19 11.22V6.3L12 3.18L5 6.3V11.22C5 15.54 8.25 20 12 21M9 14.33C10.76 16.5 14.13 16.57 15.97 14.4C16.2 14.13 16.05 13.72 15.71 13.66C14.42 13.45 13.23 12.68 12.53 11.46C11.82 10.24 11.75 8.83 12.21 7.6C12.33 7.27 12.05 6.94 11.7 7C8.36 7.62 6.81 11.61 9 14.33" /></g></svg>
 
-!define MA_SHIELD_MOON_OUTLINE(_color)                                 SPRITE_PUT(ma_shield_moon_outline, _color)
-!define MA_SHIELD_MOON_OUTLINE(_color, _scale)                         SPRITE_PUT(ma_shield_moon_outline, _color, _scale)
-!define MA_SHIELD_MOON_OUTLINE(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA SHIELD MOON OUTLINE, ma_shield_moon_outline, _color, _scale)
-!define MA_SHIELD_MOON_OUTLINE(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA SHIELD MOON OUTLINE, ma_shield_moon_outline, _color, _scale, _shape)
-!define MA_SHIELD_MOON_OUTLINE(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA SHIELD MOON OUTLINE, _label, ma_shield_moon_outline, _color, _scale, _shape)
+!define MA_SHIELD_MOON_OUTLINE(_color)                                 SPRITE_PUT(mdi-shield-moon-outline, _color)
+!define MA_SHIELD_MOON_OUTLINE(_color, _scale)                         SPRITE_PUT(mdi-shield-moon-outline, _color, _scale)
+!define MA_SHIELD_MOON_OUTLINE(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA SHIELD MOON OUTLINE, mdi-shield-moon-outline, _color, _scale)
+!define MA_SHIELD_MOON_OUTLINE(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA SHIELD MOON OUTLINE, mdi-shield-moon-outline, _color, _scale, _shape)
+!define MA_SHIELD_MOON_OUTLINE(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA SHIELD MOON OUTLINE, _label, mdi-shield-moon-outline, _color, _scale, _shape)
 skinparam folderBackgroundColor<<MA SHIELD MOON OUTLINE>> White

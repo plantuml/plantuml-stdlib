@@ -1,8 +1,8 @@
 sprite mdi-numeric-0 <svg width="48" height="48"><g transform="scale(2)"><path d="M11,7A2,2 0 0,0 9,9V15A2,2 0 0,0 11,17H13A2,2 0 0,0 15,15V9A2,2 0 0,0 13,7H11M11,9H13V15H11V9Z" /></g></svg>
 
-!define MA_NUMERIC_0(_color)                                 SPRITE_PUT(ma_numeric_0, _color)
-!define MA_NUMERIC_0(_color, _scale)                         SPRITE_PUT(ma_numeric_0, _color, _scale)
-!define MA_NUMERIC_0(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA NUMERIC 0, ma_numeric_0, _color, _scale)
-!define MA_NUMERIC_0(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA NUMERIC 0, ma_numeric_0, _color, _scale, _shape)
-!define MA_NUMERIC_0(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA NUMERIC 0, _label, ma_numeric_0, _color, _scale, _shape)
+!define MA_NUMERIC_0(_color)                                 SPRITE_PUT(mdi-numeric-0, _color)
+!define MA_NUMERIC_0(_color, _scale)                         SPRITE_PUT(mdi-numeric-0, _color, _scale)
+!define MA_NUMERIC_0(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA NUMERIC 0, mdi-numeric-0, _color, _scale)
+!define MA_NUMERIC_0(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA NUMERIC 0, mdi-numeric-0, _color, _scale, _shape)
+!define MA_NUMERIC_0(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA NUMERIC 0, _label, mdi-numeric-0, _color, _scale, _shape)
 skinparam folderBackgroundColor<<MA NUMERIC 0>> White

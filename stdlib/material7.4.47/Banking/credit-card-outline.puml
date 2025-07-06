@@ -1,8 +1,8 @@
 sprite mdi-credit-card-outline <svg width="48" height="48"><g transform="scale(2)"><path d="M20,8H4V6H20M20,18H4V12H20M20,4H4C2.89,4 2,4.89 2,6V18A2,2 0 0,0 4,20H20A2,2 0 0,0 22,18V6C22,4.89 21.1,4 20,4Z" /></g></svg>
 
-!define MA_CREDIT_CARD_OUTLINE(_color)                                 SPRITE_PUT(ma_credit_card_outline, _color)
-!define MA_CREDIT_CARD_OUTLINE(_color, _scale)                         SPRITE_PUT(ma_credit_card_outline, _color, _scale)
-!define MA_CREDIT_CARD_OUTLINE(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA CREDIT CARD OUTLINE, ma_credit_card_outline, _color, _scale)
-!define MA_CREDIT_CARD_OUTLINE(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA CREDIT CARD OUTLINE, ma_credit_card_outline, _color, _scale, _shape)
-!define MA_CREDIT_CARD_OUTLINE(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA CREDIT CARD OUTLINE, _label, ma_credit_card_outline, _color, _scale, _shape)
+!define MA_CREDIT_CARD_OUTLINE(_color)                                 SPRITE_PUT(mdi-credit-card-outline, _color)
+!define MA_CREDIT_CARD_OUTLINE(_color, _scale)                         SPRITE_PUT(mdi-credit-card-outline, _color, _scale)
+!define MA_CREDIT_CARD_OUTLINE(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA CREDIT CARD OUTLINE, mdi-credit-card-outline, _color, _scale)
+!define MA_CREDIT_CARD_OUTLINE(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA CREDIT CARD OUTLINE, mdi-credit-card-outline, _color, _scale, _shape)
+!define MA_CREDIT_CARD_OUTLINE(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA CREDIT CARD OUTLINE, _label, mdi-credit-card-outline, _color, _scale, _shape)
 skinparam folderBackgroundColor<<MA CREDIT CARD OUTLINE>> White

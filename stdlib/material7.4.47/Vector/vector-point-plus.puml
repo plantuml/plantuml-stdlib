@@ -1,8 +1,8 @@
 sprite mdi-vector-point-plus <svg width="48" height="48"><g transform="scale(2)"><path d="M9 9V15H15V9H9M11 11H13V13H11V11M18 15V18H15V20H18V23H20V20H23V18H20V15H18Z" /></g></svg>
 
-!define MA_VECTOR_POINT_PLUS(_color)                                 SPRITE_PUT(ma_vector_point_plus, _color)
-!define MA_VECTOR_POINT_PLUS(_color, _scale)                         SPRITE_PUT(ma_vector_point_plus, _color, _scale)
-!define MA_VECTOR_POINT_PLUS(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA VECTOR POINT PLUS, ma_vector_point_plus, _color, _scale)
-!define MA_VECTOR_POINT_PLUS(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA VECTOR POINT PLUS, ma_vector_point_plus, _color, _scale, _shape)
-!define MA_VECTOR_POINT_PLUS(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA VECTOR POINT PLUS, _label, ma_vector_point_plus, _color, _scale, _shape)
+!define MA_VECTOR_POINT_PLUS(_color)                                 SPRITE_PUT(mdi-vector-point-plus, _color)
+!define MA_VECTOR_POINT_PLUS(_color, _scale)                         SPRITE_PUT(mdi-vector-point-plus, _color, _scale)
+!define MA_VECTOR_POINT_PLUS(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA VECTOR POINT PLUS, mdi-vector-point-plus, _color, _scale)
+!define MA_VECTOR_POINT_PLUS(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA VECTOR POINT PLUS, mdi-vector-point-plus, _color, _scale, _shape)
+!define MA_VECTOR_POINT_PLUS(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA VECTOR POINT PLUS, _label, mdi-vector-point-plus, _color, _scale, _shape)
 skinparam folderBackgroundColor<<MA VECTOR POINT PLUS>> White

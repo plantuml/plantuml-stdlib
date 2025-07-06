@@ -1,8 +1,8 @@
 sprite mdi-file-document-minus <svg width="48" height="48"><g transform="scale(2)"><path d="M15 18H23V20H15M6 2C4.89 2 4 2.89 4 4V20C4 21.11 4.89 22 6 22H13.81C13.28 21.09 13 20.05 13 19C13 18.67 13.03 18.33 13.08 18H6V16H13.81C14.27 15.2 14.91 14.5 15.68 14H6V12H18V13.08C18.33 13.03 18.67 13 19 13C19.34 13 19.67 13.03 20 13.08V8L14 2M13 3.5L18.5 9H13Z" /></g></svg>
 
-!define MA_FILE_DOCUMENT_MINUS(_color)                                 SPRITE_PUT(ma_file_document_minus, _color)
-!define MA_FILE_DOCUMENT_MINUS(_color, _scale)                         SPRITE_PUT(ma_file_document_minus, _color, _scale)
-!define MA_FILE_DOCUMENT_MINUS(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA FILE DOCUMENT MINUS, ma_file_document_minus, _color, _scale)
-!define MA_FILE_DOCUMENT_MINUS(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA FILE DOCUMENT MINUS, ma_file_document_minus, _color, _scale, _shape)
-!define MA_FILE_DOCUMENT_MINUS(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA FILE DOCUMENT MINUS, _label, ma_file_document_minus, _color, _scale, _shape)
+!define MA_FILE_DOCUMENT_MINUS(_color)                                 SPRITE_PUT(mdi-file-document-minus, _color)
+!define MA_FILE_DOCUMENT_MINUS(_color, _scale)                         SPRITE_PUT(mdi-file-document-minus, _color, _scale)
+!define MA_FILE_DOCUMENT_MINUS(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA FILE DOCUMENT MINUS, mdi-file-document-minus, _color, _scale)
+!define MA_FILE_DOCUMENT_MINUS(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA FILE DOCUMENT MINUS, mdi-file-document-minus, _color, _scale, _shape)
+!define MA_FILE_DOCUMENT_MINUS(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA FILE DOCUMENT MINUS, _label, mdi-file-document-minus, _color, _scale, _shape)
 skinparam folderBackgroundColor<<MA FILE DOCUMENT MINUS>> White

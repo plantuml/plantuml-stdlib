@@ -1,8 +1,8 @@
 sprite mdi-folder-open <svg width="48" height="48"><g transform="scale(2)"><path d="M19,20H4C2.89,20 2,19.1 2,18V6C2,4.89 2.89,4 4,4H10L12,6H19A2,2 0 0,1 21,8H21L4,8V18L6.14,10H23.21L20.93,18.5C20.7,19.37 19.92,20 19,20Z" /></g></svg>
 
-!define MA_FOLDER_OPEN(_color)                                 SPRITE_PUT(ma_folder_open, _color)
-!define MA_FOLDER_OPEN(_color, _scale)                         SPRITE_PUT(ma_folder_open, _color, _scale)
-!define MA_FOLDER_OPEN(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA FOLDER OPEN, ma_folder_open, _color, _scale)
-!define MA_FOLDER_OPEN(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA FOLDER OPEN, ma_folder_open, _color, _scale, _shape)
-!define MA_FOLDER_OPEN(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA FOLDER OPEN, _label, ma_folder_open, _color, _scale, _shape)
+!define MA_FOLDER_OPEN(_color)                                 SPRITE_PUT(mdi-folder-open, _color)
+!define MA_FOLDER_OPEN(_color, _scale)                         SPRITE_PUT(mdi-folder-open, _color, _scale)
+!define MA_FOLDER_OPEN(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA FOLDER OPEN, mdi-folder-open, _color, _scale)
+!define MA_FOLDER_OPEN(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA FOLDER OPEN, mdi-folder-open, _color, _scale, _shape)
+!define MA_FOLDER_OPEN(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA FOLDER OPEN, _label, mdi-folder-open, _color, _scale, _shape)
 skinparam folderBackgroundColor<<MA FOLDER OPEN>> White

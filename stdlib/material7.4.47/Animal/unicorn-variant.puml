@@ -1,8 +1,8 @@
 sprite mdi-unicorn-variant <svg width="48" height="48"><g transform="scale(2)"><path d="M20 12V19L17 20L14 15.33C13.71 14.89 13 15.14 13.08 15.67L14 23L4 18L4.96 12.75C5.56 9.42 8.46 7 11.84 7H13L19 1L17 7H20L18.42 9.37C19.36 9.88 20 10.86 20 12Z" /></g></svg>
 
-!define MA_UNICORN_VARIANT(_color)                                 SPRITE_PUT(ma_unicorn_variant, _color)
-!define MA_UNICORN_VARIANT(_color, _scale)                         SPRITE_PUT(ma_unicorn_variant, _color, _scale)
-!define MA_UNICORN_VARIANT(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA UNICORN VARIANT, ma_unicorn_variant, _color, _scale)
-!define MA_UNICORN_VARIANT(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA UNICORN VARIANT, ma_unicorn_variant, _color, _scale, _shape)
-!define MA_UNICORN_VARIANT(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA UNICORN VARIANT, _label, ma_unicorn_variant, _color, _scale, _shape)
+!define MA_UNICORN_VARIANT(_color)                                 SPRITE_PUT(mdi-unicorn-variant, _color)
+!define MA_UNICORN_VARIANT(_color, _scale)                         SPRITE_PUT(mdi-unicorn-variant, _color, _scale)
+!define MA_UNICORN_VARIANT(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA UNICORN VARIANT, mdi-unicorn-variant, _color, _scale)
+!define MA_UNICORN_VARIANT(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA UNICORN VARIANT, mdi-unicorn-variant, _color, _scale, _shape)
+!define MA_UNICORN_VARIANT(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA UNICORN VARIANT, _label, mdi-unicorn-variant, _color, _scale, _shape)
 skinparam folderBackgroundColor<<MA UNICORN VARIANT>> White

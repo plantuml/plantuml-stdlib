@@ -1,8 +1,8 @@
 sprite mdi-invoice <svg width="48" height="48"><g transform="scale(2)"><path d="M21 22L18 20L15 22L12 20L9 22L6 20L3 22V3H21V22Z" /></g></svg>
 
-!define MA_INVOICE(_color)                                 SPRITE_PUT(ma_invoice, _color)
-!define MA_INVOICE(_color, _scale)                         SPRITE_PUT(ma_invoice, _color, _scale)
-!define MA_INVOICE(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA INVOICE, ma_invoice, _color, _scale)
-!define MA_INVOICE(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA INVOICE, ma_invoice, _color, _scale, _shape)
-!define MA_INVOICE(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA INVOICE, _label, ma_invoice, _color, _scale, _shape)
+!define MA_INVOICE(_color)                                 SPRITE_PUT(mdi-invoice, _color)
+!define MA_INVOICE(_color, _scale)                         SPRITE_PUT(mdi-invoice, _color, _scale)
+!define MA_INVOICE(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA INVOICE, mdi-invoice, _color, _scale)
+!define MA_INVOICE(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA INVOICE, mdi-invoice, _color, _scale, _shape)
+!define MA_INVOICE(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA INVOICE, _label, mdi-invoice, _color, _scale, _shape)
 skinparam folderBackgroundColor<<MA INVOICE>> White

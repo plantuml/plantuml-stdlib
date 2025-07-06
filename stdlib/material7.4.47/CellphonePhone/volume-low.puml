@@ -1,8 +1,8 @@
 sprite mdi-volume-low <svg width="48" height="48"><g transform="scale(2)"><path d="M7,9V15H11L16,20V4L11,9H7Z" /></g></svg>
 
-!define MA_VOLUME_LOW(_color)                                 SPRITE_PUT(ma_volume_low, _color)
-!define MA_VOLUME_LOW(_color, _scale)                         SPRITE_PUT(ma_volume_low, _color, _scale)
-!define MA_VOLUME_LOW(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA VOLUME LOW, ma_volume_low, _color, _scale)
-!define MA_VOLUME_LOW(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA VOLUME LOW, ma_volume_low, _color, _scale, _shape)
-!define MA_VOLUME_LOW(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA VOLUME LOW, _label, ma_volume_low, _color, _scale, _shape)
+!define MA_VOLUME_LOW(_color)                                 SPRITE_PUT(mdi-volume-low, _color)
+!define MA_VOLUME_LOW(_color, _scale)                         SPRITE_PUT(mdi-volume-low, _color, _scale)
+!define MA_VOLUME_LOW(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA VOLUME LOW, mdi-volume-low, _color, _scale)
+!define MA_VOLUME_LOW(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA VOLUME LOW, mdi-volume-low, _color, _scale, _shape)
+!define MA_VOLUME_LOW(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA VOLUME LOW, _label, mdi-volume-low, _color, _scale, _shape)
 skinparam folderBackgroundColor<<MA VOLUME LOW>> White

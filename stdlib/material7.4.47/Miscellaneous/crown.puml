@@ -1,8 +1,8 @@
 sprite mdi-crown <svg width="48" height="48"><g transform="scale(2)"><path d="M5 16L3 5L8.5 10L12 4L15.5 10L21 5L19 16H5M19 19C19 19.6 18.6 20 18 20H6C5.4 20 5 19.6 5 19V18H19V19Z" /></g></svg>
 
-!define MA_CROWN(_color)                                 SPRITE_PUT(ma_crown, _color)
-!define MA_CROWN(_color, _scale)                         SPRITE_PUT(ma_crown, _color, _scale)
-!define MA_CROWN(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA CROWN, ma_crown, _color, _scale)
-!define MA_CROWN(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA CROWN, ma_crown, _color, _scale, _shape)
-!define MA_CROWN(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA CROWN, _label, ma_crown, _color, _scale, _shape)
+!define MA_CROWN(_color)                                 SPRITE_PUT(mdi-crown, _color)
+!define MA_CROWN(_color, _scale)                         SPRITE_PUT(mdi-crown, _color, _scale)
+!define MA_CROWN(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA CROWN, mdi-crown, _color, _scale)
+!define MA_CROWN(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA CROWN, mdi-crown, _color, _scale, _shape)
+!define MA_CROWN(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA CROWN, _label, mdi-crown, _color, _scale, _shape)
 skinparam folderBackgroundColor<<MA CROWN>> White

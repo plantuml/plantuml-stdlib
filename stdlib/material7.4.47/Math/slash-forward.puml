@@ -1,8 +1,8 @@
 sprite mdi-slash-forward <svg width="48" height="48"><g transform="scale(2)"><path d="M7 21L14.9 3H17L9.1 21H7Z" /></g></svg>
 
-!define MA_SLASH_FORWARD(_color)                                 SPRITE_PUT(ma_slash_forward, _color)
-!define MA_SLASH_FORWARD(_color, _scale)                         SPRITE_PUT(ma_slash_forward, _color, _scale)
-!define MA_SLASH_FORWARD(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA SLASH FORWARD, ma_slash_forward, _color, _scale)
-!define MA_SLASH_FORWARD(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA SLASH FORWARD, ma_slash_forward, _color, _scale, _shape)
-!define MA_SLASH_FORWARD(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA SLASH FORWARD, _label, ma_slash_forward, _color, _scale, _shape)
+!define MA_SLASH_FORWARD(_color)                                 SPRITE_PUT(mdi-slash-forward, _color)
+!define MA_SLASH_FORWARD(_color, _scale)                         SPRITE_PUT(mdi-slash-forward, _color, _scale)
+!define MA_SLASH_FORWARD(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA SLASH FORWARD, mdi-slash-forward, _color, _scale)
+!define MA_SLASH_FORWARD(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA SLASH FORWARD, mdi-slash-forward, _color, _scale, _shape)
+!define MA_SLASH_FORWARD(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA SLASH FORWARD, _label, mdi-slash-forward, _color, _scale, _shape)
 skinparam folderBackgroundColor<<MA SLASH FORWARD>> White

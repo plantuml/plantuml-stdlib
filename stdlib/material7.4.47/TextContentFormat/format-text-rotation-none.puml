@@ -1,8 +1,8 @@
 sprite mdi-format-text-rotation-none <svg width="48" height="48"><g transform="scale(2)"><path d="M20.5,18L17.5,21V19H5V17H17.5V15L20.5,18M10.13,10H13.88L12,4.97L10.13,10M12.75,3L17.5,14H15.42L14.5,11.81H9.5L8.58,14H6.5L11.25,3H12.75Z" /></g></svg>
 
-!define MA_FORMAT_TEXT_ROTATION_NONE(_color)                                 SPRITE_PUT(ma_format_text_rotation_none, _color)
-!define MA_FORMAT_TEXT_ROTATION_NONE(_color, _scale)                         SPRITE_PUT(ma_format_text_rotation_none, _color, _scale)
-!define MA_FORMAT_TEXT_ROTATION_NONE(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA FORMAT TEXT ROTATION NONE, ma_format_text_rotation_none, _color, _scale)
-!define MA_FORMAT_TEXT_ROTATION_NONE(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA FORMAT TEXT ROTATION NONE, ma_format_text_rotation_none, _color, _scale, _shape)
-!define MA_FORMAT_TEXT_ROTATION_NONE(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA FORMAT TEXT ROTATION NONE, _label, ma_format_text_rotation_none, _color, _scale, _shape)
+!define MA_FORMAT_TEXT_ROTATION_NONE(_color)                                 SPRITE_PUT(mdi-format-text-rotation-none, _color)
+!define MA_FORMAT_TEXT_ROTATION_NONE(_color, _scale)                         SPRITE_PUT(mdi-format-text-rotation-none, _color, _scale)
+!define MA_FORMAT_TEXT_ROTATION_NONE(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA FORMAT TEXT ROTATION NONE, mdi-format-text-rotation-none, _color, _scale)
+!define MA_FORMAT_TEXT_ROTATION_NONE(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA FORMAT TEXT ROTATION NONE, mdi-format-text-rotation-none, _color, _scale, _shape)
+!define MA_FORMAT_TEXT_ROTATION_NONE(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA FORMAT TEXT ROTATION NONE, _label, mdi-format-text-rotation-none, _color, _scale, _shape)
 skinparam folderBackgroundColor<<MA FORMAT TEXT ROTATION NONE>> White

@@ -1,8 +1,8 @@
 sprite mdi-cellphone-charging <svg width="48" height="48"><g transform="scale(2)"><path d="M11 18.5V13H9L13 5.5V11H15M17 19H7V5H17M17 1H7C5.89 1 5 1.89 5 3V21A2 2 0 0 0 7 23H17A2 2 0 0 0 19 21V3C19 1.89 18.1 1 17 1Z" /></g></svg>
 
-!define MA_CELLPHONE_CHARGING(_color)                                 SPRITE_PUT(ma_cellphone_charging, _color)
-!define MA_CELLPHONE_CHARGING(_color, _scale)                         SPRITE_PUT(ma_cellphone_charging, _color, _scale)
-!define MA_CELLPHONE_CHARGING(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA CELLPHONE CHARGING, ma_cellphone_charging, _color, _scale)
-!define MA_CELLPHONE_CHARGING(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA CELLPHONE CHARGING, ma_cellphone_charging, _color, _scale, _shape)
-!define MA_CELLPHONE_CHARGING(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA CELLPHONE CHARGING, _label, ma_cellphone_charging, _color, _scale, _shape)
+!define MA_CELLPHONE_CHARGING(_color)                                 SPRITE_PUT(mdi-cellphone-charging, _color)
+!define MA_CELLPHONE_CHARGING(_color, _scale)                         SPRITE_PUT(mdi-cellphone-charging, _color, _scale)
+!define MA_CELLPHONE_CHARGING(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA CELLPHONE CHARGING, mdi-cellphone-charging, _color, _scale)
+!define MA_CELLPHONE_CHARGING(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA CELLPHONE CHARGING, mdi-cellphone-charging, _color, _scale, _shape)
+!define MA_CELLPHONE_CHARGING(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA CELLPHONE CHARGING, _label, mdi-cellphone-charging, _color, _scale, _shape)
 skinparam folderBackgroundColor<<MA CELLPHONE CHARGING>> White

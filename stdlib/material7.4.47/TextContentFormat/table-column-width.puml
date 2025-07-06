@@ -1,8 +1,8 @@
 sprite mdi-table-column-width <svg width="48" height="48"><g transform="scale(2)"><path d="M5,8H19A2,2 0 0,1 21,10V20A2,2 0 0,1 19,22H5A2,2 0 0,1 3,20V10A2,2 0 0,1 5,8M5,12V15H11V12H5M13,12V15H19V12H13M5,17V20H11V17H5M13,17V20H19V17H13M11,2H21V6H19V4H13V6H11V2Z" /></g></svg>
 
-!define MA_TABLE_COLUMN_WIDTH(_color)                                 SPRITE_PUT(ma_table_column_width, _color)
-!define MA_TABLE_COLUMN_WIDTH(_color, _scale)                         SPRITE_PUT(ma_table_column_width, _color, _scale)
-!define MA_TABLE_COLUMN_WIDTH(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA TABLE COLUMN WIDTH, ma_table_column_width, _color, _scale)
-!define MA_TABLE_COLUMN_WIDTH(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA TABLE COLUMN WIDTH, ma_table_column_width, _color, _scale, _shape)
-!define MA_TABLE_COLUMN_WIDTH(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA TABLE COLUMN WIDTH, _label, ma_table_column_width, _color, _scale, _shape)
+!define MA_TABLE_COLUMN_WIDTH(_color)                                 SPRITE_PUT(mdi-table-column-width, _color)
+!define MA_TABLE_COLUMN_WIDTH(_color, _scale)                         SPRITE_PUT(mdi-table-column-width, _color, _scale)
+!define MA_TABLE_COLUMN_WIDTH(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA TABLE COLUMN WIDTH, mdi-table-column-width, _color, _scale)
+!define MA_TABLE_COLUMN_WIDTH(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA TABLE COLUMN WIDTH, mdi-table-column-width, _color, _scale, _shape)
+!define MA_TABLE_COLUMN_WIDTH(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA TABLE COLUMN WIDTH, _label, mdi-table-column-width, _color, _scale, _shape)
 skinparam folderBackgroundColor<<MA TABLE COLUMN WIDTH>> White

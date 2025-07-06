@@ -1,8 +1,8 @@
 sprite mdi-swap-horizontal-bold <svg width="48" height="48"><g transform="scale(2)"><path d="M8,10V13H14V18H8V21L2,15.5L8,10M22,8.5L16,3V6H10V11H16V14L22,8.5Z" /></g></svg>
 
-!define MA_SWAP_HORIZONTAL_BOLD(_color)                                 SPRITE_PUT(ma_swap_horizontal_bold, _color)
-!define MA_SWAP_HORIZONTAL_BOLD(_color, _scale)                         SPRITE_PUT(ma_swap_horizontal_bold, _color, _scale)
-!define MA_SWAP_HORIZONTAL_BOLD(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA SWAP HORIZONTAL BOLD, ma_swap_horizontal_bold, _color, _scale)
-!define MA_SWAP_HORIZONTAL_BOLD(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA SWAP HORIZONTAL BOLD, ma_swap_horizontal_bold, _color, _scale, _shape)
-!define MA_SWAP_HORIZONTAL_BOLD(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA SWAP HORIZONTAL BOLD, _label, ma_swap_horizontal_bold, _color, _scale, _shape)
+!define MA_SWAP_HORIZONTAL_BOLD(_color)                                 SPRITE_PUT(mdi-swap-horizontal-bold, _color)
+!define MA_SWAP_HORIZONTAL_BOLD(_color, _scale)                         SPRITE_PUT(mdi-swap-horizontal-bold, _color, _scale)
+!define MA_SWAP_HORIZONTAL_BOLD(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA SWAP HORIZONTAL BOLD, mdi-swap-horizontal-bold, _color, _scale)
+!define MA_SWAP_HORIZONTAL_BOLD(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA SWAP HORIZONTAL BOLD, mdi-swap-horizontal-bold, _color, _scale, _shape)
+!define MA_SWAP_HORIZONTAL_BOLD(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA SWAP HORIZONTAL BOLD, _label, mdi-swap-horizontal-bold, _color, _scale, _shape)
 skinparam folderBackgroundColor<<MA SWAP HORIZONTAL BOLD>> White

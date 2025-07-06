@@ -1,8 +1,8 @@
 sprite mdi-plus-outline <svg width="48" height="48"><g transform="scale(2)"><path d="M4,9H9V4H15V9H20V15H15V20H9V15H4V9M11,13V18H13V13H18V11H13V6H11V11H6V13H11Z" /></g></svg>
 
-!define MA_PLUS_OUTLINE(_color)                                 SPRITE_PUT(ma_plus_outline, _color)
-!define MA_PLUS_OUTLINE(_color, _scale)                         SPRITE_PUT(ma_plus_outline, _color, _scale)
-!define MA_PLUS_OUTLINE(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA PLUS OUTLINE, ma_plus_outline, _color, _scale)
-!define MA_PLUS_OUTLINE(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA PLUS OUTLINE, ma_plus_outline, _color, _scale, _shape)
-!define MA_PLUS_OUTLINE(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA PLUS OUTLINE, _label, ma_plus_outline, _color, _scale, _shape)
+!define MA_PLUS_OUTLINE(_color)                                 SPRITE_PUT(mdi-plus-outline, _color)
+!define MA_PLUS_OUTLINE(_color, _scale)                         SPRITE_PUT(mdi-plus-outline, _color, _scale)
+!define MA_PLUS_OUTLINE(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA PLUS OUTLINE, mdi-plus-outline, _color, _scale)
+!define MA_PLUS_OUTLINE(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA PLUS OUTLINE, mdi-plus-outline, _color, _scale, _shape)
+!define MA_PLUS_OUTLINE(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA PLUS OUTLINE, _label, mdi-plus-outline, _color, _scale, _shape)
 skinparam folderBackgroundColor<<MA PLUS OUTLINE>> White

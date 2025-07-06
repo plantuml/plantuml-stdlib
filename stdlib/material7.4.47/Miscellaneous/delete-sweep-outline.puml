@@ -1,8 +1,8 @@
 sprite mdi-delete-sweep-outline <svg width="48" height="48"><g transform="scale(2)"><path d="M15,16H19V18H15V16M15,8H22V10H15V8M15,12H21V14H15V12M11,10V18H5V10H11M13,8H3V18A2,2 0 0,0 5,20H11A2,2 0 0,0 13,18V8M14,5H11L10,4H6L5,5H2V7H14V5Z" /></g></svg>
 
-!define MA_DELETE_SWEEP_OUTLINE(_color)                                 SPRITE_PUT(ma_delete_sweep_outline, _color)
-!define MA_DELETE_SWEEP_OUTLINE(_color, _scale)                         SPRITE_PUT(ma_delete_sweep_outline, _color, _scale)
-!define MA_DELETE_SWEEP_OUTLINE(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA DELETE SWEEP OUTLINE, ma_delete_sweep_outline, _color, _scale)
-!define MA_DELETE_SWEEP_OUTLINE(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA DELETE SWEEP OUTLINE, ma_delete_sweep_outline, _color, _scale, _shape)
-!define MA_DELETE_SWEEP_OUTLINE(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA DELETE SWEEP OUTLINE, _label, ma_delete_sweep_outline, _color, _scale, _shape)
+!define MA_DELETE_SWEEP_OUTLINE(_color)                                 SPRITE_PUT(mdi-delete-sweep-outline, _color)
+!define MA_DELETE_SWEEP_OUTLINE(_color, _scale)                         SPRITE_PUT(mdi-delete-sweep-outline, _color, _scale)
+!define MA_DELETE_SWEEP_OUTLINE(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA DELETE SWEEP OUTLINE, mdi-delete-sweep-outline, _color, _scale)
+!define MA_DELETE_SWEEP_OUTLINE(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA DELETE SWEEP OUTLINE, mdi-delete-sweep-outline, _color, _scale, _shape)
+!define MA_DELETE_SWEEP_OUTLINE(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA DELETE SWEEP OUTLINE, _label, mdi-delete-sweep-outline, _color, _scale, _shape)
 skinparam folderBackgroundColor<<MA DELETE SWEEP OUTLINE>> White

@@ -1,8 +1,8 @@
 sprite mdi-table-column-plus-before <svg width="48" height="48"><g transform="scale(2)"><path d="M13,2A2,2 0 0,0 11,4V20A2,2 0 0,0 13,22H22V2H13M20,10V14H13V10H20M20,16V20H13V16H20M20,4V8H13V4H20M9,11H6V8H4V11H1V13H4V16H6V13H9V11Z" /></g></svg>
 
-!define MA_TABLE_COLUMN_PLUS_BEFORE(_color)                                 SPRITE_PUT(ma_table_column_plus_before, _color)
-!define MA_TABLE_COLUMN_PLUS_BEFORE(_color, _scale)                         SPRITE_PUT(ma_table_column_plus_before, _color, _scale)
-!define MA_TABLE_COLUMN_PLUS_BEFORE(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA TABLE COLUMN PLUS BEFORE, ma_table_column_plus_before, _color, _scale)
-!define MA_TABLE_COLUMN_PLUS_BEFORE(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA TABLE COLUMN PLUS BEFORE, ma_table_column_plus_before, _color, _scale, _shape)
-!define MA_TABLE_COLUMN_PLUS_BEFORE(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA TABLE COLUMN PLUS BEFORE, _label, ma_table_column_plus_before, _color, _scale, _shape)
+!define MA_TABLE_COLUMN_PLUS_BEFORE(_color)                                 SPRITE_PUT(mdi-table-column-plus-before, _color)
+!define MA_TABLE_COLUMN_PLUS_BEFORE(_color, _scale)                         SPRITE_PUT(mdi-table-column-plus-before, _color, _scale)
+!define MA_TABLE_COLUMN_PLUS_BEFORE(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA TABLE COLUMN PLUS BEFORE, mdi-table-column-plus-before, _color, _scale)
+!define MA_TABLE_COLUMN_PLUS_BEFORE(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA TABLE COLUMN PLUS BEFORE, mdi-table-column-plus-before, _color, _scale, _shape)
+!define MA_TABLE_COLUMN_PLUS_BEFORE(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA TABLE COLUMN PLUS BEFORE, _label, mdi-table-column-plus-before, _color, _scale, _shape)
 skinparam folderBackgroundColor<<MA TABLE COLUMN PLUS BEFORE>> White

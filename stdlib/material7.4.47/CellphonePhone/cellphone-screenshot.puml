@@ -1,8 +1,8 @@
 sprite mdi-cellphone-screenshot <svg width="48" height="48"><g transform="scale(2)"><path d="M7,1A2,2 0 0,0 5,3V21A2,2 0 0,0 7,23H17A2,2 0 0,0 19,21V3A2,2 0 0,0 17,1H7M7,4H17V20H7V4M9,6V10H10.5V7.5H13V6H9M13.5,14V16.5H11V18H15V14H13.5Z" /></g></svg>
 
-!define MA_CELLPHONE_SCREENSHOT(_color)                                 SPRITE_PUT(ma_cellphone_screenshot, _color)
-!define MA_CELLPHONE_SCREENSHOT(_color, _scale)                         SPRITE_PUT(ma_cellphone_screenshot, _color, _scale)
-!define MA_CELLPHONE_SCREENSHOT(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA CELLPHONE SCREENSHOT, ma_cellphone_screenshot, _color, _scale)
-!define MA_CELLPHONE_SCREENSHOT(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA CELLPHONE SCREENSHOT, ma_cellphone_screenshot, _color, _scale, _shape)
-!define MA_CELLPHONE_SCREENSHOT(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA CELLPHONE SCREENSHOT, _label, ma_cellphone_screenshot, _color, _scale, _shape)
+!define MA_CELLPHONE_SCREENSHOT(_color)                                 SPRITE_PUT(mdi-cellphone-screenshot, _color)
+!define MA_CELLPHONE_SCREENSHOT(_color, _scale)                         SPRITE_PUT(mdi-cellphone-screenshot, _color, _scale)
+!define MA_CELLPHONE_SCREENSHOT(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA CELLPHONE SCREENSHOT, mdi-cellphone-screenshot, _color, _scale)
+!define MA_CELLPHONE_SCREENSHOT(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA CELLPHONE SCREENSHOT, mdi-cellphone-screenshot, _color, _scale, _shape)
+!define MA_CELLPHONE_SCREENSHOT(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA CELLPHONE SCREENSHOT, _label, mdi-cellphone-screenshot, _color, _scale, _shape)
 skinparam folderBackgroundColor<<MA CELLPHONE SCREENSHOT>> White

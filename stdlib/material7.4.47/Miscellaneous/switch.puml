@@ -1,8 +1,8 @@
 sprite mdi-switch <svg width="48" height="48"><g transform="scale(2)"><path d="M13,18H14A1,1 0 0,1 15,19H22V21H15A1,1 0 0,1 14,22H10A1,1 0 0,1 9,21H2V19H9A1,1 0 0,1 10,18H11V16H8A1,1 0 0,1 7,15V3A1,1 0 0,1 8,2H16A1,1 0 0,1 17,3V15A1,1 0 0,1 16,16H13V18M13,6H14V4H13V6M9,4V6H11V4H9M9,8V10H11V8H9M9,12V14H11V12H9Z" /></g></svg>
 
-!define MA_SWITCH(_color)                                 SPRITE_PUT(ma_switch, _color)
-!define MA_SWITCH(_color, _scale)                         SPRITE_PUT(ma_switch, _color, _scale)
-!define MA_SWITCH(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA SWITCH, ma_switch, _color, _scale)
-!define MA_SWITCH(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA SWITCH, ma_switch, _color, _scale, _shape)
-!define MA_SWITCH(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA SWITCH, _label, ma_switch, _color, _scale, _shape)
+!define MA_SWITCH(_color)                                 SPRITE_PUT(mdi-switch, _color)
+!define MA_SWITCH(_color, _scale)                         SPRITE_PUT(mdi-switch, _color, _scale)
+!define MA_SWITCH(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA SWITCH, mdi-switch, _color, _scale)
+!define MA_SWITCH(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA SWITCH, mdi-switch, _color, _scale, _shape)
+!define MA_SWITCH(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA SWITCH, _label, mdi-switch, _color, _scale, _shape)
 skinparam folderBackgroundColor<<MA SWITCH>> White

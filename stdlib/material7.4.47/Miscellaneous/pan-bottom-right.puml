@@ -1,8 +1,8 @@
 sprite mdi-pan-bottom-right <svg width="48" height="48"><g transform="scale(2)"><path d="M12,10A2,2 0 0,1 14,12A2,2 0 0,1 12,14A2,2 0 0,1 10,12A2,2 0 0,1 12,10M13,18.65L18.65,13L19,19L13,18.65Z" /></g></svg>
 
-!define MA_PAN_BOTTOM_RIGHT(_color)                                 SPRITE_PUT(ma_pan_bottom_right, _color)
-!define MA_PAN_BOTTOM_RIGHT(_color, _scale)                         SPRITE_PUT(ma_pan_bottom_right, _color, _scale)
-!define MA_PAN_BOTTOM_RIGHT(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA PAN BOTTOM RIGHT, ma_pan_bottom_right, _color, _scale)
-!define MA_PAN_BOTTOM_RIGHT(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA PAN BOTTOM RIGHT, ma_pan_bottom_right, _color, _scale, _shape)
-!define MA_PAN_BOTTOM_RIGHT(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA PAN BOTTOM RIGHT, _label, ma_pan_bottom_right, _color, _scale, _shape)
+!define MA_PAN_BOTTOM_RIGHT(_color)                                 SPRITE_PUT(mdi-pan-bottom-right, _color)
+!define MA_PAN_BOTTOM_RIGHT(_color, _scale)                         SPRITE_PUT(mdi-pan-bottom-right, _color, _scale)
+!define MA_PAN_BOTTOM_RIGHT(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA PAN BOTTOM RIGHT, mdi-pan-bottom-right, _color, _scale)
+!define MA_PAN_BOTTOM_RIGHT(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA PAN BOTTOM RIGHT, mdi-pan-bottom-right, _color, _scale, _shape)
+!define MA_PAN_BOTTOM_RIGHT(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA PAN BOTTOM RIGHT, _label, mdi-pan-bottom-right, _color, _scale, _shape)
 skinparam folderBackgroundColor<<MA PAN BOTTOM RIGHT>> White

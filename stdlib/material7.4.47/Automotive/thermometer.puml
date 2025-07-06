@@ -1,8 +1,8 @@
 sprite mdi-thermometer <svg width="48" height="48"><g transform="scale(2)"><path d="M15 13V5A3 3 0 0 0 9 5V13A5 5 0 1 0 15 13M12 4A1 1 0 0 1 13 5V8H11V5A1 1 0 0 1 12 4Z" /></g></svg>
 
-!define MA_THERMOMETER(_color)                                 SPRITE_PUT(ma_thermometer, _color)
-!define MA_THERMOMETER(_color, _scale)                         SPRITE_PUT(ma_thermometer, _color, _scale)
-!define MA_THERMOMETER(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA THERMOMETER, ma_thermometer, _color, _scale)
-!define MA_THERMOMETER(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA THERMOMETER, ma_thermometer, _color, _scale, _shape)
-!define MA_THERMOMETER(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA THERMOMETER, _label, ma_thermometer, _color, _scale, _shape)
+!define MA_THERMOMETER(_color)                                 SPRITE_PUT(mdi-thermometer, _color)
+!define MA_THERMOMETER(_color, _scale)                         SPRITE_PUT(mdi-thermometer, _color, _scale)
+!define MA_THERMOMETER(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA THERMOMETER, mdi-thermometer, _color, _scale)
+!define MA_THERMOMETER(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA THERMOMETER, mdi-thermometer, _color, _scale, _shape)
+!define MA_THERMOMETER(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA THERMOMETER, _label, mdi-thermometer, _color, _scale, _shape)
 skinparam folderBackgroundColor<<MA THERMOMETER>> White

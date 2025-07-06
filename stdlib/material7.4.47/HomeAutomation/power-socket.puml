@@ -1,8 +1,8 @@
 sprite mdi-power-socket <svg width="48" height="48"><g transform="scale(2)"><path d="M15,15H17V11H15M7,15H9V11H7M11,13H13V9H11M8.83,7H15.2L19,10.8V17H5V10.8M8,5L3,10V19H21V10L16,5H8Z" /></g></svg>
 
-!define MA_POWER_SOCKET(_color)                                 SPRITE_PUT(ma_power_socket, _color)
-!define MA_POWER_SOCKET(_color, _scale)                         SPRITE_PUT(ma_power_socket, _color, _scale)
-!define MA_POWER_SOCKET(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA POWER SOCKET, ma_power_socket, _color, _scale)
-!define MA_POWER_SOCKET(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA POWER SOCKET, ma_power_socket, _color, _scale, _shape)
-!define MA_POWER_SOCKET(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA POWER SOCKET, _label, ma_power_socket, _color, _scale, _shape)
+!define MA_POWER_SOCKET(_color)                                 SPRITE_PUT(mdi-power-socket, _color)
+!define MA_POWER_SOCKET(_color, _scale)                         SPRITE_PUT(mdi-power-socket, _color, _scale)
+!define MA_POWER_SOCKET(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA POWER SOCKET, mdi-power-socket, _color, _scale)
+!define MA_POWER_SOCKET(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA POWER SOCKET, mdi-power-socket, _color, _scale, _shape)
+!define MA_POWER_SOCKET(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA POWER SOCKET, _label, mdi-power-socket, _color, _scale, _shape)
 skinparam folderBackgroundColor<<MA POWER SOCKET>> White

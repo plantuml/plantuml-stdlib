@@ -1,8 +1,8 @@
 sprite mdi-peanut <svg width="48" height="48"><g transform="scale(2)"><path d="M16 12.77A2 2 0 0 1 15.86 10.12A5 5 0 0 0 13.04 2.12A5.74 5.74 0 0 0 12 2A5 5 0 0 0 7 7A5 5 0 0 0 8.11 10.12A2 2 0 0 1 8 12.72A5.5 5.5 0 0 0 10.81 21.87A5.42 5.42 0 0 0 12 22A5.5 5.5 0 0 0 16 12.77M13 5A1 1 0 1 1 12 6A1 1 0 0 1 13 5M11 18A1 1 0 1 1 12 17A1 1 0 0 1 11 18M12 15A1 1 0 1 1 13 16A1 1 0 0 1 12 15M14 19A1 1 0 1 1 15 18A1 1 0 0 1 14 19Z" /></g></svg>
 
-!define MA_PEANUT(_color)                                 SPRITE_PUT(ma_peanut, _color)
-!define MA_PEANUT(_color, _scale)                         SPRITE_PUT(ma_peanut, _color, _scale)
-!define MA_PEANUT(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA PEANUT, ma_peanut, _color, _scale)
-!define MA_PEANUT(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA PEANUT, ma_peanut, _color, _scale, _shape)
-!define MA_PEANUT(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA PEANUT, _label, ma_peanut, _color, _scale, _shape)
+!define MA_PEANUT(_color)                                 SPRITE_PUT(mdi-peanut, _color)
+!define MA_PEANUT(_color, _scale)                         SPRITE_PUT(mdi-peanut, _color, _scale)
+!define MA_PEANUT(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA PEANUT, mdi-peanut, _color, _scale)
+!define MA_PEANUT(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA PEANUT, mdi-peanut, _color, _scale, _shape)
+!define MA_PEANUT(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA PEANUT, _label, mdi-peanut, _color, _scale, _shape)
 skinparam folderBackgroundColor<<MA PEANUT>> White

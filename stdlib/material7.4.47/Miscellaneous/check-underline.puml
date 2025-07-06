@@ -1,8 +1,8 @@
 sprite mdi-check-underline <svg width="48" height="48"><g transform="scale(2)"><path d="M21,5L9,17L3.5,11.5L4.91,10.09L9,14.17L19.59,3.59L21,5M3,21V19H21V21H3Z" /></g></svg>
 
-!define MA_CHECK_UNDERLINE(_color)                                 SPRITE_PUT(ma_check_underline, _color)
-!define MA_CHECK_UNDERLINE(_color, _scale)                         SPRITE_PUT(ma_check_underline, _color, _scale)
-!define MA_CHECK_UNDERLINE(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA CHECK UNDERLINE, ma_check_underline, _color, _scale)
-!define MA_CHECK_UNDERLINE(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA CHECK UNDERLINE, ma_check_underline, _color, _scale, _shape)
-!define MA_CHECK_UNDERLINE(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA CHECK UNDERLINE, _label, ma_check_underline, _color, _scale, _shape)
+!define MA_CHECK_UNDERLINE(_color)                                 SPRITE_PUT(mdi-check-underline, _color)
+!define MA_CHECK_UNDERLINE(_color, _scale)                         SPRITE_PUT(mdi-check-underline, _color, _scale)
+!define MA_CHECK_UNDERLINE(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA CHECK UNDERLINE, mdi-check-underline, _color, _scale)
+!define MA_CHECK_UNDERLINE(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA CHECK UNDERLINE, mdi-check-underline, _color, _scale, _shape)
+!define MA_CHECK_UNDERLINE(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA CHECK UNDERLINE, _label, mdi-check-underline, _color, _scale, _shape)
 skinparam folderBackgroundColor<<MA CHECK UNDERLINE>> White

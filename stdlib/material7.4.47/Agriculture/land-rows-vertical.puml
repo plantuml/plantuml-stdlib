@@ -1,8 +1,8 @@
 sprite mdi-land-rows-vertical <svg width="48" height="48"><g transform="scale(2)"><path d="M20 2H4C2.9 2 2 2.9 2 4V20C2 21.1 2.9 22 4 22H20C21.1 22 22 21.1 22 20V4C22 2.9 21.1 2 20 2M6.5 20H4V4H6.5V20M11 20H8.5V4H11V20M15.5 20H13V4H15.5V20M20 20H17.5V4H20V20Z" /></g></svg>
 
-!define MA_LAND_ROWS_VERTICAL(_color)                                 SPRITE_PUT(ma_land_rows_vertical, _color)
-!define MA_LAND_ROWS_VERTICAL(_color, _scale)                         SPRITE_PUT(ma_land_rows_vertical, _color, _scale)
-!define MA_LAND_ROWS_VERTICAL(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA LAND ROWS VERTICAL, ma_land_rows_vertical, _color, _scale)
-!define MA_LAND_ROWS_VERTICAL(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA LAND ROWS VERTICAL, ma_land_rows_vertical, _color, _scale, _shape)
-!define MA_LAND_ROWS_VERTICAL(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA LAND ROWS VERTICAL, _label, ma_land_rows_vertical, _color, _scale, _shape)
+!define MA_LAND_ROWS_VERTICAL(_color)                                 SPRITE_PUT(mdi-land-rows-vertical, _color)
+!define MA_LAND_ROWS_VERTICAL(_color, _scale)                         SPRITE_PUT(mdi-land-rows-vertical, _color, _scale)
+!define MA_LAND_ROWS_VERTICAL(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA LAND ROWS VERTICAL, mdi-land-rows-vertical, _color, _scale)
+!define MA_LAND_ROWS_VERTICAL(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA LAND ROWS VERTICAL, mdi-land-rows-vertical, _color, _scale, _shape)
+!define MA_LAND_ROWS_VERTICAL(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA LAND ROWS VERTICAL, _label, mdi-land-rows-vertical, _color, _scale, _shape)
 skinparam folderBackgroundColor<<MA LAND ROWS VERTICAL>> White

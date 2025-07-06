@@ -1,8 +1,8 @@
 sprite mdi-tray-full <svg width="48" height="48"><g transform="scale(2)"><path d="M18 5H6V7H18M6 9H18V11H6M2 12H4V17H20V12H22V17A2 2 0 0 1 20 19H4A2 2 0 0 1 2 17M18 13H6V15H18Z" /></g></svg>
 
-!define MA_TRAY_FULL(_color)                                 SPRITE_PUT(ma_tray_full, _color)
-!define MA_TRAY_FULL(_color, _scale)                         SPRITE_PUT(ma_tray_full, _color, _scale)
-!define MA_TRAY_FULL(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA TRAY FULL, ma_tray_full, _color, _scale)
-!define MA_TRAY_FULL(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA TRAY FULL, ma_tray_full, _color, _scale, _shape)
-!define MA_TRAY_FULL(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA TRAY FULL, _label, ma_tray_full, _color, _scale, _shape)
+!define MA_TRAY_FULL(_color)                                 SPRITE_PUT(mdi-tray-full, _color)
+!define MA_TRAY_FULL(_color, _scale)                         SPRITE_PUT(mdi-tray-full, _color, _scale)
+!define MA_TRAY_FULL(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA TRAY FULL, mdi-tray-full, _color, _scale)
+!define MA_TRAY_FULL(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA TRAY FULL, mdi-tray-full, _color, _scale, _shape)
+!define MA_TRAY_FULL(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA TRAY FULL, _label, mdi-tray-full, _color, _scale, _shape)
 skinparam folderBackgroundColor<<MA TRAY FULL>> White

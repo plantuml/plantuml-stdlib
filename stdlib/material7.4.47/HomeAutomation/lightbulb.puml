@@ -1,8 +1,8 @@
 sprite mdi-lightbulb <svg width="48" height="48"><g transform="scale(2)"><path d="M12,2A7,7 0 0,0 5,9C5,11.38 6.19,13.47 8,14.74V17A1,1 0 0,0 9,18H15A1,1 0 0,0 16,17V14.74C17.81,13.47 19,11.38 19,9A7,7 0 0,0 12,2M9,21A1,1 0 0,0 10,22H14A1,1 0 0,0 15,21V20H9V21Z" /></g></svg>
 
-!define MA_LIGHTBULB(_color)                                 SPRITE_PUT(ma_lightbulb, _color)
-!define MA_LIGHTBULB(_color, _scale)                         SPRITE_PUT(ma_lightbulb, _color, _scale)
-!define MA_LIGHTBULB(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA LIGHTBULB, ma_lightbulb, _color, _scale)
-!define MA_LIGHTBULB(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA LIGHTBULB, ma_lightbulb, _color, _scale, _shape)
-!define MA_LIGHTBULB(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA LIGHTBULB, _label, ma_lightbulb, _color, _scale, _shape)
+!define MA_LIGHTBULB(_color)                                 SPRITE_PUT(mdi-lightbulb, _color)
+!define MA_LIGHTBULB(_color, _scale)                         SPRITE_PUT(mdi-lightbulb, _color, _scale)
+!define MA_LIGHTBULB(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA LIGHTBULB, mdi-lightbulb, _color, _scale)
+!define MA_LIGHTBULB(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA LIGHTBULB, mdi-lightbulb, _color, _scale, _shape)
+!define MA_LIGHTBULB(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA LIGHTBULB, _label, mdi-lightbulb, _color, _scale, _shape)
 skinparam folderBackgroundColor<<MA LIGHTBULB>> White

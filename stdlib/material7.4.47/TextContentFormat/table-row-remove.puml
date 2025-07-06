@@ -1,8 +1,8 @@
 sprite mdi-table-row-remove <svg width="48" height="48"><g transform="scale(2)"><path d="M9.41,13L12,15.59L14.59,13L16,14.41L13.41,17L16,19.59L14.59,21L12,18.41L9.41,21L8,19.59L10.59,17L8,14.41L9.41,13M22,9A2,2 0 0,1 20,11H4A2,2 0 0,1 2,9V6A2,2 0 0,1 4,4H20A2,2 0 0,1 22,6V9M4,9H8V6H4V9M10,9H14V6H10V9M16,9H20V6H16V9Z" /></g></svg>
 
-!define MA_TABLE_ROW_REMOVE(_color)                                 SPRITE_PUT(ma_table_row_remove, _color)
-!define MA_TABLE_ROW_REMOVE(_color, _scale)                         SPRITE_PUT(ma_table_row_remove, _color, _scale)
-!define MA_TABLE_ROW_REMOVE(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA TABLE ROW REMOVE, ma_table_row_remove, _color, _scale)
-!define MA_TABLE_ROW_REMOVE(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA TABLE ROW REMOVE, ma_table_row_remove, _color, _scale, _shape)
-!define MA_TABLE_ROW_REMOVE(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA TABLE ROW REMOVE, _label, ma_table_row_remove, _color, _scale, _shape)
+!define MA_TABLE_ROW_REMOVE(_color)                                 SPRITE_PUT(mdi-table-row-remove, _color)
+!define MA_TABLE_ROW_REMOVE(_color, _scale)                         SPRITE_PUT(mdi-table-row-remove, _color, _scale)
+!define MA_TABLE_ROW_REMOVE(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA TABLE ROW REMOVE, mdi-table-row-remove, _color, _scale)
+!define MA_TABLE_ROW_REMOVE(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA TABLE ROW REMOVE, mdi-table-row-remove, _color, _scale, _shape)
+!define MA_TABLE_ROW_REMOVE(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA TABLE ROW REMOVE, _label, mdi-table-row-remove, _color, _scale, _shape)
 skinparam folderBackgroundColor<<MA TABLE ROW REMOVE>> White

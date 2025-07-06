@@ -1,8 +1,8 @@
 sprite mdi-home-lightbulb <svg width="48" height="48"><g transform="scale(2)"><path d="M12 3L2 12H5V20H19V12H22M13 18H11V17H13M13.5 14.58V16H10.5V14.58A3 3 0 1 1 13.5 14.58Z" /></g></svg>
 
-!define MA_HOME_LIGHTBULB(_color)                                 SPRITE_PUT(ma_home_lightbulb, _color)
-!define MA_HOME_LIGHTBULB(_color, _scale)                         SPRITE_PUT(ma_home_lightbulb, _color, _scale)
-!define MA_HOME_LIGHTBULB(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA HOME LIGHTBULB, ma_home_lightbulb, _color, _scale)
-!define MA_HOME_LIGHTBULB(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA HOME LIGHTBULB, ma_home_lightbulb, _color, _scale, _shape)
-!define MA_HOME_LIGHTBULB(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA HOME LIGHTBULB, _label, ma_home_lightbulb, _color, _scale, _shape)
+!define MA_HOME_LIGHTBULB(_color)                                 SPRITE_PUT(mdi-home-lightbulb, _color)
+!define MA_HOME_LIGHTBULB(_color, _scale)                         SPRITE_PUT(mdi-home-lightbulb, _color, _scale)
+!define MA_HOME_LIGHTBULB(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA HOME LIGHTBULB, mdi-home-lightbulb, _color, _scale)
+!define MA_HOME_LIGHTBULB(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA HOME LIGHTBULB, mdi-home-lightbulb, _color, _scale, _shape)
+!define MA_HOME_LIGHTBULB(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA HOME LIGHTBULB, _label, mdi-home-lightbulb, _color, _scale, _shape)
 skinparam folderBackgroundColor<<MA HOME LIGHTBULB>> White

@@ -1,8 +1,8 @@
 sprite mdi-chevron-down-box-outline <svg width="48" height="48"><g transform="scale(2)"><path d="M19,3H5A2,2 0 0,0 3,5V19C3,20.11 3.9,21 5,21H19C20.11,21 21,20.11 21,19V5A2,2 0 0,0 19,3M19,19H5V5H19V19M7.41,8.29L12,12.88L16.59,8.29L18,9.71L12,15.71L6,9.71L7.41,8.29Z" /></g></svg>
 
-!define MA_CHEVRON_DOWN_BOX_OUTLINE(_color)                                 SPRITE_PUT(ma_chevron_down_box_outline, _color)
-!define MA_CHEVRON_DOWN_BOX_OUTLINE(_color, _scale)                         SPRITE_PUT(ma_chevron_down_box_outline, _color, _scale)
-!define MA_CHEVRON_DOWN_BOX_OUTLINE(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA CHEVRON DOWN BOX OUTLINE, ma_chevron_down_box_outline, _color, _scale)
-!define MA_CHEVRON_DOWN_BOX_OUTLINE(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA CHEVRON DOWN BOX OUTLINE, ma_chevron_down_box_outline, _color, _scale, _shape)
-!define MA_CHEVRON_DOWN_BOX_OUTLINE(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA CHEVRON DOWN BOX OUTLINE, _label, ma_chevron_down_box_outline, _color, _scale, _shape)
+!define MA_CHEVRON_DOWN_BOX_OUTLINE(_color)                                 SPRITE_PUT(mdi-chevron-down-box-outline, _color)
+!define MA_CHEVRON_DOWN_BOX_OUTLINE(_color, _scale)                         SPRITE_PUT(mdi-chevron-down-box-outline, _color, _scale)
+!define MA_CHEVRON_DOWN_BOX_OUTLINE(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA CHEVRON DOWN BOX OUTLINE, mdi-chevron-down-box-outline, _color, _scale)
+!define MA_CHEVRON_DOWN_BOX_OUTLINE(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA CHEVRON DOWN BOX OUTLINE, mdi-chevron-down-box-outline, _color, _scale, _shape)
+!define MA_CHEVRON_DOWN_BOX_OUTLINE(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA CHEVRON DOWN BOX OUTLINE, _label, mdi-chevron-down-box-outline, _color, _scale, _shape)
 skinparam folderBackgroundColor<<MA CHEVRON DOWN BOX OUTLINE>> White

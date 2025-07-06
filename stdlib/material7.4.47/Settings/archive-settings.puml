@@ -1,8 +1,8 @@
 sprite mdi-archive-settings <svg width="48" height="48"><g transform="scale(2)"><path d="M21 2V6H3V2H21M4 7H20V20H4V7M9 12H15V10.5C15 10.22 14.78 10 14.5 10H9.5C9.22 10 9 10.22 9 10.5V12M7 24H9V22H7V24M11 24H13V22H11V24M15 24H17V22H15V24Z" /></g></svg>
 
-!define MA_ARCHIVE_SETTINGS(_color)                                 SPRITE_PUT(ma_archive_settings, _color)
-!define MA_ARCHIVE_SETTINGS(_color, _scale)                         SPRITE_PUT(ma_archive_settings, _color, _scale)
-!define MA_ARCHIVE_SETTINGS(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA ARCHIVE SETTINGS, ma_archive_settings, _color, _scale)
-!define MA_ARCHIVE_SETTINGS(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA ARCHIVE SETTINGS, ma_archive_settings, _color, _scale, _shape)
-!define MA_ARCHIVE_SETTINGS(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA ARCHIVE SETTINGS, _label, ma_archive_settings, _color, _scale, _shape)
+!define MA_ARCHIVE_SETTINGS(_color)                                 SPRITE_PUT(mdi-archive-settings, _color)
+!define MA_ARCHIVE_SETTINGS(_color, _scale)                         SPRITE_PUT(mdi-archive-settings, _color, _scale)
+!define MA_ARCHIVE_SETTINGS(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA ARCHIVE SETTINGS, mdi-archive-settings, _color, _scale)
+!define MA_ARCHIVE_SETTINGS(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA ARCHIVE SETTINGS, mdi-archive-settings, _color, _scale, _shape)
+!define MA_ARCHIVE_SETTINGS(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA ARCHIVE SETTINGS, _label, mdi-archive-settings, _color, _scale, _shape)
 skinparam folderBackgroundColor<<MA ARCHIVE SETTINGS>> White

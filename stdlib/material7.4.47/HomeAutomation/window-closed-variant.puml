@@ -1,8 +1,8 @@
 sprite mdi-window-closed-variant <svg width="48" height="48"><g transform="scale(2)"><path d="M21 20V2H3V20H1V23H23V20M19 4V11H13V4M5 4H11V11H5M5 20V13H11V20M13 20V13H19V20Z" /></g></svg>
 
-!define MA_WINDOW_CLOSED_VARIANT(_color)                                 SPRITE_PUT(ma_window_closed_variant, _color)
-!define MA_WINDOW_CLOSED_VARIANT(_color, _scale)                         SPRITE_PUT(ma_window_closed_variant, _color, _scale)
-!define MA_WINDOW_CLOSED_VARIANT(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA WINDOW CLOSED VARIANT, ma_window_closed_variant, _color, _scale)
-!define MA_WINDOW_CLOSED_VARIANT(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA WINDOW CLOSED VARIANT, ma_window_closed_variant, _color, _scale, _shape)
-!define MA_WINDOW_CLOSED_VARIANT(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA WINDOW CLOSED VARIANT, _label, ma_window_closed_variant, _color, _scale, _shape)
+!define MA_WINDOW_CLOSED_VARIANT(_color)                                 SPRITE_PUT(mdi-window-closed-variant, _color)
+!define MA_WINDOW_CLOSED_VARIANT(_color, _scale)                         SPRITE_PUT(mdi-window-closed-variant, _color, _scale)
+!define MA_WINDOW_CLOSED_VARIANT(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA WINDOW CLOSED VARIANT, mdi-window-closed-variant, _color, _scale)
+!define MA_WINDOW_CLOSED_VARIANT(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA WINDOW CLOSED VARIANT, mdi-window-closed-variant, _color, _scale, _shape)
+!define MA_WINDOW_CLOSED_VARIANT(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA WINDOW CLOSED VARIANT, _label, mdi-window-closed-variant, _color, _scale, _shape)
 skinparam folderBackgroundColor<<MA WINDOW CLOSED VARIANT>> White

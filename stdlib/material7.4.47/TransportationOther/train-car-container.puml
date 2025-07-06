@@ -1,8 +1,8 @@
 sprite mdi-train-car-container <svg width="48" height="48"><g transform="scale(2)"><path d="M1 6V17H2C2 18.11 2.9 19 4 19S6 18.11 6 17H18C18 18.11 18.9 19 20 19S22 18.11 22 17H23V6H1M21 15H19V9H17V15H15V9H13V15H11V9H9V15H7V9H5V15H3V8H21V15Z" /></g></svg>
 
-!define MA_TRAIN_CAR_CONTAINER(_color)                                 SPRITE_PUT(ma_train_car_container, _color)
-!define MA_TRAIN_CAR_CONTAINER(_color, _scale)                         SPRITE_PUT(ma_train_car_container, _color, _scale)
-!define MA_TRAIN_CAR_CONTAINER(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA TRAIN CAR CONTAINER, ma_train_car_container, _color, _scale)
-!define MA_TRAIN_CAR_CONTAINER(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA TRAIN CAR CONTAINER, ma_train_car_container, _color, _scale, _shape)
-!define MA_TRAIN_CAR_CONTAINER(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA TRAIN CAR CONTAINER, _label, ma_train_car_container, _color, _scale, _shape)
+!define MA_TRAIN_CAR_CONTAINER(_color)                                 SPRITE_PUT(mdi-train-car-container, _color)
+!define MA_TRAIN_CAR_CONTAINER(_color, _scale)                         SPRITE_PUT(mdi-train-car-container, _color, _scale)
+!define MA_TRAIN_CAR_CONTAINER(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA TRAIN CAR CONTAINER, mdi-train-car-container, _color, _scale)
+!define MA_TRAIN_CAR_CONTAINER(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA TRAIN CAR CONTAINER, mdi-train-car-container, _color, _scale, _shape)
+!define MA_TRAIN_CAR_CONTAINER(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA TRAIN CAR CONTAINER, _label, mdi-train-car-container, _color, _scale, _shape)
 skinparam folderBackgroundColor<<MA TRAIN CAR CONTAINER>> White

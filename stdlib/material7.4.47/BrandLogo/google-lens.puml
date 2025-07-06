@@ -1,8 +1,8 @@
 sprite mdi-google-lens <svg width="48" height="48"><g transform="scale(2)"><path d="M6,2H18A4,4 0 0,1 22,6V12H20V6A2,2 0 0,0 18,4H6A2,2 0 0,0 4,6V18A2,2 0 0,0 6,20H12V22H6A4,4 0 0,1 2,18V6A4,4 0 0,1 6,2M12,8A4,4 0 0,1 16,12A4,4 0 0,1 12,16A4,4 0 0,1 8,12A4,4 0 0,1 12,8M18,16A2,2 0 0,1 20,18A2,2 0 0,1 18,20A2,2 0 0,1 16,18A2,2 0 0,1 18,16Z" /></g></svg>
 
-!define MA_GOOGLE_LENS(_color)                                 SPRITE_PUT(ma_google_lens, _color)
-!define MA_GOOGLE_LENS(_color, _scale)                         SPRITE_PUT(ma_google_lens, _color, _scale)
-!define MA_GOOGLE_LENS(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA GOOGLE LENS, ma_google_lens, _color, _scale)
-!define MA_GOOGLE_LENS(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA GOOGLE LENS, ma_google_lens, _color, _scale, _shape)
-!define MA_GOOGLE_LENS(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA GOOGLE LENS, _label, ma_google_lens, _color, _scale, _shape)
+!define MA_GOOGLE_LENS(_color)                                 SPRITE_PUT(mdi-google-lens, _color)
+!define MA_GOOGLE_LENS(_color, _scale)                         SPRITE_PUT(mdi-google-lens, _color, _scale)
+!define MA_GOOGLE_LENS(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA GOOGLE LENS, mdi-google-lens, _color, _scale)
+!define MA_GOOGLE_LENS(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA GOOGLE LENS, mdi-google-lens, _color, _scale, _shape)
+!define MA_GOOGLE_LENS(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA GOOGLE LENS, _label, mdi-google-lens, _color, _scale, _shape)
 skinparam folderBackgroundColor<<MA GOOGLE LENS>> White

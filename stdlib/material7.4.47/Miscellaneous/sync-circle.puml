@@ -1,8 +1,8 @@
 sprite mdi-sync-circle <svg width="48" height="48"><g transform="scale(2)"><path d="M2 12A10 10 0 1 0 12 2A10 10 0 0 0 2 12M15.6 13.72A4 4 0 0 0 16 12A4 4 0 0 0 12 8V10L8.88 7L12 4V6A6 6 0 0 1 18 12A5.9 5.9 0 0 1 17.07 15.19M6 12A5.9 5.9 0 0 1 6.93 8.81L8.4 10.28A4 4 0 0 0 8 12A4 4 0 0 0 12 16V14L15 17L12 20V18A6 6 0 0 1 6 12Z" /></g></svg>
 
-!define MA_SYNC_CIRCLE(_color)                                 SPRITE_PUT(ma_sync_circle, _color)
-!define MA_SYNC_CIRCLE(_color, _scale)                         SPRITE_PUT(ma_sync_circle, _color, _scale)
-!define MA_SYNC_CIRCLE(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA SYNC CIRCLE, ma_sync_circle, _color, _scale)
-!define MA_SYNC_CIRCLE(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA SYNC CIRCLE, ma_sync_circle, _color, _scale, _shape)
-!define MA_SYNC_CIRCLE(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA SYNC CIRCLE, _label, ma_sync_circle, _color, _scale, _shape)
+!define MA_SYNC_CIRCLE(_color)                                 SPRITE_PUT(mdi-sync-circle, _color)
+!define MA_SYNC_CIRCLE(_color, _scale)                         SPRITE_PUT(mdi-sync-circle, _color, _scale)
+!define MA_SYNC_CIRCLE(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA SYNC CIRCLE, mdi-sync-circle, _color, _scale)
+!define MA_SYNC_CIRCLE(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA SYNC CIRCLE, mdi-sync-circle, _color, _scale, _shape)
+!define MA_SYNC_CIRCLE(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA SYNC CIRCLE, _label, mdi-sync-circle, _color, _scale, _shape)
 skinparam folderBackgroundColor<<MA SYNC CIRCLE>> White

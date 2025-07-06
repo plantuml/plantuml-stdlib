@@ -1,8 +1,8 @@
 sprite mdi-star-circle <svg width="48" height="48"><g transform="scale(2)"><path d="M16.23,18L12,15.45L7.77,18L8.89,13.19L5.16,9.96L10.08,9.54L12,5L13.92,9.53L18.84,9.95L15.11,13.18L16.23,18M12,2C6.47,2 2,6.5 2,12A10,10 0 0,0 12,22A10,10 0 0,0 22,12A10,10 0 0,0 12,2Z" /></g></svg>
 
-!define MA_STAR_CIRCLE(_color)                                 SPRITE_PUT(ma_star_circle, _color)
-!define MA_STAR_CIRCLE(_color, _scale)                         SPRITE_PUT(ma_star_circle, _color, _scale)
-!define MA_STAR_CIRCLE(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA STAR CIRCLE, ma_star_circle, _color, _scale)
-!define MA_STAR_CIRCLE(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA STAR CIRCLE, ma_star_circle, _color, _scale, _shape)
-!define MA_STAR_CIRCLE(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA STAR CIRCLE, _label, ma_star_circle, _color, _scale, _shape)
+!define MA_STAR_CIRCLE(_color)                                 SPRITE_PUT(mdi-star-circle, _color)
+!define MA_STAR_CIRCLE(_color, _scale)                         SPRITE_PUT(mdi-star-circle, _color, _scale)
+!define MA_STAR_CIRCLE(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA STAR CIRCLE, mdi-star-circle, _color, _scale)
+!define MA_STAR_CIRCLE(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA STAR CIRCLE, mdi-star-circle, _color, _scale, _shape)
+!define MA_STAR_CIRCLE(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA STAR CIRCLE, _label, mdi-star-circle, _color, _scale, _shape)
 skinparam folderBackgroundColor<<MA STAR CIRCLE>> White

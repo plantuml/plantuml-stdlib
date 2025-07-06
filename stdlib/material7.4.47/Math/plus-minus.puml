@@ -1,8 +1,8 @@
 sprite mdi-plus-minus <svg width="48" height="48"><g transform="scale(2)"><path d="M11,4V9H6V11H11V16H13V11H18V9H13V4H11M6,18V20H18V18H6Z" /></g></svg>
 
-!define MA_PLUS_MINUS(_color)                                 SPRITE_PUT(ma_plus_minus, _color)
-!define MA_PLUS_MINUS(_color, _scale)                         SPRITE_PUT(ma_plus_minus, _color, _scale)
-!define MA_PLUS_MINUS(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA PLUS MINUS, ma_plus_minus, _color, _scale)
-!define MA_PLUS_MINUS(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA PLUS MINUS, ma_plus_minus, _color, _scale, _shape)
-!define MA_PLUS_MINUS(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA PLUS MINUS, _label, ma_plus_minus, _color, _scale, _shape)
+!define MA_PLUS_MINUS(_color)                                 SPRITE_PUT(mdi-plus-minus, _color)
+!define MA_PLUS_MINUS(_color, _scale)                         SPRITE_PUT(mdi-plus-minus, _color, _scale)
+!define MA_PLUS_MINUS(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA PLUS MINUS, mdi-plus-minus, _color, _scale)
+!define MA_PLUS_MINUS(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA PLUS MINUS, mdi-plus-minus, _color, _scale, _shape)
+!define MA_PLUS_MINUS(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA PLUS MINUS, _label, mdi-plus-minus, _color, _scale, _shape)
 skinparam folderBackgroundColor<<MA PLUS MINUS>> White

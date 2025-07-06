@@ -1,8 +1,8 @@
 sprite mdi-cup-outline <svg width="48" height="48"><g transform="scale(2)"><path d="M3 2L5 20.23C5.13 21.23 5.97 22 7 22H17C18 22 18.87 21.23 19 20.23L21 2H3M5.22 4H18.78L17 20H7L5.22 4Z" /></g></svg>
 
-!define MA_CUP_OUTLINE(_color)                                 SPRITE_PUT(ma_cup_outline, _color)
-!define MA_CUP_OUTLINE(_color, _scale)                         SPRITE_PUT(ma_cup_outline, _color, _scale)
-!define MA_CUP_OUTLINE(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA CUP OUTLINE, ma_cup_outline, _color, _scale)
-!define MA_CUP_OUTLINE(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA CUP OUTLINE, ma_cup_outline, _color, _scale, _shape)
-!define MA_CUP_OUTLINE(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA CUP OUTLINE, _label, ma_cup_outline, _color, _scale, _shape)
+!define MA_CUP_OUTLINE(_color)                                 SPRITE_PUT(mdi-cup-outline, _color)
+!define MA_CUP_OUTLINE(_color, _scale)                         SPRITE_PUT(mdi-cup-outline, _color, _scale)
+!define MA_CUP_OUTLINE(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA CUP OUTLINE, mdi-cup-outline, _color, _scale)
+!define MA_CUP_OUTLINE(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA CUP OUTLINE, mdi-cup-outline, _color, _scale, _shape)
+!define MA_CUP_OUTLINE(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA CUP OUTLINE, _label, mdi-cup-outline, _color, _scale, _shape)
 skinparam folderBackgroundColor<<MA CUP OUTLINE>> White

@@ -1,8 +1,8 @@
 sprite mdi-map-marker-check <svg width="48" height="48"><g transform="scale(2)"><path d="M12,2C15.86,2 19,5.14 19,9C19,14.25 12,22 12,22C12,22 5,14.25 5,9C5,5.14 8.14,2 12,2M10.47,14L17,7.41L15.6,6L10.47,11.18L8.4,9.09L7,10.5L10.47,14Z" /></g></svg>
 
-!define MA_MAP_MARKER_CHECK(_color)                                 SPRITE_PUT(ma_map_marker_check, _color)
-!define MA_MAP_MARKER_CHECK(_color, _scale)                         SPRITE_PUT(ma_map_marker_check, _color, _scale)
-!define MA_MAP_MARKER_CHECK(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA MAP MARKER CHECK, ma_map_marker_check, _color, _scale)
-!define MA_MAP_MARKER_CHECK(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA MAP MARKER CHECK, ma_map_marker_check, _color, _scale, _shape)
-!define MA_MAP_MARKER_CHECK(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA MAP MARKER CHECK, _label, ma_map_marker_check, _color, _scale, _shape)
+!define MA_MAP_MARKER_CHECK(_color)                                 SPRITE_PUT(mdi-map-marker-check, _color)
+!define MA_MAP_MARKER_CHECK(_color, _scale)                         SPRITE_PUT(mdi-map-marker-check, _color, _scale)
+!define MA_MAP_MARKER_CHECK(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA MAP MARKER CHECK, mdi-map-marker-check, _color, _scale)
+!define MA_MAP_MARKER_CHECK(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA MAP MARKER CHECK, mdi-map-marker-check, _color, _scale, _shape)
+!define MA_MAP_MARKER_CHECK(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA MAP MARKER CHECK, _label, mdi-map-marker-check, _color, _scale, _shape)
 skinparam folderBackgroundColor<<MA MAP MARKER CHECK>> White

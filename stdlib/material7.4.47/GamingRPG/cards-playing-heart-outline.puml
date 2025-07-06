@@ -1,8 +1,8 @@
 sprite mdi-cards-playing-heart-outline <svg width="48" height="48"><g transform="scale(2)"><path d="M17 2H7C5.9 2 5 2.9 5 4V20C5 21.1 5.9 22 7 22H17C18.1 22 19 21.1 19 20V4C19 2.9 18.1 2 17 2M17 20H7V4H17V20M10.2 9C9 9 8 10 8 11.2C8 12.7 9.4 13.9 11.4 15.8L12 16.3L12.6 15.8C14.6 13.9 16 12.7 16 11.2C16 9.9 15 9 13.8 9C13.1 9 12.4 9.3 12 9.8C11.6 9.3 10.9 9 10.2 9Z" /></g></svg>
 
-!define MA_CARDS_PLAYING_HEART_OUTLINE(_color)                                 SPRITE_PUT(ma_cards_playing_heart_outline, _color)
-!define MA_CARDS_PLAYING_HEART_OUTLINE(_color, _scale)                         SPRITE_PUT(ma_cards_playing_heart_outline, _color, _scale)
-!define MA_CARDS_PLAYING_HEART_OUTLINE(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA CARDS PLAYING HEART OUTLINE, ma_cards_playing_heart_outline, _color, _scale)
-!define MA_CARDS_PLAYING_HEART_OUTLINE(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA CARDS PLAYING HEART OUTLINE, ma_cards_playing_heart_outline, _color, _scale, _shape)
-!define MA_CARDS_PLAYING_HEART_OUTLINE(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA CARDS PLAYING HEART OUTLINE, _label, ma_cards_playing_heart_outline, _color, _scale, _shape)
+!define MA_CARDS_PLAYING_HEART_OUTLINE(_color)                                 SPRITE_PUT(mdi-cards-playing-heart-outline, _color)
+!define MA_CARDS_PLAYING_HEART_OUTLINE(_color, _scale)                         SPRITE_PUT(mdi-cards-playing-heart-outline, _color, _scale)
+!define MA_CARDS_PLAYING_HEART_OUTLINE(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA CARDS PLAYING HEART OUTLINE, mdi-cards-playing-heart-outline, _color, _scale)
+!define MA_CARDS_PLAYING_HEART_OUTLINE(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA CARDS PLAYING HEART OUTLINE, mdi-cards-playing-heart-outline, _color, _scale, _shape)
+!define MA_CARDS_PLAYING_HEART_OUTLINE(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA CARDS PLAYING HEART OUTLINE, _label, mdi-cards-playing-heart-outline, _color, _scale, _shape)
 skinparam folderBackgroundColor<<MA CARDS PLAYING HEART OUTLINE>> White

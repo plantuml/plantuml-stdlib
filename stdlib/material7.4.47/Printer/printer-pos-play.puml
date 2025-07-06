@@ -1,8 +1,8 @@
 sprite mdi-printer-pos-play <svg width="48" height="48"><g transform="scale(2)"><path d="M20 13.09V12C20 10.9 19.11 10 18 10H6C4.89 10 4 10.9 4 12V19H13C13 15.69 15.69 13 19 13C19.34 13 19.67 13.04 20 13.09M10 14H6V12H10V14M17 9H7V4H17V9M22 19L17 22V16L22 19Z" /></g></svg>
 
-!define MA_PRINTER_POS_PLAY(_color)                                 SPRITE_PUT(ma_printer_pos_play, _color)
-!define MA_PRINTER_POS_PLAY(_color, _scale)                         SPRITE_PUT(ma_printer_pos_play, _color, _scale)
-!define MA_PRINTER_POS_PLAY(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA PRINTER POS PLAY, ma_printer_pos_play, _color, _scale)
-!define MA_PRINTER_POS_PLAY(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA PRINTER POS PLAY, ma_printer_pos_play, _color, _scale, _shape)
-!define MA_PRINTER_POS_PLAY(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA PRINTER POS PLAY, _label, ma_printer_pos_play, _color, _scale, _shape)
+!define MA_PRINTER_POS_PLAY(_color)                                 SPRITE_PUT(mdi-printer-pos-play, _color)
+!define MA_PRINTER_POS_PLAY(_color, _scale)                         SPRITE_PUT(mdi-printer-pos-play, _color, _scale)
+!define MA_PRINTER_POS_PLAY(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA PRINTER POS PLAY, mdi-printer-pos-play, _color, _scale)
+!define MA_PRINTER_POS_PLAY(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA PRINTER POS PLAY, mdi-printer-pos-play, _color, _scale, _shape)
+!define MA_PRINTER_POS_PLAY(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA PRINTER POS PLAY, _label, mdi-printer-pos-play, _color, _scale, _shape)
 skinparam folderBackgroundColor<<MA PRINTER POS PLAY>> White

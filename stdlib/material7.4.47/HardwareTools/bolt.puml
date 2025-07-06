@@ -1,8 +1,8 @@
 sprite mdi-bolt <svg width="48" height="48"><g transform="scale(2)"><path d="M14,17.7V21H10V20.3L14,17.7M17,3H7V6H17V3M15,7L14,7.7V7H10V10.3L9,11V12L15,8.1V7M15,11L14,11.7V9.7L10,12.4V14.4L9,15V16L15,12.1V11M15,15L14,15.7V13.7L10,16.4V18.4L9,19V20L15,16.1V15Z" /></g></svg>
 
-!define MA_BOLT(_color)                                 SPRITE_PUT(ma_bolt, _color)
-!define MA_BOLT(_color, _scale)                         SPRITE_PUT(ma_bolt, _color, _scale)
-!define MA_BOLT(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA BOLT, ma_bolt, _color, _scale)
-!define MA_BOLT(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA BOLT, ma_bolt, _color, _scale, _shape)
-!define MA_BOLT(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA BOLT, _label, ma_bolt, _color, _scale, _shape)
+!define MA_BOLT(_color)                                 SPRITE_PUT(mdi-bolt, _color)
+!define MA_BOLT(_color, _scale)                         SPRITE_PUT(mdi-bolt, _color, _scale)
+!define MA_BOLT(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA BOLT, mdi-bolt, _color, _scale)
+!define MA_BOLT(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA BOLT, mdi-bolt, _color, _scale, _shape)
+!define MA_BOLT(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA BOLT, _label, mdi-bolt, _color, _scale, _shape)
 skinparam folderBackgroundColor<<MA BOLT>> White

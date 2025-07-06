@@ -1,8 +1,8 @@
 sprite mdi-watch-import-variant <svg width="48" height="48"><g transform="scale(2)"><path d="M1,11H6L3.5,8.5L4.92,7.08L9.84,12L4.92,16.92L3.5,15.5L6,13H1V11M8,0H16L16.83,5H17A2,2 0 0,1 19,7V17C19,18.11 18.1,19 17,19H16.83L16,24H8L7.17,19H7C6.46,19 6,18.79 5.62,18.44L7.06,17H17V7H7.06L5.62,5.56C6,5.21 6.46,5 7,5H7.17L8,0Z" /></g></svg>
 
-!define MA_WATCH_IMPORT_VARIANT(_color)                                 SPRITE_PUT(ma_watch_import_variant, _color)
-!define MA_WATCH_IMPORT_VARIANT(_color, _scale)                         SPRITE_PUT(ma_watch_import_variant, _color, _scale)
-!define MA_WATCH_IMPORT_VARIANT(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA WATCH IMPORT VARIANT, ma_watch_import_variant, _color, _scale)
-!define MA_WATCH_IMPORT_VARIANT(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA WATCH IMPORT VARIANT, ma_watch_import_variant, _color, _scale, _shape)
-!define MA_WATCH_IMPORT_VARIANT(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA WATCH IMPORT VARIANT, _label, ma_watch_import_variant, _color, _scale, _shape)
+!define MA_WATCH_IMPORT_VARIANT(_color)                                 SPRITE_PUT(mdi-watch-import-variant, _color)
+!define MA_WATCH_IMPORT_VARIANT(_color, _scale)                         SPRITE_PUT(mdi-watch-import-variant, _color, _scale)
+!define MA_WATCH_IMPORT_VARIANT(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA WATCH IMPORT VARIANT, mdi-watch-import-variant, _color, _scale)
+!define MA_WATCH_IMPORT_VARIANT(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA WATCH IMPORT VARIANT, mdi-watch-import-variant, _color, _scale, _shape)
+!define MA_WATCH_IMPORT_VARIANT(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA WATCH IMPORT VARIANT, _label, mdi-watch-import-variant, _color, _scale, _shape)
 skinparam folderBackgroundColor<<MA WATCH IMPORT VARIANT>> White

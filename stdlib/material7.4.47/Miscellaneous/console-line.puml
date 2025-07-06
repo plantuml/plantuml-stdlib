@@ -1,8 +1,8 @@
 sprite mdi-console-line <svg width="48" height="48"><g transform="scale(2)"><path d="M13,19V16H21V19H13M8.5,13L2.47,7H6.71L11.67,11.95C12.25,12.54 12.25,13.5 11.67,14.07L6.74,19H2.5L8.5,13Z" /></g></svg>
 
-!define MA_CONSOLE_LINE(_color)                                 SPRITE_PUT(ma_console_line, _color)
-!define MA_CONSOLE_LINE(_color, _scale)                         SPRITE_PUT(ma_console_line, _color, _scale)
-!define MA_CONSOLE_LINE(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA CONSOLE LINE, ma_console_line, _color, _scale)
-!define MA_CONSOLE_LINE(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA CONSOLE LINE, ma_console_line, _color, _scale, _shape)
-!define MA_CONSOLE_LINE(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA CONSOLE LINE, _label, ma_console_line, _color, _scale, _shape)
+!define MA_CONSOLE_LINE(_color)                                 SPRITE_PUT(mdi-console-line, _color)
+!define MA_CONSOLE_LINE(_color, _scale)                         SPRITE_PUT(mdi-console-line, _color, _scale)
+!define MA_CONSOLE_LINE(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA CONSOLE LINE, mdi-console-line, _color, _scale)
+!define MA_CONSOLE_LINE(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA CONSOLE LINE, mdi-console-line, _color, _scale, _shape)
+!define MA_CONSOLE_LINE(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA CONSOLE LINE, _label, mdi-console-line, _color, _scale, _shape)
 skinparam folderBackgroundColor<<MA CONSOLE LINE>> White

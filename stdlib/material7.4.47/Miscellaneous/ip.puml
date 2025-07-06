@@ -1,8 +1,8 @@
 sprite mdi-ip <svg width="48" height="48"><g transform="scale(2)"><path d="M16,11H14V9H16V11M3,5A2,2 0 0,1 5,3H19A2,2 0 0,1 21,5V19A2,2 0 0,1 19,21H5C3.89,21 3,20.1 3,19V5M10,7H8V17H10V7M12,17H14V13H16A2,2 0 0,0 18,11V9A2,2 0 0,0 16,7H12V17Z" /></g></svg>
 
-!define MA_IP(_color)                                 SPRITE_PUT(ma_ip, _color)
-!define MA_IP(_color, _scale)                         SPRITE_PUT(ma_ip, _color, _scale)
-!define MA_IP(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA IP, ma_ip, _color, _scale)
-!define MA_IP(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA IP, ma_ip, _color, _scale, _shape)
-!define MA_IP(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA IP, _label, ma_ip, _color, _scale, _shape)
+!define MA_IP(_color)                                 SPRITE_PUT(mdi-ip, _color)
+!define MA_IP(_color, _scale)                         SPRITE_PUT(mdi-ip, _color, _scale)
+!define MA_IP(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA IP, mdi-ip, _color, _scale)
+!define MA_IP(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA IP, mdi-ip, _color, _scale, _shape)
+!define MA_IP(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA IP, _label, mdi-ip, _color, _scale, _shape)
 skinparam folderBackgroundColor<<MA IP>> White

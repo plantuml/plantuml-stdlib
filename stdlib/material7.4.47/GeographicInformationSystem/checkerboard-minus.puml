@@ -1,8 +1,8 @@
 sprite mdi-checkerboard-minus <svg width="48" height="48"><g transform="scale(2)"><path d="M14 17V19H22V17M8 16H12V12H8V16M12 12H16V8H12V12M2 2V22H13.5C13 21.4 12.6 20.7 12.3 20H8V16H4V12H8V8H4V4H8V8H12V4H16V8H20V12.4C20.7 12.7 21.4 13.1 22 13.6V2H2Z" /></g></svg>
 
-!define MA_CHECKERBOARD_MINUS(_color)                                 SPRITE_PUT(ma_checkerboard_minus, _color)
-!define MA_CHECKERBOARD_MINUS(_color, _scale)                         SPRITE_PUT(ma_checkerboard_minus, _color, _scale)
-!define MA_CHECKERBOARD_MINUS(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA CHECKERBOARD MINUS, ma_checkerboard_minus, _color, _scale)
-!define MA_CHECKERBOARD_MINUS(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA CHECKERBOARD MINUS, ma_checkerboard_minus, _color, _scale, _shape)
-!define MA_CHECKERBOARD_MINUS(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA CHECKERBOARD MINUS, _label, ma_checkerboard_minus, _color, _scale, _shape)
+!define MA_CHECKERBOARD_MINUS(_color)                                 SPRITE_PUT(mdi-checkerboard-minus, _color)
+!define MA_CHECKERBOARD_MINUS(_color, _scale)                         SPRITE_PUT(mdi-checkerboard-minus, _color, _scale)
+!define MA_CHECKERBOARD_MINUS(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA CHECKERBOARD MINUS, mdi-checkerboard-minus, _color, _scale)
+!define MA_CHECKERBOARD_MINUS(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA CHECKERBOARD MINUS, mdi-checkerboard-minus, _color, _scale, _shape)
+!define MA_CHECKERBOARD_MINUS(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA CHECKERBOARD MINUS, _label, mdi-checkerboard-minus, _color, _scale, _shape)
 skinparam folderBackgroundColor<<MA CHECKERBOARD MINUS>> White

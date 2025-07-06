@@ -1,8 +1,8 @@
 sprite mdi-microsoft-windows <svg width="48" height="48"><g transform="scale(2)"><path d="M3,12V6.75L9,5.43V11.91L3,12M20,3V11.75L10,11.9V5.21L20,3M3,13L9,13.09V19.9L3,18.75V13M20,13.25V22L10,20.09V13.1L20,13.25Z" /></g></svg>
 
-!define MA_MICROSOFT_WINDOWS(_color)                                 SPRITE_PUT(ma_microsoft_windows, _color)
-!define MA_MICROSOFT_WINDOWS(_color, _scale)                         SPRITE_PUT(ma_microsoft_windows, _color, _scale)
-!define MA_MICROSOFT_WINDOWS(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA MICROSOFT WINDOWS, ma_microsoft_windows, _color, _scale)
-!define MA_MICROSOFT_WINDOWS(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA MICROSOFT WINDOWS, ma_microsoft_windows, _color, _scale, _shape)
-!define MA_MICROSOFT_WINDOWS(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA MICROSOFT WINDOWS, _label, ma_microsoft_windows, _color, _scale, _shape)
+!define MA_MICROSOFT_WINDOWS(_color)                                 SPRITE_PUT(mdi-microsoft-windows, _color)
+!define MA_MICROSOFT_WINDOWS(_color, _scale)                         SPRITE_PUT(mdi-microsoft-windows, _color, _scale)
+!define MA_MICROSOFT_WINDOWS(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA MICROSOFT WINDOWS, mdi-microsoft-windows, _color, _scale)
+!define MA_MICROSOFT_WINDOWS(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA MICROSOFT WINDOWS, mdi-microsoft-windows, _color, _scale, _shape)
+!define MA_MICROSOFT_WINDOWS(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA MICROSOFT WINDOWS, _label, mdi-microsoft-windows, _color, _scale, _shape)
 skinparam folderBackgroundColor<<MA MICROSOFT WINDOWS>> White

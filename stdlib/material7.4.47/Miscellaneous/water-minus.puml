@@ -1,8 +1,8 @@
 sprite mdi-water-minus <svg width="48" height="48"><g transform="scale(2)"><path d="M22 17V19H14V17H22M17.62 12C16.31 8.1 12 3.25 12 3.25S6 10 6 14C6 17.31 8.69 20 12 20C12.12 20 12.23 20 12.34 20C12.12 19.36 12 18.7 12 18C12 14.82 14.5 12.22 17.62 12Z" /></g></svg>
 
-!define MA_WATER_MINUS(_color)                                 SPRITE_PUT(ma_water_minus, _color)
-!define MA_WATER_MINUS(_color, _scale)                         SPRITE_PUT(ma_water_minus, _color, _scale)
-!define MA_WATER_MINUS(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA WATER MINUS, ma_water_minus, _color, _scale)
-!define MA_WATER_MINUS(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA WATER MINUS, ma_water_minus, _color, _scale, _shape)
-!define MA_WATER_MINUS(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA WATER MINUS, _label, ma_water_minus, _color, _scale, _shape)
+!define MA_WATER_MINUS(_color)                                 SPRITE_PUT(mdi-water-minus, _color)
+!define MA_WATER_MINUS(_color, _scale)                         SPRITE_PUT(mdi-water-minus, _color, _scale)
+!define MA_WATER_MINUS(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA WATER MINUS, mdi-water-minus, _color, _scale)
+!define MA_WATER_MINUS(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA WATER MINUS, mdi-water-minus, _color, _scale, _shape)
+!define MA_WATER_MINUS(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA WATER MINUS, _label, mdi-water-minus, _color, _scale, _shape)
 skinparam folderBackgroundColor<<MA WATER MINUS>> White

@@ -1,8 +1,8 @@
 sprite mdi-file-download-outline <svg width="48" height="48"><g transform="scale(2)"><path d="M14,2L20,8V20A2,2 0 0,1 18,22H6A2,2 0 0,1 4,20V4A2,2 0 0,1 6,2H14M18,20V9H13V4H6V20H18M12,19L8,15H10.5V12H13.5V15H16L12,19Z" /></g></svg>
 
-!define MA_FILE_DOWNLOAD_OUTLINE(_color)                                 SPRITE_PUT(ma_file_download_outline, _color)
-!define MA_FILE_DOWNLOAD_OUTLINE(_color, _scale)                         SPRITE_PUT(ma_file_download_outline, _color, _scale)
-!define MA_FILE_DOWNLOAD_OUTLINE(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA FILE DOWNLOAD OUTLINE, ma_file_download_outline, _color, _scale)
-!define MA_FILE_DOWNLOAD_OUTLINE(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA FILE DOWNLOAD OUTLINE, ma_file_download_outline, _color, _scale, _shape)
-!define MA_FILE_DOWNLOAD_OUTLINE(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA FILE DOWNLOAD OUTLINE, _label, ma_file_download_outline, _color, _scale, _shape)
+!define MA_FILE_DOWNLOAD_OUTLINE(_color)                                 SPRITE_PUT(mdi-file-download-outline, _color)
+!define MA_FILE_DOWNLOAD_OUTLINE(_color, _scale)                         SPRITE_PUT(mdi-file-download-outline, _color, _scale)
+!define MA_FILE_DOWNLOAD_OUTLINE(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA FILE DOWNLOAD OUTLINE, mdi-file-download-outline, _color, _scale)
+!define MA_FILE_DOWNLOAD_OUTLINE(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA FILE DOWNLOAD OUTLINE, mdi-file-download-outline, _color, _scale, _shape)
+!define MA_FILE_DOWNLOAD_OUTLINE(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA FILE DOWNLOAD OUTLINE, _label, mdi-file-download-outline, _color, _scale, _shape)
 skinparam folderBackgroundColor<<MA FILE DOWNLOAD OUTLINE>> White

@@ -1,8 +1,8 @@
 sprite mdi-microsoft <svg width="48" height="48"><g transform="scale(2)"><path d="M2,3H11V12H2V3M11,22H2V13H11V22M21,3V12H12V3H21M21,22H12V13H21V22Z" /></g></svg>
 
-!define MA_MICROSOFT(_color)                                 SPRITE_PUT(ma_microsoft, _color)
-!define MA_MICROSOFT(_color, _scale)                         SPRITE_PUT(ma_microsoft, _color, _scale)
-!define MA_MICROSOFT(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA MICROSOFT, ma_microsoft, _color, _scale)
-!define MA_MICROSOFT(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA MICROSOFT, ma_microsoft, _color, _scale, _shape)
-!define MA_MICROSOFT(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA MICROSOFT, _label, ma_microsoft, _color, _scale, _shape)
+!define MA_MICROSOFT(_color)                                 SPRITE_PUT(mdi-microsoft, _color)
+!define MA_MICROSOFT(_color, _scale)                         SPRITE_PUT(mdi-microsoft, _color, _scale)
+!define MA_MICROSOFT(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA MICROSOFT, mdi-microsoft, _color, _scale)
+!define MA_MICROSOFT(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA MICROSOFT, mdi-microsoft, _color, _scale, _shape)
+!define MA_MICROSOFT(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA MICROSOFT, _label, mdi-microsoft, _color, _scale, _shape)
 skinparam folderBackgroundColor<<MA MICROSOFT>> White

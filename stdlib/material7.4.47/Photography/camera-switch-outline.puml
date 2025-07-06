@@ -1,8 +1,8 @@
 sprite mdi-camera-switch-outline <svg width="48" height="48"><g transform="scale(2)"><path d="M20 4H16.8L15 2H9L7.2 4H4C2.9 4 2 4.9 2 6V18C2 19.1 2.9 20 4 20H20C21.1 20 22 19.1 22 18V6C22 4.9 21.1 4 20 4M9.9 4H14.1L15.9 6H20V18H4V6H8.1M15 11H9V8.5L5.5 12L9 15.5V13H15V15.5L18.5 12L15 8.5V11Z" /></g></svg>
 
-!define MA_CAMERA_SWITCH_OUTLINE(_color)                                 SPRITE_PUT(ma_camera_switch_outline, _color)
-!define MA_CAMERA_SWITCH_OUTLINE(_color, _scale)                         SPRITE_PUT(ma_camera_switch_outline, _color, _scale)
-!define MA_CAMERA_SWITCH_OUTLINE(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA CAMERA SWITCH OUTLINE, ma_camera_switch_outline, _color, _scale)
-!define MA_CAMERA_SWITCH_OUTLINE(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA CAMERA SWITCH OUTLINE, ma_camera_switch_outline, _color, _scale, _shape)
-!define MA_CAMERA_SWITCH_OUTLINE(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA CAMERA SWITCH OUTLINE, _label, ma_camera_switch_outline, _color, _scale, _shape)
+!define MA_CAMERA_SWITCH_OUTLINE(_color)                                 SPRITE_PUT(mdi-camera-switch-outline, _color)
+!define MA_CAMERA_SWITCH_OUTLINE(_color, _scale)                         SPRITE_PUT(mdi-camera-switch-outline, _color, _scale)
+!define MA_CAMERA_SWITCH_OUTLINE(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA CAMERA SWITCH OUTLINE, mdi-camera-switch-outline, _color, _scale)
+!define MA_CAMERA_SWITCH_OUTLINE(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA CAMERA SWITCH OUTLINE, mdi-camera-switch-outline, _color, _scale, _shape)
+!define MA_CAMERA_SWITCH_OUTLINE(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA CAMERA SWITCH OUTLINE, _label, mdi-camera-switch-outline, _color, _scale, _shape)
 skinparam folderBackgroundColor<<MA CAMERA SWITCH OUTLINE>> White

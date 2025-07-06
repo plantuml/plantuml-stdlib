@@ -1,8 +1,8 @@
 sprite mdi-led-variant-on <svg width="48" height="48"><g transform="scale(2)"><path d="M12,3A4,4 0 0,0 8,7V13H6V15H9V21H11V15H13V21H15V15H18V13H16V7A4,4 0 0,0 12,3Z" /></g></svg>
 
-!define MA_LED_VARIANT_ON(_color)                                 SPRITE_PUT(ma_led_variant_on, _color)
-!define MA_LED_VARIANT_ON(_color, _scale)                         SPRITE_PUT(ma_led_variant_on, _color, _scale)
-!define MA_LED_VARIANT_ON(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA LED VARIANT ON, ma_led_variant_on, _color, _scale)
-!define MA_LED_VARIANT_ON(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA LED VARIANT ON, ma_led_variant_on, _color, _scale, _shape)
-!define MA_LED_VARIANT_ON(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA LED VARIANT ON, _label, ma_led_variant_on, _color, _scale, _shape)
+!define MA_LED_VARIANT_ON(_color)                                 SPRITE_PUT(mdi-led-variant-on, _color)
+!define MA_LED_VARIANT_ON(_color, _scale)                         SPRITE_PUT(mdi-led-variant-on, _color, _scale)
+!define MA_LED_VARIANT_ON(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA LED VARIANT ON, mdi-led-variant-on, _color, _scale)
+!define MA_LED_VARIANT_ON(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA LED VARIANT ON, mdi-led-variant-on, _color, _scale, _shape)
+!define MA_LED_VARIANT_ON(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA LED VARIANT ON, _label, mdi-led-variant-on, _color, _scale, _shape)
 skinparam folderBackgroundColor<<MA LED VARIANT ON>> White

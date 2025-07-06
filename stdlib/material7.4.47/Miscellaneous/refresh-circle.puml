@@ -1,8 +1,8 @@
 sprite mdi-refresh-circle <svg width="48" height="48"><g transform="scale(2)"><path d="M12 2A10 10 0 1 0 22 12A10 10 0 0 0 12 2M18 11H13L14.81 9.19A3.94 3.94 0 0 0 12 8A4 4 0 1 0 15.86 13H17.91A6 6 0 1 1 12 6A5.91 5.91 0 0 1 16.22 7.78L18 6Z" /></g></svg>
 
-!define MA_REFRESH_CIRCLE(_color)                                 SPRITE_PUT(ma_refresh_circle, _color)
-!define MA_REFRESH_CIRCLE(_color, _scale)                         SPRITE_PUT(ma_refresh_circle, _color, _scale)
-!define MA_REFRESH_CIRCLE(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA REFRESH CIRCLE, ma_refresh_circle, _color, _scale)
-!define MA_REFRESH_CIRCLE(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA REFRESH CIRCLE, ma_refresh_circle, _color, _scale, _shape)
-!define MA_REFRESH_CIRCLE(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA REFRESH CIRCLE, _label, ma_refresh_circle, _color, _scale, _shape)
+!define MA_REFRESH_CIRCLE(_color)                                 SPRITE_PUT(mdi-refresh-circle, _color)
+!define MA_REFRESH_CIRCLE(_color, _scale)                         SPRITE_PUT(mdi-refresh-circle, _color, _scale)
+!define MA_REFRESH_CIRCLE(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA REFRESH CIRCLE, mdi-refresh-circle, _color, _scale)
+!define MA_REFRESH_CIRCLE(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA REFRESH CIRCLE, mdi-refresh-circle, _color, _scale, _shape)
+!define MA_REFRESH_CIRCLE(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA REFRESH CIRCLE, _label, mdi-refresh-circle, _color, _scale, _shape)
 skinparam folderBackgroundColor<<MA REFRESH CIRCLE>> White

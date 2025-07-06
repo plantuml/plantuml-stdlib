@@ -1,8 +1,8 @@
 sprite mdi-nail <svg width="48" height="48"><g transform="scale(2)"><path d="M13.5,5V16L12,22L10.5,16V5H13.5M17,2H7V4H17V2Z" /></g></svg>
 
-!define MA_NAIL(_color)                                 SPRITE_PUT(ma_nail, _color)
-!define MA_NAIL(_color, _scale)                         SPRITE_PUT(ma_nail, _color, _scale)
-!define MA_NAIL(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA NAIL, ma_nail, _color, _scale)
-!define MA_NAIL(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA NAIL, ma_nail, _color, _scale, _shape)
-!define MA_NAIL(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA NAIL, _label, ma_nail, _color, _scale, _shape)
+!define MA_NAIL(_color)                                 SPRITE_PUT(mdi-nail, _color)
+!define MA_NAIL(_color, _scale)                         SPRITE_PUT(mdi-nail, _color, _scale)
+!define MA_NAIL(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA NAIL, mdi-nail, _color, _scale)
+!define MA_NAIL(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA NAIL, mdi-nail, _color, _scale, _shape)
+!define MA_NAIL(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA NAIL, _label, mdi-nail, _color, _scale, _shape)
 skinparam folderBackgroundColor<<MA NAIL>> White

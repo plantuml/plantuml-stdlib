@@ -1,8 +1,8 @@
 sprite mdi-book-multiple-outline <svg width="48" height="48"><g transform="scale(2)"><path d="M19 2A2 2 0 0 1 21 4V16A2 2 0 0 1 19 18H9A2 2 0 0 1 7 16V4A2 2 0 0 1 9 2H19M19 4H16V10L13.5 7.75L11 10V4H9V16H19M3 20A2 2 0 0 0 5 22H17V20H5V6H3Z" /></g></svg>
 
-!define MA_BOOK_MULTIPLE_OUTLINE(_color)                                 SPRITE_PUT(ma_book_multiple_outline, _color)
-!define MA_BOOK_MULTIPLE_OUTLINE(_color, _scale)                         SPRITE_PUT(ma_book_multiple_outline, _color, _scale)
-!define MA_BOOK_MULTIPLE_OUTLINE(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA BOOK MULTIPLE OUTLINE, ma_book_multiple_outline, _color, _scale)
-!define MA_BOOK_MULTIPLE_OUTLINE(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA BOOK MULTIPLE OUTLINE, ma_book_multiple_outline, _color, _scale, _shape)
-!define MA_BOOK_MULTIPLE_OUTLINE(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA BOOK MULTIPLE OUTLINE, _label, ma_book_multiple_outline, _color, _scale, _shape)
+!define MA_BOOK_MULTIPLE_OUTLINE(_color)                                 SPRITE_PUT(mdi-book-multiple-outline, _color)
+!define MA_BOOK_MULTIPLE_OUTLINE(_color, _scale)                         SPRITE_PUT(mdi-book-multiple-outline, _color, _scale)
+!define MA_BOOK_MULTIPLE_OUTLINE(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA BOOK MULTIPLE OUTLINE, mdi-book-multiple-outline, _color, _scale)
+!define MA_BOOK_MULTIPLE_OUTLINE(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA BOOK MULTIPLE OUTLINE, mdi-book-multiple-outline, _color, _scale, _shape)
+!define MA_BOOK_MULTIPLE_OUTLINE(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA BOOK MULTIPLE OUTLINE, _label, mdi-book-multiple-outline, _color, _scale, _shape)
 skinparam folderBackgroundColor<<MA BOOK MULTIPLE OUTLINE>> White

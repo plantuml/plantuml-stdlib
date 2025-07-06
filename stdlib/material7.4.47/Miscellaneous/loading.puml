@@ -1,8 +1,8 @@
 sprite mdi-loading <svg width="48" height="48"><g transform="scale(2)"><path d="M12,4V2A10,10 0 0,0 2,12H4A8,8 0 0,1 12,4Z" /></g></svg>
 
-!define MA_LOADING(_color)                                 SPRITE_PUT(ma_loading, _color)
-!define MA_LOADING(_color, _scale)                         SPRITE_PUT(ma_loading, _color, _scale)
-!define MA_LOADING(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA LOADING, ma_loading, _color, _scale)
-!define MA_LOADING(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA LOADING, ma_loading, _color, _scale, _shape)
-!define MA_LOADING(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA LOADING, _label, ma_loading, _color, _scale, _shape)
+!define MA_LOADING(_color)                                 SPRITE_PUT(mdi-loading, _color)
+!define MA_LOADING(_color, _scale)                         SPRITE_PUT(mdi-loading, _color, _scale)
+!define MA_LOADING(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA LOADING, mdi-loading, _color, _scale)
+!define MA_LOADING(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA LOADING, mdi-loading, _color, _scale, _shape)
+!define MA_LOADING(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA LOADING, _label, mdi-loading, _color, _scale, _shape)
 skinparam folderBackgroundColor<<MA LOADING>> White

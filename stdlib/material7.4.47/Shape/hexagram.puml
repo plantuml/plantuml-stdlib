@@ -1,8 +1,8 @@
 sprite mdi-hexagram <svg width="48" height="48"><g transform="scale(2)"><path d="M14.5,7.66L20.64,6.97L17,12L20.68,16.97L14.5,16.32L12.03,22L9.5,16.34L3.36,17.03L7,12L3.32,7.03L9.5,7.68L11.97,2L14.5,7.66Z" /></g></svg>
 
-!define MA_HEXAGRAM(_color)                                 SPRITE_PUT(ma_hexagram, _color)
-!define MA_HEXAGRAM(_color, _scale)                         SPRITE_PUT(ma_hexagram, _color, _scale)
-!define MA_HEXAGRAM(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA HEXAGRAM, ma_hexagram, _color, _scale)
-!define MA_HEXAGRAM(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA HEXAGRAM, ma_hexagram, _color, _scale, _shape)
-!define MA_HEXAGRAM(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA HEXAGRAM, _label, ma_hexagram, _color, _scale, _shape)
+!define MA_HEXAGRAM(_color)                                 SPRITE_PUT(mdi-hexagram, _color)
+!define MA_HEXAGRAM(_color, _scale)                         SPRITE_PUT(mdi-hexagram, _color, _scale)
+!define MA_HEXAGRAM(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA HEXAGRAM, mdi-hexagram, _color, _scale)
+!define MA_HEXAGRAM(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA HEXAGRAM, mdi-hexagram, _color, _scale, _shape)
+!define MA_HEXAGRAM(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA HEXAGRAM, _label, mdi-hexagram, _color, _scale, _shape)
 skinparam folderBackgroundColor<<MA HEXAGRAM>> White

@@ -1,8 +1,8 @@
 sprite mdi-chili-mild <svg width="48" height="48"><g transform="scale(2)"><path d="M16 10V22C16 22 8 20 8 11V10C8 9.27 8.4 8.63 9 8.28L10.25 9L12 8L13.75 9L15 8.28C15.6 8.63 16 9.27 16 10M12 6.5L13.75 7.5L15.27 6.63C14.72 5.66 13.91 4.94 12.97 4.65C12.79 3.16 11.54 2 10 2V4C10.44 4 10.8 4.29 10.94 4.69C10.03 5 9.26 5.7 8.73 6.63L10.25 7.5L12 6.5Z" /></g></svg>
 
-!define MA_CHILI_MILD(_color)                                 SPRITE_PUT(ma_chili_mild, _color)
-!define MA_CHILI_MILD(_color, _scale)                         SPRITE_PUT(ma_chili_mild, _color, _scale)
-!define MA_CHILI_MILD(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA CHILI MILD, ma_chili_mild, _color, _scale)
-!define MA_CHILI_MILD(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA CHILI MILD, ma_chili_mild, _color, _scale, _shape)
-!define MA_CHILI_MILD(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA CHILI MILD, _label, ma_chili_mild, _color, _scale, _shape)
+!define MA_CHILI_MILD(_color)                                 SPRITE_PUT(mdi-chili-mild, _color)
+!define MA_CHILI_MILD(_color, _scale)                         SPRITE_PUT(mdi-chili-mild, _color, _scale)
+!define MA_CHILI_MILD(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA CHILI MILD, mdi-chili-mild, _color, _scale)
+!define MA_CHILI_MILD(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA CHILI MILD, mdi-chili-mild, _color, _scale, _shape)
+!define MA_CHILI_MILD(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA CHILI MILD, _label, mdi-chili-mild, _color, _scale, _shape)
 skinparam folderBackgroundColor<<MA CHILI MILD>> White

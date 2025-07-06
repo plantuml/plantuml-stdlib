@@ -1,8 +1,8 @@
 sprite mdi-home-roof <svg width="48" height="48"><g transform="scale(2)"><path d="M19 16H22L12 7L2 16H5L12 9.69L19 16M7 8.81V7H4V11.5L7 8.81Z" /></g></svg>
 
-!define MA_HOME_ROOF(_color)                                 SPRITE_PUT(ma_home_roof, _color)
-!define MA_HOME_ROOF(_color, _scale)                         SPRITE_PUT(ma_home_roof, _color, _scale)
-!define MA_HOME_ROOF(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA HOME ROOF, ma_home_roof, _color, _scale)
-!define MA_HOME_ROOF(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA HOME ROOF, ma_home_roof, _color, _scale, _shape)
-!define MA_HOME_ROOF(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA HOME ROOF, _label, ma_home_roof, _color, _scale, _shape)
+!define MA_HOME_ROOF(_color)                                 SPRITE_PUT(mdi-home-roof, _color)
+!define MA_HOME_ROOF(_color, _scale)                         SPRITE_PUT(mdi-home-roof, _color, _scale)
+!define MA_HOME_ROOF(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA HOME ROOF, mdi-home-roof, _color, _scale)
+!define MA_HOME_ROOF(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA HOME ROOF, mdi-home-roof, _color, _scale, _shape)
+!define MA_HOME_ROOF(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA HOME ROOF, _label, mdi-home-roof, _color, _scale, _shape)
 skinparam folderBackgroundColor<<MA HOME ROOF>> White

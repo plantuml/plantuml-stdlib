@@ -1,8 +1,8 @@
 sprite mdi-format-indent-decrease <svg width="48" height="48"><g transform="scale(2)"><path d="M11,13H21V11H11M11,9H21V7H11M3,3V5H21V3M3,21H21V19H3M3,12L7,16V8M11,17H21V15H11V17Z" /></g></svg>
 
-!define MA_FORMAT_INDENT_DECREASE(_color)                                 SPRITE_PUT(ma_format_indent_decrease, _color)
-!define MA_FORMAT_INDENT_DECREASE(_color, _scale)                         SPRITE_PUT(ma_format_indent_decrease, _color, _scale)
-!define MA_FORMAT_INDENT_DECREASE(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA FORMAT INDENT DECREASE, ma_format_indent_decrease, _color, _scale)
-!define MA_FORMAT_INDENT_DECREASE(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA FORMAT INDENT DECREASE, ma_format_indent_decrease, _color, _scale, _shape)
-!define MA_FORMAT_INDENT_DECREASE(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA FORMAT INDENT DECREASE, _label, ma_format_indent_decrease, _color, _scale, _shape)
+!define MA_FORMAT_INDENT_DECREASE(_color)                                 SPRITE_PUT(mdi-format-indent-decrease, _color)
+!define MA_FORMAT_INDENT_DECREASE(_color, _scale)                         SPRITE_PUT(mdi-format-indent-decrease, _color, _scale)
+!define MA_FORMAT_INDENT_DECREASE(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA FORMAT INDENT DECREASE, mdi-format-indent-decrease, _color, _scale)
+!define MA_FORMAT_INDENT_DECREASE(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA FORMAT INDENT DECREASE, mdi-format-indent-decrease, _color, _scale, _shape)
+!define MA_FORMAT_INDENT_DECREASE(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA FORMAT INDENT DECREASE, _label, mdi-format-indent-decrease, _color, _scale, _shape)
 skinparam folderBackgroundColor<<MA FORMAT INDENT DECREASE>> White

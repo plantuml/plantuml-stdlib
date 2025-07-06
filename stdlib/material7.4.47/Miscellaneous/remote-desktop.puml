@@ -1,8 +1,8 @@
 sprite mdi-remote-desktop <svg width="48" height="48"><g transform="scale(2)"><path d="M3,2A2,2 0 0,0 1,4V16C1,17.11 1.9,18 3,18H10V20H8V22H16V20H14V18H21A2,2 0 0,0 23,16V4A2,2 0 0,0 21,2M3,4H21V16H3M15,5L11.5,8.5L15,12L16.4,10.6L14.3,8.5L16.4,6.4M9,8L7.6,9.4L9.7,11.5L7.6,13.6L9,15L12.5,11.5" /></g></svg>
 
-!define MA_REMOTE_DESKTOP(_color)                                 SPRITE_PUT(ma_remote_desktop, _color)
-!define MA_REMOTE_DESKTOP(_color, _scale)                         SPRITE_PUT(ma_remote_desktop, _color, _scale)
-!define MA_REMOTE_DESKTOP(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA REMOTE DESKTOP, ma_remote_desktop, _color, _scale)
-!define MA_REMOTE_DESKTOP(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA REMOTE DESKTOP, ma_remote_desktop, _color, _scale, _shape)
-!define MA_REMOTE_DESKTOP(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA REMOTE DESKTOP, _label, ma_remote_desktop, _color, _scale, _shape)
+!define MA_REMOTE_DESKTOP(_color)                                 SPRITE_PUT(mdi-remote-desktop, _color)
+!define MA_REMOTE_DESKTOP(_color, _scale)                         SPRITE_PUT(mdi-remote-desktop, _color, _scale)
+!define MA_REMOTE_DESKTOP(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA REMOTE DESKTOP, mdi-remote-desktop, _color, _scale)
+!define MA_REMOTE_DESKTOP(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA REMOTE DESKTOP, mdi-remote-desktop, _color, _scale, _shape)
+!define MA_REMOTE_DESKTOP(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA REMOTE DESKTOP, _label, mdi-remote-desktop, _color, _scale, _shape)
 skinparam folderBackgroundColor<<MA REMOTE DESKTOP>> White

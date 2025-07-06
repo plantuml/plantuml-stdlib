@@ -1,8 +1,8 @@
 sprite mdi-camera-burst <svg width="48" height="48"><g transform="scale(2)"><path d="M1,5H3V19H1V5M5,5H7V19H5V5M22,5H10A1,1 0 0,0 9,6V18A1,1 0 0,0 10,19H22A1,1 0 0,0 23,18V6A1,1 0 0,0 22,5M11,17L13.5,13.85L15.29,16L17.79,12.78L21,17H11Z" /></g></svg>
 
-!define MA_CAMERA_BURST(_color)                                 SPRITE_PUT(ma_camera_burst, _color)
-!define MA_CAMERA_BURST(_color, _scale)                         SPRITE_PUT(ma_camera_burst, _color, _scale)
-!define MA_CAMERA_BURST(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA CAMERA BURST, ma_camera_burst, _color, _scale)
-!define MA_CAMERA_BURST(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA CAMERA BURST, ma_camera_burst, _color, _scale, _shape)
-!define MA_CAMERA_BURST(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA CAMERA BURST, _label, ma_camera_burst, _color, _scale, _shape)
+!define MA_CAMERA_BURST(_color)                                 SPRITE_PUT(mdi-camera-burst, _color)
+!define MA_CAMERA_BURST(_color, _scale)                         SPRITE_PUT(mdi-camera-burst, _color, _scale)
+!define MA_CAMERA_BURST(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA CAMERA BURST, mdi-camera-burst, _color, _scale)
+!define MA_CAMERA_BURST(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA CAMERA BURST, mdi-camera-burst, _color, _scale, _shape)
+!define MA_CAMERA_BURST(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA CAMERA BURST, _label, mdi-camera-burst, _color, _scale, _shape)
 skinparam folderBackgroundColor<<MA CAMERA BURST>> White

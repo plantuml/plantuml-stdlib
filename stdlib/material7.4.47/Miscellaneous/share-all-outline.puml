@@ -1,8 +1,8 @@
 sprite mdi-share-all-outline <svg width="48" height="48"><g transform="scale(2)"><path d="M13 9.8V10.7L11.3 10.9C8.7 11.3 6.8 12.3 5.4 13.6C7.1 13.1 8.9 12.8 11 12.8H13V14.1L15.2 12L13 9.8M11 5L18 12L11 19V14.9C6 14.9 2.5 16.5 0 20C1 15 4 10 11 9M17 8V5L24 12L17 19V16L21 12" /></g></svg>
 
-!define MA_SHARE_ALL_OUTLINE(_color)                                 SPRITE_PUT(ma_share_all_outline, _color)
-!define MA_SHARE_ALL_OUTLINE(_color, _scale)                         SPRITE_PUT(ma_share_all_outline, _color, _scale)
-!define MA_SHARE_ALL_OUTLINE(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA SHARE ALL OUTLINE, ma_share_all_outline, _color, _scale)
-!define MA_SHARE_ALL_OUTLINE(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA SHARE ALL OUTLINE, ma_share_all_outline, _color, _scale, _shape)
-!define MA_SHARE_ALL_OUTLINE(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA SHARE ALL OUTLINE, _label, ma_share_all_outline, _color, _scale, _shape)
+!define MA_SHARE_ALL_OUTLINE(_color)                                 SPRITE_PUT(mdi-share-all-outline, _color)
+!define MA_SHARE_ALL_OUTLINE(_color, _scale)                         SPRITE_PUT(mdi-share-all-outline, _color, _scale)
+!define MA_SHARE_ALL_OUTLINE(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA SHARE ALL OUTLINE, mdi-share-all-outline, _color, _scale)
+!define MA_SHARE_ALL_OUTLINE(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA SHARE ALL OUTLINE, mdi-share-all-outline, _color, _scale, _shape)
+!define MA_SHARE_ALL_OUTLINE(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA SHARE ALL OUTLINE, _label, mdi-share-all-outline, _color, _scale, _shape)
 skinparam folderBackgroundColor<<MA SHARE ALL OUTLINE>> White

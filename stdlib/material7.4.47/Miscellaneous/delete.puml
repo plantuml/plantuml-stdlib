@@ -1,8 +1,8 @@
 sprite mdi-delete <svg width="48" height="48"><g transform="scale(2)"><path d="M19,4H15.5L14.5,3H9.5L8.5,4H5V6H19M6,19A2,2 0 0,0 8,21H16A2,2 0 0,0 18,19V7H6V19Z" /></g></svg>
 
-!define MA_DELETE(_color)                                 SPRITE_PUT(ma_delete, _color)
-!define MA_DELETE(_color, _scale)                         SPRITE_PUT(ma_delete, _color, _scale)
-!define MA_DELETE(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA DELETE, ma_delete, _color, _scale)
-!define MA_DELETE(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA DELETE, ma_delete, _color, _scale, _shape)
-!define MA_DELETE(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA DELETE, _label, ma_delete, _color, _scale, _shape)
+!define MA_DELETE(_color)                                 SPRITE_PUT(mdi-delete, _color)
+!define MA_DELETE(_color, _scale)                         SPRITE_PUT(mdi-delete, _color, _scale)
+!define MA_DELETE(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA DELETE, mdi-delete, _color, _scale)
+!define MA_DELETE(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA DELETE, mdi-delete, _color, _scale, _shape)
+!define MA_DELETE(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA DELETE, _label, mdi-delete, _color, _scale, _shape)
 skinparam folderBackgroundColor<<MA DELETE>> White

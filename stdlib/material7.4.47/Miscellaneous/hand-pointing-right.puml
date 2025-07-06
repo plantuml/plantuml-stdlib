@@ -1,8 +1,8 @@
 sprite mdi-hand-pointing-right <svg width="48" height="48"><g transform="scale(2)"><path d="M21,9A1,1 0 0,1 22,10A1,1 0 0,1 21,11H16.53L16.4,12.21L14.2,17.15C14,17.65 13.47,18 12.86,18H8.5C7.7,18 7,17.27 7,16.5V10C7,9.61 7.16,9.26 7.43,9L11.63,4.1L12.4,4.84C12.6,5.03 12.72,5.29 12.72,5.58L12.69,5.8L11,9H21M2,18V10H5V18H2Z" /></g></svg>
 
-!define MA_HAND_POINTING_RIGHT(_color)                                 SPRITE_PUT(ma_hand_pointing_right, _color)
-!define MA_HAND_POINTING_RIGHT(_color, _scale)                         SPRITE_PUT(ma_hand_pointing_right, _color, _scale)
-!define MA_HAND_POINTING_RIGHT(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA HAND POINTING RIGHT, ma_hand_pointing_right, _color, _scale)
-!define MA_HAND_POINTING_RIGHT(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA HAND POINTING RIGHT, ma_hand_pointing_right, _color, _scale, _shape)
-!define MA_HAND_POINTING_RIGHT(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA HAND POINTING RIGHT, _label, ma_hand_pointing_right, _color, _scale, _shape)
+!define MA_HAND_POINTING_RIGHT(_color)                                 SPRITE_PUT(mdi-hand-pointing-right, _color)
+!define MA_HAND_POINTING_RIGHT(_color, _scale)                         SPRITE_PUT(mdi-hand-pointing-right, _color, _scale)
+!define MA_HAND_POINTING_RIGHT(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA HAND POINTING RIGHT, mdi-hand-pointing-right, _color, _scale)
+!define MA_HAND_POINTING_RIGHT(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA HAND POINTING RIGHT, mdi-hand-pointing-right, _color, _scale, _shape)
+!define MA_HAND_POINTING_RIGHT(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA HAND POINTING RIGHT, _label, mdi-hand-pointing-right, _color, _scale, _shape)
 skinparam folderBackgroundColor<<MA HAND POINTING RIGHT>> White

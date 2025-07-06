@@ -1,8 +1,8 @@
 sprite mdi-plus-circle-multiple <svg width="48" height="48"><g transform="scale(2)"><path d="M2 12C2 9.2 3.6 6.8 6 5.7V3.5C2.5 4.8 0 8.1 0 12S2.5 19.2 6 20.5V18.3C3.6 17.2 2 14.8 2 12M15 3C10 3 6 7 6 12S10 21 15 21 24 17 24 12 20 3 15 3M20 13H16V17H14V13H10V11H14V7H16V11H20V13Z" /></g></svg>
 
-!define MA_PLUS_CIRCLE_MULTIPLE(_color)                                 SPRITE_PUT(ma_plus_circle_multiple, _color)
-!define MA_PLUS_CIRCLE_MULTIPLE(_color, _scale)                         SPRITE_PUT(ma_plus_circle_multiple, _color, _scale)
-!define MA_PLUS_CIRCLE_MULTIPLE(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA PLUS CIRCLE MULTIPLE, ma_plus_circle_multiple, _color, _scale)
-!define MA_PLUS_CIRCLE_MULTIPLE(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA PLUS CIRCLE MULTIPLE, ma_plus_circle_multiple, _color, _scale, _shape)
-!define MA_PLUS_CIRCLE_MULTIPLE(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA PLUS CIRCLE MULTIPLE, _label, ma_plus_circle_multiple, _color, _scale, _shape)
+!define MA_PLUS_CIRCLE_MULTIPLE(_color)                                 SPRITE_PUT(mdi-plus-circle-multiple, _color)
+!define MA_PLUS_CIRCLE_MULTIPLE(_color, _scale)                         SPRITE_PUT(mdi-plus-circle-multiple, _color, _scale)
+!define MA_PLUS_CIRCLE_MULTIPLE(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA PLUS CIRCLE MULTIPLE, mdi-plus-circle-multiple, _color, _scale)
+!define MA_PLUS_CIRCLE_MULTIPLE(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA PLUS CIRCLE MULTIPLE, mdi-plus-circle-multiple, _color, _scale, _shape)
+!define MA_PLUS_CIRCLE_MULTIPLE(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA PLUS CIRCLE MULTIPLE, _label, mdi-plus-circle-multiple, _color, _scale, _shape)
 skinparam folderBackgroundColor<<MA PLUS CIRCLE MULTIPLE>> White

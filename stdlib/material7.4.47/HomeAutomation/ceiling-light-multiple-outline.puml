@@ -1,8 +1,8 @@
 sprite mdi-ceiling-light-multiple-outline <svg width="48" height="48"><g transform="scale(2)"><path d="M16.76 13L18.76 17H9.24L11.24 13H16.76M15 6H13V11H10L6 19H22L18 11H15V6M16 20C16 21.11 15.11 22 14 22S12 21.11 12 20H16M8.21 10.11L8.76 9H11V2H9V7H6L2 15H5.76L8.21 10.11Z" /></g></svg>
 
-!define MA_CEILING_LIGHT_MULTIPLE_OUTLINE(_color)                                 SPRITE_PUT(ma_ceiling_light_multiple_outline, _color)
-!define MA_CEILING_LIGHT_MULTIPLE_OUTLINE(_color, _scale)                         SPRITE_PUT(ma_ceiling_light_multiple_outline, _color, _scale)
-!define MA_CEILING_LIGHT_MULTIPLE_OUTLINE(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA CEILING LIGHT MULTIPLE OUTLINE, ma_ceiling_light_multiple_outline, _color, _scale)
-!define MA_CEILING_LIGHT_MULTIPLE_OUTLINE(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA CEILING LIGHT MULTIPLE OUTLINE, ma_ceiling_light_multiple_outline, _color, _scale, _shape)
-!define MA_CEILING_LIGHT_MULTIPLE_OUTLINE(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA CEILING LIGHT MULTIPLE OUTLINE, _label, ma_ceiling_light_multiple_outline, _color, _scale, _shape)
+!define MA_CEILING_LIGHT_MULTIPLE_OUTLINE(_color)                                 SPRITE_PUT(mdi-ceiling-light-multiple-outline, _color)
+!define MA_CEILING_LIGHT_MULTIPLE_OUTLINE(_color, _scale)                         SPRITE_PUT(mdi-ceiling-light-multiple-outline, _color, _scale)
+!define MA_CEILING_LIGHT_MULTIPLE_OUTLINE(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA CEILING LIGHT MULTIPLE OUTLINE, mdi-ceiling-light-multiple-outline, _color, _scale)
+!define MA_CEILING_LIGHT_MULTIPLE_OUTLINE(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA CEILING LIGHT MULTIPLE OUTLINE, mdi-ceiling-light-multiple-outline, _color, _scale, _shape)
+!define MA_CEILING_LIGHT_MULTIPLE_OUTLINE(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA CEILING LIGHT MULTIPLE OUTLINE, _label, mdi-ceiling-light-multiple-outline, _color, _scale, _shape)
 skinparam folderBackgroundColor<<MA CEILING LIGHT MULTIPLE OUTLINE>> White

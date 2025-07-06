@@ -1,8 +1,8 @@
 sprite mdi-logout-variant <svg width="48" height="48"><g transform="scale(2)"><path d="M14.08,15.59L16.67,13H7V11H16.67L14.08,8.41L15.5,7L20.5,12L15.5,17L14.08,15.59M19,3A2,2 0 0,1 21,5V9.67L19,7.67V5H5V19H19V16.33L21,14.33V19A2,2 0 0,1 19,21H5C3.89,21 3,20.1 3,19V5C3,3.89 3.89,3 5,3H19Z" /></g></svg>
 
-!define MA_LOGOUT_VARIANT(_color)                                 SPRITE_PUT(ma_logout_variant, _color)
-!define MA_LOGOUT_VARIANT(_color, _scale)                         SPRITE_PUT(ma_logout_variant, _color, _scale)
-!define MA_LOGOUT_VARIANT(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA LOGOUT VARIANT, ma_logout_variant, _color, _scale)
-!define MA_LOGOUT_VARIANT(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA LOGOUT VARIANT, ma_logout_variant, _color, _scale, _shape)
-!define MA_LOGOUT_VARIANT(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA LOGOUT VARIANT, _label, ma_logout_variant, _color, _scale, _shape)
+!define MA_LOGOUT_VARIANT(_color)                                 SPRITE_PUT(mdi-logout-variant, _color)
+!define MA_LOGOUT_VARIANT(_color, _scale)                         SPRITE_PUT(mdi-logout-variant, _color, _scale)
+!define MA_LOGOUT_VARIANT(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA LOGOUT VARIANT, mdi-logout-variant, _color, _scale)
+!define MA_LOGOUT_VARIANT(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA LOGOUT VARIANT, mdi-logout-variant, _color, _scale, _shape)
+!define MA_LOGOUT_VARIANT(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA LOGOUT VARIANT, _label, mdi-logout-variant, _color, _scale, _shape)
 skinparam folderBackgroundColor<<MA LOGOUT VARIANT>> White

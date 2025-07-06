@@ -1,8 +1,8 @@
 sprite mdi-format-vertical-align-center <svg width="48" height="48"><g transform="scale(2)"><path d="M8,19H11V23H13V19H16L12,15L8,19M16,5H13V1H11V5H8L12,9L16,5M4,11V13H20V11H4Z" /></g></svg>
 
-!define MA_FORMAT_VERTICAL_ALIGN_CENTER(_color)                                 SPRITE_PUT(ma_format_vertical_align_center, _color)
-!define MA_FORMAT_VERTICAL_ALIGN_CENTER(_color, _scale)                         SPRITE_PUT(ma_format_vertical_align_center, _color, _scale)
-!define MA_FORMAT_VERTICAL_ALIGN_CENTER(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA FORMAT VERTICAL ALIGN CENTER, ma_format_vertical_align_center, _color, _scale)
-!define MA_FORMAT_VERTICAL_ALIGN_CENTER(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA FORMAT VERTICAL ALIGN CENTER, ma_format_vertical_align_center, _color, _scale, _shape)
-!define MA_FORMAT_VERTICAL_ALIGN_CENTER(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA FORMAT VERTICAL ALIGN CENTER, _label, ma_format_vertical_align_center, _color, _scale, _shape)
+!define MA_FORMAT_VERTICAL_ALIGN_CENTER(_color)                                 SPRITE_PUT(mdi-format-vertical-align-center, _color)
+!define MA_FORMAT_VERTICAL_ALIGN_CENTER(_color, _scale)                         SPRITE_PUT(mdi-format-vertical-align-center, _color, _scale)
+!define MA_FORMAT_VERTICAL_ALIGN_CENTER(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA FORMAT VERTICAL ALIGN CENTER, mdi-format-vertical-align-center, _color, _scale)
+!define MA_FORMAT_VERTICAL_ALIGN_CENTER(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA FORMAT VERTICAL ALIGN CENTER, mdi-format-vertical-align-center, _color, _scale, _shape)
+!define MA_FORMAT_VERTICAL_ALIGN_CENTER(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA FORMAT VERTICAL ALIGN CENTER, _label, mdi-format-vertical-align-center, _color, _scale, _shape)
 skinparam folderBackgroundColor<<MA FORMAT VERTICAL ALIGN CENTER>> White

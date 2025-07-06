@@ -1,8 +1,8 @@
 sprite mdi-folder-upload <svg width="48" height="48"><g transform="scale(2)"><path d="M20,6A2,2 0 0,1 22,8V18A2,2 0 0,1 20,20H4A2,2 0 0,1 2,18V6A2,2 0 0,1 4,4H10L12,6H20M10.75,13H14V17H16V13H19.25L15,8.75" /></g></svg>
 
-!define MA_FOLDER_UPLOAD(_color)                                 SPRITE_PUT(ma_folder_upload, _color)
-!define MA_FOLDER_UPLOAD(_color, _scale)                         SPRITE_PUT(ma_folder_upload, _color, _scale)
-!define MA_FOLDER_UPLOAD(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA FOLDER UPLOAD, ma_folder_upload, _color, _scale)
-!define MA_FOLDER_UPLOAD(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA FOLDER UPLOAD, ma_folder_upload, _color, _scale, _shape)
-!define MA_FOLDER_UPLOAD(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA FOLDER UPLOAD, _label, ma_folder_upload, _color, _scale, _shape)
+!define MA_FOLDER_UPLOAD(_color)                                 SPRITE_PUT(mdi-folder-upload, _color)
+!define MA_FOLDER_UPLOAD(_color, _scale)                         SPRITE_PUT(mdi-folder-upload, _color, _scale)
+!define MA_FOLDER_UPLOAD(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA FOLDER UPLOAD, mdi-folder-upload, _color, _scale)
+!define MA_FOLDER_UPLOAD(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA FOLDER UPLOAD, mdi-folder-upload, _color, _scale, _shape)
+!define MA_FOLDER_UPLOAD(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA FOLDER UPLOAD, _label, mdi-folder-upload, _color, _scale, _shape)
 skinparam folderBackgroundColor<<MA FOLDER UPLOAD>> White

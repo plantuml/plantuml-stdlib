@@ -1,8 +1,8 @@
 sprite mdi-delete-outline <svg width="48" height="48"><g transform="scale(2)"><path d="M6,19A2,2 0 0,0 8,21H16A2,2 0 0,0 18,19V7H6V19M8,9H16V19H8V9M15.5,4L14.5,3H9.5L8.5,4H5V6H19V4H15.5Z" /></g></svg>
 
-!define MA_DELETE_OUTLINE(_color)                                 SPRITE_PUT(ma_delete_outline, _color)
-!define MA_DELETE_OUTLINE(_color, _scale)                         SPRITE_PUT(ma_delete_outline, _color, _scale)
-!define MA_DELETE_OUTLINE(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA DELETE OUTLINE, ma_delete_outline, _color, _scale)
-!define MA_DELETE_OUTLINE(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA DELETE OUTLINE, ma_delete_outline, _color, _scale, _shape)
-!define MA_DELETE_OUTLINE(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA DELETE OUTLINE, _label, ma_delete_outline, _color, _scale, _shape)
+!define MA_DELETE_OUTLINE(_color)                                 SPRITE_PUT(mdi-delete-outline, _color)
+!define MA_DELETE_OUTLINE(_color, _scale)                         SPRITE_PUT(mdi-delete-outline, _color, _scale)
+!define MA_DELETE_OUTLINE(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA DELETE OUTLINE, mdi-delete-outline, _color, _scale)
+!define MA_DELETE_OUTLINE(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA DELETE OUTLINE, mdi-delete-outline, _color, _scale, _shape)
+!define MA_DELETE_OUTLINE(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA DELETE OUTLINE, _label, mdi-delete-outline, _color, _scale, _shape)
 skinparam folderBackgroundColor<<MA DELETE OUTLINE>> White

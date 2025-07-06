@@ -1,8 +1,8 @@
 sprite mdi-angle-obtuse <svg width="48" height="48"><g transform="scale(2)"><path d="M21,19H9.31L4.07,5.36L5.93,4.64L8.96,12.5C9.5,12.29 10.09,12.17 10.71,12.17V12.17C13.38,12.17 15.56,14.34 15.58,17H21V19M10.69,17H13.58C13.56,15.42 12.3,14.17 10.71,14.17C10.34,14.17 10,14.24 9.67,14.36L10.69,17Z" /></g></svg>
 
-!define MA_ANGLE_OBTUSE(_color)                                 SPRITE_PUT(ma_angle_obtuse, _color)
-!define MA_ANGLE_OBTUSE(_color, _scale)                         SPRITE_PUT(ma_angle_obtuse, _color, _scale)
-!define MA_ANGLE_OBTUSE(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA ANGLE OBTUSE, ma_angle_obtuse, _color, _scale)
-!define MA_ANGLE_OBTUSE(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA ANGLE OBTUSE, ma_angle_obtuse, _color, _scale, _shape)
-!define MA_ANGLE_OBTUSE(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA ANGLE OBTUSE, _label, ma_angle_obtuse, _color, _scale, _shape)
+!define MA_ANGLE_OBTUSE(_color)                                 SPRITE_PUT(mdi-angle-obtuse, _color)
+!define MA_ANGLE_OBTUSE(_color, _scale)                         SPRITE_PUT(mdi-angle-obtuse, _color, _scale)
+!define MA_ANGLE_OBTUSE(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA ANGLE OBTUSE, mdi-angle-obtuse, _color, _scale)
+!define MA_ANGLE_OBTUSE(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA ANGLE OBTUSE, mdi-angle-obtuse, _color, _scale, _shape)
+!define MA_ANGLE_OBTUSE(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA ANGLE OBTUSE, _label, mdi-angle-obtuse, _color, _scale, _shape)
 skinparam folderBackgroundColor<<MA ANGLE OBTUSE>> White

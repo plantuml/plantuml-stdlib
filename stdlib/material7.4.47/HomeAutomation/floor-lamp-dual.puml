@@ -1,8 +1,8 @@
 sprite mdi-floor-lamp-dual <svg width="48" height="48"><g transform="scale(2)"><path d="M11.73 10.06L10.17 11.24L11 12.2V20H8V22H16V20H13V12.3L13.85 11.26L12.27 10.07L11.73 10.06M9.08 10.82L3 6.81L9.39 2L11.55 8.93L9.08 10.82M14.61 2L21 6.81L14.92 10.82L12.44 8.95L14.61 2Z" /></g></svg>
 
-!define MA_FLOOR_LAMP_DUAL(_color)                                 SPRITE_PUT(ma_floor_lamp_dual, _color)
-!define MA_FLOOR_LAMP_DUAL(_color, _scale)                         SPRITE_PUT(ma_floor_lamp_dual, _color, _scale)
-!define MA_FLOOR_LAMP_DUAL(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA FLOOR LAMP DUAL, ma_floor_lamp_dual, _color, _scale)
-!define MA_FLOOR_LAMP_DUAL(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA FLOOR LAMP DUAL, ma_floor_lamp_dual, _color, _scale, _shape)
-!define MA_FLOOR_LAMP_DUAL(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA FLOOR LAMP DUAL, _label, ma_floor_lamp_dual, _color, _scale, _shape)
+!define MA_FLOOR_LAMP_DUAL(_color)                                 SPRITE_PUT(mdi-floor-lamp-dual, _color)
+!define MA_FLOOR_LAMP_DUAL(_color, _scale)                         SPRITE_PUT(mdi-floor-lamp-dual, _color, _scale)
+!define MA_FLOOR_LAMP_DUAL(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA FLOOR LAMP DUAL, mdi-floor-lamp-dual, _color, _scale)
+!define MA_FLOOR_LAMP_DUAL(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA FLOOR LAMP DUAL, mdi-floor-lamp-dual, _color, _scale, _shape)
+!define MA_FLOOR_LAMP_DUAL(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA FLOOR LAMP DUAL, _label, mdi-floor-lamp-dual, _color, _scale, _shape)
 skinparam folderBackgroundColor<<MA FLOOR LAMP DUAL>> White

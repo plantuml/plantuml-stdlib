@@ -1,8 +1,8 @@
 sprite mdi-patreon <svg width="48" height="48"><g transform="scale(2)"><path d="M14.82 2.41C18.78 2.41 22 5.65 22 9.62C22 13.58 18.78 16.8 14.82 16.8C10.85 16.8 7.61 13.58 7.61 9.62C7.61 5.65 10.85 2.41 14.82 2.41M2 21.6H5.5V2.41H2V21.6Z" /></g></svg>
 
-!define MA_PATREON(_color)                                 SPRITE_PUT(ma_patreon, _color)
-!define MA_PATREON(_color, _scale)                         SPRITE_PUT(ma_patreon, _color, _scale)
-!define MA_PATREON(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA PATREON, ma_patreon, _color, _scale)
-!define MA_PATREON(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA PATREON, ma_patreon, _color, _scale, _shape)
-!define MA_PATREON(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA PATREON, _label, ma_patreon, _color, _scale, _shape)
+!define MA_PATREON(_color)                                 SPRITE_PUT(mdi-patreon, _color)
+!define MA_PATREON(_color, _scale)                         SPRITE_PUT(mdi-patreon, _color, _scale)
+!define MA_PATREON(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA PATREON, mdi-patreon, _color, _scale)
+!define MA_PATREON(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA PATREON, mdi-patreon, _color, _scale, _shape)
+!define MA_PATREON(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA PATREON, _label, mdi-patreon, _color, _scale, _shape)
 skinparam folderBackgroundColor<<MA PATREON>> White

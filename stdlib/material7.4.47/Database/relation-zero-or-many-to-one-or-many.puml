@@ -1,8 +1,8 @@
 sprite mdi-relation-zero-or-many-to-one-or-many <svg width="48" height="48"><g transform="scale(2)"><path d="M21 13L19 15V13H17V15H13V7H9.79A2.5 2.5 0 0 0 5.21 7H5L3 5H2V11H3L5 9H5.21A2.5 2.5 0 0 0 9.79 9H11V17H17V19H19V17L21 19H22V13M7.5 9A1 1 0 1 1 8.5 8A1 1 0 0 1 7.5 9Z" /></g></svg>
 
-!define MA_RELATION_ZERO_OR_MANY_TO_ONE_OR_MANY(_color)                                 SPRITE_PUT(ma_relation_zero_or_many_to_one_or_many, _color)
-!define MA_RELATION_ZERO_OR_MANY_TO_ONE_OR_MANY(_color, _scale)                         SPRITE_PUT(ma_relation_zero_or_many_to_one_or_many, _color, _scale)
-!define MA_RELATION_ZERO_OR_MANY_TO_ONE_OR_MANY(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA RELATION ZERO OR MANY TO ONE OR MANY, ma_relation_zero_or_many_to_one_or_many, _color, _scale)
-!define MA_RELATION_ZERO_OR_MANY_TO_ONE_OR_MANY(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA RELATION ZERO OR MANY TO ONE OR MANY, ma_relation_zero_or_many_to_one_or_many, _color, _scale, _shape)
-!define MA_RELATION_ZERO_OR_MANY_TO_ONE_OR_MANY(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA RELATION ZERO OR MANY TO ONE OR MANY, _label, ma_relation_zero_or_many_to_one_or_many, _color, _scale, _shape)
+!define MA_RELATION_ZERO_OR_MANY_TO_ONE_OR_MANY(_color)                                 SPRITE_PUT(mdi-relation-zero-or-many-to-one-or-many, _color)
+!define MA_RELATION_ZERO_OR_MANY_TO_ONE_OR_MANY(_color, _scale)                         SPRITE_PUT(mdi-relation-zero-or-many-to-one-or-many, _color, _scale)
+!define MA_RELATION_ZERO_OR_MANY_TO_ONE_OR_MANY(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA RELATION ZERO OR MANY TO ONE OR MANY, mdi-relation-zero-or-many-to-one-or-many, _color, _scale)
+!define MA_RELATION_ZERO_OR_MANY_TO_ONE_OR_MANY(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA RELATION ZERO OR MANY TO ONE OR MANY, mdi-relation-zero-or-many-to-one-or-many, _color, _scale, _shape)
+!define MA_RELATION_ZERO_OR_MANY_TO_ONE_OR_MANY(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA RELATION ZERO OR MANY TO ONE OR MANY, _label, mdi-relation-zero-or-many-to-one-or-many, _color, _scale, _shape)
 skinparam folderBackgroundColor<<MA RELATION ZERO OR MANY TO ONE OR MANY>> White

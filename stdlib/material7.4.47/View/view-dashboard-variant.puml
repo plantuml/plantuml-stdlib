@@ -1,8 +1,8 @@
 sprite mdi-view-dashboard-variant <svg width="48" height="48"><g transform="scale(2)"><path d="M2,5V19H8V5H2M9,5V10H15V5H9M16,5V14H22V5H16M9,11V19H15V11H9M16,15V19H22V15H16Z" /></g></svg>
 
-!define MA_VIEW_DASHBOARD_VARIANT(_color)                                 SPRITE_PUT(ma_view_dashboard_variant, _color)
-!define MA_VIEW_DASHBOARD_VARIANT(_color, _scale)                         SPRITE_PUT(ma_view_dashboard_variant, _color, _scale)
-!define MA_VIEW_DASHBOARD_VARIANT(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA VIEW DASHBOARD VARIANT, ma_view_dashboard_variant, _color, _scale)
-!define MA_VIEW_DASHBOARD_VARIANT(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA VIEW DASHBOARD VARIANT, ma_view_dashboard_variant, _color, _scale, _shape)
-!define MA_VIEW_DASHBOARD_VARIANT(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA VIEW DASHBOARD VARIANT, _label, ma_view_dashboard_variant, _color, _scale, _shape)
+!define MA_VIEW_DASHBOARD_VARIANT(_color)                                 SPRITE_PUT(mdi-view-dashboard-variant, _color)
+!define MA_VIEW_DASHBOARD_VARIANT(_color, _scale)                         SPRITE_PUT(mdi-view-dashboard-variant, _color, _scale)
+!define MA_VIEW_DASHBOARD_VARIANT(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA VIEW DASHBOARD VARIANT, mdi-view-dashboard-variant, _color, _scale)
+!define MA_VIEW_DASHBOARD_VARIANT(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA VIEW DASHBOARD VARIANT, mdi-view-dashboard-variant, _color, _scale, _shape)
+!define MA_VIEW_DASHBOARD_VARIANT(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA VIEW DASHBOARD VARIANT, _label, mdi-view-dashboard-variant, _color, _scale, _shape)
 skinparam folderBackgroundColor<<MA VIEW DASHBOARD VARIANT>> White

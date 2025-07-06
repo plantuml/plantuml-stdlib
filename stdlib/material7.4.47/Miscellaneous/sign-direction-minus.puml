@@ -1,8 +1,8 @@
 sprite mdi-sign-direction-minus <svg width="48" height="48"><g transform="scale(2)"><path d="M20.5 9.5L18 12H13V22H9A2 2 0 0 1 11 20V12H3.5L6 9.5L3.5 7H11V3L12 2L13 3V7H18M23 18H15V20H23Z" /></g></svg>
 
-!define MA_SIGN_DIRECTION_MINUS(_color)                                 SPRITE_PUT(ma_sign_direction_minus, _color)
-!define MA_SIGN_DIRECTION_MINUS(_color, _scale)                         SPRITE_PUT(ma_sign_direction_minus, _color, _scale)
-!define MA_SIGN_DIRECTION_MINUS(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA SIGN DIRECTION MINUS, ma_sign_direction_minus, _color, _scale)
-!define MA_SIGN_DIRECTION_MINUS(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA SIGN DIRECTION MINUS, ma_sign_direction_minus, _color, _scale, _shape)
-!define MA_SIGN_DIRECTION_MINUS(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA SIGN DIRECTION MINUS, _label, ma_sign_direction_minus, _color, _scale, _shape)
+!define MA_SIGN_DIRECTION_MINUS(_color)                                 SPRITE_PUT(mdi-sign-direction-minus, _color)
+!define MA_SIGN_DIRECTION_MINUS(_color, _scale)                         SPRITE_PUT(mdi-sign-direction-minus, _color, _scale)
+!define MA_SIGN_DIRECTION_MINUS(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA SIGN DIRECTION MINUS, mdi-sign-direction-minus, _color, _scale)
+!define MA_SIGN_DIRECTION_MINUS(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA SIGN DIRECTION MINUS, mdi-sign-direction-minus, _color, _scale, _shape)
+!define MA_SIGN_DIRECTION_MINUS(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA SIGN DIRECTION MINUS, _label, mdi-sign-direction-minus, _color, _scale, _shape)
 skinparam folderBackgroundColor<<MA SIGN DIRECTION MINUS>> White

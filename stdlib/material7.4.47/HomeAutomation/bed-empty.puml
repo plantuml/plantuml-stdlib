@@ -1,8 +1,8 @@
 sprite mdi-bed-empty <svg width="48" height="48"><g transform="scale(2)"><path d="M19,7H5V14H3V5H1V20H3V17H21V20H23V11A4,4 0 0,0 19,7" /></g></svg>
 
-!define MA_BED_EMPTY(_color)                                 SPRITE_PUT(ma_bed_empty, _color)
-!define MA_BED_EMPTY(_color, _scale)                         SPRITE_PUT(ma_bed_empty, _color, _scale)
-!define MA_BED_EMPTY(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA BED EMPTY, ma_bed_empty, _color, _scale)
-!define MA_BED_EMPTY(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA BED EMPTY, ma_bed_empty, _color, _scale, _shape)
-!define MA_BED_EMPTY(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA BED EMPTY, _label, ma_bed_empty, _color, _scale, _shape)
+!define MA_BED_EMPTY(_color)                                 SPRITE_PUT(mdi-bed-empty, _color)
+!define MA_BED_EMPTY(_color, _scale)                         SPRITE_PUT(mdi-bed-empty, _color, _scale)
+!define MA_BED_EMPTY(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA BED EMPTY, mdi-bed-empty, _color, _scale)
+!define MA_BED_EMPTY(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA BED EMPTY, mdi-bed-empty, _color, _scale, _shape)
+!define MA_BED_EMPTY(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA BED EMPTY, _label, mdi-bed-empty, _color, _scale, _shape)
 skinparam folderBackgroundColor<<MA BED EMPTY>> White

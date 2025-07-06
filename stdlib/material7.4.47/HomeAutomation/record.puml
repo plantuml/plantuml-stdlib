@@ -1,8 +1,8 @@
 sprite mdi-record <svg width="48" height="48"><g transform="scale(2)"><path d="M19,12C19,15.86 15.86,19 12,19C8.14,19 5,15.86 5,12C5,8.14 8.14,5 12,5C15.86,5 19,8.14 19,12Z" /></g></svg>
 
-!define MA_RECORD(_color)                                 SPRITE_PUT(ma_record, _color)
-!define MA_RECORD(_color, _scale)                         SPRITE_PUT(ma_record, _color, _scale)
-!define MA_RECORD(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA RECORD, ma_record, _color, _scale)
-!define MA_RECORD(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA RECORD, ma_record, _color, _scale, _shape)
-!define MA_RECORD(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA RECORD, _label, ma_record, _color, _scale, _shape)
+!define MA_RECORD(_color)                                 SPRITE_PUT(mdi-record, _color)
+!define MA_RECORD(_color, _scale)                         SPRITE_PUT(mdi-record, _color, _scale)
+!define MA_RECORD(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA RECORD, mdi-record, _color, _scale)
+!define MA_RECORD(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA RECORD, mdi-record, _color, _scale, _shape)
+!define MA_RECORD(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA RECORD, _label, mdi-record, _color, _scale, _shape)
 skinparam folderBackgroundColor<<MA RECORD>> White

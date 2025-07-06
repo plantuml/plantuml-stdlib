@@ -1,8 +1,8 @@
 sprite mdi-gas-cylinder <svg width="48" height="48"><g transform="scale(2)"><path d="M16,9V14L16,20A2,2 0 0,1 14,22H10A2,2 0 0,1 8,20V14L8,9C8,7.14 9.27,5.57 11,5.13V4H9V2H15V4H13V5.13C14.73,5.57 16,7.14 16,9Z" /></g></svg>
 
-!define MA_GAS_CYLINDER(_color)                                 SPRITE_PUT(ma_gas_cylinder, _color)
-!define MA_GAS_CYLINDER(_color, _scale)                         SPRITE_PUT(ma_gas_cylinder, _color, _scale)
-!define MA_GAS_CYLINDER(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA GAS CYLINDER, ma_gas_cylinder, _color, _scale)
-!define MA_GAS_CYLINDER(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA GAS CYLINDER, ma_gas_cylinder, _color, _scale, _shape)
-!define MA_GAS_CYLINDER(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA GAS CYLINDER, _label, ma_gas_cylinder, _color, _scale, _shape)
+!define MA_GAS_CYLINDER(_color)                                 SPRITE_PUT(mdi-gas-cylinder, _color)
+!define MA_GAS_CYLINDER(_color, _scale)                         SPRITE_PUT(mdi-gas-cylinder, _color, _scale)
+!define MA_GAS_CYLINDER(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA GAS CYLINDER, mdi-gas-cylinder, _color, _scale)
+!define MA_GAS_CYLINDER(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA GAS CYLINDER, mdi-gas-cylinder, _color, _scale, _shape)
+!define MA_GAS_CYLINDER(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA GAS CYLINDER, _label, mdi-gas-cylinder, _color, _scale, _shape)
 skinparam folderBackgroundColor<<MA GAS CYLINDER>> White

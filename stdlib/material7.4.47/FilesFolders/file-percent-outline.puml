@@ -1,8 +1,8 @@
 sprite mdi-file-percent-outline <svg width="48" height="48"><g transform="scale(2)"><path d="M14 2H6C4.89 2 4 2.9 4 4V20C4 21.11 4.89 22 6 22H18C19.11 22 20 21.11 20 20V8L14 2M18 20H6V4H13V9H18V20M10 11.5C10 12.33 9.33 13 8.5 13S7 12.33 7 11.5 7.67 10 8.5 10 10 10.67 10 11.5M16 17.5C16 18.33 15.33 19 14.5 19S13 18.33 13 17.5 13.67 16 14.5 16 16 16.67 16 17.5M16 11.35L8.37 19L7 17.65L14.65 10L16 11.35Z" /></g></svg>
 
-!define MA_FILE_PERCENT_OUTLINE(_color)                                 SPRITE_PUT(ma_file_percent_outline, _color)
-!define MA_FILE_PERCENT_OUTLINE(_color, _scale)                         SPRITE_PUT(ma_file_percent_outline, _color, _scale)
-!define MA_FILE_PERCENT_OUTLINE(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA FILE PERCENT OUTLINE, ma_file_percent_outline, _color, _scale)
-!define MA_FILE_PERCENT_OUTLINE(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA FILE PERCENT OUTLINE, ma_file_percent_outline, _color, _scale, _shape)
-!define MA_FILE_PERCENT_OUTLINE(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA FILE PERCENT OUTLINE, _label, ma_file_percent_outline, _color, _scale, _shape)
+!define MA_FILE_PERCENT_OUTLINE(_color)                                 SPRITE_PUT(mdi-file-percent-outline, _color)
+!define MA_FILE_PERCENT_OUTLINE(_color, _scale)                         SPRITE_PUT(mdi-file-percent-outline, _color, _scale)
+!define MA_FILE_PERCENT_OUTLINE(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA FILE PERCENT OUTLINE, mdi-file-percent-outline, _color, _scale)
+!define MA_FILE_PERCENT_OUTLINE(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA FILE PERCENT OUTLINE, mdi-file-percent-outline, _color, _scale, _shape)
+!define MA_FILE_PERCENT_OUTLINE(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA FILE PERCENT OUTLINE, _label, mdi-file-percent-outline, _color, _scale, _shape)
 skinparam folderBackgroundColor<<MA FILE PERCENT OUTLINE>> White

@@ -1,8 +1,8 @@
 sprite mdi-factory <svg width="48" height="48"><g transform="scale(2)"><path d="M4,18V20H8V18H4M4,14V16H14V14H4M10,18V20H14V18H10M16,14V16H20V14H16M16,18V20H20V18H16M2,22V8L7,12V8L12,12V8L17,12L18,2H21L22,12V22H2Z" /></g></svg>
 
-!define MA_FACTORY(_color)                                 SPRITE_PUT(ma_factory, _color)
-!define MA_FACTORY(_color, _scale)                         SPRITE_PUT(ma_factory, _color, _scale)
-!define MA_FACTORY(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA FACTORY, ma_factory, _color, _scale)
-!define MA_FACTORY(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA FACTORY, ma_factory, _color, _scale, _shape)
-!define MA_FACTORY(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA FACTORY, _label, ma_factory, _color, _scale, _shape)
+!define MA_FACTORY(_color)                                 SPRITE_PUT(mdi-factory, _color)
+!define MA_FACTORY(_color, _scale)                         SPRITE_PUT(mdi-factory, _color, _scale)
+!define MA_FACTORY(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA FACTORY, mdi-factory, _color, _scale)
+!define MA_FACTORY(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA FACTORY, mdi-factory, _color, _scale, _shape)
+!define MA_FACTORY(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA FACTORY, _label, mdi-factory, _color, _scale, _shape)
 skinparam folderBackgroundColor<<MA FACTORY>> White

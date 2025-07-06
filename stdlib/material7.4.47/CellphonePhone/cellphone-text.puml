@@ -1,8 +1,8 @@
 sprite mdi-cellphone-text <svg width="48" height="48"><g transform="scale(2)"><path d="M17,19V5H7V19H17M17,1A2,2 0 0,1 19,3V21A2,2 0 0,1 17,23H7C5.89,23 5,22.1 5,21V3C5,1.89 5.89,1 7,1H17M9,7H15V9H9V7M9,11H13V13H9V11Z" /></g></svg>
 
-!define MA_CELLPHONE_TEXT(_color)                                 SPRITE_PUT(ma_cellphone_text, _color)
-!define MA_CELLPHONE_TEXT(_color, _scale)                         SPRITE_PUT(ma_cellphone_text, _color, _scale)
-!define MA_CELLPHONE_TEXT(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA CELLPHONE TEXT, ma_cellphone_text, _color, _scale)
-!define MA_CELLPHONE_TEXT(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA CELLPHONE TEXT, ma_cellphone_text, _color, _scale, _shape)
-!define MA_CELLPHONE_TEXT(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA CELLPHONE TEXT, _label, ma_cellphone_text, _color, _scale, _shape)
+!define MA_CELLPHONE_TEXT(_color)                                 SPRITE_PUT(mdi-cellphone-text, _color)
+!define MA_CELLPHONE_TEXT(_color, _scale)                         SPRITE_PUT(mdi-cellphone-text, _color, _scale)
+!define MA_CELLPHONE_TEXT(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA CELLPHONE TEXT, mdi-cellphone-text, _color, _scale)
+!define MA_CELLPHONE_TEXT(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA CELLPHONE TEXT, mdi-cellphone-text, _color, _scale, _shape)
+!define MA_CELLPHONE_TEXT(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA CELLPHONE TEXT, _label, mdi-cellphone-text, _color, _scale, _shape)
 skinparam folderBackgroundColor<<MA CELLPHONE TEXT>> White

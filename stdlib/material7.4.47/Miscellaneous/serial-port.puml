@@ -1,8 +1,8 @@
 sprite mdi-serial-port <svg width="48" height="48"><g transform="scale(2)"><path d="M7,3H17V5H19V8H16V14H8V8H5V5H7V3M17,9H19V14H17V9M11,15H13V22H11V15M5,9H7V14H5V9Z" /></g></svg>
 
-!define MA_SERIAL_PORT(_color)                                 SPRITE_PUT(ma_serial_port, _color)
-!define MA_SERIAL_PORT(_color, _scale)                         SPRITE_PUT(ma_serial_port, _color, _scale)
-!define MA_SERIAL_PORT(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA SERIAL PORT, ma_serial_port, _color, _scale)
-!define MA_SERIAL_PORT(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA SERIAL PORT, ma_serial_port, _color, _scale, _shape)
-!define MA_SERIAL_PORT(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA SERIAL PORT, _label, ma_serial_port, _color, _scale, _shape)
+!define MA_SERIAL_PORT(_color)                                 SPRITE_PUT(mdi-serial-port, _color)
+!define MA_SERIAL_PORT(_color, _scale)                         SPRITE_PUT(mdi-serial-port, _color, _scale)
+!define MA_SERIAL_PORT(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA SERIAL PORT, mdi-serial-port, _color, _scale)
+!define MA_SERIAL_PORT(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA SERIAL PORT, mdi-serial-port, _color, _scale, _shape)
+!define MA_SERIAL_PORT(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA SERIAL PORT, _label, mdi-serial-port, _color, _scale, _shape)
 skinparam folderBackgroundColor<<MA SERIAL PORT>> White

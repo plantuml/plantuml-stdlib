@@ -1,8 +1,8 @@
 sprite mdi-printer-3d-nozzle-off <svg width="48" height="48"><g transform="scale(2)"><path d="M20.8 22.7L14 15.9L13 17H11L7.5 13H5V8H6.1L1.1 3L2.4 1.7L22.1 21.4L20.8 22.7M11 19C11 19.6 10.6 20 10 20H2V22H10C11.7 22 13 20.7 13 19V18H11V19M19 13V8H17V2H7V3.8L16.2 13H19Z" /></g></svg>
 
-!define MA_PRINTER_3D_NOZZLE_OFF(_color)                                 SPRITE_PUT(ma_printer_3d_nozzle_off, _color)
-!define MA_PRINTER_3D_NOZZLE_OFF(_color, _scale)                         SPRITE_PUT(ma_printer_3d_nozzle_off, _color, _scale)
-!define MA_PRINTER_3D_NOZZLE_OFF(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA PRINTER 3D NOZZLE OFF, ma_printer_3d_nozzle_off, _color, _scale)
-!define MA_PRINTER_3D_NOZZLE_OFF(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA PRINTER 3D NOZZLE OFF, ma_printer_3d_nozzle_off, _color, _scale, _shape)
-!define MA_PRINTER_3D_NOZZLE_OFF(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA PRINTER 3D NOZZLE OFF, _label, ma_printer_3d_nozzle_off, _color, _scale, _shape)
+!define MA_PRINTER_3D_NOZZLE_OFF(_color)                                 SPRITE_PUT(mdi-printer-3d-nozzle-off, _color)
+!define MA_PRINTER_3D_NOZZLE_OFF(_color, _scale)                         SPRITE_PUT(mdi-printer-3d-nozzle-off, _color, _scale)
+!define MA_PRINTER_3D_NOZZLE_OFF(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA PRINTER 3D NOZZLE OFF, mdi-printer-3d-nozzle-off, _color, _scale)
+!define MA_PRINTER_3D_NOZZLE_OFF(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA PRINTER 3D NOZZLE OFF, mdi-printer-3d-nozzle-off, _color, _scale, _shape)
+!define MA_PRINTER_3D_NOZZLE_OFF(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA PRINTER 3D NOZZLE OFF, _label, mdi-printer-3d-nozzle-off, _color, _scale, _shape)
 skinparam folderBackgroundColor<<MA PRINTER 3D NOZZLE OFF>> White

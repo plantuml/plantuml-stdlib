@@ -1,8 +1,8 @@
 sprite mdi-cast-education <svg width="48" height="48"><g transform="scale(2)"><path d="M21,3H3A2,2 0 0,0 1,5V8H3V5H21V19H14V21H21A2,2 0 0,0 23,19V5A2,2 0 0,0 21,3M1,18V21H4A3,3 0 0,0 1,18M1,14V16A5,5 0 0,1 6,21H8A7,7 0 0,0 1,14M1,10V12A9,9 0 0,1 10,21H12C12,14.92 7.07,10 1,10M11,11.09V13.09L14.5,15L18,13.09V11.09L14.5,13L11,11.09M14.5,6L9,9L14.5,12L20,9L14.5,6Z" /></g></svg>
 
-!define MA_CAST_EDUCATION(_color)                                 SPRITE_PUT(ma_cast_education, _color)
-!define MA_CAST_EDUCATION(_color, _scale)                         SPRITE_PUT(ma_cast_education, _color, _scale)
-!define MA_CAST_EDUCATION(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA CAST EDUCATION, ma_cast_education, _color, _scale)
-!define MA_CAST_EDUCATION(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA CAST EDUCATION, ma_cast_education, _color, _scale, _shape)
-!define MA_CAST_EDUCATION(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA CAST EDUCATION, _label, ma_cast_education, _color, _scale, _shape)
+!define MA_CAST_EDUCATION(_color)                                 SPRITE_PUT(mdi-cast-education, _color)
+!define MA_CAST_EDUCATION(_color, _scale)                         SPRITE_PUT(mdi-cast-education, _color, _scale)
+!define MA_CAST_EDUCATION(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA CAST EDUCATION, mdi-cast-education, _color, _scale)
+!define MA_CAST_EDUCATION(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA CAST EDUCATION, mdi-cast-education, _color, _scale, _shape)
+!define MA_CAST_EDUCATION(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA CAST EDUCATION, _label, mdi-cast-education, _color, _scale, _shape)
 skinparam folderBackgroundColor<<MA CAST EDUCATION>> White

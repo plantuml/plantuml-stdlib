@@ -1,8 +1,8 @@
 sprite mdi-square-circle <svg width="48" height="48"><g transform="scale(2)"><path d="M20 4V20H4V4H20M22 2H2V22H22V2M12 6C8.69 6 6 8.69 6 12S8.69 18 12 18 18 15.31 18 12 15.31 6 12 6Z" /></g></svg>
 
-!define MA_SQUARE_CIRCLE(_color)                                 SPRITE_PUT(ma_square_circle, _color)
-!define MA_SQUARE_CIRCLE(_color, _scale)                         SPRITE_PUT(ma_square_circle, _color, _scale)
-!define MA_SQUARE_CIRCLE(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA SQUARE CIRCLE, ma_square_circle, _color, _scale)
-!define MA_SQUARE_CIRCLE(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA SQUARE CIRCLE, ma_square_circle, _color, _scale, _shape)
-!define MA_SQUARE_CIRCLE(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA SQUARE CIRCLE, _label, ma_square_circle, _color, _scale, _shape)
+!define MA_SQUARE_CIRCLE(_color)                                 SPRITE_PUT(mdi-square-circle, _color)
+!define MA_SQUARE_CIRCLE(_color, _scale)                         SPRITE_PUT(mdi-square-circle, _color, _scale)
+!define MA_SQUARE_CIRCLE(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA SQUARE CIRCLE, mdi-square-circle, _color, _scale)
+!define MA_SQUARE_CIRCLE(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA SQUARE CIRCLE, mdi-square-circle, _color, _scale, _shape)
+!define MA_SQUARE_CIRCLE(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA SQUARE CIRCLE, _label, mdi-square-circle, _color, _scale, _shape)
 skinparam folderBackgroundColor<<MA SQUARE CIRCLE>> White

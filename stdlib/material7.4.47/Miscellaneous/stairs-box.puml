@@ -1,8 +1,8 @@
 sprite mdi-stairs-box <svg width="48" height="48"><g transform="scale(2)"><path d="M5 3C3.89 3 3 3.89 3 5V19C3 20.11 3.89 21 5 21H19C20.11 21 21 20.11 21 19V5C21 3.89 20.11 3 19 3H5M14 7H19V9H16V12H13V15H10V18H5V16H8V13H11V10H14V7Z" /></g></svg>
 
-!define MA_STAIRS_BOX(_color)                                 SPRITE_PUT(ma_stairs_box, _color)
-!define MA_STAIRS_BOX(_color, _scale)                         SPRITE_PUT(ma_stairs_box, _color, _scale)
-!define MA_STAIRS_BOX(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA STAIRS BOX, ma_stairs_box, _color, _scale)
-!define MA_STAIRS_BOX(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA STAIRS BOX, ma_stairs_box, _color, _scale, _shape)
-!define MA_STAIRS_BOX(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA STAIRS BOX, _label, ma_stairs_box, _color, _scale, _shape)
+!define MA_STAIRS_BOX(_color)                                 SPRITE_PUT(mdi-stairs-box, _color)
+!define MA_STAIRS_BOX(_color, _scale)                         SPRITE_PUT(mdi-stairs-box, _color, _scale)
+!define MA_STAIRS_BOX(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA STAIRS BOX, mdi-stairs-box, _color, _scale)
+!define MA_STAIRS_BOX(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA STAIRS BOX, mdi-stairs-box, _color, _scale, _shape)
+!define MA_STAIRS_BOX(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA STAIRS BOX, _label, mdi-stairs-box, _color, _scale, _shape)
 skinparam folderBackgroundColor<<MA STAIRS BOX>> White

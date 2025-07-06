@@ -1,8 +1,8 @@
 sprite mdi-gamepad-square-outline <svg width="48" height="48"><g transform="scale(2)"><path d="M21,6H3A2,2 0 0,0 1,8V16A2,2 0 0,0 3,18H21A2,2 0 0,0 23,16V8A2,2 0 0,0 21,6M21,16H3V8H21M6,15H8V13H10V11H8V9H6V11H4V13H6M14.5,12A1.5,1.5 0 0,1 16,13.5A1.5,1.5 0 0,1 14.5,15A1.5,1.5 0 0,1 13,13.5A1.5,1.5 0 0,1 14.5,12M18.5,9A1.5,1.5 0 0,1 20,10.5A1.5,1.5 0 0,1 18.5,12A1.5,1.5 0 0,1 17,10.5A1.5,1.5 0 0,1 18.5,9Z" /></g></svg>
 
-!define MA_GAMEPAD_SQUARE_OUTLINE(_color)                                 SPRITE_PUT(ma_gamepad_square_outline, _color)
-!define MA_GAMEPAD_SQUARE_OUTLINE(_color, _scale)                         SPRITE_PUT(ma_gamepad_square_outline, _color, _scale)
-!define MA_GAMEPAD_SQUARE_OUTLINE(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA GAMEPAD SQUARE OUTLINE, ma_gamepad_square_outline, _color, _scale)
-!define MA_GAMEPAD_SQUARE_OUTLINE(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA GAMEPAD SQUARE OUTLINE, ma_gamepad_square_outline, _color, _scale, _shape)
-!define MA_GAMEPAD_SQUARE_OUTLINE(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA GAMEPAD SQUARE OUTLINE, _label, ma_gamepad_square_outline, _color, _scale, _shape)
+!define MA_GAMEPAD_SQUARE_OUTLINE(_color)                                 SPRITE_PUT(mdi-gamepad-square-outline, _color)
+!define MA_GAMEPAD_SQUARE_OUTLINE(_color, _scale)                         SPRITE_PUT(mdi-gamepad-square-outline, _color, _scale)
+!define MA_GAMEPAD_SQUARE_OUTLINE(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA GAMEPAD SQUARE OUTLINE, mdi-gamepad-square-outline, _color, _scale)
+!define MA_GAMEPAD_SQUARE_OUTLINE(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA GAMEPAD SQUARE OUTLINE, mdi-gamepad-square-outline, _color, _scale, _shape)
+!define MA_GAMEPAD_SQUARE_OUTLINE(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA GAMEPAD SQUARE OUTLINE, _label, mdi-gamepad-square-outline, _color, _scale, _shape)
 skinparam folderBackgroundColor<<MA GAMEPAD SQUARE OUTLINE>> White

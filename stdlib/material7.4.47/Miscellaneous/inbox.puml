@@ -1,8 +1,8 @@
 sprite mdi-inbox <svg width="48" height="48"><g transform="scale(2)"><path d="M19,15H15A3,3 0 0,1 12,18A3,3 0 0,1 9,15H5V5H19M19,3H5C3.89,3 3,3.9 3,5V19A2,2 0 0,0 5,21H19A2,2 0 0,0 21,19V5A2,2 0 0,0 19,3Z" /></g></svg>
 
-!define MA_INBOX(_color)                                 SPRITE_PUT(ma_inbox, _color)
-!define MA_INBOX(_color, _scale)                         SPRITE_PUT(ma_inbox, _color, _scale)
-!define MA_INBOX(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA INBOX, ma_inbox, _color, _scale)
-!define MA_INBOX(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA INBOX, ma_inbox, _color, _scale, _shape)
-!define MA_INBOX(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA INBOX, _label, ma_inbox, _color, _scale, _shape)
+!define MA_INBOX(_color)                                 SPRITE_PUT(mdi-inbox, _color)
+!define MA_INBOX(_color, _scale)                         SPRITE_PUT(mdi-inbox, _color, _scale)
+!define MA_INBOX(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA INBOX, mdi-inbox, _color, _scale)
+!define MA_INBOX(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA INBOX, mdi-inbox, _color, _scale, _shape)
+!define MA_INBOX(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA INBOX, _label, mdi-inbox, _color, _scale, _shape)
 skinparam folderBackgroundColor<<MA INBOX>> White

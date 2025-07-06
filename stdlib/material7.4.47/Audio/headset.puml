@@ -1,8 +1,8 @@
 sprite mdi-headset <svg width="48" height="48"><g transform="scale(2)"><path d="M12,1C7,1 3,5 3,10V17A3,3 0 0,0 6,20H9V12H5V10A7,7 0 0,1 12,3A7,7 0 0,1 19,10V12H15V20H19V21H12V23H18A3,3 0 0,0 21,20V10C21,5 16.97,1 12,1Z" /></g></svg>
 
-!define MA_HEADSET(_color)                                 SPRITE_PUT(ma_headset, _color)
-!define MA_HEADSET(_color, _scale)                         SPRITE_PUT(ma_headset, _color, _scale)
-!define MA_HEADSET(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA HEADSET, ma_headset, _color, _scale)
-!define MA_HEADSET(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA HEADSET, ma_headset, _color, _scale, _shape)
-!define MA_HEADSET(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA HEADSET, _label, ma_headset, _color, _scale, _shape)
+!define MA_HEADSET(_color)                                 SPRITE_PUT(mdi-headset, _color)
+!define MA_HEADSET(_color, _scale)                         SPRITE_PUT(mdi-headset, _color, _scale)
+!define MA_HEADSET(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA HEADSET, mdi-headset, _color, _scale)
+!define MA_HEADSET(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA HEADSET, mdi-headset, _color, _scale, _shape)
+!define MA_HEADSET(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA HEADSET, _label, mdi-headset, _color, _scale, _shape)
 skinparam folderBackgroundColor<<MA HEADSET>> White

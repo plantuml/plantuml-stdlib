@@ -1,8 +1,8 @@
 sprite mdi-bottle-tonic-plus <svg width="48" height="48"><g transform="scale(2)"><path d="M13 4H11L10 2H14L13 4M14 8V6H15V5H9V6H10V8C7.24 8 5 10.24 5 13V22H19V13C19 10.24 16.76 8 14 8M16 17H13V20H11V17H8V15H11V12H13V15H16V17Z" /></g></svg>
 
-!define MA_BOTTLE_TONIC_PLUS(_color)                                 SPRITE_PUT(ma_bottle_tonic_plus, _color)
-!define MA_BOTTLE_TONIC_PLUS(_color, _scale)                         SPRITE_PUT(ma_bottle_tonic_plus, _color, _scale)
-!define MA_BOTTLE_TONIC_PLUS(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA BOTTLE TONIC PLUS, ma_bottle_tonic_plus, _color, _scale)
-!define MA_BOTTLE_TONIC_PLUS(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA BOTTLE TONIC PLUS, ma_bottle_tonic_plus, _color, _scale, _shape)
-!define MA_BOTTLE_TONIC_PLUS(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA BOTTLE TONIC PLUS, _label, ma_bottle_tonic_plus, _color, _scale, _shape)
+!define MA_BOTTLE_TONIC_PLUS(_color)                                 SPRITE_PUT(mdi-bottle-tonic-plus, _color)
+!define MA_BOTTLE_TONIC_PLUS(_color, _scale)                         SPRITE_PUT(mdi-bottle-tonic-plus, _color, _scale)
+!define MA_BOTTLE_TONIC_PLUS(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA BOTTLE TONIC PLUS, mdi-bottle-tonic-plus, _color, _scale)
+!define MA_BOTTLE_TONIC_PLUS(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA BOTTLE TONIC PLUS, mdi-bottle-tonic-plus, _color, _scale, _shape)
+!define MA_BOTTLE_TONIC_PLUS(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA BOTTLE TONIC PLUS, _label, mdi-bottle-tonic-plus, _color, _scale, _shape)
 skinparam folderBackgroundColor<<MA BOTTLE TONIC PLUS>> White

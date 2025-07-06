@@ -1,8 +1,8 @@
 sprite mdi-bullhorn-variant <svg width="48" height="48"><g transform="scale(2)"><path d="M20 2V4L4 8V6H2V18H4V16L6 16.5V18.5C6 20.4 7.6 22 9.5 22S13 20.4 13 18.5V18.3L20 20V22H22V2H20M11 18.5C11 19.3 10.3 20 9.5 20S8 19.3 8 18.5V17L11 17.8V18.5Z" /></g></svg>
 
-!define MA_BULLHORN_VARIANT(_color)                                 SPRITE_PUT(ma_bullhorn_variant, _color)
-!define MA_BULLHORN_VARIANT(_color, _scale)                         SPRITE_PUT(ma_bullhorn_variant, _color, _scale)
-!define MA_BULLHORN_VARIANT(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA BULLHORN VARIANT, ma_bullhorn_variant, _color, _scale)
-!define MA_BULLHORN_VARIANT(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA BULLHORN VARIANT, ma_bullhorn_variant, _color, _scale, _shape)
-!define MA_BULLHORN_VARIANT(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA BULLHORN VARIANT, _label, ma_bullhorn_variant, _color, _scale, _shape)
+!define MA_BULLHORN_VARIANT(_color)                                 SPRITE_PUT(mdi-bullhorn-variant, _color)
+!define MA_BULLHORN_VARIANT(_color, _scale)                         SPRITE_PUT(mdi-bullhorn-variant, _color, _scale)
+!define MA_BULLHORN_VARIANT(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA BULLHORN VARIANT, mdi-bullhorn-variant, _color, _scale)
+!define MA_BULLHORN_VARIANT(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA BULLHORN VARIANT, mdi-bullhorn-variant, _color, _scale, _shape)
+!define MA_BULLHORN_VARIANT(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA BULLHORN VARIANT, _label, mdi-bullhorn-variant, _color, _scale, _shape)
 skinparam folderBackgroundColor<<MA BULLHORN VARIANT>> White

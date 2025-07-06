@@ -1,8 +1,8 @@
 sprite mdi-mailbox-open-up-outline <svg width="48" height="48"><g transform="scale(2)"><path d="M14,12.85V6.85H18V8.85H16V12.85H14M18,3.85H8A5,5 0 0,0 3,8.85V17.85H1V19.85H21A2,2 0 0,0 23,17.85V8.85A5,5 0 0,0 18,3.85M11,17.85H5V8.85A3,3 0 0,1 8,5.85A3,3 0 0,1 11,8.85V17.85M21,17.85H13V8.85C13,7.76 12.65,6.71 12,5.85H18A3,3 0 0,1 21,8.85V17.85Z" /></g></svg>
 
-!define MA_MAILBOX_OPEN_UP_OUTLINE(_color)                                 SPRITE_PUT(ma_mailbox_open_up_outline, _color)
-!define MA_MAILBOX_OPEN_UP_OUTLINE(_color, _scale)                         SPRITE_PUT(ma_mailbox_open_up_outline, _color, _scale)
-!define MA_MAILBOX_OPEN_UP_OUTLINE(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA MAILBOX OPEN UP OUTLINE, ma_mailbox_open_up_outline, _color, _scale)
-!define MA_MAILBOX_OPEN_UP_OUTLINE(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA MAILBOX OPEN UP OUTLINE, ma_mailbox_open_up_outline, _color, _scale, _shape)
-!define MA_MAILBOX_OPEN_UP_OUTLINE(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA MAILBOX OPEN UP OUTLINE, _label, ma_mailbox_open_up_outline, _color, _scale, _shape)
+!define MA_MAILBOX_OPEN_UP_OUTLINE(_color)                                 SPRITE_PUT(mdi-mailbox-open-up-outline, _color)
+!define MA_MAILBOX_OPEN_UP_OUTLINE(_color, _scale)                         SPRITE_PUT(mdi-mailbox-open-up-outline, _color, _scale)
+!define MA_MAILBOX_OPEN_UP_OUTLINE(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA MAILBOX OPEN UP OUTLINE, mdi-mailbox-open-up-outline, _color, _scale)
+!define MA_MAILBOX_OPEN_UP_OUTLINE(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA MAILBOX OPEN UP OUTLINE, mdi-mailbox-open-up-outline, _color, _scale, _shape)
+!define MA_MAILBOX_OPEN_UP_OUTLINE(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA MAILBOX OPEN UP OUTLINE, _label, mdi-mailbox-open-up-outline, _color, _scale, _shape)
 skinparam folderBackgroundColor<<MA MAILBOX OPEN UP OUTLINE>> White

@@ -1,8 +1,8 @@
 sprite mdi-file-document-outline <svg width="48" height="48"><g transform="scale(2)"><path d="M6,2A2,2 0 0,0 4,4V20A2,2 0 0,0 6,22H18A2,2 0 0,0 20,20V8L14,2H6M6,4H13V9H18V20H6V4M8,12V14H16V12H8M8,16V18H13V16H8Z" /></g></svg>
 
-!define MA_FILE_DOCUMENT_OUTLINE(_color)                                 SPRITE_PUT(ma_file_document_outline, _color)
-!define MA_FILE_DOCUMENT_OUTLINE(_color, _scale)                         SPRITE_PUT(ma_file_document_outline, _color, _scale)
-!define MA_FILE_DOCUMENT_OUTLINE(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA FILE DOCUMENT OUTLINE, ma_file_document_outline, _color, _scale)
-!define MA_FILE_DOCUMENT_OUTLINE(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA FILE DOCUMENT OUTLINE, ma_file_document_outline, _color, _scale, _shape)
-!define MA_FILE_DOCUMENT_OUTLINE(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA FILE DOCUMENT OUTLINE, _label, ma_file_document_outline, _color, _scale, _shape)
+!define MA_FILE_DOCUMENT_OUTLINE(_color)                                 SPRITE_PUT(mdi-file-document-outline, _color)
+!define MA_FILE_DOCUMENT_OUTLINE(_color, _scale)                         SPRITE_PUT(mdi-file-document-outline, _color, _scale)
+!define MA_FILE_DOCUMENT_OUTLINE(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA FILE DOCUMENT OUTLINE, mdi-file-document-outline, _color, _scale)
+!define MA_FILE_DOCUMENT_OUTLINE(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA FILE DOCUMENT OUTLINE, mdi-file-document-outline, _color, _scale, _shape)
+!define MA_FILE_DOCUMENT_OUTLINE(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA FILE DOCUMENT OUTLINE, _label, mdi-file-document-outline, _color, _scale, _shape)
 skinparam folderBackgroundColor<<MA FILE DOCUMENT OUTLINE>> White

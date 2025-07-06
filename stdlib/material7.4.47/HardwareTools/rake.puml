@@ -1,8 +1,8 @@
 sprite mdi-rake <svg width="48" height="48"><g transform="scale(2)"><path d="M10.5 17.05L9.43 16L22.07 3.35L20.66 1.93L8 14.58L6.95 13.5C6.17 12.73 4.9 12.73 4.12 13.5L2 15.64L2.71 16.34L4.83 14.22L5.54 14.93L3.41 17.05L4.12 17.76L6.24 15.64L6.95 16.34L4.83 18.46L5.54 19.17L7.66 17.05L8.36 17.76L6.24 19.88L6.95 20.59L9.07 18.46L9.78 19.17L7.66 21.29L8.36 22L10.5 19.88C11.27 19.1 11.27 17.83 10.5 17.05Z" /></g></svg>
 
-!define MA_RAKE(_color)                                 SPRITE_PUT(ma_rake, _color)
-!define MA_RAKE(_color, _scale)                         SPRITE_PUT(ma_rake, _color, _scale)
-!define MA_RAKE(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA RAKE, ma_rake, _color, _scale)
-!define MA_RAKE(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA RAKE, ma_rake, _color, _scale, _shape)
-!define MA_RAKE(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA RAKE, _label, ma_rake, _color, _scale, _shape)
+!define MA_RAKE(_color)                                 SPRITE_PUT(mdi-rake, _color)
+!define MA_RAKE(_color, _scale)                         SPRITE_PUT(mdi-rake, _color, _scale)
+!define MA_RAKE(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA RAKE, mdi-rake, _color, _scale)
+!define MA_RAKE(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA RAKE, mdi-rake, _color, _scale, _shape)
+!define MA_RAKE(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA RAKE, _label, mdi-rake, _color, _scale, _shape)
 skinparam folderBackgroundColor<<MA RAKE>> White

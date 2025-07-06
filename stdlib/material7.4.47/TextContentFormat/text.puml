@@ -1,8 +1,8 @@
 sprite mdi-text <svg width="48" height="48"><g transform="scale(2)"><path d="M21,6V8H3V6H21M3,18H12V16H3V18M3,13H21V11H3V13Z" /></g></svg>
 
-!define MA_TEXT(_color)                                 SPRITE_PUT(ma_text, _color)
-!define MA_TEXT(_color, _scale)                         SPRITE_PUT(ma_text, _color, _scale)
-!define MA_TEXT(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA TEXT, ma_text, _color, _scale)
-!define MA_TEXT(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA TEXT, ma_text, _color, _scale, _shape)
-!define MA_TEXT(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA TEXT, _label, ma_text, _color, _scale, _shape)
+!define MA_TEXT(_color)                                 SPRITE_PUT(mdi-text, _color)
+!define MA_TEXT(_color, _scale)                         SPRITE_PUT(mdi-text, _color, _scale)
+!define MA_TEXT(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA TEXT, mdi-text, _color, _scale)
+!define MA_TEXT(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA TEXT, mdi-text, _color, _scale, _shape)
+!define MA_TEXT(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA TEXT, _label, mdi-text, _color, _scale, _shape)
 skinparam folderBackgroundColor<<MA TEXT>> White

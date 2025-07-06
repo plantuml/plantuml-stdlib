@@ -1,8 +1,8 @@
 sprite mdi-inbox-multiple <svg width="48" height="48"><g transform="scale(2)"><path d="M19,8V5H5V8H9A3,3 0 0,0 12,11A3,3 0 0,0 15,8H19M19,3A2,2 0 0,1 21,5V12A2,2 0 0,1 19,14H5A2,2 0 0,1 3,12V5A2,2 0 0,1 5,3H19M3,15H9A3,3 0 0,0 12,18A3,3 0 0,0 15,15H21V19A2,2 0 0,1 19,21H5A2,2 0 0,1 3,19V15Z" /></g></svg>
 
-!define MA_INBOX_MULTIPLE(_color)                                 SPRITE_PUT(ma_inbox_multiple, _color)
-!define MA_INBOX_MULTIPLE(_color, _scale)                         SPRITE_PUT(ma_inbox_multiple, _color, _scale)
-!define MA_INBOX_MULTIPLE(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA INBOX MULTIPLE, ma_inbox_multiple, _color, _scale)
-!define MA_INBOX_MULTIPLE(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA INBOX MULTIPLE, ma_inbox_multiple, _color, _scale, _shape)
-!define MA_INBOX_MULTIPLE(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA INBOX MULTIPLE, _label, ma_inbox_multiple, _color, _scale, _shape)
+!define MA_INBOX_MULTIPLE(_color)                                 SPRITE_PUT(mdi-inbox-multiple, _color)
+!define MA_INBOX_MULTIPLE(_color, _scale)                         SPRITE_PUT(mdi-inbox-multiple, _color, _scale)
+!define MA_INBOX_MULTIPLE(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA INBOX MULTIPLE, mdi-inbox-multiple, _color, _scale)
+!define MA_INBOX_MULTIPLE(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA INBOX MULTIPLE, mdi-inbox-multiple, _color, _scale, _shape)
+!define MA_INBOX_MULTIPLE(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA INBOX MULTIPLE, _label, mdi-inbox-multiple, _color, _scale, _shape)
 skinparam folderBackgroundColor<<MA INBOX MULTIPLE>> White

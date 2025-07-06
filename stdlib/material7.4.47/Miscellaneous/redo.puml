@@ -1,8 +1,8 @@
 sprite mdi-redo <svg width="48" height="48"><g transform="scale(2)"><path d="M18.4,10.6C16.55,9 14.15,8 11.5,8C6.85,8 2.92,11.03 1.54,15.22L3.9,16C4.95,12.81 7.95,10.5 11.5,10.5C13.45,10.5 15.23,11.22 16.62,12.38L13,16H22V7L18.4,10.6Z" /></g></svg>
 
-!define MA_REDO(_color)                                 SPRITE_PUT(ma_redo, _color)
-!define MA_REDO(_color, _scale)                         SPRITE_PUT(ma_redo, _color, _scale)
-!define MA_REDO(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA REDO, ma_redo, _color, _scale)
-!define MA_REDO(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA REDO, ma_redo, _color, _scale, _shape)
-!define MA_REDO(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA REDO, _label, ma_redo, _color, _scale, _shape)
+!define MA_REDO(_color)                                 SPRITE_PUT(mdi-redo, _color)
+!define MA_REDO(_color, _scale)                         SPRITE_PUT(mdi-redo, _color, _scale)
+!define MA_REDO(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA REDO, mdi-redo, _color, _scale)
+!define MA_REDO(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA REDO, mdi-redo, _color, _scale, _shape)
+!define MA_REDO(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA REDO, _label, mdi-redo, _color, _scale, _shape)
 skinparam folderBackgroundColor<<MA REDO>> White

@@ -1,8 +1,8 @@
 sprite mdi-menu-right-outline <svg width="48" height="48"><g transform="scale(2)"><path d="M9,6H10.5L16.5,12L10.5,18H9V6M13.67,12L11,9.33V14.67L13.67,12Z" /></g></svg>
 
-!define MA_MENU_RIGHT_OUTLINE(_color)                                 SPRITE_PUT(ma_menu_right_outline, _color)
-!define MA_MENU_RIGHT_OUTLINE(_color, _scale)                         SPRITE_PUT(ma_menu_right_outline, _color, _scale)
-!define MA_MENU_RIGHT_OUTLINE(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA MENU RIGHT OUTLINE, ma_menu_right_outline, _color, _scale)
-!define MA_MENU_RIGHT_OUTLINE(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA MENU RIGHT OUTLINE, ma_menu_right_outline, _color, _scale, _shape)
-!define MA_MENU_RIGHT_OUTLINE(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA MENU RIGHT OUTLINE, _label, ma_menu_right_outline, _color, _scale, _shape)
+!define MA_MENU_RIGHT_OUTLINE(_color)                                 SPRITE_PUT(mdi-menu-right-outline, _color)
+!define MA_MENU_RIGHT_OUTLINE(_color, _scale)                         SPRITE_PUT(mdi-menu-right-outline, _color, _scale)
+!define MA_MENU_RIGHT_OUTLINE(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA MENU RIGHT OUTLINE, mdi-menu-right-outline, _color, _scale)
+!define MA_MENU_RIGHT_OUTLINE(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA MENU RIGHT OUTLINE, mdi-menu-right-outline, _color, _scale, _shape)
+!define MA_MENU_RIGHT_OUTLINE(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA MENU RIGHT OUTLINE, _label, mdi-menu-right-outline, _color, _scale, _shape)
 skinparam folderBackgroundColor<<MA MENU RIGHT OUTLINE>> White

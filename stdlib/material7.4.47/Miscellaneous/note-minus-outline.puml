@@ -1,8 +1,8 @@
 sprite mdi-note-minus-outline <svg width="48" height="48"><g transform="scale(2)"><path d="M23 18V20H15V18H23M13 19C13 19.7 13.13 20.37 13.35 21H5C3.89 21 3 20.1 3 19V5C3 3.89 3.89 3 5 3H15L21 9V13.35C20.37 13.13 19.7 13 19 13V12H12V5H5V19H13M14 10H19.5L14 4.5V10Z" /></g></svg>
 
-!define MA_NOTE_MINUS_OUTLINE(_color)                                 SPRITE_PUT(ma_note_minus_outline, _color)
-!define MA_NOTE_MINUS_OUTLINE(_color, _scale)                         SPRITE_PUT(ma_note_minus_outline, _color, _scale)
-!define MA_NOTE_MINUS_OUTLINE(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA NOTE MINUS OUTLINE, ma_note_minus_outline, _color, _scale)
-!define MA_NOTE_MINUS_OUTLINE(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA NOTE MINUS OUTLINE, ma_note_minus_outline, _color, _scale, _shape)
-!define MA_NOTE_MINUS_OUTLINE(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA NOTE MINUS OUTLINE, _label, ma_note_minus_outline, _color, _scale, _shape)
+!define MA_NOTE_MINUS_OUTLINE(_color)                                 SPRITE_PUT(mdi-note-minus-outline, _color)
+!define MA_NOTE_MINUS_OUTLINE(_color, _scale)                         SPRITE_PUT(mdi-note-minus-outline, _color, _scale)
+!define MA_NOTE_MINUS_OUTLINE(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA NOTE MINUS OUTLINE, mdi-note-minus-outline, _color, _scale)
+!define MA_NOTE_MINUS_OUTLINE(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA NOTE MINUS OUTLINE, mdi-note-minus-outline, _color, _scale, _shape)
+!define MA_NOTE_MINUS_OUTLINE(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA NOTE MINUS OUTLINE, _label, mdi-note-minus-outline, _color, _scale, _shape)
 skinparam folderBackgroundColor<<MA NOTE MINUS OUTLINE>> White

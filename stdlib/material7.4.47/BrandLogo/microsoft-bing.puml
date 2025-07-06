@@ -1,8 +1,8 @@
 sprite mdi-microsoft-bing <svg width="48" height="48"><g transform="scale(2)"><path d="M5,3V19L8.72,21L18,15.82V11.73H18L9.77,8.95L11.38,12.84L13.94,14L8.7,16.92V4.27L5,3" /></g></svg>
 
-!define MA_MICROSOFT_BING(_color)                                 SPRITE_PUT(ma_microsoft_bing, _color)
-!define MA_MICROSOFT_BING(_color, _scale)                         SPRITE_PUT(ma_microsoft_bing, _color, _scale)
-!define MA_MICROSOFT_BING(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA MICROSOFT BING, ma_microsoft_bing, _color, _scale)
-!define MA_MICROSOFT_BING(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA MICROSOFT BING, ma_microsoft_bing, _color, _scale, _shape)
-!define MA_MICROSOFT_BING(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA MICROSOFT BING, _label, ma_microsoft_bing, _color, _scale, _shape)
+!define MA_MICROSOFT_BING(_color)                                 SPRITE_PUT(mdi-microsoft-bing, _color)
+!define MA_MICROSOFT_BING(_color, _scale)                         SPRITE_PUT(mdi-microsoft-bing, _color, _scale)
+!define MA_MICROSOFT_BING(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA MICROSOFT BING, mdi-microsoft-bing, _color, _scale)
+!define MA_MICROSOFT_BING(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA MICROSOFT BING, mdi-microsoft-bing, _color, _scale, _shape)
+!define MA_MICROSOFT_BING(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA MICROSOFT BING, _label, mdi-microsoft-bing, _color, _scale, _shape)
 skinparam folderBackgroundColor<<MA MICROSOFT BING>> White

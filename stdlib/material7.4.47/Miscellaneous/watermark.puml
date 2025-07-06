@@ -1,8 +1,8 @@
 sprite mdi-watermark <svg width="48" height="48"><g transform="scale(2)"><path d="M21,3H3A2,2 0 0,0 1,5V19A2,2 0 0,0 3,21H21A2,2 0 0,0 23,19V5A2,2 0 0,0 21,3M21,19H12V13H21V19Z" /></g></svg>
 
-!define MA_WATERMARK(_color)                                 SPRITE_PUT(ma_watermark, _color)
-!define MA_WATERMARK(_color, _scale)                         SPRITE_PUT(ma_watermark, _color, _scale)
-!define MA_WATERMARK(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA WATERMARK, ma_watermark, _color, _scale)
-!define MA_WATERMARK(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA WATERMARK, ma_watermark, _color, _scale, _shape)
-!define MA_WATERMARK(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA WATERMARK, _label, ma_watermark, _color, _scale, _shape)
+!define MA_WATERMARK(_color)                                 SPRITE_PUT(mdi-watermark, _color)
+!define MA_WATERMARK(_color, _scale)                         SPRITE_PUT(mdi-watermark, _color, _scale)
+!define MA_WATERMARK(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA WATERMARK, mdi-watermark, _color, _scale)
+!define MA_WATERMARK(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA WATERMARK, mdi-watermark, _color, _scale, _shape)
+!define MA_WATERMARK(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA WATERMARK, _label, mdi-watermark, _color, _scale, _shape)
 skinparam folderBackgroundColor<<MA WATERMARK>> White

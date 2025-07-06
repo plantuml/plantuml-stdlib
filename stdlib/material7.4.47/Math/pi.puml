@@ -1,8 +1,8 @@
 sprite mdi-pi <svg width="48" height="48"><g transform="scale(2)"><path d="M4,5V7H6V19H8V7H14V16A3,3 0 0,0 17,19A3,3 0 0,0 20,16H18A1,1 0 0,1 17,17A1,1 0 0,1 16,16V7H18V5" /></g></svg>
 
-!define MA_PI(_color)                                 SPRITE_PUT(ma_pi, _color)
-!define MA_PI(_color, _scale)                         SPRITE_PUT(ma_pi, _color, _scale)
-!define MA_PI(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA PI, ma_pi, _color, _scale)
-!define MA_PI(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA PI, ma_pi, _color, _scale, _shape)
-!define MA_PI(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA PI, _label, ma_pi, _color, _scale, _shape)
+!define MA_PI(_color)                                 SPRITE_PUT(mdi-pi, _color)
+!define MA_PI(_color, _scale)                         SPRITE_PUT(mdi-pi, _color, _scale)
+!define MA_PI(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA PI, mdi-pi, _color, _scale)
+!define MA_PI(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA PI, mdi-pi, _color, _scale, _shape)
+!define MA_PI(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA PI, _label, mdi-pi, _color, _scale, _shape)
 skinparam folderBackgroundColor<<MA PI>> White

@@ -1,8 +1,8 @@
 sprite mdi-roller-shade <svg width="48" height="48"><g transform="scale(2)"><path d="M20 19V3H4V19H2V21H22V19H20M6 19V13H11V14.8C10.6 15.1 10.2 15.6 10.2 16.2C10.2 17.2 11 18 12 18S13.8 17.2 13.8 16.2C13.8 15.6 13.5 15.1 13 14.8V13H18V19H6Z" /></g></svg>
 
-!define MA_ROLLER_SHADE(_color)                                 SPRITE_PUT(ma_roller_shade, _color)
-!define MA_ROLLER_SHADE(_color, _scale)                         SPRITE_PUT(ma_roller_shade, _color, _scale)
-!define MA_ROLLER_SHADE(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA ROLLER SHADE, ma_roller_shade, _color, _scale)
-!define MA_ROLLER_SHADE(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA ROLLER SHADE, ma_roller_shade, _color, _scale, _shape)
-!define MA_ROLLER_SHADE(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA ROLLER SHADE, _label, ma_roller_shade, _color, _scale, _shape)
+!define MA_ROLLER_SHADE(_color)                                 SPRITE_PUT(mdi-roller-shade, _color)
+!define MA_ROLLER_SHADE(_color, _scale)                         SPRITE_PUT(mdi-roller-shade, _color, _scale)
+!define MA_ROLLER_SHADE(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA ROLLER SHADE, mdi-roller-shade, _color, _scale)
+!define MA_ROLLER_SHADE(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA ROLLER SHADE, mdi-roller-shade, _color, _scale, _shape)
+!define MA_ROLLER_SHADE(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA ROLLER SHADE, _label, mdi-roller-shade, _color, _scale, _shape)
 skinparam folderBackgroundColor<<MA ROLLER SHADE>> White

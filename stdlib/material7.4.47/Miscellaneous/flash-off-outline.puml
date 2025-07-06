@@ -1,8 +1,8 @@
 sprite mdi-flash-off-outline <svg width="48" height="48"><g transform="scale(2)"><path d="M9 6.19L7 4.19V2H17L13.5 9H17L15.18 12.37L11.43 8.62L13.76 4H9V6.19M19 18.73L17.73 20L13.41 15.68L10 22V14H7V9.27L2 4.27L3.27 3L19 18.73Z" /></g></svg>
 
-!define MA_FLASH_OFF_OUTLINE(_color)                                 SPRITE_PUT(ma_flash_off_outline, _color)
-!define MA_FLASH_OFF_OUTLINE(_color, _scale)                         SPRITE_PUT(ma_flash_off_outline, _color, _scale)
-!define MA_FLASH_OFF_OUTLINE(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA FLASH OFF OUTLINE, ma_flash_off_outline, _color, _scale)
-!define MA_FLASH_OFF_OUTLINE(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA FLASH OFF OUTLINE, ma_flash_off_outline, _color, _scale, _shape)
-!define MA_FLASH_OFF_OUTLINE(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA FLASH OFF OUTLINE, _label, ma_flash_off_outline, _color, _scale, _shape)
+!define MA_FLASH_OFF_OUTLINE(_color)                                 SPRITE_PUT(mdi-flash-off-outline, _color)
+!define MA_FLASH_OFF_OUTLINE(_color, _scale)                         SPRITE_PUT(mdi-flash-off-outline, _color, _scale)
+!define MA_FLASH_OFF_OUTLINE(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA FLASH OFF OUTLINE, mdi-flash-off-outline, _color, _scale)
+!define MA_FLASH_OFF_OUTLINE(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA FLASH OFF OUTLINE, mdi-flash-off-outline, _color, _scale, _shape)
+!define MA_FLASH_OFF_OUTLINE(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA FLASH OFF OUTLINE, _label, mdi-flash-off-outline, _color, _scale, _shape)
 skinparam folderBackgroundColor<<MA FLASH OFF OUTLINE>> White

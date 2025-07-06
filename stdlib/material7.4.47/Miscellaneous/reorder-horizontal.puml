@@ -1,8 +1,8 @@
 sprite mdi-reorder-horizontal <svg width="48" height="48"><g transform="scale(2)"><path d="M3,15H21V13H3V15M3,19H21V17H3V19M3,11H21V9H3V11M3,5V7H21V5H3Z" /></g></svg>
 
-!define MA_REORDER_HORIZONTAL(_color)                                 SPRITE_PUT(ma_reorder_horizontal, _color)
-!define MA_REORDER_HORIZONTAL(_color, _scale)                         SPRITE_PUT(ma_reorder_horizontal, _color, _scale)
-!define MA_REORDER_HORIZONTAL(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA REORDER HORIZONTAL, ma_reorder_horizontal, _color, _scale)
-!define MA_REORDER_HORIZONTAL(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA REORDER HORIZONTAL, ma_reorder_horizontal, _color, _scale, _shape)
-!define MA_REORDER_HORIZONTAL(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA REORDER HORIZONTAL, _label, ma_reorder_horizontal, _color, _scale, _shape)
+!define MA_REORDER_HORIZONTAL(_color)                                 SPRITE_PUT(mdi-reorder-horizontal, _color)
+!define MA_REORDER_HORIZONTAL(_color, _scale)                         SPRITE_PUT(mdi-reorder-horizontal, _color, _scale)
+!define MA_REORDER_HORIZONTAL(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA REORDER HORIZONTAL, mdi-reorder-horizontal, _color, _scale)
+!define MA_REORDER_HORIZONTAL(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA REORDER HORIZONTAL, mdi-reorder-horizontal, _color, _scale, _shape)
+!define MA_REORDER_HORIZONTAL(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA REORDER HORIZONTAL, _label, mdi-reorder-horizontal, _color, _scale, _shape)
 skinparam folderBackgroundColor<<MA REORDER HORIZONTAL>> White

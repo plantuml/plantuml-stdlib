@@ -1,8 +1,8 @@
 sprite mdi-format-wrap-inline <svg width="48" height="48"><g transform="scale(2)"><path d="M8,7L13,17H3L8,7M3,3H21V5H3V3M21,15V17H14V15H21M3,19H21V21H3V19Z" /></g></svg>
 
-!define MA_FORMAT_WRAP_INLINE(_color)                                 SPRITE_PUT(ma_format_wrap_inline, _color)
-!define MA_FORMAT_WRAP_INLINE(_color, _scale)                         SPRITE_PUT(ma_format_wrap_inline, _color, _scale)
-!define MA_FORMAT_WRAP_INLINE(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA FORMAT WRAP INLINE, ma_format_wrap_inline, _color, _scale)
-!define MA_FORMAT_WRAP_INLINE(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA FORMAT WRAP INLINE, ma_format_wrap_inline, _color, _scale, _shape)
-!define MA_FORMAT_WRAP_INLINE(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA FORMAT WRAP INLINE, _label, ma_format_wrap_inline, _color, _scale, _shape)
+!define MA_FORMAT_WRAP_INLINE(_color)                                 SPRITE_PUT(mdi-format-wrap-inline, _color)
+!define MA_FORMAT_WRAP_INLINE(_color, _scale)                         SPRITE_PUT(mdi-format-wrap-inline, _color, _scale)
+!define MA_FORMAT_WRAP_INLINE(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA FORMAT WRAP INLINE, mdi-format-wrap-inline, _color, _scale)
+!define MA_FORMAT_WRAP_INLINE(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA FORMAT WRAP INLINE, mdi-format-wrap-inline, _color, _scale, _shape)
+!define MA_FORMAT_WRAP_INLINE(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA FORMAT WRAP INLINE, _label, mdi-format-wrap-inline, _color, _scale, _shape)
 skinparam folderBackgroundColor<<MA FORMAT WRAP INLINE>> White

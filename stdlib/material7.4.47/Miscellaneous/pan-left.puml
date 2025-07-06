@@ -1,8 +1,8 @@
 sprite mdi-pan-left <svg width="48" height="48"><g transform="scale(2)"><path d="M7,8L2.5,12L7,16V8M12,10A2,2 0 0,0 10,12A2,2 0 0,0 12,14A2,2 0 0,0 14,12A2,2 0 0,0 12,10Z" /></g></svg>
 
-!define MA_PAN_LEFT(_color)                                 SPRITE_PUT(ma_pan_left, _color)
-!define MA_PAN_LEFT(_color, _scale)                         SPRITE_PUT(ma_pan_left, _color, _scale)
-!define MA_PAN_LEFT(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA PAN LEFT, ma_pan_left, _color, _scale)
-!define MA_PAN_LEFT(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA PAN LEFT, ma_pan_left, _color, _scale, _shape)
-!define MA_PAN_LEFT(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA PAN LEFT, _label, ma_pan_left, _color, _scale, _shape)
+!define MA_PAN_LEFT(_color)                                 SPRITE_PUT(mdi-pan-left, _color)
+!define MA_PAN_LEFT(_color, _scale)                         SPRITE_PUT(mdi-pan-left, _color, _scale)
+!define MA_PAN_LEFT(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA PAN LEFT, mdi-pan-left, _color, _scale)
+!define MA_PAN_LEFT(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA PAN LEFT, mdi-pan-left, _color, _scale, _shape)
+!define MA_PAN_LEFT(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA PAN LEFT, _label, mdi-pan-left, _color, _scale, _shape)
 skinparam folderBackgroundColor<<MA PAN LEFT>> White

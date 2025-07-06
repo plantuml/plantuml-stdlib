@@ -1,8 +1,8 @@
 sprite mdi-chess-rook <svg width="48" height="48"><g transform="scale(2)"><path d="M5,20H19V22H5V20M17,2V5H15V2H13V5H11V2H9V5H7V2H5V8H7V18H17V8H19V2H17Z" /></g></svg>
 
-!define MA_CHESS_ROOK(_color)                                 SPRITE_PUT(ma_chess_rook, _color)
-!define MA_CHESS_ROOK(_color, _scale)                         SPRITE_PUT(ma_chess_rook, _color, _scale)
-!define MA_CHESS_ROOK(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA CHESS ROOK, ma_chess_rook, _color, _scale)
-!define MA_CHESS_ROOK(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA CHESS ROOK, ma_chess_rook, _color, _scale, _shape)
-!define MA_CHESS_ROOK(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA CHESS ROOK, _label, ma_chess_rook, _color, _scale, _shape)
+!define MA_CHESS_ROOK(_color)                                 SPRITE_PUT(mdi-chess-rook, _color)
+!define MA_CHESS_ROOK(_color, _scale)                         SPRITE_PUT(mdi-chess-rook, _color, _scale)
+!define MA_CHESS_ROOK(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA CHESS ROOK, mdi-chess-rook, _color, _scale)
+!define MA_CHESS_ROOK(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA CHESS ROOK, mdi-chess-rook, _color, _scale, _shape)
+!define MA_CHESS_ROOK(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA CHESS ROOK, _label, mdi-chess-rook, _color, _scale, _shape)
 skinparam folderBackgroundColor<<MA CHESS ROOK>> White

@@ -1,8 +1,8 @@
 sprite mdi-view-column-outline <svg width="48" height="48"><g transform="scale(2)"><path d="M4 5V18H21V5H4M14 7V16H11V7H14M6 7H9V16H6V7M19 16H16V7H19V16Z" /></g></svg>
 
-!define MA_VIEW_COLUMN_OUTLINE(_color)                                 SPRITE_PUT(ma_view_column_outline, _color)
-!define MA_VIEW_COLUMN_OUTLINE(_color, _scale)                         SPRITE_PUT(ma_view_column_outline, _color, _scale)
-!define MA_VIEW_COLUMN_OUTLINE(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA VIEW COLUMN OUTLINE, ma_view_column_outline, _color, _scale)
-!define MA_VIEW_COLUMN_OUTLINE(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA VIEW COLUMN OUTLINE, ma_view_column_outline, _color, _scale, _shape)
-!define MA_VIEW_COLUMN_OUTLINE(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA VIEW COLUMN OUTLINE, _label, ma_view_column_outline, _color, _scale, _shape)
+!define MA_VIEW_COLUMN_OUTLINE(_color)                                 SPRITE_PUT(mdi-view-column-outline, _color)
+!define MA_VIEW_COLUMN_OUTLINE(_color, _scale)                         SPRITE_PUT(mdi-view-column-outline, _color, _scale)
+!define MA_VIEW_COLUMN_OUTLINE(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA VIEW COLUMN OUTLINE, mdi-view-column-outline, _color, _scale)
+!define MA_VIEW_COLUMN_OUTLINE(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA VIEW COLUMN OUTLINE, mdi-view-column-outline, _color, _scale, _shape)
+!define MA_VIEW_COLUMN_OUTLINE(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA VIEW COLUMN OUTLINE, _label, mdi-view-column-outline, _color, _scale, _shape)
 skinparam folderBackgroundColor<<MA VIEW COLUMN OUTLINE>> White

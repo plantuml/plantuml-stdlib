@@ -1,8 +1,8 @@
 sprite mdi-human-male-board <svg width="48" height="48"><g transform="scale(2)"><path d="M20,17A2,2 0 0,0 22,15V4A2,2 0 0,0 20,2H9.46C9.81,2.61 10,3.3 10,4H20V15H11V17M15,7V9H9V22H7V16H5V22H3V14H1.5V9A2,2 0 0,1 3.5,7H15M8,4A2,2 0 0,1 6,6A2,2 0 0,1 4,4A2,2 0 0,1 6,2A2,2 0 0,1 8,4Z" /></g></svg>
 
-!define MA_HUMAN_MALE_BOARD(_color)                                 SPRITE_PUT(ma_human_male_board, _color)
-!define MA_HUMAN_MALE_BOARD(_color, _scale)                         SPRITE_PUT(ma_human_male_board, _color, _scale)
-!define MA_HUMAN_MALE_BOARD(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA HUMAN MALE BOARD, ma_human_male_board, _color, _scale)
-!define MA_HUMAN_MALE_BOARD(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA HUMAN MALE BOARD, ma_human_male_board, _color, _scale, _shape)
-!define MA_HUMAN_MALE_BOARD(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA HUMAN MALE BOARD, _label, ma_human_male_board, _color, _scale, _shape)
+!define MA_HUMAN_MALE_BOARD(_color)                                 SPRITE_PUT(mdi-human-male-board, _color)
+!define MA_HUMAN_MALE_BOARD(_color, _scale)                         SPRITE_PUT(mdi-human-male-board, _color, _scale)
+!define MA_HUMAN_MALE_BOARD(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA HUMAN MALE BOARD, mdi-human-male-board, _color, _scale)
+!define MA_HUMAN_MALE_BOARD(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA HUMAN MALE BOARD, mdi-human-male-board, _color, _scale, _shape)
+!define MA_HUMAN_MALE_BOARD(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA HUMAN MALE BOARD, _label, mdi-human-male-board, _color, _scale, _shape)
 skinparam folderBackgroundColor<<MA HUMAN MALE BOARD>> White

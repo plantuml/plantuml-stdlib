@@ -1,8 +1,8 @@
 sprite mdi-image-album <svg width="48" height="48"><g transform="scale(2)"><path d="M6,19L9,15.14L11.14,17.72L14.14,13.86L18,19H6M6,4H11V12L8.5,10.5L6,12M18,2H6A2,2 0 0,0 4,4V20A2,2 0 0,0 6,22H18A2,2 0 0,0 20,20V4A2,2 0 0,0 18,2Z" /></g></svg>
 
-!define MA_IMAGE_ALBUM(_color)                                 SPRITE_PUT(ma_image_album, _color)
-!define MA_IMAGE_ALBUM(_color, _scale)                         SPRITE_PUT(ma_image_album, _color, _scale)
-!define MA_IMAGE_ALBUM(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA IMAGE ALBUM, ma_image_album, _color, _scale)
-!define MA_IMAGE_ALBUM(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA IMAGE ALBUM, ma_image_album, _color, _scale, _shape)
-!define MA_IMAGE_ALBUM(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA IMAGE ALBUM, _label, ma_image_album, _color, _scale, _shape)
+!define MA_IMAGE_ALBUM(_color)                                 SPRITE_PUT(mdi-image-album, _color)
+!define MA_IMAGE_ALBUM(_color, _scale)                         SPRITE_PUT(mdi-image-album, _color, _scale)
+!define MA_IMAGE_ALBUM(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA IMAGE ALBUM, mdi-image-album, _color, _scale)
+!define MA_IMAGE_ALBUM(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA IMAGE ALBUM, mdi-image-album, _color, _scale, _shape)
+!define MA_IMAGE_ALBUM(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA IMAGE ALBUM, _label, mdi-image-album, _color, _scale, _shape)
 skinparam folderBackgroundColor<<MA IMAGE ALBUM>> White

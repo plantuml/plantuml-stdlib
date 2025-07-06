@@ -1,8 +1,8 @@
 sprite mdi-lamp <svg width="48" height="48"><g transform="scale(2)"><path d="M8,2H16L20,14H4L8,2M11,15H13V20H18V22H6V20H11V15Z" /></g></svg>
 
-!define MA_LAMP(_color)                                 SPRITE_PUT(ma_lamp, _color)
-!define MA_LAMP(_color, _scale)                         SPRITE_PUT(ma_lamp, _color, _scale)
-!define MA_LAMP(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA LAMP, ma_lamp, _color, _scale)
-!define MA_LAMP(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA LAMP, ma_lamp, _color, _scale, _shape)
-!define MA_LAMP(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA LAMP, _label, ma_lamp, _color, _scale, _shape)
+!define MA_LAMP(_color)                                 SPRITE_PUT(mdi-lamp, _color)
+!define MA_LAMP(_color, _scale)                         SPRITE_PUT(mdi-lamp, _color, _scale)
+!define MA_LAMP(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA LAMP, mdi-lamp, _color, _scale)
+!define MA_LAMP(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA LAMP, mdi-lamp, _color, _scale, _shape)
+!define MA_LAMP(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA LAMP, _label, mdi-lamp, _color, _scale, _shape)
 skinparam folderBackgroundColor<<MA LAMP>> White

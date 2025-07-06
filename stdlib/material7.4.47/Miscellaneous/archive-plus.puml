@@ -1,8 +1,8 @@
 sprite mdi-archive-plus <svg width="48" height="48"><g transform="scale(2)"><path d="M21 7H3V3H21V7M13 19C13 19.7 13.13 20.37 13.35 21H4V8H20V13.09C19.67 13.04 19.34 13 19 13C15.69 13 13 15.69 13 19M15 13V11.5C15 11.22 14.78 11 14.5 11H9.5C9.22 11 9 11.22 9 11.5V13H15M20 18V15H18V18H15V20H18V23H20V20H23V18H20Z" /></g></svg>
 
-!define MA_ARCHIVE_PLUS(_color)                                 SPRITE_PUT(ma_archive_plus, _color)
-!define MA_ARCHIVE_PLUS(_color, _scale)                         SPRITE_PUT(ma_archive_plus, _color, _scale)
-!define MA_ARCHIVE_PLUS(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA ARCHIVE PLUS, ma_archive_plus, _color, _scale)
-!define MA_ARCHIVE_PLUS(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA ARCHIVE PLUS, ma_archive_plus, _color, _scale, _shape)
-!define MA_ARCHIVE_PLUS(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA ARCHIVE PLUS, _label, ma_archive_plus, _color, _scale, _shape)
+!define MA_ARCHIVE_PLUS(_color)                                 SPRITE_PUT(mdi-archive-plus, _color)
+!define MA_ARCHIVE_PLUS(_color, _scale)                         SPRITE_PUT(mdi-archive-plus, _color, _scale)
+!define MA_ARCHIVE_PLUS(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA ARCHIVE PLUS, mdi-archive-plus, _color, _scale)
+!define MA_ARCHIVE_PLUS(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA ARCHIVE PLUS, mdi-archive-plus, _color, _scale, _shape)
+!define MA_ARCHIVE_PLUS(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA ARCHIVE PLUS, _label, mdi-archive-plus, _color, _scale, _shape)
 skinparam folderBackgroundColor<<MA ARCHIVE PLUS>> White

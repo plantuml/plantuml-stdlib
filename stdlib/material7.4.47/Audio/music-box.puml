@@ -1,8 +1,8 @@
 sprite mdi-music-box <svg width="48" height="48"><g transform="scale(2)"><path d="M16,9H13V14.5A2.5,2.5 0 0,1 10.5,17A2.5,2.5 0 0,1 8,14.5A2.5,2.5 0 0,1 10.5,12C11.07,12 11.58,12.19 12,12.5V7H16M19,3H5A2,2 0 0,0 3,5V19A2,2 0 0,0 5,21H19A2,2 0 0,0 21,19V5A2,2 0 0,0 19,3Z" /></g></svg>
 
-!define MA_MUSIC_BOX(_color)                                 SPRITE_PUT(ma_music_box, _color)
-!define MA_MUSIC_BOX(_color, _scale)                         SPRITE_PUT(ma_music_box, _color, _scale)
-!define MA_MUSIC_BOX(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA MUSIC BOX, ma_music_box, _color, _scale)
-!define MA_MUSIC_BOX(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA MUSIC BOX, ma_music_box, _color, _scale, _shape)
-!define MA_MUSIC_BOX(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA MUSIC BOX, _label, ma_music_box, _color, _scale, _shape)
+!define MA_MUSIC_BOX(_color)                                 SPRITE_PUT(mdi-music-box, _color)
+!define MA_MUSIC_BOX(_color, _scale)                         SPRITE_PUT(mdi-music-box, _color, _scale)
+!define MA_MUSIC_BOX(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA MUSIC BOX, mdi-music-box, _color, _scale)
+!define MA_MUSIC_BOX(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA MUSIC BOX, mdi-music-box, _color, _scale, _shape)
+!define MA_MUSIC_BOX(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA MUSIC BOX, _label, mdi-music-box, _color, _scale, _shape)
 skinparam folderBackgroundColor<<MA MUSIC BOX>> White

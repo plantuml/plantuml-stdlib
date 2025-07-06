@@ -1,8 +1,8 @@
 sprite mdi-music-note-half <svg width="48" height="48"><g transform="scale(2)"><path d="M16 3H14V13.56A3.96 3.96 0 0 0 12 13A4 4 0 1 0 16 17V3M12 19A2 2 0 1 1 14 17A2 2 0 0 1 12 19Z" /></g></svg>
 
-!define MA_MUSIC_NOTE_HALF(_color)                                 SPRITE_PUT(ma_music_note_half, _color)
-!define MA_MUSIC_NOTE_HALF(_color, _scale)                         SPRITE_PUT(ma_music_note_half, _color, _scale)
-!define MA_MUSIC_NOTE_HALF(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA MUSIC NOTE HALF, ma_music_note_half, _color, _scale)
-!define MA_MUSIC_NOTE_HALF(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA MUSIC NOTE HALF, ma_music_note_half, _color, _scale, _shape)
-!define MA_MUSIC_NOTE_HALF(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA MUSIC NOTE HALF, _label, ma_music_note_half, _color, _scale, _shape)
+!define MA_MUSIC_NOTE_HALF(_color)                                 SPRITE_PUT(mdi-music-note-half, _color)
+!define MA_MUSIC_NOTE_HALF(_color, _scale)                         SPRITE_PUT(mdi-music-note-half, _color, _scale)
+!define MA_MUSIC_NOTE_HALF(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA MUSIC NOTE HALF, mdi-music-note-half, _color, _scale)
+!define MA_MUSIC_NOTE_HALF(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA MUSIC NOTE HALF, mdi-music-note-half, _color, _scale, _shape)
+!define MA_MUSIC_NOTE_HALF(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA MUSIC NOTE HALF, _label, mdi-music-note-half, _color, _scale, _shape)
 skinparam folderBackgroundColor<<MA MUSIC NOTE HALF>> White

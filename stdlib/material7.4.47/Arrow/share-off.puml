@@ -1,8 +1,8 @@
 sprite mdi-share-off <svg width="48" height="48"><g transform="scale(2)"><path d="M20.8 22.7L15.6 17.5L14 19V15.9L13.1 14.9C8.6 15.2 5.4 16.8 3 20.1C3.58 16.31 5.72 12.94 8.9 10.8L1.1 3L2.4 1.7L22.1 21.5M18.1 14.9L21 12L14 5V9L12.5 9.3" /></g></svg>
 
-!define MA_SHARE_OFF(_color)                                 SPRITE_PUT(ma_share_off, _color)
-!define MA_SHARE_OFF(_color, _scale)                         SPRITE_PUT(ma_share_off, _color, _scale)
-!define MA_SHARE_OFF(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA SHARE OFF, ma_share_off, _color, _scale)
-!define MA_SHARE_OFF(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA SHARE OFF, ma_share_off, _color, _scale, _shape)
-!define MA_SHARE_OFF(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA SHARE OFF, _label, ma_share_off, _color, _scale, _shape)
+!define MA_SHARE_OFF(_color)                                 SPRITE_PUT(mdi-share-off, _color)
+!define MA_SHARE_OFF(_color, _scale)                         SPRITE_PUT(mdi-share-off, _color, _scale)
+!define MA_SHARE_OFF(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA SHARE OFF, mdi-share-off, _color, _scale)
+!define MA_SHARE_OFF(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA SHARE OFF, mdi-share-off, _color, _scale, _shape)
+!define MA_SHARE_OFF(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA SHARE OFF, _label, mdi-share-off, _color, _scale, _shape)
 skinparam folderBackgroundColor<<MA SHARE OFF>> White

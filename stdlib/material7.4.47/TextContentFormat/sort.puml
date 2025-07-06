@@ -1,8 +1,8 @@
 sprite mdi-sort <svg width="48" height="48"><g transform="scale(2)"><path d="M18 21L14 17H17V7H14L18 3L22 7H19V17H22M2 19V17H12V19M2 13V11H9V13M2 7V5H6V7H2Z" /></g></svg>
 
-!define MA_SORT(_color)                                 SPRITE_PUT(ma_sort, _color)
-!define MA_SORT(_color, _scale)                         SPRITE_PUT(ma_sort, _color, _scale)
-!define MA_SORT(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA SORT, ma_sort, _color, _scale)
-!define MA_SORT(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA SORT, ma_sort, _color, _scale, _shape)
-!define MA_SORT(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA SORT, _label, ma_sort, _color, _scale, _shape)
+!define MA_SORT(_color)                                 SPRITE_PUT(mdi-sort, _color)
+!define MA_SORT(_color, _scale)                         SPRITE_PUT(mdi-sort, _color, _scale)
+!define MA_SORT(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA SORT, mdi-sort, _color, _scale)
+!define MA_SORT(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA SORT, mdi-sort, _color, _scale, _shape)
+!define MA_SORT(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA SORT, _label, mdi-sort, _color, _scale, _shape)
 skinparam folderBackgroundColor<<MA SORT>> White

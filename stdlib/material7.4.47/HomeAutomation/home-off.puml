@@ -1,8 +1,8 @@
 sprite mdi-home-off <svg width="48" height="48"><g transform="scale(2)"><path d="M20.84 22.73L18.11 20H14V15.89L12.11 14H10V20H5V12H2L6.27 8.16L1.11 3L2.39 1.73L22.11 21.46L20.84 22.73M19 12H22L12 3L8.95 5.75L19 15.8V12Z" /></g></svg>
 
-!define MA_HOME_OFF(_color)                                 SPRITE_PUT(ma_home_off, _color)
-!define MA_HOME_OFF(_color, _scale)                         SPRITE_PUT(ma_home_off, _color, _scale)
-!define MA_HOME_OFF(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA HOME OFF, ma_home_off, _color, _scale)
-!define MA_HOME_OFF(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA HOME OFF, ma_home_off, _color, _scale, _shape)
-!define MA_HOME_OFF(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA HOME OFF, _label, ma_home_off, _color, _scale, _shape)
+!define MA_HOME_OFF(_color)                                 SPRITE_PUT(mdi-home-off, _color)
+!define MA_HOME_OFF(_color, _scale)                         SPRITE_PUT(mdi-home-off, _color, _scale)
+!define MA_HOME_OFF(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA HOME OFF, mdi-home-off, _color, _scale)
+!define MA_HOME_OFF(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA HOME OFF, mdi-home-off, _color, _scale, _shape)
+!define MA_HOME_OFF(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA HOME OFF, _label, mdi-home-off, _color, _scale, _shape)
 skinparam folderBackgroundColor<<MA HOME OFF>> White

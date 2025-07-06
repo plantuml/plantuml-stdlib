@@ -1,8 +1,8 @@
 sprite mdi-horizontal-rotate-clockwise <svg width="48" height="48"><g transform="scale(2)"><path d="M12 14L8 10L4 14H7.1C7.56 18.56 9.58 22 12 22S16.44 18.56 16.9 14H14.91C14.57 17.45 13.4 20 12 20S9.43 17.45 9.09 14H12M12 4C13.4 4 14.57 6.55 14.91 10H16.9C16.44 5.44 14.42 2 12 2C9.84 2 8 4.74 7.3 8.58L8 7.88L9.21 9.08C9.64 6.11 10.73 4 12 4M22 13V11H11L13 13H22M2 13H3L5 11H2V13Z" /></g></svg>
 
-!define MA_HORIZONTAL_ROTATE_CLOCKWISE(_color)                                 SPRITE_PUT(ma_horizontal_rotate_clockwise, _color)
-!define MA_HORIZONTAL_ROTATE_CLOCKWISE(_color, _scale)                         SPRITE_PUT(ma_horizontal_rotate_clockwise, _color, _scale)
-!define MA_HORIZONTAL_ROTATE_CLOCKWISE(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA HORIZONTAL ROTATE CLOCKWISE, ma_horizontal_rotate_clockwise, _color, _scale)
-!define MA_HORIZONTAL_ROTATE_CLOCKWISE(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA HORIZONTAL ROTATE CLOCKWISE, ma_horizontal_rotate_clockwise, _color, _scale, _shape)
-!define MA_HORIZONTAL_ROTATE_CLOCKWISE(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA HORIZONTAL ROTATE CLOCKWISE, _label, ma_horizontal_rotate_clockwise, _color, _scale, _shape)
+!define MA_HORIZONTAL_ROTATE_CLOCKWISE(_color)                                 SPRITE_PUT(mdi-horizontal-rotate-clockwise, _color)
+!define MA_HORIZONTAL_ROTATE_CLOCKWISE(_color, _scale)                         SPRITE_PUT(mdi-horizontal-rotate-clockwise, _color, _scale)
+!define MA_HORIZONTAL_ROTATE_CLOCKWISE(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA HORIZONTAL ROTATE CLOCKWISE, mdi-horizontal-rotate-clockwise, _color, _scale)
+!define MA_HORIZONTAL_ROTATE_CLOCKWISE(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA HORIZONTAL ROTATE CLOCKWISE, mdi-horizontal-rotate-clockwise, _color, _scale, _shape)
+!define MA_HORIZONTAL_ROTATE_CLOCKWISE(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA HORIZONTAL ROTATE CLOCKWISE, _label, mdi-horizontal-rotate-clockwise, _color, _scale, _shape)
 skinparam folderBackgroundColor<<MA HORIZONTAL ROTATE CLOCKWISE>> White

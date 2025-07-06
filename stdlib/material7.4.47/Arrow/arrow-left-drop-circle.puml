@@ -1,8 +1,8 @@
 sprite mdi-arrow-left-drop-circle <svg width="48" height="48"><g transform="scale(2)"><path d="M22,12A10,10 0 0,1 12,22A10,10 0 0,1 2,12A10,10 0 0,1 12,2A10,10 0 0,1 22,12M14,7L9,12L14,17V7Z" /></g></svg>
 
-!define MA_ARROW_LEFT_DROP_CIRCLE(_color)                                 SPRITE_PUT(ma_arrow_left_drop_circle, _color)
-!define MA_ARROW_LEFT_DROP_CIRCLE(_color, _scale)                         SPRITE_PUT(ma_arrow_left_drop_circle, _color, _scale)
-!define MA_ARROW_LEFT_DROP_CIRCLE(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA ARROW LEFT DROP CIRCLE, ma_arrow_left_drop_circle, _color, _scale)
-!define MA_ARROW_LEFT_DROP_CIRCLE(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA ARROW LEFT DROP CIRCLE, ma_arrow_left_drop_circle, _color, _scale, _shape)
-!define MA_ARROW_LEFT_DROP_CIRCLE(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA ARROW LEFT DROP CIRCLE, _label, ma_arrow_left_drop_circle, _color, _scale, _shape)
+!define MA_ARROW_LEFT_DROP_CIRCLE(_color)                                 SPRITE_PUT(mdi-arrow-left-drop-circle, _color)
+!define MA_ARROW_LEFT_DROP_CIRCLE(_color, _scale)                         SPRITE_PUT(mdi-arrow-left-drop-circle, _color, _scale)
+!define MA_ARROW_LEFT_DROP_CIRCLE(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA ARROW LEFT DROP CIRCLE, mdi-arrow-left-drop-circle, _color, _scale)
+!define MA_ARROW_LEFT_DROP_CIRCLE(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA ARROW LEFT DROP CIRCLE, mdi-arrow-left-drop-circle, _color, _scale, _shape)
+!define MA_ARROW_LEFT_DROP_CIRCLE(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA ARROW LEFT DROP CIRCLE, _label, mdi-arrow-left-drop-circle, _color, _scale, _shape)
 skinparam folderBackgroundColor<<MA ARROW LEFT DROP CIRCLE>> White

@@ -1,8 +1,8 @@
 sprite mdi-zip-disk <svg width="48" height="48"><g transform="scale(2)"><path d="M7,3L3,5V19A2,2 0 0,0 5,21H19A2,2 0 0,0 21,19V5L17,3V5A1,1 0 0,1 16,6H10A1,1 0 0,1 9,5V3H7M8,10H16A1,1 0 0,1 17,11V19H7V11A1,1 0 0,1 8,10Z" /></g></svg>
 
-!define MA_ZIP_DISK(_color)                                 SPRITE_PUT(ma_zip_disk, _color)
-!define MA_ZIP_DISK(_color, _scale)                         SPRITE_PUT(ma_zip_disk, _color, _scale)
-!define MA_ZIP_DISK(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA ZIP DISK, ma_zip_disk, _color, _scale)
-!define MA_ZIP_DISK(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA ZIP DISK, ma_zip_disk, _color, _scale, _shape)
-!define MA_ZIP_DISK(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA ZIP DISK, _label, ma_zip_disk, _color, _scale, _shape)
+!define MA_ZIP_DISK(_color)                                 SPRITE_PUT(mdi-zip-disk, _color)
+!define MA_ZIP_DISK(_color, _scale)                         SPRITE_PUT(mdi-zip-disk, _color, _scale)
+!define MA_ZIP_DISK(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA ZIP DISK, mdi-zip-disk, _color, _scale)
+!define MA_ZIP_DISK(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA ZIP DISK, mdi-zip-disk, _color, _scale, _shape)
+!define MA_ZIP_DISK(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA ZIP DISK, _label, mdi-zip-disk, _color, _scale, _shape)
 skinparam folderBackgroundColor<<MA ZIP DISK>> White

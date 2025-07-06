@@ -1,8 +1,8 @@
 sprite mdi-math-sin <svg width="48" height="48"><g transform="scale(2)"><path d="M4,7A2,2 0 0,0 2,9V11A2,2 0 0,0 4,13H6V15H2V17H6A2,2 0 0,0 8,15V13A2,2 0 0,0 6,11H4V9H8V7H4M14,7V9H13V15H14V17H10V15H11V9H10V7H14M16,7V17H18V12L20,17H22V7H20V12L18,7H16Z" /></g></svg>
 
-!define MA_MATH_SIN(_color)                                 SPRITE_PUT(ma_math_sin, _color)
-!define MA_MATH_SIN(_color, _scale)                         SPRITE_PUT(ma_math_sin, _color, _scale)
-!define MA_MATH_SIN(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA MATH SIN, ma_math_sin, _color, _scale)
-!define MA_MATH_SIN(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA MATH SIN, ma_math_sin, _color, _scale, _shape)
-!define MA_MATH_SIN(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA MATH SIN, _label, ma_math_sin, _color, _scale, _shape)
+!define MA_MATH_SIN(_color)                                 SPRITE_PUT(mdi-math-sin, _color)
+!define MA_MATH_SIN(_color, _scale)                         SPRITE_PUT(mdi-math-sin, _color, _scale)
+!define MA_MATH_SIN(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA MATH SIN, mdi-math-sin, _color, _scale)
+!define MA_MATH_SIN(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA MATH SIN, mdi-math-sin, _color, _scale, _shape)
+!define MA_MATH_SIN(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA MATH SIN, _label, mdi-math-sin, _color, _scale, _shape)
 skinparam folderBackgroundColor<<MA MATH SIN>> White

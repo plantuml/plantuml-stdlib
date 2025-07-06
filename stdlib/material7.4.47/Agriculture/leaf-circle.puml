@@ -1,8 +1,8 @@
 sprite mdi-leaf-circle <svg width="48" height="48"><g transform="scale(2)"><path d="M12 2C6.5 2 2 6.5 2 12S6.5 22 12 22 22 17.5 22 12 17.5 2 12 2M9.6 17.2C9.38 17.2 9.08 17.12 8.8 17L8.23 18.4L7.09 18L7.25 17.61C8.45 14.59 9.83 11.15 15 10C15 10 9 10 7.05 15.55C7.05 15.55 6 14.5 6 13.3S7.2 9.55 10.2 8.95C11.05 8.78 12 8.65 12.94 8.5C15.3 8.18 17.57 7.86 18 7C18 7 16.2 17.2 9.6 17.2Z" /></g></svg>
 
-!define MA_LEAF_CIRCLE(_color)                                 SPRITE_PUT(ma_leaf_circle, _color)
-!define MA_LEAF_CIRCLE(_color, _scale)                         SPRITE_PUT(ma_leaf_circle, _color, _scale)
-!define MA_LEAF_CIRCLE(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA LEAF CIRCLE, ma_leaf_circle, _color, _scale)
-!define MA_LEAF_CIRCLE(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA LEAF CIRCLE, ma_leaf_circle, _color, _scale, _shape)
-!define MA_LEAF_CIRCLE(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA LEAF CIRCLE, _label, ma_leaf_circle, _color, _scale, _shape)
+!define MA_LEAF_CIRCLE(_color)                                 SPRITE_PUT(mdi-leaf-circle, _color)
+!define MA_LEAF_CIRCLE(_color, _scale)                         SPRITE_PUT(mdi-leaf-circle, _color, _scale)
+!define MA_LEAF_CIRCLE(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA LEAF CIRCLE, mdi-leaf-circle, _color, _scale)
+!define MA_LEAF_CIRCLE(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA LEAF CIRCLE, mdi-leaf-circle, _color, _scale, _shape)
+!define MA_LEAF_CIRCLE(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA LEAF CIRCLE, _label, mdi-leaf-circle, _color, _scale, _shape)
 skinparam folderBackgroundColor<<MA LEAF CIRCLE>> White

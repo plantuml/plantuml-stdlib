@@ -1,8 +1,8 @@
 sprite mdi-book-alert-outline <svg width="48" height="48"><g transform="scale(2)"><path d="M16 2H4C2.9 2 2 2.9 2 4V20C2 21.11 2.9 22 4 22H16C17.11 22 18 21.11 18 20V4C18 2.9 17.11 2 16 2M16 20H4V4H6V12L8.5 9.75L11 12V4H16V20M20 15H22V17H20V15M22 7V13H20V7H22Z" /></g></svg>
 
-!define MA_BOOK_ALERT_OUTLINE(_color)                                 SPRITE_PUT(ma_book_alert_outline, _color)
-!define MA_BOOK_ALERT_OUTLINE(_color, _scale)                         SPRITE_PUT(ma_book_alert_outline, _color, _scale)
-!define MA_BOOK_ALERT_OUTLINE(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA BOOK ALERT OUTLINE, ma_book_alert_outline, _color, _scale)
-!define MA_BOOK_ALERT_OUTLINE(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA BOOK ALERT OUTLINE, ma_book_alert_outline, _color, _scale, _shape)
-!define MA_BOOK_ALERT_OUTLINE(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA BOOK ALERT OUTLINE, _label, ma_book_alert_outline, _color, _scale, _shape)
+!define MA_BOOK_ALERT_OUTLINE(_color)                                 SPRITE_PUT(mdi-book-alert-outline, _color)
+!define MA_BOOK_ALERT_OUTLINE(_color, _scale)                         SPRITE_PUT(mdi-book-alert-outline, _color, _scale)
+!define MA_BOOK_ALERT_OUTLINE(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA BOOK ALERT OUTLINE, mdi-book-alert-outline, _color, _scale)
+!define MA_BOOK_ALERT_OUTLINE(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA BOOK ALERT OUTLINE, mdi-book-alert-outline, _color, _scale, _shape)
+!define MA_BOOK_ALERT_OUTLINE(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA BOOK ALERT OUTLINE, _label, mdi-book-alert-outline, _color, _scale, _shape)
 skinparam folderBackgroundColor<<MA BOOK ALERT OUTLINE>> White

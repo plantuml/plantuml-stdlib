@@ -1,8 +1,8 @@
 sprite mdi-exclamation <svg width="48" height="48"><g transform="scale(2)"><path d="M 11,4L 13,4L 13,15L 11,15L 11,4 Z M 13,18L 13,20L 11,20L 11,18L 13,18 Z" /></g></svg>
 
-!define MA_EXCLAMATION(_color)                                 SPRITE_PUT(ma_exclamation, _color)
-!define MA_EXCLAMATION(_color, _scale)                         SPRITE_PUT(ma_exclamation, _color, _scale)
-!define MA_EXCLAMATION(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA EXCLAMATION, ma_exclamation, _color, _scale)
-!define MA_EXCLAMATION(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA EXCLAMATION, ma_exclamation, _color, _scale, _shape)
-!define MA_EXCLAMATION(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA EXCLAMATION, _label, ma_exclamation, _color, _scale, _shape)
+!define MA_EXCLAMATION(_color)                                 SPRITE_PUT(mdi-exclamation, _color)
+!define MA_EXCLAMATION(_color, _scale)                         SPRITE_PUT(mdi-exclamation, _color, _scale)
+!define MA_EXCLAMATION(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA EXCLAMATION, mdi-exclamation, _color, _scale)
+!define MA_EXCLAMATION(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA EXCLAMATION, mdi-exclamation, _color, _scale, _shape)
+!define MA_EXCLAMATION(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA EXCLAMATION, _label, mdi-exclamation, _color, _scale, _shape)
 skinparam folderBackgroundColor<<MA EXCLAMATION>> White

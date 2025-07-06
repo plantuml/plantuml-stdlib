@@ -1,8 +1,8 @@
 sprite mdi-view-carousel <svg width="48" height="48"><g transform="scale(2)"><path d="M18,6V17H22V6M2,17H6V6H2M7,19H17V4H7V19Z" /></g></svg>
 
-!define MA_VIEW_CAROUSEL(_color)                                 SPRITE_PUT(ma_view_carousel, _color)
-!define MA_VIEW_CAROUSEL(_color, _scale)                         SPRITE_PUT(ma_view_carousel, _color, _scale)
-!define MA_VIEW_CAROUSEL(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA VIEW CAROUSEL, ma_view_carousel, _color, _scale)
-!define MA_VIEW_CAROUSEL(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA VIEW CAROUSEL, ma_view_carousel, _color, _scale, _shape)
-!define MA_VIEW_CAROUSEL(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA VIEW CAROUSEL, _label, ma_view_carousel, _color, _scale, _shape)
+!define MA_VIEW_CAROUSEL(_color)                                 SPRITE_PUT(mdi-view-carousel, _color)
+!define MA_VIEW_CAROUSEL(_color, _scale)                         SPRITE_PUT(mdi-view-carousel, _color, _scale)
+!define MA_VIEW_CAROUSEL(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA VIEW CAROUSEL, mdi-view-carousel, _color, _scale)
+!define MA_VIEW_CAROUSEL(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA VIEW CAROUSEL, mdi-view-carousel, _color, _scale, _shape)
+!define MA_VIEW_CAROUSEL(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA VIEW CAROUSEL, _label, mdi-view-carousel, _color, _scale, _shape)
 skinparam folderBackgroundColor<<MA VIEW CAROUSEL>> White

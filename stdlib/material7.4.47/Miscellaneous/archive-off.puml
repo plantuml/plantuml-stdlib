@@ -1,8 +1,8 @@
 sprite mdi-archive-off <svg width="48" height="48"><g transform="scale(2)"><path d="M10.2 7L6.2 3H21V7H10.2M20 8H11.2L20 16.8V8M20 19.35V19.34L8.66 8H8.66L7.66 7H7.66L2.39 1.73L1.11 3L3 4.89V7H5.11L6.11 8H4V21H19.11L20.84 22.73L22.11 21.46L20 19.35Z" /></g></svg>
 
-!define MA_ARCHIVE_OFF(_color)                                 SPRITE_PUT(ma_archive_off, _color)
-!define MA_ARCHIVE_OFF(_color, _scale)                         SPRITE_PUT(ma_archive_off, _color, _scale)
-!define MA_ARCHIVE_OFF(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA ARCHIVE OFF, ma_archive_off, _color, _scale)
-!define MA_ARCHIVE_OFF(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA ARCHIVE OFF, ma_archive_off, _color, _scale, _shape)
-!define MA_ARCHIVE_OFF(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA ARCHIVE OFF, _label, ma_archive_off, _color, _scale, _shape)
+!define MA_ARCHIVE_OFF(_color)                                 SPRITE_PUT(mdi-archive-off, _color)
+!define MA_ARCHIVE_OFF(_color, _scale)                         SPRITE_PUT(mdi-archive-off, _color, _scale)
+!define MA_ARCHIVE_OFF(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA ARCHIVE OFF, mdi-archive-off, _color, _scale)
+!define MA_ARCHIVE_OFF(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA ARCHIVE OFF, mdi-archive-off, _color, _scale, _shape)
+!define MA_ARCHIVE_OFF(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA ARCHIVE OFF, _label, mdi-archive-off, _color, _scale, _shape)
 skinparam folderBackgroundColor<<MA ARCHIVE OFF>> White

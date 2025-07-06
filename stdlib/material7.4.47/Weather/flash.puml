@@ -1,8 +1,8 @@
 sprite mdi-flash <svg width="48" height="48"><g transform="scale(2)"><path d="M7,2V13H10V22L17,10H13L17,2H7Z" /></g></svg>
 
-!define MA_FLASH(_color)                                 SPRITE_PUT(ma_flash, _color)
-!define MA_FLASH(_color, _scale)                         SPRITE_PUT(ma_flash, _color, _scale)
-!define MA_FLASH(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA FLASH, ma_flash, _color, _scale)
-!define MA_FLASH(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA FLASH, ma_flash, _color, _scale, _shape)
-!define MA_FLASH(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA FLASH, _label, ma_flash, _color, _scale, _shape)
+!define MA_FLASH(_color)                                 SPRITE_PUT(mdi-flash, _color)
+!define MA_FLASH(_color, _scale)                         SPRITE_PUT(mdi-flash, _color, _scale)
+!define MA_FLASH(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA FLASH, mdi-flash, _color, _scale)
+!define MA_FLASH(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA FLASH, mdi-flash, _color, _scale, _shape)
+!define MA_FLASH(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA FLASH, _label, mdi-flash, _color, _scale, _shape)
 skinparam folderBackgroundColor<<MA FLASH>> White

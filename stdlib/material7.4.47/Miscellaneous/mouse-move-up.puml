@@ -1,8 +1,8 @@
 sprite mdi-mouse-move-up <svg width="48" height="48"><g transform="scale(2)"><path d="M7 9H2C2 6.04 4.17 3.57 7 3.09V9M18 17H20V11H23L19 7L15 11H18V17M9 3.09V9H14C14 6.04 11.83 3.57 9 3.09M2 15C2 18.3 4.7 21 8 21S14 18.3 14 15V11H2V15Z" /></g></svg>
 
-!define MA_MOUSE_MOVE_UP(_color)                                 SPRITE_PUT(ma_mouse_move_up, _color)
-!define MA_MOUSE_MOVE_UP(_color, _scale)                         SPRITE_PUT(ma_mouse_move_up, _color, _scale)
-!define MA_MOUSE_MOVE_UP(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA MOUSE MOVE UP, ma_mouse_move_up, _color, _scale)
-!define MA_MOUSE_MOVE_UP(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA MOUSE MOVE UP, ma_mouse_move_up, _color, _scale, _shape)
-!define MA_MOUSE_MOVE_UP(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA MOUSE MOVE UP, _label, ma_mouse_move_up, _color, _scale, _shape)
+!define MA_MOUSE_MOVE_UP(_color)                                 SPRITE_PUT(mdi-mouse-move-up, _color)
+!define MA_MOUSE_MOVE_UP(_color, _scale)                         SPRITE_PUT(mdi-mouse-move-up, _color, _scale)
+!define MA_MOUSE_MOVE_UP(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA MOUSE MOVE UP, mdi-mouse-move-up, _color, _scale)
+!define MA_MOUSE_MOVE_UP(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA MOUSE MOVE UP, mdi-mouse-move-up, _color, _scale, _shape)
+!define MA_MOUSE_MOVE_UP(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA MOUSE MOVE UP, _label, mdi-mouse-move-up, _color, _scale, _shape)
 skinparam folderBackgroundColor<<MA MOUSE MOVE UP>> White

@@ -1,8 +1,8 @@
 sprite mdi-squeegee <svg width="48" height="48"><g transform="scale(2)"><path d="M22,2V5H2V2H22M2,8H7L9,10H10V20A2,2 0 0,0 12,22A2,2 0 0,0 14,20V10H15L17,8H22V6H2V8Z" /></g></svg>
 
-!define MA_SQUEEGEE(_color)                                 SPRITE_PUT(ma_squeegee, _color)
-!define MA_SQUEEGEE(_color, _scale)                         SPRITE_PUT(ma_squeegee, _color, _scale)
-!define MA_SQUEEGEE(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA SQUEEGEE, ma_squeegee, _color, _scale)
-!define MA_SQUEEGEE(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA SQUEEGEE, ma_squeegee, _color, _scale, _shape)
-!define MA_SQUEEGEE(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA SQUEEGEE, _label, ma_squeegee, _color, _scale, _shape)
+!define MA_SQUEEGEE(_color)                                 SPRITE_PUT(mdi-squeegee, _color)
+!define MA_SQUEEGEE(_color, _scale)                         SPRITE_PUT(mdi-squeegee, _color, _scale)
+!define MA_SQUEEGEE(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA SQUEEGEE, mdi-squeegee, _color, _scale)
+!define MA_SQUEEGEE(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA SQUEEGEE, mdi-squeegee, _color, _scale, _shape)
+!define MA_SQUEEGEE(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA SQUEEGEE, _label, mdi-squeegee, _color, _scale, _shape)
 skinparam folderBackgroundColor<<MA SQUEEGEE>> White

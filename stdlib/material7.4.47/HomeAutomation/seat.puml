@@ -1,8 +1,8 @@
 sprite mdi-seat <svg width="48" height="48"><g transform="scale(2)"><path d="M4,18V21H7V18H17V21H20V15H4V18M19,10H22V13H19V10M2,10H5V13H2V10M17,13H7V5A2,2 0 0,1 9,3H15A2,2 0 0,1 17,5V13Z" /></g></svg>
 
-!define MA_SEAT(_color)                                 SPRITE_PUT(ma_seat, _color)
-!define MA_SEAT(_color, _scale)                         SPRITE_PUT(ma_seat, _color, _scale)
-!define MA_SEAT(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA SEAT, ma_seat, _color, _scale)
-!define MA_SEAT(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA SEAT, ma_seat, _color, _scale, _shape)
-!define MA_SEAT(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA SEAT, _label, ma_seat, _color, _scale, _shape)
+!define MA_SEAT(_color)                                 SPRITE_PUT(mdi-seat, _color)
+!define MA_SEAT(_color, _scale)                         SPRITE_PUT(mdi-seat, _color, _scale)
+!define MA_SEAT(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA SEAT, mdi-seat, _color, _scale)
+!define MA_SEAT(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA SEAT, mdi-seat, _color, _scale, _shape)
+!define MA_SEAT(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA SEAT, _label, mdi-seat, _color, _scale, _shape)
 skinparam folderBackgroundColor<<MA SEAT>> White

@@ -1,8 +1,8 @@
 sprite mdi-arrow-down-thick <svg width="48" height="48"><g transform="scale(2)"><path d="M10,4H14V13L17.5,9.5L19.92,11.92L12,19.84L4.08,11.92L6.5,9.5L10,13V4Z" /></g></svg>
 
-!define MA_ARROW_DOWN_THICK(_color)                                 SPRITE_PUT(ma_arrow_down_thick, _color)
-!define MA_ARROW_DOWN_THICK(_color, _scale)                         SPRITE_PUT(ma_arrow_down_thick, _color, _scale)
-!define MA_ARROW_DOWN_THICK(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA ARROW DOWN THICK, ma_arrow_down_thick, _color, _scale)
-!define MA_ARROW_DOWN_THICK(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA ARROW DOWN THICK, ma_arrow_down_thick, _color, _scale, _shape)
-!define MA_ARROW_DOWN_THICK(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA ARROW DOWN THICK, _label, ma_arrow_down_thick, _color, _scale, _shape)
+!define MA_ARROW_DOWN_THICK(_color)                                 SPRITE_PUT(mdi-arrow-down-thick, _color)
+!define MA_ARROW_DOWN_THICK(_color, _scale)                         SPRITE_PUT(mdi-arrow-down-thick, _color, _scale)
+!define MA_ARROW_DOWN_THICK(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA ARROW DOWN THICK, mdi-arrow-down-thick, _color, _scale)
+!define MA_ARROW_DOWN_THICK(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA ARROW DOWN THICK, mdi-arrow-down-thick, _color, _scale, _shape)
+!define MA_ARROW_DOWN_THICK(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA ARROW DOWN THICK, _label, mdi-arrow-down-thick, _color, _scale, _shape)
 skinparam folderBackgroundColor<<MA ARROW DOWN THICK>> White

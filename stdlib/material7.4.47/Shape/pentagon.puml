@@ -1,8 +1,8 @@
 sprite mdi-pentagon <svg width="48" height="48"><g transform="scale(2)"><path d="M12,2.5L2,9.8L5.8,21.5H18.2L22,9.8L12,2.5Z" /></g></svg>
 
-!define MA_PENTAGON(_color)                                 SPRITE_PUT(ma_pentagon, _color)
-!define MA_PENTAGON(_color, _scale)                         SPRITE_PUT(ma_pentagon, _color, _scale)
-!define MA_PENTAGON(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA PENTAGON, ma_pentagon, _color, _scale)
-!define MA_PENTAGON(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA PENTAGON, ma_pentagon, _color, _scale, _shape)
-!define MA_PENTAGON(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA PENTAGON, _label, ma_pentagon, _color, _scale, _shape)
+!define MA_PENTAGON(_color)                                 SPRITE_PUT(mdi-pentagon, _color)
+!define MA_PENTAGON(_color, _scale)                         SPRITE_PUT(mdi-pentagon, _color, _scale)
+!define MA_PENTAGON(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA PENTAGON, mdi-pentagon, _color, _scale)
+!define MA_PENTAGON(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA PENTAGON, mdi-pentagon, _color, _scale, _shape)
+!define MA_PENTAGON(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA PENTAGON, _label, mdi-pentagon, _color, _scale, _shape)
 skinparam folderBackgroundColor<<MA PENTAGON>> White

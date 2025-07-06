@@ -1,8 +1,8 @@
 sprite mdi-chevron-up-circle <svg width="48" height="48"><g transform="scale(2)"><path d="M22,12A10,10 0 0,1 12,22A10,10 0 0,1 2,12A10,10 0 0,1 12,2A10,10 0 0,1 22,12M7.4,15.4L12,10.8L16.6,15.4L18,14L12,8L6,14L7.4,15.4Z" /></g></svg>
 
-!define MA_CHEVRON_UP_CIRCLE(_color)                                 SPRITE_PUT(ma_chevron_up_circle, _color)
-!define MA_CHEVRON_UP_CIRCLE(_color, _scale)                         SPRITE_PUT(ma_chevron_up_circle, _color, _scale)
-!define MA_CHEVRON_UP_CIRCLE(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA CHEVRON UP CIRCLE, ma_chevron_up_circle, _color, _scale)
-!define MA_CHEVRON_UP_CIRCLE(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA CHEVRON UP CIRCLE, ma_chevron_up_circle, _color, _scale, _shape)
-!define MA_CHEVRON_UP_CIRCLE(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA CHEVRON UP CIRCLE, _label, ma_chevron_up_circle, _color, _scale, _shape)
+!define MA_CHEVRON_UP_CIRCLE(_color)                                 SPRITE_PUT(mdi-chevron-up-circle, _color)
+!define MA_CHEVRON_UP_CIRCLE(_color, _scale)                         SPRITE_PUT(mdi-chevron-up-circle, _color, _scale)
+!define MA_CHEVRON_UP_CIRCLE(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA CHEVRON UP CIRCLE, mdi-chevron-up-circle, _color, _scale)
+!define MA_CHEVRON_UP_CIRCLE(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA CHEVRON UP CIRCLE, mdi-chevron-up-circle, _color, _scale, _shape)
+!define MA_CHEVRON_UP_CIRCLE(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA CHEVRON UP CIRCLE, _label, mdi-chevron-up-circle, _color, _scale, _shape)
 skinparam folderBackgroundColor<<MA CHEVRON UP CIRCLE>> White

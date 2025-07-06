@@ -1,8 +1,8 @@
 sprite mdi-pin-off <svg width="48" height="48"><g transform="scale(2)"><path d="M2,5.27L3.28,4L20,20.72L18.73,22L12.8,16.07V22H11.2V16H6V14L8,12V11.27L2,5.27M16,12L18,14V16H17.82L8,6.18V4H7V2H17V4H16V12Z" /></g></svg>
 
-!define MA_PIN_OFF(_color)                                 SPRITE_PUT(ma_pin_off, _color)
-!define MA_PIN_OFF(_color, _scale)                         SPRITE_PUT(ma_pin_off, _color, _scale)
-!define MA_PIN_OFF(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA PIN OFF, ma_pin_off, _color, _scale)
-!define MA_PIN_OFF(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA PIN OFF, ma_pin_off, _color, _scale, _shape)
-!define MA_PIN_OFF(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA PIN OFF, _label, ma_pin_off, _color, _scale, _shape)
+!define MA_PIN_OFF(_color)                                 SPRITE_PUT(mdi-pin-off, _color)
+!define MA_PIN_OFF(_color, _scale)                         SPRITE_PUT(mdi-pin-off, _color, _scale)
+!define MA_PIN_OFF(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA PIN OFF, mdi-pin-off, _color, _scale)
+!define MA_PIN_OFF(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA PIN OFF, mdi-pin-off, _color, _scale, _shape)
+!define MA_PIN_OFF(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA PIN OFF, _label, mdi-pin-off, _color, _scale, _shape)
 skinparam folderBackgroundColor<<MA PIN OFF>> White

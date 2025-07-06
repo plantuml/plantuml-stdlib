@@ -1,8 +1,8 @@
 sprite mdi-curtains-closed <svg width="48" height="48"><g transform="scale(2)"><path d="M23 3H1V1H23V3M2 22H11V4H2V22M22 4H13V22H22V4Z" /></g></svg>
 
-!define MA_CURTAINS_CLOSED(_color)                                 SPRITE_PUT(ma_curtains_closed, _color)
-!define MA_CURTAINS_CLOSED(_color, _scale)                         SPRITE_PUT(ma_curtains_closed, _color, _scale)
-!define MA_CURTAINS_CLOSED(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA CURTAINS CLOSED, ma_curtains_closed, _color, _scale)
-!define MA_CURTAINS_CLOSED(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA CURTAINS CLOSED, ma_curtains_closed, _color, _scale, _shape)
-!define MA_CURTAINS_CLOSED(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA CURTAINS CLOSED, _label, ma_curtains_closed, _color, _scale, _shape)
+!define MA_CURTAINS_CLOSED(_color)                                 SPRITE_PUT(mdi-curtains-closed, _color)
+!define MA_CURTAINS_CLOSED(_color, _scale)                         SPRITE_PUT(mdi-curtains-closed, _color, _scale)
+!define MA_CURTAINS_CLOSED(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA CURTAINS CLOSED, mdi-curtains-closed, _color, _scale)
+!define MA_CURTAINS_CLOSED(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA CURTAINS CLOSED, mdi-curtains-closed, _color, _scale, _shape)
+!define MA_CURTAINS_CLOSED(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA CURTAINS CLOSED, _label, mdi-curtains-closed, _color, _scale, _shape)
 skinparam folderBackgroundColor<<MA CURTAINS CLOSED>> White

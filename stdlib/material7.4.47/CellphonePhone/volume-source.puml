@@ -1,8 +1,8 @@
 sprite mdi-volume-source <svg width="48" height="48"><g transform="scale(2)"><path d="M3 9V15H7L12 20V4L7 9H3M16 15H14V9H16V15M20 19H18V5H20V19Z" /></g></svg>
 
-!define MA_VOLUME_SOURCE(_color)                                 SPRITE_PUT(ma_volume_source, _color)
-!define MA_VOLUME_SOURCE(_color, _scale)                         SPRITE_PUT(ma_volume_source, _color, _scale)
-!define MA_VOLUME_SOURCE(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA VOLUME SOURCE, ma_volume_source, _color, _scale)
-!define MA_VOLUME_SOURCE(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA VOLUME SOURCE, ma_volume_source, _color, _scale, _shape)
-!define MA_VOLUME_SOURCE(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA VOLUME SOURCE, _label, ma_volume_source, _color, _scale, _shape)
+!define MA_VOLUME_SOURCE(_color)                                 SPRITE_PUT(mdi-volume-source, _color)
+!define MA_VOLUME_SOURCE(_color, _scale)                         SPRITE_PUT(mdi-volume-source, _color, _scale)
+!define MA_VOLUME_SOURCE(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA VOLUME SOURCE, mdi-volume-source, _color, _scale)
+!define MA_VOLUME_SOURCE(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA VOLUME SOURCE, mdi-volume-source, _color, _scale, _shape)
+!define MA_VOLUME_SOURCE(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA VOLUME SOURCE, _label, mdi-volume-source, _color, _scale, _shape)
 skinparam folderBackgroundColor<<MA VOLUME SOURCE>> White

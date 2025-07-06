@@ -1,8 +1,8 @@
 sprite mdi-led-outline <svg width="48" height="48"><g transform="scale(2)"><path d="M12,6A4,4 0 0,0 8,10V16H6V18H9V23H11V18H13V23H15V18H18V16H16V10A4,4 0 0,0 12,6M12,8A2,2 0 0,1 14,10V15H10V10A2,2 0 0,1 12,8Z" /></g></svg>
 
-!define MA_LED_OUTLINE(_color)                                 SPRITE_PUT(ma_led_outline, _color)
-!define MA_LED_OUTLINE(_color, _scale)                         SPRITE_PUT(ma_led_outline, _color, _scale)
-!define MA_LED_OUTLINE(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA LED OUTLINE, ma_led_outline, _color, _scale)
-!define MA_LED_OUTLINE(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA LED OUTLINE, ma_led_outline, _color, _scale, _shape)
-!define MA_LED_OUTLINE(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA LED OUTLINE, _label, ma_led_outline, _color, _scale, _shape)
+!define MA_LED_OUTLINE(_color)                                 SPRITE_PUT(mdi-led-outline, _color)
+!define MA_LED_OUTLINE(_color, _scale)                         SPRITE_PUT(mdi-led-outline, _color, _scale)
+!define MA_LED_OUTLINE(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA LED OUTLINE, mdi-led-outline, _color, _scale)
+!define MA_LED_OUTLINE(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA LED OUTLINE, mdi-led-outline, _color, _scale, _shape)
+!define MA_LED_OUTLINE(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA LED OUTLINE, _label, mdi-led-outline, _color, _scale, _shape)
 skinparam folderBackgroundColor<<MA LED OUTLINE>> White

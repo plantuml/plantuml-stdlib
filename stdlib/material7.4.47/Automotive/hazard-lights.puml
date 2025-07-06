@@ -1,8 +1,8 @@
 sprite mdi-hazard-lights <svg width="48" height="48"><g transform="scale(2)"><path d="M12,12L14.33,16H9.68L12,12M12,8L6.21,18H17.8L12,8M12,2L1,21H23L12,2M12,6L19.53,19H4.47L12,6Z" /></g></svg>
 
-!define MA_HAZARD_LIGHTS(_color)                                 SPRITE_PUT(ma_hazard_lights, _color)
-!define MA_HAZARD_LIGHTS(_color, _scale)                         SPRITE_PUT(ma_hazard_lights, _color, _scale)
-!define MA_HAZARD_LIGHTS(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA HAZARD LIGHTS, ma_hazard_lights, _color, _scale)
-!define MA_HAZARD_LIGHTS(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA HAZARD LIGHTS, ma_hazard_lights, _color, _scale, _shape)
-!define MA_HAZARD_LIGHTS(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA HAZARD LIGHTS, _label, ma_hazard_lights, _color, _scale, _shape)
+!define MA_HAZARD_LIGHTS(_color)                                 SPRITE_PUT(mdi-hazard-lights, _color)
+!define MA_HAZARD_LIGHTS(_color, _scale)                         SPRITE_PUT(mdi-hazard-lights, _color, _scale)
+!define MA_HAZARD_LIGHTS(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA HAZARD LIGHTS, mdi-hazard-lights, _color, _scale)
+!define MA_HAZARD_LIGHTS(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA HAZARD LIGHTS, mdi-hazard-lights, _color, _scale, _shape)
+!define MA_HAZARD_LIGHTS(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA HAZARD LIGHTS, _label, mdi-hazard-lights, _color, _scale, _shape)
 skinparam folderBackgroundColor<<MA HAZARD LIGHTS>> White

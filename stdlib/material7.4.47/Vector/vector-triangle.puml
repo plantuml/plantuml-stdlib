@@ -1,8 +1,8 @@
 sprite mdi-vector-triangle <svg width="48" height="48"><g transform="scale(2)"><path d="M9,3V9H9.73L5.79,16H2V22H8V20H16V22H22V16H18.21L14.27,9H15V3M11,5H13V7H11M12,9.04L16,16.15V18H8V16.15M4,18H6V20H4M18,18H20V20H18" /></g></svg>
 
-!define MA_VECTOR_TRIANGLE(_color)                                 SPRITE_PUT(ma_vector_triangle, _color)
-!define MA_VECTOR_TRIANGLE(_color, _scale)                         SPRITE_PUT(ma_vector_triangle, _color, _scale)
-!define MA_VECTOR_TRIANGLE(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA VECTOR TRIANGLE, ma_vector_triangle, _color, _scale)
-!define MA_VECTOR_TRIANGLE(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA VECTOR TRIANGLE, ma_vector_triangle, _color, _scale, _shape)
-!define MA_VECTOR_TRIANGLE(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA VECTOR TRIANGLE, _label, ma_vector_triangle, _color, _scale, _shape)
+!define MA_VECTOR_TRIANGLE(_color)                                 SPRITE_PUT(mdi-vector-triangle, _color)
+!define MA_VECTOR_TRIANGLE(_color, _scale)                         SPRITE_PUT(mdi-vector-triangle, _color, _scale)
+!define MA_VECTOR_TRIANGLE(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA VECTOR TRIANGLE, mdi-vector-triangle, _color, _scale)
+!define MA_VECTOR_TRIANGLE(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA VECTOR TRIANGLE, mdi-vector-triangle, _color, _scale, _shape)
+!define MA_VECTOR_TRIANGLE(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA VECTOR TRIANGLE, _label, mdi-vector-triangle, _color, _scale, _shape)
 skinparam folderBackgroundColor<<MA VECTOR TRIANGLE>> White

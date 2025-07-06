@@ -1,8 +1,8 @@
 sprite mdi-storage-tank-outline <svg width="48" height="48"><g transform="scale(2)"><path d="M17 6H16V5C16 3.9 15.1 3 14 3H10C8.9 3 8 3.9 8 5V6H7C3.69 6 1 8.69 1 12S3.69 18 7 18V21H9V18H15V21H17V18C20.31 18 23 15.31 23 12S20.31 6 17 6M10 5H14V6H10V5M17 16H7C4.79 16 3 14.21 3 12S4.79 8 7 8H17C19.21 8 21 9.79 21 12S19.21 16 17 16Z" /></g></svg>
 
-!define MA_STORAGE_TANK_OUTLINE(_color)                                 SPRITE_PUT(ma_storage_tank_outline, _color)
-!define MA_STORAGE_TANK_OUTLINE(_color, _scale)                         SPRITE_PUT(ma_storage_tank_outline, _color, _scale)
-!define MA_STORAGE_TANK_OUTLINE(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA STORAGE TANK OUTLINE, ma_storage_tank_outline, _color, _scale)
-!define MA_STORAGE_TANK_OUTLINE(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA STORAGE TANK OUTLINE, ma_storage_tank_outline, _color, _scale, _shape)
-!define MA_STORAGE_TANK_OUTLINE(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA STORAGE TANK OUTLINE, _label, ma_storage_tank_outline, _color, _scale, _shape)
+!define MA_STORAGE_TANK_OUTLINE(_color)                                 SPRITE_PUT(mdi-storage-tank-outline, _color)
+!define MA_STORAGE_TANK_OUTLINE(_color, _scale)                         SPRITE_PUT(mdi-storage-tank-outline, _color, _scale)
+!define MA_STORAGE_TANK_OUTLINE(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA STORAGE TANK OUTLINE, mdi-storage-tank-outline, _color, _scale)
+!define MA_STORAGE_TANK_OUTLINE(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA STORAGE TANK OUTLINE, mdi-storage-tank-outline, _color, _scale, _shape)
+!define MA_STORAGE_TANK_OUTLINE(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA STORAGE TANK OUTLINE, _label, mdi-storage-tank-outline, _color, _scale, _shape)
 skinparam folderBackgroundColor<<MA STORAGE TANK OUTLINE>> White

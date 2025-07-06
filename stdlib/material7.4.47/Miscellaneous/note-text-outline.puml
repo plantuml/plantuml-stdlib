@@ -1,8 +1,8 @@
 sprite mdi-note-text-outline <svg width="48" height="48"><g transform="scale(2)"><path d="M15 3H5A2 2 0 0 0 3 5V19A2 2 0 0 0 5 21H19A2 2 0 0 0 21 19V9L15 3M19 19H5V5H14V10H19M17 14H7V12H17M14 17H7V15H14" /></g></svg>
 
-!define MA_NOTE_TEXT_OUTLINE(_color)                                 SPRITE_PUT(ma_note_text_outline, _color)
-!define MA_NOTE_TEXT_OUTLINE(_color, _scale)                         SPRITE_PUT(ma_note_text_outline, _color, _scale)
-!define MA_NOTE_TEXT_OUTLINE(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA NOTE TEXT OUTLINE, ma_note_text_outline, _color, _scale)
-!define MA_NOTE_TEXT_OUTLINE(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA NOTE TEXT OUTLINE, ma_note_text_outline, _color, _scale, _shape)
-!define MA_NOTE_TEXT_OUTLINE(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA NOTE TEXT OUTLINE, _label, ma_note_text_outline, _color, _scale, _shape)
+!define MA_NOTE_TEXT_OUTLINE(_color)                                 SPRITE_PUT(mdi-note-text-outline, _color)
+!define MA_NOTE_TEXT_OUTLINE(_color, _scale)                         SPRITE_PUT(mdi-note-text-outline, _color, _scale)
+!define MA_NOTE_TEXT_OUTLINE(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA NOTE TEXT OUTLINE, mdi-note-text-outline, _color, _scale)
+!define MA_NOTE_TEXT_OUTLINE(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA NOTE TEXT OUTLINE, mdi-note-text-outline, _color, _scale, _shape)
+!define MA_NOTE_TEXT_OUTLINE(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA NOTE TEXT OUTLINE, _label, mdi-note-text-outline, _color, _scale, _shape)
 skinparam folderBackgroundColor<<MA NOTE TEXT OUTLINE>> White

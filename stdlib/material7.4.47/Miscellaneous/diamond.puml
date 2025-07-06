@@ -1,8 +1,8 @@
 sprite mdi-diamond <svg width="48" height="48"><g transform="scale(2)"><path d="M6,2L2,8L12,22L22,8L18,2H6Z" /></g></svg>
 
-!define MA_DIAMOND(_color)                                 SPRITE_PUT(ma_diamond, _color)
-!define MA_DIAMOND(_color, _scale)                         SPRITE_PUT(ma_diamond, _color, _scale)
-!define MA_DIAMOND(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA DIAMOND, ma_diamond, _color, _scale)
-!define MA_DIAMOND(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA DIAMOND, ma_diamond, _color, _scale, _shape)
-!define MA_DIAMOND(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA DIAMOND, _label, ma_diamond, _color, _scale, _shape)
+!define MA_DIAMOND(_color)                                 SPRITE_PUT(mdi-diamond, _color)
+!define MA_DIAMOND(_color, _scale)                         SPRITE_PUT(mdi-diamond, _color, _scale)
+!define MA_DIAMOND(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA DIAMOND, mdi-diamond, _color, _scale)
+!define MA_DIAMOND(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA DIAMOND, mdi-diamond, _color, _scale, _shape)
+!define MA_DIAMOND(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA DIAMOND, _label, mdi-diamond, _color, _scale, _shape)
 skinparam folderBackgroundColor<<MA DIAMOND>> White

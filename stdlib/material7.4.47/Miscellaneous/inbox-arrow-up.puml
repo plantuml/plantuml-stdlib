@@ -1,8 +1,8 @@
 sprite mdi-inbox-arrow-up <svg width="48" height="48"><g transform="scale(2)"><path d="M14,14H10V11H8L12,7L16,11H14V14M16,11M5,15V5H19V15H15A3,3 0 0,1 12,18A3,3 0 0,1 9,15H5M19,3H5C3.89,3 3,3.9 3,5V19A2,2 0 0,0 5,21H19A2,2 0 0,0 21,19V5A2,2 0 0,0 19,3" /></g></svg>
 
-!define MA_INBOX_ARROW_UP(_color)                                 SPRITE_PUT(ma_inbox_arrow_up, _color)
-!define MA_INBOX_ARROW_UP(_color, _scale)                         SPRITE_PUT(ma_inbox_arrow_up, _color, _scale)
-!define MA_INBOX_ARROW_UP(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA INBOX ARROW UP, ma_inbox_arrow_up, _color, _scale)
-!define MA_INBOX_ARROW_UP(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA INBOX ARROW UP, ma_inbox_arrow_up, _color, _scale, _shape)
-!define MA_INBOX_ARROW_UP(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA INBOX ARROW UP, _label, ma_inbox_arrow_up, _color, _scale, _shape)
+!define MA_INBOX_ARROW_UP(_color)                                 SPRITE_PUT(mdi-inbox-arrow-up, _color)
+!define MA_INBOX_ARROW_UP(_color, _scale)                         SPRITE_PUT(mdi-inbox-arrow-up, _color, _scale)
+!define MA_INBOX_ARROW_UP(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA INBOX ARROW UP, mdi-inbox-arrow-up, _color, _scale)
+!define MA_INBOX_ARROW_UP(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA INBOX ARROW UP, mdi-inbox-arrow-up, _color, _scale, _shape)
+!define MA_INBOX_ARROW_UP(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA INBOX ARROW UP, _label, mdi-inbox-arrow-up, _color, _scale, _shape)
 skinparam folderBackgroundColor<<MA INBOX ARROW UP>> White

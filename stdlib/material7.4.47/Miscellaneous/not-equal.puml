@@ -1,8 +1,8 @@
 sprite mdi-not-equal <svg width="48" height="48"><g transform="scale(2)"><path d="M21,10H9V8H21V10M21,16H9V14H21V16M4,5H6V16H4V5M6,18V20H4V18H6Z" /></g></svg>
 
-!define MA_NOT_EQUAL(_color)                                 SPRITE_PUT(ma_not_equal, _color)
-!define MA_NOT_EQUAL(_color, _scale)                         SPRITE_PUT(ma_not_equal, _color, _scale)
-!define MA_NOT_EQUAL(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA NOT EQUAL, ma_not_equal, _color, _scale)
-!define MA_NOT_EQUAL(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA NOT EQUAL, ma_not_equal, _color, _scale, _shape)
-!define MA_NOT_EQUAL(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA NOT EQUAL, _label, ma_not_equal, _color, _scale, _shape)
+!define MA_NOT_EQUAL(_color)                                 SPRITE_PUT(mdi-not-equal, _color)
+!define MA_NOT_EQUAL(_color, _scale)                         SPRITE_PUT(mdi-not-equal, _color, _scale)
+!define MA_NOT_EQUAL(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA NOT EQUAL, mdi-not-equal, _color, _scale)
+!define MA_NOT_EQUAL(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA NOT EQUAL, mdi-not-equal, _color, _scale, _shape)
+!define MA_NOT_EQUAL(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA NOT EQUAL, _label, mdi-not-equal, _color, _scale, _shape)
 skinparam folderBackgroundColor<<MA NOT EQUAL>> White

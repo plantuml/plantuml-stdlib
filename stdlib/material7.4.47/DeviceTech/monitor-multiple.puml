@@ -1,8 +1,8 @@
 sprite mdi-monitor-multiple <svg width="48" height="48"><g transform="scale(2)"><path d="M22,17V7H6V17H22M22,5A2,2 0 0,1 24,7V17C24,18.11 23.1,19 22,19H16V21H18V23H10V21H12V19H6C4.89,19 4,18.11 4,17V7A2,2 0 0,1 6,5H22M2,3V15H0V3A2,2 0 0,1 2,1H20V3H2Z" /></g></svg>
 
-!define MA_MONITOR_MULTIPLE(_color)                                 SPRITE_PUT(ma_monitor_multiple, _color)
-!define MA_MONITOR_MULTIPLE(_color, _scale)                         SPRITE_PUT(ma_monitor_multiple, _color, _scale)
-!define MA_MONITOR_MULTIPLE(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA MONITOR MULTIPLE, ma_monitor_multiple, _color, _scale)
-!define MA_MONITOR_MULTIPLE(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA MONITOR MULTIPLE, ma_monitor_multiple, _color, _scale, _shape)
-!define MA_MONITOR_MULTIPLE(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA MONITOR MULTIPLE, _label, ma_monitor_multiple, _color, _scale, _shape)
+!define MA_MONITOR_MULTIPLE(_color)                                 SPRITE_PUT(mdi-monitor-multiple, _color)
+!define MA_MONITOR_MULTIPLE(_color, _scale)                         SPRITE_PUT(mdi-monitor-multiple, _color, _scale)
+!define MA_MONITOR_MULTIPLE(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA MONITOR MULTIPLE, mdi-monitor-multiple, _color, _scale)
+!define MA_MONITOR_MULTIPLE(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA MONITOR MULTIPLE, mdi-monitor-multiple, _color, _scale, _shape)
+!define MA_MONITOR_MULTIPLE(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA MONITOR MULTIPLE, _label, mdi-monitor-multiple, _color, _scale, _shape)
 skinparam folderBackgroundColor<<MA MONITOR MULTIPLE>> White

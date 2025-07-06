@@ -1,8 +1,8 @@
 sprite mdi-arrange-bring-to-front <svg width="48" height="48"><g transform="scale(2)"><path d="M2,2H11V6H9V4H4V9H6V11H2V2M22,13V22H13V18H15V20H20V15H18V13H22M8,8H16V16H8V8Z" /></g></svg>
 
-!define MA_ARRANGE_BRING_TO_FRONT(_color)                                 SPRITE_PUT(ma_arrange_bring_to_front, _color)
-!define MA_ARRANGE_BRING_TO_FRONT(_color, _scale)                         SPRITE_PUT(ma_arrange_bring_to_front, _color, _scale)
-!define MA_ARRANGE_BRING_TO_FRONT(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA ARRANGE BRING TO FRONT, ma_arrange_bring_to_front, _color, _scale)
-!define MA_ARRANGE_BRING_TO_FRONT(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA ARRANGE BRING TO FRONT, ma_arrange_bring_to_front, _color, _scale, _shape)
-!define MA_ARRANGE_BRING_TO_FRONT(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA ARRANGE BRING TO FRONT, _label, ma_arrange_bring_to_front, _color, _scale, _shape)
+!define MA_ARRANGE_BRING_TO_FRONT(_color)                                 SPRITE_PUT(mdi-arrange-bring-to-front, _color)
+!define MA_ARRANGE_BRING_TO_FRONT(_color, _scale)                         SPRITE_PUT(mdi-arrange-bring-to-front, _color, _scale)
+!define MA_ARRANGE_BRING_TO_FRONT(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA ARRANGE BRING TO FRONT, mdi-arrange-bring-to-front, _color, _scale)
+!define MA_ARRANGE_BRING_TO_FRONT(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA ARRANGE BRING TO FRONT, mdi-arrange-bring-to-front, _color, _scale, _shape)
+!define MA_ARRANGE_BRING_TO_FRONT(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA ARRANGE BRING TO FRONT, _label, mdi-arrange-bring-to-front, _color, _scale, _shape)
 skinparam folderBackgroundColor<<MA ARRANGE BRING TO FRONT>> White

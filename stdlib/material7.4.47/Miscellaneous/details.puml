@@ -1,8 +1,8 @@
 sprite mdi-details <svg width="48" height="48"><g transform="scale(2)"><path d="M6.38,6H17.63L12,16L6.38,6M3,4L12,20L21,4H3Z" /></g></svg>
 
-!define MA_DETAILS(_color)                                 SPRITE_PUT(ma_details, _color)
-!define MA_DETAILS(_color, _scale)                         SPRITE_PUT(ma_details, _color, _scale)
-!define MA_DETAILS(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA DETAILS, ma_details, _color, _scale)
-!define MA_DETAILS(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA DETAILS, ma_details, _color, _scale, _shape)
-!define MA_DETAILS(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA DETAILS, _label, ma_details, _color, _scale, _shape)
+!define MA_DETAILS(_color)                                 SPRITE_PUT(mdi-details, _color)
+!define MA_DETAILS(_color, _scale)                         SPRITE_PUT(mdi-details, _color, _scale)
+!define MA_DETAILS(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA DETAILS, mdi-details, _color, _scale)
+!define MA_DETAILS(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA DETAILS, mdi-details, _color, _scale, _shape)
+!define MA_DETAILS(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA DETAILS, _label, mdi-details, _color, _scale, _shape)
 skinparam folderBackgroundColor<<MA DETAILS>> White

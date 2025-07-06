@@ -1,8 +1,8 @@
 sprite mdi-hockey-puck <svg width="48" height="48"><g transform="scale(2)"><path d="M12,5C6.5,5 2,6.57 2,8.5C2,10.43 6.5,12 12,12C17.5,12 22,10.43 22,8.5C22,6.57 17.5,5 12,5M2,11.76V16.5C2,18.43 6.5,20 12,20C17.5,20 22,18.43 22,16.5V11.76C21.33,12.22 20.58,12.57 19.73,12.86C17.62,13.6 14.95,14 12,14C9.05,14 6.38,13.6 4.27,12.86C3.42,12.57 2.67,12.22 2,11.76Z" /></g></svg>
 
-!define MA_HOCKEY_PUCK(_color)                                 SPRITE_PUT(ma_hockey_puck, _color)
-!define MA_HOCKEY_PUCK(_color, _scale)                         SPRITE_PUT(ma_hockey_puck, _color, _scale)
-!define MA_HOCKEY_PUCK(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA HOCKEY PUCK, ma_hockey_puck, _color, _scale)
-!define MA_HOCKEY_PUCK(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA HOCKEY PUCK, ma_hockey_puck, _color, _scale, _shape)
-!define MA_HOCKEY_PUCK(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA HOCKEY PUCK, _label, ma_hockey_puck, _color, _scale, _shape)
+!define MA_HOCKEY_PUCK(_color)                                 SPRITE_PUT(mdi-hockey-puck, _color)
+!define MA_HOCKEY_PUCK(_color, _scale)                         SPRITE_PUT(mdi-hockey-puck, _color, _scale)
+!define MA_HOCKEY_PUCK(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA HOCKEY PUCK, mdi-hockey-puck, _color, _scale)
+!define MA_HOCKEY_PUCK(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA HOCKEY PUCK, mdi-hockey-puck, _color, _scale, _shape)
+!define MA_HOCKEY_PUCK(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA HOCKEY PUCK, _label, mdi-hockey-puck, _color, _scale, _shape)
 skinparam folderBackgroundColor<<MA HOCKEY PUCK>> White

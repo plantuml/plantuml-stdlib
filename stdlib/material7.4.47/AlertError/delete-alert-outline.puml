@@ -1,8 +1,8 @@
 sprite mdi-delete-alert-outline <svg width="48" height="48"><g transform="scale(2)"><path d="M4 19V7H16V19C16 20.1 15.1 21 14 21H6C4.9 21 4 20.1 4 19M6 9V19H14V9H6M13.5 4H17V6H3V4H6.5L7.5 3H12.5L13.5 4M19 17V15H21V17H19M19 13V7H21V13H19Z" /></g></svg>
 
-!define MA_DELETE_ALERT_OUTLINE(_color)                                 SPRITE_PUT(ma_delete_alert_outline, _color)
-!define MA_DELETE_ALERT_OUTLINE(_color, _scale)                         SPRITE_PUT(ma_delete_alert_outline, _color, _scale)
-!define MA_DELETE_ALERT_OUTLINE(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA DELETE ALERT OUTLINE, ma_delete_alert_outline, _color, _scale)
-!define MA_DELETE_ALERT_OUTLINE(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA DELETE ALERT OUTLINE, ma_delete_alert_outline, _color, _scale, _shape)
-!define MA_DELETE_ALERT_OUTLINE(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA DELETE ALERT OUTLINE, _label, ma_delete_alert_outline, _color, _scale, _shape)
+!define MA_DELETE_ALERT_OUTLINE(_color)                                 SPRITE_PUT(mdi-delete-alert-outline, _color)
+!define MA_DELETE_ALERT_OUTLINE(_color, _scale)                         SPRITE_PUT(mdi-delete-alert-outline, _color, _scale)
+!define MA_DELETE_ALERT_OUTLINE(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA DELETE ALERT OUTLINE, mdi-delete-alert-outline, _color, _scale)
+!define MA_DELETE_ALERT_OUTLINE(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA DELETE ALERT OUTLINE, mdi-delete-alert-outline, _color, _scale, _shape)
+!define MA_DELETE_ALERT_OUTLINE(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA DELETE ALERT OUTLINE, _label, mdi-delete-alert-outline, _color, _scale, _shape)
 skinparam folderBackgroundColor<<MA DELETE ALERT OUTLINE>> White

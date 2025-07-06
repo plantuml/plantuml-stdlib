@@ -1,8 +1,8 @@
 sprite mdi-home-floor-a <svg width="48" height="48"><g transform="scale(2)"><path d="M12,3L2,12H5V20H19V12H22L12,3M11,8H13A2,2 0 0,1 15,10V18H13V15H11V18H9V10C9,8.89 9.9,8 11,8M11,10V13H13V10H11Z" /></g></svg>
 
-!define MA_HOME_FLOOR_A(_color)                                 SPRITE_PUT(ma_home_floor_a, _color)
-!define MA_HOME_FLOOR_A(_color, _scale)                         SPRITE_PUT(ma_home_floor_a, _color, _scale)
-!define MA_HOME_FLOOR_A(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA HOME FLOOR A, ma_home_floor_a, _color, _scale)
-!define MA_HOME_FLOOR_A(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA HOME FLOOR A, ma_home_floor_a, _color, _scale, _shape)
-!define MA_HOME_FLOOR_A(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA HOME FLOOR A, _label, ma_home_floor_a, _color, _scale, _shape)
+!define MA_HOME_FLOOR_A(_color)                                 SPRITE_PUT(mdi-home-floor-a, _color)
+!define MA_HOME_FLOOR_A(_color, _scale)                         SPRITE_PUT(mdi-home-floor-a, _color, _scale)
+!define MA_HOME_FLOOR_A(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA HOME FLOOR A, mdi-home-floor-a, _color, _scale)
+!define MA_HOME_FLOOR_A(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA HOME FLOOR A, mdi-home-floor-a, _color, _scale, _shape)
+!define MA_HOME_FLOOR_A(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA HOME FLOOR A, _label, mdi-home-floor-a, _color, _scale, _shape)
 skinparam folderBackgroundColor<<MA HOME FLOOR A>> White

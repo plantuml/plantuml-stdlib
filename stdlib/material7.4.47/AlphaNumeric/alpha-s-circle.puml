@@ -1,8 +1,8 @@
 sprite mdi-alpha-s-circle <svg width="48" height="48"><g transform="scale(2)"><path d="M11,7A2,2 0 0,0 9,9V11A2,2 0 0,0 11,13H13V15H9V17H13A2,2 0 0,0 15,15V13A2,2 0 0,0 13,11H11V9H15V7H11M12,2A10,10 0 0,1 22,12A10,10 0 0,1 12,22A10,10 0 0,1 2,12A10,10 0 0,1 12,2Z" /></g></svg>
 
-!define MA_ALPHA_S_CIRCLE(_color)                                 SPRITE_PUT(ma_alpha_s_circle, _color)
-!define MA_ALPHA_S_CIRCLE(_color, _scale)                         SPRITE_PUT(ma_alpha_s_circle, _color, _scale)
-!define MA_ALPHA_S_CIRCLE(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA ALPHA S CIRCLE, ma_alpha_s_circle, _color, _scale)
-!define MA_ALPHA_S_CIRCLE(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA ALPHA S CIRCLE, ma_alpha_s_circle, _color, _scale, _shape)
-!define MA_ALPHA_S_CIRCLE(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA ALPHA S CIRCLE, _label, ma_alpha_s_circle, _color, _scale, _shape)
+!define MA_ALPHA_S_CIRCLE(_color)                                 SPRITE_PUT(mdi-alpha-s-circle, _color)
+!define MA_ALPHA_S_CIRCLE(_color, _scale)                         SPRITE_PUT(mdi-alpha-s-circle, _color, _scale)
+!define MA_ALPHA_S_CIRCLE(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA ALPHA S CIRCLE, mdi-alpha-s-circle, _color, _scale)
+!define MA_ALPHA_S_CIRCLE(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA ALPHA S CIRCLE, mdi-alpha-s-circle, _color, _scale, _shape)
+!define MA_ALPHA_S_CIRCLE(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA ALPHA S CIRCLE, _label, mdi-alpha-s-circle, _color, _scale, _shape)
 skinparam folderBackgroundColor<<MA ALPHA S CIRCLE>> White

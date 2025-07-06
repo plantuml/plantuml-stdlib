@@ -1,8 +1,8 @@
 sprite mdi-food-takeout-box-outline <svg width="48" height="48"><g transform="scale(2)"><path d="M7.79 18L7.28 11H16.74L16.23 18H7.79M9.83 5H14.16L16.96 7.73L16.87 9H7.12L7.03 7.73L9.83 5M22 7.46L20.59 6.05L19 7.63L19.03 7.07L15 3H9L4.97 7.07L5 7.57L3.41 6L2 7.44L5.23 10.55L5.93 20H18.07L18.77 10.56L22 7.46Z" /></g></svg>
 
-!define MA_FOOD_TAKEOUT_BOX_OUTLINE(_color)                                 SPRITE_PUT(ma_food_takeout_box_outline, _color)
-!define MA_FOOD_TAKEOUT_BOX_OUTLINE(_color, _scale)                         SPRITE_PUT(ma_food_takeout_box_outline, _color, _scale)
-!define MA_FOOD_TAKEOUT_BOX_OUTLINE(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA FOOD TAKEOUT BOX OUTLINE, ma_food_takeout_box_outline, _color, _scale)
-!define MA_FOOD_TAKEOUT_BOX_OUTLINE(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA FOOD TAKEOUT BOX OUTLINE, ma_food_takeout_box_outline, _color, _scale, _shape)
-!define MA_FOOD_TAKEOUT_BOX_OUTLINE(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA FOOD TAKEOUT BOX OUTLINE, _label, ma_food_takeout_box_outline, _color, _scale, _shape)
+!define MA_FOOD_TAKEOUT_BOX_OUTLINE(_color)                                 SPRITE_PUT(mdi-food-takeout-box-outline, _color)
+!define MA_FOOD_TAKEOUT_BOX_OUTLINE(_color, _scale)                         SPRITE_PUT(mdi-food-takeout-box-outline, _color, _scale)
+!define MA_FOOD_TAKEOUT_BOX_OUTLINE(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA FOOD TAKEOUT BOX OUTLINE, mdi-food-takeout-box-outline, _color, _scale)
+!define MA_FOOD_TAKEOUT_BOX_OUTLINE(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA FOOD TAKEOUT BOX OUTLINE, mdi-food-takeout-box-outline, _color, _scale, _shape)
+!define MA_FOOD_TAKEOUT_BOX_OUTLINE(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA FOOD TAKEOUT BOX OUTLINE, _label, mdi-food-takeout-box-outline, _color, _scale, _shape)
 skinparam folderBackgroundColor<<MA FOOD TAKEOUT BOX OUTLINE>> White

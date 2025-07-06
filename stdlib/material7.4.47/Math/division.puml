@@ -1,8 +1,8 @@
 sprite mdi-division <svg width="48" height="48"><g transform="scale(2)"><path d="M19,13H5V11H19V13M12,5A2,2 0 0,1 14,7A2,2 0 0,1 12,9A2,2 0 0,1 10,7A2,2 0 0,1 12,5M12,15A2,2 0 0,1 14,17A2,2 0 0,1 12,19A2,2 0 0,1 10,17A2,2 0 0,1 12,15Z" /></g></svg>
 
-!define MA_DIVISION(_color)                                 SPRITE_PUT(ma_division, _color)
-!define MA_DIVISION(_color, _scale)                         SPRITE_PUT(ma_division, _color, _scale)
-!define MA_DIVISION(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA DIVISION, ma_division, _color, _scale)
-!define MA_DIVISION(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA DIVISION, ma_division, _color, _scale, _shape)
-!define MA_DIVISION(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA DIVISION, _label, ma_division, _color, _scale, _shape)
+!define MA_DIVISION(_color)                                 SPRITE_PUT(mdi-division, _color)
+!define MA_DIVISION(_color, _scale)                         SPRITE_PUT(mdi-division, _color, _scale)
+!define MA_DIVISION(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA DIVISION, mdi-division, _color, _scale)
+!define MA_DIVISION(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA DIVISION, mdi-division, _color, _scale, _shape)
+!define MA_DIVISION(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA DIVISION, _label, mdi-division, _color, _scale, _shape)
 skinparam folderBackgroundColor<<MA DIVISION>> White

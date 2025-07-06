@@ -1,8 +1,8 @@
 sprite mdi-color-helper <svg width="48" height="48"><g transform="scale(2)"><path d="M0,24H24V20H0V24Z" /></g></svg>
 
-!define MA_COLOR_HELPER(_color)                                 SPRITE_PUT(ma_color_helper, _color)
-!define MA_COLOR_HELPER(_color, _scale)                         SPRITE_PUT(ma_color_helper, _color, _scale)
-!define MA_COLOR_HELPER(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA COLOR HELPER, ma_color_helper, _color, _scale)
-!define MA_COLOR_HELPER(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA COLOR HELPER, ma_color_helper, _color, _scale, _shape)
-!define MA_COLOR_HELPER(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA COLOR HELPER, _label, ma_color_helper, _color, _scale, _shape)
+!define MA_COLOR_HELPER(_color)                                 SPRITE_PUT(mdi-color-helper, _color)
+!define MA_COLOR_HELPER(_color, _scale)                         SPRITE_PUT(mdi-color-helper, _color, _scale)
+!define MA_COLOR_HELPER(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA COLOR HELPER, mdi-color-helper, _color, _scale)
+!define MA_COLOR_HELPER(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA COLOR HELPER, mdi-color-helper, _color, _scale, _shape)
+!define MA_COLOR_HELPER(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA COLOR HELPER, _label, mdi-color-helper, _color, _scale, _shape)
 skinparam folderBackgroundColor<<MA COLOR HELPER>> White

@@ -1,8 +1,8 @@
 sprite mdi-upload <svg width="48" height="48"><g transform="scale(2)"><path d="M9,16V10H5L12,3L19,10H15V16H9M5,20V18H19V20H5Z" /></g></svg>
 
-!define MA_UPLOAD(_color)                                 SPRITE_PUT(ma_upload, _color)
-!define MA_UPLOAD(_color, _scale)                         SPRITE_PUT(ma_upload, _color, _scale)
-!define MA_UPLOAD(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA UPLOAD, ma_upload, _color, _scale)
-!define MA_UPLOAD(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA UPLOAD, ma_upload, _color, _scale, _shape)
-!define MA_UPLOAD(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA UPLOAD, _label, ma_upload, _color, _scale, _shape)
+!define MA_UPLOAD(_color)                                 SPRITE_PUT(mdi-upload, _color)
+!define MA_UPLOAD(_color, _scale)                         SPRITE_PUT(mdi-upload, _color, _scale)
+!define MA_UPLOAD(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA UPLOAD, mdi-upload, _color, _scale)
+!define MA_UPLOAD(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA UPLOAD, mdi-upload, _color, _scale, _shape)
+!define MA_UPLOAD(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA UPLOAD, _label, mdi-upload, _color, _scale, _shape)
 skinparam folderBackgroundColor<<MA UPLOAD>> White

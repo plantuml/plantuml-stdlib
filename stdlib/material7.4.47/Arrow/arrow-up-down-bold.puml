@@ -1,8 +1,8 @@
 sprite mdi-arrow-up-down-bold <svg width="48" height="48"><g transform="scale(2)"><path d="M10,8H6L12,2L18,8H14V16H18L12,22L6,16H10V8Z" /></g></svg>
 
-!define MA_ARROW_UP_DOWN_BOLD(_color)                                 SPRITE_PUT(ma_arrow_up_down_bold, _color)
-!define MA_ARROW_UP_DOWN_BOLD(_color, _scale)                         SPRITE_PUT(ma_arrow_up_down_bold, _color, _scale)
-!define MA_ARROW_UP_DOWN_BOLD(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA ARROW UP DOWN BOLD, ma_arrow_up_down_bold, _color, _scale)
-!define MA_ARROW_UP_DOWN_BOLD(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA ARROW UP DOWN BOLD, ma_arrow_up_down_bold, _color, _scale, _shape)
-!define MA_ARROW_UP_DOWN_BOLD(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA ARROW UP DOWN BOLD, _label, ma_arrow_up_down_bold, _color, _scale, _shape)
+!define MA_ARROW_UP_DOWN_BOLD(_color)                                 SPRITE_PUT(mdi-arrow-up-down-bold, _color)
+!define MA_ARROW_UP_DOWN_BOLD(_color, _scale)                         SPRITE_PUT(mdi-arrow-up-down-bold, _color, _scale)
+!define MA_ARROW_UP_DOWN_BOLD(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA ARROW UP DOWN BOLD, mdi-arrow-up-down-bold, _color, _scale)
+!define MA_ARROW_UP_DOWN_BOLD(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA ARROW UP DOWN BOLD, mdi-arrow-up-down-bold, _color, _scale, _shape)
+!define MA_ARROW_UP_DOWN_BOLD(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA ARROW UP DOWN BOLD, _label, mdi-arrow-up-down-bold, _color, _scale, _shape)
 skinparam folderBackgroundColor<<MA ARROW UP DOWN BOLD>> White

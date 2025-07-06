@@ -1,8 +1,8 @@
 sprite mdi-keyboard-backspace <svg width="48" height="48"><g transform="scale(2)"><path d="M21,11H6.83L10.41,7.41L9,6L3,12L9,18L10.41,16.58L6.83,13H21V11Z" /></g></svg>
 
-!define MA_KEYBOARD_BACKSPACE(_color)                                 SPRITE_PUT(ma_keyboard_backspace, _color)
-!define MA_KEYBOARD_BACKSPACE(_color, _scale)                         SPRITE_PUT(ma_keyboard_backspace, _color, _scale)
-!define MA_KEYBOARD_BACKSPACE(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA KEYBOARD BACKSPACE, ma_keyboard_backspace, _color, _scale)
-!define MA_KEYBOARD_BACKSPACE(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA KEYBOARD BACKSPACE, ma_keyboard_backspace, _color, _scale, _shape)
-!define MA_KEYBOARD_BACKSPACE(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA KEYBOARD BACKSPACE, _label, ma_keyboard_backspace, _color, _scale, _shape)
+!define MA_KEYBOARD_BACKSPACE(_color)                                 SPRITE_PUT(mdi-keyboard-backspace, _color)
+!define MA_KEYBOARD_BACKSPACE(_color, _scale)                         SPRITE_PUT(mdi-keyboard-backspace, _color, _scale)
+!define MA_KEYBOARD_BACKSPACE(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA KEYBOARD BACKSPACE, mdi-keyboard-backspace, _color, _scale)
+!define MA_KEYBOARD_BACKSPACE(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA KEYBOARD BACKSPACE, mdi-keyboard-backspace, _color, _scale, _shape)
+!define MA_KEYBOARD_BACKSPACE(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA KEYBOARD BACKSPACE, _label, mdi-keyboard-backspace, _color, _scale, _shape)
 skinparam folderBackgroundColor<<MA KEYBOARD BACKSPACE>> White

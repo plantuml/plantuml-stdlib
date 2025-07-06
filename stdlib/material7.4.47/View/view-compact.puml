@@ -1,8 +1,8 @@
 sprite mdi-view-compact <svg width="48" height="48"><g transform="scale(2)"><path d="M3,19H9V12H3V19M10,19H22V12H10V19M3,5V11H22V5H3Z" /></g></svg>
 
-!define MA_VIEW_COMPACT(_color)                                 SPRITE_PUT(ma_view_compact, _color)
-!define MA_VIEW_COMPACT(_color, _scale)                         SPRITE_PUT(ma_view_compact, _color, _scale)
-!define MA_VIEW_COMPACT(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA VIEW COMPACT, ma_view_compact, _color, _scale)
-!define MA_VIEW_COMPACT(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA VIEW COMPACT, ma_view_compact, _color, _scale, _shape)
-!define MA_VIEW_COMPACT(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA VIEW COMPACT, _label, ma_view_compact, _color, _scale, _shape)
+!define MA_VIEW_COMPACT(_color)                                 SPRITE_PUT(mdi-view-compact, _color)
+!define MA_VIEW_COMPACT(_color, _scale)                         SPRITE_PUT(mdi-view-compact, _color, _scale)
+!define MA_VIEW_COMPACT(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA VIEW COMPACT, mdi-view-compact, _color, _scale)
+!define MA_VIEW_COMPACT(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA VIEW COMPACT, mdi-view-compact, _color, _scale, _shape)
+!define MA_VIEW_COMPACT(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA VIEW COMPACT, _label, mdi-view-compact, _color, _scale, _shape)
 skinparam folderBackgroundColor<<MA VIEW COMPACT>> White

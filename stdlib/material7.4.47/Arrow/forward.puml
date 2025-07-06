@@ -1,8 +1,8 @@
 sprite mdi-forward <svg width="48" height="48"><g transform="scale(2)"><path d="M12,8V4L20,12L12,20V16H4V8H12Z" /></g></svg>
 
-!define MA_FORWARD(_color)                                 SPRITE_PUT(ma_forward, _color)
-!define MA_FORWARD(_color, _scale)                         SPRITE_PUT(ma_forward, _color, _scale)
-!define MA_FORWARD(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA FORWARD, ma_forward, _color, _scale)
-!define MA_FORWARD(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA FORWARD, ma_forward, _color, _scale, _shape)
-!define MA_FORWARD(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA FORWARD, _label, ma_forward, _color, _scale, _shape)
+!define MA_FORWARD(_color)                                 SPRITE_PUT(mdi-forward, _color)
+!define MA_FORWARD(_color, _scale)                         SPRITE_PUT(mdi-forward, _color, _scale)
+!define MA_FORWARD(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA FORWARD, mdi-forward, _color, _scale)
+!define MA_FORWARD(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA FORWARD, mdi-forward, _color, _scale, _shape)
+!define MA_FORWARD(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA FORWARD, _label, mdi-forward, _color, _scale, _shape)
 skinparam folderBackgroundColor<<MA FORWARD>> White

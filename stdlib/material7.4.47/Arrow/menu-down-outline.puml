@@ -1,8 +1,8 @@
 sprite mdi-menu-down-outline <svg width="48" height="48"><g transform="scale(2)"><path d="M18,9V10.5L12,16.5L6,10.5V9H18M12,13.67L14.67,11H9.33L12,13.67Z" /></g></svg>
 
-!define MA_MENU_DOWN_OUTLINE(_color)                                 SPRITE_PUT(ma_menu_down_outline, _color)
-!define MA_MENU_DOWN_OUTLINE(_color, _scale)                         SPRITE_PUT(ma_menu_down_outline, _color, _scale)
-!define MA_MENU_DOWN_OUTLINE(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA MENU DOWN OUTLINE, ma_menu_down_outline, _color, _scale)
-!define MA_MENU_DOWN_OUTLINE(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA MENU DOWN OUTLINE, ma_menu_down_outline, _color, _scale, _shape)
-!define MA_MENU_DOWN_OUTLINE(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA MENU DOWN OUTLINE, _label, ma_menu_down_outline, _color, _scale, _shape)
+!define MA_MENU_DOWN_OUTLINE(_color)                                 SPRITE_PUT(mdi-menu-down-outline, _color)
+!define MA_MENU_DOWN_OUTLINE(_color, _scale)                         SPRITE_PUT(mdi-menu-down-outline, _color, _scale)
+!define MA_MENU_DOWN_OUTLINE(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA MENU DOWN OUTLINE, mdi-menu-down-outline, _color, _scale)
+!define MA_MENU_DOWN_OUTLINE(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA MENU DOWN OUTLINE, mdi-menu-down-outline, _color, _scale, _shape)
+!define MA_MENU_DOWN_OUTLINE(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA MENU DOWN OUTLINE, _label, mdi-menu-down-outline, _color, _scale, _shape)
 skinparam folderBackgroundColor<<MA MENU DOWN OUTLINE>> White

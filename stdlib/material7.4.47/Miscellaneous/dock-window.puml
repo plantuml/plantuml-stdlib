@@ -1,8 +1,8 @@
 sprite mdi-dock-window <svg width="48" height="48"><g transform="scale(2)"><path d="M18 18V20H4A2 2 0 0 1 2 18V8H4V18M22 6V14A2 2 0 0 1 20 16H8A2 2 0 0 1 6 14V6A2 2 0 0 1 8 4H20A2 2 0 0 1 22 6M20 6H8V14H20Z" /></g></svg>
 
-!define MA_DOCK_WINDOW(_color)                                 SPRITE_PUT(ma_dock_window, _color)
-!define MA_DOCK_WINDOW(_color, _scale)                         SPRITE_PUT(ma_dock_window, _color, _scale)
-!define MA_DOCK_WINDOW(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA DOCK WINDOW, ma_dock_window, _color, _scale)
-!define MA_DOCK_WINDOW(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA DOCK WINDOW, ma_dock_window, _color, _scale, _shape)
-!define MA_DOCK_WINDOW(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA DOCK WINDOW, _label, ma_dock_window, _color, _scale, _shape)
+!define MA_DOCK_WINDOW(_color)                                 SPRITE_PUT(mdi-dock-window, _color)
+!define MA_DOCK_WINDOW(_color, _scale)                         SPRITE_PUT(mdi-dock-window, _color, _scale)
+!define MA_DOCK_WINDOW(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA DOCK WINDOW, mdi-dock-window, _color, _scale)
+!define MA_DOCK_WINDOW(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA DOCK WINDOW, mdi-dock-window, _color, _scale, _shape)
+!define MA_DOCK_WINDOW(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA DOCK WINDOW, _label, mdi-dock-window, _color, _scale, _shape)
 skinparam folderBackgroundColor<<MA DOCK WINDOW>> White

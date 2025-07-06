@@ -1,8 +1,8 @@
 sprite mdi-view-array <svg width="48" height="48"><g transform="scale(2)"><path d="M8,18H17V5H8M18,5V18H21V5M4,18H7V5H4V18Z" /></g></svg>
 
-!define MA_VIEW_ARRAY(_color)                                 SPRITE_PUT(ma_view_array, _color)
-!define MA_VIEW_ARRAY(_color, _scale)                         SPRITE_PUT(ma_view_array, _color, _scale)
-!define MA_VIEW_ARRAY(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA VIEW ARRAY, ma_view_array, _color, _scale)
-!define MA_VIEW_ARRAY(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA VIEW ARRAY, ma_view_array, _color, _scale, _shape)
-!define MA_VIEW_ARRAY(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA VIEW ARRAY, _label, ma_view_array, _color, _scale, _shape)
+!define MA_VIEW_ARRAY(_color)                                 SPRITE_PUT(mdi-view-array, _color)
+!define MA_VIEW_ARRAY(_color, _scale)                         SPRITE_PUT(mdi-view-array, _color, _scale)
+!define MA_VIEW_ARRAY(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA VIEW ARRAY, mdi-view-array, _color, _scale)
+!define MA_VIEW_ARRAY(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA VIEW ARRAY, mdi-view-array, _color, _scale, _shape)
+!define MA_VIEW_ARRAY(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA VIEW ARRAY, _label, mdi-view-array, _color, _scale, _shape)
 skinparam folderBackgroundColor<<MA VIEW ARRAY>> White

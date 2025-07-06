@@ -1,8 +1,8 @@
 sprite mdi-pandora <svg width="48" height="48"><g transform="scale(2)"><path d="M10,20A1,1 0 0,1 9,21H4V3H13.71A6.75,6.75 0 0,1 20.46,9.75C20.46,13.5 17.44,16.5 13.71,16.5H10V20Z" /></g></svg>
 
-!define MA_PANDORA(_color)                                 SPRITE_PUT(ma_pandora, _color)
-!define MA_PANDORA(_color, _scale)                         SPRITE_PUT(ma_pandora, _color, _scale)
-!define MA_PANDORA(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA PANDORA, ma_pandora, _color, _scale)
-!define MA_PANDORA(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA PANDORA, ma_pandora, _color, _scale, _shape)
-!define MA_PANDORA(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA PANDORA, _label, ma_pandora, _color, _scale, _shape)
+!define MA_PANDORA(_color)                                 SPRITE_PUT(mdi-pandora, _color)
+!define MA_PANDORA(_color, _scale)                         SPRITE_PUT(mdi-pandora, _color, _scale)
+!define MA_PANDORA(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA PANDORA, mdi-pandora, _color, _scale)
+!define MA_PANDORA(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA PANDORA, mdi-pandora, _color, _scale, _shape)
+!define MA_PANDORA(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA PANDORA, _label, mdi-pandora, _color, _scale, _shape)
 skinparam folderBackgroundColor<<MA PANDORA>> White

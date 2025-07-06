@@ -1,8 +1,8 @@
 sprite mdi-format-header-increase <svg width="48" height="48"><g transform="scale(2)"><path d="M4,4H6V10H10V4H12V18H10V12H6V18H4V4M14.59,7.41L18.17,11L14.59,14.59L16,16L21,11L16,6L14.59,7.41Z" /></g></svg>
 
-!define MA_FORMAT_HEADER_INCREASE(_color)                                 SPRITE_PUT(ma_format_header_increase, _color)
-!define MA_FORMAT_HEADER_INCREASE(_color, _scale)                         SPRITE_PUT(ma_format_header_increase, _color, _scale)
-!define MA_FORMAT_HEADER_INCREASE(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA FORMAT HEADER INCREASE, ma_format_header_increase, _color, _scale)
-!define MA_FORMAT_HEADER_INCREASE(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA FORMAT HEADER INCREASE, ma_format_header_increase, _color, _scale, _shape)
-!define MA_FORMAT_HEADER_INCREASE(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA FORMAT HEADER INCREASE, _label, ma_format_header_increase, _color, _scale, _shape)
+!define MA_FORMAT_HEADER_INCREASE(_color)                                 SPRITE_PUT(mdi-format-header-increase, _color)
+!define MA_FORMAT_HEADER_INCREASE(_color, _scale)                         SPRITE_PUT(mdi-format-header-increase, _color, _scale)
+!define MA_FORMAT_HEADER_INCREASE(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA FORMAT HEADER INCREASE, mdi-format-header-increase, _color, _scale)
+!define MA_FORMAT_HEADER_INCREASE(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA FORMAT HEADER INCREASE, mdi-format-header-increase, _color, _scale, _shape)
+!define MA_FORMAT_HEADER_INCREASE(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA FORMAT HEADER INCREASE, _label, mdi-format-header-increase, _color, _scale, _shape)
 skinparam folderBackgroundColor<<MA FORMAT HEADER INCREASE>> White

@@ -1,8 +1,8 @@
 sprite mdi-bookmark-plus <svg width="48" height="48"><g transform="scale(2)"><path d="M17,3A2,2 0 0,1 19,5V21L12,18L5,21V5C5,3.89 5.9,3 7,3H17M11,7V9H9V11H11V13H13V11H15V9H13V7H11Z" /></g></svg>
 
-!define MA_BOOKMARK_PLUS(_color)                                 SPRITE_PUT(ma_bookmark_plus, _color)
-!define MA_BOOKMARK_PLUS(_color, _scale)                         SPRITE_PUT(ma_bookmark_plus, _color, _scale)
-!define MA_BOOKMARK_PLUS(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA BOOKMARK PLUS, ma_bookmark_plus, _color, _scale)
-!define MA_BOOKMARK_PLUS(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA BOOKMARK PLUS, ma_bookmark_plus, _color, _scale, _shape)
-!define MA_BOOKMARK_PLUS(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA BOOKMARK PLUS, _label, ma_bookmark_plus, _color, _scale, _shape)
+!define MA_BOOKMARK_PLUS(_color)                                 SPRITE_PUT(mdi-bookmark-plus, _color)
+!define MA_BOOKMARK_PLUS(_color, _scale)                         SPRITE_PUT(mdi-bookmark-plus, _color, _scale)
+!define MA_BOOKMARK_PLUS(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA BOOKMARK PLUS, mdi-bookmark-plus, _color, _scale)
+!define MA_BOOKMARK_PLUS(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA BOOKMARK PLUS, mdi-bookmark-plus, _color, _scale, _shape)
+!define MA_BOOKMARK_PLUS(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA BOOKMARK PLUS, _label, mdi-bookmark-plus, _color, _scale, _shape)
 skinparam folderBackgroundColor<<MA BOOKMARK PLUS>> White

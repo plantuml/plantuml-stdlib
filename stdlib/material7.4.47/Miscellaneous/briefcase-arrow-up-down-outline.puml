@@ -1,8 +1,8 @@
 sprite mdi-briefcase-arrow-up-down-outline <svg width="48" height="48"><g transform="scale(2)"><path d="M10 2H14C15.11 2 16 2.9 16 4V6H20C21.11 6 22 6.9 22 8V13.53C21.42 13 20.75 12.6 20 12.34V8H4V19H12.08C12.2 19.72 12.45 20.39 12.8 21H4C2.9 21 2 20.11 2 19V8C2 6.9 2.9 6 4 6H8V4C8 2.9 8.9 2 10 2M14 6V4H10V6H14M17.5 19H19V15H21V19H22.5L20 22L17.5 19M17 17V21H15V17H13.5L16 14L18.5 17H17Z" /></g></svg>
 
-!define MA_BRIEFCASE_ARROW_UP_DOWN_OUTLINE(_color)                                 SPRITE_PUT(ma_briefcase_arrow_up_down_outline, _color)
-!define MA_BRIEFCASE_ARROW_UP_DOWN_OUTLINE(_color, _scale)                         SPRITE_PUT(ma_briefcase_arrow_up_down_outline, _color, _scale)
-!define MA_BRIEFCASE_ARROW_UP_DOWN_OUTLINE(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA BRIEFCASE ARROW UP DOWN OUTLINE, ma_briefcase_arrow_up_down_outline, _color, _scale)
-!define MA_BRIEFCASE_ARROW_UP_DOWN_OUTLINE(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA BRIEFCASE ARROW UP DOWN OUTLINE, ma_briefcase_arrow_up_down_outline, _color, _scale, _shape)
-!define MA_BRIEFCASE_ARROW_UP_DOWN_OUTLINE(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA BRIEFCASE ARROW UP DOWN OUTLINE, _label, ma_briefcase_arrow_up_down_outline, _color, _scale, _shape)
+!define MA_BRIEFCASE_ARROW_UP_DOWN_OUTLINE(_color)                                 SPRITE_PUT(mdi-briefcase-arrow-up-down-outline, _color)
+!define MA_BRIEFCASE_ARROW_UP_DOWN_OUTLINE(_color, _scale)                         SPRITE_PUT(mdi-briefcase-arrow-up-down-outline, _color, _scale)
+!define MA_BRIEFCASE_ARROW_UP_DOWN_OUTLINE(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA BRIEFCASE ARROW UP DOWN OUTLINE, mdi-briefcase-arrow-up-down-outline, _color, _scale)
+!define MA_BRIEFCASE_ARROW_UP_DOWN_OUTLINE(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA BRIEFCASE ARROW UP DOWN OUTLINE, mdi-briefcase-arrow-up-down-outline, _color, _scale, _shape)
+!define MA_BRIEFCASE_ARROW_UP_DOWN_OUTLINE(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA BRIEFCASE ARROW UP DOWN OUTLINE, _label, mdi-briefcase-arrow-up-down-outline, _color, _scale, _shape)
 skinparam folderBackgroundColor<<MA BRIEFCASE ARROW UP DOWN OUTLINE>> White

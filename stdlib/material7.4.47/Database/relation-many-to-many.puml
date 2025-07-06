@@ -1,8 +1,8 @@
 sprite mdi-relation-many-to-many <svg width="48" height="48"><g transform="scale(2)"><path d="M22 13V19H21L19 17H11V9H5L3 11H2V5H3L5 7H13V15H19L21 13Z" /></g></svg>
 
-!define MA_RELATION_MANY_TO_MANY(_color)                                 SPRITE_PUT(ma_relation_many_to_many, _color)
-!define MA_RELATION_MANY_TO_MANY(_color, _scale)                         SPRITE_PUT(ma_relation_many_to_many, _color, _scale)
-!define MA_RELATION_MANY_TO_MANY(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA RELATION MANY TO MANY, ma_relation_many_to_many, _color, _scale)
-!define MA_RELATION_MANY_TO_MANY(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA RELATION MANY TO MANY, ma_relation_many_to_many, _color, _scale, _shape)
-!define MA_RELATION_MANY_TO_MANY(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA RELATION MANY TO MANY, _label, ma_relation_many_to_many, _color, _scale, _shape)
+!define MA_RELATION_MANY_TO_MANY(_color)                                 SPRITE_PUT(mdi-relation-many-to-many, _color)
+!define MA_RELATION_MANY_TO_MANY(_color, _scale)                         SPRITE_PUT(mdi-relation-many-to-many, _color, _scale)
+!define MA_RELATION_MANY_TO_MANY(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA RELATION MANY TO MANY, mdi-relation-many-to-many, _color, _scale)
+!define MA_RELATION_MANY_TO_MANY(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA RELATION MANY TO MANY, mdi-relation-many-to-many, _color, _scale, _shape)
+!define MA_RELATION_MANY_TO_MANY(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA RELATION MANY TO MANY, _label, mdi-relation-many-to-many, _color, _scale, _shape)
 skinparam folderBackgroundColor<<MA RELATION MANY TO MANY>> White

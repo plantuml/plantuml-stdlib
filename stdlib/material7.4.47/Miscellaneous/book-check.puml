@@ -1,8 +1,8 @@
 sprite mdi-book-check <svg width="48" height="48"><g transform="scale(2)"><path d="M16.75 22.16L14 19.16L15.16 18L16.75 19.59L20.34 16L21.5 17.41L16.75 22.16M6 22C4.89 22 4 21.1 4 20V4C4 2.89 4.89 2 6 2H7V9L9.5 7.5L12 9V2H18C19.1 2 20 2.89 20 4V13.34C19.37 13.12 18.7 13 18 13C14.69 13 12 15.69 12 19C12 20.09 12.29 21.12 12.8 22H6Z" /></g></svg>
 
-!define MA_BOOK_CHECK(_color)                                 SPRITE_PUT(ma_book_check, _color)
-!define MA_BOOK_CHECK(_color, _scale)                         SPRITE_PUT(ma_book_check, _color, _scale)
-!define MA_BOOK_CHECK(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA BOOK CHECK, ma_book_check, _color, _scale)
-!define MA_BOOK_CHECK(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA BOOK CHECK, ma_book_check, _color, _scale, _shape)
-!define MA_BOOK_CHECK(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA BOOK CHECK, _label, ma_book_check, _color, _scale, _shape)
+!define MA_BOOK_CHECK(_color)                                 SPRITE_PUT(mdi-book-check, _color)
+!define MA_BOOK_CHECK(_color, _scale)                         SPRITE_PUT(mdi-book-check, _color, _scale)
+!define MA_BOOK_CHECK(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA BOOK CHECK, mdi-book-check, _color, _scale)
+!define MA_BOOK_CHECK(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA BOOK CHECK, mdi-book-check, _color, _scale, _shape)
+!define MA_BOOK_CHECK(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA BOOK CHECK, _label, mdi-book-check, _color, _scale, _shape)
 skinparam folderBackgroundColor<<MA BOOK CHECK>> White
