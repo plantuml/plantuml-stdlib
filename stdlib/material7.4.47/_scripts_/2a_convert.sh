@@ -35,11 +35,11 @@ for i in *.svg; do
     echo >> ../converted/$ICON.puml
 
     echo >> ../converted/$ICON.puml
-    echo "!define MA_$ICON_UPPER(_color)                                 SPRITE_PUT(ma_$ICON_UNDERSCORE, _color)" >> ../converted/$ICON.puml
-    echo "!define MA_$ICON_UPPER(_color, _scale)                         SPRITE_PUT(ma_$ICON_UNDERSCORE, _color, _scale)" >> ../converted/$ICON.puml
-    echo "!define MA_$ICON_UPPER(_color, _scale, _alias)                 SPRITE_ENT(_alias, $ICON_SKIN, ma_$ICON_UNDERSCORE, _color, _scale)" >> ../converted/$ICON.puml
-    echo "!define MA_$ICON_UPPER(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, $ICON_SKIN, ma_$ICON_UNDERSCORE, _color, _scale, _shape)" >> ../converted/$ICON.puml
-    echo "!define MA_$ICON_UPPER(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, $ICON_SKIN, _label, ma_$ICON_UNDERSCORE, _color, _scale, _shape)" >> ../converted/$ICON.puml
+    echo "!define MA_$ICON_UPPER(_color)                                 SPRITE_PUT(mdi-$ICON, _color)" >> ../converted/$ICON.puml
+    echo "!define MA_$ICON_UPPER(_color, _scale)                         SPRITE_PUT(mdi-$ICON, _color, _scale)" >> ../converted/$ICON.puml
+    echo "!define MA_$ICON_UPPER(_color, _scale, _alias)                 SPRITE_ENT(_alias, $ICON_SKIN, mdi-$ICON, _color, _scale)" >> ../converted/$ICON.puml
+    echo "!define MA_$ICON_UPPER(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, $ICON_SKIN, mdi-$ICON, _color, _scale, _shape)" >> ../converted/$ICON.puml
+    echo "!define MA_$ICON_UPPER(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, $ICON_SKIN, _label, mdi-$ICON, _color, _scale, _shape)" >> ../converted/$ICON.puml
     echo "skinparam folderBackgroundColor<<$ICON_SKIN>> White" >> ../converted/$ICON.puml
     # echo '@enduml' >> ../converted/$ICON.puml
 
