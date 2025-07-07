@@ -3,7 +3,7 @@ name: C4
 display_name: C4 (C4-PlantUML)
 description: The C4 library enables a simple way of describing and communicate software architectures with an intuitive language.
 author: Ricardo Niepel, kirchsth and contributors
-version: 2.12.0
+version: 2.12.1
 release: https://github.com/plantuml-stdlib/C4-PlantUML/tree/release/v2.12.0
 license: MIT
 source: https://github.com/plantuml-stdlib/C4-PlantUML
@@ -12,8 +12,9 @@ origin: https://c4model.com
 **C4 specific stdlib properties:**  
 ![name: C4](https://img.shields.io/badge/name-C4-black)
 ![display_name: C4 (C4-PlantUML)](https://img.shields.io/badge/display__name-C4_(C4--PlantUML)-black)  
-![version: 2.12.0](https://img.shields.io/badge/version-2.12.0-black)
-[![release: https://github.com/plantuml-stdlib/C4-PlantUML/tree/release/v2.12.0][Release Badge]][Release Link]  
+![version: 2.12.1](https://img.shields.io/badge/version-2.12.1-black)
+[![release: https://github.com/plantuml-stdlib/C4-PlantUML/tree/release/v2.12.0][Release Badge]][Release Link]
+![patched](https://img.shields.io/badge/patched-darkred)  
 ![description: The C4 library enables a simple way of describing and communicate software architectures with an intuitive language.](https://img.shields.io/badge/description-The_C4_library_enables_a_simple_way_of_describing_and_communicate_software_architectures_with_an_intuitive_language.-black)  
 [![license: MIT][License Badge]][License Link]
 ![author: Ricardo Niepel, kirchsth and contributors](https://img.shields.io/badge/author-Ricardo_Niepel,_kirchsth_and_contributors-black)  
@@ -40,6 +41,9 @@ origin: https://c4model.com
 [Open Link]: https://github.com/plantuml-stdlib/C4-PlantUML/compare/v2.12.0...master
 [Discussions Badge]: https://img.shields.io/badge/discussions-https://github.com/plantuml--stdlib/C4--PlantUML/discussions-orange
 [Discussions Link]: https://github.com/plantuml-stdlib/C4-PlantUML/discussions
+
+> [!INFORMATION]
+> **C4 library is patched to version 2.12.1:** This version contains the [Fix for "Use !option handwritten true" warning](https://github.com/plantuml-stdlib/C4-PlantUML/pull/397) too.
 
 # C4 library (C4-PlantUML) [C4]
 
