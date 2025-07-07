@@ -1,0 +1,8 @@
+sprite mdi-chevron-right <svg width="48" height="48"><g transform="scale(2)"><path d="M8.59,16.58L13.17,12L8.59,7.41L10,6L16,12L10,18L8.59,16.58Z" /></g></svg>
+
+!define MA_CHEVRON_RIGHT(_color)                                 SPRITE_PUT(mdi-chevron-right, _color)
+!define MA_CHEVRON_RIGHT(_color, _scale)                         SPRITE_PUT(mdi-chevron-right, _color, _scale)
+!define MA_CHEVRON_RIGHT(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA CHEVRON RIGHT, mdi-chevron-right, _color, _scale)
+!define MA_CHEVRON_RIGHT(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA CHEVRON RIGHT, mdi-chevron-right, _color, _scale, _shape)
+!define MA_CHEVRON_RIGHT(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA CHEVRON RIGHT, _label, mdi-chevron-right, _color, _scale, _shape)
+skinparam folderBackgroundColor<<MA CHEVRON RIGHT>> White

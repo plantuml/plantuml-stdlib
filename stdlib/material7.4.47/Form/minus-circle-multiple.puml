@@ -1,0 +1,8 @@
+sprite mdi-minus-circle-multiple <svg width="48" height="48"><g transform="scale(2)"><path d="M2 12C2 9.21 3.64 6.8 6 5.68V3.5C2.5 4.76 0 8.09 0 12S2.5 19.24 6 20.5V18.32C3.64 17.2 2 14.79 2 12M15 3C10.04 3 6 7.04 6 12S10.04 21 15 21 24 16.96 24 12 19.96 3 15 3M20 13H10V11H20V13Z" /></g></svg>
+
+!define MA_MINUS_CIRCLE_MULTIPLE(_color)                                 SPRITE_PUT(mdi-minus-circle-multiple, _color)
+!define MA_MINUS_CIRCLE_MULTIPLE(_color, _scale)                         SPRITE_PUT(mdi-minus-circle-multiple, _color, _scale)
+!define MA_MINUS_CIRCLE_MULTIPLE(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA MINUS CIRCLE MULTIPLE, mdi-minus-circle-multiple, _color, _scale)
+!define MA_MINUS_CIRCLE_MULTIPLE(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA MINUS CIRCLE MULTIPLE, mdi-minus-circle-multiple, _color, _scale, _shape)
+!define MA_MINUS_CIRCLE_MULTIPLE(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA MINUS CIRCLE MULTIPLE, _label, mdi-minus-circle-multiple, _color, _scale, _shape)
+skinparam folderBackgroundColor<<MA MINUS CIRCLE MULTIPLE>> White

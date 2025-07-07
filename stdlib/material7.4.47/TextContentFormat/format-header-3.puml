@@ -1,0 +1,8 @@
+sprite mdi-format-header-3 <svg width="48" height="48"><g transform="scale(2)"><path d="M3,4H5V10H9V4H11V18H9V12H5V18H3V4M15,4H19A2,2 0 0,1 21,6V16A2,2 0 0,1 19,18H15A2,2 0 0,1 13,16V15H15V16H19V12H15V10H19V6H15V7H13V6A2,2 0 0,1 15,4Z" /></g></svg>
+
+!define MA_FORMAT_HEADER_3(_color)                                 SPRITE_PUT(mdi-format-header-3, _color)
+!define MA_FORMAT_HEADER_3(_color, _scale)                         SPRITE_PUT(mdi-format-header-3, _color, _scale)
+!define MA_FORMAT_HEADER_3(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA FORMAT HEADER 3, mdi-format-header-3, _color, _scale)
+!define MA_FORMAT_HEADER_3(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA FORMAT HEADER 3, mdi-format-header-3, _color, _scale, _shape)
+!define MA_FORMAT_HEADER_3(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA FORMAT HEADER 3, _label, mdi-format-header-3, _color, _scale, _shape)
+skinparam folderBackgroundColor<<MA FORMAT HEADER 3>> White

@@ -1,0 +1,8 @@
+sprite mdi-table-of-contents <svg width="48" height="48"><g transform="scale(2)"><path d="M3,9H17V7H3V9M3,13H17V11H3V13M3,17H17V15H3V17M19,17H21V15H19V17M19,7V9H21V7H19M19,13H21V11H19V13Z" /></g></svg>
+
+!define MA_TABLE_OF_CONTENTS(_color)                                 SPRITE_PUT(mdi-table-of-contents, _color)
+!define MA_TABLE_OF_CONTENTS(_color, _scale)                         SPRITE_PUT(mdi-table-of-contents, _color, _scale)
+!define MA_TABLE_OF_CONTENTS(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA TABLE OF CONTENTS, mdi-table-of-contents, _color, _scale)
+!define MA_TABLE_OF_CONTENTS(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA TABLE OF CONTENTS, mdi-table-of-contents, _color, _scale, _shape)
+!define MA_TABLE_OF_CONTENTS(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA TABLE OF CONTENTS, _label, mdi-table-of-contents, _color, _scale, _shape)
+skinparam folderBackgroundColor<<MA TABLE OF CONTENTS>> White

@@ -1,0 +1,8 @@
+sprite mdi-content-copy <svg width="48" height="48"><g transform="scale(2)"><path d="M19,21H8V7H19M19,5H8A2,2 0 0,0 6,7V21A2,2 0 0,0 8,23H19A2,2 0 0,0 21,21V7A2,2 0 0,0 19,5M16,1H4A2,2 0 0,0 2,3V17H4V3H16V1Z" /></g></svg>
+
+!define MA_CONTENT_COPY(_color)                                 SPRITE_PUT(mdi-content-copy, _color)
+!define MA_CONTENT_COPY(_color, _scale)                         SPRITE_PUT(mdi-content-copy, _color, _scale)
+!define MA_CONTENT_COPY(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA CONTENT COPY, mdi-content-copy, _color, _scale)
+!define MA_CONTENT_COPY(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA CONTENT COPY, mdi-content-copy, _color, _scale, _shape)
+!define MA_CONTENT_COPY(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA CONTENT COPY, _label, mdi-content-copy, _color, _scale, _shape)
+skinparam folderBackgroundColor<<MA CONTENT COPY>> White

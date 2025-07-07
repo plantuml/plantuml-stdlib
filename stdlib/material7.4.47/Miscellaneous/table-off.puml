@@ -1,0 +1,8 @@
+sprite mdi-table-off <svg width="48" height="48"><g transform="scale(2)"><path d="M22.11 21.46L2.39 1.73L1.11 3L3.22 5.11C3.08 5.38 3 5.68 3 6V18C3 19.11 3.9 20 5 20H18.11L20.84 22.73L22.11 21.46M10.11 12H5V8H6.11L10.11 12M11 18H5V14H11V18M13 18V14.89L16.11 18H13M13 9.8L7.2 4H19C20.11 4 21 4.89 21 6V17.8L19 15.8V14H17.2L15.2 12H19V8H13V9.8Z" /></g></svg>
+
+!define MA_TABLE_OFF(_color)                                 SPRITE_PUT(mdi-table-off, _color)
+!define MA_TABLE_OFF(_color, _scale)                         SPRITE_PUT(mdi-table-off, _color, _scale)
+!define MA_TABLE_OFF(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA TABLE OFF, mdi-table-off, _color, _scale)
+!define MA_TABLE_OFF(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA TABLE OFF, mdi-table-off, _color, _scale, _shape)
+!define MA_TABLE_OFF(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA TABLE OFF, _label, mdi-table-off, _color, _scale, _shape)
+skinparam folderBackgroundColor<<MA TABLE OFF>> White

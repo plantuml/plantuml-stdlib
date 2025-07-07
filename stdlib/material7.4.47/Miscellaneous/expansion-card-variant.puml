@@ -1,0 +1,8 @@
+sprite mdi-expansion-card-variant <svg width="48" height="48"><g transform="scale(2)"><path d="M2 7H4.5V17H3V8.5H2M22 7V16H14V17H7V16H6V7M10 9H8V12H10M13 9H11V12H13M20 9H15V14H20V9Z" /></g></svg>
+
+!define MA_EXPANSION_CARD_VARIANT(_color)                                 SPRITE_PUT(mdi-expansion-card-variant, _color)
+!define MA_EXPANSION_CARD_VARIANT(_color, _scale)                         SPRITE_PUT(mdi-expansion-card-variant, _color, _scale)
+!define MA_EXPANSION_CARD_VARIANT(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA EXPANSION CARD VARIANT, mdi-expansion-card-variant, _color, _scale)
+!define MA_EXPANSION_CARD_VARIANT(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA EXPANSION CARD VARIANT, mdi-expansion-card-variant, _color, _scale, _shape)
+!define MA_EXPANSION_CARD_VARIANT(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA EXPANSION CARD VARIANT, _label, mdi-expansion-card-variant, _color, _scale, _shape)
+skinparam folderBackgroundColor<<MA EXPANSION CARD VARIANT>> White

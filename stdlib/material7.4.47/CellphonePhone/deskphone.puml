@@ -1,0 +1,8 @@
+sprite mdi-deskphone <svg width="48" height="48"><g transform="scale(2)"><path d="M5,3H19A2,2 0 0,1 21,5V19A2,2 0 0,1 19,21H5A2,2 0 0,1 3,19V5A2,2 0 0,1 5,3M15,5V19H19V5H15M5,5V9H13V5H5M5,11V13H7V11H5M8,11V13H10V11H8M11,11V13H13V11H11M5,14V16H7V14H5M8,14V16H10V14H8M11,14V16H13V14H11M11,17V19H13V17H11M8,17V19H10V17H8M5,17V19H7V17H5Z" /></g></svg>
+
+!define MA_DESKPHONE(_color)                                 SPRITE_PUT(mdi-deskphone, _color)
+!define MA_DESKPHONE(_color, _scale)                         SPRITE_PUT(mdi-deskphone, _color, _scale)
+!define MA_DESKPHONE(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA DESKPHONE, mdi-deskphone, _color, _scale)
+!define MA_DESKPHONE(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA DESKPHONE, mdi-deskphone, _color, _scale, _shape)
+!define MA_DESKPHONE(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA DESKPHONE, _label, mdi-deskphone, _color, _scale, _shape)
+skinparam folderBackgroundColor<<MA DESKPHONE>> White

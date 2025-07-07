@@ -1,0 +1,8 @@
+sprite mdi-folder-multiple-image <svg width="48" height="48"><g transform="scale(2)"><path d="M7,15L11.5,9L15,13.5L17.5,10.5L21,15M22,4H14L12,2H6A2,2 0 0,0 4,4V16A2,2 0 0,0 6,18H22A2,2 0 0,0 24,16V6A2,2 0 0,0 22,4M2,6H0V11H0V20A2,2 0 0,0 2,22H20V20H2V6Z" /></g></svg>
+
+!define MA_FOLDER_MULTIPLE_IMAGE(_color)                                 SPRITE_PUT(mdi-folder-multiple-image, _color)
+!define MA_FOLDER_MULTIPLE_IMAGE(_color, _scale)                         SPRITE_PUT(mdi-folder-multiple-image, _color, _scale)
+!define MA_FOLDER_MULTIPLE_IMAGE(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA FOLDER MULTIPLE IMAGE, mdi-folder-multiple-image, _color, _scale)
+!define MA_FOLDER_MULTIPLE_IMAGE(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA FOLDER MULTIPLE IMAGE, mdi-folder-multiple-image, _color, _scale, _shape)
+!define MA_FOLDER_MULTIPLE_IMAGE(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA FOLDER MULTIPLE IMAGE, _label, mdi-folder-multiple-image, _color, _scale, _shape)
+skinparam folderBackgroundColor<<MA FOLDER MULTIPLE IMAGE>> White

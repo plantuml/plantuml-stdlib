@@ -1,0 +1,8 @@
+sprite mdi-gamepad-square <svg width="48" height="48"><g transform="scale(2)"><path d="M21,6H3A2,2 0 0,0 1,8V16A2,2 0 0,0 3,18H21A2,2 0 0,0 23,16V8A2,2 0 0,0 21,6M11,13H8V16H6V13H3V11H6V8H8V11H11M15.5,15A1.5,1.5 0 0,1 14,13.5A1.5,1.5 0 0,1 15.5,12A1.5,1.5 0 0,1 17,13.5A1.5,1.5 0 0,1 15.5,15M19.5,12A1.5,1.5 0 0,1 18,10.5A1.5,1.5 0 0,1 19.5,9A1.5,1.5 0 0,1 21,10.5A1.5,1.5 0 0,1 19.5,12Z" /></g></svg>
+
+!define MA_GAMEPAD_SQUARE(_color)                                 SPRITE_PUT(mdi-gamepad-square, _color)
+!define MA_GAMEPAD_SQUARE(_color, _scale)                         SPRITE_PUT(mdi-gamepad-square, _color, _scale)
+!define MA_GAMEPAD_SQUARE(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA GAMEPAD SQUARE, mdi-gamepad-square, _color, _scale)
+!define MA_GAMEPAD_SQUARE(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA GAMEPAD SQUARE, mdi-gamepad-square, _color, _scale, _shape)
+!define MA_GAMEPAD_SQUARE(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA GAMEPAD SQUARE, _label, mdi-gamepad-square, _color, _scale, _shape)
+skinparam folderBackgroundColor<<MA GAMEPAD SQUARE>> White

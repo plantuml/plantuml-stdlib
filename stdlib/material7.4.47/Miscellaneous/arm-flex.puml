@@ -1,0 +1,8 @@
+sprite mdi-arm-flex <svg width="48" height="48"><g transform="scale(2)"><path d="M3 18.34C3 18.34 4 7.09 7 3L12 4L11 7.09H9V14.25H10C12 11.18 16.14 10.06 18.64 11.18C21.94 12.71 21.64 17.32 18.64 19.36C16.24 21 9 22.43 3 18.34Z" /></g></svg>
+
+!define MA_ARM_FLEX(_color)                                 SPRITE_PUT(mdi-arm-flex, _color)
+!define MA_ARM_FLEX(_color, _scale)                         SPRITE_PUT(mdi-arm-flex, _color, _scale)
+!define MA_ARM_FLEX(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA ARM FLEX, mdi-arm-flex, _color, _scale)
+!define MA_ARM_FLEX(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA ARM FLEX, mdi-arm-flex, _color, _scale, _shape)
+!define MA_ARM_FLEX(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA ARM FLEX, _label, mdi-arm-flex, _color, _scale, _shape)
+skinparam folderBackgroundColor<<MA ARM FLEX>> White

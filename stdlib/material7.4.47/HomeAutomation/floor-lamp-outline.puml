@@ -1,0 +1,8 @@
+sprite mdi-floor-lamp-outline <svg width="48" height="48"><g transform="scale(2)"><path d="M15 2L17 9H7L9 2M13.6 4H10.4L9.55 7H14.45M11 10H13V20H16V22H8V20H11Z" /></g></svg>
+
+!define MA_FLOOR_LAMP_OUTLINE(_color)                                 SPRITE_PUT(mdi-floor-lamp-outline, _color)
+!define MA_FLOOR_LAMP_OUTLINE(_color, _scale)                         SPRITE_PUT(mdi-floor-lamp-outline, _color, _scale)
+!define MA_FLOOR_LAMP_OUTLINE(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA FLOOR LAMP OUTLINE, mdi-floor-lamp-outline, _color, _scale)
+!define MA_FLOOR_LAMP_OUTLINE(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA FLOOR LAMP OUTLINE, mdi-floor-lamp-outline, _color, _scale, _shape)
+!define MA_FLOOR_LAMP_OUTLINE(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA FLOOR LAMP OUTLINE, _label, mdi-floor-lamp-outline, _color, _scale, _shape)
+skinparam folderBackgroundColor<<MA FLOOR LAMP OUTLINE>> White

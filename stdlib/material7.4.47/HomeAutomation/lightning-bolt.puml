@@ -1,0 +1,8 @@
+sprite mdi-lightning-bolt <svg width="48" height="48"><g transform="scale(2)"><path d="M11 15H6L13 1V9H18L11 23V15Z" /></g></svg>
+
+!define MA_LIGHTNING_BOLT(_color)                                 SPRITE_PUT(mdi-lightning-bolt, _color)
+!define MA_LIGHTNING_BOLT(_color, _scale)                         SPRITE_PUT(mdi-lightning-bolt, _color, _scale)
+!define MA_LIGHTNING_BOLT(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA LIGHTNING BOLT, mdi-lightning-bolt, _color, _scale)
+!define MA_LIGHTNING_BOLT(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA LIGHTNING BOLT, mdi-lightning-bolt, _color, _scale, _shape)
+!define MA_LIGHTNING_BOLT(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA LIGHTNING BOLT, _label, mdi-lightning-bolt, _color, _scale, _shape)
+skinparam folderBackgroundColor<<MA LIGHTNING BOLT>> White

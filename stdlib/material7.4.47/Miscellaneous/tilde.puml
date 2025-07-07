@@ -1,0 +1,8 @@
+sprite mdi-tilde <svg width="48" height="48"><g transform="scale(2)"><path d="M2,15C2,15 2,9 8,9C12,9 12.5,12.5 15.5,12.5C19.5,12.5 19.5,9 19.5,9H22C22,9 22,15 16,15C12,15 10.5,11.5 8.5,11.5C4.5,11.5 4.5,15 4.5,15H2" /></g></svg>
+
+!define MA_TILDE(_color)                                 SPRITE_PUT(mdi-tilde, _color)
+!define MA_TILDE(_color, _scale)                         SPRITE_PUT(mdi-tilde, _color, _scale)
+!define MA_TILDE(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA TILDE, mdi-tilde, _color, _scale)
+!define MA_TILDE(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA TILDE, mdi-tilde, _color, _scale, _shape)
+!define MA_TILDE(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA TILDE, _label, mdi-tilde, _color, _scale, _shape)
+skinparam folderBackgroundColor<<MA TILDE>> White

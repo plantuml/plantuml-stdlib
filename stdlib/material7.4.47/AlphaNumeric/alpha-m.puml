@@ -1,0 +1,8 @@
+sprite mdi-alpha-m <svg width="48" height="48"><g transform="scale(2)"><path d="M9,7A2,2 0 0,0 7,9V17H9V9H11V16H13V9H15V17H17V9A2,2 0 0,0 15,7H9Z" /></g></svg>
+
+!define MA_ALPHA_M(_color)                                 SPRITE_PUT(mdi-alpha-m, _color)
+!define MA_ALPHA_M(_color, _scale)                         SPRITE_PUT(mdi-alpha-m, _color, _scale)
+!define MA_ALPHA_M(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA ALPHA M, mdi-alpha-m, _color, _scale)
+!define MA_ALPHA_M(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA ALPHA M, mdi-alpha-m, _color, _scale, _shape)
+!define MA_ALPHA_M(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA ALPHA M, _label, mdi-alpha-m, _color, _scale, _shape)
+skinparam folderBackgroundColor<<MA ALPHA M>> White

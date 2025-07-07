@@ -1,0 +1,8 @@
+sprite mdi-stop <svg width="48" height="48"><g transform="scale(2)"><path d="M18,18H6V6H18V18Z" /></g></svg>
+
+!define MA_STOP(_color)                                 SPRITE_PUT(mdi-stop, _color)
+!define MA_STOP(_color, _scale)                         SPRITE_PUT(mdi-stop, _color, _scale)
+!define MA_STOP(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA STOP, mdi-stop, _color, _scale)
+!define MA_STOP(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA STOP, mdi-stop, _color, _scale, _shape)
+!define MA_STOP(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA STOP, _label, mdi-stop, _color, _scale, _shape)
+skinparam folderBackgroundColor<<MA STOP>> White

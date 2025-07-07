@@ -1,0 +1,8 @@
+sprite mdi-plus <svg width="48" height="48"><g transform="scale(2)"><path d="M19,13H13V19H11V13H5V11H11V5H13V11H19V13Z" /></g></svg>
+
+!define MA_PLUS(_color)                                 SPRITE_PUT(mdi-plus, _color)
+!define MA_PLUS(_color, _scale)                         SPRITE_PUT(mdi-plus, _color, _scale)
+!define MA_PLUS(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA PLUS, mdi-plus, _color, _scale)
+!define MA_PLUS(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA PLUS, mdi-plus, _color, _scale, _shape)
+!define MA_PLUS(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA PLUS, _label, mdi-plus, _color, _scale, _shape)
+skinparam folderBackgroundColor<<MA PLUS>> White

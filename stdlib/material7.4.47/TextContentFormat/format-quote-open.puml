@@ -1,0 +1,8 @@
+sprite mdi-format-quote-open <svg width="48" height="48"><g transform="scale(2)"><path d="M10,7L8,11H11V17H5V11L7,7H10M18,7L16,11H19V17H13V11L15,7H18Z" /></g></svg>
+
+!define MA_FORMAT_QUOTE_OPEN(_color)                                 SPRITE_PUT(mdi-format-quote-open, _color)
+!define MA_FORMAT_QUOTE_OPEN(_color, _scale)                         SPRITE_PUT(mdi-format-quote-open, _color, _scale)
+!define MA_FORMAT_QUOTE_OPEN(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA FORMAT QUOTE OPEN, mdi-format-quote-open, _color, _scale)
+!define MA_FORMAT_QUOTE_OPEN(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA FORMAT QUOTE OPEN, mdi-format-quote-open, _color, _scale, _shape)
+!define MA_FORMAT_QUOTE_OPEN(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA FORMAT QUOTE OPEN, _label, mdi-format-quote-open, _color, _scale, _shape)
+skinparam folderBackgroundColor<<MA FORMAT QUOTE OPEN>> White

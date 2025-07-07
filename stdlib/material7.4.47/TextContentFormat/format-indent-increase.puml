@@ -1,0 +1,8 @@
+sprite mdi-format-indent-increase <svg width="48" height="48"><g transform="scale(2)"><path d="M11,13H21V11H11M11,9H21V7H11M3,3V5H21V3M11,17H21V15H11M3,8V16L7,12M3,21H21V19H3V21Z" /></g></svg>
+
+!define MA_FORMAT_INDENT_INCREASE(_color)                                 SPRITE_PUT(mdi-format-indent-increase, _color)
+!define MA_FORMAT_INDENT_INCREASE(_color, _scale)                         SPRITE_PUT(mdi-format-indent-increase, _color, _scale)
+!define MA_FORMAT_INDENT_INCREASE(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA FORMAT INDENT INCREASE, mdi-format-indent-increase, _color, _scale)
+!define MA_FORMAT_INDENT_INCREASE(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA FORMAT INDENT INCREASE, mdi-format-indent-increase, _color, _scale, _shape)
+!define MA_FORMAT_INDENT_INCREASE(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA FORMAT INDENT INCREASE, _label, mdi-format-indent-increase, _color, _scale, _shape)
+skinparam folderBackgroundColor<<MA FORMAT INDENT INCREASE>> White

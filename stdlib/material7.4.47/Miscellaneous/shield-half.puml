@@ -1,0 +1,8 @@
+sprite mdi-shield-half <svg width="48" height="48"><g transform="scale(2)"><path d="M12 1L3 5V11C3 16.5 6.8 21.7 12 23V1Z" /></g></svg>
+
+!define MA_SHIELD_HALF(_color)                                 SPRITE_PUT(mdi-shield-half, _color)
+!define MA_SHIELD_HALF(_color, _scale)                         SPRITE_PUT(mdi-shield-half, _color, _scale)
+!define MA_SHIELD_HALF(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA SHIELD HALF, mdi-shield-half, _color, _scale)
+!define MA_SHIELD_HALF(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA SHIELD HALF, mdi-shield-half, _color, _scale, _shape)
+!define MA_SHIELD_HALF(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA SHIELD HALF, _label, mdi-shield-half, _color, _scale, _shape)
+skinparam folderBackgroundColor<<MA SHIELD HALF>> White

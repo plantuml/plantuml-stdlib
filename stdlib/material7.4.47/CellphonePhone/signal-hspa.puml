@@ -1,0 +1,8 @@
+sprite mdi-signal-hspa <svg width="48" height="48"><g transform="scale(2)"><path d="M10.5,10.5H13.5V4.5H16.5V19.5H13.5V13.5H10.5V19.5H7.5V4.5H10.5V10.5Z" /></g></svg>
+
+!define MA_SIGNAL_HSPA(_color)                                 SPRITE_PUT(mdi-signal-hspa, _color)
+!define MA_SIGNAL_HSPA(_color, _scale)                         SPRITE_PUT(mdi-signal-hspa, _color, _scale)
+!define MA_SIGNAL_HSPA(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA SIGNAL HSPA, mdi-signal-hspa, _color, _scale)
+!define MA_SIGNAL_HSPA(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA SIGNAL HSPA, mdi-signal-hspa, _color, _scale, _shape)
+!define MA_SIGNAL_HSPA(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA SIGNAL HSPA, _label, mdi-signal-hspa, _color, _scale, _shape)
+skinparam folderBackgroundColor<<MA SIGNAL HSPA>> White

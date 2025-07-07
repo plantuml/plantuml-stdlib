@@ -1,0 +1,8 @@
+sprite mdi-filter-variant <svg width="48" height="48"><g transform="scale(2)"><path d="M6,13H18V11H6M3,6V8H21V6M10,18H14V16H10V18Z" /></g></svg>
+
+!define MA_FILTER_VARIANT(_color)                                 SPRITE_PUT(mdi-filter-variant, _color)
+!define MA_FILTER_VARIANT(_color, _scale)                         SPRITE_PUT(mdi-filter-variant, _color, _scale)
+!define MA_FILTER_VARIANT(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA FILTER VARIANT, mdi-filter-variant, _color, _scale)
+!define MA_FILTER_VARIANT(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA FILTER VARIANT, mdi-filter-variant, _color, _scale, _shape)
+!define MA_FILTER_VARIANT(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA FILTER VARIANT, _label, mdi-filter-variant, _color, _scale, _shape)
+skinparam folderBackgroundColor<<MA FILTER VARIANT>> White

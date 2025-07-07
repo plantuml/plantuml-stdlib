@@ -1,0 +1,8 @@
+sprite mdi-format-letter-spacing-variant <svg width="48" height="48"><g transform="scale(2)"><path d="M22 3V21H20V3H22M4 3V21H2V3H4M10 13.7H14L12 8.3L10 13.7M11.2 6H12.9L17.6 18H15.6L14.7 15.4H9.4L8.5 18H6.5L11.2 6Z" /></g></svg>
+
+!define MA_FORMAT_LETTER_SPACING_VARIANT(_color)                                 SPRITE_PUT(mdi-format-letter-spacing-variant, _color)
+!define MA_FORMAT_LETTER_SPACING_VARIANT(_color, _scale)                         SPRITE_PUT(mdi-format-letter-spacing-variant, _color, _scale)
+!define MA_FORMAT_LETTER_SPACING_VARIANT(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA FORMAT LETTER SPACING VARIANT, mdi-format-letter-spacing-variant, _color, _scale)
+!define MA_FORMAT_LETTER_SPACING_VARIANT(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA FORMAT LETTER SPACING VARIANT, mdi-format-letter-spacing-variant, _color, _scale, _shape)
+!define MA_FORMAT_LETTER_SPACING_VARIANT(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA FORMAT LETTER SPACING VARIANT, _label, mdi-format-letter-spacing-variant, _color, _scale, _shape)
+skinparam folderBackgroundColor<<MA FORMAT LETTER SPACING VARIANT>> White

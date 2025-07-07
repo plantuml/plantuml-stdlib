@@ -1,0 +1,8 @@
+sprite mdi-desktop-tower-monitor <svg width="48" height="48"><g transform="scale(2)"><path d="M22,18H17A1,1 0 0,1 16,17V7A1,1 0 0,1 17,6H22A1,1 0 0,1 23,7V17A1,1 0 0,1 22,18M22,8H17V9H22V8M22,10H17V11H22V10M9,15V17H10V18H5V17H6V15H2A1,1 0 0,1 1,14V7A1,1 0 0,1 2,6H13A1,1 0 0,1 14,7V14A1,1 0 0,1 13,15H9M12,8H3V13H12V8Z" /></g></svg>
+
+!define MA_DESKTOP_TOWER_MONITOR(_color)                                 SPRITE_PUT(mdi-desktop-tower-monitor, _color)
+!define MA_DESKTOP_TOWER_MONITOR(_color, _scale)                         SPRITE_PUT(mdi-desktop-tower-monitor, _color, _scale)
+!define MA_DESKTOP_TOWER_MONITOR(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA DESKTOP TOWER MONITOR, mdi-desktop-tower-monitor, _color, _scale)
+!define MA_DESKTOP_TOWER_MONITOR(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA DESKTOP TOWER MONITOR, mdi-desktop-tower-monitor, _color, _scale, _shape)
+!define MA_DESKTOP_TOWER_MONITOR(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA DESKTOP TOWER MONITOR, _label, mdi-desktop-tower-monitor, _color, _scale, _shape)
+skinparam folderBackgroundColor<<MA DESKTOP TOWER MONITOR>> White

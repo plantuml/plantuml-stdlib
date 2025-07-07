@@ -1,0 +1,8 @@
+sprite mdi-skip-previous-outline <svg width="48" height="48"><g transform="scale(2)"><path d="M6,6H8V18H6M9.5,12L18,18V6M16,14.14L12.97,12L16,9.86V14.14Z" /></g></svg>
+
+!define MA_SKIP_PREVIOUS_OUTLINE(_color)                                 SPRITE_PUT(mdi-skip-previous-outline, _color)
+!define MA_SKIP_PREVIOUS_OUTLINE(_color, _scale)                         SPRITE_PUT(mdi-skip-previous-outline, _color, _scale)
+!define MA_SKIP_PREVIOUS_OUTLINE(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA SKIP PREVIOUS OUTLINE, mdi-skip-previous-outline, _color, _scale)
+!define MA_SKIP_PREVIOUS_OUTLINE(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA SKIP PREVIOUS OUTLINE, mdi-skip-previous-outline, _color, _scale, _shape)
+!define MA_SKIP_PREVIOUS_OUTLINE(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA SKIP PREVIOUS OUTLINE, _label, mdi-skip-previous-outline, _color, _scale, _shape)
+skinparam folderBackgroundColor<<MA SKIP PREVIOUS OUTLINE>> White

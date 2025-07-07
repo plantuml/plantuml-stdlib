@@ -1,0 +1,8 @@
+sprite mdi-format-text-rotation-angle-up <svg width="48" height="48"><g transform="scale(2)"><path d="M20.58 9.33V13.55L19.17 12.14L10.31 21L8.91 19.59L17.72 10.73L16.31 9.33M7.59 11L10.22 8.39L5.34 6.14M4.5 4.22L15.61 8.63L14.16 10.13L11.96 9.19L8.39 12.75L9.33 14.91L7.83 16.41L3.42 5.25Z" /></g></svg>
+
+!define MA_FORMAT_TEXT_ROTATION_ANGLE_UP(_color)                                 SPRITE_PUT(mdi-format-text-rotation-angle-up, _color)
+!define MA_FORMAT_TEXT_ROTATION_ANGLE_UP(_color, _scale)                         SPRITE_PUT(mdi-format-text-rotation-angle-up, _color, _scale)
+!define MA_FORMAT_TEXT_ROTATION_ANGLE_UP(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA FORMAT TEXT ROTATION ANGLE UP, mdi-format-text-rotation-angle-up, _color, _scale)
+!define MA_FORMAT_TEXT_ROTATION_ANGLE_UP(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA FORMAT TEXT ROTATION ANGLE UP, mdi-format-text-rotation-angle-up, _color, _scale, _shape)
+!define MA_FORMAT_TEXT_ROTATION_ANGLE_UP(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA FORMAT TEXT ROTATION ANGLE UP, _label, mdi-format-text-rotation-angle-up, _color, _scale, _shape)
+skinparam folderBackgroundColor<<MA FORMAT TEXT ROTATION ANGLE UP>> White

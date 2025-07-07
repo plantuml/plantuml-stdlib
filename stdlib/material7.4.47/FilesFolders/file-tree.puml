@@ -1,0 +1,8 @@
+sprite mdi-file-tree <svg width="48" height="48"><g transform="scale(2)"><path d="M3,3H9V7H3V3M15,10H21V14H15V10M15,17H21V21H15V17M13,13H7V18H13V20H7L5,20V9H7V11H13V13Z" /></g></svg>
+
+!define MA_FILE_TREE(_color)                                 SPRITE_PUT(mdi-file-tree, _color)
+!define MA_FILE_TREE(_color, _scale)                         SPRITE_PUT(mdi-file-tree, _color, _scale)
+!define MA_FILE_TREE(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA FILE TREE, mdi-file-tree, _color, _scale)
+!define MA_FILE_TREE(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA FILE TREE, mdi-file-tree, _color, _scale, _shape)
+!define MA_FILE_TREE(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA FILE TREE, _label, mdi-file-tree, _color, _scale, _shape)
+skinparam folderBackgroundColor<<MA FILE TREE>> White

@@ -1,0 +1,8 @@
+sprite mdi-music-clef-alto <svg width="48" height="48"><g transform="scale(2)"><path d="M5 4H7V20H5M15.46 13H14.83L13.83 12L14.83 11H15.46A3.5 3.5 0 1 0 11.96 7.5H13.96A1.5 1.5 0 1 1 15.46 9H14L12 11H11V4H9V20H11V13H12L14 15H15.46A1.5 1.5 0 1 1 13.96 16.5H11.96A3.5 3.5 0 1 0 15.46 13Z" /></g></svg>
+
+!define MA_MUSIC_CLEF_ALTO(_color)                                 SPRITE_PUT(mdi-music-clef-alto, _color)
+!define MA_MUSIC_CLEF_ALTO(_color, _scale)                         SPRITE_PUT(mdi-music-clef-alto, _color, _scale)
+!define MA_MUSIC_CLEF_ALTO(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA MUSIC CLEF ALTO, mdi-music-clef-alto, _color, _scale)
+!define MA_MUSIC_CLEF_ALTO(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA MUSIC CLEF ALTO, mdi-music-clef-alto, _color, _scale, _shape)
+!define MA_MUSIC_CLEF_ALTO(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA MUSIC CLEF ALTO, _label, mdi-music-clef-alto, _color, _scale, _shape)
+skinparam folderBackgroundColor<<MA MUSIC CLEF ALTO>> White

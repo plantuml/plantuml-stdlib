@@ -1,0 +1,8 @@
+sprite mdi-abacus <svg width="48" height="48"><g transform="scale(2)"><path d="M5 5H7V11H5V5M10 5H8V11H10V5M5 19H7V13H5V19M10 13H8V19H10V17H15V15H10V13M2 21H4V3H2V21M20 3V7H13V5H11V11H13V9H20V15H18V13H16V19H18V17H20V21H22V3H20Z" /></g></svg>
+
+!define MA_ABACUS(_color)                                 SPRITE_PUT(mdi-abacus, _color)
+!define MA_ABACUS(_color, _scale)                         SPRITE_PUT(mdi-abacus, _color, _scale)
+!define MA_ABACUS(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA ABACUS, mdi-abacus, _color, _scale)
+!define MA_ABACUS(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA ABACUS, mdi-abacus, _color, _scale, _shape)
+!define MA_ABACUS(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA ABACUS, _label, mdi-abacus, _color, _scale, _shape)
+skinparam folderBackgroundColor<<MA ABACUS>> White

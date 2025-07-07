@@ -1,0 +1,8 @@
+sprite mdi-sticker <svg width="48" height="48"><g transform="scale(2)"><path d="M18.5 2H5.5C3.6 2 2 3.6 2 5.5V18.5C2 20.4 3.6 22 5.5 22H16L22 16V5.5C22 3.6 20.4 2 18.5 2M15 20V18.5C15 16.6 16.6 15 18.5 15H20L15 20Z" /></g></svg>
+
+!define MA_STICKER(_color)                                 SPRITE_PUT(mdi-sticker, _color)
+!define MA_STICKER(_color, _scale)                         SPRITE_PUT(mdi-sticker, _color, _scale)
+!define MA_STICKER(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA STICKER, mdi-sticker, _color, _scale)
+!define MA_STICKER(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA STICKER, mdi-sticker, _color, _scale, _shape)
+!define MA_STICKER(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA STICKER, _label, mdi-sticker, _color, _scale, _shape)
+skinparam folderBackgroundColor<<MA STICKER>> White

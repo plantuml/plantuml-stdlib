@@ -1,0 +1,8 @@
+sprite mdi-solar-power-variant <svg width="48" height="48"><g transform="scale(2)"><path d="M3.33 16H11V13H4L3.33 16M13 16H20.67L20 13H13V16M21.11 18H13V22H22L21.11 18M2 22H11V18H2.89L2 22M11 8H13V11H11V8M15.76 7.21L17.18 5.79L19.3 7.91L17.89 9.33L15.76 7.21M4.71 7.91L6.83 5.79L8.24 7.21L6.12 9.33L4.71 7.91M3 2H6V4H3V2M18 2H21V4H18V2M12 7C14.76 7 17 4.76 17 2H7C7 4.76 9.24 7 12 7Z" /></g></svg>
+
+!define MA_SOLAR_POWER_VARIANT(_color)                                 SPRITE_PUT(mdi-solar-power-variant, _color)
+!define MA_SOLAR_POWER_VARIANT(_color, _scale)                         SPRITE_PUT(mdi-solar-power-variant, _color, _scale)
+!define MA_SOLAR_POWER_VARIANT(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA SOLAR POWER VARIANT, mdi-solar-power-variant, _color, _scale)
+!define MA_SOLAR_POWER_VARIANT(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA SOLAR POWER VARIANT, mdi-solar-power-variant, _color, _scale, _shape)
+!define MA_SOLAR_POWER_VARIANT(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA SOLAR POWER VARIANT, _label, mdi-solar-power-variant, _color, _scale, _shape)
+skinparam folderBackgroundColor<<MA SOLAR POWER VARIANT>> White

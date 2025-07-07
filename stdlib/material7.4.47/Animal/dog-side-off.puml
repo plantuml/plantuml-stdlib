@@ -1,0 +1,8 @@
+sprite mdi-dog-side-off <svg width="48" height="48"><g transform="scale(2)"><path d="M18 10L15 7L19 3V5L22 8L20 10L19 9L18 10M17 11L14 8L13 9H12.2L17 13.8V11M2.39 1.73L1.11 3L7.11 9H5L3 7L2 8L5 11V14L4 15V21H6V18L8 15H13.11L15 16.89V21H17V18.89L20.84 22.73L22.11 21.46L2.39 1.73Z" /></g></svg>
+
+!define MA_DOG_SIDE_OFF(_color)                                 SPRITE_PUT(mdi-dog-side-off, _color)
+!define MA_DOG_SIDE_OFF(_color, _scale)                         SPRITE_PUT(mdi-dog-side-off, _color, _scale)
+!define MA_DOG_SIDE_OFF(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA DOG SIDE OFF, mdi-dog-side-off, _color, _scale)
+!define MA_DOG_SIDE_OFF(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA DOG SIDE OFF, mdi-dog-side-off, _color, _scale, _shape)
+!define MA_DOG_SIDE_OFF(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA DOG SIDE OFF, _label, mdi-dog-side-off, _color, _scale, _shape)
+skinparam folderBackgroundColor<<MA DOG SIDE OFF>> White

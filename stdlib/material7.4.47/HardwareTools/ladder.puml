@@ -1,0 +1,8 @@
+sprite mdi-ladder <svg width="48" height="48"><g transform="scale(2)"><path d="M14 1V3H10V1H8V22H10V20H14V22H16V1H14M14 5V8H10V5H14M14 10V13H10V10H14M10 18V15H14V18H10Z" /></g></svg>
+
+!define MA_LADDER(_color)                                 SPRITE_PUT(mdi-ladder, _color)
+!define MA_LADDER(_color, _scale)                         SPRITE_PUT(mdi-ladder, _color, _scale)
+!define MA_LADDER(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA LADDER, mdi-ladder, _color, _scale)
+!define MA_LADDER(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA LADDER, mdi-ladder, _color, _scale, _shape)
+!define MA_LADDER(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA LADDER, _label, mdi-ladder, _color, _scale, _shape)
+skinparam folderBackgroundColor<<MA LADDER>> White

@@ -1,0 +1,8 @@
+sprite mdi-card-plus-outline <svg width="48" height="48"><g transform="scale(2)"><path d="M21 15V18H24V20H21V23H19V20H16V18H19V15H21M14 18H3V6H19V13H21V6C21 4.89 20.11 4 19 4H3C1.9 4 1 4.89 1 6V18C1 19.11 1.9 20 3 20H14V18Z" /></g></svg>
+
+!define MA_CARD_PLUS_OUTLINE(_color)                                 SPRITE_PUT(mdi-card-plus-outline, _color)
+!define MA_CARD_PLUS_OUTLINE(_color, _scale)                         SPRITE_PUT(mdi-card-plus-outline, _color, _scale)
+!define MA_CARD_PLUS_OUTLINE(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA CARD PLUS OUTLINE, mdi-card-plus-outline, _color, _scale)
+!define MA_CARD_PLUS_OUTLINE(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA CARD PLUS OUTLINE, mdi-card-plus-outline, _color, _scale, _shape)
+!define MA_CARD_PLUS_OUTLINE(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA CARD PLUS OUTLINE, _label, mdi-card-plus-outline, _color, _scale, _shape)
+skinparam folderBackgroundColor<<MA CARD PLUS OUTLINE>> White

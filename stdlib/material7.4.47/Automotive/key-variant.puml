@@ -1,0 +1,8 @@
+sprite mdi-key-variant <svg width="48" height="48"><g transform="scale(2)"><path d="M22,18V22H18V19H15V16H12L9.74,13.74C9.19,13.91 8.61,14 8,14A6,6 0 0,1 2,8A6,6 0 0,1 8,2A6,6 0 0,1 14,8C14,8.61 13.91,9.19 13.74,9.74L22,18M7,5A2,2 0 0,0 5,7A2,2 0 0,0 7,9A2,2 0 0,0 9,7A2,2 0 0,0 7,5Z" /></g></svg>
+
+!define MA_KEY_VARIANT(_color)                                 SPRITE_PUT(mdi-key-variant, _color)
+!define MA_KEY_VARIANT(_color, _scale)                         SPRITE_PUT(mdi-key-variant, _color, _scale)
+!define MA_KEY_VARIANT(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA KEY VARIANT, mdi-key-variant, _color, _scale)
+!define MA_KEY_VARIANT(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA KEY VARIANT, mdi-key-variant, _color, _scale, _shape)
+!define MA_KEY_VARIANT(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA KEY VARIANT, _label, mdi-key-variant, _color, _scale, _shape)
+skinparam folderBackgroundColor<<MA KEY VARIANT>> White

@@ -1,0 +1,8 @@
+sprite mdi-format-pilcrow <svg width="48" height="48"><g transform="scale(2)"><path d="M10,11A4,4 0 0,1 6,7A4,4 0 0,1 10,3H18V5H16V21H14V5H12V21H10V11Z" /></g></svg>
+
+!define MA_FORMAT_PILCROW(_color)                                 SPRITE_PUT(mdi-format-pilcrow, _color)
+!define MA_FORMAT_PILCROW(_color, _scale)                         SPRITE_PUT(mdi-format-pilcrow, _color, _scale)
+!define MA_FORMAT_PILCROW(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA FORMAT PILCROW, mdi-format-pilcrow, _color, _scale)
+!define MA_FORMAT_PILCROW(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA FORMAT PILCROW, mdi-format-pilcrow, _color, _scale, _shape)
+!define MA_FORMAT_PILCROW(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA FORMAT PILCROW, _label, mdi-format-pilcrow, _color, _scale, _shape)
+skinparam folderBackgroundColor<<MA FORMAT PILCROW>> White

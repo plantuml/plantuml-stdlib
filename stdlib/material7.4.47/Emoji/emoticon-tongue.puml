@@ -1,0 +1,8 @@
+sprite mdi-emoticon-tongue <svg width="48" height="48"><g transform="scale(2)"><path d="M12,2A10,10 0 0,0 2,12A10,10 0 0,0 12,22A10,10 0 0,0 22,12A10,10 0 0,0 12,2M7.27,11C7.1,10.71 7,10.36 7,10C7,8.89 7.89,8 9,8A2,2 0 0,1 11,10C11,10.36 10.9,10.71 10.73,11C10.39,10.4 9.74,10 9,10C8.26,10 7.61,10.4 7.27,11M16,15H15C15,17 14.1,18 13,18C11.9,18 11,17 11,15H8V13H16V15M16.73,11C16.39,10.4 15.74,10 15,10C14.26,10 13.61,10.4 13.27,11C13.1,10.71 13,10.36 13,10C13,8.89 13.89,8 15,8A2,2 0 0,1 17,10C17,10.36 16.9,10.71 16.73,11Z" /></g></svg>
+
+!define MA_EMOTICON_TONGUE(_color)                                 SPRITE_PUT(mdi-emoticon-tongue, _color)
+!define MA_EMOTICON_TONGUE(_color, _scale)                         SPRITE_PUT(mdi-emoticon-tongue, _color, _scale)
+!define MA_EMOTICON_TONGUE(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA EMOTICON TONGUE, mdi-emoticon-tongue, _color, _scale)
+!define MA_EMOTICON_TONGUE(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA EMOTICON TONGUE, mdi-emoticon-tongue, _color, _scale, _shape)
+!define MA_EMOTICON_TONGUE(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA EMOTICON TONGUE, _label, mdi-emoticon-tongue, _color, _scale, _shape)
+skinparam folderBackgroundColor<<MA EMOTICON TONGUE>> White

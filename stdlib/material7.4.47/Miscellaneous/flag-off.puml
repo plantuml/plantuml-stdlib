@@ -1,0 +1,8 @@
+sprite mdi-flag-off <svg width="48" height="48"><g transform="scale(2)"><path d="M20.84 22.73L14.11 16H13L12.72 14.61L12.11 14H7V21H5V6.89L1.11 3L2.39 1.73L22.11 21.46L20.84 22.73M20 16V6H14.4L14 4H7.2L19.2 16H20" /></g></svg>
+
+!define MA_FLAG_OFF(_color)                                 SPRITE_PUT(mdi-flag-off, _color)
+!define MA_FLAG_OFF(_color, _scale)                         SPRITE_PUT(mdi-flag-off, _color, _scale)
+!define MA_FLAG_OFF(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA FLAG OFF, mdi-flag-off, _color, _scale)
+!define MA_FLAG_OFF(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA FLAG OFF, mdi-flag-off, _color, _scale, _shape)
+!define MA_FLAG_OFF(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA FLAG OFF, _label, mdi-flag-off, _color, _scale, _shape)
+skinparam folderBackgroundColor<<MA FLAG OFF>> White

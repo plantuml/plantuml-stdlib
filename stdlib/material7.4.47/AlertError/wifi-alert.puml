@@ -1,0 +1,8 @@
+sprite mdi-wifi-alert <svg width="48" height="48"><g transform="scale(2)"><path d="M20.24 5H18V7.25C16.16 6.45 14.13 6 12 6C8.62 6 5.5 7.12 3 9L1.2 6.6C4.21 4.34 7.95 3 12 3C14.97 3 17.77 3.73 20.24 5M8.4 16.2L12 21L15.6 16.2C14.6 15.45 13.35 15 12 15S9.4 15.45 8.4 16.2M4.8 11.4L6.6 13.8C8.1 12.67 9.97 12 12 12S15.9 12.67 17.4 13.8L18 13V10.62C16.23 9.59 14.19 9 12 9C9.3 9 6.81 9.89 4.8 11.4M20 17H22V15H20V17M20 7V13H22V7H20Z" /></g></svg>
+
+!define MA_WIFI_ALERT(_color)                                 SPRITE_PUT(mdi-wifi-alert, _color)
+!define MA_WIFI_ALERT(_color, _scale)                         SPRITE_PUT(mdi-wifi-alert, _color, _scale)
+!define MA_WIFI_ALERT(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA WIFI ALERT, mdi-wifi-alert, _color, _scale)
+!define MA_WIFI_ALERT(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA WIFI ALERT, mdi-wifi-alert, _color, _scale, _shape)
+!define MA_WIFI_ALERT(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA WIFI ALERT, _label, mdi-wifi-alert, _color, _scale, _shape)
+skinparam folderBackgroundColor<<MA WIFI ALERT>> White

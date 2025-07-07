@@ -1,0 +1,8 @@
+sprite mdi-book-alert <svg width="48" height="48"><g transform="scale(2)"><path d="M18 4V20C18 21.11 17.11 22 16 22H4C2.9 22 2 21.11 2 20V4C2 2.9 2.9 2 4 2H5V9L7.5 7.5L10 9V2H16C17.1 2 18 2.89 18 4M20 17H22V15H20V17M20 7V13H22V7H20Z" /></g></svg>
+
+!define MA_BOOK_ALERT(_color)                                 SPRITE_PUT(mdi-book-alert, _color)
+!define MA_BOOK_ALERT(_color, _scale)                         SPRITE_PUT(mdi-book-alert, _color, _scale)
+!define MA_BOOK_ALERT(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA BOOK ALERT, mdi-book-alert, _color, _scale)
+!define MA_BOOK_ALERT(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA BOOK ALERT, mdi-book-alert, _color, _scale, _shape)
+!define MA_BOOK_ALERT(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA BOOK ALERT, _label, mdi-book-alert, _color, _scale, _shape)
+skinparam folderBackgroundColor<<MA BOOK ALERT>> White

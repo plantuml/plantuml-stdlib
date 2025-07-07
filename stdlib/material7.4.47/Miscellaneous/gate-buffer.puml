@@ -1,0 +1,8 @@
+sprite mdi-gate-buffer <svg width="48" height="48"><g transform="scale(2)"><path d="M6 7.24L15.53 12L6 16.76V7.24M4 4V20L20 12L4 4Z" /></g></svg>
+
+!define MA_GATE_BUFFER(_color)                                 SPRITE_PUT(mdi-gate-buffer, _color)
+!define MA_GATE_BUFFER(_color, _scale)                         SPRITE_PUT(mdi-gate-buffer, _color, _scale)
+!define MA_GATE_BUFFER(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA GATE BUFFER, mdi-gate-buffer, _color, _scale)
+!define MA_GATE_BUFFER(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA GATE BUFFER, mdi-gate-buffer, _color, _scale, _shape)
+!define MA_GATE_BUFFER(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA GATE BUFFER, _label, mdi-gate-buffer, _color, _scale, _shape)
+skinparam folderBackgroundColor<<MA GATE BUFFER>> White

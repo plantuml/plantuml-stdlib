@@ -1,0 +1,8 @@
+sprite mdi-home-alert-outline <svg width="48" height="48"><g transform="scale(2)"><path d="M12 5.7L17 10.2V18H7V10.2L12 5.7M19 20V12H22L12 3L2 12H5V20M13 8H11V13H13V8M13 15H11V17H13V15" /></g></svg>
+
+!define MA_HOME_ALERT_OUTLINE(_color)                                 SPRITE_PUT(mdi-home-alert-outline, _color)
+!define MA_HOME_ALERT_OUTLINE(_color, _scale)                         SPRITE_PUT(mdi-home-alert-outline, _color, _scale)
+!define MA_HOME_ALERT_OUTLINE(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA HOME ALERT OUTLINE, mdi-home-alert-outline, _color, _scale)
+!define MA_HOME_ALERT_OUTLINE(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA HOME ALERT OUTLINE, mdi-home-alert-outline, _color, _scale, _shape)
+!define MA_HOME_ALERT_OUTLINE(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA HOME ALERT OUTLINE, _label, mdi-home-alert-outline, _color, _scale, _shape)
+skinparam folderBackgroundColor<<MA HOME ALERT OUTLINE>> White

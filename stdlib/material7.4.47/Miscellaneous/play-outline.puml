@@ -1,0 +1,8 @@
+sprite mdi-play-outline <svg width="48" height="48"><g transform="scale(2)"><path d="M8.5,8.64L13.77,12L8.5,15.36V8.64M6.5,5V19L17.5,12" /></g></svg>
+
+!define MA_PLAY_OUTLINE(_color)                                 SPRITE_PUT(mdi-play-outline, _color)
+!define MA_PLAY_OUTLINE(_color, _scale)                         SPRITE_PUT(mdi-play-outline, _color, _scale)
+!define MA_PLAY_OUTLINE(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA PLAY OUTLINE, mdi-play-outline, _color, _scale)
+!define MA_PLAY_OUTLINE(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA PLAY OUTLINE, mdi-play-outline, _color, _scale, _shape)
+!define MA_PLAY_OUTLINE(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA PLAY OUTLINE, _label, mdi-play-outline, _color, _scale, _shape)
+skinparam folderBackgroundColor<<MA PLAY OUTLINE>> White

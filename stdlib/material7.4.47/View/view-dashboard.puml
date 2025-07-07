@@ -1,0 +1,8 @@
+sprite mdi-view-dashboard <svg width="48" height="48"><g transform="scale(2)"><path d="M13,3V9H21V3M13,21H21V11H13M3,21H11V15H3M3,13H11V3H3V13Z" /></g></svg>
+
+!define MA_VIEW_DASHBOARD(_color)                                 SPRITE_PUT(mdi-view-dashboard, _color)
+!define MA_VIEW_DASHBOARD(_color, _scale)                         SPRITE_PUT(mdi-view-dashboard, _color, _scale)
+!define MA_VIEW_DASHBOARD(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA VIEW DASHBOARD, mdi-view-dashboard, _color, _scale)
+!define MA_VIEW_DASHBOARD(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA VIEW DASHBOARD, mdi-view-dashboard, _color, _scale, _shape)
+!define MA_VIEW_DASHBOARD(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA VIEW DASHBOARD, _label, mdi-view-dashboard, _color, _scale, _shape)
+skinparam folderBackgroundColor<<MA VIEW DASHBOARD>> White

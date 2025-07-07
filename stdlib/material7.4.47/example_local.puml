@@ -1,0 +1,27 @@
+@startuml
+
+' specific icon
+!include "./GeographicInformationSystem/web.puml"
+
+usecase a as "<$mdi-web>"
+usecase b as "<$mdi-web,scale=2>"
+usecase c as "<$mdi-web{scale=2}>" #line:red
+
+MA_WEB(red, 1, aWeb, rectangle, "A label")
+
+' icon from a category
+!include "./BrandLogo/all.puml"
+
+usecase d as "<$mdi-material-design>"
+' TODO The following two lines will not work properly until this is fixed:
+' https://github.com/plantuml/plantuml/issues/2174#issuecomment-2848519961
+usecase e as "<$mdi-material-design{scale=2,color=blue}>"
+usecase f as "<$mdi-material-design,scale=2,color=#00f>"
+
+' any icon independently of the category
+!include "./all_local.puml"
+usecase h as "<$mdi-folder-move>"
+
+MA_FOLDER_MOVE(Red, 1, dir, rectangle, "A label")
+
+@enduml

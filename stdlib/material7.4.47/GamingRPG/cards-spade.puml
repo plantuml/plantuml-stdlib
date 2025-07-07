@@ -1,0 +1,8 @@
+sprite mdi-cards-spade <svg width="48" height="48"><g transform="scale(2)"><path d="M12,2C9,7 4,9 4,14C4,16 6,18 8,18C9,18 10,18 11,17C11,17 11.32,19 9,22H15C13,19 13,17 13,17C14,18 15,18 16,18C18,18 20,16 20,14C20,9 15,7 12,2Z" /></g></svg>
+
+!define MA_CARDS_SPADE(_color)                                 SPRITE_PUT(mdi-cards-spade, _color)
+!define MA_CARDS_SPADE(_color, _scale)                         SPRITE_PUT(mdi-cards-spade, _color, _scale)
+!define MA_CARDS_SPADE(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA CARDS SPADE, mdi-cards-spade, _color, _scale)
+!define MA_CARDS_SPADE(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA CARDS SPADE, mdi-cards-spade, _color, _scale, _shape)
+!define MA_CARDS_SPADE(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA CARDS SPADE, _label, mdi-cards-spade, _color, _scale, _shape)
+skinparam folderBackgroundColor<<MA CARDS SPADE>> White

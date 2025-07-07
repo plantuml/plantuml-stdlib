@@ -1,0 +1,8 @@
+sprite mdi-shield-cross-outline <svg width="48" height="48"><g transform="scale(2)"><path d="M21,11C21,16.5 17.2,21.7 12,23C6.8,21.7 3,16.5 3,11V5L12,1L21,5V11M12,21C15.8,20 19,15.5 19,11.2V6.3L12,3.2L5,6.3V11.2C5,15.5 8.3,20 12,21M16,9H13V6H11V9H8V11H11V19H13V11H16V9Z" /></g></svg>
+
+!define MA_SHIELD_CROSS_OUTLINE(_color)                                 SPRITE_PUT(mdi-shield-cross-outline, _color)
+!define MA_SHIELD_CROSS_OUTLINE(_color, _scale)                         SPRITE_PUT(mdi-shield-cross-outline, _color, _scale)
+!define MA_SHIELD_CROSS_OUTLINE(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA SHIELD CROSS OUTLINE, mdi-shield-cross-outline, _color, _scale)
+!define MA_SHIELD_CROSS_OUTLINE(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA SHIELD CROSS OUTLINE, mdi-shield-cross-outline, _color, _scale, _shape)
+!define MA_SHIELD_CROSS_OUTLINE(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA SHIELD CROSS OUTLINE, _label, mdi-shield-cross-outline, _color, _scale, _shape)
+skinparam folderBackgroundColor<<MA SHIELD CROSS OUTLINE>> White

@@ -1,0 +1,8 @@
+sprite mdi-city-switch <svg width="48" height="48"><g transform="scale(2)"><path d="M21 15V9H15V3L12 0L9 3V5H3V15H21M19 13H17V11H19V13M11 5V3H13V5H11M11 9V7H13V9H11M11 13V11H13V13H11M7 9H5V7H7V9M7 13H5V11H7V13M9 17V19H15V17L18 20L15 23V21H9V23L6 20L9 17Z" /></g></svg>
+
+!define MA_CITY_SWITCH(_color)                                 SPRITE_PUT(mdi-city-switch, _color)
+!define MA_CITY_SWITCH(_color, _scale)                         SPRITE_PUT(mdi-city-switch, _color, _scale)
+!define MA_CITY_SWITCH(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA CITY SWITCH, mdi-city-switch, _color, _scale)
+!define MA_CITY_SWITCH(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA CITY SWITCH, mdi-city-switch, _color, _scale, _shape)
+!define MA_CITY_SWITCH(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA CITY SWITCH, _label, mdi-city-switch, _color, _scale, _shape)
+skinparam folderBackgroundColor<<MA CITY SWITCH>> White

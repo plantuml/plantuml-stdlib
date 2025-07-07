@@ -1,0 +1,8 @@
+sprite mdi-signal-cellular-outline <svg width="48" height="48"><g transform="scale(2)"><path d="M19.5,5.5V18.5H17.5V5.5H19.5M12.5,10.5V18.5H10.5V10.5H12.5M5.5,15.5V18.5H3.5V15.5H5.5M21,4H16V20H21V4M14,9H9V20H14V9M7,14H2V20H7V14Z" /></g></svg>
+
+!define MA_SIGNAL_CELLULAR_OUTLINE(_color)                                 SPRITE_PUT(mdi-signal-cellular-outline, _color)
+!define MA_SIGNAL_CELLULAR_OUTLINE(_color, _scale)                         SPRITE_PUT(mdi-signal-cellular-outline, _color, _scale)
+!define MA_SIGNAL_CELLULAR_OUTLINE(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA SIGNAL CELLULAR OUTLINE, mdi-signal-cellular-outline, _color, _scale)
+!define MA_SIGNAL_CELLULAR_OUTLINE(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA SIGNAL CELLULAR OUTLINE, mdi-signal-cellular-outline, _color, _scale, _shape)
+!define MA_SIGNAL_CELLULAR_OUTLINE(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA SIGNAL CELLULAR OUTLINE, _label, mdi-signal-cellular-outline, _color, _scale, _shape)
+skinparam folderBackgroundColor<<MA SIGNAL CELLULAR OUTLINE>> White

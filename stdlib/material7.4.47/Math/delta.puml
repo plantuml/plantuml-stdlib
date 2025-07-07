@@ -1,0 +1,8 @@
+sprite mdi-delta <svg width="48" height="48"><g transform="scale(2)"><path d="M12,7.77L18.39,18H5.61L12,7.77M12,4L2,20H22" /></g></svg>
+
+!define MA_DELTA(_color)                                 SPRITE_PUT(mdi-delta, _color)
+!define MA_DELTA(_color, _scale)                         SPRITE_PUT(mdi-delta, _color, _scale)
+!define MA_DELTA(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA DELTA, mdi-delta, _color, _scale)
+!define MA_DELTA(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA DELTA, mdi-delta, _color, _scale, _shape)
+!define MA_DELTA(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA DELTA, _label, mdi-delta, _color, _scale, _shape)
+skinparam folderBackgroundColor<<MA DELTA>> White

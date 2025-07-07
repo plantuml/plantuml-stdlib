@@ -1,0 +1,8 @@
+sprite mdi-skew-less <svg width="48" height="48"><g transform="scale(2)"><path d="M17.5,11L15.41,20H10.5L12.59,11H17.5M20,9H11L8,22H17L20,9M4,6L8,2V5H16V7H8V10L4,6Z" /></g></svg>
+
+!define MA_SKEW_LESS(_color)                                 SPRITE_PUT(mdi-skew-less, _color)
+!define MA_SKEW_LESS(_color, _scale)                         SPRITE_PUT(mdi-skew-less, _color, _scale)
+!define MA_SKEW_LESS(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA SKEW LESS, mdi-skew-less, _color, _scale)
+!define MA_SKEW_LESS(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA SKEW LESS, mdi-skew-less, _color, _scale, _shape)
+!define MA_SKEW_LESS(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA SKEW LESS, _label, mdi-skew-less, _color, _scale, _shape)
+skinparam folderBackgroundColor<<MA SKEW LESS>> White

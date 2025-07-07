@@ -1,0 +1,8 @@
+sprite mdi-doorbell <svg width="48" height="48"><g transform="scale(2)"><path d="M12 10C10.9 10 10 10.9 10 12S10.9 14 12 14 14 13.1 14 12 13.1 10 12 10M16 2H8C6.9 2 6 2.9 6 4V20C6 21.1 6.9 22 8 22H16C17.1 22 18 21.1 18 20V4C18 2.9 17.1 2 16 2M16 20H8V4H16V20Z" /></g></svg>
+
+!define MA_DOORBELL(_color)                                 SPRITE_PUT(mdi-doorbell, _color)
+!define MA_DOORBELL(_color, _scale)                         SPRITE_PUT(mdi-doorbell, _color, _scale)
+!define MA_DOORBELL(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA DOORBELL, mdi-doorbell, _color, _scale)
+!define MA_DOORBELL(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA DOORBELL, mdi-doorbell, _color, _scale, _shape)
+!define MA_DOORBELL(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA DOORBELL, _label, mdi-doorbell, _color, _scale, _shape)
+skinparam folderBackgroundColor<<MA DOORBELL>> White

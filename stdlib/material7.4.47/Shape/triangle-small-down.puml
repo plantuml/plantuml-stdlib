@@ -1,0 +1,8 @@
+sprite mdi-triangle-small-down <svg width="48" height="48"><g transform="scale(2)"><path d="M8 9H16L12 16" /></g></svg>
+
+!define MA_TRIANGLE_SMALL_DOWN(_color)                                 SPRITE_PUT(mdi-triangle-small-down, _color)
+!define MA_TRIANGLE_SMALL_DOWN(_color, _scale)                         SPRITE_PUT(mdi-triangle-small-down, _color, _scale)
+!define MA_TRIANGLE_SMALL_DOWN(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA TRIANGLE SMALL DOWN, mdi-triangle-small-down, _color, _scale)
+!define MA_TRIANGLE_SMALL_DOWN(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA TRIANGLE SMALL DOWN, mdi-triangle-small-down, _color, _scale, _shape)
+!define MA_TRIANGLE_SMALL_DOWN(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA TRIANGLE SMALL DOWN, _label, mdi-triangle-small-down, _color, _scale, _shape)
+skinparam folderBackgroundColor<<MA TRIANGLE SMALL DOWN>> White

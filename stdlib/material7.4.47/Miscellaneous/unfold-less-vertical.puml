@@ -1,0 +1,8 @@
+sprite mdi-unfold-less-vertical <svg width="48" height="48"><g transform="scale(2)"><path d="M5.41,7.41L10,12L5.41,16.59L4,15.17L7.17,12L4,8.83L5.41,7.41M18.59,16.59L14,12L18.59,7.42L20,8.83L16.83,12L20,15.17L18.59,16.59Z" /></g></svg>
+
+!define MA_UNFOLD_LESS_VERTICAL(_color)                                 SPRITE_PUT(mdi-unfold-less-vertical, _color)
+!define MA_UNFOLD_LESS_VERTICAL(_color, _scale)                         SPRITE_PUT(mdi-unfold-less-vertical, _color, _scale)
+!define MA_UNFOLD_LESS_VERTICAL(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA UNFOLD LESS VERTICAL, mdi-unfold-less-vertical, _color, _scale)
+!define MA_UNFOLD_LESS_VERTICAL(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA UNFOLD LESS VERTICAL, mdi-unfold-less-vertical, _color, _scale, _shape)
+!define MA_UNFOLD_LESS_VERTICAL(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA UNFOLD LESS VERTICAL, _label, mdi-unfold-less-vertical, _color, _scale, _shape)
+skinparam folderBackgroundColor<<MA UNFOLD LESS VERTICAL>> White

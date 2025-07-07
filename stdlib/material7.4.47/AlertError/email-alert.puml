@@ -1,0 +1,8 @@
+sprite mdi-email-alert <svg width="48" height="48"><g transform="scale(2)"><path d="M18 8L10 13L2 8V6L10 11L18 6M18 4H2C.9 4 0 4.9 0 6V18C0 19.1 .9 20 2 20H18C19.1 20 20 19.1 20 18V6C20 4.9 19.1 4 18 4M24 7H22V13H24V7M24 15H22V17H24V15Z" /></g></svg>
+
+!define MA_EMAIL_ALERT(_color)                                 SPRITE_PUT(mdi-email-alert, _color)
+!define MA_EMAIL_ALERT(_color, _scale)                         SPRITE_PUT(mdi-email-alert, _color, _scale)
+!define MA_EMAIL_ALERT(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA EMAIL ALERT, mdi-email-alert, _color, _scale)
+!define MA_EMAIL_ALERT(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA EMAIL ALERT, mdi-email-alert, _color, _scale, _shape)
+!define MA_EMAIL_ALERT(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA EMAIL ALERT, _label, mdi-email-alert, _color, _scale, _shape)
+skinparam folderBackgroundColor<<MA EMAIL ALERT>> White

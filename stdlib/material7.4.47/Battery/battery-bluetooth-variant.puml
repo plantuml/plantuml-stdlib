@@ -1,0 +1,8 @@
+sprite mdi-battery-bluetooth-variant <svg width="48" height="48"><g transform="scale(2)"><path d="M9,2V4H7.33A1.33,1.33 0 0,0 6,5.33V20.67C6,21.4 6.6,22 7.33,22H16.67A1.33,1.33 0 0,0 18,20.67V5.33C18,4.6 17.4,4 16.67,4H15V2H9M11.83,8H12.33L15.18,10.85L13.04,13L15.17,15.14L12.33,18H11.83V14.21L9.54,16.5L8.83,15.79L11.62,13L8.83,10.21L9.54,9.5L11.83,11.79V8M12.83,9.91V11.79L13.77,10.85L12.83,9.91M12.83,14.21V16.08L13.77,15.14L12.83,14.21Z" /></g></svg>
+
+!define MA_BATTERY_BLUETOOTH_VARIANT(_color)                                 SPRITE_PUT(mdi-battery-bluetooth-variant, _color)
+!define MA_BATTERY_BLUETOOTH_VARIANT(_color, _scale)                         SPRITE_PUT(mdi-battery-bluetooth-variant, _color, _scale)
+!define MA_BATTERY_BLUETOOTH_VARIANT(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA BATTERY BLUETOOTH VARIANT, mdi-battery-bluetooth-variant, _color, _scale)
+!define MA_BATTERY_BLUETOOTH_VARIANT(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA BATTERY BLUETOOTH VARIANT, mdi-battery-bluetooth-variant, _color, _scale, _shape)
+!define MA_BATTERY_BLUETOOTH_VARIANT(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA BATTERY BLUETOOTH VARIANT, _label, mdi-battery-bluetooth-variant, _color, _scale, _shape)
+skinparam folderBackgroundColor<<MA BATTERY BLUETOOTH VARIANT>> White

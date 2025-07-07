@@ -1,0 +1,8 @@
+sprite mdi-checkbook <svg width="48" height="48"><g transform="scale(2)"><path d="M5,14H19V15H5V14M21,17V8H3V17H21M1,5H23V19H1V5M5,10H12V12H5V10Z" /></g></svg>
+
+!define MA_CHECKBOOK(_color)                                 SPRITE_PUT(mdi-checkbook, _color)
+!define MA_CHECKBOOK(_color, _scale)                         SPRITE_PUT(mdi-checkbook, _color, _scale)
+!define MA_CHECKBOOK(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA CHECKBOOK, mdi-checkbook, _color, _scale)
+!define MA_CHECKBOOK(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA CHECKBOOK, mdi-checkbook, _color, _scale, _shape)
+!define MA_CHECKBOOK(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA CHECKBOOK, _label, mdi-checkbook, _color, _scale, _shape)
+skinparam folderBackgroundColor<<MA CHECKBOOK>> White

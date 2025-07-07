@@ -1,0 +1,8 @@
+sprite mdi-square-root-box <svg width="48" height="48"><g transform="scale(2)"><path d="M5,3C3.89,3 3,3.89 3,5V19A2,2 0 0,0 5,21H19A2,2 0 0,0 21,19V5A2,2 0 0,0 19,3H5M11.24,6H19V8H12.76L10,18H8L6.25,12H5V10H7.75L9,14.28L11.24,6V6M14,10.59L15.79,12.38L17.59,10.59L19,12L17.21,13.79L19,15.59L17.59,17L15.79,15.21L14,17L12.59,15.59L14.38,13.79L12.59,12L14,10.59Z" /></g></svg>
+
+!define MA_SQUARE_ROOT_BOX(_color)                                 SPRITE_PUT(mdi-square-root-box, _color)
+!define MA_SQUARE_ROOT_BOX(_color, _scale)                         SPRITE_PUT(mdi-square-root-box, _color, _scale)
+!define MA_SQUARE_ROOT_BOX(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA SQUARE ROOT BOX, mdi-square-root-box, _color, _scale)
+!define MA_SQUARE_ROOT_BOX(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA SQUARE ROOT BOX, mdi-square-root-box, _color, _scale, _shape)
+!define MA_SQUARE_ROOT_BOX(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA SQUARE ROOT BOX, _label, mdi-square-root-box, _color, _scale, _shape)
+skinparam folderBackgroundColor<<MA SQUARE ROOT BOX>> White

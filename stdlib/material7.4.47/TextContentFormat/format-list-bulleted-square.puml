@@ -1,0 +1,8 @@
+sprite mdi-format-list-bulleted-square <svg width="48" height="48"><g transform="scale(2)"><path d="M3,4H7V8H3V4M9,5V7H21V5H9M3,10H7V14H3V10M9,11V13H21V11H9M3,16H7V20H3V16M9,17V19H21V17H9" /></g></svg>
+
+!define MA_FORMAT_LIST_BULLETED_SQUARE(_color)                                 SPRITE_PUT(mdi-format-list-bulleted-square, _color)
+!define MA_FORMAT_LIST_BULLETED_SQUARE(_color, _scale)                         SPRITE_PUT(mdi-format-list-bulleted-square, _color, _scale)
+!define MA_FORMAT_LIST_BULLETED_SQUARE(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA FORMAT LIST BULLETED SQUARE, mdi-format-list-bulleted-square, _color, _scale)
+!define MA_FORMAT_LIST_BULLETED_SQUARE(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA FORMAT LIST BULLETED SQUARE, mdi-format-list-bulleted-square, _color, _scale, _shape)
+!define MA_FORMAT_LIST_BULLETED_SQUARE(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA FORMAT LIST BULLETED SQUARE, _label, mdi-format-list-bulleted-square, _color, _scale, _shape)
+skinparam folderBackgroundColor<<MA FORMAT LIST BULLETED SQUARE>> White

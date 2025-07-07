@@ -1,0 +1,8 @@
+sprite mdi-umbrella <svg width="48" height="48"><g transform="scale(2)"><path d="M12,2A9,9 0 0,1 21,11H13V19A3,3 0 0,1 10,22A3,3 0 0,1 7,19V18H9V19A1,1 0 0,0 10,20A1,1 0 0,0 11,19V11H3A9,9 0 0,1 12,2Z" /></g></svg>
+
+!define MA_UMBRELLA(_color)                                 SPRITE_PUT(mdi-umbrella, _color)
+!define MA_UMBRELLA(_color, _scale)                         SPRITE_PUT(mdi-umbrella, _color, _scale)
+!define MA_UMBRELLA(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA UMBRELLA, mdi-umbrella, _color, _scale)
+!define MA_UMBRELLA(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA UMBRELLA, mdi-umbrella, _color, _scale, _shape)
+!define MA_UMBRELLA(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA UMBRELLA, _label, mdi-umbrella, _color, _scale, _shape)
+skinparam folderBackgroundColor<<MA UMBRELLA>> White

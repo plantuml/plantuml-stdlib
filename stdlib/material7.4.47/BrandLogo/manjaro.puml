@@ -1,0 +1,8 @@
+sprite mdi-manjaro <svg width="48" height="48"><g transform="scale(2)"><path d="M2 2V22H7.6V7.6H14.8V2H2M9.2 9.2V22H14.8V9.2H9.2M16.4 2V22H22V2H16.4Z" /></g></svg>
+
+!define MA_MANJARO(_color)                                 SPRITE_PUT(mdi-manjaro, _color)
+!define MA_MANJARO(_color, _scale)                         SPRITE_PUT(mdi-manjaro, _color, _scale)
+!define MA_MANJARO(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA MANJARO, mdi-manjaro, _color, _scale)
+!define MA_MANJARO(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA MANJARO, mdi-manjaro, _color, _scale, _shape)
+!define MA_MANJARO(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA MANJARO, _label, mdi-manjaro, _color, _scale, _shape)
+skinparam folderBackgroundColor<<MA MANJARO>> White

@@ -1,0 +1,892 @@
+
+sprite mdi-battery <svg width="48" height="48"><g transform="scale(2)"><path d="M16.67,4H15V2H9V4H7.33A1.33,1.33 0 0,0 6,5.33V20.67C6,21.4 6.6,22 7.33,22H16.67A1.33,1.33 0 0,0 18,20.67V5.33C18,4.6 17.4,4 16.67,4Z" /></g></svg>
+
+!define MA_BATTERY(_color)                                 SPRITE_PUT(mdi-battery, _color)
+!define MA_BATTERY(_color, _scale)                         SPRITE_PUT(mdi-battery, _color, _scale)
+!define MA_BATTERY(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA BATTERY, mdi-battery, _color, _scale)
+!define MA_BATTERY(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA BATTERY, mdi-battery, _color, _scale, _shape)
+!define MA_BATTERY(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA BATTERY, _label, mdi-battery, _color, _scale, _shape)
+skinparam folderBackgroundColor<<MA BATTERY>> White
+
+sprite mdi-battery-10 <svg width="48" height="48"><g transform="scale(2)"><path d="M16,18H8V6H16M16.67,4H15V2H9V4H7.33A1.33,1.33 0 0,0 6,5.33V20.67C6,21.4 6.6,22 7.33,22H16.67A1.33,1.33 0 0,0 18,20.67V5.33C18,4.6 17.4,4 16.67,4Z" /></g></svg>
+
+!define MA_BATTERY_10(_color)                                 SPRITE_PUT(mdi-battery-10, _color)
+!define MA_BATTERY_10(_color, _scale)                         SPRITE_PUT(mdi-battery-10, _color, _scale)
+!define MA_BATTERY_10(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA BATTERY 10, mdi-battery-10, _color, _scale)
+!define MA_BATTERY_10(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA BATTERY 10, mdi-battery-10, _color, _scale, _shape)
+!define MA_BATTERY_10(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA BATTERY 10, _label, mdi-battery-10, _color, _scale, _shape)
+skinparam folderBackgroundColor<<MA BATTERY 10>> White
+
+sprite mdi-battery-10-bluetooth <svg width="48" height="48"><g transform="scale(2)"><path d="M5,2V4H3.33A1.33,1.33 0 0,0 2,5.33V20.67C2,21.4 2.6,22 3.33,22H12.67C13.4,22 14,21.4 14,20.67V5.33A1.33,1.33 0 0,0 12.67,4H11V2H5M4,6H12V18H4V6M19,8V11.79L16.71,9.5L16,10.21L18.79,13L16,15.79L16.71,16.5L19,14.21V18H19.5L22.35,15.14L20.21,13L22.35,10.85L19.5,8H19M20,9.91L20.94,10.85L20,11.79V9.91M20,14.21L20.94,15.14L20,16.08V14.21Z" /></g></svg>
+
+!define MA_BATTERY_10_BLUETOOTH(_color)                                 SPRITE_PUT(mdi-battery-10-bluetooth, _color)
+!define MA_BATTERY_10_BLUETOOTH(_color, _scale)                         SPRITE_PUT(mdi-battery-10-bluetooth, _color, _scale)
+!define MA_BATTERY_10_BLUETOOTH(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA BATTERY 10 BLUETOOTH, mdi-battery-10-bluetooth, _color, _scale)
+!define MA_BATTERY_10_BLUETOOTH(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA BATTERY 10 BLUETOOTH, mdi-battery-10-bluetooth, _color, _scale, _shape)
+!define MA_BATTERY_10_BLUETOOTH(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA BATTERY 10 BLUETOOTH, _label, mdi-battery-10-bluetooth, _color, _scale, _shape)
+skinparam folderBackgroundColor<<MA BATTERY 10 BLUETOOTH>> White
+
+sprite mdi-battery-20 <svg width="48" height="48"><g transform="scale(2)"><path d="M16,17H8V6H16M16.67,4H15V2H9V4H7.33A1.33,1.33 0 0,0 6,5.33V20.67C6,21.4 6.6,22 7.33,22H16.67A1.33,1.33 0 0,0 18,20.67V5.33C18,4.6 17.4,4 16.67,4Z" /></g></svg>
+
+!define MA_BATTERY_20(_color)                                 SPRITE_PUT(mdi-battery-20, _color)
+!define MA_BATTERY_20(_color, _scale)                         SPRITE_PUT(mdi-battery-20, _color, _scale)
+!define MA_BATTERY_20(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA BATTERY 20, mdi-battery-20, _color, _scale)
+!define MA_BATTERY_20(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA BATTERY 20, mdi-battery-20, _color, _scale, _shape)
+!define MA_BATTERY_20(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA BATTERY 20, _label, mdi-battery-20, _color, _scale, _shape)
+skinparam folderBackgroundColor<<MA BATTERY 20>> White
+
+sprite mdi-battery-20-bluetooth <svg width="48" height="48"><g transform="scale(2)"><path d="M5,2V4H3.33A1.33,1.33 0 0,0 2,5.33V20.67C2,21.4 2.6,22 3.33,22H12.67C13.4,22 14,21.4 14,20.67V5.33A1.33,1.33 0 0,0 12.67,4H11V2H5M4,6H12V17H4V6M19,8V11.79L16.71,9.5L16,10.21L18.79,13L16,15.79L16.71,16.5L19,14.21V18H19.5L22.35,15.14L20.21,13L22.35,10.85L19.5,8H19M20,9.91L20.94,10.85L20,11.79V9.91M20,14.21L20.94,15.14L20,16.08V14.21Z" /></g></svg>
+
+!define MA_BATTERY_20_BLUETOOTH(_color)                                 SPRITE_PUT(mdi-battery-20-bluetooth, _color)
+!define MA_BATTERY_20_BLUETOOTH(_color, _scale)                         SPRITE_PUT(mdi-battery-20-bluetooth, _color, _scale)
+!define MA_BATTERY_20_BLUETOOTH(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA BATTERY 20 BLUETOOTH, mdi-battery-20-bluetooth, _color, _scale)
+!define MA_BATTERY_20_BLUETOOTH(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA BATTERY 20 BLUETOOTH, mdi-battery-20-bluetooth, _color, _scale, _shape)
+!define MA_BATTERY_20_BLUETOOTH(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA BATTERY 20 BLUETOOTH, _label, mdi-battery-20-bluetooth, _color, _scale, _shape)
+skinparam folderBackgroundColor<<MA BATTERY 20 BLUETOOTH>> White
+
+sprite mdi-battery-30 <svg width="48" height="48"><g transform="scale(2)"><path d="M16,15H8V6H16M16.67,4H15V2H9V4H7.33A1.33,1.33 0 0,0 6,5.33V20.67C6,21.4 6.6,22 7.33,22H16.67A1.33,1.33 0 0,0 18,20.67V5.33C18,4.6 17.4,4 16.67,4Z" /></g></svg>
+
+!define MA_BATTERY_30(_color)                                 SPRITE_PUT(mdi-battery-30, _color)
+!define MA_BATTERY_30(_color, _scale)                         SPRITE_PUT(mdi-battery-30, _color, _scale)
+!define MA_BATTERY_30(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA BATTERY 30, mdi-battery-30, _color, _scale)
+!define MA_BATTERY_30(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA BATTERY 30, mdi-battery-30, _color, _scale, _shape)
+!define MA_BATTERY_30(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA BATTERY 30, _label, mdi-battery-30, _color, _scale, _shape)
+skinparam folderBackgroundColor<<MA BATTERY 30>> White
+
+sprite mdi-battery-30-bluetooth <svg width="48" height="48"><g transform="scale(2)"><path d="M5,2V4H3.33A1.33,1.33 0 0,0 2,5.33V20.67C2,21.4 2.6,22 3.33,22H12.67C13.4,22 14,21.4 14,20.67V5.33A1.33,1.33 0 0,0 12.67,4H11V2H5M4,6H12V15H4V6M19,8V11.79L16.71,9.5L16,10.21L18.79,13L16,15.79L16.71,16.5L19,14.21V18H19.5L22.35,15.14L20.21,13L22.35,10.85L19.5,8H19M20,9.91L20.94,10.85L20,11.79V9.91M20,14.21L20.94,15.14L20,16.08V14.21Z" /></g></svg>
+
+!define MA_BATTERY_30_BLUETOOTH(_color)                                 SPRITE_PUT(mdi-battery-30-bluetooth, _color)
+!define MA_BATTERY_30_BLUETOOTH(_color, _scale)                         SPRITE_PUT(mdi-battery-30-bluetooth, _color, _scale)
+!define MA_BATTERY_30_BLUETOOTH(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA BATTERY 30 BLUETOOTH, mdi-battery-30-bluetooth, _color, _scale)
+!define MA_BATTERY_30_BLUETOOTH(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA BATTERY 30 BLUETOOTH, mdi-battery-30-bluetooth, _color, _scale, _shape)
+!define MA_BATTERY_30_BLUETOOTH(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA BATTERY 30 BLUETOOTH, _label, mdi-battery-30-bluetooth, _color, _scale, _shape)
+skinparam folderBackgroundColor<<MA BATTERY 30 BLUETOOTH>> White
+
+sprite mdi-battery-40 <svg width="48" height="48"><g transform="scale(2)"><path d="M16,14H8V6H16M16.67,4H15V2H9V4H7.33A1.33,1.33 0 0,0 6,5.33V20.67C6,21.4 6.6,22 7.33,22H16.67A1.33,1.33 0 0,0 18,20.67V5.33C18,4.6 17.4,4 16.67,4Z" /></g></svg>
+
+!define MA_BATTERY_40(_color)                                 SPRITE_PUT(mdi-battery-40, _color)
+!define MA_BATTERY_40(_color, _scale)                         SPRITE_PUT(mdi-battery-40, _color, _scale)
+!define MA_BATTERY_40(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA BATTERY 40, mdi-battery-40, _color, _scale)
+!define MA_BATTERY_40(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA BATTERY 40, mdi-battery-40, _color, _scale, _shape)
+!define MA_BATTERY_40(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA BATTERY 40, _label, mdi-battery-40, _color, _scale, _shape)
+skinparam folderBackgroundColor<<MA BATTERY 40>> White
+
+sprite mdi-battery-40-bluetooth <svg width="48" height="48"><g transform="scale(2)"><path d="M5,2V4H3.33A1.33,1.33 0 0,0 2,5.33V20.67C2,21.4 2.6,22 3.33,22H12.67C13.4,22 14,21.4 14,20.67V5.33A1.33,1.33 0 0,0 12.67,4H11V2H5M4,6H12V14H4V6M19,8V11.79L16.71,9.5L16,10.21L18.79,13L16,15.79L16.71,16.5L19,14.21V18H19.5L22.35,15.14L20.21,13L22.35,10.85L19.5,8H19M20,9.91L20.94,10.85L20,11.79V9.91M20,14.21L20.94,15.14L20,16.08V14.21Z" /></g></svg>
+
+!define MA_BATTERY_40_BLUETOOTH(_color)                                 SPRITE_PUT(mdi-battery-40-bluetooth, _color)
+!define MA_BATTERY_40_BLUETOOTH(_color, _scale)                         SPRITE_PUT(mdi-battery-40-bluetooth, _color, _scale)
+!define MA_BATTERY_40_BLUETOOTH(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA BATTERY 40 BLUETOOTH, mdi-battery-40-bluetooth, _color, _scale)
+!define MA_BATTERY_40_BLUETOOTH(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA BATTERY 40 BLUETOOTH, mdi-battery-40-bluetooth, _color, _scale, _shape)
+!define MA_BATTERY_40_BLUETOOTH(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA BATTERY 40 BLUETOOTH, _label, mdi-battery-40-bluetooth, _color, _scale, _shape)
+skinparam folderBackgroundColor<<MA BATTERY 40 BLUETOOTH>> White
+
+sprite mdi-battery-50 <svg width="48" height="48"><g transform="scale(2)"><path d="M16,13H8V6H16M16.67,4H15V2H9V4H7.33A1.33,1.33 0 0,0 6,5.33V20.67C6,21.4 6.6,22 7.33,22H16.67A1.33,1.33 0 0,0 18,20.67V5.33C18,4.6 17.4,4 16.67,4Z" /></g></svg>
+
+!define MA_BATTERY_50(_color)                                 SPRITE_PUT(mdi-battery-50, _color)
+!define MA_BATTERY_50(_color, _scale)                         SPRITE_PUT(mdi-battery-50, _color, _scale)
+!define MA_BATTERY_50(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA BATTERY 50, mdi-battery-50, _color, _scale)
+!define MA_BATTERY_50(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA BATTERY 50, mdi-battery-50, _color, _scale, _shape)
+!define MA_BATTERY_50(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA BATTERY 50, _label, mdi-battery-50, _color, _scale, _shape)
+skinparam folderBackgroundColor<<MA BATTERY 50>> White
+
+sprite mdi-battery-50-bluetooth <svg width="48" height="48"><g transform="scale(2)"><path d="M5,2V4H3.33A1.33,1.33 0 0,0 2,5.33V20.67C2,21.4 2.6,22 3.33,22H12.67C13.4,22 14,21.4 14,20.67V5.33A1.33,1.33 0 0,0 12.67,4H11V2H5M4,6H12V13H4V6M19,8V11.79L16.71,9.5L16,10.21L18.79,13L16,15.79L16.71,16.5L19,14.21V18H19.5L22.35,15.14L20.21,13L22.35,10.85L19.5,8H19M20,9.91L20.94,10.85L20,11.79V9.91M20,14.21L20.94,15.14L20,16.08V14.21Z" /></g></svg>
+
+!define MA_BATTERY_50_BLUETOOTH(_color)                                 SPRITE_PUT(mdi-battery-50-bluetooth, _color)
+!define MA_BATTERY_50_BLUETOOTH(_color, _scale)                         SPRITE_PUT(mdi-battery-50-bluetooth, _color, _scale)
+!define MA_BATTERY_50_BLUETOOTH(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA BATTERY 50 BLUETOOTH, mdi-battery-50-bluetooth, _color, _scale)
+!define MA_BATTERY_50_BLUETOOTH(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA BATTERY 50 BLUETOOTH, mdi-battery-50-bluetooth, _color, _scale, _shape)
+!define MA_BATTERY_50_BLUETOOTH(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA BATTERY 50 BLUETOOTH, _label, mdi-battery-50-bluetooth, _color, _scale, _shape)
+skinparam folderBackgroundColor<<MA BATTERY 50 BLUETOOTH>> White
+
+sprite mdi-battery-60 <svg width="48" height="48"><g transform="scale(2)"><path d="M16,12H8V6H16M16.67,4H15V2H9V4H7.33A1.33,1.33 0 0,0 6,5.33V20.67C6,21.4 6.6,22 7.33,22H16.67A1.33,1.33 0 0,0 18,20.67V5.33C18,4.6 17.4,4 16.67,4Z" /></g></svg>
+
+!define MA_BATTERY_60(_color)                                 SPRITE_PUT(mdi-battery-60, _color)
+!define MA_BATTERY_60(_color, _scale)                         SPRITE_PUT(mdi-battery-60, _color, _scale)
+!define MA_BATTERY_60(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA BATTERY 60, mdi-battery-60, _color, _scale)
+!define MA_BATTERY_60(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA BATTERY 60, mdi-battery-60, _color, _scale, _shape)
+!define MA_BATTERY_60(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA BATTERY 60, _label, mdi-battery-60, _color, _scale, _shape)
+skinparam folderBackgroundColor<<MA BATTERY 60>> White
+
+sprite mdi-battery-60-bluetooth <svg width="48" height="48"><g transform="scale(2)"><path d="M5,2V4H3.33A1.33,1.33 0 0,0 2,5.33V20.67C2,21.4 2.6,22 3.33,22H12.67C13.4,22 14,21.4 14,20.67V5.33A1.33,1.33 0 0,0 12.67,4H11V2H5M4,6H12V12H4V6M19,8V11.79L16.71,9.5L16,10.21L18.79,13L16,15.79L16.71,16.5L19,14.21V18H19.5L22.35,15.14L20.21,13L22.35,10.85L19.5,8H19M20,9.91L20.94,10.85L20,11.79V9.91M20,14.21L20.94,15.14L20,16.08V14.21Z" /></g></svg>
+
+!define MA_BATTERY_60_BLUETOOTH(_color)                                 SPRITE_PUT(mdi-battery-60-bluetooth, _color)
+!define MA_BATTERY_60_BLUETOOTH(_color, _scale)                         SPRITE_PUT(mdi-battery-60-bluetooth, _color, _scale)
+!define MA_BATTERY_60_BLUETOOTH(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA BATTERY 60 BLUETOOTH, mdi-battery-60-bluetooth, _color, _scale)
+!define MA_BATTERY_60_BLUETOOTH(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA BATTERY 60 BLUETOOTH, mdi-battery-60-bluetooth, _color, _scale, _shape)
+!define MA_BATTERY_60_BLUETOOTH(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA BATTERY 60 BLUETOOTH, _label, mdi-battery-60-bluetooth, _color, _scale, _shape)
+skinparam folderBackgroundColor<<MA BATTERY 60 BLUETOOTH>> White
+
+sprite mdi-battery-70 <svg width="48" height="48"><g transform="scale(2)"><path d="M16,10H8V6H16M16.67,4H15V2H9V4H7.33A1.33,1.33 0 0,0 6,5.33V20.67C6,21.4 6.6,22 7.33,22H16.67A1.33,1.33 0 0,0 18,20.67V5.33C18,4.6 17.4,4 16.67,4Z" /></g></svg>
+
+!define MA_BATTERY_70(_color)                                 SPRITE_PUT(mdi-battery-70, _color)
+!define MA_BATTERY_70(_color, _scale)                         SPRITE_PUT(mdi-battery-70, _color, _scale)
+!define MA_BATTERY_70(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA BATTERY 70, mdi-battery-70, _color, _scale)
+!define MA_BATTERY_70(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA BATTERY 70, mdi-battery-70, _color, _scale, _shape)
+!define MA_BATTERY_70(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA BATTERY 70, _label, mdi-battery-70, _color, _scale, _shape)
+skinparam folderBackgroundColor<<MA BATTERY 70>> White
+
+sprite mdi-battery-70-bluetooth <svg width="48" height="48"><g transform="scale(2)"><path d="M5,2V4H3.33A1.33,1.33 0 0,0 2,5.33V20.67C2,21.4 2.6,22 3.33,22H12.67C13.4,22 14,21.4 14,20.67V5.33A1.33,1.33 0 0,0 12.67,4H11V2H5M4,6H12V10H4V6M19,8V11.79L16.71,9.5L16,10.21L18.79,13L16,15.79L16.71,16.5L19,14.21V18H19.5L22.35,15.14L20.21,13L22.35,10.85L19.5,8H19M20,9.91L20.94,10.85L20,11.79V9.91M20,14.21L20.94,15.14L20,16.08V14.21Z" /></g></svg>
+
+!define MA_BATTERY_70_BLUETOOTH(_color)                                 SPRITE_PUT(mdi-battery-70-bluetooth, _color)
+!define MA_BATTERY_70_BLUETOOTH(_color, _scale)                         SPRITE_PUT(mdi-battery-70-bluetooth, _color, _scale)
+!define MA_BATTERY_70_BLUETOOTH(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA BATTERY 70 BLUETOOTH, mdi-battery-70-bluetooth, _color, _scale)
+!define MA_BATTERY_70_BLUETOOTH(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA BATTERY 70 BLUETOOTH, mdi-battery-70-bluetooth, _color, _scale, _shape)
+!define MA_BATTERY_70_BLUETOOTH(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA BATTERY 70 BLUETOOTH, _label, mdi-battery-70-bluetooth, _color, _scale, _shape)
+skinparam folderBackgroundColor<<MA BATTERY 70 BLUETOOTH>> White
+
+sprite mdi-battery-80 <svg width="48" height="48"><g transform="scale(2)"><path d="M16,9H8V6H16M16.67,4H15V2H9V4H7.33A1.33,1.33 0 0,0 6,5.33V20.67C6,21.4 6.6,22 7.33,22H16.67A1.33,1.33 0 0,0 18,20.67V5.33C18,4.6 17.4,4 16.67,4Z" /></g></svg>
+
+!define MA_BATTERY_80(_color)                                 SPRITE_PUT(mdi-battery-80, _color)
+!define MA_BATTERY_80(_color, _scale)                         SPRITE_PUT(mdi-battery-80, _color, _scale)
+!define MA_BATTERY_80(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA BATTERY 80, mdi-battery-80, _color, _scale)
+!define MA_BATTERY_80(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA BATTERY 80, mdi-battery-80, _color, _scale, _shape)
+!define MA_BATTERY_80(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA BATTERY 80, _label, mdi-battery-80, _color, _scale, _shape)
+skinparam folderBackgroundColor<<MA BATTERY 80>> White
+
+sprite mdi-battery-80-bluetooth <svg width="48" height="48"><g transform="scale(2)"><path d="M5,2V4H3.33A1.33,1.33 0 0,0 2,5.33V20.67C2,21.4 2.6,22 3.33,22H12.67C13.4,22 14,21.4 14,20.67V5.33A1.33,1.33 0 0,0 12.67,4H11V2H5M4,6H12V9H4V6M19,8V11.79L16.71,9.5L16,10.21L18.79,13L16,15.79L16.71,16.5L19,14.21V18H19.5L22.35,15.14L20.21,13L22.35,10.85L19.5,8H19M20,9.91L20.94,10.85L20,11.79V9.91M20,14.21L20.94,15.14L20,16.08V14.21Z" /></g></svg>
+
+!define MA_BATTERY_80_BLUETOOTH(_color)                                 SPRITE_PUT(mdi-battery-80-bluetooth, _color)
+!define MA_BATTERY_80_BLUETOOTH(_color, _scale)                         SPRITE_PUT(mdi-battery-80-bluetooth, _color, _scale)
+!define MA_BATTERY_80_BLUETOOTH(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA BATTERY 80 BLUETOOTH, mdi-battery-80-bluetooth, _color, _scale)
+!define MA_BATTERY_80_BLUETOOTH(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA BATTERY 80 BLUETOOTH, mdi-battery-80-bluetooth, _color, _scale, _shape)
+!define MA_BATTERY_80_BLUETOOTH(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA BATTERY 80 BLUETOOTH, _label, mdi-battery-80-bluetooth, _color, _scale, _shape)
+skinparam folderBackgroundColor<<MA BATTERY 80 BLUETOOTH>> White
+
+sprite mdi-battery-90 <svg width="48" height="48"><g transform="scale(2)"><path d="M16,8H8V6H16M16.67,4H15V2H9V4H7.33A1.33,1.33 0 0,0 6,5.33V20.67C6,21.4 6.6,22 7.33,22H16.67A1.33,1.33 0 0,0 18,20.67V5.33C18,4.6 17.4,4 16.67,4Z" /></g></svg>
+
+!define MA_BATTERY_90(_color)                                 SPRITE_PUT(mdi-battery-90, _color)
+!define MA_BATTERY_90(_color, _scale)                         SPRITE_PUT(mdi-battery-90, _color, _scale)
+!define MA_BATTERY_90(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA BATTERY 90, mdi-battery-90, _color, _scale)
+!define MA_BATTERY_90(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA BATTERY 90, mdi-battery-90, _color, _scale, _shape)
+!define MA_BATTERY_90(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA BATTERY 90, _label, mdi-battery-90, _color, _scale, _shape)
+skinparam folderBackgroundColor<<MA BATTERY 90>> White
+
+sprite mdi-battery-90-bluetooth <svg width="48" height="48"><g transform="scale(2)"><path d="M5,2V4H3.33A1.33,1.33 0 0,0 2,5.33V20.67C2,21.4 2.6,22 3.33,22H12.67C13.4,22 14,21.4 14,20.67V5.33A1.33,1.33 0 0,0 12.67,4H11V2H5M4,6H12V8H4V6M19,8V11.79L16.71,9.5L16,10.21L18.79,13L16,15.79L16.71,16.5L19,14.21V18H19.5L22.35,15.14L20.21,13L22.35,10.85L19.5,8H19M20,9.91L20.94,10.85L20,11.79V9.91M20,14.21L20.94,15.14L20,16.08V14.21Z" /></g></svg>
+
+!define MA_BATTERY_90_BLUETOOTH(_color)                                 SPRITE_PUT(mdi-battery-90-bluetooth, _color)
+!define MA_BATTERY_90_BLUETOOTH(_color, _scale)                         SPRITE_PUT(mdi-battery-90-bluetooth, _color, _scale)
+!define MA_BATTERY_90_BLUETOOTH(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA BATTERY 90 BLUETOOTH, mdi-battery-90-bluetooth, _color, _scale)
+!define MA_BATTERY_90_BLUETOOTH(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA BATTERY 90 BLUETOOTH, mdi-battery-90-bluetooth, _color, _scale, _shape)
+!define MA_BATTERY_90_BLUETOOTH(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA BATTERY 90 BLUETOOTH, _label, mdi-battery-90-bluetooth, _color, _scale, _shape)
+skinparam folderBackgroundColor<<MA BATTERY 90 BLUETOOTH>> White
+
+sprite mdi-battery-alert <svg width="48" height="48"><g transform="scale(2)"><path d="M13 14H11V8H13M13 18H11V16H13M16.7 4H15V2H9V4H7.3C6.6 4 6 4.6 6 5.3V20.6C6 21.4 6.6 22 7.3 22H16.6C17.3 22 17.9 21.4 17.9 20.7V5.3C18 4.6 17.4 4 16.7 4Z" /></g></svg>
+
+!define MA_BATTERY_ALERT(_color)                                 SPRITE_PUT(mdi-battery-alert, _color)
+!define MA_BATTERY_ALERT(_color, _scale)                         SPRITE_PUT(mdi-battery-alert, _color, _scale)
+!define MA_BATTERY_ALERT(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA BATTERY ALERT, mdi-battery-alert, _color, _scale)
+!define MA_BATTERY_ALERT(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA BATTERY ALERT, mdi-battery-alert, _color, _scale, _shape)
+!define MA_BATTERY_ALERT(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA BATTERY ALERT, _label, mdi-battery-alert, _color, _scale, _shape)
+skinparam folderBackgroundColor<<MA BATTERY ALERT>> White
+
+sprite mdi-battery-alert-bluetooth <svg width="48" height="48"><g transform="scale(2)"><path d="M5 2V4H3.3C2.6 4 2 4.6 2 5.3V20.6C2 21.4 2.6 22 3.3 22H12.6C13.3 22 13.9 21.4 13.9 20.7V5.3C14 4.6 13.4 4 12.7 4H11V2H5M19 8V11.8L16.7 9.5L16 10.2L18.8 13L16 15.8L16.7 16.5L19 14.2V18H19.5L22.4 15.1L20.2 13L22.3 10.9L19.5 8H19M7 8H9V14H7M20 9.9L20.9 10.8L20 11.8V9.9M20 14.2L20.9 15.1L20 16.1V14.2M7 16H9V18H7V16Z" /></g></svg>
+
+!define MA_BATTERY_ALERT_BLUETOOTH(_color)                                 SPRITE_PUT(mdi-battery-alert-bluetooth, _color)
+!define MA_BATTERY_ALERT_BLUETOOTH(_color, _scale)                         SPRITE_PUT(mdi-battery-alert-bluetooth, _color, _scale)
+!define MA_BATTERY_ALERT_BLUETOOTH(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA BATTERY ALERT BLUETOOTH, mdi-battery-alert-bluetooth, _color, _scale)
+!define MA_BATTERY_ALERT_BLUETOOTH(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA BATTERY ALERT BLUETOOTH, mdi-battery-alert-bluetooth, _color, _scale, _shape)
+!define MA_BATTERY_ALERT_BLUETOOTH(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA BATTERY ALERT BLUETOOTH, _label, mdi-battery-alert-bluetooth, _color, _scale, _shape)
+skinparam folderBackgroundColor<<MA BATTERY ALERT BLUETOOTH>> White
+
+sprite mdi-battery-alert-variant <svg width="48" height="48"><g transform="scale(2)"><path d="M14.67 4H13V2H7V4H5.33C4.6 4 4 4.6 4 5.33V20.67C4 21.4 4.6 22 5.33 22H14.67C15.4 22 16 21.4 16 20.67V5.33C16 4.6 15.4 4 14.67 4M21 13H19V7H21V13M21 17H19V15H21V17Z" /></g></svg>
+
+!define MA_BATTERY_ALERT_VARIANT(_color)                                 SPRITE_PUT(mdi-battery-alert-variant, _color)
+!define MA_BATTERY_ALERT_VARIANT(_color, _scale)                         SPRITE_PUT(mdi-battery-alert-variant, _color, _scale)
+!define MA_BATTERY_ALERT_VARIANT(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA BATTERY ALERT VARIANT, mdi-battery-alert-variant, _color, _scale)
+!define MA_BATTERY_ALERT_VARIANT(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA BATTERY ALERT VARIANT, mdi-battery-alert-variant, _color, _scale, _shape)
+!define MA_BATTERY_ALERT_VARIANT(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA BATTERY ALERT VARIANT, _label, mdi-battery-alert-variant, _color, _scale, _shape)
+skinparam folderBackgroundColor<<MA BATTERY ALERT VARIANT>> White
+
+sprite mdi-battery-alert-variant-outline <svg width="48" height="48"><g transform="scale(2)"><path d="M14 20H6V6H14M14.67 4H13V2H7V4H5.33C4.6 4 4 4.6 4 5.33V20.67C4 21.4 4.6 22 5.33 22H14.67C15.4 22 16 21.4 16 20.67V5.33C16 4.6 15.4 4 14.67 4M21 7H19V13H21V8M21 15H19V17H21V15Z" /></g></svg>
+
+!define MA_BATTERY_ALERT_VARIANT_OUTLINE(_color)                                 SPRITE_PUT(mdi-battery-alert-variant-outline, _color)
+!define MA_BATTERY_ALERT_VARIANT_OUTLINE(_color, _scale)                         SPRITE_PUT(mdi-battery-alert-variant-outline, _color, _scale)
+!define MA_BATTERY_ALERT_VARIANT_OUTLINE(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA BATTERY ALERT VARIANT OUTLINE, mdi-battery-alert-variant-outline, _color, _scale)
+!define MA_BATTERY_ALERT_VARIANT_OUTLINE(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA BATTERY ALERT VARIANT OUTLINE, mdi-battery-alert-variant-outline, _color, _scale, _shape)
+!define MA_BATTERY_ALERT_VARIANT_OUTLINE(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA BATTERY ALERT VARIANT OUTLINE, _label, mdi-battery-alert-variant-outline, _color, _scale, _shape)
+skinparam folderBackgroundColor<<MA BATTERY ALERT VARIANT OUTLINE>> White
+
+sprite mdi-battery-arrow-down <svg width="48" height="48"><g transform="scale(2)"><path d="M13.54 22H7.33C6.6 22 6 21.4 6 20.67V5.33C6 4.6 6.6 4 7.33 4H9V2H15V4H16.67C17.4 4 18 4.6 18 5.33V12C14.69 12 12 14.69 12 18C12 19.54 12.58 20.94 13.54 22M14.94 18.5L17.94 21.5L20.94 18.5H18.94V14.5H16.94V18.5H14.94" /></g></svg>
+
+!define MA_BATTERY_ARROW_DOWN(_color)                                 SPRITE_PUT(mdi-battery-arrow-down, _color)
+!define MA_BATTERY_ARROW_DOWN(_color, _scale)                         SPRITE_PUT(mdi-battery-arrow-down, _color, _scale)
+!define MA_BATTERY_ARROW_DOWN(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA BATTERY ARROW DOWN, mdi-battery-arrow-down, _color, _scale)
+!define MA_BATTERY_ARROW_DOWN(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA BATTERY ARROW DOWN, mdi-battery-arrow-down, _color, _scale, _shape)
+!define MA_BATTERY_ARROW_DOWN(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA BATTERY ARROW DOWN, _label, mdi-battery-arrow-down, _color, _scale, _shape)
+skinparam folderBackgroundColor<<MA BATTERY ARROW DOWN>> White
+
+sprite mdi-battery-arrow-down-outline <svg width="48" height="48"><g transform="scale(2)"><path d="M13.54 22H7.33C6.6 22 6 21.4 6 20.67V5.33C6 4.6 6.6 4 7.33 4H9V2H15V4H16.67C17.4 4 18 4.6 18 5.33V12C17.3 12 16.63 12.13 16 12.35V6H8V20H12.35C12.61 20.75 13 21.42 13.54 22M14.94 18.5L17.94 21.5L20.94 18.5H18.94V14.5H16.94V18.5H14.94" /></g></svg>
+
+!define MA_BATTERY_ARROW_DOWN_OUTLINE(_color)                                 SPRITE_PUT(mdi-battery-arrow-down-outline, _color)
+!define MA_BATTERY_ARROW_DOWN_OUTLINE(_color, _scale)                         SPRITE_PUT(mdi-battery-arrow-down-outline, _color, _scale)
+!define MA_BATTERY_ARROW_DOWN_OUTLINE(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA BATTERY ARROW DOWN OUTLINE, mdi-battery-arrow-down-outline, _color, _scale)
+!define MA_BATTERY_ARROW_DOWN_OUTLINE(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA BATTERY ARROW DOWN OUTLINE, mdi-battery-arrow-down-outline, _color, _scale, _shape)
+!define MA_BATTERY_ARROW_DOWN_OUTLINE(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA BATTERY ARROW DOWN OUTLINE, _label, mdi-battery-arrow-down-outline, _color, _scale, _shape)
+skinparam folderBackgroundColor<<MA BATTERY ARROW DOWN OUTLINE>> White
+
+sprite mdi-battery-arrow-up <svg width="48" height="48"><g transform="scale(2)"><path d="M13.54 22H7.33C6.6 22 6 21.4 6 20.67V5.33C6 4.6 6.6 4 7.33 4H9V2H15V4H16.67C17.4 4 18 4.6 18 5.33V12C14.69 12 12 14.69 12 18C12 19.54 12.58 20.94 13.54 22M20.94 17.5L17.94 14.5L14.94 17.5H16.94V21.5H18.94V17.5H20.94" /></g></svg>
+
+!define MA_BATTERY_ARROW_UP(_color)                                 SPRITE_PUT(mdi-battery-arrow-up, _color)
+!define MA_BATTERY_ARROW_UP(_color, _scale)                         SPRITE_PUT(mdi-battery-arrow-up, _color, _scale)
+!define MA_BATTERY_ARROW_UP(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA BATTERY ARROW UP, mdi-battery-arrow-up, _color, _scale)
+!define MA_BATTERY_ARROW_UP(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA BATTERY ARROW UP, mdi-battery-arrow-up, _color, _scale, _shape)
+!define MA_BATTERY_ARROW_UP(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA BATTERY ARROW UP, _label, mdi-battery-arrow-up, _color, _scale, _shape)
+skinparam folderBackgroundColor<<MA BATTERY ARROW UP>> White
+
+sprite mdi-battery-arrow-up-outline <svg width="48" height="48"><g transform="scale(2)"><path d="M13.54 22H7.33C6.6 22 6 21.4 6 20.67V5.33C6 4.6 6.6 4 7.33 4H9V2H15V4H16.67C17.4 4 18 4.6 18 5.33V12C17.3 12 16.63 12.13 16 12.35V6H8V20H12.35C12.61 20.75 13 21.42 13.54 22M20.94 17.5L17.94 14.5L14.94 17.5H16.94V21.5H18.94V17.5H20.94" /></g></svg>
+
+!define MA_BATTERY_ARROW_UP_OUTLINE(_color)                                 SPRITE_PUT(mdi-battery-arrow-up-outline, _color)
+!define MA_BATTERY_ARROW_UP_OUTLINE(_color, _scale)                         SPRITE_PUT(mdi-battery-arrow-up-outline, _color, _scale)
+!define MA_BATTERY_ARROW_UP_OUTLINE(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA BATTERY ARROW UP OUTLINE, mdi-battery-arrow-up-outline, _color, _scale)
+!define MA_BATTERY_ARROW_UP_OUTLINE(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA BATTERY ARROW UP OUTLINE, mdi-battery-arrow-up-outline, _color, _scale, _shape)
+!define MA_BATTERY_ARROW_UP_OUTLINE(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA BATTERY ARROW UP OUTLINE, _label, mdi-battery-arrow-up-outline, _color, _scale, _shape)
+skinparam folderBackgroundColor<<MA BATTERY ARROW UP OUTLINE>> White
+
+sprite mdi-battery-bluetooth <svg width="48" height="48"><g transform="scale(2)"><path d="M5,2V4H3.33A1.33,1.33 0 0,0 2,5.33V20.67C2,21.4 2.6,22 3.33,22H12.67C13.4,22 14,21.4 14,20.67V5.33A1.33,1.33 0 0,0 12.67,4H11V2H5M19,8V11.79L16.71,9.5L16,10.21L18.79,13L16,15.79L16.71,16.5L19,14.21V18H19.5L22.35,15.14L20.21,13L22.35,10.85L19.5,8H19M20,9.91L20.94,10.85L20,11.79V9.91M20,14.21L20.94,15.14L20,16.08V14.21Z" /></g></svg>
+
+!define MA_BATTERY_BLUETOOTH(_color)                                 SPRITE_PUT(mdi-battery-bluetooth, _color)
+!define MA_BATTERY_BLUETOOTH(_color, _scale)                         SPRITE_PUT(mdi-battery-bluetooth, _color, _scale)
+!define MA_BATTERY_BLUETOOTH(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA BATTERY BLUETOOTH, mdi-battery-bluetooth, _color, _scale)
+!define MA_BATTERY_BLUETOOTH(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA BATTERY BLUETOOTH, mdi-battery-bluetooth, _color, _scale, _shape)
+!define MA_BATTERY_BLUETOOTH(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA BATTERY BLUETOOTH, _label, mdi-battery-bluetooth, _color, _scale, _shape)
+skinparam folderBackgroundColor<<MA BATTERY BLUETOOTH>> White
+
+sprite mdi-battery-bluetooth-variant <svg width="48" height="48"><g transform="scale(2)"><path d="M9,2V4H7.33A1.33,1.33 0 0,0 6,5.33V20.67C6,21.4 6.6,22 7.33,22H16.67A1.33,1.33 0 0,0 18,20.67V5.33C18,4.6 17.4,4 16.67,4H15V2H9M11.83,8H12.33L15.18,10.85L13.04,13L15.17,15.14L12.33,18H11.83V14.21L9.54,16.5L8.83,15.79L11.62,13L8.83,10.21L9.54,9.5L11.83,11.79V8M12.83,9.91V11.79L13.77,10.85L12.83,9.91M12.83,14.21V16.08L13.77,15.14L12.83,14.21Z" /></g></svg>
+
+!define MA_BATTERY_BLUETOOTH_VARIANT(_color)                                 SPRITE_PUT(mdi-battery-bluetooth-variant, _color)
+!define MA_BATTERY_BLUETOOTH_VARIANT(_color, _scale)                         SPRITE_PUT(mdi-battery-bluetooth-variant, _color, _scale)
+!define MA_BATTERY_BLUETOOTH_VARIANT(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA BATTERY BLUETOOTH VARIANT, mdi-battery-bluetooth-variant, _color, _scale)
+!define MA_BATTERY_BLUETOOTH_VARIANT(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA BATTERY BLUETOOTH VARIANT, mdi-battery-bluetooth-variant, _color, _scale, _shape)
+!define MA_BATTERY_BLUETOOTH_VARIANT(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA BATTERY BLUETOOTH VARIANT, _label, mdi-battery-bluetooth-variant, _color, _scale, _shape)
+skinparam folderBackgroundColor<<MA BATTERY BLUETOOTH VARIANT>> White
+
+sprite mdi-battery-charging <svg width="48" height="48"><g transform="scale(2)"><path d="M16.67,4H15V2H9V4H7.33A1.33,1.33 0 0,0 6,5.33V20.66C6,21.4 6.6,22 7.33,22H16.66C17.4,22 18,21.4 18,20.67V5.33C18,4.6 17.4,4 16.67,4M11,20V14.5H9L13,7V12.5H15" /></g></svg>
+
+!define MA_BATTERY_CHARGING(_color)                                 SPRITE_PUT(mdi-battery-charging, _color)
+!define MA_BATTERY_CHARGING(_color, _scale)                         SPRITE_PUT(mdi-battery-charging, _color, _scale)
+!define MA_BATTERY_CHARGING(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA BATTERY CHARGING, mdi-battery-charging, _color, _scale)
+!define MA_BATTERY_CHARGING(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA BATTERY CHARGING, mdi-battery-charging, _color, _scale, _shape)
+!define MA_BATTERY_CHARGING(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA BATTERY CHARGING, _label, mdi-battery-charging, _color, _scale, _shape)
+skinparam folderBackgroundColor<<MA BATTERY CHARGING>> White
+
+sprite mdi-battery-charging-10 <svg width="48" height="48"><g transform="scale(2)"><path d="M23.05,11H20.05V4L15.05,14H18.05V22M12,18H4L4.05,6H12.05M12.72,4H11.05V2H5.05V4H3.38A1.33,1.33 0 0,0 2.05,5.33V20.67C2.05,21.4 2.65,22 3.38,22H12.72C13.45,22 14.05,21.4 14.05,20.67V5.33A1.33,1.33 0 0,0 12.72,4Z" /></g></svg>
+
+!define MA_BATTERY_CHARGING_10(_color)                                 SPRITE_PUT(mdi-battery-charging-10, _color)
+!define MA_BATTERY_CHARGING_10(_color, _scale)                         SPRITE_PUT(mdi-battery-charging-10, _color, _scale)
+!define MA_BATTERY_CHARGING_10(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA BATTERY CHARGING 10, mdi-battery-charging-10, _color, _scale)
+!define MA_BATTERY_CHARGING_10(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA BATTERY CHARGING 10, mdi-battery-charging-10, _color, _scale, _shape)
+!define MA_BATTERY_CHARGING_10(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA BATTERY CHARGING 10, _label, mdi-battery-charging-10, _color, _scale, _shape)
+skinparam folderBackgroundColor<<MA BATTERY CHARGING 10>> White
+
+sprite mdi-battery-charging-100 <svg width="48" height="48"><g transform="scale(2)"><path d="M23,11H20V4L15,14H18V22M12.67,4H11V2H5V4H3.33A1.33,1.33 0 0,0 2,5.33V20.67C2,21.4 2.6,22 3.33,22H12.67C13.4,22 14,21.4 14,20.67V5.33A1.33,1.33 0 0,0 12.67,4Z" /></g></svg>
+
+!define MA_BATTERY_CHARGING_100(_color)                                 SPRITE_PUT(mdi-battery-charging-100, _color)
+!define MA_BATTERY_CHARGING_100(_color, _scale)                         SPRITE_PUT(mdi-battery-charging-100, _color, _scale)
+!define MA_BATTERY_CHARGING_100(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA BATTERY CHARGING 100, mdi-battery-charging-100, _color, _scale)
+!define MA_BATTERY_CHARGING_100(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA BATTERY CHARGING 100, mdi-battery-charging-100, _color, _scale, _shape)
+!define MA_BATTERY_CHARGING_100(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA BATTERY CHARGING 100, _label, mdi-battery-charging-100, _color, _scale, _shape)
+skinparam folderBackgroundColor<<MA BATTERY CHARGING 100>> White
+
+sprite mdi-battery-charging-20 <svg width="48" height="48"><g transform="scale(2)"><path d="M23.05,11H20.05V4L15.05,14H18.05V22M12.05,17H4.05V6H12.05M12.72,4H11.05V2H5.05V4H3.38A1.33,1.33 0 0,0 2.05,5.33V20.67C2.05,21.4 2.65,22 3.38,22H12.72C13.45,22 14.05,21.4 14.05,20.67V5.33A1.33,1.33 0 0,0 12.72,4Z" /></g></svg>
+
+!define MA_BATTERY_CHARGING_20(_color)                                 SPRITE_PUT(mdi-battery-charging-20, _color)
+!define MA_BATTERY_CHARGING_20(_color, _scale)                         SPRITE_PUT(mdi-battery-charging-20, _color, _scale)
+!define MA_BATTERY_CHARGING_20(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA BATTERY CHARGING 20, mdi-battery-charging-20, _color, _scale)
+!define MA_BATTERY_CHARGING_20(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA BATTERY CHARGING 20, mdi-battery-charging-20, _color, _scale, _shape)
+!define MA_BATTERY_CHARGING_20(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA BATTERY CHARGING 20, _label, mdi-battery-charging-20, _color, _scale, _shape)
+skinparam folderBackgroundColor<<MA BATTERY CHARGING 20>> White
+
+sprite mdi-battery-charging-30 <svg width="48" height="48"><g transform="scale(2)"><path d="M12,15H4V6H12M12.67,4H11V2H5V4H3.33A1.33,1.33 0 0,0 2,5.33V20.67C2,21.4 2.6,22 3.33,22H12.67C13.4,22 14,21.4 14,20.67V5.33A1.33,1.33 0 0,0 12.67,4M23,11H20V4L15,14H18V22L23,11Z" /></g></svg>
+
+!define MA_BATTERY_CHARGING_30(_color)                                 SPRITE_PUT(mdi-battery-charging-30, _color)
+!define MA_BATTERY_CHARGING_30(_color, _scale)                         SPRITE_PUT(mdi-battery-charging-30, _color, _scale)
+!define MA_BATTERY_CHARGING_30(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA BATTERY CHARGING 30, mdi-battery-charging-30, _color, _scale)
+!define MA_BATTERY_CHARGING_30(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA BATTERY CHARGING 30, mdi-battery-charging-30, _color, _scale, _shape)
+!define MA_BATTERY_CHARGING_30(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA BATTERY CHARGING 30, _label, mdi-battery-charging-30, _color, _scale, _shape)
+skinparam folderBackgroundColor<<MA BATTERY CHARGING 30>> White
+
+sprite mdi-battery-charging-40 <svg width="48" height="48"><g transform="scale(2)"><path d="M13 4H11V2H5V4H3C2.4 4 2 4.4 2 5V21C2 21.6 2.4 22 3 22H13C13.6 22 14 21.6 14 21V5C14 4.4 13.6 4 13 4M12 14.5H4V6H12V14.5M23 11H20V4L15 14H18V22" /></g></svg>
+
+!define MA_BATTERY_CHARGING_40(_color)                                 SPRITE_PUT(mdi-battery-charging-40, _color)
+!define MA_BATTERY_CHARGING_40(_color, _scale)                         SPRITE_PUT(mdi-battery-charging-40, _color, _scale)
+!define MA_BATTERY_CHARGING_40(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA BATTERY CHARGING 40, mdi-battery-charging-40, _color, _scale)
+!define MA_BATTERY_CHARGING_40(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA BATTERY CHARGING 40, mdi-battery-charging-40, _color, _scale, _shape)
+!define MA_BATTERY_CHARGING_40(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA BATTERY CHARGING 40, _label, mdi-battery-charging-40, _color, _scale, _shape)
+skinparam folderBackgroundColor<<MA BATTERY CHARGING 40>> White
+
+sprite mdi-battery-charging-50 <svg width="48" height="48"><g transform="scale(2)"><path d="M23,11H20V4L15,14H18V22M12,13H4V6H12M12.67,4H11V2H5V4H3.33A1.33,1.33 0 0,0 2,5.33V20.67C2,21.4 2.6,22 3.33,22H12.67C13.4,22 14,21.4 14,20.67V5.33A1.33,1.33 0 0,0 12.67,4Z" /></g></svg>
+
+!define MA_BATTERY_CHARGING_50(_color)                                 SPRITE_PUT(mdi-battery-charging-50, _color)
+!define MA_BATTERY_CHARGING_50(_color, _scale)                         SPRITE_PUT(mdi-battery-charging-50, _color, _scale)
+!define MA_BATTERY_CHARGING_50(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA BATTERY CHARGING 50, mdi-battery-charging-50, _color, _scale)
+!define MA_BATTERY_CHARGING_50(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA BATTERY CHARGING 50, mdi-battery-charging-50, _color, _scale, _shape)
+!define MA_BATTERY_CHARGING_50(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA BATTERY CHARGING 50, _label, mdi-battery-charging-50, _color, _scale, _shape)
+skinparam folderBackgroundColor<<MA BATTERY CHARGING 50>> White
+
+sprite mdi-battery-charging-60 <svg width="48" height="48"><g transform="scale(2)"><path d="M12,11H4V6H12M12.67,4H11V2H5V4H3.33A1.33,1.33 0 0,0 2,5.33V20.67C2,21.4 2.6,22 3.33,22H12.67C13.4,22 14,21.4 14,20.67V5.33A1.33,1.33 0 0,0 12.67,4M23,11H20V4L15,14H18V22L23,11Z" /></g></svg>
+
+!define MA_BATTERY_CHARGING_60(_color)                                 SPRITE_PUT(mdi-battery-charging-60, _color)
+!define MA_BATTERY_CHARGING_60(_color, _scale)                         SPRITE_PUT(mdi-battery-charging-60, _color, _scale)
+!define MA_BATTERY_CHARGING_60(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA BATTERY CHARGING 60, mdi-battery-charging-60, _color, _scale)
+!define MA_BATTERY_CHARGING_60(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA BATTERY CHARGING 60, mdi-battery-charging-60, _color, _scale, _shape)
+!define MA_BATTERY_CHARGING_60(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA BATTERY CHARGING 60, _label, mdi-battery-charging-60, _color, _scale, _shape)
+skinparam folderBackgroundColor<<MA BATTERY CHARGING 60>> White
+
+sprite mdi-battery-charging-70 <svg width="48" height="48"><g transform="scale(2)"><path d="M12,10H4V6H12M12.67,4H11V2H5V4H3.33A1.33,1.33 0 0,0 2,5.33V20.67C2,21.4 2.6,22 3.33,22H12.67C13.4,22 14,21.4 14,20.67V5.33A1.33,1.33 0 0,0 12.67,4M23,11H20V4L15,14H18V22L23,11Z" /></g></svg>
+
+!define MA_BATTERY_CHARGING_70(_color)                                 SPRITE_PUT(mdi-battery-charging-70, _color)
+!define MA_BATTERY_CHARGING_70(_color, _scale)                         SPRITE_PUT(mdi-battery-charging-70, _color, _scale)
+!define MA_BATTERY_CHARGING_70(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA BATTERY CHARGING 70, mdi-battery-charging-70, _color, _scale)
+!define MA_BATTERY_CHARGING_70(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA BATTERY CHARGING 70, mdi-battery-charging-70, _color, _scale, _shape)
+!define MA_BATTERY_CHARGING_70(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA BATTERY CHARGING 70, _label, mdi-battery-charging-70, _color, _scale, _shape)
+skinparam folderBackgroundColor<<MA BATTERY CHARGING 70>> White
+
+sprite mdi-battery-charging-80 <svg width="48" height="48"><g transform="scale(2)"><path d="M23,11H20V4L15,14H18V22M12,9H4V6H12M12.67,4H11V2H5V4H3.33A1.33,1.33 0 0,0 2,5.33V20.67C2,21.4 2.6,22 3.33,22H12.67C13.4,22 14,21.4 14,20.67V5.33A1.33,1.33 0 0,0 12.67,4Z" /></g></svg>
+
+!define MA_BATTERY_CHARGING_80(_color)                                 SPRITE_PUT(mdi-battery-charging-80, _color)
+!define MA_BATTERY_CHARGING_80(_color, _scale)                         SPRITE_PUT(mdi-battery-charging-80, _color, _scale)
+!define MA_BATTERY_CHARGING_80(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA BATTERY CHARGING 80, mdi-battery-charging-80, _color, _scale)
+!define MA_BATTERY_CHARGING_80(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA BATTERY CHARGING 80, mdi-battery-charging-80, _color, _scale, _shape)
+!define MA_BATTERY_CHARGING_80(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA BATTERY CHARGING 80, _label, mdi-battery-charging-80, _color, _scale, _shape)
+skinparam folderBackgroundColor<<MA BATTERY CHARGING 80>> White
+
+sprite mdi-battery-charging-90 <svg width="48" height="48"><g transform="scale(2)"><path d="M23,11H20V4L15,14H18V22M12,8H4V6H12M12.67,4H11V2H5V4H3.33A1.33,1.33 0 0,0 2,5.33V20.67C2,21.4 2.6,22 3.33,22H12.67C13.4,22 14,21.4 14,20.67V5.33A1.33,1.33 0 0,0 12.67,4Z" /></g></svg>
+
+!define MA_BATTERY_CHARGING_90(_color)                                 SPRITE_PUT(mdi-battery-charging-90, _color)
+!define MA_BATTERY_CHARGING_90(_color, _scale)                         SPRITE_PUT(mdi-battery-charging-90, _color, _scale)
+!define MA_BATTERY_CHARGING_90(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA BATTERY CHARGING 90, mdi-battery-charging-90, _color, _scale)
+!define MA_BATTERY_CHARGING_90(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA BATTERY CHARGING 90, mdi-battery-charging-90, _color, _scale, _shape)
+!define MA_BATTERY_CHARGING_90(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA BATTERY CHARGING 90, _label, mdi-battery-charging-90, _color, _scale, _shape)
+skinparam folderBackgroundColor<<MA BATTERY CHARGING 90>> White
+
+sprite mdi-battery-charging-high <svg width="48" height="48"><g transform="scale(2)"><path d="M12 20H4V6H12M12.67 4H11V2H5V4H3.33C2.6 4 2 4.6 2 5.33V20.67C2 21.4 2.6 22 3.33 22H12.67C13.41 22 14 21.41 14 20.67V5.33C14 4.6 13.4 4 12.67 4M11 16H5V19H11V16M11 7H5V10H11V7M11 11.5H5V14.5H11V11.5M23 10H20V3L15 13H18V21" /></g></svg>
+
+!define MA_BATTERY_CHARGING_HIGH(_color)                                 SPRITE_PUT(mdi-battery-charging-high, _color)
+!define MA_BATTERY_CHARGING_HIGH(_color, _scale)                         SPRITE_PUT(mdi-battery-charging-high, _color, _scale)
+!define MA_BATTERY_CHARGING_HIGH(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA BATTERY CHARGING HIGH, mdi-battery-charging-high, _color, _scale)
+!define MA_BATTERY_CHARGING_HIGH(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA BATTERY CHARGING HIGH, mdi-battery-charging-high, _color, _scale, _shape)
+!define MA_BATTERY_CHARGING_HIGH(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA BATTERY CHARGING HIGH, _label, mdi-battery-charging-high, _color, _scale, _shape)
+skinparam folderBackgroundColor<<MA BATTERY CHARGING HIGH>> White
+
+sprite mdi-battery-charging-low <svg width="48" height="48"><g transform="scale(2)"><path d="M12 20H4V6H12M12.67 4H11V2H5V4H3.33C2.6 4 2 4.6 2 5.33V20.67C2 21.4 2.6 22 3.33 22H12.67C13.41 22 14 21.41 14 20.67V5.33C14 4.6 13.4 4 12.67 4M11 16H5V19H11V16M23 10H20V3L15 13H18V21" /></g></svg>
+
+!define MA_BATTERY_CHARGING_LOW(_color)                                 SPRITE_PUT(mdi-battery-charging-low, _color)
+!define MA_BATTERY_CHARGING_LOW(_color, _scale)                         SPRITE_PUT(mdi-battery-charging-low, _color, _scale)
+!define MA_BATTERY_CHARGING_LOW(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA BATTERY CHARGING LOW, mdi-battery-charging-low, _color, _scale)
+!define MA_BATTERY_CHARGING_LOW(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA BATTERY CHARGING LOW, mdi-battery-charging-low, _color, _scale, _shape)
+!define MA_BATTERY_CHARGING_LOW(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA BATTERY CHARGING LOW, _label, mdi-battery-charging-low, _color, _scale, _shape)
+skinparam folderBackgroundColor<<MA BATTERY CHARGING LOW>> White
+
+sprite mdi-battery-charging-medium <svg width="48" height="48"><g transform="scale(2)"><path d="M12 20H4V6H12M12.67 4H11V2H5V4H3.33C2.6 4 2 4.6 2 5.33V20.67C2 21.4 2.6 22 3.33 22H12.67C13.41 22 14 21.41 14 20.67V5.33C14 4.6 13.4 4 12.67 4M11 16H5V19H11V16M11 11.5H5V14.5H11V11.5M23 10H20V3L15 13H18V21" /></g></svg>
+
+!define MA_BATTERY_CHARGING_MEDIUM(_color)                                 SPRITE_PUT(mdi-battery-charging-medium, _color)
+!define MA_BATTERY_CHARGING_MEDIUM(_color, _scale)                         SPRITE_PUT(mdi-battery-charging-medium, _color, _scale)
+!define MA_BATTERY_CHARGING_MEDIUM(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA BATTERY CHARGING MEDIUM, mdi-battery-charging-medium, _color, _scale)
+!define MA_BATTERY_CHARGING_MEDIUM(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA BATTERY CHARGING MEDIUM, mdi-battery-charging-medium, _color, _scale, _shape)
+!define MA_BATTERY_CHARGING_MEDIUM(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA BATTERY CHARGING MEDIUM, _label, mdi-battery-charging-medium, _color, _scale, _shape)
+skinparam folderBackgroundColor<<MA BATTERY CHARGING MEDIUM>> White
+
+sprite mdi-battery-charging-outline <svg width="48" height="48"><g transform="scale(2)"><path d="M23.05,11H20.05V4L15.05,14H18.05V22M12,20H4L4.05,6H12.05M12.72,4H11.05V2H5.05V4H3.38A1.33,1.33 0 0,0 2.05,5.33V20.67C2.05,21.4 2.65,22 3.38,22H12.72C13.45,22 14.05,21.4 14.05,20.67V5.33A1.33,1.33 0 0,0 12.72,4Z" /></g></svg>
+
+!define MA_BATTERY_CHARGING_OUTLINE(_color)                                 SPRITE_PUT(mdi-battery-charging-outline, _color)
+!define MA_BATTERY_CHARGING_OUTLINE(_color, _scale)                         SPRITE_PUT(mdi-battery-charging-outline, _color, _scale)
+!define MA_BATTERY_CHARGING_OUTLINE(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA BATTERY CHARGING OUTLINE, mdi-battery-charging-outline, _color, _scale)
+!define MA_BATTERY_CHARGING_OUTLINE(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA BATTERY CHARGING OUTLINE, mdi-battery-charging-outline, _color, _scale, _shape)
+!define MA_BATTERY_CHARGING_OUTLINE(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA BATTERY CHARGING OUTLINE, _label, mdi-battery-charging-outline, _color, _scale, _shape)
+skinparam folderBackgroundColor<<MA BATTERY CHARGING OUTLINE>> White
+
+sprite mdi-battery-charging-wireless <svg width="48" height="48"><g transform="scale(2)"><path d="M13,4H11V2H5V4H3A1,1 0 0,0 2,5V21A1,1 0 0,0 3,22H13A1,1 0 0,0 14,21V5A1,1 0 0,0 13,4M20.07,4.93L18.66,6.34C21.79,9.46 21.79,14.53 18.66,17.66L20.07,19.07C23.97,15.17 23.97,8.84 20.07,4.93M17.24,7.76L15.83,9.17C17.39,10.73 17.39,13.26 15.83,14.83L17.24,16.24C19.58,13.9 19.58,10.1 17.24,7.76Z" /></g></svg>
+
+!define MA_BATTERY_CHARGING_WIRELESS(_color)                                 SPRITE_PUT(mdi-battery-charging-wireless, _color)
+!define MA_BATTERY_CHARGING_WIRELESS(_color, _scale)                         SPRITE_PUT(mdi-battery-charging-wireless, _color, _scale)
+!define MA_BATTERY_CHARGING_WIRELESS(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA BATTERY CHARGING WIRELESS, mdi-battery-charging-wireless, _color, _scale)
+!define MA_BATTERY_CHARGING_WIRELESS(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA BATTERY CHARGING WIRELESS, mdi-battery-charging-wireless, _color, _scale, _shape)
+!define MA_BATTERY_CHARGING_WIRELESS(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA BATTERY CHARGING WIRELESS, _label, mdi-battery-charging-wireless, _color, _scale, _shape)
+skinparam folderBackgroundColor<<MA BATTERY CHARGING WIRELESS>> White
+
+sprite mdi-battery-charging-wireless-10 <svg width="48" height="48"><g transform="scale(2)"><path d="M20.07,4.93L18.66,6.34C21.79,9.46 21.79,14.53 18.66,17.66L20.07,19.07C23.97,15.17 23.97,8.84 20.07,4.93M17.24,7.76L15.83,9.17C17.39,10.73 17.39,13.26 15.83,14.83L17.24,16.24C19.58,13.9 19.58,10.1 17.24,7.76M13,4H11V2H5V4H3A1,1 0 0,0 2,5V21A1,1 0 0,0 3,22H13A1,1 0 0,0 14,21V5A1,1 0 0,0 13,4M12,18.5H4V6H12V18.5Z" /></g></svg>
+
+!define MA_BATTERY_CHARGING_WIRELESS_10(_color)                                 SPRITE_PUT(mdi-battery-charging-wireless-10, _color)
+!define MA_BATTERY_CHARGING_WIRELESS_10(_color, _scale)                         SPRITE_PUT(mdi-battery-charging-wireless-10, _color, _scale)
+!define MA_BATTERY_CHARGING_WIRELESS_10(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA BATTERY CHARGING WIRELESS 10, mdi-battery-charging-wireless-10, _color, _scale)
+!define MA_BATTERY_CHARGING_WIRELESS_10(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA BATTERY CHARGING WIRELESS 10, mdi-battery-charging-wireless-10, _color, _scale, _shape)
+!define MA_BATTERY_CHARGING_WIRELESS_10(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA BATTERY CHARGING WIRELESS 10, _label, mdi-battery-charging-wireless-10, _color, _scale, _shape)
+skinparam folderBackgroundColor<<MA BATTERY CHARGING WIRELESS 10>> White
+
+sprite mdi-battery-charging-wireless-20 <svg width="48" height="48"><g transform="scale(2)"><path d="M20.07,4.93L18.66,6.34C21.79,9.46 21.79,14.53 18.66,17.66L20.07,19.07C23.97,15.17 23.97,8.84 20.07,4.93M17.24,7.76L15.83,9.17C17.39,10.73 17.39,13.26 15.83,14.83L17.24,16.24C19.58,13.9 19.58,10.1 17.24,7.76M13,4H11V2H5V4H3A1,1 0 0,0 2,5V21A1,1 0 0,0 3,22H13A1,1 0 0,0 14,21V5A1,1 0 0,0 13,4M12,17H4V6H12V17Z" /></g></svg>
+
+!define MA_BATTERY_CHARGING_WIRELESS_20(_color)                                 SPRITE_PUT(mdi-battery-charging-wireless-20, _color)
+!define MA_BATTERY_CHARGING_WIRELESS_20(_color, _scale)                         SPRITE_PUT(mdi-battery-charging-wireless-20, _color, _scale)
+!define MA_BATTERY_CHARGING_WIRELESS_20(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA BATTERY CHARGING WIRELESS 20, mdi-battery-charging-wireless-20, _color, _scale)
+!define MA_BATTERY_CHARGING_WIRELESS_20(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA BATTERY CHARGING WIRELESS 20, mdi-battery-charging-wireless-20, _color, _scale, _shape)
+!define MA_BATTERY_CHARGING_WIRELESS_20(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA BATTERY CHARGING WIRELESS 20, _label, mdi-battery-charging-wireless-20, _color, _scale, _shape)
+skinparam folderBackgroundColor<<MA BATTERY CHARGING WIRELESS 20>> White
+
+sprite mdi-battery-charging-wireless-30 <svg width="48" height="48"><g transform="scale(2)"><path d="M20.07,4.93L18.66,6.34C21.79,9.46 21.79,14.53 18.66,17.66L20.07,19.07C23.97,15.17 23.97,8.84 20.07,4.93M17.24,7.76L15.83,9.17C17.39,10.73 17.39,13.26 15.83,14.83L17.24,16.24C19.58,13.9 19.58,10.1 17.24,7.76M13,4H11V2H5V4H3A1,1 0 0,0 2,5V21A1,1 0 0,0 3,22H13A1,1 0 0,0 14,21V5A1,1 0 0,0 13,4M12,16H4V6H12V16Z" /></g></svg>
+
+!define MA_BATTERY_CHARGING_WIRELESS_30(_color)                                 SPRITE_PUT(mdi-battery-charging-wireless-30, _color)
+!define MA_BATTERY_CHARGING_WIRELESS_30(_color, _scale)                         SPRITE_PUT(mdi-battery-charging-wireless-30, _color, _scale)
+!define MA_BATTERY_CHARGING_WIRELESS_30(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA BATTERY CHARGING WIRELESS 30, mdi-battery-charging-wireless-30, _color, _scale)
+!define MA_BATTERY_CHARGING_WIRELESS_30(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA BATTERY CHARGING WIRELESS 30, mdi-battery-charging-wireless-30, _color, _scale, _shape)
+!define MA_BATTERY_CHARGING_WIRELESS_30(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA BATTERY CHARGING WIRELESS 30, _label, mdi-battery-charging-wireless-30, _color, _scale, _shape)
+skinparam folderBackgroundColor<<MA BATTERY CHARGING WIRELESS 30>> White
+
+sprite mdi-battery-charging-wireless-40 <svg width="48" height="48"><g transform="scale(2)"><path d="M20.07,4.93L18.66,6.34C21.79,9.46 21.79,14.53 18.66,17.66L20.07,19.07C23.97,15.17 23.97,8.84 20.07,4.93M17.24,7.76L15.83,9.17C17.39,10.73 17.39,13.26 15.83,14.83L17.24,16.24C19.58,13.9 19.58,10.1 17.24,7.76M13,4H11V2H5V4H3A1,1 0 0,0 2,5V21A1,1 0 0,0 3,22H13A1,1 0 0,0 14,21V5A1,1 0 0,0 13,4M12,14.5H4V6H12V14.5Z" /></g></svg>
+
+!define MA_BATTERY_CHARGING_WIRELESS_40(_color)                                 SPRITE_PUT(mdi-battery-charging-wireless-40, _color)
+!define MA_BATTERY_CHARGING_WIRELESS_40(_color, _scale)                         SPRITE_PUT(mdi-battery-charging-wireless-40, _color, _scale)
+!define MA_BATTERY_CHARGING_WIRELESS_40(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA BATTERY CHARGING WIRELESS 40, mdi-battery-charging-wireless-40, _color, _scale)
+!define MA_BATTERY_CHARGING_WIRELESS_40(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA BATTERY CHARGING WIRELESS 40, mdi-battery-charging-wireless-40, _color, _scale, _shape)
+!define MA_BATTERY_CHARGING_WIRELESS_40(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA BATTERY CHARGING WIRELESS 40, _label, mdi-battery-charging-wireless-40, _color, _scale, _shape)
+skinparam folderBackgroundColor<<MA BATTERY CHARGING WIRELESS 40>> White
+
+sprite mdi-battery-charging-wireless-50 <svg width="48" height="48"><g transform="scale(2)"><path d="M20.07,4.93L18.66,6.34C21.79,9.46 21.79,14.53 18.66,17.66L20.07,19.07C23.97,15.17 23.97,8.84 20.07,4.93M17.24,7.76L15.83,9.17C17.39,10.73 17.39,13.26 15.83,14.83L17.24,16.24C19.58,13.9 19.58,10.1 17.24,7.76M13,4H11V2H5V4H3A1,1 0 0,0 2,5V21A1,1 0 0,0 3,22H13A1,1 0 0,0 14,21V5A1,1 0 0,0 13,4M12,13H4V6H12V13Z" /></g></svg>
+
+!define MA_BATTERY_CHARGING_WIRELESS_50(_color)                                 SPRITE_PUT(mdi-battery-charging-wireless-50, _color)
+!define MA_BATTERY_CHARGING_WIRELESS_50(_color, _scale)                         SPRITE_PUT(mdi-battery-charging-wireless-50, _color, _scale)
+!define MA_BATTERY_CHARGING_WIRELESS_50(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA BATTERY CHARGING WIRELESS 50, mdi-battery-charging-wireless-50, _color, _scale)
+!define MA_BATTERY_CHARGING_WIRELESS_50(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA BATTERY CHARGING WIRELESS 50, mdi-battery-charging-wireless-50, _color, _scale, _shape)
+!define MA_BATTERY_CHARGING_WIRELESS_50(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA BATTERY CHARGING WIRELESS 50, _label, mdi-battery-charging-wireless-50, _color, _scale, _shape)
+skinparam folderBackgroundColor<<MA BATTERY CHARGING WIRELESS 50>> White
+
+sprite mdi-battery-charging-wireless-60 <svg width="48" height="48"><g transform="scale(2)"><path d="M20.07,4.93L18.66,6.34C21.79,9.46 21.79,14.53 18.66,17.66L20.07,19.07C23.97,15.17 23.97,8.84 20.07,4.93M17.24,7.76L15.83,9.17C17.39,10.73 17.39,13.26 15.83,14.83L17.24,16.24C19.58,13.9 19.58,10.1 17.24,7.76M13,4H11V2H5V4H3A1,1 0 0,0 2,5V21A1,1 0 0,0 3,22H13A1,1 0 0,0 14,21V5A1,1 0 0,0 13,4M12,11.6H4V6H12V11.6Z" /></g></svg>
+
+!define MA_BATTERY_CHARGING_WIRELESS_60(_color)                                 SPRITE_PUT(mdi-battery-charging-wireless-60, _color)
+!define MA_BATTERY_CHARGING_WIRELESS_60(_color, _scale)                         SPRITE_PUT(mdi-battery-charging-wireless-60, _color, _scale)
+!define MA_BATTERY_CHARGING_WIRELESS_60(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA BATTERY CHARGING WIRELESS 60, mdi-battery-charging-wireless-60, _color, _scale)
+!define MA_BATTERY_CHARGING_WIRELESS_60(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA BATTERY CHARGING WIRELESS 60, mdi-battery-charging-wireless-60, _color, _scale, _shape)
+!define MA_BATTERY_CHARGING_WIRELESS_60(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA BATTERY CHARGING WIRELESS 60, _label, mdi-battery-charging-wireless-60, _color, _scale, _shape)
+skinparam folderBackgroundColor<<MA BATTERY CHARGING WIRELESS 60>> White
+
+sprite mdi-battery-charging-wireless-70 <svg width="48" height="48"><g transform="scale(2)"><path d="M20.07,4.93L18.66,6.34C21.79,9.46 21.79,14.53 18.66,17.66L20.07,19.07C23.97,15.17 23.97,8.84 20.07,4.93M17.24,7.76L15.83,9.17C17.39,10.73 17.39,13.26 15.83,14.83L17.24,16.24C19.58,13.9 19.58,10.1 17.24,7.76M13,4H11V2H5V4H3A1,1 0 0,0 2,5V21A1,1 0 0,0 3,22H13A1,1 0 0,0 14,21V5A1,1 0 0,0 13,4M12,10H4V6H12V10Z" /></g></svg>
+
+!define MA_BATTERY_CHARGING_WIRELESS_70(_color)                                 SPRITE_PUT(mdi-battery-charging-wireless-70, _color)
+!define MA_BATTERY_CHARGING_WIRELESS_70(_color, _scale)                         SPRITE_PUT(mdi-battery-charging-wireless-70, _color, _scale)
+!define MA_BATTERY_CHARGING_WIRELESS_70(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA BATTERY CHARGING WIRELESS 70, mdi-battery-charging-wireless-70, _color, _scale)
+!define MA_BATTERY_CHARGING_WIRELESS_70(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA BATTERY CHARGING WIRELESS 70, mdi-battery-charging-wireless-70, _color, _scale, _shape)
+!define MA_BATTERY_CHARGING_WIRELESS_70(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA BATTERY CHARGING WIRELESS 70, _label, mdi-battery-charging-wireless-70, _color, _scale, _shape)
+skinparam folderBackgroundColor<<MA BATTERY CHARGING WIRELESS 70>> White
+
+sprite mdi-battery-charging-wireless-80 <svg width="48" height="48"><g transform="scale(2)"><path d="M20.07,4.93L18.66,6.34C21.79,9.46 21.79,14.53 18.66,17.66L20.07,19.07C23.97,15.17 23.97,8.84 20.07,4.93M17.24,7.76L15.83,9.17C17.39,10.73 17.39,13.26 15.83,14.83L17.24,16.24C19.58,13.9 19.58,10.1 17.24,7.76M13,4H11V2H5V4H3A1,1 0 0,0 2,5V21A1,1 0 0,0 3,22H13A1,1 0 0,0 14,21V5A1,1 0 0,0 13,4M12,9H4V6H12V9Z" /></g></svg>
+
+!define MA_BATTERY_CHARGING_WIRELESS_80(_color)                                 SPRITE_PUT(mdi-battery-charging-wireless-80, _color)
+!define MA_BATTERY_CHARGING_WIRELESS_80(_color, _scale)                         SPRITE_PUT(mdi-battery-charging-wireless-80, _color, _scale)
+!define MA_BATTERY_CHARGING_WIRELESS_80(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA BATTERY CHARGING WIRELESS 80, mdi-battery-charging-wireless-80, _color, _scale)
+!define MA_BATTERY_CHARGING_WIRELESS_80(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA BATTERY CHARGING WIRELESS 80, mdi-battery-charging-wireless-80, _color, _scale, _shape)
+!define MA_BATTERY_CHARGING_WIRELESS_80(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA BATTERY CHARGING WIRELESS 80, _label, mdi-battery-charging-wireless-80, _color, _scale, _shape)
+skinparam folderBackgroundColor<<MA BATTERY CHARGING WIRELESS 80>> White
+
+sprite mdi-battery-charging-wireless-90 <svg width="48" height="48"><g transform="scale(2)"><path d="M20.07,4.93L18.66,6.34C21.79,9.46 21.79,14.53 18.66,17.66L20.07,19.07C23.97,15.17 23.97,8.84 20.07,4.93M17.24,7.76L15.83,9.17C17.39,10.73 17.39,13.26 15.83,14.83L17.24,16.24C19.58,13.9 19.58,10.1 17.24,7.76M13,4H11V2H5V4H3A1,1 0 0,0 2,5V21A1,1 0 0,0 3,22H13A1,1 0 0,0 14,21V5A1,1 0 0,0 13,4M12,7.5H4V6H12V7.5Z" /></g></svg>
+
+!define MA_BATTERY_CHARGING_WIRELESS_90(_color)                                 SPRITE_PUT(mdi-battery-charging-wireless-90, _color)
+!define MA_BATTERY_CHARGING_WIRELESS_90(_color, _scale)                         SPRITE_PUT(mdi-battery-charging-wireless-90, _color, _scale)
+!define MA_BATTERY_CHARGING_WIRELESS_90(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA BATTERY CHARGING WIRELESS 90, mdi-battery-charging-wireless-90, _color, _scale)
+!define MA_BATTERY_CHARGING_WIRELESS_90(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA BATTERY CHARGING WIRELESS 90, mdi-battery-charging-wireless-90, _color, _scale, _shape)
+!define MA_BATTERY_CHARGING_WIRELESS_90(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA BATTERY CHARGING WIRELESS 90, _label, mdi-battery-charging-wireless-90, _color, _scale, _shape)
+skinparam folderBackgroundColor<<MA BATTERY CHARGING WIRELESS 90>> White
+
+sprite mdi-battery-charging-wireless-alert <svg width="48" height="48"><g transform="scale(2)"><path d="M13 4H11V2H5V4H3C2.4 4 2 4.4 2 5V21C2 21.6 2.4 22 3 22H13C13.6 22 14 21.6 14 21V5C14 4.4 13.6 4 13 4M9 18H7V16H9V18M9 14H7V8H9V14M20.1 4.9L18.7 6.3C21.8 9.4 21.8 14.5 18.7 17.6L20.1 19C24 15.2 24 8.8 20.1 4.9M17.2 7.8L15.8 9.2C17.4 10.8 17.4 13.3 15.8 14.9L17.2 16.3C19.6 13.9 19.6 10.1 17.2 7.8Z" /></g></svg>
+
+!define MA_BATTERY_CHARGING_WIRELESS_ALERT(_color)                                 SPRITE_PUT(mdi-battery-charging-wireless-alert, _color)
+!define MA_BATTERY_CHARGING_WIRELESS_ALERT(_color, _scale)                         SPRITE_PUT(mdi-battery-charging-wireless-alert, _color, _scale)
+!define MA_BATTERY_CHARGING_WIRELESS_ALERT(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA BATTERY CHARGING WIRELESS ALERT, mdi-battery-charging-wireless-alert, _color, _scale)
+!define MA_BATTERY_CHARGING_WIRELESS_ALERT(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA BATTERY CHARGING WIRELESS ALERT, mdi-battery-charging-wireless-alert, _color, _scale, _shape)
+!define MA_BATTERY_CHARGING_WIRELESS_ALERT(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA BATTERY CHARGING WIRELESS ALERT, _label, mdi-battery-charging-wireless-alert, _color, _scale, _shape)
+skinparam folderBackgroundColor<<MA BATTERY CHARGING WIRELESS ALERT>> White
+
+sprite mdi-battery-charging-wireless-outline <svg width="48" height="48"><g transform="scale(2)"><path d="M20.07,4.93L18.66,6.34C21.79,9.46 21.79,14.53 18.66,17.66L20.07,19.07C23.97,15.17 23.97,8.84 20.07,4.93M17.24,7.76L15.83,9.17C17.39,10.73 17.39,13.26 15.83,14.83L17.24,16.24C19.58,13.9 19.58,10.1 17.24,7.76M13,4H11V2H5V4H3A1,1 0 0,0 2,5V21A1,1 0 0,0 3,22H13A1,1 0 0,0 14,21V5A1,1 0 0,0 13,4M12,20H4V6H12V20Z" /></g></svg>
+
+!define MA_BATTERY_CHARGING_WIRELESS_OUTLINE(_color)                                 SPRITE_PUT(mdi-battery-charging-wireless-outline, _color)
+!define MA_BATTERY_CHARGING_WIRELESS_OUTLINE(_color, _scale)                         SPRITE_PUT(mdi-battery-charging-wireless-outline, _color, _scale)
+!define MA_BATTERY_CHARGING_WIRELESS_OUTLINE(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA BATTERY CHARGING WIRELESS OUTLINE, mdi-battery-charging-wireless-outline, _color, _scale)
+!define MA_BATTERY_CHARGING_WIRELESS_OUTLINE(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA BATTERY CHARGING WIRELESS OUTLINE, mdi-battery-charging-wireless-outline, _color, _scale, _shape)
+!define MA_BATTERY_CHARGING_WIRELESS_OUTLINE(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA BATTERY CHARGING WIRELESS OUTLINE, _label, mdi-battery-charging-wireless-outline, _color, _scale, _shape)
+skinparam folderBackgroundColor<<MA BATTERY CHARGING WIRELESS OUTLINE>> White
+
+sprite mdi-battery-check <svg width="48" height="48"><g transform="scale(2)"><path d="M16.75 21.16L14 18.16L15.16 17L16.75 18.59L20.34 15L21.5 16.41L16.75 21.16M12 18C12 14.69 14.69 12 18 12V5.33C18 4.6 17.4 4 16.67 4H15V2H9V4H7.33C6.6 4 6 4.6 6 5.33V20.67C6 21.4 6.6 22 7.33 22H13.54C12.58 20.94 12 19.54 12 18Z" /></g></svg>
+
+!define MA_BATTERY_CHECK(_color)                                 SPRITE_PUT(mdi-battery-check, _color)
+!define MA_BATTERY_CHECK(_color, _scale)                         SPRITE_PUT(mdi-battery-check, _color, _scale)
+!define MA_BATTERY_CHECK(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA BATTERY CHECK, mdi-battery-check, _color, _scale)
+!define MA_BATTERY_CHECK(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA BATTERY CHECK, mdi-battery-check, _color, _scale, _shape)
+!define MA_BATTERY_CHECK(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA BATTERY CHECK, _label, mdi-battery-check, _color, _scale, _shape)
+skinparam folderBackgroundColor<<MA BATTERY CHECK>> White
+
+sprite mdi-battery-check-outline <svg width="48" height="48"><g transform="scale(2)"><path d="M16.75 21.16L14 18.16L15.16 17L16.75 18.59L20.34 15L21.5 16.41L16.75 21.16M12.35 20H8V6H16V12.35C16.63 12.13 17.3 12 18 12V5.33C18 4.6 17.4 4 16.67 4H15V2H9V4H7.33C6.6 4 6 4.6 6 5.33V20.67C6 21.4 6.6 22 7.33 22H13.54C13 21.42 12.61 20.75 12.35 20Z" /></g></svg>
+
+!define MA_BATTERY_CHECK_OUTLINE(_color)                                 SPRITE_PUT(mdi-battery-check-outline, _color)
+!define MA_BATTERY_CHECK_OUTLINE(_color, _scale)                         SPRITE_PUT(mdi-battery-check-outline, _color, _scale)
+!define MA_BATTERY_CHECK_OUTLINE(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA BATTERY CHECK OUTLINE, mdi-battery-check-outline, _color, _scale)
+!define MA_BATTERY_CHECK_OUTLINE(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA BATTERY CHECK OUTLINE, mdi-battery-check-outline, _color, _scale, _shape)
+!define MA_BATTERY_CHECK_OUTLINE(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA BATTERY CHECK OUTLINE, _label, mdi-battery-check-outline, _color, _scale, _shape)
+skinparam folderBackgroundColor<<MA BATTERY CHECK OUTLINE>> White
+
+sprite mdi-battery-clock <svg width="48" height="48"><g transform="scale(2)"><path d="M16.5 16.25L19.36 17.94L18.61 19.16L15 17V12H16.5V16.25M23 16C23 19.87 19.87 23 16 23C14.69 23 13.46 22.63 12.41 22H7.33C6.6 22 6 21.4 6 20.67V5.33C6 4.6 6.6 4 7.33 4H9V2H15V4H16.67C17.4 4 18 4.6 18 5.33V9.29C20.89 10.15 23 12.83 23 16M21 16C21 13.24 18.76 11 16 11S11 13.24 11 16 13.24 21 16 21 21 18.76 21 16Z" /></g></svg>
+
+!define MA_BATTERY_CLOCK(_color)                                 SPRITE_PUT(mdi-battery-clock, _color)
+!define MA_BATTERY_CLOCK(_color, _scale)                         SPRITE_PUT(mdi-battery-clock, _color, _scale)
+!define MA_BATTERY_CLOCK(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA BATTERY CLOCK, mdi-battery-clock, _color, _scale)
+!define MA_BATTERY_CLOCK(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA BATTERY CLOCK, mdi-battery-clock, _color, _scale, _shape)
+!define MA_BATTERY_CLOCK(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA BATTERY CLOCK, _label, mdi-battery-clock, _color, _scale, _shape)
+skinparam folderBackgroundColor<<MA BATTERY CLOCK>> White
+
+sprite mdi-battery-clock-outline <svg width="48" height="48"><g transform="scale(2)"><path d="M18 9.29V5.33C18 4.6 17.4 4 16.67 4H15V2H9V4H7.33C6.6 4 6 4.6 6 5.33V20.67C6 21.4 6.6 22 7.33 22H12.41C13.46 22.63 14.69 23 16 23C19.87 23 23 19.87 23 16C23 12.83 20.89 10.15 18 9.29M8 6H16V9C12.13 9 9 12.13 9 16C9 17.5 9.47 18.87 10.26 20H8V6M16 21C13.24 21 11 18.76 11 16S13.24 11 16 11 21 13.24 21 16 18.76 21 16 21M16.5 16.25L19.36 17.94L18.61 19.16L15 17V12H16.5V16.25Z" /></g></svg>
+
+!define MA_BATTERY_CLOCK_OUTLINE(_color)                                 SPRITE_PUT(mdi-battery-clock-outline, _color)
+!define MA_BATTERY_CLOCK_OUTLINE(_color, _scale)                         SPRITE_PUT(mdi-battery-clock-outline, _color, _scale)
+!define MA_BATTERY_CLOCK_OUTLINE(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA BATTERY CLOCK OUTLINE, mdi-battery-clock-outline, _color, _scale)
+!define MA_BATTERY_CLOCK_OUTLINE(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA BATTERY CLOCK OUTLINE, mdi-battery-clock-outline, _color, _scale, _shape)
+!define MA_BATTERY_CLOCK_OUTLINE(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA BATTERY CLOCK OUTLINE, _label, mdi-battery-clock-outline, _color, _scale, _shape)
+skinparam folderBackgroundColor<<MA BATTERY CLOCK OUTLINE>> White
+
+sprite mdi-battery-heart <svg width="48" height="48"><g transform="scale(2)"><path d="M12.67 4H11V2H5V4H3.33A1.34 1.34 0 0 0 2 5.33V20.67A1.34 1.34 0 0 0 3.33 22H12.67A1.34 1.34 0 0 0 14 20.67V5.33A1.34 1.34 0 0 0 12.67 4M19 16.17L18.42 15.64C16.36 13.77 15 12.54 15 11A2.18 2.18 0 0 1 17.2 8.8A2.4 2.4 0 0 1 19 9.63A2.4 2.4 0 0 1 20.8 8.8A2.18 2.18 0 0 1 23 11C23 12.5 21.64 13.74 19.58 15.61Z" /></g></svg>
+
+!define MA_BATTERY_HEART(_color)                                 SPRITE_PUT(mdi-battery-heart, _color)
+!define MA_BATTERY_HEART(_color, _scale)                         SPRITE_PUT(mdi-battery-heart, _color, _scale)
+!define MA_BATTERY_HEART(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA BATTERY HEART, mdi-battery-heart, _color, _scale)
+!define MA_BATTERY_HEART(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA BATTERY HEART, mdi-battery-heart, _color, _scale, _shape)
+!define MA_BATTERY_HEART(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA BATTERY HEART, _label, mdi-battery-heart, _color, _scale, _shape)
+skinparam folderBackgroundColor<<MA BATTERY HEART>> White
+
+sprite mdi-battery-heart-outline <svg width="48" height="48"><g transform="scale(2)"><path d="M19 16.2L18.4 15.7C16.4 13.8 15 12.5 15 11C15 9.8 16 8.8 17.2 8.8C17.9 8.8 18.5 9.1 19 9.6C19.5 9.1 20.1 8.8 20.8 8.8C22 8.8 23 9.8 23 11C23 12.5 21.6 13.7 19.6 15.6L19 16.2M12.7 4H11V2H5V4H3.3C2.6 4 2 4.6 2 5.3V20.6C2 21.4 2.6 22 3.3 22H12.6C13.3 22 13.9 21.4 13.9 20.7V5.3C14 4.6 13.4 4 12.7 4M12 20H4V6H12V20Z" /></g></svg>
+
+!define MA_BATTERY_HEART_OUTLINE(_color)                                 SPRITE_PUT(mdi-battery-heart-outline, _color)
+!define MA_BATTERY_HEART_OUTLINE(_color, _scale)                         SPRITE_PUT(mdi-battery-heart-outline, _color, _scale)
+!define MA_BATTERY_HEART_OUTLINE(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA BATTERY HEART OUTLINE, mdi-battery-heart-outline, _color, _scale)
+!define MA_BATTERY_HEART_OUTLINE(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA BATTERY HEART OUTLINE, mdi-battery-heart-outline, _color, _scale, _shape)
+!define MA_BATTERY_HEART_OUTLINE(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA BATTERY HEART OUTLINE, _label, mdi-battery-heart-outline, _color, _scale, _shape)
+skinparam folderBackgroundColor<<MA BATTERY HEART OUTLINE>> White
+
+sprite mdi-battery-heart-variant <svg width="48" height="48"><g transform="scale(2)"><path d="M16.67 4H15V2H9V4H7.33A1.34 1.34 0 0 0 6 5.33V20.67A1.34 1.34 0 0 0 7.33 22H16.67A1.34 1.34 0 0 0 18 20.67V5.33A1.34 1.34 0 0 0 16.67 4M12.58 15.64L12 16.17L11.42 15.64C9.36 13.77 8 12.54 8 11A2.18 2.18 0 0 1 10.2 8.8A2.4 2.4 0 0 1 12 9.63A2.4 2.4 0 0 1 13.8 8.8A2.18 2.18 0 0 1 16 11C16 12.54 14.64 13.77 12.58 15.64Z" /></g></svg>
+
+!define MA_BATTERY_HEART_VARIANT(_color)                                 SPRITE_PUT(mdi-battery-heart-variant, _color)
+!define MA_BATTERY_HEART_VARIANT(_color, _scale)                         SPRITE_PUT(mdi-battery-heart-variant, _color, _scale)
+!define MA_BATTERY_HEART_VARIANT(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA BATTERY HEART VARIANT, mdi-battery-heart-variant, _color, _scale)
+!define MA_BATTERY_HEART_VARIANT(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA BATTERY HEART VARIANT, mdi-battery-heart-variant, _color, _scale, _shape)
+!define MA_BATTERY_HEART_VARIANT(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA BATTERY HEART VARIANT, _label, mdi-battery-heart-variant, _color, _scale, _shape)
+skinparam folderBackgroundColor<<MA BATTERY HEART VARIANT>> White
+
+sprite mdi-battery-high <svg width="48" height="48"><g transform="scale(2)"><path d="M16 20H8V6H16M16.67 4H15V2H9V4H7.33C6.6 4 6 4.6 6 5.33V20.67C6 21.4 6.6 22 7.33 22H16.67C17.41 22 18 21.41 18 20.67V5.33C18 4.6 17.4 4 16.67 4M15 16H9V19H15V16M15 7H9V10H15V7M15 11.5H9V14.5H15V11.5Z" /></g></svg>
+
+!define MA_BATTERY_HIGH(_color)                                 SPRITE_PUT(mdi-battery-high, _color)
+!define MA_BATTERY_HIGH(_color, _scale)                         SPRITE_PUT(mdi-battery-high, _color, _scale)
+!define MA_BATTERY_HIGH(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA BATTERY HIGH, mdi-battery-high, _color, _scale)
+!define MA_BATTERY_HIGH(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA BATTERY HIGH, mdi-battery-high, _color, _scale, _shape)
+!define MA_BATTERY_HIGH(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA BATTERY HIGH, _label, mdi-battery-high, _color, _scale, _shape)
+skinparam folderBackgroundColor<<MA BATTERY HIGH>> White
+
+sprite mdi-battery-lock <svg width="48" height="48"><g transform="scale(2)"><path d="M19.8 16V14.5C19.8 13.1 18.4 12 17 12S14.2 13.1 14.2 14.5V16C13.6 16 13 16.6 13 17.2V20.7C13 21.4 13.6 22 14.2 22H19.7C20.4 22 21 21.4 21 20.8V17.3C21 16.6 20.4 16 19.8 16M18.5 16H15.5V14.5C15.5 13.7 16.2 13.2 17 13.2S18.5 13.7 18.5 14.5V16M11.27 22H5.33C4.6 22 4 21.4 4 20.67V5.33C4 4.6 4.6 4 5.33 4H7V2H13V4H14.67C15.4 4 16 4.6 16 5.33V10.11C13.86 10.55 12.2 12.38 12.2 14.5V14.74C11.5 15.34 11 16.24 11 17.2V20.7C11 21.16 11.1 21.6 11.27 22Z" /></g></svg>
+
+!define MA_BATTERY_LOCK(_color)                                 SPRITE_PUT(mdi-battery-lock, _color)
+!define MA_BATTERY_LOCK(_color, _scale)                         SPRITE_PUT(mdi-battery-lock, _color, _scale)
+!define MA_BATTERY_LOCK(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA BATTERY LOCK, mdi-battery-lock, _color, _scale)
+!define MA_BATTERY_LOCK(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA BATTERY LOCK, mdi-battery-lock, _color, _scale, _shape)
+!define MA_BATTERY_LOCK(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA BATTERY LOCK, _label, mdi-battery-lock, _color, _scale, _shape)
+skinparam folderBackgroundColor<<MA BATTERY LOCK>> White
+
+sprite mdi-battery-lock-open <svg width="48" height="48"><g transform="scale(2)"><path d="M19.8 16H15.5V13.5C15.5 12.7 16.2 12.2 17 12.2S18.5 12.7 18.5 13.5V14H19.8V13.5C19.8 12.1 18.4 11 17 11S14.2 12.1 14.2 13.5V16C13.6 16 13 16.6 13 17.2V20.7C13 21.4 13.6 22 14.2 22H19.7C20.4 22 21 21.4 21 20.8V17.3C21 16.6 20.4 16 19.8 16M11.27 22H5.33C4.6 22 4 21.4 4 20.67V5.33C4 4.6 4.6 4 5.33 4H7V2H13V4H14.67C15.4 4 16 4.6 16 5.33V9.11C13.86 9.55 12.2 11.38 12.2 13.5V14.74C11.5 15.34 11 16.24 11 17.2V20.7C11 20.93 11.03 21.15 11.07 21.37L11.08 21.39C11.12 21.6 11.19 21.8 11.27 22Z" /></g></svg>
+
+!define MA_BATTERY_LOCK_OPEN(_color)                                 SPRITE_PUT(mdi-battery-lock-open, _color)
+!define MA_BATTERY_LOCK_OPEN(_color, _scale)                         SPRITE_PUT(mdi-battery-lock-open, _color, _scale)
+!define MA_BATTERY_LOCK_OPEN(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA BATTERY LOCK OPEN, mdi-battery-lock-open, _color, _scale)
+!define MA_BATTERY_LOCK_OPEN(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA BATTERY LOCK OPEN, mdi-battery-lock-open, _color, _scale, _shape)
+!define MA_BATTERY_LOCK_OPEN(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA BATTERY LOCK OPEN, _label, mdi-battery-lock-open, _color, _scale, _shape)
+skinparam folderBackgroundColor<<MA BATTERY LOCK OPEN>> White
+
+sprite mdi-battery-low <svg width="48" height="48"><g transform="scale(2)"><path d="M16 20H8V6H16M16.67 4H15V2H9V4H7.33C6.6 4 6 4.6 6 5.33V20.67C6 21.4 6.6 22 7.33 22H16.67C17.41 22 18 21.41 18 20.67V5.33C18 4.6 17.4 4 16.67 4M15 16H9V19H15V16" /></g></svg>
+
+!define MA_BATTERY_LOW(_color)                                 SPRITE_PUT(mdi-battery-low, _color)
+!define MA_BATTERY_LOW(_color, _scale)                         SPRITE_PUT(mdi-battery-low, _color, _scale)
+!define MA_BATTERY_LOW(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA BATTERY LOW, mdi-battery-low, _color, _scale)
+!define MA_BATTERY_LOW(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA BATTERY LOW, mdi-battery-low, _color, _scale, _shape)
+!define MA_BATTERY_LOW(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA BATTERY LOW, _label, mdi-battery-low, _color, _scale, _shape)
+skinparam folderBackgroundColor<<MA BATTERY LOW>> White
+
+sprite mdi-battery-medium <svg width="48" height="48"><g transform="scale(2)"><path d="M16 20H8V6H16M16.67 4H15V2H9V4H7.33C6.6 4 6 4.6 6 5.33V20.67C6 21.4 6.6 22 7.33 22H16.67C17.41 22 18 21.41 18 20.67V5.33C18 4.6 17.4 4 16.67 4M15 16H9V19H15V16M15 11.5H9V14.5H15V11.5Z" /></g></svg>
+
+!define MA_BATTERY_MEDIUM(_color)                                 SPRITE_PUT(mdi-battery-medium, _color)
+!define MA_BATTERY_MEDIUM(_color, _scale)                         SPRITE_PUT(mdi-battery-medium, _color, _scale)
+!define MA_BATTERY_MEDIUM(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA BATTERY MEDIUM, mdi-battery-medium, _color, _scale)
+!define MA_BATTERY_MEDIUM(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA BATTERY MEDIUM, mdi-battery-medium, _color, _scale, _shape)
+!define MA_BATTERY_MEDIUM(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA BATTERY MEDIUM, _label, mdi-battery-medium, _color, _scale, _shape)
+skinparam folderBackgroundColor<<MA BATTERY MEDIUM>> White
+
+sprite mdi-battery-minus <svg width="48" height="48"><g transform="scale(2)"><path d="M13.54 22H7.33C6.6 22 6 21.4 6 20.67V5.33C6 4.6 6.6 4 7.33 4H9V2H15V4H16.67C17.4 4 18 4.6 18 5.33V12C14.69 12 12 14.69 12 18C12 19.54 12.58 20.94 13.54 22M22 17V19H14V17H22Z" /></g></svg>
+
+!define MA_BATTERY_MINUS(_color)                                 SPRITE_PUT(mdi-battery-minus, _color)
+!define MA_BATTERY_MINUS(_color, _scale)                         SPRITE_PUT(mdi-battery-minus, _color, _scale)
+!define MA_BATTERY_MINUS(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA BATTERY MINUS, mdi-battery-minus, _color, _scale)
+!define MA_BATTERY_MINUS(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA BATTERY MINUS, mdi-battery-minus, _color, _scale, _shape)
+!define MA_BATTERY_MINUS(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA BATTERY MINUS, _label, mdi-battery-minus, _color, _scale, _shape)
+skinparam folderBackgroundColor<<MA BATTERY MINUS>> White
+
+sprite mdi-battery-minus-outline <svg width="48" height="48"><g transform="scale(2)"><path d="M13.54 22H7.33C6.6 22 6 21.4 6 20.67V5.33C6 4.6 6.6 4 7.33 4H9V2H15V4H16.67C17.4 4 18 4.6 18 5.33V12C17.3 12 16.63 12.13 16 12.35V6H8V20H12.35C12.61 20.75 13 21.42 13.54 22M22 17V19H14V17H22Z" /></g></svg>
+
+!define MA_BATTERY_MINUS_OUTLINE(_color)                                 SPRITE_PUT(mdi-battery-minus-outline, _color)
+!define MA_BATTERY_MINUS_OUTLINE(_color, _scale)                         SPRITE_PUT(mdi-battery-minus-outline, _color, _scale)
+!define MA_BATTERY_MINUS_OUTLINE(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA BATTERY MINUS OUTLINE, mdi-battery-minus-outline, _color, _scale)
+!define MA_BATTERY_MINUS_OUTLINE(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA BATTERY MINUS OUTLINE, mdi-battery-minus-outline, _color, _scale, _shape)
+!define MA_BATTERY_MINUS_OUTLINE(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA BATTERY MINUS OUTLINE, _label, mdi-battery-minus-outline, _color, _scale, _shape)
+skinparam folderBackgroundColor<<MA BATTERY MINUS OUTLINE>> White
+
+sprite mdi-battery-minus-variant <svg width="48" height="48"><g transform="scale(2)"><path d="M16.67,4C17.4,4 18,4.6 18,5.33V20.67A1.33,1.33 0 0,1 16.67,22H7.33C6.6,22 6,21.4 6,20.67V5.33A1.33,1.33 0 0,1 7.33,4H9V2H15V4H16.67M8,12V14H16V12" /></g></svg>
+
+!define MA_BATTERY_MINUS_VARIANT(_color)                                 SPRITE_PUT(mdi-battery-minus-variant, _color)
+!define MA_BATTERY_MINUS_VARIANT(_color, _scale)                         SPRITE_PUT(mdi-battery-minus-variant, _color, _scale)
+!define MA_BATTERY_MINUS_VARIANT(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA BATTERY MINUS VARIANT, mdi-battery-minus-variant, _color, _scale)
+!define MA_BATTERY_MINUS_VARIANT(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA BATTERY MINUS VARIANT, mdi-battery-minus-variant, _color, _scale, _shape)
+!define MA_BATTERY_MINUS_VARIANT(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA BATTERY MINUS VARIANT, _label, mdi-battery-minus-variant, _color, _scale, _shape)
+skinparam folderBackgroundColor<<MA BATTERY MINUS VARIANT>> White
+
+sprite mdi-battery-negative <svg width="48" height="48"><g transform="scale(2)"><path d="M11.67,4A1.33,1.33 0 0,1 13,5.33V20.67C13,21.4 12.4,22 11.67,22H2.33C1.6,22 1,21.4 1,20.67V5.33A1.33,1.33 0 0,1 2.33,4H4V2H10V4H11.67M15,12H23V14H15V12M3,13H11V6H3V13Z" /></g></svg>
+
+!define MA_BATTERY_NEGATIVE(_color)                                 SPRITE_PUT(mdi-battery-negative, _color)
+!define MA_BATTERY_NEGATIVE(_color, _scale)                         SPRITE_PUT(mdi-battery-negative, _color, _scale)
+!define MA_BATTERY_NEGATIVE(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA BATTERY NEGATIVE, mdi-battery-negative, _color, _scale)
+!define MA_BATTERY_NEGATIVE(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA BATTERY NEGATIVE, mdi-battery-negative, _color, _scale, _shape)
+!define MA_BATTERY_NEGATIVE(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA BATTERY NEGATIVE, _label, mdi-battery-negative, _color, _scale, _shape)
+skinparam folderBackgroundColor<<MA BATTERY NEGATIVE>> White
+
+sprite mdi-battery-off <svg width="48" height="48"><g transform="scale(2)"><path d="M18 14.8L7.21 4H9V2H15V4H16.67A1.34 1.34 0 0 1 18 5.33M18 17.35L3.38 2.73L2.11 4L6 7.89V20.67A1.34 1.34 0 0 0 7.33 22H16.67A1.34 1.34 0 0 0 18 20.67V19.89L20.84 22.73L22.11 21.46Z" /></g></svg>
+
+!define MA_BATTERY_OFF(_color)                                 SPRITE_PUT(mdi-battery-off, _color)
+!define MA_BATTERY_OFF(_color, _scale)                         SPRITE_PUT(mdi-battery-off, _color, _scale)
+!define MA_BATTERY_OFF(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA BATTERY OFF, mdi-battery-off, _color, _scale)
+!define MA_BATTERY_OFF(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA BATTERY OFF, mdi-battery-off, _color, _scale, _shape)
+!define MA_BATTERY_OFF(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA BATTERY OFF, _label, mdi-battery-off, _color, _scale, _shape)
+skinparam folderBackgroundColor<<MA BATTERY OFF>> White
+
+sprite mdi-battery-off-outline <svg width="48" height="48"><g transform="scale(2)"><path d="M18 17.35L3.38 2.73L2.11 4L6 7.89V20.67A1.34 1.34 0 0 0 7.33 22H16.67A1.34 1.34 0 0 0 18 20.67V19.89L20.84 22.73L22.11 21.46M16 20H8V9.89L16 17.89M16 6V12.8L18 14.8V5.33A1.34 1.34 0 0 0 16.67 4H15V2H9V4H7.21L9.21 6Z" /></g></svg>
+
+!define MA_BATTERY_OFF_OUTLINE(_color)                                 SPRITE_PUT(mdi-battery-off-outline, _color)
+!define MA_BATTERY_OFF_OUTLINE(_color, _scale)                         SPRITE_PUT(mdi-battery-off-outline, _color, _scale)
+!define MA_BATTERY_OFF_OUTLINE(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA BATTERY OFF OUTLINE, mdi-battery-off-outline, _color, _scale)
+!define MA_BATTERY_OFF_OUTLINE(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA BATTERY OFF OUTLINE, mdi-battery-off-outline, _color, _scale, _shape)
+!define MA_BATTERY_OFF_OUTLINE(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA BATTERY OFF OUTLINE, _label, mdi-battery-off-outline, _color, _scale, _shape)
+skinparam folderBackgroundColor<<MA BATTERY OFF OUTLINE>> White
+
+sprite mdi-battery-outline <svg width="48" height="48"><g transform="scale(2)"><path d="M16,20H8V6H16M16.67,4H15V2H9V4H7.33A1.33,1.33 0 0,0 6,5.33V20.67C6,21.4 6.6,22 7.33,22H16.67A1.33,1.33 0 0,0 18,20.67V5.33C18,4.6 17.4,4 16.67,4Z" /></g></svg>
+
+!define MA_BATTERY_OUTLINE(_color)                                 SPRITE_PUT(mdi-battery-outline, _color)
+!define MA_BATTERY_OUTLINE(_color, _scale)                         SPRITE_PUT(mdi-battery-outline, _color, _scale)
+!define MA_BATTERY_OUTLINE(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA BATTERY OUTLINE, mdi-battery-outline, _color, _scale)
+!define MA_BATTERY_OUTLINE(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA BATTERY OUTLINE, mdi-battery-outline, _color, _scale, _shape)
+!define MA_BATTERY_OUTLINE(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA BATTERY OUTLINE, _label, mdi-battery-outline, _color, _scale, _shape)
+skinparam folderBackgroundColor<<MA BATTERY OUTLINE>> White
+
+sprite mdi-battery-plus <svg width="48" height="48"><g transform="scale(2)"><path d="M13.54 22H7.33C6.6 22 6 21.4 6 20.67V5.33C6 4.6 6.6 4 7.33 4H9V2H15V4H16.67C17.4 4 18 4.6 18 5.33V12C14.69 12 12 14.69 12 18C12 19.54 12.58 20.94 13.54 22M22 17V19H19V22H17V19H14V17H17V14H19V17H22Z" /></g></svg>
+
+!define MA_BATTERY_PLUS(_color)                                 SPRITE_PUT(mdi-battery-plus, _color)
+!define MA_BATTERY_PLUS(_color, _scale)                         SPRITE_PUT(mdi-battery-plus, _color, _scale)
+!define MA_BATTERY_PLUS(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA BATTERY PLUS, mdi-battery-plus, _color, _scale)
+!define MA_BATTERY_PLUS(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA BATTERY PLUS, mdi-battery-plus, _color, _scale, _shape)
+!define MA_BATTERY_PLUS(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA BATTERY PLUS, _label, mdi-battery-plus, _color, _scale, _shape)
+skinparam folderBackgroundColor<<MA BATTERY PLUS>> White
+
+sprite mdi-battery-plus-outline <svg width="48" height="48"><g transform="scale(2)"><path d="M13.54 22H7.33C6.6 22 6 21.4 6 20.67V5.33C6 4.6 6.6 4 7.33 4H9V2H15V4H16.67C17.4 4 18 4.6 18 5.33V12C17.3 12 16.63 12.13 16 12.35V6H8V20H12.35C12.61 20.75 13 21.42 13.54 22M22 17V19H19V22H17V19H14V17H17V14H19V17H22Z" /></g></svg>
+
+!define MA_BATTERY_PLUS_OUTLINE(_color)                                 SPRITE_PUT(mdi-battery-plus-outline, _color)
+!define MA_BATTERY_PLUS_OUTLINE(_color, _scale)                         SPRITE_PUT(mdi-battery-plus-outline, _color, _scale)
+!define MA_BATTERY_PLUS_OUTLINE(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA BATTERY PLUS OUTLINE, mdi-battery-plus-outline, _color, _scale)
+!define MA_BATTERY_PLUS_OUTLINE(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA BATTERY PLUS OUTLINE, mdi-battery-plus-outline, _color, _scale, _shape)
+!define MA_BATTERY_PLUS_OUTLINE(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA BATTERY PLUS OUTLINE, _label, mdi-battery-plus-outline, _color, _scale, _shape)
+skinparam folderBackgroundColor<<MA BATTERY PLUS OUTLINE>> White
+
+sprite mdi-battery-plus-variant <svg width="48" height="48"><g transform="scale(2)"><path d="M16.67,4C17.4,4 18,4.6 18,5.33V20.67A1.33,1.33 0 0,1 16.67,22H7.33C6.6,22 6,21.4 6,20.67V5.33A1.33,1.33 0 0,1 7.33,4H9V2H15V4H16.67M16,14V12H13V9H11V12H8V14H11V17H13V14H16Z" /></g></svg>
+
+!define MA_BATTERY_PLUS_VARIANT(_color)                                 SPRITE_PUT(mdi-battery-plus-variant, _color)
+!define MA_BATTERY_PLUS_VARIANT(_color, _scale)                         SPRITE_PUT(mdi-battery-plus-variant, _color, _scale)
+!define MA_BATTERY_PLUS_VARIANT(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA BATTERY PLUS VARIANT, mdi-battery-plus-variant, _color, _scale)
+!define MA_BATTERY_PLUS_VARIANT(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA BATTERY PLUS VARIANT, mdi-battery-plus-variant, _color, _scale, _shape)
+!define MA_BATTERY_PLUS_VARIANT(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA BATTERY PLUS VARIANT, _label, mdi-battery-plus-variant, _color, _scale, _shape)
+skinparam folderBackgroundColor<<MA BATTERY PLUS VARIANT>> White
+
+sprite mdi-battery-positive <svg width="48" height="48"><g transform="scale(2)"><path d="M11.67,4A1.33,1.33 0 0,1 13,5.33V20.67C13,21.4 12.4,22 11.67,22H2.33C1.6,22 1,21.4 1,20.67V5.33A1.33,1.33 0 0,1 2.33,4H4V2H10V4H11.67M23,14H20V17H18V14H15V12H18V9H20V12H23V14M3,13H11V6H3V13Z" /></g></svg>
+
+!define MA_BATTERY_POSITIVE(_color)                                 SPRITE_PUT(mdi-battery-positive, _color)
+!define MA_BATTERY_POSITIVE(_color, _scale)                         SPRITE_PUT(mdi-battery-positive, _color, _scale)
+!define MA_BATTERY_POSITIVE(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA BATTERY POSITIVE, mdi-battery-positive, _color, _scale)
+!define MA_BATTERY_POSITIVE(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA BATTERY POSITIVE, mdi-battery-positive, _color, _scale, _shape)
+!define MA_BATTERY_POSITIVE(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA BATTERY POSITIVE, _label, mdi-battery-positive, _color, _scale, _shape)
+skinparam folderBackgroundColor<<MA BATTERY POSITIVE>> White
+
+sprite mdi-battery-remove <svg width="48" height="48"><g transform="scale(2)"><path d="M13.54 22H7.33C6.6 22 6 21.4 6 20.67V5.33C6 4.6 6.6 4 7.33 4H9V2H15V4H16.67C17.4 4 18 4.6 18 5.33V12C14.69 12 12 14.69 12 18C12 19.54 12.58 20.94 13.54 22M21.54 20.12L20.12 21.54L18 19.41L15.88 21.54L14.47 20.12L16.59 18L14.47 15.88L15.88 14.47L18 16.59L20.12 14.47L21.54 15.88L19.41 18L21.54 20.12Z" /></g></svg>
+
+!define MA_BATTERY_REMOVE(_color)                                 SPRITE_PUT(mdi-battery-remove, _color)
+!define MA_BATTERY_REMOVE(_color, _scale)                         SPRITE_PUT(mdi-battery-remove, _color, _scale)
+!define MA_BATTERY_REMOVE(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA BATTERY REMOVE, mdi-battery-remove, _color, _scale)
+!define MA_BATTERY_REMOVE(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA BATTERY REMOVE, mdi-battery-remove, _color, _scale, _shape)
+!define MA_BATTERY_REMOVE(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA BATTERY REMOVE, _label, mdi-battery-remove, _color, _scale, _shape)
+skinparam folderBackgroundColor<<MA BATTERY REMOVE>> White
+
+sprite mdi-battery-remove-outline <svg width="48" height="48"><g transform="scale(2)"><path d="M13.54 22H7.33C6.6 22 6 21.4 6 20.67V5.33C6 4.6 6.6 4 7.33 4H9V2H15V4H16.67C17.4 4 18 4.6 18 5.33V12C17.3 12 16.63 12.13 16 12.35V6H8V20H12.35C12.61 20.75 13 21.42 13.54 22M21.54 20.12L20.12 21.54L18 19.41L15.88 21.54L14.47 20.12L16.59 18L14.47 15.88L15.88 14.47L18 16.59L20.12 14.47L21.54 15.88L19.41 18L21.54 20.12Z" /></g></svg>
+
+!define MA_BATTERY_REMOVE_OUTLINE(_color)                                 SPRITE_PUT(mdi-battery-remove-outline, _color)
+!define MA_BATTERY_REMOVE_OUTLINE(_color, _scale)                         SPRITE_PUT(mdi-battery-remove-outline, _color, _scale)
+!define MA_BATTERY_REMOVE_OUTLINE(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA BATTERY REMOVE OUTLINE, mdi-battery-remove-outline, _color, _scale)
+!define MA_BATTERY_REMOVE_OUTLINE(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA BATTERY REMOVE OUTLINE, mdi-battery-remove-outline, _color, _scale, _shape)
+!define MA_BATTERY_REMOVE_OUTLINE(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA BATTERY REMOVE OUTLINE, _label, mdi-battery-remove-outline, _color, _scale, _shape)
+skinparam folderBackgroundColor<<MA BATTERY REMOVE OUTLINE>> White
+
+sprite mdi-battery-sync <svg width="48" height="48"><g transform="scale(2)"><path d="M13.54 22H7.33C6.6 22 6 21.4 6 20.67V5.33C6 4.6 6.6 4 7.33 4H9V2H15V4H16.67C17.4 4 18 4.6 18 5.33V12C14.69 12 12 14.69 12 18C12 19.54 12.58 20.94 13.54 22M18 13L20.25 15.25L18 17.5V16C16.15 16 14.94 17.96 15.76 19.62L14.67 20.71C12.91 18.05 14.81 14.5 18 14.5V13M18 24L15.75 21.75L18 19.5V21C19.85 21 21.06 19.04 20.24 17.38L21.33 16.29C23.09 18.95 21.19 22.5 18 22.5V24" /></g></svg>
+
+!define MA_BATTERY_SYNC(_color)                                 SPRITE_PUT(mdi-battery-sync, _color)
+!define MA_BATTERY_SYNC(_color, _scale)                         SPRITE_PUT(mdi-battery-sync, _color, _scale)
+!define MA_BATTERY_SYNC(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA BATTERY SYNC, mdi-battery-sync, _color, _scale)
+!define MA_BATTERY_SYNC(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA BATTERY SYNC, mdi-battery-sync, _color, _scale, _shape)
+!define MA_BATTERY_SYNC(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA BATTERY SYNC, _label, mdi-battery-sync, _color, _scale, _shape)
+skinparam folderBackgroundColor<<MA BATTERY SYNC>> White
+
+sprite mdi-battery-sync-outline <svg width="48" height="48"><g transform="scale(2)"><path d="M13.54 22H7.33C6.6 22 6 21.4 6 20.67V5.33C6 4.6 6.6 4 7.33 4H9V2H15V4H16.67C17.4 4 18 4.6 18 5.33V12C17.3 12 16.63 12.13 16 12.35V6H8V20H12.35C12.61 20.75 13 21.42 13.54 22M18 13L20.25 15.25L18 17.5V16C16.15 16 14.94 17.96 15.76 19.62L14.67 20.71C12.91 18.05 14.81 14.5 18 14.5V13M18 24L15.75 21.75L18 19.5V21C19.85 21 21.06 19.04 20.24 17.38L21.33 16.29C23.09 18.95 21.19 22.5 18 22.5V24" /></g></svg>
+
+!define MA_BATTERY_SYNC_OUTLINE(_color)                                 SPRITE_PUT(mdi-battery-sync-outline, _color)
+!define MA_BATTERY_SYNC_OUTLINE(_color, _scale)                         SPRITE_PUT(mdi-battery-sync-outline, _color, _scale)
+!define MA_BATTERY_SYNC_OUTLINE(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA BATTERY SYNC OUTLINE, mdi-battery-sync-outline, _color, _scale)
+!define MA_BATTERY_SYNC_OUTLINE(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA BATTERY SYNC OUTLINE, mdi-battery-sync-outline, _color, _scale, _shape)
+!define MA_BATTERY_SYNC_OUTLINE(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA BATTERY SYNC OUTLINE, _label, mdi-battery-sync-outline, _color, _scale, _shape)
+skinparam folderBackgroundColor<<MA BATTERY SYNC OUTLINE>> White
+
+sprite mdi-battery-unknown <svg width="48" height="48"><g transform="scale(2)"><path d="M15.07,12.25L14.17,13.17C13.63,13.71 13.25,14.18 13.09,15H11.05C11.16,14.1 11.56,13.28 12.17,12.67L13.41,11.41C13.78,11.05 14,10.55 14,10C14,8.89 13.1,8 12,8A2,2 0 0,0 10,10H8A4,4 0 0,1 12,6A4,4 0 0,1 16,10C16,10.88 15.64,11.68 15.07,12.25M13,19H11V17H13M16.67,4H15V2H9V4H7.33A1.33,1.33 0 0,0 6,5.33V20.66C6,21.4 6.6,22 7.33,22H16.67C17.4,22 18,21.4 18,20.66V5.33C18,4.59 17.4,4 16.67,4Z" /></g></svg>
+
+!define MA_BATTERY_UNKNOWN(_color)                                 SPRITE_PUT(mdi-battery-unknown, _color)
+!define MA_BATTERY_UNKNOWN(_color, _scale)                         SPRITE_PUT(mdi-battery-unknown, _color, _scale)
+!define MA_BATTERY_UNKNOWN(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA BATTERY UNKNOWN, mdi-battery-unknown, _color, _scale)
+!define MA_BATTERY_UNKNOWN(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA BATTERY UNKNOWN, mdi-battery-unknown, _color, _scale, _shape)
+!define MA_BATTERY_UNKNOWN(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA BATTERY UNKNOWN, _label, mdi-battery-unknown, _color, _scale, _shape)
+skinparam folderBackgroundColor<<MA BATTERY UNKNOWN>> White
+
+sprite mdi-battery-unknown-bluetooth <svg width="48" height="48"><g transform="scale(2)"><path d="M5,2V4H3.33A1.33,1.33 0 0,0 2,5.33V20.66C2,21.4 2.6,22 3.33,22H12.67C13.4,22 14,21.4 14,20.66V5.33C14,4.59 13.4,4 12.67,4H11V2H5M8,6A4,4 0 0,1 12,10C12,10.88 11.64,11.68 11.07,12.25L10.17,13.17C9.63,13.71 9.25,14.18 9.09,15H7.05C7.16,14.1 7.56,13.28 8.17,12.67L9.41,11.41C9.78,11.05 10,10.55 10,10C10,8.89 9.1,8 8,8A2,2 0 0,0 6,10H4A4,4 0 0,1 8,6M19,8V11.79L16.71,9.5L16,10.21L18.79,13L16,15.79L16.71,16.5L19,14.21V18H19.5L22.35,15.14L20.21,13L22.35,10.85L19.5,8H19M20,9.91L20.94,10.85L20,11.79V9.91M20,14.21L20.94,15.14L20,16.08V14.21M7,17H9V19H7V17Z" /></g></svg>
+
+!define MA_BATTERY_UNKNOWN_BLUETOOTH(_color)                                 SPRITE_PUT(mdi-battery-unknown-bluetooth, _color)
+!define MA_BATTERY_UNKNOWN_BLUETOOTH(_color, _scale)                         SPRITE_PUT(mdi-battery-unknown-bluetooth, _color, _scale)
+!define MA_BATTERY_UNKNOWN_BLUETOOTH(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA BATTERY UNKNOWN BLUETOOTH, mdi-battery-unknown-bluetooth, _color, _scale)
+!define MA_BATTERY_UNKNOWN_BLUETOOTH(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA BATTERY UNKNOWN BLUETOOTH, mdi-battery-unknown-bluetooth, _color, _scale, _shape)
+!define MA_BATTERY_UNKNOWN_BLUETOOTH(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA BATTERY UNKNOWN BLUETOOTH, _label, mdi-battery-unknown-bluetooth, _color, _scale, _shape)
+skinparam folderBackgroundColor<<MA BATTERY UNKNOWN BLUETOOTH>> White
+
+sprite mdi-car-battery <svg width="48" height="48"><g transform="scale(2)"><path d="M4,3V6H1V20H23V6H20V3H14V6H10V3H4M3,8H21V18H3V8M15,10V12H13V14H15V16H17V14H19V12H17V10H15M5,12V14H11V12H5Z" /></g></svg>
+
+!define MA_CAR_BATTERY(_color)                                 SPRITE_PUT(mdi-car-battery, _color)
+!define MA_CAR_BATTERY(_color, _scale)                         SPRITE_PUT(mdi-car-battery, _color, _scale)
+!define MA_CAR_BATTERY(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA CAR BATTERY, mdi-car-battery, _color, _scale)
+!define MA_CAR_BATTERY(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA CAR BATTERY, mdi-car-battery, _color, _scale, _shape)
+!define MA_CAR_BATTERY(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA CAR BATTERY, _label, mdi-car-battery, _color, _scale, _shape)
+skinparam folderBackgroundColor<<MA CAR BATTERY>> White
+
+sprite mdi-current-dc <svg width="48" height="48"><g transform="scale(2)"><path d="M2,9V11H22V9H2M2,13V15H7V13H2M9,13V15H15V13H9M17,13V15H22V13H17Z" /></g></svg>
+
+!define MA_CURRENT_DC(_color)                                 SPRITE_PUT(mdi-current-dc, _color)
+!define MA_CURRENT_DC(_color, _scale)                         SPRITE_PUT(mdi-current-dc, _color, _scale)
+!define MA_CURRENT_DC(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA CURRENT DC, mdi-current-dc, _color, _scale)
+!define MA_CURRENT_DC(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA CURRENT DC, mdi-current-dc, _color, _scale, _shape)
+!define MA_CURRENT_DC(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA CURRENT DC, _label, mdi-current-dc, _color, _scale, _shape)
+skinparam folderBackgroundColor<<MA CURRENT DC>> White
+
+sprite mdi-fuel-cell <svg width="48" height="48"><g transform="scale(2)"><path d="M6 3V5H4C2.9 5 2 5.9 2 7V17C2 18.1 2.9 19 4 19V20C4 21.1 4.9 22 6 22H7C8.1 22 9 21.1 9 20V19H15V20C15 21.1 15.9 22 17 22H18C19.1 22 20 21.1 20 20V19C21.1 19 22 18.1 22 17H11V5H8V3H6M16 3V5H13V7H22C22 5.9 21.1 5 20 5H18V3H16M7 7V11H9L6 17V13H4L7 7M13 9V11H22V9H13M13 13V15H22V13H13Z" /></g></svg>
+
+!define MA_FUEL_CELL(_color)                                 SPRITE_PUT(mdi-fuel-cell, _color)
+!define MA_FUEL_CELL(_color, _scale)                         SPRITE_PUT(mdi-fuel-cell, _color, _scale)
+!define MA_FUEL_CELL(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA FUEL CELL, mdi-fuel-cell, _color, _scale)
+!define MA_FUEL_CELL(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA FUEL CELL, mdi-fuel-cell, _color, _scale, _shape)
+!define MA_FUEL_CELL(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA FUEL CELL, _label, mdi-fuel-cell, _color, _scale, _shape)
+skinparam folderBackgroundColor<<MA FUEL CELL>> White
+
+sprite mdi-home-battery <svg width="48" height="48"><g transform="scale(2)"><path d="M12 20L5 20V12H2L12 3L14.78 5.5H14V7.17C12.84 7.58 12 8.7 12 10V20M15 9H16V7.5H20V9H21C21.55 9 22 9.45 22 10V21C22 21.55 21.55 22 21 22H15C14.45 22 14 21.55 14 21V10C14 9.45 14.45 9 15 9M16 11V14H20V11H16Z" /></g></svg>
+
+!define MA_HOME_BATTERY(_color)                                 SPRITE_PUT(mdi-home-battery, _color)
+!define MA_HOME_BATTERY(_color, _scale)                         SPRITE_PUT(mdi-home-battery, _color, _scale)
+!define MA_HOME_BATTERY(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA HOME BATTERY, mdi-home-battery, _color, _scale)
+!define MA_HOME_BATTERY(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA HOME BATTERY, mdi-home-battery, _color, _scale, _shape)
+!define MA_HOME_BATTERY(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA HOME BATTERY, _label, mdi-home-battery, _color, _scale, _shape)
+skinparam folderBackgroundColor<<MA HOME BATTERY>> White
+
+sprite mdi-home-battery-outline <svg width="48" height="48"><g transform="scale(2)"><path d="M15 9H16V7.5H20V9H21C21.55 9 22 9.45 22 10V21C22 21.55 21.55 22 21 22H15C14.45 22 14 21.55 14 21V10C14 9.45 14.45 9 15 9M16 11V14H20V11H16M12 5.69L7 10.19V18H12V20H5V12H2L12 3L14.78 5.5H14V7.17L13.76 7.27L12 5.69Z" /></g></svg>
+
+!define MA_HOME_BATTERY_OUTLINE(_color)                                 SPRITE_PUT(mdi-home-battery-outline, _color)
+!define MA_HOME_BATTERY_OUTLINE(_color, _scale)                         SPRITE_PUT(mdi-home-battery-outline, _color, _scale)
+!define MA_HOME_BATTERY_OUTLINE(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA HOME BATTERY OUTLINE, mdi-home-battery-outline, _color, _scale)
+!define MA_HOME_BATTERY_OUTLINE(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA HOME BATTERY OUTLINE, mdi-home-battery-outline, _color, _scale, _shape)
+!define MA_HOME_BATTERY_OUTLINE(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA HOME BATTERY OUTLINE, _label, mdi-home-battery-outline, _color, _scale, _shape)
+skinparam folderBackgroundColor<<MA HOME BATTERY OUTLINE>> White
+
+sprite mdi-microsoft-xbox-controller-battery-alert <svg width="48" height="48"><g transform="scale(2)"><path d="M21,19V7H15V19H21M21.67,5C22.4,5 23,5.6 23,6.33V19.67A1.33,1.33 0 0,1 21.67,21H14.33C13.6,21 13,20.4 13,19.67V16.75H7.75C5.75,16.75 5,19 3,20C1,20 -0.5,17 3.5,8.5H3.75L4.19,7.67C4.19,7.67 7,6 8.33,7.23H13V6.33A1.33,1.33 0 0,1 14.33,5H16V3H20V5H21.67M11,8A1,1 0 0,0 10,9A1,1 0 0,0 11,10A1,1 0 0,0 12,9A1,1 0 0,0 11,8M17,9H19V14H17V9M17,15H19V17H17V15Z" /></g></svg>
+
+!define MA_MICROSOFT_XBOX_CONTROLLER_BATTERY_ALERT(_color)                                 SPRITE_PUT(mdi-microsoft-xbox-controller-battery-alert, _color)
+!define MA_MICROSOFT_XBOX_CONTROLLER_BATTERY_ALERT(_color, _scale)                         SPRITE_PUT(mdi-microsoft-xbox-controller-battery-alert, _color, _scale)
+!define MA_MICROSOFT_XBOX_CONTROLLER_BATTERY_ALERT(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA MICROSOFT XBOX CONTROLLER BATTERY ALERT, mdi-microsoft-xbox-controller-battery-alert, _color, _scale)
+!define MA_MICROSOFT_XBOX_CONTROLLER_BATTERY_ALERT(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA MICROSOFT XBOX CONTROLLER BATTERY ALERT, mdi-microsoft-xbox-controller-battery-alert, _color, _scale, _shape)
+!define MA_MICROSOFT_XBOX_CONTROLLER_BATTERY_ALERT(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA MICROSOFT XBOX CONTROLLER BATTERY ALERT, _label, mdi-microsoft-xbox-controller-battery-alert, _color, _scale, _shape)
+skinparam folderBackgroundColor<<MA MICROSOFT XBOX CONTROLLER BATTERY ALERT>> White
+
+sprite mdi-microsoft-xbox-controller-battery-charging <svg width="48" height="48"><g transform="scale(2)"><path d="M20,5H21.67C22.4,5 23,5.6 23,6.33V19.67A1.33,1.33 0 0,1 21.67,21H14.33C13.6,21 13,20.4 13,19.67V16.75H7.75C5.75,16.75 5,19 3,20C1,20 -0.5,17 3.5,8.5H3.75L4.19,7.67C4.19,7.67 7,6 8.33,7.23H13V6.33A1.33,1.33 0 0,1 14.33,5H16V3H20V5M21,7H15V19H21V7M15.5,14L18.5,7.5V12H20.5L17.5,18.5V14H15.5M11,8A1,1 0 0,0 10,9A1,1 0 0,0 11,10A1,1 0 0,0 12,9A1,1 0 0,0 11,8Z" /></g></svg>
+
+!define MA_MICROSOFT_XBOX_CONTROLLER_BATTERY_CHARGING(_color)                                 SPRITE_PUT(mdi-microsoft-xbox-controller-battery-charging, _color)
+!define MA_MICROSOFT_XBOX_CONTROLLER_BATTERY_CHARGING(_color, _scale)                         SPRITE_PUT(mdi-microsoft-xbox-controller-battery-charging, _color, _scale)
+!define MA_MICROSOFT_XBOX_CONTROLLER_BATTERY_CHARGING(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA MICROSOFT XBOX CONTROLLER BATTERY CHARGING, mdi-microsoft-xbox-controller-battery-charging, _color, _scale)
+!define MA_MICROSOFT_XBOX_CONTROLLER_BATTERY_CHARGING(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA MICROSOFT XBOX CONTROLLER BATTERY CHARGING, mdi-microsoft-xbox-controller-battery-charging, _color, _scale, _shape)
+!define MA_MICROSOFT_XBOX_CONTROLLER_BATTERY_CHARGING(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA MICROSOFT XBOX CONTROLLER BATTERY CHARGING, _label, mdi-microsoft-xbox-controller-battery-charging, _color, _scale, _shape)
+skinparam folderBackgroundColor<<MA MICROSOFT XBOX CONTROLLER BATTERY CHARGING>> White
+
+sprite mdi-microsoft-xbox-controller-battery-empty <svg width="48" height="48"><g transform="scale(2)"><path d="M21,19V7H15V19H21M21.67,5C22.4,5 23,5.6 23,6.33V19.67A1.33,1.33 0 0,1 21.67,21H14.33C13.6,21 13,20.4 13,19.67V16.75H7.75C5.75,16.75 5,19 3,20C1,20 -0.5,17 3.5,8.5H3.75L4.19,7.67C4.19,7.67 7,6 8.33,7.23H13V6.33A1.33,1.33 0 0,1 14.33,5H16V3H20V5H21.67M11,8A1,1 0 0,0 10,9A1,1 0 0,0 11,10A1,1 0 0,0 12,9A1,1 0 0,0 11,8Z" /></g></svg>
+
+!define MA_MICROSOFT_XBOX_CONTROLLER_BATTERY_EMPTY(_color)                                 SPRITE_PUT(mdi-microsoft-xbox-controller-battery-empty, _color)
+!define MA_MICROSOFT_XBOX_CONTROLLER_BATTERY_EMPTY(_color, _scale)                         SPRITE_PUT(mdi-microsoft-xbox-controller-battery-empty, _color, _scale)
+!define MA_MICROSOFT_XBOX_CONTROLLER_BATTERY_EMPTY(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA MICROSOFT XBOX CONTROLLER BATTERY EMPTY, mdi-microsoft-xbox-controller-battery-empty, _color, _scale)
+!define MA_MICROSOFT_XBOX_CONTROLLER_BATTERY_EMPTY(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA MICROSOFT XBOX CONTROLLER BATTERY EMPTY, mdi-microsoft-xbox-controller-battery-empty, _color, _scale, _shape)
+!define MA_MICROSOFT_XBOX_CONTROLLER_BATTERY_EMPTY(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA MICROSOFT XBOX CONTROLLER BATTERY EMPTY, _label, mdi-microsoft-xbox-controller-battery-empty, _color, _scale, _shape)
+skinparam folderBackgroundColor<<MA MICROSOFT XBOX CONTROLLER BATTERY EMPTY>> White
+
+sprite mdi-microsoft-xbox-controller-battery-full <svg width="48" height="48"><g transform="scale(2)"><path d="M21.67,5C22.4,5 23,5.6 23,6.33V19.67A1.33,1.33 0 0,1 21.67,21H14.33C13.6,21 13,20.4 13,19.67V16.75H7.75C5.75,16.75 5,19 3,20C1,20 -0.5,17 3.5,8.5H3.75L4.19,7.67C4.19,7.67 7,6 8.33,7.23H13V6.33A1.33,1.33 0 0,1 14.33,5H16V3H20V5H21.67M11,8A1,1 0 0,0 10,9A1,1 0 0,0 11,10A1,1 0 0,0 12,9A1,1 0 0,0 11,8Z" /></g></svg>
+
+!define MA_MICROSOFT_XBOX_CONTROLLER_BATTERY_FULL(_color)                                 SPRITE_PUT(mdi-microsoft-xbox-controller-battery-full, _color)
+!define MA_MICROSOFT_XBOX_CONTROLLER_BATTERY_FULL(_color, _scale)                         SPRITE_PUT(mdi-microsoft-xbox-controller-battery-full, _color, _scale)
+!define MA_MICROSOFT_XBOX_CONTROLLER_BATTERY_FULL(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA MICROSOFT XBOX CONTROLLER BATTERY FULL, mdi-microsoft-xbox-controller-battery-full, _color, _scale)
+!define MA_MICROSOFT_XBOX_CONTROLLER_BATTERY_FULL(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA MICROSOFT XBOX CONTROLLER BATTERY FULL, mdi-microsoft-xbox-controller-battery-full, _color, _scale, _shape)
+!define MA_MICROSOFT_XBOX_CONTROLLER_BATTERY_FULL(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA MICROSOFT XBOX CONTROLLER BATTERY FULL, _label, mdi-microsoft-xbox-controller-battery-full, _color, _scale, _shape)
+skinparam folderBackgroundColor<<MA MICROSOFT XBOX CONTROLLER BATTERY FULL>> White
+
+sprite mdi-microsoft-xbox-controller-battery-low <svg width="48" height="48"><g transform="scale(2)"><path d="M21,16V7H15V16H21M21.67,5C22.4,5 23,5.6 23,6.33V19.67A1.33,1.33 0 0,1 21.67,21H14.33C13.6,21 13,20.4 13,19.67V16.75H7.75C5.75,16.75 5,19 3,20C1,20 -0.5,17 3.5,8.5H3.75L4.19,7.67C4.19,7.67 7,6 8.33,7.23H13V6.33A1.33,1.33 0 0,1 14.33,5H16V3H20V5H21.67M11,8A1,1 0 0,0 10,9A1,1 0 0,0 11,10A1,1 0 0,0 12,9A1,1 0 0,0 11,8Z" /></g></svg>
+
+!define MA_MICROSOFT_XBOX_CONTROLLER_BATTERY_LOW(_color)                                 SPRITE_PUT(mdi-microsoft-xbox-controller-battery-low, _color)
+!define MA_MICROSOFT_XBOX_CONTROLLER_BATTERY_LOW(_color, _scale)                         SPRITE_PUT(mdi-microsoft-xbox-controller-battery-low, _color, _scale)
+!define MA_MICROSOFT_XBOX_CONTROLLER_BATTERY_LOW(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA MICROSOFT XBOX CONTROLLER BATTERY LOW, mdi-microsoft-xbox-controller-battery-low, _color, _scale)
+!define MA_MICROSOFT_XBOX_CONTROLLER_BATTERY_LOW(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA MICROSOFT XBOX CONTROLLER BATTERY LOW, mdi-microsoft-xbox-controller-battery-low, _color, _scale, _shape)
+!define MA_MICROSOFT_XBOX_CONTROLLER_BATTERY_LOW(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA MICROSOFT XBOX CONTROLLER BATTERY LOW, _label, mdi-microsoft-xbox-controller-battery-low, _color, _scale, _shape)
+skinparam folderBackgroundColor<<MA MICROSOFT XBOX CONTROLLER BATTERY LOW>> White
+
+sprite mdi-microsoft-xbox-controller-battery-medium <svg width="48" height="48"><g transform="scale(2)"><path d="M21,12V7H15V12H21M21.67,5C22.4,5 23,5.6 23,6.33V19.67A1.33,1.33 0 0,1 21.67,21H14.33C13.6,21 13,20.4 13,19.67V16.75H7.75C5.75,16.75 5,19 3,20C1,20 -0.5,17 3.5,8.5H3.75L4.19,7.67C4.19,7.67 7,6 8.33,7.23H13V6.33A1.33,1.33 0 0,1 14.33,5H16V3H20V5H21.67M11,8A1,1 0 0,0 10,9A1,1 0 0,0 11,10A1,1 0 0,0 12,9A1,1 0 0,0 11,8Z" /></g></svg>
+
+!define MA_MICROSOFT_XBOX_CONTROLLER_BATTERY_MEDIUM(_color)                                 SPRITE_PUT(mdi-microsoft-xbox-controller-battery-medium, _color)
+!define MA_MICROSOFT_XBOX_CONTROLLER_BATTERY_MEDIUM(_color, _scale)                         SPRITE_PUT(mdi-microsoft-xbox-controller-battery-medium, _color, _scale)
+!define MA_MICROSOFT_XBOX_CONTROLLER_BATTERY_MEDIUM(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA MICROSOFT XBOX CONTROLLER BATTERY MEDIUM, mdi-microsoft-xbox-controller-battery-medium, _color, _scale)
+!define MA_MICROSOFT_XBOX_CONTROLLER_BATTERY_MEDIUM(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA MICROSOFT XBOX CONTROLLER BATTERY MEDIUM, mdi-microsoft-xbox-controller-battery-medium, _color, _scale, _shape)
+!define MA_MICROSOFT_XBOX_CONTROLLER_BATTERY_MEDIUM(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA MICROSOFT XBOX CONTROLLER BATTERY MEDIUM, _label, mdi-microsoft-xbox-controller-battery-medium, _color, _scale, _shape)
+skinparam folderBackgroundColor<<MA MICROSOFT XBOX CONTROLLER BATTERY MEDIUM>> White
+
+sprite mdi-microsoft-xbox-controller-battery-unknown <svg width="48" height="48"><g transform="scale(2)"><path d="M21.67,5C22.4,5 23,5.6 23,6.33V19.67A1.33,1.33 0 0,1 21.67,21H14.33C13.6,21 13,20.4 13,19.67V16.75H7.75C5.75,16.75 5,19 3,20C1,20 -0.5,17 3.5,8.5H3.75L4.19,7.67C4.19,7.67 7,6 8.33,7.23H13V6.33A1.33,1.33 0 0,1 14.33,5H16V3H20V5H21.67M11,8A1,1 0 0,0 10,9A1,1 0 0,0 11,10A1,1 0 0,0 12,9A1,1 0 0,0 11,8M18.19,8C17.32,8 16.62,8.2 16.08,8.59C15.56,9 15.3,9.57 15.31,10.36L15.32,10.39H17.25C17.26,10.09 17.35,9.86 17.53,9.7C17.71,9.55 17.93,9.47 18.19,9.47C18.5,9.47 18.76,9.57 18.94,9.75C19.12,9.94 19.2,10.2 19.2,10.5C19.2,10.82 19.13,11.09 18.97,11.32C18.83,11.55 18.62,11.75 18.36,11.91C17.85,12.25 17.5,12.55 17.31,12.82C17.11,13.08 17,13.5 17,14H19C19,13.69 19.04,13.44 19.13,13.26C19.22,13.08 19.39,12.9 19.64,12.74C20.09,12.5 20.46,12.21 20.75,11.81C21.04,11.41 21.19,11 21.19,10.5C21.19,9.74 20.92,9.13 20.38,8.68C19.85,8.23 19.12,8 18.19,8M17,15V17H19V15H17Z" /></g></svg>
+
+!define MA_MICROSOFT_XBOX_CONTROLLER_BATTERY_UNKNOWN(_color)                                 SPRITE_PUT(mdi-microsoft-xbox-controller-battery-unknown, _color)
+!define MA_MICROSOFT_XBOX_CONTROLLER_BATTERY_UNKNOWN(_color, _scale)                         SPRITE_PUT(mdi-microsoft-xbox-controller-battery-unknown, _color, _scale)
+!define MA_MICROSOFT_XBOX_CONTROLLER_BATTERY_UNKNOWN(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA MICROSOFT XBOX CONTROLLER BATTERY UNKNOWN, mdi-microsoft-xbox-controller-battery-unknown, _color, _scale)
+!define MA_MICROSOFT_XBOX_CONTROLLER_BATTERY_UNKNOWN(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA MICROSOFT XBOX CONTROLLER BATTERY UNKNOWN, mdi-microsoft-xbox-controller-battery-unknown, _color, _scale, _shape)
+!define MA_MICROSOFT_XBOX_CONTROLLER_BATTERY_UNKNOWN(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA MICROSOFT XBOX CONTROLLER BATTERY UNKNOWN, _label, mdi-microsoft-xbox-controller-battery-unknown, _color, _scale, _shape)
+skinparam folderBackgroundColor<<MA MICROSOFT XBOX CONTROLLER BATTERY UNKNOWN>> White
+
+sprite mdi-power-plug-battery <svg width="48" height="48"><g transform="scale(2)"><path d="M12 10C12 9.35 11.57 8.7 11 8.32C10.7 8.12 10.35 8 10 8V4H8V8H4V4H2V8C1 8 0 9 0 10V15.5L3.5 19V22H8.5V19L12 15.5V10M12.33 4C12.22 4 12.11 4 12 4.04V6.59C12.3 6.77 12.56 7 12.79 7.21C13.44 7.87 14 8.85 14 10V16.33L11 19.33V20.67C11 21.4 11.6 22 12.33 22H21.67C22 22 22.36 21.86 22.61 21.61C22.86 21.36 23 21 23 20.67V5.33C23 4.6 22.4 4 21.67 4H20V2H14V4H12.33Z" /></g></svg>
+
+!define MA_POWER_PLUG_BATTERY(_color)                                 SPRITE_PUT(mdi-power-plug-battery, _color)
+!define MA_POWER_PLUG_BATTERY(_color, _scale)                         SPRITE_PUT(mdi-power-plug-battery, _color, _scale)
+!define MA_POWER_PLUG_BATTERY(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA POWER PLUG BATTERY, mdi-power-plug-battery, _color, _scale)
+!define MA_POWER_PLUG_BATTERY(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA POWER PLUG BATTERY, mdi-power-plug-battery, _color, _scale, _shape)
+!define MA_POWER_PLUG_BATTERY(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA POWER PLUG BATTERY, _label, mdi-power-plug-battery, _color, _scale, _shape)
+skinparam folderBackgroundColor<<MA POWER PLUG BATTERY>> White
+
+sprite mdi-power-plug-battery-outline <svg width="48" height="48"><g transform="scale(2)"><path d="M11 8.32C11.57 8.7 12 9.35 12 10V15.5L8.5 19V22H3.5V19L0 15.5V10C0 9 1 8 2 8V4H4V8H8V4H10V8C10.35 8 10.7 8.12 11 8.32M7.09 17.59L10 14.67V10.09C10 10.06 9.95 10 9.92 10H2.09C2.06 10 2 10.06 2 10.09V14.67L5.33 18H6.67L7.09 17.59M12 4.04C12.11 4 12.22 4 12.33 4H14V2H20V4H21.67C22.4 4 23 4.6 23 5.33V20.67C23 21 22.86 21.36 22.61 21.61C22.36 21.86 22 22 21.67 22H12.33C11.6 22 11 21.4 11 20.67V19.33L13 17.33V20H21V6H12V4.04Z" /></g></svg>
+
+!define MA_POWER_PLUG_BATTERY_OUTLINE(_color)                                 SPRITE_PUT(mdi-power-plug-battery-outline, _color)
+!define MA_POWER_PLUG_BATTERY_OUTLINE(_color, _scale)                         SPRITE_PUT(mdi-power-plug-battery-outline, _color, _scale)
+!define MA_POWER_PLUG_BATTERY_OUTLINE(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA POWER PLUG BATTERY OUTLINE, mdi-power-plug-battery-outline, _color, _scale)
+!define MA_POWER_PLUG_BATTERY_OUTLINE(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA POWER PLUG BATTERY OUTLINE, mdi-power-plug-battery-outline, _color, _scale, _shape)
+!define MA_POWER_PLUG_BATTERY_OUTLINE(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA POWER PLUG BATTERY OUTLINE, _label, mdi-power-plug-battery-outline, _color, _scale, _shape)
+skinparam folderBackgroundColor<<MA POWER PLUG BATTERY OUTLINE>> White
+

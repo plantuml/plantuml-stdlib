@@ -1,0 +1,8 @@
+sprite mdi-send-variant <svg width="48" height="48"><g transform="scale(2)"><path d="M3 20V14L11 12L3 10V4L22 12Z" /></g></svg>
+
+!define MA_SEND_VARIANT(_color)                                 SPRITE_PUT(mdi-send-variant, _color)
+!define MA_SEND_VARIANT(_color, _scale)                         SPRITE_PUT(mdi-send-variant, _color, _scale)
+!define MA_SEND_VARIANT(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA SEND VARIANT, mdi-send-variant, _color, _scale)
+!define MA_SEND_VARIANT(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA SEND VARIANT, mdi-send-variant, _color, _scale, _shape)
+!define MA_SEND_VARIANT(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA SEND VARIANT, _label, mdi-send-variant, _color, _scale, _shape)
+skinparam folderBackgroundColor<<MA SEND VARIANT>> White

@@ -1,0 +1,8 @@
+sprite mdi-map-marker-star <svg width="48" height="48"><g transform="scale(2)"><path d="M12 2C8.1 2 5 5.1 5 9C5 14.2 12 22 12 22S19 14.2 19 9C19 5.1 15.9 2 12 2M14.5 13L12 11.5L9.5 13L10.2 10.2L8 8.3L10.9 8.1L12 5.4L13.1 8L16 8.3L13.8 10.2L14.5 13Z" /></g></svg>
+
+!define MA_MAP_MARKER_STAR(_color)                                 SPRITE_PUT(mdi-map-marker-star, _color)
+!define MA_MAP_MARKER_STAR(_color, _scale)                         SPRITE_PUT(mdi-map-marker-star, _color, _scale)
+!define MA_MAP_MARKER_STAR(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA MAP MARKER STAR, mdi-map-marker-star, _color, _scale)
+!define MA_MAP_MARKER_STAR(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA MAP MARKER STAR, mdi-map-marker-star, _color, _scale, _shape)
+!define MA_MAP_MARKER_STAR(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA MAP MARKER STAR, _label, mdi-map-marker-star, _color, _scale, _shape)
+skinparam folderBackgroundColor<<MA MAP MARKER STAR>> White

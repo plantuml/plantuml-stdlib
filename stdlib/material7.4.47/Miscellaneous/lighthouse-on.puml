@@ -1,0 +1,8 @@
+sprite mdi-lighthouse-on <svg width="48" height="48"><g transform="scale(2)"><path d="M1,10V2L10,5V7L1,10M8,10V8H13V4H8V3L12,1L16,3V4H15V8H16V10H14.74L8.44,13.64L9,10H8M7,23L7.04,22.76L16.15,17.5L16.67,20.88L13,23H7M8.05,16.17L15.31,12L15.83,15.37L7.43,20.22L8.05,16.17Z" /></g></svg>
+
+!define MA_LIGHTHOUSE_ON(_color)                                 SPRITE_PUT(mdi-lighthouse-on, _color)
+!define MA_LIGHTHOUSE_ON(_color, _scale)                         SPRITE_PUT(mdi-lighthouse-on, _color, _scale)
+!define MA_LIGHTHOUSE_ON(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA LIGHTHOUSE ON, mdi-lighthouse-on, _color, _scale)
+!define MA_LIGHTHOUSE_ON(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA LIGHTHOUSE ON, mdi-lighthouse-on, _color, _scale, _shape)
+!define MA_LIGHTHOUSE_ON(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA LIGHTHOUSE ON, _label, mdi-lighthouse-on, _color, _scale, _shape)
+skinparam folderBackgroundColor<<MA LIGHTHOUSE ON>> White

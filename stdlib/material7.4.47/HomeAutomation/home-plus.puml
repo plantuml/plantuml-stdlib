@@ -1,0 +1,8 @@
+sprite mdi-home-plus <svg width="48" height="48"><g transform="scale(2)"><path d="M17 14H19V17H22V19H19V22H17V19H14V17H17V14M12 3L22 12H18C14.69 12 12 14.69 12 18C12 18.7 12.12 19.37 12.34 20H5V12H2L12 3Z" /></g></svg>
+
+!define MA_HOME_PLUS(_color)                                 SPRITE_PUT(mdi-home-plus, _color)
+!define MA_HOME_PLUS(_color, _scale)                         SPRITE_PUT(mdi-home-plus, _color, _scale)
+!define MA_HOME_PLUS(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA HOME PLUS, mdi-home-plus, _color, _scale)
+!define MA_HOME_PLUS(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA HOME PLUS, mdi-home-plus, _color, _scale, _shape)
+!define MA_HOME_PLUS(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA HOME PLUS, _label, mdi-home-plus, _color, _scale, _shape)
+skinparam folderBackgroundColor<<MA HOME PLUS>> White

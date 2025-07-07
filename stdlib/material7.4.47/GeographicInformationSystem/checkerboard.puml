@@ -1,0 +1,8 @@
+sprite mdi-checkerboard <svg width="48" height="48"><g transform="scale(2)"><path d="M2 2V22H22V2H2M20 12H16V16H20V20H16V16H12V20H8V16H4V12H8V8H4V4H8V8H12V4H16V8H20V12M16 8V12H12V8H16M12 12V16H8V12H12Z" /></g></svg>
+
+!define MA_CHECKERBOARD(_color)                                 SPRITE_PUT(mdi-checkerboard, _color)
+!define MA_CHECKERBOARD(_color, _scale)                         SPRITE_PUT(mdi-checkerboard, _color, _scale)
+!define MA_CHECKERBOARD(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA CHECKERBOARD, mdi-checkerboard, _color, _scale)
+!define MA_CHECKERBOARD(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA CHECKERBOARD, mdi-checkerboard, _color, _scale, _shape)
+!define MA_CHECKERBOARD(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA CHECKERBOARD, _label, mdi-checkerboard, _color, _scale, _shape)
+skinparam folderBackgroundColor<<MA CHECKERBOARD>> White

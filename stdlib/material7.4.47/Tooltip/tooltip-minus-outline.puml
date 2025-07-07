@@ -1,0 +1,8 @@
+sprite mdi-tooltip-minus-outline <svg width="48" height="48"><g transform="scale(2)"><path d="M20 2H4C2.9 2 2 2.9 2 4V16C2 17.11 2.9 18 4 18H8L12 22L16 18H20C21.11 18 22 17.11 22 16V4C22 2.9 21.11 2 20 2M20 16H15.17L12 19.17L8.83 16H4V4H20V16M16 11H8V9H16V11Z" /></g></svg>
+
+!define MA_TOOLTIP_MINUS_OUTLINE(_color)                                 SPRITE_PUT(mdi-tooltip-minus-outline, _color)
+!define MA_TOOLTIP_MINUS_OUTLINE(_color, _scale)                         SPRITE_PUT(mdi-tooltip-minus-outline, _color, _scale)
+!define MA_TOOLTIP_MINUS_OUTLINE(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA TOOLTIP MINUS OUTLINE, mdi-tooltip-minus-outline, _color, _scale)
+!define MA_TOOLTIP_MINUS_OUTLINE(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA TOOLTIP MINUS OUTLINE, mdi-tooltip-minus-outline, _color, _scale, _shape)
+!define MA_TOOLTIP_MINUS_OUTLINE(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA TOOLTIP MINUS OUTLINE, _label, mdi-tooltip-minus-outline, _color, _scale, _shape)
+skinparam folderBackgroundColor<<MA TOOLTIP MINUS OUTLINE>> White

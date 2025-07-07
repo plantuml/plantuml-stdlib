@@ -1,0 +1,8 @@
+sprite mdi-less-than <svg width="48" height="48"><g transform="scale(2)"><path d="M18.5,4.14L19.5,5.86L8.97,12L19.5,18.14L18.5,19.86L5,12L18.5,4.14Z" /></g></svg>
+
+!define MA_LESS_THAN(_color)                                 SPRITE_PUT(mdi-less-than, _color)
+!define MA_LESS_THAN(_color, _scale)                         SPRITE_PUT(mdi-less-than, _color, _scale)
+!define MA_LESS_THAN(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA LESS THAN, mdi-less-than, _color, _scale)
+!define MA_LESS_THAN(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA LESS THAN, mdi-less-than, _color, _scale, _shape)
+!define MA_LESS_THAN(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA LESS THAN, _label, mdi-less-than, _color, _scale, _shape)
+skinparam folderBackgroundColor<<MA LESS THAN>> White

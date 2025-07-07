@@ -1,0 +1,8 @@
+sprite mdi-page-layout-header-footer <svg width="48" height="48"><g transform="scale(2)"><path d="M18 2H6C4.89 2 4 2.9 4 4V20C4 21.11 4.89 22 6 22H18C19.11 22 20 21.11 20 20V4C20 2.9 19.11 2 18 2M18 20H6V16H18V20M18 8H6V4H18V8Z" /></g></svg>
+
+!define MA_PAGE_LAYOUT_HEADER_FOOTER(_color)                                 SPRITE_PUT(mdi-page-layout-header-footer, _color)
+!define MA_PAGE_LAYOUT_HEADER_FOOTER(_color, _scale)                         SPRITE_PUT(mdi-page-layout-header-footer, _color, _scale)
+!define MA_PAGE_LAYOUT_HEADER_FOOTER(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA PAGE LAYOUT HEADER FOOTER, mdi-page-layout-header-footer, _color, _scale)
+!define MA_PAGE_LAYOUT_HEADER_FOOTER(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA PAGE LAYOUT HEADER FOOTER, mdi-page-layout-header-footer, _color, _scale, _shape)
+!define MA_PAGE_LAYOUT_HEADER_FOOTER(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA PAGE LAYOUT HEADER FOOTER, _label, mdi-page-layout-header-footer, _color, _scale, _shape)
+skinparam folderBackgroundColor<<MA PAGE LAYOUT HEADER FOOTER>> White

@@ -1,0 +1,8 @@
+sprite mdi-lightning-bolt-outline <svg width="48" height="48"><g transform="scale(2)"><path d="M11 9.47V11H14.76L13 14.53V13H9.24L11 9.47M13 1L6 15H11V23L18 9H13V1Z" /></g></svg>
+
+!define MA_LIGHTNING_BOLT_OUTLINE(_color)                                 SPRITE_PUT(mdi-lightning-bolt-outline, _color)
+!define MA_LIGHTNING_BOLT_OUTLINE(_color, _scale)                         SPRITE_PUT(mdi-lightning-bolt-outline, _color, _scale)
+!define MA_LIGHTNING_BOLT_OUTLINE(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA LIGHTNING BOLT OUTLINE, mdi-lightning-bolt-outline, _color, _scale)
+!define MA_LIGHTNING_BOLT_OUTLINE(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA LIGHTNING BOLT OUTLINE, mdi-lightning-bolt-outline, _color, _scale, _shape)
+!define MA_LIGHTNING_BOLT_OUTLINE(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA LIGHTNING BOLT OUTLINE, _label, mdi-lightning-bolt-outline, _color, _scale, _shape)
+skinparam folderBackgroundColor<<MA LIGHTNING BOLT OUTLINE>> White

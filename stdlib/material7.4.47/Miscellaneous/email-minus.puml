@@ -1,0 +1,8 @@
+sprite mdi-email-minus <svg width="48" height="48"><g transform="scale(2)"><path d="M13 19C13 15.69 15.69 13 19 13C20.1 13 21.12 13.3 22 13.81V6C22 4.89 21.1 4 20 4H4C2.89 4 2 4.89 2 6V18C2 19.11 2.9 20 4 20H13.09C13.04 19.67 13 19.34 13 19M4 8V6L12 11L20 6V8L12 13L4 8M23 18V20H15V18H23Z" /></g></svg>
+
+!define MA_EMAIL_MINUS(_color)                                 SPRITE_PUT(mdi-email-minus, _color)
+!define MA_EMAIL_MINUS(_color, _scale)                         SPRITE_PUT(mdi-email-minus, _color, _scale)
+!define MA_EMAIL_MINUS(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA EMAIL MINUS, mdi-email-minus, _color, _scale)
+!define MA_EMAIL_MINUS(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA EMAIL MINUS, mdi-email-minus, _color, _scale, _shape)
+!define MA_EMAIL_MINUS(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA EMAIL MINUS, _label, mdi-email-minus, _color, _scale, _shape)
+skinparam folderBackgroundColor<<MA EMAIL MINUS>> White

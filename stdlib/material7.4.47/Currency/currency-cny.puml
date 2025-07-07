@@ -1,0 +1,8 @@
+sprite mdi-currency-cny <svg width="48" height="48"><g transform="scale(2)"><path d="M13.28 12H18V14H13V21H11V14H6V12H10.72L5 3H7.37L12 10.29L16.63 3H19L13.28 12Z" /></g></svg>
+
+!define MA_CURRENCY_CNY(_color)                                 SPRITE_PUT(mdi-currency-cny, _color)
+!define MA_CURRENCY_CNY(_color, _scale)                         SPRITE_PUT(mdi-currency-cny, _color, _scale)
+!define MA_CURRENCY_CNY(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA CURRENCY CNY, mdi-currency-cny, _color, _scale)
+!define MA_CURRENCY_CNY(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA CURRENCY CNY, mdi-currency-cny, _color, _scale, _shape)
+!define MA_CURRENCY_CNY(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA CURRENCY CNY, _label, mdi-currency-cny, _color, _scale, _shape)
+skinparam folderBackgroundColor<<MA CURRENCY CNY>> White

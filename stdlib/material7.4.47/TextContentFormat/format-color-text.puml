@@ -1,0 +1,8 @@
+sprite mdi-format-color-text <svg width="48" height="48"><g transform="scale(2)"><path d="M9.62,12L12,5.67L14.37,12M11,3L5.5,17H7.75L8.87,14H15.12L16.25,17H18.5L13,3H11Z" /></g></svg>
+
+!define MA_FORMAT_COLOR_TEXT(_color)                                 SPRITE_PUT(mdi-format-color-text, _color)
+!define MA_FORMAT_COLOR_TEXT(_color, _scale)                         SPRITE_PUT(mdi-format-color-text, _color, _scale)
+!define MA_FORMAT_COLOR_TEXT(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA FORMAT COLOR TEXT, mdi-format-color-text, _color, _scale)
+!define MA_FORMAT_COLOR_TEXT(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA FORMAT COLOR TEXT, mdi-format-color-text, _color, _scale, _shape)
+!define MA_FORMAT_COLOR_TEXT(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA FORMAT COLOR TEXT, _label, mdi-format-color-text, _color, _scale, _shape)
+skinparam folderBackgroundColor<<MA FORMAT COLOR TEXT>> White

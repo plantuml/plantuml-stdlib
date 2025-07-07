@@ -1,0 +1,8 @@
+sprite mdi-folder-image <svg width="48" height="48"><g transform="scale(2)"><path d="M5,17L9.5,11L13,15.5L15.5,12.5L19,17M20,6H12L10,4H4A2,2 0 0,0 2,6V18A2,2 0 0,0 4,20H20A2,2 0 0,0 22,18V8A2,2 0 0,0 20,6Z" /></g></svg>
+
+!define MA_FOLDER_IMAGE(_color)                                 SPRITE_PUT(mdi-folder-image, _color)
+!define MA_FOLDER_IMAGE(_color, _scale)                         SPRITE_PUT(mdi-folder-image, _color, _scale)
+!define MA_FOLDER_IMAGE(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA FOLDER IMAGE, mdi-folder-image, _color, _scale)
+!define MA_FOLDER_IMAGE(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA FOLDER IMAGE, mdi-folder-image, _color, _scale, _shape)
+!define MA_FOLDER_IMAGE(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA FOLDER IMAGE, _label, mdi-folder-image, _color, _scale, _shape)
+skinparam folderBackgroundColor<<MA FOLDER IMAGE>> White

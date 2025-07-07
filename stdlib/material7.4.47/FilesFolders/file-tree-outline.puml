@@ -1,0 +1,8 @@
+sprite mdi-file-tree-outline <svg width="48" height="48"><g transform="scale(2)"><path d="M12 13H7V18H12V20H5V10H7V11H12V13M8 4V6H4V4H8M10 2H2V8H10V2M20 11V13H16V11H20M22 9H14V15H22V9M20 18V20H16V18H20M22 16H14V22H22V16Z" /></g></svg>
+
+!define MA_FILE_TREE_OUTLINE(_color)                                 SPRITE_PUT(mdi-file-tree-outline, _color)
+!define MA_FILE_TREE_OUTLINE(_color, _scale)                         SPRITE_PUT(mdi-file-tree-outline, _color, _scale)
+!define MA_FILE_TREE_OUTLINE(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA FILE TREE OUTLINE, mdi-file-tree-outline, _color, _scale)
+!define MA_FILE_TREE_OUTLINE(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA FILE TREE OUTLINE, mdi-file-tree-outline, _color, _scale, _shape)
+!define MA_FILE_TREE_OUTLINE(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA FILE TREE OUTLINE, _label, mdi-file-tree-outline, _color, _scale, _shape)
+skinparam folderBackgroundColor<<MA FILE TREE OUTLINE>> White

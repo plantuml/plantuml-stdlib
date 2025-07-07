@@ -1,0 +1,8 @@
+sprite mdi-router <svg width="48" height="48"><g transform="scale(2)"><path d="M12 2C6.5 2 2 6.5 2 12C2 17.5 6.5 22 12 22C17.5 22 22 17.5 22 12C22 6.5 17.5 2 12 2M12 20C7.58 20 4 16.42 4 12C4 7.58 7.58 4 12 4C16.42 4 20 7.58 20 12C20 16.42 16.42 20 12 20M13 13V16H15L12 19L9 16H11V13M5 13H8V15L11 12L8 9V11H5M11 11V8H9L12 5L15 8H13V11M19 11H16V9L13 12L16 15V13H19" /></g></svg>
+
+!define MA_ROUTER(_color)                                 SPRITE_PUT(mdi-router, _color)
+!define MA_ROUTER(_color, _scale)                         SPRITE_PUT(mdi-router, _color, _scale)
+!define MA_ROUTER(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA ROUTER, mdi-router, _color, _scale)
+!define MA_ROUTER(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA ROUTER, mdi-router, _color, _scale, _shape)
+!define MA_ROUTER(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA ROUTER, _label, mdi-router, _color, _scale, _shape)
+skinparam folderBackgroundColor<<MA ROUTER>> White

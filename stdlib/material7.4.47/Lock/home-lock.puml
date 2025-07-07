@@ -1,0 +1,8 @@
+sprite mdi-home-lock <svg width="48" height="48"><g transform="scale(2)"><path d="M12,3L2,12H5V20H19V12H22L12,3M12,9A3,3 0 0,1 15,12V13H16V17H8V13H9V12A3,3 0 0,1 12,9M12,11A1,1 0 0,0 11,12V13H13V12C13,11.5 12.6,11 12,11Z" /></g></svg>
+
+!define MA_HOME_LOCK(_color)                                 SPRITE_PUT(mdi-home-lock, _color)
+!define MA_HOME_LOCK(_color, _scale)                         SPRITE_PUT(mdi-home-lock, _color, _scale)
+!define MA_HOME_LOCK(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA HOME LOCK, mdi-home-lock, _color, _scale)
+!define MA_HOME_LOCK(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA HOME LOCK, mdi-home-lock, _color, _scale, _shape)
+!define MA_HOME_LOCK(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA HOME LOCK, _label, mdi-home-lock, _color, _scale, _shape)
+skinparam folderBackgroundColor<<MA HOME LOCK>> White

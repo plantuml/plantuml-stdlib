@@ -1,0 +1,8 @@
+sprite mdi-invoice-check <svg width="48" height="48"><g transform="scale(2)"><path d="M19 13C19.7 13 20.37 13.12 21 13.34V3H3V22L6 20L9 22L12 20L13.3 20.86C13.1 20.28 13 19.65 13 19C13 15.69 15.69 13 19 13M15.5 19L18.25 22L23 17.23L21.84 15.82L18.25 19.41L16.66 17.82L15.5 19Z" /></g></svg>
+
+!define MA_INVOICE_CHECK(_color)                                 SPRITE_PUT(mdi-invoice-check, _color)
+!define MA_INVOICE_CHECK(_color, _scale)                         SPRITE_PUT(mdi-invoice-check, _color, _scale)
+!define MA_INVOICE_CHECK(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA INVOICE CHECK, mdi-invoice-check, _color, _scale)
+!define MA_INVOICE_CHECK(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA INVOICE CHECK, mdi-invoice-check, _color, _scale, _shape)
+!define MA_INVOICE_CHECK(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA INVOICE CHECK, _label, mdi-invoice-check, _color, _scale, _shape)
+skinparam folderBackgroundColor<<MA INVOICE CHECK>> White

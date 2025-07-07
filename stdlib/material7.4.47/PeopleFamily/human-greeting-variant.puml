@@ -1,0 +1,8 @@
+sprite mdi-human-greeting-variant <svg width="48" height="48"><g transform="scale(2)"><path d="M1.5,4V5.5C1.5,9.65 3.71,13.28 7,15.3V20H22V18C22,15.34 16.67,14 14,14C14,14 13.83,14 13.75,14C9,14 5,10 5,5.5V4M14,4A4,4 0 0,0 10,8A4,4 0 0,0 14,12A4,4 0 0,0 18,8A4,4 0 0,0 14,4Z" /></g></svg>
+
+!define MA_HUMAN_GREETING_VARIANT(_color)                                 SPRITE_PUT(mdi-human-greeting-variant, _color)
+!define MA_HUMAN_GREETING_VARIANT(_color, _scale)                         SPRITE_PUT(mdi-human-greeting-variant, _color, _scale)
+!define MA_HUMAN_GREETING_VARIANT(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA HUMAN GREETING VARIANT, mdi-human-greeting-variant, _color, _scale)
+!define MA_HUMAN_GREETING_VARIANT(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA HUMAN GREETING VARIANT, mdi-human-greeting-variant, _color, _scale, _shape)
+!define MA_HUMAN_GREETING_VARIANT(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA HUMAN GREETING VARIANT, _label, mdi-human-greeting-variant, _color, _scale, _shape)
+skinparam folderBackgroundColor<<MA HUMAN GREETING VARIANT>> White

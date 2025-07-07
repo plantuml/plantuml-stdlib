@@ -1,0 +1,8 @@
+sprite mdi-knob <svg width="48" height="48"><g transform="scale(2)"><path d="M12 2C6.5 2 2 6.5 2 12S6.5 22 12 22 22 17.5 22 12 17.5 2 12 2M13 10H11V4.1C11.3 4 11.7 4 12 4S12.7 4 13 4.1V10Z" /></g></svg>
+
+!define MA_KNOB(_color)                                 SPRITE_PUT(mdi-knob, _color)
+!define MA_KNOB(_color, _scale)                         SPRITE_PUT(mdi-knob, _color, _scale)
+!define MA_KNOB(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA KNOB, mdi-knob, _color, _scale)
+!define MA_KNOB(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA KNOB, mdi-knob, _color, _scale, _shape)
+!define MA_KNOB(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA KNOB, _label, mdi-knob, _color, _scale, _shape)
+skinparam folderBackgroundColor<<MA KNOB>> White

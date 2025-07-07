@@ -1,0 +1,8 @@
+sprite mdi-television-off <svg width="48" height="48"><g transform="scale(2)"><path d="M0.5,2.77L1.78,1.5L21,20.72L19.73,22L16.73,19H16V21H8V19H3A2,2 0 0,1 1,17V5C1,4.5 1.17,4.07 1.46,3.73L0.5,2.77M21,17V5H7.82L5.82,3H21A2,2 0 0,1 23,5V17C23,17.85 22.45,18.59 21.7,18.87L19.82,17H21M3,17H14.73L3,5.27V17Z" /></g></svg>
+
+!define MA_TELEVISION_OFF(_color)                                 SPRITE_PUT(mdi-television-off, _color)
+!define MA_TELEVISION_OFF(_color, _scale)                         SPRITE_PUT(mdi-television-off, _color, _scale)
+!define MA_TELEVISION_OFF(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA TELEVISION OFF, mdi-television-off, _color, _scale)
+!define MA_TELEVISION_OFF(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA TELEVISION OFF, mdi-television-off, _color, _scale, _shape)
+!define MA_TELEVISION_OFF(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA TELEVISION OFF, _label, mdi-television-off, _color, _scale, _shape)
+skinparam folderBackgroundColor<<MA TELEVISION OFF>> White

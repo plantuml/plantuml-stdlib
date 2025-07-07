@@ -1,0 +1,8 @@
+sprite mdi-floor-lamp <svg width="48" height="48"><g transform="scale(2)"><path d="M15,2L17,9H7L9,2M11,10H13V20H16V22H8V20H11V10Z" /></g></svg>
+
+!define MA_FLOOR_LAMP(_color)                                 SPRITE_PUT(mdi-floor-lamp, _color)
+!define MA_FLOOR_LAMP(_color, _scale)                         SPRITE_PUT(mdi-floor-lamp, _color, _scale)
+!define MA_FLOOR_LAMP(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA FLOOR LAMP, mdi-floor-lamp, _color, _scale)
+!define MA_FLOOR_LAMP(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA FLOOR LAMP, mdi-floor-lamp, _color, _scale, _shape)
+!define MA_FLOOR_LAMP(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA FLOOR LAMP, _label, mdi-floor-lamp, _color, _scale, _shape)
+skinparam folderBackgroundColor<<MA FLOOR LAMP>> White

@@ -1,0 +1,8 @@
+sprite mdi-fast-forward-15 <svg width="48" height="48"><g transform="scale(2)"><path d="M11.5 3C14.15 3 16.55 4 18.4 5.6L21 3V10H14L16.62 7.38C15.23 6.22 13.46 5.5 11.5 5.5C7.96 5.5 4.95 7.81 3.9 11L1.53 10.22C2.92 6.03 6.85 3 11.5 3M10 12V22H8V14H6V12H10M12 12H18V14H14V16H16C17.11 16 18 16.9 18 18V20C18 21.11 17.11 22 16 22H12V20H16V18H12V12Z" /></g></svg>
+
+!define MA_FAST_FORWARD_15(_color)                                 SPRITE_PUT(mdi-fast-forward-15, _color)
+!define MA_FAST_FORWARD_15(_color, _scale)                         SPRITE_PUT(mdi-fast-forward-15, _color, _scale)
+!define MA_FAST_FORWARD_15(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA FAST FORWARD 15, mdi-fast-forward-15, _color, _scale)
+!define MA_FAST_FORWARD_15(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA FAST FORWARD 15, mdi-fast-forward-15, _color, _scale, _shape)
+!define MA_FAST_FORWARD_15(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA FAST FORWARD 15, _label, mdi-fast-forward-15, _color, _scale, _shape)
+skinparam folderBackgroundColor<<MA FAST FORWARD 15>> White

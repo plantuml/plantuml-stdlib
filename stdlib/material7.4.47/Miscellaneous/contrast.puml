@@ -1,0 +1,8 @@
+sprite mdi-contrast <svg width="48" height="48"><g transform="scale(2)"><path d="M4.38,20.9C3.78,20.71 3.3,20.23 3.1,19.63L19.63,3.1C20.23,3.3 20.71,3.78 20.9,4.38L4.38,20.9M20,16V18H13V16H20M3,6H6V3H8V6H11V8H8V11H6V8H3V6Z" /></g></svg>
+
+!define MA_CONTRAST(_color)                                 SPRITE_PUT(mdi-contrast, _color)
+!define MA_CONTRAST(_color, _scale)                         SPRITE_PUT(mdi-contrast, _color, _scale)
+!define MA_CONTRAST(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA CONTRAST, mdi-contrast, _color, _scale)
+!define MA_CONTRAST(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA CONTRAST, mdi-contrast, _color, _scale, _shape)
+!define MA_CONTRAST(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA CONTRAST, _label, mdi-contrast, _color, _scale, _shape)
+skinparam folderBackgroundColor<<MA CONTRAST>> White

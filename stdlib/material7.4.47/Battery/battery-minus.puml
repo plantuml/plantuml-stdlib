@@ -1,0 +1,8 @@
+sprite mdi-battery-minus <svg width="48" height="48"><g transform="scale(2)"><path d="M13.54 22H7.33C6.6 22 6 21.4 6 20.67V5.33C6 4.6 6.6 4 7.33 4H9V2H15V4H16.67C17.4 4 18 4.6 18 5.33V12C14.69 12 12 14.69 12 18C12 19.54 12.58 20.94 13.54 22M22 17V19H14V17H22Z" /></g></svg>
+
+!define MA_BATTERY_MINUS(_color)                                 SPRITE_PUT(mdi-battery-minus, _color)
+!define MA_BATTERY_MINUS(_color, _scale)                         SPRITE_PUT(mdi-battery-minus, _color, _scale)
+!define MA_BATTERY_MINUS(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA BATTERY MINUS, mdi-battery-minus, _color, _scale)
+!define MA_BATTERY_MINUS(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA BATTERY MINUS, mdi-battery-minus, _color, _scale, _shape)
+!define MA_BATTERY_MINUS(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA BATTERY MINUS, _label, mdi-battery-minus, _color, _scale, _shape)
+skinparam folderBackgroundColor<<MA BATTERY MINUS>> White

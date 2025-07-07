@@ -1,0 +1,8 @@
+sprite mdi-printer-3d-nozzle <svg width="48" height="48"><g transform="scale(2)"><path d="M7,2H17V8H19V13H16.5L13,17H11L7.5,13H5V8H7V2M10,22H2V20H10A1,1 0 0,0 11,19V18H13V19A3,3 0 0,1 10,22Z" /></g></svg>
+
+!define MA_PRINTER_3D_NOZZLE(_color)                                 SPRITE_PUT(mdi-printer-3d-nozzle, _color)
+!define MA_PRINTER_3D_NOZZLE(_color, _scale)                         SPRITE_PUT(mdi-printer-3d-nozzle, _color, _scale)
+!define MA_PRINTER_3D_NOZZLE(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA PRINTER 3D NOZZLE, mdi-printer-3d-nozzle, _color, _scale)
+!define MA_PRINTER_3D_NOZZLE(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA PRINTER 3D NOZZLE, mdi-printer-3d-nozzle, _color, _scale, _shape)
+!define MA_PRINTER_3D_NOZZLE(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA PRINTER 3D NOZZLE, _label, mdi-printer-3d-nozzle, _color, _scale, _shape)
+skinparam folderBackgroundColor<<MA PRINTER 3D NOZZLE>> White

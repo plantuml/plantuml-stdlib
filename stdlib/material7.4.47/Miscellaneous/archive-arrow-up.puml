@@ -1,0 +1,8 @@
+sprite mdi-archive-arrow-up <svg width="48" height="48"><g transform="scale(2)"><path d="M4 21H20V8H4M14 15V18H10V15H7L12 10L17 15M3 3H21V7H3" /></g></svg>
+
+!define MA_ARCHIVE_ARROW_UP(_color)                                 SPRITE_PUT(mdi-archive-arrow-up, _color)
+!define MA_ARCHIVE_ARROW_UP(_color, _scale)                         SPRITE_PUT(mdi-archive-arrow-up, _color, _scale)
+!define MA_ARCHIVE_ARROW_UP(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA ARCHIVE ARROW UP, mdi-archive-arrow-up, _color, _scale)
+!define MA_ARCHIVE_ARROW_UP(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA ARCHIVE ARROW UP, mdi-archive-arrow-up, _color, _scale, _shape)
+!define MA_ARCHIVE_ARROW_UP(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA ARCHIVE ARROW UP, _label, mdi-archive-arrow-up, _color, _scale, _shape)
+skinparam folderBackgroundColor<<MA ARCHIVE ARROW UP>> White

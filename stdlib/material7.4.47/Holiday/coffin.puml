@@ -1,0 +1,8 @@
+sprite mdi-coffin <svg width="48" height="48"><g transform="scale(2)"><path d="M8,22L5,8L8,2H16L19,8L16,22H8M11,6V8H9V10H11V15H13V10H15V8H13V6H11Z" /></g></svg>
+
+!define MA_COFFIN(_color)                                 SPRITE_PUT(mdi-coffin, _color)
+!define MA_COFFIN(_color, _scale)                         SPRITE_PUT(mdi-coffin, _color, _scale)
+!define MA_COFFIN(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA COFFIN, mdi-coffin, _color, _scale)
+!define MA_COFFIN(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA COFFIN, mdi-coffin, _color, _scale, _shape)
+!define MA_COFFIN(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA COFFIN, _label, mdi-coffin, _color, _scale, _shape)
+skinparam folderBackgroundColor<<MA COFFIN>> White

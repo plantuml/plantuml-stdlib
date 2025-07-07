@@ -1,0 +1,8 @@
+sprite mdi-clock-time-one-outline <svg width="48" height="48"><g transform="scale(2)"><path d="M12 20C16.42 20 20 16.42 20 12S16.42 4 12 4 4 7.58 4 12 7.58 20 12 20M12 2C17.5 2 22 6.5 22 12S17.5 22 12 22C6.47 22 2 17.5 2 12C2 6.5 6.5 2 12 2M15.3 7.8L12.3 13H11V7H12.5V9.65L14 7.05L15.3 7.8Z" /></g></svg>
+
+!define MA_CLOCK_TIME_ONE_OUTLINE(_color)                                 SPRITE_PUT(mdi-clock-time-one-outline, _color)
+!define MA_CLOCK_TIME_ONE_OUTLINE(_color, _scale)                         SPRITE_PUT(mdi-clock-time-one-outline, _color, _scale)
+!define MA_CLOCK_TIME_ONE_OUTLINE(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA CLOCK TIME ONE OUTLINE, mdi-clock-time-one-outline, _color, _scale)
+!define MA_CLOCK_TIME_ONE_OUTLINE(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA CLOCK TIME ONE OUTLINE, mdi-clock-time-one-outline, _color, _scale, _shape)
+!define MA_CLOCK_TIME_ONE_OUTLINE(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA CLOCK TIME ONE OUTLINE, _label, mdi-clock-time-one-outline, _color, _scale, _shape)
+skinparam folderBackgroundColor<<MA CLOCK TIME ONE OUTLINE>> White

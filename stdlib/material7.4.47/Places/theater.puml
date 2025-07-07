@@ -1,0 +1,8 @@
+sprite mdi-theater <svg width="48" height="48"><g transform="scale(2)"><path d="M4,15H6A2,2 0 0,1 8,17V19H9V17A2,2 0 0,1 11,15H13A2,2 0 0,1 15,17V19H16V17A2,2 0 0,1 18,15H20A2,2 0 0,1 22,17V19H23V22H1V19H2V17A2,2 0 0,1 4,15M11,7L15,10L11,13V7M4,2H20A2,2 0 0,1 22,4V13.54C21.41,13.19 20.73,13 20,13V4H4V13C3.27,13 2.59,13.19 2,13.54V4A2,2 0 0,1 4,2Z" /></g></svg>
+
+!define MA_THEATER(_color)                                 SPRITE_PUT(mdi-theater, _color)
+!define MA_THEATER(_color, _scale)                         SPRITE_PUT(mdi-theater, _color, _scale)
+!define MA_THEATER(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA THEATER, mdi-theater, _color, _scale)
+!define MA_THEATER(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA THEATER, mdi-theater, _color, _scale, _shape)
+!define MA_THEATER(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA THEATER, _label, mdi-theater, _color, _scale, _shape)
+skinparam folderBackgroundColor<<MA THEATER>> White

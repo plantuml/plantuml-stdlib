@@ -1,0 +1,8 @@
+sprite mdi-home-circle-outline <svg width="48" height="48"><g transform="scale(2)"><path d="M12 20C7.6 20 4 16.4 4 12S7.6 4 12 4 20 7.6 20 12 16.4 20 12 20M12 2C6.5 2 2 6.5 2 12S6.5 22 12 22 22 17.5 22 12 17.5 2 12 2M11 14H13V17H16V12H18L12 7L6 12H8V17H11V14" /></g></svg>
+
+!define MA_HOME_CIRCLE_OUTLINE(_color)                                 SPRITE_PUT(mdi-home-circle-outline, _color)
+!define MA_HOME_CIRCLE_OUTLINE(_color, _scale)                         SPRITE_PUT(mdi-home-circle-outline, _color, _scale)
+!define MA_HOME_CIRCLE_OUTLINE(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA HOME CIRCLE OUTLINE, mdi-home-circle-outline, _color, _scale)
+!define MA_HOME_CIRCLE_OUTLINE(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA HOME CIRCLE OUTLINE, mdi-home-circle-outline, _color, _scale, _shape)
+!define MA_HOME_CIRCLE_OUTLINE(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA HOME CIRCLE OUTLINE, _label, mdi-home-circle-outline, _color, _scale, _shape)
+skinparam folderBackgroundColor<<MA HOME CIRCLE OUTLINE>> White

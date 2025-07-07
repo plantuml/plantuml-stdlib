@@ -1,0 +1,8 @@
+sprite mdi-heart-half <svg width="48" height="48"><g transform="scale(2)"><path d="M13,7.2V17.74L13,20.44L12,21.35L10.55,20.03C5.4,15.36 2,12.27 2,8.5C2,5.41 4.42,3 7.5,3C10,3 13,5 13,7.2Z" /></g></svg>
+
+!define MA_HEART_HALF(_color)                                 SPRITE_PUT(mdi-heart-half, _color)
+!define MA_HEART_HALF(_color, _scale)                         SPRITE_PUT(mdi-heart-half, _color, _scale)
+!define MA_HEART_HALF(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA HEART HALF, mdi-heart-half, _color, _scale)
+!define MA_HEART_HALF(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA HEART HALF, mdi-heart-half, _color, _scale, _shape)
+!define MA_HEART_HALF(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA HEART HALF, _label, mdi-heart-half, _color, _scale, _shape)
+skinparam folderBackgroundColor<<MA HEART HALF>> White

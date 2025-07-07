@@ -1,0 +1,8 @@
+sprite mdi-file-music <svg width="48" height="48"><g transform="scale(2)"><path d="M14,2H6A2,2 0 0,0 4,4V20A2,2 0 0,0 6,22H18A2,2 0 0,0 20,20V8L14,2M13,13H11V18A2,2 0 0,1 9,20A2,2 0 0,1 7,18A2,2 0 0,1 9,16C9.4,16 9.7,16.1 10,16.3V11H13V13M13,9V3.5L18.5,9H13Z" /></g></svg>
+
+!define MA_FILE_MUSIC(_color)                                 SPRITE_PUT(mdi-file-music, _color)
+!define MA_FILE_MUSIC(_color, _scale)                         SPRITE_PUT(mdi-file-music, _color, _scale)
+!define MA_FILE_MUSIC(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA FILE MUSIC, mdi-file-music, _color, _scale)
+!define MA_FILE_MUSIC(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA FILE MUSIC, mdi-file-music, _color, _scale, _shape)
+!define MA_FILE_MUSIC(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA FILE MUSIC, _label, mdi-file-music, _color, _scale, _shape)
+skinparam folderBackgroundColor<<MA FILE MUSIC>> White

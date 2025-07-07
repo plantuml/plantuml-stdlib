@@ -1,0 +1,8 @@
+sprite mdi-arrow-up-thick <svg width="48" height="48"><g transform="scale(2)"><path d="M14,20H10V11L6.5,14.5L4.08,12.08L12,4.16L19.92,12.08L17.5,14.5L14,11V20Z" /></g></svg>
+
+!define MA_ARROW_UP_THICK(_color)                                 SPRITE_PUT(mdi-arrow-up-thick, _color)
+!define MA_ARROW_UP_THICK(_color, _scale)                         SPRITE_PUT(mdi-arrow-up-thick, _color, _scale)
+!define MA_ARROW_UP_THICK(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA ARROW UP THICK, mdi-arrow-up-thick, _color, _scale)
+!define MA_ARROW_UP_THICK(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA ARROW UP THICK, mdi-arrow-up-thick, _color, _scale, _shape)
+!define MA_ARROW_UP_THICK(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA ARROW UP THICK, _label, mdi-arrow-up-thick, _color, _scale, _shape)
+skinparam folderBackgroundColor<<MA ARROW UP THICK>> White

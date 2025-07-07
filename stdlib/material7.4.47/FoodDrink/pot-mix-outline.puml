@@ -1,0 +1,8 @@
+sprite mdi-pot-mix-outline <svg width="48" height="48"><g transform="scale(2)"><path d="M14.6 9L18 3.1L19.7 4.1L16.9 9H14.6M16.3 10H21V12H19V19C19 20.1 18.1 21 17 21H7C5.9 21 5 20.1 5 19V12H3V10H16.3M17 12H7V19H17V12Z" /></g></svg>
+
+!define MA_POT_MIX_OUTLINE(_color)                                 SPRITE_PUT(mdi-pot-mix-outline, _color)
+!define MA_POT_MIX_OUTLINE(_color, _scale)                         SPRITE_PUT(mdi-pot-mix-outline, _color, _scale)
+!define MA_POT_MIX_OUTLINE(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA POT MIX OUTLINE, mdi-pot-mix-outline, _color, _scale)
+!define MA_POT_MIX_OUTLINE(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA POT MIX OUTLINE, mdi-pot-mix-outline, _color, _scale, _shape)
+!define MA_POT_MIX_OUTLINE(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA POT MIX OUTLINE, _label, mdi-pot-mix-outline, _color, _scale, _shape)
+skinparam folderBackgroundColor<<MA POT MIX OUTLINE>> White
