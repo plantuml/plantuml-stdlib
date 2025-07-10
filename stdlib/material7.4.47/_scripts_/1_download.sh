@@ -8,9 +8,18 @@ if [ -d svg ]; then
     exit 0
 fi
 
+echo "wget -q $BASE/v$VERSION.zip"
 wget -q $BASE/v$VERSION.zip
+echo "unzip -q v$VERSION.zip"
 unzip -q v$VERSION.zip
+echo "rm -f v$VERSION.zip"
 rm -f v$VERSION.zip
-mv MaterialDesign-SVG-$VERSION/svg .
-rm -rf MaterialDesign-SVG-$VERSION/
 
+mkdir -p _intermediate_
+
+echo "mv MaterialDesign-SVG-$VERSION meta.json ./_intermediate_/meta.json"
+mv MaterialDesign-SVG-$VERSION/meta.json ./_intermediate_/meta.json
+echo "mv MaterialDesign-SVG-$VERSION/svg ./_intermediate_/svg"
+mv MaterialDesign-SVG-$VERSION/svg ./_intermediate_/svg
+
+rm -rf MaterialDesign-SVG-$VERSION/
