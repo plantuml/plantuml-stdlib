@@ -1,0 +1,8 @@
+sprite mdi-undo <svg width="48" height="48"><g transform="scale(2)"><path d="M12.5,8C9.85,8 7.45,9 5.6,10.6L2,7V16H11L7.38,12.38C8.77,11.22 10.54,10.5 12.5,10.5C16.04,10.5 19.05,12.81 20.1,16L22.47,15.22C21.08,11.03 17.15,8 12.5,8Z" /></g></svg>
+
+!define MA_UNDO(_color)                                 SPRITE_PUT(mdi-undo, _color)
+!define MA_UNDO(_color, _scale)                         SPRITE_PUT(mdi-undo, _color, _scale)
+!define MA_UNDO(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA UNDO, mdi-undo, _color, _scale)
+!define MA_UNDO(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA UNDO, mdi-undo, _color, _scale, _shape)
+!define MA_UNDO(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA UNDO, _label, mdi-undo, _color, _scale, _shape)
+skinparam folderBackgroundColor<<MA UNDO>> White

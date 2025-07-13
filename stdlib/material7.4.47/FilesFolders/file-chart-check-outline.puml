@@ -1,0 +1,8 @@
+sprite mdi-file-chart-check-outline <svg width="48" height="48"><g transform="scale(2)"><path d="M23.5 17L18.5 22L15 18.5L16.5 17L18.5 19L22 15.5L23.5 17M6 2C4.9 2 4 2.9 4 4V20C4 21.1 4.9 22 6 22H13.8C13.4 21.4 13.2 20.7 13.1 20H6V4H13V9H18V13.1C18.3 13 18.7 13 19 13C19.3 13 19.7 13 20 13.1V8L14 2H6M11 11V19H13V11H11M7 13V19H9V13H7Z" /></g></svg>
+
+!define MA_FILE_CHART_CHECK_OUTLINE(_color)                                 SPRITE_PUT(mdi-file-chart-check-outline, _color)
+!define MA_FILE_CHART_CHECK_OUTLINE(_color, _scale)                         SPRITE_PUT(mdi-file-chart-check-outline, _color, _scale)
+!define MA_FILE_CHART_CHECK_OUTLINE(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA FILE CHART CHECK OUTLINE, mdi-file-chart-check-outline, _color, _scale)
+!define MA_FILE_CHART_CHECK_OUTLINE(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA FILE CHART CHECK OUTLINE, mdi-file-chart-check-outline, _color, _scale, _shape)
+!define MA_FILE_CHART_CHECK_OUTLINE(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA FILE CHART CHECK OUTLINE, _label, mdi-file-chart-check-outline, _color, _scale, _shape)
+skinparam folderBackgroundColor<<MA FILE CHART CHECK OUTLINE>> White

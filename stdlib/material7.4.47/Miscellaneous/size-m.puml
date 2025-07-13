@@ -1,0 +1,8 @@
+sprite mdi-size-m <svg width="48" height="48"><g transform="scale(2)"><path d="M9 7C7.9 7 7 7.9 7 9V17H9V9H11V16H13V9H15V17H17V9C17 7.9 16.11 7 15 7H9Z" /></g></svg>
+
+!define MA_SIZE_M(_color)                                 SPRITE_PUT(mdi-size-m, _color)
+!define MA_SIZE_M(_color, _scale)                         SPRITE_PUT(mdi-size-m, _color, _scale)
+!define MA_SIZE_M(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA SIZE M, mdi-size-m, _color, _scale)
+!define MA_SIZE_M(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA SIZE M, mdi-size-m, _color, _scale, _shape)
+!define MA_SIZE_M(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA SIZE M, _label, mdi-size-m, _color, _scale, _shape)
+skinparam folderBackgroundColor<<MA SIZE M>> White

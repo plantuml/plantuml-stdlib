@@ -1,0 +1,8 @@
+sprite mdi-ethernet-cable <svg width="48" height="48"><g transform="scale(2)"><path d="M11,3V7H13V3H11M8,4V11H16V4H14V8H10V4H8M10,12V22H14V12H10Z" /></g></svg>
+
+!define MA_ETHERNET_CABLE(_color)                                 SPRITE_PUT(mdi-ethernet-cable, _color)
+!define MA_ETHERNET_CABLE(_color, _scale)                         SPRITE_PUT(mdi-ethernet-cable, _color, _scale)
+!define MA_ETHERNET_CABLE(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA ETHERNET CABLE, mdi-ethernet-cable, _color, _scale)
+!define MA_ETHERNET_CABLE(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA ETHERNET CABLE, mdi-ethernet-cable, _color, _scale, _shape)
+!define MA_ETHERNET_CABLE(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA ETHERNET CABLE, _label, mdi-ethernet-cable, _color, _scale, _shape)
+skinparam folderBackgroundColor<<MA ETHERNET CABLE>> White

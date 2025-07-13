@@ -1,0 +1,8 @@
+sprite mdi-valve-closed <svg width="48" height="48"><g transform="scale(2)"><path d="M22 2V22H20V13H14.82A3 3 0 0 1 9.18 13H4V22H2V2H4V11H9.18A3 3 0 0 1 14.82 11H20V2Z" /></g></svg>
+
+!define MA_VALVE_CLOSED(_color)                                 SPRITE_PUT(mdi-valve-closed, _color)
+!define MA_VALVE_CLOSED(_color, _scale)                         SPRITE_PUT(mdi-valve-closed, _color, _scale)
+!define MA_VALVE_CLOSED(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA VALVE CLOSED, mdi-valve-closed, _color, _scale)
+!define MA_VALVE_CLOSED(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA VALVE CLOSED, mdi-valve-closed, _color, _scale, _shape)
+!define MA_VALVE_CLOSED(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA VALVE CLOSED, _label, mdi-valve-closed, _color, _scale, _shape)
+skinparam folderBackgroundColor<<MA VALVE CLOSED>> White

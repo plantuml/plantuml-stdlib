@@ -1,0 +1,8 @@
+sprite mdi-arrow-projectile <svg width="48" height="48"><g transform="scale(2)"><path d="M22 2L20 7L19.03 6.03L8 17.06V19L5 22L4 20L2 19L5 16H6.94L17.97 4.97L17 4L22 2Z" /></g></svg>
+
+!define MA_ARROW_PROJECTILE(_color)                                 SPRITE_PUT(mdi-arrow-projectile, _color)
+!define MA_ARROW_PROJECTILE(_color, _scale)                         SPRITE_PUT(mdi-arrow-projectile, _color, _scale)
+!define MA_ARROW_PROJECTILE(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA ARROW PROJECTILE, mdi-arrow-projectile, _color, _scale)
+!define MA_ARROW_PROJECTILE(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA ARROW PROJECTILE, mdi-arrow-projectile, _color, _scale, _shape)
+!define MA_ARROW_PROJECTILE(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA ARROW PROJECTILE, _label, mdi-arrow-projectile, _color, _scale, _shape)
+skinparam folderBackgroundColor<<MA ARROW PROJECTILE>> White

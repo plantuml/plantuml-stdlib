@@ -1,0 +1,8 @@
+sprite mdi-cards-playing-club <svg width="48" height="48"><g transform="scale(2)"><path d="M17 2H7C5.9 2 5 2.9 5 4V20C5 21.1 5.9 22 7 22H17C18.1 22 19 21.1 19 20V4C19 2.9 18.1 2 17 2M14 15C13.4 15 12.9 14.7 12.5 14.3L13.5 17H10.5L11.5 14.3C11.1 14.7 10.6 15 10 15C8.9 15 8 14.1 8 13S8.9 11 10 11H10.3C10.1 10.7 10 10.3 10 10C10 8.9 10.9 8 12 8S14 8.9 14 10C14 10.4 13.9 10.7 13.7 11H14C15.1 11 16 11.9 16 13S15.1 15 14 15Z" /></g></svg>
+
+!define MA_CARDS_PLAYING_CLUB(_color)                                 SPRITE_PUT(mdi-cards-playing-club, _color)
+!define MA_CARDS_PLAYING_CLUB(_color, _scale)                         SPRITE_PUT(mdi-cards-playing-club, _color, _scale)
+!define MA_CARDS_PLAYING_CLUB(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA CARDS PLAYING CLUB, mdi-cards-playing-club, _color, _scale)
+!define MA_CARDS_PLAYING_CLUB(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA CARDS PLAYING CLUB, mdi-cards-playing-club, _color, _scale, _shape)
+!define MA_CARDS_PLAYING_CLUB(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA CARDS PLAYING CLUB, _label, mdi-cards-playing-club, _color, _scale, _shape)
+skinparam folderBackgroundColor<<MA CARDS PLAYING CLUB>> White

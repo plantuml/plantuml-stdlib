@@ -1,0 +1,8 @@
+sprite mdi-shoe-heel <svg width="48" height="48"><g transform="scale(2)"><path d="M3,18H11.7L17,14H18V18H20V14C20,14 21,12 21,10C21,8 20.5,6 20.5,6H18.5L18,7L10,14H8L3,16V18Z" /></g></svg>
+
+!define MA_SHOE_HEEL(_color)                                 SPRITE_PUT(mdi-shoe-heel, _color)
+!define MA_SHOE_HEEL(_color, _scale)                         SPRITE_PUT(mdi-shoe-heel, _color, _scale)
+!define MA_SHOE_HEEL(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA SHOE HEEL, mdi-shoe-heel, _color, _scale)
+!define MA_SHOE_HEEL(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA SHOE HEEL, mdi-shoe-heel, _color, _scale, _shape)
+!define MA_SHOE_HEEL(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA SHOE HEEL, _label, mdi-shoe-heel, _color, _scale, _shape)
+skinparam folderBackgroundColor<<MA SHOE HEEL>> White

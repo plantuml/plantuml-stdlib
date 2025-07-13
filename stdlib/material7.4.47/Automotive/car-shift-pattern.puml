@@ -1,0 +1,8 @@
+sprite mdi-car-shift-pattern <svg width="48" height="48"><g transform="scale(2)"><path d="M8 5H4V2H8V5M4 22H8V19H4V22M14 2H10V5H14V2M10 22H14V19H10V22M16 2V5H20V2H16M17 11H13V7H11V11H7V7H5V17H7V13H11V17H13V13H19V7H17V11Z" /></g></svg>
+
+!define MA_CAR_SHIFT_PATTERN(_color)                                 SPRITE_PUT(mdi-car-shift-pattern, _color)
+!define MA_CAR_SHIFT_PATTERN(_color, _scale)                         SPRITE_PUT(mdi-car-shift-pattern, _color, _scale)
+!define MA_CAR_SHIFT_PATTERN(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA CAR SHIFT PATTERN, mdi-car-shift-pattern, _color, _scale)
+!define MA_CAR_SHIFT_PATTERN(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA CAR SHIFT PATTERN, mdi-car-shift-pattern, _color, _scale, _shape)
+!define MA_CAR_SHIFT_PATTERN(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA CAR SHIFT PATTERN, _label, mdi-car-shift-pattern, _color, _scale, _shape)
+skinparam folderBackgroundColor<<MA CAR SHIFT PATTERN>> White

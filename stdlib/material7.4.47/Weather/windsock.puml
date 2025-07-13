@@ -1,0 +1,8 @@
+sprite mdi-windsock <svg width="48" height="48"><g transform="scale(2)"><path d="M7 5V13L22 11V7L7 5M10 6.91L13 7.31V10.69L10 11.09V6.91M16 7.71L19 8.11V9.89L16 10.29V7.71M5 10V11H6V12H5V21H3V4C3 3.45 3.45 3 4 3S5 3.45 5 4V6H6V7H5V10Z" /></g></svg>
+
+!define MA_WINDSOCK(_color)                                 SPRITE_PUT(mdi-windsock, _color)
+!define MA_WINDSOCK(_color, _scale)                         SPRITE_PUT(mdi-windsock, _color, _scale)
+!define MA_WINDSOCK(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA WINDSOCK, mdi-windsock, _color, _scale)
+!define MA_WINDSOCK(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA WINDSOCK, mdi-windsock, _color, _scale, _shape)
+!define MA_WINDSOCK(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA WINDSOCK, _label, mdi-windsock, _color, _scale, _shape)
+skinparam folderBackgroundColor<<MA WINDSOCK>> White

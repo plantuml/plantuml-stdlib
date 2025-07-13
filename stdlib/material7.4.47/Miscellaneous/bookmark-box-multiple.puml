@@ -1,0 +1,8 @@
+sprite mdi-bookmark-box-multiple <svg width="48" height="48"><g transform="scale(2)"><path d="M4 6H2V20C2 21.1 2.9 22 4 22H18V20H4V6M20 2H8C6.9 2 6 2.9 6 4V16C6 17.1 6.9 18 8 18H20C21.1 18 22 17.1 22 16V4C22 2.9 21.1 2 20 2M20 12L17.5 10.5L15 12V4H20V12Z" /></g></svg>
+
+!define MA_BOOKMARK_BOX_MULTIPLE(_color)                                 SPRITE_PUT(mdi-bookmark-box-multiple, _color)
+!define MA_BOOKMARK_BOX_MULTIPLE(_color, _scale)                         SPRITE_PUT(mdi-bookmark-box-multiple, _color, _scale)
+!define MA_BOOKMARK_BOX_MULTIPLE(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA BOOKMARK BOX MULTIPLE, mdi-bookmark-box-multiple, _color, _scale)
+!define MA_BOOKMARK_BOX_MULTIPLE(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA BOOKMARK BOX MULTIPLE, mdi-bookmark-box-multiple, _color, _scale, _shape)
+!define MA_BOOKMARK_BOX_MULTIPLE(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA BOOKMARK BOX MULTIPLE, _label, mdi-bookmark-box-multiple, _color, _scale, _shape)
+skinparam folderBackgroundColor<<MA BOOKMARK BOX MULTIPLE>> White

@@ -1,0 +1,8 @@
+sprite mdi-star-four-points-small <svg width="48" height="48"><g transform="scale(2)"><path d="M10.74 10.75L12 8L13.25 10.75L16 12L13.25 13.26L12 16L10.74 13.26L8 12L10.74 10.75Z" /></g></svg>
+
+!define MA_STAR_FOUR_POINTS_SMALL(_color)                                 SPRITE_PUT(mdi-star-four-points-small, _color)
+!define MA_STAR_FOUR_POINTS_SMALL(_color, _scale)                         SPRITE_PUT(mdi-star-four-points-small, _color, _scale)
+!define MA_STAR_FOUR_POINTS_SMALL(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA STAR FOUR POINTS SMALL, mdi-star-four-points-small, _color, _scale)
+!define MA_STAR_FOUR_POINTS_SMALL(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA STAR FOUR POINTS SMALL, mdi-star-four-points-small, _color, _scale, _shape)
+!define MA_STAR_FOUR_POINTS_SMALL(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA STAR FOUR POINTS SMALL, _label, mdi-star-four-points-small, _color, _scale, _shape)
+skinparam folderBackgroundColor<<MA STAR FOUR POINTS SMALL>> White

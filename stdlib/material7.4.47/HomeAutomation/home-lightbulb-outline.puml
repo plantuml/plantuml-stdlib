@@ -1,0 +1,8 @@
+sprite mdi-home-lightbulb-outline <svg width="48" height="48"><g transform="scale(2)"><path d="M5 20V12H2L12 3L22 12H19V20H5M12 5.69L7 10.19V18H17V10.19L12 5.69M11 17V16H13V17H11M11 15C10.72 15 10.5 14.78 10.5 14.5V13.6C9.6 13.08 9 12.11 9 11C9 9.34 10.34 8 12 8C13.66 8 15 9.34 15 11C15 12.11 14.4 13.08 13.5 13.6V14.5C13.5 14.78 13.28 15 13 15H11Z" /></g></svg>
+
+!define MA_HOME_LIGHTBULB_OUTLINE(_color)                                 SPRITE_PUT(mdi-home-lightbulb-outline, _color)
+!define MA_HOME_LIGHTBULB_OUTLINE(_color, _scale)                         SPRITE_PUT(mdi-home-lightbulb-outline, _color, _scale)
+!define MA_HOME_LIGHTBULB_OUTLINE(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA HOME LIGHTBULB OUTLINE, mdi-home-lightbulb-outline, _color, _scale)
+!define MA_HOME_LIGHTBULB_OUTLINE(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA HOME LIGHTBULB OUTLINE, mdi-home-lightbulb-outline, _color, _scale, _shape)
+!define MA_HOME_LIGHTBULB_OUTLINE(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA HOME LIGHTBULB OUTLINE, _label, mdi-home-lightbulb-outline, _color, _scale, _shape)
+skinparam folderBackgroundColor<<MA HOME LIGHTBULB OUTLINE>> White

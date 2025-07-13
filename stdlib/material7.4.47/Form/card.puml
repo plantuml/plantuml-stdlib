@@ -1,0 +1,8 @@
+sprite mdi-card <svg width="48" height="48"><g transform="scale(2)"><path d="M20,20H4A2,2 0 0,1 2,18V6A2,2 0 0,1 4,4H20A2,2 0 0,1 22,6V18A2,2 0 0,1 20,20Z" /></g></svg>
+
+!define MA_CARD(_color)                                 SPRITE_PUT(mdi-card, _color)
+!define MA_CARD(_color, _scale)                         SPRITE_PUT(mdi-card, _color, _scale)
+!define MA_CARD(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA CARD, mdi-card, _color, _scale)
+!define MA_CARD(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA CARD, mdi-card, _color, _scale, _shape)
+!define MA_CARD(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA CARD, _label, mdi-card, _color, _scale, _shape)
+skinparam folderBackgroundColor<<MA CARD>> White

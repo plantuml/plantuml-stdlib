@@ -1,0 +1,8 @@
+sprite mdi-credit-card-wireless-outline <svg width="48" height="48"><g transform="scale(2)"><path d="M18,11H6A2,2 0 0,0 4,13V21A2,2 0 0,0 6,23H18A2,2 0 0,0 20,21V13A2,2 0 0,0 18,11M18,21H6V17H18V21M18,15H6V13H18V15M4.93,4.92L6.34,6.33C9.46,3.2 14.53,3.2 17.66,6.33L19.07,4.92C15.17,1 8.84,1 4.93,4.92M7.76,7.75L9.17,9.16C10.73,7.6 13.26,7.6 14.83,9.16L16.24,7.75C13.9,5.41 10.1,5.41 7.76,7.75Z" /></g></svg>
+
+!define MA_CREDIT_CARD_WIRELESS_OUTLINE(_color)                                 SPRITE_PUT(mdi-credit-card-wireless-outline, _color)
+!define MA_CREDIT_CARD_WIRELESS_OUTLINE(_color, _scale)                         SPRITE_PUT(mdi-credit-card-wireless-outline, _color, _scale)
+!define MA_CREDIT_CARD_WIRELESS_OUTLINE(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA CREDIT CARD WIRELESS OUTLINE, mdi-credit-card-wireless-outline, _color, _scale)
+!define MA_CREDIT_CARD_WIRELESS_OUTLINE(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA CREDIT CARD WIRELESS OUTLINE, mdi-credit-card-wireless-outline, _color, _scale, _shape)
+!define MA_CREDIT_CARD_WIRELESS_OUTLINE(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA CREDIT CARD WIRELESS OUTLINE, _label, mdi-credit-card-wireless-outline, _color, _scale, _shape)
+skinparam folderBackgroundColor<<MA CREDIT CARD WIRELESS OUTLINE>> White

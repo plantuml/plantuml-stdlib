@@ -1,0 +1,8 @@
+sprite mdi-music-note-quarter-dotted <svg width="48" height="48"><g transform="scale(2)"><path d="M12 13V13.56A3.96 3.96 0 0 0 10 13A4 4 0 1 0 14 17V3H12M16.5 17A1.5 1.5 0 1 1 15 18.5A1.5 1.5 0 0 1 16.5 17Z" /></g></svg>
+
+!define MA_MUSIC_NOTE_QUARTER_DOTTED(_color)                                 SPRITE_PUT(mdi-music-note-quarter-dotted, _color)
+!define MA_MUSIC_NOTE_QUARTER_DOTTED(_color, _scale)                         SPRITE_PUT(mdi-music-note-quarter-dotted, _color, _scale)
+!define MA_MUSIC_NOTE_QUARTER_DOTTED(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA MUSIC NOTE QUARTER DOTTED, mdi-music-note-quarter-dotted, _color, _scale)
+!define MA_MUSIC_NOTE_QUARTER_DOTTED(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA MUSIC NOTE QUARTER DOTTED, mdi-music-note-quarter-dotted, _color, _scale, _shape)
+!define MA_MUSIC_NOTE_QUARTER_DOTTED(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA MUSIC NOTE QUARTER DOTTED, _label, mdi-music-note-quarter-dotted, _color, _scale, _shape)
+skinparam folderBackgroundColor<<MA MUSIC NOTE QUARTER DOTTED>> White

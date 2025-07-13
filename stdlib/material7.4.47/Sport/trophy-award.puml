@@ -1,0 +1,8 @@
+sprite mdi-trophy-award <svg width="48" height="48"><g transform="scale(2)"><path d="M15.2 10.7L16.6 16L12 12.2L7.4 16L8.8 10.8L4.6 7.3L10 7L12 2L14 7L19.4 7.3L15.2 10.7M14 19H13V16L12 15L11 16V19H10C8.9 19 8 19.9 8 21V22H16V21C16 19.9 15.11 19 14 19Z" /></g></svg>
+
+!define MA_TROPHY_AWARD(_color)                                 SPRITE_PUT(mdi-trophy-award, _color)
+!define MA_TROPHY_AWARD(_color, _scale)                         SPRITE_PUT(mdi-trophy-award, _color, _scale)
+!define MA_TROPHY_AWARD(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA TROPHY AWARD, mdi-trophy-award, _color, _scale)
+!define MA_TROPHY_AWARD(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA TROPHY AWARD, mdi-trophy-award, _color, _scale, _shape)
+!define MA_TROPHY_AWARD(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA TROPHY AWARD, _label, mdi-trophy-award, _color, _scale, _shape)
+skinparam folderBackgroundColor<<MA TROPHY AWARD>> White

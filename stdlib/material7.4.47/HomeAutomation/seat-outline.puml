@@ -1,0 +1,8 @@
+sprite mdi-seat-outline <svg width="48" height="48"><g transform="scale(2)"><path d="M15,5V12H9V5H15M15,3H9A2,2 0 0,0 7,5V14H17V5A2,2 0 0,0 15,3M22,10H19V13H22V10M5,10H2V13H5V10M20,15H4V21H6V17H18V21H20V15Z" /></g></svg>
+
+!define MA_SEAT_OUTLINE(_color)                                 SPRITE_PUT(mdi-seat-outline, _color)
+!define MA_SEAT_OUTLINE(_color, _scale)                         SPRITE_PUT(mdi-seat-outline, _color, _scale)
+!define MA_SEAT_OUTLINE(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA SEAT OUTLINE, mdi-seat-outline, _color, _scale)
+!define MA_SEAT_OUTLINE(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA SEAT OUTLINE, mdi-seat-outline, _color, _scale, _shape)
+!define MA_SEAT_OUTLINE(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA SEAT OUTLINE, _label, mdi-seat-outline, _color, _scale, _shape)
+skinparam folderBackgroundColor<<MA SEAT OUTLINE>> White

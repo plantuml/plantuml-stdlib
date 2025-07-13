@@ -1,0 +1,8 @@
+sprite mdi-roman-numeral-9 <svg width="48" height="48"><g transform="scale(2)"><path d="M11 7V9H10V15H11V17H7V15H8V9H7V7H11M12 7L14 12L12 17H14L15 14.5L16 17H18L16 12L18 7H16L15 9.5L14 7H12Z" /></g></svg>
+
+!define MA_ROMAN_NUMERAL_9(_color)                                 SPRITE_PUT(mdi-roman-numeral-9, _color)
+!define MA_ROMAN_NUMERAL_9(_color, _scale)                         SPRITE_PUT(mdi-roman-numeral-9, _color, _scale)
+!define MA_ROMAN_NUMERAL_9(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA ROMAN NUMERAL 9, mdi-roman-numeral-9, _color, _scale)
+!define MA_ROMAN_NUMERAL_9(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA ROMAN NUMERAL 9, mdi-roman-numeral-9, _color, _scale, _shape)
+!define MA_ROMAN_NUMERAL_9(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA ROMAN NUMERAL 9, _label, mdi-roman-numeral-9, _color, _scale, _shape)
+skinparam folderBackgroundColor<<MA ROMAN NUMERAL 9>> White

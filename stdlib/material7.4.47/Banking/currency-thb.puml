@@ -1,0 +1,8 @@
+sprite mdi-currency-thb <svg width="48" height="48"><g transform="scale(2)"><path d="M16.1 11.6C16.7 10.9 17 10 17 9C17 7.1 15.7 5.6 14 5.1L13 5V3H11V5H7V19H11V21H13V19H14C16.2 19 18 17.2 18 15C18 13.5 17.2 12.3 16.1 11.6M15 9C15 10.1 14.1 11 13 11V7C14.1 7 15 7.9 15 9M9 7H11V11H9V7M9 17V13H11V17H9M14 17H13V13H14C15.1 13 16 13.9 16 15S15.1 17 14 17Z" /></g></svg>
+
+!define MA_CURRENCY_THB(_color)                                 SPRITE_PUT(mdi-currency-thb, _color)
+!define MA_CURRENCY_THB(_color, _scale)                         SPRITE_PUT(mdi-currency-thb, _color, _scale)
+!define MA_CURRENCY_THB(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA CURRENCY THB, mdi-currency-thb, _color, _scale)
+!define MA_CURRENCY_THB(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA CURRENCY THB, mdi-currency-thb, _color, _scale, _shape)
+!define MA_CURRENCY_THB(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA CURRENCY THB, _label, mdi-currency-thb, _color, _scale, _shape)
+skinparam folderBackgroundColor<<MA CURRENCY THB>> White

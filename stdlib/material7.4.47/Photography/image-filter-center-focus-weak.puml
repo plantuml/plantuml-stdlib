@@ -1,0 +1,8 @@
+sprite mdi-image-filter-center-focus-weak <svg width="48" height="48"><g transform="scale(2)"><path d="M5,15H3V19A2,2 0 0,0 5,21H9V19H5M5,5H9V3H5A2,2 0 0,0 3,5V9H5M19,3H15V5H19V9H21V5A2,2 0 0,0 19,3M19,19H15V21H19A2,2 0 0,0 21,19V15H19M12,8A4,4 0 0,0 8,12A4,4 0 0,0 12,16A4,4 0 0,0 16,12A4,4 0 0,0 12,8M12,14A2,2 0 0,1 10,12A2,2 0 0,1 12,10A2,2 0 0,1 14,12A2,2 0 0,1 12,14Z" /></g></svg>
+
+!define MA_IMAGE_FILTER_CENTER_FOCUS_WEAK(_color)                                 SPRITE_PUT(mdi-image-filter-center-focus-weak, _color)
+!define MA_IMAGE_FILTER_CENTER_FOCUS_WEAK(_color, _scale)                         SPRITE_PUT(mdi-image-filter-center-focus-weak, _color, _scale)
+!define MA_IMAGE_FILTER_CENTER_FOCUS_WEAK(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA IMAGE FILTER CENTER FOCUS WEAK, mdi-image-filter-center-focus-weak, _color, _scale)
+!define MA_IMAGE_FILTER_CENTER_FOCUS_WEAK(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA IMAGE FILTER CENTER FOCUS WEAK, mdi-image-filter-center-focus-weak, _color, _scale, _shape)
+!define MA_IMAGE_FILTER_CENTER_FOCUS_WEAK(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA IMAGE FILTER CENTER FOCUS WEAK, _label, mdi-image-filter-center-focus-weak, _color, _scale, _shape)
+skinparam folderBackgroundColor<<MA IMAGE FILTER CENTER FOCUS WEAK>> White

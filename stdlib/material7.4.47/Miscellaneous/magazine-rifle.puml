@@ -1,0 +1,8 @@
+sprite mdi-magazine-rifle <svg width="48" height="48"><g transform="scale(2)"><path d="M7 1V3H8V13L5 19L14 23L18 13V3H19V1M10 3H16V5H11.88V13.45L9.6 18.14L8 17.5L10 13.5Z" /></g></svg>
+
+!define MA_MAGAZINE_RIFLE(_color)                                 SPRITE_PUT(mdi-magazine-rifle, _color)
+!define MA_MAGAZINE_RIFLE(_color, _scale)                         SPRITE_PUT(mdi-magazine-rifle, _color, _scale)
+!define MA_MAGAZINE_RIFLE(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA MAGAZINE RIFLE, mdi-magazine-rifle, _color, _scale)
+!define MA_MAGAZINE_RIFLE(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA MAGAZINE RIFLE, mdi-magazine-rifle, _color, _scale, _shape)
+!define MA_MAGAZINE_RIFLE(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA MAGAZINE RIFLE, _label, mdi-magazine-rifle, _color, _scale, _shape)
+skinparam folderBackgroundColor<<MA MAGAZINE RIFLE>> White

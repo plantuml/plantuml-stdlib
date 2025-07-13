@@ -1,0 +1,8 @@
+sprite mdi-map-marker-check-outline <svg width="48" height="48"><g transform="scale(2)"><path d="M12 4C14.8 4 17 6.2 17 9C17 11.9 14.1 16.2 12 18.9C9.9 16.2 7 11.9 7 9C7 6.2 9.2 4 12 4M12 2C8.1 2 5 5.1 5 9C5 14.2 12 22 12 22S19 14.2 19 9C19 5.1 15.9 2 12 2M11.3 14L16.2 9L14.8 7.6L11.3 11.2L9.7 9.6L8.3 11L11.3 14Z" /></g></svg>
+
+!define MA_MAP_MARKER_CHECK_OUTLINE(_color)                                 SPRITE_PUT(mdi-map-marker-check-outline, _color)
+!define MA_MAP_MARKER_CHECK_OUTLINE(_color, _scale)                         SPRITE_PUT(mdi-map-marker-check-outline, _color, _scale)
+!define MA_MAP_MARKER_CHECK_OUTLINE(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA MAP MARKER CHECK OUTLINE, mdi-map-marker-check-outline, _color, _scale)
+!define MA_MAP_MARKER_CHECK_OUTLINE(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA MAP MARKER CHECK OUTLINE, mdi-map-marker-check-outline, _color, _scale, _shape)
+!define MA_MAP_MARKER_CHECK_OUTLINE(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA MAP MARKER CHECK OUTLINE, _label, mdi-map-marker-check-outline, _color, _scale, _shape)
+skinparam folderBackgroundColor<<MA MAP MARKER CHECK OUTLINE>> White

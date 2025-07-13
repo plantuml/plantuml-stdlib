@@ -1,0 +1,8 @@
+sprite mdi-skip-next <svg width="48" height="48"><g transform="scale(2)"><path d="M16,18H18V6H16M6,18L14.5,12L6,6V18Z" /></g></svg>
+
+!define MA_SKIP_NEXT(_color)                                 SPRITE_PUT(mdi-skip-next, _color)
+!define MA_SKIP_NEXT(_color, _scale)                         SPRITE_PUT(mdi-skip-next, _color, _scale)
+!define MA_SKIP_NEXT(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA SKIP NEXT, mdi-skip-next, _color, _scale)
+!define MA_SKIP_NEXT(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA SKIP NEXT, mdi-skip-next, _color, _scale, _shape)
+!define MA_SKIP_NEXT(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA SKIP NEXT, _label, mdi-skip-next, _color, _scale, _shape)
+skinparam folderBackgroundColor<<MA SKIP NEXT>> White

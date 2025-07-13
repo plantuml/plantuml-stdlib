@@ -1,0 +1,8 @@
+sprite mdi-domain-switch <svg width="48" height="48"><g transform="scale(2)"><path d="M16 9H18V11H16V9M22 15V5H12V1H2V15H22M20 13H12V11H14V9H12V7H20V13M8 5V3H10V5H8M8 9V7H10V9H8M8 13V11H10V13H8M4 5V3H6V5H4M4 9V7H6V9H4M4 13V11H6V13H4M9 17V19H15V17L18 20L15 23V21H9V23L6 20L9 17Z" /></g></svg>
+
+!define MA_DOMAIN_SWITCH(_color)                                 SPRITE_PUT(mdi-domain-switch, _color)
+!define MA_DOMAIN_SWITCH(_color, _scale)                         SPRITE_PUT(mdi-domain-switch, _color, _scale)
+!define MA_DOMAIN_SWITCH(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA DOMAIN SWITCH, mdi-domain-switch, _color, _scale)
+!define MA_DOMAIN_SWITCH(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA DOMAIN SWITCH, mdi-domain-switch, _color, _scale, _shape)
+!define MA_DOMAIN_SWITCH(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA DOMAIN SWITCH, _label, mdi-domain-switch, _color, _scale, _shape)
+skinparam folderBackgroundColor<<MA DOMAIN SWITCH>> White

@@ -1,0 +1,8 @@
+sprite mdi-television-box <svg width="48" height="48"><g transform="scale(2)"><path d="M5,3H19A2,2 0 0,1 21,5V19A2,2 0 0,1 19,21H5A2,2 0 0,1 3,19V5A2,2 0 0,1 5,3M16,16L19,8H16.5L15,12.5L13.5,8H5V10H8V16H10V10H11.77L14,16H16Z" /></g></svg>
+
+!define MA_TELEVISION_BOX(_color)                                 SPRITE_PUT(mdi-television-box, _color)
+!define MA_TELEVISION_BOX(_color, _scale)                         SPRITE_PUT(mdi-television-box, _color, _scale)
+!define MA_TELEVISION_BOX(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA TELEVISION BOX, mdi-television-box, _color, _scale)
+!define MA_TELEVISION_BOX(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA TELEVISION BOX, mdi-television-box, _color, _scale, _shape)
+!define MA_TELEVISION_BOX(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA TELEVISION BOX, _label, mdi-television-box, _color, _scale, _shape)
+skinparam folderBackgroundColor<<MA TELEVISION BOX>> White

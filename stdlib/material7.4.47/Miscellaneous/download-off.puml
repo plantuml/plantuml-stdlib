@@ -1,0 +1,8 @@
+sprite mdi-download-off <svg width="48" height="48"><g transform="scale(2)"><path d="M20.84 22.73L18.11 20H5V18H16.11L13.06 14.95L12 16L5 9H7.11L1.11 3L2.39 1.73L22.11 21.46L20.84 22.73M19 9H15V3H9V5.8L15.6 12.4L19 9Z" /></g></svg>
+
+!define MA_DOWNLOAD_OFF(_color)                                 SPRITE_PUT(mdi-download-off, _color)
+!define MA_DOWNLOAD_OFF(_color, _scale)                         SPRITE_PUT(mdi-download-off, _color, _scale)
+!define MA_DOWNLOAD_OFF(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA DOWNLOAD OFF, mdi-download-off, _color, _scale)
+!define MA_DOWNLOAD_OFF(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA DOWNLOAD OFF, mdi-download-off, _color, _scale, _shape)
+!define MA_DOWNLOAD_OFF(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA DOWNLOAD OFF, _label, mdi-download-off, _color, _scale, _shape)
+skinparam folderBackgroundColor<<MA DOWNLOAD OFF>> White

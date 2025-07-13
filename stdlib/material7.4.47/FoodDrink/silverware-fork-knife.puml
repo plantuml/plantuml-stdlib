@@ -1,0 +1,8 @@
+sprite mdi-silverware-fork-knife <svg width="48" height="48"><g transform="scale(2)"><path d="M11,9H9V2H7V9H5V2H3V9C3,11.12 4.66,12.84 6.75,12.97V22H9.25V12.97C11.34,12.84 13,11.12 13,9V2H11V9M16,6V14H18.5V22H21V2C18.24,2 16,4.24 16,6Z" /></g></svg>
+
+!define MA_SILVERWARE_FORK_KNIFE(_color)                                 SPRITE_PUT(mdi-silverware-fork-knife, _color)
+!define MA_SILVERWARE_FORK_KNIFE(_color, _scale)                         SPRITE_PUT(mdi-silverware-fork-knife, _color, _scale)
+!define MA_SILVERWARE_FORK_KNIFE(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA SILVERWARE FORK KNIFE, mdi-silverware-fork-knife, _color, _scale)
+!define MA_SILVERWARE_FORK_KNIFE(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA SILVERWARE FORK KNIFE, mdi-silverware-fork-knife, _color, _scale, _shape)
+!define MA_SILVERWARE_FORK_KNIFE(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA SILVERWARE FORK KNIFE, _label, mdi-silverware-fork-knife, _color, _scale, _shape)
+skinparam folderBackgroundColor<<MA SILVERWARE FORK KNIFE>> White

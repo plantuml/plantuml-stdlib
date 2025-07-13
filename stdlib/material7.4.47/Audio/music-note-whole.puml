@@ -1,0 +1,8 @@
+sprite mdi-music-note-whole <svg width="48" height="48"><g transform="scale(2)"><path d="M12 15A2 2 0 1 1 10 17A2 2 0 0 1 12 15M12 13A4 4 0 1 0 16 17A4 4 0 0 0 12 13Z" /></g></svg>
+
+!define MA_MUSIC_NOTE_WHOLE(_color)                                 SPRITE_PUT(mdi-music-note-whole, _color)
+!define MA_MUSIC_NOTE_WHOLE(_color, _scale)                         SPRITE_PUT(mdi-music-note-whole, _color, _scale)
+!define MA_MUSIC_NOTE_WHOLE(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA MUSIC NOTE WHOLE, mdi-music-note-whole, _color, _scale)
+!define MA_MUSIC_NOTE_WHOLE(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA MUSIC NOTE WHOLE, mdi-music-note-whole, _color, _scale, _shape)
+!define MA_MUSIC_NOTE_WHOLE(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA MUSIC NOTE WHOLE, _label, mdi-music-note-whole, _color, _scale, _shape)
+skinparam folderBackgroundColor<<MA MUSIC NOTE WHOLE>> White

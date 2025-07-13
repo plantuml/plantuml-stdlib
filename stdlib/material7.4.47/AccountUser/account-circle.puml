@@ -1,0 +1,8 @@
+sprite mdi-account-circle <svg width="48" height="48"><g transform="scale(2)"><path d="M12,19.2C9.5,19.2 7.29,17.92 6,16C6.03,14 10,12.9 12,12.9C14,12.9 17.97,14 18,16C16.71,17.92 14.5,19.2 12,19.2M12,5A3,3 0 0,1 15,8A3,3 0 0,1 12,11A3,3 0 0,1 9,8A3,3 0 0,1 12,5M12,2A10,10 0 0,0 2,12A10,10 0 0,0 12,22A10,10 0 0,0 22,12C22,6.47 17.5,2 12,2Z" /></g></svg>
+
+!define MA_ACCOUNT_CIRCLE(_color)                                 SPRITE_PUT(mdi-account-circle, _color)
+!define MA_ACCOUNT_CIRCLE(_color, _scale)                         SPRITE_PUT(mdi-account-circle, _color, _scale)
+!define MA_ACCOUNT_CIRCLE(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA ACCOUNT CIRCLE, mdi-account-circle, _color, _scale)
+!define MA_ACCOUNT_CIRCLE(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA ACCOUNT CIRCLE, mdi-account-circle, _color, _scale, _shape)
+!define MA_ACCOUNT_CIRCLE(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA ACCOUNT CIRCLE, _label, mdi-account-circle, _color, _scale, _shape)
+skinparam folderBackgroundColor<<MA ACCOUNT CIRCLE>> White

@@ -1,0 +1,8 @@
+sprite mdi-post-lamp <svg width="48" height="48"><g transform="scale(2)"><path d="M14 3L13 1H11L10 3L5 6H7L8 14L10 16L10.5 17H9V23H15V17H13.5L14 16L16 14L17 6H19L14 3M14.16 13H9.84L9 6H15L14.16 13Z" /></g></svg>
+
+!define MA_POST_LAMP(_color)                                 SPRITE_PUT(mdi-post-lamp, _color)
+!define MA_POST_LAMP(_color, _scale)                         SPRITE_PUT(mdi-post-lamp, _color, _scale)
+!define MA_POST_LAMP(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA POST LAMP, mdi-post-lamp, _color, _scale)
+!define MA_POST_LAMP(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA POST LAMP, mdi-post-lamp, _color, _scale, _shape)
+!define MA_POST_LAMP(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA POST LAMP, _label, mdi-post-lamp, _color, _scale, _shape)
+skinparam folderBackgroundColor<<MA POST LAMP>> White

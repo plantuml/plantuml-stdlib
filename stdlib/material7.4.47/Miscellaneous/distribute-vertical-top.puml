@@ -1,0 +1,8 @@
+sprite mdi-distribute-vertical-top <svg width="48" height="48"><g transform="scale(2)"><path d="M17 21H7V16H2V14H22V16H17V21M22 5V3H2V5H5V10H19V5H22Z" /></g></svg>
+
+!define MA_DISTRIBUTE_VERTICAL_TOP(_color)                                 SPRITE_PUT(mdi-distribute-vertical-top, _color)
+!define MA_DISTRIBUTE_VERTICAL_TOP(_color, _scale)                         SPRITE_PUT(mdi-distribute-vertical-top, _color, _scale)
+!define MA_DISTRIBUTE_VERTICAL_TOP(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA DISTRIBUTE VERTICAL TOP, mdi-distribute-vertical-top, _color, _scale)
+!define MA_DISTRIBUTE_VERTICAL_TOP(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA DISTRIBUTE VERTICAL TOP, mdi-distribute-vertical-top, _color, _scale, _shape)
+!define MA_DISTRIBUTE_VERTICAL_TOP(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA DISTRIBUTE VERTICAL TOP, _label, mdi-distribute-vertical-top, _color, _scale, _shape)
+skinparam folderBackgroundColor<<MA DISTRIBUTE VERTICAL TOP>> White

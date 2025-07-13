@@ -1,0 +1,8 @@
+sprite mdi-signal-5g <svg width="48" height="48"><g transform="scale(2)"><path d="M22,16.5V10.5H17.5V13.5H19V16.5H16V7.5H22V4.5H16A3,3 0 0,0 13,7.5V16.5A3,3 0 0,0 16,19.5H19A3,3 0 0,0 22,16.5M10,4.5H3V12L3,13.5H7V16.5H3V19.5H8.5A1.5,1.5 0 0,0 10,18V12A1.5,1.5 0 0,0 8.5,10.5H6V7.5H10V4.5Z" /></g></svg>
+
+!define MA_SIGNAL_5G(_color)                                 SPRITE_PUT(mdi-signal-5g, _color)
+!define MA_SIGNAL_5G(_color, _scale)                         SPRITE_PUT(mdi-signal-5g, _color, _scale)
+!define MA_SIGNAL_5G(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA SIGNAL 5G, mdi-signal-5g, _color, _scale)
+!define MA_SIGNAL_5G(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA SIGNAL 5G, mdi-signal-5g, _color, _scale, _shape)
+!define MA_SIGNAL_5G(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA SIGNAL 5G, _label, mdi-signal-5g, _color, _scale, _shape)
+skinparam folderBackgroundColor<<MA SIGNAL 5G>> White

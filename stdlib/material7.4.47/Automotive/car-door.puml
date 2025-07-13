@@ -1,0 +1,8 @@
+sprite mdi-car-door <svg width="48" height="48"><g transform="scale(2)"><path d="M19,14H16V16H19V14M22,21H3V11L11,3H21A1,1 0 0,1 22,4V21M11.83,5L5.83,11H20V5H11.83Z" /></g></svg>
+
+!define MA_CAR_DOOR(_color)                                 SPRITE_PUT(mdi-car-door, _color)
+!define MA_CAR_DOOR(_color, _scale)                         SPRITE_PUT(mdi-car-door, _color, _scale)
+!define MA_CAR_DOOR(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA CAR DOOR, mdi-car-door, _color, _scale)
+!define MA_CAR_DOOR(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA CAR DOOR, mdi-car-door, _color, _scale, _shape)
+!define MA_CAR_DOOR(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA CAR DOOR, _label, mdi-car-door, _color, _scale, _shape)
+skinparam folderBackgroundColor<<MA CAR DOOR>> White

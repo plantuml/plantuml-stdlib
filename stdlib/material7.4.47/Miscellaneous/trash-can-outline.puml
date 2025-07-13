@@ -1,0 +1,8 @@
+sprite mdi-trash-can-outline <svg width="48" height="48"><g transform="scale(2)"><path d="M9,3V4H4V6H5V19A2,2 0 0,0 7,21H17A2,2 0 0,0 19,19V6H20V4H15V3H9M7,6H17V19H7V6M9,8V17H11V8H9M13,8V17H15V8H13Z" /></g></svg>
+
+!define MA_TRASH_CAN_OUTLINE(_color)                                 SPRITE_PUT(mdi-trash-can-outline, _color)
+!define MA_TRASH_CAN_OUTLINE(_color, _scale)                         SPRITE_PUT(mdi-trash-can-outline, _color, _scale)
+!define MA_TRASH_CAN_OUTLINE(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA TRASH CAN OUTLINE, mdi-trash-can-outline, _color, _scale)
+!define MA_TRASH_CAN_OUTLINE(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA TRASH CAN OUTLINE, mdi-trash-can-outline, _color, _scale, _shape)
+!define MA_TRASH_CAN_OUTLINE(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA TRASH CAN OUTLINE, _label, mdi-trash-can-outline, _color, _scale, _shape)
+skinparam folderBackgroundColor<<MA TRASH CAN OUTLINE>> White

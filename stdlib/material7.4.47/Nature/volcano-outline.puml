@@ -1,0 +1,8 @@
+sprite mdi-volcano-outline <svg width="48" height="48"><g transform="scale(2)"><path d="M18 8H11L9 13H6L2 22H22L18 8M7.3 15H10.35L10.85 13.74L12.35 10H16.5L19.35 20H5.08L7.3 15M13 1H15V5H13V1M16.12 5.47L18.95 2.64L20.36 4.05L17.54 6.88L16.12 5.47M7.64 4.05L9.05 2.64L11.88 5.46L10.47 6.88L7.64 4.05Z" /></g></svg>
+
+!define MA_VOLCANO_OUTLINE(_color)                                 SPRITE_PUT(mdi-volcano-outline, _color)
+!define MA_VOLCANO_OUTLINE(_color, _scale)                         SPRITE_PUT(mdi-volcano-outline, _color, _scale)
+!define MA_VOLCANO_OUTLINE(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA VOLCANO OUTLINE, mdi-volcano-outline, _color, _scale)
+!define MA_VOLCANO_OUTLINE(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA VOLCANO OUTLINE, mdi-volcano-outline, _color, _scale, _shape)
+!define MA_VOLCANO_OUTLINE(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA VOLCANO OUTLINE, _label, mdi-volcano-outline, _color, _scale, _shape)
+skinparam folderBackgroundColor<<MA VOLCANO OUTLINE>> White

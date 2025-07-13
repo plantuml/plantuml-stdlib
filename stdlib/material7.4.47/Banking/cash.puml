@@ -1,0 +1,8 @@
+sprite mdi-cash <svg width="48" height="48"><g transform="scale(2)"><path d="M3,6H21V18H3V6M12,9A3,3 0 0,1 15,12A3,3 0 0,1 12,15A3,3 0 0,1 9,12A3,3 0 0,1 12,9M7,8A2,2 0 0,1 5,10V14A2,2 0 0,1 7,16H17A2,2 0 0,1 19,14V10A2,2 0 0,1 17,8H7Z" /></g></svg>
+
+!define MA_CASH(_color)                                 SPRITE_PUT(mdi-cash, _color)
+!define MA_CASH(_color, _scale)                         SPRITE_PUT(mdi-cash, _color, _scale)
+!define MA_CASH(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA CASH, mdi-cash, _color, _scale)
+!define MA_CASH(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA CASH, mdi-cash, _color, _scale, _shape)
+!define MA_CASH(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA CASH, _label, mdi-cash, _color, _scale, _shape)
+skinparam folderBackgroundColor<<MA CASH>> White

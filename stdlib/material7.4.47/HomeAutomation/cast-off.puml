@@ -1,0 +1,8 @@
+sprite mdi-cast-off <svg width="48" height="48"><g transform="scale(2)"><path d="M1.6,1.27L0.25,2.75L1.41,3.8C1.16,4.13 1,4.55 1,5V8H3V5.23L18.2,19H14V21H20.41L22.31,22.72L23.65,21.24M6.5,3L8.7,5H21V16.14L23,17.95V5C23,3.89 22.1,3 21,3M1,10V12A9,9 0 0,1 10,21H12C12,14.92 7.08,10 1,10M1,14V16A5,5 0 0,1 6,21H8A7,7 0 0,0 1,14M1,18V21H4A3,3 0 0,0 1,18Z" /></g></svg>
+
+!define MA_CAST_OFF(_color)                                 SPRITE_PUT(mdi-cast-off, _color)
+!define MA_CAST_OFF(_color, _scale)                         SPRITE_PUT(mdi-cast-off, _color, _scale)
+!define MA_CAST_OFF(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA CAST OFF, mdi-cast-off, _color, _scale)
+!define MA_CAST_OFF(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA CAST OFF, mdi-cast-off, _color, _scale, _shape)
+!define MA_CAST_OFF(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA CAST OFF, _label, mdi-cast-off, _color, _scale, _shape)
+skinparam folderBackgroundColor<<MA CAST OFF>> White

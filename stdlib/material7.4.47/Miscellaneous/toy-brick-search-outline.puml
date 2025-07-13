@@ -1,0 +1,8 @@
+sprite mdi-toy-brick-search-outline <svg width="48" height="48"><g transform="scale(2)"><path d="M19 6V5A2 2 0 0 0 17 3H15A2 2 0 0 0 13 5V6H11V5A2 2 0 0 0 9 3H7A2 2 0 0 0 5 5V6H3V20H11.81A6.59 6.59 0 0 1 10.5 18H5V8H19V9.5A6.59 6.59 0 0 1 21 10.81V6M20.31 17.9A4.5 4.5 0 1 0 18.88 19.32L22 22.39L23.39 21M16.5 18A2.5 2.5 0 1 1 19 15.5A2.5 2.5 0 0 1 16.5 18Z" /></g></svg>
+
+!define MA_TOY_BRICK_SEARCH_OUTLINE(_color)                                 SPRITE_PUT(mdi-toy-brick-search-outline, _color)
+!define MA_TOY_BRICK_SEARCH_OUTLINE(_color, _scale)                         SPRITE_PUT(mdi-toy-brick-search-outline, _color, _scale)
+!define MA_TOY_BRICK_SEARCH_OUTLINE(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA TOY BRICK SEARCH OUTLINE, mdi-toy-brick-search-outline, _color, _scale)
+!define MA_TOY_BRICK_SEARCH_OUTLINE(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA TOY BRICK SEARCH OUTLINE, mdi-toy-brick-search-outline, _color, _scale, _shape)
+!define MA_TOY_BRICK_SEARCH_OUTLINE(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA TOY BRICK SEARCH OUTLINE, _label, mdi-toy-brick-search-outline, _color, _scale, _shape)
+skinparam folderBackgroundColor<<MA TOY BRICK SEARCH OUTLINE>> White

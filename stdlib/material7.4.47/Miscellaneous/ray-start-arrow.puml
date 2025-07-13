@@ -1,0 +1,8 @@
+sprite mdi-ray-start-arrow <svg width="48" height="48"><g transform="scale(2)"><path d="M23,12L19,16V13H6.83C6.42,14.17 5.31,15 4,15A3,3 0 0,1 1,12A3,3 0 0,1 4,9C5.31,9 6.42,9.83 6.83,11H19V8L23,12Z" /></g></svg>
+
+!define MA_RAY_START_ARROW(_color)                                 SPRITE_PUT(mdi-ray-start-arrow, _color)
+!define MA_RAY_START_ARROW(_color, _scale)                         SPRITE_PUT(mdi-ray-start-arrow, _color, _scale)
+!define MA_RAY_START_ARROW(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA RAY START ARROW, mdi-ray-start-arrow, _color, _scale)
+!define MA_RAY_START_ARROW(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA RAY START ARROW, mdi-ray-start-arrow, _color, _scale, _shape)
+!define MA_RAY_START_ARROW(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA RAY START ARROW, _label, mdi-ray-start-arrow, _color, _scale, _shape)
+skinparam folderBackgroundColor<<MA RAY START ARROW>> White

@@ -1,0 +1,8 @@
+sprite mdi-page-first <svg width="48" height="48"><g transform="scale(2)"><path d="M18.41,16.59L13.82,12L18.41,7.41L17,6L11,12L17,18L18.41,16.59M6,6H8V18H6V6Z" /></g></svg>
+
+!define MA_PAGE_FIRST(_color)                                 SPRITE_PUT(mdi-page-first, _color)
+!define MA_PAGE_FIRST(_color, _scale)                         SPRITE_PUT(mdi-page-first, _color, _scale)
+!define MA_PAGE_FIRST(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA PAGE FIRST, mdi-page-first, _color, _scale)
+!define MA_PAGE_FIRST(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA PAGE FIRST, mdi-page-first, _color, _scale, _shape)
+!define MA_PAGE_FIRST(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA PAGE FIRST, _label, mdi-page-first, _color, _scale, _shape)
+skinparam folderBackgroundColor<<MA PAGE FIRST>> White
