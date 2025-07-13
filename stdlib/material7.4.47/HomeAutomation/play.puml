@@ -1,0 +1,8 @@
+sprite mdi-play <svg width="48" height="48"><g transform="scale(2)"><path d="M8,5.14V19.14L19,12.14L8,5.14Z" /></g></svg>
+
+!define MA_PLAY(_color)                                 SPRITE_PUT(mdi-play, _color)
+!define MA_PLAY(_color, _scale)                         SPRITE_PUT(mdi-play, _color, _scale)
+!define MA_PLAY(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA PLAY, mdi-play, _color, _scale)
+!define MA_PLAY(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA PLAY, mdi-play, _color, _scale, _shape)
+!define MA_PLAY(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA PLAY, _label, mdi-play, _color, _scale, _shape)
+skinparam folderBackgroundColor<<MA PLAY>> White

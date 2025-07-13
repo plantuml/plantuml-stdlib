@@ -1,0 +1,8 @@
+sprite mdi-tram <svg width="48" height="48"><g transform="scale(2)"><path d="M19,16.94V8.5C19,5.71 16.39,5.1 13,5L13.75,3.5H17V2H7V3.5H11.75L11,5C7.86,5.11 5,5.73 5,8.5V16.94C5,18.39 6.19,19.6 7.59,19.91L6,21.5V22H8.23L10.23,20H14L16,22H18V21.5L16.5,20H16.42C18.11,20 19,18.63 19,16.94M12,18.5A1.5,1.5 0 0,1 10.5,17A1.5,1.5 0 0,1 12,15.5A1.5,1.5 0 0,1 13.5,17A1.5,1.5 0 0,1 12,18.5M17,14H7V9H17V14Z" /></g></svg>
+
+!define MA_TRAM(_color)                                 SPRITE_PUT(mdi-tram, _color)
+!define MA_TRAM(_color, _scale)                         SPRITE_PUT(mdi-tram, _color, _scale)
+!define MA_TRAM(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA TRAM, mdi-tram, _color, _scale)
+!define MA_TRAM(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA TRAM, mdi-tram, _color, _scale, _shape)
+!define MA_TRAM(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA TRAM, _label, mdi-tram, _color, _scale, _shape)
+skinparam folderBackgroundColor<<MA TRAM>> White

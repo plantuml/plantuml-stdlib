@@ -1,0 +1,8 @@
+sprite mdi-credit-card-multiple-outline <svg width="48" height="48"><g transform="scale(2)"><path d="M21,8V6H7V8H21M21,16V11H7V16H21M21,4A2,2 0 0,1 23,6V16A2,2 0 0,1 21,18H7C5.89,18 5,17.1 5,16V6C5,4.89 5.89,4 7,4H21M3,20H18V22H3A2,2 0 0,1 1,20V9H3V20Z" /></g></svg>
+
+!define MA_CREDIT_CARD_MULTIPLE_OUTLINE(_color)                                 SPRITE_PUT(mdi-credit-card-multiple-outline, _color)
+!define MA_CREDIT_CARD_MULTIPLE_OUTLINE(_color, _scale)                         SPRITE_PUT(mdi-credit-card-multiple-outline, _color, _scale)
+!define MA_CREDIT_CARD_MULTIPLE_OUTLINE(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA CREDIT CARD MULTIPLE OUTLINE, mdi-credit-card-multiple-outline, _color, _scale)
+!define MA_CREDIT_CARD_MULTIPLE_OUTLINE(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA CREDIT CARD MULTIPLE OUTLINE, mdi-credit-card-multiple-outline, _color, _scale, _shape)
+!define MA_CREDIT_CARD_MULTIPLE_OUTLINE(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA CREDIT CARD MULTIPLE OUTLINE, _label, mdi-credit-card-multiple-outline, _color, _scale, _shape)
+skinparam folderBackgroundColor<<MA CREDIT CARD MULTIPLE OUTLINE>> White

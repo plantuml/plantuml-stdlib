@@ -1,0 +1,8 @@
+sprite mdi-cellphone-dock <svg width="48" height="48"><g transform="scale(2)"><path d="M16,15H8V5H16M16,1H8C6.89,1 6,1.89 6,3V17A2,2 0 0,0 8,19H16A2,2 0 0,0 18,17V3C18,1.89 17.1,1 16,1M8,23H16V21H8V23Z" /></g></svg>
+
+!define MA_CELLPHONE_DOCK(_color)                                 SPRITE_PUT(mdi-cellphone-dock, _color)
+!define MA_CELLPHONE_DOCK(_color, _scale)                         SPRITE_PUT(mdi-cellphone-dock, _color, _scale)
+!define MA_CELLPHONE_DOCK(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA CELLPHONE DOCK, mdi-cellphone-dock, _color, _scale)
+!define MA_CELLPHONE_DOCK(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA CELLPHONE DOCK, mdi-cellphone-dock, _color, _scale, _shape)
+!define MA_CELLPHONE_DOCK(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA CELLPHONE DOCK, _label, mdi-cellphone-dock, _color, _scale, _shape)
+skinparam folderBackgroundColor<<MA CELLPHONE DOCK>> White

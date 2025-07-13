@@ -1,0 +1,8 @@
+sprite mdi-open-in-new <svg width="48" height="48"><g transform="scale(2)"><path d="M14,3V5H17.59L7.76,14.83L9.17,16.24L19,6.41V10H21V3M19,19H5V5H12V3H5C3.89,3 3,3.9 3,5V19A2,2 0 0,0 5,21H19A2,2 0 0,0 21,19V12H19V19Z" /></g></svg>
+
+!define MA_OPEN_IN_NEW(_color)                                 SPRITE_PUT(mdi-open-in-new, _color)
+!define MA_OPEN_IN_NEW(_color, _scale)                         SPRITE_PUT(mdi-open-in-new, _color, _scale)
+!define MA_OPEN_IN_NEW(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA OPEN IN NEW, mdi-open-in-new, _color, _scale)
+!define MA_OPEN_IN_NEW(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA OPEN IN NEW, mdi-open-in-new, _color, _scale, _shape)
+!define MA_OPEN_IN_NEW(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA OPEN IN NEW, _label, mdi-open-in-new, _color, _scale, _shape)
+skinparam folderBackgroundColor<<MA OPEN IN NEW>> White

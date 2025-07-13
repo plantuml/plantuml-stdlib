@@ -1,0 +1,8 @@
+sprite mdi-ufo <svg width="48" height="48"><g transform="scale(2)"><path d="M15.94 10.28C15.66 7.87 14 6 12 6S8.34 7.87 8.06 10.28C4.5 10.82 2 12.06 2 13.5C2 15.43 6.5 17 12 17S22 15.43 22 13.5C22 12.06 19.5 10.82 15.94 10.28Z" /></g></svg>
+
+!define MA_UFO(_color)                                 SPRITE_PUT(mdi-ufo, _color)
+!define MA_UFO(_color, _scale)                         SPRITE_PUT(mdi-ufo, _color, _scale)
+!define MA_UFO(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA UFO, mdi-ufo, _color, _scale)
+!define MA_UFO(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA UFO, mdi-ufo, _color, _scale, _shape)
+!define MA_UFO(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA UFO, _label, mdi-ufo, _color, _scale, _shape)
+skinparam folderBackgroundColor<<MA UFO>> White

@@ -1,0 +1,8 @@
+sprite mdi-triforce <svg width="48" height="48"><g transform="scale(2)"><path d="M1.5,21L12,3.5L22.5,21H1.5M12,21L17,12H7L12,21Z" /></g></svg>
+
+!define MA_TRIFORCE(_color)                                 SPRITE_PUT(mdi-triforce, _color)
+!define MA_TRIFORCE(_color, _scale)                         SPRITE_PUT(mdi-triforce, _color, _scale)
+!define MA_TRIFORCE(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA TRIFORCE, mdi-triforce, _color, _scale)
+!define MA_TRIFORCE(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA TRIFORCE, mdi-triforce, _color, _scale, _shape)
+!define MA_TRIFORCE(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA TRIFORCE, _label, mdi-triforce, _color, _scale, _shape)
+skinparam folderBackgroundColor<<MA TRIFORCE>> White

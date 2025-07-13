@@ -1,0 +1,8 @@
+sprite mdi-storage-tank <svg width="48" height="48"><g transform="scale(2)"><path d="M17 6H16V5C16 3.9 15.1 3 14 3H10C8.9 3 8 3.9 8 5V6H7C3.69 6 1 8.69 1 12S3.69 18 7 18V21H9V18H15V21H17V18C20.31 18 23 15.31 23 12S20.31 6 17 6M10 5H14V6H10V5Z" /></g></svg>
+
+!define MA_STORAGE_TANK(_color)                                 SPRITE_PUT(mdi-storage-tank, _color)
+!define MA_STORAGE_TANK(_color, _scale)                         SPRITE_PUT(mdi-storage-tank, _color, _scale)
+!define MA_STORAGE_TANK(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA STORAGE TANK, mdi-storage-tank, _color, _scale)
+!define MA_STORAGE_TANK(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA STORAGE TANK, mdi-storage-tank, _color, _scale, _shape)
+!define MA_STORAGE_TANK(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA STORAGE TANK, _label, mdi-storage-tank, _color, _scale, _shape)
+skinparam folderBackgroundColor<<MA STORAGE TANK>> White

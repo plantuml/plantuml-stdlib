@@ -1,0 +1,8 @@
+sprite mdi-arrow-expand-up <svg width="48" height="48"><g transform="scale(2)"><path d="M2,20V22H22V20H13V5.83L18.5,11.33L19.92,9.92L12,2L4.08,9.92L5.5,11.33L11,5.83V20H2Z" /></g></svg>
+
+!define MA_ARROW_EXPAND_UP(_color)                                 SPRITE_PUT(mdi-arrow-expand-up, _color)
+!define MA_ARROW_EXPAND_UP(_color, _scale)                         SPRITE_PUT(mdi-arrow-expand-up, _color, _scale)
+!define MA_ARROW_EXPAND_UP(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA ARROW EXPAND UP, mdi-arrow-expand-up, _color, _scale)
+!define MA_ARROW_EXPAND_UP(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA ARROW EXPAND UP, mdi-arrow-expand-up, _color, _scale, _shape)
+!define MA_ARROW_EXPAND_UP(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA ARROW EXPAND UP, _label, mdi-arrow-expand-up, _color, _scale, _shape)
+skinparam folderBackgroundColor<<MA ARROW EXPAND UP>> White

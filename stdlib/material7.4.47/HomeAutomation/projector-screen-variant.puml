@@ -1,0 +1,8 @@
+sprite mdi-projector-screen-variant <svg width="48" height="48"><g transform="scale(2)"><path d="M19 18V9H20C20.55 9 21 8.55 21 8V7C21 6.45 20.55 6 20 6H4C3.45 6 3 6.45 3 7V8C3 8.55 3.45 9 4 9H5V18H19Z" /></g></svg>
+
+!define MA_PROJECTOR_SCREEN_VARIANT(_color)                                 SPRITE_PUT(mdi-projector-screen-variant, _color)
+!define MA_PROJECTOR_SCREEN_VARIANT(_color, _scale)                         SPRITE_PUT(mdi-projector-screen-variant, _color, _scale)
+!define MA_PROJECTOR_SCREEN_VARIANT(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA PROJECTOR SCREEN VARIANT, mdi-projector-screen-variant, _color, _scale)
+!define MA_PROJECTOR_SCREEN_VARIANT(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA PROJECTOR SCREEN VARIANT, mdi-projector-screen-variant, _color, _scale, _shape)
+!define MA_PROJECTOR_SCREEN_VARIANT(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA PROJECTOR SCREEN VARIANT, _label, mdi-projector-screen-variant, _color, _scale, _shape)
+skinparam folderBackgroundColor<<MA PROJECTOR SCREEN VARIANT>> White

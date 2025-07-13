@@ -1,0 +1,8 @@
+sprite mdi-floor-lamp-torchiere-outline <svg width="48" height="48"><g transform="scale(2)"><path d="M14 4L12.7 7H11.3L10 4H14M17 2H7L10 9H14L17 2M13 20H16V22H8V20H11V10H13V20Z" /></g></svg>
+
+!define MA_FLOOR_LAMP_TORCHIERE_OUTLINE(_color)                                 SPRITE_PUT(mdi-floor-lamp-torchiere-outline, _color)
+!define MA_FLOOR_LAMP_TORCHIERE_OUTLINE(_color, _scale)                         SPRITE_PUT(mdi-floor-lamp-torchiere-outline, _color, _scale)
+!define MA_FLOOR_LAMP_TORCHIERE_OUTLINE(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA FLOOR LAMP TORCHIERE OUTLINE, mdi-floor-lamp-torchiere-outline, _color, _scale)
+!define MA_FLOOR_LAMP_TORCHIERE_OUTLINE(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA FLOOR LAMP TORCHIERE OUTLINE, mdi-floor-lamp-torchiere-outline, _color, _scale, _shape)
+!define MA_FLOOR_LAMP_TORCHIERE_OUTLINE(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA FLOOR LAMP TORCHIERE OUTLINE, _label, mdi-floor-lamp-torchiere-outline, _color, _scale, _shape)
+skinparam folderBackgroundColor<<MA FLOOR LAMP TORCHIERE OUTLINE>> White

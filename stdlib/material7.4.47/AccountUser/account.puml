@@ -1,0 +1,8 @@
+sprite mdi-account <svg width="48" height="48"><g transform="scale(2)"><path d="M12,4A4,4 0 0,1 16,8A4,4 0 0,1 12,12A4,4 0 0,1 8,8A4,4 0 0,1 12,4M12,14C16.42,14 20,15.79 20,18V20H4V18C4,15.79 7.58,14 12,14Z" /></g></svg>
+
+!define MA_ACCOUNT(_color)                                 SPRITE_PUT(mdi-account, _color)
+!define MA_ACCOUNT(_color, _scale)                         SPRITE_PUT(mdi-account, _color, _scale)
+!define MA_ACCOUNT(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA ACCOUNT, mdi-account, _color, _scale)
+!define MA_ACCOUNT(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA ACCOUNT, mdi-account, _color, _scale, _shape)
+!define MA_ACCOUNT(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA ACCOUNT, _label, mdi-account, _color, _scale, _shape)
+skinparam folderBackgroundColor<<MA ACCOUNT>> White

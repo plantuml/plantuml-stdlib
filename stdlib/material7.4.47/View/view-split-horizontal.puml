@@ -1,0 +1,8 @@
+sprite mdi-view-split-horizontal <svg width="48" height="48"><g transform="scale(2)"><path d="M3,5H21V7H3V5M3,11V9H21V11H3M3,19V13H21V19H3Z" /></g></svg>
+
+!define MA_VIEW_SPLIT_HORIZONTAL(_color)                                 SPRITE_PUT(mdi-view-split-horizontal, _color)
+!define MA_VIEW_SPLIT_HORIZONTAL(_color, _scale)                         SPRITE_PUT(mdi-view-split-horizontal, _color, _scale)
+!define MA_VIEW_SPLIT_HORIZONTAL(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA VIEW SPLIT HORIZONTAL, mdi-view-split-horizontal, _color, _scale)
+!define MA_VIEW_SPLIT_HORIZONTAL(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA VIEW SPLIT HORIZONTAL, mdi-view-split-horizontal, _color, _scale, _shape)
+!define MA_VIEW_SPLIT_HORIZONTAL(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA VIEW SPLIT HORIZONTAL, _label, mdi-view-split-horizontal, _color, _scale, _shape)
+skinparam folderBackgroundColor<<MA VIEW SPLIT HORIZONTAL>> White

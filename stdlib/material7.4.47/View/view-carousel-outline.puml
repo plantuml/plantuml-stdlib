@@ -1,0 +1,8 @@
+sprite mdi-view-carousel-outline <svg width="48" height="48"><g transform="scale(2)"><path d="M2 6H6V17H2V6M7 19H17V4H7V19M9 6H15V17H9V6M18 6H22V17H18V6Z" /></g></svg>
+
+!define MA_VIEW_CAROUSEL_OUTLINE(_color)                                 SPRITE_PUT(mdi-view-carousel-outline, _color)
+!define MA_VIEW_CAROUSEL_OUTLINE(_color, _scale)                         SPRITE_PUT(mdi-view-carousel-outline, _color, _scale)
+!define MA_VIEW_CAROUSEL_OUTLINE(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA VIEW CAROUSEL OUTLINE, mdi-view-carousel-outline, _color, _scale)
+!define MA_VIEW_CAROUSEL_OUTLINE(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA VIEW CAROUSEL OUTLINE, mdi-view-carousel-outline, _color, _scale, _shape)
+!define MA_VIEW_CAROUSEL_OUTLINE(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA VIEW CAROUSEL OUTLINE, _label, mdi-view-carousel-outline, _color, _scale, _shape)
+skinparam folderBackgroundColor<<MA VIEW CAROUSEL OUTLINE>> White

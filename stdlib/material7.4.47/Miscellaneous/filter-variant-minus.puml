@@ -1,0 +1,8 @@
+sprite mdi-filter-variant-minus <svg width="48" height="48"><g transform="scale(2)"><path d="M21 8H3V6H21V8M13.81 16H10V18H13.09C13.21 17.28 13.46 16.61 13.81 16M18 11H6V13H18V11M23 18H15V20H23V18Z" /></g></svg>
+
+!define MA_FILTER_VARIANT_MINUS(_color)                                 SPRITE_PUT(mdi-filter-variant-minus, _color)
+!define MA_FILTER_VARIANT_MINUS(_color, _scale)                         SPRITE_PUT(mdi-filter-variant-minus, _color, _scale)
+!define MA_FILTER_VARIANT_MINUS(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA FILTER VARIANT MINUS, mdi-filter-variant-minus, _color, _scale)
+!define MA_FILTER_VARIANT_MINUS(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA FILTER VARIANT MINUS, mdi-filter-variant-minus, _color, _scale, _shape)
+!define MA_FILTER_VARIANT_MINUS(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA FILTER VARIANT MINUS, _label, mdi-filter-variant-minus, _color, _scale, _shape)
+skinparam folderBackgroundColor<<MA FILTER VARIANT MINUS>> White

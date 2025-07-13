@@ -1,0 +1,8 @@
+sprite mdi-folder-home-outline <svg width="48" height="48"><g transform="scale(2)"><path d="M20 6H12L10 4H4A2 2 0 0 0 2 6V18A2 2 0 0 0 4 20H20A2 2 0 0 0 22 18V8A2 2 0 0 0 20 6M20 18H4V8H20M13 17V14H15V17H17V13H19L14 9L9 13H11V17Z" /></g></svg>
+
+!define MA_FOLDER_HOME_OUTLINE(_color)                                 SPRITE_PUT(mdi-folder-home-outline, _color)
+!define MA_FOLDER_HOME_OUTLINE(_color, _scale)                         SPRITE_PUT(mdi-folder-home-outline, _color, _scale)
+!define MA_FOLDER_HOME_OUTLINE(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA FOLDER HOME OUTLINE, mdi-folder-home-outline, _color, _scale)
+!define MA_FOLDER_HOME_OUTLINE(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA FOLDER HOME OUTLINE, mdi-folder-home-outline, _color, _scale, _shape)
+!define MA_FOLDER_HOME_OUTLINE(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA FOLDER HOME OUTLINE, _label, mdi-folder-home-outline, _color, _scale, _shape)
+skinparam folderBackgroundColor<<MA FOLDER HOME OUTLINE>> White

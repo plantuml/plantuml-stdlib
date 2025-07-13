@@ -1,0 +1,8 @@
+sprite mdi-monitor-small <svg width="48" height="48"><g transform="scale(2)"><path d="M19 2H5C3.89 2 3 2.89 3 4V16C3 17.11 3.9 18 5 18H10V20H8V22H16V20H14V18H19C20.11 18 21 17.11 21 16V4C21 2.89 20.1 2 19 2M19 16H5V4H19V16Z" /></g></svg>
+
+!define MA_MONITOR_SMALL(_color)                                 SPRITE_PUT(mdi-monitor-small, _color)
+!define MA_MONITOR_SMALL(_color, _scale)                         SPRITE_PUT(mdi-monitor-small, _color, _scale)
+!define MA_MONITOR_SMALL(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA MONITOR SMALL, mdi-monitor-small, _color, _scale)
+!define MA_MONITOR_SMALL(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA MONITOR SMALL, mdi-monitor-small, _color, _scale, _shape)
+!define MA_MONITOR_SMALL(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA MONITOR SMALL, _label, mdi-monitor-small, _color, _scale, _shape)
+skinparam folderBackgroundColor<<MA MONITOR SMALL>> White

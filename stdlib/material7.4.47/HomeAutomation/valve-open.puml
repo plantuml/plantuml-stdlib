@@ -1,0 +1,8 @@
+sprite mdi-valve-open <svg width="48" height="48"><g transform="scale(2)"><path d="M4 22H2V2H4M22 2H20V22H22M11 4V9.18A3 3 0 0 0 11 14.82V20H13V14.82A3 3 0 0 0 13 9.18V4Z" /></g></svg>
+
+!define MA_VALVE_OPEN(_color)                                 SPRITE_PUT(mdi-valve-open, _color)
+!define MA_VALVE_OPEN(_color, _scale)                         SPRITE_PUT(mdi-valve-open, _color, _scale)
+!define MA_VALVE_OPEN(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA VALVE OPEN, mdi-valve-open, _color, _scale)
+!define MA_VALVE_OPEN(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA VALVE OPEN, mdi-valve-open, _color, _scale, _shape)
+!define MA_VALVE_OPEN(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA VALVE OPEN, _label, mdi-valve-open, _color, _scale, _shape)
+skinparam folderBackgroundColor<<MA VALVE OPEN>> White

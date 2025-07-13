@@ -1,0 +1,8 @@
+sprite mdi-garage-variant <svg width="48" height="48"><g transform="scale(2)"><path d="M22 9V20H20V11H4V20H2V9L12 5L22 9M19 12H5V14H19V12M19 18H5V20H19V18M19 15H5V17H19V15Z" /></g></svg>
+
+!define MA_GARAGE_VARIANT(_color)                                 SPRITE_PUT(mdi-garage-variant, _color)
+!define MA_GARAGE_VARIANT(_color, _scale)                         SPRITE_PUT(mdi-garage-variant, _color, _scale)
+!define MA_GARAGE_VARIANT(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA GARAGE VARIANT, mdi-garage-variant, _color, _scale)
+!define MA_GARAGE_VARIANT(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA GARAGE VARIANT, mdi-garage-variant, _color, _scale, _shape)
+!define MA_GARAGE_VARIANT(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA GARAGE VARIANT, _label, mdi-garage-variant, _color, _scale, _shape)
+skinparam folderBackgroundColor<<MA GARAGE VARIANT>> White

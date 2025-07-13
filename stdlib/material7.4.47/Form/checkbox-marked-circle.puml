@@ -1,0 +1,8 @@
+sprite mdi-checkbox-marked-circle <svg width="48" height="48"><g transform="scale(2)"><path d="M10,17L5,12L6.41,10.58L10,14.17L17.59,6.58L19,8M12,2A10,10 0 0,0 2,12A10,10 0 0,0 12,22A10,10 0 0,0 22,12A10,10 0 0,0 12,2Z" /></g></svg>
+
+!define MA_CHECKBOX_MARKED_CIRCLE(_color)                                 SPRITE_PUT(mdi-checkbox-marked-circle, _color)
+!define MA_CHECKBOX_MARKED_CIRCLE(_color, _scale)                         SPRITE_PUT(mdi-checkbox-marked-circle, _color, _scale)
+!define MA_CHECKBOX_MARKED_CIRCLE(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA CHECKBOX MARKED CIRCLE, mdi-checkbox-marked-circle, _color, _scale)
+!define MA_CHECKBOX_MARKED_CIRCLE(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA CHECKBOX MARKED CIRCLE, mdi-checkbox-marked-circle, _color, _scale, _shape)
+!define MA_CHECKBOX_MARKED_CIRCLE(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA CHECKBOX MARKED CIRCLE, _label, mdi-checkbox-marked-circle, _color, _scale, _shape)
+skinparam folderBackgroundColor<<MA CHECKBOX MARKED CIRCLE>> White

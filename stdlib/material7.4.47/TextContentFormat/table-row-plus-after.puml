@@ -1,0 +1,8 @@
+sprite mdi-table-row-plus-after <svg width="48" height="48"><g transform="scale(2)"><path d="M22,10A2,2 0 0,1 20,12H4A2,2 0 0,1 2,10V3H4V5H8V3H10V5H14V3H16V5H20V3H22V10M4,10H8V7H4V10M10,10H14V7H10V10M20,10V7H16V10H20M11,14H13V17H16V19H13V22H11V19H8V17H11V14Z" /></g></svg>
+
+!define MA_TABLE_ROW_PLUS_AFTER(_color)                                 SPRITE_PUT(mdi-table-row-plus-after, _color)
+!define MA_TABLE_ROW_PLUS_AFTER(_color, _scale)                         SPRITE_PUT(mdi-table-row-plus-after, _color, _scale)
+!define MA_TABLE_ROW_PLUS_AFTER(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA TABLE ROW PLUS AFTER, mdi-table-row-plus-after, _color, _scale)
+!define MA_TABLE_ROW_PLUS_AFTER(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA TABLE ROW PLUS AFTER, mdi-table-row-plus-after, _color, _scale, _shape)
+!define MA_TABLE_ROW_PLUS_AFTER(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA TABLE ROW PLUS AFTER, _label, mdi-table-row-plus-after, _color, _scale, _shape)
+skinparam folderBackgroundColor<<MA TABLE ROW PLUS AFTER>> White

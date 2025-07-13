@@ -1,0 +1,8 @@
+sprite mdi-network-strength-2 <svg width="48" height="48"><g transform="scale(2)"><path d="M1,21H21V1M19,5.83V19H13V11.83" /></g></svg>
+
+!define MA_NETWORK_STRENGTH_2(_color)                                 SPRITE_PUT(mdi-network-strength-2, _color)
+!define MA_NETWORK_STRENGTH_2(_color, _scale)                         SPRITE_PUT(mdi-network-strength-2, _color, _scale)
+!define MA_NETWORK_STRENGTH_2(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA NETWORK STRENGTH 2, mdi-network-strength-2, _color, _scale)
+!define MA_NETWORK_STRENGTH_2(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA NETWORK STRENGTH 2, mdi-network-strength-2, _color, _scale, _shape)
+!define MA_NETWORK_STRENGTH_2(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA NETWORK STRENGTH 2, _label, mdi-network-strength-2, _color, _scale, _shape)
+skinparam folderBackgroundColor<<MA NETWORK STRENGTH 2>> White

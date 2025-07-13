@@ -1,0 +1,8 @@
+sprite mdi-home-remove <svg width="48" height="48"><g transform="scale(2)"><path d="M14.46 15.88L15.88 14.46L18 16.59L20.12 14.47L21.54 15.88L19.41 18L21.54 20.12L20.12 21.54L18 19.41L15.88 21.54L14.46 20.12L16.59 18L14.47 15.88M12 3L22 12H18C14.69 12 12 14.69 12 18C12 18.7 12.12 19.37 12.34 20H5V12H2L12 3Z" /></g></svg>
+
+!define MA_HOME_REMOVE(_color)                                 SPRITE_PUT(mdi-home-remove, _color)
+!define MA_HOME_REMOVE(_color, _scale)                         SPRITE_PUT(mdi-home-remove, _color, _scale)
+!define MA_HOME_REMOVE(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA HOME REMOVE, mdi-home-remove, _color, _scale)
+!define MA_HOME_REMOVE(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA HOME REMOVE, mdi-home-remove, _color, _scale, _shape)
+!define MA_HOME_REMOVE(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA HOME REMOVE, _label, mdi-home-remove, _color, _scale, _shape)
+skinparam folderBackgroundColor<<MA HOME REMOVE>> White

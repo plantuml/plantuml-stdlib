@@ -1,0 +1,8 @@
+sprite mdi-store-off <svg width="48" height="48"><g transform="scale(2)"><path d="M9.2 6L7.2 4H20V6H9.2M20 16.8V14H21V12L20 7H10.2L17.2 14H18V14.8L20 16.8M22.11 21.46L20.84 22.73L14 15.89V20H4V14H3V12L4 7H5.11L1.11 3L2.39 1.73L22.11 21.46M12 14H6V18H12V14Z" /></g></svg>
+
+!define MA_STORE_OFF(_color)                                 SPRITE_PUT(mdi-store-off, _color)
+!define MA_STORE_OFF(_color, _scale)                         SPRITE_PUT(mdi-store-off, _color, _scale)
+!define MA_STORE_OFF(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA STORE OFF, mdi-store-off, _color, _scale)
+!define MA_STORE_OFF(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA STORE OFF, mdi-store-off, _color, _scale, _shape)
+!define MA_STORE_OFF(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA STORE OFF, _label, mdi-store-off, _color, _scale, _shape)
+skinparam folderBackgroundColor<<MA STORE OFF>> White

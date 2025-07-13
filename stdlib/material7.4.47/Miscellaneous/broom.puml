@@ -1,0 +1,8 @@
+sprite mdi-broom <svg width="48" height="48"><g transform="scale(2)"><path d="M19.36,2.72L20.78,4.14L15.06,9.85C16.13,11.39 16.28,13.24 15.38,14.44L9.06,8.12C10.26,7.22 12.11,7.37 13.65,8.44L19.36,2.72M5.93,17.57C3.92,15.56 2.69,13.16 2.35,10.92L7.23,8.83L14.67,16.27L12.58,21.15C10.34,20.81 7.94,19.58 5.93,17.57Z" /></g></svg>
+
+!define MA_BROOM(_color)                                 SPRITE_PUT(mdi-broom, _color)
+!define MA_BROOM(_color, _scale)                         SPRITE_PUT(mdi-broom, _color, _scale)
+!define MA_BROOM(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA BROOM, mdi-broom, _color, _scale)
+!define MA_BROOM(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA BROOM, mdi-broom, _color, _scale, _shape)
+!define MA_BROOM(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA BROOM, _label, mdi-broom, _color, _scale, _shape)
+skinparam folderBackgroundColor<<MA BROOM>> White

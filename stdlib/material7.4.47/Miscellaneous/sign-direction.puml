@@ -1,0 +1,8 @@
+sprite mdi-sign-direction <svg width="48" height="48"><g transform="scale(2)"><path d="M11,12H3.5L6,9.5L3.5,7H11V3L12,2L13,3V7H18L20.5,9.5L18,12H13V20A2,2 0 0,1 15,22H9A2,2 0 0,1 11,20V12Z" /></g></svg>
+
+!define MA_SIGN_DIRECTION(_color)                                 SPRITE_PUT(mdi-sign-direction, _color)
+!define MA_SIGN_DIRECTION(_color, _scale)                         SPRITE_PUT(mdi-sign-direction, _color, _scale)
+!define MA_SIGN_DIRECTION(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA SIGN DIRECTION, mdi-sign-direction, _color, _scale)
+!define MA_SIGN_DIRECTION(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA SIGN DIRECTION, mdi-sign-direction, _color, _scale, _shape)
+!define MA_SIGN_DIRECTION(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA SIGN DIRECTION, _label, mdi-sign-direction, _color, _scale, _shape)
+skinparam folderBackgroundColor<<MA SIGN DIRECTION>> White

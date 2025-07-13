@@ -1,0 +1,8 @@
+sprite mdi-pipe-leak <svg width="48" height="48"><g transform="scale(2)"><path d="M2,5V13H4V11H10L12,9L10,7H4V5H2M20,5V7H12L14,9L12,11H20V13H22V5H20M12,13C12,13 10,15.17 10,16.5A2,2 0 0,0 12,18.5A2,2 0 0,0 14,16.5C14,15.17 12,13 12,13Z" /></g></svg>
+
+!define MA_PIPE_LEAK(_color)                                 SPRITE_PUT(mdi-pipe-leak, _color)
+!define MA_PIPE_LEAK(_color, _scale)                         SPRITE_PUT(mdi-pipe-leak, _color, _scale)
+!define MA_PIPE_LEAK(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA PIPE LEAK, mdi-pipe-leak, _color, _scale)
+!define MA_PIPE_LEAK(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA PIPE LEAK, mdi-pipe-leak, _color, _scale, _shape)
+!define MA_PIPE_LEAK(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA PIPE LEAK, _label, mdi-pipe-leak, _color, _scale, _shape)
+skinparam folderBackgroundColor<<MA PIPE LEAK>> White

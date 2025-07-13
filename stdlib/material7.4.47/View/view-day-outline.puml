@@ -1,0 +1,8 @@
+sprite mdi-view-day-outline <svg width="48" height="48"><g transform="scale(2)"><path d="M21 18H2V20H21V18M19 10V14H4V10H19M20 8H3C2.45 8 2 8.45 2 9V15C2 15.55 2.45 16 3 16H20C20.55 16 21 15.55 21 15V9C21 8.45 20.55 8 20 8M21 4H2V6H21V4Z" /></g></svg>
+
+!define MA_VIEW_DAY_OUTLINE(_color)                                 SPRITE_PUT(mdi-view-day-outline, _color)
+!define MA_VIEW_DAY_OUTLINE(_color, _scale)                         SPRITE_PUT(mdi-view-day-outline, _color, _scale)
+!define MA_VIEW_DAY_OUTLINE(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA VIEW DAY OUTLINE, mdi-view-day-outline, _color, _scale)
+!define MA_VIEW_DAY_OUTLINE(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA VIEW DAY OUTLINE, mdi-view-day-outline, _color, _scale, _shape)
+!define MA_VIEW_DAY_OUTLINE(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA VIEW DAY OUTLINE, _label, mdi-view-day-outline, _color, _scale, _shape)
+skinparam folderBackgroundColor<<MA VIEW DAY OUTLINE>> White

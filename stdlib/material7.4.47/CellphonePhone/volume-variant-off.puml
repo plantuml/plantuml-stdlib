@@ -1,0 +1,8 @@
+sprite mdi-volume-variant-off <svg width="48" height="48"><g transform="scale(2)"><path d="M5.64,3.64L21.36,19.36L19.95,20.78L16,16.83V20L11,15H7V9H8.17L4.22,5.05L5.64,3.64M16,4V11.17L12.41,7.58L16,4Z" /></g></svg>
+
+!define MA_VOLUME_VARIANT_OFF(_color)                                 SPRITE_PUT(mdi-volume-variant-off, _color)
+!define MA_VOLUME_VARIANT_OFF(_color, _scale)                         SPRITE_PUT(mdi-volume-variant-off, _color, _scale)
+!define MA_VOLUME_VARIANT_OFF(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA VOLUME VARIANT OFF, mdi-volume-variant-off, _color, _scale)
+!define MA_VOLUME_VARIANT_OFF(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA VOLUME VARIANT OFF, mdi-volume-variant-off, _color, _scale, _shape)
+!define MA_VOLUME_VARIANT_OFF(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA VOLUME VARIANT OFF, _label, mdi-volume-variant-off, _color, _scale, _shape)
+skinparam folderBackgroundColor<<MA VOLUME VARIANT OFF>> White

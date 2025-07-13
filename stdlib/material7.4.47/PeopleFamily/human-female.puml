@@ -1,0 +1,8 @@
+sprite mdi-human-female <svg width="48" height="48"><g transform="scale(2)"><path d="M12,2A2,2 0 0,1 14,4A2,2 0 0,1 12,6A2,2 0 0,1 10,4A2,2 0 0,1 12,2M10.5,22V16H7.5L10.09,8.41C10.34,7.59 11.1,7 12,7C12.9,7 13.66,7.59 13.91,8.41L16.5,16H13.5V22H10.5Z" /></g></svg>
+
+!define MA_HUMAN_FEMALE(_color)                                 SPRITE_PUT(mdi-human-female, _color)
+!define MA_HUMAN_FEMALE(_color, _scale)                         SPRITE_PUT(mdi-human-female, _color, _scale)
+!define MA_HUMAN_FEMALE(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA HUMAN FEMALE, mdi-human-female, _color, _scale)
+!define MA_HUMAN_FEMALE(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA HUMAN FEMALE, mdi-human-female, _color, _scale, _shape)
+!define MA_HUMAN_FEMALE(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA HUMAN FEMALE, _label, mdi-human-female, _color, _scale, _shape)
+skinparam folderBackgroundColor<<MA HUMAN FEMALE>> White

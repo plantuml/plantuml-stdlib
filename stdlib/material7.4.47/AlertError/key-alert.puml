@@ -1,0 +1,8 @@
+sprite mdi-key-alert <svg width="48" height="48"><g transform="scale(2)"><path d="M4 6.5C4 4 6 2 8.5 2S13 4 13 6.5C13 8.46 11.75 10.13 10 10.74V15H13V18H10V22H7V10.74C5.25 10.13 4 8.46 4 6.5M7 6.5C7 7.33 7.67 8 8.5 8S10 7.33 10 6.5 9.33 5 8.5 5 7 5.67 7 6.5M18 7H20V13H18M18 17H20V15H18" /></g></svg>
+
+!define MA_KEY_ALERT(_color)                                 SPRITE_PUT(mdi-key-alert, _color)
+!define MA_KEY_ALERT(_color, _scale)                         SPRITE_PUT(mdi-key-alert, _color, _scale)
+!define MA_KEY_ALERT(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA KEY ALERT, mdi-key-alert, _color, _scale)
+!define MA_KEY_ALERT(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA KEY ALERT, mdi-key-alert, _color, _scale, _shape)
+!define MA_KEY_ALERT(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA KEY ALERT, _label, mdi-key-alert, _color, _scale, _shape)
+skinparam folderBackgroundColor<<MA KEY ALERT>> White

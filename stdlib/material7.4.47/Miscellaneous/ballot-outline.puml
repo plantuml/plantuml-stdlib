@@ -1,0 +1,8 @@
+sprite mdi-ballot-outline <svg width="48" height="48"><g transform="scale(2)"><path d="M13,7.5H18V9.5H13V7.5M13,14.5H18V16.5H13V14.5M19,3A2,2 0 0,1 21,5V19A2,2 0 0,1 19,21H5A2,2 0 0,1 3,19V5A2,2 0 0,1 5,3H19M19,19V5H5V19H19M11,6V11H6V6H11M10,10V7H7V10H10M11,13V18H6V13H11M10,17V14H7V17H10Z" /></g></svg>
+
+!define MA_BALLOT_OUTLINE(_color)                                 SPRITE_PUT(mdi-ballot-outline, _color)
+!define MA_BALLOT_OUTLINE(_color, _scale)                         SPRITE_PUT(mdi-ballot-outline, _color, _scale)
+!define MA_BALLOT_OUTLINE(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA BALLOT OUTLINE, mdi-ballot-outline, _color, _scale)
+!define MA_BALLOT_OUTLINE(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA BALLOT OUTLINE, mdi-ballot-outline, _color, _scale, _shape)
+!define MA_BALLOT_OUTLINE(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA BALLOT OUTLINE, _label, mdi-ballot-outline, _color, _scale, _shape)
+skinparam folderBackgroundColor<<MA BALLOT OUTLINE>> White

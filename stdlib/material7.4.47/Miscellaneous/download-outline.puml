@@ -1,0 +1,8 @@
+sprite mdi-download-outline <svg width="48" height="48"><g transform="scale(2)"><path d="M13,5V11H14.17L12,13.17L9.83,11H11V5H13M15,3H9V9H5L12,16L19,9H15V3M19,18H5V20H19V18Z" /></g></svg>
+
+!define MA_DOWNLOAD_OUTLINE(_color)                                 SPRITE_PUT(mdi-download-outline, _color)
+!define MA_DOWNLOAD_OUTLINE(_color, _scale)                         SPRITE_PUT(mdi-download-outline, _color, _scale)
+!define MA_DOWNLOAD_OUTLINE(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA DOWNLOAD OUTLINE, mdi-download-outline, _color, _scale)
+!define MA_DOWNLOAD_OUTLINE(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA DOWNLOAD OUTLINE, mdi-download-outline, _color, _scale, _shape)
+!define MA_DOWNLOAD_OUTLINE(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA DOWNLOAD OUTLINE, _label, mdi-download-outline, _color, _scale, _shape)
+skinparam folderBackgroundColor<<MA DOWNLOAD OUTLINE>> White

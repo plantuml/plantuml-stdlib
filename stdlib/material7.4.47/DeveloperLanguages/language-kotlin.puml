@@ -1,0 +1,8 @@
+sprite mdi-language-kotlin <svg width="48" height="48"><g transform="scale(2)"><path d="M2 2H22L12 12L22 22H2Z" /></g></svg>
+
+!define MA_LANGUAGE_KOTLIN(_color)                                 SPRITE_PUT(mdi-language-kotlin, _color)
+!define MA_LANGUAGE_KOTLIN(_color, _scale)                         SPRITE_PUT(mdi-language-kotlin, _color, _scale)
+!define MA_LANGUAGE_KOTLIN(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA LANGUAGE KOTLIN, mdi-language-kotlin, _color, _scale)
+!define MA_LANGUAGE_KOTLIN(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA LANGUAGE KOTLIN, mdi-language-kotlin, _color, _scale, _shape)
+!define MA_LANGUAGE_KOTLIN(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA LANGUAGE KOTLIN, _label, mdi-language-kotlin, _color, _scale, _shape)
+skinparam folderBackgroundColor<<MA LANGUAGE KOTLIN>> White

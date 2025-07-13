@@ -1,0 +1,8 @@
+sprite mdi-city <svg width="48" height="48"><g transform="scale(2)"><path d="M19,15H17V13H19M19,19H17V17H19M13,7H11V5H13M13,11H11V9H13M13,15H11V13H13M13,19H11V17H13M7,11H5V9H7M7,15H5V13H7M7,19H5V17H7M15,11V5L12,2L9,5V7H3V21H21V11H15Z" /></g></svg>
+
+!define MA_CITY(_color)                                 SPRITE_PUT(mdi-city, _color)
+!define MA_CITY(_color, _scale)                         SPRITE_PUT(mdi-city, _color, _scale)
+!define MA_CITY(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA CITY, mdi-city, _color, _scale)
+!define MA_CITY(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA CITY, mdi-city, _color, _scale, _shape)
+!define MA_CITY(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA CITY, _label, mdi-city, _color, _scale, _shape)
+skinparam folderBackgroundColor<<MA CITY>> White

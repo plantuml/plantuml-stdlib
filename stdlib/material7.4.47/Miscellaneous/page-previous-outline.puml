@@ -1,0 +1,8 @@
+sprite mdi-page-previous-outline <svg width="48" height="48"><g transform="scale(2)"><path d="M2,3H19A2,2 0 0,1 21,5V9H19V5H2V19H19V15H21V19A2,2 0 0,1 19,21H2A2,2 0 0,1 0,19V5A2,2 0 0,1 2,3M17,15V13H24V11H17V9L13,12L17,15M4,13H11V11H4V13M4,9H11V7H4V9M4,17H8V15H4V17Z" /></g></svg>
+
+!define MA_PAGE_PREVIOUS_OUTLINE(_color)                                 SPRITE_PUT(mdi-page-previous-outline, _color)
+!define MA_PAGE_PREVIOUS_OUTLINE(_color, _scale)                         SPRITE_PUT(mdi-page-previous-outline, _color, _scale)
+!define MA_PAGE_PREVIOUS_OUTLINE(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA PAGE PREVIOUS OUTLINE, mdi-page-previous-outline, _color, _scale)
+!define MA_PAGE_PREVIOUS_OUTLINE(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA PAGE PREVIOUS OUTLINE, mdi-page-previous-outline, _color, _scale, _shape)
+!define MA_PAGE_PREVIOUS_OUTLINE(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA PAGE PREVIOUS OUTLINE, _label, mdi-page-previous-outline, _color, _scale, _shape)
+skinparam folderBackgroundColor<<MA PAGE PREVIOUS OUTLINE>> White

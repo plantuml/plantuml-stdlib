@@ -1,0 +1,8 @@
+sprite mdi-text-short <svg width="48" height="48"><g transform="scale(2)"><path d="M4,9H20V11H4V9M4,13H14V15H4V13Z" /></g></svg>
+
+!define MA_TEXT_SHORT(_color)                                 SPRITE_PUT(mdi-text-short, _color)
+!define MA_TEXT_SHORT(_color, _scale)                         SPRITE_PUT(mdi-text-short, _color, _scale)
+!define MA_TEXT_SHORT(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA TEXT SHORT, mdi-text-short, _color, _scale)
+!define MA_TEXT_SHORT(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA TEXT SHORT, mdi-text-short, _color, _scale, _shape)
+!define MA_TEXT_SHORT(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA TEXT SHORT, _label, mdi-text-short, _color, _scale, _shape)
+skinparam folderBackgroundColor<<MA TEXT SHORT>> White

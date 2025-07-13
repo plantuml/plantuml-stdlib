@@ -1,0 +1,8 @@
+sprite mdi-information-symbol <svg width="48" height="48"><g transform="scale(2)"><path d="M11 9H13V7H11V9M11 17H13V11H11V17Z" /></g></svg>
+
+!define MA_INFORMATION_SYMBOL(_color)                                 SPRITE_PUT(mdi-information-symbol, _color)
+!define MA_INFORMATION_SYMBOL(_color, _scale)                         SPRITE_PUT(mdi-information-symbol, _color, _scale)
+!define MA_INFORMATION_SYMBOL(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA INFORMATION SYMBOL, mdi-information-symbol, _color, _scale)
+!define MA_INFORMATION_SYMBOL(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA INFORMATION SYMBOL, mdi-information-symbol, _color, _scale, _shape)
+!define MA_INFORMATION_SYMBOL(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA INFORMATION SYMBOL, _label, mdi-information-symbol, _color, _scale, _shape)
+skinparam folderBackgroundColor<<MA INFORMATION SYMBOL>> White

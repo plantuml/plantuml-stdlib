@@ -1,0 +1,8 @@
+sprite mdi-blinds-vertical-closed <svg width="48" height="48"><g transform="scale(2)"><path d="M20 19V3H4V19H2V21H22V19H20M13 5H14.5V19H13V5M11 19H9.5V5H11V19M6 5H7.5V19H6V5M16.5 19V5H18V19H16.5Z" /></g></svg>
+
+!define MA_BLINDS_VERTICAL_CLOSED(_color)                                 SPRITE_PUT(mdi-blinds-vertical-closed, _color)
+!define MA_BLINDS_VERTICAL_CLOSED(_color, _scale)                         SPRITE_PUT(mdi-blinds-vertical-closed, _color, _scale)
+!define MA_BLINDS_VERTICAL_CLOSED(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA BLINDS VERTICAL CLOSED, mdi-blinds-vertical-closed, _color, _scale)
+!define MA_BLINDS_VERTICAL_CLOSED(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA BLINDS VERTICAL CLOSED, mdi-blinds-vertical-closed, _color, _scale, _shape)
+!define MA_BLINDS_VERTICAL_CLOSED(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA BLINDS VERTICAL CLOSED, _label, mdi-blinds-vertical-closed, _color, _scale, _shape)
+skinparam folderBackgroundColor<<MA BLINDS VERTICAL CLOSED>> White

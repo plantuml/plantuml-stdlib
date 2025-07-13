@@ -1,0 +1,8 @@
+sprite mdi-timeline-minus-outline <svg width="48" height="48"><g transform="scale(2)"><path d="M2 16H4V22H2V16M4 2H2V8H4V2M20 11H12V13H20V11M3 10C1.9 10 1 10.9 1 12C1 13.11 1.9 14 3 14C4.11 14 5 13.11 5 12C5 10.9 4.11 10 3 10M24 6V18C24 19.11 23.11 20 22 20H10C8.9 20 8 19.11 8 18V14L6 12L8 10V6C8 4.89 8.9 4 10 4H22C23.11 4 24 4.89 24 6M22 6H10V18H22V6Z" /></g></svg>
+
+!define MA_TIMELINE_MINUS_OUTLINE(_color)                                 SPRITE_PUT(mdi-timeline-minus-outline, _color)
+!define MA_TIMELINE_MINUS_OUTLINE(_color, _scale)                         SPRITE_PUT(mdi-timeline-minus-outline, _color, _scale)
+!define MA_TIMELINE_MINUS_OUTLINE(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA TIMELINE MINUS OUTLINE, mdi-timeline-minus-outline, _color, _scale)
+!define MA_TIMELINE_MINUS_OUTLINE(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA TIMELINE MINUS OUTLINE, mdi-timeline-minus-outline, _color, _scale, _shape)
+!define MA_TIMELINE_MINUS_OUTLINE(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA TIMELINE MINUS OUTLINE, _label, mdi-timeline-minus-outline, _color, _scale, _shape)
+skinparam folderBackgroundColor<<MA TIMELINE MINUS OUTLINE>> White

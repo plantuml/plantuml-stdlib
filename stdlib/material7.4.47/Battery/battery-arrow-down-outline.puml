@@ -1,0 +1,8 @@
+sprite mdi-battery-arrow-down-outline <svg width="48" height="48"><g transform="scale(2)"><path d="M13.54 22H7.33C6.6 22 6 21.4 6 20.67V5.33C6 4.6 6.6 4 7.33 4H9V2H15V4H16.67C17.4 4 18 4.6 18 5.33V12C17.3 12 16.63 12.13 16 12.35V6H8V20H12.35C12.61 20.75 13 21.42 13.54 22M14.94 18.5L17.94 21.5L20.94 18.5H18.94V14.5H16.94V18.5H14.94" /></g></svg>
+
+!define MA_BATTERY_ARROW_DOWN_OUTLINE(_color)                                 SPRITE_PUT(mdi-battery-arrow-down-outline, _color)
+!define MA_BATTERY_ARROW_DOWN_OUTLINE(_color, _scale)                         SPRITE_PUT(mdi-battery-arrow-down-outline, _color, _scale)
+!define MA_BATTERY_ARROW_DOWN_OUTLINE(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA BATTERY ARROW DOWN OUTLINE, mdi-battery-arrow-down-outline, _color, _scale)
+!define MA_BATTERY_ARROW_DOWN_OUTLINE(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA BATTERY ARROW DOWN OUTLINE, mdi-battery-arrow-down-outline, _color, _scale, _shape)
+!define MA_BATTERY_ARROW_DOWN_OUTLINE(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA BATTERY ARROW DOWN OUTLINE, _label, mdi-battery-arrow-down-outline, _color, _scale, _shape)
+skinparam folderBackgroundColor<<MA BATTERY ARROW DOWN OUTLINE>> White

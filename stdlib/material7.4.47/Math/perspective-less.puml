@@ -1,0 +1,8 @@
+sprite mdi-perspective-less <svg width="48" height="48"><g transform="scale(2)"><path d="M16.56,12L19.23,20H4.78L7.44,12H16.56M7,1L3,5L7,9V6H11V4H7V1M17,1V4H13V6H17V9L21,5L17,1M18,10H6L2,22H22L18,10Z" /></g></svg>
+
+!define MA_PERSPECTIVE_LESS(_color)                                 SPRITE_PUT(mdi-perspective-less, _color)
+!define MA_PERSPECTIVE_LESS(_color, _scale)                         SPRITE_PUT(mdi-perspective-less, _color, _scale)
+!define MA_PERSPECTIVE_LESS(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA PERSPECTIVE LESS, mdi-perspective-less, _color, _scale)
+!define MA_PERSPECTIVE_LESS(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA PERSPECTIVE LESS, mdi-perspective-less, _color, _scale, _shape)
+!define MA_PERSPECTIVE_LESS(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA PERSPECTIVE LESS, _label, mdi-perspective-less, _color, _scale, _shape)
+skinparam folderBackgroundColor<<MA PERSPECTIVE LESS>> White

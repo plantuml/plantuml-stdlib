@@ -1,0 +1,8 @@
+sprite mdi-page-last <svg width="48" height="48"><g transform="scale(2)"><path d="M5.59,7.41L10.18,12L5.59,16.59L7,18L13,12L7,6L5.59,7.41M16,6H18V18H16V6Z" /></g></svg>
+
+!define MA_PAGE_LAST(_color)                                 SPRITE_PUT(mdi-page-last, _color)
+!define MA_PAGE_LAST(_color, _scale)                         SPRITE_PUT(mdi-page-last, _color, _scale)
+!define MA_PAGE_LAST(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA PAGE LAST, mdi-page-last, _color, _scale)
+!define MA_PAGE_LAST(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA PAGE LAST, mdi-page-last, _color, _scale, _shape)
+!define MA_PAGE_LAST(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA PAGE LAST, _label, mdi-page-last, _color, _scale, _shape)
+skinparam folderBackgroundColor<<MA PAGE LAST>> White

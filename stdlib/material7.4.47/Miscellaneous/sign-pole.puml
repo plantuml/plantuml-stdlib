@@ -1,0 +1,8 @@
+sprite mdi-sign-pole <svg width="48" height="48"><g transform="scale(2)"><path d="M11 3L12 2L13 3V20C14.11 20 15 20.9 15 22H9C9 20.9 9.9 20 11 20V3Z" /></g></svg>
+
+!define MA_SIGN_POLE(_color)                                 SPRITE_PUT(mdi-sign-pole, _color)
+!define MA_SIGN_POLE(_color, _scale)                         SPRITE_PUT(mdi-sign-pole, _color, _scale)
+!define MA_SIGN_POLE(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA SIGN POLE, mdi-sign-pole, _color, _scale)
+!define MA_SIGN_POLE(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA SIGN POLE, mdi-sign-pole, _color, _scale, _shape)
+!define MA_SIGN_POLE(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA SIGN POLE, _label, mdi-sign-pole, _color, _scale, _shape)
+skinparam folderBackgroundColor<<MA SIGN POLE>> White

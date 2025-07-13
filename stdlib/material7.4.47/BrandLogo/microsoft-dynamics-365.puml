@@ -1,0 +1,8 @@
+sprite mdi-microsoft-dynamics-365 <svg width="48" height="48"><g transform="scale(2)"><path d="M6,2L17.25,8.5L13.5,11.5L6,8V2M6,9L9.5,11.25L6,22L18,9V15L6,22V9Z" /></g></svg>
+
+!define MA_MICROSOFT_DYNAMICS_365(_color)                                 SPRITE_PUT(mdi-microsoft-dynamics-365, _color)
+!define MA_MICROSOFT_DYNAMICS_365(_color, _scale)                         SPRITE_PUT(mdi-microsoft-dynamics-365, _color, _scale)
+!define MA_MICROSOFT_DYNAMICS_365(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA MICROSOFT DYNAMICS 365, mdi-microsoft-dynamics-365, _color, _scale)
+!define MA_MICROSOFT_DYNAMICS_365(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA MICROSOFT DYNAMICS 365, mdi-microsoft-dynamics-365, _color, _scale, _shape)
+!define MA_MICROSOFT_DYNAMICS_365(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA MICROSOFT DYNAMICS 365, _label, mdi-microsoft-dynamics-365, _color, _scale, _shape)
+skinparam folderBackgroundColor<<MA MICROSOFT DYNAMICS 365>> White

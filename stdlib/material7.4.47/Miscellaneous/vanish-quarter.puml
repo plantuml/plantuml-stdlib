@@ -1,0 +1,8 @@
+sprite mdi-vanish-quarter <svg width="48" height="48"><g transform="scale(2)"><path d="M11 3H13V8H11V3M4.9 6.3L6.3 4.9L9.1 7.7L7.8 9.2L4.9 6.3M8 13H3V11H8V13" /></g></svg>
+
+!define MA_VANISH_QUARTER(_color)                                 SPRITE_PUT(mdi-vanish-quarter, _color)
+!define MA_VANISH_QUARTER(_color, _scale)                         SPRITE_PUT(mdi-vanish-quarter, _color, _scale)
+!define MA_VANISH_QUARTER(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA VANISH QUARTER, mdi-vanish-quarter, _color, _scale)
+!define MA_VANISH_QUARTER(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA VANISH QUARTER, mdi-vanish-quarter, _color, _scale, _shape)
+!define MA_VANISH_QUARTER(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA VANISH QUARTER, _label, mdi-vanish-quarter, _color, _scale, _shape)
+skinparam folderBackgroundColor<<MA VANISH QUARTER>> White

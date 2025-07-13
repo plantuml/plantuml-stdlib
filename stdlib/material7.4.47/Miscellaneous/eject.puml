@@ -1,0 +1,8 @@
+sprite mdi-eject <svg width="48" height="48"><g transform="scale(2)"><path d="M12,5L5.33,15H18.67M5,17H19V19H5V17Z" /></g></svg>
+
+!define MA_EJECT(_color)                                 SPRITE_PUT(mdi-eject, _color)
+!define MA_EJECT(_color, _scale)                         SPRITE_PUT(mdi-eject, _color, _scale)
+!define MA_EJECT(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA EJECT, mdi-eject, _color, _scale)
+!define MA_EJECT(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA EJECT, mdi-eject, _color, _scale, _shape)
+!define MA_EJECT(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA EJECT, _label, mdi-eject, _color, _scale, _shape)
+skinparam folderBackgroundColor<<MA EJECT>> White

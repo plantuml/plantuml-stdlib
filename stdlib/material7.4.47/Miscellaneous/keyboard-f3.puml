@@ -1,0 +1,8 @@
+sprite mdi-keyboard-f3 <svg width="48" height="48"><g transform="scale(2)"><path d="M5 7H11V9H7V11H10V13H7V17H5V7M19 15C19 16.11 18.11 17 17 17H13V15H17V13H15V11H17V9H13V7H17C18.1 7 19 7.89 19 9V10.5C19 11.33 18.33 12 17.5 12C18.33 12 19 12.67 19 13.5V15Z" /></g></svg>
+
+!define MA_KEYBOARD_F3(_color)                                 SPRITE_PUT(mdi-keyboard-f3, _color)
+!define MA_KEYBOARD_F3(_color, _scale)                         SPRITE_PUT(mdi-keyboard-f3, _color, _scale)
+!define MA_KEYBOARD_F3(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA KEYBOARD F3, mdi-keyboard-f3, _color, _scale)
+!define MA_KEYBOARD_F3(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA KEYBOARD F3, mdi-keyboard-f3, _color, _scale, _shape)
+!define MA_KEYBOARD_F3(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA KEYBOARD F3, _label, mdi-keyboard-f3, _color, _scale, _shape)
+skinparam folderBackgroundColor<<MA KEYBOARD F3>> White

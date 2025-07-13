@@ -1,0 +1,8 @@
+sprite mdi-wave-arrow-down <svg width="48" height="48"><g transform="scale(2)"><path d="M20 7H22V9H20C18.62 9 17.26 8.65 16 8C13.5 9.3 10.5 9.3 8 8C6.74 8.65 5.37 9 4 9H2V7H4C5.39 7 6.78 6.53 8 5.67C10.44 7.38 13.56 7.38 16 5.67C17.22 6.53 18.61 7 20 7M12 22L8 18H11V11H13V18H16L12 22Z" /></g></svg>
+
+!define MA_WAVE_ARROW_DOWN(_color)                                 SPRITE_PUT(mdi-wave-arrow-down, _color)
+!define MA_WAVE_ARROW_DOWN(_color, _scale)                         SPRITE_PUT(mdi-wave-arrow-down, _color, _scale)
+!define MA_WAVE_ARROW_DOWN(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA WAVE ARROW DOWN, mdi-wave-arrow-down, _color, _scale)
+!define MA_WAVE_ARROW_DOWN(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA WAVE ARROW DOWN, mdi-wave-arrow-down, _color, _scale, _shape)
+!define MA_WAVE_ARROW_DOWN(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA WAVE ARROW DOWN, _label, mdi-wave-arrow-down, _color, _scale, _shape)
+skinparam folderBackgroundColor<<MA WAVE ARROW DOWN>> White

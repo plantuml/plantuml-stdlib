@@ -1,0 +1,8 @@
+sprite mdi-home-battery <svg width="48" height="48"><g transform="scale(2)"><path d="M12 20L5 20V12H2L12 3L14.78 5.5H14V7.17C12.84 7.58 12 8.7 12 10V20M15 9H16V7.5H20V9H21C21.55 9 22 9.45 22 10V21C22 21.55 21.55 22 21 22H15C14.45 22 14 21.55 14 21V10C14 9.45 14.45 9 15 9M16 11V14H20V11H16Z" /></g></svg>
+
+!define MA_HOME_BATTERY(_color)                                 SPRITE_PUT(mdi-home-battery, _color)
+!define MA_HOME_BATTERY(_color, _scale)                         SPRITE_PUT(mdi-home-battery, _color, _scale)
+!define MA_HOME_BATTERY(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA HOME BATTERY, mdi-home-battery, _color, _scale)
+!define MA_HOME_BATTERY(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA HOME BATTERY, mdi-home-battery, _color, _scale, _shape)
+!define MA_HOME_BATTERY(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA HOME BATTERY, _label, mdi-home-battery, _color, _scale, _shape)
+skinparam folderBackgroundColor<<MA HOME BATTERY>> White

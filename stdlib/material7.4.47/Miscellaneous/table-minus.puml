@@ -1,0 +1,8 @@
+sprite mdi-table-minus <svg width="48" height="48"><g transform="scale(2)"><path d="M15 19V17H23V19H15M4 3H18C19.11 3 20 3.9 20 5V12.08C18.45 11.82 16.92 12.18 15.68 13H12V17H13.08C12.97 17.68 12.97 18.35 13.08 19H4C2.9 19 2 18.11 2 17V5C2 3.9 2.9 3 4 3M4 7V11H10V7H4M12 7V11H18V7H12M4 13V17H10V13H4Z" /></g></svg>
+
+!define MA_TABLE_MINUS(_color)                                 SPRITE_PUT(mdi-table-minus, _color)
+!define MA_TABLE_MINUS(_color, _scale)                         SPRITE_PUT(mdi-table-minus, _color, _scale)
+!define MA_TABLE_MINUS(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA TABLE MINUS, mdi-table-minus, _color, _scale)
+!define MA_TABLE_MINUS(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA TABLE MINUS, mdi-table-minus, _color, _scale, _shape)
+!define MA_TABLE_MINUS(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA TABLE MINUS, _label, mdi-table-minus, _color, _scale, _shape)
+skinparam folderBackgroundColor<<MA TABLE MINUS>> White

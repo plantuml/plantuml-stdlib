@@ -1,0 +1,8 @@
+sprite mdi-tooltip-outline <svg width="48" height="48"><g transform="scale(2)"><path d="M4,2H20A2,2 0 0,1 22,4V16A2,2 0 0,1 20,18H16L12,22L8,18H4A2,2 0 0,1 2,16V4A2,2 0 0,1 4,2M4,4V16H8.83L12,19.17L15.17,16H20V4H4Z" /></g></svg>
+
+!define MA_TOOLTIP_OUTLINE(_color)                                 SPRITE_PUT(mdi-tooltip-outline, _color)
+!define MA_TOOLTIP_OUTLINE(_color, _scale)                         SPRITE_PUT(mdi-tooltip-outline, _color, _scale)
+!define MA_TOOLTIP_OUTLINE(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA TOOLTIP OUTLINE, mdi-tooltip-outline, _color, _scale)
+!define MA_TOOLTIP_OUTLINE(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA TOOLTIP OUTLINE, mdi-tooltip-outline, _color, _scale, _shape)
+!define MA_TOOLTIP_OUTLINE(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA TOOLTIP OUTLINE, _label, mdi-tooltip-outline, _color, _scale, _shape)
+skinparam folderBackgroundColor<<MA TOOLTIP OUTLINE>> White

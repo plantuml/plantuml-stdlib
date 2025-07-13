@@ -1,0 +1,8 @@
+sprite mdi-account-eye <svg width="48" height="48"><g transform="scale(2)"><path d="M6 8C6 5.79 7.79 4 10 4S14 5.79 14 8 12.21 12 10 12 6 10.21 6 8M9.14 19.75L8.85 19L9.14 18.25C9.84 16.5 11.08 15.14 12.61 14.22C11.79 14.08 10.92 14 10 14C5.58 14 2 15.79 2 18V20H9.27C9.23 19.91 9.18 19.83 9.14 19.75M17 18C16.44 18 16 18.44 16 19S16.44 20 17 20 18 19.56 18 19 17.56 18 17 18M23 19C22.06 21.34 19.73 23 17 23S11.94 21.34 11 19C11.94 16.66 14.27 15 17 15S22.06 16.66 23 19M19.5 19C19.5 17.62 18.38 16.5 17 16.5S14.5 17.62 14.5 19 15.62 21.5 17 21.5 19.5 20.38 19.5 19Z" /></g></svg>
+
+!define MA_ACCOUNT_EYE(_color)                                 SPRITE_PUT(mdi-account-eye, _color)
+!define MA_ACCOUNT_EYE(_color, _scale)                         SPRITE_PUT(mdi-account-eye, _color, _scale)
+!define MA_ACCOUNT_EYE(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA ACCOUNT EYE, mdi-account-eye, _color, _scale)
+!define MA_ACCOUNT_EYE(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA ACCOUNT EYE, mdi-account-eye, _color, _scale, _shape)
+!define MA_ACCOUNT_EYE(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA ACCOUNT EYE, _label, mdi-account-eye, _color, _scale, _shape)
+skinparam folderBackgroundColor<<MA ACCOUNT EYE>> White

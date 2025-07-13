@@ -1,0 +1,8 @@
+sprite mdi-bookmark-check <svg width="48" height="48"><g transform="scale(2)"><path d="M17,3A2,2 0 0,1 19,5V21L12,18L5,21V5C5,3.89 5.9,3 7,3H17M11,14L17.25,7.76L15.84,6.34L11,11.18L8.41,8.59L7,10L11,14Z" /></g></svg>
+
+!define MA_BOOKMARK_CHECK(_color)                                 SPRITE_PUT(mdi-bookmark-check, _color)
+!define MA_BOOKMARK_CHECK(_color, _scale)                         SPRITE_PUT(mdi-bookmark-check, _color, _scale)
+!define MA_BOOKMARK_CHECK(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA BOOKMARK CHECK, mdi-bookmark-check, _color, _scale)
+!define MA_BOOKMARK_CHECK(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA BOOKMARK CHECK, mdi-bookmark-check, _color, _scale, _shape)
+!define MA_BOOKMARK_CHECK(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA BOOKMARK CHECK, _label, mdi-bookmark-check, _color, _scale, _shape)
+skinparam folderBackgroundColor<<MA BOOKMARK CHECK>> White

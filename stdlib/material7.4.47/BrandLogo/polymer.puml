@@ -1,0 +1,8 @@
+sprite mdi-polymer <svg width="48" height="48"><g transform="scale(2)"><path d="M19,4H15L7.1,16.63L4.5,12L9,4H5L0.5,12L5,20H9L16.89,7.37L19.5,12L15,20H19L23.5,12L19,4Z" /></g></svg>
+
+!define MA_POLYMER(_color)                                 SPRITE_PUT(mdi-polymer, _color)
+!define MA_POLYMER(_color, _scale)                         SPRITE_PUT(mdi-polymer, _color, _scale)
+!define MA_POLYMER(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA POLYMER, mdi-polymer, _color, _scale)
+!define MA_POLYMER(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA POLYMER, mdi-polymer, _color, _scale, _shape)
+!define MA_POLYMER(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA POLYMER, _label, mdi-polymer, _color, _scale, _shape)
+skinparam folderBackgroundColor<<MA POLYMER>> White

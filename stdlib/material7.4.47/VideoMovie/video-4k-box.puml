@@ -1,0 +1,8 @@
+sprite mdi-video-4k-box <svg width="48" height="48"><g transform="scale(2)"><path d="M19,3H5A2,2 0 0,0 3,5V19A2,2 0 0,0 5,21H19A2,2 0 0,0 21,19V5A2,2 0 0,0 19,3M12,13.5H11V15H9.5V13.5H6.5V9H8V12H9.5V9H11V12H12V13.5M18,15H16.2L14.4,12.8V15H13V9H14.5V11.2L16.2,9H18L15.8,12L18,15Z" /></g></svg>
+
+!define MA_VIDEO_4K_BOX(_color)                                 SPRITE_PUT(mdi-video-4k-box, _color)
+!define MA_VIDEO_4K_BOX(_color, _scale)                         SPRITE_PUT(mdi-video-4k-box, _color, _scale)
+!define MA_VIDEO_4K_BOX(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA VIDEO 4K BOX, mdi-video-4k-box, _color, _scale)
+!define MA_VIDEO_4K_BOX(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA VIDEO 4K BOX, mdi-video-4k-box, _color, _scale, _shape)
+!define MA_VIDEO_4K_BOX(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA VIDEO 4K BOX, _label, mdi-video-4k-box, _color, _scale, _shape)
+skinparam folderBackgroundColor<<MA VIDEO 4K BOX>> White

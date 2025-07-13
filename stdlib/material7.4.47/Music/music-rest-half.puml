@@ -1,0 +1,8 @@
+sprite mdi-music-rest-half <svg width="48" height="48"><g transform="scale(2)"><path d="M6 14H8V10H16V14H18V15H6V14Z" /></g></svg>
+
+!define MA_MUSIC_REST_HALF(_color)                                 SPRITE_PUT(mdi-music-rest-half, _color)
+!define MA_MUSIC_REST_HALF(_color, _scale)                         SPRITE_PUT(mdi-music-rest-half, _color, _scale)
+!define MA_MUSIC_REST_HALF(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA MUSIC REST HALF, mdi-music-rest-half, _color, _scale)
+!define MA_MUSIC_REST_HALF(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA MUSIC REST HALF, mdi-music-rest-half, _color, _scale, _shape)
+!define MA_MUSIC_REST_HALF(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA MUSIC REST HALF, _label, mdi-music-rest-half, _color, _scale, _shape)
+skinparam folderBackgroundColor<<MA MUSIC REST HALF>> White

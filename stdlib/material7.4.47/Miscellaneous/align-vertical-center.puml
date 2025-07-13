@@ -1,0 +1,8 @@
+sprite mdi-align-vertical-center <svg width="48" height="48"><g transform="scale(2)"><path d="M22 11H17V6H14V11H10V3H7V11H1.8V13H7V21H10V13H14V18H17V13H22V11Z" /></g></svg>
+
+!define MA_ALIGN_VERTICAL_CENTER(_color)                                 SPRITE_PUT(mdi-align-vertical-center, _color)
+!define MA_ALIGN_VERTICAL_CENTER(_color, _scale)                         SPRITE_PUT(mdi-align-vertical-center, _color, _scale)
+!define MA_ALIGN_VERTICAL_CENTER(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA ALIGN VERTICAL CENTER, mdi-align-vertical-center, _color, _scale)
+!define MA_ALIGN_VERTICAL_CENTER(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA ALIGN VERTICAL CENTER, mdi-align-vertical-center, _color, _scale, _shape)
+!define MA_ALIGN_VERTICAL_CENTER(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA ALIGN VERTICAL CENTER, _label, mdi-align-vertical-center, _color, _scale, _shape)
+skinparam folderBackgroundColor<<MA ALIGN VERTICAL CENTER>> White

@@ -1,0 +1,8 @@
+sprite mdi-arrange-bring-forward <svg width="48" height="48"><g transform="scale(2)"><path d="M2,2H16V16H2V2M22,8V22H8V18H10V20H20V10H18V8H22Z" /></g></svg>
+
+!define MA_ARRANGE_BRING_FORWARD(_color)                                 SPRITE_PUT(mdi-arrange-bring-forward, _color)
+!define MA_ARRANGE_BRING_FORWARD(_color, _scale)                         SPRITE_PUT(mdi-arrange-bring-forward, _color, _scale)
+!define MA_ARRANGE_BRING_FORWARD(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA ARRANGE BRING FORWARD, mdi-arrange-bring-forward, _color, _scale)
+!define MA_ARRANGE_BRING_FORWARD(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA ARRANGE BRING FORWARD, mdi-arrange-bring-forward, _color, _scale, _shape)
+!define MA_ARRANGE_BRING_FORWARD(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA ARRANGE BRING FORWARD, _label, mdi-arrange-bring-forward, _color, _scale, _shape)
+skinparam folderBackgroundColor<<MA ARRANGE BRING FORWARD>> White

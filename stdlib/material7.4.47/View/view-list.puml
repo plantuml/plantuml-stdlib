@@ -1,0 +1,8 @@
+sprite mdi-view-list <svg width="48" height="48"><g transform="scale(2)"><path d="M9,5V9H21V5M9,19H21V15H9M9,14H21V10H9M4,9H8V5H4M4,19H8V15H4M4,14H8V10H4V14Z" /></g></svg>
+
+!define MA_VIEW_LIST(_color)                                 SPRITE_PUT(mdi-view-list, _color)
+!define MA_VIEW_LIST(_color, _scale)                         SPRITE_PUT(mdi-view-list, _color, _scale)
+!define MA_VIEW_LIST(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA VIEW LIST, mdi-view-list, _color, _scale)
+!define MA_VIEW_LIST(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA VIEW LIST, mdi-view-list, _color, _scale, _shape)
+!define MA_VIEW_LIST(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA VIEW LIST, _label, mdi-view-list, _color, _scale, _shape)
+skinparam folderBackgroundColor<<MA VIEW LIST>> White

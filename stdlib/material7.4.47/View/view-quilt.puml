@@ -1,0 +1,8 @@
+sprite mdi-view-quilt <svg width="48" height="48"><g transform="scale(2)"><path d="M10,5V11H21V5M16,18H21V12H16M4,18H9V5H4M10,18H15V12H10V18Z" /></g></svg>
+
+!define MA_VIEW_QUILT(_color)                                 SPRITE_PUT(mdi-view-quilt, _color)
+!define MA_VIEW_QUILT(_color, _scale)                         SPRITE_PUT(mdi-view-quilt, _color, _scale)
+!define MA_VIEW_QUILT(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA VIEW QUILT, mdi-view-quilt, _color, _scale)
+!define MA_VIEW_QUILT(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA VIEW QUILT, mdi-view-quilt, _color, _scale, _shape)
+!define MA_VIEW_QUILT(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA VIEW QUILT, _label, mdi-view-quilt, _color, _scale, _shape)
+skinparam folderBackgroundColor<<MA VIEW QUILT>> White

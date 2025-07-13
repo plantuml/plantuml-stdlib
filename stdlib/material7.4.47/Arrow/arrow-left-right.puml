@@ -1,0 +1,8 @@
+sprite mdi-arrow-left-right <svg width="48" height="48"><g transform="scale(2)"><path d="M6.45,17.45L1,12L6.45,6.55L7.86,7.96L4.83,11H19.17L16.14,7.96L17.55,6.55L23,12L17.55,17.45L16.14,16.04L19.17,13H4.83L7.86,16.04L6.45,17.45Z" /></g></svg>
+
+!define MA_ARROW_LEFT_RIGHT(_color)                                 SPRITE_PUT(mdi-arrow-left-right, _color)
+!define MA_ARROW_LEFT_RIGHT(_color, _scale)                         SPRITE_PUT(mdi-arrow-left-right, _color, _scale)
+!define MA_ARROW_LEFT_RIGHT(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA ARROW LEFT RIGHT, mdi-arrow-left-right, _color, _scale)
+!define MA_ARROW_LEFT_RIGHT(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA ARROW LEFT RIGHT, mdi-arrow-left-right, _color, _scale, _shape)
+!define MA_ARROW_LEFT_RIGHT(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA ARROW LEFT RIGHT, _label, mdi-arrow-left-right, _color, _scale, _shape)
+skinparam folderBackgroundColor<<MA ARROW LEFT RIGHT>> White

@@ -1,0 +1,8 @@
+sprite mdi-file-excel-box-outline <svg width="48" height="48"><g transform="scale(2)"><path d="M5 3C3.89 3 3 3.89 3 5V19C3 20.11 3.89 21 5 21H19C20.11 21 21 20.11 21 19V5C21 3.89 20.11 3 19 3H5M5 5H19V19H5V5M13 12L16.2 17H14.2L12 13.2L9.8 17H7.8L11 12L7.8 7H9.8L12 10.8L14.2 7H16.2L13 12Z" /></g></svg>
+
+!define MA_FILE_EXCEL_BOX_OUTLINE(_color)                                 SPRITE_PUT(mdi-file-excel-box-outline, _color)
+!define MA_FILE_EXCEL_BOX_OUTLINE(_color, _scale)                         SPRITE_PUT(mdi-file-excel-box-outline, _color, _scale)
+!define MA_FILE_EXCEL_BOX_OUTLINE(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA FILE EXCEL BOX OUTLINE, mdi-file-excel-box-outline, _color, _scale)
+!define MA_FILE_EXCEL_BOX_OUTLINE(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA FILE EXCEL BOX OUTLINE, mdi-file-excel-box-outline, _color, _scale, _shape)
+!define MA_FILE_EXCEL_BOX_OUTLINE(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA FILE EXCEL BOX OUTLINE, _label, mdi-file-excel-box-outline, _color, _scale, _shape)
+skinparam folderBackgroundColor<<MA FILE EXCEL BOX OUTLINE>> White

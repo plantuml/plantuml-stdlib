@@ -1,0 +1,8 @@
+sprite mdi-close-thick <svg width="48" height="48"><g transform="scale(2)"><path d="M20 6.91L17.09 4L12 9.09L6.91 4L4 6.91L9.09 12L4 17.09L6.91 20L12 14.91L17.09 20L20 17.09L14.91 12L20 6.91Z" /></g></svg>
+
+!define MA_CLOSE_THICK(_color)                                 SPRITE_PUT(mdi-close-thick, _color)
+!define MA_CLOSE_THICK(_color, _scale)                         SPRITE_PUT(mdi-close-thick, _color, _scale)
+!define MA_CLOSE_THICK(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA CLOSE THICK, mdi-close-thick, _color, _scale)
+!define MA_CLOSE_THICK(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA CLOSE THICK, mdi-close-thick, _color, _scale, _shape)
+!define MA_CLOSE_THICK(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA CLOSE THICK, _label, mdi-close-thick, _color, _scale, _shape)
+skinparam folderBackgroundColor<<MA CLOSE THICK>> White
