@@ -3,6 +3,7 @@ package com.plantuml.stdlibencoder;
 import java.io.BufferedReader;
 import java.io.DataOutputStream;
 import java.io.File;
+import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
 import java.io.FileReader;
 import java.io.IOException;
@@ -11,6 +12,8 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
+
+import com.plantuml.stdlibencoder.brotli.Lazy;
 
 import net.sourceforge.plantuml.klimt.creole.atom.AtomImg;
 import net.sourceforge.plantuml.klimt.sprite.SpriteGrayLevel;
@@ -42,23 +45,27 @@ public class StdlibFolderBuilder {
 	/**
 	 * Output stream used to write monochrome sprite data.
 	 */
-	private DataOutputStream spritesOutputStream;
+	private Lazy<DataOutputStream> spritesOutputStream;
 
 	private ColorImagesStream colorImagesOutputStream;
+
+	private JsonStream jsonStream;
 
 	/**
 	 * Constructor that initializes the builder with the specified directory.
 	 *
-	 * @param name The name of the directory containing the included files to be
-	 *             processed.
+	 * @param name      The name of the directory containing the included files to
+	 *                  be processed.
+	 * @param rawFolder
 	 */
-	public StdlibFolderBuilder(String name) throws IOException {
+	public StdlibFolderBuilder(String name, File rawFolder) throws IOException {
+		System.err.println("Starting " + name);
 		this.dir = new File("stdlib", name);
-		final File rawFolder = rawFolder();
 
-		final File spritesFile = new File(rawFolder, name.toLowerCase() + "-def.repx");
 		final File textFile = new File(rawFolder, name.toLowerCase() + "-abc.repx");
+		final File spritesFile = new File(rawFolder, name.toLowerCase() + "-def.repx");
 		final File colorImagesFile = new File(rawFolder, name.toLowerCase() + "-ghi.repx");
+		final File jsonFile = new File(rawFolder, name.toLowerCase() + "-json.repx");
 
 		final String infoString = readInfo(new File(dir, "README.md"));
 		this.texts = new DataOutputStream(new FileOutputStream(textFile));
@@ -69,24 +76,32 @@ public class StdlibFolderBuilder {
 			texts.close();
 		} else {
 			this.colorImagesOutputStream = new ColorImagesStream(colorImagesFile);
-			this.spritesOutputStream = new DataOutputStream(new FileOutputStream(spritesFile));
+			this.spritesOutputStream = new Lazy<>(x -> {
+				try {
+					return new DataOutputStream(new FileOutputStream(spritesFile));
+				} catch (FileNotFoundException e) {
+					e.printStackTrace();
+					return null;
+				}
+			});
+			this.jsonStream = new JsonStream(new Lazy<>(x -> {
+				try {
+					return new DataOutputStream(new FileOutputStream(jsonFile));
+				} catch (FileNotFoundException e) {
+					e.printStackTrace();
+					return null;
+				}
+			}));
 			processDir(dir);
 			texts.writeUTF(SEPARATOR);
 			texts.close();
 			colorImagesOutputStream.close();
-			spritesOutputStream.close();
+			if (spritesOutputStream.isInitialized())
+				spritesOutputStream.get().close();
+			jsonStream.close();
 		}
-	}
+		System.err.println("  Ending " + name);
 
-	/**
-	 * Creates and returns the raw folder where the output files will be stored.
-	 *
-	 * @return The raw folder as a File object.
-	 */
-	private static File rawFolder() {
-		final File result = new File("raw");
-		result.mkdirs();
-		return result;
 	}
 
 	/**
@@ -121,10 +136,17 @@ public class StdlibFolderBuilder {
 		for (File f : dir.listFiles())
 			if (f.isFile() && f.getName().endsWith(".puml"))
 				processSingleFile(f);
+			else if (f.isFile() && f.getName().endsWith(".json"))
+				processSingleJson(f);
 
 		for (File f : dir.listFiles())
 			if (f.isDirectory())
 				processDir(f);
+
+	}
+
+	private void processSingleJson(File jsonFile) throws IOException {
+		jsonStream.append(jsonFile);
 
 	}
 
@@ -210,7 +232,7 @@ public class StdlibFolderBuilder {
 					SpriteGrayLevel.GRAY_16.buildSpriteZ(width, height, definition.toString());
 					throw new IOException("Error in sprite");
 				}
-				sprite.exportSprite1(spritesOutputStream);
+				sprite.exportSprite1(spritesOutputStream.get());
 				break;
 			}
 			definition.append(s.trim());
@@ -230,7 +252,7 @@ public class StdlibFolderBuilder {
 		while ((s = br.readLine()) != null) {
 			if (s.trim().equals("}")) {
 				final SpriteMonochrome sprite = (SpriteMonochrome) SpriteGrayLevel.GRAY_16.buildSprite(-1, -1, strings);
-				sprite.exportSprite1(spritesOutputStream);
+				sprite.exportSprite1(spritesOutputStream.get());
 				break;
 			}
 			strings.add(s.trim());
