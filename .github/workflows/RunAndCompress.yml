@@ -25,12 +25,6 @@ jobs:
     - name: Run with Gradle
       run: gradle run
 
-    - name: Give Brotli version
-      run: brotli -V
-
-    - name: Generate Output
-      run: perl script/generateOutput.pl
-
     - name: Commit the changes, if any
       uses: stefanzweifel/git-auto-commit-action@v5
       with:
