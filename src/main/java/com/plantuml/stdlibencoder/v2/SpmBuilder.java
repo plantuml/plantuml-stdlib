@@ -22,7 +22,6 @@ public class SpmBuilder {
 	public static final String DATA_IMAGE_PNG_SPM = "data:image/png;spm ";
 
 	private final Path stdlib;
-	private final Path raw;
 	private final String libName;
 
 	private SolidFolderWriter pumlWriter;
@@ -32,9 +31,9 @@ public class SpmBuilder {
 
 	public SpmBuilder(String name) throws IOException {
 		System.err.println("Starting " + name);
-		this.libName = name;
 		this.stdlib = Paths.get("stdlib", name);
-		this.raw = Paths.get("raw", name);
+		this.libName = name.toLowerCase();
+		final Path raw = Paths.get("raw", libName);
 		// System.err.println("stdlib=" + stdlib + " raw=" + raw);
 
 		final String infoString = readInfo(stdlib.resolve("README.md"));

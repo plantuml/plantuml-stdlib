@@ -89,7 +89,7 @@ public class Main {
 		Files.createDirectories(outPath.getParent());
 		System.err.println(outPath);
 
-		final Encoder.Parameters params = new Encoder.Parameters().setQuality(11);
+		final Encoder.Parameters params = new Encoder.Parameters().setQuality(11).setWindow(24);
 		final byte data2[] = BrotliUtils.compress(data, params);
 		System.err.println(data2.length);
 		Files.write(outPath, data2);
