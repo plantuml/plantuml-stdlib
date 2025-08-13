@@ -21,14 +21,16 @@ public class SpriteAppender {
 
 		this.toc = new Lazy<>(() -> {
 			try {
-				return new DataOutputStream(Files.newOutputStream(path.resolve("sprite-toc.spm")));
+				return new DataOutputStream(Files.newOutputStream(SpmChannel.SPRITE_TAB.getPath(path)));
+				// return new DataOutputStream(Files.newOutputStream(path.resolve("sprite-toc.spm")));
 			} catch (IOException e) {
 				throw new RuntimeException(e);
 			}
 		});
 		this.dat = new Lazy<>(() -> {
 			try {
-				return new DataOutputStream(Files.newOutputStream(path.resolve("sprite-dat.spm")));
+				return new DataOutputStream(Files.newOutputStream(SpmChannel.SPRITE_DAT.getPath(path)));
+				// return new DataOutputStream(Files.newOutputStream(path.resolve("sprite-dat.spm")));
 			} catch (IOException e) {
 				throw new RuntimeException(e);
 			}
@@ -37,6 +39,7 @@ public class SpriteAppender {
 
 	public void close() throws IOException {
 		if (counter > 0) {
+			this.toc.get().writeInt(0);
 			this.toc.get().close();
 			this.dat.get().close();
 		}

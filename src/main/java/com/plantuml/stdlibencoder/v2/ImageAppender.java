@@ -1,10 +1,8 @@
 package com.plantuml.stdlibencoder.v2;
 
 import java.awt.image.BufferedImage;
-import java.io.BufferedOutputStream;
 import java.io.DataOutputStream;
 import java.io.FileNotFoundException;
-import java.io.FileOutputStream;
 import java.io.IOException;
 import java.io.OutputStream;
 import java.nio.file.Files;
@@ -29,35 +27,38 @@ public class ImageAppender {
 	 */
 	final private Pattern PATTERN_BASE64 = Pattern.compile(AtomImg.DATA_IMAGE_PNG_BASE64 + "([0-9a-zA-Z+/]+[=]*)");
 
-	private final Lazy<OutputStream> toc;
+	private final Lazy<DataOutputStream> toc;
 	private final Lazy<OutputStream> dat;
-	private final Lazy<OutputStream> colorOs;
+	private final Lazy<OutputStream> colors;
 	private int counter;
 
 	private final Map<Integer, Integer> colorAndIndex = new HashMap<>();
 
-	private final List<Integer> colors = new ArrayList<>();
+	private final List<Integer> colorsInt = new ArrayList<>();
 
 	public ImageAppender(Path path) throws IOException {
 		Files.createDirectories(path);
 
 		this.toc = new Lazy<>(() -> {
 			try {
-				return Files.newOutputStream(path.resolve("image-toc.spm"));
+				// return Files.newOutputStream(path.resolve("image-toc.spm"));
+				return new DataOutputStream(Files.newOutputStream(SpmChannel.IMAGE_TAB.getPath(path)));
 			} catch (IOException e) {
 				throw new RuntimeException(e);
 			}
 		});
 		this.dat = new Lazy<>(() -> {
 			try {
-				return Files.newOutputStream(path.resolve("image-dat.spm"));
+				// return Files.newOutputStream(path.resolve("image-dat.spm"));
+				return Files.newOutputStream(SpmChannel.IMAGE_DAT.getPath(path));
 			} catch (IOException e) {
 				throw new RuntimeException(e);
 			}
 		});
-		this.colorOs = new Lazy<>(() -> {
+		this.colors = new Lazy<>(() -> {
 			try {
-				return Files.newOutputStream(path.resolve("image-col.spm"));
+				// return Files.newOutputStream(path.resolve("image-col.spm"));
+				return Files.newOutputStream(SpmChannel.IMAGE_COL.getPath(path));
 			} catch (IOException e) {
 				throw new RuntimeException(e);
 			}
@@ -65,11 +66,13 @@ public class ImageAppender {
 	}
 
 	public void close() throws IOException {
-		if (colors.size() > 0) {
-			if (colors.size() != colorAndIndex.size())
+		if (colorsInt.size() > 0) {
+			if (colorsInt.size() != colorAndIndex.size())
 				throw new IllegalStateException("Color count mismatch");
-			exportColorTable(colorOs.get());
-			this.colorOs.get().close();
+			exportColorTable(colors.get());
+			this.colors.get().close();
+			this.toc.get().writeInt(0);
+			this.toc.get().writeInt(0);
 			this.toc.get().close();
 			this.dat.get().close();
 		}
@@ -107,8 +110,8 @@ public class ImageAppender {
 		final BufferedImage img = SImageIO.read(bytes);
 		final int width = img.getWidth();
 		final int height = img.getHeight();
-		toc.get().write(width);
-		toc.get().write(height);
+		toc.get().writeInt(width);
+		toc.get().writeInt(height);
 
 		// Ok, here we store the image information without any compression
 		// (Except that we use a 16 bit colors index)
@@ -126,19 +129,18 @@ public class ImageAppender {
 				if (idx == null) {
 					colorAndIndex.put(rgb, colorAndIndex.size());
 					idx = colorAndIndex.get(rgb);
-					colors.add(rgb);
+					colorsInt.add(rgb);
 					if (idx > 0xFFFF)
 						throw new IllegalStateException("Too many colors!");
 				}
-				if (colors.get(idx) != rgb)
+				if (colorsInt.get(idx) != rgb)
 					throw new AssertionError();
 
 				dat.get().write((idx.intValue() >> 8) & 0xFF);
 				dat.get().write(idx.intValue() & 0xFF);
 			}
 		}
-		
-		
+
 		return counter++;
 
 	}
@@ -150,10 +152,10 @@ public class ImageAppender {
 	 * @throws IOException If an error occurs during writing.
 	 */
 	private void exportColorTable(OutputStream os) throws IOException, FileNotFoundException {
-		os.write((colors.size() >> 8) & 0xFF);
-		os.write(colors.size() & 0xFF);
+		os.write((colorsInt.size() >> 8) & 0xFF);
+		os.write(colorsInt.size() & 0xFF);
 
-		for (Integer rgb : colors) {
+		for (Integer rgb : colorsInt) {
 			final int alpha = smartCompress((rgb & 0xFF000000) >> 24);
 			final int red = smartCompress((rgb & 0xFF0000) >> 16);
 			final int green = smartCompress((rgb & 0x00FF00) >> 8);

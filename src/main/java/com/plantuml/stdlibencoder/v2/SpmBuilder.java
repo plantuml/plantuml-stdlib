@@ -1,6 +1,7 @@
 package com.plantuml.stdlibencoder.v2;
 
 import java.io.IOException;
+import java.nio.charset.StandardCharsets;
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.Paths;
@@ -37,16 +38,21 @@ public class SpmBuilder {
 		// System.err.println("stdlib=" + stdlib + " raw=" + raw);
 
 		final String infoString = readInfo(stdlib.resolve("README.md"));
-		// System.err.println("infoString=" + infoString);
+
+		final Path pathInfo = SpmChannel.INFO.getPath(raw);
+		Files.write(pathInfo, infoString.getBytes(StandardCharsets.UTF_8));
 
 		if (infoString.contains("link=")) {
+			System.err.println("infoString=" + infoString);
 			return;
 		}
+		
+		
 
-		pumlWriter = new SolidFolderWriter(raw, "puml");
+		pumlWriter = new SolidFolderWriter(raw, SpmChannel.TEXT_DAT, SpmChannel.TEXT_TOC);
 		jsonWriter = new Lazy<>(() -> {
 			try {
-				return new SolidFolderWriter(raw, "json");
+				return new SolidFolderWriter(raw, SpmChannel.JSON_DAT, SpmChannel.JSON_TOC);
 			} catch (IOException e) {
 				throw new RuntimeException(e);
 			}
@@ -94,7 +100,7 @@ public class SpmBuilder {
 
 	private void processSinglePumlFile(Path f) throws IOException {
 
-		String name = f.toString().replace('\\', '/');
+		String name = f.toString().replace('\\', '/').replaceFirst("\\.puml$", "");
 		int x = name.indexOf('/');
 		x = name.indexOf('/', x + 1);
 		name = name.substring(x + 1);
