@@ -9,6 +9,62 @@ Following the C convention for "C standard library" _(see https://en.wikipedia.o
 
 [![](https://img.plantuml.biz/plantuml/svg/SoWkIImgAStDuUKgBad9oKpYvN98pKi12W00)](https://editor.plantuml.com/uml/SoWkIImgAStDuUKgBad9oKpYvN98pKi12W00)
 
+## AdaML [ada]
+
+### What is AdaML
+- UML tailored for Ada 2012 programming language
+- A modeling language to draw UML diagrams, implemented in PlantUML
+- An easy way to learn Ada through the use of UML and OOP concepts
+
+### Features
+- UML tailored to use and show particular Ada language characteristics
+- Coherent set of functions to design software components for Ada
+- Generates high quality drawings (ps, eps) easy to embedded in other docs
+- Easy to learn by example, both AdaML and Ada language
+
+Example of usage:
+```plantuml
+!include <AdaML>
+actor User
+agent String_Instrument
+agent Screen
+agent Touch_Screen
+agent Microphone
+
+begin_package_spec("Floyd_Tuner")
+
+  subprogram("Main")
+
+  package("View")
+  package("Controller")
+  package("Signal_Analyzer")
+  package("Sample_Collector")
+
+  depends("User", "Touch_Screen", "interacts >")
+  depends("Main", "Controller", "starts >")
+  depends("User", "Screen", "see")
+  depends("User", "String_Instrument", "plays\n&\ntunes")
+
+  depends("Touch_Screen", "Controller", "commands")
+
+  depends("Controller", "Sample_Collector", "manages")
+  depends("Controller", "Signal_Analyzer", "configures")
+  depends("Controller", "View", "commands")
+
+  depends("View", "Screen", "output >")
+  depends("View", "Signal_Analyzer", "read\nresults >")
+  depends("Signal_Analyzer", "Sample_Collector", "read\nsamples >")
+  depends("Sample_Collector", "Microphone", "ADC")
+
+  depends("String_Instrument", "Microphone", "captures <")
+
+end()
+```
+
+This example renders the following image:
+![Example](https://www.plantuml.com/plantuml/png/p5PTRnkx4NtNhnZVuC8E8CkotQPnumILLJiHuCY693Vmap1Q3dTPSya5oPMi5ltl9RMIg5shyOjJN0g8mZc7PpuuG-jlrg5nPIvRXt3yPWiElTmRhagkn_3xBHo7xsE7Gcf331wyATUCf50ftA9AIqp9axgTqyxPJ-NwkbWQaMOEZlhluQnxUj7s_vvruSQWIiWcCD99HWPUMxyasKacB1H6fmPp41Qu8GAhkLkWeKy0Irr2WWeCCM6T4RFI4GW7gDY9Dg4aWY-Zd4TAnSY08vDRq1nSHl1r-01VIP512VVbJ8e4RaL2oXAWznuiDYC6isKZkd3u9aGqNaS4SAEz0tH2gpQGy0G3SpBMx-5yxQyIPzG6RMfoH-X2GjweYw3m7b0jGQAB8ft0_cDSHImu0w5MYMMw8FyVTA7G2o4bp0XAIxoKxQQSFmW_1fDlTmyJw0qVuKTlDEeD9u-V_46NQO_Id2fPaHTI40DVOOFABKCTctBVhqVzR_vyxsfmEvWyXjBU32R3w_4ORkv6q8FxtcWow3_SzaPm_p2wlnjVTm36H2iFJRcVjGHVzPKXO1J6ptR-_rVng4kmlaQIGOPp0aC9YJanG4ZyEB_UrtKvb5gbgxA3sxbadzY0WzAk3PO8BZFd2llNavF5Oj59LTdH9ZsHbPuz-TBvDSc-wMlSEXm_2GK5-kp8aR4jw_UhBVox1O36w4LVIsrW9Z5vsfXywoTFYgo5RkUZDyxqSu6CXRUswxU9H6jxRZqDWqIhiVWNmUaMk_9QgGalGoM-o8IZBQWD8rFtkWD4twUTymrqevMhVFnfrpJqQK7_-mDSLI_wc79nfINRSBuHUiLcDEyOXizFIPUNe6V_fCJ1bo_mZdFsbsxtjGE5qSwV8BR_g3299DRFqA0dcLVYRz9Z1Sxse2DaehG-1amIiZPu_lF_fAqlIkU5LkHLtL8IbBaCmemubjBj2swaSrHrIWme3MCdahyBMqXSWZCbUMk6YYsCS8uKS9Gss7AjT98PdTFMDDIENbmIz-lYOet6dl78-MhLaDWqdOyVrqW8S7tYRBMY_MLkb9OIpGuZTdImZ3DaUY5KMcLM6IVqx7fIf2edvK0ITnwehdutgZX6XSyHqpsfVWYVIAXkX8UXZSPzOOTUgJEgewPAfmx5-TdCSgY8tMPMtSP__AFnjRfCIBJY8csXb7enpSMpPxKomGWeBzmISFC2s5rhJYxJR6swlApguVknwiKNPkl8a7RBWbgM72YVeVL1qvZ2C-MqWOwFw5evuGHPwAz2AZqYj6eTuCowqDhJ94C3s_KPVklzjek6Ek-YlhlEptbtbnC3MNCyM4tJ5AtLYLYvt0YWb16lEw_m7JGwZ-wxuHCvqNbKM24xb99pyLoJcVOs7A6y0CU4wh5upg2ELh74GD2hSrxZn5YsTQYwA8f7WVjTD8h7CeT2HqvDFCfl7iuNqR-he_kZht6QqMyHpxBbp0FxqXX7T7yQIO8OEVlJS6YVcjeLwDPeJJlAN_24p_Y6KzUEyitG8pZPeFlbEV_WruQpLxvARVqxg78IGTj0AoSn-Wj4pkkSw6GZFqSZS2RfvQJE8rhF88xAnSKkPy-ajWxlN4Qc-JmmAaYnsdXvUcd9ow4nkAoDjeSq3rhtHipH4QHIpr32nh5j7KodkMRJgQTsmuPKcSTT-44PTmPLId6x_WCP3KNb91gOmSLK2aKssj0vix95KuAM6gRgoMqOusqqWD1aJTEoQ6gIf9oKirD9SvBHBjHqEyi59H5GseNhAvKZKrbz9O_VTBMgtzltey4_UfDhk7aOzYU3k-7Osz_QK-k0bofPjKMuEpTT_-evcgCigGthxNIrVTy2E10SZdwtpaXIHvKLFliY1CoZXbnfLFrOE4NIKeqH4SK4RuMlJIGlWveBAsP22hSyKfXNSKp5Qi8-m---0tmyAwGDtJQSRkFSS7p7_xUPQ-zjupZY__jJRBQDHLeKRSflGI9gAorWe2aAnEa_TKjSoBD5X3uIF2ggc-IxT-QtUyEzuMgvrPbnZ82wsvttpCxEFYudrlpoYmaQZdN37opZXPIj3KLt98E05hqLrZ6Z2QBkFU5UqLiUn39Uf8H5rYNLdjEoHqfJfJ8m6whF1iQtGdS2gSdynCx1e6srhDbQr49FBMIn5s36efNG4ICB6fcPWVlck65CJme846XsqG9M_QZAZaz2Po8neRslzSmJLshk6iMUZotzFdnuFdxuqFRtCSFKEYrdr-iInAX6wm4fp8J6I2wKzp0R6gFoeJ4w8w99vKHZObdH69KNfL5dHcEYkT4ObHrLbywFnaY6L8sn70dpYSsK_TmEIe_f38mRbvn49Swu8nWzmo60w6yO70yUq7_0I_8I4_M4lBRcXHcP-_T3s63mHkmykdTo8fAacCCLchaqQYxQnoFNhX2aMGc5vhYdoNvCGkoNbbeeP1fDeBL2kYlVS65SQZ5qLwuH5Ph8OxOTjSaL3sD32oQDcI81GGd3JVbYO3HgCQGnMmn1436uAL-CMJcbLNP9gM_3Kp1FJmE32bP6jnIU5zOEp6hj_oxh3JsGX99KTGq1Qc49mGjdK6rMqiOeZ2sp4CymLxTn1NGmrnEnXZa_tn8RZqCK64LmOvYX7VecHYV3j3-K7-RLvpDiD5UFqYRFCOhvkPCjW9wJJg_AwO-8LwdpH70kMYpYzenEo8QorpVWjzVBvQ8iAZo_eShyWs__Mq5JVh70yz-NzNn3k-bu-Gvb0baIVCnOXX7OKOtV-rhMOUL_vlM6cFkHPCsnm-etWVSrsNyYuAXiTw1HbW9wTq3PjoG8e0FVzrKWPcQBghpfySF8KJnbftpaY43SyE9bxu1qy660WA3vjqySfs4iw3vprZ2yLMYfwyJZMAFsTCIBP35N02NmHNwQ-AgzIWOXNR77eGopsxQdw_W0K9MQ1rejVl_whsyk3xfO3CED4fTQ8cl_DO4MMqmZAoaZgmMeT17D1bd5nXzN4-OvcTVi8WzacfYWFzRCQtilAou4UqlKwgmN0L79Cf7eZYwRWmZpqxoyCKqyrA5LFOkeAJlQAv9tmktEBL8u_wYLbr3h9n9HizFSKGcXiq-BrjvuWDPL3zafxgg84DgdINjtEqJigelRp-siYIEpLuzm_rcGb0ugyoVqIYc6UZgkbTJBkYB2U5SrVlRaSSk6bFdPBOL-XNfgCid4CcU9kSNHolOKxABS576KxEGxXCmmooX66FAERa6ivBibPL_bZ2Ji0Ln0l_jT40oKl56I62QPZfcuaxQU4zETjv5lOgvodRjgedbWMaTs-Ob44DLy7WX7s21oxEMBfPdWL58eUlC5b1A1h89hznHKry3cV3WCQOTn4GMWWDgbckidgUNZYy5uOTybFjihC6di6hAfYAM-YAgYcrEilyzGSlZPTO8JGlkckFPHReZOTQg6GgbfhSCKq7q2I0llRuLy0N_m6B2saTmwEMm_KeJFoaJzBQkQGrRXO7BO6jonE70bBffqhyF9PGsytQ_NuIjpqUp0TRbZS-3g74o-G6tk-7uEpVQh5UXqU8L-5rDp_kJvnOqbMVo09XCU1xHRUj8_a0L_coarTkwYrDTphBe6d4xSr94ueNWKtIQKhbyruQDlt1NzGN0tazrNrPk2A9kYQeIgxnrTrwKlmYyUuPB_aJz-FneqxIFVZhlqHw7STFZVQuwkvLpRtmaW6z1V6vnjeqDsDsD7SYaBNN_qh8vQlBW3pFY1NT2pvXWywO_jMwDaq_0YdUkwctZuYY1c2Mu7Dtu8kRckEtB39Ggmk-2B78edUi4KJrODBvO08WZadMHexctSfhdlXnp-sMWZ2DJTPC2nFdW7UoTuvuKfDmtfNxWArNSIvD_DLLaPXpdEMO2wCG8Q-iPAIc0tX69OZn9OCefzSdEPYh8NdQKvpTL53xLoTv2oMazikBsVbmlPRmCVPRrSD7DsuGMyVSTVRbJAOWFVjBblf_1nrPIM8yXMqzRXG8qJ7VJY_SmKwmy_ZSXrpZHuFULNiH5ZWCfGORHdYi3g8fqtEX08n5Dl8gwewtAzYUtOmTnyYSwn-WeHIUQnp8irfMcKbSLzURjlvq_708XwMVhP6t0EIrJRl__MkgyhY8dA7W9bRRR9XDIAQd-nibZC2mg2YqUW58rk3uAhE7ulj5ZKB0fE95sl5TDe02iYwcDq9uZrP-1zC_x_XetePJmt6H0MoeKYTIO9YZd6bdB4LqnoWo13W0JPxUsXv7vsh7Y1tmwmPQnki0y26J_V3huyROTZxHJM5yXqCcP8ISNv9oQ8c6m40pOvcaZk3HGP67T6Vo1jp9cdVrUrXC3jSyihlv-iTx2kYhgtlAbA2WAVPrbkj9YJat7JcB0NmTvEua4UZJbHm2XqCGryl9CCQ4dW-eyPUjF5d9XmTAzMzBZkiERn9FLv0xu1bLH9tgRdtPCc2Ga6E3UdBWwST6Ou78k0WRU57F-Uu0CquIUNgKCH6N3Gq0Ot06DIDLG0yrNCiEdSEj2u9FeSImHJ64c4t8j7RfcBNooh9MhyMt3oSQ4_Hi48Z5-V2cxuXBH7EoCqVbuJ89dZ86WdgkPB0v9TSWvkZlWpoPfltBmkwSFjEN_hZvZ3vuTBzxKxhRr-84ilts-_KsxiF-FgZKR-2EvX8TulbiM6aIkYF43VnQNRdcXWZqyTB42OIL4PDqCuy3_Z6RYd8Qxy0svvu_2dwxB05__ldI3pcWNcfKlWQu3skD-JjJQMC4z3FyG-cTbfEcvkgquhLxnu2BXVGmCIGbiMnPAB3EE9LwKVcfn1r9n81Xld9jvdWUNTAxH4Dx8q2SWUXtGEu5uZ4Vz28e5ECAGfvyV0dCm58W-7UDUOzC7gak9c_SbSpQjDcFRnLUu47yjoudqqCFGxmYyx2G-FcuSdpSFJvk5Py_2yUNZHFBpqFcQgvkIVj4iqAwj_WTC9c6Z_CylWGYM3nF02X-mIUDmcS1eZy3X5u4cRmECOWISf0a_R19x423nD4NZM9l0qHk1PYi3pDe5dCGBFKmHUj0ayZn5uaIBmiatWHOp0owp3xELgCgFwuJS9JMQK7PaAhKDW0hz3N0A_GrW2lqDK0hz3K0A_Gqm2lqD80ZyTaSMKFxF_lgPiNNpW0iWjW2TlAc9mZUdHjzDaM5R-vUtoUderQJLzEv-kbwkhPKL48_TWxLyMoq-poTjhAfWfGE-PS15flotc5LhbigVz1stOK5FGShca-MovM810qFxT_4DLB2QlwEVJVtSwYuyhAg0k6OzL1HSffoqhpjl7eKByZjDCiatDTMQ804a9G8G1ElwFMXfMY6_9rcLv2uYsEZVo_qsZVbVTVrTjo6or4bs9h2JYOvkYcYaa1QICWpR28iCHNW9D6HpitBVNIKJuD26SwmxjjRpUhAutiAk6Yyj11TliNUK-PjJ-qF1H2mYD6ZsQHXHX6_hyzkgRIwLNnBaQQLgiDcmzSywuxc3eJ_Jd-kFYVm00)
+
+
 ## Amazon Web Services
 
 ### AWS Icons
@@ -125,8 +181,8 @@ This example renders the following image:
 [![version: 2.12.1][Version Badge]][Version Link]
 ![patched](https://img.shields.io/badge/patched-darkred)
 ![license: MIT](https://img.shields.io/badge/license-MIT-green)
-![author: Ricardo Niepel, kirchsth and contributors](https://img.shields.io/badge/author-Ricardo_Niepel,_kirchsth_and_contributors-black)  
-[![all properties see: ./stdlib/C4/README.md][See Badge]][See Link]  
+![author: Ricardo Niepel, kirchsth and contributors](https://img.shields.io/badge/author-Ricardo_Niepel,_kirchsth_and_contributors-black)
+[![all properties see: ./stdlib/C4/README.md][See Badge]][See Link]
 
 [Version Badge]: https://img.shields.io/badge/version-2.12.1-blue
 [Version Link]: https://github.com/plantuml-stdlib/C4-PlantUML/tree/release/v2.12.0
