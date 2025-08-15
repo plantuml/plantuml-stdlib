@@ -24,7 +24,7 @@ Following the C convention for "C standard library" _(see https://en.wikipedia.o
 
 Example of usage:
 ```plantuml
-!include <AdaML>
+!include <AdaML/AdaML>
 actor User
 agent String_Instrument
 agent Screen
