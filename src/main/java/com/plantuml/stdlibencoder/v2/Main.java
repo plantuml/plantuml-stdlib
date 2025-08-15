@@ -5,12 +5,10 @@ import java.io.UncheckedIOException;
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.Paths;
-import java.util.Collection;
 import java.util.Comparator;
+import java.util.Set;
 import java.util.TreeSet;
-import java.util.concurrent.ExecutorService;
-import java.util.concurrent.Executors;
-import java.util.concurrent.TimeUnit;
+import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
 import com.aayushatharva.brotli4j.encoder.Encoder;
@@ -30,26 +28,19 @@ public class Main {
 		deltree(raw);
 		deltree(output);
 
-		// Create a fixed thread pool to manage parallel tasks
-		final ExecutorService executor = Executors.newFixedThreadPool(Runtime.getRuntime().availableProcessors());
-		final Collection<String> names = new TreeSet<String>();
-
-		try (Stream<Path> paths = Files.list(stdlibPath)) { //
-			paths.filter(Files::isDirectory) //
-					.forEach(dir -> executor.submit(() -> {
+		final Set<String> names;
+		try (Stream<Path> paths = Files.list(stdlibPath)) {
+			names = paths.filter(Files::isDirectory).parallel() //
+					.map(path -> path.getFileName().toString()) //
+					.map(name -> {
 						try {
-							final String name = dir.getFileName().toString();
 							new SpmBuilder(name);
-							synchronized (names) {
-								names.add(name.toLowerCase());
-							}
+							return name.toLowerCase();
 						} catch (IOException e) {
-							e.printStackTrace();
+							throw new UncheckedIOException(e);
 						}
-					}));
-		} finally {
-			executor.shutdown(); // Initiates an orderly shutdown of the thread pool
-			executor.awaitTermination(1, TimeUnit.HOURS);
+					}) //
+					.collect(Collectors.toCollection(TreeSet::new));
 		}
 
 		System.err.println("names=" + names);

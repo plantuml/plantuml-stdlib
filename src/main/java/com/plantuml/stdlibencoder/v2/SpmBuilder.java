@@ -28,6 +28,7 @@ public class SpmBuilder {
 	private Lazy<SolidFolderWriter> jsonWriter;
 	private SpriteAppender spriteAppender;
 	private ImageAppender imageAppender;
+	private SvgAppender svgAppender;
 
 	public SpmBuilder(String name) throws IOException {
 		System.err.println("Starting " + name);
@@ -42,11 +43,8 @@ public class SpmBuilder {
 		Files.write(pathInfo, infoString.getBytes(StandardCharsets.UTF_8));
 
 		if (infoString.contains("link=")) {
-			System.err.println("infoString=" + infoString);
 			return;
 		}
-		
-		
 
 		pumlWriter = new SolidFolderWriter(raw, SpmChannel.TEXT_DAT, SpmChannel.TEXT_TOC);
 		jsonWriter = new Lazy<>(() -> {
@@ -58,6 +56,7 @@ public class SpmBuilder {
 		});
 		spriteAppender = new SpriteAppender(raw);
 		imageAppender = new ImageAppender(raw);
+		svgAppender = new SvgAppender(raw);
 
 		processDir(stdlib);
 
@@ -66,6 +65,7 @@ public class SpmBuilder {
 		pumlWriter.close();
 		spriteAppender.close();
 		imageAppender.close();
+		svgAppender.close();
 		System.err.println("  Ending " + name);
 
 	}
@@ -125,7 +125,22 @@ public class SpmBuilder {
 						DATA_IMAGE_PNG_SPM + libName + "/" + id);
 			}
 
-			if (isSpriteLine(s)) {
+			if (isSpriteSvgLine(s)) {
+				if (!s.endsWith("</svg>")) {
+					s = readMultilineSvg(it, s);
+				}
+				final int idx = s.indexOf("<svg");
+				final String svg = s.substring(idx);
+
+				final int num = svgAppender.appendSvg(svg);
+
+				s = s.substring(0, idx).trim();
+				s = s + " :" + libName + "/" + num;
+				
+				System.err.println("SVG=" + s);
+				System.err.println("svg=" + num + " " + svg);
+
+			} else if (isSpriteLine(s)) {
 				// Sprite are not stored in the text output stream
 				if (s.contains("/16z]")) {
 					if (s.endsWith("{") == false)
@@ -168,6 +183,18 @@ public class SpmBuilder {
 		pumlWriter.putContent(name, sb.toString());
 	}
 
+	private String readMultilineSvg(Iterator<String> it, String def) {
+		final StringBuilder sb = new StringBuilder(def.trim());
+		while (true) {
+			final String s = it.next().trim();
+			sb.append(s);
+			if (s.endsWith("</svg>"))
+				return sb.toString();
+
+		}
+
+	}
+
 	private int manageSpriteNormalUncompressed(Iterator<String> it) throws IOException {
 		final List<String> strings = new ArrayList<String>();
 		while (true) {
@@ -199,14 +226,14 @@ public class SpmBuilder {
 		}
 	}
 
-	/**
-	 * Checks if a line represents the start of a sprite definition.
-	 *
-	 * @param s The line to be checked.
-	 * @return True if the line starts a sprite definition, false otherwise.
-	 */
 	private boolean isSpriteLine(String s) {
-		return s.trim().startsWith("sprite") && s.trim().endsWith("{");
+		s = s.trim();
+		return s.startsWith("sprite") && s.endsWith("{");
+	}
+
+	private boolean isSpriteSvgLine(String s) {
+		s = s.trim();
+		return s.startsWith("sprite") && s.contains("<svg");
 	}
 
 	private String readInfo(Path file) throws IOException {
