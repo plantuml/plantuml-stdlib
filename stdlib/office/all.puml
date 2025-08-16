@@ -1,5 +1,5 @@
 @startuml
-!$office = %load_json('all.json')
+!$office = %load_json('<office/all.json>')
 !foreach $group in %get_json_keys($office)
     !foreach $item in $office[$group]
         !include <office/$group/$item>
