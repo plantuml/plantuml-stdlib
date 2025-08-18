@@ -1,0 +1,13 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $flow [64x64/16z] xS61400000CXXFdRpkElMXu0001m
+
+!function $flowIMG($scale=1)
+!return "<img data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAAIGNIUk0AAHomAACAhAAA+gAAAIDoAAB1MAAA6mAAADqYAAAXcJy6UTwAAAAEZ0FNQQAAsY58+1GTAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAAOxAAADsQBlSsOGwAAAvxJREFUeNrtmztoFUEUhjc3WhiiRdDCEEkIYsDCCKISFa8WKa3sfIGCMQiCNgk29gYkEUV8gGCngXSiBPFxba0iIsRCCAZU1FSiIDHxP9wRlmF2dobMnn3kHPiKuXf25p8/szNndmajSEJCYjVHSw5/sx+cBwfBNvXZB/Aa3AIzVTWgDYyDoZR6d8El8ItDVCtT49eBp+CoQ91d4AB4BBarYsBNx8b/jx6wETzOWtgahsbvMHT7T2AUvFTlw+Aq2BKrM6TGhLdl7wFXwJ5YeR7sBG/AT8U78AAcBxti49MyeJKluBqDAXWtPAIWDPUW1He2a0tpQLdWbljqNlKuLaUBtSLr4zDgo0e3rqdcW0oDnmnlMdBhqNehvrNdW8pZgKa84ZjZNMofA1/Ad9AOjoApbRr8C86Cb1VIhSkFvuh5zYRKiSuRCb5QucBWx/rT4AxYqooB1JCHYD3YbRl7KPe/Dk5zrAPyWg73qf/uiGFwvA9mOcXUcjBgVq0D9BjlbnxeBhQqxAAxQAwQA8QAMUAMWL3hmwp3qZT1ENhcsLZ8Bq9Uij2fhQHU+JmEhxlFCnq42u9qgs8tMFaCxkeR+clSEAPqJbq1nbX67Ax1FmApbYtli1aZBcQAMUAMEAPEADFADBAD9HDZGepTK6z92ud07I02Pn/k3IYV6WtJSZNpUXHBkjLT9tUNJWCRueFB9CX1gLVR84jaiZTbhL4bAHuj5rm+JabGB9OXZMA19eOuQbu+tPE5zWRAMH2mrrNddat4uJzro2vugfcZNz6oPlMPuAz2xcqu5/qou/1h6AVB9Znun0Gt7HOub5Ch+wfVZzKgVyv7nOvrZTAgqD6TASsZyTlmgaD6TAbMaWWfc31zDAYE1Vdz6DY+5/oaDAYE1WeaBWhUHY5lia7n+uihJJ3r+5qxAUH1JaXCt8E5T2F3lDCOCKYvKRN8HjVfW+nx6JYnGdcDwfS1WhYRk2BT1HyHxxb0ktMp8JtxIRRMn8vmRqFecyuhPgkJiQLHP6XStvgl5YMUAAAAAElFTkSuQmCC{scale="+$scale+"}>"
+!endfunction
+
+IBMEntityColoring(flow)
+!define flow(e_alias, e_label, e_techn) IBMEntity(e_alias, e_label, e_techn, #232F3E, flow, flow)
+!define flow(e_alias, e_label, e_techn, e_descr) IBMEntity(e_alias, e_label, e_techn, e_descr, #232F3E, flow, flow)
+!define flowParticipant(p_alias, p_label, p_techn) IBMParticipant(p_alias, p_label, p_techn, #232F3E, flow, flow)
+!define flowParticipant(p_alias, p_label, p_techn, p_descr) IBMParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, flow, flow)

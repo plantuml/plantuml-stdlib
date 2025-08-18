@@ -1,0 +1,13 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $fireextinguisher [64x64/16z] xS61400000CXXFdRpkElMXu0001m
+
+!function $fireextinguisherIMG($scale=1)
+!return "<img data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAAIGNIUk0AAHomAACAhAAA+gAAAIDoAAB1MAAA6mAAADqYAAAXcJy6UTwAAAAEZ0FNQQAAsY58+1GTAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAAOxAAADsQBlSsOGwAAArlJREFUeNrtmk9IFFEcx2fXPdRJCouIUDwIXTRYqrsooqfCQ3aV9GgIYikZKblgeeggnqJLh6DAKAi2gyB5XLzoSfAQygpK0WXBPBjb98H3MCyzs/PnPffN7u8HH5i3M/Pb+X3nvd/vvbfrOE1uqTp9bxfIgSts/wLPwF4Mnzdd9IBv4EOtmzJ1EuAl6AfbbPeBMhgJGegt1/EFnj+lr0s2C9AKtsAA23l+Vs1GwWOPQHfJR9ex4nvQB8nUcfiVQ1z7gMNloSLQ2GZKgElwz+d8D3uA2+6ADZ/rC2BJ94OmDY3vN+Cixh5gzDIGgp9jhp/zuS7vUYHUGx7yub4bzNg8BIIGH8U+gWvgRZUkuB1VmJTm4BfB8wD1v4/tHdcYV7ZOP3sayuAPnx6ltQcEDd6r/jsVQvTz4R/6+Kj2lr0mQsaHQJjgveq/11hvjfgskfJC+hyDtyr7xxUgavDWWbqZg48iQEMFH1YAXcFblQOCVoFejW/+MhgDt0EbP/vN6qDO/bF1Q6TXZ7ESxFRt/gI62d4HBzxuBx08/gnuu+YGid8RSrH3qGnsEXgNPoNixXU3wDB4wmnvPGeN5SQLoPy/BY/ACngK/ta4R60iX4EJ8A6MmxShxbAAKl9McTdHbWacBbjnjDNClQvUPuE/sJlEAdRCRe3JrTL4sFZgUpwGX8GxTTPBIJbjmJ+J4WOWPnK2TYVrWTuXosvgJIafE/oYos/ECDDIBLimwdcafQ0mSYAs63xRg68ifWWTJMBVcKjR3yF9JkYAVctLGv2VnNq7zNZVgYbdD2goM/nT2N2Yi6fKhVRBekDCeoDfLz1hLS85QAQQAUQAEUAEEAFEABFABBABRAARQPYDpAfIfoD0ABFABBABRAARQAQQAUQAEUAEkNVgHGsx2LOua/Sn/iP43jmn/w83lf0HM6qYOgSJI64AAAAASUVORK5CYII={scale="+$scale+"}>"
+!endfunction
+
+IBMEntityColoring(fireextinguisher)
+!define fireextinguisher(e_alias, e_label, e_techn) IBMEntity(e_alias, e_label, e_techn, #232F3E, fireextinguisher, fireextinguisher)
+!define fireextinguisher(e_alias, e_label, e_techn, e_descr) IBMEntity(e_alias, e_label, e_techn, e_descr, #232F3E, fireextinguisher, fireextinguisher)
+!define fireextinguisherParticipant(p_alias, p_label, p_techn) IBMParticipant(p_alias, p_label, p_techn, #232F3E, fireextinguisher, fireextinguisher)
+!define fireextinguisherParticipant(p_alias, p_label, p_techn, p_descr) IBMParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, fireextinguisher, fireextinguisher)

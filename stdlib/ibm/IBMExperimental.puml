@@ -1,0 +1,42 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: MIT (For details, see https://github.com/AWSlabs/AWS-icons-for-plantuml/blob/master/LICENSE)
+
+' Sprites
+' ##################################
+!function $DefineCalloutSprite($number, $textcolor, $fillcolor) 
+!$header = 'sprite Callout_' + $number + ' <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18">'
+!$circle = '<circle cx="9" cy="9" r="9" fill="' + $fillcolor + '" />'
+!$textnumber = '<text x="5" y="13" fill="' + $textcolor + '" font-size="12">' + $number + '</text></svg>'
+!return $header + $circle + $textnumber
+!endfunction
+
+' spacing helper for multi-line labels
+sprite Callout_SP <svg xmlns="http://www.w3.org/2000/svg" width="18" height="1"></svg>
+
+!$CalloutIndex = 1
+!while $CalloutIndex < 10
+  $DefineCalloutSprite($CalloutIndex, $IBM_BG_COLOR, $IBM_FG_COLOR)
+  !$CalloutIndex = $CalloutIndex + 1
+!endwhile
+
+skinparam note<<IBMIcon>> {
+  FontColor $IBM_FG_COLOR
+  BorderColor #Transparent
+  BackgroundColor #Transparent
+}
+!procedure $IBMIconNote($service, $label="", $side="left")
+note<<IBMIcon>> $side
+   %call_user_func("$" + $service + "IMG", "0.5")
+!if %not($label == "")
+   $label
+!endif
+end note
+!endprocedure 
+
+!procedure $IBMIconLeft($service, $label="")
+$IBMIconNote($service, $label, left)
+!endprocedure
+
+!procedure $IBMIconRight($service, $label="")
+$IBMIconNote($service, $label, right)
+!endprocedure

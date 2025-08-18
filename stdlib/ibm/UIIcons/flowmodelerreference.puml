@@ -1,0 +1,13 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $flowmodelerreference [64x64/16z] xS61400000CXXFdRpkElMXu0001m
+
+!function $flowmodelerreferenceIMG($scale=1)
+!return "<img data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAAIGNIUk0AAHomAACAhAAA+gAAAIDoAAB1MAAA6mAAADqYAAAXcJy6UTwAAAAEZ0FNQQAAsY58+1GTAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAAOxAAADsQBlSsOGwAAAqRJREFUeNrtmj1LXEEUhu/uGoSVFBoQRLZSiSj5DxYqiCx2SRHJrhLSpBBjlTRqY6ogFjYiomCh6RITLAyB/AnxA0EJxCKoYKoQZfMOjnAZdvd+zMy5d2fmwMMyF2aW970zZ+bMrue5cOHC5shUeVbRMGZqI2v7DHAG2G5Ak4I1XXEzwPAZIBu6Z8gf8AscgR3wBZynyQDd8RA85hTBP7AC5sFvG5fAA/AaHIJBm3NAK9gFE0kvgQzBEiiAEfAS9Ar62HI4A99NnQEsCe6DD+AJeANuBBM+gkdxZ0Aj7fNM+CI4AJ99+pj4d2DGlhzA1v5b4RlLjG02JcElcOxrN4NRmwxg54E14dlomByQMciEPfDe1+6yrRb4KbQ7kjoKl8B6xD5lsGFCNdgHlmP0W+Z9ZaIgtM+pDcjzQ0hLjL4tvG9e4vuHhPYJtQHsLfZL9O+POXvui6JJ4dlXSgNKfB3LRpmPFTWmQI+v/ZfSgD6JN6ciH4wI29/9GJcUBsise9l8wHa1aaEOYHEBFqp1yGkwgJWfwxrGbQed4FOVcrgbvACr4LnwYlmBNMYrRpL7gFONeaXa2NcB1eGrWncBugyY559zised840dJq7AU/AtaM14DWBCFPGRLkV1HoVVmRAkXupanKLym5UwIeq0jxw5AgN+8M+BtImnMiCOCSTiKQ2IYgKZeGoDwphAKj4JA+qZQC4+7C6g6z9D/t0hEfG6zwFhzwleUuKTNiBR4RQXIg0RKk6Cz8Bmndmk+rSpNCdlNYtPfWQVi7+xxYBa4scbzYAmxeK3wVbK8lhF5QwIEm90DjBOfBQDjBQf1gBjxYcxwGjxQQYYL76eAVaIr7WHpl289lqgaMObr2dAySfWaPG1jsK33t0vrEz8jsniXbhw4eI/BXqR6dfLcoMAAAAASUVORK5CYII={scale="+$scale+"}>"
+!endfunction
+
+IBMEntityColoring(flowmodelerreference)
+!define flowmodelerreference(e_alias, e_label, e_techn) IBMEntity(e_alias, e_label, e_techn, #232F3E, flowmodelerreference, flowmodelerreference)
+!define flowmodelerreference(e_alias, e_label, e_techn, e_descr) IBMEntity(e_alias, e_label, e_techn, e_descr, #232F3E, flowmodelerreference, flowmodelerreference)
+!define flowmodelerreferenceParticipant(p_alias, p_label, p_techn) IBMParticipant(p_alias, p_label, p_techn, #232F3E, flowmodelerreference, flowmodelerreference)
+!define flowmodelerreferenceParticipant(p_alias, p_label, p_techn, p_descr) IBMParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, flowmodelerreference, flowmodelerreference)

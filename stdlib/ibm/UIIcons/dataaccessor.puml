@@ -1,0 +1,13 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $dataaccessor [64x64/16z] xS61400000CXXFdRpkElMXu0001m
+
+!function $dataaccessorIMG($scale=1)
+!return "<img data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAAIGNIUk0AAHomAACAhAAA+gAAAIDoAAB1MAAA6mAAADqYAAAXcJy6UTwAAAAEZ0FNQQAAsY58+1GTAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAAOxAAADsQBlSsOGwAAAvFJREFUeNrtWr9rFEEUHi/Bzl/Ewpj4D8gVqZTTJqaRgEUKISCpBD0FBTv/hliooM1pYXMIWqRRSGm6gKCkuFxhfYmgBEQLQbyc3+ALrOvM7NtjZmd3dj74YOd2eLfv23nz3rw7ISIiIiIi6otDFm0dBtvgNbBJn/XAl2AH/OXZnlMBZsC34Jzm/hZ4BdzxZE+LCUtv/p3hYSVOgQvgC3BYsD0jGhYEuJnxsAeYo7lF2zNi0oIAK6nxOniDrp+Di6m5Twu253wFnE2N2xSbO3RtmluEPecC5MG+pTnWYEOAfmrcoV18hq6T6DHs9XLY65dhD+iC5xNjGaMDzdxNhj055yLTXrcMK+AZ5WUO7oHLhvvLNIeDLfpu73XAkIqWBcrPWYIvgZ/AbYXzXeaqPCiEvpVBAIkfVJR8BU+Ax8Gf4AfwNXgusdpUIqic/w0+BEfgMRp/BB+At2w4b/ssIDKWtsrBlUQsq+69qtJhaFwRhC/nbYYAB9u07JdS4dDw5XzRAuhE8Oa8j0qwdCh6BZhSnSlFBiGAbhPcz0iRQQhgSoNrio2xMBFc9gSHdLDZpPLWlOp0Aj0GW2RvQlS4J8jZ7ccphSvTE+SkOlOKTMNaT9CGALfB68y5srZ/lFEnHAUvMGxJEb6A7333A/L08FoMe60c9irXE2wy7DVz2KtcT7BRtmcquifY92DPeRq8Az5hzr3LiFnb9pyvAG5PkNvDs23PeRrk9ATz9PBs2/NWCgtRgZ/HI+oOXQjMgqvgJXDaYdi4wCg1/kxnlftC8QvTpMZ5uclMBfKSp2kfuUwHtkFWGlwNyPkkpsi3zDpgPuCQn+eEwOmKxXzWvjYy+Bbb4lGAugswTkdoMXEIkX9TW6/bCuhQrTCrOJ/HEKiDAG2qpgbi/x5dLfYAGfNnYhaIAkQBgq0DdlM18yggf3c5K2Aj4Be+wRFAdk72AnR+j3z7B6q2+Hfxt/MqW9InwSMVd1y2xN6AV4X+T9cRERE1xR8KQM/xUSDCFAAAAABJRU5ErkJggg=={scale="+$scale+"}>"
+!endfunction
+
+IBMEntityColoring(dataaccessor)
+!define dataaccessor(e_alias, e_label, e_techn) IBMEntity(e_alias, e_label, e_techn, #232F3E, dataaccessor, dataaccessor)
+!define dataaccessor(e_alias, e_label, e_techn, e_descr) IBMEntity(e_alias, e_label, e_techn, e_descr, #232F3E, dataaccessor, dataaccessor)
+!define dataaccessorParticipant(p_alias, p_label, p_techn) IBMParticipant(p_alias, p_label, p_techn, #232F3E, dataaccessor, dataaccessor)
+!define dataaccessorParticipant(p_alias, p_label, p_techn, p_descr) IBMParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, dataaccessor, dataaccessor)

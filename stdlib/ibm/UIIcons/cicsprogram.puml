@@ -1,0 +1,13 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $cicsprogram [64x64/16z] xS61400000CXXFdRpkElMXu0001m
+
+!function $cicsprogramIMG($scale=1)
+!return "<img data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAAIGNIUk0AAHomAACAhAAA+gAAAIDoAAB1MAAA6mAAADqYAAAXcJy6UTwAAAAEZ0FNQQAAsY58+1GTAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAAOxAAADsQBlSsOGwAAAd1JREFUeNrtWj1OwzAUdk1X1AEWULkDW0dYKsTMHeAGTAUa6JQbwAE4ARJCXejYjUNUZcoAB6A8qw+JBtf5IXlNnO+TPsm1nqN8n5/tvMpKAQAAAADQVLTW9HeJIfGYuFdzje/EV+IlcZbGACP+jbjj2WRHxMO4CdoSGHooXrGmMN5pM+DI4yX/R1vbErSfcp+oCxYObdYMaBTaGWJPiQ/cPic+J/TXAlky4J5PiC63k/q9M8BLZDHggs/QGbeT+r3bA8zaPsjQjyXgSwYssAfAABjQ6D3Ap1oAGQADYAAMgAGbMOCGOMwQP+QxlSqGihBvDL9OiL8lXv36HdQ5A+Izb4QNHPGDmPjSM0ELp/0HcewYM+YYseWghcWfEKeOcVOOETNBV0j8RkzQFRMvboKuoHhRE/AhVOCzAksGdIgvxF6O5/V4bMeSAUFVM6AoE0TEl7UE/muCmPgy94C8JoiKL3sTXGdC3zGmLyle4hSIm3BHHDniRxwjIl6qGvwR0EpZEptq8Ust/8wMyn45CQPylLRDoffChxAMgAEwoNmwnQJztXqfzqf7AfM0GTDxeMInaQwwt6ojD8VHrG0FW5bAT+KjWl6T3yVu11y4uS7/RDxTluvyAAAAAAA0F99kxWfSfKY2BwAAAABJRU5ErkJggg=={scale="+$scale+"}>"
+!endfunction
+
+IBMEntityColoring(cicsprogram)
+!define cicsprogram(e_alias, e_label, e_techn) IBMEntity(e_alias, e_label, e_techn, #232F3E, cicsprogram, cicsprogram)
+!define cicsprogram(e_alias, e_label, e_techn, e_descr) IBMEntity(e_alias, e_label, e_techn, e_descr, #232F3E, cicsprogram, cicsprogram)
+!define cicsprogramParticipant(p_alias, p_label, p_techn) IBMParticipant(p_alias, p_label, p_techn, #232F3E, cicsprogram, cicsprogram)
+!define cicsprogramParticipant(p_alias, p_label, p_techn, p_descr) IBMParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, cicsprogram, cicsprogram)

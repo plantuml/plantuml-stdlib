@@ -1,0 +1,13 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $microphone [64x64/16z] xS61400000CXXFdRpkElMXu0001m
+
+!function $microphoneIMG($scale=1)
+!return "<img data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAAIGNIUk0AAHomAACAhAAA+gAAAIDoAAB1MAAA6mAAADqYAAAXcJy6UTwAAAAEZ0FNQQAAsY58+1GTAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAAOxAAADsQBlSsOGwAAA6ZJREFUeNrtmkloFFEQhl+ixgVGQXBLQg4eNGK8aFxADVFEQVHjScSIBkX0IIIibqAeXA4BQRRciOghgieNC64IcQm4jB40QQXHFTWKF4mIRk38iy7hWUzS6fSSdKYKPmbqzevq6r9f9+vpV8aoqallsmVFvL9sMAcsAuPBCG7/CB6Bs+AqaOmJAswG+8FYl34NYAO4FkVSvSISeSeoAkM70J/6lPP3Wz1BgF1MlkfRSvl7bZjJ9Q754OeCHaLtFzgBqsFTbhvDZ70C9LH60rb3waU4jgAStwYMsdroZjcLHANvwXeGvl8El8F8kLBGwgRwNKwbY3aIAtCBFFp+M1gAku1sk+Q+zVZbIccycROgTPhVLgdvi1DlEisWAkwSfrWHbatdYsVCgFzh13vYtt4lViwEGCj8Jg/bNrnEioUAsTAVQAVQAVQAFUAFUAFUABVABVABMtP8vBNsFX7UawyB7F8vARVABVABVIBOmnxvl/D4e3uW8LmvSARoFH6e8D8Iv8hD7CKXWHkuuXSJAPnCfyj8cg+xy11i5XcHAV4Jv0T4NcJfBYo7ELeY+7YXq8Qll0gEkAUMZWmSTll+DjjvIkIx98mx2lJpBChzyaXD5md1mFZ6N1oiDgNnwGf2aTX3HVgsbl4VPIS/GmdleIBxVoC3g0NgUJqR02D544xTb/DP/oC1HCvS/wJfQJ0YjnvN/yu5VPNTCTZZbbT+v5pxs0qOYcQ+bKvjXCIfAWSfwFLLH2WcspbXVtsNPstTPcamg98i/vTMAHtEPzr7L7pKANrxPDEtUQHEaWtupgO4Dh7zNT7YJWaKh/1BcfC0QEoFFPY64QOw2c8BBFEhQgkvs/6OUoLTwSnw2+r3DBwGT8BP0B/0NU4xxBs+uN1gnbjmDfe9YpxSGmPdY5b7mQGC/A9P1+VW0Zbku/V7n7HzeBaQs8c+sM1v4kHVCN0EM0GBGLJL+IynOhmXagupQGq0aL8DVpgA6oaCEoASucAi5Ippjy6PaeC5h9FAFSEnjVNfmEgzsmim+RZE4kG/xkrwg0xpG7+/BOd4pmi0HmGHMzSlLgQj29i+1jhFVE1BJRzGe7x+PFWtD3CE0cPOAX5Y+hFksmG+yJwIjvOTmx+je8hKnvICt7Df5FJ8qhZdw5/ZHu4pdPM7wtNjS5gJRmUF/HxAI2MymCJ+vwvu8Zm+bZzq0dAt6nf5trV2h1z0naAKkOGWFeE13i1z1UtABVBTU1PLYPsL8yWrOYLuYvoAAAAASUVORK5CYII={scale="+$scale+"}>"
+!endfunction
+
+IBMEntityColoring(microphone)
+!define microphone(e_alias, e_label, e_techn) IBMEntity(e_alias, e_label, e_techn, #232F3E, microphone, microphone)
+!define microphone(e_alias, e_label, e_techn, e_descr) IBMEntity(e_alias, e_label, e_techn, e_descr, #232F3E, microphone, microphone)
+!define microphoneParticipant(p_alias, p_label, p_techn) IBMParticipant(p_alias, p_label, p_techn, #232F3E, microphone, microphone)
+!define microphoneParticipant(p_alias, p_label, p_techn, p_descr) IBMParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, microphone, microphone)

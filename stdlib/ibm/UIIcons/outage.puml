@@ -1,0 +1,13 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $outage [64x64/16z] xS61400000CXXFdRpkElMXu0001m
+
+!function $outageIMG($scale=1)
+!return "<img data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAAIGNIUk0AAHomAACAhAAA+gAAAIDoAAB1MAAA6mAAADqYAAAXcJy6UTwAAAAEZ0FNQQAAsY58+1GTAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAAOxAAADsQBlSsOGwAAA+RJREFUeNrtm21ozVEcx8+9ZtRMbC0ZmjwkJTSWbCFjIi1vjNgYryRL5IVo4o2Hd+ZZySvkMQ+NN2iemoeSvdAisTGaGC9s00Zjvie/m7uf/7Z7/+ec/7n73/urT+2ce/////l+z/883wmRiEQkIp4j4OGzpoM5IBtMAoNBBkgBjeA9+AAegNugVtNzl4NCUAp+eW3AcLABrABjorxWGnIUnARNCuJPgyRwHhRzE0wZIGt2K4kfqHivdnAE7AKtLsWH4gwoCf9SPwPil4CbYB57uNuQ98gFq0E9eOlSfAfYx5uWzjdAPuwgWN/N523gBrgLnoGP1OZlwbLACDAN5IMC6hucYjfYATqjFF9CzcBIH5AMLlDt82igQsvX73uE95Md5BqwGYx2+PwQ2KgqXpcB/cE1sIjl/6SaqqC/3YTsP7ZRfzIgzNC5oE5VvC4D9oNNLO81WAZqNL1hOeAqCdImXocBRfTqh0ctdYCfNHeumfQW1OsSLxR76aHgGMuroxpqEvqjUUeb5xFUKFA5SGfjdZEh8cKEeBUDRoEylreThrc+I17FgLU09IVCtssDFsXLOBGteLcGBMiA8NgLflgUL2O+mxu6MSCHTU7k5OacZfEyxoMpXhgwk6WvgxZLbf4N+16+FwbksnS1xQ6PD8MzvDBgAks/sdjbP+6lbEYMSI9gguLVUNfArhnphQFpLP3V4jj/hV2X6oUBfBOlw+Ikp81hZWrcgGaWTrE4wwuqVoYbA74ZMsDN9HYYS7fYeAPGWpzbj3NYjRo3gG9KFlhc2Mxi6RdeGPCIpRdYXNUtZul7XhhQKbruyMoTn8kWxE9k0/Lf4JYXBrwDD9k99lhYz28XXbf0qsTf0yTjBsiocHgVZ3soXs75V7K8414th2VcBs9Z3lnaKTItfhA4xcpeQ2XyzADZ3spYX5BJS+NUg+LlTO8irf1DIcuwRXR/UmTEABn3xf/bYEMc1gq6xMsJ1yWwkOUfBnfcilA9HJUdjzzzzxL/TmzeGhCfRj18vsOQvEplPaJqgGwKV2gdXiw0ntiERQYZnc3yX9EkrFlFgMkfSOgQn0zi81j+Uxp5PqsWMimGxYeG2zyHZidPoVt1FDQphsVPBetYnvztkPy9T7uuwgZjVLwg8UHW5pfqFK/bAJ3iBY0o4VHusBcRMwboFi8cZpVVJjqrQIyK9ywC8Sxe1YA+L17FAF+Id2tAtOI7Y6S5ahkFfFPzbgzwnfhoDPCl+EjblW/FR2KAr8X3ZoDvxfdkQFyI784AU+I7NTdPY6NAYTzUfE8GlIaJ9bV4IZy3xOR/VRWT+Eo/i09EIhKRiD/h0S3t4IYGHgAAAABJRU5ErkJggg=={scale="+$scale+"}>"
+!endfunction
+
+IBMEntityColoring(outage)
+!define outage(e_alias, e_label, e_techn) IBMEntity(e_alias, e_label, e_techn, #232F3E, outage, outage)
+!define outage(e_alias, e_label, e_techn, e_descr) IBMEntity(e_alias, e_label, e_techn, e_descr, #232F3E, outage, outage)
+!define outageParticipant(p_alias, p_label, p_techn) IBMParticipant(p_alias, p_label, p_techn, #232F3E, outage, outage)
+!define outageParticipant(p_alias, p_label, p_techn, p_descr) IBMParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, outage, outage)

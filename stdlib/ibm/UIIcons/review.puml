@@ -1,0 +1,13 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $review [64x64/16z] xS61400000CXXFdRpkElMXu0001m
+
+!function $reviewIMG($scale=1)
+!return "<img data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAAIGNIUk0AAHomAACAhAAA+gAAAIDoAAB1MAAA6mAAADqYAAAXcJy6UTwAAAAEZ0FNQQAAsY58+1GTAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAAOxAAADsQBlSsOGwAAA3pJREFUeNrtmluITVEYxxfO8YKpkduUJpfJNOOBIgq5PFAHiTxQ8iBhphAJ0RENuSS5DSlJHqY8EE8uR6NGyoMpDzLl0piGGmZCmHkwY/D/2p9aLWvb+5zZt3X2/urXzNqz1pr9/fde61vfWluIxBJLLLHEEkssrjbIRZ1qsAksAeVgeMR96gbtIAcug5ZCBUiD06AGDDH0AfeDS2An6NNVsHNsKLgH1oDBBr/hdO+zwFxwnQVxJcAZdr5YbCIoBXfVP6Q0laeCWuXaO7AXPAQfI+7sWDAfHAaV0vVaHg4vnN6A/WCOVH4JZoKnoMeAp93DE18DWAdKpOHQC+6rY0S1xUr5APhi4GtP97zbwTetAOVK+bHBY7/JwTetACOUcoePN0hjdZGP/Xc4+BZ6iMuCI2HHybBsNo9JmnCXxlGArPR7nctledEIMB0sk8ozwKo4CZDVPPG6MO4nDAGqbZ42rUDXBn0zqQD+xzBQASbzz9X/Ef4E13vNvAFfTRNgA2dflezwuDzajuehIFsXi/EKPAJXoy5AE+cTFR71N5oZwwlO5OeAVn4Dmj3ss5n7bDVlEuzkJW7Og75y3FenaVGA9uaWc1paqDVwH92mRgHah1sPPoBdebY9xensb9PXAeRAfQHt6v12PsiF0IKA2kRWgIUBtTFOgCdMaAIEsRSewMjWBvYJa69ecA5wTKn3t12b6QLIY/kbO0onTj+k6yTELWGd4JAwJVJb4wWgV/knuCKsHeYum3okyHGuR0vejdz2mukCkGPThMMhpZL80HnkObC9GOaAmgLbtQygbaQ3RCJlOgG+K+Uyg/0rc/BNK0B7GCsyn2yeg29aAR4o5ZPCOlo2zUo1Gyiqb9rT4fdgiyQOxeSVwjoW/ySif0JMx+MrwE0wSbpOH0dsVsOw3WHEebDV5xt1cxCSAXc8+n+UXW5zGwUod28M+UmmeE/AC2u024+wE6CX1b8gNN/VBGT0RUfVAPvoZx8y7FNeC6E+HgYXRfCfyY0Ehwps69lncmHaWWUZTPF7irC21op+JVgl/v1I66gfzkdVAJr40lL5LafPscgFMoxse5S9g6IVQBf26CzwRlyyQTXs/QI74pIO68IenQI/i4sAB1kEOexlw9oPKOqwF0UBAg17btLhoO2zsL4SG8VlSlmfi5hZmmf82yKxxBJLLED7A9IMoLgLqsCwAAAAAElFTkSuQmCC{scale="+$scale+"}>"
+!endfunction
+
+IBMEntityColoring(review)
+!define review(e_alias, e_label, e_techn) IBMEntity(e_alias, e_label, e_techn, #232F3E, review, review)
+!define review(e_alias, e_label, e_techn, e_descr) IBMEntity(e_alias, e_label, e_techn, e_descr, #232F3E, review, review)
+!define reviewParticipant(p_alias, p_label, p_techn) IBMParticipant(p_alias, p_label, p_techn, #232F3E, review, review)
+!define reviewParticipant(p_alias, p_label, p_techn, p_descr) IBMParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, review, review)

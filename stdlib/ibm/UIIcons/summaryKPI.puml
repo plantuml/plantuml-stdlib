@@ -1,0 +1,13 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $summaryKPI [64x64/16z] xS61400000CXXFdRpkElMXu0001m
+
+!function $summaryKPIIMG($scale=1)
+!return "<img data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAAIGNIUk0AAHomAACAhAAA+gAAAIDoAAB1MAAA6mAAADqYAAAXcJy6UTwAAAAEZ0FNQQAAsY58+1GTAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAAOxAAADsQBlSsOGwAABBJJREFUeNrtmVlIVUEYx08umYUtqJVmWUHQBtH2ULRJ0IJtWrY/9BBEDxFUZIUQUVC2vJRC9dRTm7Ro2R4t0mJoJEUFBUpFSdlGiVjZ7T/4F6bh3HPPuevxOn/4IXfu+eae+eab+b4ZDUNLS0tLS0uro6qTjWc8Dm08Pr7/AG6DzeBdCOwdKSYCTk8Dy8ATkBEB+/8U58cMBEvJoBCsiJB9xCJA1rQI25tGQKj3FTnC0kNg364iIOKKszEDnmh2gI6AEPUr0tNeblJpFs+9D6CesKM8/i0JpwMymKOTbTx7O4STmwqKpN/5FK4lUGhz8J9BfggdUAx6k+JwRoCv3BzUUtYi9PNMPpeEwwHpfpw3nNQTHgehL6vIbClEYxZoC31VpkshLgodsFjXAQGuM0+AfYTTXtQR/TpyJRhwHdGeHRCUOqI9boKijrjFwb8ztLS0tLQsJa7Q93s7W8RG+eCzwUkwCfQH5WqhFc0OmALKQAI/jwZDwJmOcBYYCy6ARKmtBZx3ayHUF+wBs7lWL4OthvWdoTcNpX135XyxFpy2e+kQTo0C10zO8A1gFqh20FcmqOB6lyVun/a5cRMcB26AFJPvuoIl4C54a6OvPiyRByntu8FOb0aRdMBEcBX0snimC1gKHoJai+d6gptguNJ+GGyweolIOWCqyToVOgDugMlSW2dGgrhqf+UlUq6A8Ur7CbDa1/1CrMPLkmBoBnfobkr7Lm58YiZ/g+nKZr0IvATPFeeInT1L6aucTmvx9TLeHJDEmfgJngVx8HPAWSU9CRWAHdJnsZF9AzOliRDvuhDUgRp+FrM8T+lLvPd88MvOC5k5IB6UspDIpRMeBGHwuUxDCUr7RqP132iqKpkGsyUnxHBwH8EasFKxqWbmaLT7UmYOOAZypGUgZqEHU1Ug9fhxOlfOzevAQQu7x+A1Bx0jvZOIpDHKsy+5bL46ebFYLzvvXOW7CSwwyuysK0Wr6FS56PrLGTxiw/4pl2GOxZKt4z5Q73RmzDoUP3afPyiH60juzmLTabbZvxjkUeV3WiSn2JWY3Souo3jluw+c+Tp/QtObR0XOvcTQS5LaB3JNij3ih4++14NDynlD7O7LeUJzKrEUThmt1+ApDPVz7K/W37XpK9VlMl8PU9rfsG5/7sUun7W9rGamplI3nZp8FULfmWrEeXqA1N6Dnr9HZ8jazpwuq4nhe9Ftx0Y7lWATd/ARSiQk0gkviMFZL1DsG7mpXnfjudluKfzHaP3feqpScrZVaF+Y6jYpdj+4VO649eLAn3J3G0Pcl+1XDr7SzTcn/hyGKphysi3sG1jzV7n96sjf06CoxR+BBTyQyKpnXq5pD3dngZ74BvPCIYsFjkiZW1ira2lpaWlpaWm5Wv8Aty3JbftS02QAAAAASUVORK5CYII={scale="+$scale+"}>"
+!endfunction
+
+IBMEntityColoring(summaryKPI)
+!define summaryKPI(e_alias, e_label, e_techn) IBMEntity(e_alias, e_label, e_techn, #232F3E, summaryKPI, summaryKPI)
+!define summaryKPI(e_alias, e_label, e_techn, e_descr) IBMEntity(e_alias, e_label, e_techn, e_descr, #232F3E, summaryKPI, summaryKPI)
+!define summaryKPIParticipant(p_alias, p_label, p_techn) IBMParticipant(p_alias, p_label, p_techn, #232F3E, summaryKPI, summaryKPI)
+!define summaryKPIParticipant(p_alias, p_label, p_techn, p_descr) IBMParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, summaryKPI, summaryKPI)

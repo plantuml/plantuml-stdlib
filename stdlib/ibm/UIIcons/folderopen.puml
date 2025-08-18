@@ -1,0 +1,13 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $folderopen [64x64/16z] xS61400000CXXFdRpkElMXu0001m
+
+!function $folderopenIMG($scale=1)
+!return "<img data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAAIGNIUk0AAHomAACAhAAA+gAAAIDoAAB1MAAA6mAAADqYAAAXcJy6UTwAAAAEZ0FNQQAAsY58+1GTAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAAOxAAADsQBlSsOGwAAAi1JREFUeNrtWrtOAkEUHZBCCyMRG5GPsOBRgo3aGwv9EG1MgBK+wC/wC2ywUWKjsdHWWsWKGH9Az+hsQjazD9idubPLPckJZMjO7jnM3LlzZ4VgMBgMBoOxrCgEtNfAIdgBtw0/wyd4D16Ary4YIMW/gJuWn+ULPAQfbd50RdN2CTYJRuMqeAzegu+2blrUtLUJp+QGOAJbtm5Y0rRVY8aJtNAFexoTDmxMh6IDgbjvM8DqSHDBAFITXDGAzISSY3lJX336Y8JDgj4n4B14Br65PALCRkISyETuROU2tSwYYMIEoRK7YVYMMGVC2/UYoDOhn7CPn5Acx+kRQJYKswHLhEVjgFxOBuBeCvWCidoBnuvW6Yg5TWKAFP8MVlJcp0/V5mc3pgmkU2CQovhZVFTfzseAjsHn6WQhBqRdLwhdpzUoJOifVwE2gA1gA9gANoDIAFmSqi9wXV1d69ReYF54tX95/LUPPsW8rgHegGVwLYXaAMkImD34KCtBjTnFC9VHNw8xwDMh7Pyx6ROf6Rigq+15Jujq/a0A8b2sToEgE7xDDz9G6jfj4m1PgSATRESbMfEUMWDeUrdR8VRBMK4JxsVTZoJRJlgRT50KB5lgTbwLewG/CVbF20yFo0zQfV8aA0iE83aYDWAD/qCrscu3NKs51fsB7kSNgHGO//BxnCkgy0/THIqfCk1pTfey9Dd4Jf5PbbfA9YwLl8fv1+CRsHzyzGAwGAwGw238AqELWGSfb/WqAAAAAElFTkSuQmCC{scale="+$scale+"}>"
+!endfunction
+
+IBMEntityColoring(folderopen)
+!define folderopen(e_alias, e_label, e_techn) IBMEntity(e_alias, e_label, e_techn, #232F3E, folderopen, folderopen)
+!define folderopen(e_alias, e_label, e_techn, e_descr) IBMEntity(e_alias, e_label, e_techn, e_descr, #232F3E, folderopen, folderopen)
+!define folderopenParticipant(p_alias, p_label, p_techn) IBMParticipant(p_alias, p_label, p_techn, #232F3E, folderopen, folderopen)
+!define folderopenParticipant(p_alias, p_label, p_techn, p_descr) IBMParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, folderopen, folderopen)

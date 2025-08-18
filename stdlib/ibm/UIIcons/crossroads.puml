@@ -1,0 +1,13 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $crossroads [64x64/16z] xS61400000CXXFdRpkElMXu0001m
+
+!function $crossroadsIMG($scale=1)
+!return "<img data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAAIGNIUk0AAHomAACAhAAA+gAAAIDoAAB1MAAA6mAAADqYAAAXcJy6UTwAAAAEZ0FNQQAAsY58+1GTAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAAOxAAADsQBlSsOGwAAAWFJREFUeNrtmTFuwkAQRR0SpaFASpsTpEqJREXHrSDrG+QavgElXVym4hwuqJNBWksWMsQTbFjPvC990YDYecwOf71ZhhDyrIc7fvdPCmuZeO8AAAAAAAAAADkgjRxwrQ7ib/GnuOj6oSdDP+ZUvIh+EwfPW+BDvPE+AzpBSGkLXDuP5uKteHYCIbu0HSx1QCleiStNJ1jbAmoIFmeACgJJ0GBNbcOw7oBgHYCqeGsA1MX/57/3OFzW4vcYPccQhkJf4WPdNV+PpXgNgE0jVY1Bx/XmfcXPsRRfH4fzOAt6yd9txVdxFpQ9Pw9I7l5gyOKTD0Iuij8HwE3xnAXOAAgtHTCLk3XupQPcQLi0BVxA+OuZYGjEyiaELysAHju8ZxdflwOvJaQK4FYQkgZQQ9iLX8Uv4mcLALT3AkWmuHdTngUIQgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABCCA2rX0EbQBhuufoBAAAAAElFTkSuQmCC{scale="+$scale+"}>"
+!endfunction
+
+IBMEntityColoring(crossroads)
+!define crossroads(e_alias, e_label, e_techn) IBMEntity(e_alias, e_label, e_techn, #232F3E, crossroads, crossroads)
+!define crossroads(e_alias, e_label, e_techn, e_descr) IBMEntity(e_alias, e_label, e_techn, e_descr, #232F3E, crossroads, crossroads)
+!define crossroadsParticipant(p_alias, p_label, p_techn) IBMParticipant(p_alias, p_label, p_techn, #232F3E, crossroads, crossroads)
+!define crossroadsParticipant(p_alias, p_label, p_techn, p_descr) IBMParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, crossroads, crossroads)

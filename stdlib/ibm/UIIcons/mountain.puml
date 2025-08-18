@@ -1,0 +1,13 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $mountain [64x64/16z] xS61400000CXXFdRpkElMXu0001m
+
+!function $mountainIMG($scale=1)
+!return "<img data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAAIGNIUk0AAHomAACAhAAA+gAAAIDoAAB1MAAA6mAAADqYAAAXcJy6UTwAAAAEZ0FNQQAAsY58+1GTAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAAOxAAADsQBlSsOGwAABAVJREFUeNrtmllIVFEYx89omdmK0UNECBORYUVEgg9tlD4UESb5UIIvJZVi0kIzvbS9pGbRRmG00kpEGxFhG0UQJlFEVAZJtkC0WGarVvY/zDdw+jozc2ecmXvnev/wQ77jd86c+Z+5957zzQjhyJEjR44cOequcpn0usNBJZhG8TXgBc+6gwFu0ADSWXsLyAZN8ZxMkgkGbNe8eUFtO+I9mXgbMA7MDPL/GZRjWwM87LKrA7fYJemxqwHyxlfI2ioJVYWUazsDVoFkJa4H18FF8EBpT6ZcWxkwBBRrVl+qU/MpKKY+tjFgGUhV4sfgnBKfZI+/VOpjCwMGgsWsrYpW3q/fYBPLWUR9E96AMtBPiV+AY5q8g+CNEvenvgltQG9Qwdo2gw5N7g+wlbVV0BgJa8BCMFiJ34O9QfJ3g09KLPsuSFQDeoAVrE1udb8F6fMZ7GJtK2mshDNgPshQ4i8G9/rbwHclzqCxEsoAl2Yzswd8NND3Ldiv2US5EsmA2SBLiX+CLWH0rwG/lDiLxkwYA7wsPgJeh9H/OTgRYkzLGjAV5CjxH1AdwTh8s5RDY1vegNUsPg2eRjDOQ3AhxNiWM2A8yAtw6IlEG1mcR69hWQO87G59Gdztwni3wQ32dPFa1YARoCCKqx9ojAJ6LcsZwAsed4Sv3B1MGWyzpNMlcC9WBZPkKI0zFOxjW9Zy8CRIH3ncPQNKha8kHuxSkeeDuWxfcAC0WcWAdWASaxsEboJWzaqfAktBL2IWmBgkX47vZucM+Yiss4IB6bTRSWHtbjrJqavrX/VRmnHCzR8Latm5IaI9e1e1BqwPkXOF/uYaHNNo/lqwwcxPQB9wHKQpbc3i/1KWm32E1TfapPlfoPyXYIASj6Hjc4dZBpSyR98HekTJstcUur51aqNqj+Sw8JXCjOQvEb76or9KlEanx3ozDOhJBxZ1RaqVzY+s+43WrKRcdfkV2FWlzWh+O+gLJrMnwk46c8TVgGLxb63/K5in3JRa2eq2K6veqhnPaL48I5TRAghaAHkZ3Y+0bBXpzdOjKXi0aHJraTPjvz+EUqj8d7TnKFfa5FwOsdNjTHeCc0CmEreHKHg0G3zzRvNr2I0vk+YUt60wP5AcBa9E/KT7bsEbLwOmC98vOdSCR5WIv6rZjS+b5hZzA7jTZ0GjCQY8Aue7+ikI14AJmt1ZpTBP/LVzaY4xM4CXpOSzucFEA/y/MQg2x6gZMBLkW2j1A80hn+YadQM8LL9BObSYqTpWS0gSYfzOyKgBw0ARa6sS1hH/FBTRnKNmwHJ23m+kc7pVxEvvKTTnqBggKzslIZ7BZkv35UsJzT3sgkinsLdc0dgK20aOAcKRI0eOHDly5Kib6i91A9HE94u5ZAAAAABJRU5ErkJggg=={scale="+$scale+"}>"
+!endfunction
+
+IBMEntityColoring(mountain)
+!define mountain(e_alias, e_label, e_techn) IBMEntity(e_alias, e_label, e_techn, #232F3E, mountain, mountain)
+!define mountain(e_alias, e_label, e_techn, e_descr) IBMEntity(e_alias, e_label, e_techn, e_descr, #232F3E, mountain, mountain)
+!define mountainParticipant(p_alias, p_label, p_techn) IBMParticipant(p_alias, p_label, p_techn, #232F3E, mountain, mountain)
+!define mountainParticipant(p_alias, p_label, p_techn, p_descr) IBMParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, mountain, mountain)

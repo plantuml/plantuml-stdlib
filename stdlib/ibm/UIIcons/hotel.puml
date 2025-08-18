@@ -1,0 +1,13 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $hotel [64x64/16z] xS61400000CXXFdRpkElMXu0001m
+
+!function $hotelIMG($scale=1)
+!return "<img data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAAIGNIUk0AAHomAACAhAAA+gAAAIDoAAB1MAAA6mAAADqYAAAXcJy6UTwAAAAEZ0FNQQAAsY58+1GTAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAAOxAAADsQBlSsOGwAAA4hJREFUeNrtWUtsTFEYvsOggkZFE3TYlIVHQiLpop4bNjpMIiISg1h4LLAqJVKthSliQRfEwmvCRhrvXUWotKzEoliohUZIBmmGxLMZ30m/ienJuY+59877fMmXzDnnP/fO+eb8j3PGMDQ0NCoZgQK9dwK4H9zL9nnwHPir3AUYC24D28HZ0tggeAy8Bg6XowBhMAYutLHrBw+D98pFgEbwJLg8y3lPwUNgb6kKMJ+/+AaTceHvnfy8j3FBhTvcEa9LRYA6+vh2MKgYF/4dp7+/Z98czokyTsj4C17lnA/FKsBUsIXRfaKJzQNu636TcREfOsAmk/EfzBbCZqhYBEinNLH4aSY2fVx4j8NnruAiG03Gv3Lcc+r0IoBVSkvjDXgEvOXyHRHwBOOJCp5Tp1sB7FKa8NM28LIPOV0IvYPPC/mdOrMVwC6lDXH8LP3VT1SBB+hKNX6lTqcCOE1pMfpnLlGTEWyrvKZOOwHcpLR8IZTx3VynzoCHlHafNv0FPtAt4M5b7yZ1qgRoonJmKa2XC+8xigvLuEiz+NQNrlFFWFWxUqfoF/60CzxYgO3uBIPMOi/AxWCtNL4bfCdPUvn1XEVKE350JZ/HVA+4yx8xs0bpJg0nAsiYl4OUlmsMczfcYOp8aGboRIBSW7ycnk9ZGYwxKhxagEoXIOhx/nQWS+GM7PGWhxJRfHwuZwE2gpfAaql/CSmi706wqxwFEIu/aXOWqKbNJgsRQozSq8GZHtfyHfwIPmctcBv8kwsBavnLOzlJBmj7BEwoFv/SouTOFpNZswhuBQfAZrvLGFUp3Ca126W2OAeszWj/Bo8aIxeaZ8Av4MqMZ4srs5/gI+k5F8CGHO5uIexmcBILoZRfWSAstVt5CPlEdrDPao7Aqjy5eTO/k28uUC+14wqbuPTSeoXNLJeXM1YusAjcAu4Bx0si9KncoZzqABEEnzH7NCguQU6D4/wQYEBqRxU2UZs5uYYIruuM0VfmYhdG/BBAvnk9zsA4g2xhn9WcfIlwUeqL+BEDOrnN0gWQ8LUYqULS+P8fYL5x3Rj53zGNpX7sgAQrvJQD2xRtEwUS4JVN4HUdBLtY4SUtbJI2VWA+8E1qT/HzLCAW9riSD0MGF9iqKHz0fYAWQAtQGgiYpK6KWbN2AS1AhSOYrc+UIFJ6B2gBtABaAC2AFkALoAXQAmgBtAAaGhoao/APnpO/kjiqMvYAAAAASUVORK5CYII={scale="+$scale+"}>"
+!endfunction
+
+IBMEntityColoring(hotel)
+!define hotel(e_alias, e_label, e_techn) IBMEntity(e_alias, e_label, e_techn, #232F3E, hotel, hotel)
+!define hotel(e_alias, e_label, e_techn, e_descr) IBMEntity(e_alias, e_label, e_techn, e_descr, #232F3E, hotel, hotel)
+!define hotelParticipant(p_alias, p_label, p_techn) IBMParticipant(p_alias, p_label, p_techn, #232F3E, hotel, hotel)
+!define hotelParticipant(p_alias, p_label, p_techn, p_descr) IBMParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, hotel, hotel)

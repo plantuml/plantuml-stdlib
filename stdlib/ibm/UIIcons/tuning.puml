@@ -1,0 +1,13 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $tuning [64x64/16z] xS61400000CXXFdRpkElMXu0001m
+
+!function $tuningIMG($scale=1)
+!return "<img data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAAIGNIUk0AAHomAACAhAAA+gAAAIDoAAB1MAAA6mAAADqYAAAXcJy6UTwAAAAEZ0FNQQAAsY58+1GTAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAAOxAAADsQBlSsOGwAAAmRJREFUeNrtmbtLA0EQxk8jFlZio2VAQmJjWv8HFRRBwWhjqY0WPrDSTtOkENPZaaH4ghiwt7Gw1gQRUtqJTSr1nIMRliF6uTM3zN7NwI+wj5vcfrlsdr44joaGRpKjqwM53Ahysr1fd9KfABVABVABVAAVIMnRE/K6FDANTLUYOwaugSvgM44CjAMlIPPLeAF5BtaAapy+AntA5Y/Fm5HBuXtxeQL2gY0QR+1N49VaASZaLL4JHAJnwBP2jQCzwArQZ8z1rr0DbmwUwJtzQPpecC+ok/4H5Ai/+8PGmJfjFviwbQ+YAdLkk2+1eDPqOKdp9KUxl3Wb4CRpl30Wb4pQ9sllhQBjpH0aIP+pTy4rBBgi7VqA/DWfXHoUtkGAV9LOBcif88llhQD3pD0XIP+cTy4rBKiQ9jKQbeO6LM79K5cVAlwADaPdh4ecrM/iq+Q02MBcoiLVxpwvPPnNG30DwBLQD7wB70AvkAdW8SQ4SPIsBvwF+S12SHuXoxbwzvBFUg94n+464hdFiXVA0GrQq+ZcFKHdPyNcXPxWXAyRLazqSm14AlYYImEcoSpWdT+WWIGMnzgWWWKpkNd5j/YjcNliU8rjmNvh+/QqyW1glIxl8NesHuY9exz5EakHKb0WiNyDlPwEsHiQUgVg8yAlCsDqQUrcA1g9SIkCsHqQEgVg9SAlCsDqQaonKPCeWD1IiQKwepASBWD1ICUKwOpBpjpww7Qc3v1nPlYPUmotwOZBSq4GWTxI6YZI5B6kDY5QpB6kDQI4uLBzhAqwELeTYOKPwiqACqACqAAqgIaGhgZHfAN2nKH3TDBdxQAAAABJRU5ErkJggg=={scale="+$scale+"}>"
+!endfunction
+
+IBMEntityColoring(tuning)
+!define tuning(e_alias, e_label, e_techn) IBMEntity(e_alias, e_label, e_techn, #232F3E, tuning, tuning)
+!define tuning(e_alias, e_label, e_techn, e_descr) IBMEntity(e_alias, e_label, e_techn, e_descr, #232F3E, tuning, tuning)
+!define tuningParticipant(p_alias, p_label, p_techn) IBMParticipant(p_alias, p_label, p_techn, #232F3E, tuning, tuning)
+!define tuningParticipant(p_alias, p_label, p_techn, p_descr) IBMParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, tuning, tuning)

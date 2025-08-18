@@ -1,0 +1,13 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $multitask [64x64/16z] xS61400000CXXFdRpkElMXu0001m
+
+!function $multitaskIMG($scale=1)
+!return "<img data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAAIGNIUk0AAHomAACAhAAA+gAAAIDoAAB1MAAA6mAAADqYAAAXcJy6UTwAAAAEZ0FNQQAAsY58+1GTAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAAOxAAADsQBlSsOGwAABApJREFUeNrtmmtIFFEYhsdZootBElqRFBhIURJZqJFQ0kUpiSB/dCFMgkjK+iFlF5Mow9CiK9Evwy5QgVtEVOSP0JKMLmghSH/UiLKsMEqT0i7vYV8hFtHZ2f1m55gfPCzofOfMeWfm7Pd+s4bxn0dEGOYcDdLBYjCJf3sP7oMq0D1UBTDBNlAEYkA7eMX/TQcTwEdQDM6C30NJgLHgCsgEV8FRUO93TCLYBdaC22Ad6JQ+MY9DV76St/x6cJi3vH+ov3lBI8gH88A18Ed3AfLADi7ea+H4Jj4aheAzeCJ9daQ3vCJeSW8AeV7mFHEMbQVI54ZXZiO3jLnpOguQBt71s+FZiXrmpuksQCxoCSK/hWNoK4DrQ1qAtyAuiPw4jqGtANVgMoucQCORudU6C1DF8rbARm4Bc6t0FqCbtf0akBVAXhZziqXNkROV4DOWtfms8JosLP4ir3z+UCiF1QJuUYRCOr/mfvyAeuaPg0NcvDJDP8LpBkPt26XtsK3zjdDlRKWEjdDFt0v1GTy6+HapPoNHF98u1WcwdfHtUn0GUxffLtVnMHXx7VJ9BlMX3y7VZxjuB+ji26X6DKYuvl2qz2Dq4tul+gymLr5dqs/gCYNvHwNWgs1gI8dJBZHgNehxss/gcdC3jwK7wXWQDabRmUWBRWATy1t1Tk9BrxN9BqfssNp0boI5oAKcAS/9jpkNtoMc0ABWsWBx1A5L+HZ1hR/zczV4NMjxC3iXfAHz+RmOPkPIQlnWryAhgJwE5lQ6VQhJRSo3n53041ajkTl9G6S2Amxh3V1uI/c8aOUY2gqgWlU3wC8bub3cCzJ1FWA8aQhijBf/jKOlACo6ghijw28srQToK0imBjHGFL+xtBJAtZ4/gJlBjDGLY3TqKIAKL0vPSBu5kcz1Sp6gtADlrADzbOSqnHE2v0Ith/TL0TbW5wUsh5st5i3jws+xHtBWABUPwBIanTYLX4s5NEwNtMs9ugugFqDe262ga5sxwHOt3vPt5+KXgi7dvYCKZC4shT58oEV18ZgU5iRLn5zkr8WVPS0xfO/v3oAjhu+11GD2Noptq72sA06DfVJ2VkqAieAube1BcMwI/NceI+kID9AdLmdN4Po9IJYbX7Th6/1dtmmGVM5DUGP42mUbaI6+uVkA1fe7Z/haYAvB8xCMqRql6ocNW0EGuGQM3i8MmwCnuNtnBOkC/eMT74Y9rCvuuPFbYC7I5WZXJ/Bo1XHsXM7lOgFKWemVCH6zlHCOUrcJEM9q7wT4KSiAGvsk54p3kwDqRcd3cMGBwqqCc2W7SYA0UOtE6co5ao0Q/SIlFAKMAEmG86/Hkzh32AWIYdXW6qAArZwzxg0CRPOz3UEB2v3mHo7hsBl/ARkzabYXW3lAAAAAAElFTkSuQmCC{scale="+$scale+"}>"
+!endfunction
+
+IBMEntityColoring(multitask)
+!define multitask(e_alias, e_label, e_techn) IBMEntity(e_alias, e_label, e_techn, #232F3E, multitask, multitask)
+!define multitask(e_alias, e_label, e_techn, e_descr) IBMEntity(e_alias, e_label, e_techn, e_descr, #232F3E, multitask, multitask)
+!define multitaskParticipant(p_alias, p_label, p_techn) IBMParticipant(p_alias, p_label, p_techn, #232F3E, multitask, multitask)
+!define multitaskParticipant(p_alias, p_label, p_techn, p_descr) IBMParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, multitask, multitask)

@@ -1,0 +1,13 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $trainheart [64x64/16z] xS61400000CXXFdRpkElMXu0001m
+
+!function $trainheartIMG($scale=1)
+!return "<img data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAAIGNIUk0AAHomAACAhAAA+gAAAIDoAAB1MAAA6mAAADqYAAAXcJy6UTwAAAAEZ0FNQQAAsY58+1GTAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAAOxAAADsQBlSsOGwAAA21JREFUeNrtm01oE0EUx6dJPFjbi4VSFD2oCJ56UXNTUMQiaooK4rdgDlIpCoqi4kHwq4oiFqvSIn7QguBBURTxUHoQ6tGDiBUtVqQoqBdjLzXx/8gLbMZNsh8z+0HmwY92N7NvZv4782Y2+yKEMWPG6tkaYtTWxeA4WAPmgnfgCbgIfnCZFnAUbABLwFfwEpwHY3EWYD14ABptPvsC1vH/z8A8mzJ/wFbwNI4CLABvQFOVMt/5b2uVMr9BO/hkPZmIgQDHanS+1PHWGmWa2FeZpTw2agboBBtBGrSBZk3xp0OhmB0qBKCOXwKLAhoBbTp9uRGApss5u2Gk2b5VCGxefQmvMSCMzpO90Okr5WLYy52fBoPgNnhrWYtVWw/YBmb59JNjX2WWdBjwHoPZlnO/wGpwHXwGUxpHwE/wHmz2sWr9BTvAKy8CbAL7Lcd5sAq8DnAa0K7vI8h4EIE6v4c3UsJLDOiUjgcD7ry13n18A5walc3ytbbmJAYslY53MWE8h9zlKXnLwc0r8Mi9U2tpq2VzIrYzHAAHuIPVOk9l+p2s7bWsWUTPboKDVT4/BG443dzE1XrBYZvzR8A1p05SAc1dXXaFY8IFPqbvCy67cZAS8bceFiFhEaKuBCA74/XChKhzMwLUuwBxjAEFlauSmQJGACOAEcCsAj6jsBkBRgAjQH3FgLC/DyiYEWAEMAJEch/QEOW5bkaADwFyEW5/LggBJiMswGQQMWBUlKfD3Ae7A+icXUy5J8rfS44GMQIeScf0nj0dwt1Oc93V2qZFAEqOGJeueR6wCGmu09recW6bL3OSIEHv2D9I6s8Ee8FCUczgoCRE1VkilPa6DJwGV8X/KTI7RTFzRPk8q2RnwYmIBD9K2DqpwlHSRdlhLr8i5M7Ta7BTqpwlXZYf5si7nIdokDbG07BfpVOv21cKRmvBQ2Gfwa3SKNN7iyjm+OVVO/f6ZijPDbN2fpqD4oTPNs0XxYywUtsaua68DnX9PAt02yyXEwraNGGzvHVH7WGI7lJGOtersF2yrwzXGRkBuqTpQz9oGFHYrhH2aZ2qXVERgDZBWY13v5LPLNcdugDbpSWQkqSHNAgwJMoTsFu47tAFkAPSgNCTLD3FvrUGQ7cCrBTFHx5Zl74+jXuAPq6jZO3cBmPGjBlTYv8AAViOReczgsMAAAAASUVORK5CYII={scale="+$scale+"}>"
+!endfunction
+
+IBMEntityColoring(trainheart)
+!define trainheart(e_alias, e_label, e_techn) IBMEntity(e_alias, e_label, e_techn, #232F3E, trainheart, trainheart)
+!define trainheart(e_alias, e_label, e_techn, e_descr) IBMEntity(e_alias, e_label, e_techn, e_descr, #232F3E, trainheart, trainheart)
+!define trainheartParticipant(p_alias, p_label, p_techn) IBMParticipant(p_alias, p_label, p_techn, #232F3E, trainheart, trainheart)
+!define trainheartParticipant(p_alias, p_label, p_techn, p_descr) IBMParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, trainheart, trainheart)

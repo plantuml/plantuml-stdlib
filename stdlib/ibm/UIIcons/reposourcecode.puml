@@ -1,0 +1,13 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $reposourcecode [64x64/16z] xS61400000CXXFdRpkElMXu0001m
+
+!function $reposourcecodeIMG($scale=1)
+!return "<img data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAAIGNIUk0AAHomAACAhAAA+gAAAIDoAAB1MAAA6mAAADqYAAAXcJy6UTwAAAAEZ0FNQQAAsY58+1GTAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAAOxAAADsQBlSsOGwAAAgZJREFUeNrtmjFOwzAYhVNTFqROgAStOAJdGFhbcQAmFhZu0bXNwsDCwMIFmLhAGRDq0IGRnoAFISQ2JNby/8KVqspO09iO7eQ96algOXbf1z/BxU4SCIIgCILqqoamvUO+IffJhwXH/iW/kW/Jj6EC2NKE5zd+Sm4ZjL1NPiJfkOfkSSwA7mV4m+rL10kMAO4MP3mdeiFCaCra2jmfE+vUJT+T95baRvI1DQWAcDj2jHxG/l5pZwjDOgCIAoIoYY6gITRLmmcBQfVMGDme+5P8Qh6QP3xUwLpKcC1eyF3KtU3HJwCfEFi7cnXrFYBvCD1fzwAVhP2S5ppnrHG8VEBQAgAAAAAAAAAAAAAAAAAAAAAAAIA6qlmDjA1UAAAAQHQAhslmmyab9g/6IchBRku/p5b7B10Bq2H450FG/4Gi/zBWAKvhWbx3MM64ZpwY7jmKwMPzBsos4zrjjVcRcXgrEETk4Y0hiAqEN4IgKhK+MARRofCFIGAp7GHOVFEBfGyGj890LYyvOp63qIA0z3dlPkfTdv093NGtsFF4luqk6An52NInnaXFidHeUttO8n+2+In85Tq8DsAr+Uq+GZcAbEIoFF4H4If8QD6QA7YcArABoXD4PPdp6H8ejcLrKsCXdJXwTp5qruFb9bxo+NAAqCBwmOuM/lNF/zSpgEr7lxgEQfXWHy3ihhHNRdCEAAAAAElFTkSuQmCC{scale="+$scale+"}>"
+!endfunction
+
+IBMEntityColoring(reposourcecode)
+!define reposourcecode(e_alias, e_label, e_techn) IBMEntity(e_alias, e_label, e_techn, #232F3E, reposourcecode, reposourcecode)
+!define reposourcecode(e_alias, e_label, e_techn, e_descr) IBMEntity(e_alias, e_label, e_techn, e_descr, #232F3E, reposourcecode, reposourcecode)
+!define reposourcecodeParticipant(p_alias, p_label, p_techn) IBMParticipant(p_alias, p_label, p_techn, #232F3E, reposourcecode, reposourcecode)
+!define reposourcecodeParticipant(p_alias, p_label, p_techn, p_descr) IBMParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, reposourcecode, reposourcecode)

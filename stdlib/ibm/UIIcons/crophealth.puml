@@ -1,0 +1,13 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $crophealth [64x64/16z] xS61400000CXXFdRpkElMXu0001m
+
+!function $crophealthIMG($scale=1)
+!return "<img data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAAIGNIUk0AAHomAACAhAAA+gAAAIDoAAB1MAAA6mAAADqYAAAXcJy6UTwAAAAEZ0FNQQAAsY58+1GTAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAAOxAAADsQBlSsOGwAAA69JREFUeNrtm1uITVEYx7dzpnEZgyQmxpmUIpNLnuaBPDBkSjGDPEjSNMjtSOaZV3LLbTojvBG5PbgNknihKIMJRcYwFEkGUwzj/3W+XavV2uecfba9z15nr69+Tfubfc7s9e1v/de3LmNZxowZi7INUPj6He79A7rAE3AXnOZrrS2u8O1wuDcGRoBJoBZsAhPBQ/AtCgFQBWQ6WANeg2dRC4Btg8BS8BXc1y0AJS50YihIgPmgEVRL9+wD3eAs+yaDJr6/ij+fqw6FKgC2fQcdzEGwDuwFpUJDWsEDkGSNiOuYAT2gXLguZ588IhwGz8EVIQjDWQvKdOkCMYWvW7pOZPj8LbBN8pXprgGveKizrTaLwh/l7lCt+N070Axug49Z6ozQZMBl6boxS1+m7nDMofE0TJ4SGq9FF7gE+oRrerPrs3zPDYWP3vwXyTdWoTehC8B7cFzy7QFzM3zPW4XvjsI3J4fPFTwAdjEklrelrPYbHLpDTw5iOhLsknxtYawE7TH/KVghFCp0bx1o4IBQgHrBL4cKcif/rACLwHlQKWkHFUqfwjYbFG0jOJAhU7zYIS6WQpkBtlFV94jf4MD/+HdvglXgb9gDQPYSnATDeFjzkg2U9ke48b/DuiCSySo5G+q4WKqQymbLQSBp4eQ61wsdYV8Rytf6wzTL8zoMRsZMAEwATABMAEwATABMAKJrbvYGdahGTQaYAJgAaNT/8rQFoIWfnfYjrnn5srhmjadNVtpkGWOlzyosARctD+uKMc2ylRZUxAUY2oY7A4ZEIQPWgs0K/2gwzkpv6BRtACj1L1jOC7MzwBvwuBi7gCr1aU/ihXQfbddPKcYA0ObJPMm3HdSDH171IK5h6tOewlZWftrHXOxFD4KcC3SxkF118Wxt0tun1J8GOgXfCbA639onyC4wHpwDMz2mfqfkow3bvI/oBa0Bg630JumoHFJ/t+Sj1G9V3PsTLJf0INQiWMViVeJS9RszdE/abaKziq7PGwQ1F6AzhEnJt5/FTFXwtCh8KT8eLKhRgE6TzQYTBF+NlT6Q1Z6j6ms9He7jfioLWEoQxXxSX6v1gM9cvPQ6iKJK9ZsVQdOyC9j2gRtUL/hoWjsLrFSkftLvBypEJdjOja6RagSx8XSmYKGVPoFedAFwEkXRtvA9vluhJkNOominfiqoB/FjLuCmtqAR4B6LoZ36U/0WvjBNh+kEWgNPlKjRy4JsvGW5+4cJv4xmh4lC/fHI7wsYM2Ys2vYPGi2xOTu7qycAAAAASUVORK5CYII={scale="+$scale+"}>"
+!endfunction
+
+IBMEntityColoring(crophealth)
+!define crophealth(e_alias, e_label, e_techn) IBMEntity(e_alias, e_label, e_techn, #232F3E, crophealth, crophealth)
+!define crophealth(e_alias, e_label, e_techn, e_descr) IBMEntity(e_alias, e_label, e_techn, e_descr, #232F3E, crophealth, crophealth)
+!define crophealthParticipant(p_alias, p_label, p_techn) IBMParticipant(p_alias, p_label, p_techn, #232F3E, crophealth, crophealth)
+!define crophealthParticipant(p_alias, p_label, p_techn, p_descr) IBMParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, crophealth, crophealth)

@@ -1,0 +1,13 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $machinelearning [64x64/16z] xS61400000CXXFdRpkElMXu0001m
+
+!function $machinelearningIMG($scale=1)
+!return "<img data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAAIGNIUk0AAHomAACAhAAA+gAAAIDoAAB1MAAA6mAAADqYAAAXcJy6UTwAAAAEZ0FNQQAAsY58+1GTAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAAOxAAADsQBlSsOGwAAAyFJREFUeNrtmktoFEEQhnvciCcVc4ohPshFUdCDqCjKquADQU+CoiIexAfoRSHgxcc1oiCKiogvPMSLiIJGCeiql+BJ8IkIPkIUlByMlyBx/YupxcnEzMz29Ez3sFXwHWY21an6p3u6a7qVEhMTa2TzMmizavh/VLOMeVyj9wARQAQQAUQAEUDWAfXZHLALrAXTwETLOQyCL+ABuAReZyXAeHAK7AMlRx/oMDgPDoLfSRxKdSR/D2xxfNhQbIvAEtAF/pgS4DQnXxRrB1PA/bg/bErQ2Fzu9kHrAx3gEfhmOdkWsBJ0grbAfYr5AniVtgccBktDyc8Hz8EvB542xfASXAPbwKTAcBjil2OqaXBN6Jqe/ICD3X6AY4uKXUuA6aHrisNjvxITu5YA4Xm+32EB+mNil5WgCCACiAAigAggAkTXAlUD7bbx2nwFL7efgCPgTU7+Ufl49RZDOsm/AM2Be5vAajAPfM7Y3/oQ6AwFX7PJ4EQO/tYFKEf8tjwH/9TvAC+Dd4KptnT8vbx7QEXzN1P+1ofAWN8L/levZ+GfegiktdoXo9o0RvaYg+/Lwd+6ALUktlr0l5WgCCACiABOCLDKkTZyrwanKn9XZiM4Do5ptkN+R8EdsBd8LUI1uB7cUP7enOIylnZvTtYhLgV5iH0VC0l1wHblb9I6vQ54r0ZuuXlcxVE5uxt8ivGfAS6q0bs6JW5bFUGAzeA2mBC4Twl9UP5e3XXwNiAGJT0b7FD+wYvwnuUQt2lcAC/tGIqwdeCm+rdZqWs/OfluE2M+z1mAAl4MelO00cttdGcVZJPK1qib09b6Ti5mZiX0e8fF0FWV4JSHywIoTuAyuAKWgQ1gIZjJkH1k6MzBXfDM8IcYqwIEx+ZTRpbCRRJgMHTd6nA+rTGxawkQ/g5fdliAckzsWgI8DF2P9d3etjVzbFGxj7Ikp8To89SegFi0sKHTWHQ87oeyf1KshWeWW2rkMblhXnp/T7sSJDsD9hfs/XYWHDDRA8h6lH/8tL0gyfdwXWHsqCw11MUl7gKHp0/q9uc4+USHpRv+uLyYmFhj21+QE58MI2D9tgAAAABJRU5ErkJggg=={scale="+$scale+"}>"
+!endfunction
+
+IBMEntityColoring(machinelearning)
+!define machinelearning(e_alias, e_label, e_techn) IBMEntity(e_alias, e_label, e_techn, #232F3E, machinelearning, machinelearning)
+!define machinelearning(e_alias, e_label, e_techn, e_descr) IBMEntity(e_alias, e_label, e_techn, e_descr, #232F3E, machinelearning, machinelearning)
+!define machinelearningParticipant(p_alias, p_label, p_techn) IBMParticipant(p_alias, p_label, p_techn, #232F3E, machinelearning, machinelearning)
+!define machinelearningParticipant(p_alias, p_label, p_techn, p_descr) IBMParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, machinelearning, machinelearning)

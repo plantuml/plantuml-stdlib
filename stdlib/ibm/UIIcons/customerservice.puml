@@ -1,0 +1,13 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $customerservice [64x64/16z] xS61400000CXXFdRpkElMXu0001m
+
+!function $customerserviceIMG($scale=1)
+!return "<img data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAAIGNIUk0AAHomAACAhAAA+gAAAIDoAAB1MAAA6mAAADqYAAAXcJy6UTwAAAAEZ0FNQQAAsY58+1GTAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAAOxAAADsQBlSsOGwAAA3RJREFUeNrtmktoE0EYx0fr41CrIBZstVrRgwHxAUVBtIpSQYRU7EkKevNxqCAYH+DBQkCIj5N6ECkICgo+EsFTRaGlBcWgomLBCq1oWhCKEEWN1Pr/2E9cJ1uTbXd2J9n5w+8w2+x05p/ZyXzffkIYGRmFWVN8/n9rQDPYABaBGjAGPoIM6Aa3wKtyM6AFxMHyIj//BpwEd0rdgHpwHayf4P2PwH7wVtUAKxROvhF0uvjWnbQE7OZH40MprYA/k58hXf8J7oJ74DEY5jHUggZ+VHY43PcVrAOvS8EAWvZPQLV0nSZ+FPQXuH8ZOAeitmvt4FSpPAL3pWX/CxwHh8BIEffTZ26AH2AzOADOl8om2MI/Y3YdA4kJ9rcYDKrcpad53F9caicnMXkxzuTHvPwSp3p8yLEv/Rw4ovtJ0EsDmqV2CrwLkwGNDstfhMmAWqn9NOwGDIXNgJKUlwZkpHZN2A1oUDBe+THL6mRAl9TeqcCATVL7vU4GpBzOBUs97H+uw6myUycDnoE+W5tC2rMe9DufcwIvwELb9VFwpRyDoe3gsjRZJ10AbbqFw5TL2wbqbNe2gu+gp8g+Hkr3O+kB2MurQLt8AE2gFVTaVlkTWAXSReQEDoM54/yNJnwJ7BFWdknLhMhnYaW7WqX+I+AgWAFmgm8cMeak+/t4t5/N7S/CyiJdA/vAVU6yaJkQkYMj2g+qAxxDoEdhOhesBb06nwQrFPdPj0OHsN70rATzHD7TXs4G2H8dLgorHT7Mm9ko7wWnhZGRkVFAUvUbvJqjwY3CqgOggKbKZR9Z3jAp5O3maPO57ga4rQNwKzolUt3Abd0MqBeTqwNwq14+ag/ocA7wog7ArerYAIo5BoNcAf+rA0iKv3UAQxzUuNEsYSVWqS6AXpVTim269JkcR5pdQRhAy96pDoAmHhOF6wDciuoGzoj8XOMnjjkG/H4EnOoATnCWZkTBsqc+b3JyZYvty6tkAzr8NGCXyH/zS0UQCR+e/x42oUnaE15yzOFLOOx1HYBbJUT+y9e4X/kAqgOISBtRLIBDXEz8m02K8NiUGxCV2ikFG14x6hf57yKifhigUx1AssDYlBiwQGqnAzQgXWBsSgyQX1BmAjQgU2BsSgyocojaglK2wNiU/QyWjYwBxgBjgDHAGGAMMAYYGRkZhVO/AfGdo6AG+TwmAAAAAElFTkSuQmCC{scale="+$scale+"}>"
+!endfunction
+
+IBMEntityColoring(customerservice)
+!define customerservice(e_alias, e_label, e_techn) IBMEntity(e_alias, e_label, e_techn, #232F3E, customerservice, customerservice)
+!define customerservice(e_alias, e_label, e_techn, e_descr) IBMEntity(e_alias, e_label, e_techn, e_descr, #232F3E, customerservice, customerservice)
+!define customerserviceParticipant(p_alias, p_label, p_techn) IBMParticipant(p_alias, p_label, p_techn, #232F3E, customerservice, customerservice)
+!define customerserviceParticipant(p_alias, p_label, p_techn, p_descr) IBMParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, customerservice, customerservice)

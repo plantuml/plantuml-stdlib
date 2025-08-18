@@ -1,0 +1,13 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $boxplot [64x64/16z] xS61400000CXXFdRpkElMXu0001m
+
+!function $boxplotIMG($scale=1)
+!return "<img data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAAIGNIUk0AAHomAACAhAAA+gAAAIDoAAB1MAAA6mAAADqYAAAXcJy6UTwAAAAEZ0FNQQAAsY58+1GTAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAAOxAAADsQBlSsOGwAAAMtJREFUeNrt2T0KAjEQxfH40drZ6EHtvczew8PYWuwF4hSWgRUW1pj5PZgmBEL+vDcZSClElFm7xlr9Ys8w2md3AADZARw3OKNu0Lc4AAAA+u0BS5n96dwhAgDoAd3NAUv7zQEAAPBfPWBthisHAAAAAAAM9ApUDgAAAJOgSVAEAAAAAJMgBwAAQIIe4G9QBADI3QP8DYoAAOYADgAAAAAAAACA/tR6o59R1yx3bjngkT0Ct6hXFgCHxtocNUVdos5Rp8HufC9ERB+9Ab0sEftIzYnbAAAAAElFTkSuQmCC{scale="+$scale+"}>"
+!endfunction
+
+IBMEntityColoring(boxplot)
+!define boxplot(e_alias, e_label, e_techn) IBMEntity(e_alias, e_label, e_techn, #232F3E, boxplot, boxplot)
+!define boxplot(e_alias, e_label, e_techn, e_descr) IBMEntity(e_alias, e_label, e_techn, e_descr, #232F3E, boxplot, boxplot)
+!define boxplotParticipant(p_alias, p_label, p_techn) IBMParticipant(p_alias, p_label, p_techn, #232F3E, boxplot, boxplot)
+!define boxplotParticipant(p_alias, p_label, p_techn, p_descr) IBMParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, boxplot, boxplot)

@@ -1,0 +1,13 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $videochat [64x64/16z] xS61400000CXXFdRpkElMXu0001m
+
+!function $videochatIMG($scale=1)
+!return "<img data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAAIGNIUk0AAHomAACAhAAA+gAAAIDoAAB1MAAA6mAAADqYAAAXcJy6UTwAAAAEZ0FNQQAAsY58+1GTAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAAOxAAADsQBlSsOGwAABERJREFUeNrtm1lsTFEYx0/bSUVFEIlSS4QHBA2xvWhSu1qCCGKrVDzYqdhJBLEn1hISS1R4IaKWLiQlomjFEuFBigeiWg8IqX37f7n/YUjazjXndM7tzJf80s5yv3vO/2zf+c4dpSLcYvh3KpgeYXU/DI7F8sUkkBxBlU9mnZUv4M0SkBYhAuT5/4mtA5W5RoJ9/ZfFqgg3Xx2oQ1+Xr6sUoDe4HEGTYEl0CETwKpAfnQSjAkQFiAoQFSBMgVBXMBS0Bs35Xjl4xtn5QV0UIB7MBvNAO/AVvADP+Xkv0BJsA0/BHrAPfKkLAgwG+0FbcAosZUtX/vO9BoxDJoDtYD6YCS56WYBMtuoNMBbcrea7lRRI6AF2gVywGOz0ogDLwSa2vnT9by6uvQ1SQRbYAeqBLV4SYCTYwJbL/E8f3zgEPoON4CE474VlsCE4CArZfUO1RdylHqJv6wVYAhqz9b5r8Cc+ZoEmmgQ1KkA8Z2/pAU80+i1lD1jAe1grQH/QCGQb6FnZ9N3PZgGGgZf+bItmK2bEONxmAdozlP1pQIAfXAna2SxAC1BmMLYQ30k2CyDh7AeDAojvBJsFeAOaGhRAfL+1WYBHoItBAbrwHtYKIDN1R5BooPKSO+gAbtoswBn+nWxAgClcXXJsFqCMBVwI6mv0m8Ao8IzuVcbEXmAdl8OVGn2u4hBY74XN0D3u4VeAIRr8pTG3sIO+rRfA32JXwWkwMAQ/g5STIbqiuUcZF0CSnqPALeU8jSEtGOfieh97UC59jFbuMkqubmTK3isn/S05QUmNTQNzmCipzgaAvVzyspgD+GyqkCYPRmK4dW3NpIbEB+lBXJfOyn/ntf3Un6fZPNEDRNQZYBl3bpLM2Mz54E4Q10tP2Q3GgPEcQnJWsIWJlh82CyAHHHKg0ZMTl7Rm0X/4uU1WK+cRF1n+DlDYOZwXtFhcQJQldjyEVpdxfgS8YsXXqD8nP6GYHJkdBdc5p6xiYFQYQt7hd3119ADJ1J4AI5STBl/KVUC3XQJ9wFYOr87KedjxfTgnwUS2TF8uVZmGKu+3Lwyz5V4pvHezcAkgyY8LoI1yzv9yVO1ZDu/ZhmVoUNsCyNA5yeUqTeek5MIk8SpJ2E4si682BVjLCWkcu2G4rIhlGMoy1YoA3ZRz+iNrdb4Kv+UxYlzCshkVwMdgpJTxvS0mq8Jjli3OpAATlXN2Pxd8skiAjyxTDy6NxgSQZU4edrDxmWIJjIqVy+N4NwKkgu6M6221TSxjqgkBMhiWnrNYgLMMvzNMCCAnvwXKzLmfLvvJMvbXLYAEPK3o3HYrYFk76BQgJWCisd0K/ymzFgFE0XfKOfuz3V5zh9hKpwCy46pQ3rGKYHeJbgQo95AA5boFkO1mpYcEqAx2ixwTsKGQX43dr+J7/p/V3veIADWV1/+rsbS4gJ6QVMOY8tocUFHD59kealBz9gt+b9xDQC+yjAAAAABJRU5ErkJggg=={scale="+$scale+"}>"
+!endfunction
+
+IBMEntityColoring(videochat)
+!define videochat(e_alias, e_label, e_techn) IBMEntity(e_alias, e_label, e_techn, #232F3E, videochat, videochat)
+!define videochat(e_alias, e_label, e_techn, e_descr) IBMEntity(e_alias, e_label, e_techn, e_descr, #232F3E, videochat, videochat)
+!define videochatParticipant(p_alias, p_label, p_techn) IBMParticipant(p_alias, p_label, p_techn, #232F3E, videochat, videochat)
+!define videochatParticipant(p_alias, p_label, p_techn, p_descr) IBMParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, videochat, videochat)

@@ -1,0 +1,13 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $scriptreference [64x64/16z] xS61400000CXXFdRpkElMXu0001m
+
+!function $scriptreferenceIMG($scale=1)
+!return "<img data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAAIGNIUk0AAHomAACAhAAA+gAAAIDoAAB1MAAA6mAAADqYAAAXcJy6UTwAAAAEZ0FNQQAAsY58+1GTAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAAOxAAADsQBlSsOGwAAAixJREFUeNrtmj9Lw0AYxtNUR+3sn91FcOwmdRAHcVCQDrr7DZzUNnbzE/QDFKFTcXAQF+sgdBQc/ALq5ODiohjfwAVCyF2Sy917l+R94KEU7np5fn3vcpfWcUgkUp3VkOy3Ar4Cb4GXFF/TG/gEfIsBoCkZ/hncBi9ouKZF8CH4BfxqI4AhC6/7ug4wILgSfTpI03MePAbv6xxkTqLPsqJ1JJQfe//DwkchdMETWypAt7oMAkol2AhgggnBRgCoEGwFgAbBZgAoEGwHoB1CGQBohVAWANoglAmAFghlA5AGYbcOAEQQhhhnAdV6j50v/AKftVrGCngwObgNAE7Bn3UGEDwC2wBfgz+wB7dhDQghHCl6nlCLu0AtToMEgAAQAAJAAGzcBzSoAggAASCRSKRKKMs93UcYg+4CBIAA2LsGpCn4gWIkOFcUGaPH1qDLjO37rL2n8zCUJ7xTMHw/shAPUtoHkM4j7zNBaCoO/5swrbyC4QMF/0j9Bj9x2p/F2nfY61TXGsALf6z4mw/1BX4U9LlnbeLToacDgCj8WFP4HfBM0G/G2uSG4FYgfCEIbkXCS0NwKxReCoJrOLz1O0GM8F5CBbTAd47c3/LbrG8roQK8PAAwv3lVEHKFFwEwUfZFIeQOz9unm57zMouiVHheBewZXvB4lbAt6LMpE553FrgBr4HXDa7209iefpASJjgj/LEzQ+bwaWBGbDqYVNJ0EOkiy/6fRCKRQv0DyRGlv72htncAAAAASUVORK5CYII={scale="+$scale+"}>"
+!endfunction
+
+IBMEntityColoring(scriptreference)
+!define scriptreference(e_alias, e_label, e_techn) IBMEntity(e_alias, e_label, e_techn, #232F3E, scriptreference, scriptreference)
+!define scriptreference(e_alias, e_label, e_techn, e_descr) IBMEntity(e_alias, e_label, e_techn, e_descr, #232F3E, scriptreference, scriptreference)
+!define scriptreferenceParticipant(p_alias, p_label, p_techn) IBMParticipant(p_alias, p_label, p_techn, #232F3E, scriptreference, scriptreference)
+!define scriptreferenceParticipant(p_alias, p_label, p_techn, p_descr) IBMParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, scriptreference, scriptreference)

@@ -1,0 +1,13 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $windysnow [64x64/16z] xS61400000CXXFdRpkElMXu0001m
+
+!function $windysnowIMG($scale=1)
+!return "<img data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAAIGNIUk0AAHomAACAhAAA+gAAAIDoAAB1MAAA6mAAADqYAAAXcJy6UTwAAAAEZ0FNQQAAsY58+1GTAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAAOxAAADsQBlSsOGwAAAu1JREFUeNrtmr9rFEEUxyfmzjQaEFT8UUYRgnCiQv4GEeXSRU8ULcTKRiRiocYqcv+ASWEXLFJ4/kiIhYWVRrQIhCBoKn9hJ4kWGsn5HfIOh8cms7uZvdu3M1/4EGaS2bt5mff2zbxRKigoKCgoKMhXdaUY07Q8o+ngM9qmLb6vgJKQ71kGVXAaDIC91P8NzIInoAFWimiAQVAHfRG/O0icA4vgOniUdQxQbfJ57Z6jNKkk0sa6AValx4A0k1c0ZlS6CwxGTP4PuA8egnnqOwzOgCtgKzPCqzjukEcDlGkZm/oCToI51v+aeACmwH7mCs9sgbGUgc9vNiZUWcD7vc7kTc3R3+g3Qg/19dGzJqXFgCprj1smbxph3PIsEQY4xtoTCcZOWJ4lwgD7WHshwdgFy7MyyQPypO1gyWgvg16f9gL9rP3Vt81QjbXf+WSACrjM+hq+GKBCiVCP0bcYxwAlwZPetkEq3EqHVzphgGYOjFOPuy0u4olQaztcmAORuEp1ICLZAD+VgyOxoKCgoCCf5aI2mBct0/Z3ll6JT8FfnxIhfRhyiDgP3oNrYHqjQd0pPuiOEIPsBGdplb/0aS/AXfw2uOUyBkjcHuu4dQI8d+ECeZUunX0GMxQAT6n/B6L6H30EjPEg3l3Qpf8dvAAXjUC/G7wBH3wwQMsIetIDRt8vtVYv9CYI8krRcd/eAtZKUZaJkKsq8hIlOS31UtbnRBJWAK/u9CcYa60USTDAW9auJRhbszxLhAF4cUNXfyoxxkVVih53MhNMe3OkTMHsgNG33pUZc/L8ysw89a92Kg/gm6iRmOP0F/4EhlggvAR2gR+ETn2PqrWjcZ3x7WDGvwA+xnkL5PEusHaDe2DY6NMTvkrYNBK1D5B2HnCTfg4ndLu7RNsPRFyvJO0KuuSlr8XVWUyIUqwDEYknQg0KcObl6T3Ge37TR2IS7v/rEtikstwBLEommKm6HPiyaIUVICQPCCsgGCAYIBv9A+KklqLHGVqRAAAAAElFTkSuQmCC{scale="+$scale+"}>"
+!endfunction
+
+IBMEntityColoring(windysnow)
+!define windysnow(e_alias, e_label, e_techn) IBMEntity(e_alias, e_label, e_techn, #232F3E, windysnow, windysnow)
+!define windysnow(e_alias, e_label, e_techn, e_descr) IBMEntity(e_alias, e_label, e_techn, e_descr, #232F3E, windysnow, windysnow)
+!define windysnowParticipant(p_alias, p_label, p_techn) IBMParticipant(p_alias, p_label, p_techn, #232F3E, windysnow, windysnow)
+!define windysnowParticipant(p_alias, p_label, p_techn, p_descr) IBMParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, windysnow, windysnow)

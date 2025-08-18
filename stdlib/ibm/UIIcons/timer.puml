@@ -1,0 +1,13 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $timer [64x64/16z] xS61400000CXXFdRpkElMXu0001m
+
+!function $timerIMG($scale=1)
+!return "<img data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAAIGNIUk0AAHomAACAhAAA+gAAAIDoAAB1MAAA6mAAADqYAAAXcJy6UTwAAAAEZ0FNQQAAsY58+1GTAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAAOxAAADsQBlSsOGwAABCpJREFUeNrtm1lIFVEYxyez1VDMl7QMsoewCKqHgsooymghMChtgR6ieokWKtCHFs0HMXpJnwIrIiraaC/K9n23IIqgLCiyCLKiItC0/8f9Lh2+5uqdO3Nmxjx/+HGZO96Z7/zPd2bOpmUZGRl1ZnXx8V6tYYwtqbNngDHAPAWMjIxMP8Af9QejwHD+zBDnm8BL8AxcB0/+BwOo0EtAIRjq8LcN4AjYCeo6mgGDQBmYB7p5cL3LoBRcC7sB3cEmsBb00GDsIbASfGjjb8aAPLDVbwNywT4wIsb5RnASXAGvwTulIP3AAM6ciWAWSI9xnU9gMTgVo/DnQBrYCMr9MmAyt9c0m3NHQTU/2JrjvF4y1+IKMNvmfAsoFrWsFj4qysbNbd2oqweFLwDHQW/x/Q0wn4N8w0HHqxb+zQFQC4aAgaLipoKe4GKMwpOuMtoyIJ/TWm3vVMvrwDaP2/8qNjNZfF8D5toUvpQfxNqaQA54INoqtfMirjUdyuesSG/n7+IqvJsmQK+282yCWvhx4K7GfkU9OAEWgF5uC+8mA0pAhXL8G0x3WPOtLmKhTDhrU4GOCp/ofEAm2CC+W6Mx7e1Uy/eUuu/HhEiJeOLT074qgHFMFd9bVbnTrHZqQBr37dU0Lg5wMFcsmhINsibpNGChqP1j4FaABtziGFQt1WlAoTiuDsGQXsYww8nbLclh+o9Vjj9z9zZoXedYokptYzziyoDRYmh72kHfXqeaORZVeToMGGnzKgqLZCwTdBiQI47fhsiAtzYTMp4bkCmO34fIABlLHx0GpIjjhhAZ0OCHAR1JKToM+NFOkwhSMpYmHQbIicisEBmQ1U6snhjwShxnh8iAbJt5A88NeGwzJg+LZCx1Ogy4J3p+M61/5+eCUDLHouqmkx/Hqy88+or2svpyl/NygoF7NSWfx7FE9dNqZybYzWvwoDheEYIMkDHQnOEvXQbsZYejKhAjRL81lmNQVaNzPoCawQ6RxpUBGlApmhI9/C7pNIBUIbJgvBVZsPRbK/neqmgpzNF+xETWBb5bkaWrKcp3tEx128n714PX3h5RgWfYAEt3BpBoieqRMJJWbHJ9KHwu30utvK9geSIXS3RliDLgAlhk/V2hoc8FbEy9xpqnBRF1aayV73vHTwNIjVzYIuU6ZAKtCH+zvF8io8XR3TYjPUr77Yle1O3yONX0UzBHaU70OY2fES8s9zNH9KqjjRfLbJosNcX1bi7uVW+MHoK0fSXV5pyODRKU9rRCtcVt4F5ukRkG9luRbXCxmozuLTKBGkCijRKlVmThsruGhyB1xVdbHk7H6domN9iKLFPTSpJX2+TKnAxygjYgquhGyaIE+ggfwWGwCzzUFaCfW2VzuOs6ijOE5vEylCEspTVtlX3ONf3Ecv5vNkZGRkZGRkZGcesPpM3Himik9D4AAAAASUVORK5CYII={scale="+$scale+"}>"
+!endfunction
+
+IBMEntityColoring(timer)
+!define timer(e_alias, e_label, e_techn) IBMEntity(e_alias, e_label, e_techn, #232F3E, timer, timer)
+!define timer(e_alias, e_label, e_techn, e_descr) IBMEntity(e_alias, e_label, e_techn, e_descr, #232F3E, timer, timer)
+!define timerParticipant(p_alias, p_label, p_techn) IBMParticipant(p_alias, p_label, p_techn, #232F3E, timer, timer)
+!define timerParticipant(p_alias, p_label, p_techn, p_descr) IBMParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, timer, timer)

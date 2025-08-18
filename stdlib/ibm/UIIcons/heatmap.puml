@@ -1,0 +1,13 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $heatmap [64x64/16z] xS61400000CXXFdRpkElMXu0001m
+
+!function $heatmapIMG($scale=1)
+!return "<img data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAAIGNIUk0AAHomAACAhAAA+gAAAIDoAAB1MAAA6mAAADqYAAAXcJy6UTwAAAAEZ0FNQQAAsY58+1GTAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAAOxAAADsQBlSsOGwAAAgtJREFUeNrtWjtOxDAQTTapkKiWgt8VkJCQoPUd6Gi4BXuGUNBQcAO2o4EDpKbiEEuoaPYCYSKZBjmOJ55JwuY9aZqVPZ68HX/e2EkCAMCckbb8fkp2T2bIjjp8fJGVZHdkG6U4OfGw4ktbBvsgWzIH+iY7VyChbzxB8S0cDYuegy1tX2kUAh/fGp+LABMxiFEgwGj6yh2NjgPXiV/Unr4S4MbDim8x910ABMydgHyEMevIOY0MAAEgQHcNqP7slzXDXxWhPyaTAWWEv3IXpsDKCoc+YmO1CwRsrGpaWykZIjfXSkpwtHrA0IjR+xw0a9TJ2AchLb3fa42awjZYDPTxzjVqChlglP17S2JTIKBL76tqBxyFQQC0gPi+zL0n4GiPSpqAzLMvX5Lt9/DZ9DkjuyV7Jtt2tL+w7UPwSvaiPQVU6/AR2kNFa7gy4LHnP99GwkNHm63NlGaqHTjGbqbUG9m1htaQuBdIPPt26D1B82E3Suuc9xyBbRAE4BwwecRqgRQZAAJAwL9eA1JkAAgAAYPOr89E562PVP2AW6/w+s8i9bkEuPUDbr3C699FwLttvDdwNjbjHQYUPJ7IrqT8S9wNSsIItQnumyvoc+7ZnVs/EH3HiG0QBIAAEAACQADqAaLQfmco6l8jA0rlvqL+NQjQfmco6j9TIKDrrs8lVzl3f9r+AQCYEX4AXix3b26jWTEAAAAASUVORK5CYII={scale="+$scale+"}>"
+!endfunction
+
+IBMEntityColoring(heatmap)
+!define heatmap(e_alias, e_label, e_techn) IBMEntity(e_alias, e_label, e_techn, #232F3E, heatmap, heatmap)
+!define heatmap(e_alias, e_label, e_techn, e_descr) IBMEntity(e_alias, e_label, e_techn, e_descr, #232F3E, heatmap, heatmap)
+!define heatmapParticipant(p_alias, p_label, p_techn) IBMParticipant(p_alias, p_label, p_techn, #232F3E, heatmap, heatmap)
+!define heatmapParticipant(p_alias, p_label, p_techn, p_descr) IBMParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, heatmap, heatmap)

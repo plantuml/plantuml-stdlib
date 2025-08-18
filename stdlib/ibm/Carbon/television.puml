@@ -1,0 +1,13 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $television [64x64/16z] xS61400000CXXFdRpkElMXu0001m
+
+!function $televisionIMG($scale=1)
+!return "<img data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAAIGNIUk0AAHomAACAhAAA+gAAAIDoAAB1MAAA6mAAADqYAAAXcJy6UTwAAAAEZ0FNQQAAsY58+1GTAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAAOxAAADsQBlSsOGwAAAfpJREFUeNrtmrFLw0AYxVMb0El3FydBOhQn0UEHF3FzFoog2FVQ0EFH/SeqOFhQ3IUOgoIVLAUFOyhOKri4qKug6Dv4KlFoiXjX5EveBz/auyH63l1evwvxPBaLpagmbV8wq0j8BtgGVXBn66JdisSvgU1wbPPCGWXi121fPJNm8XE3wLl4WxmwAPo0irfxKzAIDkERvIIr8KlFvA0DnsE+GAIrYAbcgnsN4m31AS/gAJyCKbAKhsGFGBRb8bYbIbPqW+ARzIFl0Avq4C2O4l10gub+vwQl0A0WQ+RDZOJdtsJmxY9C5EOk4jtxFmiXD0tRiw82QgUw3wGzx4AP3uXT7JTziLTvgLIvg1mQBw2Hf/ADnMWky8yL5m8DPEnr6ZQ8V6hoOw47K7/FfCcywck9HRiPyjnFk/6k9pfDUDMTtFTzng6KN0+OJoSqzIXeAdoyofJrbJqvB5CT8Y3M1VwchxOZAdqrJDl2LeMBmUuNAWarjwdCsNAqBP0E7+5aK9HMgJTsgH/1AUkQH6oPSKoBwT4gJ9+LzAD2AewD2AcwA2gADaABNIAG0AAaQANoAA2gATSABtAAGkADaAANoAGprnZPhUfAiRId5hWZuk0D9kCPooVsyP9szYCy9/ONK2ZAGjJA0z1vLTOygZ3Qn6KFfwK7ntt3o3XUF8ZPc8tM3aj8AAAAAElFTkSuQmCC{scale="+$scale+"}>"
+!endfunction
+
+IBMEntityColoring(television)
+!define television(e_alias, e_label, e_techn) IBMEntity(e_alias, e_label, e_techn, #232F3E, television, television)
+!define television(e_alias, e_label, e_techn, e_descr) IBMEntity(e_alias, e_label, e_techn, e_descr, #232F3E, television, television)
+!define televisionParticipant(p_alias, p_label, p_techn) IBMParticipant(p_alias, p_label, p_techn, #232F3E, television, television)
+!define televisionParticipant(p_alias, p_label, p_techn, p_descr) IBMParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, television, television)

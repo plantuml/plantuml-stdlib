@@ -1,0 +1,13 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $ibmbluepay [64x64/16z] xS61400000CXXFdRpkElMXu0001m
+
+!function $ibmbluepayIMG($scale=1)
+!return "<img data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAAIGNIUk0AAHomAACAhAAA+gAAAIDoAAB1MAAA6mAAADqYAAAXcJy6UTwAAAAEZ0FNQQAAsY58+1GTAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAAOxAAADsQBlSsOGwAAAdlJREFUeNrtmjFOwzAUhpOYgQ2pTEHcodyAbpyAocycAUbasRwEzsDWjNnoHVA7UakbW3hWbSkKpontOIrt/5fekiqV/8/Pzy+JkwSCoJiVKq5VDv5ztMpizwAAQA1wr2pgTzuKNcUTxVeMGZBTzCk+Ka5jXgKXFKvYa8DMZR8w1v2+0hkntkEAiFxnvvfyyAAAAAAAAAAAAIDB9CIiGDFN84vaE1YREwBpvvmYWcQAoGk+KAjM0HwwEJiF+SAgMEvz3kNgHc0fKM5brnkJgXU0f0fxqJj1+xFCqIQHGcuuneAp86Xi3lL8dmhcX/jULGWG5oOBkFmYDwKC6p2gjvkmhA+KiwHHzz99vYrak5+oCSqlMgOWtQwwMf9fJrQWoB7Mb5Ljd8DcNgP4QH+S41fV0mJQEgKfkZXj2eczP+lzCfQ14NISYlfduqoBvuhKtaZNt8FoBQCxA/C5BmwbdaDtXIPy7JDPGaD7wCXPDm2S2tkhnwHwmdwb3DcRPYT3AHgaTyneRXob9RA+1wAJ4UHjPcGfHgLbIACgD3C279oq1VjTJj2EdgasA5r4wgTAM8V3AOb3oofQBsC3nBuKN4N9dwzaiZ5hWm+FQzwTiLPC2AYBAIIgqJt+AQnPZdWA+m1lAAAAAElFTkSuQmCC{scale="+$scale+"}>"
+!endfunction
+
+IBMEntityColoring(ibmbluepay)
+!define ibmbluepay(e_alias, e_label, e_techn) IBMEntity(e_alias, e_label, e_techn, #232F3E, ibmbluepay, ibmbluepay)
+!define ibmbluepay(e_alias, e_label, e_techn, e_descr) IBMEntity(e_alias, e_label, e_techn, e_descr, #232F3E, ibmbluepay, ibmbluepay)
+!define ibmbluepayParticipant(p_alias, p_label, p_techn) IBMParticipant(p_alias, p_label, p_techn, #232F3E, ibmbluepay, ibmbluepay)
+!define ibmbluepayParticipant(p_alias, p_label, p_techn, p_descr) IBMParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, ibmbluepay, ibmbluepay)

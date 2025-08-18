@@ -1,0 +1,13 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $randomsamples [64x64/16z] xS61400000CXXFdRpkElMXu0001m
+
+!function $randomsamplesIMG($scale=1)
+!return "<img data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAAIGNIUk0AAHomAACAhAAA+gAAAIDoAAB1MAAA6mAAADqYAAAXcJy6UTwAAAAEZ0FNQQAAsY58+1GTAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAAOxAAADsQBlSsOGwAAAlZJREFUeNrtWqFOA0EQXTpHECQoFAE+oZIEAWh+gQSD4CxgOVmw1UUg4CPqCgRBaYJBIZAYBAZTy2zYSy4NV/bamdvZvZ3kJSsu2b63Mztvd6tUDNFxYsAWiWDyHcS5Ga8iMo5JQDj5C8SjGS8iBk3IgCL54qrn2ZCFnAFl5AcmA8gzATwgzyoCeEKeTQTwiDyLCOAZeXIRwEPypCKAp+TJRADB5PcRd4gzxBvinUMEELzymsgGYgWxi+hyZELiYdqXRTaLYwTB5HXa7yG+EemUEpgrExYCWPm55oQAyVfKBAiQfCURIFDy1iJAwOStRIDAyf8rAjggb+vwqL/7UwQqAU4NcUqHR/3dpAjaXwxbquFBlQHDCg7M1uFRfzdZppccTlDqJlj626i7ANvtLdfCcPgAaSJMzcq8BA4RR8QTbyOWEM+IscX314jbuksy7wIHiDbx5E+Ie0vybfMbat+PihciI2MqXETf1WYs+XVYL8aVGR9XEKlSJ5JshHqIdYMeVxsOyQnO5EEkC6Bd3YdBymXAEsG13DeHHFb32RJay7VZ71bTat6FALa1vOzi0FXHHmBbyzuGWFYXeWklMDbEOnUetyU5wQfEiyp/22O5a5BmhcseONkuWigEmLXP24qgFOMtE4UAeZ/Px5sMmcB2xSb5NKgJf5lxl2sSCgHSQgmkxL+vy60yhQC2fV5kNP5hJArQdAFs9gDqPu9dBnCe52MJ+CBAlbu5IPcAr/t8LIEoQBQgCmC7CW6p37+buQj9PD5yMTEUMmHN4UJ8Im4QrypGvfED7v3a7q4Gb3UAAAAASUVORK5CYII={scale="+$scale+"}>"
+!endfunction
+
+IBMEntityColoring(randomsamples)
+!define randomsamples(e_alias, e_label, e_techn) IBMEntity(e_alias, e_label, e_techn, #232F3E, randomsamples, randomsamples)
+!define randomsamples(e_alias, e_label, e_techn, e_descr) IBMEntity(e_alias, e_label, e_techn, e_descr, #232F3E, randomsamples, randomsamples)
+!define randomsamplesParticipant(p_alias, p_label, p_techn) IBMParticipant(p_alias, p_label, p_techn, #232F3E, randomsamples, randomsamples)
+!define randomsamplesParticipant(p_alias, p_label, p_techn, p_descr) IBMParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, randomsamples, randomsamples)

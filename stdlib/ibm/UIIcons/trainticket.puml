@@ -1,0 +1,13 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $trainticket [64x64/16z] xS61400000CXXFdRpkElMXu0001m
+
+!function $trainticketIMG($scale=1)
+!return "<img data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAAIGNIUk0AAHomAACAhAAA+gAAAIDoAAB1MAAA6mAAADqYAAAXcJy6UTwAAAAEZ0FNQQAAsY58+1GTAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAAOxAAADsQBlSsOGwAAAqRJREFUeNpjYBgFo2AUjGTAOAjd9J+efmYa6SlgNABGegCwkKmPFYj9odgciCWAmHcolj/kBEAAEHcDsQqN3HQASmsBsRiVzPwIxOcpDQBQdmkD4nIaR4ojUipbCMSRFJo3D4jTgPgvpWUAPTyPDH5Tyb5mXJ4nJQX4Y3HMHyBeCg3hq0D8drgWgqCk2IMm9h6IPYH4JA3dBrK3kwrmdABxNK5UwEJk7CMXeP9o7Pn9VC4Ew4HYA6kQdCQnAJDBMhrHvAMNzOTHZS4xAWCCxo+B4mHRDyGmFpAa6U1hvtG+wAgfD/g/BMYQRlPAaACMBsBoAIwGAK06Q4MNULVWGs0CowEwGgCjATBaC1BYCo+mgNEAGA2AkVUGDPR4wP/RFDAaAKMBMCjbAYyDOa+PpgAKAuDrIHb/V3oEwPNBHAAv6FEGnGBAnR1eAsSxdPActjJlEZrdx+mRAjag8aMYIAuj6A1AdkajiW2kVwDcR9Oznc6BYA61E9m997FEDsmAmcjq6DZa6HMCcQIQKwPxOyD+AsTfqexpYSA2BeJGIJ4AxNxo8qAp+pu0yGe4QCsQVw2Swg+0YKuaGgYxk6B2H7TQtB3gDhEoImqpZRgzier3Q0teMyAWobPHb0Gz4WxaVzXEFp5uQLwWiLlo7PFvQBwCxDsZIAu0BrwvwAB1yHc0z/+BFoqPKHSTHBDfRXIbFzQQ/tEidCnpC+RiqZMfUcFNj7DU77mDrTMEiiX05XOTqegudLP8oXYOmgDIRMs+l4D4IBXdBTLrIlpWzRosAQBqBKXSMPZxmZkCtXvAAyAK2kqDAdAi6aU0CIBlDKgLsIWhdg94AKAXSHNo0AxmgJqJXufnDXQA2AGxPlrVN42GbYDpUDtgQA+I7RlGwSgYBaOASgAAuFVokuG0QEYAAAAASUVORK5CYII={scale="+$scale+"}>"
+!endfunction
+
+IBMEntityColoring(trainticket)
+!define trainticket(e_alias, e_label, e_techn) IBMEntity(e_alias, e_label, e_techn, #232F3E, trainticket, trainticket)
+!define trainticket(e_alias, e_label, e_techn, e_descr) IBMEntity(e_alias, e_label, e_techn, e_descr, #232F3E, trainticket, trainticket)
+!define trainticketParticipant(p_alias, p_label, p_techn) IBMParticipant(p_alias, p_label, p_techn, #232F3E, trainticket, trainticket)
+!define trainticketParticipant(p_alias, p_label, p_techn, p_descr) IBMParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, trainticket, trainticket)

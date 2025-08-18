@@ -1,0 +1,13 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $draw [64x64/16z] xS61400000CXXFdRpkElMXu0001m
+
+!function $drawIMG($scale=1)
+!return "<img data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAAIGNIUk0AAHomAACAhAAA+gAAAIDoAAB1MAAA6mAAADqYAAAXcJy6UTwAAAAEZ0FNQQAAsY58+1GTAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAAOxAAADsQBlSsOGwAABB5JREFUeNrtmltsTEEYxw9dSpW2VINIiodGUrc0aCIhDUpK67ruQkTipUEi1IsXiReVIBKRoBKCB7TRutPSVkWf9KWRSNQl8SBCUHrRov5f9qsck53d7jlz5pyt8yX/h5mds7u/78zt+2YMwzfffPPNN998+19tgAu/mQOthWZCCdBLqAYqh7r7swNSodPQGsnnLdBW6IlOByRo+p0MqA7Ki9BmJLQJaoRe9ScHEPxDKDvMZ2+gQdBgLgegpdBZqKM/OEAGT295LnQQOs5vfxZ/lgR1QY90OGCgg989mic3Eb4Byue3T9YOFUNNpjardA2BgQ7C05ufItQ/hgqg70J9D1RrKmc5/HL+WkAjfD20BGqTPJfpwuSs3AEy+Dqe3GTw86BlpvJb6He8OUAGX8vw7ZLn5kA3hf9yK956gAyeZvLCKPB3oeGmuk7oWDw5QAZPdUUxwpPt0rkRCiiArwkDX81juiNG+BLoTLzEAr3wU4X6B9Byi/BH4iUYksHfh1bEC7zVIZDOXVyEv8fwnfECb2XDkc5vfppQT2ArHYTP4N7a5eYQkMHfYfgfiuGnQ/t495jGdZ+gi9AJVStFLA6gbr9AqLvNgYtqeFoKj0bood+g7dBVnUOAorUgNIzLtHtb7QD8YehQlGAokR1P2aPXuhzwgbt7kDc5wQhj0g58SQyR7CLoJPRT5zI4CXqnCb6Dh8Nlfut7oANCm83QJZ0Zoc/QLw3w7RxHVBihbHEnxxYToRnCfHDdCwkRJ+DDpcUqhPJ4L2SEdMEbpiXR3ANcdYBO+CSeB8zW7GY0mMXJCxXwbRw+y+CHQjeEjRjNRefddMAFI3TiowK+0Pg3MRoOfr5QX2aEjtZcGQJ5UK5Qt99BeHEXShnmnXbHrx0HFAjlKqhUE3wjP2c7OLIzBCYI5WsW4ClZWhcBvkoCvxhqVbF82ekBYgyQ4gD8Qifh7TrguVDeDSUL2+xSi/CVOuCtboXNwVGxKZ6gA86NDJDDk+EGi/D5OuCtBkNmOwdt62PbaPBDuNvHCk83TbKt7gfsnsFV858bF6VdK8/a9RHgKzm8jQWejtQpEbuOI9Qm3Q7o5hTVKI7Qws0pDQz/LEIvLOfUlxX4NP6OIitOUHlHKJP/BGWL6cZHC/eQxijP7Q2zeeorvLgLpUOVHW45wIrRpPceGqEAvozhYzpVDrjsgCIB/gvXyeBnG6HzByXwqhMiVqNJsxHcR13wXugByUI5UdIul+FTVMJ7oQe8EMo09ifrglexDNq1r0Yo69s7GdOdwfUMRUkWujl6SpgnlMF7YRUweAe3JYb2yuC90APInhqh+8OpuuG94gCKEa5w9DdG0oaA6biMEqI9XgqGVEemQQ6u6MrNWCOU76PUF12nbTZ8880333zzzTffFNofJ2khB0bJmS0AAAAASUVORK5CYII={scale="+$scale+"}>"
+!endfunction
+
+IBMEntityColoring(draw)
+!define draw(e_alias, e_label, e_techn) IBMEntity(e_alias, e_label, e_techn, #232F3E, draw, draw)
+!define draw(e_alias, e_label, e_techn, e_descr) IBMEntity(e_alias, e_label, e_techn, e_descr, #232F3E, draw, draw)
+!define drawParticipant(p_alias, p_label, p_techn) IBMParticipant(p_alias, p_label, p_techn, #232F3E, draw, draw)
+!define drawParticipant(p_alias, p_label, p_techn, p_descr) IBMParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, draw, draw)

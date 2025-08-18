@@ -1,0 +1,13 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $snowblizzard [64x64/16z] xS61400000CXXFdRpkElMXu0001m
+
+!function $snowblizzardIMG($scale=1)
+!return "<img data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAAIGNIUk0AAHomAACAhAAA+gAAAIDoAAB1MAAA6mAAADqYAAAXcJy6UTwAAAAEZ0FNQQAAsY58+1GTAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAAOxAAADsQBlSsOGwAAA/BJREFUeNrtWktIVFEYvo5SQsgspCIkXPiIqFZRallZThZW2x62MgraREVCLSokhFwkiS5qVUFPokVQVPaAjDENKVfjwjGi6GVYYAZGRfYd+oXb75k59859zNzmfPAh596Z//7nu+ec/zEahoaGRjYjx8dnzQNrwQhYChaBc+neCPgOHAYfgQ/BD/+LAJvAJrDG5ve6wVPg7aAKUA2eARc7tBMD94LRoAiQD7aAB8GQSzZ/g6fBo+D3TBYgDN4BV0juTYJ9YBfYQ/v9E92bA5bQqtkAVibw7SlYD45logCFNLmlkrd3nVZFzKKtRfS2t0pW0XMS6XMmCZAHPgGr2PXX4A6wN0W7YiVcA4vZdWFvDfjTqeO5LglwEtzOrj2gsDfswO5b8AKtqhLT9fngTAqXaRdgHXiWrSaxGjaD31ywLw69G+AqthKqKDK8cmI85NLbN9t5CW4BJ1w8XybI5jDzvdWpYacCiLe8nJ30u8GvHoRXYXMPPWMKy8iHtAlwiI0vgY89TK6E7YvsWlO6BCikuG1Guw+pdbsk4yxMhwD1FP6mIJKcFz4IMMDCai754lsUWEj7/ABT/pzHy99gYdBcXIl6YxYlR6N2ExirWAkeB+sS3O/zsbR+xsZlFI0E74MnKN12RYB8Cjf7FFtmQGFnUpGFqu5bfVYd9Rw6wSOq4kl1BhRQfr9f8dlRamr4hY+KpR4in7toDimtgBngXVr6HKJrc5mW4hD4y/Afs8n/crAC3EmptxmraQ4iW/1hV4A2yeRFJtboVXMiBQjhB4nnKSSKv6Xs7GqjLWy5GqygUGO+H6VwM+6S83b2vB0UUE+imj2rSnJ4JtzXrcyhuPG3tzduZD7Gydc4E7fV6iG4wJjewGz0KL/3CsLXXexaDc1NKcA2SV3fYwQPUfI92dykh2AlG1/xac97cSZcBdcnmZt0BSyRtJ+CikHF3KQChNn4TYAFeK+Ym1SAPMXSDBK+qLa87AwQvfpiVnnFXXAmx+H9VFDExiNWVsCQpOEQVPBMNm5FgG42bgiwAA2KuUkFuMnGkQQFURDefkQxN+kZEKNqr5Z1e0T3d8yH+O6GvTD5zCvYmNVaoJk9SJSct2RhJAMRJl/LmWjNdhoiUeqomCF+mekPgAD95KsZnYlK+GRdnsOSGqAsAAJwH3toLinFXlFb3zP+/b3f6R72um9g/rz4f4KNycp4VU9QfHEt2BHAKNBBviftYVjpCotemmgwit/pWwIwcXHaH7NaxNn5XaDXmN50zERE3MzP01Hn+9o3CBlZDi2AoaGhoZHFyAlwfHfFng6DWgB9BnhWlwfCnt4CWgB9Bug8QG8BLUAW4w+jpc7UrCpEaAAAAABJRU5ErkJggg=={scale="+$scale+"}>"
+!endfunction
+
+IBMEntityColoring(snowblizzard)
+!define snowblizzard(e_alias, e_label, e_techn) IBMEntity(e_alias, e_label, e_techn, #232F3E, snowblizzard, snowblizzard)
+!define snowblizzard(e_alias, e_label, e_techn, e_descr) IBMEntity(e_alias, e_label, e_techn, e_descr, #232F3E, snowblizzard, snowblizzard)
+!define snowblizzardParticipant(p_alias, p_label, p_techn) IBMParticipant(p_alias, p_label, p_techn, #232F3E, snowblizzard, snowblizzard)
+!define snowblizzardParticipant(p_alias, p_label, p_techn, p_descr) IBMParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, snowblizzard, snowblizzard)

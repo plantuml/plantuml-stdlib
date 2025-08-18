@@ -1,0 +1,13 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $java [64x64/16z] xS61400000CXXFdRpkElMXu0001m
+
+!function $javaIMG($scale=1)
+!return "<img data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAAIGNIUk0AAHomAACAhAAA+gAAAIDoAAB1MAAA6mAAADqYAAAXcJy6UTwAAAAEZ0FNQQAAsY58+1GTAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAAOxAAADsQBlSsOGwAABBlJREFUeNrtWm1MjlEYfvqgfG9EKUy+GwsZC/MR2XwO5avy2R82/tj4Q5r88YPyW7YYU9gwH8MMMZtCYdHUIiJNtnxO0ZDr6Hrt7Ox5nrdWvT8659qunfd9znme897XOfd97nOe17I0hx/LdWCqZrbngCf8+SUZjNbI+GjabAVKFx+ACzQR4Krng7/uMcAIYAQwAhgBjABGAO/YAl4E53Y2AQJb2C4L7Ebe1HEGlCqldjNgBhgGvtY1BvzojMabVaAVLiDOC4aBd8DbNvVdwRXgfHAwr1WCV8AL4C+l/Wa61DXwvku/48BE8D14WKmbBSaBkez/I3gDzAW/tLcA68F4MMNGgJE0Mkq5PttqPmQpBBeDdVLdCHAHGAMudel3O59xULrWUxxkgMts2ieAaeBybu/bTQAn9OIoitlxj8vlc46ImA27wVjwOLhIui+PAog2fTl6KoI5+hZH1YMcGv8G3E9D68EpYDo4nDnLKPBrRwtg8YcUgSnKVH8CVnO0FnLUX7DuEVgGjqGRR2yeuwTsQ0EfS9erwHJwJvhBul7GQSgBQ8HVDs9t1yD4zWo+RUq18XOBU2AjP6tHbnkskx2evdZm9AV2gtMV4z0QAhfw83hfrQJiifzuUCdEqZF8VxWgiSMZodT1o3s0SULJqHP5PVUO/XWYC3ggTphHM7qrK4QdKug6k8E1YKZUt4r3iQD60qXPcPq6jNCOWAbdMBTcxwjco5X35lKAJEWAFMVNZIg+doEbKYBP8gAnRHId7w++BbOZMcrr8AHW2+EMl7gYPusVjZpG9zmttO8CXme9iD9HGfxqpTapdCufCLCHxolN0lT+KBXpLgLUMLmaw7U7i0uccKdbimEWXUUY38DymcO+pcUCtDUIxrI852C8JzZ4cwOLAshlrkt/xQ7Gt9qmtgrQxDLIoT4EHOLlGWfBnxzRKKa4YoTPu9wT5FIX40sBilgm2QSkMPpwrZdnfLaa39T4M8sTfn7ZIYt7yHIi3UbNHLMoeosRoCQdJ132AnaboQpG4xAem01iYrQNPMQM7gL3EWJq72X6+ttmJq0EB/F7GoObijK2G8DfJPw9joEvk/uSDeQE9ldgs5T+t7etQbCUCUs209oEKQHKoyh+XOrmce9gh0uMIaL+kyW9u7NJuuKZ4op+5TPKQi6flTR8q0vwbdc84C59dyy3wo0URp76iV6eIXy+dwv7q+Ysi+CId+cIl0ttMkifZoKlPj4zfEf69ESoXqcToWBuKQUGSqOsjQDCJ49J34tdglOnFKCBAojI+5QHG390EkAsS5usTg7zctQIYAQwAhgBjABGAH0hJ0Li3Vq+JnaLt1T/Xp4GSDMhXKOBF2cV4oVtiWVgYGBgYGBgYGBgoCXkf2/ka2Z7nDkPMLCsvzSt0CeUkqNgAAAAAElFTkSuQmCC{scale="+$scale+"}>"
+!endfunction
+
+IBMEntityColoring(java)
+!define java(e_alias, e_label, e_techn) IBMEntity(e_alias, e_label, e_techn, #232F3E, java, java)
+!define java(e_alias, e_label, e_techn, e_descr) IBMEntity(e_alias, e_label, e_techn, e_descr, #232F3E, java, java)
+!define javaParticipant(p_alias, p_label, p_techn) IBMParticipant(p_alias, p_label, p_techn, #232F3E, java, java)
+!define javaParticipant(p_alias, p_label, p_techn, p_descr) IBMParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, java, java)

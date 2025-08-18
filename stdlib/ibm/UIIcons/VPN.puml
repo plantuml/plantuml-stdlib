@@ -1,0 +1,13 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $VPN [64x64/16z] xS61400000CXXFdRpkElMXu0001m
+
+!function $VPNIMG($scale=1)
+!return "<img data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAAIGNIUk0AAHomAACAhAAA+gAAAIDoAAB1MAAA6mAAADqYAAAXcJy6UTwAAAAEZ0FNQQAAsY58+1GTAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAAOxAAADsQBlSsOGwAAAmNJREFUeNrtmb1Lw0AYxlNJwU3Rgh846ZAuWpwV3HQTFwWFdnJ1dfQP8M9QUNBFBAedFHSW+oEUVBzED9CiHUSxEt/gHRxHkl7Sa3PY5wcP5Jq7pHn63nvvpZYFAAAAAAAAAAAAAFqLlM9nT6QeoZ0hvQaM7ya9CO1nUq/Ux434nR5Jh6Rl0r3Pefl656SRkOu5Yc/c5jPgTGpnQy6erTE2Dn2keVKRNKDQf5g0GvdmKgY4IeOdBhjA6SKtKvYt/EcDPCYU+3kRY8e5gZ2AAaka58U526/4HF7OmiLt6YiAK9J3DAO+2dikKOiaAl+kktAeCogUm53jlNjYpJgmdeowgC8tnLT0oKIx6YAxSdBOmtNlgEoeaHQCVKUoHOcbZUC2STVAHNaE47GAaP3XEbBBqgorTF6HAV4JWo5gQDmgbG0GXul+IE2DVL0GyL9oLQOS+vU568LxIGlctwEZtvERN0EZgwzYIb3HqQlsRQN40jvRkACj7A4fFPt9krZJi6w9S1pin2uJADnkm5UAj2KuBh2kmXqnwCXpR8GAH9ZXN2X2TkCVY9Jt1JogzIAP0rWCAdesry68FyKbpFzElcWVkuGkz8uZSDmAl7dODQOilsApq3F4Bqywe3jPtlBPBMhzm2+K5E1Q0iuAyI2QqJVWgygG8E2RvAkyyQC5JsjpNICHviklcBBbKsufqgF3pIpUC4g1QIX1MYk30q4uA1wpyTk+CdC1zGNNlwF+ewLH4PDn7Ft//1G0rAFVVktoNyBj2Cao7mmgYsBFwDx32TlTObWSf08JAAAAAAAAAAAAAIzjF2gCfUSjLC1fAAAAAElFTkSuQmCC{scale="+$scale+"}>"
+!endfunction
+
+IBMEntityColoring(VPN)
+!define VPN(e_alias, e_label, e_techn) IBMEntity(e_alias, e_label, e_techn, #232F3E, VPN, VPN)
+!define VPN(e_alias, e_label, e_techn, e_descr) IBMEntity(e_alias, e_label, e_techn, e_descr, #232F3E, VPN, VPN)
+!define VPNParticipant(p_alias, p_label, p_techn) IBMParticipant(p_alias, p_label, p_techn, #232F3E, VPN, VPN)
+!define VPNParticipant(p_alias, p_label, p_techn, p_descr) IBMParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, VPN, VPN)

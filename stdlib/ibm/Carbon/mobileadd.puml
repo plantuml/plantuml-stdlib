@@ -1,0 +1,13 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $mobileadd [64x64/16z] xS61400000CXXFdRpkElMXu0001m
+
+!function $mobileaddIMG($scale=1)
+!return "<img data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAAIGNIUk0AAHomAACAhAAA+gAAAIDoAAB1MAAA6mAAADqYAAAXcJy6UTwAAAAEZ0FNQQAAsY58+1GTAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAAOxAAADsQBlSsOGwAAA5ZJREFUeNrtm19IFEEcx0ct6yERKgwtIUgyDA+ikLyCEBKSyLQkQy4CQSXoqcLoQQp6Sug5LCjIPyREmT74IBRBZ+JDRIJk1FOlZJqEgv0h7DvsV8hs19u72525dgY+nNzuzm/uOzO/2d/8RiECXtI8qvcUqNfst94G7X9/me6RsToQ0ujHh9imZWWVh0aHQYUmAvTbXUgPug8wAgRdgGT5gI1gP9gGCsAufn8DvCXPwPT/JEAmqAUnQTlYDX6Cj+AN7zkENv9xbQDcA93gRyoLcBRcZ48PgSvgAXhtc/8OcAwcAXfBZXAePEq1F6H1oJM9K4f0RTDoso4wuMYpI5enCPji0zK4bFnOcFGJ7O3HYCc4zR58H0dj5DN3OFrOghNs4IyHAkT42RnvKlAEnnPe7+McTrR0s65M1l2k6zKYDR6CObAXjCTR/gjrnKONbN0ESGMAkUvHN+lBGyZZdy5tpekkQA09d0OSe/5fI6GBtmp0EUA6yKsgGsec73cKQBx8QpQ2M3QQQHrO7aDZxw5pps2IDgLUMaQd9FGAQdqsUy1AFjgAehSsTD20naVSAPluvwb0KhCgl7bLVQpQCL6BUQUCjNJ2oUoB5Jo8oTBGmWAblEWD0vj4Cs8+cbgWiuGeModr434JYHaEHIbg7hWeLYsn/Iyx5IEXKkeAb3NQtQ+yE2AMrFUUohbR9phKAeTe3XdQqUCAStoeUCnALHgKqhQIUEXbs6pXgS5QIqw9PL9KmDa7dAiGOoS1vd3qowCttNmhgwC/QIuw9u1qXdZbEccSWEtbLbStXABZ7oM+cAsUe9iOYtroo02hiwALwjrsINdkmcTI8aANOax7grYWdBJAlq+gGqwTVhaoOMk9P8S6q2lL6CbAYohaKqx8XjQOn2A356Oss1RR6O1q83GGy9MecAkc5Nua2+xQmPWcY7R4OIbIM9Fimxlyu/s6z0peguPggrDyhJvAZzBl85xMjjZymZOJUZkprqfHn/eho20FSCQJ4ZQeXxwV+UKP9LhtdJrI+QD5A9rJBmFlewtINe+R6S55OOKdsLLJU6myH+C2TIuluf6t/Dyj+4aIOSRlBDACGAECXbw8K1winPMCfhaZpxg2I8DnEWBOixsnaAQItg9ItEj/cZN/Nwr3h65SfgS0gS2kzUyBAArQBD6QpiD6ADnn880qYAQwApho0MtoMMPDkZWnUUd/EtY/a70SpiwtvwH4Z7aWhsbR2gAAAABJRU5ErkJggg=={scale="+$scale+"}>"
+!endfunction
+
+IBMEntityColoring(mobileadd)
+!define mobileadd(e_alias, e_label, e_techn) IBMEntity(e_alias, e_label, e_techn, #232F3E, mobileadd, mobileadd)
+!define mobileadd(e_alias, e_label, e_techn, e_descr) IBMEntity(e_alias, e_label, e_techn, e_descr, #232F3E, mobileadd, mobileadd)
+!define mobileaddParticipant(p_alias, p_label, p_techn) IBMParticipant(p_alias, p_label, p_techn, #232F3E, mobileadd, mobileadd)
+!define mobileaddParticipant(p_alias, p_label, p_techn, p_descr) IBMParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, mobileadd, mobileadd)

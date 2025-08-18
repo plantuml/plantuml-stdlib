@@ -1,0 +1,13 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $train [64x64/16z] xS61400000CXXFdRpkElMXu0001m
+
+!function $trainIMG($scale=1)
+!return "<img data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAAIGNIUk0AAHomAACAhAAA+gAAAIDoAAB1MAAA6mAAADqYAAAXcJy6UTwAAAAEZ0FNQQAAsY58+1GTAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAAOxAAADsQBlSsOGwAAA69JREFUeNrtm01IVUEUx6csSvrcFH0QEmWLRCmCWoUW8oRcWARmURapEZWLitfOjYaBggZBmxQyMXuQ1VsUEpGIqz7AspKgUCqSalOo0bf1P7y/8DbG896ZO1ecAz/wXvGe8/5z7jkz80alprnNMPjsLs3P22YiyJnKmTNXAzTberADrALLwFKfz/sEPoB34A7oD6MAs0EFOAnWgl/gPYP+4/PZaRRzJf28Bo3gEv1YF2AraAaZ4CZo50h91ZxZ85hZe8Eu8AqUgR6bApSDi+AJqAQPAnp1t4ALYAM4BppsCFDONGxl+v/g/XQQAds114D74C74xvtz6P8A/Td5fb+8pn0MXAWlfM9lTnGCr4Gk5mqK8tenAAtBHp95BHwHj8Fv+loDzoBu8DaIDJBC9AJ8oRDyIefz3S8E10A96NWc9htBFJSA26wFo8wEqQOLQdZkC6OXDDgK9oPd4A1H/jpTfh84y5TVbfLMDvAcnAKbmIWSCX3Mgo/gkempsLS6eFLBO86RL2WApq2DvgrpWzGWOGMzuhbIYp9vSyp4VRyJID58sggx+k7nvTbGlmVSgALwE3TyWqr9ElBnYRZbR98RXncytgKTAmRwhjfKa6nOQwYKXirWS995vB5lbBkmBVhOp+Mm09NBi2uZQcYwbkOM0ZgAC8DIf66DthHGMNG12xBxAjgBnABOACeAE8AJ4ARwAkxgszQ8Y7PS/z1gqpYDHtoUQPYE51ocwD7GYE2AVuJqwHSuAWKyQ5vPn++pxA6xCdPuR4cAsg2+Bzzj9WFQpBLb1zrNiB+/ApQwqEOghfcOgsvgFoPWYcb8+K0BEY5IS9K9Ft6LaBx9Y37cTNDn38uXldlMR5WUmtn8nS4z5sdvDZB3byffxdO8J0HFNL7/Rv3o6AJSoOJJ7emcoTZoxI+ueUC7wd5v1I8rgk4AtxaYUut/7fsDaR4yZkWIB1ROiFzhPoEzZwFb5lT0pasLyOzsJcgN4MPn0ld+WASQQtoAniqf53ZTtB76alDeD3pqFaCCCxM5ojYWgABj9JVN31YFWASqwQ2VOKoalHXTZzVjsCaAnNOTs7xRC0U3St9VtgSQSixH5M+DAQsCDNB3pZ+u4EcAORD9GdRabL21jKE+aAHkYHQR02/YogDDjKGIMQUigLSeRrai5hBMwJoZS6OXtuhFgDKuuoJqe6m2xRzGZlQAaTk1KvGfGmFaEncxpprJtsXJClBMB1EVPosytmLTjtaFeEEW5tjCaf8AaTPNE4ULIjMAAAAASUVORK5CYII={scale="+$scale+"}>"
+!endfunction
+
+IBMEntityColoring(train)
+!define train(e_alias, e_label, e_techn) IBMEntity(e_alias, e_label, e_techn, #232F3E, train, train)
+!define train(e_alias, e_label, e_techn, e_descr) IBMEntity(e_alias, e_label, e_techn, e_descr, #232F3E, train, train)
+!define trainParticipant(p_alias, p_label, p_techn) IBMParticipant(p_alias, p_label, p_techn, #232F3E, train, train)
+!define trainParticipant(p_alias, p_label, p_techn, p_descr) IBMParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, train, train)

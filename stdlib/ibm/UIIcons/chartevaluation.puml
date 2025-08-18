@@ -1,0 +1,13 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $chartevaluation [64x64/16z] xS61400000CXXFdRpkElMXu0001m
+
+!function $chartevaluationIMG($scale=1)
+!return "<img data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAAIGNIUk0AAHomAACAhAAA+gAAAIDoAAB1MAAA6mAAADqYAAAXcJy6UTwAAAAEZ0FNQQAAsY58+1GTAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAAOxAAADsQBlSsOGwAAApdJREFUeNrtm11PE0EUhsdSwdZ45w3+AX4GBj+j0QuJFiI3ENAoBo34rSEYwRAS0hBChBBjjNRYv1L5+AH+GG+98FqB94SzyWad3U7pbrd7Zt7kDe2Z2Wmfd3dnO1uqlJOTk806pKntGvQRo5ztR4ALwAXgAnABSNcAvA536BrzwuFLPnhivQ7/s+UIIPiKb8/T8/e2nAJBeMV7ftOGAMLg6fCvSg+gIXgbrgKR8BKvAh5ohf9Gwku9DFZDHlsTgBF41ucA2nEf4WtxDJRF+E9wP3xV7d+wqR50sKwdAYcZtt8XBk14gzYEQPCf4SuBOl3zz0s/BTrhL/BlTdsHeFhyAAT/Fb6kaaPFzQi8IzWALvgbfFHT9g4ebQa+3QMg+O/wBU3bW/hGs/CtmgTH4G34SAPbUN9aCPwaj7kTx5tLOoCb8AqD1AxDoD4/Qmb2VR5zN643mGQAt+E3vtc4B2/AhYhtCtznrKaNxroVJ3zSAfSo/79WOxMRAtU2uU9Qy/B43PBJB3AXXtTUT8NbcNFXK3LtlKb/EnwnCfhWzAH34LKm3scT41H2NteCogAnkl5YJK37PGNPBuonGZzUq9muzNuqLARQqrMOf8AhPAzUe0P6L/A2KgsBeF8+1LsZ8YhDeFxnvHmDPm0TgAfvjbNeJ4QnHMLTkPa5iLZElIsR3lTP4FlN/XWr4ZsJQAf/Fx4yvDvzAn7lez4DP09jwZFPAd7TlO/z/HRaK658SvAqbfCDnAJxw7eFcjbDmwYgFt40ALHwpgGIhW90EhQH30gAIuFNAxALbxqAWHjTAMTCN7sadAG4AFwA2Zfu90C/4BO2MOuOgJ+2nwJ09/a3LQHofkTwR+3/C1o3fBw+Joz5pXJycnJi7QGVVn/XYlnnMwAAAABJRU5ErkJggg=={scale="+$scale+"}>"
+!endfunction
+
+IBMEntityColoring(chartevaluation)
+!define chartevaluation(e_alias, e_label, e_techn) IBMEntity(e_alias, e_label, e_techn, #232F3E, chartevaluation, chartevaluation)
+!define chartevaluation(e_alias, e_label, e_techn, e_descr) IBMEntity(e_alias, e_label, e_techn, e_descr, #232F3E, chartevaluation, chartevaluation)
+!define chartevaluationParticipant(p_alias, p_label, p_techn) IBMParticipant(p_alias, p_label, p_techn, #232F3E, chartevaluation, chartevaluation)
+!define chartevaluationParticipant(p_alias, p_label, p_techn, p_descr) IBMParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, chartevaluation, chartevaluation)

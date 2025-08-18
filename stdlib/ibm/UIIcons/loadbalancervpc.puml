@@ -1,0 +1,13 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $loadbalancervpc [64x64/16z] xS61400000CXXFdRpkElMXu0001m
+
+!function $loadbalancervpcIMG($scale=1)
+!return "<img data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAAIGNIUk0AAHomAACAhAAA+gAAAIDoAAB1MAAA6mAAADqYAAAXcJy6UTwAAAAEZ0FNQQAAsY58+1GTAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAAOxAAADsQBlSsOGwAAAq1JREFUeNrtmUFIFUEYx/f5Xh7SPAiCinnwKoEgJHhRSe2kHbWCTo/UokMXBU+CNy8iaHXQg0LUpaBLoQXmqUMUQr2uwVNRSA3KLoU+/x/vE57Dc3fd5s3um/f94XeYnZmdmf/uzH4z6zgikaiUFQuhzWaQBL2gka+lwQqYBylbDbgApsEwiJ9R5hA8AQ/BPxOdihsafDl4AwZAmUs5yrsK2sFzNsQKA2Z48H7VBKrB60J3LGFozg8r1zbAGFjldBeYAg05ZajO40KvCSbegHF+pU+0CVrAR3DAfAWL4DaoypkOf8FyITtXZsCAHiU9CvbzlNvnPLe6RWlAo5Jecym75lG3KA2ItEwYkFbSHS5lOzzqFqUBb5X0FH/iVFVzXq5WbIgDaNUfyjGbVvlbYAfsgkrQB16Ay0pUeBf8sCEUngX3A9R5YEsk+I5jgaZzlL8DjmwxgF7nZzzPW13WHir3iAdvZDMUhe1whkPjZd4Of5NTCpFIZEqxkNq9BH4p1yhA+m3jXsDPDtHIzi9KBvT4vGalAXGOA1QlDQZmoRowwsFQvgBpJIynYVLXwJJLu93gA/humwHUzj0efLlHuUHwE3zmMLloP4OVvLL38vxuPmf9FO8N6FCEToYOwjSAzuvptKYT1GloN5On7YymB7IN3jvZE+ZNHYsgDX4d3NQ0+D3Qn+d6P+f9r+q4r+vO6R8tgdcA+jvTpqFj9JNjgTv3CUwo+fRT5ClPnSsa1qeLoBa8dCvk59dYZ8AO/HGy53lfeK//yscrueVkzw8nwQ1wnc2oARUB+uDZdz8G1IewfyCj5pgg68tZfY9MKBwZiQFigBggBogBIpFIVKqKecTSOs8UInlf+QyKASWuRIC5qOukNhL3lSkgBsgaoP0761eRuK9MATFAJBKJSljH3x5xVXk/wAgAAAAASUVORK5CYII={scale="+$scale+"}>"
+!endfunction
+
+IBMEntityColoring(loadbalancervpc)
+!define loadbalancervpc(e_alias, e_label, e_techn) IBMEntity(e_alias, e_label, e_techn, #232F3E, loadbalancervpc, loadbalancervpc)
+!define loadbalancervpc(e_alias, e_label, e_techn, e_descr) IBMEntity(e_alias, e_label, e_techn, e_descr, #232F3E, loadbalancervpc, loadbalancervpc)
+!define loadbalancervpcParticipant(p_alias, p_label, p_techn) IBMParticipant(p_alias, p_label, p_techn, #232F3E, loadbalancervpc, loadbalancervpc)
+!define loadbalancervpcParticipant(p_alias, p_label, p_techn, p_descr) IBMParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, loadbalancervpc, loadbalancervpc)

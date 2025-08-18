@@ -1,0 +1,13 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $securedata [64x64/16z] xS61400000CXXFdRpkElMXu0001m
+
+!function $securedataIMG($scale=1)
+!return "<img data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAAIGNIUk0AAHomAACAhAAA+gAAAIDoAAB1MAAA6mAAADqYAAAXcJy6UTwAAAAEZ0FNQQAAsY58+1GTAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAAOxAAADsQBlSsOGwAAAyZJREFUeNrtm1tIFGEYhsfWiM6IFUVhESSkoVBZUNDhxux0kXZliZBEhFdSEFFJUBdhhN12UTedIBICkQ50wEooCTqQptaFgVHYRUVRUdj2/u27sEw7p93Z2dl/vw8ehl1ndv73nX/m+/5vV8PI8ygwvW4AuzTXfA6cj78YZ/pjPagIcDAVWThffeIbhUl26gUbAxrQdW6DPp9hNQPyLsQAMUAMEAPEgHyOwhCMYQW4F2Ah1CszIGQzIBuVp8wAMUAMEAPEADFADJBKUGaAVILyEBQDxAAxQAwQA6QOkEpQZoBUgv/iF5ig8QWfSI2WBnwFUzQ2oIgabQ2Yls8GjIAS4//fDukSxdRoacAg75MSDcUvBJOo0dYAFeUaGrDcpDGpAf3gM1ijoQFV1NZvVweMgW6wXsNKsJzaxpwqwdtgGZir0dWfCmZSm2MleAW0G7EfFJ7UpBLcByqpzXE1OApugEaN0mETNY26XQ6f4T2zWQPxNWAxNbnuB3SBZ+CgBgYcpZYuLwZEwXGwCmzPYfHbwEpqiXoxQEUH09MpMDkHxatF3Wlq6LDayakh0gxmB5QN/I4THHuz3U5OBrwCrWAvqM0h8bUU3koNluGmI9QG1oKzYAi8zIFKcKkR6/60Oe3opieoHh4NzKHqQ+eF+Mqram8d+MAxR50O8FLoLAA94BuoBm99GLCf/zEyH9zhcn41GHZzkJeu8DCFq6frAxYXYYkycJ/iq92K92qAij66+wM8AnUhEF/Hsfzk2Pq8HBxJ4YRqTX2ZDYZDYAZ4aJi6rS5jJ7cXU1zhtfNBdxdsAe+9fkgkRdfVDLjE7X4unNS0GwjIAJXmOtm4OcyU9z0VIZE0p18PqyxVMh8Am4xY0/FNhgyoofEt4CnYCq6lI6DA53vxCNfdA6wbLjAlpZMF5oAdYDcoBc/BMbvyNlsGxENdlT18Go8HT8BN8Bi8MKXPZAaodKu+xKzijFJFzW9wi0vaTj8Hm8mGxyyuJDewkpzO97+AT+BdQiod5JUu5sMtvl83zbuarJkRdgPM6XYJWMRpXJpQuan4yO0Qec2S+48hkdn4C9arnEEJ7l79AAAAAElFTkSuQmCC{scale="+$scale+"}>"
+!endfunction
+
+IBMEntityColoring(securedata)
+!define securedata(e_alias, e_label, e_techn) IBMEntity(e_alias, e_label, e_techn, #232F3E, securedata, securedata)
+!define securedata(e_alias, e_label, e_techn, e_descr) IBMEntity(e_alias, e_label, e_techn, e_descr, #232F3E, securedata, securedata)
+!define securedataParticipant(p_alias, p_label, p_techn) IBMParticipant(p_alias, p_label, p_techn, #232F3E, securedata, securedata)
+!define securedataParticipant(p_alias, p_label, p_techn, p_descr) IBMParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, securedata, securedata)

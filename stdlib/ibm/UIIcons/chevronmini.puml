@@ -1,0 +1,13 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $chevronmini [64x64/16z] xS61400000CXXFdRpkElMXu0001m
+
+!function $chevronminiIMG($scale=1)
+!return "<img data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAAIGNIUk0AAHomAACAhAAA+gAAAIDoAAB1MAAA6mAAADqYAAAXcJy6UTwAAAAEZ0FNQQAAsY58+1GTAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAAOxAAADsQBlSsOGwAAAJdJREFUeNrt0DkOQkEQQ8ERF4ejExEgtr/MSLS7KnL6PAYAAAAAAAAAAACkuT7GpWn8resBT/HdDniJ73TA2/guB3yM73DA1/j0A37GJx+wKT71gM3xiQfsik87YHd80gGH4lMOOByfcMCp+OoHnI6vfMCU+KoHTIuveMDU+GoHTI+vdMCS+CoHLIuvcMDS+H8/YHk8jHEHPAkXlwd5OBwAAAAASUVORK5CYII={scale="+$scale+"}>"
+!endfunction
+
+IBMEntityColoring(chevronmini)
+!define chevronmini(e_alias, e_label, e_techn) IBMEntity(e_alias, e_label, e_techn, #232F3E, chevronmini, chevronmini)
+!define chevronmini(e_alias, e_label, e_techn, e_descr) IBMEntity(e_alias, e_label, e_techn, e_descr, #232F3E, chevronmini, chevronmini)
+!define chevronminiParticipant(p_alias, p_label, p_techn) IBMParticipant(p_alias, p_label, p_techn, #232F3E, chevronmini, chevronmini)
+!define chevronminiParticipant(p_alias, p_label, p_techn, p_descr) IBMParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, chevronmini, chevronmini)

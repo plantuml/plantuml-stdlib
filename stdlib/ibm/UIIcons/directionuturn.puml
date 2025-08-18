@@ -1,0 +1,13 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $directionuturn [64x64/16z] xS61400000CXXFdRpkElMXu0001m
+
+!function $directionuturnIMG($scale=1)
+!return "<img data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAAIGNIUk0AAHomAACAhAAA+gAAAIDoAAB1MAAA6mAAADqYAAAXcJy6UTwAAAAEZ0FNQQAAsY58+1GTAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAAOxAAADsQBlSsOGwAAAptJREFUeNrtms9LVUEUx6cUaVWaLcJahKgQraTIlejKFhW0MdvpylUtI3kuvAq1aVkroXAluLXXwqSgRYT+A4G6aCOKqBlSQWr0nd4RhuG+5nnvmWaunS98eNxzvWfe+d75ceddlRKJRCKRSPS/6oTn/NfBbXAZnAcXKL4K1sEn8AosHicDzoCHYMgo2CVtyBR4Cr4W1YA68ACMgnMZc2yCx+AZOCiSAY1gBvQx5XsDBsBOEQxoA69BR8q5bVAmPtO4VzQfXAK3iLMp1y6Bm2AlZgOawAJot+Jb4Al4Dn46cjSA+6AEmq1zy6ALfPFlQF2Oa+vBLLhmxd+CHvCuxnGs/+YjeAGuglbjXDPlnwa/YjNAz/TDVuwluAe+Zcj3gwq9CDqNuDbkO/jgw4CTGa/Td2bEis2TIfs5vs8+5Zi34iMpwyOoASWa+Q+1Ae4yLV0HlGvDWmVKsRigx/6gFZtgXrJ2KKepQWo7uAHdVndcA5Mebs4k5TaHXXcMBtyxjvVKsOfBgD3K/be2gxhwxToue3xOKTvaDmKAvcHx+aS24mg7iAEtKTs5X1p1tB3EgNPW8a5HA3YdbQd7Djg2EgPEADFADBADxAAxQAwQA8QAMUAMEAP+sR6pylsfbnVR7ppUH6j4MZCoyqvwG6ryeo2r+DlVeUV/CozH2AMOi1f0ReeYeoJZvKI2xoowB3CYYBcf9RwwbvQADhOqFZ/EOgQ4TchVfOghkNeE3MXHMAdkNYGl+FgmwaOawFa8VpZ/kEhSCsir9/TZa8T0Ot5Pn6b6uYqP7VG4Wk9QjliS5ybEthdIM8HVG3P1wBg3Q7WakHAMv1h3gy4TWIqPfTtczQS24ovwe4BtAmvxIbfDRzWBc8kViUQikUgk+qPfPCh8129tHNYAAAAASUVORK5CYII={scale="+$scale+"}>"
+!endfunction
+
+IBMEntityColoring(directionuturn)
+!define directionuturn(e_alias, e_label, e_techn) IBMEntity(e_alias, e_label, e_techn, #232F3E, directionuturn, directionuturn)
+!define directionuturn(e_alias, e_label, e_techn, e_descr) IBMEntity(e_alias, e_label, e_techn, e_descr, #232F3E, directionuturn, directionuturn)
+!define directionuturnParticipant(p_alias, p_label, p_techn) IBMParticipant(p_alias, p_label, p_techn, #232F3E, directionuturn, directionuturn)
+!define directionuturnParticipant(p_alias, p_label, p_techn, p_descr) IBMParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, directionuturn, directionuturn)

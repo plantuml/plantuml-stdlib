@@ -1,0 +1,13 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $rain [64x64/16z] xS61400000CXXFdRpkElMXu0001m
+
+!function $rainIMG($scale=1)
+!return "<img data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAAIGNIUk0AAHomAACAhAAA+gAAAIDoAAB1MAAA6mAAADqYAAAXcJy6UTwAAAAEZ0FNQQAAsY58+1GTAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAAOxAAADsQBlSsOGwAABIRJREFUeNrtm3toTmEcxx82LOY6dyVCGkZh5X6JchlGast//pH7/ZIShigmlIQSUe7MJLTcLxO5j0JuUW5ji7k0zOb7a7+3nj2ds3POznmf9z2cb33qnOc9nj3P97n+nnMIEShQoP9Z1TT+rbpgMBgCkkAjhlTIPADnwAXw9V8xoD9YAFJAjM1/8wecBOvBFb8a0B1sAb1c5nMdTAd3/GJALFjC1PAoz99gNVMSzQbUAcd5nKsqAzdADsgFT0E+qA6ag3ZgAA+Vbib50/yQCr5HowH1wCnQV0kvBUfAKvDQZl7JIAOMNPgtl9OLoskAasWzPMvLeg0mgGtVzHcY2AOaKum0Sgxlc10pxiMDqLUmGnTXIdzVq6rnYB+vJK2k9LbceBejwYB+YCf3gpCu8lj2Yi2nPLK42zdT/u557mWuuq5brVWMfMGV/+Hh/FLIwyFfaby1XoxdN6JC9VFm+kleTVCK3oHZSlofLkPEDFio3O/lbhkuHQBnLMqgzYCGYKCStknD1nqjcj+Qy6LdgBTe9YVEm5zbGgzI4XlG3nmm6FwF2vCSNx8kSOm7eH0Ot2ie6QR6Smld2Ij34HO4DOgMdoCtYLhSedI6l2u+EzXhLXFICVymORyEUVj90W7gYmeYZHBwU9mQydN4tnC3kt/GgFEcOGVY7RatDIgDR0325KoKNBrw0kajLQU9wHhQXJVYgDI5xBnI+sbpZMx98EZEVq04eqRypoF45fejnF7q1IDl3IVkUcXngrciOtWSl8k0g1hlhZNJsAMHIbFKJjOEprM6F3HDEb4eJKX3Bgd5S23LgG2gq3S/3e2OS7MugRbSUhnLhy6H7WyEGitLzCteXvymOVz2kFK5bpYG0PipqUR7xT40oFiJFmsazA2GBiRL16U88flVh5TZP9mOAUnS9UPN67vXKhAVzyGT7BjQQLr+IPyvDyZ1MzVA7jIl/4ABJSZ1MzXgqxL5+V1tTOpmasA96bq9QdTnJyVwHYzqZmrALem6htHS4SOliYqv527ZMYCCh1/S/WJQ24eVr81lD+kX183SADp6zpbuW4NMHxqQyWUPKVtUPFavNBagE5VJUjBEG4gy3mP7QcvAIun+J0g32tPEVLKBoN4hv+sbzAHSZT4TiEZRwLMbTFPS6cVslpNwmESvt+iwMVFKS+SQuLU0rr5EsMLVeJmj12R0SLvLYLdHFZ/FPdjRgQipFjgGRvh0FTgNxvEQEE57AIm+1dnP7vUX3rxL1CEq90owxWo36+T7ABr/dKw0NsorT7M9Hefl2R1DTkU7q9Gi/N1/R5544iNUWZqM6WXIE1H+PcIJ8EwEChTIrmI8zi+O8/wTJc9rNSCdt8rLeSd5M8LP25JX6zp9CE2fxdbn8HONhbnhfl67ATOVg5Mii24a7ue1GkCtM09J2xbB57UboLYOjc/NEXxeqwFGrbNBmL9ADffz2g3wdeu7NcD3re/WAN+3vlsDJjtsnXA/r92AMoetU+rw+bJwt77brfAjUX4W9wlMFdb/G+Sxw+ed5h8oUKBAjvUXiDMNdUt1DgIAAAAASUVORK5CYII={scale="+$scale+"}>"
+!endfunction
+
+IBMEntityColoring(rain)
+!define rain(e_alias, e_label, e_techn) IBMEntity(e_alias, e_label, e_techn, #232F3E, rain, rain)
+!define rain(e_alias, e_label, e_techn, e_descr) IBMEntity(e_alias, e_label, e_techn, e_descr, #232F3E, rain, rain)
+!define rainParticipant(p_alias, p_label, p_techn) IBMParticipant(p_alias, p_label, p_techn, #232F3E, rain, rain)
+!define rainParticipant(p_alias, p_label, p_techn, p_descr) IBMParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, rain, rain)

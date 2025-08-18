@@ -1,0 +1,13 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $scales [64x64/16z] xS61400000CXXFdRpkElMXu0001m
+
+!function $scalesIMG($scale=1)
+!return "<img data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAAIGNIUk0AAHomAACAhAAA+gAAAIDoAAB1MAAA6mAAADqYAAAXcJy6UTwAAAAEZ0FNQQAAsY58+1GTAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAAOxAAADsQBlSsOGwAAAw1JREFUeNrtWjtoFFEUncyuhQpCIihiGtHCWpBNIVpYiNjENigGYkw1CwmmUtGsSStCGqMkiKbQyoDiIlZqYbCwE2KVykiaFMFPIWQ9g3dgGOZ95n3GYfceOCQz73HfmXPve/NmdoKAwWD0Mvr+49idKmgJe70C2AA2gA1gA8rGLnAs5/wYtXX1bfAguAIOCdpXwWFwsyxBtZIz/0Zy8TEGwVPgE3Cn26bAqOLiEwxR38pOgbPgA/CY5dhtcJz+fwSet4y3Dk6Ab31WwD7wuYOLD0jsN+KEg3hHwGek0ZsBEbi/wne1AdLoxYDY2SmHYhfAw8QFh3GnilRBkTXgBjgraLslaUsQz/eHmmNdo3VBhpvgXUnbnMsKUGV/UsP1x3SfV2GV+qr0TLqoAt19wHXwQup4C/wN7qbj+O8v8L0kRnxff0X3+UHFRmhboWdaQ89P8IOLCsjL/j1i0SqId3inBVvhq9S2aZD9PD1aVaBjQESra9rteeJWZgVuasT7Ay7lnF+kNhWaBfREtgaIsr9NNKkCG4iyL9KjrILQMPsJTKvAFE0DPZGpAbLsJyizCmTZl+mRVkFokf2yq6BpoScqaoBO9susAp3sG1VBaJl947ln8AziRU9omX3juWf5DOJMT13D7YD2+bMFhSeuzznOvlM9oeChxRXGKxJDGCvPgH6HA/ZXJIYwVp4BGw4H3KhIDGGsvDXgE3g8dbwMXtYc4Cl4KRPLFl715FXASuZ4BGxoDNagvrJYJvCqJ8+Al+Bapk9bMWiD+qTjrVEsW3jVUxO8uFgn9/pSLxhGwaO0wfgB7gFPgjPgfXBvKkaH+n+ViLyTOZ6RvEjxpqcuGPQ12AJvZ/peIarQohiu4E2P7JXYO3LuTKD/8rRDGWhp9NWtAK96ahqDfgRPgAcUfb/Q6rykKa6oAV706DoZLybnwIs0+CE6/x38DL4I/v3wWeQHTZuPpJzpqWsOuEOrajuoBpzp4S9E2AA2gA1gA9gANoANYAPYADaADehJmHwp2umma+IpwAYwGAxGD+Mv9O3UM4OeW4gAAAAASUVORK5CYII={scale="+$scale+"}>"
+!endfunction
+
+IBMEntityColoring(scales)
+!define scales(e_alias, e_label, e_techn) IBMEntity(e_alias, e_label, e_techn, #232F3E, scales, scales)
+!define scales(e_alias, e_label, e_techn, e_descr) IBMEntity(e_alias, e_label, e_techn, e_descr, #232F3E, scales, scales)
+!define scalesParticipant(p_alias, p_label, p_techn) IBMParticipant(p_alias, p_label, p_techn, #232F3E, scales, scales)
+!define scalesParticipant(p_alias, p_label, p_techn, p_descr) IBMParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, scales, scales)

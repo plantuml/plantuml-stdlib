@@ -1,0 +1,13 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $filtervariable [64x64/16z] xS61400000CXXFdRpkElMXu0001m
+
+!function $filtervariableIMG($scale=1)
+!return "<img data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAAIGNIUk0AAHomAACAhAAA+gAAAIDoAAB1MAAA6mAAADqYAAAXcJy6UTwAAAAEZ0FNQQAAsY58+1GTAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAAOxAAADsQBlSsOGwAAAdVJREFUeNrtm79Lw0AUx69qqWNBlIC66KTgJg7iUhBUcBA3QaggCOIibg7u6uKooIOI/4KrvwbBxUkHXUQc/EHdLB201O/BG0KIaRIzyLvvFz4cd9dLcy+Xy70HzxjKbbUqm08fGAe94AV8NRuQUzT5HbDqq3+AWXDpwgqYB9tgE0yBIynLYDdqJbQoMcASuAPr4BPcg2XggZmogRoMYFfxCLgItF/Jkx+NGtwW4w/OYt5IKebvsr5eJyiASqC9IftAj/YV0C5lPaSv7utPvQJKGd9w1terSpkP6cv7+tWugIpsfF7I5DvAo3YDNORbPxH4rE9K/dyFc8A7WAFD4A0Mgz3wDNbESOpPgvYssAWKUr8Bc+DBJd+mIP5AN908ioqlnLL5FAW76z+5ZoBB8TO6wPcvJ0O17vAAOBWX+CDJQA0G8OTJ34LpZmf/NM7Qf9cr2ADHoJZ0sIZ4gNV+Wutp2QNSS0M84E9yfgXwFVAyjzHQ7zsQ2QNeWeo2YnSi3QCLYCHQdijldZQBKIpiPIDxAMYDGA9gPIDxAMYD6AwxHsB4AF8BxgMYD6Aoyi0xX0DR5JkvYJgvwHwBv5gvYJgvwHwB5gsY5gswX4D5Ai75NswXSKofy0R9WTx44+QAAAAASUVORK5CYII={scale="+$scale+"}>"
+!endfunction
+
+IBMEntityColoring(filtervariable)
+!define filtervariable(e_alias, e_label, e_techn) IBMEntity(e_alias, e_label, e_techn, #232F3E, filtervariable, filtervariable)
+!define filtervariable(e_alias, e_label, e_techn, e_descr) IBMEntity(e_alias, e_label, e_techn, e_descr, #232F3E, filtervariable, filtervariable)
+!define filtervariableParticipant(p_alias, p_label, p_techn) IBMParticipant(p_alias, p_label, p_techn, #232F3E, filtervariable, filtervariable)
+!define filtervariableParticipant(p_alias, p_label, p_techn, p_descr) IBMParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, filtervariable, filtervariable)

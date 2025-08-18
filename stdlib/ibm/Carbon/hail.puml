@@ -1,0 +1,13 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $hail [64x64/16z] xS61400000CXXFdRpkElMXu0001m
+
+!function $hailIMG($scale=1)
+!return "<img data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAAIGNIUk0AAHomAACAhAAA+gAAAIDoAAB1MAAA6mAAADqYAAAXcJy6UTwAAAAEZ0FNQQAAsY58+1GTAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAAOxAAADsQBlSsOGwAAA8VJREFUeNrtmWlIVFEYhqdFoiKzbDdtQ4owioQWQiuDiIq2H1EkRNlC0k4RlVEEafVDyP5E++JS2fKjDaSF1h/RRhohbUyLVhaV2qapvR++I4PMTObcO55757zw4AW9Z875POc77/eNw6GlpaUVxGrWBJ/ZAkSCCNANVIJSUAiK7RqAVmAamAwmgQ5e/s4JboCj4LIdAhAC5oMU0BO8AGfAXVBERD1AbxAPxoM+4DnYArKsGoDB4AToD86CreBRA+c0AaxkMG6DeeCZlQKwAGRw0kvAnUaOMxXsAmEgEZw3IyEZrfWc9GkwBbz0Y6xC5oNRHPcVeKxyAJJBOkjjc6UBY/4E2SAabAQF4KmKARgHcsBhsNzgwFaDc2A4WMHd9dmIgZsbNMF24AC4CRaZlFdkN83kwrN5wygTgB00NYvBHxNvljKQBIbyp99qacAYEZzMTiYts3WF12oKj5vLVUZydxTTQ5QF6hqUhLeMZqY0QM4yFtzjsfB0FCrAdeakY752pb87IIRnPjeAixfd57XYlq7Syc+XIx3FZClX8EGwDqwCl8yYyEhQA+IULfZkfrd4i2xq7DUox2QQGMKt1xGU835O5OKXgioFA/CWeaI1c0YoyGvoEYjiNpsOutb7XQ0j2wU84ZlTVdU8Bt/ANpDPoPgMgCx8M/gOjoOL9PUVzLZS6MxlobPPIr2PVM5bbPoFUOLNF2TxP7zbR93uUgzoZKEGUHce3wxvOUDu8oW81yViv/4x4Efww0IBKGcOS2LNUuXuBEeDNWxCHHLYV7m07gn1rfB2JrRUh70lvuELS+y6AAwAI7j4KpsHQPLbGzrXugBIs/K3GR0XRSU1Q7h7AKLZuSkNkgCEu/oJrgCI0fkQJIt31QtF7gEoY2YMBkmuC2Pzpi4AkhT6Ocxpkqqm2bTF19wDkMeoxNt88X1p9Pa46hdXAKSweQ022Hjx0rvYz+OeVt8KS8X0iU7wPRsOdpKscy+bJNJYLfBUC+TzOlwL3oGHNlm8eH/pIc5w1Lbrc3w1RKRMHMhyOIbWuMSiC2/vqG2FyfeTvcAskOmp2+NJySyKOoMH4Cq7K18VX3QoS17pCcYxx2Wyt+H09IKvrnAbMAdMBMNc3tkCKmbzRmz9KUft94le9b9t8UjFvYKTxY6WlpZWg2TEd4PSFV7N53Q6ShXf8ygjvh0+Cca6lZoJir7ntTngr2K9PKv2nmkBOOLlWbX3TNUYovp7WlpaWlpGO0GlnV4gnKDSTi8QRkhpp9eUAbCV07OKQ9TS0tLS+h/9BbQO0/RSbAcxAAAAAElFTkSuQmCC{scale="+$scale+"}>"
+!endfunction
+
+IBMEntityColoring(hail)
+!define hail(e_alias, e_label, e_techn) IBMEntity(e_alias, e_label, e_techn, #232F3E, hail, hail)
+!define hail(e_alias, e_label, e_techn, e_descr) IBMEntity(e_alias, e_label, e_techn, e_descr, #232F3E, hail, hail)
+!define hailParticipant(p_alias, p_label, p_techn) IBMParticipant(p_alias, p_label, p_techn, #232F3E, hail, hail)
+!define hailParticipant(p_alias, p_label, p_techn, p_descr) IBMParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, hail, hail)

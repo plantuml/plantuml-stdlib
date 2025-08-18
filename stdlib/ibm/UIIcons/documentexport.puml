@@ -1,0 +1,13 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $documentexport [64x64/16z] xS61400000CXXFdRpkElMXu0001m
+
+!function $documentexportIMG($scale=1)
+!return "<img data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAAIGNIUk0AAHomAACAhAAA+gAAAIDoAAB1MAAA6mAAADqYAAAXcJy6UTwAAAAEZ0FNQQAAsY58+1GTAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAAOxAAADsQBlSsOGwAAAfNJREFUeNrtm69PxDAUx7tjlh8CA7n/AQOHBEHAEkDdH4EkODZHcDg0AgQJCgPBnAUMwSKPw10ATTLeciO5jI1b167vtX3f5JvcKq57n3zXdksrBIvF8llBSXsbfAJeBy9o7vMNvA++pgBgqqT4Z3AHPN1AnzPgPfAr+IUigLOs+CbVAm9TgNAqaFszCP8c3MUEEBa0LVYcJ6oqyV1/j/X7CyHVBZUENK1uBoFEEjAAXFGC0EJ69MhAwAJABgImABIQsAGgQ6AAABUCFQBoECgBQIFADcAkCDs+APgPwqmJdwHdGuTeLxKF/2rbmICeICwTAA7AQ58B9MFL4EvwOzUAoaF++grTWGJ7AoTvYwADoKzQgnsMOAEMYKKOMjv5CFQpPhq7jn1KwGGu+Eg2CbYDuAd/5NqkINgO4Am8qQLBhUHwUQWCK7NACmEL/CkLwaV1wEMdCCanwQQRTlQ2Rfq0EixMAi+FPUtAjDkGBAb6WAXfgmerFO9aAjqyxbsEYKVO8a4ASIu/A8/JFu8CgGWV4l0AsKFSvAsAjgu+B0h9EHHhi1Bc8tsbALUK56WwRQlImlxR8ssQA+Ax4I907unRrYGJBFDe09MzAYDqnp5hdm9aVXRo6kuMjq+kx+XmRTMnx2SU7iu6Ae+K0VYbFovF0qYfU4pqEogh1lgAAAAASUVORK5CYII={scale="+$scale+"}>"
+!endfunction
+
+IBMEntityColoring(documentexport)
+!define documentexport(e_alias, e_label, e_techn) IBMEntity(e_alias, e_label, e_techn, #232F3E, documentexport, documentexport)
+!define documentexport(e_alias, e_label, e_techn, e_descr) IBMEntity(e_alias, e_label, e_techn, e_descr, #232F3E, documentexport, documentexport)
+!define documentexportParticipant(p_alias, p_label, p_techn) IBMParticipant(p_alias, p_label, p_techn, #232F3E, documentexport, documentexport)
+!define documentexportParticipant(p_alias, p_label, p_techn, p_descr) IBMParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, documentexport, documentexport)

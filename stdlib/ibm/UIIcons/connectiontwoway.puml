@@ -1,0 +1,13 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $connectiontwoway [64x64/16z] xS61400000CXXFdRpkElMXu0001m
+
+!function $connectiontwowayIMG($scale=1)
+!return "<img data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAAIGNIUk0AAHomAACAhAAA+gAAAIDoAAB1MAAA6mAAADqYAAAXcJy6UTwAAAAEZ0FNQQAAsY58+1GTAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAAOxAAADsQBlSsOGwAAAfBJREFUeNrtWb1OwzAQTqvsIDYQ78BCyghDoW+EujXeqrwRVQdGaLvwDkhsCJ4gnKUMIZwtu3GCfXefdGpqVa6/r/fna5YJBALOmBjWL8EqsDuw838+4wfYM9gj2PsYAmjyb2Bnkf1Yn2BXoUWYImtVhOSz5kxV6E0xAW4jDtngZ8uRtQvHPDEWasvZBvEAVhABuAuQJ9yrYFg1r4qSAD7ky9Z7xSkElh3yZcsbWAiwBfvqrDmJECIEas+YrXvEuAkHsAewDdhpRwRrOFCqAvtGBC9PoFYGtQgLsG9XESj2ATsfEWIug/UAe/7JCRw7wV+eIHcBph6gbDV4iDo9Nm7AnsBObOSpesDMlTxFAQof8tQEKJBW2Eqe0l3g+hjylDxgfgx5SgKskXmA00CE0kRIGZ5JCmCa/SnfjfJEyZd9SKecA1ZIrC+5CNAlr6GnP9s+m4YIgcnAn7eR1yOwA3UPsJHfU78OY+T1qGsRgnzsAtjI70J9Sax3AYx81tzyXkLmrGkiv/xgkJlgpD39aB4QayusWp0elgRfOYQA5gk6CeqR14xLDrCJUHBJgpgIevqzCSFCSv8LmFri+z73gZTKoMkT5pz6AIXMA9YUy6BLiew+sxHAl3id2l2AfSssAoyJ/IgYEg8QAUQAgUAgoIEfCpFiM5HcptoAAAAASUVORK5CYII={scale="+$scale+"}>"
+!endfunction
+
+IBMEntityColoring(connectiontwoway)
+!define connectiontwoway(e_alias, e_label, e_techn) IBMEntity(e_alias, e_label, e_techn, #232F3E, connectiontwoway, connectiontwoway)
+!define connectiontwoway(e_alias, e_label, e_techn, e_descr) IBMEntity(e_alias, e_label, e_techn, e_descr, #232F3E, connectiontwoway, connectiontwoway)
+!define connectiontwowayParticipant(p_alias, p_label, p_techn) IBMParticipant(p_alias, p_label, p_techn, #232F3E, connectiontwoway, connectiontwoway)
+!define connectiontwowayParticipant(p_alias, p_label, p_techn, p_descr) IBMParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, connectiontwoway, connectiontwoway)

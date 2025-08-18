@@ -1,0 +1,13 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $chartcustom [64x64/16z] xS61400000CXXFdRpkElMXu0001m
+
+!function $chartcustomIMG($scale=1)
+!return "<img data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAAIGNIUk0AAHomAACAhAAA+gAAAIDoAAB1MAAA6mAAADqYAAAXcJy6UTwAAAAEZ0FNQQAAsY58+1GTAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAAOxAAADsQBlSsOGwAAA65JREFUeNrtm0loFEEUhssY1+DggttBUQ+CHnLw4EEPGlxwgrgRFAMKEVFQEh2DTtwVNCZBHY1zCAiKKAYXxAWN+wbiGpDgUS8eBA8KXgxe1P/Rr7GI1bN2TVfXzIOPnk4Xmf7/rq569VIRosijHx/XgHWG3dtNkND9Jf352ApmgK+GiK8Ey8AA8FjnF5VLn9+AqCEGdIE5YDef7ymEAabFM9Ct2wSTDZBFazPBdAO0mxAGA7SaEBYDtJkQJgO0mBA2A3w3IYwG+GpCWA3wzQSTDZgJnmTQ7heb8C2XtUOZoeIvgp4M274E38FCm3rAeSabtUNOUSaKPHT1gFT1hTNZPl2toasH1PKaXrXOry2GHuBVX+gy7RUo+jGgZEBpFgg2Ap8tgu4Bgc8WJmSCgc4WpUGwNAjaEdFCGRCaHL9PxPiYyNcAd9Tu8Ri1TTSgBcT58wiwL99XIBQ5PscxsA0cAIPAXvCbz60aA1RxEjQIp1zWLA36+8EfcNBWA2jPQxJs4q7fJl1rYhOoB1ANMVluofgOsIHPI4o2P/hYYVsPoCd7GtSBejBO/F8yp/ND4LhwNoVYY0AZT8Nruet3SNdcE3ol8Y02DYK0zeccWA02ci8Qiicv+oq3wQC6/wugBqwHZxVteqUkqNGmVJg2UHUKZzNVnUcS5r7zCc4HrFkLDASXwGJOzztzEZ+rAaq/2VVyhqiznRuU0V0Fizj9vqJosysT8bkYQH+zG6z4eQ9f09XODWp7DcwHq/izSvxhcCKdeDdxkHP5qMHdfgi4DuaCleBGGvExm+oBQ8EtMAusALcVbXZmKz4sBlSwYBorloO7HuKbeQEUy+aXm27AMHBHOPuYl4CHacRv1V0RKmRE+GlX8nSn2i3SlI94kw0YDu6B6aAaPPcQfyQf8aYaMBLcB1N5rn+RQnx7PuJNNGAUeACmCGfPzytFm7gkfosfiwlTYjQPchPAAvDWQ3yLX+JNMmAseATGs/juFOJP+SXeFAMiPMJTD5gH3iva7JDEN/hdSQk6qH43DfwU/+p1fcW36hBvggHUA6l+95TXJdQTJkvXt+sUb4IBVMmZKJzSVRXfj2sCiaeSdlKXeBMMoLz9Nc/1nyQT3kni63XeQJAGzOYFTkJa61dLyVC7bvFBzwJUrPjMiU+ce8MY4fzHaE2KipAVBlCmtxR8ZGjVd5kzvA+FHoXdyHR/fqZRleLaZuHU8ycJp6bfxmNAINMQhVdtTldQze8ov/9fRCmCi7+pn8B5J4LHYQAAAABJRU5ErkJggg=={scale="+$scale+"}>"
+!endfunction
+
+IBMEntityColoring(chartcustom)
+!define chartcustom(e_alias, e_label, e_techn) IBMEntity(e_alias, e_label, e_techn, #232F3E, chartcustom, chartcustom)
+!define chartcustom(e_alias, e_label, e_techn, e_descr) IBMEntity(e_alias, e_label, e_techn, e_descr, #232F3E, chartcustom, chartcustom)
+!define chartcustomParticipant(p_alias, p_label, p_techn) IBMParticipant(p_alias, p_label, p_techn, #232F3E, chartcustom, chartcustom)
+!define chartcustomParticipant(p_alias, p_label, p_techn, p_descr) IBMParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, chartcustom, chartcustom)

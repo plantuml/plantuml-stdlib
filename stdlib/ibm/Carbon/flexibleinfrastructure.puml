@@ -1,0 +1,13 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $flexibleinfrastructure [64x64/16z] xS61400000CXXFdRpkElMXu0001m
+
+!function $flexibleinfrastructureIMG($scale=1)
+!return "<img data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAAIGNIUk0AAHomAACAhAAA+gAAAIDoAAB1MAAA6mAAADqYAAAXcJy6UTwAAAAEZ0FNQQAAsY58+1GTAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAAOxAAADsQBlSsOGwAAAyNJREFUeNrtm0+ITVEcx4/3nhIlKZQasZFSNjQLC7EjSZSuxUQUK0mSDWUmS7PQlPwJJSxemBmNHY0/KzGUkvfYeElmg4XClGn4/prfrdsx79775v3uuee99/vVp+bdue+c8/uec373/M67xxi1RCuBfWBOjm04A05n5VycFcFNsBf8BPdycr6X/54A/ZKFF2P+VwDXQQ834GKOzv8BU2Ar+AZeZC0ADffL4CA3oC9H54lF4CH4CI6DL+C1RCWFOtcHwCFPnA/rp1EQgCFwCezPSoBz4Ihnzoc2ySIMg2scm0SD4FlwgoPNZqZZ+wvGwFXwIeHeIMZ5W4QyB+g3oCIVAzax01TJZ6EeXQW285SqJDT2PXgHLljXD4Nx8IA/U0AcBFXwRHIEhKr3csFSU6AL3AI3wDPwNaZ3yynLbOTehp4CTyMiRD83Yz/AKE8viuSvGvy+PQIyXwj1WSJIjIRPzBrflrnGoQjfwfxWEcAWoSox53xMdEwKEao55QFeCGDaseeTlsIdYx0vQMeb1C7PMbDTcdvvg/OugmCS0abJSjDiyPmNXKc3ApDVwAFHAtBmzXoNgg7XAbOxxw3ev6XO9XD/r7vVBKh1+giQigfdWQqgK0EVQJ8CYrZ6FpG/mbrGJQoqCjWIdnkWOuw4+nnsDniu2YyaZoOaDWo2qOsAzQY1G9RsUGOACqACaDao2aCaN0ZL1TGH39MgqAKoAP9ZkOYp164C0Kt49BptOUmEdhWgyiNgR5IIvgnwCywWKmsojQgFD3tuBeNEBN8EoHcRf/P87XIhgsSucMANn7QWNLRnt8G6dxt4aeq/LU62G9wG88z0pkpNSIi1YImZfs0+CNvbbC5A0ZbO8qzjgqf4Oqm9HFyJ3NvDPUCj7lFMmRVe509wjiG1db8ULODy74ZtLQnM2fD0RjmqrGV0WILO+dBRl1MpyqWTJScFp9Yubt+g3caCg0BzlKfEcIxAWVro/MhM9UulwzQS3nLv0nSgE17L+JHWHxHJK+eNkT8OG1YY2tyZhp0vzkuOAHsk7MnZeQrOo0nOu1C/ZPKzIOf6W8P+ARR2wypUwvYIAAAAAElFTkSuQmCC{scale="+$scale+"}>"
+!endfunction
+
+IBMEntityColoring(flexibleinfrastructure)
+!define flexibleinfrastructure(e_alias, e_label, e_techn) IBMEntity(e_alias, e_label, e_techn, #232F3E, flexibleinfrastructure, flexibleinfrastructure)
+!define flexibleinfrastructure(e_alias, e_label, e_techn, e_descr) IBMEntity(e_alias, e_label, e_techn, e_descr, #232F3E, flexibleinfrastructure, flexibleinfrastructure)
+!define flexibleinfrastructureParticipant(p_alias, p_label, p_techn) IBMParticipant(p_alias, p_label, p_techn, #232F3E, flexibleinfrastructure, flexibleinfrastructure)
+!define flexibleinfrastructureParticipant(p_alias, p_label, p_techn, p_descr) IBMParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, flexibleinfrastructure, flexibleinfrastructure)

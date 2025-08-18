@@ -1,0 +1,13 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $processautomation [64x64/16z] xS61400000CXXFdRpkElMXu0001m
+
+!function $processautomationIMG($scale=1)
+!return "<img data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAAIGNIUk0AAHomAACAhAAA+gAAAIDoAAB1MAAA6mAAADqYAAAXcJy6UTwAAAAEZ0FNQQAAsY58+1GTAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAAOxAAADsQBlSsOGwAAAtVJREFUeNrtm81LVFEYxo8zNQhRC6HEhUhEQbSotUWmGS6qhfQPWBBFH7RIotwn/gNG4aJWLdyFbQx1aqRoFQV9QNDHoBAU1DaMUZ93fI5Nl+vNxdx7Z+77HvjBXJi5957H8/E+50HnlLeWFJ99GFzg53vgeRovkU+p893gKdgOOsE1MAsW0hwBxQSfuwcsgf28/gAK4FOdn/MdfANTFLwS/MKWjE/xDtDPEfYOXAbPGmEN8FOgzOsucAy8iGmUiwij4BA4Dx6kvQbIXJ8D7WARXI2p8759Zqf3glug5MVvcbpagUK3goOyJuSVCVDhaLgO5uVzTmHtI1PvBxiQC40CLIOPXHhVCvBPyynt8z6/C2gUoA/sBNMaBZBtcIxVYTHtUjhpNyidv8/9v9/7Ag1uUIq9E+AhOM5S+NH/vECetflpGopdTeoGpR8HQNtGZihsCvSAcf7wJ39YadI5L1b4VZQdDo6AITABXoMRMANWmtwNbvpApIcdngRnOUSztAhGCiBz5Q34zb/OklPSfB3Qyzl/U1PnawUYoEOa0+oFuuiQls0MKRWgTIeU0yrANB1Sn1YBiqz4xliSqmneDK1QgBtu7ej4cQLlrxRCt8GgW0twFtIUwK8D8hJybn4SfAVfMuAGN10KJ2mGGiYbDDsPKLM2L7E0lratzi/WxpcZ5/UVvsuvOj9nBw8/xHOcAW9rDFjkeUBSByKWDTrLBhNtBdruVo4Gldmg7GzDzrJBywYtG9QqgGWDzrLBakWoLhvc6iwbtGzwEsvg9WbZYOB6yFk2WM0GRYg/GVsEIwWwbNBZNmjZoGWDmt2gZYPOssGqQ1KdDb53f7PBqQQWxLizwW7e/xTvvxglgF8HspIN1t5fdjj5D5EnYSKEucGj4I5r7mww7P7iAs8FvxjmBks8NIjTDjdMy2o2GLz/bnAEvGwUAYJu8G4MVlhEuEhXOxHWeWtoq+Oy9FJQJgW1AAAAAElFTkSuQmCC{scale="+$scale+"}>"
+!endfunction
+
+IBMEntityColoring(processautomation)
+!define processautomation(e_alias, e_label, e_techn) IBMEntity(e_alias, e_label, e_techn, #232F3E, processautomation, processautomation)
+!define processautomation(e_alias, e_label, e_techn, e_descr) IBMEntity(e_alias, e_label, e_techn, e_descr, #232F3E, processautomation, processautomation)
+!define processautomationParticipant(p_alias, p_label, p_techn) IBMParticipant(p_alias, p_label, p_techn, #232F3E, processautomation, processautomation)
+!define processautomationParticipant(p_alias, p_label, p_techn, p_descr) IBMParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, processautomation, processautomation)

@@ -1,0 +1,13 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $melbourne [64x64/16z] xS61400000CXXFdRpkElMXu0001m
+
+!function $melbourneIMG($scale=1)
+!return "<img data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAAIGNIUk0AAHomAACAhAAA+gAAAIDoAAB1MAAA6mAAADqYAAAXcJy6UTwAAAAEZ0FNQQAAsY58+1GTAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAAOxAAADsQBlSsOGwAAA/FJREFUeNrtmkloFEEUhsuZSETR4ME1DNFEkXFJBHH0kLhcFL2JCy4ZcUliEHIIiAsoUfCgB/HgBu4aiKAB9aIRUYnxYCIuCepg3CKSuIJIojjKoP9jXrAZumdJd9V0T/rBxyzV/brq9V+vqqtaCNdc69c2QKLvOxb7my+jkh5Fgc4B80BBEscW8LE5maQ0L2gEn0FunONy+ZhGPke6qVJABKzm73UGjfNymeBjI6rujCrrBm1gBxgIbseU7+WGLwOPVUpTpb0G2WA7aObfZAvBMbAPHFfdN1VbI2f0Cpb8MHADPALrwN9MDwA18CaoBHPBUjACLADfM2keMBksBj4wGozUGe58/P29pjv0Go0GH7nsGnjuhABQcisH1WAC+AM6uRGRPqjTx0Mj+X0FDoIT7Nd2ASgBp8BEcBlc4Dv3w6TfIaykVWAJeAk2giY7BaAMHAVPQBVneBk2CxwC08FmcNIOAShjWday/MNxjg2CDQn8nWZfRpbN1wvy9UwFIcsC2R/hCq9VlLjDmmvRtV9Y1R36kvDaQQvfFdWWzddu57oofxYo50xflUD2MpVQxXUoT0cXoKHuqkHCG8wynQnyTTb0DXgAzoOfMWXNXIdqTsLKZoJTwE6wS2eCUsSLIWs4wL80ZYVgFPhk4FevPJ+nyCvBXZ1zIzyrrAdfVCmAHl5+gwadO1/PjZ4GQjHl1/lzkYFfo3I/uMS+i2KU0MB1oTo9U5UD8niG1xPzP8l+HFih03gzRr6Wg/E6o00P1yVPZRIcA7p0/g9wlwhJSHoh9h3QKeviOikLwFBe4Eg2MFaZUUO7uU5Kh8GMMDcAbgDcALgB6NeWJcFnQBjvCxbyp5nyFjsHgJa5B8Upb0twfjLldXYOQG2C1Rw3B/SHHKC1e/xZrFM2W7OQQWt891M839EKoMbTOt4cpon/yzgFGN052hd8J6K7R71PehU6Kih2c0CG5gDaAg+K/8tpeUJ/W1x6DuhrAD6AGSauS1Iv0STBoEESTNbGgocqlUOLkLRB6beBiv1cl0qVOYCWqDvAxTQHwc916OA6pWxm9gZpdZZWaWmh8in4prjxw8FU8FZE3ytqVR0AMis3QFK1eBsmrrlmA9sESi3wU8q+HDUTpJxw2KK8QD7oPYCAUwJA+/ZnRXTffr8F/sgHvQRxRkh4D0FGAHaDSWC9sOa9gTD7Ip97rK6sV4L06U2xA+CchX47ecjdIqK7wZ12VIBW+jUSlFUjoyt4bCx9JV3Ba3PpS+8KHgdIX2pX8DhA+lK7gtch0pfWFTwOkr6UrmAmAFsVSz9eV9iWji5ACyG3wJU0PnCR9L+K6PuBrcI111xL1f4BVWXhzfOUHr4AAAAASUVORK5CYII={scale="+$scale+"}>"
+!endfunction
+
+IBMEntityColoring(melbourne)
+!define melbourne(e_alias, e_label, e_techn) IBMEntity(e_alias, e_label, e_techn, #232F3E, melbourne, melbourne)
+!define melbourne(e_alias, e_label, e_techn, e_descr) IBMEntity(e_alias, e_label, e_techn, e_descr, #232F3E, melbourne, melbourne)
+!define melbourneParticipant(p_alias, p_label, p_techn) IBMParticipant(p_alias, p_label, p_techn, #232F3E, melbourne, melbourne)
+!define melbourneParticipant(p_alias, p_label, p_techn, p_descr) IBMParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, melbourne, melbourne)

@@ -1,0 +1,13 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $scale [64x64/16z] xS61400000CXXFdRpkElMXu0001m
+
+!function $scaleIMG($scale=1)
+!return "<img data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAAIGNIUk0AAHomAACAhAAA+gAAAIDoAAB1MAAA6mAAADqYAAAXcJy6UTwAAAAEZ0FNQQAAsY58+1GTAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAAOxAAADsQBlSsOGwAAA0pJREFUeNrtm0loFEEUhtsxaBQVEXRAEcGFYMTgDnpKDqIS8SB6cTkYBSW4RyYOitvJKCoKIoioKOLBgyERhUyM4kVwwX1B0YMLMVFBEMblov/Dv0MbEp3uqUo61Cv46JnK0FPv6+qqV5Vpz3O89OJxOahwLPaT4GyCb5aAEoeCL2HMXkGg8haY54iAK/6LhOtjgApwXUBBF31PfzABjAXjwUjWD+XxI49vwHPwEjwF2Z4sYDpYAErBDNCH9Z/BV/AOFLPuGRgBBoEhrPvJgfk6qAO3e4KAYWA184pxvII3wFbwGNwPXG1/NJZcZG6gTnrFJDARzAZVYDt4IfM2OA5a4yZgFNgCVoHe4BLYDBrB95DnEkEZchAUUoQkajvANnAC7Oct060CCnl1q3kuoYzd1lQRgfVEzt0E1lB2DdgbQbIRAaVMJ+XePQoOgZsUkquAsIlXCrwHs8AmkObttjKq9CjToHTxnezen8BUdve3bNAcMN/CeFXOsSLNri8CpnFQbWSbElGCkbKMx3P/+fwAjsgV7H5LQUvg74/4mQwbZnrh9gMcCNS1shf25UA5E9RyBvlXaYs3jAAZ4RvAFLAIHAO/Ovhcg4Xg/ekz00G9tOEquMdeUU4J2VwEhOkyl0ERB6J6Q0GdJiZKHdtWxLYaHwNk9B3ILzFVksRUKWMbm2zMAineazV8vy9maX2KbTvMadnKNLiBx7hJCAa/0XYeEDcJkYPPJxGKi4RqZoKRgs83E+xuCXkHb2ItEEWC7AtMBmO44vOYxb3iXP6kq4I3tRrMRUKSScpiMJp1ktU183WaM4yU1+AC1xYtNoM3uRzuTEI/LmHXM2OrZcoq+wBf2p1jMBdHksmtBevAEbAHfLMRvOkNkfYSLvJKFnP9vruTK+oXEXKeJHlbVFGK9JyFpoO3sSMUlLCL+bssUO6GPI+IquRCR3rNA/Ymo8HbEOBLyHJbawX4kMe57nh/9hZPcYBMm26srU1Rkw1t9v7eMzRa9B8jKkAFqAAVoAJUgApQASpABagAFaACVIAKUAEqQAWoABWgAlSAClABKkAFqAAVoAIcKMHfB8iDTdcciVsenZUHstqeF5CeMNyhCy8/wTkDHrp+B3i/AdHisiRdBEOSAAAAAElFTkSuQmCC{scale="+$scale+"}>"
+!endfunction
+
+IBMEntityColoring(scale)
+!define scale(e_alias, e_label, e_techn) IBMEntity(e_alias, e_label, e_techn, #232F3E, scale, scale)
+!define scale(e_alias, e_label, e_techn, e_descr) IBMEntity(e_alias, e_label, e_techn, e_descr, #232F3E, scale, scale)
+!define scaleParticipant(p_alias, p_label, p_techn) IBMParticipant(p_alias, p_label, p_techn, #232F3E, scale, scale)
+!define scaleParticipant(p_alias, p_label, p_techn, p_descr) IBMParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, scale, scale)

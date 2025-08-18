@@ -1,0 +1,13 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $ibmeventendpointmgmt [64x64/16z] xS61400000CXXFdRpkElMXu0001m
+
+!function $ibmeventendpointmgmtIMG($scale=1)
+!return "<img data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAAIGNIUk0AAHomAACAhAAA+gAAAIDoAAB1MAAA6mAAADqYAAAXcJy6UTwAAAAEZ0FNQQAAsY58+1GTAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAAOxAAADsQBlSsOGwAAAoVJREFUeNrtW71Lw1AQT9MMbn4ufsyuunVRUgSpzqJQ/5C6CK3gYv8QBWdBXbRFl26Km3Olk9qKu96DS4nhJX1Nk1x87w5+0Hy0ye/Xy927d3mWxWa2FQLbK4AmoIzbLUAN0DVBAEH+GTAXOOcDsKarCI7vc1NC3sJ94thhYP/PhNfu5cHDbN9nN+I8N4VrLwKqgCf0PnIBqGwePYxcgHbEee2U78PNQwwQz2IlJAjWFDLIuOaPIUt5EKCL0d6oNOgEtruSaK+12ZbhxgKYLoAzIjonEe3ZA/6bB1BVouwBLAALwAKwAKZkATEBcgbYwu0HwDHg1QQBSoBrwKxv3z5gG7AD6Oj8CAjytwHyns3gsZKuAnjkpyPOmc5aBJuYfANBJoJNTP4EQSaCTUzeMzIR0hRgFXCjQH6UCCJjLGdZkb1Z8WZpg791ielNhbzf6hIhLqz4nanIDpTMA5LqAWzEIB/mCeUJ7iOyAyUTQCj1ruGoV9qBkgkg3GQd3a43wQVbEg+oK3xP9gg8JiSCqxIDkjIRuF4ko76oR0FGvo+ZIG6dEDnHmWYWEMF0FzBQ9AQZ+QHWB6kVSWmPA0RhU1EQIYx8Je3iqJhB8BGecI8pcUoS2cspk29IskzmtUCUJ5D88xTVYJgIZOQp5gM8EfqSY59ZkxdGMSPUwbR2CtjEfXeAI4vgPQSqOUGR1g7yMDzkaXEWgAVgAYw2yvcDcvEmCnuAARwL7AEsAAtgbAwYuQbK0Zx8cA1UFUvu4Rooynf14nagVKP9ORKW2bDTRBkDKFehuHkIgrnoQFEKkFQHKo6HtUnH34RBUNifhaBFjQX4wkAousMLgG/AFWDP0ngNFNu49gvwHoq0Qyc6hgAAAABJRU5ErkJggg=={scale="+$scale+"}>"
+!endfunction
+
+IBMEntityColoring(ibmeventendpointmgmt)
+!define ibmeventendpointmgmt(e_alias, e_label, e_techn) IBMEntity(e_alias, e_label, e_techn, #232F3E, ibmeventendpointmgmt, ibmeventendpointmgmt)
+!define ibmeventendpointmgmt(e_alias, e_label, e_techn, e_descr) IBMEntity(e_alias, e_label, e_techn, e_descr, #232F3E, ibmeventendpointmgmt, ibmeventendpointmgmt)
+!define ibmeventendpointmgmtParticipant(p_alias, p_label, p_techn) IBMParticipant(p_alias, p_label, p_techn, #232F3E, ibmeventendpointmgmt, ibmeventendpointmgmt)
+!define ibmeventendpointmgmtParticipant(p_alias, p_label, p_techn, p_descr) IBMParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, ibmeventendpointmgmt, ibmeventendpointmgmt)

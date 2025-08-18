@@ -1,0 +1,13 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $treemap [64x64/16z] xS61400000CXXFdRpkElMXu0001m
+
+!function $treemapIMG($scale=1)
+!return "<img data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAAIGNIUk0AAHomAACAhAAA+gAAAIDoAAB1MAAA6mAAADqYAAAXcJy6UTwAAAAEZ0FNQQAAsY58+1GTAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAAOxAAADsQBlSsOGwAAAOtJREFUeNrt2r8NgkAUB+ATmcIhKN3BFUhsHMxCh9DOntIt3MIrMDFI42kO9L5f8kL4cwE/XiheDEGk6CwG+9tYuz//zftYx8dONTjZxmoyPkyTeL9P1rXPB+qRi7pYm0wAp367ybTuPDxQlf4NAAAAAAAAAAAAAAAAAAAAAAAAAFBa6hk8wzrW5c01j4FoyrpubgApuf5TB0wxhfYNAAAAAAAAAAAAAAAAAAAAJWdsHpAyoUnNy4RGB8ygAyad0OgAAAAAAAAAAAAAAAAAAChkHhDChPOH5UhHrDK+gFtfOe93CF/8h4nIj+cO6v8YaPvIkNkAAAAASUVORK5CYII={scale="+$scale+"}>"
+!endfunction
+
+IBMEntityColoring(treemap)
+!define treemap(e_alias, e_label, e_techn) IBMEntity(e_alias, e_label, e_techn, #232F3E, treemap, treemap)
+!define treemap(e_alias, e_label, e_techn, e_descr) IBMEntity(e_alias, e_label, e_techn, e_descr, #232F3E, treemap, treemap)
+!define treemapParticipant(p_alias, p_label, p_techn) IBMParticipant(p_alias, p_label, p_techn, #232F3E, treemap, treemap)
+!define treemapParticipant(p_alias, p_label, p_techn, p_descr) IBMParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, treemap, treemap)

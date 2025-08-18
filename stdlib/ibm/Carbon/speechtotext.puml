@@ -1,0 +1,13 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $speechtotext [64x64/16z] xS61400000CXXFdRpkElMXu0001m
+
+!function $speechtotextIMG($scale=1)
+!return "<img data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAAIGNIUk0AAHomAACAhAAA+gAAAIDoAAB1MAAA6mAAADqYAAAXcJy6UTwAAAAEZ0FNQQAAsY58+1GTAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAAOxAAADsQBlSsOGwAAAo9JREFUeNrtm89rE0EUx8ckqORk8BAaKsT0FNF4aYtHDwWj5xpBaBEPRk9e1Iu3WigtzR9QUQ8GFNRzU3ppj5KTBrHXgK3iwR8X8Qce/D7yUoI02WQ3mZ3ZeQMfsnR2mXnfvHkz73WjlOPtkKZx5sB1w2x/AqoxTYNdBQWDjC/wnFRC46B1cNEQAWrti5jrMSCIAIddFiDBbrTiqgB/wTa4a7sIQYLgA/5c4M97rgkQCRGGsQ1aLUK/AiTBPJgEE13u+ckx4QtYHmAOGyO2sRhUgLPgFciBd+DrCLdW4zyAvvmX4Dc4DXa63HcfnAcVsDTMbyjsbZDc/iS47GH8Iht/J2rngCnwPqrG97MEMuCjh/GrHPycOwrP2G58kHMAHYUvgD8uZ4PWGy/1ABFABNBaEzQyFxAP8OjXUcUtSgwQAUQAY2JAu/JDWWBuiOPQv6LqpgvQrvxQ/k+Vn28ueUCSjf8FzvTI//22mukxgNw+C0ojMN6KIDiteld+Ii/AmOpe+ZFcQHIB8QDJBeQo7PISoJT4IV/fOOBQ49V/CZwDr231gDUwzqz56CdxjskSsFiAMthlyj76aVl8tzkG0Jo+EaB/3dT1r/scQPnGliF279cndAnwDBz1mBC1hqb5NHhO2gSoMl71Au3vEssuIAK02ifVehskrJbhOYQmAEXEUyAfwhzyPHY9TAGegiZ4oVmEPI/Z5Dlob52/GRq0LP68IwlSPvb4lGq9e0jGz4I3YQgQ77j+DB6DPRYm1eO5NLjC9//gv10bcGwqwD4Ct8AH24Jnmg2v2L4LxH0+R8YfBzf/8wJnBKD2FtwGR8CmiwJEwgviAZ+33guCCmC9FwwjF2j/aqzkck6RVdLsbP8A6/d5YL/EJ9AAAAAASUVORK5CYII={scale="+$scale+"}>"
+!endfunction
+
+IBMEntityColoring(speechtotext)
+!define speechtotext(e_alias, e_label, e_techn) IBMEntity(e_alias, e_label, e_techn, #232F3E, speechtotext, speechtotext)
+!define speechtotext(e_alias, e_label, e_techn, e_descr) IBMEntity(e_alias, e_label, e_techn, e_descr, #232F3E, speechtotext, speechtotext)
+!define speechtotextParticipant(p_alias, p_label, p_techn) IBMParticipant(p_alias, p_label, p_techn, #232F3E, speechtotext, speechtotext)
+!define speechtotextParticipant(p_alias, p_label, p_techn, p_descr) IBMParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, speechtotext, speechtotext)

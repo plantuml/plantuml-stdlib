@@ -1,0 +1,13 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $path [64x64/16z] xS61400000CXXFdRpkElMXu0001m
+
+!function $pathIMG($scale=1)
+!return "<img data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAAIGNIUk0AAHomAACAhAAA+gAAAIDoAAB1MAAA6mAAADqYAAAXcJy6UTwAAAAEZ0FNQQAAsY58+1GTAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAAOxAAADsQBlSsOGwAAA6tJREFUeNrtm0toE1EUhq+xulTwuZcYKlTEV9DWtZu0mODK+lhYV1Y3unStrnTnzroRoxEkkba4sAoWBVEXCiqlVPe+UdBFpYn/hRMchsm9586dm0mae+CDtnPy53A6mTnzcyKEDx89HSs0x/OgBLZQ7gKogReW7yt1iyALGuAjqCak26xXcHRbNWAjuAGGwS/whv6+A6wBU2AMfDYscBOY0OieBF8MdTn1RupGNWADeA7WgXPgFvhLx1aBo+Aq+AYOgE/MIjeDp2A96ZbBIh1bDUZJ9zvYB74ydcP1BnWD9UbqrowQrIAcGAIzoB44Jn9+De6DM2AnuM0s9E5IdylwbCmgOw52G+hWFLp1nW4mJLaXTqPzYE7xpnOUM0yv0UXH6oYbIC8gP+k00kWZcouM3GIM3RIjt2Sr2xdKklflt4HPkCoWKVdeDAc1udti6GYZuVlb3UyH3G6joi21hc8AeZ8/SFdlXVdlzgC4Bi5oci+B04a6s4z649Q7q+qyHBrW0i1JF6OUW2Pk1hzpxqm3qmrASxoaroB+hVg/5UzRa3QhJ7FpQ13OVGhdb9Qc8BAco/u8HHLeBWYBOVicAHdpsJBX99/Mj9sMDSVN3feBe7Y8PY8HdA8Z6IbrDeoG6/0BRsCftEdhqVtQ6J4ymC6djMLtehgq0X9dxk1wD7xq98NQ2vGASC0yosfDN8A3wDfAN8A3oJejL6XBYg84DLbT75fTGoRUo/AEzc5JurfSGL2uGVnjjsKqeidpdI/lChu5rJrngGci2hUOu81DBs8ZibvCKvdW67Iqgqsrn+p2OdAdj9KNcoXlaZS0e5sX5u5tnqFrWu+IcOAKc9zbOK4wx222rjfcAGuXtUXkYujmGLld4wp3zSAkDY8Bsqh00XRZFxi58zF05xm51vUm4QpXGbld5QrLocGFK2zq3nJdYat6Oa5wK/c20mVVxCP6L5wVavfW1hVu5WIbu8LLaRROxBV28TDkXWHhXWFviPgG+Ab4BvgG+AakFZ3kCie5K9zcQf4guswVniZdF4sXie8K27rCKt1BgyaEd5BVuvvDTeC4wq12hW1dYZ1umalbMdDtGle4IPiucEGkvCucpitsvYOcxK6wK1d4jD6zqoizg7w1jTmgHuM1DUe1NFRngPXubYtwtYN8kS5uJrpPVGeAK1e4Y3eQ2+UKu9Q1cZsnRYK7wqauMHen13QH+TE4Iv67zR3tCnN0XXwdz2hBoh0PQ932hUwfPpZr/APIwggR+4J9swAAAABJRU5ErkJggg=={scale="+$scale+"}>"
+!endfunction
+
+IBMEntityColoring(path)
+!define path(e_alias, e_label, e_techn) IBMEntity(e_alias, e_label, e_techn, #232F3E, path, path)
+!define path(e_alias, e_label, e_techn, e_descr) IBMEntity(e_alias, e_label, e_techn, e_descr, #232F3E, path, path)
+!define pathParticipant(p_alias, p_label, p_techn) IBMParticipant(p_alias, p_label, p_techn, #232F3E, path, path)
+!define pathParticipant(p_alias, p_label, p_techn, p_descr) IBMParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, path, path)

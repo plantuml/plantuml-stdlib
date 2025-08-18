@@ -1,0 +1,13 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $moonset [64x64/16z] xS61400000CXXFdRpkElMXu0001m
+
+!function $moonsetIMG($scale=1)
+!return "<img data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAAIGNIUk0AAHomAACAhAAA+gAAAIDoAAB1MAAA6mAAADqYAAAXcJy6UTwAAAAEZ0FNQQAAsY58+1GTAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAAOxAAADsQBlSsOGwAAAzRJREFUeNrtmktIFVEYx0cttEX2oLQbFUSE0KZFJm2CkpAoWiTVptpIVHCDoEVBUNeSEIqCu5AeBEUhFa3Kjdgig6iFPTblLogepkRSUdIL6n/wGzp8zoxn7njOXL3fH37ce87cb+58/zlnzoPxPJFIVMoqS/G//xbDtZSXegsQA8QAMUAMEAPEADFADBADLOowqC8grp5irWqa5fPnQCv4DJpAn2HcatADZoMZ4MRkbAF+8h4l0kOJxUneo3PkpsIzwDehIeI3DSx566qweO4H9LlOq6sCO8B9sIf9vjsk+VabXcDFGlzvCr6+gFkGdVaTt90CxmsJXFWuk3dlQJgJUXKSvEsD4pjgLHnXBpiY4DT5NAyIMsF58mkZEGRCKskXg3I2Z3kikUhUDGsB/3/UMreRNjqWg/kgQ8ff0lqgHzwF98DzqWCASvAA2A0Wx4xVplwGF8HQZDNgDmijJW9lwnP9BPvBVRsXamNLbBs4D+ZN0PkqaZJU9AaoWWUeZEOO/6IZ4B3wErwHH8A3sIi6SCdYGhD71VYXmCgD1MblLbAl4NgQdYfrEYl8Ah0hyb8Gu4rZgIqQ5FXfbQdn6S5Hxd8Gm1n9D4o/Td+5asAw+JO2AfmA5NVdbwaPDOI7ApJ/A7aCZyExdd7oHuINcDRNA7YH9PkXYBMNYybx+1idej6sBx9DYtaALnrIHgG93uhmakFKsi0+l+4ev/OmyauJ0AVW9wpsiEheDdtXtBFGXf+1JCNOEgNOUhJ6n282TF7pOJmox6sWMRgRo94sawG/tbpacMi1AQu9sfv67YZ9XmlJQNM/Zjj9feyN3WbPMjOtG5BlM7xBetqbai+Yzoa6fIz4c2BAK1eDg64MKA8Yl9vGGep4fAurO0UTJVOpYfEMq9vpyoBV1IT1GV5nzPiMVv4ObhZwHZfAiFZeRqtM6wY0snIvLWVN1cTKXTFaj64R7//mqq+NLgzgLzvcjRm/kpUfJhiJull5rQsD6li5P2b8ClbuS2DAk4DRyboBGVYeiBlfw8rvEhjAN0oWuDBgZkIDqll5OIEBfNJU64lEIlEMlYWsuEomZ3lVVgwQiUSiEtY/7suUmd4uS64AAAAASUVORK5CYII={scale="+$scale+"}>"
+!endfunction
+
+IBMEntityColoring(moonset)
+!define moonset(e_alias, e_label, e_techn) IBMEntity(e_alias, e_label, e_techn, #232F3E, moonset, moonset)
+!define moonset(e_alias, e_label, e_techn, e_descr) IBMEntity(e_alias, e_label, e_techn, e_descr, #232F3E, moonset, moonset)
+!define moonsetParticipant(p_alias, p_label, p_techn) IBMParticipant(p_alias, p_label, p_techn, #232F3E, moonset, moonset)
+!define moonsetParticipant(p_alias, p_label, p_techn, p_descr) IBMParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, moonset, moonset)

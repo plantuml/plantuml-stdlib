@@ -1,0 +1,13 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $hongkong [64x64/16z] xS61400000CXXFdRpkElMXu0001m
+
+!function $hongkongIMG($scale=1)
+!return "<img data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAAIGNIUk0AAHomAACAhAAA+gAAAIDoAAB1MAAA6mAAADqYAAAXcJy6UTwAAAAEZ0FNQQAAsY58+1GTAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAAOxAAADsQBlSsOGwAAAgNJREFUeNrtmT9LA0EQxU89kHT+KSzs7aKdiFYWCpbpxVJMJwrxMygIdrGwzWcwaJFOVBA02ltZRAvTCJa+hVlyHLlcEpPdu9038MgFllzm7c7s7/aCgMGwGdei6Pe6yT8w6fsM0AAaQANogO1YhBZs3TzMgAFF6B26hGahtm8GPEB30AFUgN5kRbRM3HzKcvK70C+0B11JSW5Dh9A89Az9uG6AipokeiNGTENlE0ZkyQAdSUZ8QU++boOqN5RcbYLxUA2wIjOvogptuLwL9Er8THaDussGzEDnCYl7wQFr0IrpxPkskEESLIuMroSskWB035+DXoQLuvGCNySojFgSo2oulkA81NI/ljLQ22JhXFshmyBJMNuJn0KfJEFHS0DNuDoPLNokwdBS4idB5wjMmyYYr3F1CLou19ZIMLSQeDRB/WL0SBpexbQRoaXE+wUgbYRqlN95MmAfuhiyqztBgqUsNDjbJXA/ZHNzhgTbPWq6mxHOkmBacwt8IcGk5hYEPBP0kwSrJMEOCSb1CN0Ec2nAoI+5TpGgimFfePBMkCRIEiQJkgRJgiRBkiBJkCRogATHacArtPWPWo4acZvHXeBjRI2sJb/FbTBvJbAKNVLGLMtnP+MeuQJytgLUjO2kjNEc0O84roBRx0TkujHC39W13TQ8bpDYHGcJNC2NYwwaf9Z843hCHmsoAAAAAElFTkSuQmCC{scale="+$scale+"}>"
+!endfunction
+
+IBMEntityColoring(hongkong)
+!define hongkong(e_alias, e_label, e_techn) IBMEntity(e_alias, e_label, e_techn, #232F3E, hongkong, hongkong)
+!define hongkong(e_alias, e_label, e_techn, e_descr) IBMEntity(e_alias, e_label, e_techn, e_descr, #232F3E, hongkong, hongkong)
+!define hongkongParticipant(p_alias, p_label, p_techn) IBMParticipant(p_alias, p_label, p_techn, #232F3E, hongkong, hongkong)
+!define hongkongParticipant(p_alias, p_label, p_techn, p_descr) IBMParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, hongkong, hongkong)

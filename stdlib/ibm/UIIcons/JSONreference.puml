@@ -1,0 +1,13 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $JSONreference [64x64/16z] xS61400000CXXFdRpkElMXu0001m
+
+!function $JSONreferenceIMG($scale=1)
+!return "<img data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAAIGNIUk0AAHomAACAhAAA+gAAAIDoAAB1MAAA6mAAADqYAAAXcJy6UTwAAAAEZ0FNQQAAsY58+1GTAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAAOxAAADsQBlSsOGwAAAeBJREFUeNrtmkFKA0EQRScxN3BlcK8YBY/gBVwGUQQPIdGtLmXIHSIERGblDXIEFxrmAKIrb2AYa7CFIJnqartth+r/4K+mq3vqp6qnJ0mWAQAAAAAAAFKk4zC2EsSekc5Ju4K5XePr9Z9IY9Kt4P4GpLnt/rsBzaxvfkLaczRWGt8x1yZmrI2hZNGQBowixo/aaMB2xHjJ2LoFdmyDegENWPPYXyTxFTOWq4LrWBXQRoYxW6CNWNtAuwHWKgi5B7yS+sxz9400I12QXiIk/mwqgN0HQlbAzHJ9g3RMeiRtRjCgkLRBSAMuSe+Cceukm4gGsG0Q0oC6rPdJd6bcOQ4iGDA3bcAa0HM860tMOBG8S/QjbYCFaYFBqk+BIvVzwHIbJHsOKKTngMWPM3bFxC0E7+OZY7zv+pwBV5IKKB0mLT0/ldJzzjJUGywbkDtMmnsakHvOmYdqg+UW+P6a6bdfSdmwxf/l+mwbAAAAACBNJO/8VYQ1/o1u6hUAA7AH+HNEmmbNvzGo3gNsyatugVXJf6RiQFPypykYwCV/r90AVcm7GqAueRcDVCYvNUBt8hIDVCdvM0B98pwBSSTfdE5PJvmmCjhMJfmaVf+4fCBtZV8/T6lO3mbM1LQDAACo5RP5gXN7J4HuMwAAAABJRU5ErkJggg=={scale="+$scale+"}>"
+!endfunction
+
+IBMEntityColoring(JSONreference)
+!define JSONreference(e_alias, e_label, e_techn) IBMEntity(e_alias, e_label, e_techn, #232F3E, JSONreference, JSONreference)
+!define JSONreference(e_alias, e_label, e_techn, e_descr) IBMEntity(e_alias, e_label, e_techn, e_descr, #232F3E, JSONreference, JSONreference)
+!define JSONreferenceParticipant(p_alias, p_label, p_techn) IBMParticipant(p_alias, p_label, p_techn, #232F3E, JSONreference, JSONreference)
+!define JSONreferenceParticipant(p_alias, p_label, p_techn, p_descr) IBMParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, JSONreference, JSONreference)

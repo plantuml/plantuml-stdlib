@@ -1,0 +1,13 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $microscope [64x64/16z] xS61400000CXXFdRpkElMXu0001m
+
+!function $microscopeIMG($scale=1)
+!return "<img data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAAIGNIUk0AAHomAACAhAAA+gAAAIDoAAB1MAAA6mAAADqYAAAXcJy6UTwAAAAEZ0FNQQAAsY58+1GTAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAAOxAAADsQBlSsOGwAAA9NJREFUeNrtWkloFEEUrUwPKnElEYVoRFExCGJOiktIAhKVoIgSgzpK8CKIFy8uFzERFBU8eBLBgOB6UPAg0SBoggfjAm6JEggeNOBBI3EBjTHjK+Y3FEV3z0ynurp7pj68Q1V3uuu9qf/r/99hzJgxY8VsJRFfXxI4BOwA5gOvgTbgvqoXWBEmP4WI7gVmAROASiBF17sKWQBOvgOocbleR7v3USEKYJNfm+U+JSJYMSHfQ66wCZikUgQrJuTXA33AQ6BJpQhWTMgP03jQQwRfgdGKEXmWRYRa4AkwECcB8iXvJQJ3gwVAez4LSMSQvG1Pge3S3LJ8F5GIKXlu04ET0tynOAigijzPEldK81eiLkCQ5LuBs1EWIEjyj4FGYDSq1WDQ5DcCP6NaDkeWvA4B/JBfTnl/PbAQ+A2kgXLV5IMWIF/ypcBpYH8OsUkJebvjEgXyPJu7A6zL8fnfgb9RbYj42fbngeY83rEYmAbci9oO8Ovz+6S5j8BhyvcZxQPuHpXCPQeAi0BvVHaA32h/BFglpbPVwDPycY63wGVgF/3ydvwao3f6tkTI5Lk1SGPeBR5yuG+Irom2ZrwLTwRI/n2O5/xcaezV1JCvzQ5bAK8G5iJgQ8BH8eQwBcjWvU1SddacJcMbkeZqPe6Xr70MSwCvbT+aowh2eitneGeAMof7y+iaHGO05wFJWniNw2LqWObz1RZB3ASN+4Ujyy23ZxTldwKfgS8kNm+H33aIF/OAm8APnanwUeBklmjfTL+8mGfwnZGi5MWNvB97QafBH1074ALLfKvzOup66Rd32glb6ZyXc/tXwBIf66kgcbt0CXAKmCiMeeXW53CfmwgzXQqbq8BUYIVHbPpHcYC7x1JhnidS14BvOgRoJN+zbTOlrIM5iuBW1Y2Ra9yiQqeUAl8JxZXrJDb3+U6W+WQ+Q4hLlp+s0E8MaCA/Fv92mNygxyXa8w8WVYpL2j2UHtvGnzOHKsVAd8AANSjqpXK2yWEn2NG+OoB6ntcHLfQObvz/B54D73QUQ3bAqfMQIbA2FlmajsXVwhyPAXd1VYNeIvCjqT1A8mIilxLGPHZc0lkOu4mw2yFpUU2e0dl/UOJzTnc12Aoc19XDk+yrNC4PqyPUSj7Z6nCtm45O1eQZHZ2ijYTZEmuj4+4Ytbk+ADcocRllwViFNP4VpgCMEpROps+qHKrRUFpiYZnccHlTTALwxGebNNdRTAK0SDGAJ0EPdNQCqi0d8PNLCjkGKEkljQDFbMkIrmm8cSltdoARwAig1N/ShczRuIARwJgxY8aK2P4DceEF0ZZRZBIAAAAASUVORK5CYII={scale="+$scale+"}>"
+!endfunction
+
+IBMEntityColoring(microscope)
+!define microscope(e_alias, e_label, e_techn) IBMEntity(e_alias, e_label, e_techn, #232F3E, microscope, microscope)
+!define microscope(e_alias, e_label, e_techn, e_descr) IBMEntity(e_alias, e_label, e_techn, e_descr, #232F3E, microscope, microscope)
+!define microscopeParticipant(p_alias, p_label, p_techn) IBMParticipant(p_alias, p_label, p_techn, #232F3E, microscope, microscope)
+!define microscopeParticipant(p_alias, p_label, p_techn, p_descr) IBMParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, microscope, microscope)

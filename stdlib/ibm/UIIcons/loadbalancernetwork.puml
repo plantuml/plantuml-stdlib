@@ -1,0 +1,13 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $loadbalancernetwork [64x64/16z] xS61400000CXXFdRpkElMXu0001m
+
+!function $loadbalancernetworkIMG($scale=1)
+!return "<img data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAAIGNIUk0AAHomAACAhAAA+gAAAIDoAAB1MAAA6mAAADqYAAAXcJy6UTwAAAAEZ0FNQQAAsY58+1GTAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAAOxAAADsQBlSsOGwAAAldJREFUeNrtms1rE0EYxjeJh+pNhdJ27T+gIXgoaY8VRKj2H+iHhQpBoZ77P9S7aFOq0g/qSfBib23prR+Y1qbXnhrEg0IFBWnr9hn6LsjC7sxkm3WbPA/8YJMM7848+87MO0sch6KoVlYmgXt4ae5jttUzgAa0ugFXUrjueMwAGkADaAANoAE0oGnrAI8ZQANoAEVRVCqU+Y/39tLQF26DNIAG0AAaQANYBxjrFngB+kFnysbyFayBSXDYCAPU4HfAzZQ/1O/grqkJNlNg6hIM3pE+TjViDei/RFPbuK827wS7Lrh29xoYr4u7AA2gATSABtAAGkBRFBX7ONwGnoEhUACn4AtYBGVwbHlPdf4YBePgjny3D96CBXBiGS8XiHcN7IEl8Br8iWNAN1j+p6NBfQYPwTfDzt6QeMWQ3zfBAPhhGO+6xOsN+X0XPAK1KPfCdBWsRwxeqVOOnu/AX4MtdzVi8EouuAfeOPp/kqh4K6Avok0HuC/xTm3rgAlw2+Ap9Ej66TSiGbyvorTVaVgzeF8FmcLWU6DinL9a8qVSrSTXM5KqcZRkvI0ws7IRxgSf/lOZSzW5jqsk4+VtS2E1/3410W7n1XMW2At8npZFypXruEoyXrWeNUAtHK8s0q+safMYzBnGGwPzmjYlg3v6eg5e2maAWkh2DIJvSxGj06Ls8zptSlud1Na7ZdCuEmVUTjNvPoEHoD2iEFKFxk/DefhB9nlXUwj9Noin6o6PUoe4Ef0bBEcXVQr7RhzIE3ifglJYxXsiMfOS1VWJNVtH/yiKaiGdAbPQcUdwVX/LAAAAAElFTkSuQmCC{scale="+$scale+"}>"
+!endfunction
+
+IBMEntityColoring(loadbalancernetwork)
+!define loadbalancernetwork(e_alias, e_label, e_techn) IBMEntity(e_alias, e_label, e_techn, #232F3E, loadbalancernetwork, loadbalancernetwork)
+!define loadbalancernetwork(e_alias, e_label, e_techn, e_descr) IBMEntity(e_alias, e_label, e_techn, e_descr, #232F3E, loadbalancernetwork, loadbalancernetwork)
+!define loadbalancernetworkParticipant(p_alias, p_label, p_techn) IBMParticipant(p_alias, p_label, p_techn, #232F3E, loadbalancernetwork, loadbalancernetwork)
+!define loadbalancernetworkParticipant(p_alias, p_label, p_techn, p_descr) IBMParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, loadbalancernetwork, loadbalancernetwork)

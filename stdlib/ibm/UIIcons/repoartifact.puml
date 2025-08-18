@@ -1,0 +1,13 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $repoartifact [64x64/16z] xS61400000CXXFdRpkElMXu0001m
+
+!function $repoartifactIMG($scale=1)
+!return "<img data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAAIGNIUk0AAHomAACAhAAA+gAAAIDoAAB1MAAA6mAAADqYAAAXcJy6UTwAAAAEZ0FNQQAAsY58+1GTAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAAOxAAADsQBlSsOGwAAAxhJREFUeNrtWj1rFEEYnsSLRdBKBU2wsrgIktb2go1goRejF/IPVPwoRJArcoeksVEUPxpL0fWDaBGxEb1eBEVwD7VUC2OlHHIpzmfY92AyzH7d3e7MuPPAw7Fzs7PzPjvvzDvvLGMODg4ODg4ORcVYSPk0eBWcA/cM2HYHfA9eAx+bKsCWEON5xw+C24doewLcC54Ae2DLFgHukvGjxBz9tmwQ4OaQbz4MFRNFKCnKphLOE3GYBV+BO4WyBv02TRFgPMO2P4CHwHWpnIuwXAQBrBBhPIdnGC1CKafn9EVQzQmNjJ/9A3wNXgK/6RgBcSMha/BAbolim2mdAugUgWMHRbdaBdAtQkXXHKASYVdOz+pFxDhaRoBRcAI4AZwATgAngBPACVBclApg45gbAf/ZCOilecNuDrBUgJm82jBRgGXaLleHaKNKbcTmHFUHIw3pupmz8Q3q1zz4EfTBreBx8DILzhvkN80Pcr6AXTLeY8HRXIXqtGyYBLkhdeF6ggy5BZ5kimQGYZHI010PwFN0bx91asc33QV4B2vghiTChQjjRfAM0znJ+A1q07dlDlhViDAo+sav2hYH8A7zE+qzUnmH3OER+InK9pN7nAEnpfq344w3VYBt5NMivoJHwLZU/pZ4D1wD9wn/LbDgMKRr2zK4wDZnjDshxotoU52OUMYPQY7ZGAccVgzldoL72lRXxFEbXKAX87+Xoi1e96JwvUQM3TvYsBfwM6rrNkO2CDCTUV1j5gB5P39f8tsaLXVJUFPMCYu2jYDn0vVpsJzgvjLVFfHSRhd4xjZ/yTFJQU45xvg1KRr8CT6xMRLsUsfPC2U8wnuXMhR+CP5J63+M1J/K0edVyQxP2tVlthlSucAbjW9/VMaL+YRqWgH4BuKXpuXOU+znb5A/x+E7eF2RT/CilkdVSuw3LUW7WfBJ26i/Gw5Lsa3TC6lIQ5h/bn8H/Az+BQ8ols0VygS9YEEabV6w7Qr4dFB/1AGeF6xH+G+Sc4G+K62wmJymiatAk0Xk8FIkVWaTtGFqKOzn1UbhN0MODg7Fxj/h0ZjSFqOYZwAAAABJRU5ErkJggg=={scale="+$scale+"}>"
+!endfunction
+
+IBMEntityColoring(repoartifact)
+!define repoartifact(e_alias, e_label, e_techn) IBMEntity(e_alias, e_label, e_techn, #232F3E, repoartifact, repoartifact)
+!define repoartifact(e_alias, e_label, e_techn, e_descr) IBMEntity(e_alias, e_label, e_techn, e_descr, #232F3E, repoartifact, repoartifact)
+!define repoartifactParticipant(p_alias, p_label, p_techn) IBMParticipant(p_alias, p_label, p_techn, #232F3E, repoartifact, repoartifact)
+!define repoartifactParticipant(p_alias, p_label, p_techn, p_descr) IBMParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, repoartifact, repoartifact)

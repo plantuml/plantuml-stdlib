@@ -1,0 +1,13 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $university [64x64/16z] xS61400000CXXFdRpkElMXu0001m
+
+!function $universityIMG($scale=1)
+!return "<img data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAAIGNIUk0AAHomAACAhAAA+gAAAIDoAAB1MAAA6mAAADqYAAAXcJy6UTwAAAAEZ0FNQQAAsY58+1GTAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAAOxAAADsQBlSsOGwAAAphJREFUeNrtmT9IHEEUxndvFYzYh1xnZyBcKjWVEDsLCyEoOUiEBAKJaQKJwUIbK0GwMU0IKS6NmjQpgimC2gT8kyYiMV26QOBKMUGbfCNvj2XZmZ3F/TvzPviBN7s7e/vtmzfPd45judwC790HXtLfS+DEJgOmwDK4Sp//gOdg3XQDBsArMAq2wAyNh8d+mmaACPd58EzxtoNRsQIW81gWbs7hHvdgOkZVxoABRWj3gvtgkD4fgBY41bi29AbEvcWb4APoB0c0dgP8AnfA9zyXhZtzuPfSA/4Dk+CYxq+DDdBDBp3mtSy8FMNdfKkX4BsYB2vgLHTeQ9Ck0D4OjLfBDpgDv2kOX2KOL+A9uEX3GAH7dF2hBvTRW27R23sEZhVf7AnopmvCatMSqIGPkuMtygV3yQhx/90Io7XVlVN2T1Mi0j4FlkXzMsvCyzDco3QNTFMSDEeJyAML4E1oCUQptWXhZRjuUfpB4TtBa74dSoIigh6Dc835Lr0s3ALCPck2mHa1mdiArAqSuEIoqwJM24DcS9KiSnC3RNm9kH/C3BzCvQySPptvgMjoq1Sk/AV7hnbAhsEV2mWegtd+ISQGvjrmK/hizx0Wi2W9VJXgtmHPejtqsMYxwGKxeBeI1z3wIOact+BdxebR3gVE47GhON6gc6o2T6KusGg4jkmObZZsns+6k1hfB7ABbAAbwAawAWwAG2CvklSCQ468S9Sgyqxy83gJIqWuOC5+dhI/bh5WbB4Wi2W5ZB0hnY5L1RTZIZLVAXEdl6pJ2iFS1QGqjkvVtMmVIBvABih3gXDW9xOgKaVk1PNc7Ao1SdY/NKyODj9PZ1foMjTra+8KnATZAMsVzAGqDotp6nSMvEAk1C168dwx8vUfrbzN5a1RVOwAAAAASUVORK5CYII={scale="+$scale+"}>"
+!endfunction
+
+IBMEntityColoring(university)
+!define university(e_alias, e_label, e_techn) IBMEntity(e_alias, e_label, e_techn, #232F3E, university, university)
+!define university(e_alias, e_label, e_techn, e_descr) IBMEntity(e_alias, e_label, e_techn, e_descr, #232F3E, university, university)
+!define universityParticipant(p_alias, p_label, p_techn) IBMParticipant(p_alias, p_label, p_techn, #232F3E, university, university)
+!define universityParticipant(p_alias, p_label, p_techn, p_descr) IBMParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, university, university)

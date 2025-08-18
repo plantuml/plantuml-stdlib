@@ -1,0 +1,13 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $userdata [64x64/16z] xS61400000CXXFdRpkElMXu0001m
+
+!function $userdataIMG($scale=1)
+!return "<img data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAAIGNIUk0AAHomAACAhAAA+gAAAIDoAAB1MAAA6mAAADqYAAAXcJy6UTwAAAAEZ0FNQQAAsY58+1GTAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAAOxAAADsQBlSsOGwAAApRJREFUeNrtmb1PG0EQxTcQY5ACBRWEEtOgSC6CRENFC0lMB4E6UKWz4v+ASC7TAAVUhgKJjygWTZQWEgnJSDEVdATooQmWCG/FIK02B3tnDpj1zZN+xd7HrOf5bnf2VimRSCQSiUQiUTL1zOPf/i+OXJqS/gSIAUk34Hmd96VADrwFg6Cbjp+An+Ar2AC1RjRgDBRBb8C5PmIKHII8WG8UA/Tr8pmSCiNt0BqZVQCXHGeLKGNAlORN5eler5+AsYDkL8AcWAG/6dgrMAFmQItlwjbH1yGMASl6jE39ASNgzzq+QyyCMugxzukY37gNjGEMyFkD3t9bkje1R9foGSFtjAk61upjVHhx1gE5q73gSN40YcERy4tC6LXVLkWIX3LE8sKAl1Z7P0L8fUcsKYV9MODYavdHiN/viOWFAbtWezJC/ElHLC8M2LDaH0A2xH1ZuvauWN4YcGi001TkZB3Jl40aQFEMdgaEKYRqVMquGcd0hfcrQil8Uw7XfDRAUQ1ftNYDOsGPhEtFrsviKNNgIWBNoEImX+A6DdZTZ9/1QURZ7zz7DyL1LjQa5pOYSCRKtsIOgvag1wXaHfecgVPug2IYA3I07WXu2dcBTYusyuFmR5E0C76Azhj60jHGQRv4of7/9sfOAJ38pwfocwi0gu+c1wLvApLX+wDzYJkWP+eO2C9ocfQeTFuLIx1b7xNscnwCUvTDzMde7wMMgyVwRGa4dEHXbqnr/YA3oMM4P0CrycunNKDpln8/YyUyCir36KdCMUzjMtQXu9Vg0D5AJYa+KorhPkGQAQNWuxRjfyVHXywMsL/dV2Psr+roi4UB7QEVXVw6c/TFwoBESQwQA8QAMUAMEAPEADFADBCJRKIk6gpHmnwlGN/fnwAAAABJRU5ErkJggg=={scale="+$scale+"}>"
+!endfunction
+
+IBMEntityColoring(userdata)
+!define userdata(e_alias, e_label, e_techn) IBMEntity(e_alias, e_label, e_techn, #232F3E, userdata, userdata)
+!define userdata(e_alias, e_label, e_techn, e_descr) IBMEntity(e_alias, e_label, e_techn, e_descr, #232F3E, userdata, userdata)
+!define userdataParticipant(p_alias, p_label, p_techn) IBMParticipant(p_alias, p_label, p_techn, #232F3E, userdata, userdata)
+!define userdataParticipant(p_alias, p_label, p_techn, p_descr) IBMParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, userdata, userdata)

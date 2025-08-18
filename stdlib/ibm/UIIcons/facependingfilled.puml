@@ -1,0 +1,13 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $facependingfilled [64x64/16z] xS61400000CXXFdRpkElMXu0001m
+
+!function $facependingfilledIMG($scale=1)
+!return "<img data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAAIGNIUk0AAHomAACAhAAA+gAAAIDoAAB1MAAA6mAAADqYAAAXcJy6UTwAAAAEZ0FNQQAAsY58+1GTAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAAOxAAADsQBlSsOGwAAA5BJREFUeNrtmz1oFEEUx8dECZhogoqQSLBSiZ3EFCo2JkEIOUEERSysT4gRtdHGwmAqIybgtSkiFlf5wYkEYyHp1OsMic0dBwpyB8YLgkqC/8e+bc79mJ2925ud2wc/CNzu27z/zsebmbdCJJZYYq1s2yJ4Rhs4Dk6DQ+Ao6AcdoJev+QZ+gxL4DL6A9+AD2IqjADvAGLgCzoLdin5+gjfgKciBv7oLsBdMgjTYV2ffZZABj0FFNwF2grscfFeDu9QGi/AA/NJBgHNgFhyMePwqguvgRRgn7SHu7eDAZ0BPEwZweuZlsB+8BZtRtoA+8Aoc02Q2y4Nx8DWKFnAYvAMDGk3nNJ1eAK+DDpDtCsHT/HxAw5yGusQlHhMqjRCgj9+8jsHb1glSIAuq9RSABrwlzZq9V0s4A+ZlBkZZAWZ5uouL0Ziwh7PH0AKkeKqLmw2BT2DNb6Hil+HNxXixN8cxKLeAe9wC4mp2grak0gLshU3cbZJjCSxAFAubKKzL60W2eazn08IcS3NM/9l2lxvGQqznaY3wUFi7OWS0G3SLc/Vm+BEcC8X0XHYQnBLW1lVQoz2Ba6AA/jD09zP+ezhiP7UvOyvTBUiUUYUHvATTHr9P8zVR+am1UacX7iTAIOhWeMCMZtfUWjfH5ivAKcW+/1Gza4RMbE4CNHLBs9VkPwMyAhxRdD6o2TVCJjYnAfoVnd+UuOZGhH6ETGxOAuxSdE5rhjsev98G5yP0I2Ric8oD7nskSH42zAkLHXWV2c8J8EhYW9hR+3GKd0omEwxj44rZWqP8iKD7AVVhrlUTASQEKBksQElGgFWDBViVEWDFYAFWZARYNliAZRkBaKGxbmDw606LKCcB6DRl0UABFoXDSZHbnuCCgQIsyCZCZDlOQU2xsnA5JnMTgKqxMgYJkBEuFWZe5wJUiLRhQPB2UZUIKkDF68YYmWdZnd/hKJWiFWMcfJFjEKoCUB3eRIwFmBA+tYQy9QF0vk6laEMxC/6JsDZQRJgWYBvt0+VjFHxeyO0tSpfIUAZFpzFUitajefAFMAJ+1FMAezOB6vCoFK1T0+C/C6tAqiB7Q9A6QZpOqA4vpWFLKHDwa0FuUqkUJRGy/LBejfr8SJA3H0YAuzvMC6sUrdmzA432F2X7fL0EsAfGHKt/sgldgpKcqzzVbao6ST6YqPM/17KfzNRay3405ZZtavvZXGKJJdba9g+BGcBjkrO14QAAAABJRU5ErkJggg=={scale="+$scale+"}>"
+!endfunction
+
+IBMEntityColoring(facependingfilled)
+!define facependingfilled(e_alias, e_label, e_techn) IBMEntity(e_alias, e_label, e_techn, #232F3E, facependingfilled, facependingfilled)
+!define facependingfilled(e_alias, e_label, e_techn, e_descr) IBMEntity(e_alias, e_label, e_techn, e_descr, #232F3E, facependingfilled, facependingfilled)
+!define facependingfilledParticipant(p_alias, p_label, p_techn) IBMParticipant(p_alias, p_label, p_techn, #232F3E, facependingfilled, facependingfilled)
+!define facependingfilledParticipant(p_alias, p_label, p_techn, p_descr) IBMParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, facependingfilled, facependingfilled)

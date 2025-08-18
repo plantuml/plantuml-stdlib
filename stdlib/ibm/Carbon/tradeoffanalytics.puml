@@ -1,0 +1,13 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $tradeoffanalytics [64x64/16z] xS61400000CXXFdRpkElMXu0001m
+
+!function $tradeoffanalyticsIMG($scale=1)
+!return "<img data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAAIGNIUk0AAHomAACAhAAA+gAAAIDoAAB1MAAA6mAAADqYAAAXcJy6UTwAAAAEZ0FNQQAAsY58+1GTAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAAOxAAADsQBlSsOGwAAAwNJREFUeNrtmU9oE0EUxtM2gs3Jm4rF6jHF1pM9W89F0JaCHqooiAr1oKiJ9aBoSdVTlWKxt94sRdAIPSqCB/9CU2nBi39I1ELwIFICCvoNfIF13N3sZnaahn0f/KDd3XmZ/Wbz9r1JIiESiUQiUWzVUue4FBgGe/j/KzADVtdw7ptBP+gBW3jsGyiAx2DFlgG7wRzYCd7x2C7wAQyCBcs3ngY5sJ/z/wQ+89x20An+gEcgC5ajNCDFG6yAIUdwNalZsJEG2XoSLoLrXN2b4AEoatd0gIPgAp+Sy+CGV8C2kBM4Dg6DfZqzZfCUjn8Bry3c/D0aMMnVfw5+uFynjr0Ad8EmMAq2gXwUBpwGG8A1l3NlfgVawUMLK684A66C3wHGqGvmwXc+BRWa9o9amyBRd4ExcIeEVXXcGGMZGfCSQdIeyamL10SpHLN7xiBGhjFypgaoV91HJry0dvOzPDdj4VV3yzCxrjJGP2PWnQN+gWdMhJeYbU+CK+Anc0AxQgMOMeGd8Eh4YVQCZ8F78LZ6MFlHoAW+6pyF0JSlQqib7/koTC0yVrfzYNLgkZoiNrWVKxeVSozZVG8Bq0paqvWj6hW+OmJEIVUQvallgFutfwScC1jrm453ahGMsLw1zQMd7BMW/QxIcfIVJgu91p+rUeubjteVZ2MzACYMDRhgrLxfDlCP7Q6t0Unw7yGeG/b5ENPxulbY2p6nufUqxRj/tcm6Ab1gyaOFXOa5Xp8PMh3vpiz7/XEDA8YZI9uMvcASO7oRElbVcaOM5WuAaa1vq1dQ/fw0uE3aA4xpd1w/7bUn0Obitio/D7C/L2tJTJW7p1gSe62WyfhaCbHCtvgY292SS4mssv1RcB/sZcmeCbMjZLrlZXvLbE22xNZLIRSkUzTaFBXFXc6vwJOY3XvfeqgDekhsNU8aptjvB4gBYoAYIAaIAWKAGCAGiAFigBggBogBYoAYIAaIAWKAGCAGiAFigBgQH7VYjB3kt8bqz2KFANf22ZhkssELUEiIRKJG6i+GmtMavU9QdwAAAABJRU5ErkJggg=={scale="+$scale+"}>"
+!endfunction
+
+IBMEntityColoring(tradeoffanalytics)
+!define tradeoffanalytics(e_alias, e_label, e_techn) IBMEntity(e_alias, e_label, e_techn, #232F3E, tradeoffanalytics, tradeoffanalytics)
+!define tradeoffanalytics(e_alias, e_label, e_techn, e_descr) IBMEntity(e_alias, e_label, e_techn, e_descr, #232F3E, tradeoffanalytics, tradeoffanalytics)
+!define tradeoffanalyticsParticipant(p_alias, p_label, p_techn) IBMParticipant(p_alias, p_label, p_techn, #232F3E, tradeoffanalytics, tradeoffanalytics)
+!define tradeoffanalyticsParticipant(p_alias, p_label, p_techn, p_descr) IBMParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, tradeoffanalytics, tradeoffanalytics)

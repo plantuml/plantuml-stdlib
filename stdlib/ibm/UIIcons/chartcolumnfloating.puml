@@ -1,0 +1,13 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $chartcolumnfloating [64x64/16z] xS61400000CXXFdRpkElMXu0001m
+
+!function $chartcolumnfloatingIMG($scale=1)
+!return "<img data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAAIGNIUk0AAHomAACAhAAA+gAAAIDoAAB1MAAA6mAAADqYAAAXcJy6UTwAAAAEZ0FNQQAAsY58+1GTAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAAOxAAADsQBlSsOGwAAAMdJREFUeNrt2DEOwjAMBdAGWNlY4KLMXIZzcBlGll4geGDMQKVWSur3JS9Vh+bJcdNOk4hkTmlcq3/cs5scsncAgOwApwGesW4w53QAAADjzIBFe3rpzLAFAAAAAACAc0C/Z3UdAADAcN8Cq57VdQAAAAAAAAAAAAAAAAAAAAAwxP+ArVN1AAAAXc+Atf/5FR0AAEDXM6DoAAAAAAAAAGDItN7h76hbljW3OuCVfQvcoz5ZAI6Na3PUM+oadYk672zNj0lE5JcvmPIM9ZBrFZIAAAAASUVORK5CYII={scale="+$scale+"}>"
+!endfunction
+
+IBMEntityColoring(chartcolumnfloating)
+!define chartcolumnfloating(e_alias, e_label, e_techn) IBMEntity(e_alias, e_label, e_techn, #232F3E, chartcolumnfloating, chartcolumnfloating)
+!define chartcolumnfloating(e_alias, e_label, e_techn, e_descr) IBMEntity(e_alias, e_label, e_techn, e_descr, #232F3E, chartcolumnfloating, chartcolumnfloating)
+!define chartcolumnfloatingParticipant(p_alias, p_label, p_techn) IBMParticipant(p_alias, p_label, p_techn, #232F3E, chartcolumnfloating, chartcolumnfloating)
+!define chartcolumnfloatingParticipant(p_alias, p_label, p_techn, p_descr) IBMParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, chartcolumnfloating, chartcolumnfloating)

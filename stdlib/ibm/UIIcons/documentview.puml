@@ -1,0 +1,13 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $documentview [64x64/16z] xS61400000CXXFdRpkElMXu0001m
+
+!function $documentviewIMG($scale=1)
+!return "<img data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAAIGNIUk0AAHomAACAhAAA+gAAAIDoAAB1MAAA6mAAADqYAAAXcJy6UTwAAAAEZ0FNQQAAsY58+1GTAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAAOxAAADsQBlSsOGwAAA69JREFUeNrtm0tIFlEUx0etoKAHEoH2wughVLhoUQShFVZimx4i2aIC6UktCmwRQiERCbUrrdy0KUJDWlRYIEUQBW0kIVdJmBliLqIgDPz6H+Z88HWZe2e++eZxx7kHfjDz3Tmee/9z5z7OjJZlzJixNFuRT7+loB1sB2UB12kUnABPoxCgxGfjB8BmMD+EOi0ADWAQDOkoQCc3Pux67Y9ChGIfPjURPZ6zwSOwL8wgs3z4lAc0jmQtI5z/5cbnitAIenXpAWFbI4sQSU/QUYDeKEXQUYBIRdBVgMhE0FmASETQXYDQRUiCAKGKkBQBQhMhSQKEIkLSBHAToT4NAqhE6IxiLxC0fRP2F5kC/tayJPaAV3EG10GAFvAjzQJQCqwKPABjUQfXYQzIinA4oHxCKmaBVOwGjQBGACOAEcAIkJZ1QCFWZHqAEcAIMCPHALo5W8AOsBWsyskbUA7hM3gL+sE7MD1TBCgFzeA0WCm5Zh1TB9rAF3AbdIHJpApAd/w4uMoi5GMk1HVwEVwCd732CF0EWAJ6wLYAek8HaAIHwXgSBNho2d8DLZeUD3LXfgFG+De6dhc/KhscfEjID5adJf6oCu7nE5nLwvmVAhq/xrJzguUOZVPgHDeSBrkJ/m2Kj9+DO3yXax3ashAcAE9U40Kc0+Bi0Mfd36nxdTywqZ7lab6mjn2cHq0+jqWdAFTxCknZeZ7evFo/+zhZBcfSagygAapB8cx3CL9Rvp++S6zhc3psKJv8Neca8jkpGRMaOGaPDj2gmOdumXUJ3Z4aT98lHrLsjzLL+HjA+v9FyDT7yqzNqb1xCEADU6Wi/KVw3i5ZF5Rymco31yo5duwCXHApHxHOqxXXVrv4usY2u8EYYt5wKRcXRK8V14plK/KNHYcAjy3197+1wnmLZCEzyWUq31wb4tixC0CjdauivFmoF0119O7woWW/Oxzj4yphGixhX5m1Oi2q4loH0HzcLVkL0Dx+CtwSRGhy+Zvks15S1u20Boh7EKT9/rCk7CYnQrzaTsXYMsyxtFsK04Zmt2TLOgc854oXu2zmzoBn7CPaOMeY0HU3OMmblb28exPrVs+LF2rcT/CHj1db9uv0e+CopB20JtgDPqkq4CenPirZvhYSI6iESNbeeE2I+OkBmziJ4dW89JDf4D74btkJ0LkF9CjaFZ4Fv7w4+BGAEhFHwLwABSDLcBYnm9hcCxZ59KWk6DVwjO9+Jsju6WT5/Nuc3xiRpMWNGTOWbvsHRcrFLyGMH0IAAAAASUVORK5CYII={scale="+$scale+"}>"
+!endfunction
+
+IBMEntityColoring(documentview)
+!define documentview(e_alias, e_label, e_techn) IBMEntity(e_alias, e_label, e_techn, #232F3E, documentview, documentview)
+!define documentview(e_alias, e_label, e_techn, e_descr) IBMEntity(e_alias, e_label, e_techn, e_descr, #232F3E, documentview, documentview)
+!define documentviewParticipant(p_alias, p_label, p_techn) IBMParticipant(p_alias, p_label, p_techn, #232F3E, documentview, documentview)
+!define documentviewParticipant(p_alias, p_label, p_techn, p_descr) IBMParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, documentview, documentview)

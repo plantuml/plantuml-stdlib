@@ -1,0 +1,13 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $deliverytruck [64x64/16z] xS61400000CXXFdRpkElMXu0001m
+
+!function $deliverytruckIMG($scale=1)
+!return "<img data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAAIGNIUk0AAHomAACAhAAA+gAAAIDoAAB1MAAA6mAAADqYAAAXcJy6UTwAAAAEZ0FNQQAAsY58+1GTAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAAOxAAADsQBlSsOGwAAArdJREFUeNrtWs1LVUEUH31+EEgLJUjQaGEhKuQ+KNwoLqSVkI92oiV+FEGGVBCliC4VBIWiTSVUmxDc6cv/oBYRoqA+QRfl0sjw4ze8I1yG+573zrvzfG/m/OAHztw7c2aOZ87HfSMEg8FgMBgMBoPBcBFFPn3t4BxYk6dr3gZ7wcUoJiv26ZvN480LWttsVJP5KaC2ACy31qQCnEKJpp84DxybmJQtoIDXns4idihKLLhqAdXgW/CCy0fgEhh33QcM2u4D1Oh0BVz37OkGeAtcccUCtsCvSt+Qa0dgWmnfIctwRgEJ8IdyxPtcc4KqFfRkCok2KuA9+MfTrsoUEm1UwF/wTdCQaGseMAMeetqnIdEZBWwGDYk2Z4JTQUKijdVgpqxXhsQRl78H3HPpCPihxnUFWF0NavkK5y2AFcA+QB+XwW5KMa9T36pIfYGRufiu4bXvi9QXoCWR+qnsZ64UUEzJxAuwXHl2FWylZ6/BcfAogn/SS59+WeI2EQeoDB4GD0wqQG5+Huw84z2pmFEqQu5moYQY+JnS2LPW9RCsBzvA/6Z8wKsAm/eik8boYizA5r1oAydMWUAd+ETpS4JPwWVqt9ACvL/eyjHvwLWQm78GPtaQJ2t/eb/hV9QWID8tlXna8qJCM/iRHN4u/d1Mz05RRmPDQjrYUg15JTRWO5sKWmXFaQF+6AI/ROz1o5JXFFUe8E3zWV7J81NA0uK8JxlEAfeVM5UOtzWf6SJbedu0N62KSpC3HVYmlHF+T3mvEvyu1N6T5L1FvsmLhVjQBvjAM+YiOSbpjX+DFZSEfFHC0gF55b2QCsiJvLD3f2R290wjmXmuafbG5cVCTp4AG8DGgO9/AvuF/gUn4/LCKuCYTE7m2jczZJL/qIB5lGUxZFxeNlfgcl0On3f5zWAwGAwGwzKcAI8akhohl3l1AAAAAElFTkSuQmCC{scale="+$scale+"}>"
+!endfunction
+
+IBMEntityColoring(deliverytruck)
+!define deliverytruck(e_alias, e_label, e_techn) IBMEntity(e_alias, e_label, e_techn, #232F3E, deliverytruck, deliverytruck)
+!define deliverytruck(e_alias, e_label, e_techn, e_descr) IBMEntity(e_alias, e_label, e_techn, e_descr, #232F3E, deliverytruck, deliverytruck)
+!define deliverytruckParticipant(p_alias, p_label, p_techn) IBMParticipant(p_alias, p_label, p_techn, #232F3E, deliverytruck, deliverytruck)
+!define deliverytruckParticipant(p_alias, p_label, p_techn, p_descr) IBMParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, deliverytruck, deliverytruck)

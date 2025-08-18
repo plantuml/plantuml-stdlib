@@ -1,0 +1,13 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $ibmcloudlogging [64x64/16z] xS61400000CXXFdRpkElMXu0001m
+
+!function $ibmcloudloggingIMG($scale=1)
+!return "<img data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAAIGNIUk0AAHomAACAhAAA+gAAAIDoAAB1MAAA6mAAADqYAAAXcJy6UTwAAAAEZ0FNQQAAsY58+1GTAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAAOxAAADsQBlSsOGwAAAe1JREFUeNrtmr0vBEEYxhcnCrmKwlf8B/4BUaBQS0Qh8RkiGo0g0ZFoHJ1IFBIaRETBFRLVVa4WIUKhchLJKSjE53o2JrI32VubtcvszvMkv2JmP3Lvs/POzLt7hkFRlM4qUeA3mCHF4Om+pbqPABrAOcBZ9SAF2kBtzOadgrkhUST4E1ClawqkdAm+mAGtOs0BTilQ98c5G9Y+gKsADaAB/uYAreoR3UaAvLzf62ZAk9S+0s2AUal9mYhgEMNgzdZ+FjVL9ofr2kG31JeO4gjYsnLX1q4Ae6DZ5ZoWsCtN+tdgv8zh5FmpPaeYAW/gDnTa+pJgEFSDU/Ag+hvAPFgBldJ9hsB5IqK5vAE6QI+tz3qY42AMbIs+63i5w/WL1tNXZR/gV33gBQxI/VbA/S51xwKYUWkj5FfvYtgfgiUx3N10BibAkWo7wd9qBxyAETAJGqXjx8Iga8h/qLgVDkJPYBmsgl4wBS5ErmdVrwWC1CtYF7AWoAE0IBrvA8KW6fb+gSlAA2gADaABNIAG0AAaQANYC3wrZxT+R8CMUbw5LyMgE+MHnvFiwDTIxzD4vIitQE4fRh7BJqgxvj40JCMe+C1Igy5wY7jVxv9RjwdwPlcBGkADaAANoAE0wJ+CWGPNKMfAFKABFEVRGusTlV1FpiL0ZngAAAAASUVORK5CYII={scale="+$scale+"}>"
+!endfunction
+
+IBMEntityColoring(ibmcloudlogging)
+!define ibmcloudlogging(e_alias, e_label, e_techn) IBMEntity(e_alias, e_label, e_techn, #232F3E, ibmcloudlogging, ibmcloudlogging)
+!define ibmcloudlogging(e_alias, e_label, e_techn, e_descr) IBMEntity(e_alias, e_label, e_techn, e_descr, #232F3E, ibmcloudlogging, ibmcloudlogging)
+!define ibmcloudloggingParticipant(p_alias, p_label, p_techn) IBMParticipant(p_alias, p_label, p_techn, #232F3E, ibmcloudlogging, ibmcloudlogging)
+!define ibmcloudloggingParticipant(p_alias, p_label, p_techn, p_descr) IBMParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, ibmcloudlogging, ibmcloudlogging)

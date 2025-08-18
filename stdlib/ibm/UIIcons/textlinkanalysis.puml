@@ -1,0 +1,13 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $textlinkanalysis [64x64/16z] xS61400000CXXFdRpkElMXu0001m
+
+!function $textlinkanalysisIMG($scale=1)
+!return "<img data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAAIGNIUk0AAHomAACAhAAA+gAAAIDoAAB1MAAA6mAAADqYAAAXcJy6UTwAAAAEZ0FNQQAAsY58+1GTAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAAOxAAADsQBlSsOGwAAA2RJREFUeNrtmmuITVEUx/fMGM+RZL6QJq888kEKIc8hKUnIB5TII4+RZ40mjBvDIKIUeY1X5FGSR4OUvPkoKZJX3o8JaVCu67+adWu32nfuOTPn3jNz9/7X78NZ95x77lln7bX/e88o5eTkZLOyDLGYh3NqOz8dvzEwZdteAS4BtiegSUMfo64CXAJcAhp8D3A+wA0BlwDnA1wFuAS4BDgf0Ch7iBsCLgGuB2ScD8gBUVsroBN4CqbYmACqxP2gCzjF5NuUgPlglHZMVTDBlgR0BltE7Co4YEMCqPQPgjwt9gPMsaUHLAIjRGwFeG1DArqCchGr5GaYNh8Q1ySwCvTn7B8DG8CvFJo4Kv1WWuw7mJtuIxTvwLu14wJQAsaA8eBDChJQBIaJ2DLwJt1WuCPYluCzfuAu6BXww3cDm0TsEqgIYy2wEbRM4s5ug+EBln6FuOc3v6UfVALoDU8XsZXgooi1BZfBtAASsAQMEbGl4F0YCdguvuMR2MEObI84txk3xpJ63K87KBOxC+BwGMth6vpDDW8/yizgWSEmTAs9wN46NOB46bfQYlVgXhj7AU0N1rOSy1zXZjAV/BZxGq/nhXtLpuVgsGE4vA8jAUVsQuL6y+7LpJM8HVaJ+FhwA7T3cL+eYL2IneMhpdKdgHZgtYjtA49rueYmv73nIt4X3AO9k2xwUOk312Jf2XuoMBJQyl1dd1+lHq57AgaBByJewNNkYYLrqLIGitjioMyV3wT0MGSefMBnj9d/AiO5fHW14R4yQ8TJQEVE7Cw4EaSf9qOtIFc7fgF2+vyOajAZ7BLxXJ7O1mqlf0iU/heeXQKTn6mokH29rmLwpw73jXIZv+TZRH8REXaPlNwBhub7MYwEZLPp0UXj9nQ9709riFfgiJjfZxnOPcMzSuBLSi+aCfpox7Fapj2/ogcbzeWdSNRjFqZqTZ1Mebyu10VN6H6Av+MOT5PPDJ+Rx5jto9H6Uo4hts4wXsdpx7TBMZGnvyBFRukoaM09gJrfLR4OV1K1peTlv8WrxdKzzGCEGq28DAH94cl8lKsMkl8fsAb8tDUBD1XNJqSyNQG0HP1nawJo1+WaykCZZoG3oIPKXGUlq4DryiKZElDMGw5WyOQE6S+rx1XNVlU+O7NMUkQ5OTk5sf4D5KuSHOVALYgAAAAASUVORK5CYII={scale="+$scale+"}>"
+!endfunction
+
+IBMEntityColoring(textlinkanalysis)
+!define textlinkanalysis(e_alias, e_label, e_techn) IBMEntity(e_alias, e_label, e_techn, #232F3E, textlinkanalysis, textlinkanalysis)
+!define textlinkanalysis(e_alias, e_label, e_techn, e_descr) IBMEntity(e_alias, e_label, e_techn, e_descr, #232F3E, textlinkanalysis, textlinkanalysis)
+!define textlinkanalysisParticipant(p_alias, p_label, p_techn) IBMParticipant(p_alias, p_label, p_techn, #232F3E, textlinkanalysis, textlinkanalysis)
+!define textlinkanalysisParticipant(p_alias, p_label, p_techn, p_descr) IBMParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, textlinkanalysis, textlinkanalysis)

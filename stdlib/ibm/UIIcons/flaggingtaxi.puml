@@ -1,0 +1,13 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $flaggingtaxi [64x64/16z] xS61400000CXXFdRpkElMXu0001m
+
+!function $flaggingtaxiIMG($scale=1)
+!return "<img data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAAIGNIUk0AAHomAACAhAAA+gAAAIDoAAB1MAAA6mAAADqYAAAXcJy6UTwAAAAEZ0FNQQAAsY58+1GTAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAAOxAAADsQBlSsOGwAAAvhJREFUeNrtm89LVUEUx6/vmW3KSFpYkIWuyiAjctHGTWktWkQLwQiKXhrRJqP6HwqJVhnVth+EtOkHmMLTpQsXQvs0y6CUfqwixL4Hz4PX4XrvfffNzJ3XOwc+4Nx757073zlzzsy8MQjU6tsaHH5XJyiAXtDG1xbAOHgE3v+vAmwCd8FlkN/gmVUwCq6BPy4FyFv+/CbwFvSDXMRzdK8bHAXPWJBKOnEMbAOzvglwjxuf1NpBC3hTQZ0hcAOcYgGnwQ8fBKAx/1j0/CIPhatghHusm3uvZIe5R78m+I494CXYzOUOsBc8T/qSOYsCFITA1PiD4Cn4wtDfXXyvvFMKCV2fgufWsms/OY4EPghwXJRvgpWQ51b4XlTdMBsEx8Q1GgrzvgjQJspTEc9OxdQNc/074toEeFjpS9oUwGbqDnN9GjZrPgmwIMo9Ec/2xNQ17vouBBgX5duc4qS18L1ye2fb9V2kwUXO0SWRm8EAR/9vYAvnbkp5u8WscDAkDZLrvwD7hOufBN/TvmSjRQFobn+fc37JqKFPYuqNbrAuMOr6roLgdXbRpDYJhl24vqup8CrP7bfzDC8X8Rx5y7mQxVCY6/+q1vWzWA7v51TVx0OhIeFyeJinzeVG0+kHtbYfkMYuckPzwvV70+R810EwrbWCI+AKOBEybS6YarwtAZo4YlPKOyBmbNXYb3C62qhvW4Bd4DWv8Ewa5fvzvNYPfBWAev6VhcYXwQXwwcZ4MykAuf0hA5+zxG4+wxsqczYDjkkBzooy7QVeAp98TjMmZ4Kdojzke+NNCyCj/cda2FyoxQ0RFUAFUAFUAG+nwtXYWhYrVR0CKoAKoAJoFjBkn4P1DZFMo3qWHlCs9yFwCyzXswD0WyBth9Gpj6V6DYIkwoCIBZoFVAAVQAVQAVQAFUAFUAFUABVABVABfDObvwvE7RDF1a15DyhmVNcbAdLuEC1zXSdm86gsneyig9E7wY4g/rgc7SLRIaszwb//Q6SmpqZmzf4CvJWG9HMhKNcAAAAASUVORK5CYII={scale="+$scale+"}>"
+!endfunction
+
+IBMEntityColoring(flaggingtaxi)
+!define flaggingtaxi(e_alias, e_label, e_techn) IBMEntity(e_alias, e_label, e_techn, #232F3E, flaggingtaxi, flaggingtaxi)
+!define flaggingtaxi(e_alias, e_label, e_techn, e_descr) IBMEntity(e_alias, e_label, e_techn, e_descr, #232F3E, flaggingtaxi, flaggingtaxi)
+!define flaggingtaxiParticipant(p_alias, p_label, p_techn) IBMParticipant(p_alias, p_label, p_techn, #232F3E, flaggingtaxi, flaggingtaxi)
+!define flaggingtaxiParticipant(p_alias, p_label, p_techn, p_descr) IBMParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, flaggingtaxi, flaggingtaxi)

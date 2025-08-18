@@ -1,0 +1,13 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $overcast [64x64/16z] xS61400000CXXFdRpkElMXu0001m
+
+!function $overcastIMG($scale=1)
+!return "<img data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAAIGNIUk0AAHomAACAhAAA+gAAAIDoAAB1MAAA6mAAADqYAAAXcJy6UTwAAAAEZ0FNQQAAsY58+1GTAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAAOxAAADsQBlSsOGwAAA4lJREFUeNrtmWlIFGEcxkfTDSMjpDAztaKwPoQdYEGX3dANlUV0SReFYRHRYRhFUn2KCu2gD0FE0Z2bHRQV3RcRFWu33XZgFN3X2vPHRxllNrNmh5nZ94Efqzuzs/s+877v/xhNU1JSUlJSClmFWfx9UaA36ASakO/gA7gLLoIr4KvbDBgAMkEfmiADfAGe8HhzEMtjX8BOsIGGONqAbmAFX2+B3WAfuGFwrgek0qzJIA4cBnPAHacZUAcsAdngHlgE9tbi85FgDFgJGoP5YLVTDGgI9oA0sAzkgp//eK1osArMANtBBvhm9p0yU/XAEdAepINNwP8f15MNshA8B/NACs3129EAmbYFoDPoB06YeO1rwMcllQQO2NGAHDAJjAbHg7C0ikAp95MHATbSWivcpB/XgT9M1uv+IEaVPN59eY23kwHrwVOw3IKcYjr4BRabcbEIE67Rg+t+GJOYYOsVWAcWgktMopIYLt+DEnAbHAQvrdgD1jCJybQwpb7J70tnxKnPUNuIN2M8mAu6g/ucnUHJA2LAayY9uRbXFcmgjDVEdcn+MARkgTZgG5fOJ7NnQH8wFkwB7yw2oJQYSYqrq2Ajl0wWl6iXx/7aAA8LmKmcVhnM8FrywpKutmYEsKP8rC6PgWlgKNgKftS0BGTgsziwGDr9EHwGLUAiz5O09Czo64DSXwqtU6xJxv0pCjRjRpfCtSNl6XmDfH8i8Tqk93GZ6bREkPyKMVWfAQmsweX9EeCCyxpAEYwgJWzMVEmEPMziZPBdXDh4jaFyLejJblQVA2Yypo7SdWrcqALe5MF6AyK54e0A5zR3S0rrZ6Ct3oA0ppJ5WmhI+pFN9QbIhvBWs6AJaRNJ+K6rN0BSx2IzOy02VxwjQaUBDaqniC5WNKvHYr0BUtDEhogBAxnyD+kNKGJOHxMCBkiH2UcqDfAySxrp8sEPZxK0tOKNCgOkaSDt7Bw2F9yoVmAzOA12GZXD18Fs0FErfzZX5qLBJ3PNSy9RHr19NDLgDWfCAtAVHDXqoDhM4Sx95XmkPJAdBB7pTwgLsE628Fg+Gwg+hw08noOVvmE73v0JmkEHKVBDRMribHaAPAyTjx0wI6KY4ibw/zNa+fPJgA9qamqKRnPNpDJPSHRAji9Io7SQfyspKSkpKSkp1ZgInbTZb+tlVbGgpKSkpKKAiXJUNFFRQElJSUlJKXT1G/y8tnLIw/C2AAAAAElFTkSuQmCC{scale="+$scale+"}>"
+!endfunction
+
+IBMEntityColoring(overcast)
+!define overcast(e_alias, e_label, e_techn) IBMEntity(e_alias, e_label, e_techn, #232F3E, overcast, overcast)
+!define overcast(e_alias, e_label, e_techn, e_descr) IBMEntity(e_alias, e_label, e_techn, e_descr, #232F3E, overcast, overcast)
+!define overcastParticipant(p_alias, p_label, p_techn) IBMParticipant(p_alias, p_label, p_techn, #232F3E, overcast, overcast)
+!define overcastParticipant(p_alias, p_label, p_techn, p_descr) IBMParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, overcast, overcast)

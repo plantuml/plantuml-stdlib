@@ -1,0 +1,13 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $datadefinition [64x64/16z] xS61400000CXXFdRpkElMXu0001m
+
+!function $datadefinitionIMG($scale=1)
+!return "<img data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAAIGNIUk0AAHomAACAhAAA+gAAAIDoAAB1MAAA6mAAADqYAAAXcJy6UTwAAAAEZ0FNQQAAsY58+1GTAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAAOxAAADsQBlSsOGwAAAnhJREFUeNrtm71KA0EQxyfmLC2MNkreQR9AMGChZbqgKPgElmppyqT0GYKQQvARYqmVHwTESjBiZQRrQWfJCse6l+TuZmd3LzvwL7KXZPf/y+3HTBKAECFCzHKUEtqrqDaqhlrx3OM7qoc6Rg2mASDM36GWCvZhf6DWVQhzmie2CmgepKeW2qgDUCvwlP/nLdI8aXXKdcKX+BnjTXsHzFQEAAFAABAABACzHBHR+1DlDp+oG9Qp6t4XAJS5wyJqB7WFOkB1fZgCJnKHeVQH1fABQM3g3WkcAsUUoMwdGtJ0pEAAU9PBtV1AmNxHfXPdCS5ug6wQXD0HsEGImAzFzwkiepBQo1MgAMGaULINoCoPNZVY2y5qG7XGBMHqFGgr5v+iIq9ZnQ4cADYzXmOB4FMyZAQCB4DrjNdYIHAAEKv9UNM+lNes3gkcu8BArvZpt8FJEEh2B65zgDC6Z2BNyA3B94pQ7ulQhJJYLggUAIaalNYbCBQAbpXHHZ8glDVtZ8rj5oSOX2BUvyvHoNZRz6g+M4S+7Lce+3DHjocCwGvaTi1CeEQ9mVgE2Ss5GcdzbnIXcA2ClaOwKxDU4irIMR1xnANsQ0gyL8Z0xXUQsgVhnPku90mQG0Jq8xxHYS4Imcxz5QKmIWQ2z5kMmYKQyzx3NkgNIbd5G+kwFQQS87bqAXkhkJm3WRDJCoHUvO2KUFoI5OZtA0gDwYh5AL6q8CQIAMnVXTBl3hUA00AwYl6E7rvzN9D8rp64jzSLHJgyn7QG9BxbE4yZTwJwAqM/GLkEwYh5Ebqi6BfqAkY/eV1GLeTso5nhNaKw+YDakOM5RF1CiBAhQhDHL/Td3SmEVO4EAAAAAElFTkSuQmCC{scale="+$scale+"}>"
+!endfunction
+
+IBMEntityColoring(datadefinition)
+!define datadefinition(e_alias, e_label, e_techn) IBMEntity(e_alias, e_label, e_techn, #232F3E, datadefinition, datadefinition)
+!define datadefinition(e_alias, e_label, e_techn, e_descr) IBMEntity(e_alias, e_label, e_techn, e_descr, #232F3E, datadefinition, datadefinition)
+!define datadefinitionParticipant(p_alias, p_label, p_techn) IBMParticipant(p_alias, p_label, p_techn, #232F3E, datadefinition, datadefinition)
+!define datadefinitionParticipant(p_alias, p_label, p_techn, p_descr) IBMParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, datadefinition, datadefinition)

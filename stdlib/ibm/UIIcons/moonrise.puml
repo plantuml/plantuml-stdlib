@@ -1,0 +1,13 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $moonrise [64x64/16z] xS61400000CXXFdRpkElMXu0001m
+
+!function $moonriseIMG($scale=1)
+!return "<img data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAAIGNIUk0AAHomAACAhAAA+gAAAIDoAAB1MAAA6mAAADqYAAAXcJy6UTwAAAAEZ0FNQQAAsY58+1GTAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAAOxAAADsQBlSsOGwAAAyFJREFUeNrtmk1o1EAUx9NNRT1YULR1RQURKXjxYAUvghZtRfFg0ZN6KaLCCoIXQahuLVKoKOyh+IGgKEXFk/ZSFKSCKO2uetHeBPGjtoilitZP0P/QWRjeJmnSdGay7vvDD/omeWnePzOZSbKOw2KxWPZ0UmJNruXis2CjjB9WkgHF4ouyZoKbgOKtmuAmpHhrJrgJKt6KCW7Cijdugmup+M9gzhRtRkxIWSq+2WPfZrlNVVb3OiFluPhx0AQGPPYfkNvGTZqQcsypWPxgwD6DPiaUZQ9oV3pAsfh8iLw8MSErj6VF1ZoNFif+HTwAhQh5woQtoBF06TzBagO9bLoFFCKalvh7QCLFBrABbAAbwAawAWwAG8BisVgVqSqD/2edfL5vAKvAIpCW2986k+8Dh8BTcB88/x8MEAUeBvvAsoi5wpTL4CIYLTcD5oMOsB/Mjnmsn+AQuKrjRHW8EdoFzoOFM3Q8YWB7ORggPrLkQMZn+y9n8iPHHfASvAcfwFewVA6RHrDCI/eLriEwUwbMBbfADo9to3I4XA8o5BPo9in+NdibZANcn+LF2O0EZ+VVDsq/DbaT9h8yv0v+TVULxsAf2wbkPIoXV70FPA6R3+1R/BuwEzzzyakHfeAGOG7TgN0eY/4F2CansTD5B0mbuD9sAh99ctaDXnmTPQb6wT0bT4ML5NWjVz5s8WIhdIG0vQKbA4oX0/YVZYYR538tzowTx4BTsgh1zLeELF7ohDRRzRc9YiQg5y9oBb+Vtjpw1LQBS+QiR1VnyDEvtNyj67eFXP4+cUq/OmeImdoNyJAV3oi824fVATCLTHW5CPnnwLAS14AjpgxIeczLHVNMdTS/lbSdlgulsBLT4hnStseUAWtlF1ZXeD0R89NK/A3cnMZ5XAITSrxSPmVqN6CRxP1O6U9bgtRE4t4IvUfVhFP6+6GtJgxoIPHdiPlrSPwoxkzUR+INJgyoJ/FQxPzVJM7HMKDgMTtpNyBN4uGI+bUkfhfDAPqiZLEJA+bFNKCGxGMxDKCLpjqHxWKxIqjK54mrYmrmz+NsAIvFYlWw/gGy/54DtgeIZwAAAABJRU5ErkJggg=={scale="+$scale+"}>"
+!endfunction
+
+IBMEntityColoring(moonrise)
+!define moonrise(e_alias, e_label, e_techn) IBMEntity(e_alias, e_label, e_techn, #232F3E, moonrise, moonrise)
+!define moonrise(e_alias, e_label, e_techn, e_descr) IBMEntity(e_alias, e_label, e_techn, e_descr, #232F3E, moonrise, moonrise)
+!define moonriseParticipant(p_alias, p_label, p_techn) IBMParticipant(p_alias, p_label, p_techn, #232F3E, moonrise, moonrise)
+!define moonriseParticipant(p_alias, p_label, p_techn, p_descr) IBMParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, moonrise, moonrise)

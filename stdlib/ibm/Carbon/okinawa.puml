@@ -1,0 +1,13 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $okinawa [64x64/16z] xS61400000CXXFdRpkElMXu0001m
+
+!function $okinawaIMG($scale=1)
+!return "<img data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAAIGNIUk0AAHomAACAhAAA+gAAAIDoAAB1MAAA6mAAADqYAAAXcJy6UTwAAAAEZ0FNQQAAsY58+1GTAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAAOxAAADsQBlSsOGwAAA1RJREFUeNrtmFuITVEYx88xM8eYJJd03AmhdE40mjGRHEWRePGkPFATeZnJJcIjD8YtHuQJUfMkJeKQDMrlqIlmUi5NSYjcEoYpyn/Vf9fuOOfsvda+zsz3r19nr332uu5vfd+3VyIhEolEIpFI5E3XSJj95f1oqNqnAQ0BC0BHSAuQBZ1+Ddyr0mAx+BCiBai+FoFxcTD/I+AnFyIspdnn0agtQA1kCzgVgQWoPjd7tQIvC5ACbbxui8DyrD4PcSxGqjKYdD1oBme5D3eDmxEsgNoCv8B2jmck730Ef902knT4fwPYxOtpYBIjx29wCRwEjyP2QfPBLrAW1II/4A14xf9Pg/OmC6DibQO4AnrBC9AN7nH146RhtMgMmAXqwGrwCKz0mgdM4e8csGYgZXBOPkA5yQllEpG0D54/6HZU+RzoimvqG3k71SFb3FCwFCykU83w/hk6rYfgNugLa0BJA0ejJnACjDYwrblgLPgKesAP3h8OZoBRDGNPDbbAF9AKbuk4aKcFmMi4X8+JN/ItvgfPNBatkdcXwGFQKPOsem4HWMdyQWMys8F4Wk+BltRJ3rpdACvuT2ZiMYb3vzOcqEZv8NqN6pgvLAEbQbvLeuu5Le4yvve6rKdC9nK+LHU9gvc/g9fgW3FekCzhTFRicZkVehj3uw22VxM4yTej3uhVzfqraDHPwVbwwGAMGTIdTGVe8MSeF5RygjVgJlnmopNcUfkOExHrI+Ud2El0pXzFPHCf2+4lrckunTOIlFMUaGc6aXcuCU1np7bLRXAdtHACbtsr/r+WTu04WMG3qOsc7e11aWxDX+J0cX2n9or/z/vcfyAnQv1aSYe9lHX6mKigjhImqLsF7OWcoQU0lOkvFwcLyNomGUsF7QN0y5H7gKAH7KS8g5PUdpqD3glKFHARBSp58f5W/i8KOC2An2ril2SlLzzry7HPMPfXUc7kPMBU+8FecADsc3hWPbPH5bOeVRWzySeY+6dYp4blyHyAV1kmbfI2LUvQORTR3gJBnwmqgW8DxwzqKgv4lBhgx/CiOOcBJl97xnsvgnYlExSJvPkAr3mC7h4NpT/xASLxAYHtQU/xOaxxiA8QiQ8I7Dwg53N7gYxPfIBIJBKJRINX/wBw7c9fwlW6EwAAAABJRU5ErkJggg=={scale="+$scale+"}>"
+!endfunction
+
+IBMEntityColoring(okinawa)
+!define okinawa(e_alias, e_label, e_techn) IBMEntity(e_alias, e_label, e_techn, #232F3E, okinawa, okinawa)
+!define okinawa(e_alias, e_label, e_techn, e_descr) IBMEntity(e_alias, e_label, e_techn, e_descr, #232F3E, okinawa, okinawa)
+!define okinawaParticipant(p_alias, p_label, p_techn) IBMParticipant(p_alias, p_label, p_techn, #232F3E, okinawa, okinawa)
+!define okinawaParticipant(p_alias, p_label, p_techn, p_descr) IBMParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, okinawa, okinawa)

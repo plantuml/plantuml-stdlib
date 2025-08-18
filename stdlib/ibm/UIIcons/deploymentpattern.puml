@@ -1,0 +1,13 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $deploymentpattern [64x64/16z] xS61400000CXXFdRpkElMXu0001m
+
+!function $deploymentpatternIMG($scale=1)
+!return "<img data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAAIGNIUk0AAHomAACAhAAA+gAAAIDoAAB1MAAA6mAAADqYAAAXcJy6UTwAAAAEZ0FNQQAAsY58+1GTAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAAOxAAADsQBlSsOGwAAA51JREFUeNrtW0trFEEQrp3MQZODBIyoFxU9Kp58nXwQETyJCLv4wH/gVUWEBA8+/oD+gBUyEEMOgqD4unqRHAQJajzloGAUFS9qrGZ7pdPMzlR3V0/3DFvwQaZ7Z3e+b7prqmoqAEOrhbUl2C1l/r6tiJuII/L4BeIqYtmRfFc5zjgveISZ/ALiEGKDxF7ERcR9xHcH8uJGJYhTiEXEmxgFuIs4mDM+itiMmHMg3zd2ERJGAY5azlHJq9u2y+UTOAUYtZyjkP8twS4CpwDPLOco5M9LsIvA6QNey4tcr42vIDqILw7kM7nnF6UPSLh8AqcAguAs4pI2vgfxzpF839hF4NwCwt4Tx6KxJJLryIh7nLpSgkWCriKARjDVokBW8iYCtH2EoRYisJKnCuA1FjcQAbjJUwTQ91w3oAjs5IW1LMJR1gsg3IAZbazD+dtJ6FicuBLA1xZMDYISGOCYqlgJtrYLcVsmY4LDE8R1xIdBAhQ9Z4u8c4wi7ES8QowrY2cRxxEHEEu6ANQgQxdhJmef+vJLebZq+PkJxI3+TU0MyedFbHW0E7GFwsFzAZdYvI72OM8JBonFPfqMbdIJbtLGPyOuDaoHFOXbpwORn9KOp4nnfUM8QGxEbEH8RMzLJ8HHojig0ljcsy0pj3CjSLDI29eFvHMylLcSKORXHZ/r0QigiwBNuvMm9YCswlpAlAI0kvgwEmy4AOR+grSh5Mk1zLSh5Mk1zDoI0LIkr+cyWZN9gHUNUz9BtLncQRxDrEM8R1yG8pebsZEn1zDVk0TGtCCzp76JDFAUFPdBnC85nWuY6om3NPJ9Gy9ZAb5reCZGqWGuEUH1AYdr7geoNcw1PmEYCSp/v2xAXmPcT6BOXEGczPEDK8xOkLM+0AbHGqZaE/wBvY5O0dQ4IT/8SP6ICfkp7Xja4113rmHqccAylNTQIjSnGuYI88WI1XJGG3sLjL29BiuhlDx3LqBnYUBNSAzjhpbBSiitYaaenBGYJCSetgMAoYaZeiIfsp/AqIaZeiIfup+A/P2pJ/LkWDymSNAHeepb59oJUJVtJ45Zm20cQO3adunt3QG919tj2vg56HWlfw0pAEWE3eDWT3APsT9nfEyG67NcGZSPMJSjt3fScq5SAZxj8QL7YzkXxAn66Cd4ajlXmQ+g+ASXZgpRoO3kOMFPiAtQ/j9IlQugi/AX3PoJBMF56fAEfiEeyqdAzGX6/4+/NgwtfvsHXC0tTCEdXfkAAAAASUVORK5CYII={scale="+$scale+"}>"
+!endfunction
+
+IBMEntityColoring(deploymentpattern)
+!define deploymentpattern(e_alias, e_label, e_techn) IBMEntity(e_alias, e_label, e_techn, #232F3E, deploymentpattern, deploymentpattern)
+!define deploymentpattern(e_alias, e_label, e_techn, e_descr) IBMEntity(e_alias, e_label, e_techn, e_descr, #232F3E, deploymentpattern, deploymentpattern)
+!define deploymentpatternParticipant(p_alias, p_label, p_techn) IBMParticipant(p_alias, p_label, p_techn, #232F3E, deploymentpattern, deploymentpattern)
+!define deploymentpatternParticipant(p_alias, p_label, p_techn, p_descr) IBMParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, deploymentpattern, deploymentpattern)

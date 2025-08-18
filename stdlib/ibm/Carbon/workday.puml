@@ -1,0 +1,13 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $workday [64x64/16z] xS61400000CXXFdRpkElMXu0001m
+
+!function $workdayIMG($scale=1)
+!return "<img data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAAIGNIUk0AAHomAACAhAAA+gAAAIDoAAB1MAAA6mAAADqYAAAXcJy6UTwAAAAEZ0FNQQAAsY58+1GTAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAAOxAAADsQBlSsOGwAABFhJREFUeNrtmntoTmEcx8+MEIbcJdRkyW1/DMVmuQ5jS0sh172lJn8gfyjFEP+ZXP6QemdGaiZlLtEayTVCyv2ShVw28sfIyO376/2+eXt7916e85xz3vH86lNnZ8/ld77v8/zO83vOY1nGjBkzZszYf2spLvc3EOSAIaAP6Mn7H8B78AxcAi//JQHkYVeA2WAY730BjaCefw8GvUAn/v0QnAL7KUqrFGAo2AAW8oHPgHPkXQt1+oI8MouCHAHbwePWIkAbPvgm8AmUgb2gKcF2uoBVYC3oDjaDbeBXMgvQDxwGk8BOsJG/vh2TUbAFrAEXwCLwNhkFGMgAJg4vBac1i5sPDlLQHF2BMlWTc73567QH48ENB6bWU3AM+MB8UK1hdGkRQB76Il9rU8ATBwOrxJSzYCUoABXgp9cCbAVzwTRwx4XXaiOn2nrQDtTZjdh2LBOsY6S/7uKCSvrawb4zvRRgDxczpR6sYkvZ9x6vBBDls/mK+uqBAM3sO9vOKLAjQAnX8NUe5jLVjAklbgvQnkvcA+CbhwJ8ow8L6ZNrAsiQ6+zAYkfFztCX0W4KkMU1+e0kEOAW1wJj3BRAOnukkOA4YZ/pS5abC6Gu4Aq4myQbO018JSaLP8aMGTNmzFhrMNV1wD4rsGdfZjMTfQFWg93gt2I7sq/5xgpsw59yayVYYwV2gMfaEGAqGESm2mhnLH054eZSuI5L0AIbjvu4eqvntaoV0Jfzbgogaah84SlUrN+DdcuJXPdUbKuQvjS7vSEi02A4SFeouxi0tQK7uhW8XqTQTjp9qHF7Q8TiXsAPxVFQDGrBK1KrOA0K6cNpLwT4CC4rxAEJWiOBP+SeXI8A4xTm/xX64roAwWkwgXM6keDXGDZsa3ivOME4MsHO8NclgMzf/DjLy3dD+ax1CHwPuf+d9+Zbf88IxLJ89n3CSwGeg3sJxIF5IC1s+IdOgzSWiXf436cPngkQHAXTQYc4g5981XkQ4X9y71qcwVD6yrP76+sSQJyQXdnJMcplWIGPGP4oZco5rzNitDWZfdYkgwA3uRYvjOPXl8/ZVVHKVLFMrFEgfckhiRvJIIAkMSfBHKvlAxcSrJaAo1b0neQmllnCOi0lP3PY5+9kECCe5EhOiPWNMfxDg2Ef1tGe/DglQKzkSIa/HH27GkdbV1nW50Ty45QA0ZKj/mAmA1y8JmVnsG4kAZSTH6cEiJYcLeVcrUygrUrWWRYh+RmhI/o7IUCk5CiFw18CVkMCbTWwzvKwwFpgN/lxUoBIyVGuFTgq61doz8+6uWGvP1vJj5MCREqOJJC95pxN1M6xrk9n8uOGAMHkqBsosgKHG1WOsv3kZkkR29KS/DgtQGhytIBr9nIb7cnpj+BpFC3JT7ilWvptAB1OZ4Kzy0ZbnxgDJlqBMwmVut7/To2A0ORolGLwixQMR+lKfiKt0XVbMDnqCI5raO84R0Kz5cwZZGPGjBkz9t/aHwMh8i/exOqGAAAAAElFTkSuQmCC{scale="+$scale+"}>"
+!endfunction
+
+IBMEntityColoring(workday)
+!define workday(e_alias, e_label, e_techn) IBMEntity(e_alias, e_label, e_techn, #232F3E, workday, workday)
+!define workday(e_alias, e_label, e_techn, e_descr) IBMEntity(e_alias, e_label, e_techn, e_descr, #232F3E, workday, workday)
+!define workdayParticipant(p_alias, p_label, p_techn) IBMParticipant(p_alias, p_label, p_techn, #232F3E, workday, workday)
+!define workdayParticipant(p_alias, p_label, p_techn, p_descr) IBMParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, workday, workday)

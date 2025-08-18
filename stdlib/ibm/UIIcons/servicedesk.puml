@@ -1,0 +1,13 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $servicedesk [64x64/16z] xS61400000CXXFdRpkElMXu0001m
+
+!function $servicedeskIMG($scale=1)
+!return "<img data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAAIGNIUk0AAHomAACAhAAA+gAAAIDoAAB1MAAA6mAAADqYAAAXcJy6UTwAAAAEZ0FNQQAAsY58+1GTAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAAOxAAADsQBlSsOGwAAAp9JREFUeNrtmE1IVFEUx984QpGfNehOUpuYnbs2Cm4q3JTgKsWPBEWDQDBBF2aLaOMmKDcqEkUICu5yEWqbFupSWkSF5MdOovKDNn40/i+cgcfRGX3v3Xlzn3N+8EPmjXPnvP+ce999z7IEQRAEQRAEQchGQj58R9zkGnOyvQMkAFkDMkfchFpkCkgAsgb4wlVYC6thDFbAKvY/X+Aa/A4X4Wf4N8gB5MFm2EgnH3b4+SMKYQpOwn9BCeAaHIBdsFjTmNtwHA7DP6YGoNaTHviMWj4dqCnxHL6G/00KoBK+pzmejFW4AD/BX3AD/qb3IvA6LIG34R0YTTGWWiNa4U8TArgLp5P86qp1R+EYXHc4bjnsho+STCXVDQ/gfCYDeAgnYC47vgNf0InvefyOAgriKSxi7x3CTvjO7eBhD4W1wzenjKFavA5+hPsaOmyfWn6SLp2VbN2ph5twxc8AEm1v/7xalPrgY+oA3ezSOrND3x+ydfE9uOxmTXATwA2ad1dYK7bTpSrdJE603raTVX/vwxmnm6ewi8A+wJvs5Jtow+IXatf4DTbYQrgMb8G3loOnUE4D6IUd7NigT7885ys8oEtmgjKaIkvpuBlS1+ghdmyOdmeZYphqsDNEtWoPoJ9dj9Umps3y/tDT60OVNtuGyqIa+3UHUEh7ezsv4ZYBd7RbVIudLqpZWwAtbECV+IhBt/UjrAsKqWZtATSy16807PB0skc1parZdQClsIYdmzbw4Q6vqYZq9xxALfu/H6Rp8LpyqHbPAfBb3FnLXGbPqP0EuecYNMZePyGDQExHB0St4BLVEUAkwAFEdASQH+AA8nWsAZfY65DhJx1PUbune4ELiQSQ7QGEzphDF/6cZQpIAIIgCIIgCIIgCFnIMaAccKch6k+wAAAAAElFTkSuQmCC{scale="+$scale+"}>"
+!endfunction
+
+IBMEntityColoring(servicedesk)
+!define servicedesk(e_alias, e_label, e_techn) IBMEntity(e_alias, e_label, e_techn, #232F3E, servicedesk, servicedesk)
+!define servicedesk(e_alias, e_label, e_techn, e_descr) IBMEntity(e_alias, e_label, e_techn, e_descr, #232F3E, servicedesk, servicedesk)
+!define servicedeskParticipant(p_alias, p_label, p_techn) IBMParticipant(p_alias, p_label, p_techn, #232F3E, servicedesk, servicedesk)
+!define servicedeskParticipant(p_alias, p_label, p_techn, p_descr) IBMParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, servicedesk, servicedesk)

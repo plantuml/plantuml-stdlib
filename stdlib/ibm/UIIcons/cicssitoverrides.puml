@@ -1,0 +1,13 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $cicssitoverrides [64x64/16z] xS61400000CXXFdRpkElMXu0001m
+
+!function $cicssitoverridesIMG($scale=1)
+!return "<img data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAAIGNIUk0AAHomAACAhAAA+gAAAIDoAAB1MAAA6mAAADqYAAAXcJy6UTwAAAAEZ0FNQQAAsY58+1GTAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAAOxAAADsQBlSsOGwAAAgVJREFUeNrtm7FOwzAQhh0TMcGOKDwBDHSCmQ2BxIgEXaEL4mEQCzCwFKRKHWBAbMxsMMATFHgBWECtyh81EZEVO0mbRPH5TvoGp1ab/8/5enUTITg4ODg43A3P8NosaIN9sArmaq7lG7yCG3AOfqcxYBHcgzVLL+wL2AafaRNnNFf+ETQtzuwFsAmuwNA0USYcO7JcfBTNUIsx/IRjB8r4ARyCj5oLboBLsKVoOcubASvKuG2BeBGeYztFSyYD5pVx36K076doyWSAU8EGsAFsgNvhZ5gz4gxgA9gAp2uAV/Bnjip+f84ANoANmK4G2BYeZwAbwAawAWwAG8AGONsHRLEr/v8TOAZ3LmXAHuiBpZBeeCxT11S3HSBvAvGdhOwegBboUs4AnfhouXfUTJDExQ9CtCZI4uJbIVoTKOwImcTH13t8TmTCjyR85ePiu5pMOJXExDvTCeat9rpMOfEJpb1IWONJ6z++TG59QmteV+iEqUb4RMSbqr2xG5TExCdVe+tb4aziTaGdL4mJz22WdFl8nQ2oRLzOgC9lvExVvM6AN2Uc3HreqNCAysTr+oBrsBEbB/fevldogHpOpYnXZcAFeK5RPShNvM6A4EmLHTF+6IBqX5D6LRA8abEe/FoCT2L8OAo58WXs9pSxYzRRh0d9P6AQ8TYbUIh4Ww0oTDwHhxB/fO6ZVD03820AAAAASUVORK5CYII={scale="+$scale+"}>"
+!endfunction
+
+IBMEntityColoring(cicssitoverrides)
+!define cicssitoverrides(e_alias, e_label, e_techn) IBMEntity(e_alias, e_label, e_techn, #232F3E, cicssitoverrides, cicssitoverrides)
+!define cicssitoverrides(e_alias, e_label, e_techn, e_descr) IBMEntity(e_alias, e_label, e_techn, e_descr, #232F3E, cicssitoverrides, cicssitoverrides)
+!define cicssitoverridesParticipant(p_alias, p_label, p_techn) IBMParticipant(p_alias, p_label, p_techn, #232F3E, cicssitoverrides, cicssitoverrides)
+!define cicssitoverridesParticipant(p_alias, p_label, p_techn, p_descr) IBMParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, cicssitoverrides, cicssitoverrides)

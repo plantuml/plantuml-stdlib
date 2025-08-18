@@ -1,0 +1,13 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $camera [64x64/16z] xS61400000CXXFdRpkElMXu0001m
+
+!function $cameraIMG($scale=1)
+!return "<img data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAAIGNIUk0AAHomAACAhAAA+gAAAIDoAAB1MAAA6mAAADqYAAAXcJy6UTwAAAAEZ0FNQQAAsY58+1GTAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAAOxAAADsQBlSsOGwAAAxRJREFUeNrtWs9rE0EUnsbgrQVvWhJRi+Kh/4NQjdCKVvDgpYce4o8KYvUfKPEq+INia0sOORSvwQotWi3+A94ERZRqU+LZeiul9XvwAsO4zSa7M3F2933wHXbJfDPz9r3Z915WKYFAIBAIBFlFn0PtC+AieDKmzgZ4E3znYpGHHG3+OPgBPGpB6wh4FXwJ/ra90Jwjr6qCAxY1B1izLwkecAu850B3CPwFfrQpmre8yBPgI+Pee7AE7kfwpDXwvHaPtN+AP3wMgZbr92v3/oDlCJtXPKbMGi302w6FIKFRPr0LFvRvgwsWQuqFhbVs8dtkNcwDFixtfo0NGReLrBUXhaCHEWSAooXJtmO4/kGhsG1Bq9iL1yAlLtfATYuam6y5YXux+YjnxP8AZYKnInpQTxOhRCHf4/koBi+DY+AZ8BjfpwTnK7gCvgYbaTPAIFgBJw+Y8zTzEvgMrIEzYDMNBrgCLhkJUtia6NS/Dk6Ayy4X5/oMuAvWu9i8MrK+Omsk0gPoyT8NMPInTmffarFOZ8NFfvLDxgMijZ+uPCHvMOaXjM3vgPc5rd0zfv+ZOcvp8xPwsGYE0jrr4kxwFQIVw+13uMaYC9i8jj3+zSiP0cOhkpQzoMCnvY4H4HoXGus8RsekpRrFuQHGjdCimJ+PoDPPY/VwHU+CAcaM62qI27cLh2qItpcGGAooi+OU1O20vTTAoHEdJ61thGh7nwh5DxcGaFpssBRDtL00wHfjuhRDqxSi7aUBVozrcsR5cjy2nbaXBngF7mrXlNtPRdCZMuqCXdb23gBbXM/reAyOdKExwmN01Fg7EW8Bambof2hQYUP9+Dshc+b4N6taMaRYayZJ1WCTmxl1bcO0oefs2p2Ww62McEI56g657AdQ/T4d0BMY5nudpsPTymFXyHVLbJabGd20xHS3d94S60VPcJmbGe2aoso47WsqRU3R1plwA3yoMtoW14ubOWZqa4HMF0NigCShkzNgXzwgYwZopHi//+wt6DvBL+A5ZfdDRx9AlSR9cPVNCQQCgUAgEAgEgszjL9BUlt1saY5UAAAAAElFTkSuQmCC{scale="+$scale+"}>"
+!endfunction
+
+IBMEntityColoring(camera)
+!define camera(e_alias, e_label, e_techn) IBMEntity(e_alias, e_label, e_techn, #232F3E, camera, camera)
+!define camera(e_alias, e_label, e_techn, e_descr) IBMEntity(e_alias, e_label, e_techn, e_descr, #232F3E, camera, camera)
+!define cameraParticipant(p_alias, p_label, p_techn) IBMParticipant(p_alias, p_label, p_techn, #232F3E, camera, camera)
+!define cameraParticipant(p_alias, p_label, p_techn, p_descr) IBMParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, camera, camera)

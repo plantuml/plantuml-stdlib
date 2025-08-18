@@ -1,0 +1,13 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $fragile [64x64/16z] xS61400000CXXFdRpkElMXu0001m
+
+!function $fragileIMG($scale=1)
+!return "<img data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAAIGNIUk0AAHomAACAhAAA+gAAAIDoAAB1MAAA6mAAADqYAAAXcJy6UTwAAAAEZ0FNQQAAsY58+1GTAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAAOxAAADsQBlSsOGwAAAjhJREFUeNrtmz0sQ1EUx1+rdMAgNmJBiMViaFhoRFIWxIRYJBjEYBIfW9lIBzH4CIPBQNh8DW0sBtGlIcKARISBCZMQ/5ueJo2p9J73bvrOSX7p0Jvz7vm9+/Ha21qWy8OjOd8AGNSccxOscwnwas7XB+o15WoELaCEcwT4GHKegfYsc8xR8ep1gVOA18BpOQumqPgZ7ot5DSx+2q7iTROQSfEH4DAXBYzbfedNXgNsDZ8h/YiAUhoFlp2jwGfQzUgVbasEn2EjMl3CK40MWQPcJCCcthtE3CYgTFPA1q3Q6+biTRHgWPEmCAg6WbwJ22AMtIKom3eBqJMXl+cAEaA33kExY39V7jeTBTyBMkYBKvezyQLuQTkoYii+iHLfmSzgCBSAEIOAEOU+NlnAJbgF/QwC+in3hem7wDzoBAGNOQOUU/sZAYeANZqni8CvIZ+fcqn1ZVV3Z/MYBHyDOJgAlWAvy3wb9LjcRRKMF6DiAbxYyROeKrAPvv5x51Xx6sB1DOxydJRLgIpzEjFpJc8KE+DxD3N+G7SBIY6hnwqPxR/NYBnU0nTYohHx8atdIegAvaAbXIMRcMLZOTsEqMgHo2AY1IFPGg0P9H4FPeSodldgBSxROysXBKRHA2gCNaCH+rADbsApLaA5/YVIPK3IahIwJh+HRYAIEAEiQASIABEgAkSACBABIkAEiAARIAJEgAgQASJABIgAESACmIPzaCyWQZvU32wTGbQNcnTS6d8KJywJZ+MHshZc5imhxH0AAAAASUVORK5CYII={scale="+$scale+"}>"
+!endfunction
+
+IBMEntityColoring(fragile)
+!define fragile(e_alias, e_label, e_techn) IBMEntity(e_alias, e_label, e_techn, #232F3E, fragile, fragile)
+!define fragile(e_alias, e_label, e_techn, e_descr) IBMEntity(e_alias, e_label, e_techn, e_descr, #232F3E, fragile, fragile)
+!define fragileParticipant(p_alias, p_label, p_techn) IBMParticipant(p_alias, p_label, p_techn, #232F3E, fragile, fragile)
+!define fragileParticipant(p_alias, p_label, p_techn, p_descr) IBMParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, fragile, fragile)

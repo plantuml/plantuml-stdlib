@@ -1,0 +1,13 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $perfume [64x64/16z] xS61400000CXXFdRpkElMXu0001m
+
+!function $perfumeIMG($scale=1)
+!return "<img data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAAIGNIUk0AAHomAACAhAAA+gAAAIDoAAB1MAAA6mAAADqYAAAXcJy6UTwAAAAEZ0FNQQAAsY58+1GTAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAAOxAAADsQBlSsOGwAAAilJREFUeNrtm88rhEEcxsePLQcuIikim5KDswsH5eAPkJS9CBdXvxKlnBQ3LmRTTnKU9ubiYFMuDmxtRKm15WZPHHimd7beJiv2fefdd/Z9vvVpNfvu28xn35332TErRMSrzsI+N4JV0AluvZ6s3rLBT4Bt0Abm/ThhTQUG0QI2QZ/WngHr4O2H18hj98AIuFCDz9j6EdgBk+BVax8FreBca58DZ6BB/b1UQpI1H4FucAXGtPaUek6vD7ClKPjdGRvmgCOTJ7dBQAJM//J8EhyXe/LaqOcAG66AYy/vcDVcAVNgQwUg3yuoHOC+9w+oNj3FudvdmUDe+nZBHiyAExujsPven1fo5W53Z4IbcAoGwSIYBtd+ZYGgroCUehzzeLwehQ+i9l3gRF0VK+AzKncBvWQaXIvSXcBoUQAFUEC0y0sOkMFkFvT84dhS6c+P4x9VHkgHKUAO/hI8gZcKv4kdwllIGSpHQrk5QObzZ9DvVyDxUDFwr/qUDmoOaAfZEAxeqD5kVZ84CVIABVAABVAABVCA8SRYquRKTdxwn2UET4ZRQJNwlr7lam3B0OCbhfMv8lAKKH6xWvazg1rJ5fVxzgEUQAEUQAEUQAEUQAEUQAEUQAEUQAGhWQ8oltzOnjDU33iYBbyDQ2F2SexBOD+YCKWALzDDOYACKIACKIACql9ADvQKZ4NSpSum+pILMgfsq7R3J8KxTa5L9enfFdRGSZPlaaNk5OsbwUVa5eQALG8AAAAASUVORK5CYII={scale="+$scale+"}>"
+!endfunction
+
+IBMEntityColoring(perfume)
+!define perfume(e_alias, e_label, e_techn) IBMEntity(e_alias, e_label, e_techn, #232F3E, perfume, perfume)
+!define perfume(e_alias, e_label, e_techn, e_descr) IBMEntity(e_alias, e_label, e_techn, e_descr, #232F3E, perfume, perfume)
+!define perfumeParticipant(p_alias, p_label, p_techn) IBMParticipant(p_alias, p_label, p_techn, #232F3E, perfume, perfume)
+!define perfumeParticipant(p_alias, p_label, p_techn, p_descr) IBMParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, perfume, perfume)

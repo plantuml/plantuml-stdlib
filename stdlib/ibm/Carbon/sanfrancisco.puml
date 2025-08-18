@@ -1,0 +1,13 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $sanfrancisco [64x64/16z] xS61400000CXXFdRpkElMXu0001m
+
+!function $sanfranciscoIMG($scale=1)
+!return "<img data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAAIGNIUk0AAHomAACAhAAA+gAAAIDoAAB1MAAA6mAAADqYAAAXcJy6UTwAAAAEZ0FNQQAAsY58+1GTAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAAOxAAADsQBlSsOGwAAAwxJREFUeNrtmk1IFVEYhscfSukfgjZam36gxaWVpFakWOmmRQlRUFCRZCtBbOFaWljtJIJLtSuCMlclWJS1qYQKpTAqsGgZlFylP9LeA28w3Ka5M/ecM83xfi88XMfLfOfMO9/55pwz1/NEIpu6Q/7X+QVVXup3SAwQA0pclQm0UQfuF3luBjx1OQMWB1xQJsZxUAynMmA572Cb77HmxTgeBqtdzoBVmufPG4gRqjLL6T8LpsG4L8W9mMcrwBLw3bUhsBFU5P1vPOaxxxgq1oRrBjTw018DipkKtzLWhGs1YFdKYyViQDVoMRivhTGdMaCdj8ApA7GmGKvdJQM6wAMwaSDWJGN1uGJAM9gGBgzGHGDM5rQboOYVfeAFGDIYd4gx+0zPXUwbcALUgy4wZzDuHGPWs41UGlAL+sF1MGphaI0ydj/bSpUBVWAQfAYnLc4tOsEXtlWVlpmgMvES5+072EFb+wHK4APgIds8rDvUyg1cfJadOgKeRLiguPsB+VJtHGWbWd1rqNRMe3UXDoLjHJ9B0t0PCNJVtp/lp2r/W5IG1ICbTG91R65YGvPzId9dBnvBIbAe7Acfk9gPOAbOczzmuOZvCFnN1WnuB4StJlXWNYKfYCXopjFWMkAVuDNs8CLo4RCI80gqZj+gkD6APeAs+6NuUC8LpbYBi8A+cApsB8/BbjASo4O6+wFRlOPj9wY4xznDI3CBj8wfUQ1QS84NYCs7rZahSxmwLaQopUV3wRb29TS4BmbAPXAbPAZvwNcgA96Dtfz7FxgDn8BLsNNzS39eqg5yyK5hNlT4hs26fANugbfgNZ3KscjUeu5KFcd3LNLLmNmb+NT4KwO6vIWtHGvXSBIbIs5IDBADxIDSln8tELRm38zV1rN/nF/o+4zGFDfK+Tr9a4oyFX6l+b1tpb1/8jM552uArmzXAB01SQY4UgOGpQaIAWKAGCAGWJILvxUeW0gZYOLdoHMZYOPdoNQAG2sBWzNB3XeDqga0ujwE/LLxbtCpGlBMBpVJDRADxAAxQCSyo9/AEbTgXTTKQgAAAABJRU5ErkJggg=={scale="+$scale+"}>"
+!endfunction
+
+IBMEntityColoring(sanfrancisco)
+!define sanfrancisco(e_alias, e_label, e_techn) IBMEntity(e_alias, e_label, e_techn, #232F3E, sanfrancisco, sanfrancisco)
+!define sanfrancisco(e_alias, e_label, e_techn, e_descr) IBMEntity(e_alias, e_label, e_techn, e_descr, #232F3E, sanfrancisco, sanfrancisco)
+!define sanfranciscoParticipant(p_alias, p_label, p_techn) IBMParticipant(p_alias, p_label, p_techn, #232F3E, sanfrancisco, sanfrancisco)
+!define sanfranciscoParticipant(p_alias, p_label, p_techn, p_descr) IBMParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, sanfrancisco, sanfrancisco)

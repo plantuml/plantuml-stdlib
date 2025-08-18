@@ -1,0 +1,13 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $salesconnect [64x64/16z] xS61400000CXXFdRpkElMXu0001m
+
+!function $salesconnectIMG($scale=1)
+!return "<img data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAAIGNIUk0AAHomAACAhAAA+gAAAIDoAAB1MAAA6mAAADqYAAAXcJy6UTwAAAAEZ0FNQQAAsY58+1GTAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAAOxAAADsQBlSsOGwAAAtRJREFUeNrtm79PFEEUx4fzYqKxoVQbtfIEsQF7EyUYCk00CDF6qA2hpQIpBf4Nz5w5MJhIYSBgQi8Wir8aY6iwtDIaC+X7wttk2HCX3dmbmZ2995JP2Ju9g/t+59eb2UEpCQkJiQ6OrgJoKIG74Dr4Dd6ARtIPHylABb4EM/z6NJgEFbCc5BeUY6+Pg/tgAJwLwIAToB+MgxqXVcFT8AospmkBl8AmNycy5k8ABpwH38CEVvYB3ALHwEqTz62Ce6Be1mp+mUVfBF8D6QJ10Jd1AFHc7M+AkYDEU6xxhVW1siqXracZAy6DL4GJVzzYKe7zU3xN4peS9H/dgJNgNzDxT3j0XwCfwTBPgwtppsFyoNMfiX8M5sAslz3PMgaELt44bLeAMXCVr1NlaC7E2zaABqE74CO/fghugNG8iLdpwCiLN87QXIi3OQYMcs3XtLIalw3mRbxNA44a3nMq3qYBrTK0tbyItzkGNMvQ9HvexdsyQM/QaGV2jcvneMVJ9/63EOZMvA0DDvvyS9p9uv7H7ynFDNpgg6ZdiW+3AUlrbpZ3cqJdnChPeMQ/512Jb6cBaZtttOo8LE9wuiIteRBPMdQiTxhyaUDaFhDl9rTd9Br0GPbZv4b3vBoQz+3HMvRZ2q15wM2+FssT5vNoQKvc3qTPkpk3s+zkuDagWW4/xX22brhgWtGWy6l2cvI0C2Tpsw0fok1mgXWVcfc1r1EOrc/67AK56LO+x4BGEUS72A8QA8SAAMcAej642SG66YnylrSAWAt4q/bP2XRC0AGJLmkBYoAYIAZEBvwApzpIN2nd1Q2gGeCCSvbUJvSosNYDecAzsANeFNyECmvcYc0HzgrTUxk6K3gWfAI/Cya+G/Sy+NvgfdwACtdHZaNDjtsO/tZ38I5r/leeMrJVmQbFADFADBADxAAxwEu087/GTPYTsyRCV9rxpX0fl99WEhISPmMPIT6mdDCDqH0AAAAASUVORK5CYII={scale="+$scale+"}>"
+!endfunction
+
+IBMEntityColoring(salesconnect)
+!define salesconnect(e_alias, e_label, e_techn) IBMEntity(e_alias, e_label, e_techn, #232F3E, salesconnect, salesconnect)
+!define salesconnect(e_alias, e_label, e_techn, e_descr) IBMEntity(e_alias, e_label, e_techn, e_descr, #232F3E, salesconnect, salesconnect)
+!define salesconnectParticipant(p_alias, p_label, p_techn) IBMParticipant(p_alias, p_label, p_techn, #232F3E, salesconnect, salesconnect)
+!define salesconnectParticipant(p_alias, p_label, p_techn, p_descr) IBMParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, salesconnect, salesconnect)

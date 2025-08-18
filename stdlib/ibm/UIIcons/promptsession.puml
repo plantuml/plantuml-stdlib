@@ -1,0 +1,13 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $promptsession [64x64/16z] xS61400000CXXFdRpkElMXu0001m
+
+!function $promptsessionIMG($scale=1)
+!return "<img data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAAIGNIUk0AAHomAACAhAAA+gAAAIDoAAB1MAAA6mAAADqYAAAXcJy6UTwAAAAEZ0FNQQAAsY58+1GTAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAAOxAAADsQBlSsOGwAAA3hJREFUeNrtmstrFEEQxidmzcVbouCKCYEoCB50ISgGyQqi4kHzWPEtXr14C0pAUCEg7N8gnlxFTEwUb4KYoAtKRHMQRRJQkUQQg4jgO/Ertwfbonse68xuz24X/A7TPdUz/U13z1T1OI41a9asWatfa9CUrwZ5sA2kQ/pWyxY15XPgHjgF3vLKlKbzT0FLjTxkeoCHwE6wkYuwROGQr6HOy9Yi+ub4CZCt4SmfDTIFVhk+18OuZ4sefVOOgLoyK4AVwApgBbACWAGsAFYAK0C9Wuo//eW8geMVd1fZLxYB6GamQLNURnH3LrDB46Yq7RfbFMizm3GtWRV3V9EvNgGyCamzi2BcAownpC42AWj1nVeUz4s6U/w8rVFRdo4dn9f4fgJXnFLWdTn4DG6DnM+KXGk/z/6o8mg8v95g1wArgBXAxgKGWAb0gK2gzfm7b0n7f2/AfXATPKk1AWilHwLrNPVrBdvBWfACnAEjSRegHRRAV0g/EmoYFMER8CqJa0A3eFRG52XrEm10J20E0A3fAU2s/AcYBbfAQ/BOlK8Em8Fe0AeWSj4rRFs7wEQSBGgXw5d3flR88k4rfKYFNF3WiPC4T6pvEm1u4tPBxClQEE/NtQVwGvRrOq8So1/4LLCRUDB9Dcgp5vxgmQmPvPDla0LObwrMOv/uo+v+vYkjRhhix2MenQ8Ss5DvFtDLrjHiNQLGq/T0M+w9/x0MRNDugGhLfkVmvASgheZDFQToYcf0RTcTQbszoi3ltVQCUGxNf1NdFZ+YlXz18eEflY3prqV7DZIIhys8Avj/O5MRtj2pu5ZJbwEuQNjRd8Cjbi4JAoS1n+z4so8IxscCs+w47XP+USZCykOEtO5aJgvQ6XP+tRAidCZBAB6o9Abw0Ymwx6etCRMFUL2rO8oQgY6PS/Udmm+MP9ZokAAU2h50Sjl/997aRIf87Bl4Cb6BY+CXVHcJrJeO3WyRcQK4Iuxnn61fwIOAItxgMQJ91Z5k550Az00VgG6M/utvlcooz/c1oAj8k/4CC5KKPL4wTQCyu04pj7dMivIom0M/QTx21PuDslFC5KJ48nLn34Pd4GPcIW1UcUFUKTE3slSmxEze9yMRhll2qByjJ79P1XlTp4Brr8F1p5THay2zjaIY9lNOBbM6cZjfxgi3wBsjSdv6jnxrzFq922/l3sq8fLX+MQAAAABJRU5ErkJggg=={scale="+$scale+"}>"
+!endfunction
+
+IBMEntityColoring(promptsession)
+!define promptsession(e_alias, e_label, e_techn) IBMEntity(e_alias, e_label, e_techn, #232F3E, promptsession, promptsession)
+!define promptsession(e_alias, e_label, e_techn, e_descr) IBMEntity(e_alias, e_label, e_techn, e_descr, #232F3E, promptsession, promptsession)
+!define promptsessionParticipant(p_alias, p_label, p_techn) IBMParticipant(p_alias, p_label, p_techn, #232F3E, promptsession, promptsession)
+!define promptsessionParticipant(p_alias, p_label, p_techn, p_descr) IBMParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, promptsession, promptsession)

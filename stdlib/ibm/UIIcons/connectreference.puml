@@ -1,0 +1,13 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $connectreference [64x64/16z] xS61400000CXXFdRpkElMXu0001m
+
+!function $connectreferenceIMG($scale=1)
+!return "<img data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAAIGNIUk0AAHomAACAhAAA+gAAAIDoAAB1MAAA6mAAADqYAAAXcJy6UTwAAAAEZ0FNQQAAsY58+1GTAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAAOxAAADsQBlSsOGwAABBpJREFUeNrtW01IVFEUfuNkG7dFKViCQUZZCVEgZYEkBJFmUYuJoF0tKiIrw9oVgdgqaBVBlAvpT4kWUQhJSj+W/ZKLpKnFWAgxuwkz6zt4Hky3O+/nzn3v3dH54APf5d1z5nxz/865o2UVUUQRcxkxxX51YDO4EVwClnP7OPgVfAL2gSOzTYBd4DmwxuP7o+AZ8HahC1AFdoP1in6GwASYNE2AuId3GsCHPr51GSpZgGfgl0IaAXbw84X2X2Avz3MK6hu3LwY38PrQApYK/SbBreBAIQhAw/45uFBovwueBD+52F4GdoI7hfYJcL0p08FpCtwXhv002A4eAX94sE3v9IAZsDFL7DIW4KrJArSCbUJbO3+jfjEI/uShn70mvAM/Ri1ASY7288Jzr2LwNjrZhpMPYwSoE4b+pGQ0qKCNbdmoYV/GCdAsPNNKP6bB1xjbcvJlhAANkuGvC70uvowQoEJ4Htbob9jFl5ECjGv0N14IAswl/9IPkBKeyzX6K5ecCo0XYJ1Gf6KtpIkCiIlKi0Z/LS6+jBBAtldXa/BVLdn3H5goAJWxRrOeKRXu0uCrS0irX3OhxMhkiLarvcKxNcOJjQoofT4stB3nhMhIAShLa+KszUYjZ3WDCsFfEGoP/eAJ0+sB9CETnL/bxRNKadeALz3UBKggcoW/ebHwctmE4e8mQNqaKXclhPdWgIfAWp7TGc7y6G8qkW8Dz4KXwJU5bNNo+gy+jVoAL1VhSlhuWf+XxvLFb/AAeN3UEWCDqrg3rZkyVqWin0fgRV5X4lk70I6oR0Lc43s0HaiG9x5cDS7w2O8VeAw8Bb7g/q0miaDzaoyC+s7BPOZDzlNJX6oSU7G01ITpEIto5PkVYRPvQFt4GtL9w5Sl4S4yFuH64yYCfbb9fGCq9WjT911kPEIBRh3WhAwfno6Ci3zYpLVpDy+2/bx2GSuALcIHiQg03JfmYdfzXWTUAtjHblEEHShjEQacRDBBAFuENJ8idW/z2/kck/aaDke1HbcGZJtOsN1+6gFRIMFbXFCozyXwPA+d/4Rw1mgLQWS6i7xj4gio5xQ7aEjvIk0QoClEX80mCrA5RF8NKmuA2xym2uENj7ZkqApRgArdIyDf4K0ACi2hCSALfkrBznSU869Ec/D7FGylQow3pUMAp+B7ZrsAuoO3rHDvBwfyESCI4Al9IQrQpypAUMETxLvIIGsPIyoCBBm8jY4QBOhQ2QXCCN7iJCXIq7IhWSLkJkBYwWenxEH8ZGaCbfs6B4QdPCEJ7rb+/TVpvphkm0k/5/woghcTFh13kRMcvOM2K6sJngbXRhQ8QcddJM15qi++cXsxnmOvXA6uiiB4G6p3kbTVHbRmKkxpLx1iDsJcA+9FELwMs+bf9Iooogiz8Bch+fHRV4HBPgAAAABJRU5ErkJggg=={scale="+$scale+"}>"
+!endfunction
+
+IBMEntityColoring(connectreference)
+!define connectreference(e_alias, e_label, e_techn) IBMEntity(e_alias, e_label, e_techn, #232F3E, connectreference, connectreference)
+!define connectreference(e_alias, e_label, e_techn, e_descr) IBMEntity(e_alias, e_label, e_techn, e_descr, #232F3E, connectreference, connectreference)
+!define connectreferenceParticipant(p_alias, p_label, p_techn) IBMParticipant(p_alias, p_label, p_techn, #232F3E, connectreference, connectreference)
+!define connectreferenceParticipant(p_alias, p_label, p_techn, p_descr) IBMParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, connectreference, connectreference)

@@ -1,0 +1,13 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $reminder [64x64/16z] xS61400000CXXFdRpkElMXu0001m
+
+!function $reminderIMG($scale=1)
+!return "<img data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAAIGNIUk0AAHomAACAhAAA+gAAAIDoAAB1MAAA6mAAADqYAAAXcJy6UTwAAAAEZ0FNQQAAsY58+1GTAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAAOxAAADsQBlSsOGwAAAmZJREFUeNrtWj1LA0EQvUiIjVjEQvxoLAQ7f4IWYmER1NpCEFvFRhDUQgUhKqI2ghYWgo1opxAstLTTysJCBD+wMEUsFc43OIHlSHJ7ycXbzc2DVxzZfbvzMjt3e7eOIxAI4oxEHTTdkMdw6znnprhngBggNUAP3WAWHAQ7DI/pHbwG58GXMAyg4O/BtGV/bh7s9zNBZwlkLQze4Tlnw6gBAxYvcd+5JzVEOgMum6ifA9wKc5e7gBggBgSvAVHvLxKSAWKAGCAGiAFigBhgzXNAvaC7J0hIBogBYkDD1AB6/zgODpX47Ry8As+cv/eADWUAvchYASfA5jJtRplb4DG4DL41ggFj4AHYptmeDJpiM6Y5M6ytARTAaYDgVbRx32lbM4DW+n6JP+URPAIvlLVOtWEEnAR7PX8oaXxybbDGgC5OezX4H3AB3AG/Pe0/wDtwA5wF15VYmljrFny1ZQlQwUt7gs+AmyWCV/HNbTLcp4g0a1pRA7q52qugz1qXATQuuY+KCdY23gBa+ynl+gHcq0Jnj/sWkWJt4w0Y9lwfetJZFz/ct5K2kQb0ea5zNWjlfLSNNKDdc/1cg9azj7aRBrR4rr9q0Pry0ZbdoBggBphlQGvUYyQjDHwGnPuHsZ7AbXAXLJhgwCIH/l/njmicVR6TjFiLegmslgmeTnUthaC/xFrljDBuO5yvlKJVYI21ZnQyzYS7QA9PuhCiZoE1e2y4DRai1JbvAhpt6FWzet7O9Wkf9EyPG6UBOhlwE/cnwfkyt5XYGECnrenU9YlTwycoU5GwYI5uPWOQ3aAYIBAIBDHGL2jYYcVfNlAiAAAAAElFTkSuQmCC{scale="+$scale+"}>"
+!endfunction
+
+IBMEntityColoring(reminder)
+!define reminder(e_alias, e_label, e_techn) IBMEntity(e_alias, e_label, e_techn, #232F3E, reminder, reminder)
+!define reminder(e_alias, e_label, e_techn, e_descr) IBMEntity(e_alias, e_label, e_techn, e_descr, #232F3E, reminder, reminder)
+!define reminderParticipant(p_alias, p_label, p_techn) IBMParticipant(p_alias, p_label, p_techn, #232F3E, reminder, reminder)
+!define reminderParticipant(p_alias, p_label, p_techn, p_descr) IBMParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, reminder, reminder)

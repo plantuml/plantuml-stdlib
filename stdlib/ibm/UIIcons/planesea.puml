@@ -1,0 +1,13 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $planesea [64x64/16z] xS61400000CXXFdRpkElMXu0001m
+
+!function $planeseaIMG($scale=1)
+!return "<img data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAAIGNIUk0AAHomAACAhAAA+gAAAIDoAAB1MAAA6mAAADqYAAAXcJy6UTwAAAAEZ0FNQQAAsY58+1GTAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAAOxAAADsQBlSsOGwAAA4VJREFUeNrtmkloFEEUhmvGUUFjRoSgjjEnTzOKenA7KIIHEbeLKGoOwSU5uGCi5qygNzeMAcddXEDxZNwv5qgRVNCJuCFqzMGDMBEFNRD/ol9Dp+ie7qrununO1A8fyVTyknqvX71auhjT0tLS0tLS0tLS0qpGJWzaVoAzoN7B5gNoA12S/2sMaAabwEwwQdK+CN6AK9S/QY92Q6V8TtoY5Es4zzUDXAK1Ep3PgKegAyxScJ4rDRaCTtADJgeRAXYBmO7BbhLYJfHk74A5AWbuXPAQjAsjAF7V5jELmqnDQWs2ZYMvpSTqBHf2Ez19axYcdrHfLHy+D7aDb5J9bQCnqUaZagLd4HI5MmAAHFfIgpzwuUXBea4vYB0oCO08C7LlGgInwQ+hFux2sREL3lcfGfsbrAe/LG3jwU3VeiAbAJ4Fx4S2VskZwa96wQ6bLOsMqwaI6qDUt9aCooT9UEiBaSJCnwXsakFspToNirWg6gIwYrIg5cP2EBEVbQBXBZ8G3XxMjpCh7OR8o8oQ+KmwN6ikWko4f0MlAAWb3eG0iDldB9aAR7Q8VnLeqQZco22n9XygLyZDQcp5pwzghw0vYlgH+My0VsZ5pwD8BavAyxg5/wDMA/eCmgb7wQLm7wgrTH0n+KHILfBE9Q8lQu5oq7B5OkdnATLiNluFLXhgi7Cw1wFZm52crAou5wuRDkDOxRmVAGTjFIAgMqA3rgHgR+tpy+ei4nqiTzhvSLPSx/aRCUAQTz/0LEhGfPw7BSBXbRkQ2kygsg5YTnNzPYu2eO3YRoulQDMgHwPnzSKcr/Q0GHmNUrDhr6iXsvK+C1AdAnwv85FpaWlpaWkFNg2a4geQ3cw49XkL3kvar/Zpz88tH4O94B1Rtr1ADTgLpjDjncFFapOxPw+m+rC/wIzbZxn6vqacAdjDjJcTpuqoLS72vgIwH7TbtLfTz6Ju76sGLAO32fCTHlNjmXGJ6RkzbpNF0V5pO5yhyG6hwuVFXTQueyxPrVL2/bIBkLnDc5R+f59iLTlCX/3YJ2gmUHrofi5InLJ0PKVQhE6A/QHZ8/TfGdQ64ICLDb/k2EgdMMVPXfhl6MVgoov9Z7CRDb/W5tee3z59DpZ42KYflB0CA+T0K2a8eb0L/jj88dHMODIz3yc2UDu/5fkaXCdn/4VkzzNhJTNujMyiNUatQt3T0tKqEv0HraS8wF7PyogAAAAASUVORK5CYII={scale="+$scale+"}>"
+!endfunction
+
+IBMEntityColoring(planesea)
+!define planesea(e_alias, e_label, e_techn) IBMEntity(e_alias, e_label, e_techn, #232F3E, planesea, planesea)
+!define planesea(e_alias, e_label, e_techn, e_descr) IBMEntity(e_alias, e_label, e_techn, e_descr, #232F3E, planesea, planesea)
+!define planeseaParticipant(p_alias, p_label, p_techn) IBMParticipant(p_alias, p_label, p_techn, #232F3E, planesea, planesea)
+!define planeseaParticipant(p_alias, p_label, p_techn, p_descr) IBMParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, planesea, planesea)

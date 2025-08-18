@@ -1,0 +1,13 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $cargoship [64x64/16z] xS61400000CXXFdRpkElMXu0001m
+
+!function $cargoshipIMG($scale=1)
+!return "<img data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAAIGNIUk0AAHomAACAhAAA+gAAAIDoAAB1MAAA6mAAADqYAAAXcJy6UTwAAAAEZ0FNQQAAsY58+1GTAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAAOxAAADsQBlSsOGwAAAtxJREFUeNrtWz1oFEEUHo0hlgkoJmnF2MgVFqayMJ2VFsbfiGiqqIWFWgQLRRREi1Rio4WC+ENEDOFi4zVWB1E4bBRbCxG1UDHBC/Eb9ltYhtvbXG5nsu/yHnzczc3O29lvv533bplnzDq3DYHOcxYYbXHMc+Cu74l1Bbj4PbyY38AOYBvwNeXYEvv/AaeAOeCLZAX0AO/4fTfwkt/3pxxf5udBZ9yirwlu9EzAVWAncLrFi1jkmCHgms8JbvIs/YvAHaDq/F5p8gjEx1Y59hLwwvFR+DWgh3L+DhwDlhKKG2wyzq4ND4Ea22+BQ3wk7if8FN6s9Ou823koqU6fYtaAYco8D9lW6WtY2iJYL6ivoFGg8OY7ClRy8lXyFQVCKaBErLYtUgHVRMZXdjLArLZNgZedtq4BSoASoAQoAVLzgEZx3O03GcerAjohD1hpnjCna4ASoAQoAUpAh+UBWXE+K29QBXTi+4C04zUPUAKUACVACZAeBUTkBaqAgOcqZF6gi6ASoAQoAevafO0TLDOO15y43047GRXEhcFam23x7wPyUJSuAdIzwdhOAmdS+h4AjzohCvwF+lL6jpvG+39K7Gtk1tcPSQqwW173Or9VMlb0svMPcF+ibzvwWpIC3gNbgIEcfA3Q12dJCpg10e7OMeC2c0fdO20ylDFGX28kKcBWebwCxhuc43FKnK+xz53fOH15rRzxYSMm2us30YaPCfoYkZgHWMlOAzeA/lWM7+fYaV/yD5EIneMdfAp0tzCum2OW6cOb+a4a+wN8NFHpjK0UmVnhuHvAAeAEMC+ZAEMCfgJXmNBkvd+bMlGd4QUTlc8Y6QTEf4zsuS7z2Y43Q7tzsYWS54HrwK0QEwtFQJwJ/gImTVT+YnOFBfb1mqgy7Agfl5vSX4g0s8MmqgD7Bhzlb0+ArYz5z0JOZi0IsLaLq/wQ25949z+EnshaEWBtMx8HQ8kvGLXw9h8GxaJ/c8uelwAAAABJRU5ErkJggg=={scale="+$scale+"}>"
+!endfunction
+
+IBMEntityColoring(cargoship)
+!define cargoship(e_alias, e_label, e_techn) IBMEntity(e_alias, e_label, e_techn, #232F3E, cargoship, cargoship)
+!define cargoship(e_alias, e_label, e_techn, e_descr) IBMEntity(e_alias, e_label, e_techn, e_descr, #232F3E, cargoship, cargoship)
+!define cargoshipParticipant(p_alias, p_label, p_techn) IBMParticipant(p_alias, p_label, p_techn, #232F3E, cargoship, cargoship)
+!define cargoshipParticipant(p_alias, p_label, p_techn, p_descr) IBMParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, cargoship, cargoship)

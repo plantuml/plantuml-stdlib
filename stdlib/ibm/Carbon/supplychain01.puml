@@ -1,0 +1,13 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $supplychain01 [64x64/16z] xS61400000CXXFdRpkElMXu0001m
+
+!function $supplychain01IMG($scale=1)
+!return "<img data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAAIGNIUk0AAHomAACAhAAA+gAAAIDoAAB1MAAA6mAAADqYAAAXcJy6UTwAAAAEZ0FNQQAAsY58+1GTAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAAOxAAADsQBlSsOGwAAAtZJREFUeNrtms9LFVEUx+eZC2ktZdIm0IXCeyuxXeKqpPcqdCfUIlJokbbJsFYF74W2051BUEE7g0h5LYLaBOHyBbUoguRp9Q/oQsO+l74D4zQ6P+6dYW7vHPiAz7lz5sx37o9zZq7jiIm1tBV8vy+Dq4av8Rg8S3hu6vG0+Q6Og5LBi5XoM6mlHk97QKM1MGLognUDPlKNp63V5wARQAQQAUSAVs57ApfBMNsLc5qxacXTnkGAg+CtRuKyJkMgRcuiB+hkcvU8ClDI2UMsyBAQAUQAEUAEEAHMLYM6mVsamVyq8RwJ6BHdER0dB79C2qnjT0FDo4fmKZ59GVo9Rz05cTwyCYoAIoAIIAKIACKACCACSDFkt41IDxABklnSPULutpUoZaXOHqHDTJW/ZVAEJ/i/H+AjWIlQGgfOAe6enLAbi1pPu3tyTArQB2rgIh/gd7DOY6fBtPP3e+FLcAd8jjsJ5m2PkNdmQJVP9yZ4AZq+NifBKNuqB3UXzP8Pq8ASmACL4DbYPqCdEmQBPAJzpAdM2izADG9+igJEsW22/0JBvgb1BBtWgX52+4UYN++1RZ5bpS/rBKhxzM9q+Jilj5ptAqilrgIegi0NP1v0UaFPawSocKlbNuBrmb4qupNglnuEilznmwZ8NemrmPUqEPfLzrDnb5XhbRiMZcOTNVoxBEz3LvUl7HfWPUAns9wEAwZjOQXe6QqQ5R4hVdjcYHqrOw90gmPgm01DYIWT7pgBX1fALnhlkwA/KcItcDRmEfbaN/ZVLbBKn1ZlgiqL6wIPNHzcY0E0Z2Mq/Ikl7RTng7h2niKqNPiDrdWgW9KqoqY3pBz22nWe8wbct/19wARL2ipfeMwf8ELEtSFwFjwB1zgBhi5pdWZuDUNBlxyzb5jc8lh15wvO/ldiZ3z3cQ7sgPeHZJr/9IDnoMNgsA36ND0nXOLEWKbIXQHX7XDExMTC7A+kXoqf1p/aYgAAAABJRU5ErkJggg=={scale="+$scale+"}>"
+!endfunction
+
+IBMEntityColoring(supplychain01)
+!define supplychain01(e_alias, e_label, e_techn) IBMEntity(e_alias, e_label, e_techn, #232F3E, supplychain01, supplychain01)
+!define supplychain01(e_alias, e_label, e_techn, e_descr) IBMEntity(e_alias, e_label, e_techn, e_descr, #232F3E, supplychain01, supplychain01)
+!define supplychain01Participant(p_alias, p_label, p_techn) IBMParticipant(p_alias, p_label, p_techn, #232F3E, supplychain01, supplychain01)
+!define supplychain01Participant(p_alias, p_label, p_techn, p_descr) IBMParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, supplychain01, supplychain01)

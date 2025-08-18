@@ -1,0 +1,13 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $forum [64x64/16z] xS61400000CXXFdRpkElMXu0001m
+
+!function $forumIMG($scale=1)
+!return "<img data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAAIGNIUk0AAHomAACAhAAA+gAAAIDoAAB1MAAA6mAAADqYAAAXcJy6UTwAAAAEZ0FNQQAAsY58+1GTAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAAOxAAADsQBlSsOGwAAAfRJREFUeNrtmz8sA1Ecx99ppf7EYBAMJkIiIYaKxSJhkIhBIgwGkwGxWNBBRKImBquYGgaTiEEizMLEYu/Ssli7qO+lJ2lf3pXcvdbdve83+Qx94vJ+n/fu3bt6hGAYxuRYVX7WDNbBPBgErQHok/bEXdp7wQ0YiPoMaFC0tZhSvJuAVVOKd7sFFqTPl2AD5EyZAfLoR7Z4NwFt0uecaWuAUYl7/L0hcADGQEfAa/wAj2AHvOoQYBf/BBIhGWR7gGbAFBiVJXi5BdIhKr48CafvvteAZIhv+aSOW6DzP/fuHlKs0nc+BSiAAiiAAiiAAiiAAiiAAiiAAiiAAiiAAijAtKi+E7Q4AyiAAiiAAiiAAozdB/yWvKj8G1vRZx+sPwzSHZjQUG9exwx4rvMgbWoqXtl3LwK2QaFOxY+AfU3XKjh9r0jMw4XewRXoAe3C/xHaPZf2JnALun1e3z4i8wAWheKITJD3/SeidFb5J19g0ikm8k+BabAmtR3rLj6oAuxDTWfS7HwBKVP2AaegS1q8lmq18AZNwAqYldpSqsUrigL6wZHUdq9oi6SARpCRHqmfYFnDTjMUAnZF6RRneez/W8ia8DI0DraktnNwYcrbYFrakWYVe4CaJRYAAddgGPQ5u7058Gbaa7nlvKgcCoZhmDrmG2BvPP/XLO3wAAAAAElFTkSuQmCC{scale="+$scale+"}>"
+!endfunction
+
+IBMEntityColoring(forum)
+!define forum(e_alias, e_label, e_techn) IBMEntity(e_alias, e_label, e_techn, #232F3E, forum, forum)
+!define forum(e_alias, e_label, e_techn, e_descr) IBMEntity(e_alias, e_label, e_techn, e_descr, #232F3E, forum, forum)
+!define forumParticipant(p_alias, p_label, p_techn) IBMParticipant(p_alias, p_label, p_techn, #232F3E, forum, forum)
+!define forumParticipant(p_alias, p_label, p_techn, p_descr) IBMParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, forum, forum)

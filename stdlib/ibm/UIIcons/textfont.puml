@@ -1,0 +1,13 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $textfont [64x64/16z] xS61400000CXXFdRpkElMXu0001m
+
+!function $textfontIMG($scale=1)
+!return "<img data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAAIGNIUk0AAHomAACAhAAA+gAAAIDoAAB1MAAA6mAAADqYAAAXcJy6UTwAAAAEZ0FNQQAAsY58+1GTAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAAOxAAADsQBlSsOGwAAAq5JREFUeNrtWM9LVUEUtrC3SReBm4zwD0jltapwLwRhKxc+1z5X/gP+GwrRj22BF0oFpSjCSEETxN8LoUWRGUUR5cYfyeu7cB4Mh3lz59038+50Ox98cM/cc2e4H2fOnDktLQKBQCAQCAQCgUAg+P9wzvF8PeAWG+sFt0MV4Lzj+UqWY7kUII6mIc34kIdIC1KAPrBLM95F73IvQCnlu1wIcAEcVOx5YhWD5JNbAfrBDsV+BD5U7A7yya0Aaoj/Bl8Qf4W+DVwIcBEcUOxZ8Ag8pucqBsg3dwLcBdsUO6rx3Ea+QaHVcfj/BF8q9isau6T4Pqlz/oql3yG4Q/M/AE+aEQE8uc2whePnaUOydIl28BY4Ab4DO5shAD/eIo1PZDgufaEIzoEF3wKo4f8DfK3xice+Z3AaXAfLPnMAL3Gfgacavz/0rsxK5o+Ob6xXqPa4rYwNg5O+IoBfciKDb2RxaWoUn8FRNnbN5xZQQ/kbuGDwfQN+bcI2+KRJjF4E6CFW8RQ8M/ifkU+t7/+5QqhkCHGbbRBMaZxGAL6Hv4BvLb5bBA9Ca5SkOQV44+NyQvgnnSJLCX4FOkHiiOm22de+BXAZuqUEATqpr1AMZQu4ruRMjZICVXPFkHKA61re1CgpUzUXVA7g4X+TLh714Aa4wuac1/gNM/s5OEIFj4vbY90RwBsfH8DVFKKv0rdJjRJexY1a/LzXLaBrfFRSrFmxbJS0J1R5TRcgTfETfFFkKwBPVu/BtQbWXaM5TMn1kNlXsxTApvHRSBTojtddZt+nK28mp4DL8FfnGGdr3FPsx3TKVBHf8/eziADe+NgDNx2svUlz1Sqx48bmegg5gF9aphyuP2W4ZMUN1TvgRtYC+Ah/29PggAqnMXBZkxgFAoFAIBAIBAKBQCAQCOrGX2H4fOknDf8BAAAAAElFTkSuQmCC{scale="+$scale+"}>"
+!endfunction
+
+IBMEntityColoring(textfont)
+!define textfont(e_alias, e_label, e_techn) IBMEntity(e_alias, e_label, e_techn, #232F3E, textfont, textfont)
+!define textfont(e_alias, e_label, e_techn, e_descr) IBMEntity(e_alias, e_label, e_techn, e_descr, #232F3E, textfont, textfont)
+!define textfontParticipant(p_alias, p_label, p_techn) IBMParticipant(p_alias, p_label, p_techn, #232F3E, textfont, textfont)
+!define textfontParticipant(p_alias, p_label, p_techn, p_descr) IBMParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, textfont, textfont)

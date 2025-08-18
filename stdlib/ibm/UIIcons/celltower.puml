@@ -1,0 +1,13 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $celltower [64x64/16z] xS61400000CXXFdRpkElMXu0001m
+
+!function $celltowerIMG($scale=1)
+!return "<img data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAAIGNIUk0AAHomAACAhAAA+gAAAIDoAAB1MAAA6mAAADqYAAAXcJy6UTwAAAAEZ0FNQQAAsY58+1GTAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAAOxAAADsQBlSsOGwAAAgpJREFUeNrtmk0og3Ecx2dbKW+XkdfcUDs4OCg5IDkpbqQ5y0U7OhAjDjtKSZwdyAHlpthBojg4yMttyUus1FDYzPepn3rShm3Ps56X77c+rfZ/2fP/7P/f/3eYw8EwjJ2Tl6PPcYMW0A6aQB0oBeXSfg8ewRU4AXvgAMTMLqAejIB+UJbm2AewCubBpdkE1IIg6APOLOf6BGtgFITNIMAPZkGhxvO+gDEwZ1QByoJXQG+K9jcQApvgDFyDO2mrADXAK+PbQH6KeZTxPhFiGAEFYBc0J2lTFjojcp7/OV+RLHJcxPzMEegAr9k+uEsjAR+gWn7lvxOVLTsIDsF7GvMpfY/BAniSG0S9I5bBjhYP7tLwCITkVZFwDrrAFohnMWdcrsMN0ClXZwBMGflH0CcLjyZpq5Iz3i21QKW8fys1wLac8ZskY4tBjxwl0xVCHjANhqQo+i1K8bMEJkDECpVgq3yrnjTHRWS37Ov5cC6dF98gCyjJ8GYZAOt67gS3zgIupCIMqN47BYtybYZVlaNyrQ2DRlXfoMxh+kzK2fb/URo7pU9MxlgqXp36MgyTmzogoXENYYj5nHbfARRAARRAARRAARTASjCTSssSa+MRoACbx63DGUsYpB93AAVQAAVQAAVQAAVQgFaVoNb/JTDEfDwCFEABFEABFEABFEABFEABFMAwDGO7fAHHaVkuMwjc2wAAAABJRU5ErkJggg=={scale="+$scale+"}>"
+!endfunction
+
+IBMEntityColoring(celltower)
+!define celltower(e_alias, e_label, e_techn) IBMEntity(e_alias, e_label, e_techn, #232F3E, celltower, celltower)
+!define celltower(e_alias, e_label, e_techn, e_descr) IBMEntity(e_alias, e_label, e_techn, e_descr, #232F3E, celltower, celltower)
+!define celltowerParticipant(p_alias, p_label, p_techn) IBMParticipant(p_alias, p_label, p_techn, #232F3E, celltower, celltower)
+!define celltowerParticipant(p_alias, p_label, p_techn, p_descr) IBMParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, celltower, celltower)

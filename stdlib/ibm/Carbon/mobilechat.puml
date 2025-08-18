@@ -1,0 +1,13 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $mobilechat [64x64/16z] xS61400000CXXFdRpkElMXu0001m
+
+!function $mobilechatIMG($scale=1)
+!return "<img data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAAIGNIUk0AAHomAACAhAAA+gAAAIDoAAB1MAAA6mAAADqYAAAXcJy6UTwAAAAEZ0FNQQAAsY58+1GTAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAAOxAAADsQBlSsOGwAAAehJREFUeNrtmr1LA0EQxdeYxnSWBgUVLBRNCtFW0mljJSkEI1iYWiy11M4/wFgIaiNir41cbcTCILFTC4lY2QU7fcutEMJpc7e3E/YN/CB3hJ2bd7OzX6eU59bXdb0GNoQ94zE4s9V4put6FRQEBV8wz2TNshH36mBJiABXth1kfK8BFMB3AbKO/edABcyB8T+KoLYgho9ncAdOQVuSAEVwCcbAI/iM+E8jAT+zYB1sgxXwIEGAnAn+C8yAJ8v+JsGF8VnszARXNUCn/SgopxC8Mj7KxmdFQhGcB82Ugu8UoWl8OxdgCLQc+G0Z3xwGKYCQeUCUBQm1U2IG9GgGlFgDKAAFoAAUgPMAzgM4D2ANoAAUIGnLg3dfBdD7glMqPPnyToDfTdFXFW6Pix4FtG2B5YTaGgTT4EWF2+Jt6QLsgR1wCybMvTjnA/fgUAk8GPkv+H2wC67Bt7J4Wp0RHLxXw6CT4KUI4Cx4CQI4Dd51EVwAiy6Dd50BA66Dd5kB5+AGHPi6H3DC1SAFoAAUgAIIsKhRQH9DEwh5Pv2dYJ0ZkHIG8GtxFkEK4HcNiGu6fhyZ35tp9GNpGVADw4Yau4CHAlTBm6HqYw3QfX6EowAFoABcDfbCarA/IiPygl7QhwpPdRuKZsd+AHnCToDxvnH6AAAAAElFTkSuQmCC{scale="+$scale+"}>"
+!endfunction
+
+IBMEntityColoring(mobilechat)
+!define mobilechat(e_alias, e_label, e_techn) IBMEntity(e_alias, e_label, e_techn, #232F3E, mobilechat, mobilechat)
+!define mobilechat(e_alias, e_label, e_techn, e_descr) IBMEntity(e_alias, e_label, e_techn, e_descr, #232F3E, mobilechat, mobilechat)
+!define mobilechatParticipant(p_alias, p_label, p_techn) IBMParticipant(p_alias, p_label, p_techn, #232F3E, mobilechat, mobilechat)
+!define mobilechatParticipant(p_alias, p_label, p_techn, p_descr) IBMParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, mobilechat, mobilechat)

@@ -1,0 +1,13 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $instancemx [64x64/16z] xS61400000CXXFdRpkElMXu0001m
+
+!function $instancemxIMG($scale=1)
+!return "<img data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAAIGNIUk0AAHomAACAhAAA+gAAAIDoAAB1MAAA6mAAADqYAAAXcJy6UTwAAAAEZ0FNQQAAsY58+1GTAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAAOxAAADsQBlSsOGwAAAzBJREFUeNrtWz1oFEEU3j1DEPxpDIoaQRAFQYzgD2hQojbxByIoQa200UqDjVFPxX+NTVArtdAiRJM0KYxio9coCoqK2MQiKS7RFGlEC6/I+YZ8i49hdndu73R3dueDD+bNvJ3sfPt2Zt7txHEsLCyyDFfDpyzZq4mffXxXKdrcJAuQi3DNgYC2/aZFQFQB3CwLsJS4UVG/gbgsCwL4vQbGPf1qBGgn1kn9tJsoQF2F/lMY7HziduJz1G8hLpZ8/DBE3MnsbcSXPr5biS+Y/ZS4K84I+MqWxYOK8BdtwyF9nCCWmH05wJe3lXBtrK/Ab+InlPcQZyKK9qLuozQ4FYRAt5ndTGxV+LWizcMdDXH/uQANCEOBucQW4mbUeyHaoNGPeLITzL6k8OF1Ez4+sQgwxOwdxN3SO6ojwA/iGWavJ7Yxuw11HvK4JnYB6olviGMKAcbQVq/Z10PiO2ZfxAbLRdnDe+KDJC2DYpYfQHk5cQXKA2irpJ8ONqk2EfeBTWxS7aiw3/+yD+jTrAvDa2KvFAX86T8ivkriRugtcZTZo6iLgk7iT5RXggK/0JbInaAIzX5m9yvSZl2IueO6ov4GsZhUAQQe+5QzkQsIfMDGZBjlqBBb6NOK+lPExiQL4E18fVX20UWcjfJ3UGAW2lItwCYpp7gC8rS7OckCfAGj/u1bzt9fl0aI98ER1LnwySVVgGpwiLiO2ReQSJVQ9rCWeDhtAohE6poUST3M7pEi6yquSY0A54gLmH1W2u5Ooc6D8D2fFgFE7nBc2lUOKvwGpd3lMZZ3GC1At5Qx5gN881Im2u1YWFhYWFjUDK7Pjx2VXGO0fy7rEWAFsLOAhYWFhYXdCYZBfKC46UwfiFiY8DF9IxaIJx2NT2uu5uDF0Zd5hj3cSeKaMBF0NkJdBg7ewT2HflnSEaDF4Fc89N51zgkuijhvxIVywL3bXCBKBIRBHJS6h/IR4rOsZYN3sVI0omzT4awJcBRrbRHlzM0B4p1fkuUISP0qMC6tp2WDxjdeiwgoGPyAC7UQoBOJhWmYdDROms7Q6EgcU+9FGiyOws8xIB1+4kz/E0fRsbAIxB9g7ZVdxPjhMgAAAABJRU5ErkJggg=={scale="+$scale+"}>"
+!endfunction
+
+IBMEntityColoring(instancemx)
+!define instancemx(e_alias, e_label, e_techn) IBMEntity(e_alias, e_label, e_techn, #232F3E, instancemx, instancemx)
+!define instancemx(e_alias, e_label, e_techn, e_descr) IBMEntity(e_alias, e_label, e_techn, e_descr, #232F3E, instancemx, instancemx)
+!define instancemxParticipant(p_alias, p_label, p_techn) IBMParticipant(p_alias, p_label, p_techn, #232F3E, instancemx, instancemx)
+!define instancemxParticipant(p_alias, p_label, p_techn, p_descr) IBMParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, instancemx, instancemx)

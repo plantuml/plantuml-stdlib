@@ -1,0 +1,13 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $connectsource [64x64/16z] xS61400000CXXFdRpkElMXu0001m
+
+!function $connectsourceIMG($scale=1)
+!return "<img data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAAIGNIUk0AAHomAACAhAAA+gAAAIDoAAB1MAAA6mAAADqYAAAXcJy6UTwAAAAEZ0FNQQAAsY58+1GTAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAAOxAAADsQBlSsOGwAAApFJREFUeNrtmM1LVFEYxsfUdJW5MP8AF4GRfSzSWuUfIKEYGC76oNwJFRG6cgYCl9YidOlGcqMSGn4hIrSopVFDtMnEFu1aBVmoz4F34HC8Z+bMmTvHO8zzwMPMe++dc+f93XPPe85JpSiKqmbVePzmMIY2EqNT1d4DCIAACIAACIAACIAACIAACIAACIAAKk9jYm/VVXjyaS3O+DRS63hdPXwbHoU7jHPnBeQ3+CBQ8iPwCy2+KZ9b5QDQCy/CjyKSV7oI98N34R34awAA/+SBNJYKIR8Atdc3IW52aKsJHpDP9dTxvcM49RPejANCPgAq8ccef+46fAZeLXMviAWCDcAt+KVxbB9+LVCewOPyavyBrxhtKQjbAV6HkiHUWirDMnzWuFE3PA3vCYx9+b4iIHrkyed0Q4AdJBlCFADV0EMt/ivJb+dp5xe8Ad/XSqsaC7Lw5wCDojeEKABmqZuUJ19ICsI5uFM79h+eC1QavSBETYS6jHimiD+hrh3W4gHxSSttmyxFTYVbjThbxI2yqeQqHTVt5mLI8i7rai+ivQsJ7wEZlzHgA9ymxYPwR8ebDBrxLHwnYJKdMgFrckne1gMWjXgIvuRw88tyra63SU7eBkCVrR9a3AC/KwBBJb8En9aO7QYsgV7J2+YBaub23Shfaob3AG6Bf4tVslfh5/BUxILpXqCq4J18bsUX92Io99unSU++0GpwTRru8kj+WZmXw7Ek77Ihom7wCb7msCewK93+VaUkbyuDphZkgOuTFZ9Z6t7IaD8vOzUh1B1H8i49QB8Yv0iSaeNch5wLtR+o9N5Y6Hgl79oDkqqM5XvVACgpcS6GCIAACIAACIAACIAACIAACIAACICiKKpKdQRfMoVH5zyrxwAAAABJRU5ErkJggg=={scale="+$scale+"}>"
+!endfunction
+
+IBMEntityColoring(connectsource)
+!define connectsource(e_alias, e_label, e_techn) IBMEntity(e_alias, e_label, e_techn, #232F3E, connectsource, connectsource)
+!define connectsource(e_alias, e_label, e_techn, e_descr) IBMEntity(e_alias, e_label, e_techn, e_descr, #232F3E, connectsource, connectsource)
+!define connectsourceParticipant(p_alias, p_label, p_techn) IBMParticipant(p_alias, p_label, p_techn, #232F3E, connectsource, connectsource)
+!define connectsourceParticipant(p_alias, p_label, p_techn, p_descr) IBMParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, connectsource, connectsource)

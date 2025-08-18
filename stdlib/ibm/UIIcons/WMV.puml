@@ -1,0 +1,13 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $WMV [64x64/16z] xS61400000CXXFdRpkElMXu0001m
+
+!function $WMVIMG($scale=1)
+!return "<img data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAAIGNIUk0AAHomAACAhAAA+gAAAIDoAAB1MAAA6mAAADqYAAAXcJy6UTwAAAAEZ0FNQQAAsY58+1GTAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAAOxAAADsQBlSsOGwAAA1BJREFUeNrtmc9rU0EQxze1EZLUBNpoRbQJ9PCieBC8iKIgKB5s69+gf5ievUjtoUXsxT/AS6JooIrUCgppKKUYJAlxFmZlGHfzdvdFU+h8Yej+mH3J+2Te7OyrUiKRSCQSiUQikUgkEolEopOlnGXsJ1gB28/Annhe6ynYY2z3wIpsfsT6DbC241oJ2MeU7/odbJH0q2D7justgHVI/wfYed2YsTjTi5QCYJYc13Dp0Zi5VY/1TQtQlxqutTYA3QkA6Hr4r0XOuQAkY3yT4wjgBtg5R7jePAkAToGtWMYf4tyxAFAMAFAMBODKA6ueaz+A9SMA9HGtmnYS1LrHwJ0Ge+C59hfbRZbBZi1+szhn1Ma1fyZ9H4F5sLfM9zrxL0VEgL75+2AvsX8X7EwA9BbYVWzn8Ub51rqMc3SNiskBdYfF5IBvjoy/5vDJkgeScWvSABSIT83iWyPXKQQA0EXMLrZXyGeYpLiLPpOoBRpZAOTIM2p+7Q6pquoklHMBAHTVtoVtvRVeA7sMtoRjW+gzlQjYd2R3c7Nf0TgAFZAEz4Jtkv4tsDukv4k+adpjsNMAdHGNdwTQZ7tOPnSPjZVSrmFLfq/BjiwAjnDOdwtuBgDgERMFwBYBoQDMgWmDALiN7Q2cUxEAqlhJ0qqyGgqgx75AKIBewA08x78XwS6xsRgAPOk1UnytAGzFkK4ByhYAZZyLKYK0XoEdkP4BjmUBkPgmwHEAaAjPsS2QAjBb4VxEEWSquXXSX6dVmqfegw09AAzRNxhAxQNAJRIAD/nQ8DcvcHY8AOyg7191sg+AeWwPyA4wwPU19guEAtgmdcV25JutFrlZF4CWbaFPBJRJgfIJT1N9bCucK2cAoEG+QBtEAmhaDkX8ENRUjpNSWhKskAzdZqeqBOcGkUkwS+i7AOTJjedjAfBHYMkBwERAN0MEaL2ZIABXQRQNoOwB4HNGAMOMAL6AHZJHke//h+gTlQN0TW5eP9NX1aa9yOr2rvr/GrEkl1gS4CgWwBXiZ4uAGfSZJgDbmSBJC3/fJHiBjNF/LnRwbIH4xCbBfwFA+QDwiQBlCf9xY8chAqpph6AYAG3PsWkBeOd4zkc4JxKJRCKRSCQSiUQikUgkEoF+A8W33nDVJuLWAAAAAElFTkSuQmCC{scale="+$scale+"}>"
+!endfunction
+
+IBMEntityColoring(WMV)
+!define WMV(e_alias, e_label, e_techn) IBMEntity(e_alias, e_label, e_techn, #232F3E, WMV, WMV)
+!define WMV(e_alias, e_label, e_techn, e_descr) IBMEntity(e_alias, e_label, e_techn, e_descr, #232F3E, WMV, WMV)
+!define WMVParticipant(p_alias, p_label, p_techn) IBMParticipant(p_alias, p_label, p_techn, #232F3E, WMV, WMV)
+!define WMVParticipant(p_alias, p_label, p_techn, p_descr) IBMParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, WMV, WMV)

@@ -1,0 +1,13 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $split [64x64/16z] xS61400000CXXFdRpkElMXu0001m
+
+!function $splitIMG($scale=1)
+!return "<img data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAAIGNIUk0AAHomAACAhAAA+gAAAIDoAAB1MAAA6mAAADqYAAAXcJy6UTwAAAAEZ0FNQQAAsY58+1GTAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAAOxAAADsQBlSsOGwAABCNJREFUeNrtWk1IVUEUvmklhRr2h5YGQaSQOyv6FXITaNHKjLIWmRVkQriIwjYVSYtKSk0pDcrEjKQ2QhsD+6WSIAgypJVRVPZnuNDMvsM7wnh8+p73zr1v7N0PvsXM03vPfPfMnDNzxrJ8+PARzZgWwXcPm2BLTLR7gC+AvwZ4gwXgBuZycCm4QvzNG/A9+A58xPw6lQVIBHeD28GNNt71F+wAW8BGsG+qCEBf+zhYBCZoeuZP8CpYAfaaKsB0sIwHn+iSV/0AT4OV4JBJAqSDN8BVE7jzc/AB+JLnOc3vT/x7Mjif14eV4CZw9QSL9FNwD9htggB5YNM4X/0DeAm8CfZM8rmp4C7wMLh4nGlRAN6PpAD7wRowVvTTPC0HG8ABh++YCe5l158nfqNpUAxes/vwWAeGHQBrg7hpM5gLPtQ0T4d42tSDS8BMkcdsZe965aUHbAHvCgH/gCVgnct7ARK+ihddVaQ8O9MhxuaC1yQG3w9um8TgnaCO39UvPPkWuMxtAWZwUqLG90EwH2zzMINt43cOKn1zOBLFuilAGYcpFaUeD14VoVT0rQGPuCVAMic5csGrjeBeppZtUFHO2ah2AY4J1+/lRS/SKBHpMU2Fo7oFSOJYrOKE7rzcJnrZFhXFLIQ2ASjtjFfaPRyXTUG9yDQpKy0MdwMTDgpEu1pDhqdzIzbANlUofTu4z7EHpPDqqm5sGg083Glk20awHlyoQ4Bs8bVe2NjYeIEetk31sGwdAqwT7XbLXLSHsN3WGpAu2p2ajHWjLiBty9DhATK/7jLYA7pC2G5LgCTR/miwANK2uToEkAebfQYLIG2Ld2M7/F8hxoaqCQaPR55L/tYhwPcgiZGpSBbtbzoE6A4RFk1CRgjbbeUBFFo2K+0s8I4GY92oSmWJ9lsdHvBEtHMM9oCcELbbEqBDZG1U/Uk1cPBp1ujjumG23bEAlFw8E/9TaKAAhWI8j8HPus4D6Mh5rdI+BJ53eCagcy8QxzapaNaVBxCui5hKU6DIoK+/zxpdP/wV7plFuAJQLtAg+k5ZY2t1kQCdAJ8UfVesQPFUmwCECpEV0uCrDBCgWmx6aOBndabCI6Ba/hnRR+duByM4eJr3+aKPqshf3BCAcM4KVGpVXLQC1WCvQQXaStFH0eqC7s2QikEON+pUoHrhbY9FoJJ4i4hi5Pp0KWvITQFGUuOd4kWzwXtWoHTthdu3grOUPrKlwLJxZcZJ7KXBXg7yDIq/slylA3SHqCbInKej8OIgUSosOLkh0slZYq7wpEzOESgWv7ac3xKJ44W21RpbmXZ8RcbkS1JpvN6QNy0K8rsRl6TUMwIn1+RSrNHX5HL4WePZZ9Q1OXVfEbUXJWVqGpVXZSWi9rL0eF4RddflvTwPsA2/MOIL4MOHDx9RjH/qwN9CzwxljwAAAABJRU5ErkJggg=={scale="+$scale+"}>"
+!endfunction
+
+IBMEntityColoring(split)
+!define split(e_alias, e_label, e_techn) IBMEntity(e_alias, e_label, e_techn, #232F3E, split, split)
+!define split(e_alias, e_label, e_techn, e_descr) IBMEntity(e_alias, e_label, e_techn, e_descr, #232F3E, split, split)
+!define splitParticipant(p_alias, p_label, p_techn) IBMParticipant(p_alias, p_label, p_techn, #232F3E, split, split)
+!define splitParticipant(p_alias, p_label, p_techn, p_descr) IBMParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, split, split)

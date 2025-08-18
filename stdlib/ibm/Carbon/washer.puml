@@ -1,0 +1,13 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $washer [64x64/16z] xS61400000CXXFdRpkElMXu0001m
+
+!function $washerIMG($scale=1)
+!return "<img data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAAIGNIUk0AAHomAACAhAAA+gAAAIDoAAB1MAAA6mAAADqYAAAXcJy6UTwAAAAEZ0FNQQAAsY58+1GTAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAAOxAAADsQBlSsOGwAAAxJJREFUeNrtm89rE0EUx8emFUwvtiWg6aFQKlUPJSBYRHvo0d+IB3+gh6oHexVte/GgRbAU4l+goh7Ui1IteKzSWGlBEPGgl1aQtkq0B0NULAG/j/0KoSaRkJ1ldvMefC7Z3fd2vvN2ZufNxpg6t3Vlfj8NzkSsrbfAvbU/NpQ5+SToiVDje9imf6yxwkVzYG9EBHhW7kBDvY8BKkC9C9AYgnucqvL8fs2AiGVAv44BKoAKoAKoACqACqACqAAReBOMgT6wC2wiYp/JKzANClEToBuMgEOgFayCRfCJx3eCdtAEVsATcB18CLsACTAKzoKv4A6YAJkSvSzZsQccBifAKXATXAbZMAqQYk9uBFdBGuQrnC+CvCDS6AvgEtjHzHkTpkHwAHv5O4UY/U/j11qe16ToI0OfoRBAbvoBmOFgN1+Dr3n6mKHPlOsCJPiML4CjIOeDzxx9LdB3wmUBJG1bOJDlfPSbo88WxnBSgG6O9uM1pn2lx2GcMba6KMAwp7q0xZklzRjDrgkQ41R1v8rRvlrLM8ZBxnRGAHm9beMgZdsmGKvPJQF6wS/O17Ytw1i9LgmQBMsBLWIKjJV0SYDNYCnAVeUSYzo1C6wGKIBvsfwSYJnL3KCslTGdEUBScktA9YUYY/nyyPl1w7NgA5eyvy0LsJ6xZl3KACljfQNdAWRAF2NNu5QBBRY/9rOA8dNS46XnP4Knfk25fs4CYxycBi32/iBjjLm4GJICptTwroBOC43vpG+J8d7VeoDU8qSq+xA0++i3mT5XGMPZgkiWhYtt4BGI++AzTl/b6TvrsgBiUr09DnaDl6CjBl8d9CG+jhkLlWFbVeFJ49X4Zdn6Dgxx/q5mrh/itW30NWnjRm2+uUlv7TBeDe8auAhug8fgdYn3+SaefwQMGK/+F+qNkb9jwnlww3hbY+fYsz+MtzW2yPPaSdxEbGuseIocMOU3R9+aiG+OFr8xPidOmH4goQKoACqACqACqAAqgAqgAtSpVVoLyMeLUxFpp/x1dq7UgViFzEhGqKO/gLtcdaoV2x+ItpqtsXNRfgAAAABJRU5ErkJggg=={scale="+$scale+"}>"
+!endfunction
+
+IBMEntityColoring(washer)
+!define washer(e_alias, e_label, e_techn) IBMEntity(e_alias, e_label, e_techn, #232F3E, washer, washer)
+!define washer(e_alias, e_label, e_techn, e_descr) IBMEntity(e_alias, e_label, e_techn, e_descr, #232F3E, washer, washer)
+!define washerParticipant(p_alias, p_label, p_techn) IBMParticipant(p_alias, p_label, p_techn, #232F3E, washer, washer)
+!define washerParticipant(p_alias, p_label, p_techn, p_descr) IBMParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, washer, washer)

@@ -1,0 +1,13 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $storagepool [64x64/16z] xS61400000CXXFdRpkElMXu0001m
+
+!function $storagepoolIMG($scale=1)
+!return "<img data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAAIGNIUk0AAHomAACAhAAA+gAAAIDoAAB1MAAA6mAAADqYAAAXcJy6UTwAAAAEZ0FNQQAAsY58+1GTAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAAOxAAADsQBlSsOGwAAAoBJREFUeNrtW7FOQjEULUjcZFESNW76AXwCP8BEHE3UXd2UCaOL4Ki7MSFxITqIH4B+gR8AG1ETYXF08HkbLgnUgk0fbe8rPckZXtMXck9729NbHmMBAQHzjNSE9g3gJbAAXEt4jO/AFvAY2FURgAf/Clz2bLD7wLwoQlrSseZh8AxjqomNMgEKHqf8n9gykk7riutEUhBNiU06A+YKQYB5FyDj+PdXgIfAInAL29rAJvAK2PNZgBLwBpgV2vPII+A+8N7HFODBNyTBjyKLfUq+CZDDkVfZXlPYN+dTChwII/8NPAXe4vMu8Ay4ODIT+DsVX2ZAUXjmgVWBH8iqJNiiTymwKTzXJX3q/7wTfECSBegIzzuSPmJb26dFsIn7/BDnuNqLi6D4DkkBdJzcNZqc4U7AV/sLpAxf+A45AXSd3Ce2NxS8wA9wz6QlTscIPo6T46Js4+iyKSPP+zxQOwvoOLkXHHlRhGchhSJcJB9x2pM8DM3SyfWwvcIcQScFSDk5FzNA1clVZ+jkjNUNMow+jNYNdFLAppMzXjfQEUB0ZdzJlYGryDK2xXVyVuoGOilgy8lZqRvozIChk4sU+sZxclZ2G10naMPJWakbxNkFSDg516dBk06uIxyb+c5Sm/VuQ9kHWKkb2BKAbN3AhgCk6wZpC8GTrhuYnAGJqBuYFCARdQOTKZCIuoFJAUjdALlaBMnDpACkboBcLIKkboBcCEDqBshFCtiqG5BeBMncALk8C5CuG9g6DTq/AQo+IAgQBFBeA97Y+P/qI4/ifVOZAS2PB7ylIsAJG3xg5Bv6GNsYFiYYkzs2+FyOFzOXEh44/2zuiQ1Kbl0WEBAQMIJfQ0jXRJci9KgAAAAASUVORK5CYII={scale="+$scale+"}>"
+!endfunction
+
+IBMEntityColoring(storagepool)
+!define storagepool(e_alias, e_label, e_techn) IBMEntity(e_alias, e_label, e_techn, #232F3E, storagepool, storagepool)
+!define storagepool(e_alias, e_label, e_techn, e_descr) IBMEntity(e_alias, e_label, e_techn, e_descr, #232F3E, storagepool, storagepool)
+!define storagepoolParticipant(p_alias, p_label, p_techn) IBMParticipant(p_alias, p_label, p_techn, #232F3E, storagepool, storagepool)
+!define storagepoolParticipant(p_alias, p_label, p_techn, p_descr) IBMParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, storagepool, storagepool)

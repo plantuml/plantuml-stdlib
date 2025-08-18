@@ -1,0 +1,13 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $chartmarimekko [64x64/16z] xS61400000CXXFdRpkElMXu0001m
+
+!function $chartmarimekkoIMG($scale=1)
+!return "<img data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAAIGNIUk0AAHomAACAhAAA+gAAAIDoAAB1MAAA6mAAADqYAAAXcJy6UTwAAAAEZ0FNQQAAsY58+1GTAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAAOxAAADsQBlSsOGwAAAR9JREFUeNrtm70NwjAQRg2kpYICAkMwAuzALsyQRViAAcgIDMFPlYYFnIuUCmGjJCLJ2e+TviqyrHu+u9hRbAxCCKF4NfnxfCvOxAfxWllsL/FVfBLf2wCogr+JF8oXuRDvXBCmnoFZAMGbOobM9dAHYB9QqTtjSTyD0ob94lN2ROPTNhkQhQAAAADEraTHuSwZAAAAqDoN2h7nGmx+SgAA7AN013DX+SkBAAAAAAAAAPsAFbJkAAAAoLoHdK1hzgKUAAB094ChvyeQAQAAQLceYMkAAAAg6h4wyvc4GQAAAAAAAH86oT2M5x9bZXqKN00zIA9oofM2JVDdtCgCCL6oY/mqmWfgW3wWr8RL8VxZ4NWVmYv4aDxXZhBCCMWsEh0vIkkdj5vsAAAAAElFTkSuQmCC{scale="+$scale+"}>"
+!endfunction
+
+IBMEntityColoring(chartmarimekko)
+!define chartmarimekko(e_alias, e_label, e_techn) IBMEntity(e_alias, e_label, e_techn, #232F3E, chartmarimekko, chartmarimekko)
+!define chartmarimekko(e_alias, e_label, e_techn, e_descr) IBMEntity(e_alias, e_label, e_techn, e_descr, #232F3E, chartmarimekko, chartmarimekko)
+!define chartmarimekkoParticipant(p_alias, p_label, p_techn) IBMParticipant(p_alias, p_label, p_techn, #232F3E, chartmarimekko, chartmarimekko)
+!define chartmarimekkoParticipant(p_alias, p_label, p_techn, p_descr) IBMParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, chartmarimekko, chartmarimekko)

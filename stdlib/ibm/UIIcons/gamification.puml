@@ -1,0 +1,13 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $gamification [64x64/16z] xS61400000CXXFdRpkElMXu0001m
+
+!function $gamificationIMG($scale=1)
+!return "<img data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAAIGNIUk0AAHomAACAhAAA+gAAAIDoAAB1MAAA6mAAADqYAAAXcJy6UTwAAAAEZ0FNQQAAsY58+1GTAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAAOxAAADsQBlSsOGwAAA/pJREFUeNrtmn1oTlEcx8+MrbA1r7OhpQ0xtCWipUaUl4QoMZTFRgophT9kQmkaNtK8FvHPrAh5m1HKiv2xGpHZH4zlLavNW4zH97Tf6nTcPfc+9zn3nvs8z/3Vp+2ce55z7/ne3/md3z33Muabb77FssVpPPdccAqkglegEdwH18C7WBDgDRhpUB8At0EZuOv0RcRrFKAsyE3JAqtBHqgDX6JRgD0W2mSCteQtjdEuwHrQhwYtTs1EsAR8B4+iWYBF4CIxDGRL02IO+ADqVV5EbxcHzF15H0g3adcMloNqcAb0F46Vg2fgYSR5wABwAewESUHalUhlPtB7YCVIEK43j5bPP5EgQD64A6abtGsBhw3qeT7QAFYIcWEQ+KnKC5wSgAez/aASpJi0fQuKKBkysiYwAkwW6iaCCtDpxRgwmgLZFINj9eTSTSH2uQMsBQOpPASsAqe95gGF4AoYJdX/BQfpoj/Z6PcHSAPThLp+4LxXPIAHupNgWQ/zew14EOY5eP9bhFgwAySDdt0C5NOdMMrrqynBaVNwnufgBRhHZb4yzARXdQnAA91esN1gKn2lu3VW8RSrEwTgNkmXAMEC3RNQYCPQWRWgUCiP1xEDFoJLUobGKDEpBbvBbwWDDVhoM0aHACcMBq8q0NkJvq4LIM/3W7S2tzH3LSncDnrZ+M11g0xOx+CVCGDHA6rAOqG8GGzsIS0dSrs7YylwZhGZ9Gi7zUBQ8RHYLDYk6hCgFnwGg6nM/24A3wwGmRykH36sLIgArpgdATop3RW9oMLBSO+o9bL5uypF5y/XLYDdRKiW5nCqSbt2esx9D+ZLxx7TkqrVO+wK0ElTgO/M9KVBNtPflwT//yO1L5UE4L8vpqfEiPSA7uUwzUK7HLBVqjtCOz0sUmNAKP1XSkK/ZtbeCXjeA6wYzw+mSnWbaMk0szg3YoOTHsC3vw9IdZfBDeYhc1KAo1Ii1E57BCwWBFjA/t8e2wVavSaAEzGAb1YeD3HN15YHOOEBPMJneHHNd0MAT6/5Tgvg+TXf6RgQzpofFXnAZhfW/AwvTwH5jqUwtR9h8b7kd4GtXhLgkFSezbre+qqyIupTtBIvCcAfjWukulJFbptBfYlWQ+f0jAAB2iPoEOqSyG3jFLi+uAPcQecKqJ63diyB3JO/G5jAFGxVWzQuwlPW9ZaKvzn+pUOAdIr0OZqX8wZ6/gg5KMaHeef53mCuB/IZ/lndLHCOhfjxVDgxoMgjg++2XDurTjiZYIFUvsm6PoZw60vv4bQKzJOu6ZhbHpAtlYtdHDyjcxWbXJOjAsjRvkWD27eYXJOW/YCIMl+AWBdA5X5AwPcAXwBfAN988823iLJ/eXy+bxmrwbUAAAAASUVORK5CYII={scale="+$scale+"}>"
+!endfunction
+
+IBMEntityColoring(gamification)
+!define gamification(e_alias, e_label, e_techn) IBMEntity(e_alias, e_label, e_techn, #232F3E, gamification, gamification)
+!define gamification(e_alias, e_label, e_techn, e_descr) IBMEntity(e_alias, e_label, e_techn, e_descr, #232F3E, gamification, gamification)
+!define gamificationParticipant(p_alias, p_label, p_techn) IBMParticipant(p_alias, p_label, p_techn, #232F3E, gamification, gamification)
+!define gamificationParticipant(p_alias, p_label, p_techn, p_descr) IBMParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, gamification, gamification)

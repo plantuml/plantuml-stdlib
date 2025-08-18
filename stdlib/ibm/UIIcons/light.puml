@@ -1,0 +1,13 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $light [64x64/16z] xS61400000CXXFdRpkElMXu0001m
+
+!function $lightIMG($scale=1)
+!return "<img data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAAIGNIUk0AAHomAACAhAAA+gAAAIDoAAB1MAAA6mAAADqYAAAXcJy6UTwAAAAEZ0FNQQAAsY58+1GTAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAAOxAAADsQBlSsOGwAAA4xJREFUeNrtWs9rE0EUTrJFhSCCVKzFnhQrYq4Fr4F6qD+KKATRQ4Ui9iCI/gHiP6AFDxbsoaAeKiiopQeLOXqIikJVmqIHW6kVioKlINI2fg/ewjCETXZmXrpL5sFHO9mdN+99M+/Nr81kvHjx0s6S3cK2a0mwJdfuI8AT4AnwBHgCTCSfQF/yrSKgAHwBSglyvsQ2FaQJoAbKQBfwKCEklNiWLratIEUADbGXQCeXgwSQEDofcLmTbWw6HLKWDZJsABeAyS123siWIGajn4AqcEYZPTkuV/l5apw3ISAJJDgdhYGhEVEkvAfmhZw/BTx2GYI2C6FJbnhD+Y1IqQj2foXbcJZ/AkuD1JEwBxSBn4IErAFPgAFgt4vkm3U4NCtNON/D75IDh4B9/PsPDptp4AWw2EDPXqCP303FgUg3cAsYAjoavLsOTAA3gSVpw1pBwGngIbAzZr1V4CLwXNK4QNj5q9ybOwzqbucp77dkYu0Q7vnROjMNJc5xXrIuKLnhODAMHNVmKdLxTWokZAVjfk4b9v+A68CYNnXq0/IV4A6wTQuHwxI5QSoEbgPHNOcHeMqqRdSjZ2+A18B5xT4Kh10usn4rToT2c7ZX5QbwKoaOMo8WVYZYd+IJGNRyC8X8PQM9VOejlq8G00DAgFYej4j5KNnkulG6RWaBmmUCPaCVZyzsm2mg29puiRHQrZUXLHQtNtCdyBBIlUgQsFRnA2QqPQ10i+QA28XRV6BXKfcDnw119dfR7XRRJzECprXysGE7Oa4bpTuRIfCMt7Sh0Np+xEDPiLYvWGfdiSfgO+8A9aVxMYaOItdRZYJ1p2Iv8A64zGv4sB1a2//iZ7WIDqGef1BnM3SO/6aCgFVeApeU5ERtnQDOsnN/gL/8Py1w6HzvPnBJs2uT9bxN03ZYPRAZtQg1cv4acFfKQOkTITrJ+QCcVMIhzigqcTiIiT8UdaSnrY/Fw7u6akb+YiR0vsyrTeuLkcCR86RnD/cs3dysCTt/JOPoQjbnyPlQenloSkmfts+w/kgjcOh8eFH5VJCA+Yzjq/nAsfOt+ErE6fcJQcqcd05CnJuhPK/qXDlv+7V42KbaIQHbONVsIo6TBEkhXV+tbGHP1yNB/UhjhW1sehaKOwvM8ly/nADndRKW2bbZOJVNLkepgYOCc70pCVMmNpmuA5LkvJVN/ljcE+AJ8AR48eLFS9vKf0A83xzHA21yAAAAAElFTkSuQmCC{scale="+$scale+"}>"
+!endfunction
+
+IBMEntityColoring(light)
+!define light(e_alias, e_label, e_techn) IBMEntity(e_alias, e_label, e_techn, #232F3E, light, light)
+!define light(e_alias, e_label, e_techn, e_descr) IBMEntity(e_alias, e_label, e_techn, e_descr, #232F3E, light, light)
+!define lightParticipant(p_alias, p_label, p_techn) IBMParticipant(p_alias, p_label, p_techn, #232F3E, light, light)
+!define lightParticipant(p_alias, p_label, p_techn, p_descr) IBMParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, light, light)

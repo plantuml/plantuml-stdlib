@@ -1,0 +1,13 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $richtextformat [64x64/16z] xS61400000CXXFdRpkElMXu0001m
+
+!function $richtextformatIMG($scale=1)
+!return "<img data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAAIGNIUk0AAHomAACAhAAA+gAAAIDoAAB1MAAA6mAAADqYAAAXcJy6UTwAAAAEZ0FNQQAAsY58+1GTAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAAOxAAADsQBlSsOGwAAAntJREFUeNrtmz9Lw0AYxq9aQWed/A7t4OAqBQl2sptVEMVPIDjaTlrEqX4CsRasbupSEFFKB0FwiZ/CoW5F3HwP3shRSHKXXHqXu3vhIc21afr8+t5/QojlUUh43S7oQDMvj6C26EWzCW92DloBfWlivgyqgeZALyIXFlPc9B1U1QRAH7QGOsbzxjQA6BYD0IcoBJMAsKa5IZgGQBiCiQCEIJgKgBuCyQC4IJgOIBaCDQAiIdgCIBSCSQBWQa8cn/tFCCM6d5gxxPwNyOf87BvoG+Sxs0HR2V0Zj76EH38J6iqYO9CoBhmww5jiCV+S+TLeW1kUFc/u+qrrjiltgJQMkBHboHV8/Qzq2QTgFrQF+sRz2qhuguo2AKij+X1QB8v2QFege4STtv8Wjco02wAP//kOU9bBMs+mNiBJKF1blJUBT6ASpj1hqkAJ38t9Bhzi8SKiAaxhnT/CMmr+Lqb+5wLACTOTWiLhy0u0IXxgusEzE7rBwHwralGBiV4eTPMCYM2zhoU3H/IIIMx8IwMISscBRQHzWULQJgNO0VgrxhgvhLjeQ/k4gAVANxc3OMzzQmB7j0VQU/cMWBAwHwdhsvcIyps6AxgmrM+TEEhINdISAgtgnOJ7JiGEmdcOgszJEDU3wtftCEhaQZA9G2xzZgo9FnQdB2QdbHX5QVm3HsBCGJiwHpAUwlB1G6B6WXxsOwDiADgA+owDsuqPoyLYkFU+DqD76/MJfnjaHWJflwzoErE9+v/9ddcGOAAOgAPgABgyDpAdWY8pKi4DNM+AimsDHAAHwAFwAAzuBVSsH8gKOp2nu9KJnx2mmbOc4z+ePvN8TTRYj1Aef7KagSV9nKAJAAAAAElFTkSuQmCC{scale="+$scale+"}>"
+!endfunction
+
+IBMEntityColoring(richtextformat)
+!define richtextformat(e_alias, e_label, e_techn) IBMEntity(e_alias, e_label, e_techn, #232F3E, richtextformat, richtextformat)
+!define richtextformat(e_alias, e_label, e_techn, e_descr) IBMEntity(e_alias, e_label, e_techn, e_descr, #232F3E, richtextformat, richtextformat)
+!define richtextformatParticipant(p_alias, p_label, p_techn) IBMParticipant(p_alias, p_label, p_techn, #232F3E, richtextformat, richtextformat)
+!define richtextformatParticipant(p_alias, p_label, p_techn, p_descr) IBMParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, richtextformat, richtextformat)

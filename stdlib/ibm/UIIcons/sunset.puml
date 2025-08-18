@@ -1,0 +1,13 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $sunset [64x64/16z] xS61400000CXXFdRpkElMXu0001m
+
+!function $sunsetIMG($scale=1)
+!return "<img data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAAIGNIUk0AAHomAACAhAAA+gAAAIDoAAB1MAAA6mAAADqYAAAXcJy6UTwAAAAEZ0FNQQAAsY58+1GTAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAAOxAAADsQBlSsOGwAAAulJREFUeNrtmjtoVEEUhm/imociZkWJolilUEmXhJQqIggKaiEIIhYSEhBstBGihQpapAoEQlhbU4iFIEZ30YiVYlQEiWJSLSGRKJrCRmRd/4GzMAzZ+5o5uzvs+eEr7jBz7px/53nZIBCJRCKRSNSsaqnju8uN0JfWZh8BYoAYIAaIAWKAGCAGiAFiAKOugL4U7fqoLasyzPFHwS3wCxwF7xIkXwBZ0Alu+zgCKskHlIhKqD9Gu34t+YBijPpoQJvxrBLKg4GQNgNUJxsRy5k2MBowS/EPamVqOJ8BL8CQUf9JleTVCLjh8/eAm+C6UbYGumKUsSbPPQLCRkLHOvU6ap28jQGbwF9LE8KUJvmkfUptQC94C4pgnsGENMmrdWUGPAOrnAb00gLWDU6DL45NSJv8fbBVM2KVw4DN9Mt3a1uoSxNsks9ofVR9mow7HZIYoAIug1Pa+cGVCS6SVyqBEfCeawp8AguOTXjlMPnzYJp7EXRtwmy9krfZBsNM+AC+Mm3bJ8ADV8nb3gWm6cUlrWwRzDGeW+boHU6Sd3ES1EeC+tUPg2+MBvwGD2kkZG2Td3kXOAnexEi+izqv2At2UfkKHaweE2sRcXaCQfDIh8tQ5Sp8DVwG7RF1/4BxcIc+pLCqFgYcooVre8J2P2jFf+nzbfACJb8l5YXrHE2Nj1wd5PwmeATk1nnHZ3APPAVLVLYHHAMXwX6t7kaKoeo992kK7KBD0TbjKH0VTBhbpzkiL4ExSr6in2Af+O7LFLhLc19P/jhtWeWQdmXaTV6Ds1r/OumDyYzrjnJ8FFW3xWGjTP3yhQQxCtRG17B2E2VdA0qWo0edCfSvuPM07JNqgpI+QM9tFHuqSv1U/W6tMiriEHZe15VL0DkzoVxEbOt+c0yBHuM5bxErHxG7IdeA3cZz0SJWMSI2yzYY15R/QWPJ136LRCJR/dRicaLyUWXz9Jup0dmgYSX/EpM1oPlMkZOgSCQSVfQfu9ahfCOfos0AAAAASUVORK5CYII={scale="+$scale+"}>"
+!endfunction
+
+IBMEntityColoring(sunset)
+!define sunset(e_alias, e_label, e_techn) IBMEntity(e_alias, e_label, e_techn, #232F3E, sunset, sunset)
+!define sunset(e_alias, e_label, e_techn, e_descr) IBMEntity(e_alias, e_label, e_techn, e_descr, #232F3E, sunset, sunset)
+!define sunsetParticipant(p_alias, p_label, p_techn) IBMParticipant(p_alias, p_label, p_techn, #232F3E, sunset, sunset)
+!define sunsetParticipant(p_alias, p_label, p_techn, p_descr) IBMParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, sunset, sunset)

@@ -1,0 +1,13 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $curveexponential [64x64/16z] xS61400000CXXFdRpkElMXu0001m
+
+!function $curveexponentialIMG($scale=1)
+!return "<img data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAAIGNIUk0AAHomAACAhAAA+gAAAIDoAAB1MAAA6mAAADqYAAAXcJy6UTwAAAAEZ0FNQQAAsY58+1GTAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAAOxAAADsQBlSsOGwAAAihJREFUeNrtmM8rw2Ecx79mhgMHkQjbOCjFwYVy2kGR5EcpaklccEUpB/EPUIpyFEm40ZKQEqIkZZFiTTsoOUl+5Mf7aZ/DWtts32199/0+n0+92trz47vn9Tzf55eicEgRueES0jX+Yy7gBCtJfs4NsIKd4ASTBL1fAWzgPFSiDAIawS/Yl1VAJ/X+k4wC8oEDrIfLYHQBTmrjhowC0sAg2AUeGQU0gUowHymTkQVM0vq/LaOANlAHpsG3bAKywQy4BGv/ZTaigCna9g6DH9kEiF3fCFgAJ9EUMJIAO1gG12A02kJGEZBHs30G6ALvMgkoAHugHHSA21gKm3Xe+CqwSZOeOPQcxlqBngX00i7vC7SAAzWV6FFADpgF/cAN2sGd2sr0JMAChsAEHXPnwDh4i6dSs04a3k0bHBu4oPf9KBGVp7KAWtAHeqjH3XS+X41mh6dHAWIP36D4b3BaQTUdZMTN8SLYUvx3ewm/NNAqxFl9CRSBe1APMsEnOKXlTeBL9q1JIkOMqBJ6b4tBFiikRpZSmp0ab6EyH+CM1nDBcbwTm1oBsayj1qCyYkdZFiG/6NWHEIyBF9Cs1TCMZQ54Bq/03RPwu482IyK8NEE90qeXejjcMB7QeuIJFOBQJAyTInmonQMSFTX0eaXBsx08AlIgXATPASyABbAAFsACWAALYAEsgAWwABbAAlgAC2ABLIAFsAAWwAJYAAtgASyABbAADo4kxh9ftFiXsjN9oQAAAABJRU5ErkJggg=={scale="+$scale+"}>"
+!endfunction
+
+IBMEntityColoring(curveexponential)
+!define curveexponential(e_alias, e_label, e_techn) IBMEntity(e_alias, e_label, e_techn, #232F3E, curveexponential, curveexponential)
+!define curveexponential(e_alias, e_label, e_techn, e_descr) IBMEntity(e_alias, e_label, e_techn, e_descr, #232F3E, curveexponential, curveexponential)
+!define curveexponentialParticipant(p_alias, p_label, p_techn) IBMParticipant(p_alias, p_label, p_techn, #232F3E, curveexponential, curveexponential)
+!define curveexponentialParticipant(p_alias, p_label, p_techn, p_descr) IBMParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, curveexponential, curveexponential)

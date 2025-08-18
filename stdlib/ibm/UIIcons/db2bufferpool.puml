@@ -1,0 +1,13 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $db2bufferpool [64x64/16z] xS61400000CXXFdRpkElMXu0001m
+
+!function $db2bufferpoolIMG($scale=1)
+!return "<img data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAAIGNIUk0AAHomAACAhAAA+gAAAIDoAAB1MAAA6mAAADqYAAAXcJy6UTwAAAAEZ0FNQQAAsY58+1GTAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAAOxAAADsQBlSsOGwAAAh5JREFUeNrtm70vBEEYxmc5CqJA5avQ+KpUEhWNSC4qlYhSgmhO4qMRHxHExSFRo1BoiMYfcBRa5w8QjSCSK1BR4JmYYk1uP2bZszvzPsmv2NnbS95n5533nWSHMRKJRCKZK8vjfiNIg15QF7PYHkAWzIK7IAbw4HOgNuYvOQ86nUwocXkwrUHwTMSQdrrpZkCPRqnuGEvC5aF6xfUiavp0icXXDDBCZAAZQAaQAWSAyUoErKs0A8gAMsC8NSDOewGaAWQAGUAGkAG/rQJBV1sryv9PKUAGGC5LIfcsmgFkABlAfcAf1Omw+waaAWQAYwPgDLQUIwWipjKwCVpBH9gFK+A5LAOskH+vqkkRPFc5SIFDcG1CCvCPIRaksX2n4HU0YBlU265fwLwpi2AHGJPGVsFT1BbBsPqALSmeG7BjShlMgn5pbAa8m2AAL3sZaSwLTk1phCZAm+36Q5S+ou0Fwu4b3FQDFgu81JzLM6NgT5cZsCRM8KsrcKBLCrSDccVnUiJFtDAgIxZAvzoBFzpthpIeHaG9JX4TZdGI7XATmJbGtsGtahW4Zz+/sf2vb4RUq8YGqLBdP4K1IH3AeQzffjcYksb4Zug1iAH8pEU+RsFbove33MqeigH8hAU/aXHEvo+fRF0joEsam5LLnmoV4CYMxyD4SrBeoOx5prEuVWAONPgpe7JKNTEgLzZEzbYm6ZgZqEFwCaoYieRLXzfoS8ytE0xbAAAAAElFTkSuQmCC{scale="+$scale+"}>"
+!endfunction
+
+IBMEntityColoring(db2bufferpool)
+!define db2bufferpool(e_alias, e_label, e_techn) IBMEntity(e_alias, e_label, e_techn, #232F3E, db2bufferpool, db2bufferpool)
+!define db2bufferpool(e_alias, e_label, e_techn, e_descr) IBMEntity(e_alias, e_label, e_techn, e_descr, #232F3E, db2bufferpool, db2bufferpool)
+!define db2bufferpoolParticipant(p_alias, p_label, p_techn) IBMParticipant(p_alias, p_label, p_techn, #232F3E, db2bufferpool, db2bufferpool)
+!define db2bufferpoolParticipant(p_alias, p_label, p_techn, p_descr) IBMParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, db2bufferpool, db2bufferpool)

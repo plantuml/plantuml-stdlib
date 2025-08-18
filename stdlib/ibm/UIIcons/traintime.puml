@@ -1,0 +1,13 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $traintime [64x64/16z] xS61400000CXXFdRpkElMXu0001m
+
+!function $traintimeIMG($scale=1)
+!return "<img data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAAIGNIUk0AAHomAACAhAAA+gAAAIDoAAB1MAAA6mAAADqYAAAXcJy6UTwAAAAEZ0FNQQAAsY58+1GTAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAAOxAAADsQBlSsOGwAAA8BJREFUeNrtmj1MFEEUx0dYomLQgkaJ2mC0k0alMX5URoxCYaIiGmMwJiQkdCYaAxg1JjYaIo1EUfloTBQ1GCukQ2NjYQHGoIiHjVoo2Fw4/y/3iHeTvWNnbmZvF+Ylv+Lu9mbn/Wfem53ZJ4Sz5W0rYtbfTeAwqANbwQaQAt/BOBgGz8H0UhOgCnSCM8Bb5NokuA/awcxSEOAI6AMViv/7DRrBi3wXlUbc+VbQC1Zp/HclOA5+gre5LvIiPvK3QInPb6/Bfum7EbBP+o7+ext8zjUTSiIc832G+kdt9HPCNDYDykADj1ItWK8Ro/nyT6dGe/lsLegA500IQI7fBFssjf5Gzvam7Sy4Ar7phgBdewM8seg8Wb2l3ORx29o54Dq4EEL811ls+5BuCDT4OJ/k5HIPfAA/DHWy2qIA1ToClHHMZ9ovcBC8sbQC6NgdsHsRn6p0QqBeivl5i84XYo/BCZ6ZSoktyPTPtH7LzicCXEMjfVRDhIROCOyQPp9ibO1EP4FtATL6YIbTsgiCf/d82laeAVUhT+VhhWVtMMdMKA3adhABKkIWYEghjv1EOMaP0Z7PqjUUh83QNO8AmxVFWBj5vhx+9fodlHgGY9ektfNIVmiI4OU4G2iP026QsnUTL7kqj7p+zs9zW4k4CUD2DLQpiuDnfBu3FbsDEbIu8EXoH4k15XM+33KRaR0+e/UwjU57H4B1YHuAWZvk/QmtDO+CxE0cjOL3HO/n5WNxMjr9nRD/j8W/qiSOOBk51s0YsRKxzM0J4ARwAixvC/Jcn1oCPrgZ4ARwAph7Eix2TUHKzQAngBOgqDkgFVJuSLkZEBEBZiPc/9kwBJiJsAAzYeSAMZH9dvgROF2kZ/yHIvu95FgYM+Cp9PmkSBdGhW21fO98fbMiAL1Pm5T+8zJkEWr5npn9nRQ+7/pULcixOL1c+Cipv1qkK7mo5IQqMf+Av4adrgQ7RfoYngom10i/05n/eJh76WvgYkSSHxVsXTLRkEqt8Ahfv6fIzl8Fl001plosPcKZdxdP0TBtgsPwru2lJmjyPCDS5Sjllh2fE+nXXK9EYS9Kje0FFhLjnOR8kpPiVIF92izStTwLfSvne83bULeQvUCrz3I5ZaBPUz7LW2vUNkM0SnLdbZfBfslt1fM9IyNAixQ+78GowX6NcpuZodoSFQHoIajZ4ujnarOZ7110ARqlJZCKpAcsCDAgsguwK/neRRdATkg9Fh6DBbfZYzsZqgqwF9RIS1+3sGfdIrtosob74MyZM2dG7B8M76n60y4V+gAAAABJRU5ErkJggg=={scale="+$scale+"}>"
+!endfunction
+
+IBMEntityColoring(traintime)
+!define traintime(e_alias, e_label, e_techn) IBMEntity(e_alias, e_label, e_techn, #232F3E, traintime, traintime)
+!define traintime(e_alias, e_label, e_techn, e_descr) IBMEntity(e_alias, e_label, e_techn, e_descr, #232F3E, traintime, traintime)
+!define traintimeParticipant(p_alias, p_label, p_techn) IBMParticipant(p_alias, p_label, p_techn, #232F3E, traintime, traintime)
+!define traintimeParticipant(p_alias, p_label, p_techn, p_descr) IBMParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, traintime, traintime)

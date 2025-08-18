@@ -1,0 +1,13 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $curvelogarithmic [64x64/16z] xS61400000CXXFdRpkElMXu0001m
+
+!function $curvelogarithmicIMG($scale=1)
+!return "<img data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAAIGNIUk0AAHomAACAhAAA+gAAAIDoAAB1MAAA6mAAADqYAAAXcJy6UTwAAAAEZ0FNQQAAsY58+1GTAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAAOxAAADsQBlSsOGwAAAc1JREFUeNrtmr8rhHEYwO8u+VEMyK/LZDDgLG5U3GAwmQwKdeXHYjFZbvA3sCpJsUiKsijKoGShGGRASeTCcEIcn289w3Xd6O59vc/z1KfvdTd83+/nnvd5vz/eUMjCwsvYFTyLiPZ/wASYABNgAkyACTABJsAEmAClURbgsbVCB7RBE0ShHCqgBRJBE+AGOgT90At1Ob+9CDfwE6QMqIJRmII4ZOEYVuAILuEKMkG7Bdx1T0MKmuEQkrAN6aDXgBgsQw9swTycaimCI7AEDzAAe5qeAjOwADswBq+aHoPDsCipPwnfmuYB7ZL2mzAhlV7NTLASNuBO0j771x1E/sF93wnj8KZtLVADc7AOJxoXQ7MiIaVxNRiRmd4aXGsU0Cert1Wt+wFuxncLB8XuKJzzed+DgXZLe5b3fVyq/kUR+074NQNqoVoyIPBR6Hg8KZsW9aWqtn6LLpn5pbUKiBWoCeoyQK0AVwDdju25VgFRae+1CmiQ9lGrgEbtAlwGuE2PJ80CnuFLqwC3/s+Uet3tp3B7gO+aBbiT2w/LAMsAvQLcCwyfmgVEQnkvMGgTEDYBJsAElFSA347HB72ouqrDBJgAE2ACTICFhd74BU9wTMc3smATAAAAAElFTkSuQmCC{scale="+$scale+"}>"
+!endfunction
+
+IBMEntityColoring(curvelogarithmic)
+!define curvelogarithmic(e_alias, e_label, e_techn) IBMEntity(e_alias, e_label, e_techn, #232F3E, curvelogarithmic, curvelogarithmic)
+!define curvelogarithmic(e_alias, e_label, e_techn, e_descr) IBMEntity(e_alias, e_label, e_techn, e_descr, #232F3E, curvelogarithmic, curvelogarithmic)
+!define curvelogarithmicParticipant(p_alias, p_label, p_techn) IBMParticipant(p_alias, p_label, p_techn, #232F3E, curvelogarithmic, curvelogarithmic)
+!define curvelogarithmicParticipant(p_alias, p_label, p_techn, p_descr) IBMParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, curvelogarithmic, curvelogarithmic)

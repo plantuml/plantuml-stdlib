@@ -1,0 +1,13 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $saasenablement [64x64/16z] xS61400000CXXFdRpkElMXu0001m
+
+!function $saasenablementIMG($scale=1)
+!return "<img data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAAIGNIUk0AAHomAACAhAAA+gAAAIDoAAB1MAAA6mAAADqYAAAXcJy6UTwAAAAEZ0FNQQAAsY58+1GTAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAAOxAAADsQBlSsOGwAAAipJREFUeNrtWzFPwkAUPkt3mV1MHJUwMrkw+hcMmuDsIrMYg844ummihMHBxMlRBydHgo7sTsDoYvwaXs2lKYVr79qTe1/yJdDe9d17XN97d8cTwnGsxVzbAhvgDn3/AHvgSKNca2REDXAKnoEeOKRrFfAH7ICXGgZmlQw/0ukCvAVPwCldXwev6J7IOEDrZJSk6fIA3oFH4Lf0wODzE7gJHoN9cJxySlonw6ObDZourYSHt6hNI+UvY6UMT3o/PsFJQscJtamkHJyVMjzXw2BogMBTboPlhLZlajNMKctKGaEBehQiugkdu9Sml3JwVsoIo8BYchCBl3yVPGgQPq7BJnhOnjQNrJThfCLkfCrMYDAYDN4R0ocDWoaaxA14r3stoAv7YNWg8lWSoQ2+gUG+g3uGDPBsajXo/HLYVrwRnTWAcfiWj2+3CAOsyiqqkIORwEvXwIHBMLhMlLH2YCQPKOnhS9OlTZ2imdxUuha06S94HYrMA5T1yPNgJA9YfTCSB/hgJG0ilMehRR6w+mAkDyjrEUaBEYWHMETEhY8meU/VhOglo1J1hbbKesh5QBjfgwTiMCaBaP+DHEBZDz+mcz+SQj5mTIXrBRlhKT38OdOoswIOfik9OAyyAdgAvCOkGzUNsX/RfoA2lAzMqA2DP9iXmP0HcCAYDAaDwcgMrhiJdOKKEcEVI1wxMg9cMSK4YmR19wO4YkRwxcifg+CKEcEVI1wx4gx+AWYMaT7MjFpUAAAAAElFTkSuQmCC{scale="+$scale+"}>"
+!endfunction
+
+IBMEntityColoring(saasenablement)
+!define saasenablement(e_alias, e_label, e_techn) IBMEntity(e_alias, e_label, e_techn, #232F3E, saasenablement, saasenablement)
+!define saasenablement(e_alias, e_label, e_techn, e_descr) IBMEntity(e_alias, e_label, e_techn, e_descr, #232F3E, saasenablement, saasenablement)
+!define saasenablementParticipant(p_alias, p_label, p_techn) IBMParticipant(p_alias, p_label, p_techn, #232F3E, saasenablement, saasenablement)
+!define saasenablementParticipant(p_alias, p_label, p_techn, p_descr) IBMParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, saasenablement, saasenablement)

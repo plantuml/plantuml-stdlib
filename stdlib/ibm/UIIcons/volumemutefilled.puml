@@ -1,0 +1,13 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $volumemutefilled [64x64/16z] xS61400000CXXFdRpkElMXu0001m
+
+!function $volumemutefilledIMG($scale=1)
+!return "<img data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAAIGNIUk0AAHomAACAhAAA+gAAAIDoAAB1MAAA6mAAADqYAAAXcJy6UTwAAAAEZ0FNQQAAsY58+1GTAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAAOxAAADsQBlSsOGwAAAptJREFUeNrtm0FLG0EYhr/GWG21BT0r/g2LShEpVYtKKlEa8Kp/R3rTa6BiljZUsVWqiIjosbdeeov/oFXbatB32AlsQzaZCcnMN5l94blEsrvvm9nZb74diRIlSuSzHjG6ljnwHtyDVXBo4qRdTMwvggAMggHwEqybOHGKgfkM2ALpyGcjpk5uO4AFsA26bV1AyvI9X7Bp3mYAb+Q9/9j2/WcjgBnwEfRwmH1NB/AafOJi3nQAr0AR9HIqhEwFMAU+gyfcKkETAUyCHY7mTQQgKrpd8JTrWqCdAUyAPdDHeTHUrgDGwBfu5tsVwAvwFfS7sBxudQCjYB88c6UfkI6p1DbBEHmgWiNgwxfzcQEMM75e0cD5ALJNfDcrv9vV6Bbgbn4pEkCgaT4tj5MDZdv9AF3lpfnKD6c6EqLmSR4jb7sf0IzEQuquavQ2CqHaPMljFF0MIJBDVzWEOPO56K3jUgA6ISiZd20SpKqJL2qwEgLV+FuseVcDUAlBybzLAdQLgVTNuzgHqMwJyuY7IQDWDRETqjXb69QJTgcQ96jTKpZSHWY+p1ksOfkUUC1y4h6RgcsjQNW8ctmc6kDzWiG4FEBGp8JrEELGxQBWKNxPoFzkxIRQkMdybhIsRzo5RY1uUHTiy0jz5XoBlIhvX7ASQrNlc6BSB6yBS19K4VbvExQvRg7Ac4bXZqQSvADT4JfPi6FzCt8u/fZ5NXgGZsGVz8vhUwq3w135GoDQCYUbIq99bogcg3lw42sAQkcU7gu+8TUAoW+yFP3jawAki6S34K+vAQiJ/UOLXEKwtRzek02Jf74GICQ2UIp39be+BiAk9g8v2wyBQ0dINDfe0f9tq5Kpk3P5r7Ef4DsYlytJ0ZP4SYkSJUrUZj0A4B+UVBbyA8gAAAAASUVORK5CYII={scale="+$scale+"}>"
+!endfunction
+
+IBMEntityColoring(volumemutefilled)
+!define volumemutefilled(e_alias, e_label, e_techn) IBMEntity(e_alias, e_label, e_techn, #232F3E, volumemutefilled, volumemutefilled)
+!define volumemutefilled(e_alias, e_label, e_techn, e_descr) IBMEntity(e_alias, e_label, e_techn, e_descr, #232F3E, volumemutefilled, volumemutefilled)
+!define volumemutefilledParticipant(p_alias, p_label, p_techn) IBMParticipant(p_alias, p_label, p_techn, #232F3E, volumemutefilled, volumemutefilled)
+!define volumemutefilledParticipant(p_alias, p_label, p_techn, p_descr) IBMParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, volumemutefilled, volumemutefilled)

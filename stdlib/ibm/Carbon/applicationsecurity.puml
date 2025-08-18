@@ -1,0 +1,13 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $applicationsecurity [64x64/16z] xS61400000CXXFdRpkElMXu0001m
+
+!function $applicationsecurityIMG($scale=1)
+!return "<img data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAAIGNIUk0AAHomAACAhAAA+gAAAIDoAAB1MAAA6mAAADqYAAAXcJy6UTwAAAAEZ0FNQQAAsY58+1GTAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAAOxAAADsQBlSsOGwAAAkhJREFUeNrtm08oBHEUx3/WsApnIhd/Lg6O9sJhQy0XKRfkQoqjFBdOTtRGOVD+HRQHB04kBwdODpLiYktow1lOIt9f+9TY1u7szgxvdt6rT2bH7vt5n/nN7/0aKOXzKKCvg2DIZ7VvgK0AvegHTT4qvolqVobp5Dno9ImAw++DQB4Uc0ZYff0jAsrnYeRBDS1Zvv5VQDM48dEieC63gHQBmQEiQASIAOkCGSPbvUFYZkCezYCwrAEiQARIF5AuIF1A1gARIAKkC0gXkC7AICrAFB3PgRe3BXArfNR0Th+v2BFheLDwZTBPx5NgzI4Iw4OFmwucoHM5izA8Wrg5XuyIMDxcuCMiuAjQP/hsjoVbFTEDolwFtIMY6LDb1n4RcUxjRDlvhOIOFp8sIi47QREgAkSACBABIiDtTvCv/0oszEnANijx0YXvTBawRcgaIAJEwL/EKyh3MX85jcFWwBOocjF/FY3BVsA9qAZlLuQuo9z3nAUcgWIQcSF3hHIfcRZwDW7BgAu5dc4YjcG6CyyCbhByMGeIci54oQ2u0pVaAkEH8gUpV4xyp4xCRgI+waVKPMmtBXs2822CNtAL7rwgQMcDeAbToA4cgI8crrwuXv8zqH4cvp/uzdwE6LhQiae4+pckXeBKpXmqm+Ke31WJR+C6+LVMHyhgvEttBeuggW6HHZoRb0nvKyVRfaCHuskwOLUyCGcBOorACBgH9eCdZsMjfb+GNjlFtNgt0IL3bnUA7gLM0UhXWhddSeeeSYaeGTdKIvv4AueFfxAf21aNAAAAAElFTkSuQmCC{scale="+$scale+"}>"
+!endfunction
+
+IBMEntityColoring(applicationsecurity)
+!define applicationsecurity(e_alias, e_label, e_techn) IBMEntity(e_alias, e_label, e_techn, #232F3E, applicationsecurity, applicationsecurity)
+!define applicationsecurity(e_alias, e_label, e_techn, e_descr) IBMEntity(e_alias, e_label, e_techn, e_descr, #232F3E, applicationsecurity, applicationsecurity)
+!define applicationsecurityParticipant(p_alias, p_label, p_techn) IBMParticipant(p_alias, p_label, p_techn, #232F3E, applicationsecurity, applicationsecurity)
+!define applicationsecurityParticipant(p_alias, p_label, p_techn, p_descr) IBMParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, applicationsecurity, applicationsecurity)

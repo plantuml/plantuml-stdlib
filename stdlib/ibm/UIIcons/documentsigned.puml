@@ -1,0 +1,13 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $documentsigned [64x64/16z] xS61400000CXXFdRpkElMXu0001m
+
+!function $documentsignedIMG($scale=1)
+!return "<img data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAAIGNIUk0AAHomAACAhAAA+gAAAIDoAAB1MAAA6mAAADqYAAAXcJy6UTwAAAAEZ0FNQQAAsY58+1GTAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAAOxAAADsQBlSsOGwAAArBJREFUeNrtmz1oFEEUx2fjaWelhTFfEKxEJEXSBANp05icRFJob+MXkmiblBElESVgKQghcPFOLWwPsdEmFpLKQs/oFSY2ksIYSP7DvYPlsbeZu929ndl7D35wO/tx+//vmzeze3tKSUhIdHJ4htv1godgHHSnfM5VUAb3wVY7DNDiP4NTll28HTAU1YQug20WLRSv6JwWox7ExIBxi7tw5HPLGWxztsW6kVQchJxbIhmQ6RADOt2AXMx9Ms25imSAGCAGpFMDPMkAMUAMkHmAzAOkC4gBMg+QDOjQDGh3eJIBjs8DPKkBUgMix3GQB5fAKLhIbV/BBiiCdbCXRQOugGXQF7DuHHEVVMA9MiIT84AuEn7LcPt+UABPwZ1GtcqlGrAUIl6L+95gnd7nietdYBrcZm1/wWPwAnyjNv1L0RRYAKeZCe8pI5wz4AQJ9YcudpNgk7X/AitUBAtUIOvxCLwF/1zrAnnqz/XYo7bNkH2qlDXbvrYByg7logH+eAa+GOynTZgPGEGcM2CELb9hyxPgBzHB1hVZ9R920YAzbHmDLT9XtbdYeukzrwl/Qo7lhAH8HE+2MGtsOGex3YAZGgX80cOWb6jae0Jb9Nkfg8ywqkvDoBb/kl2k/QBD3jWYFuu4xq76R1cyoC4+x8RfBx8Mj3EezLG2kgsZECZ+zfAYF8Arlv4VGhWsNqBZ8WNglyr9bxrmLoObAV3lLvhvswHNig/aPuxGqmjz3WDS4meTvBs86pmgl5L4Cj0HKNn8RCgO8Xr7Y9S/tehP4DUVwf2jTiCXAfHNjA5W1YDUxceVAV5M39128bbNBNsu3vabocTFu3ovsBbnF5n0358q2nv5XovzB5W0eNMMKKecDYmJNzXggar9QSlz4k0N0E9a9L+zVoOeqLgsXkJCQuIQQG6cGL7vumkAAAAASUVORK5CYII={scale="+$scale+"}>"
+!endfunction
+
+IBMEntityColoring(documentsigned)
+!define documentsigned(e_alias, e_label, e_techn) IBMEntity(e_alias, e_label, e_techn, #232F3E, documentsigned, documentsigned)
+!define documentsigned(e_alias, e_label, e_techn, e_descr) IBMEntity(e_alias, e_label, e_techn, e_descr, #232F3E, documentsigned, documentsigned)
+!define documentsignedParticipant(p_alias, p_label, p_techn) IBMParticipant(p_alias, p_label, p_techn, #232F3E, documentsigned, documentsigned)
+!define documentsignedParticipant(p_alias, p_label, p_techn, p_descr) IBMParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, documentsigned, documentsigned)

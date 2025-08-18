@@ -1,0 +1,13 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $airlinerapidboard [64x64/16z] xS61400000CXXFdRpkElMXu0001m
+
+!function $airlinerapidboardIMG($scale=1)
+!return "<img data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAAIGNIUk0AAHomAACAhAAA+gAAAIDoAAB1MAAA6mAAADqYAAAXcJy6UTwAAAAEZ0FNQQAAsY58+1GTAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAAOxAAADsQBlSsOGwAAArVJREFUeNrtmb9PFEEUx/eUE0nAwkqkBBpCcgUkNla2ChydiLXQQEfgP5BwJQ1SaHVamMBBNDaEFiExORKhko5fPTRwCet3kkcyeVl2bnbnwuzd+yafYvZm3tt5NzvzZiYIRCKRSCQStapyjuzkQRGMghegm56fgV2wCSqgZmEzTPjuVu3aHHR+HJRAb8Rv/cR7cATmwLpPI+BByrZLYO2OznP1Ut2llH69CcAi/aO2mqO2XqgtxbDnnb8GK+Ab+EvPBsEEmAaPWBB2LD+HXMJ6oesA5Omb13UCXoN99vw38Rn8BD3ab8rGD8uJ0YtPoMi++as7Oq9rn+pcsTmhmMU5gL/0qqHzehBWDbYyMQcMsXLZoq2qOxNjqxE5Ss71CHjOyocWbQ8NtjK1DDaFkgTglJUHLNoOGGxlIgB/WHnSou2kwVYmAlBh5Q+gUEe7AtWNs5WJVaBCG5vbXKCdkpy4XKBAddq1Z0eGAIQJVwWrdkkCUKNUdk17pjK8PYtU+DYdrmVxBASUw5fYfkB1cJYwqeTLtjjNMrgQsScI6uz8gi/LoItsK+5AJGDfvM2BSOjo3WPnBBcnQuu0q3N9JOb1HBA1MX4nmj4TFImaSElXAX4P8Ax0GdpcgHPfJsUkASjSsteX0vc/WhbvdT/w0HLC/AiWwVMHvpWNt6ADbNex7t97AFTn5xvwDi/BY7Dlcx4wFtF5dQ/wCXylzc+lwUYnbY7egSm2OVK21T3Bho8jIE8vpg97dQ/wCnwBxxQMk66p7i/KHEfAE+33YdpN3viWCI2xCU915A2opvBbJRt64PrIl3eZYNQ9QNWB72rgwT1BPQEYZuWyQ/9lgy8vAsDP7g8c+j8w+PIiAF0RGZ0rXRh8yW5QAiABEIlEIpGoUYo6Egtbqc+SCEkARCKRSCQSiVpU/wGmIISxCJpYKwAAAABJRU5ErkJggg=={scale="+$scale+"}>"
+!endfunction
+
+IBMEntityColoring(airlinerapidboard)
+!define airlinerapidboard(e_alias, e_label, e_techn) IBMEntity(e_alias, e_label, e_techn, #232F3E, airlinerapidboard, airlinerapidboard)
+!define airlinerapidboard(e_alias, e_label, e_techn, e_descr) IBMEntity(e_alias, e_label, e_techn, e_descr, #232F3E, airlinerapidboard, airlinerapidboard)
+!define airlinerapidboardParticipant(p_alias, p_label, p_techn) IBMParticipant(p_alias, p_label, p_techn, #232F3E, airlinerapidboard, airlinerapidboard)
+!define airlinerapidboardParticipant(p_alias, p_label, p_techn, p_descr) IBMParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, airlinerapidboard, airlinerapidboard)

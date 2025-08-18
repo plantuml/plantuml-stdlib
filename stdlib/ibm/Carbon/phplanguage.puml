@@ -1,0 +1,13 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $phplanguage [64x64/16z] xS61400000CXXFdRpkElMXu0001m
+
+!function $phplanguageIMG($scale=1)
+!return "<img data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAAIGNIUk0AAHomAACAhAAA+gAAAIDoAAB1MAAA6mAAADqYAAAXcJy6UTwAAAAEZ0FNQQAAsY58+1GTAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAAOxAAADsQBlSsOGwAAAx5JREFUeNrtmluITVEcxpcxxwg1XozpRJQiYxoTRXLJyAMlSqFGyJ1BLoUnhVLkyQO5m9xCGZRbiSEzD+4yxRzHLbeMnNEUD46m8a18J6vT3vtwOuvstP5f/Vp79po1a69vr8t/rT1KOa5OTOeABY61/TA4VsAfqkGFQ42vYJtVoXHzLpjsiAFXUhcFrs8BYoAYIAaIAWKAyyrMY12TwEbwEcx20YBSMB68lCEgBogBYsD/OAlOA5XgMbgAhoCFYCjPFR7p/TXz/3ZSXAWGga4gBvbx73hpLJgA3oIjoC9YBoaDIvAcnAS3bBown5VHwAnQxcivAqvBVhIkbd4NUGLc0yvEYpqyx6PMGLAZNIBmcBn0TCu/hAcdOm23tQxGwV5wig/RAvqDtTxo2AI+gf0BdR4EN0Ed+ALKwAbQB+wCt0GTT/lu4CiNOAPegd5gKV+CPtlqBettGTARTGXjTekecRzMBDvYHb95lO8HdoLdxr3r4DS7cTG79gqf+vWQWZlWXtGM7TRyDYfTCxuTYKNH47V+8qHb2DWn+5Rv9eninzm8tEYF1P/Bo/FaHWATiPPFzrO1CrwKyNPd+Q6vx/n8zlc+rJeamZYE1PE6IC8JrmWo3/oyGGc6KIuyCaaRfNVvw4Ak0+Isynbku36bgVAy5BgnGZYBvYxJLQyl6m+xZUD3DPnlTB9aamCPXNafjQGjGbr6HXpU8vq8JQPKGfh4aTAjVsVw3YoBEQYtpWn3p4BaXteD+5YM0HHGOTAw7f5INjrCAKjOViR4iW/gDcPVNjofZb4OgxdZHOPP2L2fsv4EQ/EBzP8O5oIftgzQmgEOgFlpvegqqMkQrORC67jZqeFOMKV7YDl4YGM3aEq7XM24u4zrd4xbVT/VGkPET2fVn0/2QWqnCdu4HS9ihBqzeR7gpfckLCW4rZYTITFADMhO/zIHNHKCagjpWZs4icbDMuAQCUsXiQwBMUAMEAPEADFADBADch4IjVC/T3JckP6Gqf83WnU2ekLUoRevT4z1B9YnSiQSiUQikUgkEjkp80NkvWNtr5LzAJFSvwBOE5gygGNoSAAAAABJRU5ErkJggg=={scale="+$scale+"}>"
+!endfunction
+
+IBMEntityColoring(phplanguage)
+!define phplanguage(e_alias, e_label, e_techn) IBMEntity(e_alias, e_label, e_techn, #232F3E, phplanguage, phplanguage)
+!define phplanguage(e_alias, e_label, e_techn, e_descr) IBMEntity(e_alias, e_label, e_techn, e_descr, #232F3E, phplanguage, phplanguage)
+!define phplanguageParticipant(p_alias, p_label, p_techn) IBMParticipant(p_alias, p_label, p_techn, #232F3E, phplanguage, phplanguage)
+!define phplanguageParticipant(p_alias, p_label, p_techn, p_descr) IBMParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, phplanguage, phplanguage)

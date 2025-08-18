@@ -1,0 +1,13 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $taskstar [64x64/16z] xS61400000CXXFdRpkElMXu0001m
+
+!function $taskstarIMG($scale=1)
+!return "<img data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAAIGNIUk0AAHomAACAhAAA+gAAAIDoAAB1MAAA6mAAADqYAAAXcJy6UTwAAAAEZ0FNQQAAsY58+1GTAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAAOxAAADsQBlSsOGwAAAr9JREFUeNrtms1LVFEYxs/YhFBGiC7K3IWbgpTStA9iZIikGDRwIUYEgbt2okjNwo/aTPgn1KKPVbop0ISgaBO5EHI5GMxCi5DalLhIsudl3sVVvDNz7z1nPIf7vvCDmTtznnvOc77vPUpJSEjEORKGdE+AHOgGxyNqfQfvwShYc8EAKvwX0KBZ9ydo1W1CjQEDcgYKr1gzp1vUhAEpg11Wu3bSQCabNHez7RLaVrYApyJoC9A5uutoEZFni2TAwpsY3XUFVcgguBZktgjSBXIWFz70bBHEgJRDXTtlogtUOrpv79PqNdRsIbPAPo7aVkTsW4AYIGOAO88YpAWIAWKAGCAGiAFigHt7gWpFQlqAGCAGiAFiQEwMuKKK7yZia0AWPIyrAZ3gKrgIrsfRgKzn86SK+ADGNQPawA3P93PgZpwMyO5R45NRyuGSAad8avs0GIiDAfdL5Hc87MbOdgMOgzPgVplabgFToAPUu7Ydpgyf9NDC0OdjAXTGGAo6UfYVrIA8s8LXftlmwF3wWOl9n9DAnPdco3eUI2DaNgMoQz/AU3DQ0D3+stEvbOwCijO2DmZAnWbtP6AfLNg+CFIG02yErlhnzQVXZoFFcBkUNGgVWGvRtWkwzxud5Qgay6yRd3UdQGf++iKk72MNpxdCl6qR1mYDequR1lYDakFPhPQ9rOGsAeky64HXjF/UsYYTewG/QWyvWALD4AN/T/FK8qyPxpxOA76pnScww57/S1TQKjO7rq2CB+D5rvuSEe3gNngEmj2/ZVjrny4D6GaDVaj9Ts8u8LcqHnymWt70+T8Z8gy84tZBx+WPsAZpfSp1swMBMvYZ3AGHIhZwoszv98AF8EQVnwDNg60KdOk/H3lTdVQVnx/S1vedLgOoNl6ys43ssgkDqOkOcUE2QuhTmjdgFnSBt0pCQkLCJ/4DG1ZtcjkK4PEAAAAASUVORK5CYII={scale="+$scale+"}>"
+!endfunction
+
+IBMEntityColoring(taskstar)
+!define taskstar(e_alias, e_label, e_techn) IBMEntity(e_alias, e_label, e_techn, #232F3E, taskstar, taskstar)
+!define taskstar(e_alias, e_label, e_techn, e_descr) IBMEntity(e_alias, e_label, e_techn, e_descr, #232F3E, taskstar, taskstar)
+!define taskstarParticipant(p_alias, p_label, p_techn) IBMParticipant(p_alias, p_label, p_techn, #232F3E, taskstar, taskstar)
+!define taskstarParticipant(p_alias, p_label, p_techn, p_descr) IBMParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, taskstar, taskstar)

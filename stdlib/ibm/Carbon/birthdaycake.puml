@@ -1,0 +1,13 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $birthdaycake [64x64/16z] xS61400000CXXFdRpkElMXu0001m
+
+!function $birthdaycakeIMG($scale=1)
+!return "<img data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAAIGNIUk0AAHomAACAhAAA+gAAAIDoAAB1MAAA6mAAADqYAAAXcJy6UTwAAAAEZ0FNQQAAsY58+1GTAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAAOxAAADsQBlSsOGwAAAnZJREFUeNrtmsFrE0EUxsfa0hJ6qFRBc0olCgYbRVC8SU8lUOhFAhoTUJOTXgr9S+pRUDCUgngwl7Y3eywKVqOkF9GLBMVSBTUIpeI37BOWkGST3cxmlnwPfslMHm8z8+3uzNuZVWrI7WifjnMHXARvQoq7DS6BnaANH+1D56fBipQrYD+EuAdSft5DXEsb6YMAJTAuFC2OMybAXbApFEOOKw1aAH0fJsFj4Yz8FlZcsss4Y2PAPGiAdanr8gJ4bVmcMQFS4B34I3VdnrUwztgtcACOgzFBl39aGGcsD/gKlkAO3AMJcB98tiyurR3pwyxw1TUaPwTblsbRaAZugbzk8257BMqWxRmbBW6CtKuelt9MxeV8xhl9GHoJMlLeCDlu04ZngUgbBaAAFIACUAAKQAH4LOBlMVAAl8HpplRUW7VNvZ2ZjPsIXoEnylkyCyzABfAMzID34LvlJ/UYOA8+gevgbRABYnIAvQaXBbsRubLPgadgQk5gw+8YoC/7RMQ6r6StWWl7IcggeAXUItZ5twg16YNvAU6BeoQH+br0gdMgBTAkQF6w1e9p3SyJxTv4luW7bKk/7jWGdXMFpGRebTXXpiLg72heW2O3wFlwDWyBvaZE4y/4rZwdWhv9J8EHsOo3E9SrtXoPfhKckFRYSar5BSxKvSJ/ZpP/G/glAmSCCKDthnI2JPS+3KFylqb1Cwo/xD+lnBeX/icdg/Trq1rvF+oNkzXxZ/wOkhuqtzV728yz/cwDKAAFoAAUgAJQAApAASgABaAAFIACUAAKQAEoAAWgAENl7mXxFy383b67Y6t1av+c/vDaG6xG/ARXFa2z/QP5xswf5pfqYwAAAABJRU5ErkJggg=={scale="+$scale+"}>"
+!endfunction
+
+IBMEntityColoring(birthdaycake)
+!define birthdaycake(e_alias, e_label, e_techn) IBMEntity(e_alias, e_label, e_techn, #232F3E, birthdaycake, birthdaycake)
+!define birthdaycake(e_alias, e_label, e_techn, e_descr) IBMEntity(e_alias, e_label, e_techn, e_descr, #232F3E, birthdaycake, birthdaycake)
+!define birthdaycakeParticipant(p_alias, p_label, p_techn) IBMParticipant(p_alias, p_label, p_techn, #232F3E, birthdaycake, birthdaycake)
+!define birthdaycakeParticipant(p_alias, p_label, p_techn, p_descr) IBMParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, birthdaycake, birthdaycake)

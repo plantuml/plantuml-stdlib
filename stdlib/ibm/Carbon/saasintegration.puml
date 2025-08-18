@@ -1,0 +1,13 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $saasintegration [64x64/16z] xS61400000CXXFdRpkElMXu0001m
+
+!function $saasintegrationIMG($scale=1)
+!return "<img data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAAIGNIUk0AAHomAACAhAAA+gAAAIDoAAB1MAAA6mAAADqYAAAXcJy6UTwAAAAEZ0FNQQAAsY58+1GTAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAAOxAAADsQBlSsOGwAAAwRJREFUeNrtmFuITVEcxs9xDiK3KQ1RHJcolyclyaUmPJhCzbh7NcqlXMr9OjfEIyWXMgziQeTBw4SHidB4cS0RIvEgXnQkM3yrvlOn056x91lr7XX22f+vfnU67b3P/v57re//3yeREIlEIpFIJIqpkg5/ewZYy89nwEMXN5FyaL4dDAajwVbQBj7FpQD1YAiYBE6CNWAouBn2jfSKewa4WgFfwRawGmwAGbDRxRaIfQiKZA4ovaUe6tZIhWA+SL8PfT6wXYCg/T70+UDmgBLr96HPB7EPQZHMAdFZ6la2RsqgeZv93tp8YKoAtvu9tflA5oCI9Htr80HsQzBZpit7FqgB/cAj0AK6XIzCLrb0MXAajAQVoA7MBa3gbzkXQJm9AVaBg6AWnAKPwW7wGTwp1wJMBnfARLAUnM172m9ANRgIrheemC4D84vBRfCFQfnK4yFXgg6vk6NcABXg+8ABToUrwA+P45rBKHA5rAL0BrPBHI6tI0Afjeu945J+kPfdAHCeSX8c7ASdHuc2ge0s0n3bbVDtsc0cWCr4ND6Cb5rXVWk+lkmuTIzhCDyeCd/azXlNDL9GrpSEzRUwE1wDw9hzW/jEOg1cW93jc7AO9OXvZLnCOnTMmypALffXM1AFXhveUn/AT7AQrGRbq2HoeanRr3kTBcgNGLfBcvDLQqZMAFOZLefAevC7B/N7/JrXLUB/LvWnTGAb5tU+v8qs2gRO9HBsYPO6BdjBgKrmnvSrNp+/OwhMYZguAPdMm9cpQJoJfAG8sNTn34IrXPbfbZjXKYAKu+EsQFDNN1gkLfM6/whN47JvdzgJapvXKcB0vmR0Rdl8sQVQr5pLwCUHxtMcfY2YLyYDDoH94CixKdVmM0S9U4wDizgW7+W0Z+SNyq/qWfEjYJcFg5kCKguOV5PfXf7JYSx7/BaggVU/zDGzWG0Dy7oxqP75fU8+5H3OkbWxzJIBzDdz7xWr3AvKLfDSw2Q24ShU/tfvTZifR/MNzJBIqarEriMSiUQikUgkMqF/RfzZ+KQ54RgAAAAASUVORK5CYII={scale="+$scale+"}>"
+!endfunction
+
+IBMEntityColoring(saasintegration)
+!define saasintegration(e_alias, e_label, e_techn) IBMEntity(e_alias, e_label, e_techn, #232F3E, saasintegration, saasintegration)
+!define saasintegration(e_alias, e_label, e_techn, e_descr) IBMEntity(e_alias, e_label, e_techn, e_descr, #232F3E, saasintegration, saasintegration)
+!define saasintegrationParticipant(p_alias, p_label, p_techn) IBMParticipant(p_alias, p_label, p_techn, #232F3E, saasintegration, saasintegration)
+!define saasintegrationParticipant(p_alias, p_label, p_techn, p_descr) IBMParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, saasintegration, saasintegration)

@@ -1,0 +1,13 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $chartviolinplot [64x64/16z] xS61400000CXXFdRpkElMXu0001m
+
+!function $chartviolinplotIMG($scale=1)
+!return "<img data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAAIGNIUk0AAHomAACAhAAA+gAAAIDoAAB1MAAA6mAAADqYAAAXcJy6UTwAAAAEZ0FNQQAAsY58+1GTAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAAOxAAADsQBlSsOGwAAArpJREFUeNrtmz1LA0EQhleTIo0EQTDa2whiYWtjq4VIKovkD8Q6WKjgRyF2gv4BBUEhBgttg5DWQgQbawUbJVY2fszBHAzjXnLmZu+ydzvwFju7e5e87O09u9ko5cKFiyzHkCb3E6JNmJC6jtH7DGd9BDgDnAHOACMxHjKXWgMOQuZSacA8qKLJV7Au1QbkQEcB7+IhrMul2YAaaJZBCgWVWWyTSgO8SW6H5U5RNHYGaUKUNGAfVCTlDqiO6pB8EdumyoBpUJXltkCvqC1WV8U+qTFgg13rAXRMyseYo/fdGATekDDAG9IrLLcL+iLlL8zRWGGPTCK8IWHAMqhAyk+ghqZdA+v8KGDfRHlDwgB+syvQt6bdN9Z16xs7b0gYMMfKrS5tWz36xs4beQEDJln5OkLfKLyh2JvIa3OObyGjI2A05r6ivGHbfoA4b0gY8B5jX3HekJgDXkAlUl4C3QS0XWRzxIsh3rjQ8EbH1Ai4Y+WFLm0XevSNnTckDGhrPuhwwL2We/SNnTckDPBu9knKU6Cypl0Z6/z41HzQ2HlDYg7wnq0maJXkNkGX5PnMYY5GM+i5jJM3pF6De2w4zjASq2GODtO9QeANKQMeQScBOz86cjvBPolHXvBa62yJWyRLU05u630yQ0maNyQN8EnskC1NVQC5DQRvSKOwR2L3bGlKl6z3jNwS5w1pA7xZf039/c3eX7KuMXJLnDdMLIba6u9WuL9kbUe4rhHeMLUarIfM9cMbivFGju0U/Ys3TBnwGjKXOG/Yth8gzht5ZV+I8oaNJ0R0Oz8VDXOE4g1bj8iI8YatBojxhs2HpER4w/ZTYpF5w3YDIvOGOyfoDHAGZDtM/l/AjQBngDPAzjngWfV3csPK76wbAbdZfwQ8ln7LigG6o2QfoDPQBGgMNJKy77ytXLhw4QLjF5eBsnXFIo1vAAAAAElFTkSuQmCC{scale="+$scale+"}>"
+!endfunction
+
+IBMEntityColoring(chartviolinplot)
+!define chartviolinplot(e_alias, e_label, e_techn) IBMEntity(e_alias, e_label, e_techn, #232F3E, chartviolinplot, chartviolinplot)
+!define chartviolinplot(e_alias, e_label, e_techn, e_descr) IBMEntity(e_alias, e_label, e_techn, e_descr, #232F3E, chartviolinplot, chartviolinplot)
+!define chartviolinplotParticipant(p_alias, p_label, p_techn) IBMParticipant(p_alias, p_label, p_techn, #232F3E, chartviolinplot, chartviolinplot)
+!define chartviolinplotParticipant(p_alias, p_label, p_techn, p_descr) IBMParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, chartviolinplot, chartviolinplot)

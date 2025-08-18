@@ -1,0 +1,13 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $electriccharge [64x64/16z] xS61400000CXXFdRpkElMXu0001m
+
+!function $electricchargeIMG($scale=1)
+!return "<img data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAAIGNIUk0AAHomAACAhAAA+gAAAIDoAAB1MAAA6mAAADqYAAAXcJy6UTwAAAAEZ0FNQQAAsY58+1GTAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAAOxAAADsQBlSsOGwAAA8BJREFUeNrtm11IFFEUx2/mQ0n2IlgZRNZDGKVI5EP00AcEQV9kWVkZ9RBElJVl0BeRJVREgZVQWWDRl0XfFD6oD+FDEdYWRi8+BAklEWRZQkn/w/43hsX9mNmZnRnvHPixjnfv3J3/3HvuOWd2ldLchkUdZ4EKMBNMsnmsLvASNII+m8+9nq9XzbZnGv4uAndAPngHvtn8IWeADaAKrABvbDx3eQIByhMJkMWL/w2mg/cOzbgCcJtjFTkwE0xbBl9l2k8EZQ5evOK5yzhWhRd8QESAEtDp8MUbRejkmJ4RYBzoTuO43RzTdcv06e4lXn2T4biQr60x3j9Y+2Vxihk+FaDccFFiIRLLotsLIzuDX2eA2Auw0GLfZ9E+QFtzcwZIvHEKtIPHoN9k/5I4az6RFXIGuSrASLAO7AJfwWFQD/7qMgMia7gY7AZ1PJZA6afDPuCpl3xAB1gLloO5DJXT9rm85ATvUQi5q9t0FCAiwg2wjwmadgKInQS5YIGuArxmrjAnznt+gOwUxsjmOTwbCEn1aHyc9k8qXLixavk8h2cFkLszKk57G8jjFmrWitm3zU4Bjir7a4jxrBl8AdUW+lazb7NdAqwG+6OyM6dNSmm1YBUoNdGvlH1qeY6UI0HZqo6DFnA/zcukjjtFI4/vJnHxjYwC6+zaBaq5nna44CcGGDbLWm4C12P4hGK2NfG9K9k35VxgAtgDLoC3LjlLyRmWgC1MptZwfX9g+xTGFJJsbQfnjRefqgAy9aWMfsjlHUOyx7PgIlgEZnGdi11LlG5bFWA2B6mkul6wfvoBYSr/V+VEJCh9zqhwebte+dysCLBRhR9z7QR/dBNgNDgGHkUCCb+bWR+wF4wBk1Xsepw4noahKkBXJIYexHLpfNqH8gxoiHN3H4Icbo9D2gkOZhKSLmZO8F03AWQWnQavwBUdtsFokzC0gPnAgG4C5DAGvwWe6xIIGe0IGMHtUekmwDSwWYWruB91FEDyAanentAtFxBbBuZz6vfpKECIOcFNhz5Xr0q97t/rpAASEh9w8MbYVvdPVyRot0m+YUvd368CSKrdo6zX/XuSTde9KsAvUKOs1/1reA7bs8F02jllre7/hH2Vn2eAYl4hZW556JJs3b+FfZLOSbz+PUF5SLoUbAUHVey6v6z5St55UwmZH74oKRckj7IucUnMA2PZ1sG73pzsmvejAEbH+IB4qh7gawsECAQIBAgECAQIBAgE0NeMkWAqv8Awa/9/seG2DTfMhLw0jvuZqWtIBeau/QNQ8MNfqxFakQAAAABJRU5ErkJggg=={scale="+$scale+"}>"
+!endfunction
+
+IBMEntityColoring(electriccharge)
+!define electriccharge(e_alias, e_label, e_techn) IBMEntity(e_alias, e_label, e_techn, #232F3E, electriccharge, electriccharge)
+!define electriccharge(e_alias, e_label, e_techn, e_descr) IBMEntity(e_alias, e_label, e_techn, e_descr, #232F3E, electriccharge, electriccharge)
+!define electricchargeParticipant(p_alias, p_label, p_techn) IBMParticipant(p_alias, p_label, p_techn, #232F3E, electriccharge, electriccharge)
+!define electricchargeParticipant(p_alias, p_label, p_techn, p_descr) IBMParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, electriccharge, electriccharge)

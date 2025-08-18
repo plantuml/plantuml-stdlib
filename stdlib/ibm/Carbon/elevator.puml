@@ -1,0 +1,13 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $elevator [64x64/16z] xS61400000CXXFdRpkElMXu0001m
+
+!function $elevatorIMG($scale=1)
+!return "<img data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAAIGNIUk0AAHomAACAhAAA+gAAAIDoAAB1MAAA6mAAADqYAAAXcJy6UTwAAAAEZ0FNQQAAsY58+1GTAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAAOxAAADsQBlSsOGwAAAs5JREFUeNrtm09IFFEcx9+qdfBSgnTr2KFAvUSQh0ARqZNBhzQII7x46VBEVrsEutEl6KSFkLrsQTsIdaok3YMeTLpEUUrhyQhvniL64/Z97FcYlllnhuaN43u/H3xwZva3O/P97nu/997sqJSEhI6XxCW9r/RGneET5UmY6IzwuZ1xXWCdYfF3SZAJHWA+pFl55sZiQoMh8SMUfp/7ersMcjXySxSW5X42wFT9uQtpNWCEAvIewWWPqFom5KrEZ3cRn43rYhsSEO8nLqoJRsTHbUAt8f9rgjIlPk4DOgLE+4lbYN+vlZehcGVKfJwGlFiVSyFycwHilU8LMCI+7i5QMpBrTHgS84B9EWKA6wZErQGXwdWUa5oARVMt4BJoTbH4Vl6j0VFgBZxL8TJXaoAYIAbs/f2AMNEHurj9Bky7ZMAMuAg+cF8PrT2g1wUDein+CijwWD+YAs9pjtU1oJvffMFzrMBj3VIEHTBgDrSw2StPF2jha9bXAN3Hz7PP3+AxLf5Z0v1/L0cBXQhfeIbBB64Ng4qCp12sATITZBxi3/8N1sCWKwacAfdU5VZ6hsf+gtfgDnhvswFDqnKP/xO4Bj5S/EkwCN5xWly00YB+VvtH4CaF78QieAyegknwTcX042daiqDu7w/BLLheJX4nftIkfcfpCai3yQC90msGtwPy/oBb4Bg4a5MBp8FX8CVE7hLYZJG0xoAj4HvIXP0swTo4apMB+jzbEfJ/gYMyExQDjEZZWkCCBvwAjRHyG/keawxYBSdAU4jcJuZ+tskAPb09AMb4d7ep+ShzpmxaC2yAAVW5+9umKs8JzVblXADD4DinxBu2jQJFzgj1+n/c5/VxrhHak1wNJj0KvOU379fy6vnasswDxAAxQAwQA8QAMUAMEAMsWgt4Y5hUx2FpAWLA/ugCp1S0/w5JMvTD0itR3pCJeALrHpd3Pv4BbQSN0nUeZWIAAAAASUVORK5CYII={scale="+$scale+"}>"
+!endfunction
+
+IBMEntityColoring(elevator)
+!define elevator(e_alias, e_label, e_techn) IBMEntity(e_alias, e_label, e_techn, #232F3E, elevator, elevator)
+!define elevator(e_alias, e_label, e_techn, e_descr) IBMEntity(e_alias, e_label, e_techn, e_descr, #232F3E, elevator, elevator)
+!define elevatorParticipant(p_alias, p_label, p_techn) IBMParticipant(p_alias, p_label, p_techn, #232F3E, elevator, elevator)
+!define elevatorParticipant(p_alias, p_label, p_techn, p_descr) IBMParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, elevator, elevator)

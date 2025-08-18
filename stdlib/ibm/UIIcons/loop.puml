@@ -1,0 +1,13 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $loop [64x64/16z] xS61400000CXXFdRpkElMXu0001m
+
+!function $loopIMG($scale=1)
+!return "<img data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAAIGNIUk0AAHomAACAhAAA+gAAAIDoAAB1MAAA6mAAADqYAAAXcJy6UTwAAAAEZ0FNQQAAsY58+1GTAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAAOxAAADsQBlSsOGwAAA6JJREFUeNrtmltIFVEUhvfRiiIwNB8qkiKiC3Yvg6KyohuRRRfKXurJp5AoKHpKpaDLQz0Y2Gv1UqARlVDZxSiIrESIoPtFwSghIaMsTPsXZwnTcs44c86ZPeO4f/iQPc7ZZ/Y/e699WUcpIyMjIyMjIyMjI6PBqJgPdY4HG8ACZhTIAz9BK/MG3APXwY8oGED1bAV7QKGHen+zEafBrYFqwEpuwKwU67kNDoCmgWLACHAclKaxJ3WDI6AC9ITZgBxwDSxO8P8HoI7/fuRxnwHGgAlgGVgDliT4fDXYzXEjdAbkgnqQb/P2zoNT4LnLumjY7Ae7bJ7lMVgBfvlpQKbH+4eBWo7uVlFU3wwqwVcP9X0BV8Bd7g2jxWwymXtDaAyo5GhvVT2/qbcpPEczOAcWgYmW6zNAFw+lwA1YCs6IrnoTFKVprNKUeAkU8JvvVSH3gjY/DMjwcF+VuP8D2Ak60/g8nVzne/GSjvnVA9waUCSCHgW8YtDuwzO1swndlmsbHWYMLQbsE2Xqqg0+xqYG/g6rSoMyYCzP272iBUq5hjWKXAyt41lIuwHrReB7Al5rMOAVeGopZ/GyW7sBcuxd1rhUrxHl1UEYME2Un2k0oFGU84IwYJIov9RowAtRHheEAcNF+ZtGAzrCYMDQJKfOdG2PfZWbxsjFTpZGA7JFuTUIA1pEOV+jAdPDYIAMenM1GjCvn5ehxYD7orxNowHyu+qCMOCOWJLSYcgUDY2fCuZbyt/54ES7Ac3ii2Oa9gJlYgl+A/xxuLfMz93gWVEutglQ6dRCsENcq3RofDnj2QS3J0IUCDep+KkuLYRKVDyh4dfUR0mSHMu1q+Ckzb2HwFFLeXmCuJWyAT1sQjbvDh/51HhaddLxV4Hl2l8Ohm0JFkrFYpvsyQQvZ4KfwEXlXy6PFliUK1wlrh922IG28OZsu2iLaxMyVThEW+5aEfVJdCq0t5/PvuPziS0iprkyIWgDZvLYptxirvgfJUYo19Dlctf4WcWz0jEvJug0gMY3JTtmq3jai3KAlFuco/pmhaq58V6yQo18vzw0cTQhliDgBSWn5Giqz1XO9f6nISo88js93rt4qwiTAYH/QEKnAR0q2J/I2A6BmIqWDoITbhvvZS8wEFTCs4rrxkfJAFoJVtn0aMfGR8WAteCCzZqm38ZHwQD6jVKN6pszdNX4KBhASduRyTY+TJuhZPVQLHc9NT5KSvpIzMjIyMjIyGjw6h9p4LYNodvYVgAAAABJRU5ErkJggg=={scale="+$scale+"}>"
+!endfunction
+
+IBMEntityColoring(loop)
+!define loop(e_alias, e_label, e_techn) IBMEntity(e_alias, e_label, e_techn, #232F3E, loop, loop)
+!define loop(e_alias, e_label, e_techn, e_descr) IBMEntity(e_alias, e_label, e_techn, e_descr, #232F3E, loop, loop)
+!define loopParticipant(p_alias, p_label, p_techn) IBMParticipant(p_alias, p_label, p_techn, #232F3E, loop, loop)
+!define loopParticipant(p_alias, p_label, p_techn, p_descr) IBMParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, loop, loop)

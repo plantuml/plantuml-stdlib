@@ -1,0 +1,13 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $wine [64x64/16z] xS61400000CXXFdRpkElMXu0001m
+
+!function $wineIMG($scale=1)
+!return "<img data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAAIGNIUk0AAHomAACAhAAA+gAAAIDoAAB1MAAA6mAAADqYAAAXcJy6UTwAAAAEZ0FNQQAAsY58+1GTAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAAOxAAADsQBlSsOGwAAA51JREFUeNrtm29ojVEcx5/NVmLL8sLU2LTGvZLlFeWNP43xzgtSSkZ5R1pGSiOlSPZCjVKSZfNCFFLS6GqJjCJK9y7mRmjCzN/k7/fX/d7S7bl35znPszznuedXn1rPOb9z7v3e8/zOOb9z5jhFbiU+/deDTXnKToLTYReg1Kf/OtDo8ryRZaG3sgDa6Acrc55dMeUVKC32GGAFsAJYAawAVgArgBXACmAFsALoWRUYcXk+wrJIC1AJ5oCkS1mSZZVRFqAVTATdLmXdLNsZdgHGafotAifAIXDOpfw9mAzawF3wJEoCNIBefjHJBv3JU+8GWAY2g/NgOAoCTALX+Xcz+Fyg7k9wGWwAq/lafDddgCMc/k1gUKH+F5DgqzCFghgrwELQCfZySKvaEPgFdoBr4IWps0A7g1mHRj8d9G03dRqsBsvBMfBDox/xOco2qsMkgGpWuIliXfTR1yXGEGmrZ5S6LQyeOtYFTgU9AuaCtyDtQ4A022hUqLsFzNLoQ3y2jsUImA6eBTDiBtlWIZPTqhg4DPZ5bH8Pg21JgfWJ1giQNf3HAAT4pLA/qAEVefYYo1mKvjVBvwLlmsHPLRiWj1In9s+X8WpZ0eIm5wNEgN9gQMN3gL4xkwWIc7H0VcP3G3gehRGQ8uGf8jICvJwOz+e6XtV07wfEuGbwI8Cq/z0CdO8HTOA0mfTRt/hOY0Im0BHgdg8gn+neD5jJHyXlU4BSLorumxYD4jnTme4r4KjGgbKQCZD90D2qKzmFtowaAfKhhwP48sOmjgBZJT4CS3y2c9PUdcBrRnC/JjPJKxMFuA3qia5J9K8Ft0wU4CqXsxt9tCGpeknG9poogASv407m1KlWw38GEyKd3HobuRfY72ROli6oruZoFfR5Aw6avBl6B9ZwVSjRvE7Bp4516+n7wWQBxO6ApWAqeAwOOJkjuVxrYJnUkYOXxeCel47KnPCanD3O5iuxDewCL8FTLpTky9cwaMpBrZw5jHjtJMwCOBzKkiHezS3uPLCWApzlZkfee+18ZdgFyJr8sl0ku2FqDaJhe0fIClDkNlY5QUmJ9RfzCHgIzkRtBHjJCdoYYAWwAkRLALkOF8S110qn8NW60ArQBxaAFT76auZU2hcmAVT/d1iytZKukmztAy/7bVoVNzIJCqFy1yBRYI2RnWrdzFNGWfWeoJy5y0FnGox3vF+Fl5MeuSC13cncGVSxljzPh0g+63Ksqdtf4BaqGFPfwlgAAAAASUVORK5CYII={scale="+$scale+"}>"
+!endfunction
+
+IBMEntityColoring(wine)
+!define wine(e_alias, e_label, e_techn) IBMEntity(e_alias, e_label, e_techn, #232F3E, wine, wine)
+!define wine(e_alias, e_label, e_techn, e_descr) IBMEntity(e_alias, e_label, e_techn, e_descr, #232F3E, wine, wine)
+!define wineParticipant(p_alias, p_label, p_techn) IBMParticipant(p_alias, p_label, p_techn, #232F3E, wine, wine)
+!define wineParticipant(p_alias, p_label, p_techn, p_descr) IBMParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, wine, wine)

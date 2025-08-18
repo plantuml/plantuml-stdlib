@@ -1,0 +1,13 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $dataunstructured [64x64/16z] xS61400000CXXFdRpkElMXu0001m
+
+!function $dataunstructuredIMG($scale=1)
+!return "<img data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAAIGNIUk0AAHomAACAhAAA+gAAAIDoAAB1MAAA6mAAADqYAAAXcJy6UTwAAAAEZ0FNQQAAsY58+1GTAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAAOxAAADsQBlSsOGwAAAypJREFUeNrtWjFrFEEU3nhRCKJFVFCJKdIoiiBoHySYgOAPiKCIHhoIFmehbSy9QgsLkxgCFjEQiAiKhRL0SjsRIgg2iSdapUgjqJf1G3yRZZzbmXHfDKv3Pvjgdm7eu5lvdmbfu31JIhAIOhldhrY0gM8sjoBVcBjsp7ZV8Dk4Ay57/l4hf90Rxd4K3gHHwIr23WHiVXASrIHfY/iLJcA28Bk4ZOmnJjIOHgJPg99C+9sSSYDbDoPNYohsgvvrZtjTqcMeHdPaPoI3wJd0fRK8BR7I9FE29wx7mNVfjDugqu3RJngMnAe/EOeprandvtXQ/mIIcEq7vg6uGfqt0Xd5tuz+YgjQr103cvo2LLbs/mIdgqVFDAFWtevBnL6DFlt2fzEEeKFd18FeQ79e+i7Plt1fDAFUONrKXPeBb8BRcC9xlNr6Mv1aZBvUn0scUDQ3WKZwdDzTpp7PDy12k23ieFZ/sQ7Ba+CSR/8lsgnur2Jomyg42ZuGthYFJ2pfHs8RvkXR2jlLMsTmL5YAChuUwCxSUrIT7KHPH8A58DL4gPrawOKvy2NiaQHbjo4DRAARQAQQAUQAEUAEEAFKCZ9o7hO4v8Rz+Qy+Sn79D9h0Nap4/MAJ8GiJBdhB47tAqfE6twCvyXlPye9qNb59lCSxCrBOyirnu0nxsmJXkv9m6Td83w2qvXW2pJPOZqvOZ5U8BkUAEUAEEAFEABFABOhYuESCRev6QtcdHgQvGtpVjdAs+P5vBeCu6wuxeHUag2keKi1W7wPv0ucfPgJw1/VxQy3OE3DEQaQaLdYZ0yK1OwO46/q4UXeYfBYjyZ/FEm3vAO66Pt89bTszNree7/iUzX3wne0O4K7r40bwOkHuuj5uBK8T5K7r48ZAgfEN/A+B0AanrUkA7ro+bqwUGN+KiwDcdX3caBQYX8NFAO66Pm5MaY9K1/GlZGuNA7jr+rhzg7fgNHjFc3zTZOt0CHLX9XGjZjn9Tdum1i6WN4Gzrm+i4GRNZXcqsVkA99D4bCt/HvzqI8DmI4Ojri+EAAkJ/hR8TAu0nRYspRT4EXiJzqXYmapAIPhH8BM2FgM2kTiW7gAAAABJRU5ErkJggg=={scale="+$scale+"}>"
+!endfunction
+
+IBMEntityColoring(dataunstructured)
+!define dataunstructured(e_alias, e_label, e_techn) IBMEntity(e_alias, e_label, e_techn, #232F3E, dataunstructured, dataunstructured)
+!define dataunstructured(e_alias, e_label, e_techn, e_descr) IBMEntity(e_alias, e_label, e_techn, e_descr, #232F3E, dataunstructured, dataunstructured)
+!define dataunstructuredParticipant(p_alias, p_label, p_techn) IBMParticipant(p_alias, p_label, p_techn, #232F3E, dataunstructured, dataunstructured)
+!define dataunstructuredParticipant(p_alias, p_label, p_techn, p_descr) IBMParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, dataunstructured, dataunstructured)

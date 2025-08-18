@@ -1,0 +1,13 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $boxplot [64x64/16z] xS61400000CXXFdRpkElMXu0001m
+
+!function $boxplotIMG($scale=1)
+!return "<img data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAAIGNIUk0AAHomAACAhAAA+gAAAIDoAAB1MAAA6mAAADqYAAAXcJy6UTwAAAAEZ0FNQQAAsY58+1GTAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAAOxAAADsQBlSsOGwAAASpJREFUeNrtmr0KwjAUhYs4+DQd3TP6CgUXH8yl4Cu0W3fHPJEJZJCiiZIfcpPvwN1qSD8P9+SWDANCVour7nTo/Z/vHsBRwB63yN+rlh0wumraASrQvK0u9AAAAAAAACiUAllzeaerqVsgBkN7upuaSzkgOpd3mgLraVe+/UypHZA1lz/oGbHeSg8AAAAAAICEKZA9l2t3QPZclnASjMnlhR7QwCxQWueI+WN0jsUBkh3ALEATBAAAAFBTCmTNZRzALIADOAmW7Dm1A3iYOgVe0OrbNwjt1hALYB78X4+4H0ATBAAAAND6LLD9EIO+Z1RKANlz+U/pVAuluiwt7tI1TRAAAAAA54CaclkCgCK5XDMARQ8AAAAAAIAGzwExc75EqXcAoTkftaoXsOI0eIXxCXQAAAAASUVORK5CYII={scale="+$scale+"}>"
+!endfunction
+
+IBMEntityColoring(boxplot)
+!define boxplot(e_alias, e_label, e_techn) IBMEntity(e_alias, e_label, e_techn, #232F3E, boxplot, boxplot)
+!define boxplot(e_alias, e_label, e_techn, e_descr) IBMEntity(e_alias, e_label, e_techn, e_descr, #232F3E, boxplot, boxplot)
+!define boxplotParticipant(p_alias, p_label, p_techn) IBMParticipant(p_alias, p_label, p_techn, #232F3E, boxplot, boxplot)
+!define boxplotParticipant(p_alias, p_label, p_techn, p_descr) IBMParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, boxplot, boxplot)

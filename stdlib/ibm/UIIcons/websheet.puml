@@ -1,0 +1,13 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $websheet [64x64/16z] xS61400000CXXFdRpkElMXu0001m
+
+!function $websheetIMG($scale=1)
+!return "<img data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAAIGNIUk0AAHomAACAhAAA+gAAAIDoAAB1MAAA6mAAADqYAAAXcJy6UTwAAAAEZ0FNQQAAsY58+1GTAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAAOxAAADsQBlSsOGwAAA4hJREFUeNrtW01IVUEUnmdWEFggLbKsjRSBkcuWmVCQUWI/SD+QgVAKBhm0zbdtEUaUQhYFVrSSEhWK4rmKNoFQUZGLyp9VLqxFWWbf4Z1HwzDv3uf9a6Y7Bz548+49c+d8M2dmzrlzhXDixEmaJRNQbwNwCdgFVEXcpingNDCcBAHLAho/DuwAKmJo02rgCPAKeGsiAX1sfNztOpgECWUBdOoTcs/lwAOgOc6HlAfQWR/RPFKQRaX8k42XSWgBBk0ZAXFLC5OQyEgwkYDBJEkwkYBESTCVgMRIMJmAREgwnYDYSbCBgFhJsIWA2EiwiYBYSLCNAD8S9qWBAC8S+pKIBaKWaSW+WAxRV7WNIyD3Lx9uAgEXgC9pJoBSYHXAPWAm6YebMAcUSDgeUT4hFatAKqJBR4AjwBGQnlUgjGTcCHAEOAIcAY6AlKwCG4H9QCOwRfw9m0BB1HtgBBgCPv9vBFDCJAu0FmnzZgalxK4At4GLIp9ssZ6AA8CAKP0wBtnUJvIpsxPAI5vngE6Rz/8FOYlSwbqdto4A6vkeTSfRqZF+4LHk65uAPdzztUoHUx0fi42EcoN9fkAxfh44J/KZ39/K/W8YV4EzwGVghUQC1bVVNyeY6gJZZdiT8XuB6xrjZVkArvEqMa+4Q9aWOaCaZ3tZuoBnS6jjKXBe+a9VaNLmJrpAk9Iu8vleDUl0TrGeyzmRzy5PSvf0sjvUSrY28QgxegQ0KuV+ZdiT8XRO8ShvhKr497jSwwus61W3kQTUKOUnSpl6vlKjV8nXvHRrbCBAPYanbmt3euiq1z751O2CIRMJmNYEQLKMeeiO+ehasQ+YUMq7lTLN9rMavVm+5qU7YQMBI0q5TWknLXX0LvE+h8Ez/LtOWQbLWFeWYRv2AQ95/15o2zagXVm/ydBjPvW0s25BfnHdxo+ASY7nZaG9fcMS6mhgHVluifxLWCtWAUpmfJXKFNiMAh0+bS7je0alYIhkDujWKQT5YKJbE7hELWT8a05qZKS2UsbnEBtHRn3n37TBodfrN4BTil20i6QvUF7qHhTkrcqUbkMRQjI+CZGeECOVjD+r7v/DukAuQVeg+L5ZcYdSZU4X/EThAi+Ak8CqCGN/L3kH3AHWANtL6DSa7W8Ch4sN+7AEUG/cBdYBa0X4L8eyJT5ziFeHD5LrrAR+8J7/ObtLB7fvm3DixIkTH/kDeWu1AMsDD4cAAAAASUVORK5CYII={scale="+$scale+"}>"
+!endfunction
+
+IBMEntityColoring(websheet)
+!define websheet(e_alias, e_label, e_techn) IBMEntity(e_alias, e_label, e_techn, #232F3E, websheet, websheet)
+!define websheet(e_alias, e_label, e_techn, e_descr) IBMEntity(e_alias, e_label, e_techn, e_descr, #232F3E, websheet, websheet)
+!define websheetParticipant(p_alias, p_label, p_techn) IBMParticipant(p_alias, p_label, p_techn, #232F3E, websheet, websheet)
+!define websheetParticipant(p_alias, p_label, p_techn, p_descr) IBMParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, websheet, websheet)

@@ -1,0 +1,13 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $bookmarkadd [64x64/16z] xS61400000CXXFdRpkElMXu0001m
+
+!function $bookmarkaddIMG($scale=1)
+!return "<img data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAAIGNIUk0AAHomAACAhAAA+gAAAIDoAAB1MAAA6mAAADqYAAAXcJy6UTwAAAAEZ0FNQQAAsY58+1GTAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAAOxAAADsQBlSsOGwAAAf9JREFUeNrtm9lKw0AUhhPtE3in+AiuuC/UorjvSlF8F62KV30TqaJU6r6hKEoVF8S30XqG/hcSmtamsUmm/4GfNpkzSc7XM2cmITUMGo1WyWY67FcviosiolqPrylTSv+Qw+DfRDU6ZECVgz5xXYJ3CmBApxrgZAjUuVRHApsBWhkBVDqAUACuMeOyv8kMIAACCFQNMIsc8yYzgAAIgAAIgAAIQJt1QKnrBGYAARAAARAAARCAvusAPg/gECAAAiAAAiAAAiAAAiAAAgjUzZC6aYnie8Io/kWIQANYFMVEjdheFa2LdnUHMIdAmy37G0Q7RvYNVNW+rxuAadGGqLWAnwKzJ3pBhhwEHcAEAm+3af/CZ7VlvwKVFD0BxGHQAIwh8E6b9m/RtmgT22uipRyzkgKXEj0CxInfAQwj8J48gScQ+Oev/SuiLYCI5gDRJToW3QPEud8ADCLwfpv2DCq88vmw8VFAlgEihpnC+nyvV3QmuoXPlRtzcbFmna9vROE8/nuo7O9FnqcJ/ebz+Fwb2T9tOI7JjQywCz6JX+nV4XEVsAVRCzJnJodPxI9FMIXAn106ngI4K2oDiEm/FsEjBJ7+p5lFAZ0SdQDEuF8AnCLwhzItqtJYX3QDxIhXAC4Q+J1H9xMK+KioDyCGynXiywJV3ysL49poNBrtz/YDk9RPyKqpY6gAAAAASUVORK5CYII={scale="+$scale+"}>"
+!endfunction
+
+IBMEntityColoring(bookmarkadd)
+!define bookmarkadd(e_alias, e_label, e_techn) IBMEntity(e_alias, e_label, e_techn, #232F3E, bookmarkadd, bookmarkadd)
+!define bookmarkadd(e_alias, e_label, e_techn, e_descr) IBMEntity(e_alias, e_label, e_techn, e_descr, #232F3E, bookmarkadd, bookmarkadd)
+!define bookmarkaddParticipant(p_alias, p_label, p_techn) IBMParticipant(p_alias, p_label, p_techn, #232F3E, bookmarkadd, bookmarkadd)
+!define bookmarkaddParticipant(p_alias, p_label, p_techn, p_descr) IBMParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, bookmarkadd, bookmarkadd)

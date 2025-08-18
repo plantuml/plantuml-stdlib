@@ -1,0 +1,13 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $delivery [64x64/16z] xS61400000CXXFdRpkElMXu0001m
+
+!function $deliveryIMG($scale=1)
+!return "<img data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAAIGNIUk0AAHomAACAhAAA+gAAAIDoAAB1MAAA6mAAADqYAAAXcJy6UTwAAAAEZ0FNQQAAsY58+1GTAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAAOxAAADsQBlSsOGwAAAvdJREFUeNrtmstrVDEUxjNtRRQRfGyEqgsRBC0qunBjR0HQjboXF2q1rWC1KG1xW3DRCr7FJy5bXCiICxXro3+CCwsV3NiKLmyXio86fod7BkKYXpLcmxlncj74LTKTuUnOPTk5SUYpkUgkEolEIpFIFKMKHr8p1bjP06ATPMvjYU11+NJawZ28HtZUp567OnYD1DQG1EqlEH0XD6hjD5hPX0AXeBqrB6wCD8CimKfASnAo9hjQY1OppQqZXqg4Yz53DfiojWkzKILxWDzgE3ji6gWNNgWuG+WD7BnRGIDc/Z0xxU+6xoBCA3jBfa18AgyCH7GsAiNgRiuvSFsSG9EA9Kbv2QbDRs0DboE/Wrm8JEZjAOslsZEzQaslsSXHXVi1M0XXfpWXxPMxnwccjmkKVFJr7AZQPjHgf80MbftVivU8wEpiAIkB/qL0ku7odoI28BN8AGO8G5sI3PfvKjkBeq2Sq7KJahmATlsv8+D1QLSQDdHGaecN0Gfk5L59HJynH5uYU5z59YNfIQ2wWCW3su0Wz+0FG8D+DEZoBo/AAYupfEZr73eoGHDVYvC69oGhDG//gsXgde11bc/FA7aCDuOzKTAA3nB5N3dAv709De6CScfBrwdnPdrr4ZgwmbcHdBtznv6osAWMgq/MKH82bRj5mMfbp98s8GyvI4QH7DHKFHBmK9Sb5e9GjLr9GYOhS3t9TG4eUKiwkUi7cBgPsOwFaS+2RGjK1wAlY56Riin1iwE6n7U96n9XlhgwxslPWcPgRYV5uZy/U0bdAccBDxvz2KW9i7Yxp9mhQ5+N7G+pSs7bKRp/A0s4CXlsxAtKguhyYsbDXbs1L3Vpr5Pr5L7Xp/P2446/uQTOebr9Fc7wXJO1XpdU00WvePOz1rL+c17P/3oagDY6O8A6y/ovwVEwF8oAlGM/VMk/MLaleBC54TXuTJbN0By3twxsT2mPDHwTHHHdDGU57qr2dngjx4RdmkfQdvgtuA3eK5FIJBKJRCIH/QObpJib8y3f+QAAAABJRU5ErkJggg=={scale="+$scale+"}>"
+!endfunction
+
+IBMEntityColoring(delivery)
+!define delivery(e_alias, e_label, e_techn) IBMEntity(e_alias, e_label, e_techn, #232F3E, delivery, delivery)
+!define delivery(e_alias, e_label, e_techn, e_descr) IBMEntity(e_alias, e_label, e_techn, e_descr, #232F3E, delivery, delivery)
+!define deliveryParticipant(p_alias, p_label, p_techn) IBMParticipant(p_alias, p_label, p_techn, #232F3E, delivery, delivery)
+!define deliveryParticipant(p_alias, p_label, p_techn, p_descr) IBMParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, delivery, delivery)

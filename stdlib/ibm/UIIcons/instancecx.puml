@@ -1,0 +1,13 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $instancecx [64x64/16z] xS61400000CXXFdRpkElMXu0001m
+
+!function $instancecxIMG($scale=1)
+!return "<img data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAAIGNIUk0AAHomAACAhAAA+gAAAIDoAAB1MAAA6mAAADqYAAAXcJy6UTwAAAAEZ0FNQQAAsY58+1GTAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAAOxAAADsQBlSsOGwAAApZJREFUeNrtmj1MFEEUxxc1NH40kBAFWhNjAYnYaINWBxYU2qiNNlgJsQFRNH6hQGOQCim0MFjYUPjRyTWSkEhiQ2NDc/JR2BBtrrjlP/G/yfOyxy6we5uZff/kl8ybeXO79252583ceJ5KpcqzGmL6tYFJ0A2Op3SNTHQo5pf/AZpcHAEHYvhMuPrl4wag2+V3QJxH4IRNz3QaI8DL+whIWp9Ar7AvgoUavhfAV2F/BpdsHwF3QFnYT3fwlW1l9rX+EfgJXgn7PCiE+BXYFmiafZ14B5hfdlPYT0J8ZN1mDR9rA7AF7gn7LOgTdh/rAt1nH6dmgbfgu7Afc4ptYDnQMnjj4jRYAYPAp90BrpAO1vn0qbg0DUotgjlwXYwCqffgm+uJ0DD4w/IpYvSXbc5ngr/Ai5D6cVDSVDgHAWgFIyH1d7kX4XwAzH7DEZY3iNFhtjkdgHPgmrCfkUBXq9JhpwJgrj0l9hdWwSxZFXsPU2neZ5YBuAG6hP2IK74yy4HOgJtZJkJr3v+7Qv4urxG2g3QMPBf2CngnbFMeAqdpj4EPaawH4oyAYgqBfwBahD1ale5WWBfI+D7M6hEw2djvBK95EgwIewnMh/jNsy3QbfatewBMNtbJvHw9gWu+BI1VS91akm2N7KtSqVQqVUIKy9L8Xfax2l83RDQAKpVKpVJpJhih/ZwUrbfMpk3R+7enWEoiALaeFDXbeJ1RQXD5pGiTF+OfJddPikbeu4snRf0d7l3XAnsZAVHqAa9Z7gdf8rYanOFM0cayLofzFoBbnGtLLOfuHWCe+fY8jwDnZ4H9ng/IUmtJjICixT9wMYkAJH0+oJ6LociTpgdjfJA5ljLHZXAzOGrBcvgjuOzV4aSpynZtA4NccPL6WBTyAAAAAElFTkSuQmCC{scale="+$scale+"}>"
+!endfunction
+
+IBMEntityColoring(instancecx)
+!define instancecx(e_alias, e_label, e_techn) IBMEntity(e_alias, e_label, e_techn, #232F3E, instancecx, instancecx)
+!define instancecx(e_alias, e_label, e_techn, e_descr) IBMEntity(e_alias, e_label, e_techn, e_descr, #232F3E, instancecx, instancecx)
+!define instancecxParticipant(p_alias, p_label, p_techn) IBMParticipant(p_alias, p_label, p_techn, #232F3E, instancecx, instancecx)
+!define instancecxParticipant(p_alias, p_label, p_techn, p_descr) IBMParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, instancecx, instancecx)

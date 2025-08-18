@@ -1,0 +1,13 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $network3 [64x64/16z] xS61400000CXXFdRpkElMXu0001m
+
+!function $network3IMG($scale=1)
+!return "<img data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAAIGNIUk0AAHomAACAhAAA+gAAAIDoAAB1MAAA6mAAADqYAAAXcJy6UTwAAAAEZ0FNQQAAsY58+1GTAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAAOxAAADsQBlSsOGwAAArJJREFUeNrtmrFLW1EUxm+K4tQhhg4KmYpGCt36FxQdgtrRVSKSJRahghCX4lAFsS1Bsmixu2NUHJT+B50KpbU4SKAZijp0Ci3E7+AtXI8vTWLykvvuuQd+w72Ex7tfzj33no+nlA8fPiRHLGCuFsIzrY0H0jPACyBdgL4O7OmazwDHM6DdCDtDfoOf4BTsgwNQsUmAsOMhSGmmwR+wDVbBL4lboB/kwHcwLrkGxMERyPR6C8S6sAWSIA3mwRhbH22Hc/DJ1QygIvgVvAVPwSvwl4mwBxL3zYAonfO08PfgGygZ66PFr4AlKTWA9n6ezVFhHJRUBAvghzEeAJOSBKD7wC6bm2ymBsQcEuEYrBvjx9J6gTIbD/lmSJgASTauRLEbbKcmTbDxmaQMoKZojs0dShJgEYwY46okAdLs+KMogksbDJEwPUZaz0uwwdZ2AdZ61Q6HHf9rh/81SDNahLYFoIvElLqxnkbBsH6Bbt4kW8kQWny2nhfQigCPwGv9sP6IZMaV/udPGu2ZRjGuDYV4hJqgpk3RRgJk9MNsrhWh2eLP6yye3JYP2nQo6xew6RRp+dgIioRO+z5WUJbBlrrtuUU66gmwom6biLTgF/pf73VvEHo3SL5Zjs3lO7T4SLTDZBsNGGPy1QqS/ADum+3qo8XJCKoB3Dc7tqlqdyMDuG9Wdrhl9p5gkAD8FpV0WYCgGkC+2TNjTL7aZ4veuaMeY1AGcNtoLkIdYEe2AAlQNcbkqy1KEoB8syKbI38tLaUGUJB/Nmv0A/S7kqXNUFseY71jkPyzGXX3S4t34Iu6+dDgibprhzmTARTko2UDPAEyHTc1kev/W70IfdR7/0ryTZBMxZQujM41Rc16fWQuLoA3qrEt7qQA5jV5R+ObIUlbwOao+QzwAngBfPjw4eNecQ3m6Xe60wlVsAAAAABJRU5ErkJggg=={scale="+$scale+"}>"
+!endfunction
+
+IBMEntityColoring(network3)
+!define network3(e_alias, e_label, e_techn) IBMEntity(e_alias, e_label, e_techn, #232F3E, network3, network3)
+!define network3(e_alias, e_label, e_techn, e_descr) IBMEntity(e_alias, e_label, e_techn, e_descr, #232F3E, network3, network3)
+!define network3Participant(p_alias, p_label, p_techn) IBMParticipant(p_alias, p_label, p_techn, #232F3E, network3, network3)
+!define network3Participant(p_alias, p_label, p_techn, p_descr) IBMParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, network3, network3)

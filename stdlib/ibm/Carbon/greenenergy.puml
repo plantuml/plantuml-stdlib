@@ -1,0 +1,13 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $greenenergy [64x64/16z] xS61400000CXXFdRpkElMXu0001m
+
+!function $greenenergyIMG($scale=1)
+!return "<img data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAAIGNIUk0AAHomAACAhAAA+gAAAIDoAAB1MAAA6mAAADqYAAAXcJy6UTwAAAAEZ0FNQQAAsY58+1GTAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAAOxAAADsQBlSsOGwAAA55JREFUeNrtmltIFVEUhrelRIUFPXRTELsQEUn2INhTRA/1FGQWCUHlQ/VQFJVWSje6gEF0gYrEgqKHiCKQ0iT1LajoIYUuSEVl2ikrsFIio/7F+QeG7YycjjNzZo57wYec2bPmzPrP2re1VcpYoLaOJNvuuY0KWIAykmx75AUInRkBjAAj3DICGPU32j4X8G+by/1O7ZfA1ahmQJktKCuwtiHu19sL/J4VMgPIskdgeZK+DWYM8NmCyIAi0JqkbwEzyGSAGQNMBhgBjABGgAgK8ANkD8M/m8+IrAAfQP4w/PP5jMgKIAug6aAwCd9C+rZGWYAmEAMVSfhW0LcpygL0gyNgDSj5D78S+hzhM3yz0QEMtI/BQrATvATPEwj+Cmikj4q6AGK3wQKwH8wBr8FHhz5/EhwGd8BaMOD3i2Wo4Ey+awPTehr4xIxQFGUy6AbV4DL4G9RLBW2SdUvBIlDOa3XgAbgP/qTbblA3CfAeKeK1A2YpbAQwAqTEMkP8bjIrSCVpNpgJpmrtnpwXhFGA+WA3WA3GgLfgnTY7WOcFaSfAJnAafOFe4BbodLivIR27wDmwBZwFlX7vAbwWQD8DVFzqypK3A9zlys/NNjP4bRQgcoOgdQZoP9fLAcUgD/wCN0ANaNd8ZRl8ioEnGrxUirrC1gXc6v+5YCX7dCnYDi7Y2q2qzx4H3yWgxeG6iPskKusAGcTOcDq7CM4Tu50Afdo12TQ1UwRd0DyHTAr9INjPPt5BQZ7yuuz6bjoEXwWOOmRACX3qwyTAdxWv3yVi0s9nsd93cZ7vdAm+WvMdxzWCBB8LUxfoZr9ULv1Yt72gRw2u+g4VvNhxMAXsC9teoJ39Mtch+GYGZrc+9nsrexIJfiu7kNzzzMvihBcmv6LU796Dh7brb0AWXzpL68/iswO8AnOHCH6sipfKDoJal9ki5QL8VPHCZymnuN+2thYXEXrBejCPmaIHn8v262Ax097T4L0UQHERtAtMVPGKrkpABBFsBhdKGQy4nBWiQ2CZih+MrFLxwqoKswCfGYj8il/V4H9tcRJBBJikLWpi/FzLzVEdB8xI1ANqOMVZCx99U2OleFUCK8hAzI9zgXoGXckN0gAHvF6HTMjhOuBaqgTwsywuI/sxsILfoxc2ilnwaEy3DLCshyO4zAovwDdeH2/bI0xgdqQsA4LYC8Q4kCk/Kzth3g2G2owARgAjgBHACGAEMAIYAYwZG6H2DwrEy7EPykhbAAAAAElFTkSuQmCC{scale="+$scale+"}>"
+!endfunction
+
+IBMEntityColoring(greenenergy)
+!define greenenergy(e_alias, e_label, e_techn) IBMEntity(e_alias, e_label, e_techn, #232F3E, greenenergy, greenenergy)
+!define greenenergy(e_alias, e_label, e_techn, e_descr) IBMEntity(e_alias, e_label, e_techn, e_descr, #232F3E, greenenergy, greenenergy)
+!define greenenergyParticipant(p_alias, p_label, p_techn) IBMParticipant(p_alias, p_label, p_techn, #232F3E, greenenergy, greenenergy)
+!define greenenergyParticipant(p_alias, p_label, p_techn, p_descr) IBMParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, greenenergy, greenenergy)

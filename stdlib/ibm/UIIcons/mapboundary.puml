@@ -1,0 +1,13 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $mapboundary [64x64/16z] xS61400000CXXFdRpkElMXu0001m
+
+!function $mapboundaryIMG($scale=1)
+!return "<img data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAAIGNIUk0AAHomAACAhAAA+gAAAIDoAAB1MAAA6mAAADqYAAAXcJy6UTwAAAAEZ0FNQQAAsY58+1GTAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAAOxAAADsQBlSsOGwAAAdFJREFUeNrtmU8oBGEYxmfFAQcHVo4OyhG5ygUJN7mwxEU5KOHuz5GScuImJIc9KCUctQcpf0oOCmdly4UD0Xim3q2vbTKzO2Zn5pvnqV+zf77pm/f53vfd+WYNg6IoiqKouCrhYozp85xmkDGWxT0DaEDcDSj3qW+UssaZATSABpS2B/jdM5gBNIAG6NUDzDD3BJYADaABNIAG0ADeB3AvwBKgAewBge0FEswAGkADtO4BhfYEp/8RvI5nBtAAGlDYb3Con+l5vV6WAA2gATSABtAA7gX+VUnQATrlWAOmwZmuBjRJoDmabcacgj0wC7JRN6BNWV2LBpfnjYI+MWE3ygZce5ivFuyAMTAFnnXsAd/gBmTArax4a96YHnAHlsC6nOM2+ybACKgLiwHv4EICzsjrD+X7fTAPFkGl8nkVWAXDYBJc/dFUUxJ4Sxgy4FUCPZejtdo/DhmxAtJgC3TZrKpl2gZYEPMqQL8EPSDvAyuBR2V1LR6KnOsJdINxsCb9QL2OOTAIjsEQqA/L8wA/lJTaTxXRX07ANjgCX1E1IKdesAkaHcbdS9DWvcSLDhmgqhosg5m8knwDBxL4pW4lYKd2yYasBH0IPg2Koigf9QsczU0P+R1NlwAAAABJRU5ErkJggg=={scale="+$scale+"}>"
+!endfunction
+
+IBMEntityColoring(mapboundary)
+!define mapboundary(e_alias, e_label, e_techn) IBMEntity(e_alias, e_label, e_techn, #232F3E, mapboundary, mapboundary)
+!define mapboundary(e_alias, e_label, e_techn, e_descr) IBMEntity(e_alias, e_label, e_techn, e_descr, #232F3E, mapboundary, mapboundary)
+!define mapboundaryParticipant(p_alias, p_label, p_techn) IBMParticipant(p_alias, p_label, p_techn, #232F3E, mapboundary, mapboundary)
+!define mapboundaryParticipant(p_alias, p_label, p_techn, p_descr) IBMParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, mapboundary, mapboundary)

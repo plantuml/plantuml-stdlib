@@ -1,0 +1,13 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $windpower [64x64/16z] xS61400000CXXFdRpkElMXu0001m
+
+!function $windpowerIMG($scale=1)
+!return "<img data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAAIGNIUk0AAHomAACAhAAA+gAAAIDoAAB1MAAA6mAAADqYAAAXcJy6UTwAAAAEZ0FNQQAAsY58+1GTAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAAOxAAADsQBlSsOGwAAAoVJREFUeNrtmc9LFGEYx3fX1RSiFBRCyZAsFA8qUiD4gxb3loeg8qAincxj+g8IXsWDYkTQrYLwKCLlWguiXjYJO9WhS4S4By9qUKbb96Vn4e1lV3eZ8Z15530e+LC8zDDvPJ99fzwzEwpxcHDYHCWa+ugEj8AUuAaSfhEQ1dDHQ/Baal8Ak34RENHQxyrISO0OUGWTgDTYVqZEzCYBIlaUdp9tAhK2C1gDv6R2I2iwScBPsO7HURDR2FeCBfwfMc39ey7gI9iT2tWg3SYBJ+C936aB7iGYsF2AWhB1gQqbBHwjslFOEqwR4LtpUOJBn2LIP5DaYie4BcrA56ALqAXz9JuNUtAE7oX+vTh5S5Vj4ASIfzh5xt5/nY6/DOIa8Bi0FnCeWBOGgzgCZkGd1F4Gd8AMaAY3pGNh8CZoI6BFaY+CH8SockyIuQ8qz/umohoFZIo49zJYoPI5RVunYEN5r2DUFLgLrkrtJloUL4HnyhSQp4KYNt1gBIyDHnAFHIJdpzcV1ihgGky4fM20NDoE3/0qQHwbeFXglPtEzwxx0FZkP19IxDvwAez7QcAA7euFJL9FU2WH2jW0LWapL6Lf3/TOYd9LAbmS/wPmwBPl3DHwAhydcr2bJEKMjhitH/kiRSW2Z7tAvuSHaI9XBTwr4Jpfiae0gN+WRkcnldX5Hr21CjgreTfiGGwS4qPrRdBLoyOe46lTmwAdyeeKA7BEeFYJepW8L0ph45J3U4CRybslwNjk3RBgdPJOBRifvFMB/aYn71TAiJSskck7LYREJTZIyS+amLwbleAx/fPGRiRkebAAFsACWAALYAEsgAWwAFsj14eRjE058xRgARwcHBwWx18eF38s++oVPwAAAABJRU5ErkJggg=={scale="+$scale+"}>"
+!endfunction
+
+IBMEntityColoring(windpower)
+!define windpower(e_alias, e_label, e_techn) IBMEntity(e_alias, e_label, e_techn, #232F3E, windpower, windpower)
+!define windpower(e_alias, e_label, e_techn, e_descr) IBMEntity(e_alias, e_label, e_techn, e_descr, #232F3E, windpower, windpower)
+!define windpowerParticipant(p_alias, p_label, p_techn) IBMParticipant(p_alias, p_label, p_techn, #232F3E, windpower, windpower)
+!define windpowerParticipant(p_alias, p_label, p_techn, p_descr) IBMParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, windpower, windpower)

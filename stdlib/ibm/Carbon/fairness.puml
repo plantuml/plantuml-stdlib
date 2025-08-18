@@ -1,0 +1,13 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $fairness [64x64/16z] xS61400000CXXFdRpkElMXu0001m
+
+!function $fairnessIMG($scale=1)
+!return "<img data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAAIGNIUk0AAHomAACAhAAA+gAAAIDoAAB1MAAA6mAAADqYAAAXcJy6UTwAAAAEZ0FNQQAAsY58+1GTAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAAOxAAADsQBlSsOGwAABAdJREFUeNrtm1tIFFEcxsddMwjLB7tRPZiRZnR7EKGoh7KgsIsvGVQPofvQTbQL9ZDSRX0sCgmlIughoaKgCwqZSBSRuS9mKVEPPoilFWnJdoPoO+y3NMjO7pw5s+u2nj/8WDlz5pxvvjnznzNnRsPQoUOHjgkcKRJ194Id/8lx3QCNdiqm2mwwD1wAaaAXDLokdBl/X7rU3ixqXQUeU6srI+ARyOXfb8B6lwS38HeTS+21gkUyOj02Gi0BheAIKWRZosV2HrCUzmgGpIOzoA3cJG0sS0+ggxdazjnRGc2AajATlJvKyllWnUAGVDnV6YmS+CrB+THJpJdllawz3iGu+UNOdUYyoB4MgZow22q4rT4BDFDS6bGR+EbDbB9VTIgZwAeWEh/LVBKfI51ei4RyD3SC4xE6fw3WgJ3gMvglce8X9+hdoA8EQCnbaZeYYwid91V1ei2GjXBsG/gURUQnHZ7MuUK0mAKe8sysA7Wcsd1if3vAJfDbRltnePaVdHpsJj6rkE2I4kzP5XAcm7BKuK1UIfFJ6/RIJBSrkEmI+aDHQnQvt+UrJj4pnR6JxGcVqgnR7cQnpdNjMeOTDbszLz9YbHG55HGbX2LGp6wz9DAkktEJxSe90JNYHWdmVklQDPNvY/JAHsVNpQmBCMO4yk2docfhHPBV8TF3kEksJ0IdcWBbwV3QDV6xfAno57ZAhP1zXdSZa14PeM+G1ypen/1sK1KIZ/8VvJZPsWwfR8BIlH0HOHrc0DlgzgEdYB7IVmg0m8522KgrDvQKR0E3JygjNvbrYB+u6QwZ0Ax+gjKFhn1sozmGd4CQTp9bOkMGDIMGThSyHDQ6H1SwjeEYGjDCPirYp1OdjSGd5nlAHQvvgGkSjYq6t7lvXRzmAeKO9YV9OtVZG+5ZQGTfJ+Ao2Awe2jibWRxKYmq6EbyTPJjd/L0usc93N3V6w2TZVl4nh3lf7qPj5lgAjoFrYBIb7XRwNp0YYNZZpqrTalU4k0tJ4vaUxg7fcttCMIePlQ2cnHx2OJxVV4UzOTHa71RntGXxDA6zAjCbZR/AC/DA5q0rlgaYr+8tMdQZs2gxmTAu4TEmeGgDtAHaAG2ANkAboA3QBmgDtAHaAG2ANkAboA3QBmgDJlp4x6lfsXh5EGwwgq+rpxvBl7MD8RaSEuf+xJebV0GREVyu7mG5+CZALGuLFVyx1j+UjAaIg38GZoCT4KLx72sw8dLiADgNPoKV/E2qS0D8E4P4KHK1EfxA4o9pm/j7uRFcIhcvaJeDpmRKggUc9uIjpa4I9bpYp4j7JI0BxeCHzbPaxLrFiZoD2h3sI5Kc+EDKb7O++FYwYEqSMiH1+UxqnEaA7IH4DR06dOjQEfv4C7ayGVXObCjhAAAAAElFTkSuQmCC{scale="+$scale+"}>"
+!endfunction
+
+IBMEntityColoring(fairness)
+!define fairness(e_alias, e_label, e_techn) IBMEntity(e_alias, e_label, e_techn, #232F3E, fairness, fairness)
+!define fairness(e_alias, e_label, e_techn, e_descr) IBMEntity(e_alias, e_label, e_techn, e_descr, #232F3E, fairness, fairness)
+!define fairnessParticipant(p_alias, p_label, p_techn) IBMParticipant(p_alias, p_label, p_techn, #232F3E, fairness, fairness)
+!define fairnessParticipant(p_alias, p_label, p_techn, p_descr) IBMParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, fairness, fairness)

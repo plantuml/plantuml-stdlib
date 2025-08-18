@@ -1,0 +1,13 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $dropphoto [64x64/16z] xS61400000CXXFdRpkElMXu0001m
+
+!function $dropphotoIMG($scale=1)
+!return "<img data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAAIGNIUk0AAHomAACAhAAA+gAAAIDoAAB1MAAA6mAAADqYAAAXcJy6UTwAAAAEZ0FNQQAAsY58+1GTAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAAOxAAADsQBlSsOGwAAAp5JREFUeNrtWTFPFEEUPkT8AeQKIEBpjBTSUgESNVrZYnlBgwFDoFB+A4XGCkK0hcLGWJgcAnr/QAosLIFwFIQfgMDxPfNdMpkce7N7u7O7d+9LvuRmdt7uzps3b763VygoFAqFonPRFXCt1mRs3q//x61OjwB1gGYBhUKhOiCaDsg6VAfoMagOUCgUCtUBqgP0GFQHRMsBPpy/AL4C7zosxhX4F1wHP7LdMrpTdMAncBksOi5EF8c+AYfAb3neAmNgqQX7Eu+RWweUMnKPwu0UdIA887nVJ2G91cTuMVg22nKP1+BF3iLgIfdyHafgroPdLsfWUeS9EouAKBgEV8AJsN/R5qvjKl5w7IzRVw4YXwV/gW/BIx8RIJPfA6dDTF7wJaGx/XyXPb5b6AgIu+dl5XtD2riGv70NiiFsevluL5KOgPEINq7hb2+D2N4tzhww0GIEjXB/S7YfZt8BTwcRTfvse0mGqQYHfCXBKOgBP4CzDZTpffINuAYugv/ifHgaOsDEHfA7OOUg2efAe+Az8LxdqsH3DpM3MUUbLxGQNEYY9iYOwXfgT7YnmcHNY0xsVo2ckNsImLH2vIiVUXATPCHl9wNLyHRbYiixCEj6W8Ejqy2K7azBuDNe2wiwzWUEDFvtSsDYShPb3CbB1JGmAw5CKMnxJra51AE/eBKYtUS5QR6oa3kTW+0QASJvL61q8jcruD5ymn3mMSg2n9tBB+xT3s4ZfUNWtm+E2DRAFpLgErgTYvw2bbwoQR//GYimfxpQDJlhv8rJeyuGfEEmNM8JmuVwjdK4zHzxJ4mHZ8EBZk5Y7CQdkAnEqQOOrS8vtQzN89hHBFQyvNAVHw64qZpLG/VqMnEHHLF2lxq+moGJV2/4nqBQKBQKBXENjneCWtJ2mfQAAAAASUVORK5CYII={scale="+$scale+"}>"
+!endfunction
+
+IBMEntityColoring(dropphoto)
+!define dropphoto(e_alias, e_label, e_techn) IBMEntity(e_alias, e_label, e_techn, #232F3E, dropphoto, dropphoto)
+!define dropphoto(e_alias, e_label, e_techn, e_descr) IBMEntity(e_alias, e_label, e_techn, e_descr, #232F3E, dropphoto, dropphoto)
+!define dropphotoParticipant(p_alias, p_label, p_techn) IBMParticipant(p_alias, p_label, p_techn, #232F3E, dropphoto, dropphoto)
+!define dropphotoParticipant(p_alias, p_label, p_techn, p_descr) IBMParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, dropphoto, dropphoto)

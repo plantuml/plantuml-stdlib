@@ -1,0 +1,13 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $taggroup [64x64/16z] xS61400000CXXFdRpkElMXu0001m
+
+!function $taggroupIMG($scale=1)
+!return "<img data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAAIGNIUk0AAHomAACAhAAA+gAAAIDoAAB1MAAA6mAAADqYAAAXcJy6UTwAAAAEZ0FNQQAAsY58+1GTAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAAOxAAADsQBlSsOGwAAAx5JREFUeNrtmrGLE0EUxueSNFfYiI1ypVZylWCl3P0JBlFPT0W0FgtBbATFzsJCG/t4USNn5T9gI1rqmai5Awuvsjgh2nmC3+BbWIZsdjI7772J7oOPXLIZst9v3755M3vG1FFHHf9zzAWOW4DuQcvQ/gq//x16C92FXs8KAGv+HbQ34nn8glah59IAmgFjHkFHGc6jDX2CBpIAGgFjlpjOpQV1odOSAFoBYw5EqiM2TpHpVu581ujvXqoZEDPsPX8O2nUuyppUJmgDUIeQAgBVCHMmrXBrgiEo56FnqUyDnDGgqbCdy077egIaQv1/HYA4hBQBiELwrQExe/830E3ofYWacAF6KpUBWe9v2989FX9vHjoEXYE+e7S9kzJhE/ogAUC792eF4APgQYQrX9SDtCkT+loQfNYCqfT+2VLZHd+hc3rClQG3nfd3GKq7WiZIA0gOggaApCDEArBAs8VD6Dp0xPzd6xsFQhhKQYgBwO0TrBahS1SwRoEmqkLYgjYkABT1CfPUNa4zt72Txtss+Mi9H7AUeMxnP+AxdCZwfJNuyZnYECmDsMK1txEDwKvAY9NA6JRAWKGGKt/Y/YauSgC4Ae2M+XyHjhlmCIuUJa75i9ALiSI4ompvC94+6Cf0EjoJbTPsB7hT3DdK/2XHfDfWWsAntumqxa4Jvr1/dlFuTWM+JgDOwlgEwYyBsD5tK9ww6UfRFGchnHW+y7IYukZNTf7+HAhDYNsP8AFgi8vB3HuVp7hcEHwAfKHC0nQWLKlB8Or9QwB8nbBqSw1Cae8fAqBs6ZoShOPQfa5ZwFbj1TEdWpf2+mYypn0y1KcdG+1MGPfAxHaAl7lugZQgFJm3hbrHnQHaECaZ70rcApoQopuvCiCDMKQpiBMCi/kYACQgsJmPBYATAqv5mAA4ILCbjw0gg7AZAYKIeQ4A2Zq8CgQx81wAqkAQNc8JIASCuHluABmELQ8IKuYlAPhkwmEt8zYk/1XWbmB2HOi7uWW1uHmpDCjLhIaWeWkARRDUzGsAKCqMKua1ANjYIBDHoB+0k9MzddRRRx3C8QcFblStrbGl9QAAAABJRU5ErkJggg=={scale="+$scale+"}>"
+!endfunction
+
+IBMEntityColoring(taggroup)
+!define taggroup(e_alias, e_label, e_techn) IBMEntity(e_alias, e_label, e_techn, #232F3E, taggroup, taggroup)
+!define taggroup(e_alias, e_label, e_techn, e_descr) IBMEntity(e_alias, e_label, e_techn, e_descr, #232F3E, taggroup, taggroup)
+!define taggroupParticipant(p_alias, p_label, p_techn) IBMParticipant(p_alias, p_label, p_techn, #232F3E, taggroup, taggroup)
+!define taggroupParticipant(p_alias, p_label, p_techn, p_descr) IBMParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, taggroup, taggroup)

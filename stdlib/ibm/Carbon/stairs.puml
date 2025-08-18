@@ -1,0 +1,13 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $stairs [64x64/16z] xS61400000CXXFdRpkElMXu0001m
+
+!function $stairsIMG($scale=1)
+!return "<img data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAAIGNIUk0AAHomAACAhAAA+gAAAIDoAAB1MAAA6mAAADqYAAAXcJy6UTwAAAAEZ0FNQQAAsY58+1GTAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAAOxAAADsQBlSsOGwAAANFJREFUeNrt18EJAkEMBdB12Xq2B4+2IOzF4izGoxU5ggU4I4aQeYHsbQ77COFnWSavU5H/OFrfOt+c35+1CMC19T7ycCs0zY/Wl95H6+w7AAAAAAAAAAAwb2VNgr3Zfv8kwTIT0Jvtn63v1W6BoWxvBwAAAAAAAAAAACRLgmHZPusEhGX7zLdASLa3AwAAAAAAAAAAAP6cBNNm+6gJSJvtI2+BlNneDgAAAAAAAAAAAOhMgmWy/egElMn2v9wCJbK9HQAAAAAAAAAAAABAqW/qBWEsFk8fFhs6AAAAAElFTkSuQmCC{scale="+$scale+"}>"
+!endfunction
+
+IBMEntityColoring(stairs)
+!define stairs(e_alias, e_label, e_techn) IBMEntity(e_alias, e_label, e_techn, #232F3E, stairs, stairs)
+!define stairs(e_alias, e_label, e_techn, e_descr) IBMEntity(e_alias, e_label, e_techn, e_descr, #232F3E, stairs, stairs)
+!define stairsParticipant(p_alias, p_label, p_techn) IBMParticipant(p_alias, p_label, p_techn, #232F3E, stairs, stairs)
+!define stairsParticipant(p_alias, p_label, p_techn, p_descr) IBMParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, stairs, stairs)

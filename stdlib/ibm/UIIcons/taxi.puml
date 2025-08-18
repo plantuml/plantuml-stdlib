@@ -1,0 +1,13 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $taxi [64x64/16z] xS61400000CXXFdRpkElMXu0001m
+
+!function $taxiIMG($scale=1)
+!return "<img data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAAIGNIUk0AAHomAACAhAAA+gAAAIDoAAB1MAAA6mAAADqYAAAXcJy6UTwAAAAEZ0FNQQAAsY58+1GTAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAAOxAAADsQBlSsOGwAAA41JREFUeNrtmluITVEYx9fMHEPjFpoMkXGJ8GA8u41yyQPyMIUSmhj3S5pBqMEg8yCXUozLJKHwIjyQ+4uiRCKXmGEehnTKTIpxGf+v86lltY9z1t5rbXvOWf/6Neesvdf+1v7Ot7+91rdGCCcnJycnJycnJycnJycnp2xTjsFrFYO9YCroFfBareAW2ASedwQHDAH3QaHh8X0G48FTWw7INXSNUxZuntQTHLYZASYcsAaMszjGCWCerYvHAvYfBnYpbTfBFNAe4Lr1YKH0vRZcAl+iFAHU9wQoUJJXecCbF5z8WqTvA8DmqD0Cqzg8ZVWBBgPjagY1StsGTraRcMBQsFtpuwGOGBzbAfBS+t4F7IuCA+jVeQx0tRD6strAeqVtNpj2vx2wApQqbZWg0cIjehVcUdr2g06mDORpnj8YXAT5Utt1j1/KpB6ACmmshZwUH/FEKTQHUOhfACOkNsrUM0wM5B+Kg+7KXGMszz/GgI9BEq/XVJhu6Ch7OZWWgroQ1izkgBegX5LjT8AhcBp8DRoBNJEZmEbfa5ZDX02ID8F0doaqvmAWWA76sLNa/DognVdNGKGvqpF/5Vf8A/X3OKeAH5XVoAR8SJWcvRxQnWIgb8ECTkJh6yeHex1HYDfOSXkeb7eRYBGYA36AZ/w3ZQ5ot1gzsCGKhJVgSYoV6SewGFzWjYDtEXdAK+etg+ANGASKkjwepeojHhOZo2/gJENrlLU8c4wp0SIy1QGy7jGULN/ZLohEWe/DqAh1aDkHZLsDgiTBIq4BTATDuY0KGHfBca7qmJQVezGfUUP1uW2gs3KsmAsWdGwn2AN+GYhSa/ZiPgZzDpSlOI8GWsPL1bkBnGDdnm4O2JHGYGSVcR+/sm5PJwJoD6DS4z27UST28UiTRWJ/UF5OU5968Frz5kOxpxMBtNiQS2FNvOQ8ywmomT+X8LE/yue+ugrFXjqrwWSazwPwEm1lnTH8FjBlL8fUPOCOz2ORspfrZ/6cSWsDLwdUKM9UMk3yecyvgtpr4nvzXe2hbFulXJDeu3HlvN7gsfi7qlzL2VtEzZ7OvkADWCb16cGJibIxlZuoPjdTJDZO5NdSG09h45oOCMWebr2PZltbNPvQ/w9s9Rn21u3pbo3dBqPA6DTPPy8SBUu/m6bW7ek6oJ1D7rtI1N+TzSSpPlcN1gVcDFm3F6TknRHLYScnJycnJ6fs1W+NRdPEzbC74gAAAABJRU5ErkJggg=={scale="+$scale+"}>"
+!endfunction
+
+IBMEntityColoring(taxi)
+!define taxi(e_alias, e_label, e_techn) IBMEntity(e_alias, e_label, e_techn, #232F3E, taxi, taxi)
+!define taxi(e_alias, e_label, e_techn, e_descr) IBMEntity(e_alias, e_label, e_techn, e_descr, #232F3E, taxi, taxi)
+!define taxiParticipant(p_alias, p_label, p_techn) IBMParticipant(p_alias, p_label, p_techn, #232F3E, taxi, taxi)
+!define taxiParticipant(p_alias, p_label, p_techn, p_descr) IBMParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, taxi, taxi)

@@ -1,0 +1,13 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $logotwitter [64x64/16z] xS61400000CXXFdRpkElMXu0001m
+
+!function $logotwitterIMG($scale=1)
+!return "<img data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAAIGNIUk0AAHomAACAhAAA+gAAAIDoAAB1MAAA6mAAADqYAAAXcJy6UTwAAAAEZ0FNQQAAsY58+1GTAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAAOxAAADsQBlSsOGwAAA8RJREFUeNrtmntojlEcx4+9r13eydwyhLQiSU25DdG23EUhkoYQybWQwqSk/EFiarn9gxIpl38IWSJWiz9cdquZctkfWKxtL7lsvr+en1prs+c8z++8zxPnW5/eve+e83vO+T2/c87v/N5XKSsrKysrKysrKyur/1HdQty3PiAXZIL+4DUoB0//dQdMA3vArE7+/w6cBYdBvJNrJrIDb0k7YAm4YmjgKaAIrHd5/XuwFDzm96kgD2zn1xGgVtIB40EZ2ApOCA++O7jDIa+jr+AIGMttY/z5UbDDjYGoxs0K+PUY+AIuCDqgyMPgSWlgX7vP6CEVujWQpHGzqW3anAM7hQY/B2wQslXG9iiyl4NNkhEwtN3UoUVoGM+57z46LeXIt+AJuMZToh6Mk3RArIPPyMOT2dtVHjo9EuQLOWAI2Mh/fwZzwceuGkU0brAW9O7g84FgNU8NCsGfGjZng0XCC+onMBM8d3OxjgNm8NbSkZL5SRZw6FWCFhc2l7VZWyRUzvnDS7cNdByQDuZ3cU0vfqJr2HYNaP7L9WQvR9ABE9zs/V4dUMtJSpqLa3tyxPxJSuj9N/Ch3XXZYLqgAygnaNRpoLMI0t5/kJMMHQfnttnjm8ALUA3qwHDh+R/XbRDVvP44D2aBxw72AJMYE2rSbeA2EYpxeGXxlnczhIcoWv1/mIoACq0tnF9XgFe8uKWHyAE1XhrppMIV/DqKV+/0kEVAtWkH3A55cafUtANOaWZ5idYj0w6gktTpkA7+DWeBRh1A2uX1RoZ1FbQmwgHNnOFVhcwBl7w2jHhoQ8nGeT4FZqvgC6tUA9ifSAcoLoDc4NAjGwM43w9Cu8Ezr42jHtut5BoATYlBICPAvf+iHwNeHUAV3JMuT4YmVeh3a/Y6BZp47ucHOPh7HP6+lOSj7aEAs0N6AOu8bn0SEaD45tfBGAPn+q5ExdgSCUMRn+1pN7gMGpRTHU5JwOApJT8gZSwiYKOVDyLFyvm+TrEjMgzNeyq8/pIyaCqJmce7xGBBmw+VU0aPS3Y0KjzwfsqpGa4QtntXOdXmuPSTkooAKpJs4wQpVbiPxWzbyFHcqwNivOjlcS6QY6Bv9PXWZr+ZnoQDpoC9yvnSgw5AmQnIAOmMQTXIOtNbitsISOa9lxzR12B/7ivn5zGlKkHSnQL05BeDVRz6SQJ9aOQwP6OEfwBlehGkLW4hrwX0nVyWy3ZUu6/kPZ1S6QfK+alLIJLMA2gLHM1rRQbXCGhHqOen3MDHV6JFWVlZWVlZWVlZWVlZBajf9jqihO1R490AAAAASUVORK5CYII={scale="+$scale+"}>"
+!endfunction
+
+IBMEntityColoring(logotwitter)
+!define logotwitter(e_alias, e_label, e_techn) IBMEntity(e_alias, e_label, e_techn, #232F3E, logotwitter, logotwitter)
+!define logotwitter(e_alias, e_label, e_techn, e_descr) IBMEntity(e_alias, e_label, e_techn, e_descr, #232F3E, logotwitter, logotwitter)
+!define logotwitterParticipant(p_alias, p_label, p_techn) IBMParticipant(p_alias, p_label, p_techn, #232F3E, logotwitter, logotwitter)
+!define logotwitterParticipant(p_alias, p_label, p_techn, p_descr) IBMParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, logotwitter, logotwitter)

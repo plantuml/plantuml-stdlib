@@ -1,0 +1,13 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $musicadd [64x64/16z] xS61400000CXXFdRpkElMXu0001m
+
+!function $musicaddIMG($scale=1)
+!return "<img data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAAIGNIUk0AAHomAACAhAAA+gAAAIDoAAB1MAAA6mAAADqYAAAXcJy6UTwAAAAEZ0FNQQAAsY58+1GTAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAAOxAAADsQBlSsOGwAAAehJREFUeNrtmj9Lw0AYxlMTncRBJ0E7uLoI4uLSiujmFxB0KlrQTdDPYAZdFBd3N0fB//Qb6ODoUh0EpUs3pcQnNIVyJGls7t5i8jzwGy5t+uZ+7V3u2loWwzB5TiEDffDS9Gko758ACqAACqAACuA6IH2mgAvKYFLztXgm++xo6vwTmMjrEDj8r53XJaCc9znAM/Ca3AvwNkgBFEABFEAB5uNkoA8FfgIogAIogAJyfBfgbpBDgAIogAIogAIogAIogAIogAJM7AZnQQWsgiL4Bq/gAZwIXKPR+nEChsExqAJbeWwcLIA9gx0XqR8lYARcgeUBfZ8gVj9qDjhKUNxkxOo7EWOuqhx7AwfgMWgvWe1/hkwbGvNi9cMEVJQx9w7mQKPr2AW4Bs9W+z9COiNaP2wIrCjtfaV4J43gMd0RrR8moKi0azHn1wwIEK2veyHUHPC6pqlDQF1pl2LOL/U4t5+I1g8TcKu03WDhYYUsRtwe5/YT0fp2yDF/1t3ukjMG1sEH+AKjYA1cKjNwC2yBz5QCROtH/Yrir7F3/njhp2BX01gWq29HHL8Di2Am4evcg83gXdARsfpRAlrBYsMfZ/Mxdwv/eWdgA/xonM3F6if5IVHdjnZm2xtwDl6Et8PS9RmGyXB+AVuaZ2HsEJ7QAAAAAElFTkSuQmCC{scale="+$scale+"}>"
+!endfunction
+
+IBMEntityColoring(musicadd)
+!define musicadd(e_alias, e_label, e_techn) IBMEntity(e_alias, e_label, e_techn, #232F3E, musicadd, musicadd)
+!define musicadd(e_alias, e_label, e_techn, e_descr) IBMEntity(e_alias, e_label, e_techn, e_descr, #232F3E, musicadd, musicadd)
+!define musicaddParticipant(p_alias, p_label, p_techn) IBMParticipant(p_alias, p_label, p_techn, #232F3E, musicadd, musicadd)
+!define musicaddParticipant(p_alias, p_label, p_techn, p_descr) IBMParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, musicadd, musicadd)

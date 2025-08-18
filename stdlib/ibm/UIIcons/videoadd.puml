@@ -1,0 +1,13 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $videoadd [64x64/16z] xS61400000CXXFdRpkElMXu0001m
+
+!function $videoaddIMG($scale=1)
+!return "<img data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAAIGNIUk0AAHomAACAhAAA+gAAAIDoAAB1MAAA6mAAADqYAAAXcJy6UTwAAAAEZ0FNQQAAsY58+1GTAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAAOxAAADsQBlSsOGwAAAkhJREFUeNrtmjtLA0EUhSdROy2CNj7SiNaKWFkF8hOijYWIoNgJKXwUWmihsRDsguIDCxtjFVsxlZWI1qYzahUCYidsPMNOIA6bZJOdTXZ37gen8CbIzM3Mmbl3lzGCIAiCIAiCIHQkVCM+Ah1CMWjQI2P9gnLQOlRwMwF88i9Qv0d/tCI0qSoJYYtYysOTZ2JsKVX/zCoBMR9sXWVj7LaIDdn0iXZTrjPGeixC25ABJaFsowQEhQh0As1WxY50SQDfIldQVIqP2dkCfqYH2hVHZbhVD/Ar49A1NO3UBP3IEnQM9Upxo9FKaEcCyi6eKtzoTqGExWfv0AL0ENQVUMvoOLfQMlQK8ha4t1jeP9AadK6DB8iTf4LmoTfdTNAQlesO9KviKuwnKkaXU1kLeJW8dJPLQCt2jC4oCUiKuzzf+3vQpVvVoNNz3un3a90TsnIh41Y/QCsoAbonQIUHhJrc863WAnEordoE/bQC0uIYHIUuoBtRDGmTALmbw1tdr8xhg9TvHhAVRdE+M7tBWpogn8Mm9MjMrpA2CTCkv3kr7JmZ3SEtEhAXxVA1vCV2JuqESNATwCvACWZ2f2QSdg2yHcWQm0+WSuI0sGqKVgxSi5sgb4FNMbMr1NT8gnQV5q2wGejAwiC1qQV4S2yrhkFqVQxVDDIjxfOdMMFOwQ1yjv1/PL5qx6E/WHPP3zvBJzTsVjWY88kSd60hssHMF5G8SlGMUQldFrFvZj5m5q/HDUB9Hpk4f03uTtzyCowgCIIgCIIgCMIBf6/6WmThnRi6AAAAAElFTkSuQmCC{scale="+$scale+"}>"
+!endfunction
+
+IBMEntityColoring(videoadd)
+!define videoadd(e_alias, e_label, e_techn) IBMEntity(e_alias, e_label, e_techn, #232F3E, videoadd, videoadd)
+!define videoadd(e_alias, e_label, e_techn, e_descr) IBMEntity(e_alias, e_label, e_techn, e_descr, #232F3E, videoadd, videoadd)
+!define videoaddParticipant(p_alias, p_label, p_techn) IBMParticipant(p_alias, p_label, p_techn, #232F3E, videoadd, videoadd)
+!define videoaddParticipant(p_alias, p_label, p_techn, p_descr) IBMParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, videoadd, videoadd)

@@ -1,0 +1,13 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $SDK [64x64/16z] xS61400000CXXFdRpkElMXu0001m
+
+!function $SDKIMG($scale=1)
+!return "<img data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAAIGNIUk0AAHomAACAhAAA+gAAAIDoAAB1MAAA6mAAADqYAAAXcJy6UTwAAAAEZ0FNQQAAsY58+1GTAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAAOxAAADsQBlSsOGwAAAsZJREFUeNrtmc+LTWEYx9+5MxRllGthZsRGiQWSlZXJj2RByWokC+RXsaCRKZNplNwYIqKw4w+wkChmqxQ2WMnPGWGUn2kM1/dpnlPPfbp3znnPmblzTuf51KeZ5+28b3Oe8/4e5wzDMAzDMAzDMAzDMIx80VCjvA2WYDtsSdhmOeT57/AtvAOvwuchz5cjvgPRDXtEfAtukg801Xj5p7BYp48wAy5mD8BL8BAcSdjufHhExL/gQf1QoUrFUh1fXtPESbgNpyRsqw9OF/EJ+CpKAlalYGiuhacT1F8DN4v4BTxTK+OaVo8xNh7zTgvPNafgXFG+H16Bzzzbp55zXpVRW8PVHi6k4GsPwptwGXwnyhvhjhjt0RBaJGJq+36th9OQgIAhNWkR6zzbmMMzf8BXnlBdFhJA9Kt4nmd9GkbNIj4GP2QpAQMqbvaouxJuE/FjXlJdlhIQF3qPC2KC/Qf3wr95ScAuuFzEtKN8GDVzWWcWb3ICPsGjPjuvauOw1WMvT8vYA9gJ309CAnrhbDXxffEZO2EzcRi0keng80PbJCRgt4oX+k4emk5ek30p8jmi3jSqeI/Ph6iWAOrGS3kHNej5x6ThHDENdiWZA4IkbI3YRnmMc0S9oDV/iegNO7k3vs7DKjDMH+uGKJvKk2EulsFzbvQWiW5+/ojy7XBBHhLQyz9fwutqeHdnLQF6DvkWoc4P8TttiH6LuEMdjVOfAL2KvPGsT/cJl9USeTwrCSjycVZyN0Y7J+FPEW/hZT21CQh2kk9c5ZUYneSuxWjvo6u8Eiu4yqvx0H1AOcHLDHjuG8biovO/DwygC9V9cCbHG+EK+Giie0D/OLVzDx5OUJ8OQ30ibhCrxYQlYIjPEUkY4e67Qa3pcTgLP4t4vRu9NYq0FfYh6XHY919jPu2W1AGNesFqZxiGYRiGYRiGYRiGYeSY//NId1rpjvmtAAAAAElFTkSuQmCC{scale="+$scale+"}>"
+!endfunction
+
+IBMEntityColoring(SDK)
+!define SDK(e_alias, e_label, e_techn) IBMEntity(e_alias, e_label, e_techn, #232F3E, SDK, SDK)
+!define SDK(e_alias, e_label, e_techn, e_descr) IBMEntity(e_alias, e_label, e_techn, e_descr, #232F3E, SDK, SDK)
+!define SDKParticipant(p_alias, p_label, p_techn) IBMParticipant(p_alias, p_label, p_techn, #232F3E, SDK, SDK)
+!define SDKParticipant(p_alias, p_label, p_techn, p_descr) IBMParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, SDK, SDK)

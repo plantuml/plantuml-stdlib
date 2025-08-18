@@ -1,0 +1,13 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $police [64x64/16z] xS61400000CXXFdRpkElMXu0001m
+
+!function $policeIMG($scale=1)
+!return "<img data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAAIGNIUk0AAHomAACAhAAA+gAAAIDoAAB1MAAA6mAAADqYAAAXcJy6UTwAAAAEZ0FNQQAAsY58+1GTAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAAOxAAADsQBlSsOGwAAA/xJREFUeNrtWkloFEEUrUwWEU0OIqKjuQVElKiMGyLx4BbUxKDEhQiKgmdBiBfBi2hCUMSLXtSDenBNUHABEY2iUXNIYg4uh+CCkURiQImaxBn/p39jUXZmuqurpqsn/eAdqqfn//qvf/2upRmLECHCeEaeAX2YBlwHrAQuo2ttwLvE/lwTIEaB2kEvyXD/C06M58BkGAXgnzJyiqSdAU4MJdmRZ8hTloXv7NAhwHrgWeB0iUDuUVtGuC/AvcDbQQvwETjLQypj0H2Khs4nYKmXzhZoEKDIxVNuc5muKMwFopthVeS1szoEeAqs4doXgQfSPGW3SJJt5GHKjuPAnYJv3wKkfA6Th4IAk10G79VvH9kWfXuu1qrxSGhXaPITI9vpfAciQBcVORtYuMo1+CkXiuIA+Q5cAByrrcK1lRr8iDZbZeYBOoqgUx04SfSClIRPZkIGSI3FoHzqEqArAAG6TBIgGYAAUj4LsthB1dPulAojMTbOoVOAX0K7WKHt4gy+jBBgUGjHFdqOZ/BlhABvhXZCoe1EBl9GCNAutGsU2q7J4MsIAW4K7U3AMgV2y8hWOl9GCPAY2CNsVjQpsNskbHz0kC/jBMCJSYND6tb7sFnvkP4NfiZeuucB54EdwrVjkiLU0395dJAPYydCI8DdwCHBZyOw2WVNKKN7G4X+DpHtET8dzMZUuBNYB7wGzBeGwwZgCxUx3Nfvpd9mAJcCq+m+QsHmH7LZ6bdz2VoLYJC1wEvAidz1Qrpe68HWTwq+JWxrAUzjFcBuHza6yUazqk7lO1zDLewJXPsEcFiRP0xxPDX6CpzvYX3wGXgIuI9Zhx/KUDCGs9lcey6zDjJUAcU8BTwNXE1jfDFwHjfWR+hpv6RUv++32HkRoF0QoE6xAPwb4g7RqOWwWFww7Rbk6n6AUw14B9zB/u254z1VwAfMOoHNeQFwWvkBuJ27VgLcw6zzuG+0/h7OBQHS7dPhHPugQX39ThmID+cJDdUOnQJgfThqmAgiXtPr8brKIWAjRa8fnG4uYvLf9ejEVOBW4FqqUYMqBeBVPgN8BfxNU9kiYbIUNErpdY3rifeqhoBpKKFAE/SWWuWwSMLCvIb9fzjrKwNMAWZfPw3JUeAWh3kMxrMReNXtcAiTADa2Meuzm7FWspOY9f3QOdNWg7qCH3VYHS4Hbg5qPyClqc6MFTx+JHWFWd8HVnK/HQHeyJUMSBf8ZRJ9P7N2imzMAS7MBQEyBW/jjcNCrjrsArgN3oZ4QFIRZgG8Bo94JrRnhlUAmeARvUI7HkYBZINH/BDaxWETwE/wUoiN5+BNE6Aq28GbJsAuLtisBK9rKiwL+7wPg7+VjeAjRIgQ4S9CuetMfDFHegAAAABJRU5ErkJggg=={scale="+$scale+"}>"
+!endfunction
+
+IBMEntityColoring(police)
+!define police(e_alias, e_label, e_techn) IBMEntity(e_alias, e_label, e_techn, #232F3E, police, police)
+!define police(e_alias, e_label, e_techn, e_descr) IBMEntity(e_alias, e_label, e_techn, e_descr, #232F3E, police, police)
+!define policeParticipant(p_alias, p_label, p_techn) IBMParticipant(p_alias, p_label, p_techn, #232F3E, police, police)
+!define policeParticipant(p_alias, p_label, p_techn, p_descr) IBMParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, police, police)

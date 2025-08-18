@@ -1,0 +1,13 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $ibmzosaicontrolinterface [64x64/16z] xS61400000CXXFdRpkElMXu0001m
+
+!function $ibmzosaicontrolinterfaceIMG($scale=1)
+!return "<img data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAAIGNIUk0AAHomAACAhAAA+gAAAIDoAAB1MAAA6mAAADqYAAAXcJy6UTwAAAAEZ0FNQQAAsY58+1GTAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAAOxAAADsQBlSsOGwAAAeZJREFUeNrtWTtOw0AQXTu0VNAQBSlH4AahQqKm4NfDDZA4ArkBdCkCSg0SLbkBh7CSKg09MrNiIqGV/2b/70lPcqwo9ryd2Xk7ScT/I1c+J8JhpCJyQIDYBdgpuT8gzoivxIXmd8g1//6a+EG8I2ZNBJDBz4nnxAu+t/B4kQ+Il8QT4pEqQlEJzDh4VQzfsUecNtkDZNp/l2SE75g0KYFtus85+L8i6CiHxOAeM2zaBWSQ1wFnQm0X6JMJiU8C1PmAskwYx2SEVBHuiQ8xlEBROYxDCr6NAGU1P+LeesyGwyQqHZ4OAYqC/2SD4ZzDM3EYmloMvtbhmRBg4rLDM1ECQ8v9v9LhYR7QIgOansfbrvAp8Ymvb4jvvhqhrnjkTjHiaxGbAMFY4a645d6c8bWze4Cu3VvW/GHMGRDcWUDFSum/ucU4VjYyYOnQQi5tCCBPYRsHgt/wuxgXIONT2AsfTU1jzc/ufBLsuwdsRbiCDwisC3j1/z4ywKIPEAIzQcwEMRN0BJgJogtY6gJVwExQYCYYtxP0ZiaoC5gJht4FMBN0aCExE7QhAGaCAjNBGCEIAAEgQHhO0CWHp90xpo47PO2OMXXY4RlxjIOCL34Rn8Xv3H2fuOt54NIxvhHP+jhGAADCxA9gcGu4sOTMcAAAAABJRU5ErkJggg=={scale="+$scale+"}>"
+!endfunction
+
+IBMEntityColoring(ibmzosaicontrolinterface)
+!define ibmzosaicontrolinterface(e_alias, e_label, e_techn) IBMEntity(e_alias, e_label, e_techn, #232F3E, ibmzosaicontrolinterface, ibmzosaicontrolinterface)
+!define ibmzosaicontrolinterface(e_alias, e_label, e_techn, e_descr) IBMEntity(e_alias, e_label, e_techn, e_descr, #232F3E, ibmzosaicontrolinterface, ibmzosaicontrolinterface)
+!define ibmzosaicontrolinterfaceParticipant(p_alias, p_label, p_techn) IBMParticipant(p_alias, p_label, p_techn, #232F3E, ibmzosaicontrolinterface, ibmzosaicontrolinterface)
+!define ibmzosaicontrolinterfaceParticipant(p_alias, p_label, p_techn, p_descr) IBMParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, ibmzosaicontrolinterface, ibmzosaicontrolinterface)

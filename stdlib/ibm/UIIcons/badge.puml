@@ -1,0 +1,13 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $badge [64x64/16z] xS61400000CXXFdRpkElMXu0001m
+
+!function $badgeIMG($scale=1)
+!return "<img data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAAIGNIUk0AAHomAACAhAAA+gAAAIDoAAB1MAAA6mAAADqYAAAXcJy6UTwAAAAEZ0FNQQAAsY58+1GTAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAAOxAAADsQBlSsOGwAABFpJREFUeNrtm2doFEEUx0fvxE5sESzEgiSKEiyIqASjUUEhoGKioB8UJIJRv6mfJIKCWFBiQxERRcESCyhijzURJViCxI4hNjTY2xeJ/8e9I8O4F292d3bvLvvgR27ndvZ2/vP2zcybjRCBBRZYc7YWBq/dE0wHw0A2GAg68ndfwCNwF+wHlZrXzgUhcMnpTYYNCDobFIFxTQicBkYxR238Tgloz/UbEkWAyWAdGKpR5zeosNH7ufx5BjjmtwCtwGZQbKNuBYug2/tRWwNOgj9+CdADnGBXjNXAy+AKeA5+gvdgAMgE9Q56X3BcmQf2+CFAZ3AeDFHKqTeOg7Uc5KzsGSMc9L5cdtCGJzkaBdqBi2C0Uv4KzAVXHQhL3tQfZIA+/DdKWow65Fm1FrwAt0x4wHqLxpOrF4CPDh+rbmA3R3mdDhnERO0HmPW/iiEbN5gDtiveQypPAV9dCKpPWcxp3DA7Vs/3U+62AC3BWZAulVFwG+9S4+VH6RTIB50065Lr54F78TZIx/I58spW7ILbWxnNFMeAao061VznkU6P6thS5fgIOGdwOv2GJ1g6k7E3ui4dr/VlV5dtowfrlW6GztUWIFcJfDXgjgcCZBk6V3sYzFGOD3u0Ys20mGht5c9LlECeaVKAYcrxAx8EqAIL+S/ZAbALjPBCgK7K8WMPBfgGVoJtysKnimeOi8Fq0wJ0sYjQXlgN5xjqYnxPgpTy+qPEpABhi+nnZw8EWBDneXUa59oaBd4pxx1ECpgTAQY0NwFqLOYFXlkOT8LauH1hnRhAGdj50nGehwKU8jD8S0QyyMulodAzD6AlqpyBHW6REzBh2dIcpC173ls/HoG3nAWSbYUHAixTjm+4OQTrrgY3WSyPJxlsPD33c5SybX4FQcFL3wdK/X2gu4HGUyJkp7IAuw/K/BSAYkCRMh3twTfV0cX7oknWaWVq28CPQ4ObAtjJCb4WkYTlWKmMsrcTRWSP4KfDe+rC09pxSvkWsMNtNwvZrHddRFJP/aSyXqBQRJKaT21elxp9Qfy7vXabY8GfRBEguvkxAfRWnlu6UdosqWVvicdGcA+vFf8mQSm5Samu7yairNPtcdodaiohSsnJQxw4n4CXojGjnMU9PkHE3loTHGA/mBpmnO4NfvrP95RBXuXwN4w13s4okHJmQgB6K6TcRr1rYKbXAoQNXPMkQ6PCVB4taD5PKesMKXlB21e0kXETnBGR3SCRCgLI84XdTLN6BJp9DAgECAQIBAgESBoLe/hbIdGY3tpgYmWXyAIMBnvBSD6mNzwpw/ww1QWI9jotiFpL5SREFZf76g1hD3tdtda8/vfVG8Ie9nosU70h6QWojNHrtK5fxJ8pt5cewxuSXgCrxtP/BBRLyQ16lZZetiyIo25SB8For5dZlBfy+l/1hpQRQO11KytrwhuSVoBYvd7U+b55Q9iHXk8obwj71OsJ6Q127YihG03nawcWWGCBGbO/k9na/jg9aAwAAAAASUVORK5CYII={scale="+$scale+"}>"
+!endfunction
+
+IBMEntityColoring(badge)
+!define badge(e_alias, e_label, e_techn) IBMEntity(e_alias, e_label, e_techn, #232F3E, badge, badge)
+!define badge(e_alias, e_label, e_techn, e_descr) IBMEntity(e_alias, e_label, e_techn, e_descr, #232F3E, badge, badge)
+!define badgeParticipant(p_alias, p_label, p_techn) IBMParticipant(p_alias, p_label, p_techn, #232F3E, badge, badge)
+!define badgeParticipant(p_alias, p_label, p_techn, p_descr) IBMParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, badge, badge)

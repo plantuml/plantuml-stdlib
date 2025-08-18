@@ -1,0 +1,13 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $documentattachment [64x64/16z] xS61400000CXXFdRpkElMXu0001m
+
+!function $documentattachmentIMG($scale=1)
+!return "<img data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAAIGNIUk0AAHomAACAhAAA+gAAAIDoAAB1MAAA6mAAADqYAAAXcJy6UTwAAAAEZ0FNQQAAsY58+1GTAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAAOxAAADsQBlSsOGwAAAjdJREFUeNrtm71KA0EUhWfV2GmjhQZLQYKWimBlZyeClaCFEH0D/x5BfQALCxuxsTAGLexS+YMWdmnSKWqTRktFPZedwLJEZzeZLLPJOfBBZjN7kzm5M9nZmyhFUVQny7MYqwesgmWQ08fK4Bgcga92NmAIFMHUH8/fg3nwlkYDfgznZMA1mDTEeQAz4NMlA7osxMhHGLzSffKuZUCPhRgrofYVWNOPD8FcqO9BxExrVK+gBDbBcxIZMB5qy+CfNGuGvq3QMFgCj2AkCQP6Q+2nPx7X69tKDYDdJAxwWbNJrAGufSUH15Jsp2eAogE0gAbQABpAA9JxHdDoXsBjBtAAGtAWa4DHDKABNMBJAz5C7b4Y8fsMsVJhwEuoPREj/oQhViq+BeR+/ligLZWfm4ir93KdWLauABO7EiyE2s3UAQppnALnoBJo9yq/DDZpGHxR962pomOlbgpIKWsDnAWOyb13KYdJ0VOKn2V9PKfTXoqkmVCcDeVYWSzOlaCk7p7yqy01yQDXNSbt/ZP+nutToKYdFaHQUEe7+tzU7wW+wTa4Bftg1NC/otO+oBxWI5shGdAlWFB+zX9a+b8PEEn9/04vgAUX57yt3aAM7FTDvQDvBzQmW78H4D1BGkAD3FgDfmLOTY8ZQANoAA2gATSABtAAGkADaEBb7AWk7JVtwX6/2feUWAaUHPyAS0kasAWqDg2+qt/Tv+q2+ILv4ET5VaNBFa+MblPyl5kLsKgi/GWGoqjO1i/fFFWwEZgOXwAAAABJRU5ErkJggg=={scale="+$scale+"}>"
+!endfunction
+
+IBMEntityColoring(documentattachment)
+!define documentattachment(e_alias, e_label, e_techn) IBMEntity(e_alias, e_label, e_techn, #232F3E, documentattachment, documentattachment)
+!define documentattachment(e_alias, e_label, e_techn, e_descr) IBMEntity(e_alias, e_label, e_techn, e_descr, #232F3E, documentattachment, documentattachment)
+!define documentattachmentParticipant(p_alias, p_label, p_techn) IBMParticipant(p_alias, p_label, p_techn, #232F3E, documentattachment, documentattachment)
+!define documentattachmentParticipant(p_alias, p_label, p_techn, p_descr) IBMParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, documentattachment, documentattachment)

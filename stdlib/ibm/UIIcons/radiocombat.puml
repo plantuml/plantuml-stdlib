@@ -1,0 +1,13 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $radiocombat [64x64/16z] xS61400000CXXFdRpkElMXu0001m
+
+!function $radiocombatIMG($scale=1)
+!return "<img data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAAIGNIUk0AAHomAACAhAAA+gAAAIDoAAB1MAAA6mAAADqYAAAXcJy6UTwAAAAEZ0FNQQAAsY58+1GTAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAAOxAAADsQBlSsOGwAAArtJREFUeNrtWr1OG0EQXgeSjgYoiGVSIyjgDTAiOAotFWlxAQIKKOAZoHCaRKRI2vACUaQ4iXx+AxrnAYiF3ZiCEoSOb+SxtFrO98Pd4du9/aRP8np3Vpq52bmZuRXCwsLCwsLCIq8ohFjjPkEmLkrgKVgGX8fcqwM64BHYVifHM/hQSPkLcCqh/ciAm2AFXFKN8CKDBjhJUHkZU7y3yLoBys+5dxaPQDEg5kSNSa7P3pn0gGdFGh4wD1bBd+AsOJEXA7wEa+AOOJY3DyDlf4JvdTsCScWAmo7KJ+UBC+z2MtqceTXAbsT9XN0MsKWceVJ+EbzOiwdUlPFRTOWvlPe1m6DHXKURA94o42bM/ZwUH7iThgEmgqwcEcdgLwXle7x35jPBNldt51zKxkWH91rSpRweGOGDTnmAtrAGyLsBhtXSSfbkRg3fnmBhiPJJ9uSygp4I2RM8MVB5ISL0BMsGH/lymDygGDJO6ALbE7SvQWuAdPsB1BGqcl9gUBpfgnXwK9gy1QDUCP0IbovHXeB55j74BTwA70wywCvR7wKvBqwjw+yCc+A6eGtKDKiFUF7GKssY4QEL7PYy/ot+t6XB4xWuJUrSGpI584kJSXWDC2l7QFU87gIPOjhdJv1eVPLuMZbV/gisKeNhXeBrnvOT1dIAUbrAzQBZI/IAMYqzO0oPuFTGyz5rlwNktTwCv5UxRftJj3WTPCejboIBKL29l8aDDhLdxJphbvJ/8muQZL6ZEANanN7uSv/RTZDvAXJnAXWBNnkA4RD8G2H9H5YxphymnP49+Fk5Dipo7hPXAUYVQ4IV2mPXlsthl1PjXxwv/pneD2hxuZubPMAoWAPk3QBeMSDqHR2dEOqOkGPwA3fCGCCtOzqjhucdIa87vTec1tJn8WmR8cvOIUCfx3+AG8Lj87iFhUW+8QB4/nzETi9OIQAAAABJRU5ErkJggg=={scale="+$scale+"}>"
+!endfunction
+
+IBMEntityColoring(radiocombat)
+!define radiocombat(e_alias, e_label, e_techn) IBMEntity(e_alias, e_label, e_techn, #232F3E, radiocombat, radiocombat)
+!define radiocombat(e_alias, e_label, e_techn, e_descr) IBMEntity(e_alias, e_label, e_techn, e_descr, #232F3E, radiocombat, radiocombat)
+!define radiocombatParticipant(p_alias, p_label, p_techn) IBMParticipant(p_alias, p_label, p_techn, #232F3E, radiocombat, radiocombat)
+!define radiocombatParticipant(p_alias, p_label, p_techn, p_descr) IBMParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, radiocombat, radiocombat)

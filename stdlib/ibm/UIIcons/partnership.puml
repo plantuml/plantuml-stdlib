@@ -1,0 +1,13 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $partnership [64x64/16z] xS61400000CXXFdRpkElMXu0001m
+
+!function $partnershipIMG($scale=1)
+!return "<img data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAAIGNIUk0AAHomAACAhAAA+gAAAIDoAAB1MAAA6mAAADqYAAAXcJy6UTwAAAAEZ0FNQQAAsY58+1GTAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAAOxAAADsQBlSsOGwAAA91JREFUeNrtW0tIVUEYHp8gZAttUVYuXPQyUAhatEgKKkRatYjsAUGpWJtSDFokuqvMCNTMimhTLWplJfYg7rptBbXU1KBSqGiRV+wb7n9hGI7n/PecmaOeOx980LzOP/M1M//MP1chHPIbBSHa1IJnwINgNeVNgK/Ae+BHy302aj8XAUrAm2AbWLREnQVwGLwAzhseuBX7RUzjpeAYeBQs9Kkny3aDe8An1CETsGafK8AtMs5FDVgBvjQkgDX7xcw116blTYKXwHeU3gdeBTcrdWSb2wb2BKv2OTPgMk2pLL6C9eB78A/xA/gQPA6uVabjP3A8ogBW7RcyOnBAS3eBsx71ZqnMr20YWLXPEaBaS6d86qYC2oaBVfuFIs/BEWBCSzf41G0IaBsGVu1zBHitpa+Ri9FRQWV+bcPAqn2OF5C7bqsiltxlm8Fv4A9wDXgYfKa5IXkIaQG/RxTAqn3uUXgAPJdjxwfB84aWqjX73JPgG/LFNcz6b8FTBo/C1uxzBZAfekzrbJfP3rFAp6+Thi9D1uzn/XXYwUWE/O/greRydpK7CYuLFMzIBTKo0R/BZvaS9Ai8Qxcj9ia4ka6ap8FNJEYUyCDFffAvs/468ClYFjGIIvveSOeE5+BvjgClNPh6gzOtjGYQN0ByHdxr0P56cD/4QHeNXu6kxfDg1e/WMnf5Fgv2672+6xUROqGlZSzuLDiVo8ESWoNbFFtyTR8KaNev9esL7UG5nivkMr5LS0Ad20DQDNihpVtDDF5Qhzu1POm7m3zaNFEdFZ0hD1VT1He/sXkKUK6lJyNMu1GPG1kfzQ6vGdPncZsbjWB/MmBssQREpDtLK+ltYLtHvXYqyyJNbZc9IBIV8mg6ouVdASuVdCXlqRiJ41gbV0hMDm5OC150K+luLcgx5yHIqhbgJ9ir5cm4/XaiHvfvpTbWUSziwyANdKuy6d1Q/p3FZ6orkjQDsm6xQ8tr1Py0oDrzSRRA4oXwf6kZpzoiqQJkb4Zpj/w0lYmkC/BJZN7wdQxTWeIFyLo99X1vVnOLiRdADrhHSfcI7wfPZXGD02CVkl7UygsM2R5S/P+QwTEt+pRNcwSQL6zHYhA/rbjFdEz/4SmOAF10Z6+IoUNjMS+7Ls4eIN/i6kTmIWJGrH7M0FjqaGyso7Cs2MxYU5w1WGB4Tef6vaqV6AVWDJwATgAngBPACeAEcAI4AZwATgAnQH6C8zASFCEKahsVVu1zZkAqQudTBgSwap8jwFJ/oREEzwhMCFi1z/mp7C+R+anZBpH59VZ5QH0ZgZG/yDoiPCIwIbDc9h0cHBKM/1Qn79APlwXqAAAAAElFTkSuQmCC{scale="+$scale+"}>"
+!endfunction
+
+IBMEntityColoring(partnership)
+!define partnership(e_alias, e_label, e_techn) IBMEntity(e_alias, e_label, e_techn, #232F3E, partnership, partnership)
+!define partnership(e_alias, e_label, e_techn, e_descr) IBMEntity(e_alias, e_label, e_techn, e_descr, #232F3E, partnership, partnership)
+!define partnershipParticipant(p_alias, p_label, p_techn) IBMParticipant(p_alias, p_label, p_techn, #232F3E, partnership, partnership)
+!define partnershipParticipant(p_alias, p_label, p_techn, p_descr) IBMParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, partnership, partnership)

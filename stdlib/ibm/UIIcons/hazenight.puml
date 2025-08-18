@@ -1,0 +1,13 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $hazenight [64x64/16z] xS61400000CXXFdRpkElMXu0001m
+
+!function $hazenightIMG($scale=1)
+!return "<img data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAAIGNIUk0AAHomAACAhAAA+gAAAIDoAAB1MAAA6mAAADqYAAAXcJy6UTwAAAAEZ0FNQQAAsY58+1GTAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAAOxAAADsQBlSsOGwAABBhJREFUeNrtWllsTkEUnvYvtYRWiSWo2mkRkXhAanuhmvDSEg+1BUUkItYQS0Q8CImEkCK2SGMJLyW24kVEaUWiidaWVkjVC7G31nNyzx/XMff/73/vnbrbl3wPZ+b+898598yZM2eOECFChAgRIrhIUjj2KGA+cAxwLLABOAd4z88K6AZcQhPtJ+m/QwpxDVIcGqcncCuwCJga47lUty0BuwpoBdwAXAtsZ+L5W35SwHDgCeBIg/4myRe/4hcFzAQeAbaX9DUC9wMvAKuYQm76QQHrgTskDvQt9R2nyU5l/RXAz15XwBZydhyXgIuAr9gS0eOJG+OARBSwXDL5Zmo/JHk+i8l1XlZAHnAPa/sKLABeNPhNul8U0IO8fUTXhmt5BrA8xu/SJc7RdUg28cxRYBed/JO+fHmc3/EdIuJFBeBEp7C23eT04uELk1t7TQFtgLtY213gRpNjf/S6AuYC++jk73TI+WZy7A9MzvCSArB9NWsrBdYmMPZzJud4SQGTgAN08g/g9gTHrmHyMC8poIjJpy1EcjVesIAUA6VMZ22nLIxdLdRmnJRZAKayOrHt7LrwKWQKGM/kG248xalUQI5EAb6FzAdkO3yIwUjyMLCX4rm8BC4UCWadZBbQnckvbL5YSQtMXtB/lDixBDIcVoDnfADP7r63+R/FZJ6iBZZAsRM+oJm1p1HywypwTfb2kgU0MTktaEugIegK4E6vf9DiADzy6nP6uRbPAv87TjAVF8gsoILJuYo/gqo4wVRcIFPAbUlonBEkH1APfMiema3wHVTFCabiAqPz+jbgJp38GDgE+CsIFoA4JrT8fxSDgNOCsgQQmNDkuf91wgMZnkQR67YG44EFOhlT5K+BlX6PA6LAcha8+MzXte0ky6h3YT7AUlwQ72psFTsIdRBaZUgi93wlLpi8YVwQTwG1tCPoMZmcZLLffUAUWNuHidIsXdsIYFdhXBugxyPgRGBHFyyBxcBnZuIADpxslcSUDwBXCPP3hU4AzylnaDlGgVt2IfC8CgtAfAJeA84Sf2eMRtMLYd+7Ftiy15BDbcv6VtKyFKoUgHgjtDK3AvYCWCU6j7bNakWTx0DsrNAKsbjv2Uy7kyVYCWyyaSvMlPQ9oBcqc2jiWJ6DpXdLhVaVqgde2C4DHrTzB0k2XqyUnJsMlbRdllk46KBV4u001idgQaassKKRrO6yXQ3bCW0j9HXw0BSrCBqVcVVot8UYQNWJP1mnzkK7h8Sr+MG020ygdiOg9c0XDhVdORHbDwTuFf/WEjmNp6Twc04O6uThZpzQ6ofyHJ44xhH7yPs3O61VFae7vmSihZRDsIJGMvWTQvHVvOrjbSY5NCypH0rLJU23xjEF30QTvk9fGyvRKkSIECFChAihHL8BM6G3B0+L4jsAAAAASUVORK5CYII={scale="+$scale+"}>"
+!endfunction
+
+IBMEntityColoring(hazenight)
+!define hazenight(e_alias, e_label, e_techn) IBMEntity(e_alias, e_label, e_techn, #232F3E, hazenight, hazenight)
+!define hazenight(e_alias, e_label, e_techn, e_descr) IBMEntity(e_alias, e_label, e_techn, e_descr, #232F3E, hazenight, hazenight)
+!define hazenightParticipant(p_alias, p_label, p_techn) IBMParticipant(p_alias, p_label, p_techn, #232F3E, hazenight, hazenight)
+!define hazenightParticipant(p_alias, p_label, p_techn, p_descr) IBMParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, hazenight, hazenight)

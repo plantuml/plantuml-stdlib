@@ -1,0 +1,13 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $emergencyexit [64x64/16z] xS61400000CXXFdRpkElMXu0001m
+
+!function $emergencyexitIMG($scale=1)
+!return "<img data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAAIGNIUk0AAHomAACAhAAA+gAAAIDoAAB1MAAA6mAAADqYAAAXcJy6UTwAAAAEZ0FNQQAAsY58+1GTAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAAOxAAADsQBlSsOGwAAAwpJREFUeNrtmz1oFEEUx8fLgQjKpbGxUks9goVgKVEsgpBG08gpRBBEEDSIQS8fJl4aAzkCFhFEC2MKQVsLSaJYGRs/omhhrBRFwQS/BT3/j/2vLEeylzN7uzM78+BX3Ozbu3n/zMd7sxulLLdVMf/eQXA44ZivgGv+h0zMP34AtCQYfAv78M+yCXRiBrQlJMDt6oaM7WuAE8AJ4ARwAjgBnABOAHstq2GfNoMC2MrPz8A4mEuDALVS4B7Qx5E5y7Z9bB8EpTSPAAnyPLgKToIFtudAmddU1CJkNRr2vQy+ulxeCLSJz0SU00GXRbDAvnSF+HTRp5DGXSAPnoP5EJ95+uTdNphCAWTF3wKaQ3ya6TObRgFkn/8DRkJ8RugznkYB5rjNdSrv0DIXuJZjWyd9Ik2IdMoD/P1dEqFDgaGe51++N+2JkC/CRFUqfMukVFgyuPY67/kAHjMJestAB00shobAWfAAfA/x2xZY7Z9yjrfz3iMcAcZVg37wJc7VpUzm905wD5wAj9i+AYwp74nNOnApLgGaYgy+RAGGlfeI7F3g2mdwA2wERfCJI6kRKbfY9ahGQD3BF2v4/WbR8xOMgtUUS9spEGXwvsl2dxT8AhcoQklHAXY3IHjfKuA4R4IkPnvBj2Xc1xqnAJMUYSri4IN2Crz5j201tikwVeN0ZyXB+1YmRlWDHRy6wysM3shyWPbwi8p7Dt9t43nAfrCeKXHFRgG2g1fgpa0nQhVl2DFb1J19CDYp7+jKSgFugvdMZTM2CvAFHGOSNGqCAE0N+M4X4BsTobXgjkbxRl4NLmWSBK0BA1wYT+s6Ahp5JijHWvIq7jmK0G2TALtYKwxQhH6WumdsWAOkALoM7oPX4C4X2yLr+8k0rwF+CTxUVS32cyRIcfRRhT8BMnYbDAbfs8j1Po6KPWnMA2oF79vXNCZCyw3emG1wuo77Za/fYWrwUSyC8gRIXl0pK0NtMQFalUXmXpFxAjgBnABOACeAxZbVuG/TDfhO+dfZmSQFaEtY1Ccq5neQtLe/MCCgKrjfOMQAAAAASUVORK5CYII={scale="+$scale+"}>"
+!endfunction
+
+IBMEntityColoring(emergencyexit)
+!define emergencyexit(e_alias, e_label, e_techn) IBMEntity(e_alias, e_label, e_techn, #232F3E, emergencyexit, emergencyexit)
+!define emergencyexit(e_alias, e_label, e_techn, e_descr) IBMEntity(e_alias, e_label, e_techn, e_descr, #232F3E, emergencyexit, emergencyexit)
+!define emergencyexitParticipant(p_alias, p_label, p_techn) IBMParticipant(p_alias, p_label, p_techn, #232F3E, emergencyexit, emergencyexit)
+!define emergencyexitParticipant(p_alias, p_label, p_techn, p_descr) IBMParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, emergencyexit, emergencyexit)

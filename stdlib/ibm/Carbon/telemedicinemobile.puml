@@ -1,0 +1,13 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $telemedicinemobile [64x64/16z] xS61400000CXXFdRpkElMXu0001m
+
+!function $telemedicinemobileIMG($scale=1)
+!return "<img data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAAIGNIUk0AAHomAACAhAAA+gAAAIDoAAB1MAAA6mAAADqYAAAXcJy6UTwAAAAEZ0FNQQAAsY58+1GTAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAAOxAAADsQBlSsOGwAAAj1JREFUeNrtmjFIA0EQRdeYQtNZGhRUsFA0KURbW22sJIVgBAtTi6WW2tmbWAgaDCL2SSPWRiwMYjq1kICVXbDTv2QDR7iT20suO+fOwANPNJP5mf07txchLI+BjutNsE3sPZ6BYlgvHuu43gApQsWn1HsKLeIuv6uCVSIClMNOELPdA1gA2wWIG86fAFmwCKY8TFDGXRc5XsEDuABNSgKkwQ2YBM/gy+Vvaj3IswC2wB5YB08UBEio4r/BPKiHnG8GXKucaWcnmPIA2fYTINOH4oXKkVE5sxQ6YAm8aBbvNqXqTIl1lVPmzpvugFHQ0Pyfzik1yJTYULnJ7AK64ZxSKzwHsAAsQOQnQb9u3za9qstuctfNGQLFDvA6k5BTYclxfekxKWrtDlR3AT9nEkWPT7nCHhBxD/C7tnW8IlIdUPK5tv16ReQ6wGttlwN6BXsAC8ACRG8X8LM7aLn9fxBAOvtQULdXkQSPURWgKLp7RijPBWfBiY0e0D4UfRet43HyHbAL1nr0WiNgDryJ1rF4k7oAh2Af3INpx3oPGnLN5wXBByN/FX8EDtSd3Y8I8Wl1jHDxVg1CRoqnIoCx4ikIYLR40ya4DFZMFm+6A4ZNF2+yA67ALTi29W7wnM8DWAAWgAVgAQiE2y7g9VTGRPTk3I87QLMD+NvibIIsgN0e0G1I/zhVP+/0Yx1T64ACGFMUeAlYKEAOfChyNnqAXPPjvAuwACwA3w1G4W5w0KUjkoQ+oE/ReqpbExzhxC+OY2yBchyTWwAAAABJRU5ErkJggg=={scale="+$scale+"}>"
+!endfunction
+
+IBMEntityColoring(telemedicinemobile)
+!define telemedicinemobile(e_alias, e_label, e_techn) IBMEntity(e_alias, e_label, e_techn, #232F3E, telemedicinemobile, telemedicinemobile)
+!define telemedicinemobile(e_alias, e_label, e_techn, e_descr) IBMEntity(e_alias, e_label, e_techn, e_descr, #232F3E, telemedicinemobile, telemedicinemobile)
+!define telemedicinemobileParticipant(p_alias, p_label, p_techn) IBMParticipant(p_alias, p_label, p_techn, #232F3E, telemedicinemobile, telemedicinemobile)
+!define telemedicinemobileParticipant(p_alias, p_label, p_techn, p_descr) IBMParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, telemedicinemobile, telemedicinemobile)

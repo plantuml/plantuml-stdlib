@@ -1,0 +1,13 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $noimage [64x64/16z] xS61400000CXXFdRpkElMXu0001m
+
+!function $noimageIMG($scale=1)
+!return "<img data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAAIGNIUk0AAHomAACAhAAA+gAAAIDoAAB1MAAA6mAAADqYAAAXcJy6UTwAAAAEZ0FNQQAAsY58+1GTAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAAOxAAADsQBlSsOGwAAArhJREFUeNrtmz9LHEEYxufU+lTEIomdhY3FVXqlghAipBQ5zKdIoZ3uiY0W+g2sbARJEIsQEBKstBP8AoKagCD+qYXzHe5dGJbd2dn5474zuw88HLM7t/B7buad2ds7xmrVqlUrbC2DD8CDaScHKwLfAk+Bf4J7VQkghh/C9jR4EvxD7DRQEXiuV/BJsmND8YIT4B3wHPhDyXANTfhv4MNk5yFF+EvwmMeffCq86hTY9hieyeBVA5jzGJ7J4FWnwEfNukEBPle+rwJG8L4HkFXwKhGArNoHH0DhpS6kAKzC+xaAdXifAnAC70sAzuB9CMApPPUAnMNTDuBd4FXvBYroE949LmD7FLwGvqMIbzuAWfAv8KhwbAW8CP4CvqAGb3MKcPjfCfhYo3hulhq8rQBi+GFJn2HsM0MJ3kYAWfCbaFGP4HtK8KY1QAa/IbTXwdfgeXwlA28SQBZ8FxwJbR7EE+s/kCAHrxuAKnysPWrD3rQGFIFnlOF1A7ANz7VVBryNjZANeK7vOLLOM94bP5kSd5ir4Nsyl8HIEjxXEwNop5zjx67AHfA4uoPH2mUFEOGnbzLnjxRCaOOxkZTrjkhCcxqADXhe8JZSRpAYQgzflFy/aRrCgOa8t1Xtu5IQ0uCjnNBKvx3WWeq6ApwIlTfyopQQPlP4QkRnnc9bTZLwspFT6ggw2eRwqBvwrrDXeMYlcj+jfy8RTLPMAGzs8PZxdWhhm/8w40XSf7NgXXIWgM3tLQc+K9DfKIQGMXgTrWeE0HBZBCnd2CS/h3C+CpC6q0tMB+cBUIR/t51gMPA6AQQFXzSA4OCLBBAkvOo+wPinaCXqH+s/r9QeAT7Dc/01mQK+wz+w/pNprSngM/x/8B+Ev9UJINiCpzoFvlYFnivtP0PHrP8Ho+nQ4fOCOcDpUKtWrVrB6g0CTeHt8aDLlAAAAABJRU5ErkJggg=={scale="+$scale+"}>"
+!endfunction
+
+IBMEntityColoring(noimage)
+!define noimage(e_alias, e_label, e_techn) IBMEntity(e_alias, e_label, e_techn, #232F3E, noimage, noimage)
+!define noimage(e_alias, e_label, e_techn, e_descr) IBMEntity(e_alias, e_label, e_techn, e_descr, #232F3E, noimage, noimage)
+!define noimageParticipant(p_alias, p_label, p_techn) IBMParticipant(p_alias, p_label, p_techn, #232F3E, noimage, noimage)
+!define noimageParticipant(p_alias, p_label, p_techn, p_descr) IBMParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, noimage, noimage)

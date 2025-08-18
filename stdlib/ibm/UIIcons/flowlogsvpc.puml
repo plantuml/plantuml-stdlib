@@ -1,0 +1,13 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $flowlogsvpc [64x64/16z] xS61400000CXXFdRpkElMXu0001m
+
+!function $flowlogsvpcIMG($scale=1)
+!return "<img data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAAIGNIUk0AAHomAACAhAAA+gAAAIDoAAB1MAAA6mAAADqYAAAXcJy6UTwAAAAEZ0FNQQAAsY58+1GTAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAAOxAAADsQBlSsOGwAAAu5JREFUeNrtmj1oFEEUx+dOE1QkhZVF4gchKoqgqJWIGBCx0FYSrfxsDBqSGLWyExVBExsRBUESbCxsTIj4UVhZqGARQUViEAtNJSQhZ87/Y19gMqxk5i67+2Zv/vCDm5tl7/5vZ9++mVmlgoKCgoKCgmpVBYtjyin8hos2gzOgFTSDEhgDz8B9MOpysqUeXax6cB10gKLRt4U5D/rBBQ5MbgJQB56CAxZ+OsEmcNgmCEVPAnDNwryug+BqUiOgkHDOMLWRh72u76AXvOT2Pg5Sk3bMOXAXfPZ9BJwwLtQ42AYGwU9mkL8bN26b4xJywGKPCEpwEzHfT3DfgPbdfnA5DzlA12uHvjV5SYKJyccA7HXoG5OQA6qtBG+Abq1NxdBwTB5YxX26RvIwAu6Bv1q7EbwHbWA1Q58/cN+cZsCDJEZAOeUAbI/5zSYj28fp9kI1gA8j4Ah4VMGFoonRJd/nAnHmSwv871JeJkP/M38MvAFntelwXTXT4YJn5h9Le0R5bV5aAFI3LykAmZiXEoDMzEsIQKbmsw5A5uazDIAI81kFQIz5LAIgynzaARBnPs0AiDSfVgDEmk8jAKLNJx2ASs2X0/RcrNUrX82CyFYV7c/Tftw6MAW+gBfgDtjti3nXACxT0ULjKWMYrVDRkvQu0BVzXrHmXXLAchWtxe9xPL9o8y45oC+P5m1vgR0q2qLWZbM/T6PrnRKuJRbHXAE7tfbc/vxb8If5CB6Co6BBG13TymJ7SnoO+AQ2aO12Fb2QECfaohqo8j+IqwOajbbL/rx4hfcDLI75arRd9ufFy+Yp8Aq0aG2X/Xl6MlyUvEhj8xT4YVR/DZwI6e2sX2AlOASeqPn781QHnAa/fX8KkOglhZOO576p5r/Z4W0dQHrOleBay+OHuHialR4Al/uN5gO3YiZDZvlLM8IeZbk/n8B6gFMOcZkNTvI0uF+bDq/nvm981elWGVUeqZL1ACp7O2qpDggKCgoKCsqp/gGQnrJsTGKpawAAAABJRU5ErkJggg=={scale="+$scale+"}>"
+!endfunction
+
+IBMEntityColoring(flowlogsvpc)
+!define flowlogsvpc(e_alias, e_label, e_techn) IBMEntity(e_alias, e_label, e_techn, #232F3E, flowlogsvpc, flowlogsvpc)
+!define flowlogsvpc(e_alias, e_label, e_techn, e_descr) IBMEntity(e_alias, e_label, e_techn, e_descr, #232F3E, flowlogsvpc, flowlogsvpc)
+!define flowlogsvpcParticipant(p_alias, p_label, p_techn) IBMParticipant(p_alias, p_label, p_techn, #232F3E, flowlogsvpc, flowlogsvpc)
+!define flowlogsvpcParticipant(p_alias, p_label, p_techn, p_descr) IBMParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, flowlogsvpc, flowlogsvpc)

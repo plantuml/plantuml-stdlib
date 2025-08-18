@@ -1,0 +1,13 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $music [64x64/16z] xS61400000CXXFdRpkElMXu0001m
+
+!function $musicIMG($scale=1)
+!return "<img data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAAIGNIUk0AAHomAACAhAAA+gAAAIDoAAB1MAAA6mAAADqYAAAXcJy6UTwAAAAEZ0FNQQAAsY58+1GTAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAAOxAAADsQBlSsOGwAAAgBJREFUeNrtmr9Lw0AcxaOpTuKgk6IdXF0EcXFpRXTzHxB0KlrQTah/Qzvoori4uzkK/rb/gQ6OLiooqF26KaW+oymUI0lTct9rtO/BZ7ikl3v3ene9NHEciqIoiqJ6VX2GrjMBSiALxrrUlzdwBwrg1WYAqvP3YDQhX+oXmIkaQr+BBosJ6rzjeSlG/bCJALIJnNqRPaUMNDYutK50qnqIJ9ER8KfFABgAA2AADKCXlRK4Zp0jgAEwgJ5eA5JwL8ARwAAYAANgAAyAATAABsAAGAADYAAMgAHE+z9gGuTAMkiDb/AEbsCBRa8iPsICGAD7IA9c7dwImAM7Fjou6iMogEFwBhYNjKA4EvcRtAbsRWjUhsR9pALmWl479gJ2wa1XXnAab2FMCs95cR9+AeS0uabetVHv3FRajp2Ac/DgNN4RkpAVH35TYEkrF7RGm6p456RkxYdfAGmtXA6pXxYMwIoP0xuhakL2N9U4ATxr5UxI/UybunFkxYdfAJdaueRtOByfTUipTd04suLD9TmmVtvNlnCGwSp4B59gCKyAU23lrYEN8GEoACs+gp7jqb31VoeGD8G24bks7sMNOH4F5sFUxOtcg3UvfZMS9xEUQM3bZKj5NRvya6E+dwTWwI/Aai7uI8qjbP02tLnKXoBj8Nil2+Fu+aAoiqIo6p/oF0Y8a2Gnn833AAAAAElFTkSuQmCC{scale="+$scale+"}>"
+!endfunction
+
+IBMEntityColoring(music)
+!define music(e_alias, e_label, e_techn) IBMEntity(e_alias, e_label, e_techn, #232F3E, music, music)
+!define music(e_alias, e_label, e_techn, e_descr) IBMEntity(e_alias, e_label, e_techn, e_descr, #232F3E, music, music)
+!define musicParticipant(p_alias, p_label, p_techn) IBMParticipant(p_alias, p_label, p_techn, #232F3E, music, music)
+!define musicParticipant(p_alias, p_label, p_techn, p_descr) IBMParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, music, music)

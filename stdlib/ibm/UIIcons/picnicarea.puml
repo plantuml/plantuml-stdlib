@@ -1,0 +1,13 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $picnicarea [64x64/16z] xS61400000CXXFdRpkElMXu0001m
+
+!function $picnicareaIMG($scale=1)
+!return "<img data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAAIGNIUk0AAHomAACAhAAA+gAAAIDoAAB1MAAA6mAAADqYAAAXcJy6UTwAAAAEZ0FNQQAAsY58+1GTAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAAOxAAADsQBlSsOGwAAAjFJREFUeNrtmb1LAzEYxs9WncRCZ+3QsbcIgoNLcdDNWVBw8asgDjoo+Cd0UARRBx2cdHFVWgXp7GrvD6gdBKUgOClan9AUzmAv1zY5L9f3gd+QXhKa5/LxvhfLIpFIJBKJ1KvqM/A/22AZzIAU/60CiuAUlKNqwADYBzkQb1HnC5yATfDpp9O4IYMfBDdgDsQ86rFnE2ASXHJDImHAAR+8X6VBElzLKvYbsuZzwm9PYAfc8/IUyIMRVx3W5li2J5gwA3b5lG6qCsbAA3jnPIJzsACGXcvhAxQsyZoJu6aF8jao/VGvxp95tTXSgJRQLnnULUnaGmmAVplgQEUoZz3qZiVtjTTgVijn+REnKsmfuVWMQhzAdv0118tiu/w8eAavYAjMgiswKkSFq+AlCqHwIVjvoM1GVCLBOx4LpNuovwi+o2IAm84XfJ2Pe+xdrN4RH7yvZCgK6XCdh8YFng479JWDRCKRSCRSUIFQ3eQx0AcRMoD2AC1iV1N7rjJLUlba7IO1WXKVt6zG1ZgRM8AWyp1kaGVJn6E2ICMZjB85kj6NMkDFDDDGAHY/l3CV36zGh812VeVtm0pYv+/+QmuAircf2DLQYYCtYP23MsA20YBuZoD2k6CTOOC/Y3+lY6JQmAygXEBrDnBmNS4xupHWnED1DFB5BAZyEqg2IKPBAK3BkG4DHA0zILQGqMoBAs0JYiF/+9qXgUoD7AANsE0woKyw70C+DpFIJBKJROot/QD09mTGcQB+ewAAAABJRU5ErkJggg=={scale="+$scale+"}>"
+!endfunction
+
+IBMEntityColoring(picnicarea)
+!define picnicarea(e_alias, e_label, e_techn) IBMEntity(e_alias, e_label, e_techn, #232F3E, picnicarea, picnicarea)
+!define picnicarea(e_alias, e_label, e_techn, e_descr) IBMEntity(e_alias, e_label, e_techn, e_descr, #232F3E, picnicarea, picnicarea)
+!define picnicareaParticipant(p_alias, p_label, p_techn) IBMParticipant(p_alias, p_label, p_techn, #232F3E, picnicarea, picnicarea)
+!define picnicareaParticipant(p_alias, p_label, p_techn, p_descr) IBMParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, picnicarea, picnicarea)

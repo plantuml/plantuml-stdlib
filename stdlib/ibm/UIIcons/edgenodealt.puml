@@ -1,0 +1,13 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $edgenodealt [64x64/16z] xS61400000CXXFdRpkElMXu0001m
+
+!function $edgenodealtIMG($scale=1)
+!return "<img data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAAIGNIUk0AAHomAACAhAAA+gAAAIDoAAB1MAAA6mAAADqYAAAXcJy6UTwAAAAEZ0FNQQAAsY58+1GTAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAAOxAAADsQBlSsOGwAAA1hJREFUeNrtm12ITGEYx8+yLTZCKx+7w4UbtZGJNrVRiySFyIWP9RFZIytXQi6EG+268VkMoTVJyoUiuaC9mDvREisuXGgltpWvJGuM/9v8p8bpPWfOmTkz5z3nvE/96szZObPv+5znfd7/85wZw9CmTZs2bdG1GovzMdAN2sA0n8f4AfSCA2CgGg4Qk+8DDYrdrCEQ99oJIyTnuhScvMExdXn9oTIHtCm8ZD0fW63kXKPDPFEty9qMrSIRECnTDoi6A2pLuGYFSPJ4F7gftQi4SK0Q47FeAlFzQIJqbIDHkcsBYs1P17uAdoB2QGR0QFZHgFaCgbBRYD3ooEirAy/BTXAN/A2zAyaBO6BVUtovA+1gI/hUigNqArCMH4B5Nu9ZAm7QGdmw5YDtRSaft6VgSxiXwCaJUu3g8SVWr3lbC3rCFgGzJbXKe2KuVRaErR8wEox18f4fYeoHLARPQL1kfE3EPL63YcgBU4zcU6utNhFq9fDkghcOSBQsgUSVw70THAfjS7j+EbWCcv0AoeD2gA0FCU08mkuBy2CY4X4OzLX4jB6OabHF33vBalld4/cSmAHuSTJ5KxF7/CubcH/OqEjztdjn14EW8Au8AbfooIxqUniMxeQLrYWY7Ss4As6bJnadBKIY6iwyecMm3MWj8o9B6QdY1RLtLhScLNwD3Q8QTml2oeCGqPfTXg9E9wR9+r9iWfW7UHDiyxFPuR16HorF1nyl+gH7wUm/k6CfS0BsYS9KuE5ogtdgH9Vh2fLSbEdNr49VyAF/qANEl2ayxXseg4cSBTiau8QaOvGdkesB7ganwSlwmOqvnsoyo5oD8oLmCvgMJpJhTvwE2Atu0wnzwVRJYbQDzASHwE5K4joSo6NWgbvguxc5wK9+QLnFUB8bIr+D2g8QIXwGzDJMbS2HFucNC7wOENl/G1gEnllUq/kbZI7OzV44QJXvB6SZF366UJTNKvYDyl0WmahLYTeKsl+1hogXljL+b3fb9QRTYYyAJLc4J9tg0okOEMmjUaEJOqlFmih04jaTX8m5FVWCIrPOUcgBTpSoUHhXwSDV5AQKHlFBdlMif3HaEToIlhtq/mbAzsSEz5KyiqFvRu5RsvipjHjuPi4AEaBNmzZt2rSVYP8ASAKr3GikE/AAAAAASUVORK5CYII={scale="+$scale+"}>"
+!endfunction
+
+IBMEntityColoring(edgenodealt)
+!define edgenodealt(e_alias, e_label, e_techn) IBMEntity(e_alias, e_label, e_techn, #232F3E, edgenodealt, edgenodealt)
+!define edgenodealt(e_alias, e_label, e_techn, e_descr) IBMEntity(e_alias, e_label, e_techn, e_descr, #232F3E, edgenodealt, edgenodealt)
+!define edgenodealtParticipant(p_alias, p_label, p_techn) IBMParticipant(p_alias, p_label, p_techn, #232F3E, edgenodealt, edgenodealt)
+!define edgenodealtParticipant(p_alias, p_label, p_techn, p_descr) IBMParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, edgenodealt, edgenodealt)

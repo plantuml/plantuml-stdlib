@@ -1,0 +1,13 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $texthighlight [64x64/16z] xS61400000CXXFdRpkElMXu0001m
+
+!function $texthighlightIMG($scale=1)
+!return "<img data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAAIGNIUk0AAHomAACAhAAA+gAAAIDoAAB1MAAA6mAAADqYAAAXcJy6UTwAAAAEZ0FNQQAAsY58+1GTAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAAOxAAADsQBlSsOGwAAAoRJREFUeNrtm09OAjEUxstAcANGF66ACxgT2ekViF5AZWUiuNEr6FxBXQgmuhG9gIYr6E4S4wWUlRsT2eAGX0NJSEPnf9vXzrzkW7QE8PdNX/t4MxKSRRZZpDlyHq9NQn7WCPQOegB1QH8Iec9A7vyEk+CHl0DboAvQK6iCEP6cn3QkfVkd9AQqYoaXacDMhBZmeBqFiPvDoqBL/gbUmJtrgq6wwie9AoagNje3jhleRgp8cuMyZnjZewDBDm+jAaHgbTMgNLzfKVBkm9o+aIMVOlbBexlQYYVM3dYr75UCxbTAiwxopQVelAJNbtwHHbFCJ0hMTIEXrQC+emuHgCcmwYsMKPtUd9bAm1YHJA5vkgFS4E0xQBq8yIBfblyzFV5kwAc37hA9/T3p8KI64B60NTemHZ4vG+FFK6ALerN52fsZQPv5u5pMUApPIy+YpxvhHegbtApaIdFb3C4yeDdoP4CuhEsmHVc+bFe6xPoWe6DjoBesYNE5T2/NvTDdgp6DnF6OJfB8DEA7oDFmA2Tn/ICdaChTIAh82L4CrVVarH8xix7oBNsKkHXlq6xq9apqtRsge9nXfH7XaDVAeZGD6ecwSnhVBqCFV3EKxIGnleg16JFMnz0amWZAHPghK2QGpqZAHPixKnhZBsTN+a4qeBkpkMSG1+PGDWZKNeD7c7pWQFK7/aKeZBV7CiR51CntSjvI4I0rhIyGj2uA8fBxDJAJr/TutIPwyi96PkHajZkCwmV/QKaP28+iL/MkcBDmPG1rbWLbA1RueEtk2tJWYkIe6W6/DDoErYF+mKL+Cw7/t7th9gCdRx29s3PKpCUFrDjnoxqQCniRAamBzyKLLLL4BxmlhA22T949AAAAAElFTkSuQmCC{scale="+$scale+"}>"
+!endfunction
+
+IBMEntityColoring(texthighlight)
+!define texthighlight(e_alias, e_label, e_techn) IBMEntity(e_alias, e_label, e_techn, #232F3E, texthighlight, texthighlight)
+!define texthighlight(e_alias, e_label, e_techn, e_descr) IBMEntity(e_alias, e_label, e_techn, e_descr, #232F3E, texthighlight, texthighlight)
+!define texthighlightParticipant(p_alias, p_label, p_techn) IBMParticipant(p_alias, p_label, p_techn, #232F3E, texthighlight, texthighlight)
+!define texthighlightParticipant(p_alias, p_label, p_techn, p_descr) IBMParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, texthighlight, texthighlight)

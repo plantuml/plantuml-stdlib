@@ -1,0 +1,13 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $notificationfilled [64x64/16z] xS61400000CXXFdRpkElMXu0001m
+
+!function $notificationfilledIMG($scale=1)
+!return "<img data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAAIGNIUk0AAHomAACAhAAA+gAAAIDoAAB1MAAA6mAAADqYAAAXcJy6UTwAAAAEZ0FNQQAAsY58+1GTAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAAOxAAADsQBlSsOGwAAAqtJREFUeNrtm0FIVEEYxyefiCiriSAmCYIHPYiKrgiKeIrEk52MWCMhlBBEzx5Sz51CETx0CA9CROFekg7iSTQQIoISscDIU4cCxVP2H963oA/pObtv5s08vw9+h9F938783jgzb/1WCI7rHTdifO8zG/pSdN1nAAvgNcBcdIBu0Aa6qH0+dsEH8BFsU9t5AdXgIRgDzYrXfgHL4CX45ZqAcjAHJkBpgblOwSJ4Co5dEDAAlkBDxHm/gyfgXZRJvYhlPqO7dVODWJkzA1LgvW0CZJ4XdId0Rw/Nruwlh6lYBMit9DW4b3BHaQet4FWhEqIQIBe78Ri28GaSvxGngDu0VcX1TNEHtsBBHCfBKrAS82myiPpQFYeAaVBjwWm2hvpiVIA0PmnRkX4y31mQr4ApUGmRgErqkzEBwxY+2A2bEtAImiwU0ER90y5g0OLH+0ETAnotFtBrQkCdxQLqTAiotVhALQswICBlsYCUCQGJChbAAlgAC2ABjj8FFtRHTzHxigOzZgjsgc9RCsgNvtiRWX1lCV7CBq8swUvg4JUkeCF/S6uODj4o4ZPw/92utAs8d3zwuSimsShvg/UJ2u7r+SDEAlgAC2ABigIOEzTOw3wOQvLg0A8qHB/8D+FXsOxf9kudlR2FVoMbqSbnNUBj7j+Btspn9qmQXE4I+Blotyhc2xKSywkBO4F2RuHaTEguJwS8DbQfg/QVrkvTa/+XywkB2cAzeAlYC5GQpteUBLbjrK5OehoF/AXfwINzW5hc3EbBbfAbnIAy0AlmwIK4WHwlt8JH4KuuTpqo8JwVfq1/PjFH1wsXZ0AuNulO9isIP6PBz+vunAkBOQmypld+TyisulR+gDki/PJ77WG6yFkuunfBPZJxi35+JPwvSb0B67R+cHBwcGiPf89cYvAoKUsTAAAAAElFTkSuQmCC{scale="+$scale+"}>"
+!endfunction
+
+IBMEntityColoring(notificationfilled)
+!define notificationfilled(e_alias, e_label, e_techn) IBMEntity(e_alias, e_label, e_techn, #232F3E, notificationfilled, notificationfilled)
+!define notificationfilled(e_alias, e_label, e_techn, e_descr) IBMEntity(e_alias, e_label, e_techn, e_descr, #232F3E, notificationfilled, notificationfilled)
+!define notificationfilledParticipant(p_alias, p_label, p_techn) IBMParticipant(p_alias, p_label, p_techn, #232F3E, notificationfilled, notificationfilled)
+!define notificationfilledParticipant(p_alias, p_label, p_techn, p_descr) IBMParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, notificationfilled, notificationfilled)

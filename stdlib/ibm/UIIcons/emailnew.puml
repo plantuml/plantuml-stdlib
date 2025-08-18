@@ -1,0 +1,13 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $emailnew [64x64/16z] xS61400000CXXFdRpkElMXu0001m
+
+!function $emailnewIMG($scale=1)
+!return "<img data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAAIGNIUk0AAHomAACAhAAA+gAAAIDoAAB1MAAA6mAAADqYAAAXcJy6UTwAAAAEZ0FNQQAAsY58+1GTAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAAOxAAADsQBlSsOGwAAAz1JREFUeNrtWj1rFFEUfbs7mkoLRcQgQazEEAyICG5hIGghRPAHuERIMKAiEsFCUBQEI64iKH4kRUihnYIBwa+ohUKwWQi2QYIoImm0MhL1PHIWNpM7O19vszOz78ApMpk3796zb+49b2aUsrCwsLCwsLCwsLBoReQ8jm8Fr4E94JaU5/gNfAOeA78EEUAnXwE3ZuzHnge73SLkhRNHMpi8Yk4j7oOSAD0ZvuVX5OYIJ7X7XOQz2A++S1hy+8FxcFudc9qDrAA3Flx/6wmmwOtgWwISb2MsU0LyC36D/QT4C+4FZ4Rxw+BHFpZmoZsxDAu5zDD2WAIodoQ9YJmC1KILnGaLKaxi4gXOOc0Y3D9amTFX/C7kBJzwN3gWnBTus7XgVbAPLIGzDU5+OzgBFk3Up3zIyfWFd1EEN4pUfLCByQ9yDin5ccYWqjj7rQDJKP0Ej4FPwfvgppr/rQMfcDXoYL8bSnwzOMrruvEDPA4+iXJhJ0ZQesIPHoH1sQhFDqwGRwShq5iMK7QTMzg98WEGUeYKqEIH/JhL8zRXThisB2/xnnbjFyv/aNyl5RhaojqQ1x7FqZ8OLExxqmdq3pssto7BAjXLwHW3uMzu4DZPN8Hz7CpepuYKeEYo0NrUXKDpWTQVtEkBFAPTG47nXA1dgnk6yF+wIpiaCaGvV01NKUhfD4u8agzCmCdjpiYJKyCKeVKmTE3SBHCbJ6miFz3GRO0ciRTAzzwZMzVJFiCIeYptatIgQK15GgAv8dhFcKwZ++lmCFDFWLOSXo02mBo4LZBjzq4AK4AVIHINyKUgh062VL3J6uCxOfAFu8ynrBbBNdxeD6mVT6R3kqfAe9xe/8mSAHoz9Qzs9TlPC3MC3AEeUsKLkrTWgBsBkq9FL8dkogh2ctmHxRDHpl6AARXtLVSBY1MvwAGTY9MoQIfJsVIX+KqWv0f/l0QP30gn+DbhK2DO5FhJAP2Edj7BArw0OVYSQH9FpZ/RP1RLn5glDdreRnkxsqiEBzBp8PoSbtPhhcEd8KTUG9OIV+A+tfSxRBDo95YlaeWkVQCdyCNwA7i7TjvX590Fj3pthtJ6CxjbDltYWFhYWFi0Lv4D5YWmWm40zYcAAAAASUVORK5CYII={scale="+$scale+"}>"
+!endfunction
+
+IBMEntityColoring(emailnew)
+!define emailnew(e_alias, e_label, e_techn) IBMEntity(e_alias, e_label, e_techn, #232F3E, emailnew, emailnew)
+!define emailnew(e_alias, e_label, e_techn, e_descr) IBMEntity(e_alias, e_label, e_techn, e_descr, #232F3E, emailnew, emailnew)
+!define emailnewParticipant(p_alias, p_label, p_techn) IBMParticipant(p_alias, p_label, p_techn, #232F3E, emailnew, emailnew)
+!define emailnewParticipant(p_alias, p_label, p_techn, p_descr) IBMParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, emailnew, emailnew)

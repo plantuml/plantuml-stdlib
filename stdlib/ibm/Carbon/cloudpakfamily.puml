@@ -1,0 +1,13 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $cloudpakfamily [64x64/16z] xS61400000CXXFdRpkElMXu0001m
+
+!function $cloudpakfamilyIMG($scale=1)
+!return "<img data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAAIGNIUk0AAHomAACAhAAA+gAAAIDoAAB1MAAA6mAAADqYAAAXcJy6UTwAAAAEZ0FNQQAAsY58+1GTAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAAOxAAADsQBlSsOGwAAAzNJREFUeNrtW72LFDEUz3jbiN0Wtx4H1oJ/gYUWgoVYaSla2Bx3gt6p3KnX+FH4DedpoZyFhdjYiIVYCBZaWFlYCBaCIMg6FtuJjaK/4DsIIdmdSV6S2Z08+LFDZt5s3i8z72OSCNFyKRL+dxc4TcdrwKAtBGwFloAVOpbyC7gJ3KHjiSRgCjgOXAK2A4+Bi3TuMnAM+E7nHwF/JomAQ8BVYCfwAjgHfNSu2QXcAA4Cn4BV4Nm4E7AXuA7sBt6R4W9H6OwhIjZ1zgNvxo0AjtGs8tQ0joAdzO+zzW98bRoBMqRdAE4G8uh65LgHXOMInUVTOxaL6KKpj2asV82FgCjOKZazrUOAS0iLJc6hs4jBskV6wCLwF1gHfkRKuCoTwB3SVMNlx+bJ+IJ+HxDRvkTU8k82AuaAu8whTTf8Pt27UNoFtXMQoUeoU8BGVQJeAjPAPoaQ1qtooOk6SVDJEDpfA33ggH6yM0Sxz2D8HD09VUZWGnqGrpGjtkBYMo1cDRmQLUbpRKgCPwP7a4ykvO4sjf4rusdGqA5uiRCivjk+xiXpBpUYBDRaMgGZgExAJiAT0GYJmQjJ1HZWOS4j6ycjQM/ppXxRqr3SUZ+rSApGQE/J4dViRijt80OIsBVDQqsNWInoBDRcNXAztzcRISpUgbo+GxG+BOjV3rDytbQQITz0F+ir0sNUBHBUe8JT/3BKAriqvWTVYk6EMgGZgExAJiATkAnwkllKh+vKNOn66nvJlKX9KP0+GaG/DTgi/k9eyBmYD8DPCh2/QvfuEnz0ZSr+foSO1R7fTFBOWDynYkYtUkw5/bRynTAUQ676Xt8JOFJhdUrLZIioUC2apsRs+iyGh/geYJvb8632RAjDQ34RUg1ZpLZ1x2pP/soZ7NsiwSexGXIyAw8iVj2JXGGwsUu29OtEAend5cqQExQqpZf9PWYhXi6KWAaeEgFrpmiRYolMaGFZIqNKklXcjsK6SEqX1i6T82Y5oERdKOn8ngWQpEtldU/bysXSwTsWi+i8YaKpzkmM6ZYZjtA5EZumXEZzIrfNVXmfhWjBxslhHl2IlmydNYXOZTq+JRJtnm69/AMQJ1qCdo4KdgAAAABJRU5ErkJggg=={scale="+$scale+"}>"
+!endfunction
+
+IBMEntityColoring(cloudpakfamily)
+!define cloudpakfamily(e_alias, e_label, e_techn) IBMEntity(e_alias, e_label, e_techn, #232F3E, cloudpakfamily, cloudpakfamily)
+!define cloudpakfamily(e_alias, e_label, e_techn, e_descr) IBMEntity(e_alias, e_label, e_techn, e_descr, #232F3E, cloudpakfamily, cloudpakfamily)
+!define cloudpakfamilyParticipant(p_alias, p_label, p_techn) IBMParticipant(p_alias, p_label, p_techn, #232F3E, cloudpakfamily, cloudpakfamily)
+!define cloudpakfamilyParticipant(p_alias, p_label, p_techn, p_descr) IBMParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, cloudpakfamily, cloudpakfamily)

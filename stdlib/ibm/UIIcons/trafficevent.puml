@@ -1,0 +1,13 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $trafficevent [64x64/16z] xS61400000CXXFdRpkElMXu0001m
+
+!function $trafficeventIMG($scale=1)
+!return "<img data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAAIGNIUk0AAHomAACAhAAA+gAAAIDoAAB1MAAA6mAAADqYAAAXcJy6UTwAAAAEZ0FNQQAAsY58+1GTAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAAOxAAADsQBlSsOGwAAAuhJREFUeNrtWU1IVUEUvvdpCEm4UDLauDGiFm20dgW18AcUFFqUUBttlyBIuTNoFa1a1KIMggQRcSG4eE+DElsIUtsiXAWiILhpJ/p8foPnwm3wvTd37vy8n/PBt5jLvfecOXNmzjczQcBgMOoZoeZ3T8Cn4DXwnGUfD8Hf4FtwxvTPGzS+eQ2+Ats1v9fxUdgaBJvBLyZ/nkn4/lVw0mPGTpIP3gIwovGNaX9HTP6wMeH7/VL7MThrudOPwM+SDy98ZMBFsCvWPgZXHIz6CtmK0EW+OA9Ar/T+T3DPQQD2yFbc514fAZDTP+tw7mfL+GJ9DRClqEd6llPQCdc11hkVPCQKHIG/wHfgB1sBuAW2xtr74GYJnfDMYXaIPtwA34Od4HMbU6BPaq+C+VrQCRnD87/qdMJZU6BQ5ptS5a/qdILOaBUrf1WpE3QCkK0lnaATgFwt6YRGQ2cESXWCaQhb07F2D/mUt5EBaXWCDWySzQit5FNZ6I72BDhGNTe03DlRlf6AH8E3JUZ1LqYOBV6qVAOdE51PpLbaHHQ+GqQ2SusOcKnIe+fBYak9YzoDboPrgV/cAb8XKcO7CtM6TLMGjAb+MapYDo1uhgSawCHp2T3wm+UO3wW/xtpD5MtBkXJ40+Z5QEusvetoOqyTrQgtJep8zmYGPJDaiyp11gDyZGtc8uWsxXAj6bqmmgFiRR2Qns07nPeyrQHyycj2UQXRpUSEvxRtV9ggmxGaySdnAZDTf0Fh22xaDC2U8UlbZCQ9DxDo1ik5KSG2uT9Mq1udvcCWh85H2+st0z/VObG94jj9rSIT1DlU5kuhBvrAGWByDQg9+1zgNYADwAHwugYUFNeEpHM1dDHnOQM4AByA1Eqw0nQAK0EOAAfArg7YAS9X6O5wx0UGrFXwAK65CMBU8P/Vc6Vgn3xLBZXb4X/B6dXzpeD0lvaC546LW6Jl8D647UIH+NYFVu1xGeQAcAA4AAwGg1G3OAEb5YSM4K65MgAAAABJRU5ErkJggg=={scale="+$scale+"}>"
+!endfunction
+
+IBMEntityColoring(trafficevent)
+!define trafficevent(e_alias, e_label, e_techn) IBMEntity(e_alias, e_label, e_techn, #232F3E, trafficevent, trafficevent)
+!define trafficevent(e_alias, e_label, e_techn, e_descr) IBMEntity(e_alias, e_label, e_techn, e_descr, #232F3E, trafficevent, trafficevent)
+!define trafficeventParticipant(p_alias, p_label, p_techn) IBMParticipant(p_alias, p_label, p_techn, #232F3E, trafficevent, trafficevent)
+!define trafficeventParticipant(p_alias, p_label, p_techn, p_descr) IBMParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, trafficevent, trafficevent)

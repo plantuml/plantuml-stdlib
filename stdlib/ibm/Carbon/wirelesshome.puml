@@ -1,0 +1,13 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $wirelesshome [64x64/16z] xS61400000CXXFdRpkElMXu0001m
+
+!function $wirelesshomeIMG($scale=1)
+!return "<img data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAAIGNIUk0AAHomAACAhAAA+gAAAIDoAAB1MAAA6mAAADqYAAAXcJy6UTwAAAAEZ0FNQQAAsY58+1GTAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAAOxAAADsQBlSsOGwAAA8pJREFUeNrtmmtoTnEcx8/2PxSbS0Z44ZK1vFCiyDXZM7kuLYQXeCMmXghJMiWXcgmRe0kuLzRyW22ZPMTcFfZOGsYL5LJnm1EL8/237+r0dJ7Lzv2c5/zq03mendv/+/3/zv/3/589ihKGq7GOuBaqi/feCbbwcx4oc6MRwmXxu8B9fu4CopmQAVrx2l7vyIayIGdAIvFRZoDjmSA8IN5VE4RHxLtmgvCQeFdMEA6Jl9utnTjPMROEB8U7aoLwqHjHTBAeFu+ICcLj4m03QfhAvK0mCJ+It80E4SPxtpggfCbechOED8UbMaEKLAUXrFoOuy1eiVs6G15Kqz4Wb4kJqs/FmzZBDYB4UyaoARFv2AQ1QOINmaAGTHwiEwwZ4Ffxeib8Bvc6MxHyu/j4yVIEfAZn0jEgKOLjTViiN2MUARefctosMkB8UhM6BsGIA+IHgjEgn+SCbtwnB6mfoI48B59sHhilAdEszc5CcMfCm8nsmgoW89r5mn314Dto4veeSvt/iIdojqljey6Cu+CvhW2LdGRAlg0u9wOrwGowgD1ZCWrAE/AG/ElSlgvAODAZzGbmyBH8GDgBvlrZWCsN6AE2gfXs/XJwmvX3n8FrZoMpYDlYyCw4APaAZi8ZMI891AccB7tteIZlJmxmdv1ghl1x24AcCpZvW26BNUxxO6OAZk8D52hEixsGDAI3wHCwERxN4xx57EQwmONDX9AGvoEv4AN4CF6n0W5p9l4eOxd8NCIi0VqgittZKdK+P0f6pylGXFkJpmtG+WaKruf3sTQjl9/fg2pWAL3KJE07Ap6Bq2zLoSRtqKJpM82+EdKGvOFZEEuwfw7r7nj2jhR0k9vGBOf0AjNolqwAK8EjsEPTKdqQVWUEaDAqwuxvhPTED1Pa375OAK/AAg5WbWlcr5HVo5w9Np8mVvLRkPP5d3HnNJgRYPWPpBaBU5zglIDrJq4lDbtMSpjyL8AKcMmqBmdbKL6Iz6ys+6NMio+Pa7xmDbMjYtWFrcyA23x2b6W4nxwTJvFRyePf5bT4LXgAHieYKcpBs5j3iHrRACWJeCl2A1jGkb5FU/ZkjGZFyWGFOA/205T4qLaywXb/ULI72AdKKewkqODI3hp3bFfOEYo59S3l8XKO8cuuBtppQG+WqaFgGzisWf3pRStXfZLtYC0rQBEfm5jfDIhx9RZlOexMNLH2V3DAi/kxA2QcNHn+S2JbZCsZHqEBoQGhAaEBoQGhAaEBoQGhAaEBGRra/wtoXz+P5LY2IDr19BQmWw3WBqyja5Uw9OM/qkIQO6IVq7MAAAAASUVORK5CYII={scale="+$scale+"}>"
+!endfunction
+
+IBMEntityColoring(wirelesshome)
+!define wirelesshome(e_alias, e_label, e_techn) IBMEntity(e_alias, e_label, e_techn, #232F3E, wirelesshome, wirelesshome)
+!define wirelesshome(e_alias, e_label, e_techn, e_descr) IBMEntity(e_alias, e_label, e_techn, e_descr, #232F3E, wirelesshome, wirelesshome)
+!define wirelesshomeParticipant(p_alias, p_label, p_techn) IBMParticipant(p_alias, p_label, p_techn, #232F3E, wirelesshome, wirelesshome)
+!define wirelesshomeParticipant(p_alias, p_label, p_techn, p_descr) IBMParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, wirelesshome, wirelesshome)

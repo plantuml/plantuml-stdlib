@@ -1,0 +1,13 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $portlandbuilding [64x64/16z] xS61400000CXXFdRpkElMXu0001m
+
+!function $portlandbuildingIMG($scale=1)
+!return "<img data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAAIGNIUk0AAHomAACAhAAA+gAAAIDoAAB1MAAA6mAAADqYAAAXcJy6UTwAAAAEZ0FNQQAAsY58+1GTAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAAOxAAADsQBlSsOGwAAAn9JREFUeNrtmjFIHEEUhtdjU1hpcSqYVoUUuUpB0EKLQLQWC8UmpRaCaCMoprRQK0EsTJEUSYid6IGCIWiRNIIpFKwFxUYrC8XzX3jKMuztztzM7on3//AVczf3ZubN3Pt3l/U8iqIoiqpZ1SntMfDpla95A3x9auSUL0dAQTNQM+gD+SouJi9zaNLsX5A1PsuP6PQPDGgEawRn4AQMVykBP0EL6AE3Gv2L6gc5i8GvwWcwJBPIWj0y9oLm4iPlW05iDUyAH3IaslQ7OAXrNkGSTsCOUK59D2bAW9CW4eLbZMxpmUN4fsWYtvMTEGgL7IEOMAhuU158vez8LtiO+L6U0DbacV0VZCdmM9j9WRnrfQW/Larr8x1N6hh8kcl9SDkBXeLl/10Eyzmc2Bx4AJ0pLr5TxphzFdB3OLkLsCjWOCmnwqWCI38E5sGlq6C2LqC2l8E5WEph95ck9opB1c/EBcK6lTrwDRyAO0dx38iFz6iGyxi5QF3Ejnual8JxMf9KsTpQfLrSv2mvXKJ3m9pahAuUwuvzUziqwQBT4A/4DlYt443L7k9ZLj51Fwgr2PlNuU5vtIjTIDF+gcM0Jmp7AuKeH+SFIBlXFcZvEt6BfZ37+6xdoNzzg+CzVvBbFl8weM7ghfpfSYzWmHFGqu0CUc8P1GJqWlx3pJh+LNNWx6nYBZISMJDQfmkynm/Oq3ExAUyAnQu8NBm7wGs8AVV1gST7S7JD29/TBVgEmQC6AF2A9wJ0ARZBJoAuEN0u0QXoAqwBTAATwHsBugBdgDWACWAC6AK1cgLoAqwBTEB5hV+TC97BeXoNRfctT7W/aTvteHHx+6MSUEvq9yiKegRLAbKQxB5gpgAAAABJRU5ErkJggg=={scale="+$scale+"}>"
+!endfunction
+
+IBMEntityColoring(portlandbuilding)
+!define portlandbuilding(e_alias, e_label, e_techn) IBMEntity(e_alias, e_label, e_techn, #232F3E, portlandbuilding, portlandbuilding)
+!define portlandbuilding(e_alias, e_label, e_techn, e_descr) IBMEntity(e_alias, e_label, e_techn, e_descr, #232F3E, portlandbuilding, portlandbuilding)
+!define portlandbuildingParticipant(p_alias, p_label, p_techn) IBMParticipant(p_alias, p_label, p_techn, #232F3E, portlandbuilding, portlandbuilding)
+!define portlandbuildingParticipant(p_alias, p_label, p_techn, p_descr) IBMParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, portlandbuilding, portlandbuilding)

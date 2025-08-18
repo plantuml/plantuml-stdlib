@@ -1,0 +1,13 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $textsuperscript [64x64/16z] xS61400000CXXFdRpkElMXu0001m
+
+!function $textsuperscriptIMG($scale=1)
+!return "<img data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAAIGNIUk0AAHomAACAhAAA+gAAAIDoAAB1MAAA6mAAADqYAAAXcJy6UTwAAAAEZ0FNQQAAsY58+1GTAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAAOxAAADsQBlSsOGwAAAHdJREFUeNrt11EKgCAQQEGV7n/l9QiKWKQ78x0ZD12sFAAAAPKpE8/ET78xdrynZd8BApgB74kP11pe3xEQILnn4G8PO0AAAVLPgC13GkdAADPgGqN7gX8BAQS4awZUO0AAAQQQQAABBBBAAAEEEEAAAQAAAGBSB8KfBlB2MgKCAAAAAElFTkSuQmCC{scale="+$scale+"}>"
+!endfunction
+
+IBMEntityColoring(textsuperscript)
+!define textsuperscript(e_alias, e_label, e_techn) IBMEntity(e_alias, e_label, e_techn, #232F3E, textsuperscript, textsuperscript)
+!define textsuperscript(e_alias, e_label, e_techn, e_descr) IBMEntity(e_alias, e_label, e_techn, e_descr, #232F3E, textsuperscript, textsuperscript)
+!define textsuperscriptParticipant(p_alias, p_label, p_techn) IBMParticipant(p_alias, p_label, p_techn, #232F3E, textsuperscript, textsuperscript)
+!define textsuperscriptParticipant(p_alias, p_label, p_techn, p_descr) IBMParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, textsuperscript, textsuperscript)

@@ -1,0 +1,13 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $microphonefilled [64x64/16z] xS61400000CXXFdRpkElMXu0001m
+
+!function $microphonefilledIMG($scale=1)
+!return "<img data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAAIGNIUk0AAHomAACAhAAA+gAAAIDoAAB1MAAA6mAAADqYAAAXcJy6UTwAAAAEZ0FNQQAAsY58+1GTAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAAOxAAADsQBlSsOGwAAAwVJREFUeNrtmjtoVEEUhmeTgA+IhYVoIiksNCI2Eh/gW0RBUddSVBS00EIEIahJoYWPIiiIhQoKNoKdUcEnQnwEFI2FIigao4LJCnZa+Erif9gjjoeNN3tn7uzd7DnwkZ3ZycyZf+d15x5j1NTUKtkygdurAivBejALTOL8PvAUXAI3wcBIFGAFOA5mRJR7AfaAWyGcqg4k8gFwFkwYRnkqs4k/3xsJAhxkMkWKtoQ/d5SzAKvAGYepthg8Bq+TXJSSshpwzHGdyXAdNeUowBrQ6KGeRq6r7ATIprSuYALMSWldwQSoS2ldwQQYl9K6gglQFqYCqAAqgAqgAqgAKoAKoAKoACpAZZrLVdOgSId+x+ClfZ0CKoAKoAKoADHti0jXRnxv0tiWiwA5ka4X6V6PAvRGtJVLgwCTRbrLowBdEW2VRIAekV4k0u0eBWiPaKunFALIAIZsAae7PXS+u4AA2QhfgghAoSz9Vnom88d+gmYPAjRzXUO108++BBfgM+gUeUdEmmJ+2hzaaOM6/tdGJ/sSy1wDJD6BjVZ6qsmHtbyz8u6AsWB+jM7vEw89S8FhUW4neFMqAajh1WJbWg4uWnszdeA2eAaawPhhzPnt4KToPL0gvW7+fU9I0SN7XTpQ7WmR2mw9jpKDC8EF8Msq9xKcAs/BdzAGjAI/wHvu3CGwy+QjxWyjsjfAdCuPQum2uOwAPp/haV7uF3lPeLX+6Fh3Pe8CTSL/KGhxddxXkNRdsAw0iCG7gX/xuNshxRZeA9NE/gOw1XgIqPQlADlylUWoE2d2mh4LwKsiRgNFhJw3+fjC2gIji2KGvvpw3Pc1Fjl7xfyN8ZP2FlzmnSJnHWEnMnTCWwemDPH/HWCtzwetJO7xRvNWtdvjCKPDzgnQCr75dDbJi8zZ4Jw4tcUxWkO28Zbn3ZK+yaX6KVp0B/+tKmJNocXvNG+PA0k6GMoa+HxAI2MumCe+fwge8S99H3wI4VTou3zbBtPgi94JqgAVbpmAczyVvuoUUAHU1NTUKth+AwschmvEfIIRAAAAAElFTkSuQmCC{scale="+$scale+"}>"
+!endfunction
+
+IBMEntityColoring(microphonefilled)
+!define microphonefilled(e_alias, e_label, e_techn) IBMEntity(e_alias, e_label, e_techn, #232F3E, microphonefilled, microphonefilled)
+!define microphonefilled(e_alias, e_label, e_techn, e_descr) IBMEntity(e_alias, e_label, e_techn, e_descr, #232F3E, microphonefilled, microphonefilled)
+!define microphonefilledParticipant(p_alias, p_label, p_techn) IBMParticipant(p_alias, p_label, p_techn, #232F3E, microphonefilled, microphonefilled)
+!define microphonefilledParticipant(p_alias, p_label, p_techn, p_descr) IBMParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, microphonefilled, microphonefilled)

@@ -1,0 +1,13 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $backpack [64x64/16z] xS61400000CXXFdRpkElMXu0001m
+
+!function $backpackIMG($scale=1)
+!return "<img data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAAIGNIUk0AAHomAACAhAAA+gAAAIDoAAB1MAAA6mAAADqYAAAXcJy6UTwAAAAEZ0FNQQAAsY58+1GTAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAAOxAAADsQBlSsOGwAAAvhJREFUeNrtm89LFVEUx0cTyqiVFFmbbFMKZiZK7VLCeFQrzbJIom1EEOimBFHbqLSx/gEX/a6HSIgSKS0tMiiSNrnqYdbOKIXSvof3fTA8FHzjvXfmOefAZ/HmzZ177nfOvfcMc8bz1NRibQUh9FkMToGTYDePzYNXYAz82awCSF/XwW2wi4Oe4X/lFOMH6AWDYGUzCbAdPAMJ8AD0gw9Z5xwB7eAiGAXN4Ldtx7Y4GHwhSIJ6cB7cAXOrnCfHXoCP4CaoBY9sR4ILAa6BGxx8ch3ny7T4zKnyE0zZvjs2bSvoYtgnc2iXZJsuXiNvBTgDSsBAgLYDbHs2nwU4zrk9HaDtNNsey5ddQPb3RtAA9nBbqwDbwPuA1zwKFrkmzFOQ12DcVL5QYCiKZKHr9O3vX8A/Cwv2QV++0APug+UwBdgBHoLT3LL6A4Z7LlbNfOECeAlawa8wtsFCJjcNTF5619jfTZv08Rx8Yr5QAx4HzReKNri/y50/R4cyGV8bk5gDhgf+FbwFQ8wQM30+pS+DLiOgmHv1COeiWBWYAJco7KJhAUTQKwz9N+A7k6ZDPH4P/HUVAY1c8Pqycn0ZdKXvIce0yUPTE/ZVxUjooyji07CrPOAESPkWPAn7/aDF4uAzaXIL+2rz5Qsp+uQsEdoHZn2/67hX2xx89rNCne/YLH1yJsBOsOD7Xcq74MpS7DNjC/Qpcqlw5E0FUAFUgHhbkaHrJDQCYi7AKNEIiOsa4NoSGgG6C2gEqAAqgAqgAqgAKoAKEI1E6DK46tj3+ihFgLwbPBz3h6GpfEyJdRHURVCfBnUKqAAqgAqgAuRqgd/HW7LsegXrAnwDZRESoIw+ORNgEuz10kWLYVs1fZl0KYDU6kq5akcEBOigL+MuBZBCZakPlI8gmkIcfBN96PECFk9vpFT2nZcuU5VyVSmOnglh8EO88+LDimsBpMMRinDLS1dySznrnIM5fxd0c/BSLL0U9GJaLm/QwdU+mDBpVj6YUFOLuf0HFkab8p7EEmkAAAAASUVORK5CYII={scale="+$scale+"}>"
+!endfunction
+
+IBMEntityColoring(backpack)
+!define backpack(e_alias, e_label, e_techn) IBMEntity(e_alias, e_label, e_techn, #232F3E, backpack, backpack)
+!define backpack(e_alias, e_label, e_techn, e_descr) IBMEntity(e_alias, e_label, e_techn, e_descr, #232F3E, backpack, backpack)
+!define backpackParticipant(p_alias, p_label, p_techn) IBMParticipant(p_alias, p_label, p_techn, #232F3E, backpack, backpack)
+!define backpackParticipant(p_alias, p_label, p_techn, p_descr) IBMParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, backpack, backpack)

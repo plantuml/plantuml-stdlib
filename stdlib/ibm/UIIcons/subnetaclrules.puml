@@ -1,0 +1,13 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $subnetaclrules [64x64/16z] xS61400000CXXFdRpkElMXu0001m
+
+!function $subnetaclrulesIMG($scale=1)
+!return "<img data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAAIGNIUk0AAHomAACAhAAA+gAAAIDoAAB1MAAA6mAAADqYAAAXcJy6UTwAAAAEZ0FNQQAAsY58+1GTAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAAOxAAADsQBlSsOGwAAAf9JREFUeNrtm08oBFEcx2fWipIiSv4f/Sm5Ou5BOSkhSbn6d5NwdOYgpfw5ODhQXCTc/NkDB7mIHJwk2yq1JRIh6zvtHKZJY3Z3/r193199Du8182beZ9+fX28bRWEwGDKH6nL7taALdIAGUA8+wRO4AqdgAzzmmoA6MAMGQf4/136BLTDlhwg3BHSDNVCS5n3PYBhseykgz+H2xsA6KMzgXu2eHl3EuVcCwg621QcW/6i/AavgENyBb9AIImAItBiuDYEF8AB2RJoC1eAalBrqPsAEWAZJi+ePgnlQYKh/Bc0gJsoU0H75NkP5HXTanM8X4Az0G0ZkgS5z120BIQfaqAEDprpJcJRGGydg3FC+1cUIsQb0mrY6bc4vZdCOtk60gj1wINIi2G4qr1jMeav4ASNe5wFOTIEmU/lYpFTYCQEVpvK9bAKKTOU32QQIHeEAvlPS5fZVjgAKoIBArwEqRwAFUAAFUEDAVlzt0GNOSZ3jVbr8TE8zwbDNzl+CMlmnwGyudt6ugIjsa0DSz0yNuwAFUAAFUIBk5wHZZoIqRwAFUIDQawDPBCmAAiiAAmTeBdLNFFWOAAqgAAqgAAqgANfygDiostiH/Yy4FyMgGuAfMOqFgGmQCGDnE/q7ZRV2Pph4AZtK6m/xclDsc8e1L8v2ldT3RTGFwWAwsohf+sJHYoy4/pIAAAAASUVORK5CYII={scale="+$scale+"}>"
+!endfunction
+
+IBMEntityColoring(subnetaclrules)
+!define subnetaclrules(e_alias, e_label, e_techn) IBMEntity(e_alias, e_label, e_techn, #232F3E, subnetaclrules, subnetaclrules)
+!define subnetaclrules(e_alias, e_label, e_techn, e_descr) IBMEntity(e_alias, e_label, e_techn, e_descr, #232F3E, subnetaclrules, subnetaclrules)
+!define subnetaclrulesParticipant(p_alias, p_label, p_techn) IBMParticipant(p_alias, p_label, p_techn, #232F3E, subnetaclrules, subnetaclrules)
+!define subnetaclrulesParticipant(p_alias, p_label, p_techn, p_descr) IBMParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, subnetaclrules, subnetaclrules)

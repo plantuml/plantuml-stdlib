@@ -1,0 +1,13 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $numbersmall2 [64x64/16z] xS61400000CXXFdRpkElMXu0001m
+
+!function $numbersmall2IMG($scale=1)
+!return "<img data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAAIGNIUk0AAHomAACAhAAA+gAAAIDoAAB1MAAA6mAAADqYAAAXcJy6UTwAAAAEZ0FNQQAAsY58+1GTAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAAOxAAADsQBlSsOGwAAALRJREFUeNrt2MENgjAUAFAwTsBNwy66hos4BFPpCOxg9OYK+k3q0YCXQtr3kn+CpOXT39+0aQAAAAAAqEebcazXxPNHxCXiHHHLNanNin7GLuIUMUb0NSbgq4sYak7Ax6HEPeDfPaKteQU0tZeABOSyzTxen3b4Y2p7v9xLTECfenw3491riSUwzPz4ZzoNFrcCpnr7IkfhnAnYr/EMog1KgPuA1dwHLDI3JSABAAAAAABQjTeKIxFo9MClWAAAAABJRU5ErkJggg=={scale="+$scale+"}>"
+!endfunction
+
+IBMEntityColoring(numbersmall2)
+!define numbersmall2(e_alias, e_label, e_techn) IBMEntity(e_alias, e_label, e_techn, #232F3E, numbersmall2, numbersmall2)
+!define numbersmall2(e_alias, e_label, e_techn, e_descr) IBMEntity(e_alias, e_label, e_techn, e_descr, #232F3E, numbersmall2, numbersmall2)
+!define numbersmall2Participant(p_alias, p_label, p_techn) IBMParticipant(p_alias, p_label, p_techn, #232F3E, numbersmall2, numbersmall2)
+!define numbersmall2Participant(p_alias, p_label, p_techn, p_descr) IBMParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, numbersmall2, numbersmall2)

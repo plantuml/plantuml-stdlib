@@ -1,0 +1,13 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $savetime [64x64/16z] xS61400000CXXFdRpkElMXu0001m
+
+!function $savetimeIMG($scale=1)
+!return "<img data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAAIGNIUk0AAHomAACAhAAA+gAAAIDoAAB1MAAA6mAAADqYAAAXcJy6UTwAAAAEZ0FNQQAAsY58+1GTAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAAOxAAADsQBlSsOGwAAAtRJREFUeNrtm79PFEEUxwf2rhENFhZ2WFEQf1QkVhorS/8AMSFBaZRCCYTgUSgSG6OVhT8aTWgMMdHGBBIwweLK4woLqEiugR4biPqd5JFcLno7b2dn3gDvJZ/s3e7tvfl+b/bN7FzWmBMePQXOWUtc0w3Oh3s9k10mpEI6v/lGHNn8vSe9BqgBaoAaoAaoAWqAGqAGqAFqgBqgBqgBBWIf9Am2v4/aIGbAJrgCTgmItzntYsiWpAEfwWnwQsAAm/MM+ODzJZlnI3aoC86AiuGtF14FT8AtsAtajHPnwSSogSVJA2z8IPE1hglW/DroBwPgEVhxNGGeci2QgUbaAEOiOSY8BWfBEHgNRsA58IUhvlZGwyslXpNztK11vC8rShdfZg/g9gRbOx6C2+A+uAAedLkEgogPYYCrCS265m233ybx9djiQxnAMeEr0ZIQH9KAIoUxuvjQBuSZ0G0eEEV8DAM6TbDXeyNnHjAKXsYQH8uAQxOGwXXwPmce8AZsgLvH7Xa4x7j/Hf8nVqNi9YBnYIy6dCNnHnAApgoWziQNsOIf0/aVwzyg4Tl6JGVAu/g5xjxgLZYJmZD4GPMIUQN8xUczIUtYfBQTMkHxnBWhYCZkguK5K0JBTMhKFr/g2O2LrghZ0dUyTShjRWi2TXzwuXtbDrv9BZ5L9oCL4BPN3ycZ53FXhDpjFZynGeNnqiEiBkyDS+Cm4f1Dw1kR+l98BxPgN1iWugQG6c5tz+GztvDdo9fvSHA953i32KPcg5J3g1WGeFv1rxHrtM/1eDcTqkfhdnicuvoQsU37XI8fi/WAJKMSKc9bcAf8pPcDtM/1eLK3wyO0XfSs+kVHBdf8Ij2gSNX3GRWSqgG+Vb/oqJCMAb5VP9qooKNAolU/2qgQahTwrfquo0LSo0A9p3L7HtcaoAaoAf7h++zw4WOrTaH2/ys/69lh3yLYFP4Bm0bDL/4C2Tn8RGyUkH8AAAAASUVORK5CYII={scale="+$scale+"}>"
+!endfunction
+
+IBMEntityColoring(savetime)
+!define savetime(e_alias, e_label, e_techn) IBMEntity(e_alias, e_label, e_techn, #232F3E, savetime, savetime)
+!define savetime(e_alias, e_label, e_techn, e_descr) IBMEntity(e_alias, e_label, e_techn, e_descr, #232F3E, savetime, savetime)
+!define savetimeParticipant(p_alias, p_label, p_techn) IBMParticipant(p_alias, p_label, p_techn, #232F3E, savetime, savetime)
+!define savetimeParticipant(p_alias, p_label, p_techn, p_descr) IBMParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, savetime, savetime)

@@ -1,0 +1,13 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $choroplethmap [64x64/16z] xS61400000CXXFdRpkElMXu0001m
+
+!function $choroplethmapIMG($scale=1)
+!return "<img data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAAIGNIUk0AAHomAACAhAAA+gAAAIDoAAB1MAAA6mAAADqYAAAXcJy6UTwAAAAEZ0FNQQAAsY58+1GTAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAAOxAAADsQBlSsOGwAAAgFJREFUeNrtmj1Lw1AYhW8koOCiuAgVulYc9B/YzcWh4ubiILr2r7SjioNuDoqDi5v+A7v4sekgOCi4ODilb2iKIdw09+O98cacA2e55Lbpc+5LSThCQBBUZwWe31+LvE/eIc+Qb1Me/FcA0+Rt8gF5fcJ1XxxAAg/T3iUvGOw3AhJUJG3hCogMwAb5hDzrYuYY0r4it8lzmvvek++8LgLwQm46mDmdtD/Jp+Rj8mNOaKsJiLYGkDfyUnohlFzUzNkcf0EnsQ4QnbTvyEfkC/JPwbWDxH0NII3sQmhxjIuArBik/WRxP3lAepM2hYwzlwUiGNO2AWINYMti5lylzaaQ4YipAHGddikATGdu2Ze0ZZpinrm+ZN3bH88NoJICAAAAgHpL9jAU1ek3YwQAoOYKdWdGQZHlfu7Pi3ACAAAAAAAAAAAAAAAAAAAA8D4A7wMwAgCA9wE4AQAAAAAAABUB0JKsdclrZf4Nlq2iPuG4gZJupcUVnPuqA9Btj5r2Fr0CwNkVzgNiDaAr/rYrHB/vQ/KD+G2kxbDmFYFYA+jZHDHDtD/IZ2JUrXtOrefV9FSAKAOIC8UNxpkzSftSuOkKv6o86GyKUZNzURPmGEhHc19e2rbKAvkm75FvVJ+sOKqxXGk7U2BB1ASIq7RLAWADxIu0uQGozNy5T2lDEARlNQR4P6TP8OpHBAAAAABJRU5ErkJggg=={scale="+$scale+"}>"
+!endfunction
+
+IBMEntityColoring(choroplethmap)
+!define choroplethmap(e_alias, e_label, e_techn) IBMEntity(e_alias, e_label, e_techn, #232F3E, choroplethmap, choroplethmap)
+!define choroplethmap(e_alias, e_label, e_techn, e_descr) IBMEntity(e_alias, e_label, e_techn, e_descr, #232F3E, choroplethmap, choroplethmap)
+!define choroplethmapParticipant(p_alias, p_label, p_techn) IBMParticipant(p_alias, p_label, p_techn, #232F3E, choroplethmap, choroplethmap)
+!define choroplethmapParticipant(p_alias, p_label, p_techn, p_descr) IBMParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, choroplethmap, choroplethmap)

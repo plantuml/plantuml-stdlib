@@ -1,0 +1,13 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $play [64x64/16z] xS61400000CXXFdRpkElMXu0001m
+
+!function $playIMG($scale=1)
+!return "<img data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAAIGNIUk0AAHomAACAhAAA+gAAAIDoAAB1MAAA6mAAADqYAAAXcJy6UTwAAAAEZ0FNQQAAsY58+1GTAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAAOxAAADsQBlSsOGwAAAuRJREFUeNrtmVuIDmEYx8fabBvlkJKtzVIOOSS7bLkh4sIhFy60pCQ5bIoLSSKsSJJEySlxhQtuKJIL2gsX+EK0OZS2hEQUKzksfk89b03TzGL7Zuad93v/9bvYb2a/vvl/8z7z+2aCwMfHx8fHx6dS07cX/zMHbsBGqIESdFdSAXLwo2AwzIXl8B4eV0oBhyN/D4LFsBCeQ6frBexKeL0OVkAzPIB3lVaAyWhYB/VwD7pcL+ACTIA+odeqoFGLqNEivrtawCS4BmOgIbKtH8yEVfAZHsIv1wpog1dwFu7DFBga2WeADskl8BKeulaAiRzYCXgN0/TAw5FilsJs6NDinCog0FNc5Og4/ISpuhTCGQGrYZyeNR9dKsBEht4tOAMDYbIOx3AmQisMgbvw1aUCTOQyeAUuwki9TEY/w3RYEzp7ul0qwETE6By06zdfF9lem4daZ1mAiajyKdXmRlXp3NQ6jwJMHumg/KSDsjYPtc6zgEDX+m09I+RK0RTzmVJV67wLMJHpf11nxDCdEUEWam1LASbiA5dUrceqL6Sq1rYVYJKZWttaQGZqbXsBqat1EQpIVa2LVEBv1FqWxbOe3qwqKG7k4Bbo+i/FbJe71of+9iZFLqAsqS7wZx8PB2B+D06x1sUChsNuWJkww2RYHoU98MGlAsQBNsMm6J+wj9yh3gYvXFoC1aq+bfo7IS7tWs4d12bAItivghOXJ7AFLrs2BJt1wM1I2P4WdsJptUNnrgLy1HkvtCRs/wIHtZyucq0vGyLquh3Wx3i+uXEiCrwD3rjkAXJzYwNsVXOLy1UdcB0uiZA8SF2m1+qGhH1KeuA3XTPBWbqGmxK2d+pykNtjv11S4X9R131wBL659FugrOpapAJSUdciFJCqutpeQOrqamsBmamrjQWcz1JdbSygJUt1LcIQTFVdbS4gE3W1oQB5Flefl7qm8aPkfzMPTsIPOJa1uvr4+Pj4+Pj4lCt/ACCvzXZi9ofsAAAAAElFTkSuQmCC{scale="+$scale+"}>"
+!endfunction
+
+IBMEntityColoring(play)
+!define play(e_alias, e_label, e_techn) IBMEntity(e_alias, e_label, e_techn, #232F3E, play, play)
+!define play(e_alias, e_label, e_techn, e_descr) IBMEntity(e_alias, e_label, e_techn, e_descr, #232F3E, play, play)
+!define playParticipant(p_alias, p_label, p_techn) IBMParticipant(p_alias, p_label, p_techn, #232F3E, play, play)
+!define playParticipant(p_alias, p_label, p_techn, p_descr) IBMParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, play, play)

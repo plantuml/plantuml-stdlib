@@ -1,0 +1,13 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $tank [64x64/16z] xS61400000CXXFdRpkElMXu0001m
+
+!function $tankIMG($scale=1)
+!return "<img data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAAIGNIUk0AAHomAACAhAAA+gAAAIDoAAB1MAAA6mAAADqYAAAXcJy6UTwAAAAEZ0FNQQAAsY58+1GTAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAAOxAAADsQBlSsOGwAAAmhJREFUeNrtmTFIW0EYx19MDUKbgh0kg+nUoSKFIAUXcXCrFanBoTROCo5CpahUBAeHurgoxTg5dFB0SG2zSbq0oOAigosBhap0qsUuYsD4P7xAOF7yXpLL8+7e94PfcC/h+b7Pe999d7EsgiAIgiAIgiAIgiAIwl8EJNzjFVyBrTXeJwvH4TcvE9Ag4R5JCcEznsFV+Fi3BEQlPs8TOKZbAmTz3stZIKMG5Gu8Jwv2mP/3PY9ZhRlwCRfu64+r8goswr9+TsC9zYIHChW/Rd4HFNeCGTjnl1XAbhbUfUVQbRkUa0Hd+wLVEuD5LHCzZucV3cecwQ9wrZabBF18Z1bRBLBZMQgb4Q+TWuFKmYab8KFfE8CIw5/V7EoDmgbcCVMwIlz/AwfgjswaoGoBXIc9QhIewSF4Ag9MTkBhyfwCn8M2obuNuy2OQc3f/Rzc4EF3C5+x8QuY5t8zMgEFMvAIvhb2N2xm9PIkXJqcAIu/89uwj9eCAqxGvIO/4KmbVUDWKa9qXPHGKe3UByQNDJ7RBD+7aYSilrk8NbUTrBo3J0IBzWPM+2EvIPVA5L8wDmscX9ghNtsEnAvjdo0T0O4Qm20C9oRxQuMEJBxis01AShiPwpiGwcf4s5eLzTYBX6273+oLhOB3zZIQ488cKrqW5bE57gVu4G/4tugaO38bhi3wAv6D14oFzfr/DjgBl2Gz8PkIPKxkjf8EJw1Z7ebhVKW7wQzvn7sMCP5jqYYo6NBBse3lPnxpeff7vSyyfNovlesG3ba57HjpDey37g4kIwo2SKzJYYeiu3CLV/ycRRAEQRAEUYJbR2hd8d9hlPoAAAAASUVORK5CYII={scale="+$scale+"}>"
+!endfunction
+
+IBMEntityColoring(tank)
+!define tank(e_alias, e_label, e_techn) IBMEntity(e_alias, e_label, e_techn, #232F3E, tank, tank)
+!define tank(e_alias, e_label, e_techn, e_descr) IBMEntity(e_alias, e_label, e_techn, e_descr, #232F3E, tank, tank)
+!define tankParticipant(p_alias, p_label, p_techn) IBMParticipant(p_alias, p_label, p_techn, #232F3E, tank, tank)
+!define tankParticipant(p_alias, p_label, p_techn, p_descr) IBMParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, tank, tank)

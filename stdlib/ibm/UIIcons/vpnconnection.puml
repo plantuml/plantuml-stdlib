@@ -1,0 +1,13 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $vpnconnection [64x64/16z] xS61400000CXXFdRpkElMXu0001m
+
+!function $vpnconnectionIMG($scale=1)
+!return "<img data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAAIGNIUk0AAHomAACAhAAA+gAAAIDoAAB1MAAA6mAAADqYAAAXcJy6UTwAAAAEZ0FNQQAAsY58+1GTAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAAOxAAADsQBlSsOGwAAArVJREFUeNrtm09IFFEcx59mSWGHSmGTBAvDY6coPPgnIkIWhYSivIgXDx66CbVBBIW6N1k8CB6iQ1DQTZQWKQXpIIJ0EhGqtbRIWsGbuLR9f+wvmp6zMzujMzuz+/vC5zBP35vf+86893szb1YpkUhUzqrw+XynQZRpBBEu/wG+gCkmXWoGUMdjYBBU2/zvLhgHz/wwwg8DroHX4IzDer/AbfDOy+COeNz5fvAK1LioewL0gg2w7FWAVR52/jqYMDnHGngOpsF3LjsLOkEfuKjFR22sg9kwDYE6sApOGcoy4AEYA3t56h0F98GwZtw2aAZbYRkCo6BN63wXeAF+W9Sjv30AS+AOqOTy48zMYQda6UHnKbUNaGVDDoOf4TpGDRjSZqAN6OZb+a9WQMJFOwmuaxwe3WEwIKodT/IQcKoM17Vq27MsQDPxUx7Hx/iWjPFqzU5N2nHyAPElbdrOpwtghDNRhjPII/CpEANotl0AtYaye9zYZU5JVqrXjlMHMCBl07aZzoNFbeF1l+O/Aj7bpcE34FaAnkuyh3iOl7y4spwDOkr44e+GH5NgqGRmwPsS7u/bQibBh6BVmwRJPwucBLMeL7ft2mvgSTBiEn+sEANoDd+SJw2uh+AqfwVXwRNwky8IpdPHZhkp3zpgjdfiYVWKnyyLshIM/SQoBogBYkD5yG2OPgfioF3l3ucVU/RecY5foHzzwwDq/EeVe9cfJNEewiWnJrgZAvEAdl5xTHE/5oC2AA9px7G52Reo93it71RZi9gkC4gBYoAYIAaIAWKAGCAGiAFigBggBogBYoAYIAaIAWKAGCAGiAFiwD+52RfYVP+/f88GqD+bftwB8wG+oPN+GEC7sOkAdj6t9n9ibys3P5jYUblPTmlbnD6lO1nkjtP2OP3Urke52B4XiUTlrT++0Wwuz+Sz6QAAAABJRU5ErkJggg=={scale="+$scale+"}>"
+!endfunction
+
+IBMEntityColoring(vpnconnection)
+!define vpnconnection(e_alias, e_label, e_techn) IBMEntity(e_alias, e_label, e_techn, #232F3E, vpnconnection, vpnconnection)
+!define vpnconnection(e_alias, e_label, e_techn, e_descr) IBMEntity(e_alias, e_label, e_techn, e_descr, #232F3E, vpnconnection, vpnconnection)
+!define vpnconnectionParticipant(p_alias, p_label, p_techn) IBMParticipant(p_alias, p_label, p_techn, #232F3E, vpnconnection, vpnconnection)
+!define vpnconnectionParticipant(p_alias, p_label, p_techn, p_descr) IBMParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, vpnconnection, vpnconnection)

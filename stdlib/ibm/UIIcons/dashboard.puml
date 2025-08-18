@@ -1,0 +1,13 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $dashboard [64x64/16z] xS61400000CXXFdRpkElMXu0001m
+
+!function $dashboardIMG($scale=1)
+!return "<img data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAAIGNIUk0AAHomAACAhAAA+gAAAIDoAAB1MAAA6mAAADqYAAAXcJy6UTwAAAAEZ0FNQQAAsY58+1GTAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAAOxAAADsQBlSsOGwAAAkRJREFUeNrtmz8sQ0Ecx9+j0QULA2WUkEZSg9Cxo0SCwSJNjGJiICoG/7ZisdpZLBV/wtaRxkAiYjDSTl3KIkR9L05yOa/ea19b7979vsknzV3vvb779u5397u0hkEikXSWWaK+G2yBGOhUvI85kAZL4MmJAazzN6DNZ192HgzIJjRYNEz6sPMG71NSrrQyIObjKf+rbwGLRiGHccKpilW+n5vPDzkZAVqJDCADyAAygAwgA8gAMoAMIAPIAD1lOsjefN1nmgJkgOYKVBgnVFKRRgAZQAaQAWSAi1WgUhVAFlyBFDgGH1WI4mYF15v/YUAL6OVMgwewAM50nQJ94ASse2lvUe8YwDq+BlZ1iAFsCvSDKTALmoT3mAmX4MLPI+CVd3IeDIFnaSTseGEVqtcD3IJR8CbUsdExolMMYCbsSXXjugXBfak8qJsB91I5pOIqUOAR/ket4MVD+b5Z6xGQlcrhMq4N29xLiSlwLZXjZVwbt7mXEgakpPIMiDi4LsLbijpS0QD20I9COQhObUyI8DZBoe4OnKtowDtYlOq6QAbsgiho5kR5XYa3EQMXu8enqrkAGwXsV5cJoY7t9ec4dtrwQh7gNhla4a+JMpesTY7y2SAbvss84dkGPTbtPXkgUo10OMUD3AQYA8OgQ1jn3R6JKXEewALjIacWhyhu3vdULuA5kQG6GxAokeyE/si2VFbWyQhI+/gLTzsxgG1s8j7sfN5q09ZY4sDjwPj+u1y7dPihonJ8DzJpWPxtjkQi6a0v25Fc2CRhWnAAAAAASUVORK5CYII={scale="+$scale+"}>"
+!endfunction
+
+IBMEntityColoring(dashboard)
+!define dashboard(e_alias, e_label, e_techn) IBMEntity(e_alias, e_label, e_techn, #232F3E, dashboard, dashboard)
+!define dashboard(e_alias, e_label, e_techn, e_descr) IBMEntity(e_alias, e_label, e_techn, e_descr, #232F3E, dashboard, dashboard)
+!define dashboardParticipant(p_alias, p_label, p_techn) IBMParticipant(p_alias, p_label, p_techn, #232F3E, dashboard, dashboard)
+!define dashboardParticipant(p_alias, p_label, p_techn, p_descr) IBMParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, dashboard, dashboard)

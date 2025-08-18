@@ -1,0 +1,13 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $volumedownalt [64x64/16z] xS61400000CXXFdRpkElMXu0001m
+
+!function $volumedownaltIMG($scale=1)
+!return "<img data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAAIGNIUk0AAHomAACAhAAA+gAAAIDoAAB1MAAA6mAAADqYAAAXcJy6UTwAAAAEZ0FNQQAAsY58+1GTAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAAOxAAADsQBlSsOGwAAAm5JREFUeNrtm7mLFEEUh2vG8dZANhHRP0QUERHxWNcDF8VQvJVFRRRdk4VVWXFVvA8QI1G87wMREcVIBAMDWUFcA2Pxwmv9iu6gKXoCtburut/7wZdU0NX1dU/Nq5oaYzQajeQMCuheFsB9WA1v4bUkAe1wDsZAC0yFfUV0XA9g8AvhLDQSbeOK6ty3gPnxk2/4ugGfAtrgPAz2+QR8CWiFCzDE9+fPh4DZcNEZ/C8pAmbCJRiaaPsNyyUImAFXYJgz+BVwpuoCpsPVlMHboud01eeAaXANhifaBmAtnKr6JGgruhswwhn8OjgRQgmap4ApcDNl8B1wLJQFSF4CJsMtGOm0b4DDIa0G8xAwCe7AKKd9ExwMbTmctYCJTQa/GfaHuB/QaFKs2Nl5fEZ9bIXeUDdE0t6AkxkOfjvsMQEnTcCEjK69A3abwJPHOvwD7Axttv8fATVT4dSN8KgAFaACZKdRwnse0DdABagA0XNATd8AFaACVIAKKPBb4G8rr1JtiOTxBoyFQ9BZVgH9GV27G7aVUcBKeJ/R9XfBlrLNAXfNv+8M2x9G7sHoRFuPiU6A9EqYA57BLPjktO+FjVImwadNJNiDjx1S6oAnMAc+O+0HYL2UQuixiY7DfXFWcvYX4jVSKsFHMDdFwhFYJaUUfgjz4Ksj4aiJToiJWAs8MNG54G9O38dhmU8BRR6XfwPPYVGi/qjFH5F3saBkuqomwKYPXjSRUPchwMdy+HYs4LvHB+F9P8Aen2t3JIjbELkOi+GHVAE29vzwEvgpVYDNZVjqSOgvqvNQ/jX2Cl6a6ITpx3hPos9oNBpNzvkDm35h/EfjbnMAAAAASUVORK5CYII={scale="+$scale+"}>"
+!endfunction
+
+IBMEntityColoring(volumedownalt)
+!define volumedownalt(e_alias, e_label, e_techn) IBMEntity(e_alias, e_label, e_techn, #232F3E, volumedownalt, volumedownalt)
+!define volumedownalt(e_alias, e_label, e_techn, e_descr) IBMEntity(e_alias, e_label, e_techn, e_descr, #232F3E, volumedownalt, volumedownalt)
+!define volumedownaltParticipant(p_alias, p_label, p_techn) IBMParticipant(p_alias, p_label, p_techn, #232F3E, volumedownalt, volumedownalt)
+!define volumedownaltParticipant(p_alias, p_label, p_techn, p_descr) IBMParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, volumedownalt, volumedownalt)

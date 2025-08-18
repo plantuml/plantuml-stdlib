@@ -1,0 +1,13 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $lightfilled [64x64/16z] xS61400000CXXFdRpkElMXu0001m
+
+!function $lightfilledIMG($scale=1)
+!return "<img data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAAIGNIUk0AAHomAACAhAAA+gAAAIDoAAB1MAAA6mAAADqYAAAXcJy6UTwAAAAEZ0FNQQAAsY58+1GTAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAAOxAAADsQBlSsOGwAAAudJREFUeNrtWsFqFEEQnd0OKIRcJGJc9KQYEPaaD/BgYNUET3uIh/yA4B+E/IGfsGA8RFBQ4x48+AGLYCAE3OBNMRECHkJuifE1voFh0c1Md9Vut9sF7zC7M9VVr6uru6s7y5IkSTLJUhtj22ch2FKf9AhIBCQCEgGJABeZDtCX6VER0AS+AO2AnG/TpqY2AbaBD8Ac8DwQEtq0ZY62NbUIsCH2HpjlswmAhNx5w+dZ2lh6ONQ8G7RyCqwAm2N23skWU7HRXaAPPCxET53Pff4fjfMuBIRAgmgUGkcjhpHwCdhTcv4B8EJyCPoshDbZ8GnhN0tKT7H3e2xDLP8YT4OKkfAZuAP8UCTgGHgJtIBLEsm3JhiavRLOX+e71oFbwFX+vs9h0wXeAl/P0XMFWOC7URREGsA6sApMnfPuCdAB1oDv2oaNgoAlYAOYqfjdEfAIeKNpnFF2/jF786LDtxc45f3UTKxGuec7njONjdBFYHsg+wdfD2gw7OtCNm5QZzQErDuM+WEyQ51REHCN2V5aVqk7eAKWS0x1LjJF3cET0FJMrC0NVgflzHMNcUORgGG6nezWiICGIgGNGIZAVKJBgOb6XVy3xl7gnWIitLvFe6FHQFcxAroxDIHX3NJKywl1B0/AN26CpKVD3VHMAmvcz0vJEXVGsx22Bu9yP++baH9Rz8fY6gF9FjMWPUiwzj8BnmkZqV0R6rGYcT/7U+GpGkVtTee11gH/WsL+10XRiS6L52d1dsxrH4zkztt7APOZwMGIEXLe6rnMnrUnN8fKzt/OhA5k60LO5zLP0NSSBbZR7ECvSxpG0Pn8oPKVIgF7mfDRvBF2fhS3RETvJ5jInBcnoUr11l48eirovO9t8bzNYocY2rhVNhFXSYJW4V3gcIw9/zcSipc0Dmlj6Vmo6iyww7n+IADnB0k4oG07VT52OcCwDdxUnOtdSdhyscl1HRCS8142pbJ4IiARkAhIkiRJkomV3xAQtsSBKxSJAAAAAElFTkSuQmCC{scale="+$scale+"}>"
+!endfunction
+
+IBMEntityColoring(lightfilled)
+!define lightfilled(e_alias, e_label, e_techn) IBMEntity(e_alias, e_label, e_techn, #232F3E, lightfilled, lightfilled)
+!define lightfilled(e_alias, e_label, e_techn, e_descr) IBMEntity(e_alias, e_label, e_techn, e_descr, #232F3E, lightfilled, lightfilled)
+!define lightfilledParticipant(p_alias, p_label, p_techn) IBMParticipant(p_alias, p_label, p_techn, #232F3E, lightfilled, lightfilled)
+!define lightfilledParticipant(p_alias, p_label, p_techn, p_descr) IBMParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, lightfilled, lightfilled)

@@ -1,0 +1,13 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $videochat [64x64/16z] xS61400000CXXFdRpkElMXu0001m
+
+!function $videochatIMG($scale=1)
+!return "<img data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAAIGNIUk0AAHomAACAhAAA+gAAAIDoAAB1MAAA6mAAADqYAAAXcJy6UTwAAAAEZ0FNQQAAsY58+1GTAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAAOxAAADsQBlSsOGwAAAkFJREFUeNrtmj1LA0EQhteonRZBGz/SiNaKWFkF4j9QGwsRRbETUvhRaKGFxkKwC0JULGyMVWyF/AARrU1n1CoExE5IfIdbIS6X5JLcxdvbeeAtskXYndt9d2buhGAYhmEYhmEYxkQ6qowPQ8dQFBrwyVw/oCy0CeW9DAAt/gnq8+lDK0ATbgUhZDOW8PHihZxbwq0/swtAVIOj69ocu2zGBh36RLsp15hjLZagXagExaFMvQAEhTB0Bs1VjJ2YEgA6IldQRBkfdXIEdKYb2pdXZahZD9CVMegammrVBHVkGTqFepTxUr2dENJ84WR0aShls/hXKBbkHVDN6IhbaBUqtiMAZY/rkmrc2+zgL2gDOjfBA9TFP0AL0ItpJliSlese9O1GKqwTZHSLskx2rRbw+uw2S07J5Mj915wYXVB2QFzm8nT2D6BLr6pBv5JRCxmv+gFGwQEwPQDtzARbvS0or0+6bYI67YCkvAZHoAvoRhZDxgRA7eZQq+tZtNgg1d0DIrIoOhRWNyjQmWCth7gNzTRTDOm8A0rKb2qFPQqrO2REAGKyGKqEukIpWSeEgx4AqgDHhdX9UZl1apC6m2BR3gYrwuoG2RmkEZkgtcAmhdUVamh9QUqFyf2noSMbgzSmFqCW2E4VgzSqGPo1yLQynvMiEfKzQc6Lv6/H151kcW+isffv/8E7NORVNZjVZIt71hDZEtaHSH6lIOfoCp02Y5/Ces1Mn8f1Q70+WTh9Jncns7y8YBiGYRiGYRiGaYEfEV5Y1pRt/pYAAAAASUVORK5CYII={scale="+$scale+"}>"
+!endfunction
+
+IBMEntityColoring(videochat)
+!define videochat(e_alias, e_label, e_techn) IBMEntity(e_alias, e_label, e_techn, #232F3E, videochat, videochat)
+!define videochat(e_alias, e_label, e_techn, e_descr) IBMEntity(e_alias, e_label, e_techn, e_descr, #232F3E, videochat, videochat)
+!define videochatParticipant(p_alias, p_label, p_techn) IBMParticipant(p_alias, p_label, p_techn, #232F3E, videochat, videochat)
+!define videochatParticipant(p_alias, p_label, p_techn, p_descr) IBMParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, videochat, videochat)

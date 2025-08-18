@@ -1,0 +1,13 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $cough [64x64/16z] xS61400000CXXFdRpkElMXu0001m
+
+!function $coughIMG($scale=1)
+!return "<img data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAAIGNIUk0AAHomAACAhAAA+gAAAIDoAAB1MAAA6mAAADqYAAAXcJy6UTwAAAAEZ0FNQQAAsY58+1GTAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAAOxAAADsQBlSsOGwAAAvJJREFUeNrtml2ITkEYx4fX+qrdlxSy1oXkhiJ3SisXW4iWCJEbF1axVi7kYlPrzrtFQlm3bqSoldqkkJQbZaW0aZNYX1E+S4TX/+nMxenpvMv5mDnPOTNP/WrnnH3nzPzPzPPMM3OU8ubNm8s2oUBtnQE2gDVgIWgFc0Fzmr5OKkDHO0E3aAdNWVcuWYCVoAZWmXyIRAEquuOHXfQBVXAJrG1w/yEYBPfAC/AGfCuLAFXdsaUR966AXjBS1ilQ0W+ed/452Anul90H9EcM+7tgK3hfdidI3v5QROc7wE/TD58oQIAa80U07LfY6LwEATpZnK/rOf/BVgPyFqCbla+adHjSBJipl7fht99ruxF5CrCere2HTcR5yQJ0sPJgHo3IU4AFEaHPKQHmsfJrL4BjAvCdnK+uCSDCJO8I1W2k8s6PAC9ATs+d47oPqLHyqKk5LnEEUPq7m10748oUoL2/s+ztPgLnXBFgP1jGQt0B8FuSD1gHLui/94KhDB3fcXbtogq2wkVFgQEwXzOQseOrhsqfwRFXwmCU4zsG3kkUoAuMabrK6Phsx9qD4DS7Rmf8dyQIULHwjMts7pNtBIvBdxUccv4pggAUHW6r4Nh6pMHqLcp6VPB1R9imgxXaL+zT9T2V7gSTRgfq4Ntx7s8G58ucC9wAbXrebwebwCz2P61FmAI0TFeDLzo6jMb4Lc3xZ+AaOKkXPzws9kkfAUP6Taa1X+Cm3xARvB8QNxdImjvQLnB4Z7hZ5bAznEUukDQ68HOAJa5NgQesvEtKFIjr7ZNGBxJ/W6i8HFz/x5qhkLlAI6Oj8SdgUejaKxV8DzxcplxgvLXBS7AjdK0F7NGrw4/gkzL8rVCcEWBqp+hERhsjY0naFWcE3NILIXpL9GnLqYwEoHqnqvQfRSdql4SFEE2Fo2BzzOV1lLWZ9AFpcoH/rZ+ywsfgB5gGJoMpMevpM+UDpFo9TZ98LmDR24s0m+cChRHAKbNxLuDNmzdvYu0vCoiOpQqrwRUAAAAASUVORK5CYII={scale="+$scale+"}>"
+!endfunction
+
+IBMEntityColoring(cough)
+!define cough(e_alias, e_label, e_techn) IBMEntity(e_alias, e_label, e_techn, #232F3E, cough, cough)
+!define cough(e_alias, e_label, e_techn, e_descr) IBMEntity(e_alias, e_label, e_techn, e_descr, #232F3E, cough, cough)
+!define coughParticipant(p_alias, p_label, p_techn) IBMParticipant(p_alias, p_label, p_techn, #232F3E, cough, cough)
+!define coughParticipant(p_alias, p_label, p_techn, p_descr) IBMParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, cough, cough)

@@ -1,0 +1,13 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $batchjob [64x64/16z] xS61400000CXXFdRpkElMXu0001m
+
+!function $batchjobIMG($scale=1)
+!return "<img data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAAIGNIUk0AAHomAACAhAAA+gAAAIDoAAB1MAAA6mAAADqYAAAXcJy6UTwAAAAEZ0FNQQAAsY58+1GTAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAAOxAAADsQBlSsOGwAAAyxJREFUeNrtWjtoVEEUHc0asVDwQ/BXCTYiyWJjJVrZKLigcdUNiDaxsRW0MlgICzaC6BYxRVZlo2CEdGlcKwULRSPiglVitlpFUumy6x1yAuP1Zd+6b+b5xncvnGLmzR7mnrkzdz6rlJiYWJptjSPe3YQi4QhhR0SuRcJzwhXCvA8CaOffErZY5m0QhmyLsNaBAEUHzitwFm2TuhDgsMMpa50746CTOy1Ps3YH7kRGgFcmAogAIkC6rZcs0I5pNykRIAKIACKACCACiADx7wP+qzwvESACiAAigAggAogAVu8DwuyL+v32tm2ZO/ERUHU4YFUfBNBveA0HvA1wJ14A/Xan3/AeqeWHzai2CC7r74Ku1oAVEc5JFkhpFojbIp1eJQISlOc7jdx2Qj0ifyBHLxFQjXmQcoTPhHwEjjw4cjYEcJXnV3N+irCBUDZE0JF7ijAZ8JtJfMsYzpfBMcVF6AsguM7KY6z8nfBQLf/5aRthoyVnxwJC9gVhvTFYOThyh3CJMBjAo+tOE86ij7cMMbS/JwjjhKUoWSCOPK/n6wWMXsYY+atd/n5vQNsmOOu+ZIEKYQQdj2pNcFV82wdUENbXWP0PQgnT8T3q9iMyRwn9rH2RO++LAOsIw6xugXCc8IbVvwTuE2YIu4xvw1jffobl3gXl4N9Yqvf3Bb2iP2YjfzDAeW5ZwisWCVqEJ2FpsJqwCOC5u9SF8wptSiFcgVNA5/mjhK0J2dtze/AXXLrtZaNcADpGwDzCx9Z53rZ9sNk24/t5Po33Aftstk1iGuTZoszmbQGrezdWCFgTRnyLgGlWHsUaFWZZtO3E5YUAzwg1o9yPTU42xPkZtgeogUuFnQaTZi2cDA8ZdZsIFwkDhK+Eb3D2ANL4PcLmgP3DrK3dWZyWZydCq4ehvpQ4b94nfCLM+bAG6LCfYM7rUbzJ1oTVrIa2TZb1JsCd+AhYwkidRD9XQvg24S7hHQ5GgwFp8wa2wLMY8RwGW58EzxBe+zIFPsJRfY113pi/LWxzn6o/r/CG8K2F8hxEOAbnp327D9Ad3qOiXYtXcMq1ci3+L6zuiiP1L0O/AMIPmqp2h6wcAAAAAElFTkSuQmCC{scale="+$scale+"}>"
+!endfunction
+
+IBMEntityColoring(batchjob)
+!define batchjob(e_alias, e_label, e_techn) IBMEntity(e_alias, e_label, e_techn, #232F3E, batchjob, batchjob)
+!define batchjob(e_alias, e_label, e_techn, e_descr) IBMEntity(e_alias, e_label, e_techn, e_descr, #232F3E, batchjob, batchjob)
+!define batchjobParticipant(p_alias, p_label, p_techn) IBMParticipant(p_alias, p_label, p_techn, #232F3E, batchjob, batchjob)
+!define batchjobParticipant(p_alias, p_label, p_techn, p_descr) IBMParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, batchjob, batchjob)

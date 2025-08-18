@@ -1,0 +1,13 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $directionmerge [64x64/16z] xS61400000CXXFdRpkElMXu0001m
+
+!function $directionmergeIMG($scale=1)
+!return "<img data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAAIGNIUk0AAHomAACAhAAA+gAAAIDoAAB1MAAA6mAAADqYAAAXcJy6UTwAAAAEZ0FNQQAAsY58+1GTAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAAOxAAADsQBlSsOGwAAAfVJREFUeNrtmLFLw0AUxutdB3F1dVNw8Q8QJ8GhIg4dFBd3QQT/BONm9y4FF0EHEdFRcdGl0KFjF10dROjgpiDUd3CBcKS5q7nLe0nfB9+Ql/Q136+P5Hq1GovFYrFYLBaOTrTRJJHDR+B1ffwyTQDi8LHQIEgC4VEhSCLh0SBIQuFRIEhi4QuHIJHCf4FnLbVCIAik8I2Uaxv6XFJR6HWCQArfS7m+hwFBEAmPBkEQCo8CQRALXzgEQTB8oRBCPgTzhLdBIDkBp4kJ8BF+HIRIf5cX1T0DVTf2DX72FN6EoBZHLZ83XA8wVa1A09rzDLWQleA4zTjWggsLwLxjrbIA1hxrlQVw5Fir1IZIrAPwcUp9EfwB7lcZwB74PGPyNsGv4EEVAajwl8arVy1ufhIbIQpMs0gIEjH8L3gXfKvPCwwIEjH8Pvge/KbDNjEgSMTw14naAAtCSABb4BuH8C4Q+npSSgNgGfwAnnMMb4OwDb4DD8sCQI39yoThsyCot8QS+KoMAFbBZ0btEHwxQQ8F4VP/8rEUgEfwO/Wl8I5x/ATu/KNPR382qzdJABvGcTtHr7alN0kAC8ZxN0evrqU3SQDm//o8T+5h6D2DEADMnZ1Rjl4jS+/S7geQEQNgAAyAATAABsAAGAADYLFYLBaLxZo2/QEUWIf8gVSroQAAAABJRU5ErkJggg=={scale="+$scale+"}>"
+!endfunction
+
+IBMEntityColoring(directionmerge)
+!define directionmerge(e_alias, e_label, e_techn) IBMEntity(e_alias, e_label, e_techn, #232F3E, directionmerge, directionmerge)
+!define directionmerge(e_alias, e_label, e_techn, e_descr) IBMEntity(e_alias, e_label, e_techn, e_descr, #232F3E, directionmerge, directionmerge)
+!define directionmergeParticipant(p_alias, p_label, p_techn) IBMParticipant(p_alias, p_label, p_techn, #232F3E, directionmerge, directionmerge)
+!define directionmergeParticipant(p_alias, p_label, p_techn, p_descr) IBMParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, directionmerge, directionmerge)

@@ -1,0 +1,13 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $webcast [64x64/16z] xS61400000CXXFdRpkElMXu0001m
+
+!function $webcastIMG($scale=1)
+!return "<img data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAAIGNIUk0AAHomAACAhAAA+gAAAIDoAAB1MAAA6mAAADqYAAAXcJy6UTwAAAAEZ0FNQQAAsY58+1GTAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAAOxAAADsQBlSsOGwAAA2VJREFUeNrtmltIFFEcxsfVxIpAErHChyiJ2MDIh7AXI+hFCQwrlooeCqm2C3QxK6QeytjogvVQ2YUiw6LAjS6wrUIRvoUVWUEkREWbLgWmlpGy2Xfab2EJXNqd2Zk5O+eDH3s78z/nfHvuM5qmpORoZfF1HdjgsLpfBtdc/LAGlDqo8qWss5YT9+UTUOkQAx7E3ricPgYoA5xuQI4FeRaBZWA+mMbv+sALcB+EM9WAucAHqjn9fgAf+dtCsB2MgTtgP3iTSQbsBkfBF7ATtIFP/6QpBivAXvAS7AMnM8GAM2ALOAv2gOFx0glDToOL4ASZBbbKbMAOVr4uiX9zmNe8A8dBDzgl4yxQAo6B8yk2ZdECLjBGiYwGNIJ+NvtUVccYjbIZkA9qQBMY0hFniDFqGFMaA8SeYgJHe71qY6xKmQyYxymvx4BYIsZXxpTGgBmg18B4nxlTGgNGwEQD440xpjQGvAcz2XeNUDFjSmPAW1Z+jkF7iALGlMaAAPgGPAbEWstYAZkM+AlawTYwVUecAu4FWhlTqpWg2Pr+Bs06YjQzhk/GpXAIbASruKlJZS+wkjFCsu4G/WAXKzMbbOICKZEKuYGq5rV+2c8DmriQEf14KU24MU7a1az8JC16bn9T9gOR6WAzm3E2+AXyEqTPY5opPANwcxzolc2AXFAPGvj5KrgFHoNIguuugBawmFNoPTnCc4ERGQxYAK6zz4v7b4eTHMSEQQ/JIXAAHOR6QHSL53aeBZaDTq4Cy9n89YzgIcZYxJidzMOWBtRy794OysAzA2M/Zcx25lFrNwOqwDlOWWLeH0xD1xpkbD/zqrKLAW5OV0H20UgaZ5UI8wgyT7fVBojrL4EBLfqQxagJ64pR5jXAvF1WGuDlYLdei57emqV+5lnOMlhiQC7n+dugQzNfHcy7gWUx3QAPV3o+zTr5WAaPFQZ4ubLrstCALpbBa7YB4iaFuKV9V7Ne91iWfDMNqODmJmgDA4IsS4WZBohV2Xfw2gYGvGJZysw0oCidW9QU1McymWaAOLUJ28yAQjMNmMxmZxf9YJmSVuxZ4QBH0u7/vC72WG23TQxItjwi/d8nY7PjWkIyNx/DNusCyZZHpG2x0R+opKSkpKSkpKSkpGSysuLeP3JY3ZfoOQ9QyhT9AQHCssUJaqNnAAAAAElFTkSuQmCC{scale="+$scale+"}>"
+!endfunction
+
+IBMEntityColoring(webcast)
+!define webcast(e_alias, e_label, e_techn) IBMEntity(e_alias, e_label, e_techn, #232F3E, webcast, webcast)
+!define webcast(e_alias, e_label, e_techn, e_descr) IBMEntity(e_alias, e_label, e_techn, e_descr, #232F3E, webcast, webcast)
+!define webcastParticipant(p_alias, p_label, p_techn) IBMParticipant(p_alias, p_label, p_techn, #232F3E, webcast, webcast)
+!define webcastParticipant(p_alias, p_label, p_techn, p_descr) IBMParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, webcast, webcast)

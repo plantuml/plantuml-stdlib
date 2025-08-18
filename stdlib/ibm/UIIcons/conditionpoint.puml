@@ -1,0 +1,13 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $conditionpoint [64x64/16z] xS61400000CXXFdRpkElMXu0001m
+
+!function $conditionpointIMG($scale=1)
+!return "<img data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAAIGNIUk0AAHomAACAhAAA+gAAAIDoAAB1MAAA6mAAADqYAAAXcJy6UTwAAAAEZ0FNQQAAsY58+1GTAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAAOxAAADsQBlSsOGwAAAjZJREFUeNrtm7tKA0EUhkcPISBJY2mV3s5CSwNWaSSib2CvpaWmtLDQziewEQQbbYSkjAg+QnwDBcHaMziBJeQyuzNz/hN3D/zFXsju9zG72ZlhjKmqqqrKXCug67Y4l5xdtz3gnHE+yiBgj/PAaU7s/+YccF4kb4YA8I+cxpRjdc4RZ8gZ/UcBY/i1OefUpCUQGP6U88zpoCQQGP7GgX6iJBAYflwwCaQAHiqBlMDDJJAieIgEUgYvLoEUwotKIDD8hesPDFASCAx/zmlnOkTiEggMPy6YBFIAD5VASuBhEkgRPEQCKYMXl0AK4UUlkFJ4MQmkGF5EAimHTy6BlgA+qQRaEvhkEqYJaLkLNJTBh0qwcw53nK9FAm45W0rhQyTYeYcNzv0iARa0qRg+RMI65yp70qopeU1rAduczcx2x5kczviNvvmbY2wL37tteb05x0841xP7nnwegTfOsXtmtEooAm8nXw99XoL2hFf311FTKKEI/A+ny3n3/Q4YOVBtEorC75sZ0+7zvgS1SYgO79MX0CIhCbxvbxAtIRl8nvEAlISk8HlHhKQlJIfPK0BSggh8EQESEsTgiwpIKUEUPkRACgni8KECYkqAwMcQEENCHwUfS0CohAEKPqaAEAkw+NgCYkoQgU8hIIYEMfhUAkIkiMKnFFBEgjh8agF5JEDgJQT4SNhBwRsju2TGZ8GEKLxUC1jUEmDw0gKyEuxEZX3imB237xrhRVOlXzZXVVVVlbt+AVhGgqKzoYskAAAAAElFTkSuQmCC{scale="+$scale+"}>"
+!endfunction
+
+IBMEntityColoring(conditionpoint)
+!define conditionpoint(e_alias, e_label, e_techn) IBMEntity(e_alias, e_label, e_techn, #232F3E, conditionpoint, conditionpoint)
+!define conditionpoint(e_alias, e_label, e_techn, e_descr) IBMEntity(e_alias, e_label, e_techn, e_descr, #232F3E, conditionpoint, conditionpoint)
+!define conditionpointParticipant(p_alias, p_label, p_techn) IBMParticipant(p_alias, p_label, p_techn, #232F3E, conditionpoint, conditionpoint)
+!define conditionpointParticipant(p_alias, p_label, p_techn, p_descr) IBMParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, conditionpoint, conditionpoint)

@@ -1,0 +1,13 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $DVR [64x64/16z] xS61400000CXXFdRpkElMXu0001m
+
+!function $DVRIMG($scale=1)
+!return "<img data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAAIGNIUk0AAHomAACAhAAA+gAAAIDoAAB1MAAA6mAAADqYAAAXcJy6UTwAAAAEZ0FNQQAAsY58+1GTAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAAOxAAADsQBlSsOGwAAAr1JREFUeNrtmb1rFEEYxvf0ThAURA/8QG0U7rCyt1ARBbG00kZQC8FGLMR/QQsrv4ooooW1WAhRISnsNRcJgRQaQvxOEUUw4dRnYBbGl9nd2dmZdeGeHzxwszsTdp995515J0lCCCGEEEIIIYQQQkaLluXan4IxP6B5aBwag94W9P8IbTXaXehbRt8t0Fej/QnaVvL5JB+gCegKtCBvrvEwbQO0D7oEvYFuQp2c/lOi3c/p2y8Y68N26JR+1p0hDDBZC12EnkHrHA3o5fy9XgQDUjZD10MbkHIEutFwAxQH5YW2R55Qc/IwdA3aZVy/AN2x5ITYBrQK7ps5Y0eICFBJ7TG0XyQVNR3OW/rPQKseBqzqsVGpMgWWdGY1OWrp9wuaNdp7MiKvre+lzOqxjTVAMSnauzP6DYzfHfGipjGdjDGNNWBRtDdWSISxE2AUA1xx2Qv0R8mAkYuABZ00XQ1Ysm1bY9BO6kN90UOOBpT5+mVqg8X/FQHypbq68DGLoG4N4T/ZFANk0qsjAdr2LbVPARnyr2pIgLnlcJ0GqBphqLfM8qXN30OHM4asWmBGRJOqV642YRVQ/ITmMl7a/D2n+/pwT7TPFH3kOg2Q29ssA6psgR9CK6JyPdEkA6YsRZEsgqrM/8/QU3HtXEwDZH39vYQBaVEki6CqCXBMtI/bzgFCGSBPWOY9VoLQK8C4eI62zgXBDbCdsT0vGPMOWhbrv5m1l3WfKvyGHohrZ5OMkyMfA1RiUaesr5N/T1mHlvCzbVsHOREwSMofe9u4r41I2WuJVud9gOsD3XVcv1WIH4i8AXoPvYCOiWQ4EWsVeAld9lgJehWKoLLJ8CS0KbQBKuxv6Uy74lkUxSqCnkBfjPZ66HSIrXDZf41JpvW0almm2nRAA9QHeSQiU02D2wkhhBBCCCGEEEIIGWH+AoTdkj/DiJ5+AAAAAElFTkSuQmCC{scale="+$scale+"}>"
+!endfunction
+
+IBMEntityColoring(DVR)
+!define DVR(e_alias, e_label, e_techn) IBMEntity(e_alias, e_label, e_techn, #232F3E, DVR, DVR)
+!define DVR(e_alias, e_label, e_techn, e_descr) IBMEntity(e_alias, e_label, e_techn, e_descr, #232F3E, DVR, DVR)
+!define DVRParticipant(p_alias, p_label, p_techn) IBMParticipant(p_alias, p_label, p_techn, #232F3E, DVR, DVR)
+!define DVRParticipant(p_alias, p_label, p_techn, p_descr) IBMParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, DVR, DVR)

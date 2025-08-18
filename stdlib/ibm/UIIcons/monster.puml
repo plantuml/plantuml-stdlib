@@ -1,0 +1,13 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $monster [64x64/16z] xS61400000CXXFdRpkElMXu0001m
+
+!function $monsterIMG($scale=1)
+!return "<img data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAAIGNIUk0AAHomAACAhAAA+gAAAIDoAAB1MAAA6mAAADqYAAAXcJy6UTwAAAAEZ0FNQQAAsY58+1GTAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAAOxAAADsQBlSsOGwAAAydJREFUeNrtWj1oFEEUnrusgUOjoAjmUKuAlgcBbUQ0oiKCBrXSWqwULNRGwWBQzhRCqkCwFcEfxFbQcGjAQoxVtFRiIsiJf4g/xfkN+w6Wcd3d2X2zO3uZBx/c3O6be++bmTfz3o0QTpw4Wc5S0Xx/I9AEdgODlvmyBDwBLgALJgiQzs8B6ywf1DbQSEpCVaPjZgmcF2RjM+nLOgTsKtHSTmyrp9FpPWP8MC2dCFtZZkBPiiNguRPgZdBdDXzVePcMcJLa08Bkjvr/lT6Ndy8r7VNAP50NfkUYfg64DRwE1hBGDOir9o2ZJqAW4YhqeC2kP279kTQE6GxlnZjnn4Ab9PkssFZzNmbVT+WbxxhPpMFXMjiYVT/3IHgpoSFdw4NBa5KCWh76xmLAHmAK+EHJRy3E8KvAceCREujk55Zh/bE8loAckfHAiOhuU5z6X/JeAmGGjBeo706CnDPA5sqP7rYdWSnySlz5SSqDFEj3h1WKqiWu/LBUiqolr/xkrhR5Jaz86B59IytFbhcwEHWzJilc/bhzgCPAEZBvDKhY1o+bAWlnwKKyX3ZsGCmmXWgxyQyY6eEBn0lCgMya2j3ofJt8iyVggbKmW5RKll2WyJdG0nS4S8KJlCc023MDtwuYOgfEReUK83N3DnAEOALKVQ/gfu7qAXkT8E1pD1jkx0CMrSwEqIlE3SIC6nFJD0cMeA9sCbSHgTcG93mdNT8cYiv7DGgp7VGLZsBojK0sBDxU2oeBIQucHyJbomxlIeAlMB9oy4tJExYQMEG2dGWebOXLmAJyBLgXUj+4XpDz58W///cdBe4n7aBP8wclu/uATYHv5FWZn8CzApy/pgzirPCv1wlTBEh5TLWClYFZtJcKDi+Ef7fH9Jq/CZxWnP8IHAA+sxcNQmSn8C8u9Svf/wEeUBB6LvxqzPeMDq8S/n/824FDFPFXKO/8pkFo6Xae5TwtSbgLrC84CMqRP5bG+bRLoCtvgTvANiUm5CmzNO1fpe2Aq8oiI6+84bU1J8dfAxdDdqTCCOhKg9boDmAzsIEhaZKJzQfgHfCUYsyccOLEiRMG+QsCbr2qsyfbJwAAAABJRU5ErkJggg=={scale="+$scale+"}>"
+!endfunction
+
+IBMEntityColoring(monster)
+!define monster(e_alias, e_label, e_techn) IBMEntity(e_alias, e_label, e_techn, #232F3E, monster, monster)
+!define monster(e_alias, e_label, e_techn, e_descr) IBMEntity(e_alias, e_label, e_techn, e_descr, #232F3E, monster, monster)
+!define monsterParticipant(p_alias, p_label, p_techn) IBMParticipant(p_alias, p_label, p_techn, #232F3E, monster, monster)
+!define monsterParticipant(p_alias, p_label, p_techn, p_descr) IBMParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, monster, monster)

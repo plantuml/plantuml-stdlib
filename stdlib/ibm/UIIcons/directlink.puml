@@ -1,0 +1,13 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $directlink [64x64/16z] xS61400000CXXFdRpkElMXu0001m
+
+!function $directlinkIMG($scale=1)
+!return "<img data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAAIGNIUk0AAHomAACAhAAA+gAAAIDoAAB1MAAA6mAAADqYAAAXcJy6UTwAAAAEZ0FNQQAAsY58+1GTAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAAOxAAADsQBlSsOGwAAAx9JREFUeNrtWr9rFEEYHW+FaGXERkFIIWgTIcHCJiGXWESw1CCIFv4ZgpiLNrFLE0ttBLHQoI1YBD1NQFshCDZWKUUlNkKIvsFZmdvbHzPffLO74vfgFfdj37337nZ2duaUEggEAoFAIBAIBP8j9jHrHQfvgnPm8VvwJvipJXpRCzgLvgAPZ57/Bp4H3zesl4uEMfxLcDTntQPgAvgK3G5IL2oBqdlDJe/xMc2tF7WAIrM98A0442maU+8yeAN8Bv6KUUCZ2SXwNdjxMD0GbjLp6fAPwQnwFLhWVEISKXwKH9Pfjd5UoF4afr95fRw8AT7lKsA1PKWEdXAEnCbq6WNXrPAau+AyuMVRgG94agkb4AOCXtc8b4e/Cj7mGAOo4SklfCbqKZ/wPgWEhqeUoAJLuA2uclwGucLXXcKki15CDL9EDF9nCU56CTF8j2EG2YoSkprCa71rZnRvVQlJTeG13gXzuN+mEpKawqd63baVYBdw0hgbZQpfpNc3Bl1NXzRT2x2mEgb07ALugWcYBzyKXp7pg+Ax8AnTQDugZ08bp5hHe6reopnE2JgJ8FGq1yk5cI95vXAv0nuD9DqZczP7jd0K+FCq3mLOL2Uz8BdQqGePAe/A6+YcSTFrFhL6hA+m6OWZ1YugV8AvTOEH9OwCdsygsWBGy9ASKHpd61KZLpLoFeAPTOGH9LLzgG1zneQqwVevbxWhzc4r2vJ3UfghvYTBdIwSfoJ3YocvuxdouoQNRVvu9gpfdTfYdAnRw7usB/wrJfQo4V1XhLTpkczo3KYSeubb9w7vWoBeZ18pmDU2XUJQeJcCspsMKqCEc2pwtTe0hODwVQXkhd81NxaTnqa12fvmVFpnKIElfFUBemNxIhNer7Ovepq2zU6bY0JKYAtfVYDeVdUbi+NqeJPB1XSe2dPgI2NaMeiFzBhLC9AfrHdV9cbishreYakyPVdidoswMM5yh9fg+IuMyx8afMxy6wVfBqmXNKpZbr3oBdimL+WY/qr8/9TErRe9gNS0HjOOgkfAH+Bz9WcV9mML9AQCgUAgEAgEAoHgL34DpQyNnxuMNb0AAAAASUVORK5CYII={scale="+$scale+"}>"
+!endfunction
+
+IBMEntityColoring(directlink)
+!define directlink(e_alias, e_label, e_techn) IBMEntity(e_alias, e_label, e_techn, #232F3E, directlink, directlink)
+!define directlink(e_alias, e_label, e_techn, e_descr) IBMEntity(e_alias, e_label, e_techn, e_descr, #232F3E, directlink, directlink)
+!define directlinkParticipant(p_alias, p_label, p_techn) IBMParticipant(p_alias, p_label, p_techn, #232F3E, directlink, directlink)
+!define directlinkParticipant(p_alias, p_label, p_techn, p_descr) IBMParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, directlink, directlink)

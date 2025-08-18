@@ -1,0 +1,13 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $communicationunified [64x64/16z] xS61400000CXXFdRpkElMXu0001m
+
+!function $communicationunifiedIMG($scale=1)
+!return "<img data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAAIGNIUk0AAHomAACAhAAA+gAAAIDoAAB1MAAA6mAAADqYAAAXcJy6UTwAAAAEZ0FNQQAAsY58+1GTAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAAOxAAADsQBlSsOGwAAA0tJREFUeNrtmj1oFEEUx+fuRJH4AVHRBFGwsBP8QsXGE0VMoSB+NIIWfnWx0HCFjQEFoyAoCiKiohDFQgstRIIeWgQLMSD4gc0JIakUjRc/sIj/4d7BMrz9uLuZ3dnb+cOPY+d2Z3bfvX3zZt4J4eTk5OTk5JRV5XzaF4MBsBl0tTjGOHgBSmA0DQaQDz8C5mke6ytYaZsRpjFtAwYeXlCfsu/9TV4/ZeJHzzMnFA0avGjbK8B5QHfEONHML9fNfD8LXAUHkzBAPuEfYBV4Aw7Y5AFxqRecBzNanLFSZwAZDG+BHbbGANMaoanWCiURA6x5+KRjQFx5QM42D7AqE0zCADIdfpxlA8g1wU5wHPzNcgy4DF6B+2B5UnlA0pngW7AG3LHJA8aUnH1K43hjTFs1qXWAnweUDY5XFpaJM0CJApWJ4FeyzQAFpm0CDIJFYD6Y3eIY4zTt7REWbok5OTk5OWVZXH4tFylnRG231putnQXnDN2HzkoUNw37Vqa4POAZM/dPB1vAPQNJUr0StV5DzsFJ9rmC0u1BynMCM8HvAd5yxMANmqpEqapXpkJT4Y8BnfQYuLFijK98Mcpq8DXY5tPBBwM3pbsSpSqwMsV5wPOAtfuxdpsFOAMMU9T3qgK2gm9ZMIDcp3ugtM1sx4f3M4DUDeV4IdiYJQMM0zvv1cksGUDqhHK8S1hS0IzLADJ9fKi03RW1wkYmDFD3gh+e47ngJdjNnNtFU+goxZB1aTBAIeR7mRZ/Ans9CYr8Q8M+sIHWBRUKktJj1oI5YDWlzZ3gacgYp5Xjfs3PGNh/lMrQI1H7N8cVpX07MQl+gQXMtYdodWmtopbG5J+Y/tGnek0HwanD9legkdrgdfAZ3AZLNN5Do5Uov7WCTNOvRRiroSDIzQxybX0R/NFkgLKGPpaCC82M1UxxdIJmh2WitktUCTi3GqG/VitROZp1wjZT2MpUoYWBqzTtXQJPwHtqm/S8WqdoeR1m0EYqUf2M6/cGnB9YmcqJdEu6/jvFaEO0nxGpqp1P8cNzrv8THBYNlPTTbICjtEfhVR/4ojMVtlWdTNQfoqlaaypsq36L2lb6Jkq9pev3CP8d7baVXJzdFG24V+nk5BSP/gM/0o4W4PGu/QAAAABJRU5ErkJggg=={scale="+$scale+"}>"
+!endfunction
+
+IBMEntityColoring(communicationunified)
+!define communicationunified(e_alias, e_label, e_techn) IBMEntity(e_alias, e_label, e_techn, #232F3E, communicationunified, communicationunified)
+!define communicationunified(e_alias, e_label, e_techn, e_descr) IBMEntity(e_alias, e_label, e_techn, e_descr, #232F3E, communicationunified, communicationunified)
+!define communicationunifiedParticipant(p_alias, p_label, p_techn) IBMParticipant(p_alias, p_label, p_techn, #232F3E, communicationunified, communicationunified)
+!define communicationunifiedParticipant(p_alias, p_label, p_techn, p_descr) IBMParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, communicationunified, communicationunified)

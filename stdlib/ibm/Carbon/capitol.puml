@@ -1,0 +1,13 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $capitol [64x64/16z] xS61400000CXXFdRpkElMXu0001m
+
+!function $capitolIMG($scale=1)
+!return "<img data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAAIGNIUk0AAHomAACAhAAA+gAAAIDoAAB1MAAA6mAAADqYAAAXcJy6UTwAAAAEZ0FNQQAAsY58+1GTAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAAOxAAADsQBlSsOGwAAAlZJREFUeNrtmr9Lw0AUx9Pa4tJJFx3EooKIUAfFxUE6FTdBJ9HBKiq4dve/EHUoWEUdRYfGRXEtLnYRN3+A4i6C9Uf9HryC1LY2uVxyad6Dz5LLvbv75vXy8nqGwcYWaAt5PP4CSNdpy4I91RMIeyzAHEjUuJ6gNuUW0SAKC2Cq6lrercHDQd8DdIiAcXBR4ydQCHIEFMFBkPcAg/cAFoAFcMXaPBhzFMxSFpgEXSAOBsAXeG7FVDgK1sEKGALvtNB7au8F3aAd3IBtsAk+WkGASVrQIDgG++AMvFbdFwMpMA+mwS1YBZd+FiBNi78Ga+CqyX5jYAuMkAhZP+4BYsE7YBfMgAcLfZ9ADvSADfBiQTwtBJgAR+AQLIJPGz5EnxPQDzLgHDz64TUYpacn0tklUJbwVSYfRaoNRP0gwDK91sSuX3LAX4l8xcm39gKIcD11+GuuQD4zugswDProJ+C05cj3sM4CiPf4NzAVCGCS75TOAsQpu3tTIIDweUdjaFsPEOlsh/G3wuOUddIY2kZAjD5oVNkXjaFtBFR2bFUVHserxVwQYQHcsXyd8G103eQIYAGCLUDZYGNjU22yRdFGJzzcMqmTJLKbYL0THm6Z9EmSkOQTTRje/rsrEiZxvqBoN2LCmj1R1yMmIvk1l9dgUVbma3ImyALYEyBvM9z/69dMu2lzXJMjgAVgAVpCgLLKfnxUtsn77Ka6U4rbpfvxHsACsACcCXIEsAAsAGeCnAkGNRP8XRUW53oqBdFmq6xW73faZOabrBUBVhdS9DiC/TZf/ewHBhF5RWe1AV4AAAAASUVORK5CYII={scale="+$scale+"}>"
+!endfunction
+
+IBMEntityColoring(capitol)
+!define capitol(e_alias, e_label, e_techn) IBMEntity(e_alias, e_label, e_techn, #232F3E, capitol, capitol)
+!define capitol(e_alias, e_label, e_techn, e_descr) IBMEntity(e_alias, e_label, e_techn, e_descr, #232F3E, capitol, capitol)
+!define capitolParticipant(p_alias, p_label, p_techn) IBMParticipant(p_alias, p_label, p_techn, #232F3E, capitol, capitol)
+!define capitolParticipant(p_alias, p_label, p_techn, p_descr) IBMParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, capitol, capitol)

@@ -1,0 +1,13 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $tides [64x64/16z] xS61400000CXXFdRpkElMXu0001m
+
+!function $tidesIMG($scale=1)
+!return "<img data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAAIGNIUk0AAHomAACAhAAA+gAAAIDoAAB1MAAA6mAAADqYAAAXcJy6UTwAAAAEZ0FNQQAAsY58+1GTAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAAOxAAADsQBlSsOGwAAArVJREFUeNrtWj1MFEEY3VtJtDBgQ4KS2NlJCVyjIRRSEGNjMBorawqM+NOx22mCCYVWBOhIaDVEpUE70MRGG0NBMMGeqzQW+CZ+JJPLHDd/OzsD30teNjs7392+dzPfznx7WcZgME4zGp4+Z46OZYB7PvSpoceT+EI6L1MaAbln8YU0Gk68Ae3ikzQh9yw+ORPyCsQnZUJekfhkTMgdxbcU/VopmZA7ip9Q9J1IyYTcUfyWov8WXTtIwQSbJCiE3eggvpsJSY6AUlrdHZCwbY247TYTCsNV4jNw1EKTiHnqeyksbv43uKkpvt2EMfCFxdPDxPAj8R/APvCcjuEmU+C5oXjZBBPxc1Ku6CNBo4bitXNOnsUPIWgDbB7Tp9kmPthmqAqUiqdOLwlsGojXyjlnPNxwoRDgik90HJPazoJTdJQxRQYZi499CnQaCVmXNqOnTew5oLTYe5Sp5wBbEwqb6ZeCATomWIlPyYDjTLAWn5oBKhOcxJsshWMzwecjl8FgMBinFi67wVvgR/Ah+APcMYy/6RjvBbYLofPgIjgADoIr1GYSvwRetIyv3YAZsF8676e2UPG1GjACPlG0i7bhAPG15oBx8E2mrr2JSs1t8Au4W1G8d+j8veQS/WoPKHHp4C24DH6WfnXb+F+hDTg0iH9J/Wctv3+e7uFRwFHf8LUbfCUJ77FIYgvgY2n4T8eyDii6xOyD90nAEURZWrwAuQZe6BK/B94FX0tt78Cv4PVMXfisajutNQJaJPobuAaug38U/d6DV7L/r7LugVfBy3TtJ/gdXCWz/naY9+IFyCR4BxyiNUJvxmAwGAxGdPUAV0RRT6jrxUg09YS6DIimnlCHAVHVE0LngOjqCY0AoqOuJ7jWA1xRRz3BWz3AFVHUE2zqAa6ou55Qhh4BXE9gMBjR4h+4eb33DXSiGgAAAABJRU5ErkJggg=={scale="+$scale+"}>"
+!endfunction
+
+IBMEntityColoring(tides)
+!define tides(e_alias, e_label, e_techn) IBMEntity(e_alias, e_label, e_techn, #232F3E, tides, tides)
+!define tides(e_alias, e_label, e_techn, e_descr) IBMEntity(e_alias, e_label, e_techn, e_descr, #232F3E, tides, tides)
+!define tidesParticipant(p_alias, p_label, p_techn) IBMParticipant(p_alias, p_label, p_techn, #232F3E, tides, tides)
+!define tidesParticipant(p_alias, p_label, p_techn, p_descr) IBMParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, tides, tides)

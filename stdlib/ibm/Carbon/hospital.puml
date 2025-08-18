@@ -1,0 +1,13 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $hospital [64x64/16z] xS61400000CXXFdRpkElMXu0001m
+
+!function $hospitalIMG($scale=1)
+!return "<img data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAAIGNIUk0AAHomAACAhAAA+gAAAIDoAAB1MAAA6mAAADqYAAAXcJy6UTwAAAAEZ0FNQQAAsY58+1GTAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAAOxAAADsQBlSsOGwAAAUhJREFUeNrtmk0OgjAQRkE5hYdg6Z5lr2DixoO50MQrwM69S27hKbQokIa4oHbKT/u+ZBJihiKPmek0mSSJXOlK//dR28lxjbO262alAA7acof783aNJFtx9D60qT/vLbuLTew1IFQAzReuYgYQfQSMVhbQu9wHVX74W0EEBB4BxY9tTlEDABBPCphSRIBlBEicrqZU3p4FxGqA6+lqatXabtI1wOV0xS4AAAAAIGgApdFfz+lbSfsSAQBYl16efK1yMQT170sKAAAA9AFEAADoA+gDSAEAAIA+gAgAAH0AfQApAAAALLZGeOkDfEyI2M4afKa2Q0oBm1mDfmp7LvmaERo7a2CbVuJ9wFgASxicUD582QUAAAAAAAAAAAAAAGJVavTk++Q7hOyq7iBUC/tKqps2V1sjEnZCiz9bk/aVVPPMywzgl6c3ZF1KNOL+NAcAAAAASUVORK5CYII={scale="+$scale+"}>"
+!endfunction
+
+IBMEntityColoring(hospital)
+!define hospital(e_alias, e_label, e_techn) IBMEntity(e_alias, e_label, e_techn, #232F3E, hospital, hospital)
+!define hospital(e_alias, e_label, e_techn, e_descr) IBMEntity(e_alias, e_label, e_techn, e_descr, #232F3E, hospital, hospital)
+!define hospitalParticipant(p_alias, p_label, p_techn) IBMParticipant(p_alias, p_label, p_techn, #232F3E, hospital, hospital)
+!define hospitalParticipant(p_alias, p_label, p_techn, p_descr) IBMParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, hospital, hospital)

@@ -1,0 +1,13 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $logodiscord [64x64/16z] xS61400000CXXFdRpkElMXu0001m
+
+!function $logodiscordIMG($scale=1)
+!return "<img data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAAIGNIUk0AAHomAACAhAAA+gAAAIDoAAB1MAAA6mAAADqYAAAXcJy6UTwAAAAEZ0FNQQAAsY58+1GTAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAAOxAAADsQBlSsOGwAABGBJREFUeNrtmmmITlEYx49lMISsg7EPYTLZxxLZCcmayJJkzy5r+YD4QJYsWT5QkqVIsmTfEh/GkrUs2SK7GNuQwf/pPurtuss559475n2df/2a6b7nnnvu/57lec69QhgZGRkZGRkZGf2fKhRh3VVBB/AFZGvWUQ20Ba/AtygaWTjEuuqArqA7aAfK8vGtYJRmnUvBMP7/BjgDDoFz4GsYjS4Q8PxUMIQb2cilzHeQBp4q1l0T3HN5SHTzh8EucBDk5LUBzcEs0F+yF+0BN3lYkGnJfF5V/v0R//0EnoNnIAMMkKibhtc2sBHcygsDVoAZ+XROWwlmqpxQUPECzcDUfDypTwOtozKAym6IeOUIKmrjJpAUxTI4DoyNg6U9hSfJ82H2gFJgSRzFN/NA+TANmBKzrseDSoL5YRlAT396HEa5EziSDGzApDh7+n9UTKYX+BlQlJeWeNUIUCaIAX1BhTg2oLhfHuJnwOgEyHgnet2nlwG1QKcEMKA26KxjwFCNUDm/aqCOAT1F4qiPW9TrlspSFJUZ4IK3QRYHJB39ZmIP5fAmyAtQF7TRzGApPKadpbOyBnTXTHoolx8OTtqW0oVgjmJd+zj/eB1zrAHYDppqtK2HkwFuN0mRXxPFC2Szy1m247ngBP/fQbKu/bwZ8tl2/I2wdoH6ycb6MfolrO05qTlAx+HF4E6A3//oKz/5nx5GT9RoX3OnNLmgS/SXrlh5rpO7NtENbZGo6wB46VPmNHig2MZkp17tZECGyoYC6xF4K1HuckhlSJc0ekFjGQPSNSqW3aLOCamMSjl7UORrQKpGxdWF3O5wrZDKqJTzPCcsA0pJhs19Jcr0lliCK4FWURlQRTNoWezTC1ry8uWnNIkkbJHGPOV4b04GlNM0IJNn+SSXeWWvQm6xCvRy+Y1eyIzRbGMJmUgwSeiLosAWYJ2w3tIU5QhsHO/QqCxZtBzuBjt57U/lG28foH3JURtAqs8GBBXF/IOZsFSEe+FPryGQJBJXBbhXes4BuQlsQK49fnAy4EMCG/CRk6L/1oBsmWVQx4DrCjF8GKLc41QYBjhFXO9AF1BastIfwnoXN5nzeJph69knmxD0nTdJaK+CXtHf5ciyuOT59GAXgGv2WdFJdPOrwUiFBtK6v5zX7l+8OdJNWHuLDTVv+jE4Bo6A4zyG27IJ/RXqoc9oxgvryxMhY0BsXL5GWN/ryOodn3ch5lhJjg8acu9I4WvX4N9pK42+AnsP7gvrg6hbthS7IteZptAWuuHZYIdbAb8M7gA/AXo/SO/Zykp2tcsOs2+W+Hu7TEX0qdxtSQNorC8T1icznqm6zMYnrZ0XwWYe3+k+426CfZyFqKscVhfyMH89GASO8vwkghoQuwFBM+9a8IRTy4q2MtRb5kY4+7/heL6d7fhDzhCH83j/ohIaBlEmuz2IJ84MNidK0epyBVTmDJPG9xl7gPMvVD0Pr5XCiY2RkZGRkZGRkZGRpn4DlFXCfjlIDNIAAAAASUVORK5CYII={scale="+$scale+"}>"
+!endfunction
+
+IBMEntityColoring(logodiscord)
+!define logodiscord(e_alias, e_label, e_techn) IBMEntity(e_alias, e_label, e_techn, #232F3E, logodiscord, logodiscord)
+!define logodiscord(e_alias, e_label, e_techn, e_descr) IBMEntity(e_alias, e_label, e_techn, e_descr, #232F3E, logodiscord, logodiscord)
+!define logodiscordParticipant(p_alias, p_label, p_techn) IBMParticipant(p_alias, p_label, p_techn, #232F3E, logodiscord, logodiscord)
+!define logodiscordParticipant(p_alias, p_label, p_techn, p_descr) IBMParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, logodiscord, logodiscord)

@@ -1,0 +1,13 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $campsite [64x64/16z] xS61400000CXXFdRpkElMXu0001m
+
+!function $campsiteIMG($scale=1)
+!return "<img data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAAIGNIUk0AAHomAACAhAAA+gAAAIDoAAB1MAAA6mAAADqYAAAXcJy6UTwAAAAEZ0FNQQAAsY58+1GTAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAAOxAAADsQBlSsOGwAAA5hJREFUeNrtWktIVFEYPqORlVRQBlGLmEVRQYarIldBLaKgWklBQeWm7CGmUGFIGEYvoYe6KaYWBbWqwEUQuOoxmxZuBBeFi8CIhIgQUZv+H74Lf2fOjHPHe8+dez0ffAznv+d1vzlz7vm/O0o5ODg4ODg4LFRUWxxrMfEK8TjxTYE6j4j1xE/EWRuTWmTp5vcQ+4kbiTniM+KQVmc38SQxRTxGbCG+C3tiVRZunse4hZtXuME+rAi5OvpwjbGJeFOUYy3AX+JpfHrYQmwT5TbEZJszWC2xF4CRJT7WYp3EDWCnYS/IJm0TfE88RVwmln2auI+4TdT7QTxMnEyaAHxDP4kHRWwzKHGO+NHWpKqUXWSIH+ZYJU9sTsi2ADlsiDOGazO2Nr6ofgIevhPriDu0+EPiU9uTqVLRYGuJsUQK0ISToem02JR0AZYTe4tcv4s6id0D+Hi7V5SnkPR4OckK4hLi2ySugO3Es1rsNqifA+qTJkAK2aDMPr8Qe8CvWobabyMRsinACeIuLXYep8NJfOsSjWiTCAFW47cv8Yo4KMqDiOn7xaokCHADBx8Pf4ithnqtuOahDm1jLcBOZIAS14ljhrpjuCbRbDgxxkaAamxmcowRPOuLnQNGtPkNhPm4DlMATmwatESIfb7pIm2mUUcmRA3oK1YCrCV2a7HnKt8INWEIdSW60WdsBOClvFKUfxHbfbRvRxsP3NeduAjA9vYRLXaVOO6jj3G0kTiKvitaAN3eZnzGZugX/WgrT5O6nV5xAhSyt8t5yzOLtsXs9IoSIAx7O4s+JDw7PRAE+WrsHrFWlNnevlykfs6QMJnAfbBNvgblWox1qJJWwAH1v93NuEScCKDvCfQlwWPtrxQBlhLvazG2tzMBrq4M+pR4gLEjF4BfeadFOQx7O4c+pZ2extiRCsBvcTsM38xwCOeLYfQt0YE5RCYAP5drRPkbsSvE/KILY3iowRwiEcBkb/Mz+neIAnDfF7XYvOz0cgUw2dv8b46XFgyWFyr/nyNl2+nlCnCNuE6Up5DG2kILxvSwHnOyIgBb1rqJydb2qEUBRlVAdrpfAUz2NlvaPco+ArHT/QrAVnWjQfnJCAQIxE73IwBb1HPZ27bBY7/WYr7sdD8ClGpv28YFNQ87vVQB2Jpu1mKF7G3bmJedXooAbEkPqHx7u1dVDnpVmXZ6qoQ8PWlIheEHxBZOAOXg4ODg4ODgsEDxD4MCrNEtn+4uAAAAAElFTkSuQmCC{scale="+$scale+"}>"
+!endfunction
+
+IBMEntityColoring(campsite)
+!define campsite(e_alias, e_label, e_techn) IBMEntity(e_alias, e_label, e_techn, #232F3E, campsite, campsite)
+!define campsite(e_alias, e_label, e_techn, e_descr) IBMEntity(e_alias, e_label, e_techn, e_descr, #232F3E, campsite, campsite)
+!define campsiteParticipant(p_alias, p_label, p_techn) IBMParticipant(p_alias, p_label, p_techn, #232F3E, campsite, campsite)
+!define campsiteParticipant(p_alias, p_label, p_techn, p_descr) IBMParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, campsite, campsite)

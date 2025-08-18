@@ -1,0 +1,13 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $cloudpaksystem [64x64/16z] xS61400000CXXFdRpkElMXu0001m
+
+!function $cloudpaksystemIMG($scale=1)
+!return "<img data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAAIGNIUk0AAHomAACAhAAA+gAAAIDoAAB1MAAA6mAAADqYAAAXcJy6UTwAAAAEZ0FNQQAAsY58+1GTAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAAOxAAADsQBlSsOGwAAA3xJREFUeNrtmztoFFEUhu8ma7FgFRu1CIpNUEwhKCooup1YLYIoGFHBxUZRJL5iUDHxWSha+ETBB9iIWEgqN6IkrmkEwUcT8AE+moBVChH8D3sGwjg7jzt37r3zuPCxM+zOzpx/7jn3zOGMEDkfJYPn7gIHePsSmMqLABWwHxzibRrT4AK4zNuZFKAT7AQnwVxwH5zg706BPvCTv78L/mZJgBo4A3rAM3AYvHf9Zgk4DzaCT+AYeJJ2AdaCc2AVeM2Gvwo4Zg0L4RxzBLxMmwAq7maYWWOdAN2K/bld3PhqmwC0pB0FexOK6O6V4yo4q2LpLNl6YbqELtk6NXW5mowAWoKTrmAbRQCZJU3XkF46SwmrTFN0V0zj7rCLJTI7OwP8jALMNTAbHAR18CHCxZNwy8AvSeN7wRzwIOTv6QZdB9/AFtAPFoK34LfXAeU2f0SGXuHoOhgz0k6ADZLHjkjEKQqEt8HDGSvUVrAP3AwrQI3VrJp6TFUwpnlJvgEabNN/AnT4/MGPhIyvahZiim3xHB2aL4aMfw6GbJkmugWgqTgMBmwRoWzgnMf5c8C1nxsBrBKhbFB8K0QoG3ZB4yKYFsC4CDYI4BaBlsnRvAngiKDVeBN5AI31Pt+N6r4YE5kgJUOnbZl2cVxgJdgNZvEDx1iETNDx+cEY518N9oA//JDzRqcAZDxVgz7zPj17rwPjEQJeHBHI+BfgC+9vF62qUFOXAHU++WLe/wgegUmPgsZETBGWe8SGRaJVgJ15/rpOAVQufSrcQXsMIJ+jep9THutu4wIjCkTwqig5LuCcfwHYplOAJvucEwR3hPR/VTNhnJdTJwj2yUz/uC7QlD1pgAiNkPnAWMiVJ1WZYFjjU50JVgPyhMxngkVNUBQ1QbNFEBuCYFETFEVN0A4RipqgRUmQI0JDZz5gYyaoNRnyywPmiVZXlu48QfXoYlsiCUAtMD1c4KC2tIpI36jwtU+yLZ5tPX7dFypa0agesAK8kzSiV0TvMInUwufXI0Q9NU/BY7BUtHqENoPvotU9EtbF5se4i9RbdC+CgDW+XmrMoprlJnBLtOkPCpoB7pHbNjkvlXPZKCntZwkMo62y7kiby2bpxC9Ml9DFCxO2BieR0ldmVCydmXhpSuZuZvK1uTD+LEQOXpz0i+hC5OTVWa+ls5+3L4r0dqWne/wDDIcjcWQyS4cAAAAASUVORK5CYII={scale="+$scale+"}>"
+!endfunction
+
+IBMEntityColoring(cloudpaksystem)
+!define cloudpaksystem(e_alias, e_label, e_techn) IBMEntity(e_alias, e_label, e_techn, #232F3E, cloudpaksystem, cloudpaksystem)
+!define cloudpaksystem(e_alias, e_label, e_techn, e_descr) IBMEntity(e_alias, e_label, e_techn, e_descr, #232F3E, cloudpaksystem, cloudpaksystem)
+!define cloudpaksystemParticipant(p_alias, p_label, p_techn) IBMParticipant(p_alias, p_label, p_techn, #232F3E, cloudpaksystem, cloudpaksystem)
+!define cloudpaksystemParticipant(p_alias, p_label, p_techn, p_descr) IBMParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, cloudpaksystem, cloudpaksystem)

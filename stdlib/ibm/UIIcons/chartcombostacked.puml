@@ -1,0 +1,13 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $chartcombostacked [64x64/16z] xS61400000CXXFdRpkElMXu0001m
+
+!function $chartcombostackedIMG($scale=1)
+!return "<img data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAAIGNIUk0AAHomAACAhAAA+gAAAIDoAAB1MAAA6mAAADqYAAAXcJy6UTwAAAAEZ0FNQQAAsY58+1GTAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAAOxAAADsQBlSsOGwAAAw5JREFUeNrtml1oj1Ecx595f9uiVlhekiLyUvPOuDA0id0IF8ourO1CaBcrIVakvERKLiQ2RTTcyLykNi5MLnDHFinzUl5CEdrM95evOp3O/Lf9d/57Xn6/+tSe8zz/8zzn+/x+v/M7Z08QqKmpJdmyHG3tnbgmNtYn6R6gAiRdgH4e+twKysFw0AJOgBpHbomlAKfAZuN4NDgL1oNN4H2cQ2CLNXjTVoLHYGlcBcgHh1Nckwdug32eQq/XBMgBF8FAo01cfT6457jfTlAPxoVBgL6Otr3WcVWKPqrBEuP4N1jHQdawrcASWwZfAprA0yh7QBkTnGlHQB3/bgN7wDLw2rpuBLjCWWJQD45pLZibCQ+YAS5b8fwAbKQXmPaS3jAVTLLOzQFrQAP4kObgp4DroBR8B/d9CTCMCW2U0fYZLAefOriXPNAF8IWzgXnvkQyJd+BRNwc/GNwEY9j3Cgpe6yMEtoHJVlsp33QqOwYWgGarfSg4TZFyuvFM0u90q63OlweIa/UHi7haPAkOdeFh37JAGstQMm0a84rc400n+5PrD1ht55h/vAggMX4HNLLaE/dt7eIb+wWu0mskSQ6wEmQJw6YxRT8TwTVrGn4GinkPr9PgcyrdmkbiesJkWkAxzWeTOJ7HfPPN8VsR7QaYYLT9AEXgVZRWg03MC8cd54pYRhc6zh0Es6y2CooaueXwTyZXcd2P1jnxjFtgvzHtFnPlaVot81FGK8GeNonf82A2GG+0S7JdzHzRzNliiHH+BVhFITOyHE53ff+/vcYW1gq7wS7rRS0Edx0JdQNrjNjsCLXRGwsdZbRtO8DD3t4P8GVSIs/kVOeyS+BoWHaEfJkkxdXcVdrOElfqhzNcfLWHQYAszznj39K7Oow7QpE1FSDpAoQ5CfqsM9QDVAAVIFqFkLc6Q0NABdAcEJp5Wz1ABVABVAAVQAVQAXQtkNE6Q0NABVABVAAVQAVIsLn22eRf0XlJGbPLAxqSHgKVQcdfe8bOXN8IfQ3+fqMjHyblguyYjbkqUFNTU6P9ATGTi9kE/VCaAAAAAElFTkSuQmCC{scale="+$scale+"}>"
+!endfunction
+
+IBMEntityColoring(chartcombostacked)
+!define chartcombostacked(e_alias, e_label, e_techn) IBMEntity(e_alias, e_label, e_techn, #232F3E, chartcombostacked, chartcombostacked)
+!define chartcombostacked(e_alias, e_label, e_techn, e_descr) IBMEntity(e_alias, e_label, e_techn, e_descr, #232F3E, chartcombostacked, chartcombostacked)
+!define chartcombostackedParticipant(p_alias, p_label, p_techn) IBMParticipant(p_alias, p_label, p_techn, #232F3E, chartcombostacked, chartcombostacked)
+!define chartcombostackedParticipant(p_alias, p_label, p_techn, p_descr) IBMParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, chartcombostacked, chartcombostacked)
