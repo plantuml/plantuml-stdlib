@@ -1,0 +1,13 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $chartscreeplot [64x64/16z] xS61400000CXXFdRpkElMXu0001m
+
+!function $chartscreeplotIMG($scale=1)
+!return "<img data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAAIGNIUk0AAHomAACAhAAA+gAAAIDoAAB1MAAA6mAAADqYAAAXcJy6UTwAAAAEZ0FNQQAAsY58+1GTAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAAOxAAADsQBlSsOGwAAA6dJREFUeNrtm29oTlEcx88eizVjUoSWKKVH9Mj/IrIklIa0TAyxFHnllZfeeqekJzJRvBjZhngjkz+locyfeUPbi+HBojEzJnx/Pd+b69rdc5/t3G3nnudXn+527zlb5/uc8/v9zrm/R6mc5UzsOrHO8gO2KwSVYCF/fwDOgi4bBEiAi2A6eMZ7O8BBsBk0RVmAQg6+G8wBL3g/Dmr4LGHyTIhleC7Tfhoodw1e8edyPqs0eQZkEmARaPYM3i1CM9tEVoAgNirKAjSCWVzzXovzWWOUBZBQ10qHF/cMXu69B6ejHAW6GOrE2z91hcHZ4C1YDz6bLMAIXrfxeq6XNu/AKfAa5IEx9P5rmBCpKC8B90xIgt1gLfOCVVFIhfsTBTrBDbDRVgHEasFcLgUrBbgCfoENtgrwAdyNwjIYSCZYB5aCCTYLEGMuYKUAkiE+Nn0ZDHQzVMt8oMhWAWQZFDA5slIA2R+8NHkZ6DgPkFmwDoy0VQDxA8Wg1FYB7oOUqVmhDgEkJa4HZZr+nnECOH5gElhiqwA3QYeJ0UCXAD/ANRP9gM41K9Fghkq/QbJSAHm73G3aLNApgJFHZbrDlnFHZboFMO6oTLcAclR2z2YBnGWwTBlyVBaGAEYdlYUhQKsy6KgsrM2LMUdlQV6O9sd6wF6wHKwAJSr9ZrknYP9C9t/HpTRFpatRekwQYB64BEZzgyS7RKkj2g4aVPptc18mRVfy0qWcM1QGvxNsAbcD9M/K8jULOpa5wEewWv1fVVbHRKnDp38x23xRg1SVptsH7AITlX9VWQmvfuZuMyhVabpnQJCqssNgq0//mSpYVVpyuM6A74PguIuG8wxopLOL9/IpOlVl4tlP+vSvAscz9BeugjPgso/o4+g4F4Nv6m9t89ewo4BM0QomQbdAu8eJyXnBgT5myisujzKf/j/BEYbX/RRzqkpXq71h2/ngDtgEfoPJFKOCUSTl/od5rsMMMR2vuHorrpaqsjYOrClA/3pX7uD0T7H/I95b4BrYePCcH6AI88njSB0BC7xRJIw8wFtVJp9ONdhDEYL0P8FrjIOpZmLU4monn7icQx4FTxghqugjSj1LqJ0z6hD7PQzLBzjmVJUlB9D/WBaO9wKpYSQJHEWMe5GRwTqHy2ZoqCzr2uaoCZCptrmVbVTYPmCorK/a5hY+64qyAIphNqH+/ZJXUvl8ySuKAmQVhWLKcssJYLsA+Z69fINFY1/pFuA8Nwo5s83+ACSV5LEBPNdCAAAAAElFTkSuQmCC{scale="+$scale+"}>"
+!endfunction
+
+IBMEntityColoring(chartscreeplot)
+!define chartscreeplot(e_alias, e_label, e_techn) IBMEntity(e_alias, e_label, e_techn, #232F3E, chartscreeplot, chartscreeplot)
+!define chartscreeplot(e_alias, e_label, e_techn, e_descr) IBMEntity(e_alias, e_label, e_techn, e_descr, #232F3E, chartscreeplot, chartscreeplot)
+!define chartscreeplotParticipant(p_alias, p_label, p_techn) IBMParticipant(p_alias, p_label, p_techn, #232F3E, chartscreeplot, chartscreeplot)
+!define chartscreeplotParticipant(p_alias, p_label, p_techn, p_descr) IBMParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, chartscreeplot, chartscreeplot)

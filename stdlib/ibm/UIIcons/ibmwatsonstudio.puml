@@ -1,0 +1,13 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $ibmwatsonstudio [64x64/16z] xS61400000CXXFdRpkElMXu0001m
+
+!function $ibmwatsonstudioIMG($scale=1)
+!return "<img data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAAIGNIUk0AAHomAACAhAAA+gAAAIDoAAB1MAAA6mAAADqYAAAXcJy6UTwAAAAEZ0FNQQAAsY58+1GTAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAAOxAAADsQBlSsOGwAAAzZJREFUeNrtm1uIjVEUx88xLtNEbjGGSIkZcmlKHpSoUZInp8lEnry4jCmheeCFBxJRyGVcUjK5U2qK5oEHCok8YE7iYcpMcgs5zBiX/6o1tVt9vuvxfedrr1W/mv2dvdc+e5112XufM5mMioqKzZJ1ePanCDpSIwNs9wA1gO0GGBgixr1yhHy9G9wGzeCNjR5QBVaBp2CCzSEwGuy1PQcsSmMOiLovMMeP1yqgBlADlHwOyKoHqAHUAGoANYCeBosmP0C50R4GvkbUOQTUg2VgHqjk52/BQ9AGroCeUjDAOzDRaE8CzyLoWw12sR4pQ8EUsBLsBtvBOTdlZTEYYDGYarRfgvshvfUoL364j/7UJ8fH8Zvgd1IGGAeWCA9oCXHIOgLWhZh/LhjLYeErBIp9K3wR7AGDuD0DNIJDAd1eLr7ARrkEXvCz6WAF668w+tLYe07h4OQBOwIaYKfH65TwJoNa41kdeABe+9BPCfS6cPtXYCG4ALrAT4b+bgdXwVIwSnjCcdCXRBncBj4a7cHskk0+wjAnEl6Bs3/eZUye+xRE6OWS8ACSb5z5Gwyjl/GnVM9l7Qv4DnrFWMrkM432QXDex5wfwEgw33jWx+UxUBnMRswR/UKf+FpwQnge5YQDLvPVOuQUv0J9t7roin0neBosB58DjKkS7Y4AYzs8dCWyFabF/7L1LEDfD9wS2dlLukW7JsDYGg9d/+VW+F+yAJx1SLzPwSk2TKfDuCdgmtGmRPrI55wNDrpiPwtkOBu3isVT3d7C21u3kLghFrKBDZb3mLOa+0pdiYTAPnEg6uU6fdhHPrgmPKOCK0q1x+LbxG6wk3XFvg+g7wPPiLk2+6zl/bX7vdjEUA5ZA0aAT5xYaXM1B2zialMp9GwEj4Pu44shtNj9IuZnh6gEx0IehjK8BV6fVBWoE+2TIctgE58ig0oLj03sQmSWaLeH1NPHHnDX5UIkI2Le80IkDgOMcXhjUYQWdDlNV2LlDsfjqNLDZbU1bTvBkhM1gBpADWC3xHErrB6gBlADpCsHeMV40N8Km9JluwfcsdkA9EVFcxpDIKqU9M/l9X+GtAyqAVRUVFTslb/UEJ/DbOG8gAAAAABJRU5ErkJggg=={scale="+$scale+"}>"
+!endfunction
+
+IBMEntityColoring(ibmwatsonstudio)
+!define ibmwatsonstudio(e_alias, e_label, e_techn) IBMEntity(e_alias, e_label, e_techn, #232F3E, ibmwatsonstudio, ibmwatsonstudio)
+!define ibmwatsonstudio(e_alias, e_label, e_techn, e_descr) IBMEntity(e_alias, e_label, e_techn, e_descr, #232F3E, ibmwatsonstudio, ibmwatsonstudio)
+!define ibmwatsonstudioParticipant(p_alias, p_label, p_techn) IBMParticipant(p_alias, p_label, p_techn, #232F3E, ibmwatsonstudio, ibmwatsonstudio)
+!define ibmwatsonstudioParticipant(p_alias, p_label, p_techn, p_descr) IBMParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, ibmwatsonstudio, ibmwatsonstudio)

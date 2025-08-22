@@ -1,0 +1,13 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $pressure [64x64/16z] xS61400000CXXFdRpkElMXu0001m
+
+!function $pressureIMG($scale=1)
+!return "<img data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAAIGNIUk0AAHomAACAhAAA+gAAAIDoAAB1MAAA6mAAADqYAAAXcJy6UTwAAAAEZ0FNQQAAsY58+1GTAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAAOxAAADsQBlSsOGwAAAstJREFUeNrtms9LVFEUx58+0YGgH4sKjHDRIkhaBrkJIjGQ7NdCsIWLIFrWItrpv1CuojbtCtJI+wH9IIIgwX2uRHCjoJtQSmyYGr8Xj/C4vBnfve+e82acc+ADw2Xmzrnfe9495x5eFKmpqbWytTHMWQ38H1VOn9tbPQJUABVABVABVAAVQAVoXevw+M0V8BR0F+Rztcb4CrgL3nNHwOMCF1/Pusk39kegYz9FtI8A90C5ARdfJt9EboMXwRtwyBr/Dq6DX0yLPAKmwQVrfB3cAN9cJ4w9HVkCH8BVcDAx3kOH5DuwEXjxJ8FXcM4aXwaXwJzPpHEOh9bAJBgAxxLj5vMw+ELfCWFnaXdPWePzFI0LvhPHOR0zu/wS9NHu75qJilu0K0s5/8Ms8BM4mvK4XQareSaPA+zOFolwGvQmxktgBCyCn55zm99PgQPWuIm8m+B3XufjQCH6D7wGh8F5a35zOG2CWcc5H4AnKaltAtwBlRCOxwEPKVOhfQR/QH8iw7TROWFO8M91Krlkan4Exqws9R88BOMZ5ihEgF2bpUNpyJrfRMYZ8JYiJs26wAtwOyXHj4JnoZ3lECCiZ/4H1QSlxHgv5fAZOjvsHG9S62BKjh+i1Bo1iwCutQJLji9agKy1wnGuHM9ZCocsYaMCSmqxCMhSK5S4cnwjCVCvVmDL8VzX4X1lkhFQK8dHjrVCUwpQL8f/dagVmlKAvXL8c+G+gqgAWe7xkn0FUQFc7vESfQVRAXzu8Zx9BVEB8tzjOfoKYgKEuseH6iuICsBxj8/TVxAVgPMe79NXEBVA4h7v0lcQFYCtV+/ZV1iTFIC1V1/DWGoFn4bINfAKdAo1XbKe9mWKhhnu6/CEw+IlrZN8Y+8HVKLGtYqEAPejnddRGs1WyDcn83nbw7yDcyLAM+tr+ra4CqACqAAqgAqgAqgAKoCamppaXtsGBs7E2G49BxoAAAAASUVORK5CYII={scale="+$scale+"}>"
+!endfunction
+
+IBMEntityColoring(pressure)
+!define pressure(e_alias, e_label, e_techn) IBMEntity(e_alias, e_label, e_techn, #232F3E, pressure, pressure)
+!define pressure(e_alias, e_label, e_techn, e_descr) IBMEntity(e_alias, e_label, e_techn, e_descr, #232F3E, pressure, pressure)
+!define pressureParticipant(p_alias, p_label, p_techn) IBMParticipant(p_alias, p_label, p_techn, #232F3E, pressure, pressure)
+!define pressureParticipant(p_alias, p_label, p_techn, p_descr) IBMParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, pressure, pressure)

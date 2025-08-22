@@ -1,0 +1,13 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $sendalt [64x64/16z] xS61400000CXXFdRpkElMXu0001m
+
+!function $sendaltIMG($scale=1)
+!return "<img data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAAIGNIUk0AAHomAACAhAAA+gAAAIDoAAB1MAAA6mAAADqYAAAXcJy6UTwAAAAEZ0FNQQAAsY58+1GTAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAAOxAAADsQBlSsOGwAABBFJREFUeNrtWkloFEEUbTNRIyqocRdFAjG4gAdFRHFFcUMkaoyYcUGNomAu3ryZswqKigiKkBijBoMgUTEEI4gIHoIRF8Ro3DcUXIImJvqK/IGiqJmp6u6a1Iz14B2qp2e6/+tf/7+qHs9zcHBwcHBw+F/RK8PimQlGwSVgP7AUvJroC9kZEPR4cBMFni98dihTBRgErqOg5yQ472+yH0onAXqDyynolWBfhe9cyQQBYvO6GByq+d2KdBUg0byW4RbYBi7ljjWBzekkgOq8juExWElsBRuFzytVLpqdZvP6A1hNwd0TMoYXrROsslkAnXnNUrsWPAveAP9IztkgeJp68J1tAujM6y6wgZ50DfgzyflRP+mfCgF053UT3fw58K3iNaaDE7nxD8qYHhNAd16/pvRmgT/wcT3x6V9SyBgjAujM6++U2qxP31RxbAnuf71u7w9TAJ153QFepyd9GfwVguiLwRHc+A3VDqMC6M7ruxT0efCTxnWKwEJwI7U1lfSvogIaugC68/o5pSIL/KkPkYsoGHZ/EWpzoggDwFVB0l9VgGXgGXB4kvO+gBco6NsB0poP3qNs6yQReKwG++taXz8CHEsQ/G9acbGg68D2gHNaDN4j41MbZu/nkaVwTleS9XYbWVRTwbMnf1E4dzS40I/1FRFROOcRuAgcGCeDpoLbKCWzaJHSbjB4hh3Cyo9Z5BOmBGgBj4D3wcFgniffS2TtaAVYBo6jlvTeQPAMx8GR3Hg/3Z8RAWLT4CFV2Qrq4flUiUX0IXu6kzoHS88ncRYxfoKfApYL1nc7+QxjAvD4SqutwwpZMYZa1W5wFK3bPwcInmEvOJsbV1P38YWwtsXzaF5uEZyZDI3EfT6CZzXmBThWcIP1fm88EpIAOlnB7PM8oQOpBM+wANwjWN+yAGuJ0FeDHbTIqdHICtXgQ7G+pjIgSFYcBQ8q/B5703NasOG7wI+2ChCvg7BiOJn7fAiJkAxrwBLB+pYHvbksL7VooSrOt0TWTuf7SP/KMG4o1QLEdoDqJM4uEYZ53S88A1tfGwRgOCmMC5PsIhXTkjwG5V1fWwW4Br7kxqywbU51+vekACyFTwnHSuP4hgngDMH61qa7AB61NL4YFpBBElEiCKO162uzALJiWCqx6tGg2162CiArhmxPIZcbzyLzxFvfhkwSQCyGOV73Nrsx62ubAPGKYWxfochk+tsggKwYsvd8c2kzJVewvs1hXzxigQDfaAepgDvGTM80cBJ37AB4JxMzQFYM13rd+4uhW19bBZAVwxwT1tdWAWTF0Ij1tVUAWTE0Yn1tFkDmDEO3vjYLICuGRnq/zQKwYtjKjV+FbX1t9AE82PY220BlLz7Z32i2gs88BwcHBwcHBwcD+AdLSfsNPksBTwAAAABJRU5ErkJggg=={scale="+$scale+"}>"
+!endfunction
+
+IBMEntityColoring(sendalt)
+!define sendalt(e_alias, e_label, e_techn) IBMEntity(e_alias, e_label, e_techn, #232F3E, sendalt, sendalt)
+!define sendalt(e_alias, e_label, e_techn, e_descr) IBMEntity(e_alias, e_label, e_techn, e_descr, #232F3E, sendalt, sendalt)
+!define sendaltParticipant(p_alias, p_label, p_techn) IBMParticipant(p_alias, p_label, p_techn, #232F3E, sendalt, sendalt)
+!define sendaltParticipant(p_alias, p_label, p_techn, p_descr) IBMParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, sendalt, sendalt)

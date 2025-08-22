@@ -1,0 +1,13 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $documentsentiment [64x64/16z] xS61400000CXXFdRpkElMXu0001m
+
+!function $documentsentimentIMG($scale=1)
+!return "<img data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAAIGNIUk0AAHomAACAhAAA+gAAAIDoAAB1MAAA6mAAADqYAAAXcJy6UTwAAAAEZ0FNQQAAsY58+1GTAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAAOxAAADsQBlSsOGwAAAmVJREFUeNrtm71Lw0AYh+PXItVFEb+mDoKTo6sOgqIOKlrQQUFBwUFB8WMX/AAddLCggw4qDuKgIiJC/wVBUMTVikMn6SS1/o68gRI02jR3uUvuhWdomry5e5qm996lhqFDh44wR5HL4xrABmgHdR636RVMgisRAkpcdv4etIIKDm2qBIPgATzJKCBOnefdrn4REopdHNMm6OtZBk5BH8+TlLo4pt6j+4gVWdvrT+p8roQYOJflCuAdMZIg5EqQUcC5SAkyChAqQVYBwiTILECIBNkFcJegggCuElQRwE2CSgK4SFBNwF8SusMgwElCXEQt4HUkbfVFtoBcjSpeAQk/Ty6DgAWQCrMANgXWAo7Bm+iTy3APsCSMeDSfEIpfgVBUg1qAFqAFaAFaQBDGAU1gGXQY5rLaI7gwzLVFawRYRSPCXtBM44JbsAqeVRbQQ2Vqec62ZmIYdNG2a1shw0SNgSGq+i5V/ApEwYmt8/bK7Y74rYorpxxRFQUsgsgf+9QQThGhXMoJ6JQ0lzABtZLmEibgXdJcwgTcSJpLmIB1kPYgT5pyKSfgBYyCTAE5MpTjRdWh8FkBEqzOn6leCxyBcfCVxzFs3wk6NhDF0KFhPvv3Hwlsjm8KHAStGtwH04bzJGaW9tkLajnMlq5mHN6fBbtBnw/YAXM/bJ8H22GZENkCSzmv2XzBZlAnRJwGSmX0Iaz51Qi/V4ZWfD6/nhPUArQALSDc4eZXwMtneryOpIgrICHxB5oQIcDXZ3ocIkVtyyvc/Gnqg+p0NlNbbfD551g+wZ4rYkttA4a5pKZDhw4d/45vzrJ4CoiVBWcAAAAASUVORK5CYII={scale="+$scale+"}>"
+!endfunction
+
+IBMEntityColoring(documentsentiment)
+!define documentsentiment(e_alias, e_label, e_techn) IBMEntity(e_alias, e_label, e_techn, #232F3E, documentsentiment, documentsentiment)
+!define documentsentiment(e_alias, e_label, e_techn, e_descr) IBMEntity(e_alias, e_label, e_techn, e_descr, #232F3E, documentsentiment, documentsentiment)
+!define documentsentimentParticipant(p_alias, p_label, p_techn) IBMParticipant(p_alias, p_label, p_techn, #232F3E, documentsentiment, documentsentiment)
+!define documentsentimentParticipant(p_alias, p_label, p_techn, p_descr) IBMParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, documentsentiment, documentsentiment)

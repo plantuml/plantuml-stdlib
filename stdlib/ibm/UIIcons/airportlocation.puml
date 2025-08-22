@@ -1,0 +1,13 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $airportlocation [64x64/16z] xS61400000CXXFdRpkElMXu0001m
+
+!function $airportlocationIMG($scale=1)
+!return "<img data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAAIGNIUk0AAHomAACAhAAA+gAAAIDoAAB1MAAA6mAAADqYAAAXcJy6UTwAAAAEZ0FNQQAAsY58+1GTAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAAOxAAADsQBlSsOGwAAAwNJREFUeNrtmk1IVFEUx5+NFCgSkYuylEBIqDYRZYH0QYvKPty10qjIvRG0cWEtWgbl0s2A1SZq4VAWrgqCsiBoExQEMdHHIhdmQxSM9T/MeXA5vdHxzb3eO875w29x5znnvvt/Z+7HeUaRSqWqZzV47PtvCPeyqt4zQA1QA9QANUANUAPUADVADahXZZaxrzXgBLgAhsEWcf0Q2A6awEdQXCmHoQ4wBM6A9RV+ZwaMgxsgX6sGrAaX+Gk3p4xRANfAdfCnlgzYACbAHkvxXoI+8K0WDNgGHnHqS30COb7+zhgQGdYFjoFToD3hu3m+/jZkA2gg0wmD/wJGQLaCyY0m5nPgKmhLMKHbZiZkLP/mpzgDTOV4hn8R/V8FShL9zWswBnZwZsRaC/bzBFkMzYDLPNObGuWn+TtFPJr07oJ1/NRjbQK/wLOQNkIdPNvLJ38RzFcRd55j5MTnw2XmGG8GDIml7jPor3Lwpgn9HDNWM/cZhAG0wxsQn10BcxZ/XnMc09QA9+3dAFqaWsVSl3WwvGY5dqxW7tu7AftEe8LRPr7IsRfq24sB3aI96XB7PblI30tWY5l1uBp9cGiAjH0gxf02uK4HfHVogPXYWhFyEHOjw/ttsx2w0cIB6Qn/FmN1gveODOgU7afgoO8MmBbtXocZ0LtI314MeC7afZGbWmOGYy/UtxcDqLjx3Wi38wnQts6DzUZ7hvv2bgAddW8lnAVaLA6+JeEsMJ7ymO1kFaDqbUGc2W9bik8x7ogVoMB9BlMQmeUd2WHjsy4uZkxVsbukwd8sc9p8GJIBJKrcHuGnb+7Vd4IH0dLL2pT297gWIPsZjAIsiRV5oKejUu3OzISz4Ad4U0E20D3R26P7YJe4lucsm7V106GUxWn3uBUcByfFbG8OPviyeKyaeTHi6uXoT16mqHq7NyqVzNOowBPeoM20X44MMFW3L0elqIB5FPSA3eIAFR9sXkWlev9jG5uc0AyQ0v8VXqkFETVADVAD1AA1QA1QA9QANUClUqlC1z/Z45COS/CyxwAAAABJRU5ErkJggg=={scale="+$scale+"}>"
+!endfunction
+
+IBMEntityColoring(airportlocation)
+!define airportlocation(e_alias, e_label, e_techn) IBMEntity(e_alias, e_label, e_techn, #232F3E, airportlocation, airportlocation)
+!define airportlocation(e_alias, e_label, e_techn, e_descr) IBMEntity(e_alias, e_label, e_techn, e_descr, #232F3E, airportlocation, airportlocation)
+!define airportlocationParticipant(p_alias, p_label, p_techn) IBMParticipant(p_alias, p_label, p_techn, #232F3E, airportlocation, airportlocation)
+!define airportlocationParticipant(p_alias, p_label, p_techn, p_descr) IBMParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, airportlocation, airportlocation)

@@ -1,0 +1,13 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $cloudpakforapplications [64x64/16z] xS61400000CXXFdRpkElMXu0001m
+
+!function $cloudpakforapplicationsIMG($scale=1)
+!return "<img data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAAIGNIUk0AAHomAACAhAAA+gAAAIDoAAB1MAAA6mAAADqYAAAXcJy6UTwAAAAEZ0FNQQAAsY58+1GTAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAAOxAAADsQBlSsOGwAAAlBJREFUeNrtmz1Iw0AYhi/aQXHrpCDOgtBFEBx0FydXwUEHB0HRof4tKoi/Q0U3BR2KDi5O0sFBUEEQXAqCcxeduoqg4Bv6dTCkP0nvLrnc98IDgbbX5O3d9yblOyEslxPhd6fBEh3nQNkWAzrBIlimY1df4AAc0XEiDWgH02ATdIM82KDXtsAU+KTXL8BvkgyYADugH9yCFfDmec8A2Afj4B2sgxvTDRgFe2AYPNOFPzb4zAgZUf3MKngwzQAZv2YzsyZ2BvRJXs+16kYpbga4kbYG5hVVdG9ynIBdGdHpxPXEdBntxHVq6lpqYQzQUpx0FdsgBoSJNF0KHZ2ODpc1KvDsdDRGWtS33KUgBsyC4ygfUhRE5wI49XPLT9vgGwyCO/Bj4KO+e85P4IyWby+49L6prc4AH1E9o0tWma7FV222/yOUkjSOWyhnJJ/bORUwpZI1AyZBRuJ5ZWhMY2aAqxcwJmmsgq4lYH0NYAM4BfQoaEpUC+q96pTQNQOCpkSRUJ4SKY2zLZYpwUWQDWAD2AA2gA1gA9gAfhaQoKE69+4ZuhNMrAFXoMPmGZBv8GRW4BrABrABiU+BVlIiqKSlii4DZKdEkcY0xoBGKcE1II4G9IhKV5bpStO1+KpWf0CXqPyVPUcmvQrzegTcpogsuCYDcnQd/8QtMk0MaG2TlFfWtsm17LJCaW2UDL3OFCjSVllvpbWyWVr5iekymjdMxLU4CUO3zMiIzkRsmgrzayZy21wz61kICzZO1qvoQliyddYvOrN0fCiS0Zhtnv4A1NbStLhdgvgAAAAASUVORK5CYII={scale="+$scale+"}>"
+!endfunction
+
+IBMEntityColoring(cloudpakforapplications)
+!define cloudpakforapplications(e_alias, e_label, e_techn) IBMEntity(e_alias, e_label, e_techn, #232F3E, cloudpakforapplications, cloudpakforapplications)
+!define cloudpakforapplications(e_alias, e_label, e_techn, e_descr) IBMEntity(e_alias, e_label, e_techn, e_descr, #232F3E, cloudpakforapplications, cloudpakforapplications)
+!define cloudpakforapplicationsParticipant(p_alias, p_label, p_techn) IBMParticipant(p_alias, p_label, p_techn, #232F3E, cloudpakforapplications, cloudpakforapplications)
+!define cloudpakforapplicationsParticipant(p_alias, p_label, p_techn, p_descr) IBMParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, cloudpakforapplications, cloudpakforapplications)

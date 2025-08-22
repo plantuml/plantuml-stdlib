@@ -1,0 +1,13 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $mailreply [64x64/16z] xS61400000CXXFdRpkElMXu0001m
+
+!function $mailreplyIMG($scale=1)
+!return "<img data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAAIGNIUk0AAHomAACAhAAA+gAAAIDoAAB1MAAA6mAAADqYAAAXcJy6UTwAAAAEZ0FNQQAAsY58+1GTAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAAOxAAADsQBlSsOGwAAA8NJREFUeNrtWkloFEEU7UlagwcjuKAGiQsePLjkYFAIYhDcDhG8KsS4BPEgIURQEcyMIGg0iEdNDhpBEEHBHNSDMQEVg5eI4jGoqEE0BxdEA4rvM3+gLWumu7p6pnp66sEjdGem6v/X1f+/6WrHsbCwsLCwsKhUpPKcXwT2gM3gwjLPcQJ8CB4F3wURgJJ/Ds5O2MWeBBtEEaokH+xJYPKEOeBZ8aRMgI0JvuWbxROu5EN1PoO8BtvAkZglRxfuCrikwGfqgqwAEVPCMU0wBJ4Ha2KQeA3HMiRJfsrvy34C/AHXgS8l3+sCn3FhMYUGjqFLkssLjl1LAMIYuBbsZUG8WAWOcoupLmHi1TznKMcgXjSKtZFjLwg34IS/wCPgIHgVXOz533TwDNgCtoLjRU5+GTgANkVRn6oUJ6eBV3OxEdHEircXMfl2nkOWPMW0RrU4+60AmVH6Cu4F74CXwHme/80EL/NqoGA/RpT4fLCPxxXxCTwI3g4zsKsRFE34JE9gLVyEQgfmwU6J0DkM6grtagZHE+/gIHp5BeRAAd/ipdnBK0cFteBFvqdFfOPK36e7tNyIligF8iBPcWpjB6ZSnAqZmsdRFls3wgI1zoFTtzjF3UE0TxfAE9xV8pma02CnpECTqTnJpud3VEFHKYDDgdEPjvvgNXClxDxt4Ss4JjE1A5K+njM1rUH6uiqqnOJAxTxFZmrisALCmCcnKlMTNwFE8ySr6E15vhO2c8RSAD/zFJmpibMAQcyTtqkpBwG85ukAmOFz3WC/id/TJgTIod9U0qVog2UDtwJyTNkVYAWwAoQWIFUmeXQzK7IIUuJpz3Gmkm6BY0LyadWVUO4C0Lb3F+GckgjlLgA9Q9iqI0ISuoCWCElpgyTCNsnzA18RkuQDnvJKUBJB1uffO/7vCETpHVaA+8HtYL3z795ClEjLWqTMBwyDu0r0Q4xexzlcIj+SlvkE2S1AT2gnS5A8PR7rNG3GZHv6dA9dBxeAc0MsySBOjPYO9pQ4V+ktYMLrLwdfgdOEukMrj3aPJjTGXu9kN2VqgyRv6rfAPiH5D052V+iz5rjKyZtqg5slfl43eXoX6J5q8qYEqBeORyJInq78LNXkk2CEtJI3JcBb4VjnzdRNOsnna4PFxlJwg3AVaVv8R4ixHnEnaw6TvCkB3oCHPHOTz9jtZHeMqBh+Vxxv2PM3oxqMqWd+55zs1rnxGE0VwePg3ThU0WpD89KbHzd4+Tf6XIhMEgXIiUAt7Cb4k6v5DOf/N9AzjoWFhUWR8BfE4sTpFqnojQAAAABJRU5ErkJggg=={scale="+$scale+"}>"
+!endfunction
+
+IBMEntityColoring(mailreply)
+!define mailreply(e_alias, e_label, e_techn) IBMEntity(e_alias, e_label, e_techn, #232F3E, mailreply, mailreply)
+!define mailreply(e_alias, e_label, e_techn, e_descr) IBMEntity(e_alias, e_label, e_techn, e_descr, #232F3E, mailreply, mailreply)
+!define mailreplyParticipant(p_alias, p_label, p_techn) IBMParticipant(p_alias, p_label, p_techn, #232F3E, mailreply, mailreply)
+!define mailreplyParticipant(p_alias, p_label, p_techn, p_descr) IBMParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, mailreply, mailreply)

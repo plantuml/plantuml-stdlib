@@ -1,0 +1,13 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $pauseoutlinefilled [64x64/16z] xS61400000CXXFdRpkElMXu0001m
+
+!function $pauseoutlinefilledIMG($scale=1)
+!return "<img data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAAIGNIUk0AAHomAACAhAAA+gAAAIDoAAB1MAAA6mAAADqYAAAXcJy6UTwAAAAEZ0FNQQAAsY58+1GTAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAAOxAAADsQBlSsOGwAAAxlJREFUeNrtmzFoFEEUhkdjCJjEBA1CIoc2Gs5ONI3BRhKE4NkIihiwThEDlhbaWSpJwGtTxCpdIhEJxkLSqekMic0dBwpyAeOJIBL1f9zbJuzevt3bu5t5tz983c3uvX9n5s3svDUmVapU7axDTbjHYXAJXAFnwXmQAV1gkH/zFfwGJfAJfAbvwHvw10UDOsEEuAuugWMxr/MDvAYvwCr4Y7sBJ8AMmAIDCV+7DPJgFuzaZsBR8JCD72nwkPrJJjwBv2ww4AaYA6ebPH8VwX2wXM9FOupo28WBPwX9LZjA6Z53wEnwBuw3swcMgZfggiXZbBNcB1+a0QPOgbcga1E6p3R6E7yKOkF2xAie8vMpC9c0NCRu85yw2wgDhvjJ2xi8p26QA0ugkqQBNOGtW9bta/WEq2BBMjFKDZjjdOeKaE44zqvHug3IcapzTSPgI9gJ26iErfDmHd7szXMMsXvAY+4BrspboK3H6QHexsZ1zXAsvjoS0jCJjc3B1ea/hH8fph6O5VGUHtDJW1otmuKYxAZMNGA/30oNcExiAyaNPk1KDaDMMK7QgHG/rOdnwEXQp9CAPo4t1IBRo1ejEgOyig3ISgwYVmzAsMSAjGIDMhIDehUb0JsaEHE7rF5+BlQUx1tJDRAYUFJsQEliwLZiA7YlBmwpNmBLYsCGYgM2JAZ8AHsKg9/j2EINoNOUNYUGrBmfk6KghdCiQgMWpQshEh0plRUFXzYBx2RBBlA1Vl6RAXkTUGFWq0KEDhMKpvFFT40WFVWdMQE1A7U2Q9RgVsHTr1lWF7YbpFK0osPBFzkGE9cAqsObdtiAaRNSSyipD6DzdSpFG3Es+OfgWZz3AX56YKqlaK5ok/9zqKQlMrSCWjHVUrR+y4OnzDUGvidpgPcygerwqBSt29Lgv5lqgVRB2iBqnSClE6rDy1nYEwoc/E6URnEqRcmEJb7ZoEVjfizKk6/HAG84LJhqKVqrswPN9rekYz4pA7yJcZXdv9yCIUGLnHuc6vbjXiT9YCLhP9e2n8wcVNt+NBW02rT2s7lUqVK1t/4DZK6TYv/yo58AAAAASUVORK5CYII={scale="+$scale+"}>"
+!endfunction
+
+IBMEntityColoring(pauseoutlinefilled)
+!define pauseoutlinefilled(e_alias, e_label, e_techn) IBMEntity(e_alias, e_label, e_techn, #232F3E, pauseoutlinefilled, pauseoutlinefilled)
+!define pauseoutlinefilled(e_alias, e_label, e_techn, e_descr) IBMEntity(e_alias, e_label, e_techn, e_descr, #232F3E, pauseoutlinefilled, pauseoutlinefilled)
+!define pauseoutlinefilledParticipant(p_alias, p_label, p_techn) IBMParticipant(p_alias, p_label, p_techn, #232F3E, pauseoutlinefilled, pauseoutlinefilled)
+!define pauseoutlinefilledParticipant(p_alias, p_label, p_techn, p_descr) IBMParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, pauseoutlinefilled, pauseoutlinefilled)

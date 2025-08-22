@@ -1,0 +1,13 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $chatoff [64x64/16z] xS61400000CXXFdRpkElMXu0001m
+
+!function $chatoffIMG($scale=1)
+!return "<img data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAAIGNIUk0AAHomAACAhAAA+gAAAIDoAAB1MAAA6mAAADqYAAAXcJy6UTwAAAAEZ0FNQQAAsY58+1GTAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAAOxAAADsQBlSsOGwAAAy9JREFUeNrtmk1oFDEUx9NsV+ihClK1HqzoQfEgHhRRlCLeehD8QIqiHq2oiCCKxwoe9FCKCB4qilhFCyLFg6hFBPHoQfADLEihCCqCClYQbav/MFkIj8zudGcmL9mdBz9ost3MzG8yedlJhCiiiCKaOUpV6odBGbxtNgGq7jbYB3aC8UaWYBMwrC9ehWx0CTYBZX3RshkktMTU94JboNWomwYHwAj535XgGejy5JqmwCR4Aq6Cd/UMgupOfwB7jLq4nvAdPAC7wAIPBMwDi8AmcAQsBmNgdq5Z4CxYS+pDkWCe70awBdwFM0kFnAdHqzQakgQVK8BC8DDJGLAavNaDYSU+gs6EYwJ3LAHbwUWwzKhXd38dHchtPeA06DbKE2ADeBVIdvgF3oAb+vw6jPP9Ax7XEjCgLVaiD7zUFzkeUIr8Db6AvUZdO7hCn2cay0l5zPh7RHf7aaOuVafMXg/T/AtS7rINaDToAPaDlEOS8ImU25MISBKh9YSqeVI0swSZ8vvBS5AZtBG0BJlRO8FKkBm2FaQEmXF7wUmQObQZlASZU7vBSJA5th2EBJlz+95LkA6O4bUE6eg43kqQDo/lpQTp+HjeSZAMx/RKgmTqed5I4BLgjQROAV5I4BbALsEHAawSfBHAJsEnASwSbAJ+kvLSRpZgEzBJylsbuSfYVocHwUmj/B5sFtHyt+uYy06VusK2OKqWwvuM3qFWV/eDz+CriFZfXUXuC7Jxe4Qug+M59jIaPcKyeaFGZNIT4rLAKfDU0V1W3Xugzu+lHhPitsio3RR3RLStZH3KdHmuxufHwKEUNzDV41Cq8tms7pb3wF8wH7SJaBdWVgKU4Pu6XcEhoUXwxiVwgsxBVukB10l2KDFe/BpwjZxDP3jkMjtwCrgpoh1plZjQd3DGZYrkEtCj77YZh0W0Pc/pPIFDgHpuR0W0nbUSz8EZjskShwCa9lS22Z1g4MtFgmsBtrR3HQxxTZtdC7gAtpG0p/YWT3H9dnApIE3ay02CyzdCar5fJmlv0PH7hB2cPeCb/l3RkSLtpekJSspB8I9z6lvWL1tGGV6qcE76iiiiCE/jP+Xh/rWPtHLgAAAAAElFTkSuQmCC{scale="+$scale+"}>"
+!endfunction
+
+IBMEntityColoring(chatoff)
+!define chatoff(e_alias, e_label, e_techn) IBMEntity(e_alias, e_label, e_techn, #232F3E, chatoff, chatoff)
+!define chatoff(e_alias, e_label, e_techn, e_descr) IBMEntity(e_alias, e_label, e_techn, e_descr, #232F3E, chatoff, chatoff)
+!define chatoffParticipant(p_alias, p_label, p_techn) IBMParticipant(p_alias, p_label, p_techn, #232F3E, chatoff, chatoff)
+!define chatoffParticipant(p_alias, p_label, p_techn, p_descr) IBMParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, chatoff, chatoff)

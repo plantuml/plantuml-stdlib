@@ -1,0 +1,13 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $cloudalerting [64x64/16z] xS61400000CXXFdRpkElMXu0001m
+
+!function $cloudalertingIMG($scale=1)
+!return "<img data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAAIGNIUk0AAHomAACAhAAA+gAAAIDoAAB1MAAA6mAAADqYAAAXcJy6UTwAAAAEZ0FNQQAAsY58+1GTAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAAOxAAADsQBlSsOGwAAAgdJREFUeNrtmj9Lw0AYxq/aVYoiiOLmruAs6OLq4uTQWUFx7OjQ0U2xIDg4CH4CN10qXR30AzhJpUuhgpslvodvIYa7mlyu5k3yPPBAcwm53i93z13+KAVBUJlVyeF/3iZf8u8D8n2ak03nrPEL5EfyInmWvEO+Jn+6nnAqZwBOybXQdo3LVBkAbJDrhvI67/OaActMdou7W9b5o4fqE3nNsv+FvE4e+ugBuvHP5L0JNj6pDiOND9gjrfIxXoaAvvJzwoKvGSm7YYfV5GNTA9gUHnwDcoM9SBuIVUPZkqC1gin4Tsi90O+zSCBekTtFmAV08F1ELoDOplZou8Vl4YvVSrK+kQzAFHxHkaQfcplzIEoFYAs+U9fupAlEqQBswWeTcyBKBPBX8JnU42MSrxClAYgTfDY5BaI0AHGCzyanQJQEIEnw2ZQ4ECUBSBp8XgJRCgCX4PMSiBIApAm+1IFYFRh8ire/PNczCsRzaT3gOMu68vZMMK0qEgHoR9uv/1CPrmNfYgY8kFeyqrxsQwAAAAAAAEDcLDBpBePWAhgCAAAAAAAAAAAAAICVYEhd9fsbgaBA7e3G6QHtAl/wdhwA+sVCv4CN7yvDixbTi8MP8q36+UJsnjyT84a/k+/Iu+Q3Ne7OKIu7MQ/HYxYAAAAAAAAAAABwk485NshzGzAEAACCIKjE+gaoY2OSkjthmAAAAABJRU5ErkJggg=={scale="+$scale+"}>"
+!endfunction
+
+IBMEntityColoring(cloudalerting)
+!define cloudalerting(e_alias, e_label, e_techn) IBMEntity(e_alias, e_label, e_techn, #232F3E, cloudalerting, cloudalerting)
+!define cloudalerting(e_alias, e_label, e_techn, e_descr) IBMEntity(e_alias, e_label, e_techn, e_descr, #232F3E, cloudalerting, cloudalerting)
+!define cloudalertingParticipant(p_alias, p_label, p_techn) IBMParticipant(p_alias, p_label, p_techn, #232F3E, cloudalerting, cloudalerting)
+!define cloudalertingParticipant(p_alias, p_label, p_techn, p_descr) IBMParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, cloudalerting, cloudalerting)

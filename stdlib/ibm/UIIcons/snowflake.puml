@@ -1,0 +1,13 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $snowflake [64x64/16z] xS61400000CXXFdRpkElMXu0001m
+
+!function $snowflakeIMG($scale=1)
+!return "<img data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAAIGNIUk0AAHomAACAhAAA+gAAAIDoAAB1MAAA6mAAADqYAAAXcJy6UTwAAAAEZ0FNQQAAsY58+1GTAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAAOxAAADsQBlSsOGwAAAg9JREFUeNrtWsGKwyAQNW4+bws9LAS2Kf22QAvJufsrvey3dMkaMCClaSb6Rk0zD+bQkoy+5zg6RqUEAoFAIBBsFQXxuQ9jjbGrsW7m2d6zDZS/ytjO2MnY35zzkkj+Yh1X9r8u0wEd+ne2vAY7zImgCU4bh3hpG6gyJz/+buZeoggwhP39IWpyE+GRvLJ9/kEIMIR7nbEIU+SPxlpEDnDnvNvQKELKnDBFvqb2SS9oLLdICCa/VICcRICQXzIFlkwHrvUdTt4nAiiRwA0Y+RABXonADRj5UAGmRIiFYPLUEesz3faWdp2fW+sLzgigJq0U70aZAtSkVXmSP7+DAD77hGdLXdLzAMRGJXnCm6r1OXAz9mtsD4gyNvKcArgifAX6+eYstrhzQJeJD2gtwJ13ou47tNo4EBHAPWJ9YERJBIgAIgBvDuDO6oVEwJvtA/ot5YAqEx9JaoGxIgwVeW9rituaBECWw5pThCLSnH1W0r76LoAUMPmZoE89H+20OYYAvocZowirF6BL9C5sH0C5kxPlABMwteARkIr8OHjBX6U1mPw90sjDRNBg8nUEAaD3E0ow+WE+tkQ/vlUe9LqOBpOPBdhNFb1C8lAR9ErJuyIcQ0TQKyY/og0RgSLALmPycyLsEAKcHLI5kp8SobN9D14Gh9vWB+v4qvK9Ka6cJfhTEa/LCwQCgUAg2C7+ASWsphL3/OFrAAAAAElFTkSuQmCC{scale="+$scale+"}>"
+!endfunction
+
+IBMEntityColoring(snowflake)
+!define snowflake(e_alias, e_label, e_techn) IBMEntity(e_alias, e_label, e_techn, #232F3E, snowflake, snowflake)
+!define snowflake(e_alias, e_label, e_techn, e_descr) IBMEntity(e_alias, e_label, e_techn, e_descr, #232F3E, snowflake, snowflake)
+!define snowflakeParticipant(p_alias, p_label, p_techn) IBMParticipant(p_alias, p_label, p_techn, #232F3E, snowflake, snowflake)
+!define snowflakeParticipant(p_alias, p_label, p_techn, p_descr) IBMParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, snowflake, snowflake)

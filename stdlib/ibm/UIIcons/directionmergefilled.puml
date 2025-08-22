@@ -1,0 +1,13 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $directionmergefilled [64x64/16z] xS61400000CXXFdRpkElMXu0001m
+
+!function $directionmergefilledIMG($scale=1)
+!return "<img data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAAIGNIUk0AAHomAACAhAAA+gAAAIDoAAB1MAAA6mAAADqYAAAXcJy6UTwAAAAEZ0FNQQAAsY58+1GTAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAAOxAAADsQBlSsOGwAAAi5JREFUeNrtmzFPwkAUx9uDwUVJDA4Sv4MjCQs6uLg6NMEPwMDkYtyQld3BD4CGxFESCInKorObH8DgogzuRF/jmeB55a6U8t5d75/8h74eL/x/XMtxoZ7n5OSUZfkR9R1wG7wH3jY84xv4AXwKftUBEIZ/Bm9a9mFPwLsiBCYZ2LYwvMcztcWiDEDV4ku+qgOgZDGAkg6ATAkbwDk3mvLI4VvCcWZmgBi+lSUAYnhUCIxIeDQIjFB4FAiMWPiVQ2BI4QuScQUMCAwp/EAydoABgSGFL0vGlzEgMCLh0SAwQuFRIDBi4VcOgREMv1IIad4Ek4RXQSA7A5pLDB8FobnMGZBP4R6wBt5XhP+KqPkKCPfgM+r7ATpv8D2itqWYCWXKl0AcPWrWrN0QudCsWQngEjyU1If8nNUAuuDGnPMNPsZKAGGwY/B0prbB/aspH9O1DYAsfA58zZ3DgsAQw3fAh9wdLAgMMXwwUwuwIKQJoKcZXgdCzzQAL+BajPAqCDXe0xgAJ+DPmOHnQfjkPY0A8ATuS1Z5QYwegWRl2Oe9yQO4EY4PwPUF+tT5a+f1JgngTrK6W1QNRW+SAMR/YlUS9KooepME8CEcFxP0Kip6kwQg7vb4CXr5it7G7geQkQPgADgADoADkGX5Gt/jVmd2l4AD4AD809jivGMdACOLAYx0AIRPV00sDD/h2f4oJxkYbkBeeT+Py4W/x9cNDx4+NncLPvJS2FBxcnIyW99+N4d3/uQh6gAAAABJRU5ErkJggg=={scale="+$scale+"}>"
+!endfunction
+
+IBMEntityColoring(directionmergefilled)
+!define directionmergefilled(e_alias, e_label, e_techn) IBMEntity(e_alias, e_label, e_techn, #232F3E, directionmergefilled, directionmergefilled)
+!define directionmergefilled(e_alias, e_label, e_techn, e_descr) IBMEntity(e_alias, e_label, e_techn, e_descr, #232F3E, directionmergefilled, directionmergefilled)
+!define directionmergefilledParticipant(p_alias, p_label, p_techn) IBMParticipant(p_alias, p_label, p_techn, #232F3E, directionmergefilled, directionmergefilled)
+!define directionmergefilledParticipant(p_alias, p_label, p_techn, p_descr) IBMParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, directionmergefilled, directionmergefilled)

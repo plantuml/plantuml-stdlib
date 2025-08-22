@@ -1,0 +1,13 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $kualalumpur [64x64/16z] xS61400000CXXFdRpkElMXu0001m
+
+!function $kualalumpurIMG($scale=1)
+!return "<img data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAAIGNIUk0AAHomAACAhAAA+gAAAIDoAAB1MAAA6mAAADqYAAAXcJy6UTwAAAAEZ0FNQQAAsY58+1GTAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAAOxAAADsQBlSsOGwAAAiNJREFUeNrtmrtKA0EUhidxH8ALgo9gIauNKa20SKeVsvECPoDY2CsKtr6ANhbaqXiJlTaCYBnBW6eFWEpaJfEsOYFl2CzJXBJ39j/wkd11Jmfzey6zkwgBg5mwMpM6f/kUi57LugACAsD+j90xqfOHFICldx1w3eteukSs8rHPrxV+PSAODX9oK/50akAg3UglcnOBhf96kr+S6pt6mjf1QBRjwtOWxfnTSoXMd4GcRj7uSXkopPxcN1gHrPnLa+SjkPJQLkyB4fy34s8zlI/NvC9arANRf2He16Vz1AAIAAG60wXiKrLf4txEJ7DqTyUCghbtKGomO4FVf6pdQF6RyV3AdCeQ/cldQNkfiiAEgAAQAAJAAKwEtZ/L/YRrOqtB6/46jYBWz+XNPTrT+wLW/amsBNvZBzC5L2DVH4ogBIAAEAACQAAIAAEya14XfBSIW8W5Pq8EEQFpjoC47/TbtTJqAGqA3Rrg9VD8UWKEj7+IlyzVgDHinrji8ylijXjMQg0YIE6JT9H4dVeJj0/4b04vhEJ/R8QwMUd8M7N87Zjoc1mAXWKGWCGeItefiWVimsc4KcA8sUHscArIdkZs85gFl4pgaOOi8XPWc2IzYdwWMUHsc1Q4EQGDXOA+RGOfv54wts6p8M5RMuSCAAUWISx01TbGV3lsPzHpggA1YpF47WDOG8+puSBAuAy+UJh3Sdy4IMCPxtxfPA1CABjMpv0BCvuJmJmTiFYAAAAASUVORK5CYII={scale="+$scale+"}>"
+!endfunction
+
+IBMEntityColoring(kualalumpur)
+!define kualalumpur(e_alias, e_label, e_techn) IBMEntity(e_alias, e_label, e_techn, #232F3E, kualalumpur, kualalumpur)
+!define kualalumpur(e_alias, e_label, e_techn, e_descr) IBMEntity(e_alias, e_label, e_techn, e_descr, #232F3E, kualalumpur, kualalumpur)
+!define kualalumpurParticipant(p_alias, p_label, p_techn) IBMParticipant(p_alias, p_label, p_techn, #232F3E, kualalumpur, kualalumpur)
+!define kualalumpurParticipant(p_alias, p_label, p_techn, p_descr) IBMParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, kualalumpur, kualalumpur)

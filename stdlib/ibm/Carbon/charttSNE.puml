@@ -1,0 +1,13 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $charttSNE [64x64/16z] xS61400000CXXFdRpkElMXu0001m
+
+!function $charttSNEIMG($scale=1)
+!return "<img data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAAIGNIUk0AAHomAACAhAAA+gAAAIDoAAB1MAAA6mAAADqYAAAXcJy6UTwAAAAEZ0FNQQAAsY58+1GTAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAAOxAAADsQBlSsOGwAAAplJREFUeNrtWrtKA0EU3bgpFMEf8NFb5Be0EcFKwcK18lGYaGfSCqay0CKlxEK0MoKFVgER/QaTFCopRMUP8AfiGbjIsqybnc3s7MxkDhxYdgK7czP3nntmx3EsLIYaOcnPWwcX6PoBvMo6AK7EZzXAQzAPToJ74Cx4k2UA8pKe44Fr4CZ4Sfc2wAvwloKTCUYkPWcRbPsm79B1m8aMWAFL4Bld74BNHYqgyBVQB6eI9cDYPVigZe/4UqBAY8bXAJbjK5TzFbrHJn+dZf6LVoEXcB78AYtgNzDOqv0bOAp+gydg1XYiFmZ0gsp1eDJrQNwOj8nkE1imetE1IQAeTZ51eCXwFHwHD8BXsOP77SM4DU6Ac2DNhD5A2Q5PtVbYIWn8IhZNqQFjlPNs2T/7Ojw2weNACnRp2ddUyX9RKtAgp9cOdHielUENzFMuw+B/kCowfIIzppkhLexxmlti/XS/n3kyyg6HoelLASNXgBL/sIXCKpAmYsuyq+Hk+rlKru8POgYgSl143Kl0MyQD3O5UxwAIdZU6pkCUq+Rxp8aqAJc7HXoZzA3LRHWsAUL1XscACNV70W4wa6//n95XaKwR912T9gFRn8JV0/vId80rnAJR+wXsTMEWabz/yA2TvCMZNSBrr9+hgsdyfhXcpfdgel/lede0ZFBWjRhYBtMKgBI7vklVQMXd3NTeyeXUX//S2weXwfEQ3RVdI1L7spxEBYJmY5sC4cWs4ErB5azwwjowzVTnD+dgK+R+i8a0g2lbYqkHQNkTn0mRpA+Is+OizamxpI1Q1AS1PjAxKNgkeyEp0lM1AHHMEM/5vjL1FiXfvWcyLGzH9k7HIijD+xsjg9qpRJwU4OnCeHy61iqQuk+3sLCwsJCAX0sS37P+zNpLAAAAAElFTkSuQmCC{scale="+$scale+"}>"
+!endfunction
+
+IBMEntityColoring(charttSNE)
+!define charttSNE(e_alias, e_label, e_techn) IBMEntity(e_alias, e_label, e_techn, #232F3E, charttSNE, charttSNE)
+!define charttSNE(e_alias, e_label, e_techn, e_descr) IBMEntity(e_alias, e_label, e_techn, e_descr, #232F3E, charttSNE, charttSNE)
+!define charttSNEParticipant(p_alias, p_label, p_techn) IBMParticipant(p_alias, p_label, p_techn, #232F3E, charttSNE, charttSNE)
+!define charttSNEParticipant(p_alias, p_label, p_techn, p_descr) IBMParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, charttSNE, charttSNE)

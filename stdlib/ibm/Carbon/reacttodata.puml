@@ -1,0 +1,13 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $reacttodata [64x64/16z] xS61400000CXXFdRpkElMXu0001m
+
+!function $reacttodataIMG($scale=1)
+!return "<img data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAAIGNIUk0AAHomAACAhAAA+gAAAIDoAAB1MAAA6mAAADqYAAAXcJy6UTwAAAAEZ0FNQQAAsY58+1GTAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAAOxAAADsQBlSsOGwAAAq1JREFUeNrtmz9oU1EUxl9rRIrtIIKDDh0qLdKQTR3UIjh1cawgFJoubYfGWkUXDVGnlv6x7RBc2mCndmuXTqW0ZKrQobSI4mJBoYKbIiqi3zPnwSXk3dwX3nvJvece+JHkJoGcL+d8uec+4jjMo4lu+8Egs9wXwXIzPbgLUoyST1HOTkJY3AW9TATY8O40c/cAK4AVwApgBbACWAGsAFYAK4AVwArAMxKafM4OcAP0gM/gCQcBhsBNSvyCsP4hTAEauQWGQRKsOaXDi3fgD7gIznOogKvgF913j+u6wDiYoapYMb0CvOTPggmqhFnwibyAza/AJGgB9+jxDicBroM0eAY+0to2VcdJ0z3ATTAPDsFLYf0VYXwF3AfdYAT85rYTbAdZsASKHLfC8+AHeMRxFrhNPAZfuQlwmr79IpU/u2kwS9tc1/j+6ijAMFFLJMn53d3egY7j8CUwR6LuOaWLrarRRL/57qj7XNcDkQXwBbyn/j0V4L1p2vVlwHcdBegDt8ADSqYT5BTfKw4763GbThgCtIJpsAlWqfSnwENwJcCwk6mH64YhwFNwDowKaznFVhCHnSMdBXCNb4yGlbfC+k+FVvAbdrQSwDO+FxWeE1vhcr2GnSgFEI3vm89rvFYolLVCbMNOVAKUG59f+LVCbMNOVAJUMj6/KG+FWIedKHaCfsYnixwlXaCBJ7ZhJ4oKkBmfrBUGqBViHXbCrgDP+O5IjM8v3gibnQOnQSKIAKrGJ4t8o52+BGmBIManTagKUIvxGSVALcZnjAAqOz5jBQjD+LQWwEjjUxXAWONTFcBY41MRwGjjqyaA8cZXTQDjjU8mAAvjkwnAwvj8psFroK3GUdeICmjjYnyy8wD3tGaLQd7uX2f/X7w9IVTCGSfmC5N1jGPwGuw73OMfCjiQ2N4ITJ0AAAAASUVORK5CYII={scale="+$scale+"}>"
+!endfunction
+
+IBMEntityColoring(reacttodata)
+!define reacttodata(e_alias, e_label, e_techn) IBMEntity(e_alias, e_label, e_techn, #232F3E, reacttodata, reacttodata)
+!define reacttodata(e_alias, e_label, e_techn, e_descr) IBMEntity(e_alias, e_label, e_techn, e_descr, #232F3E, reacttodata, reacttodata)
+!define reacttodataParticipant(p_alias, p_label, p_techn) IBMParticipant(p_alias, p_label, p_techn, #232F3E, reacttodata, reacttodata)
+!define reacttodataParticipant(p_alias, p_label, p_techn, p_descr) IBMParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, reacttodata, reacttodata)

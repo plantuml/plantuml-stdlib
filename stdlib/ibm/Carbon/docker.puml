@@ -1,0 +1,13 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $docker [64x64/16z] xS61400000CXXFdRpkElMXu0001m
+
+!function $dockerIMG($scale=1)
+!return "<img data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAAIGNIUk0AAHomAACAhAAA+gAAAIDoAAB1MAAA6mAAADqYAAAXcJy6UTwAAAAEZ0FNQQAAsY58+1GTAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAAOxAAADsQBlSsOGwAABBpJREFUeNrtmntojWEcx1+bGcYY5p65l9QSck/JbZNSbpMNRYkkihB/kFxyK7eJksUUc53kFuV+2SiyGUtkzDVrbIlc4vvrfI/eTu855z3nvO85O+95vvX5Y+d5z3ve5/f+nud3eaZpSkpKSkpKMat6Yf69GWC2n2sOgPxwPVBcmA0wHaT7GE/nNWFT/Qh4XTHI9DJ2IdwPExfre4AygDKAMkBsy+oo4C/Ou0PgVR/jxdHsAf7ivOM9wGycV3mA2gSVAWxRU7AcDKzLtYBd6gXOgB7gF1gKdsaKB6SAsyzvJQodBNvBNKv7AWbj/GObxr31C/aDqaAfeM7PxCBDQRfw1SoPiHScN+oXtALZYKtu8qIFIBnMtXoPsCLOBzt+0eCzkaAh3V6v18w4ZXyLk/eAbuAbqDAYewqGgHVgtNGSd0IUkLf/x8tYAegP5oFVoBQsBNecZIAXXOsdQaXH2G16gLz5MWADuMx9Ic8pS+AK+M2N0Jv+gktgEDgO9tEwjjDAW3AMrACd/FzrTpD+cln83xRywByTYcjOOB/seAuOPQF9wU8v328LCkF35gwV9XThZ4CfBCQa9InJmqcB0kAWWMblMhnc8twE74MMB9UG65k0tQOJNMoJLoH3nlHgO+jgsMpQ3vhHsAe8BDfpIYZ5QC1o76DJS0jsSi/IM1MNvgFtHFQd5nDHP2+2HC4HCVwv0a4ksAic5BIwZQB3K3qUAwwgHaGWYK2Zi/UeIAnFhCiffD8mRLvBs0AMIDrFfLlRlE6+JYsf6QmsNPslvQEOcf1kReHkExnjU/n8P4IxwANwA6zhDUNVHAuUbJujSwNueMM4+dJAvhzv8Xcl6+VqcDfEB5Ms7DCYSLcssWHyTXRLV0LfmWDekmdpeZprqK4nRh2Y3Y2gsQuCuUm8wWfSRJjPFlK+j26LkRqx2NBYmT3nGzrCEtQqjdVc/cHmYLwWwpmikQFqGEKWsL4u9PLddixBM+l+kna6DyKuc8IlxKrJi4E3MsyV0xCPQrmhr3MBKR03gSIWS263SzJYHh/APU5c1v1nG1xekrS9mqvPv4Px/meoN/V3MLKRPyTL4Cjzayklq8A78EpzdV6/2LjWe4PNYByXlfTz7lh1czMnQ4vBNvAQzARlYczqxAsnMSrJEsvlS9DCaQCNG6IkSs3AarArkGQjADVmt0bac8Ppabl8ATV2WDmQs8FUuuIsrvGdfLjqEJ8hhRtpBnOGJC4rufcB3f6jRdoAbslBwyoWTt+ZPUr+cMlEFibNy86MHuLig0EfRqNKhsx8ZqVhUSj/LS4dF2lATuFGpc8mq3SekcDoIZNP9ogcRcw4zwWawtYFA+jVWnMdRffUXP+gIK22NBqiltfIYWUFKdN0jUklJSUlJSUlJaUI6B8yRdsoVY932wAAAABJRU5ErkJggg=={scale="+$scale+"}>"
+!endfunction
+
+IBMEntityColoring(docker)
+!define docker(e_alias, e_label, e_techn) IBMEntity(e_alias, e_label, e_techn, #232F3E, docker, docker)
+!define docker(e_alias, e_label, e_techn, e_descr) IBMEntity(e_alias, e_label, e_techn, e_descr, #232F3E, docker, docker)
+!define dockerParticipant(p_alias, p_label, p_techn) IBMParticipant(p_alias, p_label, p_techn, #232F3E, docker, docker)
+!define dockerParticipant(p_alias, p_label, p_techn, p_descr) IBMParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, docker, docker)

@@ -1,0 +1,13 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $softwareresourcecluster [64x64/16z] xS61400000CXXFdRpkElMXu0001m
+
+!function $softwareresourceclusterIMG($scale=1)
+!return "<img data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAAIGNIUk0AAHomAACAhAAA+gAAAIDoAAB1MAAA6mAAADqYAAAXcJy6UTwAAAAEZ0FNQQAAsY58+1GTAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAAOxAAADsQBlSsOGwAAAjVJREFUeNrtWrtKA0EUnWQ6H52P1h9QBBvBJuLjA4IpRPAz0poUfoI/YCuIYKUiGAtLCzsb+4hFCu09C7MQwiY7mZk7dza5Bw5hkw13ztnd2TmXUUogEAgE84saU90N8BLcN8ePYBv8ngcDtsAncG3k+z54DH7EHIxmEP8Mrhb8tgS2wAdjxswZkItfmXDOQmwTNLP4DvgCNrhM0Mziu2DPHLOYoJnF52AzgdKAbJZ/K5jtR8WXmXAC3oCDqhlwBe5Zip9kwqIx8ZZikHVCA46mFJ+ja84dRoNqkHU156B8BHbAzYKr2Cv530XBHZDd/ndVM+AdPDPPsK0JReKzN0AT/KuaAQPzCmuZ2bzMhCLxP2Yu+arqOqBvacI48QfU4SjGSrDMhAaXeJ847JLnbcKQrfhg/QQXA3zyfJkJNuKD9hO0g3ifPJ8/Dk1z/jCyq3doaWCwfoJ2EO+b57Pvr80VXAd/wXvwFPyM3U+oeYrvjHxSTWJk9bVn8Rh5nrS+9ixOnefJ6+uE83yU+jrhPB+lfj3hPB+lvvQDEs7zUerrhPN8lPo64TwfpX7ZOoA7z5PX1wEGQZ3nSetPE4e583zI+k5pcNyVcMnzr+AuuGy4DZ4bI/rE9b36Adx53rd+kJ4gd553rR+0J5hMnqdcCcYQL/sDiPsJrAbI/gAl+wNY+wnsBlS+H+AL2R+gZH+A7A+Q/QFqRvcHhFwVKi7xse4A0jxfJQNI8nzVDAie5wUCgUAgcMc/iDY8N+S0bfgAAAAASUVORK5CYII={scale="+$scale+"}>"
+!endfunction
+
+IBMEntityColoring(softwareresourcecluster)
+!define softwareresourcecluster(e_alias, e_label, e_techn) IBMEntity(e_alias, e_label, e_techn, #232F3E, softwareresourcecluster, softwareresourcecluster)
+!define softwareresourcecluster(e_alias, e_label, e_techn, e_descr) IBMEntity(e_alias, e_label, e_techn, e_descr, #232F3E, softwareresourcecluster, softwareresourcecluster)
+!define softwareresourceclusterParticipant(p_alias, p_label, p_techn) IBMParticipant(p_alias, p_label, p_techn, #232F3E, softwareresourcecluster, softwareresourcecluster)
+!define softwareresourceclusterParticipant(p_alias, p_label, p_techn, p_descr) IBMParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, softwareresourcecluster, softwareresourcecluster)

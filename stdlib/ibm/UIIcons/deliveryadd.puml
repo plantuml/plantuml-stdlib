@@ -1,0 +1,13 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $deliveryadd [64x64/16z] xS61400000CXXFdRpkElMXu0001m
+
+!function $deliveryaddIMG($scale=1)
+!return "<img data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAAIGNIUk0AAHomAACAhAAA+gAAAIDoAAB1MAAA6mAAADqYAAAXcJy6UTwAAAAEZ0FNQQAAsY58+1GTAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAAOxAAADsQBlSsOGwAAArBJREFUeNrtms9LFVEUx8feMxAkKNsE1iYkoaAWLtxZi0eb1IWrxEUp/k4SxdKt4MIiSCRNRJdJi4IoaCFY/gkulFq08T2oRblU8Pf38s6Dy2WcZu7M2DTnfOGzmJk3c+49c+bcc+99jiMSiTirzOKeowiekRid4R4B4gBxgDhAHCAOkDrAe5yPq9awtVMAXeAz1wioBnPcP4HLkgMYzgViscs+ArL/cdtPGkV+gm7wkWsEXAKLoILzJ3ARtHLPAQNpzwHmKHAF/ND6dBM0gFUuEbAJPgSNgmwEnk+SpkGLdtxMkbHJJQeocF8zXnAvtyQ4bRx3eg2JaXTAG/BHO67yGhKzCar1o9IOmAejRjJc4FQHzIJ97bg0JLJxgO8hMc2VoJkMS0Ni6meDXvlODYljnNcD2jh9Am6q5u6AVM8GrXKFbI2JAyQHWOs66AG3wVU6p1ZkvoLXYD3mtm+TvRWnuFW2cVoOOAtegD6XCLpBqGszYBjsRvCSxl3OV2j2HlHl9ySovaxF5z+BnI9PSzXqGrgXwgkZ8A40+bD3GNSCRrAXVw545qPzunJ0j60mfHRe110wGVcEKO/2G+fy4Cn4Qsd3qAH67m0/5YRvATtfA4Ys7A1QTvgedQS0Gw5Tf1S4BZbAL2KJzhUMJ7dbvH11T7mlvY4w1ZTfWVYrNcBN953i0lSUispeWVR1wKrltUTZc3NAPsV1T96PA7qNb+okNVhes1VYewXqm9WMqjQEjhgPVIuNW8bvLjjFzQl97v2cihQnafYyAcOnR4uac5SYVDb+DSqpCHlvNEatznbRb5yk2Qu65v+SKq4gmgKDlmEfu71MwIeriUe9Nvn5m5bBQ3Bg6YDY7QV1gHrwW3Ae1HlE0CF4BR6EnAzFbi/MttdpT4f/9fRbJBKJRCJRynQM/bOVQXJh9ZkAAAAASUVORK5CYII={scale="+$scale+"}>"
+!endfunction
+
+IBMEntityColoring(deliveryadd)
+!define deliveryadd(e_alias, e_label, e_techn) IBMEntity(e_alias, e_label, e_techn, #232F3E, deliveryadd, deliveryadd)
+!define deliveryadd(e_alias, e_label, e_techn, e_descr) IBMEntity(e_alias, e_label, e_techn, e_descr, #232F3E, deliveryadd, deliveryadd)
+!define deliveryaddParticipant(p_alias, p_label, p_techn) IBMParticipant(p_alias, p_label, p_techn, #232F3E, deliveryadd, deliveryadd)
+!define deliveryaddParticipant(p_alias, p_label, p_techn, p_descr) IBMParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, deliveryadd, deliveryadd)

@@ -1,0 +1,13 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $percentage [64x64/16z] xS61400000CXXFdRpkElMXu0001m
+
+!function $percentageIMG($scale=1)
+!return "<img data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAAIGNIUk0AAHomAACAhAAA+gAAAIDoAAB1MAAA6mAAADqYAAAXcJy6UTwAAAAEZ0FNQQAAsY58+1GTAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAAOxAAADsQBlSsOGwAAAr9JREFUeNrtmU9rE0EYxiez0YKCYMCDXnMoFCGggoecPFclnoTmICjoJxDRLyDRmwhtc9JDEC/aVsWD9FwEhSrWU3vy79GrEY3PwLuwDDQzk+y+85bOAz/ohJlpnmdnNzP7KpWUlJSUlJS0X1WbcNwB0AEXwVlwnD7/Ad6CNbAC/kTwdBlcAFfA3yoCuATug6aj3w64CZ4zmx+ADDwFXVcIWcDkGvTAA9Dw6N+gL3QYrIMRo3mjk3SRnpUVQI+uaKja4BB4w2he0ZW/C7bGDawHLHvb/BAsgSfgUyH1BXADHCz0NWM3KroddjPfpdtATbsCzANv1Vr238A58Ah8pTCG9Pdr8JIeREcKY86ARfBPivn8vnapYz3wfoN58GHMmE1wnkLJ1aS5xJgPCaCovsN8MYS+Y66o5n0DOG21BwHzDxxzRTXvG8AJq/05YP4tx1xRzfsGIEWlm/cN4LvVnguYf84xV1TzvgG8t9rdgPntvu8kmfcNYMVqXwctj3Et6jturqjmQwLYKbRnwCtHCC3qM1P4bJs2VGLM++4Ezc7tC32hXGaHdxUcA78Is/U9RdveZXDUmudawC8Ii/nQ4/C9CQ9D+dhb0syHngbX6VTXDvwf5hR5x/M4zGo+NIARHWk/0sHG9U5gm5b9Q6nmy34lZkz+nPCVWBTz0wQgfoe3VwKIaj52ANHNxwxAhPlYAYgxHyMAUea5AxBnnjMAkea5AijDfGW1yNoeMF9pLTITbJ6lFpkJvvIstci64GXPUovMBJpnrUVqYeaVYq5FamHmlWKuRWph5o1Ya5FamHkj1lqkFmaeXVqgedZapBZ45VlrkVrgsmetRWqB9zxrLTITZl4p5lpkTZj5olhqkT4r4La1/Lh+6jhqkV4BmPtolk5enL/zVdcig94ImaAegxeRNjll1yKTkpKSkpKSktR/4WUo5vrSmKMAAAAASUVORK5CYII={scale="+$scale+"}>"
+!endfunction
+
+IBMEntityColoring(percentage)
+!define percentage(e_alias, e_label, e_techn) IBMEntity(e_alias, e_label, e_techn, #232F3E, percentage, percentage)
+!define percentage(e_alias, e_label, e_techn, e_descr) IBMEntity(e_alias, e_label, e_techn, e_descr, #232F3E, percentage, percentage)
+!define percentageParticipant(p_alias, p_label, p_techn) IBMParticipant(p_alias, p_label, p_techn, #232F3E, percentage, percentage)
+!define percentageParticipant(p_alias, p_label, p_techn, p_descr) IBMParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, percentage, percentage)

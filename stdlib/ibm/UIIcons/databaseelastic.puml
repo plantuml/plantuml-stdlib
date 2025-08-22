@@ -1,0 +1,13 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $databaseelastic [64x64/16z] xS61400000CXXFdRpkElMXu0001m
+
+!function $databaseelasticIMG($scale=1)
+!return "<img data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAAIGNIUk0AAHomAACAhAAA+gAAAIDoAAB1MAAA6mAAADqYAAAXcJy6UTwAAAAEZ0FNQQAAsY58+1GTAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAAOxAAADsQBlSsOGwAAArxJREFUeNrtmVtIFUEYx1c9VtiL3SSSTmUHCqGI6iksKopeeoio6AIFBSFIFxDqpQh7siAhCoKiqESLLlRvYSRRRhcICro9RCaFGvRQIShkl//gX1i3M2d31sOeM3u+H/xeZmdmd78zM/vNHMcRBEEQBEEQBEEQhIKjyKBuOc0mffBbLgOQMKi7Hx7J8v1b4bZcBqC40KeABEACUOAkstDHTXg6ZNuvcQjAF/igkEdAVMyDi2HSU94F22B3HANQCvfCOjjLp+5LeAxejUsAquBt/vJBWACvwHq4Hb6z+StQAe8bvLwbNU06YI3NATgOZ46i/US429YpMFmzP/gFT8Fb/PKMh3PhOrgJjnHVvQ53RhWAfdSEHjhNc22V5rkOcWS4ecM8pAGehSv48lvhoK0jIKkpb8vQ5gNcA2vhmaAvn69rQImmPOXTbniKDJrcLB8DoEtoTnCIxz4TbId/nf9Pq5K81gufwo+wE76iP3MVgHuwxbBNf4Zrn+ENuFFzfSpXfjdq2D+EF5gJ/o4yAG/hpSyPgj1wIZxt8B4r6QG42fZMUG2Tl8K7IdrO52hIBalcYtDxcurlWcgH9aOPU6udz1kJywK2VfWqYXMctsOPqGIG9wdVdBFz/3GahCrFHCEW5wHDe/8uT5naM9zh0PeyxC8A+XwmWMxf3I9PTJPTMcXWRVA913n4nHM5yHqRju9RrAHqAXeEbNvJFdu7MF/mhkbxmJ+2cxn62aIpfx9FAFbTMLR6AlDKsg2usnLu9Or5VejgOjDWGTom2wXXp+lbbZmf2PYVmKRZzBRz4FGDvg7DP7atASrPXwZfj7IflZletDUTVFmgOs87abq1Zf3GoKdB+ZwH/HCG/o5XC99BuBZOyFB/AF6DTdwZBqbIsYMEp8Z0Z+RhaS+nywsGQRAEQRAEQRAEQRAEf/4BpPN4jY5BNz0AAAAASUVORK5CYII={scale="+$scale+"}>"
+!endfunction
+
+IBMEntityColoring(databaseelastic)
+!define databaseelastic(e_alias, e_label, e_techn) IBMEntity(e_alias, e_label, e_techn, #232F3E, databaseelastic, databaseelastic)
+!define databaseelastic(e_alias, e_label, e_techn, e_descr) IBMEntity(e_alias, e_label, e_techn, e_descr, #232F3E, databaseelastic, databaseelastic)
+!define databaseelasticParticipant(p_alias, p_label, p_techn) IBMParticipant(p_alias, p_label, p_techn, #232F3E, databaseelastic, databaseelastic)
+!define databaseelasticParticipant(p_alias, p_label, p_techn, p_descr) IBMParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, databaseelastic, databaseelastic)

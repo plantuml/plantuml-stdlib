@@ -1,0 +1,13 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $augmentedreality [64x64/16z] xS61400000CXXFdRpkElMXu0001m
+
+!function $augmentedrealityIMG($scale=1)
+!return "<img data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAAIGNIUk0AAHomAACAhAAA+gAAAIDoAAB1MAAA6mAAADqYAAAXcJy6UTwAAAAEZ0FNQQAAsY58+1GTAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAAOxAAADsQBlSsOGwAAAlJJREFUeNrtmz1Iw0AUx08NgoMdqovi0sHd2am4ipObIE6ikyAO1sHPFkEXoS6CkwgiuLq5FGcHwbFDF6lTHToIClL/oVeIoR93ybV5l7wHf+hdkvber7m7915aIdjY2JJsQ5rnz0DnUBaaIjpGLXM0nX+FJuJ0BwxrnHsWN+d1AWTjuAboTIHpQc5NindALI0BJB2AQ3x8KWgLWpfta6gI1eMOoOX4NpT29Odl34UpEI4ljnstbRKEY5HjfQHhWOD4p3RQdDgvFAjHAse9DhW7XBcIxIjGoI987eOAzi9BJWgRGuvg+Cm0Aj1B355j7utn6Ar6gubavIfbXoA2oBeoQg3Ao8wsdRz3myqIeeiSWiA0S+mzKG2DOnM4yK5hTSDUDYQxxykB2Fdc1YXirpG3DUBBcXsTittl3sYpUFcAoRInWL8GqIAw4jj1ekALRKbNsYw8ZiQlpl4QqSv2cUWIATAAewGkonwvCttgxcC25g2RyQMo+7K0MBWdXrlBmSKATeghZEVHtaK002swURREKhoVnVH52mu/0L1Qqyi99RqMzgPORohrRYhvUtUChchRL4JBkiCjSRFng0nPBqk+G/SDSNzDUT+IAucCDIAB9MUGsQaMyqhxTbZvoEPoJykATqBdTzsno8hcUgCsduhTBdCPEJzXgEECuFXsi+0UOJC3sX8RTAwAd7Xfk+I4gAEwAHsjwar4/5+BRgTjrUZ5B5QIfGGlKAG44WwtQudrvpDaiOmUxd3ixJ1o/l1uEhofkOMfovnbwmXoXbCxsbEZtD+uwKx1MEekygAAAABJRU5ErkJggg=={scale="+$scale+"}>"
+!endfunction
+
+IBMEntityColoring(augmentedreality)
+!define augmentedreality(e_alias, e_label, e_techn) IBMEntity(e_alias, e_label, e_techn, #232F3E, augmentedreality, augmentedreality)
+!define augmentedreality(e_alias, e_label, e_techn, e_descr) IBMEntity(e_alias, e_label, e_techn, e_descr, #232F3E, augmentedreality, augmentedreality)
+!define augmentedrealityParticipant(p_alias, p_label, p_techn) IBMParticipant(p_alias, p_label, p_techn, #232F3E, augmentedreality, augmentedreality)
+!define augmentedrealityParticipant(p_alias, p_label, p_techn, p_descr) IBMParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, augmentedreality, augmentedreality)

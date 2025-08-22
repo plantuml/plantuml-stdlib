@@ -1,0 +1,13 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $sankeydiagramalt [64x64/16z] xS61400000CXXFdRpkElMXu0001m
+
+!function $sankeydiagramaltIMG($scale=1)
+!return "<img data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAAIGNIUk0AAHomAACAhAAA+gAAAIDoAAB1MAAA6mAAADqYAAAXcJy6UTwAAAAEZ0FNQQAAsY58+1GTAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAAOxAAADsQBlSsOGwAAAtFJREFUeNrtm89LFVEUxycdtKAiKmqRrYqgSEio3AtRRvgHGC2CKCko2rSQFkniVnwkClLpwv4ExXYJLsSgolBp4UJxYb+IJEmpXt9L58FD5g1zZ+6PM++dA5+Fz3HenM/9MefeGYNAQkKilmNHxGfFWsq5rtZ7gAiodQFhinmimGAecRlFzeuVHiACRIAIEAEiQAQkrwN078O+oyg9QASIAKdzQHntvQ8cBc3gAugA+yv83RZ4DvrAcp4FlMd34j14AXaCa+ABOL7t2AZwC1z3KSK0fP5fYIQSvAoechMROvqe32AMjHMTETrucexEhJ7mHjYifAlIK2IU9IPFahGgK+ImMQ0mwCxYytIzTD0XWANfwAKYo4v7kLFhKokwWbcE9REHPEpx0t3gEDhFBdBt0EmV5jwVPTrxF7wDQ9TCp2MKKt3osSEgKg6Adhq/qvu+BZsZRLwBe8CxjCW8MwGl2AXaDIhYpOryGVWaK9Sdj2QRYGpP/zCtAc5Sq18EjRWO/UYzeQH8sLD+13qOYeousEa8BsM0H3SBexFjV/38GNw3LCJV1Fs670/wimRsgDM0FEwPjagh26Pze9t1gGrZXmrlu9TqrHqEq0KIrQjXlSA7EVxK4agoFzFA88mnvAvYG9PycSLUxNUNpsAk3W1W6M6TCwFJEi/VB0GF41Rd0UHkpgfoJF4+1gspegorAXGFUJKKsDRZDtA+wB1wgrMAW6XwOh1XoBXhZXAOnAQH6XvNrY0z7AckCVNrgCZacreAVnA+S84uJkETiavrvAJugEsmS3ibAj6CweD/huY6w50h46vBr7T7w31LTFuAy/cEkyZubFOUSymcJHG1rzgaVNm2eNLEq+7BiPfEfQlgk7hrAewSdyUg7gUJr4nbEpC7V2R8/M8Qi8R9TIKsEncp4DN4Cp6A1YBZ2HhLTK0J1GNy9VDzJZgBfwIJCQkJhvEPAjPjNWwlIMcAAAAASUVORK5CYII={scale="+$scale+"}>"
+!endfunction
+
+IBMEntityColoring(sankeydiagramalt)
+!define sankeydiagramalt(e_alias, e_label, e_techn) IBMEntity(e_alias, e_label, e_techn, #232F3E, sankeydiagramalt, sankeydiagramalt)
+!define sankeydiagramalt(e_alias, e_label, e_techn, e_descr) IBMEntity(e_alias, e_label, e_techn, e_descr, #232F3E, sankeydiagramalt, sankeydiagramalt)
+!define sankeydiagramaltParticipant(p_alias, p_label, p_techn) IBMParticipant(p_alias, p_label, p_techn, #232F3E, sankeydiagramalt, sankeydiagramalt)
+!define sankeydiagramaltParticipant(p_alias, p_label, p_techn, p_descr) IBMParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, sankeydiagramalt, sankeydiagramalt)

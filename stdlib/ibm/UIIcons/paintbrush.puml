@@ -1,0 +1,13 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $paintbrush [64x64/16z] xS61400000CXXFdRpkElMXu0001m
+
+!function $paintbrushIMG($scale=1)
+!return "<img data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAAIGNIUk0AAHomAACAhAAA+gAAAIDoAAB1MAAA6mAAADqYAAAXcJy6UTwAAAAEZ0FNQQAAsY58+1GTAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAAOxAAADsQBlSsOGwAAA81JREFUeNrtmj1oFEEUx/duYiMmimhjjNpHLESDoCR3EdTO03iNoKAIFmJlZad2NhG0EruAh9zlYqkxFqn8qHMX40ehlicKJoWexugb8hbWYWZ3dnZm85bsgz/k5u4m937z5s3bt+t5ueWW23q2gsO5T4Pu4d9XQVMUATBH854F1UCbQb2gM6APoLn1AIA7PyHMXQRVKEJgKThPGgJz7PwyaAWdJwmBOXaejzdBp6hCYI6db4DmQQtUITDHzvtGFgKz7LyHe76JTnvUITDLzvtOcSffgtrUITCLYS9m+0xAYBb3vCzb89fvKENgFhPePK64zKn3oBZFCMyS8761swaBJUh4K3iFJ4Z3G8O+ItkO5CAwQ+ej9ngbna1QjwRmqbaXOdXCcZlTj0EdChCYwZ6fCvmRKgjBSLgFqiv+b+oQmKKTUwtJeKo9rlrZIATu/M2I3zQIGgvM7RSCDMBz7OREZfs4K9vCyGlE/J4qwu9Jq59QTPDdR6DzoD+gGxor2zJwfhkVXLAJjFJnEfARe3jiEbYgucDRXVnP0HlVhXkYdMcVgDcYZhVNCB2Hzgf7CdXA+30aEZdoC9QC4e1bD45XLeagKOd9a3iOLCwHuIag67xTi0qCriCQcF73FLANgYzzcY5BWxBIOR+3DkgKgZzzJoWQKQSSzptWgnEhuHK+by16gr7NaRZLNp2/LsxTxjm6awFAB8Kg5ZXfh3P6ttMGhKR3hsIgjFkO+yegEmjAJgQb9wZVEIqW9/wv/P6IBELJFIKtu8MyCC6yvQrCgCkEm88HqCCo7hUmgTAp2Q4+hDp+JnUAcU6HpNbF1S7jFghCGMH3tCC4ekosrJ0eZj8wWq6AFjVrgWnQIWH8BegEaCntCNDJCWG2AY+7MoZ5VzMSRk0jwRWAJBDiHm+JtoNLAD4E3jc8YlC6mkDgkdAvQBgOS4wFj45tAj31VhueQXsNOg76rjEHb+c/Aw0J47OgY6DfaUdA3OOtrqj2RmNEAs8dR4VI2OOtPrE6TRlAWKHTHwPCT/ycCOEAAv5KGYBNCE28bO8N1CN8fIY6AB0Ik+hMVE3RwSLMt42g+0kbImnZEhYzL4XxIUx0WzTmmBVe77LREaIA4WAMCNZbYmnbYgIIJeH15ywCCEJ4pYCwVfKdbaDbwtgM9WPQpOTlifEc6AvoG1acJ/EU2CH0JS6Jx2DBy56prgCjbBx0LcsRIEbCsCyrK4yX2BexOZN5AD6Eh6DtoP0hkczD/i7ogvf/kyaZ3gKi7QVdxgJpN+gv6BNukwfYicott9xyk9o/bl2SmlHA7UAAAAAASUVORK5CYII={scale="+$scale+"}>"
+!endfunction
+
+IBMEntityColoring(paintbrush)
+!define paintbrush(e_alias, e_label, e_techn) IBMEntity(e_alias, e_label, e_techn, #232F3E, paintbrush, paintbrush)
+!define paintbrush(e_alias, e_label, e_techn, e_descr) IBMEntity(e_alias, e_label, e_techn, e_descr, #232F3E, paintbrush, paintbrush)
+!define paintbrushParticipant(p_alias, p_label, p_techn) IBMParticipant(p_alias, p_label, p_techn, #232F3E, paintbrush, paintbrush)
+!define paintbrushParticipant(p_alias, p_label, p_techn, p_descr) IBMParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, paintbrush, paintbrush)

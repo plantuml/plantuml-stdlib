@@ -1,0 +1,13 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $sap [64x64/16z] xS61400000CXXFdRpkElMXu0001m
+
+!function $sapIMG($scale=1)
+!return "<img data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAAIGNIUk0AAHomAACAhAAA+gAAAIDoAAB1MAAA6mAAADqYAAAXcJy6UTwAAAAEZ0FNQQAAsY58+1GTAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAAOxAAADsQBlSsOGwAAAihJREFUeNrtmk0oBGEcxmeX5IKL4uDjIAcXclFIOREpFMnXgRRFcXCQg4ODHBxc9qA2Dr4Oq1BKDj5K687FQQ6sIwd7krR53vpPTcLOvjO7O/O+/6d+7XzszM48+77/d5591zBYLBaLxWKxWCwWS0MFfHCNzWCSljdA1M2T53j85pvAFSgA5WAWnIOY2y1gFIx70IAq8AlqaP0e5IFHF869DTaDtDIEajXp9sLMVlBqbQGn9Nrh0S7wROuVdPE3kueroxpyAXpAwqwBI/S66zEDYnSxJeAFzDi4+WI61xvoBB9iY64PmmzUhcov7jMCikAbiJs7gpr0+3XQAgbBg3WHDgZMgGmwAM5+7lTdAPEQFaLatvbbG1Q2oAwcgDtqBYZOBuSDQ1ruNSu+TgaE6cGuj4ZPQycD5sEwFb6kw6dqBrSDVSp8YTsHqGRANdgH12DO7kGqGFAIjsE76AdfOhkg7mEHVFDAeU31YL9rGXSBMXAr456fJZr7IlihsGPoZIDI9lvgBCw56T9+lMj2R+CZfstI6GSANdt3W7O9Lgb8me11MODfbK+6AUmzvcoG2Mr2qhpgO9uraoDtbK+iASlle9UMSDnbq2SAVLaXfaqSlZi3m6JlN+ftpbN9JluAOWnZSFzStqxmexlZZ4cbaJy1o3TN24tvvx4MyMZb2S6wR+NtthWnih/J1AcGHHYBt+btsyYnf5JKVxFksVgsFovFYrFYLFa69Q0Le2j3+/0RzQAAAABJRU5ErkJggg=={scale="+$scale+"}>"
+!endfunction
+
+IBMEntityColoring(sap)
+!define sap(e_alias, e_label, e_techn) IBMEntity(e_alias, e_label, e_techn, #232F3E, sap, sap)
+!define sap(e_alias, e_label, e_techn, e_descr) IBMEntity(e_alias, e_label, e_techn, e_descr, #232F3E, sap, sap)
+!define sapParticipant(p_alias, p_label, p_techn) IBMParticipant(p_alias, p_label, p_techn, #232F3E, sap, sap)
+!define sapParticipant(p_alias, p_label, p_techn, p_descr) IBMParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, sap, sap)

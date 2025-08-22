@@ -1,0 +1,13 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $qqplot [64x64/16z] xS61400000CXXFdRpkElMXu0001m
+
+!function $qqplotIMG($scale=1)
+!return "<img data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAAIGNIUk0AAHomAACAhAAA+gAAAIDoAAB1MAAA6mAAADqYAAAXcJy6UTwAAAAEZ0FNQQAAsY58+1GTAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAAOxAAADsQBlSsOGwAAAiZJREFUeNrtW7tOw0AQvBxu00Q0IH4B0dFCR0VFgXhI8BWuSZu/QEJI1PAB5BP4B9NSRJQgWEsXCZ1M4l3v3u1dbqQp7LMszcSe24wSYwoKCjYZo45zPz2ukcYecAY8dsevwBrYEO51DjwF3gC//cVK4YfSin8DTv6cuwCeAA+QJrTiH5zOlle+CVahATNP/BITt0YRvzy+9y/SaMARcW2V+BZfwOcUDBiK/8RfA59SMGBOXEOLlwhBjvSuXeD5OfDh1tjEt9jqOHfnHU+R6X0IHDvuA2+Bj8BFz/ss3PU7wG3gJ/AFeLbCSJJ47idgXXpfIu7VIK4ni+fOAI70Fg08aQNUp30IA4akdxTx3AbULqkNMr2jiecOwcbN6lxfYsTFS8wBmPSOLj6lEBQRr/XrMIf43hNplan43n2CzfCxR/UJNsN3HjWR2szEJ78LcIhHTaQ2w08eNZFWGT72qImUagB3b8/9zveeSCuieIneXjzwuEJQqrcPLp5qgGRvH1R8rF1AjXiqAUF7e40GUJsfdeKpuwCl+VEpfsgcEKy3Tz0EVYuXNkC9eEkDkhAvZUAy4iUMSEo8twHJiec0IEnxXIWIaG+v3QDx3l7zKxCkt9dqQLDeXqMByQYehwHBe3tNBkTp7bXsAtF6ew0GRO3tNbwC2QQe1YBsxWNDMDvxLbr+D/QO3DX5YrTuCZibDYJF7NNZouv/Av7v9ceZaZ6agoKCAodf3Sf0XhaAUoAAAAAASUVORK5CYII={scale="+$scale+"}>"
+!endfunction
+
+IBMEntityColoring(qqplot)
+!define qqplot(e_alias, e_label, e_techn) IBMEntity(e_alias, e_label, e_techn, #232F3E, qqplot, qqplot)
+!define qqplot(e_alias, e_label, e_techn, e_descr) IBMEntity(e_alias, e_label, e_techn, e_descr, #232F3E, qqplot, qqplot)
+!define qqplotParticipant(p_alias, p_label, p_techn) IBMParticipant(p_alias, p_label, p_techn, #232F3E, qqplot, qqplot)
+!define qqplotParticipant(p_alias, p_label, p_techn, p_descr) IBMParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, qqplot, qqplot)

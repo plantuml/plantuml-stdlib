@@ -1,0 +1,13 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $slisor [64x64/16z] xS61400000CXXFdRpkElMXu0001m
+
+!function $slisorIMG($scale=1)
+!return "<img data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAAIGNIUk0AAHomAACAhAAA+gAAAIDoAAB1MAAA6mAAADqYAAAXcJy6UTwAAAAEZ0FNQQAAsY58+1GTAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAAOxAAADsQBlSsOGwAAAjVJREFUeNrtmr9Lw0AUxxNbBAUdqoPVOru6iItD6lLE1clBXLSb4CCuCiI4iTr4axdBcHEQdLD4F/gfKFLqVAcHwcX6PXiBGpr2kuZyae49+EDSprm8b98l33etZXFwcHBwcHCYGramcYfBBlij/UtwDL7SLoCb+CbIed77BIdxC2EnIHFLpxB2ghLXIoStMXE3QUvyOCVC2BoTb04o7OcSI0BUCcQuhJ2QxLUJYScs8djHsROaeGzjBhFgHtzoulsHFGIV3MmcMBNg8Acw4TPgPlgGj+BHoa8Q534GZ+AbTIMBzzFifwacyJywz/RmKEgFvIGSj+JiepRBP3hRWAViCmyBa7DY4lrcilwBr3wT5McgGyG2wtwMcTvMCyK8JBaVEXJjjoxGEMMjY2G7sdSuQfoF76or4Ak4XX5TUS2LeyurAooqBXBIAG0lKzGliiSEkilwBKYS3gvk6H1eEOFegHsB7gW4F+BeIKQABXBAz9R8F6Lp6AUanv0P8i7boOo9OOuTvHiWj0QgsLjwPUpCVy+QJ3tdIgte7WSETsFsmxPuhrgI1b1Ac+z4vD4IxsBtpwpwFFpYb0XE/RcZR+Ye0NDUMquKtvkY/8MIC2C6ANkQn1kAF7S9Du5Nq4Bz8goF2uYpYJoAZXJTVdo27h4g5vwkPwVYABYgtT6gBsbbeOlejppMBVRS/IVXZAQQKyf1FCZfp9z+RcanZ7+ixYNRMNTjiYslMfGnySWrxZIYBweH2fEHfnsONGoKfoIAAAAASUVORK5CYII={scale="+$scale+"}>"
+!endfunction
+
+IBMEntityColoring(slisor)
+!define slisor(e_alias, e_label, e_techn) IBMEntity(e_alias, e_label, e_techn, #232F3E, slisor, slisor)
+!define slisor(e_alias, e_label, e_techn, e_descr) IBMEntity(e_alias, e_label, e_techn, e_descr, #232F3E, slisor, slisor)
+!define slisorParticipant(p_alias, p_label, p_techn) IBMParticipant(p_alias, p_label, p_techn, #232F3E, slisor, slisor)
+!define slisorParticipant(p_alias, p_label, p_techn, p_descr) IBMParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, slisor, slisor)

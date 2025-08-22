@@ -1,0 +1,13 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $wirelessmodem [64x64/16z] xS61400000CXXFdRpkElMXu0001m
+
+!function $wirelessmodemIMG($scale=1)
+!return "<img data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAAIGNIUk0AAHomAACAhAAA+gAAAIDoAAB1MAAA6mAAADqYAAAXcJy6UTwAAAAEZ0FNQQAAsY58+1GTAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAAOxAAADsQBlSsOGwAAAtRJREFUeNrtm1uITVEYxw/GA2YilyHkPnJrxIM8SLmEKbk8UBRJMS4PbqF54lmEBzTzIKGUF5diRC7JA0rpSJFLLpMyY0rj9oD4ffrvaZvODM6Z4+w9+/vqV7MvZ++9fnutb629Z+1UKuHRKQbX2AumwSgYCcXQT9sa4CM8g6dwC953BAHjYSksgvLQ+k8q9IvQuuEwNLSchrNwGh7GTYAVeAtMhy9wEa7pzj7RukxRBONUU2ZBBXSDm7BfQiItwC58H0yB+3BQd/BzlsfrAUtgM0yEu7BNIiMloDvsgQ3wCLbDhXY+x3ydYwwcgp1hsYUUUAbnYQTsgr3wLU/nKpLc3fAcFqhJFUzAICWrJlisat9W9IeZMBoGQF/4Ae/gLTxWrqj/w3EmwRkoUdOoK2QNWKPk1NDK9j6wERbCZK37oEK/1PIwySjW8j04B4ehsZXjlkp6dVS7wVJV13XQVT3BJbjcovsLh4mYo+xvfIUjalb1ceoGLWEdU3KsUfJ6k0XzMoGVGiStaiuxRkmA9deb1JZXZlHwTCKOwww4AFsz7dQlQgKmwlXduaZ2OJ7li5PwXb3Ljbg+CwQxFmbDBOitdY0a7l7ROKLDPQxZ/70MdqjgKSW1oIb0DD0YPVDOOKW7HnsBZarCNjy+o6xu+eF1i/2GaIywXvvehhV6Oox1VMErmPsPv5knQVUd5X1FyX/6jYdHzKJWw+Oco3PSTboAF+ACXIALcAEuwAW4ABfgAlyAC3ABCYzgrbC9RV0do+sOps2kczjGUTgR1IDlqd/n4kQ90jkWvlxl/vWPhyBsGklFQmp+recAF+ACXIALcAEuwAUU/cU+Njiq0d9rw4OIdtoe+RpgEwoHi+o8bPcmEHUBNm2tTlTmYXtkHg5qE3Tjm8vrTcAFuAAX4AJcgAvwhyELm2l9PSHlttfi9ha8+YsRqwkDE3Tj7VM7+5wmnfQWkPoJ08eOlxc5+HwAAAAASUVORK5CYII={scale="+$scale+"}>"
+!endfunction
+
+IBMEntityColoring(wirelessmodem)
+!define wirelessmodem(e_alias, e_label, e_techn) IBMEntity(e_alias, e_label, e_techn, #232F3E, wirelessmodem, wirelessmodem)
+!define wirelessmodem(e_alias, e_label, e_techn, e_descr) IBMEntity(e_alias, e_label, e_techn, e_descr, #232F3E, wirelessmodem, wirelessmodem)
+!define wirelessmodemParticipant(p_alias, p_label, p_techn) IBMParticipant(p_alias, p_label, p_techn, #232F3E, wirelessmodem, wirelessmodem)
+!define wirelessmodemParticipant(p_alias, p_label, p_techn, p_descr) IBMParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, wirelessmodem, wirelessmodem)

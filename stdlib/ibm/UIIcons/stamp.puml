@@ -1,0 +1,13 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $stamp [64x64/16z] xS61400000CXXFdRpkElMXu0001m
+
+!function $stampIMG($scale=1)
+!return "<img data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAAIGNIUk0AAHomAACAhAAA+gAAAIDoAAB1MAAA6mAAADqYAAAXcJy6UTwAAAAEZ0FNQQAAsY58+1GTAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAAOxAAADsQBlSsOGwAAAv9JREFUeNrtmk+ITVEcx6+Z509hRWESNpQ/oRB2T6HJEtGbsqORsiIWrEgasRiSUGLhT0opVixcqylRimGjGGOeGk1h5THm+Z7mLI6f651z77vnvfOb9/vVZ/E73XPuud97zvn9zr0nisTExFrZJjX4fgtBCRTBKjBXl38Eb0EMboLBiSbAAnAG7ATtlmvHwG1wDAxMBAG6wBUwPWW976Ab3PHZuXbPD38IXAZTMtSdCraDL+C5rw4WPL/5swnlr8E18FA/3DewEmwEB8Ey49o2cBGMgLucpoBa7F6BmUbZL3AYnLeMyL3gHJkyX7VIg1ymwCWwxvB/gq0Ob7EKXoAnOlpM1uXTwCxwP++Otnla8XeRsuPgaYo2+vRoMa2k2w5egBIZWf3/WQtsdhW8M3w1GnZwEGAT8W/poZ3WRhPWi80cBFhM/Hrm7TPiL+UgwDzif6ijrX7iz+EgwFiOoXaGpe0gBRhOyAmyWoel7SAFeEP8LXW0tc0yJYIU4BHxD2S8jwql+0jZYw4C3AMVw18C9mTcS5iJT0W3HbwAQ+AGKTuh09k0O8GTpOw6KHMQQNkp8IOkx10p6u8mi6d6+6d9dNSXAOoT1wVStj9F/W7iqy3xACcBlPWC34a/DixyqDdffxswY3+vr076FGAoYdXudKjXSZKnWI8odgIkha0NDnXWW8IqKwH6iL/coc4KSxu5WsGzAHThWptha/ye8wgYDqSNpgkwmkMbFc4CBG+FJtzT9n2g2sjOtPwIEAFaXQDX73UqP1e/t4vRvx89Q7PPOn0+Aj7lIYB6+JfR+K8pTqZ+qK62ieAyBXoYPnyk+9yTxxpQZDzFrX13yQM6Mq4bzbJqjb5LFBABRAARQAQQAUSAdHlAmcTTKqPnK+cxAmLGLzjOQ4CjemPBzUZ032uay0FJdWhZnfRSR9tnR3+f/gx1O/wgGj+Znst2uFauHcLeoK7+SBgUASQPyBRbQ80Lyo0YASHnBXEjBAg1L3CK+1nygNDzglRxX0xMTMy0P10JgbxMotZbAAAAAElFTkSuQmCC{scale="+$scale+"}>"
+!endfunction
+
+IBMEntityColoring(stamp)
+!define stamp(e_alias, e_label, e_techn) IBMEntity(e_alias, e_label, e_techn, #232F3E, stamp, stamp)
+!define stamp(e_alias, e_label, e_techn, e_descr) IBMEntity(e_alias, e_label, e_techn, e_descr, #232F3E, stamp, stamp)
+!define stampParticipant(p_alias, p_label, p_techn) IBMParticipant(p_alias, p_label, p_techn, #232F3E, stamp, stamp)
+!define stampParticipant(p_alias, p_label, p_techn, p_descr) IBMParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, stamp, stamp)

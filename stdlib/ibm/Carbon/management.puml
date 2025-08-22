@@ -1,0 +1,13 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $management [64x64/16z] xS61400000CXXFdRpkElMXu0001m
+
+!function $managementIMG($scale=1)
+!return "<img data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAAIGNIUk0AAHomAACAhAAA+gAAAIDoAAB1MAAA6mAAADqYAAAXcJy6UTwAAAAEZ0FNQQAAsY58+1GTAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAAOxAAADsQBlSsOGwAAAlBJREFUeNrtmzsvBFEUx+/sovMohEaCKDwKrfeGL0BDhUZCJIjXNxBfQeKR6NRoiUfYFVoNjYhHQ6P3iv+1Z+TakFiz955hzkl+mZlkZ889/7lnd+8/e5WKeHiMuZvACJ2vgGOOQcQZi0+CYlAJZsEWuI2KAHOgBDSABTAASsGm64HEmATIC8vD4JoB92CSnvwYtcEEuImKALrQHdBHs7AbHIVlKroKXfC5cc4SMRXxEAFEABFABBABRAARQAQQAaIauVgLNKu0s5MPFkHK8phbwSh4AsvghHM1qIvXzk4RqKAl7k4Wy9oBOq5lUfw+KKQl9AzYVgGcpKCe4CpIgHq6PgMF4OKH9zfS8fSHr68Bjxn5DsAQVwvEA4p6yt3GXg76UU/JK7quBp3UFjainfJd0rVug64gnztBPwNMZ0e/V7fF4nVcgz3Qa+RLsU0fCtPZsVm8H4fU+14uvnHkh5AIIAKIACKACCACiAAigAggAogAkQxzNcjl7elYUkxeYswoXi9lO+h8j26wOZh90EK4zJegWnWdH45QGLw9Fi/RbwHX3p7nON+37e9lTBEub4/NS/SffOa/tnqUfW9vV6W9Pdf5PnmJ5reAa28vyZTvk5coP4REABFABBABRAARQAQQAUQAEeB9RVhHtDnIzZWvVhnmSzxjOfwAXlX2//b6zWA48035+XwB5lV6E6O/j28QlIENSwMKQ75ysO63wMsXN71YnI5hyPdstsAdmAb9Kr2PrwqMK3tbWbnzVdPx1vThtEs6TOcuNjP/93x/I94Aa2+ZtZbGS2UAAAAASUVORK5CYII={scale="+$scale+"}>"
+!endfunction
+
+IBMEntityColoring(management)
+!define management(e_alias, e_label, e_techn) IBMEntity(e_alias, e_label, e_techn, #232F3E, management, management)
+!define management(e_alias, e_label, e_techn, e_descr) IBMEntity(e_alias, e_label, e_techn, e_descr, #232F3E, management, management)
+!define managementParticipant(p_alias, p_label, p_techn) IBMParticipant(p_alias, p_label, p_techn, #232F3E, management, management)
+!define managementParticipant(p_alias, p_label, p_techn, p_descr) IBMParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, management, management)

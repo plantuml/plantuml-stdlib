@@ -1,0 +1,13 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $warninghex [64x64/16z] xS61400000CXXFdRpkElMXu0001m
+
+!function $warninghexIMG($scale=1)
+!return "<img data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAAIGNIUk0AAHomAACAhAAA+gAAAIDoAAB1MAAA6mAAADqYAAAXcJy6UTwAAAAEZ0FNQQAAsY58+1GTAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAAOxAAADsQBlSsOGwAAA2BJREFUeNrtWztoFUEUnYzRCCIkoIUELbQQUokgCNFOW59YGmIREAuDhKRQ0jwEFVIoQZIigjaRdEKsn5UiCGIQFEGEdMEiIBZGEDHPO3gDw7BmZ+bO567OgVO8geyevfuZc+5MhCgoKCgo+H/RE+AYZ4ALwMOJta8CrwCfUQ6ygyhiP/AF8ECGmzcAPAd8BPzuexBJFHEH2J/xCe5HDSJHAY4Dxxi8xmOoxQu9hG/HfaOAH4DHgD8jX/BO4FvgkHYTlZbTwG6qJ+AicNgYm0hw8QLPMWGMDaOmJK/AHuCMMfYU2En42HfwnDpmUFv0AkwDB7XfP4CTGd79STz3FgZRW9QCqLl+yhi7i3NyaqziuXVMufoR1wLcA/Zpv9eo01CAaXhN+92HGqPMAmeBLWPsOnDDU3w3gCvdQA2PtbEWau2EfALU1DNrjL0ELjHwAUuoRccsag5WgKvavKuwCbzmM+9GQBe1bGpjQ6g5SAGU328bY8p/rzAKdSuoSUcbtZMLYPr9rz7TTQJMozannFBXgCq/fxO4zrAA66jNKSdID78/z7i/MY8ahZETenwKkNPvJ8sJkrHfT5ITJHO/Hz0nSOZ+P3pOkA3w+1Fzgozs93NiKyeIipxQWQDOfj9aTpAN8fvRcoJegHHmfj9kThj3bYj8c9ALMOfqoxuCqjwzV1UAZx/dANTmGUnx0Q1AbZ7p/YuPbhk+ejmCF4j9ZFnlGUnx0cxhlWckxUczhnWekRQfzRjWeUZSfDRTOOUZSfHRDOGcZ+q2yKh1+MvaF1u1mb8AXxGF7gLeAi7iu7pP/Nlq84t4XOX7R408cwH42bcA6g8PGo7wpCDuywHcBt4A7kWewqJQNjypm/MEuFsbewh8YGuFt5tOnPvtNRi1HHNtgDivX9gUwKvfzsDvW61f2KbB0Dlh0XIsiN/fDrb7BNXH5JPxmB7CsXceop/jF/sI8BuKbXt+BEcqMswIagvux5eNOVYZjKMiX89Q+f2PhuVVfv+8Tz/ABtxyAnn9wrUAnHJCkPULn5YYl5wQZP3CpwAcckKw9QvfpmjOnBB0/YLSlVHm47XI31lWU/QJ4dnCp4iv6rfnAGn9gnr3zJyQGuT9StT/GFGJ8A2muYHEF6+mu0vA96KgoKCgoMALvwEfM9qkGBV3PgAAAABJRU5ErkJggg=={scale="+$scale+"}>"
+!endfunction
+
+IBMEntityColoring(warninghex)
+!define warninghex(e_alias, e_label, e_techn) IBMEntity(e_alias, e_label, e_techn, #232F3E, warninghex, warninghex)
+!define warninghex(e_alias, e_label, e_techn, e_descr) IBMEntity(e_alias, e_label, e_techn, e_descr, #232F3E, warninghex, warninghex)
+!define warninghexParticipant(p_alias, p_label, p_techn) IBMParticipant(p_alias, p_label, p_techn, #232F3E, warninghex, warninghex)
+!define warninghexParticipant(p_alias, p_label, p_techn, p_descr) IBMParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, warninghex, warninghex)

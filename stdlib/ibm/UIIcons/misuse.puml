@@ -1,0 +1,13 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $misuse [64x64/16z] xS61400000CXXFdRpkElMXu0001m
+
+!function $misuseIMG($scale=1)
+!return "<img data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAAIGNIUk0AAHomAACAhAAA+gAAAIDoAAB1MAAA6mAAADqYAAAXcJy6UTwAAAAEZ0FNQQAAsY58+1GTAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAAOxAAADsQBlSsOGwAABDhJREFUeNrtm01IVFEUx6/OyFSURRIRkRREYLToY5XSou9ykxoS9LFoU2RDQUpEtBCCwKKdhO2iCJnyA0qij4VRIRG0qciPpGIgpVWKVtqI9j94BkTex73v3XfnDTMHfgudmXvf+b9z7z3nvvuEyFve8pbLVmCoj21gB9gANoJSEAOr+DvDYBIkwWcwAF6D92AmGwWIgv3gGKgESz22MwqegPvgGZgKuwDLQJxZqbntn6CZGQmbABTOF0G9j7utEhU3wXUeNhkXYC+4BdYbnr8GQR144aeRiM9x3sTOl2RgAl8OjoPFoBtMmxRgBU9KRwytJE4RXA72gMfgjwkB1rLim0O0nK8Bh0CX6gQZ8eD8G7AuhDkNDcNa0KEiQkQx7LtD6nzaijnvSMgOB1kBisDTkIW9UyRUgHsyE6OsAE084WWL0ZywUGaJLJRc5+uzsM6p52v3JUCM1/mCLBSggK895mcIXAaHFTumWbgRVPlMtOZaChzl9soUk6V/4JUXAaiweQAWKDpPc8VH8AnUaBAhxW22c/ubFEXYClrAhKoADeCgB+fTJWufBhHSznfy39MeRKAb+NsuCgod8vy44sUmLOr1TnYgpcH5tE1xXyoWZ5+kI4Du/CnFTqr4jvfN+7+XSLBznqwatCpGFRVM78AXWQGucpipptU1GkRwcz7BiZmXuqdNRgAaFrc5kRCGRQjKebLV4IaYt8cYsZk1z/vcY/AiQpDOC76hVDIPuwlAF3HA59KlKkLQzqetF7x1E+CkmN3GFoZEmDbkPFmS9wwcBWjgul8YEqHNkPNk4+COWx5QqjknL2JHqi0+6zTovKVvVgIsCaAwcRLBlPOWvpkSQFaEIJ2XFiCnzEqAsYD6clrqdNQOMjaWKQFknDchgpQASYPOVzusDkGIkJQRoN+g8wmXJVK3CP0yAvQadL5IIk/QKUKvTDWY8rAX4Leq01VKu9kVmWKIDiKc81gO+ylsghbhF7ggUw7TF7Z42BDRUdUFKcIj8FB2R+ivmN2GNul80CJcUtkS+wZO816arJFg7ZrSWzcRaDavVWiPhvVZYfGs0C4Vpp3XZkWF6e5HNeb2dqtDVKg/p2wWNifMnMLoAzgj5B+MlPG80cFK6yhs5kdClNusUWhjlKNT+cHIBF/8ToXOyuZMnq2aqrq0CBT2jYrOk10Dz+0+dHvoGWP1TZ8A02WDfEMmVarBuUY/rBMBH1cNyGb42ifdwsvNvvJqUJ5lAtBhyhaZ8SVjL8FuMXvyIhusB5wQGo/IUEP0UIGOopWE3Hk6ab5Pdl9DJZuiU1ddnIAUh9T5H2AXGFJZYlRshNf5yhBGwgA7/111jRUeRKBkpCJEc0IPh/2Q6g+9lpY0HO6CRWC7yNwhqhme7enQ9LiXBnL+uHz+hQnNF5ezr8wIi5I1J1+asusjtK/N5S1vectt+w8rfTlMGk/HlQAAAABJRU5ErkJggg=={scale="+$scale+"}>"
+!endfunction
+
+IBMEntityColoring(misuse)
+!define misuse(e_alias, e_label, e_techn) IBMEntity(e_alias, e_label, e_techn, #232F3E, misuse, misuse)
+!define misuse(e_alias, e_label, e_techn, e_descr) IBMEntity(e_alias, e_label, e_techn, e_descr, #232F3E, misuse, misuse)
+!define misuseParticipant(p_alias, p_label, p_techn) IBMParticipant(p_alias, p_label, p_techn, #232F3E, misuse, misuse)
+!define misuseParticipant(p_alias, p_label, p_techn, p_descr) IBMParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, misuse, misuse)

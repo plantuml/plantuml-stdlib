@@ -1,0 +1,13 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $friendship [64x64/16z] xS61400000CXXFdRpkElMXu0001m
+
+!function $friendshipIMG($scale=1)
+!return "<img data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAAIGNIUk0AAHomAACAhAAA+gAAAIDoAAB1MAAA6mAAADqYAAAXcJy6UTwAAAAEZ0FNQQAAsY58+1GTAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAAOxAAADsQBlSsOGwAAAqxJREFUeNrtms0vHVEYxqeUlVqIBbdqYcuCSCxshESTprGyaEKim/ZeSWPRDYk/wUYkgiARm7KxU0IbrnU3FuUPcH0lLYvqigjP4b0yDubrnTFneJ/ktzh3znnve557Zs7HHcsSPW+9CCFGLfgE3oJq+mwHrIJpsGVyfI4BRWAY9ILCB+qcgwnwFZwZFv9KhQE7XwyWwQdQ4FBPXWsCzWCeEjYhPtuAEUrOq2pAGVgyJP6NXga8J3u1z3JgAKxTuRUMgSpbHdVm3MM9G3V89ggYpCGX1y6oB7/Af+I3mAXdoNQ2XE/BSszx79xDftWulfvB8T31jumaU9s44rMNqNbKGw51N1zaxhGfbcCTUhADdrRyi0PdFpe2ccRnG/BDKw/RFKSrjK7ZtWpAfPYsoJ7KGZt56incBQ7BX1ACOsACeKOt2tLgT8zxQ1kKj4IvAdr0GRKfvRL8SXN1jY/6H30sVaOOzzZAfdEc3YeNDs8SVW8M9PjcrEQdP9Lt8AUtXVdou7pteHyRnAj52KOnaUqqA68M68sJbZK+gUnaGIVmQAp8p11ZErQJ3oP9MGYB9cuvgYYEjewK0AZm3KZGL0vhdMI6n1cD5c4+EerWyuqs7jPYM6zDr8EUeKflPsodAbVaOWNg5y3KKeOSeyAD9Kd9zuBhn3PJXQ5ExAAxQAwQA/yuA7i68Ln89ltfRoAYIAaIAWJAlLOAOlRIxfWUDjDL6LmzR0A2wT9wNgwD1JsZRwns/BHlzjYg/4aG+qPiIAEdP6Bc6yn3UFaCKlCXh3vOBKVkFhADxAAxQAwQA8QAMUAMEAPEADFADAhpN2iX2wmRW9u447NHQJZheNaA+GwDgp4QeTqheYT4txTkVdl/1vWraJWg3HJ/CUGd0CyCTsvDCc0jxBeJRKIbXQJVJbQCKrprGQAAAABJRU5ErkJggg=={scale="+$scale+"}>"
+!endfunction
+
+IBMEntityColoring(friendship)
+!define friendship(e_alias, e_label, e_techn) IBMEntity(e_alias, e_label, e_techn, #232F3E, friendship, friendship)
+!define friendship(e_alias, e_label, e_techn, e_descr) IBMEntity(e_alias, e_label, e_techn, e_descr, #232F3E, friendship, friendship)
+!define friendshipParticipant(p_alias, p_label, p_techn) IBMParticipant(p_alias, p_label, p_techn, #232F3E, friendship, friendship)
+!define friendshipParticipant(p_alias, p_label, p_techn, p_descr) IBMParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, friendship, friendship)

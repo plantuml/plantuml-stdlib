@@ -1,0 +1,13 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $chartquadrantplot [64x64/16z] xS61400000CXXFdRpkElMXu0001m
+
+!function $chartquadrantplotIMG($scale=1)
+!return "<img data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAAIGNIUk0AAHomAACAhAAA+gAAAIDoAAB1MAAA6mAAADqYAAAXcJy6UTwAAAAEZ0FNQQAAsY58+1GTAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAAOxAAADsQBlSsOGwAAAj5JREFUeNrtmr9Lw0AUx6N26uBfYEHHitpJR8Wxo1IKitTN6uzm5H/g2nYsuBT3biqOdapKdShY0NFJpAgufoNPCFlyd73Xy4/34EPT3uXS++Zy903yPE9CwmV0CWcxm/UzkHkBcob75UENrNP3e9AG4ywIUAJXYAk80W+H4BRUQD/NAuSp899gFTzT70XQobJSkkaC7hzgD/tFUA103qPtKpXVHPepDN6Ism0BNsAg1PmgCAOq4zKaYIFoyipgWYAeWKZrPhxFKus57lMdvBP1qMpzmo37Q3wP7IBb8BGaBL/ACfhRbO+APi8tCjAEF8TQ9iowpqXOn+0fA8vgCnilskR5ARMf0KelLmiEGlkyQv8joUFMI9icZy4BJ4nVecZdAHbnGXcfwO484y4Au/NUuQR8P92i7SMv+gmObv3YO0Etb21Q36nzjPsl4C91I5rwiqHOd6isPckBVKzwC9gCn+SthxbrR1lh31LfgX1wBnbBMTgn210hz28cM47PcDcwb4gRcuE85XmACCACiACZjuAyeOPg+Gv0+eDg2NsyAmIQ8npcJkERQAQQAUQAh8FxO2z7maBpe0r7cYwAm88EJ2lPaT+ZAxja1Ho/z9ie7f8hVlgugSwvg6nJDDURIFWZoboCpC4zVHcOSEJmKKsAScgMlVWAU4AkZIayCsD+fl7xrk45+1s3ovIDuN/Pq6TKXoMCmAeb3l8K7FR9QKoyQ02d4LQzQ8N3da3AthMBXN8xFmQZFAFEAAkJhvgFcEesoxXgQzAAAAAASUVORK5CYII={scale="+$scale+"}>"
+!endfunction
+
+IBMEntityColoring(chartquadrantplot)
+!define chartquadrantplot(e_alias, e_label, e_techn) IBMEntity(e_alias, e_label, e_techn, #232F3E, chartquadrantplot, chartquadrantplot)
+!define chartquadrantplot(e_alias, e_label, e_techn, e_descr) IBMEntity(e_alias, e_label, e_techn, e_descr, #232F3E, chartquadrantplot, chartquadrantplot)
+!define chartquadrantplotParticipant(p_alias, p_label, p_techn) IBMParticipant(p_alias, p_label, p_techn, #232F3E, chartquadrantplot, chartquadrantplot)
+!define chartquadrantplotParticipant(p_alias, p_label, p_techn, p_descr) IBMParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, chartquadrantplot, chartquadrantplot)

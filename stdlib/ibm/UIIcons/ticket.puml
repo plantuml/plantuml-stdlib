@@ -1,0 +1,13 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $ticket [64x64/16z] xS61400000CXXFdRpkElMXu0001m
+
+!function $ticketIMG($scale=1)
+!return "<img data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAAIGNIUk0AAHomAACAhAAA+gAAAIDoAAB1MAAA6mAAADqYAAAXcJy6UTwAAAAEZ0FNQQAAsY58+1GTAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAAOxAAADsQBlSsOGwAAAkZJREFUeNrtmr1KA0EUhUeNdjZioyZYKljoGygWgqCVpa3EQvwDUR8hCYIiCCqW6gsoCBZi3kALC0tRYyMpLBV/zsANJOPsZt1End2cD07hJLvcc2cme+euShFCCCGEEEIakSaP8SSUg0agroh7fIIuoVXoIUgCtPlrqCNmk12EBs0kNFu+mIuheSWecuagLQHDMd7y37wlLF/qDvg78dt81imOTx9v1hXQUDABTAAT0NgkIlilcgX8dQI2oYEIehuQ2GveAkvQPLQDrUBvjhtvhTagOaglTALuoZQxpm+0APVDk9Cro5VgG3QCjXl8fh9kC8zajo2CvnHW4dnP+ph/EG9VV8CZrADdBxiVm/aUfa5Xwi5065j5PomtnEdoDbqQvsCPfgT1BUfQEFQwrkk7OPtpw09BYj/yMh/0KfAMrRtjow4mwIxpXWKvSx2QN/7udTABvVViZiFUSwLMTsqdg17uqsQcOgGdUMYYu3AwAWZMGYk9dAL0Y3AaulKVraQPaN/BBOxLbCW6JfZp5dPat9UB43KzpMc12w7WAEpi2pbSvYSuXw7LCqG01Dm+K2DPx/y5FBausiYx2kiKt6orIGUZe/+Hw1CYfoA+o0z4HIZSYU6DW9ABdBORJ5ueoEXZxjPGlgj1FFiOkPlybiR2FkK1NkT+i3q9GeIKYAKYACaACfhJtfWoLO/RY0JBVfY3rSsgH+MJzwfZAvq/qYoxNF8UbxXY3py8QMdyhtYNhfaIG9cd4VNoSnm/7yCEEEIIIYQ0GF9jv1t+jywkRwAAAABJRU5ErkJggg=={scale="+$scale+"}>"
+!endfunction
+
+IBMEntityColoring(ticket)
+!define ticket(e_alias, e_label, e_techn) IBMEntity(e_alias, e_label, e_techn, #232F3E, ticket, ticket)
+!define ticket(e_alias, e_label, e_techn, e_descr) IBMEntity(e_alias, e_label, e_techn, e_descr, #232F3E, ticket, ticket)
+!define ticketParticipant(p_alias, p_label, p_techn) IBMParticipant(p_alias, p_label, p_techn, #232F3E, ticket, ticket)
+!define ticketParticipant(p_alias, p_label, p_techn, p_descr) IBMParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, ticket, ticket)

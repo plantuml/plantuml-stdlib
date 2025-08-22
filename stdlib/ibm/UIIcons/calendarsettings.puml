@@ -1,0 +1,13 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $calendarsettings [64x64/16z] xS61400000CXXFdRpkElMXu0001m
+
+!function $calendarsettingsIMG($scale=1)
+!return "<img data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAAIGNIUk0AAHomAACAhAAA+gAAAIDoAAB1MAAA6mAAADqYAAAXcJy6UTwAAAAEZ0FNQQAAsY58+1GTAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAAOxAAADsQBlSsOGwAAAzxJREFUeNrtWj1oFEEUntW7FKJRxEYxaexMQEgdUNSIsRL0CEiwSmHURgsLC0ELiwMVIhqLs5EjcJyCVSJeCArWAcEfEFJFTRfi+Qcm5PyGewvDsNmZubt1Z8374CPs3r23875583beXIRgMBibGUECPhsdfkYjyTFv2ewZwAJwDbDDfrAIHgH3eh7TEvgKvAZ+7oQAMvi34O6MTe4yeMgkgs0SKGYweEFjLnaiBhzO8BI3jj1n4WSf47JJex/QiBk7vwVYABbAvQak3V8EnAEsAAvAArAALAALkJl9QNoIOANYABbgv6wBifw+wEuABfADA2Chg/4K5DMTNUAOtAZ204RUlM/kmd5JcDjCrgrOgC/Ar8r9EbAM1sEhcN5nAcLgw2P3Mv2dBW+A42B+A9uzxDVwCrwODpKPHPmsmURIW4ADNPPqeGQAP8GdDm+y8+BpcJsWUzc9w1sBqpT2ZWUsOYfghRasCpkZo/QMr2tARUn/qPG8A0vgS3CR7vWAJ8AxsD/CJgy+kpWN0BvwlzaLf8Ar4CNwXfv+R+J98AJ4D+xSPv9BdSQzr8HbEcHLyv8wIngV6/SdYbIJsYuKaCYEkD+3n9PuXQXnHHzMkY2KcWHxU74PApzSlqJc85Mt+Jkk2xB58u29APomp2RI+7jlUDL49qIINgyf19rwrdueMXWRPjZDi//SlrtBD8fU04Ztr6tBGjVAP8l5Sms1hGxePrToe0i7fkYNk9cZMKNdj7U4rq1kG+fbSwGmwVXlup82Ma6QNn1aPzCdBQGWIjY+d8GjDj6OgXe0e1PkOxNF8Ba4olx3UfpeNIxRpv0lmmm1GarTAYmXRTAKx8Ht2j0Z0ANKbb0d7lXa4b4If/JgZNCmHbY5W/8iLP7fztGnipGYs4B2YHUmYLMEXic484WI4NcohV3xjWzV7C4Lw2mzjQDyv66XExJgQQs2nLWD4BMtoI0g3yATonn2N6rZ1OkZsUXEhDpVVNlb7wF3GL5/0/ENMEuzlFdS9jv4HHxMm6JVEkXfQMnKf1k0z/1+g+/BT6J5QLoiLI7FA+EHBmgGqw5dZGBYWgum4H16C8zbDNYBVe4GWQAGg8Ew4y97iZdAOLEwAQAAAABJRU5ErkJggg=={scale="+$scale+"}>"
+!endfunction
+
+IBMEntityColoring(calendarsettings)
+!define calendarsettings(e_alias, e_label, e_techn) IBMEntity(e_alias, e_label, e_techn, #232F3E, calendarsettings, calendarsettings)
+!define calendarsettings(e_alias, e_label, e_techn, e_descr) IBMEntity(e_alias, e_label, e_techn, e_descr, #232F3E, calendarsettings, calendarsettings)
+!define calendarsettingsParticipant(p_alias, p_label, p_techn) IBMParticipant(p_alias, p_label, p_techn, #232F3E, calendarsettings, calendarsettings)
+!define calendarsettingsParticipant(p_alias, p_label, p_techn, p_descr) IBMParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, calendarsettings, calendarsettings)

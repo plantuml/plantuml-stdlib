@@ -1,0 +1,13 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $errorfilled [64x64/16z] xS61400000CXXFdRpkElMXu0001m
+
+!function $errorfilledIMG($scale=1)
+!return "<img data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAAIGNIUk0AAHomAACAhAAA+gAAAIDoAAB1MAAA6mAAADqYAAAXcJy6UTwAAAAEZ0FNQQAAsY58+1GTAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAAOxAAADsQBlSsOGwAAA9dJREFUeNrtm0loFFEQhp8OGTUTXIYcFPQUDEguggtERRBBxBnBLeByMRiNIHiR5GA8GBSEqHg1OIgSEDEH9SIqGhcEQTGIEg/KCIpGxagYJq64/EVXIITM9HudXqp7uuA7zGR6Xt4/79Wrqq5WKrbYYitnm+DDGJPAYlAP6sBcMAtMBWn+zGcwCN6BF6AP3AcPwM8wClAJ1oOtYAWY4vB7voNb4By4CL5JF2A22AeaQJXL310AOXAcvJEmwAxwmCee9HhL/WIhDoAvEgTYDo6Cap/91wBoAWeCEmAaOAUaAnbk3WAn+OqnALXgCqgRcprlwRrw3PTChIPB6Ei7wQ5PitFxuhncAW+9FGAR6GGnJ81SYAv/OP1eCFDLk58uOLBLcvxxGXxyUwByeHeFLftSQRj5g7M6UaSuAF1gWYhC/DQ76G43BGgE+0OY51De8Ro8LvWhiRoRXkeIk70OO4dtJ8AhBxEehanN4K8AAap5Do62wBx2JAnDye8Cj/goyvqUcpey+TyPQVMB2sFSB5P/x697Ob/PBCxCgse/ZrIFUpzZmdjDEZMfNsoVdgvYDk08J+0V0MBRlYlleNn3jnpfwkqgAImqTE91BTjCkZ9pYpXlyUoUYbKyKku2AlANrxNUOMwuM0JFIKd+DPyxE2AJO7Px1BgkikA/6HUOjkoKsA2sHOdgUkWgivM9OwGa+OxUERSBiqmX7ARo4f2iIigCldVP2wlwkNNfFVERTtgFQlUeDErjnFRW8VIFGCxV6USCKY8GlyBCyjQbjOpKKCnAUIRFGNIRoBDhlVDQCYU3uXgMSjsd+nSOweUuBUISRejRCYTmuRAKSxXhgk4oTAM1+nw6+CVCu04y9EFZTQ4VEROBuk326qTD9IF6BwUR6SJQKtylWxEi2xhQ5cYrEWj5a5fEXvJySQoV4T1Ya3j+U8zxWzcUpogpp4K1YsESibPQ8LtyxSLcUlvgGdijnDVReLUS6HVnkQiymFFTFVW4jW+M0AUzldURogSIQMu+2XDyilfR+WJ/tPt1qVtzh7LuuQctAu35BYbXUSfZBvDDJBscadSH16rCa63KppdQZ3/T/fU6JkxGzRFtTuoBYxntu3yIJp/X9RW6Hp56ba6yN60UPvkBTub63RSAjLqubrMISaGTp4Bn1VgRnxsCKFb1JlinvCueOrWPYLWybtMrrwQgo05M6sOjVrS0oD1Py/6J6YVOozzaDtR2UiPgdCBvn1UG3aFuCDDsGGnwV8rqIfTbOQ5wqN6mxvFYTfzAhMv/XNk+MjPayvahqbFM9GNzscUWW3nbf2D+ApPEZOSfAAAAAElFTkSuQmCC{scale="+$scale+"}>"
+!endfunction
+
+IBMEntityColoring(errorfilled)
+!define errorfilled(e_alias, e_label, e_techn) IBMEntity(e_alias, e_label, e_techn, #232F3E, errorfilled, errorfilled)
+!define errorfilled(e_alias, e_label, e_techn, e_descr) IBMEntity(e_alias, e_label, e_techn, e_descr, #232F3E, errorfilled, errorfilled)
+!define errorfilledParticipant(p_alias, p_label, p_techn) IBMParticipant(p_alias, p_label, p_techn, #232F3E, errorfilled, errorfilled)
+!define errorfilledParticipant(p_alias, p_label, p_techn, p_descr) IBMParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, errorfilled, errorfilled)

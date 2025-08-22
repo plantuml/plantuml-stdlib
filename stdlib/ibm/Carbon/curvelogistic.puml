@@ -1,0 +1,13 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $curvelogistic [64x64/16z] xS61400000CXXFdRpkElMXu0001m
+
+!function $curvelogisticIMG($scale=1)
+!return "<img data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAAIGNIUk0AAHomAACAhAAA+gAAAIDoAAB1MAAA6mAAADqYAAAXcJy6UTwAAAAEZ0FNQQAAsY58+1GTAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAAOxAAADsQBlSsOGwAAAklJREFUeNrtmc1LVGEUh2/jOBotXLgqSGghUlGCiwpajSLiyoUuRNpISG7aSCm2KIgC8S8QF0qgIqLbBEEHRERcFIkEIW1SdOHHpBvLynoOcwaGmEH8vPfOe37wMMPAvReeufe85z3X8ywWPzOp+JZoxvfEMY47gHX4BZ/hE3yA3bD9A9ETHheDCrgKjyGiMmZhHEZgLwwCLp3BOYrhNlRDAzzUO6EfemHriEdAUu+XgIIzOMdv2IB5GIAhuAJPoB124GOOYx/p53CYBfyfJLyHd3ATuuC+/vbDBQHpSA0Yg2V4Ci0wBdtBEhC5gGtMwAOtNzNQHqQiGLmg68hSGYefMK2rh1MCJKtQA5dh9Jwfv0DUgGz5DkvQrT3ItXwugrnyVZfJTu0hNvO9CGbLS/gCZS7VgMxIMWyFP6dox0MtQLKoGzBZHe65KCDdRksdGoQiFwVIvunO8rWrAqRJ6oFnUOeiAMkrmNOd5A0XBchq0Az72ipfd02ApzOFGi2Gsjrcck2AZMVLTZb+wgI05mMrfNRAZFtrgfQGL+COl5o27bkiQCKTIxmsrkEbdOgWWtrnpAsC0pFRu8wZC7V1fg61UKrtdFKbqRMn6gU/W7pzfOOlxmpN8FalHGojtaFCjpN4WASkIzWgTymBKqjU1aJQZwuxfLwDsmVXl8rEaU8U8RxP5puhhA/Xv6ufSz5cO253QADi++tx5+8AE2ACTIAJMAEmwASYABNgAkyACTABJsAEmAATYAJMgAkwASbABJgAE2ACLBYn8g96iWmlBtEsSgAAAABJRU5ErkJggg=={scale="+$scale+"}>"
+!endfunction
+
+IBMEntityColoring(curvelogistic)
+!define curvelogistic(e_alias, e_label, e_techn) IBMEntity(e_alias, e_label, e_techn, #232F3E, curvelogistic, curvelogistic)
+!define curvelogistic(e_alias, e_label, e_techn, e_descr) IBMEntity(e_alias, e_label, e_techn, e_descr, #232F3E, curvelogistic, curvelogistic)
+!define curvelogisticParticipant(p_alias, p_label, p_techn) IBMParticipant(p_alias, p_label, p_techn, #232F3E, curvelogistic, curvelogistic)
+!define curvelogisticParticipant(p_alias, p_label, p_techn, p_descr) IBMParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, curvelogistic, curvelogistic)

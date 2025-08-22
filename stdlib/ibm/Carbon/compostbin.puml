@@ -1,0 +1,13 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $compostbin [64x64/16z] xS61400000CXXFdRpkElMXu0001m
+
+!function $compostbinIMG($scale=1)
+!return "<img data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAAIGNIUk0AAHomAACAhAAA+gAAAIDoAAB1MAAA6mAAADqYAAAXcJy6UTwAAAAEZ0FNQQAAsY58+1GTAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAAOxAAADsQBlSsOGwAAAtRJREFUeNrtm09IVEEcxydXiQRPUYiePHlbkKBDHmQjLL14EAmlLh2T6JQQKgTVoTpFeIsgRVHSQ4gIgqu3wCDl3bwkHcoy6GKwCrX5Hfw+eAxvt12b2Wbf/n7wQZb3dpjfd+b3Z95blapxO+Vo3JvgluUxX4Ep2xOtcyTAEEhbHC/NMa1bvcPdtQF6LI217GqSdbWeA0QAEUAEkD7AtDVLZUtbYLEM2hov8y9lsNSJBJYXKvhPwsfW42WPd3TZ85MkKAKIACKACCACiAAigAggAtSo1Xs4pzPgKrgCzoNzxnWrT4d9EkAfze+AMTq9B7bBb+O0N5REARrBPLgGZsEzsFngtJe4ENB56A3oAgNgoZpzQNwboa9gB7wHi+CXcf22On5/UHHnXQgQvhGKPpFpBZfBfbALHoMJXjsNHoC5Ep1vAl98D4FCb4Q6wD3wAnSDQdALzoKnxr1asGzMGG3cSVXZB2xyhwywxL0Gl7ii0YT3CKxSBFPAFrBe7Ukw3Oo68R2AD4bzowwTcweMgO9gxecdsM84LUWEOTY9+zHOjxn394Pr4CHI+SzAZ8ZpnGWMz08KrHyc85NgKZI8vRVgnXHaEeN8lo6GtsX47yrgvB5jhqGSZdLM+14GVxinI5xwaGt0cJSfQ0d3KNgh6OR9KdDOc4Ae6y5XPu8iIdkWIMc4fc7WNlrbQ6ejIuj4/2H0DbusClkKmlMOzUUVmGCdnzSyfpwIxfqGiliqzPtv8O90kXv+sOW9QEf1dv7IllhxZRt4TXeJn/4ynu35VaQP+An6wDAYZz4wj7eHLIOJfSCSZ9v7kiGhO7tmJjdt75TdX5J52wnqJPaWOD/f+3wW8NJEABFABBABRIBaNhd9QDm/M0yf4DuZamuEilmQxB2QkRwgAogAIoAIIAKIACKACJDQs8BFZef/ilyYPltslPOF1Al2TIvHC/pNHb+QCZRYaXYETvmM4wguSd4AAAAASUVORK5CYII={scale="+$scale+"}>"
+!endfunction
+
+IBMEntityColoring(compostbin)
+!define compostbin(e_alias, e_label, e_techn) IBMEntity(e_alias, e_label, e_techn, #232F3E, compostbin, compostbin)
+!define compostbin(e_alias, e_label, e_techn, e_descr) IBMEntity(e_alias, e_label, e_techn, e_descr, #232F3E, compostbin, compostbin)
+!define compostbinParticipant(p_alias, p_label, p_techn) IBMParticipant(p_alias, p_label, p_techn, #232F3E, compostbin, compostbin)
+!define compostbinParticipant(p_alias, p_label, p_techn, p_descr) IBMParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, compostbin, compostbin)

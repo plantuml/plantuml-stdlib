@@ -1,0 +1,13 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $serverless [64x64/16z] xS61400000CXXFdRpkElMXu0001m
+
+!function $serverlessIMG($scale=1)
+!return "<img data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAAIGNIUk0AAHomAACAhAAA+gAAAIDoAAB1MAAA6mAAADqYAAAXcJy6UTwAAAAEZ0FNQQAAsY58+1GTAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAAOxAAADsQBlSsOGwAAAOlJREFUeNrt2D8KgzAUB2ArHXoax97BKxS69GBdCr2Co7tjT9RYYnFxTGt434OH/1DJRwjk1zTB65CP19S3YGO/p360+eKSugs0+C6PuTmubk6p+yAAw3LSRl8DAAAAAAAAAAAAAAAIWstmqDcDAAAAEHkRrCET/GR4pWbA3jPBb4ZXagbMtedMcLAGAAAAAAAAAADkAWYAAAAAKs0Diuzna8kDiu3na8kDBmsAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAOyg1qnwOfVY6D9zLD5tPBt/8P7m9xaAZ+pTQehX/se/3i/9vXrrDag9Gh/0kTLqAAAAAElFTkSuQmCC{scale="+$scale+"}>"
+!endfunction
+
+IBMEntityColoring(serverless)
+!define serverless(e_alias, e_label, e_techn) IBMEntity(e_alias, e_label, e_techn, #232F3E, serverless, serverless)
+!define serverless(e_alias, e_label, e_techn, e_descr) IBMEntity(e_alias, e_label, e_techn, e_descr, #232F3E, serverless, serverless)
+!define serverlessParticipant(p_alias, p_label, p_techn) IBMParticipant(p_alias, p_label, p_techn, #232F3E, serverless, serverless)
+!define serverlessParticipant(p_alias, p_label, p_techn, p_descr) IBMParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, serverless, serverless)

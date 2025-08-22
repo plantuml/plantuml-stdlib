@@ -1,0 +1,13 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $tasklocation [64x64/16z] xS61400000CXXFdRpkElMXu0001m
+
+!function $tasklocationIMG($scale=1)
+!return "<img data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAAIGNIUk0AAHomAACAhAAA+gAAAIDoAAB1MAAA6mAAADqYAAAXcJy6UTwAAAAEZ0FNQQAAsY58+1GTAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAAOxAAADsQBlSsOGwAAA7FJREFUeNrtWk1IVUEUHlPLhQlmRdoPLgSLIEFo0cpXRIEIQVCSLQIJVNo8CqQIghZBPCiiSH2iu6IfWkbQj6nrFqL0g9QiJLFIXejKSO0b3nkwHO6798579+aMzoEP3px7z/HN5zlnZs48IZw4cbKRpSgmv7uBFHAUqC7Q1wwwDHQD0zYQICc/DlRF7HcOaIiahE0xEJCKYfKCfKaidhoHAYkYUzZy3yUxfMmaiNNs1ce3kRFglehGQJTVPYqIKHi1KNGcfBzVPSqR/5A24KTOaqGTAimDJ5/3aqFDQMKi1E7EkQJhq/vqGu1e81ot3CqwhlXbCNnwEeAIcDXAnh6DiwBHgCPAzn3A/5IiFwGOAEeAI8ARsM5XgW1AC6EW2EX6n8B34CVhfr0RICd+HbgEbPF4vhc4DJwBloCHwK0wRNhAwDHguQjfj5QEXQYuAGeB9zbXgHbgtcivGVtFtu22RsBxIO3xHT8BA8AbYIp0+4ATwEXgIJtfmt57ZxMBOyjs1e/3h0K7D1hm738mPAA6gbvAZmWO0lc98NuWFLgBVLLJN1NxW/axW6Z3mskmK5Xk04oaIJe2Dqa7Agxp+BgiG1U6lGXT6BQ4BZSynO9l7+wRmdufBI1HROZO8IfyTi+lQ7YmlJLvtOkR0MLGAyzs5eTlHeU5kbkPrKbP4/RMTYeBAN9GElDHxm/ZOEUbI6/NUirAts4GAvi11hQbN/nYNgXY1thAQDEbrxTgayXAt5EE8LW6lo1HfWxHA2yt2AdMeOwIVenOcciZp2d+thM2EDDMxp0sdOVSJ38B8kRkfhYzQ58b2DJYTLZ+vo3cB8jJ3FaOvfuBJHCHkdAW4CdJtllZIt/GR8Av4BHTybN9o4aPRrJR5TH5tuIscA2YZWf8Z0BFCNsKeldtnEhfV23qB8hq3eWxiekPYdvvseHp8loBTG+IvAB6mK7V46DEDzytTNdDvqzsCMnz/xjT3aOKz6WBnqkyRj6ErQTIyi37eguKroxyvFzRlZOuTNEtUDQs2UyAlG8eYV9PnaGs9JGOp8PXIOe2tMWf0tlfJeI89QGyn1VJk41YLwRkNzZHgEOK7n6OrXQyrFOdO/VpEcPv9TW/gwzzD8DWHM8XReaCZDKsQ50aMGJAFEx67A/4ej+p41CHAHnSmjOABLmlHfTQD9KzgpoPfrJIf0B2Vrf7hKGu3MzDRra6ZINzJ40/AqeBv3Hmn2lygOqBoLz/ko+TYosJmKXC/ErkuPZy4iRY/gH9xKaSuJmTbgAAAABJRU5ErkJggg=={scale="+$scale+"}>"
+!endfunction
+
+IBMEntityColoring(tasklocation)
+!define tasklocation(e_alias, e_label, e_techn) IBMEntity(e_alias, e_label, e_techn, #232F3E, tasklocation, tasklocation)
+!define tasklocation(e_alias, e_label, e_techn, e_descr) IBMEntity(e_alias, e_label, e_techn, e_descr, #232F3E, tasklocation, tasklocation)
+!define tasklocationParticipant(p_alias, p_label, p_techn) IBMParticipant(p_alias, p_label, p_techn, #232F3E, tasklocation, tasklocation)
+!define tasklocationParticipant(p_alias, p_label, p_techn, p_descr) IBMParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, tasklocation, tasklocation)

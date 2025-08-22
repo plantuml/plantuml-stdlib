@@ -1,0 +1,13 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $spellcheck [64x64/16z] xS61400000CXXFdRpkElMXu0001m
+
+!function $spellcheckIMG($scale=1)
+!return "<img data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAAIGNIUk0AAHomAACAhAAA+gAAAIDoAAB1MAAA6mAAADqYAAAXcJy6UTwAAAAEZ0FNQQAAsY58+1GTAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAAOxAAADsQBlSsOGwAAAspJREFUeNrtWr1LHEEcHT8Kr7AwpomkshebO1tNI/oHBKtASCXaiu3dlV4hpJA7EAkhaMQ2kCIfRgkEEm0sBMFKEC3EDyQkaUTfcHMw+bG3O7s7s7ezOw8edzs7M7vv3Xz8fnvLmIODg4ODg0Ne0aVY7ylYAyfAJynXdA7ugIvgqQ4DuPgD8JFlP+4VOBpkQrdCRzULxTNxz7WgSioGjFs8xQPvvVehk6GI60ancO9z75FGQKbhDHAGOAOcAc6APKO3Q9ctgb9I2Ri4l5cRMKdYlkkDBsEZj/IZcS7zBrwCCx7lBXEu0wbw6836nJ9N+p6SNmAKHJaOt8BV6XhY1MmsAXShew0ukwxuLqsG8F93WjrmT5l+gEfgV6l8moySzBhA53dd+r4SYp2w0oA+ssLfguvS8QfwhOwUfVkygO7x78Df0vEd2FCIFaw1YF76fk+Gfwtr4L82baw2oCTYwnfw0KPehdgW27Wz1gC6rdV96q4knR+Yzga95vJ7QdW1YwG8DHHNrjSNgHZxvyqM5wfdhvvWsZ8bzQ9MGjClKaIzmh+YXAPoAjYJflZs+wzcJn19tGkE0Lj/GPwSov03kSMYzw9MGUDnbYNkfCpoJJEfmDCAxv1/wTcR+nkL/jGdH5gwgMb9m+B1hH5uRFuj+YEJA+ZDRH5BqAf0rYIia74uk9guMKaxr30W730ELv4TOCCCqmonH4gkDVk8RwUs58UAKr7jzwPSIL6ShykQSrwtBiwKYdrF22AAX7SWhLCibvFpN6AsBDAhrJ0JkcWrxgFn7P/37cLG9LreK2yZMCnig9jiOXoU59ZIjBuvRmy3Kz4npDIezDxnzX+ShuKKVzXgJ/iSRX+0VY1hnp8JL+KKVzWA/4uzwZqvyT8G+xM0wM+EQlzxOudn0osi0yFedQSkBV4jIZZ42wzwMqGiYYpZibJXZufg4OAQFg+xXnbDl9me7gAAAABJRU5ErkJggg=={scale="+$scale+"}>"
+!endfunction
+
+IBMEntityColoring(spellcheck)
+!define spellcheck(e_alias, e_label, e_techn) IBMEntity(e_alias, e_label, e_techn, #232F3E, spellcheck, spellcheck)
+!define spellcheck(e_alias, e_label, e_techn, e_descr) IBMEntity(e_alias, e_label, e_techn, e_descr, #232F3E, spellcheck, spellcheck)
+!define spellcheckParticipant(p_alias, p_label, p_techn) IBMParticipant(p_alias, p_label, p_techn, #232F3E, spellcheck, spellcheck)
+!define spellcheckParticipant(p_alias, p_label, p_techn, p_descr) IBMParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, spellcheck, spellcheck)

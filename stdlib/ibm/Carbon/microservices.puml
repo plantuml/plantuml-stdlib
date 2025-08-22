@@ -1,0 +1,13 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $microservices [64x64/16z] xS61400000CXXFdRpkElMXu0001m
+
+!function $microservicesIMG($scale=1)
+!return "<img data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAAIGNIUk0AAHomAACAhAAA+gAAAIDoAAB1MAAA6mAAADqYAAAXcJy6UTwAAAAEZ0FNQQAAsY58+1GTAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAAOxAAADsQBlSsOGwAAAohJREFUeNrtWrtOAkEUHRBi/AULNbExFjQmPhANlvyCiRYmykdI5+MflMRCG/9AO1AQiaWFVCZi5weoiWL03nDX4GYFlszjLjMnOdndYXeHc/bO7OzMFcLBwWrEfMcbwK0h13wCPPMO4r4f14GpIRafIo2/SAScdAfMDakBl/6CuO19gDPAGeAMsBuJIdCwCNym/SKwblMEoPgKcJVYoTJrDNgBNoGzxCaVWWNA0vY+4A04DXyg40ngsS0G7FG4Y8c3Bvygj7m6agOWgXnaPwLeGBJfAB7QVts4IA0sAZeIJSqLpPj/ImCehAUB29sz9biIBvAc+KhJPIb6gizxgzSBWJ9lKoARN0rv+oKsm4adD8gAyx297hQwC6wqFr9P9bwDX01+C6DQNXr/JjWK36Wwv+LwMVShtt/QLL6gogLOI0Hl4jkboEU8VwO0iedogFbx3AzQLp6TAUbEczHAmHgOBhgVb9oA4+JNGsBCvCkD2Ig3YQAr8boNYCdepwEsxesygK14RNg5QQ9eGk2v86TP4ekwQBaUzOHpMKCfHKEL2ua6hH1WKJjDi0IEdLb5OcEccYXiCyICiNssXqYBkRQvy4DIih+0E8TF0BnRXhLDtXjMzznUID5D9Xr/oWYiArDiMrAF/CTxRYoA1eK9elu0nzYRAZgX4F8dznUZEfY7YuwFXJV+8tWblxEFYSPgK6DsW0QYYSMA2zymoXirwxM04qsNOGIM2wQ669000Qdg/s0K8Bp4K9orxTUND6pKRifpoUmrd5C3QF2ETESSaEKD9qXlJblkaWeAM8AZYDViAe9tnBO8l3R/byTI5X54/Z8Zr5GAiBiXaPALkcv98NpTiQ/EwSHq+AG5vJSn5TD9qQAAAABJRU5ErkJggg=={scale="+$scale+"}>"
+!endfunction
+
+IBMEntityColoring(microservices)
+!define microservices(e_alias, e_label, e_techn) IBMEntity(e_alias, e_label, e_techn, #232F3E, microservices, microservices)
+!define microservices(e_alias, e_label, e_techn, e_descr) IBMEntity(e_alias, e_label, e_techn, e_descr, #232F3E, microservices, microservices)
+!define microservicesParticipant(p_alias, p_label, p_techn) IBMParticipant(p_alias, p_label, p_techn, #232F3E, microservices, microservices)
+!define microservicesParticipant(p_alias, p_label, p_techn, p_descr) IBMParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, microservices, microservices)

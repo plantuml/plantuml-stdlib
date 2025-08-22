@@ -1,0 +1,13 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $snowheavy [64x64/16z] xS61400000CXXFdRpkElMXu0001m
+
+!function $snowheavyIMG($scale=1)
+!return "<img data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAAIGNIUk0AAHomAACAhAAA+gAAAIDoAAB1MAAA6mAAADqYAAAXcJy6UTwAAAAEZ0FNQQAAsY58+1GTAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAAOxAAADsQBlSsOGwAAA9lJREFUeNrtWktIVFEYvmmUEDILoQipFqYR1SoqtZfVYGG17WEro6BFUZFgiwoJIRdBYkG1qaAn0SIoInuRMaYh5WpaqBFFL8WCMjAqsu/HXxj+zsy513vvzJw8H3yLc+7Mf8/57n/P/5hxHAsLi/GMCWm813RwDRgFZ4OF4DS+1ge+B3vBh+AD8OP/IsB6sBas8Pi9VvA4eNtUAZaBp8H5Pu3EwV1gzBQB8sAGcD+YE5DNP+AJ8BD4I5sFiIB3wHLFtWGwA2wB2/h97+drU8Ei9pq1YGmStT0Fq8Cv2ShAAW9uoeLpXWeviLu0NY+f9iaFFz1nkT5nkwATwSdgmZh/A24F28dolzzhGjhLzJO9leAvvwvPDUiAY+AWMXefw16vD7vvwAvsVUUJ8zPAyRwuMy7AavCM8Cbyhg3g9wDs06F3A1wuPKGMI8NrP8ZzAnr6iXZegRvBoQDPlyG22SvW3ujXsF8B6CkvFif9DvBbCOGVbO7ke4xiEa8hYwIcEONL4OMQkyuyfVHM1WZKgAKO24loSkNq3aTIOAsyIUAVh79RUJLzIg0CdImwmstrSVsUmMvv+T6h/LmQ3d8RYTCxuKJ6YwonRwNeExi3WAoeASuTXO9IY2n9TIyLORoR74FHOd0ORIA8Djd7NK9MVxoFSHWvSu45nAQP6oon3RmQz/n9Xs1nB7ipkS580rh6Dq+5hfcwplpgEviIXV+CujaX2RW7wd9OZkAeXAIuAbdx6i3RxtnqT68CkAvtFnOUidWE1ZwIqAlz3hlpuSXiFL/CrqMAKXpWCESbXuGzuAkbb7l4orphpsgY7zojfUdXZ0Cj2HyPM9LbG3SyH4O81h7h6Y1uD8E5zr8NzJqQ8vuwQGvdLuYqeG9aATYr6vo2xzzEeO2p9qYUoFSMrzjm4qpmb0oBFohxu8ECvNTsTSlARHGymooPmr0pBZDp8bDBAnzRpf4qAfoVlZepKBTjPjcCdCuyK1Mh0/geNwK0inG1wQJUa/amFOCmGEeTFEQmPP2oZm/KfkCcq73Eyoq6PdT9Vf0mN6wpsHTXw7AX4TXLCjbuthaoFzeikvOWKoxkISK81hIhWr2XhkiMy+FEUIXVaYAAnbxWWdrHvAhAqFPUAMUGCFCsaIjUJfuw7n3M5zq6PMB32Cv8nCH0f4J1qcp4XU+QvrgKbDYwCjTz2lP2MNx0hamXRg1G+p2+wYCN02l/2G0R5+V3gXZH3XTMNkS9fDiIf4hkYx7gGjnOOIcVwLGwsLAYx3ATQ42O8zYKWAGsAIHXApmu960HWAGsADYPsB5gBbACBIO/EBDAZ+WSlBIAAAAASUVORK5CYII={scale="+$scale+"}>"
+!endfunction
+
+IBMEntityColoring(snowheavy)
+!define snowheavy(e_alias, e_label, e_techn) IBMEntity(e_alias, e_label, e_techn, #232F3E, snowheavy, snowheavy)
+!define snowheavy(e_alias, e_label, e_techn, e_descr) IBMEntity(e_alias, e_label, e_techn, e_descr, #232F3E, snowheavy, snowheavy)
+!define snowheavyParticipant(p_alias, p_label, p_techn) IBMParticipant(p_alias, p_label, p_techn, #232F3E, snowheavy, snowheavy)
+!define snowheavyParticipant(p_alias, p_label, p_techn, p_descr) IBMParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, snowheavy, snowheavy)

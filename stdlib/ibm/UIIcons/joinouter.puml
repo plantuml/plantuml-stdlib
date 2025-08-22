@@ -1,0 +1,13 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $joinouter [64x64/16z] xS61400000CXXFdRpkElMXu0001m
+
+!function $joinouterIMG($scale=1)
+!return "<img data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAAIGNIUk0AAHomAACAhAAA+gAAAIDoAAB1MAAA6mAAADqYAAAXcJy6UTwAAAAEZ0FNQQAAsY58+1GTAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAAOxAAADsQBlSsOGwAAA/VJREFUeNrtmmtozlEcx48x15XlMeUWrZG7XPbCSkqWvDAtl8kbI0Q0t3JLvBXlsjTiwbyQiGSKNVopbU0IIfZiLZkX1lwTM8z31/NbMs/z7Jzf7/9fsvOtT6vn2f93zvk+538uv3OM8fLy8vLy8vLy8vLqiuoWYKwpYDaYCCaACH+eBnqCF+ApUw6etKvHNDCH/44GGWAw+AZeg/egFlSBO+D+v2DAULAGLOVKu+gZOAxSwQ4w3PH5ehAFpaBB2oDuwufSwV5wjn+1iOPzb0EJOAkeghQwFfRxrAP1uA2gP7gLmjujB+Sz8wOE5l0DK0BTu8/JxDNgvjBuI1gHLofVA3qAfeAI6Cuo4HewGWwCX+J8T5+dB+9ALvcKF/UDS3jMqQStQRpAg1gZWC7sNTSQFYCzFv9bwwNkvvAVzQHTwSXwIwgDUvhdXyDsmi1gMbjq8Mxz8BgsEpowCozj16FVa8BRUKiYKbbxSO0qmjY/g7nCcsmAgeC6xoA8cFDR+Cv8zktVDSaDscLns3m9UJuseycSTS3HFJV/z2sErVZzLKmi3BOce8Ahnmel2gNuBWAAzQ4/eWaQKI3bWeHSAwbxXC3VK1Ac4DK7mGNKtZbbZG0Add3eigLPSFZlSdTMMaWiNUKRrQEpvKKSqlU46nekUtvFTQIV2BowCQxRFHQP1IVgQB3HliqL29ahAbOUFa0KcfuujT2vMwyoDtEAbewJNgaMVBbyPEQDtLHH2hiQoSykKUQDtLFHdHUDUl2Wwv+jutsY0KgsJBJiA7Sxv3Z1A+psDKhXFjImRAPGdIYBt5WFzAjRAG3sB51hQE6IBmhj37AxgHJxrxWFUEIyM4TGZ3JsqV6aP0+jEhpAyQdNJoiyxoUhGFBodCdZp13yASfiTRkOomRKrwAb38voEjSUVSpxMeCNMgExLFECQqgijinVqUTTe7KV4E7lWLDLJElGOs79uxTPUxt2J/oymQEfjC4zlM6vklYnOZZU67ktdmvjdqLDCUomZiu2n58U+/gtYKOi8XSOedhpcxBH5dyQ8cJKUGr9EZvpojzuQdIjfDoWW2UCOBqjAGXcC7KEO7CFJnYzxDahQQejF03sUFYiqu8yEzuXNFoDSHTKesHELjDkCObjNhPoXayxGPGj8fbuljpgYqdJLbYVsxUtkG7ySjHXuN3maBtwKSlJd4AqzN93BCJs8kZhnoJG+5X83lunz6UrKxqVt3Nl+wiepysy+83v0yP61ekUWXLrhA5NjpvYUdxHybJVoyAuSVEdtgqef8VL9igv3MTr9qCkuSZn+NWYyXHoSLw/97R0bmwDQ7vVyngbGy8vLy8vLy8vLy8vL1v9ArhWvrT2H6iyAAAAAElFTkSuQmCC{scale="+$scale+"}>"
+!endfunction
+
+IBMEntityColoring(joinouter)
+!define joinouter(e_alias, e_label, e_techn) IBMEntity(e_alias, e_label, e_techn, #232F3E, joinouter, joinouter)
+!define joinouter(e_alias, e_label, e_techn, e_descr) IBMEntity(e_alias, e_label, e_techn, e_descr, #232F3E, joinouter, joinouter)
+!define joinouterParticipant(p_alias, p_label, p_techn) IBMParticipant(p_alias, p_label, p_techn, #232F3E, joinouter, joinouter)
+!define joinouterParticipant(p_alias, p_label, p_techn, p_descr) IBMParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, joinouter, joinouter)

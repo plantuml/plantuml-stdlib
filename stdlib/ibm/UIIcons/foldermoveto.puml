@@ -1,0 +1,13 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $foldermoveto [64x64/16z] xS61400000CXXFdRpkElMXu0001m
+
+!function $foldermovetoIMG($scale=1)
+!return "<img data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAAIGNIUk0AAHomAACAhAAA+gAAAIDoAAB1MAAA6mAAADqYAAAXcJy6UTwAAAAEZ0FNQQAAsY58+1GTAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAAOxAAADsQBlSsOGwAAAdVJREFUeNrtmrFOwzAURd0SsSEQYgGVv4Ay0gHBByAGfgSxtdkQE2LiC1hYWUAMZISy8A+obBUgMYdnYaS2ODSi8Xsvyb3SVVsPce+JZb84NgaCIAiCoLqqkdHeIp+SO+TVf177k/xMPiNfaQUwlxHe/vE2eWGGa8+T18kH7ndSFgAXLnyR6miF4ANwPuOdLxWEyNO2lnOemKYt8g15caSt5z5jLQCaAa/9QN4jv0+0WwjdOgAoBYQmQx+qIURM/fxA8M0JvcB9v5LvyUfkF4kRMG0khJYt5A5dbdOSBCAJwWrZVbeiAKQhbEvNAT4IS0x9pX/UOCIjQJUAAAAAAAA0qctdHkfKwo+WxXGdRsDxRHi2ByUtAO7IbxJPi1oAPJF3JSBomgT7EhC0rQJ9w7x5orEOeOSEEGIZTAPC6RW9RJaxEix0JKAULukIiDXPAY0CruF7q1R4eK0joM0VXiOATc7w2gDY8Lfm92ZpsPCaAGxIhNcEYEcivCYAJ579AJYNEU07QnHG99oAYA2OUhgAAAAAACBjFRiY8ffoaYXyDvKMgKTCNzzJA8CephpWMPzQZRuT76zwB/nSfJ+uWjFhzg1zyh6TuybvG88xOQiCIAiC6qsvAytXRi1qhu0AAAAASUVORK5CYII={scale="+$scale+"}>"
+!endfunction
+
+IBMEntityColoring(foldermoveto)
+!define foldermoveto(e_alias, e_label, e_techn) IBMEntity(e_alias, e_label, e_techn, #232F3E, foldermoveto, foldermoveto)
+!define foldermoveto(e_alias, e_label, e_techn, e_descr) IBMEntity(e_alias, e_label, e_techn, e_descr, #232F3E, foldermoveto, foldermoveto)
+!define foldermovetoParticipant(p_alias, p_label, p_techn) IBMParticipant(p_alias, p_label, p_techn, #232F3E, foldermoveto, foldermoveto)
+!define foldermovetoParticipant(p_alias, p_label, p_techn, p_descr) IBMParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, foldermoveto, foldermoveto)

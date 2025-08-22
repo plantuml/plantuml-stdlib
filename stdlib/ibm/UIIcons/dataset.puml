@@ -1,0 +1,13 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $dataset [64x64/16z] xS61400000CXXFdRpkElMXu0001m
+
+!function $datasetIMG($scale=1)
+!return "<img data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAAIGNIUk0AAHomAACAhAAA+gAAAIDoAAB1MAAA6mAAADqYAAAXcJy6UTwAAAAEZ0FNQQAAsY58+1GTAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAAOxAAADsQBlSsOGwAAAyhJREFUeNrtWj1oFEEU3vNEUp2kSKG57ggaQastbM4mFhYmJ1HsLAJiZ5FC0l+hpAqSRisF0UJDMImFkE4tLK7Rwu46o0iKkAQlEWH9Bt7B8Fx3fu52djY3H3yQmd15b+bN27n35iWKAgICAgKGFxWLMaNgC7wKXgBPUf938DP4BlwDd3KeezKAtUTHDd4dAefBBfBkyvMJ4nVwF1wEl8ADnz1A1wDj4Gsw1nxfGOg+OAteA7d8NcAxzcV/NFi8jJjGjpfVA0Zo5+usfxtcBtfBLvU1wBnwLjgmvVsnGU3LzyEp0gDzKTu/Cs6Be6z/E/Eh+ITcX/YEIetBmT6BUTrw+OJvpCxexh69s8r6F0hmaQzQYqf9Nu18oum2czRGPhhbZToDZlh7WbHzaZ4gxrSZzKcDilWSvD3gHGtvWMjfUMj0+hM4zdpdC/ldhcxSxAFHGlkG+MbaDQv5DYVMrw3whbWnLeRPK2R6bYB11hYRXs1Ado3GZMn02gBrlNX1MEYRnk7aWaF35ZB4l2SWxgA7lNLKEOHtisITavTOLOtfdHBHMPBcYIkWEjMjNA2SIYEOyfIOOu7cS4frljq+ghf7uBNI8lyjThywRQvoWCjv9Ln4wj8B2QjNKPtKLGIH3pG6EotoISKffxT5cSkaEBAQEBAQEJB7LsBRVHU4F70mBlBVh/MKhXPVq2sA0+qwnAz1Ux3OXW/VIB0+a7EAcQ1+E3wJ7lssPne9FQ33e5+yAybV4d6OmFSHnelVecA98BbrE0XPKXAT/AH+Joq/34GPwTPgJNuRX+AHTQM401tVnLqvaDfkSYjK72HGuEMad55NJqZJqrzAqV4fq8NO9WYZYFDV4SyZhev1sTrsVK+P1WGnekN1OONZUdVhp3p9rA471etjddipXh+rw071ZkWCByRwSuqbpEjrbUZUJnbgRfRvdbhNYawKTvWqcgGRTFxhPyNiMrcpVBXW/QmeoP474POUJKZDz/4YpLNO9PpcHXaiV+c+YJ/y6kuR+b+5iR24bHkh4kRv1WAyzyi1jFmm9r+rqTa5Xz93g7nrHfpL0YCAgICAYcZf/6wWi9vtwLAAAAAASUVORK5CYII={scale="+$scale+"}>"
+!endfunction
+
+IBMEntityColoring(dataset)
+!define dataset(e_alias, e_label, e_techn) IBMEntity(e_alias, e_label, e_techn, #232F3E, dataset, dataset)
+!define dataset(e_alias, e_label, e_techn, e_descr) IBMEntity(e_alias, e_label, e_techn, e_descr, #232F3E, dataset, dataset)
+!define datasetParticipant(p_alias, p_label, p_techn) IBMParticipant(p_alias, p_label, p_techn, #232F3E, dataset, dataset)
+!define datasetParticipant(p_alias, p_label, p_techn, p_descr) IBMParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, dataset, dataset)

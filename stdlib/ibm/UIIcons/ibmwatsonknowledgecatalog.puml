@@ -1,0 +1,13 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $ibmwatsonknowledgecatalog [64x64/16z] xS61400000CXXFdRpkElMXu0001m
+
+!function $ibmwatsonknowledgecatalogIMG($scale=1)
+!return "<img data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAAIGNIUk0AAHomAACAhAAA+gAAAIDoAAB1MAAA6mAAADqYAAAXcJy6UTwAAAAEZ0FNQQAAsY58+1GTAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAAOxAAADsQBlSsOGwAAAYpJREFUeNrtmzFuwkAQRcfgNhUUQO4AV0gOBa1x63vkGFGSI+QQKBUVB3BmpS0sZGCW8Vqz3v+lX7FI+59n1rOFiSAIylmFcN0ru2G/s9fGMvyxv9gH9ikGABf+l70w/jDP7F0ohJlgTZNAePJ7bEL/JAHwllBLB++1FKzZPHlujKX2zl4HqYBJCwAAAAAAAAByVvngvUqC34vA9bHuK6gAAACAOP3VjtmTyrtA8P7QAgAAAACASXDkUxqTIFoAAGxPgq2lHsUkiBYAgNHngCKx2yAqAJMgKgAAACBmf+EtgBYAgKS1Ze+nfBt8FP6TvWQf2XVOFdANTx5AlQuA6/BZnQG3wve2wNTmgKDwqVTA3gcbPHwKANyh1fhg26HDWwdQ+QDkg92C8HT41A7BPgiq8NYB1J0K6IOgDu9UGn/qdSfUNQTShk8BwD0IpA0vfae7T1A2EQNK54qqpyVU4aVnwLfhM0EVXgrAfY11NgpBFd5pLlhzYX+wV773XiL1uFQ/ncqsCYIgSKF/u+xFEtPZGksAAAAASUVORK5CYII={scale="+$scale+"}>"
+!endfunction
+
+IBMEntityColoring(ibmwatsonknowledgecatalog)
+!define ibmwatsonknowledgecatalog(e_alias, e_label, e_techn) IBMEntity(e_alias, e_label, e_techn, #232F3E, ibmwatsonknowledgecatalog, ibmwatsonknowledgecatalog)
+!define ibmwatsonknowledgecatalog(e_alias, e_label, e_techn, e_descr) IBMEntity(e_alias, e_label, e_techn, e_descr, #232F3E, ibmwatsonknowledgecatalog, ibmwatsonknowledgecatalog)
+!define ibmwatsonknowledgecatalogParticipant(p_alias, p_label, p_techn) IBMParticipant(p_alias, p_label, p_techn, #232F3E, ibmwatsonknowledgecatalog, ibmwatsonknowledgecatalog)
+!define ibmwatsonknowledgecatalogParticipant(p_alias, p_label, p_techn, p_descr) IBMParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, ibmwatsonknowledgecatalog, ibmwatsonknowledgecatalog)

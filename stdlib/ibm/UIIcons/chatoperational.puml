@@ -1,0 +1,13 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $chatoperational [64x64/16z] xS61400000CXXFdRpkElMXu0001m
+
+!function $chatoperationalIMG($scale=1)
+!return "<img data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAAIGNIUk0AAHomAACAhAAA+gAAAIDoAAB1MAAA6mAAADqYAAAXcJy6UTwAAAAEZ0FNQQAAsY58+1GTAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAAOxAAADsQBlSsOGwAAA8tJREFUeNrtmktsDVEYxw9aRNFUmkgXKixaZelR8WyKSjciNpXYWHg1QYh4REh7Q1iIIC0hFjYkFohNaSslxKIijUWD2pC2okRLqC60Kf4n893k9Dj3zjd35s7c6Z1/8kt75n7n3vn+M2fOY44QkSJFihQpUqRs1QRGzEKwE1SBYjA9w3P6BXpAK7gO3qRqQC64APaASSG9wKPgKjgIRkwBiRKbDJpBDZgY4jtcnvsysBLcJkNYBlyk5MeL5oEC8FD/IMcQvAjUasd6wVHwGHzJ8GRngzXgFChVjtdSc3htdwccByuU8juwBLwEQyG42kP04LsFtoGZSnMYBi16G9G1QSufBN9DeNvLcz5sk5vRgGKt/DzEbf+pTW5GA2Zo5b4QG9Bnk1uouzjP+kkvVQHWpVCvjvAqjq0cjw2QJ5cHysFfB3XqlXLMZVxgd0AFsRRsYdY5piVVn+AKc+MCNUA9odPM+cMT8EM7ZkqOGxeYAfGrH9cCsJ1R7wXYyEiOGxeYAXUJjk3NdBOcPATlg20+DSbm0t84+Yb4OWAAdBt4D9oNybUqQ1ehtPuYw7i0GFBICwx5DupMA2WEOlavSXIntDBNaPHCBCdNoAmsB/0umko/fUdTgs/bKbmfNrc5N87zZ4D84dV0GztVN9VtZ/yGbyak8hDsoulyp4M6nVSna7wMhT8Ja5GUqyqqw9FyQ/uOX9lYCnFp6wYL0xDra/JuDSj1ONb35N1Ohkq0slxxbaD/92lD4RLGGKOZkRQ3zncDOsBu+it1E1wDixkGlNMVzWckz4nz1YBBYa0ZNoqxa+4ddMJ7hbU6W5KJybs14C3YKqwlc5OkIZfAvST9ciUzqcp0JO/WgB3MuN4ksWfBFMWgRElx4wJfEUpF9crqUcyDuNAZ4CShmNc/HK0KG44NauWiEOdXZJOb0YAerbw2xAasssnNaMAjrXxOWK+Ww6YCGoMky824cvuRRnVxc+Swc7OwXosPiMx/Qyxfj28Cd4W1hKeOS3aBr2pwoi0yDTSKS6c4+5OqwQOPfq+R5iisXuAQaAv4Ssou+rxH39VGObG7wWFy/7Iw7KvxSXJHR5nL7xilHKopJ0cDoRFqBleE/9vkZomxr8KcyLNtckFKTqL2a/23nFF+zoaRYJn4f5PWmXQkn6kGyAdfrlL+IKwNmyIbDKgmVB0Bv7PBAFO39wzc8XsyFJT0bu8POBDEbDAImbq9G+BVthhQRyao3d6JoNYDxnW3l4kG+NrtcabDfuubsF6gxN8fyilrp8gy5dIT/76IFClSJB/1D+145UCE9/OSAAAAAElFTkSuQmCC{scale="+$scale+"}>"
+!endfunction
+
+IBMEntityColoring(chatoperational)
+!define chatoperational(e_alias, e_label, e_techn) IBMEntity(e_alias, e_label, e_techn, #232F3E, chatoperational, chatoperational)
+!define chatoperational(e_alias, e_label, e_techn, e_descr) IBMEntity(e_alias, e_label, e_techn, e_descr, #232F3E, chatoperational, chatoperational)
+!define chatoperationalParticipant(p_alias, p_label, p_techn) IBMParticipant(p_alias, p_label, p_techn, #232F3E, chatoperational, chatoperational)
+!define chatoperationalParticipant(p_alias, p_label, p_techn, p_descr) IBMParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, chatoperational, chatoperational)

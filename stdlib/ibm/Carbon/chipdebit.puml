@@ -1,0 +1,13 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $chipdebit [64x64/16z] xS61400000CXXFdRpkElMXu0001m
+
+!function $chipdebitIMG($scale=1)
+!return "<img data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAAIGNIUk0AAHomAACAhAAA+gAAAIDoAAB1MAAA6mAAADqYAAAXcJy6UTwAAAAEZ0FNQQAAsY58+1GTAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAAOxAAADsQBlSsOGwAAAn9JREFUeNrtm0FLAlEQx5+LkhB2yAjBU5f6BPkVAiGoQ3XqUoe6RH4UpVNRHeykHQwCoa9gt252EQIhIjsUQSFU83CERVwba2ZX1xn4I+y+fO//2+e+aR7PGA2NiY6Ix/VFUA60DJobc4/PoFtQHnRPAbABKoLioFfQi+Dg0vjZFOxjFjQD+gRtgy7dN6N9nnwRjW+CroWfTh0/l4T7WQWdorc7V7/G6WmYwye/44N5P8N62UVvh+4bvQAy+PSrIXzfVdFbZhCABOgR9B1CAF/oLTEIwMSFAlAAEx7RPtcWQA3C396ADkDtgD3EQEegFWLi1eCYAXY93QOVcABBmi/hWOJcM6BByMy6Ha/j51YAM8E9hgpxDHWud0AbO6y4IMRG3Dz7SzAoCGzmOVYBvyGwmudaBv2CwG6eMw+QhiBi3msV+C+EMg70AfRBLIj8lnfYJS7FbV4iE2xjIcVWeJKE9k1DqwYlsR37chsV+K3aAb4T8wlq1F3frf8LKAAFoAAUgAJQAHJ5ALUiNFTlhSFExqUzoM81jgyuLjBWkXHpS1ABKAAFoAAUgOYBrGELmNOgecZs0GZwT/jd7VGeAd3qrR1wi2gsTWjXwnbsJfeogHlbEb4yneIoda8usL1IJ0Dzw4TYvoMzBuZFITgM5ss+mBeD4DCYX/PJvAgEZ8zMs0P4a0Wou1cXhPleCN33D3UvkqUiZDs6CdB8L4RjgnnyDODc0/MLwj6xrVaEFIACUAADAbzh8hYJqdcUevQEUDOdA0bZEALIorfaIAB5XE/PTeegUVjCejkznZNjBfcNr2NzF6ApMwHH5rx+6zYRsqerwnRwsmBktuw0NMY5fgDmc7OZRMdGNgAAAABJRU5ErkJggg=={scale="+$scale+"}>"
+!endfunction
+
+IBMEntityColoring(chipdebit)
+!define chipdebit(e_alias, e_label, e_techn) IBMEntity(e_alias, e_label, e_techn, #232F3E, chipdebit, chipdebit)
+!define chipdebit(e_alias, e_label, e_techn, e_descr) IBMEntity(e_alias, e_label, e_techn, e_descr, #232F3E, chipdebit, chipdebit)
+!define chipdebitParticipant(p_alias, p_label, p_techn) IBMParticipant(p_alias, p_label, p_techn, #232F3E, chipdebit, chipdebit)
+!define chipdebitParticipant(p_alias, p_label, p_techn, p_descr) IBMParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, chipdebit, chipdebit)

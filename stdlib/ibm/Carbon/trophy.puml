@@ -1,0 +1,13 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $trophy [64x64/16z] xS61400000CXXFdRpkElMXu0001m
+
+!function $trophyIMG($scale=1)
+!return "<img data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAAIGNIUk0AAHomAACAhAAA+gAAAIDoAAB1MAAA6mAAADqYAAAXcJy6UTwAAAAEZ0FNQQAAsY58+1GTAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAAOxAAADsQBlSsOGwAAAuRJREFUeNrtmktoE1EUhqdpBDcRERRbESwKSqGBbESqID4QFSytBUtEN658bFzFlaus7FYEQXGhYChFrYi2BPuwiIgbISCotG5EBKVFELFYDP6X/sEhGJnMTObM4xz4KEOTuef/79xzHxPL0tBIdLR5/P5pcEZYwy1wx+2XUx4bPwmyguKzzMF1pH1I4hU4ImTAuNcbpJJeA9SApBuQ9ljds6wBkrETTLudLVIhre6BzRZpj9V9PATiPOWpRVANUAPUADVADVAD1ID6+A4yMdKZoSbHBnwCXTEyoIuaHBswAzpBLgbic9Qy04wBZfAVFGJgQIFays0Y8BMUwRAYjLD4QWooUlNTu8Fr4BC4zet7ERRvcn9MLU1Pg1WQB1NgFNyNSE3IMddR5p6nln+Gk/cCxqQL4DJYD76Ad+C39fdESPJU2JwIVUA72A42cMwX2fPV/93AybG4ucFVcJNDYj/YyIaqwuuFjE3gZ/CavV5uNObdGGAvjA9JLa7TFKnoZG06K7UUngcdggZ0MAexvcAcWA26BcR3s+05SQNmwTLoEzCgj23PShqwAJ6CfgED+tn2gvR2eIRTUW+A4nvZ5kgYzgNKLETDARowzDZLYTDgFzccu7nubnUMsa0C2xY3wMQDMAFugJ4Wiu9hGxNs03O0+5jcE/bOKT6aP3wWb1aek+AbOAqWwmbAEpeg562Vt8tT3Df41fNG/BpwsNHpjrQBtWlxDJwAF8EH8MaHMT/Gnjfi3/uZcFuLxupaDoPD4Dm4BF64mOqugD0c83maYEXBgFoMcMraBl6CR+A+eNvg8zvAcXAM7OIyt+BXwZMwwMQq9p7hAK+XOY4/8jObwSbb/yb5BJV4bUXZAHusA3vBVjJgm0bnyTOwGFRC6YANWKx7nLfw7zmp/bS+GlMD1AA1QA1QA9QANUANUAMSGq3cDDn5DX/tJ/kVB5/dF4fNUH1ULA2N2NSA6YBz96UmpPQZSHj8ATzhjdWx8jBlAAAAAElFTkSuQmCC{scale="+$scale+"}>"
+!endfunction
+
+IBMEntityColoring(trophy)
+!define trophy(e_alias, e_label, e_techn) IBMEntity(e_alias, e_label, e_techn, #232F3E, trophy, trophy)
+!define trophy(e_alias, e_label, e_techn, e_descr) IBMEntity(e_alias, e_label, e_techn, e_descr, #232F3E, trophy, trophy)
+!define trophyParticipant(p_alias, p_label, p_techn) IBMParticipant(p_alias, p_label, p_techn, #232F3E, trophy, trophy)
+!define trophyParticipant(p_alias, p_label, p_techn, p_descr) IBMParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, trophy, trophy)

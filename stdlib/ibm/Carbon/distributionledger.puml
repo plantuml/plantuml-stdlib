@@ -1,0 +1,13 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $distributionledger [64x64/16z] xS61400000CXXFdRpkElMXu0001m
+
+!function $distributionledgerIMG($scale=1)
+!return "<img data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAAIGNIUk0AAHomAACAhAAA+gAAAIDoAAB1MAAA6mAAADqYAAAXcJy6UTwAAAAEZ0FNQQAAsY58+1GTAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAAOxAAADsQBlSsOGwAAAzBJREFUeNrtmT1oFEEUxycxopZWwXiFoAYleDbBUji/UJLCjyIaFFQEMens1Easo2CRoCAakkC0ksRCE0T7BAQPLxE/wMpgUAshKgHR/3BvYbLuXvZm9mZnZufBj2Nn3+zH23dv386fMW/ecm1Noe0z4Lzj93wfjAYbzaGdvaCo8WKKGZyvVxxoiXCaAUc0XdBT+tV9PhaXAbmzljp8Xyqeq2RiAHwGWPYEN4FzYDdtvwYPwIKOAGRtp8FdsA68obET4Bq4CMbSCsCeFP7v9byWZhL4HQLDYApcEJ44z4h7tG8RTLtaA26BCjgWSvcFGquQTyoZkEUfUMvaQQc4C5Yj9i/TzQ+T7zvXMmAz/VZq+FRCvk4FYJF+CzV8CiFfpwIwBz6BvoiPt+CDro985lzsBP+CK2AcDILL4Dft2wBugoPgFPk6+RZ4AmbBJTAhjE/Q2Cz5ONkJ7gMjoJVueEjYNwB+gm6q/nw944VLnSB/xz8Cr8AB8Da0f5rYQa/BZ6AHPHahBuxk1ZWb5+BoTA8QGA/MXsoQPqczIljW1YDb4Ds4ucrNiw1RD825bnsN6KDKzvv+H3XM4743wB2wFXy0NQO66Ik+lJjLX5d/krbzjagBaWRKkdrbJYm5S9QQtdtcAzaCrwrz+dwtNteAZkpjWeNz17rUCTY00j4AebamiBUaviZY1nT+QBYrJxxP47grVrxM/RYo65rvtcG81wCTP4e1fH36DFCc38aitbrPKVxbyfQARGl1x8FVpqDV2ZIBaWp1mWqRsjWgYVqdDRmwnSXX6rjv+1WOl6kWKZMBgQyVRKsruPgx9CXBzRVCvk4FYJ5Vdbh+Fq/V9ZPPvIs1oJZWt57+/1zEkNLqbOkERa1uUhifZIpanQ0ZwLU6rr600g2LWh1Xan+x6rK2lFZneicoanX72f/y0xQhrdWZnAGyWh1viTslCqJxNUBWq/vG6tDqTM2ANLS6beCDaTUgaQZ0M3Wt7rDNGbCLadLqJGpASUcGaNPqTM0AbVqdqTXAWfMByHsAkmqDjdTqVI4rcx0rVqDWRGREW8wiiMriRtx81ePKXMeIxoB782a6/QNRmtfuUSHotQAAAABJRU5ErkJggg=={scale="+$scale+"}>"
+!endfunction
+
+IBMEntityColoring(distributionledger)
+!define distributionledger(e_alias, e_label, e_techn) IBMEntity(e_alias, e_label, e_techn, #232F3E, distributionledger, distributionledger)
+!define distributionledger(e_alias, e_label, e_techn, e_descr) IBMEntity(e_alias, e_label, e_techn, e_descr, #232F3E, distributionledger, distributionledger)
+!define distributionledgerParticipant(p_alias, p_label, p_techn) IBMParticipant(p_alias, p_label, p_techn, #232F3E, distributionledger, distributionledger)
+!define distributionledgerParticipant(p_alias, p_label, p_techn, p_descr) IBMParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, distributionledger, distributionledger)

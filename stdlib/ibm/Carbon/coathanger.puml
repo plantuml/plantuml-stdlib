@@ -1,0 +1,13 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $coathanger [64x64/16z] xS61400000CXXFdRpkElMXu0001m
+
+!function $coathangerIMG($scale=1)
+!return "<img data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAAIGNIUk0AAHomAACAhAAA+gAAAIDoAAB1MAAA6mAAADqYAAAXcJy6UTwAAAAEZ0FNQQAAsY58+1GTAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAAOxAAADsQBlSsOGwAAAwdJREFUeNrtml2IDWEYx4dBKd9xoUhh5WMlRGlv9opkxSYuZG2+rlwQJdy7EkW5UT7TUuQrcYFiS8m3SAep3eyNj3zlwq5sfk/nOTpNdnbOnJl35sy8//rV2Z33NPP+55n/+857XsexsrKysrKyssqpBiR03oXQDFP073dwCR5k3YBxcBya4Ac81//PgRFwDTbCpywaMBbuwxjYAW3Qo8eGwFo4CF9gkSkTXIMGnINp0AC34E/ZMfn8DK7AVpgHZ01c1EBDnV8Ay2EnFHzaFbRNk34nMwZI4H3Xsu9Pbdq2OUsGTIWXZc+8n3q0bZ2JCxtkyIA1aQ1oUxVQiWREqIc3eTVAhsOROjHKnQHT4YBOiB5mKQOClH1pIvQZNpk6cdIGtMAWz1R4M3zMiwFy1yfDEbgIj0xfQBoegRewN6mTp3EUsAZYA3KSAYN1jaD0+XcSF+Em1Hl50bkOc2E8LIM7uhiSeQNkyeuynlteeU/rfGA7fICnWTVgNJyB3XBV77osgHTASZgBe2A23IRfJi7K1Jpgo95pMWGbU1wY7as6DsFXWK+PRU1XgITbPjgKb2Ex3PZpL+V/HpZopQyFduitRQNKQbcK9sM6fdHpTxKEJ/QFaVfcARmXAd6gO1bhXezVSmmPOyCjNqCvoAurDq2GmXEFZJQhGDToqqmqyAMyigqoNOjCKpaArNYAb9C1BAy6sIo8IN0qS7KaoAurUkDejSIgwxgQddCFVWcUAVlpCMYddMYDMmgFmAo64wEZxADTQWc0IN0ApZVE0BkLSDflQRd7QP4vBOVLN5ziVpY0BV1YbYDD+igshVd+FTAc7qlTjSkLurCSrTcXYDW06mP8b5+Cd1VYGkyAFZr2WZH0ZaX2rbX8gNcA2cD0BF472VNB+9bgZ0C3k55fjONaoer2M0B+k693DO3PMSzZojfL8ew78BpwCrp0VpUlE+q0T13aR99hcL42nugUd2t9q/HOj9Kqfq8jweMgL0PDNC1ls+KkGjegU8te7vxPx8rKysrKysrKqqi/QffIdcuW63QAAAAASUVORK5CYII={scale="+$scale+"}>"
+!endfunction
+
+IBMEntityColoring(coathanger)
+!define coathanger(e_alias, e_label, e_techn) IBMEntity(e_alias, e_label, e_techn, #232F3E, coathanger, coathanger)
+!define coathanger(e_alias, e_label, e_techn, e_descr) IBMEntity(e_alias, e_label, e_techn, e_descr, #232F3E, coathanger, coathanger)
+!define coathangerParticipant(p_alias, p_label, p_techn) IBMParticipant(p_alias, p_label, p_techn, #232F3E, coathanger, coathanger)
+!define coathangerParticipant(p_alias, p_label, p_techn, p_descr) IBMParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, coathanger, coathanger)

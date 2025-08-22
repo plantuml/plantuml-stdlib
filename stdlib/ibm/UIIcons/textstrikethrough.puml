@@ -1,0 +1,13 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $textstrikethrough [64x64/16z] xS61400000CXXFdRpkElMXu0001m
+
+!function $textstrikethroughIMG($scale=1)
+!return "<img data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAAIGNIUk0AAHomAACAhAAA+gAAAIDoAAB1MAAA6mAAADqYAAAXcJy6UTwAAAAEZ0FNQQAAsY58+1GTAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAAOxAAADsQBlSsOGwAAAw9JREFUeNrtmktsTUEYx+e6QlW9UrQWBPVYqIhQjyJNREpCa0GFLhoLr1qxsbERj51YiIREJCIS8VixELSoIkTEoySCaLrQeIeQSJVb/y/na0wmp9F7z5mbOed8/+S3mDk9X8/93zkz33xzlRKJRCKRSCQSiURJVCrP/28aWAmWgqmgBIzkaz2gAzwDt8AF0B4XAxaD3WBFlvddA3vA3agaMAQcAtsCxjkDGsG3sB8wbfHDjwB3eMgH1UywHjSBj1EYART3Uh8f/gY4C1pBJ/jK/ePBFDAf1IBKn3s/gWrwyHUD6sA5o+852ATu9TPGXHAYLDT63/K1dy6/AvQNj9XarTwRdmQRg0bHSTAcLND6C8FT0BbGgw60tNSVa+1usBF05RDrD9gJinj0kIH1Ya4KNgyoMtpXwZuAMRv5wx/R5gxnDSg12g9CiPkb7Lfxrg6wELPIaP90ORW2YcAPoz06aQaYicq8pBnQZLSXgDmuGmAjD/gCVoNxWrK1DFzma7E3gPQKNGiZ5ihupzmJ6Yq7Ae2cCVZofQVcB9gBZnFG98Fn0oxNQYRiHwVb//N3L0ELuMl0umZAj4q2UvleBSIlMSDpBqQce55iUAs2+xRCSBc5x3B+GcxVtHF6DE4or4hSyab0ajrnGG1xNcDMJU6B5VpW2WvCsaTMAVQGp2pwt9ZXHubeIgqTICVKV4y+qqStAreN9qSkGWCWwIclPQ/45boBg8GEEONN9pkcnTWAtsHNTHFIMWuM9kNXDaAl6j5YpLxzPjoHLA0Ycw2YrbUz4LqrBmwBE7U2nepSBWhtjvEoEzxu9J0H713NBKkgSud4ZVrfULAOzODsrj8FDxo1B5RXUCk0Jr8NyjsldnYzVMDf0qo+rj8Bp5V3WvyaoZoh/VyGjsaredgP8rl3O5vi/G6Qjtz2gV0hvWZ0SLqXCVW2NkMZXgVaOG8vCbgpquVRE8l6QJrnADrmrshyD3CQd4TWyuj5LoiUqX8/f6Elc4zyzg4/g+/ghfJ+V9TMy2lGiUQikUgkEolEIpEF/QUZNISgQpEivwAAAABJRU5ErkJggg=={scale="+$scale+"}>"
+!endfunction
+
+IBMEntityColoring(textstrikethrough)
+!define textstrikethrough(e_alias, e_label, e_techn) IBMEntity(e_alias, e_label, e_techn, #232F3E, textstrikethrough, textstrikethrough)
+!define textstrikethrough(e_alias, e_label, e_techn, e_descr) IBMEntity(e_alias, e_label, e_techn, e_descr, #232F3E, textstrikethrough, textstrikethrough)
+!define textstrikethroughParticipant(p_alias, p_label, p_techn) IBMParticipant(p_alias, p_label, p_techn, #232F3E, textstrikethrough, textstrikethrough)
+!define textstrikethroughParticipant(p_alias, p_label, p_techn, p_descr) IBMParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, textstrikethrough, textstrikethrough)

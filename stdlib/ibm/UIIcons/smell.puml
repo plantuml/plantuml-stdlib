@@ -1,0 +1,13 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $smell [64x64/16z] xS61400000CXXFdRpkElMXu0001m
+
+!function $smellIMG($scale=1)
+!return "<img data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAAIGNIUk0AAHomAACAhAAA+gAAAIDoAAB1MAAA6mAAADqYAAAXcJy6UTwAAAAEZ0FNQQAAsY58+1GTAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAAOxAAADsQBlSsOGwAAAydJREFUeNrtmkloFEEUhstMFhGjCIJG9CAeDGRAMQkhZw9uqIkXDxFxwbvLeBDBTHISQhREwQ28GLy5E5eTeAmSRBQSUTwoLtGrRoRM1OQv5g0Ulc50qqerpmK/H75DNV3Tr/5aul71CMFisVgsFiupWuDoOVWgDewCLaAOLHYcQ6AqHTyjHfSAdT6OAJsGVICz4KTPU6DC4m9733ibI6A9oPE5cBncAiPg1/9qQBXNeVVfwQ7wOglToE1b8CZ8bbxNA1Rd9bXxtgxo1Mp9SXsLrNLKb5JmQK1WHk/qPmBeqHIexDhlM39J/AhgA9gANoANYAPYADaAd4Kl1N9JKXBLQCJkQz/BGHgB7oIH4E85DNgOekG9406TydZ6Yj94C06AfldTQO7Fs+BhGRofpHqKJRslT4hiwBnQKcr8QSOgUzopNuOKJtoCHmn1JsE1cFPkT3vHHUyBNNgHjoj8IayaOW4DT+b6YynD0XIHrFCufQebwXXwReSPvm0rR8/qJ+TnNvUz20ZwJSCNLnkKbCXn1Z6XDx8u49AfphgmlWtpijX2NWC3Vr4BBj2Y/4MUS7FYYzGgSSv7dNrbFxJrLAbom5xRjwwYDYmVt8JxGDCmlRs8akdDSKyxbIWHwCal3AGeF7m/1NNck/odAbHGPgLuaeWDoNmD3m+mWIrFGosBj2mnV5Dcgd0XM78FulQjxaDuBkco1tgN+Acy2tBcCQbAJdAqZn4Ws7UVbqVnDlAM6rTJUKxWcgFBSUc2Qr0lBnlCLeX9ppJxddnOBrvpIVOG9dKW7i30fBfFZqRUxGH4jLagcg4un2OdCYNDi1MGC6w8EDlAGalwZYDUe8q6XlHjFoIaIkgbaHEKe0c30fyeLTY5jT6SmbLXj4J3pRwk2FI19c5a5do3yt6GijRerup1yrUPdOpjJdVOWTTgL/gE9mqLm3xnrwY/wG+wiKbSaXARLNV+57DNvMPFsdY5cCxi3fPguM3gUg4MeKq8u02Ny9gOzoUBBRPkX+Xkt4NlIffKOX8IXHARmOuT3WpaBPdQYrWGrn8GL8FtWgRzgsVisVgsFsuypgEvnYnTemkcJgAAAABJRU5ErkJggg=={scale="+$scale+"}>"
+!endfunction
+
+IBMEntityColoring(smell)
+!define smell(e_alias, e_label, e_techn) IBMEntity(e_alias, e_label, e_techn, #232F3E, smell, smell)
+!define smell(e_alias, e_label, e_techn, e_descr) IBMEntity(e_alias, e_label, e_techn, e_descr, #232F3E, smell, smell)
+!define smellParticipant(p_alias, p_label, p_techn) IBMParticipant(p_alias, p_label, p_techn, #232F3E, smell, smell)
+!define smellParticipant(p_alias, p_label, p_techn, p_descr) IBMParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, smell, smell)

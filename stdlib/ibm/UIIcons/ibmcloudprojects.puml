@@ -1,0 +1,13 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $ibmcloudprojects [64x64/16z] xS61400000CXXFdRpkElMXu0001m
+
+!function $ibmcloudprojectsIMG($scale=1)
+!return "<img data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAAIGNIUk0AAHomAACAhAAA+gAAAIDoAAB1MAAA6mAAADqYAAAXcJy6UTwAAAAEZ0FNQQAAsY58+1GTAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAAOxAAADsQBlSsOGwAAAhNJREFUeNrtWTFLAzEUTms3cZF2UFx1qEMXZyt1EB0cRBBcnPoDXAQn7STcnxAXXYqj4tYODoJLF0FBXKTdOgiOtr7QJxyhl+Rsc43e98FHm9zl5b3vktzlRQgAAAAAANKKjOH6AjEgrhHnxtx3h9ggHhHfHfhhZT9j6LRFnHX8ELrEksbJUf3Q2s9qGgYJBC+4j8ChH1r7OgHKCU7FsmM/Im3kNI3mY64XcdHX9DUOP6zsZ9P+FoAAEAACQAAIAAEgAASAABAAAqQTut1gW9lF9R360fZxBDQT9KPpowAyl9ZNwIcu9+WdADKHJnNpV2KQYBw3Omxblw8EAAAAAIeY5NmgrS99l/3kDMEncTbo7WYo+O/BmwQop2ENmOTZoKt1K9YagoQIBIAAEAACQAAIAAF8xqdSLsRoWzDY8uZcQPeFJ/1YDJWLwj6NXhxiy3oEND0ZAQ9KuRqjbdVgy4tzARPqSnmPWLFoV+F7dbbElMbAB/FSDBIheeKM40BrEfWvHEg+9NC2iY/Et4g26xzsdKjumXhI7Pm4wzNhg3ir+CvXpAviGfGF65aIx8SDIfduEu9G3VpOEqfEkyH1X8Rr/r8TMapr3F7EmQK+ocG/q8qDk1NimamuaT0OPmp6/SkBft5M98QVi++BJ+I+8fw3717fIR/cLs/3knKtxetCnaeH+I8ChLHFQggO/EYAAABY4htX0lSRqrp8KQAAAABJRU5ErkJggg=={scale="+$scale+"}>"
+!endfunction
+
+IBMEntityColoring(ibmcloudprojects)
+!define ibmcloudprojects(e_alias, e_label, e_techn) IBMEntity(e_alias, e_label, e_techn, #232F3E, ibmcloudprojects, ibmcloudprojects)
+!define ibmcloudprojects(e_alias, e_label, e_techn, e_descr) IBMEntity(e_alias, e_label, e_techn, e_descr, #232F3E, ibmcloudprojects, ibmcloudprojects)
+!define ibmcloudprojectsParticipant(p_alias, p_label, p_techn) IBMParticipant(p_alias, p_label, p_techn, #232F3E, ibmcloudprojects, ibmcloudprojects)
+!define ibmcloudprojectsParticipant(p_alias, p_label, p_techn, p_descr) IBMParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, ibmcloudprojects, ibmcloudprojects)

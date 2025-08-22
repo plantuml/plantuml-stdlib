@@ -1,0 +1,13 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $reset [64x64/16z] xS61400000CXXFdRpkElMXu0001m
+
+!function $resetIMG($scale=1)
+!return "<img data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAAIGNIUk0AAHomAACAhAAA+gAAAIDoAAB1MAAA6mAAADqYAAAXcJy6UTwAAAAEZ0FNQQAAsY58+1GTAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAAOxAAADsQBlSsOGwAAA+tJREFUeNrtmltIFUEYx7djZalF1EGyInoxX0KIynzoodNDhBRRYRfKHrrZxSCQoKDULk9GEHTBCoXSsoiIXgofMiIQK+3yaL1ahmVEdgFL7f/hd2Acdt2zl7M7xzN/+KEze85c/rszO3O+MQwtLS0tLS2tdNWEkOrNBTFQDBYy2SCPr/eAX+A90w6egt5UNmAW2ArKwHKXZbwAjeAO6EsVA+iuHgX7+C77IXo6roFz/LQoacAkcARUgZwk1fETnAYXwF+VDMgHd8Fii+tD4CWP6w4e51/BZ74+G0R5bljK80URiFiU9wZsAR9UMGA9uAmmm1z7CC6CW6DbYbnzwHZwGMw1uf4D7AQPwzSAxvkVkCHl04R1AjSAAY91TAa7wFmeWEUNgoM8PySkDB87v5crlh9TmrFLwHNuoFcN8rCpB/PBIuEa1b0OfAKvgzQg/tiLnf/Hd+M4+JOEoUZl3ud5Y41UNxn+DnQFYQBNeI/BVCHvN9jIdz/Z6mQ28Jsn/iSUsEHfkmkAVdgCFgh59DraBB4FuMii2f8t2Cz0KROs4HlnKFkGVPLMK6oCNIewvCYTvoC10iKsH7RZfSniocI5vMiRJ7y6EPc2dSbDrorb6rsBldIKr4/vftiqkPYJOdxWXw2YCcqlvJN+bVA8qo/bIqqc2+ybAdukjU03v5dVUb200szmNvtmQJmUvuzDCs9PDXCbxmqzawNyeWMibmyaFPyxp0l6/RVx2z0bEJP2EK9cbGyCUDe3Tdz3xPwwoFhKtxrqqtWm7a4MKDBZiqqqTpu2uzIgX0p3KWxAl03bXRkwQ0r3KGxAj03bXRkwTUr3K2xAv03bXRmQafLOTVlFjPEt26d1vBuQJ6W/p5sBBSa/GaSVAUvsXtlmBlAYq9CHygu5rDC1Skq32xlQDWrBE48mFHIZtVxmGKJAyjIhPWyMRKIsDaCG1vD/UQ8mxDsf5XRNSCbskPpHobheJ3OAGxPkzoclih4dkvIa7dYBp4QnwI0JVp2v4bKD1G4eAnFROL05kYWQWxNU6jzFC89IeVcNiwCJ2RBwaoJKnSddMkYHTekMwXmrD1sFRp7x35VCXhYo5b+iShXq/H5wTMqjqHSLUwPGMkFWliKdp1jgDalPdHBij+EhNGZmwlgKs/P3wBQhjw5MrDZGwmWGWwOcmBBW58v5FSdu0+kMAcUB2uy+nGhw1M6EsGb7Bh7zEZO54HYihTiJDluZEHTnaZFDp1EeGKPjE/E7fwBcT7QwN2eExCVzkJ1X6pBUtbBmSIZS+picVw07+Kzng5ITU/SHDt+OyqaaAb4fllbVgMCOy2tpaWlpaWmlr/4DNPvTvVrhjx0AAAAASUVORK5CYII={scale="+$scale+"}>"
+!endfunction
+
+IBMEntityColoring(reset)
+!define reset(e_alias, e_label, e_techn) IBMEntity(e_alias, e_label, e_techn, #232F3E, reset, reset)
+!define reset(e_alias, e_label, e_techn, e_descr) IBMEntity(e_alias, e_label, e_techn, e_descr, #232F3E, reset, reset)
+!define resetParticipant(p_alias, p_label, p_techn) IBMParticipant(p_alias, p_label, p_techn, #232F3E, reset, reset)
+!define resetParticipant(p_alias, p_label, p_techn, p_descr) IBMParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, reset, reset)

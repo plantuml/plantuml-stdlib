@@ -1,0 +1,13 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $slack [64x64/16z] xS61400000CXXFdRpkElMXu0001m
+
+!function $slackIMG($scale=1)
+!return "<img data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAAIGNIUk0AAHomAACAhAAA+gAAAIDoAAB1MAAA6mAAADqYAAAXcJy6UTwAAAAEZ0FNQQAAsY58+1GTAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAAOxAAADsQBlSsOGwAAA8NJREFUeNrtW01rFEEQnR03e4sSUcGrBMlB4kEUP/6AgayQa4ySjUc96UH/ggcD/gDXvRiNlyAbyEGvfhAvGlRyCF7FDxQVPEQ2+BprodPb0zvdXTM9m0nBI+xO11RvZaan3queKCq5VTI67ylgCjhCnz8CS8BqTv7BEnAQaAKTwC/gLX1/HNgLLANzwNeM/IMm4ADwCtgPXAcWgE06NgRcBOaB78Bp4Buzv5PtYUzAInAUOAc8AzrSsS3gDfAEuAqcAB4y+ztZzPTjT9JlewNYN4xbpzGT5MPlHzwBYsH6SZdtP1ugsVOM/sETMAq8k+5Zk23S2FFG/+AJsLXfwLD0eZi+c/UPnoAN4BhQG7RCiCsBokjZB0yXNQGvqUi5A4yVMQHCGsAP4AUwOyi3Q5XxXKIyO0Ol7H3gLpWyHc3Y8Szq+tAJiKhGrytk5pBm3BphxyWga6tF+Q8XtQ4o/BrQ7xK2sS9Z8nlfPaGago93PCdzGDgP3MqCz2vmf4/WIVlP6MZvA1fk+FWFj78kPt5Q+Liv1ahImqcYbHw+5fwT48trgHh0jQBngRbjj+8SmBade4RicVvTMH81flNdBNPycV9j5/PS/OsWekK9Gz924OO+xsrnffWE2IGPc9wObHzeV08oSh1gy+9V/cBWT+gphPLk8zWKteGoJ+j8nePHAfj8NMVactQTdP7O8eOc+fwYxVimmLZ6QpK/c3y5L/AUmAGuAZ+BDwxVoHzZXQIek2YgHkN/lDFq/PfR/35AGv8Z+vvANn4lh1JYJDnr1tgK1f9rtvErBSVDts3R2+RTFDK2awNjPreAuJxuMl3CwW7BSgo+bRI1J5gWMdv4bItwReHTcn9ePFL+Jpx0hf5OpPR32R9gim9rifHlOuBRtL0/v2U4oe65u2jwT9Pft4lva4nxY0s+beLjvvsDfOI76xFcekCe+wNY9QguPSDP/QGseoSrHuDLx9n6+77mogf48nGdBdMjXPQAXz6us2B6hKwHtHPg40mWNj67HiGvAXPR9v7+kFJIzNIxMaaRweRM8TkKIe3805TCafl4pCmNI4tKMkgprPYGxYELGjLzPCc+rYvvS4Y+meZfNTC9kOJBbvF39wcUZB7BJK2iJGCcoBM15f0FPf39nZKAKEFg0fF51v0Fg7IGCGGkFWn6+2VbBHv6+2V8ChTyfYE8rZDvC/j294PpAyHeFwi9PyCTBPjqCcH0CM73BXz0BFv/NpcewfneoGl/ge/+AFEIXe7j72RZvDrroiek9WcvhUv/8nTp7R8ofq+XvODN4AAAAABJRU5ErkJggg=={scale="+$scale+"}>"
+!endfunction
+
+IBMEntityColoring(slack)
+!define slack(e_alias, e_label, e_techn) IBMEntity(e_alias, e_label, e_techn, #232F3E, slack, slack)
+!define slack(e_alias, e_label, e_techn, e_descr) IBMEntity(e_alias, e_label, e_techn, e_descr, #232F3E, slack, slack)
+!define slackParticipant(p_alias, p_label, p_techn) IBMParticipant(p_alias, p_label, p_techn, #232F3E, slack, slack)
+!define slackParticipant(p_alias, p_label, p_techn, p_descr) IBMParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, slack, slack)

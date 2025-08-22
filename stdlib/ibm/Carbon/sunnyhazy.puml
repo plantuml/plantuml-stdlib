@@ -1,0 +1,13 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $sunnyhazy [64x64/16z] xS61400000CXXFdRpkElMXu0001m
+
+!function $sunnyhazyIMG($scale=1)
+!return "<img data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAAIGNIUk0AAHomAACAhAAA+gAAAIDoAAB1MAAA6mAAADqYAAAXcJy6UTwAAAAEZ0FNQQAAsY58+1GTAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAAOxAAADsQBlSsOGwAAAgRJREFUeNrtmDtLA0EUhY2PImClKKJVKmuxFYkWafwDKtjYKhZBbZIIojaxEBQ7H4WFBkwlNimMtQiBKASbpFJEsRO0EPUM3MCyZMnksdnd7PngI2EzM2FOsjN3tqODEEIIITaxILqWTpvHnxd9G4DrYQB+D6CrxvYBWIT9MKsZ8APMa7TdhKdw380BKPrgBuyBN1Xa5jUnvwUT8EAzWEcDuJXJxzRD0Jl8HO5ICC2lu85+cXlVIRzDkuGzIIzAaTgk114lqAz8MrQNGSYfd2INCDTYP2SYvLrfl+RXHIBv8Ek+G4WD8F1+8UP4W2EMzwVQpheewxl4AXdhztRmDK7BWXgN5+Cn13YBq5X+Uv7yqurblr+8GXUtDR9hFI7DFPzzegDLcEUmn9ZoX5BbQ60fH/DOy4VQUO75lObky6SlT0LG8GwAEVnwknX0TUrfiJcDCMOXCgueDjnpG3YygGp1gDrLL5quncAzeT/S4BZWkjF0v881hVCzmPD6YWoPPvv5OKzOBcNS5PgygIyUt+t+eR5g5gd+w1Wp8Ap+C0BxL2VtVCq8gt8CULX8lYQQk5Nf0eI84DoCTRzL6jg8adE+69Ccp+yqA9T5Xj3SOqrwQIQQQghp8zrAVft7qw5DhBBCSJvVAfXu47Xuw66oF1gHEEIIYR3QEuze9/k8gBBCCCE18Q/5eF3QKoelVgAAAABJRU5ErkJggg=={scale="+$scale+"}>"
+!endfunction
+
+IBMEntityColoring(sunnyhazy)
+!define sunnyhazy(e_alias, e_label, e_techn) IBMEntity(e_alias, e_label, e_techn, #232F3E, sunnyhazy, sunnyhazy)
+!define sunnyhazy(e_alias, e_label, e_techn, e_descr) IBMEntity(e_alias, e_label, e_techn, e_descr, #232F3E, sunnyhazy, sunnyhazy)
+!define sunnyhazyParticipant(p_alias, p_label, p_techn) IBMParticipant(p_alias, p_label, p_techn, #232F3E, sunnyhazy, sunnyhazy)
+!define sunnyhazyParticipant(p_alias, p_label, p_techn, p_descr) IBMParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, sunnyhazy, sunnyhazy)

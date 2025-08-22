@@ -1,0 +1,13 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $XML [64x64/16z] xS61400000CXXFdRpkElMXu0001m
+
+!function $XMLIMG($scale=1)
+!return "<img data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAAIGNIUk0AAHomAACAhAAA+gAAAIDoAAB1MAAA6mAAADqYAAAXcJy6UTwAAAAEZ0FNQQAAsY58+1GTAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAAOxAAADsQBlSsOGwAAApxJREFUeNrtmM9LFVEUx8d6JAjSoh+LqBZuKt1EbaJHQVQEaurmCW6CTP+P/o/UoE3ogDxcKGItWrjU3UhtXAhJi7cwEOOB8ToDZ+BwuPfOD8l3rO8HvnjPvee+cb73x9yZKAIAAAAAAAAAAAAA/xc9jrot0j0RD5F2PP0HSYmIt0n3VU5HxbdJ3zy/d4v0Ned/7BS4h8Kcc9S9U3Ej0L+R09fFeKDt5WnPAJcBH0lHFQw44r55jFVsOzUDfpKW1BIY9Ez/IREvcd88HpCuOuovkR5aMCBlrsAyaOT08XGeNOqoH+E2EwZsqo0vz4Ad7lOUcQvrP2RAynxgGejpP1/yus9IfSK+QHphzYAPpLZnxGW5zbllSG/+uYifkPqtGdAiNQsY0OTcInz37PhjnpyuGqA3tmwZ6Ok/V+J6P0h7XB4V1882xT3OMWPAZ9KuGnk5+rucU5TLpDUup4/Cu6Q7pJtct8Y5ZgxIj50LAQMWHEfTEFdIqyKukx6LeJVzzBiQ8p50LJZBNv2Pua3s5rdBOnQYcMhtfdYM2FejJkdrv8I1f5FWhAGPuLzCbZE1A/4Gi/z3OumGqjNnwDXSsKN+mNuqsE46EPEB15k04DWpxuVEvP/XuK0KbXXGaKpDlxkD0o8N0yKOWRnTJ/ggsegpmzLgKWkgYMAA51ThE58gW1zuCrWc9hlRTsQbYiIehzMVbyB9jC6LsjkD0hPZhBp9Wc4MmODc1gmXgbkl8IrUGzAgo5dzq/CFZdKAN57pn30ASTy5ZfjNMmdAXX0AiR05sfpAUo/OILUCm1/IgLeqz2YX7qFTMr8nbwZcJE0Gpr9vGUxy3zOFy4Ap9UYWB/rH6k1v6l8wYLbA9Pe1zUYAAAAAAAAAAAAAAJjmD5H1gAY80Y7IAAAAAElFTkSuQmCC{scale="+$scale+"}>"
+!endfunction
+
+IBMEntityColoring(XML)
+!define XML(e_alias, e_label, e_techn) IBMEntity(e_alias, e_label, e_techn, #232F3E, XML, XML)
+!define XML(e_alias, e_label, e_techn, e_descr) IBMEntity(e_alias, e_label, e_techn, e_descr, #232F3E, XML, XML)
+!define XMLParticipant(p_alias, p_label, p_techn) IBMParticipant(p_alias, p_label, p_techn, #232F3E, XML, XML)
+!define XMLParticipant(p_alias, p_label, p_techn, p_descr) IBMParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, XML, XML)

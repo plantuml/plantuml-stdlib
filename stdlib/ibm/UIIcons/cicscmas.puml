@@ -1,0 +1,13 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $cicscmas [64x64/16z] xS61400000CXXFdRpkElMXu0001m
+
+!function $cicscmasIMG($scale=1)
+!return "<img data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAAIGNIUk0AAHomAACAhAAA+gAAAIDoAAB1MAAA6mAAADqYAAAXcJy6UTwAAAAEZ0FNQQAAsY58+1GTAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAAOxAAADsQBlSsOGwAAAg9JREFUeNrtWk1OAjEUnuHnBIaF6AFYaNQb4BZOIC7gDgZdeAIhJh4BFuraBW7lBmLiwgPgT0I8gVF4zbxFmTC0hek4Q78v+ZJOaWfar32vr6WeBwAAAACAq/A1y+0QO8Rj4nbK+/RJfCKeE9/jEEB0/oW4lbHB/SYeqETIabyok8HOe9zmjqqQjgDVDJu4su0FjZeUV/Qb/4XpkravNAM2GhDAdQEKCdlian0HTAACQAAIgFUgZm9vWs7HDIAAECDTPsBHJAgTgAAQAALgPCBdER5mAASAAAAAAMZrtck9AF+x+zsijkJ5h8RnjXihSTwj7kV855V4TexHtG1Z/chAKO57AM0FAjQ16/UUwu9LZfqG9SOXwbjvAZwSi9JzkfNUaBt8o71m/TkBqjGbV4lYk55rnKdCxeAblTXrz5mAjXsALeKDlNZB3sDX5Feon9hmSKAujXrdtVB4xHbfYBYXOMWNFqAnTf1WKM+J84A7YpfXfoEfzrsxfM/UsPxHyJ+F64t7hEMvuEc4tjkDJsSB9DzgPNsYKn4XAd4Jm+Ou7e1wLyJtExdecElSBRHzXNkW4JFHfcLpJDBms7vn6b4MVdvLoLD7Wykdx35lqilCQ8OnlAsJjEg/zbvBJAQYpVkA/C+wxvqb1nN/k7jhV54BXw5OgLdcKHJzDV3ZBC6Jf15wolLa4E7rHKkBAOAIZkhFU8QVUOyoAAAAAElFTkSuQmCC{scale="+$scale+"}>"
+!endfunction
+
+IBMEntityColoring(cicscmas)
+!define cicscmas(e_alias, e_label, e_techn) IBMEntity(e_alias, e_label, e_techn, #232F3E, cicscmas, cicscmas)
+!define cicscmas(e_alias, e_label, e_techn, e_descr) IBMEntity(e_alias, e_label, e_techn, e_descr, #232F3E, cicscmas, cicscmas)
+!define cicscmasParticipant(p_alias, p_label, p_techn) IBMParticipant(p_alias, p_label, p_techn, #232F3E, cicscmas, cicscmas)
+!define cicscmasParticipant(p_alias, p_label, p_techn, p_descr) IBMParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, cicscmas, cicscmas)

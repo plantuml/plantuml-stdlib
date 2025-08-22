@@ -1,0 +1,13 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $training [64x64/16z] xS61400000CXXFdRpkElMXu0001m
+
+!function $trainingIMG($scale=1)
+!return "<img data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAAIGNIUk0AAHomAACAhAAA+gAAAIDoAAB1MAAA6mAAADqYAAAXcJy6UTwAAAAEZ0FNQQAAsY58+1GTAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAAOxAAADsQBlSsOGwAAAwdJREFUeNrtm01oE0EYhsdECwFvolh7sgdPIqil+ENRPASqIF4UrP96qJoi9ODJePKUXkRRqbQqqFgqelFEKqj0oqJobcWDKPYg+FO1F6Ui1cR32PdQpMnuZifpfJv54Dkkme/LzrOT2d3JrlI1HrN8Pt8F9lu2zbfASVPFkj6f58AK8MWSzi8DW8Ac8MBEwdkB2jwFrZYIuAvWgWN8na2GANtiEDw3JUGigKmdjixBqgBjEiQLMCJBuoDIEuIgIJKEuAgoW0KcBJQlIW4CQkuQKKAZPAzQ7jclfC917ZAQ1vlrYCRg28dgHKTjNAKukDDXDiUjoWo8nAAnwAmo7ZiJo0CKh6YNYCHf+6y8Ja574FdcBejRlgHHwXwwBt7ws/XgCPgKToCzIB8nAXNBH9gE+kEXGPqvzXJwFJziCNkOfsZhDkiw83rIb2PHhqZpp99rA1vZtq8a21cNARnu+T3gRoD2N8Fu5mSkC0jxN389YOenSuhnbkqygDQnvFwZuTnmpiUL0LP7pyK/eb94CT6yhlgBDWA0Qv4oa4ieBJMzlGuFgA+gMUJ+I2uIFTDIiWx1GbmrwALWECtgAHwDnWXkdjJ3QLIAvTCZ5dndzhB5O3jWmGUN0dcCPWAj6FXejQ2XfNrvBd3KuxOkJw6nwnnufb1Ce5F7t1i0UdA4c/JxENCivBsa6sFt5S1XF4snbFPPnBbpl8MHwWnwGqwEL3zavweblXdf0gVwn+sE3RIFtINz4Co4ACZD5GpRzZSgaxTAeUkC1oAz4DLYxw6EjUleQudZ6xV4JGEOqGPHhzkKChFqFVhjmDXrJAjQG7wYHDZ0DNc1DrFmuwQBHeCO8u4vNBXPWLPDdgFNYAlPekxHL2s32SxgLfirgv1/HzZ0zT/8DmsFLAVvwY8KCNA13/E7rBUwT3l/blQqxvgd1grQK7gTFRQwoQyvErt/h50AJ8AJcAKcgBoO0+sBlX64qtWNACfACXACqj0JBr0/38bQj9qWXJlKBhghiwTvYP3Ms15MHVEupo9/VnqVlZG8JCgAAAAASUVORK5CYII={scale="+$scale+"}>"
+!endfunction
+
+IBMEntityColoring(training)
+!define training(e_alias, e_label, e_techn) IBMEntity(e_alias, e_label, e_techn, #232F3E, training, training)
+!define training(e_alias, e_label, e_techn, e_descr) IBMEntity(e_alias, e_label, e_techn, e_descr, #232F3E, training, training)
+!define trainingParticipant(p_alias, p_label, p_techn) IBMParticipant(p_alias, p_label, p_techn, #232F3E, training, training)
+!define trainingParticipant(p_alias, p_label, p_techn, p_descr) IBMParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, training, training)

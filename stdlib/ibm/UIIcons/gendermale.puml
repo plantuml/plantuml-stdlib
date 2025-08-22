@@ -1,0 +1,13 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $gendermale [64x64/16z] xS61400000CXXFdRpkElMXu0001m
+
+!function $gendermaleIMG($scale=1)
+!return "<img data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAAIGNIUk0AAHomAACAhAAA+gAAAIDoAAB1MAAA6mAAADqYAAAXcJy6UTwAAAAEZ0FNQQAAsY58+1GTAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAAOxAAADsQBlSsOGwAAA3lJREFUeNrtmm9ojVEcx49rE2PhDWMbKzF/8y95wQsKtcnmhUKZWIo3lNgbyb9S8kKZF8qblUhEsWxYKULxRhbCtBes7aLUmBTb7nxPz2/19HO23fvc8zzn3HvPtz7dnvPce57z+z7nnnN+53mEcHJycnJycspVjbKwTQNRxhjL9R7gDHBjQOZrK7gC8nJxDBgp+Kz+C6iC78sVA4YKfkcuGDBc8Nez3QCtwWeaAdqDzyQDQgk+UwwILfhMMCDU4G03IPTgbTYgkuBFOktIhcaBzWAlWAJmsvNt4DV4AppBr+ngdRkwDxwA28HEYb5XBjaAQ+AbuAwugM+mgk/XgLHgKKgDY1L87RRwGOwDx0A92BJ18OkYMBs00Wc6mgDOgVowN+rgg+4HLAYPwFTFuQ7QCO6BD+ALlReBclABqkDpCNeIJPggBiykQWwSK+8Cx0ED6B+hjtFgNzgJppsMfrAxqYzyLWAGK5d3fC14LpLb0ZXfeQkukaHl7Pw7GlQHbDNAjtiVrKye7uafANf+C26AyTR1+gfIbjI0dCW7EFoE9iru/EGQSOP6CaqjkZWfUvQ0owbUsfGik/6nCQ1tSFBdnWx22G+LASVgGys7AXo0tqOH6vRrJ8i3wYAK1pAOGu11q4Hq9o8FG20wYA07vpPEVBdE/VS3X6tsMGA1O24OsT3NikWXcQOK2HF7iO1pVyy8jBpQoEh04iG2J65IuIwaMN7wxsiAaQO+04rNr2khtofnBr2mDUiwqUlqVojt4XW/t2EQbGPHlSG2h9f9ygYDmthxdYpJVCqJWTUre2GDAbfZYFRKGaBu1dKye1A/FAsjIwbIJOWhIhco1NiOQkUucA38tiUbPMJ6QbHwNjBjmtpwlc0AcuY5b9OGiNzymg8W+MrKaTOjJY35OkaB1rDyM7RZYo0BUk+Ft2/v3/uXOzlLwV3FeiGZbn9T/P9Wx0fhPWPos82AX+Ax3a181hN2gZ+gNYneIK+5B9wCy9m5r2Cd8B6cRKIg2+JVNEAVKM4NtS0uV49zKL/fxEb7QXVT6t0a5Vo76HuCy2iKKtHUjrfC23V6E3WyEXRBE6deUKohZb0ovMdiXSayLR1viq4Ap8H6FH4jkxz54OOs8J4YG5POV2WLaSkr1/PyOV8Z62GfwDPwCNxXJFlZKTlG5AknJycnJycnG/UPfcK4uztPoWgAAAAASUVORK5CYII={scale="+$scale+"}>"
+!endfunction
+
+IBMEntityColoring(gendermale)
+!define gendermale(e_alias, e_label, e_techn) IBMEntity(e_alias, e_label, e_techn, #232F3E, gendermale, gendermale)
+!define gendermale(e_alias, e_label, e_techn, e_descr) IBMEntity(e_alias, e_label, e_techn, e_descr, #232F3E, gendermale, gendermale)
+!define gendermaleParticipant(p_alias, p_label, p_techn) IBMParticipant(p_alias, p_label, p_techn, #232F3E, gendermale, gendermale)
+!define gendermaleParticipant(p_alias, p_label, p_techn, p_descr) IBMParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, gendermale, gendermale)

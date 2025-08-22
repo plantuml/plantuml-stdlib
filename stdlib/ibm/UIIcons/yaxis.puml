@@ -1,0 +1,13 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $yaxis [64x64/16z] xS61400000CXXFdRpkElMXu0001m
+
+!function $yaxisIMG($scale=1)
+!return "<img data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAAIGNIUk0AAHomAACAhAAA+gAAAIDoAAB1MAAA6mAAADqYAAAXcJy6UTwAAAAEZ0FNQQAAsY58+1GTAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAAOxAAADsQBlSsOGwAAAQxJREFUeNrtmr0OgjAURpEyuLi56NO48UiOwuiL+Bw48iCODjo5eklKQgh/LQzcck7yDbSF8J0UwkAUAQAAALhxs1GP8SyfSS72+LklAXX5GvUSzIzyQUgwM8url2AWKK9aglmovFoJxrH8R7IfGVMlIXYsn3asTe1ck0zLd0LsWL7sWF9qlhBPWDNUfkyCyh2QN3bAlPJ9EjJ7rVWT9IxXN/6TFBPLtyVUL8K7hh2QDMz5Figdpa3+HRA0CEAAAhCAAAQgAAEIQAACEIAABCAAAQhAAAIQgAAEIAABCEAAAhCwCXYe57wk51A6+uyAYuuPwFXyDkWAz9/iX8lDcpIcJYeVd8wjAAAAgA7+YB4yO3KTTPoAAAAASUVORK5CYII={scale="+$scale+"}>"
+!endfunction
+
+IBMEntityColoring(yaxis)
+!define yaxis(e_alias, e_label, e_techn) IBMEntity(e_alias, e_label, e_techn, #232F3E, yaxis, yaxis)
+!define yaxis(e_alias, e_label, e_techn, e_descr) IBMEntity(e_alias, e_label, e_techn, e_descr, #232F3E, yaxis, yaxis)
+!define yaxisParticipant(p_alias, p_label, p_techn) IBMParticipant(p_alias, p_label, p_techn, #232F3E, yaxis, yaxis)
+!define yaxisParticipant(p_alias, p_label, p_techn, p_descr) IBMParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, yaxis, yaxis)

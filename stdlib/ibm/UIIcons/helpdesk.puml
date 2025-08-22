@@ -1,0 +1,13 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $helpdesk [64x64/16z] xS61400000CXXFdRpkElMXu0001m
+
+!function $helpdeskIMG($scale=1)
+!return "<img data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAAIGNIUk0AAHomAACAhAAA+gAAAIDoAAB1MAAA6mAAADqYAAAXcJy6UTwAAAAEZ0FNQQAAsY58+1GTAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAAOxAAADsQBlSsOGwAAAtFJREFUeNrtms1rE0EYxieJ5qSCxUMbsYceq9AWQWgvxUIVEU8ehAY9adODl14q9D/QSyltaVGh9KJevPmBKdX03EsP+g8kagTbHtSTEuIz9A0sw2ZndjOz2bDvC7/DZGfeZ/swmY+3EYIj3ZGJMOYiuA+ugUH6rArK4Dn44vidreqHMeAkWAJzINemTwNsgHnwz/If7kQ/ZyieB+/BHZAN6CefXQET4BW9kI1wpm9qwDKJm8YQ6APvLBngTP+E4XduTvnsK1gAn6h9FTwGFzx95Jh1C2uCU32TGbBIU8orPgL2wB/iM9gCRXDGMx3/gg8dGuBUP2vwAtNKWzp/5NPviJ4FjY0STvVNDBhU2rsBfXc1Y6OEU/2sSHmYGFBV2pMBfSc1Y6OEU30TA8pK+wltMWr00TNvbFswwKm+yS4gV92Sxyy5ys6AH+AAnAK3wGtlG5KHkFnws0MDnOqbHoVXwMOQL74WYUzs+qYnwR0wTics0/73LB6FnembGtCgs/VZcDlg7WjQ6euu5cuQM/0o1+Fhuo5ep+9cJubrcLf1OVJTEcrTNiK3nEvgdMjcv+mS8gI8pYtJ2BqAc/12BhTAWzBqyeh9cBN8N+wfm36ujfMfwZjFmdYPpsCmwdYUq77fdjJrWbwVY5RbF7Hq+1WEikpb1uIegG8hBc+DZ+CGkntVMy5W/WybEpQ3ShHEBY0paXKLbuv7GaCutrUOpl1Nk1t0W58LImwAG8AGpDrkOaCp6dO0rNm0cCXnGcAGsAH21oAMz4CUz4CkhSxaFDrYNZqa3ImfAZU4cyfRgEfg0EHeQ8qdeAPk/wJlLfAlqFvIV6dco5Q78WtAy4QZSyfRAu8CbAAbwAawAWwAG8AGsAFsABvABrABPXIb9IauQqQb2/MzoOJybC8YELVC5FsBUiPXAwb8Esc/dRsA54T+RxayAvQG3BY+FSAODg4Ob/wH0Zi8YQEUKGUAAAAASUVORK5CYII={scale="+$scale+"}>"
+!endfunction
+
+IBMEntityColoring(helpdesk)
+!define helpdesk(e_alias, e_label, e_techn) IBMEntity(e_alias, e_label, e_techn, #232F3E, helpdesk, helpdesk)
+!define helpdesk(e_alias, e_label, e_techn, e_descr) IBMEntity(e_alias, e_label, e_techn, e_descr, #232F3E, helpdesk, helpdesk)
+!define helpdeskParticipant(p_alias, p_label, p_techn) IBMParticipant(p_alias, p_label, p_techn, #232F3E, helpdesk, helpdesk)
+!define helpdeskParticipant(p_alias, p_label, p_techn, p_descr) IBMParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, helpdesk, helpdesk)

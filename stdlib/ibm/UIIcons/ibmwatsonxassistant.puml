@@ -1,0 +1,13 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $ibmwatsonxassistant [64x64/16z] xS61400000CXXFdRpkElMXu0001m
+
+!function $ibmwatsonxassistantIMG($scale=1)
+!return "<img data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAAIGNIUk0AAHomAACAhAAA+gAAAIDoAAB1MAAA6mAAADqYAAAXcJy6UTwAAAAEZ0FNQQAAsY58+1GTAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAAOxAAADsQBlSsOGwAAAvdJREFUeNrtWr9rFEEUHo1KiiAhIugZg6UQMKlEq4tIhBR2KUJsgwpq4SlJowG1CRdQBEUMKeysBG0SSAie/0EQBNOJHp6gEX+kUsL5PfYdTCZ3t7d7s7tj5n3wwc3u3vz49s2892ZWKYFA4DN2OdKPXrAIDoGHLdddAUvgJFh2UQAa/Cp4IOF21sFBU4TdDghQTGHwitsomhddECCfZVt7HBAgl/C0rDZpywkLyBQigAggAogAIoDPaCUO6AcnwHNgH9i1Q/KPUAH2gg/Ay2CHbxawD1wAz/q6Btz3YfCNLKCfzV7HJ3AKfA1+sdyHz0aMXm3ybIGnZVjM36ytUAuYMOZ8mfPo5wkMnvAmwrPT4EGbbdUTYNgo007K9wStcJI3K1pBN3gvZjvr3FaoAH1tvKE40C2s0sLzZKEDEeqvcN3bdoMa+eSqY36b3PFb8Lh2rQSe8SUS/MuLn44hcNSnUHiR4xIds2CnT7lAga2hhmPgDZ8EWAMfaeUV8GUayZBLuAueBmfAV2llgy7hBwsg+wFp7ge0ihFwjn9f5JXb5v1Us8E4eKqCc75e/m37vvMWkBXailxtWsAljrXL/Nv2fectgObs0QTvO78G/JcQAUQAEUAEEAFEgK34bZRzDvc/F9L3WAJ8NMp5hwXIh/Q9lgDLRpm+retxcPA9avt3f8tRK6l36luLxWvi7AfHVXAq9A3cyHjgh8Dz4AsjdN7kNPprlMoaZU6093bFUofDsrPrKjiMbRfU52u2vADtwK6k8DbpnG/aQj3U11g7xI0E+KOCHZrHbFpJgc75utv4/yb3cYT7bDUdpj34q+ATZfcTmRoGuN6o2ODVfgmcB98lOT+TRMlwY+/BE2rr4ceOjQRH6/jwQtqDz0oAOs+bNa7Rud9iFm8iCwFuquBcT19wC74kQ0dU8K2RDlrF13wRYMbwIhS13fElHT4FXjCu3QJ/+iAAuduHhttdZT+eKdL8BPYXeFKL/MbAD8ozkAu8DT5TAoET+ActaYMypDeBgAAAAABJRU5ErkJggg=={scale="+$scale+"}>"
+!endfunction
+
+IBMEntityColoring(ibmwatsonxassistant)
+!define ibmwatsonxassistant(e_alias, e_label, e_techn) IBMEntity(e_alias, e_label, e_techn, #232F3E, ibmwatsonxassistant, ibmwatsonxassistant)
+!define ibmwatsonxassistant(e_alias, e_label, e_techn, e_descr) IBMEntity(e_alias, e_label, e_techn, e_descr, #232F3E, ibmwatsonxassistant, ibmwatsonxassistant)
+!define ibmwatsonxassistantParticipant(p_alias, p_label, p_techn) IBMParticipant(p_alias, p_label, p_techn, #232F3E, ibmwatsonxassistant, ibmwatsonxassistant)
+!define ibmwatsonxassistantParticipant(p_alias, p_label, p_techn, p_descr) IBMParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, ibmwatsonxassistant, ibmwatsonxassistant)

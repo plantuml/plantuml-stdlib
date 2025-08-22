@@ -1,0 +1,13 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $timeplot [64x64/16z] xS61400000CXXFdRpkElMXu0001m
+
+!function $timeplotIMG($scale=1)
+!return "<img data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAAIGNIUk0AAHomAACAhAAA+gAAAIDoAAB1MAAA6mAAADqYAAAXcJy6UTwAAAAEZ0FNQQAAsY58+1GTAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAAOxAAADsQBlSsOGwAAA3BJREFUeNrtms9LFVEUx29aoFTQD5NykxVRGyEKklAXDyIoyhZFtWgTLttJ8IyKiOciofQvcBFhZNRCjYoWuUgqBUGqRT+gXJVkimCQYEbfg99Hk+mbmffmxxnfPfBB1LnnzP3OnXvvOXeMKXJbkbD7LQUN4ADYTMTGyEvwHMz5FeAxfx5W2vFdoAU0gg3gN/gINvH/42AnKAGToBdcB+/dHK9U/sSlgxnQBL6D26AbDPEpOx+cjI794BQ4A86CTnCFAiVOgD18kuvBNXADzOS4fo6vgHARXABpcIQjZ2SxRiVKO38UDIApUANaXTq/0GbYpoY+Buhz0UnFcLiIdSl58o/AC3AIfMtxbZfLPU/xtZFJs5l+xzSPAHnne8AncAL8CMCn+DhJnz2OiVOlABnO8vLOTnu4XibBJx6um3asIBmtAuzmbN8GRkPwP8qlsYmx1AmQ5lJ3M8QY7YyR1iaATMbHuMb/DDGO+L7LWKWaBJDt7UbeXNjWzVgNmgSoBb/AcASxhhmrVpMAVeAzmI0g1ixjVWnaCm8BlaDf8beUx7arPV7n9F3JmGq3wl7tKajntjcv0zICvnLLm/LZroMT2iX+fjnHtU7fHxhTjQBfwDawKo95INtpLyIYxqhmTDUCDPJe9oFXebR3ivCMLGV7KcKgJgGkjDUBTucpQFYEt84bFksmGFPNJCjFjD7eXHkBftw6X06R+xhT1SogSVAF8/awrJnpcJvGZOidma/htXCSCtqq6buTsVTWA6SAma3qrg3Q7xoWQyYZQ21BRKq3x8F2cJ83HkTnH4Ad9D2uWQCxEU6GdWa+LpjrdXCrCG2ljzr6/K8yrHUr/JBb3HXgDZe4Mh/ty9jmLX3U06farfBSI0E2RlLDuwrOs15wz/w9GFlYVHEejFQYDwcj9mgsIVmfdOScyX04essUeDgqw+d1gDfdy2xNtYU1CcqWs72QPD0qc74CQwHPAa0+UlQVAgRtfvP0ZSdAIkSIYhVQLUJUy6BaEaLcB6gUIeqNkDoR4tgJqhIhrq2wGhHizAVUiBB3MhS7CBqywVhF0JIOxyaCpnpALCJoK4g4RThowv1eKKVRgKwIcnbXWIwjIGsdJqJqUtK/ELECWAGsAFYAK4AVwApgBbACWAECyAXkdLi/iPr+TzZ4x/j7BMXacrE//n+/U8kgaQEAAAAASUVORK5CYII={scale="+$scale+"}>"
+!endfunction
+
+IBMEntityColoring(timeplot)
+!define timeplot(e_alias, e_label, e_techn) IBMEntity(e_alias, e_label, e_techn, #232F3E, timeplot, timeplot)
+!define timeplot(e_alias, e_label, e_techn, e_descr) IBMEntity(e_alias, e_label, e_techn, e_descr, #232F3E, timeplot, timeplot)
+!define timeplotParticipant(p_alias, p_label, p_techn) IBMParticipant(p_alias, p_label, p_techn, #232F3E, timeplot, timeplot)
+!define timeplotParticipant(p_alias, p_label, p_techn, p_descr) IBMParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, timeplot, timeplot)

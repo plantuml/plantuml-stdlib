@@ -1,0 +1,13 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $ibmcloudvpcendpoints [64x64/16z] xS61400000CXXFdRpkElMXu0001m
+
+!function $ibmcloudvpcendpointsIMG($scale=1)
+!return "<img data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAAIGNIUk0AAHomAACAhAAA+gAAAIDoAAB1MAAA6mAAADqYAAAXcJy6UTwAAAAEZ0FNQQAAsY58+1GTAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAAOxAAADsQBlSsOGwAAAnlJREFUeNrtmjssBEEYx4c7CddIaLy7azQkeo+CiO40glIpriG0lEQlIZHQEonQiVDgWpEggkTHeTR0iHis/8RsjMneub3b3ew8/smvmN3P2f3vN9/ufLuEGBkZ6awih22WD78ZWhXrngHGAN0NiHowpy2TAYpnQKEKKkPuwR4YB7c6ZkA1GAAnoFbnKVAJZnSvAe1hqgFBPRnytabG3AU8zABLZQP8yICE7gasyWSCHwaUyGRC1KOqnWAnXSKY0Ac2dciATXay77JlgpdTQEoTvK4B0png5knQyrFW2CZkqgkpMAK6QZztuwHbYAlcqLAczmYCzY6YEN/ISIIFMAo+ZG+IZJoOsX8uCDVhizNOWgMymZCLOsGszFOA1xFLZ/6K0jk/QX46OFQdYBrUczHDYBGcy5wB9omUceM0aAar4IGxyralubgIGJJ9ClC1CmPas3tyiHti+3h1qWBAXBgfZIkV9zWoYEAh1fxdBQOuhXFblth2YXylggE7wph2bCsc4irZnYBXSgUDlsEnN64Dx6AfVJHffv4x22frFcyr8Bxwzk4kyW2j9/uVHI6txWEKSZcBVGNgN4/i6fsqMigDaDXvAXP/LHJegl5KR1zETgrjKZf/64stedfBGygHpeAZnLJaQevCIejlji3Cxmfg0uvjc9P/swr4W7cSe4x2FnneYwzrm6HAOkthfjUWiAlhfzfouwlREn5laq9t5Pl7RTJlQLZM0GIKOJmgrQGE+PCaLUrkV0HfMZovRFzE3pG/395YIbnCgdWAfRUzwI0BtGP7qLMB9PPTJtbIuNexBtgmDOqaAdrfBcIqy2SAMcAYYGRkZJSXvgFPu39IZBwxDAAAAABJRU5ErkJggg=={scale="+$scale+"}>"
+!endfunction
+
+IBMEntityColoring(ibmcloudvpcendpoints)
+!define ibmcloudvpcendpoints(e_alias, e_label, e_techn) IBMEntity(e_alias, e_label, e_techn, #232F3E, ibmcloudvpcendpoints, ibmcloudvpcendpoints)
+!define ibmcloudvpcendpoints(e_alias, e_label, e_techn, e_descr) IBMEntity(e_alias, e_label, e_techn, e_descr, #232F3E, ibmcloudvpcendpoints, ibmcloudvpcendpoints)
+!define ibmcloudvpcendpointsParticipant(p_alias, p_label, p_techn) IBMParticipant(p_alias, p_label, p_techn, #232F3E, ibmcloudvpcendpoints, ibmcloudvpcendpoints)
+!define ibmcloudvpcendpointsParticipant(p_alias, p_label, p_techn, p_descr) IBMParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, ibmcloudvpcendpoints, ibmcloudvpcendpoints)

@@ -1,0 +1,13 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $loadbalancerclassic [64x64/16z] xS61400000CXXFdRpkElMXu0001m
+
+!function $loadbalancerclassicIMG($scale=1)
+!return "<img data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAAIGNIUk0AAHomAACAhAAA+gAAAIDoAAB1MAAA6mAAADqYAAAXcJy6UTwAAAAEZ0FNQQAAsY58+1GTAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAAOxAAADsQBlSsOGwAAANFJREFUeNrt2N0JwjAUhuFW3MAri0M4QqdyhzqVIziE4JUzxCN4K6TQaGqeF77b5OTNb9t1AFqm/0IfqeYaN62vAAJaF7Ct8NxJVgABBBBAAAEE/O07IFkBBBAAAFXQ/7DvVEMtrkECCCCAAAK8A7I5RM6RMbKvbCz3yCVyitxKCHgN/hrZVT6pj8gxV8KcLTCtYPDdu8apxBkwrmhrZ9c655/gsPDbPRVsb3ALEEAAAQQQQAABBBBAAAB8JOcbPC3QRrXtuQYJIIAAAggAgEZ5AvRTEk3rOWIQAAAAAElFTkSuQmCC{scale="+$scale+"}>"
+!endfunction
+
+IBMEntityColoring(loadbalancerclassic)
+!define loadbalancerclassic(e_alias, e_label, e_techn) IBMEntity(e_alias, e_label, e_techn, #232F3E, loadbalancerclassic, loadbalancerclassic)
+!define loadbalancerclassic(e_alias, e_label, e_techn, e_descr) IBMEntity(e_alias, e_label, e_techn, e_descr, #232F3E, loadbalancerclassic, loadbalancerclassic)
+!define loadbalancerclassicParticipant(p_alias, p_label, p_techn) IBMParticipant(p_alias, p_label, p_techn, #232F3E, loadbalancerclassic, loadbalancerclassic)
+!define loadbalancerclassicParticipant(p_alias, p_label, p_techn, p_descr) IBMParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, loadbalancerclassic, loadbalancerclassic)

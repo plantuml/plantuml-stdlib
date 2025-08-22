@@ -1,0 +1,13 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $firewall [64x64/16z] xS61400000CXXFdRpkElMXu0001m
+
+!function $firewallIMG($scale=1)
+!return "<img data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAAIGNIUk0AAHomAACAhAAA+gAAAIDoAAB1MAAA6mAAADqYAAAXcJy6UTwAAAAEZ0FNQQAAsY58+1GTAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAAOxAAADsQBlSsOGwAAArlJREFUeNrtm81LVUEYxscSoQ+JVJAiioIgiLCFRbbI0zKCCGrjXdnW3ChhBAW11EWbCMqIIkg3fWxatKqzSFy4sX+hzFZuEjRvyvU5+AqHw8zxne7XzJz3gR94ZuaOd54zc2be16NSIpGoyGoxlB8BEyAChzwZy28QgzGwUI0ByeDnQaenN3UJnOWasEtTNu7x4BV993FuY50BUQBLmz2GVk3ZYeZzwjVVcsZgNQMKJTFADBADxAAxoMjSnQMWM/toxcNxLVYzA+IAbmxcjQF3KaDwVUs0BpZ2a8r+gCkKg7tAu0fh8CdwwyYcFolExZZtrB9crrDFcvDB5QptjsJB5gptDIgCWPIRJxYwKchcoYTDYkD4qtjmA3xUMo71/7nJocyAiSIvgQEwUlQDToMX1a4druqdK7Q9V+wH78C+Ru0CsWN3/zk41cht0KVc4S1QavQ5YIGiqWkKMZulk+CJpnxPvZ8B2yaUmjj4JIn7xrDuD4DV1HUbKIe2C4yCCzkzI63PZEowBhwFD3PqezPXl8EMfS4IAx6DvTn11wznhGT36rZ9BjQj95d3DuhTW3/wyFM/PaTnM+XHwQdwCWxwZsB27m9AuZP4vM80cNKwG1wEd7hLwLXc3wlwhdn2HE3565q6e+Agx4DIwWDH5ph8Hnw0bJMlzjPAtdxffw37ugqe+rYLnKlhXz0+boMdNeyry0cD/tazLx8M+Mlo84+w7ssHA2YZbYYJ6758MGB6h/pndACapJ+t+vLBgK9gLic8H0td5/27zBz1teM5oFnvCZrOG8nvvw2+UYyf1gOwnLpeprJXmXZl6qPCmQGxg7MguXtDmQH8Ultvs2U1RXVpA4dMs8in9wRfgkGwQtdvlT7jU6Y6RW0H6bNaufSe4CNGm+/gPTgGXoMfhnZr9N1vgi9KJBKJDNoELz954DligjQAAAAASUVORK5CYII={scale="+$scale+"}>"
+!endfunction
+
+IBMEntityColoring(firewall)
+!define firewall(e_alias, e_label, e_techn) IBMEntity(e_alias, e_label, e_techn, #232F3E, firewall, firewall)
+!define firewall(e_alias, e_label, e_techn, e_descr) IBMEntity(e_alias, e_label, e_techn, e_descr, #232F3E, firewall, firewall)
+!define firewallParticipant(p_alias, p_label, p_techn) IBMParticipant(p_alias, p_label, p_techn, #232F3E, firewall, firewall)
+!define firewallParticipant(p_alias, p_label, p_techn, p_descr) IBMParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, firewall, firewall)

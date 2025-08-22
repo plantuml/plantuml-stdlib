@@ -1,0 +1,13 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $stockholm [64x64/16z] xS61400000CXXFdRpkElMXu0001m
+
+!function $stockholmIMG($scale=1)
+!return "<img data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAAIGNIUk0AAHomAACAhAAA+gAAAIDoAAB1MAAA6mAAADqYAAAXcJy6UTwAAAAEZ0FNQQAAsY58+1GTAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAAOxAAADsQBlSsOGwAAAt1JREFUeNrtmk1IVUEUx+eaEdKqTR+0yFoUmEVtgjIUaZOLFkZiBS6CCAQXyUsIMghKbeeiVkKbFmGEbp+rpxQkvFZ9EESLMogw0J34xNL+h3usYereO77ns3vPzIEf786ci+C5Z/5z5kMpb95sLM+IsxqLd1ojnkXYFot/vgD2gnpwFbwAn1wJwGdQC86ArWAAPHIpA8gmOQBfQJe0IVBr+d6CVHWvUY6bbQZslxoAGw24y2N/HwthwaUMuA76Wf3JboE5MOyKBgTSNSBImP7IToJt/LwEpiVVhUkZcJSnwClmgfucXQSJWxQ5Xwf4APhKMNlOaDMCCWBRcgaYIrcLlLR2ifvEiGJcBhwCjaAHjHDfNfCQfR8ka8BBMAa+glGtf5T7xvgdcZUgpXMzqGMfbX3NGO/Qomg/WAWL4DlokzQESglCN6MFJfNV4b8CUFzHF81L1QCJJf2EL4TKCIBfDLleCrcltH0GZKjeCcpdDGXdaOf7uPb807UMaAE7mRYXh0AH+M50uBYASvl2MM6cV8ZhkLQAmBVfM+9fPGP+GgbSRfAC/94x+gq2Acgb838+Y/XAATCvKf88921oBuh7hv/baHn+3uh7Bc5qHzCQrAEfwWlwb6NKYRsrpmxI0HF+/2YGIG12m38pCGtbdlUNQJo0QDc6ya5zeTE0zarvnAaY03jgl8M+AJsfgKS9RJv2RAVtnwE+AD4A3rx5s7Coy9I50AReRvhvgFMJ/qYK/Dle1lbL36vCCx6vzVJ4B7ivwqswZIfBTTDLbdpfGwJXLP0NKfZTEH7XyXQdvluFBwgBLyl/gEEVXpFfuw9Ed4OWVXhrfIX/WNb8SxyUB2YAzoG34LH6cwNkD7gEjnD7HXgCvmXET1/8IjjGH/QNeKrCM4JYy/E4VTFjOMnfV4E/V2V/L3905TUgRgNoK3kgZoyplPtXIzRs3RpwWYUXJqPGYJr9u0FnORrgjP0CyBAHk+W11TYAAAAASUVORK5CYII={scale="+$scale+"}>"
+!endfunction
+
+IBMEntityColoring(stockholm)
+!define stockholm(e_alias, e_label, e_techn) IBMEntity(e_alias, e_label, e_techn, #232F3E, stockholm, stockholm)
+!define stockholm(e_alias, e_label, e_techn, e_descr) IBMEntity(e_alias, e_label, e_techn, e_descr, #232F3E, stockholm, stockholm)
+!define stockholmParticipant(p_alias, p_label, p_techn) IBMParticipant(p_alias, p_label, p_techn, #232F3E, stockholm, stockholm)
+!define stockholmParticipant(p_alias, p_label, p_techn, p_descr) IBMParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, stockholm, stockholm)

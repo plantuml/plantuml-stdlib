@@ -1,0 +1,13 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $airconditioner [64x64/16z] xS61400000CXXFdRpkElMXu0001m
+
+!function $airconditionerIMG($scale=1)
+!return "<img data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAAIGNIUk0AAHomAACAhAAA+gAAAIDoAAB1MAAA6mAAADqYAAAXcJy6UTwAAAAEZ0FNQQAAsY58+1GTAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAAOxAAADsQBlSsOGwAAAmxJREFUeNrtmjsvREEUx69lvTqtjm5F0Ag9Eo9WgYRC4xMQFIgE30BCoaBBdCTeoSMUHlGgQEch0SlI8B85VzaCveesmezeeyb5xSN+Zud/7z0zZ/G8iI8c+tgNeiO29jmwEKMvukBVhBZfRWv28pK+eQRaIhLAuv9JLOo1QAPQADSAaI+8LH/9Qc4vn/u93gEhvQMW/rq6WgM0AA0g7RoQhi5Rd4F07oC0q6zWAA1AA9BdQHcB3QW0BmgAGoDuAroL6C6QyTXgHpRG6MKX0pq/AjB/F6wAiQgsPkFrPUoOYB7cgeWQh5CgNd7Rmr/+P8CMarACysAFeArZ4ktAJbgF7eDsewBmFIMeUAvKQxbADTimK//s6dAhHubRmP7h8clKT3ISbAN9Hv/Paq3kxR3NF8jjBmB+vhOcgleBZyrvC8PLFc4X2OMGMA7qwLDAqxd6dTY9TgDNYAhMgk2BNwU2mN6gcL7AHieACXAIRplXw/dGhN6oTS9oAHE6KS6CN8aL8b0lgVcjnI/lcWsAdyvKmnY41XilitpJFdZz4J248Di/3PTP/aAQ7Ai8IrDN9AaE8wX2OAFcg3yqsGY/vxR450LvzJaXy3xk9kEjMRMGj1sE36iiV1PKWe9J3xV+J6Suq/lSetwArJ/Nw9wLZKTH7QX8M/aWgzN9C3kTzPlYnsteQOIdgDGbXib3Ak487QWYZ/oOh72A78VsepwX9UBn+gLm2fw/vF1bHieAK2owBinlK4feiS2P2wvsgSbQAGYFHvdMn+zN2vAkvcAivesSF3iSM30686X0uHeAGY/0fK0JvVXH8615On4fH6ID1+C12CsBAAAAAElFTkSuQmCC{scale="+$scale+"}>"
+!endfunction
+
+IBMEntityColoring(airconditioner)
+!define airconditioner(e_alias, e_label, e_techn) IBMEntity(e_alias, e_label, e_techn, #232F3E, airconditioner, airconditioner)
+!define airconditioner(e_alias, e_label, e_techn, e_descr) IBMEntity(e_alias, e_label, e_techn, e_descr, #232F3E, airconditioner, airconditioner)
+!define airconditionerParticipant(p_alias, p_label, p_techn) IBMParticipant(p_alias, p_label, p_techn, #232F3E, airconditioner, airconditioner)
+!define airconditionerParticipant(p_alias, p_label, p_techn, p_descr) IBMParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, airconditioner, airconditioner)

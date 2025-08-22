@@ -1,0 +1,13 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $db2database [64x64/16z] xS61400000CXXFdRpkElMXu0001m
+
+!function $db2databaseIMG($scale=1)
+!return "<img data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAAIGNIUk0AAHomAACAhAAA+gAAAIDoAAB1MAAA6mAAADqYAAAXcJy6UTwAAAAEZ0FNQQAAsY58+1GTAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAAOxAAADsQBlSsOGwAAArhJREFUeNrtm1+ITFEcx6/dpcWLVbsUdgnlv/DiSSjKm2Qj4Yny7JWH3ezLJt6UIiIPiJJC+Z8nL2SVP9HGGmrYMl4skeVzmu/U7WZmZ3bn3Hu3+/vWp/bO7L1z7vec8zv3O50JApPJZDJlVxM8XXcGrIBFMA9aYTbMhGZohDmRc3LwB35CHj7CILyD1/AcPqfVAHezG2AjrINpnoz9Bo/gPjyQKYkZ4HpzL+yDhQmN4PdwAU7Cp7gMaIEe2A8TUzKVf8MpOAwFnwasgWuazyMNVTdv+6Bfc/eD5rab439hIHJOh9rTrNHVDm2wAFaqnow0tVzd2ApPfBjgitnTMo34AbfgjuboS089vUQ1ZhNsgcllzF+t4llXAy7CjshrL+A4XILvMQ/7qWrPQVgaec+1Z2c1F2mq4QM3R4674YiWriTkDD8D5zT3uyq0tawaaix+YQ3BcEqfb1qq/cemMXxIL+yCY3BVhqRlCgRxGBCoOp/XOnwD7qkIvkqwCMZqQElToFOEl8FnWga/xLQMxmrAL5hU5j3X0LUiDlVqS92KYPCfHutWDyelfrWhI4kRkNfS06Uh6pae9er16Z5u+Cs8hodwW0+aqagBfeKojl3UXayeaY9QGnWtquSlNX1Qfw+rXoQZUGHNpakGVFLOR2N9qCHIuMwAM2D0OpQSAxsjQSi2ItijZ3EXhy9nNQssh7NwAm7C3Sxnge0inAXG+pWY+3p9vmUBywKWBSwLWBawJ0EzwAywLGBZwLKAZQHLApYFLAtYFrAsYE+CZoAZkIQBhXGUBQq1nFytVsGy0LHbF7wtKO4RfBMUd2vGnQX2BMUtOp2R967DlWouUq+NkkMpygLeNko6xb1VttYs4HWrbEmZ3iwd1iw4ALthbkI3/hZOqw7kR3MB+8GEp4aOm5/MmEwmkynL+gey/v02F3/iUgAAAABJRU5ErkJggg=={scale="+$scale+"}>"
+!endfunction
+
+IBMEntityColoring(db2database)
+!define db2database(e_alias, e_label, e_techn) IBMEntity(e_alias, e_label, e_techn, #232F3E, db2database, db2database)
+!define db2database(e_alias, e_label, e_techn, e_descr) IBMEntity(e_alias, e_label, e_techn, e_descr, #232F3E, db2database, db2database)
+!define db2databaseParticipant(p_alias, p_label, p_techn) IBMParticipant(p_alias, p_label, p_techn, #232F3E, db2database, db2database)
+!define db2databaseParticipant(p_alias, p_label, p_techn, p_descr) IBMParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, db2database, db2database)

@@ -1,0 +1,13 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $logoglassdoor [64x64/16z] xS61400000CXXFdRpkElMXu0001m
+
+!function $logoglassdoorIMG($scale=1)
+!return "<img data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAAIGNIUk0AAHomAACAhAAA+gAAAIDoAAB1MAAA6mAAADqYAAAXcJy6UTwAAAAEZ0FNQQAAsY58+1GTAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAAOxAAADsQBlSsOGwAAAWtJREFUeNrtmrFKAzEch2PtJDqKOAgFfQJRUKi4+wS6udVBhy73EF1cCsXRZ1BwcLSzLyCi4CTiJLqJ/oLX8TJcrklqvh98cBBI//l6yR3H3xhCCCGE5Jq5BufaFKdiT6w3PLfNj3gUd2Io7lMRMC8Goj+FRbtknItCfPsW75uROAu4+MkftytWxLXPRC3PQg5EL+IW7pU1RBNQJHCOFbEELIluAgK6ZS210vb44TXHGfIp3gJKsGfBR2gBC46xK3E0C+8BLZN5EICAzNOeoVr3RadizL4Nvv93ASfisGJsu64AzgAEIAABCEAAAhCAAAQgAAEIQAACEIAABCAAAVnF56vwkziuGHvOQYD9DH3JFkAAAhCQ61NgQ9wGrHXZMfYVQ8CrcfcJhYptlHyJsQVsU9I4gbt4bGo2SDVxBgwSEOBVg+/t+yBWxVakxV+Yv57haAJsbsSi2DHhm6X75XXtZN8uTwghhJB88wvrty6pL5dxSQAAAABJRU5ErkJggg=={scale="+$scale+"}>"
+!endfunction
+
+IBMEntityColoring(logoglassdoor)
+!define logoglassdoor(e_alias, e_label, e_techn) IBMEntity(e_alias, e_label, e_techn, #232F3E, logoglassdoor, logoglassdoor)
+!define logoglassdoor(e_alias, e_label, e_techn, e_descr) IBMEntity(e_alias, e_label, e_techn, e_descr, #232F3E, logoglassdoor, logoglassdoor)
+!define logoglassdoorParticipant(p_alias, p_label, p_techn) IBMParticipant(p_alias, p_label, p_techn, #232F3E, logoglassdoor, logoglassdoor)
+!define logoglassdoorParticipant(p_alias, p_label, p_techn, p_descr) IBMParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, logoglassdoor, logoglassdoor)

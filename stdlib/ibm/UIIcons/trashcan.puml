@@ -1,0 +1,13 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $trashcan [64x64/16z] xS61400000CXXFdRpkElMXu0001m
+
+!function $trashcanIMG($scale=1)
+!return "<img data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAAIGNIUk0AAHomAACAhAAA+gAAAIDoAAB1MAAA6mAAADqYAAAXcJy6UTwAAAAEZ0FNQQAAsY58+1GTAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAAOxAAADsQBlSsOGwAAAM9JREFUeNrt2rENwjAQBdAYaOloYC12YSQmYIHsgpIuBQvAFRS0IcrFkt+XfoGEFPvhxJZI14lIyykJ13jXPMZd6ysAgKeAiDgHrLuPVz1H2yAAz4DFZ/uy8RwWjcctAAAAAAAAGs6hwn069ZzhFgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA0l43+BsvL3rQAAAAAAAAAg7xwwRC8/n2t6l3jIWAF9xT9onwFwi04VTn76jm1W9n9c6BW9R8/RU/S48cTH6CN6jT47EZEZ+QB3bBJCMQz0JAAAAABJRU5ErkJggg=={scale="+$scale+"}>"
+!endfunction
+
+IBMEntityColoring(trashcan)
+!define trashcan(e_alias, e_label, e_techn) IBMEntity(e_alias, e_label, e_techn, #232F3E, trashcan, trashcan)
+!define trashcan(e_alias, e_label, e_techn, e_descr) IBMEntity(e_alias, e_label, e_techn, e_descr, #232F3E, trashcan, trashcan)
+!define trashcanParticipant(p_alias, p_label, p_techn) IBMParticipant(p_alias, p_label, p_techn, #232F3E, trashcan, trashcan)
+!define trashcanParticipant(p_alias, p_label, p_techn, p_descr) IBMParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, trashcan, trashcan)

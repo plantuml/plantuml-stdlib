@@ -1,0 +1,13 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $macoption [64x64/16z] xS61400000CXXFdRpkElMXu0001m
+
+!function $macoptionIMG($scale=1)
+!return "<img data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAAIGNIUk0AAHomAACAhAAA+gAAAIDoAAB1MAAA6mAAADqYAAAXcJy6UTwAAAAEZ0FNQQAAsY58+1GTAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAAOxAAADsQBlSsOGwAAAehJREFUeNrtms8rRFEUx9+4RbLBxo/YmJ0iO1FWYmE1lixtbCj5P0yKhRUbpWxkpZQdKUt7G4myIEVEZnxP3VenaRbTNO+dk3M+9V2c2+v9OJ137r3fbpI4juM4juM4Nik0cE21ifuuQ7tNvlM1z29syyixGxneu6Vk9ZJFaNFyAojN/9IDGqULuod62dg0dK05AaGF9/qBuqEZNkbxsaVfYAf6ZnEJGrFSAcR7bIATLMGkM0tNsFwzl69APVYqgHiOza8Y43boDbq0NA1u1cRrMRFmEnAO3bJ4EFqy8gukfMZZIIVmgz1LK8Ej6JHF49C8pQr4hTqgWTbWBx1aqYAklvwHi+egMSsVQHxB/dAk23t0QqdWKoDYjr9DyjI0YKUCiNfYAEfZM2m/cGGlAuotjFbj9tlEBRAPcQocjjH1gSfoxkoFpJskjgrfMM8XOIHuWKzCNww5Pou2yBVogY0NQftWKoA4gF5YTNvmKSsVQKjzDSWakCrfMAg8U5VvKDUNqfENg1AC1PiGkgsRFb6hZAJU+IYhkUXcN5Rei4v7htIVIO4bajjFIeobBgUJEPUNtZzjEfMNg5IEiPmGmk5yifiGhUQXV3GJnNs3ajvLV7a0FK5HrW9oLgGVOCM4juM4juM4Tsb8Afa1Ungvj0CjAAAAAElFTkSuQmCC{scale="+$scale+"}>"
+!endfunction
+
+IBMEntityColoring(macoption)
+!define macoption(e_alias, e_label, e_techn) IBMEntity(e_alias, e_label, e_techn, #232F3E, macoption, macoption)
+!define macoption(e_alias, e_label, e_techn, e_descr) IBMEntity(e_alias, e_label, e_techn, e_descr, #232F3E, macoption, macoption)
+!define macoptionParticipant(p_alias, p_label, p_techn) IBMParticipant(p_alias, p_label, p_techn, #232F3E, macoption, macoption)
+!define macoptionParticipant(p_alias, p_label, p_techn, p_descr) IBMParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, macoption, macoption)

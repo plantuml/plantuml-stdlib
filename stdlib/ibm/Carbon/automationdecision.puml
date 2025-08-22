@@ -1,0 +1,13 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $automationdecision [64x64/16z] xS61400000CXXFdRpkElMXu0001m
+
+!function $automationdecisionIMG($scale=1)
+!return "<img data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAAIGNIUk0AAHomAACAhAAA+gAAAIDoAAB1MAAA6mAAADqYAAAXcJy6UTwAAAAEZ0FNQQAAsY58+1GTAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAAOxAAADsQBlSsOGwAAAihJREFUeNrtmrFOwzAQhh0cJCRGHoA3YGSughh4BVQW3oC56RZmXgBGeIu2AxsvUYl3QIiNs3CEFdzaOBfnzs4vnapGVZz/q+3cXSLEpEmTElXl8yOZsPkVxCHEOkcAW21+4YIgE14Cax8IMvF9wAkhdQBOCCXSIDcQt8RBfGkISnV78ADp5NcQZxynR4l4rjeIK6I+G4gZxL3572POAMpq9NT/Yz4HAHvNpw7AaT5lAJWPeexNkNq9/8JVB2ACOCYKIUo1qNbaHOLUp/pKLQ9oN5qmk2HVOQAwzS+N46wgSGTzGw215rIcJKJ5lhAksnl2EOQA5llBkAOZpwBBZYNbDACh5m0QSv09hnmUrnBf82NBQOkKY5kfC0KvrrBZSi4RL2qjL4YMBBlaRyNcFAkI3VT4bmDztnT5EuIzwsY4aFeYrboz4AHixEYKWU2kmWaON7ONJ0N3T2bmd44n+9xCuJt35QHYEMiZ98kEsSDENq9S4Uef8Xxqgb4QYptvU+FXiCesajAUwhjmTQio/YD/QhjT/GAdIV8ILMyHAPCBwMZ8KIB9EFiZt6XCIQXNwjjGyrxSgZhwCG7m+yyB7nJQT2Lfxc/LUqyEVQ5/6KCkKiYAQdD8Svw+tB10CSjN9eczEQDeXeFU3xCx3aXq3AB4QUgdgBMCJoBzEeexV6isXWEsAC8QRxynRyHy0M4apcjZfA4AnNVpkbP51FNhdqX5KMXQpEmZ6xsXGrNcTywo4AAAAABJRU5ErkJggg=={scale="+$scale+"}>"
+!endfunction
+
+IBMEntityColoring(automationdecision)
+!define automationdecision(e_alias, e_label, e_techn) IBMEntity(e_alias, e_label, e_techn, #232F3E, automationdecision, automationdecision)
+!define automationdecision(e_alias, e_label, e_techn, e_descr) IBMEntity(e_alias, e_label, e_techn, e_descr, #232F3E, automationdecision, automationdecision)
+!define automationdecisionParticipant(p_alias, p_label, p_techn) IBMParticipant(p_alias, p_label, p_techn, #232F3E, automationdecision, automationdecision)
+!define automationdecisionParticipant(p_alias, p_label, p_techn, p_descr) IBMParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, automationdecision, automationdecision)

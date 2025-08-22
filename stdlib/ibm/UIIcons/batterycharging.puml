@@ -1,0 +1,13 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $batterycharging [64x64/16z] xS61400000CXXFdRpkElMXu0001m
+
+!function $batterychargingIMG($scale=1)
+!return "<img data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAAIGNIUk0AAHomAACAhAAA+gAAAIDoAAB1MAAA6mAAADqYAAAXcJy6UTwAAAAEZ0FNQQAAsY58+1GTAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAAOxAAADsQBlSsOGwAAAo9JREFUeNrtmU9IVEEcx5+tdZDEJbwYISRJkAdvHd0uRYfooJksKXgJD4LSZUMK/AOFeQmiID1UuKjQQS/tMXAFPehJunYQ0xUMpBIitpXnd9hZeEy7b+e9nZl9r/194HNwfM68+b15v9+b0bIIgiAIgiAIgiAIgqg16iSvuwRn4A3YoniMJvjT5fd2mb8/gKswAfe8BuCM5OS3YdzH5MvRCXfgwwr6aOH3ts3vVXkA2JO/oGH1sT5XYBTOcc9V2N+MjgDENEyejbsELzva2Cq4WWG/nu+1XuKaiz7zhhvP4C2h7SVM+cghtsu9KlkBqrkHHwtthSRmnHrD43XA98JT/Qb7YE7RGLaX6mByBUR50jvvaPsDe+ChhvGkqoOpALBxkrBdaB+GW5rHdq0OpgIwDu8IbW/hO0Pjx6qZA+7Cp0LbBhzV/DUrVR10r4CrcF4YhyWnXpgNwl5AZwAa4TL/1i+Q5ZPPBGUzpCsAbFl+gNeE9kdwPUi7QV05YAx2F2l/w/XKc/gkLCvgNpxS2N8mnAjLK9AGF2BEUX/H8AH8G4YANPAvPZVb5xH4NSw54Dc/4PD7ofJZWDkfeSINbRn0skeYFya/C4fC/h0gyyxsdfx8Agfgj1oIwCC8L7S9gGv/63mAkyvwlYKSZ0tckwnaCjjLy2WjoZKXDloA2FO+bqjkHVkux23VeAW6rH/PBHWUPKkjMdMBYCUvqbnkeTq1Nv0KVLXk+V0BGeFExfb5JOJFSt60S8mzfczH8zmDzApIKwp2imd+nbu8tI4AJHgmrZRfsJ+7z0teTuHkXbN9KSKSN75o5c/Zm4Xa7cZkifYv8DX8LlEqZbP9Jyv//4U9iyAIgiAIgiAIgiAIogynfzhyqabqYa4AAAAASUVORK5CYII={scale="+$scale+"}>"
+!endfunction
+
+IBMEntityColoring(batterycharging)
+!define batterycharging(e_alias, e_label, e_techn) IBMEntity(e_alias, e_label, e_techn, #232F3E, batterycharging, batterycharging)
+!define batterycharging(e_alias, e_label, e_techn, e_descr) IBMEntity(e_alias, e_label, e_techn, e_descr, #232F3E, batterycharging, batterycharging)
+!define batterychargingParticipant(p_alias, p_label, p_techn) IBMParticipant(p_alias, p_label, p_techn, #232F3E, batterycharging, batterycharging)
+!define batterychargingParticipant(p_alias, p_label, p_techn, p_descr) IBMParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, batterycharging, batterycharging)

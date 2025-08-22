@@ -1,0 +1,13 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $enterprise [64x64/16z] xS61400000CXXFdRpkElMXu0001m
+
+!function $enterpriseIMG($scale=1)
+!return "<img data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAAIGNIUk0AAHomAACAhAAA+gAAAIDoAAB1MAAA6mAAADqYAAAXcJy6UTwAAAAEZ0FNQQAAsY58+1GTAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAAOxAAADsQBlSsOGwAAArtJREFUeNrtmc9LVUEUx8eT1MJFhIuCoo1uWgpqQVS07Q+otW1yFygoLnUh+MBWLYqofX9ALSKIdBdBuPGtCgWRzJWgCxWk74UzIBceb+bOjzMz3i984F54vHfvfL8zc84bpVq1aiWoKfBc8gEGBX/7OnjN15/BX4mHIMEBmOtxfSEGoHJ/GrxhXoAbF2kAtOMdRiwFJOz+HiOWAhJ2X9Wu50ofgLr7WmIpoATcF00BJeC+aAooEffFUkCJuC+WgkuRBmAJjIOn4KjPZzfAS/AETIB/YCfnBJi6rzUKLoMh8BCsg3uhHm4gwgCsghnwCxwYfH4EnIA7fN8Fa6G6Rorkftfw5XvpLNd2WK/mjw3jX2kSfAebfH8bvMtxDbCd+1o/wAPwlRfAU7CV4y5gs/LXtQs+MdWOcAV8ySkBTd3vVRdM83dmMwAmVZ+pglaHlLD7UVJAibsfPAUUyP23ntwPngLKwP2gKaBA7of4jz9ICnzUAVWjssjODINn4DDQ7rLhuy4gDy+/zl3bEHdxIwGLK+8pcO0GP/DLn+/cqkH4HXAQroIx8ArMSifgTMXXAQ+0lxS4JuAuT4Ftvr8FHnFDE7rN/sPTwSkFru3wFndr+7xAvQc/I6Tg/FrQcak5XHcB3fHdBx+5i4slLzsCOcYw5L4fZUdwGYCQVV+06pAydd9bCsjR/RUlL6cUkIP7vvp90RRQpnPfWwooc/edU2BbB7j80xurLrA6U6QC3NdqdKZo0wvYnvHFVqMzRbJ0v5voyzfuVk2boSZnfLHV6EyRCpj7Wo3OFE12gZRX/rqszxSpEPcb1wVkOPc7Kj8ZVYdUoPtWKaBC3TdOARXqvnEKqGD3jVJABbtvlAIq3P2+KaDC3e+bgno3uAwWEu74XKTPFKs0zPcqhW+Ca+BYladj7g2+scGtWrVS6j+phdUshe477AAAAABJRU5ErkJggg=={scale="+$scale+"}>"
+!endfunction
+
+IBMEntityColoring(enterprise)
+!define enterprise(e_alias, e_label, e_techn) IBMEntity(e_alias, e_label, e_techn, #232F3E, enterprise, enterprise)
+!define enterprise(e_alias, e_label, e_techn, e_descr) IBMEntity(e_alias, e_label, e_techn, e_descr, #232F3E, enterprise, enterprise)
+!define enterpriseParticipant(p_alias, p_label, p_techn) IBMParticipant(p_alias, p_label, p_techn, #232F3E, enterprise, enterprise)
+!define enterpriseParticipant(p_alias, p_label, p_techn, p_descr) IBMParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, enterprise, enterprise)

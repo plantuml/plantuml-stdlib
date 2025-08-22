@@ -1,0 +1,13 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $chat [64x64/16z] xS61400000CXXFdRpkElMXu0001m
+
+!function $chatIMG($scale=1)
+!return "<img data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAAIGNIUk0AAHomAACAhAAA+gAAAIDoAAB1MAAA6mAAADqYAAAXcJy6UTwAAAAEZ0FNQQAAsY58+1GTAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAAOxAAADsQBlSsOGwAAAmVJREFUeNrtm00oRFEUx6/PFRaykGKhLCYbC1nYyIKahbViK0akWFAkNhIlKSJZsLOxJSTN2kKJnSQk+Vpgg3z8b3PUc7vMM2aee93zr9/ijpnXPf8579173DNCsFgsFovFclVpPt5TDlpAPSgBOYbH9ABOwAZYAAeJGpAFJkEEZFj6Bb+AOdANnnVv+CqwbLAGGkG6xRku514FqsEyGeLLgCkK/r+oFOSDVfUPmV/c8xHltVPQB7bBheHBFoJaMAaKPa/LmGbVZ4IuA/opZT50BirADj1gTJec4z5YAs0gz3M7PIF19R5RVaeMe8GthWl/S3P/LjatASXKOGrxvR+NE5vWgFxlfG6xAedxYrN6iUvaOskGuKzMJFzjzYJ6hjOADWADUvcMSOMMYAPYADaADWAD2ACuBUzY23MGsAFsANcCnAFsABvwKwPulXGRxfEVxYlNa8CJMq6x2ICaOLFpDdhUxuMidrRsm/Jp7t/Fpj0dlqfBbR5z5Olqk4gdi18L80+I5fF4A1gRn4/HZXNEK7jys4ZPg44UT9TP/iEsNE0NCWoGdPpdBXrAlgGbtIkkXWuLYvK9DD6R+zNC01cTkNpB6JfXeKEYwhTTj7bCz5Qysq0k6DY5+QAbTvCzSWuT+0vJJq0uz/gOlIFLF3aCIUp/r0ZSEbypBsgHX5ZnfEQZ4UQtECa8ko1Ojy4YoFv2orShcaIaVJe9VxHr8XWiHNYte4tg1xUDhpSCS5atA678Q0S37I2KgHqSTTBAXfaORex3CoHIhB9C3IBKUEBjWbLuuWTAIZgnI2T9MShYLBYrIL0D+sZjxPczCAYAAAAASUVORK5CYII={scale="+$scale+"}>"
+!endfunction
+
+IBMEntityColoring(chat)
+!define chat(e_alias, e_label, e_techn) IBMEntity(e_alias, e_label, e_techn, #232F3E, chat, chat)
+!define chat(e_alias, e_label, e_techn, e_descr) IBMEntity(e_alias, e_label, e_techn, e_descr, #232F3E, chat, chat)
+!define chatParticipant(p_alias, p_label, p_techn) IBMParticipant(p_alias, p_label, p_techn, #232F3E, chat, chat)
+!define chatParticipant(p_alias, p_label, p_techn, p_descr) IBMParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, chat, chat)

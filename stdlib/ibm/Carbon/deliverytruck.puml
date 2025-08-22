@@ -1,0 +1,13 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $deliverytruck [64x64/16z] xS61400000CXXFdRpkElMXu0001m
+
+!function $deliverytruckIMG($scale=1)
+!return "<img data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAAIGNIUk0AAHomAACAhAAA+gAAAIDoAAB1MAAA6mAAADqYAAAXcJy6UTwAAAAEZ0FNQQAAsY58+1GTAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAAOxAAADsQBlSsOGwAAAuRJREFUeNrtmz1oFEEUxydrtLCIECGChYVaJCInGLSQFNlKhBQpBE2CgZjCQgRD/EAFuwgWURtFQ5SgJEUQEjBwYGEabZLKL0xhYScRElFQNIr4f+xbWI7cZW53dm5v5/3hB5vsJPP23bs3783cKSUSiUQikbNqsDTPKXA6Y8/+CDzxLE3WCwoZeniypY8uGi1OugCOZcQBxTD6PddzgDjAdQc01nDuecvz+RIBGYsAX3JAHUXASXAmYeGxUK+rwA7wAOzUfNBC3iJghKumTvBZo8JS61R8xQysCrFWgXYwAG5oPHwuc8Ad8Anczuuq4G2Q+DrABfDbtVJ4K7gJXoAZF3uBS5z1z7tYB+wCF8EYeJujXkF7FaDQ/wWuu1gJUtI7waG/UmPbfNs5wONl7wO450ovEHXAABc+Q+Cvaw5o4pL3GXjuYjd4mZuePQmzb6FMBjfRDSZdFfxKDjgIVsGXhJO8qedVIM19+6KB/+GnmQOclck9wfksdHcSATWMAL8eHSBHY+IAcYA4QFaBKnQYdIO9/PNHMKtqf+oT2y5dB7SAh6ALfAev+fdHwRUwBwYN9BLVKrFdOg6gLvEl2M57BpPgD9/brIIPG90Cr1Swo7Rs6eGN2BXmADr1KXf2Nw6awREwEZlE8fUE32vmsbZkxC4v0gnuA20l9w9xeA2DpQrGLPGYLv6btGXMrtABj1VwBDZd4gRKLN/AlIZRUzy224IDjNkV5oCf4Dh4qoKzgHfgKzuDrtc0JlrjsYMcelGV2ymKq6R2kT2LpUmQMugB0M/hstvgK5aFnaKGEnsm11sFKBLuMyTaKD0Ltmh4m8bsB3fBtZQfJo5dtNV/tdpKkIqJbSr4rO9G6uWxsxZezTh2zcQphRe5mBgFrRXGtfKYufC9lbKM2bVJYzI6Iu8B57iYeA/+RQqOfl49VjnT/rD0njZil+73BcqVnJQ0mzJYCmvbVe0XJnLXDIlEIpFI5LD+A+mUsKf/6Xu0AAAAAElFTkSuQmCC{scale="+$scale+"}>"
+!endfunction
+
+IBMEntityColoring(deliverytruck)
+!define deliverytruck(e_alias, e_label, e_techn) IBMEntity(e_alias, e_label, e_techn, #232F3E, deliverytruck, deliverytruck)
+!define deliverytruck(e_alias, e_label, e_techn, e_descr) IBMEntity(e_alias, e_label, e_techn, e_descr, #232F3E, deliverytruck, deliverytruck)
+!define deliverytruckParticipant(p_alias, p_label, p_techn) IBMParticipant(p_alias, p_label, p_techn, #232F3E, deliverytruck, deliverytruck)
+!define deliverytruckParticipant(p_alias, p_label, p_techn, p_descr) IBMParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, deliverytruck, deliverytruck)

@@ -1,0 +1,13 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $logoinvision [64x64/16z] xS61400000CXXFdRpkElMXu0001m
+
+!function $logoinvisionIMG($scale=1)
+!return "<img data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAAIGNIUk0AAHomAACAhAAA+gAAAIDoAAB1MAAA6mAAADqYAAAXcJy6UTwAAAAEZ0FNQQAAsY58+1GTAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAAOxAAADsQBlSsOGwAAAvVJREFUeNrtmduLTXEUx/cYxqXIXcwg5JJ4OMwDxZjyhlLjD1Dy4NI0RfLgSV6QUMglMok8esBEag5jJh6ESW65zNTQ8OCF5H6O78o69Wu1fqet9ml+/Na3Pp2z1/61O7/v/q31W3ufJDGZTCaTyRSrqlKMKf7PcxwU+wowA8wAM8AMMAPMADMgXg2u4LXbwHbQD9aAI2BMLAY8B03gGx9f4M/zsaTARWfyJV2NqQYMV2JjYzJgA5gsYrtiKoITQDdoBe/BWrA8tl2ATNgR8zbo01vwwnOuFsx2jp+BR2AkWMymBmvAStDuOVfFqUAT2ANOesYdBi2gk1fPXedcNdgEDoKa0Az4zD/ap/nO3bteZhzViRNgKyiIc7/AMf48HtoucBN8L3N+hdMg9XrGjAL3wWZl8q5OlUmhAVsBX8F6/v4Y3BPnG/iTlu5ZZ9wBkf/bwDBeCaM5pT6IaxW4zW4JyYB1TMJG+AyYwZD2ijFPuQBeAXM4RnUjx88TrnpDboTy4niu0hSROpRCec6ZPGkSN1VSQ0M14CXo89x9WdC6RGwZWKKMnaLEZoZqQHuZAujqIfgoYk2eaz75lwzIpzSgw9NHaLomjqkfWBSiAUXeDuWdqlPG3hLH48ECz3uFVyK2NMsnyywNoCr+LsXdLyhNU0Oi/4envUNYHerjcNrl/0DZ2xs912xTYqtCNaBLidUrsd1KrNHTXN0WMUqnhfydusFm3nmCMKBHiU0Vx4fA5ZT5/1ppr+udVKEu8igTxNOglsP93OP3cefXqozx5f8Pz6og3QCnwZDkz5vnIAyYB+6IWI4bmVIl3wn2pcz/OjamKLZEaqXfcDFtVlbZgKXAFsXQLzz5an6UnZgy/0njPAWPngN+cue4P6QiSPl5CcxSJphngzpT5n9JZ3iiMtU2ci2pqUTeag3O34pee30C08CIDMylrbObH5EpraZnNcdKvROszfh6OSZz2b/DZoAZYAaYAWaAGWAGmAEmk8lkMplMsek31MeDQFP9fjcAAAAASUVORK5CYII={scale="+$scale+"}>"
+!endfunction
+
+IBMEntityColoring(logoinvision)
+!define logoinvision(e_alias, e_label, e_techn) IBMEntity(e_alias, e_label, e_techn, #232F3E, logoinvision, logoinvision)
+!define logoinvision(e_alias, e_label, e_techn, e_descr) IBMEntity(e_alias, e_label, e_techn, e_descr, #232F3E, logoinvision, logoinvision)
+!define logoinvisionParticipant(p_alias, p_label, p_techn) IBMParticipant(p_alias, p_label, p_techn, #232F3E, logoinvision, logoinvision)
+!define logoinvisionParticipant(p_alias, p_label, p_techn, p_descr) IBMParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, logoinvision, logoinvision)

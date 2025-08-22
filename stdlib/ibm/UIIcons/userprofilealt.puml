@@ -1,0 +1,13 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $userprofilealt [64x64/16z] xS61400000CXXFdRpkElMXu0001m
+
+!function $userprofilealtIMG($scale=1)
+!return "<img data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAAIGNIUk0AAHomAACAhAAA+gAAAIDoAAB1MAAA6mAAADqYAAAXcJy6UTwAAAAEZ0FNQQAAsY58+1GTAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAAOxAAADsQBlSsOGwAAAqBJREFUeNrtms9rE0EUxzdpFDHWQxGRYnOIhxx6iCcPXoIH9SA9FVqwFw+hLcQiIti/obmIP1APgie1FDwVbWkF1z8iiAcvaWokGi+CCP5Yv0NeYBniTmd3087svgcfyG7mx843b2bem6zjsKXbMhHqToIquAQKdK8JtsAT0EiqAIfAHbAIRv5T5g94DG6CXyYLMKJZ/jDYALMgG1BOfHcOnAerJEgiBLhLg9+rFcEYeG2qADnNOb8o3dsBy+AtTacLYAWc9pURdR6FWBO8/Zj2WY2KVcljWuAseAE+gzZ4TvdakpdVTfUAHQEuSte3wbcB5brkFUF1rRSgIF2/CyjrKupauQZEMS/qXDXBA5rSdSWgbEVR18opsC1d12mLk22MvvPbVhLiALGyL/hEOw6u0g7wFRwDU+AlmJCiwnnwJQmh8ANQ06xzD9xISiT4hsLbosa0uQb+pi0Z+g0eglv0eb92Du0xh9kGRXZ3ncJbfzrsUWi8SenwexvS4ShxQIPSXast66Tc9rIGHCWXn6GM8IhmHz/JW9ZoF/lhkwBnwCtQiqm/D+AK+GjDNpinhKcUY38nwGXw1DHkqCxoDajFPPi+lUIEUweyC8hHX2IOL4GOZh8nwX1aQ/xt1033APnXDzN4h+osKdo20gPyAwYS1jqKtuOMBDNxeUAqjAVIuwA5g58twx7AArAALAALwAKwAAcWB3wC4wGxuWqf9hRtG+8B7hD7dW0QQPz/3x1Cn11q23gBdkHZ6b310Y6hr/4bJGVq24pcQDzoXMT8vG/jvAuwACwAC8ACsAAsAAvAArAALAALwAJYkg36TXVCpKprvQe4EfpxkyBA2BMio06AZNN5V/g7eAZOOb2XnUYV5cUJ0DqYdgw6AWJjY2Pz2z9ey3ACRM8+VgAAAABJRU5ErkJggg=={scale="+$scale+"}>"
+!endfunction
+
+IBMEntityColoring(userprofilealt)
+!define userprofilealt(e_alias, e_label, e_techn) IBMEntity(e_alias, e_label, e_techn, #232F3E, userprofilealt, userprofilealt)
+!define userprofilealt(e_alias, e_label, e_techn, e_descr) IBMEntity(e_alias, e_label, e_techn, e_descr, #232F3E, userprofilealt, userprofilealt)
+!define userprofilealtParticipant(p_alias, p_label, p_techn) IBMParticipant(p_alias, p_label, p_techn, #232F3E, userprofilealt, userprofilealt)
+!define userprofilealtParticipant(p_alias, p_label, p_techn, p_descr) IBMParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, userprofilealt, userprofilealt)

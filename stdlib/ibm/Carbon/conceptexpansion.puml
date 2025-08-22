@@ -1,0 +1,13 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $conceptexpansion [64x64/16z] xS61400000CXXFdRpkElMXu0001m
+
+!function $conceptexpansionIMG($scale=1)
+!return "<img data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAAIGNIUk0AAHomAACAhAAA+gAAAIDoAAB1MAAA6mAAADqYAAAXcJy6UTwAAAAEZ0FNQQAAsY58+1GTAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAAOxAAADsQBlSsOGwAAAqlJREFUeNrtm09LVGEUxl9HF+oHUDOpTS4UnZ1+h0BCbFXQJqiVE27KLMIWZjotoman1CKhXREU6c69G/NPuRAXxkT5BXQV9bz5XBhiyne8546ee8+BHwzM9fG9D+/fc+Z1LuPRoKSd18B1Yc2XYCGnxICrIC+ol6ema1LUW1fARSGtpehDLutzQJOSsZ1nDxCPXMrGtroeEDq2F5P65zYHKGrrIFgWXAZXNBnwGjQL6q1TU40BC8TmADPADDADzAAzwAwwA8yAep4F2sEQ988d7jCPuAc+gY/ge1oN6AXT4BJfehd8rTiYjPLzO/AAbKbJgHHwCPwAY+AtKP/1TBcYAXfAKrgPimkwYA7cACUacfCPv/WGPAfzYJZcADc1GzDOl79FA0LigM9v05Bd9h51q0AvG16q4eUro0QDJqmlrgc85pi/G0NvAlwGM5w8pSLxylAHl7onYD+G6D41fJLzjGBjE68MDXGpeyMg7jWeUnNesNGJVob6OXmVBcTL1OrTNAf47vpNUNdrXQnottH3ywHPpbIydGp6gN/PDwjqnnWHaeexI56LKj4nXhnaAOe5vY0bXdT6rKkHvAe/uIY/i6npNX6CD8JtTaQyFPWAPTb4NmiNIdxKjUXhY7IfTuuCelUrQxP8YoZ7++OE3022xdxNVou6VIa+gHugQGqNAo17SC2Vp8Eij7T+UNN9xHE4ihYehQvc+U1rzwf48/wOmGLCoxiQEGmnWeoSIv/7nWAPx3S1lNg5LnU+4qTEQvcBde0BUWyBYVc9KbrmMpAUdRVL5Iu0boWtMGIGmAFmgBlgBpgBZkBmQ8svRe3OkLM7Q3ZnKLVzQEi2N7HK0EkbIH0PQJ0BodleuzOU9X1A6FxRyzL4Z05pVLRj7RTU82m+V0622qQzfgOMh4ktXLMjTwAAAABJRU5ErkJggg=={scale="+$scale+"}>"
+!endfunction
+
+IBMEntityColoring(conceptexpansion)
+!define conceptexpansion(e_alias, e_label, e_techn) IBMEntity(e_alias, e_label, e_techn, #232F3E, conceptexpansion, conceptexpansion)
+!define conceptexpansion(e_alias, e_label, e_techn, e_descr) IBMEntity(e_alias, e_label, e_techn, e_descr, #232F3E, conceptexpansion, conceptexpansion)
+!define conceptexpansionParticipant(p_alias, p_label, p_techn) IBMParticipant(p_alias, p_label, p_techn, #232F3E, conceptexpansion, conceptexpansion)
+!define conceptexpansionParticipant(p_alias, p_label, p_techn, p_descr) IBMParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, conceptexpansion, conceptexpansion)

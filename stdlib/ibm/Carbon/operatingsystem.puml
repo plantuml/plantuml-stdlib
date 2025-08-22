@@ -1,0 +1,13 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $operatingsystem [64x64/16z] xS61400000CXXFdRpkElMXu0001m
+
+!function $operatingsystemIMG($scale=1)
+!return "<img data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAAIGNIUk0AAHomAACAhAAA+gAAAIDoAAB1MAAA6mAAADqYAAAXcJy6UTwAAAAEZ0FNQQAAsY58+1GTAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAAOxAAADsQBlSsOGwAAArFJREFUeNrtmr1PFFEUxd8OmhiorARiAdqwGwKVQCEG6WgsjMFGMBJEDYb/gI7CikYDK5CYQGiIH4kUUBhM2C34aHBDIJKAEA1YmNgAoaDwvHCGjONuwP2YmX1zT/LLwMywyz1735mZt08pkUgkCrEirt9LQSe4Aa4ZVusWWAbj4DCdAfXgLagGq+C3YQZcBrXgG7gHvjgNKOWOI9AO1g3t+CiYApf4gR9aPKDbvsrw4hVra2etumZ1gQcawJqr+CbwmD+PggWDTFhjzXG7AyrArqv4BLhFEtxninZZs7IynNADdkCM7HCfcbL+49xWcNcxbIxQpmJGQAfHitZVsAnegR/gNRgDP001QAdeM0PwGLzhvpugF/STD+AVSJpmgG2CO/mT5AroBk/BfZACw2ACHBSTASXcPuB28px/d8Arw0uwwqDsY3fodN0GvwJc92m9uQbaMYeBpgY8Aw9pxid2xUeeZ1QHpJP+xGfZFd9BC43oAmVgA+yb1gGZhkecBD40C31Nd4amvqI8CVpo5nMInNUV8wEKzYIOgVxCcwhMexmaXnVANqH5tYDDw7cOOE9oPvcyNIP2YON5aPo5BPwMzUANAV9DM6gdUOjQLJoOyCU0G8EjcJHzG4vFEILZhmY5H8/t0NQTOdfZKVqdNGvRNANs6ZmpAfAC3AGD6mTmKsbj6zTnHwMsZZZ0GL4Hc8V6H5Avuec0qxzBFwoDnHOaimYshMkA24Qzv82yVMjl7AD9XdnnkNRdB5akA1wdoB1pC0ndM5IBYoAYIAY4DdgDlSGqu5I1nxqwxCenaAiKj7LWv+4D9OLBbXWyhCxqePFTrFXXLAsl/V4qW8dtyoP3SrtUNgh3ZDNyGRQDxAAxQAwQA8QAXxTJ42tlM5+Yy43Q7Xz8035Pi6eUSCQSifzTH+rpyDaDWtGyAAAAAElFTkSuQmCC{scale="+$scale+"}>"
+!endfunction
+
+IBMEntityColoring(operatingsystem)
+!define operatingsystem(e_alias, e_label, e_techn) IBMEntity(e_alias, e_label, e_techn, #232F3E, operatingsystem, operatingsystem)
+!define operatingsystem(e_alias, e_label, e_techn, e_descr) IBMEntity(e_alias, e_label, e_techn, e_descr, #232F3E, operatingsystem, operatingsystem)
+!define operatingsystemParticipant(p_alias, p_label, p_techn) IBMParticipant(p_alias, p_label, p_techn, #232F3E, operatingsystem, operatingsystem)
+!define operatingsystemParticipant(p_alias, p_label, p_techn, p_descr) IBMParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, operatingsystem, operatingsystem)

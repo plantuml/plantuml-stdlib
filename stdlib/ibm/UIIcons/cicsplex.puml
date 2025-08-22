@@ -1,0 +1,13 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $cicsplex [64x64/16z] xS61400000CXXFdRpkElMXu0001m
+
+!function $cicsplexIMG($scale=1)
+!return "<img data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAAIGNIUk0AAHomAACAhAAA+gAAAIDoAAB1MAAA6mAAADqYAAAXcJy6UTwAAAAEZ0FNQQAAsY58+1GTAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAAOxAAADsQBlSsOGwAAAt9JREFUeNrtmjtoVUEQhjcvufGBokKMig8whY0WVmKKa0BEQRC0UmKnImpEg0EbQ2yU2/kIQUtflYIgxEY0jaWFNhYqqJhEiwTFV9DA9R92hWU4SjhnzmFzZn/4it172XPu3N3Z2Zk1JioqSrMa/tG/AtTAVtCe8Rnj4AnoA6OzwQD045+DJcLPmgAbQzNCY0JfLYcfb9yYtdBmQJIBqjk+rxqaAZoT+pbP0E/MVPX/jB3kDFClaADtBmgO6F18X/HbbZcfwEtwHzwGU2U2gK8WsMbRCQ6CH2AQXASTGpfAXHAavAE9mn3AInAJ3ACVMi2BBvZeK8E6sAPsBavY97vBWrAti28IdQZMg7fgEegFHeC4O0/4Iv9wXcMS+AWugk3gRcJM6NHiA96BLe606us8WKzFCX4Du9lyWAjOaooEyT8MsL4joFVTKHwNvPfa80CXJgOQY7zH+nZJxAFj7NxeF3zpMWEjDIOTXnuDxAwYyfFfkx77FWu3SxigLyHgkNCEG1tSn1h7mYQB6BhK2ds7xqa0s2rcjZVHRpiHwBUJH/DXCPs1JETUZ4SioqJ0K03Vpy4wRtwFQlGoafHC7iekMcAUi7gqRrZgIX0/gQy4D2xPikbTLIGPrN0m/O8Xej+hMeWU8tUh/KLVHJdWVWIJUFZ2s9feaWz6WkqF3k9IMwMesPYeMEfTNkhV2u9emyo2hzUZ4CcYYn39xlZy1QRCF8AX5mGphj9fiwGoPn+O9dEe+xSs1hIKXwY3WR9lZZ+BY7PFMWYNhQ8ZW6LuZMvhirGXGe6Ch+C1sdddpstmAAqBqT5PJepu9hntDqccUifRIE+DZIQD4AT4rPk0SD7hFjgDjhp7p0fdcXjSHTtph6BCJZWx1xt73YVOeS1a8gG0LIYdpd0GS6FoAO0GCDEnWOj9hBBnwEiRY4dogELvJzQFaICv4Laxlx2WggUZx6McJmWxKHM1aqKioqI8/QGfsH1vj45wTQAAAABJRU5ErkJggg=={scale="+$scale+"}>"
+!endfunction
+
+IBMEntityColoring(cicsplex)
+!define cicsplex(e_alias, e_label, e_techn) IBMEntity(e_alias, e_label, e_techn, #232F3E, cicsplex, cicsplex)
+!define cicsplex(e_alias, e_label, e_techn, e_descr) IBMEntity(e_alias, e_label, e_techn, e_descr, #232F3E, cicsplex, cicsplex)
+!define cicsplexParticipant(p_alias, p_label, p_techn) IBMParticipant(p_alias, p_label, p_techn, #232F3E, cicsplex, cicsplex)
+!define cicsplexParticipant(p_alias, p_label, p_techn, p_descr) IBMParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, cicsplex, cicsplex)

@@ -1,0 +1,13 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $sendaltfilled [64x64/16z] xS61400000CXXFdRpkElMXu0001m
+
+!function $sendaltfilledIMG($scale=1)
+!return "<img data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAAIGNIUk0AAHomAACAhAAA+gAAAIDoAAB1MAAA6mAAADqYAAAXcJy6UTwAAAAEZ0FNQQAAsY58+1GTAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAAOxAAADsQBlSsOGwAAAtdJREFUeNrtWT1rVEEUfWZXRFC0EGvRpA3YaSHYiYJgo1ERi2CKNKksbeysLAQLrdQXFvErKoIgmsb8gETBpNEmBAvxC/zCxOi5cBceS/blzsydefOec+AUy763b87Ze++cnc2yhISEhISEhP8VGxqmZx94BjwEbgbHwKdlN7QbIHoXeJaFD/W8d7mpBmwHT7DoAyXX/V3vg+pkwEbwCIs+Cm4S3POkCQZ0+3oE3GF4b15XA8r6WopZ8HWdDJD2tRSTkovaNexrCf6AnZgNcOlrCZ6D72MzQKOvVcs/hAHafS3BN3CqSgN89bUUD8DvVRjgu6/V9n5NA0L2tQRL4LRvA0L19V3u5VsG66Stb9WHAaH7msSfBleYHeFac9MHST70MHgD3BmojO8VxHfNaAuCjSj69mJAcM3VgOLvg6cK4gkt8Jjm3m9qwGog8bR9nVxDfIdnjkr0tTFgXBorHcWPWIo3ir69aAmueQdeAV/xDrA70z1LnHIUT7jI6/NiQLcN3nCf0aT9CQ6CWyIQT9H3HLjs04AiPoMvuCrmwG3gHouqeMjilx3EE26Dd2y/gZbDt0dVMc9VQWHlB6dBSVU8YpGu4gnnuU2DG1DEl0JVzPKs6FcVJP64kniKvhOZ4PTXtwFrVcVNrgqaFVv5/ceK4gnXwGcuCw7xz1Cb4/N+8AL4W0k8Ydgm/YU2oKz6XMRTq+11XcRATcVbR99YDLjkKN46+sZiwJzj/dbRNxYD6Cfvp6rLv0oDfnF4soHRqW+sBhCuWwYYo1PfmA2gwDRjcV+uuYgqDehWgWn0nW6SAabD0PjUN3YDTIdhrr2Aqg0wGYZWp751MICG4cuQe39sBkiGoVr0jdUA+j/gY4joG6sB6w3DSV8PjsWAsmGoGn1jNmChzzBUjb4xG9BvGOY+HxibATQMPxReL2pH3160IjNghVvhIPgVHAXfZgkJCQkJCQkJHvAPk9qrTP/+l+UAAAAASUVORK5CYII={scale="+$scale+"}>"
+!endfunction
+
+IBMEntityColoring(sendaltfilled)
+!define sendaltfilled(e_alias, e_label, e_techn) IBMEntity(e_alias, e_label, e_techn, #232F3E, sendaltfilled, sendaltfilled)
+!define sendaltfilled(e_alias, e_label, e_techn, e_descr) IBMEntity(e_alias, e_label, e_techn, e_descr, #232F3E, sendaltfilled, sendaltfilled)
+!define sendaltfilledParticipant(p_alias, p_label, p_techn) IBMParticipant(p_alias, p_label, p_techn, #232F3E, sendaltfilled, sendaltfilled)
+!define sendaltfilledParticipant(p_alias, p_label, p_techn, p_descr) IBMParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, sendaltfilled, sendaltfilled)

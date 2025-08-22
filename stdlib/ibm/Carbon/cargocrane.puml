@@ -1,0 +1,13 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $cargocrane [64x64/16z] xS61400000CXXFdRpkElMXu0001m
+
+!function $cargocraneIMG($scale=1)
+!return "<img data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAAIGNIUk0AAHomAACAhAAA+gAAAIDoAAB1MAAA6mAAADqYAAAXcJy6UTwAAAAEZ0FNQQAAsY58+1GTAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAAOxAAADsQBlSsOGwAAAyJJREFUeNrtWzFv1DAUTlEkWGGBiRUBIgNC7Exch/4AKkDA1K4ICZgQIwhmmIpQ0bExsNwxHVMl2i0SSB26wMIxwIiYymf0Uiw3thP7OYkv+aRPPae9OP7y3vN7L2mS9BxLLcx5CbwJXlCO74DPwfkiCnAKvA7eAs/TsZ9gTp8z8AT4G3wJPmlKiJACHAVXaNFX6dgH8DW4Dv4Bl+n4BDwOboFrdKwRIdJAJi4WfY3u6mfwIfgG/E5/c6fke7/Au7To+yTEWmgh0kAmLsz7Ld3tnZrnmmuEeAE+5RYiDWDij8H3ZOI+UIVYJ7IKoRPghsZMZWQGE+dEUCF0AqzSAnPD4n+AIwcT75QQJhfYlqK0iom0dzcNViHSJF6wCBGzACxCLIIAXkIsaaJ+Rj9NQdD0exsyJcaImHLZ43xlOAmepc8ixf6k/H4D3Ew1Ud92IXkkFjE33IBVWQBb1OfGpOauE2z+I33vB8gWIHxw1tC8RQxI2p6/EGAMHrN8ISmp3/fAbx24kWXXZ4pVOa35QIBNos1n5Kg9ooJn5FD4cMcA9fqm4H6V8/nEgK/gGar+ooWPAF/AZ+A98t/eCSDwCNwFX1F/oHcCCN+/HbMrcOQB2zG7AlciFK0rcAkQrStwpsJRugJ3LRCdK3ALEJ0rhKgGo3KFUC0x4Qor5AoXE/+HJDoUnayi+JkpxZAYb5jqnFD9gKZcQe5k5Uq1lyf/Oz+NW4DqCu9K6n/OeXRV37SNGBDVrhC6LV64wha5woMAc5g6SZnN8proCYbcFcaK72dSACxiwbhNC9DtClxQO1lqZyhpOwZ0PkFqsi0uu8K5Pgog7wqnF2EXcO3ju2yHVd5YSUoyQhP+ZYiuFqBG3zoQzxE+2qKzJuOzIa94XQcZoqsF2J4jNJ3x1cW0rRjAhYmS5tYde8eAqj5p9cFYd4GqPmn1wZh3AY5neb3LAzix7zmOXoAoyuFQWPYcRykA5xskh94Q6Tpsb7DUxaE3RLqOYJln74PgIMAgwCDAIMAgQJ8h/+fozJI5FQlE2dglE+M8nwuu1EmEcsvYJRPjPN8AV/wF/RrmV5RIEigAAAAASUVORK5CYII={scale="+$scale+"}>"
+!endfunction
+
+IBMEntityColoring(cargocrane)
+!define cargocrane(e_alias, e_label, e_techn) IBMEntity(e_alias, e_label, e_techn, #232F3E, cargocrane, cargocrane)
+!define cargocrane(e_alias, e_label, e_techn, e_descr) IBMEntity(e_alias, e_label, e_techn, e_descr, #232F3E, cargocrane, cargocrane)
+!define cargocraneParticipant(p_alias, p_label, p_techn) IBMParticipant(p_alias, p_label, p_techn, #232F3E, cargocrane, cargocrane)
+!define cargocraneParticipant(p_alias, p_label, p_techn, p_descr) IBMParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, cargocrane, cargocrane)

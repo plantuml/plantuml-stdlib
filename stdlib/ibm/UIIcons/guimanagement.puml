@@ -1,0 +1,13 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $guimanagement [64x64/16z] xS61400000CXXFdRpkElMXu0001m
+
+!function $guimanagementIMG($scale=1)
+!return "<img data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAAIGNIUk0AAHomAACAhAAA+gAAAIDoAAB1MAAA6mAAADqYAAAXcJy6UTwAAAAEZ0FNQQAAsY58+1GTAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAAOxAAADsQBlSsOGwAAAvpJREFUeNrtWr9PFEEUXhSkspJCEAsTaZQAfwKtsbkjmotCQYU2lmqgUWNhoKRRrzAUh+YCCRYaCxvs1FhI/BHjFTYYr7ExNOjF85vcI5k8Znb3jnVvZvd9yZfszs2+zHsz7+177zYIBAKBQCAQ5BU9lvFhcAmcBAc91/EHuAneALfjGEAp/x48lrHN/glOcCMcMkxczKDyAem0yAdNBpjMsMvv063XMGkoZpzwBc0Q3YwnIFfodXht58AyXc+BLzocD4XLJ+AhvZGG6brTcW8NkApcNsAVemdv03Wn497GAOXDJxMYFxc46AloSgwQA4gBch0DslQLyAkQA4gBxABiAF9qgaTQIycgYyegmWSeIkHQ0XUdT0uGiwYogt/A0gFklEhGMWriYcPYbXZ/J2Xlq2A/WAC/gp8oVk2B8+AYe+Y06aHm/iXlK+AReuYj+MWHIKiO7GOwT1ubUmQcvACOWJ6bIdbAdfC6plcfyTwF1l13AbXAWbDBNmg+RHkdIzRX39QGyaz7EgOqtJuNBGQ1SFbVtzygSn6+wMZ/gw/AJ+TXCqPgJfAq+byOpSjlXTWAWtNFNvYdPA9usfHXxEfgc/CE9puScSvqNLn4Giwwn9+1KK9ji+bssphQ8DEP4IsuRyivG6EcIctJF4j632G1DVlq7jXtfpporR18qAU+/6e5Ugz5YoAzbcw962M/gNfzFea36vpNTFnThpgw49sJeMru56geiMIEzQ2T5Y0Batp9PyU54xHKP2PZYC2OAVzMBFXmtsZSYZXhvbWkwpeD1hchPBVei1NTmPppKu0cStHnTc2MSgKbE6sYMrnAZhd3Pynl9X5CqV0D3AxaHxZ3oyGyYqjn77GYYEON5vJ+wkoQ0h80tcR+URdFfSY/AB5NWFFbi22HMrkpWtfeEV4G74MfqCQeM7w271IK/DJotcYKtLl/qFx+16k/dgNF2oBZi//G+V+gRDuvAuSGb28BtWBrD6+NpsqrODJcTYXracnIfTEkEAjyjX8EN5V4s6QlJwAAAABJRU5ErkJggg=={scale="+$scale+"}>"
+!endfunction
+
+IBMEntityColoring(guimanagement)
+!define guimanagement(e_alias, e_label, e_techn) IBMEntity(e_alias, e_label, e_techn, #232F3E, guimanagement, guimanagement)
+!define guimanagement(e_alias, e_label, e_techn, e_descr) IBMEntity(e_alias, e_label, e_techn, e_descr, #232F3E, guimanagement, guimanagement)
+!define guimanagementParticipant(p_alias, p_label, p_techn) IBMParticipant(p_alias, p_label, p_techn, #232F3E, guimanagement, guimanagement)
+!define guimanagementParticipant(p_alias, p_label, p_techn, p_descr) IBMParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, guimanagement, guimanagement)

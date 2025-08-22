@@ -1,0 +1,13 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $solarpanel [64x64/16z] xS61400000CXXFdRpkElMXu0001m
+
+!function $solarpanelIMG($scale=1)
+!return "<img data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAAIGNIUk0AAHomAACAhAAA+gAAAIDoAAB1MAAA6mAAADqYAAAXcJy6UTwAAAAEZ0FNQQAAsY58+1GTAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAAOxAAADsQBlSsOGwAAAptJREFUeNrtmssrBVEcx+/1yoqSBZaSLMRCHhFloxQL2+uxsGXF0t3JDv+AYnFzxeZGyjOKjceGQSxkSUrkkQUl31M/dbrdOTNzzTBn7u9Xn64z5zenO985c+b7O1coxJFW9BPaR1aa50WIjBUgMGEmQKkLY5foIEB2imNl4Bbkgh2FcGfAMOkfBytgBrzqJsArXfyYQgTD4uKjYAIs+30G5Jgcj9KnEGED7FO7AfSAcmrfgAQ4onardPFRHR6BsEV/GzgEBWAWdIEXcEr9tdS3CgaprxHs6bIIhm3kFIMDUARGwDz4pD7xiPSCafAImsCDTm+BbBs5i6AStIBt8CX1ib9P6FkfAnVgIUg+oJ6m/Si4UuRdUU4XnRMYAcSC9wziNsaKU26PTgLkSN5+UDouFrwYqADn4MPGWB+UW2ExJlthP86AmMnduQYdIM/GLBA51dIrMObHO+50BgiTU2iz8otQbiJIi+AxmZwpUKXIq6KcVTonUD5gC/SBYXAPLiQvIIzQAFgCT6AbvOskgJUTbCWf78QKN0i1g9YzQFR1c2ATXJLDWwNvdOffqE8YoEm68820CKpKaS2qQbmkle/mkVT5pYp9OmcsqarUbkNk2aKk7afpn2pPYEfaT/D9hohZWG2JrRG/GcPXr8E7F8a+01mAjLPCTiMe4uAIRIRdHi95D8APodyHcHsRFBVhjYP8mj/Ij3ixCKpCOMVOm7k/XsKr/HV+DbIALAALwAKwACwAC8AC/FEtIJya2BU2HFjVkMf5SmfKGyJcC/AiyAKwACwAC8ACsAAsANcCmVkLuG2FxW+G+Q7yDZMLs2o7GV+L3zGT/99g3aLNawALwAKwACyA2z5g9x+/h1evQVW0e+ED0g3DYZvDrfgG7leTwKOdLsMAAAAASUVORK5CYII={scale="+$scale+"}>"
+!endfunction
+
+IBMEntityColoring(solarpanel)
+!define solarpanel(e_alias, e_label, e_techn) IBMEntity(e_alias, e_label, e_techn, #232F3E, solarpanel, solarpanel)
+!define solarpanel(e_alias, e_label, e_techn, e_descr) IBMEntity(e_alias, e_label, e_techn, e_descr, #232F3E, solarpanel, solarpanel)
+!define solarpanelParticipant(p_alias, p_label, p_techn) IBMParticipant(p_alias, p_label, p_techn, #232F3E, solarpanel, solarpanel)
+!define solarpanelParticipant(p_alias, p_label, p_techn, p_descr) IBMParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, solarpanel, solarpanel)

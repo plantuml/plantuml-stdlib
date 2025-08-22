@@ -1,0 +1,13 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $scan [64x64/16z] xS61400000CXXFdRpkElMXu0001m
+
+!function $scanIMG($scale=1)
+!return "<img data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAAIGNIUk0AAHomAACAhAAA+gAAAIDoAAB1MAAA6mAAADqYAAAXcJy6UTwAAAAEZ0FNQQAAsY58+1GTAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAAOxAAADsQBlSsOGwAAANRJREFUeNrt2zEKwjAUBuCoXV3ERfEueip31x7Ee3gED+Hq4AX0gaOQUrG2JN8Pb0qh6cdLCaRNSURE6s2sY3wX1UYdojYTn+tXaToe/hq1KrkD5pmxtvSH7wLY1/AOyC2B7T/W4JQ7oIoAAAAAAICa04x472fPfcYg11sCAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACpJ7nyt71mcDgAAAAAAAADK2Qfc0uf3wlOd6yAdcKl9CRyj7qUDLDJjj6hzev8qs45ajjzXUxIREflpXtdbDNpRW7a5AAAAAElFTkSuQmCC{scale="+$scale+"}>"
+!endfunction
+
+IBMEntityColoring(scan)
+!define scan(e_alias, e_label, e_techn) IBMEntity(e_alias, e_label, e_techn, #232F3E, scan, scan)
+!define scan(e_alias, e_label, e_techn, e_descr) IBMEntity(e_alias, e_label, e_techn, e_descr, #232F3E, scan, scan)
+!define scanParticipant(p_alias, p_label, p_techn) IBMParticipant(p_alias, p_label, p_techn, #232F3E, scan, scan)
+!define scanParticipant(p_alias, p_label, p_techn, p_descr) IBMParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, scan, scan)

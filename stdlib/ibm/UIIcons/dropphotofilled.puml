@@ -1,0 +1,13 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $dropphotofilled [64x64/16z] xS61400000CXXFdRpkElMXu0001m
+
+!function $dropphotofilledIMG($scale=1)
+!return "<img data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAAIGNIUk0AAHomAACAhAAA+gAAAIDoAAB1MAAA6mAAADqYAAAXcJy6UTwAAAAEZ0FNQQAAsY58+1GTAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAAOxAAADsQBlSsOGwAAAlhJREFUeNrtmbtKA0EUhtcLeYBoEzEpbQyY1sqgqNjZql0IEivRQn0GwRviBUmr9jaigsQ3MCAqtoqp4gOIqP/IEZZhdxOzO7Mz5vzwQTYzs5s5c2bmn43jsFgsFqt91RFQ9tWgru3lP+ps9wzgAPAqwGKx2Ae05gNMF/sA3gY5ACwWi8U+gH0Ab4McgNbWAB3BXwTzYKCJwfgET+AI7NB1aHXFGIAyWAO9TQ5EB9WdBGlwZvMUGAaFEO0LdA9rA1Aw5B5Odww+QDxzOoL7iHssgA/bMmCU5nJY9dK9lGVAK+oH6yAPUhqCeRFQVgMVsAJedARAdP4W9BiyxYsBmAETIOcXhCh9wDGYNdTvnIA51WtA3mDDl9cxBfpCtr8jc3QJnum7NKVwEWRV/LZuA0bnHSyBQw97+0DsghLYAokoHx6HD5A7PwWumzgH7INHcB5lEOI+DS430Xm3rqmNlgxQLTHnDwJ8hOOzjx/QdMjangFlac6Lzldp70659vEqlbmnQ1lHBqh+V3AlXYuRT3rUS1LZbEBbKzPgWboeCag70qCttYtg7IozAGnp+iagrlyW+Q8+YBzcu67Faj/psQ68UZnc1voMKErPF1vdEDilo2yNPg9J22AXtbXeB4h9XLzR2ZOC0OhEKdoM/pdFcNP521udMbChywnq+M8gQd7e7zDkTvsSBUzbYUiXEjQNFjyOwxnXcXhQxcNNCIB7TdhuJx9ghKL0Aa9O+LdCqvSqIwMqBg90RUcAVkHdwM7X6bcpD4AwMTmXk4tbv07S9z8BFovFYrW7vgEGH2xnLOW8UgAAAABJRU5ErkJggg=={scale="+$scale+"}>"
+!endfunction
+
+IBMEntityColoring(dropphotofilled)
+!define dropphotofilled(e_alias, e_label, e_techn) IBMEntity(e_alias, e_label, e_techn, #232F3E, dropphotofilled, dropphotofilled)
+!define dropphotofilled(e_alias, e_label, e_techn, e_descr) IBMEntity(e_alias, e_label, e_techn, e_descr, #232F3E, dropphotofilled, dropphotofilled)
+!define dropphotofilledParticipant(p_alias, p_label, p_techn) IBMParticipant(p_alias, p_label, p_techn, #232F3E, dropphotofilled, dropphotofilled)
+!define dropphotofilledParticipant(p_alias, p_label, p_techn, p_descr) IBMParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, dropphotofilled, dropphotofilled)

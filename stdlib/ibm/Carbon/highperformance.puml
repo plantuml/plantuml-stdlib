@@ -1,0 +1,13 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $highperformance [64x64/16z] xS61400000CXXFdRpkElMXu0001m
+
+!function $highperformanceIMG($scale=1)
+!return "<img data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAAIGNIUk0AAHomAACAhAAA+gAAAIDoAAB1MAAA6mAAADqYAAAXcJy6UTwAAAAEZ0FNQQAAsY58+1GTAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAAOxAAADsQBlSsOGwAAAuJJREFUeNrtm0loFEEUhp9xRI0imrgcxIAHUSRGDyEigkrUgzuIBxEX3DAaJAcXBIMiGBEEPbhfFAxGcEeQeIrowSUnNyJuIIjm4kIQAkYw/o/6G/og6MTuma5+XfAxPRno5n1dXfX6VUXEeOvHzzVgg7HYz4HmEn5ZBaoMBV/FmCUX+mM7WGBEQGtwUGJ9DMgEZAIyAZmATEAmIBOQCfC9HSR5t1xKgt8b+t5oSUAQ/E/QHRLRaEFAEHwTWAbug2/5SvB1DKgNBa+BjgZfeNzE32rT3APawFx+9gflFBDc+TaS6lkgCLCcEj7/4TcT0+BYfr6zmgdUgl7w0qqAaaATdFkW0GE5FZ4KHloVUMlZ4J5VAVrG77HcAxaKW8/otihgGJgJblitByxhKn/FqoBNfPY/WBQwAcwGLf97Il8FbAbfwQWLAkrBOnCeEswJ2AZGghNRnMw3AUPBbnAZvLUoYDsYDvZFdUKfBGi338ln/41FAUfBAHAgypP6ImC+uJ1sWu39ZE3AYHAGPAYnoz65DwKOiSt8avLzy5qAtWAL2AWex3GBJAuYAk6Da+B4XBdJqoAyBq4D3sY4L5REAZrttVLCYuljudtXAQPBTXb/peBV3BdMkgCt7lzie75uZH5QqIsmoQ0BV8Utaa9kLxArAnRt/7a4Gv9yHosVARMZsC5uLJI8lrXTIGA1OAU+gungdbEGnmI875rYrAd3+Mx3FesuFFrALHAWjAc7mOf3FnvqKUQbA47wlfYpqAYvkjL3xtkGga1gP3OOPbzrPUlKPuJKZ+vElbB0mmtm8J1Jy7ujFlDBl5d6MAJcF7dv70lSXzmjEKCj+gpxixVzwA9xZevD0seNSz4I0G0p84iO7KW8yw3gIvgqnrTcPzzLmq1NZqo6CcwAo8SVpx6BQ+CWxFSxKaSAGnAXjBO387LiL2+LHRzNg57gU9N/nW0PC2jhlKUtWG9/L+ltzySCpfVUtN/okHpZ438CEgAAAABJRU5ErkJggg=={scale="+$scale+"}>"
+!endfunction
+
+IBMEntityColoring(highperformance)
+!define highperformance(e_alias, e_label, e_techn) IBMEntity(e_alias, e_label, e_techn, #232F3E, highperformance, highperformance)
+!define highperformance(e_alias, e_label, e_techn, e_descr) IBMEntity(e_alias, e_label, e_techn, e_descr, #232F3E, highperformance, highperformance)
+!define highperformanceParticipant(p_alias, p_label, p_techn) IBMParticipant(p_alias, p_label, p_techn, #232F3E, highperformance, highperformance)
+!define highperformanceParticipant(p_alias, p_label, p_techn, p_descr) IBMParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, highperformance, highperformance)

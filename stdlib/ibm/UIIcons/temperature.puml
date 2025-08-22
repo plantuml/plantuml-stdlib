@@ -1,0 +1,13 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $temperature [64x64/16z] xS61400000CXXFdRpkElMXu0001m
+
+!function $temperatureIMG($scale=1)
+!return "<img data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAAIGNIUk0AAHomAACAhAAA+gAAAIDoAAB1MAAA6mAAADqYAAAXcJy6UTwAAAAEZ0FNQQAAsY58+1GTAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAAOxAAADsQBlSsOGwAAA0dJREFUeNrtm8trFEEQxnuTFRVFwVMgioGghkAgEfGgEN9mFXyAOYoPyNkoEcW/QMR42LMH15MoGBVBwQe6govGQ/QQEQQNbAg5aEgMejDB9WumFtpmMz076Zja3Sr4QWq2u2vmS0/N1EyPUmJiYrVsiXn03QBOgYOggbaNg0cgAz5XqwBJcBn0giVztJkBaXAJzHIWoD7GwT8AJx199W/bwBZwB/ypFgGughNlniYrwROuAiTLaNsCzljb8uAieEH+LnAFrDPa6D7XwaeY+1hYyNO+royOPZZgo6Ad3KLkN05/t9Nvpsg9XGdAOQLst/wLYKJEuwn6LaxvRQqw3vKzIW2zjr4VmQNWWf5YSNsxR9//da/idQZUpYkAIoAIIAKIALVsyQrYx7i1QEJmgAggAlRFDpBagOsMKEgOEAFEgJrOAa7sXJAZIPcBi1oLRJq5kgQjtmv2EKu5UgXYDQY9xBqksSoqB+xUwfv+pdb2nxHG1m1WGP4aGisFXnKpBcLeDm8ET1Xwdte0++AAmHaMnaFp32IJfgTcA985zID6ENX1Tm6ysvE5YjrC2LrNbTAJuoz/5HIVvEDNcBZArwHotbbpA0/HiPGWREgZ2/S7wi/gA9ckeN7yB2IefNHSNEZYDDYCbAdthv8b9HmI1UdjFa2NYrEToMvydS4Y8RBrhMYKi8VCgM4S09+XDThisbgPsBczDHmMN+SI5bMWiP1eoMHy8x4FyDtisTgFZhewZK5zxGIhwKTlN3qM1+iIxSIH6DW+aw2/Q/lb99tRItai1gKlZkDO8rs9xut2xGJxCjy2/MOgyUOsJhorLBYLAV6DYcPXpXC/h1j9Vlk9TLFYFkO/wFHDbwVT4E3MOGepmDJNrzF+z1UAXaXtU/8uetbLXX/EEEEf/DUrmeVKVJusBCju5HGwzMjGKarlcyRGmGnxbpIACevSp3PBNw4CuC4xe1XwGMv+MkR/EXIXPFTBs77i6nB9+dwKDoFjc/TTn9g8U0wsyjV2Dx3s6nnGmiJRnitGFuWLka8qeA642coJ5ViOpv07xcwSZbY9TQ82WiP2+UgJ8IZi+q4w7m3mDroqdNJ5X7x1HiVeqeA7oawSExMTY2x/AUPUiWikL3zpAAAAAElFTkSuQmCC{scale="+$scale+"}>"
+!endfunction
+
+IBMEntityColoring(temperature)
+!define temperature(e_alias, e_label, e_techn) IBMEntity(e_alias, e_label, e_techn, #232F3E, temperature, temperature)
+!define temperature(e_alias, e_label, e_techn, e_descr) IBMEntity(e_alias, e_label, e_techn, e_descr, #232F3E, temperature, temperature)
+!define temperatureParticipant(p_alias, p_label, p_techn) IBMParticipant(p_alias, p_label, p_techn, #232F3E, temperature, temperature)
+!define temperatureParticipant(p_alias, p_label, p_techn, p_descr) IBMParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, temperature, temperature)

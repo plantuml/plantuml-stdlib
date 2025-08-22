@@ -1,0 +1,13 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $userinsights [64x64/16z] xS61400000CXXFdRpkElMXu0001m
+
+!function $userinsightsIMG($scale=1)
+!return "<img data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAAIGNIUk0AAHomAACAhAAA+gAAAIDoAAB1MAAA6mAAADqYAAAXcJy6UTwAAAAEZ0FNQQAAsY58+1GTAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAAOxAAADsQBlSsOGwAAAxtJREFUeNrtmjtoFEEcxuc04AsEjQg+Ch+VImrhqzBRQcFrREQsLGzE0kKDnibm7hKjxhBjYWVhYaGFiByIJJXxBSpi8IXaKIoggqggGGz0/IZ8i0O4vdvc7d7M7v0/+LGwNzsz/29nZ/5zu0qJREnWIBgqV2BSozskBogBDa5UwHLTwT6wFiyx3OctPueHS5xbyeMLv3qaAjS4ClwHi8Er8KORRoC+88/Bb7AHvInhMqiVrnYO0MN+UUyDD2USXAdeJzX4IAbMA59lGUywmhIeX1pGgBggBogBYoClVWAG2AVamE1+5V7iGnjnc81SZp0rwBzwEdwHN8CvKlNhne5vr7cBe8F5MBe8BV+4i9wNusElcBiMsvw0lt8P/oIR7j9awQHQDw6Bq3EYAZ0M8iY4xlTa00xwkGXWGHdmiHc9Dy6An8Y1y0EvuMIRctJlA3aCLt6xIyV+14GdArfBLR61FnJ//rDENdrAHaCPdb8EBRcnwcngHLgDjlYoqwPdBhaQrT7Bm8qw7n625ZwBLXzOe0AxQPmnYDUZCVC+yOGvH4ONLhqwnhPX3Qlc84kE1T22scFFA5rBd/AnwqVV1/2NbTlngO7Y7DCfT595ppltOWfAYzAVbIrQgFa28chFA3TG9h6cUMH/bp+IUswfdBsPXDRAP59tYDPX+rDVw7rbwpxnwt4MFdjR4yAXYr1Z0M5lsBBmh6NIhXVnpzCtVczealGOdfWFbGqkm6EMj7WaYAafidt2OMPsLc8JLF9l8Ge5qYrd/wHK6Hhu3IiopDyviTT4ehgw3oRUgOfYC76Xk6mKuwGeCUVOkKqMCV0sU5fg62mAMgLKciRkfYI/wyVPJc0Az4QiMzplmNDNc3UN3oYBygiw0zhnJXhbBngmmCPhNOiw0RGbL0c7jG3tgK1OVDIgHXH7A8qy5NWYGCAGiAFiQBkNqv8fG8oIEAPip/mqwneOSTZgmRp7tf6kEQ3QwesvUT6Ay+UKmi8wqvrevoSGLQc/S419bKGD11+kPHN1MxSV9Gv3i7zzo7VWJsugLINigBggEiVY/wAL+JWuqKvYzwAAAABJRU5ErkJggg=={scale="+$scale+"}>"
+!endfunction
+
+IBMEntityColoring(userinsights)
+!define userinsights(e_alias, e_label, e_techn) IBMEntity(e_alias, e_label, e_techn, #232F3E, userinsights, userinsights)
+!define userinsights(e_alias, e_label, e_techn, e_descr) IBMEntity(e_alias, e_label, e_techn, e_descr, #232F3E, userinsights, userinsights)
+!define userinsightsParticipant(p_alias, p_label, p_techn) IBMParticipant(p_alias, p_label, p_techn, #232F3E, userinsights, userinsights)
+!define userinsightsParticipant(p_alias, p_label, p_techn, p_descr) IBMParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, userinsights, userinsights)

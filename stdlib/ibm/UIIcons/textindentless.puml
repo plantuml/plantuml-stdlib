@@ -1,0 +1,13 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $textindentless [64x64/16z] xS61400000CXXFdRpkElMXu0001m
+
+!function $textindentlessIMG($scale=1)
+!return "<img data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAAIGNIUk0AAHomAACAhAAA+gAAAIDoAAB1MAAA6mAAADqYAAAXcJy6UTwAAAAEZ0FNQQAAsY58+1GTAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAAOxAAADsQBlSsOGwAAAkpJREFUeNrtmc8rpVEYx881F03MTEkp/4KNhdWUhbnJFWUQpiZSakJDNIooRRFlRISULMzCLPwoJndqJqRmNrOwmcX8A0pJMU1+DPE9vWfqeprFe9/7ynnPeb716Xafzb3n23nP+zzfIwSLxWKxWCxbFdLgP9w85H9KsX0HsAG2GxB28UyacM7wDmAD2AD3Z0CId4A5KgJbINNGA0rAJxAFn8FTmwwoB+vgsfr+XJnwyM0ZEHRVgmWQFle7BrPq02gD6sAHsq4rUK9MESYbIBe5SLb5X/AKrCbyGgyimsA8OdMuQA3YSLQPcDu36zILtIJp8jtnoArEvDRCQVIHGCeL/wMqwFevnWBQ1A1GSO03KAN7ybTCQVA/GCC1E1AKvic7C+g+1w+BXlI7Vp3fDz+GIZ01Bt6R2hEoBvt+TYM6Su6+SdBG6ocgAn76OQ7ruPg58IbUD8AL8IvHYcMNkA1YM5gi9VywC/Js2AHShHbwntRzwA7It+UR6ALDpJatur4Cvw5B3e8F+tSgE98IZYEvXhqhoB6Cg6CH1J4JJ/UptOUtMAo6yY59IpwQNGLLa3ACvCUmZKgMIOr1DAjavcCMOhPiAxEZhq67CURMaYQWQKO4G3qmgxUVjFjRCS6B18IJQf8pFXwUTi5oRSssF1sLLsljLpPiBltmgTVQDc7jajIpbhH/uRgxdRjaBC+FE45KfVOBybVN06BsimQ+GFOLPw1yIOJV2wpfAhFd7wWMzwPYADbgHhU25VnmHcAGsAEsFovFYrFYCekWXm1aw1dNtGoAAAAASUVORK5CYII={scale="+$scale+"}>"
+!endfunction
+
+IBMEntityColoring(textindentless)
+!define textindentless(e_alias, e_label, e_techn) IBMEntity(e_alias, e_label, e_techn, #232F3E, textindentless, textindentless)
+!define textindentless(e_alias, e_label, e_techn, e_descr) IBMEntity(e_alias, e_label, e_techn, e_descr, #232F3E, textindentless, textindentless)
+!define textindentlessParticipant(p_alias, p_label, p_techn) IBMParticipant(p_alias, p_label, p_techn, #232F3E, textindentless, textindentless)
+!define textindentlessParticipant(p_alias, p_label, p_techn, p_descr) IBMParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, textindentless, textindentless)

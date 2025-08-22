@@ -1,0 +1,13 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $trafficweatherincident [64x64/16z] xS61400000CXXFdRpkElMXu0001m
+
+!function $trafficweatherincidentIMG($scale=1)
+!return "<img data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAAIGNIUk0AAHomAACAhAAA+gAAAIDoAAB1MAAA6mAAADqYAAAXcJy6UTwAAAAEZ0FNQQAAsY58+1GTAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAAOxAAADsQBlSsOGwAAAn5JREFUeNrtWTtLA0EQTlQwWBq0FC18gGJARDGihRCsRIyF2loISirBR6dg4w+QiCA+OgujhZ2ditoIQlJpY6WFomBlqbNkDpZlc5fTUzOT+eCDndmdu+zHzs3uJhQSCATljLCPsSPADWyngCc/fPfnD35LYO+pKPIhLcADYANStZs5rICKIsfsAms0n2rv+RCQtADzwLjFH8c+1gK0Addc+tdwDEsBKnGZRzTfK9KB6tvHsewEWAD2Gr4UUkcPcJGbAO3AVcN3iF//A2zrWAF2UBSgqoB/C1it2c/AOc1W7UFgPdpq7Dawz1J3g9iD/OkKGAL2Gz414RfNVu1ZY4xKl1EOKTBj2EfAjGWc8h8bvgkOAnQa9rpL/LpHLEkBGg373iX+ziOWpACPht3nEm/2PXEQ4NKyzCOWcRFLClxyEGDXsGM4sQSwFplAX8wjluQ+4Ay/8EnN1wU89XjWEcaW2n3At3aC08Ccj+fkMIbNVvgdOGCp8zYc49h3TlthR4QkTm4az/9N2PcAvALuAC8ssVHt9EhWAAcXBSbpBufucIqDAH4xDpzEdsZyciRzH/Ad1AHTmp3WToxlIcCmMWFTENYpkMTlb0uJMUtFCXNbAcsufUvlkAJuf5S0chEgqtV4E9cucddcBNjQarwtBT4s/g+P9CDzEfSq79lQ/i5RHZG70XeDk89SF8BW389D+dtiHbfAYQ6HIfL1PcgV4Le+s7gPIF/fgxSAZH0PUgCS9T3oFCBX34MUwKnv6lL0DXmKvix1AYrdB5Cr7/91H8B2BfwGwrICRAARoCS/AZ+lmKuyAkQAEYDdPoDMfYCkgAggAogAIoAIIBAIBAzxBclnaYOAKGV5AAAAAElFTkSuQmCC{scale="+$scale+"}>"
+!endfunction
+
+IBMEntityColoring(trafficweatherincident)
+!define trafficweatherincident(e_alias, e_label, e_techn) IBMEntity(e_alias, e_label, e_techn, #232F3E, trafficweatherincident, trafficweatherincident)
+!define trafficweatherincident(e_alias, e_label, e_techn, e_descr) IBMEntity(e_alias, e_label, e_techn, e_descr, #232F3E, trafficweatherincident, trafficweatherincident)
+!define trafficweatherincidentParticipant(p_alias, p_label, p_techn) IBMParticipant(p_alias, p_label, p_techn, #232F3E, trafficweatherincident, trafficweatherincident)
+!define trafficweatherincidentParticipant(p_alias, p_label, p_techn, p_descr) IBMParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, trafficweatherincident, trafficweatherincident)

@@ -1,0 +1,13 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $logolivestream [64x64/16z] xS61400000CXXFdRpkElMXu0001m
+
+!function $logolivestreamIMG($scale=1)
+!return "<img data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAAIGNIUk0AAHomAACAhAAA+gAAAIDoAAB1MAAA6mAAADqYAAAXcJy6UTwAAAAEZ0FNQQAAsY58+1GTAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAAOxAAADsQBlSsOGwAAAypJREFUeNrtmluITVEYx/eZc0YuMSYe3MrkNokyGR5mEoMklIeT4cU0isd5UF6VmHIruaQoDxRSI5FEatQkiQjzpOQ2I5cYzbjMEaYz/l++U5r22nvts/e39zpm/epX09rrrH36t+5nHMdisVgsFovFYhmWpFzK1sPtimcFeuEX/rsb5uEn+Pofc6UaALEatsFxIdr+CF9xGE/hfXgHfi+FAIhF8AacGOH7fsCr8CTsMCGAtMezd/Au3OxTLwjlcD7cApfAx9xTjAyAeAP74FqBd8+AW2E/vGdqAMQDnhOmCbw/w21PhdfhoIkBEE/gNp85Iwy1cDq8YmoA7+EsuEDwu9TAX7xS6DIHtsCGIdLq9Uy3C+qyE26AowRD2ANvwkea9WmZbYTzXJ5l4eWoeoDDG5+xPHtLUQYXw1Oa9fPcOze5PJsMz+i8MAj7YI/wsFzIu1Fd2uGAS3kdrIg6AOoFB2KYm3YEqPsNdir2HCujDoA4EUMvoGFWFaD+C0X5MokAaONyOIYt+sYA9bsU5bMlAiCO84lQkigCmCkVwFd4VDiAWt57hAmgym/zVhbiCx7jIEzoBd2K8hF+R/owAfTyUDAhgC6PZ5VSATg8GUpecNDWu1pzee5LIoAevtyQZI1mPdW9wnjJAIhDzt+bHikaNOvlkugBxIcAe/diWKr5PfuT6gHEQfhTKIBKPiob2wOIt/B0wsMgl2QPIPbD3wkGoBoCI+MKgNbis4LzQLrIHpCJK4DCfcGAQAAVjv91nBEBPIfnhHpBvc/zvAkBEK1Cc0F9kZ+LPYCX8IhAu3WlEgCx2+OEVix0tJ1SKgHQktTsMS7DrAYqBk0KgOiAeyNuM+vxTHUqTSUVALHLifbnrnVwjMeRODDSAdAQoJ/Xb0fU3mgOIUgAnmeBtCMPLYkXOGz6p4vykO1Rl77oUk73h40u5ZPgeVVAKSdeqPsuhxNCtEF3D20u5SvgLcVn6PqunU+sTdozpNDqcE2o7U7ehmcUw6DQO5rinAPi5DO8ZNokGDctfDcxbAOgS9pV8GGQGfV/JMObJrpImTtkMsw6FovFYrFYLBaL5Q+DsY9iuNXk6QAAAABJRU5ErkJggg=={scale="+$scale+"}>"
+!endfunction
+
+IBMEntityColoring(logolivestream)
+!define logolivestream(e_alias, e_label, e_techn) IBMEntity(e_alias, e_label, e_techn, #232F3E, logolivestream, logolivestream)
+!define logolivestream(e_alias, e_label, e_techn, e_descr) IBMEntity(e_alias, e_label, e_techn, e_descr, #232F3E, logolivestream, logolivestream)
+!define logolivestreamParticipant(p_alias, p_label, p_techn) IBMParticipant(p_alias, p_label, p_techn, #232F3E, logolivestream, logolivestream)
+!define logolivestreamParticipant(p_alias, p_label, p_techn, p_descr) IBMParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, logolivestream, logolivestream)

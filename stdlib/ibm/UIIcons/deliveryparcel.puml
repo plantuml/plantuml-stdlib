@@ -1,0 +1,13 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $deliveryparcel [64x64/16z] xS61400000CXXFdRpkElMXu0001m
+
+!function $deliveryparcelIMG($scale=1)
+!return "<img data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAAIGNIUk0AAHomAACAhAAA+gAAAIDoAAB1MAAA6mAAADqYAAAXcJy6UTwAAAAEZ0FNQQAAsY58+1GTAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAAOxAAADsQBlSsOGwAAA1FJREFUeNrtm1+IDVEcx2fdyW3jhdRmS7uR3OSFRUqRV/8eFDYpJEVKNkkb2V1RhDYKGwkPWA/IPpAHKS8iwoONB2xJm7bsg5V2Y9f31Hc0Tefcndk7Z87M3POrT+2dMzv3nO85v9/5nTPnOo41a9asWateq0lZfYpgH9jDz5fAeTCcdwFEPbaA46AxUNYHjoBbYCyPAqwCp0HTOPe9BgfB07wIMJ8NXx3x/x5SiN6sCjATHAM7QEFSPgIu8O+9YLLknr/gGjgK+rMiwFT23AEwRXFPNzgMPvPzbHACNCvu/wXOciQNpVUAF+wEHaBOcc8zivNSUb6UjVyhKP8O2sBV8CdNAqwHp0BJUf4BHAI9hp6nTQBtPRbTiNImgOezmxXPrthnI8QUkTPcCcQUbQJMZ7KiPWpXMKuIJOuHDgHWgRtgWhLzdgV5xSDYCJ74LxZi+GLRwHpF5raVLjGQwGwzwHRZ+P8CSZ1qwXKuLf7bpCpb/M0JXohjBLynG9QGrose2MYZ4W0Co0C4wHX6en2Z+zriFuALuMLg1yR55lywG8wCr2KI/rIg2Akug3kh7o9dAGG/wWP6YB19MOhqiyhEkUKMxDANiinuNlimcOduSV20COCPtHfBI/ZGQ6BcjJKVTGR+gndgdAKJ0C5wH6xRTLsiEG5iwGtPUgDPvtEf34CFYIak99aykl/Bxwip8D2wnc+QpcJC3FbWwRlPAFdzYOrhNKlKXUVO/8DkYqjg6LdR5gRdrNxiybBt4LAucdQM+lLri+CcxJ281Pokl8vPFe5kdAT4bYi91FUmdRUN2ZDkhoirWETo3GTpZ293KlJX0eCWpLbEkhwBQetlFDe6KWpSAM9Eg5Y4hrbF07IWEA27qdjpKbFsTMcXuwa2ycrZcMhruRsBxswKUO0CTGQW0J0n2BFgBbACpDsG1NgRYAWwAmTFinHEgCzO+/5DV6lfDsdt5fYXPuVZgDAvR1vyKEBFr8fdlPpwGIvlgISpESBek4ltMONHZEwJcIbBar9j+JCUCQG8nWDHScGbIRP+/YINkpl4m9sc4ppnmTgoGTVqh7FMHpWNOm+rLPOHpaNkbn7L3XF5Ve7eGCjrc3L+g4ng6i3Rn8xYs2bNmrVqtn/1vdx3rXBqWgAAAABJRU5ErkJggg=={scale="+$scale+"}>"
+!endfunction
+
+IBMEntityColoring(deliveryparcel)
+!define deliveryparcel(e_alias, e_label, e_techn) IBMEntity(e_alias, e_label, e_techn, #232F3E, deliveryparcel, deliveryparcel)
+!define deliveryparcel(e_alias, e_label, e_techn, e_descr) IBMEntity(e_alias, e_label, e_techn, e_descr, #232F3E, deliveryparcel, deliveryparcel)
+!define deliveryparcelParticipant(p_alias, p_label, p_techn) IBMParticipant(p_alias, p_label, p_techn, #232F3E, deliveryparcel, deliveryparcel)
+!define deliveryparcelParticipant(p_alias, p_label, p_techn, p_descr) IBMParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, deliveryparcel, deliveryparcel)

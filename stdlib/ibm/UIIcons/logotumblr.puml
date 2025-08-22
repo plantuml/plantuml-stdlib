@@ -1,0 +1,13 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $logotumblr [64x64/16z] xS61400000CXXFdRpkElMXu0001m
+
+!function $logotumblrIMG($scale=1)
+!return "<img data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAAIGNIUk0AAHomAACAhAAA+gAAAIDoAAB1MAAA6mAAADqYAAAXcJy6UTwAAAAEZ0FNQQAAsY58+1GTAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAAOxAAADsQBlSsOGwAAAa5JREFUeNrtmj9Lw0AYxs8mKurgB1Cwk+Ai6OQgUgXBycmhbqWLCEIRXXR0cHEUF3EQP4OCIE4ufgDRteK/pS5OFRF8jmQ0KRfSu2ve54EflFx6V35Nc+9doxTDMAzDMFLT52DMXXCU0l4Gz7Y+TMmBgHGfrgAXAiYlCxgAC5IFLIIRyQIavs0CNgXMgBWpAkJw5mja9ULAAZj1sRCyIWAL7PlaCYZdrjL3429fSROgq70TsCptLTAGNsE2GM7Yxz1op7TrdULNxyvgFlRyuK/MdWh/8vUnsNSLy+GSEh4KoAAKoADRybMQKiccXweHBv3Mg7eU9p8O7c7qgGbC8ZZhP6+q4LvCvAdQAAVQAAVQAAVQAAVQQPfXJz0pYLRoAn4Nz58umoBPw/PrRRNguhyuqOghqsCGgNDCGFk2L/STZFVwBT7+aT9NOO6lgKaKNjgmDN+n/1/cSGi7zEuArVngRnodcCFdwB24ll4J7oAvyQIewZqKtrXFrgX0zXAZvPgiIHAwpp4Sz+Oxp8BQhj5yqwMCR+Lb8dVwDB7AO+gH32Awfm1FAMMwDMMwcvMH7uo1VqRBi0kAAAAASUVORK5CYII={scale="+$scale+"}>"
+!endfunction
+
+IBMEntityColoring(logotumblr)
+!define logotumblr(e_alias, e_label, e_techn) IBMEntity(e_alias, e_label, e_techn, #232F3E, logotumblr, logotumblr)
+!define logotumblr(e_alias, e_label, e_techn, e_descr) IBMEntity(e_alias, e_label, e_techn, e_descr, #232F3E, logotumblr, logotumblr)
+!define logotumblrParticipant(p_alias, p_label, p_techn) IBMParticipant(p_alias, p_label, p_techn, #232F3E, logotumblr, logotumblr)
+!define logotumblrParticipant(p_alias, p_label, p_techn, p_descr) IBMParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, logotumblr, logotumblr)

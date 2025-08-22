@@ -1,0 +1,13 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $versionpatch [64x64/16z] xS61400000CXXFdRpkElMXu0001m
+
+!function $versionpatchIMG($scale=1)
+!return "<img data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAAIGNIUk0AAHomAACAhAAA+gAAAIDoAAB1MAAA6mAAADqYAAAXcJy6UTwAAAAEZ0FNQQAAsY58+1GTAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAAOxAAADsQBlSsOGwAAAolJREFUeNrtm71Lw0AYh6++gzqI4qLg7OQsjnazzlrBP0RcBCvq6OTk7ibiIqIgWEGhri4uju1Y/AAHN9/QC4Q0jWnyfty1feEHTWl79zy5Xr6NGdVwV0mp3UXMEWbVLt9jdjGtYRCwgrnFzMTe/8CsY14kOwMK8HcJ8EFNYqqYB8mRAArw0ymfmZCWAMrwNUwdU9aSAMrwB5hHu6wiAZThw1KTAA7Aq0oAR+DVJIBD8CoSwDF4cQngILyoBHAUXkwCOAwvIgEch2eXAB7As0oAT+DZJIBH8CwSwDN4cgngITypBPAUnkwCeAxPIgE8hy8sAQYAvpAEUIbftx1+1JIAyvC1SGdVJIAyvIl1VlxCVMAC5tl0X7TghpeWsIm5wrTjAs4wy0rw0hLmMRdxAaeYKWH4b8wvZlxYwizmJHgxJrSJ6gW/ZvOdMPL2JToGsQlwiWFNpME3ME3TuTy2xTQSktq/xlzGR8Ae5lNgTXxF4MNq2Pe+BEZecBl+J2kEtO2aqNqJgmpNBN8r2d8J4ZPuAWjaTVTYftE5KAk+aL+Ceeu1H9CKdYJKQt1Odocm/QaIsP13zDEDfJd8SOkEtYSnjMfoLbs/wg6fdizAJUFja5P2t0s9GvRNQt/wWc4H+CIhF3zWM0KuS8gNn1WAyxIKwfcjwEUJheH7FeCSBBL4PAJckEAGn1eApgRS+CICNCSQwxcVICmBBZ5CgIQENngqAZwSWOEpBXBIYIenFkApQQSeQwCFBDF4LgFFJIjCcwrII0EcnltAPxJU4CUEZJFQ1oIPSvKxuSwPTYnCS42A/0aCGry0gKiEDdN5TjBawVWpihnwBydDCeeYOZsfzA1mG/NqRjUq0foD+/VX3G60M5EAAAAASUVORK5CYII={scale="+$scale+"}>"
+!endfunction
+
+IBMEntityColoring(versionpatch)
+!define versionpatch(e_alias, e_label, e_techn) IBMEntity(e_alias, e_label, e_techn, #232F3E, versionpatch, versionpatch)
+!define versionpatch(e_alias, e_label, e_techn, e_descr) IBMEntity(e_alias, e_label, e_techn, e_descr, #232F3E, versionpatch, versionpatch)
+!define versionpatchParticipant(p_alias, p_label, p_techn) IBMParticipant(p_alias, p_label, p_techn, #232F3E, versionpatch, versionpatch)
+!define versionpatchParticipant(p_alias, p_label, p_techn, p_descr) IBMParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, versionpatch, versionpatch)

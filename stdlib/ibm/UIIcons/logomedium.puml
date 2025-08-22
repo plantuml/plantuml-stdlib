@@ -1,0 +1,13 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $logomedium [64x64/16z] xS61400000CXXFdRpkElMXu0001m
+
+!function $logomediumIMG($scale=1)
+!return "<img data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAAIGNIUk0AAHomAACAhAAA+gAAAIDoAAB1MAAA6mAAADqYAAAXcJy6UTwAAAAEZ0FNQQAAsY58+1GTAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAAOxAAADsQBlSsOGwAAA21JREFUeNrtmVuITVEYx7dhJrdh1EiHYSRkjnu55IFckobjMkVNXpSmKHmQJAkZyYOE5M2LCCWNw7g8METKtdwpDzSmxsMpJ8dIM27/r7NW7VnWPnutfS67zvn+9evss9b+vr3Xt9f+1tprOQ6LxWKxWCwWi8VisVisUlOfLGwHgeVgBRgLasFIkAKd4At4COLgaTEFYDw4ANaA/oY2n8FxcAJ0B7zXYaAZLAPDwROwHzwoVACGiIZvBhUBr/cR7AQXLe2ioA2MUMr/gt3gUAZbCtZEr0D1NbyBceA2iFnYeD3FdWAouCUa4KdR4D6IeDzAJeJ1e+Zh3yaCdE28mtYBmCec1Obw1SOfs0AL+OVz7hkw2+ecxeA8SCrl88EeUAYGiOv1UpmPY0puV0B1HvIPJdBTBuesNvA1EBzVlK90Hcd07S3zyfKX89R4qfVgR4b67Ra+qLETlLIFyus31SYAlGGnF2AkogRW55H4Fln4obZsUf5PUc6ZZhqA0YqzfIry0EFNeUOAYbrBdTxG9GK36kwDsNdijM+FaE4xRymrD+CHGj3Zdayr9w0ANbwxhAnZBuUe5gb0tVD81mjqakwCQEPK4BBmpe6MPQn0C+hH9gBd8q42CUAspGk55Z0ZrgQYVNK2SlNXZRKAqBOeohm6r6mkbaWmrtIkAJEQAxBxfXcElbTVfa9UlFIAyjV15bZT4aKXLgCdId6PvPa3LHxI2x5NXU8pBUC38NJtEoC3IQZAXrsjCx/SNqWpS5kEoDWkxtOy2fMcPARpm9TUJU0CQIsf30MIwFXX8XuDhRIvvRG/CU1dwiQAP8GFAjeelsZOK/fwKKCvuxleow7TYbBZ3EShRAsvj5WyGwH8tLt6QLtHvVEA6H08WaDG/3bSi5aqWhyzRVPVxt3YLqX+nc1EaB94UYAA7NLdmEhmdyz8/FEeGv1/rZzz0iYAXWKhIpHHxp8DhzPUH7FMoh+Usnuu46/gle1U+BNYlacgXAdNBufEDXz9ANt8RpZW0St6yWRfgDLnJbDUSe+y5EK0hL3RMdsmo02RRo/PW6mtTnqjRZf06sVHVpMTcGNEdp+zTnqRcaYTfHeItsY2iQCYJjiavd0Ea53/V6rk1tixDPZx0RO0wypvjmZhWxTb4ywWi8VisVgsFovFYrFKT/8AHdWkVL55sAoAAAAASUVORK5CYII={scale="+$scale+"}>"
+!endfunction
+
+IBMEntityColoring(logomedium)
+!define logomedium(e_alias, e_label, e_techn) IBMEntity(e_alias, e_label, e_techn, #232F3E, logomedium, logomedium)
+!define logomedium(e_alias, e_label, e_techn, e_descr) IBMEntity(e_alias, e_label, e_techn, e_descr, #232F3E, logomedium, logomedium)
+!define logomediumParticipant(p_alias, p_label, p_techn) IBMParticipant(p_alias, p_label, p_techn, #232F3E, logomedium, logomedium)
+!define logomediumParticipant(p_alias, p_label, p_techn, p_descr) IBMParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, logomedium, logomedium)

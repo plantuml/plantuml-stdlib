@@ -1,0 +1,13 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $chartnetwork [64x64/16z] xS61400000CXXFdRpkElMXu0001m
+
+!function $chartnetworkIMG($scale=1)
+!return "<img data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAAIGNIUk0AAHomAACAhAAA+gAAAIDoAAB1MAAA6mAAADqYAAAXcJy6UTwAAAAEZ0FNQQAAsY58+1GTAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAAOxAAADsQBlSsOGwAAA2RJREFUeNrtWjtrVEEUvpuHIoiiheIrjVZB2EIiEYvYq/GxAaPbiIjYKHE1+h90YyJaSAq7ICiJEg2+GlNp0khQAhYqC65iY2G3GyF+Q87CMFzvnJl793InOx98xczOPXPnzON+Z84GgYeHh4eHh0erImf5XAdYAI+AB8CtVP8LfAc+ByfBv5b2d4I3wUPgNsNnf4Jvwevg92Y44DhYBndr2n0Br4FPLQa/AG6OObm/wbzOCe2Gq2UEvMN8OdFmENwAvjHo5z64P4HVvY5Wz2RUozYDg7fAksWLlOhZLvoS3OJ9nL3MwVHwqlJXp9l6CH6iur3gafAiuEZqK56dBZ8x+toec5suR9iyckAneE+pq4KHaa/KeE98AM6AO6TfhI2X4FKWvgKcLdAPdknl2n8GL2OB2tSkui6yFbjmgIJSHtcMXnbCuMaWEw7Yp5QnDOxPaGw54QD1IFk0sL+oseWEA3IJ9pdz0QFVpdxtYL9bY8sJB3xQykUD+0WNLScc8FgpXyCNrUOe2kbZcsIBQr1VpPJaEjl5zeBnqG0DFaYSzJwDhOQdUuqEwpunwKgXXE/spbp5RQUGZKPu8n1AOSQe4GKEQmMOqgl+Ln+ETIR1NDgMjlq8xCg9y8VsghOstdVuaPAV+BHsATdp2n4Fz4Njhn3MgWcpno97ISKk959mCBMRIZ6g4KYYIn+nwScxIr9MX4lFxd9pqL1E+2sLWhzeAd4B3gHeAd4BrQzuNzQ1YRIhvAZIeA2GCC8RZU7ZCK8cc/Cp5epCUKB4YhdDeg+TI9jgxAKp5uqU7TlGkeRGRnsRm5yitq+TPANSzdUpUeRliz6uUOjOAic1lmquTlr26uBNcpElCoWnk3BA2ugMuXewyUXeBV/oDsYsfgYHlAMvTi7ymIs6QH3pOLnIk1ncAsuG7U1zkZekcs9qUIJxcpFbWl0Kd6wGB8TJRVayeAbkGPv4jFQWl65zTNvFkIPRuRWgipem5iKz6IApCmwasM1FfgtW/rHqnBJcoqhODpoauUiuFG7I4Xrc/diQoanl6pRgaMiyn3LATMdxtkCquTplBm9b9CH+lXojyfuAVHN1CkRcL/5VcpBxJyDOjXMUBLHVpktXYv0UKIkDbw+t3s/BSrL2ER2CtcDDw8PDw8PDg4l/qKy50RaPVRwAAAAASUVORK5CYII={scale="+$scale+"}>"
+!endfunction
+
+IBMEntityColoring(chartnetwork)
+!define chartnetwork(e_alias, e_label, e_techn) IBMEntity(e_alias, e_label, e_techn, #232F3E, chartnetwork, chartnetwork)
+!define chartnetwork(e_alias, e_label, e_techn, e_descr) IBMEntity(e_alias, e_label, e_techn, e_descr, #232F3E, chartnetwork, chartnetwork)
+!define chartnetworkParticipant(p_alias, p_label, p_techn) IBMParticipant(p_alias, p_label, p_techn, #232F3E, chartnetwork, chartnetwork)
+!define chartnetworkParticipant(p_alias, p_label, p_techn, p_descr) IBMParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, chartnetwork, chartnetwork)

@@ -1,0 +1,13 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $percentagefilled [64x64/16z] xS61400000CXXFdRpkElMXu0001m
+
+!function $percentagefilledIMG($scale=1)
+!return "<img data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAAIGNIUk0AAHomAACAhAAA+gAAAIDoAAB1MAAA6mAAADqYAAAXcJy6UTwAAAAEZ0FNQQAAsY58+1GTAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAAOxAAADsQBlSsOGwAAAjdJREFUeNrtmjFOAkEYhYfZ2GhHpy2FjYkFJhacQYOVBYWFZ6DQCxikM17AwsJGUUvjAUy0MTGhkBa9AzH4Jo4NDf+ss/884rzkNQQWvje7sP88jMnKysrKysr6r6qVfN0S3IZ34W141T/+AT/Bd/AAniRg2od34AP4q4oA9uA+3JjzvBHchW+U4S/hAr6CO/NCKAIObuEefAbXBc+v+w+0Aj/CU0V4pw2/SNexAuj5FQ1VC16GHxThjV/5E/gtRgB7fuXLyoXwCg8V4Tv+Mph7Wku+8PoRPmjfH4sGXhpAW/CFJ1HDH4sGPiSAWGozwUsDaEYMoMkELw1gLWIAa0zw0gBYFB1eGsA4IsSYCV4awEvEAJ6Z4KUBDCIGMGCCDwlgFOG93uFbJnhpAJOSM8CsugHjsQp8yCww9FNdq+T7nMLnbPCh0+Cjn+pCQ3BT5LFwHFaFDw1g6kdaN9VtCfYE3DV/6FeeEr7sjtDvhDi7JeYgP025LbEk8H8JgP4Ob1ECSAqfOoDk8CkDoIBPFQANfIoAqOC1A6CD1wyAEl4rgBjwlXWRtQWAr7SLLIjhVbrIgnjlVbrIgvi0V+kiLSG8ahdpyeCNUe4iLRm8McpdpCWDd1LtIi0ZvJNqF2nJ4NVlCeFVu0hLuPKqXaQlPO1Vu0hLeM2rdpGWDN4Y5S6yIIP/lVoXKQngCN5M8FOn0UWKAnDX0br5+e+t5u981V1k0I6QC+oCvk90kxO7i8zKysrKysrKMt/sU+txaM1UrwAAAABJRU5ErkJggg=={scale="+$scale+"}>"
+!endfunction
+
+IBMEntityColoring(percentagefilled)
+!define percentagefilled(e_alias, e_label, e_techn) IBMEntity(e_alias, e_label, e_techn, #232F3E, percentagefilled, percentagefilled)
+!define percentagefilled(e_alias, e_label, e_techn, e_descr) IBMEntity(e_alias, e_label, e_techn, e_descr, #232F3E, percentagefilled, percentagefilled)
+!define percentagefilledParticipant(p_alias, p_label, p_techn) IBMParticipant(p_alias, p_label, p_techn, #232F3E, percentagefilled, percentagefilled)
+!define percentagefilledParticipant(p_alias, p_label, p_techn, p_descr) IBMParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, percentagefilled, percentagefilled)

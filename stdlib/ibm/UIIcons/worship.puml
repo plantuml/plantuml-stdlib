@@ -1,0 +1,13 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $worship [64x64/16z] xS61400000CXXFdRpkElMXu0001m
+
+!function $worshipIMG($scale=1)
+!return "<img data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAAIGNIUk0AAHomAACAhAAA+gAAAIDoAAB1MAAA6mAAADqYAAAXcJy6UTwAAAAEZ0FNQQAAsY58+1GTAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAAOxAAADsQBlSsOGwAAA6pJREFUeNrtWj1oFEEUnjvPoIWi4DUiFprKQuy1EhsJFwuRFMZEBdHCKFb+FAkJxCRl1MJKPJMmBJWcYuMfgoJYiFhYRQsRFDwQrVQ8zzfwHS7D7M3szuzs7GYffHCzO3M737dv3nuzu4wVVlhhK9lKKV13DeEs4RTa1wmzhJ95F2AVYZgwTtginPtEGCPUCa08CnCAcJmwQ9HvHeESYSkvAuwhTBN2Rxz3gnCB8DyrAvA7PUXoDznP1/sV/D6DuCCzBuEiPCMTAvC1PUEYwpoXrYV1PoZ13xkzjvgQNuYWYTQwxjsBNsJlTe6mrtfwJfXNFwE6Ke08RLCxnlVxg5OfsZE6TQToltJsRXRV5jBOnSVfJ+ZK6KgCOHNNR0tNWwDnwSnhYKstgE5KSyQ9aaZb49RZcqFywmbknTIBaghe1taZI1PFp8eEfbIIK9oDwuaQSHsCQeijh1t7PqcbhDeEnYSqcP4k4YM4qCL5o+0+bFNhm7AMuVf24tgy4R7cuikZw1PhfSF1PiQ80o0BbaG9No0HFWQHcUfXh5z/QThOuK2ROrkAr2UdyhoTSYv8YhfyDOcW0bfb3GfCyOsK4NqquPM6NUoJfatxL1bxUIAR4c7/Rgy6ifZRrO2egCeMIN9HNh89oCa0R5HevgDTErK1uBfzUQAxC81J+swpxmRaAKfmowDvhfYRSR/x2HKegiAvcnYF2hOI9mIQFMfkRoCrKF46maAHm52pkP7fMSY3S+ArKry2Rt+/6NvMkgesI0wS+rDjfInd5dtAH17eHtIohY8R7phMxrUAW7Et7Q0c249tKg9sC4IIz4TNUBtBsgG3b5pOqOKY/FPCNsm51YR5/A6K0ETRE6XKG4Bgwzq714oH5INzkYnAIpKfx39xHFaJUE6R/AIm+EciwoAh+U67nrYHqMi3gODE43iCSJ5BWGV9UE6ZfKc9aOAJYeQHdQQsp0yeGYpgRD4pAaKSjyuCMfkkBIhLPqoIVsjbDoK8wntiQJ4JgS8sMDJb5G0LMCl5MBGVvK4IVsjbFqDPEnmVCMwWedsxYIPQbjDzFymymGCNvG0BXgntesyKTkcEK+RtLwH+znAv+/+42kZtHxSBv+S4hvZpZulDSpsC8P38kIWyNsyWWAJfj9quA0zLWueWRCWYKRGS2gtkRoQkd4OZECHpByLei+DiiZDXIrh6L+CtCHHqgLbl63MR+DcAd/PsASoRZvO+BFT2ayUL8JlwjhVWWGGFpWD/AAliIuoa0Q8jAAAAAElFTkSuQmCC{scale="+$scale+"}>"
+!endfunction
+
+IBMEntityColoring(worship)
+!define worship(e_alias, e_label, e_techn) IBMEntity(e_alias, e_label, e_techn, #232F3E, worship, worship)
+!define worship(e_alias, e_label, e_techn, e_descr) IBMEntity(e_alias, e_label, e_techn, e_descr, #232F3E, worship, worship)
+!define worshipParticipant(p_alias, p_label, p_techn) IBMParticipant(p_alias, p_label, p_techn, #232F3E, worship, worship)
+!define worshipParticipant(p_alias, p_label, p_techn, p_descr) IBMParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, worship, worship)

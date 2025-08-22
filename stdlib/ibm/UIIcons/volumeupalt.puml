@@ -1,0 +1,13 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $volumeupalt [64x64/16z] xS61400000CXXFdRpkElMXu0001m
+
+!function $volumeupaltIMG($scale=1)
+!return "<img data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAAIGNIUk0AAHomAACAhAAA+gAAAIDoAAB1MAAA6mAAADqYAAAXcJy6UTwAAAAEZ0FNQQAAsY58+1GTAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAAOxAAADsQBlSsOGwAAAoBJREFUeNrtmslrFEEUh6vHcdeDeJGgf4hEJIiI+4ZB8Shxl6AiCupFcEExGkzcQTyJksV9RURE8SSCBw8SQYwHz+KGUcev6D40RY8wdPdUddf7wXeYYpiq9+uqmlfVTymRSOSzRjk0lhXwCDbBB3jnkwHtcBWmwFRogxPN6LjiQPAr4QpUY20tzerctgHLoydftTUAmwYshWsw2uYTsGXAYuiDMbbXnw0DFkK/EfwfXwyYDwMwNtb2Fzp8MGAeXIdxRvDr4XLZDZgLNxKC10nPpbLvAXPgJoyPtdVgC1ws+yaoM7rbMMEIfiucdyEFzdOA2XAnIfhOOOvKASQvA2bBXZhotG+HXpdOg3kY0Ar3YZLRvhNOuXYcztqAmXWC3wUnXbwPqNZJVvTuPD2jPvZAl6sXIkkz4EKGwe+FY8phJc2AGRn99n44YiGmmvE5aNSAtPoMh1zb7dMYEKgSq6I8lxggBogBfqtawDHXsvy+LAExQPaAwilocM0HMgPEADFADBADUvwLNJp5FepCJI8ZMA16YF9RZ8CwyuZe8KAKX4A2+14wSDsDNsCnjAZzGHYXbQY8SDED9IuRhzA51nZUhRUgXT7sAS9hAXw12o/DDl82wRd1TNCFj52+5AHPYRF8M9q7YZsvidAzFZbDfTd2aP2GeLMvmeBTWJJgwmnY6Esq/ASWwQ/DhDMqrBDz4izwWIV1wT+Nvs/BOpsGNLNc/j28glWx/COIlsjHyKC4DpTNAK0heF3HhIoNA2wch+9FBvyy+CCs3wfo8rl2wwTvLkRuwWoY8dUALV0/vAZ++2qA1iCsNUwYLuPf4P/0Ft6osML0S3QnMaREIpEoZ/0DK7JmKRO7j5cAAAAASUVORK5CYII={scale="+$scale+"}>"
+!endfunction
+
+IBMEntityColoring(volumeupalt)
+!define volumeupalt(e_alias, e_label, e_techn) IBMEntity(e_alias, e_label, e_techn, #232F3E, volumeupalt, volumeupalt)
+!define volumeupalt(e_alias, e_label, e_techn, e_descr) IBMEntity(e_alias, e_label, e_techn, e_descr, #232F3E, volumeupalt, volumeupalt)
+!define volumeupaltParticipant(p_alias, p_label, p_techn) IBMParticipant(p_alias, p_label, p_techn, #232F3E, volumeupalt, volumeupalt)
+!define volumeupaltParticipant(p_alias, p_label, p_techn, p_descr) IBMParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, volumeupalt, volumeupalt)

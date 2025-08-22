@@ -1,0 +1,13 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $checkboxcheckedfilled [64x64/16z] xS61400000CXXFdRpkElMXu0001m
+
+!function $checkboxcheckedfilledIMG($scale=1)
+!return "<img data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAAIGNIUk0AAHomAACAhAAA+gAAAIDoAAB1MAAA6mAAADqYAAAXcJy6UTwAAAAEZ0FNQQAAsY58+1GTAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAAOxAAADsQBlSsOGwAAAldJREFUeNrtmkFLG0EYhic2ePNSemnof/An6NVqaSVVFCqlliIiIkVSJHgRKYWgUZQqSiuelFYQQRGltFX8BYI/IdhbDgUTNTb1/ch3CMtsssLsurP5XnjAzDcZ8r6Zybg7q5RIJBKJRKJGVcxjvycgA9rB45B7+gOOwAeQMxEAmT8FDy37cvOgtV4ITR4GylhoXvFnztTr5CWANouXeJuJABIWB5AwEUCkJQFIABKABCABSAASgAQQdt2AfvDd9MBxC8yXQB/YBlugzK8bYgaQ+V42T/oHXoGNRgjgGvSAHUc7hXAY9SVwxeZ3NbUBsBblAMj8S7Cnqb0GX8GDqAZwCZJgX1N7A76YXrbxkJnvBgea2luw6sdvlh8/gpu8TZXu8J4ieOFi/p1f5v2YAev8bZV5LX8DzR7MPwc/NLUhsOTnbmVy4BUwyOYVb19JDsJNBfDMxfwwWPZ7qzY5+Bn472jb46ldrGH+p6Y2Aj4r7wc3oQhgAYxq2g94iheq2i5AJ/il6U9jLAZh3nQAMQ5hTFOjKd7FxomnqnJ85dQYjxGIeb+2wXkOds7R/ht08N8nmve9B9mg916//g/IcgizjvYTl/7jYCZq9wPIUMpDv9R9mQ/iapAOJydq1CeUhwNMmwMgfQJpTXuaayrqAZA+gsmq15Pcdu8K8mJouirwqbBcgQV9NRga40EvgdBKApAAJAAJQAKQACSAmjq32N+5iQCOLQ7g2EQA9NR13kLzef7sNeXljO2vqhxH02Pyj0BLyI3T4/J0N5puyeeUSCQSiUQikYtuARdKY4TDobBKAAAAAElFTkSuQmCC{scale="+$scale+"}>"
+!endfunction
+
+IBMEntityColoring(checkboxcheckedfilled)
+!define checkboxcheckedfilled(e_alias, e_label, e_techn) IBMEntity(e_alias, e_label, e_techn, #232F3E, checkboxcheckedfilled, checkboxcheckedfilled)
+!define checkboxcheckedfilled(e_alias, e_label, e_techn, e_descr) IBMEntity(e_alias, e_label, e_techn, e_descr, #232F3E, checkboxcheckedfilled, checkboxcheckedfilled)
+!define checkboxcheckedfilledParticipant(p_alias, p_label, p_techn) IBMParticipant(p_alias, p_label, p_techn, #232F3E, checkboxcheckedfilled, checkboxcheckedfilled)
+!define checkboxcheckedfilledParticipant(p_alias, p_label, p_techn, p_descr) IBMParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, checkboxcheckedfilled, checkboxcheckedfilled)

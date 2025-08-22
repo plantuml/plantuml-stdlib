@@ -1,0 +1,13 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $calendardate [64x64/16z] xS61400000CXXFdRpkElMXu0001m
+
+!function $calendardateIMG($scale=1)
+!return "<img data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAAIGNIUk0AAHomAACAhAAA+gAAAIDoAAB1MAAA6mAAADqYAAAXcJy6UTwAAAAEZ0FNQQAAsY58+1GTAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAAOxAAADsQBlSsOGwAAAxFJREFUeNrtm1uIjVEUxzcjHsYlEoNynfEgjUtClDy4dB6kZigUScMTkiIeEEXNgyIjKZFRhkKJcktKiiZKk0tu4bhfcmlM4WHGfzX/tPt8e858Z+b4bmvVr7O/y1nn7P9ee++19/mOMWpqHbELJMzPv9gRB13T3oIqgAqQcuviOV4KVgR4fzlfG0L6/vl8/mFwzBUBSyynSbRy1vGvdfO5qR5kAkxDJsD9hZgGTR7fV8cAFUAFUAGcg2AQy4T8/TMaASqACqACqAAqgAqgAqgAKkA4qbCfDQQVYCIYDhrBK3ADnAM/A/obAmZ5ztWB31ETQKJpK9gEevhcXws+gzXgRDt9loErYJjnvAj5JUoCiJ9TYD6Pm8FtkAV9wQTQD/QHx0FPcCiHz3HgEiNKWvsNGBHVLrDdqvx1sBI8tq5LRKwDuxgpe9iKHxz+poHzFK+JXWpRIQTorEHwJHgKboE5nsqL/QLVVqsXg0qHL3n/ZVb+q3Uc6UFQtqUngT6srMukVVexPNrneiW7SHfwHsw1Bd5y78xB8Dtpy5qscrPnmvxGUcXKvwCzGVWxmwbbsjFW+Y7nWgtYAA6AzRz0TJIEkD69nmWZHU47ImRZ3BMhr/VmIrOTo7gMbAvzSIhiI8AUzgZek4zwIKfCbBrXAg8ozKekrwWegeUsS8Y3iFOkdIMjYAuTpntJFUDy/aM+58czDxjJxEaOP6apC9y1IkOiYkMa9wOuWq1ekUYBJNl5zfJQ8+8TKqnYESq2FkgtSRGgivN7LisBpSw/TMosINPaDrbmW1DjuE/CfTco4nFdUgSoBavBALCP63d5vQl+mNadoOlcB8y0kqL9Dn8yOPbyOV9qlRfTt23fwNkwBHgJZoAzXO3NIy67b1p/13ftG1R7KutnNQ6/oQgg9ghMBRs5HpT43JNlq+/NsWkS20ywkePBNjAWjOJK8B14Dp60009Z3FNh2elpMOE9PRr5PEAFUAFUABVABVABVAAVQAVQASK6GJoMriW0vvKnqXr7RJFPRAxOcIPLEym1cVmo/Rf7A7nUi30qNaQlAAAAAElFTkSuQmCC{scale="+$scale+"}>"
+!endfunction
+
+IBMEntityColoring(calendardate)
+!define calendardate(e_alias, e_label, e_techn) IBMEntity(e_alias, e_label, e_techn, #232F3E, calendardate, calendardate)
+!define calendardate(e_alias, e_label, e_techn, e_descr) IBMEntity(e_alias, e_label, e_techn, e_descr, #232F3E, calendardate, calendardate)
+!define calendardateParticipant(p_alias, p_label, p_techn) IBMParticipant(p_alias, p_label, p_techn, #232F3E, calendardate, calendardate)
+!define calendardateParticipant(p_alias, p_label, p_techn, p_descr) IBMParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, calendardate, calendardate)

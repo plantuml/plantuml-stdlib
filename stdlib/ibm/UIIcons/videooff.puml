@@ -1,0 +1,13 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $videooff [64x64/16z] xS61400000CXXFdRpkElMXu0001m
+
+!function $videooffIMG($scale=1)
+!return "<img data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAAIGNIUk0AAHomAACAhAAA+gAAAIDoAAB1MAAA6mAAADqYAAAXcJy6UTwAAAAEZ0FNQQAAsY58+1GTAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAAOxAAADsQBlSsOGwAAAsNJREFUeNrtmk9IFFEcx2fHzZOSeEtFBbU6CJGECMJu6NGboF0KUsjAg5dAKDGI0MNCdBGUNcpSg5RO1dFKIZC9ROfFi4jeROiq1ffRb2F4zOzuzM68eX/mB5/D7g7ufr4z7/f+oGUllVRSSeldkyAPbLcP6wyQXwW3QBv4DP6aEkBJvnTn+0AL+OS8yDZEntUfsM9fmDJI/gF4rXsAvuR1C8C3vE4BBJIvFwCbMnLgNrgSs1wqKnlWaQ/5X6BZ5ztfbhrMmSLvFUDWFHmvIdAieaP0Kz8KnoF6MA12VF4J+pFvAK/AR9ALroKVap4AHeT7wSbo5t7vVjWAauXZ5u4xeAouBe0BKshbLvKdYAMM1toEVZC3OPm7YAlc5q65qLTltxWVLxUTfg/WXeQPwbCqT0A18hnwDnS4fLYNpsCZigF4NTw+jK8uj/dvMAPWalkJytrt+eLlC+CmH3nZAgi6vGWNbpG6/4HfL00rLs8a3T2wF/SL0wrJF0GP4/UWeFhNo5M5AD93nsku09h/TjNAzZVW6LH/Bq6H/SNsxca8pUMA0sjHEYBU8qJ7QK3yI+BF2E3QVujOvwTX6FDjLfgAmlQIIKzHvod7PW79P77PyBxA1GO+nTZFC0GHs62wvHNT9AT8AF2yBCBC/oJ7zQ5Cf4L7cQcg6s4P02bIWY3gDe0TmuIIQOQ8vwtu0OkPX2PUILMiA4hjkXNGs8EEnQbxDXJHVABxr/DW6DSoUOHUKJIAZFneHtCp0KJLg4wsANnW9udgDgy5NMjQA5BuY+OoPWqQW9z7xbA2QzLLOxvkHfAFzNOweMRflApJXnQdg9Y4doMyyJfWAMIPRGSRPwWzYf2xlELyJ+A7yR+JDECFhhdZAFrLVwpAe/lyARgh7xWAMfJe0+CAKfJe20W2dGT/MN2nu3ylJyNPwyGppJJKStv6B4vL2qZPUhYAAAAAAElFTkSuQmCC{scale="+$scale+"}>"
+!endfunction
+
+IBMEntityColoring(videooff)
+!define videooff(e_alias, e_label, e_techn) IBMEntity(e_alias, e_label, e_techn, #232F3E, videooff, videooff)
+!define videooff(e_alias, e_label, e_techn, e_descr) IBMEntity(e_alias, e_label, e_techn, e_descr, #232F3E, videooff, videooff)
+!define videooffParticipant(p_alias, p_label, p_techn) IBMParticipant(p_alias, p_label, p_techn, #232F3E, videooff, videooff)
+!define videooffParticipant(p_alias, p_label, p_techn, p_descr) IBMParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, videooff, videooff)

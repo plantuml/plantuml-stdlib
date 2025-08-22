@@ -1,0 +1,13 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $growth [64x64/16z] xS61400000CXXFdRpkElMXu0001m
+
+!function $growthIMG($scale=1)
+!return "<img data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAAIGNIUk0AAHomAACAhAAA+gAAAIDoAAB1MAAA6mAAADqYAAAXcJy6UTwAAAAEZ0FNQQAAsY58+1GTAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAAOxAAADsQBlSsOGwAAA35JREFUeNrtmr1rFEEYxsd4KDY5oxG/u5xFJAE/UYMfmzTa2IhiES0kwQj5Dy5lLAVLBaONKURjo2Ch5hLjqShc8ETBKEmjSSwEFU4Ro/gMvIvDZHdvbu9m3bmdB37k2C8yz87OvPvsMGZlZWWVYC0x7P9dDvrALrAWvAdjYAQsSMemwDFwCLSAT+A5uAx+ugctNcyAfnAB/Aa/wB5wBpwEj6iRXO1kzFmwHnwBm8Fp+v1MdMkk7QZFsEPY5oCrIA8OgBJ4DD6DTpATjp2k3sNMNSANvkrbeAO3gSfgOvgBPoB9dLdF8XMbxQ0NhhkwBzIe23lDe0Ar9Y5ej8YzOnfOZAMegI3U7WXxHjANZuhxkMUfhw10DWMN4KP9W3rmmzz2zxCy+LFDYIquYawBfKo7AVaDgkdPaPIwxqFjm8Fxebo0rQ5gwjR3E2wBH8E7GiDbaX+RBrwMPTJT1Pii6YVQUKEzD/bSvqdgXZlCqS51j1BWA0u4rAHWAGuANcAakGTpfh1eBs6BnQqFiVKCU6H4C9Bo0AG6EyE3wfnDghOcNjDOFBKcMuqmv8NgEFwBEz4vSJH0AJ7gvJISHH6Hr0kJTp4SnC7pji1KcBTFG58F58v1AN0GNHoEE2OU4OTDJDgKOggOU+MH/vcgOB+Q4PQKCU6PaoKjoBWqjY/CgPsKCc40/VZKcBQ0odr4KAy4HTLBWemX4CioFKc6YIGCiKAEZ5VHgjPpl+DUWlEFInyauxWQ4LwE32j+3xSU4CjkAVxH4lIIueJT4Vap0HktjPBvqFC6G3WCE+WHEd6gG4R8x05VcV3+yOSS+i7gUKEzaEIP0KEczfnZsOOZ6QYwYc7PUlU5njQDZBMSmwcMUBWY6ECklHQDqh4Eq12D8wJc0png6DagjxIc9+PiUdoml6ZeHydbKenh09HFKkKMrihNSPkkONuluzJEAcZ+8J35r8Ep6E5wdBuQ9ggmRtm/NTjDCglOWmeCU2vJg6DqGhy/BKdFd4Kj2wCVNTh+CY5Dr7JaExzdBozQgBfbBEe3AW6C00wDWmcFCc6aKBKcKPIAPtV10DT3EMzSnRUTnAJbvAanI0SCE0sDXBPEBCdDqY2c4Nxhhq/BSYVMcLrrpRS2n8etAdYAa4A1wBqQYAVl6V5fW8TV2LVQ0PWcMufmanG9SmPxWpe6cb+elVW96y9G2v8S06aI5QAAAABJRU5ErkJggg=={scale="+$scale+"}>"
+!endfunction
+
+IBMEntityColoring(growth)
+!define growth(e_alias, e_label, e_techn) IBMEntity(e_alias, e_label, e_techn, #232F3E, growth, growth)
+!define growth(e_alias, e_label, e_techn, e_descr) IBMEntity(e_alias, e_label, e_techn, e_descr, #232F3E, growth, growth)
+!define growthParticipant(p_alias, p_label, p_techn) IBMParticipant(p_alias, p_label, p_techn, #232F3E, growth, growth)
+!define growthParticipant(p_alias, p_label, p_techn, p_descr) IBMParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, growth, growth)

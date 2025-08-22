@@ -1,0 +1,13 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $idbadge [64x64/16z] xS61400000CXXFdRpkElMXu0001m
+
+!function $idbadgeIMG($scale=1)
+!return "<img data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAAIGNIUk0AAHomAACAhAAA+gAAAIDoAAB1MAAA6mAAADqYAAAXcJy6UTwAAAAEZ0FNQQAAsY58+1GTAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAAOxAAADsQBlSsOGwAAAuBJREFUeNrtm09IVUEUxifNsEBa1cuoFi1spYhUGKT0RAIxKjIwghYF7apNSIt00Z9tIOIiigqS3FiL/vk2lW0SeSiaLdwFFuVLCSJ3QdE3+C1EnvfeeXrvm5l3Dvy46pw5997vzpw58+5TqRK3DQmf7xy4EOLzEAwkdUFlCQtwFtQFtNfRJzHbWIRRlwVtq7Rlkr6YslLPASKACCACiAAiQCmbaR0QpZJTIYVONsTnIBhZwzmMKknTERBWyRXbjCvJQirBoEouzDIWxJccIAKIAMXdDQZl+SirhNMCDILKgPZp+ngrwIBK8NMeyQEigAhg5Sqg7Qg4Bnbz96/gFXjvuwB6mbvPpfAX+MS/HwVXuQRe5GrgnQBp8ALMgeNgGPxlWznr/zvgAzgB3vmUA3aBp+Aj2A9eLrt5xZ/1FDgApsAQ+3gjwA2e6xT4HeCn2zrU0hurm74IsBmcAf1gPoL/PH07wRYfBGjgjZjs1YfZp8EHAVI8fjPo853H7T4I8JPHaoM+1Sv6Oi3ADLN8o0GfRvaZ8UEAndTegCugIoJ/BX3fRkyaTiyD3Sx770bw1T57wHWfKsFxcI2V3lZwmRXhynnfB06zLB73bTf4mLW+LnQm8rRP8Oaz9PVmL7AJ9PCpasFfg0d5/PSoOA9awReOllvgj8sC7AXPwT5wD9wGuVV8n5EdzBl6ypzkxuizi1OgFoyCKtAMLgXc/HLL0beZfUcZyykBUtzdLYJDYKyAGGPsu8hYKZcEeMCn15on25vYHGNUMaYTAugPO9qZ1GbXId4sp0Q7Y1svQBeYBE/WMeYgY3bZLkANOAx6YxC2l7FrbBagBfxT8XzjM8PYLTYLUM81eyEGARYYu95mAbZFXOsLtRzPYW0l2BFzZdnk8mbISpN3gzHEHIn5mtMyAiwfAWnJAZID3Bk5MgIkB0ghJAJIDjC0tf5HR5xm/F3j8gJGzE6LH+gPtfRWaVqJRbP/pSGCHBVx3AIAAAAASUVORK5CYII={scale="+$scale+"}>"
+!endfunction
+
+IBMEntityColoring(idbadge)
+!define idbadge(e_alias, e_label, e_techn) IBMEntity(e_alias, e_label, e_techn, #232F3E, idbadge, idbadge)
+!define idbadge(e_alias, e_label, e_techn, e_descr) IBMEntity(e_alias, e_label, e_techn, e_descr, #232F3E, idbadge, idbadge)
+!define idbadgeParticipant(p_alias, p_label, p_techn) IBMParticipant(p_alias, p_label, p_techn, #232F3E, idbadge, idbadge)
+!define idbadgeParticipant(p_alias, p_label, p_techn, p_descr) IBMParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, idbadge, idbadge)

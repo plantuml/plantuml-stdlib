@@ -1,0 +1,13 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $logofacebook [64x64/16z] xS61400000CXXFdRpkElMXu0001m
+
+!function $logofacebookIMG($scale=1)
+!return "<img data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAAIGNIUk0AAHomAACAhAAA+gAAAIDoAAB1MAAA6mAAADqYAAAXcJy6UTwAAAAEZ0FNQQAAsY58+1GTAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAAOxAAADsQBlSsOGwAAAYJJREFUeNrtmjFLAzEYhqu1DnJjteAiB27+gK5dqtzQpeDgX+jgaluKizgUOndw0UFwEHG8RfwBLgXBURDFRToeiEPF9+AGh/QSail++d4XHgpJLuSeNsnlaKHAMAzDMIzWLDm0KYMhiEAg5L4SEIMWGOc1LDp0dgH2waqgLzYd6w4IwXVew2WHziLBv3Dr2F0EBIIFBPMQ4HUoQLuAlX8+vhG4A0/gA3z+qtvKtug62PNNwD3ogAeHthPfBJyCY/CtcQqcgZ7WRfAdHGreBQbgS7OAG83b4DN4s4zzBBxk2593Al4t9Ueg7fMUGFvqd31fA2yLX0X7WaCoXQBPgxTgyXNAF1wZyhPLdTVQmlJ3ntWLEJBudy8znhOmZV37FAg1C0ifD9Y0Cwj/2gEFaBew6F2gATYN5Y/gNue6PtgwlFclCmgYyi8tAppgm0+CFEABFEABFEABFEABFEABFEABFLA4AYng+0vmISAWLMA6dpcXIq3sU+rf5RmGYRiGYYz5Aa2iLr51aTEOAAAAAElFTkSuQmCC{scale="+$scale+"}>"
+!endfunction
+
+IBMEntityColoring(logofacebook)
+!define logofacebook(e_alias, e_label, e_techn) IBMEntity(e_alias, e_label, e_techn, #232F3E, logofacebook, logofacebook)
+!define logofacebook(e_alias, e_label, e_techn, e_descr) IBMEntity(e_alias, e_label, e_techn, e_descr, #232F3E, logofacebook, logofacebook)
+!define logofacebookParticipant(p_alias, p_label, p_techn) IBMParticipant(p_alias, p_label, p_techn, #232F3E, logofacebook, logofacebook)
+!define logofacebookParticipant(p_alias, p_label, p_techn, p_descr) IBMParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, logofacebook, logofacebook)

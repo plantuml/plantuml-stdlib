@@ -1,0 +1,13 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $remindermedical [64x64/16z] xS61400000CXXFdRpkElMXu0001m
+
+!function $remindermedicalIMG($scale=1)
+!return "<img data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAAIGNIUk0AAHomAACAhAAA+gAAAIDoAAB1MAAA6mAAADqYAAAXcJy6UTwAAAAEZ0FNQQAAsY58+1GTAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAAOxAAADsQBlSsOGwAAA3NJREFUeNrtmk1oE0EUxzdto6UaheLBT+zFg7T4gb14UjwUqvELL7UtgkWtUHsp4sWLCl5yqIIfEAQpSAUPio0BD1704EFQVBD0ICWgpl5ssWJFq8b/0BdcptOd2WR3k928Bz/IJLNvZ96+efPmZS2LhYWlliXmg86Cx/co+Dnmulr3ADYAxwAzWQtSYCdYVeVzmgCPwRnw0QsDiMm/Bs0he7iTYLPOCCZLIBXCyVs05pQXMWBHiJe4duwNBkpWu1w2lc4DCg5j512ADcAGcB8DKn2+iLEHsAHYAKGKAWE537AHsAHYAOGIAYUS17rRdbwE2AAcAyK7z8c0sYA9gA3ABgg2BtSDY6AbbALLwSswCq6DH1E2wDqQAVuk77cSR0En+BDFJdAIHiomb5dW6tMYRQOcpAnqpJX6Rm4JHJba4kkfp883yPXtfS9L/b+DJbZ2AnwzvHdCoStwD1gvtfvBJ6Jf4QWyTEjtNhf3btPoCsQAf8s8+T2T2r0u9PVqdAVigLdSOw3WEGnptzeK6zNSW2yl7Qb3bae+TroCiQEjYJetLdb8Qn9Z31J8dw/kQAu1F9FE9oHnDpPPUN+i5EjXvOREJ+ek9nmXBngHdlv6PypfgAHwR7GExqVgmqDcQby78BXMgCawDZwFVynRsssRGkvgHvAL7AFZB9cVTzJJfVXyAAyDIdt3cXCC0Mkw6bAq4QHF7WeEIn9SkSecAtMaHY/AMrDd5b0vgdPVcBiaVQS9YlCcNdwhhAccpCWhk3HqO+RUEwhjQeQ+LadDYC/okX4fJXe/C35HsSJk0cTuED1l5AlcD6iEAaY1+bobSWh0V6UB8pqzQjnnjHwYDPBeaneUoatDo7sqDZBV5PalBOMGRa6f9aMekJfS2IKmv65uPwauUCYnZCMYpITFjQzStfY8Y8wPD3jisQd8ViREKakwopNOa/5rsGnS7bkBxFvXkx4b4QKYkjwxQylr3OG6OPXJSN47RTpdi8lZQGwtt6251+RXGGxbJmeFGTr9ddseQh0FtS7rf9lLLLelYAPos+ZKaF3SgxNJ0YEFagla8fUdPAPpI9ctNSMVkxdltZulDqC+wgZ4CZ7SCbHJ5bVfwH5VkSNMHlCUZipkiILIYk3fn+AauOhFbKoWA9gNkSRawErbzpGjfT7rQ1BmYWGpUfkHnOebJKLYg2MAAAAASUVORK5CYII={scale="+$scale+"}>"
+!endfunction
+
+IBMEntityColoring(remindermedical)
+!define remindermedical(e_alias, e_label, e_techn) IBMEntity(e_alias, e_label, e_techn, #232F3E, remindermedical, remindermedical)
+!define remindermedical(e_alias, e_label, e_techn, e_descr) IBMEntity(e_alias, e_label, e_techn, e_descr, #232F3E, remindermedical, remindermedical)
+!define remindermedicalParticipant(p_alias, p_label, p_techn) IBMParticipant(p_alias, p_label, p_techn, #232F3E, remindermedical, remindermedical)
+!define remindermedicalParticipant(p_alias, p_label, p_techn, p_descr) IBMParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, remindermedical, remindermedical)

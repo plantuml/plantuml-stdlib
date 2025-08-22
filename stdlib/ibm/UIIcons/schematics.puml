@@ -1,0 +1,13 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $schematics [64x64/16z] xS61400000CXXFdRpkElMXu0001m
+
+!function $schematicsIMG($scale=1)
+!return "<img data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAAIGNIUk0AAHomAACAhAAA+gAAAIDoAAB1MAAA6mAAADqYAAAXcJy6UTwAAAAEZ0FNQQAAsY58+1GTAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAAOxAAADsQBlSsOGwAAA/9JREFUeNrtmltIFUEYx+eoYEXZBSIJLcjoBpqRFD6URRK99NhDFwmsVKI7ZS8Rhb1oRGlXo4JeKqMeoiANu1iPPZRUgkEvKeFD+JCiZObpP+23sI5zdmc9Z/fsnjMf/GDnnNndmf/OfvN9O8OYNm3a0tkiCnWKwD5QBpbTb13gDbgJviS5DyvAXlAOloBs8Am8o/Z1TlYAfqGLoBpkxKjzF1wFx8EfnzueBc6DA3QssyiJcBQMyypk2nS+FWxzEIkLs5ZoAWM+dv4p2GXzcMwHXALWgYeyhxRLgMvUeVUrANNBm08C8Cdf4aL+QjCPRJugpOydrxZ+6wEnwWsqbwT1IN9S5yBoBt0ed34pOCT81gtqHdq3B1wDH5xGwCka0taLF4P3YJD4DO6CnSDH8joMgXaPBailIW1t30qF9kWIZ04jYIPkhv2Sev303z2hbq3PztBN+8plTky0RUK5w+bmHQGYyt20L0906hnpHgjJBPgmlMtszi8LQB/ctK+XYgNbH/AKFFrKDTS9ie/ZHPrPanXgtMcdrhf8jJv2tavEAT1C9JdD3rQP/KT5fit4LEwzo2A3+OWxALx9NUL7dii0jz/5KqrnGAo3SuZaJzsLzvg07C+AYy7PuUU5jVIk+JJigQLFiz8B+8X3y0Pjr+kasFix/lsKm5VDYR7TP6DhVeKQDNVR58f883v/79Wi0D4zGaqIlQyppMM89KyUBDjnKPTtTdV0WKbmZM8NVRyQ9oGQFkALoAXQAshsQCjPTzcBvgcwE/RVgBdCuYEyrlBbZpxZmDVLHAyjAG6juSZmfP0Ngg3QQ2mjTK/L6xFgflAoZRO/GybDeMw/l9pTQ8ftbpMytwKYWeJssDpA02gGpcel1L4xrwQwRXgOHoERMBNMoSeSbOMjcxa1zxMfECTLZcYKEJ+N8oRvFEWqPiEzxALYrVCNMMV1ylQIhc0VIKttTrdcQFwBWpBuAvwQyjN0NqgF0AJoAbQACYoE+fYTvqjIt6XwVePf4CslHpPOwuKwaCL7nGVTcSoz9glWCSdlkxCFlBpfASeYsTocOoslwDRKKNYrnH8ELGPGkvRoqviARoXOW20LMzYupMQIWMWMPXVWU9knyPcT8MXIbp/7EInHZ8hGQI1wUXOf4H1mfP/ro+NiNn5lmItZmQojYJNQDvo+wYT6gIgwrGWZlup/OhAKowBRcnhWC/o+wYT7AL5Byro5ys0+vAaaLYIcCTq+AjeEm/APjh/BdmZ8iMyl4042/mMkD4LupMII4PvpbzNj45Fp+YK3l1lTEmKAuEdELCd4mBl761St1Yeh7+ssMEThbbODwnzYXwprHuCUDQ5TVHg9YOmwNm3atCXM/gGqhN3nQ80GCAAAAABJRU5ErkJggg=={scale="+$scale+"}>"
+!endfunction
+
+IBMEntityColoring(schematics)
+!define schematics(e_alias, e_label, e_techn) IBMEntity(e_alias, e_label, e_techn, #232F3E, schematics, schematics)
+!define schematics(e_alias, e_label, e_techn, e_descr) IBMEntity(e_alias, e_label, e_techn, e_descr, #232F3E, schematics, schematics)
+!define schematicsParticipant(p_alias, p_label, p_techn) IBMParticipant(p_alias, p_label, p_techn, #232F3E, schematics, schematics)
+!define schematicsParticipant(p_alias, p_label, p_techn, p_descr) IBMParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, schematics, schematics)

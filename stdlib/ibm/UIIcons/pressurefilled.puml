@@ -1,0 +1,13 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $pressurefilled [64x64/16z] xS61400000CXXFdRpkElMXu0001m
+
+!function $pressurefilledIMG($scale=1)
+!return "<img data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAAIGNIUk0AAHomAACAhAAA+gAAAIDoAAB1MAAA6mAAADqYAAAXcJy6UTwAAAAEZ0FNQQAAsY58+1GTAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAAOxAAADsQBlSsOGwAAAl9JREFUeNrtmj8sQ1EUh1+VNBGWDgaDAaNYRCJiIiUkgoWwGMUq7MzFKrEZCBb/EkNFLBKRMIlNOkkakwGJNNH63eQ0MVTbd++5fbd95yRfItF3e++vr/d87+J5UlJSYa6IhTHztTTnhrDfARKABCABSAASgAQgAYgJ+qkVkHQwvBxYA9t+LopqvNEdeAGTmtfbqCxYBLt+L9RdwBO4B9MgFvDiP2geZzoXm3yCaZACU6AloMW/gVFwqzuA6S2cASdgAsSrvHj1NRwGzyaDcHyH38ERTaa9Sot/BCPg1XQgrk3sCxyAftBlefFXYJyC91wJoLATH4JO0Gtp8ftgFnxzDcjdxnK0J6hNcZB57C2wDH44B7XVx1PUnhKe+RGWCnUVbNiYqE2R4RAmbcFxIQBTYTISHFcC0BUmY8FxKQC/wsQiOK4FUKkwsQmOiwGUEyZWwXE1gP+EiV1wbB6IcL53kn5WBxn5ICYR+iOxoE50msAeWCJl7gYXZH11H4BygXOSnEKpvWCAWmW2ngNoo91+qMjvVFcYA6fULeouALXAG9BT4jXKD2bAZbXaYbUC6APXoKOC1ypTnKOwMvUQQII+0bjPfWIePNCzRM0GsACOQbPGtTG6E9L0VFlzAai/IO2ARsP5qT3hk84XaiIAZXibYJ3JNCPUHVqpgzgdwF/B4S4rwsQZQDHB4S52YeIKoJTg2PAJNmGKMk2onOBwF5swmQbgR3C4i0WYTALQERwbD1ZGwqQbgIngcJeRMOkEwCE4Ntq5ljDJf4t7IS8JQAKQACQACUACkACkpKSkwlm/Bk152BcPxJMAAAAASUVORK5CYII={scale="+$scale+"}>"
+!endfunction
+
+IBMEntityColoring(pressurefilled)
+!define pressurefilled(e_alias, e_label, e_techn) IBMEntity(e_alias, e_label, e_techn, #232F3E, pressurefilled, pressurefilled)
+!define pressurefilled(e_alias, e_label, e_techn, e_descr) IBMEntity(e_alias, e_label, e_techn, e_descr, #232F3E, pressurefilled, pressurefilled)
+!define pressurefilledParticipant(p_alias, p_label, p_techn) IBMParticipant(p_alias, p_label, p_techn, #232F3E, pressurefilled, pressurefilled)
+!define pressurefilledParticipant(p_alias, p_label, p_techn, p_descr) IBMParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, pressurefilled, pressurefilled)

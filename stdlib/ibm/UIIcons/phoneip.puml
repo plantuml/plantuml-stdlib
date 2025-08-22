@@ -1,0 +1,13 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $phoneip [64x64/16z] xS61400000CXXFdRpkElMXu0001m
+
+!function $phoneipIMG($scale=1)
+!return "<img data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAAIGNIUk0AAHomAACAhAAA+gAAAIDoAAB1MAAA6mAAADqYAAAXcJy6UTwAAAAEZ0FNQQAAsY58+1GTAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAAOxAAADsQBlSsOGwAAAWhJREFUeNrtmr1tw0AMhU+yWldJ4QQZwiMoVRZIZQ+SGbRIFsgA0QgZwrArNV5A4cFqDAiS7gc27/w94FU6wuATj3yGaAwAAIDHReEZ9yZshO/Cl5mzJ+Gv8Et4yEEAm/yf8MkxrhNutYlQesQ0HsmbIabRVgE+AtQBv1drE6DyiHl1vEb9RGySFZAVqghd3hX9jXOcnEJVxC6vFfYF7oQfY1OojNjltWN0CpUpdOqIqJdcgbkuH3qHixsnPTmFHn4KIAA+4P6I7QsKKgABECCpHlBQAQiAAPgAh/8ers+pAARAgLR9QOhzKgABEAAfQAUgAALgA6gABECAOD3gaK6/sfWOscn7gDZA8DaHK2A3LTqPuG6ITV4Au2FhNy2+zWX9ZA6n4ay6HcEQH2AT2eMDGIMIkKUPCJnz2nFcUgFtxi+8XSKA75zXjlEfsho5eB7m9kb4LFwnnrj1IT/CT40+BAAAAAD3wz/3nTmqu1PJxgAAAABJRU5ErkJggg=={scale="+$scale+"}>"
+!endfunction
+
+IBMEntityColoring(phoneip)
+!define phoneip(e_alias, e_label, e_techn) IBMEntity(e_alias, e_label, e_techn, #232F3E, phoneip, phoneip)
+!define phoneip(e_alias, e_label, e_techn, e_descr) IBMEntity(e_alias, e_label, e_techn, e_descr, #232F3E, phoneip, phoneip)
+!define phoneipParticipant(p_alias, p_label, p_techn) IBMParticipant(p_alias, p_label, p_techn, #232F3E, phoneip, phoneip)
+!define phoneipParticipant(p_alias, p_label, p_techn, p_descr) IBMParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, phoneip, phoneip)

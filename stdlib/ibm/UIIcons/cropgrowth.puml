@@ -1,0 +1,13 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $cropgrowth [64x64/16z] xS61400000CXXFdRpkElMXu0001m
+
+!function $cropgrowthIMG($scale=1)
+!return "<img data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAAIGNIUk0AAHomAACAhAAA+gAAAIDoAAB1MAAA6mAAADqYAAAXcJy6UTwAAAAEZ0FNQQAAsY58+1GTAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAAOxAAADsQBlSsOGwAAAtBJREFUeNrtmc9LFGEcxrc1tsDE6GQhegmM9tCf0CHssBAd6lAEQSFRlCgJnTxYx6AiKjz041hREAQVVEpEpwSDKMWLHaxUCEIzCMpte154Bl5eZnZm3Z2d7zTfBz7IvO7szjz7vt/3+c7mciqVSqVSqbKqdQKuoRIwXgafwQfwBtzncUPVIsCAkYDxPNgMekAv6AfbwST4kQUD/AzZBY6DT2AqawZ42ggOgiXwtt4PXy+4Lm0CXWAv6ANF5zVXwDx4yLEd4ARf383zQ+ueRAM8/QTT5Bo4CS6DgnUjN8EEGGSNaEnjDFgBbdZxG8fcHeEGmAHPLBPaWQta1/rheQEGzDvHXVVeOw6GnLHWtNeAWW51nnpDKvwol0PR539fwDnwCiyG5AwxM+Cpc9wXspbNcrgVcPNmm7xn3XwqlsBjsGodm2/2VMg5L33GzDf/3Rnb5lNvxBnwFdxxxi6BPVXOmfMZe+0ztjvsPAkGeGHIjrcFVvvTActhJUIx3QIuOmMvJCZBb8//CA5ZQcVcWwkcoCHGoF/gd0CCPM+/HWAfeAQ6ndphgtI3ad2grTPgakwz8zrDksgZ4Mmkunf8Bjc08H3HwFHwN8rzgET7c2orp/SxOrNKmbnhLPgT9YFIJeKbm63rLhiO0YhOzoYSw1KHE5uDorW5nufMC9O1PhGq1HiRyywuDxJ+krSmetaIYtPO5TCQS6GirK+m9ucSDWhqfy7BgET782YrL60/lzADEu3PJcyARPtzCQYk2p9LMCDR/lyCAYn251IMWABHnO6pwJbyPff5nVXCjS2T3w/zPLc/vy05CT5hvHX78yJTX61Z3W/3mJI6A+yHCPtjKFZjbFFz0g3wZkIPY+5qnZ9XpqmloP5cai+wwMbmQtz9ueRmyAs3oySW/lziEvivpQaoAWqAGqAGqAFqQHbViF+GUn3PugTUAJVKpVKpVKqM6h9qJ7ZWZcmcCwAAAABJRU5ErkJggg=={scale="+$scale+"}>"
+!endfunction
+
+IBMEntityColoring(cropgrowth)
+!define cropgrowth(e_alias, e_label, e_techn) IBMEntity(e_alias, e_label, e_techn, #232F3E, cropgrowth, cropgrowth)
+!define cropgrowth(e_alias, e_label, e_techn, e_descr) IBMEntity(e_alias, e_label, e_techn, e_descr, #232F3E, cropgrowth, cropgrowth)
+!define cropgrowthParticipant(p_alias, p_label, p_techn) IBMParticipant(p_alias, p_label, p_techn, #232F3E, cropgrowth, cropgrowth)
+!define cropgrowthParticipant(p_alias, p_label, p_techn, p_descr) IBMParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, cropgrowth, cropgrowth)

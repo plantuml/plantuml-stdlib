@@ -1,0 +1,13 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $ibmcloudHSM [64x64/16z] xS61400000CXXFdRpkElMXu0001m
+
+!function $ibmcloudHSMIMG($scale=1)
+!return "<img data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAAIGNIUk0AAHomAACAhAAA+gAAAIDoAAB1MAAA6mAAADqYAAAXcJy6UTwAAAAEZ0FNQQAAsY58+1GTAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAAOxAAADsQBlSsOGwAAAmBJREFUeNrtWitPA0EQvpaCwxAEkAIJAgECjSoEQVHoKgQJj4QiKhosjp5AYBoIWKpRhBQC/QkI+AHkeKgKJKQcszAkl+PuOr1uere38yVfcq/d7nw3O7vTG8NgMBgMBoOhK1LE57JAE7gAHI25Ta/AO2AZaMkQQBh/DxxS7OU2gXPtREgTOjIVNN7AMZvtHqIIkFN4ircde4bQyVjIuBEV7ICxh/KARCMjoY8V4AkebwAvVRJAhgcc40qRxWPtPEDVvY00D9jEtdbCY+08QMz5cVXdRftVgDJfninraQRjtGXYSPGARpI9gCJAGRMLbQWwMKuqYaqp75oZYi8eRe5gy44Bhu4xgAXgbDD+eT97AAvAAugXA7rNEdgDWAAWgAVgAVgA3gfQ0E19QLd79lTUAqhaHyBtCqhSHzANrHhcr+C90B4Q9/qAfuABcNfHHvGnbgl4BNwDfnYqQJzrAwaAF8A8YaoLEWaAq8CPpKwCJsF4J/KGq2xG5foA8TaLrmsWuvwtni+iwVnHM0Uc76MsD4iqPmDLNX7n94s3ZM34XymWxrbKT4Elj2Dn9QWrifc826pcHzDpOg/6htnwa6tyfcCXjLYqT4GnDvYrOb+2FA94ce0F7B4b6rfvqANnXUvilUcc8KoYrXfiAXGtDzgFtjxylgJwBFnAa85lsIVtyR4gIuhyDPOBB2AVuOMS4bxNuyq2/UEf4YfesVORBg8DB3ts6H7AvRvgPHCK2Nc1cM3pOXGv+6UmQ4fA7YAX2sI3X3InQ0kQ4A8iIK7jdJ1wRHsRGM+cbs9gMBgMxi++AayDZOuF+yDIAAAAAElFTkSuQmCC{scale="+$scale+"}>"
+!endfunction
+
+IBMEntityColoring(ibmcloudHSM)
+!define ibmcloudHSM(e_alias, e_label, e_techn) IBMEntity(e_alias, e_label, e_techn, #232F3E, ibmcloudHSM, ibmcloudHSM)
+!define ibmcloudHSM(e_alias, e_label, e_techn, e_descr) IBMEntity(e_alias, e_label, e_techn, e_descr, #232F3E, ibmcloudHSM, ibmcloudHSM)
+!define ibmcloudHSMParticipant(p_alias, p_label, p_techn) IBMParticipant(p_alias, p_label, p_techn, #232F3E, ibmcloudHSM, ibmcloudHSM)
+!define ibmcloudHSMParticipant(p_alias, p_label, p_techn, p_descr) IBMParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, ibmcloudHSM, ibmcloudHSM)

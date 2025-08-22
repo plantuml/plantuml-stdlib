@@ -1,0 +1,13 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $flightschedule [64x64/16z] xS61400000CXXFdRpkElMXu0001m
+
+!function $flightscheduleIMG($scale=1)
+!return "<img data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAAIGNIUk0AAHomAACAhAAA+gAAAIDoAAB1MAAA6mAAADqYAAAXcJy6UTwAAAAEZ0FNQQAAsY58+1GTAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAAOxAAADsQBlSsOGwAAAeNJREFUeNrtmrtOhEAUhkFpNNoYY+L1AWw0kV4qbW200EIbfQJja2h5A9liKy20sdVm19KCwmafwEthYmG2x594TNAgMAqBgf8kX1wXZOd8nDnObDAMBoPR5jBLuGZY8GeEZY55pO0VQAHsAfliAXjAAbM1z+kF9MEJeCxCQJT8A5jS7Oa+gZUsCXmmgKdh8oaM2SuiB6xrPMUzx27luMic4rSpeh0Qpoyd/wUogALUe0DV+wuTFUABFEABFEABFEABFKDJSrDqMFkBFEABFEABFEABjV8HbAJfXh+Bm7ZVQAcsCZ02ToHFX16zB1AABVBAowU4oJfwfk+ONXYdECV3mpKkI/SBKz8bISAr8X+JsBqU+J9EWA1MXElEHZtgWjMbgjNgJxyz5dhQpXnq0gQD2fhcpCQYCMdgVzZIazo3wSjRc9noBIp/5wuRgEOwByZ0EZDnbqtc62dV1F6AXVI1+bHvD7gUVqmAZ+P783ZhwWMwqxSQpwLuanbTxkE34f2uHFOK0Rzn3IMDMFZSQq7CucvgFmwkHFsFW7LQeS1SwLt05Ogx+WkwWZGAfXAN5lPOmZGb9WR8PuFe7/mnGPHeMwCX4Ep+3wY7UiFKuem0HY4nPUioIlcEfMlgMBgMBiMjPgDbLVOPspj1OgAAAABJRU5ErkJggg=={scale="+$scale+"}>"
+!endfunction
+
+IBMEntityColoring(flightschedule)
+!define flightschedule(e_alias, e_label, e_techn) IBMEntity(e_alias, e_label, e_techn, #232F3E, flightschedule, flightschedule)
+!define flightschedule(e_alias, e_label, e_techn, e_descr) IBMEntity(e_alias, e_label, e_techn, e_descr, #232F3E, flightschedule, flightschedule)
+!define flightscheduleParticipant(p_alias, p_label, p_techn) IBMParticipant(p_alias, p_label, p_techn, #232F3E, flightschedule, flightschedule)
+!define flightscheduleParticipant(p_alias, p_label, p_techn, p_descr) IBMParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, flightschedule, flightschedule)

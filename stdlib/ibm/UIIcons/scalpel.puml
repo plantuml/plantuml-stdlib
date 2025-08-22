@@ -1,0 +1,13 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $scalpel [64x64/16z] xS61400000CXXFdRpkElMXu0001m
+
+!function $scalpelIMG($scale=1)
+!return "<img data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAAIGNIUk0AAHomAACAhAAA+gAAAIDoAAB1MAAA6mAAADqYAAAXcJy6UTwAAAAEZ0FNQQAAsY58+1GTAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAAOxAAADsQBlSsOGwAAArRJREFUeNrtmj1IHEEYhvfOYBU1KikUFK3EMuIfMYFD8AesVFJYROxFxUprq6RKkTQhTbAIQkAQQfwBEUHQpFERI9iIEQsJkog2oug7OAfLsLO33n4zO7uZD57ixt2D53V2vp29dRxbtmzZsmXL1v9aqQQ41IAh0A6q+NhvsAq+gqOkBvAEvAMjoFByzDX4CCbBjdcBBTGVfwoWwUAOB/a3l+AVmAG3SQggK//6EefUgnKwEPcAsvJtwvgpGAaj4APYBi2gyHVMA5gFZ3ENQCb/k49tgQvOLpgGb10hpPk6sOg+OZ0A+U5w7nHOHzAhjHWIB6UTIP/X59w14XN13AIIIx+o0gmXzwifj+MSAIV8GXgvjK143U3FRf4Hl/8X4Due8e+ocI2xm6Avps8AKvll0CSMfwZ7JgegUn4djJu8CKqU3wA9fGNk5G5QtXw3uDS1DVLIl+QrH3UXkMmze/ouHfJRXgKU8s35ykcVgDHyUQRglLzuAGTym1z+Qre8zi4gk/8VpbyuJ0IyeValYAfsB5Bfch4ec5HJ6wjATz47A3vBgU8IyuRVB+A37Utdl59fCErlVQbgt+Bl+LTvzRGCcnlVAQRZ7fe5rCyEEy7fqlJeRRt8bKt7A74Jt+Ts0fUhqFctTz0D/K75jKTVyWbCcx3ylAGEaXVeIWiRpwqAotWxa75P53+eKgCKVlfMF7wXuuXDBkDR6op1rfbUAcSq1VG3wdi1OsoZkM+WNvJWRxVAmP18pK2O4nkAxcOMJT7tjZEPGgCFfHa1rzdJPsgiSCnfapp8rgASL+8XAIV8JZgDjabKywIII8/e2KwD/WDMefjNzlh5rwBybWzClHHyYgAq5dkLioPgyjGsUorl2bt6U+ATuHMMrBSxPHsJ4ZTvBOfB94ALpi1btmzZsmXLlva6B7OcGt5fXCS1AAAAAElFTkSuQmCC{scale="+$scale+"}>"
+!endfunction
+
+IBMEntityColoring(scalpel)
+!define scalpel(e_alias, e_label, e_techn) IBMEntity(e_alias, e_label, e_techn, #232F3E, scalpel, scalpel)
+!define scalpel(e_alias, e_label, e_techn, e_descr) IBMEntity(e_alias, e_label, e_techn, e_descr, #232F3E, scalpel, scalpel)
+!define scalpelParticipant(p_alias, p_label, p_techn) IBMParticipant(p_alias, p_label, p_techn, #232F3E, scalpel, scalpel)
+!define scalpelParticipant(p_alias, p_label, p_techn, p_descr) IBMParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, scalpel, scalpel)

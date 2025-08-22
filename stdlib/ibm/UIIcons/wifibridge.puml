@@ -1,0 +1,13 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $wifibridge [64x64/16z] xS61400000CXXFdRpkElMXu0001m
+
+!function $wifibridgeIMG($scale=1)
+!return "<img data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAAIGNIUk0AAHomAACAhAAA+gAAAIDoAAB1MAAA6mAAADqYAAAXcJy6UTwAAAAEZ0FNQQAAsY58+1GTAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAAOxAAADsQBlSsOGwAAA+1JREFUeNrtWk1IVUEUvlm6kN7m2cL0BYJZtNOgkCJtFxRYSmAibSKRxIUbW4SgD8VFbVyIFUmbCBPCUihol0YRBdkuSoUW9pJINy8K/MnO0LkwnmbmnXffXLvofPAtzvW878w9d+6cM3P1PAcHBwcHB4ftih3AdcW1rYwN95u33WeAS4BLgEuAS4BLgGV0A1tC0G1BbavYFcLN9wDXgN+A45Z0zwJvAneinYziDLiGN+/hQO8BKyzoVqCWf/M9GCtyCXgPXJXsGPABsCAHzQLUiEnXVjFW5BLwFNhOrh0GduSg2YEaMtoxViQXwdvAUXKtC1gSQKsEfytjFGNEugq0ARfJq9AZQKeTTP1F1I5EGRRPplbztyXFk7sMjGehH8ff0JhLGv9aRczQEiBKXS/wIbBM43MXOC/Zu4HNWcRoxt/4mEdNFcpwLL1B+oS8ADfvl7o9wBGN3zJwiFxryiIO9R1ETRVGcCx+iewOMwE/iV0NbND4Plb4FjNiFKOvj9/A+xrfBuIr8CvMBNwAPiLX+jS+H4Bzki1OmmoYMWq8jadSb8jrZIotxnY97DXgKnBFsg8BqzS+T4h9jKFPfZ5r/Kowto8VHFvoi+CsYhbUaXxfEvsgQ5/6TGv86hRPf3azyuCEogyp8JXY5Qzt8gwaupgTtnaD61LpEbX4mcLnLbFLmQng9AJxZgJKM4zJxyngMDCR7QxIGNrOFLH3avwWiB1jJCCWQUMXM2VozxPuRChAAsQr0GrYqHCmKa37acaY0hk0dDF1G65WQxlVrgGcL0NHiP2FOU2XGNrCp4hoqFZ3EfMAGdMnhZ9Yw/Yp1ricXgFagiaZCZhjaM8x15dJZim2Xgb3A+uZJYg2SB8Z+tTnOLMU1zPLbM4JEK1mPml5dc3KSWK/YuhTnzMav2mM7SMfW/VQE9CpePpdhjJ6lLx7U4wYU+Q9LSctryl2fbaHL9kmoJDYr4Fjhj19HvFdYMRYQF8Z5zS+YwrfwjATkJTOA74b9vjiNLddsW/ngvq2efrT5SYci38ekNU3gyAfRkQA8eHjBfCzxucS6b5+GPb0KgjffulUKIGatxS+YgzngScMW3Prm6E+Q+mLKwYyzOwB5F5gWBEzbiiJfUFuJIxWeIg0MukgqzP+Ru4Ki7x/j9lCbYWDQLSdjYonlwqglVI81UZDe/7fE3Da+3t4KeMdcCAHzQHUkDGIsSKXgEqyqIrpe8HTn+ZysIwaabJwV0YxAf1SiRRV4iJwxoLuDGqtSaWu39agbf9/QFJ6f8ct6gqtK7jlTdocsO0EeLYHKOHOZh+IbPsTIZcAlwCXAJcABwcHBwcHB4ctiz+Xh7nJKMZ1zQAAAABJRU5ErkJggg=={scale="+$scale+"}>"
+!endfunction
+
+IBMEntityColoring(wifibridge)
+!define wifibridge(e_alias, e_label, e_techn) IBMEntity(e_alias, e_label, e_techn, #232F3E, wifibridge, wifibridge)
+!define wifibridge(e_alias, e_label, e_techn, e_descr) IBMEntity(e_alias, e_label, e_techn, e_descr, #232F3E, wifibridge, wifibridge)
+!define wifibridgeParticipant(p_alias, p_label, p_techn) IBMParticipant(p_alias, p_label, p_techn, #232F3E, wifibridge, wifibridge)
+!define wifibridgeParticipant(p_alias, p_label, p_techn, p_descr) IBMParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, wifibridge, wifibridge)

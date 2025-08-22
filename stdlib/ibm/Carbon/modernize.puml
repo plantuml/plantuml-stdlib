@@ -1,0 +1,13 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $modernize [64x64/16z] xS61400000CXXFdRpkElMXu0001m
+
+!function $modernizeIMG($scale=1)
+!return "<img data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAAIGNIUk0AAHomAACAhAAA+gAAAIDoAAB1MAAA6mAAADqYAAAXcJy6UTwAAAAEZ0FNQQAAsY58+1GTAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAAOxAAADsQBlSsOGwAAAqlJREFUeNrtmz1LHEEYx8e7R0EbLaKNhYUpxE8gqeQgoo2dYCFYaYogkrRahfMjpEisFSytg6cgvnwCkyIBX1JpYScomPgfdhY2e3e6tzvzzMvmgT+3u7d33O/HzN7dDo8QJa+uErFOIEtqexM5lRvVEsEfIv3ICPIR+Yb8TgtYRKaQ48AEfEIGkHHkM7KAvEJ2KXXiPDKtTK0HJKDa7lj6CWlmGKkh3UgjEAHXyKrie6+mwQpy1UrABbKDrAUk4QrZQ+aQCjIbT3Nq84J4+K+l9n0uCfwjsS2eExCqhKaiF573VUIt69StZDhHQm8oCXUP4Otqvtd0jADfRkJdfcaNrCOAOnhz1yUk4dd1XQN8kZALPo8AFyXkhs8rwCUJheCLCHBBQmH4ogJsStACr0OADQna4HUJ4JSgFV6nAA4J2uF1CzApwQi8CQEmJBiDNyVApwSj8CYF6JBgHN60gCISWOA5BOSRwAbPJaATCazwnAKySGCH5xaQljCI9Kj9B2SZG96GgFjCkAL+qY69FtGCJfvfahsCZPUiv0S0VifrO9Jn44NURMnL1gi4Q0aRM7UvtxtlEVBX8/9r4iLYUMeuQ78IPvdVdyMs3F4jR+A5b6pYEZD1Rw67BHII3ooEcgyeXQI5CM8qgRyFZ5NADsOzSCDH4Y1LIA/gjUogT+CNSSCP4I1IIM/gtUsgD+G1SiBP4bVJII/htUggz+ELS6AA4AtJoEDgc0uggOBzSaDA4DuWQAHCdyQhKeANMiaiXkJ5y3rJY/h2EpqqmoA/QG6RP8hbEa3VfRD+l1xz6FYSZEOY7InaSo+Ad8il+HetbgbZF+HUvYjWJFtOgccWL/grwqoT9bidPBj3DsetpedqX/bVTYrwOkibKtk8HTcXy/nyBTkS/yv8egJXatLXj0W0rAAAAABJRU5ErkJggg=={scale="+$scale+"}>"
+!endfunction
+
+IBMEntityColoring(modernize)
+!define modernize(e_alias, e_label, e_techn) IBMEntity(e_alias, e_label, e_techn, #232F3E, modernize, modernize)
+!define modernize(e_alias, e_label, e_techn, e_descr) IBMEntity(e_alias, e_label, e_techn, e_descr, #232F3E, modernize, modernize)
+!define modernizeParticipant(p_alias, p_label, p_techn) IBMParticipant(p_alias, p_label, p_techn, #232F3E, modernize, modernize)
+!define modernizeParticipant(p_alias, p_label, p_techn, p_descr) IBMParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, modernize, modernize)

@@ -1,0 +1,13 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $helpdesk [64x64/16z] xS61400000CXXFdRpkElMXu0001m
+
+!function $helpdeskIMG($scale=1)
+!return "<img data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAAIGNIUk0AAHomAACAhAAA+gAAAIDoAAB1MAAA6mAAADqYAAAXcJy6UTwAAAAEZ0FNQQAAsY58+1GTAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAAOxAAADsQBlSsOGwAAArhJREFUeNrtm19ojWEcx1+m1cqdSFzouODmtPxZapZaLk5J7lwwFFIjhxZppHPF1dwpUcaFEeKUkjTF2iVLs4MkauW/IWWaVjg+r31Xx/Ln/Hvsfc75/erT6uz9/c55P89znvf3vO8WBBYWFhZVHFMm4T3rIAErYbZeewO34AZ8qVQBU2EnpGAmDMFj/W4hzIJ3cAiOwfdKEjAdzsNquABHoH/CMYthH6yDa7AePrv+YDX/aeQva8q3wGFN+YkRvpaGB7AHlsJFyPouIAm7dfLpPI5/pK/GQfgAd1yPjusFL6WRTBeQl1ZOSjW8FZDQgtdRRG6HchM+C2iGV79Z8PKJfuU2+yxgLgyWkD+oGt4KCGPaJOVGQsBziJWQH1MNbwX0qsNrLCK3Ubm9PgvohvfQVkRum3K7fW6EvsEnaIencD/PvA3qAcKO8LbvnWB4OVsEe+EF3PvH8ZvhpPYD7ZXQCmd1MttgIzz5y0wIN0Bd2hWGe4fRStgMrZCAeXAVOuHjH44dgfnaCK3VbHnm83Z4OxyFh7C1gI5wCZyCOOyCEz7OgFY4DudgDbwsIPc1nNZsOKCt8l2fBCyHS3AWtuhqUGiEd4SuqBnaDzddNEUu+oBaOAMDmgWlrOJZ1RhQzVofBLRq1HaUaRUfVa2YakdeQFKrfl8Za/apZjLqAhpggS515Y5O1W6IsoAm+Ao9DgT0qHZTlAXE1fMPOxAwrNrxKAuYEYw98HAVQ3qPyAqoUzvrKkaCMt8lHm+FN6lVLTXq9TPjSEA564edZtf4DGjJKV5KZByefDnr1+ucf7npGD6BWRVUR1x32Qh5FSbABJgAE2ACTIAJMAEmwASYABNgAkyACTABJsAEmAATYAJMgAmonsh9MrQscPNcP4oRPhr7+b9INTkzYU4VDfzbYOyPrjLV/g0IfgBaoIfuPUGDggAAAABJRU5ErkJggg=={scale="+$scale+"}>"
+!endfunction
+
+IBMEntityColoring(helpdesk)
+!define helpdesk(e_alias, e_label, e_techn) IBMEntity(e_alias, e_label, e_techn, #232F3E, helpdesk, helpdesk)
+!define helpdesk(e_alias, e_label, e_techn, e_descr) IBMEntity(e_alias, e_label, e_techn, e_descr, #232F3E, helpdesk, helpdesk)
+!define helpdeskParticipant(p_alias, p_label, p_techn) IBMParticipant(p_alias, p_label, p_techn, #232F3E, helpdesk, helpdesk)
+!define helpdeskParticipant(p_alias, p_label, p_techn, p_descr) IBMParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, helpdesk, helpdesk)

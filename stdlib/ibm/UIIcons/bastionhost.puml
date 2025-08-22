@@ -1,0 +1,13 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $bastionhost [64x64/16z] xS61400000CXXFdRpkElMXu0001m
+
+!function $bastionhostIMG($scale=1)
+!return "<img data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAAIGNIUk0AAHomAACAhAAA+gAAAIDoAAB1MAAA6mAAADqYAAAXcJy6UTwAAAAEZ0FNQQAAsY58+1GTAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAAOxAAADsQBlSsOGwAAAq1JREFUeNrtmk9IlEEYxsddSRBUWEja7FCHDpJQdvBiImgexEP3RDqlh0iwU4cgioK6FJRelJAuXTuJINJN0FtR2qEgQkowEDIlisKeYUdYXr/2m/Gb/XaWfR74Hfb7M/POM+83f3SUoiiqllVn+dxp8ABcBM0R93+DJXANvBf3joA74ArIW9a3AZ6D26bsYrWDKdBtypbaBovgJvgQV1HWsvHL4DxoKFHOKXAJPAO/iu7dN8E0OXSMfvaCaeCiuK5jOVsi9gZj0jB4CbZKVZSxCEb3fM4y8BNgXFwbSZCh8t1xU4eNciZ2ldSAfsegJ8RncjyBAcXv6jJvOL7f72MM+C4a1Aq+icA+OWRJXJ17luVsmc9uu+jaUbApxoOWpBkgB5IzEYPO4woM4I9E46Ni++jjE1iNqUTrSdxg41m6rqcR12Vs79IyIO0siOp9rY6Y2A+o3pMBWvcMaa1NlEUGrJYjAzoCXtiVxYDPYEfMr/kAG58XM9GOiT2xAXpaWrP8DELq/TWbKTVjWbhMpa4ADehyTX8XA1bEb70i60s4YPnc0PVFrBJXfI64rWa111glu9yf4KRYFR56N6i1C/6AgSox4BZYsHkw61DoksmA7oAbrjvpIbhbzkVHD7gOes2nUWntz1JvzPb3bVqrrv/t3upSaLC3+jKqxkUDaAANoAE0gAbQABpAA2gADaABNIAG0AAaQANoAA2gATSglnSYv6nrw4uj4LIqHJZoqnAbfqjCWaAXYFodPFnq1QB9bm8OnAu0Q1+DIfDV9oWsY8+/Ap0BZ/QxVfhX+Sz463sMGA288fvqNLFaqd6h4GHxex5cBV8q3OA2MAMGRayTvjNAnsEZC6DxysQwFhOrFwPkaL8eUNqvx8TKdQANoAHJZwGpPWYADaABFEVRVa1/S81pe7zplbgAAAAASUVORK5CYII={scale="+$scale+"}>"
+!endfunction
+
+IBMEntityColoring(bastionhost)
+!define bastionhost(e_alias, e_label, e_techn) IBMEntity(e_alias, e_label, e_techn, #232F3E, bastionhost, bastionhost)
+!define bastionhost(e_alias, e_label, e_techn, e_descr) IBMEntity(e_alias, e_label, e_techn, e_descr, #232F3E, bastionhost, bastionhost)
+!define bastionhostParticipant(p_alias, p_label, p_techn) IBMParticipant(p_alias, p_label, p_techn, #232F3E, bastionhost, bastionhost)
+!define bastionhostParticipant(p_alias, p_label, p_techn, p_descr) IBMParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, bastionhost, bastionhost)

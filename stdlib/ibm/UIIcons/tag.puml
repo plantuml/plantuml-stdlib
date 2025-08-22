@@ -1,0 +1,13 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $tag [64x64/16z] xS61400000CXXFdRpkElMXu0001m
+
+!function $tagIMG($scale=1)
+!return "<img data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAAIGNIUk0AAHomAACAhAAA+gAAAIDoAAB1MAAA6mAAADqYAAAXcJy6UTwAAAAEZ0FNQQAAsY58+1GTAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAAOxAAADsQBlSsOGwAAA4ZJREFUeNrtm0tIFVEYx48zFgRhJST2kjatXFQGFW0ypHZBWRG0aGMviDZBBG167DSIaNELA4kgN7VJirQQVy6EIMJVRGFFC8sWtTDrav+D34VhOPM6c15z73zwA+dwz8x8P8/bK2NllFFGPUdDRPl60Ac6wRrFz/wERsBF8NNFATz5t6BZ87M/gy7w3qYAX1B2F2w38OwVoBs8AzO2BHiCst0Gn78OjIJNtgQ0CsrWphwnZLvcfXBCIGGPje7gGX7eAjgF+l1pCZ6FVueUBM9S13NGQqOCe7RTn94H2qhsCgxTgpMJEpjNMUE0DV4JXV+NqLsE3AIPwC6wGiwl+M87wWnQQguf+Yj7DFHSHYGyJlNTpKwAnuQLcDShG3m0puCCBkHFNQmyY8ANWsWljS6q49yYINMC2qnZe6Fl7RlwjhJ9A3bQb7Ea28ATMB3zPsZbgoyAS9Skg8lvARPgN/EOPATHAhK4sDnwMuGdjEqQ6QJ7Q9cXIl7qB+344upa7w4yAtpC12Mxnx1LqGtdgoqFUENCIk4vlmQETGXYPXYm1LUuQUbASOi6L+LwhJf1hsqGXWsJMrPAF1rheYGDDT7afwPfwXKwHzyl06VqVCiRacl31TI7yOwFJunU6GygbAN4nFDvTsy+IEtLULp3kB0Ez4PXGT7/iuo4t4uU3QtU6DfeTCu8KJH8c7fBcfBX4fStrDuIBFwOTW3XIury3d1zWt7O0QssA3/AB/AInKQV4byGZbwSCaI5/CPYGLjup2a3wNwL0Rkjj69pxwRRC9gMtgauO8j0EHMzcrUEkYAJ2uc31YMEkYBfdMPuepDgR9xshirVvAQ/5ma1JuEAGACzaQXUmgS+ZF8Zfmc/xc1qSQI/rb6ZVUCRJbTSxqwa/8B1GQFFlNAD7oUWe3xPMigroEgSemiFGNyj8MHvEFs8q5QWUAQJouT5/uQIGM8yDRZRQlTyh6Peyc/xMNckZE4+rwCXJEglr0KACxKkk1clwKaEXMmrFGBDQu7kVQswKUFJ8joEmJCgLHldAnRKUJq8TgE6JChPXrcAlRK0JG9CgAoJ2pI3JSCPBK3JmxQgI0F78qYFZJFgJHkbAtJIaKWTHO3JM6b2fwGyBv9T9iglHRfakrfVApJagrHkbQsISjgokDBLx1hat9O2BVQlDIBVbPHcnn+pgn8Rix9gjrMyyiijDI3xH6m2QL6mW7QmAAAAAElFTkSuQmCC{scale="+$scale+"}>"
+!endfunction
+
+IBMEntityColoring(tag)
+!define tag(e_alias, e_label, e_techn) IBMEntity(e_alias, e_label, e_techn, #232F3E, tag, tag)
+!define tag(e_alias, e_label, e_techn, e_descr) IBMEntity(e_alias, e_label, e_techn, e_descr, #232F3E, tag, tag)
+!define tagParticipant(p_alias, p_label, p_techn) IBMParticipant(p_alias, p_label, p_techn, #232F3E, tag, tag)
+!define tagParticipant(p_alias, p_label, p_techn, p_descr) IBMParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, tag, tag)

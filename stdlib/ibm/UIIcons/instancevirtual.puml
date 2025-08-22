@@ -1,0 +1,13 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $instancevirtual [64x64/16z] xS61400000CXXFdRpkElMXu0001m
+
+!function $instancevirtualIMG($scale=1)
+!return "<img data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAAIGNIUk0AAHomAACAhAAA+gAAAIDoAAB1MAAA6mAAADqYAAAXcJy6UTwAAAAEZ0FNQQAAsY58+1GTAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAAOxAAADsQBlSsOGwAAAQ1JREFUeNrtmb0NwjAQhQ2kpYIGBDswQlpqdoANYIawAQzABEi0GYEholClYYFwEdckWMjQ5fx90pOsyCne80/OjnMAAAAAABAjA8+z+sd3et1/GPsMIAB2AQAAAOAsEF5Lm/JMKUwAAAAAAJwFWixER1EqmvXc40OUi/aiIiSAxvxdNDE22JVo1Q3BVwpnBs079ZSFnAVSw0v+w1vi6TQP3Cf6Qv3FG6dBAog9gOSPd9ais7a3oltsM+CktcJC2yyB2ALYaTVVaDu6PaBZ80u+AgRAAGbrgLJTM1v6V1iGzIDc8IDnIQEc9PLAGpV6azHydHyKLu59FTYVjXtuvLkSu4o2znMlBgAAAPHyArQLIs9qx3PCAAAAAElFTkSuQmCC{scale="+$scale+"}>"
+!endfunction
+
+IBMEntityColoring(instancevirtual)
+!define instancevirtual(e_alias, e_label, e_techn) IBMEntity(e_alias, e_label, e_techn, #232F3E, instancevirtual, instancevirtual)
+!define instancevirtual(e_alias, e_label, e_techn, e_descr) IBMEntity(e_alias, e_label, e_techn, e_descr, #232F3E, instancevirtual, instancevirtual)
+!define instancevirtualParticipant(p_alias, p_label, p_techn) IBMParticipant(p_alias, p_label, p_techn, #232F3E, instancevirtual, instancevirtual)
+!define instancevirtualParticipant(p_alias, p_label, p_techn, p_descr) IBMParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, instancevirtual, instancevirtual)

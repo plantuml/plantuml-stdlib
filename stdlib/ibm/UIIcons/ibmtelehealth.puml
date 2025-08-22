@@ -1,0 +1,13 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $ibmtelehealth [64x64/16z] xS61400000CXXFdRpkElMXu0001m
+
+!function $ibmtelehealthIMG($scale=1)
+!return "<img data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAAIGNIUk0AAHomAACAhAAA+gAAAIDoAAB1MAAA6mAAADqYAAAXcJy6UTwAAAAEZ0FNQQAAsY58+1GTAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAAOxAAADsQBlSsOGwAAA8pJREFUeNrtWkloFEEUrckEEzAxBwWNGyaIeFLjhksQvUWIHtSDuN416C2HeBCDeIg3xYMeFMUV3DBCxIsGRELQGFEhRBE0mmgwBzWuRMdXzB9sip7uqa6q6WpSD96he3pqef3/r/q/izGH8Y2UJeOYAbaB68BqxbaGwHtgM/g+CQLwyT8FJ2tudwRcGCZCqeZOl4MbwFXgbHAaOAEcBPvAy+BZ4T9tBibPqE3e9nbTAqSok0NgbZ5n5hAf+fy21qB1hbatKsB88CJYV+DzN33uTdfslpmAtjkqwBPgbn5RotBRA9glMfk34OOY400djWGXqgWsB9vBtHD/F3gVvA12gx/pjdSAk2Ke/D6KCWWqLsDN/pLP5M+DLeCAz39exDhxHgzPUHBWjgEp8vkqz70xsAk8aelepxecme9H2RiwzcfnbZ48C5q8rAD87bf6mL3Nkw+FjABLhXX+J/m87XinS4CNwvW1PAHPNiyiFUtZgHrhuj0hVj5CL28/LdORBRB3VT0Jc/dj4EqwP6oA1T5pZ9LwBFwCnjOVDUbBoGBdGc1tixjN5QGyFjAUYhFRcd+guKFtlyiouVjTIJspUJkIfs1hD6UlGpwLrhESn+saBvoVvEDFkylgpWJ7Q7RCbWaaS2LLKMPzboTmJWQvoMUFeDXntee6HDzCEo50BL/a5LleAH6woNBRNAGe067KuwLwytCwpAi83+PkVp1JEoDRgHeSC+TcqJGCJHeTLwXsza+AW9j/omVnkgT4xLJ1/K1CDOHusIdlK0a8FP4d/E1C1ZBIh8GjLFshziFWEVQqsNz0eZ2/SnEMP6iocjopFpDDK5Ytc69W2BU+I8voiMsFUpraCPswIqKfnucW9DfOIKj726Dfp7EM7c7egg/AW5SVOTg4OMSOqEHQL9hVSLYxSnkED44PKYXttlmAKMudLHi2eZDqAxmbBJA9B6AKvkzyz3B9NuwE+Zb3jrB/N41qSrh6accZmwXInAP4Jtn3RHAqxZNGyg7LhGf+UKzpiEMAbvZdPslO0DkAFcxi2QrTDuH+Z3CFKXdIBwhzVzD7MUp3DxSQ80cBb/MGrQwNnlS7nBKuU8UUgEf7vcI9PvlifArnlaVhcgtvTHhJ2aNWlOZ5+ybOAWQk3I/3VS+4QyutRFqXR7+qsC3nAFqo7xxqaWzMtAC2nAMYoL6DxmZEAJvOAbSHjM2IADadA+gJGZsRAWw6B2Dqi3TgKlDpk7WpRHvZ51IBfVcWwwLGFZwA410AE2eEUhp2gs4CnABOACeAE8DBwcHBNP4B0T65QLF6i1YAAAAASUVORK5CYII={scale="+$scale+"}>"
+!endfunction
+
+IBMEntityColoring(ibmtelehealth)
+!define ibmtelehealth(e_alias, e_label, e_techn) IBMEntity(e_alias, e_label, e_techn, #232F3E, ibmtelehealth, ibmtelehealth)
+!define ibmtelehealth(e_alias, e_label, e_techn, e_descr) IBMEntity(e_alias, e_label, e_techn, e_descr, #232F3E, ibmtelehealth, ibmtelehealth)
+!define ibmtelehealthParticipant(p_alias, p_label, p_techn) IBMParticipant(p_alias, p_label, p_techn, #232F3E, ibmtelehealth, ibmtelehealth)
+!define ibmtelehealthParticipant(p_alias, p_label, p_techn, p_descr) IBMParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, ibmtelehealth, ibmtelehealth)

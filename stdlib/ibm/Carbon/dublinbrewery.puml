@@ -1,0 +1,13 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $dublinbrewery [64x64/16z] xS61400000CXXFdRpkElMXu0001m
+
+!function $dublinbreweryIMG($scale=1)
+!return "<img data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAAIGNIUk0AAHomAACAhAAA+gAAAIDoAAB1MAAA6mAAADqYAAAXcJy6UTwAAAAEZ0FNQQAAsY58+1GTAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAAOxAAADsQBlSsOGwAAAZRJREFUeNrtm0FuwjAQRQ3KebrsnmWvgMQ1yBl6DqReIeyyh51Pw44mUpCsFNce2yEZ8r5kweDYcT7O+I8zMWbl2ATqv7vyOfrt0pV6odcjHu820OHHUHz20iAebxXRac/g1/C9UTCrRePdrt0HQAAEQAAEQMCaEaMDemXVOsLisvBrEo2XGfDmSvC8dh9wn9sHPIvOUv7RWqsPyI0eJ48+X+ED3PZSNPgAhBAEQAAELDgWCK3zjyWszVgGQ+3HOkGkA6pMAh/rtPXU28z+bcT5b3PrgJx1PhdNwnjxAa+MBQ7D56mQrS4W2A+llM1+QOnxIoRwgtPip7CtjoBTYZtbQJsOYE/Q/J+xIbVV6oBn7WPtc+b52BOc2wfMAZ4NEgvgAxBCEAABEBAHN1u89UjZHjbSzm0/df8udjEEvDN2BoCkN0a0oegbI9pQ/I0RbeC5gCQa9OmAUD6Ae4+l1Bvh8deuHCPrx/sDf5bB0AywIxEx9R5f6f6tCeQYVAnCQJIvIM0niOlvI6iv8QEQAAEQAIAfv80bi9XgfDoWAAAAAElFTkSuQmCC{scale="+$scale+"}>"
+!endfunction
+
+IBMEntityColoring(dublinbrewery)
+!define dublinbrewery(e_alias, e_label, e_techn) IBMEntity(e_alias, e_label, e_techn, #232F3E, dublinbrewery, dublinbrewery)
+!define dublinbrewery(e_alias, e_label, e_techn, e_descr) IBMEntity(e_alias, e_label, e_techn, e_descr, #232F3E, dublinbrewery, dublinbrewery)
+!define dublinbreweryParticipant(p_alias, p_label, p_techn) IBMParticipant(p_alias, p_label, p_techn, #232F3E, dublinbrewery, dublinbrewery)
+!define dublinbreweryParticipant(p_alias, p_label, p_techn, p_descr) IBMParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, dublinbrewery, dublinbrewery)

@@ -1,0 +1,13 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $area [64x64/16z] xS61400000CXXFdRpkElMXu0001m
+
+!function $areaIMG($scale=1)
+!return "<img data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAAIGNIUk0AAHomAACAhAAA+gAAAIDoAAB1MAAA6mAAADqYAAAXcJy6UTwAAAAEZ0FNQQAAsY58+1GTAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAAOxAAADsQBlSsOGwAAA+xJREFUeNrtW01IVUEUHrMIIgyiZYL4Fv3/EEJFmS/37VqpkAjaj/1jusiXlW206A/DLArahAUJQdEPZdq2XfSDlG4yKCoXIYH413d458F1nHfvzMN7Fd858MGbeXPvnPPNuXfOcM5VSkREJJslx2LMRqAaKAHWcN8noAe4BXycZRvWATVAHFjLfZ+BXuA28D5TAhYDV/nmC9KMGQduAHXAaMSGLwIuAbVAbpoxE7xIx4ER04BcH+OfA3sDSCJitjIe8IRRGf8EKPNZnNQCFwE7gU5eMCsC2th4W4kBS4EXERFAK1/hML4AWAE81f9YmOaZr9H6vgENwBtu7wZagHzPmCNAB9AXsvGreC6vDAL1AfqRTe36O8HkAY3s0t6bbwbeAcOMD8A9oBzI8zwO/4BXIRNAhhZr+m2y0C+HH4FnQR4QN0w4ZBg3xP/d18bWR/wydNEvbnqJ6VKotXt9Ju+dA1u5i36FNgRklZgI6NfaJT7Xl8wBG1z067fZBbqBDZ52K29v+nO2nP/zSjNwJmSDzwOJDPXrtokDaMvb7/GOPH6b/gB+836/B3ikbTNjwD7gb8gEfOVt0KtfmYV+4xzS/7IJha8BRx0VOwecjcjtaZ4mx2uuA8dsI8HXHAvELG/+GDgETEZEwFuOTVZbjn8JVJpCdb9DRCe7V1HAYaiZjY/qHKCY6If8u9hHvzFe+Ur+ndFxmELPKkOAc4FD38FZ3gVW8jurUeunF+DdoNDcJg7o43OALok5YHwqFE4Y+htsziUSCAkBQoAQIAQIAUKAECAECAFCgBAgBAgBQoAQIAQIAUKAECAECAFZJLkWYygxQkmRHVo/ZZa/qPCToUFCiZFTwC6tf4lKJnr/+F3slxkiAy8Ch5U5jU5CqTHKEFHKemIWvJdS8Y0+C0npsDYmaMzFA6gOj0rKygMeE/ovrpKJSsrVTUZofJeamsZPN24bw1jHmI6AKyqZc7eVVJa2JyICmth4W6Es9zKVLP6c5ua6UO1trdZnUyd4GrjDY8OUfJ7LVT+yaVpts8kD6ObbPW2XOsFhjxJhSR0bmIl+o7oXmDygVGu71OEllDlTG6a46FdqEwfoVSHzqU4wJoGQBQEDWns+1QkO2OwCtJWt97Rd6vBalbmaZCalRU0t13HRr8cmDvjOe2wqSkxXh9fFYag36qoOCj1nQGjLO6CC6wR1/SgIopL5nzahcDtP4iIUPJ2MyO0vAyccr7kJHLSNBKnmnz4zKbC8OdXhVUV4HqCSV5c6RnL9CuXwyQwNpDpB+sxki4+njPNho1JF+9HUBMf2FN761THSuA42fsT1NJiSef3ZnIiISHbLf0KK7mlysHfqAAAAAElFTkSuQmCC{scale="+$scale+"}>"
+!endfunction
+
+IBMEntityColoring(area)
+!define area(e_alias, e_label, e_techn) IBMEntity(e_alias, e_label, e_techn, #232F3E, area, area)
+!define area(e_alias, e_label, e_techn, e_descr) IBMEntity(e_alias, e_label, e_techn, e_descr, #232F3E, area, area)
+!define areaParticipant(p_alias, p_label, p_techn) IBMParticipant(p_alias, p_label, p_techn, #232F3E, area, area)
+!define areaParticipant(p_alias, p_label, p_techn, p_descr) IBMParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, area, area)

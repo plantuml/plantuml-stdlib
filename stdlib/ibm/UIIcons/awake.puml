@@ -1,0 +1,13 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $awake [64x64/16z] xS61400000CXXFdRpkElMXu0001m
+
+!function $awakeIMG($scale=1)
+!return "<img data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAAIGNIUk0AAHomAACAhAAA+gAAAIDoAAB1MAAA6mAAADqYAAAXcJy6UTwAAAAEZ0FNQQAAsY58+1GTAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAAOxAAADsQBlSsOGwAAA9lJREFUeNrtWltLFVEUHs+xjC4EpUGST0UXECKIKHqz7GIXu4FJBQYS+RBUfyD6A2VEGOSDYVJKL12wi+Vj0L0gy4wewjDILlAmEXrsW5w1sNlNM2cu65wZ3As+jvuMs2avb6+191prjmUZMWJkMktRAZ89EYe5pCa7BxgCDAGGAENAEJkZQ1tm5YuA5cB7YG+MjN/Hc1ohTQAZfx+YB1yKCQlk/EWgDLjnl4SUT7e/A8zlcTokCV80hDE+zeM5wG1ghlQmWAd0KA8kGQf2A1cKtPLqXMaAeuBqrkrSPh/aB7wFdirek+LxAPAqScYHISAOJERmfFACvEh4zkRISC1wOSrjwyZCnbwa48p3/cBDwdV/ALyJyvgwHuDkCTSxKuCzIAGjbOxm3vFDGR9lDb4VeJSD8RXANqAGWAzM5+8/cdh0AzeAQQ89dOavBG4lpSFSDpwEGoBij/8lt24DTgBD0hPLBwHbOWHym6v/5PziuuTk0sLGH+HVnBbg3hJOvL5zeIlIsfDKNzucNJQntAJ3lVinvWED0AhUaqcU6fgg5QlFgjHfr7n9H+AYcB7IuBzLh4HTwFQtHJZK7AlSIXAKWKMZT0dXl/VvN1gVuvaYz/t6ZX4UDrP5hIh9R2gB7/aqHAd6fejo5XtUaWDdsSegVttbKOZbAuhp0eqKYtYdewJqtHGrS8y7SYbvddMtcgpM5NjMKPvPtYXauCfE/Ho8dKsyDJT63fglPKBcGw+G0DXooTuWIZAokSBgyKEACioVHrpF9oCwyRG1p5co42rgdUBd1Q663SrEWHhAtzZuDPicFN/rpjuWIXCNS1pbKLdvCqCnSasLxlh37An4yBWgnhpX+dBRxfeo0sa6E1ELPAUOcQ5vP4dy+298bcJlQWjl2x2KoT38mQgCaKJ9XM8XKc/aAuxm434Av/lvSnCowXoBOKjNK8N6niSpHFYbIs0hQo2MPwqclZqgdEeIOjkvrGzTtCSAF9VxOIiJaYpGpGcT8MzKb1t8dRQNkigI2GVl3wwPWPIvRmzjqWGyDDhgZV+VFWwPsI2fYmV/NEErS29qfgkbX8kb6w7gnRXihWwqIuNtoVVZK7j6q6xsc1RdwHbOMfLqAU7GZ3iT6xQkgFbb6a10YE9IR2x8uyUvfVGSkE6Y8ZGT4OfN0HTgXITGD4es57v4s0Oxgxb0DHAz17rBzyY4yuf914hWvlRDEOniGsIuv6nY2uinaPJ7CrwE1vFZn2+39yKB5rTeyv5Ex5IIAZWERRKlaUgSKIscyVceECfjbRkJcpNpixsCDAGGACNGjBiZtPIX65rkQx63d/YAAAAASUVORK5CYII={scale="+$scale+"}>"
+!endfunction
+
+IBMEntityColoring(awake)
+!define awake(e_alias, e_label, e_techn) IBMEntity(e_alias, e_label, e_techn, #232F3E, awake, awake)
+!define awake(e_alias, e_label, e_techn, e_descr) IBMEntity(e_alias, e_label, e_techn, e_descr, #232F3E, awake, awake)
+!define awakeParticipant(p_alias, p_label, p_techn) IBMParticipant(p_alias, p_label, p_techn, #232F3E, awake, awake)
+!define awakeParticipant(p_alias, p_label, p_techn, p_descr) IBMParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, awake, awake)

@@ -1,0 +1,13 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $accumulationrain [64x64/16z] xS61400000CXXFdRpkElMXu0001m
+
+!function $accumulationrainIMG($scale=1)
+!return "<img data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAAIGNIUk0AAHomAACAhAAA+gAAAIDoAAB1MAAA6mAAADqYAAAXcJy6UTwAAAAEZ0FNQQAAsY58+1GTAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAAOxAAADsQBlSsOGwAAAi5JREFUeNrtmr9LHEEUx/fMgo05FD3QM9jZKaSJnXJYaCGSwiJErWxsLAQ1thFsFAULBUXUTrCx0RAjBK7VQgT9BxQ9q2vSBfHH98ETlmO9m1l39db7fuEDt7PzhnnfnX03C+M4FEVRFEVVqhI+bQ8F1zcgC36Aq5jk9QnMgwxoKpazazCYDPAd9IDPMTBBkj8F9SadXYuBZcA5MGTY/ytYBXdgFPyyTKQfrIF7y/g50+RFVZaTyhj2qwHroBE0gy1tcyziN3T12cZnbBJyDeqCtyakDccdBynPdUrbZl8hPm1Q5wKvABN1aMEslLR9eYV4K4VtQDc4AB997knbH+0TVby13BDGSOtTG9HCVUx14C/YA5vg2PPUg8bnwt4HlNoX2GhR4ycDxi/oHCeiytF1otOyJ3FXi5iNlsCU/q4GY1FM8oNBn5+WY16DYU3gSfLuHoFOUFsi/kI3Xiuett/gBHSBpOV8ZqJeAf806TOwoxuW/z79pLi1gl4wCNpAi967BOdgW8269YmX9/4Q9IFvoF33CMmXTN6NqG48J0lsXwkiMXZXCaVmVTkVLhpAA2gADaABlawg+4BS/7MJrgAaQAPedQ1IcAXQABpAA2gADaAB/BbgtwBfARrAbwGuABpAA2gADaABNOBd7wPkEFLa4lugnJQLYwVkY/yAs2EYMA3yMUw+r3MvKpNDUnIGSM7uyLndBsf/EGM5SY73yxGcASc+x/spiqIoinoDPQI54Vcbtpo1JwAAAABJRU5ErkJggg=={scale="+$scale+"}>"
+!endfunction
+
+IBMEntityColoring(accumulationrain)
+!define accumulationrain(e_alias, e_label, e_techn) IBMEntity(e_alias, e_label, e_techn, #232F3E, accumulationrain, accumulationrain)
+!define accumulationrain(e_alias, e_label, e_techn, e_descr) IBMEntity(e_alias, e_label, e_techn, e_descr, #232F3E, accumulationrain, accumulationrain)
+!define accumulationrainParticipant(p_alias, p_label, p_techn) IBMParticipant(p_alias, p_label, p_techn, #232F3E, accumulationrain, accumulationrain)
+!define accumulationrainParticipant(p_alias, p_label, p_techn, p_descr) IBMParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, accumulationrain, accumulationrain)

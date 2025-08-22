@@ -1,0 +1,13 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $solarfield [64x64/16z] xS61400000CXXFdRpkElMXu0001m
+
+!function $solarfieldIMG($scale=1)
+!return "<img data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAAIGNIUk0AAHomAACAhAAA+gAAAIDoAAB1MAAA6mAAADqYAAAXcJy6UTwAAAAEZ0FNQQAAsY58+1GTAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAAOxAAADsQBlSsOGwAAAsFJREFUeNrtmTtIHFEUhnddY2lAAj5KkWAhphAfRLQUBC223cQUtlrF0u3EztilCiSQxQ2xEUVYTcRAbJK1iY8QC7F0EYLiAwsDIf+FU1w2M3Ovs6M7Z+Yc+NiduedcZs59nX83kRDzZWMEe6vxGZchYpuAyJhbApoD6LuJQwJSDvdawDF4ADY9ErcHdl3aZ8AKeAMuuSXgkl5+2iMJu4aXz4JZsBz2GVDrcj9LnyoJ62CLrntAGrTS9RFYAkW6HtBePsthCSQN7YPgO6gHb8EIuAA71P6E2lbBOLX1gq9cNsGkhc8j8A00gJdgAfyhNrVEnoF5cAr6wG9Op0DKwucjeAz6wQb4q7Wp7z9orU+ALvAhSnVAN037KXDg4XdAPiMUE5kEqA3vHOQt+sqTb5pTAmq12n5cu682vBxoA/vgxqKvG/JtM/QppXAYZ0DOZXQOwRCos5gFyqdDOwJzYRzx284AVeQ8tFR+GfJditImuE1FzivQ7uHXTj6rFBOpOuAzeA4mwQn4qdUCqhB6ARbBGRgF15wSYKoEB6jOv00p3KNpB9YzQKm6d+AT+EUVXgFc0chfUZsqgOZo5J/SJuglpVmoQV3S6qNZ1JSfk21RzHSZqjRZec3gZU71hO/4GpcfREyS1utH0ayWhBbLh1InSKeFX6fLieQ73mkGHNODlwwPnPA451USXhv6KDc1s4YNPmtBx7sdg6UAlleJwx4gpbDPuHzcE5CLSgJkCYToWVQF+cXiGCsGGZ8K0Uy0qRmUFnmf+P8/iUrjxcTEYmrJgPqpmpq7CzXox6qm5u5CDfo1GzVW4KIGY2OSAEmAJEDUIGs1FxY1WG01J2pQTEysIjXIVs0FpQbZqrkg1eB9qDlRg1IKSwIkAZKAsKpBlmouKDXopKaUcyMpKD9qjFO865ldqGB2sYiXTVDkkFi87R+VBs0s4jbf1gAAAABJRU5ErkJggg=={scale="+$scale+"}>"
+!endfunction
+
+IBMEntityColoring(solarfield)
+!define solarfield(e_alias, e_label, e_techn) IBMEntity(e_alias, e_label, e_techn, #232F3E, solarfield, solarfield)
+!define solarfield(e_alias, e_label, e_techn, e_descr) IBMEntity(e_alias, e_label, e_techn, e_descr, #232F3E, solarfield, solarfield)
+!define solarfieldParticipant(p_alias, p_label, p_techn) IBMParticipant(p_alias, p_label, p_techn, #232F3E, solarfield, solarfield)
+!define solarfieldParticipant(p_alias, p_label, p_techn, p_descr) IBMParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, solarfield, solarfield)

@@ -1,0 +1,13 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $cyclist [64x64/16z] xS61400000CXXFdRpkElMXu0001m
+
+!function $cyclistIMG($scale=1)
+!return "<img data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAAIGNIUk0AAHomAACAhAAA+gAAAIDoAAB1MAAA6mAAADqYAAAXcJy6UTwAAAAEZ0FNQQAAsY58+1GTAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAAOxAAADsQBlSsOGwAABHRJREFUeNrtW0lIVVEYPu9dURepm4RGFxUR1KpdmwqpKBsUIlykYCKRUEK1CQrKIiJokMosEis0UKLABoMia9EiggYasFIXpWmWEWmEONV3uP+D4+G+9+489X74wHveGf7/u2f4//8eGUvJ/y0Rn+s3HagCNgILqKwLuA2cAQbDTMBmoAHIjvP7EFAO3LAyiOJj468DmQnqZABbgLdAh9mBoj40PpfefETnDG6gNqGZAfuANcLzKHAAKAVOAj+A5YLufCaMAI/CQsApYIbwvB84DvwmPAHGgFVCnRzgYliWwHzpuVGjTmOSNoEmwFXxIwHd0nOpRh25rCtMm+BsYIXwzDe8cTJyGrATOCzpfgl4HBZHKJeMzdZZ/xd5iYNhmQF/gE5ycpK9oEmgBHgepCWQBZwAzgHVwErgDTAg1OkgD28tnfPxXOGtwM0gxQJ5QLvGsTVGG1tLkmDoL22St4CzQQuG8shbmxfn93Gazi1uvhHFJ8bHjuQi4CPwLkwExDOev+ljQKHgj7hOguKh8XwDe03GFnlFguKh8RP0/M5LEhSPjWdek6D4wHhPSVB8YrxnJNjpB3AP76WGk6PXeFGKgSYgzWnb0mwk4KiG8c3k3EwY7CvmDDXZrKOj+YANNhkvklBCHmIgCMiRnu9YMN41EuzcA+5R9Cb69qU0E3wrdp4CPHwtF/qM7d6d9FvoCRggY7WOMN+SYLcfkOgc9yUJTniCgSLBqVggMCQ4GQ0GggSn8wG+J0GvHzCXqYnJAmAhMJPK+8nANqbe2ugx4Ntb8ROs6qObgFlMTV2X6fDJuUFXgINAn0Mk2KlP0iWwiakp7GU6XWZeZymwnab+B5uXg936JCRgF7GXaWJ6ZtDb/gk8M0DCkQR9OqWP5jTiTNdosMzfUD1wX1hbPAHCb3NUAIsl9nkfn5j6EUMr1G3WGZY7qo+iscbaJab5FZUq6vQpU7/GjBK+Uxm/nfGNqbc2FGF/4SHyVWBYYyYcksqq46x5R/WJaiiRJQ22DjjP1A+R8YSHvbW0K49KWaJqC6eU4/qIBMyh3VWUPfQG9MpDYK9UVkZ9GxVX9BEJKJTWIl9jdSYUr2NTk5dp1LdRcUUfkYACqWF9kmmWaPrVS2UFJvpxRR+RADmh+cDC2pXbmrnF5Yo+UWnHFaXHwoCfNXZzo+KKPqlrcsLffRoBh1mR2/aZ6MMVfUQC5Pt5qy0MKLftNtGHK/qIBLRJlSpMLpEotRXlrol+XNFH7LCVTf0AsQSoNDFgJbUVw9JWE/24oo9IQC9FXKLwm9v5BgbLpzai8Pv8X0wo7oo+EY3j4b2G/70buJDAEeFE7gBOA+lCOb/Lt4gyNWbEcX3kaHCY3MZigRxeZz1T/40lnToZob+5Q8E/ffO7utuk/rhy/LbnCwubl+P6RBIkIGos+AmTFLLW2nRcO6ZPvIwQz5y8ovg5w+BgQ8T0NRv9Fcf0sTspepmpSch+5ozYro+VtDi/t/uVqcnGWBq61yUP1m/6pCQlKQmo/AN5eXHCUqGzRgAAAABJRU5ErkJggg=={scale="+$scale+"}>"
+!endfunction
+
+IBMEntityColoring(cyclist)
+!define cyclist(e_alias, e_label, e_techn) IBMEntity(e_alias, e_label, e_techn, #232F3E, cyclist, cyclist)
+!define cyclist(e_alias, e_label, e_techn, e_descr) IBMEntity(e_alias, e_label, e_techn, e_descr, #232F3E, cyclist, cyclist)
+!define cyclistParticipant(p_alias, p_label, p_techn) IBMParticipant(p_alias, p_label, p_techn, #232F3E, cyclist, cyclist)
+!define cyclistParticipant(p_alias, p_label, p_techn, p_descr) IBMParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, cyclist, cyclist)

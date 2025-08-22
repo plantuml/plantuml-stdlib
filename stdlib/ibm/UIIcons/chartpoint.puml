@@ -1,0 +1,13 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $chartpoint [64x64/16z] xS61400000CXXFdRpkElMXu0001m
+
+!function $chartpointIMG($scale=1)
+!return "<img data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAAIGNIUk0AAHomAACAhAAA+gAAAIDoAAB1MAAA6mAAADqYAAAXcJy6UTwAAAAEZ0FNQQAAsY58+1GTAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAAOxAAADsQBlSsOGwAAAu5JREFUeNrtWj1LHFEUfW5kkUAggoVxt7WRFHZa20Wz+QGyjUL8SJkmkCqWSZUQG9fCJskvCFgmtYVuof6CbApFCLFyYTFn4C4Mw3y8ue++vLc778CBmeHumzP3zsybd/YqFRAQUGVMpBy714iRRB3cBtfBp3TsHPwGHoB9myefdFyABvgdXEwcXyZugs/Bno8JMK1cPePi41ikmCXN8UrrmXRYua2Ci48nIYrdt6Gnxqy8buXqOTHtxP4x2CQeF8SK6eEkoGzlsrCQ2N+mCvVoOy9WTA8nAW1LsVwY6eEkYEEo9jKxf0DPcoO247iwpcflNPiF3u5DPAN/ZcR+tSWCcwdcCsV2wK7GGGcUa0VPjVk5idg+TU15SehSTN+WngcpQe8S+3spolrgbMHJorhdcJATcwsegdfgNPgYvANPwQ/0+z8a52Hr4bwDhpXLm3t1Khcf7zNR/W89nDsgq3L9WOV2NConCbYek1nAtHLSYOmpqYojJKDqCXDpB3gxjks/wItxXPoBXozj0g/wYhwJP4Dr5Ej5CkZ6JPwArpMj5SsY6QnfAQJ+ANfJkfIVjPRwpkEpJyc5DtdXMNLDuQOknBzdcbpC46Tq4SRAysnxYhxJP6CskyPpK7D1+PDvcFgNhgSEBFTbD5DCSPoBUmDr4UyDUaZ/FCxBoz8pVmhqGmhU7hX4CfwIvgVfgA9p/tb5PVsPJwG7lNEiRCe9Ak8KKheJ36Dla53YpE/aFlX2NmcMIz0u+wNsdZqU0uOyP8BWp0kpPS77A9KcnJe0fUiPQDx231c/gBsr5SyNbH+AFIz02PQDitbxUs6SkR7ONDigN/OKym5KGK6/85ayU+BqbH8efE2cT8S+z5lOjfS47A/Q7ew4U7xOEy09rv2Ahiru7FgDf/u4GJJA9MZfSixi7mOLmI4a83Z5pRx3mgRDJCSg4pjIeDHNVeWa0+6An1V/BN6AN1VJQNqX4F+ag5+AM+CjMbvmPRUQEBBA+AckGTO56qQAqQAAAABJRU5ErkJggg=={scale="+$scale+"}>"
+!endfunction
+
+IBMEntityColoring(chartpoint)
+!define chartpoint(e_alias, e_label, e_techn) IBMEntity(e_alias, e_label, e_techn, #232F3E, chartpoint, chartpoint)
+!define chartpoint(e_alias, e_label, e_techn, e_descr) IBMEntity(e_alias, e_label, e_techn, e_descr, #232F3E, chartpoint, chartpoint)
+!define chartpointParticipant(p_alias, p_label, p_techn) IBMParticipant(p_alias, p_label, p_techn, #232F3E, chartpoint, chartpoint)
+!define chartpointParticipant(p_alias, p_label, p_techn, p_descr) IBMParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, chartpoint, chartpoint)

@@ -1,0 +1,13 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $virtualcolumnkey [64x64/16z] xS61400000CXXFdRpkElMXu0001m
+
+!function $virtualcolumnkeyIMG($scale=1)
+!return "<img data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAAIGNIUk0AAHomAACAhAAA+gAAAIDoAAB1MAAA6mAAADqYAAAXcJy6UTwAAAAEZ0FNQQAAsY58+1GTAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAAOxAAADsQBlSsOGwAAAu9JREFUeNrtmjFoFEEUhjfrmmARRLQwZwRREQuxkTQ2RtIdqCBCCpVEUbuIndooly6dhTaJSkQRU4iokCpFEG0EQVAUBMFgPEGIgrHQYIz/wBPGYWZvLpubfbf3fvggM5l9t//bmdl3uxdFIpFIJBKJWlVtjv5uMAL2g65An+mjzeAAKIMd2rl9Bu/AJHgMPmY5GWX+JVgfOOlpKoEKGARJjbG/wTi4DKq1AtuCjTTQ/HJ0ENwBnZ7jladToB8cA4/SBseWvl5G5ofAgxTzn8AH8NPyv046dqjeGVCqc8oureAaN6/8FeMiqc+6D66Cp2CR+jtADxgAJ7VjYoox45oJScRTJZr2uvkv4CiYsoz/RQlRjIEbYJeWBBVrp21PiJkmoGJM+2+0NKc8jn0O9oFXxnKo+O4Beaubdntdp8HbOmJ8BUeMvWGQYrNfAoeM83pG695UO13VAWrfolvfArVVXTAKzmpeVexr3GdA2WjfdIwbBheoGOqiv4drHFtuhiWwzWg/cYw77tH3mgojV2yWCTBvw7MZYi1SmeyKzTIB7Z7neNuzb6HeQihPqfJ1tdG3BbyxjL1EhZG5CepaC7Zq7SrnBPRbih+1ftc4xqsre5FwqceoTN9zXQL/zCeGefVl5kWGuGeM9iTHBKSZn8gQt4+KIT3mQ24JaJR5VfffM6b/uO2OkhTQ/GFwHazT+uYtG2SuCchqfg/V+TN029wOdoMTYK8x9g/FrXJJQFbztuNdUubPpT0VSgpsfj7yeCSWFNB85oeizWb+R5ThsXjSpOZX4m4RrA5gaz5UAsxZxsZ8XpUgG/Mcvw43wnzqe4u44OZZLgE25pvlecBEIz84jz1gyWNMEPMc94Cg5jkmIKh5bgkIbj7UHtAWMVYctbgkAZIASYAkQBLQyrLdo9WPD0sF9aueEm+qNQOmC3zBp32WwHkwV0Dzc+TtP62yDPwO7oKNYEPk/yNlrlLvDNS7AvWqfDYSiUQikUgkIv0F7Ei6tNXpUdAAAAAASUVORK5CYII={scale="+$scale+"}>"
+!endfunction
+
+IBMEntityColoring(virtualcolumnkey)
+!define virtualcolumnkey(e_alias, e_label, e_techn) IBMEntity(e_alias, e_label, e_techn, #232F3E, virtualcolumnkey, virtualcolumnkey)
+!define virtualcolumnkey(e_alias, e_label, e_techn, e_descr) IBMEntity(e_alias, e_label, e_techn, e_descr, #232F3E, virtualcolumnkey, virtualcolumnkey)
+!define virtualcolumnkeyParticipant(p_alias, p_label, p_techn) IBMParticipant(p_alias, p_label, p_techn, #232F3E, virtualcolumnkey, virtualcolumnkey)
+!define virtualcolumnkeyParticipant(p_alias, p_label, p_techn, p_descr) IBMParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, virtualcolumnkey, virtualcolumnkey)

@@ -1,0 +1,13 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $executableprogram [64x64/16z] xS61400000CXXFdRpkElMXu0001m
+
+!function $executableprogramIMG($scale=1)
+!return "<img data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAAIGNIUk0AAHomAACAhAAA+gAAAIDoAAB1MAAA6mAAADqYAAAXcJy6UTwAAAAEZ0FNQQAAsY58+1GTAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAAOxAAADsQBlSsOGwAAAmBJREFUeNrtWr1OAkEQPk5qMbHSYOIj2JHYQIPGR1AKO020p0Lh1Io30FrjIxhDo8SQ0OkbUBCtLLBWcTbOJXju/XK3u7c7k3zh3MzCfd/Ozs6ua1lkZGRkZGRkplrBp70M6AJqgJWcc3wDPACagHEUARj5Z8CyZoP9DtjwimBzHLsakreQU9fbyBOgqvGU/8etyHFajZgn8mLTAG7cCDDKijF8dwBX+HwAuAtpz4XFiYBLXCHK+BzWrp0AWlocAQ5xDR3jc1i7djmAze21GO00BXSJgCnlABKABDA6B+i0F6AIIAFIABKABJAhQBvQieHfwT5KbYbSIM8EPw3xPwOczPzt5DkCvCPPiLUC/Fse8plHgi047CeAXkCfHvoImw62YPLbgGFAvyH6CBPBVoi8FBFsxcgLF8FWkLxQEUQsg7KtICoCHE4ElAD3gEqC76tg3xInAhxVc0BaIgghn9UqMK8IwshnWQckFWEe8teARZUqQT8R6gF96nOMfAPwAtiM85ILPjsxK6XNyCN+1vDzPOT7+vhO1QRhz3yXAPs4sE9WhP9piFgGnZnlKMqWmO0Wv/Hlk4hfxN/ZwqgYqVAHxCXSSeE32VRgl72OATeyD0RkWQmTo2+CNOVIzDdBmnQmuI5JuT2b/E07FHUTZB8FMfZU2E2QDd4q8Gr9vU+nyv2AQlYhwStedjWPgIFbI/AEaGIRoeN94U/ABeLLLwew217sVvWt9XvVXBcbYYntuOSDKkEmwp5G5FkleAT4kFUKy7JJWCmsswADlTZDUhOdSQKMcNQHJlZ3iY7EyEy3H2UfiBrbCOc2AAAAAElFTkSuQmCC{scale="+$scale+"}>"
+!endfunction
+
+IBMEntityColoring(executableprogram)
+!define executableprogram(e_alias, e_label, e_techn) IBMEntity(e_alias, e_label, e_techn, #232F3E, executableprogram, executableprogram)
+!define executableprogram(e_alias, e_label, e_techn, e_descr) IBMEntity(e_alias, e_label, e_techn, e_descr, #232F3E, executableprogram, executableprogram)
+!define executableprogramParticipant(p_alias, p_label, p_techn) IBMParticipant(p_alias, p_label, p_techn, #232F3E, executableprogram, executableprogram)
+!define executableprogramParticipant(p_alias, p_label, p_techn, p_descr) IBMParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, executableprogram, executableprogram)

@@ -1,0 +1,13 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $windgusts [64x64/16z] xS61400000CXXFdRpkElMXu0001m
+
+!function $windgustsIMG($scale=1)
+!return "<img data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAAIGNIUk0AAHomAACAhAAA+gAAAIDoAAB1MAAA6mAAADqYAAAXcJy6UTwAAAAEZ0FNQQAAsY58+1GTAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAAOxAAADsQBlSsOGwAAA2ZJREFUeNrtWr1rFEEUn+jaGFBQEAuNlSBJk0ZbFUzEFGqlWIjRvcIgaBQ/yB8gYopAUFHxgxML0UpBFBNR02pjowS0iilCIGlEm5yeb9i3MA5zu7O7b2ZnP37wI7dfuZvf/N6b926OsRo1alQZXYpzbY17onAceBX4F/gW+BT4HthyUQCP8H+tBd4CDgvnfOQS8LmLYlAJ0At8BuzrcH2jq2JQCHACZ75b836nxPCILa/CEg7aSTE8Q5YXsRm4F3gUeNg1MTxCy/8CngE2pfP8w08jTwNXXAoTj8jyX4BHgF8VAshiyHiQpzM8Ass3ceZ/p/wMDXRGGCa+TWd4BJZ/ROBEMUx8m6uJjgDNGMubxqDJBJomCWa1fFKICZR8NUkiAKXls4ZJGjEW8e/LNALYtLwpMTYB7wC3iCdXVb0d1nUAX/4+5hwC8ufWmXURi+iW1DmgGxPgHstJMMugSZNgCF4J7rSYEwaoB51UgGFFIWQzJKaoB51UAD7AT4pSmDIkRHvrwlopzNDquzo0Q1lD4r4pe1N3g3yGTwI/xIRE0vfzbQ86axKMC4m47M3ymGnqb4SiQkLGQl72NilAXEjI9bhTg6YSIC4knB00tQA6IVH6jRExJN6xim6NhXiMLAQq3w7XAtRfiNjHdlwphliwbRYWS6+wkvxWVgH4e10DngOuka5xIfqBl4CTwLEiVIJJ3+cFznoUuDAXWbATdciGCLZywHWNwYsYwmdK4YAdwLPSuR/AK1ggMewW+YC3CvfwZ+4BZ4vugIYk9DzG+xNMfgv4uh+viZPTKEMIDErHl4HLivuW8VrUs4UUYJt0PBNx70zMs4XMAeszPKvzG8VeDJX9Qg6ZA75mwY8vZl0rhKKwWzqei1kyJ4AjwNXStT7kKPAGhlbLdQE2AMelc1MRg+eV4z4Nh5/HleigSgQXegFeBR4Dfmb/79z+QQurMKExeBEHsAo14oC2IWFus2BbninsPZKiruAl+F3g9yJ0g/ybpAsdrvlSzOvWFTxsTrneDnPb38RSeMVAXTHgYhL8iRZ+w4JtsrjttZ4MdUWPCQG6LAu2rojdoLN1RZkFUNUV065XglR1RbgMinUFT6oP8xCg7Ygwk3INUIUcEII3RmNFaIao0SpSM0RZV2i3wzVq1Kg2/gGEzCn4MqMEIAAAAABJRU5ErkJggg=={scale="+$scale+"}>"
+!endfunction
+
+IBMEntityColoring(windgusts)
+!define windgusts(e_alias, e_label, e_techn) IBMEntity(e_alias, e_label, e_techn, #232F3E, windgusts, windgusts)
+!define windgusts(e_alias, e_label, e_techn, e_descr) IBMEntity(e_alias, e_label, e_techn, e_descr, #232F3E, windgusts, windgusts)
+!define windgustsParticipant(p_alias, p_label, p_techn) IBMParticipant(p_alias, p_label, p_techn, #232F3E, windgusts, windgusts)
+!define windgustsParticipant(p_alias, p_label, p_techn, p_descr) IBMParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, windgusts, windgusts)

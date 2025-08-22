@@ -1,0 +1,13 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $textleading [64x64/16z] xS61400000CXXFdRpkElMXu0001m
+
+!function $textleadingIMG($scale=1)
+!return "<img data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAAIGNIUk0AAHomAACAhAAA+gAAAIDoAAB1MAAA6mAAADqYAAAXcJy6UTwAAAAEZ0FNQQAAsY58+1GTAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAAOxAAADsQBlSsOGwAAAxBJREFUeNrtWTFrFEEUnssdGoKYgE2EA62CYJcmnV4RFQuTxoBoxCIIgcjZ2InJnTZ2FnYJSWX+QIQcaqEiCCktFTvND1ArwfN8A29geM7szezsJjuT9+DjdmZnJvm+fbM77z0h2NjYjrLVIvpf1wAd0ifb3ZBFRyIhfwywbOhfxnvJC3ADMGnon8R7yQtwX7v+jjDdS1KAC4Bprb2JUDaNY5IVQH/CfU2AfhFeUHUBzgLmtXYP8A3R0/rncWxyAtwD1LX2uuW6jmOTEuAEYElry6e+q7V3sU/ZEs5JRoA7gAny8usb3gfKJnBOEgLIE2qbkN0yjNsiorR9T7dVFeAqYCrD3W3bYgrnRh8LvAZcyjn3DeByzB5wHjAbMH8W14hWgHagZ9L3R1QCnAIsFrDOIq411BoVE+AuYExrvwTMOc7dAVzD6zFc62lMHiAfxgrpW/eYT8euuDzgKglwHdAkn7iex/we+VQ2cc1oBKARHT35DTN6MgzOFbAdBfP93q7hb0gmdlAlzg1P8h2t3U3BA0Zyku9o3pC8AKaCRDIi1HKSp0JEux3qnuR/AH4DRrW+Fv6+T0kAG/krgBeAhVREqHuS3wPsA96mIkLD4b2gk1e2h32vAOMH9I0vpTps8oB32H/RQl4Z9YRVwJOSyMsK8Lb4P+19DvDcM2ZwegdIYn8Ajy3kqQifXWLvALsFuG3ol4J8BXwq4yvwAQkOMznmY8lbVaa/T+O1rAz/BJzE9hnPvEFlw2GbcXXYEPNzdVhwdZirw1wdFlwd5uowV4cNxtVhwdXhYqrDDwAzDmvIMQ8LIl+Z6vAjjASzwmFFXuUEjmNIHGIHXh02RYOrSF5gnL+AIe9+BnmB+YMa5hPyJme2tShPeeEXx/m/ADcNuYK/vluA7r9xJDqTQb6IjNChVIdNHqByei2tT/eEpoV8R4SlpzaIAM/w77naAL2nRUTYzHsOsCVHRQnkD82yMkI2TxhNhbzrSTCrOhRCflAFzi4Hoa6w1wajrxC7ngSpCEmQzzoI2UQwXbOxsbFFa/8AVEK8e/pgppIAAAAASUVORK5CYII={scale="+$scale+"}>"
+!endfunction
+
+IBMEntityColoring(textleading)
+!define textleading(e_alias, e_label, e_techn) IBMEntity(e_alias, e_label, e_techn, #232F3E, textleading, textleading)
+!define textleading(e_alias, e_label, e_techn, e_descr) IBMEntity(e_alias, e_label, e_techn, e_descr, #232F3E, textleading, textleading)
+!define textleadingParticipant(p_alias, p_label, p_techn) IBMParticipant(p_alias, p_label, p_techn, #232F3E, textleading, textleading)
+!define textleadingParticipant(p_alias, p_label, p_techn, p_descr) IBMParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, textleading, textleading)

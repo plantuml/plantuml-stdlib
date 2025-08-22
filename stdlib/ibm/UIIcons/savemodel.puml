@@ -1,0 +1,13 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $savemodel [64x64/16z] xS61400000CXXFdRpkElMXu0001m
+
+!function $savemodelIMG($scale=1)
+!return "<img data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAAIGNIUk0AAHomAACAhAAA+gAAAIDoAAB1MAAA6mAAADqYAAAXcJy6UTwAAAAEZ0FNQQAAsY58+1GTAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAAOxAAADsQBlSsOGwAAAwlJREFUeNrtWj1oFEEUnlvvmgRThDSGYCE2GkwaCVjFIim0EAkqGIQo2AX8ScA2SZtGLQKSFP4UCioBC220MCCkVjE2KRPTSBAhSSOJ33DvYFkmu+923t7NsPPBxx17u9/ufDPvzcztUyogICAgICCgrKgwz+sD58Hz4LE2P/MmeAdclhA7wmz8V3AIPOpAp3WBV8B18HsrDHhCjXcJEXhZwoSIcc6wo+GrO+8FOG4jUmWc09tk3jjImWe4ev9iz90wQeNlUSPANYyTCSIjwUcD3kia4KMBoib4aoCYCT4bIGKC7wZkmTBWBgPSTHgssQ5oFr8Sa4cDYe00EzReJ5bxLR8BKwX29ApjJLR9GnwAbhegu03a4psKaWyAg+ArcEtAb4u0BklbFNWChuqG7SalldvKUiMYEAwIBgQDggFlRlHrgLT3CJWC21RptwGN9wjdZQ2BeV8aX5QBw2XPAb0CMT8BPrN8jpvgcx9ngdPggoDOAml5ZUCHqv+j0ymg1UlaHT4ZoHutX1CvP2s0VR1q/ATFbRw6D9xqUudpQkd//3xYPogcjvsf4GQOrUm6lpUPIkfjfge8Bu7m0Nula3c4+SByNO6nwTULzTXSyMwHLhjwx3BMl8DULDRrpJF5LxcM0D2VLHgaAZcsNJdII45lw6hwwoB98Aa4apgVZnPozdK1cazSPfZdnQX2wEuqXvQUx4xhasxa/s4kjq2T9p7rC6Hf4AX6jGMRHGVcP0rncjSdXQmaeksntLfgQMp1A3ROjTGqnN8MmeJVF0e+V+a3vX30Wxcjr3hhQCNjTzEaepgxU4pZSsvZq28a9viSSHuGh+C9xLFP4EX6/sEw3T0C73NvzimVPQueKdCAuZTfPtK9T8WOnQCPU3yPGUbObdVEUQYnBIp632+7RmDP9bYj4K+ql6Hqv7d7lHzF+FzG77ru5x31dnfK7DFCzyoWf67hJPVyj2GuP5c13dmMAFegw/CLqhde1GJzvV7ofMsr6pMBGrry5Cd4lRLddUqUpcNdYkBAQIAV/gNwmppM0qDcMAAAAABJRU5ErkJggg=={scale="+$scale+"}>"
+!endfunction
+
+IBMEntityColoring(savemodel)
+!define savemodel(e_alias, e_label, e_techn) IBMEntity(e_alias, e_label, e_techn, #232F3E, savemodel, savemodel)
+!define savemodel(e_alias, e_label, e_techn, e_descr) IBMEntity(e_alias, e_label, e_techn, e_descr, #232F3E, savemodel, savemodel)
+!define savemodelParticipant(p_alias, p_label, p_techn) IBMParticipant(p_alias, p_label, p_techn, #232F3E, savemodel, savemodel)
+!define savemodelParticipant(p_alias, p_label, p_techn, p_descr) IBMParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, savemodel, savemodel)

@@ -1,0 +1,13 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $chatlaunch [64x64/16z] xS61400000CXXFdRpkElMXu0001m
+
+!function $chatlaunchIMG($scale=1)
+!return "<img data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAAIGNIUk0AAHomAACAhAAA+gAAAIDoAAB1MAAA6mAAADqYAAAXcJy6UTwAAAAEZ0FNQQAAsY58+1GTAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAAOxAAADsQBlSsOGwAAAlNJREFUeNrtmr9LHEEUx/eMZ2UKRQjXXGEhXFJaBQRBMHCCtRAFm2gUVAJBq4gBIU1IgvijsbCJhWAhCAlErtB/wCIQsBKCoCJooSnUnOd38QU2w97t3u7s3r6b94VPMXK3t9/vzczb541liUQikUgkMlUpH695CkbAC5AFzTW+p5LO6zdWeGEafAFj4FG9zoByATSB76Cn3pdAQ5m/fzbBfLkZ8IymvVMHYBbsgdOE71sD4KvH8q4YwCtlzR+B5+CCwRdalflyS6BXGU8zNv83SABZZbzL2PxQkAAeK+NjxuY3glYBLgplnnsAoc1zDkCLea4BaDPPMQCt5rkFoN08pwAiMe/VDteL+RT3GdAfxTfPKYBhh1mt5rksgSIYJPPbOs1zCeBfCENRXJh7LyABSACG7AFhVKr0XCBLQAKQACQACUACkAD+06UyzjD2l/Hw5hrAb2XcxTiAbg9vrgHsKON50MLQvH3PHz28uZ78sH8Nfu0Ipw28BCfgDPxJuPEnoA+sg3alpR4lD+7PxQ4tgomIb9TP+aQ8+Kbp85bApN8q8BYUEtCofdJ0rQJ58l0Gbyj9ZZo6tdA4yIW8RpE85MlTVe3wLS2DFSveY3K2WsH7gO+9ot3+B1gFv8Kuw1poAUwp9buDNuK6fxLM0fR36kMU5pMagL3xpR3jQ+vhwKYRvUCecGoGXJsQgFvZs88lbprSDapl7w68MaUddit7a2DflADmKARn2Xtnyj9EYi17SQwg1rLnpx2OW+egk9pui1rWn5ZhStOOv2WJRCJRjLoHE4J2mi1qZicAAAAASUVORK5CYII={scale="+$scale+"}>"
+!endfunction
+
+IBMEntityColoring(chatlaunch)
+!define chatlaunch(e_alias, e_label, e_techn) IBMEntity(e_alias, e_label, e_techn, #232F3E, chatlaunch, chatlaunch)
+!define chatlaunch(e_alias, e_label, e_techn, e_descr) IBMEntity(e_alias, e_label, e_techn, e_descr, #232F3E, chatlaunch, chatlaunch)
+!define chatlaunchParticipant(p_alias, p_label, p_techn) IBMParticipant(p_alias, p_label, p_techn, #232F3E, chatlaunch, chatlaunch)
+!define chatlaunchParticipant(p_alias, p_label, p_techn, p_descr) IBMParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, chatlaunch, chatlaunch)

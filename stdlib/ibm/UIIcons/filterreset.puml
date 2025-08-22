@@ -1,0 +1,13 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $filterreset [64x64/16z] xS61400000CXXFdRpkElMXu0001m
+
+!function $filterresetIMG($scale=1)
+!return "<img data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAAIGNIUk0AAHomAACAhAAA+gAAAIDoAAB1MAAA6mAAADqYAAAXcJy6UTwAAAAEZ0FNQQAAsY58+1GTAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAAOxAAADsQBlSsOGwAAA0BJREFUeNrtmkloFEEUhlsTXHAZcUEyistJBA8uE/TgEo24oKgginrJUS8mNwVzMHMzAy4gip4UBC8i7mJElBw0iqJoXA4RFdyQkKBGUXEZ/2LeQPOonqW6arp7un74GKpmeql/Xm2v23GsrKysrKys4qpBHvWTQQY0gLoqaZNUtR6NfwzGxiECBkvqMnFpvJcBS+I0Bsi6QNJPn6qGCIiVrAFxN6A2gGtmwzTG2AiQ1H0HI1zl+eBegPfXCFaBejAJTKF7/EB0gUvgri4DHoGFrnIHWFlhE0aBZtACJnh8P4NYCvaA96AdHAO/S71QjaTuG9jkKg+j8i26iF+1sXKalTeA62Adi8RiGg1Wg62gB7xUNeA5fTYYMsHLADEeHQCHwEgf5xfL+G3gF7itOgukJTebMNgdRONP0Y1zDYDz4DJ4Bl7TvYh/fB5YRscNZ+fbB6aDHeVGQF6dhiJBFgFiA7ad1Yt+vB9sBqep8b1UL7ppH+gGF8FR8BcsYG1K0W+7VAwwZQI34D44wurEedeAE+BHCef8CW6CK2AtRUdeYha5A16pGGDCBG7AYgrpvD6BReCJgrkfwTkaSMe4ukM9zQ5ZFQN0m8ANcDf+D1gOnvoYTz7T4Nfkap+YSt+Ch6oG6DShrcB3B8FJDYOqWCANpejKayY47GhYh++VNOJLGbND1mfjSr1n0QXesAibRYOpr71A2iOMO2jZHBaJrnCG1a3XtRmKiglXWTmlczcYBRO6WblOdz5AZcVYyf0/H5iTJvIBYY6Eon+wroRIIROC1DjJ9GgsI5QussgJQinJStFoSiwdsoxXIys/MG1AmJSQbK8vxMmAFrYr7OGrwGo2YDZoZXUZk7NAmDSVtsRDXHUvKLdQ/jwZMc0BZ8E0V53IFDXTZ9UakKA+38r+eaHd4IbySimkEgnQiWAuWAG2eKw5jju5vKJTTQaUkk/45+QelrT7XitHUOKByE5wTctmIUJSejQWVQMGHIMPR4Pu08XyBVrzCfYVGWtAzGViDBADU7LMedt9bOQjoDOgY0NjwC7Qr3BcPx1bUdUYOOdXJ/c8X+Tgxzu593kKSeTpxMsPG8E7x8rKysrKysqqQvoPGsqply4aXhoAAAAASUVORK5CYII={scale="+$scale+"}>"
+!endfunction
+
+IBMEntityColoring(filterreset)
+!define filterreset(e_alias, e_label, e_techn) IBMEntity(e_alias, e_label, e_techn, #232F3E, filterreset, filterreset)
+!define filterreset(e_alias, e_label, e_techn, e_descr) IBMEntity(e_alias, e_label, e_techn, e_descr, #232F3E, filterreset, filterreset)
+!define filterresetParticipant(p_alias, p_label, p_techn) IBMParticipant(p_alias, p_label, p_techn, #232F3E, filterreset, filterreset)
+!define filterresetParticipant(p_alias, p_label, p_techn, p_descr) IBMParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, filterreset, filterreset)

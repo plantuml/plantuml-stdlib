@@ -1,0 +1,13 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $resilience [64x64/16z] xS61400000CXXFdRpkElMXu0001m
+
+!function $resilienceIMG($scale=1)
+!return "<img data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAAIGNIUk0AAHomAACAhAAA+gAAAIDoAAB1MAAA6mAAADqYAAAXcJy6UTwAAAAEZ0FNQQAAsY58+1GTAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAAOxAAADsQBlSsOGwAAA1ZJREFUeNrtmktIVFEYx+/VmhLG7KGiQ2Np2VMqkEhpUdoiiApaBEWLalHLNlEtdJcWvTa1iwgiWrdIqlXTg1CIoodlWak5YZJTKRWmFfQ/9b9wuMzQPO65Ts33wY97r3PvnfP9z3f+5xxGy5KQmMi4Bq5PZAPycr0HRAARQAQQAUQAEUAEEAFEABFABBABRAARQAQQAUQAEUAEEAFEABFABBABRAARQARIOxoMtrch2wVQDbwBWgwkf5jvbsxmASKgFTR5LIJKvhkcoQiexSQDPdXMY5PrOtPkWz14ly8CeCmC0eRNCuCFCMaTNy1AJiL4krwfAqQjgm/J+yVAKiL4mryfAiQjgu/Jq8jXzreBl+Cnwe9Tc/hkiqCOIWCDhT4mPwVsBZ16BawAF8ErsBt0+FQJozxf71PydeA8qAbPwUOnAgatP/+0uBkcAmHwCIwYroRGHk0nXwFOgjPgPdgEHlgsPz0C4CDYDwrAOXAMRA01rMWj1WKiCDOfPay2U+A4GHdusBM8OAMcAPvAVFbHWXDVsEd45WsbmLQ6fgOnwQnwyX2z/ZeXzQQ7wV6wCAyAK+AyuAnGsiRpZWxrwRaWd4hjXHXaBfAx0YN2Cl+yBuwAG0E5+MLd313QDu5ppmY61PBcCerBam7Dg+AdaAOXwK1kXmSn2YB6CqFUr2UPfAddoJvqPwX9rJoBfdwlGQH2ZIgmtpRVuAAspnmqCrzPamxjR6QUtkflV8spZjkbpxpZ5LrvM/gAfoC3Cd41m1PzLFDo+myE4nZxhupg8hkNQ9tgmZaB+aAEFGu9GdDMKszzqGau41rVxMAQ1yeDpseVmu52gXnW/xulYDs46t4LFHN5WMlrpf5tcIc8+UcTXgJWEWWWNfx7H9cEMfcQqALraG51vLbo+C+4fu7UTK43SxKt1EyyRjsP8vNeekaEq9DXyXpAKR1fmdwymtxc7fOvFCPKKUiN0zc8d66HMkyuhH5SRg+Zo11XcCMV1O7vo0k+pkm2c/nrmQkW0eWrWWJVXBc4DSuI80yMVTRGYeJFId3fPSO4Y9QldA94xp1sd6r7FxOzwHQKUc4e0p1/GleX+lo9P44ww8SZEfq1ihq2JCQkJDwK3QQjOZb771+a86QGcjx+AXG8vaGSicOiAAAAAElFTkSuQmCC{scale="+$scale+"}>"
+!endfunction
+
+IBMEntityColoring(resilience)
+!define resilience(e_alias, e_label, e_techn) IBMEntity(e_alias, e_label, e_techn, #232F3E, resilience, resilience)
+!define resilience(e_alias, e_label, e_techn, e_descr) IBMEntity(e_alias, e_label, e_techn, e_descr, #232F3E, resilience, resilience)
+!define resilienceParticipant(p_alias, p_label, p_techn) IBMParticipant(p_alias, p_label, p_techn, #232F3E, resilience, resilience)
+!define resilienceParticipant(p_alias, p_label, p_techn, p_descr) IBMParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, resilience, resilience)

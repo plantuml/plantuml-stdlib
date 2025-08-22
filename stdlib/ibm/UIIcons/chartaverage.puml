@@ -1,0 +1,13 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $chartaverage [64x64/16z] xS61400000CXXFdRpkElMXu0001m
+
+!function $chartaverageIMG($scale=1)
+!return "<img data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAAIGNIUk0AAHomAACAhAAA+gAAAIDoAAB1MAAA6mAAADqYAAAXcJy6UTwAAAAEZ0FNQQAAsY58+1GTAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAAOxAAADsQBlSsOGwAAAxBJREFUeNrtmluITVEYx7c75U5uJTF5IOFBQhJJuSQUYTI1knmYQsnMhAdGEVKMiTwYDzojklzGg8LD5EEz54E0pTy4lOskxy1ljMb/a75Ty2dNe2/GOWftb/3r17TWOWvvWf+z1t7f9+0dBF5eXprVw9LXEeE7iVFP7SvAG+AN8AZ4A7wBmtW7m47TF6wExWAmmATawQvwCDSAS+BbEg1YBU6DcZZjFzFrwGGwG5xLigEUIZ4A2yN+fxSoA0tAKfju+jWgJsbkTW0AV0Evl1fAJrDN0t/AS7wZfADTwVawWUx4GTgEqlw0YAT/+qYyYB24K/qbmVpwA0wwPqsA98E117bALjDcaH8BSy2TN0V3goXgubiGnAGDXTPgLXhstI/yrxwmmvxa8MPoGw325NMA24Vov2hXi3YTOAWugFZwHLRFPN8b/rvI6JsF6sFH1+4CLWzO15jjjoit0B/s1BQK02o5IProLjFMUy5wHjwz2gNBmSYDfnL4bGqLtmywTiRHk8FcTQZkOCSWEaaqekBKtNdzaq3GgDvgnQizl2syoJ0LJaZKCi0ZCntS9K+fp0RavYJjgkwuzl8INcE0eGK0+3HOoGILdHUxLNZogLlUF4DxuThxIT0dvgfmG+0qTrVVrADbNijRtAVIl4PfK8XTxIpIvAFURL0p+so1GUCqFW0qtBZpMqARPBCB2t4Y46musI+3TyT9TU3wf+uTCIRmgNvgZYSxlUFntamcEysysMmlFRBwbpAW/+NZMChk3Gw2IKspYIxrWyAbh1SIeGQquA4GdDFmMbglTKKL6jEXtwCJHqsPBXOMvolgI6fP78EQnjgFSwct5pSFLf+o2WC+RJHgPF7aWdF7Bxcj3k1SLt4FTFH5nF66aIk57iTY4eptUKqVV0F9hO++Bqt58h3dWRDJt+jhKxVLa3hfkyFUQe4DnoKH4ELQ+Wi+Le7BXTDALJykkx4J5lzeAG+AN8Ab4A3QLFvF91Xw52uviZ2zbQU0at8ClZxLq5CtHvCZY+uxYGQQXolxTdWBl5eXF+sXRb6L+Th2nMoAAAAASUVORK5CYII={scale="+$scale+"}>"
+!endfunction
+
+IBMEntityColoring(chartaverage)
+!define chartaverage(e_alias, e_label, e_techn) IBMEntity(e_alias, e_label, e_techn, #232F3E, chartaverage, chartaverage)
+!define chartaverage(e_alias, e_label, e_techn, e_descr) IBMEntity(e_alias, e_label, e_techn, e_descr, #232F3E, chartaverage, chartaverage)
+!define chartaverageParticipant(p_alias, p_label, p_techn) IBMParticipant(p_alias, p_label, p_techn, #232F3E, chartaverage, chartaverage)
+!define chartaverageParticipant(p_alias, p_label, p_techn, p_descr) IBMParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, chartaverage, chartaverage)

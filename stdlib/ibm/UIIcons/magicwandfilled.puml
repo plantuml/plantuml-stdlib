@@ -1,0 +1,13 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $magicwandfilled [64x64/16z] xS61400000CXXFdRpkElMXu0001m
+
+!function $magicwandfilledIMG($scale=1)
+!return "<img data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAAIGNIUk0AAHomAACAhAAA+gAAAIDoAAB1MAAA6mAAADqYAAAXcJy6UTwAAAAEZ0FNQQAAsY58+1GTAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAAOxAAADsQBlSsOGwAAArdJREFUeNrtmr1PFEEYxgf3Sk0g9JqodISazsPG2AjSkACh8d+AABUEav8DLGw1VsbINcZapVA+ChpCQ0xIKAgEnomzyWayezM3n+8r+yZPsXt3s/P89p3vE6KNNtq4y1EYPl+DnkG9SM9fhboRy/cCsFapoIhQyVX1jFjlewEozZcRupKl+VjlewHQzYeupG4+K4R7xPqkIQoZsKsq0q3JjPUAz+xpb7yM9YbMyNIH6BBCmW+CkMW8TTT1B6FHgv+izd1XZl5Ao9B3aAXaozwRCgXgIfQFeqrdv4SWoPdcZ4K25r9CTxrKn4H+UM2EIpD5x4ahliyEIoJ5me4b0HRlnkEWQhHB/AL0Q5mdoQ7BBcAD6FtNmy/NX6vrPQ4QXABsQy8N5gUXCC4A3kIjFuZZQHBZDA1r1x/6mK9CWoSuKvc60A40xy0D5Px9rHIte/vfFm+SZCa4APgJvan8Vpp4zRWCC4BTaL/GBEsIrvOAJhPsIPjMBH0hjEOzWkecHILvWsAVwpwaATq51w4mAHLDYkrtEIWC0M98cgiFxW5NV+0bhIBgYz4phMJyqyoEhPEBzCeDUFiYDwVhdkDzSSAMWqEbi++U21/Vt90JUM8drfxoGdC0by+zwnZrvC4TQqxbgmdCUx+gQxjEPCsI/UaBEsKucD8UIQ/BNA/oCf/DStIQCpEmyEJIBYAshJQASEJIDYAchBwASEHIBYAMhJwASEDIDSA7BAoAskKgAiAbBEoAskCgBiAmhFfQR/HvXIM0gFgQpNdH0DsOAGJBkP9e29JTg3LUnSr7xN+6tiHuEITPHDrBWM3hEJqHLjgC8IVwBD2HTrhmgA8EaV4e7x1zmAiFhtDXPFcAJYR9AwSjec4AZPxSEKZrfByoNn9sKmRI8I8JaBOahM6gT9AydC7aaKONNgxxC92uB2yL7+ETAAAAAElFTkSuQmCC{scale="+$scale+"}>"
+!endfunction
+
+IBMEntityColoring(magicwandfilled)
+!define magicwandfilled(e_alias, e_label, e_techn) IBMEntity(e_alias, e_label, e_techn, #232F3E, magicwandfilled, magicwandfilled)
+!define magicwandfilled(e_alias, e_label, e_techn, e_descr) IBMEntity(e_alias, e_label, e_techn, e_descr, #232F3E, magicwandfilled, magicwandfilled)
+!define magicwandfilledParticipant(p_alias, p_label, p_techn) IBMParticipant(p_alias, p_label, p_techn, #232F3E, magicwandfilled, magicwandfilled)
+!define magicwandfilledParticipant(p_alias, p_label, p_techn, p_descr) IBMParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, magicwandfilled, magicwandfilled)

@@ -1,0 +1,13 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $tram [64x64/16z] xS61400000CXXFdRpkElMXu0001m
+
+!function $tramIMG($scale=1)
+!return "<img data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAAIGNIUk0AAHomAACAhAAA+gAAAIDoAAB1MAAA6mAAADqYAAAXcJy6UTwAAAAEZ0FNQQAAsY58+1GTAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAAOxAAADsQBlSsOGwAAAqFJREFUeNrtmj9IXEEQxt95JxjlGq8RC5vYpT29RmwsxCYKWoT8EZGrhCslYLAQ1BRpBBECgoVyVimiTUgIETstLVKYGCTXnI1JET2LiPoNzMG75RJx3+6+VWfgVzyOtzvz7ey83dsNAjExsftsCYNtXd5G3xvuewaIAFID4rNLH3yRKSACSA0wYo1gCDwGOdAG0oZ9/QOOwC7YBO/BXx8EoMDfgE7Hg3cAJlkIbUtGnD6vwSJojSF7qc8n4AH4orsSjSIABf/Sg2ncA5rAZ52XUxHSXg3+HBTBCvgKjg0HmgGPwDh4pvhOvuzoTAedDKCCt6Gk/W/QB5bAT3BmYaTPuG0K8hMY5vSvWha8BRe2P4ODSsGjDge4OruyXe4zHGwn+2Z9HTCkPBcdBx8WoXiNb1ZqQFZ5fsH4YFkXGdDu8cKu3YUAaY8FSLsQ4E5ZykAbiZhjiPRfpGyHRQARQAQQAUQAEUAEkJVgXCsxyQARQASQ3aDsBmUKiAB3ch2Q8GmuSwYYFODU43hOXQhQ9liAsosaQKew4bPBNTDqILh6NWU1qD2V2nGRAeoRNB1V52IY7Rz3/T/frAhAR+OHShsfHIuQ4z7D/h+ybzcynfsBdCT9XVGfzunHwEPwC5wE5u8I0AWJLjADFkCL8vtzsO9yHT8HpjwpfvPglc6LUe4IbfH7vTEHPwumdV9ORux8iytvN6eoS/vG03DZh60sFaN+8A40Ww68AkbAx+CG94Fs7QWqhbGiBH/ORbEUse0O8CPkazP3dWFq5ExZoc7nsmSg3VKdz1vBt80QjZJ6Q2vRoLhqW4PcpzcCTCjTaQ9sGxRgm9sMT90JXwSgRVDe4uj/q818UHtRMjYBniqfQLoiu25BgPWg9vpthvsWExMT07YrTM5rEio/Zn4AAAAASUVORK5CYII={scale="+$scale+"}>"
+!endfunction
+
+IBMEntityColoring(tram)
+!define tram(e_alias, e_label, e_techn) IBMEntity(e_alias, e_label, e_techn, #232F3E, tram, tram)
+!define tram(e_alias, e_label, e_techn, e_descr) IBMEntity(e_alias, e_label, e_techn, e_descr, #232F3E, tram, tram)
+!define tramParticipant(p_alias, p_label, p_techn) IBMParticipant(p_alias, p_label, p_techn, #232F3E, tram, tram)
+!define tramParticipant(p_alias, p_label, p_techn, p_descr) IBMParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, tram, tram)

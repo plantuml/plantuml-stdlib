@@ -1,0 +1,13 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $cicssit [64x64/16z] xS61400000CXXFdRpkElMXu0001m
+
+!function $cicssitIMG($scale=1)
+!return "<img data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAAIGNIUk0AAHomAACAhAAA+gAAAIDoAAB1MAAA6mAAADqYAAAXcJy6UTwAAAAEZ0FNQQAAsY58+1GTAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAAOxAAADsQBlSsOGwAAAeFJREFUeNrtm79LAzEcxVMtTv7cxCK462A3cXBwE/Uf0E3Qgv4RVvA/0EUdXNT/QNwEHTpX0L1Q6+Lkj0ks5wtGKPHM5bxTmuQ9+Ayhubbfd8nL3ZETgqIoigpXBYs+faACVsAU6O/yml7BLTgDB+AtiwFj4BxMO3qC62ARPPzUoTfhzF+CssMjfBTMg2PQjuvQYzh4w/Hiv1RWtcSqaDhwVWtfgHXQ6vKCS+AILGi17KcdAZNau+JA8UL9x0pCLVYGDGjtpkPDvplQi5UBQYgG0AAaELaKKfpGHAE0gAYEnQGFnH87+ufv5wigATSABtAAGkADaAANoAE0gAbQAJs7sCiEWjkFaEDg8vmJEEcADaABfhtwAgZDNkBue7kBsyFPgQlwBbaFeceb1xkgl/IquFaGBBuCcirUxffdbUGtAkMqHK0D0tdl0Dogfb4OsApIkwEvWnvcx4A0GXCnteXW85JvAWm6GzwFMx1tuff2PqTb4UOwJvzYMV5TZ7+RZgrINy2W1NBxVe8qA+biihcWl48yCOXLBo9gBAyLzxcp/kI7KftXEz6XBS+ra4LoN1OgcyTsKVyRzK9N8JwlA1zUE9hSBmQOQW+CzncDZNDtKtp5LoMuqKHOek0EqFweiX0AtthIxb9eqbsAAAAASUVORK5CYII={scale="+$scale+"}>"
+!endfunction
+
+IBMEntityColoring(cicssit)
+!define cicssit(e_alias, e_label, e_techn) IBMEntity(e_alias, e_label, e_techn, #232F3E, cicssit, cicssit)
+!define cicssit(e_alias, e_label, e_techn, e_descr) IBMEntity(e_alias, e_label, e_techn, e_descr, #232F3E, cicssit, cicssit)
+!define cicssitParticipant(p_alias, p_label, p_techn) IBMParticipant(p_alias, p_label, p_techn, #232F3E, cicssit, cicssit)
+!define cicssitParticipant(p_alias, p_label, p_techn, p_descr) IBMParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, cicssit, cicssit)

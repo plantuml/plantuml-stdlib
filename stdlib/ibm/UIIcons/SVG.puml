@@ -1,0 +1,13 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $SVG [64x64/16z] xS61400000CXXFdRpkElMXu0001m
+
+!function $SVGIMG($scale=1)
+!return "<img data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAAIGNIUk0AAHomAACAhAAA+gAAAIDoAAB1MAAA6mAAADqYAAAXcJy6UTwAAAAEZ0FNQQAAsY58+1GTAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAAOxAAADsQBlSsOGwAAAfxJREFUeNrtmEFOwkAUhgHL1gU2UQk7F+2OA7jAjYfQg3AILuI1ZOEBKBpDwsKFAU2UBQsTQ0h9TZ7JpJmh0+l0SuH/kj+hZaa8/rx5nddGAwAAAAAAAAAAAAAcF03F+R5pRLohXRa85gfpXDj2Sd+KuWekL+H4k3RRZnye4uITUseSyRHpVjgOSU+KsaFkbqnxtSTnRhZvXnYTwY6xgYYBVuOTGTCwvMxsG2A1PtkS6GrWiaoMsBpfy0GhfSVtDAzY8NxScWHAL2kmHF8pMs/j7/6Z8dzaG5AwFT63UzcqGtNWzKm9ATp1QGf9H4wBoeEeABlQVwPeSascBqx4TunIqvEi9ayNM66xJD2ShhlBR7x31zGgyL+fFW8zKwPGOX8waUbueH/e01wGPjc+YhPku05/lQHDVLrq0uF9ukkhrKQAqgxI0rhPeuD0zsPAsBAGVRng7Sha9wZrrrtj3AtpSzrJMGDLY22944j34SmQ8EOaa2TAnMdWtgRcbYlVBkxdBuTagEjSFKWboMhlQF6FBohNUfsYDVBtiA7agDfSmnSqeP6veczB1oBYUgjTBTCuOgOKBLDQXAbXBTZAeXsVpxkwzlkHAoMmaLyvS2DFfUQeA3yDJsi0VynNgCX3DX3NHv5ZkbYxf6fzbsG0VwEAAAAAAAAAAAAAR88fN4VtGgw4QSEAAAAASUVORK5CYII={scale="+$scale+"}>"
+!endfunction
+
+IBMEntityColoring(SVG)
+!define SVG(e_alias, e_label, e_techn) IBMEntity(e_alias, e_label, e_techn, #232F3E, SVG, SVG)
+!define SVG(e_alias, e_label, e_techn, e_descr) IBMEntity(e_alias, e_label, e_techn, e_descr, #232F3E, SVG, SVG)
+!define SVGParticipant(p_alias, p_label, p_techn) IBMParticipant(p_alias, p_label, p_techn, #232F3E, SVG, SVG)
+!define SVGParticipant(p_alias, p_label, p_techn, p_descr) IBMParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, SVG, SVG)

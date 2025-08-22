@@ -1,0 +1,13 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $bluetooth [64x64/16z] xS61400000CXXFdRpkElMXu0001m
+
+!function $bluetoothIMG($scale=1)
+!return "<img data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAAIGNIUk0AAHomAACAhAAA+gAAAIDoAAB1MAAA6mAAADqYAAAXcJy6UTwAAAAEZ0FNQQAAsY58+1GTAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAAOxAAADsQBlSsOGwAAA1xJREFUeNrtmztoFEEYxyd75wM7NZWFioi2loKKHIgIonDB01wkig8URcRGsBCJYqtgo+IbopFwYARRfBQBC20sBDH46BS0ERtBVO6M/4+dwDLO7t2x3zz2dj/4cbnl2Jn/f2a/eexEiCKKKCLPUXJY9hbwCBwDX8BU3gyYBEvAfLAN/AXP82TAucjffaAClsle0bJVicCzR3IXeAoW5NUAivXgBVieVwMoVoKXYG2eDJhUvveDZ6Deq0lwRNPqi8GqyLUyGDA5QvhkwClwX44AFTkyGB8hfMwBZ8FO8MvGCBEw9KAxUGM24S7YAL6ZHiFKDOIHQRW863I6qz4Cp5Xvn8EE2AQWKslxSI4Sn1wacEeKn+lJ3ZrQzgCK79Lk1WBp5Po8acJr8NHVI0Ct01QytonHgUzYCEaV63PBRZc5oCFbwYYJf8ADzfU5rpOgLRNq8p7RmAYnfBgGTZswI76siD8CbqW9eZmphRryM1rRcqTVGsziD4PLHBUvM3ZTbhN04mlKfAhc4ao0pwGcJsSJPwiucVaY2wAOE+LEHwDXuStrwoA0JsSJ3w9uZm01OCVnhtXIaBOdMdY0v1fF08pvH0e2j4s+C6s7Xas2Nb2vqRG/RzMDzNx+QFxPSJqTkPjd4LbpytnaENGZEBctufYfs1ExmztCnZhAj8Gw3A8QvWZAOxOacido3GaFfNsSm7ZdoO0eoBsRhDJEvgdve9GAJPHOTCh5JN6JCSVH4psxSVCdMX4wbULgSPyQ5re6TRWaCO3IqgFJ4hsxC6g4EwazZkC34tuZMGrKhMAj8U5MCDwT38njUPfVAC7xSSaUZE+o+2YAt3hrJgQei+/EhAHXBpgWr5qgTuIuuDTAlniK2SI8WarG77Q3TrMrXLUknk6E3BPh4Yho/AB7XRowLLvhdoPi6STIQ7BCuU6HJzaDNy4NaEnR9DlhQPwaER6a6leuvwJbwVeOQtK+GGnFLGzSBg1xN0R4CCIaZAhtm/3kKsjUm6E0cRKcEf+/szgPjovwTZHoRQNmgasifB+g7hMcBZdMFOqTAU9EeCBSzfSUZB+bKtQnAyqmMn3WcgB7ps+aAeyZPksGGMn0vhpA/ym2yEamTwqXx+XpiOs6ER6IpsnUuCiiiCKKsBz/AF867sqXBGvlAAAAAElFTkSuQmCC{scale="+$scale+"}>"
+!endfunction
+
+IBMEntityColoring(bluetooth)
+!define bluetooth(e_alias, e_label, e_techn) IBMEntity(e_alias, e_label, e_techn, #232F3E, bluetooth, bluetooth)
+!define bluetooth(e_alias, e_label, e_techn, e_descr) IBMEntity(e_alias, e_label, e_techn, e_descr, #232F3E, bluetooth, bluetooth)
+!define bluetoothParticipant(p_alias, p_label, p_techn) IBMParticipant(p_alias, p_label, p_techn, #232F3E, bluetooth, bluetooth)
+!define bluetoothParticipant(p_alias, p_label, p_techn, p_descr) IBMParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, bluetooth, bluetooth)

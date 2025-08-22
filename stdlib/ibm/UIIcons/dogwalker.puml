@@ -1,0 +1,13 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $dogwalker [64x64/16z] xS61400000CXXFdRpkElMXu0001m
+
+!function $dogwalkerIMG($scale=1)
+!return "<img data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAAIGNIUk0AAHomAACAhAAA+gAAAIDoAAB1MAAA6mAAADqYAAAXcJy6UTwAAAAEZ0FNQQAAsY58+1GTAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAAOxAAADsQBlSsOGwAAA51JREFUeNrtmkloFEEUhivGFUyQuCAxRogIQi4aRVCCQUHB9aCoYMRhiEtEBD24IIh68GBE3I2YgCiiIqhgXEgUNB68iOJBPenBJEZxycEIitv4P+YNtEVPV3fPVl3dP3yHqq7qmX5d9frVqxIiUrhVFMD/XA3Wgfmgkuu6QAdoBS9NNcAgcAQ0guI0bf6AM2Ab+OXmpsUBefjB4C5YBQY4tKNrM8AscIUNYoQBjvHDu1UVKAN3VA0HBmTON0p13WAneMDlOaAJVFjaUJ9mlU8IwgjYzUM6pR4wBTwB35gX4DyoB6WW6fATtAvFnNFd86TyDtBn066Przn1DaQBKqVyp0PbTkXfQBogpwqCAbqkcp1D2zpF30Aa4J5UbuJPnKwyvmZVhwlxAHn9jZaXRV5+NfgAPoPhYAm4BsZLUeEG8MmEUPgk2OyjzxZTIsH7HAtUeWi/Fvw1xQA0nC/zPJ/m4Luo3Wl+eFeLIROWwwkOjdt5OfwqynJEMichMoaTGwvBJDDMQ99+XiRdAmd5YRQoA9SCNjAiC/d6DhaB3qB8BehtPwYlWbrfWDAXnBNSlkjXUPiwx+HuRlM5MvxPOmaEJoPFUt0ucBx893CfcaAFLLDU1XOEqPUIWC/5pkfgoMeHJ73jNYQcQ2i9GhwCYlLdqQzu1y2VS3Q3wHIw0lKmFd+NMCVEZCfV6jamN8EA5PxmSwubllz/qN1XIOEzevTbL53zuy1cpLRMGQE1YJNU15yPH9bBAKPAdSnweSMUGxqmGICm4FUwQarf42JK5cwHFHmc25msNA+J5L6eVUdFMvsjTB8Ba8BWqY42O7fn808UygA1vEa36i1YCX7rZoB+qVxu06Zc0Ufl9CjOXyaSeX6hmwFeS+WYTZuYoo/K6VEE+KxQXlilNl5Lp7SfHdwFLlMKep9NHy9O72IhP0MqnWBnlTp4QIeVDjB2+sp97ESpqR9gqAenl8hSJErq9TMFaF7GhYtdFm4Td5jLdIqjlpephXB6D/2MAMFOa4VI5tRKHd58nNs66SmYDkbn2el9EclzRb4MkDICZWdow3EpmGgJW2/ysHf7QB+ZfOg9v3k6PtOTiQFS02Evo7tcpfxDf0TGzQjIlhd2tVOjowGyJUpIzmQaRJqdGh0jwVyIDjreEskzwKE0gBBpdmpMmgKyr6jgue+4U2PyCEid9rKqOmxTQLlTEyYfoIUiA0QGiAwQGSAyQKRIkSKFVf8Ami2sd1mxMS4AAAAASUVORK5CYII={scale="+$scale+"}>"
+!endfunction
+
+IBMEntityColoring(dogwalker)
+!define dogwalker(e_alias, e_label, e_techn) IBMEntity(e_alias, e_label, e_techn, #232F3E, dogwalker, dogwalker)
+!define dogwalker(e_alias, e_label, e_techn, e_descr) IBMEntity(e_alias, e_label, e_techn, e_descr, #232F3E, dogwalker, dogwalker)
+!define dogwalkerParticipant(p_alias, p_label, p_techn) IBMParticipant(p_alias, p_label, p_techn, #232F3E, dogwalker, dogwalker)
+!define dogwalkerParticipant(p_alias, p_label, p_techn, p_descr) IBMParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, dogwalker, dogwalker)

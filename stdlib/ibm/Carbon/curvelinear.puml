@@ -1,0 +1,13 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $curvelinear [64x64/16z] xS61400000CXXFdRpkElMXu0001m
+
+!function $curvelinearIMG($scale=1)
+!return "<img data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAAIGNIUk0AAHomAACAhAAA+gAAAIDoAAB1MAAA6mAAADqYAAAXcJy6UTwAAAAEZ0FNQQAAsY58+1GTAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAAOxAAADsQBlSsOGwAAAudJREFUeNrtmluoDVEYx+cwIR3CA7mVJ0QdlJREiAdPHuQSXlwe5HZCKLnkkhSSy1FOOSGEJyUhhUQ8kKJEHiTKpY4HTkfk9ludb2qaZt/Omcu6zFe/mtlrzW5///mvb61ZezyviCLyjBtCbtHN9TtQCOBgzvWwPDjxHUt+IRyCQfAQXrsiwGhogplwB2ar5F1wgLL7DtgAn2ERXA538B2x+xHYC23RTr4jdn9VqrPvkt1tFqAqu9soQE12t0mATtndFgE6bXfTBeiy3U0VIDG7myhAonY3SYBU7G6CAKnaXXcBUrd7XNTlnLTaDxwMrSG7r0nL7ro5oF7u9jj4kIXddXJAYPdh8AymZWF3HRwQre6tUuza8rKhn6Hd46p7rv8JZCVALtVdBwEyW8zoJkDmixmdBNDa7pWmwbtd/K4B0CDH7+BtFdcE/Z/nkPuMJByg7D5Rjj/CPdN2V+pytnswDc4xqQYYUd3TEMCo6p60AAvgsEnVPSkBrLJ7LQJYafdqBbDW7pUEsN7u5QQYJasxq+1eTgD1usgquGKz3SsNgRbPwbD9HaHtUsRVjIWX0Q42vyc4H3bB6XKdbBVA5bUNNsM1F4fAX5gC7TDXVAHWwnFJYjy8iekzC27BL5gEL0Jt7dVaRdc4AdehN5yF7pF2tQN1RnLYFEm+prGic6iXmj/BZNgSaWuGoXAVTsZc2w9GwEA5HyLnRgnwBZbBP6noDSFh5sF7WFHi2o1ex75ks5zf9mL2KU0ogjfhGDTKUFgCR+EPLIWvJa7bKRg9BILYKs8qqhg+lsf1fXA/ifnShPgJi+EH9IEnoRWeEwKo6A895HgkDHdJADXlXZSp8Cn0hXNJ/H5TBGiRO34Bpks1nxozNVopwDpZzqqkV8t+xUqZGnfDBJsFUMkdhN8y/X2Tz9WW3SmpCeehl40CqKnuEvSEPfAo0q7sr/6EHQMHbBSgSar9A9gf0/49NBTWex2buEUUUWP8B3dBuMJ4cLyPAAAAAElFTkSuQmCC{scale="+$scale+"}>"
+!endfunction
+
+IBMEntityColoring(curvelinear)
+!define curvelinear(e_alias, e_label, e_techn) IBMEntity(e_alias, e_label, e_techn, #232F3E, curvelinear, curvelinear)
+!define curvelinear(e_alias, e_label, e_techn, e_descr) IBMEntity(e_alias, e_label, e_techn, e_descr, #232F3E, curvelinear, curvelinear)
+!define curvelinearParticipant(p_alias, p_label, p_techn) IBMParticipant(p_alias, p_label, p_techn, #232F3E, curvelinear, curvelinear)
+!define curvelinearParticipant(p_alias, p_label, p_techn, p_descr) IBMParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, curvelinear, curvelinear)

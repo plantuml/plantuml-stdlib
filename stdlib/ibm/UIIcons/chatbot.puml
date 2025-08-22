@@ -1,0 +1,13 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $chatbot [64x64/16z] xS61400000CXXFdRpkElMXu0001m
+
+!function $chatbotIMG($scale=1)
+!return "<img data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAAIGNIUk0AAHomAACAhAAA+gAAAIDoAAB1MAAA6mAAADqYAAAXcJy6UTwAAAAEZ0FNQQAAsY58+1GTAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAAOxAAADsQBlSsOGwAAA45JREFUeNrtmm1oT1Ecx8/sP94wWWqtNA8vzCheeCrGpNBW5IVSSN54WCESShitvNgS8pAoJIqiFsXQZHizvJDkYS15Wv1JprAX25r5/rq/5ezscO+2/z33Hvd86/Pi3vs/t/P73v+9v/M75wjh5OSUZGUF+M1ksB4sBoVgeMxj+gk+gLvgLHg5UANywBGwCWRb+oC7wGmwHXTqfvC3wIaCOrASDLH4H059nwXmgitsSCADjnLw/4vGg1HgtnohpfnxFFChnPsIdoP74HPMg80H80EVKJLOV/Dr8MLvH7AHzJGOm8AM8AS0WfC02/jDdxmsBrnS69AB7qjviKpFyvE+8M3Cvz31eadPbFoDCpXjxxa/+w0+sWkNGKEcpy02IO0Tm9UpLmN50hmQZKVCuu8YUA0WcKp9CPaDV4baR2oAdf4ZyJPOreAUNJULlTDbR/4KVCud79FIUGOgfeQGlP7j2jwD7WP9EeyOuL0RAxoGeC1T7SM3YBdo1Zxv5Wtht488C7SAaVIaIz3gzrcYaB+LcQB1dFWE7d1I0BngDHAGxMKAhTG5h/EsUCC8Gdhl4CA4MMD7ULtKcEN4CzRpGwwoB5eENw8vuIyl5arD/RjK0orVDm4r2EiqA9aAW3E3oFn0nm7P4iqOytkN4L1P+7HgjPDWImVl872FDQbQqlItGCadp4DeCG9e/iJ4LZlBQU8Ca8ES0Xe9op3v2WzLN4DWFZeDq+LPwkTPUyxnguo7B19nWxagDs8GjYO4RyPfoy6sTqZEuKK/OS2zreNipihguyYuhi6AXzamQVkUwDlwHpSApWAmGMeQ3jG0/nhTeKtR3Qb6ZsSAHlFAjxg3FI6zAT80ozpbVeATm9YAdd691GIDSnxi0xpwTzmukYa1Non6XOUTm3aHCE1HbZTMyeVBDW2N+Sriv0skn2uH62CCdL6Lh+Jf1KJDp+Ngc8gdDbJHsSyDxc8JsCVoFqBKrD7iJ5niCjITqueYAqfBDnb/pNDsrTMk2tVVPMh7dHEMZRxTvwZCnfwanBLmt8rmDWISJWNbZaPUMbBVyd8TwackjASLRd+NmofCCD6uBtCHL0c6fiu8TduJqAXKGFlURrcnwQBd2qO9QdeSUg2qaY/mEbYlpRzWpT2aQHmaFAMqRe+NUZT29iZlQsRo2oujAUbTXpBy2LRo7890MJqPqWR9LhKmHP7i1wonJycng/oNNfS0hIHVBNMAAAAASUVORK5CYII={scale="+$scale+"}>"
+!endfunction
+
+IBMEntityColoring(chatbot)
+!define chatbot(e_alias, e_label, e_techn) IBMEntity(e_alias, e_label, e_techn, #232F3E, chatbot, chatbot)
+!define chatbot(e_alias, e_label, e_techn, e_descr) IBMEntity(e_alias, e_label, e_techn, e_descr, #232F3E, chatbot, chatbot)
+!define chatbotParticipant(p_alias, p_label, p_techn) IBMParticipant(p_alias, p_label, p_techn, #232F3E, chatbot, chatbot)
+!define chatbotParticipant(p_alias, p_label, p_techn, p_descr) IBMParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, chatbot, chatbot)

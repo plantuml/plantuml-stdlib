@@ -1,0 +1,13 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $textcolor [64x64/16z] xS61400000CXXFdRpkElMXu0001m
+
+!function $textcolorIMG($scale=1)
+!return "<img data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAAIGNIUk0AAHomAACAhAAA+gAAAIDoAAB1MAAA6mAAADqYAAAXcJy6UTwAAAAEZ0FNQQAAsY58+1GTAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAAOxAAADsQBlSsOGwAAAlNJREFUeNrtWD1LA0EQPcM1prPW2vyB+AeMddKmM0UCyQ+xsveSgCJ+CyJoIRZaCNqoiChY2GhhZeNnFIIYZ2ED4xDOi9m5y23mwYObvd1L9t3e7OxzHIFAIBAIBIOKoYh+Nw08I20TwPOw/0giIgEqAdusFGAEmO/Qntf3rBdgGpjs0J7U96wWQOWcss/9cth5KWwBJoEpFO8Ad1Gc0n2sFYAmulnNyJJhmAKMAnMovgKeAI+B16g9p/taJ0AR6KLYQ9c1dO3qvlYJoCZVQvErcAXFy8AGiktErNgLkCXLWk3+nQiyRj6XrE0C0MRW7dCnGkUyDEOAcWAGxTTptXEBPEVxRo+NvQC0uPF8+la7KJpiIcAwsIDiR+CWT/8N4DOKC/oZsRWAHnAWgE2f/p/ApQAHp9gIgBPZN7AeYIyqCVphJUNOAdLa5GhjH3gXYNwN8IgYJek4CkDfnNfF2FpYWyKXAPTbvQfudTF+WydMdrOESwBqetR1DgiKpk6Y7GYJhwB0/1aTmf/Hc6hoLGYJh/uiKrgDppU1BTzs9xXAuW1V+v0ToKaHaRg3S0wLUGQ+xxs3S1zDz8KmR0O/rZcenzumCygXmSUzwK9+WwHU9Ng0MHmFB+e3c2zULDEpQOWPaq4XeFzJ0JQA1PS4JOZGr1Bb3y2HWWJKAFqkmHz7jj4dspglJgSgpocyO1cZdoBF4Idps8SEAPSgsg58YxDgSSdWo2aJCQE4kx/FXIhVp0AgEAisx38coZZNc0oM+goQAUQAEUAEEAEEAoFAIBAIBhE/p4BfnzvTBtUAAAAASUVORK5CYII={scale="+$scale+"}>"
+!endfunction
+
+IBMEntityColoring(textcolor)
+!define textcolor(e_alias, e_label, e_techn) IBMEntity(e_alias, e_label, e_techn, #232F3E, textcolor, textcolor)
+!define textcolor(e_alias, e_label, e_techn, e_descr) IBMEntity(e_alias, e_label, e_techn, e_descr, #232F3E, textcolor, textcolor)
+!define textcolorParticipant(p_alias, p_label, p_techn) IBMParticipant(p_alias, p_label, p_techn, #232F3E, textcolor, textcolor)
+!define textcolorParticipant(p_alias, p_label, p_techn, p_descr) IBMParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, textcolor, textcolor)

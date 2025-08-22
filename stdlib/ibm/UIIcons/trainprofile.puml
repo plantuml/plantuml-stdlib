@@ -1,0 +1,13 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $trainprofile [64x64/16z] xS61400000CXXFdRpkElMXu0001m
+
+!function $trainprofileIMG($scale=1)
+!return "<img data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAAIGNIUk0AAHomAACAhAAA+gAAAIDoAAB1MAAA6mAAADqYAAAXcJy6UTwAAAAEZ0FNQQAAsY58+1GTAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAAOxAAADsQBlSsOGwAAAsBJREFUeNrtmk1IVFEUx6+TtLAPKo0+LCGSyMAI+rDEMKhpIW6qja5CghAJAhdau6JttAhxU62CFi0yMj8iiomgcFqIgmWELUptUbqQighr/F/mBI/Dm5GGue/O3Hv+8GOY895j5v3n3HvOvW+UEolEIpFI5KtKQmIpw585D76BWfAWPAYvwE8bBpRa+MwNxC5wDHSAX2TENTAe5ZdZERK7YumH2APawV4wBuZ8MiA4JGtAG/gURTaURHBTfE5ZD7aCHSAOmsHODNfeAhfA7ygzIN/iGXUZfAUfwDC4CV6BarCdnbsfHAZ9pkywYcDVkHM+gjv0qrNiZeCYzo4T4KGJShErsLJ8F9SB9yx+CLwMyRDnDFDUGzSAJIvvpqFS47oBihql4+Api2+jTKhz3QCt71Qh7rN4OXgGTrpugKKZvxX0svgq0A9aCmEt8AUkQBeYDjk+Q3XfhP6Ci6DHZie4BtSCs+AeWAip5bUGG7kmyuSE7Va4DGwGD1g8SeaUGRwqjWATGPrfDM73WkBPUDdYbIEyYwuooIwxoYNUIh+BP1GuBVIW1heKSuEAmR6ULp2nqYoUfRXIphFwNGTijVOZrHDdAK13oB5M5to6F7sBWp8pE3JqnfO9J6j3+SotGbGaKlCcxecoNhpFBiQsZkK21vkJqDJtgHa6u0Bb543gtqk+QLfCekf3TIZWOGrpITwI1oIjbGPluUrvNUZes20oRjfcGIjpPcbzrlWBbAul6yHrEuWLAf+aJT4XeGUA30le55sBB9j7Sd8M6GTvX/tkwCXaLAlqiJ9U6thN68du++iXb2bHktQRLmtAysFs+KHSD1xTrmdApjXCKZV+4KJ8M0D3AefARKYTXDNgEUyBNyq9Dzns6JAWiUQiUV5k45+iBXXPMd8zQAyQOWB55fr0tyiukyEgBohEIpFI5K2WAAZXg1L/4kygAAAAAElFTkSuQmCC{scale="+$scale+"}>"
+!endfunction
+
+IBMEntityColoring(trainprofile)
+!define trainprofile(e_alias, e_label, e_techn) IBMEntity(e_alias, e_label, e_techn, #232F3E, trainprofile, trainprofile)
+!define trainprofile(e_alias, e_label, e_techn, e_descr) IBMEntity(e_alias, e_label, e_techn, e_descr, #232F3E, trainprofile, trainprofile)
+!define trainprofileParticipant(p_alias, p_label, p_techn) IBMParticipant(p_alias, p_label, p_techn, #232F3E, trainprofile, trainprofile)
+!define trainprofileParticipant(p_alias, p_label, p_techn, p_descr) IBMParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, trainprofile, trainprofile)

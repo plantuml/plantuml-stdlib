@@ -1,0 +1,13 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $circlesolid [64x64/16z] xS61400000CXXFdRpkElMXu0001m
+
+!function $circlesolidIMG($scale=1)
+!return "<img data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAAIGNIUk0AAHomAACAhAAA+gAAAIDoAAB1MAAA6mAAADqYAAAXcJy6UTwAAAAEZ0FNQQAAsY58+1GTAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAAOxAAADsQBlSsOGwAAAwNJREFUeNrtmz9oE3EUx3+2SMG2tmgRWglOWuIm2qXFpbQIxbgIilhwzlALji5ujootmLVDnbppqUixDtJN7WZpXRICCpKANUUQqfh95N0i9+d3l8vl93v5Pfhsubu8z/3+3r1TyoULF90cxzK4Rg+4Aq6C8+AiyIE+MMq/+QZ+gyr4DL6A9+AD+GujgONgDtwF18DJhOf5Cd6AF2AD/DFdwGmwCIpgJOVz10AJPAN10wScAA85+YE2d6lDlvAY/DJBwA2wBM5lPH5VwH3wspWT9LZwbB8n/gQMd2AAp2veAWfAW3CUZQsYA+vgkiGz2Q64Dr5m0QIugHcgb9B0TtPpTfA67gDZmyB5mp/PGrimoS5xm8eEejsEjPGdNzF5L/pBAayBRpoCaMDbMqzZh7WEabCiMzDqClji6c6WoDHhFK8eWxZQ4KnOtpgAn8B+1EYlaoW3bPFmb5lzSNwCHnELsDW8BdpWkhbgbWxsj0XOJbaALDY2WcRA2I3sCdnPF5WcKHJO2gLm2rCf72SMcE7aAuaVvJjXFUAzw6xAAbN+s56fgMtgSKCAIc4tUsCUkhtTOgLyggXkdQSMCxYwriMgJ1hATkfAoGABg05AzO2w+PAT0BCcb8MJ0BBQFSygqiNgT7CAPR0Bu4IF7OoI2BYsYFtHwEdwIDD5A84tUgC9TdkUKGBT+bwpCloIrQoUsKq7EKKgV0o1QcnXVMBrsiABVI1VEiSgpAIqzML2AlSIdCggea+oSsUVUA870KIILauL2g1SKVrF4uQrnINKKoDq8BYsFrCgImoJdeoD6P06laJNWJb8c/A0yfMAv3igmqVotsQO/+fI0C2RoRXUK9UsRRs2PPkymAE/0hTgPUygOjwqRes3NPnvqlkgVdY9IG6dIE0nVIdXMLAllDn5/TgHJakUJQlrfLFRg/r8TJw734oArzusqGYpWqdnBxrtb+n2+bQEeAPjBtuf7ECXoEXOPZ7qjpKexH0wkfKf69pPZv6Prv1oKmi1aexncy5cuOju+Ae+upDtqzZG8wAAAABJRU5ErkJggg=={scale="+$scale+"}>"
+!endfunction
+
+IBMEntityColoring(circlesolid)
+!define circlesolid(e_alias, e_label, e_techn) IBMEntity(e_alias, e_label, e_techn, #232F3E, circlesolid, circlesolid)
+!define circlesolid(e_alias, e_label, e_techn, e_descr) IBMEntity(e_alias, e_label, e_techn, e_descr, #232F3E, circlesolid, circlesolid)
+!define circlesolidParticipant(p_alias, p_label, p_techn) IBMParticipant(p_alias, p_label, p_techn, #232F3E, circlesolid, circlesolid)
+!define circlesolidParticipant(p_alias, p_label, p_techn, p_descr) IBMParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, circlesolid, circlesolid)

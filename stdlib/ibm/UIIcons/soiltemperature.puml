@@ -1,0 +1,13 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $soiltemperature [64x64/16z] xS61400000CXXFdRpkElMXu0001m
+
+!function $soiltemperatureIMG($scale=1)
+!return "<img data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAAIGNIUk0AAHomAACAhAAA+gAAAIDoAAB1MAAA6mAAADqYAAAXcJy6UTwAAAAEZ0FNQQAAsY58+1GTAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAAOxAAADsQBlSsOGwAAArNJREFUeNrtmr9LHEEUx+c0sRATERsVNViGWMVTVARrJSoYSGVzxMQm4h9gG0gjWPgDTgQVLLXQQ47YWBgioqQJ5EJIk+ihbSxSyBn9Lvcky7i3u6N7tzPu+8IHdmZn3t7Ozbx5M7NCsFgsFovFYrFYrCgq5pB3GaV3Lot6D+AGYC/AYrE4Diiu+sACXb8F6ajNAknQSCR5GtRM5SV4xnfQC87AGPhpmg/QdQw/AAkwAp5SXgasgiWQC6oBfoMmuj4CzRq8fB3YBO0F7h+AQXB6H33AQ5ByeXlB91JU9s4+QLcxbP2GNz7KNYATcBh2HBC0j/kMumzpNNUTZKfPdm8PdOs+BFTjhGcOPeKYGPMoey98wGMpfVTg2qmslg3g9g+WZC4NW2nbNMuhMDcAN4D5PkDr9X8peoDW638eAiVogFDn9SB8wF3HcKjzehA9wKgxHDUf8D7oOmUGjeEPYPIW9Sapru8NEWvDY5rQZQNzAMxJeTn6jdtS/iPQIf25PeAL+OGnAXSTta21BWpsedZe3wuw6FDeapAd0A+qbPmdYB78M80HWJubLbb0ORgGuy51PlGZc1teC9kyzgm+lNLLIr/V5aU9KutmK5T9ANU4o0NKryg8a0X83y90shVKD1CNM+qldEbhWRkPW0YMgZiD9/ernIetUBpANc6QT3daFZ7V6mErEB+gOqZV1wr70iww4tMJXpeVbQXeA4q9dkhJ6VEQ91EvTmXdbBnhA9ZA1pauEPmD0bjHy29S2WtlyVbgkWCxzw4vRP6E+pUU7iao1/0Bf0ElaKPYfxZUS3Zeg69eHlZnzYB3t6xrNci438WQrvoIap2CGR8vPyEKfARuUgNc0gzyTeRPfL3O/bLkBKeEyxfwJg0BITlCK64fAs/BE8r/RcveDbAuLYZYLBbrhq4Aw1SIbByYX9MAAAAASUVORK5CYII={scale="+$scale+"}>"
+!endfunction
+
+IBMEntityColoring(soiltemperature)
+!define soiltemperature(e_alias, e_label, e_techn) IBMEntity(e_alias, e_label, e_techn, #232F3E, soiltemperature, soiltemperature)
+!define soiltemperature(e_alias, e_label, e_techn, e_descr) IBMEntity(e_alias, e_label, e_techn, e_descr, #232F3E, soiltemperature, soiltemperature)
+!define soiltemperatureParticipant(p_alias, p_label, p_techn) IBMParticipant(p_alias, p_label, p_techn, #232F3E, soiltemperature, soiltemperature)
+!define soiltemperatureParticipant(p_alias, p_label, p_techn, p_descr) IBMParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, soiltemperature, soiltemperature)

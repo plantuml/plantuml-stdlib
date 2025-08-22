@@ -1,0 +1,13 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $datavolumealt [64x64/16z] xS61400000CXXFdRpkElMXu0001m
+
+!function $datavolumealtIMG($scale=1)
+!return "<img data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAAIGNIUk0AAHomAACAhAAA+gAAAIDoAAB1MAAA6mAAADqYAAAXcJy6UTwAAAAEZ0FNQQAAsY58+1GTAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAAOxAAADsQBlSsOGwAAAmhJREFUeNrtmj9PwkAYxgs0fABc/MM30ESYcBPjYIwObkTUxURZdFW/AqyaGHRVo7MaR3F0AhNdnFEm0Rk1+Fx8G0nT0gav7fV6T/JL4Pqmxz3cn7cvaJqSkpKSUnQVs2lPgzKYASP/uP87uAd74CEsBrDBN8AQx34+wRq4EM2AhEXbIch50M8SeAZPIhkQt2jLe9SXDk5AQSQDdIu2UZf7hBsVaNC6yQRNlOUQ9/j+bJCr4EvUmRD3oQ+hTYj71I+wJug+9mWsefOecE54pRa4BbugGdQM6DcTvBZL5IqU26SDNiAoEzRK7MoiGBCkCfkg9wArE/zIBbp9cpzAZoDQqbAyQBmgDFAGKAOiIj/zgCQoUVo6QW2P4AxUQUdmA1gCcg0ypvYpYh0sgFcZlwD75q8sBt+rDMUkZTRgE2RdxGUpVrolsGJ6fwM26PUxmDfFHsg2A8ZN79lG+EKUHGKlOgWCUizoGWD+IYQdeWNE1SFWihlwSkedIbbmm31ipTsFjkDdRVydYqUzgGV4i9pvUdJODYrpyLgENMrwclFOhY2ZsE84iZWvK9pfEbMGdvrsHVIdg2zw7M8UqZ62ZTAHJnmbIOLjcMU0eEMpuiZ9PWB6wGuqICKLAXcDXpPGALbbty3a23RN+lOgSbt9ZI9Bw4SiQwyXGmNYH4e51RjDeApwrTGG0QCuNUbd5sGl93f0LqcPHuN0H641RqsZUBN8BnCtMVoZwP5N9RblTLBJmwg7TloCfmauNcZYCL+0LZc1BabtQfYA0cW1xpgIoQHf4BLMgmGbGKPG+CHjEuCaCispKSkpRVk/AiuDZJIoCvAAAAAASUVORK5CYII={scale="+$scale+"}>"
+!endfunction
+
+IBMEntityColoring(datavolumealt)
+!define datavolumealt(e_alias, e_label, e_techn) IBMEntity(e_alias, e_label, e_techn, #232F3E, datavolumealt, datavolumealt)
+!define datavolumealt(e_alias, e_label, e_techn, e_descr) IBMEntity(e_alias, e_label, e_techn, e_descr, #232F3E, datavolumealt, datavolumealt)
+!define datavolumealtParticipant(p_alias, p_label, p_techn) IBMParticipant(p_alias, p_label, p_techn, #232F3E, datavolumealt, datavolumealt)
+!define datavolumealtParticipant(p_alias, p_label, p_techn, p_descr) IBMParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, datavolumealt, datavolumealt)

@@ -1,0 +1,13 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $inventorymanagement [64x64/16z] xS61400000CXXFdRpkElMXu0001m
+
+!function $inventorymanagementIMG($scale=1)
+!return "<img data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAAIGNIUk0AAHomAACAhAAA+gAAAIDoAAB1MAAA6mAAADqYAAAXcJy6UTwAAAAEZ0FNQQAAsY58+1GTAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAAOxAAADsQBlSsOGwAAARRJREFUeNrtmtENgjAQQFvCBn5pHMIRmMNBdAZcxDUYwSE0fjkDXoOfSAB7rXDvJffJhb706B2pcwBgGa+Udy9xkagktj/meko0EieJ+xIEhMXfJDaR874kDrElFAoCaoXFu0/OOnZSDQGVYslGz10qvOQucpm1A7n/cgcsCgQgAAEIQACzgG4vn5vBWcIn7OVz0ztLFAl7+dz0zhJF4l4+N9WYWSB2L5+bwVmCYxABCEAAAhCAAASYpTSwRs8OQAACFvkNaGfW9qTnKAEEIAABCECAYfyIc9SzAxCAAAQgwNAp8HAK9/FmvEu2abCxXgJn110mMCsg3KAINymurrtesmq+/REKEo6cAghAAAAAAMBqeQP3QyBKEBjNpwAAAABJRU5ErkJggg=={scale="+$scale+"}>"
+!endfunction
+
+IBMEntityColoring(inventorymanagement)
+!define inventorymanagement(e_alias, e_label, e_techn) IBMEntity(e_alias, e_label, e_techn, #232F3E, inventorymanagement, inventorymanagement)
+!define inventorymanagement(e_alias, e_label, e_techn, e_descr) IBMEntity(e_alias, e_label, e_techn, e_descr, #232F3E, inventorymanagement, inventorymanagement)
+!define inventorymanagementParticipant(p_alias, p_label, p_techn) IBMParticipant(p_alias, p_label, p_techn, #232F3E, inventorymanagement, inventorymanagement)
+!define inventorymanagementParticipant(p_alias, p_label, p_techn, p_descr) IBMParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, inventorymanagement, inventorymanagement)

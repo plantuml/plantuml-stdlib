@@ -1,0 +1,13 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $microservices2 [64x64/16z] xS61400000CXXFdRpkElMXu0001m
+
+!function $microservices2IMG($scale=1)
+!return "<img data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAAIGNIUk0AAHomAACAhAAA+gAAAIDoAAB1MAAA6mAAADqYAAAXcJy6UTwAAAAEZ0FNQQAAsY58+1GTAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAAOxAAADsQBlSsOGwAAASZJREFUeNrtmVEKgzAQRLX0CJ7D2/Xb+OudeiPvkFpIQWxSk5rUbvYNBGwhwXlslh1sGoSQZrUC39nm9HzRXgEA0A7gqqCPWSoAAAAAAAAAAIBq5wBLBQAAAFnnaFvgzDN6QUsFAAAAWeaAQ3mbCgAAAHLrtqz+i3292ysawLCsaVn3RAi92zO5M0QCeL64cc9dAoSX+c79NmsIkntADIStedE9YFxVQAyEkHnjziqWBUpnh8EDYvYYnffMS70CoUpodv57My+5B/ggfJLXvPQmGAshaL5UFvhldhhXJpPN1zIKhyph13xNWWALIcp87BWQBMH3rAZAknHiMAAA8DdZoHR2oAIAAIBjc0DpLHDqdweuAAAAAAAAAIAsQBbgCgAAIYQU6gFVfy9YVxP6EQAAAABJRU5ErkJggg=={scale="+$scale+"}>"
+!endfunction
+
+IBMEntityColoring(microservices2)
+!define microservices2(e_alias, e_label, e_techn) IBMEntity(e_alias, e_label, e_techn, #232F3E, microservices2, microservices2)
+!define microservices2(e_alias, e_label, e_techn, e_descr) IBMEntity(e_alias, e_label, e_techn, e_descr, #232F3E, microservices2, microservices2)
+!define microservices2Participant(p_alias, p_label, p_techn) IBMParticipant(p_alias, p_label, p_techn, #232F3E, microservices2, microservices2)
+!define microservices2Participant(p_alias, p_label, p_techn, p_descr) IBMParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, microservices2, microservices2)

@@ -1,0 +1,13 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $banking [64x64/16z] xS61400000CXXFdRpkElMXu0001m
+
+!function $bankingIMG($scale=1)
+!return "<img data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAAIGNIUk0AAHomAACAhAAA+gAAAIDoAAB1MAAA6mAAADqYAAAXcJy6UTwAAAAEZ0FNQQAAsY58+1GTAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAAOxAAADsQBlSsOGwAAAvRJREFUeNrtmj9oFEEUxnezl1oFQRTBYCeSYONho6AgmEqCjYkJJIJWomglFhYKYu2fShBjiFaHGJQ7EDWaJliFoAgWohgQSSOiKAjGb+CdTNaZ3dm7nZ3s7Hvw4+52NnOZb+d98++CoOIROvzuHnCe3l8Ff1z8E5Gjxq8HDXASHAB18Bj8qkIP2AkegM1gnK7dAZ/BEHjjcw84Ah6B7+AgeAHeghlwFJwF7+iaVwKIfL8MroNn4BD4JJUvgymwG1wAvWAWrPggQDvfJ8AVcAL8VNwn8v8+qJEIhfhCVEC+P6XXY+BmylNdoR7yGpwBw/R5uYwCqPI9Hk0wCqZj1wvzhchBvssxSq/TirJCfCG0kO/3qNEi3y8qJjh7yAe2gwG6tiiV71cIeolEaIER8HUt9gCTfBeNnwPrwDfwhZBjskhfCHPMd5PJzG2wD+wAv3OYRDVc94As+S7iMNhGvaOTuX/uvhBazvdAkwIfwFKs7D24BeYNhc/FFyKL+a4K0egnYCPYECvrB+eofCmlntx8IbSY71mjl8b6l+B4Ub4QWcz3TnrjKfARPCzKF0KL+a6L55rrW0Ef2GvoA7n4QmQx33UxLr0XE6FNNBdYoB4w32G9HflC6Cjf5bWAiEHLmy6NrD3Adr6brAW6CWNfCC3nu+tI9YXIcr67jlRfiDKu38sa2v2FdgoI971GnxfyXG6usRDpvYt6xmlwo0YFP2JPXLVOL3PI7ZmV2pw4PDU9evLa9vQEFQ8WoOoC1BLK6gkLlzKa4KusU+EtmkWL7guSyl3XI17vdjOqpY0KpqNGXvW0Uu5rGdbDHsACsAAsAAvAArAALAALwAKwACwAC8ACVDF0h6NjweofKaRtk5tuo7usR/xAa8pUALGZUA/8OhcQW2L/nUIn7Qkq/6Ck0WQPYAFYgMRRIKvrl9EElaNCuweMSDe1b1z06EHH2zNAbV41Cvjk+sajApsgC1DxkD3Ap9Ng06nxv9Ph+Gmw79H1abE38Rd3wvZhT4SVSgAAAABJRU5ErkJggg=={scale="+$scale+"}>"
+!endfunction
+
+IBMEntityColoring(banking)
+!define banking(e_alias, e_label, e_techn) IBMEntity(e_alias, e_label, e_techn, #232F3E, banking, banking)
+!define banking(e_alias, e_label, e_techn, e_descr) IBMEntity(e_alias, e_label, e_techn, e_descr, #232F3E, banking, banking)
+!define bankingParticipant(p_alias, p_label, p_techn) IBMParticipant(p_alias, p_label, p_techn, #232F3E, banking, banking)
+!define bankingParticipant(p_alias, p_label, p_techn, p_descr) IBMParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, banking, banking)

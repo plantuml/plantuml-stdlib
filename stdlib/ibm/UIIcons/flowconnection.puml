@@ -1,0 +1,13 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $flowconnection [64x64/16z] xS61400000CXXFdRpkElMXu0001m
+
+!function $flowconnectionIMG($scale=1)
+!return "<img data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAAIGNIUk0AAHomAACAhAAA+gAAAIDoAAB1MAAA6mAAADqYAAAXcJy6UTwAAAAEZ0FNQQAAsY58+1GTAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAAOxAAADsQBlSsOGwAAAh1JREFUeNrtmrFKA0EQhtdLqoCVFiq+giAI2ljcIwQV0gj6BJb6DLG08QWCeIUi6AOkthIhjbXEKk3qYJwjG5Dl7ty9mdVd8//wN8dlN/Nldu5ms0pBELTIWrK8b5N8SU7J645zfJD75HPye4wA8uBfyCvMuUbk7dAgJBb3dAWCV3qMbmgZYAMgFZwvDQ1A0+KejZp1Y65pxVhRZMC/FgAAAAAAAAAAAAAAAAAsqmx6gaHxDj9lzDeMMQP6gvP1YwRwoWabGVyN9FhBqWFxz5h8o2ZbYavkZcc58i2xJ/KhinRLzKXflxoTTwEAAAAAAAAAAAAAAAAACBxAx/Ja1PsBVcH3Cq7Pr2WC39Pb+YQGM/hmSVa1yW/kgVDw+fmE3RqdqNKf2SKf6K52zAVQFPyE/PltSUlCuCbvCYBskdfI95waUBb8sfbEWF49gZqQCi6llFMDqoLPjBrQNCBwaoLX8wmJcPCZx0z4s8egbfBRQkiEg48OQlUNaNcMXhlr3qwJt9rBZ8AVI/iqTEAvEAuAM4E1XPXGGHwNeNDpW/e53mHWkKLn+K8vgbrVXCr4IGqAK4RogncpgrYQogretRfIfnjXV56C93o+wbUdHugWt13Q+h54+uV3dD8voUezHa6zH1AGIfGU9s96M6PFHCc/n3AksSFSBsHXmvd6PoH7X75Z9IIueEVqMD+fZ8IreV//UqfkOwVBEARBUegLCiCUDgrQugkAAAAASUVORK5CYII={scale="+$scale+"}>"
+!endfunction
+
+IBMEntityColoring(flowconnection)
+!define flowconnection(e_alias, e_label, e_techn) IBMEntity(e_alias, e_label, e_techn, #232F3E, flowconnection, flowconnection)
+!define flowconnection(e_alias, e_label, e_techn, e_descr) IBMEntity(e_alias, e_label, e_techn, e_descr, #232F3E, flowconnection, flowconnection)
+!define flowconnectionParticipant(p_alias, p_label, p_techn) IBMParticipant(p_alias, p_label, p_techn, #232F3E, flowconnection, flowconnection)
+!define flowconnectionParticipant(p_alias, p_label, p_techn, p_descr) IBMParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, flowconnection, flowconnection)

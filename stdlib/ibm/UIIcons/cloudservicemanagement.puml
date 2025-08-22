@@ -1,0 +1,13 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $cloudservicemanagement [64x64/16z] xS61400000CXXFdRpkElMXu0001m
+
+!function $cloudservicemanagementIMG($scale=1)
+!return "<img data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAAIGNIUk0AAHomAACAhAAA+gAAAIDoAAB1MAAA6mAAADqYAAAXcJy6UTwAAAAEZ0FNQQAAsY58+1GTAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAAOxAAADsQBlSsOGwAAAulJREFUeNrtWj1MVEEQfp7Pn8ZGLFBpLGjUAJWd0d5CQMxFDyzVRjstaNRYkGBno6EwFqeEYAImWlldp8YGNRaeiY0iFYWhOOSS85swJOtm3+2+893d7r2Z5Ct23r7Jzvdmd2fmLopERETyLLsCXHMjSx8KeY8AXwno75QNHwkYA74Dxf+wUWQbY62eAQPALHAWONzBc4cWvADsAerAJI9jYBQ4zzpVysBLYJnfKbKO3tni8VKaxZDzK8DBDh+8/fzV9is6cugBMAEMWuxWgRfALXZ+R2rAMWDN9NJug+4xcKqNIX4vQb8BfOMvXVC26Gmgz8FuH88taAReAd6lOQPOdHH/L3CI1zOwpW6hRIkNuiNdzhVowUPAtKb/w9E5D3xm3UngEnAd2KvNn7U5n0RAt4XWdFHT/QTO8dmkylvGE+A1cFR5Rjbu2KLJx2twVDvwNhOcV2WF52wqukG2FYVIgCpzFudVEuYstrzcAg3L82cpbNHcG8q4xEg800KoBb60aa4UQ6EQcDzF3BOtXDm+9STK2r4tNcvkNCkZzoTJ0CJgWRtfBYYd3hvhuc1sBUNAVRnv4yRn2OL8Ky0brLoQ4GMmSJnbopYKU4b3PiEVvgxcM6TCiy41hY8EUP1+26AnB28yXIRsfLTVAwUPnS9n9GFitlUMhQBqiDzVnKcQntHOhGYNkRkt7GO2mdgfNDVE7jo2MLKWDc7kxnldO/X8Q+AR8IlL4iHDtXmfU+A3wFelqbLF5fKHULbAEodsTWtmEBnU7poyvDPFz+paU6UWWfqBvh6CtODEHl6KpkrFxYavqfBap2zkvhiKA1xzpj1KiYAc+Nj012RpiAgBQoAQIAQIAUKAECCZoCKr0b//EWj0kL+rLhFQ6eEPXnEhgLqp6z3o/Hpk6DabeoK/gefR9t/jDgEHAnf8V7T9o8kF4Edba+tWqrEM5sstIAQIAUKAECAECAGtSRZ3bCNkH2QLCAEiIiIiOZa/S+SJaQglLKAAAAAASUVORK5CYII={scale="+$scale+"}>"
+!endfunction
+
+IBMEntityColoring(cloudservicemanagement)
+!define cloudservicemanagement(e_alias, e_label, e_techn) IBMEntity(e_alias, e_label, e_techn, #232F3E, cloudservicemanagement, cloudservicemanagement)
+!define cloudservicemanagement(e_alias, e_label, e_techn, e_descr) IBMEntity(e_alias, e_label, e_techn, e_descr, #232F3E, cloudservicemanagement, cloudservicemanagement)
+!define cloudservicemanagementParticipant(p_alias, p_label, p_techn) IBMParticipant(p_alias, p_label, p_techn, #232F3E, cloudservicemanagement, cloudservicemanagement)
+!define cloudservicemanagementParticipant(p_alias, p_label, p_techn, p_descr) IBMParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, cloudservicemanagement, cloudservicemanagement)

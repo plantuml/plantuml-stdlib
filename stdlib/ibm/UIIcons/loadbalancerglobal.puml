@@ -1,0 +1,13 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $loadbalancerglobal [64x64/16z] xS61400000CXXFdRpkElMXu0001m
+
+!function $loadbalancerglobalIMG($scale=1)
+!return "<img data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAAIGNIUk0AAHomAACAhAAA+gAAAIDoAAB1MAAA6mAAADqYAAAXcJy6UTwAAAAEZ0FNQQAAsY58+1GTAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAAOxAAADsQBlSsOGwAAAepJREFUeNrtmbFLw0AYxdNWncShThbt0NVFEBxcWgfdnAUFJ9GCOLgo+B+0iwiiDi5OurgqrYJ2dnFQ/4AaUFA7OSka39FPCMGmqTTXJH0PfsMl3yV3L7nLdxfDoCiqmxXrwD1HwRKYAWk5VgVlcAjuo2pAL9gGeZBoEPMFDsA6+NTRqISmzveBczAH4i5x6twEmAQnYkgkDNiRzntVBiTBmd8N69E05vOOY49gE1xJeQoUwbAtRtXZ93tO0PEGbMkr/SsTjIEb8C7cgSOwAAZsw+EDlPxsXFyDAdOO8gao/RFXk3NudUNpQNpRrrjEVprUDaUBgZYOA6qOctYlNtukbigNuHCUi/KJcyop5+wqRyEPULP+is1sNcvPg2fwCvrBLDgFI46scBm8RCEV3gWr/6izFpVM8FJygUwL8YvgOyoGqNf5WMb5uMvco+L2pPNaFkNBWA5bkhqXZDn8wF0KiqJ0KdbBe1tBaAsXQzSABtAAGkADmAd4ltq3V7s2OTAUsL48gWujvrNs+mGA6vwtGAz4Q30z6v8dzHYPgUIIOm9IGwt+zAG5EA1tz21t5d9gqs25u+Xj9VL8CtAAGkADaAANoAE0gAbQABpAURTVUF7W4FYbrhHY6/EzSANoAA2gATSAoiiqS/UDYP5JwwBjDz4AAAAASUVORK5CYII={scale="+$scale+"}>"
+!endfunction
+
+IBMEntityColoring(loadbalancerglobal)
+!define loadbalancerglobal(e_alias, e_label, e_techn) IBMEntity(e_alias, e_label, e_techn, #232F3E, loadbalancerglobal, loadbalancerglobal)
+!define loadbalancerglobal(e_alias, e_label, e_techn, e_descr) IBMEntity(e_alias, e_label, e_techn, e_descr, #232F3E, loadbalancerglobal, loadbalancerglobal)
+!define loadbalancerglobalParticipant(p_alias, p_label, p_techn) IBMParticipant(p_alias, p_label, p_techn, #232F3E, loadbalancerglobal, loadbalancerglobal)
+!define loadbalancerglobalParticipant(p_alias, p_label, p_techn, p_descr) IBMParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, loadbalancerglobal, loadbalancerglobal)

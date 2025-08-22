@@ -1,0 +1,13 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $rank [64x64/16z] xS61400000CXXFdRpkElMXu0001m
+
+!function $rankIMG($scale=1)
+!return "<img data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAAIGNIUk0AAHomAACAhAAA+gAAAIDoAAB1MAAA6mAAADqYAAAXcJy6UTwAAAAEZ0FNQQAAsY58+1GTAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAAOxAAADsQBlSsOGwAAAuJJREFUeNrtm12ITVEUx/fcO8gLEYknadKIyYOPlBeaSfdhpEkyRj6TlJThRUTx4I1584AYD2aGGkZNyVdTU4rJAw01edDkgUREiS6G/2r/1e4057rdq+mcddaq38y+e+/T7fz3Pmuvtfc9zmXcamLqV4IWsICfX4GbYKiK7xpI2L2vlT+1kcrZ4BJoBl/AM9YXwBHQD3aD9xpnwCzwCMwEh8BV8INtk8BWcBZ8BKvABw0C5IPyNbAQrAb3wVjQJuWn4BbYD5aBbg0C5Ph/Baf9YTBSov8I+zTzGjUCiMP7DLrKuKaLfVs0CPDXCdaB56BYxjVF9q3TsArkIjOhktmjYga8BE1gchmzQPosAYOVKJ5UH9AHpoO2Mq5pY98+TU5wiEHOGVBfon89+/RXGRUmMg54wNE9AN6BF0EsIIHQdnCdgdAG8FVjLjAHXBwnFF4KpnHk91AglbmA3Nh6sBxsBNtYfw70gidZyxZvE7WWcxk3E8AEMAFMABPABDABsmu1E/hdqcgFoonS1KD8W+MMqImZFafATjCXdW+cPzA5CX5qFmAKuOv82YCkxXc48gWmwYMsF7X6hOMc4cZx2tax7ZjmVaAdnHd+dyhqMjMuOH8wonIVmA9mOH8sFmf3wD72HdWwClgcEJRlRD85fz5wI6Z/E/uMVqp40n1AB9gb4wQb2dahaQbkI58fgzXgKJjn/Hb4InCQN/6QPuCX9kBIAp5dQSD0FnSCE9oDoWjbQPD8VhsKpy4XkBv+FpQtG/wfitt+gAlgApgAJoAJYAKYACZABiNB2xGyXCBFPkDqW8FisvkfqXNqLR+zDyAvT8jmx2vw3fmXJORXor1ZeARk5Dc5fzR2hXVSvuz874N7tAsgR1/Dwc2LdTr/HlGhCgFSswqU2vAcy8IjIEdgsiG6I5gFUm4Ap7WtAnGevYeef5ifG+gYW7XNgFJL2xbnT4LE5Lyw25nps4kMbiwXMEug/QGJPoh0kWUItgAAAABJRU5ErkJggg=={scale="+$scale+"}>"
+!endfunction
+
+IBMEntityColoring(rank)
+!define rank(e_alias, e_label, e_techn) IBMEntity(e_alias, e_label, e_techn, #232F3E, rank, rank)
+!define rank(e_alias, e_label, e_techn, e_descr) IBMEntity(e_alias, e_label, e_techn, e_descr, #232F3E, rank, rank)
+!define rankParticipant(p_alias, p_label, p_techn) IBMParticipant(p_alias, p_label, p_techn, #232F3E, rank, rank)
+!define rankParticipant(p_alias, p_label, p_techn, p_descr) IBMParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, rank, rank)

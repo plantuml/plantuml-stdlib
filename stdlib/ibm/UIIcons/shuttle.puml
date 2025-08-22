@@ -1,0 +1,13 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $shuttle [64x64/16z] xS61400000CXXFdRpkElMXu0001m
+
+!function $shuttleIMG($scale=1)
+!return "<img data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAAIGNIUk0AAHomAACAhAAA+gAAAIDoAAB1MAAA6mAAADqYAAAXcJy6UTwAAAAEZ0FNQQAAsY58+1GTAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAAOxAAADsQBlSsOGwAAAsxJREFUeNrtmj1oFEEUx+e8SxQRgzaxSFBBRFTQziKgSECwsBBJMAGxEFGwUdCoRDH4lUQICjaiCJIiUcReBDVa2FiJnagod2AQSYKFaJTE/7BPmBv2zpvZnWNz7/3hV+zb3XkzLy/z8faUEolEIpFIJBKJRByVi7HtBrdBW0b7/BEcAhNpNJaPsT0D7Rn+o60Ae8EDMJO0sUUxtvYFkLktYBw0hQjAQtE2cDlpIwXPeSKk5qv4HwM9xvVJ8BQ84ZIBR8EHq/+joJVLAL5TBswatlYKQo7LHPAa9Fu2XaCP0yQ4Ah5btks0MbIIgJ4oD4Ivhq2JlsYWLsvgV3AAzBm2tbSLZREARUvgkGXrBoe5BEDrAnhl2W6AjVwC8Af0gmnDtpTOCks4BEDrc0zabwbXuQRA6xG4FbNz3MclAFonwFvLdges5hKAn2A/+GHVD8YqHfxyNZzGGkVXY7bQDZcB1XQGdHIOgB7rTc4B0NpgG7JYEQpxcKo4Fm4ZoCQAEgAJgATAdRWopFUq+ka3Hawn2zvwEtwFkyn3NYi/gmfWnAXnwWLr3hoVVWj1PV2kHFTlJSuVNX8Fj87cB13/eU53VH+22kKHk7kEgw/qz3UOuFhDZ0x10Tu+Cu7PJQPWgVOWrQhOg+d0vRMMq/IvzPqde+C94+Dr4s8lA3TJqdm4LoGtKqrFTxLjZCsZzzUrhyptvf0lqQf0Ugfi1ENFiDSVlr9cWvuAF573MuUvLgDFBt73FGsJwBHrf6qSdnje81VSfyUam/dZX8+2fVaDet2dsp5bCd6o8l+ZXaPZW2XNX96hQ59UVGf/985ympj0bPwNLAN7VFSfN5elWdrCTjkGoC7+XKs9erfV7/jOFXDOM+2D+8s7Nj6hoo+Om2p8/iE4pvxL7cH9uQZgnlLuN+iospP8BQbA8YSHoeD+khQ8G+I4LBKJRCKRiK/+Avtvov2UiuPnAAAAAElFTkSuQmCC{scale="+$scale+"}>"
+!endfunction
+
+IBMEntityColoring(shuttle)
+!define shuttle(e_alias, e_label, e_techn) IBMEntity(e_alias, e_label, e_techn, #232F3E, shuttle, shuttle)
+!define shuttle(e_alias, e_label, e_techn, e_descr) IBMEntity(e_alias, e_label, e_techn, e_descr, #232F3E, shuttle, shuttle)
+!define shuttleParticipant(p_alias, p_label, p_techn) IBMParticipant(p_alias, p_label, p_techn, #232F3E, shuttle, shuttle)
+!define shuttleParticipant(p_alias, p_label, p_techn, p_descr) IBMParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, shuttle, shuttle)

@@ -1,0 +1,13 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $warningfilled [64x64/16z] xS61400000CXXFdRpkElMXu0001m
+
+!function $warningfilledIMG($scale=1)
+!return "<img data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAAIGNIUk0AAHomAACAhAAA+gAAAIDoAAB1MAAA6mAAADqYAAAXcJy6UTwAAAAEZ0FNQQAAsY58+1GTAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAAOxAAADsQBlSsOGwAAA01JREFUeNrtmz1oE2EYx19NRBT7ZZHiYFAoLXVSdNGawa8UXJzEQTvpVLJIpJuDFoQK2UImXQwOLi6KaByqRJwUN6WaQQIqwaGWilgQ4//hni56uXve+86b+8NvyJG7e5//vZ/3PqdUqlSp+lmbIrrHIZAHE2A/yIGtYDf/5ytYBy3wDnwADfAGdHrRgCyYARfAGTDk8Tqr4DG4B56C30k3YBgUmbGAr90GFeZ70gyg6jwPSj6etk6tKINb3GxiN+A0qILxiPuvJpgDz/xcJOOznS9y8KMxdOA7wUWwAyyBP1EasIs7pfMRjSRONfgoOAUegp9RGLCXHT+QoOF8DzgLHul2kBkPwb8E+xI4p6FmeA480DEho1ntlxIa/IYGed5xX9ocpAZsAU8SVu2dasI0qEk6RqkBi9zh9YqoT9gmGSKzwnG+FHABaY5/+J9jr3nNEJSozHU3EzYLZnjVmIc6P0NklWPwbMB8DDO8IDXOMXgyYDiEqh+HShyLtgHFCBY2UWiIY9EyIOt0Ug+q2K3D72bATAjr+Tg1xjGJDZhV5mlWagAdKxhoQMEuXjsDDoIRAw0Y4dhcDcgrc5WXGDBlsAFTEgMmDTZgUmJAzmADchIDBgw2YCA1QHM1aLzsDFgzON611ACBAS2DDWhJDFg22IBliQHvDTbgv9jsXhI0IigIvf3txGBAQ1ID3oIVA5/+CsfmagDtptQNNKCubHaKuk2EagYaUJNOhEi09982KPg2xyQ2gLKxKgYZUFFdMsyyLiddVeHsDVBhFsBt/n0ZXFOyvUpdrTo9TKfd4V/K2hY/HkKhroMbPDUlXihrLy+Me9106tTdVoOUitYMoVB3hMf8qskxKK8GUB7eXEyTFr/qcNnX/RhAov31csCFuyQ85kdlJUiQkGaIPAcnlZV5EYTy3OY/KustzRXuBIN6QfNKWTtBrikyOokPlCRFGWITCa/6lGl+DHyT/FknS4yyrigPj1LRBhMa/GdwAnyRnqCbJ0j5d5SHR6loowl88hT8J52TvGSKkgmUhzcdYJ8QRJsv6Dx5PwZsNIe7YDs4ouJLoupwb09J0z+8XKDv0+XTDyYCLlzffjJjt8rsy4+mut0jsZ/NpUqVqr/1F8m4nk6u+oE9AAAAAElFTkSuQmCC{scale="+$scale+"}>"
+!endfunction
+
+IBMEntityColoring(warningfilled)
+!define warningfilled(e_alias, e_label, e_techn) IBMEntity(e_alias, e_label, e_techn, #232F3E, warningfilled, warningfilled)
+!define warningfilled(e_alias, e_label, e_techn, e_descr) IBMEntity(e_alias, e_label, e_techn, e_descr, #232F3E, warningfilled, warningfilled)
+!define warningfilledParticipant(p_alias, p_label, p_techn) IBMParticipant(p_alias, p_label, p_techn, #232F3E, warningfilled, warningfilled)
+!define warningfilledParticipant(p_alias, p_label, p_techn, p_descr) IBMParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, warningfilled, warningfilled)

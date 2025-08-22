@@ -1,0 +1,13 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $locationcurrent [64x64/16z] xS61400000CXXFdRpkElMXu0001m
+
+!function $locationcurrentIMG($scale=1)
+!return "<img data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAAIGNIUk0AAHomAACAhAAA+gAAAIDoAAB1MAAA6mAAADqYAAAXcJy6UTwAAAAEZ0FNQQAAsY58+1GTAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAAOxAAADsQBlSsOGwAAAmFJREFUeNrtmj1LA0EQhk8vqFgJam+h+Q0WNjaCoK1W2ohgZyWIvT9AK1HEj0thCBaCilgKgo2VovEDbKw0ksLGDzS+SzYQAknm7nazs3FfeEmR29zNczNzk008z8nJycnJyem/qqXJ4hmEp+ARuAOehU+aHUAfPC0D76947xEeqLU4YWnQXfCEDHooTnw2AWiDR2XQY3A7Yc1RMwAo1fUk3B1ybcpWALXqmqp7+MImANS6Vnb3OQCIUtcUFbgDiFPXFJ3DT9wAqKhrqgLqgQnL6pqiDzhjEoCuuqZKPPvzJgDormvl6a8CQCPrmqIcfKwbgIm6pioNf+sAYLqulQ4/YQGMw5twL/PvDKTRt1KthGPWLAg+0t2nAihYEHxBJ4A5+JU5APLoWymfWFur8A3cIx993LQMX+oCIPQDX8Pb8B785RX32joZBC9G3xn5qg1Aud7gU0ZZcQDvRl3sxzgxl6xYgu9MAOCQFTnZpH9NA6iVFUmNWbEFH8b5AF/j3SllxQp8qykr5uFnrgDKs+JKZkVaQkgqGn0X435Iq9dYZeEFRdNlSsUFNRpACcKZqdGXAwChdVOjLxcA+7JJRlWg6kJMAfiEd2KszdgOQGgjYjMUz/18MwCI2gwDlRdhEkCUZhh615c7gLDNMPSuL3cAYZthSvUFmAYQphk+eBF2fW0AQG2GgY6TcwBAaYYFHenPCUC9Zqhs9OUKoF4zDHSdmAuAWs1Q6ejLGUC1Zqh09OUMoFozDHSekBsA0QzLf4Z7UT36VspnBkDsH4oN1GH43Sv+3T3rOTk5OTk5OTlp0B8PC4vdUfFCyAAAAABJRU5ErkJggg=={scale="+$scale+"}>"
+!endfunction
+
+IBMEntityColoring(locationcurrent)
+!define locationcurrent(e_alias, e_label, e_techn) IBMEntity(e_alias, e_label, e_techn, #232F3E, locationcurrent, locationcurrent)
+!define locationcurrent(e_alias, e_label, e_techn, e_descr) IBMEntity(e_alias, e_label, e_techn, e_descr, #232F3E, locationcurrent, locationcurrent)
+!define locationcurrentParticipant(p_alias, p_label, p_techn) IBMParticipant(p_alias, p_label, p_techn, #232F3E, locationcurrent, locationcurrent)
+!define locationcurrentParticipant(p_alias, p_label, p_techn, p_descr) IBMParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, locationcurrent, locationcurrent)

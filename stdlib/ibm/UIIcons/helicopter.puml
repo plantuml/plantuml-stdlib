@@ -1,0 +1,13 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $helicopter [64x64/16z] xS61400000CXXFdRpkElMXu0001m
+
+!function $helicopterIMG($scale=1)
+!return "<img data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAAIGNIUk0AAHomAACAhAAA+gAAAIDoAAB1MAAA6mAAADqYAAAXcJy6UTwAAAAEZ0FNQQAAsY58+1GTAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAAOxAAADsQBlSsOGwAAAj5JREFUeNrtmc0rhEEcx63dUjjISeLgH1DrwMnLSQ60aA+StlBykTsRkYNSlJy4UIqDOBJ5ScqFQi5uHCiFvBSJ9Z2arTHte8/8Zrfn963PYWZ79pnnuzPf38yzOTksFovFYrFYLBbLjfI48B3hbH7mXLfPADaAMyDxmvYQj4n0/rwE2AA2gA1gA9gA3gdk7d7+HRyAIXDpxhlQCJrBCah28xIQRmyBcjdnQIk0oSCVi3wG3hkMglmlvQnaDJ0FJsGw0vaDZRBMNstMzIBDrV1ncKaNgA2trx1M2FwCF+BJaReDSoMnxxA41/pFVei0ZcAvONL66g2u/Q8QAA/aslkCNYku9kbpG9dIN5CalPYnWEvy2rEo40mkV3AMupRc88kSuS4/J60ClDkQ0Sno1cIvUhnyqQ2gzAFVq2BK6xOVYSVWNTFlAHUOpF0ZfAYHIvborUq7AcylmfROSFSGfbBHtRO0kQOJNnSjlFthWzkQT1WUBtjMgXiHJrIMSDcHnP4fIGzzNJhpOUBuQCbmAKkB0XKg0U0GCO1q7f4YZxATKtXabzYMELuyH6VdAQaIDNCrzq0NA+7liUzVDOg2fF+RN9Na304yx2ETOgM9IE8pdQFZFp/BF3hx6F7iBNgiZ16Z0i9mYR94NFlz4yko3wnYKoPz0Zael3AA1+BG/jpe4ocXQRySVcmaAUJX8gWFX5uepiSm/YJ8+G+KbWcqErvCDlArzShy6HtFqbsD22BRzjwWi8VisVgsFovF+qc/4MdmV4RZGVwAAAAASUVORK5CYII={scale="+$scale+"}>"
+!endfunction
+
+IBMEntityColoring(helicopter)
+!define helicopter(e_alias, e_label, e_techn) IBMEntity(e_alias, e_label, e_techn, #232F3E, helicopter, helicopter)
+!define helicopter(e_alias, e_label, e_techn, e_descr) IBMEntity(e_alias, e_label, e_techn, e_descr, #232F3E, helicopter, helicopter)
+!define helicopterParticipant(p_alias, p_label, p_techn) IBMParticipant(p_alias, p_label, p_techn, #232F3E, helicopter, helicopter)
+!define helicopterParticipant(p_alias, p_label, p_techn, p_descr) IBMParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, helicopter, helicopter)

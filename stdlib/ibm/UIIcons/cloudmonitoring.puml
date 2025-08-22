@@ -1,0 +1,13 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $cloudmonitoring [64x64/16z] xS61400000CXXFdRpkElMXu0001m
+
+!function $cloudmonitoringIMG($scale=1)
+!return "<img data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAAIGNIUk0AAHomAACAhAAA+gAAAIDoAAB1MAAA6mAAADqYAAAXcJy6UTwAAAAEZ0FNQQAAsY58+1GTAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAAOxAAADsQBlSsOGwAAAnZJREFUeNrtWr8vg0EYLjoYWFT8Hm1GqYWEkKCECjHaSPwBYrX3TyAWg6ULVfEjQZqYiMFgEEbqR2hCDAb1eS6uyblcvxb3fb3v6/skT9K7Nt/dPXfP+97bNhAgEAgEQvmiykNzHQGPwAXwCrzU8dBKD23UKtgKNoPLYFDHg/M9pA2MgX18wL+gQqMA3WCT0G4E+8F9JwRgiz8H6ww6AVFF37QOAVQWiBm2eIZxRd+EDhuoBOg1bPEdYLuiv57bQLsFWhz0sq7d12YDL2SBqM17/7aB6QKwDBQW2p/gi04bmC7AmDTHUzCusIFvBZD9v6kQ4F82MFmAGnBA6kuAh+CTLhsEHVyAVeTnbsF5MCn1D4LVQvsavOCvN8BZ4b29v95QTTgB7H6/oijMoordzyGua3BTLMDu+V1S8TNqIwCzwYPfqsFh4XUPGBLaz+Cx0P7gFkg7VQ3qQKEb5Ay4JrQj4FKe6L8NZqW+JLePZ0/AHr/Y5NAJNtikP0dQSgEewTNpLkOK4uddR9lragzYkdoRxe4fgG9+FWBXkfsnbaK/dgRLLMAJj/C5iB+Soj+LEVtOTqDUJyBbwN+s+LnzswCqOOBK9DdJADkduuZ/UwSQ06Gq+PFtEBRtEHZo9y3Tq8F8cSDhxsCmCMCi/b3QfpCKH98LwNLhHK/u0rzSy7oxsCkxQFt15+XvA0oCEoAEIAFIABKgnKG6B7CLSIvNXdrLSBdzAlI+3vBUMQIsghkfLj7D1/YDqj9KvoLrge8/J7BfXms9vvA7fs2eAm8CdrWxQ7B+Oabl5hwpDZIAJAAJQAKQAGUMHTnW8vIayAIkAIFAIJQxvgDUzmL2AqTiawAAAABJRU5ErkJggg=={scale="+$scale+"}>"
+!endfunction
+
+IBMEntityColoring(cloudmonitoring)
+!define cloudmonitoring(e_alias, e_label, e_techn) IBMEntity(e_alias, e_label, e_techn, #232F3E, cloudmonitoring, cloudmonitoring)
+!define cloudmonitoring(e_alias, e_label, e_techn, e_descr) IBMEntity(e_alias, e_label, e_techn, e_descr, #232F3E, cloudmonitoring, cloudmonitoring)
+!define cloudmonitoringParticipant(p_alias, p_label, p_techn) IBMParticipant(p_alias, p_label, p_techn, #232F3E, cloudmonitoring, cloudmonitoring)
+!define cloudmonitoringParticipant(p_alias, p_label, p_techn, p_descr) IBMParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, cloudmonitoring, cloudmonitoring)

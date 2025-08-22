@@ -1,0 +1,13 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $partitionspecific [64x64/16z] xS61400000CXXFdRpkElMXu0001m
+
+!function $partitionspecificIMG($scale=1)
+!return "<img data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAAIGNIUk0AAHomAACAhAAA+gAAAIDoAAB1MAAA6mAAADqYAAAXcJy6UTwAAAAEZ0FNQQAAsY58+1GTAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAAOxAAADsQBlSsOGwAAAsJJREFUeNrtmk1IFVEUx69PS6R6kWGrcGHSQoIW4ddCwoW0CmolfVA7LSiCotoKbUR0J+omyA+KR9oiArMECdoJrXIjulBcBIVt2lRm/Q/vCNNlnvNm7ryZOzPnDz94M3d03jlz5txz73lKiUQikUgkEolEoiyqKgU2tIBboBucAn/AJlgAT8FKWh1wEAyBuyBX4hpyxji4D367XVCdUOMPgNfgusdDJMe0gU5QYIekwgH05G/4uL4JHAPz+kBNAo0/De5p57bAI7DEx93spJOOa26DCT0nJDECHoMuzfizYBn8YD6DSXAN5B2vwy9OjlZHABkzCNo5bL1ET37b5fw2jz13nOux/RXoBdOc5MrVBx9jjTY7gIyfifo75VJg/HkfY5s2RoCb8Ts8xxdKTIEPteMFlzxQz2NOvbetDvBrPGmDp7S96M1ztv8CvoHD4CJ4pU2DVAT1ga+2lMJBjN/TMHjg836jXDZbEQEmxisueFpBc5n3WwQ3bSmFazk8jwc0nrQLXnL4t+0TyWTwGJfN1iyG6Eu9AZfB0QDGO//PWzDLDjkEjoCfYI0jrI8rwl0bS1paoKzz65BZ1dq4I/S3Avf5zouVJ+CjTU/ALQcMVOA+daq4XUXJaFV5bFOluRSu4eTUm1UHWOeEqCpB08In0hxQCa3wu3/JEXU5Po41J0S9FqhEJBj1BaKuBMOMBOoLjIBnoAOcUMWdJDrfoIpb4f38ebFUNRhHKRyGExLfFzB1Qmh9gTg3RII6gfoCU9oUvsV54A6/Fp9UcVc577jmHJjTN0Ti3hEK4oRQ+wK2NEdNNkWvghclxq6o//sC5NAzcVeCbipwQtsJ8LdGfQFbHGDqhEStBbycQAXNO15Cl6PE9wV00X7BBY8pMDV9gSBKTV/ARInvC5gq0X2BMBRaXyDzP5MTiUQikUgkEolE2dQ/3A3EMjNUS/sAAAAASUVORK5CYII={scale="+$scale+"}>"
+!endfunction
+
+IBMEntityColoring(partitionspecific)
+!define partitionspecific(e_alias, e_label, e_techn) IBMEntity(e_alias, e_label, e_techn, #232F3E, partitionspecific, partitionspecific)
+!define partitionspecific(e_alias, e_label, e_techn, e_descr) IBMEntity(e_alias, e_label, e_techn, e_descr, #232F3E, partitionspecific, partitionspecific)
+!define partitionspecificParticipant(p_alias, p_label, p_techn) IBMParticipant(p_alias, p_label, p_techn, #232F3E, partitionspecific, partitionspecific)
+!define partitionspecificParticipant(p_alias, p_label, p_techn, p_descr) IBMParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, partitionspecific, partitionspecific)

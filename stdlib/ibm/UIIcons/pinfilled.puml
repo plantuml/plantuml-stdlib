@@ -1,0 +1,13 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $pinfilled [64x64/16z] xS61400000CXXFdRpkElMXu0001m
+
+!function $pinfilledIMG($scale=1)
+!return "<img data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAAIGNIUk0AAHomAACAhAAA+gAAAIDoAAB1MAAA6mAAADqYAAAXcJy6UTwAAAAEZ0FNQQAAsY58+1GTAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAAOxAAADsQBlSsOGwAAA5RJREFUeNrtmuuLTHEYx8/MKBQ7hI22bYu0tbmuu4ZccqlF1j3sG+0LklLkjZRCvMMbeaG8WF5YE8u6L3aVUv4B5VZEUmKkSIv1fdrntL9Oc3bOnPO7zcx56vNiz86es89nfpfn+c04ThxxxBGHvXEIHFX5gCEWJ98KToEESIEjKh6SsjT5daANJPnnxWAoeFQpAn6whDHCtUVgOHhYKQKugbUeCRkwAnSVuwCKX2A2mO65vhBUgQflLCANboBmn98vAKPBvXIUMBE8BvMKvG4+T4+75SQgw/O7LuDrSdK4KBJsEtACsjy/i4m5oBrcKVUBVOgcA6cjFGZzwARwu9QE0L5+CeyRcK9ZoIYl9JWCgPHgPlgp8Z6NoBbcCirBlIBpvNI3KLj3TF5EO4NIMCGgiResaoXPmMHb6c1CEnQL2A8ugmEankUV5CQuqPpMC6DV/Rw4LHR4uqbaZNDhJ0GHgDQPxS2G1pupoB5czydBtYCgZa3qmMILLkn4p0tAhnv3OseOaOCRkBUvqpqPLZz8WIMJ04nSS+HnXnBFxhSgausgeOJT1h6PWNbKiC5ec7J8qEL9xVaeApEEUJXVw316DVdcYll7Gew2PNRfgNXgpzNwstTDhVGkXYDmcjfvrW7Z6UpQUdaGiS9gGfgkXCMJrwbbn4vp2rxrBh1dj3T6j6lqDSf/m0fmW1XdYM4ZOKYa5dli0has8rs8U1JJN+hKWO+RYDpOgDO6DkRsk9AO9ob947CFUI7L22bDw/85vxG9ugVQfDMs4T1Yzm+GY0KAKGGDZgm0ta0Ab6LeSEYvoHsk/AWbwFMZN5PVDIkjoUqxgANc5zs2CXAldCqWcN6R/D0B2e3wV5awUYEEanB2evt52wS4EpKS+wJqcFY5/Z8YSw0V5wHbwEnJDc4a8F3FnEoqSL5N4llAqAbHlIB8yf/hw5OPIe/ZKmu7U70G+CW/A1wIuUXSydJZ1UVFSnHy7Z7dIaiESA2OTgFBkhd3hyAVY+QGR5eAYpIPWjZLaXB0LIJhkneDGpglnKw3noHPOlvKlObkC40EOl7znjZbJUBG8qKEfCdLjTolpAwl70ZuEAk0PbttEaAieVFCh0fCa7CPDz6MC/BLfju4Kun/EEcCbZdLwQcdUyBhQfJiuJ8kv9O1CCYsSt5IJCo5eT8BFZO8XyXYVCnJ++0CVKHVc1VW1skXEkNfdtjsxBFHHHGUcfwHWQzTmTZzF9gAAAAASUVORK5CYII={scale="+$scale+"}>"
+!endfunction
+
+IBMEntityColoring(pinfilled)
+!define pinfilled(e_alias, e_label, e_techn) IBMEntity(e_alias, e_label, e_techn, #232F3E, pinfilled, pinfilled)
+!define pinfilled(e_alias, e_label, e_techn, e_descr) IBMEntity(e_alias, e_label, e_techn, e_descr, #232F3E, pinfilled, pinfilled)
+!define pinfilledParticipant(p_alias, p_label, p_techn) IBMParticipant(p_alias, p_label, p_techn, #232F3E, pinfilled, pinfilled)
+!define pinfilledParticipant(p_alias, p_label, p_techn, p_descr) IBMParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, pinfilled, pinfilled)

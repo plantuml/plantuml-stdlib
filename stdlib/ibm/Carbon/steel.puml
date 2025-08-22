@@ -1,0 +1,13 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $steel [64x64/16z] xS61400000CXXFdRpkElMXu0001m
+
+!function $steelIMG($scale=1)
+!return "<img data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAAIGNIUk0AAHomAACAhAAA+gAAAIDoAAB1MAAA6mAAADqYAAAXcJy6UTwAAAAEZ0FNQQAAsY58+1GTAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAAOxAAADsQBlSsOGwAAAjNJREFUeNrtm00rRUEYx4fxWlYU5QOwcpNEfAJKIjaUBStZiSVLL/kGFijEimR1s2ElYeVl4XY3FjaUBRsvWfgPz7kdcjm33Jk5M89Tv7qcOV3/350ZzzkHIbi4TFaSMFaFvn8CLIAFsAAWwAJYAAtgASyABbAAFsACWAALYAHeVZGh920GfaABXPgkoAYsgS7wCM7ApkkBBRrfqxocgiowQcFffVoCy6AStIMr3zbBFpr2kzaF1ymgBzyYXu8mBdSBSxvWvCkBL6A0h/GnumaLLgFpUB9RQimNTbskYBtUgJEIY4dp7JZLAlS3twvmQGPo++NEUOrYPI3V0iFKjfvNHhgAY9QF9oJZ0EHTXm2Uq+AOdINn1zpBQV3gIugPbY4itDeoaT8K7l29FlDBUvR6J/RrsYRmREpneBMCZsAUTf3pLMfED8ec2AN+C69qHxTTmGL62hkBf4U3JkFaFN6IBGlZeO0SpIXhtUqQlobXJkFaHF6LBGl5+LxLkDEIn1cJMibh8yZBxih8XiTImIX/dwkyhuH/VUJwP2BIRLtdFVQ5aKXr+SNhttrofsIxeMrhvBWwHsyABdAEbiOe/AauwY0wXzf0s7zlcE5CfD6l2gjfDzgBncKPyvyTBv99QOi1en534EnuBM34jAD1FKaMDqg6dzh4kG8z29pIOr72v+Tzfg/43gf4tAQ++oBgBgzSwXOHw4tQvgRlFtwHcB/geR8gQzOh1qMPXl3zrDm+30Wrd7ONi38bGGdBAAAAAElFTkSuQmCC{scale="+$scale+"}>"
+!endfunction
+
+IBMEntityColoring(steel)
+!define steel(e_alias, e_label, e_techn) IBMEntity(e_alias, e_label, e_techn, #232F3E, steel, steel)
+!define steel(e_alias, e_label, e_techn, e_descr) IBMEntity(e_alias, e_label, e_techn, e_descr, #232F3E, steel, steel)
+!define steelParticipant(p_alias, p_label, p_techn) IBMParticipant(p_alias, p_label, p_techn, #232F3E, steel, steel)
+!define steelParticipant(p_alias, p_label, p_techn, p_descr) IBMParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, steel, steel)

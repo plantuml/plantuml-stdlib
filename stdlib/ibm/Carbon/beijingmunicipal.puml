@@ -1,0 +1,13 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $beijingmunicipal [64x64/16z] xS61400000CXXFdRpkElMXu0001m
+
+!function $beijingmunicipalIMG($scale=1)
+!return "<img data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAAIGNIUk0AAHomAACAhAAA+gAAAIDoAAB1MAAA6mAAADqYAAAXcJy6UTwAAAAEZ0FNQQAAsY58+1GTAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAAOxAAADsQBlSsOGwAAAs1JREFUeNrtmU9IVUEUxu81TSwoKLE/EO2EFmoQLTTQHlQURAT9WRRBIEQrISoIpJW4sla1CKEWBW00apfR4laERVSQtHqbCqEwikjI6J/0TXwLGfS9mTfz5o6988FvcS/XmXvPzDnnm2eSiEQikUjkqrsk5HxjPgaqq/WVq/kA1HsaZwnYArJA790OXsayAzrAdvAh4MKpuXrAZteBUse/XwEeg+VclW+BAqDmmwAzYBuYdtm6laoJ3OEO2AveBtwBv8ATcAp0gVHwO2QAVrEVdYLD4EEO9es9d8FZsIOL8T1EAFTE74ONYB+4l2MRL4Jx0AeOg2dgsloBUKt+EVwG78BO8CKCTvYG3GIangPrwFPT3WBSBFV7OwZ6GbBBMAR+RtbSlzId+sEsuAqul1ukhQKgPvgkaAXN4CsHvBC43VUitQPOcMFWgk9MlSvghmkAVIFrAzfBI+b8j0Vm8hqZpt3gCHgNdts4QdXmtpLTi9zxNtkWQeUQ189zfxOrf6xpoMzYGjCl3Z9iPZhwnUAN8jzyY7nVMVlOg5bBWsvOkEWcAkW+66xPI9RMs7GLffVPpAH4QnveSYc642qEltFmKoPRwN46EvmuPgiu0agp33Kp1Cl1vgA08Hx/COwHq+kHzgc+8blIdaoBcBR8Brd5YnyoO9hUc34biNJHrvawj/aRY004wcVs4b1J8s8ZpnPaRwejVOQHj1d6xo602HcxIK1Mk1dgT71mHdvIgf+8+zXqXUB3frqjsr02dWhJhc+7vl9ZZ6j/o8P2utx4Jo7OZjz9esz0/arlBE0/2PQ5/YNSy3aeihWWAJTfGplWZJI5RcL3dWJ5vxrzF0oFoBZUSEQiSYE62QMiqQGuykxyLeDz4gRFojA1wHcu51ILpAaIpAZ4y3lfue9rvILUAJHIqQZkgXI11PgFqQEiUckakOWUm3nNJ78JikSi5C8gW6rMgC53AwAAAABJRU5ErkJggg=={scale="+$scale+"}>"
+!endfunction
+
+IBMEntityColoring(beijingmunicipal)
+!define beijingmunicipal(e_alias, e_label, e_techn) IBMEntity(e_alias, e_label, e_techn, #232F3E, beijingmunicipal, beijingmunicipal)
+!define beijingmunicipal(e_alias, e_label, e_techn, e_descr) IBMEntity(e_alias, e_label, e_techn, e_descr, #232F3E, beijingmunicipal, beijingmunicipal)
+!define beijingmunicipalParticipant(p_alias, p_label, p_techn) IBMParticipant(p_alias, p_label, p_techn, #232F3E, beijingmunicipal, beijingmunicipal)
+!define beijingmunicipalParticipant(p_alias, p_label, p_techn, p_descr) IBMParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, beijingmunicipal, beijingmunicipal)

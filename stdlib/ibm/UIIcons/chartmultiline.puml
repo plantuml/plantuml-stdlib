@@ -1,0 +1,13 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $chartmultiline [64x64/16z] xS61400000CXXFdRpkElMXu0001m
+
+!function $chartmultilineIMG($scale=1)
+!return "<img data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAAIGNIUk0AAHomAACAhAAA+gAAAIDoAAB1MAAA6mAAADqYAAAXcJy6UTwAAAAEZ0FNQQAAsY58+1GTAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAAOxAAADsQBlSsOGwAAA2BJREFUeNrtm0loFEEYhVszB40RFETcQPQQRdxwXzDGi8GDExciLtGDgaAeBHFJEARzEBficvCgoLhBQA9GUfBgPCTihiSQaJTMhOBFEBFxuygk+greQNn0dFdP9zS91IPvMJ2e7qlX1dV/PSqGoaWllWQNszj2V+Gc2Gh4TNs1EcxSOTEVs4aXg8NgJ3gB1iTFgMWgEWyQRnUlWAZeBm2AmDP2gH1gNsjwRzwFHfzsl6pAg01Pi79tDNKAUeCW6ablZBc/f6IROUN6XN6jBNSwcfNtzusHj4J8BKaABw4/SmgC2EKEvoF2yZAuMGjxvRFgNzgIpttcX3z/FLib5zpFMWAJuMfZ163GgGoi9As8kwzJgjqwH4y3uc4TcBo8dnNzPwzYBq6Ckabj3RyqoscrwCqwEpQ5XK+Mz3aVwr2HQCs4CToL+fEpj5PdcXDMoli6D2rZm1n2Zu75XSAZspojwK1+g5ug2eukWqgBpeA6e9gsMQyPsnfMEs/ka3KWx+ZKhlRwxOTTD3AZnONk6lmFGDCJPbzIolfq2TNu1EMuSm+NnCFibpkK3oM74BL47udry60BC9n4yabjn8EmTl5elSFXgqig3BhQw2Ffajr+BqTBhyiWkKoGiImuyWKyewi2g59RraFVDGjhq86sZlZjQ1FeRKgYYG78H9b61+KwinI7CX4Bm1mhhVlikh4L3vppwDuwHgyEuOEzmQfUMg+o9MsAsaraykIkjFrKPCAt5QGiylxOIzwZcAEcUllZmfKAvWAO6AOvipQHrANHbHq6gSGJJwMOeMwDZhC/8oCUlAfMszkvy9d0JPKADgm7PKCOecA0m+t3cnXYqvKKDksekCa5POC5ZEg/gxCnPKCNC7G2sOYBghWKecBa4qRBKQ/oCnsecMLnPOAGq9Fs0vIAsSQ+n8Q84DbDEJ0H6DxA5wE6D9B5gM4DnPMAUV/0JjEPEKvDHUnNA6qliVpUmb7sDyg0Dwhif4BTHtAYhjzA7/0BqnlAJkp5gOr+gNjmAX7sDxD7As6EOQ8oxv6ASOUBhs4DdB6g8wCdB+g8QOcBOg/QeUBUDejlZDdgxEhxyQM8lbNmfWSxE1f912ar/xlqNxIkKwNEwvI1KQaU5FlwtHBtPw6MjlmbmwwtLS0t6h81JS7MO229cQAAAABJRU5ErkJggg=={scale="+$scale+"}>"
+!endfunction
+
+IBMEntityColoring(chartmultiline)
+!define chartmultiline(e_alias, e_label, e_techn) IBMEntity(e_alias, e_label, e_techn, #232F3E, chartmultiline, chartmultiline)
+!define chartmultiline(e_alias, e_label, e_techn, e_descr) IBMEntity(e_alias, e_label, e_techn, e_descr, #232F3E, chartmultiline, chartmultiline)
+!define chartmultilineParticipant(p_alias, p_label, p_techn) IBMParticipant(p_alias, p_label, p_techn, #232F3E, chartmultiline, chartmultiline)
+!define chartmultilineParticipant(p_alias, p_label, p_techn, p_descr) IBMParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, chartmultiline, chartmultiline)

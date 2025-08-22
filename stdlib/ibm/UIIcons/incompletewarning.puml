@@ -1,0 +1,13 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $incompletewarning [64x64/16z] xS61400000CXXFdRpkElMXu0001m
+
+!function $incompletewarningIMG($scale=1)
+!return "<img data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAAIGNIUk0AAHomAACAhAAA+gAAAIDoAAB1MAAA6mAAADqYAAAXcJy6UTwAAAAEZ0FNQQAAsY58+1GTAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAAOxAAADsQBlSsOGwAAA5tJREFUeNrtml2ITVEUx/fcO4bJ54wSwoM048lHKUxMohCifDdC0RgvpmbwxMPcNPJgRgyhPJBCKF8lSlFTwgh5ESHR0MiQ7xkU/9Vdp6bjnDv37LP33L3nnFW/up/77PNfa++99tlLiNhiiy3Klqep3cFgNigDpaAE9AejNF5TyvIVtjUArADrQDlIhGirH+iwRYBiUM0UKWiPouQxOAYaQJupAlAobwR7wFCFfapkIbeDKlAHmsAfkwQYAU6BWYr704cFcGwQaAQVYBV4qVoAmXE6EzzUcPNkY30+nwIegEWqL5gM+Psl4CIYEuKaqQzftYODPO6ng0LXxLgStLIDejwCFoPzrk7psE4WoYSv5x6yo3MRAbSeXwZ9FVwzleXvfoBz4AOYy86qC/B/ZZPgMO6Ibs/72SHwGkwA9blYBU6AkTlO2K4wyq27OYCWn/m9eS+QSQDK3ff29s1QJgGqOOGJpAAFYKtF95HPfVY2CS4wYOLLxoZz6rwJ7AaHVQmw1oKbXwZO8/6BbI2MAAmfDck8CwRocSVyZZyzhBZgKq8AphslR/dd2/NyFQJMs2jyu+mRsocWoNQiAVpc78erEGCcRQI8C9t3LwGKLBKg1fW+WIUAAy0S4FvYvucLu+2XCHnO4BUBX0WEzEuAT1EX4HnUBXgadQHuRF2Au+B7lAX4Da5HRQC/POAkWGp43+eAI/y6Vkg+NfZ7JHYVvDX45unQ9Czn/sRx/kyZAJRhNRgsQLUr76fXW1QKQHYUvDPU+zUen9fKREEmAWgl2GaB90NFQXcnQ1QEcc0C70tHQTbH4+sNmhDd3v/ISEdBNgK8F+nqr58Ger+RkY6CbAskboPVQlOhUgjvNzHSURCkQoQKJJbnKBL8vP+F2ScbBUGLpC6J9KFJmyHed+yAbBTIVIk1g8nglgHed0w6CmTLWSlBolpgOphsz7H3Q0VBMmTnqHaPSlqprneiyK6OKBXQ+2dc7VKd0A2P31J1WQE7xrFJvGHq1CWA4EmRhgMVM9HjNKoUHyP8n9YGEYDKZRe6vF+R4YYeiXRhhyNYIWe0zToF6LqBog5QUdV+cA+86TJEOtijKQ3el44CXecCn8EFRvfY95oLarr815kL6lVOgibM/H4WaEUwVQBZ7wdeERK9zPvdRcF/Z4d5BgqwE+zS1PYOkS6mMjoCNmhsu9KGIfC3J9tOGijAEzBDqC/UeAU2gxcitthii43tH56trmzLlIP8AAAAAElFTkSuQmCC{scale="+$scale+"}>"
+!endfunction
+
+IBMEntityColoring(incompletewarning)
+!define incompletewarning(e_alias, e_label, e_techn) IBMEntity(e_alias, e_label, e_techn, #232F3E, incompletewarning, incompletewarning)
+!define incompletewarning(e_alias, e_label, e_techn, e_descr) IBMEntity(e_alias, e_label, e_techn, e_descr, #232F3E, incompletewarning, incompletewarning)
+!define incompletewarningParticipant(p_alias, p_label, p_techn) IBMParticipant(p_alias, p_label, p_techn, #232F3E, incompletewarning, incompletewarning)
+!define incompletewarningParticipant(p_alias, p_label, p_techn, p_descr) IBMParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, incompletewarning, incompletewarning)

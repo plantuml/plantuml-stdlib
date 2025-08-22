@@ -1,0 +1,13 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $cairogizaplateau [64x64/16z] xS61400000CXXFdRpkElMXu0001m
+
+!function $cairogizaplateauIMG($scale=1)
+!return "<img data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAAIGNIUk0AAHomAACAhAAA+gAAAIDoAAB1MAAA6mAAADqYAAAXcJy6UTwAAAAEZ0FNQQAAsY58+1GTAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAAOxAAADsQBlSsOGwAAA3hJREFUeNrtms1r1EAYxrNOrXpQQb21IEiRHgQF8QtFrQe91EOvVVS86sGvQ8tuT7bowfoPiFIvK3poEQpitR/ooaVeKkrpQcRDPQhisYpi8esZ+gaGsJmZZCbbTJIXfuymmUz2efJm5p2knldEEUU4HOeI2LHKcQM6idwaYBxpN6DJQh/Nsp0sxeL5D58Ha8Go5Pe/ATMh+2+AQXAXLLpmwCKJ75KYMKMQz4+9CYbCTtKQ8lugmz65kKdggrb3gg6wjbbfk8hp2j4iiO+WnaDkyFh1FEyB9eAeaKcMeU37d4INYBicB9/AfsEw5w3gsYVM2ASugCpYon2rwSlwG3wh8Z91OmUOGfAQbAcHwXPwR9j3l8aCx+AC2A0eZKkO2ENpfxXMSdrNUZt2OiYzBvAB7yulvSqq1LZDp+O0zQK8rj8rbN8HA6AFvBXueVksUdsWRZ9FKZzGDBgQr44Q78Bx0KiRBbzNDvBC0adTGcCLnI2aK79OajuUpUHwFRU5/aBV0q6V2gzTMZmqA56B0+Ai+ARmhVqAF0JnwCOwAE6CHzqdulIJtoHJiKXwATCehQzgq7o7tBqcpQrvCfhOV55/jlABdIuu/CESv46qRmdmAdmSVlzYTAsrv1oxQcd0CatJJx+IDCqWtLzI2RXyTGBUeJ4Q+kAk7dGs2D9CyKLJ5Wlw3kIfH7NQB+SmFI4a1ZX+AZeIXGZALyjT982gx0UDmKH4PvASVMhMVeV1mSq0KZczQBRfEf7uf+/RzJiKixkQJn6MytKwTAhmTJnaj7lkQJj4WiaI4oLH+e1SYQKzJD5ogi/umCJjdE1IbOxgFsXXEndYI2NUJvRSHyeSyJgGy+KDoTrO31cObNc6v6xdIhkQV7xJxtR97BAzQBy5+YOEfeCXt/wqalyzP/+4qKbxtiXhCnuKqdZaJrDA2tqP3+BDxNUYH6S2Gtwu/Io2Whw7ImdAm0E/173lV9h9hlfln6WxI/FSOCi+YkG8rbGjrgbYEh+3H2MTmMPirZjAHBdvbAKLea+mSbyRCaWQOkA1z/P6YNLgx8atF6wPpmF1QFjEqQ9s1wtWM6He7wZN1xbWz8UyKl47E1hGxWubwDIsXssElnHxShNYDsRLTYhaB0Sd503rhSSCT8NrwDXQn9S7wZ+exn9qr1D4F2TBK6KIIoooooh8x397lQujZ1rurgAAAABJRU5ErkJggg=={scale="+$scale+"}>"
+!endfunction
+
+IBMEntityColoring(cairogizaplateau)
+!define cairogizaplateau(e_alias, e_label, e_techn) IBMEntity(e_alias, e_label, e_techn, #232F3E, cairogizaplateau, cairogizaplateau)
+!define cairogizaplateau(e_alias, e_label, e_techn, e_descr) IBMEntity(e_alias, e_label, e_techn, e_descr, #232F3E, cairogizaplateau, cairogizaplateau)
+!define cairogizaplateauParticipant(p_alias, p_label, p_techn) IBMParticipant(p_alias, p_label, p_techn, #232F3E, cairogizaplateau, cairogizaplateau)
+!define cairogizaplateauParticipant(p_alias, p_label, p_techn, p_descr) IBMParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, cairogizaplateau, cairogizaplateau)

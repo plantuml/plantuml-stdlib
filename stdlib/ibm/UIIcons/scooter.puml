@@ -1,0 +1,13 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $scooter [64x64/16z] xS61400000CXXFdRpkElMXu0001m
+
+!function $scooterIMG($scale=1)
+!return "<img data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAAIGNIUk0AAHomAACAhAAA+gAAAIDoAAB1MAAA6mAAADqYAAAXcJy6UTwAAAAEZ0FNQQAAsY58+1GTAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAAOxAAADsQBlSsOGwAAA/5JREFUeNrtWltIlEEUHl01iCyyh8TUB6uHlDDSiKKSWEq6+1IP3SjaUjChC9hbRA9BRkVh0g0KyiShHlIKLQorfOlCURoRBamFURhdINBqO8OeheE0uzsz+//6rzsffLhnds7/z5ydc5kZGbOwsLCwsLCwsLCwsLCwsEg2pHhwTEHN/j+AL4CNwHPAIR1lnwcNcECz/xhgHnAFcBmwBfhTVTl1lK3oUuANYFqyGoBjDnBrIscAXeQCzwPLhbb7wLJkWQF9wErSVpjMLqCF1FHiAmdIW7eqcprBC1Xz9B/ga2ADMmg4wXLM73kaOpe9sAJ86Iv1wJNxPOe05uQfAS94zQWqgTMNdcdp9H0MXA387TUD8HS70VD3uUIp3IlGng/s98peYB3wqiC/0klPAg4DawW5DrgvEbJAG3BQkGcApxo85wmRSxIlDX4DPiBtqxwwwGwnV67bMaCFyCsNnvEO+FWQJwILnBqgah2QDqzACDsXmA3MNHjfQuAEXB06dcdToJ+4wdvhMgCf+BHgNAfel4GFTbOBG1ADNLttAO4eh5yMuIIbNMcZB0qGIwa4MXmO5Uz/JOoNkWe5HQMqJJMfxE3HFeBLpn7sxCf7CTgJZf53HvChxjh3EfmXmwZIR58X8QGX7jODd/BN0U3gJpIOVQ2wgOgyyfgcdYE1JOANxjH5MFoN06EPN1MppDQ+5aYBKoh8Ns7Jy6rCQsWqkNf3xSQl7sRV5ZoLlBK50cGq0E9WwYkoOpOBB0nbJYnrFAEDwKXAfGzrAbaz0Flhl64Bcojc5WBV6CdxIJoB6rBoEo1YS2LVcWCVJKsUImvwPGE3i3BhInOBTMl20wm0RqgKVQPffswm4YLqFrqIL0YMqca+GSN5HsCwdO2WVIUmge8YWU2x4EcdpfOAIPMW+HgWCb5fhAYRf/lerFvuobwYXSiXpONi6tKJcCpMA1+ATL4PK8MmPA3qx8/F+J24sgIqLtDrocnTwMexhMj8+wGJ7oCCrtQAlcRyIwV+DrBWCHxh5BO5I8ozOmLoStMgj5h55FcYL8hTgB8jvDAHy+YwvkeJ9J6ASgx4T+Rol45lMXSdQE8c4+kxMUC7pEDJkvTLwu+i6TqB206Ox6do8SrBWNwdNmC0/cJCFxe8qrtO0g6/nNiOfZxE+DZYHM96yXiuEVfmaXAH8HOsOkCGo8A9mgPlhcdel1y3His8XZ0akxXAcRc3SdMV+/P9/zbgX5cMcIeFboEKNPpvlo1H1QBckZ/jjWWhf0GJpDeEG5QA07ifMzxkaUI/L4kSy3i/Bpz8kGopHAt8FWxhobO9bGzrx1/9Ivv//M5t0O1wEIu5NtwOdzMLCwsLCwsLCwn+AZdGyfIvIfG/AAAAAElFTkSuQmCC{scale="+$scale+"}>"
+!endfunction
+
+IBMEntityColoring(scooter)
+!define scooter(e_alias, e_label, e_techn) IBMEntity(e_alias, e_label, e_techn, #232F3E, scooter, scooter)
+!define scooter(e_alias, e_label, e_techn, e_descr) IBMEntity(e_alias, e_label, e_techn, e_descr, #232F3E, scooter, scooter)
+!define scooterParticipant(p_alias, p_label, p_techn) IBMParticipant(p_alias, p_label, p_techn, #232F3E, scooter, scooter)
+!define scooterParticipant(p_alias, p_label, p_techn, p_descr) IBMParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, scooter, scooter)

@@ -1,0 +1,13 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $cicsregion [64x64/16z] xS61400000CXXFdRpkElMXu0001m
+
+!function $cicsregionIMG($scale=1)
+!return "<img data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAAIGNIUk0AAHomAACAhAAA+gAAAIDoAAB1MAAA6mAAADqYAAAXcJy6UTwAAAAEZ0FNQQAAsY58+1GTAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAAOxAAADsQBlSsOGwAAAelJREFUeNrtmj9Lw0AYxq9a6iCddKg6CeIgiOCoi7YgKG6OfgOXFhUHwc1BitbNyVW/gGJBFAuiu7i1g5N16qQOClKf4Fs4Q9vEEpve9XngB73kvXDvk9yfpKcURVEURVHdqojPuBGQBfNgqMNzegE3YAs8B2GAk/wDGDDs5lbAlJcJPT4ulDUweSVtznoF+TFgzuAu7tn2qI+LDLc4boSlapO2t/QEWC0a0O0GRNvUFzt27GAXoAE0gAZwFgh4tP9rXIRPAA2gAUaPARGuBNkFaAANoAH8HhD4Cq8tswi7AA3gGBC6RsGlcAEK4L1BbL/6+bNjCSwIT6YbkAJjwhr4AHd14q7BLOhz1T02vQukXGUnwWSduKQr+Xp1jTRgOqS6HdMFJsAMWATLYNIj/hGcgzy4t8GAL3ArbIMNsN8gdhMc2DwNxiVJ1cSAuM0G7ICEVn4TakpIjJUGjIO069iuoCstsdYZkAMxrVwEh0JROx6TWOsMOAIlrZwBn0JGO16SWGuWwjU5y+ArsC5TYV475/w+lSkwJ6ZYZ4CSxPYanFvl2yANoAGhfA8oq9/77aoG5VcO4gkoGHyDC0EY4Oy6rhiYfEXa3lS9Pi70Ck5kHT4Y9MvIP8jZLn8GVpSP7fIURVEURXWvvgEHQUi8ofVvqAAAAABJRU5ErkJggg=={scale="+$scale+"}>"
+!endfunction
+
+IBMEntityColoring(cicsregion)
+!define cicsregion(e_alias, e_label, e_techn) IBMEntity(e_alias, e_label, e_techn, #232F3E, cicsregion, cicsregion)
+!define cicsregion(e_alias, e_label, e_techn, e_descr) IBMEntity(e_alias, e_label, e_techn, e_descr, #232F3E, cicsregion, cicsregion)
+!define cicsregionParticipant(p_alias, p_label, p_techn) IBMParticipant(p_alias, p_label, p_techn, #232F3E, cicsregion, cicsregion)
+!define cicsregionParticipant(p_alias, p_label, p_techn, p_descr) IBMParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, cicsregion, cicsregion)

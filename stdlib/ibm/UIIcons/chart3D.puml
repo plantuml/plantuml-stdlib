@@ -1,0 +1,13 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $chart3D [64x64/16z] xS61400000CXXFdRpkElMXu0001m
+
+!function $chart3DIMG($scale=1)
+!return "<img data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAAIGNIUk0AAHomAACAhAAA+gAAAIDoAAB1MAAA6mAAADqYAAAXcJy6UTwAAAAEZ0FNQQAAsY58+1GTAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAAOxAAADsQBlSsOGwAAAo9JREFUeNrtmbFLw0AUxtPmEF06OLt0cHd2cuskFEEE6eAibgURN4stLYKToIvg4uDQLk5uiqhbNxcXF/8DwQyiINQXvEAIl+Qlubt3qffBNyR3Te779Zq7lzqOlZWVFZ0OucnkEofvglf48eN/AhCED0QGwTUgPCkE15DwZBBcg8KTQHANC68dgksU/gM8m3JOC4QqUfiGoG+Dt4XVVb1PqBKFHwv6jykgVB19SgqfBqGUM6AXmgGY8HEQuvxaSsQUA/YH/gV+QIaPQvAfhMcqB8g0zLK8AcYZoRn/DDBSFoAFYAGQqIY8N3XlsB9yHzwEz0XadsAz4Gfwt64BVTQGb4N3wfMpfd/BJ+BTsFd2AFmCk4CoEAYPAjrIfkpAVAiDhwPl/ZxRAFbBlwUDYEGsg+9NWwVuwAsxAz4Cb4JvU57wftsT+Bz8CV4SrBb+8TL4zLR9wKLG5VTavXRUg/5U7vNpLeMnULpyGANCe3AdADoxgaIgsMtgv2wABvxbbqeAwG6E+mX8CXgIEKRbYV3PAAwIrcGpyuEARF3QVudtns4BUb0P8JDnphaAMbIALAC1L0NMvJYSABuCc2/gg4KDr/FrvCHvSbIP8AdyVbAIylMUBfccUQIIwjOCapDJgCB6IzRB9IkL/+P8vRVay1HcdBBF0TV4S3DPVgKExDxM4jcfHshejiKoj6wN7iL3LjQTmILweYsgbFE0Cj0DCkNgCsLrqAalQWAKw6uuBqVAYBrCJ4HY5ucvcpbBhSEwjeFFIAYS9iFpEBIl+l+gGzluSg6vQi/gVz7WamiX2xTsdntZt8Kmhw/PhBYfI3qGZ6kFTA6fBEHaKuD3HXJjd5UqNbHvAywAC8DKysqqkH4BhIjm22xssaUAAAAASUVORK5CYII={scale="+$scale+"}>"
+!endfunction
+
+IBMEntityColoring(chart3D)
+!define chart3D(e_alias, e_label, e_techn) IBMEntity(e_alias, e_label, e_techn, #232F3E, chart3D, chart3D)
+!define chart3D(e_alias, e_label, e_techn, e_descr) IBMEntity(e_alias, e_label, e_techn, e_descr, #232F3E, chart3D, chart3D)
+!define chart3DParticipant(p_alias, p_label, p_techn) IBMParticipant(p_alias, p_label, p_techn, #232F3E, chart3D, chart3D)
+!define chart3DParticipant(p_alias, p_label, p_techn, p_descr) IBMParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, chart3D, chart3D)

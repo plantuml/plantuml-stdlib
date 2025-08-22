@@ -1,0 +1,13 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $repeatone [64x64/16z] xS61400000CXXFdRpkElMXu0001m
+
+!function $repeatoneIMG($scale=1)
+!return "<img data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAAIGNIUk0AAHomAACAhAAA+gAAAIDoAAB1MAAA6mAAADqYAAAXcJy6UTwAAAAEZ0FNQQAAsY58+1GTAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAAOxAAADsQBlSsOGwAAAd5JREFUeNrtmzFOw0AQRW2DBA1KQQXiHrRJxQXIWZLORAIJzkNFBUgU0HEBuoRUFNQUZkYYKYrW8ezsOs7Mzpe+FEu2pf8yu96Vx1lmMklWWZutPeHhr8DD+vg5JQBT8PXKMRuCVAA/4DH4MBSCVAAL8GMMCJLngCgQJAOIAkE6gGAIGgAEQdACgA0hJ978DHwHHoFPhALCRdOMUwEY/h18Dj4SXCHOSigIF+I/f6x1M1F4kJMu5xDYJ1x4ypw3+hAO0wfwgBKeWgFS5B1eEwBWeC0A2OE1AAgKLx1AcHjqU6ArVQFPlyjhJVfAKEb4bVdAFfFet+CDOjQ7fN9DIFSzht/JAAgKrnEluPMVkHc4J1gFdFkBuWYAyVeAAbA5QJ+89hg2BAyAzQFBKj3W5FXMsbsLAMqV7WiUjYmkIbAeHn9PUwGwHh71nf29mVU/BzSFvwC/SdxTFFsKL34IqAxPBaA2PAWA6vBtANSH3/QUcIVH4cuIV0H5PjkV0BReop5S3gx9gSdtJ7m6xP67qIZCgy/B9+BL8Lzt5Dz1SXBTn6CrErADc1yv+xfaASQBgdIpqhoCtVlaLQSfbnGVEHzb5dVB4Hwv0AThA/ySAgAXBFwv3GQJKvjTVZOpX/0CKml2nZsW0iUAAAAASUVORK5CYII={scale="+$scale+"}>"
+!endfunction
+
+IBMEntityColoring(repeatone)
+!define repeatone(e_alias, e_label, e_techn) IBMEntity(e_alias, e_label, e_techn, #232F3E, repeatone, repeatone)
+!define repeatone(e_alias, e_label, e_techn, e_descr) IBMEntity(e_alias, e_label, e_techn, e_descr, #232F3E, repeatone, repeatone)
+!define repeatoneParticipant(p_alias, p_label, p_techn) IBMParticipant(p_alias, p_label, p_techn, #232F3E, repeatone, repeatone)
+!define repeatoneParticipant(p_alias, p_label, p_techn, p_descr) IBMParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, repeatone, repeatone)

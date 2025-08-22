@@ -1,0 +1,13 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $connectrecursive [64x64/16z] xS61400000CXXFdRpkElMXu0001m
+
+!function $connectrecursiveIMG($scale=1)
+!return "<img data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAAIGNIUk0AAHomAACAhAAA+gAAAIDoAAB1MAAA6mAAADqYAAAXcJy6UTwAAAAEZ0FNQQAAsY58+1GTAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAAOxAAADsQBlSsOGwAAAq9JREFUeNrtmj9MFEEUxpe/NkRiiCEo0RA7McFQAKVWFsYYpBFojIWhIaghSgfXQQKS6wiFnaKFClEKbCRW0AkhtIaLQCxMoEQS9JvwSCbP2bu9k5t9szsv+YWb2b05vu/mzbzdvSDw4cNHmqOihPf8OYUxTmKU/mbiMqA6RvOV+DGtHYsJlULEq9cjaTGAi1exD76kwYAw8bfAatINECfepgEixdsyQKx4GwaIFl9uA8SLL2chZBKvoh6sWNa4C5bBM/DDxgwIEx9XNIFe8A00S6kE44gGMGHDgIywGaDHDVtrQEar8eNeBPWr1ws2U8A0E9QiuAQ6pUyJcq8B4k2wsQiKNsHWLiDWBJvboEgTbNcB4kyIoxAKM+FmWgwwmaBejyfpYqiYYom/To0BsQpP48WQN8Ab8B9rQA24B+4Yjr0GC+A9OEyiAd1gCrSEHO8lcmAIzCclBdRT32n6ZlsijHUJfAAvXEqtfP+oEvK4hDGfgEnXU+CuQfxvMAPmwAb1XaPpPwBqmQlfXUiH6pC+LOvbBrfBGutfIV6CRXBRO5alvkPXUqAHXNbaByHi9Vijcw7YmtDj4hrAt7rZAuJ1E2YNqeRcCnSx9qsixlPnDmrt+4SU2IkyAxpZe7OID9gU/oUvp7kU/gWeR0mBn6BOa18Noj/IaBUoPO/DUZMBalu7orX7izCgn7XfUJ3g1C7wkbUfgbYIY12nc/VYcHEbfAe2tPYZKmjaCoj/xKrBHI0lOqoMfUfgO9u+zoKH4DzYI5TYdsotVSKfY+M8cGBXyPs73+kSL4ZO3vvUha2hKs+xz8Hx/fquEsQPB//+qNo5A1SoJzbroMMwxXnkaNpnXRFfKAX00G+J8a1uLkj4LbGAhL0luAF9LpeH/ra4N8Ab4A3wBngDfPjw4SOl8RdsX4r5pnHrTwAAAABJRU5ErkJggg=={scale="+$scale+"}>"
+!endfunction
+
+IBMEntityColoring(connectrecursive)
+!define connectrecursive(e_alias, e_label, e_techn) IBMEntity(e_alias, e_label, e_techn, #232F3E, connectrecursive, connectrecursive)
+!define connectrecursive(e_alias, e_label, e_techn, e_descr) IBMEntity(e_alias, e_label, e_techn, e_descr, #232F3E, connectrecursive, connectrecursive)
+!define connectrecursiveParticipant(p_alias, p_label, p_techn) IBMParticipant(p_alias, p_label, p_techn, #232F3E, connectrecursive, connectrecursive)
+!define connectrecursiveParticipant(p_alias, p_label, p_techn, p_descr) IBMParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, connectrecursive, connectrecursive)

@@ -1,0 +1,13 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $retail [64x64/16z] xS61400000CXXFdRpkElMXu0001m
+
+!function $retailIMG($scale=1)
+!return "<img data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAAIGNIUk0AAHomAACAhAAA+gAAAIDoAAB1MAAA6mAAADqYAAAXcJy6UTwAAAAEZ0FNQQAAsY58+1GTAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAAOxAAADsQBlSsOGwAAAppJREFUeNrtmj8vBEEYxteQoNBokHAKhURCqdZIFEfhGyjoqASXSESB+NNRUfgCKETCF9BcobiCKBQ4CZFoJP4kEp5J3ksul9u7mdnZs/PevMkvl7j17s6zzzNzs9kg8OWrrqvhH87ZAdJgCHTS355BDpyBF64CDIB1MEHnvQcP9F0K9IJfcAoy4IaTAItgje70FjgB+ZJjusEkWCCXLINNDgLsg2mwS0J8Vjm+lQY+Cw7ATJwX11iDOy+ZA6vgR+F/5DHn4I1c8AUuXRRAZv4I7NHgdSsL2sES9XmN4yJFjAJsUOYzEXpkqMdGXBcZlwCdtNRtg48IfT6oR5omRmcESNMEe2yh1zH1GndJgEFa5/MWeuWp16BLAnSBJ4v9nqinMwK0gXeL/d6pp1OrgBPlBfACeAG8AHVdhe2w3H4OW+w7RJ+5hPYrbLYWm4pOMALuwKOF5jnLN8pmvx7QR9vsoKnky28wRp8cqxlchc0B8vlcv+He3ZVapTE+lBPgGuyAecvzQVJqmMa2Q2MtuwqsgFtwSHbhZP1DGttKpWVQZn+KYRQK1p8qnd9EyPLAKQrF1s+q/hDiEoVQ61cTgEsUQq2v8lPY9ShUtL7qXsDVKFS1vqoArkahqvV1doOuRUHJ+rrbYVeioGx9XQFciYKy9U0eiCQ9ClrWNxEgyVHQtr6pAEmNgrb1TQVgV6JWVou5jKMpamW1mMs4mjoCGM2yNSyjVUo4bv3IURCOWz9yFAQD60eKgmBifeMoCCbWN46CYGR9oygIZtbXjoJgZn3tKAiG1teKgmBqfeUoCKbWV45C8fsB8vX2UUbWrxQF+ebpdakDUgytHxaFVDkHFOaAC+bPQJrLRUC+g9MS1Ec9ErnAly9fvuq9/gB6VsMiR2B3FgAAAABJRU5ErkJggg=={scale="+$scale+"}>"
+!endfunction
+
+IBMEntityColoring(retail)
+!define retail(e_alias, e_label, e_techn) IBMEntity(e_alias, e_label, e_techn, #232F3E, retail, retail)
+!define retail(e_alias, e_label, e_techn, e_descr) IBMEntity(e_alias, e_label, e_techn, e_descr, #232F3E, retail, retail)
+!define retailParticipant(p_alias, p_label, p_techn) IBMParticipant(p_alias, p_label, p_techn, #232F3E, retail, retail)
+!define retailParticipant(p_alias, p_label, p_techn, p_descr) IBMParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, retail, retail)

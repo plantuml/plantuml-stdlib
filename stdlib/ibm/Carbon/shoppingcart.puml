@@ -1,0 +1,13 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $shoppingcart [64x64/16z] xS61400000CXXFdRpkElMXu0001m
+
+!function $shoppingcartIMG($scale=1)
+!return "<img data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAAIGNIUk0AAHomAACAhAAA+gAAAIDoAAB1MAAA6mAAADqYAAAXcJy6UTwAAAAEZ0FNQQAAsY58+1GTAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAAOxAAADsQBlSsOGwAAA1hJREFUeNrtm8trFEEQxnvzUIlKvIhIFHwtuCIGMT5AIwYEEb2IkoNC8ORREAmC4smD4N8gohEvQb15ESG4xlcEk4CuYCJ6MIj4QBE1PlC/j62GcczizkxPtnt6Cz52k+lMz/ympqq6ZqKU55YLfB+oMOYidC6rABr+s30ZdNxnDzkI/YbafPWAW/K51VcAz6AJnwFoL/AaQBEqQPN99gCmy05fATyG3mX1NqgGANPgYFYBNFU5jnHgDNQKfawwZsCxcz8LXWqocjDjQCO0JSMXfgO0K4oHDEOf5Da4VmFMl0MAPkDj1cYA2k/obkbiwAK5lceiANBxYB00x3EAK+QzMgDGgeYMeEE+LoAhaDIjAN5LbRMJAE/+QQYqwry++lEB6NugA2pxHMB4XAAMhDOgjY4HwdgecEdSoqtxYKFksdgAWAyNOAzgrwwQB4COA5skJXoJoChBsMNRAG+kFI4NYFCWyJ2OAhiL2g8I21uo5GgcMAJAx4HNCf6+Fsa23vJgDZAEAOPAPGiNQwDaJHYZ8wDlWBz4JwMkAfASeu5YHMhL8DYCQN8GrnnAaynmjAFgd6XgagZICkDHgZ0uLoJMAODOXkHdDpx8s6TApyYBaC/g0nit5QB4fLOge2kAoJ22HMB+qf/vmwZQlM8d0BFLT34ldEiVnwRNhjc2Jtw5V1aHZT8MhrOF8jdLTn47dEWuPr3ge3hAU8IJfsnqkJ2W61CvABmeivY0G4PeYughtCec/015AG0RdADaDZ0X2tzv3BqePNvet1X5gW5vcP1v2gN0HOB+2CW6AZ1yaX1sYjlLF/vsaH/ACIAf4m7bfAWgxPVZELX6CuCqlJt7fQXAFyr5isxR5VabzEgaDC6OjkltcNNHAOwSzYROqnK/kE+Sv9oOIJfCPk8IBNYGI5UqsBpYV9oeEFwh8h8sJgRwS0rzRLULqm51m5YYoI2u3wOtl58ZFPugLzbNlRaAdugytBR6JL9brcrPEvZBo7bMlUvpaoxKP4AN0yfye7bP+1W5N9duyBMSz5VG1UZXXBI6ICXfu2Vbjy1zpQGALyKXQgcUPLCSjLFiLqfqdpsXQ0HjG6Wr1NSPzAqybciWudIAwPTzQoJQIXRA/bKtz5a56mnQ90LIe/sDeyjGUVGXgDwAAAAASUVORK5CYII={scale="+$scale+"}>"
+!endfunction
+
+IBMEntityColoring(shoppingcart)
+!define shoppingcart(e_alias, e_label, e_techn) IBMEntity(e_alias, e_label, e_techn, #232F3E, shoppingcart, shoppingcart)
+!define shoppingcart(e_alias, e_label, e_techn, e_descr) IBMEntity(e_alias, e_label, e_techn, e_descr, #232F3E, shoppingcart, shoppingcart)
+!define shoppingcartParticipant(p_alias, p_label, p_techn) IBMParticipant(p_alias, p_label, p_techn, #232F3E, shoppingcart, shoppingcart)
+!define shoppingcartParticipant(p_alias, p_label, p_techn, p_descr) IBMParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, shoppingcart, shoppingcart)

@@ -1,0 +1,13 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $pendingfilled [64x64/16z] xS61400000CXXFdRpkElMXu0001m
+
+!function $pendingfilledIMG($scale=1)
+!return "<img data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAAIGNIUk0AAHomAACAhAAA+gAAAIDoAAB1MAAA6mAAADqYAAAXcJy6UTwAAAAEZ0FNQQAAsY58+1GTAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAAOxAAADsQBlSsOGwAAA31JREFUeNrtm01IVFEUx09aCDnmZBJoRKsSWxXlJolIlECyRUFRCa0KZmFCC4MWtQtqUajQQG0MbCVtLCZCMiJc9eGiSKiNQ1ERjmRKEGH0P7zzWkxv3r3z5uu+O+8Pv828uW/m/N/9vucRRYoUqZq1pgy/UQP2gv1gO9gJtoI60CLf+QJ+gY/gHfgAnoOX4E8YDVgHesFpcAhsCHifH+AxuAdS4LfpBmwCgyABmot87wWQBMMgY5oB68ElCT5W4ia1IiZcBT9NMOAIGAHbytx/pcF5MFnITWoLKFsngd8A8Qp04PybJ8Fm8ASslrMGtIKHYLcho9ksOAw+l6MG7ABPQbtBwzkPp8fAo3w7yNoAwfP4vMXAOQ03iRPSJ2RKYUCrPHkTg3dVD/rABFgupgHc4U0bVu39akIXGNPpGHUNGJHhLiziPqFJZo8FG9AnQ13Y1AFeg/eqhYpqhjca4sXeqMQQuAZckRoQVrkTtOkgNcBd2IRdgxJL3gaUY2FTDsX8HmSNz3o+QfYoITFpG9BbgvV8JdUsMWkb0E/2qV/XAB4Zeiw0oMdr1PMyYA9otNCARolNaUAn2atOHQPaLTbgv9jWenypTeNGvH9/UZbHrIPgGjn7/WRw+TadqfBlsNHnJp/ALvCCnB1a5i24S845gOoMoJLl+ZBlWNUEGhR/YAgseny+KNfI4PINOn2AyoBnAa+ZUF7LgKqSlwGqvbQDAa+ZUH65GAZcJ2e7KVtNco0MLr+sMwocJf9jLu5lT4Gv5BxYxmTT5L7mMFbJ8m/I2Sz9J6+TodvgrKVN/g44p2oCcxb3eXM6fcCMxQbM6BjwCixZGPySxKY0gE9Tpiw0YIo8TopyTYTGLTRgXHcixErJEGOLFijHMVkuAzgbK2mRAUnKkWHmtxYYlqVm2LWSvQTWNSDjVzBE8k2rU60GORUtHeLg0xIDBTWA8/AGQmzAAClyCXXyA/h8nVPROkIW/C1wM8h+gJcukJOKFhbNyn9WSjdFhmdQD8hJRYsbHvw86Abfi2mAu5nAeXicilZvaPDfyEmQmtctkG+eIA8nk7IBETfwyXeRIieoUANcEybkx1oMavPd+Tz5Qgxwm8MYOftwlR4duLc/rtvmi2WA2zGmxP19FWgSPMk5I0PdatCbRC9MFPnPVe0rM9mq2pemcs02jX1tLlKkSNWtv/rfyUwx8VDuAAAAAElFTkSuQmCC{scale="+$scale+"}>"
+!endfunction
+
+IBMEntityColoring(pendingfilled)
+!define pendingfilled(e_alias, e_label, e_techn) IBMEntity(e_alias, e_label, e_techn, #232F3E, pendingfilled, pendingfilled)
+!define pendingfilled(e_alias, e_label, e_techn, e_descr) IBMEntity(e_alias, e_label, e_techn, e_descr, #232F3E, pendingfilled, pendingfilled)
+!define pendingfilledParticipant(p_alias, p_label, p_techn) IBMParticipant(p_alias, p_label, p_techn, #232F3E, pendingfilled, pendingfilled)
+!define pendingfilledParticipant(p_alias, p_label, p_techn, p_descr) IBMParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, pendingfilled, pendingfilled)

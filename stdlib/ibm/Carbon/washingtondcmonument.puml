@@ -1,0 +1,13 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $washingtondcmonument [64x64/16z] xS61400000CXXFdRpkElMXu0001m
+
+!function $washingtondcmonumentIMG($scale=1)
+!return "<img data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAAIGNIUk0AAHomAACAhAAA+gAAAIDoAAB1MAAA6mAAADqYAAAXcJy6UTwAAAAEZ0FNQQAAsY58+1GTAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAAOxAAADsQBlSsOGwAAAUdJREFUeNrtmjEKwkAQRWPwDp5CS3tLr2FlL+gZtLXxIqKdjZWlt8gl1A2MEJZoWN3JaPZ9+LDJB3d5M1k3kCxDppqJzdQ3nHvgvJXx3rmwWERuCGD5YpwEgLL6c+edeC73kgHwrPhGbNYFuXH1C7FZF+TG1c+88bLrAPzqP2XWBW0DWNRU3++CRZcBDJ3PL/7zC8mGXd8Dbh9mnTsI/YQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAKcj/UHLtPPbuXZxXkfJQqa/H74CRWOs6VOrrqftUtiQ0lfFBIQ9V9feOsfN/2wPusfO6DiifmVOlZS6R81CprqepA65irTxU0dfTtAdkCvk3e0D0nIMQAAAAAAAAAAAASFa9yvhUeVW8vnk9bTPXnG9SdxRuOre3nWvPh1DqegCL7mPGUD3+2QAAAABJRU5ErkJggg=={scale="+$scale+"}>"
+!endfunction
+
+IBMEntityColoring(washingtondcmonument)
+!define washingtondcmonument(e_alias, e_label, e_techn) IBMEntity(e_alias, e_label, e_techn, #232F3E, washingtondcmonument, washingtondcmonument)
+!define washingtondcmonument(e_alias, e_label, e_techn, e_descr) IBMEntity(e_alias, e_label, e_techn, e_descr, #232F3E, washingtondcmonument, washingtondcmonument)
+!define washingtondcmonumentParticipant(p_alias, p_label, p_techn) IBMParticipant(p_alias, p_label, p_techn, #232F3E, washingtondcmonument, washingtondcmonument)
+!define washingtondcmonumentParticipant(p_alias, p_label, p_techn, p_descr) IBMParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, washingtondcmonument, washingtondcmonument)

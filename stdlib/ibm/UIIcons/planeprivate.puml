@@ -1,0 +1,13 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $planeprivate [64x64/16z] xS61400000CXXFdRpkElMXu0001m
+
+!function $planeprivateIMG($scale=1)
+!return "<img data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAAIGNIUk0AAHomAACAhAAA+gAAAIDoAAB1MAAA6mAAADqYAAAXcJy6UTwAAAAEZ0FNQQAAsY58+1GTAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAAOxAAADsQBlSsOGwAAAzlJREFUeNrtWkloFEEUrUyigiCoCWii3gS9qLjhRWMOgojigl6CYIK4XDSCIF5E8CIkoMbl4II4EbeDgojLSUhkLiJiUCIiePEgKirEgKBoxvfpP9D5dE96Jt1VNd314B2qppiael1/nVbKwcEhy6jTtM9csAdsA5t98x/AG+BJ8E9aBaDDD4KNZdY8AjeZECCnYY/ucQ5P2AjuSKsAbRHXHTAhQIOGPVpCzG4h+NY3buW5d2m7AWGggz4TwuxNowmUw2Ux3gVOyZIA98DvvnETuD1LAvwG+8TcviwJQLgCFn3jkjPMjABGnaENAgQ5ww5dzrChgtydcvUhsBe8noAzPOfLGBvZGd4ycQNKuXu7KFwmg0vZaR1PizPMVZm7HwPnpMEZ5qrM3SclULwYcYZB5XAxZM0htv8S7oPbar0hUkkUGBDjVouiiBYBXoM/fOOZ4OIsCTAqbJSwttYFqLQf0A9u9Y17hV/QiV/K6yk+B++AT3UIMGDRw5sKLmLuAV+Ah8FCkqmw9AM2YSWbaB6clZQAQX7AJtRxHUE5RRdYH7cJqAixvxgh14hj3WxwGbgf3CzWTAfPgruV12wt2F4NVoPP4GNwC7iGzVNiCd/YnrCz1nwiwyjwbaBsdTjgxhwBr6VZAMI/LqkXhJTr1HBdP5FaoNawmp/6fN/cAzaZVN6AILOQDntVFBMYEeN5NSzCp/HOGyTAkBhfSqD5oQMzwNNi7mMUH0Bx87zmHoQf5MgOJrR3lzxb0A2gDu0rQ0+N+o7tCX33e/BqFBOg7i+9rDBoQADatymB76WqcR1XkGMQliuPcAj5yrZEqWVcffoTZT7r5jgeB4Y5OzwDdoYVceVqAboJF5gTQTHiOqrgNoi5FeDLJK+cTXnATvFA3iR9eNsE6BTjvI5NbRFgufI6OyX8BW9mSYAOMX4CfsmKAEGxP69rcxsEkLH/G/gwSwJI53dbaXxt1rQAQbG/T+cPMC2AkdhvkwBGYr8tAhiL/VFrgbhAXZmWCLWBttiv+wb0R1x30cQ11CHAUTX2ddgg3FXenxzaUa9hj5/Ke92tmROeab7PqEtzSnn/6o4qBwcHBwcHBweN+A/qGI/+sfMylAAAAABJRU5ErkJggg=={scale="+$scale+"}>"
+!endfunction
+
+IBMEntityColoring(planeprivate)
+!define planeprivate(e_alias, e_label, e_techn) IBMEntity(e_alias, e_label, e_techn, #232F3E, planeprivate, planeprivate)
+!define planeprivate(e_alias, e_label, e_techn, e_descr) IBMEntity(e_alias, e_label, e_techn, e_descr, #232F3E, planeprivate, planeprivate)
+!define planeprivateParticipant(p_alias, p_label, p_techn) IBMParticipant(p_alias, p_label, p_techn, #232F3E, planeprivate, planeprivate)
+!define planeprivateParticipant(p_alias, p_label, p_techn, p_descr) IBMParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, planeprivate, planeprivate)
