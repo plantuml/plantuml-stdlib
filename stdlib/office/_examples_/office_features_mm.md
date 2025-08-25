@@ -2,7 +2,7 @@
 @startmindmap
 
 !theme sunlust
-!include <office/Concepts/application_web>
+!include <office/all>
 
 left header MindMap
 skinparam WrapWidth 200
