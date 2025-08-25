@@ -1,7 +1,8 @@
 ```plantuml
 @startwbs
 !theme sunlust
-!include <office/Concepts/application_web>
+!include <office/all>
+
 left header [[https://workbreakdownstructure.com Work Breakdown Structure]]
 caption Features
 skinparam defaultFontName Dejavu Serif
