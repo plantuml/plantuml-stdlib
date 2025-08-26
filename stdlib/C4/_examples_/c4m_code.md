@@ -1,6 +1,5 @@
 ```plantuml
 @startuml
-!theme sunlust
 !include <C4/C4_Component>
 !procedure $rel($left, $right,$direction='D')
     $left ||.$direction.|{ $right

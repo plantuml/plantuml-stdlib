@@ -1,6 +1,5 @@
 ```plantuml
 @startuml
-!theme sunlust
 !include <office/Servers/database_server>
 !include <office/Servers/domain_controller>
 !include <office/Concepts/windows_powershell>

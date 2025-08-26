@@ -1,6 +1,5 @@
 ```plantuml
 @startuml
-!theme sunlust
 !include <eip/EIP-PlantUML>
 skinparam linetype ortho
 caption container 'RabbitMQ'

@@ -1,6 +1,5 @@
 ```plantuml
 @startuml
-!theme sunlust
 !include <office/all>
 
 left header UML: Sequence Diagram

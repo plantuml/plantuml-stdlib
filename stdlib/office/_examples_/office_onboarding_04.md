@@ -1,6 +1,5 @@
 ```plantuml
 @startuml
-!theme sunlust
 !include <office/all>
 
 !procedure $container($name, $label=$name)

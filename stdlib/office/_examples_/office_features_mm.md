@@ -1,7 +1,6 @@
 ```plantuml
 @startmindmap
 
-!theme sunlust
 !include <office/all>
 
 left header MindMap

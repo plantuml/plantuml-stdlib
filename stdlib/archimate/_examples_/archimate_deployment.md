@@ -1,6 +1,5 @@
 ```plantuml
 @startuml
-!theme sunlust
 !include <archimate/Archimate>
 skinparam defaultFontName Dejavu Serif
 
