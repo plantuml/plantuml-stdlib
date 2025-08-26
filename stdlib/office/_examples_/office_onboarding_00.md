@@ -1,6 +1,5 @@
 ```plantuml
 @startuml
-!theme sunlust
 !include <office/all>
 
 !procedure $send($source, $destiny, $label='')

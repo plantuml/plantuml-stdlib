@@ -1,6 +1,5 @@
 ```plantuml
 @startuml
-!theme sunlust
 !include <archimate/Archimate>
 !include <azure/AzureCommon>
 !include <azure/AzureC4Integration>
