@@ -1,53 +1,93 @@
 ' Archimate-PlantUML
-' Version 0.1
-' Url will come here...
+
+' Version
+'######################################
+!function ArchimateVersion()
+  !$archimateVersion  =  "2.1.0alpha"
+  !return $archimateVersion
+!endfunction
+
+!procedure ArchimateVersionDetails()
+  rectangle ArchimateVersionDetailsArea <<legendArea>> [
+  | PlantUML | **%version()** |
+  | Archimate-PlantUML | **ArchimateVersion()** |
+  ]
+!endprocedure
+
+!include ArchimateSprites.puml
 
 ' Styling
-' ##################################
-!define TECHN_FONT_SIZE 12
-!define ELEMENT_FONT_COLOR #FFFFFF
+'######################################
 
-skinparam defaultTextAlignment center
-skinparam wrapWidth 400
-skinparam maxMessageSize 150
-skinparam StereotypeAlignment right
+!$STRATEGY_FILLCOLOR = "#STRATEGY"
+!$BUSINESS_FILLCOLOR = "#BUSINESS"
+!$APPLICATION_FILLCOLOR = "#APPLICATION"
+!$TECHNOLOGY_FILLCOLOR = "#TECHNOLOGY"
+!$PHYSICAL_FILLCOLOR = "#PHYSICAL"
+!$MOTIVATION_FILLCOLOR = "#MOTIVATION"
+!$IMPLEMENTATION_FILLCOLOR = "#IMPLEMENTATION"
+!$OTHER_FILLCOLOR = "#efd1e4"
+!$JUNCTIONOR_FILLCOLOR = "#WhiteSmoke"
+!$JUNCTIONAND_FILLCOLOR = "#Black"
+!$GROUP_FILLCOLOR = "#LightGrey"
+!$FOLDER_LINECOLOR = "#444444"
+!$RELATIONSHIP_LINECOLOR = "#Black"
+!$RELATIONSHIP_FONTCOLOR = "#Black"
+!$RELATIONSHIP_FONTSIZE = 10
 
-skinparam Arrow {
-    Color #000000
-    FontColor #000000
-    FontSize 12
-}
-skinparam Folder<<grouping>> {
-    Shadowing true
-    StereotypeFontSize 0
-    FontColor #444444
-    BorderColor #444444
-    BorderStyle dashed
-}
-skinparam Folder<<group>> {
-    Shadowing true
-    StereotypeFontSize 0
-    FontColor #444444
-    BackgroundColor lightgrey
-}
-skinparam rectangle<<boundary>> {
-    Shadowing false
-    StereotypeFontSize 0
-    FontColor #444444
-    BorderColor #444444
-    BorderStyle dashed
-}
-skinparam node {
-  StereotypeAlignment right
-}
-skinparam cloud {
-  StereotypeAlignment right
-}
-skinparam frame {
-  StereotypeAlignment right
-}
+<style>
+    element {
+        FontName "Verdana"
+        FontSize 12
+        MaximumWidth 600
+    }
+</style>
+
+skinparam defaultTextAlignment  center
+skinparam maxMessageSize        150
+skinparam StereotypeAlignment   right
+
+<style>
+    Arrow {
+        LineColor $RELATIONSHIP_LINECOLOR
+        FontColor $RELATIONSHIP_FONTCOLOR
+        FontSize $RELATIONSHIP_FONTSIZE
+    }
+    folder {
+        .group {
+            BackgroundColor $GROUP_FILLCOLOR
+            Shadowing 2
+            stereotype {
+                FontSize 1
+                FontColor transparent
+            }
+
+        }
+        .grouping {
+            LineColor $FOLDER_LINECOLOR
+            LineStyle 8-5
+            Shadowing 2
+            stereotype {
+                FontSize 1
+                FontColor transparent
+            }
+        }
+    }
+    rectangle {
+        .boundary {
+            LineColor $FOLDER_LINECOLOR
+            LineStyle 8-5
+            Shadowing 0
+            stereotype {
+                FontSize 1
+                FontColor transparent
+            }
+        }
+    }
+</style>
+
+
 skinparam archimate {
-  StereotypeAlignment right
   RoundCorner<<strategy-capability>> 25
   RoundCorner<<strategy-course-of-action>> 25
   RoundCorner<<strategy-value-stream>> 25
@@ -77,6 +117,42 @@ skinparam archimate {
   DiagonalCorner<<motivation-principle>> 12
   DiagonalCorner<<motivation-requirement>> 12
   DiagonalCorner<<motivation-constraint>> 12
+  DiagonalCorner<<motivation-meaning>> 12
+  DiagonalCorner<<motivation-value>> 12
+}
+' using rectangle because archimate type does not allow override of stereotype sprite
+skinparam rectangle {
+  RoundCorner<<strategy-capability>> 25
+  RoundCorner<<strategy-course-of-action>> 25
+  RoundCorner<<strategy-value-stream>> 25
+  RoundCorner<<business-process>> 25
+  RoundCorner<<business-event>> 25
+  RoundCorner<<business-function>> 25
+  RoundCorner<<business-interaction>> 25
+  RoundCorner<<business-event>> 25
+  RoundCorner<<business-service>> 25
+  RoundCorner<<application-function>> 25
+  RoundCorner<<application-interaction>> 25
+  RoundCorner<<application-process>> 25
+  RoundCorner<<application-event>> 25
+  RoundCorner<<application-service>> 25
+  RoundCorner<<technology-function>> 25
+  RoundCorner<<technology-process>> 25
+  RoundCorner<<technology-interaction>> 25
+  RoundCorner<<technology-event>> 25
+  RoundCorner<<technology-infra-service>> 25
+  RoundCorner<<implementation-workpackage>> 25
+  RoundCorner<<implementation-event>> 25
+  DiagonalCorner<<motivation-stakeholder>> 12
+  DiagonalCorner<<motivation-driver>> 12
+  DiagonalCorner<<motivation-assessment>> 12
+  DiagonalCorner<<motivation-goal>> 12
+  DiagonalCorner<<motivation-outcome>> 12
+  DiagonalCorner<<motivation-principle>> 12
+  DiagonalCorner<<motivation-requirement>> 12
+  DiagonalCorner<<motivation-constraint>> 12
+  DiagonalCorner<<motivation-meaning>> 12
+  DiagonalCorner<<motivation-value>> 12
 }
 skinparam usecase {
   BorderColor #000000
@@ -85,8 +161,8 @@ skinparam usecase {
 ' Layout
 ' ##################################
 !definelong LAYOUT_AS_SKETCH
+    !option handwritten true
     skinparam backgroundColor #EEEBDC
-    skinparam handwritten true
     skinparam defaultFontName "Comic Sans MS"
     center footer <font color=red>Warning:</font> Created for discussion, needs to be validated
 !enddefinelong
@@ -107,177 +183,457 @@ skinparam usecase {
 
 ' Elements
 ' ##################################
+
 'Strategy Elements
-!define Strategy_Resource(e_alias, e_label) archimate #STRATEGY "....\n e_label" <<strategy-resource>> as e_alias
-!define Strategy_Capability(e_alias, e_label) archimate #STRATEGY "e_label" <<strategy-capability>> as e_alias
-!define Strategy_CourseOfAction(e_alias, e_label) archimate #STRATEGY "e_label" <<strategy-course-of-action>> as e_alias
-!define Strategy_ValueStream(e_alias, e_label) archimate #STRATEGY "e_label" <<strategy-value-stream>> as e_alias
+!unquoted procedure Strategy_Resource($alias, $label)
+  rectangle "$label" <<$strategy-resource-svg>><<strategy-resource>> as $alias $STRATEGY_FILLCOLOR
+!endprocedure
+!unquoted procedure Strategy_Capability($alias, $label)
+  rectangle "$label" <<$strategy-capability-svg>><<strategy-capability>> as $alias $STRATEGY_FILLCOLOR
+!endprocedure
+!unquoted procedure Strategy_CourseOfAction($alias, $label)
+  rectangle "$label" <<$strategy-courseofaction-svg>><<strategy-course-of-action>> as $alias $STRATEGY_FILLCOLOR
+!endprocedure
+!unquoted procedure Strategy_ValueStream($alias, $label)
+  rectangle "$label" <<$strategy-valuestream-svg>><<strategy-value-stream>> as $alias $STRATEGY_FILLCOLOR
+!endprocedure
 
 'Business Elements
-!define Business_Actor(e_alias, e_label) archimate #BUSINESS "e_label" <<business-actor>> as e_alias
-!define Business_Role(e_alias, e_label) archimate #BUSINESS "e_label" <<business-role>> as e_alias
-!define Business_Collaboration(e_alias, e_label) archimate #BUSINESS "e_label" <<business-collaboration>> as e_alias
-!define Business_Interface(e_alias, e_label) archimate #BUSINESS "e_label" <<business-interface>> as e_alias
-!define Business_Process(e_alias, e_label) archimate #BUSINESS "e_label" <<business-process>> as e_alias
-!define Business_Function(e_alias, e_label) archimate #BUSINESS "e_label" <<business-function>> as e_alias
-!define Business_Interaction(e_alias, e_label) archimate #BUSINESS "e_label" <<business-interaction>> as e_alias
-!define Business_Event(e_alias, e_label) archimate #BUSINESS "e_label" <<business-event>> as e_alias
-!define Business_Service(e_alias, e_label) archimate #BUSINESS "e_label" <<business-service>> as e_alias
-!define Business_Object(e_alias, e_label) archimate #BUSINESS "----\n e_label" <<business-object>> as e_alias
-!define Business_Contract(e_alias, e_label) archimate #BUSINESS "----\n e_label\n----" <<business-contract>> as e_alias
-!define Business_Representation(e_alias, e_label) archimate #BUSINESS "----\n e_label" <<business-representation>> as e_alias
-!define Business_Product(e_alias, e_label) archimate #BUSINESS "e_label" <<business-product>> as e_alias
-!define Business_Location(e_alias, e_label) archimate #BUSINESS "e_label" <<business-location>> as e_alias
+!unquoted procedure Business_Actor($alias, $label)
+  rectangle "$label" <<$business-actor-svg>><<business-actor>> as $alias $BUSINESS_FILLCOLOR
+!endprocedure
+!unquoted procedure Business_Role($alias, $label)
+  rectangle "$label" <<$business-role-svg>><<business-role>> as $alias $BUSINESS_FILLCOLOR
+!endprocedure
+!unquoted procedure Business_Collaboration($alias, $label)
+  rectangle "$label" <<$business-collaboration-svg>><<business-collaboration>> as $alias $BUSINESS_FILLCOLOR
+!endprocedure
+!unquoted procedure Business_Interface($alias, $label)
+  rectangle "$label" <<$business-interface-svg>><<business-interface>> as $alias $BUSINESS_FILLCOLOR
+!endprocedure
+!unquoted procedure Business_Process($alias, $label)
+  rectangle "$label" <<$business-process-svg>><<business-process>> as $alias $BUSINESS_FILLCOLOR
+!endprocedure
+!unquoted procedure Business_Function($alias, $label)
+  rectangle "$label" <<$business-function-svg>><<business-function>> as $alias $BUSINESS_FILLCOLOR
+!endprocedure
+!unquoted procedure Business_Interaction($alias, $label)
+  rectangle "$label" <<$business-interaction-svg>><<business-interaction>> as $alias $BUSINESS_FILLCOLOR
+!endprocedure
+!unquoted procedure Business_Event($alias, $label)
+  rectangle "$label" <<$business-event-svg>><<business-event>> as $alias $BUSINESS_FILLCOLOR
+!endprocedure
+!unquoted procedure Business_Service($alias, $label)
+  rectangle "$label" <<$business-service-svg>> as $alias $BUSINESS_FILLCOLOR
+!endprocedure
+!unquoted procedure Business_Object($alias, $label)
+  rectangle "$label" <<$business-object-svg>><<business-object>> as $alias $BUSINESS_FILLCOLOR
+!endprocedure
+!unquoted procedure Business_Contract($alias, $label)
+  rectangle "$label" <<$business-contract-svg>><<business-contract>> as $alias $BUSINESS_FILLCOLOR
+!endprocedure
+!unquoted procedure Business_Representation($alias, $label)
+  rectangle "$label" <<$business-representation-svg>><<business-representation>> as $alias $BUSINESS_FILLCOLOR
+!endprocedure
+!unquoted procedure Business_Product($alias, $label)
+  rectangle "$label" <<$business-product-svg>><<business-product>> as $alias $BUSINESS_FILLCOLOR
+!endprocedure
+!unquoted procedure Business_Location($alias, $label)
+  rectangle "$label" <<$business-location-svg>><<business-location>> as $alias $BUSINESS_FILLCOLOR
+!endprocedure
 
 'Application Elements
-!define Application_Component(e_alias, e_label) archimate #APPLICATION "e_label" <<application-component>> as e_alias
-!define Application_Collaboration(e_alias, e_label) archimate #APPLICATION "e_label" <<application-collaboration>> as e_alias
-!define Application_Interface(e_alias, e_label) archimate #APPLICATION "e_label" <<application-interface>> as e_alias
-!define Application_Function(e_alias, e_label) archimate #APPLICATION "e_label" <<application-function>> as e_alias
-!define Application_Interaction(e_alias, e_label) archimate #APPLICATION "e_label" <<application-interaction>> as e_alias
-!define Application_Process(e_alias, e_label) archimate #APPLICATION "e_label" <<application-process>> as e_alias
-!define Application_Event(e_alias, e_label) archimate #APPLICATION "e_label" <<application-event>> as e_alias
-!define Application_Service(e_alias, e_label) archimate #APPLICATION "e_label" <<application-service>> as e_alias
-!define Application_DataObject(e_alias, e_label) archimate #APPLICATION "----\n e_label" <<application-data-object>> as e_alias
+!unquoted procedure Application_Component($alias, $label)
+  rectangle "$label" <<$application-component-svg>><<application-component>> as $alias $APPLICATION_FILLCOLOR
+!endprocedure
+!unquoted procedure Application_Collaboration($alias, $label)
+  rectangle "$label" <<$application-collaboration-svg>><<application-collaboration>> as $alias $APPLICATION_FILLCOLOR
+!endprocedure
+!unquoted procedure Application_Interface($alias, $label)
+  rectangle "$label" <<$application-interface-svg>><<application-interface>> as $alias $APPLICATION_FILLCOLOR
+!endprocedure
+!unquoted procedure Application_Function($alias, $label)
+  rectangle "$label" <<$application-function-svg>><<application-function>> as $alias $APPLICATION_FILLCOLOR
+!endprocedure
+!unquoted procedure Application_Interaction($alias, $label)
+  rectangle "$label" <<$application-interaction-svg>><<application-interaction>> as $alias $APPLICATION_FILLCOLOR
+!endprocedure
+!unquoted procedure Application_Process($alias, $label)
+  rectangle "$label" <<$application-process-svg>><<application-process>> as $alias $APPLICATION_FILLCOLOR
+!endprocedure
+!unquoted procedure Application_Event($alias, $label)
+  rectangle "$label" <<$application-event-svg>><<application-event>> as $alias $APPLICATION_FILLCOLOR
+!endprocedure
+!unquoted procedure Application_Service($alias, $label)
+  rectangle "$label" <<$application-service-svg>><<application-service>> as $alias $APPLICATION_FILLCOLOR
+!endprocedure
+!procedure Application_DataObject($alias, $label)
+  rectangle "$label" <<$application-dataobject-svg>><<application-data-object>> as $alias $APPLICATION_FILLCOLOR
+!endprocedure
 
 'Technology Elements
-!define Technology_Node(e_alias, e_label) node #TECHNOLOGY "e_label" <<$archimate/technology-node>> as e_alias
-!define Technology_Device(e_alias, e_label) node #TECHNOLOGY "e_label" <<$archimate/technology-device>> as e_alias
-!define Technology_SystemSoftware(e_alias, e_label) archimate #TECHNOLOGY "e_label" <<technology-system-software>> as e_alias
-!define Technology_Collaboration(e_alias, e_label) archimate #TECHNOLOGY "e_label" <<technology-collaboration>> as e_alias
-!define Technology_Interface(e_alias, e_label) archimate #TECHNOLOGY "e_label" <<technology-infra-interface>> as e_alias
-!define Technology_Path(e_alias, e_label) archimate #TECHNOLOGY "e_label" <<technology-communication-path>> as e_alias
-!define Technology_CommunicationNetwork(e_alias, e_label) archimate #TECHNOLOGY "e_label" <<technology-network>> as e_alias
-!define Technology_Function(e_alias, e_label) archimate #TECHNOLOGY "e_label" <<technology-function>> as e_alias
-!define Technology_Process(e_alias, e_label) archimate #TECHNOLOGY "e_label" <<technology-process>> as e_alias
-!define Technology_Interaction(e_alias, e_label) archimate #TECHNOLOGY "e_label" <<technology-interaction>> as e_alias
-!define Technology_Event(e_alias, e_label) archimate #TECHNOLOGY "e_label" <<technology-event>> as e_alias
-!define Technology_Service(e_alias, e_label) archimate #TECHNOLOGY "e_label" <<technology-infra-service>> as e_alias
-!define Technology_Artifact(e_alias, e_label) archimate #TECHNOLOGY "----\n e_label" <<technology-artifact>> as e_alias
+!unquoted procedure Technology_Node($alias, $label)
+  node  "$label" <<$technology-node-svg>> as $alias $TECHNOLOGY_FILLCOLOR
+!endprocedure
+!unquoted procedure Technology_Device($alias, $label)
+  rectangle "$label" <<$technology-device-svg>><<technology-device>> as $alias $TECHNOLOGY_FILLCOLOR
+!endprocedure
+!unquoted procedure Technology_SystemSoftware($alias, $label)
+  rectangle "$label" <<$technology-systemsoftware-svg>><<technology-system-software>> as $alias $TECHNOLOGY_FILLCOLOR
+!endprocedure
+!unquoted procedure Technology_Collaboration($alias, $label)
+  rectangle "$label" <<$technology-collaboration-svg>><<technology-collaboration>> as $alias $TECHNOLOGY_FILLCOLOR
+!endprocedure
+!unquoted procedure Technology_Interface($alias, $label)
+  rectangle "$label" <<$technology-interface-svg>><<technology-infra-interface>> as $alias $TECHNOLOGY_FILLCOLOR
+!endprocedure
+!unquoted procedure Technology_Path($alias, $label)
+  rectangle "$label" <<$technology-path-svg>><<technology-communication-path>> as $alias $TECHNOLOGY_FILLCOLOR
+!endprocedure
+!unquoted procedure Technology_CommunicationNetwork($alias, $label)
+  rectangle "$label" <<$technology-communicationnetwork-svg>><<technology-network>> as $alias $TECHNOLOGY_FILLCOLOR
+!endprocedure
+!unquoted procedure Technology_Function($alias, $label)
+  rectangle "$label" <<$technology-function-svg>><<technology-function>> as $alias $TECHNOLOGY_FILLCOLOR
+!endprocedure
+!unquoted procedure Technology_Process($alias, $label)
+  rectangle "$label" <<$technology-process-svg>><<technology-process>> as $alias $TECHNOLOGY_FILLCOLOR
+!endprocedure
+!unquoted procedure Technology_Interaction($alias, $label)
+  rectangle "$label" <<$technology-interaction-svg>><<technology-interaction>> as $alias $TECHNOLOGY_FILLCOLOR
+!endprocedure
+!unquoted procedure Technology_Event($alias, $label)
+  rectangle "$label" <<$technology-event-svg>><<technology-event>> as $alias $TECHNOLOGY_FILLCOLOR
+!endprocedure
+!unquoted procedure Technology_Service($alias, $label)
+  rectangle "$label" <<$technology-service-svg>><<technology-infra-service>> as $alias $TECHNOLOGY_FILLCOLOR
+!endprocedure
+!unquoted procedure Technology_Artifact($alias, $label)
+  rectangle "$label" <<$technology-artifact-svg>><<technology-artifact>> as $alias $TECHNOLOGY_FILLCOLOR
+!endprocedure
 
 'Physical Elements
-!define Physical_Equipment(e_alias, e_label) node #PHYSICAL "e_label" <<$archimate/physical-equipment>> as e_alias
-!define Physical_Facility(e_alias, e_label) node #PHYSICAL "e_label" <<$archimate/physical-facility>> as e_alias
-!define Physical_DistributionNetwork(e_alias, e_label) archimate #PHYSICAL "e_label" <<physical-distribution-network>> as e_alias
-!define Physical_Material(e_alias, e_label) archimate #PHYSICAL "----\n e_label" <<physical-material>> as e_alias
+!unquoted procedure Physical_Equipment($alias, $label)
+  rectangle "$label" <<$technology-equipment-svg>> as $alias $PHYSICAL_FILLCOLOR
+!endprocedure
+!unquoted procedure Physical_Facility($alias, $label)
+  rectangle "$label" <<$technology-facility-svg>> as $alias $PHYSICAL_FILLCOLOR
+!endprocedure
+!unquoted procedure Physical_DistributionNetwork($alias, $label)
+  rectangle "$label" <<$technology-distributionnetwork-svg>><<physical-distribution-network>> as $alias $PHYSICAL_FILLCOLOR
+!endprocedure
+!unquoted procedure Physical_Material($alias, $label)
+  rectangle "$label" <<$technology-material-svg>><<physical-material>> as $alias $PHYSICAL_FILLCOLOR
+!endprocedure
 
 'Motivation Elements
-!define Motivation_Stakeholder(e_alias, e_label) archimate #MOTIVATION "e_label" <<motivation-stakeholder>> as e_alias
-!define Motivation_Driver(e_alias, e_label) archimate #MOTIVATION "e_label" <<motivation-driver>> as e_alias
-!define Motivation_Assessment(e_alias, e_label) archimate #MOTIVATION "e_label" <<motivation-assessment>> as e_alias
-!define Motivation_Goal(e_alias, e_label) archimate #MOTIVATION "e_label" <<motivation-goal>> as e_alias
-!define Motivation_Outcome(e_alias, e_label) archimate #MOTIVATION "e_label" <<motivation-outcome>> as e_alias
-!define Motivation_Principle(e_alias, e_label) archimate #MOTIVATION "e_label" <<motivation-principle>> as e_alias
-!define Motivation_Requirement(e_alias, e_label) archimate #MOTIVATION "e_label" <<motivation-requirement>> as e_alias
-!define Motivation_Constraint(e_alias, e_label) archimate #MOTIVATION "e_label" <<motivation-constraint>> as e_alias
-!define Motivation_Meaning(e_alias, e_label) cloud #MOTIVATION "e_label" <<$archimate/motivation-meaning>> as e_alias
-!define Motivation_Value(e_alias, e_label) usecase #MOTIVATION "e_label" as e_alias
+!unquoted procedure Motivation_Stakeholder($alias, $label)
+  rectangle "$label" <<$motivation-stakeholder-svg>><<motivation-stakeholder>> as $alias $MOTIVATION_FILLCOLOR
+!endprocedure
+!unquoted procedure Motivation_Driver($alias, $label)
+  rectangle "$label" <<$motivation-driver-svg>><<motivation-driver>> as $alias $MOTIVATION_FILLCOLOR
+!endprocedure
+!unquoted procedure Motivation_Assessment($alias, $label)
+  rectangle "$label" <<$motivation-assessment-svg>><<motivation-assessment>> as $alias $MOTIVATION_FILLCOLOR
+!endprocedure
+!unquoted procedure Motivation_Goal($alias, $label)
+  rectangle "$label" <<$motivation-goal-svg>><<motivation-goal>> as $alias $MOTIVATION_FILLCOLOR
+!endprocedure
+!unquoted procedure Motivation_Outcome($alias, $label)
+  rectangle "$label" <<$motivation-outcome-svg>><<motivation-outcome>> as $alias $MOTIVATION_FILLCOLOR
+!endprocedure
+!unquoted procedure Motivation_Principle($alias, $label)
+  rectangle "$label" <<$motivation-principle-svg>><<motivation-principle>> as $alias $MOTIVATION_FILLCOLOR
+!endprocedure
+!unquoted procedure Motivation_Requirement($alias, $label)
+  rectangle "$label" <<$motivation-requirement-svg>><<motivation-requirement>> as $alias $MOTIVATION_FILLCOLOR
+!endprocedure
+!unquoted procedure Motivation_Constraint($alias, $label)
+  rectangle "$label" <<$motivation-constraint-svg>><<motivation-constraint>> as $alias $MOTIVATION_FILLCOLOR
+!endprocedure
+!unquoted procedure Motivation_Meaning($alias, $label)
+  rectangle "$label" <<$motivation-meaning-svg>><<motivation-meaning>> as $alias $MOTIVATION_FILLCOLOR
+!endprocedure
+!unquoted procedure Motivation_Value($alias, $label)
+  rectangle "$label" <<$motivation-value-svg>><<motivation-value>> as $alias $MOTIVATION_FILLCOLOR
+!endprocedure
 
 'Implementation Elements
-!define Implementation_WorkPackage(e_alias, e_label) archimate #IMPLEMENTATION "e_label" <<implementation-workpackage>> as e_alias
-!define Implementation_Deliverable(e_alias, e_label) archimate #IMPLEMENTATION "----\n e_label" <<implementation-deliverable>> as e_alias
-!define Implementation_Event(e_alias, e_label) archimate #IMPLEMENTATION "e_label" <<implementation-event>> as e_alias
-!define Implementation_Plateau(e_alias, e_label) node #PHYSICAL "e_label" <<$archimate/implementation-plateau>> as e_alias
-!define Implementation_Gap(e_alias, e_label) archimate #PHYSICAL "----\n e_label" <<implementation-gap>> as e_alias
+!unquoted procedure Implementation_WorkPackage($alias, $label)
+  rectangle "$label" <<$implementation-workpackage-svg>> as $alias $IMPLEMENTATION_FILLCOLOR
+!endprocedure
+!unquoted procedure Implementation_Deliverable($alias, $label)
+  rectangle "$label" <<$implementation-deliverable-svg>><<implementation-deliverable>> as $alias $IMPLEMENTATION_FILLCOLOR
+!endprocedure
+!unquoted procedure Implementation_Event($alias, $label)
+  rectangle "$label" <<$implementation-event-svg>><<implementation-event>> as $alias $IMPLEMENTATION_FILLCOLOR
+!endprocedure
+!unquoted procedure Implementation_Plateau($alias, $label)
+  rectangle "$label" <<$implementation-plateau-svg>><<implementation-plateau>> as $alias $IMPLEMENTATION_FILLCOLOR
+!endprocedure
+!unquoted procedure Implementation_Gap($alias, $label)
+  rectangle "$label" <<$implementation-gap-svg>><<implementation-gap>> as $alias $IMPLEMENTATION_FILLCOLOR
+!endprocedure
 
 'Other Elements
-!define Other_Location(e_alias, e_label) archimate #ffb973 "e_label" <<location>> as e_alias
-!define Junction_Or(e_alias, e_label) circle #whitesmoke "e_label" as e_alias
-!define Junction_And(e_alias, e_label) circle #black "e_label" as e_alias
-!define Grouping(e_alias, e_label) Folder "e_label" <<grouping>> as e_alias
-!define Group(e_alias, e_label) Folder "e_label" <<group>> as e_alias
-
+!unquoted procedure Other_Location($alias, $label)
+  rectangle "$label" <<$other-location-svg>><<location>> as $alias $OTHER_FILLCOLOR
+!endprocedure
+!unquoted procedure Junction_Or($alias, $label)
+  circle $JUNCTIONOR_FILLCOLOR "$label" as $alias
+!endprocedure
+!unquoted procedure Junction_And($alias, $label)
+  circle $JUNCTIONAND_FILLCOLOR "$label" as $alias
+!endprocedure
+!unquoted procedure Grouping($alias, $label)
+  folder "$label" <<grouping>> as $alias
+!endprocedure
+!unquoted procedure Group($alias, $label)
+  folder "$label" <<group>> as $alias
+!endprocedure
 
 ' Relationships
 ' ##################################
-!define Rel_(e_sourceAlias, e_targetAlias, e_label, e_direction="") e_sourceAlias e_direction e_targetAlias : "e_label"
+!unquoted procedure Rel_($sourceAlias, $targetAlias, $label, $direction="")
+  $sourceAlias $direction $targetAlias : "$label"
+!endprocedure
 
-!define Rel_Composition(e_From, e_To, e_label="") Rel_(e_From, e_To, e_label, "*--")
-!define Rel_Composition_Up(e_From, e_To, e_label="") Rel_(e_From, e_To, e_label, "*-UP-")
-!define Rel_Composition_Down(e_From, e_To, e_label="") Rel_(e_From, e_To, e_label, "*-DOWN-")
-!define Rel_Composition_Left(e_From, e_To, e_label="") Rel_(e_From, e_To, e_label, "*-LEFT-")
-!define Rel_Composition_Right(e_From, e_To, e_label="") Rel_(e_From, e_To, e_label, "*-RIGHT-")
+!unquoted procedure Rel_Composition($From, $To, $label="") 
+  Rel_($From, $To, $label, "*--")
+!endprocedure
+!unquoted procedure Rel_Composition_Up($From, $To, $label="") 
+  Rel_($From, $To, $label, "*-UP-")
+!endprocedure
+!unquoted procedure Rel_Composition_Down($From, $To, $label="") 
+  Rel_($From, $To, $label, "*-DOWN-")
+!endprocedure
+!unquoted procedure Rel_Composition_Left($From, $To, $label="") 
+  Rel_($From, $To, $label, "*-LEFT-")
+!endprocedure
+!unquoted procedure Rel_Composition_Right($From, $To, $label="") 
+  Rel_($From, $To, $label, "*-RIGHT-")
+!endprocedure
 
-!define Rel_Aggregation(e_From, e_To, e_label="") Rel_(e_From, e_To, e_label, "o--")
-!define Rel_Aggregation_Up(e_From, e_To, e_label="") Rel_(e_From, e_To, e_label, "o-UP-")
-!define Rel_Aggregation_Down(e_From, e_To, e_label="") Rel_(e_From, e_To, e_label, "o-DOWN-")
-!define Rel_Aggregation_Left(e_From, e_To, e_label="") Rel_(e_From, e_To, e_label, "o-LEFT-")
-!define Rel_Aggregation_Right(e_From, e_To, e_label="") Rel_(e_From, e_To, e_label, "o-RIGHT-")
+!unquoted procedure Rel_Aggregation($From, $To, $label="")
+  Rel_($From, $To, $label, "o--")
+!endprocedure
+!unquoted procedure Rel_Aggregation_Up($From, $To, $label="")
+  Rel_($From, $To, $label, "o-UP-")
+!endprocedure
+!unquoted procedure Rel_Aggregation_Down($From, $To, $label="")
+  Rel_($From, $To, $label, "o-DOWN-")
+!endprocedure
+!unquoted procedure Rel_Aggregation_Left($From, $To, $label="")
+  Rel_($From, $To, $label, "o-LEFT-")
+!endprocedure
+!unquoted procedure Rel_Aggregation_Right($From, $To, $label="")
+  Rel_($From, $To, $label, "o-RIGHT-")
+!endprocedure
 
-!define Rel_Assignment(e_From, e_To, e_label="") Rel_(e_From, e_To, e_label, "@-->>")
-!define Rel_Assignment_Up(e_From, e_To, e_label="") Rel_(e_From, e_To, e_label, "@-UP->>")
-!define Rel_Assignment_Down(e_From, e_To, e_label="") Rel_(e_From, e_To, e_label, "@-DOWN->>")
-!define Rel_Assignment_Left(e_From, e_To, e_label="") Rel_(e_From, e_To, e_label, "@-LEFT->>")
-!define Rel_Assignment_Right(e_From, e_To, e_label="") Rel_(e_From, e_To, e_label, "@-RIGHT->>")
+!unquoted procedure Rel_Assignment($From, $To, $label="")
+  Rel_($From, $To, $label, "@-->>")
+!endprocedure
+!unquoted procedure Rel_Assignment_Up($From, $To, $label="")
+  Rel_($From, $To, $label, "@-UP->>")
+!endprocedure
+!unquoted procedure Rel_Assignment_Down($From, $To, $label="")
+  Rel_($From, $To, $label, "@-DOWN->>")
+!endprocedure
+!unquoted procedure Rel_Assignment_Left($From, $To, $label="")
+  Rel_($From, $To, $label, "@-LEFT->>")
+!endprocedure
+!unquoted procedure Rel_Assignment_Right($From, $To, $label="")
+  Rel_($From, $To, $label, "@-RIGHT->>")
+!endprocedure
 
-!define Rel_Specialization(e_From, e_To, e_label="") Rel_(e_From, e_To, e_label, "--|>")
-!define Rel_Specialization_Up(e_From, e_To, e_label="") Rel_(e_From, e_To, e_label, "-UP-|>")
-!define Rel_Specialization_Down(e_From, e_To, e_label="") Rel_(e_From, e_To, e_label, "-DOWN-|>")
-!define Rel_Specialization_Left(e_From, e_To, e_label="") Rel_(e_From, e_To, e_label, "-LEFT-|>")
-!define Rel_Specialization_Right(e_From, e_To, e_label="") Rel_(e_From, e_To, e_label, "-RIGHT-|>")
+!unquoted procedure Rel_Specialization($From, $To, $label="")
+  Rel_($From, $To, $label, "--|>")
+!endprocedure
+!unquoted procedure Rel_Specialization_Up($From, $To, $label="")
+  Rel_($From, $To, $label, "-UP-|>")
+!endprocedure
+!unquoted procedure Rel_Specialization_Down($From, $To, $label="")
+  Rel_($From, $To, $label, "-DOWN-|>")
+!endprocedure
+!unquoted procedure Rel_Specialization_Left($From, $To, $label="")
+  Rel_($From, $To, $label, "-LEFT-|>")
+!endprocedure
+!unquoted procedure Rel_Specialization_Right($From, $To, $label="")
+  Rel_($From, $To, $label, "-RIGHT-|>")
+!endprocedure
 
-!define Rel_Serving(e_From, e_To, e_label="") Rel_(e_From, e_To, e_label, "-->")
-!define Rel_Serving_Up(e_From, e_To, e_label="") Rel_(e_From, e_To, e_label, "-UP->")
-!define Rel_Serving_Down(e_From, e_To, e_label="") Rel_(e_From, e_To, e_label, "-DOWN->")
-!define Rel_Serving_Left(e_From, e_To, e_label="") Rel_(e_From, e_To, e_label, "-LEFT->")
-!define Rel_Serving_Right(e_From, e_To, e_label="") Rel_(e_From, e_To, e_label, "-RIGHT->")
+!unquoted procedure Rel_Serving($From, $To, $label="")
+  Rel_($From, $To, $label, "-->")
+!endprocedure
+!unquoted procedure Rel_Serving_Up($From, $To, $label="")
+  Rel_($From, $To, $label, "-UP->")
+!endprocedure
+!unquoted procedure Rel_Serving_Down($From, $To, $label="")
+  Rel_($From, $To, $label, "-DOWN->")
+!endprocedure
+!unquoted procedure Rel_Serving_Left($From, $To, $label="")
+  Rel_($From, $To, $label, "-LEFT->")
+!endprocedure
+!unquoted procedure Rel_Serving_Right($From, $To, $label="")
+  Rel_($From, $To, $label, "-RIGHT->")
+!endprocedure
 
-!define Rel_Association(e_From, e_To, e_label="") Rel_(e_From, e_To, e_label, "==")
-!define Rel_Association_Up(e_From, e_To, e_label="") Rel_(e_From, e_To, e_label, "=UP=")
-!define Rel_Association_Down(e_From, e_To, e_label="") Rel_(e_From, e_To, e_label, "=DOWN=")
-!define Rel_Association_Left(e_From, e_To, e_label="") Rel_(e_From, e_To, e_label, "=LEFT=")
-!define Rel_Association_Right(e_From, e_To, e_label="") Rel_(e_From, e_To, e_label, "=RIGHT=")
+!unquoted procedure Rel_Association($From, $To, $label="")
+  Rel_($From, $To, $label, "--")
+!endprocedure
+!unquoted procedure Rel_Association_Up($From, $To, $label="")
+  Rel_($From, $To, $label, "-UP-")
+!endprocedure
+!unquoted procedure Rel_Association_Down($From, $To, $label="")
+  Rel_($From, $To, $label, "-DOWN-")
+!endprocedure
+!unquoted procedure Rel_Association_Left($From, $To, $label="")
+  Rel_($From, $To, $label, "-LEFT-")
+!endprocedure
+!unquoted procedure Rel_Association_Right($From, $To, $label="")
+  Rel_($From, $To, $label, "-RIGHT-")
+!endprocedure
 
-!define Rel_Association_dir(e_From, e_To, e_label="") Rel_(e_From, e_To, e_label, "==>")
-!define Rel_Association_dir_Up(e_From, e_To, e_label="") Rel_(e_From, e_To, e_label, "=UP=>")
-!define Rel_Association_dir_Down(e_From, e_To, e_label="") Rel_(e_From, e_To, e_label, "=DOWN=>")
-!define Rel_Association_dir_Left(e_From, e_To, e_label="") Rel_(e_From, e_To, e_label, "=LEFT=>")
-!define Rel_Association_dir_Right(e_From, e_To, e_label="") Rel_(e_From, e_To, e_label, "=RIGHT=>")
+!unquoted procedure Rel_Association_dir($From, $To, $label="")
+  Rel_($From, $To, $label, "--\\")
+!endprocedure
+!unquoted procedure Rel_Association_dir_Up($From, $To, $label="")
+  Rel_($From, $To, $label, "-UP-\\")
+!endprocedure
+!unquoted procedure Rel_Association_dir_Down($From, $To, $label="")
+  Rel_($From, $To, $label, "-DOWN-\\")
+!endprocedure
+!unquoted procedure Rel_Association_dir_Left($From, $To, $label="")
+  Rel_($From, $To, $label, "-LEFT-\\")
+!endprocedure
+!unquoted procedure Rel_Association_dir_Right($From, $To, $label="")
+  Rel_($From, $To, $label, "-RIGHT-\\")
+!endprocedure
 
-!define Rel_Flow(e_From, e_To, e_label="") Rel_(e_From, e_To, e_label, "..>>")
-!define Rel_Flow_Up(e_From, e_To, e_label="") Rel_(e_From, e_To, e_label, ".UP.>>")
-!define Rel_Flow_Down(e_From, e_To, e_label="") Rel_(e_From, e_To, e_label, ".DOWN.>>")
-!define Rel_Flow_Left(e_From, e_To, e_label="") Rel_(e_From, e_To, e_label, ".LEFT.>>")
-!define Rel_Flow_Right(e_From, e_To, e_label="") Rel_(e_From, e_To, e_label, ".RIGHT.>>")
+!unquoted procedure Rel_Flow($From, $To, $label="")
+  Rel_($From, $To, $label, "..>>")
+!endprocedure
+!unquoted procedure Rel_Flow_Up($From, $To, $label="")
+  Rel_($From, $To, $label, ".UP.>>")
+!endprocedure
+!unquoted procedure Rel_Flow_Down($From, $To, $label="")
+  Rel_($From, $To, $label, ".DOWN.>>")
+!endprocedure
+!unquoted procedure Rel_Flow_Left($From, $To, $label="")
+  Rel_($From, $To, $label, ".LEFT.>>")
+!endprocedure
+!unquoted procedure Rel_Flow_Right($From, $To, $label="")
+  Rel_($From, $To, $label, ".RIGHT.>>")
+!endprocedure
 
-!define Rel_Realization(e_From, e_To, e_label="") Rel_(e_From, e_To, e_label, "~~|>")
-!define Rel_Realization_Up(e_From, e_To, e_label="") Rel_(e_From, e_To, e_label, "~UP~|>")
-!define Rel_Realization_Down(e_From, e_To, e_label="") Rel_(e_From, e_To, e_label, "~DOWN~|>")
-!define Rel_Realization_Left(e_From, e_To, e_label="") Rel_(e_From, e_To, e_label, "~LEFT~|>")
-!define Rel_Realization_Right(e_From, e_To, e_label="") Rel_(e_From, e_To, e_label, "~RIGHT~|>")
+!unquoted procedure Rel_Realization($From, $To, $label="")
+  Rel_($From, $To, $label, "~~|>")
+!endprocedure
+!unquoted procedure Rel_Realization_Up($From, $To, $label="")
+  Rel_($From, $To, $label, "~UP~|>")
+!endprocedure
+!unquoted procedure Rel_Realization_Down($From, $To, $label="")
+  Rel_($From, $To, $label, "~DOWN~|>")
+!endprocedure
+!unquoted procedure Rel_Realization_Left($From, $To, $label="")
+  Rel_($From, $To, $label, "~LEFT~|>")
+!endprocedure
+!unquoted procedure Rel_Realization_Right($From, $To, $label="")
+  Rel_($From, $To, $label, "~RIGHT~|>")
+!endprocedure
 
-!define Rel_Triggering(e_From, e_To, e_label="") Rel_(e_From, e_To, e_label, "-->>")
-!define Rel_Triggering_Up(e_From, e_To, e_label="") Rel_(e_From, e_To, e_label, "-UP->>")
-!define Rel_Triggering_Down(e_From, e_To, e_label="") Rel_(e_From, e_To, e_label, "-DOWN->>")
-!define Rel_Triggering_Left(e_From, e_To, e_label="") Rel_(e_From, e_To, e_label, "-LEFT->>")
-!define Rel_Triggering_Right(e_From, e_To, e_label="") Rel_(e_From, e_To, e_label, "-RIGHT->>")
+!unquoted procedure Rel_Triggering($From, $To, $label="")
+  Rel_($From, $To, $label, "-->>")
+!endprocedure
+!unquoted procedure Rel_Triggering_Up($From, $To, $label="")
+  Rel_($From, $To, $label, "-UP->>")
+!endprocedure
+!unquoted procedure Rel_Triggering_Down($From, $To, $label="")
+  Rel_($From, $To, $label, "-DOWN->>")
+!endprocedure
+!unquoted procedure Rel_Triggering_Left($From, $To, $label="")
+  Rel_($From, $To, $label, "-LEFT->>")
+!endprocedure
+!unquoted procedure Rel_Triggering_Right($From, $To, $label="")
+  Rel_($From, $To, $label, "-RIGHT->>")
+!endprocedure
 
-!define Rel_Access(e_From, e_To, e_label="") Rel_(e_From, e_To, e_label, "~~")
-!define Rel_Access_Up(e_From, e_To, e_label="") Rel_(e_From, e_To, e_label, "~UP~")
-!define Rel_Access_Down(e_From, e_To, e_label="") Rel_(e_From, e_To, e_label, "~DOWN~")
-!define Rel_Access_Left(e_From, e_To, e_label="") Rel_(e_From, e_To, e_label, "~LEFT~")
-!define Rel_Access_Right(e_From, e_To, e_label="") Rel_(e_From, e_To, e_label, "~RIGHT~")
+!unquoted procedure Rel_Access($From, $To, $label="")
+  Rel_($From, $To, $label, "~~")
+!endprocedure
+!unquoted procedure Rel_Access_Up($From, $To, $label="")
+  Rel_($From, $To, $label, "~UP~")
+!endprocedure
+!unquoted procedure Rel_Access_Down($From, $To, $label="")
+  Rel_($From, $To, $label, "~DOWN~")
+!endprocedure
+!unquoted procedure Rel_Access_Left($From, $To, $label="")
+  Rel_($From, $To, $label, "~LEFT~")
+!endprocedure
+!unquoted procedure Rel_Access_Right($From, $To, $label="")
+  Rel_($From, $To, $label, "~RIGHT~")
+!endprocedure
 
-!define Rel_Access_r(e_From, e_To, e_label="") Rel_(e_From, e_To, e_label, "<-~")
-!define Rel_Access_r_Up(e_From, e_To, e_label="") Rel_(e_From, e_To, e_label, "<-UP~")
-!define Rel_Access_r_Down(e_From, e_To, e_label="") Rel_(e_From, e_To, e_label, "<-DOWN~")
-!define Rel_Access_r_Left(e_From, e_To, e_label="") Rel_(e_From, e_To, e_label, "<-LEFT~")
-!define Rel_Access_r_Right(e_From, e_To, e_label="") Rel_(e_From, e_To, e_label, "<-RIGHT~")
+!unquoted procedure Rel_Access_r($From, $To, $label="")
+  Rel_($From, $To, $label, "<-~")
+!endprocedure
+!unquoted procedure Rel_Access_r_Up($From, $To, $label="")
+  Rel_($From, $To, $label, "<-UP~")
+!endprocedure
+!unquoted procedure Rel_Access_r_Down($From, $To, $label="")
+  Rel_($From, $To, $label, "<-DOWN~")
+!endprocedure
+!unquoted procedure Rel_Access_r_Left($From, $To, $label="")
+  Rel_($From, $To, $label, "<-LEFT~")
+!endprocedure
+!unquoted procedure Rel_Access_r_Right($From, $To, $label="")
+  Rel_($From, $To, $label, "<-RIGHT~")
+!endprocedure
 
-!define Rel_Access_rw(e_From, e_To, e_label="") Rel_(e_From, e_To, e_label, "<~~>")
-!define Rel_Access_rw_Up(e_From, e_To, e_label="") Rel_(e_From, e_To, e_label, "<~UP~>")
-!define Rel_Access_rw_Down(e_From, e_To, e_label="") Rel_(e_From, e_To, e_label, "<~DOWN~>")
-!define Rel_Access_rw_Left(e_From, e_To, e_label="") Rel_(e_From, e_To, e_label, "<~LEFT~>")
-!define Rel_Access_rw_Right(e_From, e_To, e_label="") Rel_(e_From, e_To, e_label, "<~RIGHT~>")
+!unquoted procedure Rel_Access_rw($From, $To, $label="")
+  Rel_($From, $To, $label, "<~~>")
+!endprocedure
+!unquoted procedure Rel_Access_rw_Up($From, $To, $label="")
+  Rel_($From, $To, $label, "<~UP~>")
+!endprocedure
+!unquoted procedure Rel_Access_rw_Down($From, $To, $label="")
+  Rel_($From, $To, $label, "<~DOWN~>")
+!endprocedure
+!unquoted procedure Rel_Access_rw_Left($From, $To, $label="")
+  Rel_($From, $To, $label, "<~LEFT~>")
+!endprocedure
+!unquoted procedure Rel_Access_rw_Right($From, $To, $label="")
+  Rel_($From, $To, $label, "<~RIGHT~>")
+!endprocedure
 
-!define Rel_Access_w(e_From, e_To, e_label="") Rel_(e_From, e_To, e_label, "~->")
-!define Rel_Access_w_Up(e_From, e_To, e_label="") Rel_(e_From, e_To, e_label, "~UP->")
-!define Rel_Access_w_Down(e_From, e_To, e_label="") Rel_(e_From, e_To, e_label, "~DOWN->")
-!define Rel_Access_w_Left(e_From, e_To, e_label="") Rel_(e_From, e_To, e_label, "~LEFT->")
-!define Rel_Access_w_Right(e_From, e_To, e_label="") Rel_(e_From, e_To, e_label, "~RIGHT->")
+!unquoted procedure Rel_Access_w($From, $To, $label="")
+  Rel_($From, $To, $label, "~->")
+!endprocedure
+!unquoted procedure Rel_Access_w_Up($From, $To, $label="")
+  Rel_($From, $To, $label, "~UP->")
+!endprocedure
+!unquoted procedure Rel_Access_w_Down($From, $To, $label="")
+  Rel_($From, $To, $label, "~DOWN->")
+!endprocedure
+!unquoted procedure Rel_Access_w_Left($From, $To, $label="")
+  Rel_($From, $To, $label, "~LEFT->")
+!endprocedure
+!unquoted procedure Rel_Access_w_Right($From, $To, $label="")
+  Rel_($From, $To, $label, "~RIGHT->")
+!endprocedure
 
-!define Rel_Influence(e_From, e_To, e_label="") Rel_(e_From, e_To, e_label, "..>")
-!define Rel_Influence_Up(e_From, e_To, e_label="") Rel_(e_From, e_To, e_label, ".UP.>")
-!define Rel_Influence_Down(e_From, e_To, e_label="") Rel_(e_From, e_To, e_label, ".DOWN.>")
-!define Rel_Influence_Left(e_From, e_To, e_label="") Rel_(e_From, e_To, e_label, ".LEFT.>")
-!define Rel_Influence_Right(e_From, e_To, e_label="") Rel_(e_From, e_To, e_label, ".RIGHT.>")
+!unquoted procedure Rel_Influence($From, $To, $label="")
+  Rel_($From, $To, $label, "..>")
+!endprocedure
+!unquoted procedure Rel_Influence_Up($From, $To, $label="")
+  Rel_($From, $To, $label, ".UP.>")
+!endprocedure
+!unquoted procedure Rel_Influence_Down($From, $To, $label="")
+  Rel_($From, $To, $label, ".DOWN.>")
+!endprocedure
+!unquoted procedure Rel_Influence_Left($From, $To, $label="")
+  Rel_($From, $To, $label, ".LEFT.>")
+!endprocedure
+!unquoted procedure Rel_Influence_Right($From, $To, $label="")
+  Rel_($From, $To, $label, ".RIGHT.>")
+!endprocedure
