@@ -5,7 +5,9 @@
 1. Fork this repository on GitHub and then git clone it to your local machine.
 1. Add a new folder containing your library files on the `stdlib` folder.
 1. Create this corresponding tree structure: <br>
-[![Tree structure](https://img.plantuml.biz/plantuml/svg/RK_B2i8m4BmN-W-n53pP_a0D5UpHYrUHaZOH0dcnkm4BVhonhL3Gqp2pmyniYoI07jeepBDT2SUY3aOuYjOSaAJHGxr2C_1cyX5O8Y1WsYDpmYfUv5a9TQ-UmeQKqd-CAwb2YlavQsuq4WRGj7NW23hGOcXy8EsTC6nHRtXd4HKZpqPGWjGh1fc0RGVnEIUrNxlJ-T9LLdw5lxlNwbOvER__1W00)](https://editor.plantuml.com/uml/RK_B2i8m4BmN-W-n53pP_a0D5UpHYrUHaZOH0dcnkm4BVhonhL3Gqp2pmyniYoI07jeepBDT2SUY3aOuYjOSaAJHGxr2C_1cyX5O8Y1WsYDpmYfUv5a9TQ-UmeQKqd-CAwb2YlavQsuq4WRGj7NW23hGOcXy8EsTC6nHRtXd4HKZpqPGWjGh1fc0RGVnEIUrNxlJ-T9LLdw5lxlNwbOvER__1W00)
+
+[![Tree structure](https://img.plantuml.biz/plantuml/svg/bL71QW8n4BqB_iDKXEh1XDwtGQ4UsqElfIpHZ1X8Dc5c5hhGZszsLr6g5o-JcSoRzrucQnPBSl01UJfvcjFhJETW6sbZMB6uu7ULDx0Wp8cz9Eg0KX8ufE2Gbdg4w6fdgYwr1AKWIzqpGsCZcjbqCYTTuu-DkIZKFV1Kg5maRjhU1C_2cRnS8tXFFWlNWvUKnQV6XgMkpYcCW2_-XfOH9C6Uq0h-jjcL0wwzcO5IZXYH__7rWgkXCyR-3IyN6tTdb5AF4NvS2CisFhURj_UjYkvySNUFfv4rDcxugZy0)](https://editor.plantuml.com/uml/bL71QW8n4BqB_iDKXEh1XDwtGQ4UsqElfIpHZ1X8Dc5c5hhGZszsLr6g5o-JcSoRzrucQnPBSl01UJfvcjFhJETW6sbZMB6uu7ULDx0Wp8cz9Eg0KX8ufE2Gbdg4w6fdgYwr1AKWIzqpGsCZcjbqCYTTuu-DkIZKFV1Kg5maRjhU1C_2cRnS8tXFFWlNWvUKnQV6XgMkpYcCW2_-XfOH9C6Uq0h-jjcL0wwzcO5IZXYH__7rWgkXCyR-3IyN6tTdb5AF4NvS2CisFhURj_UjYkvySNUFfv4rDcxugZy0)
+
 1. Add a file inside your library's folder called `README.md` that contains an YAML header:
 ```md
 ---
@@ -23,6 +25,11 @@ origin: <URL to the icon/stdlib origin website>
 Information about the `<your library's name>` Standard Library.
 ```
 1. Make changes to the root [`README.md`](./README.md) file to add your Library, describe it and add example.
+1. Optionally add one or more themes for your library in the `./stdlib/[your library's name]/themes` folder
+   * use the naming convention `puml-theme-[theme name].puml` to allow your users to use it via
+     ```plantuml
+     !theme [theme name] from <[your library's name]/themes>
+     ``` 
 1. Commit your work and push it up to your fork repository
 1. Submit a Pull Request from your fork repository back to the main repository
 
