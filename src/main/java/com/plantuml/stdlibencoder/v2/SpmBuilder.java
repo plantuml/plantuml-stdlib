@@ -91,7 +91,6 @@ public class SpmBuilder {
 		int x = name.indexOf('/');
 		x = name.indexOf('/', x + 1);
 		name = name.substring(x + 1);
-		System.err.println("processSingleJsonFile " + name);
 
 		final byte[] json = Files.readAllBytes(f);
 

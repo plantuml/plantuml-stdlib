@@ -95,11 +95,10 @@ public class Main {
 		final byte data[] = Files.readAllBytes(p);
 		final Path outPath = Paths.get("output").resolve(p.subpath(1, p.getNameCount()));
 		Files.createDirectories(outPath.getParent());
-		System.err.println(outPath);
+		System.err.println("Writing " + outPath);
 
 		final Encoder.Parameters params = new Encoder.Parameters().setQuality(11).setWindow(24);
 		final byte data2[] = BrotliUtils.compress(data, params);
-		System.err.println(data2.length);
 		Files.write(outPath, data2);
 	}
 
