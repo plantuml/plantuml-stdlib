@@ -19,167 +19,60 @@
 ' Styling
 '######################################
 
-!$STRATEGY_FILLCOLOR = "#STRATEGY"
-!$BUSINESS_FILLCOLOR = "#BUSINESS"
-!$APPLICATION_FILLCOLOR = "#APPLICATION"
-!$TECHNOLOGY_FILLCOLOR = "#TECHNOLOGY"
-!$PHYSICAL_FILLCOLOR = "#PHYSICAL"
-!$MOTIVATION_FILLCOLOR = "#MOTIVATION"
-!$IMPLEMENTATION_FILLCOLOR = "#IMPLEMENTATION"
-!$OTHER_FILLCOLOR = "#efd1e4"
-!$JUNCTIONOR_FILLCOLOR = "#WhiteSmoke"
-!$JUNCTIONAND_FILLCOLOR = "#Black"
-!$GROUP_FILLCOLOR = "#LightGrey"
-!$FOLDER_LINECOLOR = "#444444"
-!$RELATIONSHIP_LINECOLOR = "#Black"
-!$RELATIONSHIP_FONTCOLOR = "#Black"
+!$DEFAULT_FONT = "Verdana"
+!$DEFAULT_FONTSIZE = 12
 !$RELATIONSHIP_FONTSIZE = 10
+!$TECHNOLOGY_TYPE_FONTSIZE = 10
 
-<style>
-    element {
-        FontName "Verdana"
-        FontSize 12
-        MaximumWidth 600
-    }
-</style>
+!$DIAGONAL_CORNER = 12
+!$ROUND_CORNER = 25
+!SHARP_CORNER = 1
 
-skinparam defaultTextAlignment  center
-skinparam maxMessageSize        150
-skinparam StereotypeAlignment   right
-
-<style>
-    Arrow {
-        LineColor $RELATIONSHIP_LINECOLOR
-        FontColor $RELATIONSHIP_FONTCOLOR
-        FontSize $RELATIONSHIP_FONTSIZE
-    }
-    folder {
-        .group {
-            BackgroundColor $GROUP_FILLCOLOR
-            Shadowing 2
-            stereotype {
-                FontSize 1
-                FontColor transparent
-            }
-
-        }
-        .grouping {
-            LineColor $FOLDER_LINECOLOR
-            LineStyle 8-5
-            Shadowing 2
-            stereotype {
-                FontSize 1
-                FontColor transparent
-            }
-        }
-    }
-    rectangle {
-        .boundary {
-            LineColor $FOLDER_LINECOLOR
-            LineStyle 8-5
-            Shadowing 0
-            stereotype {
-                FontSize 1
-                FontColor transparent
-            }
-        }
-    }
-</style>
-
-
-skinparam archimate {
-  RoundCorner<<strategy-capability>> 25
-  RoundCorner<<strategy-course-of-action>> 25
-  RoundCorner<<strategy-value-stream>> 25
-  RoundCorner<<business-process>> 25
-  RoundCorner<<business-event>> 25
-  RoundCorner<<business-function>> 25
-  RoundCorner<<business-interaction>> 25
-  RoundCorner<<business-event>> 25
-  RoundCorner<<business-service>> 25
-  RoundCorner<<application-function>> 25
-  RoundCorner<<application-interaction>> 25
-  RoundCorner<<application-process>> 25
-  RoundCorner<<application-event>> 25
-  RoundCorner<<application-service>> 25
-  RoundCorner<<technology-function>> 25
-  RoundCorner<<technology-process>> 25
-  RoundCorner<<technology-interaction>> 25
-  RoundCorner<<technology-event>> 25
-  RoundCorner<<technology-infra-service>> 25
-  RoundCorner<<implementation-workpackage>> 25
-  RoundCorner<<implementation-event>> 25
-  DiagonalCorner<<motivation-stakeholder>> 12
-  DiagonalCorner<<motivation-driver>> 12
-  DiagonalCorner<<motivation-assessment>> 12
-  DiagonalCorner<<motivation-goal>> 12
-  DiagonalCorner<<motivation-outcome>> 12
-  DiagonalCorner<<motivation-principle>> 12
-  DiagonalCorner<<motivation-requirement>> 12
-  DiagonalCorner<<motivation-constraint>> 12
-  DiagonalCorner<<motivation-meaning>> 12
-  DiagonalCorner<<motivation-value>> 12
-}
-' using rectangle because archimate type does not allow override of stereotype sprite
-skinparam rectangle {
-  RoundCorner<<strategy-capability>> 25
-  RoundCorner<<strategy-course-of-action>> 25
-  RoundCorner<<strategy-value-stream>> 25
-  RoundCorner<<business-process>> 25
-  RoundCorner<<business-event>> 25
-  RoundCorner<<business-function>> 25
-  RoundCorner<<business-interaction>> 25
-  RoundCorner<<business-event>> 25
-  RoundCorner<<business-service>> 25
-  RoundCorner<<application-function>> 25
-  RoundCorner<<application-interaction>> 25
-  RoundCorner<<application-process>> 25
-  RoundCorner<<application-event>> 25
-  RoundCorner<<application-service>> 25
-  RoundCorner<<technology-function>> 25
-  RoundCorner<<technology-process>> 25
-  RoundCorner<<technology-interaction>> 25
-  RoundCorner<<technology-event>> 25
-  RoundCorner<<technology-infra-service>> 25
-  RoundCorner<<implementation-workpackage>> 25
-  RoundCorner<<implementation-event>> 25
-  DiagonalCorner<<motivation-stakeholder>> 12
-  DiagonalCorner<<motivation-driver>> 12
-  DiagonalCorner<<motivation-assessment>> 12
-  DiagonalCorner<<motivation-goal>> 12
-  DiagonalCorner<<motivation-outcome>> 12
-  DiagonalCorner<<motivation-principle>> 12
-  DiagonalCorner<<motivation-requirement>> 12
-  DiagonalCorner<<motivation-constraint>> 12
-  DiagonalCorner<<motivation-meaning>> 12
-  DiagonalCorner<<motivation-value>> 12
-}
-skinparam usecase {
-  BorderColor #000000
-}
+!theme archimate-standard from ./themes
 
 ' Layout
 ' ##################################
-!definelong LAYOUT_AS_SKETCH
+!procedure LAYOUT_AS_SKETCH()
     !option handwritten true
-    skinparam backgroundColor #EEEBDC
-    skinparam defaultFontName "Comic Sans MS"
+    <style>
+        root {
+            BackgroundColor #EEEBDC
+            FontName "Comic Sans MS"
+        }
+
+    </style>
     center footer <font color=red>Warning:</font> Created for discussion, needs to be validated
-!enddefinelong
-!define LAYOUT_TOP_DOWN top to bottom direction
-!define LAYOUT_LEFT_RIGHT left to right direction
+!endprocedure
+!procedure LAYOUT_TOP_DOWN()
+    top to bottom direction
+!endprocedure
+!procedure LAYOUT_LEFT_RIGHT()
+    left to right direction
+!endprocedure
 
 ' Layout Helpers
 ' ##################################
-!define Lay_D(e_from, e_to) e_from -[hidden]D- e_to
-!define Lay_U(e_from, e_to) e_from -[hidden]U- e_to
-!define Lay_R(e_from, e_to) e_from -[hidden]R- e_to
-!define Lay_L(e_from, e_to) e_from -[hidden]L- e_to
+!unquoted procedure Lay_D(e_from, e_to)
+    e_from -[hidden]D- e_to
+!endprocedure
+!unquoted procedure Lay_U(e_from, e_to)
+    e_from -[hidden]U- e_to
+!endprocedure
+!unquoted procedure Lay_R(e_from, e_to)
+    e_from -[hidden]R- e_to
+!endprocedure
+!unquoted procedure Lay_L(e_from, e_to)
+    e_from -[hidden]L- e_to
+!endprocedure
 
 ' Boundaries
 ' ##################################
-!define Boundary(e_alias, e_label) rectangle "==e_label" <<boundary>> as e_alias
-!define Boundary(e_alias, e_label, e_type) rectangle "==e_label\n<size:TECHN_FONT_SIZE>[e_type]</size>" <<boundary>> as e_alias
+!unquoted procedure Boundary(e_alias, e_label)
+    rectangle "==e_label" <<boundary>> as e_alias
+!endprocedure
+!unquoted procedure Boundary(e_alias, e_label, e_type)
+    rectangle "==e_label%n()<size:$TECHNOLOGY_TYPE_FONTSIZE>[e_type]</size>" <<boundary>> as e_alias
+!endprocedure
 
 ' Elements
 ' ##################################
@@ -224,7 +117,7 @@ skinparam usecase {
   rectangle "$label" <<$business-event-svg>><<business-event>> as $alias $BUSINESS_FILLCOLOR
 !endprocedure
 !unquoted procedure Business_Service($alias, $label)
-  rectangle "$label" <<$business-service-svg>> as $alias $BUSINESS_FILLCOLOR
+  rectangle "$label" <<$business-service-svg>><<business-service>> as $alias $BUSINESS_FILLCOLOR
 !endprocedure
 !unquoted procedure Business_Object($alias, $label)
   rectangle "$label" <<$business-object-svg>><<business-object>> as $alias $BUSINESS_FILLCOLOR
@@ -267,7 +160,7 @@ skinparam usecase {
 !unquoted procedure Application_Service($alias, $label)
   rectangle "$label" <<$application-service-svg>><<application-service>> as $alias $APPLICATION_FILLCOLOR
 !endprocedure
-!procedure Application_DataObject($alias, $label)
+!unquoted procedure Application_DataObject($alias, $label)
   rectangle "$label" <<$application-dataobject-svg>><<application-data-object>> as $alias $APPLICATION_FILLCOLOR
 !endprocedure
 
@@ -360,7 +253,7 @@ skinparam usecase {
 
 'Implementation Elements
 !unquoted procedure Implementation_WorkPackage($alias, $label)
-  rectangle "$label" <<$implementation-workpackage-svg>> as $alias $IMPLEMENTATION_FILLCOLOR
+  rectangle "$label" <<$implementation-workpackage-svg>><<implementation-workpackage>> as $alias $IMPLEMENTATION_FILLCOLOR
 !endprocedure
 !unquoted procedure Implementation_Deliverable($alias, $label)
   rectangle "$label" <<$implementation-deliverable-svg>><<implementation-deliverable>> as $alias $IMPLEMENTATION_FILLCOLOR

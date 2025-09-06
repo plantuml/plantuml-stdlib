@@ -1,0 +1,146 @@
+' No <style> alternative found yet for skinparam maxMessageSize
+skinparam maxMessageSize        150
+
+<style>
+    arrow {
+        LineColor $RELATIONSHIP_LINECOLOR
+        FontColor $RELATIONSHIP_FONTCOLOR
+        FontSize $RELATIONSHIP_FONTSIZE
+    }
+    element {
+        FontName $DEFAULT_FONT
+        FontSize $DEFAULT_FONTSIZE
+        MaximumWidth 600
+        MinimumWidth 80
+        HorizontalAlignment center
+        stereotype {
+            HorizontalAlignment right
+        }
+    }
+    folder {
+        .group {
+            BackgroundColor $GROUP_FILLCOLOR
+            Shadowing 2
+            stereotype {
+                FontSize 1
+                FontColor transparent
+            }
+
+        }
+        .grouping {
+            LineColor $FOLDER_LINECOLOR
+            LineStyle 8-5
+            Shadowing 2
+            stereotype {
+                FontSize 1
+                FontColor transparent
+            }
+        }
+    }
+    rectangle {
+        .boundary {
+            LineColor $FOLDER_LINECOLOR
+            LineStyle 8-5
+            Shadowing 0
+            stereotype {
+                FontSize 1
+                FontColor transparent
+            }
+        }
+        RoundCorner $SHARP_CORNER
+    }
+    root {
+        BackgroundColor $DEFAULT_BACKGROUND
+    }
+    .application-event {
+        RoundCorner $ROUND_CORNER
+    }
+    .application-function {
+        RoundCorner $ROUND_CORNER
+    }
+    .application-interaction {
+        RoundCorner $ROUND_CORNER
+    }
+    .application-process {
+        RoundCorner $ROUND_CORNER
+    }
+    .application-service {
+        RoundCorner $ROUND_CORNER
+    }
+    .business-event {
+        RoundCorner $ROUND_CORNER
+    }
+    .business-function {
+        RoundCorner $ROUND_CORNER
+    }
+    .business-interaction {
+        RoundCorner $ROUND_CORNER
+    }
+    .business-process {
+        RoundCorner $ROUND_CORNER
+    }
+    .business-service {
+        RoundCorner $ROUND_CORNER
+    }
+    .implementation-event {
+        RoundCorner $ROUND_CORNER
+    }
+    .implementation-workpackage {
+        RoundCorner $ROUND_CORNER
+    }
+    .motivation-assessment {
+        DiagonalCorner $DIAGONAL_CORNER
+    }
+    .motivation-constraint {
+        DiagonalCorner $DIAGONAL_CORNER
+    }
+    .motivation-driver {
+        DiagonalCorner $DIAGONAL_CORNER
+    }
+    .motivation-goal {
+        DiagonalCorner $DIAGONAL_CORNER
+    }
+    .motivation-meaning {
+        DiagonalCorner $DIAGONAL_CORNER
+    }
+    .motivation-outcome {
+        DiagonalCorner $DIAGONAL_CORNER
+    }
+    .motivation-principle {
+        DiagonalCorner $DIAGONAL_CORNER
+    }
+    .motivation-requirement {
+        DiagonalCorner $DIAGONAL_CORNER
+    }
+    .motivation-stakeholder {
+        DiagonalCorner $DIAGONAL_CORNER
+    }
+    .motivation-value {
+        DiagonalCorner $DIAGONAL_CORNER
+    }
+    .strategy-capability {
+        RoundCorner $ROUND_CORNER
+    }
+    .strategy-course-of-action {
+        RoundCorner $ROUND_CORNER
+    }
+    .strategy-value-stream {
+        RoundCorner $ROUND_CORNER
+    }
+    .technology-event {
+        RoundCorner $ROUND_CORNER
+    }
+    .technology-function {
+        RoundCorner $ROUND_CORNER
+    }
+    .technology-interaction {
+        RoundCorner $ROUND_CORNER
+    }
+    .technology-process {
+        RoundCorner $ROUND_CORNER
+    }
+    .technology-infra-service {
+        RoundCorner $ROUND_CORNER
+    }
+
+</style>

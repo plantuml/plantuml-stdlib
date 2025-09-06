@@ -1,0 +1,175 @@
+!$PUML_THEME = "archimate-alternate"
+!$THEME      = "archimate-alternate"
+
+!$DEFAULT_BACKGROUND = "#white"
+
+!$STRATEGY_FILLCOLOR = "#e5a82e"
+!$BUSINESS_FILLCOLOR = "#f8da62"
+!$APPLICATION_FILLCOLOR = "#92b8c4"
+!$TECHNOLOGY_FILLCOLOR = "#9fb394"
+!$PHYSICAL_FILLCOLOR = "#PHYSICAL"
+!$MOTIVATION_FILLCOLOR = "#b3a8b8"
+!$IMPLEMENTATION_FILLCOLOR = "#e9a7a1"
+!$OTHER_FILLCOLOR = "#bababa"
+!$JUNCTIONOR_FILLCOLOR = "#WhiteSmoke"
+!$JUNCTIONAND_FILLCOLOR = "#Black"
+!$GROUP_FILLCOLOR = "#ffc73f"
+!$FOLDER_LINECOLOR = "#4f4f4f"
+!$RELATIONSHIP_LINECOLOR = "#Black"
+!$RELATIONSHIP_FONTCOLOR = "#Black"
+
+' I'd like to include the common part here, but theme files do not have a fixed path (they are processed as if in the
+' location of the file that does the `!theme ...`)
+' So, instead of doing
+'
+' !include shared_style.puml
+'
+' We include the contents of that file here. Make sure to keep this section identical in all of the theme files.
+
+
+' No <style> alternative found yet for skinparam maxMessageSize
+skinparam maxMessageSize        150
+
+<style>
+    arrow {
+        LineColor $RELATIONSHIP_LINECOLOR
+        FontColor $RELATIONSHIP_FONTCOLOR
+        FontSize $RELATIONSHIP_FONTSIZE
+    }
+    element {
+        FontName $DEFAULT_FONT
+        FontSize $DEFAULT_FONTSIZE
+        MaximumWidth 600
+        MinimumWidth 80
+        HorizontalAlignment center
+        stereotype {
+            HorizontalAlignment right
+        }
+    }
+    folder {
+        .group {
+            BackgroundColor $GROUP_FILLCOLOR
+            Shadowing 2
+            stereotype {
+                FontSize 1
+                FontColor transparent
+            }
+
+        }
+        .grouping {
+            LineColor $FOLDER_LINECOLOR
+            LineStyle 8-5
+            Shadowing 2
+            stereotype {
+                FontSize 1
+                FontColor transparent
+            }
+        }
+    }
+    rectangle {
+        .boundary {
+            LineColor $FOLDER_LINECOLOR
+            LineStyle 8-5
+            Shadowing 0
+            stereotype {
+                FontSize 1
+                FontColor transparent
+            }
+        }
+        RoundCorner $SHARP_CORNER
+    }
+    root {
+        BackgroundColor $DEFAULT_BACKGROUND
+    }
+    .application-event {
+        RoundCorner $ROUND_CORNER
+    }
+    .application-function {
+        RoundCorner $ROUND_CORNER
+    }
+    .application-interaction {
+        RoundCorner $ROUND_CORNER
+    }
+    .application-process {
+        RoundCorner $ROUND_CORNER
+    }
+    .application-service {
+        RoundCorner $ROUND_CORNER
+    }
+    .business-event {
+        RoundCorner $ROUND_CORNER
+    }
+    .business-function {
+        RoundCorner $ROUND_CORNER
+    }
+    .business-interaction {
+        RoundCorner $ROUND_CORNER
+    }
+    .business-process {
+        RoundCorner $ROUND_CORNER
+    }
+    .business-service {
+        RoundCorner $ROUND_CORNER
+    }
+    .implementation-event {
+        RoundCorner $ROUND_CORNER
+    }
+    .implementation-workpackage {
+        RoundCorner $ROUND_CORNER
+    }
+    .motivation-assessment {
+        DiagonalCorner $DIAGONAL_CORNER
+    }
+    .motivation-constraint {
+        DiagonalCorner $DIAGONAL_CORNER
+    }
+    .motivation-driver {
+        DiagonalCorner $DIAGONAL_CORNER
+    }
+    .motivation-goal {
+        DiagonalCorner $DIAGONAL_CORNER
+    }
+    .motivation-meaning {
+        DiagonalCorner $DIAGONAL_CORNER
+    }
+    .motivation-outcome {
+        DiagonalCorner $DIAGONAL_CORNER
+    }
+    .motivation-principle {
+        DiagonalCorner $DIAGONAL_CORNER
+    }
+    .motivation-requirement {
+        DiagonalCorner $DIAGONAL_CORNER
+    }
+    .motivation-stakeholder {
+        DiagonalCorner $DIAGONAL_CORNER
+    }
+    .motivation-value {
+        DiagonalCorner $DIAGONAL_CORNER
+    }
+    .strategy-capability {
+        RoundCorner $ROUND_CORNER
+    }
+    .strategy-course-of-action {
+        RoundCorner $ROUND_CORNER
+    }
+    .strategy-value-stream {
+        RoundCorner $ROUND_CORNER
+    }
+    .technology-event {
+        RoundCorner $ROUND_CORNER
+    }
+    .technology-function {
+        RoundCorner $ROUND_CORNER
+    }
+    .technology-interaction {
+        RoundCorner $ROUND_CORNER
+    }
+    .technology-process {
+        RoundCorner $ROUND_CORNER
+    }
+    .technology-infra-service {
+        RoundCorner $ROUND_CORNER
+    }
+
+</style>
