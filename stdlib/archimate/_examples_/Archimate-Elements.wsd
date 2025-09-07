@@ -95,12 +95,10 @@ Implementation_Event(IE_01, "Event")
 Implementation_Plateau(IP_01, "Plateau")
 Implementation_Gap(IG_01, "Gap")
 
-!if ($ARCH_LOCAL == true)
-    Other_Grouping(a, "Other_Grouping"){
-        Other_Location(OL_02, "Location")
-    }
-!endif
 'Other Elements
+Other_Grouping(a, "Other_Grouping"){
+    Other_Location(OL_02, "Location")
+}
 Grouping(G_01, "Grouping") {
     Junction_Or(JO_01, "or")
     Junction_And(JA_01, "and")
