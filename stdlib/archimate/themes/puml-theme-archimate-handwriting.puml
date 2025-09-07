@@ -1,0 +1,21 @@
+!$PUML_THEME = "archimate-handwriting"
+!$THEME      = "archimate-handwriting"
+
+!option handwritten true
+!$DEFAULT_BACKGROUND = "#eeebdc"
+!$DEFAULT_FONT = "Comic Sans MS"
+!$DEFAULT_FONTSIZE = 14
+
+center footer <font color=red>Warning:</font> Created for discussion, needs to be validated
+
+<style>
+    element {
+        FontName $DEFUALT_FONT
+        FontSize $DEFAULT_FONTSIZE
+    }
+    root {
+        BackgroundColor $DEFAULT_BACKGROUND
+    }
+</style>
+
+!include shared_style from <archimate/themes>

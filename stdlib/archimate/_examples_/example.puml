@@ -1,5 +1,6 @@
 @startuml
 !include <archimate/Archimate>
+'!include ../Archimate.puml
 
 title Archimate Sample - Internet Browser
 
@@ -8,9 +9,9 @@ Business_Object(businessObject, "A Business Object")
 Business_Process(someBusinessProcess,"Some Business Process")
 Business_Service(itSupportService, "IT Support for Business (Application Service)")
 
-Application_DataObject(dataObject, "Web Page Data \n 'on the fly'")
+Application_DataObject(dataObject, "Web Page Data%n()'on the fly'")
 Application_Function(webpageBehaviour, "Web page behaviour")
-Application_Component(ActivePartWebPage, "Active Part of the web page \n 'on the fly'")
+Application_Component(ActivePartWebPage, "Active Part of the web page%n()'on the fly'")
 
 Technology_Artifact(inMemoryItem,"in memory / 'on the fly' html/javascript")
 Technology_Service(internetBrowser, "Internet Browser Generic & Plugin")
