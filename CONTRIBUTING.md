@@ -78,7 +78,12 @@ The correct local workflow to build a `plantuml.jar` that includes stuff from `p
 * in local fork of `plantuml/plantuml-stdlib`
   * `gradle run`
   * copy files from `./output/` to `./src/main/resources/stdlib` of `plantuml/plantuml` fork
+    * `cp -r ./output/* ../plantuml/src/main/resources/stdlib`
 * in local fork of `plantuml/plantuml`
+  * `gradle clean`
   * `gradle jar`
-  * produces `./build/libs/plantuml-1.2025.5beta3.jar`
+  * produces `./build/libs/plantuml-1.2025.5beta3.jar` (or a different version)
 * set up PlantUML to use the produced jar (`./build/libs/plantuml-1.2025.5beta3.jar`, or other version in that folder)
+
+**Note: When using the IntellIJ PlantUML plugin, changing the jar setting is not enough to properly reload it, we suggest
+you restart IntellIJ to make sure the plugin picks up the new jar**

@@ -3,7 +3,7 @@
 ' Version
 '######################################
 !function ArchimateVersion()
-  !$archimateVersion  =  "2.2.0alpha"
+  !$archimateVersion  =  "2.2.0alpha4"
   !return $archimateVersion
 !endfunction
 
@@ -18,12 +18,17 @@
 ' Styling
 '######################################
 
+!global $ARCH_DEBUG ?= false
 !global $ARCH_LOCAL ?= false
 
 !if ($ARCH_LOCAL == true)
     !include themes/shared_style.puml
 !else
-    !include shared_style from <archimate/themes>
+    !include <archimate/themes/shared_style>
+!endif
+
+!if ($ARCH_DEBUG == true)
+    left header "Created using Archimate.puml version ArchimateVersion()"
 !endif
 
 ' Layout
