@@ -70,3 +70,15 @@ done
 rm -rf $TEMP_DIR_NAME
 
 ```
+
+## Local testing of updates to the stdlib
+
+The correct local workflow to build a `plantuml.jar` that includes stuff from `plantuml/plantuml-stdlib`:
+
+* in local fork of `plantuml/plantuml-stdlib`
+  * `gradle run`
+  * copy files from `./output/` to `./src/main/resources/stdlib` of `plantuml/plantuml` fork
+* in local fork of `plantuml/plantuml`
+  * `gradle jar`
+  * produces `./build/libs/plantuml-1.2025.5beta3.jar`
+* set up PlantUML to use the produced jar (`./build/libs/plantuml-1.2025.5beta3.jar`, or other version in that folder)

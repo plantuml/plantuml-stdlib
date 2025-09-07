@@ -18,16 +18,13 @@
 ' Styling
 '######################################
 
-!$DEFAULT_FONT = "Verdana"
-!$DEFAULT_FONTSIZE = 12
-!$RELATIONSHIP_FONTSIZE = 10
-!$TECHNOLOGY_TYPE_FONTSIZE = 10
+!global $ARCH_LOCAL ?= false
 
-!$DIAGONAL_CORNER = 12
-!$ROUND_CORNER = 25
-!SHARP_CORNER = 1
-
-!theme archimate-standard from <archimate/themes>
+!if ($ARCH_LOCAL == true)
+    !include themes/shared_style.puml
+!else
+    !include shared_style from <archimate/themes>
+!endif
 
 ' Layout
 ' ##################################
@@ -70,7 +67,7 @@
     rectangle "==e_label" <<boundary>> as e_alias
 !endprocedure
 !unquoted procedure Boundary(e_alias, e_label, e_type)
-    rectangle "==e_label%n()<size:$TECHNOLOGY_TYPE_FONTSIZE>[e_type]</size>" <<boundary>> as e_alias
+    rectangle "==e_label%n()<size:$ARCH_TECHNOLOGY_TYPE_FONTSIZE>[e_type]</size>" <<boundary>> as e_alias
 !endprocedure
 
 ' Elements
@@ -78,207 +75,207 @@
 
 'Strategy Elements
 !unquoted procedure Strategy_Resource($alias, $label)
-  archimate $STRATEGY_FILLCOLOR "$label" <<strategy-resource>> as $alias
+  archimate $ARCH_STRATEGY_FILLCOLOR "$label" <<strategy-resource>> as $alias
 !endprocedure
 !unquoted procedure Strategy_Capability($alias, $label)
-  archimate $STRATEGY_FILLCOLOR "$label" <<strategy-capability>> as $alias
+  archimate $ARCH_STRATEGY_FILLCOLOR "$label" <<strategy-capability>> as $alias
 !endprocedure
 !unquoted procedure Strategy_CourseOfAction($alias, $label)
-  archimate $STRATEGY_FILLCOLOR "$label" <<strategy-courseofaction>> as $alias
+  archimate $ARCH_STRATEGY_FILLCOLOR "$label" <<strategy-courseofaction>> as $alias
 !endprocedure
 !unquoted procedure Strategy_ValueStream($alias, $label)
-  archimate $STRATEGY_FILLCOLOR "$label" <<strategy-valuestream>> as $alias
+  archimate $ARCH_STRATEGY_FILLCOLOR "$label" <<strategy-valuestream>> as $alias
 !endprocedure
 
 'Business Elements
 !unquoted procedure Business_Actor($alias, $label)
-  archimate $BUSINESS_FILLCOLOR "$label" <<business-actor>> as $alias
+  archimate $ARCH_BUSINESS_FILLCOLOR "$label" <<business-actor>> as $alias
 !endprocedure
 !unquoted procedure Business_Role($alias, $label)
-  archimate $BUSINESS_FILLCOLOR "$label" <<business-role>> as $alias
+  archimate $ARCH_BUSINESS_FILLCOLOR "$label" <<business-role>> as $alias
 !endprocedure
 !unquoted procedure Business_Collaboration($alias, $label)
-  archimate $BUSINESS_FILLCOLOR "$label" <<business-collaboration>> as $alias
+  archimate $ARCH_BUSINESS_FILLCOLOR "$label" <<business-collaboration>> as $alias
 !endprocedure
 !unquoted procedure Business_Interface($alias, $label)
-  archimate $BUSINESS_FILLCOLOR "$label" <<business-interface>> as $alias
+  archimate $ARCH_BUSINESS_FILLCOLOR "$label" <<business-interface>> as $alias
 !endprocedure
 !unquoted procedure Business_Process($alias, $label)
-  archimate $BUSINESS_FILLCOLOR "$label" <<business-process>> as $alias
+  archimate $ARCH_BUSINESS_FILLCOLOR "$label" <<business-process>> as $alias
 !endprocedure
 !unquoted procedure Business_Function($alias, $label)
-  archimate $BUSINESS_FILLCOLOR "$label" <<business-function>> as $alias
+  archimate $ARCH_BUSINESS_FILLCOLOR "$label" <<business-function>> as $alias
 !endprocedure
 !unquoted procedure Business_Interaction($alias, $label)
-  archimate $BUSINESS_FILLCOLOR "$label" <<business-interaction>> as $alias
+  archimate $ARCH_BUSINESS_FILLCOLOR "$label" <<business-interaction>> as $alias
 !endprocedure
 !unquoted procedure Business_Event($alias, $label)
-  archimate $BUSINESS_FILLCOLOR "$label" <<business-event>> as $alias
+  archimate $ARCH_BUSINESS_FILLCOLOR "$label" <<business-event>> as $alias
 !endprocedure
 !unquoted procedure Business_Service($alias, $label)
-  archimate $BUSINESS_FILLCOLOR "$label" <<business-service>> as $alias
+  archimate $ARCH_BUSINESS_FILLCOLOR "$label" <<business-service>> as $alias
 !endprocedure
 !unquoted procedure Business_Object($alias, $label)
-  archimate $BUSINESS_FILLCOLOR "$label" <<business-object>> as $alias
+  archimate $ARCH_BUSINESS_FILLCOLOR "$label" <<business-object>> as $alias
 !endprocedure
 !unquoted procedure Business_Contract($alias, $label)
-  archimate $BUSINESS_FILLCOLOR "$label" <<business-contract>> as $alias
+  archimate $ARCH_BUSINESS_FILLCOLOR "$label" <<business-contract>> as $alias
 !endprocedure
 !unquoted procedure Business_Representation($alias, $label)
-  archimate $BUSINESS_FILLCOLOR "$label" <<business-representation>> as $alias
+  archimate $ARCH_BUSINESS_FILLCOLOR "$label" <<business-representation>> as $alias
 !endprocedure
 !unquoted procedure Business_Product($alias, $label)
-  archimate $BUSINESS_FILLCOLOR "$label" <<business-product>> as $alias
+  archimate $ARCH_BUSINESS_FILLCOLOR "$label" <<business-product>> as $alias
 !endprocedure
 !unquoted procedure Business_Location($alias, $label)
-  archimate $BUSINESS_FILLCOLOR "$label" <<business-location>> as $alias
+  archimate $ARCH_BUSINESS_FILLCOLOR "$label" <<business-location>> as $alias
 !endprocedure
 
 'Application Elements
 !unquoted procedure Application_Component($alias, $label)
-  archimate $APPLICATION_FILLCOLOR "$label" <<application-component>> as $alias
+  archimate $ARCH_APPLICATION_FILLCOLOR "$label" <<application-component>> as $alias
 !endprocedure
 !unquoted procedure Application_Collaboration($alias, $label)
-  archimate $APPLICATION_FILLCOLOR "$label" <<application-collaboration>> as $alias
+  archimate $ARCH_APPLICATION_FILLCOLOR "$label" <<application-collaboration>> as $alias
 !endprocedure
 !unquoted procedure Application_Interface($alias, $label)
-  archimate $APPLICATION_FILLCOLOR "$label" <<application-interface>> as $alias
+  archimate $ARCH_APPLICATION_FILLCOLOR "$label" <<application-interface>> as $alias
 !endprocedure
 !unquoted procedure Application_Function($alias, $label)
-  archimate $APPLICATION_FILLCOLOR "$label" <<application-function>> as $alias
+  archimate $ARCH_APPLICATION_FILLCOLOR "$label" <<application-function>> as $alias
 !endprocedure
 !unquoted procedure Application_Interaction($alias, $label)
-  archimate $APPLICATION_FILLCOLOR "$label" <<application-interaction>> as $alias
+  archimate $ARCH_APPLICATION_FILLCOLOR "$label" <<application-interaction>> as $alias
 !endprocedure
 !unquoted procedure Application_Process($alias, $label)
-  archimate $APPLICATION_FILLCOLOR "$label" <<application-process>> as $alias
+  archimate $ARCH_APPLICATION_FILLCOLOR "$label" <<application-process>> as $alias
 !endprocedure
 !unquoted procedure Application_Event($alias, $label)
-  archimate $APPLICATION_FILLCOLOR "$label" <<application-event>> as $alias
+  archimate $ARCH_APPLICATION_FILLCOLOR "$label" <<application-event>> as $alias
 !endprocedure
 !unquoted procedure Application_Service($alias, $label)
-  archimate $APPLICATION_FILLCOLOR "$label" <<application-service>> as $alias
+  archimate $ARCH_APPLICATION_FILLCOLOR "$label" <<application-service>> as $alias
 !endprocedure
 !unquoted procedure Application_DataObject($alias, $label)
-  archimate $APPLICATION_FILLCOLOR "$label" <<application-dataobject>> as $alias
+  archimate $ARCH_APPLICATION_FILLCOLOR "$label" <<application-dataobject>> as $alias
 !endprocedure
 
 'Technology Elements
 !unquoted procedure Technology_Node($alias, $label)
-  archimate $TECHNOLOGY_FILLCOLOR "$label" <<technology-node>> as $alias
+  archimate $ARCH_TECHNOLOGY_FILLCOLOR "$label" <<technology-node>> as $alias
 !endprocedure
 !unquoted procedure Technology_Device($alias, $label)
-  archimate $TECHNOLOGY_FILLCOLOR "$label" <<technology-device>> as $alias
+  archimate $ARCH_TECHNOLOGY_FILLCOLOR "$label" <<technology-device>> as $alias
 !endprocedure
 !unquoted procedure Technology_SystemSoftware($alias, $label)
-  archimate $TECHNOLOGY_FILLCOLOR "$label" <<technology-systemsoftware>> as $alias
+  archimate $ARCH_TECHNOLOGY_FILLCOLOR "$label" <<technology-systemsoftware>> as $alias
 !endprocedure
 !unquoted procedure Technology_Collaboration($alias, $label)
-  archimate $TECHNOLOGY_FILLCOLOR "$label" <<technology-collaboration>> as $alias
+  archimate $ARCH_TECHNOLOGY_FILLCOLOR "$label" <<technology-collaboration>> as $alias
 !endprocedure
 !unquoted procedure Technology_Interface($alias, $label)
-  archimate $TECHNOLOGY_FILLCOLOR "$label" <<technology-interface>> as $alias
+  archimate $ARCH_TECHNOLOGY_FILLCOLOR "$label" <<technology-interface>> as $alias
 !endprocedure
 !unquoted procedure Technology_Path($alias, $label)
-  archimate $TECHNOLOGY_FILLCOLOR "$label" <<technology-path>> as $alias
+  archimate $ARCH_TECHNOLOGY_FILLCOLOR "$label" <<technology-path>> as $alias
 !endprocedure
 !unquoted procedure Technology_CommunicationNetwork($alias, $label)
-  archimate $TECHNOLOGY_FILLCOLOR "$label" <<technology-communicationnetwork>> as $alias
+  archimate $ARCH_TECHNOLOGY_FILLCOLOR "$label" <<technology-communicationnetwork>> as $alias
 !endprocedure
 !unquoted procedure Technology_Function($alias, $label)
-  archimate $TECHNOLOGY_FILLCOLOR "$label" <<technology-function>> as $alias
+  archimate $ARCH_TECHNOLOGY_FILLCOLOR "$label" <<technology-function>> as $alias
 !endprocedure
 !unquoted procedure Technology_Process($alias, $label)
-  archimate $TECHNOLOGY_FILLCOLOR "$label" <<technology-process>> as $alias
+  archimate $ARCH_TECHNOLOGY_FILLCOLOR "$label" <<technology-process>> as $alias
 !endprocedure
 !unquoted procedure Technology_Interaction($alias, $label)
-  archimate $TECHNOLOGY_FILLCOLOR "$label" <<technology-interaction>> as $alias
+  archimate $ARCH_TECHNOLOGY_FILLCOLOR "$label" <<technology-interaction>> as $alias
 !endprocedure
 !unquoted procedure Technology_Event($alias, $label)
-  archimate $TECHNOLOGY_FILLCOLOR "$label" <<technology-event>> as $alias
+  archimate $ARCH_TECHNOLOGY_FILLCOLOR "$label" <<technology-event>> as $alias
 !endprocedure
 !unquoted procedure Technology_Service($alias, $label)
-  archimate $TECHNOLOGY_FILLCOLOR "$label" <<technology-service>> as $alias
+  archimate $ARCH_TECHNOLOGY_FILLCOLOR "$label" <<technology-service>> as $alias
 !endprocedure
 !unquoted procedure Technology_Artifact($alias, $label)
-  archimate $TECHNOLOGY_FILLCOLOR "$label" <<technology-artifact>> as $alias
+  archimate $ARCH_TECHNOLOGY_FILLCOLOR "$label" <<technology-artifact>> as $alias
 !endprocedure
 
 'Physical Elements
 !unquoted procedure Physical_Equipment($alias, $label)
-  archimate $PHYSICAL_FILLCOLOR "$label" <<technology-equipment>> as $alias
+  archimate $ARCH_PHYSICAL_FILLCOLOR "$label" <<technology-equipment>> as $alias
 !endprocedure
 !unquoted procedure Physical_Facility($alias, $label)
-  archimate $PHYSICAL_FILLCOLOR "$label" <<technology-facility>> as $alias
+  archimate $ARCH_PHYSICAL_FILLCOLOR "$label" <<technology-facility>> as $alias
 !endprocedure
 !unquoted procedure Physical_DistributionNetwork($alias, $label)
-  archimate $PHYSICAL_FILLCOLOR "$label" <<technology-distributionnetwork>> as $alias
+  archimate $ARCH_PHYSICAL_FILLCOLOR "$label" <<technology-distributionnetwork>> as $alias
 !endprocedure
 !unquoted procedure Physical_Material($alias, $label)
-  archimate $PHYSICAL_FILLCOLOR "$label" <<technology-material>> as $alias
+  archimate $ARCH_PHYSICAL_FILLCOLOR "$label" <<technology-material>> as $alias
 !endprocedure
 
 'Motivation Elements
 !unquoted procedure Motivation_Stakeholder($alias, $label)
-  archimate $MOTIVATION_FILLCOLOR "$label" <<motivation-stakeholder>> as $alias
+  archimate $ARCH_MOTIVATION_FILLCOLOR "$label" <<motivation-stakeholder>> as $alias
 !endprocedure
 !unquoted procedure Motivation_Driver($alias, $label)
-  archimate $MOTIVATION_FILLCOLOR "$label" <<motivation-driver>> as $alias
+  archimate $ARCH_MOTIVATION_FILLCOLOR "$label" <<motivation-driver>> as $alias
 !endprocedure
 !unquoted procedure Motivation_Assessment($alias, $label)
-  archimate $MOTIVATION_FILLCOLOR "$label" <<motivation-assessment>> as $alias
+  archimate $ARCH_MOTIVATION_FILLCOLOR "$label" <<motivation-assessment>> as $alias
 !endprocedure
 !unquoted procedure Motivation_Goal($alias, $label)
-  archimate $MOTIVATION_FILLCOLOR "$label" <<motivation-goal>> as $alias
+  archimate $ARCH_MOTIVATION_FILLCOLOR "$label" <<motivation-goal>> as $alias
 !endprocedure
 !unquoted procedure Motivation_Outcome($alias, $label)
-  archimate $MOTIVATION_FILLCOLOR "$label" <<motivation-outcome>> as $alias
+  archimate $ARCH_MOTIVATION_FILLCOLOR "$label" <<motivation-outcome>> as $alias
 !endprocedure
 !unquoted procedure Motivation_Principle($alias, $label)
-  archimate $MOTIVATION_FILLCOLOR "$label" <<motivation-principle>> as $alias
+  archimate $ARCH_MOTIVATION_FILLCOLOR "$label" <<motivation-principle>> as $alias
 !endprocedure
 !unquoted procedure Motivation_Requirement($alias, $label)
-  archimate $MOTIVATION_FILLCOLOR "$label" <<motivation-requirement>> as $alias
+  archimate $ARCH_MOTIVATION_FILLCOLOR "$label" <<motivation-requirement>> as $alias
 !endprocedure
 !unquoted procedure Motivation_Constraint($alias, $label)
-  archimate $MOTIVATION_FILLCOLOR "$label" <<motivation-constraint>> as $alias
+  archimate $ARCH_MOTIVATION_FILLCOLOR "$label" <<motivation-constraint>> as $alias
 !endprocedure
 !unquoted procedure Motivation_Meaning($alias, $label)
-  archimate $MOTIVATION_FILLCOLOR "$label" <<motivation-meaning>> as $alias
+  archimate $ARCH_MOTIVATION_FILLCOLOR "$label" <<motivation-meaning>> as $alias
 !endprocedure
 !unquoted procedure Motivation_Value($alias, $label)
-  archimate $MOTIVATION_FILLCOLOR "$label" <<motivation-value>> as $alias
+  archimate $ARCH_MOTIVATION_FILLCOLOR "$label" <<motivation-value>> as $alias
 !endprocedure
 
 'Implementation Elements
 !unquoted procedure Implementation_WorkPackage($alias, $label)
-  archimate $IMPLEMENTATION_FILLCOLOR "$label" <<implementation-workpackage>> as $alias
+  archimate $ARCH_IMPLEMENTATION_FILLCOLOR "$label" <<implementation-workpackage>> as $alias
 !endprocedure
 !unquoted procedure Implementation_Deliverable($alias, $label)
-  archimate $IMPLEMENTATION_FILLCOLOR "$label" <<implementation-deliverable>> as $alias
+  archimate $ARCH_IMPLEMENTATION_FILLCOLOR "$label" <<implementation-deliverable>> as $alias
 !endprocedure
 !unquoted procedure Implementation_Event($alias, $label)
-  archimate $IMPLEMENTATION_FILLCOLOR "$label" <<implementation-event>> as $alias
+  archimate $ARCH_IMPLEMENTATION_FILLCOLOR "$label" <<implementation-event>> as $alias
 !endprocedure
 !unquoted procedure Implementation_Plateau($alias, $label)
-  archimate $IMPLEMENTATION_FILLCOLOR "$label" <<implementation-plateau>> as $alias
+  archimate $ARCH_IMPLEMENTATION_FILLCOLOR "$label" <<implementation-plateau>> as $alias
 !endprocedure
 !unquoted procedure Implementation_Gap($alias, $label)
-  archimate $IMPLEMENTATION_FILLCOLOR "$label" <<implementation-gap>> as $alias
+  archimate $ARCH_IMPLEMENTATION_FILLCOLOR "$label" <<implementation-gap>> as $alias
 !endprocedure
 
 'Other Elements
 !unquoted procedure Other_Location($alias, $label)
-  archimate $OTHER_FILLCOLOR "$label" <<location>> as $alias
+  archimate $ARCH_OTHER_FILLCOLOR "$label" <<location>> as $alias
 !endprocedure
 !unquoted procedure Other_Grouping($alias, $label)
   archimate #transparent "$label" <<other-grouping>> as $alias
 !endprocedure
 !unquoted procedure Junction_Or($alias, $label)
-  circle $JUNCTIONOR_FILLCOLOR "$label" as $alias
+  circle $ARCH_JUNCTIONOR_FILLCOLOR "$label" as $alias
 !endprocedure
 !unquoted procedure Junction_And($alias, $label)
-  circle $JUNCTIONAND_FILLCOLOR "$label" as $alias
+  circle $ARCH_JUNCTIONAND_FILLCOLOR "$label" as $alias
 !endprocedure
 !unquoted procedure Grouping($alias, $label)
   folder "$label" <<grouping>> as $alias
