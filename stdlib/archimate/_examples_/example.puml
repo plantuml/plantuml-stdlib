@@ -1,6 +1,24 @@
 @startuml
-!include <archimate/Archimate>
-'!include ../Archimate.puml
+
+!global $ARCH_LOCAL = false
+!global $ARCH_DEBUG = true
+
+!if ($ARCH_LOCAL == false)
+    !include <archimate/Archimate>
+    '!theme archimate-alternate from <archimate/themes>
+    '!theme archimate-handwriting from <archimate/themes>
+    '!theme archimate-lowsaturation from <archimate/themes>
+    '!theme archimate-saturated from <archimate/themes>
+    '!theme archimate-standard from <archimate/themes>
+!else
+    ' use these includes for local testing
+    !include ../Archimate.puml
+    '!theme archimate-alternate from ../themes
+    '!theme archimate-handwriting from ../themes
+    '!theme archimate-lowsaturation from ../themes
+    '!theme archimate-saturated from ../themes
+    '!theme archimate-standard from ../themes
+!endif
 
 title Archimate Sample - Internet Browser
 

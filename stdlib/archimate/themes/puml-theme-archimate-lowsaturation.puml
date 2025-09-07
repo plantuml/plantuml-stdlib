@@ -1,21 +1,25 @@
 !$PUML_THEME = "archimate-lowsaturation"
 !$THEME      = "archimate-lowsaturation"
 
-!$DEFAULT_BACKGROUND = "#white"
+!global $ARCH_STRATEGY_FILLCOLOR = "#f9c268"
+!global $ARCH_BUSINESS_FILLCOLOR = "#fcea83"
+!global $ARCH_APPLICATION_FILLCOLOR = "#bfd9f0"
+!global $ARCH_TECHNOLOGY_FILLCOLOR = "#cfde7a"
+!global $ARCH_PHYSICAL_FILLCOLOR = "#PHYSICAL"
+!global $ARCH_MOTIVATION_FILLCOLOR = "#cab5ea"
+!global $ARCH_IMPLEMENTATION_FILLCOLOR = "#f18b8b"
+!global $ARCH_OTHER_FILLCOLOR = "#dfaacb"
+!global $ARCH_JUNCTIONOR_FILLCOLOR = "#WhiteSmoke"
+!global $ARCH_JUNCTIONAND_FILLCOLOR = "#Black"
+!global $ARCH_GROUP_FILLCOLOR = "#ffc73f"
+!global $ARCH_FOLDER_LINECOLOR = "#4f4f4f"
+!global $ARCH_RELATIONSHIP_LINECOLOR = "#Black"
+!global $ARCH_RELATIONSHIP_FONTCOLOR = "#Black"
 
-!$STRATEGY_FILLCOLOR = "#f9c268"
-!$BUSINESS_FILLCOLOR = "#fcea83"
-!$APPLICATION_FILLCOLOR = "#bfd9f0"
-!$TECHNOLOGY_FILLCOLOR = "#cfde7a"
-!$PHYSICAL_FILLCOLOR = "#PHYSICAL"
-!$MOTIVATION_FILLCOLOR = "#cab5ea"
-!$IMPLEMENTATION_FILLCOLOR = "#f18b8b"
-!$OTHER_FILLCOLOR = "#dfaacb"
-!$JUNCTIONOR_FILLCOLOR = "#WhiteSmoke"
-!$JUNCTIONAND_FILLCOLOR = "#Black"
-!$GROUP_FILLCOLOR = "#ffc73f"
-!$FOLDER_LINECOLOR = "#4f4f4f"
-!$RELATIONSHIP_LINECOLOR = "#Black"
-!$RELATIONSHIP_FONTCOLOR = "#Black"
+!global $ARCH_LOCAL ?= false
 
-!include shared_style from <archimate/themes>
+!if ($ARCH_LOCAL == true)
+    !include shared_style.puml
+!else
+    !include <archimate/themes/shared_style>
+!endif
