@@ -1,6 +1,12 @@
 @startuml
-!include <archimate/Archimate>
-'!include ../Archimate.puml
+
+!global $ARCH_LOCAL = true
+
+!if ($ARCH_LOCAL == false)
+    !include <archimate/Archimate>
+!else
+    !include ../Archimate.puml
+!endif
 
 title Archimate Sample - Internet Browser
 

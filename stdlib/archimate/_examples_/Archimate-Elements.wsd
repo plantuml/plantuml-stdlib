@@ -1,18 +1,24 @@
 @startuml
-!include <archimate/Archimate>
-'!theme archimate-alternate from <archimate/themes>
-'!theme archimate-handwriting from <archimate/themes>
-'!theme archimate-lowsaturation from <archimate/themes>
-'!theme archimate-saturated from <archimate/themes>
-'!theme archimate-standard from <archimate/themes>
 
-' use these includes for local testing
-'!include ../Archimate.puml
-'!theme archimate-alternate from ../themes
-'!theme archimate-handwriting from ../themes
-'!theme archimate-lowsaturation from ../themes
-'!theme archimate-saturated from ../themes
-'!theme archimate-standard from ../themes
+!global $ARCH_LOCAL = false
+!global $ARCH_MINIMUM_WIDTH = 120
+
+!if ($ARCH_LOCAL == false)
+    !include <archimate/Archimate>
+    '!theme archimate-alternate from <archimate/themes>
+    '!theme archimate-handwriting from <archimate/themes>
+    '!theme archimate-lowsaturation from <archimate/themes>
+    '!theme archimate-saturated from <archimate/themes>
+    '!theme archimate-standard from <archimate/themes>
+!else
+    ' use these includes for local testing
+    !include ../Archimate.puml
+    '!theme archimate-alternate from ../themes
+    '!theme archimate-handwriting from ../themes
+    '!theme archimate-lowsaturation from ../themes
+    '!theme archimate-saturated from ../themes
+    '!theme archimate-standard from ../themes
+!endif
 
 title Archimate Example - Elements
 
@@ -88,9 +94,11 @@ Implementation_Event(IE_01, "Event")
 Implementation_Plateau(IP_01, "Plateau")
 Implementation_Gap(IG_01, "Gap")
 
-Other_Grouping(a, "Other_Grouping"){
-    Other_Location(OL_02, "Location")
-}
+!if ($ARCH_LOCAL == true)
+    Other_Grouping(a, "Other_Grouping"){
+        Other_Location(OL_02, "Location")
+    }
+!endif
 'Other Elements
 Grouping(G_01, "Grouping") {
     Junction_Or(JO_01, "or")
