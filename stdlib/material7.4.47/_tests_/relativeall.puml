@@ -9,11 +9,17 @@
   !$file = "https://raw.githubusercontent.com/kirchsth/plantuml-stdlib/refs/heads/master/stdlib/material7.4.47/all.json"
 !endif
 
-   ' It is not working at the moment (details unclear).
-
+   ' TODO: local load is not working at the moment (details unclear).
+   ' TODO: load via GitHub branch produces timeout
+ 
     !$lib = %load_json($file)
     !foreach $item in $lib
-        !include ../$item/all.puml
-        ' A -> B : $item
+!if %variable_exists("MDI_TEST_INCLUDE")
+       !$collection = %get_variable_value("MDI_TEST_INCLUDE") + "/"+ $item+ "/all.puml"
+!else
+       !$collection = "https://raw.githubusercontent.com/kirchsth/plantuml-stdlib/refs/heads/master/stdlib/material7.4.47/"+ $item+ "/all.puml"
+!endif
+        !include $collection
+        ' A -> B : $collection
     !endfor
 @enduml
