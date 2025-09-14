@@ -1,8 +1,0 @@
-sprite mdi-test-tube-empty <svg width="48" height="48"><g transform="scale(2)"><path d="M7,2H17V4H16V18A4,4 0 0,1 12,22A4,4 0 0,1 8,18V4H7V2M14,4H10V18A2,2 0 0,0 12,20A2,2 0 0,0 14,18V4Z" /></g></svg>
-
-!define MA_TEST_TUBE_EMPTY(_color)                                 SPRITE_PUT(mdi-test-tube-empty, _color)
-!define MA_TEST_TUBE_EMPTY(_color, _scale)                         SPRITE_PUT(mdi-test-tube-empty, _color, _scale)
-!define MA_TEST_TUBE_EMPTY(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA TEST TUBE EMPTY, mdi-test-tube-empty, _color, _scale)
-!define MA_TEST_TUBE_EMPTY(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA TEST TUBE EMPTY, mdi-test-tube-empty, _color, _scale, _shape)
-!define MA_TEST_TUBE_EMPTY(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA TEST TUBE EMPTY, _label, mdi-test-tube-empty, _color, _scale, _shape)
-skinparam folderBackgroundColor<<MA TEST TUBE EMPTY>> White

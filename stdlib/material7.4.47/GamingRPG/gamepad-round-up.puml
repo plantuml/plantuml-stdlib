@@ -1,8 +1,0 @@
-sprite mdi-gamepad-round-up <svg width="48" height="48"><g transform="scale(2)"><path d="M4,8H8V4A2,2 0 0,1 10,2H14A2,2 0 0,1 16,4V8H20A2,2 0 0,1 22,10V14A2,2 0 0,1 20,16H16V20A2,2 0 0,1 14,22H10A2,2 0 0,1 8,20V16H4A2,2 0 0,1 2,14V10A2,2 0 0,1 4,8M10,4V8H14V4H10Z" /></g></svg>
-
-!define MA_GAMEPAD_ROUND_UP(_color)                                 SPRITE_PUT(mdi-gamepad-round-up, _color)
-!define MA_GAMEPAD_ROUND_UP(_color, _scale)                         SPRITE_PUT(mdi-gamepad-round-up, _color, _scale)
-!define MA_GAMEPAD_ROUND_UP(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA GAMEPAD ROUND UP, mdi-gamepad-round-up, _color, _scale)
-!define MA_GAMEPAD_ROUND_UP(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA GAMEPAD ROUND UP, mdi-gamepad-round-up, _color, _scale, _shape)
-!define MA_GAMEPAD_ROUND_UP(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA GAMEPAD ROUND UP, _label, mdi-gamepad-round-up, _color, _scale, _shape)
-skinparam folderBackgroundColor<<MA GAMEPAD ROUND UP>> White

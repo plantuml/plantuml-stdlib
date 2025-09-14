@@ -1,8 +1,0 @@
-sprite mdi-format-header-equal <svg width="48" height="48"><g transform="scale(2)"><path d="M4,4H6V10H10V4H12V18H10V12H6V18H4V4M14,10V8H21V10H14M14,12H21V14H14V12Z" /></g></svg>
-
-!define MA_FORMAT_HEADER_EQUAL(_color)                                 SPRITE_PUT(mdi-format-header-equal, _color)
-!define MA_FORMAT_HEADER_EQUAL(_color, _scale)                         SPRITE_PUT(mdi-format-header-equal, _color, _scale)
-!define MA_FORMAT_HEADER_EQUAL(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA FORMAT HEADER EQUAL, mdi-format-header-equal, _color, _scale)
-!define MA_FORMAT_HEADER_EQUAL(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA FORMAT HEADER EQUAL, mdi-format-header-equal, _color, _scale, _shape)
-!define MA_FORMAT_HEADER_EQUAL(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA FORMAT HEADER EQUAL, _label, mdi-format-header-equal, _color, _scale, _shape)
-skinparam folderBackgroundColor<<MA FORMAT HEADER EQUAL>> White

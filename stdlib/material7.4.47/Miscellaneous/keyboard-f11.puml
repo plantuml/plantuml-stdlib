@@ -1,8 +1,0 @@
-sprite mdi-keyboard-f11 <svg width="48" height="48"><g transform="scale(2)"><path d="M3 7H9V9H5V11H8V13H5V17H3V7M11 7H15V17H13V9H11V7M17 7H21V17H19V9H17V7Z" /></g></svg>
-
-!define MA_KEYBOARD_F11(_color)                                 SPRITE_PUT(mdi-keyboard-f11, _color)
-!define MA_KEYBOARD_F11(_color, _scale)                         SPRITE_PUT(mdi-keyboard-f11, _color, _scale)
-!define MA_KEYBOARD_F11(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA KEYBOARD F11, mdi-keyboard-f11, _color, _scale)
-!define MA_KEYBOARD_F11(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA KEYBOARD F11, mdi-keyboard-f11, _color, _scale, _shape)
-!define MA_KEYBOARD_F11(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA KEYBOARD F11, _label, mdi-keyboard-f11, _color, _scale, _shape)
-skinparam folderBackgroundColor<<MA KEYBOARD F11>> White

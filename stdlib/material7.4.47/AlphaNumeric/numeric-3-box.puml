@@ -1,8 +1,0 @@
-sprite mdi-numeric-3-box <svg width="48" height="48"><g transform="scale(2)"><path d="M15,10.5A1.5,1.5 0 0,1 13.5,12C14.34,12 15,12.67 15,13.5V15C15,16.11 14.11,17 13,17H9V15H13V13H11V11H13V9H9V7H13C14.11,7 15,7.89 15,9M19,3H5C3.91,3 3,3.9 3,5V19A2,2 0 0,0 5,21H19C20.11,21 21,20.1 21,19V5A2,2 0 0,0 19,3Z" /></g></svg>
-
-!define MA_NUMERIC_3_BOX(_color)                                 SPRITE_PUT(mdi-numeric-3-box, _color)
-!define MA_NUMERIC_3_BOX(_color, _scale)                         SPRITE_PUT(mdi-numeric-3-box, _color, _scale)
-!define MA_NUMERIC_3_BOX(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA NUMERIC 3 BOX, mdi-numeric-3-box, _color, _scale)
-!define MA_NUMERIC_3_BOX(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA NUMERIC 3 BOX, mdi-numeric-3-box, _color, _scale, _shape)
-!define MA_NUMERIC_3_BOX(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA NUMERIC 3 BOX, _label, mdi-numeric-3-box, _color, _scale, _shape)
-skinparam folderBackgroundColor<<MA NUMERIC 3 BOX>> White

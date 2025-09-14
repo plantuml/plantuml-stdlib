@@ -1,8 +1,11 @@
-sprite mdi-beaker <svg width="48" height="48"><g transform="scale(2)"><path d="M3,3V5A2,2 0 0,1 5,7V19A2,2 0 0,0 7,21H17A2,2 0 0,0 19,19V7A2,2 0 0,1 21,5V3H3M7,9H10V10H7V9M7,11H10V12H7V11M10,16H7V15H10V16M12,14H7V13H12V14M12,8H7V7H12V8Z" /></g></svg>
+sprite mdiBeaker <svg width="48" height="48"><g transform="scale(2)"><path d="M3,3V5A2,2 0 0,1 5,7V19A2,2 0 0,0 7,21H17A2,2 0 0,0 19,19V7A2,2 0 0,1 21,5V3H3M7,9H10V10H7V9M7,11H10V12H7V11M10,16H7V15H10V16M12,14H7V13H12V14M12,8H7V7H12V8Z" /></g></svg>
 
-!define MA_BEAKER(_color)                                 SPRITE_PUT(mdi-beaker, _color)
-!define MA_BEAKER(_color, _scale)                         SPRITE_PUT(mdi-beaker, _color, _scale)
-!define MA_BEAKER(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA BEAKER, mdi-beaker, _color, _scale)
-!define MA_BEAKER(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA BEAKER, mdi-beaker, _color, _scale, _shape)
-!define MA_BEAKER(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA BEAKER, _label, mdi-beaker, _color, _scale, _shape)
-skinparam folderBackgroundColor<<MA BEAKER>> White
+!if %function_exists("$MdiSprite")
+  !unquoted function $MdiBeakerImg($color = $MDI_DEFAULT, $scale = "1")
+    !return $MdiSprite(mdiAccountAlert, $color, $scale)
+  !endfunction
+
+  !unquoted function $MdiBeaker($alias, $label=$MDI_DEFAULT, $shape=$MDI_DEFAULT, $color=$MDI_DEFAULT, $scale=1, $stereo=$MDI_DEFAULT)
+    !return $MdiSpriteElement("mdiAccountAlert", $alias, $label, $shape, $color, $scale, $stereo)
+  !endfunction
+!endif

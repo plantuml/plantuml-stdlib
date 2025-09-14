@@ -1,8 +1,0 @@
-sprite mdi-calendar-start <svg width="48" height="48"><g transform="scale(2)"><path d="M2 14H4V17H9V14L13 18L9 22V19H4V22H2V14M19 19V8H5V12H3L3 5C3 3.89 3.89 3 5 3H6V.998H8V3H16V.998H18V3H19C20.1 3 21 3.89 21 5V19C21 20.1 20.1 21 19 21L12.83 21L14.83 19L19 19Z" /></g></svg>
-
-!define MA_CALENDAR_START(_color)                                 SPRITE_PUT(mdi-calendar-start, _color)
-!define MA_CALENDAR_START(_color, _scale)                         SPRITE_PUT(mdi-calendar-start, _color, _scale)
-!define MA_CALENDAR_START(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA CALENDAR START, mdi-calendar-start, _color, _scale)
-!define MA_CALENDAR_START(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA CALENDAR START, mdi-calendar-start, _color, _scale, _shape)
-!define MA_CALENDAR_START(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA CALENDAR START, _label, mdi-calendar-start, _color, _scale, _shape)
-skinparam folderBackgroundColor<<MA CALENDAR START>> White

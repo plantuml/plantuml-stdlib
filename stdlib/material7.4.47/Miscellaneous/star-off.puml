@@ -1,8 +1,0 @@
-sprite mdi-star-off <svg width="48" height="48"><g transform="scale(2)"><path d="M20.8 22.7L17.9 19.8L18.2 21L12 17.3L5.8 21L7.4 14L2 9.2L6.9 8.8L1.1 3L2.4 1.7L22.1 21.4L20.8 22.7M22 9.2L14.8 8.6L12 2L10 6.8L16.9 13.7L22 9.2Z" /></g></svg>
-
-!define MA_STAR_OFF(_color)                                 SPRITE_PUT(mdi-star-off, _color)
-!define MA_STAR_OFF(_color, _scale)                         SPRITE_PUT(mdi-star-off, _color, _scale)
-!define MA_STAR_OFF(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA STAR OFF, mdi-star-off, _color, _scale)
-!define MA_STAR_OFF(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA STAR OFF, mdi-star-off, _color, _scale, _shape)
-!define MA_STAR_OFF(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA STAR OFF, _label, mdi-star-off, _color, _scale, _shape)
-skinparam folderBackgroundColor<<MA STAR OFF>> White

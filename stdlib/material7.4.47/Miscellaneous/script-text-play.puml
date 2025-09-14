@@ -1,8 +1,0 @@
-sprite mdi-script-text-play <svg width="48" height="48"><g transform="scale(2)"><path d="M13.8 22H5C3.3 22 2 20.7 2 19V18H13.1C13 18.3 13 18.7 13 19C13 20.1 13.3 21.1 13.8 22M13.8 16H5V5C5 3.3 6.3 2 8 2H19C20.7 2 22 3.3 22 5V6H20V5C20 4.4 19.6 4 19 4S18 4.4 18 5V13.1C16.2 13.4 14.7 14.5 13.8 16M8 8H15V6H8V8M8 12H14V10H8V12M17 16V22L22 19L17 16Z" /></g></svg>
-
-!define MA_SCRIPT_TEXT_PLAY(_color)                                 SPRITE_PUT(mdi-script-text-play, _color)
-!define MA_SCRIPT_TEXT_PLAY(_color, _scale)                         SPRITE_PUT(mdi-script-text-play, _color, _scale)
-!define MA_SCRIPT_TEXT_PLAY(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA SCRIPT TEXT PLAY, mdi-script-text-play, _color, _scale)
-!define MA_SCRIPT_TEXT_PLAY(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA SCRIPT TEXT PLAY, mdi-script-text-play, _color, _scale, _shape)
-!define MA_SCRIPT_TEXT_PLAY(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA SCRIPT TEXT PLAY, _label, mdi-script-text-play, _color, _scale, _shape)
-skinparam folderBackgroundColor<<MA SCRIPT TEXT PLAY>> White

@@ -1,8 +1,0 @@
-sprite mdi-video-off-outline <svg width="48" height="48"><g transform="scale(2)"><path d="M3.41,1.86L2,3.27L4.73,6H4A1,1 0 0,0 3,7V17A1,1 0 0,0 4,18H16C16.21,18 16.39,17.92 16.55,17.82L19.73,21L21.14,19.59L12.28,10.73L3.41,1.86M5,16V8H6.73L14.73,16H5M15,8V10.61L21,16.61V6.5L17,10.5V7A1,1 0 0,0 16,6H10.39L12.39,8H15Z" /></g></svg>
-
-!define MA_VIDEO_OFF_OUTLINE(_color)                                 SPRITE_PUT(mdi-video-off-outline, _color)
-!define MA_VIDEO_OFF_OUTLINE(_color, _scale)                         SPRITE_PUT(mdi-video-off-outline, _color, _scale)
-!define MA_VIDEO_OFF_OUTLINE(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA VIDEO OFF OUTLINE, mdi-video-off-outline, _color, _scale)
-!define MA_VIDEO_OFF_OUTLINE(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA VIDEO OFF OUTLINE, mdi-video-off-outline, _color, _scale, _shape)
-!define MA_VIDEO_OFF_OUTLINE(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA VIDEO OFF OUTLINE, _label, mdi-video-off-outline, _color, _scale, _shape)
-skinparam folderBackgroundColor<<MA VIDEO OFF OUTLINE>> White

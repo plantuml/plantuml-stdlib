@@ -1,8 +1,0 @@
-sprite mdi-arrow-top-left-thin-circle-outline <svg width="48" height="48"><g transform="scale(2)"><path d="M12 3.97C16.41 3.97 20.03 7.59 20.03 12C20.03 16.41 16.41 20.03 12 20.03C7.59 20.03 3.97 16.41 3.97 12C3.97 7.59 7.59 3.97 12 3.97M12 2C6.46 2 2 6.46 2 12C2 17.54 6.46 22 12 22C17.54 22 22 17.54 22 12C22 6.46 17.54 2 12 2M10.12 11.53L8 13.64V8H13.64L11.53 10.12L16.5 15.1L15.1 16.5" /></g></svg>
-
-!define MA_ARROW_TOP_LEFT_THIN_CIRCLE_OUTLINE(_color)                                 SPRITE_PUT(mdi-arrow-top-left-thin-circle-outline, _color)
-!define MA_ARROW_TOP_LEFT_THIN_CIRCLE_OUTLINE(_color, _scale)                         SPRITE_PUT(mdi-arrow-top-left-thin-circle-outline, _color, _scale)
-!define MA_ARROW_TOP_LEFT_THIN_CIRCLE_OUTLINE(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA ARROW TOP LEFT THIN CIRCLE OUTLINE, mdi-arrow-top-left-thin-circle-outline, _color, _scale)
-!define MA_ARROW_TOP_LEFT_THIN_CIRCLE_OUTLINE(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA ARROW TOP LEFT THIN CIRCLE OUTLINE, mdi-arrow-top-left-thin-circle-outline, _color, _scale, _shape)
-!define MA_ARROW_TOP_LEFT_THIN_CIRCLE_OUTLINE(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA ARROW TOP LEFT THIN CIRCLE OUTLINE, _label, mdi-arrow-top-left-thin-circle-outline, _color, _scale, _shape)
-skinparam folderBackgroundColor<<MA ARROW TOP LEFT THIN CIRCLE OUTLINE>> White

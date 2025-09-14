@@ -1,8 +1,0 @@
-sprite mdi-decimal-comma-decrease <svg width="48" height="48"><g transform="scale(2)"><path d="M5 13V16H4L3 13A1 1 0 0 1 5 13M15 16V14L12 17L15 20V18H21V16M12 11A3 3 0 0 1 6 11V8A3 3 0 0 1 12 8M10 8A1 1 0 0 0 8 8V11A1 1 0 0 0 10 11Z" /></g></svg>
-
-!define MA_DECIMAL_COMMA_DECREASE(_color)                                 SPRITE_PUT(mdi-decimal-comma-decrease, _color)
-!define MA_DECIMAL_COMMA_DECREASE(_color, _scale)                         SPRITE_PUT(mdi-decimal-comma-decrease, _color, _scale)
-!define MA_DECIMAL_COMMA_DECREASE(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA DECIMAL COMMA DECREASE, mdi-decimal-comma-decrease, _color, _scale)
-!define MA_DECIMAL_COMMA_DECREASE(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA DECIMAL COMMA DECREASE, mdi-decimal-comma-decrease, _color, _scale, _shape)
-!define MA_DECIMAL_COMMA_DECREASE(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA DECIMAL COMMA DECREASE, _label, mdi-decimal-comma-decrease, _color, _scale, _shape)
-skinparam folderBackgroundColor<<MA DECIMAL COMMA DECREASE>> White

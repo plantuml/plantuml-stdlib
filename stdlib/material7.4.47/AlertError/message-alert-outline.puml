@@ -1,8 +1,0 @@
-sprite mdi-message-alert-outline <svg width="48" height="48"><g transform="scale(2)"><path d="M13,10H11V6H13V10M13,12H11V14H13V12M22,4V16A2,2 0 0,1 20,18H6L2,22V4A2,2 0 0,1 4,2H20A2,2 0 0,1 22,4M20,4H4V17.2L5.2,16H20V4Z" /></g></svg>
-
-!define MA_MESSAGE_ALERT_OUTLINE(_color)                                 SPRITE_PUT(mdi-message-alert-outline, _color)
-!define MA_MESSAGE_ALERT_OUTLINE(_color, _scale)                         SPRITE_PUT(mdi-message-alert-outline, _color, _scale)
-!define MA_MESSAGE_ALERT_OUTLINE(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA MESSAGE ALERT OUTLINE, mdi-message-alert-outline, _color, _scale)
-!define MA_MESSAGE_ALERT_OUTLINE(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA MESSAGE ALERT OUTLINE, mdi-message-alert-outline, _color, _scale, _shape)
-!define MA_MESSAGE_ALERT_OUTLINE(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA MESSAGE ALERT OUTLINE, _label, mdi-message-alert-outline, _color, _scale, _shape)
-skinparam folderBackgroundColor<<MA MESSAGE ALERT OUTLINE>> White

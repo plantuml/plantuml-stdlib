@@ -1,8 +1,0 @@
-sprite mdi-bag-personal-off <svg width="48" height="48"><g transform="scale(2)"><path d="M20,19.35L2.38,1.73L1.11,3L4.77,6.66C4.27,7.34 4,8.16 4,9V20A2,2 0 0,0 6,22H18C18.56,22 19.08,21.76 19.46,21.35L20.84,22.73L22.11,21.46L20,19.35M9,16V18H8V16H6V15H13.11L14.11,16H9M20,9A4,4 0 0,0 16,5V4A2,2 0 0,0 14,2H10A2,2 0 0,0 8,4V4.8L20,16.8V9M14,5H10V4H14V5Z" /></g></svg>
-
-!define MA_BAG_PERSONAL_OFF(_color)                                 SPRITE_PUT(mdi-bag-personal-off, _color)
-!define MA_BAG_PERSONAL_OFF(_color, _scale)                         SPRITE_PUT(mdi-bag-personal-off, _color, _scale)
-!define MA_BAG_PERSONAL_OFF(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA BAG PERSONAL OFF, mdi-bag-personal-off, _color, _scale)
-!define MA_BAG_PERSONAL_OFF(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA BAG PERSONAL OFF, mdi-bag-personal-off, _color, _scale, _shape)
-!define MA_BAG_PERSONAL_OFF(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA BAG PERSONAL OFF, _label, mdi-bag-personal-off, _color, _scale, _shape)
-skinparam folderBackgroundColor<<MA BAG PERSONAL OFF>> White

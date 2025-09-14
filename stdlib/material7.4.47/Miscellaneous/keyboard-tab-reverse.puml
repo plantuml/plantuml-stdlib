@@ -1,8 +1,0 @@
-sprite mdi-keyboard-tab-reverse <svg width="48" height="48"><g transform="scale(2)"><path d="M4 6H2V18H4M11 6L5 12L11 18L12.41 16.58L8.83 13H23V11H8.83L12.41 7.41L11 6Z" /></g></svg>
-
-!define MA_KEYBOARD_TAB_REVERSE(_color)                                 SPRITE_PUT(mdi-keyboard-tab-reverse, _color)
-!define MA_KEYBOARD_TAB_REVERSE(_color, _scale)                         SPRITE_PUT(mdi-keyboard-tab-reverse, _color, _scale)
-!define MA_KEYBOARD_TAB_REVERSE(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA KEYBOARD TAB REVERSE, mdi-keyboard-tab-reverse, _color, _scale)
-!define MA_KEYBOARD_TAB_REVERSE(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA KEYBOARD TAB REVERSE, mdi-keyboard-tab-reverse, _color, _scale, _shape)
-!define MA_KEYBOARD_TAB_REVERSE(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA KEYBOARD TAB REVERSE, _label, mdi-keyboard-tab-reverse, _color, _scale, _shape)
-skinparam folderBackgroundColor<<MA KEYBOARD TAB REVERSE>> White

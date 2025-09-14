@@ -1,8 +1,0 @@
-sprite mdi-compass-outline <svg width="48" height="48"><g transform="scale(2)"><path d="M7,17L10.2,10.2L17,7L13.8,13.8L7,17M12,11.1A0.9,0.9 0 0,0 11.1,12A0.9,0.9 0 0,0 12,12.9A0.9,0.9 0 0,0 12.9,12A0.9,0.9 0 0,0 12,11.1M12,2A10,10 0 0,1 22,12A10,10 0 0,1 12,22A10,10 0 0,1 2,12A10,10 0 0,1 12,2M12,4A8,8 0 0,0 4,12A8,8 0 0,0 12,20A8,8 0 0,0 20,12A8,8 0 0,0 12,4Z" /></g></svg>
-
-!define MA_COMPASS_OUTLINE(_color)                                 SPRITE_PUT(mdi-compass-outline, _color)
-!define MA_COMPASS_OUTLINE(_color, _scale)                         SPRITE_PUT(mdi-compass-outline, _color, _scale)
-!define MA_COMPASS_OUTLINE(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA COMPASS OUTLINE, mdi-compass-outline, _color, _scale)
-!define MA_COMPASS_OUTLINE(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA COMPASS OUTLINE, mdi-compass-outline, _color, _scale, _shape)
-!define MA_COMPASS_OUTLINE(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA COMPASS OUTLINE, _label, mdi-compass-outline, _color, _scale, _shape)
-skinparam folderBackgroundColor<<MA COMPASS OUTLINE>> White

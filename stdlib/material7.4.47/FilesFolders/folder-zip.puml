@@ -1,8 +1,0 @@
-sprite mdi-folder-zip <svg width="48" height="48"><g transform="scale(2)"><path d="M20 6H12L10 4H4C2.9 4 2 4.9 2 6V18C2 19.1 2.9 20 4 20H20C21.1 20 22 19.1 22 18V8C22 6.9 21.1 6 20 6M18 12H16V14H18V16H16V18H14V16H16V14H14V12H16V10H14V8H16V10H18V12Z" /></g></svg>
-
-!define MA_FOLDER_ZIP(_color)                                 SPRITE_PUT(mdi-folder-zip, _color)
-!define MA_FOLDER_ZIP(_color, _scale)                         SPRITE_PUT(mdi-folder-zip, _color, _scale)
-!define MA_FOLDER_ZIP(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA FOLDER ZIP, mdi-folder-zip, _color, _scale)
-!define MA_FOLDER_ZIP(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA FOLDER ZIP, mdi-folder-zip, _color, _scale, _shape)
-!define MA_FOLDER_ZIP(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA FOLDER ZIP, _label, mdi-folder-zip, _color, _scale, _shape)
-skinparam folderBackgroundColor<<MA FOLDER ZIP>> White

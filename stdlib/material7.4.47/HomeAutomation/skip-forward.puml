@@ -1,8 +1,0 @@
-sprite mdi-skip-forward <svg width="48" height="48"><g transform="scale(2)"><path d="M4,5V19L11,12M18,5V19H20V5M11,5V19L18,12" /></g></svg>
-
-!define MA_SKIP_FORWARD(_color)                                 SPRITE_PUT(mdi-skip-forward, _color)
-!define MA_SKIP_FORWARD(_color, _scale)                         SPRITE_PUT(mdi-skip-forward, _color, _scale)
-!define MA_SKIP_FORWARD(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA SKIP FORWARD, mdi-skip-forward, _color, _scale)
-!define MA_SKIP_FORWARD(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA SKIP FORWARD, mdi-skip-forward, _color, _scale, _shape)
-!define MA_SKIP_FORWARD(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA SKIP FORWARD, _label, mdi-skip-forward, _color, _scale, _shape)
-skinparam folderBackgroundColor<<MA SKIP FORWARD>> White

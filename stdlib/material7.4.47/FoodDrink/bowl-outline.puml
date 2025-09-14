@@ -1,8 +1,0 @@
-sprite mdi-bowl-outline <svg width="48" height="48"><g transform="scale(2)"><path d="M2 12V15C2 18.9 5.1 22 9 22H15C18.9 22 22 18.9 22 15V12H2M4 14H20V15C20 17.8 17.8 20 15 20H9C6.2 20 4 17.8 4 15V14Z" /></g></svg>
-
-!define MA_BOWL_OUTLINE(_color)                                 SPRITE_PUT(mdi-bowl-outline, _color)
-!define MA_BOWL_OUTLINE(_color, _scale)                         SPRITE_PUT(mdi-bowl-outline, _color, _scale)
-!define MA_BOWL_OUTLINE(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA BOWL OUTLINE, mdi-bowl-outline, _color, _scale)
-!define MA_BOWL_OUTLINE(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA BOWL OUTLINE, mdi-bowl-outline, _color, _scale, _shape)
-!define MA_BOWL_OUTLINE(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA BOWL OUTLINE, _label, mdi-bowl-outline, _color, _scale, _shape)
-skinparam folderBackgroundColor<<MA BOWL OUTLINE>> White

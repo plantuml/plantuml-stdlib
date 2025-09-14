@@ -1,8 +1,0 @@
-sprite mdi-star-settings <svg width="48" height="48"><g transform="scale(2)"><path d="M7 22H9V24H7V22M11 24H13V22H11V24M15 24H17V22H15V24M22 9.24L14.81 8.62L12 2L9.19 8.62L2 9.24L7.45 13.97L5.82 21L12 17.27L18.18 21L16.54 13.97L22 9.24Z" /></g></svg>
-
-!define MA_STAR_SETTINGS(_color)                                 SPRITE_PUT(mdi-star-settings, _color)
-!define MA_STAR_SETTINGS(_color, _scale)                         SPRITE_PUT(mdi-star-settings, _color, _scale)
-!define MA_STAR_SETTINGS(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA STAR SETTINGS, mdi-star-settings, _color, _scale)
-!define MA_STAR_SETTINGS(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA STAR SETTINGS, mdi-star-settings, _color, _scale, _shape)
-!define MA_STAR_SETTINGS(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA STAR SETTINGS, _label, mdi-star-settings, _color, _scale, _shape)
-skinparam folderBackgroundColor<<MA STAR SETTINGS>> White

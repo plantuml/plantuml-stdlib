@@ -1,8 +1,0 @@
-sprite mdi-image-outline <svg width="48" height="48"><g transform="scale(2)"><path d="M19,19H5V5H19M19,3H5A2,2 0 0,0 3,5V19A2,2 0 0,0 5,21H19A2,2 0 0,0 21,19V5A2,2 0 0,0 19,3M13.96,12.29L11.21,15.83L9.25,13.47L6.5,17H17.5L13.96,12.29Z" /></g></svg>
-
-!define MA_IMAGE_OUTLINE(_color)                                 SPRITE_PUT(mdi-image-outline, _color)
-!define MA_IMAGE_OUTLINE(_color, _scale)                         SPRITE_PUT(mdi-image-outline, _color, _scale)
-!define MA_IMAGE_OUTLINE(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA IMAGE OUTLINE, mdi-image-outline, _color, _scale)
-!define MA_IMAGE_OUTLINE(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA IMAGE OUTLINE, mdi-image-outline, _color, _scale, _shape)
-!define MA_IMAGE_OUTLINE(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA IMAGE OUTLINE, _label, mdi-image-outline, _color, _scale, _shape)
-skinparam folderBackgroundColor<<MA IMAGE OUTLINE>> White

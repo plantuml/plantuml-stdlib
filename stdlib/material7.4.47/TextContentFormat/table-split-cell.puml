@@ -1,8 +1,0 @@
-sprite mdi-table-split-cell <svg width="48" height="48"><g transform="scale(2)"><path d="M19 14H21V20H3V14H5V18H19V14M3 4V10H5V6H19V10H21V4H3M11 11V13H8V15L5 12L8 9V11H11M16 11V9L19 12L16 15V13H13V11H16Z" /></g></svg>
-
-!define MA_TABLE_SPLIT_CELL(_color)                                 SPRITE_PUT(mdi-table-split-cell, _color)
-!define MA_TABLE_SPLIT_CELL(_color, _scale)                         SPRITE_PUT(mdi-table-split-cell, _color, _scale)
-!define MA_TABLE_SPLIT_CELL(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA TABLE SPLIT CELL, mdi-table-split-cell, _color, _scale)
-!define MA_TABLE_SPLIT_CELL(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA TABLE SPLIT CELL, mdi-table-split-cell, _color, _scale, _shape)
-!define MA_TABLE_SPLIT_CELL(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA TABLE SPLIT CELL, _label, mdi-table-split-cell, _color, _scale, _shape)
-skinparam folderBackgroundColor<<MA TABLE SPLIT CELL>> White

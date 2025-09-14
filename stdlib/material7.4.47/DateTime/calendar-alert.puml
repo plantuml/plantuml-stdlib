@@ -1,8 +1,0 @@
-sprite mdi-calendar-alert <svg width="48" height="48"><g transform="scale(2)"><path d="M6 1V3H5C3.89 3 3 3.89 3 5V19C3 20.11 3.9 21 5 21H19C20.11 21 21 20.11 21 19V5C21 3.9 20.11 3 19 3H18V1H16V3H8V1H6M5 8H19V19H5V8M11 9V14H13V9H11M11 16V18H13V16H11Z" /></g></svg>
-
-!define MA_CALENDAR_ALERT(_color)                                 SPRITE_PUT(mdi-calendar-alert, _color)
-!define MA_CALENDAR_ALERT(_color, _scale)                         SPRITE_PUT(mdi-calendar-alert, _color, _scale)
-!define MA_CALENDAR_ALERT(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA CALENDAR ALERT, mdi-calendar-alert, _color, _scale)
-!define MA_CALENDAR_ALERT(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA CALENDAR ALERT, mdi-calendar-alert, _color, _scale, _shape)
-!define MA_CALENDAR_ALERT(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA CALENDAR ALERT, _label, mdi-calendar-alert, _color, _scale, _shape)
-skinparam folderBackgroundColor<<MA CALENDAR ALERT>> White

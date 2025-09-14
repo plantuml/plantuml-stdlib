@@ -1,8 +1,0 @@
-sprite mdi-video-plus <svg width="48" height="48"><g transform="scale(2)"><path d="M17,10.5V7A1,1 0 0,0 16,6H4A1,1 0 0,0 3,7V17A1,1 0 0,0 4,18H16A1,1 0 0,0 17,17V13.5L21,17.5V6.5L17,10.5M14,13H11V16H9V13H6V11H9V8H11V11H14V13Z" /></g></svg>
-
-!define MA_VIDEO_PLUS(_color)                                 SPRITE_PUT(mdi-video-plus, _color)
-!define MA_VIDEO_PLUS(_color, _scale)                         SPRITE_PUT(mdi-video-plus, _color, _scale)
-!define MA_VIDEO_PLUS(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA VIDEO PLUS, mdi-video-plus, _color, _scale)
-!define MA_VIDEO_PLUS(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA VIDEO PLUS, mdi-video-plus, _color, _scale, _shape)
-!define MA_VIDEO_PLUS(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA VIDEO PLUS, _label, mdi-video-plus, _color, _scale, _shape)
-skinparam folderBackgroundColor<<MA VIDEO PLUS>> White

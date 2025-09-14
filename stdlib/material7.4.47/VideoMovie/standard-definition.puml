@@ -1,8 +1,0 @@
-sprite mdi-standard-definition <svg width="48" height="48"><g transform="scale(2)"><path d="M13,7H16A3,3 0 0,1 19,10V14A3,3 0 0,1 16,17H13V7M16,15A1,1 0 0,0 17,14V10A1,1 0 0,0 16,9H15V15H16M7,7H11V9H7V11H9A2,2 0 0,1 11,13V15A2,2 0 0,1 9,17H5V15H9V13H7A2,2 0 0,1 5,11V9A2,2 0 0,1 7,7Z" /></g></svg>
-
-!define MA_STANDARD_DEFINITION(_color)                                 SPRITE_PUT(mdi-standard-definition, _color)
-!define MA_STANDARD_DEFINITION(_color, _scale)                         SPRITE_PUT(mdi-standard-definition, _color, _scale)
-!define MA_STANDARD_DEFINITION(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA STANDARD DEFINITION, mdi-standard-definition, _color, _scale)
-!define MA_STANDARD_DEFINITION(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA STANDARD DEFINITION, mdi-standard-definition, _color, _scale, _shape)
-!define MA_STANDARD_DEFINITION(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA STANDARD DEFINITION, _label, mdi-standard-definition, _color, _scale, _shape)
-skinparam folderBackgroundColor<<MA STANDARD DEFINITION>> White

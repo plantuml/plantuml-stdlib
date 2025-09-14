@@ -1,8 +1,0 @@
-sprite mdi-navigation-variant <svg width="48" height="48"><g transform="scale(2)"><path d="M21 3L3 10.53V11.5L9.84 14.16L12.5 21H13.46L21 3Z" /></g></svg>
-
-!define MA_NAVIGATION_VARIANT(_color)                                 SPRITE_PUT(mdi-navigation-variant, _color)
-!define MA_NAVIGATION_VARIANT(_color, _scale)                         SPRITE_PUT(mdi-navigation-variant, _color, _scale)
-!define MA_NAVIGATION_VARIANT(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA NAVIGATION VARIANT, mdi-navigation-variant, _color, _scale)
-!define MA_NAVIGATION_VARIANT(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA NAVIGATION VARIANT, mdi-navigation-variant, _color, _scale, _shape)
-!define MA_NAVIGATION_VARIANT(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA NAVIGATION VARIANT, _label, mdi-navigation-variant, _color, _scale, _shape)
-skinparam folderBackgroundColor<<MA NAVIGATION VARIANT>> White

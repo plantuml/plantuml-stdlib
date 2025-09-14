@@ -1,8 +1,0 @@
-sprite mdi-alpha-w-circle <svg width="48" height="48"><g transform="scale(2)"><path d="M9,17H15A2,2 0 0,0 17,15V7H15V15H13V8H11V15H9V7H7V15A2,2 0 0,0 9,17M12,2A10,10 0 0,1 22,12A10,10 0 0,1 12,22A10,10 0 0,1 2,12A10,10 0 0,1 12,2Z" /></g></svg>
-
-!define MA_ALPHA_W_CIRCLE(_color)                                 SPRITE_PUT(mdi-alpha-w-circle, _color)
-!define MA_ALPHA_W_CIRCLE(_color, _scale)                         SPRITE_PUT(mdi-alpha-w-circle, _color, _scale)
-!define MA_ALPHA_W_CIRCLE(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA ALPHA W CIRCLE, mdi-alpha-w-circle, _color, _scale)
-!define MA_ALPHA_W_CIRCLE(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA ALPHA W CIRCLE, mdi-alpha-w-circle, _color, _scale, _shape)
-!define MA_ALPHA_W_CIRCLE(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA ALPHA W CIRCLE, _label, mdi-alpha-w-circle, _color, _scale, _shape)
-skinparam folderBackgroundColor<<MA ALPHA W CIRCLE>> White

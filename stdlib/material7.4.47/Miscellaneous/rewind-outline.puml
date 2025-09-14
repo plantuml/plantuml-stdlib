@@ -1,8 +1,0 @@
-sprite mdi-rewind-outline <svg width="48" height="48"><g transform="scale(2)"><path d="M10,9.9L7,12L10,14.1V9.9M19,9.9L16,12L19,14.1V9.9M12,6V18L3.5,12L12,6M21,6V18L12.5,12L21,6Z" /></g></svg>
-
-!define MA_REWIND_OUTLINE(_color)                                 SPRITE_PUT(mdi-rewind-outline, _color)
-!define MA_REWIND_OUTLINE(_color, _scale)                         SPRITE_PUT(mdi-rewind-outline, _color, _scale)
-!define MA_REWIND_OUTLINE(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA REWIND OUTLINE, mdi-rewind-outline, _color, _scale)
-!define MA_REWIND_OUTLINE(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA REWIND OUTLINE, mdi-rewind-outline, _color, _scale, _shape)
-!define MA_REWIND_OUTLINE(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA REWIND OUTLINE, _label, mdi-rewind-outline, _color, _scale, _shape)
-skinparam folderBackgroundColor<<MA REWIND OUTLINE>> White

@@ -1,8 +1,0 @@
-sprite mdi-format-horizontal-align-center <svg width="48" height="48"><g transform="scale(2)"><path d="M19,16V13H23V11H19V8L15,12L19,16M5,8V11H1V13H5V16L9,12L5,8M11,20H13V4H11V20Z" /></g></svg>
-
-!define MA_FORMAT_HORIZONTAL_ALIGN_CENTER(_color)                                 SPRITE_PUT(mdi-format-horizontal-align-center, _color)
-!define MA_FORMAT_HORIZONTAL_ALIGN_CENTER(_color, _scale)                         SPRITE_PUT(mdi-format-horizontal-align-center, _color, _scale)
-!define MA_FORMAT_HORIZONTAL_ALIGN_CENTER(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA FORMAT HORIZONTAL ALIGN CENTER, mdi-format-horizontal-align-center, _color, _scale)
-!define MA_FORMAT_HORIZONTAL_ALIGN_CENTER(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA FORMAT HORIZONTAL ALIGN CENTER, mdi-format-horizontal-align-center, _color, _scale, _shape)
-!define MA_FORMAT_HORIZONTAL_ALIGN_CENTER(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA FORMAT HORIZONTAL ALIGN CENTER, _label, mdi-format-horizontal-align-center, _color, _scale, _shape)
-skinparam folderBackgroundColor<<MA FORMAT HORIZONTAL ALIGN CENTER>> White

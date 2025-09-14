@@ -1,8 +1,0 @@
-sprite mdi-content-duplicate <svg width="48" height="48"><g transform="scale(2)"><path d="M11,17H4A2,2 0 0,1 2,15V3A2,2 0 0,1 4,1H16V3H4V15H11V13L15,16L11,19V17M19,21V7H8V13H6V7A2,2 0 0,1 8,5H19A2,2 0 0,1 21,7V21A2,2 0 0,1 19,23H8A2,2 0 0,1 6,21V19H8V21H19Z" /></g></svg>
-
-!define MA_CONTENT_DUPLICATE(_color)                                 SPRITE_PUT(mdi-content-duplicate, _color)
-!define MA_CONTENT_DUPLICATE(_color, _scale)                         SPRITE_PUT(mdi-content-duplicate, _color, _scale)
-!define MA_CONTENT_DUPLICATE(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA CONTENT DUPLICATE, mdi-content-duplicate, _color, _scale)
-!define MA_CONTENT_DUPLICATE(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA CONTENT DUPLICATE, mdi-content-duplicate, _color, _scale, _shape)
-!define MA_CONTENT_DUPLICATE(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA CONTENT DUPLICATE, _label, mdi-content-duplicate, _color, _scale, _shape)
-skinparam folderBackgroundColor<<MA CONTENT DUPLICATE>> White

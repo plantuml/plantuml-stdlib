@@ -1,8 +1,0 @@
-sprite mdi-movie-off <svg width="48" height="48"><g transform="scale(2)"><path d="M22.11 21.46L20.84 22.73L18.11 20H4C2.9 20 2 19.11 2 18V6C2 5.42 2.25 4.9 2.65 4.54L1.11 3L2.39 1.73L22.11 21.46M21.88 18.68C21.96 18.47 22 18.24 22 18V4H18L20 8H17L15 4H13L15 8H12L10 4H8L8.8 5.6L21.88 18.68Z" /></g></svg>
-
-!define MA_MOVIE_OFF(_color)                                 SPRITE_PUT(mdi-movie-off, _color)
-!define MA_MOVIE_OFF(_color, _scale)                         SPRITE_PUT(mdi-movie-off, _color, _scale)
-!define MA_MOVIE_OFF(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA MOVIE OFF, mdi-movie-off, _color, _scale)
-!define MA_MOVIE_OFF(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA MOVIE OFF, mdi-movie-off, _color, _scale, _shape)
-!define MA_MOVIE_OFF(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA MOVIE OFF, _label, mdi-movie-off, _color, _scale, _shape)
-skinparam folderBackgroundColor<<MA MOVIE OFF>> White

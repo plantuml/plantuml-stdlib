@@ -1,8 +1,0 @@
-sprite mdi-sawtooth-wave <svg width="48" height="48"><g transform="scale(2)"><path d="M11 22V6.83L2 16V13.17L13 2V17.17L22 8V10.83L11 22Z" /></g></svg>
-
-!define MA_SAWTOOTH_WAVE(_color)                                 SPRITE_PUT(mdi-sawtooth-wave, _color)
-!define MA_SAWTOOTH_WAVE(_color, _scale)                         SPRITE_PUT(mdi-sawtooth-wave, _color, _scale)
-!define MA_SAWTOOTH_WAVE(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA SAWTOOTH WAVE, mdi-sawtooth-wave, _color, _scale)
-!define MA_SAWTOOTH_WAVE(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA SAWTOOTH WAVE, mdi-sawtooth-wave, _color, _scale, _shape)
-!define MA_SAWTOOTH_WAVE(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA SAWTOOTH WAVE, _label, mdi-sawtooth-wave, _color, _scale, _shape)
-skinparam folderBackgroundColor<<MA SAWTOOTH WAVE>> White

@@ -1,8 +1,0 @@
-sprite mdi-triangle-wave <svg width="48" height="48"><g transform="scale(2)"><path d="M22 12L17 22L7.1 6.04L4.24 12H2L7 2L16.9 17.96L19.76 12H22Z" /></g></svg>
-
-!define MA_TRIANGLE_WAVE(_color)                                 SPRITE_PUT(mdi-triangle-wave, _color)
-!define MA_TRIANGLE_WAVE(_color, _scale)                         SPRITE_PUT(mdi-triangle-wave, _color, _scale)
-!define MA_TRIANGLE_WAVE(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA TRIANGLE WAVE, mdi-triangle-wave, _color, _scale)
-!define MA_TRIANGLE_WAVE(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA TRIANGLE WAVE, mdi-triangle-wave, _color, _scale, _shape)
-!define MA_TRIANGLE_WAVE(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA TRIANGLE WAVE, _label, mdi-triangle-wave, _color, _scale, _shape)
-skinparam folderBackgroundColor<<MA TRIANGLE WAVE>> White

@@ -1,8 +1,0 @@
-sprite mdi-relation-one-or-many-to-one <svg width="48" height="48"><g transform="scale(2)"><path d="M22 15V17H19V19H17V17H11V9H7V11H5V9L3 11H2V5H3L5 7V5H7V7H13V15H17V13H19V15Z" /></g></svg>
-
-!define MA_RELATION_ONE_OR_MANY_TO_ONE(_color)                                 SPRITE_PUT(mdi-relation-one-or-many-to-one, _color)
-!define MA_RELATION_ONE_OR_MANY_TO_ONE(_color, _scale)                         SPRITE_PUT(mdi-relation-one-or-many-to-one, _color, _scale)
-!define MA_RELATION_ONE_OR_MANY_TO_ONE(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA RELATION ONE OR MANY TO ONE, mdi-relation-one-or-many-to-one, _color, _scale)
-!define MA_RELATION_ONE_OR_MANY_TO_ONE(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA RELATION ONE OR MANY TO ONE, mdi-relation-one-or-many-to-one, _color, _scale, _shape)
-!define MA_RELATION_ONE_OR_MANY_TO_ONE(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA RELATION ONE OR MANY TO ONE, _label, mdi-relation-one-or-many-to-one, _color, _scale, _shape)
-skinparam folderBackgroundColor<<MA RELATION ONE OR MANY TO ONE>> White

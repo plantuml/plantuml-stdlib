@@ -1,8 +1,0 @@
-sprite mdi-playlist-music <svg width="48" height="48"><g transform="scale(2)"><path d="M15,6H3V8H15V6M15,10H3V12H15V10M3,16H11V14H3V16M17,6V14.18C16.69,14.07 16.35,14 16,14A3,3 0 0,0 13,17A3,3 0 0,0 16,20A3,3 0 0,0 19,17V8H22V6H17Z" /></g></svg>
-
-!define MA_PLAYLIST_MUSIC(_color)                                 SPRITE_PUT(mdi-playlist-music, _color)
-!define MA_PLAYLIST_MUSIC(_color, _scale)                         SPRITE_PUT(mdi-playlist-music, _color, _scale)
-!define MA_PLAYLIST_MUSIC(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA PLAYLIST MUSIC, mdi-playlist-music, _color, _scale)
-!define MA_PLAYLIST_MUSIC(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA PLAYLIST MUSIC, mdi-playlist-music, _color, _scale, _shape)
-!define MA_PLAYLIST_MUSIC(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA PLAYLIST MUSIC, _label, mdi-playlist-music, _color, _scale, _shape)
-skinparam folderBackgroundColor<<MA PLAYLIST MUSIC>> White

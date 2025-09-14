@@ -1,8 +1,0 @@
-sprite mdi-view-column <svg width="48" height="48"><g transform="scale(2)"><path d="M16,5V18H21V5M4,18H9V5H4M10,18H15V5H10V18Z" /></g></svg>
-
-!define MA_VIEW_COLUMN(_color)                                 SPRITE_PUT(mdi-view-column, _color)
-!define MA_VIEW_COLUMN(_color, _scale)                         SPRITE_PUT(mdi-view-column, _color, _scale)
-!define MA_VIEW_COLUMN(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA VIEW COLUMN, mdi-view-column, _color, _scale)
-!define MA_VIEW_COLUMN(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA VIEW COLUMN, mdi-view-column, _color, _scale, _shape)
-!define MA_VIEW_COLUMN(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA VIEW COLUMN, _label, mdi-view-column, _color, _scale, _shape)
-skinparam folderBackgroundColor<<MA VIEW COLUMN>> White

@@ -1,8 +1,0 @@
-sprite mdi-bank-transfer-in <svg width="48" height="48"><g transform="scale(2)"><path d="M2,15V12H5V10L9,13.5L5,17V15H2M22,8.7V10H10V8.7L16,5L22,8.7M10,17H22V19H10V17M15,11H17V16H15V11M11,11H13V16H11V11M19,11H21V16H19V11Z" /></g></svg>
-
-!define MA_BANK_TRANSFER_IN(_color)                                 SPRITE_PUT(mdi-bank-transfer-in, _color)
-!define MA_BANK_TRANSFER_IN(_color, _scale)                         SPRITE_PUT(mdi-bank-transfer-in, _color, _scale)
-!define MA_BANK_TRANSFER_IN(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA BANK TRANSFER IN, mdi-bank-transfer-in, _color, _scale)
-!define MA_BANK_TRANSFER_IN(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA BANK TRANSFER IN, mdi-bank-transfer-in, _color, _scale, _shape)
-!define MA_BANK_TRANSFER_IN(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA BANK TRANSFER IN, _label, mdi-bank-transfer-in, _color, _scale, _shape)
-skinparam folderBackgroundColor<<MA BANK TRANSFER IN>> White

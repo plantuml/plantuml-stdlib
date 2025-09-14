@@ -1,8 +1,0 @@
-sprite mdi-fireplace-off <svg width="48" height="48"><g transform="scale(2)"><path d="M22,22H2V20H22V22M22,6H2V3H22V6M20,7V19H17V11C17,11 14.5,10 12,10C9.5,10 7,11 7,11V19H4V7H20Z" /></g></svg>
-
-!define MA_FIREPLACE_OFF(_color)                                 SPRITE_PUT(mdi-fireplace-off, _color)
-!define MA_FIREPLACE_OFF(_color, _scale)                         SPRITE_PUT(mdi-fireplace-off, _color, _scale)
-!define MA_FIREPLACE_OFF(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA FIREPLACE OFF, mdi-fireplace-off, _color, _scale)
-!define MA_FIREPLACE_OFF(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA FIREPLACE OFF, mdi-fireplace-off, _color, _scale, _shape)
-!define MA_FIREPLACE_OFF(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA FIREPLACE OFF, _label, mdi-fireplace-off, _color, _scale, _shape)
-skinparam folderBackgroundColor<<MA FIREPLACE OFF>> White

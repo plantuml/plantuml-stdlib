@@ -1,8 +1,0 @@
-sprite mdi-file-clock <svg width="48" height="48"><g transform="scale(2)"><path d="M4 2C2.89 2 2 2.89 2 4V20A2 2 0 0 0 4 22H12.41A7 7 0 0 0 16 23A7 7 0 0 0 23 16A7 7 0 0 0 18 9.3V8L12 2H4M11 3.5L16.5 9H11V3.5M16 11A5 5 0 0 1 21 16A5 5 0 0 1 16 21A5 5 0 0 1 11 16A5 5 0 0 1 16 11M15 12V17L18.61 19.16L19.36 17.94L16.5 16.25V12H15Z" /></g></svg>
-
-!define MA_FILE_CLOCK(_color)                                 SPRITE_PUT(mdi-file-clock, _color)
-!define MA_FILE_CLOCK(_color, _scale)                         SPRITE_PUT(mdi-file-clock, _color, _scale)
-!define MA_FILE_CLOCK(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA FILE CLOCK, mdi-file-clock, _color, _scale)
-!define MA_FILE_CLOCK(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA FILE CLOCK, mdi-file-clock, _color, _scale, _shape)
-!define MA_FILE_CLOCK(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA FILE CLOCK, _label, mdi-file-clock, _color, _scale, _shape)
-skinparam folderBackgroundColor<<MA FILE CLOCK>> White

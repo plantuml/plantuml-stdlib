@@ -1,8 +1,0 @@
-sprite mdi-vector-polyline <svg width="48" height="48"><g transform="scale(2)"><path d="M2 3V9H4.95L6.95 15H6V21H12V16.41L17.41 11H22V5H16V9.57L10.59 15H9.06L7.06 9H8V3M4 5H6V7H4M18 7H20V9H18M8 17H10V19H8Z" /></g></svg>
-
-!define MA_VECTOR_POLYLINE(_color)                                 SPRITE_PUT(mdi-vector-polyline, _color)
-!define MA_VECTOR_POLYLINE(_color, _scale)                         SPRITE_PUT(mdi-vector-polyline, _color, _scale)
-!define MA_VECTOR_POLYLINE(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA VECTOR POLYLINE, mdi-vector-polyline, _color, _scale)
-!define MA_VECTOR_POLYLINE(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA VECTOR POLYLINE, mdi-vector-polyline, _color, _scale, _shape)
-!define MA_VECTOR_POLYLINE(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA VECTOR POLYLINE, _label, mdi-vector-polyline, _color, _scale, _shape)
-skinparam folderBackgroundColor<<MA VECTOR POLYLINE>> White

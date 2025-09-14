@@ -1,8 +1,0 @@
-sprite mdi-train-car-flatbed <svg width="48" height="48"><g transform="scale(2)"><path d="M23 15V17H22C22 18.11 21.11 19 20 19S18 18.11 18 17H6C6 18.11 5.11 19 4 19S2 18.11 2 17H1V15H23Z" /></g></svg>
-
-!define MA_TRAIN_CAR_FLATBED(_color)                                 SPRITE_PUT(mdi-train-car-flatbed, _color)
-!define MA_TRAIN_CAR_FLATBED(_color, _scale)                         SPRITE_PUT(mdi-train-car-flatbed, _color, _scale)
-!define MA_TRAIN_CAR_FLATBED(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA TRAIN CAR FLATBED, mdi-train-car-flatbed, _color, _scale)
-!define MA_TRAIN_CAR_FLATBED(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA TRAIN CAR FLATBED, mdi-train-car-flatbed, _color, _scale, _shape)
-!define MA_TRAIN_CAR_FLATBED(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA TRAIN CAR FLATBED, _label, mdi-train-car-flatbed, _color, _scale, _shape)
-skinparam folderBackgroundColor<<MA TRAIN CAR FLATBED>> White

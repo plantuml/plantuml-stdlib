@@ -1,8 +1,11 @@
-sprite mdi-multiplication <svg width="48" height="48"><g transform="scale(2)"><path d="M11,3H13V10.27L19.29,6.64L20.29,8.37L14,12L20.3,15.64L19.3,17.37L13,13.72V21H11V13.73L4.69,17.36L3.69,15.63L10,12L3.72,8.36L4.72,6.63L11,10.26V3Z" /></g></svg>
+sprite mdiMultiplication <svg width="48" height="48"><g transform="scale(2)"><path d="M11,3H13V10.27L19.29,6.64L20.29,8.37L14,12L20.3,15.64L19.3,17.37L13,13.72V21H11V13.73L4.69,17.36L3.69,15.63L10,12L3.72,8.36L4.72,6.63L11,10.26V3Z" /></g></svg>
 
-!define MA_MULTIPLICATION(_color)                                 SPRITE_PUT(mdi-multiplication, _color)
-!define MA_MULTIPLICATION(_color, _scale)                         SPRITE_PUT(mdi-multiplication, _color, _scale)
-!define MA_MULTIPLICATION(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA MULTIPLICATION, mdi-multiplication, _color, _scale)
-!define MA_MULTIPLICATION(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA MULTIPLICATION, mdi-multiplication, _color, _scale, _shape)
-!define MA_MULTIPLICATION(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA MULTIPLICATION, _label, mdi-multiplication, _color, _scale, _shape)
-skinparam folderBackgroundColor<<MA MULTIPLICATION>> White
+!if %function_exists("$MdiSprite")
+  !unquoted function $MdiMultiplicationImg($color = $MDI_DEFAULT, $scale = "1")
+    !return $MdiSprite(mdiAccountAlert, $color, $scale)
+  !endfunction
+
+  !unquoted function $MdiMultiplication($alias, $label=$MDI_DEFAULT, $shape=$MDI_DEFAULT, $color=$MDI_DEFAULT, $scale=1, $stereo=$MDI_DEFAULT)
+    !return $MdiSpriteElement("mdiAccountAlert", $alias, $label, $shape, $color, $scale, $stereo)
+  !endfunction
+!endif

@@ -1,8 +1,0 @@
-sprite mdi-google-hangouts <svg width="48" height="48"><g transform="scale(2)"><path d="M15,11L14,13H12.5L13.5,11H12V8H15M11,11L10,13H8.5L9.5,11H8V8H11M11.5,2A8.5,8.5 0 0,0 3,10.5A8.5,8.5 0 0,0 11.5,19H12V22.5C16.86,20.15 20,15 20,10.5C20,5.8 16.19,2 11.5,2Z" /></g></svg>
-
-!define MA_GOOGLE_HANGOUTS(_color)                                 SPRITE_PUT(mdi-google-hangouts, _color)
-!define MA_GOOGLE_HANGOUTS(_color, _scale)                         SPRITE_PUT(mdi-google-hangouts, _color, _scale)
-!define MA_GOOGLE_HANGOUTS(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA GOOGLE HANGOUTS, mdi-google-hangouts, _color, _scale)
-!define MA_GOOGLE_HANGOUTS(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA GOOGLE HANGOUTS, mdi-google-hangouts, _color, _scale, _shape)
-!define MA_GOOGLE_HANGOUTS(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA GOOGLE HANGOUTS, _label, mdi-google-hangouts, _color, _scale, _shape)
-skinparam folderBackgroundColor<<MA GOOGLE HANGOUTS>> White

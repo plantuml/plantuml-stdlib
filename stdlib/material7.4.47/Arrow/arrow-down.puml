@@ -1,8 +1,0 @@
-sprite mdi-arrow-down <svg width="48" height="48"><g transform="scale(2)"><path d="M11,4H13V16L18.5,10.5L19.92,11.92L12,19.84L4.08,11.92L5.5,10.5L11,16V4Z" /></g></svg>
-
-!define MA_ARROW_DOWN(_color)                                 SPRITE_PUT(mdi-arrow-down, _color)
-!define MA_ARROW_DOWN(_color, _scale)                         SPRITE_PUT(mdi-arrow-down, _color, _scale)
-!define MA_ARROW_DOWN(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA ARROW DOWN, mdi-arrow-down, _color, _scale)
-!define MA_ARROW_DOWN(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA ARROW DOWN, mdi-arrow-down, _color, _scale, _shape)
-!define MA_ARROW_DOWN(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA ARROW DOWN, _label, mdi-arrow-down, _color, _scale, _shape)
-skinparam folderBackgroundColor<<MA ARROW DOWN>> White

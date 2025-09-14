@@ -1,8 +1,0 @@
-sprite mdi-chat-alert <svg width="48" height="48"><g transform="scale(2)"><path d="M12,3C17.5,3 22,6.58 22,11C22,15.42 17.5,19 12,19C10.76,19 9.57,18.82 8.47,18.5C5.55,21 2,21 2,21C4.33,18.67 4.7,17.1 4.75,16.5C3.05,15.07 2,13.13 2,11C2,6.58 6.5,3 12,3M11,14V16H13V14H11M11,12H13V6H11V12Z" /></g></svg>
-
-!define MA_CHAT_ALERT(_color)                                 SPRITE_PUT(mdi-chat-alert, _color)
-!define MA_CHAT_ALERT(_color, _scale)                         SPRITE_PUT(mdi-chat-alert, _color, _scale)
-!define MA_CHAT_ALERT(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA CHAT ALERT, mdi-chat-alert, _color, _scale)
-!define MA_CHAT_ALERT(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA CHAT ALERT, mdi-chat-alert, _color, _scale, _shape)
-!define MA_CHAT_ALERT(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA CHAT ALERT, _label, mdi-chat-alert, _color, _scale, _shape)
-skinparam folderBackgroundColor<<MA CHAT ALERT>> White

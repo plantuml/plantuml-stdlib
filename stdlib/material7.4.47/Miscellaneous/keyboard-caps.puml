@@ -1,8 +1,0 @@
-sprite mdi-keyboard-caps <svg width="48" height="48"><g transform="scale(2)"><path d="M6,18H18V16H6M12,8.41L16.59,13L18,11.58L12,5.58L6,11.58L7.41,13L12,8.41Z" /></g></svg>
-
-!define MA_KEYBOARD_CAPS(_color)                                 SPRITE_PUT(mdi-keyboard-caps, _color)
-!define MA_KEYBOARD_CAPS(_color, _scale)                         SPRITE_PUT(mdi-keyboard-caps, _color, _scale)
-!define MA_KEYBOARD_CAPS(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA KEYBOARD CAPS, mdi-keyboard-caps, _color, _scale)
-!define MA_KEYBOARD_CAPS(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA KEYBOARD CAPS, mdi-keyboard-caps, _color, _scale, _shape)
-!define MA_KEYBOARD_CAPS(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA KEYBOARD CAPS, _label, mdi-keyboard-caps, _color, _scale, _shape)
-skinparam folderBackgroundColor<<MA KEYBOARD CAPS>> White

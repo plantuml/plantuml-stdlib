@@ -1,8 +1,0 @@
-sprite mdi-format-text-wrapping-clip <svg width="48" height="48"><g transform="scale(2)"><path d="M7,21H5V3H7V21M17,3V11H9V13H17V21H19V3H17Z" /></g></svg>
-
-!define MA_FORMAT_TEXT_WRAPPING_CLIP(_color)                                 SPRITE_PUT(mdi-format-text-wrapping-clip, _color)
-!define MA_FORMAT_TEXT_WRAPPING_CLIP(_color, _scale)                         SPRITE_PUT(mdi-format-text-wrapping-clip, _color, _scale)
-!define MA_FORMAT_TEXT_WRAPPING_CLIP(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA FORMAT TEXT WRAPPING CLIP, mdi-format-text-wrapping-clip, _color, _scale)
-!define MA_FORMAT_TEXT_WRAPPING_CLIP(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA FORMAT TEXT WRAPPING CLIP, mdi-format-text-wrapping-clip, _color, _scale, _shape)
-!define MA_FORMAT_TEXT_WRAPPING_CLIP(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA FORMAT TEXT WRAPPING CLIP, _label, mdi-format-text-wrapping-clip, _color, _scale, _shape)
-skinparam folderBackgroundColor<<MA FORMAT TEXT WRAPPING CLIP>> White

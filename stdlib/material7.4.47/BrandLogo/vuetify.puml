@@ -1,8 +1,11 @@
-sprite mdi-vuetify <svg width="48" height="48"><g transform="scale(2)"><path d="M12,11.64L7.92,2H16.08L12,11.64M12,21.95L3.27,4.91H7.84L12,14.47L16.16,4.91H20.73L12,21.95Z" /></g></svg>
+sprite mdiVuetify <svg width="48" height="48"><g transform="scale(2)"><path d="M12,11.64L7.92,2H16.08L12,11.64M12,21.95L3.27,4.91H7.84L12,14.47L16.16,4.91H20.73L12,21.95Z" /></g></svg>
 
-!define MA_VUETIFY(_color)                                 SPRITE_PUT(mdi-vuetify, _color)
-!define MA_VUETIFY(_color, _scale)                         SPRITE_PUT(mdi-vuetify, _color, _scale)
-!define MA_VUETIFY(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA VUETIFY, mdi-vuetify, _color, _scale)
-!define MA_VUETIFY(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA VUETIFY, mdi-vuetify, _color, _scale, _shape)
-!define MA_VUETIFY(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA VUETIFY, _label, mdi-vuetify, _color, _scale, _shape)
-skinparam folderBackgroundColor<<MA VUETIFY>> White
+!if %function_exists("$MdiSprite")
+  !unquoted function $MdiVuetifyImg($color = $MDI_DEFAULT, $scale = "1")
+    !return $MdiSprite(mdiAccountAlert, $color, $scale)
+  !endfunction
+
+  !unquoted function $MdiVuetify($alias, $label=$MDI_DEFAULT, $shape=$MDI_DEFAULT, $color=$MDI_DEFAULT, $scale=1, $stereo=$MDI_DEFAULT)
+    !return $MdiSpriteElement("mdiAccountAlert", $alias, $label, $shape, $color, $scale, $stereo)
+  !endfunction
+!endif

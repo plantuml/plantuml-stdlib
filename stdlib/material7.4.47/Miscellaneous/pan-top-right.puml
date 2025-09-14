@@ -1,8 +1,0 @@
-sprite mdi-pan-top-right <svg width="48" height="48"><g transform="scale(2)"><path d="M12,10A2,2 0 0,1 14,12A2,2 0 0,1 12,14A2,2 0 0,1 10,12A2,2 0 0,1 12,10M18.65,11L13,5.35L19,5L18.65,11Z" /></g></svg>
-
-!define MA_PAN_TOP_RIGHT(_color)                                 SPRITE_PUT(mdi-pan-top-right, _color)
-!define MA_PAN_TOP_RIGHT(_color, _scale)                         SPRITE_PUT(mdi-pan-top-right, _color, _scale)
-!define MA_PAN_TOP_RIGHT(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA PAN TOP RIGHT, mdi-pan-top-right, _color, _scale)
-!define MA_PAN_TOP_RIGHT(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA PAN TOP RIGHT, mdi-pan-top-right, _color, _scale, _shape)
-!define MA_PAN_TOP_RIGHT(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA PAN TOP RIGHT, _label, mdi-pan-top-right, _color, _scale, _shape)
-skinparam folderBackgroundColor<<MA PAN TOP RIGHT>> White

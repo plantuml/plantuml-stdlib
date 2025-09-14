@@ -1,8 +1,0 @@
-sprite mdi-stairs-up <svg width="48" height="48"><g transform="scale(2)"><path d="M15 6H22V9H18V13H14V17H10V21H3V18H7V14H11V10H15V6M10.17 6.66L4.66 12.17L2.83 10.34L8.34 4.83L6.5 3H12V8.5L10.17 6.66Z" /></g></svg>
-
-!define MA_STAIRS_UP(_color)                                 SPRITE_PUT(mdi-stairs-up, _color)
-!define MA_STAIRS_UP(_color, _scale)                         SPRITE_PUT(mdi-stairs-up, _color, _scale)
-!define MA_STAIRS_UP(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA STAIRS UP, mdi-stairs-up, _color, _scale)
-!define MA_STAIRS_UP(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA STAIRS UP, mdi-stairs-up, _color, _scale, _shape)
-!define MA_STAIRS_UP(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA STAIRS UP, _label, mdi-stairs-up, _color, _scale, _shape)
-skinparam folderBackgroundColor<<MA STAIRS UP>> White

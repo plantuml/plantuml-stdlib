@@ -1,8 +1,0 @@
-sprite mdi-view-array-outline <svg width="48" height="48"><g transform="scale(2)"><path d="M15 7V16H10V7H15M21 5H18V18H21V5M17 5H8V18H17V5M7 5H4V18H7V5Z" /></g></svg>
-
-!define MA_VIEW_ARRAY_OUTLINE(_color)                                 SPRITE_PUT(mdi-view-array-outline, _color)
-!define MA_VIEW_ARRAY_OUTLINE(_color, _scale)                         SPRITE_PUT(mdi-view-array-outline, _color, _scale)
-!define MA_VIEW_ARRAY_OUTLINE(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA VIEW ARRAY OUTLINE, mdi-view-array-outline, _color, _scale)
-!define MA_VIEW_ARRAY_OUTLINE(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA VIEW ARRAY OUTLINE, mdi-view-array-outline, _color, _scale, _shape)
-!define MA_VIEW_ARRAY_OUTLINE(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA VIEW ARRAY OUTLINE, _label, mdi-view-array-outline, _color, _scale, _shape)
-skinparam folderBackgroundColor<<MA VIEW ARRAY OUTLINE>> White

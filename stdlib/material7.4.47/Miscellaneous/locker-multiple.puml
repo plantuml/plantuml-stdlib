@@ -1,8 +1,0 @@
-sprite mdi-locker-multiple <svg width="48" height="48"><g transform="scale(2)"><path d="M3,2H21A2,2 0 0,1 23,4V20A2,2 0 0,1 21,22H3A2,2 0 0,1 1,20V4A2,2 0 0,1 3,2M13,4V20H21V4H13M3,4V20H11V4H3M5,13H7V17H5V13M5,6H9V7.5H5V6M5,9H9V10.5H5V9M15,13H17V17H15V13M15,6H19V7.5H15V6M15,9H19V10.5H15V9Z" /></g></svg>
-
-!define MA_LOCKER_MULTIPLE(_color)                                 SPRITE_PUT(mdi-locker-multiple, _color)
-!define MA_LOCKER_MULTIPLE(_color, _scale)                         SPRITE_PUT(mdi-locker-multiple, _color, _scale)
-!define MA_LOCKER_MULTIPLE(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA LOCKER MULTIPLE, mdi-locker-multiple, _color, _scale)
-!define MA_LOCKER_MULTIPLE(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA LOCKER MULTIPLE, mdi-locker-multiple, _color, _scale, _shape)
-!define MA_LOCKER_MULTIPLE(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA LOCKER MULTIPLE, _label, mdi-locker-multiple, _color, _scale, _shape)
-skinparam folderBackgroundColor<<MA LOCKER MULTIPLE>> White

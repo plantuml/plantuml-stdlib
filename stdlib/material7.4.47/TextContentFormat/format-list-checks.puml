@@ -1,8 +1,0 @@
-sprite mdi-format-list-checks <svg width="48" height="48"><g transform="scale(2)"><path d="M3,5H9V11H3V5M5,7V9H7V7H5M11,7H21V9H11V7M11,15H21V17H11V15M5,20L1.5,16.5L2.91,15.09L5,17.17L9.59,12.59L11,14L5,20Z" /></g></svg>
-
-!define MA_FORMAT_LIST_CHECKS(_color)                                 SPRITE_PUT(mdi-format-list-checks, _color)
-!define MA_FORMAT_LIST_CHECKS(_color, _scale)                         SPRITE_PUT(mdi-format-list-checks, _color, _scale)
-!define MA_FORMAT_LIST_CHECKS(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA FORMAT LIST CHECKS, mdi-format-list-checks, _color, _scale)
-!define MA_FORMAT_LIST_CHECKS(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA FORMAT LIST CHECKS, mdi-format-list-checks, _color, _scale, _shape)
-!define MA_FORMAT_LIST_CHECKS(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA FORMAT LIST CHECKS, _label, mdi-format-list-checks, _color, _scale, _shape)
-skinparam folderBackgroundColor<<MA FORMAT LIST CHECKS>> White

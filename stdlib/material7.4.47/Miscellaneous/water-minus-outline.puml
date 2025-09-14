@@ -1,8 +1,0 @@
-sprite mdi-water-minus-outline <svg width="48" height="48"><g transform="scale(2)"><path d="M22 17V19H14V17H22M8 14C8 12.23 10 8.96 12 6.39C13.5 8.33 15 10.67 15.67 12.47C16.27 12.21 16.93 12.06 17.62 12C16.31 8.1 12 3.25 12 3.25S6 10 6 14C6 17.31 8.69 20 12 20C12.12 20 12.23 20 12.34 20C12.12 19.36 12 18.7 12 18C9.79 18 8 16.21 8 14Z" /></g></svg>
-
-!define MA_WATER_MINUS_OUTLINE(_color)                                 SPRITE_PUT(mdi-water-minus-outline, _color)
-!define MA_WATER_MINUS_OUTLINE(_color, _scale)                         SPRITE_PUT(mdi-water-minus-outline, _color, _scale)
-!define MA_WATER_MINUS_OUTLINE(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA WATER MINUS OUTLINE, mdi-water-minus-outline, _color, _scale)
-!define MA_WATER_MINUS_OUTLINE(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA WATER MINUS OUTLINE, mdi-water-minus-outline, _color, _scale, _shape)
-!define MA_WATER_MINUS_OUTLINE(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA WATER MINUS OUTLINE, _label, mdi-water-minus-outline, _color, _scale, _shape)
-skinparam folderBackgroundColor<<MA WATER MINUS OUTLINE>> White

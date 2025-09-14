@@ -1,8 +1,0 @@
-sprite mdi-image-area <svg width="48" height="48"><g transform="scale(2)"><path d="M20,5A2,2 0 0,1 22,7V17A2,2 0 0,1 20,19H4C2.89,19 2,18.1 2,17V7C2,5.89 2.89,5 4,5H20M5,16H19L14.5,10L11,14.5L8.5,11.5L5,16Z" /></g></svg>
-
-!define MA_IMAGE_AREA(_color)                                 SPRITE_PUT(mdi-image-area, _color)
-!define MA_IMAGE_AREA(_color, _scale)                         SPRITE_PUT(mdi-image-area, _color, _scale)
-!define MA_IMAGE_AREA(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA IMAGE AREA, mdi-image-area, _color, _scale)
-!define MA_IMAGE_AREA(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA IMAGE AREA, mdi-image-area, _color, _scale, _shape)
-!define MA_IMAGE_AREA(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA IMAGE AREA, _label, mdi-image-area, _color, _scale, _shape)
-skinparam folderBackgroundColor<<MA IMAGE AREA>> White

@@ -1,8 +1,0 @@
-sprite mdi-battery-arrow-up <svg width="48" height="48"><g transform="scale(2)"><path d="M13.54 22H7.33C6.6 22 6 21.4 6 20.67V5.33C6 4.6 6.6 4 7.33 4H9V2H15V4H16.67C17.4 4 18 4.6 18 5.33V12C14.69 12 12 14.69 12 18C12 19.54 12.58 20.94 13.54 22M20.94 17.5L17.94 14.5L14.94 17.5H16.94V21.5H18.94V17.5H20.94" /></g></svg>
-
-!define MA_BATTERY_ARROW_UP(_color)                                 SPRITE_PUT(mdi-battery-arrow-up, _color)
-!define MA_BATTERY_ARROW_UP(_color, _scale)                         SPRITE_PUT(mdi-battery-arrow-up, _color, _scale)
-!define MA_BATTERY_ARROW_UP(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA BATTERY ARROW UP, mdi-battery-arrow-up, _color, _scale)
-!define MA_BATTERY_ARROW_UP(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA BATTERY ARROW UP, mdi-battery-arrow-up, _color, _scale, _shape)
-!define MA_BATTERY_ARROW_UP(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA BATTERY ARROW UP, _label, mdi-battery-arrow-up, _color, _scale, _shape)
-skinparam folderBackgroundColor<<MA BATTERY ARROW UP>> White

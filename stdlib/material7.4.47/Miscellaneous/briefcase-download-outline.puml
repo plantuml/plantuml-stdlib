@@ -1,8 +1,0 @@
-sprite mdi-briefcase-download-outline <svg width="48" height="48"><g transform="scale(2)"><path d="M12,18L7,13H10V9H14V13H17L12,18M10,2H14A2,2 0 0,1 16,4V6H20A2,2 0 0,1 22,8V19A2,2 0 0,1 20,21H4C2.89,21 2,20.1 2,19V8C2,6.89 2.89,6 4,6H8V4C8,2.89 8.89,2 10,2M14,6V4H10V6H14M4,8V19H20V8H4Z" /></g></svg>
-
-!define MA_BRIEFCASE_DOWNLOAD_OUTLINE(_color)                                 SPRITE_PUT(mdi-briefcase-download-outline, _color)
-!define MA_BRIEFCASE_DOWNLOAD_OUTLINE(_color, _scale)                         SPRITE_PUT(mdi-briefcase-download-outline, _color, _scale)
-!define MA_BRIEFCASE_DOWNLOAD_OUTLINE(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA BRIEFCASE DOWNLOAD OUTLINE, mdi-briefcase-download-outline, _color, _scale)
-!define MA_BRIEFCASE_DOWNLOAD_OUTLINE(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA BRIEFCASE DOWNLOAD OUTLINE, mdi-briefcase-download-outline, _color, _scale, _shape)
-!define MA_BRIEFCASE_DOWNLOAD_OUTLINE(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA BRIEFCASE DOWNLOAD OUTLINE, _label, mdi-briefcase-download-outline, _color, _scale, _shape)
-skinparam folderBackgroundColor<<MA BRIEFCASE DOWNLOAD OUTLINE>> White

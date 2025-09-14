@@ -1,8 +1,0 @@
-sprite mdi-select-drag <svg width="48" height="48"><g transform="scale(2)"><path d="M13,17H17V13H19V17H23V19H19V23H17V19H13V17M11,17V19H9V17H11M7,17V19H5V17H7M19,9V11H17V9H19M19,5V7H17V5H19M15,5V7H13V5H15M11,5V7H9V5H11M7,5V7H5V5H7M7,13V15H5V13H7M7,9V11H5V9H7Z" /></g></svg>
-
-!define MA_SELECT_DRAG(_color)                                 SPRITE_PUT(mdi-select-drag, _color)
-!define MA_SELECT_DRAG(_color, _scale)                         SPRITE_PUT(mdi-select-drag, _color, _scale)
-!define MA_SELECT_DRAG(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA SELECT DRAG, mdi-select-drag, _color, _scale)
-!define MA_SELECT_DRAG(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA SELECT DRAG, mdi-select-drag, _color, _scale, _shape)
-!define MA_SELECT_DRAG(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA SELECT DRAG, _label, mdi-select-drag, _color, _scale, _shape)
-skinparam folderBackgroundColor<<MA SELECT DRAG>> White

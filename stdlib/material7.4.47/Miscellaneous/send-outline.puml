@@ -1,8 +1,0 @@
-sprite mdi-send-outline <svg width="48" height="48"><g transform="scale(2)"><path d="M4 6.03L11.5 9.25L4 8.25L4 6.03M11.5 14.75L4 17.97V15.75L11.5 14.75M2 3L2 10L17 12L2 14L2 21L23 12L2 3Z" /></g></svg>
-
-!define MA_SEND_OUTLINE(_color)                                 SPRITE_PUT(mdi-send-outline, _color)
-!define MA_SEND_OUTLINE(_color, _scale)                         SPRITE_PUT(mdi-send-outline, _color, _scale)
-!define MA_SEND_OUTLINE(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA SEND OUTLINE, mdi-send-outline, _color, _scale)
-!define MA_SEND_OUTLINE(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA SEND OUTLINE, mdi-send-outline, _color, _scale, _shape)
-!define MA_SEND_OUTLINE(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA SEND OUTLINE, _label, mdi-send-outline, _color, _scale, _shape)
-skinparam folderBackgroundColor<<MA SEND OUTLINE>> White

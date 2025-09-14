@@ -1,8 +1,0 @@
-sprite mdi-elevation-rise <svg width="48" height="48"><g transform="scale(2)"><path d="M3,21V17.29L10.78,12.8L14.55,15L21,11.25V21H3M21,8.94L14.55,12.67L10.78,10.5L3,15V12.79L10.78,8.3L14.55,10.5L21,6.75V8.94Z" /></g></svg>
-
-!define MA_ELEVATION_RISE(_color)                                 SPRITE_PUT(mdi-elevation-rise, _color)
-!define MA_ELEVATION_RISE(_color, _scale)                         SPRITE_PUT(mdi-elevation-rise, _color, _scale)
-!define MA_ELEVATION_RISE(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA ELEVATION RISE, mdi-elevation-rise, _color, _scale)
-!define MA_ELEVATION_RISE(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA ELEVATION RISE, mdi-elevation-rise, _color, _scale, _shape)
-!define MA_ELEVATION_RISE(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA ELEVATION RISE, _label, mdi-elevation-rise, _color, _scale, _shape)
-skinparam folderBackgroundColor<<MA ELEVATION RISE>> White

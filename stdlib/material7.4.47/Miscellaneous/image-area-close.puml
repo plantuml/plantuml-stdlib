@@ -1,8 +1,0 @@
-sprite mdi-image-area-close <svg width="48" height="48"><g transform="scale(2)"><path d="M12,23L8,19H16L12,23M20,3A2,2 0 0,1 22,5V15A2,2 0 0,1 20,17H4A2,2 0 0,1 2,15V5A2,2 0 0,1 4,3H20M5,14H19L14.5,8L11,12.5L8.5,9.5L5,14Z" /></g></svg>
-
-!define MA_IMAGE_AREA_CLOSE(_color)                                 SPRITE_PUT(mdi-image-area-close, _color)
-!define MA_IMAGE_AREA_CLOSE(_color, _scale)                         SPRITE_PUT(mdi-image-area-close, _color, _scale)
-!define MA_IMAGE_AREA_CLOSE(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA IMAGE AREA CLOSE, mdi-image-area-close, _color, _scale)
-!define MA_IMAGE_AREA_CLOSE(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA IMAGE AREA CLOSE, mdi-image-area-close, _color, _scale, _shape)
-!define MA_IMAGE_AREA_CLOSE(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA IMAGE AREA CLOSE, _label, mdi-image-area-close, _color, _scale, _shape)
-skinparam folderBackgroundColor<<MA IMAGE AREA CLOSE>> White

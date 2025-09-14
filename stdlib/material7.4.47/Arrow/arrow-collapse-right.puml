@@ -1,8 +1,0 @@
-sprite mdi-arrow-collapse-right <svg width="48" height="48"><g transform="scale(2)"><path d="M12.08,4.08L20,12L12.08,19.92L10.67,18.5L16.17,13H2V11H16.17L10.67,5.5L12.08,4.08M20,12V22H22V2H20V12Z" /></g></svg>
-
-!define MA_ARROW_COLLAPSE_RIGHT(_color)                                 SPRITE_PUT(mdi-arrow-collapse-right, _color)
-!define MA_ARROW_COLLAPSE_RIGHT(_color, _scale)                         SPRITE_PUT(mdi-arrow-collapse-right, _color, _scale)
-!define MA_ARROW_COLLAPSE_RIGHT(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA ARROW COLLAPSE RIGHT, mdi-arrow-collapse-right, _color, _scale)
-!define MA_ARROW_COLLAPSE_RIGHT(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA ARROW COLLAPSE RIGHT, mdi-arrow-collapse-right, _color, _scale, _shape)
-!define MA_ARROW_COLLAPSE_RIGHT(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA ARROW COLLAPSE RIGHT, _label, mdi-arrow-collapse-right, _color, _scale, _shape)
-skinparam folderBackgroundColor<<MA ARROW COLLAPSE RIGHT>> White

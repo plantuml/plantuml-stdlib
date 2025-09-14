@@ -1,8 +1,0 @@
-sprite mdi-bed-queen <svg width="48" height="48"><g transform="scale(2)"><path d="M19 10V7A2 2 0 0 0 17 5H7A2 2 0 0 0 5 7V10A2 2 0 0 0 3 12V17H4.33L5 19H6L6.67 17H17.33L18 19H19L19.67 17H21V12A2 2 0 0 0 19 10M17 10H7V7H17Z" /></g></svg>
-
-!define MA_BED_QUEEN(_color)                                 SPRITE_PUT(mdi-bed-queen, _color)
-!define MA_BED_QUEEN(_color, _scale)                         SPRITE_PUT(mdi-bed-queen, _color, _scale)
-!define MA_BED_QUEEN(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA BED QUEEN, mdi-bed-queen, _color, _scale)
-!define MA_BED_QUEEN(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA BED QUEEN, mdi-bed-queen, _color, _scale, _shape)
-!define MA_BED_QUEEN(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA BED QUEEN, _label, mdi-bed-queen, _color, _scale, _shape)
-skinparam folderBackgroundColor<<MA BED QUEEN>> White

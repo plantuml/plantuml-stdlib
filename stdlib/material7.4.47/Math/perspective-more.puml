@@ -1,8 +1,0 @@
-sprite mdi-perspective-more <svg width="48" height="48"><g transform="scale(2)"><path d="M16.56,12L19.23,20H4.78L7.44,12H16.56M17,1L13,5L17,9V6H21V4H17V1M7,1V4H3V6H7V9L11,5L7,1M18,10H6L2,22H22L18,10Z" /></g></svg>
-
-!define MA_PERSPECTIVE_MORE(_color)                                 SPRITE_PUT(mdi-perspective-more, _color)
-!define MA_PERSPECTIVE_MORE(_color, _scale)                         SPRITE_PUT(mdi-perspective-more, _color, _scale)
-!define MA_PERSPECTIVE_MORE(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA PERSPECTIVE MORE, mdi-perspective-more, _color, _scale)
-!define MA_PERSPECTIVE_MORE(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA PERSPECTIVE MORE, mdi-perspective-more, _color, _scale, _shape)
-!define MA_PERSPECTIVE_MORE(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA PERSPECTIVE MORE, _label, mdi-perspective-more, _color, _scale, _shape)
-skinparam folderBackgroundColor<<MA PERSPECTIVE MORE>> White

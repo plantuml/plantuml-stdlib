@@ -1,8 +1,0 @@
-sprite mdi-map-marker-up <svg width="48" height="48"><g transform="scale(2)"><path d="M12 2A7 7 0 0 0 5 9C5 14.25 12 22 12 22S19 14.25 19 9A7 7 0 0 0 12 2M16.5 9H14V14H10V9H7.5L12 4.5Z" /></g></svg>
-
-!define MA_MAP_MARKER_UP(_color)                                 SPRITE_PUT(mdi-map-marker-up, _color)
-!define MA_MAP_MARKER_UP(_color, _scale)                         SPRITE_PUT(mdi-map-marker-up, _color, _scale)
-!define MA_MAP_MARKER_UP(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA MAP MARKER UP, mdi-map-marker-up, _color, _scale)
-!define MA_MAP_MARKER_UP(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA MAP MARKER UP, mdi-map-marker-up, _color, _scale, _shape)
-!define MA_MAP_MARKER_UP(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA MAP MARKER UP, _label, mdi-map-marker-up, _color, _scale, _shape)
-skinparam folderBackgroundColor<<MA MAP MARKER UP>> White

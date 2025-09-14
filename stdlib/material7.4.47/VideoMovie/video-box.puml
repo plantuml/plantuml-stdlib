@@ -1,8 +1,0 @@
-sprite mdi-video-box <svg width="48" height="48"><g transform="scale(2)"><path d="M18,16L14,12.8V16H6V8H14V11.2L18,8M20,4H4A2,2 0 0,0 2,6V18A2,2 0 0,0 4,20H20A2,2 0 0,0 22,18V6C22,4.89 21.1,4 20,4Z" /></g></svg>
-
-!define MA_VIDEO_BOX(_color)                                 SPRITE_PUT(mdi-video-box, _color)
-!define MA_VIDEO_BOX(_color, _scale)                         SPRITE_PUT(mdi-video-box, _color, _scale)
-!define MA_VIDEO_BOX(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA VIDEO BOX, mdi-video-box, _color, _scale)
-!define MA_VIDEO_BOX(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA VIDEO BOX, mdi-video-box, _color, _scale, _shape)
-!define MA_VIDEO_BOX(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA VIDEO BOX, _label, mdi-video-box, _color, _scale, _shape)
-skinparam folderBackgroundColor<<MA VIDEO BOX>> White

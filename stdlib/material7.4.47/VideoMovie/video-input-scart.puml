@@ -1,8 +1,0 @@
-sprite mdi-video-input-scart <svg width="48" height="48"><g transform="scale(2)"><path d="M20.6 2.2L17.3 2.4L13.8 4.4L13.3 3.5L2 10V17H3V19C3 20.1 3.9 21 5 21H15C16.1 21 17 20.1 17 19V17H18V10H17L16.8 9.6L20.3 7.6L22.1 4.8L20.6 2.2M15 17V19H5V17H15Z" /></g></svg>
-
-!define MA_VIDEO_INPUT_SCART(_color)                                 SPRITE_PUT(mdi-video-input-scart, _color)
-!define MA_VIDEO_INPUT_SCART(_color, _scale)                         SPRITE_PUT(mdi-video-input-scart, _color, _scale)
-!define MA_VIDEO_INPUT_SCART(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA VIDEO INPUT SCART, mdi-video-input-scart, _color, _scale)
-!define MA_VIDEO_INPUT_SCART(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA VIDEO INPUT SCART, mdi-video-input-scart, _color, _scale, _shape)
-!define MA_VIDEO_INPUT_SCART(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA VIDEO INPUT SCART, _label, mdi-video-input-scart, _color, _scale, _shape)
-skinparam folderBackgroundColor<<MA VIDEO INPUT SCART>> White

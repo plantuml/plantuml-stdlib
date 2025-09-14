@@ -1,8 +1,0 @@
-sprite mdi-home-variant-outline <svg width="48" height="48"><g transform="scale(2)"><path d="M9,13H15V19H18V10L12,5.5L6,10V19H9V13M4,21V9L12,3L20,9V21H4Z" /></g></svg>
-
-!define MA_HOME_VARIANT_OUTLINE(_color)                                 SPRITE_PUT(mdi-home-variant-outline, _color)
-!define MA_HOME_VARIANT_OUTLINE(_color, _scale)                         SPRITE_PUT(mdi-home-variant-outline, _color, _scale)
-!define MA_HOME_VARIANT_OUTLINE(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA HOME VARIANT OUTLINE, mdi-home-variant-outline, _color, _scale)
-!define MA_HOME_VARIANT_OUTLINE(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA HOME VARIANT OUTLINE, mdi-home-variant-outline, _color, _scale, _shape)
-!define MA_HOME_VARIANT_OUTLINE(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA HOME VARIANT OUTLINE, _label, mdi-home-variant-outline, _color, _scale, _shape)
-skinparam folderBackgroundColor<<MA HOME VARIANT OUTLINE>> White

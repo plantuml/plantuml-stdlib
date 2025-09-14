@@ -1,8 +1,0 @@
-sprite mdi-bank-off <svg width="48" height="48"><g transform="scale(2)"><path d="M20.8 22.7L20.1 22H2V19H17.1L13 14.9V17H10V11.9L6.1 8H2V6L3.4 5.3L1.1 3L2.4 1.7L22.1 21.4L20.8 22.7M4 10V17H7V10H4M21 8V6L11.5 1L6.7 3.5L11.2 8H21M19 15.8V10H16V12.8L19 15.8Z" /></g></svg>
-
-!define MA_BANK_OFF(_color)                                 SPRITE_PUT(mdi-bank-off, _color)
-!define MA_BANK_OFF(_color, _scale)                         SPRITE_PUT(mdi-bank-off, _color, _scale)
-!define MA_BANK_OFF(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA BANK OFF, mdi-bank-off, _color, _scale)
-!define MA_BANK_OFF(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA BANK OFF, mdi-bank-off, _color, _scale, _shape)
-!define MA_BANK_OFF(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA BANK OFF, _label, mdi-bank-off, _color, _scale, _shape)
-skinparam folderBackgroundColor<<MA BANK OFF>> White

@@ -1,8 +1,11 @@
-sprite mdi-deviantart <svg width="48" height="48"><g transform="scale(2)"><path d="M6,6H12L14,2H18V6L14.5,13H18V18H12L10,22H6V18L9.5,11H6V6Z" /></g></svg>
+sprite mdiDeviantart <svg width="48" height="48"><g transform="scale(2)"><path d="M6,6H12L14,2H18V6L14.5,13H18V18H12L10,22H6V18L9.5,11H6V6Z" /></g></svg>
 
-!define MA_DEVIANTART(_color)                                 SPRITE_PUT(mdi-deviantart, _color)
-!define MA_DEVIANTART(_color, _scale)                         SPRITE_PUT(mdi-deviantart, _color, _scale)
-!define MA_DEVIANTART(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA DEVIANTART, mdi-deviantart, _color, _scale)
-!define MA_DEVIANTART(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA DEVIANTART, mdi-deviantart, _color, _scale, _shape)
-!define MA_DEVIANTART(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA DEVIANTART, _label, mdi-deviantart, _color, _scale, _shape)
-skinparam folderBackgroundColor<<MA DEVIANTART>> White
+!if %function_exists("$MdiSprite")
+  !unquoted function $MdiDeviantartImg($color = $MDI_DEFAULT, $scale = "1")
+    !return $MdiSprite(mdiAccountAlert, $color, $scale)
+  !endfunction
+
+  !unquoted function $MdiDeviantart($alias, $label=$MDI_DEFAULT, $shape=$MDI_DEFAULT, $color=$MDI_DEFAULT, $scale=1, $stereo=$MDI_DEFAULT)
+    !return $MdiSpriteElement("mdiAccountAlert", $alias, $label, $shape, $color, $scale, $stereo)
+  !endfunction
+!endif

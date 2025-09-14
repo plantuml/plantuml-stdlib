@@ -1,8 +1,0 @@
-sprite mdi-shipping-pallet <svg width="48" height="48"><g transform="scale(2)"><path d="M3 20H5V18H11V20H13V18H19V20H21V15H19V16H17V15H15V16H13V15H11V16H9V15H7V16H5V15H3M5 13H19V4H5Z" /></g></svg>
-
-!define MA_SHIPPING_PALLET(_color)                                 SPRITE_PUT(mdi-shipping-pallet, _color)
-!define MA_SHIPPING_PALLET(_color, _scale)                         SPRITE_PUT(mdi-shipping-pallet, _color, _scale)
-!define MA_SHIPPING_PALLET(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA SHIPPING PALLET, mdi-shipping-pallet, _color, _scale)
-!define MA_SHIPPING_PALLET(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA SHIPPING PALLET, mdi-shipping-pallet, _color, _scale, _shape)
-!define MA_SHIPPING_PALLET(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA SHIPPING PALLET, _label, mdi-shipping-pallet, _color, _scale, _shape)
-skinparam folderBackgroundColor<<MA SHIPPING PALLET>> White

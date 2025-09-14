@@ -1,8 +1,0 @@
-sprite mdi-fridge-industrial <svg width="48" height="48"><g transform="scale(2)"><path d="M17 2H7C5.9 2 5 2.9 5 4V19C5 20.11 5.9 21 7 21V22H9V21H15V22H17V21C18.11 21 19 20.11 19 19V4C19 2.9 18.11 2 17 2M10 15H8V10H10V15Z" /></g></svg>
-
-!define MA_FRIDGE_INDUSTRIAL(_color)                                 SPRITE_PUT(mdi-fridge-industrial, _color)
-!define MA_FRIDGE_INDUSTRIAL(_color, _scale)                         SPRITE_PUT(mdi-fridge-industrial, _color, _scale)
-!define MA_FRIDGE_INDUSTRIAL(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA FRIDGE INDUSTRIAL, mdi-fridge-industrial, _color, _scale)
-!define MA_FRIDGE_INDUSTRIAL(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA FRIDGE INDUSTRIAL, mdi-fridge-industrial, _color, _scale, _shape)
-!define MA_FRIDGE_INDUSTRIAL(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA FRIDGE INDUSTRIAL, _label, mdi-fridge-industrial, _color, _scale, _shape)
-skinparam folderBackgroundColor<<MA FRIDGE INDUSTRIAL>> White

@@ -1,8 +1,0 @@
-sprite mdi-fullscreen-exit <svg width="48" height="48"><g transform="scale(2)"><path d="M14,14H19V16H16V19H14V14M5,14H10V19H8V16H5V14M8,5H10V10H5V8H8V5M19,8V10H14V5H16V8H19Z" /></g></svg>
-
-!define MA_FULLSCREEN_EXIT(_color)                                 SPRITE_PUT(mdi-fullscreen-exit, _color)
-!define MA_FULLSCREEN_EXIT(_color, _scale)                         SPRITE_PUT(mdi-fullscreen-exit, _color, _scale)
-!define MA_FULLSCREEN_EXIT(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA FULLSCREEN EXIT, mdi-fullscreen-exit, _color, _scale)
-!define MA_FULLSCREEN_EXIT(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA FULLSCREEN EXIT, mdi-fullscreen-exit, _color, _scale, _shape)
-!define MA_FULLSCREEN_EXIT(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA FULLSCREEN EXIT, _label, mdi-fullscreen-exit, _color, _scale, _shape)
-skinparam folderBackgroundColor<<MA FULLSCREEN EXIT>> White

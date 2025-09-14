@@ -1,8 +1,0 @@
-sprite mdi-video-3d <svg width="48" height="48"><g transform="scale(2)"><path d="M5,7H9A2,2 0 0,1 11,9V15A2,2 0 0,1 9,17H5V15H9V13H6V11H9V9H5V7M13,7H16A3,3 0 0,1 19,10V14A3,3 0 0,1 16,17H13V7M16,15A1,1 0 0,0 17,14V10A1,1 0 0,0 16,9H15V15H16Z" /></g></svg>
-
-!define MA_VIDEO_3D(_color)                                 SPRITE_PUT(mdi-video-3d, _color)
-!define MA_VIDEO_3D(_color, _scale)                         SPRITE_PUT(mdi-video-3d, _color, _scale)
-!define MA_VIDEO_3D(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA VIDEO 3D, mdi-video-3d, _color, _scale)
-!define MA_VIDEO_3D(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA VIDEO 3D, mdi-video-3d, _color, _scale, _shape)
-!define MA_VIDEO_3D(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA VIDEO 3D, _label, mdi-video-3d, _color, _scale, _shape)
-skinparam folderBackgroundColor<<MA VIDEO 3D>> White

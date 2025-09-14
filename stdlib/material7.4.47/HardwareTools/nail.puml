@@ -1,8 +1,11 @@
-sprite mdi-nail <svg width="48" height="48"><g transform="scale(2)"><path d="M13.5,5V16L12,22L10.5,16V5H13.5M17,2H7V4H17V2Z" /></g></svg>
+sprite mdiNail <svg width="48" height="48"><g transform="scale(2)"><path d="M13.5,5V16L12,22L10.5,16V5H13.5M17,2H7V4H17V2Z" /></g></svg>
 
-!define MA_NAIL(_color)                                 SPRITE_PUT(mdi-nail, _color)
-!define MA_NAIL(_color, _scale)                         SPRITE_PUT(mdi-nail, _color, _scale)
-!define MA_NAIL(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA NAIL, mdi-nail, _color, _scale)
-!define MA_NAIL(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA NAIL, mdi-nail, _color, _scale, _shape)
-!define MA_NAIL(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA NAIL, _label, mdi-nail, _color, _scale, _shape)
-skinparam folderBackgroundColor<<MA NAIL>> White
+!if %function_exists("$MdiSprite")
+  !unquoted function $MdiNailImg($color = $MDI_DEFAULT, $scale = "1")
+    !return $MdiSprite(mdiAccountAlert, $color, $scale)
+  !endfunction
+
+  !unquoted function $MdiNail($alias, $label=$MDI_DEFAULT, $shape=$MDI_DEFAULT, $color=$MDI_DEFAULT, $scale=1, $stereo=$MDI_DEFAULT)
+    !return $MdiSpriteElement("mdiAccountAlert", $alias, $label, $shape, $color, $scale, $stereo)
+  !endfunction
+!endif

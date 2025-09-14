@@ -1,8 +1,0 @@
-sprite mdi-flag-triangle <svg width="48" height="48"><g transform="scale(2)"><path d="M7,2H9V22H7V2M19,9L11,14.6V3.4L19,9Z" /></g></svg>
-
-!define MA_FLAG_TRIANGLE(_color)                                 SPRITE_PUT(mdi-flag-triangle, _color)
-!define MA_FLAG_TRIANGLE(_color, _scale)                         SPRITE_PUT(mdi-flag-triangle, _color, _scale)
-!define MA_FLAG_TRIANGLE(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA FLAG TRIANGLE, mdi-flag-triangle, _color, _scale)
-!define MA_FLAG_TRIANGLE(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA FLAG TRIANGLE, mdi-flag-triangle, _color, _scale, _shape)
-!define MA_FLAG_TRIANGLE(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA FLAG TRIANGLE, _label, mdi-flag-triangle, _color, _scale, _shape)
-skinparam folderBackgroundColor<<MA FLAG TRIANGLE>> White

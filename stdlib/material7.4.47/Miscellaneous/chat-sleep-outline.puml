@@ -1,8 +1,0 @@
-sprite mdi-chat-sleep-outline <svg width="48" height="48"><g transform="scale(2)"><path d="M12 3C6.5 3 2 6.58 2 11C2.05 13.15 3.06 15.17 4.75 16.5C4.75 17.1 4.33 18.67 2 21C4.37 20.89 6.64 20 8.47 18.5C9.61 18.83 10.81 19 12 19C17.5 19 22 15.42 22 11S17.5 3 12 3M12 17C7.58 17 4 14.31 4 11S7.58 5 12 5 20 7.69 20 11 16.42 17 12 17M15 7H9V9H12.24L9 12.7V15H15V13H11.76L15 9.3V7Z" /></g></svg>
-
-!define MA_CHAT_SLEEP_OUTLINE(_color)                                 SPRITE_PUT(mdi-chat-sleep-outline, _color)
-!define MA_CHAT_SLEEP_OUTLINE(_color, _scale)                         SPRITE_PUT(mdi-chat-sleep-outline, _color, _scale)
-!define MA_CHAT_SLEEP_OUTLINE(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA CHAT SLEEP OUTLINE, mdi-chat-sleep-outline, _color, _scale)
-!define MA_CHAT_SLEEP_OUTLINE(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA CHAT SLEEP OUTLINE, mdi-chat-sleep-outline, _color, _scale, _shape)
-!define MA_CHAT_SLEEP_OUTLINE(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA CHAT SLEEP OUTLINE, _label, mdi-chat-sleep-outline, _color, _scale, _shape)
-skinparam folderBackgroundColor<<MA CHAT SLEEP OUTLINE>> White

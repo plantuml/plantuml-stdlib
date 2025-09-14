@@ -1,8 +1,0 @@
-sprite mdi-card-minus <svg width="48" height="48"><g transform="scale(2)"><path d="M23 18V20H15V18H23M19 13C20.09 13 21.12 13.3 22 13.81V6C22 4.89 21.11 4 20 4H4C2.9 4 2 4.89 2 6V18C2 19.11 2.9 20 4 20H13.09C13.04 19.67 13 19.34 13 19C13 15.69 15.69 13 19 13Z" /></g></svg>
-
-!define MA_CARD_MINUS(_color)                                 SPRITE_PUT(mdi-card-minus, _color)
-!define MA_CARD_MINUS(_color, _scale)                         SPRITE_PUT(mdi-card-minus, _color, _scale)
-!define MA_CARD_MINUS(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA CARD MINUS, mdi-card-minus, _color, _scale)
-!define MA_CARD_MINUS(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA CARD MINUS, mdi-card-minus, _color, _scale, _shape)
-!define MA_CARD_MINUS(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA CARD MINUS, _label, mdi-card-minus, _color, _scale, _shape)
-skinparam folderBackgroundColor<<MA CARD MINUS>> White

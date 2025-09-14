@@ -1,8 +1,0 @@
-sprite mdi-door-sliding-open <svg width="48" height="48"><g transform="scale(2)"><path d="M6 11V13H4V11H6M22 5H17V19H22V5M7 5H2L2 19H7V5M22 3C23.11 3 24 3.89 24 5V21H0V5C0 3.89 .894 3 2 3H9V19H15V3H22M20 11H18V13H20V11Z" /></g></svg>
-
-!define MA_DOOR_SLIDING_OPEN(_color)                                 SPRITE_PUT(mdi-door-sliding-open, _color)
-!define MA_DOOR_SLIDING_OPEN(_color, _scale)                         SPRITE_PUT(mdi-door-sliding-open, _color, _scale)
-!define MA_DOOR_SLIDING_OPEN(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA DOOR SLIDING OPEN, mdi-door-sliding-open, _color, _scale)
-!define MA_DOOR_SLIDING_OPEN(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA DOOR SLIDING OPEN, mdi-door-sliding-open, _color, _scale, _shape)
-!define MA_DOOR_SLIDING_OPEN(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA DOOR SLIDING OPEN, _label, mdi-door-sliding-open, _color, _scale, _shape)
-skinparam folderBackgroundColor<<MA DOOR SLIDING OPEN>> White

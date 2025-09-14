@@ -1,8 +1,0 @@
-sprite mdi-lamps-outline <svg width="48" height="48"><g transform="scale(2)"><path d="M8.5 4L9.35 7H4.65L5.5 4H8.5M10 2H4L2 9H12L10 2M6 10H8V20H11V22H3V20H6V10M18.5 10L19.35 13H14.65L15.5 10H18.5M20 8H14L12 15H22L20 8M16 16H18V20H21V22H13V20H16V16Z" /></g></svg>
-
-!define MA_LAMPS_OUTLINE(_color)                                 SPRITE_PUT(mdi-lamps-outline, _color)
-!define MA_LAMPS_OUTLINE(_color, _scale)                         SPRITE_PUT(mdi-lamps-outline, _color, _scale)
-!define MA_LAMPS_OUTLINE(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA LAMPS OUTLINE, mdi-lamps-outline, _color, _scale)
-!define MA_LAMPS_OUTLINE(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA LAMPS OUTLINE, mdi-lamps-outline, _color, _scale, _shape)
-!define MA_LAMPS_OUTLINE(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA LAMPS OUTLINE, _label, mdi-lamps-outline, _color, _scale, _shape)
-skinparam folderBackgroundColor<<MA LAMPS OUTLINE>> White

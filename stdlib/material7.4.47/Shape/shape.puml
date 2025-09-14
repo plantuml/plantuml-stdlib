@@ -1,8 +1,11 @@
-sprite mdi-shape <svg width="48" height="48"><g transform="scale(2)"><path d="M11,13.5V21.5H3V13.5H11M12,2L17.5,11H6.5L12,2M17.5,13C20,13 22,15 22,17.5C22,20 20,22 17.5,22C15,22 13,20 13,17.5C13,15 15,13 17.5,13Z" /></g></svg>
+sprite mdiShape <svg width="48" height="48"><g transform="scale(2)"><path d="M11,13.5V21.5H3V13.5H11M12,2L17.5,11H6.5L12,2M17.5,13C20,13 22,15 22,17.5C22,20 20,22 17.5,22C15,22 13,20 13,17.5C13,15 15,13 17.5,13Z" /></g></svg>
 
-!define MA_SHAPE(_color)                                 SPRITE_PUT(mdi-shape, _color)
-!define MA_SHAPE(_color, _scale)                         SPRITE_PUT(mdi-shape, _color, _scale)
-!define MA_SHAPE(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA SHAPE, mdi-shape, _color, _scale)
-!define MA_SHAPE(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA SHAPE, mdi-shape, _color, _scale, _shape)
-!define MA_SHAPE(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA SHAPE, _label, mdi-shape, _color, _scale, _shape)
-skinparam folderBackgroundColor<<MA SHAPE>> White
+!if %function_exists("$MdiSprite")
+  !unquoted function $MdiShapeImg($color = $MDI_DEFAULT, $scale = "1")
+    !return $MdiSprite(mdiAccountAlert, $color, $scale)
+  !endfunction
+
+  !unquoted function $MdiShape($alias, $label=$MDI_DEFAULT, $shape=$MDI_DEFAULT, $color=$MDI_DEFAULT, $scale=1, $stereo=$MDI_DEFAULT)
+    !return $MdiSpriteElement("mdiAccountAlert", $alias, $label, $shape, $color, $scale, $stereo)
+  !endfunction
+!endif

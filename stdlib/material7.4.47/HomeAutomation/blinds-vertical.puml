@@ -1,8 +1,0 @@
-sprite mdi-blinds-vertical <svg width="48" height="48"><g transform="scale(2)"><path d="M20 19V3H4V19H2V21H22V19H20M10 19V5H14V19H10Z" /></g></svg>
-
-!define MA_BLINDS_VERTICAL(_color)                                 SPRITE_PUT(mdi-blinds-vertical, _color)
-!define MA_BLINDS_VERTICAL(_color, _scale)                         SPRITE_PUT(mdi-blinds-vertical, _color, _scale)
-!define MA_BLINDS_VERTICAL(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA BLINDS VERTICAL, mdi-blinds-vertical, _color, _scale)
-!define MA_BLINDS_VERTICAL(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA BLINDS VERTICAL, mdi-blinds-vertical, _color, _scale, _shape)
-!define MA_BLINDS_VERTICAL(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA BLINDS VERTICAL, _label, mdi-blinds-vertical, _color, _scale, _shape)
-skinparam folderBackgroundColor<<MA BLINDS VERTICAL>> White

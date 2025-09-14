@@ -1,8 +1,0 @@
-sprite mdi-high-definition <svg width="48" height="48"><g transform="scale(2)"><path d="M5,7H7V11H9V7H11V17H9V13H7V17H5V7M13,7H16A3,3 0 0,1 19,10V14A3,3 0 0,1 16,17H13V7M16,15A1,1 0 0,0 17,14V10A1,1 0 0,0 16,9H15V15H16Z" /></g></svg>
-
-!define MA_HIGH_DEFINITION(_color)                                 SPRITE_PUT(mdi-high-definition, _color)
-!define MA_HIGH_DEFINITION(_color, _scale)                         SPRITE_PUT(mdi-high-definition, _color, _scale)
-!define MA_HIGH_DEFINITION(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA HIGH DEFINITION, mdi-high-definition, _color, _scale)
-!define MA_HIGH_DEFINITION(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA HIGH DEFINITION, mdi-high-definition, _color, _scale, _shape)
-!define MA_HIGH_DEFINITION(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA HIGH DEFINITION, _label, mdi-high-definition, _color, _scale, _shape)
-skinparam folderBackgroundColor<<MA HIGH DEFINITION>> White

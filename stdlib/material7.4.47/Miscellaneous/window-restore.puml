@@ -1,8 +1,0 @@
-sprite mdi-window-restore <svg width="48" height="48"><g transform="scale(2)"><path d="M4,8H8V4H20V16H16V20H4V8M16,8V14H18V6H10V8H16M6,12V18H14V12H6Z" /></g></svg>
-
-!define MA_WINDOW_RESTORE(_color)                                 SPRITE_PUT(mdi-window-restore, _color)
-!define MA_WINDOW_RESTORE(_color, _scale)                         SPRITE_PUT(mdi-window-restore, _color, _scale)
-!define MA_WINDOW_RESTORE(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA WINDOW RESTORE, mdi-window-restore, _color, _scale)
-!define MA_WINDOW_RESTORE(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA WINDOW RESTORE, mdi-window-restore, _color, _scale, _shape)
-!define MA_WINDOW_RESTORE(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA WINDOW RESTORE, _label, mdi-window-restore, _color, _scale, _shape)
-skinparam folderBackgroundColor<<MA WINDOW RESTORE>> White

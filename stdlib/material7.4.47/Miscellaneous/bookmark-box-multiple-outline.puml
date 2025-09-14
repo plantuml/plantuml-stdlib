@@ -1,8 +1,0 @@
-sprite mdi-bookmark-box-multiple-outline <svg width="48" height="48"><g transform="scale(2)"><path d="M4 20H18V22H4C2.9 22 2 21.1 2 20V6H4V20M22 4V16C22 17.1 21.1 18 20 18H8C6.9 18 6 17.1 6 16V4C6 2.9 6.9 2 8 2H20C21.1 2 22 2.9 22 4M20 4H8V16H20V4M18 6H13V13L15.5 11.5L18 13V6Z" /></g></svg>
-
-!define MA_BOOKMARK_BOX_MULTIPLE_OUTLINE(_color)                                 SPRITE_PUT(mdi-bookmark-box-multiple-outline, _color)
-!define MA_BOOKMARK_BOX_MULTIPLE_OUTLINE(_color, _scale)                         SPRITE_PUT(mdi-bookmark-box-multiple-outline, _color, _scale)
-!define MA_BOOKMARK_BOX_MULTIPLE_OUTLINE(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA BOOKMARK BOX MULTIPLE OUTLINE, mdi-bookmark-box-multiple-outline, _color, _scale)
-!define MA_BOOKMARK_BOX_MULTIPLE_OUTLINE(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA BOOKMARK BOX MULTIPLE OUTLINE, mdi-bookmark-box-multiple-outline, _color, _scale, _shape)
-!define MA_BOOKMARK_BOX_MULTIPLE_OUTLINE(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA BOOKMARK BOX MULTIPLE OUTLINE, _label, mdi-bookmark-box-multiple-outline, _color, _scale, _shape)
-skinparam folderBackgroundColor<<MA BOOKMARK BOX MULTIPLE OUTLINE>> White

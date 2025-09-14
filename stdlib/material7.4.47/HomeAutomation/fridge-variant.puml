@@ -1,8 +1,0 @@
-sprite mdi-fridge-variant <svg width="48" height="48"><g transform="scale(2)"><path d="M19 4V19C19 20.11 18.11 21 17 21V22H15V21H12.5V2H17C18.11 2 19 2.9 19 4M7 2H11.5V21H9V22H7V21C5.9 21 5 20.11 5 19V4C5 2.9 5.9 2 7 2M10 10H7V14H10V10Z" /></g></svg>
-
-!define MA_FRIDGE_VARIANT(_color)                                 SPRITE_PUT(mdi-fridge-variant, _color)
-!define MA_FRIDGE_VARIANT(_color, _scale)                         SPRITE_PUT(mdi-fridge-variant, _color, _scale)
-!define MA_FRIDGE_VARIANT(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA FRIDGE VARIANT, mdi-fridge-variant, _color, _scale)
-!define MA_FRIDGE_VARIANT(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA FRIDGE VARIANT, mdi-fridge-variant, _color, _scale, _shape)
-!define MA_FRIDGE_VARIANT(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA FRIDGE VARIANT, _label, mdi-fridge-variant, _color, _scale, _shape)
-skinparam folderBackgroundColor<<MA FRIDGE VARIANT>> White

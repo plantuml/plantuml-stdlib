@@ -1,8 +1,0 @@
-sprite mdi-inbox-arrow-down <svg width="48" height="48"><g transform="scale(2)"><path d="M16,10H14V7H10V10H8L12,14M19,15H15A3,3 0 0,1 12,18A3,3 0 0,1 9,15H5V5H19M19,3H5C3.89,3 3,3.9 3,5V19A2,2 0 0,0 5,21H19A2,2 0 0,0 21,19V5A2,2 0 0,0 19,3Z" /></g></svg>
-
-!define MA_INBOX_ARROW_DOWN(_color)                                 SPRITE_PUT(mdi-inbox-arrow-down, _color)
-!define MA_INBOX_ARROW_DOWN(_color, _scale)                         SPRITE_PUT(mdi-inbox-arrow-down, _color, _scale)
-!define MA_INBOX_ARROW_DOWN(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA INBOX ARROW DOWN, mdi-inbox-arrow-down, _color, _scale)
-!define MA_INBOX_ARROW_DOWN(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA INBOX ARROW DOWN, mdi-inbox-arrow-down, _color, _scale, _shape)
-!define MA_INBOX_ARROW_DOWN(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA INBOX ARROW DOWN, _label, mdi-inbox-arrow-down, _color, _scale, _shape)
-skinparam folderBackgroundColor<<MA INBOX ARROW DOWN>> White

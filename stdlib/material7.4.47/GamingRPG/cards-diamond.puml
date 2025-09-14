@@ -1,8 +1,0 @@
-sprite mdi-cards-diamond <svg width="48" height="48"><g transform="scale(2)"><path d="M19,12L12,22L5,12L12,2" /></g></svg>
-
-!define MA_CARDS_DIAMOND(_color)                                 SPRITE_PUT(mdi-cards-diamond, _color)
-!define MA_CARDS_DIAMOND(_color, _scale)                         SPRITE_PUT(mdi-cards-diamond, _color, _scale)
-!define MA_CARDS_DIAMOND(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA CARDS DIAMOND, mdi-cards-diamond, _color, _scale)
-!define MA_CARDS_DIAMOND(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA CARDS DIAMOND, mdi-cards-diamond, _color, _scale, _shape)
-!define MA_CARDS_DIAMOND(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA CARDS DIAMOND, _label, mdi-cards-diamond, _color, _scale, _shape)
-skinparam folderBackgroundColor<<MA CARDS DIAMOND>> White

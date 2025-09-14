@@ -1,8 +1,11 @@
-sprite mdi-equalizer <svg width="48" height="48"><g transform="scale(2)"><path d="M10,20H14V4H10V20M4,20H8V12H4V20M16,9V20H20V9H16Z" /></g></svg>
+sprite mdiEqualizer <svg width="48" height="48"><g transform="scale(2)"><path d="M10,20H14V4H10V20M4,20H8V12H4V20M16,9V20H20V9H16Z" /></g></svg>
 
-!define MA_EQUALIZER(_color)                                 SPRITE_PUT(mdi-equalizer, _color)
-!define MA_EQUALIZER(_color, _scale)                         SPRITE_PUT(mdi-equalizer, _color, _scale)
-!define MA_EQUALIZER(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA EQUALIZER, mdi-equalizer, _color, _scale)
-!define MA_EQUALIZER(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA EQUALIZER, mdi-equalizer, _color, _scale, _shape)
-!define MA_EQUALIZER(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA EQUALIZER, _label, mdi-equalizer, _color, _scale, _shape)
-skinparam folderBackgroundColor<<MA EQUALIZER>> White
+!if %function_exists("$MdiSprite")
+  !unquoted function $MdiEqualizerImg($color = $MDI_DEFAULT, $scale = "1")
+    !return $MdiSprite(mdiAccountAlert, $color, $scale)
+  !endfunction
+
+  !unquoted function $MdiEqualizer($alias, $label=$MDI_DEFAULT, $shape=$MDI_DEFAULT, $color=$MDI_DEFAULT, $scale=1, $stereo=$MDI_DEFAULT)
+    !return $MdiSpriteElement("mdiAccountAlert", $alias, $label, $shape, $color, $scale, $stereo)
+  !endfunction
+!endif

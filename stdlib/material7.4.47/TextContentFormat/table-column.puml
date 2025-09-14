@@ -1,8 +1,0 @@
-sprite mdi-table-column <svg width="48" height="48"><g transform="scale(2)"><path d="M8,2H16A2,2 0 0,1 18,4V20A2,2 0 0,1 16,22H8A2,2 0 0,1 6,20V4A2,2 0 0,1 8,2M8,10V14H16V10H8M8,16V20H16V16H8M8,4V8H16V4H8Z" /></g></svg>
-
-!define MA_TABLE_COLUMN(_color)                                 SPRITE_PUT(mdi-table-column, _color)
-!define MA_TABLE_COLUMN(_color, _scale)                         SPRITE_PUT(mdi-table-column, _color, _scale)
-!define MA_TABLE_COLUMN(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA TABLE COLUMN, mdi-table-column, _color, _scale)
-!define MA_TABLE_COLUMN(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA TABLE COLUMN, mdi-table-column, _color, _scale, _shape)
-!define MA_TABLE_COLUMN(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA TABLE COLUMN, _label, mdi-table-column, _color, _scale, _shape)
-skinparam folderBackgroundColor<<MA TABLE COLUMN>> White

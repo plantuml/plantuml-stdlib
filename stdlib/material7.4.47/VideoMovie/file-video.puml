@@ -1,8 +1,0 @@
-sprite mdi-file-video <svg width="48" height="48"><g transform="scale(2)"><path d="M13,9H18.5L13,3.5V9M6,2H14L20,8V20A2,2 0 0,1 18,22H6C4.89,22 4,21.1 4,20V4C4,2.89 4.89,2 6,2M17,19V13L14,15.2V13H7V19H14V16.8L17,19Z" /></g></svg>
-
-!define MA_FILE_VIDEO(_color)                                 SPRITE_PUT(mdi-file-video, _color)
-!define MA_FILE_VIDEO(_color, _scale)                         SPRITE_PUT(mdi-file-video, _color, _scale)
-!define MA_FILE_VIDEO(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA FILE VIDEO, mdi-file-video, _color, _scale)
-!define MA_FILE_VIDEO(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA FILE VIDEO, mdi-file-video, _color, _scale, _shape)
-!define MA_FILE_VIDEO(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA FILE VIDEO, _label, mdi-file-video, _color, _scale, _shape)
-skinparam folderBackgroundColor<<MA FILE VIDEO>> White

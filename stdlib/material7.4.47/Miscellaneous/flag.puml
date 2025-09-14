@@ -1,8 +1,11 @@
-sprite mdi-flag <svg width="48" height="48"><g transform="scale(2)"><path d="M14.4,6L14,4H5V21H7V14H12.6L13,16H20V6H14.4Z" /></g></svg>
+sprite mdiFlag <svg width="48" height="48"><g transform="scale(2)"><path d="M14.4,6L14,4H5V21H7V14H12.6L13,16H20V6H14.4Z" /></g></svg>
 
-!define MA_FLAG(_color)                                 SPRITE_PUT(mdi-flag, _color)
-!define MA_FLAG(_color, _scale)                         SPRITE_PUT(mdi-flag, _color, _scale)
-!define MA_FLAG(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA FLAG, mdi-flag, _color, _scale)
-!define MA_FLAG(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA FLAG, mdi-flag, _color, _scale, _shape)
-!define MA_FLAG(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA FLAG, _label, mdi-flag, _color, _scale, _shape)
-skinparam folderBackgroundColor<<MA FLAG>> White
+!if %function_exists("$MdiSprite")
+  !unquoted function $MdiFlagImg($color = $MDI_DEFAULT, $scale = "1")
+    !return $MdiSprite(mdiAccountAlert, $color, $scale)
+  !endfunction
+
+  !unquoted function $MdiFlag($alias, $label=$MDI_DEFAULT, $shape=$MDI_DEFAULT, $color=$MDI_DEFAULT, $scale=1, $stereo=$MDI_DEFAULT)
+    !return $MdiSpriteElement("mdiAccountAlert", $alias, $label, $shape, $color, $scale, $stereo)
+  !endfunction
+!endif

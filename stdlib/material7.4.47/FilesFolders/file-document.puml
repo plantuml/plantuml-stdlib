@@ -1,8 +1,0 @@
-sprite mdi-file-document <svg width="48" height="48"><g transform="scale(2)"><path d="M13,9H18.5L13,3.5V9M6,2H14L20,8V20A2,2 0 0,1 18,22H6C4.89,22 4,21.1 4,20V4C4,2.89 4.89,2 6,2M15,18V16H6V18H15M18,14V12H6V14H18Z" /></g></svg>
-
-!define MA_FILE_DOCUMENT(_color)                                 SPRITE_PUT(mdi-file-document, _color)
-!define MA_FILE_DOCUMENT(_color, _scale)                         SPRITE_PUT(mdi-file-document, _color, _scale)
-!define MA_FILE_DOCUMENT(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA FILE DOCUMENT, mdi-file-document, _color, _scale)
-!define MA_FILE_DOCUMENT(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA FILE DOCUMENT, mdi-file-document, _color, _scale, _shape)
-!define MA_FILE_DOCUMENT(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA FILE DOCUMENT, _label, mdi-file-document, _color, _scale, _shape)
-skinparam folderBackgroundColor<<MA FILE DOCUMENT>> White
