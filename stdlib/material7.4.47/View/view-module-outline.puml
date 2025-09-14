@@ -1,8 +1,0 @@
-sprite mdi-view-module-outline <svg width="48" height="48"><g transform="scale(2)"><path d="M4 5V18H21V5H4M14 7V10.5H11V7H14M6 7H9V10.5H6V7M6 16V12.5H9V16H6M11 16V12.5H14V16H11M19 16H16V12.5H19V16M16 10.5V7H19V10.5H16Z" /></g></svg>
-
-!define MA_VIEW_MODULE_OUTLINE(_color)                                 SPRITE_PUT(mdi-view-module-outline, _color)
-!define MA_VIEW_MODULE_OUTLINE(_color, _scale)                         SPRITE_PUT(mdi-view-module-outline, _color, _scale)
-!define MA_VIEW_MODULE_OUTLINE(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA VIEW MODULE OUTLINE, mdi-view-module-outline, _color, _scale)
-!define MA_VIEW_MODULE_OUTLINE(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA VIEW MODULE OUTLINE, mdi-view-module-outline, _color, _scale, _shape)
-!define MA_VIEW_MODULE_OUTLINE(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA VIEW MODULE OUTLINE, _label, mdi-view-module-outline, _color, _scale, _shape)
-skinparam folderBackgroundColor<<MA VIEW MODULE OUTLINE>> White

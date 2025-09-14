@@ -1,8 +1,0 @@
-sprite mdi-current-dc <svg width="48" height="48"><g transform="scale(2)"><path d="M2,9V11H22V9H2M2,13V15H7V13H2M9,13V15H15V13H9M17,13V15H22V13H17Z" /></g></svg>
-
-!define MA_CURRENT_DC(_color)                                 SPRITE_PUT(mdi-current-dc, _color)
-!define MA_CURRENT_DC(_color, _scale)                         SPRITE_PUT(mdi-current-dc, _color, _scale)
-!define MA_CURRENT_DC(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA CURRENT DC, mdi-current-dc, _color, _scale)
-!define MA_CURRENT_DC(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA CURRENT DC, mdi-current-dc, _color, _scale, _shape)
-!define MA_CURRENT_DC(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA CURRENT DC, _label, mdi-current-dc, _color, _scale, _shape)
-skinparam folderBackgroundColor<<MA CURRENT DC>> White

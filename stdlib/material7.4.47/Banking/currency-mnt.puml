@@ -1,8 +1,0 @@
-sprite mdi-currency-mnt <svg width="48" height="48"><g transform="scale(2)"><path d="M13 5V8.62L17 7.17V9.29L13 10.74V12.5L17 11.07V13.2L13 14.65V21H11V15.38L7 16.84V14.71L11 13.24V11.47L7 12.92V10.8L11 9.35V5H5V3H19V5H13Z" /></g></svg>
-
-!define MA_CURRENCY_MNT(_color)                                 SPRITE_PUT(mdi-currency-mnt, _color)
-!define MA_CURRENCY_MNT(_color, _scale)                         SPRITE_PUT(mdi-currency-mnt, _color, _scale)
-!define MA_CURRENCY_MNT(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA CURRENCY MNT, mdi-currency-mnt, _color, _scale)
-!define MA_CURRENCY_MNT(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA CURRENCY MNT, mdi-currency-mnt, _color, _scale, _shape)
-!define MA_CURRENCY_MNT(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA CURRENCY MNT, _label, mdi-currency-mnt, _color, _scale, _shape)
-skinparam folderBackgroundColor<<MA CURRENCY MNT>> White

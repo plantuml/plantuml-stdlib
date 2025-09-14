@@ -1,8 +1,0 @@
-sprite mdi-shape-rectangle-plus <svg width="48" height="48"><g transform="scale(2)"><path d="M19,6H22V8H19V11H17V8H14V6H17V3H19V6M17,17V14H19V19H3V6H11V8H5V17H17Z" /></g></svg>
-
-!define MA_SHAPE_RECTANGLE_PLUS(_color)                                 SPRITE_PUT(mdi-shape-rectangle-plus, _color)
-!define MA_SHAPE_RECTANGLE_PLUS(_color, _scale)                         SPRITE_PUT(mdi-shape-rectangle-plus, _color, _scale)
-!define MA_SHAPE_RECTANGLE_PLUS(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA SHAPE RECTANGLE PLUS, mdi-shape-rectangle-plus, _color, _scale)
-!define MA_SHAPE_RECTANGLE_PLUS(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA SHAPE RECTANGLE PLUS, mdi-shape-rectangle-plus, _color, _scale, _shape)
-!define MA_SHAPE_RECTANGLE_PLUS(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA SHAPE RECTANGLE PLUS, _label, mdi-shape-rectangle-plus, _color, _scale, _shape)
-skinparam folderBackgroundColor<<MA SHAPE RECTANGLE PLUS>> White

@@ -1,8 +1,0 @@
-sprite mdi-engine-off <svg width="48" height="48"><g transform="scale(2)"><path d="M3.78,2.5L21.5,20.22L20.23,21.5L18,19.27V20H10L8,18H5V15H3V18H1V10H3V13H5V10L6.87,8.14L2.5,3.77L3.78,2.5M20,9V12H18V8H12V6H15V4H7.82L22.82,19H23V9H20Z" /></g></svg>
-
-!define MA_ENGINE_OFF(_color)                                 SPRITE_PUT(mdi-engine-off, _color)
-!define MA_ENGINE_OFF(_color, _scale)                         SPRITE_PUT(mdi-engine-off, _color, _scale)
-!define MA_ENGINE_OFF(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA ENGINE OFF, mdi-engine-off, _color, _scale)
-!define MA_ENGINE_OFF(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA ENGINE OFF, mdi-engine-off, _color, _scale, _shape)
-!define MA_ENGINE_OFF(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA ENGINE OFF, _label, mdi-engine-off, _color, _scale, _shape)
-skinparam folderBackgroundColor<<MA ENGINE OFF>> White

@@ -1,8 +1,0 @@
-sprite mdi-elevator-passenger-off-outline <svg width="48" height="48"><g transform="scale(2)"><path d="M22.11 21.46L2.39 1.73L1.11 3L3 4.9C3 4.94 3 4.97 3 5V19C3 20.1 3.9 21 5 21H19C19.03 21 19.06 21 19.1 21L20.84 22.73L22.11 21.46M5 19V6.89L7.65 9.54C6.71 9.71 6 10.5 6 11.5V14H7V18H10V14H11V12.89L17.11 19H5M8.2 5L6.2 3H19C20.1 3 21 3.9 21 5V17.8L19 15.8V5H8.2M18 11H14.2L13.46 10.26L15.5 7L18 11M17.31 14.11L16.2 13H18L17.31 14.11Z" /></g></svg>
-
-!define MA_ELEVATOR_PASSENGER_OFF_OUTLINE(_color)                                 SPRITE_PUT(mdi-elevator-passenger-off-outline, _color)
-!define MA_ELEVATOR_PASSENGER_OFF_OUTLINE(_color, _scale)                         SPRITE_PUT(mdi-elevator-passenger-off-outline, _color, _scale)
-!define MA_ELEVATOR_PASSENGER_OFF_OUTLINE(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA ELEVATOR PASSENGER OFF OUTLINE, mdi-elevator-passenger-off-outline, _color, _scale)
-!define MA_ELEVATOR_PASSENGER_OFF_OUTLINE(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA ELEVATOR PASSENGER OFF OUTLINE, mdi-elevator-passenger-off-outline, _color, _scale, _shape)
-!define MA_ELEVATOR_PASSENGER_OFF_OUTLINE(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA ELEVATOR PASSENGER OFF OUTLINE, _label, mdi-elevator-passenger-off-outline, _color, _scale, _shape)
-skinparam folderBackgroundColor<<MA ELEVATOR PASSENGER OFF OUTLINE>> White

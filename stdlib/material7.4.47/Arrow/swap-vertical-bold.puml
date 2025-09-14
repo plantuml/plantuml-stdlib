@@ -1,8 +1,0 @@
-sprite mdi-swap-vertical-bold <svg width="48" height="48"><g transform="scale(2)"><path d="M14,8H11V14H6V8H3L8.5,2L14,8M15.5,22L21,16H18V10H13V16H10L15.5,22Z" /></g></svg>
-
-!define MA_SWAP_VERTICAL_BOLD(_color)                                 SPRITE_PUT(mdi-swap-vertical-bold, _color)
-!define MA_SWAP_VERTICAL_BOLD(_color, _scale)                         SPRITE_PUT(mdi-swap-vertical-bold, _color, _scale)
-!define MA_SWAP_VERTICAL_BOLD(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA SWAP VERTICAL BOLD, mdi-swap-vertical-bold, _color, _scale)
-!define MA_SWAP_VERTICAL_BOLD(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA SWAP VERTICAL BOLD, mdi-swap-vertical-bold, _color, _scale, _shape)
-!define MA_SWAP_VERTICAL_BOLD(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA SWAP VERTICAL BOLD, _label, mdi-swap-vertical-bold, _color, _scale, _shape)
-skinparam folderBackgroundColor<<MA SWAP VERTICAL BOLD>> White

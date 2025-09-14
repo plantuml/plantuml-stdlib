@@ -1,8 +1,0 @@
-sprite mdi-sign-direction-plus <svg width="48" height="48"><g transform="scale(2)"><path d="M13 20H13.09A5.5 5.5 0 0 0 13.81 22H9A2 2 0 0 1 11 20V12H3.5L6 9.5L3.5 7H11V3L12 2L13 3V7H18L20.5 9.5L18 12H13M18 15V18H15V20H18V23H20V20H23V18H20V15Z" /></g></svg>
-
-!define MA_SIGN_DIRECTION_PLUS(_color)                                 SPRITE_PUT(mdi-sign-direction-plus, _color)
-!define MA_SIGN_DIRECTION_PLUS(_color, _scale)                         SPRITE_PUT(mdi-sign-direction-plus, _color, _scale)
-!define MA_SIGN_DIRECTION_PLUS(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA SIGN DIRECTION PLUS, mdi-sign-direction-plus, _color, _scale)
-!define MA_SIGN_DIRECTION_PLUS(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA SIGN DIRECTION PLUS, mdi-sign-direction-plus, _color, _scale, _shape)
-!define MA_SIGN_DIRECTION_PLUS(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA SIGN DIRECTION PLUS, _label, mdi-sign-direction-plus, _color, _scale, _shape)
-skinparam folderBackgroundColor<<MA SIGN DIRECTION PLUS>> White

@@ -1,8 +1,11 @@
-sprite mdi-history <svg width="48" height="48"><g transform="scale(2)"><path d="M13.5,8H12V13L16.28,15.54L17,14.33L13.5,12.25V8M13,3A9,9 0 0,0 4,12H1L4.96,16.03L9,12H6A7,7 0 0,1 13,5A7,7 0 0,1 20,12A7,7 0 0,1 13,19C11.07,19 9.32,18.21 8.06,16.94L6.64,18.36C8.27,20 10.5,21 13,21A9,9 0 0,0 22,12A9,9 0 0,0 13,3" /></g></svg>
+sprite mdiHistory <svg width="48" height="48"><g transform="scale(2)"><path d="M13.5,8H12V13L16.28,15.54L17,14.33L13.5,12.25V8M13,3A9,9 0 0,0 4,12H1L4.96,16.03L9,12H6A7,7 0 0,1 13,5A7,7 0 0,1 20,12A7,7 0 0,1 13,19C11.07,19 9.32,18.21 8.06,16.94L6.64,18.36C8.27,20 10.5,21 13,21A9,9 0 0,0 22,12A9,9 0 0,0 13,3" /></g></svg>
 
-!define MA_HISTORY(_color)                                 SPRITE_PUT(mdi-history, _color)
-!define MA_HISTORY(_color, _scale)                         SPRITE_PUT(mdi-history, _color, _scale)
-!define MA_HISTORY(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA HISTORY, mdi-history, _color, _scale)
-!define MA_HISTORY(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA HISTORY, mdi-history, _color, _scale, _shape)
-!define MA_HISTORY(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA HISTORY, _label, mdi-history, _color, _scale, _shape)
-skinparam folderBackgroundColor<<MA HISTORY>> White
+!if %function_exists("$MdiSprite")
+  !unquoted function $MdiHistoryImg($color = $MDI_DEFAULT, $scale = "1")
+    !return $MdiSprite(mdiAccountAlert, $color, $scale)
+  !endfunction
+
+  !unquoted function $MdiHistory($alias, $label=$MDI_DEFAULT, $shape=$MDI_DEFAULT, $color=$MDI_DEFAULT, $scale=1, $stereo=$MDI_DEFAULT)
+    !return $MdiSpriteElement("mdiAccountAlert", $alias, $label, $shape, $color, $scale, $stereo)
+  !endfunction
+!endif

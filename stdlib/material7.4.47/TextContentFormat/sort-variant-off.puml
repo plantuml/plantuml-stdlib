@@ -1,8 +1,0 @@
-sprite mdi-sort-variant-off <svg width="48" height="48"><g transform="scale(2)"><path d="M20.84 22.73L11.11 13H3V11H9.11L6.11 8H3V6H4.11L1.11 3L2.39 1.73L22.11 21.46L20.84 22.73M15 11H14.2L15 11.8V11M21 8V6H9.2L11.2 8H21M3 18H9V16H3V18Z" /></g></svg>
-
-!define MA_SORT_VARIANT_OFF(_color)                                 SPRITE_PUT(mdi-sort-variant-off, _color)
-!define MA_SORT_VARIANT_OFF(_color, _scale)                         SPRITE_PUT(mdi-sort-variant-off, _color, _scale)
-!define MA_SORT_VARIANT_OFF(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA SORT VARIANT OFF, mdi-sort-variant-off, _color, _scale)
-!define MA_SORT_VARIANT_OFF(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA SORT VARIANT OFF, mdi-sort-variant-off, _color, _scale, _shape)
-!define MA_SORT_VARIANT_OFF(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA SORT VARIANT OFF, _label, mdi-sort-variant-off, _color, _scale, _shape)
-skinparam folderBackgroundColor<<MA SORT VARIANT OFF>> White

@@ -1,8 +1,0 @@
-sprite mdi-music-note-off <svg width="48" height="48"><g transform="scale(2)"><path d="M4.27 3L3 4.27L12 13.27V13.55C11.41 13.21 10.73 13 10 13C7.79 13 6 14.79 6 17S7.79 21 10 21 14 19.21 14 17V15.27L19.73 21L21 19.73L4.27 3M14 7H18V3H12V8.18L14 10.18Z" /></g></svg>
-
-!define MA_MUSIC_NOTE_OFF(_color)                                 SPRITE_PUT(mdi-music-note-off, _color)
-!define MA_MUSIC_NOTE_OFF(_color, _scale)                         SPRITE_PUT(mdi-music-note-off, _color, _scale)
-!define MA_MUSIC_NOTE_OFF(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA MUSIC NOTE OFF, mdi-music-note-off, _color, _scale)
-!define MA_MUSIC_NOTE_OFF(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA MUSIC NOTE OFF, mdi-music-note-off, _color, _scale, _shape)
-!define MA_MUSIC_NOTE_OFF(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA MUSIC NOTE OFF, _label, mdi-music-note-off, _color, _scale, _shape)
-skinparam folderBackgroundColor<<MA MUSIC NOTE OFF>> White

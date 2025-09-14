@@ -1,8 +1,0 @@
-sprite mdi-seat-individual-suite <svg width="48" height="48"><g transform="scale(2)"><path d="M7,13A3,3 0 0,0 10,10A3,3 0 0,0 7,7A3,3 0 0,0 4,10A3,3 0 0,0 7,13M19,7H11V14H3V7H1V17H23V11A4,4 0 0,0 19,7Z" /></g></svg>
-
-!define MA_SEAT_INDIVIDUAL_SUITE(_color)                                 SPRITE_PUT(mdi-seat-individual-suite, _color)
-!define MA_SEAT_INDIVIDUAL_SUITE(_color, _scale)                         SPRITE_PUT(mdi-seat-individual-suite, _color, _scale)
-!define MA_SEAT_INDIVIDUAL_SUITE(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA SEAT INDIVIDUAL SUITE, mdi-seat-individual-suite, _color, _scale)
-!define MA_SEAT_INDIVIDUAL_SUITE(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA SEAT INDIVIDUAL SUITE, mdi-seat-individual-suite, _color, _scale, _shape)
-!define MA_SEAT_INDIVIDUAL_SUITE(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA SEAT INDIVIDUAL SUITE, _label, mdi-seat-individual-suite, _color, _scale, _shape)
-skinparam folderBackgroundColor<<MA SEAT INDIVIDUAL SUITE>> White

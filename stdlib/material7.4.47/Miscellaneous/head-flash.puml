@@ -1,8 +1,0 @@
-sprite mdi-head-flash <svg width="48" height="48"><g transform="scale(2)"><path d="M13 3C9.2 3 6.2 6 6 9.7L4.1 12.2C3.9 12.5 4.1 13 4.5 13H6V16C6 17.1 6.9 18 8 18H9V21H16V16.3C18.4 15.2 20 12.8 20 10C20 6.1 16.9 3 13 3M15 9L11.9 15L12.5 11H10.5L12.5 6H15L13.5 9H15Z" /></g></svg>
-
-!define MA_HEAD_FLASH(_color)                                 SPRITE_PUT(mdi-head-flash, _color)
-!define MA_HEAD_FLASH(_color, _scale)                         SPRITE_PUT(mdi-head-flash, _color, _scale)
-!define MA_HEAD_FLASH(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA HEAD FLASH, mdi-head-flash, _color, _scale)
-!define MA_HEAD_FLASH(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA HEAD FLASH, mdi-head-flash, _color, _scale, _shape)
-!define MA_HEAD_FLASH(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA HEAD FLASH, _label, mdi-head-flash, _color, _scale, _shape)
-skinparam folderBackgroundColor<<MA HEAD FLASH>> White

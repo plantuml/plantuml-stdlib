@@ -1,8 +1,0 @@
-sprite mdi-account-injury <svg width="48" height="48"><g transform="scale(2)"><path d="M8 6C8 3.79 9.79 2 12 2S16 3.79 16 6 14.21 10 12 10 8 8.21 8 6M17 22H18C19.1 22 20 21.1 20 20V15.22C20 14.1 19.39 13.07 18.39 12.56C17.96 12.34 17.5 12.13 17 11.94V22M12.34 17L15 11.33C14.07 11.12 13.07 11 12 11C9.47 11 7.29 11.7 5.61 12.56C4.61 13.07 4 14.1 4 15.22V22H6.34C6.12 21.55 6 21.04 6 20.5C6 18.57 7.57 17 9.5 17H12.34M10 22L11.41 19H9.5C8.67 19 8 19.67 8 20.5S8.67 22 9.5 22H10Z" /></g></svg>
-
-!define MA_ACCOUNT_INJURY(_color)                                 SPRITE_PUT(mdi-account-injury, _color)
-!define MA_ACCOUNT_INJURY(_color, _scale)                         SPRITE_PUT(mdi-account-injury, _color, _scale)
-!define MA_ACCOUNT_INJURY(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA ACCOUNT INJURY, mdi-account-injury, _color, _scale)
-!define MA_ACCOUNT_INJURY(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA ACCOUNT INJURY, mdi-account-injury, _color, _scale, _shape)
-!define MA_ACCOUNT_INJURY(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA ACCOUNT INJURY, _label, mdi-account-injury, _color, _scale, _shape)
-skinparam folderBackgroundColor<<MA ACCOUNT INJURY>> White

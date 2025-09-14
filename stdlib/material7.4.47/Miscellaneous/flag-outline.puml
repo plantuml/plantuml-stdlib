@@ -1,8 +1,0 @@
-sprite mdi-flag-outline <svg width="48" height="48"><g transform="scale(2)"><path d="M12.36,6L12.76,8H18V14H14.64L14.24,12H7V6H12.36M14,4H5V21H7V14H12.6L13,16H20V6H14.4" /></g></svg>
-
-!define MA_FLAG_OUTLINE(_color)                                 SPRITE_PUT(mdi-flag-outline, _color)
-!define MA_FLAG_OUTLINE(_color, _scale)                         SPRITE_PUT(mdi-flag-outline, _color, _scale)
-!define MA_FLAG_OUTLINE(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA FLAG OUTLINE, mdi-flag-outline, _color, _scale)
-!define MA_FLAG_OUTLINE(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA FLAG OUTLINE, mdi-flag-outline, _color, _scale, _shape)
-!define MA_FLAG_OUTLINE(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA FLAG OUTLINE, _label, mdi-flag-outline, _color, _scale, _shape)
-skinparam folderBackgroundColor<<MA FLAG OUTLINE>> White

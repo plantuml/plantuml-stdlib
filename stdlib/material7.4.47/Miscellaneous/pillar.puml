@@ -1,8 +1,11 @@
-sprite mdi-pillar <svg width="48" height="48"><g transform="scale(2)"><path d="M6,5H18A1,1 0 0,1 19,6A1,1 0 0,1 18,7H6A1,1 0 0,1 5,6A1,1 0 0,1 6,5M21,2V4H3V2H21M15,8H17V22H15V8M7,8H9V22H7V8M11,8H13V22H11V8Z" /></g></svg>
+sprite mdiPillar <svg width="48" height="48"><g transform="scale(2)"><path d="M6,5H18A1,1 0 0,1 19,6A1,1 0 0,1 18,7H6A1,1 0 0,1 5,6A1,1 0 0,1 6,5M21,2V4H3V2H21M15,8H17V22H15V8M7,8H9V22H7V8M11,8H13V22H11V8Z" /></g></svg>
 
-!define MA_PILLAR(_color)                                 SPRITE_PUT(mdi-pillar, _color)
-!define MA_PILLAR(_color, _scale)                         SPRITE_PUT(mdi-pillar, _color, _scale)
-!define MA_PILLAR(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA PILLAR, mdi-pillar, _color, _scale)
-!define MA_PILLAR(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA PILLAR, mdi-pillar, _color, _scale, _shape)
-!define MA_PILLAR(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA PILLAR, _label, mdi-pillar, _color, _scale, _shape)
-skinparam folderBackgroundColor<<MA PILLAR>> White
+!if %function_exists("$MdiSprite")
+  !unquoted function $MdiPillarImg($color = $MDI_DEFAULT, $scale = "1")
+    !return $MdiSprite(mdiAccountAlert, $color, $scale)
+  !endfunction
+
+  !unquoted function $MdiPillar($alias, $label=$MDI_DEFAULT, $shape=$MDI_DEFAULT, $color=$MDI_DEFAULT, $scale=1, $stereo=$MDI_DEFAULT)
+    !return $MdiSpriteElement("mdiAccountAlert", $alias, $label, $shape, $color, $scale, $stereo)
+  !endfunction
+!endif

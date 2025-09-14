@@ -1,8 +1,11 @@
-sprite mdi-rewind <svg width="48" height="48"><g transform="scale(2)"><path d="M11.5,12L20,18V6M11,18V6L2.5,12L11,18Z" /></g></svg>
+sprite mdiRewind <svg width="48" height="48"><g transform="scale(2)"><path d="M11.5,12L20,18V6M11,18V6L2.5,12L11,18Z" /></g></svg>
 
-!define MA_REWIND(_color)                                 SPRITE_PUT(mdi-rewind, _color)
-!define MA_REWIND(_color, _scale)                         SPRITE_PUT(mdi-rewind, _color, _scale)
-!define MA_REWIND(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA REWIND, mdi-rewind, _color, _scale)
-!define MA_REWIND(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA REWIND, mdi-rewind, _color, _scale, _shape)
-!define MA_REWIND(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA REWIND, _label, mdi-rewind, _color, _scale, _shape)
-skinparam folderBackgroundColor<<MA REWIND>> White
+!if %function_exists("$MdiSprite")
+  !unquoted function $MdiRewindImg($color = $MDI_DEFAULT, $scale = "1")
+    !return $MdiSprite(mdiAccountAlert, $color, $scale)
+  !endfunction
+
+  !unquoted function $MdiRewind($alias, $label=$MDI_DEFAULT, $shape=$MDI_DEFAULT, $color=$MDI_DEFAULT, $scale=1, $stereo=$MDI_DEFAULT)
+    !return $MdiSpriteElement("mdiAccountAlert", $alias, $label, $shape, $color, $scale, $stereo)
+  !endfunction
+!endif

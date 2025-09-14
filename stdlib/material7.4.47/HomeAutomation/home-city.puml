@@ -1,8 +1,0 @@
-sprite mdi-home-city <svg width="48" height="48"><g transform="scale(2)"><path d="M0,21V10L7.5,5L15,10V21H10V14H5V21H0M24,2V21H17V8.93L16,8.27V6H14V6.93L10,4.27V2H24M21,14H19V16H21V14M21,10H19V12H21V10M21,6H19V8H21V6Z" /></g></svg>
-
-!define MA_HOME_CITY(_color)                                 SPRITE_PUT(mdi-home-city, _color)
-!define MA_HOME_CITY(_color, _scale)                         SPRITE_PUT(mdi-home-city, _color, _scale)
-!define MA_HOME_CITY(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA HOME CITY, mdi-home-city, _color, _scale)
-!define MA_HOME_CITY(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA HOME CITY, mdi-home-city, _color, _scale, _shape)
-!define MA_HOME_CITY(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA HOME CITY, _label, mdi-home-city, _color, _scale, _shape)
-skinparam folderBackgroundColor<<MA HOME CITY>> White

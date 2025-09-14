@@ -1,8 +1,0 @@
-sprite mdi-view-split-vertical <svg width="48" height="48"><g transform="scale(2)"><path d="M13,5H21V19H13V5M3,5H11V7H3V5M3,11V9H11V11H3M3,19V17H11V19H3M3,15V13H11V15H3Z" /></g></svg>
-
-!define MA_VIEW_SPLIT_VERTICAL(_color)                                 SPRITE_PUT(mdi-view-split-vertical, _color)
-!define MA_VIEW_SPLIT_VERTICAL(_color, _scale)                         SPRITE_PUT(mdi-view-split-vertical, _color, _scale)
-!define MA_VIEW_SPLIT_VERTICAL(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA VIEW SPLIT VERTICAL, mdi-view-split-vertical, _color, _scale)
-!define MA_VIEW_SPLIT_VERTICAL(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA VIEW SPLIT VERTICAL, mdi-view-split-vertical, _color, _scale, _shape)
-!define MA_VIEW_SPLIT_VERTICAL(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA VIEW SPLIT VERTICAL, _label, mdi-view-split-vertical, _color, _scale, _shape)
-skinparam folderBackgroundColor<<MA VIEW SPLIT VERTICAL>> White

@@ -1,8 +1,0 @@
-sprite mdi-view-stream-outline <svg width="48" height="48"><g transform="scale(2)"><path d="M4 6V18H21V6H4M19 16H6V13H19V16M6 11V8H19V11H6Z" /></g></svg>
-
-!define MA_VIEW_STREAM_OUTLINE(_color)                                 SPRITE_PUT(mdi-view-stream-outline, _color)
-!define MA_VIEW_STREAM_OUTLINE(_color, _scale)                         SPRITE_PUT(mdi-view-stream-outline, _color, _scale)
-!define MA_VIEW_STREAM_OUTLINE(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA VIEW STREAM OUTLINE, mdi-view-stream-outline, _color, _scale)
-!define MA_VIEW_STREAM_OUTLINE(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA VIEW STREAM OUTLINE, mdi-view-stream-outline, _color, _scale, _shape)
-!define MA_VIEW_STREAM_OUTLINE(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA VIEW STREAM OUTLINE, _label, mdi-view-stream-outline, _color, _scale, _shape)
-skinparam folderBackgroundColor<<MA VIEW STREAM OUTLINE>> White

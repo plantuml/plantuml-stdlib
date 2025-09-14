@@ -1,8 +1,0 @@
-sprite mdi-land-plots-circle-variant <svg width="48" height="48"><g transform="scale(2)"><path d="M20 2H4C2.9 2 2 2.9 2 4V20C2 21.1 2.9 22 4 22H20C21.1 22 22 21.1 22 20V4C22 2.9 21.1 2 20 2M20 9C20 11.8 17.8 14 15 14C12.2 14 10 11.8 10 9C10 6.2 12.2 4 15 4C17.8 4 20 6.2 20 9M4 4H8V14H4V4M4 20V16H8V20H4M20 20H10V16H20V20Z" /></g></svg>
-
-!define MA_LAND_PLOTS_CIRCLE_VARIANT(_color)                                 SPRITE_PUT(mdi-land-plots-circle-variant, _color)
-!define MA_LAND_PLOTS_CIRCLE_VARIANT(_color, _scale)                         SPRITE_PUT(mdi-land-plots-circle-variant, _color, _scale)
-!define MA_LAND_PLOTS_CIRCLE_VARIANT(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA LAND PLOTS CIRCLE VARIANT, mdi-land-plots-circle-variant, _color, _scale)
-!define MA_LAND_PLOTS_CIRCLE_VARIANT(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA LAND PLOTS CIRCLE VARIANT, mdi-land-plots-circle-variant, _color, _scale, _shape)
-!define MA_LAND_PLOTS_CIRCLE_VARIANT(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA LAND PLOTS CIRCLE VARIANT, _label, mdi-land-plots-circle-variant, _color, _scale, _shape)
-skinparam folderBackgroundColor<<MA LAND PLOTS CIRCLE VARIANT>> White

@@ -1,8 +1,0 @@
-sprite mdi-check-circle <svg width="48" height="48"><g transform="scale(2)"><path d="M12 2C6.5 2 2 6.5 2 12S6.5 22 12 22 22 17.5 22 12 17.5 2 12 2M10 17L5 12L6.41 10.59L10 14.17L17.59 6.58L19 8L10 17Z" /></g></svg>
-
-!define MA_CHECK_CIRCLE(_color)                                 SPRITE_PUT(mdi-check-circle, _color)
-!define MA_CHECK_CIRCLE(_color, _scale)                         SPRITE_PUT(mdi-check-circle, _color, _scale)
-!define MA_CHECK_CIRCLE(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA CHECK CIRCLE, mdi-check-circle, _color, _scale)
-!define MA_CHECK_CIRCLE(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA CHECK CIRCLE, mdi-check-circle, _color, _scale, _shape)
-!define MA_CHECK_CIRCLE(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA CHECK CIRCLE, _label, mdi-check-circle, _color, _scale, _shape)
-skinparam folderBackgroundColor<<MA CHECK CIRCLE>> White

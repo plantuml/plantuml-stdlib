@@ -1,8 +1,0 @@
-sprite mdi-timer-alert <svg width="48" height="48"><g transform="scale(2)"><path d="M18.45 5.97C18 5.46 17.55 5 17.04 4.56L15.62 6C14.07 4.74 12.12 4 10 4C5.03 4 1 8.03 1 13S5.03 22 10 22C15 22 19 17.97 19 13C19 10.88 18.26 8.93 17.03 7.39L18.45 5.97M11 14H9V7H11V14M13 3H7V1H13V3M23 7V13H21V7H23M21 15H23V17H21V15Z" /></g></svg>
-
-!define MA_TIMER_ALERT(_color)                                 SPRITE_PUT(mdi-timer-alert, _color)
-!define MA_TIMER_ALERT(_color, _scale)                         SPRITE_PUT(mdi-timer-alert, _color, _scale)
-!define MA_TIMER_ALERT(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA TIMER ALERT, mdi-timer-alert, _color, _scale)
-!define MA_TIMER_ALERT(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA TIMER ALERT, mdi-timer-alert, _color, _scale, _shape)
-!define MA_TIMER_ALERT(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA TIMER ALERT, _label, mdi-timer-alert, _color, _scale, _shape)
-skinparam folderBackgroundColor<<MA TIMER ALERT>> White

@@ -1,8 +1,0 @@
-sprite mdi-layers-triple <svg width="48" height="48"><g transform="scale(2)"><path d="M12 0L3 7L4.63 8.27L12 14L19.36 8.27L21 7L12 0M19.37 10.73L12 16.47L4.62 10.74L3 12L12 19L21 12L19.37 10.73M19.37 15.73L12 21.47L4.62 15.74L3 17L12 24L21 17L19.37 15.73Z" /></g></svg>
-
-!define MA_LAYERS_TRIPLE(_color)                                 SPRITE_PUT(mdi-layers-triple, _color)
-!define MA_LAYERS_TRIPLE(_color, _scale)                         SPRITE_PUT(mdi-layers-triple, _color, _scale)
-!define MA_LAYERS_TRIPLE(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA LAYERS TRIPLE, mdi-layers-triple, _color, _scale)
-!define MA_LAYERS_TRIPLE(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA LAYERS TRIPLE, mdi-layers-triple, _color, _scale, _shape)
-!define MA_LAYERS_TRIPLE(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA LAYERS TRIPLE, _label, mdi-layers-triple, _color, _scale, _shape)
-skinparam folderBackgroundColor<<MA LAYERS TRIPLE>> White

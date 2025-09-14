@@ -1,8 +1,0 @@
-sprite mdi-home-export-outline <svg width="48" height="48"><g transform="scale(2)"><path d="M24 13L20 17V14H11V12H20V9L24 13M4 20V12H1L11 3L18 9.3V10H15.79L11 5.69L6 10.19V18H16V16H18V20H4Z" /></g></svg>
-
-!define MA_HOME_EXPORT_OUTLINE(_color)                                 SPRITE_PUT(mdi-home-export-outline, _color)
-!define MA_HOME_EXPORT_OUTLINE(_color, _scale)                         SPRITE_PUT(mdi-home-export-outline, _color, _scale)
-!define MA_HOME_EXPORT_OUTLINE(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA HOME EXPORT OUTLINE, mdi-home-export-outline, _color, _scale)
-!define MA_HOME_EXPORT_OUTLINE(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA HOME EXPORT OUTLINE, mdi-home-export-outline, _color, _scale, _shape)
-!define MA_HOME_EXPORT_OUTLINE(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA HOME EXPORT OUTLINE, _label, mdi-home-export-outline, _color, _scale, _shape)
-skinparam folderBackgroundColor<<MA HOME EXPORT OUTLINE>> White

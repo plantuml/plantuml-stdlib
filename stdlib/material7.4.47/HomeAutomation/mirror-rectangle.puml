@@ -1,8 +1,0 @@
-sprite mdi-mirror-rectangle <svg width="48" height="48"><g transform="scale(2)"><path d="M8.29 10.28L11.53 7.03L12.59 8.09L9.35 11.34L8.29 10.28M8.7 14.61L14.36 8.95L15.42 10L9.76 15.67L8.7 14.61M18 3V21H6V3H18M20 1H4V23H20V1Z" /></g></svg>
-
-!define MA_MIRROR_RECTANGLE(_color)                                 SPRITE_PUT(mdi-mirror-rectangle, _color)
-!define MA_MIRROR_RECTANGLE(_color, _scale)                         SPRITE_PUT(mdi-mirror-rectangle, _color, _scale)
-!define MA_MIRROR_RECTANGLE(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA MIRROR RECTANGLE, mdi-mirror-rectangle, _color, _scale)
-!define MA_MIRROR_RECTANGLE(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA MIRROR RECTANGLE, mdi-mirror-rectangle, _color, _scale, _shape)
-!define MA_MIRROR_RECTANGLE(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA MIRROR RECTANGLE, _label, mdi-mirror-rectangle, _color, _scale, _shape)
-skinparam folderBackgroundColor<<MA MIRROR RECTANGLE>> White

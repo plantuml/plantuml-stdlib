@@ -1,8 +1,0 @@
-sprite mdi-format-strikethrough <svg width="48" height="48"><g transform="scale(2)"><path d="M3,14H21V12H3M5,4V7H10V10H14V7H19V4M10,19H14V16H10V19Z" /></g></svg>
-
-!define MA_FORMAT_STRIKETHROUGH(_color)                                 SPRITE_PUT(mdi-format-strikethrough, _color)
-!define MA_FORMAT_STRIKETHROUGH(_color, _scale)                         SPRITE_PUT(mdi-format-strikethrough, _color, _scale)
-!define MA_FORMAT_STRIKETHROUGH(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA FORMAT STRIKETHROUGH, mdi-format-strikethrough, _color, _scale)
-!define MA_FORMAT_STRIKETHROUGH(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA FORMAT STRIKETHROUGH, mdi-format-strikethrough, _color, _scale, _shape)
-!define MA_FORMAT_STRIKETHROUGH(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA FORMAT STRIKETHROUGH, _label, mdi-format-strikethrough, _color, _scale, _shape)
-skinparam folderBackgroundColor<<MA FORMAT STRIKETHROUGH>> White

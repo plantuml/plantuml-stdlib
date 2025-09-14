@@ -1,8 +1,0 @@
-sprite mdi-text-long <svg width="48" height="48"><g transform="scale(2)"><path d="M4,5H20V7H4V5M4,9H20V11H4V9M4,13H20V15H4V13M4,17H14V19H4V17Z" /></g></svg>
-
-!define MA_TEXT_LONG(_color)                                 SPRITE_PUT(mdi-text-long, _color)
-!define MA_TEXT_LONG(_color, _scale)                         SPRITE_PUT(mdi-text-long, _color, _scale)
-!define MA_TEXT_LONG(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA TEXT LONG, mdi-text-long, _color, _scale)
-!define MA_TEXT_LONG(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA TEXT LONG, mdi-text-long, _color, _scale, _shape)
-!define MA_TEXT_LONG(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA TEXT LONG, _label, mdi-text-long, _color, _scale, _shape)
-skinparam folderBackgroundColor<<MA TEXT LONG>> White

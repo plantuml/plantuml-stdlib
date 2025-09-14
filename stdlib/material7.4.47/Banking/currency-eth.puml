@@ -1,8 +1,0 @@
-sprite mdi-currency-eth <svg width="48" height="48"><g transform="scale(2)"><path d="M6,5H18V7H6M7,11H17V13H7M5.5,17H18.5V19H5.5" /></g></svg>
-
-!define MA_CURRENCY_ETH(_color)                                 SPRITE_PUT(mdi-currency-eth, _color)
-!define MA_CURRENCY_ETH(_color, _scale)                         SPRITE_PUT(mdi-currency-eth, _color, _scale)
-!define MA_CURRENCY_ETH(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA CURRENCY ETH, mdi-currency-eth, _color, _scale)
-!define MA_CURRENCY_ETH(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA CURRENCY ETH, mdi-currency-eth, _color, _scale, _shape)
-!define MA_CURRENCY_ETH(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA CURRENCY ETH, _label, mdi-currency-eth, _color, _scale, _shape)
-skinparam folderBackgroundColor<<MA CURRENCY ETH>> White

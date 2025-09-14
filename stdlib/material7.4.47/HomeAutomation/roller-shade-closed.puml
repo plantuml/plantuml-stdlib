@@ -1,8 +1,0 @@
-sprite mdi-roller-shade-closed <svg width="48" height="48"><g transform="scale(2)"><path d="M20 19V3H4V19H2V21H10.25C10.25 21.97 11.03 22.75 12 22.75S13.75 21.97 13.75 21H22V19H20M6 19V17H11V19H6M13 19V17H18V19H13Z" /></g></svg>
-
-!define MA_ROLLER_SHADE_CLOSED(_color)                                 SPRITE_PUT(mdi-roller-shade-closed, _color)
-!define MA_ROLLER_SHADE_CLOSED(_color, _scale)                         SPRITE_PUT(mdi-roller-shade-closed, _color, _scale)
-!define MA_ROLLER_SHADE_CLOSED(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA ROLLER SHADE CLOSED, mdi-roller-shade-closed, _color, _scale)
-!define MA_ROLLER_SHADE_CLOSED(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA ROLLER SHADE CLOSED, mdi-roller-shade-closed, _color, _scale, _shape)
-!define MA_ROLLER_SHADE_CLOSED(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA ROLLER SHADE CLOSED, _label, mdi-roller-shade-closed, _color, _scale, _shape)
-skinparam folderBackgroundColor<<MA ROLLER SHADE CLOSED>> White

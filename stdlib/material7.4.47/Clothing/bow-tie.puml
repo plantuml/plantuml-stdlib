@@ -1,8 +1,0 @@
-sprite mdi-bow-tie <svg width="48" height="48"><g transform="scale(2)"><path d="M15,14L21,17V7L15,10V14M9,14L3,17V7L9,10V14M10,10H14V14H10V10Z" /></g></svg>
-
-!define MA_BOW_TIE(_color)                                 SPRITE_PUT(mdi-bow-tie, _color)
-!define MA_BOW_TIE(_color, _scale)                         SPRITE_PUT(mdi-bow-tie, _color, _scale)
-!define MA_BOW_TIE(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA BOW TIE, mdi-bow-tie, _color, _scale)
-!define MA_BOW_TIE(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA BOW TIE, mdi-bow-tie, _color, _scale, _shape)
-!define MA_BOW_TIE(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA BOW TIE, _label, mdi-bow-tie, _color, _scale, _shape)
-skinparam folderBackgroundColor<<MA BOW TIE>> White

@@ -1,8 +1,0 @@
-sprite mdi-arrow-top-left-bold-outline <svg width="48" height="48"><g transform="scale(2)"><path d="M14.12,8.46L19.78,14.12L14.12,19.78L8.46,14.12L4.22,18.36V4.22H18.36L14.12,8.46M6.34,13.41L8.46,11.29L14.12,16.95L16.95,14.12L11.29,8.47L13.41,6.34H6.34V13.41Z" /></g></svg>
-
-!define MA_ARROW_TOP_LEFT_BOLD_OUTLINE(_color)                                 SPRITE_PUT(mdi-arrow-top-left-bold-outline, _color)
-!define MA_ARROW_TOP_LEFT_BOLD_OUTLINE(_color, _scale)                         SPRITE_PUT(mdi-arrow-top-left-bold-outline, _color, _scale)
-!define MA_ARROW_TOP_LEFT_BOLD_OUTLINE(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA ARROW TOP LEFT BOLD OUTLINE, mdi-arrow-top-left-bold-outline, _color, _scale)
-!define MA_ARROW_TOP_LEFT_BOLD_OUTLINE(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA ARROW TOP LEFT BOLD OUTLINE, mdi-arrow-top-left-bold-outline, _color, _scale, _shape)
-!define MA_ARROW_TOP_LEFT_BOLD_OUTLINE(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA ARROW TOP LEFT BOLD OUTLINE, _label, mdi-arrow-top-left-bold-outline, _color, _scale, _shape)
-skinparam folderBackgroundColor<<MA ARROW TOP LEFT BOLD OUTLINE>> White

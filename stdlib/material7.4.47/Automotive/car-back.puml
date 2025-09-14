@@ -1,8 +1,0 @@
-sprite mdi-car-back <svg width="48" height="48"><g transform="scale(2)"><path d="M6,11L7,7H17L18,11M18.92,6C18.71,5.4 18.14,5 17.5,5H6.5C5.86,5 5.29,5.4 5.08,6L3,12V20A1,1 0 0,0 4,21H5A1,1 0 0,0 6,20V18H18V20A1,1 0 0,0 19,21H20A1,1 0 0,0 21,20V12L18.92,6M7,16H5V14H7V16M19,16H17V14H19V16M14,16H10V14H14V16Z" /></g></svg>
-
-!define MA_CAR_BACK(_color)                                 SPRITE_PUT(mdi-car-back, _color)
-!define MA_CAR_BACK(_color, _scale)                         SPRITE_PUT(mdi-car-back, _color, _scale)
-!define MA_CAR_BACK(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA CAR BACK, mdi-car-back, _color, _scale)
-!define MA_CAR_BACK(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA CAR BACK, mdi-car-back, _color, _scale, _shape)
-!define MA_CAR_BACK(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA CAR BACK, _label, mdi-car-back, _color, _scale, _shape)
-skinparam folderBackgroundColor<<MA CAR BACK>> White

@@ -1,8 +1,0 @@
-sprite mdi-fast-forward <svg width="48" height="48"><g transform="scale(2)"><path d="M13,6V18L21.5,12M4,18L12.5,12L4,6V18Z" /></g></svg>
-
-!define MA_FAST_FORWARD(_color)                                 SPRITE_PUT(mdi-fast-forward, _color)
-!define MA_FAST_FORWARD(_color, _scale)                         SPRITE_PUT(mdi-fast-forward, _color, _scale)
-!define MA_FAST_FORWARD(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA FAST FORWARD, mdi-fast-forward, _color, _scale)
-!define MA_FAST_FORWARD(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA FAST FORWARD, mdi-fast-forward, _color, _scale, _shape)
-!define MA_FAST_FORWARD(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA FAST FORWARD, _label, mdi-fast-forward, _color, _scale, _shape)
-skinparam folderBackgroundColor<<MA FAST FORWARD>> White

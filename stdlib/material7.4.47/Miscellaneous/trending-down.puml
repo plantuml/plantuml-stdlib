@@ -1,8 +1,0 @@
-sprite mdi-trending-down <svg width="48" height="48"><g transform="scale(2)"><path d="M16,18L18.29,15.71L13.41,10.83L9.41,14.83L2,7.41L3.41,6L9.41,12L13.41,8L19.71,14.29L22,12V18H16Z" /></g></svg>
-
-!define MA_TRENDING_DOWN(_color)                                 SPRITE_PUT(mdi-trending-down, _color)
-!define MA_TRENDING_DOWN(_color, _scale)                         SPRITE_PUT(mdi-trending-down, _color, _scale)
-!define MA_TRENDING_DOWN(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA TRENDING DOWN, mdi-trending-down, _color, _scale)
-!define MA_TRENDING_DOWN(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA TRENDING DOWN, mdi-trending-down, _color, _scale, _shape)
-!define MA_TRENDING_DOWN(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA TRENDING DOWN, _label, mdi-trending-down, _color, _scale, _shape)
-skinparam folderBackgroundColor<<MA TRENDING DOWN>> White

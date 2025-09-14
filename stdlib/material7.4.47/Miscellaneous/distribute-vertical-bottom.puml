@@ -1,8 +1,0 @@
-sprite mdi-distribute-vertical-bottom <svg width="48" height="48"><g transform="scale(2)"><path d="M7 3H17V8H22V10H2V8H7V3M2 19V21H22V19H19V14H5V19H2Z" /></g></svg>
-
-!define MA_DISTRIBUTE_VERTICAL_BOTTOM(_color)                                 SPRITE_PUT(mdi-distribute-vertical-bottom, _color)
-!define MA_DISTRIBUTE_VERTICAL_BOTTOM(_color, _scale)                         SPRITE_PUT(mdi-distribute-vertical-bottom, _color, _scale)
-!define MA_DISTRIBUTE_VERTICAL_BOTTOM(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA DISTRIBUTE VERTICAL BOTTOM, mdi-distribute-vertical-bottom, _color, _scale)
-!define MA_DISTRIBUTE_VERTICAL_BOTTOM(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA DISTRIBUTE VERTICAL BOTTOM, mdi-distribute-vertical-bottom, _color, _scale, _shape)
-!define MA_DISTRIBUTE_VERTICAL_BOTTOM(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA DISTRIBUTE VERTICAL BOTTOM, _label, mdi-distribute-vertical-bottom, _color, _scale, _shape)
-skinparam folderBackgroundColor<<MA DISTRIBUTE VERTICAL BOTTOM>> White

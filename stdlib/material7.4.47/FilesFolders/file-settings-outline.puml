@@ -1,8 +1,0 @@
-sprite mdi-file-settings-outline <svg width="48" height="48"><g transform="scale(2)"><path d="M6 0A2 2 0 0 0 4 2V18A2 2 0 0 0 6 20H18A2 2 0 0 0 20 18V6L14 0H6M6 2H13V7H18V18H6V2M7 22V24H9V22H7M11 22V24H13V22H11M15 22V24H17V22H15Z" /></g></svg>
-
-!define MA_FILE_SETTINGS_OUTLINE(_color)                                 SPRITE_PUT(mdi-file-settings-outline, _color)
-!define MA_FILE_SETTINGS_OUTLINE(_color, _scale)                         SPRITE_PUT(mdi-file-settings-outline, _color, _scale)
-!define MA_FILE_SETTINGS_OUTLINE(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA FILE SETTINGS OUTLINE, mdi-file-settings-outline, _color, _scale)
-!define MA_FILE_SETTINGS_OUTLINE(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA FILE SETTINGS OUTLINE, mdi-file-settings-outline, _color, _scale, _shape)
-!define MA_FILE_SETTINGS_OUTLINE(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA FILE SETTINGS OUTLINE, _label, mdi-file-settings-outline, _color, _scale, _shape)
-skinparam folderBackgroundColor<<MA FILE SETTINGS OUTLINE>> White

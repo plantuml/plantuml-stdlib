@@ -1,8 +1,0 @@
-sprite mdi-format-paragraph <svg width="48" height="48"><g transform="scale(2)"><path d="M13,4A4,4 0 0,1 17,8A4,4 0 0,1 13,12H11V18H9V4H13M13,10A2,2 0 0,0 15,8A2,2 0 0,0 13,6H11V10H13Z" /></g></svg>
-
-!define MA_FORMAT_PARAGRAPH(_color)                                 SPRITE_PUT(mdi-format-paragraph, _color)
-!define MA_FORMAT_PARAGRAPH(_color, _scale)                         SPRITE_PUT(mdi-format-paragraph, _color, _scale)
-!define MA_FORMAT_PARAGRAPH(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA FORMAT PARAGRAPH, mdi-format-paragraph, _color, _scale)
-!define MA_FORMAT_PARAGRAPH(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA FORMAT PARAGRAPH, mdi-format-paragraph, _color, _scale, _shape)
-!define MA_FORMAT_PARAGRAPH(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA FORMAT PARAGRAPH, _label, mdi-format-paragraph, _color, _scale, _shape)
-skinparam folderBackgroundColor<<MA FORMAT PARAGRAPH>> White

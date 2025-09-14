@@ -1,8 +1,0 @@
-sprite mdi-message-plus <svg width="48" height="48"><g transform="scale(2)"><path d="M20,2A2,2 0 0,1 22,4V16A2,2 0 0,1 20,18H6L2,22V4C2,2.89 2.9,2 4,2H20M11,6V9H8V11H11V14H13V11H16V9H13V6H11Z" /></g></svg>
-
-!define MA_MESSAGE_PLUS(_color)                                 SPRITE_PUT(mdi-message-plus, _color)
-!define MA_MESSAGE_PLUS(_color, _scale)                         SPRITE_PUT(mdi-message-plus, _color, _scale)
-!define MA_MESSAGE_PLUS(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA MESSAGE PLUS, mdi-message-plus, _color, _scale)
-!define MA_MESSAGE_PLUS(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA MESSAGE PLUS, mdi-message-plus, _color, _scale, _shape)
-!define MA_MESSAGE_PLUS(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA MESSAGE PLUS, _label, mdi-message-plus, _color, _scale, _shape)
-skinparam folderBackgroundColor<<MA MESSAGE PLUS>> White

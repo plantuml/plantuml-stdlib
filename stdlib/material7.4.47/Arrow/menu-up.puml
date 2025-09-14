@@ -1,8 +1,0 @@
-sprite mdi-menu-up <svg width="48" height="48"><g transform="scale(2)"><path d="M7,15L12,10L17,15H7Z" /></g></svg>
-
-!define MA_MENU_UP(_color)                                 SPRITE_PUT(mdi-menu-up, _color)
-!define MA_MENU_UP(_color, _scale)                         SPRITE_PUT(mdi-menu-up, _color, _scale)
-!define MA_MENU_UP(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA MENU UP, mdi-menu-up, _color, _scale)
-!define MA_MENU_UP(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA MENU UP, mdi-menu-up, _color, _scale, _shape)
-!define MA_MENU_UP(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA MENU UP, _label, mdi-menu-up, _color, _scale, _shape)
-skinparam folderBackgroundColor<<MA MENU UP>> White

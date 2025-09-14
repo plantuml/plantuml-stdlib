@@ -1,8 +1,0 @@
-sprite mdi-elevator-up <svg width="48" height="48"><g transform="scale(2)"><path d="M7 2L11 6H8V10H6V6H3L7 2M17 2L13 6H16V10H18V6H21L17 2M7 12H17C18.11 12 19 12.9 19 14V20C19 21.11 18.11 22 17 22H7C5.9 22 5 21.11 5 20V14C5 12.9 5.9 12 7 12M7 14V20H17V14H7Z" /></g></svg>
-
-!define MA_ELEVATOR_UP(_color)                                 SPRITE_PUT(mdi-elevator-up, _color)
-!define MA_ELEVATOR_UP(_color, _scale)                         SPRITE_PUT(mdi-elevator-up, _color, _scale)
-!define MA_ELEVATOR_UP(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA ELEVATOR UP, mdi-elevator-up, _color, _scale)
-!define MA_ELEVATOR_UP(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA ELEVATOR UP, mdi-elevator-up, _color, _scale, _shape)
-!define MA_ELEVATOR_UP(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA ELEVATOR UP, _label, mdi-elevator-up, _color, _scale, _shape)
-skinparam folderBackgroundColor<<MA ELEVATOR UP>> White

@@ -1,8 +1,0 @@
-sprite mdi-view-sequential <svg width="48" height="48"><g transform="scale(2)"><path d="M3 5H21V9H3V5M3 10H21V14H3V10M3 15H21V19H3V15Z" /></g></svg>
-
-!define MA_VIEW_SEQUENTIAL(_color)                                 SPRITE_PUT(mdi-view-sequential, _color)
-!define MA_VIEW_SEQUENTIAL(_color, _scale)                         SPRITE_PUT(mdi-view-sequential, _color, _scale)
-!define MA_VIEW_SEQUENTIAL(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA VIEW SEQUENTIAL, mdi-view-sequential, _color, _scale)
-!define MA_VIEW_SEQUENTIAL(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA VIEW SEQUENTIAL, mdi-view-sequential, _color, _scale, _shape)
-!define MA_VIEW_SEQUENTIAL(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA VIEW SEQUENTIAL, _label, mdi-view-sequential, _color, _scale, _shape)
-skinparam folderBackgroundColor<<MA VIEW SEQUENTIAL>> White

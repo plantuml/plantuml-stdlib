@@ -1,8 +1,0 @@
-sprite mdi-pause-octagon <svg width="48" height="48"><g transform="scale(2)"><path d="M15.73,3L21,8.27V15.73L15.73,21H8.27L3,15.73V8.27L8.27,3H15.73M15,16V8H13V16H15M11,16V8H9V16H11Z" /></g></svg>
-
-!define MA_PAUSE_OCTAGON(_color)                                 SPRITE_PUT(mdi-pause-octagon, _color)
-!define MA_PAUSE_OCTAGON(_color, _scale)                         SPRITE_PUT(mdi-pause-octagon, _color, _scale)
-!define MA_PAUSE_OCTAGON(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA PAUSE OCTAGON, mdi-pause-octagon, _color, _scale)
-!define MA_PAUSE_OCTAGON(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA PAUSE OCTAGON, mdi-pause-octagon, _color, _scale, _shape)
-!define MA_PAUSE_OCTAGON(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA PAUSE OCTAGON, _label, mdi-pause-octagon, _color, _scale, _shape)
-skinparam folderBackgroundColor<<MA PAUSE OCTAGON>> White

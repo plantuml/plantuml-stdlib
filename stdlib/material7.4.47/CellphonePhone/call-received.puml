@@ -1,8 +1,0 @@
-sprite mdi-call-received <svg width="48" height="48"><g transform="scale(2)"><path d="M20,5.41L18.59,4L7,15.59V9H5V19H15V17H8.41" /></g></svg>
-
-!define MA_CALL_RECEIVED(_color)                                 SPRITE_PUT(mdi-call-received, _color)
-!define MA_CALL_RECEIVED(_color, _scale)                         SPRITE_PUT(mdi-call-received, _color, _scale)
-!define MA_CALL_RECEIVED(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA CALL RECEIVED, mdi-call-received, _color, _scale)
-!define MA_CALL_RECEIVED(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA CALL RECEIVED, mdi-call-received, _color, _scale, _shape)
-!define MA_CALL_RECEIVED(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA CALL RECEIVED, _label, mdi-call-received, _color, _scale, _shape)
-skinparam folderBackgroundColor<<MA CALL RECEIVED>> White

@@ -1,8 +1,0 @@
-sprite mdi-human-child <svg width="48" height="48"><g transform="scale(2)"><path d="M12,2A3,3 0 0,1 15,5A3,3 0 0,1 12,8A3,3 0 0,1 9,5A3,3 0 0,1 12,2M11,22H8V16H6V9H18V16H16V22H13V18H11V22Z" /></g></svg>
-
-!define MA_HUMAN_CHILD(_color)                                 SPRITE_PUT(mdi-human-child, _color)
-!define MA_HUMAN_CHILD(_color, _scale)                         SPRITE_PUT(mdi-human-child, _color, _scale)
-!define MA_HUMAN_CHILD(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA HUMAN CHILD, mdi-human-child, _color, _scale)
-!define MA_HUMAN_CHILD(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA HUMAN CHILD, mdi-human-child, _color, _scale, _shape)
-!define MA_HUMAN_CHILD(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA HUMAN CHILD, _label, mdi-human-child, _color, _scale, _shape)
-skinparam folderBackgroundColor<<MA HUMAN CHILD>> White

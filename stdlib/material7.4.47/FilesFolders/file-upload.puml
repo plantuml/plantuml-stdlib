@@ -1,8 +1,0 @@
-sprite mdi-file-upload <svg width="48" height="48"><g transform="scale(2)"><path d="M14,2H6A2,2 0 0,0 4,4V20A2,2 0 0,0 6,22H18A2,2 0 0,0 20,20V8L14,2M13.5,16V19H10.5V16H8L12,12L16,16H13.5M13,9V3.5L18.5,9H13Z" /></g></svg>
-
-!define MA_FILE_UPLOAD(_color)                                 SPRITE_PUT(mdi-file-upload, _color)
-!define MA_FILE_UPLOAD(_color, _scale)                         SPRITE_PUT(mdi-file-upload, _color, _scale)
-!define MA_FILE_UPLOAD(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA FILE UPLOAD, mdi-file-upload, _color, _scale)
-!define MA_FILE_UPLOAD(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA FILE UPLOAD, mdi-file-upload, _color, _scale, _shape)
-!define MA_FILE_UPLOAD(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA FILE UPLOAD, _label, mdi-file-upload, _color, _scale, _shape)
-skinparam folderBackgroundColor<<MA FILE UPLOAD>> White

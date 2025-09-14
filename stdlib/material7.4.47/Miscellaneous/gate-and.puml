@@ -1,8 +1,0 @@
-sprite mdi-gate-and <svg width="48" height="48"><g transform="scale(2)"><path d="M2,4V20H14A8,8 0 0,0 22,12A8,8 0 0,0 14,4H2M4,6H14A6,6 0 0,1 20,12A6,6 0 0,1 14,18H4V6Z" /></g></svg>
-
-!define MA_GATE_AND(_color)                                 SPRITE_PUT(mdi-gate-and, _color)
-!define MA_GATE_AND(_color, _scale)                         SPRITE_PUT(mdi-gate-and, _color, _scale)
-!define MA_GATE_AND(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA GATE AND, mdi-gate-and, _color, _scale)
-!define MA_GATE_AND(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA GATE AND, mdi-gate-and, _color, _scale, _shape)
-!define MA_GATE_AND(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA GATE AND, _label, mdi-gate-and, _color, _scale, _shape)
-skinparam folderBackgroundColor<<MA GATE AND>> White

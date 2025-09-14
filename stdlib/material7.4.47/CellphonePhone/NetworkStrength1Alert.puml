@@ -1,0 +1,11 @@
+sprite mdiNetworkStrength1Alert <svg width="48" height="48"><g transform="scale(2)"><path d="M21 1L1 21H17V19H11V13.8L19 5.8V9H21M19 11V17H21V11M19 19V21H21V19" /></g></svg>
+
+!if %function_exists("$MdiSprite")
+  !unquoted function $MdiNetworkStrength1AlertImg($color = $MDI_DEFAULT, $scale = "1")
+    !return $MdiSprite(mdiAccountAlert, $color, $scale)
+  !endfunction
+
+  !unquoted function $MdiNetworkStrength1Alert($alias, $label=$MDI_DEFAULT, $shape=$MDI_DEFAULT, $color=$MDI_DEFAULT, $scale=1, $stereo=$MDI_DEFAULT)
+    !return $MdiSpriteElement("mdiAccountAlert", $alias, $label, $shape, $color, $scale, $stereo)
+  !endfunction
+!endif

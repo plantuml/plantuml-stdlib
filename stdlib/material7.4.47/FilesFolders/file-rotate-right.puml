@@ -1,8 +1,0 @@
-sprite mdi-file-rotate-right <svg width="48" height="48"><g transform="scale(2)"><path d="M5 20C3.9 20 3 19.11 3 18V9C3 7.9 3.9 7 5 7H9L13 11V18C13 19.11 12.11 20 11 20H5M11 11.83L8.17 9H8V12H11V11.83M20 11H23L19 15L15 11H18C18 7.69 15.31 5 12 5L11 5.08V3.06L12 3C16.42 3 20 6.58 20 11" /></g></svg>
-
-!define MA_FILE_ROTATE_RIGHT(_color)                                 SPRITE_PUT(mdi-file-rotate-right, _color)
-!define MA_FILE_ROTATE_RIGHT(_color, _scale)                         SPRITE_PUT(mdi-file-rotate-right, _color, _scale)
-!define MA_FILE_ROTATE_RIGHT(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA FILE ROTATE RIGHT, mdi-file-rotate-right, _color, _scale)
-!define MA_FILE_ROTATE_RIGHT(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA FILE ROTATE RIGHT, mdi-file-rotate-right, _color, _scale, _shape)
-!define MA_FILE_ROTATE_RIGHT(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA FILE ROTATE RIGHT, _label, mdi-file-rotate-right, _color, _scale, _shape)
-skinparam folderBackgroundColor<<MA FILE ROTATE RIGHT>> White

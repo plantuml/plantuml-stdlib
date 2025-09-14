@@ -1,8 +1,0 @@
-sprite mdi-file-table-box-multiple-outline <svg width="48" height="48"><g transform="scale(2)"><path d="M3 5V21H19V23H3C1.9 23 1 22.1 1 21V5H3M21 1H7C5.89 1 5 1.89 5 3V17C5 18.1 5.9 19 7 19H21C22.11 19 23 18.11 23 17V3C23 1.9 22.1 1 21 1M21 17H7V3H21V17M11 14H8V16H11V14M15 14H12V16H15V14M11 11H8V13H11V11M15 11H12V13H15V11M11 8H8V10H11V8M15 8H12V10H15V8Z" /></g></svg>
-
-!define MA_FILE_TABLE_BOX_MULTIPLE_OUTLINE(_color)                                 SPRITE_PUT(mdi-file-table-box-multiple-outline, _color)
-!define MA_FILE_TABLE_BOX_MULTIPLE_OUTLINE(_color, _scale)                         SPRITE_PUT(mdi-file-table-box-multiple-outline, _color, _scale)
-!define MA_FILE_TABLE_BOX_MULTIPLE_OUTLINE(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA FILE TABLE BOX MULTIPLE OUTLINE, mdi-file-table-box-multiple-outline, _color, _scale)
-!define MA_FILE_TABLE_BOX_MULTIPLE_OUTLINE(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA FILE TABLE BOX MULTIPLE OUTLINE, mdi-file-table-box-multiple-outline, _color, _scale, _shape)
-!define MA_FILE_TABLE_BOX_MULTIPLE_OUTLINE(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA FILE TABLE BOX MULTIPLE OUTLINE, _label, mdi-file-table-box-multiple-outline, _color, _scale, _shape)
-skinparam folderBackgroundColor<<MA FILE TABLE BOX MULTIPLE OUTLINE>> White

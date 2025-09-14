@@ -1,8 +1,0 @@
-sprite mdi-coach-lamp <svg width="48" height="48"><g transform="scale(2)"><path d="M16 5L15 2H13L12 5L6 8H8L8.6 11H4V7H2V17H4V13H9L10 18L12 20L13 22H15L16 20L18 18L20 8H22M16.16 17H11.84L10 8H18Z" /></g></svg>
-
-!define MA_COACH_LAMP(_color)                                 SPRITE_PUT(mdi-coach-lamp, _color)
-!define MA_COACH_LAMP(_color, _scale)                         SPRITE_PUT(mdi-coach-lamp, _color, _scale)
-!define MA_COACH_LAMP(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA COACH LAMP, mdi-coach-lamp, _color, _scale)
-!define MA_COACH_LAMP(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA COACH LAMP, mdi-coach-lamp, _color, _scale, _shape)
-!define MA_COACH_LAMP(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA COACH LAMP, _label, mdi-coach-lamp, _color, _scale, _shape)
-skinparam folderBackgroundColor<<MA COACH LAMP>> White

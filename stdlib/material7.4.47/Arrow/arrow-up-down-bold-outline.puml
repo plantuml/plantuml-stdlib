@@ -1,8 +1,0 @@
-sprite mdi-arrow-up-down-bold-outline <svg width="48" height="48"><g transform="scale(2)"><path d="M16,10H22L12,0L2,10H8V14H2L12,24L22,14H16V10M14,16H17L12,21L7,16H10V8H7L12,3L17,8H14V16Z" /></g></svg>
-
-!define MA_ARROW_UP_DOWN_BOLD_OUTLINE(_color)                                 SPRITE_PUT(mdi-arrow-up-down-bold-outline, _color)
-!define MA_ARROW_UP_DOWN_BOLD_OUTLINE(_color, _scale)                         SPRITE_PUT(mdi-arrow-up-down-bold-outline, _color, _scale)
-!define MA_ARROW_UP_DOWN_BOLD_OUTLINE(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA ARROW UP DOWN BOLD OUTLINE, mdi-arrow-up-down-bold-outline, _color, _scale)
-!define MA_ARROW_UP_DOWN_BOLD_OUTLINE(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA ARROW UP DOWN BOLD OUTLINE, mdi-arrow-up-down-bold-outline, _color, _scale, _shape)
-!define MA_ARROW_UP_DOWN_BOLD_OUTLINE(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA ARROW UP DOWN BOLD OUTLINE, _label, mdi-arrow-up-down-bold-outline, _color, _scale, _shape)
-skinparam folderBackgroundColor<<MA ARROW UP DOWN BOLD OUTLINE>> White

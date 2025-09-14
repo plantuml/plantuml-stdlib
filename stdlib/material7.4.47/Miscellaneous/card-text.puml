@@ -1,8 +1,0 @@
-sprite mdi-card-text <svg width="48" height="48"><g transform="scale(2)"><path d="M20,20H4A2,2 0 0,1 2,18V6A2,2 0 0,1 4,4H20A2,2 0 0,1 22,6V18A2,2 0 0,1 20,20M5,13V15H16V13H5M5,9V11H19V9H5Z" /></g></svg>
-
-!define MA_CARD_TEXT(_color)                                 SPRITE_PUT(mdi-card-text, _color)
-!define MA_CARD_TEXT(_color, _scale)                         SPRITE_PUT(mdi-card-text, _color, _scale)
-!define MA_CARD_TEXT(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA CARD TEXT, mdi-card-text, _color, _scale)
-!define MA_CARD_TEXT(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA CARD TEXT, mdi-card-text, _color, _scale, _shape)
-!define MA_CARD_TEXT(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA CARD TEXT, _label, mdi-card-text, _color, _scale, _shape)
-skinparam folderBackgroundColor<<MA CARD TEXT>> White

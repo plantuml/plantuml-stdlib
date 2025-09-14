@@ -1,8 +1,0 @@
-sprite mdi-cellphone-link <svg width="48" height="48"><g transform="scale(2)"><path d="M22,17H18V10H22M23,8H17A1,1 0 0,0 16,9V19A1,1 0 0,0 17,20H23A1,1 0 0,0 24,19V9A1,1 0 0,0 23,8M4,6H22V4H4A2,2 0 0,0 2,6V17H0V20H14V17H4V6Z" /></g></svg>
-
-!define MA_CELLPHONE_LINK(_color)                                 SPRITE_PUT(mdi-cellphone-link, _color)
-!define MA_CELLPHONE_LINK(_color, _scale)                         SPRITE_PUT(mdi-cellphone-link, _color, _scale)
-!define MA_CELLPHONE_LINK(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA CELLPHONE LINK, mdi-cellphone-link, _color, _scale)
-!define MA_CELLPHONE_LINK(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA CELLPHONE LINK, mdi-cellphone-link, _color, _scale, _shape)
-!define MA_CELLPHONE_LINK(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA CELLPHONE LINK, _label, mdi-cellphone-link, _color, _scale, _shape)
-skinparam folderBackgroundColor<<MA CELLPHONE LINK>> White

@@ -1,8 +1,0 @@
-sprite mdi-play-pause <svg width="48" height="48"><g transform="scale(2)"><path d="M3,5V19L11,12M13,19H16V5H13M18,5V19H21V5" /></g></svg>
-
-!define MA_PLAY_PAUSE(_color)                                 SPRITE_PUT(mdi-play-pause, _color)
-!define MA_PLAY_PAUSE(_color, _scale)                         SPRITE_PUT(mdi-play-pause, _color, _scale)
-!define MA_PLAY_PAUSE(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA PLAY PAUSE, mdi-play-pause, _color, _scale)
-!define MA_PLAY_PAUSE(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA PLAY PAUSE, mdi-play-pause, _color, _scale, _shape)
-!define MA_PLAY_PAUSE(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA PLAY PAUSE, _label, mdi-play-pause, _color, _scale, _shape)
-skinparam folderBackgroundColor<<MA PLAY PAUSE>> White

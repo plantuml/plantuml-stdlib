@@ -1,5 +1,19 @@
-#!/usr/bin/env sh
+#!/usr/bin/env bash
 set -e
+
+to_upper_camel_case() {
+  local input="$1"
+  local result=""
+  
+  # Split by hyphen and capitalize first letter of each part
+  IFS='-' read -ra PARTS <<< "$input"
+  for part in "${PARTS[@]}"; do
+    # Capitalize first letter of each part
+    result+="$(tr '[:lower:]' '[:upper:]' <<< ${part:0:1})${part:1}"
+  done
+  
+  echo "$result"
+}
 
 cd ../_intermediate_
 
@@ -57,11 +71,12 @@ jq -r 'keys[]' categorized.json | while read -r category; do
 
     for i in $(seq 0 $((icon_count - 1))); do
         icon=$(jq -r ".\"$category\"[$i]" categorized.json)
+        fileName=$(to_upper_camel_case "${icon}")
         if [ -f "converted/${icon}.puml" ]; then
-            cp "converted/${icon}.puml" "categorized/$category/${icon}.puml"
-            echo "    Copied: ${icon}.puml"
+            cp "converted/${icon}.puml" "categorized/$category/${fileName}.puml"
+            echo "    Copied: ${fileName}.puml"
 
-            cat "categorized/$category/${icon}.puml" >> "categorized/$category/all.puml"
+            cat "categorized/$category/${fileName}.puml" >> "categorized/$category/all.puml"
             echo >> "categorized/$category/all.puml"
         else
             echo "    Warning: ${icon}.puml not found in converted folder"

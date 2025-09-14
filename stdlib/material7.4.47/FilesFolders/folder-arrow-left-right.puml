@@ -1,8 +1,0 @@
-sprite mdi-folder-arrow-left-right <svg width="48" height="48"><g transform="scale(2)"><path d="M13 19C13 19.34 13.04 19.67 13.09 20H4C2.9 20 2 19.11 2 18V6C2 4.89 2.89 4 4 4H10L12 6H20C21.1 6 22 6.89 22 8V13.81C21.12 13.3 20.1 13 19 13C15.69 13 13 15.69 13 19M23 17L20 14.5V16H16V18H20V19.5L23 17M18 18.5L15 21L18 23.5V22H22V20H18V18.5Z" /></g></svg>
-
-!define MA_FOLDER_ARROW_LEFT_RIGHT(_color)                                 SPRITE_PUT(mdi-folder-arrow-left-right, _color)
-!define MA_FOLDER_ARROW_LEFT_RIGHT(_color, _scale)                         SPRITE_PUT(mdi-folder-arrow-left-right, _color, _scale)
-!define MA_FOLDER_ARROW_LEFT_RIGHT(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA FOLDER ARROW LEFT RIGHT, mdi-folder-arrow-left-right, _color, _scale)
-!define MA_FOLDER_ARROW_LEFT_RIGHT(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA FOLDER ARROW LEFT RIGHT, mdi-folder-arrow-left-right, _color, _scale, _shape)
-!define MA_FOLDER_ARROW_LEFT_RIGHT(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA FOLDER ARROW LEFT RIGHT, _label, mdi-folder-arrow-left-right, _color, _scale, _shape)
-skinparam folderBackgroundColor<<MA FOLDER ARROW LEFT RIGHT>> White

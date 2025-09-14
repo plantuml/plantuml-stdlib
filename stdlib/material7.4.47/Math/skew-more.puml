@@ -1,8 +1,0 @@
-sprite mdi-skew-more <svg width="48" height="48"><g transform="scale(2)"><path d="M12.5,11L10.41,20H5.5L7.59,11H12.5M15,9H6L3,22H12L15,9M21,6L17,2V5H9V7H17V10L21,6Z" /></g></svg>
-
-!define MA_SKEW_MORE(_color)                                 SPRITE_PUT(mdi-skew-more, _color)
-!define MA_SKEW_MORE(_color, _scale)                         SPRITE_PUT(mdi-skew-more, _color, _scale)
-!define MA_SKEW_MORE(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA SKEW MORE, mdi-skew-more, _color, _scale)
-!define MA_SKEW_MORE(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA SKEW MORE, mdi-skew-more, _color, _scale, _shape)
-!define MA_SKEW_MORE(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA SKEW MORE, _label, mdi-skew-more, _color, _scale, _shape)
-skinparam folderBackgroundColor<<MA SKEW MORE>> White

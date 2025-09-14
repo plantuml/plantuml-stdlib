@@ -1,8 +1,0 @@
-sprite mdi-check-bold <svg width="48" height="48"><g transform="scale(2)"><path d="M9,20.42L2.79,14.21L5.62,11.38L9,14.77L18.88,4.88L21.71,7.71L9,20.42Z" /></g></svg>
-
-!define MA_CHECK_BOLD(_color)                                 SPRITE_PUT(mdi-check-bold, _color)
-!define MA_CHECK_BOLD(_color, _scale)                         SPRITE_PUT(mdi-check-bold, _color, _scale)
-!define MA_CHECK_BOLD(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA CHECK BOLD, mdi-check-bold, _color, _scale)
-!define MA_CHECK_BOLD(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA CHECK BOLD, mdi-check-bold, _color, _scale, _shape)
-!define MA_CHECK_BOLD(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA CHECK BOLD, _label, mdi-check-bold, _color, _scale, _shape)
-skinparam folderBackgroundColor<<MA CHECK BOLD>> White

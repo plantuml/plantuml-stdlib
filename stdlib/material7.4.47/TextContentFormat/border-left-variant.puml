@@ -1,8 +1,0 @@
-sprite mdi-border-left-variant <svg width="48" height="48"><g transform="scale(2)"><path d="M15,5H17V3H15M19,21H21V19H19M19,13H21V11H19M19,5H21V3H19M19,17H21V15H19M15,21H17V19H15M19,9H21V7H19M3,21H5V3H3M7,5H9V3H7M7,21H9V19H7M11,5H13V3H11M11,21H13V19H11V21Z" /></g></svg>
-
-!define MA_BORDER_LEFT_VARIANT(_color)                                 SPRITE_PUT(mdi-border-left-variant, _color)
-!define MA_BORDER_LEFT_VARIANT(_color, _scale)                         SPRITE_PUT(mdi-border-left-variant, _color, _scale)
-!define MA_BORDER_LEFT_VARIANT(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA BORDER LEFT VARIANT, mdi-border-left-variant, _color, _scale)
-!define MA_BORDER_LEFT_VARIANT(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA BORDER LEFT VARIANT, mdi-border-left-variant, _color, _scale, _shape)
-!define MA_BORDER_LEFT_VARIANT(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA BORDER LEFT VARIANT, _label, mdi-border-left-variant, _color, _scale, _shape)
-skinparam folderBackgroundColor<<MA BORDER LEFT VARIANT>> White

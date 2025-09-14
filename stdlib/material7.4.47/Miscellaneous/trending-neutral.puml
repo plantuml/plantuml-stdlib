@@ -1,8 +1,0 @@
-sprite mdi-trending-neutral <svg width="48" height="48"><g transform="scale(2)"><path d="M22,12L18,8V11H3V13H18V16L22,12Z" /></g></svg>
-
-!define MA_TRENDING_NEUTRAL(_color)                                 SPRITE_PUT(mdi-trending-neutral, _color)
-!define MA_TRENDING_NEUTRAL(_color, _scale)                         SPRITE_PUT(mdi-trending-neutral, _color, _scale)
-!define MA_TRENDING_NEUTRAL(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA TRENDING NEUTRAL, mdi-trending-neutral, _color, _scale)
-!define MA_TRENDING_NEUTRAL(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA TRENDING NEUTRAL, mdi-trending-neutral, _color, _scale, _shape)
-!define MA_TRENDING_NEUTRAL(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA TRENDING NEUTRAL, _label, mdi-trending-neutral, _color, _scale, _shape)
-skinparam folderBackgroundColor<<MA TRENDING NEUTRAL>> White

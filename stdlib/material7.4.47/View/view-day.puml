@@ -1,8 +1,0 @@
-sprite mdi-view-day <svg width="48" height="48"><g transform="scale(2)"><path d="M2,3V6H21V3M20,8H3A1,1 0 0,0 2,9V15A1,1 0 0,0 3,16H20A1,1 0 0,0 21,15V9A1,1 0 0,0 20,8M2,21H21V18H2V21Z" /></g></svg>
-
-!define MA_VIEW_DAY(_color)                                 SPRITE_PUT(mdi-view-day, _color)
-!define MA_VIEW_DAY(_color, _scale)                         SPRITE_PUT(mdi-view-day, _color, _scale)
-!define MA_VIEW_DAY(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA VIEW DAY, mdi-view-day, _color, _scale)
-!define MA_VIEW_DAY(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA VIEW DAY, mdi-view-day, _color, _scale, _shape)
-!define MA_VIEW_DAY(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA VIEW DAY, _label, mdi-view-day, _color, _scale, _shape)
-skinparam folderBackgroundColor<<MA VIEW DAY>> White

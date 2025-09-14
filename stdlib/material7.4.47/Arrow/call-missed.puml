@@ -1,8 +1,0 @@
-sprite mdi-call-missed <svg width="48" height="48"><g transform="scale(2)"><path d="M19.59,7L12,14.59L6.41,9H11V7H3V15H5V10.41L12,17.41L21,8.41" /></g></svg>
-
-!define MA_CALL_MISSED(_color)                                 SPRITE_PUT(mdi-call-missed, _color)
-!define MA_CALL_MISSED(_color, _scale)                         SPRITE_PUT(mdi-call-missed, _color, _scale)
-!define MA_CALL_MISSED(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA CALL MISSED, mdi-call-missed, _color, _scale)
-!define MA_CALL_MISSED(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA CALL MISSED, mdi-call-missed, _color, _scale, _shape)
-!define MA_CALL_MISSED(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA CALL MISSED, _label, mdi-call-missed, _color, _scale, _shape)
-skinparam folderBackgroundColor<<MA CALL MISSED>> White

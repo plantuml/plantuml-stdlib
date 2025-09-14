@@ -1,8 +1,0 @@
-sprite mdi-file-arrow-left-right <svg width="48" height="48"><g transform="scale(2)"><path d="M19 13C19.34 13 19.67 13.04 20 13.09V8L14 2H6C4.89 2 4 2.89 4 4V20C4 21.11 4.89 22 6 22H13.81C13.3 21.12 13 20.1 13 19C13 15.69 15.69 13 19 13M13 3.5L18.5 9H13V3.5M20 19.5V18H16V16H20V14.5L23 17L20 19.5M18 20H22V22H18V23.5L15 21L18 18.5V20Z" /></g></svg>
-
-!define MA_FILE_ARROW_LEFT_RIGHT(_color)                                 SPRITE_PUT(mdi-file-arrow-left-right, _color)
-!define MA_FILE_ARROW_LEFT_RIGHT(_color, _scale)                         SPRITE_PUT(mdi-file-arrow-left-right, _color, _scale)
-!define MA_FILE_ARROW_LEFT_RIGHT(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA FILE ARROW LEFT RIGHT, mdi-file-arrow-left-right, _color, _scale)
-!define MA_FILE_ARROW_LEFT_RIGHT(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA FILE ARROW LEFT RIGHT, mdi-file-arrow-left-right, _color, _scale, _shape)
-!define MA_FILE_ARROW_LEFT_RIGHT(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA FILE ARROW LEFT RIGHT, _label, mdi-file-arrow-left-right, _color, _scale, _shape)
-skinparam folderBackgroundColor<<MA FILE ARROW LEFT RIGHT>> White

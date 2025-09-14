@@ -1,8 +1,0 @@
-sprite mdi-printer-pos-outline <svg width="48" height="48"><g transform="scale(2)"><path d="M18 10H17V4H7V10H6C4.89 10 4 10.9 4 12V19H20V12C20 10.9 19.11 10 18 10M9 6H15V10H9V6M18 17H6V12H18V17M17 15H13V13H17V15Z" /></g></svg>
-
-!define MA_PRINTER_POS_OUTLINE(_color)                                 SPRITE_PUT(mdi-printer-pos-outline, _color)
-!define MA_PRINTER_POS_OUTLINE(_color, _scale)                         SPRITE_PUT(mdi-printer-pos-outline, _color, _scale)
-!define MA_PRINTER_POS_OUTLINE(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA PRINTER POS OUTLINE, mdi-printer-pos-outline, _color, _scale)
-!define MA_PRINTER_POS_OUTLINE(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA PRINTER POS OUTLINE, mdi-printer-pos-outline, _color, _scale, _shape)
-!define MA_PRINTER_POS_OUTLINE(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA PRINTER POS OUTLINE, _label, mdi-printer-pos-outline, _color, _scale, _shape)
-skinparam folderBackgroundColor<<MA PRINTER POS OUTLINE>> White

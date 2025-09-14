@@ -1,8 +1,0 @@
-sprite mdi-view-agenda-outline <svg width="48" height="48"><g transform="scale(2)"><path d="M21 13H3A1 1 0 0 0 2 14V20A1 1 0 0 0 3 21H21A1 1 0 0 0 22 20V14A1 1 0 0 0 21 13M20 19H4V15H20M21 3H3A1 1 0 0 0 2 4V10A1 1 0 0 0 3 11H21A1 1 0 0 0 22 10V4A1 1 0 0 0 21 3M20 9H4V5H20Z" /></g></svg>
-
-!define MA_VIEW_AGENDA_OUTLINE(_color)                                 SPRITE_PUT(mdi-view-agenda-outline, _color)
-!define MA_VIEW_AGENDA_OUTLINE(_color, _scale)                         SPRITE_PUT(mdi-view-agenda-outline, _color, _scale)
-!define MA_VIEW_AGENDA_OUTLINE(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA VIEW AGENDA OUTLINE, mdi-view-agenda-outline, _color, _scale)
-!define MA_VIEW_AGENDA_OUTLINE(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA VIEW AGENDA OUTLINE, mdi-view-agenda-outline, _color, _scale, _shape)
-!define MA_VIEW_AGENDA_OUTLINE(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA VIEW AGENDA OUTLINE, _label, mdi-view-agenda-outline, _color, _scale, _shape)
-skinparam folderBackgroundColor<<MA VIEW AGENDA OUTLINE>> White

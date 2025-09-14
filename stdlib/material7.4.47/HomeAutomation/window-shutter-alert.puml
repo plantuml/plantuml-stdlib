@@ -1,8 +1,0 @@
-sprite mdi-window-shutter-alert <svg width="48" height="48"><g transform="scale(2)"><path d="M2 4H20V8H18V20H16V8H6V20H4V8H2V4M7 9H15V11H7V9M7 12H15V14H7V12M20 19V17H22V19H20M20 15V10H22V15H20Z" /></g></svg>
-
-!define MA_WINDOW_SHUTTER_ALERT(_color)                                 SPRITE_PUT(mdi-window-shutter-alert, _color)
-!define MA_WINDOW_SHUTTER_ALERT(_color, _scale)                         SPRITE_PUT(mdi-window-shutter-alert, _color, _scale)
-!define MA_WINDOW_SHUTTER_ALERT(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA WINDOW SHUTTER ALERT, mdi-window-shutter-alert, _color, _scale)
-!define MA_WINDOW_SHUTTER_ALERT(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA WINDOW SHUTTER ALERT, mdi-window-shutter-alert, _color, _scale, _shape)
-!define MA_WINDOW_SHUTTER_ALERT(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA WINDOW SHUTTER ALERT, _label, mdi-window-shutter-alert, _color, _scale, _shape)
-skinparam folderBackgroundColor<<MA WINDOW SHUTTER ALERT>> White

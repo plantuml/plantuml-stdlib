@@ -1,8 +1,0 @@
-sprite mdi-view-compact-outline <svg width="48" height="48"><g transform="scale(2)"><path d="M3,5V19H22V5H3M5,7H20V11H5V7M5,17V13H9V17H5M11,17V13H20V17H11Z" /></g></svg>
-
-!define MA_VIEW_COMPACT_OUTLINE(_color)                                 SPRITE_PUT(mdi-view-compact-outline, _color)
-!define MA_VIEW_COMPACT_OUTLINE(_color, _scale)                         SPRITE_PUT(mdi-view-compact-outline, _color, _scale)
-!define MA_VIEW_COMPACT_OUTLINE(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA VIEW COMPACT OUTLINE, mdi-view-compact-outline, _color, _scale)
-!define MA_VIEW_COMPACT_OUTLINE(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA VIEW COMPACT OUTLINE, mdi-view-compact-outline, _color, _scale, _shape)
-!define MA_VIEW_COMPACT_OUTLINE(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA VIEW COMPACT OUTLINE, _label, mdi-view-compact-outline, _color, _scale, _shape)
-skinparam folderBackgroundColor<<MA VIEW COMPACT OUTLINE>> White

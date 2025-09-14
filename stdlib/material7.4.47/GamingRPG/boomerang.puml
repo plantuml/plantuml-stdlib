@@ -1,8 +1,11 @@
-sprite mdi-boomerang <svg width="48" height="48"><g transform="scale(2)"><path d="M10 2H4C2.9 2 2 2.9 2 4S2.9 6 4 6H8L10 2M18 2C20.2 2 22 3.8 22 6V12L18 14C18 9.6 14.4 6 10 6L12 2H18M18 20V16L22 14V20C22 21.1 21.1 22 20 22S18 21.1 18 20Z" /></g></svg>
+sprite mdiBoomerang <svg width="48" height="48"><g transform="scale(2)"><path d="M10 2H4C2.9 2 2 2.9 2 4S2.9 6 4 6H8L10 2M18 2C20.2 2 22 3.8 22 6V12L18 14C18 9.6 14.4 6 10 6L12 2H18M18 20V16L22 14V20C22 21.1 21.1 22 20 22S18 21.1 18 20Z" /></g></svg>
 
-!define MA_BOOMERANG(_color)                                 SPRITE_PUT(mdi-boomerang, _color)
-!define MA_BOOMERANG(_color, _scale)                         SPRITE_PUT(mdi-boomerang, _color, _scale)
-!define MA_BOOMERANG(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA BOOMERANG, mdi-boomerang, _color, _scale)
-!define MA_BOOMERANG(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA BOOMERANG, mdi-boomerang, _color, _scale, _shape)
-!define MA_BOOMERANG(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA BOOMERANG, _label, mdi-boomerang, _color, _scale, _shape)
-skinparam folderBackgroundColor<<MA BOOMERANG>> White
+!if %function_exists("$MdiSprite")
+  !unquoted function $MdiBoomerangImg($color = $MDI_DEFAULT, $scale = "1")
+    !return $MdiSprite(mdiAccountAlert, $color, $scale)
+  !endfunction
+
+  !unquoted function $MdiBoomerang($alias, $label=$MDI_DEFAULT, $shape=$MDI_DEFAULT, $color=$MDI_DEFAULT, $scale=1, $stereo=$MDI_DEFAULT)
+    !return $MdiSpriteElement("mdiAccountAlert", $alias, $label, $shape, $color, $scale, $stereo)
+  !endfunction
+!endif

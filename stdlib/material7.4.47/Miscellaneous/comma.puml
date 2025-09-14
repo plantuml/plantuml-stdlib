@@ -1,8 +1,11 @@
-sprite mdi-comma <svg width="48" height="48"><g transform="scale(2)"><path d="M7,3H16.95V12.96L12.96,20.94H8L11.97,12.96H7V3Z" /></g></svg>
+sprite mdiComma <svg width="48" height="48"><g transform="scale(2)"><path d="M7,3H16.95V12.96L12.96,20.94H8L11.97,12.96H7V3Z" /></g></svg>
 
-!define MA_COMMA(_color)                                 SPRITE_PUT(mdi-comma, _color)
-!define MA_COMMA(_color, _scale)                         SPRITE_PUT(mdi-comma, _color, _scale)
-!define MA_COMMA(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA COMMA, mdi-comma, _color, _scale)
-!define MA_COMMA(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA COMMA, mdi-comma, _color, _scale, _shape)
-!define MA_COMMA(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA COMMA, _label, mdi-comma, _color, _scale, _shape)
-skinparam folderBackgroundColor<<MA COMMA>> White
+!if %function_exists("$MdiSprite")
+  !unquoted function $MdiCommaImg($color = $MDI_DEFAULT, $scale = "1")
+    !return $MdiSprite(mdiAccountAlert, $color, $scale)
+  !endfunction
+
+  !unquoted function $MdiComma($alias, $label=$MDI_DEFAULT, $shape=$MDI_DEFAULT, $color=$MDI_DEFAULT, $scale=1, $stereo=$MDI_DEFAULT)
+    !return $MdiSpriteElement("mdiAccountAlert", $alias, $label, $shape, $color, $scale, $stereo)
+  !endfunction
+!endif

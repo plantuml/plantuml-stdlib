@@ -1,8 +1,0 @@
-sprite mdi-led-off <svg width="48" height="48"><g transform="scale(2)"><path d="M12,6A4,4 0 0,0 8,10V16H6V18H9V23H11V18H13V23H15V18H18V16H16V10A4,4 0 0,0 12,6Z" /></g></svg>
-
-!define MA_LED_OFF(_color)                                 SPRITE_PUT(mdi-led-off, _color)
-!define MA_LED_OFF(_color, _scale)                         SPRITE_PUT(mdi-led-off, _color, _scale)
-!define MA_LED_OFF(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA LED OFF, mdi-led-off, _color, _scale)
-!define MA_LED_OFF(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA LED OFF, mdi-led-off, _color, _scale, _shape)
-!define MA_LED_OFF(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA LED OFF, _label, mdi-led-off, _color, _scale, _shape)
-skinparam folderBackgroundColor<<MA LED OFF>> White

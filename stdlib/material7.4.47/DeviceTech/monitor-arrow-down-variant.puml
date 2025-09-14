@@ -1,8 +1,0 @@
-sprite mdi-monitor-arrow-down-variant <svg width="48" height="48"><g transform="scale(2)"><path d="M17 14L22 9L20.6 7.6L18 10.2V3H16V10.2L13.4 7.6L12 9L17 14M23 14V16C23 17.1 22.1 18 21 18H14V20H16V22H8V20H10V18H3C1.9 18 1 17.1 1 16V4C1 2.9 1.9 2 3 2H12V4H3V16H21V14H23Z" /></g></svg>
-
-!define MA_MONITOR_ARROW_DOWN_VARIANT(_color)                                 SPRITE_PUT(mdi-monitor-arrow-down-variant, _color)
-!define MA_MONITOR_ARROW_DOWN_VARIANT(_color, _scale)                         SPRITE_PUT(mdi-monitor-arrow-down-variant, _color, _scale)
-!define MA_MONITOR_ARROW_DOWN_VARIANT(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA MONITOR ARROW DOWN VARIANT, mdi-monitor-arrow-down-variant, _color, _scale)
-!define MA_MONITOR_ARROW_DOWN_VARIANT(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA MONITOR ARROW DOWN VARIANT, mdi-monitor-arrow-down-variant, _color, _scale, _shape)
-!define MA_MONITOR_ARROW_DOWN_VARIANT(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA MONITOR ARROW DOWN VARIANT, _label, mdi-monitor-arrow-down-variant, _color, _scale, _shape)
-skinparam folderBackgroundColor<<MA MONITOR ARROW DOWN VARIANT>> White

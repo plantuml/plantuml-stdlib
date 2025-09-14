@@ -1,8 +1,0 @@
-sprite mdi-phone-rotate-landscape <svg width="48" height="48"><g transform="scale(2)"><path d="M9,1H3A2,2 0 0,0 1,3V16A2,2 0 0,0 3,18H9A2,2 0 0,0 11,16V3A2,2 0 0,0 9,1M9,15H3V3H9V15M21,13H13V15H21V21H9V20H6V21A2,2 0 0,0 8,23H21A2,2 0 0,0 23,21V15A2,2 0 0,0 21,13M23,10L19,8L20.91,7.09C19.74,4.31 17,2.5 14,2.5V1A9,9 0 0,1 23,10Z" /></g></svg>
-
-!define MA_PHONE_ROTATE_LANDSCAPE(_color)                                 SPRITE_PUT(mdi-phone-rotate-landscape, _color)
-!define MA_PHONE_ROTATE_LANDSCAPE(_color, _scale)                         SPRITE_PUT(mdi-phone-rotate-landscape, _color, _scale)
-!define MA_PHONE_ROTATE_LANDSCAPE(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA PHONE ROTATE LANDSCAPE, mdi-phone-rotate-landscape, _color, _scale)
-!define MA_PHONE_ROTATE_LANDSCAPE(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA PHONE ROTATE LANDSCAPE, mdi-phone-rotate-landscape, _color, _scale, _shape)
-!define MA_PHONE_ROTATE_LANDSCAPE(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA PHONE ROTATE LANDSCAPE, _label, mdi-phone-rotate-landscape, _color, _scale, _shape)
-skinparam folderBackgroundColor<<MA PHONE ROTATE LANDSCAPE>> White

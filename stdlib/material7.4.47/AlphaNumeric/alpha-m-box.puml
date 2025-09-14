@@ -1,8 +1,0 @@
-sprite mdi-alpha-m-box <svg width="48" height="48"><g transform="scale(2)"><path d="M9,7A2,2 0 0,0 7,9V17H9V9H11V16H13V9H15V17H17V9A2,2 0 0,0 15,7H9M5,3H19A2,2 0 0,1 21,5V19A2,2 0 0,1 19,21H5A2,2 0 0,1 3,19V5A2,2 0 0,1 5,3Z" /></g></svg>
-
-!define MA_ALPHA_M_BOX(_color)                                 SPRITE_PUT(mdi-alpha-m-box, _color)
-!define MA_ALPHA_M_BOX(_color, _scale)                         SPRITE_PUT(mdi-alpha-m-box, _color, _scale)
-!define MA_ALPHA_M_BOX(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA ALPHA M BOX, mdi-alpha-m-box, _color, _scale)
-!define MA_ALPHA_M_BOX(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA ALPHA M BOX, mdi-alpha-m-box, _color, _scale, _shape)
-!define MA_ALPHA_M_BOX(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA ALPHA M BOX, _label, mdi-alpha-m-box, _color, _scale, _shape)
-skinparam folderBackgroundColor<<MA ALPHA M BOX>> White

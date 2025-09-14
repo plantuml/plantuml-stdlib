@@ -1,8 +1,0 @@
-sprite mdi-database-settings-outline <svg width="48" height="48"><g transform="scale(2)"><path d="M12 3C7.58 3 4 4.79 4 7V17C4 18.2 5.06 19.27 6.73 20H17.27C18.94 19.27 20 18.2 20 17V7C20 4.79 16.42 3 12 3M18 17C18 17.5 15.87 19 12 19S6 17.5 6 17V14.77C7.61 15.55 9.72 16 12 16S16.39 15.55 18 14.77V17M18 12.45C16.7 13.4 14.42 14 12 14S7.3 13.4 6 12.45V9.64C7.47 10.47 9.61 11 12 11S16.53 10.47 18 9.64V12.45M12 9C8.13 9 6 7.5 6 7S8.13 5 12 5 18 6.5 18 7 15.87 9 12 9M7 22H9V24H7V22M15 22H17V24H15V22M11 22H13V24H11V22Z" /></g></svg>
-
-!define MA_DATABASE_SETTINGS_OUTLINE(_color)                                 SPRITE_PUT(mdi-database-settings-outline, _color)
-!define MA_DATABASE_SETTINGS_OUTLINE(_color, _scale)                         SPRITE_PUT(mdi-database-settings-outline, _color, _scale)
-!define MA_DATABASE_SETTINGS_OUTLINE(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA DATABASE SETTINGS OUTLINE, mdi-database-settings-outline, _color, _scale)
-!define MA_DATABASE_SETTINGS_OUTLINE(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA DATABASE SETTINGS OUTLINE, mdi-database-settings-outline, _color, _scale, _shape)
-!define MA_DATABASE_SETTINGS_OUTLINE(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA DATABASE SETTINGS OUTLINE, _label, mdi-database-settings-outline, _color, _scale, _shape)
-skinparam folderBackgroundColor<<MA DATABASE SETTINGS OUTLINE>> White

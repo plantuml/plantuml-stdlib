@@ -1,8 +1,0 @@
-sprite mdi-thermometer-high <svg width="48" height="48"><g transform="scale(2)"><path d="M15 13V5A3 3 0 0 0 9 5V13A5 5 0 1 0 15 13M12 4A1 1 0 0 1 13 5H11A1 1 0 0 1 12 4Z" /></g></svg>
-
-!define MA_THERMOMETER_HIGH(_color)                                 SPRITE_PUT(mdi-thermometer-high, _color)
-!define MA_THERMOMETER_HIGH(_color, _scale)                         SPRITE_PUT(mdi-thermometer-high, _color, _scale)
-!define MA_THERMOMETER_HIGH(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA THERMOMETER HIGH, mdi-thermometer-high, _color, _scale)
-!define MA_THERMOMETER_HIGH(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA THERMOMETER HIGH, mdi-thermometer-high, _color, _scale, _shape)
-!define MA_THERMOMETER_HIGH(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA THERMOMETER HIGH, _label, mdi-thermometer-high, _color, _scale, _shape)
-skinparam folderBackgroundColor<<MA THERMOMETER HIGH>> White

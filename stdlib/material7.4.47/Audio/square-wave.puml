@@ -1,8 +1,0 @@
-sprite mdi-square-wave <svg width="48" height="48"><g transform="scale(2)"><path d="M2 2V12H4V4H11V22H22V12H20V20H13V2H2Z" /></g></svg>
-
-!define MA_SQUARE_WAVE(_color)                                 SPRITE_PUT(mdi-square-wave, _color)
-!define MA_SQUARE_WAVE(_color, _scale)                         SPRITE_PUT(mdi-square-wave, _color, _scale)
-!define MA_SQUARE_WAVE(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA SQUARE WAVE, mdi-square-wave, _color, _scale)
-!define MA_SQUARE_WAVE(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA SQUARE WAVE, mdi-square-wave, _color, _scale, _shape)
-!define MA_SQUARE_WAVE(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA SQUARE WAVE, _label, mdi-square-wave, _color, _scale, _shape)
-skinparam folderBackgroundColor<<MA SQUARE WAVE>> White

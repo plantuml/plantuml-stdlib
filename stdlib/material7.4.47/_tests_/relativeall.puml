@@ -1,0 +1,25 @@
+@startuml
+' all.puml includes existing sdtlib sprites, therefore it cannot be used for the test (!include ../all.puml)
+' relativeall.puml should be used in tests. 
+   
+' convert it with additional command line argument -DMDI_TEST_INCLUDE="./.." to use locally
+!if %variable_exists("MDI_TEST_INCLUDE")
+  !$file = %get_variable_value("MDI_TEST_INCLUDE") + "/all.json"
+!else
+  !$file = "https://raw.githubusercontent.com/kirchsth/plantuml-stdlib/refs/heads/master/stdlib/material7.4.47/all.json"
+!endif
+
+   ' TODO: local load is not working at the moment (details unclear).
+   ' TODO: load via GitHub branch produces timeout
+ 
+    !$lib = %load_json($file)
+    !foreach $item in $lib
+!if %variable_exists("MDI_TEST_INCLUDE")
+       !$collection = %get_variable_value("MDI_TEST_INCLUDE") + "/"+ $item+ "/all.puml"
+!else
+       !$collection = "https://raw.githubusercontent.com/kirchsth/plantuml-stdlib/refs/heads/master/stdlib/material7.4.47/"+ $item+ "/all.puml"
+!endif
+        !include $collection
+        ' A -> B : $collection
+    !endfor
+@enduml

@@ -1,8 +1,11 @@
-sprite mdi-resistor <svg width="48" height="48"><g transform="scale(2)"><path d="M2,11H7L10.07,15.35L13.11,4L18,11H22V13H17L13.93,8.65L10.89,20L6,13H2V11Z" /></g></svg>
+sprite mdiResistor <svg width="48" height="48"><g transform="scale(2)"><path d="M2,11H7L10.07,15.35L13.11,4L18,11H22V13H17L13.93,8.65L10.89,20L6,13H2V11Z" /></g></svg>
 
-!define MA_RESISTOR(_color)                                 SPRITE_PUT(mdi-resistor, _color)
-!define MA_RESISTOR(_color, _scale)                         SPRITE_PUT(mdi-resistor, _color, _scale)
-!define MA_RESISTOR(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA RESISTOR, mdi-resistor, _color, _scale)
-!define MA_RESISTOR(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA RESISTOR, mdi-resistor, _color, _scale, _shape)
-!define MA_RESISTOR(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA RESISTOR, _label, mdi-resistor, _color, _scale, _shape)
-skinparam folderBackgroundColor<<MA RESISTOR>> White
+!if %function_exists("$MdiSprite")
+  !unquoted function $MdiResistorImg($color = $MDI_DEFAULT, $scale = "1")
+    !return $MdiSprite(mdiAccountAlert, $color, $scale)
+  !endfunction
+
+  !unquoted function $MdiResistor($alias, $label=$MDI_DEFAULT, $shape=$MDI_DEFAULT, $color=$MDI_DEFAULT, $scale=1, $stereo=$MDI_DEFAULT)
+    !return $MdiSpriteElement("mdiAccountAlert", $alias, $label, $shape, $color, $scale, $stereo)
+  !endfunction
+!endif

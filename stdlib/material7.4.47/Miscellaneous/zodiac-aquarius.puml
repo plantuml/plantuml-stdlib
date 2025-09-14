@@ -1,8 +1,0 @@
-sprite mdi-zodiac-aquarius <svg width="48" height="48"><g transform="scale(2)"><path d="M15,12.41L12,9.41L9,12.41L6,9.41L3.71,11.71L2.29,10.29L6,6.59L9,9.59L12,6.59L15,9.59L18,6.59L21.71,10.29L20.29,11.71L18,9.41L15,12.41M18,15.41L20.29,17.71L21.71,16.29L18,12.59L15,15.59L12,12.59L9,15.59L6,12.59L2.29,16.29L3.71,17.71L6,15.41L9,18.41L12,15.41L15,18.41L18,15.41Z" /></g></svg>
-
-!define MA_ZODIAC_AQUARIUS(_color)                                 SPRITE_PUT(mdi-zodiac-aquarius, _color)
-!define MA_ZODIAC_AQUARIUS(_color, _scale)                         SPRITE_PUT(mdi-zodiac-aquarius, _color, _scale)
-!define MA_ZODIAC_AQUARIUS(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA ZODIAC AQUARIUS, mdi-zodiac-aquarius, _color, _scale)
-!define MA_ZODIAC_AQUARIUS(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA ZODIAC AQUARIUS, mdi-zodiac-aquarius, _color, _scale, _shape)
-!define MA_ZODIAC_AQUARIUS(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA ZODIAC AQUARIUS, _label, mdi-zodiac-aquarius, _color, _scale, _shape)
-skinparam folderBackgroundColor<<MA ZODIAC AQUARIUS>> White

@@ -1,8 +1,0 @@
-sprite mdi-tab-plus <svg width="48" height="48"><g transform="scale(2)"><path d="M3,3A2,2 0 0,0 1,5V19A2,2 0 0,0 3,21H21A2,2 0 0,0 23,19V5A2,2 0 0,0 21,3H3M3,5H13V9H21V19H3V5M10,10V13H7V15H10V18H12V15H15V13H12V10H10Z" /></g></svg>
-
-!define MA_TAB_PLUS(_color)                                 SPRITE_PUT(mdi-tab-plus, _color)
-!define MA_TAB_PLUS(_color, _scale)                         SPRITE_PUT(mdi-tab-plus, _color, _scale)
-!define MA_TAB_PLUS(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA TAB PLUS, mdi-tab-plus, _color, _scale)
-!define MA_TAB_PLUS(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA TAB PLUS, mdi-tab-plus, _color, _scale, _shape)
-!define MA_TAB_PLUS(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA TAB PLUS, _label, mdi-tab-plus, _color, _scale, _shape)
-skinparam folderBackgroundColor<<MA TAB PLUS>> White

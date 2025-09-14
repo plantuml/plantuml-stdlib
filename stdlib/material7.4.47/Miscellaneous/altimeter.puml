@@ -1,8 +1,11 @@
-sprite mdi-altimeter <svg width="48" height="48"><g transform="scale(2)"><path d="M7,3V5H17V3H7M9,7V9H15V7H9M2,7.96V16.04L6.03,12L2,7.96M22.03,7.96L18,12L22.03,16.04V7.96M7,11V13H17V11H7M9,15V17H15V15H9M7,19V21H17V19H7Z" /></g></svg>
+sprite mdiAltimeter <svg width="48" height="48"><g transform="scale(2)"><path d="M7,3V5H17V3H7M9,7V9H15V7H9M2,7.96V16.04L6.03,12L2,7.96M22.03,7.96L18,12L22.03,16.04V7.96M7,11V13H17V11H7M9,15V17H15V15H9M7,19V21H17V19H7Z" /></g></svg>
 
-!define MA_ALTIMETER(_color)                                 SPRITE_PUT(mdi-altimeter, _color)
-!define MA_ALTIMETER(_color, _scale)                         SPRITE_PUT(mdi-altimeter, _color, _scale)
-!define MA_ALTIMETER(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA ALTIMETER, mdi-altimeter, _color, _scale)
-!define MA_ALTIMETER(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA ALTIMETER, mdi-altimeter, _color, _scale, _shape)
-!define MA_ALTIMETER(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA ALTIMETER, _label, mdi-altimeter, _color, _scale, _shape)
-skinparam folderBackgroundColor<<MA ALTIMETER>> White
+!if %function_exists("$MdiSprite")
+  !unquoted function $MdiAltimeterImg($color = $MDI_DEFAULT, $scale = "1")
+    !return $MdiSprite(mdiAccountAlert, $color, $scale)
+  !endfunction
+
+  !unquoted function $MdiAltimeter($alias, $label=$MDI_DEFAULT, $shape=$MDI_DEFAULT, $color=$MDI_DEFAULT, $scale=1, $stereo=$MDI_DEFAULT)
+    !return $MdiSpriteElement("mdiAccountAlert", $alias, $label, $shape, $color, $scale, $stereo)
+  !endfunction
+!endif

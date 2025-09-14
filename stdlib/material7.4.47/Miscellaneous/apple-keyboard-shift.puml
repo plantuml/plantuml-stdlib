@@ -1,8 +1,0 @@
-sprite mdi-apple-keyboard-shift <svg width="48" height="48"><g transform="scale(2)"><path d="M15,18V12H17.17L12,6.83L6.83,12H9V18H15M12,4L22,14H17V20H7V14H2L12,4Z" /></g></svg>
-
-!define MA_APPLE_KEYBOARD_SHIFT(_color)                                 SPRITE_PUT(mdi-apple-keyboard-shift, _color)
-!define MA_APPLE_KEYBOARD_SHIFT(_color, _scale)                         SPRITE_PUT(mdi-apple-keyboard-shift, _color, _scale)
-!define MA_APPLE_KEYBOARD_SHIFT(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA APPLE KEYBOARD SHIFT, mdi-apple-keyboard-shift, _color, _scale)
-!define MA_APPLE_KEYBOARD_SHIFT(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA APPLE KEYBOARD SHIFT, mdi-apple-keyboard-shift, _color, _scale, _shape)
-!define MA_APPLE_KEYBOARD_SHIFT(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA APPLE KEYBOARD SHIFT, _label, mdi-apple-keyboard-shift, _color, _scale, _shape)
-skinparam folderBackgroundColor<<MA APPLE KEYBOARD SHIFT>> White

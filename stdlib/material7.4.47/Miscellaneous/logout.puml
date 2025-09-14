@@ -1,8 +1,11 @@
-sprite mdi-logout <svg width="48" height="48"><g transform="scale(2)"><path d="M17 7L15.59 8.41L18.17 11H8V13H18.17L15.59 15.58L17 17L22 12M4 5H12V3H4C2.9 3 2 3.9 2 5V19C2 20.1 2.9 21 4 21H12V19H4V5Z" /></g></svg>
+sprite mdiLogout <svg width="48" height="48"><g transform="scale(2)"><path d="M17 7L15.59 8.41L18.17 11H8V13H18.17L15.59 15.58L17 17L22 12M4 5H12V3H4C2.9 3 2 3.9 2 5V19C2 20.1 2.9 21 4 21H12V19H4V5Z" /></g></svg>
 
-!define MA_LOGOUT(_color)                                 SPRITE_PUT(mdi-logout, _color)
-!define MA_LOGOUT(_color, _scale)                         SPRITE_PUT(mdi-logout, _color, _scale)
-!define MA_LOGOUT(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA LOGOUT, mdi-logout, _color, _scale)
-!define MA_LOGOUT(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA LOGOUT, mdi-logout, _color, _scale, _shape)
-!define MA_LOGOUT(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA LOGOUT, _label, mdi-logout, _color, _scale, _shape)
-skinparam folderBackgroundColor<<MA LOGOUT>> White
+!if %function_exists("$MdiSprite")
+  !unquoted function $MdiLogoutImg($color = $MDI_DEFAULT, $scale = "1")
+    !return $MdiSprite(mdiAccountAlert, $color, $scale)
+  !endfunction
+
+  !unquoted function $MdiLogout($alias, $label=$MDI_DEFAULT, $shape=$MDI_DEFAULT, $color=$MDI_DEFAULT, $scale=1, $stereo=$MDI_DEFAULT)
+    !return $MdiSpriteElement("mdiAccountAlert", $alias, $label, $shape, $color, $scale, $stereo)
+  !endfunction
+!endif

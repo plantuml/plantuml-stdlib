@@ -1,8 +1,0 @@
-sprite mdi-email-variant <svg width="48" height="48"><g transform="scale(2)"><path d="M12,13L2,6.76V6C2,4.89 2.89,4 4,4H20A2,2 0 0,1 22,6V6.75L12,13M22,18A2,2 0 0,1 20,20H4C2.89,20 2,19.1 2,18V9.11L4,10.36V18H20V10.36L22,9.11V18Z" /></g></svg>
-
-!define MA_EMAIL_VARIANT(_color)                                 SPRITE_PUT(mdi-email-variant, _color)
-!define MA_EMAIL_VARIANT(_color, _scale)                         SPRITE_PUT(mdi-email-variant, _color, _scale)
-!define MA_EMAIL_VARIANT(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA EMAIL VARIANT, mdi-email-variant, _color, _scale)
-!define MA_EMAIL_VARIANT(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA EMAIL VARIANT, mdi-email-variant, _color, _scale, _shape)
-!define MA_EMAIL_VARIANT(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA EMAIL VARIANT, _label, mdi-email-variant, _color, _scale, _shape)
-skinparam folderBackgroundColor<<MA EMAIL VARIANT>> White

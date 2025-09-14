@@ -1,8 +1,11 @@
-sprite mdi-stairs <svg width="48" height="48"><g transform="scale(2)"><path d="M15,5V9H11V13H7V17H3V20H10V16H14V12H18V8H22V5H15Z" /></g></svg>
+sprite mdiStairs <svg width="48" height="48"><g transform="scale(2)"><path d="M15,5V9H11V13H7V17H3V20H10V16H14V12H18V8H22V5H15Z" /></g></svg>
 
-!define MA_STAIRS(_color)                                 SPRITE_PUT(mdi-stairs, _color)
-!define MA_STAIRS(_color, _scale)                         SPRITE_PUT(mdi-stairs, _color, _scale)
-!define MA_STAIRS(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA STAIRS, mdi-stairs, _color, _scale)
-!define MA_STAIRS(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA STAIRS, mdi-stairs, _color, _scale, _shape)
-!define MA_STAIRS(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA STAIRS, _label, mdi-stairs, _color, _scale, _shape)
-skinparam folderBackgroundColor<<MA STAIRS>> White
+!if %function_exists("$MdiSprite")
+  !unquoted function $MdiStairsImg($color = $MDI_DEFAULT, $scale = "1")
+    !return $MdiSprite(mdiAccountAlert, $color, $scale)
+  !endfunction
+
+  !unquoted function $MdiStairs($alias, $label=$MDI_DEFAULT, $shape=$MDI_DEFAULT, $color=$MDI_DEFAULT, $scale=1, $stereo=$MDI_DEFAULT)
+    !return $MdiSpriteElement("mdiAccountAlert", $alias, $label, $shape, $color, $scale, $stereo)
+  !endfunction
+!endif

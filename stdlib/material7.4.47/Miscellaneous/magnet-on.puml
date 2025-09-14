@@ -1,8 +1,0 @@
-sprite mdi-magnet-on <svg width="48" height="48"><g transform="scale(2)"><path d="M3,7V13A9,9 0 0,0 12,22A9,9 0 0,0 21,13V7H17V13A5,5 0 0,1 12,18A5,5 0 0,1 7,13V7M17,5H21V2H17M3,5H7V2H3M13,1.5L9,9H11V14.5L15,7H13V1.5Z" /></g></svg>
-
-!define MA_MAGNET_ON(_color)                                 SPRITE_PUT(mdi-magnet-on, _color)
-!define MA_MAGNET_ON(_color, _scale)                         SPRITE_PUT(mdi-magnet-on, _color, _scale)
-!define MA_MAGNET_ON(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA MAGNET ON, mdi-magnet-on, _color, _scale)
-!define MA_MAGNET_ON(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA MAGNET ON, mdi-magnet-on, _color, _scale, _shape)
-!define MA_MAGNET_ON(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA MAGNET ON, _label, mdi-magnet-on, _color, _scale, _shape)
-skinparam folderBackgroundColor<<MA MAGNET ON>> White

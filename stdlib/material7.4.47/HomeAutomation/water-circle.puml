@@ -1,8 +1,0 @@
-sprite mdi-water-circle <svg width="48" height="48"><g transform="scale(2)"><path d="M12 2C6.5 2 2 6.5 2 12S6.5 22 12 22 22 17.5 22 12 17.5 2 12 2M12 19C9.24 19 7 16.76 7 14C7 10.67 12 5.04 12 5.04S17 10.67 17 14C17 16.76 14.76 19 12 19Z" /></g></svg>
-
-!define MA_WATER_CIRCLE(_color)                                 SPRITE_PUT(mdi-water-circle, _color)
-!define MA_WATER_CIRCLE(_color, _scale)                         SPRITE_PUT(mdi-water-circle, _color, _scale)
-!define MA_WATER_CIRCLE(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA WATER CIRCLE, mdi-water-circle, _color, _scale)
-!define MA_WATER_CIRCLE(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA WATER CIRCLE, mdi-water-circle, _color, _scale, _shape)
-!define MA_WATER_CIRCLE(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA WATER CIRCLE, _label, mdi-water-circle, _color, _scale, _shape)
-skinparam folderBackgroundColor<<MA WATER CIRCLE>> White

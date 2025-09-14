@@ -1,8 +1,0 @@
-sprite mdi-close-box-outline <svg width="48" height="48"><g transform="scale(2)"><path d="M19,3H5A2,2 0 0,0 3,5V19A2,2 0 0,0 5,21H19A2,2 0 0,0 21,19V5A2,2 0 0,0 19,3M19,19H5V5H19V19M17,8.4L13.4,12L17,15.6L15.6,17L12,13.4L8.4,17L7,15.6L10.6,12L7,8.4L8.4,7L12,10.6L15.6,7L17,8.4Z" /></g></svg>
-
-!define MA_CLOSE_BOX_OUTLINE(_color)                                 SPRITE_PUT(mdi-close-box-outline, _color)
-!define MA_CLOSE_BOX_OUTLINE(_color, _scale)                         SPRITE_PUT(mdi-close-box-outline, _color, _scale)
-!define MA_CLOSE_BOX_OUTLINE(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA CLOSE BOX OUTLINE, mdi-close-box-outline, _color, _scale)
-!define MA_CLOSE_BOX_OUTLINE(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA CLOSE BOX OUTLINE, mdi-close-box-outline, _color, _scale, _shape)
-!define MA_CLOSE_BOX_OUTLINE(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA CLOSE BOX OUTLINE, _label, mdi-close-box-outline, _color, _scale, _shape)
-skinparam folderBackgroundColor<<MA CLOSE BOX OUTLINE>> White

@@ -1,8 +1,0 @@
-sprite mdi-numeric-9-plus-box-multiple <svg width="48" height="48"><g transform="scale(2)"><path d="M11,9V8H12V9H11M21,1A2,2 0 0,1 23,3V17A2,2 0 0,1 21,19H7A2,2 0 0,1 5,17V3A2,2 0 0,1 7,1H21M3,5V21H19V23H3A2,2 0 0,1 1,21V5H3M15,9V11H17V13H19V11H21V9H19V7H17V9H15M14,12V8C14,6.89 13.1,6 12,6H11A2,2 0 0,0 9,8V9C9,10.11 9.9,11 11,11H12V12H9V14H12A2,2 0 0,0 14,12Z" /></g></svg>
-
-!define MA_NUMERIC_9_PLUS_BOX_MULTIPLE(_color)                                 SPRITE_PUT(mdi-numeric-9-plus-box-multiple, _color)
-!define MA_NUMERIC_9_PLUS_BOX_MULTIPLE(_color, _scale)                         SPRITE_PUT(mdi-numeric-9-plus-box-multiple, _color, _scale)
-!define MA_NUMERIC_9_PLUS_BOX_MULTIPLE(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA NUMERIC 9 PLUS BOX MULTIPLE, mdi-numeric-9-plus-box-multiple, _color, _scale)
-!define MA_NUMERIC_9_PLUS_BOX_MULTIPLE(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA NUMERIC 9 PLUS BOX MULTIPLE, mdi-numeric-9-plus-box-multiple, _color, _scale, _shape)
-!define MA_NUMERIC_9_PLUS_BOX_MULTIPLE(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA NUMERIC 9 PLUS BOX MULTIPLE, _label, mdi-numeric-9-plus-box-multiple, _color, _scale, _shape)
-skinparam folderBackgroundColor<<MA NUMERIC 9 PLUS BOX MULTIPLE>> White

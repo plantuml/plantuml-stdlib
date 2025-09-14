@@ -1,8 +1,11 @@
-sprite mdi-tie <svg width="48" height="48"><g transform="scale(2)"><path d="M6,2L10,6L7,17L12,22L17,17L14,6L18,2Z" /></g></svg>
+sprite mdiTie <svg width="48" height="48"><g transform="scale(2)"><path d="M6,2L10,6L7,17L12,22L17,17L14,6L18,2Z" /></g></svg>
 
-!define MA_TIE(_color)                                 SPRITE_PUT(mdi-tie, _color)
-!define MA_TIE(_color, _scale)                         SPRITE_PUT(mdi-tie, _color, _scale)
-!define MA_TIE(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA TIE, mdi-tie, _color, _scale)
-!define MA_TIE(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA TIE, mdi-tie, _color, _scale, _shape)
-!define MA_TIE(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA TIE, _label, mdi-tie, _color, _scale, _shape)
-skinparam folderBackgroundColor<<MA TIE>> White
+!if %function_exists("$MdiSprite")
+  !unquoted function $MdiTieImg($color = $MDI_DEFAULT, $scale = "1")
+    !return $MdiSprite(mdiAccountAlert, $color, $scale)
+  !endfunction
+
+  !unquoted function $MdiTie($alias, $label=$MDI_DEFAULT, $shape=$MDI_DEFAULT, $color=$MDI_DEFAULT, $scale=1, $stereo=$MDI_DEFAULT)
+    !return $MdiSpriteElement("mdiAccountAlert", $alias, $label, $shape, $color, $scale, $stereo)
+  !endfunction
+!endif

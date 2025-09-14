@@ -1,8 +1,0 @@
-sprite mdi-view-sequential-outline <svg width="48" height="48"><g transform="scale(2)"><path d="M3 5V19H21V5H3M19 7V9H5V7H19M19 11V13H5V11H19M5 17V15H19V17H5Z" /></g></svg>
-
-!define MA_VIEW_SEQUENTIAL_OUTLINE(_color)                                 SPRITE_PUT(mdi-view-sequential-outline, _color)
-!define MA_VIEW_SEQUENTIAL_OUTLINE(_color, _scale)                         SPRITE_PUT(mdi-view-sequential-outline, _color, _scale)
-!define MA_VIEW_SEQUENTIAL_OUTLINE(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA VIEW SEQUENTIAL OUTLINE, mdi-view-sequential-outline, _color, _scale)
-!define MA_VIEW_SEQUENTIAL_OUTLINE(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA VIEW SEQUENTIAL OUTLINE, mdi-view-sequential-outline, _color, _scale, _shape)
-!define MA_VIEW_SEQUENTIAL_OUTLINE(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA VIEW SEQUENTIAL OUTLINE, _label, mdi-view-sequential-outline, _color, _scale, _shape)
-skinparam folderBackgroundColor<<MA VIEW SEQUENTIAL OUTLINE>> White

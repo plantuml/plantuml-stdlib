@@ -1,8 +1,0 @@
-sprite mdi-cloud-off <svg width="48" height="48"><g transform="scale(2)"><path d="M19.8 22.6L17.15 20H6.5Q4.2 20 2.6 18.4T1 14.5Q1 12.58 2.19 11.08 3.38 9.57 5.25 9.15 5.33 8.95 5.4 8.76 5.5 8.57 5.55 8.35L1.4 4.2L2.8 2.8L21.2 21.2M21.6 18.75L8.05 5.23Q8.93 4.63 9.91 4.31 10.9 4 12 4 14.93 4 16.96 6.04 19 8.07 19 11 20.73 11.2 21.86 12.5 23 13.78 23 15.5 23 16.5 22.63 17.31 22.25 18.15 21.6 18.75Z" /></g></svg>
-
-!define MA_CLOUD_OFF(_color)                                 SPRITE_PUT(mdi-cloud-off, _color)
-!define MA_CLOUD_OFF(_color, _scale)                         SPRITE_PUT(mdi-cloud-off, _color, _scale)
-!define MA_CLOUD_OFF(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA CLOUD OFF, mdi-cloud-off, _color, _scale)
-!define MA_CLOUD_OFF(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA CLOUD OFF, mdi-cloud-off, _color, _scale, _shape)
-!define MA_CLOUD_OFF(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA CLOUD OFF, _label, mdi-cloud-off, _color, _scale, _shape)
-skinparam folderBackgroundColor<<MA CLOUD OFF>> White

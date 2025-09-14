@@ -1,8 +1,0 @@
-sprite mdi-view-grid <svg width="48" height="48"><g transform="scale(2)"><path d="M3,11H11V3H3M3,21H11V13H3M13,21H21V13H13M13,3V11H21V3" /></g></svg>
-
-!define MA_VIEW_GRID(_color)                                 SPRITE_PUT(mdi-view-grid, _color)
-!define MA_VIEW_GRID(_color, _scale)                         SPRITE_PUT(mdi-view-grid, _color, _scale)
-!define MA_VIEW_GRID(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA VIEW GRID, mdi-view-grid, _color, _scale)
-!define MA_VIEW_GRID(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA VIEW GRID, mdi-view-grid, _color, _scale, _shape)
-!define MA_VIEW_GRID(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA VIEW GRID, _label, mdi-view-grid, _color, _scale, _shape)
-skinparam folderBackgroundColor<<MA VIEW GRID>> White

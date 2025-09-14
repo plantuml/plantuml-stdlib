@@ -1,8 +1,0 @@
-sprite mdi-border-style <svg width="48" height="48"><g transform="scale(2)"><path d="M15,21H17V19H15M19,21H21V19H19M7,21H9V19H7M11,21H13V19H11M19,17H21V15H19M19,13H21V11H19M3,3V21H5V5H21V3M19,9H21V7H19" /></g></svg>
-
-!define MA_BORDER_STYLE(_color)                                 SPRITE_PUT(mdi-border-style, _color)
-!define MA_BORDER_STYLE(_color, _scale)                         SPRITE_PUT(mdi-border-style, _color, _scale)
-!define MA_BORDER_STYLE(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA BORDER STYLE, mdi-border-style, _color, _scale)
-!define MA_BORDER_STYLE(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA BORDER STYLE, mdi-border-style, _color, _scale, _shape)
-!define MA_BORDER_STYLE(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA BORDER STYLE, _label, mdi-border-style, _color, _scale, _shape)
-skinparam folderBackgroundColor<<MA BORDER STYLE>> White

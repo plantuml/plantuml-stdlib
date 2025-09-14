@@ -1,8 +1,0 @@
-sprite mdi-distribute-horizontal-right <svg width="48" height="48"><g transform="scale(2)"><path d="M3 17V7H8V2H10V22H8V17H3M19 22H21V2H19V5H14V19H19V22Z" /></g></svg>
-
-!define MA_DISTRIBUTE_HORIZONTAL_RIGHT(_color)                                 SPRITE_PUT(mdi-distribute-horizontal-right, _color)
-!define MA_DISTRIBUTE_HORIZONTAL_RIGHT(_color, _scale)                         SPRITE_PUT(mdi-distribute-horizontal-right, _color, _scale)
-!define MA_DISTRIBUTE_HORIZONTAL_RIGHT(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA DISTRIBUTE HORIZONTAL RIGHT, mdi-distribute-horizontal-right, _color, _scale)
-!define MA_DISTRIBUTE_HORIZONTAL_RIGHT(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA DISTRIBUTE HORIZONTAL RIGHT, mdi-distribute-horizontal-right, _color, _scale, _shape)
-!define MA_DISTRIBUTE_HORIZONTAL_RIGHT(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA DISTRIBUTE HORIZONTAL RIGHT, _label, mdi-distribute-horizontal-right, _color, _scale, _shape)
-skinparam folderBackgroundColor<<MA DISTRIBUTE HORIZONTAL RIGHT>> White

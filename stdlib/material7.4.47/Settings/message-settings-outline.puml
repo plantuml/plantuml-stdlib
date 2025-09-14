@@ -1,8 +1,0 @@
-sprite mdi-message-settings-outline <svg width="48" height="48"><g transform="scale(2)"><path d="M20 2H4C2.9 2 2 2.9 2 4V22L6 18H20C21.1 18 22 17.1 22 16V4C22 2.9 21.1 2 20 2M20 16H5.2L4 17.2V4H20V16M11 24H13V22H11V24M7 24H9V22H7V24M15 24H17V22H15V24" /></g></svg>
-
-!define MA_MESSAGE_SETTINGS_OUTLINE(_color)                                 SPRITE_PUT(mdi-message-settings-outline, _color)
-!define MA_MESSAGE_SETTINGS_OUTLINE(_color, _scale)                         SPRITE_PUT(mdi-message-settings-outline, _color, _scale)
-!define MA_MESSAGE_SETTINGS_OUTLINE(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA MESSAGE SETTINGS OUTLINE, mdi-message-settings-outline, _color, _scale)
-!define MA_MESSAGE_SETTINGS_OUTLINE(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA MESSAGE SETTINGS OUTLINE, mdi-message-settings-outline, _color, _scale, _shape)
-!define MA_MESSAGE_SETTINGS_OUTLINE(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA MESSAGE SETTINGS OUTLINE, _label, mdi-message-settings-outline, _color, _scale, _shape)
-skinparam folderBackgroundColor<<MA MESSAGE SETTINGS OUTLINE>> White

@@ -1,8 +1,0 @@
-sprite mdi-numeric-4-box-multiple <svg width="48" height="48"><g transform="scale(2)"><path d="M3,5V21H19V23H3A2,2 0 0,1 1,21V5H3M21,1A2,2 0 0,1 23,3V17A2,2 0 0,1 21,19H7A2,2 0 0,1 5,17V3A2,2 0 0,1 7,1H21M15,15H17V5H15V9H13V5H11V11H15V15Z" /></g></svg>
-
-!define MA_NUMERIC_4_BOX_MULTIPLE(_color)                                 SPRITE_PUT(mdi-numeric-4-box-multiple, _color)
-!define MA_NUMERIC_4_BOX_MULTIPLE(_color, _scale)                         SPRITE_PUT(mdi-numeric-4-box-multiple, _color, _scale)
-!define MA_NUMERIC_4_BOX_MULTIPLE(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA NUMERIC 4 BOX MULTIPLE, mdi-numeric-4-box-multiple, _color, _scale)
-!define MA_NUMERIC_4_BOX_MULTIPLE(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA NUMERIC 4 BOX MULTIPLE, mdi-numeric-4-box-multiple, _color, _scale, _shape)
-!define MA_NUMERIC_4_BOX_MULTIPLE(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA NUMERIC 4 BOX MULTIPLE, _label, mdi-numeric-4-box-multiple, _color, _scale, _shape)
-skinparam folderBackgroundColor<<MA NUMERIC 4 BOX MULTIPLE>> White

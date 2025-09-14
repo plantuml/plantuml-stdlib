@@ -1,8 +1,0 @@
-sprite mdi-menu-close <svg width="48" height="48"><g transform="scale(2)"><path d="M3 6H13V8H3V6M3 16H13V18H3V16M3 11H15V13H3V11M16 7L14.58 8.39L18.14 12L14.58 15.61L16 17L21 12L16 7Z" /></g></svg>
-
-!define MA_MENU_CLOSE(_color)                                 SPRITE_PUT(mdi-menu-close, _color)
-!define MA_MENU_CLOSE(_color, _scale)                         SPRITE_PUT(mdi-menu-close, _color, _scale)
-!define MA_MENU_CLOSE(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA MENU CLOSE, mdi-menu-close, _color, _scale)
-!define MA_MENU_CLOSE(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA MENU CLOSE, mdi-menu-close, _color, _scale, _shape)
-!define MA_MENU_CLOSE(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA MENU CLOSE, _label, mdi-menu-close, _color, _scale, _shape)
-skinparam folderBackgroundColor<<MA MENU CLOSE>> White

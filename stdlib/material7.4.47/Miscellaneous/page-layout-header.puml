@@ -1,8 +1,0 @@
-sprite mdi-page-layout-header <svg width="48" height="48"><g transform="scale(2)"><path d="M6,2H18A2,2 0 0,1 20,4V20A2,2 0 0,1 18,22H6A2,2 0 0,1 4,20V4A2,2 0 0,1 6,2M6,4V8H18V4H6Z" /></g></svg>
-
-!define MA_PAGE_LAYOUT_HEADER(_color)                                 SPRITE_PUT(mdi-page-layout-header, _color)
-!define MA_PAGE_LAYOUT_HEADER(_color, _scale)                         SPRITE_PUT(mdi-page-layout-header, _color, _scale)
-!define MA_PAGE_LAYOUT_HEADER(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA PAGE LAYOUT HEADER, mdi-page-layout-header, _color, _scale)
-!define MA_PAGE_LAYOUT_HEADER(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA PAGE LAYOUT HEADER, mdi-page-layout-header, _color, _scale, _shape)
-!define MA_PAGE_LAYOUT_HEADER(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA PAGE LAYOUT HEADER, _label, mdi-page-layout-header, _color, _scale, _shape)
-skinparam folderBackgroundColor<<MA PAGE LAYOUT HEADER>> White

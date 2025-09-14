@@ -1,8 +1,0 @@
-sprite mdi-star-crescent <svg width="48" height="48"><g transform="scale(2)"><path d="M12.3,2C12.2,2 12.1,2 12,2A10,10 0 0,0 2,12A10,10 0 0,0 12,22C15,22 16.7,21 18.5,19.5C13,21 8,17 8,12C8,7 13,3 18.5,4.5C16.86,2.86 14.62,1.96 12.3,2M16.8,6.2L15.3,9.7L11.6,10L14.5,12.5L13.6,16L16.8,14L20,16L19,12.5L22,10L18.3,9.7L16.8,6.2Z" /></g></svg>
-
-!define MA_STAR_CRESCENT(_color)                                 SPRITE_PUT(mdi-star-crescent, _color)
-!define MA_STAR_CRESCENT(_color, _scale)                         SPRITE_PUT(mdi-star-crescent, _color, _scale)
-!define MA_STAR_CRESCENT(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA STAR CRESCENT, mdi-star-crescent, _color, _scale)
-!define MA_STAR_CRESCENT(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA STAR CRESCENT, mdi-star-crescent, _color, _scale, _shape)
-!define MA_STAR_CRESCENT(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA STAR CRESCENT, _label, mdi-star-crescent, _color, _scale, _shape)
-skinparam folderBackgroundColor<<MA STAR CRESCENT>> White

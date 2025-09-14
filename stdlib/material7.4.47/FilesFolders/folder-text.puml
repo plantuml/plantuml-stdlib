@@ -1,8 +1,0 @@
-sprite mdi-folder-text <svg width="48" height="48"><g transform="scale(2)"><path d="M20,6H12L10,4H4A2,2 0 0,0 2,6V18A2,2 0 0,0 4,20H20A2,2 0 0,0 22,18V8A2,2 0 0,0 20,6M15,16H6V14H15V16M18,12H6V10H18V12Z" /></g></svg>
-
-!define MA_FOLDER_TEXT(_color)                                 SPRITE_PUT(mdi-folder-text, _color)
-!define MA_FOLDER_TEXT(_color, _scale)                         SPRITE_PUT(mdi-folder-text, _color, _scale)
-!define MA_FOLDER_TEXT(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA FOLDER TEXT, mdi-folder-text, _color, _scale)
-!define MA_FOLDER_TEXT(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA FOLDER TEXT, mdi-folder-text, _color, _scale, _shape)
-!define MA_FOLDER_TEXT(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA FOLDER TEXT, _label, mdi-folder-text, _color, _scale, _shape)
-skinparam folderBackgroundColor<<MA FOLDER TEXT>> White

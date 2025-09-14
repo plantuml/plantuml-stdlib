@@ -1,8 +1,0 @@
-sprite mdi-format-float-right <svg width="48" height="48"><g transform="scale(2)"><path d="M15,7H21V13H15V7M3,3H21V5H3V3M13,7V9H3V7H13M9,11V13H3V11H9M3,15H17V17H3V15M3,19H21V21H3V19Z" /></g></svg>
-
-!define MA_FORMAT_FLOAT_RIGHT(_color)                                 SPRITE_PUT(mdi-format-float-right, _color)
-!define MA_FORMAT_FLOAT_RIGHT(_color, _scale)                         SPRITE_PUT(mdi-format-float-right, _color, _scale)
-!define MA_FORMAT_FLOAT_RIGHT(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA FORMAT FLOAT RIGHT, mdi-format-float-right, _color, _scale)
-!define MA_FORMAT_FLOAT_RIGHT(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA FORMAT FLOAT RIGHT, mdi-format-float-right, _color, _scale, _shape)
-!define MA_FORMAT_FLOAT_RIGHT(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA FORMAT FLOAT RIGHT, _label, mdi-format-float-right, _color, _scale, _shape)
-skinparam folderBackgroundColor<<MA FORMAT FLOAT RIGHT>> White

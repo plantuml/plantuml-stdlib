@@ -1,8 +1,0 @@
-sprite mdi-code-equal <svg width="48" height="48"><g transform="scale(2)"><path d="M6,13H11V15H6M13,13H18V15H13M13,9H18V11H13M6,9H11V11H6M5,3C3.89,3 3,3.9 3,5V19A2,2 0 0,0 5,21H19A2,2 0 0,0 21,19V5A2,2 0 0,0 19,3H5Z" /></g></svg>
-
-!define MA_CODE_EQUAL(_color)                                 SPRITE_PUT(mdi-code-equal, _color)
-!define MA_CODE_EQUAL(_color, _scale)                         SPRITE_PUT(mdi-code-equal, _color, _scale)
-!define MA_CODE_EQUAL(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA CODE EQUAL, mdi-code-equal, _color, _scale)
-!define MA_CODE_EQUAL(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA CODE EQUAL, mdi-code-equal, _color, _scale, _shape)
-!define MA_CODE_EQUAL(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA CODE EQUAL, _label, mdi-code-equal, _color, _scale, _shape)
-skinparam folderBackgroundColor<<MA CODE EQUAL>> White

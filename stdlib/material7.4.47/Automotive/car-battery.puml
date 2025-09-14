@@ -1,8 +1,0 @@
-sprite mdi-car-battery <svg width="48" height="48"><g transform="scale(2)"><path d="M4,3V6H1V20H23V6H20V3H14V6H10V3H4M3,8H21V18H3V8M15,10V12H13V14H15V16H17V14H19V12H17V10H15M5,12V14H11V12H5Z" /></g></svg>
-
-!define MA_CAR_BATTERY(_color)                                 SPRITE_PUT(mdi-car-battery, _color)
-!define MA_CAR_BATTERY(_color, _scale)                         SPRITE_PUT(mdi-car-battery, _color, _scale)
-!define MA_CAR_BATTERY(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA CAR BATTERY, mdi-car-battery, _color, _scale)
-!define MA_CAR_BATTERY(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA CAR BATTERY, mdi-car-battery, _color, _scale, _shape)
-!define MA_CAR_BATTERY(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA CAR BATTERY, _label, mdi-car-battery, _color, _scale, _shape)
-skinparam folderBackgroundColor<<MA CAR BATTERY>> White

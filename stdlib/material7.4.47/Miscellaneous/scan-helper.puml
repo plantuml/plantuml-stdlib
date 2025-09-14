@@ -1,8 +1,0 @@
-sprite mdi-scan-helper <svg width="48" height="48"><g transform="scale(2)"><path d="M0 2A2 2 0 0 1 2 0H6V2H2V6H0V2M24 22A2 2 0 0 1 22 24H18V22H22V18H24V22M2 24A2 2 0 0 1 0 22V18H2V22H6V24H2M22 0A2 2 0 0 1 24 2V6H22V2H18V0H22Z" /></g></svg>
-
-!define MA_SCAN_HELPER(_color)                                 SPRITE_PUT(mdi-scan-helper, _color)
-!define MA_SCAN_HELPER(_color, _scale)                         SPRITE_PUT(mdi-scan-helper, _color, _scale)
-!define MA_SCAN_HELPER(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA SCAN HELPER, mdi-scan-helper, _color, _scale)
-!define MA_SCAN_HELPER(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA SCAN HELPER, mdi-scan-helper, _color, _scale, _shape)
-!define MA_SCAN_HELPER(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA SCAN HELPER, _label, mdi-scan-helper, _color, _scale, _shape)
-skinparam folderBackgroundColor<<MA SCAN HELPER>> White

@@ -1,8 +1,11 @@
-sprite mdi-flashlight <svg width="48" height="48"><g transform="scale(2)"><path d="M9,10L6,5H18L15,10H9M18,4H6V2H18V4M9,22V11H15V22H9M12,13A1,1 0 0,0 11,14A1,1 0 0,0 12,15A1,1 0 0,0 13,14A1,1 0 0,0 12,13Z" /></g></svg>
+sprite mdiFlashlight <svg width="48" height="48"><g transform="scale(2)"><path d="M9,10L6,5H18L15,10H9M18,4H6V2H18V4M9,22V11H15V22H9M12,13A1,1 0 0,0 11,14A1,1 0 0,0 12,15A1,1 0 0,0 13,14A1,1 0 0,0 12,13Z" /></g></svg>
 
-!define MA_FLASHLIGHT(_color)                                 SPRITE_PUT(mdi-flashlight, _color)
-!define MA_FLASHLIGHT(_color, _scale)                         SPRITE_PUT(mdi-flashlight, _color, _scale)
-!define MA_FLASHLIGHT(_color, _scale, _alias)                 SPRITE_ENT(_alias, MA FLASHLIGHT, mdi-flashlight, _color, _scale)
-!define MA_FLASHLIGHT(_color, _scale, _alias, _shape)         SPRITE_ENT(_alias, MA FLASHLIGHT, mdi-flashlight, _color, _scale, _shape)
-!define MA_FLASHLIGHT(_color, _scale, _alias, _shape, _label) SPRITE_ENT_L(_alias, MA FLASHLIGHT, _label, mdi-flashlight, _color, _scale, _shape)
-skinparam folderBackgroundColor<<MA FLASHLIGHT>> White
+!if %function_exists("$MdiSprite")
+  !unquoted function $MdiFlashlightImg($color = $MDI_DEFAULT, $scale = "1")
+    !return $MdiSprite(mdiAccountAlert, $color, $scale)
+  !endfunction
+
+  !unquoted function $MdiFlashlight($alias, $label=$MDI_DEFAULT, $shape=$MDI_DEFAULT, $color=$MDI_DEFAULT, $scale=1, $stereo=$MDI_DEFAULT)
+    !return $MdiSpriteElement("mdiAccountAlert", $alias, $label, $shape, $color, $scale, $stereo)
+  !endfunction
+!endif
