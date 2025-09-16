@@ -1,5 +1,7 @@
 package com.plantuml.stdlibencoder.v2;
 
+import java.io.BufferedReader;
+import java.io.FileReader;
 import java.io.IOException;
 import java.io.UncheckedIOException;
 import java.nio.charset.StandardCharsets;
@@ -76,7 +78,7 @@ public class SpmBuilder {
 						else if (name.endsWith(".json"))
 							processSingleJsonFile(p);
 
-					} else if (Files.isDirectory(p))
+					} else if (Files.isDirectory(p) && isUnderscored(p.getFileName().toString()) == false)
 						processDir(p);
 
 				} catch (IOException e) {
@@ -84,6 +86,10 @@ public class SpmBuilder {
 				}
 			});
 		}
+	}
+
+	private boolean isUnderscored(String s) {
+		return s.startsWith("_") && s.endsWith("_");
 	}
 
 	private void processSingleJsonFile(Path f) throws IOException {
@@ -251,21 +257,26 @@ public class SpmBuilder {
 	}
 
 	private String readInfo(Path file) throws IOException {
+
 		final StringBuilder result = new StringBuilder();
 
-		final List<String> lines = Files.readAllLines(file);
-		if (lines.get(0).equals("---") == false)
-			throw new IOException("README.md must have a YAML header");
-		for (int i = 1; i < lines.size(); i++) {
-			if (lines.get(i).equals("---"))
-				return result.toString();
-			final String[] parts = lines.get(i).split(":", 2);
-			if (parts.length == 2) {
-				final String key = parts[0].trim();
-				final String value = parts[1].trim();
-				result.append(key).append("=").append(value).append("\n");
-			} else {
-				throw new IOException("Invalid YAML line: " + lines.get(i));
+		try (BufferedReader br = new BufferedReader(new FileReader(file.toFile()))) {
+			String line = br.readLine().trim();
+			if (line.equals("---") == false)
+				throw new IOException("README.md must have a YAML header");
+
+			while ((line = br.readLine()) != null) {
+				line = line.trim();
+				if (line.equals("---"))
+					return result.toString();
+
+				final int colon = line.indexOf(':');
+				if (colon == -1)
+					throw new IOException("Invalid YAML line: " + line);
+
+				final String key = line.substring(0, colon).trim();
+				final String value = line.substring(colon + 1).trim();
+				result.append(key).append('=').append(value).append('\n');
 			}
 		}
 		throw new IOException("Bad YAML header in README.md");
