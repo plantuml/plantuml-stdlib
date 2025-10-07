@@ -16,9 +16,9 @@
 !global $ARCH_RELATIONSHIP_LINECOLOR = "#Black"
 !global $ARCH_RELATIONSHIP_FONTCOLOR = "#Black"
 
-!global $ARCH_LOCAL ?= false
+!global $ARCH_LOCAL ?= %false()
 
-!if ($ARCH_LOCAL == true)
+!if ($ARCH_LOCAL == %true())
     !include shared_style.puml
 !else
     !include <archimate/themes/shared_style>

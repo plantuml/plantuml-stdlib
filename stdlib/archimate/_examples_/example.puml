@@ -1,9 +1,13 @@
 @startuml
 
-!global $ARCH_LOCAL = false
-!global $ARCH_DEBUG = true
+!global $ARCH_LOCAL = %true()
+!global $ARCH_DEBUG = %true()
 
-!if ($ARCH_LOCAL == false)
+'!global $ARCH_LINETYPE = curve
+'!global $ARCH_LINETYPE = polyline
+'!global $ARCH_LINETYPE = ortho
+
+!if ($ARCH_LOCAL == %false())
     !include <archimate/Archimate>
     '!theme archimate-alternate from <archimate/themes>
     '!theme archimate-handwriting from <archimate/themes>

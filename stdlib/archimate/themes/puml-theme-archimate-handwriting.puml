@@ -5,7 +5,7 @@
 !global $ARCH_DEFAULT_FONT = "Comic Sans MS"
 !global $ARCH_DEFAULT_FONTSIZE = 14
 
-!option handwritten true
+!option handwritten %true()
 
 center footer <font color=red>Warning:</font> Created for discussion, needs to be validated
 
@@ -19,9 +19,9 @@ center footer <font color=red>Warning:</font> Created for discussion, needs to b
     }
 </style>
 
-!global $ARCH_LOCAL ?= false
+!global $ARCH_LOCAL ?= %false()
 
-!if ($ARCH_LOCAL == true)
+!if ($ARCH_LOCAL == %true())
     !include shared_style.puml
 !else
     !include <archimate/themes/shared_style>
