@@ -82,26 +82,12 @@ ArchiMate offers a common language for describing the construction and operation
 ```plantuml
 @startuml Internet Browser Sample
 
-!global $ARCH_LOCAL = true
-!global $ARCH_DEBUG = false
-
-!if ($ARCH_LOCAL == false)
-    !include <archimate/Archimate>
-    '!theme archimate-alternate from <archimate/themes>
-    '!theme archimate-handwriting from <archimate/themes>
-    '!theme archimate-lowsaturation from <archimate/themes>
-    '!theme archimate-saturated from <archimate/themes>
-    '!theme archimate-standard from <archimate/themes>
-!else
-    ' use these includes for local testing
-    !$LOCAL_FOLDER = "../dist/plantuml-stdlib/stdlib/archimate"
-    !include $LOCAL_FOLDER/Archimate.puml
-    '!theme archimate-alternate from $LOCAL_FOLDER/themes
-    '!theme archimate-handwriting from $LOCAL_FOLDER/themes
-    '!theme archimate-lowsaturation from $LOCAL_FOLDER/themes
-    '!theme archimate-saturated from $LOCAL_FOLDER/themes
-    '!theme archimate-standard from $LOCAL_FOLDER/themes
-!endif
+!include <archimate/Archimate>
+'!theme archimate-alternate from <archimate/themes>
+'!theme archimate-handwriting from <archimate/themes>
+'!theme archimate-lowsaturation from <archimate/themes>
+'!theme archimate-saturated from <archimate/themes>
+'!theme archimate-standard from <archimate/themes>
 
 title Archimate Sample - Internet Browser
 
