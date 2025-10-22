@@ -1,0 +1,16 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $StepFunctions [64x64/16z] {
+xPPL0i8m44GdBlU_B-w-UJWyQFiraVN-hlpvKuDpeGxBYnQKGNcJOcjHQgFR-_d7ZnuWASu_KMbCdzVxPtf_Q7_WVsdcVu1abdYTnT-svNdOaRdUSczlrEiG
+invuxf5whqEywVuwncH_YTZnyNf-Vcu_xh_NnzyXZylVrzSVNZzv_GQN0VthnVCBdn_u_CBdfzVFBtn-VJr__am1
+}
+
+!function $StepFunctionsIMG($scale=1)
+!return "<img data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAIAAAAlC+aJAAAAAXNSR0IArs4c6QAAAERlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAA6ABAAMAAAABAAEAAKACAAQAAAABAAAAQKADAAQAAAABAAAAQAAAAABGUUKwAAADSUlEQVRoBe1Zv2sUURB2N3e7AfcuSXFnEDUWwVRiERFtxCJYpdHOFCKI/4GNP0pRrLQWBbGIWKuNpBAbg5pSIRLFJIK6QRP1FHfvcnGOB5vn7bs3u/NmYy7sscW8eW/mfTPfzNtjn/WpcmlbN//sbgbfwp4H8L8ZzBnIGTDMQF5Chgk0Nu96BgrGKVA7KIxUvQtjzuhumA5nFmvXphqzvnqpmdbK4q+EO7av/+6E5axnZy1srJyZDKbemqFVWPOXkFXu7bt5EtD/vj3t778ODwgwbClLrgKCmYo/AOfwkF31whfzPy4+an75CQ8IMASlc2SvGVqFNX8AheEK7FN/tSjvVp/5CEMxJevNZf4AVheWAVbxYKt9o19xdBfIYipSsgj8AQRP55pLNefQUPnquL2jBA8IMAQlTLGAlp1kcwodH+m/c8pypVMoaKycvR88mZX3ZpH5GQBYAPTb+K0/D18LiCDAMAv04D8TBqLUDvpXQP5cvRxp2AViAAOTp+FtxYgG3nHLE/cIDoklxIsecJMdrvcZIXqu2hCVRgAAJkQGaJtlYYUwoK/1eObIpUyODWEgbWmmXU/GHRkiDIh1CWs9Tki0jV5I6F/pBGFAabOplIkYYEGsb6dOW6BNlSgAcm3IsGjtgVohAUACUBcySlgvD+NyqnJPkjgkgE6vd+E6FZp4MCyard7E+s6LU4z2HEvWZSdICaVqAPCLro/HLKMhyEgAwmPCWteDS3seiK3RUyFRAITExE06nQfxlak0W72JRTL0tZEqYcrFwn/CQm3zgDCAlmCbu7Tr28wJQ6QHOhWuSc4IKDUmCAMay00yhTCgR5l1b+h3F7NEBthrneyQ+F0oSW5gzQa0CpEBNIDigZ3weVQsAwGGqAltQSYMuF39cdfy3L4bJ+DT9D9XTG6hpfS64YrJPTZsV1RXTBUPpmh1orHi74GePQOwn/KKSUxp0BCm+ANozC0BDuUVk5gioNSY8AcQTs83fdUVk18Ln3/QQKFNZXMKbeBFd8/57UdpoWusVt9/DR6/sQdLdrl37VcYPHv3/dyD+ssFjQl5KhMGyGgIhvw9QABhYpIHYJI9DtucAY4smvjIGTDJHodtzgBHFk18/AUt1CAdTQV1NwAAAABJRU5ErkJggg=={scale="+$scale+"}>"
+!endfunction
+
+AWSEntityColoring(StepFunctions)
+!define StepFunctions(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #E7157B, StepFunctions, StepFunctions)
+!define StepFunctions(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #E7157B, StepFunctions, StepFunctions)
+!define StepFunctionsParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #E7157B, StepFunctions, StepFunctions)
+!define StepFunctionsParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #E7157B, StepFunctions, StepFunctions)

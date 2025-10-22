@@ -1,0 +1,16 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $CommandLineInterface [64x64/16z] {
+xTG53eDG60JXhM3tlp1H70Px_a_IQBzjqIwBB4iNSkExaxdpuoU8Xnnuk_xn-VgP_wfwv2kfUk1X03mCW8S1z3207WRGqm3xiP_K1FXzvExF_yWrwzhz1zxD
+_S_S_VFVraM-VytljlhESvz5bjK3
+}
+
+!function $CommandLineInterfaceIMG($scale=1)
+!return "<img data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAIAAAAlC+aJAAAAAXNSR0IArs4c6QAAAERlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAA6ABAAMAAAABAAEAAKACAAQAAAABAAAAQKADAAQAAAABAAAAQAAAAABGUUKwAAACCUlEQVRoBe1avU7DMBBOChIwUEoRQoIKChIdGZmYkBh4ADZWHoIFiZ93QExsLLwBDMywwdgBWCohoJQyIBhKuKhSFdXNJbmLnVi9TI4v9n0/Z9eW6t6u3js2PwWbwfvYhUDWDooD4gBTASkhpoDs4eIAW0LmBKP4+PX6Gv6Bgehd7QHJYn0JRTjQpY5rgMjDDMXx33oHEhAAPXqShLWZkhOGJyBAmN3AkFhroIsjuBLC2gYQ96UYDgd6pd/HPg+vw+FAsOJNqh7HeesdEAImS2pQLqIDhYlCabM4aELTfRQC7ohbO6vWTquzO2XTeJV8FAJex/u8+XJcZ/mkkjmHBEeJIPmX83d4XdyfBw7QeLv8CEZNtokEAGJOONAJ5IQDi0AeOHAJZM4hBQLZcqBso4BYfWBNt67b/t56XBlfGVM/0NSTGoG53ZnprSnHc56PGj+Pv5rgqtOmQwDQLx0s+OgPG68XTTWNvp4UCGSIHnThLuIw9HHuIl1bmLcllgNh6PUVjDoz3QEcPVNXFWhYD9EBHH1YMh39FAJwHyhvlzLZc1QJKCUE94H63lNxY7J11VZnNNxDcQAgdr7/8oAekBAJGJYZSScEEHGMhMQBIzIjSax3INbvQPyTGSIVhPDzBS2L9Q648qc/vGq0R60vISGgvUYiEogDEQJpD4sD2iWOSCAORAikPfwPqlqe1PYxRbwAAAAASUVORK5CYII={scale="+$scale+"}>"
+!endfunction
+
+AWSEntityColoring(CommandLineInterface)
+!define CommandLineInterface(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #C925D1, CommandLineInterface, CommandLineInterface)
+!define CommandLineInterface(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #C925D1, CommandLineInterface, CommandLineInterface)
+!define CommandLineInterfaceParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #C925D1, CommandLineInterface, CommandLineInterface)
+!define CommandLineInterfaceParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #C925D1, CommandLineInterface, CommandLineInterface)

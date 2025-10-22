@@ -1,0 +1,17 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $AuditManager [64x64/16z] {
+xTI73iCW30HGOmd9_Fy7T_UodMkkkpsj31uRsbladt_S5kD1U4jIWl59pIKaNwo4uWCLy3vgxmygOFrHrEuFAk3yi3oMaVCrm4SxW_Br86TxI_gZ7N3UemBm
+BRw5UpJ18xB7tFjMRvUGtf01qhtQ_nVD7w9uv0NURIREUvlDhUi_ZExL_glpz-RhNwCXis-vhxW-axV4u_PFtXBFLf3l7y_ULF-O_WjSM3zw_vZXxI7tvsfo
+xwlSstlbdt_s
+}
+
+!function $AuditManagerIMG($scale=1)
+!return "<img data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAIAAAAlC+aJAAAAAXNSR0IArs4c6QAAAERlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAA6ABAAMAAAABAAEAAKACAAQAAAABAAAAQKADAAQAAAABAAAAQAAAAABGUUKwAAAC9ElEQVRoBe1asUpdQRCNMQRRSBCEaGNhl8pGK8t0ajr9gxS+zsYETCEpTJMmpR+RLpDO0kqbVKlikcKYJqJgCIKQ8xhYln37Zmd3ZvJ4cEXk7u7szDlz5s5eNpn4vrL5YJx/Ho4z+D72jsCoFewU6BRQZqArIWUC1dvHXoFHfArmPx5Mr63wNlWrf79++7V3eH91XbWLMS4oYIseOKaWny8cvZ+cfcpgqloqKEC+zldfVjkdZrx0+hlLj5cWweHnzr6JDgUFhkHRzN+d/yAOJjqMgAByb8jBmACS+mRrndcHlWPIwZIA0KO45970RBx6NjqIXmI+o7RK6FHcKI/b4xNmC73KwQBbnn14e/HqdZipemhXAGkOb2GMnmkvf07OsuDQW7PzkslGBYC+XyrbG4CLMKgcyj2DHmaXu+8GMSWCDBrwM40EUCRAT90QASToeRzNq40lFHeSEaIH7UYC2Nnn0NvHtw1++cppzq5kY2MJkev739fN3UMCTmKjIiAJkP2eRTvKvtASh4lNewkljoYNs9+z2clhHvj5OgXkLS/5gI2Hcic8dFp1V0ACQmNTp0CcyKqotlmPQ7srkP18yE7GsOTPdQrI/QZLq24THCYP7gSSeIPD5rIkV+4lNIjYdsZdgexBJudQPPLcFVCeWcXtdQrIu2FS2clQqIAknLsCQqzNZnUKtCUS4CS5bOPgroDyzCpur1OgIUneB5m7Ag2cq7ZoCcSXK3xgD0tEVBGgyxXJdbmHJeVLRQCXK8JrWg9LAwLx5Qqvg4clEZjg/7MH9e/Q/vl2jvuVcEnhYUmIk7+qEkp8jWRYdw4EKQLW+FoX/3oX5j0sg/P4QaVAjJ6/nPOwJBoqAjMv1oQXox6WRKCuhGLt8Hzz6Qv+okWiySRLyZCxTPoEY5n4pKGKAFxQvKzrZNLDEiFEBPiemAD9z8PCO1D8mjWBq4lSOMhM8Lk6KSjgGtvEeUfAJI0KJ50CiuSZbO0UMEmjwkmngCJ5Jlv/AaAAgcGcYEErAAAAAElFTkSuQmCC{scale="+$scale+"}>"
+!endfunction
+
+AWSEntityColoring(AuditManager)
+!define AuditManager(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #DD344C, AuditManager, AuditManager)
+!define AuditManager(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #DD344C, AuditManager, AuditManager)
+!define AuditManagerParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #DD344C, AuditManager, AuditManager)
+!define AuditManagerParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #DD344C, AuditManager, AuditManager)

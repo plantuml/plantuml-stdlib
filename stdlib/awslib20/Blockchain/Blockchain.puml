@@ -1,0 +1,13 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $Blockchain [64x64/16z] xTEr0S0m34HHERZ_n66E-Th_AZDAemG0WCvkhXzxzwXttwg7lSIh_lclShpgdz-TnpDBLFtpdwUDL2Fp7mj5gidv6rzLdw-VNtq_-V_q-57ZLyuV2G00Cm
+
+!function $BlockchainIMG($scale=1)
+!return "<img data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAACNklEQVR4nO2aMUvjYBzGnzf2ztIIlRSdFG5wcHW61W8gHjcURwdBEYf6IVw0cCIKNzjo4iAnfoNbnbrecIMgLkKLBROq0r4OkmJL2v5NsI+Q/29JCXmSX568b1OamJ1fhxYZxmELsMlFH9auN5geI+f3t0MAOgK0AC2ALcBGC2ALsNEC2AJstAC2ABstgC3ARgtgC7DRAtgCbLQAtgAbLYAtwEYLYAuwyQ3f5JWvC2W4Pw5g3JJo+9bdP4Tn63j+/xdf5hZR+HmEsel5UdYGNQR/NvFUPUuVlSAeAe7yvvjkAWBseh7uyulrduVUfAIAYNwS3OX91FkJ4hFgJqYAAPWKEWxs4O214UzOAEBnWd92ADv8SZzn287x0mQliAt4y/j3VRSWfJh8sWu9bTYQXlbweHUcH7SWkx1Aoi/BOAkAMPkiCkt+1zrP775qo8pKSTQCIone6eD5NlbwM2T7kagACaLvig/Ivhf9HfBRO+6dv4D8yqbJvpdEBdhmAyZfjBW1zcanzPYj0RQILyuxB4xuR2/pvXKjykpJNAIer44H33OdPrt1csOzA/aZODsAcQE2qMG4pdjh14/2/U1n6UzOwtt9FmdtUEudlSCeAsHFFmxYFxq00bqt4uGkDAB4OCmjdVsFbFsWD+sILrZSZyWY6DU5fUkqo2gBbAE2WgBbgI0WwBZgowWwBdhoAWwBNloAW4CNFsAWYKMFsAXYaAFsATZaAFuATeYL6DwYif4mzhqZHwEv/dX2fR/guuAAAAAASUVORK5CYII={scale="+$scale+"}>"
+!endfunction
+
+AWSEntityColoring(Blockchain)
+!define Blockchain(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #ED7100, Blockchain, Blockchain)
+!define Blockchain(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #ED7100, Blockchain, Blockchain)
+!define BlockchainParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #ED7100, Blockchain, Blockchain)
+!define BlockchainParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #ED7100, Blockchain, Blockchain)

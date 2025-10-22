@@ -1,0 +1,16 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $ElementalDelta [64x64/16z] {
+xPC50W913CIo_lyNu-vCSIRdahMsOuOn9dCp-PJF7PpsnusSzUqpvs9edklhuxT_1-7w_HjAYTYL6LMrMu8qFvfYzxpikmAvt-y3PNbN0CNVTDer_zxQu81p
+Nw9-TFolydFVPeAMkwNFx2Bby5fSDoEdCBaFcGPDqAwll7rZp1G
+}
+
+!function $ElementalDeltaIMG($scale=1)
+!return "<img data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAIAAAAlC+aJAAAAAXNSR0IArs4c6QAAAERlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAA6ABAAMAAAABAAEAAKACAAQAAAABAAAAQKADAAQAAAABAAAAQAAAAABGUUKwAAAC/UlEQVRoBWN8W8gwpAHTkHY90PGjHhjoGByNgdEYoDAERpMQhQFIsfbRGKA4CCk0YMjHAAv+AOBN3cqq6YVfDU1lf1/f9nm2Nx4rCMTAwLoe6G6CDiAQAxCvvytixBMGtJMS6vtP0HACMUBQ/4ArGPXAQEfBkI8BojIxPJTRchUZmRvNBLjJyAySjB1hMUBS2CAHKpxNuQlwoyCMIR8Dox5Ai1G6c4d8DBBVjBJT9tE96KEWEogBYGt2oFwGsZegAxhHx0YHNoaG/tgoUZmY7EBmZOfhsCsAav9xaML/n1/INgePRprlAUYmdtN4Tu82Jl4JoPX/Pr/4vrXq5+mFDP//4XENGVI08QCLki1XwAQWGSOgg/48OA4kWRQsQewn575tKPhz7zAZDsWlhcoeYBKU4/LrYdMPBdr378Pjb1vKf51bDmSzGUVy+XQyCcgC2b8urv62qeTf+0e43ESSOJU9IFBzj0lI8f+vbz/2df7Y3/3/93e4axhZOTkcSzmcyhnZuP69u/+hRQkuRQmDypmYkU8S6JqPXTpAJ6I5C+iZ77uafp5ZDPQkRBmaAvK4BGpi8gz9/+k5Lo14pHBpwS9OVAxQvS3EyMJBjJnE9H5oEgP4w4y6skTFADEhAXGWYNd3YOgSdOL/Pz/el3ESVEaMgiEfA9T2wJ9fwGDjSdnELKGNGX5AQaAUSBysDFMBGSLM5aAqkmoAWMiwqtgDHcphmc7EK/7n0UkGcFXAyC3M7dfDHT6HWUTl//f3wPr477OLVLGVyhUZ0E1At3K6N3BYZTAwsQDd+n1nE1CQ072ekVOA4d+fH8dmfN/Z8P/rW6q4HmQdjTo0zOJaXP59rBrucIf+vrHz28aivy+vwUWowqCVByCOY9Xy5k3ZAmR/nuPz+9pWqrgYzRBqZ2JU4+GOhjNQ5anAo60HqOBAQkaMeoBQCNFafsjHAG1LIVoHP9D8IR8Dox6gQyrBa8VoDOANHjpIjsYAHQIZrxWjMYA3eOggORoDdAhkvFYAABwCx10HYIQvAAAAAElFTkSuQmCC{scale="+$scale+"}>"
+!endfunction
+
+AWSEntityColoring(ElementalDelta)
+!define ElementalDelta(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #ED7100, ElementalDelta, ElementalDelta)
+!define ElementalDelta(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #ED7100, ElementalDelta, ElementalDelta)
+!define ElementalDeltaParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #ED7100, ElementalDelta, ElementalDelta)
+!define ElementalDeltaParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #ED7100, ElementalDelta, ElementalDelta)

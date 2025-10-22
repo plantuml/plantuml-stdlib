@@ -1,0 +1,16 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $ManagementGovernance [64x64/16z] {
+xTR5WSD040NH4gkLVxwxPlPlys3Tdt1e2jxoHddxwbjEQf_tdFMejw6vOM1NCvZs0oWFW_ODe-tCcTyztKYZFPXwVmFFw--FxqLVzRj2-1PTwtYyNB-e4l8G
+p7Exd_ZmxoyAvU57Flp_3__-glozrtVNVx_VUGZjJN1p_Uu0TJl__BGCw0R7sz08VN9-hEV_wiFs3m
+}
+
+!function $ManagementGovernanceIMG($scale=1)
+!return "<img data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAACOElEQVR4nO2bsWoCQRCG/1MhqIhoEYRA7PIAgqksA9aWpgimtMsDCDZCWlMYW0kRy7yAnXaCD2BnEQgWhhSnWOilyYkm5m7vnL1Rdr9Gi9vZ2X//25v1VuPx6dmCwoS4E+AmYn+pNN458wicTu0CgHaAFkALwJ0AN1oA7gS4UV6AiPslcki93uHs5spTm2VvjM/bF9I82BzgdfB+27hB74CQgXi1gFglj3A27Xr5x3lNKGxm2tj53MdqMsO8M4TZHgBrsS0OuQDxagGJepE6rBDhbHrTt9nqC7UhFyB2fw0A+Hp4w6I7Aqz9M+E0k0786xjDQLScQ7JZQqyS5xMgfJkCAMfBb+NXiD9YFhbdEZLNktCtZyNvEXQZ/LI39hzStY2A4L9hewxSP878ogsh6oCij7VjQTtA9EI/pSslMspgwIMDOAcvs3/PawDHPU5WK+xB+TVAC0AdMDNtSLUsNco74KBCyGmmD3VBUIutdsAhjffNkj3zp1ISawdQBzyVmbdR3gHsAnDXDewCcCOtDjg0lq4DAoK8DvAKd92gHcCdAHfdoLwDtADcCXDjeQ04pV97RBB2gJ+XmZTI6l/YAcfyMpMa5dcAKQJw7/C8oB0gNbphSA1P0Z8UAVaTGQAgWs4FJ8LPIant/kWQsheYd4ZI1ItINktINksyunDtXxQpApjtAQAIH5akYuegpCBydoNrC2arL3xWjxP9FOBOgBstAHcC3GgBuBPgRnkBNnWA/V9a1VDeAd/3CpmIVasyowAAAABJRU5ErkJggg=={scale="+$scale+"}>"
+!endfunction
+
+AWSEntityColoring(ManagementGovernance)
+!define ManagementGovernance(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #E7157B, ManagementGovernance, ManagementGovernance)
+!define ManagementGovernance(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #E7157B, ManagementGovernance, ManagementGovernance)
+!define ManagementGovernanceParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #E7157B, ManagementGovernance, ManagementGovernance)
+!define ManagementGovernanceParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #E7157B, ManagementGovernance, ManagementGovernance)

@@ -1,0 +1,16 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $BillingConductor [64x64/16z] {
+xPG55eGm4CL2zVudNZUWFgnFSFuBrEC7eIY6D5DeyyaI6ltiPxt8D-0bVhJW97vqO2L-z60aVlGm3VetfY7VSAFkQsv8ODfzalJuFScShNmphtlTVwZdwPWn
+uZz6tUMN-pEsRhyqit_DaFgl7py0zzChV93KN-w_lluTfNojd-G5wwyqrxn2pJTKCF5ZK9Gz
+}
+
+!function $BillingConductorIMG($scale=1)
+!return "<img data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAIAAAAlC+aJAAAAAXNSR0IArs4c6QAAAERlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAA6ABAAMAAAABAAEAAKACAAQAAAABAAAAQKADAAQAAAABAAAAQAAAAABGUUKwAAACqUlEQVRoBWOsWijGMJQB01B2PMjtox4Y6BgcjYHRGKAwBEaTEIUBSLH2IR8DLKQGQZzzUnVpF1J1Yap//Obc8gPJH789w5QiSYTkGKCK64FOlBUxyvDaJi6oSZJzMRWTHAMQI6oXiWOaRbxIa9xLoGI+Lsk0901LDsTff3GMeL1oKkmOATT9lHAvP9jIwcaX6LJKTyGAbHMG0gMrD6Ufuz6LmYk1zG6GtVYGeX4YSA/8Z/i/9XTt9jMNQKd7mTR6mzYzMjCS6o2B9ADErUeuTV91KOPvv99WmmnhdjNZmNlI8sPAewDo3EsPNszfE/bj1yddBf8El5UcbPzE+4HMUoh4C/CohJRFaAoUxa1iHRfO3klsth6YGLj5dA+au5G5CuKWyFz87IGJgUV7o3E5C2u04FIMFB+YGMDjIFKlRj1AaohRWz0V8gCF7VNghsaTJQj6lwpJiML2KYXaqRADkEAir31KapmDGSEke4A8h2JaTC0Rkj2A32Ii8wOF6R7ZDYQ9gCeWMWODyARNpDJkh+JiE/YALp14xDE9hqwYT4ggKyOSTdgD+F1DpDW0U0bYA2TYTd0wxu8AKtQDyBbgb2bCVRKpDK4eD4OEGMAMV8zURUmdiseVeKSoHAN4bKKRFAkxgBneNHITScaS4AFizEVOZkAP4+cSYyBBNSMjCSEHJHKQYCYqNBH8XGSjyGaPjBhAC0g8oYUcV0Bd+Ll4zCFeamTEAHJ4QAIVV5ygiePnIhtLNnvkxQCuoEJO7rjU0EKcCjFAYcuMQu1UqInp34BDjkkqxACycfRnj3qA/mGOauOQjwEyM/FAFZqooQ/ikRwDFJZ6mC7AFCHJCsbRVYuYIUhXEZKTEF1dR4Rlox4gIpBoqmQ0BmgavEQYPhoDRAQSTZUM+RgAAN0/nWlTLL/bAAAAAElFTkSuQmCC{scale="+$scale+"}>"
+!endfunction
+
+AWSEntityColoring(BillingConductor)
+!define BillingConductor(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #7AA116, BillingConductor, BillingConductor)
+!define BillingConductor(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #7AA116, BillingConductor, BillingConductor)
+!define BillingConductorParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #7AA116, BillingConductor, BillingConductor)
+!define BillingConductorParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #7AA116, BillingConductor, BillingConductor)

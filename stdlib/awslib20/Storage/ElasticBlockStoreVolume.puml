@@ -1,0 +1,16 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $ElasticBlockStoreVolume [64x64/16z] {
+xTOt0WCW34DHWOlkV-FCQGAd5x_z0_O4FirK1XO6jG4jgIKa9sDU5wH3c2HNpvjw-BbSpr2d6pGZKmsFbUihcE9eyKWnl5g1FhU-0YUPUtXf1Qp1ASiAmyED
+2fm9LkJ3zqUcxSgBVM2NazrttttttNVVVVVTC-UkkDJNFFp_YLc1Zt4
+}
+
+!function $ElasticBlockStoreVolumeIMG($scale=1)
+!return "<img data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAAIGNIUk0AAHomAACAhAAA+gAAAIDoAAB1MAAA6mAAADqYAAAXcJy6UTwAAAAEZ0FNQQAAsY58+1GTAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAAOxAAADsQBlSsOGwAAAwlJREFUeNrtm01oE1EQx+dtatJqSytiUgpV2vpVRLFWwUsLfoBeFL+lxjat9SLozUO/hJSW4AciVEQPtk0CgraIetKbir150IteejAHq20MSLBJs7F546xdNHiwTbdNdusMJG/eg33Z+b3/TN5bWAC2/9uE0Qk6B8rKQZmulwLzsnfXQtpAjPQ2TXzMKYCuoKtCIr4hd1UOFm/Shsqunubx90YmUeZ7oXdos12CfJij4DUrTInU8KWga4WRSeYtWzURuS5Q7NS7Iwh4L3t5Kxqo2U9etQPxDvlNWU2B9qDzqEB4pPkIEE5Ny5prrZHP2QLQdr94pTLteEvu2pkRbPV5vg5kJQXaBlyVFHy/3pVCgTPZDF6zK+7oNxTiFLlJfR1vXR50bZnPXLaM8z4Vf0ZupT7U62sK9+eiAIw8jo3VHS6MkYYpFWAZAdm99/TywMvheHLRFKBORW6Q3HbosnsxWhDuzuV/uK954iY1T/X72aQmxN1FS4FOv/OYALww81swAQq6h09CKtcbGZmntlAT+pUICO6OgOvcggPo8jurUPmd9xS0cPsaI1/MsJPT6oEAJa0eYF9HwLl1wWrAxb51DrtDfU5uhT7U42sOD5ppO/v6yeRY3ZHC7+Qe0OoBffZQPfDPpR7Mug8oKo5epRXfnjbUQoQ95tvVY3pnYzIhblPrMQyAgm/8a2CNJU45CA0nhuDsbHVqDgDQS1/nCUSBhQ55KoIImqFIW/84TDKyVcVKy60WWD7kj3tbQgnDNWD9lPMBKPK41QAkIf6OmhrD+wCqrfUWVfc272BJiWEFiD9poj19CZg/p8VBOprXan7CjsIwgDQthOjI2W12AB1BZxnJtnbRnwgtFWMADIABMAAGwAAYAANgAAyAATAABsAAGAADYAAMgAEwAAbAABgAA2AADIABMAAGwAAYAANgAAxgiVsmL02VtgdWe8weEAJuEBm8CpUBAFFN0/rB/AQWOgXEB4uq+1P+aDRqWAF2249DqszbB4hF1ilsSiIp5SufFySwsf3TfgKNntu3mFwDeAAAAABJRU5ErkJggg=={scale="+$scale+"}>"
+!endfunction
+
+AWSEntityColoring(ElasticBlockStoreVolume)
+!define ElasticBlockStoreVolume(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #7AA116, ElasticBlockStoreVolume, ElasticBlockStoreVolume)
+!define ElasticBlockStoreVolume(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #7AA116, ElasticBlockStoreVolume, ElasticBlockStoreVolume)
+!define ElasticBlockStoreVolumeParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #7AA116, ElasticBlockStoreVolume, ElasticBlockStoreVolume)
+!define ElasticBlockStoreVolumeParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #7AA116, ElasticBlockStoreVolume, ElasticBlockStoreVolume)

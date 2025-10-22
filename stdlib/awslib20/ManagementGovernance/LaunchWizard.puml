@@ -1,0 +1,16 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $LaunchWizard [64x64/16z] {
+xT85OiKm609WEch9_Uyx-wSy9NMXBbyyhpPdpdJu3kLXBi_lgpoCxwDvZ2ldzFFtVrNpl_wq_J0EzDdeVmSA1_eo7xmXq3-OVrt7VtbEG9Ly7vmvlKZzpxO_
+-jv-Sjz7u-iOlfBr7tslWli-U3HUvj_awasksHplm58kldpYMCRL-rpRx_FmFjUSl0DThjxbwZtU8KAvlmo1JhZb4m7XNlyJ8TppEL6uwNCAFbVEd7a3
+}
+
+!function $LaunchWizardIMG($scale=1)
+!return "<img data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAIAAAAlC+aJAAAAAXNSR0IArs4c6QAAAERlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAA6ABAAMAAAABAAEAAKACAAQAAAABAAAAQKADAAQAAAABAAAAQAAAAABGUUKwAAADI0lEQVRoBe2Yv28TMRTHk0vaO4JUEiEq6ISE+CVoGcvCwABiQEAQGYAytCMSfwGMTKVzmSiiIDEUJjakln8BJBgKK6KoRSSo4UdocuGdTBwrvjvbz05yiXyT5Xv2fb7v++5sX3pj393UIF/OIMMH7FZAvx20DlgHNDNgS0gzgdrDB96BrHYKIidwzx8tPLsVdbv2er088xTuSoZFzWMdiMpMq59mutURnnLJMDoJbQy7A3yBklR19PP5oxnqdmPYHYDUfh2/x2cxqp+P7HbPsDugnz94W/Zv3hfOIxnGzzPwDqTtmZh3tac9vS4h7/LkyKkJgxK7uJnjKb0rk/mHJX+7Vi493nn3hQR0rIkdo4RLpJYD5NMRs+VkaQh9KuM4+V2FlVlTPvTIAUpfXXiTPTbuXTwBGlgf+EzHO0NTg3SAzT3bpvOyDa84BZUDua8+WKvOr/6489Iv/wIf9iyWUk6ajUS0kQLknxTQL14D+t8rb0FA2s3ml647hZy/Va3MPU/5TfmpQiORJUT2QsRl3n36JEoPPd6lk39evc/NTrtnDwP996tL9fVNGoluIAXIPI/SQ+Kdvbtzc9OF5RkYaJAeZtMSQHwIFcPSB5XjjbgXjmcmxgL64qP6x63QUYhOLQFRz+ukh7p/cuM/PVROGD35EkRNGNNv/iUOoV++abbuWT2GN3M9pgclJh3oPb1JAX2hNyZAiV64crMlLmwbKCEleiGQaoDuS6xET1ZuFjFmFWfDYtpaDijRx0Do3MI7gKYX7qCU9CAdQNMrwckEYxxIDj0oVHYgUfTKApJGryYggfQKAiLpv/00dbYCGsQiLfUOxNHD6cTEyRDocZdYQJLpQbPgM9qmn1+FXzrBPwVyOoHKkcs9v30gmWY3ETIxUf4IHHDPHYE/Is2/9draJwR91FMN9gscAHr4qwM+NLdrOx82Rk8f9KVzj6BE7DJEh/qGX7n9Ig9/dYpT3aZHCIYhIgEQ0tIweuaQZN3jUHCjRCVEZ804mQNjjc8V2pGQhuAlblM2/ATSA560gLaUZLWsgH77YR2wDmhmwJaQZgK1h/8Db5Q4y6uTFZYAAAAASUVORK5CYII={scale="+$scale+"}>"
+!endfunction
+
+AWSEntityColoring(LaunchWizard)
+!define LaunchWizard(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #E7157B, LaunchWizard, LaunchWizard)
+!define LaunchWizard(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #E7157B, LaunchWizard, LaunchWizard)
+!define LaunchWizardParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #E7157B, LaunchWizard, LaunchWizard)
+!define LaunchWizardParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #E7157B, LaunchWizard, LaunchWizard)
