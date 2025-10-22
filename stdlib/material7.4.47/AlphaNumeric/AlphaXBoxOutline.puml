@@ -1,0 +1,11 @@
+sprite mdiAlphaXBoxOutline <svg width="48" height="48"><g transform="scale(2)"><path d="M9,7H11L12,9.5L13,7H15L13,12L15,17H13L12,14.5L11,17H9L11,12L9,7M5,3H19A2,2 0 0,1 21,5V19A2,2 0 0,1 19,21H5A2,2 0 0,1 3,19V5A2,2 0 0,1 5,3M5,5V19H19V5H5Z" /></g></svg>
+
+!if %function_exists("$MdiSprite")
+  !unquoted function $MdiAlphaXBoxOutlineImg($color = $MDI_DEFAULT, $scale = "1")
+    !return $MdiSprite(mdiAccountAlert, $color, $scale)
+  !endfunction
+
+  !unquoted function $MdiAlphaXBoxOutline($alias, $label=$MDI_DEFAULT, $shape=$MDI_DEFAULT, $color=$MDI_DEFAULT, $scale=1, $stereo=$MDI_DEFAULT)
+    !return $MdiSpriteElement("mdiAccountAlert", $alias, $label, $shape, $color, $scale, $stereo)
+  !endfunction
+!endif

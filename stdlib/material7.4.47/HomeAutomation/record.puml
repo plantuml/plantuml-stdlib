@@ -1,0 +1,11 @@
+sprite mdiRecord <svg width="48" height="48"><g transform="scale(2)"><path d="M19,12C19,15.86 15.86,19 12,19C8.14,19 5,15.86 5,12C5,8.14 8.14,5 12,5C15.86,5 19,8.14 19,12Z" /></g></svg>
+
+!if %function_exists("$MdiSprite")
+  !unquoted function $MdiRecordImg($color = $MDI_DEFAULT, $scale = "1")
+    !return $MdiSprite(mdiAccountAlert, $color, $scale)
+  !endfunction
+
+  !unquoted function $MdiRecord($alias, $label=$MDI_DEFAULT, $shape=$MDI_DEFAULT, $color=$MDI_DEFAULT, $scale=1, $stereo=$MDI_DEFAULT)
+    !return $MdiSpriteElement("mdiAccountAlert", $alias, $label, $shape, $color, $scale, $stereo)
+  !endfunction
+!endif

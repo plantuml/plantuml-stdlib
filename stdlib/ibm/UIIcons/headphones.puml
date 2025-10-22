@@ -1,0 +1,13 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $headphones [64x64/16z] xS61400000CXXFdRpkElMXu0001m
+
+!function $headphonesIMG($scale=1)
+!return "<img data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAAIGNIUk0AAHomAACAhAAA+gAAAIDoAAB1MAAA6mAAADqYAAAXcJy6UTwAAAAEZ0FNQQAAsY58+1GTAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAAOxAAADsQBlSsOGwAAA2hJREFUeNrtmktoU0EUhidWLYhxHVJRcGOpBRHfICq1WlG0CoKLqqCgC5G60I0KsSmIUHQhKIiLutD4ABettuILK0GorRUUa3GjC2mqKxeNWHw1/kNOYBinmdvkZnrHzA/fYu4kc+f8d+48TsKYk5OTk5OTk5OTk1M5KmTwXjPBerAVRIh5VPcJfCG6wTPw838xYA04QoHP9vidb2TERfDcVgNqwFmwvch27oITYMgmA06BOKjwqb0/4DQ4E3QDZoF2sHuC+o+gEySFd54Jc8Ja0AgWTPD92+AA+B5EA3jwT8FKRd0TGhX9HttaQU+7XlHXB+r8MqHCRyNvgE3S9c9gF2gBqUm0xz97DfSSCWGhbi5YCO4EyQAe4GHp2gDYAF4X0e4HcItejag0wTJaLqfcgCUgIb1OfKivA199aD8NroONoEq4zk25J8wjBWmaDx1sk9rhw3cnGPNxfhmjNlNS39uKbbhYAxoUE9VeMFKCpXWE2hZVT32YMgOOSuUu0FPCzVUP3SNfH4wZEKblSNRJA1tr+R510iphzIAtoFIovyVKLfk+ldQX4wbIa36HwZNlh6YvRgyYL5WTBg1IavpixIAqqTxs0IBhTV+MGBBVbF9NKaXpixED5ih2bKaU1vTF6E7Qak2fxOe2gR103I0GMJZR2i320SrBzwm//TCAr7HnQXXAH2aYjsmcfeA9OAbuF/oKhOiY22VB8CpVU99bWJ7ETz4DYiybhwtZ/IqHKIbYZF+BBvqiKJ6nvwxugkHDs77XVakW7AEHwQyhjsfyAjz0YgAfFeekJ8/XXZ7XfxPgp80fSC/RTsM/IowEHtNjMK57BTaTkzn9sCB4Wa9Y9veIX8K1WopNOwc0SuUrlgWf00twVROb0oBlUjlh8SSY0MSmNEDe5AxZbMA73Zmh7LfCKgPkhGaNxfEt0sSmNGBAKjdZbECTJjalAZ1S+RBYbGHwy8F+TWxKAx7QTi8nnnTstsyEpSz7vwJxNzhIsWkN4Dul4yAjXOMpJ/5z1wWwinn/p4fp0+BqcIl2gxGhLkMxjXs9C/A9c5xOUjnx//g0E0HUaJ66uOocoMsHtNIeOmbxiTBDcbQWkhDJ0AjotyQhIstTQsRLRog38Ij9mxILByzgNCsgJebk5OTk5OTk5OTkVJ76C9qPoRzlWRLaAAAAAElFTkSuQmCC{scale="+$scale+"}>"
+!endfunction
+
+IBMEntityColoring(headphones)
+!define headphones(e_alias, e_label, e_techn) IBMEntity(e_alias, e_label, e_techn, #232F3E, headphones, headphones)
+!define headphones(e_alias, e_label, e_techn, e_descr) IBMEntity(e_alias, e_label, e_techn, e_descr, #232F3E, headphones, headphones)
+!define headphonesParticipant(p_alias, p_label, p_techn) IBMParticipant(p_alias, p_label, p_techn, #232F3E, headphones, headphones)
+!define headphonesParticipant(p_alias, p_label, p_techn, p_descr) IBMParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, headphones, headphones)

@@ -1,0 +1,13 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $tsq [64x64/16z] xS61400000CXXFdRpkElMXu0001m
+
+!function $tsqIMG($scale=1)
+!return "<img data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAAIGNIUk0AAHomAACAhAAA+gAAAIDoAAB1MAAA6mAAADqYAAAXcJy6UTwAAAAEZ0FNQQAAsY58+1GTAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAAOxAAADsQBlSsOGwAAAzZJREFUeNrtmj9oFEEUxsdLiI2JhUVMNFoEFWKsBAsbz6CNogcWWkRRglYRAlpZmHgasEoREASFNHpFQIVETWGljYKFIJiAhY1/7kwZc03EO/2GvIXxsbc3c7d3O3rvg19xO3tvbt/OvDdv5pQSiUQikUjUqtrg8W/73YxnTrX6CBAHSBQQiUSyDnBTBzgEMmAv2AZ6qK0AvoFFMAdegZ8+rwPaHb7YDa6Dc6Crwj27iDQYBT/AA3ALLPs4AmwcsBFcA1fBJkf7XeSI82AK3AZr/5ID9Ft/Ag7W2Y923AQ4Ck75NBqiYsAgWAB9IW1fwFNq/wi+0/WtYA84Bk5EfFe3f/DZAfrNvwU72PUCvckZUKpiuw2MgKwRJAN9Bgd8GAltFeb8Ao0AU8/AYfDGMkLre96Be2Af2G20baZplbNwZNMdEER6U3cokNUSwHQanAVb6K0H6qOHf+lTEOymaG9Kz/UxULbM12HTqkw2dlJsCKT7ulthKiSyHzDOUl0eDEc8vIvKZCvPssO4L+VwB/1AUzfAaoz9rZJNU8PUd+IOSFNwCvSVon3cmiHbZkBM+xADTrK2uQZF6BLZHmV9v2hA3VI1lpgjYIC1PW+g47ntAR+mQC9r+9TAfrntXh8dUKjR5hmLewo+OqBW/WKfH1o6wQulWM431WNp4yxzQruFE7jtvI8O6Le0MRvhhMEK3+n30QFLrO24g50wJ0xGlLzc9pIP64B5lpsztH4vOTghiAGTVAZXKsAy7Np8vfk8DgfoqmzFWA1up3r+vuNI0G99MeKeEbIdaCXJijDFytZcSC3Q6Wgz6uE7Q2qBnKp95zj2NHgTFFl+zsWULlNky8z5ReozMYWtr/UbmgjZEBmroyzWDz8NLrPr2ZARkfiOkN7yGlJ/b2jqnZz9an1bzHW46mH/iLKEqdfgkvJwS6xExcppVh7rPb0Lav2w471FVNa2L4LH5DxTelP0CAVA5dsUCNTS2+KB4joYMYe97cGIF/8RWqZ4kGXZwVVFsjGkPDsjtDkbXKNIrXdvqx2Ocv0Xh6PmaNBp7IpqzvG4SCQSJb4OSFLyX+EkymFxgEgkEolEIlGr6A+/XbCsh4S+DwAAAABJRU5ErkJggg=={scale="+$scale+"}>"
+!endfunction
+
+IBMEntityColoring(tsq)
+!define tsq(e_alias, e_label, e_techn) IBMEntity(e_alias, e_label, e_techn, #232F3E, tsq, tsq)
+!define tsq(e_alias, e_label, e_techn, e_descr) IBMEntity(e_alias, e_label, e_techn, e_descr, #232F3E, tsq, tsq)
+!define tsqParticipant(p_alias, p_label, p_techn) IBMParticipant(p_alias, p_label, p_techn, #232F3E, tsq, tsq)
+!define tsqParticipant(p_alias, p_label, p_techn, p_descr) IBMParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, tsq, tsq)

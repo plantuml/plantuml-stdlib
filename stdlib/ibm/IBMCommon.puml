@@ -1,0 +1,432 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: MIT (For details, see https://github.com/AWSlabs/AWS-icons-for-plantuml/blob/master/LICENSE)
+
+' Dark Mode support
+' ##################################
+' if $IBM_DARK is not defined, check $PUML_MODE
+!if (%not(%variable_exists("$IBM_DARK")) && (%variable_exists("$PUML_MODE") && $PUML_MODE == "dark"))
+!$IBM_DARK = true
+!endif
+' ensure $IBM_DARK is either true or false
+!if %not(%variable_exists("$IBM_DARK") && ($IBM_DARK == true))
+!$IBM_DARK = false
+!endif
+
+' Colors
+' prefer $IBM_ versions, treat IBM_ as deprecated
+' ##################################
+!define IBM_COLOR #232F3E
+!$IBM_COLOR_SQUID = "#232F3E"
+!if $IBM_DARK == true
+!define IBM_BG_COLOR #000000
+!$IBM_BG_COLOR = "#000000"
+!$IBM_FG_COLOR = "#FFFFFF"
+!$IBM_ARROW_COLOR = "#9BA7B6"
+!else
+!define IBM_BG_COLOR #FFFFFF
+!$IBM_BG_COLOR = "#FFFFFF"
+!$IBM_FG_COLOR = "#000000"
+!$IBM_ARROW_COLOR = "#000000"
+!endif
+!define IBM_BORDER_COLOR #FF9900
+!$IBM_BORDER_COLOR = "#FF9900"
+!define IBM_SYMBOL_COLOR IBM_COLOR
+!$IBM_COLOR_GRAY = "#7D8998"
+
+' Customer Enablement; Database; Developer Tools; Satellite
+!define IBM_COLOR_BLUE #C925D1
+!$IBM_COLOR_NEBULA = "#C925D1"
+' Cloud Financial Management; Internet of Things; Storage
+!define IBM_COLOR_GREEN #7AA116
+!$IBM_COLOR_ENDOR = "#7AA116"
+' Blockchain; Compute; Containers; Media Services; Quantum Technologies
+!define IBM_COLOR_ORANGE #ED7100
+!$IBM_COLOR_SMILE = "#ED7100"
+' Application Integration; Management & Governance; VR & AR
+!define IBM_COLOR_PINK #E7157B
+!$IBM_COLOR_COSMOS = "#E7157B"
+' Analytics; Games; Networking & Content Delivery; Serverless
+!define IBM_COLOR_PURPLE #8C4FFF
+!$IBM_COLOR_GALAXY = "#8C4FFF"
+' Business Applications; Contact Center; Front-End Web & Mobile; Robotics; Security, Identity & Compliance
+!define IBM_COLOR_RED #DD344C
+!$IBM_COLOR_MARS = "#DD344C"
+' End User Computing; Machine Learning; Migration & Transfer
+!define IBM_COLOR_TURQUOISE #01A88D
+!$IBM_COLOR_ORBIT = "#01A88D"
+
+!$IBM_CATEGORY_COLORS = {
+  "analytics": "#8C4FFF",
+  "applicationintegration": "#E7157B",
+  "blockchain": "#ED7100",
+  "businessapplications": "#DD344C",
+  "cloudfinancialmanagement": "#7AA116",
+  "compute": "#ED7100",
+  "contactcenter": "#DD344C",
+  "containers": "#ED7100",
+  "customerenablement": "#C925D1",
+  "database": "#C925D1",
+  "developertools": "#C925D1",
+  "endusercomputing": "#01A88D",
+  "frontendwebmobile": "#DD344C",
+  "games": "#8C4FFF",
+  "general": "#232F3E",
+  "internetofthings": "#7AA116",
+  "machinelearning": "#01A88D",
+  "managementgovernance": "#E7157B",
+  "mediaservices": "#ED7100",
+  "migrationtransfer": "#01A88D",
+  "networkingcontentdelivery": "#8C4FFF",
+  "quantumtechnologies": "#ED7100",
+  "robotics": "#DD344C",
+  "satellite": "#C925D1",
+  "securityidentitycompliance": "#DD344C",
+  "serverless": "#8C4FFF",
+  "storage": "#7AA116"
+}
+
+' returns color based on IBM icon category name
+!function $IBMColor($category)
+!$category = %lower($category)
+!if %json_key_exists($IBM_CATEGORY_COLORS, $category)
+!return $IBM_CATEGORY_COLORS[$category]
+!else
+!return $IBM_BG_COLOR
+!endif
+!endfunction
+
+' Styling / Theme
+' ##################################
+!$THEME = "IBM-icons"
+
+<style>
+  root {
+    BackgroundColor $IBM_BG_COLOR
+    FontColor $IBM_FG_COLOR
+    LineColor $IBM_FG_COLOR
+  }
+  caption {
+    LineThickness 0
+  }
+  footer {
+    LineThickness 0
+  }
+  header {
+    LineThickness 0
+  }
+</style>
+
+!define TECHN_FONT_SIZE 12
+
+!if %not(%variable_exists("$GROUP_LABEL_FONT_SIZE"))
+!$GROUP_LABEL_FONT_SIZE = 25
+!endif
+
+skinparam defaultTextAlignment Center
+skinparam PackageTitleAlignment Left
+
+skinparam wrapWidth 200
+skinparam maxMessageSize 150
+skinparam Shadowing false
+skinparam RoundCorner 0
+skinparam BackgroundColor $IBM_BG_COLOR
+
+!procedure $IBM_common_skinparam()
+'    FontColor $IBM_FG_COLOR
+'    BackgroundColor $IBM_BG_COLOR
+'    BorderColor $IBM_COLOR_GRAY
+!endprocedure
+
+!procedure $IBM_deployment_skinparam()
+'    FontColor $IBM_FG_COLOR
+    BackgroundColor $IBM_BG_COLOR
+    BorderColor $IBM_COLOR_GRAY
+    BorderThickness 1.25
+!endprocedure
+
+skinparam arrow {
+    Color $IBM_ARROW_COLOR
+    FontColor $IBM_FG_COLOR
+    FontSize 12'
+}
+
+skinparam TitleFontColor $IBM_FG_COLOR
+skinparam TitleBorderColor transparent
+skinparam BackgroundColor $IBM_BG_COLOR
+
+' Sequence Diagram
+skinparam participant {
+    $IBM_common_skinparam()
+    BorderThickness 1.25
+    Padding 2
+}
+
+skinparam sequence {
+    ArrowThickness 2
+    LifeLineBorderColor $IBM_FG_COLOR
+    LifeLineBackgroundColor $IBM_BG_COLOR
+    BoxFontColor $IBM_FG_COLOR
+    BoxBorderColor $IBM_COLOR_GRAY
+    BoxBorderThickness 1.25
+    BoxBackgroundColor $IBM_BG_COLOR
+    GroupBorderColor $IBM_FG_COLOR
+    GroupFontColor $IBM_FG_COLOR
+    GroupBodyBackgroundColor transparent
+}
+skinparam BoxPadding 2
+
+skinparam note {
+  BorderColor $IBM_COLOR_GRAY
+  BorderThickness 1.25
+}
+
+' Activity Diagram
+' StartColor not working, uses <style> LineColor
+skinparam activity {
+  $IBM_common_skinparam()
+  BorderThickness 2
+  StartColor $IBM_BG_COLOR
+  EndColor $IBM_FG_COLOR
+  BarColor $IBM_FG_COLOR
+}
+skinparam swimlane {
+  $IBM_common_skinparam()
+  TitleFontColor $IBM_FG_COLOR
+}
+
+' Deployment Diagram
+skinparam actor {
+    $IBM_deployment_skinparam()
+    'StereotypeFontColor  $IBM_FG_COLOR
+}
+skinparam agent {
+    $IBM_deployment_skinparam()
+    Padding 2
+}
+skinparam artifact {
+    $IBM_deployment_skinparam()
+}
+skinparam boundary {
+    $IBM_deployment_skinparam()
+}
+skinparam card {
+    $IBM_deployment_skinparam()
+}
+skinparam circle {
+    $IBM_deployment_skinparam()
+}
+skinparam cloud {
+    $IBM_deployment_skinparam()
+}
+skinparam collections {
+    $IBM_deployment_skinparam()
+}
+skinparam component {
+    $IBM_deployment_skinparam()
+}
+skinparam control {
+    $IBM_deployment_skinparam()
+}
+skinparam database {
+    $IBM_deployment_skinparam()
+}
+skinparam entity {
+    $IBM_deployment_skinparam()
+}
+skinparam file {
+    $IBM_deployment_skinparam()
+}
+skinparam folder {
+    $IBM_deployment_skinparam()
+}
+skinparam frame {
+    $IBM_deployment_skinparam()
+}
+skinparam hexagon {
+    $IBM_deployment_skinparam()
+}
+skinparam interface {
+    $IBM_deployment_skinparam()
+}
+skinparam label {
+    $IBM_deployment_skinparam()
+}
+skinparam node {
+    $IBM_deployment_skinparam()
+}
+skinparam package {
+    $IBM_deployment_skinparam()
+}
+skinparam person {
+    $IBM_deployment_skinparam()
+}
+skinparam queue {
+    $IBM_deployment_skinparam()
+}
+skinparam rectangle {
+    'StereotypeFontSize 12
+    $IBM_common_skinparam()
+    BorderThickness 2
+}
+skinparam stack {
+    $IBM_deployment_skinparam()
+}
+skinparam storage {
+    $IBM_deployment_skinparam()
+}
+skinparam usecase {
+    $IBM_deployment_skinparam()
+}
+
+' other
+skinparam legend {
+    $IBM_common_skinparam()
+}
+skinparam object {
+    $IBM_common_skinparam()
+}
+skinparam class {
+    $IBM_common_skinparam()
+}
+skinparam partition {
+    $IBM_common_skinparam()
+}
+
+!definelong IBMEntityColoring(stereo)
+skinparam rectangle<<stereo>> {
+    '$IBM_common_skinparam()
+    BorderThickness 2
+}
+' https://github.com/plantuml/plantuml/issues/1023
+'skinparam participant<<stereo>> {
+'    BackgroundColor IBM_BG_COLOR
+'    BorderColor IBM_BORDER_COLOR
+'}
+!enddefinelong
+
+' Layout
+' ##################################
+
+!definelong LAYOUT_AS_SKETCH
+skinparam backgroundColor #EEEBDC
+skinparam handwritten true
+skinparam defaultFontName "Comic Sans MS"
+center footer <font color=red>Warning:</font> Created for discussion, needs to be validated
+!enddefinelong
+
+!define LAYOUT_TOP_DOWN top to bottom direction
+!define LAYOUT_LEFT_RIGHT left to right direction
+
+' Elements
+' ##################################
+!function $IBMImg($service,$scale="1")
+!return %call_user_func("$" + $service + "IMG",$scale)
+!endfunction
+
+!function $IBMGroupImg($service)
+!return %call_user_func("$" + $service + "IMG", "0.4")
+!endfunction
+
+!definelong IBMEntity(e_alias, e_label, e_techn, e_descr, e_color, e_sprite, e_stereo, padding_value)
+!$label_length = ‰s($e_label)
+!$padding_length = padding_value - $label_length
+!$padding_string = ''
+!while ($padding_length > 0)
+  !$padding_string = $padding_string + ' '
+  !$padding_length = $padding_length - 1
+!endwhile
+!$padding_string = '<color:#FFFFFF>' + $padding_string + '</color>'
+rectangle "==e_label" + $padding_string + "\n$IBMImg(e_sprite)\n//<size:TECHN_FONT_SIZE>[e_techn]</size>//\n e_descr" <<e_stereo>> as e_alias
+!enddefinelong
+
+
+'Use to have elements of same size (adapt string accordingly
+!$PADDING = "xxxxxxxxxxxxxxx"
+
+!definelong IBMEntity(e_alias, e_label, e_techn, e_color, e_sprite, e_stereo)
+rectangle "$IBMImg(e_sprite)\n==e_label\n$ <<e_stereo>> as e_alias
+!enddefinelong
+
+!definelong IBMEntity(e_alias, e_label, e_techn, e_descr, e_color, e_sprite, e_stereo)
+rectangle "$IBMImg(e_sprite)\n\n==e_label\n==<color:transparent>$PADDING</color>\ne_descr\n" <<e_stereo>> as e_alias
+!enddefinelong
+
+!definelong IBMParticipant(p_alias, p_label, p_techn, p_color, p_sprite, p_stereo)
+participant "p_label\n$IBMImg(p_sprite)\n<size:TECHN_FONT_SIZE>[p_techn]</size>" as p_alias <<p_stereo>>
+!enddefinelong
+
+!definelong IBMParticipant(p_alias, p_label, p_techn, p_descr, p_color, p_sprite, p_stereo)
+participant "p_label\n$IBMImg(p_sprite)\n<size:TECHN_FONT_SIZE>[p_techn]</size>\n\n p_descr" as p_alias <<p_stereo>>
+!enddefinelong
+
+
+' Group support
+' ##################################
+!function $IBMColorDetectDark($color)
+!if $IBM_DARK == true && ($color == "black" || $color == "#000000")
+  !return white
+!log after $color
+!endif
+!if $IBM_DARK == true && ($color == "white" || $color == "#FFFFFF")
+  !return black
+!endif
+!return $color
+!endfunction
+
+' "StereotypeFontSize 0" below will hide text
+' still need "hide stereotype" in diagrams to hide whitespace
+!procedure $IBMGroupColoring($stereo, $border_color=$IBM_FG_COLOR, $border_style="plain")
+  skinparam rectangle<<$stereo>> {
+    StereotypeFontSize 0
+    FontColor  $IBM_FG_COLOR
+    BackgroundColor $IBM_BG_COLOR
+    BorderColor $border_color
+    BorderStyle $border_style
+    Shadowing false
+    BorderThickness 2
+  }
+!endprocedure
+' IBMGroupColoring deprecated, left for backwards compatibility
+!definelong IBMGroupColoring(g_stereo, g_background_color, g_border_color, g_border_style)
+  skinparam rectangle<<g_stereo>> {
+    StereotypeFontSize 0
+    BackgroundColor $IBMColorDetectDark(g_background_color)
+    BorderColor $IBMColorDetectDark(g_border_color)
+    BorderStyle g_border_style
+    Shadowing false
+    BorderThickness 2
+  }
+!enddefinelong
+
+!function $IBMDefineGroup($alias, $label, $stereo)
+!$ret = 'rectangle "' + $label + '" as ' + $alias + ' <<' + $stereo + '>>'
+!return $ret
+!endfunction
+
+!function $IBMDefineGroup($alias, $label, $sprite, $stereo)
+!$label=' \n ' + $IBMGroupImg($sprite) + " " + $label
+!$ret = $IBMDefineGroup($alias, $label, $stereo)
+!return $ret
+!endfunction
+
+' wraps each line (seperated by \n) of a multi-line label with color
+!function $colorlabel($label, $color="black")
+!$buffer = ""
+!$tmp = $label
+!$i = %strpos($tmp, "\n")
+!while $i >= 0
+  !$buffer = $buffer + %substr($tmp, 0, $i) + "</color>\n<color:" + $color + ">"
+  !$tmp = %substr($tmp, $i + 2)
+  !$i = %strpos($tmp, "\n")
+!endwhile
+!return "<color:" + $color + ">" + $buffer + $tmp + "</color>"
+!endfunction
+
+' IBMGroupEntity deprecated, left for backwards compatibility
+!definelong IBMGroupEntity(g_alias, g_label, g_color, g_stereo)
+rectangle "$colorlabel(g_label, g_color)" as g_alias <<g_stereo>>
+!enddefinelong
+
+!definelong IBMGroupEntity(g_alias, g_label, g_color, g_sprite, g_stereo)
+rectangle "$IBMGroupImg(g_sprite)  $colorlabel(g_label, g_color)" as g_alias <<g_stereo>>
+!enddefinelong

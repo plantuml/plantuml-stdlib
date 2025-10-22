@@ -1,0 +1,11 @@
+sprite mdiRadius <svg width="48" height="48"><g transform="scale(2)"><path d="M12,2A10,10 0 0,0 2,12A10,10 0 0,0 12,22A10,10 0 0,0 22,12A10,10 0 0,0 12,2M17,15V13H13.72C13.36,13.62 12.71,14 12,14A2,2 0 0,1 10,12A2,2 0 0,1 12,10C12.71,10 13.36,10.38 13.72,11H17V9L20,12L17,15Z" /></g></svg>
+
+!if %function_exists("$MdiSprite")
+  !unquoted function $MdiRadiusImg($color = $MDI_DEFAULT, $scale = "1")
+    !return $MdiSprite(mdiAccountAlert, $color, $scale)
+  !endfunction
+
+  !unquoted function $MdiRadius($alias, $label=$MDI_DEFAULT, $shape=$MDI_DEFAULT, $color=$MDI_DEFAULT, $scale=1, $stereo=$MDI_DEFAULT)
+    !return $MdiSpriteElement("mdiAccountAlert", $alias, $label, $shape, $color, $scale, $stereo)
+  !endfunction
+!endif

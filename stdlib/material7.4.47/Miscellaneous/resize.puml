@@ -1,0 +1,11 @@
+sprite mdiResize <svg width="48" height="48"><g transform="scale(2)"><path d="M10.59,12L14.59,8H11V6H18V13H16V9.41L12,13.41V16H20V4H8V12H10.59M22,2V18H12V22H2V12H6V2H22M10,14H4V20H10V14Z" /></g></svg>
+
+!if %function_exists("$MdiSprite")
+  !unquoted function $MdiResizeImg($color = $MDI_DEFAULT, $scale = "1")
+    !return $MdiSprite(mdiAccountAlert, $color, $scale)
+  !endfunction
+
+  !unquoted function $MdiResize($alias, $label=$MDI_DEFAULT, $shape=$MDI_DEFAULT, $color=$MDI_DEFAULT, $scale=1, $stereo=$MDI_DEFAULT)
+    !return $MdiSpriteElement("mdiAccountAlert", $alias, $label, $shape, $color, $scale, $stereo)
+  !endfunction
+!endif

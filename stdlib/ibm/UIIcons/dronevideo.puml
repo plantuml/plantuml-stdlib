@@ -1,0 +1,13 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $dronevideo [64x64/16z] xS61400000CXXFdRpkElMXu0001m
+
+!function $dronevideoIMG($scale=1)
+!return "<img data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAAIGNIUk0AAHomAACAhAAA+gAAAIDoAAB1MAAA6mAAADqYAAAXcJy6UTwAAAAEZ0FNQQAAsY58+1GTAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAAOxAAADsQBlSsOGwAAAtpJREFUeNrtmkloFFEQhl+cISKIoIjrRAiKYPDqAgp6EjQqbuCCBxFUXMhJ0IsmmosHLyK4Ix7UXEQFV0QQJYLGq+jBeNG4ogmIBx3Xr+g6hGE6zjj9enqm64cPOul+r19XV9WrZso5k8mUZjXEeK9mWA6zYDLkYAKMhPfwEV7AE7gHPfVggImwHVbCzDLHvoILcBTe1ZoBRsNB2ALDK5zrO5yBfTBQCwZYA8dhbMTzflJvupRUA2TgCOwMOZ+H+3AVnsFr+KDnxkMTtMAKWACNIfMcgzb4lSQDZOEyLCtyTpJbJ5yDryXOJ4lxk7r9uCLnr8Eq+BnFW4tCv2E6LCx44wdgHTzUv0tVXncBCaVvMK9grV26U7ikGMCpezs1grh2K5yHHxXMKWMf6MO2qmd0qGETmwQlUV3XGC9UTsNkCczQ2HdqsOdwU927r8hYyRFL1StqrhCaBO2wWfPFUJK4Pqtv+W09VILiuhdhVJnjvsAGuOFzcRnPDz8b7sKI/xgrBdRauA1vfC0w69kAPboFdgz6n9QAp+GOlruiKbBIK8eWQdd2xvVN4FvturXt+ofXZfSavI6pKzV7utZkMlVWB/ypsdoi0vUOS7sHmAEsC5hMprTXAeXuuw0Jf6ay1mvboBkg5cpGEGPmAWYAM0B91wGx7MfVqj9sF6jivRfDKT3eCrfSlgNOuuDH0pweWxJMmwG2ueBn8D49Tl0OkJhvsjqgTneBRg/fEDJnPuqF+ugPkKaoKy5oloxSG13QSvM0qZWgdHIdhrmevfYR7HZB51kiDDAVDrmgQzROScfoXnhZLQOMcUEj446QmJd4PeGCnuHPFdxjvws6z8LuIZ2j0knSH7cB+oeIc+ka3QO9Eb3taeplq0POD6ixYt0Fij38Y43P7ojdvVdDbL7mmTklrCX2bVBa2ro8x323Jtn1Lmi9S1Qh5PvhvdzLPobMAGYAM4DJZDKlVn8BIAR+vB9K6gwAAAAASUVORK5CYII={scale="+$scale+"}>"
+!endfunction
+
+IBMEntityColoring(dronevideo)
+!define dronevideo(e_alias, e_label, e_techn) IBMEntity(e_alias, e_label, e_techn, #232F3E, dronevideo, dronevideo)
+!define dronevideo(e_alias, e_label, e_techn, e_descr) IBMEntity(e_alias, e_label, e_techn, e_descr, #232F3E, dronevideo, dronevideo)
+!define dronevideoParticipant(p_alias, p_label, p_techn) IBMParticipant(p_alias, p_label, p_techn, #232F3E, dronevideo, dronevideo)
+!define dronevideoParticipant(p_alias, p_label, p_techn, p_descr) IBMParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, dronevideo, dronevideo)

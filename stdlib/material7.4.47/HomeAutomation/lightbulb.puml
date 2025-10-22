@@ -1,0 +1,11 @@
+sprite mdiLightbulb <svg width="48" height="48"><g transform="scale(2)"><path d="M12,2A7,7 0 0,0 5,9C5,11.38 6.19,13.47 8,14.74V17A1,1 0 0,0 9,18H15A1,1 0 0,0 16,17V14.74C17.81,13.47 19,11.38 19,9A7,7 0 0,0 12,2M9,21A1,1 0 0,0 10,22H14A1,1 0 0,0 15,21V20H9V21Z" /></g></svg>
+
+!if %function_exists("$MdiSprite")
+  !unquoted function $MdiLightbulbImg($color = $MDI_DEFAULT, $scale = "1")
+    !return $MdiSprite(mdiAccountAlert, $color, $scale)
+  !endfunction
+
+  !unquoted function $MdiLightbulb($alias, $label=$MDI_DEFAULT, $shape=$MDI_DEFAULT, $color=$MDI_DEFAULT, $scale=1, $stereo=$MDI_DEFAULT)
+    !return $MdiSpriteElement("mdiAccountAlert", $alias, $label, $shape, $color, $scale, $stereo)
+  !endfunction
+!endif

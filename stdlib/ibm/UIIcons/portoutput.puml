@@ -1,0 +1,13 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $portoutput [64x64/16z] xS61400000CXXFdRpkElMXu0001m
+
+!function $portoutputIMG($scale=1)
+!return "<img data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAAIGNIUk0AAHomAACAhAAA+gAAAIDoAAB1MAAA6mAAADqYAAAXcJy6UTwAAAAEZ0FNQQAAsY58+1GTAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAAOxAAADsQBlSsOGwAAA8FJREFUeNrtmkloFEEUhiuZcUPFKIo7BEUFczTictGcxAVRMOpBUTQgKLiAEfFgJqDgRQ2KSlBUXFBcDqIXD5qI4pZAULxoLoJxgWhconFP/B/zmnTKrtm6O13dUw8+hu6e6e73z6uqV69KCGPGjBkzZsxYvlqBT/cdAcrALDCZGQhGgz+gBbSD16AJPAT3wfswCzAMrASrwcwc73EXnAaXwNewCDASVIINYJBH79UBjoG94KOuAsTBZpAAg316vzawB9SALj8eEM/xdxM4TKcprneCBnAbNIJm0Are8TPHcbRM5X6CmKFoVnPAQZ0iYBE4B4Y4XHsDDvP1lizvWwzWgnVgPJ/7xCK91UUAerlah8ihUN0NjoNfLt+pLzetXWA7OKlLH0DOn3D4zWWw0YchrIgjwFeLZxH2tZLzNJ5vBUd8ejffnc9UgIncpu3f/Q5WgOthzwTjGVy/KHV49M8vBzcCfO8q/qz2WwDqjEqlc1s0cD5hO3YlQizFtVHgKugndXg7AnR+JydGls3lzzt+CFDFExr7UDef09Sg7DcoB/29EkElwFBwnsdkyyrdKO2R0eyxzksRYinG/KXSgylL+6tBx+2pCCoBDnG+btk+UK/R6OWZCDFFMaPGlvR0ckR80WwI90SEmCLrK7cdPwYHNM1jXIvgJECFVNGhLPCWxsmcKxEKHc5NkY4bQ5DRPgLzwGfpfMKWNWYswCTp+HlI0vqcRIgrpqF2y7QY0aWxOAlV2uwUAXJ9r11EwxwjoVDkuTkJ0J4mIsIcAdWZ9AFUiRluO6bVnA8ZPKBAAyepsnxT/F+wTaimzU4R0JxmWNTVsnZeJYA87JVG1XmVAA+k47KoOq8SoE4a06eL7oWKSDmvEqCVsyr7d1ZF0flUecBZ6XiT6FkbjITzqQS4IHquz4/lWWKknFdNh8l+iOTK7GzbOZoi0zpdR1ScT5cK75eyQhLkaMD/fpmXzqeKAMFN4CdPMS0r4U6yISAB7knFDlfOpxNAsKMLwBjbORKENja9CEgEq8JTLzxYGksnABVEaZfHGtFdbqJmQyXzpwGL4MkaRSyD79AmpWciuSBq9Rl9RLIG1xZgcxC9JYDgf5qKj4tts75Cbh4lnD16PToU8WikhQCC2/0rsFAaPUo4R/gGngj3q0e0HLcNXOEOt0kXASwRmlgEewl6AEfDenbgpch+IaVYJHecnALL+J60Q+yM8HHTZK5FjN7aJkd2DSzRTQCrmhT6jZJmq6yH98rbzdJOFprt8saMGTNmzJix/LV/E7/gQ7jRvLQAAAAASUVORK5CYII={scale="+$scale+"}>"
+!endfunction
+
+IBMEntityColoring(portoutput)
+!define portoutput(e_alias, e_label, e_techn) IBMEntity(e_alias, e_label, e_techn, #232F3E, portoutput, portoutput)
+!define portoutput(e_alias, e_label, e_techn, e_descr) IBMEntity(e_alias, e_label, e_techn, e_descr, #232F3E, portoutput, portoutput)
+!define portoutputParticipant(p_alias, p_label, p_techn) IBMParticipant(p_alias, p_label, p_techn, #232F3E, portoutput, portoutput)
+!define portoutputParticipant(p_alias, p_label, p_techn, p_descr) IBMParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, portoutput, portoutput)

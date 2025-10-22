@@ -1,0 +1,13 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $partitioncollection [64x64/16z] xS61400000CXXFdRpkElMXu0001m
+
+!function $partitioncollectionIMG($scale=1)
+!return "<img data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAAIGNIUk0AAHomAACAhAAA+gAAAIDoAAB1MAAA6mAAADqYAAAXcJy6UTwAAAAEZ0FNQQAAsY58+1GTAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAAOxAAADsQBlSsOGwAAAixJREFUeNrtmU0oNVEYx42LUlIUK1kgCxtFvhZvb5KlsrPwtVA+ipV8LC0ldnrL4q33RUpiYSNRspRSio2FIgtFbGx8+5961DFNzHDvzMP9/+pXd87cuafzzDPnPGduSgohhBBCCCGEEEIISS4cj7bnBPRzDXfgKNzXFICYR9tYAvrJhCWwCx7BQy0BSA25v3Q4D1uSNQCGNE1BcELqp0UGnWa1PcA2uKhtDkgEh/LsN1tZlyrHkc4JTsj9JSITymAvrIfF8BGewnX496PgxkIOQDwzIQNOwX+wFubLJGva82Ad7JHPm/BJQwDeC0IFnJE76Gc1WZXMcT6Y5KslGItevx2L6NFzB8GkbAO89Hn9BOwI0F8RzIFrWgJgB6FCBn/s87pSOOtaws9kHuiXx2IP1sBs6zuVcBleaAnAaxBmAtx5wwj85Rp8OdyFN+IB/A9brSCYgN3J5PimKImaW9exGcy43MEcH9cPwyuP9is5t2C1NXpVZZowy+ScTHJ+2Q5wrlBzALxqhB+5F4j34H8HOHeqMQOCVodmCRxyHa97zAO5cs5mQ9My+NnS+AT2WdmbLbP9uawmWbAJrsAC6zpTBHW7l0Hnmw3+lUk4GLC/aTigJQO+uinaglXylskPZi/QqaUUjseO0GxsliT9q9/JZDPgP1I233M7HHEAVL4VSvpXYmH9L+BGxeCjqgTVDD6KStDMxO1aBh9mANT+NUYIIYQQQgghhBBCko0XWeaIf7ARd5EAAAAASUVORK5CYII={scale="+$scale+"}>"
+!endfunction
+
+IBMEntityColoring(partitioncollection)
+!define partitioncollection(e_alias, e_label, e_techn) IBMEntity(e_alias, e_label, e_techn, #232F3E, partitioncollection, partitioncollection)
+!define partitioncollection(e_alias, e_label, e_techn, e_descr) IBMEntity(e_alias, e_label, e_techn, e_descr, #232F3E, partitioncollection, partitioncollection)
+!define partitioncollectionParticipant(p_alias, p_label, p_techn) IBMParticipant(p_alias, p_label, p_techn, #232F3E, partitioncollection, partitioncollection)
+!define partitioncollectionParticipant(p_alias, p_label, p_techn, p_descr) IBMParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, partitioncollection, partitioncollection)

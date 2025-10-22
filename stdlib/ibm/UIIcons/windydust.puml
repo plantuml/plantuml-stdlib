@@ -1,0 +1,13 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $windydust [64x64/16z] xS61400000CXXFdRpkElMXu0001m
+
+!function $windydustIMG($scale=1)
+!return "<img data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAAIGNIUk0AAHomAACAhAAA+gAAAIDoAAB1MAAA6mAAADqYAAAXcJy6UTwAAAAEZ0FNQQAAsY58+1GTAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAAOxAAADsQBlSsOGwAAAq5JREFUeNrtmjtoVEEUhifZ9YGPBQVFbVMoQYgkgRTaWIoosVJZ8FWIvYhWalIZ7GzU2NgESxM1ovhoJaJFIARBrXxhJz6KJKL+hz0XhkPc2bnJsvfsnB8+2LnMzN35771zz8y5zplMJpPJZDKZ0lRHQf/XCjAIDoIBsJWPfwFT4B4YBwvtaMAhcBV0Beq9B+fA3aWcrFSggXeCEXANbGygPtU5DNaCZ+CvdgNG+IrGajdYA57kOWm5QLe9HPw8uAHugBk+thMcBWfASq8utX2R53Eowh1AE96EuO0/gb3gNvjIZszz70fgPjgAKl6bfnAd/Il97lqtQTHhzYH9YLpOm2muM+cd6+K+nEYDfI0GBu+bMBroS4UBfaI8FtF2LNCXCgO2ifJsRNvZQF8q3gKVVgcfmtUtyp9TM6Aqyq9TMqAHnBbHxlMxgAY/CVaJxVG0AWVFg15XJxTOwuGFVhgQWoV1NLm+4+VzrmWx9kkwG/yFvI3Lige+LBsimgz46ZqwJWYymUymlNVIYqTVkd7/6v/g5e8UvxJpo/R3SoHQerCdOQbegLPgYWqhcKYd4AG47CJSfp1t+EhfAheXcw7QuDymeWIfeBzqpKTYgHqZIrqwu8DN0CRbapNb/6urZYhPehP7ZvASvE3BgMwEGvSAd+wXT4zJTIIyU9Sf2lsgOlNUxEDoOwc5mSoc9TVFRbwDZHanO6JtdKaoiAa8EuVqRNtqoC8VBsjkBmV/ehpot1imaEKjAfSn33llyv5MBkxYLFM0w0GSukiQvvH5AI6IifAU2AS+MRT69rra1jhFfBtEKHxcGKluLXAFnM/ZllaEQ41ULHIk+BysBnsi2tCVH2acdgNoME9d7WMoiuhCX4/ShsgJcCt2/axB8uPpLd57fklbYiaTyWQymdLVP1LggsIicruTAAAAAElFTkSuQmCC{scale="+$scale+"}>"
+!endfunction
+
+IBMEntityColoring(windydust)
+!define windydust(e_alias, e_label, e_techn) IBMEntity(e_alias, e_label, e_techn, #232F3E, windydust, windydust)
+!define windydust(e_alias, e_label, e_techn, e_descr) IBMEntity(e_alias, e_label, e_techn, e_descr, #232F3E, windydust, windydust)
+!define windydustParticipant(p_alias, p_label, p_techn) IBMParticipant(p_alias, p_label, p_techn, #232F3E, windydust, windydust)
+!define windydustParticipant(p_alias, p_label, p_techn, p_descr) IBMParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, windydust, windydust)

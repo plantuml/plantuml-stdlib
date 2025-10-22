@@ -1,0 +1,13 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $vmdkdisk [64x64/16z] xS61400000CXXFdRpkElMXu0001m
+
+!function $vmdkdiskIMG($scale=1)
+!return "<img data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAAIGNIUk0AAHomAACAhAAA+gAAAIDoAAB1MAAA6mAAADqYAAAXcJy6UTwAAAAEZ0FNQQAAsY58+1GTAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAAOxAAADsQBlSsOGwAAA4tJREFUeNrtmstrFDEcx7OduoLgRTxYHxdFREQEqY/T1hd6UGtbRbEqizf/gb6gWBWhsD34J0gpKsXHrlYPiqCrHnwshSI9FFwFqV1Pe1BBKEj9hvkJIc6rY2ZNdvODD7vJZDKT7yS/yS8ZxqxZs9bIlopYbi3IgT2gRfM2VcBz0AtmVQjAGz8FVhj2cKtgW5gITREqyhnYeEb3nAsrFEWANoOHeOi9N0eoZHVMv/G/bCHg3mP1gLo2K0CjC9Bc4+ttAV0gA9bRGE3Ru/szeAUegMl6E+AwGAZbfY5vJPaDITADBsEd0wVYA8bA3kWetwncBq9BN/hkog/YAd7GaLxou6mONtN6QCvNx5dJ+fOgQOP8DfhK+avALtAOOkBaOGcleAIOgqIJAvBgKe/R+HsUoJQ9zvlA3AAbaArbJRxPkz/YqXo4JDEErlMA9cd+UcOP+zRetjKV7aVzxZ5wU3cfcAAckvIGwEiMukboXNknnNBZgKtSOh+z8aII+ZBraCPAenJkosPrUVBvD9UlviK36+gE26V0IWDMiytMjAWv4JSprpPStSZ16wEZKX0/oPF8hek0vTFa6P+U5DyD6sroOATk2LvkU85vhSloBacUci0tBajEWKXxO1ZJSoBaR4Nx7TtLaCVKZQ+Y85gRelnQdLZYa2WTFKDVpxz39lWP/CodM1aAF1L6mE85/qrj6/W3aGxX6H/oGr7u0SCP8K4J6Q4KbMo+InQH1OWAUTABxk3pAR8pxBUjuDjTYIeiwjP0e8oUAbgNSunOGNPhUaHRTtIiqBbgKXgs5Q0vUoQJKQxOVIQk1gPOS87MoRneXfIJYTZO3b8mIjgRylyS0pdDyv8AL8FZsETI3wwuMHdleCn4SVHevEcd08xdGe4UHlITpWfouJL7TWomWKJIryBNW9MU1YmRXSqgJzB68o7UE5iqt0OSq8LvmLuG9+wf6vAbDkd19gGifQH7wBHwXpEIPJ01LRh6RHhtjUUVgdGTz0o9wqhocDrEgYWJoHxWaLfHrQBWACtAQ5vKt0Capp1ZIaob8pnq1qUAV0CfkO6naW5/owyBcxHzrA+oVwHGIubVrQ+4yNzPVGUn2DACcG8/wP7+qMH6ACuAFcBsH8D3/MSFiwWD2jenogcUDX7ARRUC+O3m6m6Rdpuj7At8Y+4Hiny/n3+suFzzhvPd5ofM/dhyllmzZs1agP0Gonur1oHdzF4AAAAASUVORK5CYII={scale="+$scale+"}>"
+!endfunction
+
+IBMEntityColoring(vmdkdisk)
+!define vmdkdisk(e_alias, e_label, e_techn) IBMEntity(e_alias, e_label, e_techn, #232F3E, vmdkdisk, vmdkdisk)
+!define vmdkdisk(e_alias, e_label, e_techn, e_descr) IBMEntity(e_alias, e_label, e_techn, e_descr, #232F3E, vmdkdisk, vmdkdisk)
+!define vmdkdiskParticipant(p_alias, p_label, p_techn) IBMParticipant(p_alias, p_label, p_techn, #232F3E, vmdkdisk, vmdkdisk)
+!define vmdkdiskParticipant(p_alias, p_label, p_techn, p_descr) IBMParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, vmdkdisk, vmdkdisk)

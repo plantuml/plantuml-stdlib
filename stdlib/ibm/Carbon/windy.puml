@@ -1,0 +1,13 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $windy [64x64/16z] xS61400000CXXFdRpkElMXu0001m
+
+!function $windyIMG($scale=1)
+!return "<img data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAAIGNIUk0AAHomAACAhAAA+gAAAIDoAAB1MAAA6mAAADqYAAAXcJy6UTwAAAAEZ0FNQQAAsY58+1GTAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAAOxAAADsQBlSsOGwAAAvxJREFUeNrtmz1oFEEYhudy1whi539lFUuDpSmixTUWFqKJVoJg4x+IBiRc4U9jBEU0XSqbaMgVIhZeodfYmEAs/CEWCQjRoNgppxDU9yPvJcveebc7+zd7My88zWXndue92fm+mW+ilJOTk5OTk7UqGPxsm0AZHAI7+NkKeAFqoNGrBvSBs6ACtoKvYIF/6wfbwDdwA0yAP71kwGYwBQ6DR+A2mPddMwCugBHwDJwAP3RvWDTsl5/hkD8JbnLI+yWfVcFbcAnsB4/B37wbcA5cYOerAa7/wFdjDHwHr3VdN2XCq/CXrIZoV2WbCr8jtwaUOeGNa7QdZ9tyng0YAp/bTHhBNM+2Q3k2YDdYitB+id8RWiVDDDieZejpBe0By7YaIInRLlC31YBRpsY1Gw04Coa5LmjYZoB0/iHXAxO6X1LK6TvvXwxprwh1VoMvM+p4MYnlcJ5GwBdmfbFuiDg5OTk52ayCAfE9Kcl2etc6gndT9FSPGbBFre0SnQZnwC8wp3y7xwULRnnHOkLRAgM61hFsMKCptnUEmwxomrCX890DsNqn7NMt5akj2GjAG+WpI5QyWPcHis8Ja72OkMV+wE66L4VQ3Y2NaXbgQNSH6WTAwZTi8z2+j2Hq/FIDGIxwb6kjzGY9B8jujpTCj6m1MwFTIZ6nzpE0oHHffcpTRzAhDOrU+T8xvZXXYCbk/e6C7eC8hEFT8oCW+Nzl+lXm9pfBO/A+4H1kK/0auApemZYILTJVnVUbh6I6aY5prbT5GMCEZh2hxjbGpcIrHNY/wfMA10sHntKEMY6gRdV6rkjmiTvgOjsvk+3vIFEgC4Wt80vUOKI2jtWNqP8fq7vYLtzGbcA0Z9jBFE2TDt0Hk6r1YGXXOkLcBixHTE7W47OGpINPSGDFnQfUOQJ04nOkOr+u4jagxvdtVKNtpDq/KQY0mNsPM+wEVeQ6v66SCIPe+LzAJCd0fM6zAf743K8Tn9NSIeHXK7Vj7yYa0FQq//jg5OTk5OTkFFr/ANlTxy1+LrbmAAAAAElFTkSuQmCC{scale="+$scale+"}>"
+!endfunction
+
+IBMEntityColoring(windy)
+!define windy(e_alias, e_label, e_techn) IBMEntity(e_alias, e_label, e_techn, #232F3E, windy, windy)
+!define windy(e_alias, e_label, e_techn, e_descr) IBMEntity(e_alias, e_label, e_techn, e_descr, #232F3E, windy, windy)
+!define windyParticipant(p_alias, p_label, p_techn) IBMParticipant(p_alias, p_label, p_techn, #232F3E, windy, windy)
+!define windyParticipant(p_alias, p_label, p_techn, p_descr) IBMParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, windy, windy)

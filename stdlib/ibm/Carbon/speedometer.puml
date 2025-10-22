@@ -1,0 +1,13 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $speedometer [64x64/16z] xS61400000CXXFdRpkElMXu0001m
+
+!function $speedometerIMG($scale=1)
+!return "<img data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAAIGNIUk0AAHomAACAhAAA+gAAAIDoAAB1MAAA6mAAADqYAAAXcJy6UTwAAAAEZ0FNQQAAsY58+1GTAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAAOxAAADsQBlSsOGwAAAvJJREFUeNrtmk1IFVEUx2d6EkTwJDeBC0WrRfaB4CYogsrFW6URBO6KF1REZPSJUlZQ9GXUKogiWhSRQoFQQmgEtYkIscCFkNmmNmJGRVhY/4P/hYjozPPOzJnX+cNvN3PO3HNn7jnn3vE8k8lkMplMpmT0lCSmBf/7DFgAHNmpSuDZq7QEIA8GQHWMg6+mz7yGAHSCMdAeYwCu0GenhgDIg5wEjWBLDIPfDLbR55iWNeAW6APXQCbCwWfoo48+1SyCE6AZrAZ7IgyA2F5DXxPa0uAL0AHOgrIIBr+Etjvoy9kr5VKvwSGQDVjh3SNBdBGsAw0uvv2oCqFhZoN9oMah3RrabKcP1ZXgBdAPKhzaFFvvaNsUl6TKKi2Ccch6tDvsIih19hOmna/Mu39T2OfsAo/BdvAQjEy/yJ/FwDKWnI0MQLPL9BOxNrBgqgNd4DAYnOlCP2DpeZ1FjuTgY+Cj0oFXcKFsYrN0EDyb7QY/oOEMPwcpRBaDy8zLP5QMfBE4Do6CX+A0uAH+zHWjH9KRVGNnmJP7+YolrSbOejm4CU7N9K27CsDUwkRet+4EB17HT3M96OEa9T6sEd9Ln5aC82AnGAJHuNIXpDQFYCFnuZXPLUG4CsbnYzQtAWhgSpatsLugBXxxYVh7AFYxn9eDV3wD3rh0oDUAZUy5kno/gxPgfhSOtAWgBOxlqpXcfon8jMqhpgDUM61Jin3AwuZT1E41BGA5Nzq2grcsX1/G5XxqAJ4HvGeTQ/8rWLyMMr3d8ea/2RlqHCUJz750aPvZqn6zLRiTyWQymUxp0EqQU/Q8OT5TQd1XGE3fFO1WEoBzYK03uRPcxtI6kDIhrpNBP/Imj6hlS1yOm34rCYAcscvJ1QG209/ZWM15mlVsByOV3D/YwSZLOsveQgMg+2+yDyc/JKXtaGwjJ62Wb63sHH8IEwA5HB1ghyZt6m3P0T85MUoOR/NcH7JcJIfCGCiW4/FSz8EPlSaTyWQymUymYtM/ckiLbI07VJgAAAAASUVORK5CYII={scale="+$scale+"}>"
+!endfunction
+
+IBMEntityColoring(speedometer)
+!define speedometer(e_alias, e_label, e_techn) IBMEntity(e_alias, e_label, e_techn, #232F3E, speedometer, speedometer)
+!define speedometer(e_alias, e_label, e_techn, e_descr) IBMEntity(e_alias, e_label, e_techn, e_descr, #232F3E, speedometer, speedometer)
+!define speedometerParticipant(p_alias, p_label, p_techn) IBMParticipant(p_alias, p_label, p_techn, #232F3E, speedometer, speedometer)
+!define speedometerParticipant(p_alias, p_label, p_techn, p_descr) IBMParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, speedometer, speedometer)

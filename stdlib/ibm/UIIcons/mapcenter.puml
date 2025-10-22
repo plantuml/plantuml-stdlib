@@ -1,0 +1,13 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $mapcenter [64x64/16z] xS61400000CXXFdRpkElMXu0001m
+
+!function $mapcenterIMG($scale=1)
+!return "<img data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAAIGNIUk0AAHomAACAhAAA+gAAAIDoAAB1MAAA6mAAADqYAAAXcJy6UTwAAAAEZ0FNQQAAsY58+1GTAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAAOxAAADsQBlSsOGwAAA9ZJREFUeNrtms9LFGEcxl93dikMJDO6lEpGEZ3qUASJJXSIqJNEUYaXtF+QdegvqHMUWQc9hBlBRQehIrslBELZtYzsp1FQ5kYdlMjteen7wtvLO7Mzzjsz7+zOFz7ozM7s7vt83/d5H3dlLKussqrmqtGc2wUu0++PwBAYqyYBPoBG5dxrEuI6eFdJAjiac6fAUuXcMtAOToOdoAAmwWwlCrAWbPG4pwnsBWfARjAH3oI/lSLAd3DEx715sAEcACdAM907lXYB+AAOggbp3Aj4TIPUVS3YTMJ1gnrwHhTTKACjAbRLx19AGxikLq9SBEqtX7gJ8JHMUOwSjdIOMErb5ENa/y00A1LpF24CFKl7TdJ2OU2DF/UJPAAXwTPqdAt5Q2r8wvF4rEDdE7US9GmumwcT4A64At7QNpoKv/ASgA+kV+poA5mhV9f4On8OrpFfzNjuF06ZwWyiqStqjqa9n+IdfUx+MWKrXzhlHp+jdSuqhdb8fMDXmZL8Ypxm1Rob/KKcAHwZHJe6VksDmFjg68l+0UcdTtQvHB9vuFmJxnyd3jbw2rMkZqJ+4fi4Ro3GfBlcNWxUifmF43P9ytE4T0tjPCJfWqhfHAMvwSvTAuiicT1N3SgrqF8sAdvBhSAvkvN53Q1Qko63gdUx5pUipdCn4IfJJ877vI6r/wS0StGYu/K5iAe+CHSAHuquV30FR6MSgNFHYq3S8eEIBVgPukGXx64giptnP7hLZhiZAHwtXgKLpU+OtjJzH5gG6fY0bZ0DZHyRLwFG+/R9epOiOg0IEFu3wwogloEswH7ai3+nodsmBOD78zewnI75z91gOMBz8P36fBLdNiEA7/QtcFIxw+EAnfcafKTdNiGAyASyAHsoGM34uLfDZfCxdNuUAGMUN9dJXd1HAyhXPcrxPXA2rm6HSYK6WcCUZeDH7duk41LSgw8rQNBo3M3+/y5yNOnBhxFARGOmRGMv8+tSzvUzCyoX4t6hAMtANb9pMrzEKx/i3iDRWDW/QQNuX1KOa+KeASIaMyUa+zG/AWZJ5ULery4DHo0LaTA/UwKIaMyUaGy9+ZkSQERjNzO01vxMCaALRSIaR2V+1gkgojFTorHV5mdSALdobLX5hdo7NcVj8KT0fLzbP0GddM0hcLNSZ4AuGtfZbH4mkqAuE7S6PBbE/EohZ22g+3MGBeDReNblDQ0wS8ukALpobK35RSGALhpbl/yi2gVE8b8D+Le7K+iYf13VaFv4kcsx/HzzNN13gF/s3/8VvKimGRBnJf55QEVUJkAmQCZAJkAmQFZZZZVVtdZfOD8JKJhAsqAAAAAASUVORK5CYII={scale="+$scale+"}>"
+!endfunction
+
+IBMEntityColoring(mapcenter)
+!define mapcenter(e_alias, e_label, e_techn) IBMEntity(e_alias, e_label, e_techn, #232F3E, mapcenter, mapcenter)
+!define mapcenter(e_alias, e_label, e_techn, e_descr) IBMEntity(e_alias, e_label, e_techn, e_descr, #232F3E, mapcenter, mapcenter)
+!define mapcenterParticipant(p_alias, p_label, p_techn) IBMParticipant(p_alias, p_label, p_techn, #232F3E, mapcenter, mapcenter)
+!define mapcenterParticipant(p_alias, p_label, p_techn, p_descr) IBMParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, mapcenter, mapcenter)

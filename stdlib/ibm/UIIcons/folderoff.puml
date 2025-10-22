@@ -1,0 +1,13 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $folderoff [64x64/16z] xS61400000CXXFdRpkElMXu0001m
+
+!function $folderoffIMG($scale=1)
+!return "<img data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAAIGNIUk0AAHomAACAhAAA+gAAAIDoAAB1MAAA6mAAADqYAAAXcJy6UTwAAAAEZ0FNQQAAsY58+1GTAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAAOxAAADsQBlSsOGwAAAgtJREFUeNrtm71KA0EUhSdG7ESxU2NlYZPCSkvTWVmKCD6HrbG1EisfII0IiljZmdLSdxDtBAs7IZ4lE1hCNju7M3Pvndk5cAibP/b7sjM7IRulUlJSUuLOCTpA27MebDcEfhfdQR/RUVMETOAX9XYX3UYf8k9aaAh8lj/0efqJrYI36KBXaA9dr7kTv+g7eo3eC4A/Q+9M5oCO3vE9dNliR5bQLfRYbw+lwRcJuNXwLtMjkFAZvkjAjeUnzyGhFryaesEkG4bzRFn20Rd0JXdfX99eSoD3fRZ4Qw/Rn6n7MwkXEuApToM+JVjDU60DfEhwAl80vkeO5gCTOcF0n8rg5+ULfUXP0Q+OI6DsSLD95MuSLeRO9dqmwynAVkId+HzW9OqWVUBdCbbwkxyYrAOoJKwSTXijOWsc8d8Gnc32nKdBsfCSBZDASxVABi9RACm8NAHk8JIEsMBLEcAGL0EAKzy3AHZ4TgEi4LkEiIHnECAKnlqAOHhKASLhqQSIhacQIBretwDx8D4FBAHvS0Aw8D4EBAXvWkBw8C4FBAnvSkCw8C4EBA1vKyB4eBsBUcArNfu3wVZT4OscAVHBVxUQHXwVAVHCm4z3IvhQ84luVjkCYoLPMqwyBGKD/1bjK8WMhkBM8HMvk2s1acIzPQscNQU+y6zL5Z/U+A9G3djhy8QM9HBISUlJiTb/V6S8tMEmx/gAAAAASUVORK5CYII={scale="+$scale+"}>"
+!endfunction
+
+IBMEntityColoring(folderoff)
+!define folderoff(e_alias, e_label, e_techn) IBMEntity(e_alias, e_label, e_techn, #232F3E, folderoff, folderoff)
+!define folderoff(e_alias, e_label, e_techn, e_descr) IBMEntity(e_alias, e_label, e_techn, e_descr, #232F3E, folderoff, folderoff)
+!define folderoffParticipant(p_alias, p_label, p_techn) IBMParticipant(p_alias, p_label, p_techn, #232F3E, folderoff, folderoff)
+!define folderoffParticipant(p_alias, p_label, p_techn, p_descr) IBMParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, folderoff, folderoff)

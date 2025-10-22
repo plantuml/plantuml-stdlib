@@ -1,0 +1,13 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $dublincastle [64x64/16z] xS61400000CXXFdRpkElMXu0001m
+
+!function $dublincastleIMG($scale=1)
+!return "<img data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAAIGNIUk0AAHomAACAhAAA+gAAAIDoAAB1MAAA6mAAADqYAAAXcJy6UTwAAAAEZ0FNQQAAsY58+1GTAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAAOxAAADsQBlSsOGwAAAmdJREFUeNrtW71KA0EQ3oSAik+gbyBCyphCAyl9hUgaQR/BFFpGxGcQbIS8QtIFNIUm3YFY5DnEwiLukQlZzmxu/3/uZmDIzc0dmf2Ym5mbmyWk5FQRvO6RciNzbkq5F4meS1VBAOrAscpcqkl4S4roORwPLetHFvRaHlBYqmncmz5zY8blpoHprQKQUN7NyIlh/Y6G3joAPcv6G009wRhgAYD9LbousC9ZxlYlAF4pn1Huc/QdYJfyBceW1MZTsNlYDHgAVG9BvgvUo/tg4z3YbDQIrhYdKgjs4oVtq2j80QflHyYPEyYVuZb3KJ/ILl4VgFVMOFbNvRYoBeSTcstVHfCdqb190xDrAAQAAUAAEAAEAAFw1g+QpU1d2zwS6urG4gHWurqxeAAhm7vCPHmEMQABQABKDcACPaBAdcCYSWnslxxRuV2ENJhoylED0A75EcAsgACsS1G2sZgnh07C60EPKDsAFcYlGkTuy0xo3wWU7F+lwQH5P7HhJS87rDsGbB3wAiyDeGik5JH4LgC/sj075aksi8ROjYl6TA89AH5lu6/ZGNBlYokP2XsM8DEj1LH9NtikfAXHT5TfI/PudGLkOs/+6pbFv5HlxEULjpsRLT61dcLYP+HZzxuReYYbj0D+IsuxmEuNysu2zMaAPPtzH4EDynPKvyDP4Zytjo/pjtEm+w9Nd4RwRqhIdYAu+dgTNCMGpsZNeUCwe4JceUA2JvjYM1SqGLBwEQNk9+S43iM0k7RnJgNA3p4e2ett63XtV8q7IXWFlO3BrjBzLNNNqQuWpK5IxZ62ThoMrUucECQ1+gMKcffXISQW9wAAAABJRU5ErkJggg=={scale="+$scale+"}>"
+!endfunction
+
+IBMEntityColoring(dublincastle)
+!define dublincastle(e_alias, e_label, e_techn) IBMEntity(e_alias, e_label, e_techn, #232F3E, dublincastle, dublincastle)
+!define dublincastle(e_alias, e_label, e_techn, e_descr) IBMEntity(e_alias, e_label, e_techn, e_descr, #232F3E, dublincastle, dublincastle)
+!define dublincastleParticipant(p_alias, p_label, p_techn) IBMParticipant(p_alias, p_label, p_techn, #232F3E, dublincastle, dublincastle)
+!define dublincastleParticipant(p_alias, p_label, p_techn, p_descr) IBMParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, dublincastle, dublincastle)

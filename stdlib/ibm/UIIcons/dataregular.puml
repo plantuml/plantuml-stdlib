@@ -1,0 +1,13 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $dataregular [64x64/16z] xS61400000CXXFdRpkElMXu0001m
+
+!function $dataregularIMG($scale=1)
+!return "<img data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAAIGNIUk0AAHomAACAhAAA+gAAAIDoAAB1MAAA6mAAADqYAAAXcJy6UTwAAAAEZ0FNQQAAsY58+1GTAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAAOxAAADsQBlSsOGwAAA41JREFUeNrtW0trU0EUnttJ1Y2vhVCfGxdCqtiVr1WxiqAWBRdqyUKkKhXBRX+AaxcuBKFYiy9qQHdiFESKuqooFsFYsODGJ7SKj4pKbYznkHNhGHJv7tybCTnT+8EHmcmc6cw3Z14nUyFSpEgxl+GFfDcPeALYA1xPeUVgHngROOOyACuBBWBHwPcvgHuBH7gLIANG/mFI5xFtwO3AK8ASZwFaquQdr9F5Hx1UVrgmQM7APueiAFkD+6yLApig5KIA4wb2r1wUYNjA/omL2yDu8d201dXCJuAEZ0+QAfO6QPt8WwQP2s9ZBBmQP02HnCngUuAS4G/gGPAWjXyLCyJ4Me0O0lqRUfJm6Vxw0wUPiLL6T9DIs/YEmcDWCRFkQnv2Inh1qifqmrCc4gudFGPA9F/gJ+Br4D3gHeB7bgLUEuEx8CzwMLC1Rj2ztAOdIWHYCBAmwi/gIsO6pslbCs28BkRdE+bHqAttDgG/AJ9x8YAwT1BFGgLeB76jvNXAXcBeYLtW/h9wny1PkJYEwFHDgOoCJQ+DqKepk6PAz5Q3Q5/xYoXB1kngDqVtOEgYf7wG/MlFgAvAzVrnd9OOUA6xK5O7j5L7S2U6LLThBS0WOu9vdSr6gSMGdYyQjYqjohKtbnoBerStDuf8QIx6BrSDVIbWgqYXoFNLD4l4obMS2arYw0GADVr6QYK6dNu1HARYpqXfJqhLt13BQQCbkWLJQYCPWnpNgrp02ykOArzR0jsT1KXbvuQgwF0t3RvTdSXZqnjEQYDbdAP0gWf7vhj19Gn3Aowb5DkIgG8GLmt554BdBnV0kY2KvI34gK27wHPgMeUaLOls/1VUQuvlkPacBF4XlXcKPr7TFZvNZQgbWqROe8rfwgvRAeocduoPfcYDDkaOLgGPVGlXhoSre4zRVjzAxyng+TpNNSu/O0jLAjylkesW5lGhH9Q+q9Fm2wIIavBVUYkJbozgDbja36Cb35iwHHL3RGOxirwB14J1FDtopdW9SPu8vtpb/Rmu0QLEhTURJBMBrP0CxUUAayJwEsCKCJ7giaA1Ac8cW+kOIUWEt81cBQgSIQiBb5slYwGqTYcgBL5t5iyAL8Ji4LYIZVGESTqdWr0ONxpbDMrmGhEPaDTaDcpmXRQg0TR2QYDxJGVdEGA4SVkXBBikfT7KWWDQpXOAjyhvm/2D0DeXToI65sS/+aVIkaK++A9YE9SwsZhkLgAAAABJRU5ErkJggg=={scale="+$scale+"}>"
+!endfunction
+
+IBMEntityColoring(dataregular)
+!define dataregular(e_alias, e_label, e_techn) IBMEntity(e_alias, e_label, e_techn, #232F3E, dataregular, dataregular)
+!define dataregular(e_alias, e_label, e_techn, e_descr) IBMEntity(e_alias, e_label, e_techn, e_descr, #232F3E, dataregular, dataregular)
+!define dataregularParticipant(p_alias, p_label, p_techn) IBMParticipant(p_alias, p_label, p_techn, #232F3E, dataregular, dataregular)
+!define dataregularParticipant(p_alias, p_label, p_techn, p_descr) IBMParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, dataregular, dataregular)

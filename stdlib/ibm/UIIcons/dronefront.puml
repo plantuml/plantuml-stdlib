@@ -1,0 +1,13 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $dronefront [64x64/16z] xS61400000CXXFdRpkElMXu0001m
+
+!function $dronefrontIMG($scale=1)
+!return "<img data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAAIGNIUk0AAHomAACAhAAA+gAAAIDoAAB1MAAA6mAAADqYAAAXcJy6UTwAAAAEZ0FNQQAAsY58+1GTAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAAOxAAADsQBlSsOGwAAArpJREFUeNrtmjtoFFEUhm/cJSKIoIgajUJQBIOtDzCglYVR8QU+sBDBwgdWgmk0iWksbERQQRELNY2o4AMRQZQIGlvRwtj4VjQBsdD1le8wpwjLTtx1753M7pwfviKZvXfu/HPOvWfgOGcymbKshgTv1QJrYRHMgmaYARPhA3yCF/AE7kF/PRjQBLthPSyscOwruAgn4H2tGTAZjsAuGF/lXD/gLByCoVowYBOcgqme5/2s0XQ5rQbk4DjsjblegPtwDZ7Ba/io16bDbGiFdbAcGmPmOQn74XeaDMjDFVhT4ppsbj1wHr6VOZ9sjDs07KeVuH4dNsAvH2/Nh/7AfFhR9Ma7YQs81L/LVUFPAUml77CsaK29elK4tBjgNLydmiCh3Q4X4GcVc8rYB/qw7RoZXWpsajdB2ahuaI4Xq1nTZBUs0Nx3athzuKXh/abEWNkjVmtU1FwhNBM6YafuF6NJ8vqcvuV39VAJSuhegkkVjvsK2+BmyMXlAj/8YrgLE/5jrBRQm+E2vA21wHxgA/r1COwa8T+pAc7AHS13RXNgpVaOrSN+25PUN0FoderRtu8fUZfT3xR0TF2pJdBvTSZTdXXA3xqrLbyud1zWI8AMsF3AZDJlvQ6o9NxtSPkzVbReOwbNgIwr7yHHLALMADOgvuuARM7jsao/LAXMADPADDADzAD7FvCuxgDfEDJnwfdCQ/QHSFPUVRc1S/rUdhe10jxNayUonVzHYGngqH0EB1zUeZYKA+bCURd1iCYp6RjtgJdjZcAUFzUy7onJecnX0y7qGf5SxT0Ou6jzLO4e0jkqnSSDSRswOEqeS9foQRjw9LbnaZRtjLk+pGYlegqUevjHmp99nsN9QFOsTfeZJWWsJfFjUFraegPnfZ9usltd1HqXqkIo9MMHuZeVwmaAGWAGmEwmU2Y1DD1Rd+QkRZFgAAAAAElFTkSuQmCC{scale="+$scale+"}>"
+!endfunction
+
+IBMEntityColoring(dronefront)
+!define dronefront(e_alias, e_label, e_techn) IBMEntity(e_alias, e_label, e_techn, #232F3E, dronefront, dronefront)
+!define dronefront(e_alias, e_label, e_techn, e_descr) IBMEntity(e_alias, e_label, e_techn, e_descr, #232F3E, dronefront, dronefront)
+!define dronefrontParticipant(p_alias, p_label, p_techn) IBMParticipant(p_alias, p_label, p_techn, #232F3E, dronefront, dronefront)
+!define dronefrontParticipant(p_alias, p_label, p_techn, p_descr) IBMParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, dronefront, dronefront)

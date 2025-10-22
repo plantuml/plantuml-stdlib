@@ -1,0 +1,13 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $imagereference [64x64/16z] xS61400000CXXFdRpkElMXu0001m
+
+!function $imagereferenceIMG($scale=1)
+!return "<img data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAAIGNIUk0AAHomAACAhAAA+gAAAIDoAAB1MAAA6mAAADqYAAAXcJy6UTwAAAAEZ0FNQQAAsY58+1GTAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAAOxAAADsQBlSsOGwAAAqVJREFUeNrtmsFLG0EUxidxiYLQlN6q3gWx1B5KvOmtCOmxFIq9VIx/QT0n11wrSFroKQiFXgoF9dToQWhPKYh/gWlvgt4MQvotedBlWWdms5lk5mUe/MjuMGz2+/a9mclshPDhw4cPHz58TGrkNPstgDpYB48t1/QXtMAuuByGAaH43+CRYw/3CjxVmZDXuFDdQfGC7rmu6qRjwJrDJa6890DjInMDjhvjip7k3gfKANbhDZh0AwKL7qUAdsAbsExt5+AANECXswHz4DtYibWvEu9AGXQ4lkDhHvHRWKE+BY4GVBTioyZUOJbAZuz8EGzT8SewEeu7xy0DlmLnO1TrHTqW9fXTIAcDLmLnDZoV5ulY1pfFGNAEpcj5huQnbJNjBnwEbY1+berrjAEPwHHs6SZFlxY5bYX4sonVYGBY/CoZ8AL8lPTvUD8WS+HpiPgwinSuMiEU+IFweha4BUextqJmObCZBmug6oIJJgdBJ0zQGQNyGU0QMSN0xwQ2K0GrM2FqRN9zQp/rkbYZ8Ar8kGx0hC9l9on34Bn4BW4k31W9JwvHasAgJoTZcQaeg1niiejvDrUkpllrQBoTSlQiDxOuococqw3QMWGBxBcl15CZYL0BKhPeJoivUtrrlI8TBshMmEkQX0tRPqkM0FkH9DIKzaVcJySJN7ausGE/IBS1Ba4jbdfUVjO9rrDlxchn8FX83x5vK+Z6WSY4aYAgwadDWGaP/LfAa9HfqwvGVD6yMcT4GDBO8bIxYSQGJIm/c82E/JDFb7qWCfkhi/9iwZRq1ACbxRsfA9iJT2MAS/G66wDT4nsG9f3JmgGuP/mTLAa4Lj78s/TuoCXgsvjMf5dnO+DplsDLSREfRtKW2DewKPqvqFmLVxnTpHLw4cOHD7bxD8z+r1lQnQdxAAAAAElFTkSuQmCC{scale="+$scale+"}>"
+!endfunction
+
+IBMEntityColoring(imagereference)
+!define imagereference(e_alias, e_label, e_techn) IBMEntity(e_alias, e_label, e_techn, #232F3E, imagereference, imagereference)
+!define imagereference(e_alias, e_label, e_techn, e_descr) IBMEntity(e_alias, e_label, e_techn, e_descr, #232F3E, imagereference, imagereference)
+!define imagereferenceParticipant(p_alias, p_label, p_techn) IBMParticipant(p_alias, p_label, p_techn, #232F3E, imagereference, imagereference)
+!define imagereferenceParticipant(p_alias, p_label, p_techn, p_descr) IBMParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, imagereference, imagereference)

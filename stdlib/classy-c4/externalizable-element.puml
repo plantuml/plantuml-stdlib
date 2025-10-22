@@ -1,0 +1,27 @@
+' Begin duplicate inclusion protection header.
+!if %true() != $CLASSY_C4_EXTERNALIZABLE_ELEMENT_PUML
+!$CLASSY_C4_EXTERNALIZABLE_ELEMENT_PUML = %true()
+' End duplicate inclusion protection header.
+
+' Defines a class to standardize the method of marking something as external.
+!include <classy/core>
+
+$class(ExternalizableElement)
+  $classVar(external, bool, %false())
+
+  $classMethod(isExternal)
+    !function ExternalizableElement__isExternal($this)
+      !return %intval($getInstanceVar($this, 'external'))
+    !endfunction
+  $endclassMethod(isExternal)
+
+  $classMethod(setExternal)
+    !function ExternalizableElement__setExternal($this, $state=%true())
+      $setInstanceVar($this, 'external', $state)
+      !return $this
+    !endfunction
+  $endclassMethod(setExternal)
+$endclass(ExternalizableElement)
+
+' Terminate duplicate inclusion enclosure.
+!endif

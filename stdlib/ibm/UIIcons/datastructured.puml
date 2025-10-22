@@ -1,0 +1,13 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $datastructured [64x64/16z] xS61400000CXXFdRpkElMXu0001m
+
+!function $datastructuredIMG($scale=1)
+!return "<img data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAAIGNIUk0AAHomAACAhAAA+gAAAIDoAAB1MAAA6mAAADqYAAAXcJy6UTwAAAAEZ0FNQQAAsY58+1GTAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAAOxAAADsQBlSsOGwAAAqhJREFUeNrtWjFPGzEYNSGdKpYKpDYKC0slFpD4AaFDFXXo1CkLAyA6daBDupaRrExJq45B6lBVAqljm3/QMiAxIiLolKFLh1YJz8o3JMF39t19d4m570lPuiRn5/mdffb32UoJBII8Y87xvjLYADfBJzPephvwB1gHuxwG6Mb/Ah959nB74JrNhIJDRQ0PG69Ic8N2k4sBFY+HuFV70aGSUsz3xrQwCNEeqwfca4gBeTegyFDHC7BF13vgt7z1gCatFcp0LUMgbwa8ptVWl65z9w7QY35ZZgExQAy4t+uA64k19cCj9l1z9ICOxw+4w2FAnZILvqFH2kMx71DRH7CthqmwRXBhxhuuU2Kn4CvFlBLLIm6fmhaZBsUAMUAMEAPEgBwj6tw7y3uEkfYE4xjgyx6h055gnCHgyx6h055gHAN82iN01holJ8i9RzhIsb5SGj1ApkExQAwQA8QAMSCHscBTcFvdzbDq1dYn8CLifM+tMZG+ouU3XcmbgPv0H74Fj+j6f8YPj0VfkAEPwBOw6iBiH1wFX4L/Mmo8m75CSOBTjSCoGiUAYQCbPlMPWKVuNYor8B34nT4/Aw/V+LkAXeYDeJ5wTNveGaz6TD1gV43vGOm4eh08Bn8Tj+m70Zh7nsqmDVZ9JgOeG14mvYDEQ91SNg2w6jMZsDLxOWyHtWMpmwZY9ZkM6CcQ18/AAFZ9JgMuI2RXKpayaYBVX8Gh2wTlAk25tywOU7DqMxnQnJiKdDb4J1gDHxNr9F15YvrK4qQoqz7TOuBMDc/+jh561PNp2yKsRWVtSBobsOoLWgnuR+zOHSqTFdj0BR2R0YHDZ3AJ3HBwdgv8G/D7+4SNPUhTX9gZIR046LM2X6mnPKQXy4BCzC/gDvjREgSlYQCnPoFAkGPcArSWomgU8jM6AAAAAElFTkSuQmCC{scale="+$scale+"}>"
+!endfunction
+
+IBMEntityColoring(datastructured)
+!define datastructured(e_alias, e_label, e_techn) IBMEntity(e_alias, e_label, e_techn, #232F3E, datastructured, datastructured)
+!define datastructured(e_alias, e_label, e_techn, e_descr) IBMEntity(e_alias, e_label, e_techn, e_descr, #232F3E, datastructured, datastructured)
+!define datastructuredParticipant(p_alias, p_label, p_techn) IBMParticipant(p_alias, p_label, p_techn, #232F3E, datastructured, datastructured)
+!define datastructuredParticipant(p_alias, p_label, p_techn, p_descr) IBMParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, datastructured, datastructured)

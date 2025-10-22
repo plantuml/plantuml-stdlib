@@ -1,0 +1,13 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $wifi [64x64/16z] xS61400000CXXFdRpkElMXu0001m
+
+!function $wifiIMG($scale=1)
+!return "<img data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAAIGNIUk0AAHomAACAhAAA+gAAAIDoAAB1MAAA6mAAADqYAAAXcJy6UTwAAAAEZ0FNQQAAsY58+1GTAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAAOxAAADsQBlSsOGwAABDNJREFUeNrtmllsDVEYx0cvIqV2VVJL1BJChAdLSltLbBGJJdaISIgQYovygAc8aMWWiKTxIAhBkNgpQWuJ5cESIfatglu7EhT1/9J/kzE5t+3MvTNzb51/8nvonLkzc74533f+50wNQ0tLS0tLS0tL6/9UNZevXxekgnagrYkaIB4k8rwg+AaKwUMTD8BF8DlWAlATDASDQDroGoF7lICbIA/kgtPgZzQFQK7RD0wEo0ADl0fVB3AA7AJnGSBfAiBvezJYCDr6lMJ3wVqww+mocBIAyd/ZYBFoVonzb4BrzOey3P7CnA/ynETWhARTnZC60YNpVJFegTVgE+uIawEYAjaADuWcI53aB06AfPApzLdcD6Tx3mNMhVOle2Ae7x3RACSBHDAiRLtEfS/YBs6A3y4N+QDoD6aAsRyNKh0CM8DrSARgGNgaIvIylLeA9aDA4/xPBvPBdKaOaiROBcecBkCimw3mKs77zY4vBe989jKNwCoGIqCYQjeCzFC1IVQA6oD9nM+tugDmsLhFk7qyCPZRtIl/GA2KVDmlyvdTigv94hufxqobbXrDGvSDJizO1JbCInrIGgRVAI6CXpZjT1kLdodrPFxWCUdoLh1pfVObTNndwPaKUiCFDqsF/74ChoO3Dh8qjjfuCzqB9qBViLXAM3Af3AHnwXXwx+F9m4DDoCf/fkzH+rwyNaAsCOLBx/Hh7LpEGXLjGbwEh534wk7sASc5vO0onr/tpOp8RbNAc+aVnTldKvIsOsXECA/vIIvcZpszT4DPFXRzNViLU41Q2+U8/8rpWfgeDavBoXwrrcs55zVz+oJpTfARFJrytb5pDdCHNSOpnGtKYZ5px/a6sRrMCmGUDHZwB3PwosN7pLIGTbZUdKvRWezlalBVYa3zcRadYlGEhn0dOj3paFNF+2WuUwq9CIDMEMc5VK0LInkbK13cwpIttmUcddaF0AOm4yM7F6weRtEzS+bYCeCqywXwM/ch9nFHqI2l2hfbvWDA4ZaUWMqRXKtLERoAnnjo+F5yhdqdhfNxqHneTaVwKqpu+Ce592rQ0tDyzwfYqRtptMZd6BuasK2Q8/otLsbyI2FyoiUAYomXcIsqvpK/kbVHDod3MFYDIPm5HCwIwx6L7V0HVnA/ImYCkEgHmBGh652jIwzGSgAugd6K4y/AQS5tbxv/fhfoDAbT0amq+nnu9JTEQgCsmyoFdIhbK2FWxOFNpeNLLm8zI9prQFkQ5E1PooGyI/nGuNMo/QjjucmJZC2IC+P38tvG2q1oaWlVhbWAWclcSWaYjE6m4f0HVl8CIJ2X7w0NLcffG6Xf9zwNQpwPAchWdN7gsWyvH8aPAKQ7bKsyAYgq+RGAPIdtVSYAmSx4hqIIZnr9MAEfAiBb27Kl3Yw+Xz6eHDFK/4OjwNDS0tLS0tLS0tLyRH8BJK3hHVsVMhIAAAAASUVORK5CYII={scale="+$scale+"}>"
+!endfunction
+
+IBMEntityColoring(wifi)
+!define wifi(e_alias, e_label, e_techn) IBMEntity(e_alias, e_label, e_techn, #232F3E, wifi, wifi)
+!define wifi(e_alias, e_label, e_techn, e_descr) IBMEntity(e_alias, e_label, e_techn, e_descr, #232F3E, wifi, wifi)
+!define wifiParticipant(p_alias, p_label, p_techn) IBMParticipant(p_alias, p_label, p_techn, #232F3E, wifi, wifi)
+!define wifiParticipant(p_alias, p_label, p_techn, p_descr) IBMParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, wifi, wifi)

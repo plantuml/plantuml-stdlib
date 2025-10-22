@@ -1,0 +1,13 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $customworkloads [64x64/16z] xS61400000CXXFdRpkElMXu0001m
+
+!function $customworkloadsIMG($scale=1)
+!return "<img data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAAIGNIUk0AAHomAACAhAAA+gAAAIDoAAB1MAAA6mAAADqYAAAXcJy6UTwAAAAEZ0FNQQAAsY58+1GTAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAAOxAAADsQBlSsOGwAAAudJREFUeNrtm7FrFUEQxuclr9HCl9IiWJgIIYW2ElPE0kotgyAiSEoTwVhoJbExhVEQooKF/4B2KRMQrVJEiyBoREKKFCmS1Eb9lszy1uMuubvd2ePezcAHl3vczdvf7ey9++ZCpKHR6GhVmLsDzfL2U2ivKQD6odvQE4ZAPPiH0FvooJcBXIYWoPPQB+g+75+HrkFfoWloudcADOcYZBqcH3UH0OGpfTfnNE+Wx3Pe3qsbAN+BFAVXKYCL0B3efg2dDDiVh6XXh1aAwX+EfvHfQ3zO0F9WbH3o9zz+MTQAjUIvoRvQGjQO/Qx4oQzgN9AWdAu6B+1Aq74n7hMAuCV0Lz9gCOegdehqiJO2PY9/BU3yFzJxBropfGcxi+J2qJP5zoDPXJ9t1gTvq020A5zjE/TNAVKr6KOGhwJQAApAASgABaAAFECdYgwaYY01DYAZ8Ar0m7XiCyEEgFPQaVZHGMAUtMn+wyhvT1X1MGR9vzk6NEVMfCc5/87kG0zZP8iflcpX1hIzj8DPoAsUx993LbG/0AbvtxbcF2imTL6iAIZ4kNcpjr/vmqJ2kPvUNV3ecQnai/Ge822EBmCSPKJ4/r5ri+9y7jz5bDnmztcqWOfS/n4auDm+6hIX6kgAaXUu6e+7pVN4Kpco1UwAuQ/2XMxiL56pF7GVcp99QbLtqNjt8WQ+Ux6LWQCW+AfNBMm/sNDhX3IUOZ+x1K8c9UNom+K8reH6+7Hz6dOgAlAACkABKAAFoAAUgAJQAN1w/fZLTQOQ9NuXKUDToU4AgvvtOR9PY/UT3Hz/hX0cTjMhvPz2AgaFCel+gptv0f3QGiLJV17P8uzoJUss1Wd0HaHkS88n+OAqTNHQ/YRp6rpPlAUga42w06cqW9ynn2Dz/ck6oA6NkTL5Fnj72H6CdGsshr/vlU+qOVq6WemRL7POJQC4085tj+fp44XOd2ydSwFw1wf3HyD3STZMvgd02CaPkU9Do5fjHxhZGHTUSOV7AAAAAElFTkSuQmCC{scale="+$scale+"}>"
+!endfunction
+
+IBMEntityColoring(customworkloads)
+!define customworkloads(e_alias, e_label, e_techn) IBMEntity(e_alias, e_label, e_techn, #232F3E, customworkloads, customworkloads)
+!define customworkloads(e_alias, e_label, e_techn, e_descr) IBMEntity(e_alias, e_label, e_techn, e_descr, #232F3E, customworkloads, customworkloads)
+!define customworkloadsParticipant(p_alias, p_label, p_techn) IBMParticipant(p_alias, p_label, p_techn, #232F3E, customworkloads, customworkloads)
+!define customworkloadsParticipant(p_alias, p_label, p_techn, p_descr) IBMParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, customworkloads, customworkloads)

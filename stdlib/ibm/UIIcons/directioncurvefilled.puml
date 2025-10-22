@@ -1,0 +1,13 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $directioncurvefilled [64x64/16z] xS61400000CXXFdRpkElMXu0001m
+
+!function $directioncurvefilledIMG($scale=1)
+!return "<img data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAAIGNIUk0AAHomAACAhAAA+gAAAIDoAAB1MAAA6mAAADqYAAAXcJy6UTwAAAAEZ0FNQQAAsY58+1GTAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAAOxAAADsQBlSsOGwAAAg1JREFUeNrtm7EvQ1EUxq+rCQapCEIjJruwdCwma2MRYbYJA+lWXWsgNjMRm8WgC/oPELtJpISkEQaRCM5Nn6SO13iJ13Nv7zkn+YZzctOX79fb9+65r1cpCQkJztHWoD4MKoImQUMt7vEOdA5aB91GAWDMX4F6Pfuyq6AxDEGHDCx6aF4Fnoq4GAYg4/FPPhMFQMpjAKkoAFiFKwA2ApFHwhHzBZSzmQHYfIETAGzeCgTtmHlyCNpB86QQtKPmySBoy+aTIeOSlBC0ZfOlkLElSgjasvl0yPg0JQTtmHlyCNpB86QQtKPmySBoh82TQKC4Cf7H/F8QnJ0B+RjNN4KQj2MGJJp4D+gETcVkHkM4A+Vc3w/INelz03FClS0xy9d/Q3kHNwDXKB/gBuAI5eOcANyDtlBthguAd9C8qr2v+44e0AIXAGvBs7w+zMKmmwOAPdA2qk2Dljk8Bi9AS6g2Ajq0NRspL/oIyoJe62pdwZOg3/eF0AdoDnSD6rugCQ4rwR3QKaqtgBY5LIVf1O8NEtMlbnLpBfZBT3W5+avKgXLjzTQJgBOUr4IGOXWDlyjPcmuHH1A+yg2A9Z7f5XZYAAgAASAABIAAEAD2gqIh+ZQZ0GIAKh77rUQBUPYYQDkKAHO6quqh+Wrg7Ue0hwx8VrUdG3Ncrk9ZeFkRc5hjc8egWRVybE5CQoJ3fAFf/WNfMdTREgAAAABJRU5ErkJggg=={scale="+$scale+"}>"
+!endfunction
+
+IBMEntityColoring(directioncurvefilled)
+!define directioncurvefilled(e_alias, e_label, e_techn) IBMEntity(e_alias, e_label, e_techn, #232F3E, directioncurvefilled, directioncurvefilled)
+!define directioncurvefilled(e_alias, e_label, e_techn, e_descr) IBMEntity(e_alias, e_label, e_techn, e_descr, #232F3E, directioncurvefilled, directioncurvefilled)
+!define directioncurvefilledParticipant(p_alias, p_label, p_techn) IBMParticipant(p_alias, p_label, p_techn, #232F3E, directioncurvefilled, directioncurvefilled)
+!define directioncurvefilledParticipant(p_alias, p_label, p_techn, p_descr) IBMParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, directioncurvefilled, directioncurvefilled)

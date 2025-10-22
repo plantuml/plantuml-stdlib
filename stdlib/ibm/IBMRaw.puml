@@ -1,0 +1,39 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: MIT (For details, see https://github.com/AWSlabs/AWS-icons-for-plantuml/blob/master/LICENSE)
+
+' Colors
+' ##################################
+!define IBM_COLOR #232F3E
+!$IBM_COLOR_SQUID = "#232F3E"
+!define IBM_BG_COLOR #FFFFFF
+!$IBM_BG_COLOR = "#000000"
+!define IBM_BORDER_COLOR #FF9900
+!$IBM_BORDER_COLOR = "#FF9900"
+!define IBM_SYMBOL_COLOR IBM_COLOR
+
+' Styling
+' ##################################
+
+!define TECHN_FONT_SIZE 12
+
+!definelong IBMEntityColoring(e_stereo)
+skinparam rectangle<<e_stereo>> {
+    BackgroundColor $IBM_BG_COLOR 
+    BorderColor $IBM_BORDER_COLOR
+    
+}
+!enddefinelong
+
+' Elements
+' ##################################
+!function $IBMImg($service)
+!return %call_user_func("$" + $service + "IMG")
+!endfunction
+
+!definelong IBMEntity(e_alias, e_label, e_techn, e_color, e_sprite, e_stereo)
+rectangle "==e_label\n$IBMImg(e_sprite)\n//<size:TECHN_FONT_SIZE>[e_techn]</size>//" <<e_stereo>> as e_alias
+!enddefinelong
+
+!definelong IBMEntity(e_alias, e_label, e_techn, e_descr, e_color, e_sprite, e_stereo)
+rectangle "==e_label\n$IBMImg(e_sprite)\n//<size:TECHN_FONT_SIZE>[e_techn]</size>//\n\n e_descr" <<e_stereo>> as e_alias
+!enddefinelong

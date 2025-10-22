@@ -1,0 +1,13 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $saphana [64x64/16z] xS61400000CXXFdRpkElMXu0001m
+
+!function $saphanaIMG($scale=1)
+!return "<img data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAAIGNIUk0AAHomAACAhAAA+gAAAIDoAAB1MAAA6mAAADqYAAAXcJy6UTwAAAAEZ0FNQQAAsY58+1GTAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAAOxAAADsQBlSsOGwAAAelJREFUeNrtmM0rRUEYxs/9SNnYWLlZ2MnmZiGy4hYhiWwUKaQsJEt/hJWUlLr5SNkQKddXqbuwuBtlw9JGsrBhoZR4Ju+t43Y5Hw6ZmeepX7c5Z+a9Z57zzpyZcRyKoiiKoihLFZPfUTBhWd83QDYuhWGQtqTjTaAdVKtC0nWjAHoM7/yUdH4RzKsLcYtSfgQsgVUwW7xoiwH90vEdMAnebDKgA2yBU8mCV/dN0w1oBbsyvw2Cl9IKJhvQCA7AFegDz+UqmWpAPTgCt6AbPH5V0UQD6mS8P4FO8PBdZdMMqJHOFye/O68GJhmgVnbHoEre/I2fRqYYoDp9CGpBF7j229AEAyrBPmgAveAiSGPdDagA26AFDIDzoAF0NiABNmW8D7kmPysMUOcYK7K6GwN7YQPpasACGAfTkgWOTQaolJ8Bc2D5p8GSGhpwAtpAPopgug6BfFSBbDoRinQI6HiKnHU+ToIjyQDdTpHT8syRToI6nSLnOAf8wWfwTH4zPsth4/uVr/9hBkQYKxOw7PzGG+U6gAbQgNBzQLPHTFs6Br3q/7eFUKHcjYQrE1IeQdZKMiel0Yu+B+vg0qGoT4pxN8jdIHeDXAdwN0iFGlM5E56XmyEawK9AaBm1GwyTOdwNUhRFUZTeegekOE7pWT+E9AAAAABJRU5ErkJggg=={scale="+$scale+"}>"
+!endfunction
+
+IBMEntityColoring(saphana)
+!define saphana(e_alias, e_label, e_techn) IBMEntity(e_alias, e_label, e_techn, #232F3E, saphana, saphana)
+!define saphana(e_alias, e_label, e_techn, e_descr) IBMEntity(e_alias, e_label, e_techn, e_descr, #232F3E, saphana, saphana)
+!define saphanaParticipant(p_alias, p_label, p_techn) IBMParticipant(p_alias, p_label, p_techn, #232F3E, saphana, saphana)
+!define saphanaParticipant(p_alias, p_label, p_techn, p_descr) IBMParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, saphana, saphana)

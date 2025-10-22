@@ -1,0 +1,13 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $pregnant [64x64/16z] xS61400000CXXFdRpkElMXu0001m
+
+!function $pregnantIMG($scale=1)
+!return "<img data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAAIGNIUk0AAHomAACAhAAA+gAAAIDoAAB1MAAA6mAAADqYAAAXcJy6UTwAAAAEZ0FNQQAAsY58+1GTAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAAOxAAADsQBlSsOGwAAAy1JREFUeNrtmslrFEEUxttJVPBiQDREE0Q9iJpLEEEUXP4DHZcEnIMbuBuMiSKIitsxHjwEVBR0cIkbouJy0ODBk4JL3C4qGg0xaCLiQExcvke+QCNM25Nxqqqr+sGPSaZfpVLfvHr1qmo8L7bYnLYhivubCFJgGn9/BtLgtQsC7AS7QAK08r1K8AvsBft1CFCscPD7wAmwBXzl+yPBIT7zdIhQpCjsm8FJsBL0+J7Jz1fAeLARnAZdKgVIKOgjxX7qAnzq6JNSHQEqBJB5/hx0B/h006fSRgGMNhUCSMafCkoCfEro02qjAGkudY0BPo30Sdu4CnT5Ep1k+xbfSiDLYBNYAfZwRYgLobgUji02K6fAKLAKTAdjwEfwCBwHn20XYB4z/DDwBGTAcFDFFaEa3LJVgHHgFXgIakC779locBbMAjNsLYS2gT6w8K/Bi3WCBZwORzWsSgUXoIif+hnwJYvPN7AZzATLbBNgLhNe8z/8roPb4CAYYZMAS0AHuBfCV0rlMtBgiwAS/klwGfwM4S9V4REKUG6DAGHD32+7wQ9wwIbdoGT/ClALfodsk6EA9eATeBBVAeTvHmP4X82xrdQLk8AOFkrSvjdqAswH68F28CbHtrI9vgReMhLkpOhC1HJAksVPIo8+zoHVYDHYFLUIKAWzwTqwliEt8/tdDvlA7CmYwmLqMKMjEgLILk9ufFq8/tunJKfEYMQQv63gMXgRpVVABvcWXMtTjA+cAvJ6J0oC5CrGKfA9S/tFfL34v/8xVZejfpOq8C7ZAObwvKAjoE0vzxI8GwTIJkaQTShUUaTqauwGGYxJMTSW0yayAuRbUndyu+ycAJL8qrk5yrgmgAxevlRxk0VQQazYwIFX8UyghnljaSEqQNMEWO71f31mMs8Q5J5AzgmbQh6mRF6ANdw/yD3hfRZMPSo6NkUAOQI7z5pfqZmQBOVDkMPQNh2dmyBAGfckzgowcAL83nUBnI2ACi517S5HgAy+z2UB2nR1bsoUcFqAcl0rgAkCaC2CTBBgoAhyNgK01gCxAAYIoLUIMiUCtBVBJghQqjP8TbGhXmyxxabL/gB7YbgSBdvF7gAAAABJRU5ErkJggg=={scale="+$scale+"}>"
+!endfunction
+
+IBMEntityColoring(pregnant)
+!define pregnant(e_alias, e_label, e_techn) IBMEntity(e_alias, e_label, e_techn, #232F3E, pregnant, pregnant)
+!define pregnant(e_alias, e_label, e_techn, e_descr) IBMEntity(e_alias, e_label, e_techn, e_descr, #232F3E, pregnant, pregnant)
+!define pregnantParticipant(p_alias, p_label, p_techn) IBMParticipant(p_alias, p_label, p_techn, #232F3E, pregnant, pregnant)
+!define pregnantParticipant(p_alias, p_label, p_techn, p_descr) IBMParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, pregnant, pregnant)

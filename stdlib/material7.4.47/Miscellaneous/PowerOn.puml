@@ -1,0 +1,11 @@
+sprite mdiPowerOn <svg width="48" height="48"><g transform="scale(2)"><path d="M11,3H13V21H11V3Z" /></g></svg>
+
+!if %function_exists("$MdiSprite")
+  !unquoted function $MdiPowerOnImg($color = $MDI_DEFAULT, $scale = "1")
+    !return $MdiSprite(mdiAccountAlert, $color, $scale)
+  !endfunction
+
+  !unquoted function $MdiPowerOn($alias, $label=$MDI_DEFAULT, $shape=$MDI_DEFAULT, $color=$MDI_DEFAULT, $scale=1, $stereo=$MDI_DEFAULT)
+    !return $MdiSpriteElement("mdiAccountAlert", $alias, $label, $shape, $color, $scale, $stereo)
+  !endfunction
+!endif

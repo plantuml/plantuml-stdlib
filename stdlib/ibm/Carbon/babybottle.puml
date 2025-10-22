@@ -1,0 +1,13 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $babybottle [64x64/16z] xS61400000CXXFdRpkElMXu0001m
+
+!function $babybottleIMG($scale=1)
+!return "<img data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAAIGNIUk0AAHomAACAhAAA+gAAAIDoAAB1MAAA6mAAADqYAAAXcJy6UTwAAAAEZ0FNQQAAsY58+1GTAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAAOxAAADsQBlSsOGwAAArxJREFUeNrtm09IFUEcx9eKwiirhx3yYNTtRRgYhqCRXYooOhTUxToESR1KUFAhT3nqKOIpiDKUkiAEKyLIQ5d6ZhBIF0kkhA5BrxdUiH+/P97XS0jk7szuzNvfwAfe27fze7Pf/c1v5jc7GwQpL2UJ/nc9uMrPd8HbJBqxMcGLfwN2gL2gDbwCs2kR4DbYCQ6AftAMKsFI3A3ZlJAAe8AUmOf3KR6LvWxIexBUARL4z82gYo3jFfytZIOgiH2NgS7LqP+MvzWAc6AF/AIfwHIpzQO2gsfgDC+6D7z865wT4CY4DUbBRfC7FDxA7vxTcBJcB+3g8xrnybEh8BW0gsPgkW1PiEOAG7yzl8H9/zh/AkyDTvAdvPM5CJaDbvAcDK6j3iDrdLP7eCtAI9gNekLU7WHdU74LUADjIeqOs+5RH0eBS+AK5/rl7NdhigTCP+ATuAce+hIE74BaMMmoHrZI3W+gBmTWGUcST4ZyBvvvC80FVAAVwLsFkSNgzJCtGsYUbzxA5vR50MToHbZkaCNPm954wDDo4vgtnjAX0s4WpsarNr1JhmTR8yz5EsHOIngPOnizXvvQBfYx5e011G9ztNVO284LIBncz5AJ0L8SI7F5y3UBtoMLnLcXDNot0KasEm1zWYBjbKCNiD1E200uCyCPvH4wCTJdJmm73mUBqoPi2t6SBQGWaLvaZQEynLTYKvmIEyvrAsi8YsGiAAum5y6aDWo2GF8WeFw9ICUeYHItUD1ABVABdBRQD9BRQD1ABVABdBRQD9BRQD1ABVABdBRQD9BRQD1ABXBaANnZWWWxvVVBtJ2n1gWQ/i/7g7MWLj5L2zmXBRgAM0FxQ1PW8MUP0/aAyQbb2C1+CDwJivt55Jl+1KfFu8BBXvx58NF1AaTIWx7yikwd2B/Rlrw+IzvFHgQxvESVurICpil+B/0802cAAAAASUVORK5CYII={scale="+$scale+"}>"
+!endfunction
+
+IBMEntityColoring(babybottle)
+!define babybottle(e_alias, e_label, e_techn) IBMEntity(e_alias, e_label, e_techn, #232F3E, babybottle, babybottle)
+!define babybottle(e_alias, e_label, e_techn, e_descr) IBMEntity(e_alias, e_label, e_techn, e_descr, #232F3E, babybottle, babybottle)
+!define babybottleParticipant(p_alias, p_label, p_techn) IBMParticipant(p_alias, p_label, p_techn, #232F3E, babybottle, babybottle)
+!define babybottleParticipant(p_alias, p_label, p_techn, p_descr) IBMParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, babybottle, babybottle)

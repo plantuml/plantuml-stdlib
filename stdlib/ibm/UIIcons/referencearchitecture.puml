@@ -1,0 +1,13 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $referencearchitecture [64x64/16z] xS61400000CXXFdRpkElMXu0001m
+
+!function $referencearchitectureIMG($scale=1)
+!return "<img data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAAIGNIUk0AAHomAACAhAAA+gAAAIDoAAB1MAAA6mAAADqYAAAXcJy6UTwAAAAEZ0FNQQAAsY58+1GTAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAAOxAAADsQBlSsOGwAAAuxJREFUeNrtWj1IHEEUHr3TwpAmWqicpLNIY5rYriKIVhapFEIKiYqQpLMJsfAH5Fobf7C9A8FCCZgUEq9Mp419cFEbLayjmzf4Astmbm/e3O7M7O188MHeuLOz8+28v3EYc3BwyDPaNI1TApaBI8C+BvdeA0+BS0C/FQTgkz8DdhP73QJfpy1CuwYBygqTZ9innPbL6RDAM9RXCkUNAvQTzS6I6ZvJFWA1qCuA4s2TQiB5n1L0KBInr+LNdYF/kGngOCV6UEygbPHklaMHRQAvQ6btpWECVG9OteFmkzWl6OGigIYxriJfJCD2zXweUDPU1xoBlrCwoeIW+2ZeAB/jchWTFZmEpqqjEtTlA/6JMGOjE8x9FHAC5F0AmSxrEDgr8MhrwG0djqrJqjS2SowToAO4AfwU4ywfUIgV4KPGySe2x1ioc3Mn8Aj4roGZtONX4A/eTyDvl8EWcFihXxeulgMZH8CX1wTh4VPAZdsqPZm+oqX9CvhREMe5Df3E36MoUil0zxfgHvAyZQES3WMUrYCFSDuf/BBmZzfIKrb5ETE/tEI1OCbI5e8E993h3yqhtq/ITOcBLwkVWY1lHC4TFLT9JnhdL+sCiHzACUaCcEj8IfADL9j/u6+rGsJhkPYK2IpkdTzUnbOnPfde5DS2hcPgH+BuK6yAC+Am8HNEhEqDZ61ryAE4Et1jrOcEeXj7TnjwIdYDOpDoHmMhpsjhuf0z4JsYoR7Q7hc1FkO/gO8xt6cWQ2+B964cJgpQz9bamF1Qej+XCDkBco6ioXF1nDQJZJxg0dDkdZ40iT05YsIETJ00EZ4cMSGAyQrSs8EEVE+aJJEf9NuwAjIbBZqpwmQwCdzB6zngsW15QNr7f9sYIUp4bV0ipHrSo2UyQepJDyrmcQwfr63MBJM46VHPd3CbH3C1QA5qgbSjSaOxja8Ak/9NqtkggKloIjx3WDDwInxTsoJVWg/wecrj8Yj1jT1tiPrMwcHBIYS/yrqbTXfu6foAAAAASUVORK5CYII={scale="+$scale+"}>"
+!endfunction
+
+IBMEntityColoring(referencearchitecture)
+!define referencearchitecture(e_alias, e_label, e_techn) IBMEntity(e_alias, e_label, e_techn, #232F3E, referencearchitecture, referencearchitecture)
+!define referencearchitecture(e_alias, e_label, e_techn, e_descr) IBMEntity(e_alias, e_label, e_techn, e_descr, #232F3E, referencearchitecture, referencearchitecture)
+!define referencearchitectureParticipant(p_alias, p_label, p_techn) IBMParticipant(p_alias, p_label, p_techn, #232F3E, referencearchitecture, referencearchitecture)
+!define referencearchitectureParticipant(p_alias, p_label, p_techn, p_descr) IBMParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, referencearchitecture, referencearchitecture)

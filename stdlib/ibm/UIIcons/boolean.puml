@@ -1,0 +1,13 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $boolean [64x64/16z] xS61400000CXXFdRpkElMXu0001m
+
+!function $booleanIMG($scale=1)
+!return "<img data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAAIGNIUk0AAHomAACAhAAA+gAAAIDoAAB1MAAA6mAAADqYAAAXcJy6UTwAAAAEZ0FNQQAAsY58+1GTAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAAOxAAADsQBlSsOGwAAAsxJREFUeNrtmc9LVFEUx58vNXDtZkIEMRwCbRGRLUJBKGzRmNBK/wFXBcFEi1kOBLp0W9tA0BpnExQESopFWS78BUUopIGR7goh8nvxTNTjvnfPe3PfZWzOFz6bYd75vnPevffde57niUQikUgkEolEIpFIJBKJ6ksNCa+7AHLgCmgHGfp9F2yDV6AMli3dZ2p+cQtwCxRBlvn/TVAA0wkTT92PW4AO8BhcTpjIEhgBn2vN7xQjWD94AbqqGMJtYBS8AVu15NfAuJnnoNnSXD4E18BcTD91XYnm+WvwlX5Xa0EvrQ83QVNMv8gCdFAFWy0vvN/AJc3wDPN7Au6BT4a4Z8E4GGb6GafAsyqHYZha6Kk9Mvj9AvfBHbDPiPsdTIEfYAD4Br/IAqjV926Kr181R1fBWoSfSn4iQewF8BNcjfD7Iz8kSNHBHqQY4fc0YfIVjdOaYczJD9l0ZB0UIEteQT+1cOUtxM9TrKCfsQA5hzvRnMavxFjwOPoIZk256QrQ57AAfRq/WYvxS6bcGjUXnXFYAJ3XW4vx35n8arEAuxbj75j8/Ho/DvuMqqWpHY1fxmL8jCm3WizARYvxg7G+cAow77AA8xq/IYvxh0y56QpQdliAssZPneo6LcTupFiRuekKsEydlbS1SV5Bv+Yqt8EVTQSO1evgPfctUHBQgEKE33CV2+G85lhc4L4FlKaprZSWlrx/+3Y6vwcJi5Cna//WIvUVYvUDXnrHbaWWFBoig+DA4OfTkfY87ej2GXP+IbgdeLB74LrGz1iAA+rQjHi83iFH6nR2A3yI4XcOjIEecJoaHoc0v9spOTW8J0F3iN9K2A1xusL9NERbLTx51fiYc+S3R36Rr3XOk92iG+qlzkrSOT8Y8uTT8FukkbFi+uP/9mFkg/xmuAYn+dPYb++4PV7xKzFHmEgkEolEIpFIJBKJRCKRqK51BIIArLO2aAmqAAAAAElFTkSuQmCC{scale="+$scale+"}>"
+!endfunction
+
+IBMEntityColoring(boolean)
+!define boolean(e_alias, e_label, e_techn) IBMEntity(e_alias, e_label, e_techn, #232F3E, boolean, boolean)
+!define boolean(e_alias, e_label, e_techn, e_descr) IBMEntity(e_alias, e_label, e_techn, e_descr, #232F3E, boolean, boolean)
+!define booleanParticipant(p_alias, p_label, p_techn) IBMParticipant(p_alias, p_label, p_techn, #232F3E, boolean, boolean)
+!define booleanParticipant(p_alias, p_label, p_techn, p_descr) IBMParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, boolean, boolean)

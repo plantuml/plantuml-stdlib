@@ -1,0 +1,13 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $modelalt [64x64/16z] xS61400000CXXFdRpkElMXu0001m
+
+!function $modelaltIMG($scale=1)
+!return "<img data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAAIGNIUk0AAHomAACAhAAA+gAAAIDoAAB1MAAA6mAAADqYAAAXcJy6UTwAAAAEZ0FNQQAAsY58+1GTAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAAOxAAADsQBlSsOGwAAAmhJREFUeNrtmzFLw1AQx1/aIrg4OLt0qLOzg0NXcXRxF50KIo5CS8RV0EVwcRRc3QQHP4GzHfwGDh0ENy+QQAjJy+W9u3uv9Q7+Q5r2evdrm5f7JzVGQ0NDQ+P/RhLofTdAE9Bxvv0AugUtVh1A0fgZaLOy7xt0Iw0iiaBxExJEElHjQUAkARsvGjTI57GASAI2Xm7I9XVRATgAPXo2gAVxCHqjKLpPCOAFtNVQ8DXoCPQK+rXkyPa9g+5BP6Ad0HrlOdn2LuiOougeIYCR4HJK9l4DgWKzr3Kaf60pfgKkMRD81GwgxBuXAHDZ0FAVBHYZTJcNwFX+KU9aQGBPhNJl/AksECCCngpLHQMwIIIMQz0jGwWIYc2+Yb5PdCSWBlAGgXlsZQFEEwpAAdCNwZjHosvfJyjsAvRUM7WdgNZAHw0T4LSyPSPOzwqgXNh+TXHF2Dq2FGoDQJGfBQCmMGyhdQAo85M6QhweX4ocnlzzo84oE8LGucZbVg/RBkDK4zPM+a0eog3AZ4P15DK0cF8Yacs/B213PQ+Q9Pi4Y+SyCkwJjrrcR/Uu+WdUADCFujTOnd8bQLZMNfn05UL3WgorrhOMhfPPfB0hbo8viIfY1RLj9vjEPURXT5Db4xPzEH3HYW6Pj91DpPIDuD0+tvzqCCkABeDly0Xn8XXN1WUZ/CJYdspTm3T+zgDmlSmqy40OLuMwZ/65C4BT0LNpv75PbYhQ589OmM4lLDFuj881v7MlRmVtYQrjzm98AVCAiMFD9AbgUmiMHqI3AEyhFNMa++31VLfKcv8BIpo/WGhoaGhoaGisTvwBIeow/1RjOykAAAAASUVORK5CYII={scale="+$scale+"}>"
+!endfunction
+
+IBMEntityColoring(modelalt)
+!define modelalt(e_alias, e_label, e_techn) IBMEntity(e_alias, e_label, e_techn, #232F3E, modelalt, modelalt)
+!define modelalt(e_alias, e_label, e_techn, e_descr) IBMEntity(e_alias, e_label, e_techn, e_descr, #232F3E, modelalt, modelalt)
+!define modelaltParticipant(p_alias, p_label, p_techn) IBMParticipant(p_alias, p_label, p_techn, #232F3E, modelalt, modelalt)
+!define modelaltParticipant(p_alias, p_label, p_techn, p_descr) IBMParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, modelalt, modelalt)

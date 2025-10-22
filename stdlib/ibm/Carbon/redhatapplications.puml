@@ -1,0 +1,13 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $redhatapplications [64x64/16z] xS61400000CXXFdRpkElMXu0001m
+
+!function $redhatapplicationsIMG($scale=1)
+!return "<img data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAAIGNIUk0AAHomAACAhAAA+gAAAIDoAAB1MAAA6mAAADqYAAAXcJy6UTwAAAAEZ0FNQQAAsY58+1GTAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAAOxAAADsQBlSsOGwAAAP1JREFUeNrtmbENwjAQRU3ighkYwiW9S1ZAomEwCiKxQtLRU7IFW3CFe1ucnMPxe9JVDiR5nI74xzkAAACATtll1i9SV+NrvElNtb58yKyfpYLhzYd0DdXwBce8pE5GApbaJxh6nwEI6F2AV3z2mVmPdMDGOyAyAxCAAAQgAAEI6PY5oARtnhAKnzp/zhNqd4A2T3inqpYn+BW6zDJPmJkBCECAs54Bf50n0AGG547MAAQgAAEIaOBf4KjYjYW0F2hWwENq33MHTE73bn5mBiAAAQhAAAIQgAAEIAABCEBAo3mAFk2eoCWbR4wrdNjB8Af+SN2d7g0zAADAVvkCisgYPWccxiUAAAAASUVORK5CYII={scale="+$scale+"}>"
+!endfunction
+
+IBMEntityColoring(redhatapplications)
+!define redhatapplications(e_alias, e_label, e_techn) IBMEntity(e_alias, e_label, e_techn, #232F3E, redhatapplications, redhatapplications)
+!define redhatapplications(e_alias, e_label, e_techn, e_descr) IBMEntity(e_alias, e_label, e_techn, e_descr, #232F3E, redhatapplications, redhatapplications)
+!define redhatapplicationsParticipant(p_alias, p_label, p_techn) IBMParticipant(p_alias, p_label, p_techn, #232F3E, redhatapplications, redhatapplications)
+!define redhatapplicationsParticipant(p_alias, p_label, p_techn, p_descr) IBMParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, redhatapplications, redhatapplications)

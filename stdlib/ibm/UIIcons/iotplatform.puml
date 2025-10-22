@@ -1,0 +1,13 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $iotplatform [64x64/16z] xS61400000CXXFdRpkElMXu0001m
+
+!function $iotplatformIMG($scale=1)
+!return "<img data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAAIGNIUk0AAHomAACAhAAA+gAAAIDoAAB1MAAA6mAAADqYAAAXcJy6UTwAAAAEZ0FNQQAAsY58+1GTAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAAOxAAADsQBlSsOGwAAAwtJREFUeNrtm0loFEEUhjsaN1BBVNAYxBUiXjyZ6EHmIoIGl6DiSfQm6EE0orlFkECCRxUVESRuoKDiVUNwQXBBESGiQdC4xCUuQRAlOv4P30DzqJrJdHf1dLfvwcfQPdU91X9Vvfq7usfzNP7vqEpw3fLgHfgOnoHn4A7oAp+i+pHqhDfQdP6cz587+ZOE6ATnwZekCpB32NuWMB3gKDgI3gc50YiUD+HxoJmHx64gDTrSYeVaxfb+Mo+n8sfBKXAdvACjQY2hN40BK8AqcK2cYZFkATxOgB9AD4twApwEH8ECMEGUJ3G2gCecOFMvgCkGwS1wGPSDBjDO9/1YsBG8AQ+zKEAhfoN73CNmg4Uit60GfaVESHsS9NgTUIvvAENi1jkGGrMuQCFoSDSBH2KaPw3mRu0Ea3kOzvnMStSudJDH+CtwE1wBj4ZxHmrxS2JKvM++YSiKHFDLFVlsyMJhQuaINjAZzGGht4FNLEpPkfNQ9v8MVorZ4Rs7yNBDoJ0rVomoAxfBbTCrxHC4YEjK06IQIJeA8b4U3AXLipTZzj2hENRbd0eRA1x6fGlzKb/U85S2FowSZX6B5eBGEREOCWM10+8Ug+QA1/O7/+KoBR9zdz7Hla8TOayRv/9qOAcduxVM5G2y0i85KaZuGuwF68A+8Me3fyo4YznmJzgi9m1Ouw+gJNxiyAlNlvKdQrB6Fi3VRog8yGWx74ClbJ+/y3POymXBCe7hPFEIujtcZCnbZVhQsa4I5R2tCEXtFHvZHW7w7VtjcYsPDH4iE/cCchjYfMFTsT0vKwLIlp1hKdcvtidlRYC3hhUh2yKKJ1yhcycY1jHG4jiztB6gAqgAAaI6A9cQKlfoEFABVAAVQAVQAdQHOL2Pd33ecn+nSnuACqAChLrHjuvJkN4L6BBQAVQAFaASTrBU0FJ0TQUc3nDr5rwHdCe4QbvjEGAvGEjgxQ9w3cqKIG+I0FOWs96/11emeNG+KRYk6E8VV8F68DoOJxiXY9QnQzoNqgAqgAqgAqgAGhoaGu7iL46Kj7rqZ3XiAAAAAElFTkSuQmCC{scale="+$scale+"}>"
+!endfunction
+
+IBMEntityColoring(iotplatform)
+!define iotplatform(e_alias, e_label, e_techn) IBMEntity(e_alias, e_label, e_techn, #232F3E, iotplatform, iotplatform)
+!define iotplatform(e_alias, e_label, e_techn, e_descr) IBMEntity(e_alias, e_label, e_techn, e_descr, #232F3E, iotplatform, iotplatform)
+!define iotplatformParticipant(p_alias, p_label, p_techn) IBMParticipant(p_alias, p_label, p_techn, #232F3E, iotplatform, iotplatform)
+!define iotplatformParticipant(p_alias, p_label, p_techn, p_descr) IBMParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, iotplatform, iotplatform)

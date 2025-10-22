@@ -1,0 +1,11 @@
+sprite mdiArtboard <svg width="48" height="48"><g transform="scale(2)"><path d="M17 9V15H7V9H17M19 3H17V6H19V3M7 3H5V6H7V3M23 7H20V9H23V7M19 7H5V17H19V7M4 7H1V9H4V7M23 15H20V17H23V15M4 15H1V17H4V15M19 18H17V21H19V18M7 18H5V21H7V18Z" /></g></svg>
+
+!if %function_exists("$MdiSprite")
+  !unquoted function $MdiArtboardImg($color = $MDI_DEFAULT, $scale = "1")
+    !return $MdiSprite(mdiAccountAlert, $color, $scale)
+  !endfunction
+
+  !unquoted function $MdiArtboard($alias, $label=$MDI_DEFAULT, $shape=$MDI_DEFAULT, $color=$MDI_DEFAULT, $scale=1, $stereo=$MDI_DEFAULT)
+    !return $MdiSpriteElement("mdiAccountAlert", $alias, $label, $shape, $color, $scale, $stereo)
+  !endfunction
+!endif

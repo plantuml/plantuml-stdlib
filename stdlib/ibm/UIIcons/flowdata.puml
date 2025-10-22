@@ -1,0 +1,13 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $flowdata [64x64/16z] xS61400000CXXFdRpkElMXu0001m
+
+!function $flowdataIMG($scale=1)
+!return "<img data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAAIGNIUk0AAHomAACAhAAA+gAAAIDoAAB1MAAA6mAAADqYAAAXcJy6UTwAAAAEZ0FNQQAAsY58+1GTAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAAOxAAADsQBlSsOGwAAA4ZJREFUeNrtWj1oFEEYnctFURELBbHIYVBRC5WgohaaRFS0sRGb+IcE46WIihCjXWyNIP6TSBC0UCysFESimNgKYiHiiUrAgCk0laDi6fo+9jtYh83uzu3s7tw5Dx7c7s7tzHs7P9/8CGFhYWFhYWHxvyJXxX/WgEfBVnA1+BN8Bz4Bh8E3CZd5Jee/E2wGHXAcfAYOga+TMmA2eAEsBvyvDF4De/m3TswAz4M9YH6aNGTGDfAk+D3KS/MK4h+Be0NMawA3gRvBe+AfjeIfgPs5j6APuh7cwvmXdRlwHdyjUOBl4FzwsSYD6MsfVEi/GFzIpgWiMcLLWsAj0r1P4Glud4St4Dmw4ElzjNtkKab4FeDxKvKnMg+CL+PWgLNcrSqYYFNegN+Y1PHc4io6z9McqB2OxDSgj6u0av455sO4NWCbT4GmfNJN8bM7nnunmDqhkn972MsaIowSBeneWED6sRSGbpX8l8Q1oO4RZoDDHY4XbQHp21Ios0r+H3SMAk95WKtggIc3uR3O52fy8NUXUzB1wv1V5j+qIw6YkKI/6mX3gZPgFx7vd4P3pf6CgpAu8GtMA0o8pOYV83e43J/j1oBXHON3ee4VpN7WD1c0xACEHT4fKkr+w2ExgEokSBOdzTz5iAKqop0aQuFD4E2FclbwnGMCbaFwmWPrBeC6kMkQffnDGiZDfuJ/83vDJkMHwB+1PB2eTnwnR5Y0I9zOnfMsz3R4MMnpcFoIEn/bhAWRuhFvmgGpizfJgEzEm2JAZuJNMCBT8VkbkLn4LA0wQnxWBhgjPgsDjBKftgHGiU/TACPFp2WAseLTMMBo8UkbYLz4JA2oCfHVGrAK7Bbuflwzr7y85wWRq8Jdw9Mp3klSY6PCi2jl5aJwV4O8L50DbmD2snDjv7yqASSeFjpbQ9LNlK6NFk+IujV2OYJ4UWvio9aAtaK68wFkwEgCZc7p7DOi1AC5zVf25+8Kd3dmkn+38DNvcygKwxGlBrRL1yr78/3i3329muwDlkrXWZ8PyKQTrFtEMeCjdJ31+YDU+4BRcLnnWmV/foBHizhwsq4BQ1IhmoS7Zd4BLmJ28L0mT7oyh8Q1XwNoj72a8wEUPJUSKLOTdg0gnBDunntUUBM5U0+jAB143OXTHPzC30vCPbLyq146Qa8J3TzlLXqmwxQljvNXp8MJb4WFhYWFhYWFRQ3gLzpi9IsGGy7tAAAAAElFTkSuQmCC{scale="+$scale+"}>"
+!endfunction
+
+IBMEntityColoring(flowdata)
+!define flowdata(e_alias, e_label, e_techn) IBMEntity(e_alias, e_label, e_techn, #232F3E, flowdata, flowdata)
+!define flowdata(e_alias, e_label, e_techn, e_descr) IBMEntity(e_alias, e_label, e_techn, e_descr, #232F3E, flowdata, flowdata)
+!define flowdataParticipant(p_alias, p_label, p_techn) IBMParticipant(p_alias, p_label, p_techn, #232F3E, flowdata, flowdata)
+!define flowdataParticipant(p_alias, p_label, p_techn, p_descr) IBMParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, flowdata, flowdata)

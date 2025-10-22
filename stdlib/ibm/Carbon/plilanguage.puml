@@ -1,0 +1,13 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $plilanguage [64x64/16z] xS61400000CXXFdRpkElMXu0001m
+
+!function $plilanguageIMG($scale=1)
+!return "<img data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAAIGNIUk0AAHomAACAhAAA+gAAAIDoAAB1MAAA6mAAADqYAAAXcJy6UTwAAAAEZ0FNQQAAsY58+1GTAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAAOxAAADsQBlSsOGwAAApZJREFUeNrtmk9IVEEcx6dti8CDkIdCTCEs9LIejOjgwT8QuiriIcKgQ0KXwEOn6BB0Km+KCEFKYXYJCS+arn92C1wkNygUoRBFIpA00iLtkEbfod/WY3m7b//N2/d2fl/4MLPv7ey++b6Z+c3Me0JorkOUXgWdmtX9ERj20IcrwKdR5X1UZ+E1HFwATZoYMBHNeHQfA9gANoANYAPYADaADdBXXhde8x1QD+6BadUGFIPrFt85oGl0EOybnC8F1yjfC75luHi7AU7QAk4Y1jJnEpTrA9vpGnA3yYtbAZfBWxMDor/xOEMDqsFJ8A58ijGgOUG5p+kaYFQ/+GJSXjrfRukMqIq5uGzKT+mLmOM9YITyD8FRMvsVHdvMxhggDfgQ51wFiIDj4BboUmRA9C6PxxyfNeQfUBoGQ3ZFgffgGeVbFVVe9vtz1ApfOzEMrlF6ChxWYEAjXW+ABl7HGfDbMFJ7bGz+jjGgjNIN8CvLlT8CLlKYDTjRABkuL1F+UsHdrwGFYB58zdVMsJ3urlEF4CxNSmQE2AXdNoY/Ww24b3F+C3TQhMgV/T9VA0bjzOJ+Ulh6Dn4oqPxpUAk+gqVcGnA7wURIpZQ1f7csh5U1fzcYIAfZWupmQR0NaADHwEuwp6MBfpXNP9VBMBsqsTBdTnK+57MBYYvzN8XfXSNB+wpyYbUM1i3KjZlsiAwSUuVg1W1dQGn4S7YFvBH/X6JIV3Np/kYq4a8l3wbBInAB7CTRbfIyCjTSpsqUMN9pznsDlI/+uYoCyUpGggEag7Q0IGLXH/HDUTaADWAD2AA2QGMZ5wHnQUiTesuXpeVLHf8eYsqWUKzRjf8MnoBFwWKxWCwWi8VisbSU8ZFVSLO61/F+AEuIPwola6KdEjlIAAAAAElFTkSuQmCC{scale="+$scale+"}>"
+!endfunction
+
+IBMEntityColoring(plilanguage)
+!define plilanguage(e_alias, e_label, e_techn) IBMEntity(e_alias, e_label, e_techn, #232F3E, plilanguage, plilanguage)
+!define plilanguage(e_alias, e_label, e_techn, e_descr) IBMEntity(e_alias, e_label, e_techn, e_descr, #232F3E, plilanguage, plilanguage)
+!define plilanguageParticipant(p_alias, p_label, p_techn) IBMParticipant(p_alias, p_label, p_techn, #232F3E, plilanguage, plilanguage)
+!define plilanguageParticipant(p_alias, p_label, p_techn, p_descr) IBMParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, plilanguage, plilanguage)

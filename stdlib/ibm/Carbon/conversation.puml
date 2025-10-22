@@ -1,0 +1,13 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $conversation [64x64/16z] xS61400000CXXFdRpkElMXu0001m
+
+!function $conversationIMG($scale=1)
+!return "<img data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAAIGNIUk0AAHomAACAhAAA+gAAAIDoAAB1MAAA6mAAADqYAAAXcJy6UTwAAAAEZ0FNQQAAsY58+1GTAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAAOxAAADsQBlSsOGwAAAuVJREFUeNrtWjtoFFEUvWbEz3baiEmKaLVK/CBob2mlhSwoIjYm2getbW0sLOLGT5FSLYQU0UJSaGVU/BHBQlfU1a3EZtEi6LnMHXksM7vZyfvNzDtw2EkuO+/Oee/OzDt3iSqODY7Hr4FnwcPgbsNjfQSXwXmw64MAB8D74C7wHfjT8HjbwEnwE3gSfO1SgJok8BtsgO8tjbsHvAtukQnojjgSgJf9hOWLJxmrIWNzDuRKgCPgiuWLV0VYkRycCbATbDu8/7QlB2cCeIMgQBAgCFBtbPQwp2PgnBxPgYua496vgCY4LmwaiIcS8F2AafCrcNpA3AssDqpNW+OHEggCBAHCi5AKWx7dfvlcSol9Bp+Dd0jx7mwIYNOje9MndhA8A86Ax0m8O80YBV+oAtTk4tmj20dunBoViXf3QAT5pfnce8FZ9R7gyqPLQuLdjcunbmFbFNvj/1eAS4+unwic0xXwdEr8aMr/ePNzKuN8vbZ4VxXAtUeXhbasgrVgB3hNbqKdlDjX/A3qaYz4uB3uxTPZ4g7CJWVldKr2HsCzf0FmuDPMF8siQDL7V6v4Jph79ssiQO7ZL4MAyew388x+GQRorGf28zwG+XF0U47PU7oju574sLgOLoA/bG2H2W4eE84ZiOdBy6Yf8DfjWFfce0OE37W/CKcMxJ3BtUvrLK/gCQYBggBBgCBAECAIQN8p9sp9w6jkZlwA9t3YK697dPF1yWnZhgDzsqm454kIdcmlJbkZg/prce7AcHdogtbWGuMGw2yf+FLOnBL/ni+e/ftXJgWIlGPeU9+m2IsfkUSysJ3ibtJDyu4nnMuZEzdEboEXZdNEtlbAMNgMvpTjQ+Cfoj4FopzfW6W4hX0Z3AQ+rpoAjG8Ud5VnBpRCaQVgPJEb1Qm5f6xWTYDCl0Kk4RxqKTySvyslQKFLQZcAhS2FSOO5eOlvLVopRJrP97RopaBbgKQUuGP7AXxbVZ9hkgKKgX/YibVJyrlHZwAAAABJRU5ErkJggg=={scale="+$scale+"}>"
+!endfunction
+
+IBMEntityColoring(conversation)
+!define conversation(e_alias, e_label, e_techn) IBMEntity(e_alias, e_label, e_techn, #232F3E, conversation, conversation)
+!define conversation(e_alias, e_label, e_techn, e_descr) IBMEntity(e_alias, e_label, e_techn, e_descr, #232F3E, conversation, conversation)
+!define conversationParticipant(p_alias, p_label, p_techn) IBMParticipant(p_alias, p_label, p_techn, #232F3E, conversation, conversation)
+!define conversationParticipant(p_alias, p_label, p_techn, p_descr) IBMParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, conversation, conversation)

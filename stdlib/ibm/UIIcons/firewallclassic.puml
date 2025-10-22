@@ -1,0 +1,16 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $firewallclassic [64x64/16z] {
+xTJ50O0m40NH3lZzTyiD9xDndGlwS29fjPa3phNgPIZUBp_YzwCelkBdQENzUylnmVFbWUUx2_3mGCZ7ZkEdSdZ7ktlFblTudn4U6jlJV-lSoFyz7Bq9xpik
+9VJB_zQ7LuI76l7lUlBwvQiT
+}
+
+!function $firewallclassicIMG($scale=1)
+!return "<img data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAAIGNIUk0AAHomAACAhAAA+gAAAIDoAAB1MAAA6mAAADqYAAAXcJy6UTwAAAAEZ0FNQQAAsY58+1GTAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAAOxAAADsQBlSsOGwAAApRJREFUeNrtWj1PwzAQbdowhqFlgLYSExIb/QdlYujKBBMDMyzl6xdA2ZhZkEAwIyEYof8ANiTGtoGBdqAranlWjRRME0RqJ3ZyT7LiXOKPe3Zs3+UyGQKBkGZY44SlUqlsWdYxsstIc5r1+RXpYTgc7nY6nbZ0ArjyT8jmNR+8HkhYmpSE7C9GRiOfN2D25nlfM1IJAKoGfcIT99UeIyt6b9rttqWTxuVyeejXV1kzIFUgAogAIiDdGLcLuN7VVVh1dYOrYgY0DRrApnQC2BmbHTMNUL7H+zoRcqKg3+9/OI5ziWMmM4JmkBwNjaEbKL8qwxgiEAjpRihLLwqPUVRWqB1SeRM8RmqOwgZ5jJTZAtUkrQF2iDKxeoxgmyxgFm7gIFTD7SwXv0F2C9kZ+vOimoDYBgvKH+K6DUWnhGezkFVw3cE7JyDhAPnPJJnDTPlrXOtIUwHvsWd1/q6dGAKw8zRwqf2jSI2XMf8TKBaLi/i+t0Q/AKb8PlKT70xVpCPv+sTKoOyp67rPRhMARTaFfnYGg0EFir17ZOdQ9i6bzT6yCfOtGy9bl02AEo+R324CJVYE0Z6g/KhTkKEve8heBJSVsgZE7TGaFwi5D5gt90FlpRAQg8do2nvTarV8/YBjnk1LJ4B5YdhfWWSvuHcmdSfBDHdFrafVFkgUiIC0ExBbjFCQFSm5/cCYItun8dg8Prx9dqIrSKqSEbjGDkWouyKSoF2MENpvSFTeiwKv+881IG6Pz3KUdesYIyS1/b9iimgbJAKIACIg1YgtRkiXCFTTY4TkE2BQjJAaApLm8QmzBiTK40O7QJgZEDNU7kKuCTPgIcq6tSMACzD7u9NVUHWX1/0DOd0IUBCpSpGlBALBF19zyvA0hHR59wAAAABJRU5ErkJggg=={scale="+$scale+"}>"
+!endfunction
+
+IBMEntityColoring(firewallclassic)
+!define firewallclassic(e_alias, e_label, e_techn) IBMEntity(e_alias, e_label, e_techn, #232F3E, firewallclassic, firewallclassic)
+!define firewallclassic(e_alias, e_label, e_techn, e_descr) IBMEntity(e_alias, e_label, e_techn, e_descr, #232F3E, firewallclassic, firewallclassic)
+!define firewallclassicParticipant(p_alias, p_label, p_techn) IBMParticipant(p_alias, p_label, p_techn, #232F3E, firewallclassic, firewallclassic)
+!define firewallclassicParticipant(p_alias, p_label, p_techn, p_descr) IBMParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, firewallclassic, firewallclassic)

@@ -1,0 +1,13 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $cameraaction [64x64/16z] xS61400000CXXFdRpkElMXu0001m
+
+!function $cameraactionIMG($scale=1)
+!return "<img data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAAIGNIUk0AAHomAACAhAAA+gAAAIDoAAB1MAAA6mAAADqYAAAXcJy6UTwAAAAEZ0FNQQAAsY58+1GTAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAAOxAAADsQBlSsOGwAAApZJREFUeNrtWc1KHEEQ7qziTe8uepKoB99BEBQ0JB69ePCg8QcE9QVkfYD8INEoe9iDd4mCCwn4FCER0YO4rA/gTUT9GmugaHtmd2YHZrqnPvhge7a7pGqqyq5vlRIIBAKBQCAQFBPvLM+mwUNwwDNfG+BnsM4fliwbDzx0XpFPB+ZDWwAGPc74wXYCUCh0J+wTLuE56svCZ4AEQHqAo7WbVs+SEpAASA9I/ab1EZwBh8F+en4HXoJn4Cl4m5f7R1oBKIMVcCHE5nviB/A7WAO3waYPGfAJPAJ7Y/zNRXAOnAdPXO4B6+BxDOc5eunsuqsZoN/8N0sQ/4JV8Derdd0bpujNjxkvQNu4ySoTujuo+SPD+QdwE/wJPhn7/xN3wRXwK9jDgqBtjWbRE5KWQMVIe+28VpL2LM5zPNGeaTrDy6HiSg8YoG7PsQWex7BxTmc4FlQGSlSSAMwapaNrfj+BnX06y8tx1oUAzBjraou0jyqHagvbuWyCQ8b6T8i+QF3WeKPGhpwdciEDysY67FobqMtWNTbkbFmGIQcC0LQMQDYsq9cfIxr0OWx4irKdyx5wDY6w9ST4z7Kvrlr/xjBpsZ37DDgz1osJ7ZTobJTtXAbgF/jI1vpuv5rAzqoxFzyS7dwHoEHzPMcXcCKGjQk6w1Ej2078F9Bixj1b91DNr7WwWaI9dTYMKbK17dI02CQx45g5rB36Qand7jgc3AjnVUbqUCd6gJ7fNyyawBg9a/c6vJGlKtSpJLZLYkYcSYynfeaSWBqa4AmJGVGiqDK6fU15JIoGPWEJ3FHpyeJOBYAPN3tEb2eBwg9DEgCf0E4PeJYMKFgAbj32941vXZZNF+A42OeZ84EydaUEAoFAIBAIBAL1Asz4e5gjebyKAAAAAElFTkSuQmCC{scale="+$scale+"}>"
+!endfunction
+
+IBMEntityColoring(cameraaction)
+!define cameraaction(e_alias, e_label, e_techn) IBMEntity(e_alias, e_label, e_techn, #232F3E, cameraaction, cameraaction)
+!define cameraaction(e_alias, e_label, e_techn, e_descr) IBMEntity(e_alias, e_label, e_techn, e_descr, #232F3E, cameraaction, cameraaction)
+!define cameraactionParticipant(p_alias, p_label, p_techn) IBMParticipant(p_alias, p_label, p_techn, #232F3E, cameraaction, cameraaction)
+!define cameraactionParticipant(p_alias, p_label, p_techn, p_descr) IBMParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, cameraaction, cameraaction)

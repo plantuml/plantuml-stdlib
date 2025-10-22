@@ -1,0 +1,13 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $music [64x64/16z] xS61400000CXXFdRpkElMXu0001m
+
+!function $musicIMG($scale=1)
+!return "<img data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAAIGNIUk0AAHomAACAhAAA+gAAAIDoAAB1MAAA6mAAADqYAAAXcJy6UTwAAAAEZ0FNQQAAsY58+1GTAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAAOxAAADsQBlSsOGwAAA6BJREFUeNrtmslrFEEUxsvMuEREQTCKKwG3g1sQBRXFNQiCHoJk+RciKlGDIuIST1G8uARBLxE3VES8SDASQT245aAQhOh4iQYXFBSiIInfo7+GYpiZ9Jrp6ukHPwa6u7rnfdWv6r2qViqxxEraUjH3bwrYDnaBieBN9gXpmDk8HqwFm8AWsEw7Nwdci5sAZWAF2ExWgbHgJ+gEF8FDcDbfDUwUYJ7msPT0JPAHPAMn6PALMOTkZiYIUEFHbadn8/hrrYefgAEvN09HNI7X0elqsITHP4IOOiyv97cgHpaOSByv1F7p1WAM+EFHL9Dp92E8vFgCzKfDMlJv5BQlcfwUHKPDL53GsQkCTM2K41k8/gq0sac9x3EUBRgHNmi9vJjHM+CBFsffix1/YQlwGTQwjsXZc/z9ELURNywBJoPHfAuGVIStLMR7D0TAeakF6sDcOGWCXmuB3jgKkNQCSS0Q81pA4nhpqdUCdhzbtUBbnGsB22m9Fjgex1qgQnO4JGoBsRngNGv6kqsFFJ2eWaq1gEpqgWjUAkUVwJhcOhEgESARoHTN5PWAciZZsqw+DQyyYHoO7oN/cRVA3tpGcERZS15fwDueEzEOgs/gpLI2VWIlwARwHWwDN8Ap0J11TRU4wOxzK6iNiwBldF56eSe4k+c6EaSB59vBFbYdNF2ARvZ8Ied1s6+5xfGg0+RZoJwxf9Oh87oI0ma06dNgNQe8Vg9tW+OQB6wHn3IMeE6sm22NFkAWVzI+2meSTFCpX35ngUAyL4/WB9b4aF+prM0STwIEmnl5tC6wl0mO23FA2kznPVwLEHjm5dFkQ+QraAb1Lts2s21HrpOpYXr+Nnu5gT3cn+O6fs63b8E+sEhZX4jIctjVgASQ8JJ9g/18To/DdjXK2mc4pKw9B1cCyPe1u7W0cjjrYWgcVdZnqZkABRCTjZLloInP6XHgfDt7vknlWZ9MFRjw7nJwa3HxJ+VPLVTWfl5vwAIM8f+ICIfBAmUts/fnCMkzytop7mDI/HVbDPnNvOpCGgx/gx3aoFyfNSiLKBWM+T3gfL4iaDgBQsu8AjBxSD54uJQ1LdvPfsSed7TNlh7pzCtAEwfvEV819ohmXlFcZMiXeVX6zLz6TBagi9lTlYd7Fsy8TBFAz7zcWsHMyxQBBjj/1zKhcGo1bNOiivCxgxdLjXTmZZIAoWReUbNRPsthPfNqcZJ5mShAvgURuxJ0lXklllhikbL/61kI0GRfR3gAAAAASUVORK5CYII={scale="+$scale+"}>"
+!endfunction
+
+IBMEntityColoring(music)
+!define music(e_alias, e_label, e_techn) IBMEntity(e_alias, e_label, e_techn, #232F3E, music, music)
+!define music(e_alias, e_label, e_techn, e_descr) IBMEntity(e_alias, e_label, e_techn, e_descr, #232F3E, music, music)
+!define musicParticipant(p_alias, p_label, p_techn) IBMParticipant(p_alias, p_label, p_techn, #232F3E, music, music)
+!define musicParticipant(p_alias, p_label, p_techn, p_descr) IBMParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, music, music)

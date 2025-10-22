@@ -1,0 +1,140 @@
+!include <C4/C4_Container>
+
+' Colors
+' ##################################
+
+!$NODE_FONT_COLOR ?= "#000000"
+!$NODE_BG_COLOR ?= "#FFFFFF"
+!$NODE_BORDER_COLOR ?= "#A2A2A2"
+
+' Labels
+' ##################################
+
+!$NODE_LEGEND_TEXT ?= "node"
+
+' Styling
+' ##################################
+
+' PlantUML supports no automatic line breaks of "PlantUML containers" (C4 Deployment_Node is a "PlantUML container")
+' therefore (Deployment_)Node() implements an automatic line break based on spaces (like in all other objects).
+' If a $type contains \n then these are used (and no automatic space based line breaks are done)
+' $NODE_TYPE_MAX_CHAR_WIDTH defines the automatic line break position
+!$NODE_TYPE_MAX_CHAR_WIDTH ?= 35
+!$NODE_DESCR_MAX_CHAR_WIDTH ?= 32
+
+UpdateElementStyle("node", $bgColor=$NODE_BG_COLOR, $fontColor=$NODE_FONT_COLOR, $borderColor=$NODE_BORDER_COLOR, $legendText="$NODE_LEGEND_TEXT")
+skinparam rectangle<<node>> {
+    FontStyle normal
+}
+
+' shortcuts with default colors
+' node specific: $techn is only used in old scripts, new scripts uses $type ($techn has to remain, it could be called via named argument)
+!unquoted procedure AddNodeTag($tagStereo, $bgColor="", $fontColor="", $borderColor="", $shadowing="", $shape="", $sprite="", $type="", $legendText="", $legendSprite="", $techn="", $borderStyle="", $borderThickness="")
+  !$type=$type+$techn
+  $addElementTagInclReuse("node", $tagStereo, $bgColor, $fontColor, $borderColor, $shadowing, $shape, $sprite, $type, $legendText, $legendSprite, $borderStyle, $borderThickness)
+!endprocedure
+
+' Layout
+' ##################################
+
+' comment if node should not be added to legend. No calculated legend extension required
+SetDefaultLegendEntries("person\nsystem\ncontainer\nexternal_person\nexternal_system\nexternal_container\nnode\nenterprise_boundary\nsystem_boundary\ncontainer_boundary\nboundary")
+
+' Line breaks
+' ##################################
+
+' $breakTechn() in C4 supports //...//; $breakNode() in C4_Deployment supports no //....//
+!unquoted function $breakNode($text, $widthStr)
+  !$usedNewLine = '</size>\n<size:'+$TECHN_FONT_SIZE+'>'
+  !return $breakText($text, $usedNewLine, $widthStr)
+!endfunction
+
+' Elements
+' ##################################
+
+!function $getNode($label, $type, $descr, $sprite)
+  !$nodeText = ""
+  !if ($sprite != "")
+    !$nodeText = $nodeText + $getSprite($sprite) + '\n'
+  !endif
+  !$nodeText = $nodeText + '== ' + $breakText($label, "\n== ")
+  !if ($type != "")
+    !$nodeText = $nodeText + '\n<size:' + $TECHN_FONT_SIZE + '>[' + $breakNode($type, $NODE_TYPE_MAX_CHAR_WIDTH) + ']</size>'
+  !endif
+  !if ($descr != "")
+    !$nodeText = $nodeText + '\n\n' + $breakDescr($descr, $NODE_DESCR_MAX_CHAR_WIDTH)
+  !endif
+  !return $nodeText 
+!endfunction
+
+!function $getNode_L($label, $type, $descr, $sprite)
+  !$nodeText = ""
+  !if ($sprite != "")
+    !$nodeText = $nodeText + $getSprite($sprite) + '\l'
+  !endif
+  !$nodeText = $nodeText + '== ' + $breakText($label, "\l== ")
+  !if ($type != "")
+    !$nodeText = $nodeText + '\l<size:' + $TECHN_FONT_SIZE + '>[' + $breakNode($type, $NODE_TYPE_MAX_CHAR_WIDTH) + ']</size>'
+  !endif
+  !if ($descr != "")
+    !$nodeText = $nodeText + '\l\l' + $breakDescr($descr, $NODE_DESCR_MAX_CHAR_WIDTH)
+  !endif
+  !return $nodeText 
+!endfunction
+
+!function $getNode_R($label, $type, $descr, $sprite)
+  !$nodeText = ""
+  !if ($sprite != "")
+    !$nodeText = $nodeText + $getSprite($sprite) + '\r'
+  !endif
+  !$nodeText = $nodeText + '== ' + $breakText($label, "\r== ")
+  !if ($type != "")
+    !$nodeText = $nodeText + '\r<size:' + $TECHN_FONT_SIZE + '>[' + $breakNode($type, $NODE_TYPE_MAX_CHAR_WIDTH) + ']</size>'
+  !endif
+  !if ($descr != "")
+    !$nodeText = $nodeText + '\r\r' + $breakDescr($descr, $NODE_DESCR_MAX_CHAR_WIDTH)
+  !endif
+  !return $nodeText 
+!endfunction
+
+!unquoted procedure Deployment_Node($alias, $label, $type="", $descr="", $sprite="", $tags="", $link="")
+!$sprite=$toElementArg($sprite, $tags, "ElementTagSprite", "node")
+' nodes $type reuses $techn definition of $tags
+!$type=$toElementArg($type, $tags, "ElementTagTechn", "node")
+rectangle "$getNode($label, $type, $descr, $sprite)$getProps()" $toStereos("node",$tags) as $alias $getLink($link)
+!endprocedure
+
+!unquoted procedure Deployment_Node_L($alias, $label, $type="", $descr="", $sprite="", $tags="", $link="")
+!$sprite=$toElementArg($sprite, $tags, "ElementTagSprite", "node")
+' nodes $type reuses $techn definition of $tags
+!$type=$toElementArg($type, $tags, "ElementTagTechn", "node")
+rectangle "$getNode_L($label, $type, $descr, $sprite)$getProps_L()" $toStereos("node",$tags) as $alias $getLink($link)
+!endprocedure
+
+!unquoted procedure Deployment_Node_R($alias, $label, $type="", $descr="", $sprite="", $tags="", $link="")
+!$sprite=$toElementArg($sprite, $tags, "ElementTagSprite", "node")
+' nodes $type reuses $techn definition of $tags
+!$type=$toElementArg($type, $tags, "ElementTagTechn", "node")
+rectangle "$getNode_R($label, $type, $descr, $sprite)$getProps_R()" $toStereos("node",$tags) as $alias $getLink($link)
+!endprocedure
+
+!unquoted procedure Node($alias, $label, $type="", $descr="", $sprite="", $tags="", $link="")
+!$sprite=$toElementArg($sprite, $tags, "ElementTagSprite", "node")
+' nodes $type reuses $techn definition of $tags
+!$type=$toElementArg($type, $tags, "ElementTagTechn", "node")
+rectangle "$getNode($label, $type, $descr, $sprite)$getProps()" $toStereos("node",$tags) as $alias $getLink($link)
+!endprocedure
+
+!unquoted procedure Node_L($alias, $label, $type="", $descr="", $sprite="", $tags="", $link="")
+!$sprite=$toElementArg($sprite, $tags, "ElementTagSprite", "node")
+' nodes $type reuses $techn definition of $tags
+!$type=$toElementArg($type, $tags, "ElementTagTechn", "node")
+rectangle "$getNode_L($label, $type, $descr, $sprite)$getProps_L()" $toStereos("node",$tags) as $alias $getLink($link)
+!endprocedure
+
+!unquoted procedure Node_R($alias, $label, $type="", $descr="", $sprite="", $tags="", $link="")
+!$sprite=$toElementArg($sprite, $tags, "ElementTagSprite", "node")
+' nodes $type reuses $techn definition of $tags
+!$type=$toElementArg($type, $tags, "ElementTagTechn", "node")
+rectangle "$getNode_R($label, $type, $descr, $sprite)$getProps_R()" $toStereos("node",$tags) as $alias $getLink($link)
+!endprocedure

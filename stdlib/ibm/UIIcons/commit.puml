@@ -1,0 +1,13 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $commit [64x64/16z] xS61400000CXXFdRpkElMXu0001m
+
+!function $commitIMG($scale=1)
+!return "<img data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAAIGNIUk0AAHomAACAhAAA+gAAAIDoAAB1MAAA6mAAADqYAAAXcJy6UTwAAAAEZ0FNQQAAsY58+1GTAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAAOxAAADsQBlSsOGwAAAhtJREFUeNrtmM8rhEEYx+0uW45cHFgnF5E/wJEoOZBfpS0cJNz4Axzckcuu2IPUXqSNK9mjEi7y4+ayHJQoLqKs79SzNU3r1b67s953fT/1qX1n95mZd9559p2ZqipCCCGEEEIIIYQQQsh/IlDm9prgCOyFrbBByh/hLTyEe/C+0gYgApdhFNb88ttPmIRLMFMJA6Ce+CasKzDuBc7IjLBGyPLNz8JtWOsiVsWMSnqc2+pgteUnH8szy65gQvI9o6WI+l+Yhu3GDFV1PNmaCbZSoBFewnqt7AMuwA349UNcUGbNGgxr5c+wAz74JQXWYadx831wF2Yd4tR3Z/AEjmv9q5X/kINSdzRo6elHjbJFmC6gjrTE6ESlbs8PwJAxfVXOx13UE5fYHGGp2/MD0G1cJxxy3okviXWq28pbIFviNo5KGDtQgv4FbM8Ak8wfxf5ZCviKcgxApIjYZtudq7awONqXXM3RA29c1tVjXKt1wKDXZ8CxcT3tsp2QxDrV7ckBSMnKL4da28+5qEfFtBmryZQfBuBB9vM6q7CrwLXEilGW9NNeQG1fp7RtcEjW9mpTc+HwLle/m4c7eTZDY/DNLwOgOnon+/mA1lY/HJabe4Xv8rlF1vpbMnAhY2E2CU/9tB3WD0RiRbSTlRmxYauDtk+EVCpcy+us0FMhdSQ2IelgDR6Klnnl6bljcUIIIYQQQgghhBBCyP/iGwlSY96sl+EhAAAAAElFTkSuQmCC{scale="+$scale+"}>"
+!endfunction
+
+IBMEntityColoring(commit)
+!define commit(e_alias, e_label, e_techn) IBMEntity(e_alias, e_label, e_techn, #232F3E, commit, commit)
+!define commit(e_alias, e_label, e_techn, e_descr) IBMEntity(e_alias, e_label, e_techn, e_descr, #232F3E, commit, commit)
+!define commitParticipant(p_alias, p_label, p_techn) IBMParticipant(p_alias, p_label, p_techn, #232F3E, commit, commit)
+!define commitParticipant(p_alias, p_label, p_techn, p_descr) IBMParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, commit, commit)

@@ -1,0 +1,13 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $restaurantfine [64x64/16z] xS61400000CXXFdRpkElMXu0001m
+
+!function $restaurantfineIMG($scale=1)
+!return "<img data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAAIGNIUk0AAHomAACAhAAA+gAAAIDoAAB1MAAA6mAAADqYAAAXcJy6UTwAAAAEZ0FNQQAAsY58+1GTAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAAOxAAADsQBlSsOGwAAAq1JREFUeNrtm8trU0EUxm9SUaIVArqpWLBYxI3/QheKWCiC4Au0vlDxVfAvUKQrF4FutQVFaRcufCxVELelPgpVUMGViI+FEUwVW6HxGziB6WFyZ+6jmpLvg48yJ3POyf3dydybGxpFFEW1swqOWD1gzlLMa6gfHoM35nysH+HT8EM7WGzBkzK6BAcfSc1RHWxFAN3/snax3feAFct0n0qietyLbb8CCIAACIAACIAACIAACIAACIAAGppV47UZ6neq8c+AHN2/nKF/2VPbCeCLGm9qUvyXskvdntoufVXjngwAejy1nc8D3sK91ngX/Moxb03AG9ipxu8Cckz/zda4D55OCaDPUdu7Ah6p8cko3YMTU/uUij0OyNNzzkbpHooUJDe2vwvAPXjOGm+FL6Z4A2fgbdb4D3w/IM/0n1f9h1L0H5LchualthfAJ/iWil2FBxI03w6PqNgE/CEg1zy+HleximM5+5Z+RcXGpfYidTQp8Bw+Zn3ODagDsjKm4IUmeabeBfg2vMqKf5f8H4EH8AI+DpesuofhKvzMk3teYK+0YlXpXwsFYC4Xb+CD1iopyqZ2SC6NNYmVZNM0wK7LX7uueSh5FJ5McAZN7ffwfuvz3yGrcJ/EZmWe2Z+2yAHegE+o/uZkHZET59wo4mQSb8aA8sk0Pxc5fpAIlPkl51qGG7YF2QjHopglG6cZ+TjscNzU+PRNAE5kuI6/hF/LyislzK2G9A+9vKyHL8llbbVn7m/ZA67An3O6Y90AD8ODam9xaU42vMuyoUd5AGhoHbxbVsSgeu0O/BR+4Lrjykld8F7pv0e9Zvo+ge8mAZ/lV5d6jrX+W39+GyQAAiAAAiAAAiAAAiAAAiAAAiAAAiAAAiAAAiCAtlIr/79APef5Ba4AAiAAiqKoRfoLE25yBb+KyxEAAAAASUVORK5CYII={scale="+$scale+"}>"
+!endfunction
+
+IBMEntityColoring(restaurantfine)
+!define restaurantfine(e_alias, e_label, e_techn) IBMEntity(e_alias, e_label, e_techn, #232F3E, restaurantfine, restaurantfine)
+!define restaurantfine(e_alias, e_label, e_techn, e_descr) IBMEntity(e_alias, e_label, e_techn, e_descr, #232F3E, restaurantfine, restaurantfine)
+!define restaurantfineParticipant(p_alias, p_label, p_techn) IBMParticipant(p_alias, p_label, p_techn, #232F3E, restaurantfine, restaurantfine)
+!define restaurantfineParticipant(p_alias, p_label, p_techn, p_descr) IBMParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, restaurantfine, restaurantfine)

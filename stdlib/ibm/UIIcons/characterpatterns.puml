@@ -1,0 +1,13 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $characterpatterns [64x64/16z] xS61400000CXXFdRpkElMXu0001m
+
+!function $characterpatternsIMG($scale=1)
+!return "<img data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAAIGNIUk0AAHomAACAhAAA+gAAAIDoAAB1MAAA6mAAADqYAAAXcJy6UTwAAAAEZ0FNQQAAsY58+1GTAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAAOxAAADsQBlSsOGwAAAwJJREFUeNrtWr9vEzEUdpMOYaiKKAONmMofwJitZKKwsCHUTh2QGDoDEksuY9uRsQsTKhuIgR8LiTpla/+AdmqLGJAIC13Q8aw8S5blu/OvcPbZn/Qp0l3k8/fl+fk95whJSEiIGQsl93LFMb4DR8AXwPPQDGg5GGMVuAk8Bt6O0QCGFeBuzAZQ9JuUA1SRa46ZO9ZAc9A34EuTHNQi4YPmoC3THNQEA6xyUJMMMMpBiwXXaSjt4YCrHuadopzSdWEAFX8CvBFDJShbAnuxiC8y4F5MvYBsCXRr3teDrgSTAcmABuSASyEP5LFFwNizOdImp+dgnB6OVRkB9GRnw5NaYADMgFOc08RC/BfgMrADHLIbbcmXfwPfYgl8E7ik+bChY/EEJ/0Y294L4XtZxfN58Xy/MC7rBc6xxfQJyyhEJxJE8UHtAkPJr8tM6FmIz/go8X0bNDVBSXxRDvANY0mvz+eEp8L3P6uKt+nNB44Tnm5SZJhKhE5VxZtGAJtI/z/XDUWRIKKjKt7EAPFX8MGEMmRVUdq2DEGfTchUlmjbUryvJiiJVzWgSrxvJiiLVzFAVbwvJmiJrzKgaNvpVFyry4SRybbc1hS/ISk8+liU1G2C0bNamuJlTcgE700la3EQ2oGIrvjgTWg5EB+0CYsl90xOYZgJpT24JWzPKBeKIoBvPW2OoMRI0N6a6owAOtEr3FImFuMyE+hu4PV7Q7Il4GrCE0sTa88BvkL1DOM5mf3TzWNfpQ5oArYlkfyGSP4XaKIBj4AHQqR8xAo2b7oB68BDYWkfAZ8A/6qWwqHiLvAD8Bp37QQj4o9OLxAi1sjsNPg6d+0M+BD4S7cZCg23gF/xk+EH8D6ZvUVKmmwALbc/Ae8IJfwD4KnLPZUH/XOyO0dRqnPqYM+xzl27QvHKZwMmETDy4JenBznvBPE0y2/qHoyYGECLiZ81V4IHmN35DvEZ8L2Jk7pg7w/QpGPy/kAVqjpHWt7uCNdeAV/Pc735hLmdB0SJZABJSEhIiBj/AFklqY2sux8+AAAAAElFTkSuQmCC{scale="+$scale+"}>"
+!endfunction
+
+IBMEntityColoring(characterpatterns)
+!define characterpatterns(e_alias, e_label, e_techn) IBMEntity(e_alias, e_label, e_techn, #232F3E, characterpatterns, characterpatterns)
+!define characterpatterns(e_alias, e_label, e_techn, e_descr) IBMEntity(e_alias, e_label, e_techn, e_descr, #232F3E, characterpatterns, characterpatterns)
+!define characterpatternsParticipant(p_alias, p_label, p_techn) IBMParticipant(p_alias, p_label, p_techn, #232F3E, characterpatterns, characterpatterns)
+!define characterpatternsParticipant(p_alias, p_label, p_techn, p_descr) IBMParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, characterpatterns, characterpatterns)

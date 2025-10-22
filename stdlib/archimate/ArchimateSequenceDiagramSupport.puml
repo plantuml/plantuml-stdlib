@@ -1,0 +1,226 @@
+' Defines functions and procedures to support Archimate elements as participants in sequence diagrams
+' Based on the work by Steven Mileham (see [1]), and included here with his permission.
+' [1] - https://smileham.co.uk/2019/04/23/archimate-plantuml-sequence-diagram-joy/
+
+!global $ARCH_DEBUG ?= %false()
+!global $ARCH_LOCAL ?= %false()
+
+!if ($ARCH_LOCAL == %true())
+    !include themes/shared_style.puml
+!else
+    !include <archimate/themes/shared_style>
+!endif
+
+<style>
+    sequenceDiagram {
+        participant {
+            HorizontalAlignment center
+            MinimumWidth 10
+            RoundCorner $ARCH_SHARP_CORNER
+            stereoType {
+                FontColor transparent
+                FontSize 1
+            }
+        }
+    }
+</style>
+
+!procedure $element($layer,$type,$label,$id)
+    !if ($id=="")
+        !$id = $label
+    !endif
+    !if ($type=="distributionnetwork")
+        !$bgcolor = "#PHYSICAL"
+    !else
+        !$bgcolor = "#" + $layer
+    !endif
+    participant "$label" as $id <<$archimate/$layer-$type>> $bgcolor
+!endprocedure
+
+' motivation
+!procedure $stakeholder($label, $name="")
+    $element("motivation", "stakeholder", $label, $name)
+!endprocedure
+!procedure $driver($label, $name="")
+    $element("motivation", "driver", $label, $name)
+!endprocedure
+!procedure $assessment($label, $name="")
+    $element("motivation", "assessment", $label, $name)
+!endprocedure
+!procedure $goal($label, $name="")
+    $element("motivation", "goal", $label, $name)
+!endprocedure
+!procedure $outcome($label, $name="")
+    $element("motivation", "outcome", $label, $name)
+!endprocedure
+!procedure $principle($label, $name="")
+    $element("motivation", "principle", $label, $name)
+!endprocedure
+!procedure $requirement($label, $name="")
+    $element("motivation", "requirement", $label, $name)
+!endprocedure
+!procedure $constraint($label, $name="")
+    $element("motivation", "constraint", $label, $name)
+!endprocedure
+!procedure $value($label, $name="")
+    $element("motivation", "value", $label, $name)
+!endprocedure
+!procedure $meaning($label, $name="")
+    $element("motivation", "meaning", $label, $name)
+!endprocedure
+
+' strategy
+!procedure $resource($label, $name="")
+    $element("strategy", "resource", $label, $name)
+!endprocedure
+!procedure $capability($label, $name="")
+    $element("strategy", "capability", $label, $name)
+!endprocedure
+!procedure $valueStream($label, $name="")
+    $element("strategy", "valuestream", $label, $name)
+!endprocedure
+!procedure $courseOfAction($label, $name="")
+    $element("strategy", "courseofaction", $label, $name)
+!endprocedure
+
+' implementation and Migration
+!procedure $workPackage($label, $name="")
+    $element("implementation", "workpackage", $label, $name)
+!endprocedure
+!procedure $implementationEvent($label, $name="")
+    $element("implementation", "event", $label, $name)
+!endprocedure
+!procedure $deliverable($label, $name="")
+    $element("implementation", "deliverable", $label, $name)
+!endprocedure
+!procedure $plateau($label, $name="")
+    $element("implementation", "plateau", $label, $name)
+!endprocedure
+!procedure $gap($label, $name="")
+    $element("implementation", "gap", $label, $name)
+!endprocedure
+
+' business
+!procedure $actor($label, $name="")
+    $element("business", "actor", $label, $name)
+!endprocedure
+!procedure $role($label, $name="")
+    $element("business", "role", $label, $name)
+!endprocedure
+!procedure $businessCollaboration($label, $name="")
+    $element("business", "collaboration", $label, $name)
+!endprocedure
+!procedure $businessInterface($label, $name="")
+    $element("business", "interface", $label, $name)
+!endprocedure
+!procedure $businessProcess($label, $name="")
+    $element("business", "process", $label, $name)
+!endprocedure
+!procedure $businessFunction($label, $name="")
+    $element("business", "function", $label, $name)
+!endprocedure
+!procedure $businessInteraction($label, $name="")
+    $element("business", "interaction", $label, $name)
+!endprocedure
+!procedure $businessService($label, $name="")
+    $element("business", "service", $label, $name)
+!endprocedure
+!procedure $businessEvent($label, $name="")
+    $element("business", "event", $label, $name)
+!endprocedure
+!procedure $businessObject($label, $name="")
+    $element("business", "object", $label, $name)
+!endprocedure
+!procedure $contract($label, $name="")
+    $element("business", "contract", $label, $name)
+!endprocedure
+!procedure $representation($label, $name="")
+    $element("business", "representation", $label, $name)
+!endprocedure
+!procedure $product($label, $name="")
+    $element("business", "product", $label, $name)
+!endprocedure
+
+' application
+!procedure $applicationComponent($label, $name="")
+    $element("application", "component", $label, $name)
+!endprocedure
+!procedure $applicationCollaboration($label, $name="")
+    $element("application", "collaboration", $label, $name)
+!endprocedure
+!procedure $applicationInterface($label, $name="")
+    $element("application", "interface", $label, $name)
+!endprocedure
+!procedure $applicationProcess($label, $name="")
+    $element("application", "process", $label, $name)
+!endprocedure
+!procedure $applicationFunction($label, $name="")
+    $element("application", "function", $label, $name)
+!endprocedure
+!procedure $applicationInteraction($label, $name="")
+    $element("application", "interaction", $label, $name)
+!endprocedure
+!procedure $applicationService($label, $name="")
+    $element("application", "service", $label, $name)
+!endprocedure
+!procedure $applicationEvent($label, $name="")
+    $element("application", "event", $label, $name)
+!endprocedure
+!procedure $dataObject($label, $name="")
+    $element("application", "object", $label, $name)
+!endprocedure
+
+' technology
+!procedure $node($label, $name="")
+    $element("technology", "node", $label, $name)
+!endprocedure
+!procedure $device($label, $name="")
+    $element("technology", "device", $label, $name)
+!endprocedure
+!procedure $systemSoftware($label, $name="")
+    $element("technology", "system-software", $label, $name)
+!endprocedure
+!procedure $technologyCollaboration($label, $name="")
+    $element("technology", "collaboration", $label, $name)
+!endprocedure
+!procedure $technologyInterface($label, $name="")
+    $element("technology", "interface", $label, $name)
+!endprocedure
+!procedure $technologyProcess($label, $name="")
+    $element("technology", "process", $label, $name)
+!endprocedure
+!procedure $technologyFunction($label, $name="")
+    $element("technology", "function", $label, $name)
+!endprocedure
+!procedure $technologyInteraction($label, $name="")
+    $element("technology", "interaction", $label, $name)
+!endprocedure
+!procedure $technologyService($label, $name="")
+    $element("technology", "service", $label, $name)
+!endprocedure
+!procedure $technologyEvent($label, $name="")
+    $element("technology", "event", $label, $name)
+!endprocedure
+!procedure $artifact($label, $name="")
+    $element("technology", "artifact", $label, $name)
+!endprocedure
+!procedure $communicationNetwork($label, $name="")
+    $element("technology", "communication-network", $label, $name)
+!endprocedure
+!procedure $path($label, $name="")
+    $element("technology", "communication-path", $label, $name)
+!endprocedure
+
+' physical
+!procedure $facility($label, $name="")
+    $element("physical", "facility", $label, $name)
+!endprocedure
+!procedure $equipment($label, $name="")
+    $element("physical", "equipment", $label, $name)
+!endprocedure
+!procedure $material($label, $name="")
+    $element("physical", "material", $label, $name)
+!endprocedure
+!procedure $distributionNetwork($label, $name="")
+    $element("technology", "distributionnetwork", $label, $name)
+!endprocedure

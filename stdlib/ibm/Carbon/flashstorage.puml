@@ -1,0 +1,13 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $flashstorage [64x64/16z] xS61400000CXXFdRpkElMXu0001m
+
+!function $flashstorageIMG($scale=1)
+!return "<img data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAAIGNIUk0AAHomAACAhAAA+gAAAIDoAAB1MAAA6mAAADqYAAAXcJy6UTwAAAAEZ0FNQQAAsY58+1GTAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAAOxAAADsQBlSsOGwAAAldJREFUeNrtmr1Lw0AYxoMKiri4KAji4ORSndyLKPQPUMHi4lxBUFoQXRQUBUHRWcGKoP9Awe9FBBH8GLSDi+iioJOgk/iEXkopSWmSu8u9vXvgR6ktl96TN0/e3GlZRkZGRkZGRsTUzWugeoKT7wKP4BPchB2sjqABi+AHHPIYjJoBfSAJlsEXjwEb2Os4mFBssnGXv62CN7Dp8tm5z/G3QdapgDEQU/zsD4FBMA9+Q44VY3MuVoCta5BQdPL2iVoB92DPR8V4KUctA5Ls+k+DP97Oqq5GlvzH4EhEaamuSdAJMqKuLZXVCmbBPriNwoBcaWAEeB9W9uSbwZzIdFW55U2BLfCiowFOy7sk+v6qRctLzYBKLW/NG8Cz5a36YchLiZDvg7a8dxVa3pquAKflzfBueSkYILTlpWCA0JZXdQOEt7zVhGC/5X9VJYxKn9/TzIReH78haxVWdRz5+e0xtv5RNMB2vinCCngGF1V+tx30gMsQx3tgcyapE/AKWnRZDyjVCBgA0+BbNwPsM74GTi1OewLUDLBb4zZ2u+R+F1BpX8BtddcOvSmwDp7KPgt65yK1L2A/FX6wTpGHSO0LOME36hF88QBjktkXEBJ8lEJQSPBRMaBS8GlhAO/gC2RAVPsCTvDN8Or4KFWAE3xn4ECnBZHy4EvptCBSHnwbIoNPZQOc4FuQdUCVDJAWfG4PQ16StS8gNfhUrIBhmcHnpwJkaQdcgbzsA6uUAfkoDkrxX2WFXQKy9wWiVHFfoL6kEjo0OvHvYNcq7A8YGRkZGRkZGempfwjIdaOeVteUAAAAAElFTkSuQmCC{scale="+$scale+"}>"
+!endfunction
+
+IBMEntityColoring(flashstorage)
+!define flashstorage(e_alias, e_label, e_techn) IBMEntity(e_alias, e_label, e_techn, #232F3E, flashstorage, flashstorage)
+!define flashstorage(e_alias, e_label, e_techn, e_descr) IBMEntity(e_alias, e_label, e_techn, e_descr, #232F3E, flashstorage, flashstorage)
+!define flashstorageParticipant(p_alias, p_label, p_techn) IBMParticipant(p_alias, p_label, p_techn, #232F3E, flashstorage, flashstorage)
+!define flashstorageParticipant(p_alias, p_label, p_techn, p_descr) IBMParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, flashstorage, flashstorage)

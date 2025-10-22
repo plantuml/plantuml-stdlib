@@ -1,0 +1,13 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $user [64x64/16z] xS61400000CXXFdRpkElMXu0001m
+
+!function $userIMG($scale=1)
+!return "<img data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAAIGNIUk0AAHomAACAhAAA+gAAAIDoAAB1MAAA6mAAADqYAAAXcJy6UTwAAAAEZ0FNQQAAsY58+1GTAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAAOxAAADsQBlSsOGwAAAulJREFUeNrtWr9rVEEQvjshRYhdipxIIAQMNhYhJBZiIJBglQQRC/0LbBSUhBSWAcH8C9pahJBfTSCCEJEjShQbhSuCxMKXIqCQoCAI+Rbn4DHovbe7s3f7cvPBV8xyb3b3u919O/OmVFIoFJ2Mcov7GwanwWtgP1il9gT8Cr4BN8EPZ02AW+AiOJTz93XwMbhSdAEGwBfgVcfnd8E74JdQAzwXcPLj4EvwkoePi+Bd8B14UKQVYCa/DXax9t/gOu3zt+AhtfeBY3Q+zP7nuSlwpwgCDNA/1svaV8F5cD/j+UHwKXiTtR+Bo9LbIcQW2GLL/g+4AD4Av+d43vxmGfwJToAVau+mVfI8ZgHMaf+QtZnJLzn4qoG/wEl2JnwCP0sNuCIswCKz1xwn38AS+WjWRzQCDLP3vDm45gT8zpGvBoaor+gEmGb2eo4DLw/2yVezvqIQ4DqzNwR9b2T0FYUAF5i9J+h7L6OvKAVIBH0nRRCgkJAU4Buzq4K+qxl9RSnAiKDvkSII8JrZM4K+ZzL6ikKATWbPUmDji0Hy1ayvKAQwaax6yu7yvAanr8Pp8LheEkyZSQdDJr6/nbIvU1RX87gG32dt9ySDIWkBzMBuUNTWwARFdTWHyT9hq9SkyB7Fng94VfqbxupObTMT0l4B3+fICZg9/4z++QpLiBhxf0gOVlNiAS9ZRgST1u719HNEiZadEIMMmRU+IAHG2Jlgg11a9h9DDVI/jLQ49oju05hCoehshDoE/3XY9Vj6OGnF4SgtgO3rzhbir0cpAXzrAFwuSCJ1AxI3QYk6AFuI1Q2UBSafN+g5sfTd04ogqey57H3qAGwRpG7AZwv41gHYIkjdgKsAknUAthCtG3BNikrXAdhCrG7ARYBQdQC2EKkbcBEgVB2ALUTqBlwECFkHYAvvugEXAULWAdjCu25AQoCkjQIk7RDgPLOP2yjAccbYgr0GzwxUABVABVABVAAVQAVQKBSKzsQp9+Cs1wx7EtMAAAAASUVORK5CYII={scale="+$scale+"}>"
+!endfunction
+
+IBMEntityColoring(user)
+!define user(e_alias, e_label, e_techn) IBMEntity(e_alias, e_label, e_techn, #232F3E, user, user)
+!define user(e_alias, e_label, e_techn, e_descr) IBMEntity(e_alias, e_label, e_techn, e_descr, #232F3E, user, user)
+!define userParticipant(p_alias, p_label, p_techn) IBMParticipant(p_alias, p_label, p_techn, #232F3E, user, user)
+!define userParticipant(p_alias, p_label, p_techn, p_descr) IBMParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, user, user)

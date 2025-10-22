@@ -1,0 +1,13 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $bullhorn [64x64/16z] xS61400000CXXFdRpkElMXu0001m
+
+!function $bullhornIMG($scale=1)
+!return "<img data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAAIGNIUk0AAHomAACAhAAA+gAAAIDoAAB1MAAA6mAAADqYAAAXcJy6UTwAAAAEZ0FNQQAAsY58+1GTAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAAOxAAADsQBlSsOGwAAAkRJREFUeNrtmTlLA0EUx6MEVBSPUlEQEY1nPFpFsLTV3o8QK1EsxVLwqAQRO1vRT5Ba4oExSSVeaBdvg5X+B97AsGxw18xuJrvvBz/CbtaJ773Z2ZnZSIRhGIZhGIZhmDBSFcCYftzEWB32HsAJCHsCogGIoQ72w1E4GPQEtFOgA3CMAu8vZTCPVkBVh2AcDsOWIN4CHXBEZ1VNTYCXVc3BK3gOV01IgKzqoFLVPg1VfYWX8AxmYIo+P5VrfE2ArOoYBauzqlkK7oyCvoC35bwFauE0Baneq6XyQgGK7puGpxT4l0ljwDzcgM0l/l5GqWqagr4zfSI0A/f/UdULUlY161dVdSdg5Y+VV4aCSykj8X2QpsLDluNNqqociQtBXws0WI4XeDXICeAEcAI4AZwATkAgcDIP+IY1yvFG2CZCOVoBShJhmwpvw90i34kNjgFyLqiLoT3YDZdctCuWzVNkxS+HRTdfhjtwlpIRg72w1eXvyU2UuUrbEBHcwHWbhdK75dwbbHTZWyZJFeO2xOz4sDnXBLtoGS12f+XmaI/LtvvIWeWck01RXxNQjGvyUDlXT91/nAZN+SqryUW74toJ0vqkkk8gIxJgh6jSCanSqfSWUUvFnRIjXf+tCTNBMbYcwTXL4CjZgkn4XO5BsFyoE6/QvBwtxgN5rJyzvh5P+J2AR9hmmTfo4tHBNQV6GqRseowvY0DSw4onve5SOhKwCPMe/G95atv4BDzQavEAPmlo74nailPbDMMwDMMwDMMw2vkFb1SPmDUIocIAAAAASUVORK5CYII={scale="+$scale+"}>"
+!endfunction
+
+IBMEntityColoring(bullhorn)
+!define bullhorn(e_alias, e_label, e_techn) IBMEntity(e_alias, e_label, e_techn, #232F3E, bullhorn, bullhorn)
+!define bullhorn(e_alias, e_label, e_techn, e_descr) IBMEntity(e_alias, e_label, e_techn, e_descr, #232F3E, bullhorn, bullhorn)
+!define bullhornParticipant(p_alias, p_label, p_techn) IBMParticipant(p_alias, p_label, p_techn, #232F3E, bullhorn, bullhorn)
+!define bullhornParticipant(p_alias, p_label, p_techn, p_descr) IBMParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, bullhorn, bullhorn)

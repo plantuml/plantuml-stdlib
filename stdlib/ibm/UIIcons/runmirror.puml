@@ -1,0 +1,13 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $runmirror [64x64/16z] xS61400000CXXFdRpkElMXu0001m
+
+!function $runmirrorIMG($scale=1)
+!return "<img data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAAIGNIUk0AAHomAACAhAAA+gAAAIDoAAB1MAAA6mAAADqYAAAXcJy6UTwAAAAEZ0FNQQAAsY58+1GTAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAAOxAAADsQBlSsOGwAAA6BJREFUeNrtWkloFEEULSfjcnEMSMTtIAkaXEAE8SbqwUvGmEPwEAiiRpCA2yXOaTATEXRyFYJCPEjE0xyijleV3LwFXFCJeNBRFCFmQILGjO/Tf6AteqleJt2dqQfv0DXV9eu//rXMrxJCQ0NDQ0NDo1mxQrHeFrAIHgE3xdynL+BT8Ar4OQwByPlpcH3CPu4PcK+bCCmFhooJdF5wn4tulVQEOJzgIe7a97RCI5t9zhtRoebQd18RsKyhBdACaAG0AFqAZkbaxzs1HQFaAC1A0+UDkoSaFx/1ENAC6H1AYKwED4E94B5hpNA28m9fhZGSeglOgs/BP8tFgDYwD54E19nUWQtuF0Zm5jz4E7wHXgO/J1WAVWAOHGIHvYCEugCeAkfBm+DvJAlAX70EHgxol4QbAY+CvVFGgxcBdoJPwG0Wv30CH4Fl8J0wcvMEOkPYAWbBbnCr9B4J+QLsAt/EWYA2G+dpkrsK3gUXLN57zyRhLoJnwIJpkhTcJrV9IIpISCmO+ZKF89TpTvCOjfMyFrhuJ78rJBFKbCt2AuQsxvwYh/ScD5tz/O6YxXDIxU2ADTzby1+elrTFAHYXuQ05EobYZmwEyEtLHU1ufQGdN4vQZ5ow66tDPi4C0A6vXyorOIT9Q7Ddx3AoSGX9bDtyAWj31mp6pi3tuEN9GteveFVY46EP4+L/E9xWsYTnkU4C9EjPkwqzPTk+zEIcU+zDArftZDsSAXZJz2UP7bbzxkh1WJRdbEeyEZJPVmd8tN/N290bvO+ft6k342I7kgiQO1HxaUNlWFTiKEDTJ0QqvG01f5W3PmzMKwyBsKKtoQJ0+BCAJsLL4AeXeh1xFOC1MK7F1ZG12LragRy+BD5WrJ+1sB35HGC1NqcVwp0mvN0enE/b7Dkij4Bn4KxpN0jJzgHwdsBwlzHAbdcxy7YjjwDK3k5IZbTNzdjUP+7D+Qy3acaEWMLMsdsySNnbqumZUlwPQlo+U9yW+eptlW3GYhkkfBNG9nbEVEb5u1sBcwIpbqNLKh9lm07wcj+hEjQCBK/fU1LZII/5jA/nM/zuoFQ+xbbChOtc0qLQyF+e0U9If4/pwOM0h+20QjRQtJ0VRu5vn/TbR/7PUFXoz7Ci83RZutetTS/H441Ii9ed95IWdxsCoV+XNyOsgxFz2Ed6MNLisf4v8D4vU/vB1T7tUlheB88phn3DEOSGiMrhqIzYHY6GcUUm0cfjGhoazY1/pMS/inYmqncAAAAASUVORK5CYII={scale="+$scale+"}>"
+!endfunction
+
+IBMEntityColoring(runmirror)
+!define runmirror(e_alias, e_label, e_techn) IBMEntity(e_alias, e_label, e_techn, #232F3E, runmirror, runmirror)
+!define runmirror(e_alias, e_label, e_techn, e_descr) IBMEntity(e_alias, e_label, e_techn, e_descr, #232F3E, runmirror, runmirror)
+!define runmirrorParticipant(p_alias, p_label, p_techn) IBMParticipant(p_alias, p_label, p_techn, #232F3E, runmirror, runmirror)
+!define runmirrorParticipant(p_alias, p_label, p_techn, p_descr) IBMParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, runmirror, runmirror)

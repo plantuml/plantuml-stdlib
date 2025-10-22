@@ -1,0 +1,13 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $fish [64x64/16z] xS61400000CXXFdRpkElMXu0001m
+
+!function $fishIMG($scale=1)
+!return "<img data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAAIGNIUk0AAHomAACAhAAA+gAAAIDoAAB1MAAA6mAAADqYAAAXcJy6UTwAAAAEZ0FNQQAAsY58+1GTAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAAOxAAADsQBlSsOGwAABCRJREFUeNrtmktIVUEYx0cTjR5aVlZUWC2sKKN2RfSEXhBlKymUSjJrYUZv2rURK0LKRalhiVFYBBFUZJvERa1CNIkyyqIswd4GZab9hzsXDh9z7nncM+fl/eAH9ztn7syd/53zzcw3h7GEJSxhw9mSAvibM8EqMA/MBzlgAkgDU632OSUgnV4EtoF14rNj5mcBRoNiUARyVTXiRwEyQCkoAxNVN+Y3AQrBGTA5RpkB8BQ8AW2gE7wD3wTUhoIgwExwBazUuf8X3AU3wT2djgZ2BOSBy2Cc5N5XcB5cBJ/C9gjw6agcHJfc+w1Og7PgRxhjAG/3EtghudcE9oHXBnVsBDXi8x5wX1JmFPH/0ALJHnX+lqTz/eAg2GCi89yqwXRBtU6ZLOL/9FqAJPHPb5bc47+l2yhqW7RJfhOgXGfYR0fGVZBvsq4S8F5QYnIE9HoZA3i0P0aufRBzfgoRgVujQX38mZ9hUGYK8V96NQL4PF9HNiK9YlNTIBY3dkdCLFtC/BdejQC+yBlPojGPA68ETHTazkiIZWuI/8yLEVAoWeGdAI81fqOCkZANZmv8QdDitgAZYm1P5/lKSVmnRVhN/DZZEFQtQCnZ2PAV3t4YU52TImwh/kOmM/eq3M+XkWt8afvG4HtOiMAzQ5vItWtuC1BM9vNfQIXJ78YrQgkJ8O2g1W0Bioh/AfRZ+L5dEdLBfnKtTq+wKgF43i6XrPOrbNRjR4RDZMrlga/WbQG2E/8B6LFZlxUR+LR3lFw7B365LcBa4l+Psz4zIiSJx2ykpkyP0chTsRLkgW+hxv8n0ljMARFirRinsUjaXGtHwHe3BVhORlar0Y9wSIRBUrYZNHiREVpA/BaH69cTQWs8l7jTTGUqYsAc4ncoaEMWE6I2JKbgLq8EyCF+p6JAy88GZJniU+C22UpUBUGtvVXQxlJwR9JWvdhpMi8FGEt8J9PafKo7IJbUqeQeF2Q3s5hTdEOAPofqnSXm+fWSe/Wi8wNWK1UhQBrx++OsbwyL5BIPk0VO1CrEsLeVTfbz8XiW2NTwQ5JMyX1+PrjLSsALggDpYh8ffRkiVadcs5jnu+JtMMXDf5cfW2WLdcNcsAIsNpiae8TytsGpHyJ7R4j/AzXM3Ps2blmv2NVVObis1h0BlT7qfLtIZtTG2tI6LUCax53mm6cmsYVuVd2Y7BHYCm4ojg8fWeRw5DOLHFfx/cJz8IhFcoeumd57gvlkt8XEIqOAGZ/UDJlswxeWHEcGJhSWbHHLGToRjLbDoRfBTD4g1CKYTYiEVgQrGaFQimA1JRY6Eewsdozy84GyETa/1yFWcHmaUZRM/KidDNMjYOZxCHUMMCPCsBIg8CI4dTASWBGcPBmSidAd1lkg1uzAX0ZcxiLHVqVM8npqwhKWsIT5xf4Ds+7tKLqyYswAAAAASUVORK5CYII={scale="+$scale+"}>"
+!endfunction
+
+IBMEntityColoring(fish)
+!define fish(e_alias, e_label, e_techn) IBMEntity(e_alias, e_label, e_techn, #232F3E, fish, fish)
+!define fish(e_alias, e_label, e_techn, e_descr) IBMEntity(e_alias, e_label, e_techn, e_descr, #232F3E, fish, fish)
+!define fishParticipant(p_alias, p_label, p_techn) IBMParticipant(p_alias, p_label, p_techn, #232F3E, fish, fish)
+!define fishParticipant(p_alias, p_label, p_techn, p_descr) IBMParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, fish, fish)

@@ -1,0 +1,13 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $tornadowarning [64x64/16z] xS61400000CXXFdRpkElMXu0001m
+
+!function $tornadowarningIMG($scale=1)
+!return "<img data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAAIGNIUk0AAHomAACAhAAA+gAAAIDoAAB1MAAA6mAAADqYAAAXcJy6UTwAAAAEZ0FNQQAAsY58+1GTAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAAOxAAADsQBlSsOGwAAAetJREFUeNrtWLFKA0EUvEQh2AXEShEbC0mjNpbBIqIg2KQJESwDCdgmaqEJgkljZWFQ/AHBStCvEL9BtLdNIecsPCFEc7nbu5y7lxkYyN3te28zvNudW8chCGKSkbJwzovgs/zeBt/CJJuyUIAbMA/OgQvgfZhkacv+/AZY7Lsuyr2JEaAz8Nqm5J42pv+45xq6Lu1K6w8iL88ek9wBaq1qezxv665ntghwAOY8nudkTCIFmAGbPsY1ZWzifEADvOi7PusT5FSuf3A04lWxrgNmwXqA8XWJSYwAJ2A2wPisxCRCgCWwqhFXlVhtHxC3Lxi2Dp2DGY18GYndt7kD1sBSiPiS5LBWgE7IuaX9WmQTBdgCCxHkKUguq3yAms8LuBpRvldw3WsdM60DyhH+eUdylW05EFGr94OPff8J3AQvwRVwecR41QHX4JfpHVDzuX9XwA9hxaefqJl0HpAa4uCOx1hT5b4DP03tgEYAD98F54XdAN8UDV0nOG6og83DAON3wHeNOqrG1WCsCR3Q0vmO1zxXaPnpgLi9wd5/1jKhA27BXgx1elKLIEa8724MNYxBetI7gAJwFSAIgj7AG24MNbgLUAAKQBAEYaYPiNonGOULuA1SAIIgCPqAscI1YA7cBSgABSAIgviNb4qyN+L49f/1AAAAAElFTkSuQmCC{scale="+$scale+"}>"
+!endfunction
+
+IBMEntityColoring(tornadowarning)
+!define tornadowarning(e_alias, e_label, e_techn) IBMEntity(e_alias, e_label, e_techn, #232F3E, tornadowarning, tornadowarning)
+!define tornadowarning(e_alias, e_label, e_techn, e_descr) IBMEntity(e_alias, e_label, e_techn, e_descr, #232F3E, tornadowarning, tornadowarning)
+!define tornadowarningParticipant(p_alias, p_label, p_techn) IBMParticipant(p_alias, p_label, p_techn, #232F3E, tornadowarning, tornadowarning)
+!define tornadowarningParticipant(p_alias, p_label, p_techn, p_descr) IBMParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, tornadowarning, tornadowarning)

@@ -1,0 +1,135 @@
+' This file defines the first non-trivial type which allows defining an array of
+' other objects.
+' Obviously, this requires the basic classes for declaring them.
+!include <classy/plumbing/types/basic-classes>
+
+' This is the class definition for the array class.
+$class(array)
+  $classVar(index, int, $default=0)
+  $classVar(size, int, $default=0)
+
+  !function array($this, $1='', $2='', $3='', $4='', $5='', $6='', $7='')
+    !if '' != $1
+      array__push($this, $1)
+    !endif
+
+    !if '' != $2
+      array__push($this, $2)
+    !endif
+
+    !if '' != $3
+      array__push($this, $3)
+    !endif
+
+    !if '' != $4
+      array__push($this, $4)
+    !endif
+
+    !if '' != $5
+      array__push($this, $5)
+    !endif
+
+    !if '' != $6
+      array__push($this, $6)
+    !endif
+
+    !if '' != $7
+      array__push($this, $7)
+    !endif
+
+    !return $this
+  !endfunction
+
+  $classMethod(contains)
+    !function array__contains($this, $value)
+      !$result = %false()
+      !$element = array__each($this)
+
+      !while %not($result) && %false() != $element
+        !if $value == $element
+          !$result = %true()
+          array__reset($this)
+        !endif
+
+        !if %not($result)
+          !$element = array__each($this)
+        !endif
+      !endwhile
+      
+      !return $result
+    !endfunction
+  $endclassMethod(contains)
+
+  $classMethod(each)
+    !function array__each($this)
+      !$i = $getInstanceVar($this, 'index')
+      !$size = $getInstanceVar($this, 'size')
+      !$iNext = %intval($i) + 1
+
+      !if %intval($size) == %intval($i)
+        array__reset($this)
+        !return %false()
+      !endif
+
+      !$val = array__get($this, $i)
+      $setInstanceVar($this, 'index', $iNext)
+
+      !return $val
+    !endfunction
+  $endclassMethod(each)
+
+  $classMethod(get)
+    !function array__nameElement($this, $i)
+      !return $nameClassInstVar($this, 'element' + $i)
+    !endfunction
+
+    !function array__get($this, $i)
+      !$size = $getInstanceVar($this, 'size')
+
+      !if %not(%intval($size) > %intval($i)) || 0 > %intval($i)
+        $fail('Attempting to access index out of bounds!')
+      !endif
+
+      !return %get_variable_value(array__nameElement($this, $i))
+    !endfunction
+  $endclassMethod(index)
+
+  $classMethod(pop)
+    !function array__pop($this)
+      !$lastIndex = $getInstanceVar($this, 'size')
+      !$lastIndex = %intval($lastIndex) - 1
+      !$name = array__nameElement($this, $lastIndex)
+      !$element = %get_variable_value($name)
+      %set_variable_value($name, '')
+      $setInstanceVar($this, 'size', $lastIndex)
+
+      !return $element
+    !endfunction
+  $endclassMethod(pop)
+
+  $classMethod(push)
+    !function array__push($this, $val)
+      !$elementIndex = $getInstanceVar($this, 'size')
+
+      %set_variable_value(array__nameElement($this, $elementIndex), $val)
+
+      !$elementIndex = %intval($elementIndex) + 1
+      $setInstanceVar($this, 'size', $elementIndex)
+      !return $this
+    !endfunction
+  $endclassMethod(push)
+
+  $classMethod(reset)
+    !function array__reset($this)
+      $setInstanceVar($this, 'index', 0)
+      !return $this
+    !endfunction
+  $endclassMethod(reset)
+
+  $classMethod(size)
+    !function array__size($this)
+      !return %intval($getInstanceVar($this, 'size'))
+    !endfunction
+  $endclassMethod(size)
+$endclass(array)
+

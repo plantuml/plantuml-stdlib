@@ -1,0 +1,13 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $aitransparency [64x64/16z] xS61400000CXXFdRpkElMXu0001m
+
+!function $aitransparencyIMG($scale=1)
+!return "<img data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAAIGNIUk0AAHomAACAhAAA+gAAAIDoAAB1MAAA6mAAADqYAAAXcJy6UTwAAAAEZ0FNQQAAsY58+1GTAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAAOxAAADsQBlSsOGwAAAwlJREFUeNrtm01IVFEYhu+MRdmiEHTRiLtolS5KlCAIN4KCJrlQBtpUFEgtFDdq4cKVLUyojUXBFAguCsrF0MKiVRC4GQL/cDGKC12EgQpuqvfAq1wuOZ5zz8x07rnng4f5ud/5e+f8fOfeM54Xc0uETHcL3DasLR/BU9VEFSELGweXwaYhjW8AXeAk+KyS8IRGod9BmyECZMF1MMLPj8ohgGn2FcyrimCTAP5GS4tgmwDKItgogJIItgogLYLNAkiJYLsAx4oQBwEKihAXAY4UIVEgtm8JfP4SCD2F5ST9w9hr8FYhEmwK1OcouwpOgQGxd0jyy7SvUTKWkyxMJ7ZPK/hPK9TnG/gJWoMKZg3qrqWuz2H+ybjfD4i9AAerQJvrAU6AeA8BXbsEesBFfl4GM+CHRp5NmrFEi4oA2ZBzgQgonoE74I+vwd1gGLwCD8G+jT1ADJ/3DCiegDGwx2tnwGMwCGpBB/itmH9Z7jnqzAH3QTu4C4Z8jff4fojX2ulr3SQoYulPIFPAJ0OfAdsEqAMXwKyE7yx962wSoJqvixK+i4E0VgiwxdeUhG8qkMaKVWCDa32vxJ69l74bJsYBSd/6r7rkTHCGL7RvT9NnwsY44CVFy3CSG2MwJCzBOEDwgb6qZnwccBbkKeKoLwz2+H6U1/L0taoHXAHvwHkwCV6AJd/1Je4P7oE+cIPh8bypq4DKLahGMAd2QD3oBwv/8FvgtXr6zjFtpJfBKv7y6+AaZ/fjbJm+60xbFWUBxLiuATfBtkK6baapYR6RnAPOcUw/Byshylph2gcU4ZdJcYCMdYJKMKVRqSnm0RnFHtAM1sCqRnmrzKNZIoI0Lg5IcU3XtbzkHsK4SVB03d0ilLnLvIwaAjJdrVjd0ahnEO65QNwFMPmARFnjANMej7seEIX7Adb1gOCYUz3zU8wzQg3sAWUTQJyxOa1YQWGlOieUY52MtahPmu6MkJsEnQBOACeAE8AJ4ARwAujsBnX36//TDvcaFRo9JxXhH1785/mNV9r/PETD/gJmn5gAjnO/YwAAAABJRU5ErkJggg=={scale="+$scale+"}>"
+!endfunction
+
+IBMEntityColoring(aitransparency)
+!define aitransparency(e_alias, e_label, e_techn) IBMEntity(e_alias, e_label, e_techn, #232F3E, aitransparency, aitransparency)
+!define aitransparency(e_alias, e_label, e_techn, e_descr) IBMEntity(e_alias, e_label, e_techn, e_descr, #232F3E, aitransparency, aitransparency)
+!define aitransparencyParticipant(p_alias, p_label, p_techn) IBMParticipant(p_alias, p_label, p_techn, #232F3E, aitransparency, aitransparency)
+!define aitransparencyParticipant(p_alias, p_label, p_techn, p_descr) IBMParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, aitransparency, aitransparency)

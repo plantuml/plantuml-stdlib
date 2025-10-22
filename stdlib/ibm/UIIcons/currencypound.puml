@@ -1,0 +1,13 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $currencypound [64x64/16z] xS61400000CXXFdRpkElMXu0001m
+
+!function $currencypoundIMG($scale=1)
+!return "<img data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAAIGNIUk0AAHomAACAhAAA+gAAAIDoAAB1MAAA6mAAADqYAAAXcJy6UTwAAAAEZ0FNQQAAsY58+1GTAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAAOxAAADsQBlSsOGwAAAnVJREFUeNrtmk1IG0EUxzdRCG00QoX0IILixUItVISC8SjVUg+CHizSQ2+FHvpx0osfp9KTXkMPrR+nggcl9KAV8dCiYooggoW2+HVQ2hpJ0Ytp4n/IFLaPQBN3V3fz3h9+JG9CJjP/zMzuvB3DEIlEIpFIxFW+S/jNcnAXtIEIuAqqQQk4BtvgC/gIYvp9URhQAV6AZyBUwPeWwCh4BzJeNeA+GAfXLNSxAp6AVTsbVnIBne8Hr/VQt6Iq8AgkwbJXRkAfeJmj/AC8AbPgG9jRBoVBDWgEvfo1l9SUeO52A9SwnwF+U9kpGNIdOMmjjhtgAPTk+OyVNtiVU0AteAsgaCr7BTrApDYiH/0EUyAO7oErps9a9Lrw1UpD/Q4ZoFb7SvLPd4HFc9YX05fMfVNZFHxw4wgI6UtWwFQ2CCYs1qtGwzx4AJ6CYZC22thSBwxoJdd5teCN2FT3GqgFCbsa68QUaCfx2zwXvHyVsLOxThhwh8Szbt4LOGFAJYk3uBlAb3ePuBlAryxpbgYck7iMmwG//7MmFL0B30lcz82ATRI3cDMgnuPOkJUBdIMSMQpLgXnegC3j30RmQCc32BigNEbix9wMUBuglCm+BZrdaIAdKbGMB9vs+AjwjMQA7gY4/VzgoZF9IvRX741supzNCFgncR23KbBH4jA3A5IkDnIzgGaHUtwMoPnBQ24G0GTID24G0GcEn7kZ0EniT5wMuAmaTPEfMMfJgAFyp6k6v8vFAHUQopuURblshm4b2YSIj8z9aTcaYOf5gOtGNvenDkOYk6Dq0Zg60JBxowF27gYzXuyDJETEAJFIJBKJRCKRiKXOAI3NXmz5Y0O9AAAAAElFTkSuQmCC{scale="+$scale+"}>"
+!endfunction
+
+IBMEntityColoring(currencypound)
+!define currencypound(e_alias, e_label, e_techn) IBMEntity(e_alias, e_label, e_techn, #232F3E, currencypound, currencypound)
+!define currencypound(e_alias, e_label, e_techn, e_descr) IBMEntity(e_alias, e_label, e_techn, e_descr, #232F3E, currencypound, currencypound)
+!define currencypoundParticipant(p_alias, p_label, p_techn) IBMParticipant(p_alias, p_label, p_techn, #232F3E, currencypound, currencypound)
+!define currencypoundParticipant(p_alias, p_label, p_techn, p_descr) IBMParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, currencypound, currencypound)

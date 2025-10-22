@@ -1,0 +1,13 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $iotconnect [64x64/16z] xS61400000CXXFdRpkElMXu0001m
+
+!function $iotconnectIMG($scale=1)
+!return "<img data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAAIGNIUk0AAHomAACAhAAA+gAAAIDoAAB1MAAA6mAAADqYAAAXcJy6UTwAAAAEZ0FNQQAAsY58+1GTAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAAOxAAADsQBlSsOGwAAAkBJREFUeNrtmr1LAzEYxq8furlUBxV1cRG7OLtYxQ9cnAQRnNRFENTFj79AFBREEBx0EktnEQdB28FdN4dOtVSXdnC1cD7BDNdw9to0lzbX94EfNJe7tu9zeXNv2lgWiURqZ4V8fG9b02eNgnUwBwb5sRx4AFfgvdrFUYNvXgc4BRsgIvTFOdvgHOyCcpAM6AT3YNrjPBbfDhgBC24mhA014KSG4J2aB4dBGQFxPuyd+gB74Jm3J8GRY05g2gKXIGv6CFgTcj4PxkASfHGS/FhemDNWg5ACs0KbTXAll/NKvM+pmSAYMCS0M1XOzXhcKz0HDIBjkAB9knWBbE3yo9LNsGTwr2C5juBVKiu0J6qcK/blVBjAZtfuJqbAk9BmIzHmcl6M9zn1qMKARJPngAuhoHGOyF4Oe/3G+5ypc61iDujXuJ5w07jLMfa8v/W47swlfYx7CiyBG4kbxxZGB6ZXgm7Blz3iKAdlMfRf8CvgBWyCKTDMK75ALYerBZ/i7X2ddUCrBd+QohIVW62yfTBEafCmPQWUB2+aAcqDN82AlB9vGpVYlcnmdr0Vo63DVVN/EyQDyAAf5wDT1NA/UJQCZAAZQAaQAWQA1QFaanBbU0x1/QNFKUAGtLlCCnIs1OQYaC1AKUAGkAFkgMpK0EsFq3KPgN1C8RR0jIB0C9/QtA4D2I7MYgsGX+TfrS5FJD7o2/rbjsJ2iPWAriYH/gnuwKJVuTPUt0pQV8WopeKkxyAZQAaQAWQAGUAikUhtql/LpWMmAwzvywAAAABJRU5ErkJggg=={scale="+$scale+"}>"
+!endfunction
+
+IBMEntityColoring(iotconnect)
+!define iotconnect(e_alias, e_label, e_techn) IBMEntity(e_alias, e_label, e_techn, #232F3E, iotconnect, iotconnect)
+!define iotconnect(e_alias, e_label, e_techn, e_descr) IBMEntity(e_alias, e_label, e_techn, e_descr, #232F3E, iotconnect, iotconnect)
+!define iotconnectParticipant(p_alias, p_label, p_techn) IBMParticipant(p_alias, p_label, p_techn, #232F3E, iotconnect, iotconnect)
+!define iotconnectParticipant(p_alias, p_label, p_techn, p_descr) IBMParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, iotconnect, iotconnect)

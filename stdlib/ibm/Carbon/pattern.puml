@@ -1,0 +1,13 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $pattern [64x64/16z] xS61400000CXXFdRpkElMXu0001m
+
+!function $patternIMG($scale=1)
+!return "<img data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAAIGNIUk0AAHomAACAhAAA+gAAAIDoAAB1MAAA6mAAADqYAAAXcJy6UTwAAAAEZ0FNQQAAsY58+1GTAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAAOxAAADsQBlSsOGwAAAwtJREFUeNrtWz1rFFEUnd3sIhgQJDYbDEajhA3BgGJIY3rriAhGsXGr/ByLoJUaG7FPYSHEZlkt/MJFEjWiuFgERTBNFHIeOYnPSTLszHt39oW5Fw6zeTBn7py5c/fOyWwUFTxKsb8PAzeAC8CpHuf2EXgO3AfWpQ7SZ32eAJ4C14AKcAw4B/wFfmXkHyLHH4vjeJe85gLcBK4CS8B3SbXNlV8G3gB1rlWBFWDBgXeBHFVrLQ1vnTktM0fvUebWlP0wcAVoc22DBx5w4B8gx4a1loa3zZyGmaOYAJPAO+vkQ4o2c5uUFKAG9O9RqmeAjgN/hxyuvN+Yo/eoWJ9HqPRXq1mdAO448Jt9rwvwev8WmGVXbgFHuPYSmAOaDvzmpJ/wG+WoA+8stw8lK+ATr5bvaDqKKBrlok+CKkDRBag47DsF3LKeGczsftfD/R7nNY30JHtUMBVgknwGTFtr01ybcjz5OK9ZGw2tAhrAZ2DMGnOrnNoaDlWQxBtUD6glzPguE1sSrzbBkATwNeOn4Q2qB0jN+PvxjkjdBn0ZZ21fM343vEaMQ8BPiWeBbU9wkdtLgd6qi/QDXjtw7OkxFqkJngduA6+iLf9zVw8w09YD3nOSk11W3paHCjUe4yPgMUVYtytgNDbFSU12Pnizxi6P0a6ADzlPdo2oNz6B7THO2xWQ92RX62E/2PEYdRK0Puc92XVCEKDwrrBdAe9jTcn8P+6iY6NqkmPJM69IBagrrI/DKkDxQl3hwGZ8dYWjHrnCZiobDGDG34/3t9TkWLaetceif+8HhRR15taSFMDYRKs0C7oRYS1hxl9zyCfOu21grDJH72G/JzhBp8R03LfAj4T9hvjssBKb8U/TV/iSMR+b15T9OLv/5WjLyvIVOx6o1IuSZ7n1bmL6FiD+LWAONE94OYBOgiqACqACqAAqgAqgAqgAKoAKoAKoACpAcQRI6zHmHYPMUUyAA+MxSgmQ1mPM8+T/8xhLggdL4zHmEebFy3Ge/ExEj7EkfNDQfoz9ArgXCf4Y+8DFJqEP8eCBM+bMAAAAAElFTkSuQmCC{scale="+$scale+"}>"
+!endfunction
+
+IBMEntityColoring(pattern)
+!define pattern(e_alias, e_label, e_techn) IBMEntity(e_alias, e_label, e_techn, #232F3E, pattern, pattern)
+!define pattern(e_alias, e_label, e_techn, e_descr) IBMEntity(e_alias, e_label, e_techn, e_descr, #232F3E, pattern, pattern)
+!define patternParticipant(p_alias, p_label, p_techn) IBMParticipant(p_alias, p_label, p_techn, #232F3E, pattern, pattern)
+!define patternParticipant(p_alias, p_label, p_techn, p_descr) IBMParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, pattern, pattern)

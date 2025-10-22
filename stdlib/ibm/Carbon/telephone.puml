@@ -1,0 +1,13 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $telephone [64x64/16z] xS61400000CXXFdRpkElMXu0001m
+
+!function $telephoneIMG($scale=1)
+!return "<img data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAAIGNIUk0AAHomAACAhAAA+gAAAIDoAAB1MAAA6mAAADqYAAAXcJy6UTwAAAAEZ0FNQQAAsY58+1GTAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAAOxAAADsQBlSsOGwAAAeRJREFUeNrtm79PwkAUxy/oYNgc7aRuGC2D0f/B3TCQiIn/gv8MkwMkDsSd0R3jYDW4qRPGyY04+j15kAapbSm2d73vS75h4H5wnz7eu/b6lKI5YWeiX1ZxBEBT5CyASHMewHrCdlWoBR1BuzFtX6A7qAONywCgDt1AO9AT9BnT/hA6hy6hU+jBZgBVWfwXdAA9Jxy3BvWkb91kT4iLAdrtt6FGisUraduQvi2bg+AxNEy5+DCEoYxhLYAtaJRh/JGMwTRIAIZnAb1PvljwvQ8NMs6hY8Btwev05TP8O66gbiW0V/ZLfKEDURhIc34foK/0yVzH/gomXzRu0dZnDCAAAkh1N7hqi8o6/2E/0d40D8gr68yivWkekFd26DMGEAABEAABEAABEAABEAABEAABEAABEAABzFmRT4TyODGKPdkqCsA1tJHDPIHMZRyArvrjSS1jAAEQgBNZYBlb5kTJyJMheoAp2YNBkAAIgAAIgACi7R3yMozvyRjWAtD30ntq8v5/WqtJ34HNAHTZy5uaFD/UUi6+J307Nu8EdaWHLnvRlR+PKlnJzCa0D71K37HNALTpmh9d9pK0aOoeaqsSFU1NPaEtYhos692gCe/152Wzp8VrIU/wHLrwHxKjAtf/AeobFfZNFMHuCvEAAAAASUVORK5CYII={scale="+$scale+"}>"
+!endfunction
+
+IBMEntityColoring(telephone)
+!define telephone(e_alias, e_label, e_techn) IBMEntity(e_alias, e_label, e_techn, #232F3E, telephone, telephone)
+!define telephone(e_alias, e_label, e_techn, e_descr) IBMEntity(e_alias, e_label, e_techn, e_descr, #232F3E, telephone, telephone)
+!define telephoneParticipant(p_alias, p_label, p_techn) IBMParticipant(p_alias, p_label, p_techn, #232F3E, telephone, telephone)
+!define telephoneParticipant(p_alias, p_label, p_techn, p_descr) IBMParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, telephone, telephone)

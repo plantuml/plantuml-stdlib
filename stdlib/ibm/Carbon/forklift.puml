@@ -1,0 +1,13 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $forklift [64x64/16z] xS61400000CXXFdRpkElMXu0001m
+
+!function $forkliftIMG($scale=1)
+!return "<img data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAAIGNIUk0AAHomAACAhAAA+gAAAIDoAAB1MAAA6mAAADqYAAAXcJy6UTwAAAAEZ0FNQQAAsY58+1GTAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAAOxAAADsQBlSsOGwAAA+pJREFUeNrtm1tIFVEUhndqBtENwywoIrtT2UMlIVHa3bCyoKKTFeVbF4jqoQsVPdRTSReCgi7S5RC9dB4EH7IEKwgjqLAy6PJUkIVgd5WsfzXr0DTocc+cffaMM7PgA53ZM2v22muvvdaeOUKEEkoooYQSSiihBFR6uay/HJQpvudFcEW2cZrLBjgARim8Xx6I2Lkgw8XOjwUjwVpwXdE9q+1e4KYHzAe/wW03XdBtAzwBH4NogHQwF9S4vQqoigHrweYuzhV1cmw6GOQFA6jygAhHYDvu3wru+sUDSOpBsQ0D3Aff/eIBdqQvKPCC+7tlgNkgM8gGIPdvBo+CaoAFoBZ0mI6NAwOCYIAcMKUT948qTIc9bYB5XIHeshw/zSvIEr8bgOb/W/DacvwyeAMqQG+/G6Cmk6zwHsgF48E2LydC8XKz2IEu6twIkwGGgqNgI4/+crAaHARXdRVJGZpHv4NHew/Yx+XwXnACtPHSWMq1RYXfDEDL3xdQJ4xdoEo2wgdTm3cgH7zvibVAd3oKwUDQANYkSISe99RiKJHM4M7vACeFhyRN4/z/Ac4Jj4lOA1Dw++k1A+iYAv3ATGFsgcvKFrDKga74pkytRNu/7w90eMAcm+UvrQKnQJYDXU8ZGUNFdHkAuf8n8FiibR9wCbxkQ7Sm6JmqdcYAMsAdS/nblRzmjHFTCjuvNQgOA5Mk3Z9GfDc4Joz9RV+sAvHyt8aG6x/y0ypALz9+ccRNJFns+gW6XF/nFGiRaDecl656oVl0rAIy7wuqhUvi9vcBgUmFQwN4VVTHACp7l4HRwtjcpC3wFxr6QTkE7SSN4f9fgZhMUFVpAFrzF4PPwvjwgaQ/Z4I3hLHZ2aS440PABVBi0btIGFttVcL4EKsplQbIBpPBV7BTGC852vhcJhcdFZwOF3JdoEJyuMQezKnzNdDO58j71rFeegs9S/y/9aY0BtAIxN/4Vpo6L/jvSj5HOcFZhaN/nhOouN5207l2k94sbpuSIEhzfinYBRoTtGvkNivBNEWxpsSG3hK+RrkBVnCmF5VoG+V5quL1V6lNvS18jfIYQFG3weL2XUkbt93KNYLTnRySiQ70lvOUiOur15UKy+7k6NYXtRpAxvp5lrWV1tuFHO27G41MXi3OgP1JduAIe1LSetOcWo7lpjD2+2W+z41w25iCEYyp0mv2gCIHD/KQk43j4EGCiDyB21TxNcmKMr3pCh6GPnYo40yPko1n4t/+HyUkGzgTbOZI/E3RPKbEij603p6MXlW/F8jmXR9rSjpVGN/+dJuSKk6FpfWq/sFEPucGuXxv6aLErWIolFBCCSXQ8gdJV9kicLxp5AAAAABJRU5ErkJggg=={scale="+$scale+"}>"
+!endfunction
+
+IBMEntityColoring(forklift)
+!define forklift(e_alias, e_label, e_techn) IBMEntity(e_alias, e_label, e_techn, #232F3E, forklift, forklift)
+!define forklift(e_alias, e_label, e_techn, e_descr) IBMEntity(e_alias, e_label, e_techn, e_descr, #232F3E, forklift, forklift)
+!define forkliftParticipant(p_alias, p_label, p_techn) IBMParticipant(p_alias, p_label, p_techn, #232F3E, forklift, forklift)
+!define forkliftParticipant(p_alias, p_label, p_techn, p_descr) IBMParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, forklift, forklift)

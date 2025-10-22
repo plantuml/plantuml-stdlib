@@ -1,0 +1,13 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $eventsalt [64x64/16z] xS61400000CXXFdRpkElMXu0001m
+
+!function $eventsaltIMG($scale=1)
+!return "<img data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAAIGNIUk0AAHomAACAhAAA+gAAAIDoAAB1MAAA6mAAADqYAAAXcJy6UTwAAAAEZ0FNQQAAsY58+1GTAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAAOxAAADsQBlSsOGwAAAqBJREFUeNrtmT1LHUEUhsd7jZVJYSWJWthqEREsbMRAAkFSCwra+AUhhU0Ef4KNCKJiAiFNYmNpLn4kYm1jYfwBXq8EEmySKhL1HTjCMuzdPbs7Zy9hzwtPMbsz8+4eZnc+jjEqlarIakrRpgdMgRegi66dgz3wHnwXfmav/kkC8AAsgzlQrlPnH9gA8+Da84uL+JeZ5i2gAkZBKaKevTcABsEWPZAPiflzA7BC5lx1gzbwxVMAxPybmd/cnHOtChbAIZWHwRLoCNSxbdY9/BNE/TkjYJGG1L0uwFNwDP4Qp+AjGAePAsPxL9jNGABR/xLjAZ475bfgKqTeFd2LaptGov6cAHQ55aOIukcxbdNI1L9kCi5OAM6d8lBE3aGYtmkk6s8JwL5TXqIpxlUb3Qtqz0MARP05s4D9684GgmX/smPgB/gFWsErsA06nVXZDPiZMQCi/tyl8Cp4nfDBbZs3nj5VMX/uSvCA5uLuBPUnwI2nAKTxn/S5FLYdfabvrD/i32HrrdHL+9wMifn72A7f0tJ0l7ajZzlvh/P2VxXmRKiFphE75fSChwn7/k2blE9gkzYmSc8AxP3rBeAx2KFdlw+dgBFwyayfm3+5TuS/gT6PI60dPAMfGFNTrv5h08mMZ/N79VHfccrVP+xEaNwpV6jhRULDDvr2Xjp9r8a0C/OfBrWE/k/Auzj/Up15NqjZFC8fXMNH9W2Y/rUU/jWOf1gA3L9tNcOwq8b0bRrtrwciGgCVSvcCGbejVpodDhxIaHbYaHZYs8PGaHZYs8NhbdNIs8OS/roXYNTR7LBT1uyw0ewwu02hs8Os7KyQ/1ej2WHNDqtUGT8BzQ4bzQ57k2aHzX+eHRbLzjban5sdFsvONtpfs8N6IKIBUKmKrDuzbT8VfM9U1gAAAABJRU5ErkJggg=={scale="+$scale+"}>"
+!endfunction
+
+IBMEntityColoring(eventsalt)
+!define eventsalt(e_alias, e_label, e_techn) IBMEntity(e_alias, e_label, e_techn, #232F3E, eventsalt, eventsalt)
+!define eventsalt(e_alias, e_label, e_techn, e_descr) IBMEntity(e_alias, e_label, e_techn, e_descr, #232F3E, eventsalt, eventsalt)
+!define eventsaltParticipant(p_alias, p_label, p_techn) IBMParticipant(p_alias, p_label, p_techn, #232F3E, eventsalt, eventsalt)
+!define eventsaltParticipant(p_alias, p_label, p_techn, p_descr) IBMParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, eventsalt, eventsalt)

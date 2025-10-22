@@ -1,0 +1,13 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $tasksettings [64x64/16z] xS61400000CXXFdRpkElMXu0001m
+
+!function $tasksettingsIMG($scale=1)
+!return "<img data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAAIGNIUk0AAHomAACAhAAA+gAAAIDoAAB1MAAA6mAAADqYAAAXcJy6UTwAAAAEZ0FNQQAAsY58+1GTAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAAOxAAADsQBlSsOGwAAAwhJREFUeNrtWjFPFEEU3jtBfgCNSGUiDRLOn3BUFjYHwVwUCiulwQ4SaIRYmGxpo6EgVxyYDSRaaGUhdGhsUDTEK6gM19DZgBeO93Lvkslkd2eHmzlmvPclX8JuZj/mvZ335r3ZCwIGg9HLyFnSHQaGwAngUIdax8DPwEXgHx8cgMbvAwcN654AC6adkLfggNCC8QFphqZFbTigaDFkjWv3WZjkTcNh1kzRdnIFeAXdFWAyu5tYER3vFn2axtvI7qaAL+QR8J7ObqETAqHDxl96t9BxQNGj0C7aCIGs2b15RdXrpXYL3gWuMGs7gZ5fAewAzgH+nDHwCmAHsAPYAewAHyvBbiHHK4AdwA5gB7ADemAXaJrsPTgEHJ3XjW5puOiASeARsNyBRpk0JlUDr2mIrkjXq5aMj4ADwBLwN/An5aop4BJwXHrmNtmBY8/J+CrwOj1zADz0IQnikt0E9gtzQ0PwK880cCThuVliDbgNXBDs6ifNW8C66yGAE3wMbEgvaCnFeBEjNFZ8qQ3SrPuSAyJ6mw0DWg3SinyrAyKK82Xp/hnwDfAtxTViDPgQOEcxLyJUGe+qA3BOD6R7+KX3ftD6Oi1ij7gO/Bi0vmC3gRrPVavJxW2wJMX8aYLxIvZpzKmUE0o+1gHypNcUxotOWFNoORkCqm+HGxpaOHZeuJ4hJvYOPvQCvyyN5WbIFweMaoy94+N5gNzPV6W4xb+/ZNSaickJs76tgPfS9RPqB1S4S2PTtLxxQE24HqAip6Aw/oNUDdayOMDFShArty2pFMYK72tCKYy/DXwaUwpvZekpXHQA9vOLMffRwGfELECN76p+IO+g8VVDL6Z9nlD2xQF4IFKJ6edfSjkhCTUaK58nVIKU80GXjsT+UiU3RfNq9/OvgK+BP6glHo/ZNl9QCfwpaB2Nlejl/qN2+VvWPTgN2JKa+L2+6n/iueAmneREGXqHXEIoVShBvjOVBHdI0DZwwolneBqHKrtZNHRyAGbVky7lg3q3NPKaIVCg5XkcMBgMxn+ACwlYjg5U7gr8AAAAAElFTkSuQmCC{scale="+$scale+"}>"
+!endfunction
+
+IBMEntityColoring(tasksettings)
+!define tasksettings(e_alias, e_label, e_techn) IBMEntity(e_alias, e_label, e_techn, #232F3E, tasksettings, tasksettings)
+!define tasksettings(e_alias, e_label, e_techn, e_descr) IBMEntity(e_alias, e_label, e_techn, e_descr, #232F3E, tasksettings, tasksettings)
+!define tasksettingsParticipant(p_alias, p_label, p_techn) IBMParticipant(p_alias, p_label, p_techn, #232F3E, tasksettings, tasksettings)
+!define tasksettingsParticipant(p_alias, p_label, p_techn, p_descr) IBMParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, tasksettings, tasksettings)

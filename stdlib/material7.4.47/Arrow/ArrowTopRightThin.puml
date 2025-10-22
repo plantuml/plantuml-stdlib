@@ -1,0 +1,11 @@
+sprite mdiArrowTopRightThin <svg width="48" height="48"><g transform="scale(2)"><path d="M11.93 5L14.76 7.83L5 17.59L6.42 19L16.18 9.25L19 12.07V5H11.93Z" /></g></svg>
+
+!if %function_exists("$MdiSprite")
+  !unquoted function $MdiArrowTopRightThinImg($color = $MDI_DEFAULT, $scale = "1")
+    !return $MdiSprite(mdiAccountAlert, $color, $scale)
+  !endfunction
+
+  !unquoted function $MdiArrowTopRightThin($alias, $label=$MDI_DEFAULT, $shape=$MDI_DEFAULT, $color=$MDI_DEFAULT, $scale=1, $stereo=$MDI_DEFAULT)
+    !return $MdiSpriteElement("mdiAccountAlert", $alias, $label, $shape, $color, $scale, $stereo)
+  !endfunction
+!endif

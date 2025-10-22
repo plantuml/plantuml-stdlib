@@ -1,0 +1,13 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $college [64x64/16z] xS61400000CXXFdRpkElMXu0001m
+
+!function $collegeIMG($scale=1)
+!return "<img data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAAIGNIUk0AAHomAACAhAAA+gAAAIDoAAB1MAAA6mAAADqYAAAXcJy6UTwAAAAEZ0FNQQAAsY58+1GTAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAAOxAAADsQBlSsOGwAAAypJREFUeNrtmjtoFFEYheex1oqdaQTLGBcRFEsRBVNKLDQqqKAWvtBGkSiiQbRSjI9OJb5AWURRNo0aSSNWEgyChU0KWVIYQVEb13PNmTAJ87rz2snMf+Aj+7ib3Hvmnv+/u1nDqLjMDv5tC5zi7UvgbycmYXdo8UtAAxwAG8E68BL8rsIOWAmegmVgDx+7C76CrWCizDugD7wAP8Bm8BZ8As/BdnAcfOZjpTJA5f0CGAKvwRYw6Xp+CtwDa8FpsAiMgnYZDHDyvhdcBPvBL49xKv+PQI0m5FIX7Bzy/oo/d4IbIVe1zR3yERwDO3h/aiEa4JX3qMqtLtgdyHtU5VIXzAzy/pCLVnk/63PAWQF2MRoGW9998MXH0PM0YQT0g+kiGjC/vzd8xg3QGItZV+qhUWqhgwGRSv28YKaY9yiTG2A87jDb3/n4YnCFneJMgAlRTc6tBujkXW37x2AY7AN/XM+p28/AcnCYMfqWR12wE+Y9Sn93dARsAJsCervqFCeZcb+ukep5wU6Qd53+rnSIY64GjFGL2MZ5PcnjvGDFzPs73l6fRg4TqME5GJxTX5YGWCxO6sqMcevpVGJ1tboZnaBYdbu6QxRNcC5jnNugzrrsjPLupUnGoIsFz0s3wSpw0KcIGmnXBTujvHvJWdAJVvtRVydQbfAWDT4XYJCRdl0wI+Q97cNH3INQFocyXwMyPX5qHoUzPZabCc7zC0GhF9LOKO9FUWhdsFN6/150+X6+4ERAnb+v8f6HlPNeJKl4r+bOOAqu1/jET58rXufP8Yh/QHe8rpLOZ5rt11lzqJokqnTH60r394+EjbeMiksMyGkrZq0mt7vsADFADBADxAAxQAwQA8SAKhrQlh0gBogBYoAYoKlazNf1FmwdvbIDxIB48vvf4G5j5ns8ZfpY/LYx8/2iOfL79/hlsIYvbGlMsKU5XletmPNRRiwFD3SK4PsCFru4akoNEAPEgMAu4FT9vKp53vJaz/+u4OyAftcgZ+B4iS70/PXUueY5XaBMVT9yV5AiKAbI2+FZqa+XvqnIuuusebPvBdRO6KrQhVfvD4ZL1uni6R9D+/ivkRi48wAAAABJRU5ErkJggg=={scale="+$scale+"}>"
+!endfunction
+
+IBMEntityColoring(college)
+!define college(e_alias, e_label, e_techn) IBMEntity(e_alias, e_label, e_techn, #232F3E, college, college)
+!define college(e_alias, e_label, e_techn, e_descr) IBMEntity(e_alias, e_label, e_techn, e_descr, #232F3E, college, college)
+!define collegeParticipant(p_alias, p_label, p_techn) IBMParticipant(p_alias, p_label, p_techn, #232F3E, college, college)
+!define collegeParticipant(p_alias, p_label, p_techn, p_descr) IBMParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, college, college)

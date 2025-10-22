@@ -1,0 +1,13 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $ibmzcloudprovisioning [64x64/16z] xS61400000CXXFdRpkElMXu0001m
+
+!function $ibmzcloudprovisioningIMG($scale=1)
+!return "<img data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAAIGNIUk0AAHomAACAhAAA+gAAAIDoAAB1MAAA6mAAADqYAAAXcJy6UTwAAAAEZ0FNQQAAsY58+1GTAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAAOxAAADsQBlSsOGwAAA21JREFUeNrtm1uITVEYx9c5+8jIJB40SaR5wtTEuBYelMkDISViXFJKuU0olxd5cA1lKKEoIZmUS57IG40JIYwX86A0xYN5QDFy/L/Od2q32nvtta9nn73XV786++yzb/+91vdf+6xvC2Ei31Go0XFLYDvYwcvnwHnwNw8CtIOzYIr0fR/YBR5lVYBmcAYs9/jdPbAb9GdFgEZwAOwBwzW3+Q1Og2PgRz0L0AGOg/EO6/6BK/x5Myg6/OYL2A+u15sAM7ifz3NZ/xTsBK94uQ10KX6/GtyuBwHGgqMed3QfuOGy/TpwQmoxJNIsbjGpFaBqa4fAaJc+fYr79E+PfY3knLEXDONW0ZPmLuBma2GzOrnGYnAhrUnQy9b6uJ8/jjnRdoL7QW0ziABetjYIDic0slsInoSxTb8C6NjaQfAtgfEF5YfXYGoY29QVwK+tJRHrwTXF+dCw+mVYAcLaWtzhZJu+WqRKgEWgOwJbizvstumWk1a5JWNLsWN6KhvnYmvLwB0wlIJH+iFOhDfBJDBZWt8A5vNI03EAo7K5mj+u+giywRUu45Jmt42KPg7QmuKLl1tuq58hrG7E7enlCC1b+1yLIudhBDACGAGMAEaAPEchw9dW1rlW0wWMAEYAI0CuoxTDPoM+1UX5NGhaQBQtoJzEHTA5wAhgBDACGAEyNg4oJLydaQFJCVDKYsv2I8BbUZl2Snu087lqhWpydAMYY1umqXKak58OesH3lF04zf9dBUf4XO1B84ZdfgX4ICqzwA3S9zT7uhWMAM9F7WeIaXqcqtOoRqHFYf0g38z+IJk31wUS9khjicxahfDaJTKW5sEGWM1PYA4YJa2fCLaACaJS1PgrAQGoXoHqAZqkFrlNVErnBsImQTcnuMSfZ0t2Q62pjYWgEpoXIqbyVlsTfw82gT/gJFjDx01k9KVTKJlERQm9dfJQBCyUtEIcmGzwFngGZjpYT1jbJIE7eFtVhLJkK4I7QMpf5JOY62GbvdxcVdFos7WlolIA9Tmu5mNF2B97OFHS4Gma1L0oVywAG8FXxUiN7vhdsIS3KbADXRbef5rWVIBqUPZ/wH2yhd3BHuQeK3m4+saWqekiuzlnyA5DWf4jeBeHAOaVmQT8OtcvTfmxzWpk7rU5p8fVXL44Kf9hkYpXZ03kPf4DIq/Jumva//0AAAAASUVORK5CYII={scale="+$scale+"}>"
+!endfunction
+
+IBMEntityColoring(ibmzcloudprovisioning)
+!define ibmzcloudprovisioning(e_alias, e_label, e_techn) IBMEntity(e_alias, e_label, e_techn, #232F3E, ibmzcloudprovisioning, ibmzcloudprovisioning)
+!define ibmzcloudprovisioning(e_alias, e_label, e_techn, e_descr) IBMEntity(e_alias, e_label, e_techn, e_descr, #232F3E, ibmzcloudprovisioning, ibmzcloudprovisioning)
+!define ibmzcloudprovisioningParticipant(p_alias, p_label, p_techn) IBMParticipant(p_alias, p_label, p_techn, #232F3E, ibmzcloudprovisioning, ibmzcloudprovisioning)
+!define ibmzcloudprovisioningParticipant(p_alias, p_label, p_techn, p_descr) IBMParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, ibmzcloudprovisioning, ibmzcloudprovisioning)

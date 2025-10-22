@@ -1,0 +1,13 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $searchlocate [64x64/16z] xS61400000CXXFdRpkElMXu0001m
+
+!function $searchlocateIMG($scale=1)
+!return "<img data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAAIGNIUk0AAHomAACAhAAA+gAAAIDoAAB1MAAA6mAAADqYAAAXcJy6UTwAAAAEZ0FNQQAAsY58+1GTAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAAOxAAADsQBlSsOGwAAA2tJREFUeNrtmTtoFFEUhic7q0Qx+AioiQYFiQkIPqKyIiiCWBjRpJH4SNCENFYiItiphRba+CgsRAKi6IoKCb6LJRjT2AVX0KiFxBcWFiZqNI/1v3gWbg53zM7OzM519v7wFXNn59yd/77PWJaRkVExq0RRltHwPwWmWLH3AGOAmQWMjIyMjMxO0OwEzUbIGGBkZGSkjRaCeOTWXActAA2gHtSCxcCW7r8DvaAbPAQDUTFgLTgJtrh4ZgQkwWnwXNed4GSmzgdnQZPHei6Cw+CnlyDxArd6HeikMe5VB8BGsAuk/wcDdoDrYLrinhjXXeABeAU+S72lBmyl56vYc8tAD9gE+nQ2oM7h5T+CY6ADjCmee0PcAwdBKzgBKqXfzAKPwAbwWsdJULTiM0XriRbfC4ZcxpsBrlGPkCVefjkYdhPMLoABl8F6VnaeWvNXHvF+g5tgNkhI5eXUoCmdDkNiqdupaPlDYNxD3HGK0cXKj9BeQhsDTrFh9gE0e3x52YRmipnVVJortDBA7PA2s7LjYNDHOgYppqzdDitNwQ1oZK0/QLO93+pg2+OZtLUO3YBt7LrTYanzqjGKLSuhgwFL2fX9AOvisVeGbUBMse6/DdAAHrs2bAPKaUaW9SlAA3jsKWEb8D3kHENJ2Ab8oB2brIoAX7iSXQ+HbYAlneiyWhJgXTx2WgcDnrLr+gDr4rH7dDCgm103BHT4shUbn14dDBDJjRHpuopOgH6rzZqYYfpC+YPQDXgPbijOAmU+1lGmOAtcYcaHeho8Y01MsooD0lWf6o1RYkReAURy5YJOCRHRHUVGaI1UVkPJjMdW/hlo8fLnQAsrP2r9TY9pY4BQik6Gc9lhZRW4q9gv5NLtb1EuQNYLmmMyuhkwCp6APaCU9YT94BstW5kc/ms7uA1WK+7PAS/JCP+3jD5oBXXPeYp7TmnxCjpViqP1dmvy7wmj1DOSOhogVE1LVLVP8dJ08ovna4JdYAO+gktk/DoP9Q/RhNdK3b5RWllidN2fy3AotAHZFkrRWLapN5S6WFXEN8F9NJwy9JL9+Zqgw+fxafRnE5TJWcTui5cQX4J7KPPjtMlpoj2Gq+GggwF+yrUJdsQMcD0comaAaxOiaMC/TBDfIu8UgwEqE5J0dshYRabsxGhbRkZGRkx/ACgNr5y9kaXLAAAAAElFTkSuQmCC{scale="+$scale+"}>"
+!endfunction
+
+IBMEntityColoring(searchlocate)
+!define searchlocate(e_alias, e_label, e_techn) IBMEntity(e_alias, e_label, e_techn, #232F3E, searchlocate, searchlocate)
+!define searchlocate(e_alias, e_label, e_techn, e_descr) IBMEntity(e_alias, e_label, e_techn, e_descr, #232F3E, searchlocate, searchlocate)
+!define searchlocateParticipant(p_alias, p_label, p_techn) IBMParticipant(p_alias, p_label, p_techn, #232F3E, searchlocate, searchlocate)
+!define searchlocateParticipant(p_alias, p_label, p_techn, p_descr) IBMParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, searchlocate, searchlocate)

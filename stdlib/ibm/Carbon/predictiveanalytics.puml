@@ -1,0 +1,13 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $predictiveanalytics [64x64/16z] xS61400000CXXFdRpkElMXu0001m
+
+!function $predictiveanalyticsIMG($scale=1)
+!return "<img data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAAIGNIUk0AAHomAACAhAAA+gAAAIDoAAB1MAAA6mAAADqYAAAXcJy6UTwAAAAEZ0FNQQAAsY58+1GTAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAAOxAAADsQBlSsOGwAAAjRJREFUeNrtmT0vBFEUhnftFIrtkQitKOhQiY9o/AAfjURhtfwADS2hoEApkfgFKpplo5NsYTcqmyBBdNvz3uSMTGQwu+6de+7cc5In87Ejdt5595733snlpKRUnRPeVYfvT14EEAE8r8CB7zgGVmj/GNz45AB182UwTpTpnDcClEADDBINOueNAIWE5zI7BhyCRXBHx31gyScHVMAEPaiA9iu+dQF1w/XIvuQA7g4w2re5O8B43+bugGjfVlWjc2m4oC3n6XaA8b6t23m6HWC8b+t2nm4HqDY1abJv/1Dd7TrPRBe4Ntm3v9UAOABTdNyy81wIQnFVBBtgHbyABfAMTsBHK85zUYA5sAO6wB7YBE36rE4CJHaeSwL0gAuy+yWYifzUMj0XKNLTHgZPZPczXyZDod17wS31+KYPs0E1uu+DabL7Ow12Td3/KGBodzW6r4HXiN2NvbWyKcAopbU8OKLeHY7uu2DLxBPnIoC6+SvwQMfLtNU2unMXYDUmu9+DWdfXA/6T3d+ysB5gPLu7KoC27O6iAL9l91pKs0YrAhjJ7i4IEM3uj7qzO3cB5sG2yezOVYDo6G40u3MTIG50N5rdbQoQrruH2b2f7J5qdrclQLjubj272xKgxCW725oLFLhkd1sOsPXGh40DbL3xYdUF0nzjk/n1ABFABBABRAARQAQQAUQAEUAEEAFEAKuVp61axBwB1T+uH6Kt69flaHr/NR0+BZ0J/qiaUFju10mF9Qnm/o1qPNhZyAAAAABJRU5ErkJggg=={scale="+$scale+"}>"
+!endfunction
+
+IBMEntityColoring(predictiveanalytics)
+!define predictiveanalytics(e_alias, e_label, e_techn) IBMEntity(e_alias, e_label, e_techn, #232F3E, predictiveanalytics, predictiveanalytics)
+!define predictiveanalytics(e_alias, e_label, e_techn, e_descr) IBMEntity(e_alias, e_label, e_techn, e_descr, #232F3E, predictiveanalytics, predictiveanalytics)
+!define predictiveanalyticsParticipant(p_alias, p_label, p_techn) IBMParticipant(p_alias, p_label, p_techn, #232F3E, predictiveanalytics, predictiveanalytics)
+!define predictiveanalyticsParticipant(p_alias, p_label, p_techn, p_descr) IBMParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, predictiveanalytics, predictiveanalytics)

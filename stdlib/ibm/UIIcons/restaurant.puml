@@ -1,0 +1,13 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $restaurant [64x64/16z] xS61400000CXXFdRpkElMXu0001m
+
+!function $restaurantIMG($scale=1)
+!return "<img data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAAIGNIUk0AAHomAACAhAAA+gAAAIDoAAB1MAAA6mAAADqYAAAXcJy6UTwAAAAEZ0FNQQAAsY58+1GTAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAAOxAAADsQBlSsOGwAAAj9JREFUeNrtmU0oRFEUx+9oyMaCnSwoWVjayUKhFCuTbJSSEIvZCSUWaii2SrFRxMJHshAKM2WhbC1YoXykxMZCk4z/bY56ncbMezMT7717/vVrOnfuPa/7n/sx716lRCKRyQrYqJOw2Sbf9X5rpz/vwBs4BAcglq0BQY/+aFVEHRgH52ACnDhNVuCTkVwPjsGs0z4V+GxK69Gw5aRfXjagmzr7ycpDYMYEAzZAF2gA1+y7MdBsyhS4AE3glpVHTFoDnkBfioWx0aRF8BREWVm7abvAOotbTDPgjMUVphlww+JS0wz4YHGxaQY4lhggBogBYkAmvbO4JIfnlWTI7UoDnllcmcPzKjPk/nPZORK7AtWWuBVcpqhn52yvNUVu14+AIxb3q+zOEoPUNl1uVxqwA+KWuBaEs3hWmNr+KE65XW/APVhjZXOgzcFz2qiNVWuU2xPb4BR4ZcN5D4yAwjTtCqnOHps2r5Tz32V3Lj+AQbBpWex023kqXwH7Knkyo1VOhxG9oIblSlCbBy8ZoLUNhsAiGzm6gxFl7wzuCwxTLuU1A7SWwAtYBmUO2+phP+CGhS8XA352BX0VNQ16QFGG+nq1X6U5/+i2v8LZ3g0+0p4+CTpV8uytg9XZVcnrqm3L2uC7lyHdsQWVvI3hCtF3ru28vA0qb16PW7dTO1PV6BEQM9kAve2O+nkKpFuYo9T5ez8bEMhHEjkTFAPEADFADBADxAAxQAwQA8QAMUAMEAPEADFADBADRCKRyCB9A8LFXYW6kdSEAAAAAElFTkSuQmCC{scale="+$scale+"}>"
+!endfunction
+
+IBMEntityColoring(restaurant)
+!define restaurant(e_alias, e_label, e_techn) IBMEntity(e_alias, e_label, e_techn, #232F3E, restaurant, restaurant)
+!define restaurant(e_alias, e_label, e_techn, e_descr) IBMEntity(e_alias, e_label, e_techn, e_descr, #232F3E, restaurant, restaurant)
+!define restaurantParticipant(p_alias, p_label, p_techn) IBMParticipant(p_alias, p_label, p_techn, #232F3E, restaurant, restaurant)
+!define restaurantParticipant(p_alias, p_label, p_techn, p_descr) IBMParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, restaurant, restaurant)

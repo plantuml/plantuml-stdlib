@@ -1,0 +1,13 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $ibmzoscontainers [64x64/16z] xS61400000CXXFdRpkElMXu0001m
+
+!function $ibmzoscontainersIMG($scale=1)
+!return "<img data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAAIGNIUk0AAHomAACAhAAA+gAAAIDoAAB1MAAA6mAAADqYAAAXcJy6UTwAAAAEZ0FNQQAAsY58+1GTAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAAOxAAADsQBlSsOGwAAAZ5JREFUeNrtmzFuwkAQRRcnbarQQHKX5A4p0nAODsE5UAR9LsANcgggFU1qJDMII0Ui7GbHs8bzZ770K8uG/zw73l1MCC6Xy+Wyq0Hi+DN5Rn4lj270XeqS179PhP8iPyJXQBU5NkMPnwLwYqEHxIbAOLNfpPROnic+U6JvZfWOqiPQUuE7HQIlw++tALgWfmIBQCz8Eh2AivClAKgJXwKAqvDSANSFlwSgMnxqJtjX8HWfKkDtnZcAoD58GwAQ4bk9oOvwgz5VAMyd5wCAC58LAC58LgC48NynAEx47lPgeM6icRcq+rtAFYzLAVgHwOkBUk2wbjN2pa5fMaHNm4mRqSGwR4SQA2CCCCEHwBIRQm4PgIPAaYJQELjzABgIbSZCEBDazgTVQ5CYCquGILUWUAtBcjGkEoL0alAdhBLLYVUQSu0HqIFQ8rW1837B7+30MwT4CvhPJZgAEINgBsA1CL1QbL9tEy7fF9aqLfkptwJWAUcrzhCYkncA4XdNlj91Fznxh/wRTn+VGZIflAX/Jn+S38jr4HK5XC7XhQ6CFn2kFuR3jwAAAABJRU5ErkJggg=={scale="+$scale+"}>"
+!endfunction
+
+IBMEntityColoring(ibmzoscontainers)
+!define ibmzoscontainers(e_alias, e_label, e_techn) IBMEntity(e_alias, e_label, e_techn, #232F3E, ibmzoscontainers, ibmzoscontainers)
+!define ibmzoscontainers(e_alias, e_label, e_techn, e_descr) IBMEntity(e_alias, e_label, e_techn, e_descr, #232F3E, ibmzoscontainers, ibmzoscontainers)
+!define ibmzoscontainersParticipant(p_alias, p_label, p_techn) IBMParticipant(p_alias, p_label, p_techn, #232F3E, ibmzoscontainers, ibmzoscontainers)
+!define ibmzoscontainersParticipant(p_alias, p_label, p_techn, p_descr) IBMParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, ibmzoscontainers, ibmzoscontainers)

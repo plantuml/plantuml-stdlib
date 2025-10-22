@@ -1,0 +1,13 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $chargingstation [64x64/16z] xS61400000CXXFdRpkElMXu0001m
+
+!function $chargingstationIMG($scale=1)
+!return "<img data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAAIGNIUk0AAHomAACAhAAA+gAAAIDoAAB1MAAA6mAAADqYAAAXcJy6UTwAAAAEZ0FNQQAAsY58+1GTAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAAOxAAADsQBlSsOGwAAAgFJREFUeNrtWT1LA0EUvFN7EQshGBDRWrQWe8GPX6DpBNHaUjSltSKx1F+gCfgH0ipYK2JhYxFFa02cJRsIy5pbvNu73ewMTLHL7t3t8G7uvXdRRBAEQRBEqIgN1qyCF+B0Ts/0Cu6Atymv0zE564jBhWo5Hj6S96rldTMTAcoFRGbZJQGGGmOWfCOLd5YR4GoEuI5OwnzMCKAAFIACUAAKYFeAKfAeXAtVgBNwEayDN+BsSAIsg1t943WXIyFrAUbBUyXbegDPQhFgD1xQ0s998CeEWkAYX1WZuwKbOZ8p/qMmiG1HgDC+8b7xJ3gQyldANT6BQ/AtBAG8M76sPUA1vkiOvw3q9pUBHpHUIcqke5w2AnTGZ4q0BplJ9zitAKrxmSIrgywXKYDO+EzhjEGm8YCmgYDCIO8UjzA1yPif3uBUOex8ZmhTAFcyw8IE8CIztCWAN5mhDQG8ygxtCOBVSWxDgEbUbYU5a3y2+gE9PIMbUbcNVnW9JLb5c7QhGUQ/wFtQAApAASiAb/hSxiXNmlLCHq8FeFLGFc2aSsKeXPIAWxA/W5f6xsey7riU423wSLNHC13XpePowXvPOgk+ghOG+z7AebA1LK9AS4Z422BtW65tDdtXQBRbm+D7gDXvck29qFrANkSdMQfuyoPOyPkX8Bo8l+FPEARBEAShxS+GDFuE8TQkPgAAAABJRU5ErkJggg=={scale="+$scale+"}>"
+!endfunction
+
+IBMEntityColoring(chargingstation)
+!define chargingstation(e_alias, e_label, e_techn) IBMEntity(e_alias, e_label, e_techn, #232F3E, chargingstation, chargingstation)
+!define chargingstation(e_alias, e_label, e_techn, e_descr) IBMEntity(e_alias, e_label, e_techn, e_descr, #232F3E, chargingstation, chargingstation)
+!define chargingstationParticipant(p_alias, p_label, p_techn) IBMParticipant(p_alias, p_label, p_techn, #232F3E, chargingstation, chargingstation)
+!define chargingstationParticipant(p_alias, p_label, p_techn, p_descr) IBMParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, chargingstation, chargingstation)

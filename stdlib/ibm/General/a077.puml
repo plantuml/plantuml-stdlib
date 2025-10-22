@@ -1,0 +1,17 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $a077 [64x64/16z] xSod0S103C10aiBi_RSDJl_AJloKbnIdvdgUv-EZzLITv_dj5F_VMTJSU9xVJvtzVYeBgX1LdkTv7G
+
+!function $a077IMG($scale=1)
+!if %variable_exists("$IBM_DARK") && ($IBM_DARK == true)
+!return "<img data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAAIGNIUk0AAHomAACAhAAA+gAAAIDoAAB1MAAA6mAAADqYAAAXcJy6UTwAAAAEZ0FNQQAAsY58+1GTAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAAOxAAADsQBlSsOGwAAAQhJREFUeNrtmb0OwiAUhQvtZsJj+RCOLiYOLvUx7OJgYmLcfBgfhyZuBXR2JJSf3O/sF8jHOdxSug4hJFkq1UDzPI8xdcaYqSSAIeFYoUUHJAMQQvCiAfwEANEAtNbiHRCIAF0ABwAAAJwBtMG2b4PW2l3OBbwf5hVTtx2VWssBWa3sa4tA7iy72gD0fS8bQO7DzBGB+hwAALpARi1EgAhUF4GAAwAgB0Cyt8HrFBed/eETNd/zvomqO/3dIodWd9KtGAEAtNDOPA4AAADqApD5n3Cq+XAAAAAAAD6EJDtAdYV1vMTdIm/n9d4Gm9xJAAAAAG0C8DhAOICFCBABAAAAAABACKEi+gKDW3oJZfP0BwAAAABJRU5ErkJggg=={scale="+$scale+"}>"
+!else
+!return "<img data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAAIGNIUk0AAHomAACAhAAA+gAAAIDoAAB1MAAA6mAAADqYAAAXcJy6UTwAAAAEZ0FNQQAAsY58+1GTAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAAOxAAADsQBlSsOGwAAARJJREFUeNrtmUEKwjAQRRPwBKWH8QTuvIhgEXTnFRREwTO49xBepp6gSapr3Q3pNGHe36cJL28mTescIcRyfK4HtW27lozr+/45J4BFxmeNNRqQDYD3PpkGgAEYYNyAGCMG0AMwAAMwAAOsAgghVGnA322waZql5gIex/dLMm61934SA74qq+5kKrAEVNcUSwOgbUDEAAwoDoBtA4ZhUAVQ4imgWgKBEjDeBBMGGO8BHIOl3QaluZ5HkTndZSubb3cTjet+bpGLWncyTtgDAFDDcZYwAAAAKAuA8jfhXPNhAAAAAABehCwb4N3M2Zxkt8j7YaJ/g67SnQQAAABQJ4CEAcYBBEqAEgAAAAAAAEIImSUfSJVsGu0EKxsAAAAASUVORK5CYII={scale="+$scale+"}>"
+!endif
+!endfunction
+
+IBMEntityColoring(a077)
+!define a077(e_alias, e_label, e_techn) IBMEntity(e_alias, e_label, e_techn, #232F3E, a077, a077)
+!define a077(e_alias, e_label, e_techn, e_descr) IBMEntity(e_alias, e_label, e_techn, e_descr, #232F3E, a077, a077)
+!define a077Participant(p_alias, p_label, p_techn) IBMParticipant(p_alias, p_label, p_techn, #232F3E, a077, a077)
+!define a077Participant(p_alias, p_label, p_techn, p_descr) IBMParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, a077, a077)

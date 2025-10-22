@@ -1,0 +1,13 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $businessprocesses [64x64/16z] xS61400000CXXFdRpkElMXu0001m
+
+!function $businessprocessesIMG($scale=1)
+!return "<img data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAAIGNIUk0AAHomAACAhAAA+gAAAIDoAAB1MAAA6mAAADqYAAAXcJy6UTwAAAAEZ0FNQQAAsY58+1GTAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAAOxAAADsQBlSsOGwAAApRJREFUeNrtWk1IG0EYnUQFexSDoIhBhF7tsaAQz6J4KKUgBooogpJDL+Ldk7kKguLPoUURT4HYsx4KHs1BKIKIIhUk4kVooaXxDZnDOMxudrO72Z3d78GDzCT5Mnn7zXxvdpYxAoGQZKQCitsPFsExsNdjrHvwBFwG70wQgP/5c7Db57iP4Du/RUgHIEAxgD/PRMyi30GDECAX4JT1PXZ7AIPs83ma1WxiRzIDjAIJQAKQACQACUB7gWC9fNiw3UukWujlw4Z2L5FuoZcPG9q9RLrFXj5s5JzsBfz28mHDdi9BZZAEIAFIABKABCABSAASgAQgAUgAEoAESCDaIzimCXBL7OMXwHKSMuANuMfqN2L5zYsdsCNJGTANZqR2DzgOljzETJmUAQVN30xSpgC/YTlssSZ0JUGAgkV/J/gx7gIMgFM27+fjLsCisiDfsNe3s0fAwbhWAV765pS+VfAzOCqt5DOi3wqT4CZrfJaZiloG8NInH8XxM7x98KuLasBF3GVNHORGQQB18dsGf4NH4B+p/y343qF/MEYAtfT9AzfE6yfw2GEWFExdA9SBc8d3K7X5NPggtT+BX8C/DUQcUuJEMgN0pW9daX8Hq1I7I6yxGxFdZ8Av9voUtebRczv9fgU8Vfr4lT4El5RpUHIhousMOA0pI6wG/s3GGqv+oeJ2/DoBlkUpaiWqovTpcAZeaqyxzj+su/1hnQD8GRr+LM0Bqz9gFDT4b8yK0sccZkHexj/4t1eOELgNvpLGWxMLXVb6zBq4YvJu0A7X4A/lwmUt/EMsBWAaa9x06TNVANUae1r8TBSAW+OyQ/8QSwF01cDT1TdRAG6NHxz6B0doM0yA/+BPVn+I+xmcBy8YgdA0XgBd027SvtApsgAAAABJRU5ErkJggg=={scale="+$scale+"}>"
+!endfunction
+
+IBMEntityColoring(businessprocesses)
+!define businessprocesses(e_alias, e_label, e_techn) IBMEntity(e_alias, e_label, e_techn, #232F3E, businessprocesses, businessprocesses)
+!define businessprocesses(e_alias, e_label, e_techn, e_descr) IBMEntity(e_alias, e_label, e_techn, e_descr, #232F3E, businessprocesses, businessprocesses)
+!define businessprocessesParticipant(p_alias, p_label, p_techn) IBMParticipant(p_alias, p_label, p_techn, #232F3E, businessprocesses, businessprocesses)
+!define businessprocessesParticipant(p_alias, p_label, p_techn, p_descr) IBMParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, businessprocesses, businessprocesses)

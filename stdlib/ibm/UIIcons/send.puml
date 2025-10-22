@@ -1,0 +1,13 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $send [64x64/16z] xS61400000CXXFdRpkElMXu0001m
+
+!function $sendIMG($scale=1)
+!return "<img data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAAIGNIUk0AAHomAACAhAAA+gAAAIDoAAB1MAAA6mAAADqYAAAXcJy6UTwAAAAEZ0FNQQAAsY58+1GTAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAAOxAAADsQBlSsOGwAAAv9JREFUeNrtmt2LTVEYh/fMnhjGmPExhVAuSNKQFEUkkzm5UeKaKCUhZq648gegiFET5d4l0khNaHI1XJALN8pHhBTG1+Tj9zbvrtXqnLPXWnvvs/e7z3rruVjrrN1Zv2f2x9rrTBD48uXLly9fvpq1QoMxFXAbHAZd4An43UwCboEVoAdsB4dAW1lEmAgYAN1Ke2aZRJgIWAfWVOkvhQgTAR1gd53PRYswEfAeDIIWpW8CTCuDCBMBFHYXWKj07QfjYC0HFysiNBy3DGxW2m/AaTAEvkkWYSrgL9intGeDSxzoAYuYYBEzJIkwFfAWnFCue1oTXANfuC1WhKmAP2ATWK70PQWPtXHiRIQWY3t4WRzVT3CjxlgxImwE0Ol+RGkvAGfBvzrHRCKuFFWEjYCP4AC/EEUTv8n3h7j6VVQRoeX41bw0juoleGhxfOFE2AqYDvZqx193+F5VxPc8RdgKeMfL4lZuLwLnwaTj95OI+3mKsBXwA+wEi5Xjx8CLhPPITUTocMxSsFVpfwB3UvqDNFyEi4BJfhpE1cXL4jSrYSJcBNBj7zhoVxZIV5VlsSgRLgLoxWgDWKn0PauyLBYhosVxQrRDfDmjsCZzorfRY+AkmFNjzCewB4ymfQZQfeYJZFFnLM6IIX4y1TojNsbdn1qDJq82x+MqOc/b9BIYzEpAv9Y+yBskjQpOmzNz6wQ/By6Cr1kIoF2hbVrfiLTgSQTQztAspf0cvJYWPImASgP++pkHTyJAv/7vSgzuKoB+HOnVtrxGJQZ3FbBDW6mN8c6OuOCuAtK6/in4UX6O5xLcRQCtGvsSXv+FCe4iYD2Yr7Rpl3hcanAXAfrd/x6/GterTmXJWqjgaQgYkRzcVkA3b4LEXf9igtsK6NPG0vL3leTgtgJqrf46lZvbPEnBkwp4BE5JDm4jYBVYovUNB1P/PSY2uI2Aars/HdKD2wjoj/lcZHBTAfTis6WMwW0E0LZze9mCqwHjin5cuBBM7cUPlyW4L1++fPny5cvXf2u8EJHUBGBcAAAAAElFTkSuQmCC{scale="+$scale+"}>"
+!endfunction
+
+IBMEntityColoring(send)
+!define send(e_alias, e_label, e_techn) IBMEntity(e_alias, e_label, e_techn, #232F3E, send, send)
+!define send(e_alias, e_label, e_techn, e_descr) IBMEntity(e_alias, e_label, e_techn, e_descr, #232F3E, send, send)
+!define sendParticipant(p_alias, p_label, p_techn) IBMParticipant(p_alias, p_label, p_techn, #232F3E, send, send)
+!define sendParticipant(p_alias, p_label, p_techn, p_descr) IBMParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, send, send)

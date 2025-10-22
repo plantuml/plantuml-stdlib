@@ -1,0 +1,13 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $language [64x64/16z] xS61400000CXXFdRpkElMXu0001m
+
+!function $languageIMG($scale=1)
+!return "<img data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAAIGNIUk0AAHomAACAhAAA+gAAAIDoAAB1MAAA6mAAADqYAAAXcJy6UTwAAAAEZ0FNQQAAsY58+1GTAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAAOxAAADsQBlSsOGwAAAu9JREFUeNrtmktoFEEQhmfGKMnFB+pFRSWC4sUX6MmDgsKKooLg6k0FMT5QCOLFx1EQieLBRUES3yCC4CFERI8SIQcxt5AQRBNBUQQ1KoKuf0MNVCqzszOTYKZ6+ocPdnq69/FPVXf1zHqek5NTkeVnGDMbvANNrK0TbNNoQJBhzAHx4422gOYiGGD6t6Rot86AUsyVNpHRaLsBR+rMDWWbDWimXOd6Jo6P2mxAi+jfAw6Bv6xtLWGdAY2U41xXwSDoSpEmag0oU46H+gwe0OtKnb5WGCBzux38otdPKBJCNUVEi2oDZF6bnL8Wcxw1X6g2QOZ0l7jiYUT8FCtGyQYDotb2SkQ/PieomgzrGSDr/kHK+ShVNO4P/Drm9I/zR1wEp7RGQGkCrmDu9wdBxro/zb2DskYDour+rMr1/qAhRd2/LsWmqZ+ND+uInoTjq/9z3gtS1P1JpWp/EKSs+5NKzf4gSFn3J5Xq/YGTk1Nx5OfwO016HVAoOQPcHDBxueq7CHAGOAOsmAOqk/CZ4/l830WAM8AZkKu9wFOwmR3vA7eKEgGzwAbR9rxIKbAHTGXHfWCoKAaYW+wnRdv9vM8BDQn6LAQD4soe88beKjc3PfmjtN/gug2rwFtwT7SdBwvY8TxwQfQxt9I/2LIMngMj7Hg6uAumUWTcBjPZ+e/gtIZlcErCfl/BH7CJtS0G88FWsEv0P+ONfTqk2gCjbrARLGJtq8Ea0e8FOOyN/v+gFQZUqcjZDWbU6POGiqBvtpbC70FrzHmzDH7UVAqniQDz1PgsuBwzbgdNit00Z1ixFzB9toM2sCTh+w5QNDzWbIB5orsfHAfLavR5SFd8Z43zphS+Am56o/9HqMKA12BFjXNfwAlwh1WBbaIW4OoFK7XNAWa5Wy/azNLWTrn+krW/Ah1gDlgVYWxHXneFcQYMU80f/nAT7nvBDfAjov8I5fwjMBcsZ0YcBJ803jDppNBemmGsGXOJ3sPJyckpl/oHWIx9QKE41AcAAAAASUVORK5CYII={scale="+$scale+"}>"
+!endfunction
+
+IBMEntityColoring(language)
+!define language(e_alias, e_label, e_techn) IBMEntity(e_alias, e_label, e_techn, #232F3E, language, language)
+!define language(e_alias, e_label, e_techn, e_descr) IBMEntity(e_alias, e_label, e_techn, e_descr, #232F3E, language, language)
+!define languageParticipant(p_alias, p_label, p_techn) IBMParticipant(p_alias, p_label, p_techn, #232F3E, language, language)
+!define languageParticipant(p_alias, p_label, p_techn, p_descr) IBMParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, language, language)

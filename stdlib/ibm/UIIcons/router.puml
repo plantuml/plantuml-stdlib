@@ -1,0 +1,13 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $router [64x64/16z] xS61400000CXXFdRpkElMXu0001m
+
+!function $routerIMG($scale=1)
+!return "<img data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAAIGNIUk0AAHomAACAhAAA+gAAAIDoAAB1MAAA6mAAADqYAAAXcJy6UTwAAAAEZ0FNQQAAsY58+1GTAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAAOxAAADsQBlSsOGwAAAtdJREFUeNrtW9tq1FAUPTMRC1aLlPodUoqo6EOhN31XP6C/0U6d6dTf8VWnVrA3SpF6/QQLVXqhVF98cVzBPRgOJ80kJ3vvDHMWrIcTksxZK2eyL0mMCQgICNDDc6IaImXxTXCaxpvDZEBPfA9qJkQVEK9qQlQR8WomRBUSr2JCVDHx4iZESuJ/gVetbcfgqLQJdSXxjx37zoAn1rYmd55QFxb/E3wE7jj2/wrOgqeSJnAaULPGF+ACuHvJMZ/BOfAs41wDYUB85dqW+L0+jvsIzoPnNG7nvIHmwhXme8AK+BvcAPdzHHdAJsR8wTlBbgOMh4D3RFbUzZAjGBAMCAZ4hzrNjk7eGqPUKLAKNhLjlqL4OoVcsRWwbImXXgn2lW/QnMQM6CQyNWkTXMv+nObkna/nwRS4Do47jGgJij+jjPFAuh9wBL4Bn4DXBOp4l/hTKp4+aDVEvtPS4zbBJf6EyudPPicuoyP0A3xNJnB0dFzij6mB8qXsmj1Gl6EsbpUovlTNEplg0ejAIT6kwhoGFP0LtCRWQFm9tofgK/A6Q05wWWd5x3fiZUSBBxQFOMQno8h0Ylv8TOEZuAV+0zTgPom/wZwNppnwFHwHHmoYcI+SoDGhVNhlwoivCUXvAXepDvAR3y04F9c94YLqgf28QopGgTnBK99PdBijOYmFwTXz/6GHpPg0E9o0p9zw6QjFHZg/tJSlu0Em8Zs1n3zB98FI0+jC2/iQCgcDggHBAG4sUeKUF3fo2IE2YJXi8zqlzv2i13Feo3MMpAFxiGwkMrUOFU9ZmCTxN2nc4Ay3nAZ0Helqh8rnNNw2/1rt4xnnKg2c7wmmVW9xHb8NLlr7vwTfghOSNUbN8COto2M3UOJW9y3pAkviTdG0ZoaNUY3qUupdYZcJWTdQkQJL8m3xfk0QLa2lvxfIMkG6r6DyxUiaCeLitQxwmaAivgpQ/2wuICBguPEX8EaiNKaGezYAAAAASUVORK5CYII={scale="+$scale+"}>"
+!endfunction
+
+IBMEntityColoring(router)
+!define router(e_alias, e_label, e_techn) IBMEntity(e_alias, e_label, e_techn, #232F3E, router, router)
+!define router(e_alias, e_label, e_techn, e_descr) IBMEntity(e_alias, e_label, e_techn, e_descr, #232F3E, router, router)
+!define routerParticipant(p_alias, p_label, p_techn) IBMParticipant(p_alias, p_label, p_techn, #232F3E, router, router)
+!define routerParticipant(p_alias, p_label, p_techn, p_descr) IBMParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, router, router)

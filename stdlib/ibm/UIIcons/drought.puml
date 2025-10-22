@@ -1,0 +1,13 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $drought [64x64/16z] xS61400000CXXFdRpkElMXu0001m
+
+!function $droughtIMG($scale=1)
+!return "<img data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAAIGNIUk0AAHomAACAhAAA+gAAAIDoAAB1MAAA6mAAADqYAAAXcJy6UTwAAAAEZ0FNQQAAsY58+1GTAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAAOxAAADsQBlSsOGwAABA5JREFUeNrtWn1oTlEYP5ttJhs1RDZTiJiyPxR/iJSPCO9I+SoSVpZJaNgUipWRZMsQMmVTK2ZJbP5ZosgflK0UymxavkpbbTbM7+l9bm7Hfb333vfe+967nV/9et/n3M/nued5znmec4RQUFAYzEiI03OHgdvBdWAmt3WDjeA58O1ANsBMsA6cHOF4L7gPrPDiZYZ4rPwk8Inuq0d6p+XgV/CZ2y+U6LEBroAZJs89/Z9eEsgeMB88JrVdBleDh9jvF4EpfCyJf++7+VJJHhpgtyRTwNuhk6+B/fyrYelAcYFsMCS1nTA4r06SJw4UAxRIve0l2GRw3ndJTnX7xbxwAW3M16PcwvXF4FoeQRI5VtTzPb4EwQAbwVE6mYa3agvXy66Sy9wDbgVv+d0FCg0if7cD9x0B1oJr/GyABeAsnfwTPO9wDLsKjvarC8hf/w7YavEefeBR8DrLm1lOZnkkP+eI33qA0dBXbuM+pFgp2MYsNVB2pdc9gKyfB64C54DjwPQo10Qa+qKhKkJbqU6e4qUBSPFTNh5abvMdP5poS/fCAIls9QM2n1UtfAgrMSAW5YVDQ1/cZoIhA+WpcHGRv+wrsEs63u+xLtrzOsEP4AOec7TEaoBkzs31aAdXgC98+FEpHsxgUgZaCe7l4dSWC4SkgNfrY+WN6h27wHu6eYNlA+RJ8qWAKK8HFVrO2HWB2ZJ8w2Q31KPTAyW1Ai/NSRaCZWCW7vhO8ALYbLUHjJfkZhPX5JgYy91CB1jDOUib5A7b7LiAna+5SZKfu6BoZ5QP9Q0sktqWeJELUK6eL7XVufCcVoPMU0aTQX7iqgFI+bvib2WX8IazQKfRIMnk8xlWp8xOGCANnCvCS1pPxb+LHvsjjcExgtYYfunkLE64NnAgdC0ZsjLDO+nS19eCcSWP83ojWMo53KwHkPLFLkd8muE99CoZMgvyeVrtOQj+dtkA5Fq0jlghuYPrBRF5OOpg/6/niN8nvAM9q5DdgcrvtJo0wWyNwIwB4rWHwCpa2CWEX2JAIKAMoAygDKAMoAwwmJEQw1yfaoNbwJsWn7lehFd2UvygcywzQVKAymNjhPlVH5qxnfVTz0tywIUoDR4LHo5y7nGwxG8u4NTyeAn3hAKDpIRqcbQnID8oMcAMFovw1pQ0qZ3aqB7Yw3Iqu4m8i6OL2xrjbQC7GyXfcR5OawbDde3TwXngbXCoCJfHlknXfuaM7VGQe4CGaSK8Bifv59MWTnKl9ves/Ougu4AemWyEnCjnNbPy7X6KAU7sFaaCSA13/ewI5zzmuPHJb0HQqc3SPTwhotWYqdIxigMh4c3yWNwMQKDSVC3HA833q3hU+BGkqbAT9yzj/0XC+40SCgoKCgoKCgqm8Ad3LbNvGEMByQAAAABJRU5ErkJggg=={scale="+$scale+"}>"
+!endfunction
+
+IBMEntityColoring(drought)
+!define drought(e_alias, e_label, e_techn) IBMEntity(e_alias, e_label, e_techn, #232F3E, drought, drought)
+!define drought(e_alias, e_label, e_techn, e_descr) IBMEntity(e_alias, e_label, e_techn, e_descr, #232F3E, drought, drought)
+!define droughtParticipant(p_alias, p_label, p_techn) IBMParticipant(p_alias, p_label, p_techn, #232F3E, drought, drought)
+!define droughtParticipant(p_alias, p_label, p_techn, p_descr) IBMParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, drought, drought)

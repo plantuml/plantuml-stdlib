@@ -1,0 +1,13 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $codereference [64x64/16z] xS61400000CXXFdRpkElMXu0001m
+
+!function $codereferenceIMG($scale=1)
+!return "<img data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAAIGNIUk0AAHomAACAhAAA+gAAAIDoAAB1MAAA6mAAADqYAAAXcJy6UTwAAAAEZ0FNQQAAsY58+1GTAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAAOxAAADsQBlSsOGwAAAvFJREFUeNrtmU+ITlEYxmfcCeXfwsJ2TEpTFsifpDTDSIqSGkqULSJFYTMzVzNZsFFKVsSUyEayEBlTYyHFxoJsWEwJJUWhmcbz1pl6u9373Xv+3jPnnqd+9b3Td+85zzPnnnvO+draoqKimqzEs/4sBB/ABrAYfAO/bDbY4VkAW0GX4Aj4BFbabHCeZwHszNTPbDfoewBP51oAgwIVLQfrWD0Dnltsz/gcQB0ZYnUqef0O0M7qt+C7xfaMvgWynekBf8GExD1Og/Wsvt1iDjgPhjPtkcbreASy5kk/wZjkffokJsAx0QbXkMrjkFgyvwu8krjPKjDA6j/gBJgq+P6kCKFfrB2UR0LigXnSAbCH1S/AzZJrjISQeGCedAF0s/oGeFnhOu0QEg/MUx+uZwycA18qXq8VQlKzedJGcJLV9Oo7I3kP5RCSms2TjoLtrH4EHijcRymEpGbzpIugk9VXwRvFe0mHkNRsfhG4lunHqZx3vLUQ6t4MbQPzWf0RfPbtQGQ8k+DswUW/SHpSo/1jYAur74PHmp42gydgWc5KMVWdA2yFcAWsYPUl8N6Vedm3gOkQyPhlVk+D42IZ7MS8yjrAZAj7wH5WvxYTojPzqitBUyHQYmctq28p7CC1zOvsBUyEQP/tpaweUHgDaJnX3Q3qhNAtNkCz+i2Ww9MuzZs4D1AN4RDYnTn8uOPavKmFUJqzUqSO9Ro6/clTrwnzJkZA0UigzowUfLdDbH8XsL+dBV8l2pvIaU/pUNTkqXBa8Dlv+C5hNe3731lsz1kAVTti8tefVLfDdWyGnP/641MANPQ3GRwBTnaDJvUP3BUbHvr8QxyAREVFRdWi9grfmXHQRmNegzGAGMAcnAPKdBCMtthXBD0HlJkP+hHIMz/VlACKzB9uQgCtzN8LPYCgzMsGEJx5mQCCNF81gGDNVwkgaPNlAQRvvlUAjTBftE5vjPmiEbC3KeZJecfiD8FqsCZ082XBjIrHISoqKipY/QeD8Nowxy4gAAAAAABJRU5ErkJggg=={scale="+$scale+"}>"
+!endfunction
+
+IBMEntityColoring(codereference)
+!define codereference(e_alias, e_label, e_techn) IBMEntity(e_alias, e_label, e_techn, #232F3E, codereference, codereference)
+!define codereference(e_alias, e_label, e_techn, e_descr) IBMEntity(e_alias, e_label, e_techn, e_descr, #232F3E, codereference, codereference)
+!define codereferenceParticipant(p_alias, p_label, p_techn) IBMParticipant(p_alias, p_label, p_techn, #232F3E, codereference, codereference)
+!define codereferenceParticipant(p_alias, p_label, p_techn, p_descr) IBMParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, codereference, codereference)

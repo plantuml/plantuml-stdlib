@@ -1,0 +1,13 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $videoplay [64x64/16z] xS61400000CXXFdRpkElMXu0001m
+
+!function $videoplayIMG($scale=1)
+!return "<img data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAAIGNIUk0AAHomAACAhAAA+gAAAIDoAAB1MAAA6mAAADqYAAAXcJy6UTwAAAAEZ0FNQQAAsY58+1GTAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAAOxAAADsQBlSsOGwAAAypJREFUeNrtmluITVEYx9eMUW4lxciURsTjCLkUiofJtVxqpohopMalkcthjJDcSW6JFMYML6YpQ2KO2zxgNFJGRFEkuZfcb5Pj/7X/Ozt5kNl7n73Pt/71a+/zsvda317ru61jjJWVlZWVlZWVUmXxOhOUxGzsh0F1ax+Szet0UBCjyRdwzK1Wjue+CYyLiQHO+vWgbO0+QL0BchTOeRTYBa6DUk0G6AW2gSL+fq5lBXQAK0ACfAbzwFQtW2Aa2Ap6gP1gLXgLJmW6AQaC3WAEuMjwfleDE+wGNjGrfQymgJNhRIH2vH5J08TbgoVgDee0GuwA38IKg0cYXipAJfgZ4uTHcLn3A8dAOXgWdh7QGXQBh8B8sAhcDXji3cFpMBHcAMNBYzoToUtgJ5OMK+A4v8bTgAwwgN69hKsuFYVMMMlKbQFDzmSGoe3gq4/vqQE3mdi8j1oq3MI9KStgAw0hX2k5B+5XLyDyxdAbybXBIIakE6AB9NdWDTaD0aAY5HPpHgBdtVWDNfTaCebmYpB1YB+3jYpyWBzheuYNWxgxShk2k5oaIhIaZzB2fwT1XB19tRjA1TUwhFFiMLjDFaHGAKIsjsNt0acy2Qf8qZHMGSSrOwWWgocaDJDPLK6YdXohuKAhCnQ0v9tTn5gyH9QSBuX4bTPIZSLktqcyPhEayng/jLFelvu9qKTCQRogj19cvvwD1u1nTMQUhAHagWXc6y283wt++PgOyRt6s9T+ECUDFNG792TJWsGq0ATwnrE0xEpQFYWGSCEH1cBGSHPAq/eWcU53Kpk9lhmnNZYWA7wGTxjeakPavi/AeDDBOK04Oes7apw23KuwDTCb1zC7wa7EsZ4Hi8Eq4xx7ScW551/8jl8GSMfEvfpOh1jFMlt6kHNZZtdHvRjyU+ITZrHMluhwDtSBPloM4KqRZfYcJmBSb2wEnaJWDQapFENxLdPuBFdHuRYDuHoHlrDoktK7mj4rmclb4G+6b5xzRMlRHrmhUuN/hOrYfDFaDWC8abP9m5znXsLG5ZiMWw5gm/x4UBvPSsiL0Yd7yazvtrGysrKysrKysvo//QJWpaJkia54PwAAAABJRU5ErkJggg=={scale="+$scale+"}>"
+!endfunction
+
+IBMEntityColoring(videoplay)
+!define videoplay(e_alias, e_label, e_techn) IBMEntity(e_alias, e_label, e_techn, #232F3E, videoplay, videoplay)
+!define videoplay(e_alias, e_label, e_techn, e_descr) IBMEntity(e_alias, e_label, e_techn, e_descr, #232F3E, videoplay, videoplay)
+!define videoplayParticipant(p_alias, p_label, p_techn) IBMParticipant(p_alias, p_label, p_techn, #232F3E, videoplay, videoplay)
+!define videoplayParticipant(p_alias, p_label, p_techn, p_descr) IBMParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, videoplay, videoplay)

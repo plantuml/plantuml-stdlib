@@ -1,0 +1,13 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $groupaccess [64x64/16z] xS61400000CXXFdRpkElMXu0001m
+
+!function $groupaccessIMG($scale=1)
+!return "<img data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAAIGNIUk0AAHomAACAhAAA+gAAAIDoAAB1MAAA6mAAADqYAAAXcJy6UTwAAAAEZ0FNQQAAsY58+1GTAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAAOxAAADsQBlSsOGwAAAuNJREFUeNrtWstOFEEU7ZHRHRvYCBlZG4ZEWLpiDNEE/QJ0CUESZIEL+QZd4MYEY3QrP4AaUePwB5o4fABMZtzAxp2EjKeSM0lRNt09PdVTj6mbnITqrlvhnq57+57qiaJgwYINs5UuuV4BXgA1YCLnGoOyTsr9NlAHngFN9Wb5kuB/AOOePGTxAJeAe8CsSsKVGIfnHgUv2zhji9IIqHmc8rUsKTBpWY7nrWNxNWIyyw4YKisXsGYVWGHRmeK1I2AfeAs0fCXgKvASWANGlHvTxAbwGtgEznwi4BrwEVhImSeIWQduAveBv6YJ0FUDtjMEL9sCfbzYAVVue9mOgS3gO8d32FlWpDnCZ8d0TdCxA1aUnG+y49oFfhPi71tKFzZCX+dT4K4yFj33acy8U95L8nWSgCllfJAw9yDF19ki6KzpIOBIGc8nzJ1P8XWSgC/KWFT7sZh5Y7wn274PBIj29jzmPEFo8OvEEq/Jr0Hh886HPqDB9nZdunYDeJ/iZ7wH0FkEnwLfepj/lT7eaAHR0y8miCF52+8w+DMb1KRONSgCesIA5QA6bI0/M4BDm9RkEecBDf6DTqhJWxohY2qynx0gntoq8BCYAUYz+pVsUpN5CRCHix+o+opSk7Kg2mUN+SmR0FWTm4NOAfHk9zQFb1xN5iFAbPs5jflvVE3mSYFHyvgTSWkOixqsKuPHfQZvVE3mIWA0pmI7qyZt6AOMqsmyBQQYVZO2dILG1GSeHVDE12KdatK5FNClJp0noB816XwNcP5EaJBqsmt/gF98W7zJezZgigAdalIQdptYBh4ALRdSQLeajLjWHte2ngDdarJrc1zb+hTQpSYrzP1FZe1Xtu8AXWqySd+kta0kQKeaPE5ZO/QBgYBAgH1vgZJN64UUCASEGvCftaKLv6vvDDine7VOD3NbWXZA3eMHXs9CgPgqe+Jh8CeMLZUA+be+bQ8CbzOW2cjRz3fBggUrzv4BDPerbyqMp8QAAAAASUVORK5CYII={scale="+$scale+"}>"
+!endfunction
+
+IBMEntityColoring(groupaccess)
+!define groupaccess(e_alias, e_label, e_techn) IBMEntity(e_alias, e_label, e_techn, #232F3E, groupaccess, groupaccess)
+!define groupaccess(e_alias, e_label, e_techn, e_descr) IBMEntity(e_alias, e_label, e_techn, e_descr, #232F3E, groupaccess, groupaccess)
+!define groupaccessParticipant(p_alias, p_label, p_techn) IBMParticipant(p_alias, p_label, p_techn, #232F3E, groupaccess, groupaccess)
+!define groupaccessParticipant(p_alias, p_label, p_techn, p_descr) IBMParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, groupaccess, groupaccess)

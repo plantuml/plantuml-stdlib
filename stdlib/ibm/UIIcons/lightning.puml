@@ -1,0 +1,13 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $lightning [64x64/16z] xS61400000CXXFdRpkElMXu0001m
+
+!function $lightningIMG($scale=1)
+!return "<img data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAAIGNIUk0AAHomAACAhAAA+gAAAIDoAAB1MAAA6mAAADqYAAAXcJy6UTwAAAAEZ0FNQQAAsY58+1GTAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAAOxAAADsQBlSsOGwAAA1ZJREFUeNrtmkloFEEUhsvEBVFRFBdU9GIm0YsgBDUjCOJB8OTBFVQkuOJFPLkhHkQURBAM7oK44AKCoHgRRHCJInpwRxTB9SIR44L7X6QGmmdPUj1Vr/vV2D98h65Mqid/v6p673WUypUr1/+sbgxzzgG7wVDP874CS8Eln5PWeP6SPcE+hj9ea6SZW0k2YAIYwBixfaQbUGResnd8T9id2YCNYKvDfAdBc+T6hvQIaCLX1xznm0SuRRtQRza/H+CWw3x6Lxkbuf4NWiUbQJ/+PfDFYb6J5Ps9Bm2SDSiGFv7SDZgckgEDyXp1NaDGLIFgDGgiafVz8NZhvgaSULWZPUCsAdzh32pOAdERENz692WALoAamU+Am5IN0AVQb7JeH0pPgHwaUIwJV5f1ShOgRxwJEKcBwYS/r2qQewNsJhVhOT0DK8DlNCPAdwEUlwDZagxoSXsJ0Kd/17EAoglQUn1N2wDuBCiJ9Ma7Pu09wLcBhwxdaQk4TMa2g4tpRkBcAXRd8Ws82EPGroBNaR+DvgsgG/UHZ0nipe85H/xK2wDf4W+jI2a3L+knmAfeZZEH0BNgocFW0xOe2WvBLDKmu85Xs8oEGx2fZpL6fgrYRsbOgx1ZpsIu5/0n8Nrys0PAKdAjMvYCLAZ/sjRAv6h8U+HvPrH8XC04CYZHxr6B2b4KJJc94JzBRqvI0WVrwBYwjYytUR5fkfl+M1RO9RVEwEywjowdB3ullcO2OX6SDXA0OEq+3wOwXGI/wEaFBBHQC5wxmWZJ7Wbdfw7RAJ21jSJFy9NOPr8r5ohdpjo6QypEAwrkPi/NTh6nBWAlGWsxJ4EK1QDbDXAc2E/GbptdX1WTAXEbYF9T5ET/BeaDWfffq82AuAg4oP5thS8yy0VVewSsNhUdbW5cSON4ytoA3QDd6au5IdGAEaBf5PpjpHYfBE6rjldrXpobEg0o9/T1fY+R/MC5uRGCAaUNcAOY4bu5EYoBuhO0maO5IdEAWgTpnP6EqfO9NzdCiABd3g7mam5IM4AWQVrDOJsb0gyo62J+780NaQbUd/IzluZGKAawNTekGdBQZpytuSHNgELMGGtzQ7oB7M0NaQa0p93cqES1jHPrwmcqeA/mgvsqV65cuYTpL1/TrNx1zWOCAAAAAElFTkSuQmCC{scale="+$scale+"}>"
+!endfunction
+
+IBMEntityColoring(lightning)
+!define lightning(e_alias, e_label, e_techn) IBMEntity(e_alias, e_label, e_techn, #232F3E, lightning, lightning)
+!define lightning(e_alias, e_label, e_techn, e_descr) IBMEntity(e_alias, e_label, e_techn, e_descr, #232F3E, lightning, lightning)
+!define lightningParticipant(p_alias, p_label, p_techn) IBMParticipant(p_alias, p_label, p_techn, #232F3E, lightning, lightning)
+!define lightningParticipant(p_alias, p_label, p_techn, p_descr) IBMParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, lightning, lightning)

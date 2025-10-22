@@ -1,0 +1,13 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $humidity [64x64/16z] xS61400000CXXFdRpkElMXu0001m
+
+!function $humidityIMG($scale=1)
+!return "<img data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAAIGNIUk0AAHomAACAhAAA+gAAAIDoAAB1MAAA6mAAADqYAAAXcJy6UTwAAAAEZ0FNQQAAsY58+1GTAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAAOxAAADsQBlSsOGwAAA41JREFUeNrtm01oE0EUxyeVNtUISqVSrfiFgq0KIvSisRbqpYitoqKIorR6Uy+CH1gVBRE/ohUt6EVP4gcKVq2HqlDxA/QiCCoKPURN6cGDBxWqtvX/2BdYhpom2ZmdzXYe/CEzO7M7+fXN25mXqRDWrFmzZm30WsTgs1dBF/jzLui+iUGMMfTlZ0FPoHJoItQIXYe++z2QIkMA2qGYqxzjOjEaAGyAGoapb+BroQZA7t6W4XobtwltDKAvWJfh+nioDHoQRg9YCu3Iot12bhsqAMXQ5SyfV8Rti8M0BQ5AG3NoPxnqh56FwQPmQK159GvlvgUP4BJUmke/Uu5b0AC2QPUe+tfzPQoSwCQooeA+Cb5XwQXBdkWvsxgHxY5C8gBa7GxTeL+tIyygAgUgysFL5VY7wmuDaCFMgUPQWk0xZRDqDrIHzIP2a4wr+6CqoAKIsOtHNQJQPr1UToFmaLcPC6sZ0BfoTZA8gF5Tp33cWZ7iZwYGQIL38Wn7Ce2B/moCQM86FxQAtNjZLNUdhs5yvS4Im6AlQQBwQirT3DzPn29qhnDSNIAV0DKpbic04CrrhBD3uNnyDKBFKt+FXg7TTieEFlMAJkBNUt2ZDO11QVjNY/EdAG1OxrrKH6EXI/TRAYHGUGsCgLzV7cyynw4IcRMAaqTy8xz6qoZQYwJApVT+kGN/lRAqTQCokMqpPO6hCsIUEwCGFLmvCghDJgD0SuWpBiH0mgCQUgjAK4SUCQBJqVxrcDokTQDokspNBmNClwkAD4XzA2baFgknJ+g3hH4eS17mJSX2m/fjc7kc4dfRLUUQ3kGfeK2f6Q/1CLpqAgDZNykZUsXu+NVHCHTErscUgB5eh892eQHtz69Bv3yA8Bg6YjIfQLZXOD9YpG0mdAcqUbjZ6WQQbhvkZ3syFWnxPgZZ56qj1PVyHrhXTyjnabVYqj8G3QgCALKn0HyoWoKwHnrtISbQdKIs0wKp/rZwUm8iKADSbko5wmmuOjrzRymrhdBbDprZGIGkH0Mp4VomXXsFrYH+qBi06sPS46Ar4v8nPilj3MG5gyRPnwgvo2lLSwnWdcP8xd3rg2aFAVbbafGD0FGFHjbA0f646oHqPC5fzS7c6PE+94RzzO69jkH68f8CcQ5YK4VzFDYb+8Ex5aLILdUWSABpK+FXJYGoYE3na585HvTxF+/mpbY1a9asWbNmzZo2+wc9zqSmFKifzwAAAABJRU5ErkJggg=={scale="+$scale+"}>"
+!endfunction
+
+IBMEntityColoring(humidity)
+!define humidity(e_alias, e_label, e_techn) IBMEntity(e_alias, e_label, e_techn, #232F3E, humidity, humidity)
+!define humidity(e_alias, e_label, e_techn, e_descr) IBMEntity(e_alias, e_label, e_techn, e_descr, #232F3E, humidity, humidity)
+!define humidityParticipant(p_alias, p_label, p_techn) IBMParticipant(p_alias, p_label, p_techn, #232F3E, humidity, humidity)
+!define humidityParticipant(p_alias, p_label, p_techn, p_descr) IBMParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, humidity, humidity)

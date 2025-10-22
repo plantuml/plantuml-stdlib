@@ -1,0 +1,13 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $charthistogram [64x64/16z] xS61400000CXXFdRpkElMXu0001m
+
+!function $charthistogramIMG($scale=1)
+!return "<img data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAAIGNIUk0AAHomAACAhAAA+gAAAIDoAAB1MAAA6mAAADqYAAAXcJy6UTwAAAAEZ0FNQQAAsY58+1GTAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAAOxAAADsQBlSsOGwAAApZJREFUeNrtmk1IFkEcxkcNCTE6JKHmoQhPgoSChwIvChKCJy9F0bVU8AtCEDQVJMXwYFDgxVCsQycRpehSEIgUePHiB3Txon2AeFERfYb3CYZhX3N9Z9/24//A77D/3f3PzrMzszO7q5RIJEqycjxix2c4JjbKTXoLEAPEADFADBADkqwLWS7vFmgCteAmuMr4NtgEX8AcWImbAdXgOahPs/86qQMD4BPoAd/j0AW6wdIplfdSPc/pjnoLeAlaM7i2MXADtEXRgP40ldfNewZ8BVuMXQN3wAOPlqJz7LBrRMaABtBnxX6Bh2DR4/gN8gbcBdPgirG/j13iQxTGgMtgysqt7+DtNJW3tchjd6zrnGLu0BswCIqN7UM++tZ85FjjOYdGrJi5Q21AJWixYkNsvn61xHNNtbCM0BowYY0r62Akg3wjzGGOWRNhNeAeZ3imOsBBBjkPmMNULcsKlQGFYNSKzYMFB7kXmMvUKMsMjQF6mltmbO+DToetq5M5/6rM1YCY66jp2xOeF3yuu9IGc5pqB43/2wC9eJm0Yj/AcACP12HmNq/9Ha/h3MrziD2ztu0paAGoAr1gHFw09h3x+b0ZgAF6TvANPDJuXD64D0rAT/DHmjv8U2f5LuBHT8DrgBdYj8GrDM7PCWIQ1He+KwuVVyyji2WGYjG0zuXqR5U96a63yuV2ebYN2FOpV1jLKvX66r3ffudI2vAK0Mxxp0alXrEVujbA9bdBl98etfFvSWhWg5GSGCAGiAFigBiQZLmYCQb9T1Gg+aULiAEyBsROvsYM6QJigBggBogBYoAYIAaIAWJAQuU1T9b/7pUmpc5eLeBz0rvAU/A7KQZ4/R+wC2ZV6pt7EbgUszoPKJFIJKJOAIPWbYvHtA12AAAAAElFTkSuQmCC{scale="+$scale+"}>"
+!endfunction
+
+IBMEntityColoring(charthistogram)
+!define charthistogram(e_alias, e_label, e_techn) IBMEntity(e_alias, e_label, e_techn, #232F3E, charthistogram, charthistogram)
+!define charthistogram(e_alias, e_label, e_techn, e_descr) IBMEntity(e_alias, e_label, e_techn, e_descr, #232F3E, charthistogram, charthistogram)
+!define charthistogramParticipant(p_alias, p_label, p_techn) IBMParticipant(p_alias, p_label, p_techn, #232F3E, charthistogram, charthistogram)
+!define charthistogramParticipant(p_alias, p_label, p_techn, p_descr) IBMParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, charthistogram, charthistogram)

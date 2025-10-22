@@ -1,0 +1,13 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $logovmware [64x64/16z] xS61400000CXXFdRpkElMXu0001m
+
+!function $logovmwareIMG($scale=1)
+!return "<img data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAAIGNIUk0AAHomAACAhAAA+gAAAIDoAAB1MAAA6mAAADqYAAAXcJy6UTwAAAAEZ0FNQQAAsY58+1GTAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAAOxAAADsQBlSsOGwAAA5dJREFUeNrtmGtojmEYx18blqaI8YGcopWSU9uHJUKhyKE5hcQW+fA6fBDfKKnttc0OTh+ML0wKOSQ15lAUGjEbjTFiGrIZQ9PG+F91PfV6eu7D83zQHrv+9eut97nv67nv67nv67ruOxIRiUQikUgkEolEIpFIJBKJRN1JPfh3OtgJpoD3YB8oBL8D2u0P1oHZYBQYCd6A++AYKAe/PPr1AktAJkgHI7jdc1AJToEK0O7RNwksBfNAGhjK428Ed8AFcA50uh2wkgeV6DK4lZ3gV8vBITBA04YcsR5Uxf23AsTAcIP9pyCbJ+XMgWztBoMt+maBu84fNOlroK9H4wywH3T4mPxmcBT0MbQbwpOo4S90AuwA/SzekQLWgmfcl77sFpBs2XcNeAEeOw7IUzSmJVUHHllOfhYoi9tWJtG7F4NlYKrPVZYAFvGST/fZl947H9wADWSoSdM4y9IoOauUB+ZHtOdTA8aZnmBMwL69wUEabwIvP5WmgdEWBjdwwAqTJoCZtByegKhHEHQCzFdw3ZBJygxBL5/37CTDoH6AArAHnOTMkcZf26SPYBf3p7jQxpPUbcnPNOlW/soTFY0ojZVoUuJcsEnzknu8z8s50Okmn8Erso6hAH2Jg57OCa95/JQi60EtOM/BLlPTr9nZs3nu/BinYRzgVNpo+DLF/NtuaFfiSouOqviZTtt4BbhFzryq6TfIcUAtLxuVshX/UxCao+nXwMWLjW4GfEa6FbBvQnzUjmkaLlTs8agh8tOX+2npgA8Bn0W4eg3y7K/BV2qCXRJXjPFK5r2p0hdOjV1a7q8X81ETrOaaX6VSDrChckAF1+lemuzKFFGN3Q6LwNUlHRDhHGxaBTPAOE07yuFvw+qAs1y0eGkVl5G61Ef1wt6wlINeDujkys1LA7noWaCxeRlUh9kBpOOaJRwzVGUFYToQqBxAVVuR5hSm0gMuX0PvANJh8MmnvfyQnQi1DvgGDviw9Qqc+Z8cQKIrse+Wtop8lL2hcUCTZUFD5/YjFu2a//GziGEbN9tcYVFh9M7iONpmYUuVHlvYiToHt/i06ahGc5dRbeOAVj4NqrZCoY8jb47i3iFXcx/h1Ca5iv9zDO+ki5XTihhXnGg58EaeZErcsfgh2O6z6nvJN0Tj2VYNT6zIou9tXgVj+XRKKZfuIq9Y9L3Ip9dUTvF0f0C3VPURkUgkEolEIpFIJBKJRCJRN9MfrZTA+djzoDMAAAAASUVORK5CYII={scale="+$scale+"}>"
+!endfunction
+
+IBMEntityColoring(logovmware)
+!define logovmware(e_alias, e_label, e_techn) IBMEntity(e_alias, e_label, e_techn, #232F3E, logovmware, logovmware)
+!define logovmware(e_alias, e_label, e_techn, e_descr) IBMEntity(e_alias, e_label, e_techn, e_descr, #232F3E, logovmware, logovmware)
+!define logovmwareParticipant(p_alias, p_label, p_techn) IBMParticipant(p_alias, p_label, p_techn, #232F3E, logovmware, logovmware)
+!define logovmwareParticipant(p_alias, p_label, p_techn, p_descr) IBMParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, logovmware, logovmware)

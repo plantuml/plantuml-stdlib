@@ -1,0 +1,13 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $touchswipe [64x64/16z] xS61400000CXXFdRpkElMXu0001m
+
+!function $touchswipeIMG($scale=1)
+!return "<img data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAAIGNIUk0AAHomAACAhAAA+gAAAIDoAAB1MAAA6mAAADqYAAAXcJy6UTwAAAAEZ0FNQQAAsY58+1GTAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAAOxAAADsQBlSsOGwAAAy1JREFUeNrtWj1oFEEUno0RtVIIFoqVCIriNWIsBDUJIinstBEUvCb+YanE3FVqHxEEQ0hhTCBWdolBLo1B0EKMCBFBUPxFr1Q5/9bvOS+6nLnZnc0su3v3Hnzs7t3OzL5v37z35s0qJSLS0uLx8ShQbBKdRoDRqDe38fEIUGgC5QusS2RpD5w/AHpzTsCkbYO2VvcBQoAQIAQIAUKAECAECAFCgBAgBAgBQoAQ0Fi6Ehi7Jy8EXAQqQLfDcamvu8ClrBNAypeAy0yCK6mw8gNpk9AeUflSAmOX+ViqO2aCgIW3UwN2AzMO/MJMg99rPJYrEjoNYwXlT/W4VaPA3+pxIwugN+Hz8V7AXMOY7+N214GHESyGptc+triyI+WiVLenoviA+jlqesAdTNQrpTdbjgG7gEeGNqT0BcfKO48CZX7AUsicPwG8BrYBW4E3/JspDA6krXyYBQRJqIQ4lg3AM3ZoJPP8mykMdkd0VpnIBOM8qJdAn7IWEAKEgOScYKflvDRFBT+CD0jC7xQ4D3AaBeJKB3Cez29yaMy0Bbj+PmCn+vfRxTmlv0DpYcsYAp4kUIOYXAoBruUTsB34xcreBt7z9CjyIusD8A2oZjkRiiuPWWHFKTFliVuYgHkuiHTw/xNKf6f0vVmigM9vfkHo/CnwGfjC52uAs8AZ4BBwupmiQFhmSATdB67y9WFgDzCYVhQYB1YmSLS/yPXXwDWdr4qoIMlcg//nWBdrAkaVxbd1McU2L+gyePneJKaASxmv63sMWG64zvRyOI6MLUKI6VrWAkKAECAECAF5jgL+Esn06lJnk9hmrMaM0ZUFVAMLm7i1g2qeLeAlcJD7+xHjGTYBdyLe76JuMeXaB0wDq5Xe5rKVvbwynM6zE5wFngP9Mdr2c9vZPBPwU+ntM9rtOWXR7qTSZbIy95HrtcAt4ABwReky13DI/UW+l/bpJyzGcRoFljkmlJzLRrYG2jF+of6vBpMC15QulNKiqM/i7ZPFrnfwnFSLvEH1Ay8hyzqu9N7/OuCj0hunJJuBtcA7Jmkk7UTIS7DvFTy/9wfe2luli6GEmhIREUlbfgN9LZ8XaHjdRQAAAABJRU5ErkJggg=={scale="+$scale+"}>"
+!endfunction
+
+IBMEntityColoring(touchswipe)
+!define touchswipe(e_alias, e_label, e_techn) IBMEntity(e_alias, e_label, e_techn, #232F3E, touchswipe, touchswipe)
+!define touchswipe(e_alias, e_label, e_techn, e_descr) IBMEntity(e_alias, e_label, e_techn, e_descr, #232F3E, touchswipe, touchswipe)
+!define touchswipeParticipant(p_alias, p_label, p_techn) IBMParticipant(p_alias, p_label, p_techn, #232F3E, touchswipe, touchswipe)
+!define touchswipeParticipant(p_alias, p_label, p_techn, p_descr) IBMParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, touchswipe, touchswipe)

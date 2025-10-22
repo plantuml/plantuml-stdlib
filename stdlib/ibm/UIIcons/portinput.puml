@@ -1,0 +1,13 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $portinput [64x64/16z] xS61400000CXXFdRpkElMXu0001m
+
+!function $portinputIMG($scale=1)
+!return "<img data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAAIGNIUk0AAHomAACAhAAA+gAAAIDoAAB1MAAA6mAAADqYAAAXcJy6UTwAAAAEZ0FNQQAAsY58+1GTAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAAOxAAADsQBlSsOGwAABCZJREFUeNrtmltsDUEYx6ctiihNVULVg4hLEC+qFTwoIY0iROhLPaAuUcJLQ3hwXN7wglASraSExuVJSN1KIqmmpSWRuITEpSkpWnrRxKn6fznfScdke85qZ07n1P6TX5rdPd3d77/fzM7OfEJ48uTJkydPnv5XxfTRdZPBIjATTGHiQSof/wRawCvmEbgHGqLZgOFgLcgFGT28NhlRAi6Bb9FiwCiwF2wEQzWdsxUUgsPgs60GDAAFYDc/fRNqBj5wDPhtMmASp2p6iN9UgTvgCXgBGkEdHxvNmTMRpIEFYBaI7eZcj8Ea8NYGA7K5jQ5zOPYBnAZFoP4fz5vK/cd2kOJw/Dsfv96XBmwGJzj9ZVHvfZDb7a9eXmMQyOPzJSnH/HwPRW5PFqcx+PXgjMM5r4As8AD81nCdDm4+FOR4ME06Rk1kOWdaTSQNmAeuKm2UnkY+2AV+GmhqbeAy+AIWS9eO4WZYw2OIiBhAnVcimM3bFPBK7gtMi7KhFqwAA6VMyGaDGiNhQCco49SjEV4OuOHi//aB+dw8eiN60k/5TRDMhMFgDigO1fTiND+NGu4Hal0G72MDhCYTvvKTDyqF3w4VkTIg2DbDiQZHh6RtXSZUcacod4zBLGiJlAFuRK/C1Zymuk0o59fkEN6O57+3bTKgjm/UhAlt/K2wRNo3g8cg7bYYYNqEZ2Cd9A1Cg6f33ESsMcCkCR2c+gulfSPBWdsMMGnCO7BDGu6PBSfVTtoGA0yZ8IP7gVRphFgNnttogCkTJvAwXb5Gma0GmDAhkUeHQdGw+ILNBug2geLbqnz+H1enrZzG9bbKx3/3u/x9vUNG/KVYEX3y8XeEGzUr2wn9wQCtitYMcNsEEsJkhGMfEGNBkBn8uhrRi+BJY5TtpmjIAF3BkyYr269tN0Bn8KQ0ZfulzQboDp6UqWxX2GqAieDHicBqkjy+KbfRABPBk3KV+CqFw/J6bD8NnuYC8pV9JbaNA0wFT8rj7/+gaEL0ok0GmAyeqk8OKPsKRTcLJH1lQKah4Ek065OkjP6Ohvpc1C16AuHWBh4qn7i6gqd2X6Ds2yO6mRI3YcAGcEsEZmXDLUwGv+vvawp+KTinZDVNgW0SIZbGdI37ycgjYCdv0+LoKnAzQk1qGSgVXYshJFoSoyq0N+FuXIfmglOS+7RKm8Pv3WrDwVPaF4uuFSCSn69f6ebJ6RAtOnwUgeKEGKmDpbScDu4K/TUCyZzyBUrad3Lal7pNXV2ilWEqcMxSbmiqCFSPtPNvelslQqs8W8A1h48dPwfvukQm2oqkqNBym7C4SCqonpTJNXEzIjmVyaWHuF+ryuTk2ab/tlBSlolS2RZuSlaXyqrSUSxNExrnRZQVS3f3CgtVLk8dZKvoKpev4MmMBuHJkydPnjx58qRJfwC8VAAI/dKUMwAAAABJRU5ErkJggg=={scale="+$scale+"}>"
+!endfunction
+
+IBMEntityColoring(portinput)
+!define portinput(e_alias, e_label, e_techn) IBMEntity(e_alias, e_label, e_techn, #232F3E, portinput, portinput)
+!define portinput(e_alias, e_label, e_techn, e_descr) IBMEntity(e_alias, e_label, e_techn, e_descr, #232F3E, portinput, portinput)
+!define portinputParticipant(p_alias, p_label, p_techn) IBMParticipant(p_alias, p_label, p_techn, #232F3E, portinput, portinput)
+!define portinputParticipant(p_alias, p_label, p_techn, p_descr) IBMParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, portinput, portinput)

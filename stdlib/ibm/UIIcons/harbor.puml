@@ -1,0 +1,13 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $harbor [64x64/16z] xS61400000CXXFdRpkElMXu0001m
+
+!function $harborIMG($scale=1)
+!return "<img data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAAIGNIUk0AAHomAACAhAAA+gAAAIDoAAB1MAAA6mAAADqYAAAXcJy6UTwAAAAEZ0FNQQAAsY58+1GTAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAAOxAAADsQBlSsOGwAAA+pJREFUeNrtm21ojlEYx48hZrNp5OUDSxbKy5RQ8rS0mpJ9QCTLB1teUmokVmobzcoSPoiaJPsgIz5IbKVpzRf5gqHZGI00zBLzMp42/9NzrW7H2XO/PPfbeXau+tXOvfvluv73Oee+zsvDmDZt2kayjQrgmUvAHhAB8+lYG2gBZ8GjZBVgAjgNdpicdx6Ugh9+ODXap+BTQQPYYOHcpVQ76kE0WQQ4AzbaOD8bTAG3vHZsjA/B54KdwrG34BC4R+XV4DiYaTiHX3MOPFa9BpSD5YbyO+oIH4I+4im4BIpAhqF/GgC3vXQuxQcB8oTyQdArOa+X/hfvWiUFyBbKzXHObTa5VkkBUsLsnx8CvLJRrfNMrlVSgLtCuQZkSc7Lov/Fu1bJr0AX2GUQO4N6+27QA9JBIbgufAajlDX2JEMqfIrSWzvG0+Z9yZIJNoFlIMfi+TxtLqY8ICkEGKDcPp2EGK7vidKbL/ZjHBDUcHge2E6psNF4KnwRvPDTmZQABOABlkmOl/kdfFAChMq0ACNdADc7wUEVfddNQAug+4DAbDAMvugmoAXQAmgBRrTFWxn6BcYZyvzv34rExecdvhnK/WC83RrwVXJTVWy6SSyWBPgilKcpJMAMk1gsCdAplHMUrgGdTgRoE8qLFRJgrkkslgQQt6pEFBIgYhKLJQGahPIqkKZA8Gnka7xYLAnAV3TahRsXKiBAofCi2ikWR4lQvVAuUUCAEpMYbAlQJwxb81lsy0tYLZd8NA656xIR4CVoFMbsVSEWoEqYV2ikGBIaCxwTyutAQQiDLyDf4vnuSID7Qi3gVgsyQxR8JvnEhLd/363R4F4aUAxZtuSBQVot+3c/UT/57NpwuEPS9jez2Ba4oK2cfBH7gg635wOqJQnFEWZ/44ObVko+iElPtRcTInyNv0iSVPDdHxUBBF9BzxaTtyJmY2OF3Rkhvq9nDft/304lJRx+dIyZ9KxK4XgP+dZt52ZOdojwB/E9vuuFlHMB2AqeM2vb2yolzcnKp+4OWCkc/wTWgid2g3G6ReY9uEnf3UnC29nGYttgnoEPLgnAM7wL4Kiklr2h7K/VSSCJ7BH6DC6DRZLJEj4e303D0ihNSPyxKQCvXZuonddIxvjcGujNdzkNItHt8kNVbz8FIA6X84mflJS0UDWVNZGFYA5NvERoSJs6zHO/Uyd4kiW4LO/metwscILempd2DRxI5K17JcCQ8SZxmMV+HjPWpXvy5nODcvtWN531ckV2KthCWdoKB82N9x0PwFVwBXz0wkm/lqTTqV3z2sF/KjcbTASTDR0qX8h4zWITmK3UX/Qxbdq0afPQ/gKbw7URYTGHLwAAAABJRU5ErkJggg=={scale="+$scale+"}>"
+!endfunction
+
+IBMEntityColoring(harbor)
+!define harbor(e_alias, e_label, e_techn) IBMEntity(e_alias, e_label, e_techn, #232F3E, harbor, harbor)
+!define harbor(e_alias, e_label, e_techn, e_descr) IBMEntity(e_alias, e_label, e_techn, e_descr, #232F3E, harbor, harbor)
+!define harborParticipant(p_alias, p_label, p_techn) IBMParticipant(p_alias, p_label, p_techn, #232F3E, harbor, harbor)
+!define harborParticipant(p_alias, p_label, p_techn, p_descr) IBMParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, harbor, harbor)

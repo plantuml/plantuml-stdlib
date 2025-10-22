@@ -1,0 +1,13 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $endpointprotection [64x64/16z] xS61400000CXXFdRpkElMXu0001m
+
+!function $endpointprotectionIMG($scale=1)
+!return "<img data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAAIGNIUk0AAHomAACAhAAA+gAAAIDoAAB1MAAA6mAAADqYAAAXcJy6UTwAAAAEZ0FNQQAAsY58+1GTAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAAOxAAADsQBlSsOGwAAArRJREFUeNrtmz9o1FAcx9/V0wNtBwc5rRS0k+efdijauVsVQYWiQ62LOKh00EEnnZwKhUKhDu2icIuU4uRRlxY6WaFise1g0RZRuclBLMIV8fvMN/IuWu7SJrmX5PeDDwl3uW/4fl+Sl/eSU0pKKtWVSYCHPLjH9SFQTksArvGbns8f+wkikwDjrmG1xeflpASQr9Ng3k8QmQQZ39bvMgk07kvHG8BecA2cBu0RG+4x1u+CRzs0XiuIB2B4l7FBJ5gB/SALfkYcwBNj/SHYBF1gCvwIQF9rvAQT4Dw4AIpZo+UnafoUWLHgFPgcQKv/r8rU/lNNXOrD/gi4bIn5yMoN4AxYTpt5M4BD4EsaxwJNaR8MSQASgAQgAUgAEoAEIAHYVt9BS4j6LdyHtQF8Ba0h6rdyH9YGsA4Og+YQtJupvW5zANNgD+gNQbuX2tM2B7AE3itndiro6qf2ku29wAi4ALoD1Oym5kgcusFxsApGQS4AvRy1VqltfQAVcF05k7XjAQXaSc1KXG6E5sBtMACebvNIyPG3A9SaM7/MxuBmbYLLMXAMDIJXPs75Ubb8DUPrb7nPBa5yWbQ0hAUwC66A+zT0i315xbPtPnBROQ9WhsEG6APPjW1K9FyMwxFgng4n2JJ3wCWa13P8n7hNG29ydvNid4utXtlKNE4BuBfGMXIcnKPpg/z+DcN4oZxp/poVtwDMWq7XpAyHJQAJQAKQACQACaDmfYB+R2AmJb47wLwcAZ4jQCdyNiW+S3INkACqAwj7QYRt9c+DkXkOLwspMF+g16peQM+ZrYFnCQ+hQI9r9Fz1rrCeZtJvix4F78C3hJnfD06Cj8qZInvrDUBX1C9Ld3C5GMG+PoDXbPkNm/rjknSDEoAEIAFIAA2qMP80Vc/cgp9usCfs4XAjalFJNbZ+A3lFjLRczOsJAAAAAElFTkSuQmCC{scale="+$scale+"}>"
+!endfunction
+
+IBMEntityColoring(endpointprotection)
+!define endpointprotection(e_alias, e_label, e_techn) IBMEntity(e_alias, e_label, e_techn, #232F3E, endpointprotection, endpointprotection)
+!define endpointprotection(e_alias, e_label, e_techn, e_descr) IBMEntity(e_alias, e_label, e_techn, e_descr, #232F3E, endpointprotection, endpointprotection)
+!define endpointprotectionParticipant(p_alias, p_label, p_techn) IBMParticipant(p_alias, p_label, p_techn, #232F3E, endpointprotection, endpointprotection)
+!define endpointprotectionParticipant(p_alias, p_label, p_techn, p_descr) IBMParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, endpointprotection, endpointprotection)

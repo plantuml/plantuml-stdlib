@@ -1,0 +1,13 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $chartdualyaxis [64x64/16z] xS61400000CXXFdRpkElMXu0001m
+
+!function $chartdualyaxisIMG($scale=1)
+!return "<img data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAAIGNIUk0AAHomAACAhAAA+gAAAIDoAAB1MAAA6mAAADqYAAAXcJy6UTwAAAAEZ0FNQQAAsY58+1GTAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAAOxAAADsQBlSsOGwAAA+FJREFUeNrtmkloFEEUhjsqMu4QNUG9KKK4XRTiuCQOGlzAhYjRXFzxIIgaEBRckERBUfAiRgRxAZcgiiJIEoRoRqPeFHc8KLgQBQ1Eox6SGP0L30inqO6p7q6apacefIR5013p+qf6vVev27KMGTOWy5Yn8P2ROCabzHU+vXJ9BRgBjABGACOAESCXrY/i8caBQ2Au+AniYA94nwsClIGLoD99zgerwXxQCl6E+RbYCq7aJm+3QnAbTA6jAOz8o+AY6O1yXEGaRJikU4AIuAy2c/4usJFESacIUXBXVwwYCm6A2Zy/HZSDWzbfNoEI8zTHBBZ3roGBOlbAWPBAMPkWUMJNvjINK2EluCkzeT8CRGny4zn/czADPBGck0oRNoFa0FdHECyjiy7g/MxXDD64nOsmwhRFk98FTnLBuFuVAE5p7jxYBL5JjOEkQmNAEfIoEx3k/J1gjQoBnNLcAbCW/pGsqRaBXdNZQSb6RSv2kgoBnNLcPp+/mCoRIhTp13H+NrAA1OkIgizNLQZnAt6vQUUYDBrAMs7/GcTAfR1BUJTm0iECO6aJJmq3txSMn+oohd3SXCpFGA3ugamc/xnVJW907AVk0lwqRGB1fbOgBmHLfQ4tfy2bIdk0p1OERF0/ijumngJem85+QKeVGqt02Tv0E5S2tZQBAl2f6o7QBHAYzKILY5F6J/gaQIThguOO07HdQS9YpQAV4Bzl54RtoFuIdYReBRDBbtWgKtM6Qjuo6ooIvhsB7oCJHsZzCmjfwZVM6gixUrQGHEkyVqGkCE51vb0AUrqLDCLAAHAdbOb8HbQJqfEoglNd/1vnVtqvAInJLBXU4QvBBbDFgwhudX1MZz/BjwAs0j8ERZz/HVVjTTafjAgydb22popXAUrogsZw/sdgJngpOMdNhJjtb7K6XosIXgSooI1QvqAaY6XoJ5dznURgq2WaoK4vdqjrlYsgK4BTmjtFS/eHxBgiESxBXR9LIqZSEUQPM6oEg++2er5bw9672UtVnpdqrI4qu+mC7+opqLZLjNNAKzHKZaVyGueLy3yqvQpQJEhz68EJn7cdE+EjGAmGgNdgP6W/Dg/jyIrgKoDXUpilpeVcpPdjpwmdG6hS6mMoC4KiNJcJFqi9JrsCHoElSYJTukUQrYRGFQKw+2mVZKTPRBECC8DSXJeVHZZsK+0rBmTL5N1igvZ+QNaKEOa3xKRECPtrcpW5LoBlBDACGAGMAF4rwRbaqtr3/mGxFpkVEA/xDx6XEYB1eVpDOPlWmlsPE3WE2OMn1v9jj7SGgUFZPnG2hWcvTq6w/nWijBkzZuy//QV/KuvhLptOGQAAAABJRU5ErkJggg=={scale="+$scale+"}>"
+!endfunction
+
+IBMEntityColoring(chartdualyaxis)
+!define chartdualyaxis(e_alias, e_label, e_techn) IBMEntity(e_alias, e_label, e_techn, #232F3E, chartdualyaxis, chartdualyaxis)
+!define chartdualyaxis(e_alias, e_label, e_techn, e_descr) IBMEntity(e_alias, e_label, e_techn, e_descr, #232F3E, chartdualyaxis, chartdualyaxis)
+!define chartdualyaxisParticipant(p_alias, p_label, p_techn) IBMParticipant(p_alias, p_label, p_techn, #232F3E, chartdualyaxis, chartdualyaxis)
+!define chartdualyaxisParticipant(p_alias, p_label, p_techn, p_descr) IBMParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, chartdualyaxis, chartdualyaxis)

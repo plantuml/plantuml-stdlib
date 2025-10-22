@@ -1,0 +1,13 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $foldershared [64x64/16z] xS61400000CXXFdRpkElMXu0001m
+
+!function $foldersharedIMG($scale=1)
+!return "<img data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAAIGNIUk0AAHomAACAhAAA+gAAAIDoAAB1MAAA6mAAADqYAAAXcJy6UTwAAAAEZ0FNQQAAsY58+1GTAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAAOxAAADsQBlSsOGwAAAtxJREFUeNrtmr9PFEEUxxc8r9JIiIUiXm3AgkrtxBA0EDtjgbEyJ5igBRZaiqUWGoxGjNRQ0BqNEqJXihaayD9wB2KFQrTRXPT74rtkMpndvR/7Y3b2fZNPyMztzDLfezP7Zm49TyQSiUQiUV7V5VPfD+6DYXC4zb5/gU9gDizbasAen8F/BifA/g76LoISuMjlSlYMmOfBR6lhW00wGfCow28+UyYUDHV9Ta4TYToJXoMDSt0s/71riwHdMfb9HpwDO1o9mXAnDwY0TDgLfthqQncC91jjSLDShEJC91njSHgDejQTZmO+9xZ4B26BjTQioKEPPtMhblEiN8G5TX+aBjRMGAXfU4j2Xs5uUzWA9NHn6ZCETqe1BpgioSehe/0NyHFSiQCrJAaIAWJAvlWw4H8YBGVOkkpcV+WscQGsu2rAXvAQXDOcSwwwN7z/BzQz4I9LBtBx2UswEnIdGTMNjoFx8NuVNeBBE4NXNcJtnIiAQQ57VTVwG7zl8hlwDxxVrqE2T6NeE9KIgLI252mLOgSWwDdmies2tOlQdmEKjGpl2qdvG67b5s+C2mbSgJJWDjolroS0lUQoiwZUw/boAZ9VXTBgRSvTKU2v4TrTCc6KCwZQeltXynRORz+i0rndIWaC69QzvDq3zXwesM7p7bRSR8/7xZB283HsC9JaBG+C1RauX+U2zmyHKacfA0+06aCrzteMxbEPSHs3SLu765ze5nI7rK4JM3nKA6xSkhFAZwBT4BI4Dva12P4n+MJPi2dRrQlJGXAEvOAdXrsiw04xV8B5sJmFKVCMYPC6hrjPYhYMmIx48KoJk1mYApe18itwtY3wpWn0nHMCte/HtkfAgFaeanPubnLboL6tNEB/5a7WQV+1kL4lD2hVXT6h1ufoeL/yWhIYARWHv/BKM1PA75Q26zKdMhvfFd7ldJPerjroxfPecJLa4qTpgmd4TU4kEolEIlF+9Q/kVn9fN3K99QAAAABJRU5ErkJggg=={scale="+$scale+"}>"
+!endfunction
+
+IBMEntityColoring(foldershared)
+!define foldershared(e_alias, e_label, e_techn) IBMEntity(e_alias, e_label, e_techn, #232F3E, foldershared, foldershared)
+!define foldershared(e_alias, e_label, e_techn, e_descr) IBMEntity(e_alias, e_label, e_techn, e_descr, #232F3E, foldershared, foldershared)
+!define foldersharedParticipant(p_alias, p_label, p_techn) IBMParticipant(p_alias, p_label, p_techn, #232F3E, foldershared, foldershared)
+!define foldersharedParticipant(p_alias, p_label, p_techn, p_descr) IBMParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, foldershared, foldershared)

@@ -1,0 +1,13 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $tagedit [64x64/16z] xS61400000CXXFdRpkElMXu0001m
+
+!function $tageditIMG($scale=1)
+!return "<img data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAAIGNIUk0AAHomAACAhAAA+gAAAIDoAAB1MAAA6mAAADqYAAAXcJy6UTwAAAAEZ0FNQQAAsY58+1GTAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAAOxAAADsQBlSsOGwAABDJJREFUeNrtmk9IFUEcx+f5rGN/hMKyJAIh6BIeIrpkSUFdKjMs8ObDAiMoqIgur2MeIqSwxMCD/fESRhKoiXnyWgc75MEy+0OUXS2112/w92AZZndnZn8zs9L+4Atvlrdv9/vZmd/M/PYxlkUWWfzPkQs5vg3UCWoAbSG+5gfQa9AN0Jc0AuDm34KqLF97DnQINO0TQF5y7D5or4NrrwM1gV6A5n0BqJAcO+Dw+jWgcVCdLwCVkmNbFfOE6ZDrARUkEA4mHA7HQXfx8wXQc9MhUBTaN4mhD6HpesLh0AJ6CtqAv9UMeg+aSiMAagjcfL/Qm/nQPqECwRcAKggy81oQKgmM7MYxfQRUi8dmQSOg3oiLl0Dt+NkkJ8jMLwm+KvE7PAaoe8AaUBfoIWg/aBNoLYp/3gc6B9oMGgX9JewJYeZbQc/wyVeo9ATTHsBNvgQ1KuSYDtAu0DHQH42esBR4oqrmg0+5X9ITfoMG49YBKnFbwXwwGvEcFjMcerH9EYfAjKH5ATy2JDzsLooewMf8eeHYJ9BVXOPn8OZv4bK6HPycboWc8B1BzGgkPNKVYFwUhNzBze/Befgb6CvoMR6bE4ZDIea3S7hJ0jFf7t4tCj3lIkUPOCy0r4Qkqp+ga6BHEeeazvNR2Z5FDJNBCgC1Qnsi4rsTMeeamm+NSHRMIUeQrgNyMV3aNEyzPVM1b5oDZjV2jw0x5yY1L8v2yuZNAYwK7c6Q4kkVzgTBGCE0HxXK3zcBwKeo5UB7O+gN6AyoGnUWq0rBaXAZV42U5hPDMskBU1g16hAgPIk5rztmZ+bcfJKV4GXQmMb3X+E5qTKfBABf0x8F3ROGgxjLWKXh+4DFtJkPGwIlYWrLhUxni1h66ha2wyVcHQ5jvngXcw/ezIcB4BuRHYF2D67RSxE54RJhXZLC/E5cek+bDIFhydq/h9EWR6OCwvw4U6w2ywBcxy7sE0JS87VMseQuA/AL9++fUwBBd8wXhP1GLIQoM3V4co1kIdSecJ1vul+IS3iy9w4MH6a0xpiPuNg81uSasEZXjnqEMkQEoEi8vA2rMfK6YB9oQRWAKwhFQvNRENazlRcnQzoAXEAoEpuPgsCr1XdUc4CvnEAZ/L4eBNo/EIJWD3CdE6iiDc0HH/KYuGnLa/7oaoHQhrNBcJrnye8UW6lVGgNYDRBk5vkLkdOgSZ1pcDVCCDPfHHZP+QQXSxsEbfNJAaQJgpF5CgBpgGBsngqATwiJzFMC8AEhsXlqAC4hkJi3AcAFBDLztgDYhEBq3iYAGxDIzdsGQAnBinkXACggWDPvCkASCFbNuwRgAsG6edcAdCA4Me8DgAqEaqzkWDfPmJ83PeUIqzGKYc28rx4Q1xOcmfcNIAjhpATCApaxrG6nfQMoQ+gDbWQrJWv+pwr+RyxewJxkWWSRRRYW4x+TL5LJLFIGOAAAAABJRU5ErkJggg=={scale="+$scale+"}>"
+!endfunction
+
+IBMEntityColoring(tagedit)
+!define tagedit(e_alias, e_label, e_techn) IBMEntity(e_alias, e_label, e_techn, #232F3E, tagedit, tagedit)
+!define tagedit(e_alias, e_label, e_techn, e_descr) IBMEntity(e_alias, e_label, e_techn, e_descr, #232F3E, tagedit, tagedit)
+!define tageditParticipant(p_alias, p_label, p_techn) IBMParticipant(p_alias, p_label, p_techn, #232F3E, tagedit, tagedit)
+!define tageditParticipant(p_alias, p_label, p_techn, p_descr) IBMParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, tagedit, tagedit)

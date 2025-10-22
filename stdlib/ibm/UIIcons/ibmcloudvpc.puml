@@ -1,0 +1,13 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $ibmcloudvpc [64x64/16z] xS61400000CXXFdRpkElMXu0001m
+
+!function $ibmcloudvpcIMG($scale=1)
+!return "<img data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAAIGNIUk0AAHomAACAhAAA+gAAAIDoAAB1MAAA6mAAADqYAAAXcJy6UTwAAAAEZ0FNQQAAsY58+1GTAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAAOxAAADsQBlSsOGwAAA1VJREFUeNrtW0trFEEQ7t2oP8CTBzEHQUQP+gd8hCiKHsxBkICejBAhMaAgiMRHUIQNAYOCER8HCVniTU+Kio9/4MEcBA8mOXjK0YO7Zv2KrYVJMbsz7U6/ZueDD9LdM7uZb6qrq7tqlSpQoEAvoxTT1zDwmSaxBxwFB8Cd4F9wGXwLPgO/dbp5U8AvbwtYAcfBcowoxEvgI/AyWMuTAJvBV+DxhOv6wDFwN3gS/CMvKAcqwL0UDx/FEXDmfy0gaU43LD/8LnBC9K2CV8GP3B7g6bE9cs1FcE76hBAtYES8OHr4fWAV/MWsct+qmA4jLn2AKUuhN78W07/GYwuRvqN58QFRfNYY25FHAXRQzqMAhzTGfrr0AVlFiFPgZKRd4ahP+oGtPBbFhzxYwBOwHmnTUvcVHAa3MYe5L7oMrvMyqG0BDc8EWAHvgjeFCAsJ9z0Al2xYwBkLIkxxKJwWb3hJjI2VJW51+c8Ngd+TdmEZxBQv+e8DHV4kTZX74Pl2myETApQtivAJfA7+Bg+K8QpHflWe/0Y9M5n9vPAppP5ZcNFRpFlK+7aywCI/bF042HlLPiG7yKjXRMh6FQhOBBPLYFAimIoEgxFBZy+g62Vb3j+6OrREUBZXBycWEIwl2NgMeS2Crd2gtyLY3A57KYLt8wDvRHBxIOKVCK5OhLwRweWRmBciuD4TdC6CD4eiTkXw5VTYmQg+1Qd0u3cohWwBzizBx8SIVRF8zQxZE8Hn1JgVEXzPDRoXIY3npJocyqzI1NId8LHaWIZiCnF5h0yeua/DhVSKNg2+UM30kwRlYibYir4os0lUyjBRpmkoA6u9nUYAKkJ8DZ5L+EIaOwzuV81cnQ0RTmcpQLuHo7yaTh3eKfCGxWDJaCRIJabjoi9NHd511azNXbHsKLuqY4yzgFHRn7YOj8S8oAJDnAUMirZOHd6k2li/Y3qFMhIH9Iu2Th1ecIgTYF31EOIEWBZtnTo8lQcf8A7cK5bEtHV406pNMVJIFvBUNX920kLaOrw63xu8BVDERT8zGRMiJNXhzXKkZhuNrC2AcAV8r/E5VId3LS9OkEC/rTkBPhTTIW7FmOVQuJYXJ9hCjUPiOd4OH1PNenvaQP3gsJjGllSBAgUKBIp/oW7TrgMyVKUAAAAASUVORK5CYII={scale="+$scale+"}>"
+!endfunction
+
+IBMEntityColoring(ibmcloudvpc)
+!define ibmcloudvpc(e_alias, e_label, e_techn) IBMEntity(e_alias, e_label, e_techn, #232F3E, ibmcloudvpc, ibmcloudvpc)
+!define ibmcloudvpc(e_alias, e_label, e_techn, e_descr) IBMEntity(e_alias, e_label, e_techn, e_descr, #232F3E, ibmcloudvpc, ibmcloudvpc)
+!define ibmcloudvpcParticipant(p_alias, p_label, p_techn) IBMParticipant(p_alias, p_label, p_techn, #232F3E, ibmcloudvpc, ibmcloudvpc)
+!define ibmcloudvpcParticipant(p_alias, p_label, p_techn, p_descr) IBMParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, ibmcloudvpc, ibmcloudvpc)

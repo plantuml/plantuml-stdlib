@@ -1,0 +1,13 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $incompletecancel [64x64/16z] xS61400000CXXFdRpkElMXu0001m
+
+!function $incompletecancelIMG($scale=1)
+!return "<img data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAAIGNIUk0AAHomAACAhAAA+gAAAIDoAAB1MAAA6mAAADqYAAAXcJy6UTwAAAAEZ0FNQQAAsY58+1GTAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAAOxAAADsQBlSsOGwAAA4BJREFUeNrtml+ITFEcx4+ZWSy7y64SoiR21RQPFFY2eUASTdugZb2IffOC950H8rCrhKS8IJSh3SglD8oTVojakDwsS2R58G8xxffX/G7pdu/MPfeee+eeOfOtz8P8O/f8vvd3z/mdM0eImmqqyWRNCKndaWAdaAdtoBVMBXNDvKYvpRS21QCyYDfoAIkAbU0G47oY0AL2M80K2qMseQrOgn7wIa4GUCrvAUfBDIV92stGHgI9oBecAIU4GTAbXAJrFfenjg2w1ASOgS6wHbxWbYCf53QNeBxC8KQFLu8vB4/AZtUXTEp+fysYBNMDXDNX4rMxcJKf+1Wg3jYwbgOjfAMiz4At4KqtU2HoF5vQytezP7LzKpEBNJ9fB5MUXDPn8Xs/QB58Auv5ZvVK/F7ZIDiTOxL2nXfTKTACloDDlZgFzoE5FS7YbjDKVW4MoOlnYzWvBUoZQLV7X7UvhkoZ0MMFj5EGTAQHNIojxX1WNghuisHA50WzuHTeB46A06oM6NYg+E5wmdcPpJ1+DEi4LEg2aGDAkK2Qa+eaJbABK3gGiLuoOHpoW553qDBgpUaD3x2Hkj2wAW0aGTBke71YhQELNTLgZdC+OxnQrJEBo7bXLSoMaNTIgG9B+54Seuu3CPg/g1MGfBUGycmAL6Yb8Mp0A16YbsA90w24D76bbMAfcMtkA0gXTDfgJnhnsgFUYfWbbADpDHhvsgE0ExyMST9p64vOI2R9/DbLv026NVxKz0Rxh0jlHkHOZ/A7QAY8B8OSwS8Vxc2SAfBXxgDSbVHccW2skAEXOXgrY72aYAVvrXjTYBG45vURsPSRG/tZofSnu1awLeHLPQ724AW3MSD7CFh6w49DVgQ7/uYnA4b5jmf+u3apTHALnv7ozfs1wFok0fE1OiZTF6EBMiZIBS9rgGXCXVH866whQgO8mJCWDd6PAaQRHpiWgfkRGlDOhE7Z4P0aQKLNyPPgLVgNpkRkQCkTErLBBzHAEp3doyOt4zzX1kdggJsJ0sELoWZX+LMont7qE+oOS0daYqoSLaCeiOKhquPgAU+fY/w5ZUmTogxwGu2Fj2IpXmf3AwRfcMjoUAfBuAXfxSWu12JJSwPKFTmyFaNWBnit8KRNSFZR8L5M0GGqyvgY3PL8HfsqMqNjBgzyZkZassixZ8IVsMu+IaKLQtsSq6mmmszWP8Ffx9Dvz+OQAAAAAElFTkSuQmCC{scale="+$scale+"}>"
+!endfunction
+
+IBMEntityColoring(incompletecancel)
+!define incompletecancel(e_alias, e_label, e_techn) IBMEntity(e_alias, e_label, e_techn, #232F3E, incompletecancel, incompletecancel)
+!define incompletecancel(e_alias, e_label, e_techn, e_descr) IBMEntity(e_alias, e_label, e_techn, e_descr, #232F3E, incompletecancel, incompletecancel)
+!define incompletecancelParticipant(p_alias, p_label, p_techn) IBMParticipant(p_alias, p_label, p_techn, #232F3E, incompletecancel, incompletecancel)
+!define incompletecancelParticipant(p_alias, p_label, p_techn, p_descr) IBMParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, incompletecancel, incompletecancel)

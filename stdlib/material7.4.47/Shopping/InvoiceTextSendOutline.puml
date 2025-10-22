@@ -1,0 +1,11 @@
+sprite mdiInvoiceTextSendOutline <svg width="48" height="48"><g transform="scale(2)"><path d="M24 18L14 23V19L18 18L14 17V13L24 18M21 14.26L19 13.26V5H5V18.26L6 17.6L9 19.6L12 17.6V20L9 22L6 20L3 22V3H21V14.26M17 7V9H7V7H17M12 13V11H7V13H12Z" /></g></svg>
+
+!if %function_exists("$MdiSprite")
+  !unquoted function $MdiInvoiceTextSendOutlineImg($color = $MDI_DEFAULT, $scale = "1")
+    !return $MdiSprite(mdiAccountAlert, $color, $scale)
+  !endfunction
+
+  !unquoted function $MdiInvoiceTextSendOutline($alias, $label=$MDI_DEFAULT, $shape=$MDI_DEFAULT, $color=$MDI_DEFAULT, $scale=1, $stereo=$MDI_DEFAULT)
+    !return $MdiSpriteElement("mdiAccountAlert", $alias, $label, $shape, $color, $scale, $stereo)
+  !endfunction
+!endif

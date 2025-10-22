@@ -1,0 +1,13 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $plan [64x64/16z] xS61400000CXXFdRpkElMXu0001m
+
+!function $planIMG($scale=1)
+!return "<img data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAAIGNIUk0AAHomAACAhAAA+gAAAIDoAAB1MAAA6mAAADqYAAAXcJy6UTwAAAAEZ0FNQQAAsY58+1GTAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAAOxAAADsQBlSsOGwAAA1ZJREFUeNrtm12ITVEUx/flCuFB0kymNLwwFJNBSkJ5kOSa8l2+I5MiIkSZKZ8Nw4wHGQ+S8GB8zDt1S16ImIeZlBhXicIkZGh8/FdnTR3bPnM+7tlnbt216tftnrP3+e/9P3uve6ZZRykJCQkJieKNVJ79h4F9YCd/bwInwVdL4x3Oejv4eyPrfUvaAOq3FhwHY7Rzb8FBcBn8ifFGrQdHPfQOgCtR9KIYMBucATN82j0Gu8D9PCc/h/WqfNo9Yr0HtgwYC06A1SEncIOX7auQ/cbx8l4est91sB/k4jKgd5/vAUMj3sUfoIG3zBeftiN4Se8GgyPqfQenguSHgT7mrAOtYDEYZGhD5yYGOJbmpbwJdIFnhv06gM/fAQu5T1Q9GutcsAF8AG1hDaB93gK28x3Rox2sAcdArXaugvfhdDDakMWXgAx4Djr5+DxwC2zlNnHp0dirwSK+xhs/A2ifn+ekU2YYSBdvh83gBR/TB1QHXoJmdn+WYeuU8t2ZClZybim1qFfGq2sCJ8vP7qXZGxlOIKZ9/gtcBIfAx4D7sAecA9fAEbDFYHi1R19bepTAl/Jnq25Ag8fks/yg0xYxIdEEanhlNfJy7yts69EcL5gMGK81pP25l3NBHEETmg+WgXpQ3o96Je7M6xUVMQ7GHS187f7W8zWg2+LfIN0FoOdrQFGEGCAGiAFigBggBogBYoAYIAaIAWKAGCAGiAFigBggBogBYoAYIAaIAWKAGCAGBIshAY/FFbHr5WMA/du5w3C8g8/FHVb00hH6TFF9FzqUK6c0LqvyK3RIRC+MAaOUd+mJKWjAT1T4UpdE9dIB21DJCRUjjfRoc5s/9ZofGvg25RRCHVZO2UpPIen5GbCAl98kj/NPlVOemnXdBaowq9Ta0USaeHC0TO8WiN4/laJ64SIVEWU8+r1XTkH0JfDbkFg3KqewucSjv+naSeul/AwwRdIlrzb1UkpLLrU+HSjTUo3dTfAzgAC1uQeuKqfEfXLIydvWqwuaBPMte6cq8RUqeNl7onruFUAJw12nSy8i0JsZVC/8OoYHmRz/RHWCmer/GuQk9d6B07oBOXaNXnc5C1aBhxae6CiTN3Myq+R9Xp+Q3jTwiY1uVxISEhISRR5/AbOG568dPS6nAAAAAElFTkSuQmCC{scale="+$scale+"}>"
+!endfunction
+
+IBMEntityColoring(plan)
+!define plan(e_alias, e_label, e_techn) IBMEntity(e_alias, e_label, e_techn, #232F3E, plan, plan)
+!define plan(e_alias, e_label, e_techn, e_descr) IBMEntity(e_alias, e_label, e_techn, e_descr, #232F3E, plan, plan)
+!define planParticipant(p_alias, p_label, p_techn) IBMParticipant(p_alias, p_label, p_techn, #232F3E, plan, plan)
+!define planParticipant(p_alias, p_label, p_techn, p_descr) IBMParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, plan, plan)

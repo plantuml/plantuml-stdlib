@@ -1,0 +1,13 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $pedestrian [64x64/16z] xS61400000CXXFdRpkElMXu0001m
+
+!function $pedestrianIMG($scale=1)
+!return "<img data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAAIGNIUk0AAHomAACAhAAA+gAAAIDoAAB1MAAA6mAAADqYAAAXcJy6UTwAAAAEZ0FNQQAAsY58+1GTAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAAOxAAADsQBlSsOGwAAAxJJREFUeNrtmjtoVEEUhmd9oIKuhQYFCwUFQwIG0tj4AAmaQkGQrTQKYrRRI4ggxMrKKCo+AtFIQFNYBEUULIKoaCrBRoQoiYV2SgK+ML71P+wJTIa9yWZ3Zu487oGvmMnduXf+e86ZmXMjRGZxWy6l+y4Gh8E2sIr7hsE9cBGMhCzADtAD8gl//wz2gls2HmZmCpPvA3MnuWYOKICXYND0A82wOPkafvO5Mj2zh38TjAccB5ul9k9wArSAs2AUbJCeiTzhO3gUigDnwFKp3Q46wFdmAPwCTdI1C8GVUEJgpdLuLXFN7xS/8VoAJ82mAG+UdkuJa9S+4ZCS4DKwUWpTwvvNk5wPDoKTyjN1g8ehbIRqeLL5Mq//xLvEkVA84BsY4k3OVML/BbvA89B2goO8w2vmdT5pK7wT3I7pMPSPk+RdcMnmYSizrB5gPsdQ0jsA6ss43IxxorwPzoMPPguwDlwGDRX+/iPniAHfBFgCToPdGsYaYwGHfFgGaaxDvHyt1TTmbLAC3DQlwCyN7t4J1lTpdfN4eTwl9W0FteCVi4chcvfr4GnC5F9U4PIdPJ4sWKuLp0F6U68TYp328W2gscKxu5T2nkl2jqkJcEEUKzaq3QCrRbG8/afCsakiPCq1F4liQdXpegC5+3p+W++rHOsHh5Zs+10XoFHzmt3NZwS5flDr6iogqnD3JKOs/0QqouREed8Jcml5gAm7avoGrgugJsPoBCiVDJ3NAabsKBOlB4jYc0CUAtSJ4kdTK+FZzU101xKO8KGnjtvPQH9MHlAvTZ6sEFsI9Cnt7TbCwCUBHoqJ3wPo28GmmASgD6V3lL5CTAKkEgauCWA9DFwTwHoYuLgRshoGLgpgNQxcFMBqGJgWYLnGMPBOADorXFP6vkwjDIQSBt4JQGXsJqXv2DTCwOvjMLn+GaXvgbBQ5HRBgHHXX6C4/j4xsc4frABJrv/WwRVHuwDeuL4JAbxyfRMCtPrk+roF8M71dQtA/9KW98n1dQtAFd1+n1x/3HQdM9+BLZwHmn1w/cwyyywzsv/u8o//G5YL/AAAAABJRU5ErkJggg=={scale="+$scale+"}>"
+!endfunction
+
+IBMEntityColoring(pedestrian)
+!define pedestrian(e_alias, e_label, e_techn) IBMEntity(e_alias, e_label, e_techn, #232F3E, pedestrian, pedestrian)
+!define pedestrian(e_alias, e_label, e_techn, e_descr) IBMEntity(e_alias, e_label, e_techn, e_descr, #232F3E, pedestrian, pedestrian)
+!define pedestrianParticipant(p_alias, p_label, p_techn) IBMParticipant(p_alias, p_label, p_techn, #232F3E, pedestrian, pedestrian)
+!define pedestrianParticipant(p_alias, p_label, p_techn, p_descr) IBMParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, pedestrian, pedestrian)

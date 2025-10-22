@@ -1,0 +1,13 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $documentsketch [64x64/16z] xS61400000CXXFdRpkElMXu0001m
+
+!function $documentsketchIMG($scale=1)
+!return "<img data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAAIGNIUk0AAHomAACAhAAA+gAAAIDoAAB1MAAA6mAAADqYAAAXcJy6UTwAAAAEZ0FNQQAAsY58+1GTAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAAOxAAADsQBlSsOGwAAAsVJREFUeNrtmzFIHEEUhtfLXaN4VQpjjlRWHlxKSWcgFhIIJGgsInipLK4zYKu2VqYQRAtNEUFJtLKwu846EI2FbbRRMIheEfDyD3mSZRl3x9nZ8U12Hvx4t+682f32zXuzs3tB4M2btzxbh2a7x9A89Bx6ZPiYfkKT0I4NAA80T/4bNAB1Z3BMZWgU+g4dcgSwRCef9XG9sQGhoNFm0NLwLEEb0OssOylqtOk1lEdurB35/ptOPgxhDNrmEgFZ2xhBsBIJHAFs24TAEYBVCFwBWIPAGYAVCNwBZA7BBQCZQnAFQGYQXAKQCQTXACRBeJkHAHEQlmzcC5i248j9RTuFr4qLEdC8z845AJiGzvIMQCyBPYXWoRPbnXPIATcQ3hlaT8hFFcjF3aAH4AF4APmpAmmsw0eAB+ABeAAewH9WBSagtZQ+6tAnFyOgH1o04GeRfDkFoBPahLoM+OoiX50uARBXrWrQXzUpmorMxn09sk3kgfd39LMa8SM+N2/LBwXG434famj4alBbpXxQYDruL6G30JWGvytqe6mSDwpMx/0H6CCFzwPykZgPOAA4l2wbCf69J6RjJfKR2BcHAOJKbUW2vYBWUvhcIR9h25JEBQsA19A4tCepCrMa/mapbdj2qI9rrlWgBb2CjiLbZySlMWn6OxPZdkS+W9wnQqfQMP0N2zI0pNB+iPZV8cl2Jii7WiKhfYFqMe1qtE9JIarY3wzJxqt4gVq8PS57+luh/5UV8ooz6wEiY08pnOhtYKYklcW5BZGP0IIk1L9SqJfoc3RoLFBbpxdEwnOEJ8HfV+dlcwSlWu9qBCTNEZRrvcsAVLN5bK2PM52nKuJZfq/BE1Q9hj66yg8ltf5ZUrkzGQFNRnMEpVpvGsB9vtMTHufKtT7OdH40dQF9hnooHNP+cmzujvv/gH5Bu0H6pXNv3rzl3P4AhjKdxfgH5asAAAAASUVORK5CYII={scale="+$scale+"}>"
+!endfunction
+
+IBMEntityColoring(documentsketch)
+!define documentsketch(e_alias, e_label, e_techn) IBMEntity(e_alias, e_label, e_techn, #232F3E, documentsketch, documentsketch)
+!define documentsketch(e_alias, e_label, e_techn, e_descr) IBMEntity(e_alias, e_label, e_techn, e_descr, #232F3E, documentsketch, documentsketch)
+!define documentsketchParticipant(p_alias, p_label, p_techn) IBMParticipant(p_alias, p_label, p_techn, #232F3E, documentsketch, documentsketch)
+!define documentsketchParticipant(p_alias, p_label, p_techn, p_descr) IBMParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, documentsketch, documentsketch)

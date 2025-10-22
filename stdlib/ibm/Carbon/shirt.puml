@@ -1,0 +1,13 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $shirt [64x64/16z] xS61400000CXXFdRpkElMXu0001m
+
+!function $shirtIMG($scale=1)
+!return "<img data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAAIGNIUk0AAHomAACAhAAA+gAAAIDoAAB1MAAA6mAAADqYAAAXcJy6UTwAAAAEZ0FNQQAAsY58+1GTAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAAOxAAADsQBlSsOGwAAAvJJREFUeNrtmztoFUEUhie5ERUEC4sUGgPWaqUWFhZpJJ2IiCBaKKJBhGjhg3tv46PQxkDEKD5AtBaxiVpcUUFQGxFBKwXRIoXYGESIif9hzsKw7O7se4P+B352c2cf839zdubesMcYRqVxXNXU+d4YqPDa56G27q+COjWfnypaFZu/AL3Q/SVQr6bzG80At/PuqAWj2clx/oLu9znXWXQZMAhdhsYjzPd0BH0jGQfvqQ6WtK2BXkOziyUDxPhJaMwDtOPJhDjzQfTrdj+0F7oGXYRmmsoAMX4WugdthqagXdDvhJGOywSf+aBdtnugpQp8XCfIt3kzolWS8d3Qfe2EL93D7SMZzHf1Hk+gm2WAaGU0fi7BeNjkgBryQdiWwbwbpYBopTzmjBrd5DFuIiauOAgjat7oUtdLmBO6CfdxQSyDjigIWTle6rYQgBvQCd3uTGE8DQTfOu+bE+JAPFYQK3ViHoIeFlkFZIQOQsegKzkny27ErN9W4x3nPu1QexbzbsiqcBT6AE1Cd6DneQFIqn+FrhZcKsMQfoWyaFY/CyDkNe+G9Pm0esgNYBj6CM2X8H1BIHzX/e0R7c80hSUmSrjfvPZ9uMgjIO1zJX5bnEgAUJZxN+Z8Hvv/99/rBEAABFAoplVNReH7MwMIgAAIgAAIgAAIgAAIgAAIgAAIgAAIgAAIgAAI4F+KBWYAARAAARAAARAAARAAARAAARBARKQpmNhi7Du/UbHR2OqNJqNQ/5gBKY4RgqMxbfKC0mpjawlmau77oN47qX+PygDgiw3QZ2PrCC7VAMKtUVoOfas6A3zxytjChDFVVSBc4xJSNLW1jkfAFz+MLaiQCq5TDojr0C3ofcHrrze2ZuGwYzyoFvO9I+j9l1ifp31aZ9l3nll2NDRSAuIQtEJT9BP0J3Seca4b/ltCqlnW6XP+09iKlXCZXJ7+ZQKwDzrgOeY2dDfic3k+dxhbYLXW2GKmLCG1BV+gN9ADYwsqyuwfQ+Iv1yzI2f/t28EAAAAASUVORK5CYII={scale="+$scale+"}>"
+!endfunction
+
+IBMEntityColoring(shirt)
+!define shirt(e_alias, e_label, e_techn) IBMEntity(e_alias, e_label, e_techn, #232F3E, shirt, shirt)
+!define shirt(e_alias, e_label, e_techn, e_descr) IBMEntity(e_alias, e_label, e_techn, e_descr, #232F3E, shirt, shirt)
+!define shirtParticipant(p_alias, p_label, p_techn) IBMParticipant(p_alias, p_label, p_techn, #232F3E, shirt, shirt)
+!define shirtParticipant(p_alias, p_label, p_techn, p_descr) IBMParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, shirt, shirt)

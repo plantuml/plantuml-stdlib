@@ -1,0 +1,13 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $editoff [64x64/16z] xS61400000CXXFdRpkElMXu0001m
+
+!function $editoffIMG($scale=1)
+!return "<img data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAAIGNIUk0AAHomAACAhAAA+gAAAIDoAAB1MAAA6mAAADqYAAAXcJy6UTwAAAAEZ0FNQQAAsY58+1GTAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAAOxAAADsQBlSsOGwAAArxJREFUeNrtmr9KA0EQxi+3idhbmMIHMCg+gbVY2EQMQUufRC1txV4bgxD/1III4hOIRd7BXgTN6QQ2EMLdZnd2ZnYvuYEPyR8z+/3c2/32YpJUVVVVi1yq4Pk6qAcaggaRjn0DdAW6BB2D1kBvoF9fACPzt6AD0D7oI0IIbdATqAVaBq2AtkF7oDvQlw+AnjY/fj02CG39B1rKea0J2gX1bSHkARhq0ypCCGPzDcN7Vl0g5AEYaLOxQcgz/wM60uNrYSAULYKxQSgy39XX/D1oEwNBGZrGAsFk/kE/zrAQ1IzmoSHYmE98ICiLQYSC4GLeBsIO6Ho6JyjLwUhDwJifBaGpM84zBoAkhKKtLtPT2KaPaSZcYAFIQDDt8659Mv2zM/FcDXTuA4ATQtG0z5B92jrVTnp8Ad34AuCAYLrm+4g+eZ/3rWfDJwUASgizFjzXPkWfdwh6xWyDnBBsV3vbPs67hy8AHwiug53Vp4XZOikAYCGcgrYc93lTnw4mN1ABwEB4nNinbUOOqY9ChCZSAK4QxmFlHXRiad7Ux9k8BwAMBNt0N10tPe0V1jwXgFCJ0dk8J4AQidHZ/KjSALe2GtpAO7R57hlAebBhMc8JgONgQ26eC4DEwYbEPAcA6oMNNjEGAUB9sPFNjKIAqA82VIlRBAD2GpVKjKwAfBeo4F++qIDmo4CQBjbPlRhZZwC1eerEyApAwrxPYmQFIGUemxhZAUiaxyZGNgDS5kV3BxsA7wHMi0GwAXA29bgjZF4EAiYHSJqf7NnVv0OaEyRuiVGtISwQ0pKYZ4OQlsg8C4S0ZObJIaQlNE8KIS2peTIINYv3/HkMkNM8CXibIHQSuXmvsMQFQNK8FwQOACHMoyHUkvks6zVBzSmAoplQ0zdb5h5AHoTRlyuj/xXMkgWr8eVQT6qqqqqqpuofwXLCy3jacpwAAAAASUVORK5CYII={scale="+$scale+"}>"
+!endfunction
+
+IBMEntityColoring(editoff)
+!define editoff(e_alias, e_label, e_techn) IBMEntity(e_alias, e_label, e_techn, #232F3E, editoff, editoff)
+!define editoff(e_alias, e_label, e_techn, e_descr) IBMEntity(e_alias, e_label, e_techn, e_descr, #232F3E, editoff, editoff)
+!define editoffParticipant(p_alias, p_label, p_techn) IBMParticipant(p_alias, p_label, p_techn, #232F3E, editoff, editoff)
+!define editoffParticipant(p_alias, p_label, p_techn, p_descr) IBMParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, editoff, editoff)

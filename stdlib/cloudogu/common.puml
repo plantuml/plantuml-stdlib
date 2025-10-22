@@ -1,0 +1,236 @@
+' Contents of this file are originally from 
+' https://github.com/tupadr3/plantuml-icon-font-sprites/
+'
+@startuml
+' Creates an aliased entity with a colorized sprite and stereotype
+' Params:
+'   e_type:     the entity type (e.g. component, node, agent, etc.)
+'   e_color:    the color for the sprite
+'   e_sprite:   the sprite for the AWS Icon representing the entity
+'   e_alias:    the alias to give the entity
+'   e_stereo:   the stereotype, which can define additional styling
+!define ENTITY(e_type,e_color,e_sprite,e_alias,e_stereo) e_type "<color:e_color><$e_sprite></color>" as e_alias <<e_stereo>>
+
+' Creates an aliased entity with a colorized sprite, label, and stereotype
+' Params:
+'   e_type:     the entity type (e.g. component, node, agent, etc.)
+'   e_color:    the color for the sprite
+'   e_sprite:   the sprite for the AWS Icon representing the entity
+'   e_label:    the label to display under the sprite
+'   e_alias:    the alias to give the entity
+'   e_stereo:   the stereotype, which can define additional styling
+!define ENTITY(e_type,e_color,e_sprite,e_label,e_alias,e_stereo) e_type "<color:e_color><$e_sprite></color>\r e_label" as e_alias <<e_stereo>>
+
+hide stereotype
+
+' Cloudogu style definitions
+'
+!define PRIMARY_COLOR #23a3dd
+!define BORDER_COLOR #16688d
+!define FONT_COLOR #ffffff
+
+skinparam Activity {
+  BackgroundColor PRIMARY_COLOR
+  BorderColor BORDER_COLOR
+  FontColor FONT_COLOR
+  DiamondBackgroundColor PRIMARY_COLOR
+  DiamondBorderColor BORDER_COLOR
+  DiamondFontColor FONT_COLOR
+}
+
+skinparam Actor {
+  BackgroundColor PRIMARY_COLOR
+  BorderColor BORDER_COLOR
+  FontColor #000000
+}
+
+skinparam Agent {
+  BackgroundColor PRIMARY_COLOR
+  BorderColor BORDER_COLOR
+  FontColor #000000
+}
+
+skinparam Arrow {
+  Color #000000
+}
+
+skinparam Artifact {
+  BackgroundColor PRIMARY_COLOR
+  BorderColor BORDER_COLOR
+  FontColor #000000
+}
+
+skinparam Class {
+  BackgroundColor PRIMARY_COLOR
+  BorderColor BORDER_COLOR
+  FontColor #000000
+}
+
+skinparam ClassAttribute {
+  BackgroundColor PRIMARY_COLOR
+  BorderColor BORDER_COLOR
+  FontColor #000000
+}
+
+skinparam Cloud {
+  BackgroundColor PRIMARY_COLOR
+  BorderColor BORDER_COLOR
+  FontColor #000000
+}
+
+skinparam Component {
+  BackgroundColor PRIMARY_COLOR
+  BorderColor BORDER_COLOR
+  FontColor #000000
+}
+
+skinparam Control {
+  BackgroundColor PRIMARY_COLOR
+  BorderColor BORDER_COLOR
+  FontColor #000000
+}
+
+skinparam Database {
+  BackgroundColor PRIMARY_COLOR
+  BorderColor BORDER_COLOR
+  FontColor #000000
+}
+
+skinparam Domain {
+  BackgroundColor PRIMARY_COLOR
+  BorderColor BORDER_COLOR
+  FontColor #000000
+}
+
+skinparam Entity {
+  BackgroundColor PRIMARY_COLOR
+  BorderColor BORDER_COLOR
+  FontColor #000000
+}
+
+skinparam File {
+  BackgroundColor PRIMARY_COLOR
+  BorderColor BORDER_COLOR
+  FontColor #000000
+}
+
+skinparam Folder {
+  BackgroundColor PRIMARY_COLOR
+  BorderColor BORDER_COLOR
+  FontColor #000000
+}
+
+skinparam Interface {
+  BackgroundColor PRIMARY_COLOR
+  BorderColor BORDER_COLOR
+  FontColor #000000
+}
+
+skinparam Machine {
+  BackgroundColor PRIMARY_COLOR
+  BorderColor BORDER_COLOR
+  FontColor #000000
+}
+
+skinparam Node {
+  BackgroundColor PRIMARY_COLOR
+  BorderColor BORDER_COLOR
+  FontColor #FFFFFF
+}
+
+skinparam Note {
+  BackgroundColor PRIMARY_COLOR
+  BorderColor BORDER_COLOR
+  FontColor #000000
+}
+
+skinparam Object {
+  BackgroundColor PRIMARY_COLOR
+  BorderColor BORDER_COLOR
+  FontColor #000000
+}
+
+skinparam ObjectAttribute {
+  BackgroundColor PRIMARY_COLOR
+  BorderColor BORDER_COLOR
+  FontColor #000000
+}
+
+skinparam Package {
+  BackgroundColor PRIMARY_COLOR
+  BorderColor BORDER_COLOR
+  FontColor #000000
+}
+
+skinparam Participant {
+  BackgroundColor PRIMARY_COLOR
+  BorderColor BORDER_COLOR
+  FontColor #000000
+}
+
+skinparam Partition {
+  BackgroundColor PRIMARY_COLOR
+  BorderColor BORDER_COLOR
+  FontColor #000000
+}
+
+skinparam Queue {
+  BackgroundColor PRIMARY_COLOR
+  BorderColor BORDER_COLOR
+  FontColor #000000
+}
+
+skinparam Rectangle {
+  BackgroundColor PRIMARY_COLOR
+  BorderColor BORDER_COLOR
+  FontColor #000000
+}
+
+skinparam Requirement {
+  BackgroundColor PRIMARY_COLOR
+  BorderColor BORDER_COLOR
+  FontColor #000000
+}
+
+skinparam Sequence {
+  BackgroundColor PRIMARY_COLOR
+  BorderColor BORDER_COLOR
+  FontColor #000000
+}
+
+skinparam SequenceGroup {
+  BackgroundColor PRIMARY_COLOR
+  BorderColor BORDER_COLOR
+  FontColor #000000
+}
+
+skinparam SequenceReference {
+  BackgroundColor PRIMARY_COLOR
+  BorderColor BORDER_COLOR
+  FontColor #000000
+}
+
+skinparam Stack {
+  BackgroundColor PRIMARY_COLOR
+  BorderColor BORDER_COLOR
+  FontColor #000000
+}
+
+skinparam State {
+  BackgroundColor PRIMARY_COLOR
+  BorderColor BORDER_COLOR
+  FontColor #000000
+}
+
+skinparam Storage {
+  BackgroundColor PRIMARY_COLOR
+  BorderColor BORDER_COLOR
+  FontColor #000000
+}
+
+skinparam Usecase {
+  BackgroundColor PRIMARY_COLOR
+  BorderColor BORDER_COLOR
+  FontColor #FFFFFF
+}
+@enduml

@@ -1,0 +1,13 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $chemistry [64x64/16z] xS61400000CXXFdRpkElMXu0001m
+
+!function $chemistryIMG($scale=1)
+!return "<img data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAAIGNIUk0AAHomAACAhAAA+gAAAIDoAAB1MAAA6mAAADqYAAAXcJy6UTwAAAAEZ0FNQQAAsY58+1GTAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAAOxAAADsQBlSsOGwAAAuNJREFUeNrtWk1IVFEUvk5KhIhKunATYZAu3LWINq3KTUStKoUWZaIFQq0Sin7cBFJUuK9FoNYuaMBNINFSIgjahAqC/SAulKREm+m7zBm4XSbnzv157z48H3yLe5h73nnf3HPfN/eNEAwGYzejLkDOYpZqzu32FcAC8B4QHsUar1lMskZuARaABWABWAAWgAVgAVgAFoAFYAFYABaABWABWAAWwC+6IsmRigB7wSkttmEwT//MFOUKgj0BBXgEntViw+DHKvO+gWeUcQfYBM5kSYBT4FPx74nuNHjbYK4UqBvsUWJHwTnwSxZaQH5jz7WbX6Rv3xTDNKeMOsrZEbsAMt8LsF2JbYF94FoNedZozpYSa6fcuZhb4CY4qMXksn9pkWuZBDihxDrB3+D7GFeA7NMxLfYWHHfIOU45VIzRtaISoJkeVw1KbAW8CBYc8hYox4oSa6BrNfso3Nd7N1nQhYRN3DTtE6nvAZfAWym4WPmYXDLwFUFbQNrUiRSt/ISrVXYRoGx1G1MUoNHVKrvsAY/B61rsMhmWkJAt90yLPQFvJLkHuFhdV3i1yjYtUMnqLoBDCS79Ibqms1XOWXy+ktXtB9cTFGCdrulslWttAZ9W1xVerHItaoWwuq5wtsqmAkjbORnA6rrif1Z50tQqm7aA3PFPKmP5V7bz4AeRPn6Cn8kWlzfmVuIbHytAOq2BCoLkRTzIU00qBkxcookA18B6ZfwJHBXxYZRqK6OeancW4Jg2vgNuRijAJtW2U+1WAnRr41kRL2ar1G4lwEagQ5QQyFWp3UqAH9q4N2IBeqvUbiXAa238AGyL8ObbqLadarfyAV/Bq4pYLeA5UXqD8x38lfKN7wdPg6/Ag0p8W5TeL6z6OA+4B94V2cJ9qtuLE5Q/Lo6AhzNy83nyAAVfAhTowGMf/dCI9Ukgl/1D8Ar4x2SCzZHYAXAEPA4eoh5ME7LH58F3onRIuiQYDAbDEH8BnlaE+Ub181cAAAAASUVORK5CYII={scale="+$scale+"}>"
+!endfunction
+
+IBMEntityColoring(chemistry)
+!define chemistry(e_alias, e_label, e_techn) IBMEntity(e_alias, e_label, e_techn, #232F3E, chemistry, chemistry)
+!define chemistry(e_alias, e_label, e_techn, e_descr) IBMEntity(e_alias, e_label, e_techn, e_descr, #232F3E, chemistry, chemistry)
+!define chemistryParticipant(p_alias, p_label, p_techn) IBMParticipant(p_alias, p_label, p_techn, #232F3E, chemistry, chemistry)
+!define chemistryParticipant(p_alias, p_label, p_techn, p_descr) IBMParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, chemistry, chemistry)

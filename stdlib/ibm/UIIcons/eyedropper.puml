@@ -1,0 +1,13 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $eyedropper [64x64/16z] xS61400000CXXFdRpkElMXu0001m
+
+!function $eyedropperIMG($scale=1)
+!return "<img data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAAIGNIUk0AAHomAACAhAAA+gAAAIDoAAB1MAAA6mAAADqYAAAXcJy6UTwAAAAEZ0FNQQAAsY58+1GTAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAAOxAAADsQBlSsOGwAAAsJJREFUeNrtmUtOG0EQhtszXiMOkBMEc4DkEAg74eUAC3IEDkCAAyCuEB62eUqsOUSkECAJSGzYsOEAYKBaKqTRqKenX9NT4+mS/o1lj+f7p6arupqxECFC1DniCt/7FOgctAq6A13VyYAZ0AFoHDQG+gq6Af2ugwEcfh/UTHwWgaZNTIhHAN7KBKoGtEAPCvDPoBeENzKBogFroB7oH+giB74LOga1TU2ICcL/SED8BX2UwB+CLkHXpiZQMmASQZMQHOqLBP49jE2gZMADpv10CiLKgbcygdorcIFp306B58EbmxARXARfLX9/iEY9px70TzSGdAbk1fk2PuHLnOtkZcJn0Fbyi01C8LOgPcGCl7zPJhrEcl6FrGhQzYAs+Kw6n5cJokwagr6nN00xcXhZnc8yIQt+SZQ1MXH4vHc6bUJWx8jh+9TK4JwivKoJE7rwwkXBI/yuBrzKpogJPlsEDai1wjbwskxId4zfcGhCajNkCy8zweh6PvuAedCOA3ijel92BriGV+kY/yfmCaUa4ANeNBniJpwKJkteN0O+4Lu46CU3QJtlT4R8wvPr/cG0509+A7TudLHQjAWEjwuGF5W6lsq7X6QBZcIXVy5GEd61AZWDd9kIdXHkVDT8okt4V2Ww4xF+4HrBcmHAdlXhXRnwQfA6VAK+qE7QJfxSkfA+WmFb+H7Rfx45uPnKwtuWwfeBJhOMpioBb2OAbLJjCj/0DW9qgO0ujwy8SSts2+7K4HtlrMA6GdDRhJeNrUjA61aB7VGD1zVA9dxeFX65bHjG9EZitwinezaXjnvQiutdna9FUDaXY0w+syMZJgMRnbM5XjWOGOEwmQqrns3xfuGYEQ/TsbjsbO4Jnzx5eBsDskx4wid/wioStgcj3IRfoE+gRyxtZ6xC0dCo9w02ghGxmkcwIBgQDAgRIkSI+sYbrr0kD2lTrBoAAAAASUVORK5CYII={scale="+$scale+"}>"
+!endfunction
+
+IBMEntityColoring(eyedropper)
+!define eyedropper(e_alias, e_label, e_techn) IBMEntity(e_alias, e_label, e_techn, #232F3E, eyedropper, eyedropper)
+!define eyedropper(e_alias, e_label, e_techn, e_descr) IBMEntity(e_alias, e_label, e_techn, e_descr, #232F3E, eyedropper, eyedropper)
+!define eyedropperParticipant(p_alias, p_label, p_techn) IBMParticipant(p_alias, p_label, p_techn, #232F3E, eyedropper, eyedropper)
+!define eyedropperParticipant(p_alias, p_label, p_techn, p_descr) IBMParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, eyedropper, eyedropper)

@@ -1,0 +1,13 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $power [64x64/16z] xS61400000CXXFdRpkElMXu0001m
+
+!function $powerIMG($scale=1)
+!return "<img data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAAIGNIUk0AAHomAACAhAAA+gAAAIDoAAB1MAAA6mAAADqYAAAXcJy6UTwAAAAEZ0FNQQAAsY58+1GTAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAAOxAAADsQBlSsOGwAABD1JREFUeNrtmltIFUEYx6eOUkGElgrRRdCimxxFrCiTLCiyMkvzISrCqOitHqKgwrykD2Fib0EvBuVbJVpUGCWVStRDiUgaEUESZEckumJp33C+A9PnHs+e2dk9s7l/+D3M6Nn55r9z25lhzJMnT5NZU2JY9pgOsUyd7C3AM8AzwDPAM8AzQJFWAUkOxJyEZWljwAygAegEqhwwoArLasCyY2rAYqALOAb4gCOA38bK+7EMH5bZhTHExIA84BmQKeT58M3YpQYsI6RMjCHPaQMKgPtAIsn/CNTZaEAdliEqEWMpkHmgT+I364EWg/53E9gKdJt8TgVJV5r4zRugEVgELBPy44Fi4Cnw3s4WkA7cMqg8D74ECDgwCAawrEqDwfgGMN8uA3gBzQbN/ozB23RCFVi2qDlAUzQtOxoDaoAMkncWqI3hOqYWY6CD8znVBqzGaUdUK5oSa9VgLKJOAzkqDagn//sBKNNoRVuGMYmDe7UqAwqBtQYFBjQyIGDwQrYYxC1lwCmSfoDoJqO4qq0akAXkkrxyjT/uaGwbgeVWDNhP0m24/tZVXRijqBIrBtAfX3fBJz6NsVjWgKVAqpAeMZhudFQrxip243QZA+gXVjsw5AIDhjDWiepiyoBsku5k7hGNdYlsFxDV5yID+lQYsGAyGBA3wUNmk/Q7xUHaeRZIY50r0wL+kPSYi1rAWIS6SBngc5EBPs8ABQZ8J+kUFxmQEqEupgzoJWm/iwzwR6iLKQO6/yMDulUYkOUiA7JUGPCKpPPZ+B1hHZWIsU5UF1MG9JO+Mw0odYEBpRiruCjql90PuEbS+1xgAI2x2cqGSBNZVa0z+ErUSdkYo6hGKwbwc7bHZP1er7EB9eQbo4NFOKs0sytMLz3ww9EiDStfhLGJiriBa8aAh2z8Vhh3OkGjyicYtMxWjN2yAVwn2b/7bGk4PuhwyWoqxpIm5I1gzFF/NITTZ3R5jZDHr6bEm3HZZp0HDpK8S2iKMgO4HgEbgIVkVvjGYrdfeALHKHHg45ck+HnGqGoD+APvAnuAWcKssBnTbQ5WnJd7kQWPwcXKDwCbgC+y382R9BWnlr3Y/EPiXYMfQfGzuZ8OLHWvAodI/g8WvKIT1d6lzCbHAK4NdgHThfwVwAFcO/TaVPndwB0WvK8gahjYJtMVrWxM8tsi94B5Bn+7zYK3N1SdI/IWxi89bA/zQvhReI9sX7KiVFxrh/tUfs6Cd/tasPtEo5nADuA4sDLM/7wEdrIob4apNIArDufccvIVJuo38AJnkg5ssvzNDeLfk7El8ak2F2ebHBZ+2/4Xjv4X8NkslgaExE+Srhh8jKgWn+YOA69VTSeqlY/NtlDhSnEUl7a8O7Wrnk/tEj+SPooDVIbkM3pwoL0MvLVrQeGEkrFf56ExvK/z46rQ9vUnFrwDPIwVfYLjxSDz5MmTJxv1F/5uwDoHMrXfAAAAAElFTkSuQmCC{scale="+$scale+"}>"
+!endfunction
+
+IBMEntityColoring(power)
+!define power(e_alias, e_label, e_techn) IBMEntity(e_alias, e_label, e_techn, #232F3E, power, power)
+!define power(e_alias, e_label, e_techn, e_descr) IBMEntity(e_alias, e_label, e_techn, e_descr, #232F3E, power, power)
+!define powerParticipant(p_alias, p_label, p_techn) IBMParticipant(p_alias, p_label, p_techn, #232F3E, power, power)
+!define powerParticipant(p_alias, p_label, p_techn, p_descr) IBMParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, power, power)

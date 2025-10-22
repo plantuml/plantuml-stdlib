@@ -1,0 +1,13 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $ibmdatastage [64x64/16z] xS61400000CXXFdRpkElMXu0001m
+
+!function $ibmdatastageIMG($scale=1)
+!return "<img data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAAIGNIUk0AAHomAACAhAAA+gAAAIDoAAB1MAAA6mAAADqYAAAXcJy6UTwAAAAEZ0FNQQAAsY58+1GTAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAAOxAAADsQBlSsOGwAAAxBJREFUeNrtmj1PFFEUhod1/QU2FoiJBRpo/AUSMEghFlZITExQ1EShMUjiLyBRbEA0RoyxEKSBikJINFhaSUKMlQkfhQ0VNHws63vC2WS8ztcdd+49d3ZO8hTzsZN93zn33jMzx/OKKKKIRo6mBOe0gUHQA86AMvgFvoDXYM3wf67WU3M54sST4Dl4AE4ox9qZh2AKjIA9FzOgHCF+EXQncHMInAe9YN81A0oh+8cTiPdHN2dLLjKgjVPbH1tglMc9RSd4Cpp959BQmQarluet62COszhVBgwqY57EXwSz4Dczy/u2lGsNW76hWuLDMuCKsk13fjvgvG0+NuPbd4cxtULFiT+IMyMoA1qU7ZWI368IGcph4vvSDIGSY/NYlPiFNAasK9sdEb/vcFl82BzwmVeCWtBsvxQwD5ziY/54GbCCiBUflgFU3h75tmmp+w76wWmmn/c1KyXqpEviwzJgje/kkGLCTMy1qHj66ZL4qAmPavtljet8Ak9cEx9lwB7X9lPKcAiKZ+AqqLgmPu5pcJ+HwRuu8NQCh8x54WLap622qv9ZqYkT70LRk6l46QZkLl6yAUbESzXAmHiJBhgVH7cMuiY+1SpVatQ7L8kAa+IlGGBVvG0DrIu3aYAI8bYMECPehgGixJs2QJx4kwaIFG/KALHiTRggWrzus0BT3sRnnQE3pIvP2oCbYF6y+Kwfhw9Z9AfwUaJ4E+8DaiaIDdc+hRvJgLr24RmIC97f3zFrQf1K9LF21eYQyDKoj2kMPA45Tl+yBsAr8MgLaeErOyye+hh7Egxx6ldoBde8gGZOV+eAsQTi/UF9jONpMyBuTFctjPkRZV/SPsZ/eptdzIBh5abo9DHetzkHZJUpOn2MXXmsA3T6GM82eiF0lEcDdPoYN2zOAfWqEN+DW75tnT7GpTxkwFtlO2kfY4XLY+0MqAoz4Kt3/KapTzEhro+Rmrp+5GUOuAu+aZy/HFA8OW3ADrgM3sWcV+EnQupjPMjb0+AuuA0mwD1wCZzjlzCb3nH36nRQ2hdRRBFF1OIPsaDb18JmVaUAAAAASUVORK5CYII={scale="+$scale+"}>"
+!endfunction
+
+IBMEntityColoring(ibmdatastage)
+!define ibmdatastage(e_alias, e_label, e_techn) IBMEntity(e_alias, e_label, e_techn, #232F3E, ibmdatastage, ibmdatastage)
+!define ibmdatastage(e_alias, e_label, e_techn, e_descr) IBMEntity(e_alias, e_label, e_techn, e_descr, #232F3E, ibmdatastage, ibmdatastage)
+!define ibmdatastageParticipant(p_alias, p_label, p_techn) IBMParticipant(p_alias, p_label, p_techn, #232F3E, ibmdatastage, ibmdatastage)
+!define ibmdatastageParticipant(p_alias, p_label, p_techn, p_descr) IBMParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, ibmdatastage, ibmdatastage)

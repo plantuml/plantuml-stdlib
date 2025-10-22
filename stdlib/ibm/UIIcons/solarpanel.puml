@@ -1,0 +1,13 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $solarpanel [64x64/16z] xS61400000CXXFdRpkElMXu0001m
+
+!function $solarpanelIMG($scale=1)
+!return "<img data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAAIGNIUk0AAHomAACAhAAA+gAAAIDoAAB1MAAA6mAAADqYAAAXcJy6UTwAAAAEZ0FNQQAAsY58+1GTAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAAOxAAADsQBlSsOGwAAAjFJREFUeNrtmLtLA0EQxvMCJWXAWsROTKUiiASV2NjZmMJaULQSG/HRaGEliIUKtkLSBxUL/wFLY5EunaAoIhaKxPgdTOA4kstdsnfZJd/Ar9h77O58Ozs7d5EIjUbrZYsG2HctxLHatlivRwAFoADeLQmyIcwpK2NpJYA1oSK4BbkA55OTMYphiRDz4fwsiIOrgETISd9xGSsUEbwIMAUytnYQItidr1tGxtaiDmg0wSpYBoUAnFfVd0uLe3zuCZTBoi1qYtIuy33jnPd7ChRkYlWHgOkOxk9303k/EdAsEo7ATgfj34N+MN0N5zupz3OyertNVnUFzIAR8CeiWc5egscG7xzK9VCdV/2B0geOwarL1rLEOAeb4EeHSjCu0PlrsNRCVOvehBxvBUc+MVqAE591wRBIiWhdtYSCPkbBmuNaBWyLg0mp7A7AsO0Za6ucgZLpEbAHJh3Oj4EH2edf4mReTo+UbTtYOeFGtwio+Uycc462tfLvDd57kVMj7/Kukf8DBh3tuxbnvtu7RuaAqI+j9TWi2b9BFRFQcbTnTfojpGI1TsGGQ5Bx8GaCACoi4EKyed0+wK8pEaAiB5TkPF+X1V8An22cLl2J+oSiTrfAANgHzyblAFUCfEeC/VmqdQ4w2hK67EWXXKH6OUYABaAAFIACqPwW8GpaVoLcAhSAlSArQW4BCkABKAArQVaC3AIUgDlAE1NdCTICKAAF8JcDar3kM7cABaDRaLQetn/MwWTyR8eErgAAAABJRU5ErkJggg=={scale="+$scale+"}>"
+!endfunction
+
+IBMEntityColoring(solarpanel)
+!define solarpanel(e_alias, e_label, e_techn) IBMEntity(e_alias, e_label, e_techn, #232F3E, solarpanel, solarpanel)
+!define solarpanel(e_alias, e_label, e_techn, e_descr) IBMEntity(e_alias, e_label, e_techn, e_descr, #232F3E, solarpanel, solarpanel)
+!define solarpanelParticipant(p_alias, p_label, p_techn) IBMParticipant(p_alias, p_label, p_techn, #232F3E, solarpanel, solarpanel)
+!define solarpanelParticipant(p_alias, p_label, p_techn, p_descr) IBMParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, solarpanel, solarpanel)

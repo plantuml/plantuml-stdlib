@@ -1,0 +1,13 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $devicesatibm [64x64/16z] xS61400000CXXFdRpkElMXu0001m
+
+!function $devicesatibmIMG($scale=1)
+!return "<img data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAAIGNIUk0AAHomAACAhAAA+gAAAIDoAAB1MAAA6mAAADqYAAAXcJy6UTwAAAAEZ0FNQQAAsY58+1GTAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAAOxAAADsQBlSsOGwAAAxlJREFUeNrtm0loFEEYhSvGiERERIML4oZRcAFBEBE0zIAngwouKOLRCOIhiiLGcUtiIopHwR13QUE8iBdxARUl6kHE5DBxGRETDy54MMHg8op5gSFMh66u6rYz8z/4yBy6pvu9rvqrqjujVJGrJECbBWAjmBozL2/BKfDUpFFpAPMPwQjwI2YBzAHbwB3w0W+jwYYnqQEZMBP0xCyAMtDGa/TdCwYZnmQcSMfQvOI1pXmNKqwACk4SgAQgAUgAEoAEIAFIABKABCABSAASgAQgAUgAEoAEIAFIABKABOCtDlCpsi8h4qYyXluHSSPTN0MnwQbQqgxeP0WkCWASr9G3iv7lqKjY5WcI3B/gHhMyDYpEIpHDhdBAUBVYC0ar7D9NnQG/8x1YWmDGtZ/D4AQYBYZw1boYXAJ/CzmAkeAmWA/2gTXcF7SAOvAJvCjUAGaBu2AGWA1O59ztdlANhoMbtrvBOGo5uAg6uVFry3OTK8AzF9vhuBXwFNjPQqeL3vc8xzWDieBqVAHoBxOLWHj0/nw8i1FQveNYzt3mDgPnwUpwBOzyqPJNYAdrwqOwp0E9xmrBVhYkfTc+gK8OHnRMZqBPwBQWu0pW+Mse7ZoYTCPY4/XlrnrAQnANjAHnwAXwGPxx1KP0uN4EhvI83QzkuY15VwGsAlfAK249046HVA97UzWnuBZ2/U6P4w/6Ne8igCouMG6zCHWHUFOmgbms5npFtxn86sd8nV/ztgGUsxC9BOtCMj8dXOecvgUc6+dYY/O2AexkhV8Kugza+X3CpH+UMRt8AUvAA9fmbQLQ7WpY7F6HNM+3s8KfBd/CMG8TQBKMZQCmSjgMycq8VtBngvPAT6/FRUSyNm8TwHzwxtE8/9/MBw1Ar71XcPqLWnrIHnVlPkgNOAD2gkN88BCmyrkE7kW/ilvGvyn2Aic7Kr+qZ+LNvAOuDfalos/xeuV3DxxX2d8uqigDaGDqtua380lNPoOfwXuSyfncS1cY3azEwLzeYOx2ULhuce2QicKgbQ1I5oy3lMV5ki4LV9RKOvqehBLFT/8ApUykx3Ga/4MAAAAASUVORK5CYII={scale="+$scale+"}>"
+!endfunction
+
+IBMEntityColoring(devicesatibm)
+!define devicesatibm(e_alias, e_label, e_techn) IBMEntity(e_alias, e_label, e_techn, #232F3E, devicesatibm, devicesatibm)
+!define devicesatibm(e_alias, e_label, e_techn, e_descr) IBMEntity(e_alias, e_label, e_techn, e_descr, #232F3E, devicesatibm, devicesatibm)
+!define devicesatibmParticipant(p_alias, p_label, p_techn) IBMParticipant(p_alias, p_label, p_techn, #232F3E, devicesatibm, devicesatibm)
+!define devicesatibmParticipant(p_alias, p_label, p_techn, p_descr) IBMParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, devicesatibm, devicesatibm)

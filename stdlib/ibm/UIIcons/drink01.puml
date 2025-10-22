@@ -1,0 +1,13 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $drink01 [64x64/16z] xS61400000CXXFdRpkElMXu0001m
+
+!function $drink01IMG($scale=1)
+!return "<img data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAAIGNIUk0AAHomAACAhAAA+gAAAIDoAAB1MAAA6mAAADqYAAAXcJy6UTwAAAAEZ0FNQQAAsY58+1GTAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAAOxAAADsQBlSsOGwAAAgRJREFUeNrtm71KA0EQxzd6gglYaCo/30C0sou9jQgWFlqr+AaiT6FYxE4QNWAjFr6GPoFgxMqLhSAp/PoHTzgWQrK7k/24nYF/MSG73PxuZu7mjhOCLW4rEe61Ap1CM33+/xnahu5cAhgi3KuuELzI/lt3nQGUAGYtrfEWQJCWOOgvPz4BiD4DGAADYAAMIHTbgM6hYd8ugzaDTzJtQl+xZEA++H//LJYSkIPv2Cd0GwOAbsFvQY2iAyANnhLAmIXg16iDp7oK1KALCwCOqIOnALAOXUIjBFOi6rMD4+BNAdS6BP8GXVnIiAbFJolBzcvBd+b8Y+gQeg+lq+oC2Iemc/43tCc8eMZn4ypQhnal305CDF4XwCo0nvNfoYOYpsFlyb8OqeYpACxJ/k3I46ROE5yU/EfFa/kT0bHLT5fnoKaNDJiQ/BeFtekAT2ZqqwTKkq9S/x9QewDBt7O9nQ1DKtbyac/EEYCpnL8IPSjusQDdUwBwkQFpj56i04fSkAC0BgCgxQAYQLg9oKqxR5V7AJcAAygMAIoewDdCXAIBAZAnwlGoorC+kq0xngRdATDNArKzXxQAaYgATO4Gq5wBDCB8AGnsPYBLgJsgZwA3QS+aIMV7gV5fgJT6yIB5of8lSSFKwNleOgCaBAdN9Y7QaBLUBbAj/j569CELUsHGxsZmYL/7YXuliFoV/gAAAABJRU5ErkJggg=={scale="+$scale+"}>"
+!endfunction
+
+IBMEntityColoring(drink01)
+!define drink01(e_alias, e_label, e_techn) IBMEntity(e_alias, e_label, e_techn, #232F3E, drink01, drink01)
+!define drink01(e_alias, e_label, e_techn, e_descr) IBMEntity(e_alias, e_label, e_techn, e_descr, #232F3E, drink01, drink01)
+!define drink01Participant(p_alias, p_label, p_techn) IBMParticipant(p_alias, p_label, p_techn, #232F3E, drink01, drink01)
+!define drink01Participant(p_alias, p_label, p_techn, p_descr) IBMParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, drink01, drink01)

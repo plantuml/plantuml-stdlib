@@ -1,0 +1,11 @@
+sprite mdiLamp <svg width="48" height="48"><g transform="scale(2)"><path d="M8,2H16L20,14H4L8,2M11,15H13V20H18V22H6V20H11V15Z" /></g></svg>
+
+!if %function_exists("$MdiSprite")
+  !unquoted function $MdiLampImg($color = $MDI_DEFAULT, $scale = "1")
+    !return $MdiSprite(mdiAccountAlert, $color, $scale)
+  !endfunction
+
+  !unquoted function $MdiLamp($alias, $label=$MDI_DEFAULT, $shape=$MDI_DEFAULT, $color=$MDI_DEFAULT, $scale=1, $stereo=$MDI_DEFAULT)
+    !return $MdiSpriteElement("mdiAccountAlert", $alias, $label, $shape, $color, $scale, $stereo)
+  !endfunction
+!endif

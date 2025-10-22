@@ -1,0 +1,136 @@
+' ==========================================================
+' MDI (default) values which can be used by the macros =====
+'
+' The default values can be overwritten before the common.puml is included
+' Details of the values see below:
+' !$MDI_ALIGNMENT = (""|"left"|"center"|"right")
+' !$MDI_DEFAULT_LABEL = (""|"*")
+' !$MDI_DEFAULT_SHAPE = ("label"|"rectangle"|...)
+' !$MDI_DEFAULT_COLOR = (""|"red"|"#FF0000"|...)
+' !$MDI_DEFAULT_STEREOTYPE = (""|"*"|"MDIElement"|...)
+' ----------------------------------------------------------
+' uses the default value which can be defined via the $MDI_DEFAULT_...=.... calls
+' ($MDI_DEFAULT_LABEL, $MDI_DEFAULT_SHAPE, $MDI_DEFAULT_COLOR, $MDI_DEFAULT_STEREOTYPE)
+!global $MDI_DEFAULT = "uSe_DeFaUlT"
+
+' if no label is given don't use a label at all 
+!global $MDI_LABEL_NONE = ""
+' if no label is given use the alias as label 
+!global $MDI_LABEL_ALIAS = "*"
+!global $MDI_DEFAULT_LABEL ?= $MDI_LABEL_ALIAS
+
+' don't display a shape (eg. rectangle) at all, around the sprite and the label
+!global $MDI_SHAPE_NONE = "label"
+' can be any other plantuml element too (like database, package, folder, etc.)
+!global $MDI_DEFAULT_SHAPE ?= "rectangle"
+
+!global $MDI_COLOR_NONE = ""
+' can be any html color name or hex value like "red", "#FF0000", etc.
+!global $MDI_DEFAULT_COLOR ?= $MDI_COLOR_NONE
+
+' don't add a stereotype
+!global $MDI_STEREOTYPE_NONE = ""
+' add a stereotype with the name of the used sprite
+!global $MDI_STEREOTYPE_SPRITE = "*" 
+' can be any other concrete stereotype too like $MDI_DEFAULT_STEREOTYPE = "MDIElement"
+' all used stereotypes/styles must be explicitly defined 
+!global $MDI_DEFAULT_STEREOTYPE ?= $MDI_STEREOTYPE_NONE
+
+' don't change the alignment of the text (label + stereotype)
+!global $MDI_ALIGNMENT_NONE = ""
+' left alignment of the text (label + stereotype)
+!global $MDI_ALIGNMENT_LEFT = "left"
+' center alignment of the text (label + stereotype)
+!global $MDI_ALIGNMENT_CENTER = "center"
+' right alignment of the text (label + stereotype)
+!global $MDI_ALIGNMENT_RIGHT = "right"
+!global $MDI_ALIGNMENT ?= $MDI_ALIGNMENT_CENTER
+
+!if ($MDI_ALIGNMENT != $MDI_ALIGNMENT_NONE)
+  skinparam defaultTextAlignment $MDI_ALIGNMENT
+!endif
+
+' ==========================================================
+' MDI helper functions =====================================
+' ----------------------------------------------------------
+!function $mdiCombinedSpriteLabel(sprite, $alias, $label)
+  !if $label == $MDI_DEFAULT
+    !label = $MDI_DEFAULT_LABEL
+  !else
+    !label = $label
+  !endif
+
+  !if label == $MDI_LABEL_ALIAS
+    !label = $alias
+  !endif
+
+  !if label == ""
+    !return sprite
+  !else
+    !return sprite + %newline() + label
+  !endif
+!endfunction 
+
+
+!function $mdiStereotype($sprite, $stereo)
+  !if $stereo == $MDI_DEFAULT
+    !stereo = $MDI_DEFAULT_STEREOTYPE
+  !else
+    !stereo = $stereo
+  !endif
+
+  !if stereo == $MDI_STEREOTYPE_SPRITE
+    !stereo = $sprite
+  !endif
+
+  !if stereo == ""
+    !return ""
+  !else
+    !return "<<" + stereo + ">>"
+  !endif
+!endfunction
+
+
+!function $mdiShape($shape)
+  !if $shape == $MDI_DEFAULT
+    !shape = $MDI_DEFAULT_SHAPE
+  !else
+    !shape = $shape
+  !endif
+  ' $MDI_SHAPE_NONE is already label (is no visible frame), so no need to check again
+  !return shape
+!endfunction
+
+
+' ==========================================================
+' MDI macro $MdiSprite: ====================================
+' Adds a sprite, optional with changed color and scaled
+' ----------------------------------------------------------
+!unquoted function $MdiSprite($sprite, $color = $MDI_DEFAULT, $scale = "1")
+  !if $color == $MDI_DEFAULT
+    !color = $MDI_DEFAULT_COLOR
+  !else
+    !color = $color
+  !endif
+  !if color == ""
+    !return "<$" + $sprite+ "{scale="+ $scale+ "}>"
+  !else
+    !return "<color:" + color + "><$" + $sprite+ "{scale="+ $scale+ "}></color>"
+  !endif 
+!endfunction
+
+
+' ==========================================================
+' MDI macro $MdiSpriteElement: =============================
+' Creates an aliased entity with a sprite and
+' changeable label, shape, color, scale and =stereotype
+' ----------------------------------------------------------
+!unquoted function $MdiSpriteElement($sprite, $alias, $label=$MDI_DEFAULT, $shape=$MDI_DEFAULT, $color=$MDI_DEFAULT, $scale=1, $stereo=$MDI_DEFAULT)
+  !sprite = $MdiSprite($sprite, $color, $scale)
+  !label = $mdiCombinedSpriteLabel(sprite, $alias, $label)
+  !stereo = $mdiStereotype($sprite, $stereo)
+  !shape = $mdiShape($shape)
+
+  !$line = shape + " " + %chr(34) + label + %chr(34) +" " + stereo + " as " + $alias
+  !return $line
+!endfunction

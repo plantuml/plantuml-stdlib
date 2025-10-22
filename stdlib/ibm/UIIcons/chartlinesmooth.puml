@@ -1,0 +1,13 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $chartlinesmooth [64x64/16z] xS61400000CXXFdRpkElMXu0001m
+
+!function $chartlinesmoothIMG($scale=1)
+!return "<img data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAAIGNIUk0AAHomAACAhAAA+gAAAIDoAAB1MAAA6mAAADqYAAAXcJy6UTwAAAAEZ0FNQQAAsY58+1GTAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAAOxAAADsQBlSsOGwAAA21JREFUeNrtmm1ojlEYx8+Yt0xqfJjVQmH7IJTyPmJFfECUUIxWGJ4SSWpoJlLywUtSE6a8RF7m3YdZ1ixihZIphfJMiViGJi//067V6XKedu5793nSfc6/fm3n7L7Pc5//fV6u6zwTwsvLy2VlaOr+GFwTG3VzfQR4A7wB3gBvgDfAG+AN8AZ4A7wB3gBvgJPKdKB/leApeA4egw8uGTAKFCvlZpDr0hQYz8qPXFsDZrDyfZcMkH2bzurqXDJgLBiglFvBQ5cMmMfKd8HPdG6DQ0EJmAsGi/bT5SSoAadAg2UDFrLyzXTFAb3AbrAe9GR/yydKQTX9TFp4hpGgQCnLo/4r6TAgD1wFow2ulSNjHFhgYTQsZeUH4J3tUHg4qDfsfIdywB0wOcLn6AFWsrqTtkPhQdSRPFb/DFTQvP9FHd3KOpxF02ESaIpo8ctRyt/AGZvJkHT8MhjC6g/RVnQefASfwXVQCHaya7OpjawInqeUlS+ALzYNqKC5rGoXSOi2HVqQdtA1quSidbiLz1Koif6O2UyHi8BmVnccbDO4V15TxeqWgxVdeB5uqsz+7tkyoD91QG2jEawJ0MZq8EQzdQpCPM8sMJXV7bF5ILKdpZbfwRLQFqCNH2Axhakd6gvOgt4B2ukDDmgyv4u2DMinQEfVXvAyRFsvNG3JrfRogDb2gRGsbqP4938dIjNgP4vyXpEBYXUixXpQYXCvnHJrNetQnWnKGGbhm8PqEjScu6J1NBpUlYFykfq/VDZpdo43YIPph4YJhPgKfztVohFQX8F8OrTIZmtNES1o9WTGBNp9eL7fSqF1iy0D5D47jdWVRxjGNlGOcIsFRTJyvNbJvW20CDcGPTUJojLN2486kZFveSZ4H+Ae+cZnUyImbBkwhh7M1ttX1UBhdLXBtTdo16gJ80FBpkBCc8Ji81AjSYnNRLCMQlwZd/ymha4+ioMVUwOyaX6pOpimo60Gm0abToESirY69NpweP73MjFAbjurWN0Ryu+dMGAKGMbi90oRE5kYUMzK8nDxk0sGLGLlKhEjmRjQT/m9mYIfpwxQdToui19YA86JmCmIAW+F5vt1lwy4ZHLCEncDYqfMFElIrqa+NiZ9zuhsBNQKh6QzYIto/yrLCXXX1LXQfi+/YBzIAqE4qFx4eXl5kf4CE9qZTO22x+QAAAAASUVORK5CYII={scale="+$scale+"}>"
+!endfunction
+
+IBMEntityColoring(chartlinesmooth)
+!define chartlinesmooth(e_alias, e_label, e_techn) IBMEntity(e_alias, e_label, e_techn, #232F3E, chartlinesmooth, chartlinesmooth)
+!define chartlinesmooth(e_alias, e_label, e_techn, e_descr) IBMEntity(e_alias, e_label, e_techn, e_descr, #232F3E, chartlinesmooth, chartlinesmooth)
+!define chartlinesmoothParticipant(p_alias, p_label, p_techn) IBMParticipant(p_alias, p_label, p_techn, #232F3E, chartlinesmooth, chartlinesmooth)
+!define chartlinesmoothParticipant(p_alias, p_label, p_techn, p_descr) IBMParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, chartlinesmooth, chartlinesmooth)

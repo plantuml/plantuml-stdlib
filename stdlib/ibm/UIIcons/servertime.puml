@@ -1,0 +1,13 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $servertime [64x64/16z] xS61400000CXXFdRpkElMXu0001m
+
+!function $servertimeIMG($scale=1)
+!return "<img data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAAIGNIUk0AAHomAACAhAAA+gAAAIDoAAB1MAAA6mAAADqYAAAXcJy6UTwAAAAEZ0FNQQAAsY58+1GTAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAAOxAAADsQBlSsOGwAAA9ZJREFUeNrtmk1o1EAUx8duqUKtRfTQTzwUKgiCgl8HoRW8uFLrx0GprZ+oB0FRQUHwGyoVRPAg2IM9WIQKohat4sV6EUEQRS0o9GLbrT30ULse/GjX/2PfQjomm9l00qTZefCDTbKZyfwz8+bNmwhhzJixfLY5M1hXEagDW8EyUAnK+dowGAJ94BF4BX5HRYAycA60gBLFe8bBXXAFfJ+tAswFZ8EpUOyxjJ/gOmgFv2aTAPTWH4J1msp7A7b50Rv8EGA56AFVNtcGQDd4Br5YGkS+oBZsBg0O9w6COPgYZgHozb+1aUACXAAdYMKljBg4AC5ZnKRVhNU6e0JM85h/zh7eavTGN3A3TimUQ/95B9q5N9Vari0A60GngpAzLgC94d3SuZtgv0cHRtNgF1gE1ljOV7FIL3U8dKHGrn/S5s2fAJNZ3rTbcKR7j4Ml7BsyRnXd0jEUCjQJcF6a6iioac7S+FxskntWwnKumOsUYRCAIrwm6dxFDmZ02TiXabUmrjtwAcjBlUpTXYcP0+sdngUyVsp1By7AFun4sS4PLdkEl52t7kAEkKe9Hh/D6x6XugMRQA5W+n0UoN+l7kAEqJCOhz2Ws1PhPwmXugObBr3YX+m4U1EEraZDgITHbtksiVCoIEK5S92BCCB3+RrF+7o8iFATRgH6pON4Dvc6idDg8P+4S92BCNAtHTfmuMiSRaDjvQ4Lt0abmCPw1SBFfsfAPEuENsBLWlX7DL7yqrHFIZA6yEJlbAwcne56Q0cPoGXrPZu1QEmO5WR6gl3jS2zWAuQr/oRlGrws0gnMjFXyA+oov4DLqrScS4p0xjg0CZEkD4E6y7mlYCF4oZgJcmr8DbBHOn8VPA1bRug12Cim5gPXgpXgich9o2M+uG/TeKrnkAhhSmyC38oukc7dWXvCPvADfFDoDTF2eA/AKunaNxZ5TNdDhyUtXsZCbeIlbrXDvRQHfNL5sLNlY4S6/XYwovtBYz4JkGTPPcnduGga5bTymB/z40HDujlK/iKzOTri58OFYXs8xb5giMc3+YheHUGOMWPGjHl1ghTEXAP1QkPmNWAbZqd6WkzdWHEUgBr/XqR3ZaNko2CFLILdcrUtgo0X3KY2lXxAfYSH/H9ts/s+oCLAYMkPS2VpW6AbI6EwI0C+C+DlGyFKWrTz78Oc3MirHnCbY4Uq/m2GQL4JcISjqUH+nXc+gMZ8tZkFjABGgMjGAQkpZk5FqL0JlR7QG+EX3qsiwBlOHkTNRrltU8xuZ4g2JeiDB0qFLRa5f+gQNqOUGO1O7xA2KTFjxozlt/0DiiXETH2NIiUAAAAASUVORK5CYII={scale="+$scale+"}>"
+!endfunction
+
+IBMEntityColoring(servertime)
+!define servertime(e_alias, e_label, e_techn) IBMEntity(e_alias, e_label, e_techn, #232F3E, servertime, servertime)
+!define servertime(e_alias, e_label, e_techn, e_descr) IBMEntity(e_alias, e_label, e_techn, e_descr, #232F3E, servertime, servertime)
+!define servertimeParticipant(p_alias, p_label, p_techn) IBMParticipant(p_alias, p_label, p_techn, #232F3E, servertime, servertime)
+!define servertimeParticipant(p_alias, p_label, p_techn, p_descr) IBMParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, servertime, servertime)

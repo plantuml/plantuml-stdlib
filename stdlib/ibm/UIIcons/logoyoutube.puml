@@ -1,0 +1,13 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $logoyoutube [64x64/16z] xS61400000CXXFdRpkElMXu0001m
+
+!function $logoyoutubeIMG($scale=1)
+!return "<img data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAAIGNIUk0AAHomAACAhAAA+gAAAIDoAAB1MAAA6mAAADqYAAAXcJy6UTwAAAAEZ0FNQQAAsY58+1GTAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAAOxAAADsQBlSsOGwAAAotJREFUeNrtms1rE0EYxqfpBzUxUin1gyCBxAiVRFuhN0FPLbT14EFvHgL1UATpRW+ll+KhB9GbByUHoYf24EU8VEQK/QOUFAv9ApGgjYjQkPRgtX2GDhg2u2SSdGd2Z98HfoTNMjszT96djzfDGIlEIpFIJBKJRAqi2losGwedICa+i1fdPwtOWMq0gwt1nvsN/LV8twd2qq6/is8C+COuD9w04DK4C66CFDgD+jz2Y/4ERbAGPoE34EurBpwHL8GoTyP8HZgA35sx4BJYBud8/pr/ADfAut3NdodC3eA9SBowzp0EN0EO7FtvhhwK3QMZgwb7jOgTkzUga+CMl23EgLSBBqRlDeBTXNRAA6Kib3UNSBi88EvIGJA02ICkzgjY9GIEdCiMgDmxTH0Ornk5AmIuNmAFDInlaVGDATGZCIi43Ih/4BVYBNPgIehSZEBEJgLCihqzCx6J+fmtojrDMgZEFIflBrgFRsQYEZgIsGoJXAFT4LfOCNBlABO7NT5L8KTLC1abGTLyFbDTLzAJBsFH1a9AoGQ3DZZBj+Z29YJZcJ85J22aUVnGgIpGA3h7HoAZcNqF51dkDdChYfAM9LtYR0X2FVApPuI/BeMK6ip7KQJOaVgKeyIC+MzD83NPmE2GxgsRUHCxAdc1b4cLMgZsuVT5Y3BR8/S6JbMQ2napct2dt+1bSGEEeEFaI4D5JQJ4qqpkYOdLzCYN57QZWjXQgFWnOdlOOQMNyDViwGuQN6jzedGnGjltNXlm5gO4w47+X/ez+AEJfsJlpxEDuHhWZl7szlI+7Tw/IjPG/h+qqlEjh6RugwFhiJcPSfEs82ewwI7hkFS9sr4/JkcikUgkEolEIpGCqUNMJm3dYP8OggAAAABJRU5ErkJggg=={scale="+$scale+"}>"
+!endfunction
+
+IBMEntityColoring(logoyoutube)
+!define logoyoutube(e_alias, e_label, e_techn) IBMEntity(e_alias, e_label, e_techn, #232F3E, logoyoutube, logoyoutube)
+!define logoyoutube(e_alias, e_label, e_techn, e_descr) IBMEntity(e_alias, e_label, e_techn, e_descr, #232F3E, logoyoutube, logoyoutube)
+!define logoyoutubeParticipant(p_alias, p_label, p_techn) IBMParticipant(p_alias, p_label, p_techn, #232F3E, logoyoutube, logoyoutube)
+!define logoyoutubeParticipant(p_alias, p_label, p_techn, p_descr) IBMParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, logoyoutube, logoyoutube)

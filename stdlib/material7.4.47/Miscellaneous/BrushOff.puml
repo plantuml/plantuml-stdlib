@@ -1,0 +1,11 @@
+sprite mdiBrushOff <svg width="48" height="48"><g transform="scale(2)"><path d="M20.8 22.7L12.4 14.3L11.8 15L9 12.2L9.7 11.5L1.1 3L2.4 1.7L22.1 21.4L20.8 22.7M7 14C5.3 14 4 15.3 4 17C4 18.3 2.8 19 2 19C2.9 20.2 4.5 21 6 21C8.2 21 10 19.2 10 17C10 15.3 8.7 14 7 14M20.7 6C21.1 5.6 21.1 5 20.7 4.6L19.4 3.3C19 2.9 18.4 2.9 18 3.3L12.2 9L15 11.8L20.7 6Z" /></g></svg>
+
+!if %function_exists("$MdiSprite")
+  !unquoted function $MdiBrushOffImg($color = $MDI_DEFAULT, $scale = "1")
+    !return $MdiSprite(mdiAccountAlert, $color, $scale)
+  !endfunction
+
+  !unquoted function $MdiBrushOff($alias, $label=$MDI_DEFAULT, $shape=$MDI_DEFAULT, $color=$MDI_DEFAULT, $scale=1, $stereo=$MDI_DEFAULT)
+    !return $MdiSpriteElement("mdiAccountAlert", $alias, $label, $shape, $color, $scale, $stereo)
+  !endfunction
+!endif

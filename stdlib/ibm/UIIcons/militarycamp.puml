@@ -1,0 +1,13 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $militarycamp [64x64/16z] xS61400000CXXFdRpkElMXu0001m
+
+!function $militarycampIMG($scale=1)
+!return "<img data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAAIGNIUk0AAHomAACAhAAA+gAAAIDoAAB1MAAA6mAAADqYAAAXcJy6UTwAAAAEZ0FNQQAAsY58+1GTAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAAOxAAADsQBlSsOGwAAAgpJREFUeNrtmTssREEUhtcjErIN4hWKDYlsqxAkKiUFiUZQiEelV2mUKlTEmwgKBQWdqISEiJogCiLZBIVoSK5/kik2k7t3d+3M3td/ki/7OHt3Zv/7zzlz70YiDAYjzFHg4tiWF+ZeGHYHUICwC1Dso3pk0QEUgAIEugZYdAAFoADcB9ABFCC/UeTCmFVgF8SV91vAKfgO8rrrBmugNkX+DYyBk6A5oAwsgDkQdficyA2BGnAGfoLggFawA5ptchfyscMmdweGwZVfHSC+expsgWolJ87sDBgFG+AXdCrzqQQj8vm5qa2yKQc0yrOezZl1csqlPObBDw4YB4egySa3CPrBs03uFayDCilGcjRItyTAjVcdINrbCuhNUd2FMMcZflcPWE3RLY7AhBTDMwKYmLBOQY0tAaf29gUmwdQ/NzfimH3wArpAidIuB3W0y1wckK69iaL16GJRNeaATNvbu8b68gE2TbTLbB0QA3ug3a2NSwbtUiyNJxMOiMkB4lm2N92Rrl0OgAPwqVuAJdBmU43FgPP52LcrS010gGtZIKNKgayTImgVYBmUKu1NXN3dung5fw+25XJIdmY9mNV9Q6Rced2nazOSYyTkXJzmyjtCFIACUADbcPN/AStP9yboAApAASgABaAAFIACUAAKQAEoAAWgABQg/TW4FabfzCVAARgMBiPE8Qd0g2Y9wZB4PgAAAABJRU5ErkJggg=={scale="+$scale+"}>"
+!endfunction
+
+IBMEntityColoring(militarycamp)
+!define militarycamp(e_alias, e_label, e_techn) IBMEntity(e_alias, e_label, e_techn, #232F3E, militarycamp, militarycamp)
+!define militarycamp(e_alias, e_label, e_techn, e_descr) IBMEntity(e_alias, e_label, e_techn, e_descr, #232F3E, militarycamp, militarycamp)
+!define militarycampParticipant(p_alias, p_label, p_techn) IBMParticipant(p_alias, p_label, p_techn, #232F3E, militarycamp, militarycamp)
+!define militarycampParticipant(p_alias, p_label, p_techn, p_descr) IBMParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, militarycamp, militarycamp)

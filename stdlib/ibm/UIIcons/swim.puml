@@ -1,0 +1,13 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $swim [64x64/16z] xS61400000CXXFdRpkElMXu0001m
+
+!function $swimIMG($scale=1)
+!return "<img data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAAIGNIUk0AAHomAACAhAAA+gAAAIDoAAB1MAAA6mAAADqYAAAXcJy6UTwAAAAEZ0FNQQAAsY58+1GTAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAAOxAAADsQBlSsOGwAAA3RJREFUeNrtml+IDVEcx2d3rj9F60+2WNmHzRvyoIhik/DARlI3LCJ/9mEfCPfB03oUsrKisNpCbi0PhIjYR5QXf8qlREjRPojE7rW+p/ltHdPcmTln5s6cWb9vfdpm5vxm5/e75/zO78wZy2KxWCwWi8VisVj/o2oy+MyzwA6wAjTSuffgLjgHXozUAIwCx0EbsCu0KYMzYC8YCHNTOyPOjwa3QR7U+rQT1+aDReAKBWREBOAEOR9WTWAyuBXUMBfiZkMRH17YvwL3wBEar6pjvs117gMogAd0vBQcBjOkNsLmdFBOCNMDOmJItFOoa+4ELykgYXWQurTs/FzwBHwnnoMesAnUScPhN7hjBYyZJDUe9Cp25+WuY/HL93u066drfrapB2B42F1UCEKj67jPp21fgK1WDog6VY4D22gKy7mCIFRMM7sm0QN+gC7QCgY1eoI7aTb7tG0OsE11GhTZuATWSoGvpeOST7aeCRZKxwso4f10tRPT3jUpCQpdDkqCSdcBOkEQWX+31F44uBF8Bl8psbaAq65pUBRBu8AXE0vhPHV/OQcN0jDxygknQbvi/zgVxiatSlC1J9ynYdAU8v6i/RbTS+HZYJ0rEVcKQplq+0lgnk/yLlP1t9n0xZDXEAgKwh9aEPVShTcBjCVH34BLNOZ7qK2xy+FK499SyAmxyTbE+VaawlSnyEwFICjz69YJmQhA2Gkv8SDYBjmfShBsw5xPPAi2gc4nGgTbUOeDgvCLZg0jAxCX85WCUKRKbyiOh81VIQAtVShoitK9t4ap8dOsBG0qS/NJVXMmyrbU3vuxWCl2VV2tAQ8tZyNSbHS81kiWUexXW87O0D6aJUo6Tui+FRbv4c6CqWA6uEDnVOzPg2kR7LtBA9GtaB85AHtAvXRcT+eyYh8pAGKPr+BxvkDXTLePlAOWgeuW8zrKrTFgveVsWr411F6rEGqgyG6nxBVGN2hcPpZ+tbTsP6kGQKXGPkbt92vmkqP0N4p9Dc0EWj96lLVAl/TgOY0k1AkOxGQvun+7jhNeOaAjwOYj1fed0jmx//YILAYTA+zfgQ2Ws3MTl714Xf4ULLH+3Rv00iHVIfCNnH5Gi5qbtB73kviSa6Xl7N2JjQ/5MzbxFcfwZuVAlexFT1hFa5A5VGPUJbAAZLFYLBaLxWKxWBnTX1WX9YM+ZqzwAAAAAElFTkSuQmCC{scale="+$scale+"}>"
+!endfunction
+
+IBMEntityColoring(swim)
+!define swim(e_alias, e_label, e_techn) IBMEntity(e_alias, e_label, e_techn, #232F3E, swim, swim)
+!define swim(e_alias, e_label, e_techn, e_descr) IBMEntity(e_alias, e_label, e_techn, e_descr, #232F3E, swim, swim)
+!define swimParticipant(p_alias, p_label, p_techn) IBMParticipant(p_alias, p_label, p_techn, #232F3E, swim, swim)
+!define swimParticipant(p_alias, p_label, p_techn, p_descr) IBMParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, swim, swim)

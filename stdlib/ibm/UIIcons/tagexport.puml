@@ -1,0 +1,13 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $tagexport [64x64/16z] xS61400000CXXFdRpkElMXu0001m
+
+!function $tagexportIMG($scale=1)
+!return "<img data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAAIGNIUk0AAHomAACAhAAA+gAAAIDoAAB1MAAA6mAAADqYAAAXcJy6UTwAAAAEZ0FNQQAAsY58+1GTAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAAOxAAADsQBlSsOGwAAA8lJREFUeNrtmk1IFVEUx8d3LWqTJBSZJm2Ewk2YZLRJk9q0ypI+oDaWFdFGiKIWPiOCXLRo0YcYRAS5aZUVaZAPiogginBTRGEfm8hVizTeq/+l82C83Hnz5s79mKdz4IfOMHfuO/85995z7oznpZZaagvZqgLON4BB0A7qNPf5GUyAc+B7EgXgzr8FtYb7/gq2gQ8uBWCSc9fBJgt9LwNd4D6YdiVARnJuq8X+68FT0ORKgGrJudVlzhOqQ24IHJaI0OFiOGQs9/cX9ILhpERCxkHUJUqEjKOhlxgRqjXco5nG9A7QSOemwBg5OBkigudyTpAtg1nheCCg7SJwBdwEW8AKsJjg/28GR8FKMA4KAfcZJadbXCyRqgJwJx+BvSHDKEM5BRdoBOSTJoLqHHAZdEa4vpPaJG5OUImAZgp7v3hfwDFwkhx9DdroKRZtI7gHfpT4PdYjQUWAsxTSfuc3gFfgF/EO3AYHfCJwwWbB45DfZFUElSGwXTg+FfCjfoLTIW2dDwcVARqF41yJa3MhbaOKUEdDK1GJUFWII7qSpQId33GdCE3RROivHkcCrm2XtFURgf99SZOv82VwXDgeDNg84ecuCefGYkSCdudVBRgWEpo14A3YB1YR+2lXqcF3Xd6UE7aHwCTtGp0QRLgb0u5aibogrvWHpO3ai6E+sC5CNviE2phyPltG7aK1FsjTE6+lDC9oKPHrroJD4I8B58+AC5JJNxdHgH5haTsf0JYvSw8pvZ2lbG0pmAEfabk6QhlhwdDT56J2gyWqIsjW8E9grTDp9cZc001aG6XXNZJIHlCJgPWg1XfcQmnoaEIF+EYpslIkyAR4TkVMzUIQQSbAb3K0Syhn56UILOBm01R6znsRWImbLQgRynnr00Q3rJekxDpXB1urzJzVgZXRwFYkZC0JMCcSyi2G+P58B4WX3/h+/pCn9/2hVWMRrjUdCVkXQ0DlydmaE6xkh0zh5klfHSKlxkyxk6SKELkuYDE6S5oISkURi9lpUkRQrgiZhs5di6C9HK4kEWI5r1MAVyIcBDtVndctgAsRngnpbSTnTQjgQoRidTfhKWyLM0Nj04UIOZWGpgSomP0EZvj+ukToAcdNiMYsiBxXhB4quVtNRA6zFGmqIhSdz/iu55/dPag0AVREEJ3nxt9AXQTvK1GAKCIEOb+H2nuVKkA5IvDvC24Izs+Q89onQZd7eUE7S6IZc95VBIRFgjXnXQvgF2GXRAT+iq7bdMLkWoCiCLfAcu//V+b8owr+IdZu8MJLLbXUUjNo/wAk1SBiBWV4nwAAAABJRU5ErkJggg=={scale="+$scale+"}>"
+!endfunction
+
+IBMEntityColoring(tagexport)
+!define tagexport(e_alias, e_label, e_techn) IBMEntity(e_alias, e_label, e_techn, #232F3E, tagexport, tagexport)
+!define tagexport(e_alias, e_label, e_techn, e_descr) IBMEntity(e_alias, e_label, e_techn, e_descr, #232F3E, tagexport, tagexport)
+!define tagexportParticipant(p_alias, p_label, p_techn) IBMParticipant(p_alias, p_label, p_techn, #232F3E, tagexport, tagexport)
+!define tagexportParticipant(p_alias, p_label, p_techn, p_descr) IBMParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, tagexport, tagexport)

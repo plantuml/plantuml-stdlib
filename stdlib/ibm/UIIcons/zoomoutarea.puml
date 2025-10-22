@@ -1,0 +1,13 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $zoomoutarea [64x64/16z] xS61400000CXXFdRpkElMXu0001m
+
+!function $zoomoutareaIMG($scale=1)
+!return "<img data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAAIGNIUk0AAHomAACAhAAA+gAAAIDoAAB1MAAA6mAAADqYAAAXcJy6UTwAAAAEZ0FNQQAAsY58+1GTAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAAOxAAADsQBlSsOGwAAA+pJREFUeNrtm0tIVFEYx68zU1gkRQalZQZiCi0SI6xFIURBBpYrswc9aFEQRQXRIigXBdWisoWLAiF6ueih0MNNSOaiVkkOmNUizIwWLdKeptP/Y76J2+nMeJ/ec/X84be4d+aec8//PL9v1DC0tLQms7LS3F8AzoJKkOewjJQSPj8/ANrBUfDergGxNI1/AXJD0onUQXVgHSiza0JEcu9MiBpvVi6/u+HWgMoQT+lKL9aAhM05GrRcvW9ksu8C2gBtgDZAG6AN0NLS0tLS0tJSUJSdivlZgUr5gPlgI6gCpWARiJo+fwc6jWT+7xHo86LSmAK9vBycAmvH+F4hswUMg2Yjmbh9GVYD5oELoNbBs1PANqYRHAHfw2RAOWjhOe5W+8BqsBl0h8GAanATTJd8RvO6FTwEr8BH02gpAev5+QLhuSWgw0gmRbtUNqA8TeM/gBOgCYxInnvD3AcHwS5QD/JN35kF2sAq8FrFcJh68Z6k8a3cu1fSNF7UCH+3hJ81ay6blK2iARclQ7cB1IAhB+UN8bMNwv1icNzNOcCvre6ZUF8rN2DUZdnUiXd5bUjpF1gKelQZAaeFxvfzFjbqQdmjXFa/6d5UXiuUmAJ0wlsj3DsJBj2sY5DLNKsuzU4z7gZsEnq/j1d7r9UkHI9n8tE6cAM2CNctFld7uxrhss2qUMGAxcL1Ax/rEssuC/ogFJFsfW/HiD7dRLRi2aVBj4BcXpHNGvCxvgFJ0GR7BHiZD/gacKidFfQI+MaHErPyfKwvX7j+oUIwRBHdQtN1Eej16TRaJFx3Bz0CSE+F6yof6xLL7lLBgHbhmg4nUR/qiUoOPp0qGEDJjWHTdQHH815rt/FvhukTh8aBG0B/uHhLEgvkeFhHjiQWuCoYH2g0eE7YXilAuuZR/VTGdWEHoFzBJaf7ZL9kO/Eip0DZ272ShMghF2FxhBMt+4X7h8F5p+Fwu0+jgF4qLtw7wMmMGQ6HfYuk8XHj/yxRxpVT1HOww0oszaq3+L3f4ImR/GHDnLOj3N5O8IW3rYSFd94DboNlks9nG8lMUNypAfQiN/jENsfCYlVvo9doZaaftWqEXqc6qnl3KOJpleBTJMUS9IvQSp4uNJW2ZnivCOcgeq2YENTfARfzFlXsUXndHPnFhBFHqbJmuyNgPPQZXOYOWOHiPWi1P8Yjp4d7PmJnJARlQKqHHvNcjvJoyLYxlRp5rWrj6RLnxtoyQaU/hZ/GL1vBmZxC4XNqBP0S3MGZn3SHnFo+Y1iaDqr/L4BTWTYhOkENsDwdJqoBlk2YyAZkMuEnuDMZDJCZQGvAdsN9Njq0C2PU0NL6qz/wY8PBb1Ba0QAAAABJRU5ErkJggg=={scale="+$scale+"}>"
+!endfunction
+
+IBMEntityColoring(zoomoutarea)
+!define zoomoutarea(e_alias, e_label, e_techn) IBMEntity(e_alias, e_label, e_techn, #232F3E, zoomoutarea, zoomoutarea)
+!define zoomoutarea(e_alias, e_label, e_techn, e_descr) IBMEntity(e_alias, e_label, e_techn, e_descr, #232F3E, zoomoutarea, zoomoutarea)
+!define zoomoutareaParticipant(p_alias, p_label, p_techn) IBMParticipant(p_alias, p_label, p_techn, #232F3E, zoomoutarea, zoomoutarea)
+!define zoomoutareaParticipant(p_alias, p_label, p_techn, p_descr) IBMParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, zoomoutarea, zoomoutarea)

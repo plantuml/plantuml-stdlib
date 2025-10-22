@@ -1,0 +1,13 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $assemblycluster [64x64/16z] xS61400000CXXFdRpkElMXu0001m
+
+!function $assemblyclusterIMG($scale=1)
+!return "<img data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAAIGNIUk0AAHomAACAhAAA+gAAAIDoAAB1MAAA6mAAADqYAAAXcJy6UTwAAAAEZ0FNQQAAsY58+1GTAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAAOxAAADsQBlSsOGwAAAyBJREFUeNrtmktoFEEQhns3CSh4yF0hEFDjSU/Gg6AIIoIG9aIIguJFiaBBISoo8YEP8AkGJRAUPQUERQUvInjy6CFBjULIwYBgUMEclMTHX0wvDEPPTM9MV4+zqYIPMpsdaubfqtnuv1YpCQmJ+Ry1kvIuAifBflAHj8EAmJoPAuwEV8CSyOsz4Cy4AWabUYAuMAg2pLzvHTgEXjaLAFTup0AfaMtw3gg4yt0WtZLKneInuKT/Pg4WGN7D3hZcAiwDtxPK/Sk4Aib0cae+ya0JbXEQvKqCAGvBc1360aAbPgyexZy7BdzUgkRjDmxy/WxoYRDgEegwlPt5sBu8TTj3AxjSN7sGtIb+R1+XC8FDlxfbyiDAypRyTwsS6wx4YGiLH64vts4gQLSqejLcfLRdeiKv/a6CAJUKEUAEEAFEABFABBABRACXEV2tPYnZ3KRFpz43HH9cXyzHXmAUrAod01p+o977X9Zr/aQgX6A/xiN4z71udxGTYFekukjo9Xo3OKF3fXHbYdo8bTd8OHTzveBXFQyRddoQWeHAEPkL7oFj4GsVDJFGtOmbPB1jjthYYm/0p/6a6yJ9mKKLwVUV+IO28U0FRuodji2wbwEaQf7grYS2CJc7PQS/+Lgo34ORpLZgL/f/QYBwW5wDO8BnFRihQ9zl7lKAsmd7zvLnEaDs2Z7T/FkEKHu2x5K/ZlluZc72WPPXcpab7UKmaFuw548ToOzZ3lK9CGLPbxKAc7a3Gbyw6HVaC7T7yG/aDXLO9uj7/36KANdAt6/8Jj+Ac7bXbnH+cp/56xYegcvZXh6PgjW/eIIigAggAogAIoAIIAKIAKHgnO3ZeH5e85v2ApyzvXGLC6f8q33lN+0GJxXPbO872AumU25gDOxRwa9C2fPHGSIuZ3sU5M8dAB9LMkRi8ydZYi5me59UMNQcyfmMKmqJpea3MUXzzPbIf7uuguHHTMEHdR5T1Dp/FlvcZrbXKDcacbn+MYOtLZ4pf9bBSFJbFC33om2RK3/e0Ri1xQDYpoLf7QyDCw7KPUtbnAD79PFdcNFjfgkJiSaJf90BB1IzkDS/AAAAAElFTkSuQmCC{scale="+$scale+"}>"
+!endfunction
+
+IBMEntityColoring(assemblycluster)
+!define assemblycluster(e_alias, e_label, e_techn) IBMEntity(e_alias, e_label, e_techn, #232F3E, assemblycluster, assemblycluster)
+!define assemblycluster(e_alias, e_label, e_techn, e_descr) IBMEntity(e_alias, e_label, e_techn, e_descr, #232F3E, assemblycluster, assemblycluster)
+!define assemblyclusterParticipant(p_alias, p_label, p_techn) IBMParticipant(p_alias, p_label, p_techn, #232F3E, assemblycluster, assemblycluster)
+!define assemblyclusterParticipant(p_alias, p_label, p_techn, p_descr) IBMParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, assemblycluster, assemblycluster)

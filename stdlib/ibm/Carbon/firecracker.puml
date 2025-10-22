@@ -1,0 +1,13 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $firecracker [64x64/16z] xS61400000CXXFdRpkElMXu0001m
+
+!function $firecrackerIMG($scale=1)
+!return "<img data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAAIGNIUk0AAHomAACAhAAA+gAAAIDoAAB1MAAA6mAAADqYAAAXcJy6UTwAAAAEZ0FNQQAAsY58+1GTAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAAOxAAADsQBlSsOGwAAAmJJREFUeNrtWiFPw1AQftsrJBASBBLc/gNyog6LxxKQMwhaQ7JpHAjAo0AiCDWYBcEvgEyBRBAClmtyS0qz8tq+e+td3y750qVp1vd9vV7vvlapRbCNsOQ+q9CMyT8AlgAJ7hsCLgGPgEnbBZgg+Qi3If4eAa4oT9RhfhsMkbhC8jH1Cbq+Fxot4OqP8L6PcjWBJALGRTCakfYRCpD4kJ1zeQy2TaBW1YCqfYJXAqR9wjLWhHfAs28CKLzyPcAR4Brw4ZsAadwDDgBbgFsfG6EvwDlgF7Diayd4B1gFbPsqwCtuNxezgKcC9HD75qsAO4BvwJOPAqwBDgE3gJ82CDBAlI0zwDrgpA3jcNb92VBm9ycdlfcA+4AX6QJkzQ+VESL+5/hjPP7C5sQBM/J582OWCEXHixyGisgk6q8rnLgg33QGmMjEuUxQ1OTT6DAlX1Qcya3xLnPy00wYuVqMZk7eVBNECWBbwJyIoIWQdyaCFkTeiQhaGPlZInwCxhyfAq7IizBEXJPP/v8pt0ZonuSt/7/jM3lqAcSRpxRAJHkqAcSSpxBANHlbAcSTt+kDhjmjQmwTpS0X5+Lrrbl2kAHR4kwuLtv2OSBI+5hIhEZmB02U9rYjamODk66xuCKydUVodGo0CTDAhZX17auK0PjIbPNeoOjeL1sTWPgFpgwYG65o3UxgY5aUqQEJsQisnKKyTwEqEULFzCar0glSiNBXzDzCqq1wXRFCjuTrzgJVRWCX9rYCVBWhrxhb4y76gHywfi9g+2ZIxKPOVQYUZYKSQj4NF7a4kkLeRVT90HERTccv9gLkFa10QvsAAAAASUVORK5CYII={scale="+$scale+"}>"
+!endfunction
+
+IBMEntityColoring(firecracker)
+!define firecracker(e_alias, e_label, e_techn) IBMEntity(e_alias, e_label, e_techn, #232F3E, firecracker, firecracker)
+!define firecracker(e_alias, e_label, e_techn, e_descr) IBMEntity(e_alias, e_label, e_techn, e_descr, #232F3E, firecracker, firecracker)
+!define firecrackerParticipant(p_alias, p_label, p_techn) IBMParticipant(p_alias, p_label, p_techn, #232F3E, firecracker, firecracker)
+!define firecrackerParticipant(p_alias, p_label, p_techn, p_descr) IBMParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, firecracker, firecracker)

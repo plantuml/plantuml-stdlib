@@ -1,0 +1,13 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $satellite [64x64/16z] xS61400000CXXFdRpkElMXu0001m
+
+!function $satelliteIMG($scale=1)
+!return "<img data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAAIGNIUk0AAHomAACAhAAA+gAAAIDoAAB1MAAA6mAAADqYAAAXcJy6UTwAAAAEZ0FNQQAAsY58+1GTAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAAOxAAADsQBlSsOGwAAAwlJREFUeNrtW81KA0EMHnfaq+h77BvoO1iKIIKCePbki3jxDVpBDxa8ik+hCOpB38GTgn8RplC2s91J8mW24gZyaHVm8n0zm2SSrXOddNLJfxavGLtFekN6TPpM+pjJ3hFpn/S+TQJ2SM9J10hXSbdJn1BGLbD1jHSXdIBazwvBj0l7M98VSKNqZBTAQ9fzAPC5SOiH+Qvkel4J/oP0C21UjdyHeaEkeCX4PdKJxc7kIsErwV9Y7UwuErwSvOnxzEGCB4BHG5WaX0DW8yDwUylJhzMGcY3i5hfa9aIEDIIRXPDaEMnNLyAhOUbANek6ADwnRHLBwEJyD+CQFj0urvK3XvjsZgitG+9qxjnleo0n4CU8e9Kd44TIUpBfDJEhOUbAQ+IkiBApAVMgQ7IXhpgSFCIlYDTrvYeTlZQHSHeOM58UjAsOb7LAwVXH/c69T/rNyQSlO8fJE6TkpXj56bj3AP5TcheQ7hwquUKQMKnuPPc2KD2GKPCt3ga1i6PAp9hxF6KYWUWISwIafJMdG6QnnIkKweIXAcBHJaMcB8DW4OGVVov7eGkMvo7cQ+4jsGJkiGsBvGh+rzQGnSdkBY8gAJknZAcvdYKpsvTgET4gh7c3nb/4g+CXIgy2Db613mDbxx7ehpMQIK0aI8iFt+EkBEiqxqiTBb8NWoZBq8cq9S5idgI4VWMrn5KlN1gnD+BjKHWopr3BXJUZbTQx6Q1Ov296G0tLgha8WW+Q8zYWskzmnL7GyM4TYgRw38biHkOLLrI4T4gRwHkbK3dXF54neMWx5oIplTuH6EXOVY0teoMWXV1UL3KuarzomjmduK7f3mRMdVxTsUS7nsllaFm6utwaY3LV2LI3GBtn2UVOcZSX1X9OrbTEjmfquDfS0/D5iPTKcD12cpWjN/gYHM+J4/2mIEsbzro3qBVtSG50lN7QqFwkqNpwbd8GEesNnSJE+gzH05oEVRvOqjc49zaWIQmq5MiiNxh9G8uYhNa6w1Wjat/GMiDhlnST9JX0IJbkdNJJJ500yQ9xrlsWi5jeMQAAAABJRU5ErkJggg=={scale="+$scale+"}>"
+!endfunction
+
+IBMEntityColoring(satellite)
+!define satellite(e_alias, e_label, e_techn) IBMEntity(e_alias, e_label, e_techn, #232F3E, satellite, satellite)
+!define satellite(e_alias, e_label, e_techn, e_descr) IBMEntity(e_alias, e_label, e_techn, e_descr, #232F3E, satellite, satellite)
+!define satelliteParticipant(p_alias, p_label, p_techn) IBMParticipant(p_alias, p_label, p_techn, #232F3E, satellite, satellite)
+!define satelliteParticipant(p_alias, p_label, p_techn, p_descr) IBMParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, satellite, satellite)

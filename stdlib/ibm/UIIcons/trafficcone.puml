@@ -1,0 +1,16 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $trafficcone [64x64/16z] {
+xTA53SD040NH2dRIVxNXnDzmj9AFv144dmzlWQvCQk1HJtt_TlAcib-cZUi1WaRqR3sUuVL3PQzJfgfNeKyhz5gnjuCgUZkiqEiNOtcEFPxXzQjQ_c2oLFHO
+8Efu2rR57q-Lx0S4_ZYA9-Rn3Ay_LF2XQPBlmtaklyRPtX9b-SXFEPoSc-KOetzFskCPNdy-nrjXS_Yh1m
+}
+
+!function $trafficconeIMG($scale=1)
+!return "<img data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAAIGNIUk0AAHomAACAhAAA+gAAAIDoAAB1MAAA6mAAADqYAAAXcJy6UTwAAAAEZ0FNQQAAsY58+1GTAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAAOxAAADsQBlSsOGwAAAzBJREFUeNrtms1u00AQx3e3aUVvqBdUNUpslF6ASw9IFCR4AR6EV4AHgFdA4R048QIgJSAhlQvlUhenUThwqbgV9WOHTWMp9tbuxt6ZNZt6Lo7W+5H572S8v4wZa6yxxm6ycVcLbXfuPgcu36qPW4auvziIFwfjnx9cfC/hSmjJZX8B56e2lfTlSyNAr9O5p7zZLBGWm9MxSyMAsJXHLsZUsZYbleEJZLf4VTQavclESRC8VF6/To9Rl3fLEQH80pm5/5wProS91qaP8VaAMAzvKPd6qabTk7Ozr3q/pO00JUlvNtZzAVpS6ju5N5lMTvR+Sds3w1j/BAAmNCf48Jr8P7h+rJc5QPv9Mzkofvzp98BvAdrt9rq67KQ9OheiUICcezvJHH4KsL66+lBd1lL+H8Zx/Luo/+weRKmmtWQOPwUA0MIf+MB4CtT66HN4JgDPfHnJzALoffQ5fBKAcwa72SR3MTRzQLZPMgf3ToAEZjZSTcfRePzDNC7pc5xq2qAEIzIWmMKM2j2WcaQbSAuY2vcqAgTiM1wQngfIBMCEGUowIhEgB4Bs8ykZGJHkgCnEQDZxf4mORrulkmg3+KwujzQweu9FBJQDoMJdH7oAI6IcsDgA1Q1G6AKUBSADGAE1GKELUBaADGB0SA1G6AJUAaA6wYhAgPIAVCcYYQtQCYDqBCPUyRS03GdcfKfEVwbygQKm/f8yAlxUc7DXELiTufgTE3cN3AhwUM3BXgONBS5hRUKmAvT34vx2XhGk7MHq1krrz/xsMQOjKmcL0ghYtAJU1pI59gxr1S8ADgC5ByPEHGAPQHWAEYoAOQDEqgCQAYwYBRihCJADQBFWkkqBEUnFCEUATAByDUZIAuABkGswwjgHXAUgDv1eN+hjH4ILwAhqjYCcCpArQ6kYCft9cfM6G9Xawn4CN29zUa1tnQNmcDL/W4EL/uwgjj9ROLwdhk9BwkdMMLKKgEVfgcMyilfprASgAiCXYGQlAC0AuQEjyyRIB0CuwKiyANQAZAAjtIpRZQGoAcgARmgVo8oCuAAgF2BkrAuoMz0wjy06GnFyGvTZGgFYY4011tgNtn+r+njedtr1pgAAAABJRU5ErkJggg=={scale="+$scale+"}>"
+!endfunction
+
+IBMEntityColoring(trafficcone)
+!define trafficcone(e_alias, e_label, e_techn) IBMEntity(e_alias, e_label, e_techn, #232F3E, trafficcone, trafficcone)
+!define trafficcone(e_alias, e_label, e_techn, e_descr) IBMEntity(e_alias, e_label, e_techn, e_descr, #232F3E, trafficcone, trafficcone)
+!define trafficconeParticipant(p_alias, p_label, p_techn) IBMParticipant(p_alias, p_label, p_techn, #232F3E, trafficcone, trafficcone)
+!define trafficconeParticipant(p_alias, p_label, p_techn, p_descr) IBMParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, trafficcone, trafficcone)

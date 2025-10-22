@@ -1,0 +1,11 @@
+sprite mdiSkipBackward <svg width="48" height="48"><g transform="scale(2)"><path d="M20,5V19L13,12M6,5V19H4V5M13,5V19L6,12" /></g></svg>
+
+!if %function_exists("$MdiSprite")
+  !unquoted function $MdiSkipBackwardImg($color = $MDI_DEFAULT, $scale = "1")
+    !return $MdiSprite(mdiAccountAlert, $color, $scale)
+  !endfunction
+
+  !unquoted function $MdiSkipBackward($alias, $label=$MDI_DEFAULT, $shape=$MDI_DEFAULT, $color=$MDI_DEFAULT, $scale=1, $stereo=$MDI_DEFAULT)
+    !return $MdiSpriteElement("mdiAccountAlert", $alias, $label, $shape, $color, $scale, $stereo)
+  !endfunction
+!endif

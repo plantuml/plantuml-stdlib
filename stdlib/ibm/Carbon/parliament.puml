@@ -1,0 +1,13 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $parliament [64x64/16z] xS61400000CXXFdRpkElMXu0001m
+
+!function $parliamentIMG($scale=1)
+!return "<img data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAAIGNIUk0AAHomAACAhAAA+gAAAIDoAAB1MAAA6mAAADqYAAAXcJy6UTwAAAAEZ0FNQQAAsY58+1GTAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAAOxAAADsQBlSsOGwAAAwJJREFUeNrtW0FrFDEUzsY52F60J6Ene2kp2NWLBcWLx72XLUhtRaTsUSjU/9CLHnUPglY8qPc59qaweJC11H9Q2Yu0B7G39oW+gTAmmSSTnWQ3efDR2Zdp8vW9L2+SzJaQZMmitpbn8R8Dnkra3gL2x02Aeg7AI0Bb4G9j29gtC0CFA0Cn5MubGpzGXgNCUMAq4EAwBQYxK2AI+BhzDSCpBkRSA2jMAbgBeMBdj2LLwK7kOooAsIz3AK8RPfRFE4Ai43sIbyqgnrM/QnhTAfWcfVK63p32AJSzX5g3FdAAsu9VBTSA7HtVAQ0k+95UQAPJvjcV0ICy70UFNKDse1FBVQCeIJrKvmsVMO5btgGYBbxEzDSUfZcqKPi/UvFXBaALuI7oNph9VyrQ4q8KwDbgK2K7wey7UoEWf1kAVgD3AH3EfcCtBrNfVwXa/KkieieAT4gTQxXUzX5dFWjzzyTFYwPwAfAPfewdHXuP94LzqWwH+3lI/j/zN7Vr2NeOphJmkP9+if+GiD9VFI8+5+sbFkMmwT+AUweP6lPsa0Xz/nUJ/zkR/0win2+An5zvkCsm7zSJuDzvzy2K36EOfyopHm8EHdsWwyaNL35a/MsKeIY/e4IV4FXunueBBsCYf1kBizjfzgSdn2HbkqWEcwf+KjPmnxnO3ZyEb0b8o383mF6Oaj5+TB9nnYrPpn7bx2kl/xgU0EpToMYUENmqg/X9uMz4u0WZ4VyeNOuMQwGDgAOTa9SD81QDairAhbH9/SbgLn7+DngP+Dtp6wBZu+r3bgO+ABa4LesWHnisAX44GkdrHZB5yPxn3Jiwresv9C+Ty6Mr1nZHooSWzXM+tHXAJma+y/3xBK+Z7ybeM7V7ATbnj0p/PB+EI64uBFEDOpbtMv884Leiv2O8p+442uuAtB1OAUgBqFwH5Bbttmd6rsep5DFJCpiKdUCqAZO2GXK9DgilP+n8YAWDnfgMJfcX/+Q4DDShVfza5fOMK4IpMa8YoPh2d6hWxW+E2+4hSXZpF2EaxsgGghgRAAAAAElFTkSuQmCC{scale="+$scale+"}>"
+!endfunction
+
+IBMEntityColoring(parliament)
+!define parliament(e_alias, e_label, e_techn) IBMEntity(e_alias, e_label, e_techn, #232F3E, parliament, parliament)
+!define parliament(e_alias, e_label, e_techn, e_descr) IBMEntity(e_alias, e_label, e_techn, e_descr, #232F3E, parliament, parliament)
+!define parliamentParticipant(p_alias, p_label, p_techn) IBMParticipant(p_alias, p_label, p_techn, #232F3E, parliament, parliament)
+!define parliamentParticipant(p_alias, p_label, p_techn, p_descr) IBMParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, parliament, parliament)

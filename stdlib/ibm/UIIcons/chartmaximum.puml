@@ -1,0 +1,13 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $chartmaximum [64x64/16z] xS61400000CXXFdRpkElMXu0001m
+
+!function $chartmaximumIMG($scale=1)
+!return "<img data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAAIGNIUk0AAHomAACAhAAA+gAAAIDoAAB1MAAA6mAAADqYAAAXcJy6UTwAAAAEZ0FNQQAAsY58+1GTAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAAOxAAADsQBlSsOGwAAA2xJREFUeNrtmnuITUEcx8czsrJZJf5Qmz82tR4h15YNu62ItXlF+EeSNtcf5PEPef2zSy2JUsgfd5FSKLGSZ4vU3ti9SIS8k1de/2jX9Z12tsbP7D13754zM+fe+dan22/OvefMfM+cmd/MPYw5OTnlsnooypJpfCdr1DPXe4AzwBngDHAGOANcHpA6D/D6TTLMx90j4AxwY4CRtcAIMB+Ugznk2DlwWXy+CdqA3poNHwm2gyUprl0lqAMxsAu8zAYDVolG5aX5/b5gJVgI1oDjYTWAP0IHQXWGvx8E6sE4sDFsBvDGHwUrFMcegkPgKnghBuRCUAFWgyLy/Q2gH1gbJgO2Khr/C6wDRxQD7gPBftFj9ohGdygqzKoLwzRYCbaRsvcgAg57ZJxt4ACYAj6RY7tBme0GFIhGyufnDZkmun66ioup8ptU1gscAwNtNmAvGCrFrWAxeJLBuVrAcvCH5BG1thpQIiosq0YMdpnqvBgXZPGBcoyNBtSS7PGRSGa6qy3gOal7jW0GzASlpGw9+O3DufnssZmUzRIDpTUGbCLxFXDJx/OfBnc9rmnMgAlgOinbGcAjRs85W5E0GTEgSmJ+p24GYMBFkSzJbYiaNoDPyYsUU2EQ4gnUPlK2lGSM2g3gy9sBUvwRnAkwyzwFfkjxYDDPpAHLSBzzaeTvTD/BSY86aDNgmGLqi2lYZteTmK8i800YsICch6e79zUY0Mj+3TLjGyhVJgyoVDyfOpQUeYGsuboN6K/o/meZPtFrlYnVojYDSoUJHXoH7mk04Bb4KsX5Yr9BmwEzSHyBef+15qdaFal2hUkDGph+NXjUKTAD+PRXLMV8w+K6AQPoPsOkrkyH3TGgnKz7m8FnAwa8Bk+lmG/0TtVhwGSPO6FT10hcosOAiCIxMaVGj7r5bgBfeY0lSckdgwbcJvHEdPOBTA3gmx99pPgZ+GDQAHr9PDJA+24A7WIm735ndYgEaQAdAJssMKBJpwHjSRy3wIC44jENxAC+/VUoxW2alr9dNWAUGad8M6CY/O4xa9+zNy2+DfeK7A8UBWEA/TuqhdmjZo+6+mLAaBInLDIgocMAm3tAwvWA1HX9T6p3AN+C4Sx75fmu8A2WQ1IZwP9t/ZIrBqhWTN/BCda+4zOE+fQujkXawZycnJyE/gKctZiIvdzq7wAAAABJRU5ErkJggg=={scale="+$scale+"}>"
+!endfunction
+
+IBMEntityColoring(chartmaximum)
+!define chartmaximum(e_alias, e_label, e_techn) IBMEntity(e_alias, e_label, e_techn, #232F3E, chartmaximum, chartmaximum)
+!define chartmaximum(e_alias, e_label, e_techn, e_descr) IBMEntity(e_alias, e_label, e_techn, e_descr, #232F3E, chartmaximum, chartmaximum)
+!define chartmaximumParticipant(p_alias, p_label, p_techn) IBMParticipant(p_alias, p_label, p_techn, #232F3E, chartmaximum, chartmaximum)
+!define chartmaximumParticipant(p_alias, p_label, p_techn, p_descr) IBMParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, chartmaximum, chartmaximum)

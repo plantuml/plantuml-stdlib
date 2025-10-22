@@ -1,0 +1,13 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $progress [64x64/16z] xS61400000CXXFdRpkElMXu0001m
+
+!function $progressIMG($scale=1)
+!return "<img data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAAIGNIUk0AAHomAACAhAAA+gAAAIDoAAB1MAAA6mAAADqYAAAXcJy6UTwAAAAEZ0FNQQAAsY58+1GTAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAAOxAAADsQBlSsOGwAAA71JREFUeNrtmk1IVFEUx69PN0IQFWXYJlftgiFoHS6EaCl9SUUUhDBkUDQR0SahYIJASmhRLgwtC2kRUrQwiYKoYGBoUwt1k2SuhKLajP2Pc8rH483Mux9z77zxHvjzlJn7Ps45995zfvOEWOfWIvHdCegbNA29hH4Zuoed0LzCuFea1x2BHrRKDBiA9kGnoTPQb+gjtKJxE2ehp9B96Kfk2JMa190NbYbGWhQGZ6CL0BFoCjoK/VC8kQ5oFroLXbCY+c/5uL9VYTBNg0noE3Qe2sPTQyUTKOpboH7FLFC1Y3wcCzROQk44AR2AshrnyfMx52IRDDTHT3L0r0LtiudY5CnQz1MiVQ74F8GtUE8as8CEAwrQAu8QIm1ZEBg6zxy0w0AmWc+CQDSOOckCUw7ogr4aWk+sZoEJB1Bh1AnNpDELTDiAorXE/YFIWxboOqAXOgwNGmyOrGZBoPnwo9wPDBu+L2tZ0GaoGSrVcUfI8//OHfAa2gVt4zl/jiNfqtO95dkBh6DbzQxE6gFLvHnz5i01i6DqQuepsMZ1PRXmo6fCngprjvdUWHgq7KkwWeqp8GPojeOizCkVJqLbpXGe1FPhGVEmuxnFwij1VJhq+yVFzzcFFabGhsguEd5eifFNRYWHubYfTeiEpqDC4V6AavlnXNtfEWUAOsu1f3TO34KucdpTM/TH8H3Vu0f43wu0VMiKLJe3VOF9hz7zZ2EqPCiSUWHVvn0jO5uy4ZJhHkDt8HvqBuOwOD0QYeh7XN52Q9tDVZ8tKrzMO8uXOpy7CI0Lb968rXurxgTbYxZB01T4FB9HJMcdD41VtVUq3Ca5DVLPPyC5DVayDrH2o+eUkPsFuI+3sqLGNtgX54AN0ENR5nyPoJu89UULIaLCQ5whqlQ4F/lblgqv7uOKDngRVwoH/PCU8gfZQ4UKBKiPv9PNYwKF6Pdzze+MB0YdkOXIE+mdTDBWhwrnQjV/Q1Dhdp7zEwkfPuwEWSocjv6iaBAq3MMLXl6xc5OhwrlIxydEA1BhWt0XKsz5WiZDhaPRd0aCog4gojuncZ6kVDgu+k6zwOa7wpWi7zQLbFLhatF3lgW2qHCt6DvLAltUOEn0nWSBDSqcNPpOssAGFZaJvvUsCDugxI0NtbtPRJmZZSrM+XH+zrSo/q6wbPStZ0G9qfB16DIXS8uS91aNCtM7Pns12+HVbjLuHaEV/vAO9EGsMXlqed9BN0T57a63ovZ7QVQcbRJqvxvQmHlRxt+FmCB1agR+kadvUax3+wsW5EEbtS+qQgAAAABJRU5ErkJggg=={scale="+$scale+"}>"
+!endfunction
+
+IBMEntityColoring(progress)
+!define progress(e_alias, e_label, e_techn) IBMEntity(e_alias, e_label, e_techn, #232F3E, progress, progress)
+!define progress(e_alias, e_label, e_techn, e_descr) IBMEntity(e_alias, e_label, e_techn, e_descr, #232F3E, progress, progress)
+!define progressParticipant(p_alias, p_label, p_techn) IBMParticipant(p_alias, p_label, p_techn, #232F3E, progress, progress)
+!define progressParticipant(p_alias, p_label, p_techn, p_descr) IBMParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, progress, progress)

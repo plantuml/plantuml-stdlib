@@ -1,0 +1,13 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $paintbrushalt [64x64/16z] xS61400000CXXFdRpkElMXu0001m
+
+!function $paintbrushaltIMG($scale=1)
+!return "<img data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAAIGNIUk0AAHomAACAhAAA+gAAAIDoAAB1MAAA6mAAADqYAAAXcJy6UTwAAAAEZ0FNQQAAsY58+1GTAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAAOxAAADsQBlSsOGwAAA0RJREFUeNrtm0+ITVEcx487KBkZZBIyssHKRpTxf/L/T1hIJBY2VhaKkoWVpCysbCwGJRY2yp8hUSRWSOP/4o0yZRYGkfL/++v9Xl1n7u/ce9+7951zrvurT9M9c+/0Pt933jnn3ndGqbLKKut/rmEFcJgOdoFloIPb+sBtcAZUihrAcHAU7AMjhXO+g5PgEPgZdUKLp/Kt4BrYEeNAv+sEC8BF8KsIAdTkF6e4ZgYYx9cN6UY+yi/U2vu5m9/l40X88ZgcOmcvOAWe+doDJPmH3M0fgEHmCegGm8EEPi8AP0BP+OKgAPKrWFqvD+Cw1rZCPykogPwnw7X3tONpvgXQiHyiCgouv1Q7futLAFnIt4HjWttNHwLIQn4suA6mhtpoEXTa9QCykqepbr7WTmuAXpcDyFP+Dtjv8iCYpzxNhRv4xsjJu8G85deAL67eDluVtx2AdXmbATghbysAZ+RtBOCUfLMDcE6+mQFI8vQQY7Ut+WYFYJKnd/6zLflmBOC0fN4BtPIdWaer8nkG4IV8XgF4I59HAF7JZ307LMlXXJWnaslZnoqezdEz+vuuyWcVgEm+VivBV0MIVuSzCECSfwzGqH+/tpZCsCbfaACmAa8L3AJbY0KwKt9IAElG+z4WkULotS1f7zSYdqqj7/GvgtFaOwXUYVO+nh4gyT9X1a+hoqY6qSe02ZZPG4BptKfdF484CJUiBKvyaQKIm+poQbVFVXdfSCF8BBvBJFfkkwYgyb/kdz5IEEJttJ/rknySAEbxC4+6n1/CI/mmmBCsT3WNBHAWrDOM9k/BG0MI/S7Lx02DB8GxhFPddg4rHChtTHwNZrsqb+oB9L36JTBCW952CVOd1BMmuixvCuCE1m0HwHL+KVVUCE7LS88DxoPdWtsBFbG/JqKucAheyEsB0AsN7yB9Ac6leJgx0xd5KYD12vEF8NvFhxlZVNReYf0d7EkgfwPM801eCkBfqlYM19POy8tgjo/yUgDt2vGA8NHZqar78Np9lZcC0KfG2ud/iqpuP18LtoFZPo32aVaCf+r8W+fBHvBNeVRZ/MMECR9RQ7elFj4AWut3s/w75WmlCYAk34NXvOIjBlVZZZVVlsf1F+1dOqZUxu5JAAAAAElFTkSuQmCC{scale="+$scale+"}>"
+!endfunction
+
+IBMEntityColoring(paintbrushalt)
+!define paintbrushalt(e_alias, e_label, e_techn) IBMEntity(e_alias, e_label, e_techn, #232F3E, paintbrushalt, paintbrushalt)
+!define paintbrushalt(e_alias, e_label, e_techn, e_descr) IBMEntity(e_alias, e_label, e_techn, e_descr, #232F3E, paintbrushalt, paintbrushalt)
+!define paintbrushaltParticipant(p_alias, p_label, p_techn) IBMParticipant(p_alias, p_label, p_techn, #232F3E, paintbrushalt, paintbrushalt)
+!define paintbrushaltParticipant(p_alias, p_label, p_techn, p_descr) IBMParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, paintbrushalt, paintbrushalt)

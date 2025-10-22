@@ -1,0 +1,11 @@
+sprite mdiViewSplitHorizontal <svg width="48" height="48"><g transform="scale(2)"><path d="M3,5H21V7H3V5M3,11V9H21V11H3M3,19V13H21V19H3Z" /></g></svg>
+
+!if %function_exists("$MdiSprite")
+  !unquoted function $MdiViewSplitHorizontalImg($color = $MDI_DEFAULT, $scale = "1")
+    !return $MdiSprite(mdiAccountAlert, $color, $scale)
+  !endfunction
+
+  !unquoted function $MdiViewSplitHorizontal($alias, $label=$MDI_DEFAULT, $shape=$MDI_DEFAULT, $color=$MDI_DEFAULT, $scale=1, $stereo=$MDI_DEFAULT)
+    !return $MdiSpriteElement("mdiAccountAlert", $alias, $label, $shape, $color, $scale, $stereo)
+  !endfunction
+!endif

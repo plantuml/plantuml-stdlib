@@ -1,0 +1,13 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $recyclebin [64x64/16z] xS61400000CXXFdRpkElMXu0001m
+
+!function $recyclebinIMG($scale=1)
+!return "<img data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAAIGNIUk0AAHomAACAhAAA+gAAAIDoAAB1MAAA6mAAADqYAAAXcJy6UTwAAAAEZ0FNQQAAsY58+1GTAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAAOxAAADsQBlSsOGwAAA2RJREFUeNrtm0loFEEUhjsL6sUVcgmooOBBMSBCFD1IxIXgLi5BUDQXxSASkRg3NKJgBiKIiBCXgB5EcTsIcRlQkXiIenDckIgogqARRdQENSb+j/kHmjDM1ExXm+ruevDBTHd1dfXfr+u9etPjOBG3Ap/6XQuqNfd5BpzTPdBCnwRYA8o09lfGPrVbsY/e1Q4qNfXV6tcgC6M+B1gBrABWAJsH9Lc7msKWWEJjGNTVX4WXMKg6kITmG5UYIOHTxuNWgz065/HZSdAKYAWwAlgBrABWACtAZK14gM5b5CTrhvP5/aaTrPf9jYIA4nVXwGLwmNuqwFKwHPSGXYBNYBFYDS5ym3w+DzaCE2GeA4aCfeCy6+LFLtAr9rNNaAWoAyPBrjT7dnJfXVgFKAW1oBl0pNnfwX21bBs6ARo4wTV4bBNIASaBDSAGOjO062QbaTsxTAIMYaw/otBW2nwEjWESQOL9AtCl0LaLkWIhmOXa3gY2RyUVbgHP+ThI5XosmAF+BEUAGXQ5w93BPI6XlLiefawCc0AfiJucCY7nQFOM4PbvnNX/KPQxjOuEr+A6uAsOgSfgJfhgsgDHnOTP4VKTPwXGMbeXzG46uK/Qx0pwEjzi3b4BDlPco6avBSSBWQ8+geHgNbgK5tEjVAS4BbbwmBp6RMripgvwyvW5noPfTs+Yy5k9m70Hx4k8CtMo3mxwLyirwdFgK1d1b3jnYvSKbzlOhA/IgSDlATLY367ZXwT4CSaYGG91CyA/Tq7jxPWZ256BUeChhqW0ZImTTRYgxlDlnrH7NFV5ehglGk0VQCYrqfHtBd0+eGs3+67kpGiUAAW8+5IDnPXxkZW+n7pSZGMEkIRnCtjh0d23gTEZ9veyYjQVLDNJAKnovmPmlq9J1GgCK7K0k3O8NU2AQQx1Xi5+N/N+lZqBnGuwSQLEWcFZ4vHi9yi0r2KFSUtqrCsTbKHrXuM6PlPZqyLNxf8CM53sb6iV8OJvO8m3x40RoIcVn2qGwxKfosALri1O85xGrQVkQM1E1VIuL17QpvgIGL8YytXcIjj/WwQTBOgvwhfFSBAqAVIiSCnsUhQ9IGVNQV8OB86sAFYAK4AVwAoQZcsnDyh39PyvyA+TqnR7LgcU5eExpQbfUHmxQuqGCceamv0D6M6nnLOifRgAAAAASUVORK5CYII={scale="+$scale+"}>"
+!endfunction
+
+IBMEntityColoring(recyclebin)
+!define recyclebin(e_alias, e_label, e_techn) IBMEntity(e_alias, e_label, e_techn, #232F3E, recyclebin, recyclebin)
+!define recyclebin(e_alias, e_label, e_techn, e_descr) IBMEntity(e_alias, e_label, e_techn, e_descr, #232F3E, recyclebin, recyclebin)
+!define recyclebinParticipant(p_alias, p_label, p_techn) IBMParticipant(p_alias, p_label, p_techn, #232F3E, recyclebin, recyclebin)
+!define recyclebinParticipant(p_alias, p_label, p_techn, p_descr) IBMParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, recyclebin, recyclebin)

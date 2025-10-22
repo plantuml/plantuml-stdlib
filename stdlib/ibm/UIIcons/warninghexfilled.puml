@@ -1,0 +1,13 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $warninghexfilled [64x64/16z] xS61400000CXXFdRpkElMXu0001m
+
+!function $warninghexfilledIMG($scale=1)
+!return "<img data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAAIGNIUk0AAHomAACAhAAA+gAAAIDoAAB1MAAA6mAAADqYAAAXcJy6UTwAAAAEZ0FNQQAAsY58+1GTAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAAOxAAADsQBlSsOGwAAAvVJREFUeNrtm8tLVVEUxpcn0YnpRCRoKvgPiOGkB0QgCEHTysdAmkR4oUgriR6UkSA0CyEf9ScEFyKoQSSpEyfCBcfiKDBs0APt27gGp+45t/065+x97v7gN/DgPXetz33XXuvcLVFQUFBQUPOqxcI9zoCXoC/n2GugAqomNzlmGEQP+AxOFvDH6wbD4BX4rnuTyDCIJ6CrwBXcxTFQEQb0g3EHPsbjHEuuBoja8cLCCrKhiGNpydOAK2DQoWI+yDHlYkAHmHVwR5vl2DLfBR6CIQcNOM75vM9yBfSCSYf7mkmOMTMD5kG7wwa0c4zSalX43SFuPGzoIzj3z7UP4KyFew9zrFWbK6BN1dmCNc8xWzPgRgG9von6OGYrBpwAMx4OejMcu7EBT0GnhwZ0cuxGBpwCIx6P+yOcg5YBLvX7mc0JjZIbBQPkvwY4FyUDpD4/Him1jkUmFdQjpe5kkcke6pkSe5nIpIvyTIndbJTSR5dVdfNM5HG/b2VOiBtQUZ2lPVUv51pnwAQ1jyZUp8HSKm7AQhPlvZBkgCgO202Q/Ha82McN+BkvDiVWhXNNrAFvyfDbVsdV5RwbdoJ/OVQiJa7wtDn5ObhZMgPmwC3ZafAR2C1R8ruck/Q4/A1Ml8iAac5J2gChZbBWguTXOBdSNeCQZ+gDj5M/4BwOdQwQ+gJWPDZghXNIVavk5+cS2f1uQGxJ98ES/zwGHpDdBzFSdUzmfMA++A0uWAzuLnjG9xZ8Ar/AeYvvcQ+8UxmGGkk8W69ZDO615DVd1ThmsmWAb3OCdDer8jygro820FXJazpSmmdUzwitg2ukdrAiSae5rojRVBxsuk5HZ49MT67+ABfBV9kX6JytE6exbju69EVhnVJ5gc4jscdgx8Hkdzg2ytqAfVWXc9IUx5a5AUJvwKpDya9yTJSXAS7NCf/t97MwQGgDLDpgwCLHQnkbIHQH7BWY/B7HoC3TfVf8p8YmHZ3X7845edHuXgZbFBQUFBQUpKU/5a17g88BEIYAAAAASUVORK5CYII={scale="+$scale+"}>"
+!endfunction
+
+IBMEntityColoring(warninghexfilled)
+!define warninghexfilled(e_alias, e_label, e_techn) IBMEntity(e_alias, e_label, e_techn, #232F3E, warninghexfilled, warninghexfilled)
+!define warninghexfilled(e_alias, e_label, e_techn, e_descr) IBMEntity(e_alias, e_label, e_techn, e_descr, #232F3E, warninghexfilled, warninghexfilled)
+!define warninghexfilledParticipant(p_alias, p_label, p_techn) IBMParticipant(p_alias, p_label, p_techn, #232F3E, warninghexfilled, warninghexfilled)
+!define warninghexfilledParticipant(p_alias, p_label, p_techn, p_descr) IBMParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, warninghexfilled, warninghexfilled)

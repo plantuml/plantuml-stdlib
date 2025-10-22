@@ -1,0 +1,13 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $meteralt [64x64/16z] xS61400000CXXFdRpkElMXu0001m
+
+!function $meteraltIMG($scale=1)
+!return "<img data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAAIGNIUk0AAHomAACAhAAA+gAAAIDoAAB1MAAA6mAAADqYAAAXcJy6UTwAAAAEZ0FNQQAAsY58+1GTAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAAOxAAADsQBlSsOGwAAA8hJREFUeNrtmmtIFUEUx9erVmhZlr2gDEx6EtiLJAN7GUEUQh+id6SYlZEV1Jc+2MekF2VkEBFkaB+KICp6GREoQX6MMnphQlKhaAWR3uw/eC4sh727d925q1vnDz+8M/uYOWdnzp6Z1TBEIpFIJBKJRCLR/6gEH9oIgUVgHpgBZoEsOjaK+AbawGfwATSBZ+BVUB0wFKwB6+hvRj/voxxzD1wB9UFwgHqau8F+MF7zvdXIuASqQNdgc0AKOArKwIg4j1o1Ko6Bi6B7MDhgJXUmy+acr+AJaARviJ8051WMyKRpMxXkgIUgD4y1uedjsAr8YfUbwFqwHYSdOp/kwfBh4DzYGeV4O6gDNWR4NCkDPtLvZnCXfieCpWAzWA/STNe0gJIoxteQXUl0bTgeI0DN71sg1+KYiuYnQDU9ZR0aCQ6ActAJloH3NsZHdA1s0e2A2eAOmMLqe8BZUAG+x2n+p4NU0BqD8T1k/HWdDsgGDRZz8x11omkAcpl+G+82BkwA9y2Mv02NdQXNeDcOSKXgxCP9ZQpG4SAa78YBlWCuhfFFA5TCazE+kqc7qYCyOz7sS4JufCwOSKMnncAC3tYADPssWkckenGAevdOMpW7qROdATBeZZ6rnaZpyGFhU87qzgXgVTeZjM+kcgUFcdcOOEhOMGd4FQGY8z8oc4xoItjn1gHJFoHvZBwzPJ0BrwOcYXVF0ZK+kM0KL4MtbKoDFO1PszilMtglbhywkZXraGgF5VWnjL/B6nbEmgip4V/I6q5qNE4tpoppLa8C1W96tdbTbk+epvd8LVuqF1K7vU4OmMN2ddRmxnMNhifT0Cy1eDePpk2QQxb96m+So94EX8A4UxvTwWunKbDA4ka9Ho0fQknJXofEJElXhkeJWgOry40lBnAHNGp4+qfACpfXeDE+ohdODrCaAjNZuVnDnC9ldZ/AERpdBu3wHKckxqwGj21zB0yLZQSks/Jbj50oZsNe7ebkUJBqI2qprpU9nD0e2261iDWuHdDhsRMFrHyY8gqudjpm1nKPbfO+j+mPA7zu9GSy8lObc/mxbI9ttzs5wCoGpBiDR8ker/9lOOx7hnwwooWV823OzXe4Vrv8cMBDVq60CkZUV+lwrXYl+uAAFYl3mZytdpk2UfRX3/mGG32fsm6yzReVyJRQJho3Jfg0l6soC3Qj9dmt7F8YAUqPwGLD/gOqWerD5zbDh31HvxwQpmRHzfP5NrFHnXfB6Nt07fajY35NAbvlcCTaPzD6/gHipSESiUQikUgkEolEIpFIFEf9BYLG2aLxkQkQAAAAAElFTkSuQmCC{scale="+$scale+"}>"
+!endfunction
+
+IBMEntityColoring(meteralt)
+!define meteralt(e_alias, e_label, e_techn) IBMEntity(e_alias, e_label, e_techn, #232F3E, meteralt, meteralt)
+!define meteralt(e_alias, e_label, e_techn, e_descr) IBMEntity(e_alias, e_label, e_techn, e_descr, #232F3E, meteralt, meteralt)
+!define meteraltParticipant(p_alias, p_label, p_techn) IBMParticipant(p_alias, p_label, p_techn, #232F3E, meteralt, meteralt)
+!define meteraltParticipant(p_alias, p_label, p_techn, p_descr) IBMParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, meteralt, meteralt)

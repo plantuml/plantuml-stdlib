@@ -1,0 +1,13 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $financialnews [64x64/16z] xS61400000CXXFdRpkElMXu0001m
+
+!function $financialnewsIMG($scale=1)
+!return "<img data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAAIGNIUk0AAHomAACAhAAA+gAAAIDoAAB1MAAA6mAAADqYAAAXcJy6UTwAAAAEZ0FNQQAAsY58+1GTAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAAOxAAADsQBlSsOGwAAAyRJREFUeNrtmj9oFEEUxseYxpAUglHR5rSRE40EJXVUOAiWCfEPolYiKBaCaeQsjFVELURMoU1A/EOuEhFSmGAZlYCKRxoTwWiiiEX01MI/32O/XVZzbC6nOzO7sw9+HNzu3eX73uzMm8lTyvFYFnFtBSiAXWAtWJ0wbe/BLHgIRsDXWg1oAMdBEbTyiybBj4QZsBxsYuI+gH5wFfyMMqAZ3AJ7wG1wAUwkfJS3g9NgH7gP9oPPYZfCmR/mkD8AznMIJT1EQwm8AKfAdnAH/PrbgBPgJMWXUjjflfkonwEfwbifdX/CK9KZNIr3o0SNRWoODChwwhtwYOUboNZC2IBO8DYFE14tMUGtnWED1oMph+qfKWoODGgB8w4ZME/NgQHOhmkDHhBnDXB+BBiPRk2/0wQOgx1gY+j9Nr6ORnx2Z9IN2MY9xgbW459C156lfQQ0Ufw3sJX1uFNzwCGQA702itdhQAd4aav4bBXQYIDsuTeDvKsGDIFpcNdWE+JeBSqghyvB8yrLYLV4BR7TvErcBvhHYgf5ejOG35gDN7gHl0PYlYvcL4XSEeUdYj7i5/93BHp1VYKSyWtLuD/Px2aYhVQlqXNAvVFm7ZBjLeHkMlhmDdGR1QGOGpBnDTHuogH+JDjN5TDR2+HRJd4vy+QW5Z3c9sRdCzQaznRblXOBp2BQVyGkw4CoEx3/QLQrmwQzA9K5GVosurIRYIkB0jLS4pDu4H+hvgFvlHds7UqI1pmwAWNgnfIaitIe7dQ6FjZA+uiklazPAQP6qHUkbIA0EUof3V7QnWLx3dTYT81/dIk9UV4LmbSSTSqLz/L/QfwQMy8aF7TJyRv3aIK0kkmXpRxQzqbgmb8EzlG8NEp+9y9GtcqeBatU/K2yUXuFo/yD64maWmWrVYJywxVwXXmtZLuV1yzdqjlza8Bl8FrVdzL8TnkdYZHN0jbHRfCFRjhXCovoYzwXmHPRAL8eib1ztcHl7NtqgLbs22iA1uzbaIDW7NtmgPbs22aA9uzbZICR7NtkgJHs22KAsezbYoCx7NtggNHs22BAr8ns2xI5lYW5+A2RHKT2zAuNLwAAAABJRU5ErkJggg=={scale="+$scale+"}>"
+!endfunction
+
+IBMEntityColoring(financialnews)
+!define financialnews(e_alias, e_label, e_techn) IBMEntity(e_alias, e_label, e_techn, #232F3E, financialnews, financialnews)
+!define financialnews(e_alias, e_label, e_techn, e_descr) IBMEntity(e_alias, e_label, e_techn, e_descr, #232F3E, financialnews, financialnews)
+!define financialnewsParticipant(p_alias, p_label, p_techn) IBMParticipant(p_alias, p_label, p_techn, #232F3E, financialnews, financialnews)
+!define financialnewsParticipant(p_alias, p_label, p_techn, p_descr) IBMParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, financialnews, financialnews)

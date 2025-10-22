@@ -1,0 +1,13 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $textverticalalignment [64x64/16z] xS61400000CXXFdRpkElMXu0001m
+
+!function $textverticalalignmentIMG($scale=1)
+!return "<img data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAAIGNIUk0AAHomAACAhAAA+gAAAIDoAAB1MAAA6mAAADqYAAAXcJy6UTwAAAAEZ0FNQQAAsY58+1GTAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAAOxAAADsQBlSsOGwAAAgxJREFUeNrtWj1LA0EQ3SRiIRYBmxQpUqWxyw/QJgqikMbCImAR1EAksRf8qvwFgoL/wkjQSn+JCP6MYGZhVpZ1vdwmwdxs3oNHbvduh7uXublJ7ikFAMAiIzfBmkvilTOnx9cTnsP3PK85H7h4mdj2zLd5nziECnBALHnmS7wvegF61vYX07cvyhqwQXyzxjf8eWHNbRLfY80A+xseEh+ZQ8lZkFaACrFhjQfET+bAmm/wsdEJcEosWOOHP7YLfGxUAqwSW07x61vjvlMMW7wmGgEOiUVr7N73ph4YFHmNCCyleEp0Ey7WFuXcuk30mruUXV6mO8EdYtVT/Fy4xbDKa8VnwJkz3g34xvTaZ8k1YJ1YnyJ2nWOI7QTvicdTxtePyBOJGbBGbM4gfpNjiasBR8QV51m/lzLmE9cKxTF0rFtJGaBF6XhSOSTtbXRSFNtMCbBPLCd0fuPgdoZljilGgJ6nyRkGxPQ1SyL/KwAAAABiRy4Dv8/nes35Rc8ACIAqAAAAAKATDMGsPUKi+gB4hBQ8Qj+IwiMUIoD2CNWssbHIGNT4mGgFiNIjlPaFRUX5PUJm27wJMh6hj4BzEOEUhUfIKX7wCHnqgQE8QirMI5TLcgZE7xEap/4LcWvC2K/Ebck1YCE8QkkCdKe8P936IUoAeITU/3mEMtcJwiOk4BH61eTAIwQAQJQYAUoQdSMMOolyAAAAAElFTkSuQmCC{scale="+$scale+"}>"
+!endfunction
+
+IBMEntityColoring(textverticalalignment)
+!define textverticalalignment(e_alias, e_label, e_techn) IBMEntity(e_alias, e_label, e_techn, #232F3E, textverticalalignment, textverticalalignment)
+!define textverticalalignment(e_alias, e_label, e_techn, e_descr) IBMEntity(e_alias, e_label, e_techn, e_descr, #232F3E, textverticalalignment, textverticalalignment)
+!define textverticalalignmentParticipant(p_alias, p_label, p_techn) IBMParticipant(p_alias, p_label, p_techn, #232F3E, textverticalalignment, textverticalalignment)
+!define textverticalalignmentParticipant(p_alias, p_label, p_techn, p_descr) IBMParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, textverticalalignment, textverticalalignment)

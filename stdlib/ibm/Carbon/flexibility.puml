@@ -1,0 +1,13 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $flexibility [64x64/16z] xS61400000CXXFdRpkElMXu0001m
+
+!function $flexibilityIMG($scale=1)
+!return "<img data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAAIGNIUk0AAHomAACAhAAA+gAAAIDoAAB1MAAA6mAAADqYAAAXcJy6UTwAAAAEZ0FNQQAAsY58+1GTAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAAOxAAADsQBlSsOGwAAAe9JREFUeNrtmr9Kw1AYxS9tXHwDt+rmIB1EFxcb38FJXHyMxqnNGzg4Cw6Ku5N1cnISpN0Ul65u/sPBc/ErhtAmKebm3t6cA4fSEJKcX25uvnyJUpRV9cXWFFgO3038j2wcRNNy+Hf4Gw7hJXhQBwCT8DH8Bb/AF7KscghNS+H17zF8IMuPJHzlEAKL4dOazAHdKueEqgCEOeGnQRjYmBNMqjNl2bV4GrBK1KgQwO0c6w58BOCkCIAACIAACIAACIAACIAA/FVYZwA6/I3KaLw2LR/gpCN0bmj7zyqn0xTU4BLI7DTVAUAmhLoAmAnBdQDL8CG8Ba+VtM3PJASXAbThK3gVfoRfTewkcPjM6/Af8AY8Kmm7+na4q35fykQu1wF62Lfg/ZLDd5PhiwDoWAKwDQ9Nh88D0JPCIbQAYAUemw6fBaAnK8dqsd/OhFnhZ02CyfCRWmzpk7eXdRIbHodPQih0G+znDRcfFaTC6yppR833Hm+WnuB7+Ax+q2NDZBM+gR+kqnN6BCQfFO5KvATW4Uup6toujoRG6mkpVn8fMpShkVRzLanunB0BhZoH/4AwlOru1HUApiCMpbpTiwAgDcG7b3WKPg5Hvocvchv0OrzL/QACIAACIAACIAACIAACIAACIAACIAACoChT+gH4HGNvTK0ruwAAAABJRU5ErkJggg=={scale="+$scale+"}>"
+!endfunction
+
+IBMEntityColoring(flexibility)
+!define flexibility(e_alias, e_label, e_techn) IBMEntity(e_alias, e_label, e_techn, #232F3E, flexibility, flexibility)
+!define flexibility(e_alias, e_label, e_techn, e_descr) IBMEntity(e_alias, e_label, e_techn, e_descr, #232F3E, flexibility, flexibility)
+!define flexibilityParticipant(p_alias, p_label, p_techn) IBMParticipant(p_alias, p_label, p_techn, #232F3E, flexibility, flexibility)
+!define flexibilityParticipant(p_alias, p_label, p_techn, p_descr) IBMParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, flexibility, flexibility)

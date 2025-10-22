@@ -1,0 +1,13 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $mediacast [64x64/16z] xS61400000CXXFdRpkElMXu0001m
+
+!function $mediacastIMG($scale=1)
+!return "<img data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAAIGNIUk0AAHomAACAhAAA+gAAAIDoAAB1MAAA6mAAADqYAAAXcJy6UTwAAAAEZ0FNQQAAsY58+1GTAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAAOxAAADsQBlSsOGwAAArVJREFUeNrtmktIVVEUhm8lUVokZAPvtbIQLZ3YSFGIOxBxIFlCkI+BOJAmDjUaZSCBQgRKgybhRKyMUlSkIrpZkgqRCCqKUT7IJj4oMDB6/JvWgc1qe+/VQZ19zvrhG+x1toP137XXfmAgIBKJRCKRSCQSifyoXVvE00ArCINUy3NcBhHQCJbiMUAlPw4Oe+zHXgG53ITdhoktHkw+QDm18KDJgLCHl/xfuSUYJgXj7BO26FeU3IwV4CuJAWKAGCAGiAFigBjgXyVs44YoFSAGiAH+6AHq9qReUdbBLJgCL8Aw2PCDAUqpxGlQBq6Cb6AHdICnXjfApP2gglBPZk2g1689IJeqYRCcsNmAPYbYTSrzR+AV+AKOg32GuRmgBrynXuFGNbHx9VgGbIJV8BG8A4/JlJcgGZxi85UxF+kAFfGCASb9BB/APfCcTDjK5oQDf15eB71ogK4FcJeWRhHrI3kurISoBph2AZXYZ0r0NTW7ccO8W7Tu74NDWvwamATdtjbBG1TKJ6msL4NLZMo0m6uaXx+oZE2yGDwAa26vgHi3QbXmH9JpMJ19mySDfmgxVRG3vXgOKABj4CyLPwENLFZCp0hrzwFj9KtmsnlJoAoMgXktPkKlr+8OWeCOreeACWpkXeAY2//V35XS93UtPgNq2Z3iDfUKa3vAHLgArtB5wNER0MnmDhvuBzVe6QGtdCvkPaGcxdrZ+DxItMmAr1S29WCvwYQeFmtm4yG2/albZKFNBhwA+aANjIIQ+95AfcKRejM4o42/gwHDMdnK9wB17e2nI+6m1hN66QLk6BxdnBw9A9XaOGeLl6d/rU876QHKhDoW48uAnwsW2TjLJT94ZKdNsJqN37JxKIbTKS5IfoV2sm0tAUfZMRIMxvh+8D8mHvXf5EQikUgkEolEIpE/9RupKIWPYjt9BQAAAABJRU5ErkJggg=={scale="+$scale+"}>"
+!endfunction
+
+IBMEntityColoring(mediacast)
+!define mediacast(e_alias, e_label, e_techn) IBMEntity(e_alias, e_label, e_techn, #232F3E, mediacast, mediacast)
+!define mediacast(e_alias, e_label, e_techn, e_descr) IBMEntity(e_alias, e_label, e_techn, e_descr, #232F3E, mediacast, mediacast)
+!define mediacastParticipant(p_alias, p_label, p_techn) IBMParticipant(p_alias, p_label, p_techn, #232F3E, mediacast, mediacast)
+!define mediacastParticipant(p_alias, p_label, p_techn, p_descr) IBMParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, mediacast, mediacast)

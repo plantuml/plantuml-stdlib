@@ -1,0 +1,13 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $stethoscope [64x64/16z] xS61400000CXXFdRpkElMXu0001m
+
+!function $stethoscopeIMG($scale=1)
+!return "<img data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAAIGNIUk0AAHomAACAhAAA+gAAAIDoAAB1MAAA6mAAADqYAAAXcJy6UTwAAAAEZ0FNQQAAsY58+1GTAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAAOxAAADsQBlSsOGwAAA+ZJREFUeNrtm9tLFFEcx09tNyTzIbA0AqOglFZfSsJ68MEiidRuWlYGQUH0EhWEgtRb5b8Q+JCX0qILokFSGUhERXS1zOpFXMNuhHaxC/Y9zHdpMHZ3Zpw5R/H84MO6O3Pmd37fObf5zVGISW5TFPnZDfbGOFYL6nT5mapIgHKQrfFGZ7MO/9k0hZW4BwoD9lEXozVdi1Vg6mQfA4wARgAjgBHACGAEMAIYAYwARgAjgBHACGAEMAIYAYwARgAjQCA2BJI1xpnMOmgToB+kaxQgnXXQKkCaRgHSYgmQ6L1AEqgAK/n9PjgLvrmsQDeYBbJAl+Lgs+i7260AOeAiWASe8bc94AjYCh67qEQ7GAZFGgQoou92NwIkMfgfIAxe8PdM0MxjOS5awiC4DUrAKcUClND3oJsxQDb7DFBqC17w71Ieq3BZkUaQC/IUBp9Hn41up8FcNtVo8J0kKkIXz3Fj9eAVqFEoQA191rsVwMns4HYG+QOqwWpQpiD4Mvqqpm/hZgx4AHayz8s7vsZ2LJMj6xkPlZJjRwvLylb0NKDgw/TRQp+u76LcTNDHAS9zVPDNPFbroWIjwtrEIOfkqyA1gOBTee1++hqJd3K8HSLZvNBC2zS4HPSCYvBkjHNzB5enxT62hDDrPBvkO5lyE22RSQHbwAl+l58XwBcfKrsYtHKZug80+dDnZbOPgA3gjZNCoQTH5QLiIVgLBrgIGvbpbn3m9LQCVIICrtZ6PUx18jqHwS0GH3FaOOTwvF38bPC5v37nNR+BLeAoWA/mgffgQ4xyy8B+TnPHwS9hbY6q5jUdm9NdYtE9NkHu8ZnBZrydLW46A+uztQo5Hi2wHZPL2/PsPj+9OFW5SSqRyQCim5zmcupdQjbxnMvgNft3Z5wWMiEFsNtHjuZRy+DngYmaERq3ZgQwAhgBHCc0dGd1B3UKMG6zuqoEkEtL3VndiE4BesS/rK5qi2Z1e3QKYM/qqra4WV2Vg+BNYWVYVVsJfWsdBAUfOHRldZuCcuBGgAY+r6vO6nYH8BjuSYDfoEqoz+pW0fe4WAnKx9E2YaWewgEGH83qttFnYBbyUKaVd0dmic6Brz7XSWZ1bwgrZVYo/EvB+SaArNB1cFBYaWc5Qg/4eOdl8HOElSOMBN3PQh7LfWLTlO8JD4G34LkPff4K73xBUAuf0TbW/xxNYTeQTVWmqI6BOx6mutPCSoHJ3OMO4U/aXYkAUZM5u5NgKbgrrFdSl8DLGOfLrO5msBGs4lRXGfSAF6QA0mR+sZzkg5kiflZXjiUdwsrpNwY51akSwG7y1dQ6toj5RNo70s2BdEgY02t/Aa+11FnjzrGzAAAAAElFTkSuQmCC{scale="+$scale+"}>"
+!endfunction
+
+IBMEntityColoring(stethoscope)
+!define stethoscope(e_alias, e_label, e_techn) IBMEntity(e_alias, e_label, e_techn, #232F3E, stethoscope, stethoscope)
+!define stethoscope(e_alias, e_label, e_techn, e_descr) IBMEntity(e_alias, e_label, e_techn, e_descr, #232F3E, stethoscope, stethoscope)
+!define stethoscopeParticipant(p_alias, p_label, p_techn) IBMParticipant(p_alias, p_label, p_techn, #232F3E, stethoscope, stethoscope)
+!define stethoscopeParticipant(p_alias, p_label, p_techn, p_descr) IBMParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, stethoscope, stethoscope)

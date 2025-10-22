@@ -1,0 +1,13 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $textselection [64x64/16z] xS61400000CXXFdRpkElMXu0001m
+
+!function $textselectionIMG($scale=1)
+!return "<img data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAAIGNIUk0AAHomAACAhAAA+gAAAIDoAAB1MAAA6mAAADqYAAAXcJy6UTwAAAAEZ0FNQQAAsY58+1GTAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAAOxAAADsQBlSsOGwAAAh5JREFUeNrtmj9IAzEUxqPW6mBFnYq1q4IKdnQTR6HQwUlxUbBdHESw4qaT2C6CU3VwE3ETBAcHcXSrIILgVhVBcPDPokP9Qp8gsYd3veuZXt4HvyHvrrnLR176LkQIFovFYrFYLJaZarJxT9ki/gJK4BjsgRvl+gCYBUkQB50u3qFuCrn4rRzQELEEtsAqXdsAi6BV9xkQ8qgfOdBl0E/tVKOkQMjj/lJBXAOsFAXjYJNyvJrkGrECzsBj0Az4Vg+4BH1K/A6MgGedZ0CzB33IAWarxLO6D94rA6TObcYCa8CDzVhgDWhYsQFsABvABrABbAAbYK6cfAyVfX620+e9gSuwDwrg4z/2A/5THWCUmBOVrbh7U1MgISp7lWGT1wBpQtrLNcDpGuH3bm8M7IKJH7ELSgkjZoDM94wSGzQtBUpKO8J1ABvABjRsIRSmRW0aDFOhY4wBMSpkEiamQNivwetqQNqvweuaAjNK+wTM2/mwqeUrUscZoFZvGQeDD0QKRP6o7rgO0NGAXpuxwBowZjMWSAPkAYlclXiOrjnVq9KO62qAPCIzBYri9+kQQbEi3RN10O+10i5QZVgXuTknWK93WADbfo3R63+BI8KNdmjmNNQi+AnyYJLIU6wWyf38pF8mtNi4Z80iLo/K3orKMVlZvx9QukhOwSF4B92gHbRZ9LNusRDKfp/o913Cxha3g/5ZLBaLxWKxWMbrC7xOTbEwD9owAAAAAElFTkSuQmCC{scale="+$scale+"}>"
+!endfunction
+
+IBMEntityColoring(textselection)
+!define textselection(e_alias, e_label, e_techn) IBMEntity(e_alias, e_label, e_techn, #232F3E, textselection, textselection)
+!define textselection(e_alias, e_label, e_techn, e_descr) IBMEntity(e_alias, e_label, e_techn, e_descr, #232F3E, textselection, textselection)
+!define textselectionParticipant(p_alias, p_label, p_techn) IBMParticipant(p_alias, p_label, p_techn, #232F3E, textselection, textselection)
+!define textselectionParticipant(p_alias, p_label, p_techn, p_descr) IBMParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, textselection, textselection)

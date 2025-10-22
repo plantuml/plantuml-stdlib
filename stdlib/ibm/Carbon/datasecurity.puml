@@ -1,0 +1,13 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $datasecurity [64x64/16z] xS61400000CXXFdRpkElMXu0001m
+
+!function $datasecurityIMG($scale=1)
+!return "<img data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAAIGNIUk0AAHomAACAhAAA+gAAAIDoAAB1MAAA6mAAADqYAAAXcJy6UTwAAAAEZ0FNQQAAsY58+1GTAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAAOxAAADsQBlSsOGwAAAr5JREFUeNrtmj9oFEEUxudyFyOYVCKKmsY/jUWaSFJZiBZGhBAQQcVG0WhnCGijNlYGQoQUMRoVk6iFolaKNhZ2AUUE0xiQqMGkVquo+D33O5gcd2Qnd6czs+/Bjx32dt/e+2bm7ezbNSbjluP2GDgeSUy3wETagxu4PQLaIgi+jbGktoLVngJdgQvwzPWEhqznABUg6wIUAvqvkp+us31qJfM99BEwCjaTUZ0CGRSgF3whvVnMATLnW/UuoAKoAHVbB3SAlxE8DE25nJC3RsLGCDp0AYyDd0ZNLZVpRYhbrQgZrQjpQkgFyPpK0HfTipBZviLU5ZrINQcE9F+1ImTKV4TWg/NsX+EDUZQCVAr8tLVP2tdchChEEPgIGGD7HDjjIkQhgsDtAPu5L7UQOWt+dfznQsLuKgKvdF5RCFNJCJ8qQnfKBHAZTIKdDPwQeAR+pPAnx7wAY6CJQpwFa8Hboo+cp8O9n8G79LhxHBEXwWDeUwEugZ+g3aHHXUbEAbAO3C0mQR8qQqU5YK4GvV7OFuh7yUowlopQVSvBGCpCWg9QAVQAFUAFUAFUABVABVABAhfgG2ipo/8WXsOrb4Tsp8GvJimC1Muk+PPaFuAeWO3RCJgFm0Az+F5j3830PWsLMGEcvqr4B/YcDIJ94GGNfYvPVbyGtzngPfgAjtbBt/ic4TW8vgtcBd2gs4Y+O+lzKITb4A321LBJqrrVWhN9zdD3X8t7LMBvk5SvpZK7BTyu0t9tsAccBB9DEEDsE5gHF8BW8BT8WkHPS/BS+JWXK0/sH30XQOyNSaq48nZov0neXs05zPkHYC+DHys9IGfCsV3gJtjO6XCfI6L0ncEaCnUY9PBucgK8Kuc0JAHEGsFJ0Ae2gUWOhs/8vZWLnEYmuyEmvMVKDkMTwLYd7GkJegP3zVMMGRnTRm15+wNQKI4tomI4gwAAAABJRU5ErkJggg=={scale="+$scale+"}>"
+!endfunction
+
+IBMEntityColoring(datasecurity)
+!define datasecurity(e_alias, e_label, e_techn) IBMEntity(e_alias, e_label, e_techn, #232F3E, datasecurity, datasecurity)
+!define datasecurity(e_alias, e_label, e_techn, e_descr) IBMEntity(e_alias, e_label, e_techn, e_descr, #232F3E, datasecurity, datasecurity)
+!define datasecurityParticipant(p_alias, p_label, p_techn) IBMParticipant(p_alias, p_label, p_techn, #232F3E, datasecurity, datasecurity)
+!define datasecurityParticipant(p_alias, p_label, p_techn, p_descr) IBMParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, datasecurity, datasecurity)

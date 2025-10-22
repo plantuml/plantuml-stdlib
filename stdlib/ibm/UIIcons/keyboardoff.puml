@@ -1,0 +1,13 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $keyboardoff [64x64/16z] xS61400000CXXFdRpkElMXu0001m
+
+!function $keyboardoffIMG($scale=1)
+!return "<img data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAAIGNIUk0AAHomAACAhAAA+gAAAIDoAAB1MAAA6mAAADqYAAAXcJy6UTwAAAAEZ0FNQQAAsY58+1GTAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAAOxAAADsQBlSsOGwAAAkVJREFUeNrtmsFKAzEQhrOb9lLoTUHrM+jFg9eKT1BRxJNv4UP4BL6AFEHaswfx7FHx0BcQEbx5LLVOaAolZre7aTaZTDLwX5KQZb6dzMyyYSxZsmQxGy8Yb4GGoBloEhsA4fw96Ax0CnqnDEEHYCidX86ThqADMJNO8xgg6ABMpLNRQChKgtFA4CVzUUDga+bJQ+AV1pCGwCuuIwuB11hLEgKvuZ4chKxgfA90AzoG7Vbcawq6AI2V8QPQE2jLk4+foGfQNeijSgQI519BR6BuzWjSRcIX6BF0Dup4ACB82Addge5AP+sA3ErnTY8URghMPncHNFodzDUL+xs+qC2/JgfK+BvoBPTt8cj3dZ++qvUq5olVG0in2woENScICNuOnZ6X+KaNABMbS2enFSIBleUW9woSQm55v+AgtDY8U7ocMSpJjLo+oe7+c8PexkkEmFQHUkcgOAi5h2eigpAZnEETU/uEsm+HJvuAf/64igC01cHlEUAJwXUOQAehiT7AdZ8QTB+AsjpgAuAFAjYAziG46gN89gko+gC01QHTEfACAVsOcA7BRR9gMzFa/3bAWAWcVoeQADQCITQA1iGY5IBsw3kbfYK1nBBKBDRWHbB0gt46xtBygPVI0L1d8Q+9F2ByNIoE3e/xQ7b4nx6aGd1U0QF4YYvLBJ0YIOgAiBsU4iaFuEwgrrV0KUPIGA0zrg6cCADj22tUABhDoATACAI1ALUhUARQBkEk/YcYAOggiD9Sl6BfFpktS2SLJUuWLJlif86suQAqId5iAAAAAElFTkSuQmCC{scale="+$scale+"}>"
+!endfunction
+
+IBMEntityColoring(keyboardoff)
+!define keyboardoff(e_alias, e_label, e_techn) IBMEntity(e_alias, e_label, e_techn, #232F3E, keyboardoff, keyboardoff)
+!define keyboardoff(e_alias, e_label, e_techn, e_descr) IBMEntity(e_alias, e_label, e_techn, e_descr, #232F3E, keyboardoff, keyboardoff)
+!define keyboardoffParticipant(p_alias, p_label, p_techn) IBMParticipant(p_alias, p_label, p_techn, #232F3E, keyboardoff, keyboardoff)
+!define keyboardoffParticipant(p_alias, p_label, p_techn, p_descr) IBMParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, keyboardoff, keyboardoff)

@@ -1,0 +1,13 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $insertpage [64x64/16z] xS61400000CXXFdRpkElMXu0001m
+
+!function $insertpageIMG($scale=1)
+!return "<img data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAAIGNIUk0AAHomAACAhAAA+gAAAIDoAAB1MAAA6mAAADqYAAAXcJy6UTwAAAAEZ0FNQQAAsY58+1GTAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAAOxAAADsQBlSsOGwAAAYVJREFUeNrtmb1OwzAURlOCEEICBlha8RBsCAbUiRfgZ+UtWGnZyoMwMCMELMDKxM4KZWKAjSl8lVwpQpEVx2kC9vmko6puG/eeOs5tmySEkJjTmcExswbmqG2+udhXAAIQgAAEIAABCEAAAhCAAAQgAAEIQEA+CzELWBb34jR0AfMFYyviRmyLHTM2dDjmWPRy97MG6xnXsQIuTfHTDBxXwkOLH6jz3GnB2Is4FIu5sb65fSxxzCdxLJYaLv5DHIgvXwFv5vyvKmHyBi5EV6yb/WSWeRdXYl+8ur7Y9hv6lrgVq7/GB457wp9OannMdyX8ewFRSEhLPCdoCdG3wmX+SAx6M+zEXDyXQYsA3+I3xLnZKLsNNEKTFvikrkaojuKfxVoLrfCmq4Siq8CZ57IftVB8YuYc1XEZPDJfaKqe8/0WT2nnuYt+D/gUe+JOXFfY8HoVLrU+ySxzVxIwlbArvkNvhGydYPDF0wojAAEIQAACEIAABCAAAQhAAAIQgABCCIkuPwDoQfpiNhkIAAAAAElFTkSuQmCC{scale="+$scale+"}>"
+!endfunction
+
+IBMEntityColoring(insertpage)
+!define insertpage(e_alias, e_label, e_techn) IBMEntity(e_alias, e_label, e_techn, #232F3E, insertpage, insertpage)
+!define insertpage(e_alias, e_label, e_techn, e_descr) IBMEntity(e_alias, e_label, e_techn, e_descr, #232F3E, insertpage, insertpage)
+!define insertpageParticipant(p_alias, p_label, p_techn) IBMParticipant(p_alias, p_label, p_techn, #232F3E, insertpage, insertpage)
+!define insertpageParticipant(p_alias, p_label, p_techn, p_descr) IBMParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, insertpage, insertpage)

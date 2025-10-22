@@ -1,0 +1,13 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $voicemail [64x64/16z] xS61400000CXXFdRpkElMXu0001m
+
+!function $voicemailIMG($scale=1)
+!return "<img data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAAIGNIUk0AAHomAACAhAAA+gAAAIDoAAB1MAAA6mAAADqYAAAXcJy6UTwAAAAEZ0FNQQAAsY58+1GTAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAAOxAAADsQBlSsOGwAAAxFJREFUeNrtmF9oTmEcx9/3vNsYyt/StpTaBaJl1xLNn9Iu0OK14QJLW26QSzdKKYULMdlCXJAL5V9pNLmRQvmXNBHNTBMrFPNnfJ/6rk5P5z3v7zznHKP9PvXJzuv5nd9zfuc55zzPk8koiqIoiqIoiqIoiqIoijKayEZsXwXzsA7OhTP5+yv4CN6E5+C7lPpbARvhIlgDK+EgfAu74WV4BfYlXYAZcC/cAL0ibX/BU3B3goWo8uUvKdL2BzwO98D3SRRgDTwJx0fs9Ce4nnckDquZf2LEuAG4Ft4Ia5QrcpJdrGaZQ8fHwHW8C/ccL74FnoZjHWLLYRN8Ax8UahQ2nEzw/oBR8gR2wE7Y43tElsNmOM/X1jwuh2EvvORw54/GzF/CG/gadkV5BMwJn8IJvt++wx3wGBwqEOfxrh2yRs1HOFvyTJJKXujkhPJ/gLP4r+gRaIe1VvIV8Dz8HdJx83934W2+rXO+4Tglwig4ABckmH8cR0NnUMWC7n6D9dvOQkOoAF2M8WPe4NMEsdPhphTyb+NNKFqAjdbIMEOxzeEl1MZY/0uxSRCXt95NSeavlxRgoXXcEfLMhTHE2LBzB7E4xfyiAtRax9djfMPt2PmCmJoU81dLCmBPOHpidMCOnSSImZpi/opiBTCfxdIU1x6SCZWX+Yt4AZ+R3oCvgit2bK8gpj/F/H2Saj+3jpfF6IAd2y2IeZxi/heSAlyzjpsdh6XH2LBzB3ErxfxXJQW4wCXtMGZu3erQgVZrXm5mcxcFcWe5pE06/6C0AC/ZCT8HuQkipY4xfk4INyr6uQJMOv8RrklEa4GHcDNnT8PtGnmC+yHzcY+VPxOwGDHxn4UXYObzW3zL4CTymxnmV2kBBrjN1WC1redvZdzw+Ma/q7n50c55fM76suTZcSlf4DPGZWPm/wlXcnUbeUdoO4dSNvN/Yi5+K3eUnHaE7vCzuNRxV2YkMaN4FV/qBYmyKbqPe2yl//iFJ74pahfCFGEJnMO1e/kIX7B5sTpviyuKoiiKoiiKoiiKoiiKMrr4A2v2uFCFW3myAAAAAElFTkSuQmCC{scale="+$scale+"}>"
+!endfunction
+
+IBMEntityColoring(voicemail)
+!define voicemail(e_alias, e_label, e_techn) IBMEntity(e_alias, e_label, e_techn, #232F3E, voicemail, voicemail)
+!define voicemail(e_alias, e_label, e_techn, e_descr) IBMEntity(e_alias, e_label, e_techn, e_descr, #232F3E, voicemail, voicemail)
+!define voicemailParticipant(p_alias, p_label, p_techn) IBMParticipant(p_alias, p_label, p_techn, #232F3E, voicemail, voicemail)
+!define voicemailParticipant(p_alias, p_label, p_techn, p_descr) IBMParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, voicemail, voicemail)

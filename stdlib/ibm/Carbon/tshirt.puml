@@ -1,0 +1,13 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $tshirt [64x64/16z] xS61400000CXXFdRpkElMXu0001m
+
+!function $tshirtIMG($scale=1)
+!return "<img data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAAIGNIUk0AAHomAACAhAAA+gAAAIDoAAB1MAAA6mAAADqYAAAXcJy6UTwAAAAEZ0FNQQAAsY58+1GTAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAAOxAAADsQBlSsOGwAAAn1JREFUeNrtm09IlEEYxr9SqYMQKlQURnelk3oUAqE/EmgpqAQKnuxoohiGxsLePHjRSwc1zZRMKGEVAomgg15E6OKlCEm9uCDrwVTsGXoOy2q78307+oE+L/wuqzvzvr95Z8bddT3vnEfOCYxZBp6Dq2DF0ZhPQTOIg98uk811NM51JtkCSvjYGhgHh1mOfQFEQTFoB9/BCBgD62EKuAQeseh7fGwevAJ7YAZUgi9Z5ljJ4muZbzOFRDmfkfER7J6WgDIW3QCKuCLdXJGNpK31A/SBu1kK6ONYn8ABeJ/UcUbGFNgCE5Sx5Le9/LS4mbDUcsInTPYZGApYfBsYBHVgOsOCNIJCLshwyoIEFnAHRMDDpBb303LDTKyBW8JPmJZ/R9EtAbdkDPSkO4zTCajn5L+4ClZGj0nqAxOKcN/uZXhOHngBXoI58Bj8CXgom+67BZq4VayvwZtgAcxyD38FiQAtbPbsJLgCOpnIAaXupPzuNa7eKKgBA6AV7AeY1+T6jVvP3Epd7MZt2w7oBR20F3d0VVZw3Aec9ycxcZscsm3NTbLoaN4CCu/ngWp1C5iDbtlh8R4LqmahVRRSyJ+t8jD9nCTFVcRZS6mfazA/YMvbhCnwNTmtSLCmI3HxvL8WkAAJkICsIkbCihj/WFIHSIAESIAESIAESIAESIAESICvSPfBiHnLaiHD883b5osh11BumeeSHwFvweUztNDmc4FxPwLeEJuXo2GHWdn7OgMkQAIkQAIkQAIkQAIkQAIkQAIkQAIkQAIkQAIkQAIkQAIkQAIkQAIkQALShIuvztr8H8FJxX8/97eNHAcddCPEBdz0/n3LbMVTBIu/Lnp+/pPZFQsAAAAASUVORK5CYII={scale="+$scale+"}>"
+!endfunction
+
+IBMEntityColoring(tshirt)
+!define tshirt(e_alias, e_label, e_techn) IBMEntity(e_alias, e_label, e_techn, #232F3E, tshirt, tshirt)
+!define tshirt(e_alias, e_label, e_techn, e_descr) IBMEntity(e_alias, e_label, e_techn, e_descr, #232F3E, tshirt, tshirt)
+!define tshirtParticipant(p_alias, p_label, p_techn) IBMParticipant(p_alias, p_label, p_techn, #232F3E, tshirt, tshirt)
+!define tshirtParticipant(p_alias, p_label, p_techn, p_descr) IBMParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, tshirt, tshirt)

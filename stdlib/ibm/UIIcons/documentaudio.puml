@@ -1,0 +1,13 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $documentaudio [64x64/16z] xS61400000CXXFdRpkElMXu0001m
+
+!function $documentaudioIMG($scale=1)
+!return "<img data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAAIGNIUk0AAHomAACAhAAA+gAAAIDoAAB1MAAA6mAAADqYAAAXcJy6UTwAAAAEZ0FNQQAAsY58+1GTAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAAOxAAADsQBlSsOGwAAAm1JREFUeNrtm7tLA0EQxvd8FBZaKWh84V8gPkDBRu3ESkGCqK22KmgvWFmoZbT1hVUKEdFCUliKIlgI2kh8FdpoYaEYZ7iNHEfM5S63m92b/eCD5Mjlbn+Znb2ZyzFmZGREWVbA/RrBK+ABcEPI5/QIngEfygBQHnDwV+AecLWAc6oBj4GvwTcqAkjwwYs+r1EZEMoC7NMvaXpWgvfBIyIPUhFgn1hIeSSrjOv9Fx+8E0IcnFQlAkQrziFIiQQVASRlQlARgFQIqgKQBkFlAFIgqA5AOAQdAAiFoAsAYRB0AiAEgm4AvCAMUwCQD0JCRi0Qtp5c9UWmiO9q0jECUqU8uAoAFsFvlAFgC6wdvAt+ln1wFXJAFsJESP0EEqsAiWrQADAADAA6q0AxskwEEI8AL42Dl8E/4HnwARUAODa8gTvn2JagAqCW9wcGXdtjFKZAB+8XtFLMAZPgTXAVtSSYa76TWQZxvh//M/j1qEdAJ5/vLa7tn+Bp8DZ4VlcAQ3w+++3z3TO7RX6pew7YCDD4U2Z3i1+jkASbfX5+jdn9xW9ql8LYTlsA70W9FrBEfKlpiBgABoABQFo6rQKZPMsgrv+7VCMA/72+A14N8oOqDCDt8/NYDZ6A66ICAB+aePC5Dz7Acc6rRO1zwFEB9UCuchhfnznK4UjngAtwF68CncKW2BYvkEK/vsasG1PsGt9PS8wqNgJSCkYClsB402OK2d0goUmwpP/p8RDO+T5md4UKUpCHpj74ulvP7IZksU+OLYUM4YWD6Aa3eR3PYtFVrryQdq0YgSJAF+HNUGyX34J7we/82uKOGRn96Rd4hHRCS6065gAAAABJRU5ErkJggg=={scale="+$scale+"}>"
+!endfunction
+
+IBMEntityColoring(documentaudio)
+!define documentaudio(e_alias, e_label, e_techn) IBMEntity(e_alias, e_label, e_techn, #232F3E, documentaudio, documentaudio)
+!define documentaudio(e_alias, e_label, e_techn, e_descr) IBMEntity(e_alias, e_label, e_techn, e_descr, #232F3E, documentaudio, documentaudio)
+!define documentaudioParticipant(p_alias, p_label, p_techn) IBMParticipant(p_alias, p_label, p_techn, #232F3E, documentaudio, documentaudio)
+!define documentaudioParticipant(p_alias, p_label, p_techn, p_descr) IBMParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, documentaudio, documentaudio)

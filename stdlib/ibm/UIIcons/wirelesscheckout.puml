@@ -1,0 +1,13 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $wirelesscheckout [64x64/16z] xS61400000CXXFdRpkElMXu0001m
+
+!function $wirelesscheckoutIMG($scale=1)
+!return "<img data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAAIGNIUk0AAHomAACAhAAA+gAAAIDoAAB1MAAA6mAAADqYAAAXcJy6UTwAAAAEZ0FNQQAAsY58+1GTAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAAOxAAADsQBlSsOGwAAA1lJREFUeNrtWl1IVEEUnsykIOvBkCKJICqJHoT+nvMliuiPICnpoaitrMfegsCCoAgiJMoeegj6QV+MoEcpgrYetKLAXR+ExBbEItSIslrPYc+F8XDn7r13792d9Z4PPnBmZ4+eb+bMnDOOUgKBQCAQCJKKBTHYrAOmgEeBm4FLA35/GvgJ+Ah4D/inmgRYDXwObInI3nvgXuBYXAIsjHjm+yN0HrES2Ap8APwXhwA1Edo6HbHzDlrIdiyojdBWO2u/AJ4KsXwxjO4DdzPbXbavgE2snQoZu2P0XS/bVgpQz9qjJdgaLWLbSgGqEiKACCACiAAigFSDc4HFx13KyOZ9peuWCncDVyU5BJYnfQ/IJkkAtxDIsLK2A3gnSSsgw9obkxYCQ6zdnDQB+ArYkEQB8lp7DXBJkgT4qeZeSNTM51VguhPM0szrG+EHi/5uvCGa1NpTwGUu4/Cm+rfWxp8X+6kFhiw/CXim+tVDKMWEUmEEsO0k2OpTAC7UD78C2H4S7GftV4ZxfOUOh10BNoXAOuAB1vfMMHZLkYk1CoB389Mslmwpj2/Q5qY7NWAY28raab8C5C1NiS8CD7K+S4axTcBtzKd+vwLYWBOg89dcZrTXML6d+fcOOO43D3AToLmCMX8deIj1T6jCGwRlOP87WN/DIIlQJTdCfFCB/xbfAdxHG14dG4OPJg4DRww2TlII6Nnt46ACVCoEpop8PkHOvzR83gC8wvrwpcn3oAJgOvxfiyOnKPpVwX0gTct+xGNMF4ngAE+zm0FrAUWOfgGu1TbM9cCPFXA8Q7t9b5FxZ4BtrK/TI1Ms+kAiownghEHcAuCM5Uj815TkDPj43h7gbdY3CLwVphrUN8JdZT4JwrwFQOd7gIu0PqwWjwBnShXA5qoQkaK4133BB1XH3XL/oAJ8Zu1jxChQ6hO9BnK8zeWzs8C+Ui5EHLyh7KnRohnHnOAE8Crb7Z2ZP6cKj6xUFAL8BZ4HPlXxvCoNgiZafRcMhdkkLfu+IEb9PJProSTisir8w6S+DM5iJriC7iHw8mMncLtH7TJIG95wueMwDuQDHpmddNTNhPlltao6gbl9N90N5EoxVG0CvKWq7gnwWxQGbRUgR7OcJabpMmNcCQQCgUAgEESEWaIBl3fiIyvrAAAAAElFTkSuQmCC{scale="+$scale+"}>"
+!endfunction
+
+IBMEntityColoring(wirelesscheckout)
+!define wirelesscheckout(e_alias, e_label, e_techn) IBMEntity(e_alias, e_label, e_techn, #232F3E, wirelesscheckout, wirelesscheckout)
+!define wirelesscheckout(e_alias, e_label, e_techn, e_descr) IBMEntity(e_alias, e_label, e_techn, e_descr, #232F3E, wirelesscheckout, wirelesscheckout)
+!define wirelesscheckoutParticipant(p_alias, p_label, p_techn) IBMParticipant(p_alias, p_label, p_techn, #232F3E, wirelesscheckout, wirelesscheckout)
+!define wirelesscheckoutParticipant(p_alias, p_label, p_techn, p_descr) IBMParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, wirelesscheckout, wirelesscheckout)

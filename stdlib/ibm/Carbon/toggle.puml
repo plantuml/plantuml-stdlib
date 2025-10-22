@@ -1,0 +1,13 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $toggle [64x64/16z] xS61400000CXXFdRpkElMXu0001m
+
+!function $toggleIMG($scale=1)
+!return "<img data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAAIGNIUk0AAHomAACAhAAA+gAAAIDoAAB1MAAA6mAAADqYAAAXcJy6UTwAAAAEZ0FNQQAAsY58+1GTAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAAOxAAADsQBlSsOGwAAA7RJREFUeNrtmttLVFEUxncX9SEjiooyQkgFyYhuVgi+RKCEBhIRORVeKiKKtKBeon+g20MQQaUhjBU9WCimUQ8RFBKISIagLxqZRSCRCSlG34bvyOG4Z+YcnYd1nP3BD3FmneOsNXvvs/b2UyrFtShA7GZwAGwE68BaYbn8AKPgC2gHn5NRgDRwCtSDXDAFvvKPTAsrwBJ+ORv4uQfBbXCfnztwAYrBQ5AHWsBjVvaP8FG9jCP1KKgAA6AWvAtSgJPgLugB50FXSKf4HnAHbANnwQPTsDElr4dNMys4FOI1Tk/XJrAJXOXv3fEKoIf9UyZ/QuA8n4umOYVzwGXwFgybCqAXjk5+4xUxkt8NzoHT4DDYCX6zstLVzrXhCLgH/nkLcAYcA4cMw34NR8Z1sJUL4XJQzoLsAq/BhPCR0MtR8B181C8udQXoR90Lw4K3GnwAq0A1iLoeK3rURMAtxuwFPwUXoYs51nORV4v5RgGf81HDRY1gJSgCjzzP1Cm+VsSYxhBMhShzLXAXoARMgg5PcCEoA5dAf5yb9jOmjNdIVgdzLXEXIJsL2bgnWC+Gv/hUSKRmxlYIL8A4c812F2A9GDEE66HyiRVLpEnG5oZgGoww55kCpKycAnwDWYb39YZiC0j3ca90xg6GIO8s5jxTgCHuojI9gbqDWgEqfdy0krEtwpPPZK5D7gJ08hss9QTrZqEN3AT5cW6az5g2p8EQrFLm2ukuQB+HbsRwgW5+xsB7UMXmx90+V/G9McZKV4S59nlbYd0qXuRz0t3bT/AsYAfbyAvsqavZAere+g04KLwLdLbHup2/5oxUdwF6eIiwj1vIaUMRXvI5msafr9gA3RC+D9DKAM/4OWudzZDpFOgvC7DQ1MTciuOdB+h98igPD3K4hQz7mUAG9yjHueN9nuhEqJtrwBXO9d6Q7PdjzXk97Pcz+VlHYvZQNMHNUvpY3KsF+Y8RKysrKysrKyurVJX1CNnNkN0OG2U9Qsp6hKxHKAzJB/EszcsjJE3as/RExfYs6UJ4PUsJPUJ1yuwRkqb5eJYcj1CdMniE8pTZIyRNDcq/Z6nBcH2UufryCElTIYe5X89SuZrtWQrkEZKmZHiWAnmEpClZniXrEXKUyCMkTcnyLPn2CElTMjxLgTxC0qSbl1bl37PUqmZ7lmJ6hAaU2SMkTTXKv2epxnB9hLn69ghJk2PX2a5ie5Z0G2zyLM3ZIyS1CEE8S9YjpKxHyHqErEcoSAGcx4r1CFHWI7QQ9R8phGuOBcug4QAAAABJRU5ErkJggg=={scale="+$scale+"}>"
+!endfunction
+
+IBMEntityColoring(toggle)
+!define toggle(e_alias, e_label, e_techn) IBMEntity(e_alias, e_label, e_techn, #232F3E, toggle, toggle)
+!define toggle(e_alias, e_label, e_techn, e_descr) IBMEntity(e_alias, e_label, e_techn, e_descr, #232F3E, toggle, toggle)
+!define toggleParticipant(p_alias, p_label, p_techn) IBMParticipant(p_alias, p_label, p_techn, #232F3E, toggle, toggle)
+!define toggleParticipant(p_alias, p_label, p_techn, p_descr) IBMParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, toggle, toggle)

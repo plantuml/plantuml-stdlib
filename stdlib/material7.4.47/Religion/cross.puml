@@ -1,0 +1,11 @@
+sprite mdiCross <svg width="48" height="48"><g transform="scale(2)"><path d="M10.5,2H13.5V8H19V11H13.5V22H10.5V11H5V8H10.5V2Z" /></g></svg>
+
+!if %function_exists("$MdiSprite")
+  !unquoted function $MdiCrossImg($color = $MDI_DEFAULT, $scale = "1")
+    !return $MdiSprite(mdiAccountAlert, $color, $scale)
+  !endfunction
+
+  !unquoted function $MdiCross($alias, $label=$MDI_DEFAULT, $shape=$MDI_DEFAULT, $color=$MDI_DEFAULT, $scale=1, $stereo=$MDI_DEFAULT)
+    !return $MdiSpriteElement("mdiAccountAlert", $alias, $label, $shape, $color, $scale, $stereo)
+  !endfunction
+!endif

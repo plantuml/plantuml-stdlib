@@ -1,0 +1,13 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $ibmz16multiframe [64x64/16z] xS61400000CXXFdRpkElMXu0001m
+
+!function $ibmz16multiframeIMG($scale=1)
+!return "<img data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAAIGNIUk0AAHomAACAhAAA+gAAAIDoAAB1MAAA6mAAADqYAAAXcJy6UTwAAAAEZ0FNQQAAsY58+1GTAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAAOxAAADsQBlSsOGwAAAe1JREFUeNrtW7FOwzAQNSUS6sLQhR9gZgAJqUKijPQjWPiNMoaBn2BBfEO6IQZUqRJL/4KFNWKCi3SRLCtREp+pe+570lNjJ6+OnYt951OMAQAAAIC9xUHH+TvivfI+PhNf2k4edoifiOfEL6tuSjwlHjv1Fc6IJ1a9W46hnxBf2zqY9RjBNXHOxznxhlg69TUK/p23lIfql8TfAXr3+mVX57IBplQ1viA+Ei88TDG2vhEjj8YfhDcfQy+ygBnxVtB4bL3YAsbCxmPrg7wCyaLPAJT8/uWebcTWi+eAd+In34TxMMXY+iDLYN3owrOd2PogfoB9EyU/GaNI7z0Al8Q3q/zDM7NbX7ue6x3TB18FVsRv9rGnCvWiWMD22Wf8JD4s8yy2pK98/Oue+mBzQJKrQya0IPWrg3QA1K8OIQZAtSUgFgj0P7llgqr0WcDOq9wpGgXsvMqdIokFJLFT5BML1D73mP3yK+t8H19+2/rgFlD530fsj28U6kWxQN99/Vj65X/OAcgLGOQFkBfwAfIC2mMB5AUM8gLIC6jf+QkZCyAvYJAXQF4gmdUBeYEAEynyAgZ5gbRjgSHxOvIC2vTICwg6n8ROUdf3AgX73JsGn3vCfvnKqTfW9W45hr7Jk+w9AMl/MAEAAAAAe4w/asg4di7zlC8AAAAASUVORK5CYII={scale="+$scale+"}>"
+!endfunction
+
+IBMEntityColoring(ibmz16multiframe)
+!define ibmz16multiframe(e_alias, e_label, e_techn) IBMEntity(e_alias, e_label, e_techn, #232F3E, ibmz16multiframe, ibmz16multiframe)
+!define ibmz16multiframe(e_alias, e_label, e_techn, e_descr) IBMEntity(e_alias, e_label, e_techn, e_descr, #232F3E, ibmz16multiframe, ibmz16multiframe)
+!define ibmz16multiframeParticipant(p_alias, p_label, p_techn) IBMParticipant(p_alias, p_label, p_techn, #232F3E, ibmz16multiframe, ibmz16multiframe)
+!define ibmz16multiframeParticipant(p_alias, p_label, p_techn, p_descr) IBMParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, ibmz16multiframe, ibmz16multiframe)

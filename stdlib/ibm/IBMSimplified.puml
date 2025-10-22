@@ -1,0 +1,42 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: MIT (For details, see https://github.com/AWSlabs/AWS-icons-for-plantuml/blob/master/LICENSE)
+
+' Styling
+' ##################################
+
+hide stereotype
+
+!definelong IBMEntityColoring(e_stereo)
+skinparam rectangle<<e_stereo>> {
+    BackgroundColor transparent
+    BorderColor transparent
+    Shadowing false
+}
+
+skinparam ParticipantBackgroundColor<<e_stereo>> $IBM_BG_COLOR
+skinparam SequenceParticipantBorderThickness<<e_stereo>> 0
+!enddefinelong
+
+' Overwriting Elements
+' ##################################
+!function $IBMImg($service)
+!return %call_user_func("$" + $service + "IMG")
+!endfunction
+
+!$ENTITY_SPRITE_SCALING = 1
+
+!definelong IBMEntity(e_alias, e_label, e_techn, e_color, e_sprite, e_stereo)
+rectangle "$IBMImg(e_sprite,$ENTITY_SPRITE_SCALING)\n<color:transparent>$PADDING</color>\n==e_label" <<e_stereo>> as e_alias
+!enddefinelong
+
+!definelong IBMEntity(e_alias, e_label, e_techn, e_descr, e_color, e_sprite, e_stereo)
+rectangle "$IBMImg(e_sprite,$ENTITY_SPRITE_SCALING)\n<color:transparent>$PADDING</color>\n==e_label" <<e_stereo>> as e_alias
+!enddefinelong
+
+!definelong IBMParticipant(p_alias, p_label, p_techn, p_color, p_sprite, p_stereo)
+participant "$IBMImg(p_sprite)\np_label" as p_alias <<p_stereo>>
+!enddefinelong
+
+!definelong IBMParticipant(p_alias, p_label, p_techn, p_descr, p_color, p_sprite, p_stereo)
+participant "$IBMImg(p_sprite)\np_label" as p_alias <<p_stereo>>
+!enddefinelong

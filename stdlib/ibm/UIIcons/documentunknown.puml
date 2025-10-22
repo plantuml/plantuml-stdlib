@@ -1,0 +1,13 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $documentunknown [64x64/16z] xS61400000CXXFdRpkElMXu0001m
+
+!function $documentunknownIMG($scale=1)
+!return "<img data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAAIGNIUk0AAHomAACAhAAA+gAAAIDoAAB1MAAA6mAAADqYAAAXcJy6UTwAAAAEZ0FNQQAAsY58+1GTAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAAOxAAADsQBlSsOGwAAAlpJREFUeNrtmbtLAzEcx1Nfm04uPmexg26OPvCBCIKCdBJBBXFSF62LoouPQRAXHRREVJw6qYOD7Z8gODg4Fa0O6uKmQv0GIxyxttc2ae93yRc+w11pevmQS/NLGLOxsTE5AUXt1IFN0AlqFD/jI5gC5zoElCrq/A1oA5UanrEKjIBbcOdFAbui8zrDn3NYh4QSBW10FOh1LQdnYEhlo2UK2qhVPK8kpetP0XmnhBCIeGUE6E5ISNAyEigIiOiUQEGAVglUBGiTQEmAFgnUBCiXQFGAUglUBSiTQFmAEgnUBWSSMGCCgHQSdgtRC6hOQqovknm0VU9xBEQL+WNeFDAPXk0WwLfAWsAJeNL9YwHmvySz6WMJMzxWgBVgBZidXFaCzWAS9IEG9vcw5B3EwSXYZxoOM4olgK+tt8A0S3+gwoUEBbNgRyxuvigL4J2/AN05tD8HmsCgFyW4nQO2cui8M/1gjeoICIph78yDGNbX4Fn6jJ8Od4EN9nNw+psZsAfuqY2ACemdfxBr9dMUnWdi/X4MWkVp63yNxim+Ar0pqrU3F997AWHpXg9FAY3SdSyL9mMZ2iIhQP6fT5i2EMqnZG6XruMmLYWrwbp078oPS+FMcf4NOjc3+Y7tgR8FuN213fbaGqCQ1SAvjBb9Ug1mky+/FEPZxLflsNtUUVoH2C0xK8DwqJgDAnYEWAFWgLFzQAVYAWPi+hAsgw9TBKyCBcd1WEyKYVMEjP5zL6ygelSRhOlzQFS3gCOX94qRV1GFan0FlsSQlifBYoafS1yLzj8yGxsbmzT5Bn82d4dmxR15AAAAAElFTkSuQmCC{scale="+$scale+"}>"
+!endfunction
+
+IBMEntityColoring(documentunknown)
+!define documentunknown(e_alias, e_label, e_techn) IBMEntity(e_alias, e_label, e_techn, #232F3E, documentunknown, documentunknown)
+!define documentunknown(e_alias, e_label, e_techn, e_descr) IBMEntity(e_alias, e_label, e_techn, e_descr, #232F3E, documentunknown, documentunknown)
+!define documentunknownParticipant(p_alias, p_label, p_techn) IBMParticipant(p_alias, p_label, p_techn, #232F3E, documentunknown, documentunknown)
+!define documentunknownParticipant(p_alias, p_label, p_techn, p_descr) IBMParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, documentunknown, documentunknown)

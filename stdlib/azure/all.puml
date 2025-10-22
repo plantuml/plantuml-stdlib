@@ -1,0 +1,8 @@
+@startuml
+    !include <azure/AzureCommon>
+    !include <azure/AzureC4Integration>
+    !$azure = %load_json('<azure/all.json>')
+    !foreach $item in $azure
+        !include <azure/$item/all>
+    !endfor
+@enduml

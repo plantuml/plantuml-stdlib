@@ -1,0 +1,13 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $soccer [64x64/16z] xS61400000CXXFdRpkElMXu0001m
+
+!function $soccerIMG($scale=1)
+!return "<img data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAAIGNIUk0AAHomAACAhAAA+gAAAIDoAAB1MAAA6mAAADqYAAAXcJy6UTwAAAAEZ0FNQQAAsY58+1GTAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAAOxAAADsQBlSsOGwAAAwZJREFUeNrtmz1oFEEUx3dvF1QIEcSIop2CTcDO0liI3UFA5AIxoFYWYimKFmKjHmghgvhBmkRRxIQQWzGCCBYWwgVBY2XKxOIQP6PxP+QFlmW/3J15u29uH/wgM7c7l/9/38682btznDrqqKOXwxX6f28FZ0AT7KG+BTALboIlmw04AsZBf8zrXXASPM0ymCdQ/BOwMeGYDeAo6ID3aQM2BIkfoCvvZszscTrHmgw4Bw4H2r/ARTAGroNlcCCgSWXCD/DCFgNugO2B9gVwDXwlXoHf4FDgmM3gji23wO5QeyLimImUc0QbYCQkGfAp1B6LOCbct2DTJLgTDAXaasJbIZF94DS4HNJ0D8zZUggNkNj+jMd3aQ5YsiUDvoGPVOSkXbi/YBS8NVEKrzIJVul9DDzOUQqfAFOmSuFLjBP0MPgA5gP9qry9D37SOt9Hf6v+u1mvvIQMSMuEnlkGfTAJWr30PKBFon3TmVDVVWCe7v3hQJbGzQlWGsBmQtXrAOMmSCiEkkxQhVHHdgOMmiB9O+zTM4AR2zMgall0dGSCJ1T8Cm14Ct8OnlDxqiCa1jEneMxizoOZjPuJtGqwQ2ILmeAxin8A9oG9dPVWNZTChU3wGMWvv9cgPamZ0rQPKGSCxyxexR9wJaaKy7sJSjLhOfhchgFx4kdjxBTdAcaZsB/c5jaAW3ySCdvALfCdqxIsS3wlSuGyxY9QaeyHsmKZw4AqilfjneLIgLLFt2LEq4/KXied6FoifjJG/COOOaApVbyuZXCGytvBioj/r/F8DQasi1ZvPsu41DV1jMfxuYCpdd6juadVZDxPqHiHdpPTtLG6mnc8V6h4beH2snhTBogRb8IAUeJ1GyBOvE4DRIrXuRfIK34XaIOD1J4DZ8GiFAOKin8HtoT6vzhrT49ZTGiUmPbtCPEO9bW5MqBR4j0/lPO10g0QO+HpMqCpSfzLnK9pjTyboeD+v8iVfwOOg00Rk6D6Nmi3qgZo2YWRwIdgh7P2Mzj1q49nJH7RqaOOOupgiH9QMiPEc9Ml8gAAAABJRU5ErkJggg=={scale="+$scale+"}>"
+!endfunction
+
+IBMEntityColoring(soccer)
+!define soccer(e_alias, e_label, e_techn) IBMEntity(e_alias, e_label, e_techn, #232F3E, soccer, soccer)
+!define soccer(e_alias, e_label, e_techn, e_descr) IBMEntity(e_alias, e_label, e_techn, e_descr, #232F3E, soccer, soccer)
+!define soccerParticipant(p_alias, p_label, p_techn) IBMParticipant(p_alias, p_label, p_techn, #232F3E, soccer, soccer)
+!define soccerParticipant(p_alias, p_label, p_techn, p_descr) IBMParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, soccer, soccer)

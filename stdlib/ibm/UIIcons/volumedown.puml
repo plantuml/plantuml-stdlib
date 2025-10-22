@@ -1,0 +1,13 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $volumedown [64x64/16z] xS61400000CXXFdRpkElMXu0001m
+
+!function $volumedownIMG($scale=1)
+!return "<img data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAAIGNIUk0AAHomAACAhAAA+gAAAIDoAAB1MAAA6mAAADqYAAAXcJy6UTwAAAAEZ0FNQQAAsY58+1GTAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAAOxAAADsQBlSsOGwAAAzlJREFUeNrtmkmMTEEYx2t6ZuzEEOFAXFxxcCEIImIdQ8YQbjIyxmQiYstMnDggxhaxi4iTGDsZQ0JExJYIbg6WxHJwlNhibf9/Xh3efGl0t1evy/veP/kdqtLd9erf9b731VfPmFSpUmlWmcfXVg32gCxoANdcDFLu6eRrwSkwAFSBSWC3i4EyHk5+PjgBKkJ9w10N5psBNeAkqIxrwIxn93x7nJP3yYDZ9p7vFvfAPhgwE5wB3UN9P7QYMB2cFZP/Ceo1GDANnAM9xOSXgeNJN2AquAB6iskz4TmW9BgwBVwUk2e2twIcTXoQZEZ3CfQSk28Ch0uxFOM0YCLoAL3F5JvBwVIForgMGA8u55j8SrC/lI+hOAwYBzpBH9G/CuwtdRLi2oCx4AroK/pX261uyVWRZ6bGADU0ojHXgl2+bEDyWQGHIpz8erDDwTxG2DjjxIBhEV1kK2hzdJvdsTWE/j4Gwbf2Ob/VUf3gOhhk/6h9LmKAlE91xFEiqVoCtoNH/2NBpBhtBvdzBFmjxQDWDTaIvjowWIsBxsaAx6F2pd1wqTGAOi/ak7UZcFO0x2gz4LloD9RmwDvRrtJmgDxLyGozQO5VXmszYLRov9FmwBzRvqfJAEb8WaKvQ5MB60zXctsrTZuhkSYorIbVpuUpwG3wadP1gIXB74jrekC2wM+zILIJHIjYgE8mOFhtCfWtAV982w4PMUHtv8XBb7fa/T//FFaD2gv9gXxWAJOKKOqCW+z+Peq6IIusT01Qfi9Y+ayA5YUkFn/RNrtMoxYPW78W88V8VkDnP6wAVmyvgn6hPtbseBTuxdmA6xjAjGwGeC/6d+Z4fCXSAOquCU6XPoh+vvjYrMEA6rZNVz+G+lhe5/lgkwYDqFsmeB1OmsAT4kYNBlCs3VXbJCZsAvOEBg0GUDfAXPBZmMBMsV6DARRr+TXCBF4Lj+GXxnkhpXxd/gV4ABaE8pEye4u8BPPE5zcmzQCK5eyHvzEhE4cBPmyHmWnWil1cedJjgBRLWHXF5vNJMIDiC5QLwTetBlB8f3hRnCb4WBLjG+SLwXdRk0jcY/BPemKCM/8JdifJmsQzkypVqlQR6xfVhYhNWNQPAAAAAABJRU5ErkJggg=={scale="+$scale+"}>"
+!endfunction
+
+IBMEntityColoring(volumedown)
+!define volumedown(e_alias, e_label, e_techn) IBMEntity(e_alias, e_label, e_techn, #232F3E, volumedown, volumedown)
+!define volumedown(e_alias, e_label, e_techn, e_descr) IBMEntity(e_alias, e_label, e_techn, e_descr, #232F3E, volumedown, volumedown)
+!define volumedownParticipant(p_alias, p_label, p_techn) IBMParticipant(p_alias, p_label, p_techn, #232F3E, volumedown, volumedown)
+!define volumedownParticipant(p_alias, p_label, p_techn, p_descr) IBMParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, volumedown, volumedown)

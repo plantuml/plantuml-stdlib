@@ -1,0 +1,13 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $databaseredis [64x64/16z] xS61400000CXXFdRpkElMXu0001m
+
+!function $databaseredisIMG($scale=1)
+!return "<img data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAAIGNIUk0AAHomAACAhAAA+gAAAIDoAAB1MAAA6mAAADqYAAAXcJy6UTwAAAAEZ0FNQQAAsY58+1GTAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAAOxAAADsQBlSsOGwAAAyZJREFUeNrtmm9ozVEYx89d/iTZ/GlSagulZBklU+QVWxQy8/eNsKTUapR3ZkIsCsUrES/kz9CQzN8s1N6hxAsSzV5dtGEmrV3f0+9Z6Xae8zv3Xt3OcZ9vfWqd5/fnnuec85znOb8pJRKJRCKRSCQSiUSiwlPiP+vPCdBgaF8F2kw3DIt5YBkoyuKHpMDHEDwW54DXYHQOz/8KHoEb4BIYCM0BuWo8qCP2gHrwxCcHFOXxXdPBA7C2UB2gNQKcA5WF6gCtUeBU6DFAT+NkzDXTaN2XG2wLwELwNFQHdIKumGseg3bwCow12FeE7ABXdYPjoNlgW5TBc4pBDc0mvS330QDcBP0+O0DrjSXJitNkcJQyuZEGe5LsRyj58tIBfUz7hJj7FoNrNPqcSkELbbHbfHVAwrIlJpiRm0e5u2sWuhV88HUbLGXafzKd14NyJosUfDco8XEGVFnqDG40KyxFVhvtLm8pjswH62mn2eSbA3Tw2sLYbjPtmy2FVS3oSGs/D5rA1Qx3lpwc0Ah6LXYdseeCJYy9n6Z5uqbQ+jeN/BpD5//eDWppVozLlwNyUQuTSFUxQfMuldU2faGlscH3WuAW2M/YZjPt7Y7PTvoWA9J1GuwAg4x9KtP+OdRUeEj3wWGHaVwcSi3QasjwhoONzBo+6dD5oBywiwli+ghsqaG9mdZ+XL6eyrcD/nUQPMi0zwErHe7/FroDntE5gGJmQdx3iN7QHaB1gGmvpMzQpncZ1hOuhVdeHfBQRSdGJu2N+ZEvmfZlju+e5Es1yMWCWWC15b5OJhDqs4Eah6qz2hcH6ELnRRazoIviiGlqX7Z0sJyqRG/K4RTNglaDrYIKmyvMvWdVdGKcrhKqCe6p6CzwB5hIO0wd5SFeZYLXVXQeOMNgGypfTSmxLm8bLHVBNTMT9AHsHRV9fvOiGNKdO8TYZir+E9kgnSF8z/B9+1R0yqR8cYDWRfCesTVZ3v8cLAc9ju85RoWW8s0BA1QEmaSXxjrLvR10zQXwi7nmE9gOdmb7A0P5D5ExtA2W0d89NLN0UPytRCKRSCQSiUQikUgkEmWiP5NMjYO6HLUMAAAAAElFTkSuQmCC{scale="+$scale+"}>"
+!endfunction
+
+IBMEntityColoring(databaseredis)
+!define databaseredis(e_alias, e_label, e_techn) IBMEntity(e_alias, e_label, e_techn, #232F3E, databaseredis, databaseredis)
+!define databaseredis(e_alias, e_label, e_techn, e_descr) IBMEntity(e_alias, e_label, e_techn, e_descr, #232F3E, databaseredis, databaseredis)
+!define databaseredisParticipant(p_alias, p_label, p_techn) IBMParticipant(p_alias, p_label, p_techn, #232F3E, databaseredis, databaseredis)
+!define databaseredisParticipant(p_alias, p_label, p_techn, p_descr) IBMParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, databaseredis, databaseredis)

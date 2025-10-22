@@ -1,0 +1,13 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $dewpointfilled [64x64/16z] xS61400000CXXFdRpkElMXu0001m
+
+!function $dewpointfilledIMG($scale=1)
+!return "<img data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAAIGNIUk0AAHomAACAhAAA+gAAAIDoAAB1MAAA6mAAADqYAAAXcJy6UTwAAAAEZ0FNQQAAsY58+1GTAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAAOxAAADsQBlSsOGwAAA2BJREFUeNrtmz1oFEEUx0fPSzSK6DXR05OkOi8mRjw9Qj6RQ8EvLCwEsTw1cJUW2mtnoYWKFlYiBguLBL+IiqSWFIKXSpvooaAkBAs1xo//sO9gWW93Z8+d2ZlzH/zgdubN29n/7czOW2YZiy222P5nW6b4fIfATfo9Ch40EGMbKIF9YAuVzYJJcAtUdBWAn6sKNtLxB7AJ/BZsnwRXSLiEi89PEvgM+CESdLlCAXpsF8/od49g2xbwGJQ9Lp5RXZl8W3QTYESwrJ5dBsUA5ypSG19boVCAYZeyqwJjftRR9g6cBy/oeA+4BDbbfHibG35zgso7YEiwzGklx23/HuwAY+AjwX/3Up19OJR0GQJZ0F6nvJ3qvGyv4/gcmKvjN0d1Xm0jE2C4wTpme9TVbMrDd8qnbWQCDDVYJ91MEGA2wJNjxKdtJAJkQIdHfQf5uNlTxzGf7VN1/FJUZ7dJv84lFAhwEBz18XkJXrvU8Zn9tO3PWguO0+z/GawBh8F9h5B8VXgKfIp6HTAo6DPmUleh5W3ZcVfd9YnpuwZQNQQGQ/A5C54HOOczahP5JLgOdAv4dZOvmy2C/eA63drMIxm6Bg6IJkOy5wC+RD0hmCnyZ/gbD59f4BGN9UWaC1aB7+AtuANOgtvkK2Sy54CBgL5PBPwqlO4asQ4YkORrxEKIv8AoBPAvKM5OpQvAM7a2AP6rqU3TCNAvecg0pQD9zSRAn6I2WgqQFsnFXXL/dDMI0BdR21iAWAANBOALoPw/tM9TDGMF2B5wAeS0NophrAAFTWJEJsBuTWLEAkQhAE9ociHEyVEs4wTg2VwYb5kSqjLDsAXYqWksZQLkNY2lTIBeTWMpESAZ0gRonwiTJgmwFbSGGK+VYhojQJeE/nWZJEBOQv9yJgmQldC/rEkCdEroX6dJAmQk9C9jkgApCf1LmSTAkoT+LZkkQFVC/6omCTAjoX8zJgkwIaF/EyYJMA4WQoy3QDGlWphbZL4xa6tLMaR4F9jfewS1T4f5Fx3TIcSZpljMpDug9th6CI4xaxNTozM/v4vmTRSA2xdwj1n7dtMN/PNFFY8/mQLURODb1b6CXWClwIR3kVnb3OaZQlPx1dh6cIRZn8zx11wbqJzv9X3FrE/nxlVfeGyxxRYbtz8ic3ykCwdrQgAAAABJRU5ErkJggg=={scale="+$scale+"}>"
+!endfunction
+
+IBMEntityColoring(dewpointfilled)
+!define dewpointfilled(e_alias, e_label, e_techn) IBMEntity(e_alias, e_label, e_techn, #232F3E, dewpointfilled, dewpointfilled)
+!define dewpointfilled(e_alias, e_label, e_techn, e_descr) IBMEntity(e_alias, e_label, e_techn, e_descr, #232F3E, dewpointfilled, dewpointfilled)
+!define dewpointfilledParticipant(p_alias, p_label, p_techn) IBMParticipant(p_alias, p_label, p_techn, #232F3E, dewpointfilled, dewpointfilled)
+!define dewpointfilledParticipant(p_alias, p_label, p_techn, p_descr) IBMParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, dewpointfilled, dewpointfilled)

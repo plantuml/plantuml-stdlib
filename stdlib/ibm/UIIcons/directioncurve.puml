@@ -1,0 +1,13 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $directioncurve [64x64/16z] xS61400000CXXFdRpkElMXu0001m
+
+!function $directioncurveIMG($scale=1)
+!return "<img data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAAIGNIUk0AAHomAACAhAAA+gAAAIDoAAB1MAAA6mAAADqYAAAXcJy6UTwAAAAEZ0FNQQAAsY58+1GTAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAAOxAAADsQBlSsOGwAAAaJJREFUeNrtmL1KA1EQhZd7AypYCIrYWfgE+gRqE2sbQbS1E2ysXctgI9jZKoJNait/ym30CSzsRBQUBBVEPAsbWK4rKbI7d8icA6eYybKb8+WSzCRJKIqiKIqi4mqvsLi8kvApvFjUN5YA9ML3JA7BKwofBYJXFl4cglcYXhSCVxpeDIKPHP4NHu3TaxSCixy+XXFtu3itrLSpOcFFDp9VXJ9JQnDKwotDcArDi0JwSsOLQXCKw4tAkPgSHCR8PwgqT8B+6QTUEf4/CGnxrIHUauhTz9/YJ3xdU/gQQj4cdeq4YavBo99p6L5ZnVClJkG1IgACiKuRoP6yBmAuqJ+sAVgN6jtLAGbgnaB3YQVAPn+cwZOl3it8YgXAAbxUsdy8WwCwUXH0L+EjCz+DC/Bx0HuA1+CfYQcwBXfhsVLvo/gleB72QSh/zjk8G/S34FsLk+A2vBz0DuFTC6PwePL3L7IreNfKLrAJT5TqF3gd/rYCYKXi6D9a2gbng7prbR2eDup7awCi7/ya12ECIAACIAACIAACIAACoCiKoiiKktYvq2VixI3b8PgAAAAASUVORK5CYII={scale="+$scale+"}>"
+!endfunction
+
+IBMEntityColoring(directioncurve)
+!define directioncurve(e_alias, e_label, e_techn) IBMEntity(e_alias, e_label, e_techn, #232F3E, directioncurve, directioncurve)
+!define directioncurve(e_alias, e_label, e_techn, e_descr) IBMEntity(e_alias, e_label, e_techn, e_descr, #232F3E, directioncurve, directioncurve)
+!define directioncurveParticipant(p_alias, p_label, p_techn) IBMParticipant(p_alias, p_label, p_techn, #232F3E, directioncurve, directioncurve)
+!define directioncurveParticipant(p_alias, p_label, p_techn, p_descr) IBMParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, directioncurve, directioncurve)

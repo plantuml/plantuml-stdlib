@@ -1,0 +1,13 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $datacategorical [64x64/16z] xS61400000CXXFdRpkElMXu0001m
+
+!function $datacategoricalIMG($scale=1)
+!return "<img data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAAIGNIUk0AAHomAACAhAAA+gAAAIDoAAB1MAAA6mAAADqYAAAXcJy6UTwAAAAEZ0FNQQAAsY58+1GTAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAAOxAAADsQBlSsOGwAAA2pJREFUeNrtWs9rE0EYnTaht7Z68kdNLh4UPOQf8FaLWJUcvIhS0PoDSzSCgseqPQoqtg0VjVUQvRe1IrUne/EieFBRULD+KB48tOJFGuMb/ALjuJPd2ezOTpJ58Gjny86XmZeZl/1mw5iDg0M7oyPB994B3qT/j4FPkxhEKqHJrwOfgevBNWAevA3+ND2QzoQEuAT2Cu1eirF2EGA7OOQRH6LXWloAvuUmFd7TQa+lWtkDToGHhHZVMmPuCd/B5624ArjxjUmxu0QRY3RtywkgG98yeI64nJQhmhLAy/hGwW/E0aQM0YQAXsb3EiwJ7RLFjBuiCQEKYE4yvpNgRYhVKFYVYjnq29QCqIxvwePahSQMMW4BVMangnFDjFOAesangnFDjEuAIManglFDjEuAIManglFDjEMAHeNTwZghxiGArvElaohRCxDG+BI1xCgFaMT4EjPEKM8Ei+A1Q7XFaXDcthVQNFhZFm31gKZDlDcXr8mg1sY85g/gCfrr4ODg4ODg4GCsFtgE7gUHwS3gBoovgW/BWfAB+LmBMe0Cb9B7RQk+puPg4zAC8IleBA+DaZ9rV9nfZ/3nSRhdLIKZmD7wT2BWDKQDdNoD3ge7A74Jz8l/8bEfPAA+1BxkJsYVn9Ethvg53IzG5EV0U9+CzR6Q9vnkxz1EegWWwSe0pGrK7gSPgtskgXmOjyFWQlRnFtUwAvA9f0+a/C/wDHid/X+6+4Y4QZXaFbBLEIHn2hrSE2KFagtcAHukyXPnL7H6R9sVumaQ+tTQQzlZMwjQBw5LsbPgvEbeeeojYphyWy9AXtoafM9Phcg9RX3F7ZZvBgF2S+0yC/ZEx2s7lH1yWynAZqk910D+OZ/cVgqw0ePOLCwWfXJb+y3QNvAS4KvUzjaQP+uT20oB3kvtgQbyD/jktlKAR1Kb396GeX6Qor71clspwAyVtDXwe/uRELlHpLpglXJbL8AXcFqKXQb7NfL2Ux8R05S7aWqBFaHNC5tZKm1TPsu+QNd2CfEVW2sBVTXIq7aDtGQ7BREmaWkHLYc5flOuJRsF8Ku1C4ozgaDgky8yvR9JVE3O2e9IrESHGTpHYjX8YOGOxIwiyNfbO/AO1fS5AKuBu/0tcB/4IsSYjrB/f2QVJfiWvaqzBWS03LG4g4NDe+MPFVm6D8eUtqgAAAAASUVORK5CYII={scale="+$scale+"}>"
+!endfunction
+
+IBMEntityColoring(datacategorical)
+!define datacategorical(e_alias, e_label, e_techn) IBMEntity(e_alias, e_label, e_techn, #232F3E, datacategorical, datacategorical)
+!define datacategorical(e_alias, e_label, e_techn, e_descr) IBMEntity(e_alias, e_label, e_techn, e_descr, #232F3E, datacategorical, datacategorical)
+!define datacategoricalParticipant(p_alias, p_label, p_techn) IBMParticipant(p_alias, p_label, p_techn, #232F3E, datacategorical, datacategorical)
+!define datacategoricalParticipant(p_alias, p_label, p_techn, p_descr) IBMParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, datacategorical, datacategorical)

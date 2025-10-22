@@ -1,0 +1,13 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $simcard [64x64/16z] xS61400000CXXFdRpkElMXu0001m
+
+!function $simcardIMG($scale=1)
+!return "<img data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAAIGNIUk0AAHomAACAhAAA+gAAAIDoAAB1MAAA6mAAADqYAAAXcJy6UTwAAAAEZ0FNQQAAsY58+1GTAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAAOxAAADsQBlSsOGwAAAexJREFUeNrtWrFKA0EQ3dMUglhpoaL/oJWVcJWtYqeFjeAnKAg2CkL8AwsbC+1EK0EQrrUx/kNiYpNGErCLs2QLXfc2m2Pdvdt9D16R4XK5ebfzZnJ7jAEAAAAAAABxIsmJLxEviClxoeI5dogZ8ZDYMhGAJ/9GnA3sZneJK7IIE4oD6wEmz0ROdTmoEiANuOT/5FZTHLRo6BNVwUCTm3IFRAUIELsAtYLf8zEnaPu5SwF8zQlc6B3ihqqfuywB33OCsp+7FKAMc0LqswRszwkDw/Np+zm6AASAAE7nAF0Ny+Dt6oD4aOl8lVsBfG64jL0EluEBAXtAYrmWE5fegDYIAeAB/z4H+D4fVgAEgACYA6JdAWvS515MAvD/H/dS7DUWAaaJD8R5qYRObXhAm/1+JmdamzaPa4/wkGviqhQ/Jz7bWAFZCe6w7hrOiNtS7I54YssEj9jwZQNf6IprUGGXeCzFGsS9vJVVRAD+iIvvzNyy4XaVK3TEb+btCnHHv5La6Adxk9i3PQe0hNplc/ypH7Ev4haxGfockOf4+8SX0AchnePfxDAJjuX4pnP3O7O49+YY3PHXdaZnsgKyiiY/0vFNBfDd54ugJ5JvjvvFSUXsUxgIfyNjjjhT8sSfREtuMAAAAAAAAAAwxjf1uVbbsmSBewAAAABJRU5ErkJggg=={scale="+$scale+"}>"
+!endfunction
+
+IBMEntityColoring(simcard)
+!define simcard(e_alias, e_label, e_techn) IBMEntity(e_alias, e_label, e_techn, #232F3E, simcard, simcard)
+!define simcard(e_alias, e_label, e_techn, e_descr) IBMEntity(e_alias, e_label, e_techn, e_descr, #232F3E, simcard, simcard)
+!define simcardParticipant(p_alias, p_label, p_techn) IBMParticipant(p_alias, p_label, p_techn, #232F3E, simcard, simcard)
+!define simcardParticipant(p_alias, p_label, p_techn, p_descr) IBMParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, simcard, simcard)

@@ -1,0 +1,13 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $shoppingcartminus [64x64/16z] xS61400000CXXFdRpkElMXu0001m
+
+!function $shoppingcartminusIMG($scale=1)
+!return "<img data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAAIGNIUk0AAHomAACAhAAA+gAAAIDoAAB1MAAA6mAAADqYAAAXcJy6UTwAAAAEZ0FNQQAAsY58+1GTAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAAOxAAADsQBlSsOGwAAAkZJREFUeNrtmzFLAzEUx9+dnQXFRXQSB9FB0KF1UnBxF9wdRD9B/Qz2K7g4Ce6Kq061QgUXQbGdFDcFcZX6Qq9whGubpC81L8kf/kPuTpP+mvx9TSpAVFRUyErQnSHPvKMP0Vc+AkgVnplDn2awggQgNIteCBmA0LqvGdBPJ+hqrl1DH4c0A5ohzAAdAGs+BuEgAG30V6495WMQlgbcE/XBA3pbWgYtzT46xGNOxjUDgsiBkscArtE7ufY++mzUGcAlCMUYy9K1uskM6AXhlBSErf9as4payo1Z6BP9YpIBvSDktgwqUvuuXxirlMIcc2CjAACEDKBOCcD1IJxEL+fav+j7UQBwqwjL0ut6Qn+PAoBbECpPf539AE45UFENQB8BJAUArMwAV4OwqAB6pgDAJQjld78x7NOoKgAuQagVgDoAuOSAVgD6BkAUQCtSAdSwCcC1INQqgEwAuB6E2tNfZT+gKAjze4SvDhdEdZWHUs1f2gQ+ChrAx7ACyGQJcAEgjvOPQHE7XheAvEcotAj6ZwXOSHcJcN0jJAPA7aNxBDAOAKxPjU0AeHVqbALAqyBMDX/OmxwwXbt76AsfXhPVDIDQlkA7q7eDBSCC8CCru6OioqLYiqqGn4fud4m3svYNdL9n/GZp3GT9JUSDeURPS9fFudyqBQik/aUEA6oVDAayazUL7z5pfxQANg3vOdFfCoGLAsCt4T0n+qMAUM0CCApCqWoBAGl/EwQDEgeQ59D9x6oZ9A/6Er1r6c/guPuLioryWH/4ZoOUX1Ah9AAAAABJRU5ErkJggg=={scale="+$scale+"}>"
+!endfunction
+
+IBMEntityColoring(shoppingcartminus)
+!define shoppingcartminus(e_alias, e_label, e_techn) IBMEntity(e_alias, e_label, e_techn, #232F3E, shoppingcartminus, shoppingcartminus)
+!define shoppingcartminus(e_alias, e_label, e_techn, e_descr) IBMEntity(e_alias, e_label, e_techn, e_descr, #232F3E, shoppingcartminus, shoppingcartminus)
+!define shoppingcartminusParticipant(p_alias, p_label, p_techn) IBMParticipant(p_alias, p_label, p_techn, #232F3E, shoppingcartminus, shoppingcartminus)
+!define shoppingcartminusParticipant(p_alias, p_label, p_techn, p_descr) IBMParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, shoppingcartminus, shoppingcartminus)

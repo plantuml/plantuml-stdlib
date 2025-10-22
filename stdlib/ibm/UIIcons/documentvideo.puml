@@ -1,0 +1,13 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $documentvideo [64x64/16z] xS61400000CXXFdRpkElMXu0001m
+
+!function $documentvideoIMG($scale=1)
+!return "<img data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAAIGNIUk0AAHomAACAhAAA+gAAAIDoAAB1MAAA6mAAADqYAAAXcJy6UTwAAAAEZ0FNQQAAsY58+1GTAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAAOxAAADsQBlSsOGwAAAiZJREFUeNrtm71OAkEUhQf86bTBQtB30MLEaIWNjZUmhhhq8Q20ttRWC9RajYkJlbVU2lhoYuEDCFRUdlrgmTgkZMOCu8zPHeae5CSQZWd3vtyZnTvcFYLFYoWsTMrzFuBTeAPOa76nBnwAP9gAMJGy82/wKjxj4J5m4V34Hf6gCKCqOm/6vnZsQMimOKdoaXhOwXfwtsmLTKY4p6BpHumqE/n+ozrfC6EE16hEgGmVFAQrkUARQM0mBIoArEKgCsAaBMoArECgDsA4BB8AGIXgCwBjEHwCYASCbwCGQdgKAcAgCFUbuYBuNSP5RWeEthZ9jIC6y4tTAHAIt0MGILfAluAbuGX74hTmgC6Esqb9hCCeAkFkgwyAATCAcJ4CoyjDEcAAGAADYACePQVk3i7rC4pi9PqClkqpZVb56QMA2flXOKepPQlwD96El5NCcDEETjR2vlc51XacpuELCgCKDtqWUfIIVygMAZP1BYU+x9fg+5hjY7EUHqR9+FyFvwgJgOzwWb+QDwFAXoX8eijZYFQvceM9lJVgIcmPORcYwz41QwMQ/V9gBX4KOQJkciSLuC9DngO+xV/FeUV9DnYSvFL5QZPSOkBnPcB/JsBnNS/0XRy5iIC6g7Zj5wUXAI6EmXqAtmp72LzgHIDcsZE7N7dCTz1AS7WVeDcobS7eSLjczAjCyhIbw14AcFrTo1tpXpr6gq/heXhODH9z7FiwWCwWUf0Cg1poS8tg1UkAAAAASUVORK5CYII={scale="+$scale+"}>"
+!endfunction
+
+IBMEntityColoring(documentvideo)
+!define documentvideo(e_alias, e_label, e_techn) IBMEntity(e_alias, e_label, e_techn, #232F3E, documentvideo, documentvideo)
+!define documentvideo(e_alias, e_label, e_techn, e_descr) IBMEntity(e_alias, e_label, e_techn, e_descr, #232F3E, documentvideo, documentvideo)
+!define documentvideoParticipant(p_alias, p_label, p_techn) IBMParticipant(p_alias, p_label, p_techn, #232F3E, documentvideo, documentvideo)
+!define documentvideoParticipant(p_alias, p_label, p_techn, p_descr) IBMParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, documentvideo, documentvideo)

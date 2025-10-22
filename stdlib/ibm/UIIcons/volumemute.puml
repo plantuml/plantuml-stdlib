@@ -1,0 +1,13 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $volumemute [64x64/16z] xS61400000CXXFdRpkElMXu0001m
+
+!function $volumemuteIMG($scale=1)
+!return "<img data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAAIGNIUk0AAHomAACAhAAA+gAAAIDoAAB1MAAA6mAAADqYAAAXcJy6UTwAAAAEZ0FNQQAAsY58+1GTAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAAOxAAADsQBlSsOGwAAA0xJREFUeNrtm8lrFEEUxiudcd/QkwfFf0NRERFxw2XQRBzwIJGoIYioBDzqJcG4IeIGIiJETKODhhgFRUREDyLevKgg8eDdJbiM8Xt0Bcqie6Z6Ut1V3dUPfpdipru/b6qqX72qYayIIopwOVosepbN4DwYB53gcRo3bbVE/HbggwVgPlgFzqVxY88C8WVwC5SEtiVp3dy0AVvBbTDF1AN4hsf8oEnxJg3YxMf8VNPjz4QBG8AdME1oq7liwDpwVxL/F3S4YMBaUAXTJfF7wY28G7AG3AMzJPGU8FzP+xywGtyXxFO2dwBcy/skSBndEJgpie8CV21IQZM0YCUYBrMk8d3gsi0LkKQMWA4ehIg/CC7atBpMwoBlYATMltoPgQu2LYd1G7AUPARzpPbDfKlrXZQiMjWaoBZpusdRcNbWgkhYD7iiUXwPOM0sjjADFmu69jHQr/l5qYAzANqa+G4b/25royEw2fgCToBLCYlvFwzwY4ov8etUJhZgKgbYUje8ycVPPPeAogmieMavUeMmWFESUw1aSP2Rem+j4SCLZ/waVdMFkWbC57+aqglR4itir8mSAXFMUBKf1CSYhglMEijOCUxVfFYNUDFBSXyWDahnAlMVn8U5QGVOUBafBwOsLoikEWGzfZw8IdMGRL3qYiVLXs7EV2ImS5l8C6gmOVGvSD/LPUBVvHLa7OVQfCwTsmRAOU6G18CEcpw5YNySgshuXsxoV01yIjLGQX6txCbBhSyo/c8DfRqvWxMqOdUY1SDRhDIXX6tnwCjTUxfs5TfqT8CEZtNmXyUP2Ac+a3rgk+CIzRNLWA8YmUQPoI2RR2Cu0HaKBVvhVu4N6H4LvALrwVep/QwL9gWdWAy9ZMHu0jepnQ4+druyGnwBNoLvQhuV12l/sMuV5fBzFhyHk02gHeL9rtQDnrHgQOQPyQTKEzpdKYg8BVvAmGQCZYodLhhA8YQF54LHpHvTNvwekwakeVz+I3gNdgj5RwsfIp/ANunzx/NmAMUH8CbCBM+EASaWw5Rp0h8kfhr8IYwXRIZ5UeKXK5NgWAzxtf1vVw2goPPDO02aYENJjIobu9j/ZavRPL4G68U78Bas4CtJqkm8Z0UUUUQRCcc/WZ+95YHeroIAAAAASUVORK5CYII={scale="+$scale+"}>"
+!endfunction
+
+IBMEntityColoring(volumemute)
+!define volumemute(e_alias, e_label, e_techn) IBMEntity(e_alias, e_label, e_techn, #232F3E, volumemute, volumemute)
+!define volumemute(e_alias, e_label, e_techn, e_descr) IBMEntity(e_alias, e_label, e_techn, e_descr, #232F3E, volumemute, volumemute)
+!define volumemuteParticipant(p_alias, p_label, p_techn) IBMParticipant(p_alias, p_label, p_techn, #232F3E, volumemute, volumemute)
+!define volumemuteParticipant(p_alias, p_label, p_techn, p_descr) IBMParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, volumemute, volumemute)

@@ -1,0 +1,13 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $baggageclaim [64x64/16z] xS61400000CXXFdRpkElMXu0001m
+
+!function $baggageclaimIMG($scale=1)
+!return "<img data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAAIGNIUk0AAHomAACAhAAA+gAAAIDoAAB1MAAA6mAAADqYAAAXcJy6UTwAAAAEZ0FNQQAAsY58+1GTAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAAOxAAADsQBlSsOGwAAAcpJREFUeNrtWjtOw0AQHcAtDaHBoaVNKCmQsCjgABSIi0BDmcY5CAU1BzCioYSaNoEqLrhAmFUWiaCNP2trvZ59T3qNdyxnXnY+O1oiAAAAAABCxdaG50NmyjxnHvTMpy/mC/Oe+WEjwBHzlbnX8z83Z46Y8yKjbcOziQDnSfswLTMyCXAqKMSTMoPI8CyumCd+sfTYPrbZAUEBAkAACAABIAAEgAAQAAKEisijGUQn9ggBCIAc4BUOaTXFSah8FqlmfxnzljmTIIBy/o05qGivBLphXjCPbUXwKQTSGs7/xUC/2/sckHTxrk8h0GQWGUvYASiDEEBwH1CnvptivIl9Yb8QOXK+Tn1vG4X9gosQSDt0vrRfcCFA4lHIJ1VC4PNfXV02/Gjd+t42CvsF0w7IQi+DKlvmIQugblScMB91CQmyD1B3a67RCUIACICzgKGXJ2phFtcnAZTz77R+dU711pfMcd9FqBICUzLfG6x0D0+CAGeWa0iCUgR4tlwTI8Cms0Gu18RXgZnO9iLLoIuz+ZwazO1bhpp1DF0nQZ/mC1kXVeCOufDA+YX+LWvYcfDhb+YDraaz+8xdx46rmcYT80pCzgIAoF38AIJ9RWjrvDROAAAAAElFTkSuQmCC{scale="+$scale+"}>"
+!endfunction
+
+IBMEntityColoring(baggageclaim)
+!define baggageclaim(e_alias, e_label, e_techn) IBMEntity(e_alias, e_label, e_techn, #232F3E, baggageclaim, baggageclaim)
+!define baggageclaim(e_alias, e_label, e_techn, e_descr) IBMEntity(e_alias, e_label, e_techn, e_descr, #232F3E, baggageclaim, baggageclaim)
+!define baggageclaimParticipant(p_alias, p_label, p_techn) IBMParticipant(p_alias, p_label, p_techn, #232F3E, baggageclaim, baggageclaim)
+!define baggageclaimParticipant(p_alias, p_label, p_techn, p_descr) IBMParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, baggageclaim, baggageclaim)

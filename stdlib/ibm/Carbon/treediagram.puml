@@ -1,0 +1,13 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $treediagram [64x64/16z] xS61400000CXXFdRpkElMXu0001m
+
+!function $treediagramIMG($scale=1)
+!return "<img data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAAIGNIUk0AAHomAACAhAAA+gAAAIDoAAB1MAAA6mAAADqYAAAXcJy6UTwAAAAEZ0FNQQAAsY58+1GTAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAAOxAAADsQBlSsOGwAAA+xJREFUeNrtm0tIVGEUxz+zjFoURVaLokgJiUgriiBaRi20srLAHotaZgUFVlKrZKKo6LWtRZE9YQyFpKJNm7BF9hIXFklB9KAwwtIY63/wCJfBufPdO+e738znHPghOuc7d+5/7uOc/1yVykc+RnUUZNn7WQ6qwTz+/R2Ig3bXBSgGV0Al+Ale8N/LwSTQCnaBry4KMA08BVPBAdAEBvi1cWAbOAu+gxXgm+TGC7NAgFtgPlgJHoGE57VB0AHugT1gKbghufExlnd+GR/2B0GXT14X51TyGmcEoAteLx/26aKJc6tdEqAUvPac834xwLmlLgmQiGhN1grwFiwERRq5RZzb7ZIAd8BkUKuRW8u5d10SgBqeZnAGlPnklXFOs6dJcqYPeAy2gn3gM+j0nOfUCO0Et7kL3Aj6XG2F34OJKVph2um5JlrhsVkiwFre+f1gBu8sxRM+Ks5zzjUXBRgPjoOH4EKKHOoAG/mi+celiyDFXjAbHPLJqQezOFe5JMAU0MBt7nOfPBqIroMjPDU6I0ADn/tHNXKPgQm8xgkB5oA6cAn0aOT3cG4dr815AejC9xvEAqyJ8S2xMdcFqFBDTs8JNeT06MYPFoHa4sW5LMAp8BFcDLGW1nwAJ3OhD/C6vAU8/X0Cq7nFDXNP7+cL4lVunGaCEvBPhXCRTQmQyuVd42lt2zKo38Y1ziXVp27xsArgIpuYBXRd3i9gVYj+vphb5OlKwEU2MQ3qurzU1S3i/CBBDdECJeQiS18Eg7q8G3ji041yXiPmIksLEMbl3Rygfo0SdpGlBTDt8pZI15cWIKHMhvg1S1oA0y5vt3R9aQFMu7zxEPXjUQpg2uV9BloC1G/hNZH2AX4uLx2WO1RmLi9ZZ9t5LKb6b/j+P9wIDbvINDhVpatvyhU27fJS/cu8gyPVp09+t059U98LbAJbeFjpZKF7+dOjc34deAVehqzfxx3effCLP3n6+YAboNO6R5aJYShKl7ddZfj8kAk/YNjlrffJMeby2hbA6/J2+OQZc3ltC0A7T86tNZfXpgBZ4fLaFIAuatZdXlsCVHDrGeMGRDfEXV5bApDLS06tdZc3aATtA9K5vP0h3oOoy2tKANsur3ZrGzR0ZoFkl5fu3389w4e0y5uqvrVnhZNd3kHPa8kuLw0jNwO+h2SXN1V9cnmXqIifFQ7q8q5XZl3eKhXxs8JhXN6aANsXd3mlBQjj8pYE2L64y5sN02ChoVwrjZC4Cxtx/YwFEHdhI66fsQDkqNJXzboubKtK48KOUF/U5TVxvoq6sBbqZ9wJ+rXCUv/WJubymhJgpGFIGRhWIv/HyXzkY5THf9cbaWcmwCFuAAAAAElFTkSuQmCC{scale="+$scale+"}>"
+!endfunction
+
+IBMEntityColoring(treediagram)
+!define treediagram(e_alias, e_label, e_techn) IBMEntity(e_alias, e_label, e_techn, #232F3E, treediagram, treediagram)
+!define treediagram(e_alias, e_label, e_techn, e_descr) IBMEntity(e_alias, e_label, e_techn, e_descr, #232F3E, treediagram, treediagram)
+!define treediagramParticipant(p_alias, p_label, p_techn) IBMParticipant(p_alias, p_label, p_techn, #232F3E, treediagram, treediagram)
+!define treediagramParticipant(p_alias, p_label, p_techn, p_descr) IBMParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, treediagram, treediagram)

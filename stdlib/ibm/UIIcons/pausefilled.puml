@@ -1,0 +1,13 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $pausefilled [64x64/16z] xS61400000CXXFdRpkElMXu0001m
+
+!function $pausefilledIMG($scale=1)
+!return "<img data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAAIGNIUk0AAHomAACAhAAA+gAAAIDoAAB1MAAA6mAAADqYAAAXcJy6UTwAAAAEZ0FNQQAAsY58+1GTAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAAOxAAADsQBlSsOGwAAAOlJREFUeNrtmrENwjAQRQ3UNIiGiB0YIezALgzhQZiAAZIR2AGFzgUT8C1SBSm4uEuEeE/6lb/urFdfCAAAAAAA8I8sjObslagcld3g7aE0ylm5zzTPVUD+7E3ZfOkl5VDwaet5oywNBMSCz4a+E2eY5y6gNu7WTrvdBFTG3cppt5uAnwYBCEAAAhCAAAQgAAEIQAACEIAABCAAAQhAAAIQgAAEIAABCEAAAhCAgDI6427ntNtNQGvcbZ12uwnI11qpoJf67tTzRlkZCHgql/A+Z9sq68F7Pmu7KqdQdtFlPQ8AAAAAAOCDF30HJ5hailPQAAAAAElFTkSuQmCC{scale="+$scale+"}>"
+!endfunction
+
+IBMEntityColoring(pausefilled)
+!define pausefilled(e_alias, e_label, e_techn) IBMEntity(e_alias, e_label, e_techn, #232F3E, pausefilled, pausefilled)
+!define pausefilled(e_alias, e_label, e_techn, e_descr) IBMEntity(e_alias, e_label, e_techn, e_descr, #232F3E, pausefilled, pausefilled)
+!define pausefilledParticipant(p_alias, p_label, p_techn) IBMParticipant(p_alias, p_label, p_techn, #232F3E, pausefilled, pausefilled)
+!define pausefilledParticipant(p_alias, p_label, p_techn, p_descr) IBMParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, pausefilled, pausefilled)

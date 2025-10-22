@@ -1,0 +1,13 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $identification [64x64/16z] xS61400000CXXFdRpkElMXu0001m
+
+!function $identificationIMG($scale=1)
+!return "<img data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAAIGNIUk0AAHomAACAhAAA+gAAAIDoAAB1MAAA6mAAADqYAAAXcJy6UTwAAAAEZ0FNQQAAsY58+1GTAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAAOxAAADsQBlSsOGwAAAntJREFUeNrtmjFLHEEUx1djroqNWJh4WosKWtqpSATFzkpJFU5PUAstzGfwCm0CUZJav0CIqIi5b6CgX8AzmiqFWCly/h8+YZyMt3vrys7Mvj/8ipmbGe69ezP73twGgUgkEolEoqyq4Zn+PCiBIfDecRsvwW+wAs6jOICMPwYtnv3Y/0Cf7oRGw8CSh8YHbFNJ7zQ5YNDjLf+fbU2GQR8inhOuqFrDNmMEZEriAHGAOCDbarLwO/WAAhgFndx3BvbAD3DqqwPegnUwB95on3Uzi2ADLIHbtBxQTbjuIOXALzASsgY5Zh50gXFw48sZsBbBeFUjPMeLLdDDYa+qAr6AQ24Pg1XQoYyhOd9eeibYEAEFbc9TtdYPtsFfZpv7zrXtUEgjApKuDT5q7RUuXU3lLH22VWOukxHQqbXLNcaWQ+ZKIuSiA87quI8YDJlrRR5Q7xmxz0+CR9Gtza7hHDDd6Oz7EAGU3t4pbbqTPAJToI2Z4r68Mu6O5zqfB5xyejuv9HVop71JG0nUBbYcgsvgoI7xBzwnlUzwNe4IKacfq1EMqWGfejH0WiKDFji9zWQ5rJ4JS1nKA1JVmhFAdwBFMA16wbs651+DE35abMa9G0jLAe3gJ1d4cUUOG2A+gwnwx4UtkEvAeF39vGbOBQfMJmy86oRZF7bAJ629A2ZihC9to++cP6hrf7U9Arq1djHO3uU5xZC1rXRAs9auvGCtSsjakgeIA8QB9j0FGmxaT7aAOEAcIA6Qp4Cmi+Dp+3RVj+y9iBIBZY9/8HIUBzz376zrevx3+YlM189XwcM1E70m3xqnwLBM9Lo8XZZMBobX5UUikUgkEmVX9x2gaTBD8ctzAAAAAElFTkSuQmCC{scale="+$scale+"}>"
+!endfunction
+
+IBMEntityColoring(identification)
+!define identification(e_alias, e_label, e_techn) IBMEntity(e_alias, e_label, e_techn, #232F3E, identification, identification)
+!define identification(e_alias, e_label, e_techn, e_descr) IBMEntity(e_alias, e_label, e_techn, e_descr, #232F3E, identification, identification)
+!define identificationParticipant(p_alias, p_label, p_techn) IBMParticipant(p_alias, p_label, p_techn, #232F3E, identification, identification)
+!define identificationParticipant(p_alias, p_label, p_techn, p_descr) IBMParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, identification, identification)

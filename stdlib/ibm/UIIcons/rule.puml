@@ -1,0 +1,13 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $rule [64x64/16z] xS61400000CXXFdRpkElMXu0001m
+
+!function $ruleIMG($scale=1)
+!return "<img data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAAIGNIUk0AAHomAACAhAAA+gAAAIDoAAB1MAAA6mAAADqYAAAXcJy6UTwAAAAEZ0FNQQAAsY58+1GTAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAAOxAAADsQBlSsOGwAAAwRJREFUeNrtmk9IVEEcx99rN9AIIitBCYMOUQchIRMC0TqEEELRn1MXOxRJ5M0Kyk0KRPFi1KVDXTxEIiwIeSipiCIoo0OnoIuFQRRKRl0W7Dv4E4bh7Zt5s/N2Z/X3hQ/rm7c7+/t9d37zZp4vCFgs1npWaPi+nWAEdIIGz3P6Dl6AfvDNhQEi+Y9gW5X9uL/Afp0JGww6Gq7C5AOKeVj3JhMDOqu4xLWxZw06abScNyql5ZjYrUbAmhYbwAawAWwAG8AGsAFsABuwXpVNoc/llGMOeQSwAWyA13NAyCOADWAD2AA2gA1gA3gvwHuBNVIC/5TjGo/zqdHEbmXAgnJc57EBdZrYreYA0Yn8P7Z6MO/pXqA+qQEmI+CLctzi8Qho0cRuZcA75bjVYwNaNbE7MeCYp1vekGJzbsArsCQdN4F2Dw1op9hWtUSxl2zAX5BX2i56aIAaU55id7IQGleOz4Bmj5JvppjiYi7JgKdgVvncqCdzQUixyLnMUszODBDr+wGl7Sjo9cCAXopF1oDpniTJXuAJmFHaxMOTbRVMvo1ikDVDsRopk/ALn4Meac29EZwAU+BnmZPfB56BLVLbIugCv9MyQHQ8B05KbZvAKfAGfC1T8ofANNihtJ8Dr5N0lLH48k9UX4elts3gLPihTJZp6Dx4pPzyQjlwL2lnGcsgXoLt4KCyseoGR8DbFEpiL5gElyI2cXfBVZtOMyUENE2vHcrlcBe4EKw8ZP1BWUXaqJEuc/fB7oir003b5F1tXU+DB1QGUTdTxmimXkjY79Zg5ZH3PlAbcf4P1fxEqYsIF2qiYdgdc09BPLl9x+AujUj2MrhCJkRpikphzsUqyqWOU6J7ipyfpyH7EBQibs700PliDzl/JmPyLpeRrpWloZnTJHJdGr6ijG5rjBukUiu4XkenpVqq3/6YofyeXg84KB3vDDCdzALHk6d3BsiXsxyVR7GbsQUa5oNB/I3XqjRgVaLOb0Xs3x+DGzQ/lHUvXSmJuh+iv69J8wGLxWKVTf8Bw6N+hdMumk4AAAAASUVORK5CYII={scale="+$scale+"}>"
+!endfunction
+
+IBMEntityColoring(rule)
+!define rule(e_alias, e_label, e_techn) IBMEntity(e_alias, e_label, e_techn, #232F3E, rule, rule)
+!define rule(e_alias, e_label, e_techn, e_descr) IBMEntity(e_alias, e_label, e_techn, e_descr, #232F3E, rule, rule)
+!define ruleParticipant(p_alias, p_label, p_techn) IBMParticipant(p_alias, p_label, p_techn, #232F3E, rule, rule)
+!define ruleParticipant(p_alias, p_label, p_techn, p_descr) IBMParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, rule, rule)

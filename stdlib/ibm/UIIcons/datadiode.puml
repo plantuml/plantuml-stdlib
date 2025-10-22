@@ -1,0 +1,13 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $datadiode [64x64/16z] xS61400000CXXFdRpkElMXu0001m
+
+!function $datadiodeIMG($scale=1)
+!return "<img data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAAIGNIUk0AAHomAACAhAAA+gAAAIDoAAB1MAAA6mAAADqYAAAXcJy6UTwAAAAEZ0FNQQAAsY58+1GTAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAAOxAAADsQBlSsOGwAAAhdJREFUeNrtmr1OAkEUhYfVxJLaVqAw0Y7CXvEZ0Bfwv9FGo4maaLRRC3/QB1B5AgvhASy2g8QCraktKch6JrkUklnElZ2Znb0n+QrYwO6eOzP3zIIQLBaLxWKxWCwWi8VKnzIRPjMPHuizV6ACujFeYzDkNQdR7s2LcEHy5nNgClyDN1BM6giIYkCu73WRTLgB2TQYoNIY2ADvYCmNBvQ0CZ5ADRTSYsCH4r0F0ABHYMJ1A2bAMej0vS9v/BA0QcllAzpU6VlQVxzPg1fwTFPE2TWgRZVeBm3F8TItkpu0aDq5CAqq9DS4VQSkrG3ZwYvpe7+o0nPAVxy3Jjt4MX+/TyZskSnWZQdPwzm6VGk5Laq2ZQdP47naVOlFm7KDZ2DU1WzKDuOGpl4vOzyCO6q+KjtUTTwPCDQ8U+iXnBoXmoJSxoYRoMoOL+AUrOoMSp5IuWwZATqnwL/nbzDCNaAQsgj2VKU9xDDni3RdpkaAbHd7YDek58ucsE4ts+zaFChR1fMh7fEcnCkyQuINkPP7ckBF61T1lmuLoGxpa+AkZOcnI/IOtULnuoDc9lZC9v5yk3QP9hU7xcQbkP0l1Pg0KnwXc8Cgni4rfSDi/znNiAHD9PRtoX5emGgD/tLTnYzCTVt6uikD8rb0dBsWQaM93aQBVvR0XQZ8ip//EbCmp+syYEXo/YsMi8VisVgsFovFYrFYI9Y3N+5v/M42228AAAAASUVORK5CYII={scale="+$scale+"}>"
+!endfunction
+
+IBMEntityColoring(datadiode)
+!define datadiode(e_alias, e_label, e_techn) IBMEntity(e_alias, e_label, e_techn, #232F3E, datadiode, datadiode)
+!define datadiode(e_alias, e_label, e_techn, e_descr) IBMEntity(e_alias, e_label, e_techn, e_descr, #232F3E, datadiode, datadiode)
+!define datadiodeParticipant(p_alias, p_label, p_techn) IBMParticipant(p_alias, p_label, p_techn, #232F3E, datadiode, datadiode)
+!define datadiodeParticipant(p_alias, p_label, p_techn, p_descr) IBMParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, datadiode, datadiode)

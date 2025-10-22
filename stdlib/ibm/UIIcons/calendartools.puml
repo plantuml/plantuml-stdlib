@@ -1,0 +1,13 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $calendartools [64x64/16z] xS61400000CXXFdRpkElMXu0001m
+
+!function $calendartoolsIMG($scale=1)
+!return "<img data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAAIGNIUk0AAHomAACAhAAA+gAAAIDoAAB1MAAA6mAAADqYAAAXcJy6UTwAAAAEZ0FNQQAAsY58+1GTAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAAOxAAADsQBlSsOGwAAAhlJREFUeNrtmj1Iw0AYhq+2uvmDuCjq4iCo4Ci4KCLqIohLFzddBAfpoE6Cm3QoTrroJoKTuAiKiA4OxclBp07+4FbUtS31PfyEcrbNpU3T3PV74RkutEne936+XIgQLBarkRWqwTnzHl8jX8t7bmr0EcAB8Bqgp14QB5OgO+CePsAt2ABvXgQgzT+CTsM6Nw1GnULQmQJxA80Luue4F2vAhMFT3PHeIxon6XE5ber9HJAvc+9cBTgADsD9GlDv/UWIRwAHwAFwABwAB8ABcAAcAAfAARixF6i3QjwCOAAOgAPgABqoCgyBFTAL+kAGHIN18f+NslUBNIMEWAXhguNJsK1j3uQApPkLMK0cT9JI+LJ9DUh4Yd7UAIZp2Fdt3tQAlpU5nwJzlZg3NYAZpb0JPjX+1w72bAigX2lfa5q/BEs2BJBx+fs/82OgxYYAUkp7StO81IsNAdwo7V0yqqpDMS91ZUMA+yBb0B6kMrgA2ohF8KCYz4EjG54Ex4sckyGcOfzvADyZPgKitNFx23GyUsRM3wsUM5918JGjno+Vqh4Rw83Lun4P1qgaDNBG6ZUWwEPwbPpusJz5U2pvVXryJgvMVyWdd+jvQuN7O4+v6Yt53RFwZ2PPuwlAfnWdttG8UPbVpfQNTsTvZ/JdoLXKa+4Exbyb+WhdzwexCsz7bV53Cvilc3qmH/HLfBAVpmkQFSwWi+WDfgAUP2S3BCeaXgAAAABJRU5ErkJggg=={scale="+$scale+"}>"
+!endfunction
+
+IBMEntityColoring(calendartools)
+!define calendartools(e_alias, e_label, e_techn) IBMEntity(e_alias, e_label, e_techn, #232F3E, calendartools, calendartools)
+!define calendartools(e_alias, e_label, e_techn, e_descr) IBMEntity(e_alias, e_label, e_techn, e_descr, #232F3E, calendartools, calendartools)
+!define calendartoolsParticipant(p_alias, p_label, p_techn) IBMParticipant(p_alias, p_label, p_techn, #232F3E, calendartools, calendartools)
+!define calendartoolsParticipant(p_alias, p_label, p_techn, p_descr) IBMParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, calendartools, calendartools)

@@ -1,0 +1,13 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $serverrack [64x64/16z] xS61400000CXXFdRpkElMXu0001m
+
+!function $serverrackIMG($scale=1)
+!return "<img data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAAIGNIUk0AAHomAACAhAAA+gAAAIDoAAB1MAAA6mAAADqYAAAXcJy6UTwAAAAEZ0FNQQAAsY58+1GTAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAAOxAAADsQBlSsOGwAAAORJREFUeNrt1jEOgjAUh3FETuEhGN0dvYKJiwdzkEMwujN6C29hB3Ze62Bqfy95ISSllD8f9Ou6xmsXHHdNfavs2e6pp61BfXCyS+qxoocf1zVv1pAx6ZL6XEkAc3Rg3/o/YPji2ud6PAXPS+ePVtF9micg55ua/3G9zRMgALtAvI4Ff+ZfitCCACaIACaIACaIAAEIgAkigAkigAkigAkiQAACYIIIYIIIYIIIYIIIEIAAmCACmCACmCACmCAREoBdgAkigAkigAkqJkiEBGAXaNEE9xmkHCp6se/Uj9Qv+9dGfQBgWEWQnQtsQwAAAABJRU5ErkJggg=={scale="+$scale+"}>"
+!endfunction
+
+IBMEntityColoring(serverrack)
+!define serverrack(e_alias, e_label, e_techn) IBMEntity(e_alias, e_label, e_techn, #232F3E, serverrack, serverrack)
+!define serverrack(e_alias, e_label, e_techn, e_descr) IBMEntity(e_alias, e_label, e_techn, e_descr, #232F3E, serverrack, serverrack)
+!define serverrackParticipant(p_alias, p_label, p_techn) IBMParticipant(p_alias, p_label, p_techn, #232F3E, serverrack, serverrack)
+!define serverrackParticipant(p_alias, p_label, p_techn, p_descr) IBMParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, serverrack, serverrack)

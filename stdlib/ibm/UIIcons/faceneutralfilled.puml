@@ -1,0 +1,13 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $faceneutralfilled [64x64/16z] xS61400000CXXFdRpkElMXu0001m
+
+!function $faceneutralfilledIMG($scale=1)
+!return "<img data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAAIGNIUk0AAHomAACAhAAA+gAAAIDoAAB1MAAA6mAAADqYAAAXcJy6UTwAAAAEZ0FNQQAAsY58+1GTAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAAOxAAADsQBlSsOGwAAA5lJREFUeNrtm01IVFEUx29aCWkpFYGG1KbCdmFujDapBOK0KYpo0XoCE2plmxZKrlRUaLYujBaz6oOJkGwR7qrZJdpmhoGCUMgmggqr/2HO20zv47773ry598078ANh3rvP83/345x7zxMiscQSa2TbFcEzmsBZcB6cAKdBN2gBnXzNZ/ATlMAH8BG8AW/BHxMF2AOGwQ1wERxQbOcbeAkegRz4rbsAh8AYSIPDIbe9CTJgDmzpJsA+cI+db6vxkPrOIjwAP3QQ4BKYB8cinr+K4DZ4GqSR5gD3trDjM6CjDhM4PfM6OAJegZ0oe0AXeA7OaLKa5cEI+BRFDzgJXoMejZZzWk4vgxd+J8hmBedpfT6qYUxDQ+IazwlbtRCgi9+8js5b1gpSIAvKYQpAE96KZt3erSdcAIsyE6OsAPO83JliNCcc5OgxsAApXupMsz7wHmx4JSpeEd6CwcneAvug3APucw8w1awAbUWlB1iJjek2xr74FiCKxCYKa3N7kU0u+XxaxMfS7NN/ttvhhuEA+TzlCNOisptDRrtBdzlWr0c7gn0hn57IToKTorJ15ddoT+AWKIBfDP39mP8eiLid6pedlRkCJMqQwgOegSmX36f4mqjaqbYhuxduJ0AvaFd4wIxm11RbO/vmKcA5xbH/TrNrhIxvdgKYkPCoWo+MAKcUG+/V7Boh45udAN2Kjd/R7Boh45udAPsVG6ecYdzl93HJvCKsdoSMb3ZxwIRLgORlAxyw0FEXHWTsBf2claXr0I6dv5MykWAQG1GM1mrVjvC7H1AW8bVyIoCEAKUYC1CSEWA9xgKsywiwFmMB1mQEWI2xAKsyAlCisR1D57ftkii7OIBOU5bBFcUH1bru6K/ifcvC5qTIaU9wKYY9YEk2ECLLcQgaF9sUDsdkTgJQNVYmRgJkhEOFmdt4pcOEgjD/bICKqo4Lh5oBt4MRumEuBm/ftazO63CUStGKBjtfZB+EqgBUhzdqsACjwqOWUKY+gM7XqRStzzDnH4JZlf0AO6M9uLxBzueF5L6hbIkMRVB0GkOlaB2aO08r1yD4GqYA1mYC1eFRKVqrps5/EZUCqYLsDX7rBGk5oTq8lIY9ocDOb/i5SaVSlETI8sM6NRrzg37efBABrOGwKCqlaPVeHWi2vyo75sMSwJoYc6x+fx2GBAU5N3mp21FtJPlgIuR/rmE/mam2hv1oyina1PazucQSS6yx7R9wAr+8HVTLGgAAAABJRU5ErkJggg=={scale="+$scale+"}>"
+!endfunction
+
+IBMEntityColoring(faceneutralfilled)
+!define faceneutralfilled(e_alias, e_label, e_techn) IBMEntity(e_alias, e_label, e_techn, #232F3E, faceneutralfilled, faceneutralfilled)
+!define faceneutralfilled(e_alias, e_label, e_techn, e_descr) IBMEntity(e_alias, e_label, e_techn, e_descr, #232F3E, faceneutralfilled, faceneutralfilled)
+!define faceneutralfilledParticipant(p_alias, p_label, p_techn) IBMParticipant(p_alias, p_label, p_techn, #232F3E, faceneutralfilled, faceneutralfilled)
+!define faceneutralfilledParticipant(p_alias, p_label, p_techn, p_descr) IBMParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, faceneutralfilled, faceneutralfilled)

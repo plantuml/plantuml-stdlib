@@ -1,0 +1,13 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $taskview [64x64/16z] xS61400000CXXFdRpkElMXu0001m
+
+!function $taskviewIMG($scale=1)
+!return "<img data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAAIGNIUk0AAHomAACAhAAA+gAAAIDoAAB1MAAA6mAAADqYAAAXcJy6UTwAAAAEZ0FNQQAAsY58+1GTAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAAOxAAADsQBlSsOGwAAA3lJREFUeNrtmj1oFEEUxyeXIKRSRIQTP4j4EVCxsRBBTpQYj9hpCmOjEMQPtFCIhQSUIOKBdhrUa6wsEgsLlRgIiiAGbIKCqQwSNRLCFaIgKXL+H/dCjmFndudu193NvQc/uL3Zmdn575s3HztKiYmJNbI1RVTuelAAB0C2zrJmwGvQB76lQQBq/ARYHXK5JbA7bBEyEQhQiKDxissshF1oFALkIuyyoZfdEsFDrgu5m5UtZSfSA1Jlrh4QZnQPwyPqHi1aHBsfRXQPy+iFnACdLqOFSxcoJLjxNY8WLgLkUtS1c1F0gaDRvRzT7LWm0UJGgRijdiKs4T1ABJAYkJ49BvEAEUAEEAFEABFABBABRAARQARI137A/7Im8QARQARYVjGAXs5ecBDsA5vV0m7vD/AFvANj4D1YWC4C0IeNXnAebDLcs53JgwHwFdwHRVU5R5BKAeiNnwE3lfsXKBLqNrgKroGHQT0iKQKsBcNgfwjeMwh6wHEwmwYBdoHnYIMh/RO79iswzf/RvYe5q+z0yENCfgBd4KOt8maHB72uXd8IofFbVeWTttenrHlwiRtJQW6O/5vn3+PgAb/lDo+2rATHwDNbXIhzGFwDRtj9vRqf58Bm68sLfE+e83h1rRGuK3EC0IO3GdIu8/AW1MY4j5e1cV2JigEUoLotfX5Q+6/6ZIpS3idBKM9ZQ0zo5jqHk+ABGR67TVbU3H7xZAqd/siqpZMgE5xW3R2KlnIHvNobhwAUmNot6aPatelkitdJkFFLue1cd+wCXPFJn9aubac9cj55feuW1WAMdd7xSdcnRG8s9+ppG13rjkOAp2DSkt6hXfcZJjIlTrPlrbZJrjt2ASha91vSe7XnoqGOzv09UZXDkDP8Wz8L2Mx5TdbvNamKax5A4/GQYS5A4/g5cE8TocenTMqzw5A25DUHiDsI0np/ypB2lzdCgtohS2yZ4roSNxWmBU2nYcm6ArzkB8/4LOYugBecR7dZrmMuqavBEi9WjvLqTX+2Lp68UON+gb/8ews4CR6BU4Z20JzgCPhsewCXvfTvqrbz+kHqCGtDZNHeBt0QcfGAPbx54WpBPOUPeAx+qsoGaGsdHkWrwovgd5AMLgKMs7u1RiAAWZl3cRY3NreBVQHz0qboLXCa3345TPc0LUuzEdVRHaAj3xYXExNrbPsHvSekrmZGi7kAAAAASUVORK5CYII={scale="+$scale+"}>"
+!endfunction
+
+IBMEntityColoring(taskview)
+!define taskview(e_alias, e_label, e_techn) IBMEntity(e_alias, e_label, e_techn, #232F3E, taskview, taskview)
+!define taskview(e_alias, e_label, e_techn, e_descr) IBMEntity(e_alias, e_label, e_techn, e_descr, #232F3E, taskview, taskview)
+!define taskviewParticipant(p_alias, p_label, p_techn) IBMParticipant(p_alias, p_label, p_techn, #232F3E, taskview, taskview)
+!define taskviewParticipant(p_alias, p_label, p_techn, p_descr) IBMParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, taskview, taskview)

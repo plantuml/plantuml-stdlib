@@ -1,0 +1,13 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $fittoheight [64x64/16z] xS61400000CXXFdRpkElMXu0001m
+
+!function $fittoheightIMG($scale=1)
+!return "<img data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAAIGNIUk0AAHomAACAhAAA+gAAAIDoAAB1MAAA6mAAADqYAAAXcJy6UTwAAAAEZ0FNQQAAsY58+1GTAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAAOxAAADsQBlSsOGwAAAgNJREFUeNrtmztOw0AQhpclDQUiEjQgDkGRRxshQQ7AXaDEKcNBOAFNKJDbPAoOgUIVKaGhDGN5LSXL+BXJM971/NIvJc6slP/zerW7tpUSiURN1lHK8WvwC3gAvnQ84zc4BD+Cv4oAiMJ/gs89O9kr8I0NQSOFYw/DK5NpbB/EAAw8vuT/ZWshRVcFxwlXtM3IhvaARokbwLMxm1rM4YOd76Mm9QA7fMDVE3QNwrNC0DUJzwZB1yg8CwRds/DkEDRT+A1St+GAoJnCD5HaIQcETRx+Db4HT5H6qfltTQmBchBMws8yamYpEJzsAaOdHpCEnxdoN7cgBFXOEqueCkd//Bf8AV6UaBdBuAPfqnhnyum1wKEBFiWhObkabPxyWAAIAAEgAASAABAAAkAACAABIAAEgAAQAH4CiB5O6hzQrmPaVqqqt8SSrfEym6KRuuB3cBt8oircFKW6L9A2gbolwyvl0X2BBEIvo6ZnhXd6DNi9L2BD6CP1/ZTwgauXQBqEM/AEqZ2Y38jCU10CaRBUzrHKw1OOARiELJGEpx4Ei0IgC88xE8yDQBqeayqcBoE8POdawIbAEp5iKpwHAfvcGACswWU5nNEDlmr/ufqtR3mXRXpA6PEJD4sAeFLxC0a+aWWy7ekYKfwBv6r4dbkL8KnjwaPX5t7ADwp5bU4kEjVbfzKJYxuQtwLrAAAAAElFTkSuQmCC{scale="+$scale+"}>"
+!endfunction
+
+IBMEntityColoring(fittoheight)
+!define fittoheight(e_alias, e_label, e_techn) IBMEntity(e_alias, e_label, e_techn, #232F3E, fittoheight, fittoheight)
+!define fittoheight(e_alias, e_label, e_techn, e_descr) IBMEntity(e_alias, e_label, e_techn, e_descr, #232F3E, fittoheight, fittoheight)
+!define fittoheightParticipant(p_alias, p_label, p_techn) IBMParticipant(p_alias, p_label, p_techn, #232F3E, fittoheight, fittoheight)
+!define fittoheightParticipant(p_alias, p_label, p_techn, p_descr) IBMParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, fittoheight, fittoheight)

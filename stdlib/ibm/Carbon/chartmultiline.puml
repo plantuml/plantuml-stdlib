@@ -1,0 +1,13 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $chartmultiline [64x64/16z] xS61400000CXXFdRpkElMXu0001m
+
+!function $chartmultilineIMG($scale=1)
+!return "<img data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAAIGNIUk0AAHomAACAhAAA+gAAAIDoAAB1MAAA6mAAADqYAAAXcJy6UTwAAAAEZ0FNQQAAsY58+1GTAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAAOxAAADsQBlSsOGwAAAexJREFUeNrtmr1OwzAQx010A+w8CyyRUDvBwrPA3GylK+UpeAUmyNC8DiNiBEcykluS+Ns55+6kU9padfz/Ob47JxGCja23N+XkrKI+8+QBQObzPUq/H2lbjfzeGvoM+l/OK+BJ+rP0C4pBcC39R/qW6hL4UBBabAByLoEW46XPaTDhmicLoI/276VAqBKI30jfqcBHCoAuvimxErwyROqpiqsvbq5LEx+zDvhWZe4Lb4fLsDXlOuAoS80N4EF5TvFHWQpmFL/VAuZlhuA5mKVgZvE79X2jjk1O8XMB0MXrg0kFYbI+ASTim0QQjMUZIBCfCoJVZQpIxMeGYF2WAyLxsSA47UkAmfhQCM4bMkAo3heC127UBKBTx9qxPVS8KwTvrTggnHlXCEH3IUwAasf22OJNEIJvwgDimTdBECLCHSgoRPwYhODzQUHidQif6vM+tDNIJL6zjCG+to/VUVXQzCcxSCS+LgVARXXmfQEsSrwrgMWJdwEQS3ynZYgUZur/X7tNECzymZ+tnanj31OhO0riTUtg8eKnAJAQPwaAjPghAHOJd80O0bKJngVupN9SmfmhLEBO/OkSOFATfwrgSxA0flMU+fhS7x34CgDk46s5BjAABsAAGECmLGB6W3xpttIBvEo/F2z07BdF4ZgoVe1PMgAAAABJRU5ErkJggg=={scale="+$scale+"}>"
+!endfunction
+
+IBMEntityColoring(chartmultiline)
+!define chartmultiline(e_alias, e_label, e_techn) IBMEntity(e_alias, e_label, e_techn, #232F3E, chartmultiline, chartmultiline)
+!define chartmultiline(e_alias, e_label, e_techn, e_descr) IBMEntity(e_alias, e_label, e_techn, e_descr, #232F3E, chartmultiline, chartmultiline)
+!define chartmultilineParticipant(p_alias, p_label, p_techn) IBMParticipant(p_alias, p_label, p_techn, #232F3E, chartmultiline, chartmultiline)
+!define chartmultilineParticipant(p_alias, p_label, p_techn, p_descr) IBMParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, chartmultiline, chartmultiline)

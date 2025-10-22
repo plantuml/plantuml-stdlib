@@ -1,0 +1,13 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $loadbalancerpool [64x64/16z] xS61400000CXXFdRpkElMXu0001m
+
+!function $loadbalancerpoolIMG($scale=1)
+!return "<img data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAAIGNIUk0AAHomAACAhAAA+gAAAIDoAAB1MAAA6mAAADqYAAAXcJy6UTwAAAAEZ0FNQQAAsY58+1GTAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAAOxAAADsQBlSsOGwAAA9BJREFUeNrtW0lrFEEYrelERQ8uB9eA9xgPCUQhXtSAoqKS24gxuKATYwxE0P8gKCoYITGiolEYb+J2Uzy5Q8h20JNowAVEFBc0i+8j30DTdHd9NV09iUw9eDAz/c3rr950d9XQr5VycHAoZ2QENbPBVnA3uJo/GwJvgj3gH8N9zgE7wGbWox4GWK8L/G2oR/3lAv0NgjfAXvBvEgOqwLtgbcT2fnA7OCpsdiV4H6yJ2D4CbgHfCfVWgPdi+nsJ7gA/RAlUaJx9FCNOWAY2glfAccEv/9j3K4VhMbiJ9cYEv/xDsE5j0HrWmwgr8GK+nNMMvoBartWhTTP4AqjmsKAupxl8AWvA/VEbK2O+uCfw/gF4iF/TubU1UNulaWSXgR6dz+c0es2G/fWaHgGrAu9b+Vwf5ddxtWFYbqBXLdCrsdGfZ2k2mRDUzDPQ+2Vpn1rEGTASeN/Ds0IVv/ZjSLCvNwZ6IwK9IRt6cdPgUfC80MjT4AlNzRHwglBvL3hNU3MKPC7UyxVzDbjI87wEnWBWU0MNvBJoPeNFTByyvE8JXvA0aLwOGOdFUCPP97pTqQl8DQ7HnLO3wQ08P4fhKbgN/KkZfJ9mBvMvhHaC34oxgPCd3fsMLgIX8gWKfslb4FrfUSQx4Qd4FXzPKzQ/WsBjmgtg2OBpwXQGnAQX8NKX+jsJtscNXvpfQBXREM27ec13Jw17SbKvomYBCfLcwFhgcdUnuCaUyuhUDSiFCakN3uZCKM6EpEht8DYN8Jsg/a8hRWXIf5S8raZtGqBsNlaqfXiqzOEMcAY4ODg4lDEyKWhO/k89u2nQGeDg4ODg1gGprgMyJapzs4AzwBngDJh2A7Il6Dk7Uw0o3MHxY8yCblDD6m03z/Lgw+7gJEWq9x69lAdv4yZGqvcevRk++NRNkNy7C2aFKTlCAaUnaiqmYjr4WeCBkM9pH5dVdLY377sGVAZMqAcbuL8KZZBlTpoVVoaDX8p69RHbKdJC2eOPhkddFLRZ5qRZYZPBF7K99TE1lB3aqKZiNFHZY4rfUAynSXAKa7PMcQa0RRyqYaCMzllNDR3iBwVaZAJlCgdiasiE+eA6gR6Z8Al8bnoNMMkKNwgaaTHQ2wde1+g1GOhFZpltZYWlKXCpXrVlvdSzwhKdjGU9L+3GTbLCkmzvsIHeW4Gelf5sZYU7lP55gU7BhbIACkzqnhew0p+NrHA/1+rQraITpMEjpVtQZ6W/pFnhwkLjq3CtcAfcDC7R6H0R6Fnpbzoem5urpqLzpFfHzQ2y3iWlf/gq7f4cHBzKCP8AkboMN8/oZXIAAAAASUVORK5CYII={scale="+$scale+"}>"
+!endfunction
+
+IBMEntityColoring(loadbalancerpool)
+!define loadbalancerpool(e_alias, e_label, e_techn) IBMEntity(e_alias, e_label, e_techn, #232F3E, loadbalancerpool, loadbalancerpool)
+!define loadbalancerpool(e_alias, e_label, e_techn, e_descr) IBMEntity(e_alias, e_label, e_techn, e_descr, #232F3E, loadbalancerpool, loadbalancerpool)
+!define loadbalancerpoolParticipant(p_alias, p_label, p_techn) IBMParticipant(p_alias, p_label, p_techn, #232F3E, loadbalancerpool, loadbalancerpool)
+!define loadbalancerpoolParticipant(p_alias, p_label, p_techn, p_descr) IBMParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, loadbalancerpool, loadbalancerpool)

@@ -1,0 +1,28 @@
+' Begin duplicate inclusion protection header.
+!if %true() != $CLASSY_C4_FOCUSABLE_ELEMENT_PUML
+!$CLASSY_C4_FOCUSABLE_ELEMENT_PUML = %true()
+' End duplicate inclusion protection header.
+
+' Defines a class to standardize the method of marking something as a boundary
+' instead of a standard object.
+!include <classy/core>
+
+$class(FocusableElement)
+  $classVar(focus, bool, %false())
+
+  $classMethod(isFocus)
+    !function FocusableElement__isFocus($this)
+      !return %intval($getInstanceVar($this, 'focus'))
+    !endfunction
+  $endclassMethod(isFocus)
+
+  $classMethod(setFocus)
+    !function FocusableElement__setFocus($this, $state=%true())
+      $setInstanceVar($this, 'focus', $state)
+      !return $this
+    !endfunction
+  $endclassMethod(setFocus)
+$endclass(FocusableElement)
+
+' Terminate duplicate inclusion enclosure.
+!endif

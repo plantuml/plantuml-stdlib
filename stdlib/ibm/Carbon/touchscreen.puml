@@ -1,0 +1,13 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $touchscreen [64x64/16z] xS61400000CXXFdRpkElMXu0001m
+
+!function $touchscreenIMG($scale=1)
+!return "<img data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAAIGNIUk0AAHomAACAhAAA+gAAAIDoAAB1MAAA6mAAADqYAAAXcJy6UTwAAAAEZ0FNQQAAsY58+1GTAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAAOxAAADsQBlSsOGwAAAq5JREFUeNrtmkFoE0EUhicxop4sSA9KT1JQLA1IqRfBGqWUHHrTi9BDc4lV8VgJ6NF7RRAU6cHYQDz1Fg2FXAyCHqQphZZCQdDaojmqxFbX/3VfNcRks7uZNNnd9+AjM8nMZuff2Zk3b0YpMbFAW4g/J0DCJ22aBWm7hcP8eQ1EfdD4KLfFtkWq0m9B3OMC5JxWCAd9DBABRAARQAQQAUQAEUAEEAFEABFABBABRAARQAQQAYJmER+26Rwo2Ci3Gz0Oag/4Gz2OaFY+CQzwGLzrUOPsRLdf6h4DhsBrMAJioAjOBmkQvA4+ggFwBnzi7wIzCPaBVVDh/Ap/F+hpMCR+gAggAnhqELTrQe1ZzOI3Q8MYUHBRJ8p+QFe4wsfAHU4/56mxq3uA7vMBw+rfoYtpZZ5Aucw94wlYaqGHNbJcKwLotq9gEPzmxs6DTX49SIzzYAv8BGU/rgYXucFk79lLPM0CkKO0wK8JWVaZ55S2/TILGPzk94zSy+Ab+M7pHnAb3AJXwE0/zQLNPEMS6A14yPmr4AKY6dQskAGH2yi0USf/oypP6SM2G0hWavB7idviWIC0cnC2bp/WBjGLUT7ejldAp2Vqrj0HDlrkPb8crrW5OoJY5WUtIAKIACKACODlWcBoUcxQjetsZU49VkuPUVcPKFctbNzGDspe7gEfwDhfb8fFPfSDVzbL64hbaN8ZyoOj4KKLuiO8Msx7eRCkrbA1kHJRN8V1i14W4Be4Cy6BGw7qTSkzTHaPr+HptcALMAYeKDPM9bRJ+QSXpX36rIP/0ToLHNAsKA0uJ7k30I7xuvo/GkwNeKTMQCktipIOnj712BMa7pNikc8oftCu/btJcB8cB1+UuXFKdgr0gs8s0mynHaF2bmAe4vd7tOqpbSgzGEpUlJiYWKftD/16e3iuawtIAAAAAElFTkSuQmCC{scale="+$scale+"}>"
+!endfunction
+
+IBMEntityColoring(touchscreen)
+!define touchscreen(e_alias, e_label, e_techn) IBMEntity(e_alias, e_label, e_techn, #232F3E, touchscreen, touchscreen)
+!define touchscreen(e_alias, e_label, e_techn, e_descr) IBMEntity(e_alias, e_label, e_techn, e_descr, #232F3E, touchscreen, touchscreen)
+!define touchscreenParticipant(p_alias, p_label, p_techn) IBMParticipant(p_alias, p_label, p_techn, #232F3E, touchscreen, touchscreen)
+!define touchscreenParticipant(p_alias, p_label, p_techn, p_descr) IBMParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, touchscreen, touchscreen)

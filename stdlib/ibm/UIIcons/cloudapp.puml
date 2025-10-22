@@ -1,0 +1,13 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $cloudapp [64x64/16z] xS61400000CXXFdRpkElMXu0001m
+
+!function $cloudappIMG($scale=1)
+!return "<img data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAAIGNIUk0AAHomAACAhAAA+gAAAIDoAAB1MAAA6mAAADqYAAAXcJy6UTwAAAAEZ0FNQQAAsY58+1GTAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAAOxAAADsQBlSsOGwAAAwRJREFUeNrtmluITVEYx9eZc2aEOcyDSxi3RylTRI0HRDFSUhMRRbm88DDjltsDTwzKg0sKJZ6EF9fk8oIHM/GAUooINU3kQWbkco7/1/42q699ZoY9jr3Xt/71a85a+9Q6+z9rf99a39rGeHl5eXl5eXl56VQmAb/hM+gAb8AHcBPcAs/LMXguAQYMAOMY0iL++xqcBEfBx381eDYBBuwu0V8DZoP1YChoBV80GRCqCtSDFeApeOFaDOgPhoNaMAXMBTPBwIjvFsFhsBH8cMWAKFWDtXyjtRHXz/GM+J4GA4oxxqwEO8CuiIB9ESwD3+L8uIqEp2m6uT1gOngprjWClrgDJN2AUG1gRsTaoAk0aDCA9A7MEjOBHqfTnCadCoLdaRq4x/Eh1EGwJa3rgL+ZCRT951h9k8AJ0KnBAMOrwlVgsLVYooB5x+UYYOsr2C/6lpdrM9RTXi+WKe6cAvusFSNtpiaAZxpmAKkrYsrP1/IIhLom2pvAXk6XlWmpB8TRXdEeCbYxVGQ5AI51lx0yKTeAstgn3lGWUgdvrC65lAbtgDsWjC6xfTbcvxTkOWYUXJoBtoZwHWEeWGyCipLUWbDSzlRZhwzo5BR4GRw3QfmsXsS5OjAI3PiTGRA37//PuEMVpgvmd8E11EI2KvVpsCc95JT4VvQfMUHVyXkDSFReX8DL51BjuJagwgDSY14T2FpD958xepTnrXTe6mvIKjKAHoHxHBh/1RY0GUDqB5bYG6oKZQY8Eu2JuTLk/STtP97LGaFtBhRkOUCbASPk8lmbAXWi/SSjzAB64WK11W7RNAOqRQok3dZkwHaxCnylyQB69jeLPiqrF3pTFE1zPYBEJbOrJjg9sneIh+hDzvH//FRwHowS/RtM8HqeswZQPbDZBOXxKnGNTpKvhA1XDKDK7zAw2QSnQ40muih6BmxNyrq8r/YWvR2DCiI7jXixyvUYQGoH6wwXQaVcNoBOhOgInY7Gukp9yRUDwheuKb09ANfBfdMH7xF6eXl5eXl5uauf+caCCRB+YzwAAAAASUVORK5CYII={scale="+$scale+"}>"
+!endfunction
+
+IBMEntityColoring(cloudapp)
+!define cloudapp(e_alias, e_label, e_techn) IBMEntity(e_alias, e_label, e_techn, #232F3E, cloudapp, cloudapp)
+!define cloudapp(e_alias, e_label, e_techn, e_descr) IBMEntity(e_alias, e_label, e_techn, e_descr, #232F3E, cloudapp, cloudapp)
+!define cloudappParticipant(p_alias, p_label, p_techn) IBMParticipant(p_alias, p_label, p_techn, #232F3E, cloudapp, cloudapp)
+!define cloudappParticipant(p_alias, p_label, p_techn, p_descr) IBMParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, cloudapp, cloudapp)

@@ -1,0 +1,13 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $floatingip [64x64/16z] xS61400000CXXFdRpkElMXu0001m
+
+!function $floatingipIMG($scale=1)
+!return "<img data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAAIGNIUk0AAHomAACAhAAA+gAAAIDoAAB1MAAA6mAAADqYAAAXcJy6UTwAAAAEZ0FNQQAAsY58+1GTAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAAOxAAADsQBlSsOGwAAApBJREFUeNrtmM1LVFEYhyc1BzLLAhe1yFASqaghwtRWrUtJDC1KiqBwI333V1QTtUhctUgEoQ+1wI+WESVBGFpuDPoighYt/Ujt98I7crncuefcuWdiqN8DD8xczj33Pe89c+a8J5EghBBCCCGEEEIIIYQQ8v+wxrLdWtgCj8EUrNPrH+A7OACfwoW/FHcJbINHYAPcClfgD/hSY3kEF10kQAZ+F24ztPsEL8DBPA9e4rkDqwztZuF1TURWig3JuakP22gRWAU8DtfD53kafCaeCou2m2EH3ADHc0lAGl7KIcgmfeio48HfgpdzuK8RlmVLQkmWm1rhxRjBSuJemKZfBI4GvAxZb3pgP5zSa7vhCdgFSz1tr2o8gzYzQJIyDDfFDHo/vAeXHSx4/ni+wUPwPvyqyVjQzyPavllnYoYGjWfJ23lRwANlda128NZqdCbFxR/PPDwMJ0PumdQ2855r2/VfI2FKQLPjFdt1H72GwXuT0Ou71m6zBtQ7TMBJ1SV9Edt2e77vsZkBWwp88/Y+RtsqmwT8yyzaJOB7gQ9iZ4S2u3zff9qsARNwh8Pf66mYfTzwrSPy+XWENcjLK5sZMOzwbQ056MO/eTkP91rcl9K2YX0FJuAh/OggcClGHjvo54n2lSEJnxmSkNKK0Lsb/BwUT9BOUHZuX7SQiMM5OO0gAUHxyA7vLKyEv1QZ7D6tAHsCdrKdcCZKOZyOUQ+kcyxcwrgBr7iOJ6waHIPlWk1FDfRaHlZ/KbHXwYMR77sd9jKKDTdLEt7qQ01nAnIgckYPT/LBipa0ssU9YFGsSTyn9fwg1omQUGhHYkktbNq1BK6Fc1oNvtF/MinFfycIIYQQQgghhBBCCCGEkFX+ABpPeKox9ZveAAAAAElFTkSuQmCC{scale="+$scale+"}>"
+!endfunction
+
+IBMEntityColoring(floatingip)
+!define floatingip(e_alias, e_label, e_techn) IBMEntity(e_alias, e_label, e_techn, #232F3E, floatingip, floatingip)
+!define floatingip(e_alias, e_label, e_techn, e_descr) IBMEntity(e_alias, e_label, e_techn, e_descr, #232F3E, floatingip, floatingip)
+!define floatingipParticipant(p_alias, p_label, p_techn) IBMParticipant(p_alias, p_label, p_techn, #232F3E, floatingip, floatingip)
+!define floatingipParticipant(p_alias, p_label, p_techn, p_descr) IBMParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, floatingip, floatingip)

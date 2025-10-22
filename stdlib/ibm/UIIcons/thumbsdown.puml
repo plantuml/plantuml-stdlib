@@ -1,0 +1,13 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $thumbsdown [64x64/16z] xS61400000CXXFdRpkElMXu0001m
+
+!function $thumbsdownIMG($scale=1)
+!return "<img data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAAIGNIUk0AAHomAACAhAAA+gAAAIDoAAB1MAAA6mAAADqYAAAXcJy6UTwAAAAEZ0FNQQAAsY58+1GTAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAAOxAAADsQBlSsOGwAAApFJREFUeNrtmz1IHEEYhkfPaKMpEiXqKZGgRSSNVcDCWEQLCYda+FMbRYs0goR0FpJC2xQmJI1ol0I7URESUiX4h4iIZ6GFxE5UEBQ932HnYB2H7K6X3du973vh4Zi5vd3bd+f75md3hWCxWJSVZ6hLReS/n4K/4AD8ArNg3etOYoa60YgYUAQeg2egGQyCHmXKNgUDTCoFXaAVLINjpx/k52hoN4LfoMlpw4J75ol/5Yy8gE6yGFSAlyAB2sED2/dlYBG0gJ+52ALOwC6YVs2+XiVCuwrBd1BDIQSSoAO8B9daS5ihlAPGwQdDTuiklATHDeEwRskAqRFwYSs/Bw2UDJA5YU6rS1AyQBjCoImaAStaOU7NgEOtXEnNgFOtXELNAEexAWwAG8AGsAFsABtAV27WBFPcArzpKXUDvorgVoZDacBrMBDlHOD16sntF9SJpzUB5sF+ls+v0mF2+F9agEySb7Wdl4QkFF5p5QO/QkBe6ZGQhcIjYa0O27XgZw74Apa0uoks9ArloBdsgCpb/RX4lmm8u+kCN8XtlRdpSquH8YRf445P4J3fvUAYQyF9EYaD6gbDEgrpZi+vfBu4NG0Q8+nA8nZ0n7Ce4hDq84Ww7uQ6aTTDY8veaE8dqx9Mids3Sz3PBTIJhUlDKHy+xzgjkrNBUyh8pDQdTg+QzrW++Qml9QAZCvoTW3XUFkSSWrmWmgG71A1IcghwCNA24Aic2MoPw9QVBrUsHto8kC0DaqkZ4DYPVBsmNmRCIG6YKG35/ccKAjJAHw53KZw0kyst4I+4+8SWk9bUjNJXxQIyIKXCoNvl/F6++/NGuHjjIyoGSO2AH8J6dl++61NkSHirwlrKHgri5FksFotFXTe7KHGJIA3JNQAAAABJRU5ErkJggg=={scale="+$scale+"}>"
+!endfunction
+
+IBMEntityColoring(thumbsdown)
+!define thumbsdown(e_alias, e_label, e_techn) IBMEntity(e_alias, e_label, e_techn, #232F3E, thumbsdown, thumbsdown)
+!define thumbsdown(e_alias, e_label, e_techn, e_descr) IBMEntity(e_alias, e_label, e_techn, e_descr, #232F3E, thumbsdown, thumbsdown)
+!define thumbsdownParticipant(p_alias, p_label, p_techn) IBMParticipant(p_alias, p_label, p_techn, #232F3E, thumbsdown, thumbsdown)
+!define thumbsdownParticipant(p_alias, p_label, p_techn, p_descr) IBMParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, thumbsdown, thumbsdown)

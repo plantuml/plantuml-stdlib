@@ -1,0 +1,13 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $augmentedreality [64x64/16z] xS61400000CXXFdRpkElMXu0001m
+
+!function $augmentedrealityIMG($scale=1)
+!return "<img data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAAIGNIUk0AAHomAACAhAAA+gAAAIDoAAB1MAAA6mAAADqYAAAXcJy6UTwAAAAEZ0FNQQAAsY58+1GTAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAAOxAAADsQBlSsOGwAAAx9JREFUeNrtmj1oFEEUx8dssDQ2QVEDiinUIoqCrXqVqUzsFMUP1CgKGkWbpNOAYKHpTEQLRVALP0A4QTnFzqCIQgrRSIoURkRy110R9P+4/+Jynt7u3uR29vY9+HHH7t3M7Nt5n7vGZFwW1Tm/Hxx2bM23wB1bg7XVOb8X9Dh08T1ckzVpD/GbCdDriAKe2R6wLes+QBWQdQW0p2itS8Ayfu8ARRuDenXO7+Pn3QQvXNZ4BDwGXaATHANz4AP41co7YAe4CjZSAed5/AoYB6fAGfCy1XbAWnATXAbfwR5+/0nug9dgJ7gANoF3PJdqBYidX2SmJ/Y+CI6DrzV+Ow1ugBlwEJzl/yVvKafNBDym3JfAUjAKRkI4unkq4QEYAqepjCGmzPNp2AFi5w/BUfAc9HGLlyOMUeZ/74F19BUyzifuFCcV8D87jyuR/UNSChgAT0PYeVyp5R9+gLeuZIKyPRc3cT6Za5drTvA975SVeF7Dr1xj+fwIrHGxFpgFu0GO2VyBi+1uYMxujlHgmDnOMetyGJS7viUQBicjhEETqA38MDjHVDlUGHQlD/DjuXjw4Qjx3M8fRqiEUSqxlNZaoMTQNRYi36+2c4n9U61SDE3Rdv2LLNQohvpYDeYacZ6uV4NyYZsD23ySx4tR7DztDZFgvv+Kx7bbaoikqSMkF/wt8N2KaFNUFaAKUAWoAhKS5UxfF1o6OJdTCngCNoDPptIK8xZgDo9jyxzrmUk6kwdcBy+Mxf5+3DohyUToC+ivyvdjFzWBfkCkOsGFrvC0+dO/OwTOmUp//435uzP8r/WIncvzhNum8uhM+ownTIg+o2v9gGB//wB7A5nqBxTZDxgP+IeTvKO1+gH+c8PYplPvJak8P5N6Rabama0OmE0/7XwwS/2ATh5fmfV+wLYodt6K/YCSrUG1FlAFqAJUAZmWMFFgq8UqrVGRhGhCd0CTd4BLb4vn1QeoAlQBTfcBjUov63rDCi6ftR0gLzusImNqAhlUgLwUOUMGsugDxOa7NAqoAlQBWg26WA16IXbICodumLzzK4+/PhoVO/Ibn/LRvVUzrtwAAAAASUVORK5CYII={scale="+$scale+"}>"
+!endfunction
+
+IBMEntityColoring(augmentedreality)
+!define augmentedreality(e_alias, e_label, e_techn) IBMEntity(e_alias, e_label, e_techn, #232F3E, augmentedreality, augmentedreality)
+!define augmentedreality(e_alias, e_label, e_techn, e_descr) IBMEntity(e_alias, e_label, e_techn, e_descr, #232F3E, augmentedreality, augmentedreality)
+!define augmentedrealityParticipant(p_alias, p_label, p_techn) IBMParticipant(p_alias, p_label, p_techn, #232F3E, augmentedreality, augmentedreality)
+!define augmentedrealityParticipant(p_alias, p_label, p_techn, p_descr) IBMParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, augmentedreality, augmentedreality)

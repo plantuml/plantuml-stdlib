@@ -1,0 +1,11 @@
+sprite mdiTurbine <svg width="48" height="48"><g transform="scale(2)"><path d="M2 12C2 17.5 6.5 22 12 22S22 17.5 22 12 17.5 2 12 2 2 6.5 2 12M20 12C20 16.4 16.4 20 12 20S4 16.4 4 12 7.6 4 12 4 20 7.6 20 12M12.5 7L12.2 8.3L11.3 5C10.3 5.3 9.7 6.3 9.9 7.4L10.2 8.7L7.9 6.3C7.2 7 7.2 8.3 7.9 9L8.9 10L5.6 9.1C5.3 10.1 5.9 11.2 7 11.5L8.3 11.8L5 12.7C5.3 13.7 6.3 14.3 7.4 14.1L8.7 13.8L6.3 16.2C7.1 16.9 8.3 16.9 9 16.2L9.9 15.3L9 18.6C10 18.9 11.1 18.3 11.4 17.2L11.7 15.9L12.6 19.2C13.6 18.9 14.2 17.9 14 16.8L13.7 15.5L16.1 17.9C16.8 17.1 16.8 15.9 16.1 15.2L15.1 14L18.4 14.9C18.7 13.9 18.1 12.8 17 12.5L15.7 12.2L19 11.3C18.7 10.3 17.7 9.7 16.6 9.9L15.3 10.2L17.7 7.8C16.9 7.1 15.7 7.1 15 7.8L14.1 8.8L15 5.5C13.9 5.3 12.8 5.9 12.5 7M13.5 12C13.5 12.8 12.8 13.5 12 13.5S10.5 12.8 10.5 12 11.2 10.5 12 10.5 13.5 11.2 13.5 12Z" /></g></svg>
+
+!if %function_exists("$MdiSprite")
+  !unquoted function $MdiTurbineImg($color = $MDI_DEFAULT, $scale = "1")
+    !return $MdiSprite(mdiAccountAlert, $color, $scale)
+  !endfunction
+
+  !unquoted function $MdiTurbine($alias, $label=$MDI_DEFAULT, $shape=$MDI_DEFAULT, $color=$MDI_DEFAULT, $scale=1, $stereo=$MDI_DEFAULT)
+    !return $MdiSpriteElement("mdiAccountAlert", $alias, $label, $shape, $color, $scale, $stereo)
+  !endfunction
+!endif

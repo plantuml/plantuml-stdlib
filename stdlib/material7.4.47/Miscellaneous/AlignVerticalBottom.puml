@@ -1,0 +1,11 @@
+sprite mdiAlignVerticalBottom <svg width="48" height="48"><g transform="scale(2)"><path d="M22 22H2V20H22V22M10 2H7V18H10V2M17 8H14V18H17V8Z" /></g></svg>
+
+!if %function_exists("$MdiSprite")
+  !unquoted function $MdiAlignVerticalBottomImg($color = $MDI_DEFAULT, $scale = "1")
+    !return $MdiSprite(mdiAccountAlert, $color, $scale)
+  !endfunction
+
+  !unquoted function $MdiAlignVerticalBottom($alias, $label=$MDI_DEFAULT, $shape=$MDI_DEFAULT, $color=$MDI_DEFAULT, $scale=1, $stereo=$MDI_DEFAULT)
+    !return $MdiSpriteElement("mdiAccountAlert", $alias, $label, $shape, $color, $scale, $stereo)
+  !endfunction
+!endif

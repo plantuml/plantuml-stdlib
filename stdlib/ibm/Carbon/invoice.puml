@@ -1,0 +1,13 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $invoice [64x64/16z] xS61400000CXXFdRpkElMXu0001m
+
+!function $invoiceIMG($scale=1)
+!return "<img data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAAIGNIUk0AAHomAACAhAAA+gAAAIDoAAB1MAAA6mAAADqYAAAXcJy6UTwAAAAEZ0FNQQAAsY58+1GTAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAAOxAAADsQBlSsOGwAAA/FJREFUeNrtml1IFFEUx2+uUSBG31QWpAQFkUSElpjlQ5E9ZA9FBn1H9RIhQvTpS70kRUHQS+FLpdGDRBrZU2YbqZEpQvQFRWVamfUQkX1I/Q/zX1hqnJ2ZdtY7u3Pgx67unXv3/vfMPeeeO0qluI3g6yawXbPvVg9Oez1IiK9VYAF4r8nkc8EaMBLc8nKg9Kj390GJJgI0gqXgMP8+kggBdLNm0O61CDoLED1pz0TQXQDPRfCDAJ6K4BcBPBPBTwJ4IoLfBIi7CH4UIK4i+FWAuImgswB5oMlGu+8Uod/N3iFN08nXgi6bbVvAJ7AimTzgInGyd3BlaSrFLRAgECAQILXNSRRoGubvWhx4wDB7QHGwBgQCBAIEAgQCBHlAcuUB6UnyQ5YkQoAgD0j1NUAHywCLyCwwBvwC74iUx8JgMNkEmA/2gDKK8A284qTlGQcpoGYp43kCqQ/KwxXHwVO/CzBJGQ9vbAEfwFlQBzrAz7/aihCFoBRsABtBNagEfX4UII+TFTc/pIyS9w+L9uL2zUQmXQH2gVVgNeg0uyjyjFCjjXCS6DxgsTJK4+vo7m4sB1wD2bx9rvshCsiXXgZug6L/mLzYC1AA7oErXEtce0AibDJdtZuTH4hTv5kUQW6nhdFrgm4ecJKr/No4Tl7sC9eBceCYrrfAPK7cR8Frm9eI59602fYlOAF2gDk6CrA3KtR5ZafAR7BftzA4irH7jA3XlyxwJxfLXJMIZbVn+Qoug83MGwZ18YAC3vtXbUw+zAVSMUx2ORxLwuIEsESnekAW09uHMdrtYlicGyMpsrK79LJ8CbW6eMBY8NzmJuY3cWsyRi+YplM9oJ6xOpadU8aT7Y/AW5OkRz5vs9FPD5iqUxQY4E4ulrXy3g2bfFZE9873Yz2glxmasilCq8n/RcDHYLcNLxD3b9fJAyIuGUrAWCGO1aOTB8gvNpr7+WaX0Wg6mMls0soKOVabTh4g93Q/ixlOLDcqGQpzcq0xrinlWOHhygOKhwhNDcwGK5mx2bne6S42g2M0REKuTnsBKX1NZCXHK6vgGFVuooDX5wJPlFHDkzJWDeN6LHNSv8hh39UcS8t6gLj/ZweJkZOCSD37rtS1HqBYqSnlal4XJxEy2Vc2++7TWQAxKYmVcYfYQtd1aznsQ/par0wqw5HEIxI7azQR4Rm4AbaCcmZ5D9S/ZwFWq/1BcIEbp+XgzlBZkY4CiMmpzyVlHI6UswiSxX1Dt8mOMMT9gLQ9D1ZSgDKrBTW6KpznorgQT7OKMrPBAWUUNscr4zxQRHjDz2cwE5So5uporJbpoa4mE9nGX1l2g3JoMoWIdSiXh6Mpb38AlhHTefCMRegAAAAASUVORK5CYII={scale="+$scale+"}>"
+!endfunction
+
+IBMEntityColoring(invoice)
+!define invoice(e_alias, e_label, e_techn) IBMEntity(e_alias, e_label, e_techn, #232F3E, invoice, invoice)
+!define invoice(e_alias, e_label, e_techn, e_descr) IBMEntity(e_alias, e_label, e_techn, e_descr, #232F3E, invoice, invoice)
+!define invoiceParticipant(p_alias, p_label, p_techn) IBMParticipant(p_alias, p_label, p_techn, #232F3E, invoice, invoice)
+!define invoiceParticipant(p_alias, p_label, p_techn, p_descr) IBMParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, invoice, invoice)

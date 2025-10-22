@@ -1,0 +1,13 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $dataclass [64x64/16z] xS61400000CXXFdRpkElMXu0001m
+
+!function $dataclassIMG($scale=1)
+!return "<img data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAAIGNIUk0AAHomAACAhAAA+gAAAIDoAAB1MAAA6mAAADqYAAAXcJy6UTwAAAAEZ0FNQQAAsY58+1GTAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAAOxAAADsQBlSsOGwAABBFJREFUeNrtmktsDVEYx6f33KIh+hCJRyseO4m4osICbT2CCOrRFLHxjMdCWCAhqFiUhXQjiFhINB5RKyKk0d4FIbEhGiGigiaIVKUSpb2p/0m/m4zJmTlnzONM3fmSX9p5n/9/zuM7Z65hxBFHHLkceZqeOx6cAotouxkcBB25YMBscBcUW/Z/A8vAkzALwzSIvweKBMcKQA1oCbMmMA3iCx3OGRa2CUyz+OOgFVTqMoFpFl8H0rStxQSmWXw2tJnAIiBeqwksIuK1mcAiJF6LCSxi4kM3gUVQfKgmsIiKD80EPwzgE5uHgvTWq3iZCWvBFdCt24ALYFZA4p1M4HOHsaDJy40TPhSuMmDx2aijezs9W4sBgzr8aAIzwTTBW0n7XNZjghpw22sT8MOAx2AztcmgTBCJ5wsoq6PQCXbTlLaGeme/TRCJ/w6WgpdRyQM6aFz22wQ78UsMn5bO/MwE/TYhcPFBzAX8MiEU8UHNBrkJQwVjtKoJIvE86kHjYJgO14IGmxxDZoKdeB5zwWvQFmUDaik/TypkjmkX4rNJW7XfJrCAxfeBE2CGpE+wa/P19OYTQZnAAha/CZyVdIyVDh1eI4mtDsoElU9jfKa3HcwDk0AveAvug/Og3EH8dYU1A0Oht3cy+BHYAxaAKWA4eEO1i89Un/+rAYUkcL3DOX30VyZe1QSnoc7OBMOhz+knE/aBHjdNoJgcXKgwm0woijfnCesszYFHF6W3duN8m01zSEhecDnV3msmw6QG3KSL3IRMvNmEG2CvZf9U8EJyrcgElZgIRtPs8a8QVZ2VYLll3wdj4Pt9C21XgdOg1HLeU8UCtSvuE0UrVW1Z+fjvD8pM5/B+7Bx4JlsQ2W3Z/ghS4Cr4RPD/p9Mxs5m7QljD4LUsX6F8KUv5uNZtshUhLmK+Zd8B0CkoSCcdM8fiEAxY46F8VTIDSi0LG7LcPS1oa0FHkYfyTZYZ4DUxyg/BgAIP1/bLDOBtJmPZV+FwwwpBZxR0fPZQvnaZAb8E4zDv7UsENy+hY9YeOuh44KF8zSp5QB4NhdkYCTZS7/oVjAArjIHV2DLBCKL6ucqa/6t+S2in0YZJynfLMkzzmr2VznFMhRmN5ymXb4ZnWhtU2p0P85WT4LDL+zRQSmzI8oAMDTVfXNycTzh2GuHFUXrDqsF/l3jIzVygix7Ap6pjJDe/A1bRNSpV3W3U2dSqJnqBcxx08Jd5BuwAv92uB/APDxfBezAKTDAd+0lp535azOhx0db9MCBrQgutGfygyVUvzUlegctgC81NMnY3T0oezi+8RAwB40zDXSagNQi3fQbvFI8QriPp4lxehd4Z/1nk/Nfh2IDYgNiA2ICcjqSGZ/bHNSA2IDYgjjjiiCMS8QfWkyK0/sG6kwAAAABJRU5ErkJggg=={scale="+$scale+"}>"
+!endfunction
+
+IBMEntityColoring(dataclass)
+!define dataclass(e_alias, e_label, e_techn) IBMEntity(e_alias, e_label, e_techn, #232F3E, dataclass, dataclass)
+!define dataclass(e_alias, e_label, e_techn, e_descr) IBMEntity(e_alias, e_label, e_techn, e_descr, #232F3E, dataclass, dataclass)
+!define dataclassParticipant(p_alias, p_label, p_techn) IBMParticipant(p_alias, p_label, p_techn, #232F3E, dataclass, dataclass)
+!define dataclassParticipant(p_alias, p_label, p_techn, p_descr) IBMParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, dataclass, dataclass)

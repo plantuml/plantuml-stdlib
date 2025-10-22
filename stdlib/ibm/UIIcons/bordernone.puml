@@ -1,0 +1,13 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $bordernone [64x64/16z] xS61400000CXXFdRpkElMXu0001m
+
+!function $bordernoneIMG($scale=1)
+!return "<img data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAAIGNIUk0AAHomAACAhAAA+gAAAIDoAAB1MAAA6mAAADqYAAAXcJy6UTwAAAAEZ0FNQQAAsY58+1GTAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAAOxAAADsQBlSsOGwAAAH9JREFUeNrt29EKgCAMBVAN//+XDfqAEu1hY+e8GhRDt4tQawDU1V/W5sez2dcfV/UdoAC6ACAH7OWA6OQAY1AB4GQK7HbbCN+kB6wacoAdkOvM6gEAwe4D5o/vlAOMQQUAyJUD3AcYgwoAIAfIAcagAgDUyQH+FzAGFQAAMrsBdfUaO8YHG1sAAAAASUVORK5CYII={scale="+$scale+"}>"
+!endfunction
+
+IBMEntityColoring(bordernone)
+!define bordernone(e_alias, e_label, e_techn) IBMEntity(e_alias, e_label, e_techn, #232F3E, bordernone, bordernone)
+!define bordernone(e_alias, e_label, e_techn, e_descr) IBMEntity(e_alias, e_label, e_techn, e_descr, #232F3E, bordernone, bordernone)
+!define bordernoneParticipant(p_alias, p_label, p_techn) IBMParticipant(p_alias, p_label, p_techn, #232F3E, bordernone, bordernone)
+!define bordernoneParticipant(p_alias, p_label, p_techn, p_descr) IBMParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, bordernone, bordernone)

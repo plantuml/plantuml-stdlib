@@ -1,0 +1,13 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $categoryneweach [64x64/16z] xS61400000CXXFdRpkElMXu0001m
+
+!function $categoryneweachIMG($scale=1)
+!return "<img data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAAIGNIUk0AAHomAACAhAAA+gAAAIDoAAB1MAAA6mAAADqYAAAXcJy6UTwAAAAEZ0FNQQAAsY58+1GTAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAAOxAAADsQBlSsOGwAAAqBJREFUeNrtmr1LHEEYxnf1LARNYSCgKBYK0S4QCIQormDrH5DEtCpB7Ewg/4GBNBZitLISBKtUKcRVSxuLQGyDXxHUShDCcecz3BuYLLNf2fWcl3lf+MHNfjx38947M8/NredJSEi4HH6k3Qs+gwB059Q6ByH4AE44JkB1/hA8Lqh5BZ5xSUKL9nqxhM57pLHIpQL0BAQl6gZcElDRXvekzA9pUU/QYlEBToYkwPUEVB7gPes2+QqbK0AZsdfkTXpdHgL36iu4zAEBhzmgntE7+P8xV/S4XgGyDEoCmjAHnEXGWr2A7hkXX6FXQFjihwot/LKNvkJPwEevsZlRNK5Ii4Wv0BOgykLt5GxQueSNc7qXw25QEOcD1Ad/k3Gs+ZZ0ppCvkGVQEiA+wJp1+kF8BZcKCF1OwL36iorFHW/KllgzEuDb7CtkGZQEiA9gF6X6ClcrIHQ5Af/4iopDHVe+Yoc6f8I5AaX6ClkGJQGOR2uGa56CBTASOd4Ojr38O8lW6fkpJkltH88nTJZVsEQzazWD6bJOL64C2sA38C5lmKhzL8ELsAlq3PTiEvAFTOUow0HQCb5z0zOVzjCYixw7pjLaofa413imWH90Rd2zCn5y0jNVwCfwSmv//cfoANwQP8A6eAseaeX2x5Blq/VM42ci0lZbUteG667pXNK91uuZEjAQae8mjK3dlHut1zMloFbAV9S46ZkS8CvSHksQHEu513q9lgxlo2bTLsN1XXQurRyt1jOtAqdgRnOJahZVf5n/BpegA0yCLdAX+Tk6DS446cVZ4RV6kzzxFcxy04tzgttgFPRnFN8jW1rlptea8CNCeecn4HmK+BqJ3yZcY61elm0j5bLeU8aH6NgR2AfLXuOpqzxhu56EhIRDcQcPaOTRDUahngAAAABJRU5ErkJggg=={scale="+$scale+"}>"
+!endfunction
+
+IBMEntityColoring(categoryneweach)
+!define categoryneweach(e_alias, e_label, e_techn) IBMEntity(e_alias, e_label, e_techn, #232F3E, categoryneweach, categoryneweach)
+!define categoryneweach(e_alias, e_label, e_techn, e_descr) IBMEntity(e_alias, e_label, e_techn, e_descr, #232F3E, categoryneweach, categoryneweach)
+!define categoryneweachParticipant(p_alias, p_label, p_techn) IBMParticipant(p_alias, p_label, p_techn, #232F3E, categoryneweach, categoryneweach)
+!define categoryneweachParticipant(p_alias, p_label, p_techn, p_descr) IBMParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, categoryneweach, categoryneweach)

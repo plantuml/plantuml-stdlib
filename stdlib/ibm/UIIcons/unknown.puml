@@ -1,0 +1,13 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $unknown [64x64/16z] xS61400000CXXFdRpkElMXu0001m
+
+!function $unknownIMG($scale=1)
+!return "<img data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAAIGNIUk0AAHomAACAhAAA+gAAAIDoAAB1MAAA6mAAADqYAAAXcJy6UTwAAAAEZ0FNQQAAsY58+1GTAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAAOxAAADsQBlSsOGwAAA4FJREFUeNrtm02ITlEYx887Z8ZieJWvyUISS1N2vlLSlMyCoRkiW2FFUZKNplhQZKaMDYtJYUVRGM2kQWmykLAeSVIWFEbRi//J8+Z03Zl77sfznPPO3Kf+NffcM/e9/9977jnPc+6MUmWUUcZMjoqnz10GnYE20vETqBd6ORMAdEC3oGqk/RvUBY1I3oz2YP42NCfm3CyoBxqDxqcjgLr51in6tEhD0J7NH4buQ52+IGjP5vvJ6CdfELRn8/XwBkEHYN4rBB2IeW8QdEDmvUDQgZkXh6ADNC8KQQdqXgyCDti8CISKoPmV0D5oM7Q0ph74Cr2FHkCXodeR84egvkjbBLQtTwGlBcy30I1fgdZDi6jwiSuGzLm10AH6eRj6xTkSNLN5Y+oetBtqSnF903c1AbsB1bggaOZhf4HMZ43l0DyCyDInVJif+RcRyO+gY9BD6EOk/2JoE3QWWmK1m29/FdecoJnMmzhBQ9g2b4w8owlPxUyCr6BBaC8013ocfkBDHKuDZjJv4hzUZh0fJPNJ8Z1GR7fVZrbPBjiWyCYm84qWOjtGU4y20YRr2dFP92JHK91zR14AeZKc6Kbne8bSOzOEiscMb6rYA12zjs0E2O7we6knRh2g+fnQTWsSVARjiCNtjgPQTrRmC5s3y+BWMh9dBvdDH3PWDjug69Bnu3NzzAV6hcz/dux3KSYHcJkTVORxqFKOsStpElznYdhPFmYkHi1wYtwQ7dSswowaffNHoJ+cHxQHwLyo3Gkd90WGFVcklcNpI25FeOoCwOTqWyLruASEaoHXijNvXr6edEmE3tCMORFp76MLhx6T5QJdVGs4ZYIjlDw0GoTUiVBTwgzcSBAylccu+wE+s0JW867l8DhlVz2UUdWjkzKusUY1n2Y/IFQIuXeF0uwIhQZBfEusSAhmt/gUdJVS3YXQY/Vv91fEfBYARUE4DR2n5KdKObqBMixpPiuAIiAMxmR+Zgv8vKT5pDzApVKTzBOCezWWZyS0xZSmA1M8AizmiwCQFcIj6ruCqsCLVKjUJM27ZoKuwZExspovagRw5Qns5osGUCQEEfMcAIqAIGaeC0AeCKLmOQFkgSBunhtAGghezEsAcIGwxpf5ovOArHmC8mVeagQkjQRv5qUB2BC61f9/KvcF2q6m+T9N1SHcoYJogfr7wuIuQXmuyiijjDIE4w/EynO/POJhYgAAAABJRU5ErkJggg=={scale="+$scale+"}>"
+!endfunction
+
+IBMEntityColoring(unknown)
+!define unknown(e_alias, e_label, e_techn) IBMEntity(e_alias, e_label, e_techn, #232F3E, unknown, unknown)
+!define unknown(e_alias, e_label, e_techn, e_descr) IBMEntity(e_alias, e_label, e_techn, e_descr, #232F3E, unknown, unknown)
+!define unknownParticipant(p_alias, p_label, p_techn) IBMParticipant(p_alias, p_label, p_techn, #232F3E, unknown, unknown)
+!define unknownParticipant(p_alias, p_label, p_techn, p_descr) IBMParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, unknown, unknown)

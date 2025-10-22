@@ -1,0 +1,13 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $gasstationfilled [64x64/16z] xS61400000CXXFdRpkElMXu0001m
+
+!function $gasstationfilledIMG($scale=1)
+!return "<img data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAAIGNIUk0AAHomAACAhAAA+gAAAIDoAAB1MAAA6mAAADqYAAAXcJy6UTwAAAAEZ0FNQQAAsY58+1GTAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAAOxAAADsQBlSsOGwAAAdNJREFUeNrtmr1Lw0AYxpOaOjqokxhwcHDTRdzc3dRFFFEcdHN21cnRUXSzVsRBwQ9wE/8JQYTiIjqIouAoxOcwQgy9NDYf5vI+D/yg1ybp5Xdvvq61LIZhGEZuOgzu9z6oghtpAlSfD8AsmAR3SSQ4MZaZALugP6cdfAAr4FLz+R6YCfS/7r8+yqoCroCb4wh3gXGwpfm86o98xW9XklRCJcYy7j+UedR3qpGeB5+hSq4HKiNVAUVMahJMFZCaBJMFpCLBdAFBCVY7EsogQHcJjCWhLAKi7nNqYFiqAJVOsClZgMqYdAHdSZ4FWsVucz2vCGakVAAFUECG5wCvIPvyCPokV8C19ENgDbxIFqCm0kbAIXiSehJUEub+ci7gVaDAffNijHbU7HHpK0BN0+9IvxFypQso9TnAzuPOkw9DFEABFEABFEABFEABFEABFEABhkT80+BHqN1sAjT83nuZBNyG2otNlgm/19BtzDFQwBkYDbQ3rO/Jk5rfXgDroXVOdRuzsz7GUsxPX3v8KuiNud4rGALPZTkE1M9fS9bv/wbqopZZ1u28yZfBCzAN3lqMvPqL3EnUhhzL3JyDQbAKpsCAf5jcg2OwHTXyDMMwDMMwX2fbSDSs4QZgAAAAAElFTkSuQmCC{scale="+$scale+"}>"
+!endfunction
+
+IBMEntityColoring(gasstationfilled)
+!define gasstationfilled(e_alias, e_label, e_techn) IBMEntity(e_alias, e_label, e_techn, #232F3E, gasstationfilled, gasstationfilled)
+!define gasstationfilled(e_alias, e_label, e_techn, e_descr) IBMEntity(e_alias, e_label, e_techn, e_descr, #232F3E, gasstationfilled, gasstationfilled)
+!define gasstationfilledParticipant(p_alias, p_label, p_techn) IBMParticipant(p_alias, p_label, p_techn, #232F3E, gasstationfilled, gasstationfilled)
+!define gasstationfilledParticipant(p_alias, p_label, p_techn, p_descr) IBMParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, gasstationfilled, gasstationfilled)

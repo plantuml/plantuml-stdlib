@@ -1,0 +1,591 @@
+' Archimate-PlantUML
+
+' Version
+'######################################
+!function ArchimateVersion()
+  !$archimateVersion  =  "3.2.1"
+  !return $archimateVersion
+!endfunction
+
+!procedure ArchimateVersionDetails()
+  rectangle ArchimateVersionDetailsArea <<legendArea>> [
+  | PlantUML | **%version()** |
+  | Archimate-PlantUML | **ArchimateVersion()** |
+  ]
+!endprocedure
+
+
+' Styling
+'######################################
+
+!global $ARCH_DEBUG ?= %false()
+!global $ARCH_LOCAL ?= %false()
+!global $ARCH_SEQUENCE_SUPPORT ?= %false()
+
+!if ($ARCH_LOCAL == %true())
+    !include themes/shared_style.puml
+    !if ($ARCH_SEQUENCE_SUPPORT == %true())
+        !include ArchimateSequenceDiagramSupport.puml
+    !endif
+!else
+    !include <archimate/themes/shared_style>
+    !if ($ARCH_SEQUENCE_SUPPORT == %true())
+        !include <archimate/ArchimateSequenceDiagramSupport>
+    !endif
+!endif
+
+!if ($ARCH_DEBUG == %true())
+    left header "Created using Archimate.puml version ArchimateVersion()"
+!endif
+
+' Layout
+' ##################################
+!procedure LAYOUT_AS_SKETCH()
+    !option handwritten %true()
+    <style>
+        root {
+            BackgroundColor #EEEBDC
+            FontName "Comic Sans MS"
+        }
+
+    </style>
+    center footer <font color=red>Warning:</font> Created for discussion, needs to be validated
+!endprocedure
+!procedure LAYOUT_TOP_DOWN()
+    top to bottom direction
+!endprocedure
+!procedure LAYOUT_LEFT_RIGHT()
+    left to right direction
+!endprocedure
+
+' Layout Helpers
+' ##################################
+!unquoted procedure Lay_D(e_from, e_to)
+    e_from -[hidden]D- e_to
+!endprocedure
+!unquoted procedure Lay_U(e_from, e_to)
+    e_from -[hidden]U- e_to
+!endprocedure
+!unquoted procedure Lay_R(e_from, e_to)
+    e_from -[hidden]R- e_to
+!endprocedure
+!unquoted procedure Lay_L(e_from, e_to)
+    e_from -[hidden]L- e_to
+!endprocedure
+
+' Boundaries
+' ##################################
+!unquoted procedure Boundary(e_alias, e_label)
+    rectangle "==e_label" <<boundary>> as e_alias
+!endprocedure
+!unquoted procedure Boundary(e_alias, e_label, e_type)
+    rectangle "==e_label%n()<size:$ARCH_TECHNOLOGY_TYPE_FONTSIZE>[e_type]</size>" <<boundary>> as e_alias
+!endprocedure
+
+' Elements
+' ##################################
+
+'Strategy Elements
+!unquoted procedure Strategy_Resource($alias, $label, $nest=0)
+  archimate $ARCH_STRATEGY_FILLCOLOR "$label" <<strategy-resource>> as $alias
+!endprocedure
+!unquoted procedure Strategy_Capability($alias, $label, $nest=0)
+  archimate $ARCH_STRATEGY_FILLCOLOR "$label" <<strategy-capability>> as $alias
+!endprocedure
+!unquoted procedure Strategy_CourseOfAction($alias, $label, $nest=0)
+  archimate $ARCH_STRATEGY_FILLCOLOR "$label" <<strategy-courseofaction>> as $alias
+!endprocedure
+!unquoted procedure Strategy_ValueStream($alias, $label, $nest=0, $special = $ARCH_SPECIAL_SHAPES)
+  !if ($special == %true())
+      process "$label" as $alias $ARCH_STRATEGY_FILLCOLOR
+  !else
+      archimate $ARCH_STRATEGY_FILLCOLOR "$label" <<strategy-valuestream>> as $alias
+  !endif
+!endprocedure
+
+'Business Elements
+!unquoted procedure Business_Actor($alias, $label, $nest=0, $special = $ARCH_SPECIAL_SHAPES)
+  !if ($special == %true() && $nest == %false())
+      actor "$label" as $alias $ARCH_BUSINESS_FILLCOLOR
+  !else
+      archimate $ARCH_BUSINESS_FILLCOLOR "$label" <<business-actor>> as $alias
+  !endif
+!endprocedure
+!unquoted procedure Business_Role($alias, $label, $nest=0, $special = $ARCH_SPECIAL_SHAPES)
+  !if ($special == %true())
+    queue "%n()$label%n()" as $alias $ARCH_BUSINESS_FILLCOLOR
+  !else
+    archimate $ARCH_BUSINESS_FILLCOLOR "$label" <<business-role>> as $alias
+  !endif
+!endprocedure
+!unquoted procedure Business_Collaboration($alias, $label, $nest=0)
+  archimate $ARCH_BUSINESS_FILLCOLOR "$label" <<business-collaboration>> as $alias
+!endprocedure
+!unquoted procedure Business_Interface($alias, $label, $nest=0)
+  archimate $ARCH_BUSINESS_FILLCOLOR "$label" <<business-interface>> as $alias
+!endprocedure
+!unquoted procedure Business_Process($alias, $label, $nest=0)
+  archimate $ARCH_BUSINESS_FILLCOLOR "$label" <<business-process>> as $alias
+!endprocedure
+!unquoted procedure Business_Function($alias, $label, $nest=0)
+  archimate $ARCH_BUSINESS_FILLCOLOR "$label" <<business-function>> as $alias
+!endprocedure
+!unquoted procedure Business_Interaction($alias, $label, $nest=0)
+  archimate $ARCH_BUSINESS_FILLCOLOR "$label" <<business-interaction>> as $alias
+!endprocedure
+!unquoted procedure Business_Event($alias, $label, $nest=0)
+  archimate $ARCH_BUSINESS_FILLCOLOR "$label" <<business-event>> as $alias
+!endprocedure
+!unquoted procedure Business_Service($alias, $label, $nest=0, $special = $ARCH_SPECIAL_SHAPES)
+  !if ($special == %true() && $nest == %false())
+      rectangle "$label" <<service-special>> as $alias $ARCH_BUSINESS_FILLCOLOR
+  !else
+      archimate $ARCH_BUSINESS_FILLCOLOR "$label" <<business-service>> as $alias
+  !endif
+!endprocedure
+!unquoted procedure Business_Object($alias, $label, $nest=0)
+  archimate $ARCH_BUSINESS_FILLCOLOR "$label" <<business-object>> as $alias
+!endprocedure
+!unquoted procedure Business_Contract($alias, $label, $nest=0)
+  archimate $ARCH_BUSINESS_FILLCOLOR "$label" <<business-contract>> as $alias
+!endprocedure
+!unquoted procedure Business_Representation($alias, $label, $nest=0)
+  archimate $ARCH_BUSINESS_FILLCOLOR "$label" <<business-representation>> as $alias
+!endprocedure
+!unquoted procedure Business_Product($alias, $label, $nest=0, $special = $ARCH_SPECIAL_SHAPES)
+  !if ($special == %true())
+    frame "%n()$label%n()" as $alias $ARCH_BUSINESS_FILLCOLOR
+  !else
+    archimate $ARCH_BUSINESS_FILLCOLOR "$label" <<business-product>> as $alias
+  !endif
+!endprocedure
+!unquoted procedure Business_Location($alias, $label, $nest=0)
+  archimate $ARCH_BUSINESS_FILLCOLOR "$label" <<business-location>> as $alias
+!endprocedure
+
+'Application Elements
+!unquoted procedure Application_Component($alias, $label, $nest=0)
+  archimate $ARCH_APPLICATION_FILLCOLOR "$label" <<application-component>> as $alias
+!endprocedure
+!unquoted procedure Application_Collaboration($alias, $label, $nest=0)
+  archimate $ARCH_APPLICATION_FILLCOLOR "$label" <<application-collaboration>> as $alias
+!endprocedure
+!unquoted procedure Application_Interface($alias, $label, $nest=0)
+  archimate $ARCH_APPLICATION_FILLCOLOR "$label" <<application-interface>> as $alias
+!endprocedure
+!unquoted procedure Application_Function($alias, $label, $nest=0)
+  archimate $ARCH_APPLICATION_FILLCOLOR "$label" <<application-function>> as $alias
+!endprocedure
+!unquoted procedure Application_Interaction($alias, $label, $nest=0)
+  archimate $ARCH_APPLICATION_FILLCOLOR "$label" <<application-interaction>> as $alias
+!endprocedure
+!unquoted procedure Application_Process($alias, $label, $nest=0)
+  archimate $ARCH_APPLICATION_FILLCOLOR "$label" <<application-process>> as $alias
+!endprocedure
+!unquoted procedure Application_Event($alias, $label, $nest=0)
+  archimate $ARCH_APPLICATION_FILLCOLOR "$label" <<application-event>> as $alias
+!endprocedure
+!unquoted procedure Application_Service($alias, $label, $nest=0, $special = $ARCH_SPECIAL_SHAPES)
+  !if ($special == %true() && $nest == %false())
+      rectangle "$label" <<service-special>> as $alias $ARCH_APPLICATION_FILLCOLOR
+  !else
+      archimate $ARCH_APPLICATION_FILLCOLOR "$label" <<application-service>> as $alias
+  !endif
+!endprocedure
+!unquoted procedure Application_DataObject($alias, $label, $nest=0)
+  archimate $ARCH_APPLICATION_FILLCOLOR "$label" <<application-dataobject>> as $alias
+!endprocedure
+
+'Technology Elements
+!unquoted procedure Technology_Node($alias, $label, $nest=0, $special = $ARCH_SPECIAL_SHAPES)
+  !if ($special == %true())
+    node "$label" as $alias $ARCH_TECHNOLOGY_FILLCOLOR
+  !else
+    archimate $ARCH_TECHNOLOGY_FILLCOLOR "$label" <<technology-node>> as $alias
+  !endif
+!endprocedure
+!unquoted procedure Technology_Device($alias, $label, $nest=0)
+  archimate $ARCH_TECHNOLOGY_FILLCOLOR "$label" <<technology-device>> as $alias
+!endprocedure
+!unquoted procedure Technology_SystemSoftware($alias, $label, $nest=0)
+  archimate $ARCH_TECHNOLOGY_FILLCOLOR "$label" <<technology-systemsoftware>> as $alias
+!endprocedure
+!unquoted procedure Technology_Collaboration($alias, $label, $nest=0)
+  archimate $ARCH_TECHNOLOGY_FILLCOLOR "$label" <<technology-collaboration>> as $alias
+!endprocedure
+!unquoted procedure Technology_Interface($alias, $label, $nest=0)
+  archimate $ARCH_TECHNOLOGY_FILLCOLOR "$label" <<technology-interface>> as $alias
+!endprocedure
+!unquoted procedure Technology_Path($alias, $label, $nest=0)
+  archimate $ARCH_TECHNOLOGY_FILLCOLOR "$label" <<technology-path>> as $alias
+!endprocedure
+!unquoted procedure Technology_CommunicationNetwork($alias, $label, $nest=0)
+  archimate $ARCH_TECHNOLOGY_FILLCOLOR "$label" <<technology-communicationnetwork>> as $alias
+!endprocedure
+!unquoted procedure Technology_Function($alias, $label, $nest=0)
+  archimate $ARCH_TECHNOLOGY_FILLCOLOR "$label" <<technology-function>> as $alias
+!endprocedure
+!unquoted procedure Technology_Process($alias, $label, $nest=0)
+  archimate $ARCH_TECHNOLOGY_FILLCOLOR "$label" <<technology-process>> as $alias
+!endprocedure
+!unquoted procedure Technology_Interaction($alias, $label, $nest=0)
+  archimate $ARCH_TECHNOLOGY_FILLCOLOR "$label" <<technology-interaction>> as $alias
+!endprocedure
+!unquoted procedure Technology_Event($alias, $label, $nest=0)
+  archimate $ARCH_TECHNOLOGY_FILLCOLOR "$label" <<technology-event>> as $alias
+!endprocedure
+!unquoted procedure Technology_Service($alias, $label, $nest=0, $special = $ARCH_SPECIAL_SHAPES)
+  !if ($special == %true() && $nest == %false())
+      rectangle "$label" <<service-special>> as $alias $ARCH_TECHNOLOGY_FILLCOLOR
+  !else
+      archimate $ARCH_TECHNOLOGY_FILLCOLOR "$label" <<technology-service>> as $alias
+  !endif
+!endprocedure
+!unquoted procedure Technology_Artifact($alias, $label, $nest=0, $special = $ARCH_SPECIAL_SHAPES)
+  !if ($special == %true())
+    file "$label" as $alias $ARCH_TECHNOLOGY_FILLCOLOR
+  !else
+    archimate $ARCH_TECHNOLOGY_FILLCOLOR "$label" <<technology-artifact>> as $alias
+  !endif
+!endprocedure
+
+'Physical Elements
+!unquoted procedure Physical_Equipment($alias, $label, $nest=0)
+  archimate $ARCH_PHYSICAL_FILLCOLOR "$label" <<technology-equipment>> as $alias
+!endprocedure
+!unquoted procedure Physical_Facility($alias, $label, $nest=0)
+  archimate $ARCH_PHYSICAL_FILLCOLOR "$label" <<technology-facility>> as $alias
+!endprocedure
+!unquoted procedure Physical_DistributionNetwork($alias, $label, $nest=0)
+  archimate $ARCH_PHYSICAL_FILLCOLOR "$label" <<technology-distributionnetwork>> as $alias
+!endprocedure
+!unquoted procedure Physical_Material($alias, $label, $nest=0)
+  archimate $ARCH_PHYSICAL_FILLCOLOR "$label" <<technology-material>> as $alias
+!endprocedure
+
+'Motivation Elements
+!unquoted procedure Motivation_Stakeholder($alias, $label, $nest=0, $special = $ARCH_SPECIAL_SHAPES)
+  !if ($special == %true())
+    queue "%n()$label%n()" as $alias $ARCH_MOTIVATION_FILLCOLOR
+  !else
+    archimate $ARCH_MOTIVATION_FILLCOLOR "$label" <<motivation-stakeholder>> as $alias
+  !endif
+!endprocedure
+!unquoted procedure Motivation_Driver($alias, $label, $nest=0)
+  archimate $ARCH_MOTIVATION_FILLCOLOR "$label" <<motivation-driver>> as $alias
+!endprocedure
+!unquoted procedure Motivation_Assessment($alias, $label, $nest=0)
+  archimate $ARCH_MOTIVATION_FILLCOLOR "$label" <<motivation-assessment>> as $alias
+!endprocedure
+!unquoted procedure Motivation_Goal($alias, $label, $nest=0)
+  archimate $ARCH_MOTIVATION_FILLCOLOR "$label" <<motivation-goal>> as $alias
+!endprocedure
+!unquoted procedure Motivation_Outcome($alias, $label, $nest=0)
+  archimate $ARCH_MOTIVATION_FILLCOLOR "$label" <<motivation-outcome>> as $alias
+!endprocedure
+!unquoted procedure Motivation_Principle($alias, $label, $nest=0)
+  archimate $ARCH_MOTIVATION_FILLCOLOR "$label" <<motivation-principle>> as $alias
+!endprocedure
+!unquoted procedure Motivation_Requirement($alias, $label, $nest=0)
+  archimate $ARCH_MOTIVATION_FILLCOLOR "$label" <<motivation-requirement>> as $alias
+!endprocedure
+!unquoted procedure Motivation_Constraint($alias, $label, $nest=0)
+  archimate $ARCH_MOTIVATION_FILLCOLOR "$label" <<motivation-constraint>> as $alias
+!endprocedure
+!unquoted procedure Motivation_Meaning($alias, $label, $nest=0, $special = $ARCH_SPECIAL_SHAPES)
+  !if ($special == %true())
+    cloud "$label" as $alias $ARCH_MOTIVATION_FILLCOLOR
+  !else
+    archimate $ARCH_MOTIVATION_FILLCOLOR "$label" <<motivation-meaning>> as $alias
+  !endif
+!endprocedure
+!unquoted procedure Motivation_Value($alias, $label, $nest=0, $special = $ARCH_SPECIAL_SHAPES)
+  !if ($special == %true() && $nest == %false())
+    usecase "%n()$label%n()" as $alias $ARCH_MOTIVATION_FILLCOLOR
+  !else
+    archimate $ARCH_MOTIVATION_FILLCOLOR "$label" <<motivation-value>> as $alias
+  !endif
+!endprocedure
+
+'Implementation Elements
+!unquoted procedure Implementation_WorkPackage($alias, $label, $nest=0)
+  archimate $ARCH_IMPLEMENTATION_FILLCOLOR "$label" <<implementation-workpackage>> as $alias
+!endprocedure
+!unquoted procedure Implementation_Deliverable($alias, $label, $nest=0)
+  archimate $ARCH_IMPLEMENTATION_FILLCOLOR "$label" <<implementation-deliverable>> as $alias
+!endprocedure
+!unquoted procedure Implementation_Event($alias, $label, $nest=0)
+  archimate $ARCH_IMPLEMENTATION_FILLCOLOR "$label" <<implementation-event>> as $alias
+!endprocedure
+!unquoted procedure Implementation_Plateau($alias, $label, $nest=0)
+  archimate $ARCH_IMPLEMENTATION_FILLCOLOR "$label" <<implementation-plateau>> as $alias
+!endprocedure
+!unquoted procedure Implementation_Gap($alias, $label, $nest=0)
+  archimate $ARCH_IMPLEMENTATION_FILLCOLOR "$label" <<implementation-gap>> as $alias
+!endprocedure
+
+'Other Elements
+!unquoted procedure Other_Location($alias, $label, $nest=0)
+  archimate $ARCH_OTHER_FILLCOLOR "$label" <<location>> as $alias
+!endprocedure
+!unquoted procedure Other_Grouping($alias, $label)
+  archimate #transparent "$label" <<other-grouping>> as $alias
+!endprocedure
+!unquoted procedure Junction_Or($alias, $label)
+  circle $ARCH_JUNCTIONOR_FILLCOLOR "$label" as $alias
+!endprocedure
+!unquoted procedure Junction_And($alias, $label)
+  circle $ARCH_JUNCTIONAND_FILLCOLOR "$label" as $alias
+!endprocedure
+!unquoted procedure Grouping($alias, $label)
+  folder "$label" <<grouping>> as $alias
+!endprocedure
+!unquoted procedure Group($alias, $label)
+  folder "$label" <<group>> as $alias
+!endprocedure
+
+' Relationships
+' ##################################
+!unquoted procedure Rel_($sourceAlias, $targetAlias, $label, $direction="")
+  $sourceAlias $direction $targetAlias : "$label"
+!endprocedure
+
+!unquoted procedure Rel_Composition($From, $To, $label="") 
+  Rel_($From, $To, $label, "*--")
+!endprocedure
+!unquoted procedure Rel_Composition_Up($From, $To, $label="") 
+  Rel_($From, $To, $label, "*-UP-")
+!endprocedure
+!unquoted procedure Rel_Composition_Down($From, $To, $label="") 
+  Rel_($From, $To, $label, "*-DOWN-")
+!endprocedure
+!unquoted procedure Rel_Composition_Left($From, $To, $label="") 
+  Rel_($From, $To, $label, "*-LEFT-")
+!endprocedure
+!unquoted procedure Rel_Composition_Right($From, $To, $label="") 
+  Rel_($From, $To, $label, "*-RIGHT-")
+!endprocedure
+
+!unquoted procedure Rel_Aggregation($From, $To, $label="")
+  Rel_($From, $To, $label, "o--")
+!endprocedure
+!unquoted procedure Rel_Aggregation_Up($From, $To, $label="")
+  Rel_($From, $To, $label, "o-UP-")
+!endprocedure
+!unquoted procedure Rel_Aggregation_Down($From, $To, $label="")
+  Rel_($From, $To, $label, "o-DOWN-")
+!endprocedure
+!unquoted procedure Rel_Aggregation_Left($From, $To, $label="")
+  Rel_($From, $To, $label, "o-LEFT-")
+!endprocedure
+!unquoted procedure Rel_Aggregation_Right($From, $To, $label="")
+  Rel_($From, $To, $label, "o-RIGHT-")
+!endprocedure
+
+!unquoted procedure Rel_Assignment($From, $To, $label="")
+  Rel_($From, $To, $label, "@-->>")
+!endprocedure
+!unquoted procedure Rel_Assignment_Up($From, $To, $label="")
+  Rel_($From, $To, $label, "@-UP->>")
+!endprocedure
+!unquoted procedure Rel_Assignment_Down($From, $To, $label="")
+  Rel_($From, $To, $label, "@-DOWN->>")
+!endprocedure
+!unquoted procedure Rel_Assignment_Left($From, $To, $label="")
+  Rel_($From, $To, $label, "@-LEFT->>")
+!endprocedure
+!unquoted procedure Rel_Assignment_Right($From, $To, $label="")
+  Rel_($From, $To, $label, "@-RIGHT->>")
+!endprocedure
+
+!unquoted procedure Rel_Specialization($From, $To, $label="")
+  Rel_($From, $To, $label, "--|>")
+!endprocedure
+!unquoted procedure Rel_Specialization_Up($From, $To, $label="")
+  Rel_($From, $To, $label, "-UP-|>")
+!endprocedure
+!unquoted procedure Rel_Specialization_Down($From, $To, $label="")
+  Rel_($From, $To, $label, "-DOWN-|>")
+!endprocedure
+!unquoted procedure Rel_Specialization_Left($From, $To, $label="")
+  Rel_($From, $To, $label, "-LEFT-|>")
+!endprocedure
+!unquoted procedure Rel_Specialization_Right($From, $To, $label="")
+  Rel_($From, $To, $label, "-RIGHT-|>")
+!endprocedure
+
+!unquoted procedure Rel_Serving($From, $To, $label="")
+  Rel_($From, $To, $label, "-->")
+!endprocedure
+!unquoted procedure Rel_Serving_Up($From, $To, $label="")
+  Rel_($From, $To, $label, "-UP->")
+!endprocedure
+!unquoted procedure Rel_Serving_Down($From, $To, $label="")
+  Rel_($From, $To, $label, "-DOWN->")
+!endprocedure
+!unquoted procedure Rel_Serving_Left($From, $To, $label="")
+  Rel_($From, $To, $label, "-LEFT->")
+!endprocedure
+!unquoted procedure Rel_Serving_Right($From, $To, $label="")
+  Rel_($From, $To, $label, "-RIGHT->")
+!endprocedure
+
+!unquoted procedure Rel_Association($From, $To, $label="")
+  Rel_($From, $To, $label, "--")
+!endprocedure
+!unquoted procedure Rel_Association_Up($From, $To, $label="")
+  Rel_($From, $To, $label, "-UP-")
+!endprocedure
+!unquoted procedure Rel_Association_Down($From, $To, $label="")
+  Rel_($From, $To, $label, "-DOWN-")
+!endprocedure
+!unquoted procedure Rel_Association_Left($From, $To, $label="")
+  Rel_($From, $To, $label, "-LEFT-")
+!endprocedure
+!unquoted procedure Rel_Association_Right($From, $To, $label="")
+  Rel_($From, $To, $label, "-RIGHT-")
+!endprocedure
+
+!unquoted procedure Rel_Association_dir($From, $To, $label="")
+  Rel_($From, $To, $label, "--\\")
+!endprocedure
+!unquoted procedure Rel_Association_dir_Up($From, $To, $label="")
+  Rel_($From, $To, $label, "-UP-\\")
+!endprocedure
+!unquoted procedure Rel_Association_dir_Down($From, $To, $label="")
+  Rel_($From, $To, $label, "-DOWN-\\")
+!endprocedure
+!unquoted procedure Rel_Association_dir_Left($From, $To, $label="")
+  Rel_($From, $To, $label, "-LEFT-\\")
+!endprocedure
+!unquoted procedure Rel_Association_dir_Right($From, $To, $label="")
+  Rel_($From, $To, $label, "-RIGHT-\\")
+!endprocedure
+
+!unquoted procedure Rel_Flow($From, $To, $label="")
+  Rel_($From, $To, $label, "..>>")
+!endprocedure
+!unquoted procedure Rel_Flow_Up($From, $To, $label="")
+  Rel_($From, $To, $label, ".UP.>>")
+!endprocedure
+!unquoted procedure Rel_Flow_Down($From, $To, $label="")
+  Rel_($From, $To, $label, ".DOWN.>>")
+!endprocedure
+!unquoted procedure Rel_Flow_Left($From, $To, $label="")
+  Rel_($From, $To, $label, ".LEFT.>>")
+!endprocedure
+!unquoted procedure Rel_Flow_Right($From, $To, $label="")
+  Rel_($From, $To, $label, ".RIGHT.>>")
+!endprocedure
+
+!unquoted procedure Rel_Realization($From, $To, $label="")
+  Rel_($From, $To, $label, "~~|>")
+!endprocedure
+!unquoted procedure Rel_Realization_Up($From, $To, $label="")
+  Rel_($From, $To, $label, "~UP~|>")
+!endprocedure
+!unquoted procedure Rel_Realization_Down($From, $To, $label="")
+  Rel_($From, $To, $label, "~DOWN~|>")
+!endprocedure
+!unquoted procedure Rel_Realization_Left($From, $To, $label="")
+  Rel_($From, $To, $label, "~LEFT~|>")
+!endprocedure
+!unquoted procedure Rel_Realization_Right($From, $To, $label="")
+  Rel_($From, $To, $label, "~RIGHT~|>")
+!endprocedure
+
+!unquoted procedure Rel_Triggering($From, $To, $label="")
+  Rel_($From, $To, $label, "-->>")
+!endprocedure
+!unquoted procedure Rel_Triggering_Up($From, $To, $label="")
+  Rel_($From, $To, $label, "-UP->>")
+!endprocedure
+!unquoted procedure Rel_Triggering_Down($From, $To, $label="")
+  Rel_($From, $To, $label, "-DOWN->>")
+!endprocedure
+!unquoted procedure Rel_Triggering_Left($From, $To, $label="")
+  Rel_($From, $To, $label, "-LEFT->>")
+!endprocedure
+!unquoted procedure Rel_Triggering_Right($From, $To, $label="")
+  Rel_($From, $To, $label, "-RIGHT->>")
+!endprocedure
+
+!unquoted procedure Rel_Access($From, $To, $label="")
+  Rel_($From, $To, $label, "~~")
+!endprocedure
+!unquoted procedure Rel_Access_Up($From, $To, $label="")
+  Rel_($From, $To, $label, "~UP~")
+!endprocedure
+!unquoted procedure Rel_Access_Down($From, $To, $label="")
+  Rel_($From, $To, $label, "~DOWN~")
+!endprocedure
+!unquoted procedure Rel_Access_Left($From, $To, $label="")
+  Rel_($From, $To, $label, "~LEFT~")
+!endprocedure
+!unquoted procedure Rel_Access_Right($From, $To, $label="")
+  Rel_($From, $To, $label, "~RIGHT~")
+!endprocedure
+
+!unquoted procedure Rel_Access_r($From, $To, $label="")
+  Rel_($From, $To, $label, "<-~")
+!endprocedure
+!unquoted procedure Rel_Access_r_Up($From, $To, $label="")
+  Rel_($From, $To, $label, "<-UP~")
+!endprocedure
+!unquoted procedure Rel_Access_r_Down($From, $To, $label="")
+  Rel_($From, $To, $label, "<-DOWN~")
+!endprocedure
+!unquoted procedure Rel_Access_r_Left($From, $To, $label="")
+  Rel_($From, $To, $label, "<-LEFT~")
+!endprocedure
+!unquoted procedure Rel_Access_r_Right($From, $To, $label="")
+  Rel_($From, $To, $label, "<-RIGHT~")
+!endprocedure
+
+!unquoted procedure Rel_Access_rw($From, $To, $label="")
+  Rel_($From, $To, $label, "<~~>")
+!endprocedure
+!unquoted procedure Rel_Access_rw_Up($From, $To, $label="")
+  Rel_($From, $To, $label, "<~UP~>")
+!endprocedure
+!unquoted procedure Rel_Access_rw_Down($From, $To, $label="")
+  Rel_($From, $To, $label, "<~DOWN~>")
+!endprocedure
+!unquoted procedure Rel_Access_rw_Left($From, $To, $label="")
+  Rel_($From, $To, $label, "<~LEFT~>")
+!endprocedure
+!unquoted procedure Rel_Access_rw_Right($From, $To, $label="")
+  Rel_($From, $To, $label, "<~RIGHT~>")
+!endprocedure
+
+!unquoted procedure Rel_Access_w($From, $To, $label="")
+  Rel_($From, $To, $label, "~->")
+!endprocedure
+!unquoted procedure Rel_Access_w_Up($From, $To, $label="")
+  Rel_($From, $To, $label, "~UP->")
+!endprocedure
+!unquoted procedure Rel_Access_w_Down($From, $To, $label="")
+  Rel_($From, $To, $label, "~DOWN->")
+!endprocedure
+!unquoted procedure Rel_Access_w_Left($From, $To, $label="")
+  Rel_($From, $To, $label, "~LEFT->")
+!endprocedure
+!unquoted procedure Rel_Access_w_Right($From, $To, $label="")
+  Rel_($From, $To, $label, "~RIGHT->")
+!endprocedure
+
+!unquoted procedure Rel_Influence($From, $To, $label="")
+  Rel_($From, $To, $label, "..>")
+!endprocedure
+!unquoted procedure Rel_Influence_Up($From, $To, $label="")
+  Rel_($From, $To, $label, ".UP.>")
+!endprocedure
+!unquoted procedure Rel_Influence_Down($From, $To, $label="")
+  Rel_($From, $To, $label, ".DOWN.>")
+!endprocedure
+!unquoted procedure Rel_Influence_Left($From, $To, $label="")
+  Rel_($From, $To, $label, ".LEFT.>")
+!endprocedure
+!unquoted procedure Rel_Influence_Right($From, $To, $label="")
+  Rel_($From, $To, $label, ".RIGHT.>")
+!endprocedure

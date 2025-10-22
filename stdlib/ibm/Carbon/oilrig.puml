@@ -1,0 +1,13 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $oilrig [64x64/16z] xS61400000CXXFdRpkElMXu0001m
+
+!function $oilrigIMG($scale=1)
+!return "<img data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAAIGNIUk0AAHomAACAhAAA+gAAAIDoAAB1MAAA6mAAADqYAAAXcJy6UTwAAAAEZ0FNQQAAsY58+1GTAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAAOxAAADsQBlSsOGwAAAr9JREFUeNrtWztLJEEQ7l13gzMRI8HEO9B0AxGVQwUDA/+CaCIoXqqgmcZuYKogGKiB/oIxWzgTEaM19xEYbKJsbLBXjdXSFjPbr1nmxqmCj6a7qqunvunp6ZqHEAWXUg6PeQiwDRgn7SeAM1dnlZwFvgPYAPwAvAKaqKsBlr4rAXrgUo4AvwFvgEVsu/J1XslZ4PuAFiBKa5BKzgJXUgZMABraJXCXdwJsAld2M4Bnra2FbUMx9v89AbaBK9nGcl6zkT4eULeVFwJcA1d9NtC2RWbAEerqLrPAl4AVwKrBJum+7BM4Pfv1GF0dfTrNAl8ClnDhaSbo4+7LIYF3O/tBsyDkErjV7sNUohQDtzn73rOgl2vAIOAghcBtzr4+Cw4Bf2xnQS8JmMJLISRwJZuAflz5GwbbAbTdxJmXGQH3gIXAwPU1Re792xa2bbStZX0JvKQUvM2aQ8U6NygX/XkAE8AEMAFMABNQZCk5ZHd0YyIMyVA3Pc0WTePH+ev2FFjuAzo2+4Yyye5spWkIzqRX2aKwHJ/6o/29peK50wqVKHCnF/EawAQwAUwAE8AEMAFMABPABDABqWSDcm89aUhg0hSa3dlkjz3JRrN6O9w01F37u+o/311mlQ1mLRGvAUwAE8AEMAHi6zNBuQ9oFCTuGt71RJ82E4YdHbh8k+dq7xOQ7t80nmw/Ddn4RcLtyayrfejxXNmOx4sgE8AEMAFMABPABDABTAATUHACVhDCsk4lbfvQ47EeT6XD8jP0OcAF1nexVPU9LC+xHMOySvRJ/al9kn/fOvU/ajg+Wf8LOFPvBaYB14AnrP8UH19Zybq0GcF29avaCLY/aXWll/1+denfQf+y/THBvxr/Oca/afyk/iUS3yzgRv95WpKwhh2PAe+AZdSdY6nXq8Relus4kE9/gfVe9a8S/Y1gEeIfwzTRKSHmgugAAAAASUVORK5CYII={scale="+$scale+"}>"
+!endfunction
+
+IBMEntityColoring(oilrig)
+!define oilrig(e_alias, e_label, e_techn) IBMEntity(e_alias, e_label, e_techn, #232F3E, oilrig, oilrig)
+!define oilrig(e_alias, e_label, e_techn, e_descr) IBMEntity(e_alias, e_label, e_techn, e_descr, #232F3E, oilrig, oilrig)
+!define oilrigParticipant(p_alias, p_label, p_techn) IBMParticipant(p_alias, p_label, p_techn, #232F3E, oilrig, oilrig)
+!define oilrigParticipant(p_alias, p_label, p_techn, p_descr) IBMParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, oilrig, oilrig)

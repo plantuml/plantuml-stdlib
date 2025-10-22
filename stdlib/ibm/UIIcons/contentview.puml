@@ -1,0 +1,13 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $contentview [64x64/16z] xS61400000CXXFdRpkElMXu0001m
+
+!function $contentviewIMG($scale=1)
+!return "<img data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAAIGNIUk0AAHomAACAhAAA+gAAAIDoAAB1MAAA6mAAADqYAAAXcJy6UTwAAAAEZ0FNQQAAsY58+1GTAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAAOxAAADsQBlSsOGwAAAzZJREFUeNrtWj1oFEEUHmNIZyMiREwkghiIYmMhokT8C0dKTWHqIEYrFc5CUgULD6NCiCdytYKJnT/ESMghBAuboGBAMEjCBURSWFpEv8e+g81kZ/Zus3fZ2X0ffHB7b2dm59s3P+/NKiUQCASC7GJHiH0/WADPgO2O9W0VnAPz4EoUAajzC+Bux1/yGnjMJEKLpWAhBZ1X3IeCyWgToDdFQ93Yl1ZLoX11zhdJwz9LX2rygExABBABRAARQATIMlojrqviASKACJC9OcDlWEA8QAQQAbY+B8Qh9gnwLHgSPOiL0yvgD3AenAU/getpEYBSUkPgdfCA4Z7DzBw4Cv4En4Al5eX0nBSA3vhV8J6qP7dIQt0H74B3wWeN8ohGCbAXnAJPx+A9RXAQvAz+ckGAo+AbsMNg/8qu/R5c5v/o3os8VI4ElCEhP4P94JckC3AI/MAeoOMveBN8GuDO35jj4DXwEdim3dPBdZ8CvydxGdwDTls6n+OJzTaW1/meHJcJGlrT3FbiBKAH7zLYbvHyVitmuUwQuritRA0BmqAGLGO+qP3nP3MkzKnNZ3hFHg5Bc8IAtzmVBA9o4bXbhJLm9tUzxyvKO3Bt598LbPMPh5Kl3tE4nj8OAS6B3Rb7jHZtOnMMOsObsdTbzW1vuwC3Q+zL2rXtzLE3pGy9bUsw1AwBxkLs+oaobLlXt3Vuse2mCPAKXLTYL2jXeUOAs8Y2W1k/FrntbReAZusRi31Ia4eWOvpi44XyPmNZ5d/6Vxw7uawJI3EESHHtA2g9njTsBWgdHwYnNBEGQ+qkMj0G22Qce4C4J0GK95cMtoecCKkV5yzje4nbStxW+DfYZwhZKbB5xw9ua5Pc/gb4NiAYUlx3H7eVyGiQorTzhnC4jYfBcEA43OkLh3ss+4n+OCPBRuUDKF4/bkmI0JzwuM46P7qUEKm6KgU6UVNi/qXRyZRYdXmk5MdLFZ4U1ZGKpKj/LVKQ80BlNC3u94h5ZqpigcwHQyKAy7DNARW18Rtbl78RqkTxgHKKXnQ5igD5Rq/BTUJQnmFD8GHCH/C58rK2dBCxy7GOU57htfISpytKIBAIBIJN+A9YwqFucl6siQAAAABJRU5ErkJggg=={scale="+$scale+"}>"
+!endfunction
+
+IBMEntityColoring(contentview)
+!define contentview(e_alias, e_label, e_techn) IBMEntity(e_alias, e_label, e_techn, #232F3E, contentview, contentview)
+!define contentview(e_alias, e_label, e_techn, e_descr) IBMEntity(e_alias, e_label, e_techn, e_descr, #232F3E, contentview, contentview)
+!define contentviewParticipant(p_alias, p_label, p_techn) IBMParticipant(p_alias, p_label, p_techn, #232F3E, contentview, contentview)
+!define contentviewParticipant(p_alias, p_label, p_techn, p_descr) IBMParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, contentview, contentview)

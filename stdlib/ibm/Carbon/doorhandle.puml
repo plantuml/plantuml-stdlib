@@ -1,0 +1,13 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $doorhandle [64x64/16z] xS61400000CXXFdRpkElMXu0001m
+
+!function $doorhandleIMG($scale=1)
+!return "<img data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAAIGNIUk0AAHomAACAhAAA+gAAAIDoAAB1MAAA6mAAADqYAAAXcJy6UTwAAAAEZ0FNQQAAsY58+1GTAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAAOxAAADsQBlSsOGwAAArtJREFUeNrtms9LVFEUx1/jbGorWOagLWpRoChkf0Ik2A+cXRBJlDslBM0EEUk0DYKaVYZhBWkLJSgaKKFtOBCRoIswMEbSIHClu/R74XvhEZY2977n3LnnwId54Hvn3fv13HvPOTNB4Lkd4OcVcM2xsT8Bz02dJPh5GdQ5NPk6jtnYkqHrOdDkiABZW44Svu8BIoAIIAKIACKACCAC+GvJCHweBs1MV4+AMvAL5MB7sFyqApwEw+ACiyw10e/822nQBn6Dt6AXzBu8q6nYBLgFBsFPcBPMgPwf96RAC+/9BAb4jPMRMAZugAwnt/mX+5QgD8FjMALugGPgussCdHPyHRRgL7bJ+79SkGWK4dwpcAoMceKZAp7Xz/WBehcFUBveKugx8NHDfWPAtSWgj7pOsGHwfvXsPXAffIhhvt/ALJg0jYDzPOqmLQxqmr5qYhCgEbwAU6YRUMvNK29hUHn6esWIitquggm+b6rQCKgEKxYHtcI8IQ57yiTsrNQCBgL8AFUWx1FlaTntdQmoJfzOZA9QIdTOsDUdeIob4CXQEPHkyzn5l3ojLFSA12ALpMEDw0Gl6SuOKjHH/GXS9BRYA29AF3P7QnOBQ/ShfF10LRO8zXr/roEP9WwF6HcxFV5gXd9O/tf0c6oQ+uxqNTgKjrOqO7FLOaztIMthNfnx/awEbfUDVKdnic2NNCe3W0OkglXgvjdE9O8D9LetJq2mf7XEqnnU2WqJFVUEaFvkWb5TU3QxsNsUzVLkc8UkQPiIHC/1VNj7WkAEEAFEABFABBABSsCSEfpWafVYqF7I+hYBj1gApXjt3RJIuLDUohyYCvt10ubjHqDK3o+hazkFRADPloDuDXgtQKssARFABBABRAARQAQQAVxIhM4E8fxY0Yapr91yNhyVhSLhqEP/OJViPwNfAjEz2wZuXoH3mnvxIwAAAABJRU5ErkJggg=={scale="+$scale+"}>"
+!endfunction
+
+IBMEntityColoring(doorhandle)
+!define doorhandle(e_alias, e_label, e_techn) IBMEntity(e_alias, e_label, e_techn, #232F3E, doorhandle, doorhandle)
+!define doorhandle(e_alias, e_label, e_techn, e_descr) IBMEntity(e_alias, e_label, e_techn, e_descr, #232F3E, doorhandle, doorhandle)
+!define doorhandleParticipant(p_alias, p_label, p_techn) IBMParticipant(p_alias, p_label, p_techn, #232F3E, doorhandle, doorhandle)
+!define doorhandleParticipant(p_alias, p_label, p_techn, p_descr) IBMParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, doorhandle, doorhandle)

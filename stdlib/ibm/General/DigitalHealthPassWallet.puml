@@ -1,0 +1,20 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $DigitalHealthPassWallet [64x64/16z] {
+xTGt4iC030F1pWOT__zQH-Lqmq4d4VrUYUV2QhN7PFlrvSkNLxlpRAVlFe5FPBqd2A2707e8e8S0UWZal5mlrylrShrIFZHVoaC0FGJGGm0z1C3Z7poJKpVN
+o_LolLmlrylrEfeFruVhm_NX-W1Vgxq1
+}
+
+!function $DigitalHealthPassWalletIMG($scale=1)
+!if %variable_exists("$IBM_DARK") && ($IBM_DARK == true)
+!return "<img data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAAIGNIUk0AAHomAACAhAAA+gAAAIDoAAB1MAAA6mAAADqYAAAXcJy6UTwAAAAEZ0FNQQAAsY58+1GTAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAAOxAAADsQBlSsOGwAAAW9JREFUeNrtmE1ugzAQhW0XNhXiGj1Nz5FlL9Ftc5UcruwQM4Gki6giIXj8M3bekyxsYcvMJ88TY2MgCIIgCHpV2dgbDMPAkvVd10X9RvfqJwAAAAAAAAAAAAAAAAAAAAAAAAAAcB+wouOJ2dA88aaZO/2949V309z42nejMZ/fvx/jOLbOudZa2/w922maLs+lzbMbIrodX+Yy83vf9z+P4mu2ALC7UuJ/1Hilv3d8990CYd6X2vgn4CkA3oEEgKAGQC4I2QEsNikOJMDarCcgZCB71xbhATEhqEqBGiFsn4A3/8BKgLANYPmSjBB0eADlg6DHAyqFsM8DMkDQ5wGJIehIAaoXwvMpUCmE6GkmvU84fFmbNwWEkt4n5PeAAAC0VoJJARRbDovlCi+HY3uA/nI4gQeoLodDpkCR5bD4BAh/lsoHILxPqMMDSC+EdB7gCaEuD/CAUJ8HKIOQJgVIL4R0KeAJAYIgCIIgKJbOQ+ku7HIsFMcAAAAASUVORK5CYII={scale="+$scale+"}>"
+!else
+!return "<img data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAAIGNIUk0AAHomAACAhAAA+gAAAIDoAAB1MAAA6mAAADqYAAAXcJy6UTwAAAAEZ0FNQQAAsY58+1GTAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAAOxAAADsQBlSsOGwAAAXtJREFUeNrtmE1OxDAMhZs/qRuOwOkQO1hzEQ7Bii3nQSx7g0IS0tFIoxGVJsVOE6fvSVXTKNa0Xx3X84YBgiAIgqCjShX/hfunSIr/ei16j/roGQAAAAAAAAAAAAAAAAAAAAAAAAAAR5S9teD50ceYMAWTDn0+0vh6Tq3MXcb/jf9xw/D58HY3z7MLIdhxHK333i5j59zpHGM0Nuk8tsaY03m5XsbTNH2QAOiQbmYlVa7nFs9Dra77uzY/3n43kAHa0x6CCqE+gMD3EC1C2ASgRwjZW6AWhOoAVCjzJnPjm8iAUumcF1+9BpTd07fjmyiC/ULYUATrQGisCO4PocEi2BeE7EaoVwiEVrgPCJs7wb0hlFbxVovqJ7y/aFU1A8iWU2j3r/A+AJj8BNEZINoP4AQg0g/g2gJi/QDyZyYI9wM4MkC0H0CvAcL9AJ4iKNgP4CuCQv0A3iIo0A/gL4LC/ACuRkisH1CuFRbiB3B3gq35ARAEQRAEHVe/HiYrJxXD8woAAAAASUVORK5CYII={scale="+$scale+"}>"
+!endif
+!endfunction
+
+IBMEntityColoring(DigitalHealthPassWallet)
+!define DigitalHealthPassWallet(e_alias, e_label, e_techn) IBMEntity(e_alias, e_label, e_techn, #232F3E, DigitalHealthPassWallet, DigitalHealthPassWallet)
+!define DigitalHealthPassWallet(e_alias, e_label, e_techn, e_descr) IBMEntity(e_alias, e_label, e_techn, e_descr, #232F3E, DigitalHealthPassWallet, DigitalHealthPassWallet)
+!define DigitalHealthPassWalletParticipant(p_alias, p_label, p_techn) IBMParticipant(p_alias, p_label, p_techn, #232F3E, DigitalHealthPassWallet, DigitalHealthPassWallet)
+!define DigitalHealthPassWalletParticipant(p_alias, p_label, p_techn, p_descr) IBMParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, DigitalHealthPassWallet, DigitalHealthPassWallet)

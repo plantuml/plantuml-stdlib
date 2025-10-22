@@ -1,0 +1,25 @@
+!$PUML_THEME = "archimate-standard"
+!$THEME      = "archimate-standard"
+
+!global $ARCH_STRATEGY_FILLCOLOR = "#STRATEGY"
+!global $ARCH_BUSINESS_FILLCOLOR = "#BUSINESS"
+!global $ARCH_APPLICATION_FILLCOLOR = "#APPLICATION"
+!global $ARCH_TECHNOLOGY_FILLCOLOR = "#TECHNOLOGY"
+!global $ARCH_PHYSICAL_FILLCOLOR = "#PHYSICAL"
+!global $ARCH_MOTIVATION_FILLCOLOR = "#MOTIVATION"
+!global $ARCH_IMPLEMENTATION_FILLCOLOR = "#IMPLEMENTATION"
+!global $ARCH_OTHER_FILLCOLOR = "#efd1e4"
+!global $ARCH_JUNCTIONOR_FILLCOLOR = "#WhiteSmoke"
+!global $ARCH_JUNCTIONAND_FILLCOLOR = "#Black"
+!global $ARCH_GROUP_FILLCOLOR = "#LightGrey"
+!global $ARCH_FOLDER_LINECOLOR = "#444444"
+!global $ARCH_RELATIONSHIP_LINECOLOR = "#Black"
+!global $ARCH_RELATIONSHIP_FONTCOLOR = "#Black"
+
+!global $ARCH_LOCAL ?= %false()
+
+!if ($ARCH_LOCAL == %true())
+    !include shared_style.puml
+!else
+    !include <archimate/themes/shared_style>
+!endif

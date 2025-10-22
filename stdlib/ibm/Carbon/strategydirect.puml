@@ -1,0 +1,13 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $strategydirect [64x64/16z] xS61400000CXXFdRpkElMXu0001m
+
+!function $strategydirectIMG($scale=1)
+!return "<img data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAAIGNIUk0AAHomAACAhAAA+gAAAIDoAAB1MAAA6mAAADqYAAAXcJy6UTwAAAAEZ0FNQQAAsY58+1GTAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAAOxAAADsQBlSsOGwAAAh1JREFUeNrtm71KA0EQx9dLQC1Mgp3BNxBSWFib0ldQbHwqKxEDvkJK+xQqgj6DYuFpQExzOAdThHC5r52bmcvOwBAum729++W/s7tze84Fbls1612CXxX85gZ8Ilyv0KKaAM7BRznlI/wNVb2LmvUKreuhnhn42ZqyqaJ6jShgY6zb4LlPwB8ypDprqJ4qAPfgOxnfv2AZdT11ACZ1IrJHPWcxwAAYAANgAAyAATAABoBxJpg1Z5ey2muFjodyhkvHx+D74J9MN3wEfgj+jscf4He4ZhCxZ/BbxvbStp40xYABeMwI4AvbDBZArAlAeo49AQA9iuunyAf08UKoAeSNMAfYZs+33YhI/o5ZAYuVtkUV0BSAcU7ZKSpkoCEG9PHzmzkGOC0AJLpAvAI/WABqFJAwd4EfbFMNgDleEJclCEHNKOAj/7oryl1NCuDs/8tzgY1QwNhDOUErIDYABsAAiAOQyAWQ5gR8R4GmcgFl5gskOYGIQP7Oyc0DvNcD3RYBGDeRE4gIugB3LoB0RUilgGvwX+KZHktOgCoGLEJWQIL9MWEGQJIToFDAXODmyXICFAAkhkC3FHyDBuA9HS77vsC6/frpY+pt8EchAOlj+T/wt4yyUu8PlFXAun3+r4I377DtrJsv/f5AlVEgb7++NptyxYDWmwEwAAbAABgAA2AAwrUqM0FNe4OLrPTe4U4FpQxb9MeK7x1ujf0Dr1B4ivfL0RsAAAAASUVORK5CYII={scale="+$scale+"}>"
+!endfunction
+
+IBMEntityColoring(strategydirect)
+!define strategydirect(e_alias, e_label, e_techn) IBMEntity(e_alias, e_label, e_techn, #232F3E, strategydirect, strategydirect)
+!define strategydirect(e_alias, e_label, e_techn, e_descr) IBMEntity(e_alias, e_label, e_techn, e_descr, #232F3E, strategydirect, strategydirect)
+!define strategydirectParticipant(p_alias, p_label, p_techn) IBMParticipant(p_alias, p_label, p_techn, #232F3E, strategydirect, strategydirect)
+!define strategydirectParticipant(p_alias, p_label, p_techn, p_descr) IBMParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, strategydirect, strategydirect)

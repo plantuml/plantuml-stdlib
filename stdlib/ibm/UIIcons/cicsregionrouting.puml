@@ -1,0 +1,13 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $cicsregionrouting [64x64/16z] xS61400000CXXFdRpkElMXu0001m
+
+!function $cicsregionroutingIMG($scale=1)
+!return "<img data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAAIGNIUk0AAHomAACAhAAA+gAAAIDoAAB1MAAA6mAAADqYAAAXcJy6UTwAAAAEZ0FNQQAAsY58+1GTAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAAOxAAADsQBlSsOGwAAAiNJREFUeNrtmrtLw2AUxRMfdZBOOlSdBHEQXBx10RYExUUdFPofuLSoOAhuDlK0bk6uik4OigVRKIju4tYOTtapkzr4op7QW4ilbYL90uZ+vQd+0CQ3JefkezWpYYhEolaWyfCaCyo9t7V6C5AAZAxwpwGQAFOgz+fj0zw4BZ1uvrfDpfkH0MPghjqZ/1cXSDA2/6UigEnG5pecTnTTBfp9vnaoZf5M91mgLvPcA6jbPOcAlJh3OwaoWrObfjPPsQUoNc8tAOXmOQXgiXmvxwC/mDe5t4BlL+68yhZQqLPOaXaI0nUuqDbPpQt8k+kjcKLSPJcA7CEoV8s/EVLRAswGrwSVrkDloagEIAFIADILeKR6R/2GzCLSBSQAGQOarkFwRVyCNHivUtttFF/UzIJp4ol7ABEwRKyAD3BXoe4GTICusnMPuXeBSNm2ZTBcoS5cZr7SuSwDGGvSub7pAiNgHMyAOTDqUP8ILkAK3OsQwA+4JTbBGtitUrsO9nSeBoNk0qgRQFDnALZAyLb9RpQUohotAxgGsbJ924RdMarVLoAkCNi2M2CfyNj2B6hWuwAOQNa2HQefRNy2P0u12iyFS7KWwddglabClO2Y9fmYpsAkhaJdAAYZ26lyLCq/BiUACaApzwNyxt//ChYY+cupaAFpxjc4rSKADZBnaD5P115T7S6+6NUovpu31uG9qn+MeKAXcA4WwbMhEolEIpFIVEW/w7Ru0gl+pEYAAAAASUVORK5CYII={scale="+$scale+"}>"
+!endfunction
+
+IBMEntityColoring(cicsregionrouting)
+!define cicsregionrouting(e_alias, e_label, e_techn) IBMEntity(e_alias, e_label, e_techn, #232F3E, cicsregionrouting, cicsregionrouting)
+!define cicsregionrouting(e_alias, e_label, e_techn, e_descr) IBMEntity(e_alias, e_label, e_techn, e_descr, #232F3E, cicsregionrouting, cicsregionrouting)
+!define cicsregionroutingParticipant(p_alias, p_label, p_techn) IBMParticipant(p_alias, p_label, p_techn, #232F3E, cicsregionrouting, cicsregionrouting)
+!define cicsregionroutingParticipant(p_alias, p_label, p_techn, p_descr) IBMParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, cicsregionrouting, cicsregionrouting)

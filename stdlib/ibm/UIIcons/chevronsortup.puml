@@ -1,0 +1,13 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $chevronsortup [64x64/16z] xS61400000CXXFdRpkElMXu0001m
+
+!function $chevronsortupIMG($scale=1)
+!return "<img data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAAIGNIUk0AAHomAACAhAAA+gAAAIDoAAB1MAAA6mAAADqYAAAXcJy6UTwAAAAEZ0FNQQAAsY58+1GTAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAAOxAAADsQBlSsOGwAAAMVJREFUeNrt10EKglAYxHFxdh3GMwSdoaO4zq7SLVp6BW8RuHbdF7wHbYKgdL7o/4NZuHkwoyg2DQAAgMepxEbm8kNkX67Hfxqglq9sIyhBeesISlLeNoLM5efIEtm5RpC5/CFyiRxdI8hcforcIlfXCDKXr2wjKEF56whKUt42ghKVt4ygZOU3H0EJy286QrviS/CT8tVUzph/4SswPt2hb5R/9SQ8nrJz5n/8PtKtcG5XzgYAAAAAAAAAAAAAAAAAAO+5A6M3RqEB6BAUAAAAAElFTkSuQmCC{scale="+$scale+"}>"
+!endfunction
+
+IBMEntityColoring(chevronsortup)
+!define chevronsortup(e_alias, e_label, e_techn) IBMEntity(e_alias, e_label, e_techn, #232F3E, chevronsortup, chevronsortup)
+!define chevronsortup(e_alias, e_label, e_techn, e_descr) IBMEntity(e_alias, e_label, e_techn, e_descr, #232F3E, chevronsortup, chevronsortup)
+!define chevronsortupParticipant(p_alias, p_label, p_techn) IBMParticipant(p_alias, p_label, p_techn, #232F3E, chevronsortup, chevronsortup)
+!define chevronsortupParticipant(p_alias, p_label, p_techn, p_descr) IBMParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, chevronsortup, chevronsortup)

@@ -1,0 +1,13 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $soilmoisture [64x64/16z] xS61400000CXXFdRpkElMXu0001m
+
+!function $soilmoistureIMG($scale=1)
+!return "<img data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAAIGNIUk0AAHomAACAhAAA+gAAAIDoAAB1MAAA6mAAADqYAAAXcJy6UTwAAAAEZ0FNQQAAsY58+1GTAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAAOxAAADsQBlSsOGwAAAwBJREFUeNrtmUloFEEUhmeiIkEcd424YPCk4i1eRFwPkoPGBeNGVETMRQS9KurBoxqMihmXi3gJQcFDiCc9xBUhiOJKYg4GBL0JoonrX+Q/lI/OdE3PdE93+v3wwdTrWnpq6r16VZPJqFQqlUqlUqlUqjQq62H7m6bvXJX2FaAToFFApVJpHhCu6sEVfj4IuuI0XhS7QB7MJfm4jZf6bXBMBGO8BavAV9AMeuM0XjaGPhy7TDBqH9ZUOG4xIGofHnV5QJgx5jA4ws+nwfU47gJ+ugfmgRxYCVoc220AN8BkshH0gPdpiAFTRwjIeT5L1AoIEmOugeUe9olgPriVpBhQrDaD2z51tjrUSaQLTAeXha2H2DJ1ZozGCbgEZlnlQbCPDFr2maybiBjgqm3glLCdpL9/Bn/AOuvZEsaXV1FPgNnX74OjfIFyJE7mF+0EEyzbM7CfX9zoEceeY9VZza3yW5QuEMbZQfr0Dy77X5btN9jLZ3bMaEt6DNgJtngs/dcedd+AE8K2CeyOcgLMXj5AmkvsqwZcELYn4GyBNubZY2FrZV9OMaBUH+5lOttSBv9vFQnPd77flwJtzH+b3eAAGEdbNZgG7risgLic/xfQp20dB+8c2przwDFh28MsMTExoEm8n1lN54tofxF8EKu9yWUCyunDpWiNKJ9jpHfVT3BG2NbKSmM9GnbxeFppLRLl7gB9PPTpM9YuMEWU+wP00edxjE7MBHwS5doAfdT69BnrCZC/XkOAPhp8+qzIBJh9/COpL1CvU5QPZYavzVyVY5tCfVZkAlzzjA5GcjsrvOr4zlWsWyN2hY4kucCAx0GmEbT7rIQc6zQKexv7rPh9QDF3gE/BLjDJsi1mmlvNPsxRdzzP/+Za/SZYJvox7raDqfR/ypbJp8P873ApeFCk/9syk7QCvAzrQiTovb6rzG3PXbDeIzfwUz9/oBdJvg8weg7qMsP3fEMO9YdYt45tR1QSXEDK7B7bOe5CMNtKcvo4frtXwFOpVCqVSqWy9Q+ekaPHZPMTfwAAAABJRU5ErkJggg=={scale="+$scale+"}>"
+!endfunction
+
+IBMEntityColoring(soilmoisture)
+!define soilmoisture(e_alias, e_label, e_techn) IBMEntity(e_alias, e_label, e_techn, #232F3E, soilmoisture, soilmoisture)
+!define soilmoisture(e_alias, e_label, e_techn, e_descr) IBMEntity(e_alias, e_label, e_techn, e_descr, #232F3E, soilmoisture, soilmoisture)
+!define soilmoistureParticipant(p_alias, p_label, p_techn) IBMParticipant(p_alias, p_label, p_techn, #232F3E, soilmoisture, soilmoisture)
+!define soilmoistureParticipant(p_alias, p_label, p_techn, p_descr) IBMParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, soilmoisture, soilmoisture)

@@ -1,0 +1,13 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $letterWw [64x64/16z] xS61400000CXXFdRpkElMXu0001m
+
+!function $letterWwIMG($scale=1)
+!return "<img data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAAIGNIUk0AAHomAACAhAAA+gAAAIDoAAB1MAAA6mAAADqYAAAXcJy6UTwAAAAEZ0FNQQAAsY58+1GTAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAAOxAAADsQBlSsOGwAAAtBJREFUeNrtmN9OE1EQxrfF1Ci1BpRoWqDIDZaYcKEJL8BreOsL6GPoA3jvE3nBnxpKDAoJshBFjUWlnpNMky+TObs7u+m20vmSSU/Pzp50f/vN+dMoMplMJpPJZDKZTCaTyWQyTZcqityvLhrUfufiecb73rp4Qe3fLmqTBKCqyI2hXVfcNwvt80lzgAbAWeChNADiaQdwNo0Abl8XALE54BrOATdyAsBV4I6L9yx308XJ/+CAvACwrlcoUI8UALwr5qn9ysUbuHbfxReWv+DiFL6/dPEaxr9XRgnMuLhF7baQ21bMAT1ot9i1dSGf97UCY410EsQHW4Gd4jHrqzGXSQD2EwB0hPxOAoD9siZBCcAnF4esbzYFYlYA3ykmGsBhBgDaEhg+7C5FGgB1CWgnwQEcoCQAP3MAwLfWpPEH7GF36PMZA1Che3I7QAPgj4sLOBHWEwC0BQD+JPgtBUCNZvkTWl4XqX8bchbp2gXl1soqAWk3WIdlB0vAL5MPMp4EP7voC5bugNt2wAUVcAHav09jjRQA3wzh+o8Ahs6oZ9gFXrk4CACIBABRAMABjTWyEuAAGmy996vAD7YXqGbcBXrrPg4A6IO1fftmAIDa/kUdcBcAePIfaR8wtPMy5WQB0EtwQNfFX4puggN6ZQCI2Rlgmdr+4X/Rj/wAABoKB4QA4AS4nQBgLA5YovYe9O8FHBArAHibr7IlENurlDNWAA1wwK4AYEnhAF4Ca3TeCDlghnJKLwEOQOOANABXAKAjvPVIWAlaMAeVDmAOfgA6YNj2+4OHGQH4+eMIxn0Km68u5HWpL6KcOWof0RilToJrsIxKDvAblieKP0Owhreg7xL6LyFvq2j9F3VAUzgG8+9Nxd9haOENwfK8DDaK1n9RAJHw9pP6NA6oChMgnwir43LAYEQAeglvO60vtwNMJpPJZDKZTCaTyWQymUzTpn+Ofca9d06CfQAAAABJRU5ErkJggg=={scale="+$scale+"}>"
+!endfunction
+
+IBMEntityColoring(letterWw)
+!define letterWw(e_alias, e_label, e_techn) IBMEntity(e_alias, e_label, e_techn, #232F3E, letterWw, letterWw)
+!define letterWw(e_alias, e_label, e_techn, e_descr) IBMEntity(e_alias, e_label, e_techn, e_descr, #232F3E, letterWw, letterWw)
+!define letterWwParticipant(p_alias, p_label, p_techn) IBMParticipant(p_alias, p_label, p_techn, #232F3E, letterWw, letterWw)
+!define letterWwParticipant(p_alias, p_label, p_techn, p_descr) IBMParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, letterWw, letterWw)

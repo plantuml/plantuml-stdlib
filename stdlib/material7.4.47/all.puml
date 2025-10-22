@@ -1,0 +1,6 @@
+@startuml
+    !$lib = %load_json('<material7.4.47/all.json>')
+    !foreach $item in $lib
+        !include <material7.4.47/$item/all>
+    !endfor
+@enduml

@@ -1,0 +1,13 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $texttracking [64x64/16z] xS61400000CXXFdRpkElMXu0001m
+
+!function $texttrackingIMG($scale=1)
+!return "<img data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAAIGNIUk0AAHomAACAhAAA+gAAAIDoAAB1MAAA6mAAADqYAAAXcJy6UTwAAAAEZ0FNQQAAsY58+1GTAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAAOxAAADsQBlSsOGwAAA1VJREFUeNrtWc1qFEEQ3p0REhDUfYC8QJLVoydjwINILmpc0SxefBD/nsIH0IhMcsxBPcTNTQTBZLOiggjBc+JxQaLVUAtNOZ2uru6e7M72Bx9kJj09U19XdffX22gkJCQkJEwvmow2n4EXtesF4ED4vnngvna9C7zEeK6NbXWob9rzFSBjtHlJrjse7+tY+jahy7wXRYBXwOMIAhxj35wsXSu5v8bMYG8BDoA7pATmhem/oF3vYN82XAXOldyfw/9FFyBUGYRI/30yh3SrEmADOAwowBD7tGEGuKpdF8gRVrFNdAGOgFseZUDTfwv7tGEF2CIDoQvXwjbRBfAtgxDpP9BKYBCqDFwEUKN2GECAQ5JNJlwgo1sY/l7BttEFUHW7KSgDmv6bZD4x4Q6pb5MAM9g2ugDSMgiZ/vpqEKQMXAXokbXbVYAD7MMGtcYvGUa87N6SYa8QXIC/wHWHMqDpv4592HCffJtNgAyfiS6AaxnESP+gZSARYI84M64Au0z31ibuc8OyQdPdYbsKAehImsqApr/U+RUntC18HaJUAI5DDOH8vgD7J7TvYxuxQ5QKQB2iTQCp8ysYzxQ+DvGMxy5SpfQyKYNB4PR/hHSB6uN97AywOcQQzk8KJ4foIwB1iCYBpM5PCieHmHm+rGw1CJX+PuhWMQfoDrFlmAylzk9tchYdv6WvCT9yiEexM4A6xA4RIYTz40LkELMA6UbLIPbmJ+imKIQAPcMaL3V+dI/PBfUMLIcYQgDqEGM4P0kWsBxiCAFMqV5l+gfzBgkJCQkcLNblm3LBM4/xcOOb5bCiStwDvsXDkF5MAVTwT3D5vAn82ig/sKwSd4Ev0Ncsa5uz4AKMgtf3ENeAz5n7/Rg4B3wHPKvdcxIhFwav8Bt4A/jjFEd/iIEqAzYrESH3CP468MMY1P8v4LZUhHzCg/cWIa9B8F4iNB2Cn3SoeJ5yMqCOwRszIWtMOcoyoEcUq3UJNGs0CSpcBr4BnucEb1sFyjJhFmfZbZx1Jzp4zj5gUkQQBc/dCY67COLgXbyASYTbY2CGPjb+/02RFbyrG6Qi/AE+BH46ZTP0E3hLW9LZwUvOA0YiXAE+AL4eg/pX5xHfUYRnLsH7oDZHYgkJCQkJ04x/X3jot4R+LbUAAAAASUVORK5CYII={scale="+$scale+"}>"
+!endfunction
+
+IBMEntityColoring(texttracking)
+!define texttracking(e_alias, e_label, e_techn) IBMEntity(e_alias, e_label, e_techn, #232F3E, texttracking, texttracking)
+!define texttracking(e_alias, e_label, e_techn, e_descr) IBMEntity(e_alias, e_label, e_techn, e_descr, #232F3E, texttracking, texttracking)
+!define texttrackingParticipant(p_alias, p_label, p_techn) IBMParticipant(p_alias, p_label, p_techn, #232F3E, texttracking, texttracking)
+!define texttrackingParticipant(p_alias, p_label, p_techn, p_descr) IBMParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, texttracking, texttracking)

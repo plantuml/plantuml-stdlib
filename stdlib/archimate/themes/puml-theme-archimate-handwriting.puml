@@ -1,0 +1,28 @@
+!$PUML_THEME = "archimate-handwriting"
+!$THEME      = "archimate-handwriting"
+
+!global $ARCH_DEFAULT_BACKGROUND = "#eeebdc"
+!global $ARCH_DEFAULT_FONT = "Comic Sans MS"
+!global $ARCH_DEFAULT_FONTSIZE = 14
+
+!option handwritten %true()
+
+center footer <font color=red>Warning:</font> Created for discussion, needs to be validated
+
+<style>
+    element {
+        FontName $ARCH_HANDWRITTEN_FONT
+        FontSize $ARCH_HANDWRITTEN_FONTSIZE
+    }
+    root {
+        BackgroundColor $ARCH_HANDWRITTEN_BACKGROUND
+    }
+</style>
+
+!global $ARCH_LOCAL ?= %false()
+
+!if ($ARCH_LOCAL == %true())
+    !include shared_style.puml
+!else
+    !include <archimate/themes/shared_style>
+!endif

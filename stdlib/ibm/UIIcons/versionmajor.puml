@@ -1,0 +1,13 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $versionmajor [64x64/16z] xS61400000CXXFdRpkElMXu0001m
+
+!function $versionmajorIMG($scale=1)
+!return "<img data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAAIGNIUk0AAHomAACAhAAA+gAAAIDoAAB1MAAA6mAAADqYAAAXcJy6UTwAAAAEZ0FNQQAAsY58+1GTAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAAOxAAADsQBlSsOGwAAAtNJREFUeNrtm79LHEEUx+d8RWIhkTQGUltZS8pcl6SUeEIK/w7LGDRlqlTp04mkCWJAyB0oXMrYpEl5V4peJIWdb8kMLJP7sTP73vsueg++4B2Hzuez691891jn5nO/pwX6u6ucfc5z//iEs8MZ3gcBzzjHnOXo+UvOK84Py8UQAP7bGPhiFjkdznfLM4EA8I+mvOahtQQCw+9yupw2SgKB4d9xev4xRAKB4cPAJFAD4KESqCHwMAnUIHiIBALDv/WgPZQEAsPvliAhEggM7yJIcwnUAHioBGoIPEwCgeH/cG44D1ASCAz/gvOZs4WSQGD4PmfgCxFEAinDh4WWFzvivPTwYYKEjocJ0x0jQFQCKcOHxbb8Ykf+yI+76jPwiw8STLbNpAxfPpLFm93ejEteQ7/435z3FttmMoAPc1rxqBSvOUv4vbUkkBH8pJnUBVInWwKB4ad1ARMJBIaf9ZGnLoEaAA+VQA2Bh0koC3jq332XDeFTuoCUhE3OF85FLOATZ90YPrULSEl4wjmIBXzkLBnD53QBCQmPOR+KHxac/YxK8GH6/rmR9WIoegNcUzoCGl2gzhn4lXMYC/jJ2Y7amJQErS6QA198Db/BuY4FXEyopFIStLpACnyo4r8m7QOG0WkoLUGrC1SF/+/fj6achtoSpLtAMvy0LqAtQasLJMHPaoNaErS6QDJ8lesB0hK0ukAWfNUrQlIStLpANnxVARIStLpALfgUAXUkaHWB2vCpAnIltJ389wIi8DkCciRIdwEx+FwBORKkuoAofB0BORLqdgFx+LoCENtmUXgJAYhtsxi8lADrbbMYvKQAq22zKLy0AO1tszi8hgCtbbMKvJYA6W2zGrymgBwJ5vDaAlIkQOAtBFSR0EbBO2d721yVm6ZM4a3OgFlnAgzeWkBZwmv37z7B8lz56wR3+sbJIKG4DLbi85dzxHnDOXfzmY/p3AJ4+LJmKFwM6wAAAABJRU5ErkJggg=={scale="+$scale+"}>"
+!endfunction
+
+IBMEntityColoring(versionmajor)
+!define versionmajor(e_alias, e_label, e_techn) IBMEntity(e_alias, e_label, e_techn, #232F3E, versionmajor, versionmajor)
+!define versionmajor(e_alias, e_label, e_techn, e_descr) IBMEntity(e_alias, e_label, e_techn, e_descr, #232F3E, versionmajor, versionmajor)
+!define versionmajorParticipant(p_alias, p_label, p_techn) IBMParticipant(p_alias, p_label, p_techn, #232F3E, versionmajor, versionmajor)
+!define versionmajorParticipant(p_alias, p_label, p_techn, p_descr) IBMParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, versionmajor, versionmajor)

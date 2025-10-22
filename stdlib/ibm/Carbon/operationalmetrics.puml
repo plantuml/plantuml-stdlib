@@ -1,0 +1,13 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $operationalmetrics [64x64/16z] xS61400000CXXFdRpkElMXu0001m
+
+!function $operationalmetricsIMG($scale=1)
+!return "<img data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAAIGNIUk0AAHomAACAhAAA+gAAAIDoAAB1MAAA6mAAADqYAAAXcJy6UTwAAAAEZ0FNQQAAsY58+1GTAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAAOxAAADsQBlSsOGwAAAfdJREFUeNrtmr1PAkEQxQ+hMHSWkpio3RmjlR+VxtLeECs75V8C7SiJPaUFBBQricHYqDRY2hFL38pw2ZgrkNuF5fa95BeOBSY77zY7A2wQUBRFeazMn+d5cAH2wGbKcn0Dj6AKhnEG7IJbsAGewVfKDFgB2+AdnIEn3YC8DHyDInhJ6YoPQQ0syw0fLskLatmvpzz5QHIrSq4q52BswD7opTx53YSe5BwZsAoGHm3+A8k5MsBbeW9AborPHIJLub4B94bnZDt+ohWgJtcAR0JDxkwmbzN+YgOuQB9sCX0ZMyXb8RMbkJ1wbFrZjp94D6iAc6mjSmugbHA+ZcvxE6+AFjiWu5KV67bB+bQtxzdSBdSu/Kpdm5bt+OwDkq4A1+r6gVYprsGDSyvAdl1XyTe1+E0Zc8YA23W9FBO/5JIBzvcNtvcA231DXPyKSyvAdt8QF7/lWhVwum/gDyI0gAbQABpAA2gADfBW43+H68Hov7LuhJ/bkcdFfn8HnE7bCncX/P2x3wV+HfFk5de5B9AAGkADdAM+QcGjvAuSc2SAqgDqV9XQg+RDybWjG6AOD34EoyNkYcqTr0muVb0TVPL6oORYsz4q+98WNolij8q60JHVWQZpAA2gATSABtCAuShjMNbdjBuhExOTzs35BnQDiqIoan76AfRzdAqbM19wAAAAAElFTkSuQmCC{scale="+$scale+"}>"
+!endfunction
+
+IBMEntityColoring(operationalmetrics)
+!define operationalmetrics(e_alias, e_label, e_techn) IBMEntity(e_alias, e_label, e_techn, #232F3E, operationalmetrics, operationalmetrics)
+!define operationalmetrics(e_alias, e_label, e_techn, e_descr) IBMEntity(e_alias, e_label, e_techn, e_descr, #232F3E, operationalmetrics, operationalmetrics)
+!define operationalmetricsParticipant(p_alias, p_label, p_techn) IBMParticipant(p_alias, p_label, p_techn, #232F3E, operationalmetrics, operationalmetrics)
+!define operationalmetricsParticipant(p_alias, p_label, p_techn, p_descr) IBMParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, operationalmetrics, operationalmetrics)

@@ -1,0 +1,289 @@
+
+sprite mdiBookCross <svg width="48" height="48"><g transform="scale(2)"><path d="M5.81,2H7V9L9.5,7.5L12,9V2H18A2,2 0 0,1 20,4V20C20,21.05 19.05,22 18,22H6C4.95,22 4,21.05 4,20V4C4,3 4.83,2.09 5.81,2M13,10V13H10V15H13V20H15V15H18V13H15V10H13Z" /></g></svg>
+
+!if %function_exists("$MdiSprite")
+  !unquoted function $MdiBookCrossImg($color = $MDI_DEFAULT, $scale = "1")
+    !return $MdiSprite(mdiAccountAlert, $color, $scale)
+  !endfunction
+
+  !unquoted function $MdiBookCross($alias, $label=$MDI_DEFAULT, $shape=$MDI_DEFAULT, $color=$MDI_DEFAULT, $scale=1, $stereo=$MDI_DEFAULT)
+    !return $MdiSpriteElement("mdiAccountAlert", $alias, $label, $shape, $color, $scale, $stereo)
+  !endfunction
+!endif
+
+sprite mdiChurch <svg width="48" height="48"><g transform="scale(2)"><path d="M18 12.22V9L13 6.5V5H15V3H13V1H11V3H9V5H11V6.5L6 9V12.22L2 14V22H10V19C10 17.9 10.9 17 12 17S14 17.9 14 19V22H22V14L18 12.22M12 13.5C11.17 13.5 10.5 12.83 10.5 12S11.17 10.5 12 10.5 13.5 11.17 13.5 12 12.83 13.5 12 13.5Z" /></g></svg>
+
+!if %function_exists("$MdiSprite")
+  !unquoted function $MdiChurchImg($color = $MDI_DEFAULT, $scale = "1")
+    !return $MdiSprite(mdiAccountAlert, $color, $scale)
+  !endfunction
+
+  !unquoted function $MdiChurch($alias, $label=$MDI_DEFAULT, $shape=$MDI_DEFAULT, $color=$MDI_DEFAULT, $scale=1, $stereo=$MDI_DEFAULT)
+    !return $MdiSpriteElement("mdiAccountAlert", $alias, $label, $shape, $color, $scale, $stereo)
+  !endfunction
+!endif
+
+sprite mdiChurchOutline <svg width="48" height="48"><g transform="scale(2)"><path d="M18 12.22V9L13 6.5V5H15V3H13V1H11V3H9V5H11V6.5L6 9V12.22L2 14V22H11V18C11 17.45 11.45 17 12 17C12.55 17 13 17.45 13 18V22H22V14L18 12.22M20 20H15V17.96C15 16.27 13.65 14.9 12 14.9C10.35 14.9 9 16.27 9 17.96V20H4V15.21L8 13.4V10.05L12 8L16 10.04V13.39L20 15.2V20M12 10.5C12.83 10.5 13.5 11.17 13.5 12C13.5 12.83 12.83 13.5 12 13.5C11.17 13.5 10.5 12.83 10.5 12C10.5 11.17 11.17 10.5 12 10.5Z" /></g></svg>
+
+!if %function_exists("$MdiSprite")
+  !unquoted function $MdiChurchOutlineImg($color = $MDI_DEFAULT, $scale = "1")
+    !return $MdiSprite(mdiAccountAlert, $color, $scale)
+  !endfunction
+
+  !unquoted function $MdiChurchOutline($alias, $label=$MDI_DEFAULT, $shape=$MDI_DEFAULT, $color=$MDI_DEFAULT, $scale=1, $stereo=$MDI_DEFAULT)
+    !return $MdiSpriteElement("mdiAccountAlert", $alias, $label, $shape, $color, $scale, $stereo)
+  !endfunction
+!endif
+
+sprite mdiCross <svg width="48" height="48"><g transform="scale(2)"><path d="M10.5,2H13.5V8H19V11H13.5V22H10.5V11H5V8H10.5V2Z" /></g></svg>
+
+!if %function_exists("$MdiSprite")
+  !unquoted function $MdiCrossImg($color = $MDI_DEFAULT, $scale = "1")
+    !return $MdiSprite(mdiAccountAlert, $color, $scale)
+  !endfunction
+
+  !unquoted function $MdiCross($alias, $label=$MDI_DEFAULT, $shape=$MDI_DEFAULT, $color=$MDI_DEFAULT, $scale=1, $stereo=$MDI_DEFAULT)
+    !return $MdiSpriteElement("mdiAccountAlert", $alias, $label, $shape, $color, $scale, $stereo)
+  !endfunction
+!endif
+
+sprite mdiCrossBolnisi <svg width="48" height="48"><g transform="scale(2)"><path d="M22,7L21.5,6.5C19.93,8 18.47,9.4 16.93,10.18C15.5,10.91 14.44,10.91 13,11C13.09,9.56 13.09,8.5 13.82,7.07C14.6,5.53 16,4.07 17.5,2.5L17,2C15.32,3.23 13.64,3.83 12,3.83C10.36,3.83 8.68,3.23 7,2L6.5,2.5C8,4.07 9.4,5.53 10.18,7.07C10.91,8.5 10.91,9.56 11,11C9.56,10.91 8.5,10.91 7.07,10.18C5.53,9.4 4.06,8 2.5,6.5L2,7C3.23,8.68 3.83,10.36 3.83,12C3.83,13.64 3.23,15.32 2,17L2.5,17.5C4.07,16 5.53,14.6 7.07,13.82C8.5,13.09 9.56,13.09 11,13C10.91,14.44 10.91,15.5 10.18,16.93C9.4,18.47 8,19.93 6.5,21.5L7,22C8.68,20.77 10.36,20.17 12,20.17C13.64,20.17 15.32,20.77 17,22L17.5,21.5C16,19.93 14.6,18.47 13.82,16.93C13.09,15.5 13.09,14.44 13,13C14.44,13.09 15.5,13.09 16.93,13.82C18.47,14.6 19.93,16 21.5,17.5L22,17C20.77,15.32 20.17,13.64 20.17,12C20.17,10.36 20.77,8.68 22,7Z" /></g></svg>
+
+!if %function_exists("$MdiSprite")
+  !unquoted function $MdiCrossBolnisiImg($color = $MDI_DEFAULT, $scale = "1")
+    !return $MdiSprite(mdiAccountAlert, $color, $scale)
+  !endfunction
+
+  !unquoted function $MdiCrossBolnisi($alias, $label=$MDI_DEFAULT, $shape=$MDI_DEFAULT, $color=$MDI_DEFAULT, $scale=1, $stereo=$MDI_DEFAULT)
+    !return $MdiSpriteElement("mdiAccountAlert", $alias, $label, $shape, $color, $scale, $stereo)
+  !endfunction
+!endif
+
+sprite mdiCrossCeltic <svg width="48" height="48"><g transform="scale(2)"><path d="M17.8,8C17.26,5.89 15.61,4.24 13.5,3.7V2H10.5V3.7C8.39,4.24 6.74,5.89 6.2,8H4V11H6.2C6.74,13.11 8.39,14.76 10.5,15.3V22H13.5V15.3C15.61,14.76 17.26,13.11 17.8,11H19.97V8H17.8M12.04,9.53L14.5,11H15.76C15.35,12.03 14.53,12.84 13.5,13.26V12L12.06,9.56L12,9.5L11.94,9.56L10.5,12V13.26C9.47,12.84 8.66,12.03 8.24,11H9.5L11.96,9.53L12,9.5H11.96L9.5,8H8.24C8.65,6.97 9.47,6.16 10.5,5.74V7L11.94,9.44L12,9.5L12.06,9.44L13.5,7V5.74C14.53,6.16 15.35,6.97 15.76,8H14.5L12.04,9.5H12L12.04,9.53Z" /></g></svg>
+
+!if %function_exists("$MdiSprite")
+  !unquoted function $MdiCrossCelticImg($color = $MDI_DEFAULT, $scale = "1")
+    !return $MdiSprite(mdiAccountAlert, $color, $scale)
+  !endfunction
+
+  !unquoted function $MdiCrossCeltic($alias, $label=$MDI_DEFAULT, $shape=$MDI_DEFAULT, $color=$MDI_DEFAULT, $scale=1, $stereo=$MDI_DEFAULT)
+    !return $MdiSpriteElement("mdiAccountAlert", $alias, $label, $shape, $color, $scale, $stereo)
+  !endfunction
+!endif
+
+sprite mdiCrossOutline <svg width="48" height="48"><g transform="scale(2)"><path d="M15.5,6V1H8.5V6H3V13H8.5V23H15.5V13H21V6H15.5M19,11H13.5V21H10.5V11H5V8H10.5V3H13.5V8H19V11Z" /></g></svg>
+
+!if %function_exists("$MdiSprite")
+  !unquoted function $MdiCrossOutlineImg($color = $MDI_DEFAULT, $scale = "1")
+    !return $MdiSprite(mdiAccountAlert, $color, $scale)
+  !endfunction
+
+  !unquoted function $MdiCrossOutline($alias, $label=$MDI_DEFAULT, $shape=$MDI_DEFAULT, $color=$MDI_DEFAULT, $scale=1, $stereo=$MDI_DEFAULT)
+    !return $MdiSpriteElement("mdiAccountAlert", $alias, $label, $shape, $color, $scale, $stereo)
+  !endfunction
+!endif
+
+sprite mdiDharmachakra <svg width="48" height="48"><g transform="scale(2)"><path d="M11,2V3C9.27,3.2 7.69,3.9 6.4,4.94L5.64,4.18L4.22,5.6L5,6.35C3.9,7.68 3.21,9.3 3,11H2V13H3C3.21,14.68 3.9,16.26 5,17.56L4.22,18.32L5.64,19.74L6.39,19C7.71,20.07 9.3,20.77 11,21V22H13V21C14.69,20.77 16.29,20.07 17.6,19L18.36,19.74L19.78,18.32L19,17.57C20.1,16.27 20.79,14.68 21,13H22V11H21C20.79,9.3 20.1,7.69 19,6.36L19.78,5.6L18.36,4.18L17.61,4.94C16.29,3.87 14.69,3.2 13,3V2H11M11,5V8L10,8.5L7.81,6.35C8.72,5.67 9.81,5.17 11,5M13,5C14.16,5.18 15.26,5.64 16.2,6.35L14,8.5L13,8V5M6.4,7.76L8.5,10L8,11H5C5.16,9.84 5.7,8.7 6.39,7.75L6.4,7.76M17.6,7.76C18.33,8.71 18.81,9.82 19,11H16L15.5,10L17.61,7.76H17.6M12,10C13.12,10 14,10.88 14,12C14,13.12 13.12,14 12,14C10.88,14 10,13.12 10,12C10,10.88 10.88,10 12,10M5,13H8L8.57,14L6.39,16.15C5.67,15.24 5.19,14.16 5,13V13M16,13H19C18.81,14.15 18.33,15.24 17.61,16.16L15.5,14L16,13M10,15.5L11,16V19C9.83,18.8 8.73,18.31 7.8,17.57L10,15.5M14,15.5L16.19,17.57C15.28,18.25 14.19,18.83 13,19V16L14,15.5Z" /></g></svg>
+
+!if %function_exists("$MdiSprite")
+  !unquoted function $MdiDharmachakraImg($color = $MDI_DEFAULT, $scale = "1")
+    !return $MdiSprite(mdiAccountAlert, $color, $scale)
+  !endfunction
+
+  !unquoted function $MdiDharmachakra($alias, $label=$MDI_DEFAULT, $shape=$MDI_DEFAULT, $color=$MDI_DEFAULT, $scale=1, $stereo=$MDI_DEFAULT)
+    !return $MdiSpriteElement("mdiAccountAlert", $alias, $label, $shape, $color, $scale, $stereo)
+  !endfunction
+!endif
+
+sprite mdiKhanda <svg width="48" height="48"><g transform="scale(2)"><path d="M16 20C19.72 18 22 15.27 22 12C22 9.34 20.46 6.9 17.89 5H17.82C19 6.35 19.68 8.09 19.68 10C19.68 13 18 15 15.5 16.83C15.5 16.84 14.38 17.54 13 18.41V17.33L15 16C15 16 14.8 15.4 14.58 14.46C16.6 13.58 18 11.69 18 9.5C18 7.34 16.64 5.47 14.65 4.57C14.84 3.63 15 3 15 3L12 1L9 3C9 3 9.16 3.63 9.35 4.57C7.37 5.47 6 7.34 6 9.5C6 11.69 7.4 13.58 9.42 14.46C9.2 15.4 9 16 9 16L11 17.33V18.41C9.62 17.54 8.5 16.84 8.5 16.83C6 15 4.32 13 4.32 10C4.32 8.09 5 6.35 6.18 5H6.12C3.54 6.9 2 9.34 2 12C2 15.27 4.29 18 8 20L9 18.5L10.92 19.73L7.34 22L8 23L11 21.07V23H13V21.07L16 23L16.66 22L13.08 19.73L15 18.5L16 20M16.75 9.5C16.75 11.09 15.76 12.46 14.31 13.19C14.14 12.23 14 11.12 14 10C14 8.67 14.2 7.15 14.42 5.86C15.81 6.6 16.75 7.95 16.75 9.5M7.25 9.5C7.25 7.95 8.19 6.6 9.59 5.86C9.8 7.15 10 8.67 10 10C10 11.12 9.86 12.23 9.69 13.19C8.24 12.46 7.25 11.09 7.25 9.5Z" /></g></svg>
+
+!if %function_exists("$MdiSprite")
+  !unquoted function $MdiKhandaImg($color = $MDI_DEFAULT, $scale = "1")
+    !return $MdiSprite(mdiAccountAlert, $color, $scale)
+  !endfunction
+
+  !unquoted function $MdiKhanda($alias, $label=$MDI_DEFAULT, $shape=$MDI_DEFAULT, $color=$MDI_DEFAULT, $scale=1, $stereo=$MDI_DEFAULT)
+    !return $MdiSpriteElement("mdiAccountAlert", $alias, $label, $shape, $color, $scale, $stereo)
+  !endfunction
+!endif
+
+sprite mdiMenorah <svg width="48" height="48"><g transform="scale(2)"><path d="M21 11V6L19 5V11H17V6L15 5V11H13V3L11 2V11H9V6L7 5V11H5V6L3 5V11C2.45 11 2 11.45 2 12S2.45 13 3 13H4.25C4.95 14.92 6.94 17.58 11 17.95V20H10C8.9 20 8 20.9 8 22H16C16 20.9 15.11 20 14 20H13V17.95C17.06 17.57 19.05 14.92 19.75 13H21C21.55 13 22 12.55 22 12S21.55 11 21 11M11 15.94C8.34 15.63 7.05 14.11 6.45 13H11V15.94M13 15.94V13H17.55C16.95 14.11 15.66 15.63 13 15.94Z" /></g></svg>
+
+!if %function_exists("$MdiSprite")
+  !unquoted function $MdiMenorahImg($color = $MDI_DEFAULT, $scale = "1")
+    !return $MdiSprite(mdiAccountAlert, $color, $scale)
+  !endfunction
+
+  !unquoted function $MdiMenorah($alias, $label=$MDI_DEFAULT, $shape=$MDI_DEFAULT, $color=$MDI_DEFAULT, $scale=1, $stereo=$MDI_DEFAULT)
+    !return $MdiSpriteElement("mdiAccountAlert", $alias, $label, $shape, $color, $scale, $stereo)
+  !endfunction
+!endif
+
+sprite mdiMenorahFire <svg width="48" height="48"><g transform="scale(2)"><path d="M21.5 11.15V10C21.5 9.45 21.05 9 20.5 9H19.5C18.95 9 18.5 9.45 18.5 10V11H17.5V10C17.5 9.45 17.05 9 16.5 9H15.5C14.95 9 14.5 9.45 14.5 10V11H13.5V8C13.5 7.45 13.05 7 12.5 7H11.5C10.95 7 10.5 7.45 10.5 8V11H9.5V10C9.5 9.45 9.05 9 8.5 9H7.5C6.95 9 6.5 9.45 6.5 10V11H5.5V10C5.5 9.45 5.05 9 4.5 9H3.5C2.95 9 2.5 9.45 2.5 10V11.15C2.21 11.33 2 11.63 2 12C2 12.55 2.45 13 3 13H4.25C4.95 14.92 6.94 17.58 11 17.95V20H10C8.9 20 8 20.9 8 22H16C16 20.9 15.11 20 14 20H13V17.95C17.06 17.57 19.05 14.92 19.75 13H21C21.55 13 22 12.55 22 12C22 11.63 21.79 11.33 21.5 11.15M6.45 13H11V15.94C8.34 15.63 7.05 14.11 6.45 13M13 15.94V13H17.55C16.95 14.11 15.66 15.63 13 15.94M12 6C12.83 6 13.5 5.33 13.5 4.5C13.5 3.67 12.83 2 12 2S10.5 3.67 10.5 4.5C10.5 5.33 11.17 6 12 6M12 4.25C12.28 4.25 12.5 4.47 12.5 4.75S12.28 5.25 12 5.25 11.5 5.03 11.5 4.75 11.72 4.25 12 4.25M16 8C16.83 8 17.5 7.33 17.5 6.5C17.5 5.67 16.83 4 16 4S14.5 5.67 14.5 6.5C14.5 7.33 15.17 8 16 8M16 6.25C16.28 6.25 16.5 6.47 16.5 6.75S16.28 7.25 16 7.25 15.5 7.03 15.5 6.75 15.72 6.25 16 6.25M20 8C20.83 8 21.5 7.33 21.5 6.5C21.5 5.67 20.83 4 20 4S18.5 5.67 18.5 6.5C18.5 7.33 19.17 8 20 8M20 6.25C20.28 6.25 20.5 6.47 20.5 6.75S20.28 7.25 20 7.25 19.5 7.03 19.5 6.75 19.72 6.25 20 6.25M4 8C4.83 8 5.5 7.33 5.5 6.5C5.5 5.67 4.83 4 4 4S2.5 5.67 2.5 6.5C2.5 7.33 3.17 8 4 8M4 6.25C4.28 6.25 4.5 6.47 4.5 6.75S4.28 7.25 4 7.25 3.5 7.03 3.5 6.75 3.72 6.25 4 6.25M8 8C8.83 8 9.5 7.33 9.5 6.5C9.5 5.67 8.83 4 8 4S6.5 5.67 6.5 6.5C6.5 7.33 7.17 8 8 8M8 6.25C8.28 6.25 8.5 6.47 8.5 6.75S8.28 7.25 8 7.25 7.5 7.03 7.5 6.75 7.72 6.25 8 6.25Z" /></g></svg>
+
+!if %function_exists("$MdiSprite")
+  !unquoted function $MdiMenorahFireImg($color = $MDI_DEFAULT, $scale = "1")
+    !return $MdiSprite(mdiAccountAlert, $color, $scale)
+  !endfunction
+
+  !unquoted function $MdiMenorahFire($alias, $label=$MDI_DEFAULT, $shape=$MDI_DEFAULT, $color=$MDI_DEFAULT, $scale=1, $stereo=$MDI_DEFAULT)
+    !return $MdiSpriteElement("mdiAccountAlert", $alias, $label, $shape, $color, $scale, $stereo)
+  !endfunction
+!endif
+
+sprite mdiMosque <svg width="48" height="48"><g transform="scale(2)"><path d="M7 8H17C17.3 8 17.6 8.1 17.8 8.1C17.9 7.8 18 7.4 18 7.1C18 5.8 17.4 4.6 16.3 3.9L12 1L7.7 3.8C6.7 4.6 6 5.8 6 7.1C6 7.5 6.1 7.8 6.2 8.1C6.4 8.1 6.7 8 7 8M24 7C24 5.9 22 4 22 4S20 5.9 20 7C20 7.7 20.4 8.4 21 8.7V13H19V11C19 9.9 18.1 9 17 9H7C5.9 9 5 9.9 5 11V13H3V8.7C3.6 8.4 4 7.7 4 7C4 5.9 2 4 2 4S0 5.9 0 7C0 7.7 .4 8.4 1 8.7V21H10V17C10 15.9 10.9 15 12 15S14 15.9 14 17V21H23V8.7C23.6 8.4 24 7.7 24 7Z" /></g></svg>
+
+!if %function_exists("$MdiSprite")
+  !unquoted function $MdiMosqueImg($color = $MDI_DEFAULT, $scale = "1")
+    !return $MdiSprite(mdiAccountAlert, $color, $scale)
+  !endfunction
+
+  !unquoted function $MdiMosque($alias, $label=$MDI_DEFAULT, $shape=$MDI_DEFAULT, $color=$MDI_DEFAULT, $scale=1, $stereo=$MDI_DEFAULT)
+    !return $MdiSpriteElement("mdiAccountAlert", $alias, $label, $shape, $color, $scale, $stereo)
+  !endfunction
+!endif
+
+sprite mdiMosqueOutline <svg width="48" height="48"><g transform="scale(2)"><path d="M24 7C24 5.9 22 4 22 4S20 5.9 20 7C20 7.7 20.4 8.4 21 8.7V13H19V11C19 10.1 18.3 9.3 17.5 9.1C17.8 8.5 18 7.9 18 7.1C18 5.8 17.4 4.6 16.3 3.9L12 1L7.7 3.8C6.7 4.6 6 5.8 6 7.1C6 7.8 6.2 8.5 6.6 9.1C5.7 9.3 5 10.1 5 11V13H3V8.7C3.6 8.4 4 7.7 4 7C4 5.9 2 4 2 4S0 5.9 0 7C0 7.7 .4 8.4 1 8.7V21H11V17C11 16.5 11.4 16 12 16S13 16.5 13 17V21H23V8.7C23.6 8.4 24 7.7 24 7M8.9 5.5L12 3.4L15.1 5.5C15.7 5.9 16 6.4 16 7.1C16 8.1 15.1 9 14.1 9H9.9C8.9 9 8 8.1 8 7.1C8 6.4 8.3 5.9 8.9 5.5M21 19H15V17C15 15.4 13.6 14 12 14S9 15.4 9 17V19H3V15H7V11H17V15H21V19Z" /></g></svg>
+
+!if %function_exists("$MdiSprite")
+  !unquoted function $MdiMosqueOutlineImg($color = $MDI_DEFAULT, $scale = "1")
+    !return $MdiSprite(mdiAccountAlert, $color, $scale)
+  !endfunction
+
+  !unquoted function $MdiMosqueOutline($alias, $label=$MDI_DEFAULT, $shape=$MDI_DEFAULT, $color=$MDI_DEFAULT, $scale=1, $stereo=$MDI_DEFAULT)
+    !return $MdiSpriteElement("mdiAccountAlert", $alias, $label, $shape, $color, $scale, $stereo)
+  !endfunction
+!endif
+
+sprite mdiOm <svg width="48" height="48"><g transform="scale(2)"><path d="M15,2L13.5,3.5L15,5L16.5,3.5L15,2M11,3C10,9 17,10 20,6L18,4.5C17,6 13,8 11,3M9,7C7,7 4.5,8.5 4.5,8.5L6,11C7,10 9,9.5 10,10C12,11 9,13 7,12V15.5C10,14 12,16 11,17.5C8,22 3,16 3,13C1,19 6,22 9,22C12,22 14,20 12.5,15H14C12.5,19.5 18,24 21,18C22,16 22,9.5 17,9.5C13,9.5 14,15 10.5,13.5C14,10 12,7 9,7M19,12C22,15 15,21 15,15C15,13 17,10.5 19,12Z" /></g></svg>
+
+!if %function_exists("$MdiSprite")
+  !unquoted function $MdiOmImg($color = $MDI_DEFAULT, $scale = "1")
+    !return $MdiSprite(mdiAccountAlert, $color, $scale)
+  !endfunction
+
+  !unquoted function $MdiOm($alias, $label=$MDI_DEFAULT, $shape=$MDI_DEFAULT, $color=$MDI_DEFAULT, $scale=1, $stereo=$MDI_DEFAULT)
+    !return $MdiSpriteElement("mdiAccountAlert", $alias, $label, $shape, $color, $scale, $stereo)
+  !endfunction
+!endif
+
+sprite mdiShieldCross <svg width="48" height="48"><g transform="scale(2)"><path d="M12,1L3,5V11C3,16.5 6.8,21.7 12,23C17.2,21.7 21,16.5 21,11V5L12,1M16,10H13V18H11V10H8V8H11V5H13V8H16V10Z" /></g></svg>
+
+!if %function_exists("$MdiSprite")
+  !unquoted function $MdiShieldCrossImg($color = $MDI_DEFAULT, $scale = "1")
+    !return $MdiSprite(mdiAccountAlert, $color, $scale)
+  !endfunction
+
+  !unquoted function $MdiShieldCross($alias, $label=$MDI_DEFAULT, $shape=$MDI_DEFAULT, $color=$MDI_DEFAULT, $scale=1, $stereo=$MDI_DEFAULT)
+    !return $MdiSpriteElement("mdiAccountAlert", $alias, $label, $shape, $color, $scale, $stereo)
+  !endfunction
+!endif
+
+sprite mdiShieldCrossOutline <svg width="48" height="48"><g transform="scale(2)"><path d="M21,11C21,16.5 17.2,21.7 12,23C6.8,21.7 3,16.5 3,11V5L12,1L21,5V11M12,21C15.8,20 19,15.5 19,11.2V6.3L12,3.2L5,6.3V11.2C5,15.5 8.3,20 12,21M16,9H13V6H11V9H8V11H11V19H13V11H16V9Z" /></g></svg>
+
+!if %function_exists("$MdiSprite")
+  !unquoted function $MdiShieldCrossOutlineImg($color = $MDI_DEFAULT, $scale = "1")
+    !return $MdiSprite(mdiAccountAlert, $color, $scale)
+  !endfunction
+
+  !unquoted function $MdiShieldCrossOutline($alias, $label=$MDI_DEFAULT, $shape=$MDI_DEFAULT, $color=$MDI_DEFAULT, $scale=1, $stereo=$MDI_DEFAULT)
+    !return $MdiSpriteElement("mdiAccountAlert", $alias, $label, $shape, $color, $scale, $stereo)
+  !endfunction
+!endif
+
+sprite mdiStarCrescent <svg width="48" height="48"><g transform="scale(2)"><path d="M12.3,2C12.2,2 12.1,2 12,2A10,10 0 0,0 2,12A10,10 0 0,0 12,22C15,22 16.7,21 18.5,19.5C13,21 8,17 8,12C8,7 13,3 18.5,4.5C16.86,2.86 14.62,1.96 12.3,2M16.8,6.2L15.3,9.7L11.6,10L14.5,12.5L13.6,16L16.8,14L20,16L19,12.5L22,10L18.3,9.7L16.8,6.2Z" /></g></svg>
+
+!if %function_exists("$MdiSprite")
+  !unquoted function $MdiStarCrescentImg($color = $MDI_DEFAULT, $scale = "1")
+    !return $MdiSprite(mdiAccountAlert, $color, $scale)
+  !endfunction
+
+  !unquoted function $MdiStarCrescent($alias, $label=$MDI_DEFAULT, $shape=$MDI_DEFAULT, $color=$MDI_DEFAULT, $scale=1, $stereo=$MDI_DEFAULT)
+    !return $MdiSpriteElement("mdiAccountAlert", $alias, $label, $shape, $color, $scale, $stereo)
+  !endfunction
+!endif
+
+sprite mdiStarDavid <svg width="48" height="48"><g transform="scale(2)"><path d="M12,2L9.1,7H3.3L6.3,12L3.3,17H9.1L12,22L14.9,17H20.7L17.7,12L20.7,7H14.9L12,2M12,5L13.2,7H10.8L12,5M8.2,8.5L7.1,10.5L5.9,8.5H8.2M10,8.5H14L16,12L14,15.5H10L8,12L10,8.5M18,8.5L16.8,10.5L15.7,8.5H18M7.1,13.5L8.2,15.5H6L7.1,13.5M16.9,13.5L18.1,15.5H15.8L16.9,13.5M13.3,17L12,19L10.8,17H13.3Z" /></g></svg>
+
+!if %function_exists("$MdiSprite")
+  !unquoted function $MdiStarDavidImg($color = $MDI_DEFAULT, $scale = "1")
+    !return $MdiSprite(mdiAccountAlert, $color, $scale)
+  !endfunction
+
+  !unquoted function $MdiStarDavid($alias, $label=$MDI_DEFAULT, $shape=$MDI_DEFAULT, $color=$MDI_DEFAULT, $scale=1, $stereo=$MDI_DEFAULT)
+    !return $MdiSpriteElement("mdiAccountAlert", $alias, $label, $shape, $color, $scale, $stereo)
+  !endfunction
+!endif
+
+sprite mdiSynagogue <svg width="48" height="48"><g transform="scale(2)"><path d="M6 8V21H10V16C10 14.9 10.9 14 12 14S14 14.9 14 16V21H18V8L12 3L6 8M13.5 10C13.5 10.8 12.8 11.5 12 11.5S10.5 10.8 10.5 10 11.2 8.5 12 8.5 13.5 9.2 13.5 10M3 5C1.9 5 1 5.9 1 7V8H5V7C5 5.9 4.1 5 3 5M1 9H5V21H1V9M21 5C19.9 5 19 5.9 19 7V8H23V7C23 5.9 22.1 5 21 5M19 9H23V21H19V9Z" /></g></svg>
+
+!if %function_exists("$MdiSprite")
+  !unquoted function $MdiSynagogueImg($color = $MDI_DEFAULT, $scale = "1")
+    !return $MdiSprite(mdiAccountAlert, $color, $scale)
+  !endfunction
+
+  !unquoted function $MdiSynagogue($alias, $label=$MDI_DEFAULT, $shape=$MDI_DEFAULT, $color=$MDI_DEFAULT, $scale=1, $stereo=$MDI_DEFAULT)
+    !return $MdiSpriteElement("mdiAccountAlert", $alias, $label, $shape, $color, $scale, $stereo)
+  !endfunction
+!endif
+
+sprite mdiSynagogueOutline <svg width="48" height="48"><g transform="scale(2)"><path d="M20 4C18.3 4 17 5.3 17 7V7.3L12 3L7 7.3V7C7 5.3 5.7 4 4 4S1 5.3 1 7V21H11V16C11 15.4 11.4 15 12 15S13 15.4 13 16V21H23V7C23 5.3 21.7 4 20 4M20 6C20.5 6 21 6.4 21 7V8H19V7C19 6.4 19.5 6 20 6M4 6C4.6 6 5 6.4 5 7V8H3V7C3 6.4 3.5 6 4 6M3 19V10H5V19H3M17 19H15V16C15 14.4 13.6 13 12 13S9 14.4 9 16V19H7V9.9L12 5.6L17 9.9V19M19 19V10H21V19H19M12 8.5C12.8 8.5 13.5 9.2 13.5 10S12.8 11.5 12 11.5 10.5 10.8 10.5 10 11.2 8.5 12 8.5Z" /></g></svg>
+
+!if %function_exists("$MdiSprite")
+  !unquoted function $MdiSynagogueOutlineImg($color = $MDI_DEFAULT, $scale = "1")
+    !return $MdiSprite(mdiAccountAlert, $color, $scale)
+  !endfunction
+
+  !unquoted function $MdiSynagogueOutline($alias, $label=$MDI_DEFAULT, $shape=$MDI_DEFAULT, $color=$MDI_DEFAULT, $scale=1, $stereo=$MDI_DEFAULT)
+    !return $MdiSpriteElement("mdiAccountAlert", $alias, $label, $shape, $color, $scale, $stereo)
+  !endfunction
+!endif
+
+sprite mdiTempleBuddhist <svg width="48" height="48"><g transform="scale(2)"><path d="M21 9C21 10.1 20.1 11 19 11H5C3.9 11 3 10.1 3 9H1C1 10.9 2.3 12.4 4 12.8V22H10V19C10 17.9 10.9 17 12 17S14 17.9 14 19V22H20V12.9C20.5 12.8 23 11.9 23 9H21M6 8.9V10H18V8.9C18.5 8.8 21 7.9 21 5H19C19 6.1 18.1 7 17 7H7C5.9 7 5 6.1 5 5H3C3 6.9 4.3 8.4 6 8.9M12 1L8.2 6H15.7L12 1Z" /></g></svg>
+
+!if %function_exists("$MdiSprite")
+  !unquoted function $MdiTempleBuddhistImg($color = $MDI_DEFAULT, $scale = "1")
+    !return $MdiSprite(mdiAccountAlert, $color, $scale)
+  !endfunction
+
+  !unquoted function $MdiTempleBuddhist($alias, $label=$MDI_DEFAULT, $shape=$MDI_DEFAULT, $color=$MDI_DEFAULT, $scale=1, $stereo=$MDI_DEFAULT)
+    !return $MdiSpriteElement("mdiAccountAlert", $alias, $label, $shape, $color, $scale, $stereo)
+  !endfunction
+!endif
+
+sprite mdiTempleBuddhistOutline <svg width="48" height="48"><g transform="scale(2)"><path d="M21 9C21 10.1 20.1 11 19 11H18V8.9C19.7 8.5 21 6.9 21 5.1H19C19 6.2 18.1 7.1 17 7.1H16.5L12 1L7.5 7H7C5.9 7 5 6.1 5 5H3C3 6.9 4.3 8.4 6 8.8V11H5C3.9 11 3 10.1 3 9H1C1 10.9 2.3 12.4 4 12.8V22H11V18C11 17.5 11.4 17 12 17S13 17.5 13 18V22H20V12.9C21.7 12.5 23 10.9 23 9.1L21 9M12 4.3L14 7H10L12 4.3M8 9H16V11H8V9M18 20H15V18C15 16.4 13.6 15 12 15S9 16.4 9 18V20H6V13H18V20Z" /></g></svg>
+
+!if %function_exists("$MdiSprite")
+  !unquoted function $MdiTempleBuddhistOutlineImg($color = $MDI_DEFAULT, $scale = "1")
+    !return $MdiSprite(mdiAccountAlert, $color, $scale)
+  !endfunction
+
+  !unquoted function $MdiTempleBuddhistOutline($alias, $label=$MDI_DEFAULT, $shape=$MDI_DEFAULT, $color=$MDI_DEFAULT, $scale=1, $stereo=$MDI_DEFAULT)
+    !return $MdiSpriteElement("mdiAccountAlert", $alias, $label, $shape, $color, $scale, $stereo)
+  !endfunction
+!endif
+
+sprite mdiTempleHindu <svg width="48" height="48"><g transform="scale(2)"><path d="M6.6 11H17.4L16.5 8H7.5L6.6 11M20 11V13H4V11H2V22H10V17H14V22H22V11H20M15.9 6L15 3V1H13V3H11V1H9V3.1L8.1 6H15.9Z" /></g></svg>
+
+!if %function_exists("$MdiSprite")
+  !unquoted function $MdiTempleHinduImg($color = $MDI_DEFAULT, $scale = "1")
+    !return $MdiSprite(mdiAccountAlert, $color, $scale)
+  !endfunction
+
+  !unquoted function $MdiTempleHindu($alias, $label=$MDI_DEFAULT, $shape=$MDI_DEFAULT, $color=$MDI_DEFAULT, $scale=1, $stereo=$MDI_DEFAULT)
+    !return $MdiSpriteElement("mdiAccountAlert", $alias, $label, $shape, $color, $scale, $stereo)
+  !endfunction
+!endif
+
+sprite mdiTempleHinduOutline <svg width="48" height="48"><g transform="scale(2)"><path d="M20 11V13H18L15 3V1H13V3H11V1H9V3.1L6 13H4V11H2V22H11V17H13V22H22V11H20M15.3 11H8.7L9.3 9H14.7L15.3 11M14.1 7H9.9L10.5 5H13.5L14.1 7M20 20H15V15H9V20H4V15H7.5L8.1 13H15.9L16.5 15H20V20Z" /></g></svg>
+
+!if %function_exists("$MdiSprite")
+  !unquoted function $MdiTempleHinduOutlineImg($color = $MDI_DEFAULT, $scale = "1")
+    !return $MdiSprite(mdiAccountAlert, $color, $scale)
+  !endfunction
+
+  !unquoted function $MdiTempleHinduOutline($alias, $label=$MDI_DEFAULT, $shape=$MDI_DEFAULT, $color=$MDI_DEFAULT, $scale=1, $stereo=$MDI_DEFAULT)
+    !return $MdiSpriteElement("mdiAccountAlert", $alias, $label, $shape, $color, $scale, $stereo)
+  !endfunction
+!endif
+

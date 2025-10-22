@@ -1,0 +1,13 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $volumefilestorage [64x64/16z] xS61400000CXXFdRpkElMXu0001m
+
+!function $volumefilestorageIMG($scale=1)
+!return "<img data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAAIGNIUk0AAHomAACAhAAA+gAAAIDoAAB1MAAA6mAAADqYAAAXcJy6UTwAAAAEZ0FNQQAAsY58+1GTAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAAOxAAADsQBlSsOGwAAAf9JREFUeNrtmj1Ow0AQhTeOWxqgCQpngI4SHwGJIgLBDaiBK0CZhgsgfiQKkDhAUtKRgoYaQUWQ6BCRzFtlaSzbsuPd8f7Mk17hVeyNv4x3ZyYWgsVisVjhqlMw3ofP4QTuNbj+F/wEn8ITVwDIm3+GVzTO8wsfwre2AejmjF3AWwbm2YFf4RebAEQ5Y4mhuWL4Eh7YBCDOGVuruE5U0UDddJyBIGx5HCLD15c3eQDPbI2EiGAOqyFERPNYCyEmnOv/mc+uCTfKpvQBj+Bj+K2tCCiLBNOSidyeym36bQNoC4JQid2ZDQDahJC0uQbkQaDIBdKSHKe1CLA6FWYADIABhCOqXaBJh0lmb0fwg6sRIG9+orKx3oLn35mqGSgAyF9+WUOkGimcKABsa3xctUOgWAPqdpjSzPFMGOwoubALGO0juADAaDPFlTzAGASXEiEjEFzLBLVDiIV7KuotyuMf+L7OruNqLVAUCUMfIuA9kzukNc5d92ENGIdeDsv+/TRkALL83YCvxfxPDS/6AYtA2K/42dS3CBChrwEMgAEwAAbAABgAA6BRrKEa6/gWAaPQH4ET+DNkALIQ2aSqxmxcA+pWY7wL+BgBOtWkx7fIXNZFAGWPb2wjAKoe31TNVUtdgi/2DV+J+dshq/CS5uvLneoR3hU5L0OzWCxWmf4AqtZklKz7l4YAAAAASUVORK5CYII={scale="+$scale+"}>"
+!endfunction
+
+IBMEntityColoring(volumefilestorage)
+!define volumefilestorage(e_alias, e_label, e_techn) IBMEntity(e_alias, e_label, e_techn, #232F3E, volumefilestorage, volumefilestorage)
+!define volumefilestorage(e_alias, e_label, e_techn, e_descr) IBMEntity(e_alias, e_label, e_techn, e_descr, #232F3E, volumefilestorage, volumefilestorage)
+!define volumefilestorageParticipant(p_alias, p_label, p_techn) IBMParticipant(p_alias, p_label, p_techn, #232F3E, volumefilestorage, volumefilestorage)
+!define volumefilestorageParticipant(p_alias, p_label, p_techn, p_descr) IBMParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, volumefilestorage, volumefilestorage)

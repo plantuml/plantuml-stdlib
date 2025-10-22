@@ -1,0 +1,13 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $buildtool [64x64/16z] xS61400000CXXFdRpkElMXu0001m
+
+!function $buildtoolIMG($scale=1)
+!return "<img data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAAIGNIUk0AAHomAACAhAAA+gAAAIDoAAB1MAAA6mAAADqYAAAXcJy6UTwAAAAEZ0FNQQAAsY58+1GTAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAAOxAAADsQBlSsOGwAAArpJREFUeNrtm79PFEEUx0fuKgKJCRYiYG00/igMVISjgp5ogo0x0UaDjT8SK6EgJEcnSkICJBSA/wAFv4KUdpAYY2VhELWgoiPR9ftyz2Sd7O7dHDvLzO57ySe5mdudm/fd+fHu3ZxSYmI27TXjrJUsOz8OKlzeLZIAL8FkqOysCLYEOAZ3QKvrItgS4BdY90EEm2uAFyKULLfvvAilDD7DaRHOGV7fBapgEHSm1AfaKici6gPDdn6AHd6BvtsYAeT8PugD7Sk+hLiRMG7YDvXpOrgPlnknqmstBh9AT77Dg+izg/uq0hagYqnDcVMgjVFV18oGjV46xfpxA2yDCwbOm65PQUJfUxkBzVozzmdmLUV23rYAzjtvUwAvnLcpwLAPztsUoKoFMk46b7oNmtpEzOvCCOC041nGASKACCACiADOWtnTfjeSmfr37TAxU1T21HnKTDWanCGB7oEhcFMXwccp0GxmKjJT5KMAlTTv9XEKmGamEjNFsg2KACKACCACiAAigAggAogAIkCs9YOliPq34IrvAiR9GaITF/Pgbsz7T5hp8Ar8ztMIaANbCc6H7QVYU9kcuMpMgDeg16AdyrZM5WUK3AIPtLoDVcup7XCZcnGUXekOXfMcLIIvvo+ARxHOkyir4CezynUHWmJiLA8jYFAr05M/irjuiN9bCdU9ZrweAZe1ctJJzl3luUUJ8KfogdA3rTyQcP9AHgOhDXAtVK5ynb4OROXZF8BDy30ObI+AeS2qo61uD4yCi8wo13VrU2cmDyPgM3gHnmoirNRpa1bVfrKybYfq//x+YHhvQ5EgBTWbBg3Ttc8yemgf0rw3Ln6n4fwenAe3E4QKeLRQ5HiSkQAfVe1IfKvhfbSGjSjtGH0jB5Kv8sJG8X4PT5uvHBbPgU9nMHVN/rjR1B8pxMTEimF/ARPDgFs4mBhwAAAAAElFTkSuQmCC{scale="+$scale+"}>"
+!endfunction
+
+IBMEntityColoring(buildtool)
+!define buildtool(e_alias, e_label, e_techn) IBMEntity(e_alias, e_label, e_techn, #232F3E, buildtool, buildtool)
+!define buildtool(e_alias, e_label, e_techn, e_descr) IBMEntity(e_alias, e_label, e_techn, e_descr, #232F3E, buildtool, buildtool)
+!define buildtoolParticipant(p_alias, p_label, p_techn) IBMParticipant(p_alias, p_label, p_techn, #232F3E, buildtool, buildtool)
+!define buildtoolParticipant(p_alias, p_label, p_techn, p_descr) IBMParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, buildtool, buildtool)

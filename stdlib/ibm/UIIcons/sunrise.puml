@@ -1,0 +1,13 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $sunrise [64x64/16z] xS61400000CXXFdRpkElMXu0001m
+
+!function $sunriseIMG($scale=1)
+!return "<img data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAAIGNIUk0AAHomAACAhAAA+gAAAIDoAAB1MAAA6mAAADqYAAAXcJy6UTwAAAAEZ0FNQQAAsY58+1GTAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAAOxAAADsQBlSsOGwAAAsFJREFUeNrtmT9IHEEUxvduNUZNk2hQLMRCSBGuTZsgiYIoksYL2IlgIF1SpsilSJEU6YI5sE1hwEpB0BhIJZ6CVSAXUoQDQRGNKSQkcFy+IW9hGC67t39mZ5Z7H/yK/TOz733Mm9mddRwWi8VisVgsM3pGGJNrOPkSuEPHn9rJAC95T8ZMcC1I3qgJriXJGzPBtSh5Iya4liWfugmuoeR/gssB51IxIW8o+Ykm907QNVkl3e8J+ZSTPwfjYLfJ/bt07TxNE/JOevKSr/jcU/mPCZkcAc+lEeAlv9dCuz3FhBL1pUUdmg0Wgf8CH8F+iHbChHtgDLzSGWBHCqMsagL7IU2zfg6wUmwAG8AGRFKvhbn0pmVAAXwDRYuSL1JMBd0GFGhNHwTvLDGhSLEMUmwFXQaIIbYJ+qUvSdMmeMl7X7X9FGPL5ZCL+UChOpgDK4aTjxRL2P2Az6AK7kujJ0/HVbqemeSjboiYNiHRURh1R8jPhAPwVVPy0+B9kiUY50VohR5cl85VA77346pCz0hs/om7JyiPhC/0+Xqs0YALsAomwbUkJt9cgkOz0kLyIugpYoTWbqEj8B2sE2cB/QyAW2AtbuA5Jx2JxJ+CR6Ar4N7f4A140YIRThYMGKOJqy9ku1MwS2932qT7v8A81eiVCG17qMYPaWXRIp1bYndBuckzxMS5TK+sNTo37PzbCF0AN5X4ynTfhyyVwHVaHa5K5/6Ax+CtsnSqI/IheA0uSed/gBvgJCsl8BLcVpKfpHJo+LQT18SO8A54IMXXTWxkYUdILG2LyrknYDtEH9vURtaitGxqnQMaMctnBnQqNb8UIbYlKgdvTuikvss+oyd03DpGwJRyvOxT836qU1u/vq0sgVHleCtGX1sBfVtpwJByXIvRVy2gbxaLxWKxEv4YarRTzvx3mA1gsVgsFqtt9Rff+pn6GBlNdQAAAABJRU5ErkJggg=={scale="+$scale+"}>"
+!endfunction
+
+IBMEntityColoring(sunrise)
+!define sunrise(e_alias, e_label, e_techn) IBMEntity(e_alias, e_label, e_techn, #232F3E, sunrise, sunrise)
+!define sunrise(e_alias, e_label, e_techn, e_descr) IBMEntity(e_alias, e_label, e_techn, e_descr, #232F3E, sunrise, sunrise)
+!define sunriseParticipant(p_alias, p_label, p_techn) IBMParticipant(p_alias, p_label, p_techn, #232F3E, sunrise, sunrise)
+!define sunriseParticipant(p_alias, p_label, p_techn, p_descr) IBMParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, sunrise, sunrise)

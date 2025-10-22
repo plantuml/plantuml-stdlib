@@ -1,0 +1,13 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $flowchart [64x64/16z] xS61400000CXXFdRpkElMXu0001m
+
+!function $flowchartIMG($scale=1)
+!return "<img data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAAIGNIUk0AAHomAACAhAAA+gAAAIDoAAB1MAAA6mAAADqYAAAXcJy6UTwAAAAEZ0FNQQAAsY58+1GTAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAAOxAAADsQBlSsOGwAAAlRJREFUeNrtWT1LA0EQ3btYCWKnoFhYJkhsov/BRhuJIGjhDxOMXbARhCss7KONUUwlCtpoqSDYBOd0NhxL7m5nd28T3Bl4mPuY3bePc2d2RojALcK/B4CjwNZ+DDiN8WIf0Axo8U1cs5jJ3OwBtgIRIJE/4tD3ABaABWABwrZsFNgEXAUUBtOoJ2qZL2FpQkQWAW+e503n6wD60xCPE94DWAAWgAVgASZcD6Caq/qBPIK7CEe/53tfX4Cr+kHf0eJH53ubTJBq01Q/SHgPYAFYABaABWABWADjTJCa2ZlkcJRMzRsf084QNYOjZmre+PjqDJlkal748CbIArAALEDQ5qszNOrEEMwLH9POELWjQ+3EUPmsAxYA7xXxGRtHkyn6ki8BF7wHsAAsAAvAArAALADJ8nqDZRUZnQqMUa/OkE+aCA0Bd1Q+eV9AWUWmrAJj3Ksz5HNbsvhcPkW9QZuKTBVZYiV8eBNkAVgAFiBoqynX8xhz98RfweMD8Aj41hxP9f8k+gvffCIlVp4DVgD3eG8N8ALYEeXVkzz/V8C2oFdfvPCRAswCHlChNmCA9+uALmAO0AB85Uxm6+96PG1/uQekaeay8rLA3218VpSK2vq7Hk/bXwrQQsUGYwYb4LNWwYS2/q7H0/aXAgw1SA0Nn1HeEb75xJk8u4H/I6rV8VmvJE+38Xc9nra/FCCtkT/jBlFXXu7is07BhLb+rsfT9o+UM/UZYFUJG0+AXTxyipIzuY2/6/G0/KMx4eMQsIHX16gUJXzZ+IuK+dwATiz4/D/7AdRYzzoZ+BIyAAAAAElFTkSuQmCC{scale="+$scale+"}>"
+!endfunction
+
+IBMEntityColoring(flowchart)
+!define flowchart(e_alias, e_label, e_techn) IBMEntity(e_alias, e_label, e_techn, #232F3E, flowchart, flowchart)
+!define flowchart(e_alias, e_label, e_techn, e_descr) IBMEntity(e_alias, e_label, e_techn, e_descr, #232F3E, flowchart, flowchart)
+!define flowchartParticipant(p_alias, p_label, p_techn) IBMParticipant(p_alias, p_label, p_techn, #232F3E, flowchart, flowchart)
+!define flowchartParticipant(p_alias, p_label, p_techn, p_descr) IBMParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, flowchart, flowchart)

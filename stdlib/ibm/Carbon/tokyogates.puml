@@ -1,0 +1,13 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $tokyogates [64x64/16z] xS61400000CXXFdRpkElMXu0001m
+
+!function $tokyogatesIMG($scale=1)
+!return "<img data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAAIGNIUk0AAHomAACAhAAA+gAAAIDoAAB1MAAA6mAAADqYAAAXcJy6UTwAAAAEZ0FNQQAAsY58+1GTAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAAOxAAADsQBlSsOGwAAAspJREFUeNrtm09IFFEcx9+0CoFQVIc9RAezruYpWDroHjK8WZDggpcoWbqERHVYj7uIW4vlSQQNFYIOpZcUvCwUEQgJbacgo24JFZXsUfT7mN/CsOzMvPkjb2bn94UPMsybN7/3fb/3hzerECwWi3QbnEhAO0+CO42LFP29CN6AcfAPfAIHbdbwFHXyGrgBXoI/hqVAD3gMrpMBE6DaJo3PgqegF6yCB2BH3jBsCs+AS82FY6gL1KnDdp1qOKTLLTANusAzUAT/YzTOC+AeqINHYBHst2poK8nxvw1OgX5whcbP34jPD9ZxfpWuZ0HZLuaUS4WfwV2wAX6Ah5ROX8D3CI7zVTJgE3wF58AoZYHwY4B88AwYAYNgHVyjlOoDH+VMGoFxvgCmwE+QA0s06c2B104PGwovSINvVNl9y/xQorH2QeOQkPFnaGhOWsZ5BeTBebDrNmaEYhbkyek9mh/mQSc4qzkDXoGblo6QHbai0vtelCYjKjFYASoUa1ql8DHFSnfJ0bxqxZqUphjn3FK/oQ4PlZep8qpq5ZoMaMSqvG6qSqbVL9DtUKaXglA1KOzyMsYn4K2uHtggolI+tDmgbWX4eKbqkqJSNQ8pHXb5LGeARvEcwHNAzOaADs0dUEv6HKC9/sTPAWwAG8AG8D7Ai+RZ4JjHdVqe0634jG+M3ullH7AMnh9VBsjvBAPCPIi0W9drTQHnAnRQztLoVvVblaHYTh/lRqhCJsivLu+FeRLrtm4H1RYYcilTpMaXhMdzSz87wUajC03XulSkWEp+YvG7Fbaa8FuYH1N1aCJI44OuAvKF74T5xUiXBikG31kYdBmsR2AlCxQDb4TYADaADWAD2AA2gA1gA9gANoANYAPYADaADUicVM4E3X4PsOXy/GXh/z9Pwqg/G9QAJ8kz+hcO9+W94xGun5V4GQHngDgoy6sAi8Wy0yG015ofVudwFQAAAABJRU5ErkJggg=={scale="+$scale+"}>"
+!endfunction
+
+IBMEntityColoring(tokyogates)
+!define tokyogates(e_alias, e_label, e_techn) IBMEntity(e_alias, e_label, e_techn, #232F3E, tokyogates, tokyogates)
+!define tokyogates(e_alias, e_label, e_techn, e_descr) IBMEntity(e_alias, e_label, e_techn, e_descr, #232F3E, tokyogates, tokyogates)
+!define tokyogatesParticipant(p_alias, p_label, p_techn) IBMParticipant(p_alias, p_label, p_techn, #232F3E, tokyogates, tokyogates)
+!define tokyogatesParticipant(p_alias, p_label, p_techn, p_descr) IBMParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, tokyogates, tokyogates)

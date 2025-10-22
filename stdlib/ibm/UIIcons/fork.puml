@@ -1,0 +1,13 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $fork [64x64/16z] xS61400000CXXFdRpkElMXu0001m
+
+!function $forkIMG($scale=1)
+!return "<img data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAAIGNIUk0AAHomAACAhAAA+gAAAIDoAAB1MAAA6mAAADqYAAAXcJy6UTwAAAAEZ0FNQQAAsY58+1GTAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAAOxAAADsQBlSsOGwAAA6ZJREFUeNrtml1IFFEYhk/bjxUhUUE/rEQoCUJUWBJEaeFFBF1EV2ZepGJCaSVot3WXFkQSYb8QRFZQBEVYGFlddmFiGRZdVEsFlVdB1K5u72Hfhek07c6ZWXdn1vPCA+6Z2dk53/nOOe83oxBGRkZGRkZGRkZGRlNR0/KgD2WgEVSDlaAADINn4DwYytcAzAAnwAH+bac4g3AY/LQ7YXqAO38X7AGhNAO8DmwCN0E0XwIgR75O4/zlYDGD9k8kg6ZS0Kq0RUAHeMzPW0AnKLKc0wDOgsGgZ0AHU9ra+dXgOfhBXoIroBYUWqaD5J6fMiAMukAVWOohIGM27WM8ds3SVu2nKSA7/wIs9HidJxrHwsyCeLIhlMMAdGag856VywBUZeg6lRrHItbRz/UUWObSlHVybicl15AHNuvAAh6zqt9PGeBWl0HMZi2pAUtIDdvCiivscbMIyi2miVvPKvALvGE0L4KRLAdgFHSDNktbkbLa2+mS6gHSBWAOOMXOW9OzgIGQtIAzoF0ZlcnWERZB2xye/xQc1KkF5oI+sCvN3JRTaAOoADfAhEYnjiqfj2l8d4K/V0ivH0pTDNXpFkPSMu7UuKESMA88zFIAkkGQi98t8Ju/P59ZPcz2JqZ+LFVVpWotfbNVH5l2qbx2K6M9muU1YURZDzz7gGYl7eXeuQb0gi+kl20RJZj1QayrVVV78Nodyh7te4VszEjYg9cOnEJiiitks21EPHhtkQ9rQD+3Dzdeu4u7hRPF/ToFepSb+5/XHlLWixh9euAzYJDmoVHTa3fnwAMIWuJ9YCsopkF6Dx6Bc+CVbgAEfbN8ybDZ4U30aaR+pjSLU67FJpPLyH5mdBuLOMdWOEqvvQiUp6gHYhz5vS6KIS9WeKZIPOKuTVOryGPrwUZwHYw7DUCyc/IJ6h2m1WyReLYuI/maU0Iullc1i6BMBOCkSLwUcaoVXLTvu3keMMRU8otKmfa6tUozp8Nw0I1QgzJwTmuVkLK9O86AydIn8fdzQbe+QKdWqfSTFR7I0HV0apViPwVAztnvWf7NuJ8CYJ27nz1cR6dWeeenNSAZhN2a3zmumC6dWmVAxwf4VR+4pSXvvZBBlKv/N5F4NrgD3FZqlXHa+6+qUwqi5Mi2a37nNDiUDxkgaHjKWa84kZwi9bpW2M+S1lv+z498eVORoh/jrFXqhc3/BwV5ClhVQne4ndY3yl1FvqO4AN4KIyMjIyMjIyMjIyMjRX8AO4jMjJ2ZDH8AAAAASUVORK5CYII={scale="+$scale+"}>"
+!endfunction
+
+IBMEntityColoring(fork)
+!define fork(e_alias, e_label, e_techn) IBMEntity(e_alias, e_label, e_techn, #232F3E, fork, fork)
+!define fork(e_alias, e_label, e_techn, e_descr) IBMEntity(e_alias, e_label, e_techn, e_descr, #232F3E, fork, fork)
+!define forkParticipant(p_alias, p_label, p_techn) IBMParticipant(p_alias, p_label, p_techn, #232F3E, fork, fork)
+!define forkParticipant(p_alias, p_label, p_techn, p_descr) IBMParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, fork, fork)

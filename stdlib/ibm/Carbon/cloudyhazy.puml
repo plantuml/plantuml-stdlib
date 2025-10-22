@@ -1,0 +1,13 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $cloudyhazy [64x64/16z] xS61400000CXXFdRpkElMXu0001m
+
+!function $cloudyhazyIMG($scale=1)
+!return "<img data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAAIGNIUk0AAHomAACAhAAA+gAAAIDoAAB1MAAA6mAAADqYAAAXcJy6UTwAAAAEZ0FNQQAAsY58+1GTAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAAOxAAADsQBlSsOGwAAA0dJREFUeNrtmWmITWEYx88wM6Jp0iQm3Cwl+WKtkZAxwhdmPtiLZiYNYixlya6U7ZMaS/gqWSLMjBCRxMiWELKErNcyyTR2l//T/E8d072Ta845zj3v869ft+4595z7Pud5n+1YlkqlUqlUxirN5/u1BgVgAMgl38BH8ABcAlfAl7AZYDQoByNohK/gJXjK411BBx77DPaDnTRIShtgCNjAz9vgIDgMbsY5txXIo7Gm0zuOgwXgfqoZoCVYA1bQteXzUBK/zwCTwUbQDiwFm1PFAG252HywFqwDP/7xWtlgE5gF9oISxgxXn5SbagNOgL5gItgFYs24nsSKY4wXi0EfbqNfQTSAuG0VGAhGgjMuXvs6uMut1AUcDaIBVoNiMAmc9mBr3QG1YDl4lCCQJq0WLv25fvxjErSOeJhVtoJKsA10CpIBdoBnDHheayb4CVa6cbF0F64xjPm7iEWM13oNtjA1SqHUjXGhPfgAXoF7oJrneh4DKhgAy30sqW/xfhJv+oMs8J01gwThaWAhGAoe0js9qQNywFuwCqz3ua/oyeoxXjCU+FAI5vO8PWAG+OS2B4wCU0AZ3c9PvQfRBMfqwFXGpjcsp4uYpuuSMUAmG5gyulUpK7zuvLmUqz2YAYKoGLvLU/SAsWA3t0uTW0AWPpcLy6G1H4N6Lj7iqNTOs/AJuiRQn2OZPrWpLBBhru3NvSNudDFOvV9MqlNk9nEZLGIGkTqiJp4HRJha5Ptx9kkhUjrb8hfc2n8UQpms4mTxg0K4eItdaQXjWG5jA8xhFzfBMakJoyr5kMc4DZDBgLcPXLDCreekl9MA+ayitltmSMrljs4sUMBWs8YQAxTaQxXbAJ2Z52OGGCDauA7IblwieqizPi92+N/MA6JsJ42T7QHSP5ew7K39n0/Eb9keUMVUON40D7ANIC8vTloNg80skwzgbIdvcIAgE5YDlouz91QxgAwOZNy8DAymR9SbZACLnZKMmGaDeUyP8lbmXVgNkGggIm2xvIUpZZco3vGEhrkWkPzuSlZJNBaXKaq8kFxiNcz98tg+mlIpqlQqlcoIpbmQx5PNw4GcB6hUKpVKZXgd4JW8zvvNmgdoHaBSqVQqlbn6DetTpyjHcUoaAAAAAElFTkSuQmCC{scale="+$scale+"}>"
+!endfunction
+
+IBMEntityColoring(cloudyhazy)
+!define cloudyhazy(e_alias, e_label, e_techn) IBMEntity(e_alias, e_label, e_techn, #232F3E, cloudyhazy, cloudyhazy)
+!define cloudyhazy(e_alias, e_label, e_techn, e_descr) IBMEntity(e_alias, e_label, e_techn, e_descr, #232F3E, cloudyhazy, cloudyhazy)
+!define cloudyhazyParticipant(p_alias, p_label, p_techn) IBMParticipant(p_alias, p_label, p_techn, #232F3E, cloudyhazy, cloudyhazy)
+!define cloudyhazyParticipant(p_alias, p_label, p_techn, p_descr) IBMParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, cloudyhazy, cloudyhazy)

@@ -1,0 +1,13 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $electriccar [64x64/16z] xS61400000CXXFdRpkElMXu0001m
+
+!function $electriccarIMG($scale=1)
+!return "<img data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAAIGNIUk0AAHomAACAhAAA+gAAAIDoAAB1MAAA6mAAADqYAAAXcJy6UTwAAAAEZ0FNQQAAsY58+1GTAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAAOxAAADsQBlSsOGwAAA7BJREFUeNrtm01oE0EUx6fRIoj1INRDkYqih4jWk0WqYoKi1IuCgrFSPw9ehaJ48SSo4MmTp0r9gFZRaE8BEdpa6KE9GQUPRa0lUNqLHxVBpOh/yL8wbrObzWZnZzvZBz+S2Uz6Zl7eezP7dipEIokkokg3cWtbJylHu4u4ta03QN1J3RugQYn1S6CN7QJf1fZD8MRWD+jiZAvK5IXSbrM1F6xW3k+ATpd++SQHWCqqB7SDYZd+bfSQxAOSHGCpB8yBFo9+LexjrQEmwQ6QLtMnzc8mbTaA3OQUwXOHEdK8VmQfa3eCUnaCIbAZvFeufQHHlWvWGkBKEzgJbrF9E7wEC/WwCghOtA+cZrsvJD1rwFWwH6zTPKefYAzcB7/jsg+Q+eM2aI5AVzN19QbxAB2yCeTADXAvIoNfA3eps2jaAFl6mgyrYxEZoIk6s5Vu4aMIgQz4HnEiXaDOTBxCIMOV5HLECb7XjwF0e0Ar2ApGDKxwI9TdatIAB/k6asAAo44xGDGAdMFPYMaAAWaoO2PaACbcXw0DYwYwGf++80DYBsgrxROT8e+WB9TxafcAk/HvOw+kLI5/X3kgZXH8+8oDYe8El4qq3TGI/3J5oDOKrXAH7/0XwaOY1D0WOaaPYFxnCHTQ5dazKBEXGeOYRjhGbR5whZlXVpH/iHhJI/jAMY7r8oCNYCqGkxcc0xTHGKoHpJhcZPFh6RG7U86Aw3z/GvRrmmTVemo1gJzwgCg9P/gG/pbpIz+X1aB3bMuDGLLMnnP0G65SdzagntAMICf9RpQemR0Fr8TyZ4g5DuqCsiKcF6Vq8yAHHYYE1hPUAPJ5gqz0fgUHwLxLvyP8RdTlUL7v4WcDHr9oNVKNnlB2gnLSe8F1j8mvCAnqAYdEqeg4WKGfDIuLdEfVNXeJUu0+rBxQjZ5QDLCNLldpuZOud4Kx2MNrclDPQoz/mvQENcAGUXoE5TdBDSnL0x2X5SlboxH86tF+L1BO+jWu/TXpSc4Iafib7QESWlSy7LSbmwfMispnhmZt9oAJFjXSvINy7gDl3d4Dj+92xnS+eb854DGYFu5nhqbZxylyU7Sdt55xk0aObd65pXWT3eAF2CL+PzP0GZwCbz0KIvJcUTFmBpDnFOT5p4xaD2io8KW14BzYw/Ykf/lfHt/ZB56yAlPu2H1UyU449P8AZ4WjJKYz1vIe7djor5d9QEOyEUoMEP29gLojNPH/Br70r9LoWepOco6rRyFCzzapP5FEVor8A3Zk1GHYz8e1AAAAAElFTkSuQmCC{scale="+$scale+"}>"
+!endfunction
+
+IBMEntityColoring(electriccar)
+!define electriccar(e_alias, e_label, e_techn) IBMEntity(e_alias, e_label, e_techn, #232F3E, electriccar, electriccar)
+!define electriccar(e_alias, e_label, e_techn, e_descr) IBMEntity(e_alias, e_label, e_techn, e_descr, #232F3E, electriccar, electriccar)
+!define electriccarParticipant(p_alias, p_label, p_techn) IBMParticipant(p_alias, p_label, p_techn, #232F3E, electriccar, electriccar)
+!define electriccarParticipant(p_alias, p_label, p_techn, p_descr) IBMParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, electriccar, electriccar)

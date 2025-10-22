@@ -1,0 +1,13 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $spraypaint [64x64/16z] xS61400000CXXFdRpkElMXu0001m
+
+!function $spraypaintIMG($scale=1)
+!return "<img data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAAIGNIUk0AAHomAACAhAAA+gAAAIDoAAB1MAAA6mAAADqYAAAXcJy6UTwAAAAEZ0FNQQAAsY58+1GTAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAAOxAAADsQBlSsOGwAAAkFJREFUeNrtWr1KA0EQ3qitRaKNP22shSiiEDlJG9FCiGArPkAEJfYqCuYBfADRTtA2P0YLhQj2sdRYRcEXOGfJCMlwyV1+7m73bj74ir3s7GS/m92d3VshGAwGgxFeRBT+b6YXfRoJewSM9aB8xOV6voAjIADzlckRwAKwAEOdAyIDjkmdcg2OAL/fzizwHGgAp1zy8QUsAw+AHyoJIDv/BpzwyF8DOE9F8CIT7IQzDzsv0Jf0uaPKHGCo4NPPTHDao+FodvHJqwALwJlgQDM8jgAWgAXoew5Q8QwvBdwGrras5XVgBXgNLAxTAJUQB152yBrnkLu42dkD1oI0BJLAF4cps4F1k0ERQL75W2C0B5so2sSDMARk2MfIs3vgBbCK5UVgFphuqRND2zWdBUhZhP0R8JQ8KyHlb8dkOKScToyDZIJuIUPKdxadb8UJcJlEQsapACrOAXQiyzuwydu0oZUAM6T86sCmatNGqDNBUzcBPkk54cAmYdOGVgI8knLWgQ2tU9FZgBtSXgfmutTPYZ1ubWiVBxQwtzfIUrdCEqEF4D5Z/v7zg6LumaDc2DyTbDBt0VmKb7TVfi8gd3WbwJ8ebGTnN4DvQdkNyslwCYeDHUpY9ylo5wE13NjQAxG5tsuPng94IFLs14Eud4QKYoBTn7BngiwAC8ACsAAsAAvAArAAymWCddF+Z8f0yKcyEVBWwaefAhyK5uVFr9BAn20Y9VGAX+CVaF6RnQSOu+RH7hrlx5UtYXFVlsFghBt/r95cxaTYA6oAAAAASUVORK5CYII={scale="+$scale+"}>"
+!endfunction
+
+IBMEntityColoring(spraypaint)
+!define spraypaint(e_alias, e_label, e_techn) IBMEntity(e_alias, e_label, e_techn, #232F3E, spraypaint, spraypaint)
+!define spraypaint(e_alias, e_label, e_techn, e_descr) IBMEntity(e_alias, e_label, e_techn, e_descr, #232F3E, spraypaint, spraypaint)
+!define spraypaintParticipant(p_alias, p_label, p_techn) IBMParticipant(p_alias, p_label, p_techn, #232F3E, spraypaint, spraypaint)
+!define spraypaintParticipant(p_alias, p_label, p_techn, p_descr) IBMParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, spraypaint, spraypaint)

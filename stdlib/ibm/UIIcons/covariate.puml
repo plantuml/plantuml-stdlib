@@ -1,0 +1,13 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $covariate [64x64/16z] xS61400000CXXFdRpkElMXu0001m
+
+!function $covariateIMG($scale=1)
+!return "<img data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAAIGNIUk0AAHomAACAhAAA+gAAAIDoAAB1MAAA6mAAADqYAAAXcJy6UTwAAAAEZ0FNQQAAsY58+1GTAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAAOxAAADsQBlSsOGwAAAf9JREFUeNrtmzFOAzEQRR2zLU1EA8odOAJ0VKlRAhK3oKfNLZAQEjUXIEfIHUKbghoEY+FIaOUIz3g8Xs96pF+svc37a49nHMWYFi1ajDkmgbHviHdqimvQHHQH+upPdso/sIN/8pxON30T7Ejg98+P/ZfsSOBdfIJex2DAIfhb0It2A1Dw2gxAw2sygAQveQzOQCvQpX9+A92DtiXhpQxw8BvQ9M/YAnQFOk80IQleagusevD7mPq5YvBSBlwQ57LD15oE2eClDFgT57LDSxngsv0uML7zc8XgpU6Brc/2KcdgFnjJOsCBLgX3fHTdMfT7ACp8dN1hlcGj6w6rDB5dd1hl8IM8BqXhUXWHVfjlUXVHp3DZo+oOqgGc/X2OPR9dd3REeK7+XjThcSVBrv6+ODzVAI7+fhDwpZIgBj7nXSJ5BaT091j4jc8vp14LPzYraQC1v8cu+1x3iclbgNLfU/Z8jrtEthyA6e8Hk/BK9AIp8Jx3iUUMSP3yXHeJRY5BjmXPcZdYxADuxmZZUw4YdMLLbUB18JwGVAnPZUC18BwGVA2fakD18CkGqICnGqAGnmKAKnisAergMQaohI81QC18rAFq4WMNUAuPTYLq4F2E/g/0DjozemPy3wpYmxFFyIBDd3Eq4ygw9gF6Nr+/xJyAjpUxP5gWLVq08PEDc4/hW+KscBAAAAAASUVORK5CYII={scale="+$scale+"}>"
+!endfunction
+
+IBMEntityColoring(covariate)
+!define covariate(e_alias, e_label, e_techn) IBMEntity(e_alias, e_label, e_techn, #232F3E, covariate, covariate)
+!define covariate(e_alias, e_label, e_techn, e_descr) IBMEntity(e_alias, e_label, e_techn, e_descr, #232F3E, covariate, covariate)
+!define covariateParticipant(p_alias, p_label, p_techn) IBMParticipant(p_alias, p_label, p_techn, #232F3E, covariate, covariate)
+!define covariateParticipant(p_alias, p_label, p_techn, p_descr) IBMParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, covariate, covariate)

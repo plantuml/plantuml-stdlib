@@ -1,0 +1,13 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $chartmedian [64x64/16z] xS61400000CXXFdRpkElMXu0001m
+
+!function $chartmedianIMG($scale=1)
+!return "<img data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAAIGNIUk0AAHomAACAhAAA+gAAAIDoAAB1MAAA6mAAADqYAAAXcJy6UTwAAAAEZ0FNQQAAsY58+1GTAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAAOxAAADsQBlSsOGwAAAvVJREFUeNrtml2ITVEUxzcjExGDxBQavJDy4ONBQpSUhFBmEB5MYcZHTeNBMZck8mBMiXwUyceLCSUPKM3U5PMBpRCTIkqmmMRF1391l1q2PZ1zp5tz9qz9r9/D3ufce8/5n7XPXmvva0xQUJBm9XL05WKcU0z979/7S721R0AwQLsBfVL6HgoREAwIBvj1DugLFoEqMB6MBqXgPXgAroML4Hva8oBiGLAYHAXljmMVzAqwH+wAZ3tKBNCTOgy2xDx/BDgD5oP14Ifv74DGAm5eahVoTskU3O2LWA1qHf3XwGlwD2TBZLCSn3iJOG8hR09N0nlAdwwYyk9fqgMsB7et/ltME7gKxohjm/lYs29DoA4MEe0vYIHj5qUegzmg3eo/Bgb7ZgBNbc9E+yCHfJTaOUrky2842OXbEGhkJoFlPJbj6iHYC/aIvu2Md+sBT0EGdBb4uQOOoaAqFc5aEaCyFqBs8LVmA35x+iz1KonrSbIaPAW+ivZYMFuTAR2OJGidtvWAc1abptX+mgy4CT6I9gBeV1BjwE9wyeqr1GSAaxhQXVGmyYD74Llol3LNoMYA0nmrXaXdgFlglCYDXvBQkNdVqckAVxSsSet6QLGV66Kf1htmglYtEeDSJk1DwCXaUBmn2QAaojsLOJ9S6d08fLx5B9hrgEvBZdFeC06AthjftQ00MLRwe9z8u4Sf+gigErnFusaTYGDE56aDetGeYPLbcV4OgTprdpgIroB+XZw/F9ywTPoEDkX9UImjr8FqZxIw4C0/vamir4KTIyqfP4JBYJ7J70vsc5hTDe76mAf8eSfQXsE0MEUco2WzizG+s8lRZXo3C3zj0vhJgZ87Arb2lGmQQn2GifenindgCd98zqdpMEqdPBXSdLbB5DdZqVKkPcY34CXXEbQ1n/WxFoi7F/gIbNSWCaoqh4MBSRUbac0DQgQEA4IByczBVIiUa7lnVwTc0T4E6rmWViHXesBnzq1HgmEmeiXGN2VMUFBQEOs3IAF8qRZ8lM0AAAAASUVORK5CYII={scale="+$scale+"}>"
+!endfunction
+
+IBMEntityColoring(chartmedian)
+!define chartmedian(e_alias, e_label, e_techn) IBMEntity(e_alias, e_label, e_techn, #232F3E, chartmedian, chartmedian)
+!define chartmedian(e_alias, e_label, e_techn, e_descr) IBMEntity(e_alias, e_label, e_techn, e_descr, #232F3E, chartmedian, chartmedian)
+!define chartmedianParticipant(p_alias, p_label, p_techn) IBMParticipant(p_alias, p_label, p_techn, #232F3E, chartmedian, chartmedian)
+!define chartmedianParticipant(p_alias, p_label, p_techn, p_descr) IBMParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, chartmedian, chartmedian)

@@ -1,0 +1,16 @@
+' Begin duplicate inclusion protection header.
+!if %true() != $CLASSY_TYPES_DESCRIPTIVE_RENDERER_PUML
+!$CLASSY_TYPES_DESCRIPTIVE_RENDERER_PUML = %true()
+' End duplicate inclusion protection header.
+
+' Declares a class that simply couples a Descriptor to a Renderer.
+!include <classy/types/descriptor>
+!include <classy/types/renderer>
+
+$class(DescriptiveRenderer)
+  $classImplements(Descriptor)
+  $classImplements(Renderer, 'renderer')
+$endclass(DescriptiveRenderer)
+
+' Terminate duplicate inclusion enclosure.
+!endif

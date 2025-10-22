@@ -1,0 +1,13 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $weddingcake [64x64/16z] xS61400000CXXFdRpkElMXu0001m
+
+!function $weddingcakeIMG($scale=1)
+!return "<img data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAAIGNIUk0AAHomAACAhAAA+gAAAIDoAAB1MAAA6mAAADqYAAAXcJy6UTwAAAAEZ0FNQQAAsY58+1GTAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAAOxAAADsQBlSsOGwAAAgdJREFUeNrtWLFKA0EQvdOLrbUgKGIaQWsbi3T6D9FOP8Af8EMstfAPIlikSKMIFmkUIqKQL7BUQedgAkcIud2bnZ078x48jsmxe7tvJ7v7JkkWHGmEb+wTT4lbnu3eiJfEe83BLUeY/IC4Svz0bLtLPCfeEcdaA8yUBTgjfhB3iN+ebVvEZ+5DLQuWlAVYI44qTD7hNiPuI2mqANM4ZrrG6sgifKPN6Zzjgp83jnGbs6Cxp0CPeEh85XiT+Mv7Qo4NfhbjfEzvHG8Tb4lHTc6AF+Ij8YvY5f/2JM2vCqk/iVt8bK4Qf/7DXyBfzZOp355K4odCBqki9iZYO0AACAAB4AY13d4eP4cV+57XPohbTANMfsBH3Tjy4q3zxepAIoL0HiBxe1IEcYvSPUDi9qQI4hZDb4K+bk8a1+IqLHF70ljsFqWbYBW3J42DusUQGeDr9qRxVLfokgG9Jn8fV2EIAAEgAASAAKgHmPl9KcT1gtRh8lZ+P0q9oOwqbOn3o9QLyvYAS78fpV6AUwAC+CF2xUe9YuRSD7Cs+KhXjMqOQYuKjzT2qhi5ZMCsik+X313zUxpPV4Ak/QWtGFlXfNTHj1MAAkAACAABIAAEgAALi6IX6M94b13zk2Le+DsuXmBoOMAQqP3CmXsNbIIQAAJAAAgAAXATVEE/8EWoozHIzHgBhglgiz9fW7TFqCGMvQAAAABJRU5ErkJggg=={scale="+$scale+"}>"
+!endfunction
+
+IBMEntityColoring(weddingcake)
+!define weddingcake(e_alias, e_label, e_techn) IBMEntity(e_alias, e_label, e_techn, #232F3E, weddingcake, weddingcake)
+!define weddingcake(e_alias, e_label, e_techn, e_descr) IBMEntity(e_alias, e_label, e_techn, e_descr, #232F3E, weddingcake, weddingcake)
+!define weddingcakeParticipant(p_alias, p_label, p_techn) IBMParticipant(p_alias, p_label, p_techn, #232F3E, weddingcake, weddingcake)
+!define weddingcakeParticipant(p_alias, p_label, p_techn, p_descr) IBMParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, weddingcake, weddingcake)

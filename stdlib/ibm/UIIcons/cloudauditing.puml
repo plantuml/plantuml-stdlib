@@ -1,0 +1,13 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $cloudauditing [64x64/16z] xS61400000CXXFdRpkElMXu0001m
+
+!function $cloudauditingIMG($scale=1)
+!return "<img data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAAIGNIUk0AAHomAACAhAAA+gAAAIDoAAB1MAAA6mAAADqYAAAXcJy6UTwAAAAEZ0FNQQAAsY58+1GTAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAAOxAAADsQBlSsOGwAAAkVJREFUeNrtmklKxEAYhdPONrgRN4oH8BYOOKEogrhwKw44IM4zIjjSINqISCMiDjgrKureI3gH0Z0L99q+whJi+JMuJZpK+n/wLbqqUsl7qVRS6RgGi8VisVisZFXIprwQREAJyPfoGP5FaTbmH0BuAE6w8LcLLsGJagCRAJk/Ao2gSY60Y2ujFGLD4gCYT5dmG01h7INmlRFQoNM1+kvzYrg3EF6rwWGiAPysDHAK6om6PdCiMgL8bP4M1BF1O9L8e1ADyATnoJao2watlPmgBCDMX4Aaom4LtNuZt7sLeCVxlm5A1g+2yZL3eMr8JmhzMq9TAB0gJofwpWIIX+aribqY7DOeqBMdAugCG6ZjqQJXINthG1F3LdtaJfrqVDGvSwBFxLNGpTSY7WC+gqhbB92q5nUJoBdEifJyOSeETWVhWVZOtF8DPT8xr9Mc0AdWifIyUwiCW1lmVVQG6cpq0Cv1yxl7wFJeCu4c1ikrxDa+DEBoELyBYcUF2jIYcvt9gNcakSNhNEG7iEIb38wBVo2BRYf6JTfM6xyA0ASYJ8oXwLhbO9E5AKEpMGv6PQcm3dyBHxZD06bn+Rm3O/fLanDmrzpOMZJcaUng0fpoHOIRwAFwABwAB8ABcAAcAAfAAXAA5Frgyfj+jUA8QH6fVEbAfYBP+L1KAOKl5EsAzb9Ib9+USjR8BQfG5+dxeSDH58afjc8/V8T3Qo+G09rYi/W4C+35LsABcAAcAAfAAXAAv5Mb99i4nz3wJcABsFgsVhLrA04XVDEO107DAAAAAElFTkSuQmCC{scale="+$scale+"}>"
+!endfunction
+
+IBMEntityColoring(cloudauditing)
+!define cloudauditing(e_alias, e_label, e_techn) IBMEntity(e_alias, e_label, e_techn, #232F3E, cloudauditing, cloudauditing)
+!define cloudauditing(e_alias, e_label, e_techn, e_descr) IBMEntity(e_alias, e_label, e_techn, e_descr, #232F3E, cloudauditing, cloudauditing)
+!define cloudauditingParticipant(p_alias, p_label, p_techn) IBMParticipant(p_alias, p_label, p_techn, #232F3E, cloudauditing, cloudauditing)
+!define cloudauditingParticipant(p_alias, p_label, p_techn, p_descr) IBMParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, cloudauditing, cloudauditing)

@@ -1,0 +1,13 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $iotmunich [64x64/16z] xS61400000CXXFdRpkElMXu0001m
+
+!function $iotmunichIMG($scale=1)
+!return "<img data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAAIGNIUk0AAHomAACAhAAA+gAAAIDoAAB1MAAA6mAAADqYAAAXcJy6UTwAAAAEZ0FNQQAAsY58+1GTAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAAOxAAADsQBlSsOGwAAAf9JREFUeNrtmjFLxDAUx3tVEPRD+A0cBN276SCI6OZy+gEcFHETF51udRNxcHVVQbhBXHri0MnVQYcDwVVQ9B/IUEqvR5q8tO/yHvxph5Bw//z68pJLFEkYRRc6gWYm5QdNGbY/g3ahDegZeg/NgG3oB/qDDqE56BH6DcmALyjRn8E+tMmZhjoGqLiCHqB7aJ0zDXUNuNZPNesXnGmwNSDSM16kYZYLDS4MiEpoONA0DKCPUAwYRcOnNqKVERP1m0KLUAattZmAmLDvb2jY9hwQR4GHGBC6AdMEffZz7ws6IQoBIRGQ5N5vLfvageahU72qsDDAZWxBK7qq7FJ8TnUMWC5851UEuIhX/XyCetCxSxo45IA3XVX29I7zRU9CYwQoDFc9m6Bm/Ai6gS5d0sBtFUhd0+AiCfaJcwApDZzrACc0uCAgadCEMhr2oPPQKsHa5w8+CqFxdUNVqL3EwICGYUg5gE0pbFM3qL1ER3aDzAmgPG8oyxmpEDDhBCRjcobkAN/nAdSV4BLleEIAg/MA0vHkjxExQAwQA8QAMUAMEAOkEiQM2zPBVAhgToDtmaDkAG4E+L4jZDWeEEDQZ/GOEPUqkB/vTnKABwJM7wi5XgWc3kcQAjyv665zjNQBYoAYYBediuw6al1WkRms4ybtfY6X1EmCGXH7pscLL/4ButN6Wl1aC3AAAAAASUVORK5CYII={scale="+$scale+"}>"
+!endfunction
+
+IBMEntityColoring(iotmunich)
+!define iotmunich(e_alias, e_label, e_techn) IBMEntity(e_alias, e_label, e_techn, #232F3E, iotmunich, iotmunich)
+!define iotmunich(e_alias, e_label, e_techn, e_descr) IBMEntity(e_alias, e_label, e_techn, e_descr, #232F3E, iotmunich, iotmunich)
+!define iotmunichParticipant(p_alias, p_label, p_techn) IBMParticipant(p_alias, p_label, p_techn, #232F3E, iotmunich, iotmunich)
+!define iotmunichParticipant(p_alias, p_label, p_techn, p_descr) IBMParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, iotmunich, iotmunich)

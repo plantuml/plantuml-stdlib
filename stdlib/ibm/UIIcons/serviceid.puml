@@ -1,0 +1,13 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $serviceid [64x64/16z] xS61400000CXXFdRpkElMXu0001m
+
+!function $serviceidIMG($scale=1)
+!return "<img data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAAIGNIUk0AAHomAACAhAAA+gAAAIDoAAB1MAAA6mAAADqYAAAXcJy6UTwAAAAEZ0FNQQAAsY58+1GTAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAAOxAAADsQBlSsOGwAAAtRJREFUeNrtWzFrU1EUfq1t/AEu2roIdhGp+Qf6A4QmxRK0Hbo5dbRQJ8VByOgiWaRDVEIFFbq52E3BoWgVMYNLxSzdnGKwfod8gcvlvbwbX97z3uYc+CDv5byTe757z7nn3CRRpKKiMsky5ah3HqgD14Bz/3nMP4G3wCZwWAQB4vw+cMazyTsCyllJmHbQqXvofMQx1bMacSHgqschnHlsMw46c/+YN/KS4yFjy2UFnGhRAiadgJmCYzZLLaIrQAlQAsLMAVO6ApQAJUAJUAKUACVACVACJrQS9Lqy1BBQApQAJUB3gcDkeJy7goaAp+M6W5QNHwmoAt+BWgYbNdqopimecjB2z7q+n7PzLeA0UAG+AZ+Zq5aBLWDReuYi/RDdP3S+CZT4zAHwNYQkKEv2GTBrjE0cuQLcABYSnlsj2sAL4I7h1yxtXgA6voeADHAd6FkTtDXEeVMWqGtOao82O6HkgBZnszcGWz3aaoVWB7QY53et+12gwSV9wHuXgVvAbca8KfU0530lQOJ2xbr3A7ge9X+rZMo74gmwC8wb760wgf8ObRtcsmK+m+C8KfvU6Vo5YSnEOqBiXTdSnDdJaKTY8jIE0n4/8HQEW6K7YVyvEom9Qwi9wJecdLUZCoWASznpepMD7H6+acWtvH7vaGs1JieshbYCXlnXUuSUHZ4rU3eYrSAIeM3GZiAlFjnlFOd3rWqwTVvBVYJSue1YpfA8w2CUUngnrQr0lQDp5zdj7pe4x2842hEbH9P6gWkPnW+OaWIG5wm1UAiQA5HtmH7+oZUTkqRNXfs8YTsacj7o05HYL1ZyyxzXoJ9/BDwGPrHZWYzZNh8wNN5E/aOxCidXcsBN4IPrHhwn0orOjdHRtM+sMtGtJ8Svy/cCNc68JMiXWZPgHlksSmTAiWd4Ixyq7LnYcMkBkk2PCs4HnaJsuBBwyELjedT/y5qKiorKiZG/mOyCSJuZrUwAAAAASUVORK5CYII={scale="+$scale+"}>"
+!endfunction
+
+IBMEntityColoring(serviceid)
+!define serviceid(e_alias, e_label, e_techn) IBMEntity(e_alias, e_label, e_techn, #232F3E, serviceid, serviceid)
+!define serviceid(e_alias, e_label, e_techn, e_descr) IBMEntity(e_alias, e_label, e_techn, e_descr, #232F3E, serviceid, serviceid)
+!define serviceidParticipant(p_alias, p_label, p_techn) IBMParticipant(p_alias, p_label, p_techn, #232F3E, serviceid, serviceid)
+!define serviceidParticipant(p_alias, p_label, p_techn, p_descr) IBMParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, serviceid, serviceid)

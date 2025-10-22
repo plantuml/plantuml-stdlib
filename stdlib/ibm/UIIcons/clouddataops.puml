@@ -1,0 +1,13 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $clouddataops [64x64/16z] xS61400000CXXFdRpkElMXu0001m
+
+!function $clouddataopsIMG($scale=1)
+!return "<img data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAAIGNIUk0AAHomAACAhAAA+gAAAIDoAAB1MAAA6mAAADqYAAAXcJy6UTwAAAAEZ0FNQQAAsY58+1GTAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAAOxAAADsQBlSsOGwAAA05JREFUeNrtmluITVEYx9ecGXfmYTDjOiIPCrk8KJRcIk1MRy65NRMiEi8uJd5QRhhh3PKCIg9uD0huR3KdkksmJSIHGXJGIkNm/L/2t2u12ueMc84eZ++11r9+zZxvnbNn1v+sy7cuQlhZWVlZWVlZWZmpvP/4twaAKBgB+oBS0BP8Ap9AHHwAd8FF8FIHA3qD5WAGGJzmZ1+A42AvaAibAV3BFrAYtM3yWQ1sQjVIhMGA+WAPm+CnqIssBDeDakAbUAOWJimnvn4VxLgS9aCR+31/MJApA5NBO49n/OGWtZl/D4wBHcFpMNWjrJ5bxBHw8R+fVwgqwSZQ7FF+DCwCTdn+4/k+ffPnPSpP39BBHgCvgO9pPJNaxgNwADSDsSAilQ8DJeBCEAw4BOZ4DFzlYB/4mcWzf4Pr4A4b3EkqG8ld6U0uDaABb6sSew0mgFofx5dX4CyYDbqwwTN5TMlZC+gGLoEOUoymqUngeSvMLgnuSkPBNHA/14MgNf1l0usmrnwsTKlwJMPP9eVRWFZN2CqfjQGrePR39R5sDONiKJLhZxYoMUpVv5liwGjQS3r9AxwO63I4EwPGK69pZP4SVgMK0sj2xnAyUqmUXQvzhkhLBtAcvxKsB92TvCemqwFRzuVLUryH+n9djuvQnE1uU5AkRuntuhYeRqu8c34tS4PSAqjCRznH90pFz3D6S4uQz0IDqQZUeVSeVnM7wE7RintzQTAgys1e1lteddUKTeUaQDs6u5Wydzz1xYXGchOhtaCf0uzLda+8awCxRIlTa3goDBB1Adq9KVVG+20a1TFlnkDffpnyBtrg/CoMERkwxMMAYZIB6pldnWkGFCqxuGkGNCqxfNMNKDbNgGdKbLhJBlAecAtMkWLThXPQGYp53I8WcEOJzTKpG5ABt8ETKUYHkBtMMoBUrcRXC+eYyxgDTiitgOInhXMQaYQBdH2lgn+6ol3gGJhoggGkx2CNUl4knDP4/cK506flNCiLbnTQ7lCVMu2s4D0Dmh4vg3vC2RVO6GYAabtwDjp3gfZSnO77zWP8VF5QuoAsupw0ShkYtR8DVD0VzkWkueCRzqlwKtGpzymG1gh0gXEcGAQ6gx7CysrKysrKyiqk+gu3NJbZSOHBWQAAAABJRU5ErkJggg=={scale="+$scale+"}>"
+!endfunction
+
+IBMEntityColoring(clouddataops)
+!define clouddataops(e_alias, e_label, e_techn) IBMEntity(e_alias, e_label, e_techn, #232F3E, clouddataops, clouddataops)
+!define clouddataops(e_alias, e_label, e_techn, e_descr) IBMEntity(e_alias, e_label, e_techn, e_descr, #232F3E, clouddataops, clouddataops)
+!define clouddataopsParticipant(p_alias, p_label, p_techn) IBMParticipant(p_alias, p_label, p_techn, #232F3E, clouddataops, clouddataops)
+!define clouddataopsParticipant(p_alias, p_label, p_techn, p_descr) IBMParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, clouddataops, clouddataops)

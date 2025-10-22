@@ -1,0 +1,13 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $temperaturehigh [64x64/16z] xS61400000CXXFdRpkElMXu0001m
+
+!function $temperaturehighIMG($scale=1)
+!return "<img data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAAIGNIUk0AAHomAACAhAAA+gAAAIDoAAB1MAAA6mAAADqYAAAXcJy6UTwAAAAEZ0FNQQAAsY58+1GTAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAAOxAAADsQBlSsOGwAAAq9JREFUeNrtms9LVFEUx2+muWiWLUQJ/FEtZjESRi7SYMiFBiGBm5KBSGL8samNLaq/QUFEwjEXii5c6CKUAUGjnWhoMG4SxCISt+JGx+h78dsmmJc29/LOy3Pgs5m578x537nvnHsOz5hzbhcc+0uBp39Z8w5MSBGgxLG/xyAR8H2Ca8RYqQefK6CtwHcL0h6BkvOeA0oFxrRU5PVJ3QER3wFJzQEqgAoQ6RxwOyCTJ3hOKKYKJHUH/OcnQa0CKoAKoL2A9gLaC2gOUAFUAK0C2gtoFdAcoAKoAFoFtBfQKqA5QAVQAbQKaC+gVUB0DigHveAWOA5Yd8w1vbwmdLvowMcdsAg6+fy+AbsF1m6CG+A516+Bb2EKUOxrcmkwDDbAM/DplNfdBBlQD/rA2yjuALuNR8AkeAC+n+Fau0Ps+4I14BXYA6tREuAumDInLzw+AT//wYe9Zg5Ug37wAexE4SB0CYxx26cdxJCmrzH6Fi+A3fq1oBscOojhkL5q6Vu0ADZp9oD3zOCubI0+e4z795edCtDAMpbxEEuGvhskC9AE8mDZQyzL9N0kWYA42AL7HmLZp++4ZAGusGb7sj3+hlgB8o6Oz0HnkrxkAX6ASo/xVPI3xApgT2pVIOYhlhh970gWIMvTWquHWFrpOytZgBz4wlbWtXWyCuSkH4UHQTtodBhHI30ORKEXGOU/NWTcTHXK6WuLvsW3w7aNXWcLaxuY2SJjGAf3QAfYjso84CuHGq9BHZg3wbPAQv+8vfkUu8G5KA1ErNnxl50CvQT3wWdz+qmQfeZnQAtvPmNCMhetZzOHGdf5OExzRxz8se4yhXoEHrKadIGPJkRz1XuXmZOh6AtwDRxxN/ye+F7lIaeMyW6ACe/IhGw+hg9x/tP2piv42S7FsDtj06jJsV/0EHrCOKXNAQAAAABJRU5ErkJggg=={scale="+$scale+"}>"
+!endfunction
+
+IBMEntityColoring(temperaturehigh)
+!define temperaturehigh(e_alias, e_label, e_techn) IBMEntity(e_alias, e_label, e_techn, #232F3E, temperaturehigh, temperaturehigh)
+!define temperaturehigh(e_alias, e_label, e_techn, e_descr) IBMEntity(e_alias, e_label, e_techn, e_descr, #232F3E, temperaturehigh, temperaturehigh)
+!define temperaturehighParticipant(p_alias, p_label, p_techn) IBMParticipant(p_alias, p_label, p_techn, #232F3E, temperaturehigh, temperaturehigh)
+!define temperaturehighParticipant(p_alias, p_label, p_techn, p_descr) IBMParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, temperaturehigh, temperaturehigh)

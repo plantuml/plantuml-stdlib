@@ -1,0 +1,13 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $textmining [64x64/16z] xS61400000CXXFdRpkElMXu0001m
+
+!function $textminingIMG($scale=1)
+!return "<img data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAAIGNIUk0AAHomAACAhAAA+gAAAIDoAAB1MAAA6mAAADqYAAAXcJy6UTwAAAAEZ0FNQQAAsY58+1GTAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAAOxAAADsQBlSsOGwAAA2xJREFUeNrtml1IFFEUx6cZKdStB8WCciGQIpKipJcieqgsyb6RPohKSYKQHnvzoR56iV4liD4sqCiLyD6hosiol0CiQkqCCAqpt0jDyrX/gbN0uci6O/fuzr0z9w8/WI84c+fMPV/X9TwnJycnJyenpGqKhmvsB90Rrb8VXFC5gK+4gIWgK8IX2MVriMQBFeAaqIzQAZW8hoqwFwgUbn4arDMgjGeCOeBWmD8uU4j7VslGeaCtRA99Xro/fX4aJh/4muL+Hego4Vvv4Hsq5wNfQ9wPgx1gpIQOGOF7Dqvmg0BD3B8EjyKI/e/gC9iqkg+CAuP+6ARxfyzCBPgazAVLBBt9/sS/0xYCJsR9UfKBb1HcFyUfBJbFvfZ8EFgY91rzgW9p3GvLB76lca8tHwQWx72WfBBYHvfK+cDPI+4HDI/7XPlgYLJ8IDugaoIJkbZPrYUOqOW1y9NvVa4Q+Aw+gu3e/+MySh4bwBXDE6CoGvCE4z6rcbAP3JssB7wFf8AaaWesBJfAX8MfvhzcB4sleyc4lW8V6ANp0CDY6OcF4AZ700RRSF8G6yX7WXCk0E6QtspyUCclSaqrDw11wAnQLtlorbtBplAHZLhubgSzBPsK8A28MuzhD4Hjku0NaAK/ws4Co+AO2AmmC/YmdsCgIQ/fDC5KVe0rWM2NkdI0+IMz6h4wVYi1LeABGDLAAee48cnqJ2gE73WdCA1xB7VL8DI5YxPoYSdFqR7u9OaBMdACnuXzh4UciQ3ydmoWbBQWa7k8jkbogN/gKtf/bq4Enm4HeBz3KU6EWVGCXMaNUiZCJ1Bpvltocg7zn6HHoF7qqeu46+q1rV8OQnr6NneKacHewB1kX9wd4HE73MszgzhcUNn5wO20FVL9fsB88AJUS71Do8JOGC/lM6t+P4De9japAkwDN9k5xsvXcA16023Sm6vmWaImCQ7wuAR2SrY6niXK45wDZJ0BByTbdZ4lMiY6INB8PetGaN0OsG2E1u4Am0boouQAUUt5IktJY+oq0B+XPiCX+nkXjAm2FO+OdNzKYK6keFiyzeapbUYSHECio+iTkm0Rl8eyOOcA2dF0YNEi2em4uj3uOyBbHveCl4KNRufncSyD+YzQdN/NPDQlTnRwWZ+EPiCsxkv5TL6XcDkHeE5OTk4J1j8XuMQNrRsITgAAAABJRU5ErkJggg=={scale="+$scale+"}>"
+!endfunction
+
+IBMEntityColoring(textmining)
+!define textmining(e_alias, e_label, e_techn) IBMEntity(e_alias, e_label, e_techn, #232F3E, textmining, textmining)
+!define textmining(e_alias, e_label, e_techn, e_descr) IBMEntity(e_alias, e_label, e_techn, e_descr, #232F3E, textmining, textmining)
+!define textminingParticipant(p_alias, p_label, p_techn) IBMParticipant(p_alias, p_label, p_techn, #232F3E, textmining, textmining)
+!define textminingParticipant(p_alias, p_label, p_techn, p_descr) IBMParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, textmining, textmining)

@@ -1,0 +1,13 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $tokyotemple [64x64/16z] xS61400000CXXFdRpkElMXu0001m
+
+!function $tokyotempleIMG($scale=1)
+!return "<img data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAAIGNIUk0AAHomAACAhAAA+gAAAIDoAAB1MAAA6mAAADqYAAAXcJy6UTwAAAAEZ0FNQQAAsY58+1GTAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAAOxAAADsQBlSsOGwAAAstJREFUeNrtmr9LW1EUx98LXSxIuzkUKXQwFEoKBX/gljFTB4VO1bF1LIV26uSU/gPtJOLkoJROurkJxqlBEDoETYeQSURox/R74T4IIebdd+85954k98IXcp/m3PtOzj3v+wlJkjjiCDmOtIKN0rR/AjEBMQFTPh4EXHsOetL3uhtiE2mgG/8EbQ1c/w7VfSciDXjj36Cv+nX/da+JoE5A9kyvGdx4NydBwxIxLL7YHmB649lQ1z/q/8ne9567Ijgq4DF0WuDGTROoErEK3UivgBUtNS6hV9C+Q7wr6Dn0Qc+PJT8G1af8DzojjplVzzL1UaBOwDn0FnoH/SaOvaAr6lyyE9yB2tAPqEwYt6xjtvUaon3AC+gnNA9dQLeO8R7pmH+g1zqmeCM0C61B29BDqGkZpwL9hb5Ah9DduLCA2ugu9MbRuGTGZzfS4BjT4BJ04nAEGpP0fUBFy3Q+ERXQ6OsBgzCTNz/m3pxrBYT+Vtd5/ZRgA0sjHnNZOTeJ5vf1iFqoI6B8+cyIvzeJ54NjxpUNXBPA6f29sIFrD+Dy/t7YgMIKU3t/r2xAxQJU3t87G1D5ACrv750NIgsI8/7e2YC7Aop6f+9swFEBLt5/GAv0ONmgaAUE/0UH9f5SiwV8en92Nih6BHx7f3Y2KJqAkN6fhQ2K9oBQ3p+NDWyssG/vz8oGtizgy/uzs4GtD/Dl/dnZILKAcO/PzgYlhg1VPM5FVACl9zdhAVI2KBk0maMxPuK5+08NAkjy/uRskHcEOsK8vw0bdFx6gMreplDvb8oGDZcesAe1BHp/UzZo6XtwssIvoQPoqRDvb8oG19A69IuCBZTf34AWoWcjmmAIIzS4fksj8Z7mhLCPGenrTz0LFMXhuvYFko+A6vqfuSogz4uHZoHCrGDDApze34YFekPeH3uATQ84sThz0uejRtUmAZM0qkkcSfIf6X8IWU/AiiUAAAAASUVORK5CYII={scale="+$scale+"}>"
+!endfunction
+
+IBMEntityColoring(tokyotemple)
+!define tokyotemple(e_alias, e_label, e_techn) IBMEntity(e_alias, e_label, e_techn, #232F3E, tokyotemple, tokyotemple)
+!define tokyotemple(e_alias, e_label, e_techn, e_descr) IBMEntity(e_alias, e_label, e_techn, e_descr, #232F3E, tokyotemple, tokyotemple)
+!define tokyotempleParticipant(p_alias, p_label, p_techn) IBMParticipant(p_alias, p_label, p_techn, #232F3E, tokyotemple, tokyotemple)
+!define tokyotempleParticipant(p_alias, p_label, p_techn, p_descr) IBMParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, tokyotemple, tokyotemple)

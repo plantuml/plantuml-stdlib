@@ -1,0 +1,8 @@
+' Function that simply allows the printing of an error message to the log and
+' terminates processing the diagram by making an assertion guaranteed to fail.
+!procedure $fail($msg)
+  !$msg = '[ERROR] ' + $msg
+  !log $msg
+  !assert %false() == %true() : $msg
+!endprocedure
+

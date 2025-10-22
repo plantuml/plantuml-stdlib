@@ -1,0 +1,13 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $chartclusterbar [64x64/16z] xS61400000CXXFdRpkElMXu0001m
+
+!function $chartclusterbarIMG($scale=1)
+!return "<img data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAAIGNIUk0AAHomAACAhAAA+gAAAIDoAAB1MAAA6mAAADqYAAAXcJy6UTwAAAAEZ0FNQQAAsY58+1GTAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAAOxAAADsQBlSsOGwAAALtJREFUeNrt2yESwkAMBdAtxdZh6EHxXIZ79DBYBBeACBSsKAIGkvdnYjo1+ybZ3Yq2JiKVM3Se3Va8kyab6h0AAAAAAAAAAAAAoGq2Cdf01reMEQAAAAAAAO4Bv39e6wAAAHwLfGIPMQIA7AE5z3cdAADA394DvrqHGAEAAAAAAOAekP/OrwMAAAAAAACAl/hfwAgAsAc85xw1V1lzrwOW6iNwiLpUARg7z65Rp6h91C5qSrbmYxMReeQOGgEN8wUMyXoAAAAASUVORK5CYII={scale="+$scale+"}>"
+!endfunction
+
+IBMEntityColoring(chartclusterbar)
+!define chartclusterbar(e_alias, e_label, e_techn) IBMEntity(e_alias, e_label, e_techn, #232F3E, chartclusterbar, chartclusterbar)
+!define chartclusterbar(e_alias, e_label, e_techn, e_descr) IBMEntity(e_alias, e_label, e_techn, e_descr, #232F3E, chartclusterbar, chartclusterbar)
+!define chartclusterbarParticipant(p_alias, p_label, p_techn) IBMParticipant(p_alias, p_label, p_techn, #232F3E, chartclusterbar, chartclusterbar)
+!define chartclusterbarParticipant(p_alias, p_label, p_techn, p_descr) IBMParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, chartclusterbar, chartclusterbar)

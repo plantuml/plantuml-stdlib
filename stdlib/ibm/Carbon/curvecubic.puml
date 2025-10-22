@@ -1,0 +1,13 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $curvecubic [64x64/16z] xS61400000CXXFdRpkElMXu0001m
+
+!function $curvecubicIMG($scale=1)
+!return "<img data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAAIGNIUk0AAHomAACAhAAA+gAAAIDoAAB1MAAA6mAAADqYAAAXcJy6UTwAAAAEZ0FNQQAAsY58+1GTAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAAOxAAADsQBlSsOGwAAA2xJREFUeNrtmmtoj1Ecxw+GJcwWclsRo5TLlMsL98glEXshvHFNiYSFVxi5LJfEqEkuw+aFW7TGG8t1XlhkNbmFKAxzmWwuw/fX+S7//v1Z8pznefY/51ef9tSz5///n+95zu92jlLOnAVpRcTU/9drjW2fASeAE8AJ4ARwAjgBnABOACdAA7EE8N1mAZLAB5sFSAbvbRUgEXQFD20VoA99wG1bBRgBvoFbtgowFVyy1Ql2B0PAKVvzgOWgChyzUYAuYDbIBR9tFGAnqAHbbEyFM8hq8No2AXqDg+A82G9bMZQKzoJXYCb4aZMA3RjvW4BJ4J3p8jJMNg4cBdXM/B74UV+HwZqD9SATXAEzwAs/vrhRwAMvYoX3A/QE2WAtqPXrB0QKUByAAH1BCq9lxu/5+N2jglwCvUBHXleCO0G9gn4vgSYgC6wC9xmFnoAJQQng5xvQCRSAoUxr14AzQXtfvwRIAxeVbmtNBBfCEncTfFrvxSxohoPHYUo8TAsgXdxC8Jle91nY0k6TqbA42HzQHkwO4+BNCzAfjAdzQHlYS05TArQDW5Tu4Z0Mc8PBlACZ9PhLVcjNhACtwUJwCDy3UYBZoBXYEYLxJXM5+hoGp4Eb4FGAA5dBH2F/QewumA7KTL8BSWxknA545tMYfkeDwaAD2OzHG5AOmird0grSroMBEQXYW6X3FY0L0F/pExxlIfFxJ8AgOuNlfgjQg+VtjQeftRjsZhqdzvI52sawsPrKgUYLXwIqwFylG6w5pn1AG+VdFzeHdYR0hw/zVY60FIZaGcOKGIOX57aDReAcexDGw6DXZ3hk5l4qvTO8MurePtCZPYW9Ufc2gGtckuILBv6pFvFaAK9PcVWwlpCNkXVK9xDrhMng2p4X47kC/pXDFKWclAVBNkT+x2RrbBfT6jyld4pkw7SWSVdljGfK6TfaKt1xrgyiGvTSZP1K47QfkyzJNDeCy/U89+Zvg29IAnzhzFdz8DeV3kgJdT/ARF7fjNeyiZJqkwAS8vIZCktZceZ58fsbigAHOONyRmik0o3VYTFCY1wKsARM4aAlqfmkdLtNQmMWvX3cCiCD28rcQkJe3SEp2WPIpU+Q7fTEeBSgJTiufm+dl0Tdl9f/qdJHabLjUYA99PZXwaYY96siloIsk7HKmbN/tl/4g6CQQ+khSAAAAABJRU5ErkJggg=={scale="+$scale+"}>"
+!endfunction
+
+IBMEntityColoring(curvecubic)
+!define curvecubic(e_alias, e_label, e_techn) IBMEntity(e_alias, e_label, e_techn, #232F3E, curvecubic, curvecubic)
+!define curvecubic(e_alias, e_label, e_techn, e_descr) IBMEntity(e_alias, e_label, e_techn, e_descr, #232F3E, curvecubic, curvecubic)
+!define curvecubicParticipant(p_alias, p_label, p_techn) IBMParticipant(p_alias, p_label, p_techn, #232F3E, curvecubic, curvecubic)
+!define curvecubicParticipant(p_alias, p_label, p_techn, p_descr) IBMParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, curvecubic, curvecubic)

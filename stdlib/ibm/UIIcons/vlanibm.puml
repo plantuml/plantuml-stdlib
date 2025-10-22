@@ -1,0 +1,13 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $vlanibm [64x64/16z] xS61400000CXXFdRpkElMXu0001m
+
+!function $vlanibmIMG($scale=1)
+!return "<img data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAAIGNIUk0AAHomAACAhAAA+gAAAIDoAAB1MAAA6mAAADqYAAAXcJy6UTwAAAAEZ0FNQQAAsY58+1GTAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAAOxAAADsQBlSsOGwAAA5JJREFUeNrtm1lIFVEYx49XW4yMskVM80HwwTYCI6iXKFBa6CF6CIobFZWGBVFQ0Euv1UN7ZAtFENVLQdBCG+mbEtGqBb25tFAaiGBhZv+P+S6Mh5m5cwYd5879/vCDO/fcO/Od/8zZZr5RSiQSZbNyPMpywU6wCSwAU8FrcBOcB/0Rq8sEsBdsBvO5bu843nPgt4kBZeAeWORS3gZWg/aIVJ7ifQjmecS7CnQ4nWVdE0ETWOhxwJmgBlwFfwMEXAoawFlwAFSBFtAb8Mw38Vn3ircaXNPjdTKALqOkjwPPAj2gOUDl34IloIChJraVL1dTEyjeLT7j7dbjdTLgDCixbT8CK8EJUAkqbGWF4LJhwA1ceV35oBjcMdzfKTbVHu8Kl3in6/EmXNqTXbWgE3TxZ7vmBrhklwcsc1OxQ7xdLvFW6n92MuBfho1kkwx+2+/HgI/a9kVuEiX82a73AQJuCljmps8u8ZY6xNvmZxQYAutt29SG9jMV2m+PgpeGAbdwh5evfU8d6oYAnSCNAmt9xnuEO2BPAz6BNWB2mgO/AvVg0DDgXu7tqe3OAH3gPle+M8AV8MZnvGT8Pj7BaSdCReABj89ulSfXv0ekHyhiExe7lDezSb9MpsLjwHYetuyq4wnQQMQ6Q4p3m0O7T/IV59i5Jzx2OOCws1QnE7XKp+K95PD9Da+RLZHtq8G8MTz2kEFzHDVl/RUgBogBYoAYIAaIAWKAGCAGZKv8zL+7fNxsiKq+qOF3uANdAY0ZfIIbR6IJHFLWA4VMUzfH7qlcHzvS7+EVRLziX5XBPcacMQxU7gfIMCgGiAFigEgkEkV9NTjSolS2HcrKMivjGSGlrz0GV5RDEkNcDKCntyeV9XTZbQ1CuQYXlJXcEMoD2NyQKj9eWdlbG9MMvVRGGWRLwW0VQr5SWAac5sr7VTmYxqaNqvJCavN12ncdvFZ/wduU13cMzLH9ZreykjNaM/0KOAyW2bZpjU45yJRc1cd8ANeVleg8xdYc/nDnmNFT4Wpt+6CyMsJ09XCZXTVxWAvomacmeYJlshiKgQH6OwUmucLtcTDgqbZ9XFlZ5roKuczrvxk5ClCvX2szm3p5eg3nG/gJJoN14K4anvZOs8Jd4EccpsL0zk694X/ovaQ9cZkJPuO5QLnP3z9X1lsgg3ExgCpyi9t5lUffk1oMJcNaDEVhOZzq7Z/wcrhViUQiUUj6D8C8p6GxYfVeAAAAAElFTkSuQmCC{scale="+$scale+"}>"
+!endfunction
+
+IBMEntityColoring(vlanibm)
+!define vlanibm(e_alias, e_label, e_techn) IBMEntity(e_alias, e_label, e_techn, #232F3E, vlanibm, vlanibm)
+!define vlanibm(e_alias, e_label, e_techn, e_descr) IBMEntity(e_alias, e_label, e_techn, e_descr, #232F3E, vlanibm, vlanibm)
+!define vlanibmParticipant(p_alias, p_label, p_techn) IBMParticipant(p_alias, p_label, p_techn, #232F3E, vlanibm, vlanibm)
+!define vlanibmParticipant(p_alias, p_label, p_techn, p_descr) IBMParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, vlanibm, vlanibm)

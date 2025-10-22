@@ -1,0 +1,13 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $dronedelivery [64x64/16z] xS61400000CXXFdRpkElMXu0001m
+
+!function $dronedeliveryIMG($scale=1)
+!return "<img data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAAIGNIUk0AAHomAACAhAAA+gAAAIDoAAB1MAAA6mAAADqYAAAXcJy6UTwAAAAEZ0FNQQAAsY58+1GTAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAAOxAAADsQBlSsOGwAAAuBJREFUeNrtmjtoFFEUhu8+MAhuQBCjMSqxCCSInTYWsQgpjAkqgmIlwRhE0SqlJLplKgmYh0Es1DQiAR+IKGLAJmJjkRSp1rciisYiribrf9gTGIfddXbn3pk7u+eHr9h53Llz5j/3nrmzSolEolpWLMBrNYMesBtsAU1gE1gHPoLPYAG8AE/BbDUEYDM4DQ6BnWWe+xrcBCPgQ9QCsB5cAn2gzmdbv8AkuAC+RSEAR8Ao2KC53S/sptu2BiABLoMzRfZnwTMwDebAG/CJ9zWAraANHATtYE2Rdq6Ac2DZpgAkwR3QXWAfDW5pcB389NgeDYwn2PYbC+y/Cw6DPzqemg6tgBawz/XEL4Jj4Dn/9qoszwKUSktgr6uvUzxTKFsCoNjeioNA1u4CN8BvH23SuTN8s13sjCEOrLWDIA1U9zjH3WriNNkPWjn3FQdsHjxge78tcC6NEQfYFZErhBrBIOjl8aKUKK+v8VN+Xw2VIFn3Fqgv87wf4Di4b7JzCcM3vwc8BmsrOJcKqKPgIXhnqoNJwwGY5SlwyLGNaoCr4BGXu6RtoJMrxzbHsemg3glMa5CntrP/cV2Cj8nyOVWlZkPHikQif3VALmK1hdb+xmvdARIAGQPKz7mY5fdUVn8lBSQAEgAJQE2rkvWAnDhAAiABqKlK0Iu2g1fq35VfWgzt1DBmUB9p/bDDsY1WjHeBjA0OoA5Oum5+EZzUNGDmuK1Fx7Z6vqbvB6hjWbxf5b/WOnUePNHo1O/gq8p/GVrVDpX/48TLMB1A1h92bSPrTxhI1wlu26lh7kMoAVi1fsqQ9b2kQspvKiQst77xVIhHwPpGUyEeAesbTYVK3gVOueZk0kCJOVlHHeBWhq855tjWwX0bN+2AsKzvNRWMp0DK9Tso6xdLhVJ9C6QSzKjw5PvayRA6HfPwZOVtUAIgAZAASACCUCWzgG3fBmPigIjVATkZAyQAEgCRSCSyQn8BaLeRveO1WcMAAAAASUVORK5CYII={scale="+$scale+"}>"
+!endfunction
+
+IBMEntityColoring(dronedelivery)
+!define dronedelivery(e_alias, e_label, e_techn) IBMEntity(e_alias, e_label, e_techn, #232F3E, dronedelivery, dronedelivery)
+!define dronedelivery(e_alias, e_label, e_techn, e_descr) IBMEntity(e_alias, e_label, e_techn, e_descr, #232F3E, dronedelivery, dronedelivery)
+!define dronedeliveryParticipant(p_alias, p_label, p_techn) IBMParticipant(p_alias, p_label, p_techn, #232F3E, dronedelivery, dronedelivery)
+!define dronedeliveryParticipant(p_alias, p_label, p_techn, p_descr) IBMParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, dronedelivery, dronedelivery)

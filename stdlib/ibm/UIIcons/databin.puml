@@ -1,0 +1,13 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $databin [64x64/16z] xS61400000CXXFdRpkElMXu0001m
+
+!function $databinIMG($scale=1)
+!return "<img data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAAIGNIUk0AAHomAACAhAAA+gAAAIDoAAB1MAAA6mAAADqYAAAXcJy6UTwAAAAEZ0FNQQAAsY58+1GTAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAAOxAAADsQBlSsOGwAAA2BJREFUeNrtW01rFEEQ7WQ1h4AQ0IOJOajrLQc/ENQguCJiFDVGIYKePPgHhFXjWSLJgn/Bi1EU1ETFD0RYQWIEFT3k4gfmEE0ugaDgQYjxFVsDnXLcmZ30bmqy/eAdune2avptV09X9awxHh4e9YwGpffVDg6CObB1kbamwCJ4HpxMgwA0+Pfgasd2Z8AtUoRGhQIMVGHwhm0OyE6NAuRqaXuFgpiVYdjmOEzny9h2IkC1YrYmaFQcs6kRIGdSDBch4DpmUzcDUg0vgBfAC1DfSPoU2AnuA3eHfPYYfAk+B8eWkwD0eDsFngO3lbmui3kZfAdeBW+ILWnqBNgAXgP3VGifhLoOngXPgF/TuAbQoD8kGLxrG0syA/aDw2Cz6P/N/ffB1+A091MmuAM8Ch4DV1rfWQU+4v5nCbO5mgqwHrwdMvi7plRe+hLynU9MmvabwAIPOEAz29wKTmgOgQw4BLZYfXM88BP/GbzEZ7AHvAj+sfpb2HZGswAnwU7R18e/aJJ0uU/0dbIPlWsAPe4uib57ZQY/HyMbpGrRLhEO5ONmjBh3WRGKNQPoRjvEgpd3IHaebQXoYF/qQuCAaA/HjPk4a8JIhC8VAuREe8Shv+EIXyrWgHbRflPhc7ncmvA2wpeKGbBWtKcc+vse4cunwxoEmBbtVof+WiN8qVgD6PBwo9XeDn4s81yOsw+wbUlf6mZAUbS7HfrrjvClQoCnok27t6wDX1mxEwzzpUKAV+C41W5KmANIFNhWgHH2pW4NoJju54wtQA9vZQsJ9+p5tmGjP2auP1/rGUC4BY6KvisJc4I8f9fGKPtQmw5T7n8anBU1Asrq7sRcE7J87aDI/WfZ9pzWdDgAVWx6zb8lsePgYRNeEqOdnV0SaxI2f7HNCS0boaiaINXuDoEPTKmmZy+Mvcy4+AkeAV9UeI81rwdI0A1vTnDjrm0syQwIQPX8vSbewYiNZXMwEkylIaZ9NNYlrntilunRmI0xa3Dylz2Y9myw7tNhL4AXwAtQP3DxniAVOtsWkb01pH0GFOs9BC6Y0p8R6lYAKmzSPzHooHMqbQJofK/3mwl5r98RaL1ap/0pUKylbY0CVGtNmWHbC5BRKMAPTp/pFGmNWViISQJalx6a0qs9k8bDw8PDwl8AMaBKsCQBSgAAAABJRU5ErkJggg=={scale="+$scale+"}>"
+!endfunction
+
+IBMEntityColoring(databin)
+!define databin(e_alias, e_label, e_techn) IBMEntity(e_alias, e_label, e_techn, #232F3E, databin, databin)
+!define databin(e_alias, e_label, e_techn, e_descr) IBMEntity(e_alias, e_label, e_techn, e_descr, #232F3E, databin, databin)
+!define databinParticipant(p_alias, p_label, p_techn) IBMParticipant(p_alias, p_label, p_techn, #232F3E, databin, databin)
+!define databinParticipant(p_alias, p_label, p_techn, p_descr) IBMParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, databin, databin)

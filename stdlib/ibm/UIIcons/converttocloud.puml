@@ -1,0 +1,13 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $converttocloud [64x64/16z] xS61400000CXXFdRpkElMXu0001m
+
+!function $converttocloudIMG($scale=1)
+!return "<img data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAAIGNIUk0AAHomAACAhAAA+gAAAIDoAAB1MAAA6mAAADqYAAAXcJy6UTwAAAAEZ0FNQQAAsY58+1GTAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAAOxAAADsQBlSsOGwAAAttJREFUeNrtmk9IFFEcx2d3LBG0P1Cggl6yPzc75KFDqBcXD548dAgpqkNRHYIg8JJ2yrpEQhcvokR4UREPopF/oHIP0U0oSipsI/oDWkQIqd/H/gaG1zS782Z2973Z3xc+h3kz8+b9vvt7b957s5bFYrHKWQlD2mmDDnAGNIMGUAXeg1dgHEyCzTgacBIMgyM5rvsAroOJoM7qLBHQY3Awj2v3gdNgD5iLgwHnwEOQVMiYajBrWhc4Bi6ATtAIaqTzW2AEjIJV8A2cAN3gEqiQru8C0yYYIBp+F1zzCMLRD0rvJ/85L4yYAnWuslUaN/7q3AUqqOE9Pqm+TcHP+NSTAc+oHsfE/dQVnvu9HUptwAA4m+OaQfAgj7rWQBM4Lo0HF8Eb8Fq3LiAauwJ2uco+gZvgKfisUOcpsORRvkljxT9jQrKEBpyXgs/Qr/dIMXihF+CjR/luGkD36tQF7oB61/EVsByyTvGmuE+vTzFwtrpiFDPH33KGlDIDGqXjxQjr/koG90rlKZ26QDE0Kh0f1ckAua+2FmgR5ValTgbMeYwJByJ+Ro90/FanQVCs3i672lBDy90vNM39FaLuWnAV3JZiHAILOk2F74EbRXrWBjhE5mozE5wHLeBwgZ+zRdn1UrepsGjYGKV/S4HGpA0Kftz05XAQ/QTvaKE1KKc9i8Vima5bRORzZVOC7wNtUawibUODdxTaBNvg4CMxwTY8+NAm2DEIPpQJdkyCVzbBNix4sbCpzFEWyISkYcGnPK5N0Tm3+vKdJyQNCX6dAvXaNl+mc+sqJpiwK+wXfC4TjMyAflcGOMGn87gvLZnQT/jK63P0dsQBJRRN+GNlNzDTAe5zTGi3srvMlooBumhA8b50ENPi/mWIDVDpAgnOADaADSjrMaDY84Awz8uUewYslLMB363sP8oi7wK6S/yDbJ6CX7NYLBYr4ne0DvsBPBNkA9gAFovFKrx2AOlDjbszJTOZAAAAAElFTkSuQmCC{scale="+$scale+"}>"
+!endfunction
+
+IBMEntityColoring(converttocloud)
+!define converttocloud(e_alias, e_label, e_techn) IBMEntity(e_alias, e_label, e_techn, #232F3E, converttocloud, converttocloud)
+!define converttocloud(e_alias, e_label, e_techn, e_descr) IBMEntity(e_alias, e_label, e_techn, e_descr, #232F3E, converttocloud, converttocloud)
+!define converttocloudParticipant(p_alias, p_label, p_techn) IBMParticipant(p_alias, p_label, p_techn, #232F3E, converttocloud, converttocloud)
+!define converttocloudParticipant(p_alias, p_label, p_techn, p_descr) IBMParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, converttocloud, converttocloud)

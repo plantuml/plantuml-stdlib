@@ -1,0 +1,13 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $skipback [64x64/16z] xS61400000CXXFdRpkElMXu0001m
+
+!function $skipbackIMG($scale=1)
+!return "<img data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAAIGNIUk0AAHomAACAhAAA+gAAAIDoAAB1MAAA6mAAADqYAAAXcJy6UTwAAAAEZ0FNQQAAsY58+1GTAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAAOxAAADsQBlSsOGwAAAxFJREFUeNrtmkmMTEEYx9+MJcGBg+XCEGK5SBAugsyJWBIOMoiTbRwsY8lYQ2whtojIJIjtYOeEWC9jPSBDONguzLhYDkZiCTH8Kj5Jp/Oqq9vr97peTf2T32G6prtf/7u+r/5Vr4PAy8vLy8vLq7WqLOSx33n8j61qB4thofxdDTdyPaGtQ1/mBNgDAzIe2w/9XDdgoHzw8SFjfU1PTrMBnWE9LJKp/19KowHlMBu2QreoL5Y2A0bDXhiqGa+HShcNqIAdME0z/hpq4XzIKpZqAzrCCqFDyPgX2A474btrJTBdPlyFZvwErIK3rvWAYVLnozTjD6EG7hXjzWwyQHX0bTBLOn223sFqOFZondtuwL/4uk7W9mz9kBmxBT4X+81LbUBYfM3UJVgGr+K6gFIZkCu+Kj2HJXAt7gtJ2gBTfP0EG6EOfiZxQUkZYIqvv+AwrIWPSX4jSRhgiq+3ZFl7XIpajNMAU3x9IwnvbCm7cBwGmOLr14z4+q3Ua3CxDTDF11OwEppsSV/FMsAUXxukzu/YlrujGmCKr+9hDRyFFht3XFEMGCsNTBdf98FmaLZ5vx3FgIOaD38ZlsLLNJy0lAetXFEMqNZMb7XBeQq7NDPEGQOuQ3+JsNkNrj0slzKYY/NMi3phH2AujNAscd3hEDzIsUQ60QMaJPPPgEZNTrgNJ6GXSzkgW6fhQo4orAyabFMUjqM2VdbfAIPgjGavoPb8z6DK5WWwUfYGY+BRyHhvMegmDHE5B6jaHw7zpGlmSxmkjroPQFeXzgMy1SKrwbkg/EisjeSKqiDhI7Gk1+dmyQeD4UrIeJfg72HpExjnchR+IYlxombPoBroVbgoYSv1JaCT2jip3/DoboxMkl1nbDdGbIioqtZ3G2J1rcwUde5Q5poB+cbqHnAE7sNIl7fDplitltS7cBx6pr0HRInVM2FKEPEHErYfiJhidSfYJLF6qmszICxW1wXhd5n6SMiqd20GFBqrK12dAYXEaqdnQCGx2nkD8onVTS6WQD6xeoGUxfzAy8vLy8vLy0ujP9BspGp3kaTTAAAAAElFTkSuQmCC{scale="+$scale+"}>"
+!endfunction
+
+IBMEntityColoring(skipback)
+!define skipback(e_alias, e_label, e_techn) IBMEntity(e_alias, e_label, e_techn, #232F3E, skipback, skipback)
+!define skipback(e_alias, e_label, e_techn, e_descr) IBMEntity(e_alias, e_label, e_techn, e_descr, #232F3E, skipback, skipback)
+!define skipbackParticipant(p_alias, p_label, p_techn) IBMParticipant(p_alias, p_label, p_techn, #232F3E, skipback, skipback)
+!define skipbackParticipant(p_alias, p_label, p_techn, p_descr) IBMParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, skipback, skipback)

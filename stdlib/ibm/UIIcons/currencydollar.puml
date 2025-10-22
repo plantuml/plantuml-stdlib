@@ -1,0 +1,13 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $currencydollar [64x64/16z] xS61400000CXXFdRpkElMXu0001m
+
+!function $currencydollarIMG($scale=1)
+!return "<img data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAAIGNIUk0AAHomAACAhAAA+gAAAIDoAAB1MAAA6mAAADqYAAAXcJy6UTwAAAAEZ0FNQQAAsY58+1GTAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAAOxAAADsQBlSsOGwAAA3hJREFUeNrtmkloFEEUhsstQlCziEFwCwaNGlwOenFFgxo3jCioh+BBcENcLnrxJB4UvSi4iwgKXtyXQxRFRqOCiIgmmHGJu1FwwS2a0ej/6DfYvJnIzFg9VnfXD9+huqdruv/urnrvVStlZWVlZRVetfmP//3LhHNpG/YnwBpgDbAG2FkgG+oOJoGxoBQUg57iNyfBNXAd3ABfg2DAGLAGTE/zuA9gH9gGnvnRgDywE8z/x35i4CBYDT76xQB6tC+BEo19PgZV4IrpBhSAq2BAkn03wSl+v1+Bl+AN6AMK2bhKMBN0TXL8T7AC7DDZAHrsl4htt/jEU717HUAF2ACGiH0tYCE4oOuE22m8eBrd9wtTj4CpoCGNfugio2APaALjXOdJfc8ANWn2mZU4YJ7or47f2+YM+yMjNvHT8Mm1nWaHiImBUIVobwbfNPR7kadRMmExv2IxXSfdXqMBvUU7orHvCA+W700OhbuJ9gvN56r94nUb0CTa+WFLhhpFuyRsBtwR7VlhM6BatJeC/qYboDMQegiWgY7czuHp6zKHvoE34DvH6xNFbkCh6yDwlmeGliAXRMjQE3/J/z9zweM2jxn1HPa+C4oBil+BLWB5Gse8ZlMofL7Hr02dXw2Ii5KW9WBYhsc/BcfAVq4H+M6AuMrBXDBFJdYBU9EP5VSFVoqkyDcGuNUXlIGBYCgPjjRV5qZw7H2OLWr9bEBr6sGGkDlUSB0POiX5HU2nw5VTTQqUAVJUFZoD1vFT4haVzytNjAN0imKFu8qpMNFrM9i1jypPx3nmCKwB7gHwLN/xItdTS+sGF0zLBbwSRZjbxbZRJiZDXkre7dKwGSCTqfywGSBrlzFTDSjwMIByq9FEAxaBJxzI6JYsuUdNMoCCll1gN+gMzoDRGi8+j/MAt06bZEA53/24uoDzKnGNMBPlsqFFrm2UEB01KRJ8oJxK0AQxaFFRhL4KeQ4eZdDvNOWsJst0mlLsahNzgbVgYyv7aGw4p5xPYOrVn6Xx+GcwlPj04vl9JJidZOCLxwO02NpsogGKE5i9yptFkRq+eK1fiujOBaiMdZjT2zKN+QCtEi9QiatPRqfDI8AqfipyMjj+CzjEF9/g1Ulmox5A7/dkjg8ot+/H24vF72p5QI3yLBLhRMhT2a/FVchlDbAGWAOsrKysrKzCqt81mZ+sITisvAAAAABJRU5ErkJggg=={scale="+$scale+"}>"
+!endfunction
+
+IBMEntityColoring(currencydollar)
+!define currencydollar(e_alias, e_label, e_techn) IBMEntity(e_alias, e_label, e_techn, #232F3E, currencydollar, currencydollar)
+!define currencydollar(e_alias, e_label, e_techn, e_descr) IBMEntity(e_alias, e_label, e_techn, e_descr, #232F3E, currencydollar, currencydollar)
+!define currencydollarParticipant(p_alias, p_label, p_techn) IBMParticipant(p_alias, p_label, p_techn, #232F3E, currencydollar, currencydollar)
+!define currencydollarParticipant(p_alias, p_label, p_techn, p_descr) IBMParticipant(p_alias, p_label, p_techn, p_descr, #232F3E, currencydollar, currencydollar)
