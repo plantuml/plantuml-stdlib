@@ -1,0 +1,16 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $FrontEndWebMobile [64x64/16z] {
+xTO53aCX48JXmU7-1wx5osfTzey--HAYmtXxwuv-o8Tl2LofwRv1gga-eIskXgHwOF41h_4PUzdXGMNrz7zly5HlyptXgjGzFc4hcJtv2WWVFdpuyDh-4QyW
+-7oFjqx_Stn2apmk2Rw1YlRs-v_z_7HkxzzVEdt_u_uV_kqT0G
+}
+
+!function $FrontEndWebMobileIMG($scale=1)
+!return "<img data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAACZElEQVR4nO2bv2sbMRzF35nzEogz5Gxcki75F9ouzZ4hpkkHUyihQ0tHQ9vZQ+lguqZg+g8kaaEE8otkyJ4sSf6FDqUF495yCXiJ8XW4qgST1Dok3Tu472exB6Hv07tnWZZk7+OnzzEKTIktgI2v3jzbOGLqyJxvL5YBSALEADGALYCNGMAWwKbwBviTm/zF8zCz9hSV5jLKc3WHkhKuf/VwuX2EaGsXiN0tVrUNmHm+gtk3r5wJGac8V0/qjUaIvuw5q6NtQKXZAAD87nRxtXfs9KnA8zC9uoRqu4VKs+HUAO05oDyfxP5q3/HgASCOkzo36rpCfxL0vOR1lNGPR1VH1XWE/iR4C/X195hafGhLCwYn5+i9/WCtPx2MvgZtDt5FfzoYJUDx/dET4z4Wzg4sKEmPLITYAhS3pchGsiYhCWALUEw9foCg3YJfC4z6GfZDhJ0uBqcXWu1zkwAbgwcAvxYgaLf02xtXtIQavOnnfuHsIJWRuUkACzGALYCNGMAWwEYMYAtgIwawBbARA9gC2IgBbAFsxAC2ADZiAFsAGzGALYBN4Q2wsilqcqw1vgma9RGZUQIGJ+e2dNAwSoCLo2wb2+Jp0E+AuhVScnthIWu0E3D9s4fy/XuYXllyf0dojLueqo3DU20DLrcPMfvuNartFqopjp4mkcUJ8P/QNiD6ug+USpndE7yJS5P0J8E4RrS5g2hzx5kYBrk5HB32Q/i1wMo6YNgPtdvmZiUYdrqphN+Fuh+gS24SMDi9wI/Gy8zr5iYBLMQAtgA2YgBbABsxgC2Azb91gPovbdEofAL+ADozjaoB/aU0AAAAAElFTkSuQmCC{scale="+$scale+"}>"
+!endfunction
+
+AWSEntityColoring(FrontEndWebMobile)
+!define FrontEndWebMobile(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #DD344C, FrontEndWebMobile, FrontEndWebMobile)
+!define FrontEndWebMobile(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #DD344C, FrontEndWebMobile, FrontEndWebMobile)
+!define FrontEndWebMobileParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #DD344C, FrontEndWebMobile, FrontEndWebMobile)
+!define FrontEndWebMobileParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #DD344C, FrontEndWebMobile, FrontEndWebMobile)

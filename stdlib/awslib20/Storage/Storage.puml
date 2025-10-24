@@ -1,0 +1,16 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $Storage [64x64/16z] {
+xTB50OL054FH1Es_ukyQd76vA-myRCQugjKQI3pcCOa7lUw3PfwWaHy96daPSDZhW6sFH-zz6N3Gl-C1FxkUZddDgyUpG5vAq4FoxRKIV8DTDKiUEplsu5eQ
+liTV_L4FwRYNCwbvoVJxnxz-gYUwRTw1owTsrItF9ZQZy83LQbS
+}
+
+!function $StorageIMG($scale=1)
+!return "<img data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAACfklEQVR4nO2bsUsjQRjF30aLI+IlIOQgFhbCRcsrJGoleKQRROtA4CR/gt01FoqH2NhccSwEBLuDWB5i4KpI/oKwgoVFAhECxsNglytkohFMdibz7Tcw86sCyey8fXn7ZnZhvcOTnz1YTIxbADeT4sO/5B6jjOiZvt8D4BLgDHAGcAvgxhnALYAb6w2YHP2T8BTWz5CZ/TrWMW7vajj7+w2PT21NqoajNQHjnjwAzKWyKObKmPowo0HRaLQmQPD99JPSuINCCwCQSmZQzJXhX2yTJ8HIDri7D/omUCfBSAP8i+3ITDDSgMendmQmGGkAEJ0JJCX4GlFsbwlTlMKEYq5MVozkBqjwnmmpZAb5tRJ+/dnUNhe5ATJLYtC4HLmXmEtlx5U0gFEJOK3kh37/XjLGwdgSjAq2EgTUd4w6cQmgnsCEf3kY1ifAegNYSzAM1JeQSwD1BK4EDccZwC2AG+kOCPPom+KmJczxg8blyBuqt0gnQMejbypUtCmvAqa1u2rqrO8A6w0g3wh9nl3H1soxEvG01LhOt4nzq11cNypEyp4hT4DKyQNAIp7G1soxgaJByBMgTl62NA8KLSXjZLG+A6w3gPwS6HSbSMTTSut0p9skUDQIeQLOr3aVTkSsAtSQJ+C6UcHR7y/U0yhjfQc4A7gFcOMMkB3Qw/MLJjFvQrsYVYQWoU1qrOyA9sMNAGB5YccIE2LeBJYXdgC8aJNBehms1n1sZn9gY2kfG0v70hNSUq370mOkDagFJQDA6mIRMx/n4cGTnlQnPfTQfrhBte73tcmgtBGqBSWlyUzErQLcArhxBnAL4MYZwC2AG+sN6O8DxLu0tmF9Av4DiZqytKqNrYMAAAAASUVORK5CYII={scale="+$scale+"}>"
+!endfunction
+
+AWSEntityColoring(Storage)
+!define Storage(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #7AA116, Storage, Storage)
+!define Storage(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #7AA116, Storage, Storage)
+!define StorageParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #7AA116, Storage, Storage)
+!define StorageParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #7AA116, Storage, Storage)

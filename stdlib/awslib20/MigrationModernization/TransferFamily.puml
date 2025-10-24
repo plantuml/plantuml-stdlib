@@ -1,0 +1,16 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $TransferFamily [64x64/16z] {
+xTK56i9034JXsM2v_uMHmSFNTiFWvE6qVrsyewggp2JUW2Rnjdqgd6yAvuV2-KNX_Afm_aZpNURRZ5y79s0ur-A_lWtCXZpEnR6EteSAWrV0NF6-1BlR-qBq
+GRxA6wwwb60sxZ7bCUK7bv-zmWyVkGa_SEPa_EsPc_Jnof7qySgLzV7AcVVnofttjEGv7-zSWdSp5ppx2rz-kLJy73svDW7pdwcgDW
+}
+
+!function $TransferFamilyIMG($scale=1)
+!return "<img data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAIAAAAlC+aJAAAAAXNSR0IArs4c6QAAAERlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAA6ABAAMAAAABAAEAAKACAAQAAAABAAAAQKADAAQAAAABAAAAQAAAAABGUUKwAAADIUlEQVRoBe1ZXUuUQRRupQ/dCiEtW4mw7jJvq42wUivCFIo+qeg/1E1XIf2AuukfFIR9wAZlBPmFS1lBeKPdBBUSbktuIJVrVtojA8Mw8zY7756ZWYRZBjlzZuac5znPvPPurIlE740Vy/lTtZzBL2EPBCqtYFAgKECsQNhCxAKSlwcFyCUkBggKEAq4cU1NtuMcGoyyw1RMAYAebDuzr74RDUbZHCpDgKHfWVs3PjONBqNsDhUgIKLvGHqARuHgm4CE/uuvIhqFg1cCKnr27FI4+CPwP/REDp4IbKpO4jHFwzoxUzg0/BAlV89NODGECbGe6YSfO/Grw+d3b9gsgn6a+9g1kuGeJ/tPdKa28S6MN9++pJ/fFT2R9spIr+RUo0sT0H1dyAFQYX5OHYLnx+95yS/BlbqRS6QIrGtEQI2uxtpTl7qT7uzKZhYWF9VR7A3RuXD2itjldtW9m9w2NIwIsFia6FuS698euXg01XStOX19YtQwt5VpMQho8n2e/X5htO/ZgZM9LXvR+EwNZz6HaFg7hfrzk5fHhot//xABxV1uRwGW9db7MTQVAdvxjtSwpoCK248ntgImRyqHblJ18URitvSK4NEijdgKmBypkZnMnbFSxFaA4TAprSFiKZQoiEmE2AqYBPU5p0wF9BD7D55qb9iqn4NRsdiD+UnpbV1yOZvgRIF1q1ZL6fumPogeqYshdYk4X2M7UaB7JDPQdrqlth7fjduH7qtfnruzj4BJvCFgiQalZsiJAiY3LBE9rpQqSQ1occgJASTQc7CFHolcEdBwsIjeLYFIDnbRI4WThxhx+YftJXYhxl/42e9ZlH3Pg8NwuIV4GnDAWcR+vbKL3hMBpGE6vJieQrNVe1Yg51tI1KF1oJd3bRk+tpAtrJFxAoHIsnh0BgU8FjsyVVAgsiwenUbvgVzxZ6pm7bHG7QxYfm7WI8ISqYwI3P707uqOXY9bj7NgDdVJ8TZYIoPjYSMCPeMvAeNSUzN0cIxnKbx64dQk9fQPDg0C4lA4hYgFJC8PCpBLSAwQFCAWkLw8KEAuITFAUIBYQPLyf/AAaFBnkg1GAAAAAElFTkSuQmCC{scale="+$scale+"}>"
+!endfunction
+
+AWSEntityColoring(TransferFamily)
+!define TransferFamily(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #01A88D, TransferFamily, TransferFamily)
+!define TransferFamily(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #01A88D, TransferFamily, TransferFamily)
+!define TransferFamilyParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #01A88D, TransferFamily, TransferFamily)
+!define TransferFamilyParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #01A88D, TransferFamily, TransferFamily)

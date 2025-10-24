@@ -1,0 +1,16 @@
+' Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+' SPDX-License-Identifier: CC-BY-ND-2.0 (For details, see https://github.com/awslabs/aws-icons-for-plantuml/blob/main/LICENSE)
+sprite $CloudFormationStack [64x64/16z] {
+xPLL0eKm40DJxtB_-px5BRZFPzYXtc9tb9dCppV9PFH2lZCJy8LlC05x3F_n7z_f2RZKt_lyAZSPXPcmzYtGspuRlm1y_kRxLhKI_hvNhJYw_pAVxByz_CT_
+VFh-nxyVoFk_y_c5xe5yNG8TwXZOC2ZikFyiN38erAaliK3IqXX9AEtxHwUb2YqXsNzdz1__yOCl26cfzoGCgJ_l_CxteUga6GznVju
+}
+
+!function $CloudFormationStackIMG($scale=1)
+!return "<img data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAAIGNIUk0AAHomAACAhAAA+gAAAIDoAAB1MAAA6mAAADqYAAAXcJy6UTwAAAAEZ0FNQQAAsY58+1GTAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAAOxAAADsQBlSsOGwAAAudJREFUeNrtmk1oE0EUx9/b3TZaq9J2Q5P0otJSiDdRL4pNTx48CYp6Erx4iIrH1q1YMG2KICIiggf1JoL0GAQvikfxpl4EFSLZNOmHaNWm7sw4G4k0mt1kyW6E5D3YzLID8+b9Zv8z8yYLQNbZhpUbMzKxA5g61hFRqzwTzaeL9q325yHT9gKIB50Qv8KVA7IoA1A6XQJa7cfitlTHy3YKVCAcRgGnGgSgPIsWU4/bCUBON/rkjPcPgI6XAAEgAASAABAAAkAACADlAtUbZ77b1KcW2yvx58Mbsv86ABCnJYU2G2skCbhLgLG3oNgj3/5mMcwC2V/CMPsn4/INON4yxwjrkeJs+t3w+VDv560TrQyac7w3tDyTrZaAqsblxNcyCcgp9qss0gNLPZtKWmulp2nwVBZZmgSdl0FIgsIygXhk6n35m3CofQQqC0YOXDsDQlxucCOEhWh+7mMQ/TDDxg83WcQC8pvTjWVE2gcQAAJAAAgAASAABIAAEAD3rTDwhNyybgnI55Bzbo4j0u/pQLJPhP21TvkcAGDy/4yHsL9RCuQ7JRQkgToSUNlzsNTxlo01Cssu+1ber+b10fGWBs2010BWmXcqebo+OQaoTPugtbuRxZmHOX3qLKI46c/bgrdihdR8PmxckFI+2nSDqnIumr/6ploCqIalq4QPr/aT32TFLnA++fG2VguYL7cNMOJHmwrn2+usAlCQ13cPYXfLkGMu9Z9kveWxnyF5RV3q7UNN5uFd3yYJ9je8DHr5TC6nX9qDCK8cfSvKochC6oOX6HNh46DU5wvHUUSxb7Awu9B4H42Lso83aBkkAASAABAAAkAACAABIAAEwC0XEEkzbBzx0M6Aa6rE+TXZ3qrHvg26VXKBN93+aq+RDMU9nAn6k8Zu8H4sgME74S1PJwm4S0B0aRnkazubbTBUEit2uf6TzXVvhjt+dFK1+JJdWqWuK1rP2vVm2/vS+80sn3iQkZH9AgEhxH6k08omAAAAAElFTkSuQmCC{scale="+$scale+"}>"
+!endfunction
+
+AWSEntityColoring(CloudFormationStack)
+!define CloudFormationStack(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #E7157B, CloudFormationStack, CloudFormationStack)
+!define CloudFormationStack(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #E7157B, CloudFormationStack, CloudFormationStack)
+!define CloudFormationStackParticipant(p_alias, p_label, p_techn) AWSParticipant(p_alias, p_label, p_techn, #E7157B, CloudFormationStack, CloudFormationStack)
+!define CloudFormationStackParticipant(p_alias, p_label, p_techn, p_descr) AWSParticipant(p_alias, p_label, p_techn, p_descr, #E7157B, CloudFormationStack, CloudFormationStack)
