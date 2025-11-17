@@ -1,11 +1,11 @@
 ' No <style> alternative found yet for skinparam maxMessageSize
 skinparam maxMessageSize 150
 
-' No <style> alternative found yet for skinparam maxMessageSize to make it work on elements that have nested elements
+' No <style> alternative found yet for skinparam StereotypeAlignment to make it work on elements that have nested elements
 skinparam StereotypeAlignment right
 
-'No <style> alternative found yet for skinparam lineType ortho
-!global $ARCH_LINETYPE ?= ortho
+'No <style> alternative found yet for skinparam lineType
+!global $ARCH_LINETYPE ?= curve
 skinparam lineType $ARCH_LINETYPE
 
 ' fallback values if theme does not define it

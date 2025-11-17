@@ -3,7 +3,7 @@ name: archimate
 display_name: Archimate
 description: PlantUML support for Archimate diagrams
 author: 
-version: 3.2.1
+version: 3.2.2
 release: 
 license: MIT
 source: https://github.com/plantuml-stdlib/Archimate-PlantUML
