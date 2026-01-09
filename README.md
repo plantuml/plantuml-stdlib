@@ -32,9 +32,9 @@ Following the C convention for "C standard library" _(see https://en.wikipedia.o
   - [Google Cloud Platform [gcp]](#google-cloud-platform-gcp)
   - [K8S [k8s]](#k8s-k8s)
   - [Google Material Icons [material, material2, material7]](#google-material-icons-material-material2-material7)
-    - [(Old version) PNG sprites - compatibility mode [material, material2]](#old-version-png-sprites-compatibility-mode-material-material2)
+    - [(Old version) PNG sprites - compatibility mode [material, material2]](#old-version-png-sprites---compatibility-mode-material-material2)
       - [Notes](#notes)
-    - [SVG sprites [material7, material7.4.47]](#svg-sprites-material7-material7.4.47)
+    - [SVG sprites [material7, material7.4.47]](#svg-sprites-material7-material7447)
       - [Macros and predefined values via `!include <material7/common>`](#macros-and-predefined-values-via-include-material7common)
   - [Tupadr3 library [tupadr3]](#tupadr3-library-tupadr3)
 
@@ -642,85 +642,6 @@ This example renders the following image:
 
 ![Example](http://cdn-0.plantuml.com/plantuml/png/ZPDFYzim4CNl-HIpFcLX4zVk7afFszrBeNyQcWqzXeaqYKNqnqYZ9ANiTw_aDR6RKXeTZ9ZtUyFe3Nu8Z9wZqPCRILjb2VRl0ZJCRNXVbXwFyvtY9cvY82-SPR8y5ywKKc10LkK-RiXROWgpXKRBgo-VIuE1oPTI1Pv0EZVA2XqbHQzpzv5d_UICSNRUvW7-Yrgc4r_5BfLfjTegal_6losNvQUpPNaGrw8BD-gwTOx9mw12Ze5dAOTE3m8rWS4JL6_gUpWgoSshi5UsHOy6VasWFzP92jGcz5poQFUZqaltHS7EGx4Av0l007av7xJ2qAcQjWpimAjTmo2L9y7AsKvxqZ7lPlteefNeVqx5Q-4EYj4JUggu7Sts5Gs55WKDNXkIxGTj1gu_VyGw3GUHk43-e0GLwLhSNj93ijFMoIenHzhCylKQlXxu-e9_cGpVxwIdvwJkybJ5ZXW-FZylocfUWRAIJlE6ZSvDgkBsxCfiDrUX7KfuH8rMKCWXfn52nkk_yVewVBtgtppabDZ-NylisulMmxgJw8cZjpsUrvuTzydnG5P6ety3)
 
-
-## Google Material Icons [material]
-
-### Old sprites
-This library consists of a free Material style icons from Google and other artists.
-
-Use it by including the file that contains the sprite, eg: `!include <material2.1.19/folder_move>`.
-When imported, you can use the sprite as normally you would, using `<$ma_sprite_name>`.
-Notice that this library requires an `ma_` preffix on sprites names, this is to avoid clash of names if multiple sprites have the same name on different libraries.
-
-You may also include the `common.puml` file, eg: `!include <material2.1.19/common>`, which contains helper macros defined.
-With the `common.puml` imported, you can use the `MA_NAME_OF_SPRITE(parameters...)` macro, note again the use of the prefix `MA_`.
-
-Example of usage:
-```plantuml
-@startuml
-!include <material2.1.19/common>
-' To import the sprite file you DON'T need to place a prefix!
-!include <material2.1.19/folder_move>
-
-MA_FOLDER_MOVE(Red, 1, dir, rectangle, "A label")
-@enduml
-```
-
-This example renders the following image:
-
-![Example](http://www.plantuml.com/plantuml/png/TSpH2e8m50RW-pt5hpSM3CFkWX04xIeJ9BgLjHrhSBR9cb5ltnFqFS2NMQzvDOIZKucYLRmlgx8wx7HmBlXQ5BW6MBU4c92UXDSIRIBCbWdViA8TBiKLdiWW1IoiD45XYJJRJoQoV_qSs52SN7XJBKJVJAVXt7RZr0-tRZEIaQWaZ8qIaNHI_i4aaJTWTIVEjpy0 "Example")
-
-#### Notes
-
-When mixing sprites macros with other elements you may get a syntax error if, for example, trying to add a rectangle along with classes.
-In those cases, add `{` and `}` after the macro to create the empty rectangle.
-
-Example of usage:
-```plantuml
-@startuml
-!include <material2.1.19/common>
-' To import the sprite file you DON'T need to place a prefix!
-!include <material2.1.19/folder_move>
-
-MA_FOLDER_MOVE(Red, 1, dir, rectangle, "A label") {
-}
-
-class foo {
-  bar
-}
-@enduml
-```
-
-This example renders the following image:
-
-![Example](http://www.plantuml.com/plantuml/png/TOz1Qy9044Rl-oi-lMWXAF5M457GdhG1aLx3k3kn2xCxOR8fBQN_tVo17jyxF7ZxeP2LCOcRnUnb38njei8MIJQhUbM_hhscf7dd5hWfOkhL2iedO-Wj5aONXV6Z8uxD--A6p1nG5BsGPn1wuov-p_xFTog1hKtwnJldBeVshJaVJzVsqdoSbbSE5UeA8Le5OryeFuGhp0yGkhFCN_3h_fppGiE0JdL2u4usoJtdC8qz0G00 "Example")
-
-### New SVG sprites
-
-This library consists of a (SVG) Material Design Icons style icons from Google and other artists. See the entire collection or search via a filter on the [Material Design Icons website](https://pictogrammers.com/library/mdi/).
-
-Use it by including the file that contains all the sprites: `!include <material/material>`.
-When imported, you can use the sprite as normally you would, using `<$mdi-sprite-name>`.
-Notice that this library requires an `mdi-` preffix on sprites names, this is to avoid clash of names if multiple sprites have the same name on different libraries. `mdi` stands for Material Design Icon.
-
-Example of usage:
-```plantuml
-@startuml
-!include <material/material>
-
-usecase a as "<$mdi-web>"
-usecase b as "<$mdi-web,scale=2>"
-usecase c as "<$mdi-web{scale=2}>" #line:red
-
-usecase d as "<$mdi-material-design>"
-usecase e as "<$mdi-material-design{scale=2,color=blue}>"
-usecase f as "<$mdi-material-design,scale=2,color=#00f>"
-@enduml
-```
-
-This example renders the following image:
-
-[![material Example](https://img.plantuml.biz/plantuml/svg/TP312eCm38Rl1T-XqnsLoOv3YwyIspWAQOMcnSFmtRV1okh1M-3_llmX4qS8CJcgnCLwJScW71n431RebWTLYKeaHWsC4YImh8UhCxRRS5RrFvgFKSiQ2CTxYUWZyleXkwfbGzRZ8w0fsqp1vtCwWsoVlboBvrYkQFLAQnXdIhYNwdAkjaUrwVlbQqxepUTbRm00 "material Example")](https://editor.plantuml.com/uml/TP312eCm38Rl1T-XqnsLoOv3YwyIspWAQOMcnSFmtRV1okh1M-3_llmX4qS8CJcgnCLwJScW71n431RebWTLYKeaHWsC4YImh8UhCxRRS5RrFvgFKSiQ2CTxYUWZyleXkwfbGzRZ8w0fsqp1vtCwWsoVlboBvrYkQFLAQnXdIhYNwdAkjaUrwVlbQqxepUTbRm00)
 ## Google Material Icons [material, material2, material7]
 
 ### (Old version) PNG sprites - compatibility mode [material, material2]
