@@ -9,6 +9,35 @@ Following the C convention for "C standard library" _(see https://en.wikipedia.o
 
 [![](https://img.plantuml.biz/plantuml/svg/SoWkIImgAStDuUKgBad9oKpYvN98pKi12W00)](https://editor.plantuml.com/uml/SoWkIImgAStDuUKgBad9oKpYvN98pKi12W00)
 
+  - [AdaML [ada]](#adaml-ada)
+    - [What is AdaML](#what-is-adaml)
+    - [Features](#features)
+  - [Amazon Web Services](#amazon-web-services)
+    - [AWS Icons](#aws-icons)
+    - [AWS library [aws]](#aws-library-aws)
+    - [Amazon Labs AWS Library [awslib]](#amazon-labs-aws-library-awslib)
+  - [Azure library [azure]](#azure-library-azure)
+  - [Bootstrap Icons [bootstrap]](#bootstrap-icons-bootstrap)
+  - [C4 library (C4-PlantUML) [C4]](#c4-library-c4-plantuml-c4)
+  - [Classy library [classy]](#classy-library-classy)
+  - [Classy C4 library [classy-c4]](#classy-c4-library-classy-c4)
+  - [Domain Story library (DomainStory-PlantUML) [DomainStory]](#domain-story-library-domainstory-plantuml-domainstory)
+  - [Edgy Enterprise Design [edgy]](#edgy-enterprise-design-edgy)
+    - [Facets](#facets)
+    - [Elements](#elements)
+    - [Links](#links)
+    - [Concrete example of usage:](#concrete-example-of-usage)
+  - [EIP-PlantUML [eip]](#eip-plantuml-eip)
+  - [Elastic library [elastic]](#elastic-library-elastic)
+  - [Google Cloud Platform [gcp]](#google-cloud-platform-gcp)
+  - [K8S [k8s]](#k8s-k8s)
+  - [Google Material Icons [material, material2, material7]](#google-material-icons-material-material2-material7)
+    - [(Old version) PNG sprites - compatibility mode [material, material2]](#old-version-png-sprites-compatibility-mode-material-material2)
+      - [Notes](#notes)
+    - [SVG sprites [material7, material7.4.47]](#svg-sprites-material7-material7.4.47)
+      - [Macros and predefined values via `!include <material7/common>`](#macros-and-predefined-values-via-include-material7common)
+  - [Tupadr3 library [tupadr3]](#tupadr3-library-tupadr3)
+
 ## AdaML [ada]
 
 ### What is AdaML
@@ -692,6 +721,257 @@ usecase f as "<$mdi-material-design,scale=2,color=#00f>"
 This example renders the following image:
 
 [![material Example](https://img.plantuml.biz/plantuml/svg/TP312eCm38Rl1T-XqnsLoOv3YwyIspWAQOMcnSFmtRV1okh1M-3_llmX4qS8CJcgnCLwJScW71n431RebWTLYKeaHWsC4YImh8UhCxRRS5RrFvgFKSiQ2CTxYUWZyleXkwfbGzRZ8w0fsqp1vtCwWsoVlboBvrYkQFLAQnXdIhYNwdAkjaUrwVlbQqxepUTbRm00 "material Example")](https://editor.plantuml.com/uml/TP312eCm38Rl1T-XqnsLoOv3YwyIspWAQOMcnSFmtRV1okh1M-3_llmX4qS8CJcgnCLwJScW71n431RebWTLYKeaHWsC4YImh8UhCxRRS5RrFvgFKSiQ2CTxYUWZyleXkwfbGzRZ8w0fsqp1vtCwWsoVlboBvrYkQFLAQnXdIhYNwdAkjaUrwVlbQqxepUTbRm00)
+## Google Material Icons [material, material2, material7]
+
+### (Old version) PNG sprites - compatibility mode [material, material2]
+
+This library consists of a free Material style icons from Google and other artists based on v2.1.19.
+
+The old library is kept for compatibility reasons, but new projects should use the new SVG based library described below.
+
+The library can be included via **`!include <material/...>`** (e.g. `!include <material/folder_move>`).
+(Theoretically can it be included via `!include <material2/...>` or `!include <material2.1.19/...>` too, but no v2.* updates are planned anymore.)
+When imported, you can use the sprite as normally you would, using `<$ma_sprite_name>` (e.g. `<$ma_folder_move>`).
+Notice that this library requires an `ma_` prefix on sprites names, this is to avoid clash of names if multiple sprites have the same name on different libraries.
+
+**Example of usage:**
+
+```plantuml
+@startuml
+' To import the sprite file you DON'T need to place a prefix!
+!include <material/folder_move>
+
+usecase a as "<$ma_folder_move>\nmove a file into a folder UC"
+usecase c as "<$ma_folder_move{scale=2.5,color=#00f}>\nanother move file into a folder UC" #line:red
+
+' The macro cannot be used without !include <material/common>
+' MA_FOLDER_MOVE(Red, 1, dir, rectangle, "A label")
+@enduml
+```
+
+This example renders the following image:
+
+[![Sprite example - open link](https://www.plantuml.com/plantuml/svg/TP1FIyD04CNl-HIlgL25eFNWHThIOkl9MYZLan2cknExCBiJDXl_87vt4mhYePxcyllDuxrvaoYcraismaxXVAqn8HqOJHrTObHE69_QOhbv7EqGc2sIeXOo348TkN8VWspWWf7MCYQU4aT7SbMfM8wbrpUUPLdRiA6cLwX1FZdpLFu5Na9_GCSy5vA2S0JmT9V_wkQa_jKO4fwEBsyAew9nEXoFg-yPA6XN9Q9d_lcCeRZ0jv5jrazmO7WoKM4eT3BsZ2xQujsbWxO99teQzLx3hBFNY_9-yx1SRSlrvdbrlcLRuBg0TR50P9Cel0eNo1SGshFa5zcSWssz_000 "Sprite example")](https://www.plantuml.com/plantuml/uml/TP1FIyD04CNl-HIlgL25eFNWHThIOkl9MYZLan2cknExCBiJDXl_87vt4mhYePxcyllDuxrvaoYcraismaxXVAqn8HqOJHrTObHE69_QOhbv7EqGc2sIeXOo348TkN8VWspWWf7MCYQU4aT7SbMfM8wbrpUUPLdRiA6cLwX1FZdpLFu5Na9_GCSy5vA2S0JmT9V_wkQa_jKO4fwEBsyAew9nEXoFg-yPA6XN9Q9d_lcCeRZ0jv5jrazmO7WoKM4eT3BsZ2xQujsbWxO99teQzLx3hBFNY_9-yx1SRSlrvdbrlcLRuBg0TR50P9Cel0eNo1SGshFa5zcSWssz_000)
+
+You may also include the `common.puml` file, e.g. `!include <material/common>`, which contains helper macros. With the `common.puml` imported, you can use the `MA_NAME_OF_SPRITE(parameters...)` macro, note again the use of the prefix `MA_`. Following calls are supported:
+
+- `MA_SPRITE_NAME(_color)`
+- `MA_SPRITE_NAME(_color, _scale)`
+- `MA_SPRITE_NAME(_color, _scale, _alias)`
+- `MA_SPRITE_NAME(_color, _scale, _alias, _shape)`
+- `MA_SPRITE_NAME(_color, _scale, _alias, _shape, _label)`
+
+**Example of usage:**
+
+```plantuml
+@startuml
+!include <material/common>
+' To import the sprite file you DON'T need to place a prefix!
+!include <material/folder_move>
+
+MA_FOLDER_MOVE(Red, 1, dir, rectangle, "A label")
+@enduml
+```
+
+This example renders the following image:
+
+[![Macro example - open link](http://www.plantuml.com/plantuml/svg/PSn12i8m40NGVK_nsqqL0k9U2eNMbRLGYjiIawa69faGKz7RUm3V0LxfWk7D4avUPqfEyy68znAQeiOiS3vAoiXFmYicbmchOy9NDdJZjPuHY2oo8B8s18sOQ7MViYZ_urNOKbgylAafYg5TpkEbwwTb66_zRYAhS5ImBYaaCbc71vD2rOBrdRZQ_m00 "Macro example")](http://www.plantuml.com/plantuml/uml/PSn12i8m40NGVK_nsqqL0k9U2eNMbRLGYjiIawa69faGKz7RUm3V0LxfWk7D4avUPqfEyy68znAQeiOiS3vAoiXFmYicbmchOy9NDdJZjPuHY2oo8B8s18sOQ7MViYZ_urNOKbgylAafYg5TpkEbwwTb66_zRYAhS5ImBYaaCbc71vD2rOBrdRZQ_m00)
+
+#### Notes
+
+When mixing sprites macros with other elements you may get a syntax error if, for example, trying to add a rectangle along with classes.
+In those cases, add `{` and `}` after the macro to create the empty rectangle.
+
+**Example of usage:**
+
+```plantuml
+@startuml
+!include <material/common>
+' To import the sprite file you DON'T need to place a prefix!
+!include <material/folder_move>
+
+MA_FOLDER_MOVE(Red, 1, dir, rectangle, "A label") {
+}
+
+class foo {
+  bar
+}
+@enduml
+```
+
+This example renders the following image:
+
+[![Example - open link](http://www.plantuml.com/plantuml/svg/TOz1Qy9044Rl-oi-lMWXAF5M457GdhG1aLx3k3kn2xCxOR8fBQN_tVo17jyxF7ZxeP2LCOcRnUnb38njei8MIJQhUbM_hhscf7dd5hWfOkhL2iedO-Wj5aONXV6Z8uxD--A6p1nG5BsGPn1wuov-p_xFTog1hKtwnJldBeVshJaVJzVsqdoSbbSE5UeA8Le5OryeFuGhp0yGkhFCN_3h_fppGiE0JdL2u4usoJtdC8qz0G00 "Example")](http://www.plantuml.com/plantuml/uml/TOz1Qy9044Rl-oi-lMWXAF5M457GdhG1aLx3k3kn2xCxOR8fBQN_tVo17jyxF7ZxeP2LCOcRnUnb38njei8MIJQhUbM_hhscf7dd5hWfOkhL2iedO-Wj5aONXV6Z8uxD--A6p1nG5BsGPn1wuov-p_xFTog1hKtwnJldBeVshJaVJzVsqdoSbbSE5UeA8Le5OryeFuGhp0yGkhFCN_3h_fppGiE0JdL2u4usoJtdC8qz0G00)
+
+### SVG sprites [material7, material7.4.47]
+
+This library consists of a (SVG) Material Design Icons style icons from Google and other artists based on v7.4.47.
+See the entire collection or search via a filter on the [Material Design Icons website](https://pictogrammers.com/library/mdi/).
+
+The library can be included via `!include <material7/...>` or `!include <material7.4.47/...>`.
+It is planned that `<material7/...>` is always the last 7.* version and therefore some sprites could be changed in the future.
+If you want to ensure that your diagrams are not affected by these changes, you should use a specific version, e.g. `!include <material7.4.47/...>`.
+
+The material design icons are organized in categories, e.g. `AccountUser`, `BrandLogo` etc.
+The sprites can be included via their category and name, e.g. `!include <material7/AccountUser/AccountAlert>` or `all` of one category via `!include <material7/Emoji/all>`.
+When imported, you can use the sprite as normally you would, using `<$mdiSpriteName>`.
+Notice that this library requires an `mdi` prefix on sprites names, this is to avoid clash of names if multiple sprites have the same name on different libraries. `mdi` stands for Material Design Icon.
+
+**Example of usage:**
+
+```plantuml
+@startuml
+!include <material7/AccountUser/AccountAlert>
+!include <material7/Emoji/all>
+
+label "explicit loaded sprite in text\n<$mdiAccountAlert>" as accountAlertSprite
+label "sprite loaded via category collection\nwith changed size and color\n<$mdiEmoticonLol{scale=0.75,color=red}>" as emoticonLol
+@enduml
+```
+
+This example renders the following image:
+
+[![material7 sprite example - open link](https://www.plantuml.com/plantuml/svg/TOunJq9H38NtzoigSJGF1ynRWC3WvcRSM6fl0pMzBRctLr7ZVrVm4NLmQvhlVEUiQc29bhMx42DjYM6UCRW8wj3F-jamNHDvitYeNCxtMhd4yl_8RVOdcQBgikiK7rbXmeUz2ac0EYPEKFT5Wa4CWW-niVbbJl97Fm6iWBy-zwV8MJWAHjsp8106Rxsy0hagKuZRnbuaTa0xjEsnLDuOqDAHy3AMVeqD8RSxr_TAgBouxeURgnEoA9m-lfVm3zQjs5BB-Wa0 "material7 sprite example")](https://www.plantuml.com/plantuml/uml/TOunJq9H38NtzoigSJGF1ynRWC3WvcRSM6fl0pMzBRctLr7ZVrVm4NLmQvhlVEUiQc29bhMx42DjYM6UCRW8wj3F-jamNHDvitYeNCxtMhd4yl_8RVOdcQBgikiK7rbXmeUz2ac0EYPEKFT5Wa4CWW-niVbbJl97Fm6iWBy-zwV8MJWAHjsp8106Rxsy0hagKuZRnbuaTa0xjEsnLDuOqDAHy3AMVeqD8RSxr_TAgBouxeURgnEoA9m-lfVm3zQjs5BB-Wa0)
+
+**How to get all available sprite categories**
+
+```plantuml
+@startuml
+!$material = %load_json('<material7/all.json>')
+!foreach $item in $material
+  Alice -> Bob : $item
+!endfor
+@enduml
+```
+
+[![all sprite categories - open link](https://www.plantuml.com/plantuml/svg/SoWkIImgAStDuL9KoKqiIItAJCnHi5LGpSbFJ8dFAixFqr2tWOcRwvdecPZh9-Raw85axDGrkHJJyejI4vCp55GoIr9p5JBp5E2cS2aeEEPa9gSgwDefEEKdALX1r70ffkQb07LnEG1feBq0)](https://www.plantuml.com/plantuml/uml/SoWkIImgAStDuL9KoKqiIItAJCnHi5LGpSbFJ8dFAixFqr2tWOcRwvdecPZh9-Raw85axDGrkHJJyejI4vCp55GoIr9p5JBp5E2cS2aeEEPa9gSgwDefEEKdALX1r70ffkQb07LnEG1feBq0)
+
+**How to get all available sprite of a specific category**
+
+```plantuml
+@startuml
+' To get all available sprites of a specific category, e.g. "all" of "material7.4.47/Emoji"
+!include <material7/Emoji/all>
+listsprites
+@enduml
+```
+
+[![all Emoji sprites - open link](https://www.plantuml.com/plantuml/svg/ROqn2W8n44Nxd69COoFPPc4RaMsyWHSOixDXv6SZoKJmzYfORlbu3zxSZAlr37UaMw4aHWmGlrZ1TmYrPrMJHcKb_e94NJLIP9DKwlj44b8Wpu3_9JwpILN65COmJiCrbuTwTz0jeYz2vpq_C71nq6R_cPjbMth61m00)](https://www.plantuml.com/plantuml/uml/ROqn2W8n44Nxd69COoFPPc4RaMsyWHSOixDXv6SZoKJmzYfORlbu3zxSZAlr37UaMw4aHWmGlrZ1TmYrPrMJHcKb_e94NJLIP9DKwlj44b8Wpu3_9JwpILN65COmJiCrbuTwTz0jeYz2vpq_C71nq6R_cPjbMth61m00)
+
+#### Macros and predefined values via `!include <material7/common>`
+
+You may also include the `common.puml` file, e.g. `!include <material7/common>`, which contains helper macros, configurable default behaviors ...
+
+With the `common.puml` imported, you can use following macros; note again the use of the prefix `$Mdi` and the image macro has the postfix `Img` too:
+
+- `$MdiSpriteNameImg($sprite, $color = $MDI_DEFAULT, $scale = "1")`; e.g. **Mdi**EmoticonLol**Img**(...)
+- `$MdiSpriteName($sprite, $alias, $label=$MDI_DEFAULT, $shape=$MDI_DEFAULT, $color=$MDI_DEFAULT, $scale=1, $stereo=$MDI_DEFAULT)`; e.g. **Mdi**EmoticonLol(...)
+
+Following predefined values can be used as arguments too:
+
+| Constant | Value | Description |
+|----------|-------|-------------|
+| `$MDI_LABEL_NONE` | `""` | No label |
+| `$MDI_LABEL_ALIAS` | `"*"` | Use alias as label |
+| `$MDI_SHAPE_NONE` | `"label"` | No visible shape |
+| `$MDI_COLOR_NONE` | `""` | No color change |
+| `$MDI_STEREOTYPE_NONE` | `""` | No stereotype |
+| `$MDI_STEREOTYPE_SPRITE` | `"*"` | Use sprite name as stereotype |
+| `$MDI_ALIGNMENT_NONE` | `""` | No alignment change |
+| `$MDI_ALIGNMENT_LEFT` | `"left"` | Left alignment |
+| `$MDI_ALIGNMENT_CENTER` | `"center"` | Center alignment |
+| `$MDI_ALIGNMENT_RIGHT` | `"right"` | Right alignment |
+
+The default values can be overwritten before the common.puml is included:
+
+| Variable | Description | Default | Possible Values |
+|----------|-------------|---------|----------------|
+| `$MDI_ALIGNMENT` | Text alignment | `"center"` | `""` (none), `"left"`, `"center"`, `"right"` |
+| `$MDI_DEFAULT_LABEL` | Default label behavior | `"*"` | `""` (no label), `"*"` (alias as label) |
+| `$MDI_DEFAULT_SHAPE` | Default shape for elements | `"rectangle"` | `"label"` (no shape), `"rectangle"`, `"database"`, etc. |
+| `$MDI_DEFAULT_COLOR` | Default icon color | `""` | `""` (no color), `"red"`, `"#FF0000"`, etc. |
+| `$MDI_DEFAULT_STEREOTYPE` | Default stereotype | `""` | `""` (none), `"*"` (sprite name), custom text |
+
+**Example of usage with Mdi...Img sprite calls:**
+
+```plantuml
+@startuml
+!include <material7/common>
+!include <material7/AccountUser/AccountAlert>
+
+!$MDI_DEFAULT_COLOR = green
+
+label "$MdiAccountAlertImg()\ndefault image color is changed to green" as defaultSprite
+label "$MdiAccountAlertImg(red)" as redSprite
+label "$MdiAccountAlertImg(red, 2.0)" as redLargeSprite
+label "$MdiAccountAlertImg($color=blue)" as blueSprite
+label "$MdiAccountAlertImg($scale=2.0)" as largeSprite
+@enduml
+```
+
+[![Sprite-Image macro - open link](https://www.plantuml.com/plantuml/svg/ZSt1IiGm4CRnUvuYk_IW85LaOIzssM8L2Yq5jUSoJSOIc2GoITxVGh7qelRs7Vu_lck8m35P4WVZ52MDyib2H3P0v_oKdyxtoblhtUNte5JA9nVxWFopIqAE5o4EMLlLG_NoMlRDn_3SDTsRBEJ4Y4u8WX597hDMcoshxNHpUvGGfCPFI1JVlzX4_2jdr8kOnwxwJZxc3ojfW2VytsNAa-TYf8GBdTSU5XGG5kiXRTwkw7Ioz0q0)](https://www.plantuml.com/plantuml/uml/ZSt1IiGm4CRnUvuYk_IW85LaOIzssM8L2Yq5jUSoJSOIc2GoITxVGh7qelRs7Vu_lck8m35P4WVZ52MDyib2H3P0v_oKdyxtoblhtUNte5JA9nVxWFopIqAE5o4EMLlLG_NoMlRDn_3SDTsRBEJ4Y4u8WX597hDMcoshxNHpUvGGfCPFI1JVlzX4_2jdr8kOnwxwJZxc3ojfW2VytsNAa-TYf8GBdTSU5XGG5kiXRTwkw7Ioz0q0)
+
+**Example of usage with Mdi... calls and different arguments:**
+
+```plantuml
+@startuml
+!include <material7/common>
+!include <material7/AccountUser/AccountAlert>
+
+' Using default values (alias as label, rectangle shape)
+$MdiAccountAlert(defaultAccount)
+
+' Custom label
+$MdiAccountAlert(labelAccount, "with changed $label")
+
+' No label
+$MdiAccountAlert(nolabelAccount, "")
+
+' Alias as label
+$MdiAccountAlert(aliaslabelAccount, $MDI_LABEL_ALIAS)
+
+' Custom shape
+$MdiAccountAlert(shapeDatabaseAccount, "with changed $label and $shape=database", $shape=database)
+
+' No visible shape
+$MdiAccountAlert(shapeNoneIsLabelAccount, "with changed $label and $shape=$MDI_SHAPE_NONE", $shape=$MDI_SHAPE_NONE)
+
+' Custom color
+$MdiAccountAlert(colorRedAccount, "with changed $label and $color=red", $color=red)
+
+' Custom scale
+$MdiAccountAlert(scaleSmallAccount, "with changed $label and $scale=0.5", $scale=0.5)
+$MdiAccountAlert(scaleLargeAccount, "with changed $label and $scale=2.0", $scale=2.0)
+
+' Custom stereotype
+$MdiAccountAlert(stereotypeFixAccount, "with changed $label and $stereo=Abcd", $stereo=Abcd)
+$MdiAccountAlert(stereotypeAliasAccount, "with changed $label and $stereo=$MDI_STEREOTYPE_SPRITE", $stereo=$MDI_STEREOTYPE_SPRITE)
+@enduml
+```
+
+[![Sprite macro with different arguments - open link](https://www.plantuml.com/plantuml/svg/ZP9HQzim4CVV_Iaq4rWD9YkZeozBgRPwpE2w9KuVzXJEqYqHoDAGv6xxzlEk3dMQs1ZyuFlhxdVtr-dM1t2XRNJqJXcXMudiSmC1dG9zlRnQNbr_4BPfhBaPJ-12sDQ49u_kyCyrkd0JHU_ParTcnoJ-X5O7zWowHSykG2lmhFiqrAXJvb04C3kDpE_X5oRHubwg8UkY9_HQyX_zjVN1DY-8qmAIUoLbyMyLzapikoOesO8EOwAKTenWx1l6Im7lPnyh8s_7bOlxktnRy2zPiUL5pglX-6Jub4Bo7GIemUEa3GQc-wNybUmBulIjSl3whBogDKwsBQt1t1TaOMvdibXzvu_PjdmeipWTEHXQ5rPRTpe3oMkKCtfJwigXZDD1S7Iz0lGPdoHN3UWv3YbvTRdy5AU381cX5k1sE9lwSNbve59mD7j0XpRyFRUerxDlwi-SRfI_uhMWkng4oHIS7ljiVB_iJRRE7ZO_kerNZ-jyGuzXCY69Rj78jj7_0000)](https://www.plantuml.com/plantuml/uml/ZP9HQzim4CVV_Iaq4rWD9YkZeozBgRPwpE2w9KuVzXJEqYqHoDAGv6xxzlEk3dMQs1ZyuFlhxdVtr-dM1t2XRNJqJXcXMudiSmC1dG9zlRnQNbr_4BPfhBaPJ-12sDQ49u_kyCyrkd0JHU_ParTcnoJ-X5O7zWowHSykG2lmhFiqrAXJvb04C3kDpE_X5oRHubwg8UkY9_HQyX_zjVN1DY-8qmAIUoLbyMyLzapikoOesO8EOwAKTenWx1l6Im7lPnyh8s_7bOlxktnRy2zPiUL5pglX-6Jub4Bo7GIemUEa3GQc-wNybUmBulIjSl3whBogDKwsBQt1t1TaOMvdibXzvu_PjdmeipWTEHXQ5rPRTpe3oMkKCtfJwigXZDD1S7Iz0lGPdoHN3UWv3YbvTRdy5AU381cX5k1sE9lwSNbve59mD7j0XpRyFRUerxDlwi-SRfI_uhMWkng4oHIS7ljiVB_iJRRE7ZO_kerNZ-jyGuzXCY69Rj78jj7_0000)
+
+**It can be combined with C4 stdlib too:**
+
+```plantuml
+@startuml
+!include <C4/C4_Container>
+
+' If common.puml is needed, disable alignment:
+' !$MDI_ALIGNMENT = ""
+' !include <material7/common>
+
+!include <material7/AccountUser/AccountAlert>
+!include <material7/Emoji/all>
+
+Person(A, $sprite="mdiAccountAlert", $label="Person A")
+Person(B, $sprite="mdiEmoticonNeutral", $label="Person B")
+
+Rel(A, B, "Calls")
+@enduml
+```
+
+[![Combined with C4 - open link](https://www.plantuml.com/plantuml/svg/TOtHIyCm48VV-rVSma25qRuK1cB7kZgau8g8Fe-iEILokOpa-lzxCeRAs5kuVD_tMsUnIQP0nSppI9D3UEZgggltNMIndZ6jYk86-WyOOmYHowF2u3CmeaEt0EUpFH229V_90Ldk5P_DTu_zldtkduRTTdY31epHy-z6i8B9MrgMTLalgrDRbwuIxJZ6YUKzOpg_My8ag-lADiGlNraYxRvWof5lsmNCyp5vmSO4v_-6Z7wHFI0rvWH3Q-xEtkQ_fsNnO-G19qcMBjMDgiKhqi-WkgQpH5blQsGt1Ve6)](https://www.plantuml.com/plantuml/uml/TOtHIyCm48VV-rVSma25qRuK1cB7kZgau8g8Fe-iEILokOpa-lzxCeRAs5kuVD_tMsUnIQP0nSppI9D3UEZgggltNMIndZ6jYk86-WyOOmYHowF2u3CmeaEt0EUpFH229V_90Ldk5P_DTu_zldtkduRTTdY31epHy-z6i8B9MrgMTLalgrDRbwuIxJZ6YUKzOpg_My8ag-lADiGlNraYxRvWof5lsmNCyp5vmSO4v_-6Z7wHFI0rvWH3Q-xEtkQ_fsNnO-G19qcMBjMDgiKhqi-WkgQpH5blQsGt1Ve6)
 
 
 ## Tupadr3 library [tupadr3]
