@@ -14,7 +14,7 @@
 !if %variable_exists("MDI_TEST_INCLUDE")
   !include %get_variable_value("MDI_TEST_INCLUDE")/common.puml
 !else
-  !include https://raw.githubusercontent.com/kirchsth/plantuml-stdlib/refs/heads/master/stdlib/material7.4.47/common.puml
+  !include https://raw.githubusercontent.com/plantuml/plantuml-stdlib/refs/heads/master/stdlib/material7.4.47/common.puml
 !endif
 
 ' after include the concrete constants can be used too (like in the samples below)
@@ -27,8 +27,8 @@
   !include %get_variable_value("MDI_TEST_INCLUDE")/AccountUser/AccountAlert.puml
   !include %get_variable_value("MDI_TEST_INCLUDE")/Emoji/all.puml
 !else
-  !include https://raw.githubusercontent.com/kirchsth/plantuml-stdlib/refs/heads/master/stdlib/material7.4.47/AccountUser/AccountAlert.puml
-  !include https://raw.githubusercontent.com/kirchsth/plantuml-stdlib/refs/heads/master/stdlib/material7.4.47/Emoji/all.puml
+  !include https://raw.githubusercontent.com/plantuml/plantuml-stdlib/refs/heads/master/stdlib/material7.4.47/AccountUser/AccountAlert.puml
+  !include https://raw.githubusercontent.com/plantuml/plantuml-stdlib/refs/heads/master/stdlib/material7.4.47/Emoji/all.puml
 !endif
 
 
