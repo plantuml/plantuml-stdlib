@@ -17,6 +17,21 @@
 !$EXTERNAL_COMPONENT_BG_COLOR ?= "#CCCCCC"
 !$EXTERNAL_COMPONENT_BORDER_COLOR ?= "#BFBFBF"
 
+' New C4 style automatically swaps font and background colors, but with those settings the component/node background would be black.
+' Therefore the colors should be displayed unchanged (the init colors have to be swapped too).
+!$NEW_C4_USE_ORIGINAL_COMPONENT_COLORS ?= 1
+!$componentColorsSwappedAlready ?= 0
+!if (NEW_C4_STYLE == 1 && $NEW_C4_USE_ORIGINAL_COMPONENT_COLORS == 1 && $componentColorsSwappedAlready == 0)
+  !$swap=$COMPONENT_BG_COLOR
+  !$COMPONENT_BG_COLOR=$COMPONENT_FONT_COLOR
+  !$COMPONENT_FONT_COLOR=$swap
+  !$swap=$EXTERNAL_COMPONENT_BG_COLOR
+  !$EXTERNAL_COMPONENT_BG_COLOR=$EXTERNAL_COMPONENT_FONT_COLOR
+  !$EXTERNAL_COMPONENT_FONT_COLOR=$swap
+  ' don't swap them again below if C4_... included again
+  !$componentColorsSwappedAlready=1
+!endif
+
 ' Labels
 ' ##################################
 
@@ -26,8 +41,8 @@
 ' Styling
 ' ##################################
 
-UpdateElementStyle("component", $COMPONENT_BG_COLOR, $COMPONENT_FONT_COLOR, $COMPONENT_BORDER_COLOR, $legendText="$COMPONENT_LEGEND_TEXT")
-UpdateElementStyle("external_component", $EXTERNAL_COMPONENT_BG_COLOR, $EXTERNAL_COMPONENT_FONT_COLOR, $EXTERNAL_COMPONENT_BORDER_COLOR, $legendText="$EXTERNAL_COMPONENT_LEGEND_TEXT")
+UpdateElementStyle("component", $COMPONENT_BG_COLOR, $COMPONENT_FONT_COLOR, $COMPONENT_BORDER_COLOR, $shape=$DEFAULT_SHAPE, $legendText="$COMPONENT_LEGEND_TEXT")
+UpdateElementStyle("external_component", $EXTERNAL_COMPONENT_BG_COLOR, $EXTERNAL_COMPONENT_FONT_COLOR, $EXTERNAL_COMPONENT_BORDER_COLOR, $shape=$DEFAULT_SHAPE, $legendText="$EXTERNAL_COMPONENT_LEGEND_TEXT")
 
 ' shortcuts with default colors
 !unquoted procedure AddComponentTag($tagStereo, $bgColor="", $fontColor="", $borderColor="", $shadowing="", $shape="", $sprite="", $techn="", $legendText="", $legendSprite="", $borderStyle="", $borderThickness="")

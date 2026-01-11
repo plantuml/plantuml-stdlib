@@ -19,7 +19,7 @@
 !pragma teoz true
 
 
-' Legend redefintion
+' Legend redefinition
 ' ##################################
 ' sequence has no dashed boxes
 !if ($LEGEND_DASHED_BOUNDARY == "dashed")
@@ -28,10 +28,10 @@
 !if ($LEGEND_DASHED_TRANSPARENT_BOUNDARY == "dashed")
   !$LEGEND_DASHED_TRANSPARENT_BOUNDARY = ""
 !endif
-UpdateBoundaryStyle("", $bgColor=$BOUNDARY_BG_COLOR, $fontColor=$BOUNDARY_COLOR, $borderColor=$BOUNDARY_COLOR)
-UpdateBoundaryStyle("enterprise", $bgColor=$ENTERPRISE_BOUNDARY_BG_COLOR, $fontColor=$ENTERPRISE_BOUNDARY_COLOR, $borderColor=$ENTERPRISE_BOUNDARY_COLOR, $type="$ENTERPRISE_BOUNDARY_TYPE")
-UpdateBoundaryStyle("system", $bgColor=$SYSTEM_BOUNDARY_BG_COLOR, $fontColor=$SYSTEM_BOUNDARY_COLOR, $borderColor=$SYSTEM_BOUNDARY_COLOR, $type="$SYSTEM_BOUNDARY_TYPE")
-UpdateBoundaryStyle("container", $bgColor=$CONTAINER_BOUNDARY_BG_COLOR, $fontColor=$CONTAINER_BOUNDARY_COLOR, $borderColor=$CONTAINER_BOUNDARY_COLOR, $type="$CONTAINER_BOUNDARY_TYPE")
+UpdateBoundaryStyle("", $bgColor=$BOUNDARY_BG_COLOR, $fontColor=$BOUNDARY_COLOR, $borderColor=$BOUNDARY_COLOR, $shape=$DEFAULT_SHAPE)
+UpdateBoundaryStyle("enterprise", $bgColor=$ENTERPRISE_BOUNDARY_BG_COLOR, $fontColor=$ENTERPRISE_BOUNDARY_COLOR, $borderColor=$ENTERPRISE_BOUNDARY_COLOR, $type="$ENTERPRISE_BOUNDARY_TYPE", $shape=$DEFAULT_SHAPE)
+UpdateBoundaryStyle("system", $bgColor=$SYSTEM_BOUNDARY_BG_COLOR, $fontColor=$SYSTEM_BOUNDARY_COLOR, $borderColor=$SYSTEM_BOUNDARY_COLOR, $type="$SYSTEM_BOUNDARY_TYPE", $shape=$DEFAULT_SHAPE)
+UpdateBoundaryStyle("container", $bgColor=$CONTAINER_BOUNDARY_BG_COLOR, $fontColor=$CONTAINER_BOUNDARY_COLOR, $borderColor=$CONTAINER_BOUNDARY_COLOR, $type="$CONTAINER_BOUNDARY_TYPE", $shape=$DEFAULT_SHAPE)
 
 ' Styling and Layout
 ' ##################################
@@ -121,6 +121,10 @@ sequenceDiagram {
 </style>
 !endif
 ' ======= if no theme is defined hide foot box and activate C4_blue styles
+
+!if (ROUNDED_STYLE == 1)
+skinparam participantRoundCorner $ROUNDED_BOX_SIZE
+!endif
 
 ' Elements redefinition
 ' ##################################
