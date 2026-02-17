@@ -21,7 +21,7 @@ dependencies {
 
 
 application {
-    mainClass.set("com.plantuml.stdlibencoder.js.Main")
+    mainClass.set("com.plantuml.stdlibencoder.js.MainJs")
 }
 
 tasks.test {

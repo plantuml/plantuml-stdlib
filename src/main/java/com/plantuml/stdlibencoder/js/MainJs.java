@@ -9,7 +9,7 @@ import java.util.TreeSet;
 import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
-public class Main {
+public class MainJs {
 
 	public static void main(String[] args) throws IOException, InterruptedException {
 		final Path stdlibPath = Paths.get("stdlib");
