@@ -7,6 +7,10 @@ name: Java Run (with Gradle) and Compress (with Brotli)
 on:
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
+  # Also trigger on push to master-js branch
+  push:
+    branches:
+      - master-js
 
 jobs:
   run-compress:
