@@ -1,3 +1,6 @@
+import java.util.concurrent.Executors
+import java.util.concurrent.Future
+
 plugins {
     id("java")
     id("application")
@@ -44,7 +47,7 @@ tasks.register<JavaExec>("runJs") {
     mainClass.set("com.plantuml.stdlibencoder.js.MainJs")
 }
 
-// Task to minify JavaScript files using Google Closure Compiler
+// Task to minify JavaScript files using Google Closure Compiler (parallel)
 abstract class MinifyJavaScriptTask @Inject constructor(
     private val execOperations: ExecOperations
 ) : DefaultTask() {
@@ -58,34 +61,49 @@ abstract class MinifyJavaScriptTask @Inject constructor(
     @get:InputFiles
     abstract val closureClasspath: ConfigurableFileCollection
 
+    @get:Input
+    abstract val maxParallel: Property<Int>
+
     @TaskAction
     fun minify() {
         val inDir = inputDir.get().asFile
         val outDir = outputDir.get().asFile
         outDir.mkdirs()
 
-        println("Minifying JavaScript files with Google Closure Compiler...")
+        val jsFiles = inDir.listFiles { f -> f.extension == "js" }?.sorted() ?: emptyList()
+        val parallelism = maxParallel.get()
+        println("Minifying ${jsFiles.size} JavaScript files with Google Closure Compiler (parallelism=$parallelism)...")
         println("Input:  ${inDir.absolutePath}")
         println("Output: ${outDir.absolutePath}")
 
+        val pool = Executors.newFixedThreadPool(parallelism)
+        val futures: List<Future<*>> = jsFiles.map { jsFile ->
+            pool.submit {
+                val outFile = File(outDir, "${jsFile.nameWithoutExtension}.min.js")
+                execOperations.javaexec {
+                    classpath = closureClasspath
+                    mainClass.set("com.google.javascript.jscomp.CommandLineRunner")
+                    jvmArgs("-Xmx2g", "-XX:+UseParallelGC")
+                    args(
+                        "--js", jsFile.absolutePath,
+                        "--js_output_file", outFile.absolutePath,
+                        "--compilation_level", "SIMPLE",
+                        "--language_out", "ECMASCRIPT_2015",
+                        "--warning_level", "QUIET",
+                        "--rewrite_polyfills", "false"
+                    )
+                }
+            }
+        }
+
+        // Wait for all to complete
+        futures.forEach { future -> future.get() }
+        pool.shutdown()
+
         var totalOriginal = 0L
         var totalMinified = 0L
-
-        inDir.listFiles { f -> f.extension == "js" }?.sorted()?.forEach { jsFile ->
+        jsFiles.forEach { jsFile ->
             val outFile = File(outDir, "${jsFile.nameWithoutExtension}.min.js")
-            execOperations.javaexec {
-                classpath = closureClasspath
-                mainClass.set("com.google.javascript.jscomp.CommandLineRunner")
-                jvmArgs("-Xmx4g", "-XX:+UseParallelGC")
-                args(
-                    "--js", jsFile.absolutePath,
-                    "--js_output_file", outFile.absolutePath,
-                    "--compilation_level", "SIMPLE",
-                    "--language_out", "ECMASCRIPT_2015",
-                    "--warning_level", "QUIET",
-                    "--rewrite_polyfills", "false"
-                )
-            }
             val orig = jsFile.length()
             val mini = outFile.length()
             totalOriginal += orig
@@ -104,12 +122,13 @@ abstract class MinifyJavaScriptTask @Inject constructor(
 
 tasks.register<MinifyJavaScriptTask>("minifyJavaScript") {
     group = "application"
-    description = "Minifies JS files in output-js/ using Google Closure Compiler"
+    description = "Minifies JS files in output-js/ using Google Closure Compiler (parallel)"
     dependsOn("runJs")
     mustRunAfter("runJs")
     inputDir.set(file("output-js"))
     outputDir.set(file("output-js-min"))
     closureClasspath.from(closureConfig)
+    maxParallel.set(Runtime.getRuntime().availableProcessors().coerceAtMost(8))
 }
 
 tasks.named<JavaExec>("run") {
