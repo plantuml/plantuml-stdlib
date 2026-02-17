@@ -1,4 +1,4 @@
-package com.plantuml.stdlibencoder.v2;
+package com.plantuml.stdlibencoder.spm;
 
 import java.io.DataOutputStream;
 import java.io.IOException;

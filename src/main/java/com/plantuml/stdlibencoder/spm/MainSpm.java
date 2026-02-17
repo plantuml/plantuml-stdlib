@@ -1,4 +1,4 @@
-package com.plantuml.stdlibencoder.v2;
+package com.plantuml.stdlibencoder.spm;
 
 import java.io.IOException;
 import java.io.InputStream;
@@ -20,7 +20,7 @@ import java.util.stream.Stream;
 import com.aayushatharva.brotli4j.encoder.Encoder;
 import com.plantuml.stdlibencoder.brotli.BrotliUtils;
 
-public class Main {
+public class MainSpm {
 
 	final static Path raw = Paths.get("raw");
 	final static Path output = Paths.get("output");
@@ -76,6 +76,7 @@ public class Main {
 				});
 		
 	}
+
 
 	public static void deltree(final Path dir) throws IOException {
 		try (Stream<Path> walk = Files.walk(dir)) {
