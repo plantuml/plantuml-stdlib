@@ -20,7 +20,7 @@ import java.util.stream.Stream;
 import com.aayushatharva.brotli4j.encoder.Encoder;
 import com.plantuml.stdlibencoder.brotli.BrotliUtils;
 
-public class Main {
+public class MainSpm {
 
 	final static Path raw = Paths.get("raw");
 	final static Path output = Paths.get("output");
