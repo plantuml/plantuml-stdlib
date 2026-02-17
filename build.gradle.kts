@@ -21,7 +21,26 @@ dependencies {
 
 
 application {
+    mainClass.set("com.plantuml.stdlibencoder.spm.MainSpm")
+}
+
+tasks.register<JavaExec>("runSpm") {
+    group = "application"
+    description = "Run MainSpm"
+    classpath = sourceSets["main"].runtimeClasspath
+    mainClass.set("com.plantuml.stdlibencoder.spm.MainSpm")
+}
+
+tasks.register<JavaExec>("runJs") {
+    group = "application"
+    description = "Run MainJs"
+    classpath = sourceSets["main"].runtimeClasspath
     mainClass.set("com.plantuml.stdlibencoder.js.MainJs")
+}
+
+tasks.named<JavaExec>("run") {
+    dependsOn("runJs")
+    mustRunAfter("runJs")
 }
 
 tasks.test {
