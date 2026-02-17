@@ -19,6 +19,7 @@ dependencies {
 
     runtimeOnly("com.aayushatharva.brotli4j:native-linux-x86_64:1.16.0")
     runtimeOnly("com.aayushatharva.brotli4j:native-windows-x86_64:1.16.0")
+    runtimeOnly("com.aayushatharva.brotli4j:native-windows-aarch64:1.16.0")
     // runtimeOnly("com.aayushatharva.brotli4j:native-osx-x86_64:1.16.0")
 
     closureConfig("com.google.javascript:closure-compiler:v20250820")
@@ -44,42 +45,39 @@ tasks.register<JavaExec>("runJs") {
 }
 
 // Task to minify JavaScript files using Google Closure Compiler
-tasks.register<JavaExec>("minifyJavaScript") {
-    group = "application"
-    description = "Minifies JS files in output-js/ using Google Closure Compiler"
+abstract class MinifyJavaScriptTask @Inject constructor(
+    private val execOperations: ExecOperations
+) : DefaultTask() {
 
-    dependsOn("runJs")
-    mustRunAfter("runJs")
+    @get:InputFiles
+    abstract val inputDir: DirectoryProperty
 
-    classpath = closureConfig
-    mainClass.set("com.google.javascript.jscomp.CommandLineRunner")
-    jvmArgs("-Xmx4g", "-XX:+UseParallelGC")
+    @get:OutputDirectory
+    abstract val outputDir: DirectoryProperty
 
-    val inputDir = file("output-js")
-    val outputDir = file("output-js-min")
+    @get:InputFiles
+    abstract val closureClasspath: ConfigurableFileCollection
 
-    doFirst {
-        outputDir.mkdirs()
+    @TaskAction
+    fun minify() {
+        val inDir = inputDir.get().asFile
+        val outDir = outputDir.get().asFile
+        outDir.mkdirs()
+
         println("Minifying JavaScript files with Google Closure Compiler...")
-        println("Input:  ${inputDir.absolutePath}")
-        println("Output: ${outputDir.absolutePath}")
-    }
+        println("Input:  ${inDir.absolutePath}")
+        println("Output: ${outDir.absolutePath}")
 
-    // Closure Compiler does not support directory-level minification in a single invocation,
-    // so we process each .js file individually in doLast
-    args = listOf("--version")
-
-    doLast {
         var totalOriginal = 0L
         var totalMinified = 0L
 
-        inputDir.listFiles { f -> f.extension == "js" }?.sorted()?.forEach { jsFile ->
-            val outFile = file("${outputDir.absolutePath}/${jsFile.nameWithoutExtension}.min.js")
-            javaexec {
-                classpath = closureConfig
+        inDir.listFiles { f -> f.extension == "js" }?.sorted()?.forEach { jsFile ->
+            val outFile = File(outDir, "${jsFile.nameWithoutExtension}.min.js")
+            execOperations.javaexec {
+                classpath = closureClasspath
                 mainClass.set("com.google.javascript.jscomp.CommandLineRunner")
                 jvmArgs("-Xmx4g", "-XX:+UseParallelGC")
-                args = listOf(
+                args(
                     "--js", jsFile.absolutePath,
                     "--js_output_file", outFile.absolutePath,
                     "--compilation_level", "SIMPLE",
@@ -102,6 +100,16 @@ tasks.register<JavaExec>("minifyJavaScript") {
         println("  Total minified:  ${totalMinified / 1024} KB")
         println("  Reduction: $ratio%")
     }
+}
+
+tasks.register<MinifyJavaScriptTask>("minifyJavaScript") {
+    group = "application"
+    description = "Minifies JS files in output-js/ using Google Closure Compiler"
+    dependsOn("runJs")
+    mustRunAfter("runJs")
+    inputDir.set(file("output-js"))
+    outputDir.set(file("output-js-min"))
+    closureClasspath.from(closureConfig)
 }
 
 tasks.named<JavaExec>("run") {
