@@ -26,54 +26,6 @@ public class MainSpm {
 	final static Path output = Paths.get("output");
 
 	public static void main(String[] args) throws IOException, InterruptedException {
-		// Path to the "stdlib" directory
-		final Path stdlibPath = Paths.get("stdlib");
-
-		Files.createDirectories(raw);
-		Files.createDirectories(output);
-		deltree(raw);
-		deltree(output);
-
-		final Set<String> names;
-		try (Stream<Path> paths = Files.list(stdlibPath)) {
-			names = paths.filter(Files::isDirectory).parallel() //
-					.map(path -> path.getFileName().toString()) //
-					.map(name -> {
-						try {
-							new SpmBuilder(name);
-							return name.toLowerCase();
-						} catch (IOException e) {
-							throw new UncheckedIOException(e);
-						}
-					}) //
-					.collect(Collectors.toCollection(TreeSet::new));
-		}
-
-		System.err.println("names=" + names);
-		final Path filePath = Paths.get("output", "home.spm");
-		Files.writeString(filePath, String.join("\n", names));
-
-		Files.walk(raw).filter(Files::isRegularFile) //
-				.filter(f -> f.getFileName().toString().endsWith(".spm")) //
-				.parallel() //
-				.forEach(p -> {
-					try {
-						computeSha1(p);
-					} catch (IOException e) {
-						e.printStackTrace();
-					}
-				});
-
-		Files.walk(raw).filter(f -> Files.isRegularFile(f)) //
-				.filter(f -> f.getFileName().toString().endsWith(".spm")) //
-				.parallel() //
-				.forEach(p -> {
-					try {
-						brotli(p);
-					} catch (IOException e) {
-						e.printStackTrace();
-					}
-				});
 		
 	}
 

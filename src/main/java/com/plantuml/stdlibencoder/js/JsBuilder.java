@@ -77,9 +77,9 @@ public class JsBuilder {
 	private void appendPumlFile(Path pumlFile) throws IOException {
 		// Build the key: "stdlib/libname/relative/path.puml"
 		final Path relative = stdlibDir.relativize(pumlFile);
-		final String key = "stdlib/" + libName + "/" + relative.toString().replace('\\', '/');
+		final String key = relative.toString().replace('\\', '/').toLowerCase().replaceAll("\\.puml$", "");
 
-		final List<String> lines = Files.readAllLines(pumlFile, StandardCharsets.UTF_8);
+		final List<String> lines = readAllLine(pumlFile);
 
 		sb.append("\n  window.PLANTUML_STDLIB[\"").append(libName).append("\"][\"");
 		sb.append(key).append("\"] = [\n");
@@ -93,6 +93,11 @@ public class JsBuilder {
 		}
 
 		sb.append("  ];\n");
+	}
+
+	public static List<String> readAllLine(Path pumlFile) throws IOException {
+		final List<String> lines = Files.readAllLines(pumlFile, StandardCharsets.UTF_8);
+		return lines;
 	}
 
 	/**
