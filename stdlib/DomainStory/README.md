@@ -4,10 +4,11 @@ display_name: DomainStory
 description: A PlantUML macro library to describe your domain story as code.
 author: https://github.com/johthor
 version: 0.4.0
-release: 
+release:
 license: MIT License
 source: https://github.com/johthor/DomainStory-PlantUML
-origin: 
+origin:
+uid: 749fb3544e1d11028376ab55d469e6188b4127f1
 ---
 A PlantUML macro library to describe your domain story as code.
 

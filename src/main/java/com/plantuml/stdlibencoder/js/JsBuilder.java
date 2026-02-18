@@ -11,6 +11,8 @@ import java.util.Comparator;
 import java.util.List;
 import java.util.stream.Stream;
 
+import com.plantuml.stdlibencoder.Util;
+
 /**
  * Builds a single JS file for a stdlib library.
  * <p>
@@ -80,7 +82,7 @@ public class JsBuilder {
 		final Path relative = stdlibDir.relativize(pumlFile);
 		final String key = relative.toString().replace('\\', '/').toLowerCase().replaceAll("\\.puml$", "");
 
-		final List<String> lines = readAllLine(pumlFile);
+		final List<String> lines = Util.readAllLine(pumlFile);
 
 		sb.append("\n  window.PLANTUML_STDLIB[\"").append(libName).append("\"][\"");
 		sb.append(key).append("\"] = [\n");
@@ -94,43 +96,6 @@ public class JsBuilder {
 		}
 
 		sb.append("  ];\n");
-	}
-
-	public static List<String> readAllLine(Path pumlFile) throws IOException {
-		final List<String> raw = Files.readAllLines(pumlFile, StandardCharsets.UTF_8);
-		final List<String> result = new ArrayList<>();
-		boolean inBlockComment = false;
-		for (String line : raw) {
-			final String trimmed = line.trim();
-			if (inBlockComment) {
-				if (trimmed.contains("'/"))
-					inBlockComment = false;
-				continue;
-			}
-			if (trimmed.startsWith("/'")) {
-				inBlockComment = !trimmed.endsWith("'/");
-				continue;
-			}
-			if (isFilteredLine(trimmed))
-				continue;
-			result.add(line);
-		}
-		return result;
-	}
-
-	/**
-	 * Returns true if the line should be filtered out:
-	 * <ul>
-	 * <li>{@code @startuml} or {@code @enduml} (with optional surrounding spaces)</li>
-	 * <li>PlantUML comments (lines starting with a single quote, with optional leading spaces)</li>
-	 * </ul>
-	 */
-	private static boolean isFilteredLine(String trimmed) {
-		if (trimmed.equals("@startuml") || trimmed.equals("@enduml"))
-			return true;
-		if (trimmed.startsWith("'"))
-			return true;
-		return false;
 	}
 
 	/**

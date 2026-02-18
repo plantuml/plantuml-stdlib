@@ -1,7 +1,6 @@
 package com.plantuml.stdlibencoder.js;
 
 import java.io.IOException;
-import java.io.UncheckedIOException;
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.Paths;
@@ -28,7 +27,7 @@ public class MainJs {
 
 		final Set<String> names;
 		try (Stream<Path> paths = Files.list(stdlibPath)) {
-			names = paths.filter(Files::isDirectory) //
+			names = paths.filter(Files::isDirectory).parallel() //
 					.map(path -> path.getFileName().toString()) //
 					.map(name -> {
 						new JsBuilder(name);

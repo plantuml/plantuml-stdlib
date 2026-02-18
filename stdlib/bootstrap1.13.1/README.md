@@ -4,10 +4,11 @@ display_name: Bootstrap
 description: Bootstrap Icons from Bootstrap
 author: The Bootstrap Authors
 version: 1.13.1
-release: 
+release:
 license: MIT License
 source: https://github.com/twbs/icons
-origin: 
+origin:
+uid: 3edb51d93c5bb2f4072e65360d201540920e6302
 ---
 
 Information about the `bootstrap1.13.1` Standard Library. The sprites are in one include file. See https://icons.getbootstrap.com/ for all icons names and prefix them with `bi-` to use them.

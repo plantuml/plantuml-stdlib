@@ -8,6 +8,7 @@ release: https://github.com/plantuml-stdlib/C4-PlantUML/tree/release/v2.13.0
 license: MIT
 source: https://github.com/plantuml-stdlib/C4-PlantUML
 origin: https://c4model.com
+uid: 83d51bf734c1017521dd113862f71b8e686db43e
 ---
 **C4 specific stdlib properties:**  
 ![name: C4](https://img.shields.io/badge/name-C4-black)

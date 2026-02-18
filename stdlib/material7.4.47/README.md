@@ -4,10 +4,11 @@ display_name: Material
 description: SVG Material Design Icon
 author: Austin Andrews
 version: 7.4.47
-release: 
+release:
 license: Apache License, Version 2.0
 source: https://github.com/Templarian/MaterialDesign-SVG/
-origin: 
+origin:
+uid: a647542f20829ede9e38e486817f3d5d65dcc9d7
 ---
 
 # Information about the `material7.4.47` Standard Library.
@@ -18,8 +19,8 @@ The sprites are imported from https://pictogrammers.com/library/mdi/ and organiz
 
 The sprites can be included via the (normalized) collection name and the (normalized) icon name. In both cases is the normalization an upper camel case notation without any special characters.
 
-**Example:** the original icon `account-alert` belongs to the category ´Account/User´ therefore the corresponding sprite can be included via `!include <material7.4.47/AccountUser/AccountAlert>` (only this icon/sprite) or `!include <material7.4.47/AccountUser/all>` (with all other icons/sprites of the collection).  
-The icon `account-alert` has the category ´Alert/Error´ too, therefore it could be loaded via `!include <material7.4.47/AccountUser/AlertError>` too.
+**Example:** the original icon `account-alert` belongs to the category `Account/User` therefore the corresponding sprite can be included via `!include <material7.4.47/AccountUser/AccountAlert>` (only this icon/sprite) or `!include <material7.4.47/AccountUser/all>` (with all other icons/sprites of the collection).  
+The icon `account-alert` has the category `Alert/Error` too, therefore it could be loaded via `!include <material7.4.47/AccountUser/AlertError>` too.
 
 The sprites itself has the (normalized) icon name with the prefix `mdi`.
 

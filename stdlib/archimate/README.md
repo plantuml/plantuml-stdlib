@@ -2,12 +2,13 @@
 name: archimate
 display_name: Archimate
 description: PlantUML support for Archimate diagrams
-author: 
+author:
 version: 3.2.2
-release: 
+release:
 license: MIT
 source: https://github.com/plantuml-stdlib/Archimate-PlantUML
-origin: 
+origin:
+uid: 37163f5ce6bd4f89d8a03f641a4e45d541140c2e
 ---
 
 The `archimate` Standard Library provides icons and macros to simplify the creation of diagrams that meet 
