@@ -1,5 +1,7 @@
 package com.plantuml.stdlibencoder.js;
 
+import java.io.BufferedReader;
+import java.io.FileReader;
 import java.io.IOException;
 import java.io.UncheckedIOException;
 import java.nio.charset.StandardCharsets;
@@ -12,39 +14,112 @@ import java.util.List;
 import java.util.stream.Stream;
 
 import com.plantuml.stdlibencoder.Util;
+import com.plantuml.stdlibencoder.spm.SpmBuilder;
 
 /**
  * Builds a single JS file for a stdlib library.
  * <p>
  * The generated file registers all .puml files into
- * {@code window.PLANTUML_STDLIB["libname"]["stdlib/libname/path.puml"]}
- * as arrays of lines, ready for use by the TeaVM-based browser version.
+ * {@code window.PLANTUML_STDLIB["libname"]["stdlib/libname/path.puml"]} as
+ * arrays of lines, ready for use by the TeaVM-based browser version.
  */
 public class JsBuilder {
 
-	private final Path stdlibDir;
+	private final Path stdlib;
 	private final String libName;
 	private final StringBuilder sb = new StringBuilder();
 
-	public JsBuilder(String name) {
+	public JsBuilder(String name) throws IOException {
 		this.libName = name.toLowerCase();
-		this.stdlibDir = Paths.get("stdlib", name);
+		this.stdlib = Paths.get("stdlib", name);
+
+		final String infoStringJson = readInfoJson(stdlib.resolve("README.md"));
 
 		try {
-			build();
+			build(infoStringJson);
 		} catch (IOException e) {
 			throw new UncheckedIOException(e);
 		}
 	}
+	
+	private String readInfoJson(Path file) throws IOException {
 
-	private void build() throws IOException {
+		final StringBuilder result = new StringBuilder();
+		result.append('{');
+		boolean first = true;
+
+		try (BufferedReader br = new BufferedReader(new FileReader(file.toFile()))) {
+			String line = br.readLine().trim();
+			if (line.equals("---") == false)
+				throw new IOException("README.md must have a YAML header");
+
+			while ((line = br.readLine()) != null) {
+				line = line.trim();
+				if (line.equals("---")) {
+					result.append('}');
+					return result.toString();
+				}
+
+				final int colon = line.indexOf(':');
+				if (colon == -1)
+					throw new IOException("Invalid YAML line: " + line);
+
+				final String key = line.substring(0, colon).trim();
+				final String value = line.substring(colon + 1).trim();
+
+				if (first == false)
+					result.append(',');
+				first = false;
+
+				result.append('"').append(escapeJsonString(key)).append('"');
+				result.append(':');
+				result.append('"').append(escapeJsonString(value)).append('"');
+			}
+		}
+		throw new IOException("Bad YAML header in README.md");
+	}
+
+	private static String escapeJsonString(String s) {
+		final StringBuilder out = new StringBuilder();
+		for (int i = 0; i < s.length(); i++) {
+			final char c = s.charAt(i);
+			switch (c) {
+			case '\\':
+				out.append("\\\\");
+				break;
+			case '"':
+				out.append("\\\"");
+				break;
+			case '\n':
+				out.append("\\n");
+				break;
+			case '\r':
+				out.append("\\r");
+				break;
+			case '\t':
+				out.append("\\t");
+				break;
+			default:
+				out.append(c);
+			}
+		}
+		return out.toString();
+	}
+
+
+	private void build(String infoStringJson) throws IOException {
 		sb.append("// stdlib/").append(libName).append(".js\n");
 		sb.append("(function () {\n");
+		
+		sb.append("  window.PLANTUML_STDLIB_INFO = window.PLANTUML_STDLIB_INFO || {};\n");
+		sb.append("  window.PLANTUML_STDLIB_INFO[\"").append(libName).append("\"] = ");
+		sb.append(infoStringJson).append(";\n");
+
 		sb.append("  window.PLANTUML_STDLIB = window.PLANTUML_STDLIB || {};\n");
 		sb.append("  window.PLANTUML_STDLIB[\"").append(libName).append("\"] = ");
 		sb.append("window.PLANTUML_STDLIB[\"").append(libName).append("\"] || {};\n");
-
-		processDir(stdlibDir);
+		
+		processDir(stdlib);
 
 		sb.append("})();\n");
 
@@ -79,7 +154,7 @@ public class JsBuilder {
 
 	private void appendPumlFile(Path pumlFile) throws IOException {
 		// Build the key: "stdlib/libname/relative/path.puml"
-		final Path relative = stdlibDir.relativize(pumlFile);
+		final Path relative = stdlib.relativize(pumlFile);
 		final String key = relative.toString().replace('\\', '/').toLowerCase().replaceAll("\\.puml$", "");
 
 		final List<String> lines = Util.readAllLine(pumlFile);

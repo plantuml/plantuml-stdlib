@@ -12,8 +12,8 @@ import java.util.stream.Stream;
 /**
  * Main entry point to generate JS files for all stdlib libraries.
  * <p>
- * For each directory under {@code stdlib/}, a corresponding {@code .js} file
- * is generated in the {@code output-js/} directory.
+ * For each directory under {@code stdlib/}, a corresponding {@code .js} file is
+ * generated in the {@code output-js/} directory.
  * <p>
  * Usage: run from the plantuml-stdlib root directory.
  */
@@ -30,7 +30,11 @@ public class MainJs {
 			names = paths.filter(Files::isDirectory).parallel() //
 					.map(path -> path.getFileName().toString()) //
 					.map(name -> {
-						new JsBuilder(name);
+						try {
+							new JsBuilder(name);
+						} catch (IOException e) {
+							e.printStackTrace();
+						}
 						return name.toLowerCase();
 					}) //
 					.collect(Collectors.toCollection(TreeSet::new));
