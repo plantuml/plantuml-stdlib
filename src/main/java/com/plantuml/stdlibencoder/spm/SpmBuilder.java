@@ -78,7 +78,7 @@ public class SpmBuilder {
 						else if (name.endsWith(".json"))
 							processSingleJsonFile(p);
 
-					} else if (Files.isDirectory(p) && isUnderscored(p.getFileName().toString()) == false)
+					} else if (Files.isDirectory(p) && isSkippedFolder(p.getFileName().toString()) == false)
 						processDir(p);
 
 				} catch (IOException e) {
@@ -88,7 +88,14 @@ public class SpmBuilder {
 		}
 	}
 
-	private boolean isUnderscored(String s) {
+	private boolean isSkippedFolder(String s) {
+		// Folders named with leading/trailing underscores (e.g. _foo_) are
+		// considered "meta" folders and are not embedded in the .spm files,
+		// with the exception of _examples_ which holds includable examples
+		// (see https://github.com/plantuml/plantuml/issues/2716).
+		if (s.equals("_examples_"))
+			return false;
+
 		return s.startsWith("_") && s.endsWith("_");
 	}
 

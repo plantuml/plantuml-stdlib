@@ -129,7 +129,7 @@ Business_Process(someBusinessProcess,"Some Business Process")
 Business_Service(itSupportService, "IT Support for Business (Application Service)")
 
 Application_DataObject(dataObject, "Web Page Data \n 'on the fly'")
-Application_Function(webpageBehaviour, "Web page behaviour")
+Application_Function(webpageBehaviour, "Web page behavior")
 Application_Component(ActivePartWebPage, "Active Part of the web page \n 'on the fly'")
 
 Technology_Artifact(inMemoryItem,"in memory / 'on the fly' html/javascript")

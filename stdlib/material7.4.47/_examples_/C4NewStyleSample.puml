@@ -2,8 +2,7 @@
 
 ' Activate new C4 style
 !NEW_C4_STYLE = 1
-' (stdlib <C4/C4_Container> does not yet support new C4 style, it has to be included via orig URL)
-!include https://raw.githubusercontent.com/plantuml-stdlib/C4-PlantUML/master/C4_Container.puml
+!include <C4/C4_Container>
 
 ' No common.puml loaded, text alignment remains left
 '   If common.puml should be included (which is typically not required in C4 context) 
