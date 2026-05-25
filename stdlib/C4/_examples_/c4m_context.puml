@@ -1,4 +1,3 @@
-```plantuml
 @startuml
 !include <office/Servers/domain_controller>
 !include <office/Servers/web_server>
@@ -31,4 +30,3 @@ Rel_L(itsm, email, "Sends e-mails using", "SMTPS")
 Rel(engineer, itsm, "Uses", "HTTPS")
 Rel(itsm, ipa, "Uses", "LDAPS")
 @enduml
-```
