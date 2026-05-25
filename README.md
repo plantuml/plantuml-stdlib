@@ -184,13 +184,13 @@ With the `common.puml` imported, you can use the `NAME_OF_SPRITE(parameters...)`
 Example of usage:
 ```plantuml
 @startuml
-    !include <aws/common>
-    !include <aws/Storage/AmazonS3/AmazonS3>
-    !include <aws/Storage/AmazonS3/bucket/bucket>
+!include <aws/common>
+!include <aws/Storage/AmazonS3/AmazonS3>
+!include <aws/Storage/AmazonS3/bucket/bucket>
 
-    AMAZONS3(s3_internal)
-    AMAZONS3(s3_partner,"Vendor's S3")
-    s3_internal <- s3_partner
+AMAZONS3(s3_internal)
+AMAZONS3(s3_partner,"Vendor's S3")
+s3_internal <- s3_partner
 @enduml
 ```
 
@@ -215,25 +215,24 @@ With the `azure/AzureCommon.puml` imported, you can use the `NAME_OF_SPRITE(para
 Example of usage:
 ```plantuml
 @startuml
-    !include <azure/AzureCommon>
-    !include <azure/Analytics/AzureEventHub>
-    !include <azure/Analytics/AzureStreamAnalyticsJob>
-    !include <azure/Databases/AzureCosmosDb>
+!include <azure/AzureCommon>
+!include <azure/Analytics/AzureEventHub>
+!include <azure/Analytics/AzureStreamAnalyticsJob>
+!include <azure/Databases/AzureCosmosDb>
 
-    left to right direction
+left to right direction
 
-    agent "Device Simulator" as devices #fff
+agent "Device Simulator" as devices #fff
+AzureEventHub(fareDataEventHub, "Fare Data", "PK: Medallion HackLicense VendorId; 3 TUs")
+AzureEventHub(tripDataEventHub, "Trip Data", "PK: Medallion HackLicense VendorId; 3 TUs")
+AzureStreamAnalyticsJob(streamAnalytics, "Stream Processing", "6 SUs")
+AzureCosmosDb(outputCosmosDb, "Output Database", "1,000 RUs")
 
-    AzureEventHub(fareDataEventHub, "Fare Data", "PK: Medallion HackLicense VendorId; 3 TUs")
-    AzureEventHub(tripDataEventHub, "Trip Data", "PK: Medallion HackLicense VendorId; 3 TUs")
-    AzureStreamAnalyticsJob(streamAnalytics, "Stream Processing", "6 SUs")
-    AzureCosmosDb(outputCosmosDb, "Output Database", "1,000 RUs")
-
-    devices --> fareDataEventHub
-    devices --> tripDataEventHub
-    fareDataEventHub --> streamAnalytics
-    tripDataEventHub --> streamAnalytics
-    streamAnalytics --> outputCosmosDb
+devices --> fareDataEventHub
+devices --> tripDataEventHub
+fareDataEventHub --> streamAnalytics
+tripDataEventHub --> streamAnalytics
+streamAnalytics --> outputCosmosDb
 @enduml
 ```
 
@@ -331,32 +330,25 @@ all of the necessary functions.
 Example of usage:
 ```plantuml
 @startuml
-
-    !include <classy/core>
-
-    $class(HelloWorld)
-        $classVar(msg, string, "Hello World!")
-
-        $classMethod(getMessage)
-            !function HelloWorld__getMessage($this)
-                !return $getInstanceVar($this, 'msg')
-            !endfunction
-        $endclassMethod(getMessage)
-
-        $classMethod(setMessage)
-            !function HelloWorld__setMessage($this, $args)
-                $setInstanceVar($this, 'msg', $call($args, 'each'))
-                !return $this
-            !endfunction
-        $endclassMethod(setMessage)
-        $endclass(HelloWorld)
-
-        !$hello = $new(HelloWorld)
-        Alice -> Bob : $call($hello, 'getMessage')
-
-        $call($hello, 'setMessage', array($new(array), '2nd message!'), $void=%true())
-        Alice -> Bob : $call($hello, 'getMessage')
-
+!include <classy/core>
+$class(HelloWorld)
+  $classVar(msg, string, "Hello World!")
+  $classMethod(getMessage)
+    !function HelloWorld__getMessage($this)
+      !return $getInstanceVar($this, 'msg')
+    !endfunction
+  $endclassMethod(getMessage)
+  $classMethod(setMessage)
+    !function HelloWorld__setMessage($this, $args)
+      $setInstanceVar($this, 'msg', $call($args, 'each'))
+      !return $this
+    !endfunction
+  $endclassMethod(setMessage)
+$endclass(HelloWorld)
+!$hello = $new(HelloWorld)
+Alice -> Bob : $call($hello, 'getMessage')
+$call($hello, 'setMessage', array($new(array), '2nd message!'), $void=%true())
+Alice -> Bob : $call($hello, 'getMessage')
 @enduml
 ```
 
@@ -372,30 +364,25 @@ classes that wrap the C4 macros.
 Example of usage:
 ```plantuml
 @startuml
+!include <classy-c4/container>
+!include <classy-c4/person>
+!include <classy-c4/system>
 
-    !include <classy-c4/container>
-    !include <classy-c4/person>
-    !include <classy-c4/system>
+!$system = $new(System)
 
-    !$system = $new(System)
-    $call($system, 'setName', 'Label', $void=%true())
-    $call($system, 'setDescription', 'Optional Description', $void=%true())
-
-    !$person = $new(Person)
-    $call($person, 'setName', 'Label', $void=%true())
-    $call($person, 'setDescription', 'Optional Description', $void=%true())
-
-    !$container = $new(Container)
-    $call($container, 'setName', 'Label', $void=%true())
-    $call($container, 'setDescription', 'Optional Description', $void=%true())
-    $call($container, 'setTechnology', 'Technology', $void=%true())
-
-    !$personAlias = $call($person, 'render')
-    !$containerAlias = $call($container, 'render')
-    $call($system, 'render', $void=%true())
-
-    Rel($personAlias, $containerAlias, "Label", "Optional Technology")
-
+$call($system, 'setName', 'Label', $void=%true())
+$call($system, 'setDescription', 'Optional Description', $void=%true())
+!$person = $new(Person)
+$call($person, 'setName', 'Label', $void=%true())
+$call($person, 'setDescription', 'Optional Description', $void=%true())
+!$container = $new(Container)
+$call($container, 'setName', 'Label', $void=%true())
+$call($container, 'setDescription', 'Optional Description', $void=%true())
+$call($container, 'setTechnology', 'Technology', $void=%true())
+!$personAlias = $call($person, 'render')
+!$containerAlias = $call($container, 'render')
+$call($system, 'render', $void=%true())
+Rel($personAlias, $containerAlias, "Label", "Optional Technology")
 @enduml
 ```
 
@@ -414,14 +401,14 @@ Example of usage:
 
 ```plantuml
 @startuml
-    !include <DomainStory/domainStory>
+!include <DomainStory/domainStory>
 
-    Boundary(System) {
-        Person(Alice)
-        Conversation(weather)
-        Person(Bob)
-    }
-    activity(1, Alice, talks about the, weather, with, Bob)
+Boundary(System) {
+  Person(Alice)
+  Conversation(weather)
+  Person(Bob)
+}
+activity(1, Alice, talks about the, weather, with, Bob)
 @enduml
 ```
 
@@ -503,17 +490,15 @@ Generally, all links do have the possibility to give the rendere a hint in which
 ### Concrete example of usage:
 ```plantuml
 @startuml
-    !include <edgy/edgy>
-
-    $identityFacet("This is the Identity facet", identity) {
-        $content(" This is the Content element", content)
-        $purpose("This is the Purpose element", purpose)
-        $story("This is the Story element", story)
-    }
-
-    $link(content, purpose)
-    $link(content, story)
-    $link(purpose, story)
+!include <edgy/edgy>
+$identityFacet("This is the Identity facet", identity) {
+  $content(" This is the Content element", content)
+  $purpose("This is the Purpose element", purpose)
+  $story("This is the Story element", story)
+}
+$link(content, purpose)
+$link(content, story)
+$link(purpose, story)
 @enduml
 ```
 
@@ -523,25 +508,25 @@ EIP-PlantUML provides [Enterprise Integrations Patterns](https://www.enterprisei
 Example of usage:
 ```plantuml
 @startuml
-    !include <eip/EIP-PlantUML>
-    !theme mars
-    skinparam linetype ortho
-    left to right direction
-    folder "RabbitMQ" #line.dashed {
-        Message(msg0, Message)
-        Message(msg1, Message)
-        Message(msg2, Message)
-        MsgChannel(ch0, inQueue)
-        MsgChannel(ch1, outQueue)
-        MsgChannel(ch2, outQueue)
-        MessageRouter(rt0, Router)
-    }
-    Send(msg0, ch0)
-    Send(ch0, rt0)
-    Send(rt0, msg1)
-    Send(rt0, msg2)
-    Send(msg1, ch1)
-    Send(msg2, ch2)
+!include <eip/EIP-PlantUML>
+!theme mars
+skinparam linetype ortho
+left to right direction
+folder "RabbitMQ" #line.dashed {
+    Message(msg0, Message)
+    Message(msg1, Message)
+    Message(msg2, Message)
+    MsgChannel(ch0, inQueue)
+    MsgChannel(ch1, outQueue)
+    MsgChannel(ch2, outQueue)
+    MessageRouter(rt0, Router)
+}
+Send(msg0, ch0)
+Send(ch0, rt0)
+Send(rt0, msg1)
+Send(rt0, msg2)
+Send(msg1, ch1)
+Send(msg2, ch2)
 @enduml
 ```
 This example renders the following image:
@@ -561,18 +546,16 @@ With the `common.puml` imported, you can use the `NAME_OF_SPRITE(parameters...)`
 Example of usage:
 ```plantuml
 @startuml
-    !include <elastic/common>
-    !include <elastic/elasticsearch/elasticsearch>
-    !include <elastic/logstash/logstash>
-    !include <elastic/kibana/kibana>
+!include <elastic/common>
+!include <elastic/elasticsearch/elasticsearch>
+!include <elastic/logstash/logstash>
+!include <elastic/kibana/kibana>
 
-    ELASTICSEARCH(ElasticSearch, "Search and Analyze",database)
-    LOGSTASH(Logstash, "Parse and Transform",node)
-    KIBANA(Kibana, "Visualize",agent)
-
-    Logstash -right-> ElasticSearch: Transformed Data
-    ElasticSearch -right-> Kibana: Data to View
-
+ELASTICSEARCH(ElasticSearch, "Search and Analyze",database)
+LOGSTASH(Logstash, "Parse and Transform",node)
+KIBANA(Kibana, "Visualize",agent)
+Logstash -right-> ElasticSearch: Transformed Data
+ElasticSearch -right-> Kibana: Data to View
 @enduml
 ```
 
@@ -583,19 +566,19 @@ This example renders the following image:
 
 ```plantuml
 @startuml
-    !include <gcp/GCPCommon>
-    !include <gcp/Compute/Cloud_Functions>
-    !include <gcp/Networking/Cloud_Firewall_Rules>
-    !include <gcp/Compute/Compute_Engine>
-    !include <gcp/Storage/Cloud_Storage>
+!include <gcp/GCPCommon>
+!include <gcp/Compute/Cloud_Functions>
+!include <gcp/Networking/Cloud_Firewall_Rules>
+!include <gcp/Compute/Compute_Engine>
+!include <gcp/Storage/Cloud_Storage>
 
-    Cloud_Functions(Cloud_FunctionsStart, "Start Server", "Cloud Functions")
-    Cloud_Functions(Cloud_FunctionsStop, "Stop Server", "Cloud Functions")
-    Cloud_Functions(Cloud_FunctionAdd, "Add a Friend", "Cloud Functions")
-    Compute_Engine(Compute_Engine, "MineCraft Server", "Compute Engine")
-    Cloud_Storage(Cloud_Storage, "MineCraft Backups", "Cloud Storage")
-    Cloud_Firewall_Rules(Cloud_Firewall_Rules_Starter,"Minecraft Backups", "Cloud Firewall Rules")
-    Cloud_Firewall_Rules(Cloud_Firewall_Rules_Friend,"Minecraft Backups", "Cloud Firewall Rules")
+Cloud_Functions(Cloud_FunctionsStart, "Start Server", "Cloud Functions")
+Cloud_Functions(Cloud_FunctionsStop, "Stop Server", "Cloud Functions")
+Cloud_Functions(Cloud_FunctionAdd, "Add a Friend", "Cloud Functions")
+Compute_Engine(Compute_Engine, "MineCraft Server", "Compute Engine")
+Cloud_Storage(Cloud_Storage, "MineCraft Backups", "Cloud Storage")
+Cloud_Firewall_Rules(Cloud_Firewall_Rules_Starter,"Minecraft Backups", "Cloud Firewall Rules")
+Cloud_Firewall_Rules(Cloud_Firewall_Rules_Friend,"Minecraft Backups", "Cloud Firewall Rules")
 @enduml
 ```
 This example renders the following image:
@@ -609,29 +592,31 @@ This repo is heavily influenced by the awesome work from Ricardo Niepel on Azure
 Example of usage:
 ```plantuml
 @startuml
-    !include <k8s/Common>
-    !include <k8s/Simplified>
-    !include <k8s/OSS/all>
-    footer Kubernetes Plant-UML
-    scale max 1024 width
-    skinparam {
-        nodesep 10
-        ranksep 10
+!include <k8s/Common>
+!include <k8s/Simplified>
+!include <k8s/OSS/all>
+
+footer Kubernetes Plant-UML
+scale max 1024 width
+skinparam {
+    nodesep 10
+    ranksep 10
+}
+
+actor "User" as userAlias
+left to right direction
+Cluster_Boundary(cluster, "Kubernetes Cluster") {
+    Namespace_Boundary(ns, "Web") {
+        KubernetesSvc(svc, "service", "")
+        KubernetesPod(pod1, "web-pod1", "")
+        KubernetesPod(pod2, "web-pod2", "")
     }
-    actor "User" as userAlias
-    left to right direction
-    Cluster_Boundary(cluster, "Kubernetes Cluster") {
-        Namespace_Boundary(ns, "Web") {
-            KubernetesSvc(svc, "service", "")
-            KubernetesPod(pod1, "web-pod1", "")
-            KubernetesPod(pod2, "web-pod2", "")
-        }
-    }
-    Rel(userAlias,svc,"get HTTP/1.1 index.html", "1")
-    Rel(svc,pod1,"load Balances to Pods", "2")
-    Rel(svc,pod2,"load Balances to Pods", "2")
-    Rel_U(pod1, svc, "serves content", "3")
-    Rel(svc, userAlias, "return content to", "4")
+}
+Rel(userAlias,svc,"get HTTP/1.1 index.html", "1")
+Rel(svc,pod1,"load Balances to Pods", "2")
+Rel(svc,pod2,"load Balances to Pods", "2")
+Rel_U(pod1, svc, "serves content", "3")
+Rel(svc, userAlias, "return content to", "4")
 @enduml
 ```
 This example renders the following image:
@@ -904,24 +889,24 @@ With the `common.puml` imported, you can use the `NAME_OF_SPRITE(parameters...)`
 Example of usage:
 ```plantuml
 @startuml
-    !include <tupadr3/common>
-    !include <tupadr3/font-awesome/server>
-    !include <tupadr3/font-awesome/database>
+!include <tupadr3/common>
+!include <tupadr3/font-awesome/server>
+!include <tupadr3/font-awesome/database>
 
-    title Styling example
+title Styling example
 
-    FA_SERVER(web1,web1) #Green
-    FA_SERVER(web2,web2) #Yellow
-    FA_SERVER(web3,web3) #Blue
-    FA_SERVER(web4,web4) #YellowGreen
-    FA_DATABASE(db1,LIVE,database,white) #RoyalBlue
-    FA_DATABASE(db2,SPARE,database) #Red
+FA_SERVER(web1,web1) #Green
+FA_SERVER(web2,web2) #Yellow
+FA_SERVER(web3,web3) #Blue
+FA_SERVER(web4,web4) #YellowGreen
+FA_DATABASE(db1,LIVE,database,white) #RoyalBlue
+FA_DATABASE(db2,SPARE,database) #Red
 
-    db1 <--> db2
-    web1 <--> db1
-    web2 <--> db1
-    web3 <--> db1
-    web4 <--> db1
+db1 <--> db2
+web1 <--> db1
+web2 <--> db1
+web3 <--> db1
+web4 <--> db1
 @enduml
 ```
 
