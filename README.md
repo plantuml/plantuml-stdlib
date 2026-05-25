@@ -3,11 +3,16 @@ Contains official Standard Library for PlantUML.
 _See http://plantuml.com/stdlib for more information._
 
 This Standard Library is included in official release of PlantUML.
-Following the C convention for "C standard library" _(see https://en.wikipedia.org/wiki/C_standard_library)_
+Following the C convention for "C standard library" _(see https://en.wikipedia.org/wiki/C_standard_library)_.
 
-# List of current `stdlib` include on PlantUML
+<details>
+<summary>List of current `stdlib` include on PlantUML</summary>
 
 [![](https://img.plantuml.biz/plantuml/svg/SoWkIImgAStDuUKgBad9oKpYvN98pKi12W00)](https://editor.plantuml.com/uml/SoWkIImgAStDuUKgBad9oKpYvN98pKi12W00)
+
+</details>
+
+## Table of contents
 
   - [AdaML [ada]](#adaml-adaml)
     - [What is AdaML](#what-is-adaml)
