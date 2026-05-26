@@ -3,13 +3,18 @@ Contains official Standard Library for PlantUML.
 _See http://plantuml.com/stdlib for more information._
 
 This Standard Library is included in official release of PlantUML.
-Following the C convention for "C standard library" _(see https://en.wikipedia.org/wiki/C_standard_library)_
+Following the C convention for "C standard library" _(see https://en.wikipedia.org/wiki/C_standard_library)_.
 
-# List of current `stdlib` include on PlantUML
+<details>
+<summary>List of current `stdlib` include on PlantUML</summary>
 
 [![](https://img.plantuml.biz/plantuml/svg/SoWkIImgAStDuUKgBad9oKpYvN98pKi12W00)](https://editor.plantuml.com/uml/SoWkIImgAStDuUKgBad9oKpYvN98pKi12W00)
 
-  - [AdaML [ada]](#adaml-ada)
+</details>
+
+## Table of contents
+
+  - [AdaML [ada]](#adaml-adaml)
     - [What is AdaML](#what-is-adaml)
     - [Features](#features)
   - [Amazon Web Services](#amazon-web-services)
@@ -38,7 +43,7 @@ Following the C convention for "C standard library" _(see https://en.wikipedia.o
       - [Macros and predefined values via `!include <material7/common>`](#macros-and-predefined-values-via-include-material7common)
   - [Tupadr3 library [tupadr3]](#tupadr3-library-tupadr3)
 
-## AdaML [ada]
+## AdaML [adaml]
 
 ### What is AdaML
 - UML tailored for Ada 2012 programming language
@@ -53,7 +58,9 @@ Following the C convention for "C standard library" _(see https://en.wikipedia.o
 
 Example of usage:
 ```plantuml
+@startuml
 !include <AdaML/AdaML>
+
 actor User
 agent String_Instrument
 agent Screen
@@ -88,10 +95,12 @@ begin_package_spec("Floyd_Tuner")
   depends("String_Instrument", "Microphone", "captures <")
 
 end()
+@enduml
 ```
 
 This example renders the following image:
-![Example](https://www.plantuml.com/plantuml/png/p5PTRnkx4NtNhnZVuC8E8CkotQPnumILLJiHuCY693Vmap1Q3dTPSya5oPMi5ltl9RMIg5shyOjJN0g8mZc7PpuuG-jlrg5nPIvRXt3yPWiElTmRhagkn_3xBHo7xsE7Gcf331wyATUCf50ftA9AIqp9axgTqyxPJ-NwkbWQaMOEZlhluQnxUj7s_vvruSQWIiWcCD99HWPUMxyasKacB1H6fmPp41Qu8GAhkLkWeKy0Irr2WWeCCM6T4RFI4GW7gDY9Dg4aWY-Zd4TAnSY08vDRq1nSHl1r-01VIP512VVbJ8e4RaL2oXAWznuiDYC6isKZkd3u9aGqNaS4SAEz0tH2gpQGy0G3SpBMx-5yxQyIPzG6RMfoH-X2GjweYw3m7b0jGQAB8ft0_cDSHImu0w5MYMMw8FyVTA7G2o4bp0XAIxoKxQQSFmW_1fDlTmyJw0qVuKTlDEeD9u-V_46NQO_Id2fPaHTI40DVOOFABKCTctBVhqVzR_vyxsfmEvWyXjBU32R3w_4ORkv6q8FxtcWow3_SzaPm_p2wlnjVTm36H2iFJRcVjGHVzPKXO1J6ptR-_rVng4kmlaQIGOPp0aC9YJanG4ZyEB_UrtKvb5gbgxA3sxbadzY0WzAk3PO8BZFd2llNavF5Oj59LTdH9ZsHbPuz-TBvDSc-wMlSEXm_2GK5-kp8aR4jw_UhBVox1O36w4LVIsrW9Z5vsfXywoTFYgo5RkUZDyxqSu6CXRUswxU9H6jxRZqDWqIhiVWNmUaMk_9QgGalGoM-o8IZBQWD8rFtkWD4twUTymrqevMhVFnfrpJqQK7_-mDSLI_wc79nfINRSBuHUiLcDEyOXizFIPUNe6V_fCJ1bo_mZdFsbsxtjGE5qSwV8BR_g3299DRFqA0dcLVYRz9Z1Sxse2DaehG-1amIiZPu_lF_fAqlIkU5LkHLtL8IbBaCmemubjBj2swaSrHrIWme3MCdahyBMqXSWZCbUMk6YYsCS8uKS9Gss7AjT98PdTFMDDIENbmIz-lYOet6dl78-MhLaDWqdOyVrqW8S7tYRBMY_MLkb9OIpGuZTdImZ3DaUY5KMcLM6IVqx7fIf2edvK0ITnwehdutgZX6XSyHqpsfVWYVIAXkX8UXZSPzOOTUgJEgewPAfmx5-TdCSgY8tMPMtSP__AFnjRfCIBJY8csXb7enpSMpPxKomGWeBzmISFC2s5rhJYxJR6swlApguVknwiKNPkl8a7RBWbgM72YVeVL1qvZ2C-MqWOwFw5evuGHPwAz2AZqYj6eTuCowqDhJ94C3s_KPVklzjek6Ek-YlhlEptbtbnC3MNCyM4tJ5AtLYLYvt0YWb16lEw_m7JGwZ-wxuHCvqNbKM24xb99pyLoJcVOs7A6y0CU4wh5upg2ELh74GD2hSrxZn5YsTQYwA8f7WVjTD8h7CeT2HqvDFCfl7iuNqR-he_kZht6QqMyHpxBbp0FxqXX7T7yQIO8OEVlJS6YVcjeLwDPeJJlAN_24p_Y6KzUEyitG8pZPeFlbEV_WruQpLxvARVqxg78IGTj0AoSn-Wj4pkkSw6GZFqSZS2RfvQJE8rhF88xAnSKkPy-ajWxlN4Qc-JmmAaYnsdXvUcd9ow4nkAoDjeSq3rhtHipH4QHIpr32nh5j7KodkMRJgQTsmuPKcSTT-44PTmPLId6x_WCP3KNb91gOmSLK2aKssj0vix95KuAM6gRgoMqOusqqWD1aJTEoQ6gIf9oKirD9SvBHBjHqEyi59H5GseNhAvKZKrbz9O_VTBMgtzltey4_UfDhk7aOzYU3k-7Osz_QK-k0bofPjKMuEpTT_-evcgCigGthxNIrVTy2E10SZdwtpaXIHvKLFliY1CoZXbnfLFrOE4NIKeqH4SK4RuMlJIGlWveBAsP22hSyKfXNSKp5Qi8-m---0tmyAwGDtJQSRkFSS7p7_xUPQ-zjupZY__jJRBQDHLeKRSflGI9gAorWe2aAnEa_TKjSoBD5X3uIF2ggc-IxT-QtUyEzuMgvrPbnZ82wsvttpCxEFYudrlpoYmaQZdN37opZXPIj3KLt98E05hqLrZ6Z2QBkFU5UqLiUn39Uf8H5rYNLdjEoHqfJfJ8m6whF1iQtGdS2gSdynCx1e6srhDbQr49FBMIn5s36efNG4ICB6fcPWVlck65CJme846XsqG9M_QZAZaz2Po8neRslzSmJLshk6iMUZotzFdnuFdxuqFRtCSFKEYrdr-iInAX6wm4fp8J6I2wKzp0R6gFoeJ4w8w99vKHZObdH69KNfL5dHcEYkT4ObHrLbywFnaY6L8sn70dpYSsK_TmEIe_f38mRbvn49Swu8nWzmo60w6yO70yUq7_0I_8I4_M4lBRcXHcP-_T3s63mHkmykdTo8fAacCCLchaqQYxQnoFNhX2aMGc5vhYdoNvCGkoNbbeeP1fDeBL2kYlVS65SQZ5qLwuH5Ph8OxOTjSaL3sD32oQDcI81GGd3JVbYO3HgCQGnMmn1436uAL-CMJcbLNP9gM_3Kp1FJmE32bP6jnIU5zOEp6hj_oxh3JsGX99KTGq1Qc49mGjdK6rMqiOeZ2sp4CymLxTn1NGmrnEnXZa_tn8RZqCK64LmOvYX7VecHYV3j3-K7-RLvpDiD5UFqYRFCOhvkPCjW9wJJg_AwO-8LwdpH70kMYpYzenEo8QorpVWjzVBvQ8iAZo_eShyWs__Mq5JVh70yz-NzNn3k-bu-Gvb0baIVCnOXX7OKOtV-rhMOUL_vlM6cFkHPCsnm-etWVSrsNyYuAXiTw1HbW9wTq3PjoG8e0FVzrKWPcQBghpfySF8KJnbftpaY43SyE9bxu1qy660WA3vjqySfs4iw3vprZ2yLMYfwyJZMAFsTCIBP35N02NmHNwQ-AgzIWOXNR77eGopsxQdw_W0K9MQ1rejVl_whsyk3xfO3CED4fTQ8cl_DO4MMqmZAoaZgmMeT17D1bd5nXzN4-OvcTVi8WzacfYWFzRCQtilAou4UqlKwgmN0L79Cf7eZYwRWmZpqxoyCKqyrA5LFOkeAJlQAv9tmktEBL8u_wYLbr3h9n9HizFSKGcXiq-BrjvuWDPL3zafxgg84DgdINjtEqJigelRp-siYIEpLuzm_rcGb0ugyoVqIYc6UZgkbTJBkYB2U5SrVlRaSSk6bFdPBOL-XNfgCid4CcU9kSNHolOKxABS576KxEGxXCmmooX66FAERa6ivBibPL_bZ2Ji0Ln0l_jT40oKl56I62QPZfcuaxQU4zETjv5lOgvodRjgedbWMaTs-Ob44DLy7WX7s21oxEMBfPdWL58eUlC5b1A1h89hznHKry3cV3WCQOTn4GMWWDgbckidgUNZYy5uOTybFjihC6di6hAfYAM-YAgYcrEilyzGSlZPTO8JGlkckFPHReZOTQg6GgbfhSCKq7q2I0llRuLy0N_m6B2saTmwEMm_KeJFoaJzBQkQGrRXO7BO6jonE70bBffqhyF9PGsytQ_NuIjpqUp0TRbZS-3g74o-G6tk-7uEpVQh5UXqU8L-5rDp_kJvnOqbMVo09XCU1xHRUj8_a0L_coarTkwYrDTphBe6d4xSr94ueNWKtIQKhbyruQDlt1NzGN0tazrNrPk2A9kYQeIgxnrTrwKlmYyUuPB_aJz-FneqxIFVZhlqHw7STFZVQuwkvLpRtmaW6z1V6vnjeqDsDsD7SYaBNN_qh8vQlBW3pFY1NT2pvXWywO_jMwDaq_0YdUkwctZuYY1c2Mu7Dtu8kRckEtB39Ggmk-2B78edUi4KJrODBvO08WZadMHexctSfhdlXnp-sMWZ2DJTPC2nFdW7UoTuvuKfDmtfNxWArNSIvD_DLLaPXpdEMO2wCG8Q-iPAIc0tX69OZn9OCefzSdEPYh8NdQKvpTL53xLoTv2oMazikBsVbmlPRmCVPRrSD7DsuGMyVSTVRbJAOWFVjBblf_1nrPIM8yXMqzRXG8qJ7VJY_SmKwmy_ZSXrpZHuFULNiH5ZWCfGORHdYi3g8fqtEX08n5Dl8gwewtAzYUtOmTnyYSwn-WeHIUQnp8irfMcKbSLzURjlvq_708XwMVhP6t0EIrJRl__MkgyhY8dA7W9bRRR9XDIAQd-nibZC2mg2YqUW58rk3uAhE7ulj5ZKB0fE95sl5TDe02iYwcDq9uZrP-1zC_x_XetePJmt6H0MoeKYTIO9YZd6bdB4LqnoWo13W0JPxUsXv7vsh7Y1tmwmPQnki0y26J_V3huyROTZxHJM5yXqCcP8ISNv9oQ8c6m40pOvcaZk3HGP67T6Vo1jp9cdVrUrXC3jSyihlv-iTx2kYhgtlAbA2WAVPrbkj9YJat7JcB0NmTvEua4UZJbHm2XqCGryl9CCQ4dW-eyPUjF5d9XmTAzMzBZkiERn9FLv0xu1bLH9tgRdtPCc2Ga6E3UdBWwST6Ou78k0WRU57F-Uu0CquIUNgKCH6N3Gq0Ot06DIDLG0yrNCiEdSEj2u9FeSImHJ64c4t8j7RfcBNooh9MhyMt3oSQ4_Hi48Z5-V2cxuXBH7EoCqVbuJ89dZ86WdgkPB0v9TSWvkZlWpoPfltBmkwSFjEN_hZvZ3vuTBzxKxhRr-84ilts-_KsxiF-FgZKR-2EvX8TulbiM6aIkYF43VnQNRdcXWZqyTB42OIL4PDqCuy3_Z6RYd8Qxy0svvu_2dwxB05__ldI3pcWNcfKlWQu3skD-JjJQMC4z3FyG-cTbfEcvkgquhLxnu2BXVGmCIGbiMnPAB3EE9LwKVcfn1r9n81Xld9jvdWUNTAxH4Dx8q2SWUXtGEu5uZ4Vz28e5ECAGfvyV0dCm58W-7UDUOzC7gak9c_SbSpQjDcFRnLUu47yjoudqqCFGxmYyx2G-FcuSdpSFJvk5Py_2yUNZHFBpqFcQgvkIVj4iqAwj_WTC9c6Z_CylWGYM3nF02X-mIUDmcS1eZy3X5u4cRmECOWISf0a_R19x423nD4NZM9l0qHk1PYi3pDe5dCGBFKmHUj0ayZn5uaIBmiatWHOp0owp3xELgCgFwuJS9JMQK7PaAhKDW0hz3N0A_GrW2lqDK0hz3K0A_Gqm2lqD80ZyTaSMKFxF_lgPiNNpW0iWjW2TlAc9mZUdHjzDaM5R-vUtoUderQJLzEv-kbwkhPKL48_TWxLyMoq-poTjhAfWfGE-PS15flotc5LhbigVz1stOK5FGShca-MovM810qFxT_4DLB2QlwEVJVtSwYuyhAg0k6OzL1HSffoqhpjl7eKByZjDCiatDTMQ804a9G8G1ElwFMXfMY6_9rcLv2uYsEZVo_qsZVbVTVrTjo6or4bs9h2JYOvkYcYaa1QICWpR28iCHNW9D6HpitBVNIKJuD26SwmxjjRpUhAutiAk6Yyj11TliNUK-PjJ-qF1H2mYD6ZsQHXHX6_hyzkgRIwLNnBaQQLgiDcmzSywuxc3eJ_Jd-kFYVm00)
+
+[![AdaML example](https://img.plantuml.biz/plantuml/svg/VLFBQiCm4BphArGVYWE5_a082Ic5GdrAsbF0AFBM4PLNGWzA-lMLb9SjExtOxEpCQdPaBwrZnlbEaWU1NFe6w7pLiEhzEJqNX33kbA4V5WnXBQ2Z6sS4jlKRMcTy5v0BpWq0dekjylnG3w1ASAFqGI4GieTMOAqP_mwzschWPV4grR6fjnx153D2ABL-hurg3UlAec82J-XPL1QV0du2r4FM2frHKgO1FNmZMcIoNeN7yNVKP9sMKA-ZBgvwEgK13TZOieYB5q-qw2yKQu4EJCZ6qaMQTnKafu7GCnEg5FE8Unb-6si1xb3or2Ee9JlQ7Jxkq8NOR6Ozjpnqn5NNiS3BH4FIA9o01LK8pWvjPh8iy7GSVedMc_-5wKxlcxkqRpifxxHtUQvNtjY70TRiCDZmSdmV4_of14upREgCPqm8Rfz-h5OlwsoloSiTYZZJBgP7vr4RPEMCBCCh_hf_)](https://editor.plantuml.com/uml/VLFBQiCm4BphArGVYWE5_a082Ic5GdrAsbF0AFBM4PLNGWzA-lMLb9SjExtOxEpCQdPaBwrZnlbEaWU1NFe6w7pLiEhzEJqNX33kbA4V5WnXBQ2Z6sS4jlKRMcTy5v0BpWq0dekjylnG3w1ASAFqGI4GieTMOAqP_mwzschWPV4grR6fjnx153D2ABL-hurg3UlAec82J-XPL1QV0du2r4FM2frHKgO1FNmZMcIoNeN7yNVKP9sMKA-ZBgvwEgK13TZOieYB5q-qw2yKQu4EJCZ6qaMQTnKafu7GCnEg5FE8Unb-6si1xb3or2Ee9JlQ7Jxkq8NOR6Ozjpnqn5NNiS3BH4FIA9o01LK8pWvjPh8iy7GSVedMc_-5wKxlcxkqRpifxxHtUQvNtjY70TRiCDZmSdmV4_of14upREgCPqm8Rfz-h5OlwsoloSiTYZZJBgP7vr4RPEMCBCCh_hf_)
 
 ## ArchiMate
 
@@ -184,13 +193,13 @@ With the `common.puml` imported, you can use the `NAME_OF_SPRITE(parameters...)`
 Example of usage:
 ```plantuml
 @startuml
-    !include <aws/common>
-    !include <aws/Storage/AmazonS3/AmazonS3>
-    !include <aws/Storage/AmazonS3/bucket/bucket>
+!include <aws/common>
+!include <aws/Storage/AmazonS3/AmazonS3>
+!include <aws/Storage/AmazonS3/bucket/bucket>
 
-    AMAZONS3(s3_internal)
-    AMAZONS3(s3_partner,"Vendor's S3")
-    s3_internal <- s3_partner
+AMAZONS3(s3_internal)
+AMAZONS3(s3_partner,"Vendor's S3")
+s3_internal <- s3_partner
 @enduml
 ```
 
@@ -215,25 +224,24 @@ With the `azure/AzureCommon.puml` imported, you can use the `NAME_OF_SPRITE(para
 Example of usage:
 ```plantuml
 @startuml
-    !include <azure/AzureCommon>
-    !include <azure/Analytics/AzureEventHub>
-    !include <azure/Analytics/AzureStreamAnalyticsJob>
-    !include <azure/Databases/AzureCosmosDb>
+!include <azure/AzureCommon>
+!include <azure/Analytics/AzureEventHub>
+!include <azure/Analytics/AzureStreamAnalyticsJob>
+!include <azure/Databases/AzureCosmosDb>
 
-    left to right direction
+left to right direction
 
-    agent "Device Simulator" as devices #fff
+agent "Device Simulator" as devices #fff
+AzureEventHub(fareDataEventHub, "Fare Data", "PK: Medallion HackLicense VendorId; 3 TUs")
+AzureEventHub(tripDataEventHub, "Trip Data", "PK: Medallion HackLicense VendorId; 3 TUs")
+AzureStreamAnalyticsJob(streamAnalytics, "Stream Processing", "6 SUs")
+AzureCosmosDb(outputCosmosDb, "Output Database", "1,000 RUs")
 
-    AzureEventHub(fareDataEventHub, "Fare Data", "PK: Medallion HackLicense VendorId; 3 TUs")
-    AzureEventHub(tripDataEventHub, "Trip Data", "PK: Medallion HackLicense VendorId; 3 TUs")
-    AzureStreamAnalyticsJob(streamAnalytics, "Stream Processing", "6 SUs")
-    AzureCosmosDb(outputCosmosDb, "Output Database", "1,000 RUs")
-
-    devices --> fareDataEventHub
-    devices --> tripDataEventHub
-    fareDataEventHub --> streamAnalytics
-    tripDataEventHub --> streamAnalytics
-    streamAnalytics --> outputCosmosDb
+devices --> fareDataEventHub
+devices --> tripDataEventHub
+fareDataEventHub --> streamAnalytics
+tripDataEventHub --> streamAnalytics
+streamAnalytics --> outputCosmosDb
 @enduml
 ```
 
@@ -331,32 +339,25 @@ all of the necessary functions.
 Example of usage:
 ```plantuml
 @startuml
-
-    !include <classy/core>
-
-    $class(HelloWorld)
-        $classVar(msg, string, "Hello World!")
-
-        $classMethod(getMessage)
-            !function HelloWorld__getMessage($this)
-                !return $getInstanceVar($this, 'msg')
-            !endfunction
-        $endclassMethod(getMessage)
-
-        $classMethod(setMessage)
-            !function HelloWorld__setMessage($this, $args)
-                $setInstanceVar($this, 'msg', $call($args, 'each'))
-                !return $this
-            !endfunction
-        $endclassMethod(setMessage)
-        $endclass(HelloWorld)
-
-        !$hello = $new(HelloWorld)
-        Alice -> Bob : $call($hello, 'getMessage')
-
-        $call($hello, 'setMessage', array($new(array), '2nd message!'), $void=%true())
-        Alice -> Bob : $call($hello, 'getMessage')
-
+!include <classy/core>
+$class(HelloWorld)
+  $classVar(msg, string, "Hello World!")
+  $classMethod(getMessage)
+    !function HelloWorld__getMessage($this)
+      !return $getInstanceVar($this, 'msg')
+    !endfunction
+  $endclassMethod(getMessage)
+  $classMethod(setMessage)
+    !function HelloWorld__setMessage($this, $args)
+      $setInstanceVar($this, 'msg', $call($args, 'each'))
+      !return $this
+    !endfunction
+  $endclassMethod(setMessage)
+$endclass(HelloWorld)
+!$hello = $new(HelloWorld)
+Alice -> Bob : $call($hello, 'getMessage')
+$call($hello, 'setMessage', array($new(array), '2nd message!'), $void=%true())
+Alice -> Bob : $call($hello, 'getMessage')
 @enduml
 ```
 
@@ -372,30 +373,25 @@ classes that wrap the C4 macros.
 Example of usage:
 ```plantuml
 @startuml
+!include <classy-c4/container>
+!include <classy-c4/person>
+!include <classy-c4/system>
 
-    !include <classy-c4/container>
-    !include <classy-c4/person>
-    !include <classy-c4/system>
+!$system = $new(System)
 
-    !$system = $new(System)
-    $call($system, 'setName', 'Label', $void=%true())
-    $call($system, 'setDescription', 'Optional Description', $void=%true())
-
-    !$person = $new(Person)
-    $call($person, 'setName', 'Label', $void=%true())
-    $call($person, 'setDescription', 'Optional Description', $void=%true())
-
-    !$container = $new(Container)
-    $call($container, 'setName', 'Label', $void=%true())
-    $call($container, 'setDescription', 'Optional Description', $void=%true())
-    $call($container, 'setTechnology', 'Technology', $void=%true())
-
-    !$personAlias = $call($person, 'render')
-    !$containerAlias = $call($container, 'render')
-    $call($system, 'render', $void=%true())
-
-    Rel($personAlias, $containerAlias, "Label", "Optional Technology")
-
+$call($system, 'setName', 'Label', $void=%true())
+$call($system, 'setDescription', 'Optional Description', $void=%true())
+!$person = $new(Person)
+$call($person, 'setName', 'Label', $void=%true())
+$call($person, 'setDescription', 'Optional Description', $void=%true())
+!$container = $new(Container)
+$call($container, 'setName', 'Label', $void=%true())
+$call($container, 'setDescription', 'Optional Description', $void=%true())
+$call($container, 'setTechnology', 'Technology', $void=%true())
+!$personAlias = $call($person, 'render')
+!$containerAlias = $call($container, 'render')
+$call($system, 'render', $void=%true())
+Rel($personAlias, $containerAlias, "Label", "Optional Technology")
 @enduml
 ```
 
@@ -414,14 +410,14 @@ Example of usage:
 
 ```plantuml
 @startuml
-    !include <DomainStory/domainStory>
+!include <DomainStory/domainStory>
 
-    Boundary(System) {
-        Person(Alice)
-        Conversation(weather)
-        Person(Bob)
-    }
-    activity(1, Alice, talks about the, weather, with, Bob)
+Boundary(System) {
+  Person(Alice)
+  Conversation(weather)
+  Person(Bob)
+}
+activity(1, Alice, talks about the, weather, with, Bob)
 @enduml
 ```
 
@@ -503,17 +499,15 @@ Generally, all links do have the possibility to give the rendere a hint in which
 ### Concrete example of usage:
 ```plantuml
 @startuml
-    !include <edgy/edgy>
-
-    $identityFacet("This is the Identity facet", identity) {
-        $content(" This is the Content element", content)
-        $purpose("This is the Purpose element", purpose)
-        $story("This is the Story element", story)
-    }
-
-    $link(content, purpose)
-    $link(content, story)
-    $link(purpose, story)
+!include <edgy/edgy>
+$identityFacet("This is the Identity facet", identity) {
+  $content(" This is the Content element", content)
+  $purpose("This is the Purpose element", purpose)
+  $story("This is the Story element", story)
+}
+$link(content, purpose)
+$link(content, story)
+$link(purpose, story)
 @enduml
 ```
 
@@ -523,25 +517,25 @@ EIP-PlantUML provides [Enterprise Integrations Patterns](https://www.enterprisei
 Example of usage:
 ```plantuml
 @startuml
-    !include <eip/EIP-PlantUML>
-    !theme mars
-    skinparam linetype ortho
-    left to right direction
-    folder "RabbitMQ" #line.dashed {
-        Message(msg0, Message)
-        Message(msg1, Message)
-        Message(msg2, Message)
-        MsgChannel(ch0, inQueue)
-        MsgChannel(ch1, outQueue)
-        MsgChannel(ch2, outQueue)
-        MessageRouter(rt0, Router)
-    }
-    Send(msg0, ch0)
-    Send(ch0, rt0)
-    Send(rt0, msg1)
-    Send(rt0, msg2)
-    Send(msg1, ch1)
-    Send(msg2, ch2)
+!include <eip/EIP-PlantUML>
+!theme mars
+skinparam linetype ortho
+left to right direction
+folder "RabbitMQ" #line.dashed {
+    Message(msg0, Message)
+    Message(msg1, Message)
+    Message(msg2, Message)
+    MsgChannel(ch0, inQueue)
+    MsgChannel(ch1, outQueue)
+    MsgChannel(ch2, outQueue)
+    MessageRouter(rt0, Router)
+}
+Send(msg0, ch0)
+Send(ch0, rt0)
+Send(rt0, msg1)
+Send(rt0, msg2)
+Send(msg1, ch1)
+Send(msg2, ch2)
 @enduml
 ```
 This example renders the following image:
@@ -561,18 +555,16 @@ With the `common.puml` imported, you can use the `NAME_OF_SPRITE(parameters...)`
 Example of usage:
 ```plantuml
 @startuml
-    !include <elastic/common>
-    !include <elastic/elasticsearch/elasticsearch>
-    !include <elastic/logstash/logstash>
-    !include <elastic/kibana/kibana>
+!include <elastic/common>
+!include <elastic/elasticsearch/elasticsearch>
+!include <elastic/logstash/logstash>
+!include <elastic/kibana/kibana>
 
-    ELASTICSEARCH(ElasticSearch, "Search and Analyze",database)
-    LOGSTASH(Logstash, "Parse and Transform",node)
-    KIBANA(Kibana, "Visualize",agent)
-
-    Logstash -right-> ElasticSearch: Transformed Data
-    ElasticSearch -right-> Kibana: Data to View
-
+ELASTICSEARCH(ElasticSearch, "Search and Analyze",database)
+LOGSTASH(Logstash, "Parse and Transform",node)
+KIBANA(Kibana, "Visualize",agent)
+Logstash -right-> ElasticSearch: Transformed Data
+ElasticSearch -right-> Kibana: Data to View
 @enduml
 ```
 
@@ -583,19 +575,19 @@ This example renders the following image:
 
 ```plantuml
 @startuml
-    !include <gcp/GCPCommon>
-    !include <gcp/Compute/Cloud_Functions>
-    !include <gcp/Networking/Cloud_Firewall_Rules>
-    !include <gcp/Compute/Compute_Engine>
-    !include <gcp/Storage/Cloud_Storage>
+!include <gcp/GCPCommon>
+!include <gcp/Compute/Cloud_Functions>
+!include <gcp/Networking/Cloud_Firewall_Rules>
+!include <gcp/Compute/Compute_Engine>
+!include <gcp/Storage/Cloud_Storage>
 
-    Cloud_Functions(Cloud_FunctionsStart, "Start Server", "Cloud Functions")
-    Cloud_Functions(Cloud_FunctionsStop, "Stop Server", "Cloud Functions")
-    Cloud_Functions(Cloud_FunctionAdd, "Add a Friend", "Cloud Functions")
-    Compute_Engine(Compute_Engine, "MineCraft Server", "Compute Engine")
-    Cloud_Storage(Cloud_Storage, "MineCraft Backups", "Cloud Storage")
-    Cloud_Firewall_Rules(Cloud_Firewall_Rules_Starter,"Minecraft Backups", "Cloud Firewall Rules")
-    Cloud_Firewall_Rules(Cloud_Firewall_Rules_Friend,"Minecraft Backups", "Cloud Firewall Rules")
+Cloud_Functions(Cloud_FunctionsStart, "Start Server", "Cloud Functions")
+Cloud_Functions(Cloud_FunctionsStop, "Stop Server", "Cloud Functions")
+Cloud_Functions(Cloud_FunctionAdd, "Add a Friend", "Cloud Functions")
+Compute_Engine(Compute_Engine, "MineCraft Server", "Compute Engine")
+Cloud_Storage(Cloud_Storage, "MineCraft Backups", "Cloud Storage")
+Cloud_Firewall_Rules(Cloud_Firewall_Rules_Starter,"Minecraft Backups", "Cloud Firewall Rules")
+Cloud_Firewall_Rules(Cloud_Firewall_Rules_Friend,"Minecraft Backups", "Cloud Firewall Rules")
 @enduml
 ```
 This example renders the following image:
@@ -609,29 +601,31 @@ This repo is heavily influenced by the awesome work from Ricardo Niepel on Azure
 Example of usage:
 ```plantuml
 @startuml
-    !include <k8s/Common>
-    !include <k8s/Simplified>
-    !include <k8s/OSS/all>
-    footer Kubernetes Plant-UML
-    scale max 1024 width
-    skinparam {
-        nodesep 10
-        ranksep 10
+!include <k8s/Common>
+!include <k8s/Simplified>
+!include <k8s/OSS/all>
+
+footer Kubernetes Plant-UML
+scale max 1024 width
+skinparam {
+    nodesep 10
+    ranksep 10
+}
+
+actor "User" as userAlias
+left to right direction
+Cluster_Boundary(cluster, "Kubernetes Cluster") {
+    Namespace_Boundary(ns, "Web") {
+        KubernetesSvc(svc, "service", "")
+        KubernetesPod(pod1, "web-pod1", "")
+        KubernetesPod(pod2, "web-pod2", "")
     }
-    actor "User" as userAlias
-    left to right direction
-    Cluster_Boundary(cluster, "Kubernetes Cluster") {
-        Namespace_Boundary(ns, "Web") {
-            KubernetesSvc(svc, "service", "")
-            KubernetesPod(pod1, "web-pod1", "")
-            KubernetesPod(pod2, "web-pod2", "")
-        }
-    }
-    Rel(userAlias,svc,"get HTTP/1.1 index.html", "1")
-    Rel(svc,pod1,"load Balances to Pods", "2")
-    Rel(svc,pod2,"load Balances to Pods", "2")
-    Rel_U(pod1, svc, "serves content", "3")
-    Rel(svc, userAlias, "return content to", "4")
+}
+Rel(userAlias,svc,"get HTTP/1.1 index.html", "1")
+Rel(svc,pod1,"load Balances to Pods", "2")
+Rel(svc,pod2,"load Balances to Pods", "2")
+Rel_U(pod1, svc, "serves content", "3")
+Rel(svc, userAlias, "return content to", "4")
 @enduml
 ```
 This example renders the following image:
@@ -904,24 +898,24 @@ With the `common.puml` imported, you can use the `NAME_OF_SPRITE(parameters...)`
 Example of usage:
 ```plantuml
 @startuml
-    !include <tupadr3/common>
-    !include <tupadr3/font-awesome/server>
-    !include <tupadr3/font-awesome/database>
+!include <tupadr3/common>
+!include <tupadr3/font-awesome/server>
+!include <tupadr3/font-awesome/database>
 
-    title Styling example
+title Styling example
 
-    FA_SERVER(web1,web1) #Green
-    FA_SERVER(web2,web2) #Yellow
-    FA_SERVER(web3,web3) #Blue
-    FA_SERVER(web4,web4) #YellowGreen
-    FA_DATABASE(db1,LIVE,database,white) #RoyalBlue
-    FA_DATABASE(db2,SPARE,database) #Red
+FA_SERVER(web1,web1) #Green
+FA_SERVER(web2,web2) #Yellow
+FA_SERVER(web3,web3) #Blue
+FA_SERVER(web4,web4) #YellowGreen
+FA_DATABASE(db1,LIVE,database,white) #RoyalBlue
+FA_DATABASE(db2,SPARE,database) #Red
 
-    db1 <--> db2
-    web1 <--> db1
-    web2 <--> db1
-    web3 <--> db1
-    web4 <--> db1
+db1 <--> db2
+web1 <--> db1
+web2 <--> db1
+web3 <--> db1
+web4 <--> db1
 @enduml
 ```
 

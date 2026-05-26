@@ -1,5 +1,6 @@
 @startuml
-!include <adaml/AdaML>
+!include <AdaML/AdaML>
+
 actor User
 agent String_Instrument
 agent Screen
@@ -34,5 +35,4 @@ begin_package_spec("Floyd_Tuner")
   depends("String_Instrument", "Microphone", "captures <")
 
 end()
-
 @enduml

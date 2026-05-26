@@ -3,11 +3,11 @@ name: ibm
 display_name: IBM
 description:
 author: Xavier Rey-Robert
-version:
+version: 1.0.1
 release:
 license:
-source:
-origin: https://github.com/XReyRobert/ibm-icons-for-plantuml
+source: https://github.com/XReyRobert/ibm-icons-for-plantuml
+origin:
 uid: 63005e66a3eb88062caf53f82f9e189972a9899c
 ---
 

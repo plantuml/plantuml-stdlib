@@ -1,13 +1,11 @@
-```plantuml
-@startmindmap
-
+@startwbs
 !include <office/all>
 
-left header MindMap
-skinparam WrapWidth 200
-caption 'ITSM' system's features
-
-*[#Application] <b>ITSM\n[GLPI]\n<$application_web>
+left header [[https://workbreakdownstructure.com Work Breakdown Structure]]
+caption Features
+skinparam defaultFontName Dejavu Serif
+skinparam WrapWidth 150
+*[#Application] <b>ITSM [GLPI]\n<$application_web>
 
 **[#Business] <&circle-check>Helpdesk\n
 ***_ Customer satisfaction survey
@@ -15,16 +13,16 @@ caption 'ITSM' system's features
 ***_ Incident management
 ***_ Request management
 ***_ Problem management
-***_ Tasks for tickets
 ***_ Change management
 ***_ Recurrent tickets
+***_ Tasks for tickets
 ***_ Automatic actions
 ***_ Canned responses
 ***_ Ticket templates
 ***_ Linked projects
+***_ SLA management
 ***_ Linked tickets
 ***_ Knowledge Base
-***_ SLA management
 ***_ Linked budget
 ***_ Linked assets
 ***_ Notifications
@@ -34,22 +32,6 @@ caption 'ITSM' system's features
 ***_ Reports
 ***_ Forms
 
-**[#Business] <&circle-check>Financial\nManagement
-***_ Suppliers management
-***_ Contract management
-***_ Contact management
-***_ License management
-***_ Budget management
-***_ Linked tickets
-
-**[#Business] <&circle-check>User\nmanagement
-***_ Access & restrictions (rules)
-***_ Oauth SSO application
-***_ Self-service mode
-***_ Entities
-***_ LDAP
-
-left side
 **[#Business] <&circle-check>CMDB\n
 ***_ Administrative and financial information
 ***_ Inventory (agentless)
@@ -69,8 +51,8 @@ left side
 ***_ Linked changes
 ***_ Antiviruses
 ***_ Dashboard
-***_ Reports
 ***_ Domains
+***_ Reports
 
 **[#Business] <&circle-check>Project\nManagement
 ***_ Linked documents
@@ -82,6 +64,21 @@ left side
 ***_ Kanban
 ***_ GANTT
 
+**[#Business] <&circle-check>Financial\nManagement
+***_ Suppliers management
+***_ Contract management
+***_ Contact management
+***_ License management
+***_ Budget management
+***_ Linked tickets
+
+**[#Business] <&circle-check>User\nmanagement
+***_ Access & restrictions (rules)
+***_ Oauth SSO application
+***_ Self-service mode
+***_ Entities
+***_ LDAP
+
 **[#Business] <&circle-check>Customize\n
 ***_ Select color palette
 ***_ Select page layout
@@ -89,5 +86,4 @@ left side
 ***_ Add your logo
 ***_ API rest
 
-@endmindmap
-```
+@endwbs

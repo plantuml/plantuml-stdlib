@@ -3,11 +3,11 @@ name: adaml
 display_name: AdaML
 description:
 author: Francesc Rocher
-version:
+version: 0.1.2
 release:
-license:
-source:
-origin: https://github.com/rocher/AdaML
+license: GPL
+source: https://github.com/rocher/AdaML
+origin:
 uid: 8ddd75a4983ab531963a6edb796b37302a56361d
 ---
 # Quick Introduction
@@ -18,14 +18,15 @@ PlatUML, UML and Ada *packages*. This diagram has been generated, in turn, with
 AdaML. See below the AdaML source code.
 
 <p align="center">
-  <img src="http://www.plantuml.com/plantuml/proxy?cache=no&src=https://raw.github.com/rocher/AdaML/release/0.1.2/diagram/self-AdaML-01.aml">
+[![](https://img.plantuml.biz/plantuml/svg/RP1D3i8W48Nt9Dm1kxA9nWiOK_UQk67Nn8nbh4GwD43Jwql_8ZLk6FZUyEP1uGEuq3M6iuscodGAnV6iu7evZEk9CyvQgDvGupORKPOdv6Q0Wlo1iMrrddNER4z-STc9rMM5BP9ArS4bbW3QM8VgVvESYdBG-sa6sR0a5ICMSRzVN4gI0zTGEsYyU8179IoLb6RXpE0pt9skNo5vuZmkNylocpOgHSmNV_C3)](https://editor.plantuml.com/uml/RP1D3i8W48Nt9Dm1kxA9nWiOK_UQk67Nn8nbh4GwD43Jwql_8ZLk6FZUyEP1uGEuq3M6iuscodGAnV6iu7evZEk9CyvQgDvGupORKPOdv6Q0Wlo1iMrrddNER4z-STc9rMM5BP9ArS4bbW3QM8VgVvESYdBG-sa6sR0a5ICMSRzVN4gI0zTGEsYyU8179IoLb6RXpE0pt9skNo5vuZmkNylocpOgHSmNV_C3)
 </p>
 
 <details>
 <summary><b>AdaML Source Code</b> &nbsp; &mdash; <i>click to expand</i> &mdash;</summary>
-<pre>
-!include https://raw.github.com/rocher/AdaML/release/0.1.2/AdaML.puml
-scale 600 width
+
+```plantuml
+@startuml
+!include <AdaML/AdaML>
 
 package("AdaML")
 package("PlantUML")
@@ -40,7 +41,8 @@ note("AdaML draws Ada-tailored\nUML diagrams based on\nPlantUML")
 
 left_right("PlantUML", "UML")
 left_right("UML", "Ada")
-</pre>
+@enduml
+```
 </details>
 
 ### Doc
@@ -86,9 +88,9 @@ AdaML must be used locally to get quality graphics. You can generate diagrams in
   [PlantText](https://www.planttext.com/) editor
 - Remove default lines and paste the following code:
 
-```
-!include https://raw.github.com/rocher/AdaML/release/0.1.2/AdaML.puml
-scale 300 width
+```plantuml
+@startuml
+!include <AdaML/AdaML>
 
 begin_type("Pan_Dimensional")
   procedure("Ask_The_Question", "in out Natural")
@@ -101,13 +103,14 @@ private()
 end()
 
 depends("Pan_Dimensional", "Deep_Thought", "ask >")
+@enduml
 ```
 
 ### Embed Diagrams in GitHub
 This is an example of the AdaML documentation:
 
 <p align="center">
-  <img src="http://www.plantuml.com/plantuml/proxy?cache=no&src=https://raw.github.com/rocher/AdaML/release/0.1.2/diagram/deep-thought-02.aml">
+[![](https://img.plantuml.biz/plantuml/svg/PP3D2e90483lWk-mUL8GWkWOOU2neg2xJEwaYpek-sFqzerwoF0mommxtpUpcra7nlck3OEDehBr4iNX9E5otaxdCGp2u8cLei9zDCRH3QZ8LOTaLK_GHaaO2A5DNwBqXkzFjYaUDHPtZzPnIvIAI97elHDNSDxC29ACavzQGzb0nNIEg1dlVLMxMVtoL8uUDfDzerd9nrYOjL43E8mdU02ZuDcoUAHcmR8_5VlTSXk9cdExVYKpVwjn3ROHnt5YnWX_u1S0)](https://editor.plantuml.com/uml/PP3D2e90483lWk-mUL8GWkWOOU2neg2xJEwaYpek-sFqzerwoF0mommxtpUpcra7nlck3OEDehBr4iNX9E5otaxdCGp2u8cLei9zDCRH3QZ8LOTaLK_GHaaO2A5DNwBqXkzFjYaUDHPtZzPnIvIAI97elHDNSDxC29ACavzQGzb0nNIEg1dlVLMxMVtoL8uUDfDzerd9nrYOjL43E8mdU02ZuDcoUAHcmR8_5VlTSXk9cdExVYKpVwjn3ROHnt5YnWX_u1S0)
 </p>
 
 - Check the [raw version](https://raw.github.com/rocher/AdaML/develop/README.md)
