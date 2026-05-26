@@ -18,7 +18,9 @@ PlatUML, UML and Ada *packages*. This diagram has been generated, in turn, with
 AdaML. See below the AdaML source code.
 
 <p align="center">
+
 [![](https://img.plantuml.biz/plantuml/svg/RP1D3i8W48Nt9Dm1kxA9nWiOK_UQk67Nn8nbh4GwD43Jwql_8ZLk6FZUyEP1uGEuq3M6iuscodGAnV6iu7evZEk9CyvQgDvGupORKPOdv6Q0Wlo1iMrrddNER4z-STc9rMM5BP9ArS4bbW3QM8VgVvESYdBG-sa6sR0a5ICMSRzVN4gI0zTGEsYyU8179IoLb6RXpE0pt9skNo5vuZmkNylocpOgHSmNV_C3)](https://editor.plantuml.com/uml/RP1D3i8W48Nt9Dm1kxA9nWiOK_UQk67Nn8nbh4GwD43Jwql_8ZLk6FZUyEP1uGEuq3M6iuscodGAnV6iu7evZEk9CyvQgDvGupORKPOdv6Q0Wlo1iMrrddNER4z-STc9rMM5BP9ArS4bbW3QM8VgVvESYdBG-sa6sR0a5ICMSRzVN4gI0zTGEsYyU8179IoLb6RXpE0pt9skNo5vuZmkNylocpOgHSmNV_C3)
+
 </p>
 
 <details>
@@ -110,7 +112,9 @@ depends("Pan_Dimensional", "Deep_Thought", "ask >")
 This is an example of the AdaML documentation:
 
 <p align="center">
+
 [![](https://img.plantuml.biz/plantuml/svg/PP3D2e90483lWk-mUL8GWkWOOU2neg2xJEwaYpek-sFqzerwoF0mommxtpUpcra7nlck3OEDehBr4iNX9E5otaxdCGp2u8cLei9zDCRH3QZ8LOTaLK_GHaaO2A5DNwBqXkzFjYaUDHPtZzPnIvIAI97elHDNSDxC29ACavzQGzb0nNIEg1dlVLMxMVtoL8uUDfDzerd9nrYOjL43E8mdU02ZuDcoUAHcmR8_5VlTSXk9cdExVYKpVwjn3ROHnt5YnWX_u1S0)](https://editor.plantuml.com/uml/PP3D2e90483lWk-mUL8GWkWOOU2neg2xJEwaYpek-sFqzerwoF0mommxtpUpcra7nlck3OEDehBr4iNX9E5otaxdCGp2u8cLei9zDCRH3QZ8LOTaLK_GHaaO2A5DNwBqXkzFjYaUDHPtZzPnIvIAI97elHDNSDxC29ACavzQGzb0nNIEg1dlVLMxMVtoL8uUDfDzerd9nrYOjL43E8mdU02ZuDcoUAHcmR8_5VlTSXk9cdExVYKpVwjn3ROHnt5YnWX_u1S0)
+
 </p>
 
 - Check the [raw version](https://raw.github.com/rocher/AdaML/develop/README.md)
