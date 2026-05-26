@@ -14,7 +14,7 @@ Following the C convention for "C standard library" _(see https://en.wikipedia.o
 
 ## Table of contents
 
-  - [AdaML [ada]](#adaml-adaml)
+  - [AdaML [adaml]](#adaml-adaml)
     - [What is AdaML](#what-is-adaml)
     - [Features](#features)
   - [Amazon Web Services](#amazon-web-services)
@@ -31,7 +31,7 @@ Following the C convention for "C standard library" _(see https://en.wikipedia.o
     - [Facets](#facets)
     - [Elements](#elements)
     - [Links](#links)
-    - [Concrete example of usage:](#concrete-example-of-usage)
+    - [Concrete example of usage](#concrete-example-of-usage)
   - [EIP-PlantUML [eip]](#eip-plantuml-eip)
   - [Elastic library [elastic]](#elastic-library-elastic)
   - [Google Cloud Platform [gcp]](#google-cloud-platform-gcp)
@@ -105,7 +105,7 @@ This example renders the following image:
 ## ArchiMate
 
 ### What is ArchiMate
-[ArchiMate](http://pubs.opengroup.org/architecture/archimate3-doc/) is an enterprise architecture modeling language that supports the description, analysis, and visualization of architecture across business domains.
+[ArchiMate](https://www.opengroup.org/archimate-forum/archimate-overview) is an enterprise architecture modeling language that supports the description, analysis, and visualization of architecture across business domains.
 
 ArchiMate offers a common language for describing the construction and operation of business processes, organizational structures, information flows, IT systems, and technical infrastructure. This is just like an architectural drawing in classical building where the architecture describes the various aspects of the construction and use of a building. This insight helps the different stakeholders to design, assess, and communicate the consequences of decisions and changes within and between these business domains.
 
@@ -447,22 +447,22 @@ $elementorfacet("label", alias, lighterColor)
 * ```alias``` is used for linking elements and facets. It is optional.
 * ```lighterColor``` is used as a boolean value (!) to use a lighter color for the element or facet. It is optional.
   * Facets are drawn with lighter colors than Elements as default.
-  * ```0``` is false. Any other value is true.  Or use ```%true()``` and ```%false()``` (see [Boolean expression in Preprocessing](https://plantuml.com/de/preprocessing#55eb000153a81c72)).
+  * ```0``` is false. Any other value is true.  Or use ```%true()``` and ```%false()``` _(see [Boolean expression in Preprocessing](https://plantuml.com/preprocessing#55eb000153a81c72))_.
 
 ### Facets
-Facets do have the edgy facet name followed with ```Facet``` as tail, to distinguish them from elements.
-The following facets are implemented: ```$baseFacet```,```$identityFacet```,```$brandFacet```,```$experienceFacet```,```$productFacet```,```$architectureFacet```,```$organisationFacet```
+Facets do have the edgy facet name followed with ```Facet``` as tail, to distinguish them from elements.<br/>
+The following facets are implemented: ```$baseFacet```, ```$identityFacet```, ```$brandFacet```, ```$experienceFacet```, ```$productFacet```, ```$architectureFacet```, ```$organisationFacet```
 
 ### Elements
-Elements do have the edgy element name.
+Elements do have the edgy element name.<br/>
 The following elements are implemented:
-Base: ```$people```,```$outcome```,```$activity```,```$object```
-Identity: ```$purpose```,```$story```,```$content```
-Brand: ```$brand```
-Experience: ```$task```,```$channel```,```$journey```
-Product: ```$product```
-Architecture: ```$capability```,```$asset```,```$process```
-Organisation: ```$organisation```
+- Base: ```$people```, ```$outcome```, ```$activity```, ```$object```
+- Identity: ```$purpose```, ```$story```, ```$content```
+- Brand: ```$brand```
+- Experience: ```$task```, ```$channel```, ```$journey```
+- Product: ```$product```
+- Architecture: ```$capability```, ```$asset```, ```$process```
+- Organisation: ```$organisation```
 
 Elements can be nested into facets:
 ```plantuml
@@ -481,13 +481,13 @@ $capability("Customer Interaction") {
 ```
 
 ### Links
-Links do have the form of
+Links do have the form of:
 ```plantuml
 $link(fromAlias, toAlias, "label")
 ```
 * ```fromAlias``` is the starting element or facet. It is mandatory.
 * ```toAlias``` is the target element or facet. It is mandatory.
-* ```"label""``` is a label written on the connection. This is optional.
+* ```"label"``` is a label written on the connection. This is optional.
 
 There are only three sort of links:
 * ```$link``` is a unidirectional link between elements or facets.
@@ -496,7 +496,7 @@ There are only three sort of links:
 
 Generally, all links do have the possibility to give the rendere a hint in which direction the link should be drawn. This is done by adding ```Up```, ```Down```, ```Left```, ```Right``` as a tail to the link name (e.g. ```$linkUp```, ```$linkDown```, ```$linkLeft```, ```$linkRight```).
 
-### Concrete example of usage:
+### Concrete example of usage
 ```plantuml
 @startuml
 !include <edgy/edgy>
@@ -510,6 +510,8 @@ $link(content, story)
 $link(purpose, story)
 @enduml
 ```
+
+[![](https://img.plantuml.biz/plantuml/svg/NP3H2e8m58Rl1T_XDBnG27g12248l0lg1MGxvMXESSSBYTwzeviqWx71_t_V3blfg1veR4sQxBILPbG8HrJFwJ1lfpJ9j49BcgPBBP5oSM-q0rxK85IXWiVSYJsiR07lD078P6U9arn0h9rz2cYmvPEzm1MBr8z3tpdSZhhwC782vXr7tJ1jZTiSHVo2CFtXDnbjNtaO6j_qLwoAZmFsYqkqYd_k2m00)](https://editor.plantuml.com/uml/NP3H2e8m58Rl1T_XDBnG27g12248l0lg1MGxvMXESSSBYTwzeviqWx71_t_V3blfg1veR4sQxBILPbG8HrJFwJ1lfpJ9j49BcgPBBP5oSM-q0rxK85IXWiVSYJsiR07lD078P6U9arn0h9rz2cYmvPEzm1MBr8z3tpdSZhhwC782vXr7tJ1jZTiSHVo2CFtXDnbjNtaO6j_qLwoAZmFsYqkqYd_k2m00)
 
 ## EIP-PlantUML [eip]
 
@@ -596,8 +598,9 @@ This example renders the following image:
 
 ## K8S [k8s]
 
-These are the PlantUML sprites, macros and stereotypes for creating PlantUML diagrams with the Kubernetes components. The official Kubernetes Icons Set (where this work is based) can be found here
-This repo is heavily influenced by the awesome work from Ricardo Niepel on Azure-PlantUML
+These are the PlantUML sprites, macros and stereotypes for creating PlantUML diagrams with the Kubernetes components. The official Kubernetes Icons Set (where this work is based) can be found [here](https://github.com/kubernetes/community/tree/master/icons).
+This stdlib is heavily influenced by the awesome work from Ricardo Niepel on [Azure-PlantUML](https://github.com/plantuml-stdlib/Azure-PlantUML).
+
 Example of usage:
 ```plantuml
 @startuml
@@ -747,15 +750,13 @@ This example renders the following image:
 **How to get all available sprite categories**
 
 ```plantuml
-@startuml
+@startjson
 !$material = %load_json('<material7/all.json>')
-!foreach $item in $material
-  Alice -> Bob : $item
-!endfor
-@enduml
+$material
+@endjson
 ```
 
-[![all sprite categories - open link](https://www.plantuml.com/plantuml/svg/SoWkIImgAStDuL9KoKqiIItAJCnHi5LGpSbFJ8dFAixFqr2tWOcRwvdecPZh9-Raw85axDGrkHJJyejI4vCp55GoIr9p5JBp5E2cS2aeEEPa9gSgwDefEEKdALX1r70ffkQb07LnEG1feBq0)](https://www.plantuml.com/plantuml/uml/SoWkIImgAStDuL9KoKqiIItAJCnHi5LGpSbFJ8dFAixFqr2tWOcRwvdecPZh9-Raw85axDGrkHJJyejI4vCp55GoIr9p5JBp5E2cS2aeEEPa9gSgwDefEEKdALX1r70ffkQb07LnEG1feBq0)
+[![all sprite categories - open link](https://img.plantuml.biz/plantuml/svg/SoWkIImgoIhEp-FbKbJ9JIn9BSfCp56mLL3DoKzCYGT9QAZRmCJDzHDpSlH0WdRgchnSSFMyN0wfUIaWSG00)](https://editor.plantuml.com/uml/SoWkIImgoIhEp-FbKbJ9JIn9BSfCp56mLL3DoKzCYGT9QAZRmCJDzHDpSlH0WdRgchnSSFMyN0wfUIaWSG00)
 
 **How to get all available sprite of a specific category**
 
@@ -803,7 +804,7 @@ The default values can be overwritten before the common.puml is included:
 | `$MDI_DEFAULT_COLOR` | Default icon color | `""` | `""` (no color), `"red"`, `"#FF0000"`, etc. |
 | `$MDI_DEFAULT_STEREOTYPE` | Default stereotype | `""` | `""` (none), `"*"` (sprite name), custom text |
 
-**Example of usage with Mdi...Img sprite calls:**
+**Example of usage with `Mdi...Img` sprite calls:**
 
 ```plantuml
 @startuml
@@ -822,7 +823,7 @@ label "$MdiAccountAlertImg($scale=2.0)" as largeSprite
 
 [![Sprite-Image macro - open link](https://www.plantuml.com/plantuml/svg/ZSt1IiGm4CRnUvuYk_IW85LaOIzssM8L2Yq5jUSoJSOIc2GoITxVGh7qelRs7Vu_lck8m35P4WVZ52MDyib2H3P0v_oKdyxtoblhtUNte5JA9nVxWFopIqAE5o4EMLlLG_NoMlRDn_3SDTsRBEJ4Y4u8WX597hDMcoshxNHpUvGGfCPFI1JVlzX4_2jdr8kOnwxwJZxc3ojfW2VytsNAa-TYf8GBdTSU5XGG5kiXRTwkw7Ioz0q0)](https://www.plantuml.com/plantuml/uml/ZSt1IiGm4CRnUvuYk_IW85LaOIzssM8L2Yq5jUSoJSOIc2GoITxVGh7qelRs7Vu_lck8m35P4WVZ52MDyib2H3P0v_oKdyxtoblhtUNte5JA9nVxWFopIqAE5o4EMLlLG_NoMlRDn_3SDTsRBEJ4Y4u8WX597hDMcoshxNHpUvGGfCPFI1JVlzX4_2jdr8kOnwxwJZxc3ojfW2VytsNAa-TYf8GBdTSU5XGG5kiXRTwkw7Ioz0q0)
 
-**Example of usage with Mdi... calls and different arguments:**
+**Example of usage with `Mdi...` calls and different arguments:**
 
 ```plantuml
 @startuml
@@ -887,7 +888,7 @@ Rel(A, B, "Calls")
 
 ## Tupadr3 library [tupadr3]
 
-This library contains several libraries of icons (including Devicons and Font Awesome )
+This library contains several libraries of icons (including Devicons and Font Awesome).
 
 Use it by including the file that contains the sprite, eg: `!include <tupadr3/font-awesome/align_center>`.
 When imported, you can use the sprite as normally you would, using `<$sprite_name>`.
