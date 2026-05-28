@@ -88,7 +88,7 @@ public class SpmBuilder {
 		}
 	}
 
-	private boolean isSkippedFolder(String s) {
+	public static boolean isSkippedFolder(String s) {
 		// Folders named with leading/trailing underscores (e.g. _foo_) are
 		// considered "meta" folders and are not embedded in the .spm files,
 		// with the exception of _examples_ which holds includable examples

@@ -8,7 +8,6 @@ import java.nio.charset.StandardCharsets;
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.Paths;
-import java.util.ArrayList;
 import java.util.Comparator;
 import java.util.List;
 import java.util.stream.Stream;
@@ -143,7 +142,8 @@ public class JsBuilder {
 							appendPumlFile(p);
 						else if (fileName.endsWith(".json"))
 							appendJsonFile(p);
-					} else if (Files.isDirectory(p) && !isUnderscored(p.getFileName().toString())) {
+					} else if (Files.isDirectory(p)
+							&& SpmBuilder.isSkippedFolder(p.getFileName().toString()) == false) {
 						processDir(p);
 					}
 				} catch (IOException e) {
@@ -151,10 +151,6 @@ public class JsBuilder {
 				}
 			});
 		}
-	}
-
-	private boolean isUnderscored(String s) {
-		return s.startsWith("_") && s.endsWith("_");
 	}
 
 	private void appendJsonFile(Path jsonFile) throws IOException {
