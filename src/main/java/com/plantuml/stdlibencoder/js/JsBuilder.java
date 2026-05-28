@@ -41,7 +41,7 @@ public class JsBuilder {
 			throw new UncheckedIOException(e);
 		}
 	}
-	
+
 	private String readInfoJson(Path file) throws IOException {
 
 		final StringBuilder result = new StringBuilder();
@@ -106,19 +106,22 @@ public class JsBuilder {
 		return out.toString();
 	}
 
-
 	private void build(String infoStringJson) throws IOException {
 		sb.append("// stdlib/").append(libName).append(".js\n");
 		sb.append("(function () {\n");
-		
+
+		sb.append("  window.PLANTUML_STDLIB_JSON = window.PLANTUML_STDLIB_JSON || {};\n");
+		sb.append("  window.PLANTUML_STDLIB_JSON[\"").append(libName).append("\"] = window.PLANTUML_STDLIB_JSON[\"")
+				.append(libName).append("\"] || {};\n");
+
 		sb.append("  window.PLANTUML_STDLIB_INFO = window.PLANTUML_STDLIB_INFO || {};\n");
-		sb.append("  window.PLANTUML_STDLIB_INFO[\"").append(libName).append("\"] = ");
-		sb.append(infoStringJson).append(";\n");
+		sb.append("  window.PLANTUML_STDLIB_INFO[\"").append(libName).append("\"] = ").append(infoStringJson)
+				.append(";\n");
 
 		sb.append("  window.PLANTUML_STDLIB = window.PLANTUML_STDLIB || {};\n");
-		sb.append("  window.PLANTUML_STDLIB[\"").append(libName).append("\"] = ");
-		sb.append("window.PLANTUML_STDLIB[\"").append(libName).append("\"] || {};\n");
-		
+		sb.append("  window.PLANTUML_STDLIB[\"").append(libName).append("\"] = window.PLANTUML_STDLIB[\"")
+				.append(libName).append("\"] || {};\n");
+
 		processDir(stdlib);
 
 		sb.append("})();\n");
@@ -138,6 +141,8 @@ public class JsBuilder {
 						final String fileName = p.getFileName().toString();
 						if (fileName.endsWith(".puml"))
 							appendPumlFile(p);
+						else if (fileName.endsWith(".json"))
+							appendJsonFile(p);
 					} else if (Files.isDirectory(p) && !isUnderscored(p.getFileName().toString())) {
 						processDir(p);
 					}
@@ -150,6 +155,19 @@ public class JsBuilder {
 
 	private boolean isUnderscored(String s) {
 		return s.startsWith("_") && s.endsWith("_");
+	}
+
+	private void appendJsonFile(Path jsonFile) throws IOException {
+		final Path relative = stdlib.relativize(jsonFile);
+		final String key = relative.toString().replace('\\', '/').toLowerCase().replaceAll("\\.json$", "");
+		final List<String> lines = Util.readAllLine(jsonFile);
+
+		sb.append("\n  window.PLANTUML_STDLIB_JSON[\"").append(libName).append("\"][\"");
+		sb.append(key).append("\"] = \n");
+		for (String s : lines)
+			sb.append(s + "\n");
+		sb.append(";\n");
+
 	}
 
 	private void appendPumlFile(Path pumlFile) throws IOException {
