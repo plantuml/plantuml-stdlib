@@ -42,7 +42,7 @@
 ' ##################################
 !function C4Version()
   ' 2 spaces and ' are used as unique marker, that the release scripts makes the correct version update
-  !$c4Version  =  "2.13.0"
+  !$c4Version  =  "2.14.0"
   !return $c4Version
 !end function
 
@@ -1234,6 +1234,7 @@ $elementSkin
 !function $getElementLine($umlShape, $elementType, $alias, $label, $techn, $descr, $sprite, $tags, $link)
   !$sprite=$toElementArg($sprite, $tags, "ElementTagSprite", $elementType)
   !$techn=$toElementArg($techn, $tags, "ElementTagTechn", $elementType)
+  !$techn=$updateTechWithElementType($techn, $elementType)
   !$baseProp = $getElementBase($label, $techn, $descr, $sprite) + $getProps()
   !$stereo = $toStereos($elementType,$tags)
   !$calcLink = $getLink($link)
@@ -1595,6 +1596,29 @@ SHOW_LEGEND($hideStereotype)
 !unquoted procedure SHOW_FLOATING_LEGEND($alias=LEGEND(), $hideStereotype="true", $details=Small())
 $getLegendArea($alias, $hideStereotype, $details)
 !endprocedure
+
+'SHOW_ELEMENT_TYPE() shows the element type as part of technology text (and typically hides stereotype too).
+!global $showElementTypeViaTech = %false()
+!global $showPersonTypeViaTech = %false()
+!unquoted procedure SHOW_ELEMENT_TYPE($hideStereotype="true", $hidePersonType="true")
+  !global $showElementTypeViaTech = %true()
+  $getHideStereotype($hideStereotype)
+  !if ($hidePersonType == "false" || $hidePersonType == %false())
+    !global $showPersonTypeViaTech = %true()
+  !endif
+!endprocedure
+
+!unquoted function $updateTechWithElementType($techn, $elementType)
+  !if $showElementTypeViaTech
+    !$legendText=$restoreEmpty($elementType, "legendText", "", %false())
+    !if $techn>""
+      !$techn=$legendText + ": " + $techn
+    !else
+      !$techn=$legendText
+    !endif
+  !endif
+  !return $techn
+!endfunction
 
 ' Boundaries
 ' ##################################

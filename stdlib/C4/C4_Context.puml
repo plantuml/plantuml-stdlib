@@ -367,6 +367,9 @@ UpdateElementStyle("external_person")
 !$sprite=$toElementArg($sprite, $tags, "ElementTagSprite", "person")
 ' $type reuses $techn definition of $tags
 !$type=$toElementArg($type, $tags, "ElementTagTechn", "person")
+!if ($showPersonTypeViaTech == %true())
+  !$type=$updateTechWithElementType($type, "person")
+!endif
 !if ($portraitPerson == "portrait") && ($sprite == "")
 actor "$getPerson($label, $type, $descr, $sprite)$getProps()" $toStereos("person", $tags) as $alias $getLink($link)
 !elseif ($portraitPerson == "outline") && ($sprite == "")
@@ -380,6 +383,9 @@ rectangle "$getPerson($label, $type, $descr, $sprite)$getProps()" $toStereos("pe
 !$sprite=$toElementArg($sprite, $tags, "ElementTagSprite", "external_person")
 ' $type reuses $techn definition of $tags
 !$type=$toElementArg($type, $tags, "ElementTagTechn", "external_person")
+!if ($showPersonTypeViaTech == %true())
+    !$type=$updateTechWithElementType($type, "external_person")
+!endif
 !if ($portraitPerson == "portrait") && ($sprite == "")
 actor "$getPerson($label, $type, $descr, $sprite)$getProps()" $toStereos("external_person", $tags) as $alias $getLink($link)
 !elseif ($portraitPerson == "outline") && ($sprite == "")
