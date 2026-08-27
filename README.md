@@ -282,13 +282,13 @@ This example renders the following image:
 <!-- start C4 section -->
 ![name: C4](https://img.shields.io/badge/name-C4-black)
 ![display_name: C4 (C4-PlantUML)](https://img.shields.io/badge/display__name-C4_(C4--PlantUML)-black)
-[![version: 2.13.0][Version Badge]][Version Link]
+[![version: 2.14.0][Version Badge]][Version Link]
 ![license: MIT](https://img.shields.io/badge/license-MIT-green)
 ![author: Ricardo Niepel, kirchsth and contributors](https://img.shields.io/badge/author-Ricardo_Niepel,_kirchsth_and_contributors-black)  
 [![all properties see: ./stdlib/C4/README.md][See Badge]][See Link]  
 
-[Version Badge]: https://img.shields.io/badge/version-2.13.0-blue
-[Version Link]: https://github.com/plantuml-stdlib/C4-PlantUML/tree/release/v2.13.0
+[Version Badge]: https://img.shields.io/badge/version-2.14.0-blue
+[Version Link]: https://github.com/plantuml-stdlib/C4-PlantUML/tree/release/v2.14.0
 [See Badge]: https://img.shields.io/badge/all_stdlib_specific_properties_see-./stdlib/C4/README.md-blue
 [See Link]: ./stdlib/C4/README.md
 <!-- end C4 section -->

@@ -70,8 +70,8 @@ UpdateBoundaryStyle("container", $bgColor=$CONTAINER_BOUNDARY_BG_COLOR, $fontCol
 !if (%variable_exists("$THEME"))
 !else
 ' $BOUNDARY_BG_COLOR... have to be defined in theme itself that it can be used in styles,...
-' (no default values which are defined in C4.puml) 
-' If skinparams and styles are defined with concrete values no variables are required 
+' (no default values which are defined in C4.puml)
+' If skinparams and styles are defined with concrete values no variables are required
 !$BOUNDARY_BG_COLOR ?= "transparent"
 !$BOUNDARY_COLOR ?= "#444444"
 !$ARROW_COLOR ?= "#666666"
@@ -141,7 +141,7 @@ skinparam participantRoundCorner $ROUNDED_BOX_SIZE
     !if ($brPos > 0)
       !$multiLine = $multiLine + %substr($text, 0, $brPos) + $lineEnd + %newline() + $lineStart
     !else
-      ' <U+00A0> non breaking change that newLine breaks with formats can be used with \n\n 
+      ' <U+00A0> non breaking change that newLine breaks with formats can be used with \n\n
       !$multiLine = $multiLine + "<U+00A0>" + $lineEnd + %newline() + $lineStart
     !endif
     !$text = %substr($text, $brPos+2)
@@ -196,11 +196,15 @@ skinparam participantRoundCorner $ROUNDED_BOX_SIZE
 !procedure $getParticipant($elementType, $alias, $label, $techn, $descr, $sprite, $tags, $link)
   !$sprite=$toElementArg($sprite, $tags, "ElementTagSprite", $elementType)
   !$techn=$toElementArg($techn, $tags, "ElementTagTechn", $elementType)
+  !if ($elementType!="person" || $showPersonTypeViaTech == %true())
+    !$techn=$updateTechWithElementType($techn, $elementType)
+  !endif
   !$stereo = $toStereos($elementType,$tags)
   !$calcLabel = "== " + $breakNewLineLabel($label)
   !$calcTech = "//<size:" + $TECHN_FONT_SIZE + ">[" + $breakNewLineTechn($techn) + "]</size>//"
   !$calcDescr = $breakNewLineDescr($descr)
   !$calcLink = $getLink($link)
+  !$props = $getProps()
 
 participant $alias $stereo $calcLink [
 !if ($sprite != "")
@@ -316,7 +320,7 @@ $calcDescr
 ' Boundary redefinition
 ' ##################################
 
-' all boundaries have to be displayed as box and 
+' all boundaries have to be displayed as box and
 ' !!! important changes: without { at the end; and boundary ends with Boundary_End() instead of }
 
 ' alias ignored
