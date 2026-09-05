@@ -32,6 +32,7 @@ public class MainJs {
 					.map(name -> {
 						try {
 							new JsBuilder(name);
+							new JsonBuilder(name);
 						} catch (IOException e) {
 							e.printStackTrace();
 						}
