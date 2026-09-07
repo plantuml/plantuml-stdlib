@@ -17,6 +17,9 @@ val closureConfig by configurations.creating
 dependencies {
     testImplementation("org.junit.jupiter:junit-jupiter-api:5.7.1")
     testRuntimeOnly("org.junit.jupiter:junit-jupiter-engine:5.7.1")
+    // Gradle 9 no longer puts the JUnit Platform launcher on the test runtime
+    // classpath implicitly; without this line `gradlew test` cannot start.
+    testRuntimeOnly("org.junit.platform:junit-platform-launcher:1.7.1")
     implementation("net.sourceforge.plantuml:plantuml:1.2024.5")
     implementation("com.aayushatharva.brotli4j:brotli4j:1.16.0")
 
@@ -117,6 +120,14 @@ abstract class MinifyJavaScriptTask @Inject constructor(
         println("  Total original:  ${totalOriginal / 1024} KB")
         println("  Total minified:  ${totalMinified / 1024} KB")
         println("  Reduction: $ratio%")
+
+        // The JSON data bundles (JsonBuilder output) are already compact and
+        // must stay byte-exact, so they are copied, not minified. Keeping them
+        // in the same output directory means whatever publishes the .min.js
+        // files to the site carries the .json files along.
+        val jsonFiles = inDir.listFiles { f -> f.extension == "json" }?.sorted() ?: emptyList()
+        jsonFiles.forEach { j -> j.copyTo(File(outDir, j.name), overwrite = true) }
+        println("Copied ${jsonFiles.size} JSON data bundle(s) unchanged.")
     }
 }
 

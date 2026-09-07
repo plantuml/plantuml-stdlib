@@ -41,7 +41,8 @@ public class JsBuilder {
 		}
 	}
 
-	private String readInfoJson(Path file) throws IOException {
+	// Shared with JsonBuilder, which emits the same info map into the JSON data bundle.
+	static String readInfoJson(Path file) throws IOException {
 
 		final StringBuilder result = new StringBuilder();
 		result.append('{');
@@ -78,7 +79,9 @@ public class JsBuilder {
 		throw new IOException("Bad YAML header in README.md");
 	}
 
-	private static String escapeJsonString(String s) {
+	// Shared with JsonBuilder: the escape set is exactly JSON's, which is what
+	// makes the JSON data bundle carry byte-identical string content.
+	static String escapeJsonString(String s) {
 		final StringBuilder out = new StringBuilder();
 		for (int i = 0; i < s.length(); i++) {
 			final char c = s.charAt(i);
