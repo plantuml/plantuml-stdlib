@@ -147,6 +147,62 @@ tasks.named<JavaExec>("run") {
     mustRunAfter("minifyJavaScript")
 }
 
+// ---------------------------------------------------------------------------
+// Sync the freshly built stdlib into a checkout of the "plantuml" repository.
+//
+//   ./gradlew syncToPlantuml                          (plantuml checkout in ../plantuml)
+//   ./gradlew syncToPlantuml -PplantumlDir=/path/to/plantuml
+//
+// What is copied (the targets are the folders documented in plantuml's
+// src/main/teavm/README.md):
+//   output/                    (.spm, .sha1, home.spm)  -> src/main/resources/stdlib/
+//   output-js-min/*.min.js     (TeaVM / browser bundles) -> src/main/teavm/stdlib/
+//
+// The task depends on "run", i.e. MainSpm + runJs + minifyJavaScript, so
+// everything is rebuilt first. Existing files are overwritten; files that only
+// exist on the plantuml side (e.g. stdlib/README.md) are left untouched.
+// ---------------------------------------------------------------------------
+val plantumlDir = providers.gradleProperty("plantumlDir").orElse("../plantuml")
+
+tasks.register("syncToPlantuml") {
+    group = "application"
+    description = "Runs the full build, then copies the generated stdlib into the plantuml repository (-PplantumlDir=...)"
+    dependsOn("run")
+
+    doLast {
+        val root = layout.projectDirectory.dir(plantumlDir.get()).asFile
+        val spmTarget = File(root, "src/main/resources/stdlib")
+        val jsTarget = File(root, "src/main/teavm/stdlib")
+        if (!File(root, "src/main/resources").isDirectory || !File(root, "src/main/teavm").isDirectory) {
+            throw GradleException("'${root.absolutePath}' does not look like a plantuml checkout. Use -PplantumlDir=<path>.")
+        }
+
+        // Fail early if one of the sources is missing (e.g. a partial build).
+        val spmSource = file("output")
+        val jsSource = file("output-js-min")
+        if (!spmSource.isDirectory || !jsSource.isDirectory) {
+            throw GradleException("Missing build output: expected 'output' and 'output-js-min'.")
+        }
+
+        copy {
+            from(spmSource)
+            into(spmTarget)
+        }
+        copy {
+            from(jsSource) {
+                include("*.min.js")
+            }
+            into(jsTarget)
+        }
+
+        val spmCount = spmTarget.walkTopDown().count { it.isFile }
+        val jsCount = jsTarget.listFiles { f -> f.name.endsWith(".min.js") }?.size ?: 0
+        println("Synced stdlib into ${root.absolutePath}")
+        println("  ${spmSource} -> $spmTarget ($spmCount files)")
+        println("  ${jsSource}/*.min.js -> $jsTarget ($jsCount bundles)")
+    }
+}
+
 tasks.named<Delete>("clean") {
     delete("output")
     delete("output-js")
