@@ -105,10 +105,35 @@ public class SpmBuilder {
 		x = name.indexOf('/', x + 1);
 		name = name.substring(x + 1);
 
-		final byte[] json = Files.readAllBytes(f);
+		final byte[] json = removeCarriageReturns(Files.readAllBytes(f));
 
 		jsonWriter.putContent(name, json);
 
+	}
+
+	/**
+	 * The bytes of a JSON file must not depend on the line endings of the
+	 * checkout: with CRLF (git autocrlf on Windows) the .spm and its .sha1 would
+	 * not be the same as with LF. A CR is only a whitespace in JSON (inside a
+	 * string it has to be escaped) and never part of a UTF-8 multi-byte
+	 * character, so removing it does not change the data.
+	 */
+	static byte[] removeCarriageReturns(byte[] data) {
+		int count = 0;
+		for (byte b : data)
+			if (b == '\r')
+				count++;
+
+		if (count == 0)
+			return data;
+
+		final byte[] result = new byte[data.length - count];
+		int i = 0;
+		for (byte b : data)
+			if (b != '\r')
+				result[i++] = b;
+
+		return result;
 	}
 
 	private void processSinglePumlFile(Path f) throws IOException {
