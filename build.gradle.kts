@@ -161,8 +161,14 @@ tasks.named<JavaExec>("run") {
 // The task depends on "run", i.e. MainSpm + runJs + minifyJavaScript, so
 // everything is rebuilt first. Existing files are overwritten; files that only
 // exist on the plantuml side (e.g. stdlib/README.md) are left untouched.
+//
+// A .min.js bundle bigger than 50 MB (-PsyncMaxFileMb=<n> to change it) is NOT
+// copied: GitHub refuses a file of more than 100 MB, and a bundle that big
+// (today the "aws" library, about 108 MB) cannot be committed in plantuml.
+// A warning is printed for each skipped file, nothing else.
 // ---------------------------------------------------------------------------
 val plantumlDir = providers.gradleProperty("plantumlDir").orElse("../plantuml")
+val syncMaxFileMb = providers.gradleProperty("syncMaxFileMb").orElse("50")
 
 tasks.register("syncToPlantuml") {
     group = "application"
@@ -188,9 +194,18 @@ tasks.register("syncToPlantuml") {
             from(spmSource)
             into(spmTarget)
         }
+        // Bundles too big to be committed in plantuml are skipped, with a warning.
+        val maxBytes = syncMaxFileMb.get().toLong() * 1024 * 1024
+        val tooBig = jsSource.listFiles { f -> f.name.endsWith(".min.js") && f.length() > maxBytes }
+            ?.sortedBy { it.name } ?: emptyList()
+        tooBig.forEach { f ->
+            logger.warn("WARNING: ${f.name} (${"%.1f".format(f.length() / (1024.0 * 1024.0))} MB) is bigger than ${syncMaxFileMb.get()} MB: not copied to $jsTarget")
+        }
+
         copy {
             from(jsSource) {
                 include("*.min.js")
+                tooBig.forEach { exclude(it.name) }
             }
             into(jsTarget)
         }
@@ -199,7 +214,7 @@ tasks.register("syncToPlantuml") {
         val jsCount = jsTarget.listFiles { f -> f.name.endsWith(".min.js") }?.size ?: 0
         println("Synced stdlib into ${root.absolutePath}")
         println("  ${spmSource} -> $spmTarget ($spmCount files)")
-        println("  ${jsSource}/*.min.js -> $jsTarget ($jsCount bundles)")
+        println("  ${jsSource}/*.min.js -> $jsTarget ($jsCount bundles, ${tooBig.size} skipped because too big)")
     }
 }
 
