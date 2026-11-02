@@ -76,9 +76,11 @@ rm -rf $TEMP_DIR_NAME
 The correct local workflow to build a `plantuml.jar` that includes stuff from `plantuml/plantuml-stdlib`:
 
 * in local fork of `plantuml/plantuml-stdlib`
-  * `gradle run`
+  * `./gradlew runSpm` generates the `.spm` and `.sha1` files in `./output/` (see [the README](./README.md#generating-the-spm-files))
+  * commit the `./output/**/*.sha1` files that changed
   * copy files from `./output/` to `./src/main/resources/stdlib` of `plantuml/plantuml` fork
     * `cp -r ./output/* ../plantuml/src/main/resources/stdlib`
+    * or `./gradlew syncToPlantuml -PplantumlDir=../plantuml`, which does the full build and also copies the JavaScript bundles
 * in local fork of `plantuml/plantuml`
   * `gradle clean`
   * `gradle jar`

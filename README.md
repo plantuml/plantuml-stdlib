@@ -1,6 +1,6 @@
 # `plantuml-stdlib`
 Contains official Standard Library for PlantUML.
-_See http://plantuml.com/stdlib for more information._
+_See https://plantuml.com/stdlib for more information._
 
 This Standard Library is included in official release of PlantUML.
 Following the C convention for "C standard library" _(see https://en.wikipedia.org/wiki/C_standard_library)_.
@@ -17,6 +17,9 @@ Following the C convention for "C standard library" _(see https://en.wikipedia.o
   - [AdaML [adaml]](#adaml-adaml)
     - [What is AdaML](#what-is-adaml)
     - [Features](#features)
+  - [ArchiMate [archimate]](#archimate-archimate)
+    - [What is ArchiMate](#what-is-archimate)
+    - [Features](#features-1)
   - [Amazon Web Services](#amazon-web-services)
     - [AWS Icons](#aws-icons)
     - [AWS library [aws]](#aws-library-aws)
@@ -42,6 +45,9 @@ Following the C convention for "C standard library" _(see https://en.wikipedia.o
     - [SVG sprites [material7, material7.4.47]](#svg-sprites-material7-material7447)
       - [Macros and predefined values via `!include <material7/common>`](#macros-and-predefined-values-via-include-material7common)
   - [Tupadr3 library [tupadr3]](#tupadr3-library-tupadr3)
+  - [All the libraries](#all-the-libraries)
+  - [Sources](#sources)
+  - [Generating the `.spm` files](#generating-the-spm-files)
 
 ## AdaML [adaml]
 
@@ -102,7 +108,7 @@ This example renders the following image:
 
 [![AdaML example](https://img.plantuml.biz/plantuml/svg/VLFBQiCm4BphArGVYWE5_a082Ic5GdrAsbF0AFBM4PLNGWzA-lMLb9SjExtOxEpCQdPaBwrZnlbEaWU1NFe6w7pLiEhzEJqNX33kbA4V5WnXBQ2Z6sS4jlKRMcTy5v0BpWq0dekjylnG3w1ASAFqGI4GieTMOAqP_mwzschWPV4grR6fjnx153D2ABL-hurg3UlAec82J-XPL1QV0du2r4FM2frHKgO1FNmZMcIoNeN7yNVKP9sMKA-ZBgvwEgK13TZOieYB5q-qw2yKQu4EJCZ6qaMQTnKafu7GCnEg5FE8Unb-6si1xb3or2Ee9JlQ7Jxkq8NOR6Ozjpnqn5NNiS3BH4FIA9o01LK8pWvjPh8iy7GSVedMc_-5wKxlcxkqRpifxxHtUQvNtjY70TRiCDZmSdmV4_of14upREgCPqm8Rfz-h5OlwsoloSiTYZZJBgP7vr4RPEMCBCCh_hf_)](https://editor.plantuml.com/uml/VLFBQiCm4BphArGVYWE5_a082Ic5GdrAsbF0AFBM4PLNGWzA-lMLb9SjExtOxEpCQdPaBwrZnlbEaWU1NFe6w7pLiEhzEJqNX33kbA4V5WnXBQ2Z6sS4jlKRMcTy5v0BpWq0dekjylnG3w1ASAFqGI4GieTMOAqP_mwzschWPV4grR6fjnx153D2ABL-hurg3UlAec82J-XPL1QV0du2r4FM2frHKgO1FNmZMcIoNeN7yNVKP9sMKA-ZBgvwEgK13TZOieYB5q-qw2yKQu4EJCZ6qaMQTnKafu7GCnEg5FE8Unb-6si1xb3or2Ee9JlQ7Jxkq8NOR6Ozjpnqn5NNiS3BH4FIA9o01LK8pWvjPh8iy7GSVedMc_-5wKxlcxkqRpifxxHtUQvNtjY70TRiCDZmSdmV4_of14upREgCPqm8Rfz-h5OlwsoloSiTYZZJBgP7vr4RPEMCBCCh_hf_)
 
-## ArchiMate
+## ArchiMate [archimate]
 
 ### What is ArchiMate
 [ArchiMate](https://www.opengroup.org/archimate-forum/archimate-overview) is an enterprise architecture modeling language that supports the description, analysis, and visualization of architecture across business domains.
@@ -174,7 +180,7 @@ For more information: https://github.com/plantuml-stdlib/Archimate-PlantUML
 
 ### AWS Icons
 
-PlantUML images, sprites, macros, and other includes for Amazon Web Services (AWS) services and resources. Used to create PlantUML diagrams with AWS components. All elements are generated from the official [AWS Architecture Icons](https://aws.amazon.com/architecture/icons/) and when combined with [PlantUML](http://plantuml.com/) and the [C4 model](https://c4model.com/), are a great way to communicate your design, deployment, and topology as code.
+PlantUML images, sprites, macros, and other includes for Amazon Web Services (AWS) services and resources. Used to create PlantUML diagrams with AWS components. All elements are generated from the official [AWS Architecture Icons](https://aws.amazon.com/architecture/icons/) and when combined with [PlantUML](https://plantuml.com/) and the [C4 model](https://c4model.com/), are a great way to communicate your design, deployment, and topology as code.
 
 Besides usage as custom sprites on PlantUML components, different types of diagrams can quickly and easily be created with the icons.
 
@@ -205,11 +211,30 @@ s3_internal <- s3_partner
 
 This example renders the following image:
 
-![Example](http://www.plantuml.com/plantuml/png/SoWkIImgAStDuLBCp4lEAKr9LR19B2_MJyxFpStFiqCJ3Ix9BqfCJzLtp4sioiyBDeOp22fCAatEJYs1KdPSN8w-Zb7-Vi766iN6yPbv9Qb5UOavcYYY1K1tvQKMwIY5fUQbv1Uf5oi46ojfSY6fLx3HLK0ev780gWDw1000 "Example")
+![Example](https://www.plantuml.com/plantuml/png/SoWkIImgAStDuLBCp4lEAKr9LR19B2_MJyxFpStFiqCJ3Ix9BqfCJzLtp4sioiyBDeOp22fCAatEJYs1KdPSN8w-Zb7-Vi766iN6yPbv9Qb5UOavcYYY1K1tvQKMwIY5fUQbv1Uf5oi46ojfSY6fLx3HLK0ev780gWDw1000 "Example")
 
 ### Amazon Labs AWS Library [awslib]
 
-_Todo: TBC..._
+This library is made from the [AWS Architecture Icons for PlantUML](https://github.com/awslabs/aws-icons-for-plantuml) of Amazon Labs.
+Several versions are available: `awslib10`, `awslib14` and `awslib20`. `awslib` is a link to one of them (currently `awslib14`), so that
+`!include <awslib/...>` always gives the same version as `!include <awslib14/...>`; use a specific version if you want your diagrams
+not to change when the link moves.
+
+Use it by including the common macros `!include <awslib/AWSCommon>`, and then the file of a service, eg: `!include <awslib/Compute/EC2>`.
+Each service gives a macro with the name of the service (`EC2(alias, label, technology)`, or `EC2(alias, label, technology, description)`) and a sprite `<$EC2>`.
+
+Example of usage:
+```plantuml
+@startuml
+!include <awslib/AWSCommon>
+!include <awslib/Compute/EC2>
+!include <awslib/Storage/SimpleStorageService>
+
+EC2(web, "Web server", "")
+SimpleStorageService(bucket, "Assets", "")
+web --> bucket : reads
+@enduml
+```
 
 ## Azure library [azure]
 
@@ -247,7 +272,7 @@ streamAnalytics --> outputCosmosDb
 
 This example renders the following image:
 
-![Example](http://www.plantuml.com/plantuml/proxy?idx=0&src=https%3A%2F%2Fraw.githubusercontent.com%2FRicardoNiepel%2FAzure-PlantUML%2Fmaster%2Fsamples%2FBasic%2520usage%2520-%2520Stream%2520processing%2520with%2520Azure%2520Stream%2520Analytics.puml "Example")
+![Example](https://www.plantuml.com/plantuml/proxy?idx=0&src=https%3A%2F%2Fraw.githubusercontent.com%2FRicardoNiepel%2FAzure-PlantUML%2Fmaster%2Fsamples%2FBasic%2520usage%2520-%2520Stream%2520processing%2520with%2520Azure%2520Stream%2520Analytics.puml "Example")
 
 ## Bootstrap Icons [bootstrap]
 
@@ -255,7 +280,7 @@ This library consists of a free Bootstrap Icons style icons from Bootstrap. See 
 
 Use it by including the file that contains all the sprites: `!include <bootstrap/bootstrap>`.
 When imported, you can use the sprite as normally you would, using `<$bi-sprite-name>`.
-Notice that this library requires an `bi-` preffix on sprites names, this is to avoid clash of names if multiple sprites have the same name on different libraries. `bi` stands for Bootstrap Icon and this name is also used in the Bootstrap framework.
+Notice that this library requires a `bi-` prefix on sprite names, this is to avoid clash of names if multiple sprites have the same name on different libraries. `bi` stands for Bootstrap Icon and this name is also used in the Bootstrap framework.
 
 Example of usage:
 ```plantuml
@@ -363,7 +388,7 @@ Alice -> Bob : $call($hello, 'getMessage')
 
 This example renders the following image:
 
-![Example](http://www.plantuml.com/plantuml/png/SoWkIImgAStDuNBAJrBGjLDmpCbCJbMmKl18pSd9LmZFByf9KKINCyfBKSXDBIvEJ4zLKEHoICrB0He00000)
+![Example](https://www.plantuml.com/plantuml/png/SoWkIImgAStDuNBAJrBGjLDmpCbCJbMmKl18pSd9LmZFByf9KKINCyfBKSXDBIvEJ4zLKEHoICrB0He00000)
 
 ## Classy C4 library [classy-c4]
 
@@ -397,7 +422,7 @@ Rel($personAlias, $containerAlias, "Label", "Optional Technology")
 
 This example renders the following image:
 
-![Example](http://www.plantuml.com/plantuml/png/ZOvFIyGm4CNl-HIrfowupMLFdbQgjnKN_vnbcWxRm6GICXDalxtPWaKHnTDxCypxpTkBGjOIg1bsR_U40Ld5N7bsL2PiPjKaDzPcUEzFNkSo5i7i8YkozYu6cmZuaj-AJkH7E-osnylgzU5W0uXYjfKyr0HunjodUclC4RD4xj8Yj-H1hfls02DIMyrZKXyPgBb3STalKxinAwHpd-v7z0NTp97YwVm7wFaiYg6JHVxxtJmXVI-yjlWTyQNEnkoHfnBe0m00)
+![Example](https://www.plantuml.com/plantuml/png/ZOvFIyGm4CNl-HIrfowupMLFdbQgjnKN_vnbcWxRm6GICXDalxtPWaKHnTDxCypxpTkBGjOIg1bsR_U40Ld5N7bsL2PiPjKaDzPcUEzFNkSo5i7i8YkozYu6cmZuaj-AJkH7E-osnylgzU5W0uXYjfKyr0HunjodUclC4RD4xj8Yj-H1hfls02DIMyrZKXyPgBb3STalKxinAwHpd-v7z0NTp97YwVm7wFaiYg6JHVxxtJmXVI-yjlWTyQNEnkoHfnBe0m00)
 
 ## Domain Story library (DomainStory-PlantUML) [DomainStory]
 
@@ -423,7 +448,7 @@ activity(1, Alice, talks about the, weather, with, Bob)
 
 This example renders the following image:
 
-![Example](http://www.plantuml.com/plantuml/png/JSx1IWGn30RWUv-YtcPWdEBLqxfwL5XOV81C9zXg9rdQlxiCuhlR7GGtf_0bVyYkW3BgainT59_gp3O0f_BeNARB-14HwbGBPwy25enU5_Uf0K6pUz65eXoXURq_91AylxswAxdvVpAUhjVDNglCbDVkk1RmqjjlOriTE1ULxYb5p_qcpohdXeJO_CA4mBc_tTthr9iVOyWZdYFMxc6mMtwmeFHLB4rQOH4Q_ELR4n46kqLtB7DxwHS0
+![Example](https://www.plantuml.com/plantuml/png/JSx1IWGn30RWUv-YtcPWdEBLqxfwL5XOV81C9zXg9rdQlxiCuhlR7GGtf_0bVyYkW3BgainT59_gp3O0f_BeNARB-14HwbGBPwy25enU5_Uf0K6pUz65eXoXURq_91AylxswAxdvVpAUhjVDNglCbDVkk1RmqjjlOriTE1ULxYb5p_qcpohdXeJO_CA4mBc_tTthr9iVOyWZdYFMxc6mMtwmeFHLB4rQOH4Q_ELR4n46kqLtB7DxwHS0
  "Example")
 
 ## Edgy Enterprise Design [edgy]
@@ -515,7 +540,7 @@ $link(purpose, story)
 
 ## EIP-PlantUML [eip]
 
-EIP-PlantUML provides [Enterprise Integrations Patterns](https://www.enterpriseintegrationpatterns.com/) elements to [PlantUML](http://plantuml.com/) to provide easy support of designing EIP architectures for both, up-front design as well as development-time automated documentation generation.
+EIP-PlantUML provides [Enterprise Integrations Patterns](https://www.enterpriseintegrationpatterns.com/) elements to [PlantUML](https://plantuml.com/) to provide easy support of designing EIP architectures for both, up-front design as well as development-time automated documentation generation.
 Example of usage:
 ```plantuml
 @startuml
@@ -571,7 +596,7 @@ ElasticSearch -right-> Kibana: Data to View
 ```
 
 This example renders the following image:
-![Example](http://www.plantuml.com/plantuml/png/TOxFQiCm38VlUGejfnHITYyZrEl2MXgsCOVUrLXBpFm7R8UnFVrI9oNa41yi6N-VVjhxW2xqMYKmd0Tf6jKBWYTIw8Di7XkhjJN5okzKFQ5hkkLhJL6szG5zTszMmMzvHODJAP98bHNZzUd0I_PvE6RbIFAObqCwDe1603EeVlyepGK6lAAdJVIhzrTUCtxCgYbyi3xGUOfIxT3uB-jqcXih9kLyUcPlB3l7DGRy8dsFIjvcOqicR21YyRfFXQsJRHUs1InMtCq99E050qPhmSpgcBYB70GB5qa_IR8d8tgj_W40)
+![Example](https://www.plantuml.com/plantuml/png/TOxFQiCm38VlUGejfnHITYyZrEl2MXgsCOVUrLXBpFm7R8UnFVrI9oNa41yi6N-VVjhxW2xqMYKmd0Tf6jKBWYTIw8Di7XkhjJN5okzKFQ5hkkLhJL6szG5zTszMmMzvHODJAP98bHNZzUd0I_PvE6RbIFAObqCwDe1603EeVlyepGK6lAAdJVIhzrTUCtxCgYbyi3xGUOfIxT3uB-jqcXih9kLyUcPlB3l7DGRy8dsFIjvcOqicR21YyRfFXQsJRHUs1InMtCq99E050qPhmSpgcBYB70GB5qa_IR8d8tgj_W40)
 
 ## Google Cloud Platform [gcp]
 
@@ -689,7 +714,7 @@ MA_FOLDER_MOVE(Red, 1, dir, rectangle, "A label")
 
 This example renders the following image:
 
-[![Macro example - open link](http://www.plantuml.com/plantuml/svg/PSn12i8m40NGVK_nsqqL0k9U2eNMbRLGYjiIawa69faGKz7RUm3V0LxfWk7D4avUPqfEyy68znAQeiOiS3vAoiXFmYicbmchOy9NDdJZjPuHY2oo8B8s18sOQ7MViYZ_urNOKbgylAafYg5TpkEbwwTb66_zRYAhS5ImBYaaCbc71vD2rOBrdRZQ_m00 "Macro example")](http://www.plantuml.com/plantuml/uml/PSn12i8m40NGVK_nsqqL0k9U2eNMbRLGYjiIawa69faGKz7RUm3V0LxfWk7D4avUPqfEyy68znAQeiOiS3vAoiXFmYicbmchOy9NDdJZjPuHY2oo8B8s18sOQ7MViYZ_urNOKbgylAafYg5TpkEbwwTb66_zRYAhS5ImBYaaCbc71vD2rOBrdRZQ_m00)
+[![Macro example - open link](https://www.plantuml.com/plantuml/svg/PSn12i8m40NGVK_nsqqL0k9U2eNMbRLGYjiIawa69faGKz7RUm3V0LxfWk7D4avUPqfEyy68znAQeiOiS3vAoiXFmYicbmchOy9NDdJZjPuHY2oo8B8s18sOQ7MViYZ_urNOKbgylAafYg5TpkEbwwTb66_zRYAhS5ImBYaaCbc71vD2rOBrdRZQ_m00 "Macro example")](https://www.plantuml.com/plantuml/uml/PSn12i8m40NGVK_nsqqL0k9U2eNMbRLGYjiIawa69faGKz7RUm3V0LxfWk7D4avUPqfEyy68znAQeiOiS3vAoiXFmYicbmchOy9NDdJZjPuHY2oo8B8s18sOQ7MViYZ_urNOKbgylAafYg5TpkEbwwTb66_zRYAhS5ImBYaaCbc71vD2rOBrdRZQ_m00)
 
 #### Notes
 
@@ -715,7 +740,7 @@ class foo {
 
 This example renders the following image:
 
-[![Example - open link](http://www.plantuml.com/plantuml/svg/TOz1Qy9044Rl-oi-lMWXAF5M457GdhG1aLx3k3kn2xCxOR8fBQN_tVo17jyxF7ZxeP2LCOcRnUnb38njei8MIJQhUbM_hhscf7dd5hWfOkhL2iedO-Wj5aONXV6Z8uxD--A6p1nG5BsGPn1wuov-p_xFTog1hKtwnJldBeVshJaVJzVsqdoSbbSE5UeA8Le5OryeFuGhp0yGkhFCN_3h_fppGiE0JdL2u4usoJtdC8qz0G00 "Example")](http://www.plantuml.com/plantuml/uml/TOz1Qy9044Rl-oi-lMWXAF5M457GdhG1aLx3k3kn2xCxOR8fBQN_tVo17jyxF7ZxeP2LCOcRnUnb38njei8MIJQhUbM_hhscf7dd5hWfOkhL2iedO-Wj5aONXV6Z8uxD--A6p1nG5BsGPn1wuov-p_xFTog1hKtwnJldBeVshJaVJzVsqdoSbbSE5UeA8Le5OryeFuGhp0yGkhFCN_3h_fppGiE0JdL2u4usoJtdC8qz0G00)
+[![Example - open link](https://www.plantuml.com/plantuml/svg/TOz1Qy9044Rl-oi-lMWXAF5M457GdhG1aLx3k3kn2xCxOR8fBQN_tVo17jyxF7ZxeP2LCOcRnUnb38njei8MIJQhUbM_hhscf7dd5hWfOkhL2iedO-Wj5aONXV6Z8uxD--A6p1nG5BsGPn1wuov-p_xFTog1hKtwnJldBeVshJaVJzVsqdoSbbSE5UeA8Le5OryeFuGhp0yGkhFCN_3h_fppGiE0JdL2u4usoJtdC8qz0G00 "Example")](https://www.plantuml.com/plantuml/uml/TOz1Qy9044Rl-oi-lMWXAF5M457GdhG1aLx3k3kn2xCxOR8fBQN_tVo17jyxF7ZxeP2LCOcRnUnb38njei8MIJQhUbM_hhscf7dd5hWfOkhL2iedO-Wj5aONXV6Z8uxD--A6p1nG5BsGPn1wuov-p_xFTog1hKtwnJldBeVshJaVJzVsqdoSbbSE5UeA8Le5OryeFuGhp0yGkhFCN_3h_fppGiE0JdL2u4usoJtdC8qz0G00)
 
 ### SVG sprites [material7, material7.4.47]
 
@@ -776,8 +801,14 @@ You may also include the `common.puml` file, e.g. `!include <material7/common>`,
 
 With the `common.puml` imported, you can use following macros; note again the use of the prefix `$Mdi` and the image macro has the postfix `Img` too:
 
-- `$MdiSpriteNameImg($sprite, $color = $MDI_DEFAULT, $scale = "1")`; e.g. **Mdi**EmoticonLol**Img**(...)
-- `$MdiSpriteName($sprite, $alias, $label=$MDI_DEFAULT, $shape=$MDI_DEFAULT, $color=$MDI_DEFAULT, $scale=1, $stereo=$MDI_DEFAULT)`; e.g. **Mdi**EmoticonLol(...)
+- `$MdiSpriteNameImg($color = $MDI_DEFAULT, $scale = "1")`; e.g. **Mdi**EmoticonLol**Img**(...)
+- `$MdiSpriteName($alias, $label=$MDI_DEFAULT, $shape=$MDI_DEFAULT, $color=$MDI_DEFAULT, $scale=1, $stereo=$MDI_DEFAULT)`; e.g. **Mdi**EmoticonLol(...)
+
+The name of the sprite is part of the name of the macro (`$MdiAccountAlertImg(...)`, `$MdiAccountAlert(...)`). The two generic macros behind them
+take the name of the sprite as their first argument:
+
+- `$MdiSprite($sprite, $color = $MDI_DEFAULT, $scale = "1")`; e.g. `$MdiSprite("mdiAccountAlert", red)`
+- `$MdiSpriteElement($sprite, $alias, $label=$MDI_DEFAULT, $shape=$MDI_DEFAULT, $color=$MDI_DEFAULT, $scale=1, $stereo=$MDI_DEFAULT)`
 
 Following predefined values can be used as arguments too:
 
@@ -922,7 +953,49 @@ web4 <--> db1
 
 This example renders the following image:
 
-![Example](http://www.plantuml.com/plantuml/png/XOvHIyCm58NVyolkyC49hMNjdcICTTZ9OC9eTU2JfCjr2wH9QMwj-_ScpbagWY-1mtU-axkmn1jgAyMkOQkufkV73LWIIfQWJGTIxrKhqC9wRtIuCfgWg1j9Q4TG8CAHgBPtKNIGT6pBsxsf8cfhBfeagjsSNmwbLz-S6jgpojZeUnTcbxOpAwFdVv0latTeJOMHnUOTctzhWXClkSKvOoH98HHqKb8V03zuLIjaR9M-5bc-o_9nX-KayCyDN3qqY7h8OizYnrvGATCDOU9Xuk1IjJX4Ku-cFzvvsLVkqwTqcHRPMBX_D-jT5bok3RgZ97HARavS-SbV_JWejcdU2xwAWZ6t1BCmd8EhCDPX7oS-nOEK3DAqJmlKegtK9m00 "Example")
+![Example](https://www.plantuml.com/plantuml/png/XOvHIyCm58NVyolkyC49hMNjdcICTTZ9OC9eTU2JfCjr2wH9QMwj-_ScpbagWY-1mtU-axkmn1jgAyMkOQkufkV73LWIIfQWJGTIxrKhqC9wRtIuCfgWg1j9Q4TG8CAHgBPtKNIGT6pBsxsf8cfhBfeagjsSNmwbLz-S6jgpojZeUnTcbxOpAwFdVv0latTeJOMHnUOTctzhWXClkSKvOoH98HHqKb8V03zuLIjaR9M-5bc-o_9nX-KayCyDN3qqY7h8OizYnrvGATCDOU9Xuk1IjJX4Ku-cFzvvsLVkqwTqcHRPMBX_D-jT5bok3RgZ97HARavS-SbV_JWejcdU2xwAWZ6t1BCmd8EhCDPX7oS-nOEK3DAqJmlKegtK9m00 "Example")
+
+## All the libraries
+
+Every folder of [`stdlib`](./stdlib) can be used with `!include <folder/file>`. A folder that is a *link* has no file of its own:
+it gives the files of the folder it points to (see its `README.md`).
+
+| Folder | Version | Source |
+|---|---|---|
+| `adaml` | 0.1.2 | [rocher/AdaML](https://github.com/rocher/AdaML) |
+| `archimate` | 3.2.2 | [plantuml-stdlib/Archimate-PlantUML](https://github.com/plantuml-stdlib/Archimate-PlantUML) |
+| `aws` | 18.02.22 | [milo-minderbinder/AWS-PlantUML](https://github.com/milo-minderbinder/AWS-PlantUML) |
+| `awslib` | link to `awslib14` | |
+| `awslib10` | 10.0.0 | [awslabs/aws-icons-for-plantuml](https://github.com/awslabs/aws-icons-for-plantuml) |
+| `awslib14` | 14.0.0 | [awslabs/aws-icons-for-plantuml](https://github.com/awslabs/aws-icons-for-plantuml) |
+| `awslib20` | 20.0 | [awslabs/aws-icons-for-plantuml](https://github.com/awslabs/aws-icons-for-plantuml) |
+| `azure` | 2.2.0 | [plantuml-stdlib/Azure-PlantUML](https://github.com/plantuml-stdlib/Azure-PlantUML) |
+| `bootstrap` | link to `bootstrap1.13.1` | |
+| `bootstrap1.12.1` | 1.12.1 | [twbs/icons](https://github.com/twbs/icons) |
+| `bootstrap1.13.1` | 1.13.1 | [twbs/icons](https://github.com/twbs/icons) |
+| `C4` | 2.14.0 | [plantuml-stdlib/C4-PlantUML](https://github.com/plantuml-stdlib/C4-PlantUML) |
+| `classy` | 1.0.2 | [james-gadrow-kr/classy-plantuml](https://github.com/james-gadrow-kr/classy-plantuml) |
+| `classy-c4` | 1.0.3 | [james-gadrow-kr/classy-c4](https://github.com/james-gadrow-kr/classy-c4) |
+| `cloudinsight` | 1.0.0 | [plantuml-stdlib/cicon-plantuml-sprites](https://github.com/plantuml-stdlib/cicon-plantuml-sprites) |
+| `cloudogu` | 1.0.2 | [cloudogu/plantuml-cloudogu-sprites](https://github.com/cloudogu/plantuml-cloudogu-sprites) |
+| `DomainStory` | 0.4.0 | [johthor/DomainStory-PlantUML](https://github.com/johthor/DomainStory-PlantUML) |
+| `edgy` | 0.8.0 | [boessu/plantuml-stdlib](https://github.com/boessu/plantuml-stdlib) |
+| `eip` | 1.0.0 | [plantuml-stdlib/EIP-PlantUML](https://github.com/plantuml-stdlib/EIP-PlantUML) |
+| `elastic` | 0.0.1 | [Crashedmind/PlantUML-Elastic-icons](https://github.com/Crashedmind/PlantUML-Elastic-icons) |
+| `gcp` | 6.0.0 | [Crashedmind/PlantUML-icons-GCP](https://github.com/Crashedmind/PlantUML-icons-GCP) |
+| `ibm` | 1.0.1 | [XReyRobert/ibm-icons-for-plantuml](https://github.com/XReyRobert/ibm-icons-for-plantuml) |
+| `k8s` | 1.0.0 | [dcasati/kubernetes-PlantUML](https://github.com/dcasati/kubernetes-PlantUML) |
+| `kubernetes` | 5.3.45 | [plantuml-stdlib/plantuml-kubernetes-sprites](https://github.com/plantuml-stdlib/plantuml-kubernetes-sprites) |
+| `logos` | 1.1.0 | [plantuml-stdlib/gilbarbara-plantuml-sprites](https://github.com/plantuml-stdlib/gilbarbara-plantuml-sprites) |
+| `material` | link to `material2.1.19` | |
+| `material2` | link to `material2.1.19` | |
+| `material2.1.19` | 2.1.19 | [Templarian/MaterialDesign](https://github.com/Templarian/MaterialDesign) |
+| `material7` | link to `material7.4.47` | |
+| `material7.4.47` | 7.4.47 | [Templarian/MaterialDesign-SVG](https://github.com/Templarian/MaterialDesign-SVG) |
+| `office` | 1.0.0 | [Roemer/plantuml-office](https://github.com/Roemer/plantuml-office) |
+| `osa` | 0.0.1 | [Crashedmind/PlantUML-opensecurityarchitecture-icons](https://github.com/Crashedmind/PlantUML-opensecurityarchitecture-icons) |
+| `osa2` | 0.0.1 | [Crashedmind/PlantUML-opensecurityarchitecture2-icons](https://github.com/Crashedmind/PlantUML-opensecurityarchitecture2-icons) |
+| `tupadr3` | 3.0.0 | [tupadr3/plantuml-icon-font-sprites](https://github.com/tupadr3/plantuml-icon-font-sprites) |
 
 ## Sources
 
@@ -936,3 +1009,23 @@ This example renders the following image:
 * **Domain Story**: from https://github.com/johthor/DomainStory-PlantUML
 
 You can create Pull Request to update or add some library here if you find it relevant.
+
+## Generating the `.spm` files
+
+PlantUML does not read the files of `stdlib` directly: each folder is packed into compressed `.spm` files
+(`info.spm`, `puml.spm`, and `svg.spm` / `png.spm` for the sprites), listed in `home.spm`, together with a `.sha1` checksum of each one.
+They are generated by this command, run from the root of this repository:
+
+```sh
+./gradlew runSpm
+```
+
+* The result is written in the `output` folder (the temporary files are in `raw`). The first run downloads the dependencies from Maven Central
+  and the whole generation takes a few minutes.
+* The `.spm` files are not committed (see `.gitignore`), but the `.sha1` files are: after a change in `stdlib`, run the command and commit the
+  `output/**/*.sha1` files that changed, in the same pull request. A library that was not modified keeps the same checksums.
+* `./gradlew run` also builds the JavaScript bundles used by the browser edition (`output-js-min`), before the `.spm` files.
+* `./gradlew syncToPlantuml -PplantumlDir=../plantuml` runs the full build and copies the result into a checkout of the
+  [`plantuml`](https://github.com/plantuml/plantuml) repository (`src/main/resources/stdlib` and `src/main/teavm/stdlib`).
+
+See also [CONTRIBUTING.md](./CONTRIBUTING.md#local-testing-of-updates-to-the-stdlib).
