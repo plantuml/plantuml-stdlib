@@ -43,7 +43,7 @@
 ' ##################################
 
 !function modeAdjustedColor($lightColor, $darkColor = "")
-    !if PUML_MODE == "light"
+    !if $PUML_MODE == "light"
         !$result = $lightColor
     !else
         !if $darkColor
@@ -52,7 +52,7 @@
             !$result = %reverse_color($lightColor)
         !endif
     !endif
-    $debug(PUML_MODE + " mode with input color " + $lightColor + " and output color " + $result)
+    $debug($PUML_MODE + " mode with input color " + $lightColor + " and output color " + $result)
     !return $result
 !endfunction
 
@@ -220,7 +220,7 @@
 ' ##################################
 
 ' Use `-darkmode -DPUML_MODE=dark` to set a preprocessing variable
-!global PUML_MODE ?= "light"
+!global $PUML_MODE ?= "light"
 
 ' Element Styles
 ' ==================================

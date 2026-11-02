@@ -21,7 +21,7 @@
 ' Therefore the colors should be displayed unchanged (the init colors have to be swapped too).
 !$NEW_C4_USE_ORIGINAL_COMPONENT_COLORS ?= 1
 !$componentColorsSwappedAlready ?= 0
-!if (NEW_C4_STYLE == 1 && $NEW_C4_USE_ORIGINAL_COMPONENT_COLORS == 1 && $componentColorsSwappedAlready == 0)
+!if ($NEW_C4_STYLE == 1 && $NEW_C4_USE_ORIGINAL_COMPONENT_COLORS == 1 && $componentColorsSwappedAlready == 0)
   !$swap=$COMPONENT_BG_COLOR
   !$COMPONENT_BG_COLOR=$COMPONENT_FONT_COLOR
   !$COMPONENT_FONT_COLOR=$swap

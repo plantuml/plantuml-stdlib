@@ -2,41 +2,41 @@
 
 ' Global pre-settings
 ' ##################################
-' NEW_C4_STYLE
-'   If NEW_C4_STYLE is set BEFORE the first C4_* file is loaded, new C4 layout style is used
-'   NEW_C4_STYLE can be set via
-'     !NEW_C4_STYLE = 1
+' $NEW_C4_STYLE
+'   If $NEW_C4_STYLE is set BEFORE the first C4_* file is loaded, new C4 layout style is used
+'   $NEW_C4_STYLE can be set via
+'     !$NEW_C4_STYLE = 1
 '   or with additional command line argument -DNEW_C4_STYLE=1
-!global NEW_C4_STYLE ?= 0
+!global $NEW_C4_STYLE ?= 0
 
-' ROUNDED_STYLE
-'   If ROUNDED_STYLE is set BEFORE the first C4_* file is loaded, rectangles with rounded corners are used as default shape
-'   ROUNDED_STYLE can be set via
-'     !ROUNDED_STYLE = 1
+' $ROUNDED_STYLE
+'   If $ROUNDED_STYLE is set BEFORE the first C4_* file is loaded, rectangles with rounded corners are used as default shape
+'   $ROUNDED_STYLE can be set via
+'     !$ROUNDED_STYLE = 1
 '   or with additional command line argument -DROUNDED_STYLE=1
-!if (NEW_C4_STYLE == 1)
-  !global ROUNDED_STYLE ?= 1
+!if ($NEW_C4_STYLE == 1)
+  !global $ROUNDED_STYLE ?= 1
 !else
-  !global ROUNDED_STYLE ?= 0
+  !global $ROUNDED_STYLE ?= 0
 !endif
 
-' ENABLE_ALL_PLANT_ELEMENTS
-'   If ENABLE_ALL_PLANT_ELEMENTS is set BEFORE the first C4_* file is loaded, nearly "all" PlantUML elements can be used like
+' $ENABLE_ALL_PLANT_ELEMENTS
+'   If $ENABLE_ALL_PLANT_ELEMENTS is set BEFORE the first C4_* file is loaded, nearly "all" PlantUML elements can be used like
 '     Component(StorageA, "Storage A ", $baseShape="storage")
-'   ENABLE_ALL_PLANT_ELEMENTS can be set via
-'     !ENABLE_ALL_PLANT_ELEMENTS = 1
+'   $ENABLE_ALL_PLANT_ELEMENTS can be set via
+'     !$ENABLE_ALL_PLANT_ELEMENTS = 1
 '   or with additional command line argument -DENABLE_ALL_PLANT_ELEMENTS=1
 
-' NO_LAY_ROTATE
+' $NO_LAY_ROTATE
 ' C4-PlantUML v2.12 fixed a missing rotation bug in Lay_* calls in combination with LAYOUT_LANDSCAPE() call
 ' (details see https://github.com/plantuml-stdlib/C4-PlantUML/issues/376)
 ' If older diagrams should remain unchanged the bugfix can be deactivated with following statement
-'     !NO_LAY_ROTATE = 1
+'     !$NO_LAY_ROTATE = 1
 ' or with follwing additional command line argument
 '     -DNO_LAY_ROTATE=1
 ' like
 '    java -jar plantuml.jar -DNO_LAY_ROTATE=1 ...
-!global NO_LAY_ROTATE ?= 0
+!global $NO_LAY_ROTATE ?= 0
 
 'Version
 ' ##################################
@@ -152,7 +152,7 @@ rectangle C4VersionDetailsArea <<legendArea>> [
 !global $SHARP_CORNER = "sharpCorner"
 !global $ROUNDED_BOX = "roundedBox"
 !global $EIGHT_SIDED = "eightSided"
-!if (ROUNDED_STYLE == 1)
+!if ($ROUNDED_STYLE == 1)
   !$DEFAULT_SHAPE ?= $ROUNDED_BOX
 !else
   !$DEFAULT_SHAPE ?= $SHARP_CORNER
@@ -213,7 +213,7 @@ skinparam actor {
     style awesome
 }
 
-!if %variable_exists("ENABLE_ALL_PLANT_ELEMENTS")
+!if %variable_exists("$ENABLE_ALL_PLANT_ELEMENTS")
 skinparam agent {
     StereotypeFontSize $STEREOTYPE_FONT_SIZE
 }
@@ -508,7 +508,7 @@ skinparam package {
     !$tagSkin = $tagSkin + "skinparam package<<" + $tagStereo + ">>StereotypeFontColor " + $bgColor + $bl()
     !$tagSkin = $tagSkin + "skinparam rectangle<<" + $tagStereo + ">>StereotypeFontColor " + $bgColor + $bl()
   !endif
-  !if %variable_exists("ENABLE_ALL_PLANT_ELEMENTS")
+  !if %variable_exists("$ENABLE_ALL_PLANT_ELEMENTS")
     !$tagSkin = $tagSkin + $elementTagSkinparams("agent", $tagStereo, $bgColor, $fontColor, $borderColor, $shadowing, "", $borderStyle, $borderThickness)
     !$tagSkin = $tagSkin + $elementTagSkinparams("artifact", $tagStereo, $bgColor, $fontColor, $borderColor, $shadowing, "", $borderStyle, $borderThickness)
     !$tagSkin = $tagSkin + $elementTagSkinparams("card", $tagStereo, $bgColor, $fontColor, $borderColor, $shadowing, "", $borderStyle, $borderThickness)
@@ -1004,7 +1004,7 @@ $line
 ' used by new defined tags
 !unquoted procedure AddElementTag($tagStereo, $bgColor="", $fontColor="", $borderColor="", $shadowing="", $shape="", $sprite="", $techn="", $legendText="", $legendSprite="", $borderStyle="", $borderThickness="")
 
-!if (NEW_C4_STYLE == 1)
+!if ($NEW_C4_STYLE == 1)
   !$swap=$bgColor
   !$bgColor=$fontColor
   !$fontColor=$swap
@@ -1026,7 +1026,7 @@ $addTagToLegend($tagStereo, $bgColor, $fontColor, $borderColor, $shadowing, $sha
 !unquoted procedure $addElementTagInclReuse($elementName, $tagStereo, $bgColor="", $fontColor="", $borderColor="", $shadowing="", $shape="", $sprite="", $techn="", $legendText="", $legendSprite="", $borderStyle="", $borderThickness="")
 
 'stored tags are already swapped (swap before comparing)
-!if (NEW_C4_STYLE == 1)
+!if ($NEW_C4_STYLE == 1)
   !$swap=$bgColor
   !$bgColor=$fontColor
   !$fontColor=$swap
@@ -1046,7 +1046,7 @@ $addTagToLegend($tagStereo, $bgColor, $fontColor, $borderColor, $shadowing, $sha
   !$borderThickness=$restoreEmpty($elementName, "borderThickness", $borderThickness, %false())
 
 ' swap back
-!if (NEW_C4_STYLE == 1)
+!if ($NEW_C4_STYLE == 1)
   !$swap=$bgColor
   !$bgColor=$fontColor
   !$fontColor=$swap
@@ -1074,7 +1074,7 @@ $addRelTagToLegend($tagStereo, $textColor, $lineColor, $lineStyle, $legendText, 
 ' update the style of existing elements like person, ...
 !unquoted procedure UpdateElementStyle($elementName, $bgColor="", $fontColor="", $borderColor="", $shadowing="", $shape="", $sprite="", $techn="", $legendText="", $legendSprite="", $borderStyle="", $borderThickness="")
 
-!if (NEW_C4_STYLE == 1)
+!if ($NEW_C4_STYLE == 1)
   !$swap=$bgColor
   !$bgColor=$fontColor
   !$fontColor=$swap
@@ -1625,7 +1625,7 @@ $getLegendArea($alias, $hideStereotype, $details)
 
 !unquoted procedure UpdateBoundaryStyle($elementName="", $bgColor="", $fontColor="", $borderColor="", $shadowing="", $shape="", $type="", $legendText="", $borderStyle="", $borderThickness="", $sprite="", $legendSprite="")
 
-!if (NEW_C4_STYLE == 1)
+!if ($NEW_C4_STYLE == 1)
   !$swap=$bgColor
   !$bgColor=$fontColor
   !$fontColor=$swap
@@ -1888,7 +1888,7 @@ $getRel($right("<<-","->>"), $from, $to, $label, $techn, $descr, $sprite, $tags,
 !endfunction
 
 !function $l_down($start,$end)
-  !if (NO_LAY_ROTATE == 0)
+  !if ($NO_LAY_ROTATE == 0)
     !return $down($start,$end)
   !else
     !return $start+"DOWN"+$end
@@ -1896,7 +1896,7 @@ $getRel($right("<<-","->>"), $from, $to, $label, $techn, $descr, $sprite, $tags,
 !endfunction
 
 !function $l_up($start,$end)
-  !if (NO_LAY_ROTATE == 0)
+  !if ($NO_LAY_ROTATE == 0)
     !return $up($start,$end)
   !else
     !return $start+"UP"+$end
@@ -1904,7 +1904,7 @@ $getRel($right("<<-","->>"), $from, $to, $label, $techn, $descr, $sprite, $tags,
 !endfunction
 
 !function $l_left($start,$end)
-  !if (NO_LAY_ROTATE == 0)
+  !if ($NO_LAY_ROTATE == 0)
     !return $left($start,$end)
   !else
     !return $start+"LEFT"+$end
@@ -1912,7 +1912,7 @@ $getRel($right("<<-","->>"), $from, $to, $label, $techn, $descr, $sprite, $tags,
 !endfunction
 
 !function $l_right($start,$end)
-  !if (NO_LAY_ROTATE == 0)
+  !if ($NO_LAY_ROTATE == 0)
     !return $right($start,$end)
   !else
     !return $start+"RIGHT"+$end

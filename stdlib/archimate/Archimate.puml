@@ -60,26 +60,26 @@
 
 ' Layout Helpers
 ' ##################################
-!unquoted procedure Lay_D(e_from, e_to)
-    e_from -[hidden]D- e_to
+!unquoted procedure Lay_D($e_from, $e_to)
+    $e_from -[hidden]D- $e_to
 !endprocedure
-!unquoted procedure Lay_U(e_from, e_to)
-    e_from -[hidden]U- e_to
+!unquoted procedure Lay_U($e_from, $e_to)
+    $e_from -[hidden]U- $e_to
 !endprocedure
-!unquoted procedure Lay_R(e_from, e_to)
-    e_from -[hidden]R- e_to
+!unquoted procedure Lay_R($e_from, $e_to)
+    $e_from -[hidden]R- $e_to
 !endprocedure
-!unquoted procedure Lay_L(e_from, e_to)
-    e_from -[hidden]L- e_to
+!unquoted procedure Lay_L($e_from, $e_to)
+    $e_from -[hidden]L- $e_to
 !endprocedure
 
 ' Boundaries
 ' ##################################
-!unquoted procedure Boundary(e_alias, e_label)
-    rectangle "==e_label" <<boundary>> as e_alias
+!unquoted procedure Boundary($e_alias, $e_label)
+    rectangle "==$e_label" <<boundary>> as $e_alias
 !endprocedure
-!unquoted procedure Boundary(e_alias, e_label, e_type)
-    rectangle "==e_label%n()<size:$ARCH_TECHNOLOGY_TYPE_FONTSIZE>[e_type]</size>" <<boundary>> as e_alias
+!unquoted procedure Boundary($e_alias, $e_label, $e_type)
+    rectangle "==$e_label%n()<size:$ARCH_TECHNOLOGY_TYPE_FONTSIZE>[$e_type]</size>" <<boundary>> as $e_alias
 !endprocedure
 
 ' Elements

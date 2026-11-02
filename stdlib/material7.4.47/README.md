@@ -150,13 +150,13 @@ package "Image sample\nwith C4" {
 
 [![PleaseOpenLinkIfImageCannotBeDisplayed](https://www.plantuml.com/plantuml/svg/TP1DQzn038Rl_XNA46W2mNinvD8DSTnG5fgbbFPMIBHZRJojHkFEo4cNqlzUkKcRZv2JZUPztaVej2XcdI9NrLuGprDFyBPh5brpsILH34BvfAhUm3g1Jp4cgKTB0oVigJy2fPyAoE5Q8eb2fcX80QQj6WImsZx1of0cxc53S2_huU1s27w0K41tO_38l0D9SzMFAMGB186kiHQPNOVmjrO74a3PFVUdBTJruh7Heymwl4bXjjq4XAkz_Ojtgylsm-hz-k9y_NdftDLTxOQsAPEr_z_FnY_JDdmuLaIb792FwwPkZk_TTh9N4wttQHBzKYZ_-s-PifwyZfp7z2qiaDbwH_JVyPh0hUByAHX7fgzo6tImEpduLLK07ocN90Vj4UoNCGUbfOjzU6npziIu8Lwwkp2qxl21F7jAsW8QV98rJPgHNy9d1XlzYNYM6kqwP2us_LrLfoJz5FaF)](https://www.plantuml.com/plantuml/uml/TP1DQzn038Rl_XNA46W2mNinvD8DSTnG5fgbbFPMIBHZRJojHkFEo4cNqlzUkKcRZv2JZUPztaVej2XcdI9NrLuGprDFyBPh5brpsILH34BvfAhUm3g1Jp4cgKTB0oVigJy2fPyAoE5Q8eb2fcX80QQj6WImsZx1of0cxc53S2_huU1s27w0K41tO_38l0D9SzMFAMGB186kiHQPNOVmjrO74a3PFVUdBTJruh7Heymwl4bXjjq4XAkz_Ojtgylsm-hz-k9y_NdftDLTxOQsAPEr_z_FnY_JDdmuLaIb792FwwPkZk_TTh9N4wttQHBzKYZ_-s-PifwyZfp7z2qiaDbwH_JVyPh0hUByAHX7fgzo6tImEpduLLK07ocN90Vj4UoNCGUbfOjzU6npziIu8Lwwkp2qxl21F7jAsW8QV98rJPgHNy9d1XlzYNYM6kqwP2us_LrLfoJz5FaF)
 
-**Material sprites in combination with C4-PlantUML and its new `!NEW_C4_STYLE = 1`**
+**Material sprites in combination with C4-PlantUML and its new `!$NEW_C4_STYLE = 1`**
 
 ```plantuml
 @startuml
 
 ' Activate new C4 style
-!NEW_C4_STYLE = 1
+!$NEW_C4_STYLE = 1
 ' (stdlib <C4/C4_Container> does not yet support new C4 style, it has to be included via orig URL)
 !include https://raw.githubusercontent.com/plantuml-stdlib/C4-PlantUML/master/C4_Container.puml
 

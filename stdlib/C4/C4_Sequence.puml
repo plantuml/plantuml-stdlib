@@ -122,7 +122,7 @@ sequenceDiagram {
 !endif
 ' ======= if no theme is defined hide foot box and activate C4_blue styles
 
-!if (ROUNDED_STYLE == 1)
+!if ($ROUNDED_STYLE == 1)
 skinparam participantRoundCorner $ROUNDED_BOX_SIZE
 !endif
 

@@ -11,7 +11,7 @@
 ' Therefore the colors should be displayed unchanged (the init colors have to be swapped too).
 !$NEW_C4_USE_ORIGINAL_NODE_COLORS ?= 1
 !$nodeColorsSwappedAlready ?= 0
-!if (NEW_C4_STYLE == 1 && $NEW_C4_USE_ORIGINAL_NODE_COLORS == 1 && $nodeColorsSwappedAlready == 0)
+!if ($NEW_C4_STYLE == 1 && $NEW_C4_USE_ORIGINAL_NODE_COLORS == 1 && $nodeColorsSwappedAlready == 0)
   !$swap=$NODE_BG_COLOR
   !$NODE_BG_COLOR=$NODE_FONT_COLOR
   !$NODE_FONT_COLOR=$swap
