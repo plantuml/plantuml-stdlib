@@ -80,7 +80,7 @@ The correct local workflow to build a `plantuml.jar` that includes stuff from `p
   * commit the `./output/**/*.sha1` files that changed
   * copy files from `./output/` to `./src/main/resources/stdlib` of `plantuml/plantuml` fork
     * `cp -r ./output/* ../plantuml/src/main/resources/stdlib`
-    * or `./gradlew syncToPlantuml -PplantumlDir=../plantuml`, which does the full build and also copies the JavaScript bundles
+    * or `./gradlew syncToPlantuml`, which does the full build and also copies the JavaScript bundles
 * in local fork of `plantuml/plantuml`
   * `gradle clean`
   * `gradle jar`
