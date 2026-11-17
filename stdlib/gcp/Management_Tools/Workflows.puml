@@ -1,0 +1,15 @@
+sprite $Workflows [64x64/16z] {
+xPV14eKW24L1o-d_lxYngPx9HIGNhuLtMHoKHBqHJNrGV4cy2J56LgXuAzsgyfxlkOqN_8fmd03oIOa09HUFp-ep7mgT0uC9v52PDlFRJtU0Y3mcFC2dCVuO
+tgx_Ye33Ztp_1X_n-XFW7Vr7aE_fVqQz8mVoQVBVubasKdJmR3PocxSt4k3Z0C_f8VCW2NM2rSTlgPd0vcK2NbsyBC7n_HSq0S_wvGcqbWFntC-Z_dsSP1Pl
+QVBVurl6hBxH9AyOC-L65RnYpBGRNV2ACL0sKgZvqfXLVWqucaNi_uSnGeP97YGqnjCOZ_PxT_sXUMBHcul8kVvwWhx-qpAy-gEP-gDs
+}
+
+!function $WorkflowsIMG($scale=1)
+!return "<img data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAACEUlEQVR42u2by5HDIAyGXRqHrSV1cEwLaSEt+OIC0sK2QAus8ZCZ2MFG6GHAq8N/yzjSZySEkAfv/fCfNSgABaAAFIACKNTztcjkdHs4iEgOxP+aZvkP2WCjCIDovIdodg4qrPM2Y4OVAOAFAEwCzoMgtALAI5a9LxAdwDtmEw/H5oAVgJ+7M1AdxfxOiFo0gK2x24djk1cCAFi5N5yCgAIwG2a3hrYIABKqxQBCZk7FaicrwHAAsAkAreQAuwdhJ0EaDIDkXt3ILjCI7wJ7BgoBsIJ1gEHVAQcAeqoEDboSzC1RrrMA9TATX4hN5CXaWYASo5c4DSoABaAAFIACUAB4ANBKTapSrAqgoEwVLZdrAqh+YGIHUPIGrgLAlBjXWtMk9A3I9wKhXd0xgKBpFgkACkJDABYI5HuBGA5TpwAOw0Fkb62dBGeHLXQVXBJAhLBaBWcDkCiETDcABErh4tZZdQC1pQAUgAJQAApAATABeL4caRTtjHE7MQAco2g1xu1YAMBLWtT1tug1OxlAXPYsQwhnH5jiJAkVQCLmx983nKCVkY9xOYKWjLlIjdpYln7Al4HR+aMY5p70YmyaDGQAkN80CgDXE0wkumyOaBAAviv8vQO4j1G0b+fvo28lBxiI4xAAhaNorru22aXrALYvRoJz3M63NG5XYKxLjKK5Zs8C+tGUAlAACkABKIC8/gAh2rJfRs/+fQAAAABJRU5ErkJggg=={scale="+$scale+"}>"
+!endfunction
+
+EntityColoring(Workflows)
+!define Workflows(e_alias, e_label, e_techn) Entity(e_alias, e_label, e_techn, #036ffc, Workflows, Workflows)
+!define Workflows(e_alias, e_label, e_techn, e_descr) Entity(e_alias, e_label, e_techn, e_descr, #036ffc, Workflows, Workflows)
+!define WorkflowsParticipant(p_alias, p_label, p_techn) Participant(p_alias, p_label, p_techn, #036ffc, Workflows, Workflows)
+!define WorkflowsParticipant(p_alias, p_label, p_techn, p_descr) Participant(p_alias, p_label, p_techn, p_descr, #036ffc, Workflows, Workflows)

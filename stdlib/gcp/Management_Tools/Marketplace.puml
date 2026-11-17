@@ -1,0 +1,15 @@
+sprite $Marketplace [64x64/16z] {
+xLRH2iCW4FFEOE__ltWTwzODPdBe2Xqqhn8Ie-OivS8PO4-CqTiBTKXzvxT9_MOJ-w_31jvyL0sWmwyjWoKYT91zH9TVilB1Jj8uxdHd2OgGYVmZGNu7VQM3
+NqKfx_mAc90FzHR8EgXzdQ2GLmcwv7C3ZQSd4zJoD45NwGa3eUsp11FfqGIHiR_La7z1JdvDCFh8z22XUuAEm-HJxOwi3daYFiwFt24VvBvCklz5U9FkGunV
+4_9o0bQw-qMFKEfVq-byCObJ_qHvnSa216q9g0xnhISmiFhHF0EhP-23zYHqYtA1H8TFdl-5ly8D
+}
+
+!function $MarketplaceIMG($scale=1)
+!return "<img data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAACC0lEQVR42u2awW3DMAxFvVMX0CErdIWs0CuPXsErdIVePEBW6ApegZEAo3BtIbFk8VOyefiXAIGsZ/KTotwxc3dldQbAABgAA2AAXmgYvt07nRaA3xzvFJ0OwPx29wLgMwJIiQBuNRXepcArD6AzRMGhP8e8oAbdhwd99NMsWQCUmCYQffa/7Df+J0kArkYAy82LAkgslRDd+8cKwCQOIBYFTku3Vfh7OfFWOAJAxdF97nfr8A+/IQBQDZ1heNsrAAQ5DMXSQAnAOv8d7DSo3RmGzaa4vwQA1SiYm57l2yf4PEDTDLfhrzAQ0TLDrflNrDIRip0gQeE/ptR+0ZEY2gxzar80AKgZ5tR+8aEoMgpyaj8CAMQMc2s/AgDEDHNrP+ReYLn5r+EniLw5uZLKrf0oAC5sPPKQQpoYPhPcEaJAAOyqArDNT1ml1H5xAH7zsfIkpTEn94UBMJXIzyZvh2O1ObU5aRzAJj+rvjgVN75bpjk1ByAYUanS1CqAZoyvOIC48V3oG6FI3mvfFOMmQpGBBPd13BMSCMB/5w+Xk7VclKIioFsaX0U3xQ7mAfNg0h9/H07zZngh+1DSAOg3QkyIXuDoulIPAWmISqwr0gcgToOl1pU4/vLRWT1yXciDSKRBqXUtAoSNKGhUMMDd6yLeBvKrEJ0vRObzwHX7AOsEDYABMAAGwAC0qSeB52M0rQmqeQAAAABJRU5ErkJggg=={scale="+$scale+"}>"
+!endfunction
+
+EntityColoring(Marketplace)
+!define Marketplace(e_alias, e_label, e_techn) Entity(e_alias, e_label, e_techn, #036ffc, Marketplace, Marketplace)
+!define Marketplace(e_alias, e_label, e_techn, e_descr) Entity(e_alias, e_label, e_techn, e_descr, #036ffc, Marketplace, Marketplace)
+!define MarketplaceParticipant(p_alias, p_label, p_techn) Participant(p_alias, p_label, p_techn, #036ffc, Marketplace, Marketplace)
+!define MarketplaceParticipant(p_alias, p_label, p_techn, p_descr) Participant(p_alias, p_label, p_techn, p_descr, #036ffc, Marketplace, Marketplace)

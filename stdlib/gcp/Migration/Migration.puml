@@ -1,0 +1,14 @@
+sprite $Migration [64x64/16z] {
+xTVR3i0G30RWEiJw_ayyx4Y2QhDioVhVVnM20g3vMCmmjgDT66T1tnmya7opG21wxFZX_9CtRJzSuRTzv6W5tgl_i7SI7qy_Y3mbwjNRpjrqPTeZ4Weyw47g
+RtrGu7CRvVkj2xFzne7hTyxr1sVwa_FynLd-nYjFsLW5Bxsd-89tFO6d0jMaZtWIdtstAcT7o8sCv_7ru_N7h0
+}
+
+!function $MigrationIMG($scale=1)
+!return "<img data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAABP0lEQVR42u3bzRGCMBAF4JSWAy3QgnXkSAu0YE+0YAtrnGEcRcwPP+v68g7vCvO+kRUScCLiWo4jAAEIQAACHJRxvHoL6YfJX4ZJDyCeNMSIlUQA6YbbI+F0gFldjAJkEY4AEOMAog1gYQa8AcR54NUALEz2/qU8AVoE6BYAfYMAYYFAAAIQgAAEIIACQGgR4LkOYGWRQxXAYghAAAIQgAAEIAABVADiwT+WoCoCASB7QoDGLwGBH4LLvcOmANY2TpsB+LZr3ARAYsvcwQOkyq/9a0AB5MpDA5SUhwUoLQ8JUFN+K8Dem63UM4dq+R0A4ay7TdXyPwI4/jW5reVXfs41zxu1CKHk+Krl//5VWbTyVQCI5YsBUMsXASCXzwKgl08CzPv+0OVzAB69fMklAF2+dAjymyECEIAABCAAaO4cE7PjcUNkZgAAAABJRU5ErkJggg=={scale="+$scale+"}>"
+!endfunction
+
+EntityColoring(Migration)
+!define Migration(e_alias, e_label, e_techn) Entity(e_alias, e_label, e_techn, #036ffc, Migration, Migration)
+!define Migration(e_alias, e_label, e_techn, e_descr) Entity(e_alias, e_label, e_techn, e_descr, #036ffc, Migration, Migration)
+!define MigrationParticipant(p_alias, p_label, p_techn) Participant(p_alias, p_label, p_techn, #036ffc, Migration, Migration)
+!define MigrationParticipant(p_alias, p_label, p_techn, p_descr) Participant(p_alias, p_label, p_techn, p_descr, #036ffc, Migration, Migration)

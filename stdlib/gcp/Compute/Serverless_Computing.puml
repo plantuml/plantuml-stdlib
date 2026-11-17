@@ -1,0 +1,15 @@
+sprite $Serverless_Computing [64x64/16z] {
+xPVT3eCm28NBJopl_yIhBcvsRIcKPCiIpuKNrGyEg5XJklL7mXWk8g7iXNSu002YSbZYORi8l7n5loAO-QqZEtycfxtqqeEN1HjFLSsNW6JYuPD-BsOBVnRR
+MRRm0_muOU2XnVcfN3Jdszgb5dhJktXkMyyrFxSVU45t-nJa8S2JRq2aNgSmC9naVS2TEA-FLYkCEC3DcRZhtk6qjuQUIWqnrG3Os6VVhOfyc7xDDvTN2_DM
+jEcGqN4hj4ianbjmvM4rlGRZXzMCIyoyWkyRdgxma39aZZFRIFdo3U6XiMpXKUdBd4UzCvFw5rlhcU5tWEWcdrD8mP-KMr_K0m
+}
+
+!function $Serverless_ComputingIMG($scale=1)
+!return "<img data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAACA0lEQVR42u2bwXXDIAyGPZoOXoEVvEKvHL0CK2SFXDqAV/AKWYHajZtHCTYFRC0ZHfTyXg48/g9JCIE7a23XsnUCQAAIAAEgABhaPz5Wg/W3OQCbeOtYcwDAAwBsABhzA8f0Zq//LglgE2cTDdgDyBQeBUEewDLpDkG4bzwA/GHV3Zj/geXmhKg3kAUQEQBIEDVJAAeTBuwxh3G2pAAcxHyVsQczkQNQRfweBFIAdtw0t7zVe6YWoWpx/ac9SAFAifn+XVSKnQMgtPoF9T1LAJ9YGX9z9VwA3VkAUFafZUMk4P66dQDQDIA15pbtSGMlIjYAnL0aNROzABA4gPwyVdicJA0gJn71isu2xQMd2JfontiqD+P0vVgqIRxzKzSq3eJkr8xxfcrt8uS5pg5IOtOHvDUbQCj2qSc0Fc5XkAsAOGb6UNhiAWBT6AiAtyJt/j8AFHaJlLmjAfCSpmYPwBlIJ4o/fcfw5zLkhEDBYwVyAKq1xA7OCfy3QY7iUQshfuJn3FKY2cpD7pxQxH+Yu/be/qDaYCbYYjtkRU2aYvGjudsKr0Fit8EWq0NVlF3XidUWnwEAajVFqXsAVGuKxpqjZ+aAo4NOlYuRviDjXulm6DIQUEtOjhDQ625uEKocPjg0UFFfiaWewC75xYgHQTcHwP2MRb4ZEgACQAAIAAHAw74ArkB+G4U3uZkAAAAASUVORK5CYII={scale="+$scale+"}>"
+!endfunction
+
+EntityColoring(Serverless_Computing)
+!define Serverless_Computing(e_alias, e_label, e_techn) Entity(e_alias, e_label, e_techn, #036ffc, Serverless_Computing, Serverless_Computing)
+!define Serverless_Computing(e_alias, e_label, e_techn, e_descr) Entity(e_alias, e_label, e_techn, e_descr, #036ffc, Serverless_Computing, Serverless_Computing)
+!define Serverless_ComputingParticipant(p_alias, p_label, p_techn) Participant(p_alias, p_label, p_techn, #036ffc, Serverless_Computing, Serverless_Computing)
+!define Serverless_ComputingParticipant(p_alias, p_label, p_techn, p_descr) Participant(p_alias, p_label, p_techn, p_descr, #036ffc, Serverless_Computing, Serverless_Computing)

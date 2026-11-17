@@ -54,19 +54,25 @@ center footer <font color=red>Warning:</font> Created for discussion, needs to b
 
 ' Elements
 ' ##################################
+!function $GCPImg($service, $color="#036ffc")
+!if %function_exists("$" + $service + "IMG")
+!return %call_user_func("$" + $service + "IMG")
+!endif
+!return "<color:" + $color + "><$" + $service + "></color>"
+!endfunction
 
 !definelong Entity(e_alias, e_label, e_techn, e_color, e_sprite, e_stereo)
-rectangle "==e_label\n<color:e_color><$e_sprite></color>\n//<size:TECHN_FONT_SIZE>[e_techn]</size>//" <<e_stereo>> as e_alias
+rectangle "==e_label\n$GCPImg(e_sprite, e_color)\n//<size:TECHN_FONT_SIZE>[e_techn]</size>//" <<e_stereo>> as e_alias
 !enddefinelong
 
 !definelong Entity(e_alias, e_label, e_techn, e_descr, e_color, e_sprite, e_stereo)
-rectangle "==e_label\n<color:e_color><$e_sprite></color>\n//<size:TECHN_FONT_SIZE>[e_techn]</size>//\n\n e_descr" <<e_stereo>> as e_alias
+rectangle "==e_label\n$GCPImg(e_sprite, e_color)\n//<size:TECHN_FONT_SIZE>[e_techn]</size>//\n\n e_descr" <<e_stereo>> as e_alias
 !enddefinelong
 
 !definelong Participant(p_alias, p_label, p_techn, p_color, p_sprite, p_stereo)
-participant "p_label\n<size:TECHN_FONT_SIZE>[p_techn]</size>" as p_alias << ($p_sprite, p_color) p_stereo>>
+participant "p_label\n$GCPImg(p_sprite, p_color)\n<size:TECHN_FONT_SIZE>[p_techn]</size>" as p_alias <<p_stereo>>
 !enddefinelong
 
 !definelong Participant(p_alias, p_label, p_techn, p_descr, p_color, p_sprite, p_stereo)
-participant "p_label\n<size:TECHN_FONT_SIZE>[p_techn]</size>\n\n p_descr" as p_alias << ($p_sprite, p_color) p_stereo>>
+participant "p_label\n$GCPImg(p_sprite, p_color)\n<size:TECHN_FONT_SIZE>[p_techn]</size>\n\n p_descr" as p_alias <<p_stereo>>
 !enddefinelong

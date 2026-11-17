@@ -1,0 +1,15 @@
+sprite $Datastream [64x64/16z] {
+xPRh2iCW38Lh95B8-x_lDj3L4tKOCoXRctzZd5nwag_TjZl-8OZ88vTNi4-U4n2pjHdAUgb-yAg-D6F8qDVBRfrV89aX0LVbdrQoUGG-v91nVIcWfVK4xDn9
+EM-fymG_ty3kRO3Eyv0wZv2uWvSHSfexwk_rs2d1Gs90HOz_8PL0mOvmu25_tle82GYoGGC3VMfH80lw_FS7FV3lc3z00L9m7C8cb5068voftHCBwcUlihYW
+PfqzYOZF8VSml__WWpsYJxvLQtYzyi5P_YlUpPOd3S1eAgzl8YIxlE5Vk_bJtrz90N1PFsrTNs___gtu5uF5Qys_fVUaupr_nrNZ0G
+}
+
+!function $DatastreamIMG($scale=1)
+!return "<img data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAB3klEQVR42u2b3W3EMAjHvUI3Yomu0DlYo7P05SbqCm4iRaeocjDGJMaGBx6jO37m8x8n5ZyTZ0sBIAAEgAAQAALAtX18/sDJ/ADYnd0sFwy9AMiE4UWk4GHvqJkSwPHnKQC58Rm0mj5iACWHGM/gshHABLDbawYASTkFzEKgiiA2hv+5ZeIs6VCbAZDjfKWVUjBgikmwt4JTENyMwgQEdLMLtNSUVQGYG68f/0EiFdwAMBUFQ6hbioJRAJKVCXFY9SWiANxIYhba4mgAoFUQT7sItogxwzVBjWWpdXEzpQkyVm/ocL66b6hpgl/fv7BZrpnUiVKHaNAg8HZFaHMucQBshkIIIARHRoGqJsgEsJsknEEowd0DoPQcF4CwMzwKIAlSAJgAQNgioUeHvF0TPGoA1KxjXgDJQdU6iWRQUZ0DDnB3DFOstj1cla11h85ZAkyPwrvT0hpRiQj7uwA1N7jYBi9OP/fUg2kAEKePLgQRK6c/BICl0x8FwMzpPw6AGJd9vBhp3Q6XAkCEvu2Xo/80QVB23u7rcQ1NkLEir3NPsEEPUJn5zd0Sa9AEh+f9aE3Q1F3BpzXBaW6KamqCaCXfH9YEF/heoJAKr9W+GYgvRgJAAAgAASAABAC/9gecjIGrS+3TFQAAAABJRU5ErkJggg=={scale="+$scale+"}>"
+!endfunction
+
+EntityColoring(Datastream)
+!define Datastream(e_alias, e_label, e_techn) Entity(e_alias, e_label, e_techn, #036ffc, Datastream, Datastream)
+!define Datastream(e_alias, e_label, e_techn, e_descr) Entity(e_alias, e_label, e_techn, e_descr, #036ffc, Datastream, Datastream)
+!define DatastreamParticipant(p_alias, p_label, p_techn) Participant(p_alias, p_label, p_techn, #036ffc, Datastream, Datastream)
+!define DatastreamParticipant(p_alias, p_label, p_techn, p_descr) Participant(p_alias, p_label, p_techn, p_descr, #036ffc, Datastream, Datastream)

@@ -1,0 +1,15 @@
+sprite $Web3 [64x64/16z] {
+xPRT3iCW28KHIUFxFt6pk8jfWODZJRkavzP-_5L0eaTt4LiAqT9i2SQRByxXo40FNi_-dHXqRtjWL0C63YBdZEBBydmXpyduYQ5vpdJE6Non5EBhPgj2tgDV
+0Zp2PmCptxynqbTIcFYgX4ZUySJxk78-ykK7VBcGfonFnSKnhmte52_3_5Zdn_brIxx5v__nVe859OWNk7y_pIlzWNdo-tC1r_jRMlW1O_LtzFs4vWFIsNmv
+ReWbVdb-pEwlvxTa_cu0YA--WGh_Fro_Vdrw1LOU0Ai6y1sjNmV_w8-q0m
+}
+
+!function $Web3IMG($scale=1)
+!return "<img data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAABdklEQVR42u3bQRKDIAwFUI6WRQ/GslfwCj1cr5DijAvHYlWG5MfyF38NPDEqYFLVNHISAQhAAAIQ4EIez7dYJxxA6dScXKKOmdvDAyyDV2AEBhBg8OYIRwB7097q/v91m0EAXKfjptB+1QRXgFonPKuzV/tXOiDez2iP2+BuAEKAwQBk6BqwefVOQwLAXoUJYAAwTS+xTjiA0qk5uUQdM7eHBwAMfBscQIDBn0IwAVim/V6HLGtA9XZAAOSW6dgjtbYRAJDBt7TfHaA2Fb2f7dEAhACDAaShAVYIghh8CIDOn8P56nLY3wBUlsmHA9DGOkQAAhgAaAAAvxqw04EMLIDq+hQ42BxFJCMAomyPq/uLUDCEBAMAHpFprjndASoY1gel8N8Cdw4B0ACrRZE8HMDfLIh0uPoEIMCdl8U7d0CQAO7H5Xe2xsRp8DkCQAqyM3wIb3klJAIA9I+RAAj4X2ZAR2RO1xvEa6pZ+NMUAQhAAAIQ4Fo+yWsQ7UzRKmkAAAAASUVORK5CYII={scale="+$scale+"}>"
+!endfunction
+
+EntityColoring(Web3)
+!define Web3(e_alias, e_label, e_techn) Entity(e_alias, e_label, e_techn, #036ffc, Web3, Web3)
+!define Web3(e_alias, e_label, e_techn, e_descr) Entity(e_alias, e_label, e_techn, e_descr, #036ffc, Web3, Web3)
+!define Web3Participant(p_alias, p_label, p_techn) Participant(p_alias, p_label, p_techn, #036ffc, Web3, Web3)
+!define Web3Participant(p_alias, p_label, p_techn, p_descr) Participant(p_alias, p_label, p_techn, p_descr, #036ffc, Web3, Web3)

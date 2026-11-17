@@ -1,0 +1,16 @@
+sprite $Mandiant [64x64/16z] {
+xPR9beGW34M1CFt_5xSoj8ePdkscwvnYL-YzIJ10EVST_sD4-4rFp6IfDO21QitS92XeR_ApYA2_A4pR0YdEu2s1cERaTO5SvVuaMm9baVP7CUW2ROqRxrH1
+j1vk7QW8afhSu6L1icjhEq0G6FZ1yuA4V9gn0nc1YP_vks1f38fUvLV1WaTf_nmdo4MmjkN-o-lyMN3hQeGV0c9mZ9y2PazX_10m7mxa3y7otL5-2jQsWVak
+k7KTphjGyhrf7_1ygs_3SQcM5xnZRuM7l4VmiE74dqyHvOKBfA3fSuc2zsVWo-y552my6wOrcxa298KVXwHHWHV3ZnKeDaxYqko2P1KVvIv9Xe1qt11uKhC_
+12M8jHkuSbC529-2n9OEu5DmJQ47ZzWVLEg25AuBfw_y9LeU1d-coU5Z_XjCVj9Wxhyfz5N8AJuFFe_kckEalVl32A_ePg0tz7TymFW1
+}
+
+!function $MandiantIMG($scale=1)
+!return "<img data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAACoUlEQVR42u3bbZHDIBAG4FqohbNQC7WAhVqIBSxgAQtYwAIW1gIXcpO7JgcpYRfYTmEm17k/Td6H5avTXvyHt8sAGAADYAAMgIwGWs9/gH8i5zwYTQsA4u7hflsuby3b7KGT1ueE6UEDAEr9vSljhE349TkzKrYIgBtCLPzyjLUqgBNCMnzms6EAeiOAxlcnGqAXAihJ8iznAebZtTcCVfgygPn/cKNeCJThywFC64BAHR4H0BgBpKxyLxxAIwSQU7V74AEqI9QMTwdQCaF2eFoAYoQW4ekBiBBgKg+vnPbKau8yj+70AEgEzEYrBL9p8Xv1AyhEwO4yn8OHC6och3MBDhEMefgYgOsOcIRgDGl4vgAvECgPV3wBDhAolzreAJkImHWeP8ALBOwm5z0AEggUO7z3AVgRHuLn83ui7W0dAF0JoEYzl80FngDAuLmDhPgFkNK+DQDJVji0uwT/mOzyGq6PBHi+HEcDp7bh7Y0OYNJbBGU4AkxbACfpAELgZwDBcRjsyx8MHUBsGFjHqfdl0fg/BSB3w0Ao4Nv7meV/CiD0+L4KWMwF9l7c+6cAYpNh96EQxjmi908DxOaCMCECl/ChGk620wCxoTDp1gTz/cy1eOZHAaSGQjsE+Nnk/Auvi96t+HuCIXBzBJjPIfaLpPTRACkEUWtijI15ZHg0QAqBfHWIbXQIwpMAHCHghwTE13mi8GQARwjF1bA/3SHW+iYAy47U+iRCAMqCCGM91euFS10zgHWf8FDpapCp71y/Cr6UPP0qU+3r8vsjdAzCuYzgS8nX+xyy6u8FQjWk5gaplHf6dhy8Uq83A3iGEOsJUk1zp19fB4c2R82mvxiBefY+DN8weBeAPwi1HfcdgncF4NQGwAAYAANgAHxy+wYlSQiqH2/2tgAAAABJRU5ErkJggg=={scale="+$scale+"}>"
+!endfunction
+
+EntityColoring(Mandiant)
+!define Mandiant(e_alias, e_label, e_techn) Entity(e_alias, e_label, e_techn, #036ffc, Mandiant, Mandiant)
+!define Mandiant(e_alias, e_label, e_techn, e_descr) Entity(e_alias, e_label, e_techn, e_descr, #036ffc, Mandiant, Mandiant)
+!define MandiantParticipant(p_alias, p_label, p_techn) Participant(p_alias, p_label, p_techn, #036ffc, Mandiant, Mandiant)
+!define MandiantParticipant(p_alias, p_label, p_techn, p_descr) Participant(p_alias, p_label, p_techn, p_descr, #036ffc, Mandiant, Mandiant)

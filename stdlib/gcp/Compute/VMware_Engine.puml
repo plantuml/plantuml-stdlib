@@ -1,0 +1,15 @@
+sprite $VMware_Engine [64x64/16z] {
+xPVT3iCW28N9oSdY-p_nThMYOlbPkcMftDeFx550HBPTOl3CuPjdk06_qdRp2RwN_KeUundVaUUOuqaUvvbq4rw9ME6nB3k_u17Ctt_d1NOcZP_IhJy6d-iV
+BF1uw9KihxVC7eZmdA-PmI_V3pJkAMS-9DVRmLp6l6xFmnCJ3OtMhXDy9pnjWKzuDDD1XTSENWiypECnwR5gI86wM-2f3hiIt_p_62ycplXZEt1y4Yet2a-4
+rvUMBH_UUYv3FdAGnOSIK9fuM0-kXwOzEtxHdW
+}
+
+!function $VMware_EngineIMG($scale=1)
+!return "<img data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAABYUlEQVR42u3bMQ7DIAwFUI7GkIN5zLF6ol6BqlIqRWmSYrDBdv/gKQPJwyJgIJVS0j9HAgAAAAAA7VjWZzYQUwGKgcgAAAAA7AAMGHQBAAAAAMAXQOsIPwVgWTkRDOCiga6XBgAAAOAegDjr84gAedaiCQAAAIBNgHchklm4DAeQR1R7ABAQIJteDgMAAABIx/22s703SYCtzdogEyUxYQCbGyNXu6675xQKYOvVx11DR5QtLX0DNKQzdSDYAmhM40+0INQC6B+Q6Pz4MwSSAlA/IiP08V8v29JbwwEq05UYUGRxe62r9xuyxRVAy0hPWlPcoQDMXx4LISIAC+HQBjFiOkBm9hhVAIjvLpkB+JW2HgGI8++OmAEaY4BZgKT0FyDN+oOHeUDyBJCFFznmel9qMaQ+DZ56YULzoLIXgBT147klMeophIS4M7Sbv7vudaGTovV1N1ybAwAAAAAAo/ECoDpioxq9PW8AAAAASUVORK5CYII={scale="+$scale+"}>"
+!endfunction
+
+EntityColoring(VMware_Engine)
+!define VMware_Engine(e_alias, e_label, e_techn) Entity(e_alias, e_label, e_techn, #036ffc, VMware_Engine, VMware_Engine)
+!define VMware_Engine(e_alias, e_label, e_techn, e_descr) Entity(e_alias, e_label, e_techn, e_descr, #036ffc, VMware_Engine, VMware_Engine)
+!define VMware_EngineParticipant(p_alias, p_label, p_techn) Participant(p_alias, p_label, p_techn, #036ffc, VMware_Engine, VMware_Engine)
+!define VMware_EngineParticipant(p_alias, p_label, p_techn, p_descr) Participant(p_alias, p_label, p_techn, p_descr, #036ffc, VMware_Engine, VMware_Engine)

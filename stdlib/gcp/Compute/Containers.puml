@@ -1,0 +1,16 @@
+sprite $Containers [64x64/16z] {
+xPRBaiGW24KLAEJ_ltYIJYRn0OgwcPfgTgqUBjVOQ0X_EcBSmfaPrsdaJ-0MVSQ2YSX5n7dZT-cyO09prJYR0UkQSSQ4AkVEO1RhCz7HSMp3eCh1z9u0k0oQ
+6YGoiy4YLAhB4SdtWP7JkRhbwwH6qBMsh2fTWm8Z-bQgUURaAe74uXbbcE6b5Ju-qz0l7OB1FmBK4J_dJFxH8Alqpm-R3xe9A0Txl6Q2gv4-NvkWPiS7V642
+53z3_ZN1sduw-FUWDejzV7RQclFau-yCoc7oyiU7Inns-2E-_9SVyM1SFdvU13VvvbzgyTfYe-jgl7R_MNsxvKdlA4RVhdcGyGN39W-36xATBtYpT3j3nfFl
+XL0kUtWGzmibx_Y_l4oyRtAjYoVluwOnSVBJT9w1UQhqvaIlqkK5264fQ8k-Cr3ur_43
+}
+
+!function $ContainersIMG($scale=1)
+!return "<img data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAACgElEQVR42u2bwXmDMAxGGc2HrsAKrJCrj6zACl0hlwyQFbJCVnBRAi2hgCVZlg34oEu+ANLzLwGyqJxz1ZmtKgASXrzrvg3Y6QD0QYO5iVn47fAAhsDtLPgPEIcF4Al8buYwAIY8d0wzuwWwkOduKe+x/9sNAESeL64sQik2ewCcwGOcQx0AZvUoMuaqSB2AdODcOqIOQHOFYteHJHmessawAaSq0rHV5/3DV/s0Ke/TIQvS+x4GoD8BnMSBXbpr0kdWCohLd3ej3xADC0Ddr/zkJC+r24dr3yBMbu/1sOLgG/g495sF4GsBAJZqCpuqdW5Nd6cDgFVuPqXk/iviaTIIfGuhwgBAPq3JaqoGTLGJEPjmqosB+CssV9/FbA5yjwZgLHy+i8dMC4TcRx/jAXjfIR4+EKJpgZC7bXqfJv+PC4CwIlZB7kvH6ADAOslJC6zcV47VBTA8OImkxSD3G1bu2QCQSAuO3LMDQAjGSMg9WwDY6h0q96wBUB5XuXLfBQDiE5zEdfIE4EkLltx3B2A0aLBMewzCj8z5A5h3cQqAAqAAKAAKgAKgAMgHQH+Qac8MYHyBgb2BUwP4PUn7sKcGIPGaGhvAms9cANVWo6IOfHOTBOBrvIRsj0dre0sBCO0jei8A8onR9g4FILU4kv29G6U+cAFgAqf4QZZcjXAA09mhAkDuBuvNCYZKkAKA0mJXHZRs/Jukq/UBA0Bj71Fy9/ZGycstAJ5bsOjus+j+PaU+LAFA5nl+w9KcnJ0D0A48+gcTiCGK1+zhxTOIFXv0RmuYyTFMZfgqq3G22HLP4rtBT1qozx2mGm6cg7Bbr6yH/XQWgk4VePl4ugB42w8RwRuxc2qw3QAAAABJRU5ErkJggg=={scale="+$scale+"}>"
+!endfunction
+
+EntityColoring(Containers)
+!define Containers(e_alias, e_label, e_techn) Entity(e_alias, e_label, e_techn, #036ffc, Containers, Containers)
+!define Containers(e_alias, e_label, e_techn, e_descr) Entity(e_alias, e_label, e_techn, e_descr, #036ffc, Containers, Containers)
+!define ContainersParticipant(p_alias, p_label, p_techn) Participant(p_alias, p_label, p_techn, #036ffc, Containers, Containers)
+!define ContainersParticipant(p_alias, p_label, p_techn, p_descr) Participant(p_alias, p_label, p_techn, p_descr, #036ffc, Containers, Containers)

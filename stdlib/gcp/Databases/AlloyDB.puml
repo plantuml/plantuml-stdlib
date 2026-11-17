@@ -1,0 +1,16 @@
+sprite $AlloyDB [64x64/16z] {
+xPRR3W8X34IXsqN-_uiLinjkKsZH1qtecnlFoLg6YSxj-U6Xp-WO8oyhVBncoU2PpyUouKMdMJHSDAVVpcP3IQUn6UYcVNwcDo1QRv3eEmllOGjDf3L0kdbZ
+sI3IEeCVx5mmJ7YA4GiWJ-SbE1mo47ZO7ivPXwxuCi6NwWxt86WeFeLxTv2dV0emP9mtB_430vVd9lE2WUjJ7_70m6rcnhnpHsdWFd4plgWGHdc5F4uqlmyj
+rCk4V7kf2WE19a3bW0rrcL288eyCKf5XVb1FpQNkzySp0y_oFpIeyYyQjFd7cxJalwzDQ_vhmqq7qkS_6r29p_b1_ofveNyDFEXV8z_shvqNPlER_ogVBhdb
+3_QaflVypJm1
+}
+
+!function $AlloyDBIMG($scale=1)
+!return "<img data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAACOklEQVR42u3bwXWEIBAGYFqwBVugAQ62sC3YgleO24It0MJerIgWCOwzecbVOMAMkN05zCE5mPyfCjPsW+GcE59cggEYgAEYgAEqlb1JZQf5eQBrcLcpHX739gB26vfBX6swRJk/9BDKlwtl587ZsXetQBQLvi8wxEALUTz4prQvERbB5xpQCaJa8IOFsQoEVnANCA76x/1rETCKQeSERg1+sGMUeSKaC36IMUgFgNABjQ6AIPhwtyoUKkR4fcYeEYAuuNuVQn8ibjITYA1uaYPTQvgnIgnAPjqFccd9oFAaEJwMIglgNhILQCWEj0I4GK7yAaS5KfPor9775aipQYBACR5qmkw6gC83mMEBIDQSBFrwebz/XDcL4LsmIzVgN0iFUMB3PdRytfrvYVEAws8R2yIYIiK4vtz/10aIFiCuP8iCAE6KL41PGQBCCHDwk0anLAAiBHAk1lcHqXUAfkMslxD7ERgheBsAkYcjgNlfxx6dUwFoqlMiv3ofBV9SPzOgAngi+BLkEIknwmdNFiYALYTpcoIvZx0mBQAuRHpw0KRJCZAPQRgcfRFc62+IeaodnHYWCHf6GmL0EPcawcv1AXCIuVjwKo0QdLEsEbxqJ+jvNgRCUQZvohVOhQAEX6AHJ03MAlAI7KPydoahmDViNijBmwRIhFCZ22Z7AEAIhdQ3tAtwcn2F3DG2D0A8KzAAAzAAAzAAAzAAAzBAMsCKsD3yEv8IYIugkwH4O0MMwAAMwAAM8N71Be6++XSeVgwqAAAAAElFTkSuQmCC{scale="+$scale+"}>"
+!endfunction
+
+EntityColoring(AlloyDB)
+!define AlloyDB(e_alias, e_label, e_techn) Entity(e_alias, e_label, e_techn, #036ffc, AlloyDB, AlloyDB)
+!define AlloyDB(e_alias, e_label, e_techn, e_descr) Entity(e_alias, e_label, e_techn, e_descr, #036ffc, AlloyDB, AlloyDB)
+!define AlloyDBParticipant(p_alias, p_label, p_techn) Participant(p_alias, p_label, p_techn, #036ffc, AlloyDB, AlloyDB)
+!define AlloyDBParticipant(p_alias, p_label, p_techn, p_descr) Participant(p_alias, p_label, p_techn, p_descr, #036ffc, AlloyDB, AlloyDB)

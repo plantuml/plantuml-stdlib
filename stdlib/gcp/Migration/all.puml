@@ -1,13 +1,29 @@
-sprite $Transfer_Appliance [64x64/16z] {
-tPT7ekCm34CfiO2w_u5dVc-G6OlBl7KGstYgycHCYmARKkE9alGwZdm0l8XFYZCeFY7kv4EkKEGDeB9d86-1e_8OsD7Z6On6ULHXmnqvfCUtNy2G1y2AyZeL
--cdU6-LHXLHUiqAb-DaqG3P0mnqvBDo5CK4EhzrDuMbY6uUJaW1UysC5vTUVHspS-NXX8gU4SPuSahifhqIgCBx88QYt-OBbBR1rjrx8H32KftZu6qX-V-ul
-a-Bo0TOSAFfZE9_-EF_ta-8TqFZPvw7Wzaxway3EdzvU16Rkny-o8JB-O9lV-cxyQYuL9uLARLyllKhpX_AZMZvKXfJvBxtDzID7lNmk9dzYpUMRZn4p6qpQ
-lew8nlP9vRMt09gQw9JNtmBrvFp2G8ZPSjTp6Btp8xlhEJJPWqPv3OVQkZzmUSmySDUjqAN2S075M_T7d_9a_0S
+sprite $Migration [64x64/16z] {
+xTVR3i0G30RWEiJw_ayyx4Y2QhDioVhVVnM20g3vMCmmjgDT66T1tnmya7opG21wxFZX_9CtRJzSuRTzv6W5tgl_i7SI7qy_Y3mbwjNRpjrqPTeZ4Weyw47g
+RtrGu7CRvVkj2xFzne7hTyxr1sVwa_FynLd-nYjFsLW5Bxsd-89tFO6d0jMaZtWIdtstAcT7o8sCv_7ru_N7h0
 }
+
+!function $MigrationIMG($scale=1)
+!return "<img data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAABP0lEQVR42u3bzRGCMBAF4JSWAy3QgnXkSAu0YE+0YAtrnGEcRcwPP+v68g7vCvO+kRUScCLiWo4jAAEIQAACHJRxvHoL6YfJX4ZJDyCeNMSIlUQA6YbbI+F0gFldjAJkEY4AEOMAog1gYQa8AcR54NUALEz2/qU8AVoE6BYAfYMAYYFAAAIQgAAEIIACQGgR4LkOYGWRQxXAYghAAAIQgAAEIAABVADiwT+WoCoCASB7QoDGLwGBH4LLvcOmANY2TpsB+LZr3ARAYsvcwQOkyq/9a0AB5MpDA5SUhwUoLQ8JUFN+K8Dem63UM4dq+R0A4ay7TdXyPwI4/jW5reVXfs41zxu1CKHk+Krl//5VWbTyVQCI5YsBUMsXASCXzwKgl08CzPv+0OVzAB69fMklAF2+dAjymyECEIAABCAAaO4cE7PjcUNkZgAAAABJRU5ErkJggg=={scale="+$scale+"}>"
+!endfunction
+
+EntityColoring(Migration)
+!define Migration(e_alias, e_label, e_techn) Entity(e_alias, e_label, e_techn, #036ffc, Migration, Migration)
+!define Migration(e_alias, e_label, e_techn, e_descr) Entity(e_alias, e_label, e_techn, e_descr, #036ffc, Migration, Migration)
+!define MigrationParticipant(p_alias, p_label, p_techn) Participant(p_alias, p_label, p_techn, #036ffc, Migration, Migration)
+!define MigrationParticipant(p_alias, p_label, p_techn, p_descr) Participant(p_alias, p_label, p_techn, p_descr, #036ffc, Migration, Migration)
+
+sprite $Transfer_Appliance [64x64/16z] {
+xPLB3e0W30Nx8SJxdzWOaO29rdusnCv-GWkl1I19aYGM4ddtDn6IV2ANVpJXz47ZOstmQHQ0el5h1qttv_LvgdzrYjX_P7vv1A_t_vnVd7nMvzVhFzIlos_i
+_7ltZm5i6FK-FzNcnys_xVvnF3xW_RNxy-wJq_V-7ylbDqcIdx43
+}
+
+!function $Transfer_ApplianceIMG($scale=1)
+!return "<img data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAABEUlEQVR42u3ZwQ2DMAyF4YzmQ2fpHD52ha7QWToLK7hBBQkhSgnQKrH/wzvABeWLktghmVmKnAQAAAAAAAAAAAAAAAAAAAAAAAAAcHYut04qyf8B+o/mWCWRGgDG2QgJMF8WsQAqWBrHAK73TnLsS3RloDp5ry0C2MaIy01wD8CA4AZAS5eAu0IoDzDHPoZKEIDFo1Ar2QPKAR7PsrgphYcB2Y6s1gHDs7QAoDsB+kjzpfAvABZa5HhLYPJOo7bDse4Dwt8IeSyFZS2uATY2Q+YS4N0E0Q5vBUheAaR09mcAbV+JHTgGF7uxiADS9K3wCQDxfoy42gQphSmFAQAAAAAAAAAAAAAAAAAAAAAAACd5ARjybW0JAuyjAAAAAElFTkSuQmCC{scale="+$scale+"}>"
+!endfunction
 
 EntityColoring(Transfer_Appliance)
 !define Transfer_Appliance(e_alias, e_label, e_techn) Entity(e_alias, e_label, e_techn, #036ffc, Transfer_Appliance, Transfer_Appliance)
 !define Transfer_Appliance(e_alias, e_label, e_techn, e_descr) Entity(e_alias, e_label, e_techn, e_descr, #036ffc, Transfer_Appliance, Transfer_Appliance)
 !define Transfer_ApplianceParticipant(p_alias, p_label, p_techn) Participant(p_alias, p_label, p_techn, #036ffc, Transfer_Appliance, Transfer_Appliance)
 !define Transfer_ApplianceParticipant(p_alias, p_label, p_techn, p_descr) Participant(p_alias, p_label, p_techn, p_descr, #036ffc, Transfer_Appliance, Transfer_Appliance)
-

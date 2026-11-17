@@ -1,0 +1,15 @@
+sprite $Certificate_Manager [64x64/16z] {
+xPVR3eCW44J9P4Bs_x-uAOPIgdiHj4qJvWcHWpW1TqnfQUaQKKpHfY6kJ5vaQW96UCuztbf0kGrlVGxlslizdX_lKtae9lOyTeOr_dWLtMZi7N_dnUFBHUuc
+w7ZQFEkGt3peUB7vrcojapmdUVab__Glryu1_zB1aJl59sV_kFphQuB5Z_AbRvZdrZdAr_Cpo4FzViRuz9yyeOeHFb0_DJvQlzKw5YpVAX_CBqOT3UKd-4ae
+4BFku-4eb6CcSbIEuBWlHqxdM7SVOFrfB5sb1m
+}
+
+!function $Certificate_ManagerIMG($scale=1)
+!return "<img data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAABVUlEQVR42u3aQRKDIAwFUI7GwoNl2WN5ol4h1RkWHYciUEhC/Iu/aqfoEyHVBGYOT04AAAAAAAAAAAAAAKjJ9nqfoSOslHNsHYBj4Kh44tfIAqQrz8YiCkAGAUgSgC1GGyCmW0MiZBFAbKv6tQADYAWAwhSODb9RBPj6vLlOmApQWTuMBGiendMAGgun0QDVCFMACoXT3rOldQKQJgCVDiYBXTHiYADWBLg9kNws8QpA/0C5nQGPAsh91/stQJnV/26XcLUIhpH/7JYD6EAI7gAaHqTECaUwAAAAAACYBMjtDo8AoMIW6R6AbuoE1wA1JxfcAkg9FQYAAHQAKA0sEbIIYOblqASA6dfjEgCmGySmA1hvkREBsNwkJQZgNQDQBhCsB7rqBAmAZZuoRgHsBgGiJMCyjZTTFyLrXaSjV2PtOiFuM5qk0C4PAAAAAAAAAAAAPOYDmseZi8F54TQAAAAASUVORK5CYII={scale="+$scale+"}>"
+!endfunction
+
+EntityColoring(Certificate_Manager)
+!define Certificate_Manager(e_alias, e_label, e_techn) Entity(e_alias, e_label, e_techn, #036ffc, Certificate_Manager, Certificate_Manager)
+!define Certificate_Manager(e_alias, e_label, e_techn, e_descr) Entity(e_alias, e_label, e_techn, e_descr, #036ffc, Certificate_Manager, Certificate_Manager)
+!define Certificate_ManagerParticipant(p_alias, p_label, p_techn) Participant(p_alias, p_label, p_techn, #036ffc, Certificate_Manager, Certificate_Manager)
+!define Certificate_ManagerParticipant(p_alias, p_label, p_techn, p_descr) Participant(p_alias, p_label, p_techn, p_descr, #036ffc, Certificate_Manager, Certificate_Manager)

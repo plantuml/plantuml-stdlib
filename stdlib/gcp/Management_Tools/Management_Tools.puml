@@ -1,0 +1,15 @@
+sprite $Management_Tools [64x64/16z] {
+xLVH3eCm2AotI-V_V_5cPpPKqFPgbYtnNaoC1mKEYYbT-0S0FUInW29zV8EwSzd0JEJh2OcEpq6KqrjRYEhZWpReOcme25Fi08lFSi4jpl46oU7d1lyL_Dtu
+SHn_NVufACX4GA7-Sshv34KKC8DSAWPo_OdXg0DDthYkRckqJ9t9OfAx7TAqoAP4IhaMb1O-dH9Fx-uvGDZ_MBmC-M7_Qtmw2X_t-CEv-KlR3fS4jDBFr_NR
+spzM2dO2O1fXjHRAcFNcXxP0yBJnfrS4ylms90eZfVB-Gklztx8_7D_VtVi3-_QN_VBHJMP3_N2yl-thXqaV2L4k90DI1tPvD_Be-GMvy9ju00
+}
+
+!function $Management_ToolsIMG($scale=1)
+!return "<img data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAB00lEQVR42u2bwXHEMAhFVRqH1JI6OKYFt5AqXEBqSQvKZsY7k3Ekr8GAQeLwTzt74EmCD8uWWmuZWSUBJIAEkAASgFO9fXz/CjbNA2ALuHaEkjA8nng9KRwKwItTV4MQ4eRxU+9zGAHAqcB6tyQ0gE5Q1NsCagD+lCEtIfVdt6Atyye0dAkAIylJCDjP5hFsT8gCwMzKl8XNGwcAKhfAXTfAB4CGFbXKASCZAx4aqwps30EpQ+TZB5wNvl7pDbzbYNw9F3E77KkXQM2qEaUbpEBYJdpijeFF09wQyhtImSUzAISTQ2Je+Cd3EyHG28VhZoLcxOUJgsYQA06+aYgOYKWUJI0SdjcAqn0tkg7OBADhja+cnPG+fB12cUIymQcAp8YbATCZB4wHgFrmOHnDCAC4TYLRqwASevji1QypGKEniBcNUlrhIfYDpm6GGJ4BGO3wfjzmd0Gi91MXI3CzWxR5JFZdjcTuGopeheA9eJhiLE4JqgMLwgJonSzjxqDWPAA87ge0XOhBM1Qs2uHxfh6ffkHiYmmKvyKzewqaklqSKi1FqAKktTfzNbkbjRBOsSgpUHFglF6gTLssrTmKH/EPE+B2IJL/GUoACSABJIAEEEs/wU0Pa8pApD4AAAAASUVORK5CYII={scale="+$scale+"}>"
+!endfunction
+
+EntityColoring(Management_Tools)
+!define Management_Tools(e_alias, e_label, e_techn) Entity(e_alias, e_label, e_techn, #036ffc, Management_Tools, Management_Tools)
+!define Management_Tools(e_alias, e_label, e_techn, e_descr) Entity(e_alias, e_label, e_techn, e_descr, #036ffc, Management_Tools, Management_Tools)
+!define Management_ToolsParticipant(p_alias, p_label, p_techn) Participant(p_alias, p_label, p_techn, #036ffc, Management_Tools, Management_Tools)
+!define Management_ToolsParticipant(p_alias, p_label, p_techn, p_descr) Participant(p_alias, p_label, p_techn, p_descr, #036ffc, Management_Tools, Management_Tools)

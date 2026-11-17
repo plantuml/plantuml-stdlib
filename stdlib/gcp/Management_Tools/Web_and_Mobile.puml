@@ -1,0 +1,14 @@
+sprite $Web_and_Mobile [64x64/16z] {
+xTVH3e0W20LGJ4Ry_nUNwr6HgpvKZlkOEpKHMX55FfOZkUbeLXK_sNouGjwyWO9UEjxTlkFT2eSFNrryMkkyuuvPm-UHAQbzDgOaWNvipAg5iksCZrcrKDuQ
+1tvCuN_ZrShBdfOy4y7rI-OOXj_VTzjkelyMlQnvcQWVzCaQlX7SqwfdmyC_7TpqYI9xvm8
+}
+
+!function $Web_and_MobileIMG($scale=1)
+!return "<img data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAABI0lEQVR42u3bzRGCMBCG4fREA2nCFmzBa45pgRZswQsF2IIt0MIaZmBERodLfhb2PXxXZB+THZYhTkSc5TgAAAAAAAAypYuj7/u7ilQFSIWHLopMST+uKaE4wPSvL8UrBNhFyADwKV4pgNQG0NAD2gFo6OwAAAAAAAAAAAAA2QDSRdy/p65rfMo6OSc1FQDTMNFqUmsOULD4JV4twLzsm05qTQHSfv7a37f+EWpPak0BUkf3mw7va98cAAAAAAAAAJwcYDtMlYhxgNH8CnBWAcJe8aqa4I85wdd4eQIAAAAAAAAAABz2Qcg8gFgHGCwDDKfYAmo/lQUAAAAAKPGm5jAAl/hypgHmVRAKA+g/MbI+DJEZwLcunjNDAAAAAAAAGAd4A3+mgZLxTZRfAAAAAElFTkSuQmCC{scale="+$scale+"}>"
+!endfunction
+
+EntityColoring(Web_and_Mobile)
+!define Web_and_Mobile(e_alias, e_label, e_techn) Entity(e_alias, e_label, e_techn, #036ffc, Web_and_Mobile, Web_and_Mobile)
+!define Web_and_Mobile(e_alias, e_label, e_techn, e_descr) Entity(e_alias, e_label, e_techn, e_descr, #036ffc, Web_and_Mobile, Web_and_Mobile)
+!define Web_and_MobileParticipant(p_alias, p_label, p_techn) Participant(p_alias, p_label, p_techn, #036ffc, Web_and_Mobile, Web_and_Mobile)
+!define Web_and_MobileParticipant(p_alias, p_label, p_techn, p_descr) Participant(p_alias, p_label, p_techn, p_descr, #036ffc, Web_and_Mobile, Web_and_Mobile)

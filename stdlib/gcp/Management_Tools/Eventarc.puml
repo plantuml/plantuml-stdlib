@@ -1,0 +1,16 @@
+sprite $Eventarc [64x64/16z] {
+xLVRSiKW21JagF__nRLU4fMBEKsdaywSVSX3t1KGYCIv3vu9fDH0-7DjnpKTL7LYm8KYmLT0ElqkeDDyOrXoxwCMCnmKI-xzwAvC0N4HcWtbkA5HH0UEbsfy
+4qLQn9abKPobls0VLFqOlzFZTogbviNhxbSAWa8narj0P57IQoVFHQLJSir7I-rAHu5wFBiU8vk0IIlQIt97-sNJlU-Ear8E8CifCJrttuS2O79SjqF9lT0H
+sUfgJWe_X643P-k5yFsW3x0vBY7yC66JBgu7Ku_lwk6_wTy-FpD_VfC_eNx8CC_yvVMRTzJblDjvVsLusNd9tB9TxpXe3Vox7oltp8zLkvXCURdUvVL-0GLT
+tYcHhFihxEJQ_97VboTQ0vPsVzwyl-_E3typl-2T-OMi-MsS7vMgZERyw1Rvc4Ii4_NBjZ2l7GFqESfJAo3SpEz74qsWtVpEFX7o3y3bVv3kUOxYypVtL7m1
+}
+
+!function $EventarcIMG($scale=1)
+!return "<img data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAACmklEQVR42u1by7GEIBA0tDm8FF4Km8Je52gKpmAKezGAF8umwJMqsXALdIAGdOXQVXvYUrpnmA+MnVKquzO6JkAToAnQBGgCZMZP/9agGTxDHYCX/15bgADCuzidAOOfogVsfjuIKxAoZS1QAeaHaygfnqOSEjcu7gJLrL+Q9a1Fi4EV4Ii8we/gJxwTNzxrYclapCJIBVBSSN03BlJDGE+ACOBwt9XFlgVtLNK/ZC+OFIB9JD3iQATYPFRglZwCHK3l01iEFmCKWVgmASj2P1APcPynlAewwBspSww42JdUMAZ0qWtJibzOXJyzavO8c/KlRmQalOZeytxT8PASp0FcHaDzej/WJ29qDIEIuErQru11pTfn+cmxFbpS5A106Y2IPyLrl+zOJOSRrbLY+rnK25rkJQJwLeuXIC8RYNPVIV/8GN5kIQt585woAZZjLLj7z2R5hvKAEOQ/t26sAIR0f23lHeIrHGcKsWeQIuMV2/8S8g4RUmJIsgCw/X/g9t7tkBhERetPVhBtfRvILFJNgCXKq0ikHstfXgBqAjQBLi/AdwTBGmmQa6dBWCGkn1XS+qhCCFIK20KWSH+hbXxIPQ1paQ+2A4Na6fRmyHIjQvfzS2C022ECnyUoiABnP8xAtPFfRT4meH8b+eD0HXM/z65j8dLkfVfzoe9PuZfb4DEUJc+CSRXMgETI1dhjqE9+9YZRdkmScjnKnhGZnLfDFLKWbCMyd7sev/2ARBuROakHTLcakdGZpX/5ZwGzjcmFDkpmqu7YzCcUH5QMnNDca09D21nn7PFzrDAiIxRBWp/7Bqalo/V6TmhvWHqCD0unjKgjvhmwRKs3Lo86nEB/M3CZb4aErr5ujfbRVBOgCdAEaAI0AfLjH+ooa87zkBzmAAAAAElFTkSuQmCC{scale="+$scale+"}>"
+!endfunction
+
+EntityColoring(Eventarc)
+!define Eventarc(e_alias, e_label, e_techn) Entity(e_alias, e_label, e_techn, #036ffc, Eventarc, Eventarc)
+!define Eventarc(e_alias, e_label, e_techn, e_descr) Entity(e_alias, e_label, e_techn, e_descr, #036ffc, Eventarc, Eventarc)
+!define EventarcParticipant(p_alias, p_label, p_techn) Participant(p_alias, p_label, p_techn, #036ffc, Eventarc, Eventarc)
+!define EventarcParticipant(p_alias, p_label, p_techn, p_descr) Participant(p_alias, p_label, p_techn, p_descr, #036ffc, Eventarc, Eventarc)

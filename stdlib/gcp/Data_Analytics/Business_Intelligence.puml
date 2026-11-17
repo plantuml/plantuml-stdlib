@@ -1,0 +1,15 @@
+sprite $Business_Intelligence [64x64/16z] {
+xTVH3eCW30LGA4tX_xzu2cvIXpGjccp4-sfE3TAYElVaBm8yMfqEGPsdeqywZuE-MdwCqU0_yKGqu5S-u3Et-yATrMzSzCjk8PnpoPTc8Gg-pGMVDfwprzXv
+tsSTgKgkKV6UBusAtXDFg7Z7OpLSNpN8IRxmwj6p6axoxSbwr-2tEUFKxXpl-JJsbsx89Hoit7Gc7OvN6ZZTHvP-kYFt9OGnphfH7_fn7uJoWb_drK_cMN_g
+FR3frFjqWOSRFTJZR_3iijx3u-VsAFG_ifTVu_pYxwVbU-Zv8viYBm
+}
+
+!function $Business_IntelligenceIMG($scale=1)
+!return "<img data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAABlklEQVR42u3bzY3DIBQEYJf2DttCWnAdHGmBFtLCXlJAWkgL2wLBWhxZCDC2+Qm8OYxkKRfPJ4MBK5PWeuKcCQAAAAAAAPDF+ZF/S+hMbiZdA9gi+mJEzwCPDAC6ZwDBGmAzDHYzy6ee1X+GAkiJUncy0WtYAbjlWQH4yrMBCJU3mYYHiJW3E2dbAOf1tVxTrfJNAWb5Ci5epPpdb1QsJUqVbwZg1+x6p7wvSSCp5ZsAhMrf5MuUv8fKJ4EcKV8dILJcFfbGSR1HcEGSy1cFiJWPPMZXQaLlqwDYyS5Ung5OapSzfHGA2GS3/JbhFUdXyvuezGwAkfIPM+GVWvCsObuLzHMidHS8D3UmOGr5XYBck123AKUmuy4AAieyRSa7rwSwj/9Q4/3MEPi8TvBlqL9DE2HDD8DdQHEE0AAAQEMAZwzyAvBsZwkAAADA5c/jLAHcDRlHgFPb8JEBCAA1ATZjULAD8ByBEzcAAgAAAAAAAAAAAC0BRNO9gHMD1Y/EnMXYkdXoFqHfP0zgyxAAAAAAAACgbN4Z6rBZw8LdqwAAAABJRU5ErkJggg=={scale="+$scale+"}>"
+!endfunction
+
+EntityColoring(Business_Intelligence)
+!define Business_Intelligence(e_alias, e_label, e_techn) Entity(e_alias, e_label, e_techn, #036ffc, Business_Intelligence, Business_Intelligence)
+!define Business_Intelligence(e_alias, e_label, e_techn, e_descr) Entity(e_alias, e_label, e_techn, e_descr, #036ffc, Business_Intelligence, Business_Intelligence)
+!define Business_IntelligenceParticipant(p_alias, p_label, p_techn) Participant(p_alias, p_label, p_techn, #036ffc, Business_Intelligence, Business_Intelligence)
+!define Business_IntelligenceParticipant(p_alias, p_label, p_techn, p_descr) Participant(p_alias, p_label, p_techn, p_descr, #036ffc, Business_Intelligence, Business_Intelligence)

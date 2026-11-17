@@ -1,7 +1,11 @@
-sprite $Cloud_Filestore [64x58/16z] {
-jTRLeG8m04FHrBF_mazmhLt87tBgfW_7_JJ6RJFUBo12xwbGt-6eW0ozZGfeypwpwkqt71IGeVTY87U6tayS51360zJzXoTyvo_LHXtmPjxooVrLtXnQQTBx
-yZNeGIC-z7hV-UOIHUWREvzZXLxC2_j0l2HHhtslGygkJpfcr-kKiES53n1TmpZtWbm5tL_y_bHWNA9UWAyEOVh6-qs1SObwCSwz6ETUa4jjYVFy0W
+sprite $Cloud_Filestore [64x64/16z] {
+xTLB2i0W34LH9P1q_olkhD1Wyp43ItXtxAaI2uw1KAVekrdqLEIH0vYUYZmsWNRt7ff2mbEHhmwGybJadV-30yt8T8r5nAgLrsiiJputFSkbafndxJdfnUEE
+Vtz0yfwTxLtFyiHRtWaU7luNVioDy6oYyzq
 }
+
+!function $Cloud_FilestoreIMG($scale=1)
+!return "<img data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAABBUlEQVR42u3ZzQ3CMAyG4YyWAytkhcyRIytkBWZhlq5gKKISQkKExs2PeQ/fsWry2G6q1omI++c4AAAAAAAAAAAAAAAqc7k+4htlSABpmDQUwLMq0jhDAUiHpCEAOlVfrQtmrb5aF3AMAjDmOd/sPWGWWT/s2TDDk/7QE8Ji9X/qAqvVL+4Cq9Uv7gKOQQAAAACA98S8+HtSRbz2Qo9a06ebrRdIZTQ37xTW0xwgKQLIjAASzoucKhN0Nt8HYE0tQJwdIOQhNt8PYO8ohGwIYM8oRGsA2ziUJGajAJ0DAAAAAAAAAAAAAAAAAAAAAABfALbv8JbCnyEAAAAAAAAAAAAAAF5yAxyBp1g4EZa3AAAAAElFTkSuQmCC{scale="+$scale+"}>"
+!endfunction
 
 EntityColoring(Cloud_Filestore)
 !define Cloud_Filestore(e_alias, e_label, e_techn) Entity(e_alias, e_label, e_techn, #036ffc, Cloud_Filestore, Cloud_Filestore)

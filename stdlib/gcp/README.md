@@ -1,14 +1,14 @@
 ---
 name: gcp
-display_name: Gcp
-description:
-author:
-version: 6.0.0
-release:
-license:
+display_name: Google Cloud Platform
+description: Official Google Cloud architecture and product icons for PlantUML
+author: Google Cloud / Crashedmind
+version: 2026.11
+release: 2026-11-17
+license: Apache-2.0
 source: https://github.com/Crashedmind/PlantUML-icons-GCP
-origin:
-uid: b4c2360e5eed5703a60a31daee98e960d811e49e
+origin: https://cloud.google.com/icons
+uid: 4760b30d325155e5c0b4ff0c02d30fff41e1f8ef
 ---
 
-Information about the `gcp` Standard Library.
+Information about the `gcp` Standard Library (Official Google Cloud Architecture Icons from https://cloud.google.com/icons).

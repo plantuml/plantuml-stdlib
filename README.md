@@ -982,7 +982,7 @@ it gives the files of the folder it points to (see its `README.md`).
 | `edgy` | 0.8.0 | [boessu/plantuml-stdlib](https://github.com/boessu/plantuml-stdlib) |
 | `eip` | 1.0.0 | [plantuml-stdlib/EIP-PlantUML](https://github.com/plantuml-stdlib/EIP-PlantUML) |
 | `elastic` | 0.0.1 | [Crashedmind/PlantUML-Elastic-icons](https://github.com/Crashedmind/PlantUML-Elastic-icons) |
-| `gcp` | 6.0.0 | [Crashedmind/PlantUML-icons-GCP](https://github.com/Crashedmind/PlantUML-icons-GCP) |
+| `gcp` | 2026.11 | [cloud.google.com/icons](https://cloud.google.com/icons) / [Crashedmind/PlantUML-icons-GCP](https://github.com/Crashedmind/PlantUML-icons-GCP) |
 | `ibm` | 1.0.1 | [XReyRobert/ibm-icons-for-plantuml](https://github.com/XReyRobert/ibm-icons-for-plantuml) |
 | `k8s` | 1.0.0 | [dcasati/kubernetes-PlantUML](https://github.com/dcasati/kubernetes-PlantUML) |
 | `kubernetes` | 5.3.45 | [plantuml-stdlib/plantuml-kubernetes-sprites](https://github.com/plantuml-stdlib/plantuml-kubernetes-sprites) |

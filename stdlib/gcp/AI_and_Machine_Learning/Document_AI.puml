@@ -1,0 +1,15 @@
+sprite $Document_AI [64x64/16z] {
+xPV92iCm34I564B-_ujhihI5E3EIbTABvsG8psXNR3RrdFoY5BvULSHFtjlH1_23ntRc5pZX8yxiV3T-7kUfQqL-6UOja4lAjmp0AhpBz4-Unp_1T_f_pV3N
+_eMU1BVyVi2xaJ72-zSSGDx-G1_o-Eavu84Ug_91__a5i76Ur56K7we_qtLuot-I2RP4HFqUydpzesbB6-Ww3la_F3ycRwNvcUAh-UlN7xp62sjq__0Telrt
+Qe17BFmd3_vTyH0fKBmQGEp_zmb-KGDGy4Psbtm_d1RWb--NyljfAgqN
+}
+
+!function $Document_AIIMG($scale=1)
+!return "<img data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAABXUlEQVR42u3bQRKDIAwFUI7GogfLssfyRL0CtTMubBVRmxCS/AWr2lFfSwgBUiklRW4JAAAAAADutMfzlTmaOYD5oT+tcDVTANwv3wJY/iXr67M2QOkFMH9Gle9kFYCdX0MaoEu34QBgD4It7KEAJAJTK9a4B2h0gSkKQA0hhQDYGQ1INQ9QBMhSOQAAAAAAAFgaBewAcNYDJGeCkgAck6HfGWFyD3BwHZ2cMpNHgHyxXkAuusA/xRlXQfBmccbPMChdLzAJMHwMUEQgd5mgdKLkCcBXJni1C3jJBM8On8S1WGIlFT5q2dNcgH7aZohbGtvKsukYEKIgAgAAAAAA5gBcbpLCMDhGJkjD7RHSSoW9ApyJG6wLJeZiwPo5Qg6DAPh+jlgAlSlyDICDMniJAiBSFRp2rzAAtvefVAF6b5e/sB5IXWKAxoGJyv0nrpfHkRkcmsKxOQAAAADBAd5MSyx2Q8bPJAAAAABJRU5ErkJggg=={scale="+$scale+"}>"
+!endfunction
+
+EntityColoring(Document_AI)
+!define Document_AI(e_alias, e_label, e_techn) Entity(e_alias, e_label, e_techn, #036ffc, Document_AI, Document_AI)
+!define Document_AI(e_alias, e_label, e_techn, e_descr) Entity(e_alias, e_label, e_techn, e_descr, #036ffc, Document_AI, Document_AI)
+!define Document_AIParticipant(p_alias, p_label, p_techn) Participant(p_alias, p_label, p_techn, #036ffc, Document_AI, Document_AI)
+!define Document_AIParticipant(p_alias, p_label, p_techn, p_descr) Participant(p_alias, p_label, p_techn, p_descr, #036ffc, Document_AI, Document_AI)

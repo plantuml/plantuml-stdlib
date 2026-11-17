@@ -1,7 +1,11 @@
-sprite $Cloud_Filestore [64x58/16z] {
-jTRLeG8m04FHrBF_mazmhLt87tBgfW_7_JJ6RJFUBo12xwbGt-6eW0ozZGfeypwpwkqt71IGeVTY87U6tayS51360zJzXoTyvo_LHXtmPjxooVrLtXnQQTBx
-yZNeGIC-z7hV-UOIHUWREvzZXLxC2_j0l2HHhtslGygkJpfcr-kKiES53n1TmpZtWbm5tL_y_bHWNA9UWAyEOVh6-qs1SObwCSwz6ETUa4jjYVFy0W
+sprite $Cloud_Filestore [64x64/16z] {
+xTLB2i0W34LH9P1q_olkhD1Wyp43ItXtxAaI2uw1KAVekrdqLEIH0vYUYZmsWNRt7ff2mbEHhmwGybJadV-30yt8T8r5nAgLrsiiJputFSkbafndxJdfnUEE
+Vtz0yfwTxLtFyiHRtWaU7luNVioDy6oYyzq
 }
+
+!function $Cloud_FilestoreIMG($scale=1)
+!return "<img data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAABBUlEQVR42u3ZzQ3CMAyG4YyWAytkhcyRIytkBWZhlq5gKKISQkKExs2PeQ/fsWry2G6q1omI++c4AAAAAAAAAAAAAAAqc7k+4htlSABpmDQUwLMq0jhDAUiHpCEAOlVfrQtmrb5aF3AMAjDmOd/sPWGWWT/s2TDDk/7QE8Ji9X/qAqvVL+4Cq9Uv7gKOQQAAAACA98S8+HtSRbz2Qo9a06ebrRdIZTQ37xTW0xwgKQLIjAASzoucKhN0Nt8HYE0tQJwdIOQhNt8PYO8ohGwIYM8oRGsA2ziUJGajAJ0DAAAAAAAAAAAAAAAAAAAAAABfALbv8JbCnyEAAAAAAAAAAAAAAF5yAxyBp1g4EZa3AAAAAElFTkSuQmCC{scale="+$scale+"}>"
+!endfunction
 
 EntityColoring(Cloud_Filestore)
 !define Cloud_Filestore(e_alias, e_label, e_techn) Entity(e_alias, e_label, e_techn, #036ffc, Cloud_Filestore, Cloud_Filestore)
@@ -10,11 +14,13 @@ EntityColoring(Cloud_Filestore)
 !define Cloud_FilestoreParticipant(p_alias, p_label, p_techn, p_descr) Participant(p_alias, p_label, p_techn, p_descr, #036ffc, Cloud_Filestore, Cloud_Filestore)
 
 sprite $Cloud_Storage [64x64/16z] {
-tPTNOiL030ArHKAv_uLp0BD-cFJCFoxCrlXdp5qtx1dtPEEMpliu-WN8E3FHBy6C8wNaAquij01MS0PQ0d9v76pvzHmCjJmEod1779BNsn-mqG_0jilZ5URJ
-VDBot0hhURw4WQzE0xG1Y3l38NMdE-JkG3WvdCJD8137axl3TMuFrZAAkADvlCq8xX0jvAj717MuQPx0yrGzrYIi9g1_cFhWzwyFzXS5tnygOhO-VkW0JdNy
-7jQW0N7-a0bCbWzZ0N7pTFdKMSRopLkURJ3PzgLJTFlK6MJxrhcSGs6MnntgxZo7Y0lJSkSvBEFyIDrv3dTmO9H77ChkF8SLH-O3Tsw56NTidBZ4dVjZplXd
-l0C
+xPLH3yCW28GLBwR__nStIpOZrGsHhdRJU-FXYn6umxcbEuYKEk2RLk2lg_djLDx764FwMs1LHIKFmB-fAXh2PqFhu2cVcfv_3OWwUJws-NXh_wppC-_Fz_SV
+oPvWLQj_5JgTTseUXvPuZShyNlTlwlltu3F_iAh5FvIYgQnQ_7i5Jo03Zu_vAV92VekyS3_-ddV6_Wdthsb_Y8RkhyIFpWyB_xHNTtuk_Qfs
 }
+
+!function $Cloud_StorageIMG($scale=1)
+!return "<img data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAABSklEQVR42u3ZwdGCQAyG4a2FFmwgB1qgBVvwmqMt2AItUIst0EIMIzgM4+Aa4jib/Q7vzXXkUTb7/yQRSTWXAAAAAAAAADuN3YnGttD0sx8C0DeRALEJYP7mIwCIDaCtHeDSkCavzg1n3XfT6yzrfDsOIEMiTVZR1s5qXecYAKIB6EWkzU+8HoCdzZjDA2RMIooOYBpxAAAAALAJYgziIISjMAC8AaY4IzGuc+uXAEUEABeAJ0IEAD72XOD5Sygqt3+L48EIAAAAgPY6Urndj22C+iYSINsYnPSCAIgRYKwb4HTrSZOl9jpw3n03sG2daw4AfUearMr6s9a6zjMARAPQi1j2pOV2qgdgvuivxlsYgIxJRNEBTCMOAAAAQBiAVPUm+GEScFUnwc1ZH0dhAPwBoJgAAAAHgBmBAwAwngsAAAAAAAAAAPC2B1JE3KWR51tdAAAAAElFTkSuQmCC{scale="+$scale+"}>"
+!endfunction
 
 EntityColoring(Cloud_Storage)
 !define Cloud_Storage(e_alias, e_label, e_techn) Entity(e_alias, e_label, e_techn, #036ffc, Cloud_Storage, Cloud_Storage)
@@ -22,12 +28,33 @@ EntityColoring(Cloud_Storage)
 !define Cloud_StorageParticipant(p_alias, p_label, p_techn) Participant(p_alias, p_label, p_techn, #036ffc, Cloud_Storage, Cloud_Storage)
 !define Cloud_StorageParticipant(p_alias, p_label, p_techn, p_descr) Participant(p_alias, p_label, p_techn, p_descr, #036ffc, Cloud_Storage, Cloud_Storage)
 
-sprite $Persistent_Disk [64x64/16z] {
-tPT9bkKW30H15gHy_mDtLtd5VoO0lThzs8U7JCRoPPZt1MuRlOMMH5lhYWrgXJ755Xdx_SJlg5-A0tI1NXL7YCCxGawlFqGr4Hv4cEWEE-JNvp_0IUS8ERny
-X2thDmWl4o67fmcJ277WUtdXYscWsFiNJmC_yc_gi2gEVEgmWNzzqAb3YvZxkaTYWWtTJVoZQN29t-zZV_TyALDiVCplwT3_vi_rq2-nzqC1F9a_VdNeRq7t
-XwSVf_uUUiouuCCd3L1-er-Xlv2NhhrFdw4-35_odVqmMFeq446-EY-zzm3wbPR-xX-0tuRbY_lZ6YkU6_p4TrY-oUTZX0NwFFzjiNtfpIjYs3vFgQdjUzhT
-ID9Nxkp70mGwp1y1BH9OxlY8tK67gUxo7NgPesHuq66gkto7lI2MxYuVOIihN3D0pzyVcvKlupy
+sprite $Hyperdisk [64x64/16z] {
+xPRR4eCm24ILGPF-_m-tMXk1K0FRbtQcFBFisTnqclxrZKMcScgkNT5dybevpbxT2kiRybcP0UmHnnFiNiJ6aCC0XvCbZYPeHbW2QdkD9H0kI09baaz0wgJc
+4nY7R0Bs1F44r1sxN0BdgcOIxCCPJd2iFPpW41AOe0t64WXRA84G8GdKK221jZG0umIa9v9vxss_gw_Qu4g_T0kW8mtuYOlLgvPLzszmDp5kPkRkSoOsPRJy
+3pdJnG4Od1_Qz1Vdrw6lXfxdTxSVfJyxCVhMYjBBzmkYVtKNaDvxlrFqpjNEqNUA9BsLfEbDWZozKW7qKWRHYmGOVKi0qgl_HuHUt8F2kk9_u4_zOlJ9__VL
+oEUuVjky0hl_wuVg3W
 }
+
+!function $HyperdiskIMG($scale=1)
+!return "<img data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAACYklEQVR42u2bwZWDIBRFbSEtpAUbYEELacEW3LK0BVqwBTdTQFpIC7bAyBw9YwhOxP++4Z9h8ZaeE673EVCsnHPVf05VABQABUABUAAwZtS1okQsgOnHmykOFCUKQNsOyMEvMSIA6G5UU9xwax0DhLwBTAP3cUseWkd1TsjL9bkDMGsATXsnqezvOHcV4OoHURuTIXUyzQtAqP4csxoESWXOKrCoPwemMmcV2NRHq8xVBVb10SpzVIFVfbTKHFVgVz/3Kpyifs5VgKlf29bV/e0UlZFVgKhfW+sH72POUhlVBYD692XwS5SkKgDU70wAQFQVyLO+H2wEgJgqQGZ9r30EgogqwBY8/q5LrAJswSO1CtAFj8QqQNf6W1U4a1Y/cv07AMlr/Y0qKIrK1MfxhwBEur/7TkSqoCgqH3gnwQLAJQAwFABNp2kA7IUOYKMChrsCC7y+0ccADJWZ4sbmCgFwZBL8OjoJhtV5pL4WGyrlB79kvL2/fs86wO2tAmUxNF//dG3baZN4990TAHsxiIXQripQF0JUeIv6QU5dCsPUT544A/XnKPRucLMKaPVTzImp/2MDw3Y4WgWp6iMfiIhUn/JMMLDgIVJ9CoBXCLYXpz7LY3FJ6iPeDDnCXuHj6iMAHN0rZKH+R16O5qQ+8nxAyl4hG/WRAPbuFbJS/9QjMjmqz3FK7K+9QnbqcwDY2itkqf4pByUjb46zUZ/zrPDv6jAYfNNrFxlQSuAHpjkAVKsTI0+5DxcqABnH5Wvbv/Te9lfq4Fm+GWD7YGL91wdQv3wzVAAUAAVAAVAAFAD4fAMhVxb76V5YjwAAAABJRU5ErkJggg=={scale="+$scale+"}>"
+!endfunction
+
+EntityColoring(Hyperdisk)
+!define Hyperdisk(e_alias, e_label, e_techn) Entity(e_alias, e_label, e_techn, #036ffc, Hyperdisk, Hyperdisk)
+!define Hyperdisk(e_alias, e_label, e_techn, e_descr) Entity(e_alias, e_label, e_techn, e_descr, #036ffc, Hyperdisk, Hyperdisk)
+!define HyperdiskParticipant(p_alias, p_label, p_techn) Participant(p_alias, p_label, p_techn, #036ffc, Hyperdisk, Hyperdisk)
+!define HyperdiskParticipant(p_alias, p_label, p_techn, p_descr) Participant(p_alias, p_label, p_techn, p_descr, #036ffc, Hyperdisk, Hyperdisk)
+
+sprite $Persistent_Disk [64x64/16z] {
+xPRR4eCm24ILGPF-_m-tMXk1K0FRbtQcFBFisTnqclxrZKMcScgkNT5dybevpbxT2kiRybcP0UmHnnFiNiJ6aCC0XvCbZYPeHbW2QdkD9H0kI09baaz0wgJc
+4nY7R0Bs1F44r1sxN0BdgcOIxCCPJd2iFPpW41AOe0t64WXRA84G8GdKK221jZG0umIa9v9vxss_gw_Qu4g_T0kW8mtuYOlLgvPLzszmDp5kPkRkSoOsPRJy
+3pdJnG4Od1_Qz1Vdrw6lXfxdTxSVfJyxCVhMYjBBzmkYVtKNaDvxlrFqpjNEqNUA9BsLfEbDWZozKW7qKWRHYmGOVKi0qgl_HuHUt8F2kk9_u4_zOlJ9__VL
+oEUuVjky0hl_wuVg3W
+}
+
+!function $Persistent_DiskIMG($scale=1)
+!return "<img data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAACYklEQVR42u2bwZWDIBRFbSEtpAUbYEELacEW3LK0BVqwBTdTQFpIC7bAyBw9YwhOxP++4Z9h8ZaeE673EVCsnHPVf05VABQABUABUAAwZtS1okQsgOnHmykOFCUKQNsOyMEvMSIA6G5UU9xwax0DhLwBTAP3cUseWkd1TsjL9bkDMGsATXsnqezvOHcV4OoHURuTIXUyzQtAqP4csxoESWXOKrCoPwemMmcV2NRHq8xVBVb10SpzVIFVfbTKHFVgVz/3Kpyifs5VgKlf29bV/e0UlZFVgKhfW+sH72POUhlVBYD692XwS5SkKgDU70wAQFQVyLO+H2wEgJgqQGZ9r30EgogqwBY8/q5LrAJswSO1CtAFj8QqQNf6W1U4a1Y/cv07AMlr/Y0qKIrK1MfxhwBEur/7TkSqoCgqH3gnwQLAJQAwFABNp2kA7IUOYKMChrsCC7y+0ccADJWZ4sbmCgFwZBL8OjoJhtV5pL4WGyrlB79kvL2/fs86wO2tAmUxNF//dG3baZN4990TAHsxiIXQripQF0JUeIv6QU5dCsPUT544A/XnKPRucLMKaPVTzImp/2MDw3Y4WgWp6iMfiIhUn/JMMLDgIVJ9CoBXCLYXpz7LY3FJ6iPeDDnCXuHj6iMAHN0rZKH+R16O5qQ+8nxAyl4hG/WRAPbuFbJS/9QjMjmqz3FK7K+9QnbqcwDY2itkqf4pByUjb46zUZ/zrPDv6jAYfNNrFxlQSuAHpjkAVKsTI0+5DxcqABnH5Wvbv/Te9lfq4Fm+GWD7YGL91wdQv3wzVAAUAAVAAVAAFAD4fAMhVxb76V5YjwAAAABJRU5ErkJggg=={scale="+$scale+"}>"
+!endfunction
 
 EntityColoring(Persistent_Disk)
 !define Persistent_Disk(e_alias, e_label, e_techn) Entity(e_alias, e_label, e_techn, #036ffc, Persistent_Disk, Persistent_Disk)
@@ -35,3 +62,17 @@ EntityColoring(Persistent_Disk)
 !define Persistent_DiskParticipant(p_alias, p_label, p_techn) Participant(p_alias, p_label, p_techn, #036ffc, Persistent_Disk, Persistent_Disk)
 !define Persistent_DiskParticipant(p_alias, p_label, p_techn, p_descr) Participant(p_alias, p_label, p_techn, p_descr, #036ffc, Persistent_Disk, Persistent_Disk)
 
+sprite $Storage [64x64/16z] {
+xTP12W0X20LGoz3kV-9fjgLW24CJ_o_39mLX4PsK6eYlMm-bvRZRe8TZygAgF9trBPwMHfNQNaIAiQLfQLG9FFmddjQxlkVNmCDVwMlo_VYxn_o4FysFBs75
+_8A7Z_bW_CuPpr7Eb6h0T54U
+}
+
+!function $StorageIMG($scale=1)
+!return "<img data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAA6UlEQVR42u3bsQ2DMBBA0RvNRWZhjiu9glfILKzAClnh4kgosqKkCOaic/yLXyLMA1MYLGYmMycAHDhoyZtc8i1FainrbwDqybRmQVNXgOAXfwjh28feRsgHoKyPeWbP8qad8/Z14D3z39pcAEq5ppo1pZ63b89dezO2dlwAAAAAAAAAAAAAAEQHaBFkOoAzAwAAAAAAAAAAAAAAAAD8AD6s5c/zYQQAACYHYEUIAAAAAAAAAAAAAIDTANp/DhPrAQAAAAAAAAAAAAAAAADAKABh8wKQqQF2BB0AQN0ABkDw3TjJ3mEA/q87n+GEYFTwxlgAAAAASUVORK5CYII={scale="+$scale+"}>"
+!endfunction
+
+EntityColoring(Storage)
+!define Storage(e_alias, e_label, e_techn) Entity(e_alias, e_label, e_techn, #036ffc, Storage, Storage)
+!define Storage(e_alias, e_label, e_techn, e_descr) Entity(e_alias, e_label, e_techn, e_descr, #036ffc, Storage, Storage)
+!define StorageParticipant(p_alias, p_label, p_techn) Participant(p_alias, p_label, p_techn, #036ffc, Storage, Storage)
+!define StorageParticipant(p_alias, p_label, p_techn, p_descr) Participant(p_alias, p_label, p_techn, p_descr, #036ffc, Storage, Storage)

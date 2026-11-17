@@ -1,0 +1,16 @@
+sprite $Anthos [64x64/16z] {
+xPRBaeCm30J9H37w_o_UnPRbnmAsvAtA1Lr82cQwIKoSRNlccQjv4ItbYPOASEInXW-yXcV66fvv3UyMEE8li5S0wSjp2qJyRurJ07djE0K4xnL0MRek0SNx
+150_EGw12kyHGFlWcWKQl5q0_U-6KQ33MmKA7Zbb4ZXPUXQ1Wl-mnWm2YYSg1VC2YZ-EfM1Q8ECfzY0Np0faFCbH2oO514_bKv22EG71KxM4Si6KGCfHit59
+mOn0mbEtxyM2C2CGW_Hdsum5D1P8qHBNtIyL30NQUBflfkhrlG3gU4d41dsBCHvDMXh2K23Z0RqMq0OC1IJ-oHS6w9FNp2q-xDLDoudGvd7_TwDBf-gn02xJ
+M_i5NWZSfhk6axDlDio909lc__CRxqlnPvxvmlm0
+}
+
+!function $AnthosIMG($scale=1)
+!return "<img data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAACKklEQVR42u2azY2DMBCFaSEtpAUa8IEWaIEWuPqYFtyCW+BCAdvCtkALXjs/uwkxtoEZjzfM4UmRghS973syEUlljKmOnIoBMAAGwAAYAANgAPmjT8IM9uUtBwPgCv+Vv+VgAOQcwNTU4hgAPPan/uwAmKMA8Nl/RHw2gID9Rz4dQMg+yQpoT/6hEq7wHMKnApBLtz7KFZDafwJAtgJy+9QrILdPvYIi7FOuoAj7lCsoxj7VCoqxT7WCouxTrKAo+xQrKM5+7hUUZz/3CsjsT+1LQbIV0Hzra9/t+iDkWEF++xbSpE6+5wBLEFBXkNf+0zWpELBXkM++73FYOgS0FeSx73//+oOIz/AcAuYK8O0HyocKeiCgrADX/nJ53/MAGYKAtQI8+yvKr4AAvgIc+8vlZcI3QC8ErBXA299RPgJhxFgBtH25t3wEgoReAbT9pPK1bl2kjblHrIQAtgJI+9HynuKzdLJWl9SDEWQFmPZlevF7lDbNZXKRNmshiDwA0uzLjcXn+QXhDkGMFWDYd4WFzRgtbq+zBcVC+RcQbf8tMFYAal8PZ5NQevQdeikgLAQztB3oCkDsK302Tby4W0b0M+4gxhCIrv8yuu1BVrDLvtJ1ivGk4gsgZGwRqrvsWsEm+5jFPSCqGAgX1alNK0i2P2UuvhcEKABbXCYU35SEO8CmWBACDABWeUwALgwAEMAVQvO/APDf5RkAA2AADIABMAAGwAAYQCA/4S2MytRL1LgAAAAASUVORK5CYII={scale="+$scale+"}>"
+!endfunction
+
+EntityColoring(Anthos)
+!define Anthos(e_alias, e_label, e_techn) Entity(e_alias, e_label, e_techn, #036ffc, Anthos, Anthos)
+!define Anthos(e_alias, e_label, e_techn, e_descr) Entity(e_alias, e_label, e_techn, e_descr, #036ffc, Anthos, Anthos)
+!define AnthosParticipant(p_alias, p_label, p_techn) Participant(p_alias, p_label, p_techn, #036ffc, Anthos, Anthos)
+!define AnthosParticipant(p_alias, p_label, p_techn, p_descr) Participant(p_alias, p_label, p_techn, p_descr, #036ffc, Anthos, Anthos)

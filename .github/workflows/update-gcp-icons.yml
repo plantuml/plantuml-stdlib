@@ -1,0 +1,142 @@
+name: Check and Update Official GCP Icons
+
+on:
+  # Run monthly on the 1st day of the month at 09:00 UTC
+  schedule:
+    - cron: '0 9 1 * *'
+  # Allow manual trigger from the Actions tab
+  workflow_dispatch:
+    inputs:
+      force_update:
+        description: 'Force rebuild of GCP icons even if archive SHA-256 hashes have not changed'
+        required: false
+        default: 'false'
+        type: boolean
+
+permissions:
+  contents: write
+  pull-requests: write
+  issues: write
+
+jobs:
+  check-and-update-gcp-icons:
+    name: Check & Update GCP Icons
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout fork repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Set up Python 3.12
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Install Pillow for high-quality icon resampling
+        run: pip install Pillow
+
+      - name: Check if official GCP icon archives changed on cloud.google.com/icons
+        id: check_icons
+        run: |
+          OUTPUT=$(python3 stdlib/gcp/_scripts_/update_gcp_icons.py --check)
+          echo "$OUTPUT"
+          if [[ "$OUTPUT" == *"UPDATED=true"* ]] || [[ "${{ github.event.inputs.force_update }}" == "true" ]]; then
+            echo "updated=true" >> "$GITHUB_OUTPUT"
+          else
+            echo "updated=false" >> "$GITHUB_OUTPUT"
+          fi
+
+      - name: Set up JDK 21
+        if: steps.check_icons.outputs.updated == 'true'
+        uses: actions/setup-java@v4
+        with:
+          java-version: '21'
+          distribution: 'temurin'
+
+      - name: Setup Gradle
+        if: steps.check_icons.outputs.updated == 'true'
+        uses: gradle/actions/setup-gradle@v4
+
+      - name: Update GCP icons on a clean branch without fork-only workflow files
+        if: steps.check_icons.outputs.updated == 'true'
+        id: prepare_branch
+        run: |
+          BRANCH_NAME="gcp-icons-update-$(date -u +'%Y-%m')"
+          echo "branch_name=$BRANCH_NAME" >> "$GITHUB_OUTPUT"
+
+          # Keep a copy of the updater script in /tmp so we can switch to a clean upstream branch
+          cp -r stdlib/gcp/_scripts_ /tmp/gcp_scripts_backup
+
+          # Fetch latest upstream plantuml/plantuml-stdlib master if reachable, else use origin/master
+          if git remote add upstream https://github.com/plantuml/plantuml-stdlib.git 2>/dev/null || true; then
+            if git fetch upstream master; then
+              git checkout -B "$BRANCH_NAME" upstream/master
+            else
+              git checkout -B "$BRANCH_NAME"
+            fi
+          fi
+
+          # Ensure this fork-only workflow file is NEVER present on the PR branch
+          git rm -f --ignore-unmatch .github/workflows/update-gcp-icons.yml
+
+          # Restore updater script & manifest and run the full icon update (also updates stdlib/gcp/README.md uid & release)
+          mkdir -p stdlib/gcp/_scripts_
+          cp -r /tmp/gcp_scripts_backup/* stdlib/gcp/_scripts_/
+          python3 stdlib/gcp/_scripts_/update_gcp_icons.py
+
+          # Regenerate output/gcp/*.sha1 checksums and run unit tests
+          ./gradlew test runSpm
+
+      - name: Commit clean branch and open Pull Request (triggers GitHub email notification)
+        if: steps.check_icons.outputs.updated == 'true'
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          BRANCH_NAME="${{ steps.prepare_branch.outputs.branch_name }}"
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+
+          # Stage ONLY stdlib/gcp, README.md, and output/gcp/*.sha1 (never .github/workflows/)
+          git add stdlib/gcp README.md output/gcp
+
+          if git diff --cached --quiet; then
+            echo "No effective changes in stdlib/gcp after rebuild."
+            exit 0
+          fi
+
+          TODAY=$(date -u +'%Y-%m-%d')
+          git commit -m "Update stdlib/gcp with latest official Google Cloud icons ($TODAY)"
+          git push -f origin "$BRANCH_NAME"
+
+          UPSTREAM_PR_URL="https://github.com/plantuml/plantuml-stdlib/compare/master...${{ github.repository_owner }}:${BRANCH_NAME}?expand=1"
+
+          PR_BODY=$(cat <<EOF
+          ## Automated Google Cloud Icons Update ($TODAY)
+
+          @${{ github.repository_owner }} Official Google Cloud icon archives on [cloud.google.com/icons](https://cloud.google.com/icons) have been updated.
+
+          ### What was updated
+          - Regenerated \`stdlib/gcp/**\` (\`[64x64/16z]\` monochrome sprites + 64x64 color PNG \`IMG()\` functions)
+          - Updated \`stdlib/gcp/_scripts_/icons_manifest.json\` with new SHA-256 hashes and \`updated_at\` timestamps
+          - Recomputed \`uid\` in \`stdlib/gcp/README.md\` and checksums in \`output/gcp/*.sha1\`
+          - Verified with \`./gradlew test runSpm\`
+
+          > **Note:** This branch (\`$BRANCH_NAME\`) is clean and does **not** include \`.github/workflows/update-gcp-icons.yml\`.
+          > You can submit it directly to the official upstream repository using this link:
+          > **[Open Pull Request to plantuml/plantuml-stdlib]($UPSTREAM_PR_URL)**
+          EOF
+          )
+
+          # Create a PR in the fork assigned to the fork owner (automatically sends an email via GitHub)
+          gh pr create \
+            --base "${{ github.event.repository.default_branch }}" \
+            --head "$BRANCH_NAME" \
+            --title "chore(gcp): update official GCP icons ($TODAY)" \
+            --body "$PR_BODY" \
+            --assignee "${{ github.repository_owner }}" || \
+          gh issue create \
+            --title "chore(gcp): official GCP icons updated ($TODAY)" \
+            --body "$PR_BODY" \
+            --assignee "${{ github.repository_owner }}"
