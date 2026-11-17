@@ -1,0 +1,21 @@
+sprite $VirtualPrivateCloud <svg viewBox="0 0 24 24" width="64" height="64"><g><rect fill="#aecbfa" x="16" y="2" width="6" height="6"/><rect fill="#669df6" x="19" y="2" width="3" height="6"/><rect fill="#aecbfa" x="16" y="16" width="6" height="6"/><rect fill="#669df6" x="19" y="16" width="3" height="6"/><rect fill="#aecbfa" x="2" y="2" width="6" height="6"/><rect fill="#669df6" x="5" y="2" width="3" height="6"/><rect fill="#aecbfa" x="2" y="16" width="6" height="6"/><rect fill="#669df6" x="5" y="16" width="3" height="6"/><rect fill="#669df6" x="8" y="4" width="8" height="2"/><rect fill="#669df6" x="8" y="18" width="8" height="2"/><rect fill="#669df6" x="18" y="8" width="2" height="8"/><rect fill="#669df6" x="4" y="8" width="2" height="8"/><rect fill="#4285f4" x="4" y="8" width="2" height="2"/><rect fill="#4285f4" x="18" y="8" width="2" height="2"/><rect fill="#4285f4" x="8" y="4" width="2" height="2"/><rect fill="#4285f4" x="8" y="18" width="2" height="2"/></g></svg>
+
+sprite $VirtualPrivateCloud_png [64x64/16z] {
+xPVH3e0W24K5JVt_Bqx1hMMMDbsjvBnspmiu0gM4Ve311DmCWMOMovJz53B7qDzyJVN9m7RV-O2pUupuixoVftq2NOIUwiMae90kXJ0spTSc3OMmzENhFb1f
+QZuNkUXJLsh-UN_55r_yztmq9ipVsloaK3u_vVyrrfVzgS_ltL-dt9-s2mbQRYsGgtC4Am
+}
+
+!function $VirtualPrivateCloudIMG($scale=1)
+!return "<img data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAABU0lEQVR42u3byxWCMBCFYUrLwhZogRbcZkkLtEALtGAtaWHMHPAB5HFEATn8i7txoZdvYcIQChEpzpwCAAAAAGCa9ibGx8ZSt2KvrUtEzK+LZjt1uU7OfAKgXyqxeACpGhfNigDxTl26kw8AAACwEUDZOHupnXmP/8xUX6TpMp3+CqB2cpmkTJfLRi8QAAAAAIBlEAAAAABgA4DHDz6j99Rlv83tU/fRi53HFSsAzDppQp38xdpAr+8mQsOefra87T3RCXXSrj8fiQEAwMkB9H5+9IczZG+AUKeyWQFgGEzMlpe9AcJLngAAAAAAAAAAAAAAAAAAAAAAwMJDUqPo83mdvGqu7XjaOk1sALnGUPTVaTQVtoFeHwHwXAAAAAAAgAMSAAAAAAALAKroUVlZnEMdlWUfAAAAhwcwqXiA5Nn+LecBb3OB3DsHvDYHAAAAADDNHSB7ucWK99GYAAAAAElFTkSuQmCC{scale="+$scale+"}>"
+!endfunction
+
+GCPEntityColoring(VirtualPrivateCloud)
+!define VirtualPrivateCloud(e_alias, e_label, e_techn) GCPEntity(e_alias, e_label, e_techn, #4285F4, VirtualPrivateCloud, VirtualPrivateCloud)
+!define VirtualPrivateCloud(e_alias, e_label, e_techn, e_descr) GCPEntity(e_alias, e_label, e_techn, e_descr, #4285F4, VirtualPrivateCloud, VirtualPrivateCloud)
+!define VirtualPrivateCloudParticipant(p_alias, p_label, p_techn) GCPParticipant(p_alias, p_label, p_techn, #4285F4, VirtualPrivateCloud, VirtualPrivateCloud)
+!define VirtualPrivateCloudParticipant(p_alias, p_label, p_techn, p_descr) GCPParticipant(p_alias, p_label, p_techn, p_descr, #4285F4, VirtualPrivateCloud, VirtualPrivateCloud)
+GCPEntityColoring(Virtual_Private_Cloud)
+!define Virtual_Private_Cloud(e_alias, e_label, e_techn) GCPEntity(e_alias, e_label, e_techn, #4285F4, VirtualPrivateCloud, Virtual_Private_Cloud)
+!define Virtual_Private_Cloud(e_alias, e_label, e_techn, e_descr) GCPEntity(e_alias, e_label, e_techn, e_descr, #4285F4, VirtualPrivateCloud, Virtual_Private_Cloud)
+!define Virtual_Private_CloudParticipant(p_alias, p_label, p_techn) GCPParticipant(p_alias, p_label, p_techn, #4285F4, VirtualPrivateCloud, Virtual_Private_Cloud)
+!define Virtual_Private_CloudParticipant(p_alias, p_label, p_techn, p_descr) GCPParticipant(p_alias, p_label, p_techn, p_descr, #4285F4, VirtualPrivateCloud, Virtual_Private_Cloud)

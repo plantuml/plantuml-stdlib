@@ -1,0 +1,18 @@
+sprite $Hyperdisk <svg viewBox="0 0 512 512" width="64" height="64"><g><path d="M427.491,255.84l-.094.078.054.082-113.231,170h-89.649l-18.572,10.852-2.762,21.148h107.034c13.106,0,25.355-6.637,32.767-17.755l103.689-155.551-1.929-24.73-17.307-4.124h0Z" fill="#fbbc04"/><path d="M199.354,234.122l-50.14-75.209-19.216,6.336v22.505l45.506,68.246-45.506,68.246v20.532l19.216,8.31,50.139-75.209c8.861-13.291,8.861-30.467,0-43.757h.001Z" fill="#34a853"/><path d="M191.939,417.214h0l-107.41-161.214,107.422-161.232.023-20.933-18.926-7.42c-1.484,1.581-2.86,3.284-4.087,5.124L60.636,234.044c-8.848,13.273-8.848,30.425,0,43.694l108.326,162.508c1.248,1.871,2.643,3.603,4.145,5.21,0,.001.002.002.003.003l18.865-6.957-.035-21.287h-.001Z" fill="#4285f4"/><path d="M299.445,256l-107.505,161.214h0l-18.83,28.245c7.425,7.939,17.72,12.541,28.619,12.541h1.509l21.334-32,94.139-141.103-3.173-23.944-16.093-4.953Z" fill="#34a853"/><path d="M451.364,234.045l-108.326-162.508c-7.322-10.981-19.57-17.537-32.767-17.537h-108.543c-10.973,0-21.279,4.544-28.654,12.385l18.899,28.349-.023.034h0l.012-.019,107.481,161.251,19.266,28.897,4.645-6.962c8.859-13.29,8.859-30.466,0-43.755l-98.767-148.181h89.632l113.177,169.918.094-.078,19.236,28.854,4.636-6.954c8.849-13.271,8.849-30.422.001-43.694h0Z" fill="#ea4335"/></g></svg>
+
+sprite $Hyperdisk_png [64x64/16z] {
+xPRR4eCm24ILGPF-_m-tMXk1K0FRbtQcFBFisTnqclxrZKMcScgkNT5dybevpbxT2kiRybcP0UmHnnFiNiJ6aCC0XvCbZYPeHbW2QdkD9H0kI09baaz0wgJc
+4nY7R0Bs1F44r1sxN0BdgcOIxCCPJd2iFPpW41AOe0t64WXRA84G8GdKK221jZG0umIa9v9vxss_gw_Qu4g_T0kW8mtuYOlLgvPLzszmDp5kPkRkSoOsPRJy
+3pdJnG4Od1_Qz1Vdrw6lXfxdTxSVfJyxCVhMYjBBzmkYVtKNaDvxlrFqpjNEqNUA9BsLfEbDWZozKW7qKWRHYmGOVKi0qgl_HuHUt8F2kk9_u4_zOlJ9__VL
+oEUuVjky0hl_wuVg3W
+}
+
+!function $HyperdiskIMG($scale=1)
+!return "<img data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAACYklEQVR42u2bwZWDIBRFbSEtpAUbYEELacEW3LK0BVqwBTdTQFpIC7bAyBw9YwhOxP++4Z9h8ZaeE673EVCsnHPVf05VABQABUABUAAwZtS1okQsgOnHmykOFCUKQNsOyMEvMSIA6G5UU9xwax0DhLwBTAP3cUseWkd1TsjL9bkDMGsATXsnqezvOHcV4OoHURuTIXUyzQtAqP4csxoESWXOKrCoPwemMmcV2NRHq8xVBVb10SpzVIFVfbTKHFVgVz/3Kpyifs5VgKlf29bV/e0UlZFVgKhfW+sH72POUhlVBYD692XwS5SkKgDU70wAQFQVyLO+H2wEgJgqQGZ9r30EgogqwBY8/q5LrAJswSO1CtAFj8QqQNf6W1U4a1Y/cv07AMlr/Y0qKIrK1MfxhwBEur/7TkSqoCgqH3gnwQLAJQAwFABNp2kA7IUOYKMChrsCC7y+0ccADJWZ4sbmCgFwZBL8OjoJhtV5pL4WGyrlB79kvL2/fs86wO2tAmUxNF//dG3baZN4990TAHsxiIXQripQF0JUeIv6QU5dCsPUT544A/XnKPRucLMKaPVTzImp/2MDw3Y4WgWp6iMfiIhUn/JMMLDgIVJ9CoBXCLYXpz7LY3FJ6iPeDDnCXuHj6iMAHN0rZKH+R16O5qQ+8nxAyl4hG/WRAPbuFbJS/9QjMjmqz3FK7K+9QnbqcwDY2itkqf4pByUjb46zUZ/zrPDv6jAYfNNrFxlQSuAHpjkAVKsTI0+5DxcqABnH5Wvbv/Te9lfq4Fm+GWD7YGL91wdQv3wzVAAUAAVAAVAAFAD4fAMhVxb76V5YjwAAAABJRU5ErkJggg=={scale="+$scale+"}>"
+!endfunction
+
+GCPEntityColoring(Hyperdisk)
+!define Hyperdisk(e_alias, e_label, e_techn) GCPEntity(e_alias, e_label, e_techn, #4285F4, Hyperdisk, Hyperdisk)
+!define Hyperdisk(e_alias, e_label, e_techn, e_descr) GCPEntity(e_alias, e_label, e_techn, e_descr, #4285F4, Hyperdisk, Hyperdisk)
+!define HyperdiskParticipant(p_alias, p_label, p_techn) GCPParticipant(p_alias, p_label, p_techn, #4285F4, Hyperdisk, Hyperdisk)
+!define HyperdiskParticipant(p_alias, p_label, p_techn, p_descr) GCPParticipant(p_alias, p_label, p_techn, p_descr, #4285F4, Hyperdisk, Hyperdisk)

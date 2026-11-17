@@ -1,0 +1,23 @@
+sprite $RecommendationsAI <svg viewBox="0 0 24 24" width="64" height="64"><g><g><g ><g ><path fill="#aecbfa" d="M12,2H22V12H12Zm4.46,6.76L19.3,5.93l-.8-.8-2,2-1-1-.8.8Z"/></g><g ><path fill="#4285f4" d="M2,14v8h8V14Zm6,6H4V16H8Z"/></g><path fill="#4285f4" d="M 12 12 L 22 12 L 22 10.03 L 14 10 L 12 12 Z"/><path fill="#669df6" d="M 20 4 L 20 10.02 L 22 12 L 22 2 L 20 4 Z"/></g></g><path fill="#aecbfa" d="M 10 22 L 8 20 L 8 16 L 10 14 L 10 22 Z"/><path fill="#669df6" d="M 2 22 L 4 20 L 8 20 L 10 22 L 2 22 Z"/><g><path fill="#4285f4" d="M2,4v8h8V4Zm6,6H4V6H8Z"/></g><path fill="#aecbfa" d="M 10 12 L 8 10 L 8 6 L 10 4 L 10 12 Z"/><path fill="#669df6" d="M 2 12 L 4 10 L 8 10 L 10 12 L 2 12 Z"/><g><path fill="#4285f4" d="M12,14v8h8V14Zm6,6H14V16h4Z"/></g><path fill="#aecbfa" d="M 20 22 L 18 20 L 18 16 L 20 14 L 20 22 Z"/><path fill="#669df6" d="M 12 22 L 14 20 L 18 20 L 20 22 L 12 22 Z"/></g></svg>
+
+sprite $RecommendationsAI_png [64x64/16z] {
+xTVB4eCW30NGQY3X_x-uQXLZSb4BTRhXxe0vLCiZu-lLysI6ScvvAYMs-SXDFdAJdxZs8yg9dxds8Vb8cnTgya8bFzxn4o_uQKTTUw6INxOazgDQ3-27t4Sr
+VddkhUTxlpntxgZwVTMkUN_ThF6aMbMUzaQTlzY___Qqtup1-6Z2oBDAE7ZnnzDxPZD1ze9k5-kPxGIRHtoUuE3P9QmUysa2vOb1FkCbdjBGY_ElCWQGp_yR
+oaFdzMjTVxHoT_os_n2dQv_tF-BNVZz_Y6CVzjAlpdz2Gz3Z-oUP8Ug--qUygFfcl1egxb_HTtSyU5kPa9VZvH-LTvK9UB7L8sRlAvFtuijFN3seJEx-Elay
+glzowhcJDm
+}
+
+!function $RecommendationsAIIMG($scale=1)
+!return "<img data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAB50lEQVR42u3awW3EIBAFUErjkBZoIS3kytEtuIVtYS8pILVsCyxISHEI4MHM2Mj8w1xWWrP/LTKYsXLOqZlLAQAAAADAlfX4cfaM+no4PSqAky4f3n2urzkBYvg5ATbh5wNIwrcBfCwvLVCnASz/wzcDWF+Oq4z/Af6H6SkBYvg5ATbhpQG+hwNIwksC6M2GagyATHgpAJ3ZVYoBaOrStj5//w0mAEsIr6RnwFUAKp3itfB3A8hN8Wr4286AwnfVmcvglfcAcvi7AvxBqIW/M4CLwdVVO8ERAC7dCgNgagDjPwsXoZQH6NoKh8OMnsqE7wcoXLRYGQQSQHiO4HoSZQNoDV9A2AXgCl9AOAZwNHwGoQrAHT6D0A7QGz5BKAJIhU8Q6ADxhuc4a3nmAaTDbxA0eoMAAAAAANDQGrOctRZWAe5xQpVWnMtaY7V9APdyF8ZaRwLY2wkKQI8DQHkWEIAeA4D6NCgALQZgqe8CLA3nAYVQ5LFyZw9SACInQgUA3fOGCQAAAAAAAAAAAAAAADgB4tGypVRoT/UAtIx1ylbYHDgGzyCQABg6ULwApqMXkCDsAjB1oPgADENDZINQBWDsQPEAGMauUEQoAnB2oFiOxAzxPYCW8ginjeUBcCwOAAAAAACUegP6LVgdkcjjkQAAAABJRU5ErkJggg=={scale="+$scale+"}>"
+!endfunction
+
+GCPEntityColoring(RecommendationsAI)
+!define RecommendationsAI(e_alias, e_label, e_techn) GCPEntity(e_alias, e_label, e_techn, #4285F4, RecommendationsAI, RecommendationsAI)
+!define RecommendationsAI(e_alias, e_label, e_techn, e_descr) GCPEntity(e_alias, e_label, e_techn, e_descr, #4285F4, RecommendationsAI, RecommendationsAI)
+!define RecommendationsAIParticipant(p_alias, p_label, p_techn) GCPParticipant(p_alias, p_label, p_techn, #4285F4, RecommendationsAI, RecommendationsAI)
+!define RecommendationsAIParticipant(p_alias, p_label, p_techn, p_descr) GCPParticipant(p_alias, p_label, p_techn, p_descr, #4285F4, RecommendationsAI, RecommendationsAI)
+GCPEntityColoring(Recommendations_AI)
+!define Recommendations_AI(e_alias, e_label, e_techn) GCPEntity(e_alias, e_label, e_techn, #4285F4, RecommendationsAI, Recommendations_AI)
+!define Recommendations_AI(e_alias, e_label, e_techn, e_descr) GCPEntity(e_alias, e_label, e_techn, e_descr, #4285F4, RecommendationsAI, Recommendations_AI)
+!define Recommendations_AIParticipant(p_alias, p_label, p_techn) GCPParticipant(p_alias, p_label, p_techn, #4285F4, RecommendationsAI, Recommendations_AI)
+!define Recommendations_AIParticipant(p_alias, p_label, p_techn, p_descr) GCPParticipant(p_alias, p_label, p_techn, p_descr, #4285F4, RecommendationsAI, Recommendations_AI)

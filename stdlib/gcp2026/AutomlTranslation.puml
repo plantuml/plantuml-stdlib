@@ -1,0 +1,22 @@
+sprite $AutomlTranslation <svg viewBox="0 0 24 24" width="64" height="64"><g><path fill="#669df6" d="M 15 10.32 L 15.16 10.32 L 15.16 10.16 L 15.16 9.49 L 15.16 9.32 L 15 9.32 L 12.5 9.32 L 12.5 8.34 L 12.5 8.18 L 12.34 8.18 L 11.56 8.18 L 11.4 8.18 L 11.4 8.34 L 11.4 9.32 L 8.99 9.32 L 8.82 9.32 L 8.82 9.49 L 8.82 10.16 L 8.82 10.32 L 8.99 10.32 L 15 10.32 Z"/><path fill="#aecbfa" d="M15.33,14.75a6.8,6.8,0,0,1-2.53-1.27A6.41,6.41,0,0,0,14,11.41H12.81A5,5,0,0,1,12,12.72a4.82,4.82,0,0,1-.81-1.31H10a8.39,8.39,0,0,0,1.27,2.08,6.62,6.62,0,0,1-2.6,1.38l.6,1A8.35,8.35,0,0,0,12,14.27a6.69,6.69,0,0,0,2.75,1.53Z"/><path fill="#4285f4" d="M6.82,19.46l.95,1.65h9.49L22,12.89,20.1,9.6l-4.74,8.21H7.77Z"/><path fill="#4285f4" d="M17.18,4.54l-.95-1.65H6.74L2,11.11,3.9,14.4,8.64,6.19h7.59Z"/></g></svg>
+
+sprite $AutomlTranslation_png [64x64/16z] {
+xLTT3uCW3BGV8Vt_lzZDP2fGeALpYOlt8W-UTxIbr6Lvy5_05cnqbXROn9SsOl8YAIOlCWv1Yl6nIvUO-x4yT-dia9-g7tO4kYlFCRhCdPihv06iT3Lua1A4
+vCryFNTavPV1Umdd09_xFb_6kOC2-LuvL3hLQ-WgVAvBp2EFYX1hT28wFKejpK3XQcEMT5HtYffx809eo6i6gdD76qmz1jNWLVHsfbd9tTiyWR75fKMtVtRW
+wJ50d_WVNx3NAUtMwLWwvC-g-zfnJFAumtVlXxa67vJ7-rnFsktzkodasY4eD45QWiSn-Rv_TcLwReJkxC1O-C5VY0VtmGe
+}
+
+!function $AutomlTranslationIMG($scale=1)
+!return "<img data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAB7UlEQVR42u2by3GEMAyGKU2H1JI6dEwLaSFVUEBqoQXHbExCGMiObL1sdPgPOzCz6JMsycJMKaXpzpoCQAAIAAEgAASAdr28LaAgnwDyg2FWUhC6A7B6Rcn4Te4AoDKA2Q0AA+9vAi8A5tsCKFnZwvjkYglYGc/p/WoABonPTxkkJr7xGiGC92G4VpjgfRxyL2DVrbkAQCh7OORukLtGv74vq6DINwCJxFcMT99K4BYApexR/rgnAE3ez8ZdaMFfACuM8/tMAbQmvr9erhZYAmgqe1YAKKVYtOwdMn2tajtVbAWgvjUVGM/VASB4H5wBQGpT1lT6KA/38fkQbDq5DjtxDmigdgkgd7+fDUs7wcH4n2vcAxqJKlDV718ZegWGcZ8C3H1A9TrNBuLOWDz8TlLjuZZOkHW3V3JBupD6gIYcXhzZ+rgUGkK/uVxTKQMTADwBgNQI4NilUkjPQp6vigSuAY1Kg1IMP/P6f1BAYzynYXh6Fu5PEiNKjucsAADxftF9ikb4k7P8bsmA9Hiuq/M8EuO53gCwD2d7Ml7kvURPAETeSt3a+yIASqLifi0uNp6zDFUXJ0esQtXNuaFRvO/irHCX54ZGAODnuHyPp8a6ToIuP5hQXArgFYDKxxPxyUwACAABIAAEgADQrC8ybzeoAF9u6gAAAABJRU5ErkJggg=={scale="+$scale+"}>"
+!endfunction
+
+GCPEntityColoring(AutomlTranslation)
+!define AutomlTranslation(e_alias, e_label, e_techn) GCPEntity(e_alias, e_label, e_techn, #4285F4, AutomlTranslation, AutomlTranslation)
+!define AutomlTranslation(e_alias, e_label, e_techn, e_descr) GCPEntity(e_alias, e_label, e_techn, e_descr, #4285F4, AutomlTranslation, AutomlTranslation)
+!define AutomlTranslationParticipant(p_alias, p_label, p_techn) GCPParticipant(p_alias, p_label, p_techn, #4285F4, AutomlTranslation, AutomlTranslation)
+!define AutomlTranslationParticipant(p_alias, p_label, p_techn, p_descr) GCPParticipant(p_alias, p_label, p_techn, p_descr, #4285F4, AutomlTranslation, AutomlTranslation)
+GCPEntityColoring(Automl_Translation)
+!define Automl_Translation(e_alias, e_label, e_techn) GCPEntity(e_alias, e_label, e_techn, #4285F4, AutomlTranslation, Automl_Translation)
+!define Automl_Translation(e_alias, e_label, e_techn, e_descr) GCPEntity(e_alias, e_label, e_techn, e_descr, #4285F4, AutomlTranslation, Automl_Translation)
+!define Automl_TranslationParticipant(p_alias, p_label, p_techn) GCPParticipant(p_alias, p_label, p_techn, #4285F4, AutomlTranslation, Automl_Translation)
+!define Automl_TranslationParticipant(p_alias, p_label, p_techn, p_descr) GCPParticipant(p_alias, p_label, p_techn, p_descr, #4285F4, AutomlTranslation, Automl_Translation)

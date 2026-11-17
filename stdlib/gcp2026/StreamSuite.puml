@@ -1,0 +1,21 @@
+sprite $StreamSuite <svg viewBox="0 0 24 24" width="64" height="64"><g stroke="none" stroke-width="1" fill="none"><g transform="translate(2.000000, 5.000000)"><polygon fill="#4285F4" points="5.73397796 1.00704225 16.0899914 1.00704225 14.9576643 2.61830986 4.56525822 2.61830986"></polygon><polygon fill="#4285F4" points="3.45134885 4.29671362 13.8073623 4.29671362 12.6750351 5.90798122 2.28262911 5.90798122"></polygon><polygon fill="#4285F4" points="1.16871974 7.58638498 11.5247332 7.58638498 10.392406 9.19765258 -4.26325641e-14 9.19765258"></polygon><circle stroke="#4285F4" stroke-width="1.61126761" cx="10.3389671" cy="13.2258216" r="1.54413146"></circle><polygon fill="#4285F4" transform="translate(15.360481, 6.110869) rotate(-55.000000) translate(-15.360481, -6.110869) " points="8.48319821 5.29422634 22.2382263 5.29034404 22.2377641 6.92751094 8.48273603 6.93139324"></polygon></g></g></svg>
+
+sprite $StreamSuite_png [64x64/16z] {
+xLNH2eGm31iXIF__YqNqfZvidQbtdD8y2IKsRL8j9P58N8F5w3HZhuucrh9PzmMq9bRrzUag7RMEpdAQu93wDaRKkzR5w7JKVxczGuUpUzswwG71G_zkyDVM
+HOFd31_O_Mt1en8y-q7mXdOFcVxSu67vK-dgUNP14gxJQJUqXsmUjiOG1LIUEi36OuH_l65fWC3-TmD3XnSvdVBvUYOIhyGC
+}
+
+!function $StreamSuiteIMG($scale=1)
+!return "<img data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAABW0lEQVR42u3aMQ6DMAwFUI6WoQfz2GP1RL1CSiWGVgKSEPsHO3/wRCWUJ4dvaJac8zJzLQQgAAEIQAACEIAABCAAAULV4/nOa80JsC5cNoBvCRTgq75WAtXe/dPP4osI1vrWtYdf/J0ZAHjxqfL+CbIFTvQtSnpb3wJAUFWLP00Mtu77UAAH+16mGIR6Wj8KwOXW7wY4eOoin/rNkacGAI68l1bkaQK4mvZUATxOe9oAqBedZNn67lJAI/K8A6jte3cAvdNeN8DgfW/S+tUAIyPPsvWrAG467QnkqzB42suIyGsFCDPtuUsB7WnPFQCq9W8JYB15HgAg+/4WAFur//2FhWz9YQBbm8uVaIwCcHkqdA/QOFuEBNj96oOOviEAB4s8vR4eoDQDRANYCh0g4VOg9/U4AkCaOgUaojD2MblCJ8xzTrB04osHJQlAAAIQgAAEIAABCEAAs/oAVy+B0ceVPhMAAAAASUVORK5CYII={scale="+$scale+"}>"
+!endfunction
+
+GCPEntityColoring(StreamSuite)
+!define StreamSuite(e_alias, e_label, e_techn) GCPEntity(e_alias, e_label, e_techn, #4285F4, StreamSuite, StreamSuite)
+!define StreamSuite(e_alias, e_label, e_techn, e_descr) GCPEntity(e_alias, e_label, e_techn, e_descr, #4285F4, StreamSuite, StreamSuite)
+!define StreamSuiteParticipant(p_alias, p_label, p_techn) GCPParticipant(p_alias, p_label, p_techn, #4285F4, StreamSuite, StreamSuite)
+!define StreamSuiteParticipant(p_alias, p_label, p_techn, p_descr) GCPParticipant(p_alias, p_label, p_techn, p_descr, #4285F4, StreamSuite, StreamSuite)
+GCPEntityColoring(Stream_Suite)
+!define Stream_Suite(e_alias, e_label, e_techn) GCPEntity(e_alias, e_label, e_techn, #4285F4, StreamSuite, Stream_Suite)
+!define Stream_Suite(e_alias, e_label, e_techn, e_descr) GCPEntity(e_alias, e_label, e_techn, e_descr, #4285F4, StreamSuite, Stream_Suite)
+!define Stream_SuiteParticipant(p_alias, p_label, p_techn) GCPParticipant(p_alias, p_label, p_techn, #4285F4, StreamSuite, Stream_Suite)
+!define Stream_SuiteParticipant(p_alias, p_label, p_techn, p_descr) GCPParticipant(p_alias, p_label, p_techn, p_descr, #4285F4, StreamSuite, Stream_Suite)

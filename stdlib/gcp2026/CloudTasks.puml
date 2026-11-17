@@ -1,0 +1,20 @@
+sprite $CloudTasks <svg viewBox="0 0 24 24" width="64" height="64"><g><g><g ><rect fill="#669df6" x="11" y="5" width="2" height="7"/><rect fill="#4285f4" x="11" y="12" width="2" height="7"/></g><g><rect fill="#669df6" x="15" y="5" width="2" height="7"/><rect fill="#4285f4" x="15" y="12" width="2" height="7"/></g><g><rect fill="#669df6" x="19" y="5" width="2" height="7"/><rect fill="#4285f4" x="19" y="12" width="2" height="7"/></g><g><rect fill="#669df6" x="7" y="5" width="2" height="7"/><rect fill="#4285f4" x="7" y="12" width="2" height="7"/></g><g><rect fill="#669df6" x="3" y="5" width="2" height="7"/><rect fill="#4285f4" x="3" y="12" width="2" height="7"/></g></g></g></svg>
+
+sprite $CloudTasks_png [64x64/16z] {
+xOin2i0m3CHYjvJ-_yNbhX12SAPab2Pnjbe3W5qkOOj9OtqVU8HVm_f7VQplzFJqz0VwLwGihHxlFjPtUdfw-WDzYbdBSLG0sE43
+}
+
+!function $CloudTasksIMG($scale=1)
+!return "<img data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAAr0lEQVR42u3asRHCQBADwC/tAmqhDoe0QJNu4cix3sAwduINlGlO9sY/untcOQMAAAAAAAAAAAAAAAAAUu7PdQlJvUrdyc3UrbP2fwXobbomH7Dp7vzUe7fO2gcAAAAAAAAAAAAAAAAAAAAAAACwl9tj7ZAKvUrdyc3lm5tH7QMAAAAAAAAAAAAAAAAAAAAAAAD4AFAhqRe7/9w8at8zOQAAAAAAAAAAAAAAAFwe4AWUiFcpaL4DwgAAAABJRU5ErkJggg=={scale="+$scale+"}>"
+!endfunction
+
+GCPEntityColoring(CloudTasks)
+!define CloudTasks(e_alias, e_label, e_techn) GCPEntity(e_alias, e_label, e_techn, #4285F4, CloudTasks, CloudTasks)
+!define CloudTasks(e_alias, e_label, e_techn, e_descr) GCPEntity(e_alias, e_label, e_techn, e_descr, #4285F4, CloudTasks, CloudTasks)
+!define CloudTasksParticipant(p_alias, p_label, p_techn) GCPParticipant(p_alias, p_label, p_techn, #4285F4, CloudTasks, CloudTasks)
+!define CloudTasksParticipant(p_alias, p_label, p_techn, p_descr) GCPParticipant(p_alias, p_label, p_techn, p_descr, #4285F4, CloudTasks, CloudTasks)
+GCPEntityColoring(Cloud_Tasks)
+!define Cloud_Tasks(e_alias, e_label, e_techn) GCPEntity(e_alias, e_label, e_techn, #4285F4, CloudTasks, Cloud_Tasks)
+!define Cloud_Tasks(e_alias, e_label, e_techn, e_descr) GCPEntity(e_alias, e_label, e_techn, e_descr, #4285F4, CloudTasks, Cloud_Tasks)
+!define Cloud_TasksParticipant(p_alias, p_label, p_techn) GCPParticipant(p_alias, p_label, p_techn, #4285F4, CloudTasks, Cloud_Tasks)
+!define Cloud_TasksParticipant(p_alias, p_label, p_techn, p_descr) GCPParticipant(p_alias, p_label, p_techn, p_descr, #4285F4, CloudTasks, Cloud_Tasks)

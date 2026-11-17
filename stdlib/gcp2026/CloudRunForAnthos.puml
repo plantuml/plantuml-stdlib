@@ -1,0 +1,23 @@
+sprite $CloudRunForAnthos <svg viewBox="0 0 24 24" width="64" height="64"><path d="M6.42,13a3.92,3.92,0,0,0,0,7.83,3.92,3.92,0,0,0,0-7.83ZM6,17.09,5.37,19.2l-.83.42.62-2.53h0l-.62-2.52.83.42L6,17.09Zm0,2.53.83-2.53L6,14.57l3.32,2.52Z" style="fill:#aecbfa"/><path d="M12.75,3.13,7.47,12.42a4.61,4.61,0,0,1,1.26.5l4-7.06,4.32,7.57L12.75,9.06,8.86,13a4.37,4.37,0,0,1,1,.89L12.75,11l4.57,4.64-4.57-2.07L10.4,14.62a4.48,4.48,0,0,1,.5,1.27l1.85-.83,4.36,2H11a4.67,4.67,0,0,1-.22,1.36H21.43Z" style="fill:#4285f4"/></svg>
+
+sprite $CloudRunForAnthos_png [64x64/16z] {
+xLRR3iCW29r83F__nMi551kj5RCzzIJBrgNdmgMNp-V5Yny2SOiEH5jy8i8zUoBOigUD2f3vi6Vl3d3Q0_fRU30JXt2dbncWStQPbtmjhBbT5PY-eIU0DNK4
+Q3mTCrHBy0KezFAr543F1zLPdA5P7H5Oga3w1URwMPeXSp8TKGGM0eWNSGeHM9WX4qW9M8yVqLDBLu7dCyJZFB9diy121u1Qiom0Cu4GCmBt0AyrJUwbmbO5
+R9zVQNOlXMWX_s6jGmLmwgu2PVquTReB43Bb-9WIo0BASJU0MCOQH3OEe0Q_2I2MCTefDFjpFWo60ch9ZRCjR1L6CrH6YBMPdOqQph0uncZQELJ06Pz_m0Lf
+6A3ltrPjWO_gfp6wstVj_mq_ZUVV6TySeRD_IxZk__BpEdQkNxU0xtt9tdvUlFW3lW
+}
+
+!function $CloudRunForAnthosIMG($scale=1)
+!return "<img data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAACNUlEQVR42u2bwXHEIAxFtzQdUpiOqSVVuIDUkhaIPWPPMBiBBAIb0OEfNrs5/If0Baz345z7rKyPATAABsAAGAADYAAe1df33/IA8NCSAHbjsMudWhKA84RLAQhW/xKsBMDFtASAM/gcIZgawBF2CfNdq+Atqw+Rv+GUACKrvyUyYUoApMnIVMCpAHAMHhXRMxBfs/qpgJwCgCTkYiE5NADpqvasgsfGnmbFvBoAZzXPcCzKjBEAJE2kjsM9xuKjY484DXYdi2/a9FCfaxqIj4y9jPkYhGZjsXvwEeaROB43r4KuY484BmPmjqDpWOy2+jnzTAjqY7EFgDC12eZzEFqMxVYVgF5vi8wzIKhWQbXhn18HhwS3vlh5bwiagVhi+BDucoSO96hMQIWWUr1ElZpPGb+BCNsi0zJIlTMHQnMAu6FNYN5XapuMxJ6gBAI2AyBc+ZsYucAqbQYEfQAR81fwXa9B2A6uQMD8f1QFcJoNzYCX/v5r5LRCbEd3VgVwypzxpYoqAKBW03+P2SoYTAVMXIpixuSmFYg5AMmejgUdUTW3LBBuqIpbpgmAy7C34sDcK2h+ja4yFksBANUGmQAF5Rum6kCUBuDNSK68w4nhGanRxoTwzgqo6G2p8JEMoCZC5V6gVFUAsMUU6Axg094IpfYBwMmNoZ4UpfpYuhMc9lHZSBWUnAXGflY4MxKHNS+9D/jMZr70Skx0/J32cfnrMjSU/V7AABgAA2AADIABMACj6B8gvhBtl7qbPAAAAABJRU5ErkJggg=={scale="+$scale+"}>"
+!endfunction
+
+GCPEntityColoring(CloudRunForAnthos)
+!define CloudRunForAnthos(e_alias, e_label, e_techn) GCPEntity(e_alias, e_label, e_techn, #4285F4, CloudRunForAnthos, CloudRunForAnthos)
+!define CloudRunForAnthos(e_alias, e_label, e_techn, e_descr) GCPEntity(e_alias, e_label, e_techn, e_descr, #4285F4, CloudRunForAnthos, CloudRunForAnthos)
+!define CloudRunForAnthosParticipant(p_alias, p_label, p_techn) GCPParticipant(p_alias, p_label, p_techn, #4285F4, CloudRunForAnthos, CloudRunForAnthos)
+!define CloudRunForAnthosParticipant(p_alias, p_label, p_techn, p_descr) GCPParticipant(p_alias, p_label, p_techn, p_descr, #4285F4, CloudRunForAnthos, CloudRunForAnthos)
+GCPEntityColoring(Cloud_Run_For_Anthos)
+!define Cloud_Run_For_Anthos(e_alias, e_label, e_techn) GCPEntity(e_alias, e_label, e_techn, #4285F4, CloudRunForAnthos, Cloud_Run_For_Anthos)
+!define Cloud_Run_For_Anthos(e_alias, e_label, e_techn, e_descr) GCPEntity(e_alias, e_label, e_techn, e_descr, #4285F4, CloudRunForAnthos, Cloud_Run_For_Anthos)
+!define Cloud_Run_For_AnthosParticipant(p_alias, p_label, p_techn) GCPParticipant(p_alias, p_label, p_techn, #4285F4, CloudRunForAnthos, Cloud_Run_For_Anthos)
+!define Cloud_Run_For_AnthosParticipant(p_alias, p_label, p_techn, p_descr) GCPParticipant(p_alias, p_label, p_techn, p_descr, #4285F4, CloudRunForAnthos, Cloud_Run_For_Anthos)

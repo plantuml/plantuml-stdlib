@@ -1,0 +1,22 @@
+sprite $BusinessIntelligence <svg viewBox="0 0 512 512" width="64" height="64"><g><path fill="#9aa0a6" d="M70,253.4c-4.6,0-9.1-2-12.3-5.8-5.7-6.8-4.8-16.9,2-22.5l111.6-93.1c3.9-3.3,9.2-4.5,14.1-3.2l140,35,105.2-105.1c6.2-6.2,16.4-6.2,22.6,0,6.2,6.2,6.2,16.4,0,22.6l-111.6,111.5c-4,4-9.7,5.6-15.2,4.2l-140.9-35.2-105.4,87.9c-3,2.5-6.6,3.7-10.2,3.7h0Z"/><path fill="#4285f4" d="M70,458c-8.8,0-16-7.2-16-16v-55.8c0-8.8,7.2-16,16-16s16,7.2,16,16v55.8c0,8.8-7.2,16-16,16Z"/><path fill="#4285f4" d="M330.4,458c-8.8,0-16-7.2-16-16v-93c0-8.8,7.2-16,16-16s16,7.2,16,16v93c0,8.8-7.2,16-16,16Z"/><path fill="#9aa0a6" d="M181.6,458c-8.8,0-16-7.2-16-16v-130.2c0-8.8,7.2-16,16-16s16,7.2,16,16v130.2c0,8.8-7.2,16-16,16Z"/><path fill="#9aa0a6" d="M442,458c-8.8,0-16-7.2-16-16v-167.4c0-8.8,7.2-16,16-16s16,7.2,16,16v167.4c0,8.8-7.2,16-16,16Z"/><path fill="#4285f4" d="M70,253.4c-4.6,0-9.1-2-12.3-5.8-5.7-6.8-4.8-16.9,2-22.5l111.6-93.1c4.2-3.5,8.7-4.1,12.1-3.6,2.2.3,4.9,1.1,7.5,1.7,6.9,1.6,16,4,25.1,6.3l-135.8,113.3c-3,2.5-6.6,3.7-10.2,3.7h0Z"/><path fill="#4285f4" d="M442,197.6c-8.8,0-16-7.2-16-16v-95.6h-95.6c-8.8,0-16-7.2-16-16s7.2-16,16-16h111.6c8.8,0,16,7.2,16,16v111.6c0,8.8-7.2,16-16,16h0Z"/></g></svg>
+
+sprite $BusinessIntelligence_png [64x64/16z] {
+xTVH3eCW30LGA4tX_xzu2cvIXpGjccp4-sfE3TAYElVaBm8yMfqEGPsdeqywZuE-MdwCqU0_yKGqu5S-u3Et-yATrMzSzCjk8PnpoPTc8Gg-pGMVDfwprzXv
+tsSTgKgkKV6UBusAtXDFg7Z7OpLSNpN8IRxmwj6p6axoxSbwr-2tEUFKxXpl-JJsbsx89Hoit7Gc7OvN6ZZTHvP-kYFt9OGnphfH7_fn7uJoWb_drK_cMN_g
+FR3frFjqWOSRFTJZR_3iijx3u-VsAFG_ifTVu_pYxwVbU-Zv8viYBm
+}
+
+!function $BusinessIntelligenceIMG($scale=1)
+!return "<img data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAABlklEQVR42u3bzY3DIBQEYJf2DttCWnAdHGmBFtLCXlJAWkgL2wLBWhxZCDC2+Qm8OYxkKRfPJ4MBK5PWeuKcCQAAAAAAAPDF+ZF/S+hMbiZdA9gi+mJEzwCPDAC6ZwDBGmAzDHYzy6ee1X+GAkiJUncy0WtYAbjlWQH4yrMBCJU3mYYHiJW3E2dbAOf1tVxTrfJNAWb5Ci5epPpdb1QsJUqVbwZg1+x6p7wvSSCp5ZsAhMrf5MuUv8fKJ4EcKV8dILJcFfbGSR1HcEGSy1cFiJWPPMZXQaLlqwDYyS5Ung5OapSzfHGA2GS3/JbhFUdXyvuezGwAkfIPM+GVWvCsObuLzHMidHS8D3UmOGr5XYBck123AKUmuy4AAieyRSa7rwSwj/9Q4/3MEPi8TvBlqL9DE2HDD8DdQHEE0AAAQEMAZwzyAvBsZwkAAADA5c/jLAHcDRlHgFPb8JEBCAA1ATZjULAD8ByBEzcAAgAAAAAAAAAAAC0BRNO9gHMD1Y/EnMXYkdXoFqHfP0zgyxAAAAAAAACgbN4Z6rBZw8LdqwAAAABJRU5ErkJggg=={scale="+$scale+"}>"
+!endfunction
+
+GCPEntityColoring(BusinessIntelligence)
+!define BusinessIntelligence(e_alias, e_label, e_techn) GCPEntity(e_alias, e_label, e_techn, #4285F4, BusinessIntelligence, BusinessIntelligence)
+!define BusinessIntelligence(e_alias, e_label, e_techn, e_descr) GCPEntity(e_alias, e_label, e_techn, e_descr, #4285F4, BusinessIntelligence, BusinessIntelligence)
+!define BusinessIntelligenceParticipant(p_alias, p_label, p_techn) GCPParticipant(p_alias, p_label, p_techn, #4285F4, BusinessIntelligence, BusinessIntelligence)
+!define BusinessIntelligenceParticipant(p_alias, p_label, p_techn, p_descr) GCPParticipant(p_alias, p_label, p_techn, p_descr, #4285F4, BusinessIntelligence, BusinessIntelligence)
+GCPEntityColoring(Business_Intelligence)
+!define Business_Intelligence(e_alias, e_label, e_techn) GCPEntity(e_alias, e_label, e_techn, #4285F4, BusinessIntelligence, Business_Intelligence)
+!define Business_Intelligence(e_alias, e_label, e_techn, e_descr) GCPEntity(e_alias, e_label, e_techn, e_descr, #4285F4, BusinessIntelligence, Business_Intelligence)
+!define Business_IntelligenceParticipant(p_alias, p_label, p_techn) GCPParticipant(p_alias, p_label, p_techn, #4285F4, BusinessIntelligence, Business_Intelligence)
+!define Business_IntelligenceParticipant(p_alias, p_label, p_techn, p_descr) GCPParticipant(p_alias, p_label, p_techn, p_descr, #4285F4, BusinessIntelligence, Business_Intelligence)

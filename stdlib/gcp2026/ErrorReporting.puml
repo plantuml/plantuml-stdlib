@@ -1,0 +1,23 @@
+sprite $ErrorReporting <svg viewBox="0 0 24 24" width="64" height="64"><g><g ><path fill="#669df6" d="M 7 2 L 2 7 L 2 17 L 7 22 L 12 22 L 9.5 19.14 L 8.25 19.14 L 4.86 15.75 L 4.86 8.25 L 8.25 4.86 L 9.5 4.86 L 12 2 L 7 2 Z"/><path fill="#669df6" d="M 14.5 2 L 12 4.86 L 15.75 4.86 L 19.14 8.25 L 19.14 15.75 L 15.75 19.14 L 12 19.14 L 14.5 22 L 17 22 L 22 17 L 22 7 L 17 2 L 14.5 2 Z"/><path fill="#4285f4" d="M 12 17 L 9.5 14.5 L 12 12 L 9.5 9.5 L 12 7 L 9.5 7 L 7 9.5 L 7 14.5 L 9.5 17 L 12 17 Z"/><path fill="#4285f4" d="M 14.5 7 L 12 9.5 L 14.5 12 L 12 14.5 L 14.5 17 L 17 14.5 L 17 9.5 L 14.5 7 Z"/></g></g></svg>
+
+sprite $ErrorReporting_png [64x64/16z] {
+xPVH3iCW24L56-F_V_6MjTkqNE2Izh6yIJYdQQA2fJnnRxGvPCa9W_SfsfwJxrfoU3-I_uHSmoD1YFk2XYfxPmKGRvqLh9NDmYr1Kp--XlY220y4CUuA6DmH
+SBWfG7ZTWn8qZM_Z4yTgL2r0l8KF802yZGE1mmDy4eGynF-2Y3Vmdo3WwrwyBR9PmF58aEA18CThGP9NWYn_5gJvao3FeosOu4zxAClZ7KppQWVdUEi0aBp6
+KtpL-E3ERxM-pzuVXe2-Vx2WnBmu0hjukhzjWLCxzmzBu9NYheJxbz4eXHomp3xB2PmspGZSBXyBWY4X4eGpXh3p6p6TU09glB47K78-ikRdKYu9elT388ZV
+BqWWFFukdcFDFO_Bs-C5
+}
+
+!function $ErrorReportingIMG($scale=1)
+!return "<img data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAABr0lEQVR42u3bvY3DMAwFYI3GIrPcHCqzQpbMCro7wK0UiXz8c1iwCiL4fQhiW6TaGKN9c7UCKIACKABE/bzenVHEXI9CAVwXNQ6rL9ajje9TCABm+LFYrx2sQ64A3PD/IQHhIQjZw4sRrMOv/vSGsMgEQCl8BwCwEKzCd4PwLASt8PAHls1b4zFCivCaCGnCayGkCq+BkC48GsEk/OP5plktvmOCIAXYCd//akxqGv76nIAIcADt8AOMAAWwCo9EwAEYhz9B8AdQCr+F4A6gHP4jgivAdVubXXRnoh0hRAZAI6QEQCKkBUAhpAZAIKQHkCLcAkCCcBuA1QPV7X8B3PC3AJCETw8gDZ8aABE+LQAqfEoAAoafYkZ4HSaD1+HwGyKaCPF3hBQRWpgtsZ2WExgB0cKDb4tbIaD6lyqNEW0EZPP2CADageW0xqza9uYDCeDBTHH/0mUqI0r43QGJUAjozrXrfI53+NMhKVcErYENzakMrzE59UHJyAhmo7IUcFrUfFia0BdqHR4xLk8BJsbdD0x4IoQ5MsNCEK4X7tAUMYq7Xh2bK4ACKIACQNQvxKgR+zxn/OkAAAAASUVORK5CYII={scale="+$scale+"}>"
+!endfunction
+
+GCPEntityColoring(ErrorReporting)
+!define ErrorReporting(e_alias, e_label, e_techn) GCPEntity(e_alias, e_label, e_techn, #4285F4, ErrorReporting, ErrorReporting)
+!define ErrorReporting(e_alias, e_label, e_techn, e_descr) GCPEntity(e_alias, e_label, e_techn, e_descr, #4285F4, ErrorReporting, ErrorReporting)
+!define ErrorReportingParticipant(p_alias, p_label, p_techn) GCPParticipant(p_alias, p_label, p_techn, #4285F4, ErrorReporting, ErrorReporting)
+!define ErrorReportingParticipant(p_alias, p_label, p_techn, p_descr) GCPParticipant(p_alias, p_label, p_techn, p_descr, #4285F4, ErrorReporting, ErrorReporting)
+GCPEntityColoring(Error_Reporting)
+!define Error_Reporting(e_alias, e_label, e_techn) GCPEntity(e_alias, e_label, e_techn, #4285F4, ErrorReporting, Error_Reporting)
+!define Error_Reporting(e_alias, e_label, e_techn, e_descr) GCPEntity(e_alias, e_label, e_techn, e_descr, #4285F4, ErrorReporting, Error_Reporting)
+!define Error_ReportingParticipant(p_alias, p_label, p_techn) GCPParticipant(p_alias, p_label, p_techn, #4285F4, ErrorReporting, Error_Reporting)
+!define Error_ReportingParticipant(p_alias, p_label, p_techn, p_descr) GCPParticipant(p_alias, p_label, p_techn, p_descr, #4285F4, ErrorReporting, Error_Reporting)

@@ -1,0 +1,21 @@
+sprite $CloudVPN <svg viewBox="0 0 24 24" width="64" height="64"><g><g ><rect fill="#669df6" x="14.73" y="11.28" width="4.18" height="1.38"/><rect fill="#669df6" x="17.95" y="6.12" width="1.38" height="11.71"/><rect fill="#4285f4" x="16.3" y="17.32" width="4.68" height="4.68" rx="0.28"/><rect fill="#4285f4" x="16.3" y="2" width="4.68" height="4.68" rx="0.28"/><rect fill="#669df6" x="6.98" y="11.28" width="4.28" height="1.38"/><rect fill="#4285f4" x="3.03" y="9.63" width="4.68" height="4.68" rx="0.28"/><path fill="#4285f4" d="M13,14.17a2.2,2.2,0,1,1,2.2-2.2A2.19,2.19,0,0,1,13,14.17Zm0-3.57A1.38,1.38,0,1,0,14.33,12,1.37,1.37,0,0,0,13,10.6Z"/></g></g></svg>
+
+sprite $CloudVPN_png [64x64/16z] {
+xPRB3iCW30I9Ozd-_ozk7gJTAXVigf6YxDn06eJm0cwDN8K21Lq2e4__PlwMVtUFOlutp6pwvGxI_uylGCN7RE42keorxCjf9kKlkaeJXRYd_6FhiC28xxRZ
+Rot2FfHylz2VfmxuVMPEdP_syuC8vEg_3jRoHJL_fzSkcrzH_ReGV3_e5rNyVza_qdzS_pZQOv1nNW
+}
+
+!function $CloudVPNIMG($scale=1)
+!return "<img data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAABGElEQVR42u3bzRGCMBCGYUrbgy3QAnXkaAs0SQtr4gRnRaKJPzNmeQ/fAfGHfQbCRuOgqsORMwAAAAAA9JLTeUkJLfEGIDHaEgAAAAAAAAAAAAAAAHA6FxhjkWty0X7nAnuZ5kVN5HDTYQAAAAAAAH4JkJuP6ngE0MbIG42NfX3a9g9Q0daKW4BN8SFvr4/bM8ItwK34wv5QO5n5O4Dx/oAekva/Ki6fDdfnTHNTfADYzx0B6A0gXr/pQEqJBcmrQW5zCciThF4HwVAaBG3xNV9o9AqwfV/ZuQX6vQ0WELS1+O5bYdMUBdMQCbNBAAAAAAAAAAAAgM9/HWahJAAAAAAAAAAAAAAAAPhZKPnVBRv8bQ4AAAA4dC7cX7mtGNCPuwAAAABJRU5ErkJggg=={scale="+$scale+"}>"
+!endfunction
+
+GCPEntityColoring(CloudVPN)
+!define CloudVPN(e_alias, e_label, e_techn) GCPEntity(e_alias, e_label, e_techn, #4285F4, CloudVPN, CloudVPN)
+!define CloudVPN(e_alias, e_label, e_techn, e_descr) GCPEntity(e_alias, e_label, e_techn, e_descr, #4285F4, CloudVPN, CloudVPN)
+!define CloudVPNParticipant(p_alias, p_label, p_techn) GCPParticipant(p_alias, p_label, p_techn, #4285F4, CloudVPN, CloudVPN)
+!define CloudVPNParticipant(p_alias, p_label, p_techn, p_descr) GCPParticipant(p_alias, p_label, p_techn, p_descr, #4285F4, CloudVPN, CloudVPN)
+GCPEntityColoring(Cloud_VPN)
+!define Cloud_VPN(e_alias, e_label, e_techn) GCPEntity(e_alias, e_label, e_techn, #4285F4, CloudVPN, Cloud_VPN)
+!define Cloud_VPN(e_alias, e_label, e_techn, e_descr) GCPEntity(e_alias, e_label, e_techn, e_descr, #4285F4, CloudVPN, Cloud_VPN)
+!define Cloud_VPNParticipant(p_alias, p_label, p_techn) GCPParticipant(p_alias, p_label, p_techn, #4285F4, CloudVPN, Cloud_VPN)
+!define Cloud_VPNParticipant(p_alias, p_label, p_techn, p_descr) GCPParticipant(p_alias, p_label, p_techn, p_descr, #4285F4, CloudVPN, Cloud_VPN)

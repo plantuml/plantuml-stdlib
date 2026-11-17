@@ -1,0 +1,21 @@
+sprite $CloudInferenceAPI <svg viewBox="0 0 24 24" width="64" height="64"><path d="M3,13l-.68-.27v4.64H4.45V13.58C3.92,13.41,3.43,13.21,3,13Z" style="fill:#669df6"/><path d="M3.75,11l.68.27v-9H2.25v8.2C2.77,10.62,3.27,10.82,3.75,11Z" style="fill:#aecbfa"/><path d="M7.67,12a6.7,6.7,0,0,0,1.09-.1V6.57H6.58v5.35A7.89,7.89,0,0,0,7.67,12Z" style="fill:#aecbfa"/><path d="M7.67,14.19a10,10,0,0,1-1.09-.06v7.62H8.76V14.13A10,10,0,0,1,7.67,14.19Z" style="fill:#669df6"/><path d="M11.6,11c.48-.19,1-.39,1.48-.56v-6H10.94v6.85C11.14,11.19,11.37,11.11,11.6,11Z" style="fill:#aecbfa"/><path d="M12.39,13c-.49.19-1,.39-1.49.56v6h2.18V12.74C12.86,12.84,12.63,12.93,12.39,13Z" style="fill:#669df6"/><path d="M16.33,9.84a8.08,8.08,0,0,1,1.09.07V2.25H15.24V9.92A7.88,7.88,0,0,1,16.33,9.84Z" style="fill:#aecbfa"/><path d="M16.33,12a6.59,6.59,0,0,0-1.09.09v5.28h2.18V12.11A6.68,6.68,0,0,0,16.33,12Z" style="fill:#669df6"/><path d="M20.25,13l-.68-.27v9h2.18V13.58C21.23,13.41,20.74,13.21,20.25,13Z" style="fill:#669df6"/><path d="M21.05,11l.69.27V6.57H19.56v3.88C20.08,10.62,20.57,10.82,21.05,11Z" style="fill:#aecbfa"/></svg>
+
+sprite $CloudInferenceAPI_png [64x64/16z] {
+xTNH3i0G30NGtZJn_vyyl11jpGHBjjv7xh67IH5vtW-duBxY_gZd2ha_v5l3tMNtF_76jLhZYM1uVQX0ErRnlNaqDQX6tvBbBnH22ZRvpi48mijst5B_53Zk
+I2_QUJEGSgpXctQzWd8LPhnHTFzbZvnkiJIisqe37tB_n5lJolq-xpcQ2m
+}
+
+!function $CloudInferenceAPIIMG($scale=1)
+!return "<img data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAABHklEQVR42u3b0Q3CIBSFYUa70zgHa7iCsziLK2A11DTmUmjltiD/w0nsCxy+NIbS1IUQ3MhxAAAAAAAAKLndQ1Dijy44zSmJLgIAAAAA0CXANI6akQC0sQMAAAAAQJcA8V9clBwOkOgh1gBbS1oCFI8NAAAAAAAAAAA0D+CWm6rv678HsNxmZ4/F48K8MYCvta9f6b0PQLkNawLIkUdqpi9GrJ/Ymn8zNDyAZS7Xh0wJSgQAS4Cak2QW+FlkDYCtvXMAc3xtjLgwv5ynIkBx71KA1ZI7Fl889o8A2d61Ssair99z3sWHATArCQAAAAAAAAAAnAIgWk4ASHVxpgCWT2ytbLMBAAAAALo4tgIAAAAAAKBlAL4aAwAAAADoNE98QBIIKpee2wAAAABJRU5ErkJggg=={scale="+$scale+"}>"
+!endfunction
+
+GCPEntityColoring(CloudInferenceAPI)
+!define CloudInferenceAPI(e_alias, e_label, e_techn) GCPEntity(e_alias, e_label, e_techn, #4285F4, CloudInferenceAPI, CloudInferenceAPI)
+!define CloudInferenceAPI(e_alias, e_label, e_techn, e_descr) GCPEntity(e_alias, e_label, e_techn, e_descr, #4285F4, CloudInferenceAPI, CloudInferenceAPI)
+!define CloudInferenceAPIParticipant(p_alias, p_label, p_techn) GCPParticipant(p_alias, p_label, p_techn, #4285F4, CloudInferenceAPI, CloudInferenceAPI)
+!define CloudInferenceAPIParticipant(p_alias, p_label, p_techn, p_descr) GCPParticipant(p_alias, p_label, p_techn, p_descr, #4285F4, CloudInferenceAPI, CloudInferenceAPI)
+GCPEntityColoring(Cloud_Inference_API)
+!define Cloud_Inference_API(e_alias, e_label, e_techn) GCPEntity(e_alias, e_label, e_techn, #4285F4, CloudInferenceAPI, Cloud_Inference_API)
+!define Cloud_Inference_API(e_alias, e_label, e_techn, e_descr) GCPEntity(e_alias, e_label, e_techn, e_descr, #4285F4, CloudInferenceAPI, Cloud_Inference_API)
+!define Cloud_Inference_APIParticipant(p_alias, p_label, p_techn) GCPParticipant(p_alias, p_label, p_techn, #4285F4, CloudInferenceAPI, Cloud_Inference_API)
+!define Cloud_Inference_APIParticipant(p_alias, p_label, p_techn, p_descr) GCPParticipant(p_alias, p_label, p_techn, p_descr, #4285F4, CloudInferenceAPI, Cloud_Inference_API)

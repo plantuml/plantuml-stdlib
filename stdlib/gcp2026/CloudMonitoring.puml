@@ -1,0 +1,22 @@
+sprite $CloudMonitoring <svg viewBox="0 0 24 24" width="64" height="64"><g><rect fill="#669df6" x="10.83" y="15.84" width="2.33" height="2.64"/><path fill="#4285f4" d="M18.48,13.87a.56.56,0,0,1-.4-.17L14,9.47l-2.74,2.89a.57.57,0,0,1-.76.05L8.42,10.73l-2.2,2.92a.56.56,0,0,1-.45.22H2v1.71a.75.75,0,0,0,.74.75H21.26a.75.75,0,0,0,.74-.75V13.87Z"/><path fill="#669df6" d="M5.5,12.76,7.88,9.6a.55.55,0,0,1,.37-.22.63.63,0,0,1,.42.12l2.12,1.72,2.8-2.94a.54.54,0,0,1,.4-.17h0a.54.54,0,0,1,.4.17l4.33,4.48H22V6a.74.74,0,0,0-.74-.74H2.74A.74.74,0,0,0,2,6v6.81Z"/><rect fill="#4285f4" x="8.67" y="18.18" width="6.67" height="0.61" rx="0.3"/></g></svg>
+
+sprite $CloudMonitoring_png [64x64/16z] {
+xPNH3eCW34KjPUx-_nSlLZGDj0GXsRAavqK3FHT4XMqBWk2tx1CedMTyMXi-_66VQSbdksBKPwTaq6UlfkEhBrBqR1Nv_j5Kbknrt0DMWEkJQZnr8BbbJGUh
+Lhd03l1y6L8cV3uxO0SuVfbnBbsN3gXLwVXqEvNU19W-AwVIwm3JlzPRo3lW1v2p5wB3o5QAfO0CF0z8c227l-Gd_G9iteBJENmihnxh_-Ytw_VCd_frWo3u
+BXy
+}
+
+!function $CloudMonitoringIMG($scale=1)
+!return "<img data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAABPUlEQVR42u3awRGCMBCFYUrLwRZswTr2aAt2Q0W0EGUGD8YE2WE3ifAf3lV9nyFZkSHGOJw5AwAAAAAAAAAAAAAAAAAAAABLbo9pTjxYVAByQICgAYgAAAAAAAC0yXwChbMCiOMs0j2AOA9kXQNIaVQ1RKgKoJkoP8pf7tMccUCoBpC+1tqGNmbKxyXWCFUAgnIZDwlATBIMEdwBvpbyjw+flh8zAJYIvgCFpSyFX5ppeSmUt0RwBShdx1kEZfl3NHtLVYCwsdCe8hYILgCiLLSn/F4Ee4CVI2wtsrLheSIEt5uiivKW6eeusME32gzBorw0Km+CUCoVGpfyiAAAAAAAnBlANwgtCC65viazXDzfs6u/x7eM1od+PgAAAE4CYLUJ/jOAyRHGQ1IAAAAAAAAAAAAAAAAAAAAA2OYJK0F8YvPS3bIAAAAASUVORK5CYII={scale="+$scale+"}>"
+!endfunction
+
+GCPEntityColoring(CloudMonitoring)
+!define CloudMonitoring(e_alias, e_label, e_techn) GCPEntity(e_alias, e_label, e_techn, #4285F4, CloudMonitoring, CloudMonitoring)
+!define CloudMonitoring(e_alias, e_label, e_techn, e_descr) GCPEntity(e_alias, e_label, e_techn, e_descr, #4285F4, CloudMonitoring, CloudMonitoring)
+!define CloudMonitoringParticipant(p_alias, p_label, p_techn) GCPParticipant(p_alias, p_label, p_techn, #4285F4, CloudMonitoring, CloudMonitoring)
+!define CloudMonitoringParticipant(p_alias, p_label, p_techn, p_descr) GCPParticipant(p_alias, p_label, p_techn, p_descr, #4285F4, CloudMonitoring, CloudMonitoring)
+GCPEntityColoring(Cloud_Monitoring)
+!define Cloud_Monitoring(e_alias, e_label, e_techn) GCPEntity(e_alias, e_label, e_techn, #4285F4, CloudMonitoring, Cloud_Monitoring)
+!define Cloud_Monitoring(e_alias, e_label, e_techn, e_descr) GCPEntity(e_alias, e_label, e_techn, e_descr, #4285F4, CloudMonitoring, Cloud_Monitoring)
+!define Cloud_MonitoringParticipant(p_alias, p_label, p_techn) GCPParticipant(p_alias, p_label, p_techn, #4285F4, CloudMonitoring, Cloud_Monitoring)
+!define Cloud_MonitoringParticipant(p_alias, p_label, p_techn, p_descr) GCPParticipant(p_alias, p_label, p_techn, p_descr, #4285F4, CloudMonitoring, Cloud_Monitoring)

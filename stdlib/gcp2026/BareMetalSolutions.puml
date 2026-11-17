@@ -1,0 +1,22 @@
+sprite $BareMetalSolutions <svg viewBox="0 0 24 24" width="64" height="64"><g fill="#4285f4" transform="translate(3 3)"><path d="m9 17.9894618-9-4.2751761 4.5-1.4285714 4.5 4.2857143 4.5-4.2857143 4.5 1.4285714z"/><path d="m9 0 7.5 7.14285714-7.5 7.14285716-7.5-7.14285716zm0 1.42857143-6 5.71428571 6 5.71428576 6-5.71428576z"/><path d="m15.841 9.28471429.659.63-7.5003766 7.22814281-7.5006234-7.22814281.659-.629.627.6-.06205247.05932052 6.27667587 5.88912739 6.2766759-5.88912739-.0632993-.05932052z"/></g></svg>
+
+sprite $BareMetalSolutions_png [64x64/16z] {
+xTRR2eGm34NHKah9_t_nwAXOq-JaKWRcmRpgNg8jQYdl_F5GNyjf2I1Q0hQujJomvwMaWIDF0rUU1Euy1Onv0dZcOO3dGM3EGu2K1m0vTmDQxWJqt0MWt07W
+t0Iit03i70AU703xkshfdRWTgAxhaoxNXTm3D7oJ5e3oQWCeRyTJHS2LYqWd2xXpSPzOW95RW9bZm94Zm9NhW3FN07V-FNC2XXnlpqht7yTzxfWZuQmvm7Aq
+FIHWphNb5G4n5mGDKF9ctC002Bd-WPk1ESSVA0PCkMC3CI1GCw6pl1NNj148rm-XPsfXDOCr4nBr82JhKrYet_dzV00
+}
+
+!function $BareMetalSolutionsIMG($scale=1)
+!return "<img data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAABsklEQVR42u3bO27DMBBFUS2NRRY2ZZbFFWULjAO4UABb5nDemw/EglUK5R4IoklRxxjjuPM4NsAG2AAbIGp8ff/cF+Av/jHGY/TbAZziRzRChvhQhOh4eY4whND409/CEMLjoxFSxEcipImPQkgVH4GQLt4bIWW8J0LaeC+E1PEeCOnj2Qgl4pkIZeJZCKXiGQjl4tEIJeORCGXjUQil4xEImov828LKtr29ur1muQNa0jtgaLbbrc+AVjkeNQu0qvHI3wGtYrz2GdCyIFzFP/8vLMDpgj0aYSJedUfMXrS/m2I8ERTx079TNBcPRWDEr0yDIQis+NVp0BWBGW+ZBl0Q2PHWDREqgkc8YkuMguAVjwCQq1XYCoIy3vycWQ1vb055mBAW4s0QyHATgjF+GWL1VociAOPVEIxwFQIpfhpiZtnLRmDGy6dFkWb9L2QEZLxAV4MgiCsEVLzQt8SMEK8QEPFC3xECQnTlCVJKOON8gJAejC/DMx+REQ2CMh7+Nop5SmwGokeFex6UtEyf9PePnmeFJVN45HF5yRCe4YsRyfCqfX80tT+b2wAbYAPcefwC3OA5J7pbGoQAAAAASUVORK5CYII={scale="+$scale+"}>"
+!endfunction
+
+GCPEntityColoring(BareMetalSolutions)
+!define BareMetalSolutions(e_alias, e_label, e_techn) GCPEntity(e_alias, e_label, e_techn, #4285F4, BareMetalSolutions, BareMetalSolutions)
+!define BareMetalSolutions(e_alias, e_label, e_techn, e_descr) GCPEntity(e_alias, e_label, e_techn, e_descr, #4285F4, BareMetalSolutions, BareMetalSolutions)
+!define BareMetalSolutionsParticipant(p_alias, p_label, p_techn) GCPParticipant(p_alias, p_label, p_techn, #4285F4, BareMetalSolutions, BareMetalSolutions)
+!define BareMetalSolutionsParticipant(p_alias, p_label, p_techn, p_descr) GCPParticipant(p_alias, p_label, p_techn, p_descr, #4285F4, BareMetalSolutions, BareMetalSolutions)
+GCPEntityColoring(Bare_Metal_Solutions)
+!define Bare_Metal_Solutions(e_alias, e_label, e_techn) GCPEntity(e_alias, e_label, e_techn, #4285F4, BareMetalSolutions, Bare_Metal_Solutions)
+!define Bare_Metal_Solutions(e_alias, e_label, e_techn, e_descr) GCPEntity(e_alias, e_label, e_techn, e_descr, #4285F4, BareMetalSolutions, Bare_Metal_Solutions)
+!define Bare_Metal_SolutionsParticipant(p_alias, p_label, p_techn) GCPParticipant(p_alias, p_label, p_techn, #4285F4, BareMetalSolutions, Bare_Metal_Solutions)
+!define Bare_Metal_SolutionsParticipant(p_alias, p_label, p_techn, p_descr) GCPParticipant(p_alias, p_label, p_techn, p_descr, #4285F4, BareMetalSolutions, Bare_Metal_Solutions)

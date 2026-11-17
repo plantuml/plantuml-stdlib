@@ -1,0 +1,16 @@
+sprite $Debugger <svg viewBox="0 0 24 24" width="64" height="64"><g ><g transform="translate(2.000000, 2.000000)"><path fill="#3367D6" d="M 3.4 10.7 L 7.4 10.7 L 7.4 9.3 L 3.4 9.3 Z"/><path fill="#3367D6" d="M 2.6 18.4 L 9.2 11.8 L 8.3 10.9 L 1.7 17.5 Z"/><path fill="#3367D6" d="M 2 2.9 L 8.6 9.5 L 9.5 8.6 L 2.9 2 Z"/><path fill="#3367D6" d="M 12.6 10.7 L 16.6 10.7 L 16.6 9.3 L 12.6 9.3 Z"/><path fill="#3367D6" d="M 10.8 11.8 L 17.1 18 L 18 17.1 L 11.8 10.8 Z"/><path fill="#3367D6" d="M 12.5 8.5 L 18.3 2.6 L 17.4 1.7 L 11.5 7.5 Z"/><path fill="#5C85DE" d="M -0.5 20.5 L 4 20.5 L 4 16 L -0.5 16 Z"/><path fill="#5C85DE" d="M 16 20.5 L 20.5 20.5 L 20.5 16 L 16 16 Z"/><path fill="#5C85DE" d="M -0.5 4 L 4 4 L 4 -0.5 L -0.5 -0.5 Z"/><path fill="#5C85DE" d="M 16 4 L 20.5 4 L 20.5 -0.5 L 16 -0.5 Z"/><path fill="#85A4E6" d="M 6.2 13.8 L 13.8 13.8 L 13.8 6.2 L 6.2 6.2 Z"/><path fill="#5C85DE" d="M -0.5 12.2 L 4 12.2 L 4 7.8 L -0.5 7.8 Z"/><path fill="#5C85DE" d="M 16 12.2 L 20.5 12.2 L 20.5 7.8 L 16 7.8 Z"/></g></g></svg>
+
+sprite $Debugger_png [64x64/16z] {
+xTRR3i8m30FG2WKX__yFmxeNf2Mk2Rkm4RzknwhKQskLnrio_vOllvO7vnXwMW3miM8Auu3nyR62CQS52YS56WyBL1uKw7pwz-v4vgy2pzi79wBdssP-kIPZ
+h-s_y_g-UFpvx_brV-ln_FpbwlENyKVllqNCdN-T1-j7vi7vYJpN2upT7yXphS16zoVoF2puzlsmvlkbte_bz_R_d2S
+}
+
+!function $DebuggerIMG($scale=1)
+!return "<img data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAABJ0lEQVR42u3bwRHCIBCFYXqyAZuwBevgmFrsKS3YAg6HzCQaDzH7lkX+w14D7zs48AZTKSWNPAkAAADYzG2ay5FpHeDsfgEAAAAAAAAAAAB+/uDlPjcLX9eOANAEoa5Z144C4IqwhJcAHN3A27iGX012vw22QLAOf/o67ImgCG/SB3ggqMKbFSJKBGV400ZIgaAOb16JrTc8PZ6mowgv6QQXBAFA7qYUrQjWAN21wt0CWN0GvQDCXocBAGAQgC+HH9U54GMAAKA9wHVvBAC76/AjCAAAALi3wn99GYoKoGqbVX1AFp0DUg+NUBYfhFLkTjA7lKKmCGHDeyGEDu+BED68GqGL8EqEbsKrEHggwRMZHknxTA4AAAAAAAAAAACAP04CAMB48wLte1j1ZlORvQAAAABJRU5ErkJggg=={scale="+$scale+"}>"
+!endfunction
+
+GCPEntityColoring(Debugger)
+!define Debugger(e_alias, e_label, e_techn) GCPEntity(e_alias, e_label, e_techn, #4285F4, Debugger, Debugger)
+!define Debugger(e_alias, e_label, e_techn, e_descr) GCPEntity(e_alias, e_label, e_techn, e_descr, #4285F4, Debugger, Debugger)
+!define DebuggerParticipant(p_alias, p_label, p_techn) GCPParticipant(p_alias, p_label, p_techn, #4285F4, Debugger, Debugger)
+!define DebuggerParticipant(p_alias, p_label, p_techn, p_descr) GCPParticipant(p_alias, p_label, p_techn, p_descr, #4285F4, Debugger, Debugger)

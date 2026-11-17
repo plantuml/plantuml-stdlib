@@ -1,0 +1,18 @@
+sprite $Datapol <svg viewBox="0 0 24 24" width="64" height="64"><g><g ><rect fill="#4285f4" x="9.65" y="3.87" width="8.29" height="1.87"/><rect fill="#4285f4" x="4.55" y="11.35" width="8.29" height="1.87"/><rect fill="#4285f4" x="9.65" y="18.21" width="8.29" height="1.87"/><path fill="#4285f4" d="M 6.57 13.38 L 9.82 18.89 L 8.16 19.82 L 4.91 14.31 L 6.57 13.38 Z"/><path fill="#4285f4" d="M 6.8 10.91 L 10.05 5.4 L 8.44 4.49 L 5.19 10 L 6.8 10.91 Z"/><path fill="#aecbfa" d="M 7.48 7.66 L 5.82 4.85 L 7.48 2 L 10.79 2 L 12.44 4.85 L 10.79 7.66 L 7.48 7.66 Z"/><path fill="#aecbfa" d="M 13.21 15.14 L 11.56 12.34 L 13.21 9.48 L 16.52 9.48 L 18.18 12.34 L 16.52 15.14 L 13.21 15.14 Z"/><path fill="#aecbfa" d="M 3.65 15.14 L 2 12.34 L 3.65 9.48 L 6.96 9.48 L 8.61 12.34 L 6.96 15.14 L 3.65 15.14 Z"/><path fill="#aecbfa" d="M 17.04 7.66 L 15.39 4.85 L 17.04 2 L 20.35 2 L 22 4.85 L 20.35 7.66 L 17.04 7.66 Z"/><path fill="#aecbfa" d="M 17.04 22 L 15.39 19.19 L 17.04 16.34 L 20.35 16.34 L 22 19.19 L 20.35 22 L 17.04 22 Z"/><path fill="#aecbfa" d="M 7.48 22 L 5.82 19.19 L 7.48 16.34 L 10.79 16.34 L 12.44 19.19 L 10.79 22 L 7.48 22 Z"/></g></g></svg>
+
+sprite $Datapol_png [64x64/16z] {
+xPTB4iGW24H5jFJ-9vxKc8-nqbO7Cgj9Rn55WQU6yEffoIRQS5BKJQD5eULwb986D4e5Ml3c5GrJF3CQfQcJAX70UNdLKbULmI3Cyai0ctyQBR_nX_5NBluX
+W7XLLlC4SlaBL064-_NJ-mkqJEgtEscujKa3BWdBETkR_vkhQ7PlzM9sZyxbMwcQNFT-hUZK0qUjYB8-mwP0__lKmmtffHxNT9htfgySzHHH8rFK44WjjL4l
+EwbN4RMvyuCpHof_Og2UCjGJgW35Kh_T3fAf_ne-5lGL1puQF-puMlcLWeUVnOFlKBttHu49u-wlvBm_7oLHxFJVxwzYUd_9SNp2aSpxVlQ-tzt_Xsu7S6O7
+OLuzgWy
+}
+
+!function $DatapolIMG($scale=1)
+!return "<img data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAACNElEQVR42u2bzXGDMBCFKW0PacG1+LpHWqAFWvCFAlKLW9ggBidMbMsrrfRASId3Y0bik7Q/D9GJSFezugagAWgAGoBUGr8X8SclGIcVoj0ATLNEITKMQcoxBAogZGLayb0ZRwJESAASKM4NWQM61ctzBACn0PgiqUGnCnwxE5PhJvLV31kj92zsOD7Qe67+ostwdxC8cs9YxvDtAmjg8+wCr4yr7w2Iu23/HQCUewScDnkEDCnwsfouwHUauWdjx0GkQUo9sYSgCVUIceoqrZhCyOk6Bk2OQaBxvYALVP0tfQVoyDwMa4bWam2J1vNO+NW6ZZ+UKOZ8EsYPWKP0q9RFVRgi29XfqgpHyK1yyaufAsCrl+fTeYLv8q+r0R/q/2r63BXlLgBU6W2O/Ij8zlAAgYXHBOoqCQIgst0lREeJAsC5mxyDqUJZAVjcnn4UVY9vNTtyA5DcRsdaLmcxOkwArC6P1upKYHOZ02I2s/M6Yry+nEfAtAs05z+B3U05AXSIiRlAT0dNgwyy1mGVYPaJRcQcRpbCKK8PXgWGNEOsDHwM8PpoDwBPPtzc/vLW/9sUPpTT6yvBEJHTGSIRlhhXAeC/KXrZ2OI5t/FhbfGh5g8joWUt6NMY7pZYRGNzno+j1X8eN16QII36m6k7LfyWWH/cW2J1X5IqDACVewSGA98SM+4CdRA0gi7/srQh2zCkEKr6unz7YSL8KBAg5kywZsjnHJ2+HW6/zTUADUADULJ+AMAVRSR1sHTXAAAAAElFTkSuQmCC{scale="+$scale+"}>"
+!endfunction
+
+GCPEntityColoring(Datapol)
+!define Datapol(e_alias, e_label, e_techn) GCPEntity(e_alias, e_label, e_techn, #4285F4, Datapol, Datapol)
+!define Datapol(e_alias, e_label, e_techn, e_descr) GCPEntity(e_alias, e_label, e_techn, e_descr, #4285F4, Datapol, Datapol)
+!define DatapolParticipant(p_alias, p_label, p_techn) GCPParticipant(p_alias, p_label, p_techn, #4285F4, Datapol, Datapol)
+!define DatapolParticipant(p_alias, p_label, p_techn, p_descr) GCPParticipant(p_alias, p_label, p_techn, p_descr, #4285F4, Datapol, Datapol)

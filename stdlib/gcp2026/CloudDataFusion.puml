@@ -1,0 +1,21 @@
+sprite $CloudDataFusion <svg viewBox="0 0 24 24" width="64" height="64"><g><path fill="#aecbfa" d="M6,8h4V4H3A1,1,0,0,0,2,5V21a1,1,0,0,0,.28.68L6,18Z"/><path fill="#4285f4" d="M16,18l3.72,3.72A1,1,0,0,0,20,21V14H16Z"/><path fill="#669df6" d="M21.71,2.28,18,6h0v4h4V3A1,1,0,0,0,21.71,2.28Z"/><path fill="#aecbfa" d="M18,6l3.72-3.72A1,1,0,0,0,21,2H14V6Z"/><path fill="#669df6" d="M 2 22 L 6 18 L 16 18 L 20 22 L 2 22 Z"/></g></svg>
+
+sprite $CloudDataFusion_png [64x64/16z] {
+xTTB3e0W34LHGI7kVyKgNqqBb5PclVFp1iOGs3PjVGOsnNUOCoBllCWxB_8tb_Y7VppoVVQs3vpl8sVxnBa-SwOlVCQ_ykgxVlGhgvTv_02bUpprwbTxUvGi
+ovybzUhN-7ezW15yZxy6MhxFwq33ZtWPmFsOvm7KKtWQm3oDnm74KtaOW9xEdm7WP_WzG7aVzT87vMzT
+}
+
+!function $CloudDataFusionIMG($scale=1)
+!return "<img data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAABIElEQVR42u3buQ2DQBBG4S1tAtfiFpwSugW3QC2uhRbGRiJAFsesmYU9XvDnvC9AnEFVQ8sLAAAAAAC5rX+rfNc5TkoDGA9avfboVe+vQZoEmOLbBJjFtwfwE/8fwHQy8tppAAvxcQDjwXqehKbJGQAr8dEAUiLARnz9ADvxdQMY4usFMMaXBRAzYzwAAAAAQDIA90vhogCuvnECAAAAmgcQ40KVAEkeiwMAAAAAAAAAAAAAkBHA7TnId51xUiuAGgcAAAAAAAAAAAAAQFKAiI8TXJYVwNnxkQhpAa6Kj0BIB3B1vBEhDUAu8QYEf4Dc4ncQfAFyjd9A8APIPX4FwQeglPgFhOMApcXPEQ4/FB3fpUe8d89u/DYHAAAAAGDcB0kMOu2cn2DfAAAAAElFTkSuQmCC{scale="+$scale+"}>"
+!endfunction
+
+GCPEntityColoring(CloudDataFusion)
+!define CloudDataFusion(e_alias, e_label, e_techn) GCPEntity(e_alias, e_label, e_techn, #4285F4, CloudDataFusion, CloudDataFusion)
+!define CloudDataFusion(e_alias, e_label, e_techn, e_descr) GCPEntity(e_alias, e_label, e_techn, e_descr, #4285F4, CloudDataFusion, CloudDataFusion)
+!define CloudDataFusionParticipant(p_alias, p_label, p_techn) GCPParticipant(p_alias, p_label, p_techn, #4285F4, CloudDataFusion, CloudDataFusion)
+!define CloudDataFusionParticipant(p_alias, p_label, p_techn, p_descr) GCPParticipant(p_alias, p_label, p_techn, p_descr, #4285F4, CloudDataFusion, CloudDataFusion)
+GCPEntityColoring(Cloud_Data_Fusion)
+!define Cloud_Data_Fusion(e_alias, e_label, e_techn) GCPEntity(e_alias, e_label, e_techn, #4285F4, CloudDataFusion, Cloud_Data_Fusion)
+!define Cloud_Data_Fusion(e_alias, e_label, e_techn, e_descr) GCPEntity(e_alias, e_label, e_techn, e_descr, #4285F4, CloudDataFusion, Cloud_Data_Fusion)
+!define Cloud_Data_FusionParticipant(p_alias, p_label, p_techn) GCPParticipant(p_alias, p_label, p_techn, #4285F4, CloudDataFusion, Cloud_Data_Fusion)
+!define Cloud_Data_FusionParticipant(p_alias, p_label, p_techn, p_descr) GCPParticipant(p_alias, p_label, p_techn, p_descr, #4285F4, CloudDataFusion, Cloud_Data_Fusion)

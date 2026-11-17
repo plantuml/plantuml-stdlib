@@ -1,0 +1,22 @@
+sprite $DocumentAI <svg viewBox="0 0 24 24" width="64" height="64"><g fill="none" transform="translate(5 3)"><g fill="#4285f4"><path d="m7 0v2h-4.97775531v14h4.97775531v2h-5.34579412c-.86625962 0-1.57584646-.7269806-1.6481402-1.6452719l-.00606568-.1547281v-14.4c0-.99.74813331-1.8 1.66251847-1.8z"/><path d="m4 12.5h3v1.5h-3z"/><path d="m4 9.5h3v1.5h-3z"/><path d="m4 6.5h3v1.5h-3z"/><circle cx="11.5" cy="16.5" r="1.5" transform="matrix(1 0 0 -1 0 33)"/><circle cx="13.5" cy="7.5" r="1.5" transform="matrix(1 0 0 -1 0 15)"/><circle cx="10.5" cy="2.5" r="1.5"/></g><path d="m8 7.5h.81417625c1.91570885 0 1.67624525-.7032967 1.67624525-4" stroke="#4285f4"/><path d="m8 10.4938462h.81279457c3.77710423 0 4.73333313.2215384 4.68552163-1.9938462" stroke="#4285f4"/><path d="m8 15.4916974h.51704781c2.78062219.0061472 3.01104309.2212997 2.98062859-1.9916974" stroke="#4285f4" transform="matrix(1 0 0 -1 0 29)"/></g></svg>
+
+sprite $DocumentAI_png [64x64/16z] {
+xPV92iCm34I564B-_ujhihI5E3EIbTABvsG8psXNR3RrdFoY5BvULSHFtjlH1_23ntRc5pZX8yxiV3T-7kUfQqL-6UOja4lAjmp0AhpBz4-Unp_1T_f_pV3N
+_eMU1BVyVi2xaJ72-zSSGDx-G1_o-Eavu84Ug_91__a5i76Ur56K7we_qtLuot-I2RP4HFqUydpzesbB6-Ww3la_F3ycRwNvcUAh-UlN7xp62sjq__0Telrt
+Qe17BFmd3_vTyH0fKBmQGEp_zmb-KGDGy4Psbtm_d1RWb--NyljfAgqN
+}
+
+!function $DocumentAIIMG($scale=1)
+!return "<img data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAABXUlEQVR42u3bQRKDIAwFUI7GogfLssfyRL0CtTMubBVRmxCS/AWr2lFfSwgBUiklRW4JAAAAAADutMfzlTmaOYD5oT+tcDVTANwv3wJY/iXr67M2QOkFMH9Gle9kFYCdX0MaoEu34QBgD4It7KEAJAJTK9a4B2h0gSkKQA0hhQDYGQ1INQ9QBMhSOQAAAAAAAFgaBewAcNYDJGeCkgAck6HfGWFyD3BwHZ2cMpNHgHyxXkAuusA/xRlXQfBmccbPMChdLzAJMHwMUEQgd5mgdKLkCcBXJni1C3jJBM8On8S1WGIlFT5q2dNcgH7aZohbGtvKsukYEKIgAgAAAAAA5gBcbpLCMDhGJkjD7RHSSoW9ApyJG6wLJeZiwPo5Qg6DAPh+jlgAlSlyDICDMniJAiBSFRp2rzAAtvefVAF6b5e/sB5IXWKAxoGJyv0nrpfHkRkcmsKxOQAAAADBAd5MSyx2Q8bPJAAAAABJRU5ErkJggg=={scale="+$scale+"}>"
+!endfunction
+
+GCPEntityColoring(DocumentAI)
+!define DocumentAI(e_alias, e_label, e_techn) GCPEntity(e_alias, e_label, e_techn, #4285F4, DocumentAI, DocumentAI)
+!define DocumentAI(e_alias, e_label, e_techn, e_descr) GCPEntity(e_alias, e_label, e_techn, e_descr, #4285F4, DocumentAI, DocumentAI)
+!define DocumentAIParticipant(p_alias, p_label, p_techn) GCPParticipant(p_alias, p_label, p_techn, #4285F4, DocumentAI, DocumentAI)
+!define DocumentAIParticipant(p_alias, p_label, p_techn, p_descr) GCPParticipant(p_alias, p_label, p_techn, p_descr, #4285F4, DocumentAI, DocumentAI)
+GCPEntityColoring(Document_AI)
+!define Document_AI(e_alias, e_label, e_techn) GCPEntity(e_alias, e_label, e_techn, #4285F4, DocumentAI, Document_AI)
+!define Document_AI(e_alias, e_label, e_techn, e_descr) GCPEntity(e_alias, e_label, e_techn, e_descr, #4285F4, DocumentAI, Document_AI)
+!define Document_AIParticipant(p_alias, p_label, p_techn) GCPParticipant(p_alias, p_label, p_techn, #4285F4, DocumentAI, Document_AI)
+!define Document_AIParticipant(p_alias, p_label, p_techn, p_descr) GCPParticipant(p_alias, p_label, p_techn, p_descr, #4285F4, DocumentAI, Document_AI)

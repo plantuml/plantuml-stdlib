@@ -1,0 +1,18 @@
+sprite $Connectors <svg viewBox="0 0 24 24" width="64" height="64"><rect x="8.999" y="7.013" width="2" height="4" fill="#aecbfa"/><rect x="12.999" y="7.013" width="2" height="4" fill="#aecbfa"/><path d="M8,18.93A7.993,7.993,0,0,1,12,4.013v-2A10,10,0,0,0,8,21.172Z" fill="#aecbfa"/><rect x="10.999" y="17.012" width="2" height="5" fill="#4285f4"/><path d="M16.99,10.013H7V12.95a5,5,0,1,0,10.008,0Z" fill="#4285f4"/><path d="M12,18.012A5.039,5.039,0,0,1,7,12.95V10.013h5" fill="#669df6"/><path d="M12,2.012a10,10,0,0,1,4,19.163V18.931A7.994,7.994,0,0,0,12,4.012Z" fill="#4285f4"/></svg>
+
+sprite $Connectors_png [64x64/16z] {
+xPRXhiCW28Nbo3RV_ubdb_PE1GIRBDjDUlwrpOS7g4fAbtvKbAjA5UCSU_2l62jqVgkyXNMwuyjzoRda8raqwFu6uBY54Jw4lmWXNFc4G82T9lqhUm7inNiB
+9_6gMH79nuy0R2_lzTVCOC2Rfwwai0mCbRVulGkkUvDFke4nUPk7Pe3YVD8siwZzXDSgiCB3uMaJRm8HwlQjkc6JcG2rozzRTST7cm1C-ouFqS4JVBduh_8i
+_X-Ayie6QWraYqUC9uStzu-MWFNxbydvaNL-Oj_kG6pvcfGHGE36-TbNW2JldD-30Hhv7kV01TJoxDzVulwaVF0yNd_w90PnW-R7e_SwdwB4081-iUW0GZhF
+uG58vH4Vm6PyPFoqUNy0fHaV6g79ufTcUAL_wR_nbpwk9m
+}
+
+!function $ConnectorsIMG($scale=1)
+!return "<img data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAACT0lEQVR42u2by3ECMQyGtzQd0gItpIVcdaQFWqCFXCggtdCC4mVMZmezrGVZkg3o8F+AAfRZL9vaiYimd9YUAAJAAAgAAcBY55+bIAmTaKmP43UtTIKk5wbwyGAGgC0gzwMgG05cMQAsBcMCyG5OtaoEMOui6RFaxqPEeCGAv9DoDkCw6nDX8nvmFc2JD3LMu3mDh/GzwdXfv4DCAeELgGm8WsJigvABwDAerUoWIzxsATCMN29cGN5gCqCr8av88DAxmgAolDr3Hr4AAVUBFFy/20amAEEVgNh4boV40EJjQ05AFQA7vT02wFMDUKgOKgA2V78xcWoDmKReIF19GAlAIRSaAGDL6nsCyBCqt9Aqf34gAJu5QARgp/RNAwMATQBQ6/6H0xXWOn4TrfV1Jry/f98Gz6/9++z5dl4Aa2mGQW387/745+lKtZIchgjCQASAnhQA1JTDdwFAKgBKSSgABIAXB1DqAd4BAASANyqDWNuaDgJArROsboWTQegAwK0Vrk6EySDoCUB1M7STB1TDwGEfQK4HIrVhoLj6Jgci5tWg5+pzD0UvAi+YDAD4H4q2HItzE6LG9bfpsfieFzBCARQASI3HIa7GcjigAAAyjPe5GtO4HM3egAwArLG4gvFARtfjF41L0kMCkUSHk+xGV+tm2GJAAhqOr6HxHpBV9lxGZEreIAGQV73viIyWJwgBwBBDUkwI3gC6DkpiRwDNE2lWo7IeAFTmELWHpdEBAA43LL0BwqoKvMYjMy19QACIh6YCQAAIAAEgAKjpF2nWKdHIuI6sAAAAAElFTkSuQmCC{scale="+$scale+"}>"
+!endfunction
+
+GCPEntityColoring(Connectors)
+!define Connectors(e_alias, e_label, e_techn) GCPEntity(e_alias, e_label, e_techn, #4285F4, Connectors, Connectors)
+!define Connectors(e_alias, e_label, e_techn, e_descr) GCPEntity(e_alias, e_label, e_techn, e_descr, #4285F4, Connectors, Connectors)
+!define ConnectorsParticipant(p_alias, p_label, p_techn) GCPParticipant(p_alias, p_label, p_techn, #4285F4, Connectors, Connectors)
+!define ConnectorsParticipant(p_alias, p_label, p_techn, p_descr) GCPParticipant(p_alias, p_label, p_techn, p_descr, #4285F4, Connectors, Connectors)

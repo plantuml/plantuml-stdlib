@@ -1,0 +1,15 @@
+sprite $Trace <svg viewBox="0 0 24 24" width="64" height="64"><g><g><g ><path fill="#4285f4" d="M 12 14 L 22 14 L 22 10 L 12 10 L 12 14 Z"/></g><g><path fill="#4285f4" d="M 12 22 L 22 22 L 22 18 L 12 18 L 12 22 Z"/></g><g><path fill="#669df6" d="M 8 22 L 12 22 L 12 18 L 8 18 L 8 22 Z"/></g></g><rect fill="#669df6" x="2" y="2" width="6" height="4"/><rect fill="#669df6" x="2" y="10" width="10" height="4"/></g></svg>
+
+sprite $Trace_png [64x64/16z] {
+xTGn2W0W30J1n83u_nVRcY92YAZ5Jh_TSI8eK_EolNLFwUalzi3J_uorq6R_Yn5gzFHdUYdk5_Y9PVTFJt-mvp-lcG
+}
+
+!function $TraceIMG($scale=1)
+!return "<img data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAAnElEQVR42u3YsQ2AIBRFUUajcBbnsHQFl3SFL7ZWiAmRcIrbw6l4pIhIM5cAAAAA4Nl6nLm0fWh4gPsS0V5kAAAAAAAAAAAAALYAAAAAAAAAAAAAgOE+Rbu07N3quQXqKwfrVQYAAAAAAAAAAABQAZCmfgpbgwAAAAAAAAAAAADaerMlfrkFAAAAAAAAAAAAALQD+BQ1hgAAADBCF4c+aBC8s/7yAAAAAElFTkSuQmCC{scale="+$scale+"}>"
+!endfunction
+
+GCPEntityColoring(Trace)
+!define Trace(e_alias, e_label, e_techn) GCPEntity(e_alias, e_label, e_techn, #4285F4, Trace, Trace)
+!define Trace(e_alias, e_label, e_techn, e_descr) GCPEntity(e_alias, e_label, e_techn, e_descr, #4285F4, Trace, Trace)
+!define TraceParticipant(p_alias, p_label, p_techn) GCPParticipant(p_alias, p_label, p_techn, #4285F4, Trace, Trace)
+!define TraceParticipant(p_alias, p_label, p_techn, p_descr) GCPParticipant(p_alias, p_label, p_techn, p_descr, #4285F4, Trace, Trace)

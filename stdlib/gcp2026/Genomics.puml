@@ -1,0 +1,17 @@
+sprite $Genomics <svg viewBox="0 0 24 24" width="64" height="64"><g><g ><circle fill="#aecbfa" cx="12" cy="12" r="1.6"/><path fill="#4285f4" d="M 7.58 9.2 L 13.95 9.2 L 14.69 8.5 L 13.95 7.8 L 7.58 7.8 L 7.58 9.2 Z"/><circle fill="#669df6" cx="6.8" cy="8.5" r="1.23"/><circle fill="#aecbfa" cx="17.2" cy="8.5" r="1.6"/><path fill="#4285f4" d="M 9.36 15.5 L 10.1 16.2 L 16.38 16.2 L 16.38 14.8 L 10.1 14.8 L 9.36 15.5 Z"/><circle fill="#aecbfa" cx="6.8" cy="15.5" r="1.6"/><circle fill="#669df6" cx="17.2" cy="15.5" r="1.23"/><path fill="#4285f4" d="M 4.18 5 L 16.86 5 L 17.6 4.3 L 16.86 3.6 L 4.18 3.6 L 4.18 5 Z"/><circle fill="#669df6" cx="3.6" cy="4.3" r="1.23"/><circle fill="#aecbfa" cx="20.4" cy="4.3" r="1.6"/><path fill="#4285f4" d="M 6.4 19.7 L 7.14 20.4 L 19.84 20.4 L 19.84 19 L 7.14 19 L 6.4 19.7 Z"/><circle fill="#aecbfa" cx="3.6" cy="19.7" r="1.6"/><circle fill="#669df6" cx="20.4" cy="19.7" r="1.23"/></g></g></svg>
+
+sprite $Genomics_png [64x64/16z] {
+xPRR3iGW24GTQMp__ukxrTt42nOgIHzSvz7qQ841TMxfxqI4PYcGbWPTAjV29NX1lzER3H3v_H0KCfpAlu-I-6FhyChpBznvXa_n--7uFty0MFA_92Sofat8
+SZG2iNLZorQBzs7Njns-DU8pdiDrF8dnomcypR-tbFPjryFMQ21RfwegDZ7lo3hftX-K43jaF6BgzrRfkBH1tSLnD92wOlKCsTDiqVARaMytKF2ucr4aujyD
+yFXgcU3QDDbMTRVcbG1RTyVwjXPQ7-Hta_W8J3u2qpQiRnLySRxu2jsx_73yJ_FFV3gljPTkT08
+}
+
+!function $GenomicsIMG($scale=1)
+!return "<img data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAB40lEQVR42u2awZGDMAxFKU2HbYEWqEPHtEALWwUFpJa04MUZ7wxDbIJsC1lGhz9c0UNI35IH59xwZw0GwAAYAANgAAxAP/p9OljlgnBVPoBpfnnhKheerQePm+C3AjKAELzba5xf8POQ1YkvHxMZACQAuPUlpLVEALgvAioAjAGY2gDghdwAWs4AjGTAUhVAgBD7+iprQHYbDJnwloIWiJQC2KsP+M8GOGp/5gQNgFIA2/Q+k+LsAIJjZC+U4d+OFTgUA5DwCsjU5sg9/goAXE5xIfp81xSAWm5RLYBKdldFBiBHDdgGf7IGoGQX2BZCiS6w3MYHBAhYo/o3AaCWmVEHIHFqg1sAODiyikCQAMDSzlQA4OznBsB+AT0AgLq86LENQgvB20isFEDEmqLUl7wcwMHhhC2dd9vqKocvLkf3Uc39Ebf0mJyYP6AUgNPLyBB80YBkfMSHL14aAGAxgFkfgP0vUAyhNQDIMaLKGMGJtkG8KniubfXl21jbDRoARQB2VledzS0CcHBsxZYD2tnlvBsiX3x+cngpfXlqTNxsywEAlFVUDatbQ1PaLQIVAFJGVzVcXmsAgLqM9Dt9aQBjRQBDzsXjbmpAJ10As7tAxOZieJoTNAAGwAAYAANgAPrRH60P95YAsAm3AAAAAElFTkSuQmCC{scale="+$scale+"}>"
+!endfunction
+
+GCPEntityColoring(Genomics)
+!define Genomics(e_alias, e_label, e_techn) GCPEntity(e_alias, e_label, e_techn, #4285F4, Genomics, Genomics)
+!define Genomics(e_alias, e_label, e_techn, e_descr) GCPEntity(e_alias, e_label, e_techn, e_descr, #4285F4, Genomics, Genomics)
+!define GenomicsParticipant(p_alias, p_label, p_techn) GCPParticipant(p_alias, p_label, p_techn, #4285F4, Genomics, Genomics)
+!define GenomicsParticipant(p_alias, p_label, p_techn, p_descr) GCPParticipant(p_alias, p_label, p_techn, p_descr, #4285F4, Genomics, Genomics)

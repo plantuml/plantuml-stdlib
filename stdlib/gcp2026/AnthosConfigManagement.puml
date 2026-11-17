@@ -1,0 +1,23 @@
+sprite $AnthosConfigManagement <svg viewBox="0 0 24 24" width="64" height="64"><path d="M16.39,14V9.47l-4-2.29V3.78h-.86v3.4l-4,2.29V14l-3,1.75.43.74,3-1.75H8l4,2.28,4-2.28,2.93,1.69.43-.74Zm-2.33.88a.83.83,0,0,1-.69-.39H9.13v-.85h4.24a.83.83,0,0,1,.69-.39.82.82,0,0,1,0,1.63Zm.81-2.49H12.7a.81.81,0,0,1-1.4,0H9.13v-.86h2.19a.81.81,0,0,1,1.36,0h2.19Zm0-2.11H10.63a.83.83,0,0,1-.69.39.82.82,0,0,1,0-1.63.83.83,0,0,1,.69.39h4.24Z" style="fill:#4285f4"/><path d="M20.56,7.56v8.87a.87.87,0,0,1-.44.76l-7.68,4.44a.88.88,0,0,1-.44.12V20.16l7.07-4.08V7.92L12,3.84V2.25a1,1,0,0,1,.44.11L20.12,6.8A.89.89,0,0,1,20.56,7.56Z" style="fill:#669df6"/><path d="M3.44,7.56v8.87a.87.87,0,0,0,.44.76l7.68,4.44a.88.88,0,0,0,.44.12V20.16L4.93,16.08V7.92L12,3.84V2.25a1,1,0,0,0-.44.11L3.88,6.8A.89.89,0,0,0,3.44,7.56Z" style="fill:#aecbfa"/></svg>
+
+sprite $AnthosConfigManagement_png [64x64/16z] {
+xPVhaiCW28KHqFh-JxoZIRnYWjhkxCwKVtNo7Jd42W7unjyDGyviu4JatB82qS4xMaizyGiA9qtsTGXCcZXf0zu3JIlWHKFW0UoKYIlr-2FoO9nUeQGl7jGc
+AATUyLb1aNgnIUO1daoOElMEVoY3G3VyhOakzH3iFOEWG3AF7HsYNZM31BhSqQUe5NIyBuDdUVPDy0pFCMUi5L3DzvQZ5luc7_nY3fxbFQFpSW5qV1yBF9Pl
+4lzJ_NVpVq_zphCVN__a-IaEJ_f7xDMFTJpxPlzYyPaF6xdsdtiS_okj6puzmrBne_OTpuLBbcwVi7XpVrRNL3PHFkqEWS7zZz8DN2--1lkZhd_OOGSZiGD9
+tSTPq7T0eVkPcGwixBxzw0EIyUSHHYw3PleOcp1p8zofW3F6noRMHjXBWPRcrtP-NXhXpTRydhuVxCu7pDxtopS-7Zy
+}
+
+!function $AnthosConfigManagementIMG($scale=1)
+!return "<img data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAACV0lEQVR42u2bwXHEIAxFKY3DtpAW0kKuOm4LaWGroIDU4haImcE7ZAMYgSTjtQ6a2cPa4/8syWB9G++9uXIYBaAAFIACUAAHxOPHwxr+83sJYS8DYBVtg/AtIoDDQEgKN6nwAoAQsMb7AIjCISe+AOAJ4vQAasJDfD0W/1EGIFIWInWeCbjdvbndFx8ipHxMfXEQHOnuasLDf8J/UwDb8RGEq5UFdX8QqfMYf+5gDkACwu5kA0wDoCHds6lbA5CAYC8L1jqvHd8CICmLPRByABrS/VnnFABeQPh6f2AGgK1zSgBc/WFoFdcjfBQAoj+QAhhK9//ilxCwAYi/eyDUQAAnANcjPIpPhb+G7cyGbFmwAegUbivCh0GEBjglgJjuviNQZTEdgEyd9wacDkBGuO0oA1RZTAOAqrEVgFkFcEIAkBHVGvAOALaOHgS5wYZ4WgBU8VYAbOPqUJugAtAS0CZ4KQBQWAOcdyGEWfy07CmmBVDY+lI2weIW+XAAlUaGyYDmc04DIHOX3Oi2t7QPqGWXOIC9C0I+3po7fwG4LICMMGB4M1Ss98I5nSQA9Hs7RFk4xDlNusMUAxDNDcDwdrjriVEyWVACcJSDkUx/gM55QM1PQDoYMSOT4J0Upp4I+QiFZThqqWeEDDNB1DVwuUE4hLO4RkT8QIPCWX1DIo6wAeFszhBylxileaIh3cl6jagrdG+sLukO4zZK7j42UxAN6c7mHxZ1hudAHOUQFXWLd5qlRazz0nZ5uJxdHvHBhJMUPsMnM/aSn8zoR1MKQAEoAAUwUfwCLXEAhQaF39IAAAAASUVORK5CYII={scale="+$scale+"}>"
+!endfunction
+
+GCPEntityColoring(AnthosConfigManagement)
+!define AnthosConfigManagement(e_alias, e_label, e_techn) GCPEntity(e_alias, e_label, e_techn, #4285F4, AnthosConfigManagement, AnthosConfigManagement)
+!define AnthosConfigManagement(e_alias, e_label, e_techn, e_descr) GCPEntity(e_alias, e_label, e_techn, e_descr, #4285F4, AnthosConfigManagement, AnthosConfigManagement)
+!define AnthosConfigManagementParticipant(p_alias, p_label, p_techn) GCPParticipant(p_alias, p_label, p_techn, #4285F4, AnthosConfigManagement, AnthosConfigManagement)
+!define AnthosConfigManagementParticipant(p_alias, p_label, p_techn, p_descr) GCPParticipant(p_alias, p_label, p_techn, p_descr, #4285F4, AnthosConfigManagement, AnthosConfigManagement)
+GCPEntityColoring(Anthos_Config_Management)
+!define Anthos_Config_Management(e_alias, e_label, e_techn) GCPEntity(e_alias, e_label, e_techn, #4285F4, AnthosConfigManagement, Anthos_Config_Management)
+!define Anthos_Config_Management(e_alias, e_label, e_techn, e_descr) GCPEntity(e_alias, e_label, e_techn, e_descr, #4285F4, AnthosConfigManagement, Anthos_Config_Management)
+!define Anthos_Config_ManagementParticipant(p_alias, p_label, p_techn) GCPParticipant(p_alias, p_label, p_techn, #4285F4, AnthosConfigManagement, Anthos_Config_Management)
+!define Anthos_Config_ManagementParticipant(p_alias, p_label, p_techn, p_descr) GCPParticipant(p_alias, p_label, p_techn, p_descr, #4285F4, AnthosConfigManagement, Anthos_Config_Management)

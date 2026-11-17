@@ -1,0 +1,17 @@
+sprite $Permissions <svg viewBox="0 0 24 24" width="64" height="64"><g ><g transform="translate(2.000000, 2.000000)"><path fill="#5C85DE" d="M10,10c2.9,0,5.2-2.3,5.2-5.2c0-2.9-2.3-5.2-5.2-5.2S4.8,1.9,4.8,4.8 C4.8,7.7,7.1,10,10,10L10,10z"/><path fill="#5C85DE" d="M10,12.7c-3.5,0-10.5,1.7-10.5,5.2v2.6h21v-2.6C20.5,14.4,13.5,12.7,10,12.7L10,12.7z "/><path fill="#3367D6" d="M10,10c2.9,0,5.2-2.3,5.2-5.2c0-2.9-2.3-5.2-5.2-5.2V10L10,10z"/><path fill="#3367D6" d="M10,12.7v7.8h10.5v-2.6C20.5,14.4,13.5,12.7,10,12.7L10,12.7z"/></g></g></svg>
+
+sprite $Permissions_png [64x64/16z] {
+xTR12iGW30HG6OKX___3Yz2bQjKruscfkJ-DDYODuSGe0D8Cq7Ha3ikHL7rv_mfaxSqqVdkJUE7DVVR6hzu1sFVcpxxsoRzzvMtNmvr-xTEcjvVxvArUvVlj
+ra_OzSFt0-412Uztkt-K9v3wLx60rZ_l8roQ_k5JUca4vV6LlJh0JlprlmlYjtuIV2M0s7i_2VxkqVPV-F33pvU8v6y_x4CztVNT5K2k-sStYVJvvXg6VEYh
+Cu1-NsP0nTj2zbEFXUrdteu__ktn0G
+}
+
+!function $PermissionsIMG($scale=1)
+!return "<img data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAABb0lEQVR42u3asRGDMAwFUHbKAi6yQlbICmldZqwswiwKvgOOAjACS8LWL/4AethgS3RE1HlOBwAAAEA1r28fxlDK4z0npDQJMBSaEqeil1kALBOHtAGwVXgGYIaoFmB86pRLBmBKXQBHi2cAiCGYFs8EoFoAohSAxDtB4hNHggDFt0JpAFIAiLcEOPP0TwLQ89P7Bih5YjRd/hcAoncAAgAAAICX4N0AovfPoOY5wPVRmLxfhsLdr8Pk9jos3RCR6ApJtr59tsS4CE02RTnbIVP4T3o+oDkN4gKEJgYje2OxFQD18RiGowAAAAAAAAAAqHz7w1rXaOPvkKB1JpA4+gZOe4xzFZYAKVm0ald4XCF2AFeKLgRQ5N5Q7G8vY4B5m3Anx+Jtb2UAdutMbakrAxxupJg8dUWA7PvBtHglgN0tYbLsDQA2V8LltnZFAHQUILYKsLYKio25KwEgAAAAAAAAAAAAAAB0hQEAAACk/AETxwDshEom3gAAAABJRU5ErkJggg=={scale="+$scale+"}>"
+!endfunction
+
+GCPEntityColoring(Permissions)
+!define Permissions(e_alias, e_label, e_techn) GCPEntity(e_alias, e_label, e_techn, #4285F4, Permissions, Permissions)
+!define Permissions(e_alias, e_label, e_techn, e_descr) GCPEntity(e_alias, e_label, e_techn, e_descr, #4285F4, Permissions, Permissions)
+!define PermissionsParticipant(p_alias, p_label, p_techn) GCPParticipant(p_alias, p_label, p_techn, #4285F4, Permissions, Permissions)
+!define PermissionsParticipant(p_alias, p_label, p_techn, p_descr) GCPParticipant(p_alias, p_label, p_techn, p_descr, #4285F4, Permissions, Permissions)

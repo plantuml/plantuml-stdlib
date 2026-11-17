@@ -1,0 +1,22 @@
+sprite $AutomlTables <svg viewBox="0 0 24 24" width="64" height="64"><g><line fill="#4285f4" x1="19.74" y1="10.23" x2="20.05" y2="9.68"/><path fill="#4285f4" d="M6.82,19.46l.95,1.65h9.49L22,12.89,20.1,9.6l-4.74,8.21H7.77Z"/><path fill="#4285f4" d="M17.18,4.54l-.95-1.65H6.74L2,11.11,3.9,14.4,8.64,6.19h7.59Z"/><path fill="#669df6" d="M 13.61 13.32 L 15.04 14.23 L 15.04 9.99 L 11.65 7.98 L 11.65 9.94 L 13.61 11.1 L 13.61 13.32 Z"/><path fill="#aecbfa" d="M12.68,16V11.78l-3.39-2v4.08Z"/></g></svg>
+
+sprite $AutomlTables_png [64x64/16z] {
+xPTR3iGW24Kh4CB-LpnfR1DyO56catJI-zt3HHIqs_RglmIMV3Y99NBnOYjcBy8nUv7h4d2CXo4kiUolxMc8quJzqlcXYK8FxIc6orhVt66Vt7Y_UConrJCp
+1knttXN1AXvdfVdiCu97W385STXZHj8He5mhNHSF4NKArTUMFMZ-Z53nr1wnpjvXLij3fyEetVg3trCe-MwFj7jtyb3nq6rnQ69QlD6apT4nU6l6G1rHyQXu
+SqXG5L3ngWq78wxkLCrlk31ZakBNHbpDJu-uLF8B4rPV6r-x7zO6VD0UddCzzMxltxr2xdq4XLwGdk9Hp7wSFqtjzDeJUh02y3Pjw1VYrNFq0G
+}
+
+!function $AutomlTablesIMG($scale=1)
+!return "<img data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAB8UlEQVR42u2by3HEMAiGXRqH1JI6OKaFtLBVqIDUkhYUe0beSTy2I0AIpOXwX3etD8TLeMk5L6+sJQAEgAAQAAJAAJDr7eMbOsgngPXBcFXuIHQHYLNKp8PvcgcAOwNIbgAYWH8XeAGQXhZAicoWh88uroDV4Vtanw3AIPD5SYPEwDdfIUSwPkxXChOsj1P2AlbVmgsAhLSHU3aDGjn6/dM+TpgGvhVALvILgJL2qH/+C8AmtABhmvYOAJ4g3ADQDnwXAHaBBwDitPf4yrAKLwDgPxBQ0KfIALSyfgGQi+AsE9xBEFSqKAXQJPAdAGzCVdXeIKxUeQAI1gcGgCeIEwiLEABSY5Mo9dU81A2A02vBBXBjNOBeAWxR71cA+OMNAgAsQ3F/tDo6VwJIEgAVVxZa1wGLMwDs68r5cVJu1gYgrVTJ7kXNywwAWAugRZ9CTS+gDeCYDrX7FEqBwX4lVQEhXZXK2pVq19azVIHVAHqM57r331sZLAXQsks1m8QcvCFpWN/9ikzxhkQB0HpA42Iye9Ym9xrPDbXQpDGeG+nwKuO5kQCovJV6aeurACiBqvVrcbXNEUtXdbE5YuWqbvaGZrG+i13hIfeGZgDgZ11+xK2xoYOgyw8mOl4F8Aqgy8cT8clMAAgAASAABIAAINYPiY5gifBeSgEAAAAASUVORK5CYII={scale="+$scale+"}>"
+!endfunction
+
+GCPEntityColoring(AutomlTables)
+!define AutomlTables(e_alias, e_label, e_techn) GCPEntity(e_alias, e_label, e_techn, #4285F4, AutomlTables, AutomlTables)
+!define AutomlTables(e_alias, e_label, e_techn, e_descr) GCPEntity(e_alias, e_label, e_techn, e_descr, #4285F4, AutomlTables, AutomlTables)
+!define AutomlTablesParticipant(p_alias, p_label, p_techn) GCPParticipant(p_alias, p_label, p_techn, #4285F4, AutomlTables, AutomlTables)
+!define AutomlTablesParticipant(p_alias, p_label, p_techn, p_descr) GCPParticipant(p_alias, p_label, p_techn, p_descr, #4285F4, AutomlTables, AutomlTables)
+GCPEntityColoring(Automl_Tables)
+!define Automl_Tables(e_alias, e_label, e_techn) GCPEntity(e_alias, e_label, e_techn, #4285F4, AutomlTables, Automl_Tables)
+!define Automl_Tables(e_alias, e_label, e_techn, e_descr) GCPEntity(e_alias, e_label, e_techn, e_descr, #4285F4, AutomlTables, Automl_Tables)
+!define Automl_TablesParticipant(p_alias, p_label, p_techn) GCPParticipant(p_alias, p_label, p_techn, #4285F4, AutomlTables, Automl_Tables)
+!define Automl_TablesParticipant(p_alias, p_label, p_techn, p_descr) GCPParticipant(p_alias, p_label, p_techn, p_descr, #4285F4, AutomlTables, Automl_Tables)

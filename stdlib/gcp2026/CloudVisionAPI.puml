@@ -1,0 +1,22 @@
+sprite $CloudVisionAPI <svg viewBox="0 0 24 24" width="64" height="64"><g><g><g ><path fill="#669df6" d="M 6 12 L 12 16.99 L 12 20 L 2 12 L 6 12 Z"/><path fill="#669df6" d="M 12 16.99 L 18 12 L 22 12 L 12 20 L 12 16.99 Z"/><path fill="#aecbfa" d="M 2 12 L 12 4 L 12 7.01 L 6 12 L 2 12 Z"/><path fill="#aecbfa" d="M 12 7.01 L 18 12 L 22 12 L 12 4 L 12 7.01 Z"/><circle fill="#4285f4" cx="12" cy="12" r="2"/></g></g></g></svg>
+
+sprite $CloudVisionAPI_png [64x64/16z] {
+xLRB3eCm32EaLFt_BsQQw9QIDEHncQRwjYvsRGj4jcrXuM-1cAHd103VW1mzAe04IRfV0F06oD5z0fGKo33U2Ku1DW-k3D9r3W4vhhc4sKqs0IMffGGX-hxR
+1RZ7sbuenWpyxtR18Y3OgvqlE013FQtT3KnBa9pj0f--M9HVFq2TZyBWx5pW7nCw5QZzgB3-lZF2Cy05Bdh_3NnY8W3KGNc8_boEaQxE75fqhGJzt2O01kyy
+0tYYAoMWBRgG0SVcp1y0MeBBk_0qH-Y2W7i76Ec11I3idMM8hb0OZ3vcI2s0DRS_BYpyDau
+}
+
+!function $CloudVisionAPIIMG($scale=1)
+!return "<img data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAABzElEQVR42u2azZHDMAiFXZoOqSV1cEwLaSFVuICtJS1orRllJpNd22A9QLE4vKslPvGwfphyztPImgJAAAgAASAABIAAEAACgIMePwMDKMEvylVjAVgCTm/Bv5SGALAESv8E/xKdFkBN+a3gXSB4+J2rcwBY8TtX6asBMFPe1RLefneH4Ol3OlAf+gYg8Ds12KVPAIIAEuAb1A0Aod9Vs8gcgJZ/LeuCi997gqDtdzKsLaQOQOj3zV3c5fYsSlVuEMxTsgY+L8ofoi0Qwi01FgBq8Bp83pJ1XTD14MrK/8kEIAQ6DEDod07wEyP43SxALwyCMuvIWotdZkrjtMkHcL0/izJT5AWgjN06R/UBNCxQF2hGzA1JuWgPArUWQWF2JshvUDhoSxbMO/NIqMUQb4SQ5FcygVB2vN4VzwIKdcF0TMhhSHNCDcUumR6HUXXB6/uQCxGtSQqKncjvaneCAkukXuwFvxRFTBwJ0uVaXGAJaih2fT+MSOuCBBo6eNW3QeEW2sTv5o+jIAiqL8Tqz+NCS6j63a1B4gAEsgjevEeIaYnztcgIIJh3irm0ya1YYqxGyTcI5BV89AoHgAAQAAJAAAgAASAABICB9QtDtdW+8TVUqAAAAABJRU5ErkJggg=={scale="+$scale+"}>"
+!endfunction
+
+GCPEntityColoring(CloudVisionAPI)
+!define CloudVisionAPI(e_alias, e_label, e_techn) GCPEntity(e_alias, e_label, e_techn, #4285F4, CloudVisionAPI, CloudVisionAPI)
+!define CloudVisionAPI(e_alias, e_label, e_techn, e_descr) GCPEntity(e_alias, e_label, e_techn, e_descr, #4285F4, CloudVisionAPI, CloudVisionAPI)
+!define CloudVisionAPIParticipant(p_alias, p_label, p_techn) GCPParticipant(p_alias, p_label, p_techn, #4285F4, CloudVisionAPI, CloudVisionAPI)
+!define CloudVisionAPIParticipant(p_alias, p_label, p_techn, p_descr) GCPParticipant(p_alias, p_label, p_techn, p_descr, #4285F4, CloudVisionAPI, CloudVisionAPI)
+GCPEntityColoring(Cloud_Vision_API)
+!define Cloud_Vision_API(e_alias, e_label, e_techn) GCPEntity(e_alias, e_label, e_techn, #4285F4, CloudVisionAPI, Cloud_Vision_API)
+!define Cloud_Vision_API(e_alias, e_label, e_techn, e_descr) GCPEntity(e_alias, e_label, e_techn, e_descr, #4285F4, CloudVisionAPI, Cloud_Vision_API)
+!define Cloud_Vision_APIParticipant(p_alias, p_label, p_techn) GCPParticipant(p_alias, p_label, p_techn, #4285F4, CloudVisionAPI, Cloud_Vision_API)
+!define Cloud_Vision_APIParticipant(p_alias, p_label, p_techn, p_descr) GCPParticipant(p_alias, p_label, p_techn, p_descr, #4285F4, CloudVisionAPI, Cloud_Vision_API)

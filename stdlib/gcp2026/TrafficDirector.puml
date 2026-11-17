@@ -1,0 +1,22 @@
+sprite $TrafficDirector <svg viewBox="0 0 24 24" width="64" height="64"><g><path fill="#4285f4" d="M9,15a6.22,6.22,0,0,0-4-5V8a8.22,8.22,0,0,1,6,7Z"/><g><path fill="#4285f4" d="M5,7v4L2,9Zm6,8.39V18H9V15.38"/><path fill="#669df6" d="M9,5H8l2-3,2,3H11V18H9Z"/></g><g><path fill="#aecbfa" d="M19,17V13l3,2ZM13,8.62V6h2V8.62"/><path fill="#669df6" d="M15,19h1l-2,3-2-3h1V6h2Z"/></g><path fill="#aecbfa" d="M13,6h2V8.43A6.13,6.13,0,0,0,19,14v2a8.15,8.15,0,0,1-6-7.58"/></g></svg>
+
+sprite $TrafficDirector_png [64x64/16z] {
+xPVR4eCW34G9f1d-_ukhW3HGw-JIZdN6VJ_hRgGrX73hDm8dJpu38lBWQU6Jx_7aQ41LdlJaQ42RZ0q0wkC1JfhVD_cqwWfyZXuUiulFYp1QUSnDQE8p4nfu
+v0Pvv46IFmu6KStN26mAQdwD47iHP3nA3r1vVLGDB3oV9UEfyA0puBmoG37WV0sWC9XvL3Q84zy2Q4OmyW-bGPpupI19FympJo7r2AB3-CPl1h8YE_nWaEJ_
+dvrlloHPX3r-Y63YNmwM_EtRAZe8dtdH-plYHQVmW0zNu5dTKtc0kijPDodegvnpbVHjSevTsZl_qi1rb_3T1DO6zstmN_K4
+}
+
+!function $TrafficDirectorIMG($scale=1)
+!return "<img data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAB80lEQVR42u3by5GDMAwAUErTYVvYFtLCXnVMC2mBFvayBWwttKDYOzALHht/ACNbOugSMpnxs2RjIgYiGiTHoAAKoAAKUCMerwnEApjB2yCOCLUA6D+EAZhB4xZgQjEAq9R3A6QA0E70DeBJfeJYCrVTn10pXAkAc3hnf7kuYRfwABBI2gYVIAVg/CUwQW4oAEeAj+ckE8AO3ASZAHEAZtA4D14WwGrW14GpCE0DOLMeCtxbE5oECMx6FKI3ACxAIDcbUgFe3zxLAAoRIBfAngt8ADYzOCyC6Kn7pJJoHiCQDZC4SGIOgCkDql0GJTdCmy1w/uwnhJAD8AwAXJkFp/1QKBtyAOy1AAA2cRjyIeQC1M6C03/QRcgFeIzBLLDRxnH4EMB+FmArAHAEYGctOB3hsu1lKYVSgK+RshBKy+NKADgCkICwWRPmswTmQlx6n30UYC4FiCD8Ddr5HnABgKMAeyfFFJguAJYaL0CIZsNNT4WnbIAVAp6ZDWwei6cAxB6elGydtwB8FmZAIQS/EjgLIFIaePsuUAvAkw08tsEbAJDNnWBtgKb+HFUASQA5rbQKIBFg1UwVaqtbrncNEG2p67oEEpoqoXeA4a6OUl0EObWue0oBpAEMtZup2b3Ds5SC6LfGar5LoK/NKYACKIDoeAMiGHYUSXqPjAAAAABJRU5ErkJggg=={scale="+$scale+"}>"
+!endfunction
+
+GCPEntityColoring(TrafficDirector)
+!define TrafficDirector(e_alias, e_label, e_techn) GCPEntity(e_alias, e_label, e_techn, #4285F4, TrafficDirector, TrafficDirector)
+!define TrafficDirector(e_alias, e_label, e_techn, e_descr) GCPEntity(e_alias, e_label, e_techn, e_descr, #4285F4, TrafficDirector, TrafficDirector)
+!define TrafficDirectorParticipant(p_alias, p_label, p_techn) GCPParticipant(p_alias, p_label, p_techn, #4285F4, TrafficDirector, TrafficDirector)
+!define TrafficDirectorParticipant(p_alias, p_label, p_techn, p_descr) GCPParticipant(p_alias, p_label, p_techn, p_descr, #4285F4, TrafficDirector, TrafficDirector)
+GCPEntityColoring(Traffic_Director)
+!define Traffic_Director(e_alias, e_label, e_techn) GCPEntity(e_alias, e_label, e_techn, #4285F4, TrafficDirector, Traffic_Director)
+!define Traffic_Director(e_alias, e_label, e_techn, e_descr) GCPEntity(e_alias, e_label, e_techn, e_descr, #4285F4, TrafficDirector, Traffic_Director)
+!define Traffic_DirectorParticipant(p_alias, p_label, p_techn) GCPParticipant(p_alias, p_label, p_techn, #4285F4, TrafficDirector, Traffic_Director)
+!define Traffic_DirectorParticipant(p_alias, p_label, p_techn, p_descr) GCPParticipant(p_alias, p_label, p_techn, p_descr, #4285F4, TrafficDirector, Traffic_Director)

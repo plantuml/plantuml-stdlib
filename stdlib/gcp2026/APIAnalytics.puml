@@ -1,0 +1,22 @@
+sprite $APIAnalytics <svg viewBox="0 0 24 24" width="64" height="64"><g><path fill="#4285f4" d="M3.47,15.68a4.31,4.31,0,1,1,6.07-.4,3.68,3.68,0,0,1-.39.4A4.32,4.32,0,0,1,3.47,15.68Zm5.2-5.2a3.07,3.07,0,1,0-.4,4.33,3,3,0,0,0,.4-.4,3.07,3.07,0,0,0,0-3.93Z"/><path fill="#4285f4" d="M14.86,15.68a4.31,4.31,0,1,1,6.07-.4,3.78,3.78,0,0,1-.4.4A4.31,4.31,0,0,1,14.86,15.68Zm5.2-5.2a3.07,3.07,0,1,0-.4,4.33,3,3,0,0,0,.4-.4,3.08,3.08,0,0,0,0-3.93Z"/><circle fill="#669df6" cx="6.31" cy="12.44" r="1.69"/><circle fill="#669df6" cx="17.69" cy="12.44" r="1.69"/><path fill="#aecbfa" d="M14.39,7.81a.31.31,0,0,0-.18-.56H9.79a.31.31,0,0,0-.18.56,5.73,5.73,0,0,1,2.13,2.92.28.28,0,0,0,.36.16.29.29,0,0,0,.17-.17A5.67,5.67,0,0,1,14.39,7.81Z"/></g></svg>
+
+sprite $APIAnalytics_png [64x64/16z] {
+xLJB3iCm22i4eVx_5s_BWq9WR9fssOHFJHmRKX4VHw5GAFmRGE4JULDuMuM8yXt8DHs8pm52Qp1PdZJcwkwWhp1enOOET1fS1h2RYx-Jasf4RY1RtCiYHGPa
+zd0PmEpUDXrSORTSww6NVfI1Ax-cncpq9KgzDKb1kNwWyHsmd-3Lp8DjjfxSjnyS0BMbtDjWcoue-aS1c7hsUkNUxQsUJ86kFoxzj0Ajfw_gSQmWrIVzRoTQ
+-l_O_pyfPdumkM4IEVg18WcTmuoCFYrHjCyF1WDrcXN7ung_dtt0DtiA7g3E1Vz2IR7ZBRi0MCb0OKBCNPmXngy22BDq2-BdIfQdVCvAFYSHdRE5Gg7mMxW1
+}
+
+!function $APIAnalyticsIMG($scale=1)
+!return "<img data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAB9klEQVR42u2Z0XHDMAiGPRoPnSVz8NgVskKn8ACdJSvQuOfe2TqEAJPE1/wP/5sk4APJEp5EZHpnTQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPX6+ha6i4P6VwCWgCQoOj2Aj88bbeSpgpLgF1tb208FsBoVQ9xzygnBsjsPbNPDADgC10BEtwN1si1BUSmANRhJyguBC6DvElACoBO8ml3D4RbA1AJwrjVr2V3HcgZCNHgeHXaG81YVkKPsyWE3PC+yGAcPS3P+tgqUucNtFISQArDLvjbmcr0tokXOCtKqgAfVQx3btOpQ8iwAXScu118H+C5pRIN12JHB2RrfscuZBHYBtFlQnBBDFFkrBl4NXoWgVAFlAbBSehYAyQJonQ6C1+CnAXAyC3/qZjXy9YiCVwDw6QBYJ/KZAJABILoFqirgqVvgiCP8okNQImuNAJhla0Dggs+gJD6D2raj9GfQ6/jmMkKdOwAlrrM0OjNGdiPgI44cvQpLYO7uAZToWfDhq3DvMfSI+7gHvnd+1OdMIN1SXsdz9m3ueIZT8AU6V/QDJkfnh482JhKNGBq0yWZP1UT2Mz+yNVXYigtBzzjDlQ4UJ4AjZ82htnjTEi9pUb/CLn6NAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAMCb6QedSMa4HYEBuwAAAABJRU5ErkJggg=={scale="+$scale+"}>"
+!endfunction
+
+GCPEntityColoring(APIAnalytics)
+!define APIAnalytics(e_alias, e_label, e_techn) GCPEntity(e_alias, e_label, e_techn, #4285F4, APIAnalytics, APIAnalytics)
+!define APIAnalytics(e_alias, e_label, e_techn, e_descr) GCPEntity(e_alias, e_label, e_techn, e_descr, #4285F4, APIAnalytics, APIAnalytics)
+!define APIAnalyticsParticipant(p_alias, p_label, p_techn) GCPParticipant(p_alias, p_label, p_techn, #4285F4, APIAnalytics, APIAnalytics)
+!define APIAnalyticsParticipant(p_alias, p_label, p_techn, p_descr) GCPParticipant(p_alias, p_label, p_techn, p_descr, #4285F4, APIAnalytics, APIAnalytics)
+GCPEntityColoring(API_Analytics)
+!define API_Analytics(e_alias, e_label, e_techn) GCPEntity(e_alias, e_label, e_techn, #4285F4, APIAnalytics, API_Analytics)
+!define API_Analytics(e_alias, e_label, e_techn, e_descr) GCPEntity(e_alias, e_label, e_techn, e_descr, #4285F4, APIAnalytics, API_Analytics)
+!define API_AnalyticsParticipant(p_alias, p_label, p_techn) GCPParticipant(p_alias, p_label, p_techn, #4285F4, APIAnalytics, API_Analytics)
+!define API_AnalyticsParticipant(p_alias, p_label, p_techn, p_descr) GCPParticipant(p_alias, p_label, p_techn, p_descr, #4285F4, APIAnalytics, API_Analytics)

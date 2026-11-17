@@ -1,0 +1,18 @@
+sprite $Datashare <svg viewBox="0 0 24 24" width="64" height="64"><path fill="#4285f4" d="M19.45,18.47a1.12,1.12,0,1,1,1.15-1.09,1.13,1.13,0,0,1-1.15,1.09Zm0,1A2.08,2.08,0,1,0,18,18.84a2.08,2.08,0,0,0,1.47.61Z"/><path fill="#4285f4" d="M19.46,4.33A2.07,2.07,0,0,0,18,7.87a2,2,0,0,0,1.47.6h0a2.08,2.08,0,1,0,0-4.15Zm.8,2.86a1.08,1.08,0,0,1-.81.31A1.11,1.11,0,1,1,20.6,6.42,1.14,1.14,0,0,1,20.26,7.19Z"/><path fill="#4285f4" d="M15.9,10h-.05v.95h.07a1.11,1.11,0,0,1,0,2.22h-.07v1h.07a2.08,2.08,0,1,0,0-4.15Z"/><path fill="#4285f4" d="M11.32,2C6.43,2,2.46,4,2.46,6.4s4,4.41,8.86,4.41h.1V2Z"/><path fill="#4285f4" d="M11.32,12.52a14,14,0,0,1-6.27-1.25A4.45,4.45,0,0,1,2.61,8.89H2.46V12h0c0,2.43,4,4.4,8.86,4.4h.1v-3.9Z"/><path fill="#4285f4" d="M11.32,18.1a14,14,0,0,1-6.27-1.24,4.45,4.45,0,0,1-2.44-2.38H2.46V17.6h0c0,2.43,4,4.4,8.86,4.4h.1V18.1Z"/><rect fill="#669df6" x="13.64" y="2" width="2.22" height="20"/></svg>
+
+sprite $Datashare_png [64x64/16z] {
+xPVTaeCW38KnUzRD-p_ngYCA-S40xKLdchlYV3Na90TCwHil3o82xq77psNTOucoV4St3wwYanTq9w_eFfvvYkSelqa3Yk46dzK9uPg_nQr5Z_8dU3toIs_o
+b9T40XpdqpluZlnnrciTgl-sjeaFMJyl0Qr_VeB1_acbCGprx-ukoZISBKJdXvqc3FEmspZCvu8GNFv7Rxii7ba6Ml9_UcghuaCwE3JFJVFnyilxX-nQ9Jur
+-UGcSE_OiBQR9-yDGZNgvIt_mjMdPVxKuTwoV-0B49ZVbdwH-MtrJsH-Vnlzcpv-VjFZ_9R-PxXdUfhVsdzryScuWId-M2JLIAQbw_w_pX-8rvr9hVJCKsru
+NVDRdf_aDX_S-NNV3tjyvVnUGc7q_eBZdtMnm-SlxECtVlwIuxCyUVzCwoG_Ut-UlhyRGWvylrGMCCAN7r2Z_3UYyGy
+}
+
+!function $DatashareIMG($scale=1)
+!return "<img data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAACCElEQVR42u2bzXGEMAyFXZoOaSEtpA4d08J2Q0XbgsOB7DCM/5CfQDI+6Lg76LMtvWdBiDGGJ0eYACaACWACQMfX75t2wWvERFDqtz+vN60RE0FmAeySjSfCN4A1gVBY3XEBABL3CwCUuD8A26pHcPgAoJQ8FMD2jPuOw7n/PwVAMXkYgIbu0wUgWgbQ2npFAAR9/Q4AyZVO7FySAGDLAA4LRLXjKwEQvQBoyWFoALlC1wvA0xHgSg1bJACCsyLIW9KpxSNpG2TjAFoWiXuVoHUhFM7eOQwnhQ9ymFplcFUIKR8H22Yo1TrA6tA+gFwBAYFwAaBYSCqXnlAA369Pm6OrATRVU8HF6FkAp2wuGkC1n9aq8rZTGAgAAkHS/0lzUFGqAYmev9wBQBVESxFE7gKEAmQkjEYAhFoIDQn8f+bdA0BfifGhKKKOgBoAk3b4qDtU5wKW7PDlbdCaHb5cCFmzwyuA5WopHKYdnnbYlx3ejitcCAULdrgyHeaM7oApwXC3He64FYZJYQLYYTQAzshwRkyHo3RbaZuhxskQ906HS9tqudMOtxoiTQC32mHBdJiussPdF5eWdgArWuEuO5zpAKXnH/YVGc6AxgxHrU+HG56Re+8DzE+HC7uVhrLDFl6VXR4L4PEvS8/X5XVa5VCfzEjuBsYBIPxwamwA87vBCWACmAA8xB+/42qwa0FrVgAAAABJRU5ErkJggg=={scale="+$scale+"}>"
+!endfunction
+
+GCPEntityColoring(Datashare)
+!define Datashare(e_alias, e_label, e_techn) GCPEntity(e_alias, e_label, e_techn, #4285F4, Datashare, Datashare)
+!define Datashare(e_alias, e_label, e_techn, e_descr) GCPEntity(e_alias, e_label, e_techn, e_descr, #4285F4, Datashare, Datashare)
+!define DatashareParticipant(p_alias, p_label, p_techn) GCPParticipant(p_alias, p_label, p_techn, #4285F4, Datashare, Datashare)
+!define DatashareParticipant(p_alias, p_label, p_techn, p_descr) GCPParticipant(p_alias, p_label, p_techn, p_descr, #4285F4, Datashare, Datashare)

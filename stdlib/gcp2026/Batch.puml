@@ -1,0 +1,17 @@
+sprite $Batch <svg viewBox="0 0 24 24" width="64" height="64"><path fill="#4285F4" d="M15.62271,5 L21.638741,11.5594321 L15.62271,18.1188642 L13.612,15.926 L11.5874595,18.1343249 L9.794,16.179 L8.01603096,18.1188642 L2,11.5594321 L8.01603096,5 L9.808,6.954 L9.179,7.64 L8.01603096,6.37241434 L3.25871981,11.5594321 L8.01603096,16.7464499 L9.165,15.493 L5.57142857,11.5748928 L11.5874595,5.01546073 L13.598,7.207 L15.62271,5 Z M11.5874595,6.38787507 L6.83014838,11.5748928 L11.5874595,16.7619106 L12.982,15.24 L9.60667904,11.5594321 L12.968,7.893 L11.5874595,6.38787507 Z"/></svg>
+
+sprite $Batch_png [64x64/16z] {
+xPRR2iGW34Gb19d__-BjrRGQTSA-x8Bp5CGprHXZKrfQMlefgJSeD2ue1a0RpN7S1bjqOHcqmGwT1aUKZnq1h05m6rYaLyZZ6wPj10uNnuGpE75lwJOoK7wd
+JbyRcXjecQ0bypK_C31SRAy0Qq3YFGF3qnW_4knMxHCQuDufkdW6RL3XOaLF6KJnoi16gX8W3QgFFWwnAqqpWy3wcwHhC7_H3FQkhfTD3ezKKB_lKXKylxz3
+0_ck0N0Do5e_8WrGczOVmk_giUavXZ--PuUlmkF5G4hrs2EGW-zdVHNu1rZhI7bymvp_1-NnfQMb_z07
+}
+
+!function $BatchIMG($scale=1)
+!return "<img data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAABqklEQVR42u2aSY4DIQxFORqLPpiXORYn6iuQQVGrMxTY8MGQ/IU3kVXKf1V4JOScwzdbIAACIAACIAACIAACIAACIAACIACQ/Zx+Rel3M6Vf3ALA9Y9eLNcg3EXlu3X7LQHgn/hcgvAkqiju8nvS+LkDOBD1AqHgl94dpQPftQAURL1AMPhJxXcNAArxf+IUoix+EAijxEcwlENzA1AS33AseiCIF4DUEfDkzfOyB4TmQkcpSpTRvhdAM4SR4qPmzILEN0OYKv45aoPFN0EYIT44in8IxDAAgM95pnhTjdAs3iBKm0FcILTmelNNoKzvXSB0iy/k8BXEVyEgxPfUBO4QSl9Az1u1pMYZJsgjEHf7CoYHQW1vsFUQ/JBMACuEwoBaQLYohDYtiIY1Q9CSGDAH6B6TjWyHPfqCuNpAZGZbLLNHYoLaAQAAiNdU+BACcFew5lC0VgAZxuLJSzxyM6SKzobFSJwhfuZqLCoLIO2uIG27HAX1Dcuux0PjelwMgXb5CxLBekHCkG22uSJjgQV9Ji9JEQABEAABEAABEAABEAABEAABEEDdzrcXH+nFrC2zAAAAAElFTkSuQmCC{scale="+$scale+"}>"
+!endfunction
+
+GCPEntityColoring(Batch)
+!define Batch(e_alias, e_label, e_techn) GCPEntity(e_alias, e_label, e_techn, #4285F4, Batch, Batch)
+!define Batch(e_alias, e_label, e_techn, e_descr) GCPEntity(e_alias, e_label, e_techn, e_descr, #4285F4, Batch, Batch)
+!define BatchParticipant(p_alias, p_label, p_techn) GCPParticipant(p_alias, p_label, p_techn, #4285F4, Batch, Batch)
+!define BatchParticipant(p_alias, p_label, p_techn, p_descr) GCPParticipant(p_alias, p_label, p_techn, p_descr, #4285F4, Batch, Batch)

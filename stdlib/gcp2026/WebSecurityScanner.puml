@@ -1,0 +1,23 @@
+sprite $WebSecurityScanner <svg viewBox="0 0 24 24" width="64" height="64"><g><circle fill="#4285f4" cx="11.44" cy="11.5" r="2.97"/><circle fill="#669df6" cx="4.02" cy="10.79" r="2.02"/><circle fill="#669df6" cx="14.52" cy="18.62" r="2.02"/><path fill="#669df6" d="M19.57,4.2A2.43,2.43,0,1,0,22,6.63,2.43,2.43,0,0,0,19.57,4.2Zm0,3.8a1.37,1.37,0,1,1,1.36-1.37h0A1.37,1.37,0,0,1,19.57,8Z"/><path fill="#669df6" d="M18.2,6.68a8.29,8.29,0,0,0-5.06-3.32L12.86,4.7a6.95,6.95,0,1,1-8.22,5.38A6.88,6.88,0,0,1,6.51,6.61l-1-1A8.31,8.31,0,1,0,18.89,7.81,1.36,1.36,0,0,1,18.2,6.68Z"/></g></svg>
+
+sprite $WebSecurityScanner_png [64x64/16z] {
+xLRR5eGW21H8Jl__nLjxLHn1xUnRyvOrC10WATsuyLUeq1KwwG6voFzP8D4vGM--wlD9oeTv2LbrnS3RWfpUJ-svan4dJRLmB40yMLAcaLuwWCZ003dyudtN
+WCENi4xagqy0V-2lV3m8-5G2zLKj0K_7MJP7p4YZmZorxhVznEOrWwsEXds2KGPmSIcWrmPmafkmU2zX0XX8QqKlSq2zt7dylPOQyzdmsUV_zCiIFrdvi_na
+gsek_hRvQhe6-M_FkIUVUargx6xuzyFEXOMvGJhgqavWZDg7-aEYxIpcPW0uCoeFN2haZ4WQk6RT4Pc7vgyiMe_lbrSR1kefpHiuLePZOnZPGp9oKKo7S8t9
+xLSpT7DBczauj4Hzt175LvOJ0yBqnhN8hvCs5twXWaX4YFBQnjRCrciRx8K5-CQDBXu
+}
+
+!function $WebSecurityScannerIMG($scale=1)
+!return "<img data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAACMUlEQVR42u2a2W3DMAxANRo/Okvn4GdX6DaaKCuoCiAHriHbvHTY5geBIIgR8ZmXSIaUUniyBAfgAByAA3AADsABOIAZ5Pv3lbJgFngcgLfSBcBaMoxnA/iAIDyL/8HRrOgqABapPYfcZ6YPglRryJ8jAdohhKkj9AEIrLx5WD23hYPmAMoBOkCQmznlNxrlST5maA3IDZAbCwITADWz7OgSNQjQDUDxLfIBOkHoCgA5+bkXBOLvdABqb39gdgiVrCCC1MT0JiqcbOqACvGoOfzXzwuKWFyezgRUlWBRXv3238pmwSypIiiBcVYxUlK0NPcmzi3tQPGtgNIK0Ow2SKi+krHyIgjawMzJ92z/Kn6eBKJxAxMA5Ah7AiAJBRUAwAIAagGUoCcFkBRuMA0A0ADgxIIWAKgugLcEwCgywp0BBGUGuG4MOOnGkDtBCgBxaBaw+gOFG8DQOsDSxASVILboDVgCSIKLELZQvnK22AoAGNwGocFFSH0ucQfGoBeg7glYdKg4fxY1waZDRwhbA4AZGqIHhVr76XDFCqboCmvOYTEXmKEZ2m8/YOemOKodru5OW46oLN8wbhcd9jZIhm2I7Mzmwdi3k3RrpMuKzA4E0dh8hPImCxJHY2sqCOaUxzTztJ7df1yDMcVVt+KHbIlV1lKayPRrckxzvh+Ak5miVvAyAHYsA1Z5fpHlu6hpwt5hUzT0Vn7KPcHarbNlqe3r8g7AATgAB+AAHIADeKz8Af1E1yxgzSCAAAAAAElFTkSuQmCC{scale="+$scale+"}>"
+!endfunction
+
+GCPEntityColoring(WebSecurityScanner)
+!define WebSecurityScanner(e_alias, e_label, e_techn) GCPEntity(e_alias, e_label, e_techn, #4285F4, WebSecurityScanner, WebSecurityScanner)
+!define WebSecurityScanner(e_alias, e_label, e_techn, e_descr) GCPEntity(e_alias, e_label, e_techn, e_descr, #4285F4, WebSecurityScanner, WebSecurityScanner)
+!define WebSecurityScannerParticipant(p_alias, p_label, p_techn) GCPParticipant(p_alias, p_label, p_techn, #4285F4, WebSecurityScanner, WebSecurityScanner)
+!define WebSecurityScannerParticipant(p_alias, p_label, p_techn, p_descr) GCPParticipant(p_alias, p_label, p_techn, p_descr, #4285F4, WebSecurityScanner, WebSecurityScanner)
+GCPEntityColoring(Web_Security_Scanner)
+!define Web_Security_Scanner(e_alias, e_label, e_techn) GCPEntity(e_alias, e_label, e_techn, #4285F4, WebSecurityScanner, Web_Security_Scanner)
+!define Web_Security_Scanner(e_alias, e_label, e_techn, e_descr) GCPEntity(e_alias, e_label, e_techn, e_descr, #4285F4, WebSecurityScanner, Web_Security_Scanner)
+!define Web_Security_ScannerParticipant(p_alias, p_label, p_techn) GCPParticipant(p_alias, p_label, p_techn, #4285F4, WebSecurityScanner, Web_Security_Scanner)
+!define Web_Security_ScannerParticipant(p_alias, p_label, p_techn, p_descr) GCPParticipant(p_alias, p_label, p_techn, p_descr, #4285F4, WebSecurityScanner, Web_Security_Scanner)

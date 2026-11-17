@@ -1,0 +1,20 @@
+sprite $CloudFirewallRules <svg viewBox="0 0 24 24" width="64" height="64"><g><g ><rect fill="#4285f4" x="1.98" y="2" width="8.89" height="2.22"/><rect fill="#4285f4" x="1.98" y="19.78" width="8.89" height="2.22"/><rect fill="#4285f4" x="1.98" y="10.89" width="8.89" height="2.22"/><rect fill="#4285f4" x="13.09" y="2" width="8.89" height="2.22"/><rect fill="#4285f4" x="13.09" y="19.78" width="8.89" height="2.22"/><rect fill="#4285f4" x="13.09" y="10.89" width="8.89" height="2.22"/><rect fill="#4285f4" x="7.53" y="6.44" width="8.89" height="2.22"/><rect fill="#4285f4" x="7.53" y="15.33" width="8.89" height="2.22"/><rect fill="#4285f4" x="1.98" y="6.44" width="3.33" height="2.22"/><rect fill="#4285f4" x="1.98" y="15.33" width="3.33" height="2.22"/><rect fill="#4285f4" x="18.65" y="6.44" width="3.33" height="2.22"/><rect fill="#4285f4" x="18.65" y="15.33" width="3.33" height="2.22"/></g></g></svg>
+
+sprite $CloudFirewallRules_png [64x64/16z] {
+xPIn2W0W20L58lh_BsweQ4afQsYus-HnIzeJWMkIWPlgz8k1c-B39-mjh7q7zVQF7_BXa_kdl-b_-f_-FlHJxhGnh-d-6Bd_PwY1czB_p_pRzuSm5G
+}
+
+!function $CloudFirewallRulesIMG($scale=1)
+!return "<img data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAAvElEQVR42u3aMQrDMAwFUB/NQw/mscfKiXoFh0yFQlS3IAfiN/zRKLxFkuPSey8rpwAAAADAZx7PV8vM2cck162/APTMBACZdQEAAABgGCA1AcD0muYAAAAAAPinHV3UytpJzTp9DgAAAACA2wKYAwAAAADALuBOEAAAAADWBDAHAAAAAIBdwJ0gAAAA1gU4HhZuUQKALTERwLezdgEAAAAAGO0CNTNBB8ms678AAAAAAOgC5gAAAAAAeGcHMfSN822RB6gAAAAASUVORK5CYII={scale="+$scale+"}>"
+!endfunction
+
+GCPEntityColoring(CloudFirewallRules)
+!define CloudFirewallRules(e_alias, e_label, e_techn) GCPEntity(e_alias, e_label, e_techn, #4285F4, CloudFirewallRules, CloudFirewallRules)
+!define CloudFirewallRules(e_alias, e_label, e_techn, e_descr) GCPEntity(e_alias, e_label, e_techn, e_descr, #4285F4, CloudFirewallRules, CloudFirewallRules)
+!define CloudFirewallRulesParticipant(p_alias, p_label, p_techn) GCPParticipant(p_alias, p_label, p_techn, #4285F4, CloudFirewallRules, CloudFirewallRules)
+!define CloudFirewallRulesParticipant(p_alias, p_label, p_techn, p_descr) GCPParticipant(p_alias, p_label, p_techn, p_descr, #4285F4, CloudFirewallRules, CloudFirewallRules)
+GCPEntityColoring(Cloud_Firewall_Rules)
+!define Cloud_Firewall_Rules(e_alias, e_label, e_techn) GCPEntity(e_alias, e_label, e_techn, #4285F4, CloudFirewallRules, Cloud_Firewall_Rules)
+!define Cloud_Firewall_Rules(e_alias, e_label, e_techn, e_descr) GCPEntity(e_alias, e_label, e_techn, e_descr, #4285F4, CloudFirewallRules, Cloud_Firewall_Rules)
+!define Cloud_Firewall_RulesParticipant(p_alias, p_label, p_techn) GCPParticipant(p_alias, p_label, p_techn, #4285F4, CloudFirewallRules, Cloud_Firewall_Rules)
+!define Cloud_Firewall_RulesParticipant(p_alias, p_label, p_techn, p_descr) GCPParticipant(p_alias, p_label, p_techn, p_descr, #4285F4, CloudFirewallRules, Cloud_Firewall_Rules)

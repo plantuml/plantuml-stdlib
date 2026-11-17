@@ -37,7 +37,7 @@ Following the C convention for "C standard library" _(see https://en.wikipedia.o
     - [Concrete example of usage](#concrete-example-of-usage)
   - [EIP-PlantUML [eip]](#eip-plantuml-eip)
   - [Elastic library [elastic]](#elastic-library-elastic)
-  - [Google Cloud Platform [gcp]](#google-cloud-platform-gcp)
+  - [Google Cloud Platform [gcp, gcp1, gcp2026]](#google-cloud-platform-gcp-gcp1-gcp2026)
   - [K8S [k8s]](#k8s-k8s)
   - [Google Material Icons [material, material2, material7]](#google-material-icons-material-material2-material7)
     - [(Old version) PNG sprites - compatibility mode [material, material2]](#old-version-png-sprites---compatibility-mode-material-material2)
@@ -598,7 +598,32 @@ ElasticSearch -right-> Kibana: Data to View
 This example renders the following image:
 ![Example](https://www.plantuml.com/plantuml/png/TOxFQiCm38VlUGejfnHITYyZrEl2MXgsCOVUrLXBpFm7R8UnFVrI9oNa41yi6N-VVjhxW2xqMYKmd0Tf6jKBWYTIw8Di7XkhjJN5okzKFQ5hkkLhJL6szG5zTszMmMzvHODJAP98bHNZzUd0I_PvE6RbIFAObqCwDe1603EeVlyepGK6lAAdJVIhzrTUCtxCgYbyi3xGUOfIxT3uB-jqcXih9kLyUcPlB3l7DGRy8dsFIjvcOqicR21YyRfFXQsJRHUs1InMtCq99E050qPhmSpgcBYB70GB5qa_IR8d8tgj_W40)
 
-## Google Cloud Platform [gcp]
+## Google Cloud Platform [gcp, gcp1, gcp2026]
+
+Several versions are available: `gcp1` (legacy v6.0.0 icons) and `gcp2026` (official 2026 Google Cloud architecture icons with CamelCase macros, full-color SVG sprites, and full-color PNG icons). `gcp` is a link to `gcp1` for backward compatibility.
+
+### Modern GCP Library [`gcp2026`]
+
+```plantuml
+@startuml
+!include <gcp2026/GCPCommon>
+!include <gcp2026/CloudRun>
+!include <gcp2026/CloudStorage>
+!include <gcp2026/CloudSQL>
+
+GCPEntityColored(api, "Cloud Run", "Runs containerised workloads") {
+  CloudRun(service, "API Service", "us-central1")
+}
+
+CloudStorage(bucket, "Asset Bucket", "Standard storage")
+CloudSQL(db, "Orders DB", "PostgreSQL 15")
+
+service --> bucket
+service --> db
+@enduml
+```
+
+### Legacy GCP Library [`gcp`, `gcp1`]
 
 ```plantuml
 @startuml
@@ -982,7 +1007,9 @@ it gives the files of the folder it points to (see its `README.md`).
 | `edgy` | 0.8.0 | [boessu/plantuml-stdlib](https://github.com/boessu/plantuml-stdlib) |
 | `eip` | 1.0.0 | [plantuml-stdlib/EIP-PlantUML](https://github.com/plantuml-stdlib/EIP-PlantUML) |
 | `elastic` | 0.0.1 | [Crashedmind/PlantUML-Elastic-icons](https://github.com/Crashedmind/PlantUML-Elastic-icons) |
-| `gcp` | 6.0.0 | [Crashedmind/PlantUML-icons-GCP](https://github.com/Crashedmind/PlantUML-icons-GCP) |
+| `gcp` | link to `gcp1` | |
+| `gcp1` | 6.0.0 | [Crashedmind/PlantUML-icons-GCP](https://github.com/Crashedmind/PlantUML-icons-GCP) |
+| `gcp2026` | 2026.11 | [cloud.google.com/icons](https://cloud.google.com/icons) |
 | `ibm` | 1.0.1 | [XReyRobert/ibm-icons-for-plantuml](https://github.com/XReyRobert/ibm-icons-for-plantuml) |
 | `k8s` | 1.0.0 | [dcasati/kubernetes-PlantUML](https://github.com/dcasati/kubernetes-PlantUML) |
 | `kubernetes` | 5.3.45 | [plantuml-stdlib/plantuml-kubernetes-sprites](https://github.com/plantuml-stdlib/plantuml-kubernetes-sprites) |

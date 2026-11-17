@@ -1,0 +1,16 @@
+sprite $API <svg viewBox="0 0 24 24" width="64" height="64"><g ><g transform="translate(1.000000, 8.000000)"><path fill="#5C85DE" d="M2-1.9c-1.1,0-2.3,1.1-2.3,2.2V10H2V5.5h2.2V10h2.2V0.3c0-1.1-1.1-2.2-2.3-2.2H2 L2-1.9z M2,3.2v-3h2.2v3H2L2,3.2z"/><path fill="#5C85DE" d="M10.3-2C9.1-2,8-0.9,8,0.2V10l2.2,0V5.5h2.2c1.1,0,2.3-1.1,2.3-2.2l0-3 c0-1.1-1.1-2.2-2.3-2.2H10.3L10.3-2z M10.2,3.2v-3h2.2v3H10.2L10.2,3.2z"/><path fill="#5C85DE" d="M 18.5 0.3 L 18.5 7.8 L 16.2 7.8 L 16.2 10 L 23 10 L 23 7.8 L 20.8 7.8 L 20.8 0.3 L 23 0.3 L 23 -1.9 L 16.2 -1.9 L 16.2 0.3 Z"/><path fill="#3367D6" d="M 2 5.5 L 2 3.2 L 3.5 3.2 Z"/><path fill="#3367D6" d="M 10.2 5.5 L 10.2 3.2 L 11.5 3.2 Z"/><path fill="#3367D6" d="M 18.5 1.8 L 18.5 1.8 L 18.5 0.3 L 20.8 0.3 Z"/></g></g></svg>
+
+sprite $API_png [64x64/16z] {
+xPNB3eKW30KRkcZz_nzMerUj3CR7uYRQMS7HeOQ7Y2H9yctKPdGJ5bieSsGLmGuZK8g-naH1_wNa5_gaEYqjlueKtzJJlhLdgkrlvoUsOdka6t6H-kbftzV-
+7T_jaH_wrtrxeJ-joTuVqhYjZtmZt-5ai-_eGtdsdNOwbcSVJqf7ElgEleDzVVtsfFyl_zx_CtqvlB-J9FacFG
+}
+
+!function $APIIMG($scale=1)
+!return "<img data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAABIElEQVR42u3asRGDMAyFYXbKAhSs4BW8gluXWZJZFMhdinAhlo0ULuYvXmcJ80Ew5jKIyHDlDAAAAAAAAAAAAAAAAAAAAAAAAMAz4T6vyUukkHWM+mDL2FHR85Wx0Ess8qlxbmiUFSdv2tcFoHGSmsma9zUHqLw993L0tlf/HDwALBpmp4nmfwEQr4meBlD7EGod1zp+m1ucZZuQ9uu7BphSub5bgJB09d0BTLGuvjuA2noAAADge+HesnIU4G2dbngROgXA8o2tBlWz23QHCMkHoHWT9VMA5VWqBgjGV98NwGPTMkX7k3cBCMlp15bsPrV1tQweDQAAAAAAAFcA6PajKAAAAADAKQD8QQIAAAAAAAAAAAAAAAAAAAAAAC6TB4ICiOHCFrPsAAAAAElFTkSuQmCC{scale="+$scale+"}>"
+!endfunction
+
+GCPEntityColoring(API)
+!define API(e_alias, e_label, e_techn) GCPEntity(e_alias, e_label, e_techn, #4285F4, API, API)
+!define API(e_alias, e_label, e_techn, e_descr) GCPEntity(e_alias, e_label, e_techn, e_descr, #4285F4, API, API)
+!define APIParticipant(p_alias, p_label, p_techn) GCPParticipant(p_alias, p_label, p_techn, #4285F4, API, API)
+!define APIParticipant(p_alias, p_label, p_techn, p_descr) GCPParticipant(p_alias, p_label, p_techn, p_descr, #4285F4, API, API)

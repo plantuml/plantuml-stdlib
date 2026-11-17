@@ -1,0 +1,16 @@
+@startuml
+!include <gcp2026/GCPCommon>
+!include <gcp2026/CloudRun>
+!include <gcp2026/CloudStorage>
+!include <gcp2026/CloudSQL>
+
+GCPEntityColored(api, "Cloud Run", "Runs containerised workloads") {
+  CloudRun(service, "API Service", "us-central1")
+}
+
+CloudStorage(bucket, "Asset Bucket", "Standard storage")
+CloudSQL(db, "Orders DB", "PostgreSQL 15")
+
+service --> bucket
+service --> db
+@enduml

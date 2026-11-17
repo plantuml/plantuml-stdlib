@@ -1,0 +1,22 @@
+sprite $DataLabeling <svg viewBox="0 0 24 24" width="64" height="64"><g><path fill="#a6cafd" d="M20,4H7.7a1.12,1.12,0,0,0-1,.63L3,12H5L8,6H19V7h2V5A1,1,0,0,0,20,4Z"/><circle fill="#559cfc" cx="10" cy="12" r="3"/><circle fill="#fff" cx="10" cy="12" r="1"/><g ><path fill="#fff" d="M 0 0 L 8 0 L 8 1 L 0 1 L 0 0 Z"/></g><rect fill="#669df6" x="17" y="8" width="5" height="2" rx="1"/><rect fill="#669df6" x="14" y="11" width="8" height="2" rx="1"/><rect fill="#669df6" x="17" y="14" width="5" height="2" rx="1"/><path fill="#a6cafd" d="M19,17v1H8L6,14H4l2.69,5.37a1.12,1.12,0,0,0,1,.63H20a1,1,0,0,0,1-1V17Z"/><line fill="none" x1="10" y1="12" x2="2" y2="12"/></g></svg>
+
+sprite $DataLabeling_png [64x64/16z] {
+xPRH3iCW24K57Dl_V_7YkaHS517jbZNUfwRbs2k86iBMrfK4P9324qqDGB_bQGMl9rWBCU3Jl7FeB_1TNAnDSF30GZ3-UpBpK0tHUO4tWi38DwD0o8GpZnUl
+c2NVXcj_S8IK3LJs9EaV4UCh5jFJFOaZvY8KUQja9ZugYcydy3cZzJnAEVoNEZv7alchoBRAsT7EllKJigichlO_vDVKmEtzcqQWiVwL1bpxn-p-rJVGg__i
+_jyriE80qLQlnS2PvxVjzdJc_GScUPi1FE_-kBNrFte2
+}
+
+!function $DataLabelingIMG($scale=1)
+!return "<img data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAABwUlEQVR42u2a0Y3DIAyGmaUr3AJ+6Aq3QufwY1bICl0hLx0gK3SFruAjl0ZXRc0ViIMNONKvviA1fL9jDMbRMQ94uRLkDMD8stxyJQFoWgbAABgAA2AADACTruOvQIOyA/B/il6kTHkAPKmTRuUCQM0C0Ox+LgDULIAt9yWWs9R3OcJ9aAKAJvf/q0GOBKDG/eyVoDb3JQCIu3/pH+CFgQI2ABrcf06eIgVcADS4jyIAYt3/7gm86I2gVABB7vsJuo2Js4AQ+QRC3Y+YPAeEYO1OghHuU4J0L4MR7mMigJt2ALvcn8YP9/k3NAoi13neOuDUESz66ggvV6K1Xscs484d0VrT2H4gGu9z13R8fM4FiUmOLwn6CaEXcWqCsDwTlA8A0AAIA4AE1fMJpGorwXXDX/KMTIJsytIY2bEMYjWtsSoLoZcjJ1yLoRQu5zxgo/21BQEPnrzIbtAlbIfXILDY7XBMFFR5IJISBdUdiSmKArk6QEMUiNcBGqJAGoBT1hqDkDqFuzmqJgqkusOu6fa44stRWQG0fUdIexTkAqA1Cm7ZzgOavij5Jhu3d1XWLksbAANgAAyAATAABsAAFKYf+5o6AGulYrsAAAAASUVORK5CYII={scale="+$scale+"}>"
+!endfunction
+
+GCPEntityColoring(DataLabeling)
+!define DataLabeling(e_alias, e_label, e_techn) GCPEntity(e_alias, e_label, e_techn, #4285F4, DataLabeling, DataLabeling)
+!define DataLabeling(e_alias, e_label, e_techn, e_descr) GCPEntity(e_alias, e_label, e_techn, e_descr, #4285F4, DataLabeling, DataLabeling)
+!define DataLabelingParticipant(p_alias, p_label, p_techn) GCPParticipant(p_alias, p_label, p_techn, #4285F4, DataLabeling, DataLabeling)
+!define DataLabelingParticipant(p_alias, p_label, p_techn, p_descr) GCPParticipant(p_alias, p_label, p_techn, p_descr, #4285F4, DataLabeling, DataLabeling)
+GCPEntityColoring(Data_Labeling)
+!define Data_Labeling(e_alias, e_label, e_techn) GCPEntity(e_alias, e_label, e_techn, #4285F4, DataLabeling, Data_Labeling)
+!define Data_Labeling(e_alias, e_label, e_techn, e_descr) GCPEntity(e_alias, e_label, e_techn, e_descr, #4285F4, DataLabeling, Data_Labeling)
+!define Data_LabelingParticipant(p_alias, p_label, p_techn) GCPParticipant(p_alias, p_label, p_techn, #4285F4, DataLabeling, Data_Labeling)
+!define Data_LabelingParticipant(p_alias, p_label, p_techn, p_descr) GCPParticipant(p_alias, p_label, p_techn, p_descr, #4285F4, DataLabeling, Data_Labeling)

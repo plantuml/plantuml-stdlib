@@ -1,0 +1,23 @@
+sprite $CloudAuditLogs <svg viewBox="0 0 24 24" width="64" height="64"><g><g><g ><path fill="#4285f4" d="M12.77,12.72a1.07,1.07,0,0,1-1.52,0L9.76,11.23l.76-.76L12,11.93l4.2-4.2.81.79Z"/><path fill="#669df6" d="M16,11.59a.91.91,0,0,0-.81.81,3.21,3.21,0,0,1-2.86,2.76,3.25,3.25,0,0,1-1.84-.36,3.19,3.19,0,0,1,1.2-6,3.07,3.07,0,0,1,1.21.13.9.9,0,0,0,1-.28h0a.91.91,0,0,0-.4-1.45A5,5,0,0,0,7,12.49,5,5,0,0,0,12.48,17,5,5,0,0,0,17,12.63a.91.91,0,0,0-1-1Z"/><path fill="#aecbfa" d="M12,18a2,2,0,1,1-2,2,2,2,0,0,1,2-2"/><path fill="#aecbfa" d="M12,2a2,2,0,1,1-2,2,2,2,0,0,1,2-2"/></g></g><path fill="#4285f4" d="M18,20a1,1,0,0,1-.71-1.7L20,15.59V8.41L17.31,5.7a1,1,0,0,1,0-1.41,1,1,0,0,1,1.42,0l3,3A1,1,0,0,1,22,8v8a1,1,0,0,1-.29.7l-3,3A1,1,0,0,1,18,20Z"/><path fill="#669df6" d="M6,20a1,1,0,0,1-.71-.3l-3-3A1,1,0,0,1,2,16V8a1,1,0,0,1,.29-.71l3-3a1,1,0,0,1,1.42,0,1,1,0,0,1,0,1.41L4,8.41v7.18L6.69,18.3a1,1,0,0,1,0,1.42A1,1,0,0,1,6,20Z"/></g></svg>
+
+sprite $CloudAuditLogs_png [64x64/16z] {
+xTVRieCW30LGGcZ6___YghGsa1l2TFfItiuSriQ2nfZIVtnn0AneFCSYdmv0N0kOyNo_D9-poua8FR_jm-T4OFkykG7KUX3BLx-vdDXcL0wztppUt72PwtqK
+Eq3ZSfW1OzmCC3Y0U83K08q3afgg1A0oxzBDaR20R1xyiJZn0PMr0QNpQ2p-Mh-mIrOzoDNnsB_w7yv3J-A26Xvv59lMyi13n0EF_iM7_hryAGOVy7YoedFV
+m-kFNESeVCpNW8iZsz8ntvGhu6Sow6i0EvHR-tS6lCyWqJrFVI6vuSNz8sO4zxzLJEuzFz1pd7n-uT5NiSYdgt31fuf6zn-QvKySYEhRBVUug9-e13Gb5Ftw
+dRHfdn-XlZz8Um5XtF-ft0uOvAC19jS3-kRDuSfBsEfVQBP_yddSlnMV3_MFvFUlGV-RVz5_ptw3B7u_B7-__CVtnnC
+}
+
+!function $CloudAuditLogsIMG($scale=1)
+!return "<img data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAACMElEQVR42u2bzXWFIBBGKW0WqSV1fMu0kBZShQWkltcCeebwcoyKDPABoixm6c+94KDDaKy15s5hhoAhYAgYAmrH1/dvyDPgQm4jwIFbT1xbQAC+iYTaAqwmLilAOfp9CXj/fMgcbAHapPj28ZA5qgt4Qs9hFwGyAA28XUUdATvwr5BaOcCNvGVIYMFrBYAx/Q8EREtgwc+hTYZHEhDx7FuGBBa8JKwI0xI8dv1/QoIhoTo8MxgSuoVnSWgC784t/6ONhGrwDhSB8yaLTZXgu1mwbtDJ1IAHV5TQdA5IkBgBLHiJBPdeZwGXKgG5AhAJj0T4zQxYQyW8JlMECHHksU2C+9fZGVFzagGBBIrMxKY9rqkA5Lwq58I3FXAw9avBtxaAVtP+LAI2x+3AoSR8MwGe5AcPHErBtxQgR8fsfMOjBPxpBfgkaOBXuaVfASnlrL3zdi3gQIJ6ZekyCXokvB6B5JXl9MtgTqHD92J16Rchxn20FGCIFSSkjP6ZP4aEUEtADwJMoA4QeuYn3/Gn/xaIKKraVTEEqXXCmgJQqR7I+JwuIiBFgmkATymKgiUho0AK8t6AMDdGEiSoH4sSGyNTia0x5HyyLoRI4f3BqeTmKHJvviU8a3scvcIzGySiJHgapqQ2PLtFRtsuV7pFZooR2WuTFAW+5zY5MOC7bZScK0gMeFarLL1XOLJVdjRLX61dHlcWYG79w4RCwn3+GnM54S/Gb3NDwBAwBAwBDeIH2O3S1ntmr20AAAAASUVORK5CYII={scale="+$scale+"}>"
+!endfunction
+
+GCPEntityColoring(CloudAuditLogs)
+!define CloudAuditLogs(e_alias, e_label, e_techn) GCPEntity(e_alias, e_label, e_techn, #4285F4, CloudAuditLogs, CloudAuditLogs)
+!define CloudAuditLogs(e_alias, e_label, e_techn, e_descr) GCPEntity(e_alias, e_label, e_techn, e_descr, #4285F4, CloudAuditLogs, CloudAuditLogs)
+!define CloudAuditLogsParticipant(p_alias, p_label, p_techn) GCPParticipant(p_alias, p_label, p_techn, #4285F4, CloudAuditLogs, CloudAuditLogs)
+!define CloudAuditLogsParticipant(p_alias, p_label, p_techn, p_descr) GCPParticipant(p_alias, p_label, p_techn, p_descr, #4285F4, CloudAuditLogs, CloudAuditLogs)
+GCPEntityColoring(Cloud_Audit_Logs)
+!define Cloud_Audit_Logs(e_alias, e_label, e_techn) GCPEntity(e_alias, e_label, e_techn, #4285F4, CloudAuditLogs, Cloud_Audit_Logs)
+!define Cloud_Audit_Logs(e_alias, e_label, e_techn, e_descr) GCPEntity(e_alias, e_label, e_techn, e_descr, #4285F4, CloudAuditLogs, Cloud_Audit_Logs)
+!define Cloud_Audit_LogsParticipant(p_alias, p_label, p_techn) GCPParticipant(p_alias, p_label, p_techn, #4285F4, CloudAuditLogs, Cloud_Audit_Logs)
+!define Cloud_Audit_LogsParticipant(p_alias, p_label, p_techn, p_descr) GCPParticipant(p_alias, p_label, p_techn, p_descr, #4285F4, CloudAuditLogs, Cloud_Audit_Logs)

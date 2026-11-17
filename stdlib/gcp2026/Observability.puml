@@ -1,0 +1,16 @@
+sprite $Observability <svg viewBox="0 0 512 512" width="64" height="64"><g><path d="M426.5,458.5H85.5c-17.673,0-32-14.327-32-32V85.5c0-17.673,14.327-32,32-32h341c17.673,0,32,14.327,32,32v341c0,17.673-14.327,32-32,32ZM85.5,426.5h341V85.5H85.5v341Z" fill="#4285f4"/><path d="M166,365c-8.837,0-16-7.163-16-16v-131c0-8.837,7.163-16,16-16s16,7.163,16,16v131c0,8.837-7.163,16-16,16Z" fill="#9aa0a6"/><path d="M346,365c-8.837,0-16-7.163-16-16v-56c0-8.837,7.163-16,16-16s16,7.163,16,16v56c0,8.837-7.163,16-16,16Z" fill="#9aa0a6"/><path d="M256,365c-8.837,0-16-7.163-16-16v-187c0-8.837,7.163-16,16-16s16,7.163,16,16v187c0,8.837-7.163,16-16,16Z" fill="#4285f4"/><path d="M426.5,458.5H85.493c-17.673,0-32-14.327-32-32h373.007V85.5h32v341c0,17.673-14.327,32-32,32Z" fill="#9aa0a6"/></g></svg>
+
+sprite $Observability_png [64x64/16z] {
+xPTB3i0W20L53FN-9wwkgiM5hwI9jSmICqG8yHE2imOHGDifGoIRhX9acBxscd6-_AD0Tp_EjreAxd_1LuEA-MhGt7_V9s6Jtom-ySdzBNqYar_35b_S_uVV
+dZzoFNHuscydDGwZVlzlvjUP0o6L4QFV4QCw1rC2raqX0F_jhS89
+}
+
+!function $ObservabilityIMG($scale=1)
+!return "<img data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAABF0lEQVR42u3bsQ2DMBCFYUa7IrOwQlqXXsErsEKaDMAsWeFiSyAZEskOEInDf/E68MEnjE5gd6ratZwOAAAAAACAQm7+lSLGcgxAHMjFqNG4XQDGb74KofTY6xWyFUDWklbmf+9H7UMWP8oRAGLlze7DoCHLPTwAAAAAAAAA4EwAWaPlavv2qwFUd2sAAAAAAABYAIjFZCrqmgOIhbqwLCytAQgAAAAAAAAAAPAXgGl8aRJgPXaLAAoAAAAAAAAAAJwX4MuFlgCetet40ic2KwA/tazzkpaaY+dxUw1+jgIAAAAAAADAfwF8PClGlxlMJBwE8NGCWs3m5fLrFtRo3GaACyDs2zCRJ80jS2HTFAAAAAAAAOW8AQTh7TmSH2a7AAAAAElFTkSuQmCC{scale="+$scale+"}>"
+!endfunction
+
+GCPEntityColoring(Observability)
+!define Observability(e_alias, e_label, e_techn) GCPEntity(e_alias, e_label, e_techn, #4285F4, Observability, Observability)
+!define Observability(e_alias, e_label, e_techn, e_descr) GCPEntity(e_alias, e_label, e_techn, e_descr, #4285F4, Observability, Observability)
+!define ObservabilityParticipant(p_alias, p_label, p_techn) GCPParticipant(p_alias, p_label, p_techn, #4285F4, Observability, Observability)
+!define ObservabilityParticipant(p_alias, p_label, p_techn, p_descr) GCPParticipant(p_alias, p_label, p_techn, p_descr, #4285F4, Observability, Observability)

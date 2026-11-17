@@ -1,0 +1,22 @@
+sprite $CloudDeploy <svg viewBox="0 0 24 24" width="64" height="64"><path style="fill:#4285f4" d="M 20.39 18.24 L 20.39 8 L 11.52 2.89 L 11.52 7.55 L 16.37 10.32 L 16.35 15.91 L 20.39 18.24 Z"/><path style="fill:#669df6" d="M 14.79 19.86 L 14.79 11.23 L 7.33 6.92 L 7.33 10.94 L 11.34 13.23 L 11.32 17.85 L 14.79 19.86 Z"/><path style="fill:#aecbfa" d="M 9.76 21.15 L 9.76 14.14 L 3.69 10.64 L 3.69 14 L 6.86 15.81 L 6.84 19.47 L 9.76 21.15 Z"/></svg>
+
+sprite $CloudDeploy_png [64x64/16z] {
+xTVP4eCW30LG89ZX_x-uQf6WR5bUoQFJSuURLjiwjsVFQ48AHf-YqPiIRf_q9R9FQFJQ4kHr2RNNhE7jvKVuU752upabFFg9NoTunF9-nrv0N7k4QK9O-Ye1
+THxB6eBIup4gmVJ3DR0zbNYjGU0f8IhzKoBCFPIJ0dOJLXueuS1EXxK7cEs0uo7qIx0zzDSWy5IYMeF8KuBMFoKataER8F7d2-3RGURR7KXzNKBbgmIbTqFl
+h9vEeFJb6QBsES7Wxn9S3nr_7O7hotF4yx-pF_UWD_f_2Ok_4WJ--GI_BabyJZ3zSBRwCs7_UzcpdXy
+}
+
+!function $CloudDeployIMG($scale=1)
+!return "<img data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAABmElEQVR42u3bwa3CMAwG4IyWw5uFOXxkhbcCU3QAZmEFU4sUVahK0pAYO/bB6rX91P+HpG1AxGB5ggM4gAM4gAM4AP/8XR/mAeI6SEfrADTwqztCCsAbwjoAcsdCKgDNwhELyQAs/aABYGg/aAIY0g8aAbrGQitAt1h0vajL/4Mb4OtY9AaI6yAdmQGaIUYBbFNCgAEIp/phNAAN5CDoZAdBRCkAb4jS8jj9+5sWAGv6oWM3iAWgWRj6QTQARz+oAKiNRUs/qAKohYCfANzur2EAyMbiZEF2B8B1IAdBJ54uAHtASATYBkprgtT02DMSkgC2iZydIBGAZin1wxexUAGAA/tBFUBtLM70g0qAWojpAbKxUAWQEKAR4fBnUx3A7k5YWhCmANhBRNMALbGYEmAXCzALsIPgAAimAU7eCfMCVG6QzA9Q2De0AZCJhXgA6AlwEAvZAJUbJk1PfVMsgniACojhb4uJAMjEwhbAwc6RHoDS2qDxIYsugNzawNzr8p9LZrPfC2wQ/sGEAziAAziAAziAA0ibJwzfFjtjlQHSAAAAAElFTkSuQmCC{scale="+$scale+"}>"
+!endfunction
+
+GCPEntityColoring(CloudDeploy)
+!define CloudDeploy(e_alias, e_label, e_techn) GCPEntity(e_alias, e_label, e_techn, #4285F4, CloudDeploy, CloudDeploy)
+!define CloudDeploy(e_alias, e_label, e_techn, e_descr) GCPEntity(e_alias, e_label, e_techn, e_descr, #4285F4, CloudDeploy, CloudDeploy)
+!define CloudDeployParticipant(p_alias, p_label, p_techn) GCPParticipant(p_alias, p_label, p_techn, #4285F4, CloudDeploy, CloudDeploy)
+!define CloudDeployParticipant(p_alias, p_label, p_techn, p_descr) GCPParticipant(p_alias, p_label, p_techn, p_descr, #4285F4, CloudDeploy, CloudDeploy)
+GCPEntityColoring(Cloud_Deploy)
+!define Cloud_Deploy(e_alias, e_label, e_techn) GCPEntity(e_alias, e_label, e_techn, #4285F4, CloudDeploy, Cloud_Deploy)
+!define Cloud_Deploy(e_alias, e_label, e_techn, e_descr) GCPEntity(e_alias, e_label, e_techn, e_descr, #4285F4, CloudDeploy, Cloud_Deploy)
+!define Cloud_DeployParticipant(p_alias, p_label, p_techn) GCPParticipant(p_alias, p_label, p_techn, #4285F4, CloudDeploy, Cloud_Deploy)
+!define Cloud_DeployParticipant(p_alias, p_label, p_techn, p_descr) GCPParticipant(p_alias, p_label, p_techn, p_descr, #4285F4, CloudDeploy, Cloud_Deploy)

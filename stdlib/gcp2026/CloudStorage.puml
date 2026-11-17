@@ -1,0 +1,21 @@
+sprite $CloudStorage <svg viewBox="0 0 512 512" width="64" height="64"><g><path fill="#34a853" d="M442,277.9H70c-8.8,0-16,7.2-16,16v148.1c0,8.8,7.2,16,16,16h107.2c1.5.5,3.1.7,4.8.7s3.3-.3,4.8-.7h255.2c8.8,0,16-7.2,16-16v-148.1c0-8.8-7.2-16-16-16ZM86,309.9h80v116.1h-80v-116.1ZM426,425.9h-228v-116.1h228v116.1Z"/><path fill="#fbbc04" d="M442,54H70c-8.8,0-16,7.2-16,16v148.8c0,8.8,7.2,16,16,16h372c8.8,0,16-7.2,16-16V70c0-8.8-7.2-16-16-16ZM86,86h80v116.8h-80v-116.8ZM426,202.8h-228v-116.8h228v116.8Z"/><path fill="#ea4335" d="M442,234.8h-16V86H54v-16c0-8.8,7.2-16,16-16h372c8.8,0,16,7.2,16,16v148.8c0,8.8-7.2,16-16,16Z"/><path fill="#4285f4" d="M442,457.9h-16v-148.1H54v-16c0-8.8,7.2-16,16-16h372c8.8,0,16,7.2,16,16v148.1c0,8.8-7.2,16-16,16Z"/><circle fill="#ea4335" cx="349" cy="144.4" r="37"/><circle fill="#4285f4" cx="349" cy="367.9" r="37"/></g></svg>
+
+sprite $CloudStorage_png [64x64/16z] {
+xPLH3yCW28GLBwR__nStIpOZrGsHhdRJU-FXYn6umxcbEuYKEk2RLk2lg_djLDx764FwMs1LHIKFmB-fAXh2PqFhu2cVcfv_3OWwUJws-NXh_wppC-_Fz_SV
+oPvWLQj_5JgTTseUXvPuZShyNlTlwlltu3F_iAh5FvIYgQnQ_7i5Jo03Zu_vAV92VekyS3_-ddV6_Wdthsb_Y8RkhyIFpWyB_xHNTtuk_Qfs
+}
+
+!function $CloudStorageIMG($scale=1)
+!return "<img data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAABSklEQVR42u3ZwdGCQAyG4a2FFmwgB1qgBVvwmqMt2AItUIst0EIMIzgM4+Aa4jib/Q7vzXXkUTb7/yQRSTWXAAAAAAAAADuN3YnGttD0sx8C0DeRALEJYP7mIwCIDaCtHeDSkCavzg1n3XfT6yzrfDsOIEMiTVZR1s5qXecYAKIB6EWkzU+8HoCdzZjDA2RMIooOYBpxAAAAALAJYgziIISjMAC8AaY4IzGuc+uXAEUEABeAJ0IEAD72XOD5Sygqt3+L48EIAAAAgPY6Urndj22C+iYSINsYnPSCAIgRYKwb4HTrSZOl9jpw3n03sG2daw4AfUearMr6s9a6zjMARAPQi1j2pOV2qgdgvuivxlsYgIxJRNEBTCMOAAAAQBiAVPUm+GEScFUnwc1ZH0dhAPwBoJgAAAAHgBmBAwAwngsAAAAAAAAAAPC2B1JE3KWR51tdAAAAAElFTkSuQmCC{scale="+$scale+"}>"
+!endfunction
+
+GCPEntityColoring(CloudStorage)
+!define CloudStorage(e_alias, e_label, e_techn) GCPEntity(e_alias, e_label, e_techn, #4285F4, CloudStorage, CloudStorage)
+!define CloudStorage(e_alias, e_label, e_techn, e_descr) GCPEntity(e_alias, e_label, e_techn, e_descr, #4285F4, CloudStorage, CloudStorage)
+!define CloudStorageParticipant(p_alias, p_label, p_techn) GCPParticipant(p_alias, p_label, p_techn, #4285F4, CloudStorage, CloudStorage)
+!define CloudStorageParticipant(p_alias, p_label, p_techn, p_descr) GCPParticipant(p_alias, p_label, p_techn, p_descr, #4285F4, CloudStorage, CloudStorage)
+GCPEntityColoring(Cloud_Storage)
+!define Cloud_Storage(e_alias, e_label, e_techn) GCPEntity(e_alias, e_label, e_techn, #4285F4, CloudStorage, Cloud_Storage)
+!define Cloud_Storage(e_alias, e_label, e_techn, e_descr) GCPEntity(e_alias, e_label, e_techn, e_descr, #4285F4, CloudStorage, Cloud_Storage)
+!define Cloud_StorageParticipant(p_alias, p_label, p_techn) GCPParticipant(p_alias, p_label, p_techn, #4285F4, CloudStorage, Cloud_Storage)
+!define Cloud_StorageParticipant(p_alias, p_label, p_techn, p_descr) GCPParticipant(p_alias, p_label, p_techn, p_descr, #4285F4, CloudStorage, Cloud_Storage)

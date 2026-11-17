@@ -1,0 +1,21 @@
+sprite $CloudComposer <svg viewBox="0 0 24 24" width="64" height="64"><g><path fill="#aecbfa" d="M 10.03 5.96 L 4.68 5.96 L 4.68 2 L 19.31 2 L 19.31 5.94 L 14.01 5.94 L 14.01 11.27 L 10.03 11.27 L 10.03 5.96 Z"/><path fill="#4285f4" d="M 4.68 7.37 L 8.63 7.37 L 8.63 12.67 L 13.97 12.67 L 13.97 22 L 10.03 22 L 10.03 16.65 L 4.68 16.65 L 4.68 7.37 Z"/><path fill="#4285f4" d="M 15.38 7.36 L 19.32 7.36 L 19.32 22 L 15.38 22 L 15.38 7.36 Z"/><path fill="#aecbfa" d="M 8.6 22 L 4.68 22 L 4.68 18.06 L 8.6 18.06 L 8.6 22 Z"/></g></svg>
+
+sprite $CloudComposer_png [64x64/16z] {
+xTP12e0m30NH65ru_nExgtngIo8QACnim-kgBJ6Zpzf2ZVqU2e__nuzEU_SQwhstUg-pPtwsUd_F78ylyDfQtgMyr_3u0czoQO-ydxsc5RpyM7XyiPzjSu7z
+ZV9T
+}
+
+!function $CloudComposerIMG($scale=1)
+!return "<img data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAAxUlEQVR42u3bsQ2DMBRFUY/2iwxGmVkyS2ZhhZ9QpIxig4WMc4pbG52Kh0zJzPLPFQAAAABo6fHMeLcMWpwFkIMGAAAAAAAAAAAAYLgt0AgX040hALMA3O7rVtTUC6D2vO3ZzgDYDsqaOgJkZQEAAAAAAAAAAABgNIAjAQBwUYCGFfd1RV4dYFcAAAAAAAAAAAAABgUoO19xlykADgyaAABgAoCWT1sAAAAAAAAAAAAAJgP4IPysx/W64a7J+W8QAAAAM/UC1VJXwowQWVMAAAAASUVORK5CYII={scale="+$scale+"}>"
+!endfunction
+
+GCPEntityColoring(CloudComposer)
+!define CloudComposer(e_alias, e_label, e_techn) GCPEntity(e_alias, e_label, e_techn, #4285F4, CloudComposer, CloudComposer)
+!define CloudComposer(e_alias, e_label, e_techn, e_descr) GCPEntity(e_alias, e_label, e_techn, e_descr, #4285F4, CloudComposer, CloudComposer)
+!define CloudComposerParticipant(p_alias, p_label, p_techn) GCPParticipant(p_alias, p_label, p_techn, #4285F4, CloudComposer, CloudComposer)
+!define CloudComposerParticipant(p_alias, p_label, p_techn, p_descr) GCPParticipant(p_alias, p_label, p_techn, p_descr, #4285F4, CloudComposer, CloudComposer)
+GCPEntityColoring(Cloud_Composer)
+!define Cloud_Composer(e_alias, e_label, e_techn) GCPEntity(e_alias, e_label, e_techn, #4285F4, CloudComposer, Cloud_Composer)
+!define Cloud_Composer(e_alias, e_label, e_techn, e_descr) GCPEntity(e_alias, e_label, e_techn, e_descr, #4285F4, CloudComposer, Cloud_Composer)
+!define Cloud_ComposerParticipant(p_alias, p_label, p_techn) GCPParticipant(p_alias, p_label, p_techn, #4285F4, CloudComposer, Cloud_Composer)
+!define Cloud_ComposerParticipant(p_alias, p_label, p_techn, p_descr) GCPParticipant(p_alias, p_label, p_techn, p_descr, #4285F4, CloudComposer, Cloud_Composer)

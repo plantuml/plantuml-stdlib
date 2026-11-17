@@ -1,0 +1,17 @@
+sprite $Project <svg viewBox="0 0 24 24" width="64" height="64"><g ><path fill="#85A4E6" d="M 0.8 5.9 L 3.7 0.8 L 9.5 0.8 L 12.4 5.9 L 9.5 10.9 L 3.7 10.9 Z"/><path fill="#5C85DE" d="M 11.4 7.7 L 8.5 2.6 L 9.5 0.7 L 12.4 5.9 Z"/><path fill="#3367D6" d="M 2.7 9.3 L 8.5 9.3 L 10.5 5.9 L 11.4 7.7 L 9.5 10.9 L 3.7 11 Z"/><path fill="#85A4E6" d="M 11.2 11.9 L 14.2 6.8 L 20 6.8 L 22.9 11.9 L 20 16.9 L 14.2 16.9 Z"/><path fill="#5C85DE" d="M 21.9 13.7 L 19 8.6 L 20 6.7 L 22.9 11.9 Z"/><path fill="#3367D6" d="M 13.2 15.3 L 19 15.3 L 21 11.9 L 21.9 13.7 L 20 16.9 L 14.2 17 Z"/><path fill="#85A4E6" d="M 0.8 17.9 L 3.7 12.8 L 9.5 12.8 L 12.4 17.9 L 9.5 22.9 L 3.7 22.9 Z"/><path fill="#5C85DE" d="M 11.4 19.7 L 8.5 14.6 L 9.5 12.7 L 12.4 17.9 Z"/><path fill="#3367D6" d="M 2.7 21.3 L 8.5 21.3 L 10.5 17.9 L 11.4 19.7 L 9.5 22.9 L 3.7 23 Z"/></g></svg>
+
+sprite $Project_png [64x64/16z] {
+xPPH3uCW48CLGU3__-5fDXycTxILc6o9VUzQWVjkq_GZ2kbRY-W_sTSy5B_cl8p4vqrXfFqktZud8p_FL-FL0g7nlmiiL-Er0aQyLC2o2mLY6lg1EJaYxz2p
+imM2vo-5Eq4llbRk09q3ABMMp-S3DaGdVYl0iS7ox_PAii5w_xizicpenXFN6ep3E-8fDkIJ_7YdG6qL53R4nXurDZH-aGsHZd_OS0SRx1d7R03x7x81xN_0
+1hZ_0Hlm_cVYUpFUOmEr_pjieFQ_pmPo_xjiOFU_mmPw_yTk_3FZT-__Av0rPbpw0kETIFz_stSY5L3YkHdl2iyuA01d7DqXc74eCEDo0J7-N_K2
+}
+
+!function $ProjectIMG($scale=1)
+!return "<img data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAACBElEQVR42u1bwXHDIBCkpzSgR1pQC2pBX560kBZSRRpRC2kBQ6wkigbLGN2xS8xjfx5rbu+443YW4703zwzTCcj4kXv/tAG+FJNbbLMEhADMqeDfFj+6JZLQLAHF2Z/X4FfY5gg4nX33h4CIoTUCvFD2v4+Bb4aAEMRwhoCI0SVJGFohwJ9FqgpGsiq4EfxiJQi40QeoxqJ448utApaxKH7pya0ClrGomv17VTASVMH+7H9oEMDcEEXHXotjcZt9r00AYxWoNr89XucQ8Mw1EsUvP0fZf5muoOwB2n0gZv+HgPn4/NfUH1IfF58E0yb72ypg0B/Ub4IR++AjQkVQ6A8qEth+9CUIsCz6g4oQ8otk8LEH0OgPakLoV/bnh7IP0R8O2ZlWFkuRyj6b/nBIQGhUQyqIUsT/Y9Mf7nbJWLJCBFjdflOmP+QQYIQIUJ84JfpD1mVBoAqqZL9Ef4Dewxn0B2DwHPoDMvsU+gOyAij0B3APwOsPUH8Ag/4A9weg9Qe4PwCtP1D4A1D6A40/AKU/UPkDausPlP6AmvoDpT+glv5A7Q/Q1h/o/QHa+kMT/gAt/aH7A7o/oPsDuj+g+wNa8AegfYLQ/fzfOUUf3c9JvMK4/ZyFANh+zmSXh+znVC9GEPs5FQGI/Zzu1Vjt/ZyRgKr7OeXL0Zr7eX873AnoBFTFBepQK9DsYVURAAAAAElFTkSuQmCC{scale="+$scale+"}>"
+!endfunction
+
+GCPEntityColoring(Project)
+!define Project(e_alias, e_label, e_techn) GCPEntity(e_alias, e_label, e_techn, #4285F4, Project, Project)
+!define Project(e_alias, e_label, e_techn, e_descr) GCPEntity(e_alias, e_label, e_techn, e_descr, #4285F4, Project, Project)
+!define ProjectParticipant(p_alias, p_label, p_techn) GCPParticipant(p_alias, p_label, p_techn, #4285F4, Project, Project)
+!define ProjectParticipant(p_alias, p_label, p_techn, p_descr) GCPParticipant(p_alias, p_label, p_techn, p_descr, #4285F4, Project, Project)

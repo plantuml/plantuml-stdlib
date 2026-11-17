@@ -1,0 +1,23 @@
+sprite $DataLayers <svg viewBox="0 0 24 24" width="64" height="64"><rect x="11.25" y="4.1" width="1.5" height="4.64" style="fill:#aecbfa"/><path d="M12,20.8,2.25,14.32,12,7.84l9.75,6.48ZM5,14.32,12,19l7-4.68L12,9.64Z" style="fill:#669df6"/><path d="M12,16.16,2.25,9.68,12,3.2l9.75,6.48ZM5,9.68l7,4.68,7-4.68L12,5Z" style="fill:#aecbfa"/><path d="M18.26,12,12,7.84,5.74,12,12,16.16Z" style="fill:#4285f4"/></svg>
+
+sprite $DataLayers_png [64x64/16z] {
+xPRB4eCm24KbeFB_NzoehOOaG1xJdNTJEu6U8-9Cb-NDcty546VQyGXCmAzCm75K0L1a0ZwW0B-U4msz2ezpye4OEk5FVu-269YyQb00EQq42Yrpp9zMySLK
+A16qxsITc_3OpZ6XA0bjy8MlqDAWKFuoyHrNGOStAkGBGfmbP09Glm6em8M2ledF2N4rGOUBqR0M2ivhS2XiR6JrDfXsDfEkO-qEDdQoMVWjnXGu2b27dq5I
+v_Uj01KU4w-2-lpWYz3XolhT-wCeFF0hGT_Vgt8rwAK2bRMPmPe928NaRLKde2luS5EX1QuUKolSht3WNf4Fj-gQu7ffAxnUtG6lDVJ1yvvkk5GOWGk54RXG
+688d2ZF_W642_kQDdmy
+}
+
+!function $DataLayersIMG($scale=1)
+!return "<img data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAACQUlEQVR42u1bwZHDIAx0aTyuhbRwLdyXp1twC24hHxdwtaQFDnK2x+Zsg4SQmLMeO5PJECPtLkKMSeec6+6MTglQApQAJUAJUAKUABGM37+4JQE+cevhZpjbEDCr7g5gJdwgqfoZzL8j4EJ1J+2GVlQXc0NLqou4QUJ1O4/ZfZ/xO9M8ARmqb8f+ISDjGRO1G1hVj8YfEpD5PNMMARDVIQRwuYFVdSgBFPNUIQCrOpaAmm5gVX2L4encY3i9ET5zzw8mgEL1BR/9y3q4CIYoFpAbWFn3SXYHiW8RiGF1IxvTJ6qfgc0NLagu6oYUs0XNCFB1tBtCLNizRFf6cGLVQW6gEAmyzrImIlI96QaMMMV9wNWk/dPVTHznhjAX1TkB2wXuAvgcWBLf4WukaYlLzgHm3c31/MkvWLrIktMhmgCvupVQPkaIwYOPAD9ZN0+64jGIJb5FEKQuAYvqJ7CVd4C1CCbioC+CR6pHWMf6mmA4tsGQ6JUYuW4oVv3oN35JUPcDFhkfvhGCqH4GIjeYQodOV7GSKn/8HHR3CJoD64QcZqcSFyDdYACFOVELaIogkRuStcECt+Pi3QC6/9d0A6Hqr6qNkCFxw7i6gWWtk7bCVPajJD611qu8GKFygyTZTQdIudarvxyldAPnEqNep8WB11rrrBckMG6QKKxVr8hAEuIopmKXpDIKGbvq7NfkMtzAqrrYRcmEG9hUF70qe+EGyx2L6GXpyA33uSwdu0H/MKEEKAFKgBKgBCgBSoAUfgCrYlpVMJ825AAAAABJRU5ErkJggg=={scale="+$scale+"}>"
+!endfunction
+
+GCPEntityColoring(DataLayers)
+!define DataLayers(e_alias, e_label, e_techn) GCPEntity(e_alias, e_label, e_techn, #4285F4, DataLayers, DataLayers)
+!define DataLayers(e_alias, e_label, e_techn, e_descr) GCPEntity(e_alias, e_label, e_techn, e_descr, #4285F4, DataLayers, DataLayers)
+!define DataLayersParticipant(p_alias, p_label, p_techn) GCPParticipant(p_alias, p_label, p_techn, #4285F4, DataLayers, DataLayers)
+!define DataLayersParticipant(p_alias, p_label, p_techn, p_descr) GCPParticipant(p_alias, p_label, p_techn, p_descr, #4285F4, DataLayers, DataLayers)
+GCPEntityColoring(Data_Layers)
+!define Data_Layers(e_alias, e_label, e_techn) GCPEntity(e_alias, e_label, e_techn, #4285F4, DataLayers, Data_Layers)
+!define Data_Layers(e_alias, e_label, e_techn, e_descr) GCPEntity(e_alias, e_label, e_techn, e_descr, #4285F4, DataLayers, Data_Layers)
+!define Data_LayersParticipant(p_alias, p_label, p_techn) GCPParticipant(p_alias, p_label, p_techn, #4285F4, DataLayers, Data_Layers)
+!define Data_LayersParticipant(p_alias, p_label, p_techn, p_descr) GCPParticipant(p_alias, p_label, p_techn, p_descr, #4285F4, DataLayers, Data_Layers)

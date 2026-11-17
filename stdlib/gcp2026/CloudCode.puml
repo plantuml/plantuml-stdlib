@@ -1,0 +1,22 @@
+sprite $CloudCode <svg viewBox="0 0 24 24" width="64" height="64"><g><g ><g><path fill="#aecbfa" d="M 5.45 8.53 L 8.55 5.42 L 11.65 8.53 L 8.55 11.65 L 5.45 8.53 Z"/><path fill="#669df6" d="M 2 12 L 5.1 8.88 L 8.2 12 L 5.1 15.12 L 2 12 Z"/><path fill="#4285f4" d="M 5.45 15.47 L 8.55 12.35 L 11.65 15.47 L 8.55 18.59 L 5.45 15.47 Z"/><path fill="#aecbfa" d="M 12.35 8.53 L 15.45 5.42 L 18.55 8.53 L 15.45 11.65 L 12.35 8.53 Z"/><path fill="#669df6" d="M 15.8 12 L 18.9 8.88 L 22 12 L 18.9 15.12 L 15.8 12 Z"/><path fill="#4285f4" d="M 12.35 15.47 L 15.45 12.35 L 18.55 15.47 L 15.45 18.59 L 12.35 15.47 Z"/></g></g></g></svg>
+
+sprite $CloudCode_png [64x64/16z] {
+xPRR5eGW24LLM2p__ukdYnbumk9rbZoUt7i89okbLQjM_LTHXeGYE8s2BQ48FWYEX2Au4RI48hWIz8GYU1UeX29u4vY48lWX698NGSR5X2rv9TaAiAUSI7nS
+h01lQiT5VDm8S2edxWX4h037Uk6F0X4hm7svyGU1Y1NWnceS129MyB2p1Xy48lwrti5aqHT-kcYumW0NJdds6nQlTSHhjGA_kmCV16LFjC2_lOORGJcJM-3F
+f-DAKAxa4lWFWCAxeDp9AV0VG8CtGT79BfYT00O_1CKcF3z_AgmUZ3K518mjlHx0s2j7S2LW7Cgd5n1EYYDu4p1ko-SNCEuJH_1DmFZ7M5zLgrRzM_q0
+}
+
+!function $CloudCodeIMG($scale=1)
+!return "<img data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAB0ElEQVR42u3ay3GDQBBFUUJj4VgcRy+dglNQLI5FKbRBhar0AaY/b1qo9BazdGvusQBJMKjq8MlrIAABCEAAAhCAAAQgAAEIQAACANfpDzcHNasMYNm0TktAc7QXQs94zSCszOmC0Ds+hLAzB45QEe9CMMyBIlTFmxGMc2AIlfFNBOccCEJ1/CZCcE4a4RXxTwjJOSmE7DtAEJtOYl4gv3/PNQDzC01LpzUmEFDvqGu8LHvqC3ATrwkE1GH1GK8RhEx8BAF1btmKdyNk4z0IqBNsK96FgIi3IKCuMtZ4MwIqfg8Bdan1xpsQkPFrCKhPmtH4JgI6XqOXI8OhKD329E4AQxlA8gUvf//1c5ZppcOnGeM8a9nTWHIIJBBu43VZ2fjrnCBC3WVwLT6M8BAfRSj7ILQX70bYiPcilH0UtsSbERrxVoSyL0Oe+CaCMb6FUPZ1OBK/ieCM30Ko/UEkGP+EEIy/Qyj/RWgOSGz6buNJyNSlNvsOGFD/tQTCa38WDyAI8JA6xo0RB4IAzyvHujVmQBDgyfWYN0d3EAR4hTn27fEVBAFeZt/jAYkbBAHMkl7xXR+RQW64VzwfkiIAAQhAAAIQgAAEIAABCECAT13/PuphDW4fRH0AAAAASUVORK5CYII={scale="+$scale+"}>"
+!endfunction
+
+GCPEntityColoring(CloudCode)
+!define CloudCode(e_alias, e_label, e_techn) GCPEntity(e_alias, e_label, e_techn, #4285F4, CloudCode, CloudCode)
+!define CloudCode(e_alias, e_label, e_techn, e_descr) GCPEntity(e_alias, e_label, e_techn, e_descr, #4285F4, CloudCode, CloudCode)
+!define CloudCodeParticipant(p_alias, p_label, p_techn) GCPParticipant(p_alias, p_label, p_techn, #4285F4, CloudCode, CloudCode)
+!define CloudCodeParticipant(p_alias, p_label, p_techn, p_descr) GCPParticipant(p_alias, p_label, p_techn, p_descr, #4285F4, CloudCode, CloudCode)
+GCPEntityColoring(Cloud_Code)
+!define Cloud_Code(e_alias, e_label, e_techn) GCPEntity(e_alias, e_label, e_techn, #4285F4, CloudCode, Cloud_Code)
+!define Cloud_Code(e_alias, e_label, e_techn, e_descr) GCPEntity(e_alias, e_label, e_techn, e_descr, #4285F4, CloudCode, Cloud_Code)
+!define Cloud_CodeParticipant(p_alias, p_label, p_techn) GCPParticipant(p_alias, p_label, p_techn, #4285F4, CloudCode, Cloud_Code)
+!define Cloud_CodeParticipant(p_alias, p_label, p_techn, p_descr) GCPParticipant(p_alias, p_label, p_techn, p_descr, #4285F4, CloudCode, Cloud_Code)

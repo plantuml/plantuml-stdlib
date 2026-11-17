@@ -1,0 +1,17 @@
+sprite $Dataprep <svg viewBox="0 0 24 24" width="64" height="64"><g><g ><path fill="#669df6" d="M10.48,11a.91.91,0,1,1-.91.91.91.91,0,0,1,.91-.91Zm0-.8a1.71,1.71,0,1,0,1.7,1.71,1.7,1.7,0,0,0-1.7-1.71Z"/><path fill="#669df6" d="M4.57,11a.91.91,0,1,1-.91.91A.91.91,0,0,1,4.57,11Zm0-.8a1.71,1.71,0,1,0,1.7,1.71,1.7,1.7,0,0,0-1.7-1.71Z"/><path fill="#669df6" d="M7.61,16.31a.91.91,0,0,1,0,1.82.91.91,0,1,1,0-1.82Zm0-.79a1.71,1.71,0,1,0,1.2.5,1.7,1.7,0,0,0-1.2-.5Z"/><path fill="#669df6" d="M7.61,5.79a.91.91,0,1,1-.94.91.92.92,0,0,1,.94-.91Zm0-.8a1.71,1.71,0,1,0,1.2.5A1.7,1.7,0,0,0,7.61,5Z"/><rect fill="#4285f4" x="10.66" y="2" width="1.68" height="20"/><path fill="#4285f4" d="M16.25,4.87H11.74a.37.37,0,0,0-.3.4V8.09a.36.36,0,0,0,.3.39h4.51a.36.36,0,0,0,.31-.39V5.28a.37.37,0,0,0-.31-.41Z"/><path fill="#4285f4" d="M20.57,10.16H12.25c-.31,0-.56.18-.56.39v2.82c0,.22.25.4.56.4h8.32c.31,0,.56-.19.56-.4V10.55C21.13,10.33,20.88,10.16,20.57,10.16Z"/><path fill="#4285f4" d="M14.66,15.44H11.13c-.13,0-.23.18-.23.39v2.82c0,.22.1.39.23.39h3.53c.13,0,.24-.18.24-.39V15.83C14.89,15.61,14.79,15.44,14.66,15.44Z"/></g></g></svg>
+
+sprite $Dataprep_png [64x64/16z] {
+xPPH3uCW38GvYip__uk7LALJTBJBOepSWuaFNqFQEufpNV-I3qc_y6DIvs_6WmY25sh2AKuoyma7Y0jOU2OfmiQ3UKIwXa_dn_gryCZjZuDvVha0sUUVAa3w
+pnVr_7rfF3x_N-EnAiPPSxVyd_7ROGmYTumJIC7BtEN33tl_dF1pRbpXOU5HU5BnZZrVHZ3Lq_1pxaXUWvh-ozmj1LHyHM6JFw_CuaFt7x3VV-rtLtt_UGLE
+bVtNpBE3T_lFjrz2N8QkuUSSci-VOqJHth-3_UTL1fB-2y7yYkxlrtlpplBewLBf3G
+}
+
+!function $DataprepIMG($scale=1)
+!return "<img data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAABg0lEQVR42u3b2w3CMAwF0IzmD1boCszhT1boNp2oK4S+BCHKy5SWJr4fllBRJXLaEN8GjLXWaC4DAAAAAABn1u0x0lTslkYA6xYAAAAAAAAAAJUD3PuRpuKt5tfFAJK6JMA2aBuo9gG8wZNzJwQRWgQIDtRBoGYBtqu9ACTeYwAomQLkHAsebxWAIivAXIOWZTCEwGr6AA+CpJ3gdqyo0AoDAAAA+AuA900fTXuRc1/ndztWgCNWjdIPb0vTXu78rj8XILdylAxgSKU9Qae4PCfo1r2AOgC8q1eU9iLTZvhVI3Q2QCrsGAEAtQhAAgCuEsCfwyVpLzeFagRIpT2WPi+sbhWQpr0cQpUA74Gst/X3aXGZArwnDUoLrTAAAACAM/cGKfdYTNgHUBUAB+4NXh/AGzzn0mKLAMGW+Ed7g9cGSIUlB4dVAjhBiLVMAVY3BSJB6WNF0LIMBtPiHH5UAASaIeneIEcKrTAAAAAAAAAAAG0BmKN/94O/zQEAAAAAQGE9AY7fcGDQk0YZAAAAAElFTkSuQmCC{scale="+$scale+"}>"
+!endfunction
+
+GCPEntityColoring(Dataprep)
+!define Dataprep(e_alias, e_label, e_techn) GCPEntity(e_alias, e_label, e_techn, #4285F4, Dataprep, Dataprep)
+!define Dataprep(e_alias, e_label, e_techn, e_descr) GCPEntity(e_alias, e_label, e_techn, e_descr, #4285F4, Dataprep, Dataprep)
+!define DataprepParticipant(p_alias, p_label, p_techn) GCPParticipant(p_alias, p_label, p_techn, #4285F4, Dataprep, Dataprep)
+!define DataprepParticipant(p_alias, p_label, p_techn, p_descr) GCPParticipant(p_alias, p_label, p_techn, p_descr, #4285F4, Dataprep, Dataprep)

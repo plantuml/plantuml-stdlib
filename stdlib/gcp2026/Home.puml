@@ -1,0 +1,17 @@
+sprite $Home <svg viewBox="0 0 24 24" width="64" height="64"><g ><g transform="translate(0.000000, 1.000000)"><path fill="#5C85DE" d="M 13.6 3.2 L 10.4 3.2 L 3 10 L 3 22.2 L 9 22.2 L 9 14 L 15 14 L 15 22.2 L 21 22.2 L 21 10 Z"/><path fill="#85A4E6" d="M 12 3.2 L 10.4 3.2 L 3 10 L 3 22.2 L 9 22.2 L 9 14 L 12 14 Z"/><path fill="#3367D6" d="M 13.1 3.7 L 3 14.8 L 3 11 L 12.5 2.6 Z"/><path fill="#85A4E6" d="M 12 -0.1 L 0 11.9 L 1.8 13.7 L 12 3.5 L 22.2 13.7 L 24 11.9 Z"/></g></g></svg>
+
+sprite $Home_png [64x64/16z] {
+xTDB3iCW34LH9zB3PFyRRfkKr2QOJpoerE8fEfS1cEYd1t1oLm1m1G1N070505S0S0K0Lm1m1KuLmvt0Xs_RZO3a6my798_Cem5rU-3HWERWmK363zyVoFdR
+zmOkFFc-W7uuIDyJK3n2-tQWn8Ll1OfS-dgWp9Ml1GoklHrGNEnSvgs0oNDV3jZyuak12hzwvZnGuoMV1JHdjBqAQ1xHuqLWhNF3du4r1GnkUKwSZW0PtFHB
+udk0NZw60KzBuiy0xRx4RK_BAd-mmIjUJyxpyvOFy7bCF_tqq_-f_zOy00
+}
+
+!function $HomeIMG($scale=1)
+!return "<img data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAABoUlEQVR42u3bwbGCMBDGcXqyAQ+2QAu0wDXHtGAL9pQWXgt5L6BvGA0Kye5+IN9hD56c/0/MCjM2McbmyNMQAPjm/vYzzCEB7vHR30JEIoDjpxOOAZCP/5/vBvgQD0HYWrw5whbjTRG2Gm+GsOV4E4Stx6sjQOPbPsTuGqAI0PhTNw4SAR5/+ZvWh9iDELDx/Rj/GASCafxlEp8mBU8BEAjQ+OGK8FgEaPwcgCUCNP4dgBWCaXxu3b0DsEAwi08x2a3wAUAbwSQ+vZ5diwsANBGg8WsAtBCg8WsBNBCg8SUA0giK8XoAkgji8bldrwGQRuIuEhpfCyCBAI2XAKhFgMZLAQwIvgxBJL4rjJcEKEWojm99qHrgKQlQglAVv3TXWwKsRUjxDhWvBbACwT2+Ag4RrwmwAME9H4I5hEYzXhtgPJ/CeS4+twbd8yHxEn/dF8C965yLn/sh5KZrQmLXowHGruFKcKvvBjXjLQGKb4dr42sfW8MBaj/53QPUXuIEIAABCEAAAhCAAAQgAAEIQAACEIAABCAAAfYFwD9Pf/n8AuRpKN2MapH8AAAAAElFTkSuQmCC{scale="+$scale+"}>"
+!endfunction
+
+GCPEntityColoring(Home)
+!define Home(e_alias, e_label, e_techn) GCPEntity(e_alias, e_label, e_techn, #4285F4, Home, Home)
+!define Home(e_alias, e_label, e_techn, e_descr) GCPEntity(e_alias, e_label, e_techn, e_descr, #4285F4, Home, Home)
+!define HomeParticipant(p_alias, p_label, p_techn) GCPParticipant(p_alias, p_label, p_techn, #4285F4, Home, Home)
+!define HomeParticipant(p_alias, p_label, p_techn, p_descr) GCPParticipant(p_alias, p_label, p_techn, p_descr, #4285F4, Home, Home)

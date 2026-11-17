@@ -1,0 +1,23 @@
+sprite $PrivateConnectivity <svg viewBox="0 0 24 24" width="64" height="64"><rect x="2.25" y="11.03" width="19.5" height="1.95" style="fill:#aecbfa"/><circle cx="12" cy="12" r="6.82" style="fill:#669df6"/><path d="M14.44,10.05V9.56a2.44,2.44,0,1,0-4.88,0v.49a1,1,0,0,0-1,1v3.89a1,1,0,0,0,1,1h4.88a1,1,0,0,0,1-1V11A1,1,0,0,0,14.44,10.05Z" style="fill:#fff"/><path d="M13.66,10.05H10.34V9.56a1.66,1.66,0,0,1,3.32,0Z" style="fill:#669df6"/><circle cx="12" cy="12.97" r="0.97" style="fill:#4285f4"/></svg>
+
+sprite $PrivateConnectivity_png [64x64/16z] {
+xPV14iCW24IBApJ__yLrxDGQZO0wxIbxrOSh62MFnwrRFn9bBR8iHPYDGT8ACxXSYRqqP22iB-wt8Agcy9WDWoS2r5DBqO8xG8iZgIadd9cdiYwT1-1QFbQs
+Km3sxA2fTLqsZm4wfmdrNiYHGXdowBnjyMBQvqGGYfeA2Dd9xnMD3SpuquVPpC_fqBqL3Vid_fEOLJx-YUVZu0q-uLM0QPwEB2D__R3Dw-af_ZCkJXuz7nB-
+33rF-lciweTmPP3q-fhrDsvFYuTnVrdywFvaVO9zWNzc1FN-SBmVCL2Zx_dKUX4MKzXulISVuEq6O05NS-1hW8RzaxiBnFhYemXJTFuQiD6_rWtq_HjnwtTw
+0G
+}
+
+!function $PrivateConnectivityIMG($scale=1)
+!return "<img data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAACG0lEQVR42u2awZGEIBBFDc3DprApTApeOZqCKZgCFwMwBVIwhR67dq1iZtQB5ANqU/UvU9aU/9HdIHRFRNWdVQkAASAABIAAEAACQACk1KOb6jVdEsBsbDE8zCJHqVRA0LNMEcQwzgPgf8YJoAEBIrZ5BTL/EhHFAQDOOjwazmjeVl4AIeZbTaRH+hj9/FvbU3IISc0bQ1+HNmkhHAHgZ376nHFb9uBnUxXGJNXeNj/uzLD9HKdJCgjw0OecdzG/BqHxrwlJAHi9lF3wXJ5n03aaoKMAvr0NCelpCq4F3lEAnX0bgM9s9p5RcyQK4BueDAAIBcAr/Jv+1QiH8/vStyW7EAbUAfL5lIaEv135Yw3+T0QaQAAgxuRZEL0BzKFWb6nT5Bz+bU+w4QNgzw9rDcBmTvqEX6eLAbCrywPg97g1gLZ0ALxM/rR/cq0blwFgm1/U9DdJAV7O3s0vyloEY+0DvgEwiQBk2wi5pMCaeZcNVG4AKhYAPhixzf/OGk3UGgD5FqhjL4Oci9pAlkEIgOos+wDkgYg6AQBFOY/E2vwA4IeiQ47PYUcA2ENR11owmvjmO7fNWDkXI/zCXOF543NE2n0nGtRRcuRqbMh4K5z3aqyAa/HgZS/79XhpPQLSIBGxRWY4Q85foUkqav8gqk0OAUIV3yYHAnGuRsmdbwj1uFOr7D6Q1YZpaZcXAAJAAAgAASAABIAASKknZisnNlkCMx0AAAAASUVORK5CYII={scale="+$scale+"}>"
+!endfunction
+
+GCPEntityColoring(PrivateConnectivity)
+!define PrivateConnectivity(e_alias, e_label, e_techn) GCPEntity(e_alias, e_label, e_techn, #4285F4, PrivateConnectivity, PrivateConnectivity)
+!define PrivateConnectivity(e_alias, e_label, e_techn, e_descr) GCPEntity(e_alias, e_label, e_techn, e_descr, #4285F4, PrivateConnectivity, PrivateConnectivity)
+!define PrivateConnectivityParticipant(p_alias, p_label, p_techn) GCPParticipant(p_alias, p_label, p_techn, #4285F4, PrivateConnectivity, PrivateConnectivity)
+!define PrivateConnectivityParticipant(p_alias, p_label, p_techn, p_descr) GCPParticipant(p_alias, p_label, p_techn, p_descr, #4285F4, PrivateConnectivity, PrivateConnectivity)
+GCPEntityColoring(Private_Connectivity)
+!define Private_Connectivity(e_alias, e_label, e_techn) GCPEntity(e_alias, e_label, e_techn, #4285F4, PrivateConnectivity, Private_Connectivity)
+!define Private_Connectivity(e_alias, e_label, e_techn, e_descr) GCPEntity(e_alias, e_label, e_techn, e_descr, #4285F4, PrivateConnectivity, Private_Connectivity)
+!define Private_ConnectivityParticipant(p_alias, p_label, p_techn) GCPParticipant(p_alias, p_label, p_techn, #4285F4, PrivateConnectivity, Private_Connectivity)
+!define Private_ConnectivityParticipant(p_alias, p_label, p_techn, p_descr) GCPParticipant(p_alias, p_label, p_techn, p_descr, #4285F4, PrivateConnectivity, Private_Connectivity)

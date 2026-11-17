@@ -1,0 +1,21 @@
+sprite $ProducerPortal <svg viewBox="0 0 24 24" width="64" height="64"><g ><g transform="translate(0.999853, 3.000000)"><path fill="#5C85DE" d="M 1 1.7 L 21 1.7 L 21 -0.7 L 1 -0.7 Z"/><path fill="#3367D6" d="M 18.5 18.8 L 21 18.8 L 21 11.4 L 18.5 11.4 Z"/><path fill="#3367D6" d="M 11 11.4 L 11 16.3 L 3.5 16.3 L 3.5 11.4 L 1 11.4 L 1 18.8 L 13.5 18.8 L 13.5 11.4 Z"/><path fill="#5C85DE" d="M1,2.9L-0.2,9v2.4H1h12.5h5H21h1.2V9L21,2.9H1z M3.1,5.3H19L19.7,9H2.3 L3.1,5.3z"/></g></g></svg>
+
+sprite $ProducerPortal_png [64x64/16z] {
+xPJT2e0W34RbKrYz_miNsKKZhVOJHkpSgHnosvSf1SF9f03XU_dGyA7yMEzFAjnyZF5XYi_19x8LK5Vv-RovZrEUR_FYuuErJn9OvfFM9sNxk2yldpSGykkp
+RohAPpKRVBAaDtmVVtsAfqhhbQudfREtJxFC6wr1rnDSxuKV_W_yrlyZyVk4_weV36C1
+}
+
+!function $ProducerPortalIMG($scale=1)
+!return "<img data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAA+klEQVR42u3awRHCIBCFYXqygT3Ygi3YQq4cbZJaVnRyykgExCi7/+FdYfJNdpcwCaoaPCcAAAAAAACwyeWWYo4aiwAAAAAAAFAJIAbDOQAASqAeQC0GgBqA9XVRo3EPIDUA0TuAWs4nAHGW2d4N8Kb+ZSIAqW2EHgFkDyC2zNA/Bgi9AGoBoOVZzDXAbgAr9d/aCLs6p6VGaLL+W0raK4A2AVg+EgMAAAAAALC9Cj8vSUsZfV1d3Gd5fph9bb3dW+HTNcUcfZXRs7q0T44csR4AAAAAAAAAAAAAAAAAUAfwWGhwpgM4KgAAAAAAAPwEgJ+lAQAAAACc5A4aTo9L+fAQCwAAAABJRU5ErkJggg=={scale="+$scale+"}>"
+!endfunction
+
+GCPEntityColoring(ProducerPortal)
+!define ProducerPortal(e_alias, e_label, e_techn) GCPEntity(e_alias, e_label, e_techn, #4285F4, ProducerPortal, ProducerPortal)
+!define ProducerPortal(e_alias, e_label, e_techn, e_descr) GCPEntity(e_alias, e_label, e_techn, e_descr, #4285F4, ProducerPortal, ProducerPortal)
+!define ProducerPortalParticipant(p_alias, p_label, p_techn) GCPParticipant(p_alias, p_label, p_techn, #4285F4, ProducerPortal, ProducerPortal)
+!define ProducerPortalParticipant(p_alias, p_label, p_techn, p_descr) GCPParticipant(p_alias, p_label, p_techn, p_descr, #4285F4, ProducerPortal, ProducerPortal)
+GCPEntityColoring(Producer_Portal)
+!define Producer_Portal(e_alias, e_label, e_techn) GCPEntity(e_alias, e_label, e_techn, #4285F4, ProducerPortal, Producer_Portal)
+!define Producer_Portal(e_alias, e_label, e_techn, e_descr) GCPEntity(e_alias, e_label, e_techn, e_descr, #4285F4, ProducerPortal, Producer_Portal)
+!define Producer_PortalParticipant(p_alias, p_label, p_techn) GCPParticipant(p_alias, p_label, p_techn, #4285F4, ProducerPortal, Producer_Portal)
+!define Producer_PortalParticipant(p_alias, p_label, p_techn, p_descr) GCPParticipant(p_alias, p_label, p_techn, p_descr, #4285F4, ProducerPortal, Producer_Portal)

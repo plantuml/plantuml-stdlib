@@ -1,0 +1,22 @@
+sprite $TensorflowEnterprise <svg viewBox="0 0 24 24" width="64" height="64"><g stroke="none" stroke-width="1" fill="none"><path d="M12.3008862,4.00003179 L18.9908678,7.90329279 L19,11.4442164 L14.973309,9.0680926 L14.973309,10.8562526 L16.9806355,12.0276231 L16.9918433,15.1064843 L14.973309,13.9136004 L14.973309,18.415105 L12.3008862,20 L12.3008862,4.00003179 Z M11.6991138,4 L11.6991138,19.9999682 L9.02669102,18.4150732 L9.02669102,9.06816678 L5,11.4441846 L5.00913223,7.903261 L11.6991138,4 Z" fill="#4285F4"></path></g></svg>
+
+sprite $TensorflowEnterprise_png [64x64/16z] {
+xTRP3eGW30NGvgOnz_-_U0Q7KK3PoiiixOiav5HeAYBYuV6ZeHIXMZN8u4bOTVJXCR_qrCzk8khJJsK0UVN3PKXqxiVAeApx_YPoVV6T321xlba6ZdX-WLSf
+VLBPhj_EOJB0g8VS-YD3ssksbCp7zcXvBRPI-3r3mqDg_fZ2s65W__wgVkeGkUqVkBVwlVLMV6YzDIzOz2lzv_w_VFnVH6-wWsrlRxt1uUKXvdY-UK5xU7nw
+F00
+}
+
+!function $TensorflowEnterpriseIMG($scale=1)
+!return "<img data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAABTElEQVR42u3aUQqDMAyAYY/Whx2sjzvWTrQrZA7qEFHb2jaty/8QFEEwHzVGzSQik+WYAAAAAAAAAAAAAABQjsfz/dsu+2YA5oT9HLICkO+xvweYk3QhWdkBWML9HcA28QjAEvcHCMn5gwRjABLOvSfAWeIZANK6Pqgt90KAZvWhS+IFANXrQ/P7vBFAtfrQ/D5vCFClPqgt94YARfXhKoAMCCAAADAWgI8llwiQXGxHAXitH0+lADmFdwQAl4OVA5AC0RPAX1ktVwDOepAeANFurBXAXheqDeBK60XGU8ClNGZDfhAx8zaoBFD9I8kdAaquBAAAAACAoQEOuj5bADtdnz2ATddnF8BcJwgAAAAAAAAAANwa4PDHRgRAZWpMdS4w/DSJAXjNucEeM4LuBMBpX0/PSVG/AnC9roNZYQAAAAAAAAAAAAAAjMYHQWOPmPBVS5IAAAAASUVORK5CYII={scale="+$scale+"}>"
+!endfunction
+
+GCPEntityColoring(TensorflowEnterprise)
+!define TensorflowEnterprise(e_alias, e_label, e_techn) GCPEntity(e_alias, e_label, e_techn, #4285F4, TensorflowEnterprise, TensorflowEnterprise)
+!define TensorflowEnterprise(e_alias, e_label, e_techn, e_descr) GCPEntity(e_alias, e_label, e_techn, e_descr, #4285F4, TensorflowEnterprise, TensorflowEnterprise)
+!define TensorflowEnterpriseParticipant(p_alias, p_label, p_techn) GCPParticipant(p_alias, p_label, p_techn, #4285F4, TensorflowEnterprise, TensorflowEnterprise)
+!define TensorflowEnterpriseParticipant(p_alias, p_label, p_techn, p_descr) GCPParticipant(p_alias, p_label, p_techn, p_descr, #4285F4, TensorflowEnterprise, TensorflowEnterprise)
+GCPEntityColoring(Tensorflow_Enterprise)
+!define Tensorflow_Enterprise(e_alias, e_label, e_techn) GCPEntity(e_alias, e_label, e_techn, #4285F4, TensorflowEnterprise, Tensorflow_Enterprise)
+!define Tensorflow_Enterprise(e_alias, e_label, e_techn, e_descr) GCPEntity(e_alias, e_label, e_techn, e_descr, #4285F4, TensorflowEnterprise, Tensorflow_Enterprise)
+!define Tensorflow_EnterpriseParticipant(p_alias, p_label, p_techn) GCPParticipant(p_alias, p_label, p_techn, #4285F4, TensorflowEnterprise, Tensorflow_Enterprise)
+!define Tensorflow_EnterpriseParticipant(p_alias, p_label, p_techn, p_descr) GCPParticipant(p_alias, p_label, p_techn, p_descr, #4285F4, TensorflowEnterprise, Tensorflow_Enterprise)

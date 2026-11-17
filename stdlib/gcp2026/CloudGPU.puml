@@ -1,0 +1,22 @@
+sprite $CloudGPU <svg viewBox="0 0 24 24" width="64" height="64"><g><path fill="#4285f4" d="M15.33,2V4.38H13.17V2H10.83V4.38H8.67V2H6.29V4.38A2,2,0,0,0,4.38,6.29H2V8.67H4.38v2.14H2v2.38H4.38v2.14H2v2.38H4.38a2,2,0,0,0,1.91,1.91V22H8.67V19.62h2.16V22h2.34V19.62h2.16V22h2.38V19.62a2,2,0,0,0,1.91-1.91H22V15.33H19.62V13.19H22V10.81H19.62V8.67H22V6.29H19.62a2,2,0,0,0-1.91-1.91V2Zm1.53,15.24H7.14a.38.38,0,0,1-.38-.38V7.14a.38.38,0,0,1,.38-.38h9.72a.38.38,0,0,1,.38.38v9.72A.38.38,0,0,1,16.86,17.24Z"/><path fill="#4285f4" d="M 12.83 7.54 L 12.83 11.12 L 14.79 11.12 L 11.29 15.98 L 11.29 12.35 L 9.22 12.35 L 12.83 7.54 Z"/></g></svg>
+
+sprite $CloudGPU_png [64x64/16z] {
+xPP13iKW24G9cGNtFt4JNRJnWqMcQV_2MQ7ngIqWY6mzAKLJ7qJsZBUcFeZipOT2NwTDZfsYPvgvq59YJf_UmAnuWVw7aENxylMB3xi4_7rmb7dvW3UEHuPt
+KkUS--KraNedmF36yU1ujIKU8szPtlVVDLiA_eUJyWkyUdikyBDFIiVl-62LUDJZVvoenAzoFCZy4OuNZaUA3_s7xz_VV-9JzQjGFvtTAmq8oxFzYv0utR-D
+HM3ttw_pScqk8tlhCHq
+}
+
+!function $CloudGPUIMG($scale=1)
+!return "<img data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAABXElEQVR42u3bMRqDIAwGUI7m0INl7Gl7hdTBLv0AJYQAyT9kQ4uviAliYuYUORIAAAAAAPTE6/05zqBcVI4Z2n4GAOeicszQ9gAAAAAAYAJwduI3Q3MhjkKotZ8C8ODCrYPMAK6L5xXDCoBWBZCMBDf/vnQU1Gb2XNDqAJW+NwHscKHNMEMBLCu4m0ejf4BacrQlQOn+jATAYQF+v7UUgGbh8/R8igDHyERIDeA/qYoIwGEBcnNMGIDSOZYCuO7PXFAPQK2Y0gQo9X/6Y1BQxPjJAwTnJDeJkKR4cZMJChdR/KfCvctaXgEoTC0gHfpuU+HWjnsDoNDFkPKS2HYAKTIADVgUVSmGLB6DFHpVWDr0Xa4KA8ADQO+Q3v7VmKuXo8ry1jF8h4j/DRLYIrPnKBAlVj0zccxtco0QpfcLau2xVRYAAAAAACYDFHeW3qANa4/P5gAAAAAA4GF8AbqJpYe8VFknAAAAAElFTkSuQmCC{scale="+$scale+"}>"
+!endfunction
+
+GCPEntityColoring(CloudGPU)
+!define CloudGPU(e_alias, e_label, e_techn) GCPEntity(e_alias, e_label, e_techn, #4285F4, CloudGPU, CloudGPU)
+!define CloudGPU(e_alias, e_label, e_techn, e_descr) GCPEntity(e_alias, e_label, e_techn, e_descr, #4285F4, CloudGPU, CloudGPU)
+!define CloudGPUParticipant(p_alias, p_label, p_techn) GCPParticipant(p_alias, p_label, p_techn, #4285F4, CloudGPU, CloudGPU)
+!define CloudGPUParticipant(p_alias, p_label, p_techn, p_descr) GCPParticipant(p_alias, p_label, p_techn, p_descr, #4285F4, CloudGPU, CloudGPU)
+GCPEntityColoring(Cloud_GPU)
+!define Cloud_GPU(e_alias, e_label, e_techn) GCPEntity(e_alias, e_label, e_techn, #4285F4, CloudGPU, Cloud_GPU)
+!define Cloud_GPU(e_alias, e_label, e_techn, e_descr) GCPEntity(e_alias, e_label, e_techn, e_descr, #4285F4, CloudGPU, Cloud_GPU)
+!define Cloud_GPUParticipant(p_alias, p_label, p_techn) GCPParticipant(p_alias, p_label, p_techn, #4285F4, CloudGPU, Cloud_GPU)
+!define Cloud_GPUParticipant(p_alias, p_label, p_techn, p_descr) GCPParticipant(p_alias, p_label, p_techn, p_descr, #4285F4, CloudGPU, Cloud_GPU)

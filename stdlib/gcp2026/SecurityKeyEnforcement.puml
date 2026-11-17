@@ -1,0 +1,22 @@
+sprite $SecurityKeyEnforcement <svg viewBox="0 0 24 24" width="64" height="64"><g><path fill="#4285f4" d="M7.78,16.6V12.85c0-.15-.29-.34-.49-.43a5.46,5.46,0,1,1,7.44-6.83A5.4,5.4,0,0,1,12,12.38a.82.82,0,0,0-.54.9V22H7.78V20.25H4.17V16.6Zm3.64-9.11a1.82,1.82,0,1,0-3.64-.06,1.83,1.83,0,0,0,1.8,1.85h0a1.84,1.84,0,0,0,1.83-1.79Z"/><path fill="#669df6" d="M19.52,5.59A5.44,5.44,0,0,0,13.2,2.15a5.44,5.44,0,0,1,1.13,10.23.84.84,0,0,0-.55.9V22h2.43V13.29a.83.83,0,0,1,.55-.9A5.4,5.4,0,0,0,19.52,5.59Z"/></g></svg>
+
+sprite $SecurityKeyEnforcement_png [64x64/16z] {
+xPTH3uCW38IXhQJ__nTF9JDOGA-wxAcNx64kt-LQ2fEKGhyNLTKlEMTUFpXSz52ro6KJOnPwLceTxcbHAwa_x0Obk_73O04CHhWZ0UbOr1hWhRDDv9rVdEdn
+2bHV1I1JCUbuZifz_2uGKa27zu_ArHW2_6K1Dkof1SzuUSJFypF6Kx-YGF-fC_2jNpilifvUufmVT7xPktrD_9Vxb_q7G4AgdrS0ffyPEF1H2OI67vvYqhOE
+_0yJV-CdJV1c3pxun_pqnI7uuF_0n_urrwVl1MgxGNakK25S7m
+}
+
+!function $SecurityKeyEnforcementIMG($scale=1)
+!return "<img data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAABfklEQVR42u3bsRHDIAwFUI2mIrNkDpVZIdt4Iq+g+HLOHYXhjJEEOL9QkcK58CxhEDGpKv1zEAAAAAAAeMTjtXIuctc83ysnIennKQD2AS5b6MngAoQehFhjWA2cKgZ9FFQPMQjA9uOlcfC/kAwCZRDUIhtGGXwRYYdYPBBGGvwZBPNMaJns1DH4QjmEAmhA5LJAMgBLCIBj6ncphVHv/jcKAGZZ4F37bHn9ifVB9Vzgmf4WWeReBl7pb7ZyvAAg3QEivqtUBr0BxHI+uTOA3BUgqgRkWIBS06P2cTjaU4BbESp7BzIzgO51nrbDxHsh9O9LYYkA4J6bIest8bDb4Yi73wJAnXoBhU1QfEuMZ059q6Yozzx4q7Y4OfcB2WvwpidDDa0yOar5/a6L13mA19GYSdPEeqYPPRytmBc4aqa/DcAUx+MAAAAAAAAAAADgngBBf4IAAAAAAAAAAAAAAAAAlsIAAAAAZgQovjCVBBXOAfko8NocAAAAAAAYxwc/HB7JcV/3iAAAAABJRU5ErkJggg=={scale="+$scale+"}>"
+!endfunction
+
+GCPEntityColoring(SecurityKeyEnforcement)
+!define SecurityKeyEnforcement(e_alias, e_label, e_techn) GCPEntity(e_alias, e_label, e_techn, #4285F4, SecurityKeyEnforcement, SecurityKeyEnforcement)
+!define SecurityKeyEnforcement(e_alias, e_label, e_techn, e_descr) GCPEntity(e_alias, e_label, e_techn, e_descr, #4285F4, SecurityKeyEnforcement, SecurityKeyEnforcement)
+!define SecurityKeyEnforcementParticipant(p_alias, p_label, p_techn) GCPParticipant(p_alias, p_label, p_techn, #4285F4, SecurityKeyEnforcement, SecurityKeyEnforcement)
+!define SecurityKeyEnforcementParticipant(p_alias, p_label, p_techn, p_descr) GCPParticipant(p_alias, p_label, p_techn, p_descr, #4285F4, SecurityKeyEnforcement, SecurityKeyEnforcement)
+GCPEntityColoring(Security_Key_Enforcement)
+!define Security_Key_Enforcement(e_alias, e_label, e_techn) GCPEntity(e_alias, e_label, e_techn, #4285F4, SecurityKeyEnforcement, Security_Key_Enforcement)
+!define Security_Key_Enforcement(e_alias, e_label, e_techn, e_descr) GCPEntity(e_alias, e_label, e_techn, e_descr, #4285F4, SecurityKeyEnforcement, Security_Key_Enforcement)
+!define Security_Key_EnforcementParticipant(p_alias, p_label, p_techn) GCPParticipant(p_alias, p_label, p_techn, #4285F4, SecurityKeyEnforcement, Security_Key_Enforcement)
+!define Security_Key_EnforcementParticipant(p_alias, p_label, p_techn, p_descr) GCPParticipant(p_alias, p_label, p_techn, p_descr, #4285F4, SecurityKeyEnforcement, Security_Key_Enforcement)

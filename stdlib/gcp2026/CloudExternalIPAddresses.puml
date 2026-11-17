@@ -1,0 +1,21 @@
+sprite $CloudExternalIPAddresses <svg viewBox="0 0 24 24" width="64" height="64"><g><g ><path fill="#669df6" d="M17.49,12.4v6.7a.4.4,0,0,1-.4.4H4.9a.4.4,0,0,1-.4-.4V6.9a.4.4,0,0,1,.4-.4h6.7a.4.4,0,0,0,.4-.4V4.4a.4.4,0,0,0-.4-.4H2.4a.4.4,0,0,0-.4.4V21.6a.4.4,0,0,0,.4.4H19.6a.4.4,0,0,0,.4-.4V12.4a.4.4,0,0,0-.4-.4H17.89A.4.4,0,0,0,17.49,12.4Z"/><path fill="#4285f4" d="M14,2.4V9.6a.4.4,0,0,0,.4.4h7.2a.4.4,0,0,0,.4-.4V2.4a.4.4,0,0,0-.4-.4H14.4A.4.4,0,0,0,14,2.4Zm5.6,4.1H17.89a.4.4,0,0,1-.4-.4V4.4a.4.4,0,0,1,.4-.4H19.6a.4.4,0,0,1,.4.4V6.1A.4.4,0,0,1,19.6,6.5Z"/></g></g></svg>
+
+sprite $CloudExternalIPAddresses_png [64x64/16z] {
+xTVH2e0W38NXEKVu_azSWHSbsvfYNTZvh_r0L4I9qFk9KWylIhoGJrQj5pwIrkVDxExheWzxlipdZzvVly3-bVFa5yCFdn_ujJsn4dNuX-2ZNXyOzgbU5F3m
+yF1V--pwSF1plVt-ztu5Q48x
+}
+
+!function $CloudExternalIPAddressesIMG($scale=1)
+!return "<img data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAA2UlEQVR42u3buw3DIBRAUUajyCyZgzIrZEmv8GLaKLFsgX/iFLdzgY5s85FIEZFGLgEAAADA1Xq8plrp3K0A6oCjcxkAAADrAZ7vKR9QK0B9Ln9VmgHmgZW5OKIGgLLwBg0BkDd+QgAAAPAT7ALQbRrstA74XvPHrgBDLIQAAAAAAAAAAGcCpB/7/NbSbQBOPxYHAAAAgKsD1BPlhS37EAD5P0BkAAAAAAAAAAAAAAAAAAAAAAAAAL0Athw37QxQzgK4QQAAAAAAoAngqPsCu+TaHAAAAACs7AOr9VuULFJnPwAAAABJRU5ErkJggg=={scale="+$scale+"}>"
+!endfunction
+
+GCPEntityColoring(CloudExternalIPAddresses)
+!define CloudExternalIPAddresses(e_alias, e_label, e_techn) GCPEntity(e_alias, e_label, e_techn, #4285F4, CloudExternalIPAddresses, CloudExternalIPAddresses)
+!define CloudExternalIPAddresses(e_alias, e_label, e_techn, e_descr) GCPEntity(e_alias, e_label, e_techn, e_descr, #4285F4, CloudExternalIPAddresses, CloudExternalIPAddresses)
+!define CloudExternalIPAddressesParticipant(p_alias, p_label, p_techn) GCPParticipant(p_alias, p_label, p_techn, #4285F4, CloudExternalIPAddresses, CloudExternalIPAddresses)
+!define CloudExternalIPAddressesParticipant(p_alias, p_label, p_techn, p_descr) GCPParticipant(p_alias, p_label, p_techn, p_descr, #4285F4, CloudExternalIPAddresses, CloudExternalIPAddresses)
+GCPEntityColoring(Cloud_External_IP_Addresses)
+!define Cloud_External_IP_Addresses(e_alias, e_label, e_techn) GCPEntity(e_alias, e_label, e_techn, #4285F4, CloudExternalIPAddresses, Cloud_External_IP_Addresses)
+!define Cloud_External_IP_Addresses(e_alias, e_label, e_techn, e_descr) GCPEntity(e_alias, e_label, e_techn, e_descr, #4285F4, CloudExternalIPAddresses, Cloud_External_IP_Addresses)
+!define Cloud_External_IP_AddressesParticipant(p_alias, p_label, p_techn) GCPParticipant(p_alias, p_label, p_techn, #4285F4, CloudExternalIPAddresses, Cloud_External_IP_Addresses)
+!define Cloud_External_IP_AddressesParticipant(p_alias, p_label, p_techn, p_descr) GCPParticipant(p_alias, p_label, p_techn, p_descr, #4285F4, CloudExternalIPAddresses, Cloud_External_IP_Addresses)

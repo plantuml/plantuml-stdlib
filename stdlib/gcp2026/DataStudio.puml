@@ -1,0 +1,21 @@
+sprite $DataStudio <svg viewBox="0 0 24 24" width="64" height="64"><g><g><g ><path fill="#669df6" d="M19.5,16.17H12.24a2.53,2.53,0,0,0-2.74,2.5,2.5,2.5,0,0,0,2.74,2.5H19.5Z"/><circle fill="#4285f4" cx="19.5" cy="18.67" r="2.5"/></g><g ><path fill="#669df6" d="M12,9.5H4.74A2.53,2.53,0,0,0,2,12a2.5,2.5,0,0,0,2.74,2.5H12Z"/><circle fill="#4285f4" cx="12" cy="12" r="2.5"/></g><g ><path fill="#669df6" d="M19.5,2.83H12.24A2.54,2.54,0,0,0,9.5,5.33a2.5,2.5,0,0,0,2.74,2.5H19.5Z"/><circle fill="#4285f4" cx="19.5" cy="5.33" r="2.5"/></g></g></g></svg>
+
+sprite $DataStudio_png [64x64/16z] {
+xPPH3e0W34D5vl3-9vQO-2KfnMfCWFwFZQrxi2nJ_IeKj6PnqT7lIlkfzM7uVicKx5G5Zj9drLg7qrSBY3_7Xw_ZQ_tVSF_h1i0390m8Rc3S-XI6aF8Hx0AD
+nPfubva9h6cO5VIAQwWYAX1tPNJMgFsJvuTXPTfRQUJ-I6_rL8ClIIWXLuhXn06kUJfC9htE95UPrF9_LV_Fi0KiLSfGccJfHWS
+}
+
+!function $DataStudioIMG($scale=1)
+!return "<img data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAABQklEQVR42u2awQ2DMAxFGS0HVmCFzpEjK3QbJmKFFCGoRFVE1Eb2R36Hf4cXx/523JVSusjqAAAAAAAAAACw1+M5p5bqx6NkASwfmxeVVhrGufTnSlIAWv98P1YpSwAwPvnqSDD6+RVAcTj9t5wBrImq3en/AOAsCiKEPwAUAIS/AgoA3Mvg5FgFsoIPcCuFSk6wM74K+Sz0XZuhLSfkliA+KkN1Q0Q7DAAAAKA2e++J628tSStvGXpXusrWbgCMhxhZCoCTcZkkADiNr8wjQcWxVTcvVgBk21crALIDDABwBYIkQcqgiBGa1J6ybm+FhztZ4S/NkPtzNu0wAAAAgNsDMHCaWXIs7uQwNQA422sJACXs42j453EWJFiRAUD4KxB7UTL8qizL0n75IMl2g62nTMNxykQ7DAAAAAAAAADAtV5jMKrIskKKZgAAAABJRU5ErkJggg=={scale="+$scale+"}>"
+!endfunction
+
+GCPEntityColoring(DataStudio)
+!define DataStudio(e_alias, e_label, e_techn) GCPEntity(e_alias, e_label, e_techn, #4285F4, DataStudio, DataStudio)
+!define DataStudio(e_alias, e_label, e_techn, e_descr) GCPEntity(e_alias, e_label, e_techn, e_descr, #4285F4, DataStudio, DataStudio)
+!define DataStudioParticipant(p_alias, p_label, p_techn) GCPParticipant(p_alias, p_label, p_techn, #4285F4, DataStudio, DataStudio)
+!define DataStudioParticipant(p_alias, p_label, p_techn, p_descr) GCPParticipant(p_alias, p_label, p_techn, p_descr, #4285F4, DataStudio, DataStudio)
+GCPEntityColoring(Data_Studio)
+!define Data_Studio(e_alias, e_label, e_techn) GCPEntity(e_alias, e_label, e_techn, #4285F4, DataStudio, Data_Studio)
+!define Data_Studio(e_alias, e_label, e_techn, e_descr) GCPEntity(e_alias, e_label, e_techn, e_descr, #4285F4, DataStudio, Data_Studio)
+!define Data_StudioParticipant(p_alias, p_label, p_techn) GCPParticipant(p_alias, p_label, p_techn, #4285F4, DataStudio, Data_Studio)
+!define Data_StudioParticipant(p_alias, p_label, p_techn, p_descr) GCPParticipant(p_alias, p_label, p_techn, p_descr, #4285F4, DataStudio, Data_Studio)

@@ -1,0 +1,18 @@
+sprite $Security <svg viewBox="0 0 24 24" width="64" height="64"><g ><g transform="translate(4.000000, 1.000000)"><path fill="#85A4E6" d="M8,0l-9,4v6c0,5.6,3.8,10.7,9,12c5.2-1.3,9-6.4,9-12V4L8,0z M8,11h7c-0.5,4.1-3.3,7.8-7,8.9V11l-7,0V5.3 l7-3.1V11z"/><path fill="#5C85DE" d="M8,0v22c5.2-1.3,9-6.4,9-12V4L8,0z M15,11c-0.5,4.1-3.3,7.8-7,8.9V11L15,11z"/><path fill="#3367D6" d="M17,11h-2c0,0,0,0.3-0.1,0.6L17,11z"/><path fill="#3367D6" d="M -1 11 L 1 11 L 1 10.4 Z"/></g></g></svg>
+
+sprite $Security_png [64x64/16z] {
+xTTH3iCW203GWcFK-rzu9kqwgu1WaoLRokUofr1RnMNvum0aJlEQId09cDQRPyQeHgBQSwWCEFJ7-qS0gWAv3WZgydy-1phBtdNdhJBgiWdtN9cT8vpBFdvc
+CVe7qILkUcRTdySEUcmp2tbXTK8URd_xsyzwlk2VlEPyzViLGjYZSrxN2_uXxi7Wzl8v4lJs1cvv41-VtoV5ezDhnoZuFAW7kS-JahvMW9X-6Xx0ca_gz4e1
+JOvM2m5ZpyRqvSqU-JJeO4RUdbvSWfvRVQ3fDqvc0sTu6cKlha6xaOqwQLIykmb6oQT03uszfr0BZerFqGuUvGO-S8sHxW_Vkx_K7zEaFgu3i_hzDaxStNug
+NW
+}
+
+!function $SecurityIMG($scale=1)
+!return "<img data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAACKklEQVR42u2bwZHDIAxF3dM2wGFbcAu0kKuObiEtbBVuhBbSAgsbO+PZCcQICWFbB12d/KcvmQRp8N4PV45BAQh++PTzGOzkrgcgCDchIIQfJxcDRiEQEsL9NhYArwiOMKcD8E54CsAmzKEBxPpebZ6LDIBXeXD2Cdb63hM7ALD2iSY2zwQUAGDpE1LCXwIwACj7BGt954QTAajuE6z1vdr8nXBiAOg+wVrf0Smfnk0MoLhP7BFfbXMJAGs0BIBrSEcHAFjhRwewq77PDIDsIKIAFIACUAAKQAEoAAWgABSAAlAAhwBgif+V7R7A7f580PfN+S/7jPHmLl8CZEEFMiTGrAmKyQpJ+nMrAQB3CABB9LtLFqBwgDkCAOzFyakBWBoAbugdQBSKaYAlFyO9AwBuANAzgJqLU86rsSYAUva3lAA4y4Ag+zPW/qUAoDcA8SY4dUvMAcB0CAAS9ueaD3DdABgTtV+SfeyARBcAbPoHEO+ITHDBLA0g9d4vzT4SwGOQBJBpfB4zJ4QdkgIJADYjHpP9qjG51gDs3eXqfm4+J0hVCrUHHqz1SQYlKd4KlbavHpakmBQFLgDjB/EWWffks8I1EEpPebVNj3NYGigALFmfW4gnH5fHQPgnHHZMgALld+bYFyiCkDnTN1mn4dwWIVuYsIgzfhc7QxQrM9SWb740tbhhRgBoskonsiv4AUDTHUKRbdHtCXJT40Zii1R8dVaXpxWAbPwCnIT8/t7UoEcAAAAASUVORK5CYII={scale="+$scale+"}>"
+!endfunction
+
+GCPEntityColoring(Security)
+!define Security(e_alias, e_label, e_techn) GCPEntity(e_alias, e_label, e_techn, #4285F4, Security, Security)
+!define Security(e_alias, e_label, e_techn, e_descr) GCPEntity(e_alias, e_label, e_techn, e_descr, #4285F4, Security, Security)
+!define SecurityParticipant(p_alias, p_label, p_techn) GCPParticipant(p_alias, p_label, p_techn, #4285F4, Security, Security)
+!define SecurityParticipant(p_alias, p_label, p_techn, p_descr) GCPParticipant(p_alias, p_label, p_techn, p_descr, #4285F4, Security, Security)

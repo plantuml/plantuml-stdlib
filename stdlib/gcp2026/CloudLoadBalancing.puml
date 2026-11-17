@@ -1,0 +1,21 @@
+sprite $CloudLoadBalancing <svg viewBox="0 0 24 24" width="64" height="64"><g><g><g ><rect fill="#669df6" x="18" y="12" width="2" height="4"/><rect fill="#669df6" x="11" y="12" width="2" height="4"/><rect fill="#669df6" x="4" y="12" width="2" height="4"/><path fill="#4285f4" d="M 13 11 L 11 11 L 11 7 L 13 7 L 13 11 Z"/><rect fill="#669df6" x="4" y="11" width="16" height="2"/><rect fill="#aecbfa" x="6" y="2" width="12" height="5"/><rect fill="#669df6" x="12" y="2" width="6" height="5"/><rect fill="#aecbfa" x="16" y="16" width="6" height="6"/><rect fill="#aecbfa" x="2" y="16" width="6" height="6"/><rect fill="#669df6" x="5" y="16" width="3" height="6"/><rect fill="#aecbfa" x="9" y="16" width="6" height="6"/><rect fill="#669df6" x="12" y="16" width="3" height="6"/><rect fill="#669df6" x="19" y="16" width="3" height="6"/></g></g></g></svg>
+
+sprite $CloudLoadBalancing_png [64x64/16z] {
+xPVP3e0W30GvMl3_lzWZAA55H6AYCJkF6-O9be8nu4cim0ckV2y80lZm_-mNC7EClkZJBP-c1JTUPlZmktth5N65TLxtGpVsltvHzYtnEchuvMMa5yF_gk-8
+EEt_qJ-YVVzpn2cgL8_p-PBp9uycqeSGFdpux_doyzICXbw2u8GP
+}
+
+!function $CloudLoadBalancingIMG($scale=1)
+!return "<img data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAABLElEQVR42u3bsRHCIBiG4YxG4Qqu4Aq0lKyQFVghjQM4S1b4xTtULoeQQIzm8hZfY/EdPE3wJ+lEpDtyOgAAAACAlribmJZoNzblHwCkJZd+bAoAAAAAAAAAAAAAAAAA8DMAtTTWieiQs99EiPEbUkuzy7/DJzsaH5lEHWYeAAAAAAAAAAAAALArgHD0NGskOv6+4n+/rtXv8zUA2UkUAAAAsBmAqkiqx6zYtR1AzaMnbLZ60ZOuBIAAAAAAAAAAQC1AapbfD2LsIPKIdvlzgHbFLnl2lc4BUU+y672mYtciAJO7zbEuf6PjF6Pm3hzNvfkJG/68pkGqTocAAAAAAAAAAAAAAAAAAAAAADDz3T8PkJ3Vl+YBcea+B/hpHhDNBUpdfDYHAAAAADDNHbuK07UNAff0AAAAAElFTkSuQmCC{scale="+$scale+"}>"
+!endfunction
+
+GCPEntityColoring(CloudLoadBalancing)
+!define CloudLoadBalancing(e_alias, e_label, e_techn) GCPEntity(e_alias, e_label, e_techn, #4285F4, CloudLoadBalancing, CloudLoadBalancing)
+!define CloudLoadBalancing(e_alias, e_label, e_techn, e_descr) GCPEntity(e_alias, e_label, e_techn, e_descr, #4285F4, CloudLoadBalancing, CloudLoadBalancing)
+!define CloudLoadBalancingParticipant(p_alias, p_label, p_techn) GCPParticipant(p_alias, p_label, p_techn, #4285F4, CloudLoadBalancing, CloudLoadBalancing)
+!define CloudLoadBalancingParticipant(p_alias, p_label, p_techn, p_descr) GCPParticipant(p_alias, p_label, p_techn, p_descr, #4285F4, CloudLoadBalancing, CloudLoadBalancing)
+GCPEntityColoring(Cloud_Load_Balancing)
+!define Cloud_Load_Balancing(e_alias, e_label, e_techn) GCPEntity(e_alias, e_label, e_techn, #4285F4, CloudLoadBalancing, Cloud_Load_Balancing)
+!define Cloud_Load_Balancing(e_alias, e_label, e_techn, e_descr) GCPEntity(e_alias, e_label, e_techn, e_descr, #4285F4, CloudLoadBalancing, Cloud_Load_Balancing)
+!define Cloud_Load_BalancingParticipant(p_alias, p_label, p_techn) GCPParticipant(p_alias, p_label, p_techn, #4285F4, CloudLoadBalancing, Cloud_Load_Balancing)
+!define Cloud_Load_BalancingParticipant(p_alias, p_label, p_techn, p_descr) GCPParticipant(p_alias, p_label, p_techn, p_descr, #4285F4, CloudLoadBalancing, Cloud_Load_Balancing)

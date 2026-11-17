@@ -1,0 +1,23 @@
+sprite $BinaryAuthorization <svg viewBox="0 0 24 24" width="64" height="64"><path d="M14.86,11.62h2v.06c0,5.91-3.44,8-4.58,8.54v1.53l.25-.08c.23-.08,5.77-2.08,5.77-10V10.2H14.13Z" style="fill:#669df6"/><path d="M14.13,10.2l.7-1.27V2.25l-1.12.87c-2.44,1.79-5,5.08-4.84,8.94a8,8,0,0,0,3.4,6.39l.1.07.75-1.22-.1-.06a6.24,6.24,0,0,1-.82-.71L14.86,15V11.62Zm-.7,1.42v2.56L11.3,15.41a6.49,6.49,0,0,1-1-3.42c-.13-3.33,2.13-5.85,3.11-6.78V8.53l-1.68,3.09h1.72" style="fill:#4285f4"/><path d="M12.24,20.22a9.28,9.28,0,0,1-5.06-8.76V10.15H5.75v1.31c0,7.52,5.6,10,6.24,10.2l.24.09" style="fill:#aecbfa"/></svg>
+
+sprite $BinaryAuthorization_png [64x64/16z] {
+xTRB3W8X30NGleBz_o_MKLfW5afRDJ6HbOavxQKCZW3_zGEBIbgKQhpaLKjUQrvhNcjUQ_vk9UqFgK1PJtUUzttZMN-a5qZxdZxj_TXo_b0DydwSUixRxkTA
+mVYqpZ4SltBzlMciFJApUHbNgFd2VU-7htg9UXzVl_zPBzrViltdlS1h3yyyVi_36xmcFJxpyDgV1-0VMy2F1vWquiy3eEdzS-Eyuz7QYZr_iZk-TGCwwStu
+umQISVjcpuy0RNtpybRyHm0SEu1W-od0Ke2tfcy1fW8IRFy8W5vWS8P40VBqBVGhl3JZjZdykG2kd2El3veBn7alm3wwAEzRO4JESIiWMTwFKOAJFqUGR7Fx
+7r3I__NfTGK
+}
+
+!function $BinaryAuthorizationIMG($scale=1)
+!return "<img data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAACJklEQVR42u2bzW3DMAyFPRoPXaErZA4es4JX6Aq5eIDOkhVYO3AAQyUtytEvpQNPMWC/T08UKSkTEU09xzQADAADwAAwAFQYX/fnFtAlgFU4rkFdAjiI7wvAbnlyog8Agvg+AJyItw/AI942AIV48wA4wdgFAEYovQsf8wAYkS/xwm+2APjW+h4AuNZHjzvsAOCsr3jGFADvEmcWACNsUT5nBoBqfbcM4HTuh4JqCoB2VDVJslUAyBU9V5JkqwC8o1pq9D8G8PNLuAa9QwEAtY3RbVYHVAuAKX1B2RvQtxEAoAAg7geYByC0xaEuaNsBoVPmNm9RDwDID+AJ1QJYo3sAECrINICQPqBVAJMDAAsAKFsKOwA+SoSaZ91lsHgvoACgLYdB0xDVCCA4Dxw7QqkU5gBsdncAYI0AUDG6uDvjrBLE1AkwWjvsTgO3HvDV/Bwc7j1MGTzVAgAV0wAU4sV3MPanajZEmOVQ2htYrp4Cb/M9tv2j7ggxLsCAI3Gf+CT2jw1AmwumC/bH2Nk/yZ4g4wIKOCTF3KOfAgDnAlRC0GZ+rHpXmKkLNBBAaX2iFrbFuanALY2BWT9a5s9yLiBAwA/EY4rvTHrosApeQiHkFJ/lZEiA8G+JFLJ9UvHZToeF6fByw/wgEEY9ufisN0QkCPcHUSnx2S9JcXWCAAByfVORi5JHNzgAMPe3FL0svdUGOwCMWd6OP00NAAPAADAADAC6+AMVxQ1Nn/uSOAAAAABJRU5ErkJggg=={scale="+$scale+"}>"
+!endfunction
+
+GCPEntityColoring(BinaryAuthorization)
+!define BinaryAuthorization(e_alias, e_label, e_techn) GCPEntity(e_alias, e_label, e_techn, #4285F4, BinaryAuthorization, BinaryAuthorization)
+!define BinaryAuthorization(e_alias, e_label, e_techn, e_descr) GCPEntity(e_alias, e_label, e_techn, e_descr, #4285F4, BinaryAuthorization, BinaryAuthorization)
+!define BinaryAuthorizationParticipant(p_alias, p_label, p_techn) GCPParticipant(p_alias, p_label, p_techn, #4285F4, BinaryAuthorization, BinaryAuthorization)
+!define BinaryAuthorizationParticipant(p_alias, p_label, p_techn, p_descr) GCPParticipant(p_alias, p_label, p_techn, p_descr, #4285F4, BinaryAuthorization, BinaryAuthorization)
+GCPEntityColoring(Binary_Authorization)
+!define Binary_Authorization(e_alias, e_label, e_techn) GCPEntity(e_alias, e_label, e_techn, #4285F4, BinaryAuthorization, Binary_Authorization)
+!define Binary_Authorization(e_alias, e_label, e_techn, e_descr) GCPEntity(e_alias, e_label, e_techn, e_descr, #4285F4, BinaryAuthorization, Binary_Authorization)
+!define Binary_AuthorizationParticipant(p_alias, p_label, p_techn) GCPParticipant(p_alias, p_label, p_techn, #4285F4, BinaryAuthorization, Binary_Authorization)
+!define Binary_AuthorizationParticipant(p_alias, p_label, p_techn, p_descr) GCPParticipant(p_alias, p_label, p_techn, p_descr, #4285F4, BinaryAuthorization, Binary_Authorization)

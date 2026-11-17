@@ -1,0 +1,21 @@
+sprite $WebAndMobile <svg viewBox="0 0 512 512" width="64" height="64"><g><path d="M293.082,365.035c-8.837,0-16-7.163-16-16v-69.75c0-8.837,7.163-16,16-16s16,7.163,16,16v69.75c0,8.837-7.163,16-16,16Z" fill="#9aa0a6"/><path d="M426.882,288h-184.064c-8.837,0-16-7.163-16-16s7.163-16,16-16h183.064V86H160.282v95.6c0,8.837-7.163,16-16,16s-16-7.163-16-16v-96.6c0-17.094,13.906-31,31-31h267.6c17.094,0,31,13.906,31,31v172c0,17.094-13.906,31-31,31h0Z" fill="#9aa0a6"/><path d="M426.882,288h-184.064v-32h215.064v1c0,17.121-13.879,31-31,31Z" fill="#2b80f8"/><path d="M160.282,181.6h-32v-96.6c0-17.121,13.879-31,31-31h1v127.6Z" fill="#2b80f8"/><path d="M367.482,383.6h-127.108c-8.837,0-16-7.163-16-16s7.163-16,16-16h127.108c8.837,0,16,7.163,16,16s-7.163,16-16,16Z" fill="#2b80f8"/><path d="M225.374,458H84.882c-17.094,0-31-13.906-31-31v-230.4c0-17.094,13.906-31,31-31h140.492c17.094,0,31,13.906,31,31v230.4c0,17.094-13.906,31-31,31h0ZM85.882,426h138.492v-228.4H85.882v228.4Z" fill="#9aa0a6"/><path d="M224.514,458H84.882c-17.094,0-31-13.906-31-31v-229.45h32v228.45h138.632v32Z" fill="#2b80f8"/></g></svg>
+
+sprite $WebAndMobile_png [64x64/16z] {
+xTVH3e0W20LGJ4Ry_nUNwr6HgpvKZlkOEpKHMX55FfOZkUbeLXK_sNouGjwyWO9UEjxTlkFT2eSFNrryMkkyuuvPm-UHAQbzDgOaWNvipAg5iksCZrcrKDuQ
+1tvCuN_ZrShBdfOy4y7rI-OOXj_VTzjkelyMlQnvcQWVzCaQlX7SqwfdmyC_7TpqYI9xvm8
+}
+
+!function $WebAndMobileIMG($scale=1)
+!return "<img data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAABI0lEQVR42u3bzRGCMBCG4fREA2nCFmzBa45pgRZswQsF2IIt0MIaZmBERodLfhb2PXxXZB+THZYhTkSc5TgAAAAAAAAypYuj7/u7ilQFSIWHLopMST+uKaE4wPSvL8UrBNhFyADwKV4pgNQG0NAD2gFo6OwAAAAAAAAAAAAA2QDSRdy/p65rfMo6OSc1FQDTMNFqUmsOULD4JV4twLzsm05qTQHSfv7a37f+EWpPak0BUkf3mw7va98cAAAAAAAAAJwcYDtMlYhxgNH8CnBWAcJe8aqa4I85wdd4eQIAAAAAAAAAABz2Qcg8gFgHGCwDDKfYAmo/lQUAAAAAKPGm5jAAl/hypgHmVRAKA+g/MbI+DJEZwLcunjNDAAAAAAAAGAd4A3+mgZLxTZRfAAAAAElFTkSuQmCC{scale="+$scale+"}>"
+!endfunction
+
+GCPEntityColoring(WebAndMobile)
+!define WebAndMobile(e_alias, e_label, e_techn) GCPEntity(e_alias, e_label, e_techn, #4285F4, WebAndMobile, WebAndMobile)
+!define WebAndMobile(e_alias, e_label, e_techn, e_descr) GCPEntity(e_alias, e_label, e_techn, e_descr, #4285F4, WebAndMobile, WebAndMobile)
+!define WebAndMobileParticipant(p_alias, p_label, p_techn) GCPParticipant(p_alias, p_label, p_techn, #4285F4, WebAndMobile, WebAndMobile)
+!define WebAndMobileParticipant(p_alias, p_label, p_techn, p_descr) GCPParticipant(p_alias, p_label, p_techn, p_descr, #4285F4, WebAndMobile, WebAndMobile)
+GCPEntityColoring(Web_And_Mobile)
+!define Web_And_Mobile(e_alias, e_label, e_techn) GCPEntity(e_alias, e_label, e_techn, #4285F4, WebAndMobile, Web_And_Mobile)
+!define Web_And_Mobile(e_alias, e_label, e_techn, e_descr) GCPEntity(e_alias, e_label, e_techn, e_descr, #4285F4, WebAndMobile, Web_And_Mobile)
+!define Web_And_MobileParticipant(p_alias, p_label, p_techn) GCPParticipant(p_alias, p_label, p_techn, #4285F4, WebAndMobile, Web_And_Mobile)
+!define Web_And_MobileParticipant(p_alias, p_label, p_techn, p_descr) GCPParticipant(p_alias, p_label, p_techn, p_descr, #4285F4, WebAndMobile, Web_And_Mobile)

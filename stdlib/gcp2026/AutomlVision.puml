@@ -1,0 +1,22 @@
+sprite $AutomlVision <svg viewBox="0 0 24 24" width="64" height="64"><g><path fill="#669df6" d="M 13.44 13.77 L 8.63 13.8 L 10.61 10.26 L 15.41 10.23 L 13.44 13.77 Z"/><path fill="#4285f4" d="M6.82,19.46l.95,1.65h9.49L22,12.89,20.1,9.6l-4.74,8.21H7.77Z"/><path fill="#4285f4" d="M17.18,4.54l-.95-1.65H6.74L2,11.11,3.9,14.4,8.64,6.19h7.59Z"/></g></svg>
+
+sprite $AutomlVision_png [64x64/16z] {
+xPTH3yCW28ILNWp__nSlMVQ07L2KhLqNxxdN3q-qj9Ib_n9PYjd1bX3oiwqSdhdbyCp74RISdrmxvwe_niErOm0_rJyO2Dh58sVdkNDpBVvZuLs2FpSyZk4t
+gMwjYE1h4whzqnPUXYVjsovg67nPlVI_mKZTlHB0gpahuRduVG4qYjSAYE2jFgNutkcDXkw5hwQfJyMEIVlzEsPTSRUvub9uxUjztXJotI4eDK56maCExzUF
+ePsU6w6T5GGRF_aBiNGVFG0
+}
+
+!function $AutomlVisionIMG($scale=1)
+!return "<img data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAABjUlEQVR42u2bzc3DMAiGMxqHb5bOwbErdJtM1BXcVPp6qSpFYAwvhANXKzyvzY+DtzHGdmXbGkADaAANoAE0gHn7uz/JwTABHB/Ghw0HYzgAb1WcnP8YHAB2BrDDAAhQ/2OEAmC/LID/qBzh/IA4AlHOW6qvBhAQ+HDSoDDw1SuEBOpTuVJYoD6X7AWiqjUIAIK0xyW7wYgcDQOgWuATAZCkvZIXIpXVPwVQNfBJAKRMe5Jvclf/9niy1JSVKs8CMA98hzN02BAaTVSqOgAC9UkIQOo8T/YprAWwLVCfFQAsKlXSHgG2Cny3h4v6KqG0i3IS9U93gXZhifOh6p/tAs3iy9X3vKARby/wtGe/A74ok2HRQ7/M+3pOQnoHK3dNKtW0//Wt+pSszpv1KaXVLzkiY31Bk8158y710uqnArDqguZyaS8lgJWXs6sClfVv8WX/JSK3KsTkSNRWhZkbqqI+xKxwyrmhCgBwxuUzTo2lDoKQDyYcjwKhAnB5PNFPZhpAA2gADaABNIBpewF/oSsuVyDcygAAAABJRU5ErkJggg=={scale="+$scale+"}>"
+!endfunction
+
+GCPEntityColoring(AutomlVision)
+!define AutomlVision(e_alias, e_label, e_techn) GCPEntity(e_alias, e_label, e_techn, #4285F4, AutomlVision, AutomlVision)
+!define AutomlVision(e_alias, e_label, e_techn, e_descr) GCPEntity(e_alias, e_label, e_techn, e_descr, #4285F4, AutomlVision, AutomlVision)
+!define AutomlVisionParticipant(p_alias, p_label, p_techn) GCPParticipant(p_alias, p_label, p_techn, #4285F4, AutomlVision, AutomlVision)
+!define AutomlVisionParticipant(p_alias, p_label, p_techn, p_descr) GCPParticipant(p_alias, p_label, p_techn, p_descr, #4285F4, AutomlVision, AutomlVision)
+GCPEntityColoring(Automl_Vision)
+!define Automl_Vision(e_alias, e_label, e_techn) GCPEntity(e_alias, e_label, e_techn, #4285F4, AutomlVision, Automl_Vision)
+!define Automl_Vision(e_alias, e_label, e_techn, e_descr) GCPEntity(e_alias, e_label, e_techn, e_descr, #4285F4, AutomlVision, Automl_Vision)
+!define Automl_VisionParticipant(p_alias, p_label, p_techn) GCPParticipant(p_alias, p_label, p_techn, #4285F4, AutomlVision, Automl_Vision)
+!define Automl_VisionParticipant(p_alias, p_label, p_techn, p_descr) GCPParticipant(p_alias, p_label, p_techn, p_descr, #4285F4, AutomlVision, Automl_Vision)

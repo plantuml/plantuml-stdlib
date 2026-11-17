@@ -1,0 +1,23 @@
+sprite $NetworkTiers <svg viewBox="0 0 24 24" width="64" height="64"><g><path fill="#669df6" d="M7.3,15.7A5.92,5.92,0,0,1,6,12H2a9.89,9.89,0,0,0,2.46,6.54Z"/><path fill="#669df6" d="M12,2A10,10,0,0,0,5.45,4.45L8.29,7.29A6,6,0,0,1,18,12h4A10,10,0,0,0,12,2Z"/><circle fill="#aecbfa" cx="8" cy="19" r="2"/><circle fill="#4285f4" cx="19" cy="16" r="2"/><circle fill="#669df6" cx="14" cy="20" r="2"/><path fill="#4285f4" d="M6,12H2a10,10,0,0,0,.44,2.91l4-.79A6,6,0,0,1,6,12Z"/><g><g ><circle fill="#aecbfa" cx="5" cy="8" r="2"/></g></g><path fill="#4285f4" d="M17.61,9.88A6,6,0,0,1,18,12h4a10,10,0,0,0-.43-2.91Z"/></g></svg>
+
+sprite $NetworkTiers_png [64x64/16z] {
+xPVH3eCm24LxeOh__yLRS4vd2gLjZCko--2BEPHIAjUK_hf809Zv-KG7o_E7k2d62Lw58LgJ26K-EqB_uh4Kvgg6bl_f0DgjXm1Rtu93fy2hNW4cU4q14sVI
+0AYqLJ7vTmBrre2rlCsdoKiWm2SlWGYVd0GGuH7O04BNIuJExwYEQm8YYwhhcxhiwkBp84yxJtVmwH8-VqzLxpwLF5XLgIr5ELEP5v7gYCpbAh6YzUcGZJ8Z
+DgF9B7DiFDddZD28T_eiv10SdYC6WvmsE-2suNFQ71lkVeQTMy97t0n0zXrHl317E6hzYdCC8TDYyzkvJdqyD_hVy_wR_VEf_kt-UxT1VRnkeU06E_zYcio_
+RPkwSVsFGlhh6Zq0
+}
+
+!function $NetworkTiersIMG($scale=1)
+!return "<img data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAACGUlEQVR42u2byXHDMAxFWRoObsEtpA4c3UJaSBUqILWkBUbWMDMcRQshLAQpHv7Ft/8EgljoEGMMd1YYAAaAAWAAsNLH5w9kwkz579ANgMxovCjUBqJgejHOMb0ncA9Ayfi/qHAHIIV6NBa4AGD01dWigWM8VDS+UqUIqPz117rlEWBDaCn7q0Bo7QoskgqAr+9FOCtmQiKEw1JXoHIk3w6l5mFlfK0jCNOVO1ugtgARAOnLxxNNO5EANYssKQBYAOAtWNcJgvklaEVBCYB4BYBSdzlJR0FTABIE0ShoEUCQjALJHGA9WRIpjkqvwTPzaD3LKzH+THq89o8BpQiavJjfioLF7GsxuymRUjgVRLmqTnQfB4ZVAHjTbAwJELoEAAQAMAD0uBkaADQAUJJLl7vBAYCQXG4P4KjMvAsA7A4AJbs+Kx+D9LEg5S2kRiQJwNvsX4dlsbpmlsI8ALNJ3DHLnsVb9QEsABeGDuCwBOYNRa0WlJo9ABcA1Hq5IdUGs6fC3szXAICezJvmgIIowI2RGSapjsw4U6ArAODI/Mn+EJUABK550jxgdRRKzatPjjeOA5SaJw9EdsJeZHGSNj5onV/IaymN1dn5dev4qSwXQOGub+oZADb9VpibA5p/LM29Bbp4LX4CYRJquHw/l995RgcCpbZqp+liLlez2XIC4PABFLophIz/VAUWA5bxt7kBYAAYAG6tXzsmRdaLiVUOAAAAAElFTkSuQmCC{scale="+$scale+"}>"
+!endfunction
+
+GCPEntityColoring(NetworkTiers)
+!define NetworkTiers(e_alias, e_label, e_techn) GCPEntity(e_alias, e_label, e_techn, #4285F4, NetworkTiers, NetworkTiers)
+!define NetworkTiers(e_alias, e_label, e_techn, e_descr) GCPEntity(e_alias, e_label, e_techn, e_descr, #4285F4, NetworkTiers, NetworkTiers)
+!define NetworkTiersParticipant(p_alias, p_label, p_techn) GCPParticipant(p_alias, p_label, p_techn, #4285F4, NetworkTiers, NetworkTiers)
+!define NetworkTiersParticipant(p_alias, p_label, p_techn, p_descr) GCPParticipant(p_alias, p_label, p_techn, p_descr, #4285F4, NetworkTiers, NetworkTiers)
+GCPEntityColoring(Network_Tiers)
+!define Network_Tiers(e_alias, e_label, e_techn) GCPEntity(e_alias, e_label, e_techn, #4285F4, NetworkTiers, Network_Tiers)
+!define Network_Tiers(e_alias, e_label, e_techn, e_descr) GCPEntity(e_alias, e_label, e_techn, e_descr, #4285F4, NetworkTiers, Network_Tiers)
+!define Network_TiersParticipant(p_alias, p_label, p_techn) GCPParticipant(p_alias, p_label, p_techn, #4285F4, NetworkTiers, Network_Tiers)
+!define Network_TiersParticipant(p_alias, p_label, p_techn, p_descr) GCPParticipant(p_alias, p_label, p_techn, p_descr, #4285F4, NetworkTiers, Network_Tiers)

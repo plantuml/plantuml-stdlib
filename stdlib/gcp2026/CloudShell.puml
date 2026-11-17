@@ -1,0 +1,21 @@
+sprite $CloudShell <svg viewBox="0 0 24 24" width="64" height="64"><g><g><path fill="#aecbfa" d="M20.2,2.67H3.8A1.79,1.79,0,0,0,2,4.47v10.8a1.79,1.79,0,0,0,1.8,1.8H10v2.26H8v2h8v-2H14V17.07h6.2a1.79,1.79,0,0,0,1.8-1.8V4.47A1.79,1.79,0,0,0,20.2,2.67Zm-3.53,12h-4v-2h4Zm0-4.54L7.6,13.93V12.07l6.53-2.8L7.6,6.4V4.53l9.07,3.74Z"/><path fill="#4285f4" d="M 10 17.07 L 14 17.07 L 14 19.33 L 10 19.33 L 10 17.07 Z"/><rect fill="#669df6" x="8" y="19.33" width="8" height="2"/></g></g></svg>
+
+sprite $CloudShell_png [64x64/16z] {
+xPR93e0W34IP6fV__s8J3qICT1kZYM6Ef8yk54efGtyGff1mmQUmIBpTWEJnBE-BH-Cz8UcyNHIJBqL8Nar3iNBrXkh5qTk60QmWJ0UY1-6fahQ3hyhePk7j
+Vv3yoJJ7S_wf_47Ldpj_glz0zJzv_zZxtwwZAlN-8Nx-pLAAxvn4fd-_vZ-Odw_FVttGUNv0uF0xoLmbcH-TR5KOVEmpVBmsQzNn1aLSBpV2u8T-fnq
+}
+
+!function $CloudShellIMG($scale=1)
+!return "<img data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAABYklEQVR42u2bsRGDMAxFGU1FVsgKWSGtSlZgBVagYYDMwgqKITThyGEZYoz0i9/BnfVOkr+NqESk8qwKAAAAAAAAAABgXe1rEgfJRTWuPQ3AHLwYkQ6AseAnaQGQNQBjTBoADAA7Uq3QDMoHYFFK7BbAoqmSWwArWdG7BXCiycq6C5DGjmYqj1O2Qdqyohmz4lQfwBoQf8qKIoxQn1gebNEJakHsXVexVpiVfYKsngWiQFgGEHV+tw5gc9u0CoA89gBWBm5mF6CErm/CB5BHJ8hezwKUydzgPuCqN0L8o1xidE0AG2nOZnxAYprbApCwSPZ+GgQA3Afg4ygAFAXA4nyAekSmNxQ8pw5JseXgo8bk5nLYrboTfrYiMWq6z23RASpnTvBWDxQkMbo3A5kblAQAAAAAPwCe7UCP5lshKA6SGIXnefl+0KUAjAHIwSIAAAAAAAD8MgMAAAAAAAAAAHCY3vpPb2kC1MDzAAAAAElFTkSuQmCC{scale="+$scale+"}>"
+!endfunction
+
+GCPEntityColoring(CloudShell)
+!define CloudShell(e_alias, e_label, e_techn) GCPEntity(e_alias, e_label, e_techn, #4285F4, CloudShell, CloudShell)
+!define CloudShell(e_alias, e_label, e_techn, e_descr) GCPEntity(e_alias, e_label, e_techn, e_descr, #4285F4, CloudShell, CloudShell)
+!define CloudShellParticipant(p_alias, p_label, p_techn) GCPParticipant(p_alias, p_label, p_techn, #4285F4, CloudShell, CloudShell)
+!define CloudShellParticipant(p_alias, p_label, p_techn, p_descr) GCPParticipant(p_alias, p_label, p_techn, p_descr, #4285F4, CloudShell, CloudShell)
+GCPEntityColoring(Cloud_Shell)
+!define Cloud_Shell(e_alias, e_label, e_techn) GCPEntity(e_alias, e_label, e_techn, #4285F4, CloudShell, Cloud_Shell)
+!define Cloud_Shell(e_alias, e_label, e_techn, e_descr) GCPEntity(e_alias, e_label, e_techn, e_descr, #4285F4, CloudShell, Cloud_Shell)
+!define Cloud_ShellParticipant(p_alias, p_label, p_techn) GCPParticipant(p_alias, p_label, p_techn, #4285F4, CloudShell, Cloud_Shell)
+!define Cloud_ShellParticipant(p_alias, p_label, p_techn, p_descr) GCPParticipant(p_alias, p_label, p_techn, p_descr, #4285F4, CloudShell, Cloud_Shell)

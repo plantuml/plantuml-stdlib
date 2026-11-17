@@ -1,0 +1,17 @@
+sprite $Dialogflow <svg viewBox="0 0 24 24" width="64" height="64"><g><g><g><path fill="#4285f4" d="M12,12,4,8v6.76a.49.49,0,0,0,.19.39L8.83,17.9a.32.32,0,0,1,.17.29V21.7a.17.17,0,0,0,.26.14l10.51-6.69a.5.5,0,0,0,.23-.42V8Z"/></g></g><path fill="#669df6" d="M12,10l8-4L12.12,2.06a.25.25,0,0,0-.24,0L4,6Z"/></g></svg>
+
+sprite $Dialogflow_png [64x64/16z] {
+xTRH3i8W38NXhYc4zt_YQOm6HYa7JlJ2ZCkHxmTn8HEvnnV7SL0wFyP1wUt2HsyL6hrSwFHImTLmOQYXGgYdXQaE2v0E2gXFr0uITGA9-WSIzGOawWsijBf8
+YuqBjIvbuCkeqEh0kuMh3drNwFN4jmL7JtrJS6Rd_bfevn1V5wupc7yN-kUeVnQyfxWVZDl_eHT3kOxkFQXWmSMfktj7js3popiePEpwNputw1XivGlAzXTt
+VuE9C7xzyvDQlF5PXF4gZ3SHngimVdlnbrTXFBFuFNusJW
+}
+
+!function $DialogflowIMG($scale=1)
+!return "<img data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAABZklEQVR42u3bwRHCIBAF0JTGwVqsg6Mt2A0VpQVMHC46oxOS3f2f5B/2CvkPQYaQqdY6XbkmAQhAAAJA1f05p7UuB9CC169Kpwf4ERwKwRQcAsEYPBSCOXgIxAjBXSFGCu4CMWJwU4iRg5tAnCH4IYizARRXAGKIEjIFCCEKZBEkgCgUf4MAiALbCN0e87tAEJuDL8+Ytj5nL8DacF0qB0L0Bq+tXAFqAMTe4KEAHhBHg0MALCCsgkMB9kIk4/7hAN0Qxv3SAByCONAfHUAXhEE/tAB/IQzbpwf4gHBodxgAzxKAAAQgAAEIQADGZ4Jt88Ie3ve9QNu9MULk0FNhsimBOxYH/xoyxXsBwLQoFoct5i9GGgTVIge5I+S0PmSrUQ+7JWY4Ldxuirnfw0MvciMDnOOmKOOoswKUqFFnBIBdmUcDZMSoswBAP5RAAmSG4CiAxBQ+EiCzBddXYwIQgAAEIIA6vQAN3UH7Kk1pZwAAAABJRU5ErkJggg=={scale="+$scale+"}>"
+!endfunction
+
+GCPEntityColoring(Dialogflow)
+!define Dialogflow(e_alias, e_label, e_techn) GCPEntity(e_alias, e_label, e_techn, #4285F4, Dialogflow, Dialogflow)
+!define Dialogflow(e_alias, e_label, e_techn, e_descr) GCPEntity(e_alias, e_label, e_techn, e_descr, #4285F4, Dialogflow, Dialogflow)
+!define DialogflowParticipant(p_alias, p_label, p_techn) GCPParticipant(p_alias, p_label, p_techn, #4285F4, Dialogflow, Dialogflow)
+!define DialogflowParticipant(p_alias, p_label, p_techn, p_descr) GCPParticipant(p_alias, p_label, p_techn, p_descr, #4285F4, Dialogflow, Dialogflow)

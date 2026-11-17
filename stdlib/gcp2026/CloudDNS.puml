@@ -1,0 +1,21 @@
+sprite $CloudDNS <svg viewBox="0 0 24 24" width="64" height="64"><g><g><g ><path fill="#4285f4" d="M 13 18 L 11 18 L 11 8 L 13 8 L 13 18 Z"/><path fill="#669df6" d="M 2 21 L 22 21 L 22 19 L 2 19 L 2 21 Z"/><path fill="#aecbfa" d="M 10 22 L 14 22 L 14 18 L 10 18 L 10 22 Z"/></g></g><rect fill="#aecbfa" x="2" y="2" width="20" height="6"/><rect fill="#669df6" x="12" y="2" width="10" height="6"/><rect fill="#fff" x="4" y="4" width="2" height="2"/><rect fill="#aecbfa" x="2" y="10" width="20" height="6"/><rect fill="#669df6" x="12" y="10" width="10" height="6"/><rect fill="#fff" x="4" y="12" width="2" height="2"/></g></svg>
+
+sprite $CloudDNS_png [64x64/16z] {
+xPOv3i0W30J1OE3_Bqv42b9WON489Unq5DFOou8nO1mhGYBsfJkH8F8td_Ay-ltd3F_K_6pq9IY469tG38fQyUc6-clfwpupg-Q7_4xmqP-3_PbVTUHlOdzg
+xp_wSuLVbhZQh_-SYq-D_LTJvelFZVoTxk_UFzZ61G
+}
+
+!function $CloudDNSIMG($scale=1)
+!return "<img data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAABD0lEQVR42u3bwQ1FQBDG8S1tD68FLWjB1VELWtCCFrSgBS2MmWRF4jnwnl1i/5IvkXDgd9iZHeFExOUcBwAAAACwTTeI19QpUnVTqvgzAPZwkiJlO6UKAAAA8AdAP4qMO8kGwF527wAAAAAAoAwCAAAAALwMYJkJRIntz5cHK0L0XPfsdi1anjMR+jRTrZFNfDYjMQAAeDhAzAXQ0nQiVUixLoS2MPqIcZRBAAAAAAAGIgAAAAAAv3wa0wzjdyiDAAAAwBsB8p4HMBIDAAAAALg4oQIcLY8egDsBYtThtj/eXDV67619QNmuX2+vir7U4e7QGqVbO0EAAAAgbwD6AACiAJyZM/DbHAAAAABAisyhQZAZCJITcgAAAABJRU5ErkJggg=={scale="+$scale+"}>"
+!endfunction
+
+GCPEntityColoring(CloudDNS)
+!define CloudDNS(e_alias, e_label, e_techn) GCPEntity(e_alias, e_label, e_techn, #4285F4, CloudDNS, CloudDNS)
+!define CloudDNS(e_alias, e_label, e_techn, e_descr) GCPEntity(e_alias, e_label, e_techn, e_descr, #4285F4, CloudDNS, CloudDNS)
+!define CloudDNSParticipant(p_alias, p_label, p_techn) GCPParticipant(p_alias, p_label, p_techn, #4285F4, CloudDNS, CloudDNS)
+!define CloudDNSParticipant(p_alias, p_label, p_techn, p_descr) GCPParticipant(p_alias, p_label, p_techn, p_descr, #4285F4, CloudDNS, CloudDNS)
+GCPEntityColoring(Cloud_DNS)
+!define Cloud_DNS(e_alias, e_label, e_techn) GCPEntity(e_alias, e_label, e_techn, #4285F4, CloudDNS, Cloud_DNS)
+!define Cloud_DNS(e_alias, e_label, e_techn, e_descr) GCPEntity(e_alias, e_label, e_techn, e_descr, #4285F4, CloudDNS, Cloud_DNS)
+!define Cloud_DNSParticipant(p_alias, p_label, p_techn) GCPParticipant(p_alias, p_label, p_techn, #4285F4, CloudDNS, Cloud_DNS)
+!define Cloud_DNSParticipant(p_alias, p_label, p_techn, p_descr) GCPParticipant(p_alias, p_label, p_techn, p_descr, #4285F4, CloudDNS, Cloud_DNS)

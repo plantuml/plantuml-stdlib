@@ -1,0 +1,16 @@
+sprite $Billing <svg viewBox="0 0 24 24" width="64" height="64"><g ><g transform="translate(0.000000, 5.000000)"><path fill="#85A4E6" d="M22.5,15.2h-21c-0.8,0-1.5-0.7-1.5-1.5V0.2c0-0.8,0.7-1.5,1.5-1.5h21 c0.8,0,1.5,0.7,1.5,1.5v13.5C24,14.6,23.3,15.2,22.5,15.2L22.5,15.2z"/><path fill="#5C85DE" d="M22.5,15.2H12V-1.2h10.5c0.8,0,1.5,0.7,1.5,1.5v13.5C24,14.6,23.3,15.2,22.5,15.2 L22.5,15.2z"/><rect y="1" fill="#5C85DE" width="24" height="3"/><rect x="12" y="1" fill="#3367D6" width="12" height="3"/><rect x="2.2" y="5.5" fill="#FFFFFF" width="19.5" height="2.2"/><rect x="2.2" y="10" fill="#5C85DE" width="4.5" height="3"/><rect x="13.5" y="10.8" fill="#FFFFFF" width="1.5" height="1.5"/><rect x="16.5" y="10.8" fill="#FFFFFF" width="1.5" height="1.5"/><rect x="19.5" y="10.8" fill="#FFFFFF" width="1.5" height="1.5"/></g></g></svg>
+
+sprite $Billing_png [64x64/16z] {
+xTP12y0W28PXgOdq__zmNNOPb926axxtqkdP82GaGYYoXrV9gZeuyxuNKVwk-iesBz5Ugod1v_RPvzV7xxnRy7x-zlcBzlCl_i6_q_8zR_7dxp_l_1RZ_cRT
+7ucARNz5AB0E
+}
+
+!function $BillingIMG($scale=1)
+!return "<img data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAAyklEQVR42u3awQnCMBSA4e7kLK6QOXLMCq7gFC6SFVwhGvXQg6Ci+MT3Ff5TobRfIM3hLWOMJXMLAAAAAAAAAABAaoC2P84O58a327YeUS2tXwFuHz+iCgK4NBHCVv5HAGro6kcDzACkB4h+gU2JDQAAAAAAAMgM4CQIAACAe/3bBQAAAAAA/AYBAAAAAMBzAK8+CACAzwA8OsC8ex8AAAA2QQAOQgAArAFq9jG5lIOSZbbr61HZXrMAzJU3LA0AAAAAAAAAAJAd4ATqLsYg3RN2UgAAAABJRU5ErkJggg=={scale="+$scale+"}>"
+!endfunction
+
+GCPEntityColoring(Billing)
+!define Billing(e_alias, e_label, e_techn) GCPEntity(e_alias, e_label, e_techn, #4285F4, Billing, Billing)
+!define Billing(e_alias, e_label, e_techn, e_descr) GCPEntity(e_alias, e_label, e_techn, e_descr, #4285F4, Billing, Billing)
+!define BillingParticipant(p_alias, p_label, p_techn) GCPParticipant(p_alias, p_label, p_techn, #4285F4, Billing, Billing)
+!define BillingParticipant(p_alias, p_label, p_techn, p_descr) GCPParticipant(p_alias, p_label, p_techn, p_descr, #4285F4, Billing, Billing)

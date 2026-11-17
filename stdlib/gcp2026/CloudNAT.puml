@@ -1,0 +1,23 @@
+sprite $CloudNAT <svg viewBox="0 0 24 24" width="64" height="64"><g><path fill="#4285f4" d="M15.3,11.17c0,.27,0,.54,0,.83s0,.56,0,.83h4.5V11.17Z"/><path fill="#4285f4" d="M9.86,5.89H7V7.56h3.93A10,10,0,0,0,9.86,5.89Z"/><path fill="#4285f4" d="M11,16.44H7.6v1.67H9.89A10.7,10.7,0,0,0,11,16.44Z"/><path fill="#4285f4" d="M12,12a7.45,7.45,0,0,0,0-.83H4.5v1.66H12A7.45,7.45,0,0,0,12,12Z"/><path fill="#669df6" d="M3.67,12.48A.48.48,0,1,1,4.14,12,.48.48,0,0,1,3.67,12.48Zm0-2.15A1.67,1.67,0,1,0,5.33,12,1.67,1.67,0,0,0,3.67,10.33Z"/><path fill="#669df6" d="M6.17,17.75a.48.48,0,1,1,.47-.48A.47.47,0,0,1,6.17,17.75Zm0-2.14a1.67,1.67,0,1,0,1.66,1.66A1.67,1.67,0,0,0,6.17,15.61Z"/><path fill="#669df6" d="M6.17,7.2a.48.48,0,1,1,.47-.47A.47.47,0,0,1,6.17,7.2Zm0-2.14a1.67,1.67,0,1,0,0,3.33,1.67,1.67,0,0,0,0-3.33Z"/><path fill="#4285f4" d="M 18.67 14.5 L 18.67 9.5 L 22 12 L 18.67 14.5 Z"/><path fill="#4285f4" d="M9.5,22l-.86-1.5A10.73,10.73,0,0,0,12.83,12a10.89,10.89,0,0,0-4.2-8.5L9.5,2a12.53,12.53,0,0,1,5,10A12.46,12.46,0,0,1,9.5,22Z"/></g></svg>
+
+sprite $CloudNAT_png [64x64/16z] {
+xPVX3e8m38JNRio-_nCh6onkdORp5F_Gn4H8lgKjrok4SCLF8d6u6dU0cMKcUrk3vJDxGFhx0I0a8iG1ajTebncieE8vQuag0YI1bOsFtsr_U8ebK79Vax2z
+z-MV0ho4s7ZRAZYSGDpglrbB844TsFXk3942QWV7EOGq8Cu7g3ci2IZ9qqv26M7FwxoQvy5xsm2T2Yhx9_UQz_tOX1FLHUFt6zKLr0rk4Q-vQFnmFmt2bvB4
+SRwh8PRQCJvDZEVJ_FV-oS7-Uq75b_YCJrC1CVf1z7lk_91R4FGFDuQGVybelw1_alwzTFiFtn_3_eFtry0hkZsMRlybU7-x_i7BQu9ZskFUdxxv2ak-F_uN
+hpmvzjG72Flz4ZHSSKBS0G
+}
+
+!function $CloudNATIMG($scale=1)
+!return "<img data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAB9klEQVR42u2by5HDIAyGKU2HtLAtbB06bgvphorSAmtn7RmbRYCRAwh0+C+ZSTz6Igk9sHHOmZllFIACUAAK4NN6/LxwWgCL8bDI9QqhBgB3kJ0KwPqvewDemh5AT55QJQESEHCqU6BXCNUeFIEgE8D387UKdklNiqXGr0a7gHIg2J5C4U7j3/r6K3xC2gGYnkKhBIBvNJ4APIPGnY6+Q3XY3Au4AIJeQQA4GUmEAkgDANtnmAnAJUIBJQDAaA5IA8DEqdA9ABMDUNgpNgsDTg0QSobcbrF6XcD68qEYumNe0CQMmjcjRDKEaQAQYWBnA4CcPLB5kWgAwAQApaGTW/sDN9l9Mg94APEWAJHzHivlAWB4kM0NiStNz7Hawwfd9V1SCsDmHanfoYYtUAQg0PL+K38T5W62MgFwnoElANBveHyvqAWAqhYvigyJHAAYygnCACA3BNxUIZBKgrlD0IanQHZPEQFA9v4g4BjEOwshc2X0PUwhJLQUnrcZGq0dRh2ICBmJATdBihyJcXaD4oeiqbH4Pp2JSfRYfDHSFu4Gh1mMcHaDQ6zGOABSHZ6I7bAt3A3iKOvxoiSYOPflXJC44YqME31FhlMIDXNJSq/J6UVJvSo7hPGtAHT14kTtYUd3b43oKzO1hp762pwCUAAKQAF0qF+BvIKvxTknhQAAAABJRU5ErkJggg=={scale="+$scale+"}>"
+!endfunction
+
+GCPEntityColoring(CloudNAT)
+!define CloudNAT(e_alias, e_label, e_techn) GCPEntity(e_alias, e_label, e_techn, #4285F4, CloudNAT, CloudNAT)
+!define CloudNAT(e_alias, e_label, e_techn, e_descr) GCPEntity(e_alias, e_label, e_techn, e_descr, #4285F4, CloudNAT, CloudNAT)
+!define CloudNATParticipant(p_alias, p_label, p_techn) GCPParticipant(p_alias, p_label, p_techn, #4285F4, CloudNAT, CloudNAT)
+!define CloudNATParticipant(p_alias, p_label, p_techn, p_descr) GCPParticipant(p_alias, p_label, p_techn, p_descr, #4285F4, CloudNAT, CloudNAT)
+GCPEntityColoring(Cloud_NAT)
+!define Cloud_NAT(e_alias, e_label, e_techn) GCPEntity(e_alias, e_label, e_techn, #4285F4, CloudNAT, Cloud_NAT)
+!define Cloud_NAT(e_alias, e_label, e_techn, e_descr) GCPEntity(e_alias, e_label, e_techn, e_descr, #4285F4, CloudNAT, Cloud_NAT)
+!define Cloud_NATParticipant(p_alias, p_label, p_techn) GCPParticipant(p_alias, p_label, p_techn, #4285F4, CloudNAT, Cloud_NAT)
+!define Cloud_NATParticipant(p_alias, p_label, p_techn, p_descr) GCPParticipant(p_alias, p_label, p_techn, p_descr, #4285F4, CloudNAT, Cloud_NAT)
