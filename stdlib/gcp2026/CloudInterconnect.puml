@@ -1,0 +1,21 @@
+sprite $CloudInterconnect <svg viewBox="0 0 24 24" width="64" height="64"><g><g ><path fill="#4285f4" d="M 2 13 L 6 13 L 6 11 L 2 11 L 2 13 Z"/><path fill="#aecbfa" d="M 15 17 L 5 17 L 5 7 L 15 7 L 15 17 Z"/><path fill="#4285f4" d="M 17.33 13 L 22 13 L 22 11 L 17.33 11 L 17.33 13 Z"/><path fill="#669df6" d="M 8 3 L 8 5 L 17 5 L 17 19 L 8 19 L 8 21 L 19 21 L 19 19 L 19 5 L 19 3 L 8 3 Z"/><path fill="#669df6" d="M 15 17 L 10 17 L 10 7 L 15 7 L 15 17 Z"/></g></g></svg>
+
+sprite $CloudInterconnect_png [64x64/16z] {
+xPPB2e0m34IRJzNxdzY50zeYCI2As7dhUH3IGgOKGZfi2X3wbyWvDUj7SutYjwjB-M87l7ar-lGVyzL1nf-HrTttPQEcV8H_v2j8xSyGvl-Z_p7_xltY_G_h
+ax1_ljHVoIYi
+}
+
+!function $CloudInterconnectIMG($scale=1)
+!return "<img data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAA4ElEQVR42u3bwQ2DIABAUUbj0BW6QlfolaMruIIreOkAncUVKA6ADUYNTd/hH03gxcABCDnn8M8FAAAAAAAAAMChPcYllfLFRQAAAADoBWAtntira4Czq/xhAAAAuAhgeufY2jDnXQterwCplFsqALu2NwAAAAAAAAAAAABXAtyGJZZSrXFum/wVAPfS1pjXObUArB/kWsPULcBWAAAAaFsEq3W6CKYv47YNAgAAAAAAAAAAADgAIOw5GntOS3MORwEAAPBzACdfkIquyQEAAADAP2+DXowAAAAAAAAAh/QB7w6EdooGVdwAAAAASUVORK5CYII={scale="+$scale+"}>"
+!endfunction
+
+GCPEntityColoring(CloudInterconnect)
+!define CloudInterconnect(e_alias, e_label, e_techn) GCPEntity(e_alias, e_label, e_techn, #4285F4, CloudInterconnect, CloudInterconnect)
+!define CloudInterconnect(e_alias, e_label, e_techn, e_descr) GCPEntity(e_alias, e_label, e_techn, e_descr, #4285F4, CloudInterconnect, CloudInterconnect)
+!define CloudInterconnectParticipant(p_alias, p_label, p_techn) GCPParticipant(p_alias, p_label, p_techn, #4285F4, CloudInterconnect, CloudInterconnect)
+!define CloudInterconnectParticipant(p_alias, p_label, p_techn, p_descr) GCPParticipant(p_alias, p_label, p_techn, p_descr, #4285F4, CloudInterconnect, CloudInterconnect)
+GCPEntityColoring(Cloud_Interconnect)
+!define Cloud_Interconnect(e_alias, e_label, e_techn) GCPEntity(e_alias, e_label, e_techn, #4285F4, CloudInterconnect, Cloud_Interconnect)
+!define Cloud_Interconnect(e_alias, e_label, e_techn, e_descr) GCPEntity(e_alias, e_label, e_techn, e_descr, #4285F4, CloudInterconnect, Cloud_Interconnect)
+!define Cloud_InterconnectParticipant(p_alias, p_label, p_techn) GCPParticipant(p_alias, p_label, p_techn, #4285F4, CloudInterconnect, Cloud_Interconnect)
+!define Cloud_InterconnectParticipant(p_alias, p_label, p_techn, p_descr) GCPParticipant(p_alias, p_label, p_techn, p_descr, #4285F4, CloudInterconnect, Cloud_Interconnect)

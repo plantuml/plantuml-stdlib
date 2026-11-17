@@ -1,0 +1,22 @@
+sprite $ToolsForPowershell <svg viewBox="0 0 24 24" width="64" height="64"><g><g ><path fill="#669df6" d="M 6.68 16.3 L 4.27 12.04 L 6.68 7.79 L 4.42 7.79 L 2 12.04 L 4.42 16.3 L 6.68 16.3 Z"/><path fill="#4285f4" d="M 4.57 12.56 L 4.27 12.04 L 2 12.04 L 3.11 14.01 L 4.57 12.56 Z"/><path fill="#aecbfa" d="M15,6.37H9.12L5.81,12l3.31,5.59H15L18.29,12,15,6.37Zm-2.93,8.36a2.64,2.64,0,1,1,2.66-2.64,2.65,2.65,0,0,1-2.66,2.64Z"/><path fill="#aecbfa" d="M 4.27 12.06 L 6.68 7.79 L 4.42 7.79 L 2 12.06 L 3.11 14.03 L 4.27 12.06 Z"/><path fill="#669df6" d="M15,6.45h0L13.3,9.78a2.66,2.66,0,0,1-1.25,5,2.62,2.62,0,0,1-1.18-.27L9.12,17.63H15L18.29,12,15,6.45Z"/><path fill="#669df6" d="M 17.32 7.79 L 19.73 12.04 L 17.32 16.3 L 19.59 16.3 L 22 12.04 L 19.59 7.79 L 17.32 7.79 Z"/><path fill="#4285f4" d="M 19.43 11.53 L 19.73 12.04 L 22 12.04 L 20.89 10.07 L 19.43 11.53 Z"/><path fill="#aecbfa" d="M 19.73 12.02 L 17.32 16.3 L 19.59 16.3 L 22 12.02 L 20.89 10.05 L 19.73 12.02 Z"/></g></g></svg>
+
+sprite $ToolsForPowershell_png [64x64/16z] {
+xLL94iCW3CCi7lx_uXPe08FDCkdHEcIO15b2W6ECGg5G_1UEmb_IOU07V2UF2AVAwM4dUSm686FfMP17j6bA6g1RU0Q6dkMB0QmZOSbSU1wRh6nW9ryYT7Lq
+85-c_UJNA-32gwKVlfCDDCR3jjt7oO0NvM5KRwQBWRo73dRXaGb03SIXF1SUhTz7234CzO7PEu4FH4rERyK7bX_YeNypvvDUHIG6UBvXxQSBMqyLLy1r-yV9
+FuTKs43OoNyDj6Cv5O1rUFqAIOGMkj9hUT9QkdiR0YApTrmBwoucQHk8s_1u0s7WjyOgz3zgu5AUT6SGv2_-7wCyNFw_EFSNy6_SAnGAnG4-
+}
+
+!function $ToolsForPowershellIMG($scale=1)
+!return "<img data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAACPElEQVR42u2Zu3HDMAyGNRqKrJAVsoJbllzBK2gFNxogs2gFWHTsS0TzAYKgz7r8BQrbPFP8frwITcw8/WebAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAALG3+vhlr7XxhPs3roQG4HgCnmfnrvPIhAVioHw4fzM9MbwHgfiiKbXtYSqxdLNR/WPz/23eUstEAci5N0TqyUv9hWy5wCQCcMDcEQOFQLrGWLdX/hfDkBZyxIQByD2ya+FLq59QNB+31AlP1exPfj/prCUDwAooguMxasgSQfNiOsufuUP8Cpor6yYRY8AI2ATAg8RX3KyhaCgW1FxR/3BRpUb928EUalxIIXpAQg0d1AWhQ3/Uqn4DQ6gVPZTFXpUQACglNk/hca4NSqPPZcvf4/sOvYvivKnuqVlaRECkcPvQRUgFysS8te6LEp+3TJQDiRBdCo0WEprr/6VdV3X8lAGneag6B4FbBveK4e6cQkOYtKYCdF9wPn2wzRwAoNTi5JKipQLUyeLvSCjYm6zAQ9AJOe1lrATDl2lOFFzjbEijb31dGatWHCfdwYfIxgSCs/12Jr/kyJL1sCBPikpoghba7ADu7b0u73gOAhHFY9QI/72Z9u8+mZe/CZDoQacjEpBx2cGv/ryl7PQDEM7jWUZfY5lU6eB0zFC2UpqoXDFCfLC5emuZENI6OY7NX/UyjlhrRv9+LEQP16dCvxixd/3Bvh32/+ng9DgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAYGlXsYkukyeNQbEAAAAASUVORK5CYII={scale="+$scale+"}>"
+!endfunction
+
+GCPEntityColoring(ToolsForPowershell)
+!define ToolsForPowershell(e_alias, e_label, e_techn) GCPEntity(e_alias, e_label, e_techn, #4285F4, ToolsForPowershell, ToolsForPowershell)
+!define ToolsForPowershell(e_alias, e_label, e_techn, e_descr) GCPEntity(e_alias, e_label, e_techn, e_descr, #4285F4, ToolsForPowershell, ToolsForPowershell)
+!define ToolsForPowershellParticipant(p_alias, p_label, p_techn) GCPParticipant(p_alias, p_label, p_techn, #4285F4, ToolsForPowershell, ToolsForPowershell)
+!define ToolsForPowershellParticipant(p_alias, p_label, p_techn, p_descr) GCPParticipant(p_alias, p_label, p_techn, p_descr, #4285F4, ToolsForPowershell, ToolsForPowershell)
+GCPEntityColoring(Tools_For_Powershell)
+!define Tools_For_Powershell(e_alias, e_label, e_techn) GCPEntity(e_alias, e_label, e_techn, #4285F4, ToolsForPowershell, Tools_For_Powershell)
+!define Tools_For_Powershell(e_alias, e_label, e_techn, e_descr) GCPEntity(e_alias, e_label, e_techn, e_descr, #4285F4, ToolsForPowershell, Tools_For_Powershell)
+!define Tools_For_PowershellParticipant(p_alias, p_label, p_techn) GCPParticipant(p_alias, p_label, p_techn, #4285F4, ToolsForPowershell, Tools_For_Powershell)
+!define Tools_For_PowershellParticipant(p_alias, p_label, p_techn, p_descr) GCPParticipant(p_alias, p_label, p_techn, p_descr, #4285F4, ToolsForPowershell, Tools_For_Powershell)

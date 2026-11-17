@@ -1,0 +1,22 @@
+sprite $IntegrationServices <svg viewBox="0 0 512 512" width="64" height="64"><g><path d="M346.683,112.611l-.039-75.171c-.005-8.834-7.167-15.992-16-15.992h-.008c-8.837.004-15.997,7.172-15.992,16.008l.039,75.155H118c-17.673,0-32,14.327-32,32v111.865c0,89.085,76.262,161.562,170,161.562s170-72.477,170-161.562v-111.865c0-17.673-14.327-32-32-32h-47.317ZM394,256.477c0,71.44-61.906,129.562-138,129.562s-138-58.121-138-129.562v-111.865h276v111.865Z" fill="#4285f4"/><path d="M314.644,144.611v-32h-117.294l-.039-75.171c-.005-8.834-7.167-15.992-16-15.992h-.008c-8.837.004-15.997,7.172-15.992,16.008l.039,75.155h-47.35c-17.673,0-32,14.327-32,32v111.865c0,83.959,67.741,153.155,154.007,160.841v56.679c0,8.616,6.621,16.029,15.228,16.433,9.188.432,16.772-6.889,16.772-15.982v-89.277c-6.594.627-8.014.652-16,.867h-.007c-76.094,0-138-58.121-138-129.562v-111.865h196.644,0Z" fill="#9aa0a6"/></g></svg>
+
+sprite $IntegrationServices_png [64x64/16z] {
+xTRh3eCW30LWBarttl-9fvWHXz8MZ8bRoa-Jxr0WGaDuueZ7Jsc0CtEh0TXdNtnJ0Iq-kNT_frzTPxnG1q_mlU_-26pr69xUwgE-kUxTkx_9vukUB_Zm1Azk
+uDf8K9ZVG0WFWMK1mlrTl580zSktd622s4UH5W1fUdq5WDB6PJ40K5_X4i029-Lyje1ullCw_mIq2Gb6NWCuruX4iFF3Gwxs3VqIlln80x-lOKANX5Wz3UEn
+AyNzl_fiUb9_URm1
+}
+
+!function $IntegrationServicesIMG($scale=1)
+!return "<img data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAABlElEQVR42u3byw2DMAwGYEbLobN0hV59ZIWs0BV6YYCu0BW6gkukIKHwaMF2Esp/sHpD8pcQim0aZm7OHA0ADC7q/T2EC7/Sa13adwh3GICYPI9Ckrzrg4c4CoBLAJwAgMYAFjsBAAAAAAAAAAAAAAAAggTN4tq+OAFYiy68N5gCtBmT3wEwhB1AzuQFAGwCkHv1qwPQPNy0AwAAAAAAAAAAAAAAAAAAAAAAkAugfz2mUwG0/jGpB5wKYK4iBIA6ki8HUMNBmA5RhFK6JUB6DlBt239r72BrWXyyC/rD8bDbf29jhGvZBTOdIzIHWCiP13Dvs3lnaLQLuhTh5p9Ft/6e1ZcAFL0VNFpi4u5wSDg3wsLKi7rG0lY4LbS1ciYvQteYB1hCcIanvUryagMSKwjSAQm30gRVud00J0PoS7eXvmEMg9ErK66avPqIjKSFbjUAUWpcngwATF68zB5Z4Y/Rlnmi3Iln/WIkQrgfASieA//9yUwtxRUAAAAAAAAAAABQBIBq6C8UrenH0ho+ngZAwfgA9lnhAbECXAUAAAAASUVORK5CYII={scale="+$scale+"}>"
+!endfunction
+
+GCPEntityColoring(IntegrationServices)
+!define IntegrationServices(e_alias, e_label, e_techn) GCPEntity(e_alias, e_label, e_techn, #4285F4, IntegrationServices, IntegrationServices)
+!define IntegrationServices(e_alias, e_label, e_techn, e_descr) GCPEntity(e_alias, e_label, e_techn, e_descr, #4285F4, IntegrationServices, IntegrationServices)
+!define IntegrationServicesParticipant(p_alias, p_label, p_techn) GCPParticipant(p_alias, p_label, p_techn, #4285F4, IntegrationServices, IntegrationServices)
+!define IntegrationServicesParticipant(p_alias, p_label, p_techn, p_descr) GCPParticipant(p_alias, p_label, p_techn, p_descr, #4285F4, IntegrationServices, IntegrationServices)
+GCPEntityColoring(Integration_Services)
+!define Integration_Services(e_alias, e_label, e_techn) GCPEntity(e_alias, e_label, e_techn, #4285F4, IntegrationServices, Integration_Services)
+!define Integration_Services(e_alias, e_label, e_techn, e_descr) GCPEntity(e_alias, e_label, e_techn, e_descr, #4285F4, IntegrationServices, Integration_Services)
+!define Integration_ServicesParticipant(p_alias, p_label, p_techn) GCPParticipant(p_alias, p_label, p_techn, #4285F4, IntegrationServices, Integration_Services)
+!define Integration_ServicesParticipant(p_alias, p_label, p_techn, p_descr) GCPParticipant(p_alias, p_label, p_techn, p_descr, #4285F4, IntegrationServices, Integration_Services)

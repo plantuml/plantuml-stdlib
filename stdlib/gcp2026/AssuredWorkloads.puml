@@ -1,0 +1,23 @@
+sprite $AssuredWorkloads <svg viewBox="0 0 24 24" width="64" height="64"><path fill="#4285f4" d="M7.63,18.47V9.29H9.49v9.18Zm-3.75,0V9.29H5.69v9.18Zm7.55,0V9.29h1.8v9.18ZM16.9,9.29v4.27l-1.73.8V9.29Z"/><path fill="#aecbfa" d="M17.18,17.56l-.44.44L18,19.29l.59-.61.19-.19v3l-.19.28h-.06a3.81,3.81,0,0,1-1-.45h0a4.7,4.7,0,0,1-2.06-3.5V15.19l3.17-1.45.19.37V17.6l-.19.19L18,18.4Z"/><path fill="#669df6" d="M18.58,13.74v4l.19-.19,1.29-1.33.43.44-1.72,1.78-.19.19v3.06h.06a3.75,3.75,0,0,0,1-.45s0,0,0,0h0a4.67,4.67,0,0,0,2.06-3.5h0v-.15s0,0,0,0h0V15.19Z"/><path fill="#669df6" d="M15,19.5H10.39V17.87h4.17v.06A5.34,5.34,0,0,0,15,19.5Z"/><path fill="#aecbfa" d="M9.27,6.52a1.12,1.12,0,0,0,1.12,1.12v2H2.25V8l8.14-5.71V5.39A1.13,1.13,0,0,0,9.27,6.52Z"/><path fill="#669df6" d="M18.53,8V9.59H10.39V7.64a1.13,1.13,0,0,0,0-2.25V2.25Z"/><path fill="#aecbfa" d="M 10.39 17.86 L 10.39 19.5 L 2.25 19.5 L 2.25 17.88 L 10.39 17.86 Z"/></svg>
+
+sprite $AssuredWorkloads_png [64x64/16z] {
+xPVH3eCW34MfjtRx_oyUWW8YYfGbRWdtgPgSKYoqrPYX7zLCFJI11NfyWkL5j240djU5G0YyY6xnoBU6GCXucHMBftp3PwI84r5qWDjPs-IUfIq48ECX3I5G
+YllbaXrKCucz3kjVXq0PxWBOBt_b00LDKX3TnjFyrnpyE-_ArQ9eJSOUOBoibfFihSKupI2_hQ8rkVCStaLhy8D_X6VtYfGyhpUDpsxGDH-A79-LiIgVTbKq
+yrJhgXN-K5KUvD77-xwavjU-fEMtjjvKVps_935C1KtrV-NTwI_a_mPljgPUwYDLVjs0TS2bz5Tvv5EXOYv5trHQktytfplzLEqTi1vtMs3f-Qqmn3tqqBVr
+0G
+}
+
+!function $AssuredWorkloadsIMG($scale=1)
+!return "<img data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAB/ElEQVR42u2bsZXDIAyGGU3FrXArZIVrVXqFrJAV0mSAzJIVFPDZeYSHARtkG1DxVyG86EMBIQlFRKpnKQEgAASAABAAO+j2JDXciC7XF3QHQBuPWjTcRwBGqNU+ALPqWg9jvANgFjQLQBsMs+EBAKM3NAVgWnV0jQ8AmFU/AN+qrwBwiDcU3+gyARg99vSGUi5PKUoEsOsGyb7qllADAGPYCgh4SgDu8Zagr+8bF18BgdUbim90PvnmmYIhOtobOF3+4/oLAGAlAJbjsvhGx+gBLN7AtepBL8hY/S8IJbyBbdUXjkEsYHjRDTIEgBgAEAOALAgCQAAIgGDA85FJZ/05cscsjbvex5MErFAYfvUurkW2pp0dbC2MA0f8gdDP8EItspU6Tgs848AzTqWMOyQSFAACQAAIAAEgAASAABAAxwJA31wmxG4dAPo+mxO01iULmgOQUnv03DKT02XVANhYdI2CqAJALDGbU3StBUB2okUAdAYAewbgrTz1AmCx8tQDgGDpvcqscACAezRCrO+gyrpACIAVH0SN3xQHnAwAhLpOEjpOoNbKEEQq1f89yPF5qy2NYcrvicyLTbTLh3qTcjpQq+rt33IbbO7BhK89L6cJu8pXHi4E312g+Scz9t/BAYAsKbGTQlBTC+7mrjF5NCUABIAAEAA96w0Y1nASRG892QAAAABJRU5ErkJggg=={scale="+$scale+"}>"
+!endfunction
+
+GCPEntityColoring(AssuredWorkloads)
+!define AssuredWorkloads(e_alias, e_label, e_techn) GCPEntity(e_alias, e_label, e_techn, #4285F4, AssuredWorkloads, AssuredWorkloads)
+!define AssuredWorkloads(e_alias, e_label, e_techn, e_descr) GCPEntity(e_alias, e_label, e_techn, e_descr, #4285F4, AssuredWorkloads, AssuredWorkloads)
+!define AssuredWorkloadsParticipant(p_alias, p_label, p_techn) GCPParticipant(p_alias, p_label, p_techn, #4285F4, AssuredWorkloads, AssuredWorkloads)
+!define AssuredWorkloadsParticipant(p_alias, p_label, p_techn, p_descr) GCPParticipant(p_alias, p_label, p_techn, p_descr, #4285F4, AssuredWorkloads, AssuredWorkloads)
+GCPEntityColoring(Assured_Workloads)
+!define Assured_Workloads(e_alias, e_label, e_techn) GCPEntity(e_alias, e_label, e_techn, #4285F4, AssuredWorkloads, Assured_Workloads)
+!define Assured_Workloads(e_alias, e_label, e_techn, e_descr) GCPEntity(e_alias, e_label, e_techn, e_descr, #4285F4, AssuredWorkloads, Assured_Workloads)
+!define Assured_WorkloadsParticipant(p_alias, p_label, p_techn) GCPParticipant(p_alias, p_label, p_techn, #4285F4, AssuredWorkloads, Assured_Workloads)
+!define Assured_WorkloadsParticipant(p_alias, p_label, p_techn, p_descr) GCPParticipant(p_alias, p_label, p_techn, p_descr, #4285F4, AssuredWorkloads, Assured_Workloads)

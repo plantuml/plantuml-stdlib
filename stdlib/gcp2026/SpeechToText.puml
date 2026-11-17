@@ -1,0 +1,21 @@
+sprite $SpeechToText <svg viewBox="0 0 24 24" width="64" height="64"><g><g><rect fill="#4285f4" x="11" y="2" width="2" height="20"/><g ><rect fill="#4285f4" x="7" y="8" width="2" height="8"/><rect fill="#4285f4" x="15" y="8" width="2" height="8"/><rect fill="#4285f4" x="3" y="5" width="2" height="14"/><rect fill="#4285f4" x="19" y="5" width="2" height="14"/><rect fill="#669df6" x="11" y="2" width="2" height="10"/><rect fill="#669df6" x="7" y="8" width="2" height="4"/><rect fill="#669df6" x="15" y="8" width="2" height="4"/><rect fill="#669df6" x="3" y="5" width="2" height="7"/><rect fill="#669df6" x="19" y="5" width="2" height="7"/></g></g></g></svg>
+
+sprite $SpeechToText_png [64x64/16z] {
+xTBH2e0W38NXQIAz_nFNTj543apAoE3yLp7tNIqHzbgRbXxuUaR_1mzF3NsorTvNj8gzhTAlwflxDjx_Zz3xU-FXEptz9BzhMR-oVTgmN4FyJay_tKlMUk_3
+q7i53UbNz7xVoEDL6FRZqN_hno_DRdO0
+}
+
+!function $SpeechToTextIMG($scale=1)
+!return "<img data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAA50lEQVR42u3bsRHCIBQGYEajcIWs4BwpXcElswKed1qY4B0oRLx8xd+Rx8vX8AoIKaVw5AQAAAAA2DvTdZnP28TDADx+OK0CAAAAAAAAjAaQOa/n6ctmewDcv8/12gIgdWi2F8CmVwAAAAAAAGAHgJpzuAagdA4ZBaCogUqA5vsDAAAAAAAAAAAAKAE4XZaUScysi7m1b2rOJTV77Q8AAAAAAAAAAACgMcCziZc0AIiZhOEAalIDUFETAAAAAAAA6ABQdA4PAFA8h/z8mlwPgL+6JwgAAAAAAA4O0Hy28GwOAAAAAD7IDYawaUJlrW/zAAAAAElFTkSuQmCC{scale="+$scale+"}>"
+!endfunction
+
+GCPEntityColoring(SpeechToText)
+!define SpeechToText(e_alias, e_label, e_techn) GCPEntity(e_alias, e_label, e_techn, #4285F4, SpeechToText, SpeechToText)
+!define SpeechToText(e_alias, e_label, e_techn, e_descr) GCPEntity(e_alias, e_label, e_techn, e_descr, #4285F4, SpeechToText, SpeechToText)
+!define SpeechToTextParticipant(p_alias, p_label, p_techn) GCPParticipant(p_alias, p_label, p_techn, #4285F4, SpeechToText, SpeechToText)
+!define SpeechToTextParticipant(p_alias, p_label, p_techn, p_descr) GCPParticipant(p_alias, p_label, p_techn, p_descr, #4285F4, SpeechToText, SpeechToText)
+GCPEntityColoring(Speech_To_Text)
+!define Speech_To_Text(e_alias, e_label, e_techn) GCPEntity(e_alias, e_label, e_techn, #4285F4, SpeechToText, Speech_To_Text)
+!define Speech_To_Text(e_alias, e_label, e_techn, e_descr) GCPEntity(e_alias, e_label, e_techn, e_descr, #4285F4, SpeechToText, Speech_To_Text)
+!define Speech_To_TextParticipant(p_alias, p_label, p_techn) GCPParticipant(p_alias, p_label, p_techn, #4285F4, SpeechToText, Speech_To_Text)
+!define Speech_To_TextParticipant(p_alias, p_label, p_techn, p_descr) GCPParticipant(p_alias, p_label, p_techn, p_descr, #4285F4, SpeechToText, Speech_To_Text)

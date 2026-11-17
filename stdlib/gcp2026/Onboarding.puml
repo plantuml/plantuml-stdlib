@@ -1,0 +1,18 @@
+sprite $Onboarding <svg viewBox="0 0 24 24" width="64" height="64"><g ><g transform="translate(0.000000, 2.000000)"><path fill="#5C85DE" d="M 21.2 7.6 L 21.2 14.8 L 23.3 14.8 L 23.3 6.4 Z"/><path fill="#3367D6" d="M 23.3 6.4 L 21.2 7.6 L 21.2 8.6 Z"/><path fill="#5C85DE" d="M 0.4 6.4 L 11.9 12.7 L 21.2 7.6 L 23.3 6.4 L 11.9 0.2 Z"/><path fill="#85A4E6" d="M 0.4 6.4 L 11.9 12.7 L 11.9 0.2 Z"/><path fill="#5C85DE" d="M 4.6 10.8 L 4.6 14.9 L 11.9 18.9 L 19.1 14.9 L 19.1 10.8 L 11.9 14.8 Z"/><path fill="#85A4E6" d="M 4.6 14.9 L 11.9 18.9 L 11.9 14.8 L 4.6 10.8 Z"/></g></g></svg>
+
+sprite $Onboarding_png [64x64/16z] {
+xTVBjeCW30LG3VSa-Fy_V6lL1KWI7auwa77tiGO8k2pl-DqHE3pG1B38RC8AVBq8pUhJJoGG2Z-OSEdC3vGX08hlJI30y3q9A-3uLXdkklPk0g73cmcArhrQ
+XW1q-pg1W25V9gp0i4zbSBJhpmIN-rx4V_c6Zr6Ul7_SpkTx2QR_sxQOl9bWpZ_jN9eho5n_5ENcUzV_iN98QgyaL1xNBrNVl_yDVqzWQ-UQlamm-v_Zywam
+-w_coUx_cRRh3rG9N1HzrzUcKJqGtFClf4rdU63D4pZNb6zQqnS9sVbFvQPtF7YjvmJIxuj2fXSVy6L2K9fMowUf26hJQ_kZa6GqpHx_IR2QxaBxM5e1B2C7
+SDq5MOOk05K2Z-cgXx4CNu2A19Q92rYMm3CwcmgMoGleMKYMsGlmaS3J-YW3ovCFWCz_UB-Xtk6DVm
+}
+
+!function $OnboardingIMG($scale=1)
+!return "<img data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAACWklEQVR42u2by5mDMAyE6Wkb8GFb2Ba2Ba4caYEWUkUaoYW04FgEJywLjmxLsiE66MslB+bHnvFDNNba5pOrUQAKQAEoAAUgXO0wNv0wdu7X/vRj5+pzAPSXW+fKQs0AfHWnBuAEGy98B4AvcyoAbqg74aNdiw8AEAXB+cb/DPcEACIgGN74e+GRAFiNktzZMcITALCBIHd2ZgDkiUHu7EIAyPyB3NmFAWSDIHf2QgCSQZA7e2EA0UZJ7uwVAIgCQe7sFQFAJQa5s1cIIOgP5M5eMYBNEOJvvQIAU/0fAZebyLwvCqAd7Xe7A+AFQm4qSAIA4V+/gRGwEYHmFADasQPhk/g2AoBEKnCvA+D5nXCzFh8FYJESh1wJAoC1+CQAz5VhvXuBzZUfxB4qBUpsiogAXENLXhYAVIkhcR7ACiA3MTIAoLe9IgBSEyPlTDD2mUQBxCaGxKkwOYDZ/EgSAwEAJRz+szc6OAB4AXC5mZUYAQDXGOFrUVIAHjXg5uVWYuTcDS6FlwXwKhObGCsAJmdO1wDATm94wAkBYL4/IFd4RQCe0wJgkFxqzvP8GnPIUR7AwigxiYExuKMC8FMDlRipwg8AAJcYqcKPA2AnMTAGdzYAU2JAJHKc9G5MKbOuHAAN1aEp8YGIEe0PaAkuUogAmKIdIjmHppkATFU9QhB1QgC6arvEHltgPIhIACydYsV6BCMAsPYSc7fHBhMDAYC9W1SqO3wzMQIAxPqFpTvFzRsAoo3Sxb4X8Ea5AFCkVb7oFyOQGPNSWD+ZUQAKQAEoAAWgABRAkboDNu3L9pntJFcAAAAASUVORK5CYII={scale="+$scale+"}>"
+!endfunction
+
+GCPEntityColoring(Onboarding)
+!define Onboarding(e_alias, e_label, e_techn) GCPEntity(e_alias, e_label, e_techn, #4285F4, Onboarding, Onboarding)
+!define Onboarding(e_alias, e_label, e_techn, e_descr) GCPEntity(e_alias, e_label, e_techn, e_descr, #4285F4, Onboarding, Onboarding)
+!define OnboardingParticipant(p_alias, p_label, p_techn) GCPParticipant(p_alias, p_label, p_techn, #4285F4, Onboarding, Onboarding)
+!define OnboardingParticipant(p_alias, p_label, p_techn, p_descr) GCPParticipant(p_alias, p_label, p_techn, p_descr, #4285F4, Onboarding, Onboarding)

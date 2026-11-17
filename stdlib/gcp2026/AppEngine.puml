@@ -1,0 +1,23 @@
+sprite $AppEngine <svg viewBox="0 0 24 24" width="64" height="64"><g><g ><path fill="#4285f4" d="M14.3,10l-1.22,1.22A1.71,1.71,0,0,1,12,14.23a1.74,1.74,0,0,1-1.33-.64L9.45,14.81A3.43,3.43,0,1,0,14.3,10Z"/><path fill="#aecbfa" d="M12,6.26a6.25,6.25,0,1,0,6.25,6.25A6.25,6.25,0,0,0,12,6.26M12,17a4.45,4.45,0,1,1,4.44-4.44A4.44,4.44,0,0,1,12,17"/><path fill="#669df6" d="M21.62,11.9l-2.56-.81a7.1,7.1,0,0,1,.17,1.53,7.62,7.62,0,0,1-.08,1.08h2.47a.44.44,0,0,0,.38-.42v-1a.44.44,0,0,0-.38-.42"/><path fill="#669df6" d="M12,5.52a7.48,7.48,0,0,1,1.5.15l-.92-2.55c-.07-.22-.21-.38-.42-.38h-.38a.45.45,0,0,0-.42.38l-.8,2.54A7.64,7.64,0,0,1,12,5.52"/><path fill="#669df6" d="M4.77,12.62a7.1,7.1,0,0,1,.17-1.53l-2.56.81a.44.44,0,0,0-.38.42v1a.44.44,0,0,0,.38.42H4.85a7.62,7.62,0,0,1-.08-1.08"/><path fill="#aecbfa" d="M12,10a2.5,2.5,0,1,0,2.5,2.5A2.5,2.5,0,0,0,12,10Zm0,3.75a1.25,1.25,0,1,1,1.25-1.25A1.25,1.25,0,0,1,12,13.76Z"/></g></g></svg>
+
+sprite $AppEngine_png [64x64/16z] {
+xPNH3i8m24LtosJz_o-stJhQsgeWYObczyN5SO1I1ijowOz5vCAP6KwU7JYSVCQPd3pxqdTKCEKE4DFFzbxH9mK0TSAdiKMEuDOKq26mEi1W7YmEC3kleGQx
+PPWNL8679uRQ4poDeqi0RPWpQOxd6qjukRWrnbMRG0tVD177-9PF7peNe-hf_Aq9bB4mWVT9XOwNXvia85EnTN7GUT1K7bB6AT-DDP9_Wl11pWej_nYVZF67
+-ecZxJM_uD1GVnnuQe1GSwl6h_kdtl-ckF-1vwt1GtaLL0sShLBEyPPpJxNJjs_pdMO7HQkqitRyx8zhfTLuFsb2KkCLXjcFSIYHRNdWWIR7zZ5k82S-sM3c
+7GmNRTuwbovT-hxk
+}
+
+!function $AppEngineIMG($scale=1)
+!return "<img data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAACQ0lEQVR42u2azW3DMAyFNRoPXaErdIVcecwKXsEr9KIBOotXYKNAQBVFkinL+nHFA4EAae28jxRNPVkRkZo5lAAQAAJAAAgAAdA+vpbNBJqYFQA5AVMBsNl3AdBsAMAHYKDMBIACgVMACJV/z2UwSvl3a4Y9yx8tDLCfuywDGYR63HT9eQa48e8BWKHECGwJpEWmkSk8COOyADIyzgm4FIDCrDethl7i0W+C3P8bGsCOCFZzszB0KwitxJ/dQ2AoALbbh36oPiKecV0quW4NAMGSrQwXhwCQKNWcafDt+4/7VnyPVgAwJzuctf0Qrx9BjPvACADYpc951N2/iYx4G7i3FJoDcK2rSDaxdDgyW2MHAhv2EVstx8RA37mJAABmI0uCjFRB8n6+11AEwBcdsq4iWeWs+91uf1v/quAAAOLCiInHhG2FKQCM8kdOP7mtdBaApN12BACknv+MOQE4TTICQI0AoLQC6OoVcKQJAuNvXiB9LltXAMpxbN8iF0DkEYaxrfDyOgsAdxji/OZTB6Gc4STHIQplP3fo6joJRmZ7bYTliPeyHwKoR90MaU88OqKeDc4vebfp+QNQAvQQewHWdtWHsBPIGaNH8gOQkyEz1++AQHf2z7n2CJZYln1l1rcbmWBxRE9Q7RiiudfSte2wGq4wlBx7MRzhU8XXOheACociVcTXPBlSVxBf+2zwrCOyqgekrd4FOAICa2W92wsSzuYn+shs/bKEvCIjAASAABAAAkAACAABIAAEgAAQADPGL+LcO4C1tDJiAAAAAElFTkSuQmCC{scale="+$scale+"}>"
+!endfunction
+
+GCPEntityColoring(AppEngine)
+!define AppEngine(e_alias, e_label, e_techn) GCPEntity(e_alias, e_label, e_techn, #4285F4, AppEngine, AppEngine)
+!define AppEngine(e_alias, e_label, e_techn, e_descr) GCPEntity(e_alias, e_label, e_techn, e_descr, #4285F4, AppEngine, AppEngine)
+!define AppEngineParticipant(p_alias, p_label, p_techn) GCPParticipant(p_alias, p_label, p_techn, #4285F4, AppEngine, AppEngine)
+!define AppEngineParticipant(p_alias, p_label, p_techn, p_descr) GCPParticipant(p_alias, p_label, p_techn, p_descr, #4285F4, AppEngine, AppEngine)
+GCPEntityColoring(App_Engine)
+!define App_Engine(e_alias, e_label, e_techn) GCPEntity(e_alias, e_label, e_techn, #4285F4, AppEngine, App_Engine)
+!define App_Engine(e_alias, e_label, e_techn, e_descr) GCPEntity(e_alias, e_label, e_techn, e_descr, #4285F4, AppEngine, App_Engine)
+!define App_EngineParticipant(p_alias, p_label, p_techn) GCPParticipant(p_alias, p_label, p_techn, #4285F4, AppEngine, App_Engine)
+!define App_EngineParticipant(p_alias, p_label, p_techn, p_descr) GCPParticipant(p_alias, p_label, p_techn, p_descr, #4285F4, AppEngine, App_Engine)

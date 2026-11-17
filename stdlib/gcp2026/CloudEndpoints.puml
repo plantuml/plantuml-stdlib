@@ -1,0 +1,22 @@
+sprite $CloudEndpoints <svg viewBox="0 0 24 24" width="64" height="64"><g><g><g ><path fill="#4285f4" d="M 15 10 L 9 10 L 8 12 L 9 14 L 15 14 L 16 12 L 15 10 Z"/><path fill="#aecbfa" d="M 16 12 L 15 10 L 9.51 10 L 9 10 L 8 12 L 16 12 Z"/></g></g><path fill="#4285f4" d="M 18 6 L 15 6 L 18.97 12 L 20.47 9.75 L 18 6 Z"/><path fill="#aecbfa" d="M 21.95 12 L 20.47 9.75 L 18.97 12 L 18.97 12 L 15 18 L 18 18 L 21.95 12 Z"/><path fill="#4285f4" d="M 5.95 18 L 8.95 18 L 4.98 12 L 3.48 14.25 L 5.95 18 Z"/><path fill="#aecbfa" d="M 2 12 L 3.48 14.25 L 4.98 12 L 4.98 12 L 8.95 6 L 5.95 6 L 2 12 Z"/></g></svg>
+
+sprite $CloudEndpoints_png [64x64/16z] {
+xLHH5eCm22kqpjx_nDFLfnK6OVwEVBOlac2QKXA9HE83gWFgelK1m3_ef6zwv0FL6byA7_psH7tGWQq-v82zyTW1-NJem5SF7J0Q3nnWkki0gvySDBYyAa2p
+WqMF0VJpPdUmQfjIlURJvQ2fFH4SVzxnfbujIkx-6v-SDpPEMXF_-GPsSZBqhrq6RSBBpSb-ibp1O7kyaPDD_HmCSxpro6XJtnq1Z5A-tAFD0Z3baNvpAoBI
+qEuRnGrzqFbPly62GmvWHSYe_Q8UEg10mNaEGWLdEwYHVhKTK8YUI2J-2My
+}
+
+!function $CloudEndpointsIMG($scale=1)
+!return "<img data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAABrklEQVR42u2au3HEMAxEWRoDt+AW3MKlDN2CWlALTlSAa1ELOGlGnvFcQAIUFpTmNkB+eHzLD3RJRNI7VyIAAiAAAiAAAiAAAiAAAiAAAiAAAiAAU82/UraSSuWzP/Djey1bSaXGANiaS43mi9cqNQDIKADSqOQIIDcglFAAEepHReHS6kdEoQfAEqV+RBQurz46CrdQHxmFW6iPjIK2+TxafVQU4Oof8LqrAqAahelHxAtA6VVfYU6ztkayNQqPWb8vQdU/2/xfWaLwOa2mvQmtvguAhgXpVX0LQIj6nquvtCC/qK9eLJT62RtAzYK9vqa1a8HMDeyKtc5ZxTndUxlxTzFHYN9kNOesc/MLarM25fgx66+czhZk1GatPgYP9U1XzqDVP7VZqy9C/9RXXzmdLMjIK7rqKrwfL72vrwNCd6Ffp8NncsCJtO9zGD2eNjbv9jq1AICOpx0HMwtsJHaFKHip3z0UHRkFhfoFPhVWRGG5g/qnPoyMiIK3+qc/jUVGAaG+B4CQKCjUH/NxNCoKKPX5BwkCIAACIAACIAACIAACIAACIAACIID3rSeypdg7vpg6zwAAAABJRU5ErkJggg=={scale="+$scale+"}>"
+!endfunction
+
+GCPEntityColoring(CloudEndpoints)
+!define CloudEndpoints(e_alias, e_label, e_techn) GCPEntity(e_alias, e_label, e_techn, #4285F4, CloudEndpoints, CloudEndpoints)
+!define CloudEndpoints(e_alias, e_label, e_techn, e_descr) GCPEntity(e_alias, e_label, e_techn, e_descr, #4285F4, CloudEndpoints, CloudEndpoints)
+!define CloudEndpointsParticipant(p_alias, p_label, p_techn) GCPParticipant(p_alias, p_label, p_techn, #4285F4, CloudEndpoints, CloudEndpoints)
+!define CloudEndpointsParticipant(p_alias, p_label, p_techn, p_descr) GCPParticipant(p_alias, p_label, p_techn, p_descr, #4285F4, CloudEndpoints, CloudEndpoints)
+GCPEntityColoring(Cloud_Endpoints)
+!define Cloud_Endpoints(e_alias, e_label, e_techn) GCPEntity(e_alias, e_label, e_techn, #4285F4, CloudEndpoints, Cloud_Endpoints)
+!define Cloud_Endpoints(e_alias, e_label, e_techn, e_descr) GCPEntity(e_alias, e_label, e_techn, e_descr, #4285F4, CloudEndpoints, Cloud_Endpoints)
+!define Cloud_EndpointsParticipant(p_alias, p_label, p_techn) GCPParticipant(p_alias, p_label, p_techn, #4285F4, CloudEndpoints, Cloud_Endpoints)
+!define Cloud_EndpointsParticipant(p_alias, p_label, p_techn, p_descr) GCPParticipant(p_alias, p_label, p_techn, p_descr, #4285F4, CloudEndpoints, Cloud_Endpoints)

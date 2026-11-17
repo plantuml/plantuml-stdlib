@@ -1,0 +1,22 @@
+sprite $AccessContextManager <svg viewBox="0 0 24 24" width="64" height="64"><g><path fill="#aecbfa" d="M 12 19.27 L 4.72 12 L 12 4.72 L 15.64 8.36 L 17 7 L 12 2 L 2 12 L 12 22 L 17 17 L 15.64 15.64 L 12 19.27 Z"/><path fill="#4285f4" d="M 18.36 8.36 L 22 12 L 18.36 15.64 L 18.36 8.36 Z"/><path fill="#669df6" d="M 12 8.36 L 15.64 12 L 12 15.64 L 12 8.36 Z"/></g></svg>
+
+sprite $AccessContextManager_png [64x64/16z] {
+xPV12iCm34CB0gF__-AD7SgcsGVtCTYXFhRMQ-eaZd8ST_nnI52E0182I0WW8O240182dBfhW3VL5S27PWy8nHRmbRy3DDaRG9iBvQ_7HFvymUHNIrUPujtN
+Am7sQl2L08-0zjyh0Pu0VUag0Hu0G-Kh0Uu1qyHL0jm2ndcl1BW3pCkc4k0EGFLq_BX-UFxm-i7h5-yVl7zn_y3z2_TFtB_n-O7FBtn-ulCR-mViNx1_mluD
+-qViNx5_nluTtn_m_UMENyS3
+}
+
+!function $AccessContextManagerIMG($scale=1)
+!return "<img data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAABXElEQVR42u3bwRGDIBCFYUvzkFpSS1pIC6kltdgCcSYeHEdhQbNvM/wHbhkz71NBYBlSSkPPbQAAAAAAULXX+9u6BFjCp6X1BbAJL0WIEl6GECm8BCFaeHeEiOFdEaKGd0NQhzf95i8BaoIpEeTh1QghwisRwoRXIYQKb71WOIBf3LXMNWM9Ab98ZHeuHasP8HhfV/8RaxS4Kvz9OZ0OcXtMvgBX3vkZIJ1FmAFSK4L8sV8ATiEsAE0I8nd+BdCMsAKoRpB3eBuAJoQNQBWCvLffAahG2AEwI8iHugOAKoQDABOCfJzPAJgRMgBFBPmkpABgQigAZBHkMzIDQBHBAHCIAACvAJ0gwyAfQnwKMxliOsyCSOQlsdK13JfERIuiY8itMedl8TEcgGBjZAwH4L01duVkjM1RtscpkKBEhiIpyuQolKRUlmJpyuU5MMGRGQ5NcWwOAAAA6K19AIHWGdNZgS/iAAAAAElFTkSuQmCC{scale="+$scale+"}>"
+!endfunction
+
+GCPEntityColoring(AccessContextManager)
+!define AccessContextManager(e_alias, e_label, e_techn) GCPEntity(e_alias, e_label, e_techn, #4285F4, AccessContextManager, AccessContextManager)
+!define AccessContextManager(e_alias, e_label, e_techn, e_descr) GCPEntity(e_alias, e_label, e_techn, e_descr, #4285F4, AccessContextManager, AccessContextManager)
+!define AccessContextManagerParticipant(p_alias, p_label, p_techn) GCPParticipant(p_alias, p_label, p_techn, #4285F4, AccessContextManager, AccessContextManager)
+!define AccessContextManagerParticipant(p_alias, p_label, p_techn, p_descr) GCPParticipant(p_alias, p_label, p_techn, p_descr, #4285F4, AccessContextManager, AccessContextManager)
+GCPEntityColoring(Access_Context_Manager)
+!define Access_Context_Manager(e_alias, e_label, e_techn) GCPEntity(e_alias, e_label, e_techn, #4285F4, AccessContextManager, Access_Context_Manager)
+!define Access_Context_Manager(e_alias, e_label, e_techn, e_descr) GCPEntity(e_alias, e_label, e_techn, e_descr, #4285F4, AccessContextManager, Access_Context_Manager)
+!define Access_Context_ManagerParticipant(p_alias, p_label, p_techn) GCPParticipant(p_alias, p_label, p_techn, #4285F4, AccessContextManager, Access_Context_Manager)
+!define Access_Context_ManagerParticipant(p_alias, p_label, p_techn, p_descr) GCPParticipant(p_alias, p_label, p_techn, p_descr, #4285F4, AccessContextManager, Access_Context_Manager)

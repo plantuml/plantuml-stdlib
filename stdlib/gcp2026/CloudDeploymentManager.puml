@@ -1,0 +1,22 @@
+sprite $CloudDeploymentManager <svg viewBox="0 0 24 24" width="64" height="64"><g><g ><rect fill="#4285f4" x="10" y="17" width="4" height="4"/><path fill="#669df6" d="M 19 10.84 L 14.66 6.51 L 13.65 7.52 L 19 12.85 L 19 10.84 Z"/><path fill="#4285f4" d="M 15.67 9.53 L 13.65 7.52 L 14.66 6.51 L 15.67 7.52 L 15.67 9.53 Z"/><path fill="#aecbfa" d="M 10.94 12.24 L 9.93 11.23 L 14.66 6.51 L 15.67 7.52 L 10.94 12.24 Z"/><path fill="#669df6" d="M 10.94 12.24 L 8.08 9.39 L 9.1 8.38 L 11.95 11.23 L 10.94 12.24 Z"/><path fill="#4285f4" d="M 10.08 11.38 L 8.08 9.39 L 9.1 8.38 L 10.08 9.36 L 10.08 11.38 Z"/><path fill="#aecbfa" d="M 5.44 13.99 L 10.08 9.36 L 9.07 8.35 L 5 12.41 L 5 13.99 L 5.44 13.99 Z"/><path fill="#669df6" d="M22,4.05a1.24,1.24,0,0,0-1-1H3a1.24,1.24,0,0,0-1,1V17a1.19,1.19,0,0,0,1,1H21a1.19,1.19,0,0,0,1-1V4.05ZM20,16H4V5H20Z"/><path fill="#669df6" d="M8,22c0-.69.31-1,1-1h6c.69,0,1,.31,1,1Z"/></g></g></svg>
+
+sprite $CloudDeploymentManager_png [64x64/16z] {
+xTVR3eCW301GQhNm_ryy60wvfUMIPPhHH-DfW49HfLQi0EgEn1DD9S0H3pVp2Crnr3oqbml_pIDEUSGqGQTt76dOlxdMDEWzDpewCRA_vej-yivJitS6OgwK
+ZiwivFsG8UPdZsZovupj4umhToNWlI-NCKHxMlYGWFMV1RFU9IZQdE33a9sdNHLz4bYVBLY-6IIVBLYvctYF-Kcf960yoDo-nFkP_W5jdF6h__xCTzoVjxp_
+9_pizzD0WaCiqcP2R2FVbCi_rn_bXi4E3j9-btmjrb_QD-85
+}
+
+!function $CloudDeploymentManagerIMG($scale=1)
+!return "<img data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAABlElEQVR42u3byxWCMBAF0CktC1qgBetgSQu2YAtuKMBaaCGSY/BghJAf+b7FbDyKvCskYUDinFPLRQAAAAAAAAAAAOCvbveZLcUrKTsA8YGKwmsRjgCGCgEYAADgBzDIgbGEmq4AYKVMbTb7DwAAZArweH2qSQAZnstqC0AJ74RQLMBB+NP1fBUAR+H75bv7cbZCyAZAhmI+4bvxB8AIIQsAJRSzDS9eX8LTDsApQnKAvVD35z+CLvz6HoGwA6BFSAqgO5y32zAJb9CfyAvg7Fxet2MT3gUhCYBuChPhNwDidOAuc70pQnQA3S/ay4GsU85jBcFmjj9FiApgcjivCOo2JYLLUpd0+xcNIMBA5nPFR0kBXAay8ckpRPgDhHgALuG/CI/Pjge89qcUAIPvFVvgBgilBmirI6QAtNcS2wC02RP06dehKQoAAACgVICSbo7i9jgAAOAH0PZDUpUhTNaPyV1R3TiztTdoUNGmXAAAAAAAAAAAAHBJm3oKuJgZSgNgsdbyOQOELvxnCAAAAAAAQtcbGB+rQLrAc8wAAAAASUVORK5CYII={scale="+$scale+"}>"
+!endfunction
+
+GCPEntityColoring(CloudDeploymentManager)
+!define CloudDeploymentManager(e_alias, e_label, e_techn) GCPEntity(e_alias, e_label, e_techn, #4285F4, CloudDeploymentManager, CloudDeploymentManager)
+!define CloudDeploymentManager(e_alias, e_label, e_techn, e_descr) GCPEntity(e_alias, e_label, e_techn, e_descr, #4285F4, CloudDeploymentManager, CloudDeploymentManager)
+!define CloudDeploymentManagerParticipant(p_alias, p_label, p_techn) GCPParticipant(p_alias, p_label, p_techn, #4285F4, CloudDeploymentManager, CloudDeploymentManager)
+!define CloudDeploymentManagerParticipant(p_alias, p_label, p_techn, p_descr) GCPParticipant(p_alias, p_label, p_techn, p_descr, #4285F4, CloudDeploymentManager, CloudDeploymentManager)
+GCPEntityColoring(Cloud_Deployment_Manager)
+!define Cloud_Deployment_Manager(e_alias, e_label, e_techn) GCPEntity(e_alias, e_label, e_techn, #4285F4, CloudDeploymentManager, Cloud_Deployment_Manager)
+!define Cloud_Deployment_Manager(e_alias, e_label, e_techn, e_descr) GCPEntity(e_alias, e_label, e_techn, e_descr, #4285F4, CloudDeploymentManager, Cloud_Deployment_Manager)
+!define Cloud_Deployment_ManagerParticipant(p_alias, p_label, p_techn) GCPParticipant(p_alias, p_label, p_techn, #4285F4, CloudDeploymentManager, Cloud_Deployment_Manager)
+!define Cloud_Deployment_ManagerParticipant(p_alias, p_label, p_techn, p_descr) GCPParticipant(p_alias, p_label, p_techn, p_descr, #4285F4, CloudDeploymentManager, Cloud_Deployment_Manager)

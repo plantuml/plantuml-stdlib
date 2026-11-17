@@ -1,0 +1,24 @@
+sprite $ServiceDiscovery <svg viewBox="0 0 24 24" width="64" height="64"><path fill="#4285f4" d="M18.18,17.24a9,9,0,0,1-1.51,1.32l2.94,2.94a1,1,0,0,0,1.41,0h0a1,1,0,0,0,0-1.41Z"/><path fill="#4285f4" d="M 14 15.5 L 9.19 15.5 L 13.19 7.5 L 10 7.5 L 10 6.5 L 14.81 6.5 L 10.81 14.5 L 14 14.5 L 14 15.5 Z"/><circle fill="#669df6" cx="14" cy="15" r="1.25"/><circle fill="#669df6" cx="10" cy="15" r="1.25"/><rect fill="#4285f4" x="8" y="10.5" width="8" height="1"/><path fill="#669df6" d="M12,4a7,7,0,1,1-7,7,7,7,0,0,1,7-7m0-2a9,9,0,1,0,9,9,9,9,0,0,0-9-9"/><circle fill="#669df6" cx="12" cy="11" r="1.25"/><circle fill="#669df6" cx="8" cy="11" r="1.25"/><circle fill="#669df6" cx="16" cy="11" r="1.25"/><circle fill="#669df6" cx="14" cy="7" r="1.25"/><circle fill="#669df6" cx="10" cy="7" r="1.25"/></svg>
+
+sprite $ServiceDiscovery_png [64x64/16z] {
+xLVBiiCW29MWqV__ukeaLq05jUdjgYmwndYEl0BKkP_yaq0MnFBx3lWKiaS1uUm4r-43z0O3dghWxkNPUxX7K8y663fp4OwgLIlmO57FuMWw5cUUlmm7h0x0
+UpaX00vdgf95O5h0sU-JFWjdHTqzDmI5AIcB-022_ZK8tK31EzK2aCpq10A1cWAX8SQ_KpuAbsiXK4EJBUY3hAW_WFkKZeM3AhwvddjcHVtsUXDFIKB6Hif2
+C3GbF7CGKqgBPu-_CYJcp8cKH97ovZjuFB9Sox92CcM6TsHqfCrGGLEygnqh9QgYTHED-ZYBlHx_aLPTwXdumVRuUYtHkmI6Uhreu5e1QHnG7kFHnAClCve2
+G4aWYVKAB2gJLZ_1w02SMiDR3O0NTqL_km7njoXx0V3PO38ptJ3U_qLxdOykvaG62xCFRhqQZHdo64r1SNtwkjDMZ52vBEqDdb9AFim8Z04mfIM2iGgv5Fb5
+0WUT3jS8j4mWAQW0R13qfUCTWb53BUAV4hXd1CU3FqR74_L_yb5v0G
+}
+
+!function $ServiceDiscoveryIMG($scale=1)
+!return "<img data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAACrklEQVR42u2by5HDIAyGKU2HbcEtbB06poV0Q0VpwRvP2DMOa7AeP5DEHHTZWTvoQ0iyJMI8z+HKEgaAAWAAGABaye/9QYnwKi9//xoAT2U2pWejLM9+HoB14dGheCpcC0SNHUcqXh0EUnmuqPg/EG8DwLHrnDjDLhAQyksWG6UOzeA4+wAQKu86s+tvCKyjMQCB8hHprISwmwJo4qCUjpabADhZBBXyAj7zAzuT58K7oBAsCY5WeZG5Zsw8GtZRFYCKfGmhP7cH78UANvdMrAKgoAxbjstT6RfRAljfH7XPeACoTe7EAhAAsuuCAigoQsbwRdLfcDhlQgKIVsoHyczhwhY/MN30SdSSBHkigsf8YfH+qXzYHYeICs0QAAXzD0AAvANAxvqDKUU2v/xddv/ESgkBoLb5u3a/FwBpciJyjNM9v/sHkYSQlgoDUAhHZqtqEUaRAA4TkilJeqZC0pMmR1Phq/NzAdyvB2BxcrSXAoCX/5vyx4rfEUCQRotJ51ij0K/0BZAUNKmQ8oadiYuKpZK2WcYJMwIAIxMhVNxvmQfAMkFU1ucJlxYAwVt0aLD7VO1jCJEOb75Bsvu78+4u1iABsPWLMH12zQtcUQRRrNECMFlBbnGZ3MAEuUlJzFp6alAUJe/xRLWnmgOwrAfRF1DV4mseAVR3SAnA1BxhRx+BlP2AuWprTNCWKilHmpBp7BI36w5zzaEFA/jZOl5XcyYIMtAkHJIw1yhbDEaZQEhnh9bEquuQFCsHH6nwPa8amEqqTf3G5JzToCZJ8wgrBPQcD3dU3gShh7e2Stw8ffJZ7YJQezKcQeOxdFJbMENoOSavdpbKAosJQreLCkkBFdVbVEP4ilsfJxD4EldmShAuc2coA4EudWlqrS+IzH/cGhsABoABYAC4OoA/W+mAQXiLLf4AAAAASUVORK5CYII={scale="+$scale+"}>"
+!endfunction
+
+GCPEntityColoring(ServiceDiscovery)
+!define ServiceDiscovery(e_alias, e_label, e_techn) GCPEntity(e_alias, e_label, e_techn, #4285F4, ServiceDiscovery, ServiceDiscovery)
+!define ServiceDiscovery(e_alias, e_label, e_techn, e_descr) GCPEntity(e_alias, e_label, e_techn, e_descr, #4285F4, ServiceDiscovery, ServiceDiscovery)
+!define ServiceDiscoveryParticipant(p_alias, p_label, p_techn) GCPParticipant(p_alias, p_label, p_techn, #4285F4, ServiceDiscovery, ServiceDiscovery)
+!define ServiceDiscoveryParticipant(p_alias, p_label, p_techn, p_descr) GCPParticipant(p_alias, p_label, p_techn, p_descr, #4285F4, ServiceDiscovery, ServiceDiscovery)
+GCPEntityColoring(Service_Discovery)
+!define Service_Discovery(e_alias, e_label, e_techn) GCPEntity(e_alias, e_label, e_techn, #4285F4, ServiceDiscovery, Service_Discovery)
+!define Service_Discovery(e_alias, e_label, e_techn, e_descr) GCPEntity(e_alias, e_label, e_techn, e_descr, #4285F4, ServiceDiscovery, Service_Discovery)
+!define Service_DiscoveryParticipant(p_alias, p_label, p_techn) GCPParticipant(p_alias, p_label, p_techn, #4285F4, ServiceDiscovery, Service_Discovery)
+!define Service_DiscoveryParticipant(p_alias, p_label, p_techn, p_descr) GCPParticipant(p_alias, p_label, p_techn, p_descr, #4285F4, ServiceDiscovery, Service_Discovery)

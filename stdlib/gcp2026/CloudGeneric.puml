@@ -1,0 +1,21 @@
+sprite $CloudGeneric <svg viewBox="0 0 24 24" width="64" height="64"><g stroke="none" stroke-width="1" fill="none"><path d="M22,2 L22,22 L2,22 L2,2 L22,2 Z M12,6.61538462 C10.2131185,6.61538462 8.69051386,7.74688823 8.10959985,9.33248166 L8.10959985,9.33248166 L7.94899666,9.33277592 C5.93795979,9.33277592 4.30769231,10.9630434 4.30769231,12.9740803 C4.30769231,14.9851171 5.93795979,16.6153846 7.94899666,16.6153846 L7.94899666,16.6153846 L16.0510033,16.6153846 C18.0620402,16.6153846 19.6923077,14.9851171 19.6923077,12.9740803 C19.6923077,10.9630434 18.0620402,9.33277592 16.0510033,9.33277592 L16.0510033,9.33277592 L15.8904002,9.33248166 C15.3094861,7.74688823 13.7868815,6.61538462 12,6.61538462 Z" fill="#4285F4"></path></g></svg>
+
+sprite $CloudGeneric_png [64x64/16z] {
+xTV92e0m34NH4Yx1__zYLu9JsmmuBFAsShhGvWLRg-GZWUpv4eYKB_zt3t7FzfI8Pp-VwlOS1nodvzmG-ForObp-hg8SNkywpkYHGKqoyyoQLeUUULKpy5Yw
+dhwtBOkk5vkdvwtRwY4lLgz9ppDUFtv_wU-VlN_f-v-TFyC1JFkdPVgdzdVvyc_xxFzJ9PmL
+}
+
+!function $CloudGenericIMG($scale=1)
+!return "<img data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAABCklEQVR42u3bMQ7DIAxAUY7G0IN57LE4Ua9AFImhqpSSUJMa+w8eI5QnJ2BbpFprihwJAAAAAOAzHs/XHtlZXALYH6jOIgMAAAAAAAAAAAAAAIAdAGkRBkCOipK3dcUjwNcXP6hGixcAGa3VlbPhLwDya8NCEeF+AK2uzaoASREgrwZQtHt31gHkaIEZMbhdTgEQzVQfgLiyXaoDiJXW9slsUAUQa/39Ewh6ABYHHO1zuAUgW53ydLJAB8DymKuTBf4BOucFFYC8AECJDiAATAQo0f8B7ALhzwGcBKkFqAbNILS0FysdoRSxI8RsEAAAAAAAAAAAAAAAAAAAwBNA7EtT3BsEAAAAosQGRaPaTN6OKxsAAAAASUVORK5CYII={scale="+$scale+"}>"
+!endfunction
+
+GCPEntityColoring(CloudGeneric)
+!define CloudGeneric(e_alias, e_label, e_techn) GCPEntity(e_alias, e_label, e_techn, #4285F4, CloudGeneric, CloudGeneric)
+!define CloudGeneric(e_alias, e_label, e_techn, e_descr) GCPEntity(e_alias, e_label, e_techn, e_descr, #4285F4, CloudGeneric, CloudGeneric)
+!define CloudGenericParticipant(p_alias, p_label, p_techn) GCPParticipant(p_alias, p_label, p_techn, #4285F4, CloudGeneric, CloudGeneric)
+!define CloudGenericParticipant(p_alias, p_label, p_techn, p_descr) GCPParticipant(p_alias, p_label, p_techn, p_descr, #4285F4, CloudGeneric, CloudGeneric)
+GCPEntityColoring(Cloud_Generic)
+!define Cloud_Generic(e_alias, e_label, e_techn) GCPEntity(e_alias, e_label, e_techn, #4285F4, CloudGeneric, Cloud_Generic)
+!define Cloud_Generic(e_alias, e_label, e_techn, e_descr) GCPEntity(e_alias, e_label, e_techn, e_descr, #4285F4, CloudGeneric, Cloud_Generic)
+!define Cloud_GenericParticipant(p_alias, p_label, p_techn) GCPParticipant(p_alias, p_label, p_techn, #4285F4, CloudGeneric, Cloud_Generic)
+!define Cloud_GenericParticipant(p_alias, p_label, p_techn, p_descr) GCPParticipant(p_alias, p_label, p_techn, p_descr, #4285F4, CloudGeneric, Cloud_Generic)

@@ -1,0 +1,22 @@
+sprite $CloudCDN <svg viewBox="0 0 24 24" width="64" height="64"><g><g ><path fill="#669df6" d="M 12 2 L 12 4.41 L 15.13 7.63 L 15.13 5.21 L 12 2 Z"/><path fill="#669df6" d="M 19.5 12 L 16.38 15.13 L 18.88 15.13 L 22 12 L 19.5 12 Z"/><path fill="#669df6" d="M 4.5 12 L 7.63 15.13 L 5.13 15.13 L 2 12 L 4.5 12 Z"/><path fill="#669df6" d="M 12 22 L 12 19.59 L 15.13 16.38 L 15.13 18.79 L 12 22 Z"/><path fill="#aecbfa" d="M 12 2 L 8.88 5.21 L 8.88 7.63 L 12 4.41 L 12 2 Z"/><path fill="#aecbfa" d="M 18.88 8.88 L 16.38 8.88 L 19.5 12 L 22 12 L 18.88 8.88 Z"/><path fill="#aecbfa" d="M 5.13 8.88 L 7.63 8.88 L 4.5 12 L 2 12 L 5.13 8.88 Z"/><path fill="#aecbfa" d="M 12 22 L 8.88 18.79 L 8.88 16.38 L 12 19.59 L 12 22 Z"/><path fill="#aecbfa" d="M 15.13 15.13 L 8.88 15.13 L 8.88 8.88 L 15.13 8.88 L 15.13 15.13 Z"/><path fill="#669df6" d="M 15.13 8.88 L 15.13 15.13 L 8.88 15.13 L 15.13 8.88 Z"/><path fill="#4285f4" d="M 15.13 8.88 L 15.13 15.13 L 12 12 L 15.13 8.88 Z"/></g></g></svg>
+
+sprite $CloudCDN_png [64x64/16z] {
+xTVR3eCW30PWsiQwzt_YYN9gGPbjbYoPlKBm--C5AHZ2KpzSn3vEp2w-UVRmwDd1TyzsVdWsyn2C0PbR0mfF0M3mUMpqPGmctpo0mOidkErL0JozvCwcJSDI
+Awhr2LT-VM6O1eX5nPE_2f1BYcT_7g0M52_-B41FArxzEA2RLBpneu1-Il7M3zxchiSalWpygATs0OapTzy_Riaw8FCSWDUy2oWy1U24wu3AZm2SSHNGy3q0
+frm6j3m6u9oB0C6t0Fo0npOPguvgoTN_wuo-yujyvoVvpc_otH_0Ul-WocsU2YVhMMRbulv8jZsJ_UAxFo_sNUkxlxl_7zp_Bqzzkzu
+}
+
+!function $CloudCDNIMG($scale=1)
+!return "<img data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAACDUlEQVR42u3bzXWDMAwHcEbzoStkha6QK8es0BWYIgN0FlZwzUtIXWrZkvyhYOugG5D8f+8l2EJM1tpp5JoUQAEUQAGkavm20+fXOibAFt6VdQBWEkE0vAcghiAa/gAggiAaPgDQHEE0PADQFEE0fASgGYJo+P02CCOcHCAVfj8uhnB2AJMKn0awpjcA8PgwQl8AyXNcaNMrAPq8vwh9AJDP/UU4PwD7/AfCiQFKVO21gDZEFIC/wjOhwh6HrcttxV6vDQB2eZtYCaLq4u4CDsAQrlkXgBI+F2AL/3H7D1AaoVr4HIA9PARQEqFaeC6AHz4GUAqhWngOwDF8CqAEQrXwVIBQeAxALkK18BQAKDwWIAehWngsQCw8BYCLQGhMvKrUF7LXpSyA+24ztclK7M7QEGIAW/j9eiV+ApzwyT/BXAQIwA+fQsAAcMOjboM5CCGAUPgYQgogJzx6IcRFOALEwkMIMYDc8KSlMAfBB8CEDyFAACXCkzdDVIQdgBL+iBACKBWetR2mIGwAnPA+whEgHr5RQ+SJYIB6HXdd1q1MTvnXw36utsQU4I2eDg/dFg81Son/NXMvj8YML3xfD0eZu7q+Ho8zNjZjDUiYESZEoBEZ092IzBMBMyQFhF/nEcbkxMK/86Dk3N1SmDAqex95WPre/WYoNi6vL0zoKzP60pQ2RBRAARRAAVrWD/ImpMf51GL5AAAAAElFTkSuQmCC{scale="+$scale+"}>"
+!endfunction
+
+GCPEntityColoring(CloudCDN)
+!define CloudCDN(e_alias, e_label, e_techn) GCPEntity(e_alias, e_label, e_techn, #4285F4, CloudCDN, CloudCDN)
+!define CloudCDN(e_alias, e_label, e_techn, e_descr) GCPEntity(e_alias, e_label, e_techn, e_descr, #4285F4, CloudCDN, CloudCDN)
+!define CloudCDNParticipant(p_alias, p_label, p_techn) GCPParticipant(p_alias, p_label, p_techn, #4285F4, CloudCDN, CloudCDN)
+!define CloudCDNParticipant(p_alias, p_label, p_techn, p_descr) GCPParticipant(p_alias, p_label, p_techn, p_descr, #4285F4, CloudCDN, CloudCDN)
+GCPEntityColoring(Cloud_CDN)
+!define Cloud_CDN(e_alias, e_label, e_techn) GCPEntity(e_alias, e_label, e_techn, #4285F4, CloudCDN, Cloud_CDN)
+!define Cloud_CDN(e_alias, e_label, e_techn, e_descr) GCPEntity(e_alias, e_label, e_techn, e_descr, #4285F4, CloudCDN, Cloud_CDN)
+!define Cloud_CDNParticipant(p_alias, p_label, p_techn) GCPParticipant(p_alias, p_label, p_techn, #4285F4, CloudCDN, Cloud_CDN)
+!define Cloud_CDNParticipant(p_alias, p_label, p_techn, p_descr) GCPParticipant(p_alias, p_label, p_techn, p_descr, #4285F4, CloudCDN, Cloud_CDN)

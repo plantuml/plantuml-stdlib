@@ -1,0 +1,23 @@
+sprite $CloudSecurityScanner <svg viewBox="0 0 24 24" width="64" height="64"><circle cx="11.45" cy="11.51" r="2.89" style="fill:#669df6"/><path d="M18.05,6.81a8.12,8.12,0,0,0-4.94-3.23l-.27,1.3A6.79,6.79,0,1,1,6.65,6.74l-1-.94a8.1,8.1,0,1,0,13,2.12A1.31,1.31,0,0,1,18.05,6.81Z" style="fill:#aecbfa"/><path d="M14.46,20.42a2,2,0,1,1,0-3.93" style="fill:#669df6"/><path d="M14.46,16.49a2,2,0,1,1,0,3.93" style="fill:#4285f4"/><path d="M19.38,8.1a1.34,1.34,0,0,1,0-2.67v-1h0a2.38,2.38,0,0,0,0,4.75Z" style="fill:#669df6"/><path d="M19.38,5.43a1.34,1.34,0,0,1,0,2.67v1h0a2.38,2.38,0,0,0,0-4.75Z" style="fill:#4285f4"/><path d="M4.22,12.78a2,2,0,1,1,0-3.93" style="fill:#669df6"/><path d="M4.22,8.85a2,2,0,0,1,0,3.93" style="fill:#4285f4"/></svg>
+
+sprite $CloudSecurityScanner_png [64x64/16z] {
+xPRTbiCW28H1pDJtV-Ar9cRzeMBCzfoz27UcVXC4CfNeYIV-TOYuctoCOdrHZKKA1GPU8VWL1NxdWiI7i786JhYmYpneuHGkucc549o-QvY21tXVw2NWkj2T
+W4TEMw-037coU0Cd6kVFHuy-nrc_eDNFV3tHTlRFg-cRRTm-pu_VVCt7KGKsxagepc-ShEOnSimSyZsOTLg0Ag3ZATLGbWNG1VGUIUP3-U0Cjl97omE31FwU
+vviyPTujyhJpUlbd-3YPvJTHrrycBA9fpBN-zucntlx1HzRymYe-vhaVIiYiHoYLOUOB7c7QLpIm4S-s0OrVOHgWiS4oO5FV3GLiVoTHjqYqJ9_4JOCMPTDX
+sNx6tqcw573mhnbyhq6fm9cVlRJa-uxx_S_R-UbxKrP8uQ_pbS8IVrOo1XQlN6t_rY-WYRzrXMLwuebln0y
+}
+
+!function $CloudSecurityScannerIMG($scale=1)
+!return "<img data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAACiklEQVR42u2ay5HDIAyGXRqHbSEtbAt71dEtpIW0kAsFbC1pgTUz9oxWFrYFAuxEBx1ycGx9/HogGEIIwyfbYAAMgAEwAAbAABgAA3AGe/wG97EAovOThdl8KxhnBYDtEIjvexhu48t9ja/LAoAEgMUSjr/cZCHabbIJwGJwyRywAwKI87A4zwBY7JpVYCMkgHM+/p4AxBBwBICvBiAly9qhcX8G6vzqueg4guDUAaAPa66G8Rmw86xzUfpH8oHWqrSAMHAAtp7BoaAGIBGbrfLCcAYAXZzHELqFACN96FEh9pIgcV4vCdLV71kmfx7/VLBVBkGlDDKx73r3CRRC1UYoxl184SS/7NXHbSsyn4rjI4rE+aBKK4w7Lvznkk1HjFHGcc6KKlL8VtXNEG03pfISOi+GgHuD3LAUyZUBAAcABKkVJGbQBAAHAASJggTmWlUm0cpxALbCINN5kQpoHmgOQFv+ZwLgSgBkJL+zAVivIAPASZ6/FABuFVtUgFMBWCCMc8t5ZOWVqgDkbtCqjMVzS01BHujfB2jJLNH/q/QADADXBID0RQIIrnA6Ve9kqFRqczikcgJIN0Ja84kug9BZES53G6y1EZICGM4wDkPf4zUWpHQm6HpNg7QWo1R2XabCmt+gcSgCjQEETRVqxR80cl4dvqYMQSMcllKJBpwwv8/XGMtrx2J2PNK2mY64l2m0du6pkZCy1ECbIwog/q6ReLWyst8A4XJaZe6QY9qVeu2q0/KOj5/r98p+HquzvtQpj3rfUaNG74FYGTntvS6AXBBvB4BpW90ehCMA3uqiJE1me2VQeuZ3ybvCGAIB8Fm3xSOI+bKDXZc3AAbAABgAA2AADIABqGV/GHahJ5LFj28AAAAASUVORK5CYII={scale="+$scale+"}>"
+!endfunction
+
+GCPEntityColoring(CloudSecurityScanner)
+!define CloudSecurityScanner(e_alias, e_label, e_techn) GCPEntity(e_alias, e_label, e_techn, #4285F4, CloudSecurityScanner, CloudSecurityScanner)
+!define CloudSecurityScanner(e_alias, e_label, e_techn, e_descr) GCPEntity(e_alias, e_label, e_techn, e_descr, #4285F4, CloudSecurityScanner, CloudSecurityScanner)
+!define CloudSecurityScannerParticipant(p_alias, p_label, p_techn) GCPParticipant(p_alias, p_label, p_techn, #4285F4, CloudSecurityScanner, CloudSecurityScanner)
+!define CloudSecurityScannerParticipant(p_alias, p_label, p_techn, p_descr) GCPParticipant(p_alias, p_label, p_techn, p_descr, #4285F4, CloudSecurityScanner, CloudSecurityScanner)
+GCPEntityColoring(Cloud_Security_Scanner)
+!define Cloud_Security_Scanner(e_alias, e_label, e_techn) GCPEntity(e_alias, e_label, e_techn, #4285F4, CloudSecurityScanner, Cloud_Security_Scanner)
+!define Cloud_Security_Scanner(e_alias, e_label, e_techn, e_descr) GCPEntity(e_alias, e_label, e_techn, e_descr, #4285F4, CloudSecurityScanner, Cloud_Security_Scanner)
+!define Cloud_Security_ScannerParticipant(p_alias, p_label, p_techn) GCPParticipant(p_alias, p_label, p_techn, #4285F4, CloudSecurityScanner, Cloud_Security_Scanner)
+!define Cloud_Security_ScannerParticipant(p_alias, p_label, p_techn, p_descr) GCPParticipant(p_alias, p_label, p_techn, p_descr, #4285F4, CloudSecurityScanner, Cloud_Security_Scanner)

@@ -1,0 +1,22 @@
+sprite $QuantumEngine <svg viewBox="0 0 24 24" width="64" height="64"><g><rect fill="#aecbfa" x="7.01" y="2" width="2" height="3"/><rect fill="#aecbfa" x="11.01" y="2" width="2" height="3"/><rect fill="#aecbfa" x="15.01" y="2" width="2" height="3"/><rect fill="#4285f4" x="7.01" y="19" width="2" height="3"/><rect fill="#4285f4" x="11.01" y="19" width="2" height="3"/><rect fill="#4285f4" x="15.01" y="19" width="2" height="3"/><rect fill="#4285f4" x="19" y="15" width="3" height="2"/><rect fill="#4285f4" x="19" y="11" width="3" height="2"/><rect fill="#4285f4" x="19" y="7" width="3" height="2"/><rect fill="#aecbfa" x="2" y="15" width="3" height="2"/><rect fill="#aecbfa" x="2" y="11" width="3" height="2"/><rect fill="#aecbfa" x="2" y="7" width="3" height="2"/><g><g ><path fill="#669df6" d="M11,13H9V7H7v8h4v3h2V15h4V7H15v6H13V6H11ZM4,20V4H20V20Z"/></g></g></g></svg>
+
+sprite $QuantumEngine_png [64x64/16z] {
+xPT14eCW34L9e8NxdxW4gW4QCKnP2M_r9_fqnWH5OpQJ0OBZJ_4EIsJfJ4NniJvaq14ffeHjl7YEy5O3srVvqAlFzl5xqAOMjpuNwHICbBUcuNBLnLkVYn4V
+8hXziNyAlzl_5NqQpjV0yqylipr_ule7wICAbT-kVw5_8WFzNygl-bTmzLxlzdz1lvfVXT-TNuMl_Vx-w-_zqu1_x5-j9pZc_OpdUFCVW3HS8KN7SnQaaNka
+R_1S7PpAk9d81m
+}
+
+!function $QuantumEngineIMG($scale=1)
+!return "<img data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAABcElEQVR42u3bwbHCIBDGcUrjkBZs4bXglWNasIW08C6vAGtJC6vMMDqPsAwYGYL+D99tRfPTmd0QNCJivjkGAAAAAOAdWa5i73FxKmqtUutKa48AIHEyFxXXagBSWgsAAAC0A/i5rD5Wy3kRN/+KxFFq/+I6//pUbWpNrfaZNgB+cRkj5b8QAAAAAIAeALbt+gDsAwhDzb+E3pt7Y6037wUoXfOR0/2zTPNqo1QBbCa1MNRUfavhwnYBVKz5BJhXmbaxAAAAAAAt2+BhAHrNAQAAAMCHAKT27edluC7gotAGAQAAgKb7ATbTPeIUP3d4CWDvfsA722CLDDUHAAAAAOMBvNgGa9J0273XHAAAAAB8DoDZjsKrGwag0yh8GIARng5/PQAnRAAAAIDhALJHZX3v9QNInOJa5YhNas2TfhxH3XJrflg6DBubCUypdaWT2lQx1XU9LQ4AAACYxA2IzWAV3azU1PK3OQAAAACAytwAjdCgQ9qoi0oAAAAASUVORK5CYII={scale="+$scale+"}>"
+!endfunction
+
+GCPEntityColoring(QuantumEngine)
+!define QuantumEngine(e_alias, e_label, e_techn) GCPEntity(e_alias, e_label, e_techn, #4285F4, QuantumEngine, QuantumEngine)
+!define QuantumEngine(e_alias, e_label, e_techn, e_descr) GCPEntity(e_alias, e_label, e_techn, e_descr, #4285F4, QuantumEngine, QuantumEngine)
+!define QuantumEngineParticipant(p_alias, p_label, p_techn) GCPParticipant(p_alias, p_label, p_techn, #4285F4, QuantumEngine, QuantumEngine)
+!define QuantumEngineParticipant(p_alias, p_label, p_techn, p_descr) GCPParticipant(p_alias, p_label, p_techn, p_descr, #4285F4, QuantumEngine, QuantumEngine)
+GCPEntityColoring(Quantum_Engine)
+!define Quantum_Engine(e_alias, e_label, e_techn) GCPEntity(e_alias, e_label, e_techn, #4285F4, QuantumEngine, Quantum_Engine)
+!define Quantum_Engine(e_alias, e_label, e_techn, e_descr) GCPEntity(e_alias, e_label, e_techn, e_descr, #4285F4, QuantumEngine, Quantum_Engine)
+!define Quantum_EngineParticipant(p_alias, p_label, p_techn) GCPParticipant(p_alias, p_label, p_techn, #4285F4, QuantumEngine, Quantum_Engine)
+!define Quantum_EngineParticipant(p_alias, p_label, p_techn, p_descr) GCPParticipant(p_alias, p_label, p_techn, p_descr, #4285F4, QuantumEngine, Quantum_Engine)

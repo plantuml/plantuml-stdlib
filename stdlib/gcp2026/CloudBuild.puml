@@ -1,0 +1,23 @@
+sprite $CloudBuild <svg viewBox="0 0 24 24" width="64" height="64"><g><g ><g ><g ><path fill="#4285f4" d="M 12.15 16.24 L 15.67 14.21 L 15.67 10.15 L 14.49 9.46 L 10.97 15.56 L 12.15 16.24 Z"/><path fill="#669df6" d="M 8.63 10.15 L 8.63 14.21 L 9.81 14.89 L 13.34 8.8 L 12.15 8.11 L 8.63 10.15 Z"/></g></g></g><path fill="#aecbfa" d="M 11.46 17.45 L 7.24 15.01 L 7.24 10.15 L 3.49 7.98 L 3.49 17.18 L 11.46 21.78 L 11.46 17.45 Z"/><path fill="#aecbfa" d="M 7.93 8.95 L 12.15 6.51 L 16.37 8.95 L 20.13 6.78 L 12.15 2.17 L 4.17 6.78 L 7.93 8.95 Z"/><path fill="#aecbfa" d="M 17.06 15.01 L 12.84 17.45 L 12.84 21.78 L 20.82 17.18 L 20.82 7.98 L 17.06 10.15 L 17.06 15.01 Z"/></g></svg>
+
+sprite $CloudBuild_png [64x64/16z] {
+xPTB4eGW34Hfmb3U_yIZ8eWGC8aR5_PAHrw-DIOwz-d50k4HlScCKzOpUXMCeLijjBGo2MBbXRIdaM0CNPx4dBwrG091unnEOS6pmK8H0Pygv6q4xqNVWUm5
+Lmkpq6jdcOwHAhiertpghdKQDw7vrR5PzE4bEaRkuB3qnG9YXVksF7SlcqAd_9SbNDipQ_rsL_3TVLWE0wJcjpk_sFaKlPb7Tc_ZVyMzZS_5C_9qkZVn-vMT
+FujduwleBJpEugdvzSz7lNi5dnGkj92l7XxurCTatAVYU-R4tQiR9O70liJlHzTyD0b6dvyz54rzZAUgSFZgTXcmvpGh00Gy51l4kB6o43fUkVmfPtVNomkl
+MK5xtZkLqF2svJ_pje-8p3_v1Abd_wVtwGy
+}
+
+!function $CloudBuildIMG($scale=1)
+!return "<img data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAACHElEQVR42u2by3WEMAxFKU2L1JI6tEwLaWGqcAGpZVpwgMOCODZIWB9jvHhnVnOYd/VhsMQUY5yerGkAGAAGgAFgAHDQ62cVzorL56MA7Iyngq4BLAYLxlP1BYBhfC+0AGFZ51eFtwQgYNykP7SS7lQF6bKQTvegaF6lP7RS525l0Vqdm4Nosc5Ny8I73VEBJmoDCBppKwiWlQkeJQBKGRbUS6CyCZIjs4FopwlWRu0wMp/fb6jINDz5XSAFgJK+wInMYnxW3ISzOJlWzKYkIOIAqCDwwPi0GY4ZUTKN05vUAFy67x4YX6Xw/KEKgHzfTdK9pD/f+fh6w6za/yUmAIoXIxpfe0BiflHchDkQxDuQKYB/R1lE87no4w7ACuHi/5BbAMBM6sfHAEivlTHfNQAgRL9bAOGg8T0CwFnj6xoAMqLfJYA0+uFJAKiNr08AxNtetwCA0fi6ALB/AuQ2vqz5WwFIQEzM6GPpabBlAKTZPiH6UgeyLgBOD0sOOj8In0S7ATg9LNmyAEt1LnRU7g6g6thaYFjSDADW4EJwXCYGIFgMMS8MRGwAKE2EQXnUrjMaE/yhoFBm7H7juRUiDQA9NkSgAQBV+0KeK3ESAHx3hCrLogaA2M6g1nZoUAIgvj7ruR/MASC+IGm2LE1djbdekbXeFs+BOANg8hKF5/sCJQAma/Leb4xABkCwND5emhoABoABYAAYAOL0CzGsLF5azqnkAAAAAElFTkSuQmCC{scale="+$scale+"}>"
+!endfunction
+
+GCPEntityColoring(CloudBuild)
+!define CloudBuild(e_alias, e_label, e_techn) GCPEntity(e_alias, e_label, e_techn, #4285F4, CloudBuild, CloudBuild)
+!define CloudBuild(e_alias, e_label, e_techn, e_descr) GCPEntity(e_alias, e_label, e_techn, e_descr, #4285F4, CloudBuild, CloudBuild)
+!define CloudBuildParticipant(p_alias, p_label, p_techn) GCPParticipant(p_alias, p_label, p_techn, #4285F4, CloudBuild, CloudBuild)
+!define CloudBuildParticipant(p_alias, p_label, p_techn, p_descr) GCPParticipant(p_alias, p_label, p_techn, p_descr, #4285F4, CloudBuild, CloudBuild)
+GCPEntityColoring(Cloud_Build)
+!define Cloud_Build(e_alias, e_label, e_techn) GCPEntity(e_alias, e_label, e_techn, #4285F4, CloudBuild, Cloud_Build)
+!define Cloud_Build(e_alias, e_label, e_techn, e_descr) GCPEntity(e_alias, e_label, e_techn, e_descr, #4285F4, CloudBuild, Cloud_Build)
+!define Cloud_BuildParticipant(p_alias, p_label, p_techn) GCPParticipant(p_alias, p_label, p_techn, #4285F4, CloudBuild, Cloud_Build)
+!define Cloud_BuildParticipant(p_alias, p_label, p_techn, p_descr) GCPParticipant(p_alias, p_label, p_techn, p_descr, #4285F4, CloudBuild, Cloud_Build)

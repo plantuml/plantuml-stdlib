@@ -1,0 +1,21 @@
+sprite $PartnerInterconnect <svg viewBox="0 0 24 24" width="64" height="64"><g><rect fill="#4285f4" x="11.19" y="6.86" width="1.62" height="10.27"/><rect fill="#669df6" x="2" y="11.19" width="2.7" height="1.62"/><rect fill="#4285f4" x="4.43" y="8.76" width="4.86" height="6.49" rx="0.24"/><rect fill="#669df6" x="11.19" y="6.86" width="1.62" height="10.27"/><rect fill="#669df6" x="19.3" y="11.19" width="2.7" height="1.62"/><path fill="#669df6" d="M6.59,17.14v1.33a.29.29,0,0,0,.29.29H17.12a.29.29,0,0,0,.29-.29h0V17.14Z"/><path fill="#669df6" d="M17.12,5.24H6.88a.29.29,0,0,0-.29.29h0V6.86H17.41V5.53a.29.29,0,0,0-.29-.29Z"/><rect fill="#4285f4" x="14.7" y="8.76" width="4.86" height="6.49" rx="0.24"/></g></svg>
+
+sprite $PartnerInterconnect_png [64x64/16z] {
+xPP12i0W30HD3CN_lxZG7heXjKYzf7Rd9c4yYEjQ2Y4a3R8z8ElxOQ-Pm_oNRu1w7qVMynjWtiTHet-BllRhcOvHFsJfwpxlJmfV4U_74T_VNcbT7Bc0jOns
+tghzp-yT8PdO0G
+}
+
+!function $PartnerInterconnectIMG($scale=1)
+!return "<img data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAA2ElEQVR42u3asQ2DMBBAUUZzkRVYgTlcZoUsyQqOUZQmASlnKwjEK37LWa/AMmYopQxXbgAAAAAAAAAAAAAAAAAAAI1NjznVys4lAAAAHAUg1rgKFn/OaXeBCjB8AlxqGwQA4MQAt/ucg6VWgIZZ+a8AdcBSCZY7AKKzCgAAAAB0A0yvBX411jf60QG21r4UAchbh5ATAIQOTwAAALALAAAAAACAAEKK1gHQPcsnMQAAAOxxN/i+H/y1tbNGCub/AAAArg3gJykAAAAAAAAAAAAAAAAAANDYEz2MmILe5EDQAAAAAElFTkSuQmCC{scale="+$scale+"}>"
+!endfunction
+
+GCPEntityColoring(PartnerInterconnect)
+!define PartnerInterconnect(e_alias, e_label, e_techn) GCPEntity(e_alias, e_label, e_techn, #4285F4, PartnerInterconnect, PartnerInterconnect)
+!define PartnerInterconnect(e_alias, e_label, e_techn, e_descr) GCPEntity(e_alias, e_label, e_techn, e_descr, #4285F4, PartnerInterconnect, PartnerInterconnect)
+!define PartnerInterconnectParticipant(p_alias, p_label, p_techn) GCPParticipant(p_alias, p_label, p_techn, #4285F4, PartnerInterconnect, PartnerInterconnect)
+!define PartnerInterconnectParticipant(p_alias, p_label, p_techn, p_descr) GCPParticipant(p_alias, p_label, p_techn, p_descr, #4285F4, PartnerInterconnect, PartnerInterconnect)
+GCPEntityColoring(Partner_Interconnect)
+!define Partner_Interconnect(e_alias, e_label, e_techn) GCPEntity(e_alias, e_label, e_techn, #4285F4, PartnerInterconnect, Partner_Interconnect)
+!define Partner_Interconnect(e_alias, e_label, e_techn, e_descr) GCPEntity(e_alias, e_label, e_techn, e_descr, #4285F4, PartnerInterconnect, Partner_Interconnect)
+!define Partner_InterconnectParticipant(p_alias, p_label, p_techn) GCPParticipant(p_alias, p_label, p_techn, #4285F4, PartnerInterconnect, Partner_Interconnect)
+!define Partner_InterconnectParticipant(p_alias, p_label, p_techn, p_descr) GCPParticipant(p_alias, p_label, p_techn, p_descr, #4285F4, PartnerInterconnect, Partner_Interconnect)

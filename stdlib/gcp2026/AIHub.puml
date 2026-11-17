@@ -1,0 +1,23 @@
+sprite $AIHub <svg viewBox="0 0 24 24" width="64" height="64"><g><path fill="#4285f4" d="M 20.69 12.43 L 12 16.78 L 12 22 L 20.69 17.65 L 20.69 12.43 Z"/><path fill="#1e88e5" d="M6.78,4.61,3.31,6.35Z"/><path fill="#4285f4" d="M 17.22 8.09 L 17.22 8.09 L 17.22 12.43 L 20.69 10.7 L 20.69 6.35 L 17.22 8.09 Z"/><path fill="#4285f4" d="M 12 15.04 L 15.48 13.31 L 15.48 8.96 L 15.48 8.96 L 12 10.7 L 12 15.04 Z"/><path fill="#aecbfa" d="M 6.78 4.61 L 3.31 6.35 L 6.78 8.09 L 10.26 6.35 L 6.78 4.61 Z"/><path fill="#aecbfa" d="M 12 2 L 8.52 3.74 L 12 5.48 L 17.22 8.09 L 20.69 6.35 L 12 2 Z"/><path fill="#aecbfa" d="M 12 7.22 L 8.52 8.96 L 12 10.7 L 15.48 8.96 L 12 7.22 Z"/><path fill="#669df6" d="M8.52,15v5.22L12,22V16.78Zm2.61,5.22-1.74-.87V16.78l1.74.87Z"/><path fill="#669df6" d="M3.31,6.35v11.3l3.47,1.74V8.09Zm2.61,11.3-1.75-.87v-10l1.75.87Z"/><path fill="#669df6" d="M8.52,9,12,10.7V15L8.52,13.31Zm2.61,4.35v-3L9.39,9.45v3Z"/></g></svg>
+
+sprite $AIHub_png [64x64/16z] {
+xTL1ZiCW30LGN1pA_KyyeONK1WCVikb8zIuIxol1c3Ztg-yjVzOzlP_WHTtJEmdU_yy4lMereLsrac2lGXFwgw24W_KI6cJpi_KXEEheAe6VCPhUbOIFfYOX
+wQvtn4et-_3M0nyEhNL2rYCVQYqJ8kh9xXZggUvcxXZiGo0sEhRWFzyWEhRadNjmrR55VtPJTwmyCEf3D3nRumTxjiSNzDoxF23F_SkdXjxofO3zImaTp_Fp
+VuHSRSSOcZzIljB8_EO4KqF-dM1gqAT7Ky_FVtF_AWtD_q0ZNYGq6lCvmT2eJxTOZAXFHrxC3wdpX_WpGSqVhVZhbJlpAoiyh0acqDlwIfZulXxVFuY-_lWT
+FzVYGwZsi2vRIT8lQDdDBIqIDlMLiAtB_k_hLy8j_Qjf_G4
+}
+
+!function $AIHubIMG($scale=1)
+!return "<img data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAACHklEQVR42u3bzXGDMBAFYErTIS2kBbeQK0e3QAu0wMUFpBa3IEsTYBRGgH52tU+gw16wzfC+QVqUiE5r3d25ugbQABpAA5Cq8VcrW7cDmIPrTanLA+wEF4VACi4CgRi8KEQNAKwQyEOgCETRdoYIIdLOkCBE2xkCBEQ7k4SAamcSEKdfeAzv7mfUepiyLqY3Vaxr2Gv9Ht6aDMCUtmVO3M1hWILnQizBv55/RQ7gXNgZxGlw5xzZQ2MbnB1gqeek1WZoxATPniP2ghcDMMeUPW7niIzgSRBHwYsDPA4mnIjgURBn4cUBMoIHQcAD2M9y2+dRO6sCYPnMTpbjRNvOqgJYjg0TXTurEmBtn6Pu3aGR0s6qBnDbZ2o7CwDo4QEeAeETAHpTdKvBigCigl8JICn4FQCyghcFMNXb81ACnBXUJLiF4ASY7wyINmjr5UH4V1TtzA0OtRrcuRNCAILGuC84FMAZBEdwSIA9CI7g0ADb33IER1oLZP//LiU43GIoBSInOCJAMARFcGSAXQjK4DUArBAcwdkAts/1MYuhiOcAeAAXIno1ePAcgAkQejtzLocT6mVKkQGEQIAABAfP2iLjgxAGiA5Oskmq1F+EOIKTbpPz9XVmgOzg7BslPcNEEQCQBZcAWCESAMiDF9kqG9I+pYIX3St8BCEVXOSFCR+EVHDRV2Y8c0Dx4BAvTc2rwfu9NNVem2sADaABoNQHfMY0QPOFAesAAAAASUVORK5CYII={scale="+$scale+"}>"
+!endfunction
+
+GCPEntityColoring(AIHub)
+!define AIHub(e_alias, e_label, e_techn) GCPEntity(e_alias, e_label, e_techn, #4285F4, AIHub, AIHub)
+!define AIHub(e_alias, e_label, e_techn, e_descr) GCPEntity(e_alias, e_label, e_techn, e_descr, #4285F4, AIHub, AIHub)
+!define AIHubParticipant(p_alias, p_label, p_techn) GCPParticipant(p_alias, p_label, p_techn, #4285F4, AIHub, AIHub)
+!define AIHubParticipant(p_alias, p_label, p_techn, p_descr) GCPParticipant(p_alias, p_label, p_techn, p_descr, #4285F4, AIHub, AIHub)
+GCPEntityColoring(AI_Hub)
+!define AI_Hub(e_alias, e_label, e_techn) GCPEntity(e_alias, e_label, e_techn, #4285F4, AIHub, AI_Hub)
+!define AI_Hub(e_alias, e_label, e_techn, e_descr) GCPEntity(e_alias, e_label, e_techn, e_descr, #4285F4, AIHub, AI_Hub)
+!define AI_HubParticipant(p_alias, p_label, p_techn) GCPParticipant(p_alias, p_label, p_techn, #4285F4, AIHub, AI_Hub)
+!define AI_HubParticipant(p_alias, p_label, p_techn, p_descr) GCPParticipant(p_alias, p_label, p_techn, p_descr, #4285F4, AIHub, AI_Hub)

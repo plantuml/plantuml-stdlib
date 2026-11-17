@@ -1,0 +1,23 @@
+sprite $IdentityPlatform <svg viewBox="0 0 24 24" width="64" height="64"><g><g ><path fill="#669df6" d="M3.33,7,12,2l8.66,5v9.72L17.33,14H6.67L3.33,16.67ZM16,8.67a4,4,0,1,0-4,4A4,4,0,0,0,16,8.67Zm-1.33,0A2.67,2.67,0,1,1,12,6,2.67,2.67,0,0,1,14.67,8.67Z"/><path fill="#4285f4" d="M12,12.67a4,4,0,0,0,0-8V2l8.66,5v9.72L17.33,14H12Zm2.67-4A2.67,2.67,0,0,1,12,11.31V6A2.67,2.67,0,0,1,14.67,8.66Z"/><path fill="#669df6" d="M 4 18 L 12 22 L 20 18 L 16.67 15.33 L 7.33 15.33 L 4 18 Z"/><path fill="#4285f4" d="M 12 22 L 20 18 L 16.67 15.33 L 12 15.33 L 12 22 Z"/></g></g></svg>
+
+sprite $IdentityPlatform_png [64x64/16z] {
+xPVTSWCX28LNe0pl_yJDfl479I8wlUWqN3hx7V68ibxN9tun4XpHpCBxEFA35w5z-iblAIJcoel07btuc0t80nzOHAKn9O2WGaqzvI4g2h1EOpiiYpRWE7ad
+C5j4OnlcWPopk0erTUQlCf1NtTXesy1j95r_e1CmRL1y7VZvlaz0vdoTdiLEmETr_Vq_Nlb7CVvq__XowiVZiGZS7-CmlSU_Zj_p_51_VbRuli0fokiBG2JC
+DnSGoGv_vt3VdmQzoglx-u_mZvxH1gWWbtVw0pYytvzcFAuqE7xBfw4FTFxLShBueGcD_bCsmMXU9jxltwjtoTl5kVk_rhqdzRFKVsVrHm7Sh5zQpjxcuMZz
+478mH1iAGNfG2DETmWQj56Jl1xeeRDB3_zl---Ni1NH4VyADRm
+}
+
+!function $IdentityPlatformIMG($scale=1)
+!return "<img data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAACCUlEQVR42u2bwXHEIAxFXZoOacEtpA4d08J244q2BWKyJsM6BCOMJLB1+DePZ/5DCAFics5Nd9ZkAAyAATAAWvp8POHj6wm3A+CNr3JeKwCvZdX1AayGvTCYjwAEoTQISfNvxv8B8AviMgDicCcACIJhARwZLwTAnh9E5vlJAKz5QWSeJ4RbhPwsg5uKQXQHoDTc/Xe5//gR3ka6BASoAyAYJ43aBkIkP0jM86qRIkA4lR8453ly5Pfw4pCedyaIEKryA0e4By0l/zia28QESc4PpeZdheBEJbiH4Cq0qAJIhD2pDoinQ2UUOE0AUJo3SsN4dABVlaABMAAG4DIAapIgjgzg/DL4GHsZ9Ko+EpvbFELqALBkH5Ewjw1K4S4AJHeCmc1QckdXa74XAH+mAnFLjFcAQD4TqNgGdw8gnAOyj3rPAN4iInEo2sz4CABqjsUNgAHoGADG85qiKAdQhb0AUGtuOKoSJQCot7jkagZOAKhtPNb8grBIAYBG9wZnkmBREcUBoMVtUatVAI/yQksAyGG+wTKIubzAejucO+VRqAOSeYHzdhg6LIS6vB2WrgSRFUBr80ylMHICgAEAgESHSI85AHruEeIEAM6N0yXWEoB+l1gLEFrGWVtlKSC0jIs0S5eA0DIu2i6fA6HZKa7xYILcJnenJzMqb4fs0ZQ9mzMABsAA3FnfljVBU0h32w4AAAAASUVORK5CYII={scale="+$scale+"}>"
+!endfunction
+
+GCPEntityColoring(IdentityPlatform)
+!define IdentityPlatform(e_alias, e_label, e_techn) GCPEntity(e_alias, e_label, e_techn, #4285F4, IdentityPlatform, IdentityPlatform)
+!define IdentityPlatform(e_alias, e_label, e_techn, e_descr) GCPEntity(e_alias, e_label, e_techn, e_descr, #4285F4, IdentityPlatform, IdentityPlatform)
+!define IdentityPlatformParticipant(p_alias, p_label, p_techn) GCPParticipant(p_alias, p_label, p_techn, #4285F4, IdentityPlatform, IdentityPlatform)
+!define IdentityPlatformParticipant(p_alias, p_label, p_techn, p_descr) GCPParticipant(p_alias, p_label, p_techn, p_descr, #4285F4, IdentityPlatform, IdentityPlatform)
+GCPEntityColoring(Identity_Platform)
+!define Identity_Platform(e_alias, e_label, e_techn) GCPEntity(e_alias, e_label, e_techn, #4285F4, IdentityPlatform, Identity_Platform)
+!define Identity_Platform(e_alias, e_label, e_techn, e_descr) GCPEntity(e_alias, e_label, e_techn, e_descr, #4285F4, IdentityPlatform, Identity_Platform)
+!define Identity_PlatformParticipant(p_alias, p_label, p_techn) GCPParticipant(p_alias, p_label, p_techn, #4285F4, IdentityPlatform, Identity_Platform)
+!define Identity_PlatformParticipant(p_alias, p_label, p_techn, p_descr) GCPParticipant(p_alias, p_label, p_techn, p_descr, #4285F4, IdentityPlatform, Identity_Platform)

@@ -1,0 +1,22 @@
+sprite $DevOps <svg viewBox="0 0 512 512" width="64" height="64"><g><path d="M349,272h-15.5c-8.837,0-16-7.163-16-16s7.163-16,16-16h15.5c42.458,0,77-34.542,77-77s-34.542-77-77-77c-8.837,0-16-7.163-16-16s7.163-16,16-16c60.103,0,109,48.897,109,109s-48.897,109-109,109Z" fill="#9aa0a6"/><path d="M163,458c-60.103,0-109-48.897-109-109s48.897-109,109-109h15.5c8.837,0,16,7.163,16,16s-7.163,16-16,16h-15.5c-42.458,0-77,34.542-77,77s34.542,77,77,77c8.837,0,16,7.163,16,16s-7.163,16-16,16Z" fill="#9aa0a6"/><path d="M163,458v-32c42.458,0,77-34.542,77-77v-186c0-60.103,48.897-109,109-109v32c-42.458,0-77,34.542-77,77v186c0,60.103-48.897,109-109,109Z" fill="#4285f4"/></g></svg>
+
+sprite $DevOps_png [64x64/16z] {
+xPRP4eCm24LPCYd__yLrDz6WW4uxdNhVT3X05WW0Ztv3X1XdauYySiuSyK4ogESxkJqagVZCCLoO9mVPZwVf2xqE1hoqPzyIok250_I4t_nZnmeQE80z0Tfb
+FoV0vl04pGJYwJ_yHHulyco-FqtU7bw_lXpdywNoGLSFtF28fnsmjbZvfVSTuglLXiS2ntFwWBS4Ns9iypzwmaQB-e5Ixh-Es-f7stU6CD_Z2SAyKXDcNcd9
+PbwfYK_nU0FFN-ILzTCDF9dF7wtFh_K0o55-hVAHvlHWhZznXD_FPUFGIcOUglP6zTZeSD3fDK-iBdnje3DFu1IMV8A0a2UUuD4_w0q
+}
+
+!function $DevOpsIMG($scale=1)
+!return "<img data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAB30lEQVR42u3by23DMAwAUI3GQ2fJHDx2Ba/QKTJAZukKqhWoQOBQH1MUQlo88BIghvkk2SYthxhjWDmCAziAAziAAyiPr+/fFHDbHrBtPymuD5AS3gP3iP+xA8Q9+dfABHIpgJx4pIIAeA0wD3Ac8ZMAzxlhFqCVfAbAPO1bELYAKsmn38n/pCTzBZFEMANQSP5eSrwAgdzloOH29jbqnGMVEEA7wNvojxyPQlALUBj9MAgQzs4CTfd7lDguMQtQK8Bx9EEIIJxZBmoAJI/tAA7gAA6wLABVH6wGgFYehMQBCtVhWAKg8BiMmmsBySIocBsj5gEqTRFQ3Q8YAchJg0RvUGLdsU6kF6CzB8hujI4k3ntibIAGrkhrXKr19GkAdi9hdvIwcQnA6FuhUwCVE2G9nppZC4gDVJJXWQyJAhTWIWquBqUBjsnftZfDYgCc4uJqACg99a0BTBl9EwBn++tXBAAHmLT+HWD1awC1EWqpuwABAFaeA2DG9NcMIP4kqGn6c2sBHEhebE+QuWqwkPxHR3+0H4C9y6Gy/RVMABSWQhOC2vCsZepzAEJPHzDt521tedWS/JSucAcAaEl+5L0AMABwdB+gui9GMgQ2AEBj4v7NkAM4gAM4gAM4QPgD4fP8xu70nBwAAAAASUVORK5CYII={scale="+$scale+"}>"
+!endfunction
+
+GCPEntityColoring(DevOps)
+!define DevOps(e_alias, e_label, e_techn) GCPEntity(e_alias, e_label, e_techn, #4285F4, DevOps, DevOps)
+!define DevOps(e_alias, e_label, e_techn, e_descr) GCPEntity(e_alias, e_label, e_techn, e_descr, #4285F4, DevOps, DevOps)
+!define DevOpsParticipant(p_alias, p_label, p_techn) GCPParticipant(p_alias, p_label, p_techn, #4285F4, DevOps, DevOps)
+!define DevOpsParticipant(p_alias, p_label, p_techn, p_descr) GCPParticipant(p_alias, p_label, p_techn, p_descr, #4285F4, DevOps, DevOps)
+GCPEntityColoring(Dev_Ops)
+!define Dev_Ops(e_alias, e_label, e_techn) GCPEntity(e_alias, e_label, e_techn, #4285F4, DevOps, Dev_Ops)
+!define Dev_Ops(e_alias, e_label, e_techn, e_descr) GCPEntity(e_alias, e_label, e_techn, e_descr, #4285F4, DevOps, Dev_Ops)
+!define Dev_OpsParticipant(p_alias, p_label, p_techn) GCPParticipant(p_alias, p_label, p_techn, #4285F4, DevOps, Dev_Ops)
+!define Dev_OpsParticipant(p_alias, p_label, p_techn, p_descr) GCPParticipant(p_alias, p_label, p_techn, p_descr, #4285F4, DevOps, Dev_Ops)

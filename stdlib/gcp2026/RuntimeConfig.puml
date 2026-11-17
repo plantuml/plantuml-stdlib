@@ -1,0 +1,21 @@
+sprite $RuntimeConfig <svg viewBox="0 0 24 24" width="64" height="64"><g><path fill="#aecbfa" d="M 2 8 L 8 8 L 8 2 L 2 2 L 2 8 Z"/><rect fill="#4285f4" x="7" y="4" width="13" height="2"/><path fill="#aecbfa" d="M 15 13 L 3 13 L 3 10 L 15 10 L 15 13 Z"/><path fill="#aecbfa" d="M 13 20 L 3 20 L 3 16 L 13 16 L 13 20 Z"/><path fill="#4285f4" d="M 5 8 L 8 8 L 8 2 L 5 2 L 5 8 Z"/><path fill="#aecbfa" d="M 16 22 L 22 22 L 22 16 L 16 16 L 16 22 Z"/><path fill="#4285f4" d="M 19 22 L 22 22 L 22 16 L 19 16 L 19 22 Z"/><rect fill="#4285f4" x="18" y="4" width="2" height="12"/></g></svg>
+
+sprite $RuntimeConfig_png [64x64/16z] {
+xTSv4e0W341H5gFU_yGMn8P14adZZF_Nl8eCIqeKBxUgbjzoTVlP-hlVoZpBMnNywlxX1xux1cRZF_MEy6DVZV3Vzim_tfF8eUy3x_prIsHu2UBn4Uy87_Ft
+8-lX4q0hNG
+}
+
+!function $RuntimeConfigIMG($scale=1)
+!return "<img data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAA6klEQVR42u3bsQ2DMBBAUY92RVbwClmB1iUreAVmySxe4WIXaSIOIyRiO/7FL5HwQ4KTAaeqbuYcAAAAAMB320slF6yWmIJf7Z4xyegAZaFqlReoj9XOAwAAAFMD5EJOGtYcoHUCAAAAADDFYxAAAAAA4A6Az57AbsuWpCzSKgO5oQFGCgAAALgX4Ohm+It6ANCWAQAAAAAAAABzAJMgAAAAAAAAAPz3HFA7D7e/Qata8rH6fUL3k6CcuBDm8QXhyvtCAAAAAAAAAAAAAAAGGIXbAPQSAAAAMD1A5cMtvfQPAb/NAQAAAFP3BjYF65a69IKXAAAAAElFTkSuQmCC{scale="+$scale+"}>"
+!endfunction
+
+GCPEntityColoring(RuntimeConfig)
+!define RuntimeConfig(e_alias, e_label, e_techn) GCPEntity(e_alias, e_label, e_techn, #4285F4, RuntimeConfig, RuntimeConfig)
+!define RuntimeConfig(e_alias, e_label, e_techn, e_descr) GCPEntity(e_alias, e_label, e_techn, e_descr, #4285F4, RuntimeConfig, RuntimeConfig)
+!define RuntimeConfigParticipant(p_alias, p_label, p_techn) GCPParticipant(p_alias, p_label, p_techn, #4285F4, RuntimeConfig, RuntimeConfig)
+!define RuntimeConfigParticipant(p_alias, p_label, p_techn, p_descr) GCPParticipant(p_alias, p_label, p_techn, p_descr, #4285F4, RuntimeConfig, RuntimeConfig)
+GCPEntityColoring(Runtime_Config)
+!define Runtime_Config(e_alias, e_label, e_techn) GCPEntity(e_alias, e_label, e_techn, #4285F4, RuntimeConfig, Runtime_Config)
+!define Runtime_Config(e_alias, e_label, e_techn, e_descr) GCPEntity(e_alias, e_label, e_techn, e_descr, #4285F4, RuntimeConfig, Runtime_Config)
+!define Runtime_ConfigParticipant(p_alias, p_label, p_techn) GCPParticipant(p_alias, p_label, p_techn, #4285F4, RuntimeConfig, Runtime_Config)
+!define Runtime_ConfigParticipant(p_alias, p_label, p_techn, p_descr) GCPParticipant(p_alias, p_label, p_techn, p_descr, #4285F4, RuntimeConfig, Runtime_Config)

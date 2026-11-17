@@ -1,0 +1,17 @@
+sprite $Stackdriver <svg viewBox="0 0 24 24" width="64" height="64"><path style="fill:#aecbfa" d="M 11.19 11.35 L 15.75 3.51 L 6.75 3.51 L 2.25 11.35 L 11.19 11.35 Z"/><path style="fill:#4285f4" d="M 2.25 12.65 L 6.74 20.49 L 15.73 20.49 L 11.25 12.65 L 2.25 12.65 Z"/><path d="M21.75,12l-4.5-7.87L12.74,12l4.51,7.87Z" style="fill:#669df6"/></svg>
+
+sprite $Stackdriver_png [64x64/16z] {
+xLP13iCW32kaZVh_5sy3QTAws35qXntmtOsnYSksBIpy4Oh5KFc0Njgtf-bzlDiiln_DlTmQ_yGDy-p5jsdpsdWkW8u_EjzcitFF1AJcDHnJsTcR3pC4zFev
+7fwWYEEHXK9sJ82I7HEGNFnCW9OTpb0sByvmmBpe16LmlBlfZUYU2o0uOhvUg0A_0gZwzpD6XG8k0GB-AUQtLS3Vm-iRTC2OW6_pnmG4CUrCW0dP0xwB_J6G
+8IXGsK9mKLKBuJzO4u0NHnD0Lat9aEwja27TzJp3v06JMfYKJMPX-eBZ0eJIemA4kgGPAg1Tkh3mKpm0
+}
+
+!function $StackdriverIMG($scale=1)
+!return "<img data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAABsUlEQVR42u2ay23DQAxEtzQeUovr4DEtuIVUoQJci1tgNoFgBIYEWcsdfhwe5izxkcvZD5uItP+sVgAKQAEoAAWgABSAAqDR1+1XhFR0ANwlQMWtgDVDyOD5+ZuX6526wgBABi9b3+zBSxe7AzDIPu1kX1aRNwDT7F+uj+w/5AbAoPFtZZ+fAWiXgsb2rBtf2wh+lT0Ac9vrgS77AMarIJPtyYHMAHjZ3pEWOAAn2+MXAQzZYqTsL+ca37ZgAJwaH58FcLYhJrW9eQ0xq+1Nq4IM+31oFWS2vSm2mN321Lb4To1vyBbfwfZUDfGoAiDaWfcNEPzhaTHM9bTS9oarIBIADgXg4/NOSFkugaEe0H+SuwQoMqoCGt4HgAEgN0F6G/yzDJAQGLQN1m+ErKqgC1UFPOUskLgK5h2HDRribFvkqfcBPz8IBrDMtEXIlVgiWyTYpWgGW4TeCidoiAR/GAlsi2zyMhS4CuweRwPaIpu+DkezRZcBiUC2SG4jMhFs0XVGKEBD9B2ScrZF/zE5o4YYe1DSyxZDzQqvVWB6iVrj8gWgABSAAlAACkABKABKfQPIBHNbMu9DOQAAAABJRU5ErkJggg=={scale="+$scale+"}>"
+!endfunction
+
+GCPEntityColoring(Stackdriver)
+!define Stackdriver(e_alias, e_label, e_techn) GCPEntity(e_alias, e_label, e_techn, #4285F4, Stackdriver, Stackdriver)
+!define Stackdriver(e_alias, e_label, e_techn, e_descr) GCPEntity(e_alias, e_label, e_techn, e_descr, #4285F4, Stackdriver, Stackdriver)
+!define StackdriverParticipant(p_alias, p_label, p_techn) GCPParticipant(p_alias, p_label, p_techn, #4285F4, Stackdriver, Stackdriver)
+!define StackdriverParticipant(p_alias, p_label, p_techn, p_descr) GCPParticipant(p_alias, p_label, p_techn, p_descr, #4285F4, Stackdriver, Stackdriver)

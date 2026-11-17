@@ -1,0 +1,18 @@
+sprite $Profiler <svg viewBox="0 0 24 24" width="64" height="64"><g><g><g ><rect fill="#669df6" x="8" y="2" width="8" height="2"/><path fill="#669df6" d="M16.54,7.43l-.13.13L18,9.16,18.12,9A8,8,0,0,0,16.54,7.43Z"/><path fill="#669df6" d="M 20.61 6.55 L 19.01 4.95 L 16.6 7.36 L 19.11 8.05 L 20.61 6.55 Z"/><path fill="#4285f4" d="M16.6,7.36l-.06.07A8,8,0,0,1,18.12,9l1-1Z"/><circle fill="#669df6" cx="12" cy="14" r="4"/><path fill="#aecbfa" d="M12,18a4,4,0,1,0,0-8v4L8.73,16.32A4,4,0,0,0,12,18Z"/><path fill="#669df6" d="M12,22a8,8,0,1,1,8-8A8,8,0,0,1,12,22Zm0-2a6,6,0,1,0-6-6A6,6,0,0,0,12,20Z"/></g></g></g></svg>
+
+sprite $Profiler_png [64x64/16z] {
+xPVBTiCW34GP3oRy_nSt9t4e0W5ZfzsqqJBE5H9w4i97Vbn0Hw3pJ8xy8nwU_9Nau9juIc_YeWAWH0vjP8KAiC4_il_rw-8EuAJFhkDk-jqf4Kz3oVbsM-6e
+dNu8QmKvYpZTsymvIZX7TwBvZh5c1PzzvDhwEWS3MWLO7M-qrPqN2mzW37mbpLqsSucGZayLp-WQw1uFcuGq2hZccnocLJ1peFAU7NzSuYo4bUxKyx6pqUMx
+6f9vpFdQWHNF1G-Pto_nnVx8I_QZErpWk_X5WulnA_nkyQE6PWdCse6zsPvYMEPVRTlMRbzRNsAp0cWLR4BzsQzmSCmx8CgWUwehlaDf7yK0cZqqVazlBXlm
+j4KBivyJ1LJMmB42RNw5vFzF77-cSw8VlyhkHdVdaF7X-d9YW_RNdpCFc7xzEhj_y-Bkxpm3FW_AtvCl
+}
+
+!function $ProfilerIMG($scale=1)
+!return "<img data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAACaElEQVR42u2bzW3DMAyFMxoPXSErdIVeefQKWcEr5OIBOktXUC0kCIygFknpiYobHngp4Njvk/gjij2llE7vbKcAEAACQABA2+flh1ZjsNGRAOQPTmALAAEgABwrCKIt0mAACABi3HlPAE9B970A7GSc1wOwieZiutOmPCHdjgewORPU5v7dM4Did3l0HYAsgpbtiqLEwwHkj+xUBT6EnSeceCiAu/jkYR/Tzc6Xm9WKhwEwbnkulLtshfCAMdnFQwAoxZuKFC2MDQAeUgkqxHPLIUYTU84N4psAKHyeHLPKEABdPqgSuK8LCCtiqgzn70TTnAgAgTwBVIn/C9wK4GGXa1qmaxlGCb4LgMIHcM3KbQFsQBSDZyEwkgcAE30pWP4F4A5hd0eVfrMrgMLqU211uAdAAYERARgCoDJTiACyrTEhGeFSTwBq39eWtRKAbIUd5nsYMm7/hAJQ2AXUGgcQhUjT4UgDYC8WeANQvwwNoMINhgPgwQDoEAC+5vRvAYgukP1aK/6ILkCIVZcA7AXm4Wlw78Osq/5SabClDsirXis+2/q8qdjqCYCtbjDN9cIV5wH3SpAsQScfa1vEC6tPA84CduqriAUtHrX9a/sB5mPoKobB4gnVG0R2hJbSc7n3p/V5qUeIbMaip8DEFbiD4GfR+W+a5mjLu5EAurSoPeYBkPcC7AlBeB+NuhrjXtdihr7imKsxQ+eHU6d7QcRO85wLUI28G67JIW42ej6Ya597yUHJzuMxXYamvW9xU+PE2HFGZYGTYkuvUXmXQcmGybFuI/JDR2Wl/wuIafEAEAACQABwtF+QWUELL7i20AAAAABJRU5ErkJggg=={scale="+$scale+"}>"
+!endfunction
+
+GCPEntityColoring(Profiler)
+!define Profiler(e_alias, e_label, e_techn) GCPEntity(e_alias, e_label, e_techn, #4285F4, Profiler, Profiler)
+!define Profiler(e_alias, e_label, e_techn, e_descr) GCPEntity(e_alias, e_label, e_techn, e_descr, #4285F4, Profiler, Profiler)
+!define ProfilerParticipant(p_alias, p_label, p_techn) GCPParticipant(p_alias, p_label, p_techn, #4285F4, Profiler, Profiler)
+!define ProfilerParticipant(p_alias, p_label, p_techn, p_descr) GCPParticipant(p_alias, p_label, p_techn, p_descr, #4285F4, Profiler, Profiler)

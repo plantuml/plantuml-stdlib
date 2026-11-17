@@ -1,0 +1,17 @@
+sprite $Automl <svg viewBox="0 0 24 24" width="64" height="64"><g><path fill="#4285f4" d="M 4.5 16.72 L 9.5 8.14 L 11.17 8.14 L 12.83 5.57 L 11.15 3 L 7 3 L 2 11.58 L 4.5 16.72 Z"/><path fill="#669df6" d="M 14.5 5.57 L 12.83 8.14 L 16.17 8.14 L 17.83 5.57 L 16.17 3 L 12.83 3 L 14.5 5.57 Z"/><path fill="#aecbfa" d="M 19.5 7.28 L 14.5 15.86 L 12.83 15.86 L 11.17 18.43 L 12.85 21 L 17 21 L 22 12.42 L 19.5 7.28 Z"/><path fill="#669df6" d="M 11.17 21 L 9.5 18.43 L 11.17 15.86 L 7.83 15.86 L 6.17 18.43 L 7.83 21 L 11.17 21 Z"/></g></svg>
+
+sprite $Automl_png [64x64/16z] {
+xPVB4i8W34L9I1t-_ukL2XOeeNcidE6kj7gu9st7OWWxEsqeNSdluLK28XmRF54-4ki28ZvrmNoeyb5RFqwWhbTFG2D_2iWdI6cwW5JWNgyQ09bwwIqmmJKN
+q6aVdFRainzE7k4dvmTGKhy88B0djWVcF4vkEuu7N_sC9qtzP879UL_WuAmV5q0j3ewJTrz0RJ_mgAy7tbzKpmkW3ES4o88t0i741r_z9M2ihm9enOk0uTgr
+0cRxhm0vy2nGNyKIkACBdcfz_uCjnN_f7pUWvhjwFNuK_FXB-z0zR0tyW__p3cvvzGKxG5XD8Dd1BYQGxS3v2MGyEy7-SxCpv0q
+}
+
+!function $AutomlIMG($scale=1)
+!return "<img data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAB4UlEQVR42u2by5GDQAxEJzQdNhbHoaNT2BQ2CgfgWJzCGKpgDxTMR5+Rxtahjxz01OoBASnnnL5ZKQAEgAAQAAJAAAgAbP3cX7got+p4/e33BYtyReASwFIQ9BS/CU8gYA2CVwCZKDgASA0uQFcAiN3njoIrAJkp01EYGnwFJatR4BSfhIq/GgUcMQoeum86BibB5+mewCr4CkdhHnoUTmn9FZIJAOngO0l/lvX/nvoA0LP1FwCwSgUAM/hwu/5fJ9bfHVBSqfhVuEoLgNica2gvfhOIAmB2f0TxcACA0gBm6n6XC1SDb1DxcAEA2QCYxx4MKP6q+80u+Njut7pg5uCrdX8XGcCMwdftAo07PhfWb3WBtP3RkfWbwlB0BLwEX48LJEMQnHafBqDTBe6Cjz0CnS7wbP3+EOx0wbTdbwUAEwcfaj8Neg8+UN0HOO8+aG+E0ozHntROcOrg42yFq93flptYEQgWS+4+dS1e7D5ltc0848ndF/9IivJGlznnSF2GigOgvtO3sr4GgEel+Icn64sC8GB9SvdFADixPvmOdBQA1WPP/DtB4xEAcwCG5z/7YUwSABiMgq+vxQePgt1HUtcAho6Cz/8FKKNAcIHYIiZ+mAgAASAABIAAEAC+V2/rlcN3e2nhrwAAAABJRU5ErkJggg=={scale="+$scale+"}>"
+!endfunction
+
+GCPEntityColoring(Automl)
+!define Automl(e_alias, e_label, e_techn) GCPEntity(e_alias, e_label, e_techn, #4285F4, Automl, Automl)
+!define Automl(e_alias, e_label, e_techn, e_descr) GCPEntity(e_alias, e_label, e_techn, e_descr, #4285F4, Automl, Automl)
+!define AutomlParticipant(p_alias, p_label, p_techn) GCPParticipant(p_alias, p_label, p_techn, #4285F4, Automl, Automl)
+!define AutomlParticipant(p_alias, p_label, p_techn, p_descr) GCPParticipant(p_alias, p_label, p_techn, p_descr, #4285F4, Automl, Automl)

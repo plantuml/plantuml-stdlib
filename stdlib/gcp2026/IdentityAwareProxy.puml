@@ -1,0 +1,22 @@
+sprite $IdentityAwareProxy <svg viewBox="0 0 24 24" width="64" height="64"><g><path fill="#4285f4" d="M11.85,7a5.1,5.1,0,1,0,5.1,5.1h0A5.1,5.1,0,0,0,11.85,7Zm0,9.08a4,4,0,1,1,4-4h0A4,4,0,0,1,11.85,16.09Z"/><path fill="#669df6" d="M13.77,12.71a2.09,2.09,0,0,0-.28-.22,3.11,3.11,0,0,0-2.61-.28,2.31,2.31,0,0,0-.89.47.86.86,0,0,0-.37.65v1h4.47v-.82A1,1,0,0,0,13.77,12.71Z"/><path fill="#669df6" d="M11.85,11.53a1.16,1.16,0,1,0-1.17-1.15h0A1.17,1.17,0,0,0,11.85,11.53Z"/><path fill="#aecbfa" d="M 20.78 10.72 L 19.74 10.72 L 20.51 11.49 L 18.3 11.49 L 18.3 12.39 L 20.51 12.39 L 19.74 13.17 L 20.78 13.17 L 22 11.94 L 20.78 10.72 Z"/><path fill="#669df6" d="M 17.54 8.5 L 18.18 9.14 L 19.16 8.17 L 19.16 9.26 L 19.89 8.52 L 19.89 6.79 L 18.16 6.79 L 17.43 7.53 L 18.52 7.53 L 17.54 8.5 Z"/><path fill="#669df6" d="M 19.16 15.83 L 18.18 14.86 L 17.54 15.49 L 18.52 16.47 L 17.43 16.47 L 18.16 17.2 L 19.89 17.2 L 19.89 15.47 L 19.16 14.74 L 19.16 15.83 Z"/><path fill="#669df6" d="M3.35,10.65A1.35,1.35,0,1,0,4.71,12a1.35,1.35,0,0,0-1.36-1.35Zm0,2.1A.76.76,0,1,1,4.11,12h0a.76.76,0,0,1-.76.75Z"/></g></svg>
+
+sprite $IdentityAwareProxy_png [64x64/16z] {
+xPNB3iGW24KBMEB_V_7uQ57KZBYOP1RSbJKUkIZ5wtAvNAv_528ECvnbOpa-mW6ty1Xx3JliyL0mJlxhA9pvh_1hfMmX-BNdMLkkoPGH99Ojvki80CHGCD-Q
+u9JiaioX4USt5fJ30adXD7pFRmo0P9eZuOB7RoUG4-qoNLvsdm2HZfvPudbTSpNofCENQ32jMnmBlJBm-G34mS3ZrZynzx-RoejmFZ_GwxXfyaKutrzNlIYN
+ntA5QAtWj90NV30NSAsqaRVNxrFgq7Ju0oxM1dlurGQ2awL_r7w3gqzR_weDC0OiJu3gmDR-pQf_nzF-hH-0bifjVt-UnXrqrTm7lClbSlrI7m
+}
+
+!function $IdentityAwareProxyIMG($scale=1)
+!return "<img data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAB9UlEQVR42u2ZzXEDIQyFtzQdUkvq4JgW0kKqoIDU4hbIbgZniAaBBDjIk3d4N5tBn37QSkdK6fjPOgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADgD/TydrtEhYbOeX2/XUpcLgFkQ+Op1BHNGO8OQDY8DWgYhBsApxFBMC6yFJB+F1rp4TYFco5XjVZESw2GBKA0/PAEII6EcyttBAB0N74AsvcVqHjwaFz+W8ooCpp6sPUZrFxaumhg4RuU55HrPoCFfuiELRdp0sEtAO6tRpiaAOSzHxYFvZyiXq4KnqLFAMhSCz4+E2WNA6jkqZirFS/1wJrebm10MQApyw6g8FKoAOkCUHZwqsjqnX8ZWHi8VNJAaHpf6LpoBYCBGiMB4MZK8gEgn8PrgKbGzACIUymQL51TIA2lwO8zmlqSYqfRoWf8SBEkq4dahc8CwVgEVcZbn0FLC0zKpy9pnkTrM7irESovGRcDCFsaoZlKXV50BoC1B9gNoNq3F5VfKwlqcD8UXXlh/mnd+wTe/jksfcePTH01cwXenboYiDQGobTyv5V54OFqKCrMBe8R8bMLYDsC03TY/V4gGxcHx+JJkzqux+ITuwHtTiA+zWaIhXtopYVxPRafBgCWowAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA70BRB7/KYQ/wMuAAAAAElFTkSuQmCC{scale="+$scale+"}>"
+!endfunction
+
+GCPEntityColoring(IdentityAwareProxy)
+!define IdentityAwareProxy(e_alias, e_label, e_techn) GCPEntity(e_alias, e_label, e_techn, #4285F4, IdentityAwareProxy, IdentityAwareProxy)
+!define IdentityAwareProxy(e_alias, e_label, e_techn, e_descr) GCPEntity(e_alias, e_label, e_techn, e_descr, #4285F4, IdentityAwareProxy, IdentityAwareProxy)
+!define IdentityAwareProxyParticipant(p_alias, p_label, p_techn) GCPParticipant(p_alias, p_label, p_techn, #4285F4, IdentityAwareProxy, IdentityAwareProxy)
+!define IdentityAwareProxyParticipant(p_alias, p_label, p_techn, p_descr) GCPParticipant(p_alias, p_label, p_techn, p_descr, #4285F4, IdentityAwareProxy, IdentityAwareProxy)
+GCPEntityColoring(Identity_Aware_Proxy)
+!define Identity_Aware_Proxy(e_alias, e_label, e_techn) GCPEntity(e_alias, e_label, e_techn, #4285F4, IdentityAwareProxy, Identity_Aware_Proxy)
+!define Identity_Aware_Proxy(e_alias, e_label, e_techn, e_descr) GCPEntity(e_alias, e_label, e_techn, e_descr, #4285F4, IdentityAwareProxy, Identity_Aware_Proxy)
+!define Identity_Aware_ProxyParticipant(p_alias, p_label, p_techn) GCPParticipant(p_alias, p_label, p_techn, #4285F4, IdentityAwareProxy, Identity_Aware_Proxy)
+!define Identity_Aware_ProxyParticipant(p_alias, p_label, p_techn, p_descr) GCPParticipant(p_alias, p_label, p_techn, p_descr, #4285F4, IdentityAwareProxy, Identity_Aware_Proxy)

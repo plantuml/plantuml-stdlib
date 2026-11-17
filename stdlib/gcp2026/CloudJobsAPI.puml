@@ -1,0 +1,22 @@
+sprite $CloudJobsAPI <svg viewBox="0 0 24 24" width="64" height="64"><g><g ><g ><path fill="#4285f4" d="M6.45,18.24a3,3,0,1,1,3-3A3,3,0,0,1,6.45,18.24Zm3.63-.4A4.43,4.43,0,1,0,2,15.32a4.91,4.91,0,0,0,0,.67,3.43,3.43,0,0,0,.09.44l.06.21a4.59,4.59,0,0,0,.34.79,4.24,4.24,0,0,0,.76,1l.15.15.33.27a4.16,4.16,0,0,0,.73.44A4.44,4.44,0,0,0,9,19l2.93,2.93a.33.33,0,0,0,.47,0l.66-.65a.33.33,0,0,0,0-.47Z"/><path fill="#aecbfa" d="M11.8,16.58A5.41,5.41,0,0,0,12,15.07,5.53,5.53,0,0,0,6.39,9.65,5.82,5.82,0,0,0,4.47,10V5.83a.62.62,0,0,1,.62-.62H21.28a.63.63,0,0,1,.63.62V16a.63.63,0,0,1-.63.63Z"/><path fill="#669df6" d="M15.58,5.21V3.73H11.14V5.21H9.65V2.87a.63.63,0,0,1,.63-.62h6.16a.62.62,0,0,1,.62.62V5.21Z"/></g><path fill="#4285f4" d="M 15.58 5.21 L 17.06 4.74 L 17.06 5.21 L 15.58 5.21 Z"/><path fill="#4285f4" d="M 9.64 5.21 L 11.13 4.67 L 11.13 5.21 L 9.64 5.21 Z"/></g></g></svg>
+
+sprite $CloudJobsAPI_png [64x64/16z] {
+xPVR4eCW34HXJMd-_ujRKIktWKJiQ3li6mnd3S54D6ReddguJ1hSvhYpFyRRolZs_9CPbN49cHGgU4qg3Nxmv_DM_1RtLa9lBRKA-00FubaGXP3H2-n50eCK
+vqXeRg6A2mmAE2qxnyV0IlamRrig6W54YT_MXmOav_USXpFr04ghuuWWvP4ztbkIXaVXFAKyNSpZ1Bud_uQp09YRd-kqTAiJ3StBNR8XAFYeyQmZrMtJhOq7
+GDo4b0QXT0OKeGSCTWU7hI4fxzpm2ZjQnmN-JmnwUDE9lqza_0X-LIy
+}
+
+!function $CloudJobsAPIIMG($scale=1)
+!return "<img data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAABtElEQVR42u3by3HEIAwGYJemQ1pwC6lDx7SQFlKFC0gtaYHgGWfHSTBYiIAU/oNu6zF8gMxrlxDCMnMsAAAAAAAAgA7x/PqxxQgtwh1ALDS1qvwRBAAA+Aagns8DwBrAqgRYPQLEQoenl0eIKrAqn28K8PYeOEZwFltLgOA0CAAAAAAAAAAAAAAAAI0B9qkxOZgiNwOgO78xCEJDVoOGIGjYcji+fPlXAPt6PAaf1uff1uoxLPYGPUCm0qngFMRAhHqAvSKCiv/qEUY+pXUAysonEQblBDlApvJ8tS935IA7COwB4FaXFuSLkb1ABnDRktqkyQNzgRgg5ApfmzwTM0Z7AKWCV8wZkkPIMgBpWz+DOWoYqABUJzGFYWASgAEwOUCXIdB5LqACcP8VEB2OXkyBqUXrtzza/tPj8dRUtqLy3KonjQBItd6m6PrmWv/OYoilC6IDLvmcy5uie6sXdn3oFMVdIpdXZQsI0mB3ABX7geceYhqhZmFzB2L7yhO5XSXXt8V/jP1HSLfWprkubxWh68ssInR/oTWEIeoXCPMAJBDmGQIJBJomCeJvcwAAAACsxSfcc/mYmC38LwAAAABJRU5ErkJggg=={scale="+$scale+"}>"
+!endfunction
+
+GCPEntityColoring(CloudJobsAPI)
+!define CloudJobsAPI(e_alias, e_label, e_techn) GCPEntity(e_alias, e_label, e_techn, #4285F4, CloudJobsAPI, CloudJobsAPI)
+!define CloudJobsAPI(e_alias, e_label, e_techn, e_descr) GCPEntity(e_alias, e_label, e_techn, e_descr, #4285F4, CloudJobsAPI, CloudJobsAPI)
+!define CloudJobsAPIParticipant(p_alias, p_label, p_techn) GCPParticipant(p_alias, p_label, p_techn, #4285F4, CloudJobsAPI, CloudJobsAPI)
+!define CloudJobsAPIParticipant(p_alias, p_label, p_techn, p_descr) GCPParticipant(p_alias, p_label, p_techn, p_descr, #4285F4, CloudJobsAPI, CloudJobsAPI)
+GCPEntityColoring(Cloud_Jobs_API)
+!define Cloud_Jobs_API(e_alias, e_label, e_techn) GCPEntity(e_alias, e_label, e_techn, #4285F4, CloudJobsAPI, Cloud_Jobs_API)
+!define Cloud_Jobs_API(e_alias, e_label, e_techn, e_descr) GCPEntity(e_alias, e_label, e_techn, e_descr, #4285F4, CloudJobsAPI, Cloud_Jobs_API)
+!define Cloud_Jobs_APIParticipant(p_alias, p_label, p_techn) GCPParticipant(p_alias, p_label, p_techn, #4285F4, CloudJobsAPI, Cloud_Jobs_API)
+!define Cloud_Jobs_APIParticipant(p_alias, p_label, p_techn, p_descr) GCPParticipant(p_alias, p_label, p_techn, p_descr, #4285F4, CloudJobsAPI, Cloud_Jobs_API)

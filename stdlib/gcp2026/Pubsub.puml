@@ -1,0 +1,17 @@
+sprite $Pubsub <svg viewBox="0 0 24 24" width="64" height="64"><g><circle fill="#669df6" cx="18.97" cy="8.21" r="1.72"/><circle fill="#669df6" cx="5.03" cy="8.21" r="1.72"/><circle fill="#669df6" cx="12" cy="20.28" r="1.72"/><g ><rect fill="#4285f4" x="14.69" y="10.22" width="1.59" height="8.04" transform="matrix(0.5, -0.87, 0.87, 0.5, -4.59, 20.53)"/><rect fill="#4285f4" x="4.49" y="13.45" width="8.04" height="1.59" transform="translate(-5.98 6.17) rotate(-30)"/><rect fill="#4285f4" x="11.2" y="4.19" width="1.59" height="8.04"/></g><circle fill="#aecbfa" cx="12" cy="12.23" r="2.78"/><circle fill="#aecbfa" cx="5.03" cy="16.25" r="2.19"/><circle fill="#aecbfa" cx="18.97" cy="16.25" r="2.19"/><circle fill="#aecbfa" cx="12" cy="4.19" r="2.19"/></g></svg>
+
+sprite $Pubsub_png [64x64/16z] {
+xLNR5eGW27H4FVt_5w-b7ikyi79Q7xPv90O81bJgnOE0Y4m7XFJf04IY013oCvsmWY-jNzg_N01a0X1eq10PVZhSKcqUjw8QzP3RWJu_E56JxboNZ-XKAI5-
+kSOk-Sd9jVbkCRyhjjGaMvbUCt8bItNybI-ugQ-N0q1rWRfEZ-tVwNxC1D0aEq14iWB-cgyBFWuJ6yVINTFhZNq8ZLzQKxuVMp0EhpLsjeU-wZzPqPHJSewU
+sHWQ4gocsSzShOtPovPwisqB-jIird-QhJDGpgmXvAkVy375LoofTvp0sfHUZQn3XQ-k6VZNkWOxVD0uZzLi03ZMapZcOp5_KVzY0188GAYV5qDy00
+}
+
+!function $PubsubIMG($scale=1)
+!return "<img data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAACBklEQVR42u2bsZWDMAyGGU3FzZIV0qrMCqzACmkY4GbJCjrgOTk9AgYZYRtbxf/obOnDlmQLGiJqalZjAAyAATAAsdX9ToJB6J6j6gDgnKYVQdEANpxPAiH2sqedKhIACgBAiQBIIDQAtgXKAwBVB0HBKsCaCyGspRSG9vnv+OOZpgoUA7i1L3BC9wye+OfxIq7QcUYbjtgkmWicgBYEqQB4bEJVAJ6J3ooOwL1tn02gCYA2hAkAbNlEKgBurd5klwSgOVnJAKLn7x1xqdcEANpBUAFAo2GTRtQNPRfwihBDCiEPhPMqQVYMwUm3QlFtstNghveBUSHEAtAHAMAiAAS+/UmlAIBQADG2Qe4AwFaAxYCLAhgOOBDYE/jKAnys7AEMxvKT3pFt8HHejYXv8ZIBYH19mAco5zjOjrl4tDEyPzbzMZdsksYNieNrDuCC41wgDIgcqndcn01qAPYEsfGK22Po2iraTHls+X+JX6sfCaJqPb17t/7mNQIqH/vR6ZXTqilsaY8qB9dpS2imUtUi5owoPde9E2cUiAYgw3uFIgE0muW05pcdGPF2KU4MEK6CHK/XQKsQwlycF0BA1VJ4ZUJM9Ymrp0IV2ZTMeH6VHdpiv+QXIq6Z0efQXksFIKseY4plTzn1GXMEAAbAtoAFweLTIFWbBqsvhOy3OQNgAAxATvoD7XUi79a/TYQAAAAASUVORK5CYII={scale="+$scale+"}>"
+!endfunction
+
+GCPEntityColoring(Pubsub)
+!define Pubsub(e_alias, e_label, e_techn) GCPEntity(e_alias, e_label, e_techn, #4285F4, Pubsub, Pubsub)
+!define Pubsub(e_alias, e_label, e_techn, e_descr) GCPEntity(e_alias, e_label, e_techn, e_descr, #4285F4, Pubsub, Pubsub)
+!define PubsubParticipant(p_alias, p_label, p_techn) GCPParticipant(p_alias, p_label, p_techn, #4285F4, Pubsub, Pubsub)
+!define PubsubParticipant(p_alias, p_label, p_techn, p_descr) GCPParticipant(p_alias, p_label, p_techn, p_descr, #4285F4, Pubsub, Pubsub)

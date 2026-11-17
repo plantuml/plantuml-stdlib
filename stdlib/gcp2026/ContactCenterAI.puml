@@ -1,0 +1,22 @@
+sprite $ContactCenterAI <svg viewBox="0 0 24 24" width="64" height="64"><g fill="#4285f4" transform="translate(4.453125 2.0625)"><path d="m3.31971582 2.33823529.00009594 3.99472004.00412508-.00014296-.00412508.00253919v5.24097294l3.08759008 1.7885983-3.40772939 2.0206654-2.30735058-1.3399851c-.40888134-.237377-.65992003-.6706733-.65992003-1.138824v-7.90373382c0-.4681779.25103869-.90140617.65992003-1.13885121z"/><path d="m11.673009 7.66941176 3.3593928 2.00914567v3.25339057c0 .4699828-.2497809.9048433-.6567403 1.1431829l-6.84418751 4.00893-.0203207-.011958.01479729.011958-2.95218791 1.7444301c-.15820139.0934773-.36258803.0416138-.45650647-.1158215-.03043331-.0510435-.04654667-.1092618-.04666941-.1686417l-.00693495-3.4293438 3.53280746-2.1127359-.01043311-.0174245 4.08705101-2.3880428z"/><path d="m8.21240328.18320117 6.20611302 3.6124228c.4094506.23829354.6607605.67306994.6607605 1.14292769v3.33880128l-3.4764194-2.0660692-.0037049.00596417-4.11097184-2.38693884-3.04952882 1.77072322v-4.01303263l2.41387871-1.40479849c.41960454-.24426823.94019958-.24426823 1.35987273 0z"/></g></svg>
+
+sprite $ContactCenterAI_png [64x64/16z] {
+xPVR3eCW38PDyyVq_PzuqwWCAFIqxOfUcSZNWrZukstBVcX46HhyDgJemq8v47-O7z-vCcIY1ppqlFqpW6JUbWATWKJUu86kH0UyLWIuuVVUmmGlCUXvWjq1
+Dpp4Ns7ieEOnt4mJBxU2bHytKv0lRwDy-Gn1_YaYp5zxcU3F8e8yxYA2lDf-Ag-qdu6Vfc3XPnviFFFYvmkWN2aQBte0E_Yk1dZEhsuL-SxFjWZh-GtnheBz
+2eE1ddOGjQlSAg0w8X6H0BXZ93MCw-PMzyAf0hyilvBoporWAHEyvaFocpYblHy-EZqGfoQ7azypOqyyzSl16Xt_Ooy
+}
+
+!function $ContactCenterAIIMG($scale=1)
+!return "<img data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAABl0lEQVR42u3bTRLCIAwF4B4tCw/G0mP1RF4BfwZdONZCyUteIYusHT4ghRCXnPMycywBEAABEAAecbneniEl5gEoA0+PyF+RhgfYGPh3yHAAZZnnxjg/QFnu64HBf7YFGoJx5rNlfjgLACw/IJKcAAHUtwViptEAqtsCscStAFS2hfZhphVgVYSwASiDr5qRHQCpwIQjHAHInQAJdGZ4BTNAVfbuzRusAKh7Az0A6uZ4DgDlO8W8AC35YWiAmvwwBcC/z+Y0AFvbYvQcsHmWeG+L0QF2T5OzAKj91tkBugskIwB0FUhGAsgzJcEACIAA4AWAPGfVVooYAFTr9q1FESaA7i1xpCzGCNBcsu4pjDID7OaHltKXJ0DSfspSfBwROEAHgoBAbe8CB/bpz2Wvsdw1Ei268WkBLneVTy2q9U3QLTNahy31Si0qu6O6x7yaIin6g6AAirMO7SBl7hBLFs2SrABmjytsAOYN0ywAyatlngFAPAbOAOA6cE8At+XuDbAyDdwaQNgGbtYuH/8aC4AACIAAII47ZMND2SB8RF8AAAAASUVORK5CYII={scale="+$scale+"}>"
+!endfunction
+
+GCPEntityColoring(ContactCenterAI)
+!define ContactCenterAI(e_alias, e_label, e_techn) GCPEntity(e_alias, e_label, e_techn, #4285F4, ContactCenterAI, ContactCenterAI)
+!define ContactCenterAI(e_alias, e_label, e_techn, e_descr) GCPEntity(e_alias, e_label, e_techn, e_descr, #4285F4, ContactCenterAI, ContactCenterAI)
+!define ContactCenterAIParticipant(p_alias, p_label, p_techn) GCPParticipant(p_alias, p_label, p_techn, #4285F4, ContactCenterAI, ContactCenterAI)
+!define ContactCenterAIParticipant(p_alias, p_label, p_techn, p_descr) GCPParticipant(p_alias, p_label, p_techn, p_descr, #4285F4, ContactCenterAI, ContactCenterAI)
+GCPEntityColoring(Contact_Center_AI)
+!define Contact_Center_AI(e_alias, e_label, e_techn) GCPEntity(e_alias, e_label, e_techn, #4285F4, ContactCenterAI, Contact_Center_AI)
+!define Contact_Center_AI(e_alias, e_label, e_techn, e_descr) GCPEntity(e_alias, e_label, e_techn, e_descr, #4285F4, ContactCenterAI, Contact_Center_AI)
+!define Contact_Center_AIParticipant(p_alias, p_label, p_techn) GCPParticipant(p_alias, p_label, p_techn, #4285F4, ContactCenterAI, Contact_Center_AI)
+!define Contact_Center_AIParticipant(p_alias, p_label, p_techn, p_descr) GCPParticipant(p_alias, p_label, p_techn, p_descr, #4285F4, ContactCenterAI, Contact_Center_AI)

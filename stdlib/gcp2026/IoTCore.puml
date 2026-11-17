@@ -1,0 +1,23 @@
+sprite $IoTCore <svg viewBox="0 0 24 24" width="64" height="64"><g><g ><path fill="#4285f4" d="M12.54,12.43V8h0a1.14,1.14,0,1,0-1,0v4.42H7.27V9.6a1.14,1.14,0,0,0-.53-2.15A1.14,1.14,0,0,0,6.22,9.6v2.83H6a3.82,3.82,0,1,1,1.4-7.38A5.22,5.22,0,0,1,16.84,5a4,4,0,0,1,1.23-.2h0a3.83,3.83,0,0,1,0,7.66h-.25V9.6a1.14,1.14,0,1,0-1.06,0v2.83Z"/><path fill="#669df6" d="M7.27,15.39a2,2,0,0,1,1.54,2,2.07,2.07,0,1,1-2.59-2V12.43h1Zm-.53,3a1,1,0,1,0,0-2,1,1,0,0,0,0,2Zm11.08-3a2.07,2.07,0,1,1-1.06,0V12.44h1.06Zm-.53,3a1,1,0,0,0,.39-1.94,1,1,0,1,0-.39,1.94Zm-4.75-.43h0a2.06,2.06,0,1,1-1,0v-5.5h1.06Zm-.54,3a1,1,0,1,0-.93-.62A1,1,0,0,0,12,20.94Z"/></g></g></svg>
+
+sprite $IoTCore_png [64x64/16z] {
+xPNB4eCm24K3mGp__yLrQbeDyefjDntlIiH30WHJogsV2JTTXFajke3peDa8n58VubC1D7mcW8fpItNCn9cn-osME2MSIJeTmVWIrTUKmydS5qrqB962lakF
+vqpjtChesG-Mo7_mwRp81eLn-bIcByAXu_iYBx8YdQTXAJBhXwppZ6Rzo2OiopY-MPwCyvlbvVoqEHwjyS_nQFu_KhnpuyGykVSPj0Ovw-R_aAzjLTK9uTFK
+DYqQltHdW4Czh7BWdw_1tG7qwFiY1_xaisktK-SdhuPVu6jFjIZyomTU_UfMgNF7jYTm6r3RqAF1WfS59GpmRdY5lMCzG0tExugC6H-wkSJdt-l6d61F_2eV
+TomOfhKOrHyPVmFXn6K2GBai0FY0lXNh0G
+}
+
+!function $IoTCoreIMG($scale=1)
+!return "<img data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAB+0lEQVR42u2by7HDIAxFKU2LV0vq0PK1kG5cUVog9gyZ8RDz1cdAtNAuWL4HpIuZ4Lz37pfDGQADYAAMgHb8/b8gFcsCCAJ9ZeAeawA4hDQI/wIxNYAwk54h5gPAKF4UwizixSCMVvOl2IYBEIR+WZeg+E9AbKdqAEJCVBDZDae1TFpme2ThyVVCBiBc09C4QWLfQ9wlHpWcA6kA1OxMEDZ0ARBcmj6TUzVfCQBqvpB0r+kB0LycG0RQekBPvjYADQ+mlA5QxrS+aysAUKhl0MxnAIRKAAi13FMC2DlZqNUEgfBR0zPOSboAKgqRHte1D3CLAEDprfDoAMhfg9vEAIDrPAAnBACsJ0IZCCMCkDsTvEg6CgDsOR8kn6o+ni/Yw4eAUccZAANgAAyAATAABoAPwJ78CDy9zCdQSgglHyuAIN5nYuMGcDyzkFMVQJwcLmYHuQBcPTsa370SqDXvcyuDA8DjGQPPToY6AOgXxvM7alNcAIC/FQDm65WjBFry6QBwqeYTN6tMTV/aWQpYJh/U9hxuF8CCJV02pAr7TI2DinGgvRHCVk+OvPxjZVV2VoCAt2yFw4zCWQyhln2pd5zybaf9xxz/Fpe2s9kAuF8HwG5nU9wYSeznocY+VwEAPTa41J2hAoR17wwlQEDJPu3anAEwAAbAAAjGG4EpyTC/DBAkAAAAAElFTkSuQmCC{scale="+$scale+"}>"
+!endfunction
+
+GCPEntityColoring(IoTCore)
+!define IoTCore(e_alias, e_label, e_techn) GCPEntity(e_alias, e_label, e_techn, #4285F4, IoTCore, IoTCore)
+!define IoTCore(e_alias, e_label, e_techn, e_descr) GCPEntity(e_alias, e_label, e_techn, e_descr, #4285F4, IoTCore, IoTCore)
+!define IoTCoreParticipant(p_alias, p_label, p_techn) GCPParticipant(p_alias, p_label, p_techn, #4285F4, IoTCore, IoTCore)
+!define IoTCoreParticipant(p_alias, p_label, p_techn, p_descr) GCPParticipant(p_alias, p_label, p_techn, p_descr, #4285F4, IoTCore, IoTCore)
+GCPEntityColoring(IoT_Core)
+!define IoT_Core(e_alias, e_label, e_techn) GCPEntity(e_alias, e_label, e_techn, #4285F4, IoTCore, IoT_Core)
+!define IoT_Core(e_alias, e_label, e_techn, e_descr) GCPEntity(e_alias, e_label, e_techn, e_descr, #4285F4, IoTCore, IoT_Core)
+!define IoT_CoreParticipant(p_alias, p_label, p_techn) GCPParticipant(p_alias, p_label, p_techn, #4285F4, IoTCore, IoT_Core)
+!define IoT_CoreParticipant(p_alias, p_label, p_techn, p_descr) GCPParticipant(p_alias, p_label, p_techn, p_descr, #4285F4, IoTCore, IoT_Core)

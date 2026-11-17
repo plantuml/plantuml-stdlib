@@ -1,0 +1,21 @@
+sprite $WorkloadIdentityPool <svg viewBox="0 0 24 24" width="64" height="64"><line x1="14.002" y1="10.471" x2="18.002" y2="10.471" fill="none" stroke="#669df6" stroke-miterlimit="10"/><line x1="14.002" y1="13.512" x2="18.002" y2="13.512" fill="none" stroke="#669df6" stroke-miterlimit="10"/><rect x="8.003" y="11.009" width="2.014" height="1.991" fill="#4285f4"/></svg>
+
+sprite $WorkloadIdentityPool_png [64x64/16z] {
+xPPB2i0W34I5X9BxdxYBj2YwQEFGffzv2n5XSDIOf1H2I3QBXT1ERc6GtGS7PfY1mT01tzQBr75xduPhzT8HzO_hs_MxzUwuHkX-WhFtX-hTiSzTFtF-z-gV
+SVzvyPV__xBppt_pFr8_5QpVQFyGTg3i-0Z9PmK
+}
+
+!function $WorkloadIdentityPoolIMG($scale=1)
+!return "<img data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAA2klEQVR42u3avQ3CMBAGUA/HLMzhkhVYgSkyALNkhYNI0CBZBFOAfa/4mijNPf/GcYmIkjkFAAAAAAAAAAAAAAAAAAC85HBatyz3xKCpWw1dAI/iY5J0ASwTAdQegJgpXwOMNrkBAADgNwCXa8SWvc9bOZ7X+CQAfgXwLKw3ww8BAJ2FABgdoNWV925J3w2Fv58E0wO0unLr/RbAdHMAAABJAKwCVgE7QQA+hgA4EAHgUBQAgBwAGX+O1uy/x8vsrb/3ikydseVdkgIAAAAAAAAAAAAAAACAzLkBl61QuKkPN7cAAAAASUVORK5CYII={scale="+$scale+"}>"
+!endfunction
+
+GCPEntityColoring(WorkloadIdentityPool)
+!define WorkloadIdentityPool(e_alias, e_label, e_techn) GCPEntity(e_alias, e_label, e_techn, #4285F4, WorkloadIdentityPool, WorkloadIdentityPool)
+!define WorkloadIdentityPool(e_alias, e_label, e_techn, e_descr) GCPEntity(e_alias, e_label, e_techn, e_descr, #4285F4, WorkloadIdentityPool, WorkloadIdentityPool)
+!define WorkloadIdentityPoolParticipant(p_alias, p_label, p_techn) GCPParticipant(p_alias, p_label, p_techn, #4285F4, WorkloadIdentityPool, WorkloadIdentityPool)
+!define WorkloadIdentityPoolParticipant(p_alias, p_label, p_techn, p_descr) GCPParticipant(p_alias, p_label, p_techn, p_descr, #4285F4, WorkloadIdentityPool, WorkloadIdentityPool)
+GCPEntityColoring(Workload_Identity_Pool)
+!define Workload_Identity_Pool(e_alias, e_label, e_techn) GCPEntity(e_alias, e_label, e_techn, #4285F4, WorkloadIdentityPool, Workload_Identity_Pool)
+!define Workload_Identity_Pool(e_alias, e_label, e_techn, e_descr) GCPEntity(e_alias, e_label, e_techn, e_descr, #4285F4, WorkloadIdentityPool, Workload_Identity_Pool)
+!define Workload_Identity_PoolParticipant(p_alias, p_label, p_techn) GCPParticipant(p_alias, p_label, p_techn, #4285F4, WorkloadIdentityPool, Workload_Identity_Pool)
+!define Workload_Identity_PoolParticipant(p_alias, p_label, p_techn, p_descr) GCPParticipant(p_alias, p_label, p_techn, p_descr, #4285F4, WorkloadIdentityPool, Workload_Identity_Pool)

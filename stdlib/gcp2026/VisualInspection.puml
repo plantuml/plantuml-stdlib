@@ -1,0 +1,22 @@
+sprite $VisualInspection <svg viewBox="0 0 24 24" width="64" height="64"><path d="M14.28,15.33l1.93,1.93L12,20.65,1.2,12H8a4,4,0,0,0,4,4h0A4.09,4.09,0,0,0,14.28,15.33ZM16,12a4,4,0,0,1-.64,2.18l2.08,2.1L22.81,12Z" style="fill:#669df6;fill-rule:evenodd"/><path d="M12,3.36,1.2,12H8a4,4,0,0,1,4-4h0a4,4,0,0,1,4,4h6.79Z" style="fill:#aecbfa;fill-rule:evenodd"/><path d="M12,9.57a2.37,2.37,0,0,1,1.71.71,2.4,2.4,0,0,1,0,3.43,2.41,2.41,0,0,1-3.42,0,2.4,2.4,0,0,1,0-3.43A2.37,2.37,0,0,1,12,9.57Z" style="fill:#4285f4;fill-rule:evenodd"/></svg>
+
+sprite $VisualInspection_png [64x64/16z] {
+xPPH3uCm28IzdYxz_xzuJft3Gh4jsPltP08VEIWrdQP7Z_uc88IJH0nVDUoTZ1GuyR4UA8KOtjq3o4W10-_fWROGmnjx01af09tUquETAegcLhmnKFFUNDd5
+qoeTnEsnxHbpthHNIFI7eC_fm7EUAmdLKyS5Fnnucm0Zc8MC7DnSrYHvmu0O0eVuNm-lKYOFCsqtK0HGyfF1on5Iysf-hEEgUD50qbsg_T7Hw_x0nw_-TdD9
+xc_TkrK0v_qn3DPk87o3JiWO0cfHzmUqM2xn_NQycvk0ZoYAlUx_m7fDtPdvGnWhi4GBCCXRG-XyFmJnOWWZJoZ6S364uVTZ4D-6m2aYnl17Ztoz0G
+}
+
+!function $VisualInspectionIMG($scale=1)
+!return "<img data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAB+UlEQVR42u2awXHEMAhFXRqH1LJ1cEwL20KqcAFby7ag2DNKxtlICSBAks3hH3KxxFv4QgpLSmm5spYAEAACQAAIAAEgAASAHvp4JNx1OQBb0LvSQTuIawDYAoWX4I86N4D8S6d/BKcEQAz+uyROA6BQ72QIHiXRs96pmhMAM+W7+cIMwZv6wij13s0XRqt3d18YOeVdfKFX8FCRuy941jupfvN3OVDXlpLwqndwWMMHgCDlPbMMTAEIgq9u6O39CUcpronqAITnO1YCx02pIqisvzLXJvuC5fnODf5LaLkHFoCG8x2FwVczwapfsGpuoAAgcaS8HyQDUOrnoWB4iSlQbrWLvmDVzy8DAiju7ccft/tzV1KQOoDtm2Cxt18pkSFg4yIaJbAoA0CWCTZCUDfBxv2g6BhsoV7p/MTHoFbKsxuhBl9Qa4QafgidVvh2F6Ug/nEHYLXCminfdBkSQKBehjSzEE2vw4J0VHl2I0LweRAR+AI4QPB9EsubWTmpSdnkIcOQCAG7PooKz2coCKn1fICAQzyLK7apzabW7R8jivcIVwiqHxP4QncIJlQVLlNzAzDwhTkHJJR8Ye4RmXyPWEdzf/chKaYvnGdISuAL5x6UtOjnpxuVLfQL3eaFuw5LZ1+43rB0jMsHgAAQAAJAAAgAAWAEfQKlI/qfKlzYsQAAAABJRU5ErkJggg=={scale="+$scale+"}>"
+!endfunction
+
+GCPEntityColoring(VisualInspection)
+!define VisualInspection(e_alias, e_label, e_techn) GCPEntity(e_alias, e_label, e_techn, #4285F4, VisualInspection, VisualInspection)
+!define VisualInspection(e_alias, e_label, e_techn, e_descr) GCPEntity(e_alias, e_label, e_techn, e_descr, #4285F4, VisualInspection, VisualInspection)
+!define VisualInspectionParticipant(p_alias, p_label, p_techn) GCPParticipant(p_alias, p_label, p_techn, #4285F4, VisualInspection, VisualInspection)
+!define VisualInspectionParticipant(p_alias, p_label, p_techn, p_descr) GCPParticipant(p_alias, p_label, p_techn, p_descr, #4285F4, VisualInspection, VisualInspection)
+GCPEntityColoring(Visual_Inspection)
+!define Visual_Inspection(e_alias, e_label, e_techn) GCPEntity(e_alias, e_label, e_techn, #4285F4, VisualInspection, Visual_Inspection)
+!define Visual_Inspection(e_alias, e_label, e_techn, e_descr) GCPEntity(e_alias, e_label, e_techn, e_descr, #4285F4, VisualInspection, Visual_Inspection)
+!define Visual_InspectionParticipant(p_alias, p_label, p_techn) GCPParticipant(p_alias, p_label, p_techn, #4285F4, VisualInspection, Visual_Inspection)
+!define Visual_InspectionParticipant(p_alias, p_label, p_techn, p_descr) GCPParticipant(p_alias, p_label, p_techn, p_descr, #4285F4, VisualInspection, Visual_Inspection)

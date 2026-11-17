@@ -1,0 +1,23 @@
+sprite $CloudDomains <svg viewBox="0 0 24 24" width="64" height="64"><path style="fill:#669df6;fill-rule:evenodd" d="M 16.38 5.77 L 11.29 18.22 L 12.71 5.77 L 16.38 5.77 Z"/><path style="fill:#aecbfa;fill-rule:evenodd" d="M 12.71 5.77 L 11.29 18.22 L 7.62 18.22 L 12.71 5.77 Z"/><path d="M3.71,14.65,2.25,18.22H4.82l.41-3.57Z" style="fill:#aecbfa;fill-rule:evenodd"/><path style="fill:#aecbfa;fill-rule:evenodd" d="M 5.83 9.49 L 5.42 13.07 L 4.35 13.07 L 5.83 9.49 Z"/><path style="fill:#669df6;fill-rule:evenodd" d="M 9.48 9.49 L 9.47 9.52 L 8.02 13.07 L 5.42 13.07 L 5.83 9.49 L 9.48 9.49 Z"/><path style="fill:#669df6;fill-rule:evenodd" d="M 21.75 5.77 L 16.65 18.23 L 18.08 5.77 L 21.75 5.77 Z"/><path style="fill:#aecbfa;fill-rule:evenodd" d="M 18.08 5.77 L 16.65 18.23 L 12.98 18.23 L 18.08 5.77 Z"/><path style="fill:#669df6;fill-rule:evenodd" d="M 7.38 14.65 L 5.91 18.22 L 4.82 18.22 L 5.23 14.65 L 7.38 14.65 Z"/></svg>
+
+sprite $CloudDomains_png [64x64/16z] {
+xPR14eCW34J1ZVt_JwvG4bcA4AujkOMPjnlYwXZ2hbsxVhUY5dVHYHylhTnQv-L50MHxLblXio58pL4GCfHLUvnalyf7462yTtj0VT_3fWchV4VDXTTyPBN-
+VRKAB_Nsb8StBSRpDC_RutX2UL3tF3uudXTnKYSJUxJseEqLtfqMvKrDnjkpU9MqA6zgvsHyQUrHRwzMwwT5E2tbWDNYdBVxvWFSmLgBVk5lDQn5l_2ijcIV
+5XuxQfuFXmxCqyIXOREzT51jB_7FttcEf_6rsZdA7iKJnhFQ-BxIsWlPOvYzxxIaWq3yU7lvzI13kL-ap4-UTZi-97ohZNco__2HrTnfkOhL3iUlmlvVshNh
+V-eD
+}
+
+!function $CloudDomainsIMG($scale=1)
+!return "<img data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAACGUlEQVR42u3azVHEMAwFYJemamhhrzrSAi2kBS5bALXQgkl2liETbOn5F8/wDroRT/zJUkQ2IcYY/nMEAhCAAAQgAAEIQAACEIAABCAAAf4mto8YXt4+BYhf14LXydIAty3qfpMRiCucgNetDfD6HpFNaOLkQHBLl8CRRRBArmWzRxXcagARAWiAW7cJHps4APYeUFzDtXCrAShyjHNwAICsDhABgFTzuz8AnJOz9BzwnUUAIKSaXw3cagAR2UiubErhhgDctseUpV5Y2XfqWCrhdMoo3DLAIAAWnAMgwwFqx9BzDTsAamX/rQBuFECsGUOvWTQ6eaiEk+EABWOoWcPWGlbZOABhBkDTAAMAuHAZAJ3yPsCrQW+A8QAQuEzpyHCAgjHUrGEDQL3so3CjAJDnt1vDxilys58BkOEAvQYYYw1F4FIAS78TzGUxAQDBJQB0dYCIAKBwidJZ961wrvklOrn0glsNQMFjDGU/ASDDAXoOMJk1tATuDDDlh5HrAJN7AqA1nAAQtGwu7xB1OEDqZtAx1NrEGaABLswAUBCgaBOnTi694EYBdB1grmuUZv8EIMMBcjdz29qa3wkA+ocpBTDl12Hw8VWVxSdAKGl+Flx3AOtmWrP/7OT30rL5AZjwfcCIAeayRhXc3jy156Dm1X8yrA8PnidHvKi97vg7fiJDAAIQgAAEIAABCEAAAhCAAAQgQFN8Ab2WAbrIDCl4AAAAAElFTkSuQmCC{scale="+$scale+"}>"
+!endfunction
+
+GCPEntityColoring(CloudDomains)
+!define CloudDomains(e_alias, e_label, e_techn) GCPEntity(e_alias, e_label, e_techn, #4285F4, CloudDomains, CloudDomains)
+!define CloudDomains(e_alias, e_label, e_techn, e_descr) GCPEntity(e_alias, e_label, e_techn, e_descr, #4285F4, CloudDomains, CloudDomains)
+!define CloudDomainsParticipant(p_alias, p_label, p_techn) GCPParticipant(p_alias, p_label, p_techn, #4285F4, CloudDomains, CloudDomains)
+!define CloudDomainsParticipant(p_alias, p_label, p_techn, p_descr) GCPParticipant(p_alias, p_label, p_techn, p_descr, #4285F4, CloudDomains, CloudDomains)
+GCPEntityColoring(Cloud_Domains)
+!define Cloud_Domains(e_alias, e_label, e_techn) GCPEntity(e_alias, e_label, e_techn, #4285F4, CloudDomains, Cloud_Domains)
+!define Cloud_Domains(e_alias, e_label, e_techn, e_descr) GCPEntity(e_alias, e_label, e_techn, e_descr, #4285F4, CloudDomains, Cloud_Domains)
+!define Cloud_DomainsParticipant(p_alias, p_label, p_techn) GCPParticipant(p_alias, p_label, p_techn, #4285F4, CloudDomains, Cloud_Domains)
+!define Cloud_DomainsParticipant(p_alias, p_label, p_techn, p_descr) GCPParticipant(p_alias, p_label, p_techn, p_descr, #4285F4, CloudDomains, Cloud_Domains)

@@ -1,0 +1,21 @@
+sprite $TextToSpeech <svg viewBox="0 0 24 24" width="64" height="64"><g><rect fill="#669df6" x="2.01" y="6.99" width="6.64" height="1.67"/><path fill="#669df6" d="M 11.17 15.32 L 2 15.32 L 2 16.99 L 2 16.99 L 11.17 16.99 L 11.17 15.32 Z"/><path fill="#669df6" d="M 4.51 11.16 L 2 11.16 L 2 12.82 L 6.18 12.82 L 12 12.82 L 10.33 11.16 L 4.51 11.16 Z"/><path fill="#4285f4" d="M12,9.07a.42.42,0,0,1,.42-.36.41.41,0,0,1,.41.36v9.18a2.09,2.09,0,0,0,2.61,2A2.16,2.16,0,0,0,17,18.14V5.75a.4.4,0,0,1,.19-.4.41.41,0,0,1,.45,0,.4.4,0,0,1,.19.4v9.16a2.07,2.07,0,0,0,.81,1.64,2,2,0,0,0,1.8.37A2.16,2.16,0,0,0,22,14.8V12H20.33v2.92a.4.4,0,0,1-.19.4.41.41,0,0,1-.45,0,.4.4,0,0,1-.19-.4V5.75a2.09,2.09,0,0,0-2.61-2,2.16,2.16,0,0,0-1.56,2.13V18.25a.4.4,0,0,1-.19.4.41.41,0,0,1-.45,0,.4.4,0,0,1-.19-.4V9.08a2.07,2.07,0,0,0-4.11-.36,2.4,2.4,0,0,0-.05.46v2L12,12.82V9.07Z"/></g></svg>
+
+sprite $TextToSpeech_png [64x64/16z] {
+xTRT2i0W20LWPoAz_nEFJTXY5QlZBXfuxZ_wCKoYIEGNuNm4vf8jx5aTty75iy1Ux12mPpl5SdwhSbyx3_YapvGrLzYN5GUyb4y6yFUJOUJ-sOZFK_XtlpKZ
+mxwk_nclLw_Ndd_qqQxNCJ_GEC8lx7lrJvKlUXf1Nbg_w8IdrYy-usq7Clln4Jnw_DrR6yC75yvVJLxWv4UkkUrwCaoHo6hP0G
+}
+
+!function $TextToSpeechIMG($scale=1)
+!return "<img data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAABTElEQVR42u3aQRKDIAwFUI6WRc/iObLsFXqbnsgrUNrRmY4FxBpGkvzF3+rkKRKBEGMMnhMAAAAAAAAAAAAAALTldp/9AaSiKSVmYh8gFcmF4teQWYDKkz/9JmgBiI1hLwBcGhZeAKg0NAAAAAGA6TGTRFqamaUIqn3BrwDglHg2O4Xn5vVnDsIUwFL8ofncGgC3zOkmARqf/k9ra2YWKLS0VIDxAbBXJAAAAAAAqG2Ft6n9vo4GINIH5OIeYIvgEuAboRdA66LpZQArwpAAIy16AAAAAAAAAK4AmB790hNgWVwZvg9gIYAjS2zBHMCBRVYerRUWA2jcPQ6mASpvAv/7M9T1I/i+vjTAZuld3+aoFIDa3WEAAOCzM5xraljyWNzIAK0nwaLkfTWeBiPLAEH6GJy6M0KVcU897ofT4gAAAAAAAAAAAAAAXvMCXAE89J73H14AAAAASUVORK5CYII={scale="+$scale+"}>"
+!endfunction
+
+GCPEntityColoring(TextToSpeech)
+!define TextToSpeech(e_alias, e_label, e_techn) GCPEntity(e_alias, e_label, e_techn, #4285F4, TextToSpeech, TextToSpeech)
+!define TextToSpeech(e_alias, e_label, e_techn, e_descr) GCPEntity(e_alias, e_label, e_techn, e_descr, #4285F4, TextToSpeech, TextToSpeech)
+!define TextToSpeechParticipant(p_alias, p_label, p_techn) GCPParticipant(p_alias, p_label, p_techn, #4285F4, TextToSpeech, TextToSpeech)
+!define TextToSpeechParticipant(p_alias, p_label, p_techn, p_descr) GCPParticipant(p_alias, p_label, p_techn, p_descr, #4285F4, TextToSpeech, TextToSpeech)
+GCPEntityColoring(Text_To_Speech)
+!define Text_To_Speech(e_alias, e_label, e_techn) GCPEntity(e_alias, e_label, e_techn, #4285F4, TextToSpeech, Text_To_Speech)
+!define Text_To_Speech(e_alias, e_label, e_techn, e_descr) GCPEntity(e_alias, e_label, e_techn, e_descr, #4285F4, TextToSpeech, Text_To_Speech)
+!define Text_To_SpeechParticipant(p_alias, p_label, p_techn) GCPParticipant(p_alias, p_label, p_techn, #4285F4, TextToSpeech, Text_To_Speech)
+!define Text_To_SpeechParticipant(p_alias, p_label, p_techn, p_descr) GCPParticipant(p_alias, p_label, p_techn, p_descr, #4285F4, TextToSpeech, Text_To_Speech)

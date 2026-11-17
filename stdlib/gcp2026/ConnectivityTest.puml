@@ -1,0 +1,22 @@
+sprite $ConnectivityTest <svg viewBox="0 0 24 24" width="64" height="64"><g stroke="none" stroke-width="1" fill="none"><polyline stroke="#4285F4" stroke-width="2" points="20 4 4 13 4 6.71740939"></polyline><polyline stroke="#4285F4" stroke-width="2" points="4 21 20 12 20 18.2825906"></polyline></g></svg>
+
+sprite $ConnectivityTest_png [64x64/16z] {
+xPTj2y8m38H722N__nUBWudQvExQJbHOFguyvCZxjksoKRE85TmZmfVec1PWSTYAyxlP4jqcdCTPpdqbRbEHez9jjtdfG9aalNvkKjmgNerwpfkSyfGVI7d2
+3nLCnzjOjRxpezNwolD6im0ybzwYvhbqxtFru7crMlPuVEFIFMfUb5xoedJAK-UGLsZ06nrXYEVE7V2knAtcJPg-5U_YzCtv9gSyvUj6woAhRw6ydbM-6c4Y
+NpQJn8DM57WuVJcFvm3ZsVILLZ6ePyWBYmFS6fy-StxtGcjdEP-xx5VYzhp0llHJiWkmxRA_ini
+}
+
+!function $ConnectivityTestIMG($scale=1)
+!return "<img data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAABlklEQVR42u2bQRLDIAhFPZqLHoxlj5UT9Qo2nbEznWnSihH4oAv28vgB/ZpUSkkzR1oAFoCYid3ujzkB7InnPUqNeQC8kt2DPpJ/BU0B4CDx0qqCSHI/jXAATuT+K3IYAMzEtzCfQK16GVF1VwA65E5hNkKtTY4z910AkJI7G0CtwFcANTnqqToHAHuuIssdEkCV+ybV5KABaMsdBkCH3LOJHzAagPRMhwaAIHcTAEhyVwWAKHc1AKNPbFebrRoAzS0sZ28hDgBJ7kfrEAVgtYXlNFsRAGByJxFP8M+cNp/preuQAAArdxQABGKPqQMwl7slgAxij6kDQJE7aQMglCb3XocmgIzoBmsAIGQ3WBLAhib3UafXFgAqJ7YRzdbN9bjUVhoegLQ9BgtAyy+ABKB5coQCYOEGQwCwtMfMAVi7wWYAgOwxXQBolx89DzrcPWgwfy2OIncTAKg3vOIAosi95zRo+n7HFACz6uSp6qNN0ewxcc4nEEbuXU3w6DcUr3LvBZCiyP3KGFz/DS4AC8ACsABEjCfH91ofOmpYpwAAAABJRU5ErkJggg=={scale="+$scale+"}>"
+!endfunction
+
+GCPEntityColoring(ConnectivityTest)
+!define ConnectivityTest(e_alias, e_label, e_techn) GCPEntity(e_alias, e_label, e_techn, #4285F4, ConnectivityTest, ConnectivityTest)
+!define ConnectivityTest(e_alias, e_label, e_techn, e_descr) GCPEntity(e_alias, e_label, e_techn, e_descr, #4285F4, ConnectivityTest, ConnectivityTest)
+!define ConnectivityTestParticipant(p_alias, p_label, p_techn) GCPParticipant(p_alias, p_label, p_techn, #4285F4, ConnectivityTest, ConnectivityTest)
+!define ConnectivityTestParticipant(p_alias, p_label, p_techn, p_descr) GCPParticipant(p_alias, p_label, p_techn, p_descr, #4285F4, ConnectivityTest, ConnectivityTest)
+GCPEntityColoring(Connectivity_Test)
+!define Connectivity_Test(e_alias, e_label, e_techn) GCPEntity(e_alias, e_label, e_techn, #4285F4, ConnectivityTest, Connectivity_Test)
+!define Connectivity_Test(e_alias, e_label, e_techn, e_descr) GCPEntity(e_alias, e_label, e_techn, e_descr, #4285F4, ConnectivityTest, Connectivity_Test)
+!define Connectivity_TestParticipant(p_alias, p_label, p_techn) GCPParticipant(p_alias, p_label, p_techn, #4285F4, ConnectivityTest, Connectivity_Test)
+!define Connectivity_TestParticipant(p_alias, p_label, p_techn, p_descr) GCPParticipant(p_alias, p_label, p_techn, p_descr, #4285F4, ConnectivityTest, Connectivity_Test)

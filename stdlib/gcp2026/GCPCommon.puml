@@ -1,0 +1,107 @@
+' Google Cloud Platform (GCP) Standard Library for PlantUML (gcp2026)
+' Official icons source: https://cloud.google.com/icons
+
+' Colors
+' ##################################
+!define GCP_COLOR #4285F4
+!define GCP_BG_COLOR #FFFFFF
+!define GCP_BORDER_COLOR #3D7CE3
+!define GCP_SYMBOL_COLOR GCP_COLOR
+
+!$GCP_COLOR = "#4285F4"
+!$GCP_BG_COLOR = "#FFFFFF"
+!$GCP_BORDER_COLOR = "#3D7CE3"
+
+' Styling
+' ##################################
+
+!define TECHN_FONT_SIZE 12
+
+skinparam defaultTextAlignment center
+
+skinparam wrapWidth 200
+skinparam maxMessageSize 150
+
+skinparam rectangle {
+    StereotypeFontSize 12
+}
+
+skinparam Arrow {
+    Color #666666
+    FontColor #666666
+    FontSize 12
+}
+
+!definelong GCPEntityColoring(stereo)
+skinparam rectangle<<stereo>> {
+    BackgroundColor GCP_BG_COLOR
+    BorderColor GCP_BORDER_COLOR
+}
+skinparam participant<<stereo>> {
+    BackgroundColor GCP_BG_COLOR
+    BorderColor GCP_BORDER_COLOR
+}
+!enddefinelong
+
+!definelong EntityColoring(stereo)
+GCPEntityColoring(stereo)
+!enddefinelong
+
+' Layout
+' ##################################
+
+!definelong LAYOUT_AS_SKETCH
+skinparam backgroundColor #EEEBDC
+skinparam handwritten true
+skinparam defaultFontName "Comic Sans MS"
+center footer <font color=red>Warning:</font> Created for discussion, needs to be validated
+!enddefinelong
+
+!define LAYOUT_TOP_DOWN top to bottom direction
+!define LAYOUT_LEFT_RIGHT left to right direction
+
+' Elements
+' ##################################
+!function $GCPImg($service, $color="#4285F4")
+!if %variable_exists("GCP_USE_SVG") || %variable_exists("$GCP_USE_SVG")
+!return "<$" + $service + ">"
+!endif
+!if %function_exists("$" + $service + "IMG")
+!return %call_user_func("$" + $service + "IMG")
+!endif
+!return "<color:" + $color + "><$" + $service + "></color>"
+!endfunction
+
+!define GCPEntityColored(e_alias, e_label, e_techn) rectangle "==e_label\n//<size:TECHN_FONT_SIZE>[e_techn]</size>//" as e_alias
+
+!definelong GCPEntity(e_alias, e_label, e_techn, e_color, e_sprite, e_stereo)
+rectangle "==e_label\n$GCPImg(e_sprite, e_color)\n//<size:TECHN_FONT_SIZE>[e_techn]</size>//" <<e_stereo>> as e_alias
+!enddefinelong
+
+!definelong GCPEntity(e_alias, e_label, e_techn, e_descr, e_color, e_sprite, e_stereo)
+rectangle "==e_label\n$GCPImg(e_sprite, e_color)\n//<size:TECHN_FONT_SIZE>[e_techn]</size>//\n\n e_descr" <<e_stereo>> as e_alias
+!enddefinelong
+
+!definelong GCPParticipant(p_alias, p_label, p_techn, p_color, p_sprite, p_stereo)
+participant "p_label\n$GCPImg(p_sprite, p_color)\n<size:TECHN_FONT_SIZE>[p_techn]</size>" as p_alias <<p_stereo>>
+!enddefinelong
+
+!definelong GCPParticipant(p_alias, p_label, p_techn, p_descr, p_color, p_sprite, p_stereo)
+participant "p_label\n$GCPImg(p_sprite, p_color)\n<size:TECHN_FONT_SIZE>[p_techn]</size>\n\n p_descr" as p_alias <<p_stereo>>
+!enddefinelong
+
+!definelong Entity(e_alias, e_label, e_techn, e_color, e_sprite, e_stereo)
+GCPEntity(e_alias, e_label, e_techn, e_color, e_sprite, e_stereo)
+!enddefinelong
+
+!definelong Entity(e_alias, e_label, e_techn, e_descr, e_color, e_sprite, e_stereo)
+GCPEntity(e_alias, e_label, e_techn, e_descr, e_color, e_sprite, e_stereo)
+!enddefinelong
+
+!definelong Participant(p_alias, p_label, p_techn, p_color, p_sprite, p_stereo)
+GCPParticipant(p_alias, p_label, p_techn, p_color, p_sprite, p_stereo)
+!enddefinelong
+
+!definelong Participant(p_alias, p_label, p_techn, p_descr, p_color, p_sprite, p_stereo)
+GCPParticipant(p_alias, p_label, p_techn, p_descr, p_color, p_sprite, p_stereo)
+!enddefinelong

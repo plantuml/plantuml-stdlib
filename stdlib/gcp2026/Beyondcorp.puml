@@ -1,0 +1,18 @@
+sprite $Beyondcorp <svg viewBox="0 0 24 24" width="64" height="64"><g><path fill="#4285f4" d="M19.51,6.92a10.43,10.43,0,0,1-1,.92A8.09,8.09,0,0,1,8,19.65H9.75a7.51,7.51,0,0,1-.86-1.3H6.31a8.75,8.75,0,0,1-1-1.19H8.37A10.38,10.38,0,0,1,8,15.85H4.59a8,8,0,0,1-.42-1.19H7.74c-.07-.42-.11-.85-.14-1.3H3.94a6.51,6.51,0,0,1,0-.77v-.43H7.57a11.34,11.34,0,0,1,.08-1.3H4.08a8.16,8.16,0,0,1,.36-1.19h3.4a9.52,9.52,0,0,1,.33-1.3H5.1A8,8,0,0,1,6,7.18H8.61a9.2,9.2,0,0,1,.71-1.31H7.5a8.06,8.06,0,0,1,7.74-.69,10.7,10.7,0,0,0,1.29,3.19s2.93-1.67,3.38-3.44A2.42,2.42,0,0,0,15.23,3.7v.07a9.41,9.41,0,1,0,6.17,8.82A8.71,8.71,0,0,0,19.51,6.92ZM16.5,4a1.14,1.14,0,1,1,.81,1.39h0A1.13,1.13,0,0,1,16.5,4Z"/></g></svg>
+
+sprite $Beyondcorp_png [64x64/16z] {
+xLVH3eGW33DBO_Z_Bpw5W7fih4FldjoBKIYKCifSbZV-5I8GcOUlASVi2Aa6UBub6doZlvEWi4Yds81rOZ04Bk0MRHrJQ1QFnlbxBUN5mUiQvo5Gspquh8R2
+nCu0gMhtUTRfOCBrFl3XfpbWZyt0azqwthX1QcK2wpuGp7OuEulo48lz-4YaKRzC3oN4oqyCnNCiGYKWYKcGrbLKLZK89rA-qSQ67Y-aBLaB2E4Lik3bLmL8
+J-8f0VhSbelVX_61U-ad-01_FAv_UFynE7uIpx-x-N_t_AdV-EM7153zvwx_yGO8OuAJVoC-FN7_772PkV_yJaJkOQYEgo2OwiSkKk6wsuY0CEROwbNH2o2o
+T8LU3eCyNNadvFXjY5NkHlqBtc1n2rr8Nmxat4yBQUTlpCS7
+}
+
+!function $BeyondcorpIMG($scale=1)
+!return "<img data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAACB0lEQVR42u2bS47DMAiGczQWczCWPVZPNFfwdKS0ilo/IOZhGhZI3TQJXwDj32QrpWxXti0BJIAEkAAi2c/tF3bD5+9LAHg4+m/3h5WGwdcC2J0vBMPlARxCuGqN/3w4evjPe1SsBeCQr4VpRye7b/nt+ugOYA/ZM04PjZIibgA0HR855w6A4PgzpEcAuynTSTMfAIMKjdyiRKgfOCqSZgA6zk85TrxHK1LABEClOteq93Sn1lgG2TVCFEDH+ZpZ1JfT99Lsyk51ZhPA9fcCTOeLVB0gpMHr+bQBoMYbnoiC+9F51U6Q0pIaQKjevxKZoAFgqtoKR8EwNUUBNMIPOwYOcE6lp/g6PCNOSBdKEQDMNd8tPRrPChIAkBH66FEcZ6KAe0EIIJ+hGIBKSEVRjckvjXWxQAqyGACMsgKcrQPSy18CWKFOcFKX1XuPNP2R5hcdAAQqggng6imAuQoIAfiGPgAlW+GIACD3ArkbFNQDgm2E0EURcpTE5BWhy2uCUXTBypINYgA6g0pL6ILq5wKrnAwxXo78yZD32aDWM5nSNnBef0CCe0Ru6bzJgITXkISG87MzQpu1TthZjn2mxQkjciKDUoMBTN/vBQYPpzEnKDqKZzkpCoRJUSAOV4vVlWizwiitSUSZFkctMcbyAwn2jtKiyfL6/GUZST0/m0sACSABXNr+AKQrNM/vdHD+AAAAAElFTkSuQmCC{scale="+$scale+"}>"
+!endfunction
+
+GCPEntityColoring(Beyondcorp)
+!define Beyondcorp(e_alias, e_label, e_techn) GCPEntity(e_alias, e_label, e_techn, #4285F4, Beyondcorp, Beyondcorp)
+!define Beyondcorp(e_alias, e_label, e_techn, e_descr) GCPEntity(e_alias, e_label, e_techn, e_descr, #4285F4, Beyondcorp, Beyondcorp)
+!define BeyondcorpParticipant(p_alias, p_label, p_techn) GCPParticipant(p_alias, p_label, p_techn, #4285F4, Beyondcorp, Beyondcorp)
+!define BeyondcorpParticipant(p_alias, p_label, p_techn, p_descr) GCPParticipant(p_alias, p_label, p_techn, p_descr, #4285F4, Beyondcorp, Beyondcorp)

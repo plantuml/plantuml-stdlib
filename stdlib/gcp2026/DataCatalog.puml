@@ -1,0 +1,23 @@
+sprite $DataCatalog <svg viewBox="0 0 24 24" width="64" height="64"><g><path fill="#4285f4" d="M 2.81 9.37 L 5.19 5.13 L 8.25 5.13 L 8.25 7 L 6.26 7 L 4.94 9.34 L 5.75 10.7 L 4.16 11.63 L 2.81 9.37 Z"/><path fill="#aecbfa" d="M 14.5 13.07 L 17 11.63 L 19.5 13.07 L 19.5 15.96 L 17 17.4 L 14.5 15.96 L 14.5 13.07 Z"/><path fill="#aecbfa" d="M 4.5 13.07 L 7 11.63 L 9.5 13.07 L 9.5 15.96 L 7 17.4 L 4.5 15.96 L 4.5 13.07 Z"/><path fill="#aecbfa" d="M 9.5 4.59 L 12 3.15 L 14.5 4.59 L 14.5 7.47 L 12 8.92 L 9.5 7.47 L 9.5 4.59 Z"/><path fill="#4285f4" d="M 17 11.63 L 19.5 13.07 L 19.5 15.96 L 17 17.4 L 17 11.63 Z"/><path fill="#4285f4" d="M 7 11.63 L 9.5 13.07 L 9.5 15.96 L 7 17.4 L 7 11.63 Z"/><path fill="#4285f4" d="M 12 3.15 L 14.5 4.59 L 14.5 7.47 L 12 8.92 L 12 3.15 Z"/><path fill="#4285f4" d="M 18.25 10.7 L 19.06 9.35 L 17.74 7 L 15.75 7 L 15.75 5.13 L 18.81 5.13 L 21.19 9.37 L 19.84 11.63 L 18.25 10.7 Z"/><path fill="#4285f4" d="M 9.61 20.75 L 8.13 18.29 L 9.73 17.36 L 10.66 18.88 L 13.31 18.88 L 14.25 17.36 L 15.85 18.28 L 14.36 20.75 L 9.61 20.75 Z"/></g></svg>
+
+sprite $DataCatalog_png [64x64/16z] {
+xPT94iGW24KZ8iNzJzmPJ9LQJ9f5R_nRyfH9cZwEhIrTy8dEcN6TJldaUVM4YxvvPbZ67pvy05H9V6FJX5mbyQ_DI0T7UFPnczSSW23FrlLevu_q0x0tAVNJ
+opd69lSFQWu81h5_jHIAZfqy-VTOVe4RPrExK9k3U5ESbpr5kpNz17fluvNMGH1qGFsCul7BReRddFrXKSsf-0v2BbeSEPENuAlZYro7wp6HNQBdnHMfae-9
+x2xB3Sz9C94z03V_NnvQ_b1vjFQDogFOM-GEgNJpg9WYJpmLKhsZYLK6FsrXq0L1iSawJED-D4vjONq9UPgl1-0j3lyq29lKgzaCZln20RxWWmChAp0qslzZ
+jcJz00
+}
+
+!function $DataCatalogIMG($scale=1)
+!return "<img data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAACGUlEQVR42u2bwZHDIAxFXRqHbSEtpIVcdXQLbsEt7MUFbC1pQWsyOMN4DDEgCXB0+KdMJuIhgZCUARGHb9agABSAAlAACkABKIAqmv/Q3Man+ToA68Kt0OpnfFrBqusDcAuHbfEegDeIywLYLzwAYJO5FIDQ4iMAxCBkfcnGqzUwJmoAKb8nAQAihr/EAAA/CEQAuN3HBgFgzk2SAwAbBgCsAFy8tQwg2Qsodh8qHoLLJ/hkACIHX7VrMHIeGVIAkR+C2olQaGOoAUCpq51Nhe/Tk+pWAhIAFG529ArcAVhKHkMl4Sm2+9zP4VwvyL32TGuFjYitRQCGjgAAOYDS+BJcPE8IlMaXIIDshKgovhrfffJMcOnoDACOVHioWbzkspGsvP2YUeRcsJnkY6bzQooq72IzOgfgJY5av589rukyWTmdrLztA6Cs9fs9hAMAxTcSWYX3AMDbuNVlSSBHAGQfzjmGYSIAvE3phvkunwAAFYACUAAKQAEoAF4ASwYAkgToBACQygTNSQBAkfufBGBqvAUgAADuE99kyQ6AqfYY8o1zABbO5/LmeQ4AVH8N+orteKqx2wBG6PPxt5MRmV0pDTKrT/3NCHmVmeQ6XaD+CF0BiPXzuZuwLQGIDTVAQCjdg6jVrUmR6e4MSB2oOjtq0+WgZMpcUY32m1S9PmfxIq03yYaFSZT+YUIBKAAFoAAUgAJQAKz6Bz5pAkjcR5y8AAAAAElFTkSuQmCC{scale="+$scale+"}>"
+!endfunction
+
+GCPEntityColoring(DataCatalog)
+!define DataCatalog(e_alias, e_label, e_techn) GCPEntity(e_alias, e_label, e_techn, #4285F4, DataCatalog, DataCatalog)
+!define DataCatalog(e_alias, e_label, e_techn, e_descr) GCPEntity(e_alias, e_label, e_techn, e_descr, #4285F4, DataCatalog, DataCatalog)
+!define DataCatalogParticipant(p_alias, p_label, p_techn) GCPParticipant(p_alias, p_label, p_techn, #4285F4, DataCatalog, DataCatalog)
+!define DataCatalogParticipant(p_alias, p_label, p_techn, p_descr) GCPParticipant(p_alias, p_label, p_techn, p_descr, #4285F4, DataCatalog, DataCatalog)
+GCPEntityColoring(Data_Catalog)
+!define Data_Catalog(e_alias, e_label, e_techn) GCPEntity(e_alias, e_label, e_techn, #4285F4, DataCatalog, Data_Catalog)
+!define Data_Catalog(e_alias, e_label, e_techn, e_descr) GCPEntity(e_alias, e_label, e_techn, e_descr, #4285F4, DataCatalog, Data_Catalog)
+!define Data_CatalogParticipant(p_alias, p_label, p_techn) GCPParticipant(p_alias, p_label, p_techn, #4285F4, DataCatalog, Data_Catalog)
+!define Data_CatalogParticipant(p_alias, p_label, p_techn, p_descr) GCPParticipant(p_alias, p_label, p_techn, p_descr, #4285F4, DataCatalog, Data_Catalog)

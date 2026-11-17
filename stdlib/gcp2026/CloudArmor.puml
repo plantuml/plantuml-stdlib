@@ -1,0 +1,23 @@
+sprite $CloudArmor <svg viewBox="0 0 24 24" width="64" height="64"><g><path fill="#aecbfa" d="M 9.76 20.6 L 8.72 19.55 L 14.17 14.07 L 15.21 15.12 L 9.76 20.6 Z"/><path fill="#aecbfa" d="M 7.03 18.32 L 5.99 17.27 L 13.34 9.88 L 14.38 10.93 L 7.03 18.32 Z"/><path fill="#aecbfa" d="M 5.34 14.98 L 4.3 13.93 L 9.18 9.03 L 10.22 10.08 L 5.34 14.98 Z"/><path fill="#669df6" d="M12,3.61l6.78,3v4.55A9.71,9.71,0,0,1,12,20.48a9.7,9.7,0,0,1-6.78-9.31V6.63l6.78-3M12,2,3.75,5.68v5.49A11.17,11.17,0,0,0,11.85,22L12,22l.15,0a11.17,11.17,0,0,0,8.1-10.78V5.68L12,2Z"/><circle fill="#669df6" cx="14.69" cy="14.62" r="1.42"/><circle fill="#669df6" cx="13.85" cy="10.45" r="1.42"/><circle fill="#669df6" cx="9.69" cy="9.6" r="1.42"/></g></svg>
+
+sprite $CloudArmor_png [64x64/16z] {
+xPVRjiCW24Gx7VN_F_cSnCHuGr1NdrhUkkecA3ZWw_Mp3ngmGpFy6xVeLG_m8JC_kGs4nh0Q-EmsslKJ7j2F5xQ3WBnRw0UXXQdyRzXayY3pC9sFnCDO6X9l
+oUzNyCSf-NL-a2OJNvGgovgQvUEzMUPPrwM1ftls7-PvaZxzckTvs2tyS7KgD3xYToAlK63cQvnybqrepBSu9ke7EWv9eev4kpRuddv04XRNnr4r0v4FNPnv
+1kLhVlBzhp-w39a_FlFkx1svQ5DM-CnrSNG5FrBfjAWyUPVT08nKxewjnAyAfg59HESrJZfS9OonoFBiq0tECaMADZiPfwRnZ0u4tD0YJwta0AUXkr36rGw5
+nq65qzRWqynQuTuwmZ6aBDR1soR0U5rTapZp71nNUrUDHlOn-kfPKGp0wG7u6UOm7DaiK_3o4u1RT2OyEq-WlVVJprJx0m
+}
+
+!function $CloudArmorIMG($scale=1)
+!return "<img data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAACWUlEQVR42u2by3WEMAxFKU3VpIXZajkt0AItsHEBqWVacOAM5EyI8U8fixkvtMlJgt9Ftp9sMXjvh0+OoQPoADqADqBVfI0PWOOjACyC18Al/CGWn70xgIjwAIjH+wDY0txlCD+G05ge0sI9U8AlANSmecvp0UC4rXVCK81B6H+T1wlzwrWfdZltTOr5JQMgzW9tEJoAoLGVbgYArBQ0IRDiAKxVdR1AB2AYgEZ1ZxJAYHFyUjDMAeDYoq4OoMi2BgwOfgyATXyw2LkkgOm7GABSnaYZAKv4Jfx99tk+naPKMwFgF7/HfQpCGN4SwFH8S+C2I5xlDMayJXfbbAogJj6xVuD+u7dwtoD5RZBD/B7j/JstUGqYmgDgFJ/6m4xDEl0Ay7wFC+JPXCdKAMADAC7xTuBABCQAQAIAm/jDs7D05agAWENIPJYWUJRii7TSCr95nzOvKeeBNQD+vJ1l72ad86lLkMyMQUkAUFATFC94lQBIp9Xkg4eQYakRv3qKMW6JgTv9awFEU65WfMISo9RdBYvr2rOAKv7FEvsXSwwSix/1dviYBY5L/BY1UxE1AYSssaZ45DpopdjPf4MYZxXxrPeUrEfRt+lpjpTFkwopjrv67AFRxEeOzto2SZ2YFxQQjxJX9Fy3MhiDwJD2jjv12fsETyC4yMFJ7RRjEy/RKBksZceZZ6vjFi/SKns28NXibiBq3zq7eLFe4cRVF0YKG9RuxpJuZ0s2N2b2/l26XR4JXeIoPT5rH0uofz3S4nMZsNR02bKra6i9BuufzXUAHUAH0AEwxQ8k+l9aP5DOoAAAAABJRU5ErkJggg=={scale="+$scale+"}>"
+!endfunction
+
+GCPEntityColoring(CloudArmor)
+!define CloudArmor(e_alias, e_label, e_techn) GCPEntity(e_alias, e_label, e_techn, #4285F4, CloudArmor, CloudArmor)
+!define CloudArmor(e_alias, e_label, e_techn, e_descr) GCPEntity(e_alias, e_label, e_techn, e_descr, #4285F4, CloudArmor, CloudArmor)
+!define CloudArmorParticipant(p_alias, p_label, p_techn) GCPParticipant(p_alias, p_label, p_techn, #4285F4, CloudArmor, CloudArmor)
+!define CloudArmorParticipant(p_alias, p_label, p_techn, p_descr) GCPParticipant(p_alias, p_label, p_techn, p_descr, #4285F4, CloudArmor, CloudArmor)
+GCPEntityColoring(Cloud_Armor)
+!define Cloud_Armor(e_alias, e_label, e_techn) GCPEntity(e_alias, e_label, e_techn, #4285F4, CloudArmor, Cloud_Armor)
+!define Cloud_Armor(e_alias, e_label, e_techn, e_descr) GCPEntity(e_alias, e_label, e_techn, e_descr, #4285F4, CloudArmor, Cloud_Armor)
+!define Cloud_ArmorParticipant(p_alias, p_label, p_techn) GCPParticipant(p_alias, p_label, p_techn, #4285F4, CloudArmor, Cloud_Armor)
+!define Cloud_ArmorParticipant(p_alias, p_label, p_techn, p_descr) GCPParticipant(p_alias, p_label, p_techn, p_descr, #4285F4, CloudArmor, Cloud_Armor)

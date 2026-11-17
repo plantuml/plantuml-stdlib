@@ -1,0 +1,22 @@
+sprite $ConfigurationManagement <svg viewBox="0 0 24 24" width="64" height="64"><path d="M5.76,8.64v3.88A8.16,8.16,0,0,0,12,20.29V5.73Z" style="fill:#4285f4"/><path d="M12,20.29l.66-.19a8.16,8.16,0,0,0,5.58-7.58V8.64L12,5.73Z" style="fill:#aecbfa"/><path d="M17.79,4.14a2.85,2.85,0,0,0-.29,0l.83-1-.57-.48-1.67,2,2,1.66.48-.57-1-.85a2.3,2.3,0,0,1,.26,0,2.64,2.64,0,0,1,2.64,2.64,2.58,2.58,0,0,1-.29,1.19l.55.56.09-.13a3.5,3.5,0,0,0,.4-1.62A3.39,3.39,0,0,0,17.79,4.14Z" style="fill:#aecbfa"/><path d="M5.67,17.7l-.61.44.76,1.06a2.48,2.48,0,0,1-.27,0,2.64,2.64,0,0,1-1.33-4.29l-.39-.68a1.14,1.14,0,0,0-.11.11,3.38,3.38,0,0,0,1.65,5.58,2.93,2.93,0,0,0,.29.05l-1,.74.44.61,2.11-1.5Z" style="fill:#4285f4"/></svg>
+
+sprite $ConfigurationManagement_png [64x64/16z] {
+xPV93eCm34JZHSZ__yLj0fG4J9ZKXwg2EI1nU1DlH2QbHpSInN2Ma069_11FKXH8VX65ugUG0PKyO0EbVGcs9q2R-MS90-Lwqvdt7Au3O9lbLvm4erV-q7R1
+w8fl7QHRD9-l7CxZR-aT_od4QVtC-hnSz0_aJ_Nmz-Qd8Az1dl-MLtOR0FDcRWFy-yDh7Bi931v_I03asTYV0F3uZKzHde7xkyUt6K35pxpw7s65S__3BJO7
+0tHqDGV0QnSz_lBcq3n5kZD0yOnCrHXfooCBpqAqRHpP-MP4czUnZP5B4lKADBJhgTLZC2pz9F-jmVE3T3Uz00
+}
+
+!function $ConfigurationManagementIMG($scale=1)
+!return "<img data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAABz0lEQVR42u3by23FIBAFUEpjkcJmmVpSBQWklrRAbAtLCJnvAGMedzGLLCL5HhjAn6estWrnUgAAAAAAAAAArFc/v1fRzgDmKMtFWDU8ufB2uxnghz/bYCuAI7D2woelW0BW7ftU0XYtcO8ILQjLL4J+WAdRhSAW4uv77yxyYbjrgYog6NcB3MGPsmf5I1YL4cKmcMxrAI6w2g/+ANAMEcEp2ipnBbexSq3mJVO4YJ3QIgC54AUAtqaXE20wF6A0eCVANcRUgHBhGwhQDDGlBTjBmQDZBXPKIsgJ3gkgOsJTtsE3A9znhK0Bhh+FAQAAAAAAAADYG8DsDkC7A2gAAEAcYPyrMdfresROwAUY/m7QPfS4LnbETsB9IDID4A6oR7SBZP9nAXKj36MNJKd/CYBOjX6P84Dk6HcD4MwCydHvDaAnAqjXAbS2gsTK3wJAo+4QK8Ob3m+yagI94SR3jgEASgKAwlng93tu++wIIPelqHfB9HBAIg6CZPgaAD+McX9H26Pm3eHMBY91N5gb0dYtcvRBp/vtcCIMtfyvVHD284AgjIm1Qe57oR6fw8yeAWFfk8SFSwJQbvH7+B9MrD7q+MkMAAAAAAAAAABX/QPWZtnGTA8nhgAAAABJRU5ErkJggg=={scale="+$scale+"}>"
+!endfunction
+
+GCPEntityColoring(ConfigurationManagement)
+!define ConfigurationManagement(e_alias, e_label, e_techn) GCPEntity(e_alias, e_label, e_techn, #4285F4, ConfigurationManagement, ConfigurationManagement)
+!define ConfigurationManagement(e_alias, e_label, e_techn, e_descr) GCPEntity(e_alias, e_label, e_techn, e_descr, #4285F4, ConfigurationManagement, ConfigurationManagement)
+!define ConfigurationManagementParticipant(p_alias, p_label, p_techn) GCPParticipant(p_alias, p_label, p_techn, #4285F4, ConfigurationManagement, ConfigurationManagement)
+!define ConfigurationManagementParticipant(p_alias, p_label, p_techn, p_descr) GCPParticipant(p_alias, p_label, p_techn, p_descr, #4285F4, ConfigurationManagement, ConfigurationManagement)
+GCPEntityColoring(Configuration_Management)
+!define Configuration_Management(e_alias, e_label, e_techn) GCPEntity(e_alias, e_label, e_techn, #4285F4, ConfigurationManagement, Configuration_Management)
+!define Configuration_Management(e_alias, e_label, e_techn, e_descr) GCPEntity(e_alias, e_label, e_techn, e_descr, #4285F4, ConfigurationManagement, Configuration_Management)
+!define Configuration_ManagementParticipant(p_alias, p_label, p_techn) GCPParticipant(p_alias, p_label, p_techn, #4285F4, ConfigurationManagement, Configuration_Management)
+!define Configuration_ManagementParticipant(p_alias, p_label, p_techn, p_descr) GCPParticipant(p_alias, p_label, p_techn, p_descr, #4285F4, ConfigurationManagement, Configuration_Management)

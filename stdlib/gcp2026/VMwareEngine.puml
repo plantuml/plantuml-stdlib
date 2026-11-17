@@ -1,0 +1,22 @@
+sprite $VMwareEngine <svg viewBox="0 0 24 24" width="64" height="64"><path d="m6.34436203 13.5069564c2.36480711 0 4.28186207 1.9152236 4.28186207 4.2777718 0 2.3625481-1.91705496 4.2777718-4.28186207 4.2777718-2.3648071 0-4.28186203-1.9152237-4.28186203-4.2777718 0-2.3625482 1.91705493-4.2777718 4.28186203-4.2777718zm-.03428899 1.8658366-.65143759.65393 1.37848522 1.3849732-3.107-.0006683v.9276866l3.109.0009817-1.38048522 1.3848679.65123622.6541321 2.49428345-2.5022789zm15.75242696-13.310293v12.5232371l-4.3194601-.0002371.0002113 4.31536-6.2771387.0005823c.0830712-.3699515.1269039-.754721.1269039-1.1497183 0-.2304426-.0149188-.4574041-.0438443-.679973l4.3628678-.000251.0002254-4.3149998 4.3187746-.0000002v-8.865h-8.873l.0002347 4.31535977-4.32023469-.00035977.00004371 4.3591796c-.22252101-.0288286-.44942699-.0436969-.67980897-.0436969-.39537503 0-.78051236.0437909-1.15081762.1267827l.00058288-6.27114251 4.319-.00012289.00024882-4.315zm-3.6150235 3.61157025v5.30009655l-4.3194366-.0006668.0001878 4.3157897-3.1509921-.0006726c-.4886157-.9126215-1.24029999-1.6635358-2.15383356-2.1516207l-.00033866-3.14780326 4.31897652-.00069314.0002723-4.31442975z" fill="#4285f4"/></svg>
+
+sprite $VMwareEngine_png [64x64/16z] {
+xPVT3iCW28N9oSdY-p_nThMYOlbPkcMftDeFx550HBPTOl3CuPjdk06_qdRp2RwN_KeUundVaUUOuqaUvvbq4rw9ME6nB3k_u17Ctt_d1NOcZP_IhJy6d-iV
+BF1uw9KihxVC7eZmdA-PmI_V3pJkAMS-9DVRmLp6l6xFmnCJ3OtMhXDy9pnjWKzuDDD1XTSENWiypECnwR5gI86wM-2f3hiIt_p_62ycplXZEt1y4Yet2a-4
+rvUMBH_UUYv3FdAGnOSIK9fuM0-kXwOzEtxHdW
+}
+
+!function $VMwareEngineIMG($scale=1)
+!return "<img data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAABYUlEQVR42u3bMQ7DIAwFUI7GkIN5zLF6ol6BqlIqRWmSYrDBdv/gKQPJwyJgIJVS0j9HAgAAAAAA7VjWZzYQUwGKgcgAAAAA7AAMGHQBAAAAAMAXQOsIPwVgWTkRDOCiga6XBgAAAOAegDjr84gAedaiCQAAAIBNgHchklm4DAeQR1R7ABAQIJteDgMAAABIx/22s703SYCtzdogEyUxYQCbGyNXu6675xQKYOvVx11DR5QtLX0DNKQzdSDYAmhM40+0INQC6B+Q6Pz4MwSSAlA/IiP08V8v29JbwwEq05UYUGRxe62r9xuyxRVAy0hPWlPcoQDMXx4LISIAC+HQBjFiOkBm9hhVAIjvLpkB+JW2HgGI8++OmAEaY4BZgKT0FyDN+oOHeUDyBJCFFznmel9qMaQ+DZ56YULzoLIXgBT147klMeophIS4M7Sbv7vudaGTovV1N1ybAwAAAAAAo/ECoDpioxq9PW8AAAAASUVORK5CYII={scale="+$scale+"}>"
+!endfunction
+
+GCPEntityColoring(VMwareEngine)
+!define VMwareEngine(e_alias, e_label, e_techn) GCPEntity(e_alias, e_label, e_techn, #4285F4, VMwareEngine, VMwareEngine)
+!define VMwareEngine(e_alias, e_label, e_techn, e_descr) GCPEntity(e_alias, e_label, e_techn, e_descr, #4285F4, VMwareEngine, VMwareEngine)
+!define VMwareEngineParticipant(p_alias, p_label, p_techn) GCPParticipant(p_alias, p_label, p_techn, #4285F4, VMwareEngine, VMwareEngine)
+!define VMwareEngineParticipant(p_alias, p_label, p_techn, p_descr) GCPParticipant(p_alias, p_label, p_techn, p_descr, #4285F4, VMwareEngine, VMwareEngine)
+GCPEntityColoring(VMware_Engine)
+!define VMware_Engine(e_alias, e_label, e_techn) GCPEntity(e_alias, e_label, e_techn, #4285F4, VMwareEngine, VMware_Engine)
+!define VMware_Engine(e_alias, e_label, e_techn, e_descr) GCPEntity(e_alias, e_label, e_techn, e_descr, #4285F4, VMwareEngine, VMware_Engine)
+!define VMware_EngineParticipant(p_alias, p_label, p_techn) GCPParticipant(p_alias, p_label, p_techn, #4285F4, VMwareEngine, VMware_Engine)
+!define VMware_EngineParticipant(p_alias, p_label, p_techn, p_descr) GCPParticipant(p_alias, p_label, p_techn, p_descr, #4285F4, VMwareEngine, VMware_Engine)

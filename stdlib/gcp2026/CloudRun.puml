@@ -1,0 +1,23 @@
+sprite $CloudRun <svg viewBox="0 0 512 512" width="64" height="64"><g><path fill="#fbbc04" d="M144.4,272c-6.4,0-12.4-3.8-14.9-10.1L55.4,75.9c-3.3-8.2.7-17.5,8.9-20.8,8.2-3.3,17.5.7,20.8,8.9l74.2,186c3.3,8.2-.7,17.5-8.9,20.8-1.9.8-3.9,1.1-5.9,1.1h-.1Z"/><g><path fill="#ea4335" d="M256,272c-6.4,0-12.4-3.8-14.9-10.1l-74.1-186c-2.6-6.6-.6-14.1,5-18.5s13.4-4.5,19.2-.4l260.1,186c7.2,5.1,8.9,15.1,3.7,22.3s-15.1,8.9-22.3,3.7L216.9,114.7l54,135.3c3.3,8.2-.7,17.5-8.9,20.8-1.9.8-4,1.1-5.9,1.1h-.1Z"/></g><path fill="#34a853" d="M127.2,256l-72,180c-3.3,8.2.7,17.5,8.9,20.8,3.1,1.2,4,1.1,5.9,1.1,6.3,0,12.4-3.8,14.9-10.1l74.4-186c.8-2,1.1-4,1.1-5.9h-33.2Z"/><path fill="#4285f4" d="M414.5,256l-197.7,141.2,54.1-135.3c.8-2,1.1-4,1.1-5.9h-33.2l-72,180c-2.6,6.6-.6,14.1,5,18.5,2.9,2.3,6.4,3.4,9.9,3.4s6.5-1,9.3-3l260.4-186c4.4-3.1,6.7-8,6.7-13h-43.6Z"/></g></svg>
+
+sprite $CloudRun_png [64x64/16z] {
+xPR13iCW34CXYoh-_ulNRL9BHX9iUjcavbPL8VQZ1PTorozKDK_2jgjgzzHQurQesYyWUtzJThwQ-Nin_RBtdvBriu1UCi19UFNNBmCCHYj0ZmNq2a76WoMu
+lRKp4Xo2Xuz5WdBiX8027eQWdYHqYM2_5si42o719SX8S0ds7xGi4SGz10HX3o71peCk4GGbn0GnZ1b126D64F5W2NfYSumJWfs4OBvvvVTd3gpYHB_4_HVu
+sHtZzsyYV_O1JkXDVu1qF706PFI0_pUZXvmViNpe08pfOGTmD1wzWm9wwFqHq8FlBrS-VW6xz8W0u8mN9WEDz3OclupqkFmqogS2e4EF2g3kU2A3Z_Ie_2n6
+x4f-D-EK2-zt_Myz0G
+}
+
+!function $CloudRunIMG($scale=1)
+!return "<img data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAACJklEQVR42u2bwXECMQxFtyca0CEtUEuuOqaWtMCFRtICLThmMplsHHaRpS9ZO/FBw4HFs3r6fgYGllLK8p9rmQAmgAlgApgA9uqyUK3uhW8vJ6p1cACX+vBTPc2XVdExAXxNvvwq+eRLU5w1DXsAlj8ABCm4N/oAwHcdbgtwA4CFKeAdCHwkAMhtkDINklOg3QakEOFW0VGOQU0KWAhhqCAlADxkmGZLyC7Uy/DaRv4JGM4KACbDVTo4QxrkF+NkSMLTgrIBaFNwVcqQO1zhLsgeAEgZ9p4aST4OA2WoODk4AwCoDHcghKWh/0UOMlS8naaRAFxkqNkSiDRoALjKUPG2esB3gs4yVGwJjgbgLsMoQerjEyRDb0FaAITJ0FOQFgDhMvQQpO0Y0csQeq5bBGkFMESGvYJ0A3B6P1Otsi7J617eblSrrMsKoK6xtGtK1rYCKE2R8GbbmyRj87TV/Pn1g1wA1GYfAVBNyjh13mr+/rybBGuz3DTPwptub5jRke9Z85Dxt07dDGCU/J5Nvbd5C4Dw6e+JziLR9PJDiA4NIEx+KNGhAYTE33PqagAR8vMQHRKA6/S9RAcB4Ck/b9GhALjIL0J0KADw+I+aejcAtPyiRYcAAJv+CNGZACDlV+s6OvIaACj5DROdFQAq/mmmLgaAlN9I0VkAeEw/1a/Ho+SXJvI9AEgpP8omOssW4J7pb5wA8z9DE8AEMAFMABPABJCzPgE7H5VvKjHFfAAAAABJRU5ErkJggg=={scale="+$scale+"}>"
+!endfunction
+
+GCPEntityColoring(CloudRun)
+!define CloudRun(e_alias, e_label, e_techn) GCPEntity(e_alias, e_label, e_techn, #4285F4, CloudRun, CloudRun)
+!define CloudRun(e_alias, e_label, e_techn, e_descr) GCPEntity(e_alias, e_label, e_techn, e_descr, #4285F4, CloudRun, CloudRun)
+!define CloudRunParticipant(p_alias, p_label, p_techn) GCPParticipant(p_alias, p_label, p_techn, #4285F4, CloudRun, CloudRun)
+!define CloudRunParticipant(p_alias, p_label, p_techn, p_descr) GCPParticipant(p_alias, p_label, p_techn, p_descr, #4285F4, CloudRun, CloudRun)
+GCPEntityColoring(Cloud_Run)
+!define Cloud_Run(e_alias, e_label, e_techn) GCPEntity(e_alias, e_label, e_techn, #4285F4, CloudRun, Cloud_Run)
+!define Cloud_Run(e_alias, e_label, e_techn, e_descr) GCPEntity(e_alias, e_label, e_techn, e_descr, #4285F4, CloudRun, Cloud_Run)
+!define Cloud_RunParticipant(p_alias, p_label, p_techn) GCPParticipant(p_alias, p_label, p_techn, #4285F4, CloudRun, Cloud_Run)
+!define Cloud_RunParticipant(p_alias, p_label, p_techn, p_descr) GCPParticipant(p_alias, p_label, p_techn, p_descr, #4285F4, CloudRun, Cloud_Run)

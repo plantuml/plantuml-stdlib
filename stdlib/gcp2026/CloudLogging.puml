@@ -1,0 +1,21 @@
+sprite $CloudLogging <svg viewBox="0 0 24 24" width="64" height="64"><g><rect fill="#4285f4" x="6" y="11" width="4" height="2"/><rect fill="#4285f4" x="4" y="18" width="6" height="2"/><g><g ><path fill="#4285f4" d="M 4 18 L 6 18 L 6 6 L 4 6 L 4 18 Z"/><path fill="#669df6" d="M 9 7 L 22 7 L 22 3 L 9 3 L 9 7 Z"/><path fill="#669df6" d="M 9 14 L 22 14 L 22 10 L 9 10 L 9 14 Z"/><path fill="#669df6" d="M 9 21 L 22 21 L 22 17 L 9 17 L 9 21 Z"/><path fill="#aecbfa" d="M 2 8 L 8 8 L 8 2 L 2 2 L 2 8 Z"/></g></g></g></svg>
+
+sprite $CloudLogging_png [64x64/16z] {
+xTJH2i0W28LXjJ7s_ayy5WqMn2HhvF1yz_z5Q1B1EAvrvwdceDzLZ1xzPpsh7FsVJFAhx3T4ZWlwvaLzdt-Zxzg_YVrMMFjRr5wALVERrO_kB-x7l_kayhc_
+qU-FlITvClILrJt4S08
+}
+
+!function $CloudLoggingIMG($scale=1)
+!return "<img data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAA10lEQVR42u3bzQmDQBCA0S1tD6klLeS6x7SQFqwltdjCxJCfgwSDGsLqvsN3E8EH4uyAKSJSyyUAAAAAGNddIw+VFW0e4P4QsaIMAMDjXsdLH5WUAQAAAAAAAAAAAPwZIFeSswCAGQCvncC7Uxfl07s1vu7Z/jZCh3Ofh2JcMysxAAAALALY5BzwY4DtTYIAZgAMlalaAJgMAAAAuwfIU/kMAgDQ9ijsNAgAAAAAANpeiZVKMgkCcBwGAAAAgOUA6dv6a9crsaUBaB3AT1MAAAAAAABAtd0Ab/vyqWC1IksAAAAASUVORK5CYII={scale="+$scale+"}>"
+!endfunction
+
+GCPEntityColoring(CloudLogging)
+!define CloudLogging(e_alias, e_label, e_techn) GCPEntity(e_alias, e_label, e_techn, #4285F4, CloudLogging, CloudLogging)
+!define CloudLogging(e_alias, e_label, e_techn, e_descr) GCPEntity(e_alias, e_label, e_techn, e_descr, #4285F4, CloudLogging, CloudLogging)
+!define CloudLoggingParticipant(p_alias, p_label, p_techn) GCPParticipant(p_alias, p_label, p_techn, #4285F4, CloudLogging, CloudLogging)
+!define CloudLoggingParticipant(p_alias, p_label, p_techn, p_descr) GCPParticipant(p_alias, p_label, p_techn, p_descr, #4285F4, CloudLogging, CloudLogging)
+GCPEntityColoring(Cloud_Logging)
+!define Cloud_Logging(e_alias, e_label, e_techn) GCPEntity(e_alias, e_label, e_techn, #4285F4, CloudLogging, Cloud_Logging)
+!define Cloud_Logging(e_alias, e_label, e_techn, e_descr) GCPEntity(e_alias, e_label, e_techn, e_descr, #4285F4, CloudLogging, Cloud_Logging)
+!define Cloud_LoggingParticipant(p_alias, p_label, p_techn) GCPParticipant(p_alias, p_label, p_techn, #4285F4, CloudLogging, Cloud_Logging)
+!define Cloud_LoggingParticipant(p_alias, p_label, p_techn, p_descr) GCPParticipant(p_alias, p_label, p_techn, p_descr, #4285F4, CloudLogging, Cloud_Logging)

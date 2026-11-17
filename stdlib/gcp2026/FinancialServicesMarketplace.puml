@@ -1,0 +1,22 @@
+sprite $FinancialServicesMarketplace <svg viewBox="0 0 24 24" width="64" height="64"><rect fill="#669df6" x="4.98" y="10.96" width="7.02" height="1"/><rect fill="#4285f4" x="12" y="10.96" width="7.02" height="1"/><path fill="#669df6" d="M5,13v9h7V13Zm2.76,7.78H6.23V14.22H7.74Zm3.09,0H9.32V14.22h1.51Z"/><path fill="#4285f4" d="M12,13v9h7V13Zm2.68,7.78H13.17V14.22h1.51Zm3.09,0H16.26V14.22h1.51Z"/><path fill="#4285f4" d="M18.48,8.15l-3-1.52A3.71,3.71,0,0,1,12.06,9H12v1h7V9A1,1,0,0,0,18.48,8.15Z"/><path fill="#669df6" d="M11.94,9A3.71,3.71,0,0,1,8.51,6.63l-3,1.52A1,1,0,0,0,5,9V10h7V9Z"/><path fill="#4285f4" d="M12,2v.91h0a2.25,2.25,0,0,1,2.25,2.25v.07A2.25,2.25,0,0,1,12,7.47h0v.92A3.2,3.2,0,0,0,12,2Z"/><path fill="#669df6" d="M12,7.47A2.25,2.25,0,0,1,9.72,5.23V5.16A2.25,2.25,0,0,1,12,2.91h0V2h0a3.2,3.2,0,0,0,0,6.39h0V7.47Z"/><rect fill="#4285f4" x="11.54" y="3.71" width="0.91" height="2.96"/></svg>
+
+sprite $FinancialServicesMarketplace_png [64x64/16z] {
+xPRh3eCW38NjAJQy_nEFKfXaPXCXcpFf-OCn-MfRUs5PNDyIiKYC0OFuAg9yiZ24Aqq4g8KndEmfZ1X8eUi13Hu38OYmaSM3iwaldpSm7PZXbvlpv-EVpV_K
+_y_iLd_8zTTjWxNmEHjOj_eFdOsKQSdEI-q_ANWyJ6EbpGEIslyLFx3GuEfyVOtO2fzRlXLh_26-g9ylyV-Cfxsmr_yE_AlpDyjVlZ0d___Tyrzc7jduAFCZ
+sWAmneVppZll_3i-hNnYk_hdKpdO9IZ0BWE-lrnFFG0
+}
+
+!function $FinancialServicesMarketplaceIMG($scale=1)
+!return "<img data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAABeUlEQVR42u2bwZGDMAxFKc2H1EIdPqYFuqGibUGLZ0ziVWSHDTZJzDv8E0xm/rMkJBEGERnOrAEAAAAAAI7UOP24RX6RBF2uN/lFrlsAi9mgeTVuAEhB9AUgmhelEAkunHqUBtEHgHESbT4b5vH0bxA6AXDP9xAJidlhPX0FIY0G3wOA1bzPGS1FwlcDiHn+cPobAKRR4LoAUDKZqQcAAEBPAM5aA875FIjGq/UB8d7PBxCN+zTvjTa41Ak6qxNsOSc0Ma7D3oAwb50FdHtcu0Os3epaKg1E1jQ4PzEvNQtkS+NiFUD1ZMjuAzaYrwLiCPN/wv7Zb2fSoRmEvQPOq/JGDfAvGt81Pr8LQKkGAOAbALhaSlJgt1iLA4AaAAAAUAMAQB9ADQAAAA4F4Aqr8Idt8DhJbiEihXcD5syf2yECAAAAAAAAAAAAAAAAAAAAAAAAAAAAtAbg1aLT574NsK5rg0rWxxTZ/xSwEgMAAHgzBAAAAAAA/9EvKEAoN1Pg9fkAAAAASUVORK5CYII={scale="+$scale+"}>"
+!endfunction
+
+GCPEntityColoring(FinancialServicesMarketplace)
+!define FinancialServicesMarketplace(e_alias, e_label, e_techn) GCPEntity(e_alias, e_label, e_techn, #4285F4, FinancialServicesMarketplace, FinancialServicesMarketplace)
+!define FinancialServicesMarketplace(e_alias, e_label, e_techn, e_descr) GCPEntity(e_alias, e_label, e_techn, e_descr, #4285F4, FinancialServicesMarketplace, FinancialServicesMarketplace)
+!define FinancialServicesMarketplaceParticipant(p_alias, p_label, p_techn) GCPParticipant(p_alias, p_label, p_techn, #4285F4, FinancialServicesMarketplace, FinancialServicesMarketplace)
+!define FinancialServicesMarketplaceParticipant(p_alias, p_label, p_techn, p_descr) GCPParticipant(p_alias, p_label, p_techn, p_descr, #4285F4, FinancialServicesMarketplace, FinancialServicesMarketplace)
+GCPEntityColoring(Financial_Services_Marketplace)
+!define Financial_Services_Marketplace(e_alias, e_label, e_techn) GCPEntity(e_alias, e_label, e_techn, #4285F4, FinancialServicesMarketplace, Financial_Services_Marketplace)
+!define Financial_Services_Marketplace(e_alias, e_label, e_techn, e_descr) GCPEntity(e_alias, e_label, e_techn, e_descr, #4285F4, FinancialServicesMarketplace, Financial_Services_Marketplace)
+!define Financial_Services_MarketplaceParticipant(p_alias, p_label, p_techn) GCPParticipant(p_alias, p_label, p_techn, #4285F4, FinancialServicesMarketplace, Financial_Services_Marketplace)
+!define Financial_Services_MarketplaceParticipant(p_alias, p_label, p_techn, p_descr) GCPParticipant(p_alias, p_label, p_techn, p_descr, #4285F4, FinancialServicesMarketplace, Financial_Services_Marketplace)

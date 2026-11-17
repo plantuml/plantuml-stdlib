@@ -1,0 +1,18 @@
+sprite $Mandiant <svg viewBox="0 0 512 512" width="64" height="64"><g><path fill="#ea4335" d="M69.7,256c0-21.9,0-184.3,0-186,0-6.5,3.9-12.3,9.8-14.8s12.8-1.1,17.4,3.4l159,157.9L414.9,58.6c6.3-6.2,16.4-6.2,22.6,0,6.2,6.3,6.2,16.4,0,22.6l-170.2,169.1c-6.2,6.2-16.3,6.2-22.6,0L101.7,108.4v147.6s-17.2,20.5-17.2,20.5l-14.8-20.5h0Z"/><path fill="#4285f4" d="M261.5,427c-1.6-.6-157.1-60.3-159.8-171h-32c.6,30.8,10.4,60.5,29.3,88.4,15.1,22.4,36.1,43.5,62.2,63,43.9,32.5,87.2,48.9,89.1,49.6,1.9.7,3.7,1,5.6,1,6.5,0,12.6-4,15-10.4,3.1-8.3-1.1-17.5-9.4-20.6h0Z"/><path fill="#34a853" d="M426.1,274.4c-8.8,0-16-7.2-16-16v-70.1c0-8.8,7.2-16,16-16s16,7.2,16,16v70.1c0,8.8-7.2,16-16,16Z"/><path fill="#fbbc04" d="M410.1,256c-2.7,110.7-158.2,170.4-159.8,171-.4.1-.8.3-1.1.5l-31.5,14.7s16.1,8.2,27.5,12.8c4.4,1.8,7,3,10.7,3s6.2-1.3,6.2-1.3c5.8-2.2,47.1-18.7,88.6-49.5,26.1-19.4,47-40.6,62.1-62.9,18.8-27.9,28.6-57.5,29.2-88.3h-32Z"/></g></svg>
+
+sprite $Mandiant_png [64x64/16z] {
+xPR9beGW34M1CFt_5xSoj8ePdkscwvnYL-YzIJ10EVST_sD4-4rFp6IfDO21QitS92XeR_ApYA2_A4pR0YdEu2s1cERaTO5SvVuaMm9baVP7CUW2ROqRxrH1
+j1vk7QW8afhSu6L1icjhEq0G6FZ1yuA4V9gn0nc1YP_vks1f38fUvLV1WaTf_nmdo4MmjkN-o-lyMN3hQeGV0c9mZ9y2PazX_10m7mxa3y7otL5-2jQsWVak
+k7KTphjGyhrf7_1ygs_3SQcM5xnZRuM7l4VmiE74dqyHvOKBfA3fSuc2zsVWo-y552my6wOrcxa298KVXwHHWHV3ZnKeDaxYqko2P1KVvIv9Xe1qt11uKhC_
+12M8jHkuSbC529-2n9OEu5DmJQ47ZzWVLEg25AuBfw_y9LeU1d-coU5Z_XjCVj9Wxhyfz5N8AJuFFe_kckEalVl32A_ePg0tz7TymFW1
+}
+
+!function $MandiantIMG($scale=1)
+!return "<img data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAACoUlEQVR42u3bbZHDIBAG4FqohbNQC7WAhVqIBSxgAQtYwAIW1gIXcpO7JgcpYRfYTmEm17k/Td6H5avTXvyHt8sAGAADYAAMgIwGWs9/gH8i5zwYTQsA4u7hflsuby3b7KGT1ueE6UEDAEr9vSljhE349TkzKrYIgBtCLPzyjLUqgBNCMnzms6EAeiOAxlcnGqAXAihJ8iznAebZtTcCVfgygPn/cKNeCJThywFC64BAHR4H0BgBpKxyLxxAIwSQU7V74AEqI9QMTwdQCaF2eFoAYoQW4ekBiBBgKg+vnPbKau8yj+70AEgEzEYrBL9p8Xv1AyhEwO4yn8OHC6och3MBDhEMefgYgOsOcIRgDGl4vgAvECgPV3wBDhAolzreAJkImHWeP8ALBOwm5z0AEggUO7z3AVgRHuLn83ui7W0dAF0JoEYzl80FngDAuLmDhPgFkNK+DQDJVji0uwT/mOzyGq6PBHi+HEcDp7bh7Y0OYNJbBGU4AkxbACfpAELgZwDBcRjsyx8MHUBsGFjHqfdl0fg/BSB3w0Ao4Nv7meV/CiD0+L4KWMwF9l7c+6cAYpNh96EQxjmi908DxOaCMCECl/ChGk620wCxoTDp1gTz/cy1eOZHAaSGQjsE+Nnk/Auvi96t+HuCIXBzBJjPIfaLpPTRACkEUWtijI15ZHg0QAqBfHWIbXQIwpMAHCHghwTE13mi8GQARwjF1bA/3SHW+iYAy47U+iRCAMqCCGM91euFS10zgHWf8FDpapCp71y/Cr6UPP0qU+3r8vsjdAzCuYzgS8nX+xyy6u8FQjWk5gaplHf6dhy8Uq83A3iGEOsJUk1zp19fB4c2R82mvxiBefY+DN8weBeAPwi1HfcdgncF4NQGwAAYAANgAHxy+wYlSQiqH2/2tgAAAABJRU5ErkJggg=={scale="+$scale+"}>"
+!endfunction
+
+GCPEntityColoring(Mandiant)
+!define Mandiant(e_alias, e_label, e_techn) GCPEntity(e_alias, e_label, e_techn, #4285F4, Mandiant, Mandiant)
+!define Mandiant(e_alias, e_label, e_techn, e_descr) GCPEntity(e_alias, e_label, e_techn, e_descr, #4285F4, Mandiant, Mandiant)
+!define MandiantParticipant(p_alias, p_label, p_techn) GCPParticipant(p_alias, p_label, p_techn, #4285F4, Mandiant, Mandiant)
+!define MandiantParticipant(p_alias, p_label, p_techn, p_descr) GCPParticipant(p_alias, p_label, p_techn, p_descr, #4285F4, Mandiant, Mandiant)

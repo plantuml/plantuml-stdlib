@@ -1,0 +1,23 @@
+sprite $CloudTranslationAPI <svg viewBox="0 0 24 24" width="64" height="64"><g><g ><path fill="#4285f4" d="M17.91,10.2H16.09L12,21h1.82l1-2.7h4.32l1,2.7H22Zm-2.39,6.3L17,12.6l1.48,3.9Z"/><path fill="#669df6" d="M12.79,14.77l-2.31-2.26,0,0A15.62,15.62,0,0,0,13.88,6.6h2.67V4.8H10.18V3H8.36V4.8H2V6.59H12.15a14.06,14.06,0,0,1-2.88,4.82,14.55,14.55,0,0,1-2.1-3H5.35a16,16,0,0,0,2.71,4.1L3.44,17,4.73,18.3l4.54-4.5,2.83,2.8Z"/></g></g></svg>
+
+sprite $CloudTranslationAPI_png [64x64/16z] {
+xLJH4eGW24nGn___uZkp4X4IVRcPhdsgfdMN1Tcs5oyuOiOVyHt3pkSVdKh7QC9Z-Ku7JNAraxW-2Bk--zaWJikpcCAiV1kNcquF6y65wYa55y97Odaf_4gA
+hJoa35lB8dEIuMtymWl7dIBVTthonWgw6rViMmpK0rmddnBO3sWcv-HxQnFRrftspGbAwO6f01JoWsBTOW2bbUSB4SPyFA9hCpY5XmdYbJmzu2hS3mm4qZXo
+m5Nt8C7GzBtUW6hxjW0-DdZ8-wfwLq0_TSZi7yzWf7yFSBneTGGaEhtv573Nk0uTNKmGDJhq_2IFZhpg1RgSeBAgY-EA_3gnbhkEU-CQqne6rZMc_Prc30Xk
+fmn8xRRkKKqhsWiGQvrByCM3yG4
+}
+
+!function $CloudTranslationAPIIMG($scale=1)
+!return "<img data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAB5ElEQVR42u2bzXEDMQiFVRqH1OI6OKYFd6OK3IKyPiTj2QgtCFaLVhzezdb4ffwINEkqpaSVlQJAAAgAASAABIAAYK7H81X2CgABIADMAWD7sW+BUqUi7ZkwCgASBi5XAAgAAWAIABgoUbO83ShcMY/L7AJEBsBKAC4flpaOvgoAMS1Kvp89jMpaAF0NjIg+TrcMEfPCVIuSFoDYDAENpl2HCUNoBWyKW4CY5rifY0X/6/sFm8peXgDAEQRJphAAsAZgk485gDCYW8uV5HzC/FvoZhASbnYS89AAUDwB4EIAo+j/CtyMwgwIKDTPAYCudoGDB5UkBAAMAMVTBqBx/VdT3qoMrjDPhkAYRQqMx2tQBYG4+1twLhuEsNXwentCK8pEc0Qvu8C/bi+FwKnzWoaM3gaz5KprQZBEXwLpzAeR3HPPc3YCSXpry8B60MHOsuE0P5A2SnMAj2dJVhPeJ4Se9D/IFjAHYBF5AgJo61ozE1xmvmPvlwosAeAI88zNjyu0LgEcYB4MAZQTmuAfhFPe8C3Nc8ug6/3vJPMUABRo/908zV+Kau/z3jM8AVCvtz1XqBfzZg8cUpBu038UTA/mk+Ujp/S8W6X/x5mZm1G3aH4aqPEPEwEgAASAABAAAsC6+gHSw7RgAsticAAAAABJRU5ErkJggg=={scale="+$scale+"}>"
+!endfunction
+
+GCPEntityColoring(CloudTranslationAPI)
+!define CloudTranslationAPI(e_alias, e_label, e_techn) GCPEntity(e_alias, e_label, e_techn, #4285F4, CloudTranslationAPI, CloudTranslationAPI)
+!define CloudTranslationAPI(e_alias, e_label, e_techn, e_descr) GCPEntity(e_alias, e_label, e_techn, e_descr, #4285F4, CloudTranslationAPI, CloudTranslationAPI)
+!define CloudTranslationAPIParticipant(p_alias, p_label, p_techn) GCPParticipant(p_alias, p_label, p_techn, #4285F4, CloudTranslationAPI, CloudTranslationAPI)
+!define CloudTranslationAPIParticipant(p_alias, p_label, p_techn, p_descr) GCPParticipant(p_alias, p_label, p_techn, p_descr, #4285F4, CloudTranslationAPI, CloudTranslationAPI)
+GCPEntityColoring(Cloud_Translation_API)
+!define Cloud_Translation_API(e_alias, e_label, e_techn) GCPEntity(e_alias, e_label, e_techn, #4285F4, CloudTranslationAPI, Cloud_Translation_API)
+!define Cloud_Translation_API(e_alias, e_label, e_techn, e_descr) GCPEntity(e_alias, e_label, e_techn, e_descr, #4285F4, CloudTranslationAPI, Cloud_Translation_API)
+!define Cloud_Translation_APIParticipant(p_alias, p_label, p_techn) GCPParticipant(p_alias, p_label, p_techn, #4285F4, CloudTranslationAPI, Cloud_Translation_API)
+!define Cloud_Translation_APIParticipant(p_alias, p_label, p_techn, p_descr) GCPParticipant(p_alias, p_label, p_techn, p_descr, #4285F4, CloudTranslationAPI, Cloud_Translation_API)

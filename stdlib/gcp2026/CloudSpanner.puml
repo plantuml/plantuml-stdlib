@@ -1,0 +1,22 @@
+sprite $CloudSpanner <svg viewBox="0 0 512 512" width="64" height="64"><g><path fill="#4285f4" d="M331.2,310.6l-59.5-34.9v-83.4c.1-8.8-7-16-15.9-16h0c-8.8,0-16,7.1-16,16v84c-.1,0-59.1,34.3-59.1,34.3-7.6,4.5-10.2,14.2-5.8,21.9,3,5.1,8.3,8,13.8,8s5.5-.7,8-2.2l59.4-34.6,58.7,34.5c2.5,1.5,5.3,2.2,8.1,2.2,5.5,0,10.8-2.8,13.8-7.9,4.5-7.6,1.9-17.4-5.7-21.9h0Z"/><path fill="#fbbc04" d="M271.9,215.1l-91.8-52.9c-4.9-2.9-8-8.1-8-13.9v-78.3c0-8.8,7.2-16,16-16s16,7.2,16,16v69.1l51.8,29.9,51.8-29.9v-69.1c0-8.8,7.2-16,16-16s16,7.2,16,16v78.3c0,5.7-3,11-8,13.9l-59.8,34.5v18.4Z"/><path fill="#34a853" d="M121.3,458c-5.5,0-10.9-2.9-13.9-8-4.4-7.6-1.8-17.4,5.8-21.9l59.7-34.6v-59.8c-.1,0-52-29.8-52-29.8l-59.7,34.6c-7.6,4.4-17.4,1.8-21.9-5.8-4.4-7.6-1.8-17.4,5.8-21.9l67.7-39.3c4.9-2.9,11-2.9,16,0l59.9,34.4,16.1-9.3v106.1c.2,5.7-2.9,11-7.8,13.9l-67.7,39.3c-2.5,1.5-5.3,2.2-8,2.2h0Z"/><path fill="#ea4335" d="M390.7,458c-2.7,0-5.5-.7-8-2.2l-67.7-39.3c-5-2.9-8-8.2-8-13.9v-69.1c.1,0-16.3-9.6-16.3-9.6l92.3-52.4c5-2.9,11.1-2.8,16,0l67.7,39.3c7.6,4.4,10.2,14.2,5.8,21.9-4.4,7.6-14.2,10.2-21.9,5.8l-59.7-34.6-51.9,29.8v59.8c-.1,0,59.6,34.6,59.6,34.6,7.6,4.4,10.2,14.2,5.8,21.9-3,5.1-8.3,8-13.9,8h0Z"/></g></svg>
+
+sprite $CloudSpanner_png [64x64/16z] {
+xPNH3iCW24NhtQtX_xzuJReu1Gjr9aiVvCsB1z22tRPb3xGK2gwH30G_-x4zkSBY5-_pg0MCynM0Tdcl_mkIFekX0NgT34eeZ0um6qlZJm2cw2e2Vd-6zj5x
+KoPvaXVP9tbP_Fzu8EBTPgJUhdaSQtfqupT2re8ABRMVNm5zeK-VVYEmMUTkwRAfRRG2n1wYhWgYoeJEYfAiAPxwBD3LAG5rVkhZ-49kFwpg6-WhDeBfj57U
+R-F5J_5cHEZDRN-EOINUf_MpSpMtLtFCUs739yYMu1qYkrKY313v6VWHtZ7d_YVBdcPl
+}
+
+!function $CloudSpannerIMG($scale=1)
+!return "<img data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAACEklEQVR42u3bwZWDIBAGYHuygTnYQlqwhb3O0RZswRZysYC0kBbSAqtP8taoBAYQdP0Pc9kYX/7PAYH3tlBKFVeuAgAAAAAAALBX3QsK/H74PbIATD9czSr8HicDoAUAZbkHAAAAAAAAAAAAAMABAFi0GpxWgfyfANxDrIOfEqAwhDCHMaP57yey7gYnhP5LINbX2LB4r/BpzgPsT1bWKac9EDGP7SzB85wIbc/un+1+iSOxAeLZlUkmucOeCVbNS7Vts/uJz6EB3nXv6msDjAUAAAAAAAA4E0DZ3Wis3ACvqqSh0gEMocfiodSspOFXAOPfPIKrWbEPRGjwebENQgfnjfDvYhvEGHKofhH+AyI6gG535VhsCP8t+LLIEJy/BF8WBQMIgy+LpnvUVLadEoRfQQiDz6u3DQvfdlf6GpfrlAGA9ZAwdkdTt7aArDuDXK5zAtChrE9W1ClrANoYIvT+vP55qMftJn6yNghXAJKMbafv/gFYx2VbNxwyti1zBfl0AEtec5vDom1Y8pp7VtVWCBa+JldvC+kc4L3Q2egE8lzgiGd1w33IeQ6IUUcCyLIXAAAAAACAywIYVpI+ABxju5sMwLIviAHgtSBKAuCycfIAKGJsd3cFcNgus0944RlAeoAYp0ORu4FTA/SS7XJECIqN4AvgtV2OCMG5AWivdg+YH/A/QwAAAAAAAAAAyOoXD/mznOVAODoAAAAASUVORK5CYII={scale="+$scale+"}>"
+!endfunction
+
+GCPEntityColoring(CloudSpanner)
+!define CloudSpanner(e_alias, e_label, e_techn) GCPEntity(e_alias, e_label, e_techn, #4285F4, CloudSpanner, CloudSpanner)
+!define CloudSpanner(e_alias, e_label, e_techn, e_descr) GCPEntity(e_alias, e_label, e_techn, e_descr, #4285F4, CloudSpanner, CloudSpanner)
+!define CloudSpannerParticipant(p_alias, p_label, p_techn) GCPParticipant(p_alias, p_label, p_techn, #4285F4, CloudSpanner, CloudSpanner)
+!define CloudSpannerParticipant(p_alias, p_label, p_techn, p_descr) GCPParticipant(p_alias, p_label, p_techn, p_descr, #4285F4, CloudSpanner, CloudSpanner)
+GCPEntityColoring(Cloud_Spanner)
+!define Cloud_Spanner(e_alias, e_label, e_techn) GCPEntity(e_alias, e_label, e_techn, #4285F4, CloudSpanner, Cloud_Spanner)
+!define Cloud_Spanner(e_alias, e_label, e_techn, e_descr) GCPEntity(e_alias, e_label, e_techn, e_descr, #4285F4, CloudSpanner, Cloud_Spanner)
+!define Cloud_SpannerParticipant(p_alias, p_label, p_techn) GCPParticipant(p_alias, p_label, p_techn, #4285F4, CloudSpanner, Cloud_Spanner)
+!define Cloud_SpannerParticipant(p_alias, p_label, p_techn, p_descr) GCPParticipant(p_alias, p_label, p_techn, p_descr, #4285F4, CloudSpanner, Cloud_Spanner)

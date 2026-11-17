@@ -1,0 +1,22 @@
+sprite $MyCloud <svg viewBox="0 0 24 24" width="64" height="64"><g transform="translate(0.000000, 1.000000)"><g ><g transform="translate(2.000000, 7.000000)"><g ></g><mask maskUnits="userSpaceOnUse" x="-2" y="-7" width="24" height="24"><g filter="url(#Adobe_OpacityMaskFilter)"><path fill="#FFFFFF" d=" M16.4,3.5c2.3,0.2,4.1,2,4.1,4.3c0,2.4-2,4.3-4.4,4.3H4.8c-2.9,0-5.2-2.3-5.2-5.2c0-2.7,2-4.9,4.7-5.1C5.3-0.3,7.5-1.8,10-1.8 C13.2-1.8,15.8,0.5,16.4,3.5z M16.1,10.3c1.5,0,2.6-1.2,2.6-2.6s-1.2-2.6-2.6-2.6h-1.3V4.7C14.8,2.1,12.7,0,10,0 C7.8,0,5.9,1.4,5.4,3.4H4.8C2.8,3.4,1.2,5,1.2,6.9s1.6,3.4,3.5,3.4H16.1z"/></g></mask><path mask="url(#mask-2_00000060711828738252312490000013807154105866559643_)" fill="#5C85DE" d="M -2 17 L 22 17 L 22 -7 L -2 -7 Z"/></g></g></g></svg>
+
+sprite $MyCloud_png [64x64/16z] {
+xLRR2aCX39C4yV__U9k3uQsryRmDyoXDxItLb2ukBYucWAM2E26N5XbFs1KAdMK17j3nXkmWZsNx5LAvlJ-CE-3QydiSQ8Dr4IDT0EqukSi0z7kz2Q3fccC0
+Dsz_rEeax-YqvP8tkUra0jCgXxeBgqA8AGoMcAJPcXqWEjiVEIx4H74_Z5eut2yTdqbsW9OFVJy-uFSfUtCTvPUa5s2TZNx_GG1zouhQmM6Le8WPZ05JYs2s
+zZVVSisQqep1UFLEwSQZ7QSh7k0kc1tkp_3YR_02
+}
+
+!function $MyCloudIMG($scale=1)
+!return "<img data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAABi0lEQVR42u2awZHDMAhFXRpNbAtbxz+mLDWytSjJjA87mSRCWCBh/8O/xbF5kuGDvNVatytrIwACIAACIAACIAACIAACIAACIAACIAA3/dz+npKH8FD9IOy/OQ+APaBqUHlemxbAgcDfKReAxja3CikAdAQvL5oCYXTwpZXglK8OoiBErby1arhD8A4ejv8tSwD4slLw3l3TAChMDYKSK0IBKBLUsJXR7rQQAPvN1eXN0Vxh9P2OZuOQ1W88S3ED0BE8tHXew2u4AGgEH9KoGHqM7ueyuDqZ2b932GYxA/hyk+kDjM4uE1YAy628NSm3IGgJY5UR1j8T9ipTA6WttSnmew2/IloAobU9ciBjBYBsAHpcowaAJAUglwagfZ01F5WrA6iJAcACQE6UB0w74BS74Pd9HDhihXGJMthoOCSRI7QZoYhR96RmCZaJUOtoazXjg95R3ejWc1UdHoqWMwbfdS7gdOQ9NXjLwUgWEFLroHOBRtJZTfxKjAAIgAAIgAAIgAAIgAAIQKc7BSyf9y+YMl8AAAAASUVORK5CYII={scale="+$scale+"}>"
+!endfunction
+
+GCPEntityColoring(MyCloud)
+!define MyCloud(e_alias, e_label, e_techn) GCPEntity(e_alias, e_label, e_techn, #4285F4, MyCloud, MyCloud)
+!define MyCloud(e_alias, e_label, e_techn, e_descr) GCPEntity(e_alias, e_label, e_techn, e_descr, #4285F4, MyCloud, MyCloud)
+!define MyCloudParticipant(p_alias, p_label, p_techn) GCPParticipant(p_alias, p_label, p_techn, #4285F4, MyCloud, MyCloud)
+!define MyCloudParticipant(p_alias, p_label, p_techn, p_descr) GCPParticipant(p_alias, p_label, p_techn, p_descr, #4285F4, MyCloud, MyCloud)
+GCPEntityColoring(My_Cloud)
+!define My_Cloud(e_alias, e_label, e_techn) GCPEntity(e_alias, e_label, e_techn, #4285F4, MyCloud, My_Cloud)
+!define My_Cloud(e_alias, e_label, e_techn, e_descr) GCPEntity(e_alias, e_label, e_techn, e_descr, #4285F4, MyCloud, My_Cloud)
+!define My_CloudParticipant(p_alias, p_label, p_techn) GCPParticipant(p_alias, p_label, p_techn, #4285F4, MyCloud, My_Cloud)
+!define My_CloudParticipant(p_alias, p_label, p_techn, p_descr) GCPParticipant(p_alias, p_label, p_techn, p_descr, #4285F4, MyCloud, My_Cloud)

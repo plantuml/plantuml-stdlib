@@ -1,0 +1,21 @@
+sprite $TransferAppliance <svg viewBox="0 0 24 24" width="64" height="64"><g><path fill="#4285f4" d="M21.63,6.57H9.26a.32.32,0,0,0-.32.33V9.06a.32.32,0,0,0,.32.32H21.63A.32.32,0,0,0,22,9.06V6.9a.32.32,0,0,0-.31-.33ZM10.49,8.71a.7.7,0,0,1-.7-.7.7.7,0,1,1,1.4,0h0a.7.7,0,0,1-.7.7Z"/><path fill="#4285f4" d="M21.63,10.61H9.26a.32.32,0,0,0-.32.32v2.15a.32.32,0,0,0,.32.32H21.63a.32.32,0,0,0,.32-.32V10.93A.32.32,0,0,0,21.63,10.61ZM10.49,12.75a.7.7,0,1,1,.7-.7h0a.7.7,0,0,1-.7.7Z"/><path fill="#4285f4" d="M21.68,14.62H9.32a.32.32,0,0,0-.32.32V17.1a.32.32,0,0,0,.32.33H21.68A.32.32,0,0,0,22,17.1V14.94A.32.32,0,0,0,21.68,14.62ZM10.54,16.75a.71.71,0,0,1-.7-.71.71.71,0,0,1,1.41,0,.71.71,0,0,1-.71.71Z"/><path fill="#669df6" d="M6.74,9.86H4.61A.81.81,0,0,1,4.4,8.25H6.74A.81.81,0,1,1,7,9.86Z"/><path fill="#aecbfa" d="M6.74,12.81H2.92a.82.82,0,0,1-.21-1.62h4A.82.82,0,0,1,7,12.81Z"/><path fill="#669df6" d="M6.74,15.75H4.61a.81.81,0,0,1-.21-1.61H6.74A.81.81,0,0,1,7,15.75Z"/></g></svg>
+
+sprite $TransferAppliance_png [64x64/16z] {
+xPLB3e0W30Nx8SJxdzWOaO29rdusnCv-GWkl1I19aYGM4ddtDn6IV2ANVpJXz47ZOstmQHQ0el5h1qttv_LvgdzrYjX_P7vv1A_t_vnVd7nMvzVhFzIlos_i
+_7ltZm5i6FK-FzNcnys_xVvnF3xW_RNxy-wJq_V-7ylbDqcIdx43
+}
+
+!function $TransferApplianceIMG($scale=1)
+!return "<img data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAABEUlEQVR42u3ZwQ2DMAyF4YzmQ2fpHD52ha7QWToLK7hBBQkhSgnQKrH/wzvABeWLktghmVmKnAQAAAAAAAAAAAAAAAAAAAAAAAAAcHYut04qyf8B+o/mWCWRGgDG2QgJMF8WsQAqWBrHAK73TnLsS3RloDp5ry0C2MaIy01wD8CA4AZAS5eAu0IoDzDHPoZKEIDFo1Ar2QPKAR7PsrgphYcB2Y6s1gHDs7QAoDsB+kjzpfAvABZa5HhLYPJOo7bDse4Dwt8IeSyFZS2uATY2Q+YS4N0E0Q5vBUheAaR09mcAbV+JHTgGF7uxiADS9K3wCQDxfoy42gQphSmFAQAAAAAAAAAAAAAAAAAAAAAAACd5ARjybW0JAuyjAAAAAElFTkSuQmCC{scale="+$scale+"}>"
+!endfunction
+
+GCPEntityColoring(TransferAppliance)
+!define TransferAppliance(e_alias, e_label, e_techn) GCPEntity(e_alias, e_label, e_techn, #4285F4, TransferAppliance, TransferAppliance)
+!define TransferAppliance(e_alias, e_label, e_techn, e_descr) GCPEntity(e_alias, e_label, e_techn, e_descr, #4285F4, TransferAppliance, TransferAppliance)
+!define TransferApplianceParticipant(p_alias, p_label, p_techn) GCPParticipant(p_alias, p_label, p_techn, #4285F4, TransferAppliance, TransferAppliance)
+!define TransferApplianceParticipant(p_alias, p_label, p_techn, p_descr) GCPParticipant(p_alias, p_label, p_techn, p_descr, #4285F4, TransferAppliance, TransferAppliance)
+GCPEntityColoring(Transfer_Appliance)
+!define Transfer_Appliance(e_alias, e_label, e_techn) GCPEntity(e_alias, e_label, e_techn, #4285F4, TransferAppliance, Transfer_Appliance)
+!define Transfer_Appliance(e_alias, e_label, e_techn, e_descr) GCPEntity(e_alias, e_label, e_techn, e_descr, #4285F4, TransferAppliance, Transfer_Appliance)
+!define Transfer_ApplianceParticipant(p_alias, p_label, p_techn) GCPParticipant(p_alias, p_label, p_techn, #4285F4, TransferAppliance, Transfer_Appliance)
+!define Transfer_ApplianceParticipant(p_alias, p_label, p_techn, p_descr) GCPParticipant(p_alias, p_label, p_techn, p_descr, #4285F4, TransferAppliance, Transfer_Appliance)

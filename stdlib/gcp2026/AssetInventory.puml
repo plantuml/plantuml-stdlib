@@ -1,0 +1,22 @@
+sprite $AssetInventory <svg viewBox="0 0 24 24" width="64" height="64"><rect x="10.75" y="10.61" width="2.57" height="2.57" transform="translate(-4.89 12) rotate(-45.01)" style="fill:#4285f4"/><path style="fill:#669df6;fill-rule:evenodd" d="M 17.87 11.89 L 17.8 11.95 L 14.03 15.73 L 12.97 14.68 L 15.77 11.89 L 10.06 6.18 L 10.06 4.08 L 10.13 4.15 L 17.87 11.89 Z"/><path style="fill:#aecbfa;fill-rule:evenodd" d="M 10.06 6.18 L 4.36 11.89 L 11.11 18.65 L 10.06 19.7 L 10 19.63 L 2.25 11.89 L 10.06 4.08 L 10.06 6.18 Z"/><path style="fill:#669df6;fill-rule:evenodd" d="M 13.94 17.6 L 13.94 19.7 L 13.88 19.63 L 6.13 11.9 L 9.97 8.05 L 11.03 9.11 L 8.23 11.9 L 13.94 17.6 Z"/><path style="fill:#4285f4" d="M 13.94 17.6 L 19.64 11.9 L 12.89 5.14 L 13.94 4.08 L 14 4.15 L 21.75 11.9 L 21.68 11.96 L 13.94 19.7 L 13.94 17.6 Z"/></svg>
+
+sprite $AssetInventory_png [64x64/16z] {
+xTND4eCW34PHC3J3-pzn-H6XGkoNB5koSk6veqmSdTkpvnVdyEqg10idFWCXnc3Wn3LmnAWF99vy3GHz8FFiZO72FLi3bJjd33Hk37Hk2epS4EZSMmAT4vC-
+C7BM1puvi_8CrXmEI1mCBFdvwGE1DM_tVWr870p870eKVfIjc_WSY7CW-xekBxusftbtFHVrxkq57W88VmXWN0oWN0ZWN0w0N0h0N0ZWV0pG642v4C2v4C2v
+583vEg3Wgu2Apm4bdm9QVW-e-IsWvoNWs_uRU6BNJvmiVC-UFvWt
+}
+
+!function $AssetInventoryIMG($scale=1)
+!return "<img data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAABqklEQVR42u3awW3DMAyFYY2WQ2fpHDp2hazQFXrxAJklK7AyEAFBQLmSTD4R6Tvw1B78f0hi2VISkfSfJxGAAAQgAAEIQAACEIAAvnP9kfx5vV/++r+Pr3ve560Avm+ylZECIEcIj3h5TH4LgBr/BKAilODLUzwMARb/AtBCyGgEWLwCEAIBFl8mKwDLEWDx+99KbIqGAIuvEw0BGh8RAR4fDQEWr4VFQEDF1ztAjoaAjJeICOj4OmF+E0LEr0QIE78KYWl869kfibA6vnnBKIQI8UsRosQvQxiN37QVnlG8FYKMIBwBJAVgH21JuykXl5WLSx0AqfMTlgeAp78CLYTkhACN7/0RRCHA40dug94IS+JHF0JeCMviZ5bC5ggr42cfhtwQ0PFnHofNERr3etf4sy9ERhDyBIJ7vMUrMS8ESLzVS1FzBFS85WtxNwTPeOuNEXME73iPrTEzBES81+boaQRUvOf2+CkEVLz3AYlpBFQ84ojMFAIqHnVIKvXuGlcEVDzymFzq2TKvCKh46EFJ7WN/sPjhUVkCEIAABCAAAQhAAAIQwHd+ARGaH5MtSOjbAAAAAElFTkSuQmCC{scale="+$scale+"}>"
+!endfunction
+
+GCPEntityColoring(AssetInventory)
+!define AssetInventory(e_alias, e_label, e_techn) GCPEntity(e_alias, e_label, e_techn, #4285F4, AssetInventory, AssetInventory)
+!define AssetInventory(e_alias, e_label, e_techn, e_descr) GCPEntity(e_alias, e_label, e_techn, e_descr, #4285F4, AssetInventory, AssetInventory)
+!define AssetInventoryParticipant(p_alias, p_label, p_techn) GCPParticipant(p_alias, p_label, p_techn, #4285F4, AssetInventory, AssetInventory)
+!define AssetInventoryParticipant(p_alias, p_label, p_techn, p_descr) GCPParticipant(p_alias, p_label, p_techn, p_descr, #4285F4, AssetInventory, AssetInventory)
+GCPEntityColoring(Asset_Inventory)
+!define Asset_Inventory(e_alias, e_label, e_techn) GCPEntity(e_alias, e_label, e_techn, #4285F4, AssetInventory, Asset_Inventory)
+!define Asset_Inventory(e_alias, e_label, e_techn, e_descr) GCPEntity(e_alias, e_label, e_techn, e_descr, #4285F4, AssetInventory, Asset_Inventory)
+!define Asset_InventoryParticipant(p_alias, p_label, p_techn) GCPParticipant(p_alias, p_label, p_techn, #4285F4, AssetInventory, Asset_Inventory)
+!define Asset_InventoryParticipant(p_alias, p_label, p_techn, p_descr) GCPParticipant(p_alias, p_label, p_techn, p_descr, #4285F4, AssetInventory, Asset_Inventory)

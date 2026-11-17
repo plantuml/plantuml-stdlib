@@ -1,0 +1,22 @@
+sprite $PremiumNetworkTier <svg viewBox="0 0 24 24" width="64" height="64"><g><path fill="#4285f4" d="M18.23,6.24A9.61,9.61,0,0,0,12.08,4C7.24,4,3.11,7.65,2,12.9a.81.81,0,1,0,1.58.35v0C4.53,8.74,8,5.6,12.08,5.6A7.86,7.86,0,0,1,16.53,7Z"/><path fill="#4285f4" d="M18.67,7.53l-5.88,2.63h0a2,2,0,1,0,1.13,2.58,1.83,1.83,0,0,0,.12-.46.1.1,0,0,0,.05,0l5-4C19.68,7.74,19.36,7.22,18.67,7.53Z"/><circle fill="#669df6" cx="20.04" cy="9.99" r="0.84"/><circle fill="#aecbfa" cx="21.16" cy="13.04" r="0.84"/></g></svg>
+
+sprite $PremiumNetworkTier_png [64x64/16z] {
+xPLB4iCm24EDq7Xo_nEtpI9f7334gtO6RSD3_iYajLBfHuLTYspVJZrjWkqcvcbkfhZi_QJ3OKwSntXq2F4RFBHDuVGMXXJkLI6r-BuSjymPmrzU0kVa21dX
+uEm645mFWWZDSNmdK4Ji0aIPt0kqzov9-y_3vP3URl2sFStNO_cRmV4Ud-Rih-vud8iB7YSN4vw9v3UVPsPaJVWxeQh3zZcPP1QkyMZnPvPS-NSbtNsPNqIb
+Vi-bKgbK-b-z00
+}
+
+!function $PremiumNetworkTierIMG($scale=1)
+!return "<img data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAABhUlEQVR42u3Z3a2DMAwFYEbzQ2fpHH7sCl2hUzBAZ2EFN0hBilAghNgxbc+Dpft0yfns8JMOIjL8cw0AAAAAAAAAAAAAAADoWLfHRLn6SYAQbAk8hpKK6oJi3WVRKp4hvwIgLlaMSh3iqh0vQlwGIO5xPtg9KnUwuSkegfAFiOGLoY1xfQAK4VX36gYEuW2BQniyfqS63gR3wo9Wj6qj6zIH2AnPjsGpZfpqL3aJ8Ds3R7sJ2LggO3SbNZ8GTS85TmOu2oSW0fcOng1/f060lArAxiLIYX8X1xBCcyhJijQATEY/+Uym+HfNh1T2f67CtwNYdL8yaNV+V5+A3MuOQudNvwAThLZ7gFH3z3aeup8I5Rbr1H2fIzGjve9y6FENsLHYoeMEqIR/vYViVQOQ0aOv29jH4JJUFQBbdOTo0ZlS92VV1AJAvU6Nta4TAvNpgNVCudM7vup15pFPEBi/DQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADgzwE+s10FUtJ+YM4AAAAASUVORK5CYII={scale="+$scale+"}>"
+!endfunction
+
+GCPEntityColoring(PremiumNetworkTier)
+!define PremiumNetworkTier(e_alias, e_label, e_techn) GCPEntity(e_alias, e_label, e_techn, #4285F4, PremiumNetworkTier, PremiumNetworkTier)
+!define PremiumNetworkTier(e_alias, e_label, e_techn, e_descr) GCPEntity(e_alias, e_label, e_techn, e_descr, #4285F4, PremiumNetworkTier, PremiumNetworkTier)
+!define PremiumNetworkTierParticipant(p_alias, p_label, p_techn) GCPParticipant(p_alias, p_label, p_techn, #4285F4, PremiumNetworkTier, PremiumNetworkTier)
+!define PremiumNetworkTierParticipant(p_alias, p_label, p_techn, p_descr) GCPParticipant(p_alias, p_label, p_techn, p_descr, #4285F4, PremiumNetworkTier, PremiumNetworkTier)
+GCPEntityColoring(Premium_Network_Tier)
+!define Premium_Network_Tier(e_alias, e_label, e_techn) GCPEntity(e_alias, e_label, e_techn, #4285F4, PremiumNetworkTier, Premium_Network_Tier)
+!define Premium_Network_Tier(e_alias, e_label, e_techn, e_descr) GCPEntity(e_alias, e_label, e_techn, e_descr, #4285F4, PremiumNetworkTier, Premium_Network_Tier)
+!define Premium_Network_TierParticipant(p_alias, p_label, p_techn) GCPParticipant(p_alias, p_label, p_techn, #4285F4, PremiumNetworkTier, Premium_Network_Tier)
+!define Premium_Network_TierParticipant(p_alias, p_label, p_techn, p_descr) GCPParticipant(p_alias, p_label, p_techn, p_descr, #4285F4, PremiumNetworkTier, Premium_Network_Tier)

@@ -1,0 +1,21 @@
+sprite $EarlyAccessCenter <svg viewBox="0 0 24 24" width="64" height="64"><path d="m18.4638408 13.9406954 3.5986592 3.6511337-3.6025784 3.6005562-1.0308006-1.0616774 1.798379-1.7980034-17.165.000286v-1.4902758l17.184-.0000102-1.8212982-1.8482249zm-8.0927902-6.3656338c3.2163231 0 5.8236682 2.6480263 5.8236682 5.9145324 0 .9362773-.2142104 1.8217424-.5955727 2.6086027h-10.45619109c-.38136229-.7868603-.5955727-1.6723254-.5955727-2.6086027 0-3.2665061 2.60734509-5.9145324 5.82366829-5.9145324zm-6.33058135-2.15738591 1.74096349 1.79017192-1.04557261 1.04670225-1.7409635-1.79017192zm12.74035815-.00752539 1.0316589 1.06081882-1.7644434 1.76634967-1.0316589-1.06081882zm-7.09861285-2.21776503 1.46882455.00998192-.0166028 2.51484053-1.46882453-.00998192z" fill="#4285f4"/></svg>
+
+sprite $EarlyAccessCenter_png [64x64/16z] {
+xPN12iCm34EB4K7__yMZb35IEikEJXlHrNsgxQZfSMnjFIaYB9naRBu1I3wr0uTu0OYioAmidpYhgO5wGDIbVw4_bFSJv_OvdG0K_ZcVDpnRbCF0cqOxTtSr
+SWZICGW-QtNsfi7uoiFflhg212yraF7qsgyC09CdlG7-cxy28A_0VFzfaFJvYrjKZvyRGESVvOzn-KVGDmYs1PEV35PuchotFnCVlumxuJFn_FxOskhg1G
+}
+
+!function $EarlyAccessCenterIMG($scale=1)
+!return "<img data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAABU0lEQVR42u3bSxKDIAwGYI/GogfLssfiRL1COs64oB21lpAH5l9kDXwqSVAXZl4yxwIAAAAAAAAAAABU4/F8rVGaSAewLpqbKAAAAAAAMBWAZNIjAUbjXR2UtolXz6vVzIPMAJpBefTgnYsfOo+egc0RNOfgPgHvsd1vQe9x1Tahpu7nk7jUF2hsft11wK80dGHRhxiW6W94IbR1fCyMat0palV60ijTABzs0tMgRLvy3xEXYNAz744gAahGABQOwODWN9sPegHYOCgMgOGz/xGRAIoHQJhKUDHvTwPAXgEAAABgNytlAaCTlEzpssBOPUKp6oBRh6WzlMKsdWIc7RDk715AinCLz1wkCLf51qcXIdpGZ95KZwA4RcgCcHi2mAUg7SbImdNgTZEGJYufHkC6+KkBXJuhIAA+7XBQBDJ9MxQNAT9MAAAAAAAAAAAAgJ54A/HEhF/ANN+2AAAAAElFTkSuQmCC{scale="+$scale+"}>"
+!endfunction
+
+GCPEntityColoring(EarlyAccessCenter)
+!define EarlyAccessCenter(e_alias, e_label, e_techn) GCPEntity(e_alias, e_label, e_techn, #4285F4, EarlyAccessCenter, EarlyAccessCenter)
+!define EarlyAccessCenter(e_alias, e_label, e_techn, e_descr) GCPEntity(e_alias, e_label, e_techn, e_descr, #4285F4, EarlyAccessCenter, EarlyAccessCenter)
+!define EarlyAccessCenterParticipant(p_alias, p_label, p_techn) GCPParticipant(p_alias, p_label, p_techn, #4285F4, EarlyAccessCenter, EarlyAccessCenter)
+!define EarlyAccessCenterParticipant(p_alias, p_label, p_techn, p_descr) GCPParticipant(p_alias, p_label, p_techn, p_descr, #4285F4, EarlyAccessCenter, EarlyAccessCenter)
+GCPEntityColoring(Early_Access_Center)
+!define Early_Access_Center(e_alias, e_label, e_techn) GCPEntity(e_alias, e_label, e_techn, #4285F4, EarlyAccessCenter, Early_Access_Center)
+!define Early_Access_Center(e_alias, e_label, e_techn, e_descr) GCPEntity(e_alias, e_label, e_techn, e_descr, #4285F4, EarlyAccessCenter, Early_Access_Center)
+!define Early_Access_CenterParticipant(p_alias, p_label, p_techn) GCPParticipant(p_alias, p_label, p_techn, #4285F4, EarlyAccessCenter, Early_Access_Center)
+!define Early_Access_CenterParticipant(p_alias, p_label, p_techn, p_descr) GCPParticipant(p_alias, p_label, p_techn, p_descr, #4285F4, EarlyAccessCenter, Early_Access_Center)

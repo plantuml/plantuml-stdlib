@@ -1,0 +1,22 @@
+sprite $CloudRouter <svg viewBox="0 0 24 24" width="64" height="64"><g><g ><g ><g><path fill="#4285f4" d="M19,14v3l-5-5,5-5v3h3v4ZM5,10H2v4H5v3l5-5L5,7Zm9,7V14H10v3H7l5,5,5-5ZM14,7v3H10V7H7l5-5,5,5Z"/></g></g></g></g></svg>
+
+sprite $CloudRouter_png [64x64/16z] {
+xPT13eCm30HHvCFy_yKzWA2fY9rg6ga7V4JC2f6rlTcsf_wuGE9A09G0A05G0g04G0c04W0b04e0b00eWRPNN60SZoeoEfcBxy149QXvKfwAf-39UKgUZ6U2
+PympnJFY6V77yRRUAEsipbOtPeWPfts-qnAU2LEdF7LFv3nbInKyLKSkvkNto_ydp-zB_zmkl1PdLVwr_VFJ_fNpGyulEJ_b_9Rxur3PwzqhdGzMxq-zltL-
+qFb5voUTttH-rFbLvsUTt_NzGTzVdbfTBm
+}
+
+!function $CloudRouterIMG($scale=1)
+!return "<img data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAABVklEQVR42u3bOw7CMAyA4R4tAwfLyGm5QpBQKyFE83Dt2FX+wQtDhT9K7aTOVkrZVo4NAAAAAMArHs/XJ5YE2JMve6wF8JO8K0KU5N0QIiXvghAt+ekIEZOfihA1+WkIkZOfghA9eXOEOyRvinCX5M0Q7pS8CYI40ZPPUyXyQJK5dq0IAHn0l9i/fC9AEtx5aTbA0O1oBfD1t3MB6EawAPh55rgBdCFoA/x54LoCNBE0AU6qjTtAFUELoFJqQwCURom8BNDoM/QAGvU8SZqVo1R1hqTJyqPXrAHkSB2bUoeZZgOoICi21y4AlxCU1xZuACIEg4WVK8Bo22yxqgSAvwAPQcogjVAvQCskrfCxLdYTvq3w8oshlsNsiLAlxqYo2+K8GBE1K7XaPtq4nF6Ll6O8HmdAghEZhqQYk2NQklFZhqUZl+fABEdmODTFsTkAAAAAAHm8AWnNtOqDmY6ZAAAAAElFTkSuQmCC{scale="+$scale+"}>"
+!endfunction
+
+GCPEntityColoring(CloudRouter)
+!define CloudRouter(e_alias, e_label, e_techn) GCPEntity(e_alias, e_label, e_techn, #4285F4, CloudRouter, CloudRouter)
+!define CloudRouter(e_alias, e_label, e_techn, e_descr) GCPEntity(e_alias, e_label, e_techn, e_descr, #4285F4, CloudRouter, CloudRouter)
+!define CloudRouterParticipant(p_alias, p_label, p_techn) GCPParticipant(p_alias, p_label, p_techn, #4285F4, CloudRouter, CloudRouter)
+!define CloudRouterParticipant(p_alias, p_label, p_techn, p_descr) GCPParticipant(p_alias, p_label, p_techn, p_descr, #4285F4, CloudRouter, CloudRouter)
+GCPEntityColoring(Cloud_Router)
+!define Cloud_Router(e_alias, e_label, e_techn) GCPEntity(e_alias, e_label, e_techn, #4285F4, CloudRouter, Cloud_Router)
+!define Cloud_Router(e_alias, e_label, e_techn, e_descr) GCPEntity(e_alias, e_label, e_techn, e_descr, #4285F4, CloudRouter, Cloud_Router)
+!define Cloud_RouterParticipant(p_alias, p_label, p_techn) GCPParticipant(p_alias, p_label, p_techn, #4285F4, CloudRouter, Cloud_Router)
+!define Cloud_RouterParticipant(p_alias, p_label, p_techn, p_descr) GCPParticipant(p_alias, p_label, p_techn, p_descr, #4285F4, CloudRouter, Cloud_Router)

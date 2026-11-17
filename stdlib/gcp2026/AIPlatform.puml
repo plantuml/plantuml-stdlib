@@ -1,0 +1,23 @@
+sprite $AIPlatform <svg viewBox="0 0 24 24" width="64" height="64"><g><g ><path fill="#4285f4" d="M 16.64 15.13 L 17.38 13.88 L 20.91 13.88 L 22 12 L 19.82 8.25 L 16.75 8.25 L 15.69 6.39 L 14.5 6.39 L 14.5 5.13 L 16.44 5.13 L 17.5 7 L 19.09 7 L 16.9 3.25 L 12.63 3.25 L 12.63 8.25 L 14.36 8.25 L 15.09 9.5 L 12.63 9.5 L 12.63 12 L 14.89 12 L 15.94 10.13 L 18.75 10.13 L 19.47 11.38 L 16.67 11.38 L 15.62 13.25 L 12.63 13.25 L 12.63 17.63 L 16.03 17.63 L 15.31 18.88 L 12.63 18.88 L 12.63 20.75 L 16.9 20.75 L 20.18 15.13 L 18.09 15.13 L 17.36 16.38 L 14.5 16.38 L 14.5 15.13 L 16.64 15.13 Z"/><path fill="#669df6" d="M 7.36 15.13 L 6.62 13.88 L 3.09 13.88 L 2 12 L 4.18 8.25 L 7.25 8.25 L 8.31 6.39 L 9.5 6.39 L 9.5 5.13 L 7.56 5.13 L 6.5 7 L 4.91 7 L 7.1 3.25 L 11.38 3.25 L 11.38 8.25 L 9.64 8.25 L 8.91 9.5 L 11.38 9.5 L 11.38 12 L 9.11 12 L 8.06 10.13 L 5.25 10.13 L 4.53 11.38 L 7.33 11.38 L 8.38 13.25 L 11.38 13.25 L 11.38 17.63 L 7.97 17.63 L 8.69 18.88 L 11.38 18.88 L 11.38 20.75 L 7.1 20.75 L 3.82 15.13 L 5.91 15.13 L 6.64 16.38 L 9.5 16.38 L 9.5 15.13 L 7.36 15.13 Z"/></g></g></svg>
+
+sprite $AIPlatform_png [64x64/16z] {
+xLR1iiGW21EXZl__nRkjjHO5nEsyqsjEk-EaOXAK45wyO826_MziSD4nDNm_47C3UVX9vsS7VRFuym8WMVpiglwGZl7faC_nWLqyR39MVb6Uhb_cza7ZXsa1
+M3WQdoOIGjrUqizHG8qSIdmwmnWMF6J-kHj0yP-y_QFb9_g3VzbGm4EOvy4_GtI1ysaQ_DGlJmlWz8G7zjBfG9vy09E4eVzKAVcXjVpL40y583yqZdpYKf2m
+FGngtFXjJIZWhXb2Aw3nzmCJtRGasxkUFteOLJxA-JGitEpmI1ac8ptRulP3V4ubR_dh0qXsV6Vvot_sVZ4pEdvSlBuwlds1GLMi303R-7w5ci6exmlCaUxz
+K9fFx46PRyfGh3z75-7zZP5C5y3dltFsqFZaVW9alcFs0ccDF24m6jWLOL1l4F95c3VmqB-qqZs_p6_y9bcV7v_tFpxj_uVp-ul_X0y
+}
+
+!function $AIPlatformIMG($scale=1)
+!return "<img data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAACKklEQVR42u2by3HDMAxEWRoOqSV17DEtpBtVpBaYKOMZKx5Kwo8gbeOAm3zgI7hYEHSptZZ3jpIAEkACSAAJIAEkAHN8fq9bED/uv/34WrcgbswKAL9R+VFpB2BbWBUEpgJw2/0aCGCLqQAsAwBgCgC3M10HAHDJAg8Aj4triZ4GAA5E8N93QwE0hA98gbwE0FT7G5jL77oDaAmfrEKoARTPLPDcfYoAcJAFCAXQOtfysigTwQYEF0G0ANiHwhSJqwAaR2EvjnP0AvyyqCqD8zdDnX0ApgYgM0VqIzSmGdL5/esKcaL0WncoOiqd/f6xOWJC0AKAKwC93/+LYgBQemeBs7C1M+AgHtMdB6EFUF0AyC86QrtBs2BqhQ92wRQDuDou0GSBavd9rshEAGDQC6gAnOwi+ZRNPgCBaEKaPRrhw0kQPwvYAKixSAhFEyIAnmXPCsCxLFIUAPQaYhgrgvgILCPMTydrDE8R5MTyDLuvLoNGByh1gjAuHgYfYLbBo51gfdnR2IzDUQoEQLPeCEUAwKgbIWqJGfONwOI4GisMZ0gdAFR1b+A9GLF2gOojoO0OewA4scXUVQNOav7ZkxjP6TDtfIO5OgS+BwjxAWGjsWVCAIicDZYJAQwfj5sGIYbbnvjxODMLPBdfetninvYXQbtPQ62woSX2aIcxvBd4+2dy+ouTF3komfcBYx5LT3sfIHguv77Wc/n8x0gCSAAJIAEkgATwdPEDVgbpFHVVQA4AAAAASUVORK5CYII={scale="+$scale+"}>"
+!endfunction
+
+GCPEntityColoring(AIPlatform)
+!define AIPlatform(e_alias, e_label, e_techn) GCPEntity(e_alias, e_label, e_techn, #4285F4, AIPlatform, AIPlatform)
+!define AIPlatform(e_alias, e_label, e_techn, e_descr) GCPEntity(e_alias, e_label, e_techn, e_descr, #4285F4, AIPlatform, AIPlatform)
+!define AIPlatformParticipant(p_alias, p_label, p_techn) GCPParticipant(p_alias, p_label, p_techn, #4285F4, AIPlatform, AIPlatform)
+!define AIPlatformParticipant(p_alias, p_label, p_techn, p_descr) GCPParticipant(p_alias, p_label, p_techn, p_descr, #4285F4, AIPlatform, AIPlatform)
+GCPEntityColoring(AI_Platform)
+!define AI_Platform(e_alias, e_label, e_techn) GCPEntity(e_alias, e_label, e_techn, #4285F4, AIPlatform, AI_Platform)
+!define AI_Platform(e_alias, e_label, e_techn, e_descr) GCPEntity(e_alias, e_label, e_techn, e_descr, #4285F4, AIPlatform, AI_Platform)
+!define AI_PlatformParticipant(p_alias, p_label, p_techn) GCPParticipant(p_alias, p_label, p_techn, #4285F4, AIPlatform, AI_Platform)
+!define AI_PlatformParticipant(p_alias, p_label, p_techn, p_descr) GCPParticipant(p_alias, p_label, p_techn, p_descr, #4285F4, AIPlatform, AI_Platform)

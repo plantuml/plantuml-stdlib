@@ -1,0 +1,22 @@
+sprite $CloudNetwork <svg viewBox="0 0 24 24" width="64" height="64"><g><g ><path fill="#669df6" d="M 4.94 13.7 L 11.53 20.22 L 12.62 19.07 L 6.3 12.93 L 4.94 13.7 Z"/><path fill="#669df6" d="M 12.57 4.06 L 11.48 5.22 L 17.69 11.44 L 19.47 11.06 L 12.57 4.06 Z"/><rect fill="#4285f4" x="11.38" y="5.13" width="1.25" height="5"/><rect fill="#4285f4" x="11.38" y="14.5" width="1.25" height="5"/><circle fill="#aecbfa" cx="12" cy="4.5" r="1.88"/><circle fill="#aecbfa" cx="12" cy="19.5" r="1.88"/><path fill="#669df6" d="M 2.66 11.38 L 17.73 11.38 L 21.37 13.25 L 6.3 13.25 L 2.66 11.38 Z"/><circle fill="#aecbfa" cx="4.5" cy="12.31" r="2.5"/><circle fill="#aecbfa" cx="19.5" cy="12.31" r="2.5"/></g></g></svg>
+
+sprite $CloudNetwork_png [64x64/16z] {
+xPVj3i8W34LNIidU_udt2PH8sN9hicXsVphEaJckrcbwyx_XDJXDl8Syx-xOGSRH3HIU7-R9-G68x_b9IkWJZCnnnM51dEV02HTi_EGGxBn3SF2uuEHXGUPH
+GU51GUKnWU8l1TGfYkQpWBg5EgiIXdrAIOnrzxhEOgohBu_B7errYkV0PffB5X-JcMZmz33Vx5-SF0rYyUg2yFKtwkSv8NNtSaT0_GCSjjkiWX12VzteZAkM
+DVsv-QEZ1G3V211U2o1U2J2-2a2-250-2s3-48Xd-YfrGySlUUU_xyn_pldTyV-17DF_cr_80W
+}
+
+!function $CloudNetworkIMG($scale=1)
+!return "<img data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAABwUlEQVR42u3bvZmEIBAGYEsjuFquhU0JacEWbMHEAq6WbWEOn8XnWM8fBhTY4Qsm2UR4lZ8Z2I6IupajAwAAAAAAAAAgbww/pGzQKlQTALajeqPzS2jRADtvfh2iASggdOsABAAMgYYnwcdA9N0/21wGXeeXEL0R6vrxr+Nm/Nf5bAjFtqBf5qltkAtlO6s3AG5HqAZg/q0EQlUAJRCqAzhGaAQg55dQLUAuhKoBcgyH6gHuRvgIgDuHA2cP729hdWoJiwtwhJDSvtMt60nyMuWu4PgI8/Y5tX0pnS9WxpoRAjof1L7k4kWpYqafTKW0L6V4uU5ltfs8bw8zHFaWWV/BZQBzSrszS18eZmR3fvfcIaZ2D4AWAPhDYJAFwF0F5oapXGEnXPYLilkGNfPt61qKq5yD1+SH9O9jf6oQQSflAkfzgXmt/esxOgXmAsqLu84a1GXZoHvQEslZWkwyFNO+LOlwDMLVAMXrAVwEcQBcBJEAHASxAKEIogFCEMQDnCE0AbCHYIa4TcvHng36CCelLLn3BF0pi3BPEPcEcU0OALgn2OokGFDFUWKXwY2i6/o0F3+ZAQAAAAAAAAAgb/wCu9f5TJR3YmcAAAAASUVORK5CYII={scale="+$scale+"}>"
+!endfunction
+
+GCPEntityColoring(CloudNetwork)
+!define CloudNetwork(e_alias, e_label, e_techn) GCPEntity(e_alias, e_label, e_techn, #4285F4, CloudNetwork, CloudNetwork)
+!define CloudNetwork(e_alias, e_label, e_techn, e_descr) GCPEntity(e_alias, e_label, e_techn, e_descr, #4285F4, CloudNetwork, CloudNetwork)
+!define CloudNetworkParticipant(p_alias, p_label, p_techn) GCPParticipant(p_alias, p_label, p_techn, #4285F4, CloudNetwork, CloudNetwork)
+!define CloudNetworkParticipant(p_alias, p_label, p_techn, p_descr) GCPParticipant(p_alias, p_label, p_techn, p_descr, #4285F4, CloudNetwork, CloudNetwork)
+GCPEntityColoring(Cloud_Network)
+!define Cloud_Network(e_alias, e_label, e_techn) GCPEntity(e_alias, e_label, e_techn, #4285F4, CloudNetwork, Cloud_Network)
+!define Cloud_Network(e_alias, e_label, e_techn, e_descr) GCPEntity(e_alias, e_label, e_techn, e_descr, #4285F4, CloudNetwork, Cloud_Network)
+!define Cloud_NetworkParticipant(p_alias, p_label, p_techn) GCPParticipant(p_alias, p_label, p_techn, #4285F4, CloudNetwork, Cloud_Network)
+!define Cloud_NetworkParticipant(p_alias, p_label, p_techn, p_descr) GCPParticipant(p_alias, p_label, p_techn, p_descr, #4285F4, CloudNetwork, Cloud_Network)

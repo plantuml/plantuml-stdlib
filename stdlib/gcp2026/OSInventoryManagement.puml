@@ -1,0 +1,22 @@
+sprite $OSInventoryManagement <svg viewBox="0 0 24 24" width="64" height="64"><g stroke="none" stroke-width="1" fill="none"><mask fill="white"><use xlink:href="#path-1"></use></mask><use fill="#4285F4" xlink:href="#path-1"></use></g></svg>
+
+sprite $OSInventoryManagement_png [64x64/16z] {
+xPVh3i8W38N9oOdf-p-nEZ2pG1cbKMF2-JUoRxrGIfVIrcU4XzPfoY4kul8IO_ZQ1_Z62-OJng9i62WU5C5XjFWjdRKvFBlTNRnCcMbVn0w-UHMj-IiUNPjb
+7Pl_2nwjaeSVlh7vd_7Z2m6kLlbDNdbjnc3nL8tNRiC6hnlVe8_tUQfsFEhZVLvrNepwS9U7wW4Cyl9r-z7um_clTjoz_tNzqRp59-i_UUi_VFv0eNR0nUlz
+mh4GE7zF-uxywt681PpEVrLnPzaPzSFgpjJrVwOEhQVetTamHZ-CCcNp8_lD1z2SlpD-oFK4Myslo4-happBKwv7RrtVeC9a2YZoKxNLw0u
+}
+
+!function $OSInventoryManagementIMG($scale=1)
+!return "<img data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAABrUlEQVR42u2bO3YDIQxFZ2kqsjCVXlZWlC2Q2McF8eEnIWAEr3jVGAwX8ZEEVwjhOlkXAAAAAADAaH09fp6iWEcAeHec/xQy4m0BvDsfGsS7AggC8VYAKmafE90eQLSIcUXJUY7Kh8JvSnqWXQNAOapZE++oy3TKzOh80rxH1DkEgGA1n2kBL80CQBaNjUfMYPSXA6ARI1qpnwAAAAAAAAAAAO4LgAx1uQMwIaoEAAAAAAAAACcDGJJbcANgWVAUACYASJi3NEqtnhJLAVRSZ6yMU7ILAK3BVmU59gCANRFl67D5EgDSULs2Qn1nAKSJD0jD6TsCCLCATQCcvQYcvwsIOsPbngMaLIGVJ0hy6QxpzvSfPgS8QcfeIEUmzdL6pV7k3bzB0mJWbFdmMWUJiNt7g5ks0b9vidtnLrzBoDwHcKmTLnYBxVE4O/qV/xgGgHuSnVpfIDb3xjbTKABd6e4eAEIL6wdglPsnI29wvgUYXZbsulBR2gEqAEzvCvdccOy5KkuFcr7fDDVA4Eq55EnS1aOpzHrw3TDPc9PJFwDLrBKezQEAAAAAAAj1CxGFtkQMAPvRAAAAAElFTkSuQmCC{scale="+$scale+"}>"
+!endfunction
+
+GCPEntityColoring(OSInventoryManagement)
+!define OSInventoryManagement(e_alias, e_label, e_techn) GCPEntity(e_alias, e_label, e_techn, #4285F4, OSInventoryManagement, OSInventoryManagement)
+!define OSInventoryManagement(e_alias, e_label, e_techn, e_descr) GCPEntity(e_alias, e_label, e_techn, e_descr, #4285F4, OSInventoryManagement, OSInventoryManagement)
+!define OSInventoryManagementParticipant(p_alias, p_label, p_techn) GCPParticipant(p_alias, p_label, p_techn, #4285F4, OSInventoryManagement, OSInventoryManagement)
+!define OSInventoryManagementParticipant(p_alias, p_label, p_techn, p_descr) GCPParticipant(p_alias, p_label, p_techn, p_descr, #4285F4, OSInventoryManagement, OSInventoryManagement)
+GCPEntityColoring(OS_Inventory_Management)
+!define OS_Inventory_Management(e_alias, e_label, e_techn) GCPEntity(e_alias, e_label, e_techn, #4285F4, OSInventoryManagement, OS_Inventory_Management)
+!define OS_Inventory_Management(e_alias, e_label, e_techn, e_descr) GCPEntity(e_alias, e_label, e_techn, e_descr, #4285F4, OSInventoryManagement, OS_Inventory_Management)
+!define OS_Inventory_ManagementParticipant(p_alias, p_label, p_techn) GCPParticipant(p_alias, p_label, p_techn, #4285F4, OSInventoryManagement, OS_Inventory_Management)
+!define OS_Inventory_ManagementParticipant(p_alias, p_label, p_techn, p_descr) GCPParticipant(p_alias, p_label, p_techn, p_descr, #4285F4, OSInventoryManagement, OS_Inventory_Management)

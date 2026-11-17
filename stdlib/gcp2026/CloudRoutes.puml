@@ -1,0 +1,23 @@
+sprite $CloudRoutes <svg viewBox="0 0 24 24" width="64" height="64"><g><g ><path fill="#4285f4" d="M 16.68 18.94 L 12.81 18.94 L 4.43 8.45 L 2 8.45 L 2 5.02 L 5.94 5.02 L 14.34 15.51 L 16.68 15.51 L 16.68 12.79 L 22 17.22 L 16.68 21.65 L 16.68 18.94 Z"/><path fill="#669df6" d="M 12.46 10.84 L 14.34 8.49 L 16.68 8.49 L 16.68 11.21 L 22 6.78 L 16.68 2.35 L 16.68 5.06 L 12.81 5.06 L 10.33 8.17 L 12.46 10.84 Z"/><path fill="#669df6" d="M 6.33 13.16 L 4.43 15.55 L 2 15.55 L 2 18.98 L 5.94 18.98 L 8.46 15.83 L 6.33 13.16 Z"/></g></g></svg>
+
+sprite $CloudRoutes_png [64x64/16z] {
+xPRR4iCW24GL3EF_Vt4xZV62eBJCzA7DlcMQizKDe27S-XV5myaJUNcAJfxGoJiCJfxc5A59eAgGYlWhALSb_bk5UaMLvmOYpaFe-JpoH0Q3WSyMV4nnvBC5
+7q9aVDfiVhF-Qc359pxtvMBuVgLskC7Htb_NpsN33TZVnJKkrE6usNt_S8EnOmtzotU0_N8jysFEyBtvDMKOUzum95QzR9BRGEtbRnc0rq2900meBWp0i9fI
+8k8Edlk2BLuAN3A0xITj3IPb2BkQmAxTXGXEJzhX9OBP0BHlMiutDflxWVeINO-mE-EcEipAX9VvEDVXqW2LuPvq0z9vN1mCScUWTh0P8q0DrmsIjlwezt8d
+qFB3HI-hKw5TaOJntkvMoJVMhhsauE8_nayUWelttB_1XmT8uTQFwG4
+}
+
+!function $CloudRoutesIMG($scale=1)
+!return "<img data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAB7ElEQVR42u2bwY3DMAwEXRofV8vVwWdauG5cUVrgxYADBIZtUdKSoiI99hMgATgw1+RKWURkGVnLBDABTAATwATQkX7/nsMDoJdWFIheAciu4QFsotEBbOLRARRD+CYAUmKOpx/+PJ6kFbgwjfgGQLY5XgHgl0QpBhSvKSpX5AWgCoJR8WpfQAHYVDTVGRavgoAEkAXBqfikOaIBSAYAcZYPAI0fGPd90xZIQohUvCWAUz9IDDGhXoN3w08thFVbQLNB6E65EArdnwpHYYGMwgoIVZNiAgJ3sQwBIBSttWHW4a2/AX5w6OfOAhEQhDWnd8NFYiBTpII8IE4o6rk+h43FvTOEiAAW6/U5/MlQjxDgP1hril9xNmjpBzvgOAD2YcYNwscT1h7A50zv5QeHFqNmAE4WGvaAcOIx3AqAaiNDm+LF7/kuQ4lQgiz94AboWuILVgcZZqaoeKLqASTO5lSZHMAP+EKr4rtUC4AtcvgCCGIZz1sCINSkaA3BAgCDJ8Va3ZojGgAbjcticU5hAMB0czRpBSQAj/UZ7gMoAOS1PmeKPEyQnddn6HJVe2GJwEGKRoxMmrq7JpdoGQ6RCDUCMMZFyQsAFCoTdAYw1m3xA4Dxrsu/3wTD/mMEfZgy/zQ1AUwAE8AEMLL+AZ4YQJAFdNhXAAAAAElFTkSuQmCC{scale="+$scale+"}>"
+!endfunction
+
+GCPEntityColoring(CloudRoutes)
+!define CloudRoutes(e_alias, e_label, e_techn) GCPEntity(e_alias, e_label, e_techn, #4285F4, CloudRoutes, CloudRoutes)
+!define CloudRoutes(e_alias, e_label, e_techn, e_descr) GCPEntity(e_alias, e_label, e_techn, e_descr, #4285F4, CloudRoutes, CloudRoutes)
+!define CloudRoutesParticipant(p_alias, p_label, p_techn) GCPParticipant(p_alias, p_label, p_techn, #4285F4, CloudRoutes, CloudRoutes)
+!define CloudRoutesParticipant(p_alias, p_label, p_techn, p_descr) GCPParticipant(p_alias, p_label, p_techn, p_descr, #4285F4, CloudRoutes, CloudRoutes)
+GCPEntityColoring(Cloud_Routes)
+!define Cloud_Routes(e_alias, e_label, e_techn) GCPEntity(e_alias, e_label, e_techn, #4285F4, CloudRoutes, Cloud_Routes)
+!define Cloud_Routes(e_alias, e_label, e_techn, e_descr) GCPEntity(e_alias, e_label, e_techn, e_descr, #4285F4, CloudRoutes, Cloud_Routes)
+!define Cloud_RoutesParticipant(p_alias, p_label, p_techn) GCPParticipant(p_alias, p_label, p_techn, #4285F4, CloudRoutes, Cloud_Routes)
+!define Cloud_RoutesParticipant(p_alias, p_label, p_techn, p_descr) GCPParticipant(p_alias, p_label, p_techn, p_descr, #4285F4, CloudRoutes, Cloud_Routes)

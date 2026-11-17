@@ -1,0 +1,44 @@
+' Styling
+' ##################################
+
+hide stereotype
+
+!definelong GCPEntityColoring(e_stereo)
+skinparam rectangle<<e_stereo>> {
+    BackgroundColor GCP_BG_COLOR
+    BorderColor transparent
+    Shadowing false
+}
+!enddefinelong
+
+!definelong EntityColoring(e_stereo)
+GCPEntityColoring(e_stereo)
+!enddefinelong
+
+' Overwriting Elements
+' ##################################
+!function $GCPImg($service, $color="#4285F4")
+!if %variable_exists("GCP_USE_SVG") || %variable_exists("$GCP_USE_SVG")
+!return "<$" + $service + ">"
+!endif
+!if %function_exists("$" + $service + "IMG")
+!return %call_user_func("$" + $service + "IMG")
+!endif
+!return "<color:" + $color + "><$" + $service + "></color>"
+!endfunction
+
+!definelong GCPEntity(e_alias, e_label, e_techn, e_color, e_sprite, e_stereo)
+rectangle "$GCPImg(e_sprite, e_color)\n\n==e_label" <<e_stereo>> as e_alias
+!enddefinelong
+
+!definelong GCPEntity(e_alias, e_label, e_techn, e_descr, e_color, e_sprite, e_stereo)
+rectangle "$GCPImg(e_sprite, e_color)\n\n==e_label" <<e_stereo>> as e_alias
+!enddefinelong
+
+!definelong Entity(e_alias, e_label, e_techn, e_color, e_sprite, e_stereo)
+GCPEntity(e_alias, e_label, e_techn, e_color, e_sprite, e_stereo)
+!enddefinelong
+
+!definelong Entity(e_alias, e_label, e_techn, e_descr, e_color, e_sprite, e_stereo)
+GCPEntity(e_alias, e_label, e_techn, e_descr, e_color, e_sprite, e_stereo)
+!enddefinelong

@@ -1,0 +1,22 @@
+sprite $MixedReality <svg viewBox="0 0 512 512" width="64" height="64"><g><path d="M458,426.333h-96.435c-13.908,0-26.979-5.422-36.806-15.267l-68.76-68.896-74.634,74.77c-6.003,6.014-14.151,9.393-22.648,9.393H54c-17.673,0-32-14.327-32-32V117.667c0-17.673,14.327-32,32-32h404c17.673,0,32,14.327,32,32v276.666c0,17.673-14.327,32-32,32h0ZM256,303.52c4.249,0,8.323,1.69,11.325,4.697l85.951,86.116h104.745l-.021-276.665H54v276.666h104.711l85.964-86.116c3.002-3.007,7.076-4.697,11.325-4.697h0Z" fill="#2b80f8"/><path d="M156,307.333c-39.149,0-71-31.851-71-71s31.851-71,71-71,71,31.851,71,71-31.851,71-71,71ZM156,197.333c-21.505,0-39,17.495-39,39s17.495,39,39,39,39-17.495,39-39-17.495-39-39-39h0Z" fill="#9aa0a6"/><path d="M356,307.333c-39.149,0-71-31.851-71-71s31.851-71,71-71,71,31.851,71,71-31.851,71-71,71ZM356,197.333c-21.505,0-39,17.495-39,39s17.495,39,39,39,39-17.495,39-39-17.495-39-39-39h0Z" fill="#9aa0a6"/><path d="M458,426.333h-104.734c-8.497,0-16.645-3.379-22.648-9.393l-97.235-97.409,11.302-11.313c6.252-6.258,16.395-6.256,22.644.006l80.079,80.238c3.779,3.786,5.867,5.872,5.867,5.872h104.724v-156.5h32v156.5c0,17.673-14.327,32-32,32h.001Z" fill="#9aa0a6"/></g></svg>
+
+sprite $MixedReality_png [64x64/16z] {
+xPRD3eGW38Ij9Qpl_yIxHXSedH71WnVcP3Bv1igFT5ccfjxMEg1CXsr8uHcU0hPX7RNlIVtb6txjN_B94rv4C64Dp4iyv2AS0VcOf1Rt1k9ZAOmd0_3d0ABr
+393XUScccbAXuVboK2qhW0RcpPJHzq9vCJKN1M03yddRrVBU-FpqPFnKr63zcB-__fxlst_F_q-fH7p-h07uhlEF-9xx1_cE-u_vwZUZPPBz_r2-aCAftER3
+5db0cz_VLHxGv8zdcGQq-72-i2oWmOVqG9E0QpxZBE2IB_4pe8UtE0wuu6iS1XYUzJRu0eANg86J0Dw_uVsk9BG1P0VMI5a3oreECPfT_zJx-W8
+}
+
+!function $MixedRealityIMG($scale=1)
+!return "<img data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAABz0lEQVR42u3awXHDIBAFUPWUBvaQWtxCrhxpwS2kBbfgFlILkT06yB6EluWvZKR/2Mkh9iz7AAkMQ0ppOHMMBCAAAQhAAAIQgAAEmMVXfIYcLHQA4wfDGOmgEYoABy8+i/A+7NMZYglA3qUONP9NAHKUJz0BCEAAArgCXK+/j5BZwItoyeEGMDUkFUIAhTfngANMvZGUESwjApkDClDZsHl4Fb+aAw1Q6gWZ/mb/XwEAzQEDWJiPYaEHg2W+euRAAlT1aq6Bht5vzgEByM1Ly1xGfl77HRSAWOZ0zTTwyuEFIMrGhQYASI5LvKd5nG4ElKbIKZ4BEICe3wJIgC7XATCAlVVaWtm4IFaCphxoANM63XEjtJoDCmDZqTXs/yE54AC9/R7gBpBpqGiLjq8PMPHIsSlATcTM0zsCRksXAI8Tp+/4lx3OXggfAzA/fN0S4SMAcifPWyHsDlA4dl983SERdgUoFb/2zkch7AagKV6x8JEuAWqKVyD0BWAp3hNhU4CW4r0QrADIgG2GoiFUALlfT/cqHnBEpt42e1+TQx2LIwFkq4uS6LsBiOKD+q5ww3XZwXFXN+4kb/JTHXfhZWkCEIAABCAAAQhAAAK8xj/1KbYMW9Dt6gAAAABJRU5ErkJggg=={scale="+$scale+"}>"
+!endfunction
+
+GCPEntityColoring(MixedReality)
+!define MixedReality(e_alias, e_label, e_techn) GCPEntity(e_alias, e_label, e_techn, #4285F4, MixedReality, MixedReality)
+!define MixedReality(e_alias, e_label, e_techn, e_descr) GCPEntity(e_alias, e_label, e_techn, e_descr, #4285F4, MixedReality, MixedReality)
+!define MixedRealityParticipant(p_alias, p_label, p_techn) GCPParticipant(p_alias, p_label, p_techn, #4285F4, MixedReality, MixedReality)
+!define MixedRealityParticipant(p_alias, p_label, p_techn, p_descr) GCPParticipant(p_alias, p_label, p_techn, p_descr, #4285F4, MixedReality, MixedReality)
+GCPEntityColoring(Mixed_Reality)
+!define Mixed_Reality(e_alias, e_label, e_techn) GCPEntity(e_alias, e_label, e_techn, #4285F4, MixedReality, Mixed_Reality)
+!define Mixed_Reality(e_alias, e_label, e_techn, e_descr) GCPEntity(e_alias, e_label, e_techn, e_descr, #4285F4, MixedReality, Mixed_Reality)
+!define Mixed_RealityParticipant(p_alias, p_label, p_techn) GCPParticipant(p_alias, p_label, p_techn, #4285F4, MixedReality, Mixed_Reality)
+!define Mixed_RealityParticipant(p_alias, p_label, p_techn, p_descr) GCPParticipant(p_alias, p_label, p_techn, p_descr, #4285F4, MixedReality, Mixed_Reality)

@@ -1,0 +1,16 @@
+sprite $Quotas <svg viewBox="0 0 24 24" width="64" height="64"><g><g><g ><path fill="#669df6" d="M6,2H4V20.58A1.31,1.31,0,0,0,5.29,22H18.73A1.29,1.29,0,0,0,20,20.58V2l-2,.14V20H6Z"/><path fill="#4285f4" d="M12,22h6.73A1.29,1.29,0,0,0,20,20.58V2H18V20H12v2Z"/><rect fill="#669df6" x="7" y="12" width="10" height="7"/><rect fill="#4285f4" x="12" y="12" width="5" height="7"/></g></g><rect fill="#669df6" x="7" y="3" width="1" height="3"/><rect fill="#4285f4" x="7.5" y="3" width="0.5" height="3"/><rect fill="#669df6" x="10" y="3" width="1" height="3"/><rect fill="#669df6" x="13" y="3" width="1" height="3"/><rect fill="#669df6" x="16" y="3" width="1" height="3"/><rect fill="#4285f4" x="10.5" y="3" width="0.5" height="3"/><rect fill="#4285f4" x="13.5" y="3" width="0.5" height="3"/><rect fill="#4285f4" x="16.5" y="3" width="0.5" height="3"/></g></svg>
+
+sprite $Quotas_png [64x64/16z] {
+xTV12W0X24LHjOZ-_ui7cOrOOOiaPdXtqwBEBWI9q9cuQD6hgidKDotoNKlrtDxx-Gd_Tt_x_y73mz-S_xPk4tXuUFXCJsmJsmVcPt5LL-HzVLQAfts_M81s
+lInNg34Pmwfvi0S
+}
+
+!function $QuotasIMG($scale=1)
+!return "<img data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAA1ElEQVR42u3bsQ2DMBRAQY/mIrMwB2VWyJKs4CQFDTICOzh2lCteBQUcCCzEDyml8M8FAAAAADjT9Fjiq3lb7xO43Zc5U2wFkLYNAJAyAfg6wLp97wBabQcAAAAAAAAAWAgBAAAAAAAAAAAAAAAAAAAAAPp9EClt5wSOigAAAAAAAAAAAAAAAAAAAAAAAAAGAFj3Kep9sBX5JghgFIDcDEFJO//7l9Qd4KMqH4KnH5IArpwZ+hWAZkNTLe6Cnle/amqs9n1/8TrgcH1gbA4AAAAATvQEIrH6LB1sdVMAAAAASUVORK5CYII={scale="+$scale+"}>"
+!endfunction
+
+GCPEntityColoring(Quotas)
+!define Quotas(e_alias, e_label, e_techn) GCPEntity(e_alias, e_label, e_techn, #4285F4, Quotas, Quotas)
+!define Quotas(e_alias, e_label, e_techn, e_descr) GCPEntity(e_alias, e_label, e_techn, e_descr, #4285F4, Quotas, Quotas)
+!define QuotasParticipant(p_alias, p_label, p_techn) GCPParticipant(p_alias, p_label, p_techn, #4285F4, Quotas, Quotas)
+!define QuotasParticipant(p_alias, p_label, p_techn, p_descr) GCPParticipant(p_alias, p_label, p_techn, p_descr, #4285F4, Quotas, Quotas)

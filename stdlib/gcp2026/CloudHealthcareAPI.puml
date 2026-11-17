@@ -1,0 +1,22 @@
+sprite $CloudHealthcareAPI <svg viewBox="0 0 24 24" width="64" height="64"><g><g ><g ><g ><g><path fill="#aecbfa" d="M 12 22 L 11.17 21.23 L 11.17 6.67 L 12.83 6.67 L 12.83 21.23 L 12 22 Z"/></g><g ><path fill="#4285f4" d="M12,8a2.67,2.67,0,0,0,2.67-2.67H9.33A2.67,2.67,0,0,0,12,8Z"/></g></g><path fill="#4285f4" d="M 12.83 18.87 L 11.17 18.87 L 11.17 17.33 L 12.83 17.33 L 12.83 18.87 Z"/><path fill="#4285f4" d="M 12.83 10.87 L 11.17 10.87 L 11.17 9.33 L 12.83 9.33 L 12.83 10.87 Z"/><circle fill="#aecbfa" cx="12" cy="4.67" r="2.67"/><path fill="#669df6" d="M16.67,10.17H6.83a1.17,1.17,0,0,0,0,2.33H10v1.67H6.83a2.84,2.84,0,0,1,0-5.67h9.84V7.33l3.33,2-3.33,2Z"/><path fill="#669df6" d="M12,7.33a2.67,2.67,0,0,0,2.67-2.66H9.33A2.67,2.67,0,0,0,12,7.33Z"/><path fill="#669df6" d="M13.36,16.5H14a1.17,1.17,0,0,0,0-2.33H12.83V12.5H14a2.84,2.84,0,0,1,0,5.67H10v1.16l-3.33-2,3.33-2V16.5Z"/></g></g></g></svg>
+
+sprite $CloudHealthcareAPI_png [64x64/16z] {
+xPRB5i8W34I9Kz3__sBXU6n0j24Pk-likhYG5vccTEb4YH0mNX8EhoBnq052yW1t0CjlW_ny6KJoWVYbvoCZbAdh-mmG7M0EhpMuLp6lzr7LVMPt1jk6eILO
+s1YgMniz_OJPIYcsibbmI-3mGWH_L80vji_-7G_JdDhCMxMNUGcjce7DBpnunFdqfRek_lrSEzk2oyBcFZVMdDeV1upysWh60R-smzNs-loZUsolFs8celsB
+kO3oukNt_BMo3bwq_f7uKKPUN2OCv-9PMsFWRdTCJuu7tw-IQZZDFvlpHAnRfltf-_reVEpNAxY_BlxlV2BnIsVh2G
+}
+
+!function $CloudHealthcareAPIIMG($scale=1)
+!return "<img data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAB4UlEQVR42u2bzW3DMAyFNRoPXaErdIVeefQKXsEr+JIBOktWYGxUDgzBciyZ+qN4eEAOCRJ9EslHKjZEZHqWUQAKQAEogNya/gis0Gp9LR/AushFdCLMDaKmxe8lEgCFSBQAe7QpUCAJAMVIAUgBMMxEMRID4Gd8Uox6B4CSAEAEABDlA5YFPWrb/awAhulyKKDoZmhdYC2LL9YNfi/xvYj2CgAoA8DX8KS9AhPqgwtEyXkAjfO/QlyfU1GwOIB1J+yPuqzfidB1fQGfR86Smbu2p1RUWKTI5KWFSQFUvngKPQWtH/vbeYCjqcFQ6gxl0Pn+DFXAZnsW58YIIJ8P8Bx/uOMDYqY/WznM7gRrAVCsF/AAwG4AnCRB6AnAaSv7QXAG4Oj93J0fBwDDUac9AFgtbkonaDIDYCt5nL1AjCW+CyAJBK5WGBPkgCwjs6IDkU9V4AhEVwA8pRd6AwDNA7iSAwK8RzsAnN2DiBzQZgh4ymQQAN/wpfokmHhkBtUCyDAuw2qcYIGdx2p6gQux/6j92OdIguBpl9+3O+7l6MENUPu3w05YAMdQtDkrvAuLN4BxJtguRjeJ/7f4/kg3OxIr0QsoAAWgAEQCMF0DOIDQ51NjFoI+NqcAFIACUACl9AKqd305NsX0SAAAAABJRU5ErkJggg=={scale="+$scale+"}>"
+!endfunction
+
+GCPEntityColoring(CloudHealthcareAPI)
+!define CloudHealthcareAPI(e_alias, e_label, e_techn) GCPEntity(e_alias, e_label, e_techn, #4285F4, CloudHealthcareAPI, CloudHealthcareAPI)
+!define CloudHealthcareAPI(e_alias, e_label, e_techn, e_descr) GCPEntity(e_alias, e_label, e_techn, e_descr, #4285F4, CloudHealthcareAPI, CloudHealthcareAPI)
+!define CloudHealthcareAPIParticipant(p_alias, p_label, p_techn) GCPParticipant(p_alias, p_label, p_techn, #4285F4, CloudHealthcareAPI, CloudHealthcareAPI)
+!define CloudHealthcareAPIParticipant(p_alias, p_label, p_techn, p_descr) GCPParticipant(p_alias, p_label, p_techn, p_descr, #4285F4, CloudHealthcareAPI, CloudHealthcareAPI)
+GCPEntityColoring(Cloud_Healthcare_API)
+!define Cloud_Healthcare_API(e_alias, e_label, e_techn) GCPEntity(e_alias, e_label, e_techn, #4285F4, CloudHealthcareAPI, Cloud_Healthcare_API)
+!define Cloud_Healthcare_API(e_alias, e_label, e_techn, e_descr) GCPEntity(e_alias, e_label, e_techn, e_descr, #4285F4, CloudHealthcareAPI, Cloud_Healthcare_API)
+!define Cloud_Healthcare_APIParticipant(p_alias, p_label, p_techn) GCPParticipant(p_alias, p_label, p_techn, #4285F4, CloudHealthcareAPI, Cloud_Healthcare_API)
+!define Cloud_Healthcare_APIParticipant(p_alias, p_label, p_techn, p_descr) GCPParticipant(p_alias, p_label, p_techn, p_descr, #4285F4, CloudHealthcareAPI, Cloud_Healthcare_API)
