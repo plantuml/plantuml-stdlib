@@ -34,10 +34,18 @@ public class SpmBuilder {
 	private SvgAppender svgAppender;
 
 	public SpmBuilder(String name) throws IOException {
+		this(Paths.get(""), name);
+	}
+
+	/**
+	 * Reads <code>root/stdlib/name</code> and writes <code>root/raw/name</code>.
+	 * MainSpm works in the current directory; the tests work in a temporary one.
+	 */
+	SpmBuilder(Path root, String name) throws IOException {
 		System.err.println("Starting " + name);
-		this.stdlib = Paths.get("stdlib", name);
+		this.stdlib = root.resolve("stdlib").resolve(name);
 		this.libName = name.toLowerCase();
-		final Path raw = Paths.get("raw", libName);
+		final Path raw = root.resolve("raw").resolve(libName);
 		// System.err.println("stdlib=" + stdlib + " raw=" + raw);
 
 		final String infoString = readInfo(stdlib.resolve("README.md"));
@@ -100,10 +108,7 @@ public class SpmBuilder {
 	}
 
 	private void processSingleJsonFile(Path f) throws IOException {
-		String name = f.toString().replace('\\', '/');
-		int x = name.indexOf('/');
-		x = name.indexOf('/', x + 1);
-		name = name.substring(x + 1);
+		final String name = getRelativeName(f);
 
 		final byte[] json = removeCarriageReturns(Files.readAllBytes(f));
 
@@ -118,6 +123,15 @@ public class SpmBuilder {
 	 * string it has to be escaped) and never part of a UTF-8 multi-byte
 	 * character, so removing it does not change the data.
 	 */
+	/**
+	 * The path of a file of the library, from the folder of the library, with
+	 * forward slashes: <code>stdlib/edgy/edgy2.puml</code> gives
+	 * <code>edgy2.puml</code>.
+	 */
+	private String getRelativeName(Path f) {
+		return stdlib.relativize(f).toString().replace('\\', '/');
+	}
+
 	static byte[] removeCarriageReturns(byte[] data) {
 		int count = 0;
 		for (byte b : data)
@@ -138,10 +152,7 @@ public class SpmBuilder {
 
 	private void processSinglePumlFile(Path f) throws IOException {
 
-		String fullpath = f.toString().replace('\\', '/').replaceFirst("\\.puml$", "");
-		int x = fullpath.indexOf('/');
-		x = fullpath.indexOf('/', x + 1);
-		fullpath = fullpath.substring(x + 1);
+		final String fullpath = getRelativeName(f).replaceFirst("\\.puml$", "");
 		// System.err.println("processSinglePumlFile " + name);
 
 		final StringBuilder sb = new StringBuilder();
@@ -185,7 +196,9 @@ public class SpmBuilder {
 
 				// System.err.println("svg=" + num + " " + svg);
 
-			} else if (isSpriteLine(s)) {
+			} else if (isSpriteLine(s) && nameHasVariables(getSpriteName(s)) == false) {
+				// A bitmap sprite whose name has variables is left in the text, with its
+				// lines and its closing brace, for the same reason as an SVG one
 				final String exportedName = fullpath.toLowerCase() + ":" + getSpriteName(s);
 				// Sprite are not stored in the text output stream
 				if (s.contains("/16z]")) {
@@ -295,7 +308,18 @@ public class SpmBuilder {
 	 * find nothing, and draw nothing.
 	 */
 	private boolean hasVariables(String spriteName, String svg) {
-		return spriteName.contains("$") || spriteName.contains("##") || svg.contains("$");
+		return nameHasVariables(spriteName) || svg.contains("$");
+	}
+
+	/**
+	 * The leading <code>$</code> of the name is already removed by
+	 * {@link #getSpriteName(String)}: one that is left, or a <code>##</code>, is
+	 * the preprocessor's. A bare <code>sprite $name</code> where
+	 * <code>$name</code> is a parameter of the procedure cannot be told from a
+	 * plain sprite named <code>name</code>, and is still exported.
+	 */
+	private boolean nameHasVariables(String spriteName) {
+		return spriteName.contains("$") || spriteName.contains("##");
 	}
 
 	private String getSpriteName(String s) {

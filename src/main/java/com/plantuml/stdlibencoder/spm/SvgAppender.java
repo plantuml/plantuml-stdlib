@@ -33,8 +33,15 @@ public class SvgAppender {
 		}
 	}
 
+	/**
+	 * Two different sprites under one name cannot both be stored: the last one
+	 * would silently replace the other, and the first one would draw the second
+	 * one, or nothing (plantuml/plantuml#3039). The same sprite twice is harmless.
+	 */
 	public void appendSvg(String spriteName, String svg) throws IOException {
-		sprites.put(spriteName, svg);
+		final String previous = sprites.put(spriteName, svg);
+		if (previous != null && previous.equals(svg) == false)
+			throw new IOException("Two different SVG sprites are exported as " + spriteName);
 	}
 
 }
