@@ -173,11 +173,15 @@ public class SpmBuilder {
 				final int idx = s.indexOf("<svg");
 				final String svg = s.substring(idx);
 
-				svgAppender.appendSvg(exportedName, svg);
+				// A sprite written with variables, in a procedure, is only known when the
+				// procedure is called: it stays in the text, for the preprocessor
+				if (hasVariables(getSpriteName(s), svg) == false) {
+					svgAppender.appendSvg(exportedName, svg);
 
-				s = s.substring(0, idx).trim();
-				s = s + " :" + libName + ":" + exportedName;
-				s = s.replace("  ", " ");
+					s = s.substring(0, idx).trim();
+					s = s + " :" + libName + ":" + exportedName;
+					s = s.replace("  ", " ");
+				}
 
 				// System.err.println("svg=" + num + " " + svg);
 
@@ -279,6 +283,19 @@ public class SpmBuilder {
 	private boolean isSpriteSvgLine(String s) {
 		s = s.trim();
 		return s.startsWith("sprite") && s.contains("<svg");
+	}
+
+	/**
+	 * True for a sprite that the preprocessor builds, such as
+	 * <code>sprite $b##$name##Icon &lt;svg ...&gt;</code> with
+	 * <code>fill="$linecolor"</code> in a procedure of edgy. Exported, it would be
+	 * stored once under the name <code>b##$name##Icon</code>, with
+	 * <code>$linecolor</code> as a color, while the calls of the procedure ask
+	 * for <code>bActivityIcon</code>, <code>bOutcomeIcon</code>...: they would
+	 * find nothing, and draw nothing.
+	 */
+	private boolean hasVariables(String spriteName, String svg) {
+		return spriteName.contains("$") || spriteName.contains("##") || svg.contains("$");
 	}
 
 	private String getSpriteName(String s) {
